@@ -62,6 +62,7 @@ import {
     buildHardQuestionMandateBlock,
     buildSkeletonGenerationComplianceBlock,
     buildVeteranExamNativeGenerationBlock,
+    buildDifficultyRegenFeedbackBlock,
     validateHardSkeletonMandate,
     isVeteranDifficultyEnabled,
     isExamNativeVeteranGeneration,
@@ -92,6 +93,31 @@ export const SOLVE_FIRST_MAX_ATTEMPTS = Math.min(
             )
     )
 );
+
+/**
+ * JEE Main veteran generation runs its skeleton batches in small (~5-question)
+ * chunks, each with its OWN attempt counter — so the default 3-attempt cap
+ * gives a strict 78+ difficulty bar only 2 real re-tries per chunk before that
+ * chunk's deficit is abandoned for good. A full-paper run measured this at
+ * 12/75 (16%) yield even with per-attempt rejection-reason feedback wired in
+ * (see buildDifficultyRegenFeedbackBlock) — the bottleneck was attempt budget,
+ * not feedback quality. Raised only for jee_main so other exam profiles' cost
+ * per generation is untouched.
+ */
+export const getSolveFirstMaxAttempts = ({ examProfile = "" } = {}) => {
+    if (String(examProfile || "").toLowerCase() === "jee_main") {
+        return Math.min(
+            10,
+            Math.max(
+                SOLVE_FIRST_MAX_ATTEMPTS,
+                // 6 burned ~20+ min/section with almost no extra yield; 4 is enough
+                // when difficulty self-audit is skipped for exam-native.
+                Number(process.env.AI_QB_JEE_MAIN_SOLVE_FIRST_MAX_ATTEMPTS ?? 4)
+            )
+        );
+    }
+    return SOLVE_FIRST_MAX_ATTEMPTS;
+};
 
 /** Caps per-skeleton repair LLM calls within a single skeletonsToQuestions() pass — bounds worst-case tail latency on a bad batch instead of one call per failure. */
 const MAX_SKELETON_REPAIR_CALLS_PER_BATCH = Math.max(
@@ -198,9 +224,14 @@ export const buildSolveFirstSkeletonPrompt = ({
     topicRelevanceFeedback = null,
     maxSelectableSlots = 0,
     referenceCalibrationBlock = "",
+    retrievedQuestionContextBlock = "",
+    priorAttemptFeedback = null,
 }) => {
     const referencePaperGroundingBlock = referenceCalibrationBlock
         ? `\n**REFERENCE PAPER — DIFFICULTY FLOOR TO EXCEED:** an actual past paper for this exam was analyzed; observed difficulty pattern: ${referenceCalibrationBlock}\nThis is a FLOOR, not a target — every question you write must be strictly MORE difficult than that observed pattern (deeper concept fusion, tighter time pressure, less telegraphed setups). Do not merely replicate the reference paper's level, and do not use it to constrain which topics/slots you write about — the concept slots above are independently planned.\n`
+        : "";
+    const retrievedQuestionGroundingBlock = retrievedQuestionContextBlock
+        ? `\n**RETRIEVED EXEMPLARS — STYLE/PATTERN REFERENCE ONLY:** the following are real, previously-confirmed questions for this subject/topic, retrieved for their similarity to what you are being asked to write:\n${retrievedQuestionContextBlock}\nUse these ONLY to match format, phrasing style, and difficulty texture. You MUST write about a completely different scenario, context, and numeric values — do not reuse any stem, scenario, or numeric value from these exemplars. These are not a topic/content source and do not constrain which concept slots you write about.\n`
         : "";
     const mixOpts = difficultyResolution?.examCalibrated
         ? { examProfile, examCalibrated: true }
@@ -392,7 +423,11 @@ Each new skeleton must use a **different problem structure** from every excluded
           })
         : "";
 
-    return `${regenEscalationBlock}${regenQualityGatesBlock}${veteranExamNativeBlock}You are authoring ${count} exam MCQ **skeletons** (step 1 of 2). Do NOT write options or correctAnswer letters yet.
+    const difficultyRegenFeedbackBlock = buildDifficultyRegenFeedbackBlock(
+        priorAttemptFeedback
+    );
+
+    return `${regenEscalationBlock}${regenQualityGatesBlock}${difficultyRegenFeedbackBlock}${veteranExamNativeBlock}You are authoring ${count} exam MCQ **skeletons** (step 1 of 2). Do NOT write options or correctAnswer letters yet.
 
 **Topic:** ${topic || bankName}
 **Bank difficulty profile:** ${difficulty}${difficultyResolution?.examCalibrated ? " (exam-native — all hard, veteran caliber)" : " (per-question tier mix — NOT uniform)"}
@@ -415,6 +450,7 @@ ${buildAssignedTierSlotsBlock({
 **Exam profile:** ${examProfile}
 ${examReferenceBlock}
 ${referencePaperGroundingBlock}
+${retrievedQuestionGroundingBlock}
 ${jeeAuthenticityBlock}
 ${difficultyCalibrationBlock}
 ${jeeHardBlock}
@@ -666,7 +702,22 @@ const findOptionIndexForNumericValue = (opts, value) => {
     });
 };
 
-/** After independent verify adjusts the answer, align solveSteps so explanation matches marked option. */
+/** Strip a trailing code/model "Therefore, the correct answer is …" closing (may be duplicated). */
+const stripTrailingThereforeClosing = (text) => {
+    let s = String(text || "").trim();
+    const closing =
+        /\s*Therefore,?\s*the\s+(?:correct\s+)?(?:answer|result)\s+is\s+[^.]+[.]?\s*$/i;
+    for (let i = 0; i < 3 && closing.test(s); i++) {
+        s = s.replace(closing, "").trim();
+    }
+    return s;
+};
+
+/**
+ * After independent verify adjusts the answer, append a single closing that names the
+ * marked option. Does NOT rewrite earlier derivation values — callers must reject
+ * (via assertSolveStepsConsistency) when the derivation disagrees with the key.
+ */
 export const syncSolveStepsToMarkedAnswer = (solveSteps, markedOptionText) => {
     const marked = String(markedOptionText || "").trim();
     if (!marked || !Array.isArray(solveSteps) || !solveSteps.length) {
@@ -674,19 +725,23 @@ export const syncSolveStepsToMarkedAnswer = (solveSteps, markedOptionText) => {
     }
     const steps = solveSteps.map((s) => String(s || "").trim()).filter(Boolean);
     const last = steps.length - 1;
-    const cleaned = String(steps[last])
-        .replace(/\s*Therefore,?\s*the\s+(?:correct\s+)?(?:answer|result)\s+is\s+[^.]+[.]?$/i, "")
-        .trim();
+    const cleaned = stripTrailingThereforeClosing(steps[last]);
     steps[last] = cleaned
         ? `${cleaned} Therefore, the correct answer is ${marked}.`
         : `Therefore, the correct answer is ${marked}.`;
     return steps;
 };
 
-/** Explanation: numbered solve steps + closing with the marked option. */
+/** Explanation: numbered solve steps + a single closing with the marked option. */
 export const lockExplanationToMarkedOption = (solveSteps, markedOptionText) => {
     const marked = String(markedOptionText || "").trim();
-    const steps = (solveSteps || []).map(String).map(stripMetaCommentary).filter(Boolean);
+    // Strip any prior Therefore closings from steps (e.g. already-synced _solveSteps
+    // re-entering sanitizeMcqForPipeline) so we never emit "Therefore… Therefore…".
+    const steps = (solveSteps || [])
+        .map(String)
+        .map(stripMetaCommentary)
+        .map(stripTrailingThereforeClosing)
+        .filter(Boolean);
     const body =
         steps.length > 1
             ? steps.map((s, i) => `Step ${i + 1}: ${s}`).join(" ")
@@ -766,16 +821,19 @@ const extractSolveStepResults = (solveSteps) => {
     // truncating "4.17 × 10^52" to "4.17" before any parsing even runs.
     const NUM_TOKEN_SRC = '(-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?(?:\\s*[×x\\*]\\s*10\\s*\\^?\\s*[⁰¹²³⁴⁵⁶⁷⁸⁹⁻\\-\\d]+)?)';
 
-    // High-priority: conclusion keywords anywhere across all steps
+    // High-priority: conclusion keywords anywhere across all steps.
+    // Include ≈ / approximately — JEE solutions often end "√66 ≈ 8.12" without "therefore".
     const allText = solveSteps.map(s => String(s || "")).join(" ");
     const conclusionRe = new RegExp(
-        `\\b(?:therefore|thus|hence|the\\s+(?:correct\\s+)?(?:answer|result|value)\\s+is|gives?|yields?|equals?)\\s*(?:is|are|=)?\\s*${NUM_TOKEN_SRC}`,
+        `\\b(?:therefore|thus|hence|(?:the\\s+)?(?:correct\\s+)?(?:answer|result|value|magnitude|volume|probability)\\s+is|gives?|yields?|equals?|approximately)\\s*(?:is|are|=|≈|~)?\\s*${NUM_TOKEN_SRC}` +
+        `|≈\\s*${NUM_TOKEN_SRC}`,
         'gi'
     );
     const highPri = [];
     for (const m of allText.matchAll(conclusionRe)) {
-        const v = parseNumericWithSuperscript(m[1]);
-        if (Number.isFinite(v)) highPri.push({ value: v, display: m[1].trim() });
+        const token = m[1] || m[2];
+        const v = parseNumericWithSuperscript(token);
+        if (Number.isFinite(v)) highPri.push({ value: v, display: String(token).trim() });
     }
 
     // Low-priority fallback: last "= VALUE" in the last step only
@@ -880,10 +938,27 @@ const assertSolveStepsConsistency = ({ _solveSteps, options, correctIndex }) => 
     }
 
     const optionNumerics = options.map(o => parseNumber(o));
-    const { highPri, lastEq } = extractSolveStepResults(_solveSteps);
 
-    // Pick best candidate: conclusion keywords beat last-step fallback
-    const candidate = highPri.length ? highPri[highPri.length - 1] : lastEq;
+    // Prefer the derivation BEFORE any force-align / distractor-override language.
+    // Models often compute √66≈8.12 correctly, then write "however, for the specific
+    // distractor set, the magnitude is 7.35" to match a wrong key. Checking only the
+    // last high-pri token would see 7.35 and pass.
+    const OVERRIDE_SPLIT =
+        /\b(?:however|,?\s*for the specific distractor|nearest option|closest option|among the (?:given )?options|but (?:for the specific|the nearest|using the distractor))\b/i;
+    const joined = _solveSteps.map((s) => String(s || "")).join(" ");
+    const preOverrideText = joined.split(OVERRIDE_SPLIT)[0];
+    const preOverrideSteps =
+        preOverrideText.trim().length >= 12 ? [preOverrideText] : _solveSteps;
+
+    const { highPri, lastEq } = extractSolveStepResults(preOverrideSteps);
+    const fallback = extractSolveStepResults(_solveSteps);
+    const candidate = highPri.length
+        ? highPri[highPri.length - 1]
+        : lastEq ||
+          (fallback.highPri.length
+              ? fallback.highPri[fallback.highPri.length - 1]
+              : fallback.lastEq);
+
     if (!candidate) {
         // No numeric conclusion to compare against. This is the common case for answers
         // that merely CONTAIN a digit — parseNumber("Team 1") returns 1, so we land in
@@ -896,7 +971,11 @@ const assertSolveStepsConsistency = ({ _solveSteps, options, correctIndex }) => 
     const tol = answerMatchTolerance(candidate.value, optionNumerics);
     const markedMatchesCandidate = Math.abs(markedNumeric - candidate.value) <= tol;
 
-    // --- Failure A: candidate matches a DIFFERENT option (wrong key) ---
+    // Reject whenever the derivation's conclusion disagrees with the marked option.
+    // Previously Failure B only fired when relDiff > 15% AND absDiff > 1, which let
+    // classic force-align cases through (√66≈8.12 vs marked 7.35 ≈ 10% relative) —
+    // then sync/lock appended "Therefore, the correct answer is 7.35" and shipped a
+    // coherent-looking but wrong key. Prefer reject-and-repair over force-align.
     if (!markedMatchesCandidate) {
         const matchesOther = options.some((opt, idx) => {
             if (idx === correctIndex) return false;
@@ -908,23 +987,13 @@ const assertSolveStepsConsistency = ({ _solveSteps, options, correctIndex }) => 
                 `Solve steps compute ${candidate.display} but marked answer is ${marked} — wrong option marked`
             );
         }
+        throw new Error(
+            `Solve steps compute ${candidate.display} but marked answer is ${marked} — derivation does not match the marked option (reject, do not force-align)`
+        );
     }
 
-    // --- Failure B: candidate (high-priority only) differs from marked by > 15%
-    //     and doesn't match any option — calculation doesn't support the key ---
-    if (!markedMatchesCandidate && highPri.length &&
-        !computedMatchesAnyOption(candidate.value, optionNumerics)) {
-        const relDiff = markedNumeric !== 0
-            ? Math.abs(candidate.value - markedNumeric) / Math.abs(markedNumeric)
-            : Math.abs(candidate.value);
-        if (relDiff > 0.15 && Math.abs(candidate.value - markedNumeric) > 1) {
-            throw new Error(
-                `Solve steps compute ${candidate.display} but marked answer is ${marked} — calculation does not match any option`
-            );
-        }
-    }
-
-    // --- Failure C: explicit "therefore/thus/hence NUMBER" != marked ---
+    // Extra guard: any explicit therefore/thus/hence NUMBER that names a different
+    // option (even if the primary candidate already matched) is still a contradiction.
     const allText = _solveSteps.map(s => String(s || "")).join(" ");
     // \\s*\\^?\\s* after "10" is required for CARET notation ("× 10^52") — without it
     // this token silently stops at the mantissa for the most common form LLMs emit,
@@ -946,6 +1015,9 @@ const assertSolveStepsConsistency = ({ _solveSteps, options, correctIndex }) => 
         }
     }
 };
+
+/** Exported for unit tests — same gate used by buildMcqFromSkeleton before force-align. */
+export const assertSolveStepsConsistencyForTest = assertSolveStepsConsistency;
 
 const assertBuiltMcqConsistency = ({ questionText, options, correctIndex, explanation, _solveSteps }) => {
     const marked = options[correctIndex];
@@ -1393,13 +1465,13 @@ const validateStemQuality = (stem) => {
         );
     }
 
-    // Check for required numeric data (most physics/chemistry problems need values)
-    const hasValues = /\d+(?:\.\d+)?/.test(text);
-    if (!hasValues) {
-        throw new Error(
-            "Stem lacks numeric values — likely an incomplete problem statement"
-        );
-    }
+    // NOTE: no "must contain numeric values" check here. That requirement was STEM-
+    // presumptuous ("most physics/chemistry problems need values") and false for a wide
+    // swath of legitimate content: theory/assertion-reason questions (which explicitly
+    // have NO numeric givens by design — see PART N question-kind taxonomy), vocabulary
+    // questions, and virtually all CAT VARC content (critical reasoning, para-jumbles,
+    // odd-one-out) — confirmed live: this check alone was responsible for the dominant
+    // rejection category in a CAT VARC run, driving several batches to a 0% pass rate.
 
     // Check for extreme/unrealistic values
     const largeNumbers = text.match(/\d{10,}/g) || [];
@@ -1408,10 +1480,15 @@ const validateStemQuality = (stem) => {
         console.warn(`Stem has unusually large numbers: ${largeNumbers.join(", ")}`);
     }
 
-    // Check for question mark (is it actually asking something?)
-    if (!text.includes("?")) {
+    // Is this actually a prompt (question or instruction), not a truncated fragment?
+    // A literal "?" requirement rejected legitimate imperative CAT VARC stems ("Arrange
+    // the following sentences...", "Identify the sentence that does not belong.") that
+    // end in a period rather than a question mark. Requiring terminal punctuation of
+    // any normal kind still catches genuinely truncated stems (which trail off with no
+    // ending punctuation at all) without presuming a single phrasing style.
+    if (!/[?.:]\s*$/.test(text)) {
         throw new Error(
-            "Stem lacks a question mark — likely not a question"
+            "Stem has no terminal punctuation — looks truncated/incomplete"
         );
     }
 
@@ -1715,11 +1792,18 @@ const runSkeletonValidationGates = (sk) => {
     validateSolveStepChain(sk.solveSteps);
 
     // VALIDATION 4: Distractor quality
+    // Gated on isStrictNumericAnswer(), not Number.isFinite(parseNumber(display)):
+    // parseNumber() is permissive (extracts a stray digit from anywhere in a string),
+    // so a CAT VARC critical-reasoning conclusion that happens to mention a percentage
+    // or a year would parse to a "finite" number and incorrectly run the numeric-only
+    // distractor-spacing/sign/duplicate checks below against sentence-length options —
+    // confirmed live, this was firing on real CAT VARC content.
     const fa = sk.finalAnswer || {};
     const display = String(fa.display ?? fa.value ?? "").trim();
     const unit = String(fa.unit || "").trim();
-    const computed = parseNumber(display);
-    if (Number.isFinite(computed)) {
+    const answerIsNumeric = isStrictNumericAnswer(display);
+    const computed = answerIsNumeric ? parseNumber(display) : NaN;
+    if (answerIsNumeric) {
         validateDistractorQuality(computed, unit, sk.distractorValues || []);
     }
 
@@ -1727,7 +1811,7 @@ const runSkeletonValidationGates = (sk) => {
     validateSkeletonAnswerCoherence(sk);
 
     // VALIDATION 6: Computed answer must match an option (no silent divergence)
-    if (Number.isFinite(computed) && (sk.distractorValues || []).length > 0) {
+    if (answerIsNumeric && (sk.distractorValues || []).length > 0) {
         const allOptions = [display, ...(sk.distractorValues || [])];
         const match = findBestMatchingOption(computed, allOptions);
         if (!match || match.outOfTolerance) {
@@ -1749,6 +1833,23 @@ const runSkeletonValidationGates = (sk) => {
 };
 
 /**
+ * True only if the WHOLE string is essentially a number (+ optional short unit),
+ * not merely text that happens to contain a digit somewhere. Deliberately stricter
+ * than parseNumber(), which extracts a number from anywhere in a string — so
+ * parseNumber("The 150 new corporate entities...") = 150, which would misclassify
+ * a CAT VARC critical-reasoning conclusion (a full sentence) as a numeric answer.
+ * Handles scientific notation (both "× 10^N" caret and "× 10¹⁸" superscript forms)
+ * so STEM answers like "4.17 × 10^52" or "0.529 Å" still classify as numeric.
+ */
+const isStrictNumericAnswer = (text) => {
+    const s = String(text || "").trim();
+    if (!s) return false;
+    return /^-?\d+(?:\.\d+)?(?:\s*[×x]\s*10\s*\^?\s*[⁻−\-]?[⁰¹²³⁴⁵⁶⁷⁸⁹\d]+)?\s*[%°]?[a-zA-ZμΩÅ°\/·⁻¹²³₀-₉\-]{0,15}$/.test(
+        s
+    );
+};
+
+/**
  * Pre-MCQ validation: rejects skeletons where the computed answer and option values
  * are fundamentally incoherent (unit mismatches, computed value absent, etc).
  * Fails fast before wasting time building MCQ with bad data.
@@ -1763,18 +1864,23 @@ const validateSkeletonAnswerCoherence = (skeleton) => {
         throw new Error("Missing finalAnswer.display or finalAnswer.value");
     }
 
-    // Parse the computed answer
-    const computed = parseNumber(display);
-    if (!Number.isFinite(computed)) {
-        // Non-numeric answer — check that all distractors are also non-numeric
-        const anyNumeric = distractorValues.some(d => Number.isFinite(parseNumber(d)));
-        if (anyNumeric) {
-            throw new Error(
-                `Answer is non-numeric ("${display}") but has numeric distractors — inconsistent types`
-            );
-        }
-        return; // Text answers pass here; unit checking doesn't apply
+    // parseNumber() is deliberately PERMISSIVE — it extracts a stray digit from
+    // anywhere in a string, so parseNumber("The 150 new corporate entities...") = 150.
+    // Classifying "is this answer numeric" via Number.isFinite(parseNumber(display))
+    // therefore misclassifies full-sentence text answers (CAT VARC critical-reasoning
+    // conclusions, para-jumble permutations, odd-one-out sentence picks) as numeric
+    // whenever they happen to mention a number anywhere — which is most of them. That
+    // false classification then ran the numeric-only unit/type-consistency checks
+    // below against sentence-length "distractors", rejecting ~100% of a CAT VARC batch
+    // ("Answer is non-numeric (long sentence) but has numeric distractors" and
+    // "Inconsistent units across options" firing on text). isStrictNumericAnswer()
+    // requires the WHOLE string to basically BE a number (+ optional short unit), not
+    // merely contain one — the same fix already applied for this exact trap elsewhere
+    // (see the isNumericAnswer comment in questionNumericVerify.service.js).
+    if (!isStrictNumericAnswer(display)) {
+        return; // Text answers: no numeric/unit consistency checks apply.
     }
+    const computed = parseNumber(display);
 
     // Numeric answer: all options must have matching unit structure
     const extractUnit = (text) => {
@@ -2128,15 +2234,24 @@ export const sanitizeMcqForPipeline = (q) => {
     if (!solveSteps.length && q.explanation) {
         solveSteps = inferSolveStepsFromExplanation(q.explanation);
     }
-    solveSteps = solveSteps.map(stripMetaCommentary).filter(Boolean);
+    solveSteps = solveSteps
+        .map(stripMetaCommentary)
+        .map(stripTrailingThereforeClosing)
+        .filter(Boolean);
     const marked = q.options[correctIndex];
+    // Reject derivation≠key BEFORE re-locking the Therefore closing onto the marked option.
+    assertSolveStepsConsistency({
+        _solveSteps: solveSteps,
+        options: q.options,
+        correctIndex,
+    });
     const explanation = lockExplanationToMarkedOption(solveSteps, marked);
     const cleanedExplanation = stripMetaCommentary(explanation);
     const built = {
         ...q,
         correctIndex,
         explanation: cleanedExplanation,
-        _solveSteps: solveSteps,
+        _solveSteps: syncSolveStepsToMarkedAnswer(solveSteps, marked),
     };
     assertBuiltMcqConsistency(built);
     assertGenerationCorrectness(built, 1);

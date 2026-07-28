@@ -45,6 +45,11 @@ export const isDifficultySelfAuditEnabled = () => {
 /**
  * Exam-native JEE/NEET: trust generation prompts + code mandates — skip LLM difficulty scoring.
  * Set AI_QB_DIFFICULTY_SELF_AUDIT=1 to force audit; =0 to disable globally.
+ *
+ * Difficulty LLM audits were the main latency source on JEE full-paper Physics
+ * (extra call per attempt + reject loops that burned 6 attempts/chunk). Correctness
+ * gates (solve-steps vs marked answer) remain on; force AI_QB_DIFFICULTY_SELF_AUDIT=1
+ * if you need the old strict difficulty filter.
  */
 export const shouldSkipLlmDifficultySelfAudit = (difficultyResolution) => {
     const flag = process.env.AI_QB_DIFFICULTY_SELF_AUDIT;

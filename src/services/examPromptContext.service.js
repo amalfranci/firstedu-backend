@@ -334,8 +334,9 @@ export const buildExplanationOptionLockBlock = ({
 1. Solve completely → write four options → pick \`correctAnswer\` → then write explanation.
 2. The explanation's **final numeric value** (last "= …" or "therefore …") must be **identical** to the marked option text (same digits, unit, and scale).
 3. **Forbidden:** explanation derives **6** or **1.0705** while options show **0.32 M** or **1.506 m** — if solve changed, **rewrite options** to include your final value, then mark that option.
-4. **Forbidden:** meta-text ("re-evaluating", "adjusting", "let us use option B") — explanation is student-facing proof only.
-5. Before JSON output: for each item, read the marked option aloud and confirm the explanation ends at that exact text.
+4. **Forbidden:** computing one value (e.g. √66 ≈ 8.12 or P = 0.375) then switching the last line to a different option (7.35 / 0.4286) to "match the key". Code will **reject** that — never force-align.
+5. **Forbidden:** meta-text ("re-evaluating", "adjusting", "let us use option B", "for the specific distractor set") — explanation is student-facing proof only.
+6. Before JSON output: for each item, read the marked option aloud and confirm the explanation ends at that exact text.
 ${chemNote}
 **If explanation ≠ marked option → discard the entire question and author a new one.**`;
 };

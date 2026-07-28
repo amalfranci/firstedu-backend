@@ -321,6 +321,7 @@ const runQuestionBankGenerationJob = async (req, value) => {
             examProfile: questions.difficultyResolution?.examProfile,
             targetedRegeneration: questions.targetedRegeneration || null,
             pipelineSummary: questions.pipelineSummary || null,
+            ragMeta: questions.ragMeta || null,
             validationDeferred: !!backgroundValidation,
             backgroundValidation,
         },

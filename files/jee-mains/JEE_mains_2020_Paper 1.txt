@@ -1,0 +1,838 @@
+{
+  "title": "JEE Main 2020 (02 Sep Shift 2) Previous Year Paper with Answer Keys",
+  "source": "MathonGo",
+  "exam_info": {
+    "exam": "JEE Main",
+    "year": 2020,
+    "session": "September",
+    "date": "2020-09-02",
+    "shift": 2
+  },
+  "questions": [
+    {
+      "question_number": 1,
+      "type": "single_choice",
+      "text": "If momentum(P), area (A) and time (T) are taken to be the fundamental quantities then the dimensional formula for energy is:[cite: 4]",
+      "options": [
+        "(1) $[P^{2}AT^{-2}][cite: 4]",
+        "(2) $[PA^{-1}T^{-1}][cite: 4]",
+        "(3) $[PA^{1/2}T^{-1}][cite: 4]",
+        "(4) $[P^{1/2}AT^{-1}][cite: 4]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 2,
+      "type": "single_choice",
+      "text": "Two uniform circular discs are rotating independently in the same direction around their common axis passing through their centres. The moment of inertia and angular velocity of the first disc are $0.1~kg-m^{2}$ and 10 rad $s^{-1}$ respectively while those for the second one are $0.2~kg-m^{2}$ and 5 rad $s^{-1}$ respectively. At some instant they get stuck together and start rotating as a single system about their common axis with some angular speed. The kinetic energy of the combined system is :[cite: 4]",
+      "options": [
+        "(1) $\\frac{10}{3}$ J[cite: 4]",
+        "(2) $\\frac{20}{3}$ J[cite: 4]",
+        "(3) $\\frac{5}{3}$ J[cite: 4]",
+        "(4) $\\frac{2}{3}$ J[cite: 4]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 3,
+      "type": "single_choice",
+      "text": "The height 'h' at which the weight of a body will be the same as that at the same depth 'h' from the surface of the earth is (Radius of the earth is R and effect of the rotation of the earth is neglected)[cite: 4]",
+      "options": [
+        "(1) $\\frac{\\sqrt{5}}{2}R-R[cite: 4]",
+        "(2) $\\frac{\\sqrt{5}R-R}{2}[cite: 4]",
+        "(3) $\\frac{\\sqrt{5}-1}{2}R[cite: 4]",
+        "(4) $\\frac{\\sqrt{3}R-R}{2}[cite: 4]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 4,
+      "type": "single_choice",
+      "text": "A capillary tube made of glass of radius 0.15 mm is dipped vertically in a beaker filled with methylene iodide (surface tension $=0.05~N~m^{-1}$, density $=667~kg~m^{-3}$) which rises to height h in the tube. It is observed that the two tangents drawn from liquid-glass interfaces (from opp. sides of the capillary) make an angle of $60^{\circ}$ with one another. Then h is close to $(g=10~m~s^{-2})[cite: 4]$",
+      "options": [
+        "(1) 0.049 m[cite: 4]",
+        "(2) 0.087 m[cite: 4]",
+        "(3) 0.137 m[cite: 4]",
+        "(4) 0.172 m[cite: 4]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 5,
+      "type": "single_choice",
+      "text": "When the temperature of a metal wire is increased from $0^{\circ}C$ to $10^{\circ}C$ its length increases by 0.02%. The percentage change in its mass density will be closed to:[cite: 4]",
+      "options": [
+        "(1) 0.06[cite: 4]",
+        "(2) 2.3[cite: 4]",
+        "(3) 0.008[cite: 4]",
+        "(4) 0.8[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 6,
+      "type": "single_choice",
+      "text": "A heat engine is involved with exchange of heat of 1915 J, 40 J, 125 J and -Q J, during one cycle achieving and efficiency of 50.0%. The value of Q is:[cite: 4]",
+      "options": [
+        "(1) 640 J[cite: 4]",
+        "(2) 40 J[cite: 4]",
+        "(3) 980 J[cite: 4]",
+        "(4) 400 J[cite: 4]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 7,
+      "type": "single_choice",
+      "text": "An ideal gas in a closed container is slowly heated. As its temperature increases, which of the following statements are true? (A) the mean free path of the molecules decreases (B) the mean collision time between the molecules decreases. (C) the mean free path remains unchanged. (D) the mean collision time remains unchanged.[cite: 4]",
+      "options": [
+        "(1) (B) and (C)[cite: 4]",
+        "(2) (A) and (B)[cite: 4]",
+        "(3) (C) and (D)[cite: 4]",
+        "(4) (A) and (D)[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 8,
+      "type": "single_choice",
+      "text": "The displacement time graph of a particle executing SHM is given in figure: (sketch is schematic and not to scale). Which of the following statements is/are true for this motion? (A) The force is zero at $t=\frac{3T}{4}$ (B) The magnitude of acceleration is maximum at $t=T$ (C) The speed is maximum at $t=\frac{T}{4}$ (D) The P. E. is equal to K. E. of the oscillation at $t=\frac{T}{2}$[cite: 4]",
+      "options": [
+        "(1) (A), (B) and (C)[cite: 4]",
+        "(2) (B), (C) and (D)[cite: 4]",
+        "(3) (A), (B) and (D)[cite: 4]",
+        "(4) (A) and (D)[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 9,
+      "type": "single_choice",
+      "text": "A charge Q is distributed over two concentric conducting thin spherical shells radii r and $R(R>r)$. If the surface charge densities on the two shells are equal, the electric potential at the common centre is:[cite: 4]",
+      "options": [
+        "(1) $\\frac{1}{4\\pi\\epsilon_{0}}\\frac{(R+r)}{2(R^{2}+r^{2})}Q[cite: 4]",
+        "(2) $\\frac{1}{4\\pi\\epsilon_{0}}\\frac{(2R+r)}{(R^{2}+r^{2})}Q[cite: 4]",
+        "(3) $\\frac{1}{4\\pi\\epsilon_{0}}\\frac{(R+2r)Q}{2(R^{2}+r^{2})}[cite: 4]",
+        "(4) $\\frac{1}{4\\pi\\epsilon_{0}}\\frac{(R+r)}{(R^{2}+r^{2})}Q[cite: 4]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 10,
+      "type": "single_choice",
+      "text": "A 10 $\\mu$F capacitor is fully charged to a potential difference of 50 V. After removing the source voltage it is connected to an uncharged capacitor in parallel. Now the potential difference across them becomes 20 V. The capacitance of the second capacitor is:[cite: 4]",
+      "options": [
+        "(1) 15 $\\mu$F[cite: 4]",
+        "(2) 30 $\\mu$F[cite: 4]",
+        "(3) 20 $\\mu$F[cite: 4]",
+        "(4) 10 $\\mu$F[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 11,
+      "type": "single_choice",
+      "text": "A potentiometer wire PQ of 1m length is connected to a standard cell $E_{1}$. Another cell $E_{2}$ of emf 1.02 V is connected with a resistance 'r' and switch S (as shown in figure). With switch S open, the null position is obtained at a distance of 49 cm from Q. The potential gradient in the potentiometer wire is :[cite: 4]",
+      "options": [
+        "(1) $0.02~V/cm[cite: 4]",
+        "(2) $0.01~V/cm[cite: 4]",
+        "(3) $0.03~V/cm[cite: 4]",
+        "(4) $0.04~V/cm[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 12,
+      "type": "single_choice",
+      "text": "The figure shows a region of length 'l' with a uniform magnetic field of 0.3 T in it and a proton entering the region with velocity $4\\times 10^{5}~m~s^{-1}$ making an angle $60^{\circ}$ with the field. If the proton completes 10 revolution by the time it cross the region shown, 'l' is close to (mass of proton $=1.67\\times 10^{-27}$ kg, charge of the proton $=1.6\\times 10^{-19}$ C)[cite: 4]",
+      "options": [
+        "(1) 0.11 m[cite: 4]",
+        "(2) 0.88 m[cite: 4]",
+        "(3) 0.44 m[cite: 4]",
+        "(4) 0.22 m[cite: 4]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 13,
+      "type": "single_choice",
+      "text": "A wire carrying current I is bent in the shape ABCDEFA as shown, where rectangle ABCDA and ADEFA are perpendicular to each other. If the sides of the rectangles are of lengths a and b, then the magnitude and direction of magnetic moment of the loop ABCDEFA is:[cite: 4]",
+      "options": [
+        "(1) $\\sqrt{2}abl$ along $(\\frac{\\hat{j}}{\\sqrt{2}}+\\frac{\\hat{k}}{\\sqrt{2}})[cite: 4]",
+        "(2) $abl$ along $(\\frac{\\hat{j}}{\\sqrt{2}}+\\frac{\\hat{k}}{\\sqrt{2}})[cite: 4]",
+        "(3) $\\sqrt{2}abl$ along $(\\frac{\\hat{j}}{\\sqrt{5}}+\\frac{2\\hat{k}}{\\sqrt{5}})[cite: 4]",
+        "(4) $abl$ along $(\\frac{\\hat{j}}{\\sqrt{5}}+\\frac{\\hat{k}}{\\sqrt{5}})[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 14,
+      "type": "single_choice",
+      "text": "A small point mass carrying some positive charge on it, is released from the edge of a table. There is a uniform electric field in this region in the horizontal direction. Which of the following options then correctly describe the trajectory of the mass? (Curves are drawn schematically and are not to scale)[cite: 4]",
+      "options": [
+        "(1) Option 1[cite: 4]",
+        "(2) Option 2[cite: 4]",
+        "(3) Option 3[cite: 4]",
+        "(4) Option 4[cite: 4]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 15,
+      "type": "single_choice",
+      "text": "An inductance coil has a reactance of 100 $\\Omega$. When an AC signal of frequency 1000 Hz is applied to the coil, the applied voltage leads the current by $45^{\circ}$. The self-inductance of the coil is:[cite: 4]",
+      "options": [
+        "(1) $1.1\\times 10^{-2}$ H[cite: 4]",
+        "(2) $1.1\\times 10^{-1}$ H[cite: 4]",
+        "(3) $5.5\\times 10^{-5}$ H[cite: 4]",
+        "(4) $6.7\\times 10^{-7}$ H[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 16,
+      "type": "single_choice",
+      "text": "In a plane electromagnetic wave, the directions of electric field and magnetic field are represented by $\\hat{k}$ and $2\\hat{i}-2\\hat{j}$, respectively. What is the unit vector along direction of propagation of the wave.[cite: 4]",
+      "options": [
+        "(1) $\\frac{1}{\\sqrt{2}}(\\hat{i}+\\hat{j})[cite: 4]",
+        "(2) $\\frac{1}{\\sqrt{2}}(\\hat{j}+\\hat{k})[cite: 4]",
+        "(3) $\\frac{1}{\\sqrt{5}}(\\hat{i}+2\\hat{j})[cite: 4]",
+        "(4) $\\frac{1}{\\sqrt{5}}(2\\hat{i}+\\hat{j})[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 17,
+      "type": "single_choice",
+      "text": "In a Young's double slit experiment, 16 fringes are observed in a certain segment of the screen when light of wavelength 700 nm is used. If the wavelength of light is changed to 400 nm, the number of fringes observed in the same segment of the screen would be :[cite: 4]",
+      "options": [
+        "(1) 24[cite: 4]",
+        "(2) 30[cite: 4]",
+        "(3) 18[cite: 4]",
+        "(4) 28[cite: 4]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 18,
+      "type": "single_choice",
+      "text": "A particle is moving 5 times as fast as an electron. The ratio of the de-Broglie wavelength of the particle to that of the electron is $1.878\\times 10^{-4}$. The mass of the particle is close to :[cite: 4]",
+      "options": [
+        "(1) $4.8\\times 10^{-27}$ kg[cite: 4]",
+        "(2) $9.1\\times 10^{-31}$ kg[cite: 4]",
+        "(3) $1.2\\times 10^{-28}$ kg[cite: 4]",
+        "(4) $9.7\\times 10^{-28}$ kg[cite: 4]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 19,
+      "type": "single_choice",
+      "text": "In a hydrogen atom the electron makes a transition from $(n+1)^{th}$ level to the nth level. If $n>>1$, the frequency of radiation emitted is proportional to:[cite: 4]",
+      "options": [
+        "(1) $\\frac{1}{n}[cite: 4]",
+        "(2) $\\frac{1}{n^{3}}[cite: 4]",
+        "(3) $\\frac{1}{n^{2}}[cite: 4]",
+        "(4) $\\frac{1}{n^{4}}[cite: 4]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 20,
+      "type": "single_choice",
+      "text": "In the following digital circuit, what will be the output at 'Z', when the input (A, B) are (1,0), (0,0), (1,1), (0,1)[cite: 4]",
+      "options": [
+        "(1) 0, 0, 1, 0[cite: 4]",
+        "(2) 1, 0, 1, 1[cite: 4]",
+        "(3) 1, 1, 0, 1[cite: 4]",
+        "(4) 0, 1, 0, 0[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 21,
+      "type": "integer_or_numerical",
+      "text": "A square shaped hole of side $l=\\frac{a}{2}$ is carved out at a distance $d=\\frac{a}{2}$ from the centre 'O' of a uniform circular disk of radius a. If the distance of the centre of mass of the remaining portion from O is $\\frac{a}{X}$, value of X (to the nearest integer) is:[cite: 4]",
+      "options": [],
+      "answer": "23"
+    },
+    {
+      "question_number": 22,
+      "type": "integer_or_numerical",
+      "text": "A particle of mass m is moving along the x-axis with initial velocity $u\\hat{i}$. It collides elastically with a particle of mass 10m at rest and then moves with half its initial kinetic energy (see figure). If $\\sin \\theta_{1}=\\sqrt{n}\\sin \\theta_{2}$, then value of n is ___.[cite: 4]",
+      "options": [],
+      "answer": "10"
+    },
+    {
+      "question_number": 23,
+      "type": "integer_or_numerical",
+      "text": "A wire of density $9\\times 10^{-3}~kg~cm^{-3}$ is stretched between two clamps 1 m apart. The resulting strain in the wire is $4.9\\times 10^{-4}$. The lowest frequency of the transverse vibrations in the wire (Young's modulus of wire $Y=9\\times 10^{10}~N~m^{-2}$), (to the nearest integer):[cite: 4]",
+      "options": [],
+      "answer": "35"
+    },
+    {
+      "question_number": 24,
+      "type": "integer_or_numerical",
+      "text": "An ideal cell of emf 10V is connected in circuit shown in figure. Each resistance is 2 $\\Omega$. The potential difference (in V) across the capacitor when it is fully charged is ___.[cite: 4]",
+      "options": [],
+      "answer": "8"
+    },
+    {
+      "question_number": 25,
+      "type": "integer_or_numerical",
+      "text": "A light ray enters a solid glass sphere of refractive index $\\mu=\\sqrt{3}$ at an angle of incidence $60^{\circ}$. The ray is both reflected and refracted at the farther surface of the sphere. The angle (in degrees) between the reflected and refracted rays at this surface is ___.[cite: 4]",
+      "options": [],
+      "answer": "90"
+    },
+    {
+      "question_number": 26,
+      "type": "single_choice",
+      "text": "The number of subshells associated with $n=4$ and $m=-2$ quantum numbers is:[cite: 4]",
+      "options": [
+        "(1) 8[cite: 4]",
+        "(2) 2[cite: 4]",
+        "(3) 16[cite: 4]",
+        "(4) 4[cite: 4]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 27,
+      "type": "single_choice",
+      "text": "Three elements X, Y and Z are in the $3^{rd}$ period of the periodic table. The oxides of X, Y and Z, respectively, are basic, amphoteric and acidic. The correct order of the atomic numbers of X, Y and Z is:[cite: 4]",
+      "options": [
+        "(1) $Z<Y<X[cite: 4]",
+        "(2) $X<Y<Z[cite: 4]",
+        "(3) $X<Z<Y[cite: 4]",
+        "(4) $Y<X<Z[cite: 4]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 28,
+      "type": "single_choice",
+      "text": "The shape/structure of $[XeF_{5}]^{-}$ and $XeO_{3}F_{2}$, respectively are:[cite: 4]",
+      "options": [
+        "(1) pentagonal planar and trigonal bipyramidal[cite: 4]",
+        "(2) octahedral and square pyramidal[cite: 4]",
+        "(3) trigonal bipyramidal and pentagonal planar[cite: 4]",
+        "(4) trigonal bipyramidal and trigonal bipyramidal[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 29,
+      "type": "single_choice",
+      "text": "Match the type of interaction in column A with the distance dependence of their interaction energy in column B: (i) ion - ion, (ii) Dipole - dipole, (iii) London dispersion. (a) $\\frac{1}{r}$, (b) $\\frac{1}{r^{2}}$, (c) $\\frac{1}{r^{3}}$, (d) $\\frac{1}{r^{6}}$.[cite: 4]",
+      "options": [
+        "(1) (i)-(b); (ii)-(d); (iii)-(c)[cite: 4]",
+        "(2) (i)-(a); (ii)-(b); (iii)-(d)[cite: 4]",
+        "(3) (i)-(a); (ii)-(b); (iii)-(c)[cite: 4]",
+        "(4) (i)-(a); (ii)-(c); (iii)-(d)[cite: 4]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 30,
+      "type": "single_choice",
+      "text": "The molecular geometry of $SF_{6}$ is octahedral. What is the geometry of $SF_{4}$ (including lone pair(s) of electrons, if any)?[cite: 4]",
+      "options": [
+        "(1) Tetrahedral[cite: 4]",
+        "(2) Trigonal bipyramidal[cite: 4]",
+        "(3) Pyramidal[cite: 4]",
+        "(4) Square planar[cite: 4]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 31,
+      "type": "single_choice",
+      "text": "Two elements A and B have similar chemical properties. They don't form solid hydrogencarbonates, but react with nitrogen to form nitrides. A and B, respectively, are:[cite: 4]",
+      "options": [
+        "(1) Na and Rb[cite: 4]",
+        "(2) Na and Ca[cite: 4]",
+        "(3) Cs and Ba[cite: 4]",
+        "(4) Li and Mg[cite: 4]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 32,
+      "type": "single_choice",
+      "text": "Arrange the following labelled hydrogens in decreasing order of acidity:[cite: 4]",
+      "options": [
+        "(1) $b>a>c>d[cite: 4]",
+        "(2) $c>b>a>d[cite: 4]",
+        "(3) $b>c>d>a[cite: 4]",
+        "(4) $c>b>d>a[cite: 4]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 33,
+      "type": "single_choice",
+      "text": "An organic compound 'A' $(C_{9}H_{10}O)$ when treated with conc. HI undergoes cleavage to yield compound 'B' and 'C'. 'B' gives yellow precipitate with $AgNO_{3}$ whereas 'C' tautomerizes to 'D'. 'D' gives positive iodoform test. 'A' could be:[cite: 4]",
+      "options": [
+        "(1) Option 1[cite: 4]",
+        "(2) Option 2[cite: 4]",
+        "(3) Option 3[cite: 4]",
+        "(4) Option 4[cite: 4]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 34,
+      "type": "single_choice",
+      "text": "The major product of the following reaction is: 2-nitrotoluene treated with Conc. $HNO_{3}$ + Conc. $H_{2}SO_{4}$[cite: 4]",
+      "options": [
+        "(1) Option 1[cite: 4]",
+        "(2) Option 2[cite: 4]",
+        "(3) Option 3[cite: 4]",
+        "(4) Option 4[cite: 4]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 35,
+      "type": "single_choice",
+      "text": "The size of a raw mango shrinks to a much smaller size when kept in a concentrated salt solution. Which one of the following process can explain this?[cite: 4]",
+      "options": [
+        "(1) Osmosis[cite: 4]",
+        "(2) Dialysis[cite: 4]",
+        "(3) Diffusion[cite: 4]",
+        "(4) Reverse osmosis[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 36,
+      "type": "single_choice",
+      "text": "The results given in the below table were obtained during kinetic studies of the reaction $2A+B\\rightarrow C+D$. Find X and Y.[cite: 4]",
+      "options": [
+        "(1) 0.4, 0.4[cite: 4]",
+        "(2) 0.4, 0.3[cite: 4]",
+        "(3) 0.3, 0.4[cite: 4]",
+        "(4) 0.3, 0.3[cite: 4]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 37,
+      "type": "single_choice",
+      "text": "Amongst the following statements regarding adsorption, those that are valid are: (a) $\\Delta H$ becomes less negative as adsorption proceeds. (b) On a given adsorbent, ammonia is adsorbed more than nitrogen gas. (c) On adsorption, the residual force acting along the surface of the adsorbent increases. (d) With increase in temperature, the equilibrium concentration of adsorbate increases.[cite: 4]",
+      "options": [
+        "(1) (d) and (a)[cite: 4]",
+        "(2) (b) and (c)[cite: 4]",
+        "(3) (a) and (b)[cite: 4]",
+        "(4) (c) and (d)[cite: 4]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 38,
+      "type": "single_choice",
+      "text": "Cast iron is used for the manufacture of :[cite: 4]",
+      "options": [
+        "(1) wrought iron and pig iron[cite: 4]",
+        "(2) pig iron, scrap iron and steel[cite: 4]",
+        "(3) wrought iron, pig iron and steel[cite: 4]",
+        "(4) wrought iron and steel[cite: 4]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 39,
+      "type": "single_choice",
+      "text": "Simplified absorption spectra of three complexes ((i), (ii) and (iii)) of $M^{+n}$ ion are provided; their $\\lambda_{max}$ values are marked as A, B and C respectively. The correct match between the complexes and their $\\lambda_{max}$ values is: (i) $[M(NCS)_{6}]^{(-6+n)}$, (ii) $[MF_{6}]^{(-6+n)}$, (iii) $[M(NH_{3})_{6}]^{n+}$[cite: 4]",
+      "options": [
+        "(1) A-(iii), B-(i), C-(ii)[cite: 4]",
+        "(2) A-(ii), B-(i), C-(iii)[cite: 4]",
+        "(3) A-(ii), B-(iii), C-(i)[cite: 4]",
+        "(4) A-(i), B-(ii), C-(iii)[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 40,
+      "type": "single_choice",
+      "text": "The one that is not expected to show isomerism is:[cite: 4]",
+      "options": [
+        "(1) $[Ni(NH_{3})_{4}(H_{2}O)_{2}]^{2+}[cite: 4]",
+        "(2) $[Ni(en)_{3}]^{2+}[cite: 4]",
+        "(3) $[Ni(NH_{3})_{2}Cl_{2}][cite: 4]",
+        "(4) $[Pt(NH_{3})_{2}Cl_{2}][cite: 4]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 41,
+      "type": "single_choice",
+      "text": "The major product obtained from $E_{2}$ elimination of 3-bromo-2-fluoropentane is:[cite: 4]",
+      "options": [
+        "(1) Option 1[cite: 4]",
+        "(2) Option 2[cite: 4]",
+        "(3) Option 3[cite: 4]",
+        "(4) Option 4[cite: 4]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 42,
+      "type": "single_choice",
+      "text": "Consider the reaction sequence given below involving t-BuBr. Which of the following statements is true:[cite: 4]",
+      "options": [
+        "(1) Changing the base from $OH^{\\ominus}$ to $OR^{\\ominus}$ will have no effect on reaction (2)[cite: 4]",
+        "(2) Changing the concentration of base will have no effect on reaction (1)[cite: 4]",
+        "(3) Doubling the concentration of base will double the rate of both the reactions[cite: 4]",
+        "(4) Changing the concentration of base will have no effect on reaction (2)[cite: 4]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 43,
+      "type": "single_choice",
+      "text": "Two compounds A and B with same molecular formula $(C_{3}H_{6}O)$ undergo Grignard reaction with methylmagnesium bromide to give products C and D. Products C and D show specific chemical tests (Ceric ammonium nitrate, Lucas, Iodoform). C and D respectively are:[cite: 4]",
+      "options": [
+        "(1) C = 2-methylbutan-2-ol derivative; D = corresponding alcohol[cite: 4]",
+        "(2) Option 2[cite: 4]",
+        "(3) Option 3[cite: 4]",
+        "(4) Option 4[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 44,
+      "type": "single_choice",
+      "text": "If you spill a chemical toilet cleaning liquid on your hand, your first aid would be:[cite: 4]",
+      "options": [
+        "(1) vinegar[cite: 4]",
+        "(2) aqueous NaOH[cite: 4]",
+        "(3) aqueous $NaHCO_{3}[cite: 4]",
+        "(4) aqueous $NH_{3}[cite: 4]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 45,
+      "type": "single_choice",
+      "text": "The correct observation in the following reaction is: Sucrose $\\xrightarrow{\\text{Hydrolysis}} A + B \\xrightarrow{\\text{Seliwanoff Reagent}} ?$[cite: 4]",
+      "options": [
+        "(1) Formation of blue colour[cite: 4]",
+        "(2) Gives no colour[cite: 4]",
+        "(3) Formation of red colour[cite: 4]",
+        "(4) Formation of violet colour[cite: 4]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 46,
+      "type": "integer_or_numerical",
+      "text": "The ratio of the mass percentages of 'C & H' and 'C & O' of a saturated acyclic organic compound 'X' are 4:1 and 3:4 respectively. Then, the moles of oxygen gas required for complete combustion of two moles of organic compound 'X' is ___.[cite: 4]",
+      "options": [],
+      "answer": "5"
+    },
+    {
+      "question_number": 47,
+      "type": "integer_or_numerical",
+      "text": "The work function of sodium metal is $4.41\\times 10^{-19}$ J. If photons of wavelength 300 nm are incident on the metal, the kinetic energy of the ejected electrons will be $\\times 10^{-21}$ J ($h=6.63\\times 10^{-34}$ J s, $c=3\\times 10^{8}~m~s^{-1}$):[cite: 4]",
+      "options": [],
+      "answer": "222"
+    },
+    {
+      "question_number": 48,
+      "type": "integer_or_numerical",
+      "text": "The heat of combustion of ethanol into carbon dioxide and water is -327 Kcal at constant pressure. The heat evolved (in cal) at constant volume at $27^{\circ}$C (if all gases behave ideally) is ($R=2~cal~mol^{-1}K^{-1}$):[cite: 4]",
+      "options": [],
+      "answer": "326400"
+    },
+    {
+      "question_number": 49,
+      "type": "integer_or_numerical",
+      "text": "The oxidation states of transition metal atoms in $K_{2}Cr_{2}O_{7}$, $KMnO_{4}$ and $K_{2}FeO_{4}$, respectively, are x, y and z. The sum of x, y and z is ___.[cite: 4]",
+      "options": [],
+      "answer": "19"
+    },
+    {
+      "question_number": 50,
+      "type": "integer_or_numerical",
+      "text": "For the disproportionation reaction $2Cu^{+}(aq)\\rightleftharpoons Cu(s)+Cu^{2+}(aq)$ at 298K, $\\ln K$ (where K is the equilibrium constant) is $\\times 10^{-1}$. Given: $E^{\\circ}_{Cu^{2+}/Cu^{+}}=0.16V, E^{\\circ}_{Cu^{+}/Cu}=0.52V, \\frac{RT}{F}=0.025$.[cite: 4]",
+      "options": [],
+      "answer": "144"
+    },
+    {
+      "question_number": 51,
+      "type": "single_choice",
+      "text": "Let $f(x)$ be a quadratic polynomial such that $f(-1)+f(2)=0$. If one of the roots of $f(x)=0$ is 3, then its other root lies in:[cite: 4]",
+      "options": [
+        "(1) (-1, 0)[cite: 4]",
+        "(2) (1, 3)[cite: 4]",
+        "(3) (-3, -1)[cite: 4]",
+        "(4) (0, 1)[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 52,
+      "type": "single_choice",
+      "text": "The imaginary part of $(3+2\\sqrt{-54})^{\\frac{1}{2}}-(3-2\\sqrt{-54})^{\\frac{1}{2}}$ can be:[cite: 4]",
+      "options": [
+        "(1) $-\\sqrt{6}[cite: 4]",
+        "(2) -2\\sqrt{6}[cite: 4]",
+        "(3) 6[cite: 4]",
+        "(4) $\\sqrt{6}[cite: 4]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 53,
+      "type": "single_choice",
+      "text": "Let $n>2$ be an integer. Suppose that there are n Metro stations in a city located around a circular path. Each pair of the nearest stations is connected by a straight track only. Further, each pair of the nearest station is connected by blue line, whereas all remaining pairs of stations are connected by red line. If number of red lines is 99 times the number of blue lines, then the value of n is:[cite: 4]",
+      "options": [
+        "(1) 201[cite: 4]",
+        "(2) 200[cite: 4]",
+        "(3) 101[cite: 4]",
+        "(4) 199[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 54,
+      "type": "single_choice",
+      "text": "If the sum of first 11 terms of an A.P., $a_{1}, a_{2}, a_{3}......$ is $0 (a_{1}\\neq 0)$ then the sum of the A.P. $a_{1}, a_{3}, a_{5}, ..... a_{23}$ is $ka_{1}$ where k is equal to:[cite: 4]",
+      "options": [
+        "(1) $-\\frac{121}{10}[cite: 4]",
+        "(2) $\\frac{121}{10}[cite: 4]",
+        "(3) $\\frac{72}{5}[cite: 4]",
+        "(4) $-\\frac{72}{5}[cite: 4]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 55,
+      "type": "single_choice",
+      "text": "Let S be the sum of the first 9 term of the series : $\\sum_{n=1}^{\\infty}...$ If $S=\\frac{x^{10}-x+45a(x-1)}{x-1}$, then k is equal to:[cite: 4]",
+      "options": [
+        "(1) -5[cite: 4]",
+        "(2) 1[cite: 4]",
+        "(3) -3[cite: 4]",
+        "(4) 3[cite: 4]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 56,
+      "type": "single_choice",
+      "text": "If the equation $\\cos^{4}\\theta+\\sin^{4}\\theta+\\lambda=0$ has real solutions for $\\theta$, then $\\lambda$ lies in interval:[cite: 4]",
+      "options": [
+        "(1) $(-\\frac{5}{4},-1)[cite: 4]",
+        "(2) $[-1,-\\frac{1}{2}][cite: 4]",
+        "(3) $(-\\frac{1}{2},-\\frac{1}{4}][cite: 4]",
+        "(4) $[-\\frac{3}{2},-\\frac{5}{4}][cite: 4]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 57,
+      "type": "single_choice",
+      "text": "The set of all possible values of $\\theta$ in the interval $(0, \\pi)$ for which the points (1, 2) and $(\\sin \\theta, \\cos \\theta)$ lie on the same side of the line $x+y=1$ is:[cite: 4]",
+      "options": [
+        "(1) $(0, \\frac{\\pi}{2})[cite: 4]",
+        "(2) (\\frac{\\pi}{4}, \\frac{3\\pi}{4})[cite: 4]",
+        "(3) (0, \\frac{3\\pi}{4})[cite: 4]",
+        "(4) (0, \\frac{\\pi}{4})[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 58,
+      "type": "single_choice",
+      "text": "The area (in sq. units) of an equilateral triangle inscribed in the parabola $y^{2}=8x$ with one of its vertices on the vertex of this parabola is:[cite: 4]",
+      "options": [
+        "(1) $64\\sqrt{3}[cite: 4]",
+        "(2) $256\\sqrt{3}[cite: 4]",
+        "(3) $192\\sqrt{3}[cite: 4]",
+        "(4) $128\\sqrt{3}[cite: 4]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 59,
+      "type": "single_choice",
+      "text": "For some $\\theta \\in (0, \\frac{\\pi}{2})$, if the eccentricity of the hyperbola, $x^{2}-y^{2}\\sec^{2}\\theta=10$ is $\\sqrt{5}$ times the eccentricity of the ellipse, $x^{2}\\sec^{2}\\theta+y^{2}=5$ then the length of the latus rectum of the ellipse, is:[cite: 4]",
+      "options": [
+        "(1) $2\\sqrt{6}[cite: 4]",
+        "(2) $\\sqrt{30}[cite: 4]",
+        "(3) $\\frac{2\\sqrt{5}}{3}[cite: 4]",
+        "(4) $\\frac{4\\sqrt{5}}{3}[cite: 4]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 60,
+      "type": "single_choice",
+      "text": "$\\lim_{x\\rightarrow 0}(\\tan(\\frac{\\pi}{4}+x))^{\\frac{1}{x}}$ is equal to:[cite: 4]",
+      "options": [
+        "(1) e[cite: 4]",
+        "(2) 2[cite: 4]",
+        "(3) 1[cite: 4]",
+        "(4) $e^{2}[cite: 4]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 61,
+      "type": "single_choice",
+      "text": "Which of the following is a tautology?[cite: 4]",
+      "options": [
+        "(1) $(\\neg p)\\wedge(p\\vee q)\\rightarrow q[cite: 4]",
+        "(2) $(q\\rightarrow p)\\vee\\neg(p\\rightarrow q)[cite: 4]",
+        "(3) $(\\neg q)\\vee(p\\wedge q)\\rightarrow q[cite: 4]",
+        "(4) $(p\\rightarrow q)\\wedge(q\\rightarrow p)[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 62,
+      "type": "single_choice",
+      "text": "Let $A=\\{X=(x,y,z)^{T}:PX=0 \\text{ and } x^{2}+y^{2}+z^{2}=1\\}$ where $P=\\begin{bmatrix} 1 & 2 & 1 \\\\ -2 & 3 & -4 \\\\ 1 & 9 & -1 \\end{bmatrix}$, then the set A:[cite: 4]",
+      "options": [
+        "(1) Is a singleton.[cite: 4]",
+        "(2) Is an empty set.[cite: 4]",
+        "(3) Contains more than two elements[cite: 4]",
+        "(4) Contains exactly two elements[cite: 4]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 63,
+      "type": "single_choice",
+      "text": "Let a, b, $c\\in R$ be all non-zero and satisfies $a^{3}+b^{3}+c^{3}=2$. If the matrix $A=\\begin{bmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{bmatrix}$ satisfies $A^{T}A=I$, then a value of abc can be:[cite: 4]",
+      "options": [
+        "(1) $-\\frac{1}{3}[cite: 4]",
+        "(2) $\\frac{1}{3}[cite: 4]",
+        "(3) 3[cite: 4]",
+        "(4) $\\frac{2}{3}[cite: 4]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 64,
+      "type": "single_choice",
+      "text": "Let $f:R\\rightarrow R$ be a function which satisfies $f(x+y)=f(x)+f(y)$, $\\forall x, y\\in R$. If $f(1)=2$ and $g(n)=\\sum_{k=1}^{n-1}f(k)$, $n\\in N$ then the value of n, for which $g(n)=20$, is:[cite: 4]",
+      "options": [
+        "(1) 5[cite: 4]",
+        "(2) 20[cite: 4]",
+        "(3) 4[cite: 4]",
+        "(4) 9[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 65,
+      "type": "single_choice",
+      "text": "The equation of the normal to the curve $y=(1+x)^{2y}+\\cos^{2}(\\sin^{-1}x)$, at $x=0$ is:[cite: 4]",
+      "options": [
+        "(1) $y+4x=2[cite: 4]",
+        "(2) $y=4x+2[cite: 4]",
+        "(3) $x+4y=8[cite: 4]",
+        "(4) $2y+x=4[cite: 4]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 66,
+      "type": "single_choice",
+      "text": "Let $f:(-1,\\infty)\\rightarrow R$ be defined by $f(0)=1$ and $f(x)=\\frac{1}{x}\\log_{e}(1+x)$, $x\\neq 0$. Then the function f:[cite: 4]",
+      "options": [
+        "(1) Decreases in (-1, 0) and increases in $(0, \\infty)[cite: 4]",
+        "(2) Increases in $(-1, \\infty)[cite: 4]",
+        "(3) Increases in (-1, 0) and decreases in $(0, \\infty)[cite: 4]",
+        "(4) Decreases in $(-1, \\infty)[cite: 4]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 67,
+      "type": "single_choice",
+      "text": "Consider a region $R=\\{(x,y)\\in R^{2}:x^{2}\\le y\\le 2x\\}$. If a line $y=\alpha$ divides the area of region R into two equal parts, then which of the following is true?[cite: 4]",
+      "options": [
+        "(1) $\\alpha^{3}-6\\alpha^{2}+16=0[cite: 4]",
+        "(2) $3\\alpha^{2}-8\\alpha^{3/2}+8=0[cite: 4]",
+        "(3) $3\\alpha^{2}-8\\alpha+8=0[cite: 4]",
+        "(4) $\\alpha^{3}-6\\alpha^{3/2}-16=0[cite: 4]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 68,
+      "type": "single_choice",
+      "text": "If a curve $y=f(x)$, passing through the point (1, 2), is the solution of the differential equation $2x^{2}dy=(2xy+y^{2})dx$, then $f(\\frac{1}{2})$ is equal to:[cite: 4]",
+      "options": [
+        "(1) $\\frac{1}{1+\\log_{e}2}[cite: 4]",
+        "(2) $\\frac{1}{1-\\log_{e}2}[cite: 4]",
+        "(3) $1+\\log_{e}2[cite: 4]",
+        "(4) $\\frac{-1}{1+\\log_{e}2}[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 69,
+      "type": "single_choice",
+      "text": "A plane passing through the point (3, 1, 1) contains two lines whose direction ratios are 1, 2, 2 and 2, 3, -1 respectively. If this plane also passes through the point (a, -3, 5), then a is equal to:[cite: 4]",
+      "options": [
+        "(1) 5[cite: 4]",
+        "(2) -10[cite: 4]",
+        "(3) 10[cite: 4]",
+        "(4) -5[cite: 4]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 70,
+      "type": "single_choice",
+      "text": "Let $E^{C}$ denote the complement of an event E. Let $E_{1}$, $E_{2}$ and $E_{3}$ be any pairwise independent events with $P(E_{1})>0$ and $P(E_{1}\\cap E_{2}\\cap E_{3})=0$ then $P((E_{2}^{C}\\cap E_{3}^{C})/E_{1})$ is equal to:[cite: 4]",
+      "options": [
+        "(1) $P(E_{2}^{C})+P(E_{3})[cite: 4]",
+        "(2) $P(E_{3}^{C})-P(E_{2}^{C})[cite: 4]",
+        "(3) $P(E_{3})-P(E_{2}^{C})[cite: 4]",
+        "(4) $P(E_{3}^{C})-P(E_{2})[cite: 4]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 71,
+      "type": "integer_or_numerical",
+      "text": "For a positive integer n, $(1+\\frac{1}{x})^{n}$ is expanded in increasing powers of x. If three consecutive coefficients in this expansion are in the ratio 25: 12, then n is equal to ___.[cite: 4]",
+      "options": [],
+      "answer": "118"
+    },
+    {
+      "question_number": 72,
+      "type": "integer_or_numerical",
+      "text": "If the variance of the terms in an increasing A.P. $b_{1}, b_{2}, b_{3}, .........., b_{11}$ is 90 then the common difference of this A.P. is ___.[cite: 4]",
+      "options": [],
+      "answer": "3"
+    },
+    {
+      "question_number": 73,
+      "type": "integer_or_numerical",
+      "text": "If $y=\\sum_{k=1}^{6}k\\cos^{-1}\\left\\{\\frac{3}{5}\\cos kx-\\frac{4}{5}\\sin kx\\right\\}$ then $\\frac{dy}{dx}$ at $x=0$ is ___.[cite: 4]",
+      "options": [],
+      "answer": "91"
+    },
+    {
+      "question_number": 74,
+      "type": "integer_or_numerical",
+      "text": "Let [t] denote the greatest integer less than or equal to t. Then the value of $\\int_{1}^{2}|2x-[3x]|dx$ is ___.[cite: 4]",
+      "options": [],
+      "answer": "1"
+    },
+    {
+      "question_number": 75,
+      "type": "integer_or_numerical",
+      "text": "Let the position vectors of points 'A' and 'B' be $\\hat{i}+\\hat{j}+\\hat{k}$ and $2\\hat{i}+\\hat{j}+3\\hat{k}$ respectively. A point P divides the line segment AB internally in the ratio $\\lambda:1(\\lambda>0)$. If O is the origin and $\\vec{OB}\\cdot \\vec{OP}-3|\\vec{OA}\\times \\vec{OP}|^{2}=6$, then $\\lambda$ is equal to ___.[cite: 4]",
+      "options": [],
+      "answer": "0.8"
+    }
+  ]
+}

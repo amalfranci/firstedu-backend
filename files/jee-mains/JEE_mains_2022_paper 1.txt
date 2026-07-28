@@ -1,0 +1,946 @@
+```json
+{
+  "title": "JEE Main 2022 (24 Jun Shift 1) Previous Year Paper with Answer Keys",
+  "source": "MathonGo",
+  "exam_info": {
+    "exam": "JEE Main",
+    "year": 2022,
+    "session": "June",
+    "date": "2022-06-24",
+    "shift": 1
+  },
+  "questions": [
+    {
+      "question_number": 1,
+      "type": "single_choice",
+      "text": "Identify the pair of physical quantities which have different dimensions:[cite: 1]",
+      "options": [
+        "(1) Wave number and Rydberg's constant[cite: 1]",
+        "(2) Stress and Coefficient of elasticity[cite: 1]",
+        "(3) Coercivity and Magnetisation[cite: 1]",
+        "(4) Specific heat capacity and Latent heat[cite: 1]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 2,
+      "type": "single_choice",
+      "text": "A projectile is projected with velocity of $25~m~s^{-1}$ at an angle with the horizontal. After t seconds its inclination with horizontal becomes zero. If R represents horizontal range of the projectile, the value of will be: [use $g=10~m~s^{-2}$][cite: 1]",
+      "options": [
+        "(1) $\\frac{1}{2}\\sin^{-1}(\\frac{5t^{2}}{4R})$[cite: 1]",
+        "(2) $\\frac{1}{2}\\sin^{-1}(\\frac{4R}{5t^{2}})$[cite: 1]",
+        "(3) $\\tan^{-1}(\\frac{4t^{2}}{5R})$[cite: 1]",
+        "(4) $\\cot^{-1}(\\frac{R}{20t^{2}})$[cite: 1]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 3,
+      "type": "single_choice",
+      "text": "A boy ties a stone of mass 100 g to the end of a 2 m long string and whirls it around in a horizontal plane. The string can withstand the maximum tension of 80 N. If the maximum speed with which the stone can revolve is $\\frac{K}{\\pi}$ rev $min^{-1}$ The value of K is : (Assume the string is massless and un-stretchable)[cite: 1]",
+      "options": [
+        "(1) 400[cite: 1]",
+        "(2) 300[cite: 1]",
+        "(3) 600[cite: 1]",
+        "(4) 800[cite: 1]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 4,
+      "type": "single_choice",
+      "text": "A block of mass 10 kg starts sliding on a surface with an initial velocity of $9.8~ms^{-1}$. The coefficient of friction between the surface and block is 0.5. The distance covered by the block before coming to rest is : [use $g=9.8~ms^{-2}$][cite: 1]",
+      "options": [
+        "(1) 9.8 m[cite: 1]",
+        "(2) 4.9 m[cite: 1]",
+        "(3) 12.5 m[cite: 1]",
+        "(4) 19.6 m[cite: 1]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 5,
+      "type": "single_choice",
+      "text": "A particle experiences a variable force $\\vec{F}=(4x\\hat{i}+3y^{2}\\hat{j})$ in a horizontal $x-y$ plane. Assume distance in meters and force is newton. If the particle moves from point (1, 2) to point (2, 3) in the $x-y$ plane, then Kinetic Energy changes by:[cite: 1]",
+      "options": [
+        "(1) 25 J[cite: 1]",
+        "(2) 50 J[cite: 1]",
+        "(3) 12.5 J[cite: 1]",
+        "(4) 0 J[cite: 1]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 6,
+      "type": "single_choice",
+      "text": "The approximate height from the surface of earth at which the weight of the body becomes $\\frac{1}{3}$ of its weight on the surface of earth is: [Radius of earth $R=6400$ km and $\\sqrt{3}=1.732]$[cite: 1]",
+      "options": [
+        "(1) 3840 km[cite: 1]",
+        "(2) 4685 km[cite: 1]",
+        "(3) 2133 km[cite: 1]",
+        "(4) 4267 km[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 7,
+      "type": "single_choice",
+      "text": "The bulk modulus of a liquid is $3\\times10^{10}Nm^{-2}$ The pressure required to reduce the volume of liquid by 2% is:[cite: 1]",
+      "options": [
+        "(1) $3\\times10^{8}Nm^{-2}$[cite: 1]",
+        "(2) $6\\times10^{8}N~m^{-2}$[cite: 1]",
+        "(3) $9\\times10^{8}N~m^{-2}$[cite: 1]",
+        "(4) $12\\times10^{8}N~m^{-2}$[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 8,
+      "type": "single_choice",
+      "text": "Two metallic blocks $M_{1}$ and $M_{2}$ of same area of cross-section are connected to each other (as shown in figure). If the thermal conductivity of $M_{2}$ is K then the thermal conductivity of $M_{1}$ will be: [Assume steady state heat conduction][cite: 1]",
+      "options": [
+        "(1) 10K[cite: 1]",
+        "(2) 8K[cite: 1]",
+        "(3) 12.5K[cite: 1]",
+        "(4) 2K[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 9,
+      "type": "single_choice",
+      "text": "A Carnot engine whose heat sinks at $27^{\circ}C$ has an efficiency of 25%. By how many degrees should the temperature of the source be changed to increase the efficiency by 100% of the original efficiency ?[cite: 1]",
+      "options": [
+        "(1) Increases by $18^{\circ}C$[cite: 1]",
+        "(2) Increases by $200^{\circ}C$[cite: 1]",
+        "(3) Increases by $120^{\circ}C$[cite: 1]",
+        "(4) Increases by $73^{\circ}C$[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 10,
+      "type": "single_choice",
+      "text": "The equations of two waves are given by: $y_{1}=5~sin~2\\pi(x-vt)$ cm, $y_{2}=3~sin~2\\pi(x-vt+1.5)$ cm. These waves are simultaneously passing through a string. The amplitude of the resulting wave is:[cite: 1]",
+      "options": [
+        "(1) 2 cm[cite: 1]",
+        "(2) 4 cm[cite: 1]",
+        "(3) 5.8 cm[cite: 1]",
+        "(4) 8 cm[cite: 1]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 11,
+      "type": "single_choice",
+      "text": "A vertical electric field of magnitude $4.9\\times10^{5}N~C^{-1}$ just prevents a water droplet of a mass 0.1 g from falling. The value of charge on the droplet will be: (Given $g=9.8~ms^{-2}$)[cite: 1]",
+      "options": [
+        "(1) $1.6\\times10^{-9}C$[cite: 1]",
+        "(2) $2.0\\times10^{-9}C$[cite: 1]",
+        "(3) $3.2\\times10^{-9}C$[cite: 1]",
+        "(4) $.5\\times10^{-9}C$[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 12,
+      "type": "single_choice",
+      "text": "A parallel plate capacitor is formed by two plates each of area $30\\pi~cm^{2}$ separated by 1 mm. A material of dielectric strength $3.6\\times10^{7}V~m^{-1}$ is filled between the plates. If the maximum charge that can be stored on the capacitor without causing any dielectric breakdown is $7\\times10^{-6}C$, the value of dielectric constant of the material is: [Use $\\frac{1}{4\\pi\\epsilon_{o}}=9\\times10^{9}N~m^{2}C^{-2}$][cite: 1]",
+      "options": [
+        "(1) 1.66[cite: 1]",
+        "(2) 1.75[cite: 1]",
+        "(3) 2.25[cite: 1]",
+        "(4) 2.33[cite: 1]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 13,
+      "type": "single_choice",
+      "text": "Two identical cells each of emf 1.5 V are connected in parallel across a parallel combination of two resistors each of resistance 20 $\\Omega$. A voltmeter connected in the circuit measures 1.2 V. The internal resistance of each cell is:[cite: 1]",
+      "options": [
+        "(1) 2.5 $\\Omega$[cite: 1]",
+        "(2) 4 $\\Omega$[cite: 1]",
+        "(3) 5 $\\Omega$[cite: 1]",
+        "(4) 10 $\\Omega$[cite: 1]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 14,
+      "type": "single_choice",
+      "text": "Given below are two statements: One is labelled as Assertion (A) and the other is labelled as Reason (R). Assertion (A): In an uniform magnetic field, speed and energy remains the same for a moving charged particle. Reason (R): Moving charged particle experiences magnetic force perpendicular to its direction of motion.[cite: 1]",
+      "options": [
+        "(1) Both Assertion and Reason are true and Reason is the correct explanation of Assertion.[cite: 1]",
+        "(2) Both Assertion and Reason are true but Reason is NOT the correct explanation of Assertion.[cite: 1]",
+        "(3) Assertion is true but Reason is false.[cite: 1]",
+        "(4) Assertion is false but Reason is true.[cite: 1]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 15,
+      "type": "single_choice",
+      "text": "The magnetic field at the centre of a circular coil of radius r, due to current I flowing through it, is B. The magnetic field at a point along the axis at a distance $\\frac{r}{2}$ from the centre is :[cite: 1]",
+      "options": [
+        "(1) $\\frac{B}{2}$[cite: 1]",
+        "(2) 2B[cite: 1]",
+        "(3) $(\\frac{2}{\\sqrt{5}})^{3}B$[cite: 1]",
+        "(4) $(\\frac{2}{\\sqrt{3}})^{3}B$[cite: 1]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 16,
+      "type": "single_choice",
+      "text": "A resistance of 40 $\\Omega$ is connected to a source of alternating current rated 220 V, 50 Hz. Find the time taken by the current to change from its maximum value to the rms value :[cite: 1]",
+      "options": [
+        "(1) 2.5 ms[cite: 1]",
+        "(2) 1.25 ms[cite: 1]",
+        "(3) 2.5 s[cite: 1]",
+        "(4) 0.25 s[cite: 1]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 17,
+      "type": "single_choice",
+      "text": "A plane electromagnetic wave travels in a medium of relative permeability 1.61 and relative permittivity 6.44. If magnitude of magnetic intensity is $4.5\\times10^{-2}A~m^{-1}$ at a point, what will be the approximate magnitude of electric field intensity at that point ? (Given: Permeability of free space $\\mu_{0}=4\\pi\\times10^{-7}N~A^{-2}$, speed of light in vacuum $c=3\\times10^{8}ms^{-1}$)[cite: 1]",
+      "options": [
+        "(1) $16.96~Vm^{-1}$[cite: 1]",
+        "(2) $2.25\\times10^{-2}V~m^{-1}$[cite: 1]",
+        "(3) $8.48~V~m^{-1}$[cite: 1]",
+        "(4) $.75\\times10^{6}V~m^{-1}$[cite: 1]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 18,
+      "type": "single_choice",
+      "text": "Choose the correct option from the following options given below :[cite: 1]",
+      "options": [
+        "(1) In the ground state of Rutherford's model electrons are in stable equilibrium. While in Thomson's model electrons always experience a net-force.[cite: 1]",
+        "(2) An atom has a nearly continuous mass distribution in a Rutherford's model but has a highly non-uniform mass distribution in Thomson's model[cite: 1]",
+        "(3) A classical atom based on Rutherford's model is doomed to collapse.[cite: 1]",
+        "(4) The positively charged part of the atom possesses most of the mass in Rutherford's model but not in Thomson's model.[cite: 1]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 19,
+      "type": "single_choice",
+      "text": "Nucleus A is having mass number 220 and its binding energy per nucleon is 5.6 MeV. It splits in two fragments B and C of mass numbers 105 and 115. The binding energy of nucleons in B and C is 6.4 MeV per nucleon. The energy Q released per fission will be:[cite: 1]",
+      "options": [
+        "(1) 0.8 MeV[cite: 1]",
+        "(2) 275 MeV[cite: 1]",
+        "(3) 220 MeV[cite: 1]",
+        "(4) 176 MeV[cite: 1]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 20,
+      "type": "single_choice",
+      "text": "A baseband signal of 3.5 MHz frequency is modulated with a carrier signal of 3.5 GHz frequency using amplitude modulation method. What should be the minimum size of antenna required to transmit the modulated signal ?[cite: 1]",
+      "options": [
+        "(1) 42.8 m[cite: 1]",
+        "(2) 42.8 mm[cite: 1]",
+        "(3) 21.4 mm[cite: 1]",
+        "(4) 21.4 m[cite: 1]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 21,
+      "type": "integer_or_numerical",
+      "text": "From the top of a tower, a ball is thrown vertically upward which reaches the ground in 6 s. A second ball thrown vertically downward from the same position with the same speed reaches the ground in 1.5 s. A third ball released from the rest from the same location, will reach the ground in ___ s.[cite: 1]",
+      "options": [],
+      "answer": "3"
+    },
+    {
+      "question_number": 22,
+      "type": "integer_or_numerical",
+      "text": "A ball of mass 100 g is dropped from a height $h=10$ cm on a platform fixed at the top of a vertical spring. The ball stays on the platform and the platform is depressed by a distance $\\frac{h}{2}$. The spring constant is ___ $N~m^{-1}$ (Use $g=10~m~s^{-2}$)[cite: 1]",
+      "options": [],
+      "answer": "120"
+    },
+    {
+      "question_number": 23,
+      "type": "integer_or_numerical",
+      "text": "A metre scale is balanced on a knife edge at its centre. When two coins, each of mass 10 g are put one on the top of the other at the 10.0 cm mark the scale is found to be balanced at 40.0 cm mark. The mass of the metre scale is found to be $x\\times10^{-2}$ kg. The value of x is ___.[cite: 1]",
+      "options": [],
+      "answer": "6"
+    },
+    {
+      "question_number": 24,
+      "type": "integer_or_numerical",
+      "text": "0.056 kg of Nitrogen is enclosed in a vessel at a temperature of $127^{\circ}C$. The amount of heat required to double the speed of its molecules is ___ kcal. (Take $R=2$ cal mole$^{-1}K^{-1}$)[cite: 1]",
+      "options": [],
+      "answer": "12"
+    },
+    {
+      "question_number": 25,
+      "type": "integer_or_numerical",
+      "text": "In a potentiometer arrangement, a cell gives a balancing point at 75 cm length of wire. This cell is now replaced by another cell of unknown emf. If the ratio of the emf's of two cells respectively is 3:2, the difference in the balancing length of the potentiometer wire in above two cases will be ___ cm.[cite: 1]",
+      "options": [],
+      "answer": "25"
+    },
+    {
+      "question_number": 26,
+      "type": "integer_or_numerical",
+      "text": "As shown in the figure an inductor of inductance 200 mH is connected to an AC source of emf 220 V and frequency 50 Hz. The instantaneous voltage of the source is 0 V when the peak value of current is $\\frac{\\sqrt{a}}{\\pi}$ A. The value of a is ___.[cite: 1]",
+      "options": [],
+      "answer": "242"
+    },
+    {
+      "question_number": 27,
+      "type": "integer_or_numerical",
+      "text": "Two identical thin biconvex lenses of focal length 15 cm and refractive index 1.5 are in contact with each other. The space between the lenses is filled with a liquid of refractive index 1.25. The focal length of the combination is ___ cm.[cite: 1]",
+      "options": [],
+      "answer": "10"
+    },
+    {
+      "question_number": 28,
+      "type": "integer_or_numerical",
+      "text": "Sodium light of wavelengths 650 nm and 655 nm is used to study diffraction at a single slit of aperture 0.5 mm. The distance between the slit and the screen is 2.0 m. The separation between the positions of the first maxima of diffraction pattern obtained in the two cases is $\\times10^{-5}$ m.[cite: 1]",
+      "options": [],
+      "answer": "3"
+    },
+    {
+      "question_number": 29,
+      "type": "integer_or_numerical",
+      "text": "When light of frequency twice the threshold frequency is incident on the metal plate, the maximum velocity of emitted electron is $v_{1}$. When the frequency of incident radiation is increased to five times the threshold value, the maximum velocity of emitted electron becomes $v_{2}$. If $v_{2}=xv_{1}$, the value of x will be ___.[cite: 1]",
+      "options": [],
+      "answer": "2"
+    },
+    {
+      "question_number": 30,
+      "type": "integer_or_numerical",
+      "text": "A transistor is used in common-emitter mode in an amplifier circuit. When a signal of 10 mV is added to the base-emitter voltage, the base current changes by 10 $\\mu$A and the collector current changes by 1.5 mA. The load resistance is 5 k$\\Omega$. The voltage gain of the transistor will be ___.[cite: 1]",
+      "options": [],
+      "answer": "750"
+    },
+    {
+      "question_number": 31,
+      "type": "single_choice",
+      "text": "If a rocket runs on a fuel ($C_{15}H_{30}$) and liquid oxygen, the weight of oxygen required and $CO_{2}$ released for every litre of fuel respectively are: (Given: density of the fuel is $0.756~g/mL$)[cite: 1]",
+      "options": [
+        "(1) 1188 g and 1296 g[cite: 1]",
+        "(2) 2376 g and 2592 g[cite: 1]",
+        "(3) 2592 g and 2376 g[cite: 1]",
+        "(4) 3429 g and 3142 g[cite: 1]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 32,
+      "type": "single_choice",
+      "text": "Consider the following pairs of electrons: (A) (a) $n=3$, $l=1$, $m_{l}=1$, $m_{s}=+\\frac{1}{2}$; (b) $n=3$, $l=2$, $m_{l}=1$, $m_{s}=+\\frac{1}{2}$. (B) (a) $n=3$, $l=2$, $m_{l}=-2$, $m_{s}=-\\frac{1}{2}$; (b) $n=3$, $l=2$, $m_{l}=-1$, $m_{s}=-\\frac{1}{2}$. (C) (a) $n=4$, $l=2$, $m_{l}=2$, $m_{s}=+\\frac{1}{2}$; (b) $n=3$, $l=2$, $m_{l}=2$, $m_{s}=+\\frac{1}{2}$. The pairs of electrons present in degenerate orbitals is/are[cite: 1]",
+      "options": [
+        "(1) Only (A)[cite: 1]",
+        "(2) Only (B)[cite: 1]",
+        "(3) Only (C)[cite: 1]",
+        "(4) (B) and (C) both[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 33,
+      "type": "single_choice",
+      "text": "For a reaction at equilibrium $A(g)\\rightleftharpoons B(g)+\\frac{1}{2}C(g)$, the relation between dissociation constant (K), degree of dissociation ($\\alpha$) and equilibrium pressure (p) is given by:[cite: 1]",
+      "options": [
+        "(1) $K=\\frac{\\alpha^{\\frac{3}{2}}p^{\\frac{1}{2}}}{(2+\\alpha)^{\\frac{1}{2}}(1-\\alpha)}$[cite: 1]",
+        "(2) $K=\\frac{\\alpha^{\\frac{1}{2}}p^{\\frac{3}{2}}}{(1+\\frac{3}{2}\\alpha)^{\\frac{1}{2}}(1-\\alpha)}$[cite: 1]",
+        "(3) $K=\\frac{(\\alpha p)^{\\frac{3}{2}}}{(1+\\frac{3}{2}\\alpha)^{\\frac{1}{2}}(1-\\alpha)}$[cite: 1]",
+        "(4) $K=\\frac{(\\alpha p)^{\\frac{3}{2}}}{(1+\\alpha)(1-\\alpha)^{\\frac{1}{2}}}$[cite: 1]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 34,
+      "type": "single_choice",
+      "text": "The highest industrial consumption of molecular hydrogen is to produce compound of element:[cite: 1]",
+      "options": [
+        "(1) Carbon[cite: 1]",
+        "(2) Oxygen[cite: 1]",
+        "(3) Chlorine[cite: 1]",
+        "(4) Nitrogen[cite: 1]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 35,
+      "type": "single_choice",
+      "text": "Which of the following statements are correct? (A) Both LiCl and $MgCl_{2}$ are soluble in ethanol. (B) The oxides $Li_{2}O$ and MgO combine with excess of oxygen to give superoxide. (C) LiF is less soluble in water than other alkali metal fluorides. (D) $Li_{2}O$ is more soluble in water than other alkali metal oxides. Choose the most appropriate answer from the options given below[cite: 1]",
+      "options": [
+        "(1) (A) and (C) only[cite: 1]",
+        "(2) (A), (C) and (D) only[cite: 1]",
+        "(3) (B) and (C) only[cite: 1]",
+        "(4) (A) and (D) only[cite: 1]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 36,
+      "type": "single_choice",
+      "text": "Identify the correct statement for $B_{2}H_{6}$ from those given below. (A) In $B_{2}H_{6}$, all B - H bonds are equivalent. (B) In $B_{2}H_{6}$, there are four 3-centre-2-electron bonds. (C) $B_{2}H_{6}$ is a Lewis acid. (D) $B_{2}H_{6}$ can be synthesized from both $BF_{3}$ and $NaBH_{4}$. (E) $B_{2}H_{6}$ is a planar molecule. Choose the most appropriate answer from the options given below :[cite: 1]",
+      "options": [
+        "(1) (A) and (E) only[cite: 1]",
+        "(2) (B), (C) and (E) only[cite: 1]",
+        "(3) (C) and (D) only[cite: 1]",
+        "(4) (C) and (E) only[cite: 1]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 37,
+      "type": "single_choice",
+      "text": "Which of the following is an example of conjugated diketone?[cite: 1]",
+      "options": [
+        "(1) $CH_{3}-C(=O)-CH_{2}$-cyclohexanone[cite: 1]",
+        "(2) $CH_{3}-C(=O)-CH_{2}-CH_{2}-CH_{2}-C(=O)-CH_{3}$[cite: 1]",
+        "(3) $CH_{3}-C(=O)-CH_{2}-C(=O)-CH_{3}$[cite: 1]",
+        "(4) Phenyl-C(=O)-CH_{2}-CH_{2}-C(=O)-CH_{3}$[cite: 1]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 38,
+      "type": "single_choice",
+      "text": "In the given reaction sequence, the major product 'C' is: $C_{8}H_{10}\\xrightarrow[]{HNO_{3}/H_{2}SO_{4}} A \\xrightarrow[{}]{} B \\xrightarrow[]{alcoholic~KOH} C$[cite: 1]",
+      "options": [
+        "(1) Option 1[cite: 1]",
+        "(2) Option 2[cite: 1]",
+        "(3) Option 3[cite: 1]",
+        "(4) Option 4[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 39,
+      "type": "single_choice",
+      "text": "Given below are two statements: Statement I: Emulsions of oil in water are unstable and sometimes they separate into two layers on standing. Statement II: For stabilisation of an emulsion, excess of electrolyte is added. In the light of the above statements, choose the most appropriate answer from the options given below:[cite: 1]",
+      "options": [
+        "(1) Both Statement I and Statement II are correct.[cite: 1]",
+        "(2) Both Statement I and Statement II are incorrect.[cite: 1]",
+        "(3) Statement I is correct but Statement II is incorrect.[cite: 1]",
+        "(4) Statement I is incorrect but Statement II is correct.[cite: 1]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 40,
+      "type": "single_choice",
+      "text": "Match List - I with List - II: List-I: (A) Sphalerite, (B) Calamine, (C) Galena, (D) Siderite. List-II: (I) $FeCO_{3}$, (II) $ZnCO_{3}$, (III) PbS, (IV) ZnS. Choose the most appropriate answer from the options given below :[cite: 1]",
+      "options": [
+        "(1) (A)-(IV), (B)-(I), (C)-(II), (D)-(III)[cite: 1]",
+        "(2) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)[cite: 1]",
+        "(3) (A)-(II), (B)-(III), (C)-(I), (D)-(IV)[cite: 1]",
+        "(4) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 41,
+      "type": "single_choice",
+      "text": "Given below are the oxides: $Na_{2}O, As_{2}O_{3}, N_{2}O, NO$ and $Cl_{2}O_{7}$. Number of amphoteric oxides is:[cite: 1]",
+      "options": [
+        "(1) 0[cite: 1]",
+        "(2) 1[cite: 1]",
+        "(3) 2[cite: 1]",
+        "(4) 3[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 42,
+      "type": "single_choice",
+      "text": "The most stable trihalide of nitrogen is:[cite: 1]",
+      "options": [
+        "(1) $NF_{3}$[cite: 1]",
+        "(2) $NCl_{3}$[cite: 1]",
+        "(3) $NBr_{3}$[cite: 1]",
+        "(4) $NI_{3}$[cite: 1]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 43,
+      "type": "single_choice",
+      "text": "Which one of the following elemental forms is not present in the enamel of the teeth?[cite: 1]",
+      "options": [
+        "(1) $Ca^{2+}$[cite: 1]",
+        "(2) $P^{3+}$[cite: 1]",
+        "(3) $F^{-}$[cite: 1]",
+        "(4) $P^{5+}$[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 44,
+      "type": "single_choice",
+      "text": "Match List - I with List - II: List-I: (A) $[PtCl_{4}]^{2-}$, (B) $BrF_{5}$, (C) $PCl_{5}$, (D) $[Co(NH_{3})_{6}]^{3+}$. List-II: (I) $sp^{3}d$, (II) $d^{2}sp^{3}$, (III) $dsp^{2}$, (IV) $sp^{3}d^{2}$. Choose the most appropriate answer from the options given below[cite: 1]",
+      "options": [
+        "(1) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)[cite: 1]",
+        "(2) (A)-(III), (B)-(IV), (C)-(I), (D)-(II)[cite: 1]",
+        "(3) (A)-(III), (B)-(I), (C)-(IV), (D)-(II)[cite: 1]",
+        "(4) (A)-(II), (B)-(I), (C)-(IV), (D)-(III)[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 45,
+      "type": "single_choice",
+      "text": "The major product of the given reaction sequence starting with 4-methoxybenzyl chloride: (i) NaCN, (ii) $OH^{-}$, (iii) cyclohexanone, (iv) $H_{2}/Ni$ is:[cite: 1]",
+      "options": [
+        "(1) Option 1[cite: 1]",
+        "(2) Option 2[cite: 1]",
+        "(3) Option 3[cite: 1]",
+        "(4) Option 4[cite: 1]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 46,
+      "type": "single_choice",
+      "text": "Two statements are given below: Statement I: The melting point of monocarboxylic acid with even number of carbon atoms is higher than that of with odd number of carbon atoms acid immediately below and above it in the series. Statement II: The solubility of monocarboxylic acids in water decreases with increase in molar mass. Choose the most appropriate option:[cite: 1]",
+      "options": [
+        "(1) Both Statement I and Statement II are correct.[cite: 1]",
+        "(2) Both Statement I and Statement II are incorrect.[cite: 1]",
+        "(3) Statement I is correct but Statement II is incorrect.[cite: 1]",
+        "(4) Statement I is incorrect but Statement II is correct.[cite: 1]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 47,
+      "type": "single_choice",
+      "text": "Which of the following is an example of polyester?[cite: 1]",
+      "options": [
+        "(1) Butadiene-styrene copolymer[cite: 1]",
+        "(2) Melamine polymer[cite: 1]",
+        "(3) Neoprene[cite: 1]",
+        "(4) Poly-\\beta-hydroxybutyrate-co-\\beta-hydroxyvalerate[cite: 1]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 48,
+      "type": "single_choice",
+      "text": "Which of the following is not a broad spectrum antibiotic?[cite: 1]",
+      "options": [
+        "(1) Vancomycin[cite: 1]",
+        "(2) Penicillin G[cite: 1]",
+        "(3) Ofloxacin[cite: 1]",
+        "(4) Ampicillin[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 49,
+      "type": "single_choice",
+      "text": "During the qualitative analysis of salt with cation $y^{2+}$, addition of a reagent (X) to alkaline solution of the salt gives a bright red precipitate. The reagent (X) and the cation ($y^{2+}$) present respectively are :[cite: 1]",
+      "options": [
+        "(1) Dimethylglyoxime and $Ni^{2+}$[cite: 1]",
+        "(2) Dimethylglyoxime and $Co^{2+}$[cite: 1]",
+        "(3) Nessler's reagent and $Hg^{2+}$[cite: 1]",
+        "(4) Nessler's reagent and $Ni^{2+}$[cite: 1]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 50,
+      "type": "single_choice",
+      "text": "A polysaccharide 'X' on boiling with dil $H_{2}SO_{4}$ at 393 K under 2-3 atm pressure yields 'Y'. 'Y' on treatment with bromine water gives gluconic acid. 'X' contains \\beta-glycosidic linkages only. Compound 'X' is:[cite: 1]",
+      "options": [
+        "(1) starch[cite: 1]",
+        "(2) cellulose[cite: 1]",
+        "(3) amylose[cite: 1]",
+        "(4) amylopectin[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 51,
+      "type": "integer_or_numerical",
+      "text": "$2O_{3}(g)\\rightleftharpoons 3O_{2}(g)$. At 300 K, ozone is fifty percent dissociated. The standard free energy change at this temperature and 1 atm pressure is $(-)......J~mol^{-1}$ (Nearest integer) [Given: $\\ln 1.35=0.3$ and $R=8.3~J~K^{-1}mol^{-1}$][cite: 1]",
+      "options": [],
+      "answer": "747"
+    },
+    {
+      "question_number": 52,
+      "type": "integer_or_numerical",
+      "text": "A 0.166 g sample of an organic compound was digested with conc. $H_{2}SO_{4}$ and then distilled with NaOH. The ammonia gas evolved was passed through 50.0 mL of 0.5 N $H_{2}SO_{4}$. The used acid required 30.0 mL of 0.25 N NaOH for complete neutralization. The mass percentage of nitrogen in the organic compound is ___.[cite: 1]",
+      "options": [],
+      "answer": "63"
+    },
+    {
+      "question_number": 53,
+      "type": "integer_or_numerical",
+      "text": "Number of electrophillic centres in the given compound is ___.[cite: 1]",
+      "options": [],
+      "answer": "3"
+    },
+    {
+      "question_number": 54,
+      "type": "integer_or_numerical",
+      "text": "The major product 'A' of the following given reaction ($H^{+}$ + 2, 7-Dimethyl-2, 6-octadiene $\\rightarrow$ Major Product) has ___ $sp^{2}$ hybridized carbon atoms.[cite: 1]",
+      "options": [],
+      "answer": "2"
+    },
+    {
+      "question_number": 55,
+      "type": "integer_or_numerical",
+      "text": "Atoms of element X form hcp lattice and those of element Y occupy $\\frac{2}{3}$ of its tetrahedral voids. The percentage of element X in the lattice is ___ (Nearest integer)[cite: 1]",
+      "options": [],
+      "answer": "43"
+    },
+    {
+      "question_number": 56,
+      "type": "integer_or_numerical",
+      "text": "The osmotic pressure of blood is 7.47 bar at 300 K. To inject glucose to a patient intravenously, it has to be isotonic with blood. The concentration of glucose solution in $gL^{-1}$ is ___ (Molar mass of glucose $=180~g~mol^{-1}$, $R=0.083~L~bar~K^{-1}mol^{-1}$) (Nearest integer)[cite: 1]",
+      "options": [],
+      "answer": "54"
+    },
+    {
+      "question_number": 57,
+      "type": "integer_or_numerical",
+      "text": "The cell potential for the following cell $Pt|H_{2}(g)|H^{+}(aq)||Cu^{2+}(0.01~M)|Cu(s)$ is 0.576 V at 298 K. The pH of the solution is ___ (Nearest integer) (Given: $E_{Cu^{2+}/Cu}^{o}=0.34~V$ and $\\frac{2.303~RT}{F}=0.06~V$)[cite: 1]",
+      "options": [],
+      "answer": "5"
+    },
+    {
+      "question_number": 58,
+      "type": "integer_or_numerical",
+      "text": "The rate constants for decomposition of acetaldehyde have been measured over the temperature range $700-1000~K$. The data has been analysed by plotting $\\ln k$ vs $\\frac{10^{3}}{T}$ graph. The value of activation energy for the reaction is ___ $kJ~mol^{-1}$ (Nearest integer) (Given: $R=8.31~J~K^{-1}mol^{-1}$, slope = -18.5)[cite: 1]",
+      "options": [],
+      "answer": "154"
+    },
+    {
+      "question_number": 59,
+      "type": "integer_or_numerical",
+      "text": "The difference in oxidation state of chromium in chromate and dichromate salts is ___.[cite: 1]",
+      "options": [],
+      "answer": "0"
+    },
+    {
+      "question_number": 60,
+      "type": "integer_or_numerical",
+      "text": "In the cobalt-carbonyl complex: $[Co_{2}(CO)_{8}]$, number of Co-Co bonds is 'X' and terminal CO ligands is 'Y'. $X+Y=$ ___.[cite: 1]",
+      "options": [],
+      "answer": "7"
+    },
+    {
+      "question_number": 61,
+      "type": "single_choice",
+      "text": "If the sum of the squares of the reciprocals of the roots $\\alpha$ and $\\beta$ of the equation $3x^{2}+\\lambda x-1=0$ is 15, then $6(\\alpha^{3}+\\beta^{3})^{2}$ is equal to[cite: 1]",
+      "options": [
+        "(1) 46[cite: 1]",
+        "(2) 36[cite: 1]",
+        "(3) 24[cite: 1]",
+        "(4) 18[cite: 1]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 62,
+      "type": "single_choice",
+      "text": "Let $A=\\{z\\in C:1\\le|z-(1+i)|\\le2\\}$ and $B=\\{z\\in A:|z-(1-i)|=1\\}$. Then, B[cite: 1]",
+      "options": [
+        "(1) is an empty set[cite: 1]",
+        "(2) contains exactly two elements[cite: 1]",
+        "(3) contains exactly three elements[cite: 1]",
+        "(4) is an infinite set[cite: 1]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 63,
+      "type": "single_choice",
+      "text": "If $\\{a_{i}\\}_{i=1}^{n}$, where n is an even integer, is an arithmetic progression with common difference 1, and $\\sum_{i=1}^{n}a_{i}=192, \\sum_{i=1}^{\\frac{n}{2}}a_{2i}=120$, then n is equal to[cite: 1]",
+      "options": [
+        "(1) 18[cite: 1]",
+        "(2) 36[cite: 1]",
+        "(3) 96[cite: 1]",
+        "(4) 48[cite: 1]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 64,
+      "type": "single_choice",
+      "text": "The remainder when $3^{2022}$ is divided by 5 is[cite: 1]",
+      "options": [
+        "(1) 1[cite: 1]",
+        "(2) 2[cite: 1]",
+        "(3) 3[cite: 1]",
+        "(4) 4[cite: 1]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 65,
+      "type": "single_choice",
+      "text": "Let $S=\\{\\theta\\in[-\\pi,\\pi]-\\{\\pm\\frac{\\pi}{2}\\}:\\sin\\theta~\\tan\\theta+\\tan\\theta=\\sin2\\theta\\}$. If $T=\\sum_{\\theta\\in S}\\cos2\\theta$, then $T+n(S)$ is equal to[cite: 1]",
+      "options": [
+        "(1) $7+\\sqrt{3}$[cite: 1]",
+        "(2) 5[cite: 1]",
+        "(3) $8+\\sqrt{3}$[cite: 1]",
+        "(4) 9[cite: 1]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 66,
+      "type": "single_choice",
+      "text": "Let $x^{2}+y^{2}+Ax+By+C=0$ be a circle passing through (0, 6) and touching the parabola $y=x^{2}$ at (2, 4). Then $A+C$ is equal to[cite: 1]",
+      "options": [
+        "(1) 16[cite: 1]",
+        "(2) $\\frac{88}{5}$[cite: 1]",
+        "(3) 72[cite: 1]",
+        "(4) -8[cite: 1]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 67,
+      "type": "single_choice",
+      "text": "Let $\\lambda x-2y=\\mu$ be a tangent to the hyperbola $a^{2}x^{2}-y^{2}=b^{2}$. Then $(\\frac{\\lambda}{a})^{2}-(\\frac{\\mu}{b})^{2}$ is equal to[cite: 1]",
+      "options": [
+        "(1) -2[cite: 1]",
+        "(2) -4[cite: 1]",
+        "(3) 2[cite: 1]",
+        "(4) 4[cite: 1]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 68,
+      "type": "single_choice",
+      "text": "The number of choices for $\\Delta\\in\\{\\wedge,\\vee,\\Rightarrow,\\Leftrightarrow\\}$, such that $(p\\Delta q)\\Rightarrow((p\\Delta-q)\\vee((-p)\\Delta q))$ is a tautology, is[cite: 1]",
+      "options": [
+        "(1) 1[cite: 1]",
+        "(2) 2[cite: 1]",
+        "(3) 3[cite: 1]",
+        "(4) 4[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 69,
+      "type": "single_choice",
+      "text": "Let $S=\\{\\sqrt{n}:1\\le n\\le50$ and n is odd\\}. Let $a\\in S$ and $A=\\begin{bmatrix} 1 & 0 & a \\\\ -1 & 1 & 0 \\\\ -a & 0 & 1 \\end{bmatrix}$. If $\\sum_{a\\in S}\\det(\\text{adj }A)=100\\lambda$, then $\\lambda$ is equal to[cite: 1]",
+      "options": [
+        "(1) 218[cite: 1]",
+        "(2) 221[cite: 1]",
+        "(3) 663[cite: 1]",
+        "(4) 1717[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 70,
+      "type": "single_choice",
+      "text": "The number of values of $\\alpha$ for which the system of equations $x+y+z=\\alpha$, $\\alpha x+2\\alpha y+3z=-1$, $x+3\\alpha y+5z=4$ is inconsistent, is[cite: 1]",
+      "options": [
+        "(1) 0[cite: 1]",
+        "(2) 1[cite: 1]",
+        "(3) 2[cite: 1]",
+        "(4) 3[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 71,
+      "type": "single_choice",
+      "text": "The set of all values of k for which $(\\tan^{-1}x)^{3}+(\\cot^{-1}x)^{3}=k\\pi^{3},x\\in R,$ is the interval[cite: 1]",
+      "options": [
+        "(1) $[\\frac{1}{32},\\frac{7}{8})$[cite: 1]",
+        "(2) $(\\frac{1}{24},\\frac{13}{16})$[cite: 1]",
+        "(3) $[\\frac{1}{48},\\frac{13}{16}]$[cite: 1]",
+        "(4) $[\\frac{1}{32},\\frac{9}{8})$[cite: 1]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 72,
+      "type": "single_choice",
+      "text": "The domain of $f(x)=\\frac{\\cos^{-1}(\\frac{x^{2}-5x+6}{x^{2}-9})}{\\log(x^{2}-3x+2)}$ is[cite: 1]",
+      "options": [
+        "(1) $x\\in[\\frac{-1}{2},1)\\cup(2,\\infty)-\\{3\\}$[cite: 1]",
+        "(2) $x\\in[\\frac{-1}{2},1]\\cup(2,\\infty)-\\{3\\}$[cite: 1]",
+        "(3) $x\\in(\\frac{-1}{2},1)\\cup[2,\\infty)-\\{3\\}$[cite: 1]",
+        "(4) $x\\in[\\frac{-1}{2},1)\\cup[2,\\infty)-\\{3\\}$[cite: 1]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 73,
+      "type": "single_choice",
+      "text": "For the function $f(x)=4~\\log_{e}(x-1)-2x^{2}+4x+5$, $x>1$, which one of the following is NOT correct?[cite: 1]",
+      "options": [
+        "(1) $f(x)$ is increasing in $(1,2)$ and decreasing in $(2,\\infty)$[cite: 1]",
+        "(2) $f(x)=-1$ has exactly two solutions[cite: 1]",
+        "(3) $f'(e)-f''(2)<0$[cite: 1]",
+        "(4) $f(x)=0$ has a root in the interval $(e,e+1)$[cite: 1]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 74,
+      "type": "single_choice",
+      "text": "If the tangent at the point $(x_{1},y_{1})$ on the curve $y=x^{3}+3x^{2}+5$ passes through the origin, then $(x_{1},y_{1})$ does NOT lie on the curve[cite: 1]",
+      "options": [
+        "(1) $x^{2}+\\frac{y^{2}}{81}=2$[cite: 1]",
+        "(2) $\\frac{y^{2}}{9}-x^{2}=8$[cite: 1]",
+        "(3) $y=4x^{2}+5$[cite: 1]",
+        "(4) $\\frac{x}{3}-y^{2}=2$[cite: 1]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 75,
+      "type": "single_choice",
+      "text": "The sum of absolute maximum and absolute minimum values of the function $f(x)=|2x^{2}+3x-2|+\\sin x~\\cos x$ in the interval [0, 1] is[cite: 1]",
+      "options": [
+        "(1) $3+\\frac{\\sin(1)\\cos^{2}(\\frac{1}{2})}{2}$[cite: 1]",
+        "(2) $3+\\frac{1}{2}(1+2~\\cos(1))\\sin(1)$[cite: 1]",
+        "(3) $5+\\frac{1}{2}(\\sin(1)+\\sin(2))$[cite: 1]",
+        "(4) $2+\\sin(\\frac{1}{2})\\cos(\\frac{1}{2})$[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 76,
+      "type": "single_choice",
+      "text": "The surface area of a balloon of spherical shape being inflated, increases at a constant rate. If initially, the radius of balloon is 3 units and after 5 seconds, it becomes 7 units, then its radius after 9 seconds is[cite: 1]",
+      "options": [
+        "(1) 9[cite: 1]",
+        "(2) 7[cite: 1]",
+        "(3) 5[cite: 1]",
+        "(4) 3[cite: 1]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 77,
+      "type": "single_choice",
+      "text": "If $x=x(y)$ is the solution of the differential equation $y\\frac{dx}{dy}=2x+y^{3}(y+1)e^{y}$, $x(1)=0$; then $x(e)$ is equal to[cite: 1]",
+      "options": [
+        "(1) $e^{e}(e^{3}-1)$[cite: 1]",
+        "(2) $e^{3}(e^{e}-1)$[cite: 1]",
+        "(3) $e^{e}-1$[cite: 1]",
+        "(4) $e^{e}(e^{2}-1)$[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 78,
+      "type": "single_choice",
+      "text": "Let $\\hat{a}$, $\\hat{b}$ be unit vectors. If $\\vec{c}$ is a vector such that the angle between $\\hat{a}$ and $\\vec{c}$ is $\\frac{\\pi}{12}$ and $\\hat{b}=\\vec{c}+2(\\vec{c}\\times\\hat{a})$, then $6|\\vec{c}|^{2}$ is equal to:[cite: 1]",
+      "options": [
+        "(1) $6(3-\\sqrt{3})$[cite: 1]",
+        "(2) $6(3+\\sqrt{3})$[cite: 1]",
+        "(3) $3+\\sqrt{3}$[cite: 1]",
+        "(4) $6(\\sqrt{3}+1)$[cite: 1]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 79,
+      "type": "single_choice",
+      "text": "Bag A contains 2 white, 1 black and 3 red balls and bag B contains 3 black, 2 red and n white balls. One bag is chosen at random and 2 balls drawn from it at random are found to be 1 red and 1 black. If the probability that both balls come from Bag A is $\\frac{6}{11}$ then n is equal to[cite: 1]",
+      "options": [
+        "(1) 13[cite: 1]",
+        "(2) 6[cite: 1]",
+        "(3) 4[cite: 1]",
+        "(4) 3[cite: 1]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 80,
+      "type": "single_choice",
+      "text": "If a random variable X follows the Binomial distribution $B(33,p)$ such that $3P(X=0)=P(X=1)$, then the value of $\\frac{P(X=15)}{P(X=18)}-\\frac{P(X=16)}{P(X=17)}$ is equal to[cite: 1]",
+      "options": [
+        "(1) 1320[cite: 1]",
+        "(2) 1088[cite: 1]",
+        "(3) $\\frac{1088}{1089}$[cite: 1]",
+        "(4) $\\frac{120}{1331}$[cite: 1]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 81,
+      "type": "integer_or_numerical",
+      "text": "In an examination, there are 5 multiple choice questions with 3 choices, out of which exactly one is correct. There are 3 marks for each correct answer, -2 marks for each wrong answer and 0 mark if the question is not attempted. Then, the number of ways a student appearing in the examination gets 5 marks is ___[cite: 1]",
+      "options": [],
+      "answer": "40"
+    },
+    {
+      "question_number": 82,
+      "type": "integer_or_numerical",
+      "text": "Let $A(\\frac{3}{\\sqrt{a}},\\sqrt{a})$, $a>0$, be a fixed point in the xy-plane. The image of A in y-axis be B and the image of B in z-axis be C. If $D(3~cos~\\theta,a~sin~\\theta)$ is a point in the fourth quadrant such that the maximum area of $\\triangle ACD$ is 12 square units, then a is equal to ___.[cite: 1]",
+      "options": [],
+      "answer": "8"
+    },
+    {
+      "question_number": 83,
+      "type": "integer_or_numerical",
+      "text": "If two tangents drawn from a point $(\\alpha,\\beta)$ lying on the ellipse $25x^{2}+4y^{2}=1$ to the parabola $y^{2}=4x$ are such that the slope of one tangent is four times the other, then the value of $(10\\alpha+5)^{2}+(16\\beta^{2}+50)^{2}$ equals ___.[cite: 1]",
+      "options": [],
+      "answer": "2929"
+    },
+    {
+      "question_number": 84,
+      "type": "integer_or_numerical",
+      "text": "The number of one-one functions $f:\\{a,b,c,d\\}\\rightarrow\\{0,1,2,...,10\\}$ such that $2f(a)-f(b)+3f(c)+f(d)=0$ is ___.[cite: 1]",
+      "options": [],
+      "answer": "31"
+    },
+    {
+      "question_number": 85,
+      "type": "integer_or_numerical",
+      "text": "The number of points where the function $f(x)=\\begin{cases} [4x^{2}-1] & \\text{if } -1<x<1 \\\\ \\frac{2x^{2}-3x-7}{|x+1|+x-2} & \\text{if } x\\ge1 \\end{cases}$, where $[t]$ denotes the greatest integer $\\le t$, is discontinuous is ___.[cite: 1]",
+      "options": [],
+      "answer": "7"
+    },
+    {
+      "question_number": 86,
+      "type": "integer_or_numerical",
+      "text": "If $f(\\theta)=\\sin\\theta+\\int_{-\\frac{\\pi}{2}}^{\\frac{\\pi}{2}}(\\sin\\theta+t~\\cos\\theta)\\cdot f(t)dt$, then $|\\int_{0}^{\\frac{\\pi}{2}}f(\\theta)d\\theta|$ is equal to ___.[cite: 1]",
+      "options": [],
+      "answer": "1"
+    },
+    {
+      "question_number": 87,
+      "type": "integer_or_numerical",
+      "text": "Let $\\max_{0\\le x\\le2}\\{\\frac{9-x^{2}}{5-x}\\}=\\alpha$ and $\\min_{0\\le x\\le2}\\{\\frac{9-x^{2}}{5-x}\\}=\\beta$. If $\\int_{\\beta-\\frac{8}{3}}^{2\\alpha-1}\\max\\{\\frac{9-x^{2}}{5-x},x\\}dx=\\alpha_{1}+\\alpha_{2}\\log_{e}(\\frac{8}{15})$, then $\\alpha_{1}+\\alpha_{2}$ is equal to ___.[cite: 1]",
+      "options": [],
+      "answer": "34"
+    },
+    {
+      "question_number": 88,
+      "type": "integer_or_numerical",
+      "text": "Let S be the region bounded by the curves $y=x^{3}$ and $y^{2}=x$. The curve $y=2|x|$ divides S into two regions of areas $R_{1}$ and $R_{2}$. If $\\max\\{|R_{1}|,|R_{2}|\\}=R_{2}$ then $\\frac{R_{2}}{R_{1}}$ is equal to ___.[cite: 1]",
+      "options": [],
+      "answer": "19"
+    },
+    {
+      "question_number": 89,
+      "type": "integer_or_numerical",
+      "text": "Let a line having direction ratios 1, -4, 2 intersect the lines $\\frac{x-7}{3}=\\frac{y-1}{-1}=\\frac{z+2}{1}$ and $\\frac{x}{2}=\\frac{y-7}{3}=\\frac{z}{1}$ at the points A and B. Then $(AB)^{2}$ is equal to ___.[cite: 1]",
+      "options": [],
+      "answer": "84"
+    },
+    {
+      "question_number": 90,
+      "type": "integer_or_numerical",
+      "text": "If the shortest distance between the lines $\\vec{r}=(-\\hat{i}+3\\hat{k})+\\lambda(\\hat{i}-a\\hat{j})$ and $\\vec{r}=(-\\hat{j}+2\\hat{k})+\\mu(\\hat{i}-\\hat{j}+\\hat{k})$ is $\\sqrt{\\frac{2}{3}}$, then the integral value of a is equal to ___.[cite: 1]",
+      "options": [],
+      "answer": "2"
+    }
+  ]
+}
+
+```

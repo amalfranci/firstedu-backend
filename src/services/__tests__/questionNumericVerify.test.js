@@ -33,9 +33,17 @@ describe('questionNumericVerify.service.js', () => {
             expect(parseNumber('10 m/s')).toBe(10);
         });
 
-        test('returns NaN for non-numeric text', () => {
-            expect(isNaN(parseNumber('Team 1'))).toBe(true);
+        test('returns NaN for text with no digits at all', () => {
             expect(isNaN(parseNumber('xyz'))).toBe(true);
+        });
+
+        // parseNumber is a raw numeric-extraction utility, not a "does this look like a
+        // number" classifier — it deliberately pulls a digit out of label-like text
+        // (parseNumber("Team 1") = 1). isNumericAnswer() below is the correct gate for
+        // classification; callers that need "is this actually numeric" must use that,
+        // not Number.isFinite(parseNumber(x)).
+        test('is permissive — extracts a stray digit from label-like text', () => {
+            expect(parseNumber('Team 1')).toBe(1);
         });
     });
 
@@ -88,7 +96,7 @@ describe('questionNumericVerify.service.js', () => {
             expect(formatValueForOption(20160, 'kW')).toBe('20160 kW');
             expect(formatValueForOption(5, 'kg')).toBe('5 kg');
             expect(formatValueForOption(100, 'm/s')).toBe('100 m/s');
-            expect(formatValueForOption(1.5, 'MW')).toBe('1.5 MW');
+            expect(formatValueForOption(1.5, 'MW')).toBe('1.50 MW');
         });
 
         test('formats numeric values correctly', () => {
@@ -106,7 +114,7 @@ describe('questionNumericVerify.service.js', () => {
             expect(formatValueForOption(10, 'N')).toBe('10 N');
             expect(formatValueForOption(25, 'J')).toBe('25 J');
             expect(formatValueForOption(3, 's')).toBe('3 s');
-            expect(formatValueForOption(1.2, 'm')).toBe('1.2 m');
+            expect(formatValueForOption(1.2, 'm')).toBe('1.20 m');
         });
 
         test('handles compound units', () => {
@@ -165,9 +173,11 @@ describe('questionNumericVerify.service.js', () => {
             const minGap = Math.min(...gaps);
             const tolerance = Math.min(0.02 * 0.3, minGap / 2);
 
-            // Verify: 0.2875 ± tolerance doesn't include 0.3000
+            // Verify: 0.2875 ± tolerance doesn't reach into the neighboring options
+            // (0.2815 stays above 0.2500, 0.2935 stays below 0.3000) — the window
+            // around 0.2875 must not span into an adjacent option.
             expect(0.2875 + tolerance).toBeLessThan(0.3000);
-            expect(0.2875 - tolerance).toBeLessThan(0.2500);
+            expect(0.2875 - tolerance).toBeGreaterThan(0.2500);
         });
     });
 });

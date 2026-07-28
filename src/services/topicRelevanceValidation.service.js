@@ -1423,6 +1423,7 @@ ${questionBlocks}
    · A step that concedes the result is inconsistent ("this implies an overlap", "this contradicts …") and then proceeds anyway.
    · An empty or contentless step (e.g. a step that is just "." or a fragment).
 6. **Stem-constraint compliance** — every condition stated in the stem must actually be used and satisfied. If the stem fixes a quantity ("exactly 10 students between A and B") and the explanation computes something different (17) and carries on regardless, that is a confirmed defect — either the stem or the reasoning is wrong.
+7. **Functional-form / qualitative-conclusion consistency** — numbers matching isn't enough; check that the marked option's FORM follows from the derivation shown: the sign and exponent of a proportionality (e.g. a derivation showing T ∝ A⁻¹ but the marked option states T ∝ A¹), the direction of an inequality or trend (increasing vs decreasing, will-slip vs will-not-slip), and any named physical/logical condition asserted mid-derivation (e.g. "required friction is less than the maximum available, so it will NOT slip" — the marked option must not then claim slipping occurs). A numerically-labeled option can still be a confirmed factual defect if its qualitative claim contradicts the derivation's own stated conclusion.
 
 **A contradiction is a defect even when the marked option is correct.** The explanation is what the student reads; a derivation that contradicts itself, ignores a stated constraint, or reaches the right answer by invalid reasoning must be flagged as **factual** (severity "major"). Do NOT excuse it under "informal wording" — that exemption covers phrasing only, never broken logic.
 
@@ -1442,7 +1443,7 @@ ${questionBlocks}
 
 | Category | What belongs here | Examples |
 |----------|-------------------|----------|
-| **factual** | Wrong answer key, math errors, explanation ≠ marked answer, **self-contradictory derivation**, **stem constraint ignored**, empty/contentless step | Derives 6 M but options show 0.32 M; value not in options; identical option text; "16 beats 1" then "1 beats 16"; stem says exactly 10 between A and B but explanation computes 17 and continues |
+| **factual** | Wrong answer key, math errors, explanation ≠ marked answer, **self-contradictory derivation**, **stem constraint ignored**, empty/contentless step, **wrong functional form/sign/exponent or contradicted qualitative conclusion** | Derives 6 M but options show 0.32 M; value not in options; identical option text; "16 beats 1" then "1 beats 16"; stem says exactly 10 between A and B but explanation computes 17 and continues; derivation shows T ∝ A⁻¹ but marked option states T ∝ A; derivation concludes required friction < max available (no slipping) but marked option says the object slips |
 | **style** | Explanation quality, formatting, draft wording (answer may still be correct) | Short/brief explanation; options vary in number formatting; vague hand-waving |
 | **diversity** | Duplicate or near-duplicate questions in the batch | Same stem as Q5; repeats the same problem logic |
 | **authenticity** | Non-exam templates, weak distractor craft, pattern mismatch | Repetitive formula template; coaching-style stem |

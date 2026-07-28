@@ -210,12 +210,13 @@ export const generateQuestionBankSuggestionsSchema = Joi.object({
     generateIntent: Joi.string()
         .valid(GENERATE_INTENTS.INITIAL, GENERATE_INTENTS.EVALUATION_REGEN)
         .default(GENERATE_INTENTS.INITIAL),
-    /** default = solve-first / one-shot pipeline; prompt_first = exam-setter prompt then Gemini; paper_reference = topics/difficulty grounded in a stored reference paper */
+    /** default = solve-first / one-shot pipeline; prompt_first = exam-setter prompt then Gemini; paper_reference = topics/difficulty grounded in a stored reference paper; question_rag = style/pattern grounded in retrieved previously-confirmed questions */
     generationMode: Joi.string()
         .valid(
             GENERATION_MODES.DEFAULT,
             GENERATION_MODES.PROMPT_FIRST,
-            GENERATION_MODES.PAPER_REFERENCE
+            GENERATION_MODES.PAPER_REFERENCE,
+            GENERATION_MODES.QUESTION_RAG
         )
         .default(GENERATION_MODES.DEFAULT),
     topicRelevanceEvaluated: Joi.boolean().default(false),
@@ -547,7 +548,15 @@ const confirmedQuestionItemSchema = Joi.object({
     text: Joi.string().trim().max(8000).optional().allow(''),
     title: Joi.string().trim().max(500).optional().allow(''),
     passage: Joi.string().trim().max(12000).optional().allow(''),
-    options: Joi.array().items(Joi.string().trim().max(2000)).max(8).optional(),
+    options: Joi.array()
+        .items(
+            Joi.alternatives().try(
+                Joi.string().trim().max(2000),
+                Joi.object().unknown(true)
+            )
+        )
+        .max(8)
+        .optional(),
     optionA: Joi.string().trim().max(2000).optional().allow(''),
     optionB: Joi.string().trim().max(2000).optional().allow(''),
     optionC: Joi.string().trim().max(2000).optional().allow(''),

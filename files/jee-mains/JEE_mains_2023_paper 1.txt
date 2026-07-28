@@ -1,0 +1,954 @@
+{
+  "title": "JEE Main 2023 (06 Apr Shift 2) Previous Year Paper with Answer Keys",
+  "source": "MathonGo",
+  "exam_info": {
+    "exam": "JEE Main",
+    "year": 2023,
+    "session": "April",
+    "date": "2023-04-06",
+    "shift": 2
+  },
+  "questions": [
+    {
+      "question_number": 1,
+      "type": "single_choice",
+      "text": "A particle starts with an initial velocity of $10.0~m~s^{-1}$ along x-direction and accelerates uniformly at the rate of $2.0~m~s^{-2}$. The time taken by the particle to reach the velocity of $60.0~m~s^{-1}$ is:[cite: 9]",
+      "options": [
+        "(1) 25 s[cite: 9]",
+        "(2) 3 s[cite: 9]",
+        "(3) 6 s[cite: 9]",
+        "(4) 30 s[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 2,
+      "type": "single_choice",
+      "text": "As shown in the figure, a particle is moving with constant speed v $m~s^{-1}$. Considering its motion from A to B (angle $120^{\circ}$), the magnitude of the average velocity is:[cite: 9]",
+      "options": [
+        "(1) $\\sqrt{3}~m~s^{-1}[cite: 9]",
+        "(2) \\pi~m~s^{-1}[cite: 9]",
+        "(3) $1.5\\sqrt{3}~m~s^{-1}[cite: 9]",
+        "(4) $2\\sqrt{3}~m~s^{-1}[cite: 9]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 3,
+      "type": "single_choice",
+      "text": "A child of mass 5 kg is going round a merry-go-round that makes 1 rotation in 3.14 s. The radius of the merry-go-round is 2 m. The centrifugal force on the child will be:[cite: 9]",
+      "options": [
+        "(1) 80 N[cite: 9]",
+        "(2) 40 N[cite: 9]",
+        "(3) 100 N[cite: 9]",
+        "(4) 50 N[cite: 9]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 4,
+      "type": "single_choice",
+      "text": "A small particle of mass m moves in such a way that its potential energy $U=\\frac{1}{2}m\\omega^{2}r^{2}$ where $\\omega$ is constant and r is the distance of the particle from origin. Assuming Bohr's quantization of momentum and circular orbit, the radius of $n^{th}$ orbit will be proportional to:[cite: 9]",
+      "options": [
+        "(1) $\\sqrt{n}[cite: 9]",
+        "(2) $\\frac{1}{n}[cite: 9]",
+        "(3) $n^{2}[cite: 9]",
+        "(4) n[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 5,
+      "type": "integer_or_numerical",
+      "text": "A body is dropped on ground from a height $h_{1}$ and after hitting the ground, it rebounds to a height $h_{2}$. If the ratio of velocities of the body just before and after hitting ground is 4, then percentage loss in kinetic energy of the body is $\\frac{x}{4}$. The value of x is ___.[cite: 9]",
+      "options": [],
+      "answer": "375"
+    },
+    {
+      "question_number": 6,
+      "type": "integer_or_numerical",
+      "text": "A ring and a solid sphere rotating about an axis passing through their centres have same radii of gyration. The axis of rotation is perpendicular to plane of ring. The ratio of radius of ring to that of sphere is $\\sqrt{\\frac{2}{x}}$. The value of x is ___.[cite: 9]",
+      "options": [],
+      "answer": "5"
+    },
+    {
+      "question_number": 7,
+      "type": "single_choice",
+      "text": "The weight of a body on the surface of the earth is 100 N. The gravitational force on it when taken at a height, from the surface of earth, equal to one-fourth the radius of the earth is:[cite: 9]",
+      "options": [
+        "(1) 64 N[cite: 9]",
+        "(2) 25 N[cite: 9]",
+        "(3) 50 N[cite: 9]",
+        "(4) 100 N[cite: 9]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 8,
+      "type": "single_choice",
+      "text": "Choose the incorrect statement from the following:[cite: 9]",
+      "options": [
+        "(1) The speed of satellite in a given circular orbit remains constant[cite: 9]",
+        "(2) For a planet revolving around the sun in an elliptical orbit, the total energy of the planet remains constant[cite: 9]",
+        "(3) The linear speed of a planet revolving around the sun remains constant[cite: 9]",
+        "(4) When a body falls towards earth, the displacement of earth towards the body is negligible[cite: 9]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 9,
+      "type": "integer_or_numerical",
+      "text": "A metal block of mass m is suspended from a rigid support through a metal wire of diameter 14 mm. The tensile stress developed in the wire under equilibrium state is $7\\times 10^{5}~N~m^{-2}$. The value of mass m is ___ kg. (Take $g=9.8~m~s^{-2}$ and $\\pi=\\frac{22}{7}$)[cite: 9]",
+      "options": [],
+      "answer": "9"
+    },
+    {
+      "question_number": 10,
+      "type": "single_choice",
+      "text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R. Assertion A: When you squeeze one end of a tube to get toothpaste out from the other end, Pascal's principle is observed. Reason R: A change in the pressure applied to an enclosed incompressible fluid is transmitted undiminished to every portion of the fluid and to the walls of its container. In the light of the above statements, choose the most appropriate answer from the options given below:[cite: 9]",
+      "options": [
+        "(1) Both A and R are correct but R is NOT the correct explanation of A[cite: 9]",
+        "(2) A is not correct but R is correct[cite: 9]",
+        "(3) A is correct but R is not correct[cite: 9]",
+        "(4) Both A and R is correct and R is the correct explanation of A[cite: 9]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 11,
+      "type": "single_choice",
+      "text": "A body cools in 7 minutes from $60^{\circ}C$ to $40^{\circ}C$. The temperature of the surrounding is $10^{\circ}C$. The temperature of the body after the next 7 minutes will be:[cite: 9]",
+      "options": [
+        "(1) $30^{\circ}C$[cite: 9]",
+        "(2) $32^{\circ}C$[cite: 9]",
+        "(3) $34^{\circ}C$[cite: 9]",
+        "(4) $28^{\circ}C$[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 12,
+      "type": "single_choice",
+      "text": "The temperature of an ideal gas is increased from 200 K to 800 K. If r.m.s. speed of gas at 200 K is $v_{0}$. Then, r.m.s. speed of the gas at 800 K will be:[cite: 9]",
+      "options": [
+        "(1) $\\frac{v_{0}}{4}[cite: 9]",
+        "(2) $v_{0}[cite: 9]",
+        "(3) $4v_{0}[cite: 9]",
+        "(4) $2v_{0}[cite: 9]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 13,
+      "type": "integer_or_numerical",
+      "text": "A simple pendulum with length 100 cm and bob of mass 250 g is executing S.H.M of amplitude 10 cm. The maximum tension in the string is found to be $\\frac{x}{40}$ N. The value of x is ___.[cite: 9]",
+      "options": [],
+      "answer": "11"
+    },
+    {
+      "question_number": 14,
+      "type": "single_choice",
+      "text": "The ratio of speed of sound in hydrogen gas to the speed of sound in oxygen gas at the same temperature is:[cite: 9]",
+      "options": [
+        "(1) 1:2[cite: 9]",
+        "(2) 4:1[cite: 9]",
+        "(3) 1:4[cite: 9]",
+        "(4) 1:1[cite: 9]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 15,
+      "type": "single_choice",
+      "text": "A dipole comprises of two charged particles of identical magnitude q and opposite in nature. The mass m of the positive charged particle is half of the mass of the negative charged particle. The two charges are separated by a distance l. If the dipole is placed in a uniform electric field $\\vec{E}$ in such a way that dipole axis makes a very small angle with the electric field, $\\vec{E}$. The angular frequency of the oscillations of the dipole when released is given by:[cite: 9]",
+      "options": [
+        "(1) $\\sqrt{\\frac{3qE}{2ml}}[cite: 9]",
+        "(2) $\\sqrt{\\frac{8qE}{3ml}}[cite: 9]",
+        "(3) $\\sqrt{\\frac{4qE}{mL}}[cite: 9]",
+        "(4) $\\sqrt{\\frac{8qE}{ml}}[cite: 9]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 16,
+      "type": "integer_or_numerical",
+      "text": "Experimentally it is found that 12.8 eV energy is required to separate a hydrogen atom into a proton and an electron. So the orbital radius of the electron in a hydrogen atom is $\\frac{9}{x}\\times 10^{-10}$ m. The value of x is ___.[cite: 9]",
+      "options": [],
+      "answer": "10"
+    },
+    {
+      "question_number": 17,
+      "type": "integer_or_numerical",
+      "text": "As shown in the figure, two parallel plate capacitors having equal plate area of 200 cm$^{2}$ are joined in such a way that $a\\neq b$. The equivalent capacitance of the combination is $x\\epsilon_{0}$ F. The value of x is ___.[cite: 9]",
+      "options": [],
+      "answer": "99"
+    },
+    {
+      "question_number": 18,
+      "type": "single_choice",
+      "text": "A student is provided with a variable voltage source V, a test resistor $R_{T}=10~\\Omega$, two identical galvanometers $G_{1}$ and $G_{2}$ and two additional resistors, $R_{1}=10~M\\Omega$ and $R_{2}=0.001~\\Omega$. For conducting an experiment to verify ohm's law, the most suitable circuit is:[cite: 9]",
+      "options": [
+        "(1) Option 1[cite: 9]",
+        "(2) Option 2[cite: 9]",
+        "(3) Option 3[cite: 9]",
+        "(4) Option 4[cite: 9]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 19,
+      "type": "single_choice",
+      "text": "Figure shows a part of an electric circuit. The potentials at points a, b and c are 30 V, 12 V and 2 V respectively. The current through the 20 $\\Omega$ resistor will be:[cite: 9]",
+      "options": [
+        "(1) 1.0 A[cite: 9]",
+        "(2) 0.4 A[cite: 9]",
+        "(3) 0.6 A[cite: 9]",
+        "(4) 0.2 A[cite: 9]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 20,
+      "type": "integer_or_numerical",
+      "text": "As shown in the figure the voltmeter reads 2 V across 5 $\\Omega$ resistor. The resistance of the voltmeter is ___ $\\Omega$.[cite: 9]",
+      "options": [],
+      "answer": "10"
+    },
+    {
+      "question_number": 21,
+      "type": "integer_or_numerical",
+      "text": "A proton with a kinetic energy of 2.0 eV moves into a region of uniform magnetic field of magnitude $\\frac{\\pi}{2}\\times 10^{-3}$ T. The angle between the direction of magnetic field and velocity of proton is $60^{\circ}$. The pitch of the helical path taken by the proton is ___ cm. (Take, mass of proton $=1.6\\times 10^{-27}$ kg and charge on proton $=1.6\\times 10^{-19}$ C).[cite: 9]",
+      "options": [],
+      "answer": "375"
+    },
+    {
+      "question_number": 22,
+      "type": "integer_or_numerical",
+      "text": "Two concentric circular coils with radii 1 cm and 1000 cm and number of turns 10 and 200 respectively are placed coaxially with centers coinciding. The mutual inductance of this arrangement will be ___ $\\times 10^{-8}$ H. (Take, $\\pi^{2}=10$)[cite: 9]",
+      "options": [],
+      "answer": "5"
+    },
+    {
+      "question_number": 23,
+      "type": "single_choice",
+      "text": "A capacitor of capacitance 150.0 $\\mu$F is connected to an alternating source of emf given by $E=36\\sin(120\\pi t)$ V. The maximum value of current in the circuit is approximately equal to:[cite: 9]",
+      "options": [
+        "(1) 2 A[cite: 9]",
+        "(2) $\\sqrt{2}$ A[cite: 9]",
+        "(3) $2\\sqrt{2}$ A[cite: 9]",
+        "(4) $\\frac{1}{\\sqrt{2}}$ A[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 24,
+      "type": "single_choice",
+      "text": "The energy density associated with electric field $\\vec{E}$ and magnetic field $\\vec{B}$ of an electromagnetic wave in free space is given by ($\\epsilon_{0}$ permittivity of free space, $\\mu_{0}$ - permeability of free space):[cite: 9]",
+      "options": [
+        "(1) $U_{E}=\\frac{E^{2}}{2\\epsilon_{0}}$, $U_{B}=\\frac{B^{2}}{2\\mu_{0}}[cite: 9]",
+        "(2) $U_{E}=\\frac{\\epsilon_{0}E^{2}}{2}$, $U_{B}=\\frac{B^{2}}{2\\mu_{0}}[cite: 9]",
+        "(3) $U_{E}=\\frac{\\epsilon_{0}E^{2}}{2}$, $U_{B}=\\frac{\\mu_{0}B^{2}}{2}[cite: 9]",
+        "(4) $U_{E}=\\frac{E^{2}}{2\\epsilon_{0}}$, $U_{B}=\\frac{\\mu_{0}B^{2}}{2}[cite: 9]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 25,
+      "type": "single_choice",
+      "text": "A 2 meter long scale with least count of 0.2 cm is used to measure the locations of objects on an optical bench. While measuring the focal length of a convex lens, the object pin and the convex lens are placed at 80 cm mark and 1 m mark, respectively. The image of the object pin on the other side of lens coincides with image pin that is kept at 180 cm mark. The % error in the estimation of focal length is:[cite: 9]",
+      "options": [
+        "(1) 0.85[cite: 9]",
+        "(2) 1.70[cite: 9]",
+        "(3) 1.02[cite: 9]",
+        "(4) 0.51[cite: 9]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 26,
+      "type": "single_choice",
+      "text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R. Assertion A: The phase difference of two light waves change if they travel through different media having same thickness, but different indices of refraction. Reason R: The wavelengths of waves are different in different media. In the light of the above statements, choose the most appropriate answer from the options given below:[cite: 9]",
+      "options": [
+        "(1) Both A and R are correct but R is NOT the correct explanation of A[cite: 9]",
+        "(2) A is not correct but R is correct[cite: 9]",
+        "(3) A is correct but R is not correct[cite: 9]",
+        "(4) Both A and R are correct and R is the correct explanation of A[cite: 9]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 27,
+      "type": "integer_or_numerical",
+      "text": "A beam of light consisting of two wavelengths $7000\\text{ \\AA}$ and $5500\\text{ \\AA}$ is used to obtain interference pattern in Young's double slit experiment. The distance between the slits is 2.5 mm and the distance between the plane of slits and the screen is 150 cm. The least distance from the central fringe, where the bright fringes due to both the wavelengths coincide, is $n\\times 10^{-5}$ m. The value of n is ___.[cite: 9]",
+      "options": [],
+      "answer": "20"
+    },
+    {
+      "question_number": 28,
+      "type": "single_choice",
+      "text": "The work functions of Aluminium and Gold are 4.1 eV and 5.1 eV respectively. The ratio of the slope of the stopping potential versus frequency plot for Gold to that of Aluminium is:[cite: 9]",
+      "options": [
+        "(1) 1.24[cite: 9]",
+        "(2) 2[cite: 9]",
+        "(3) 1[cite: 9]",
+        "(4) 1.5[cite: 9]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 29,
+      "type": "single_choice",
+      "text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R. Assertion A: Diffusion current in a p-n junction is greater than the drift current in magnitude if the junction is forward biased. Reason R: Diffusion current in a p-n junction is from the n-side to the p-side if the junction is forward biased. In the light of the above statements, choose the most appropriate answer from the options given below:[cite: 9]",
+      "options": [
+        "(1) Both A and R are correct but R is NOT the correct explanation of A[cite: 9]",
+        "(2) A is correct but R is not correct[cite: 9]",
+        "(3) A is not correct but R is correct[cite: 9]",
+        "(4) Both A and R is correct and R is the correct explanation of A[cite: 9]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 30,
+      "type": "single_choice",
+      "text": "For an amplitude modulated wave the minimum amplitude is 3 V, while the modulation index is 60%. The maximum amplitude of the modulated wave is:[cite: 9]",
+      "options": [
+        "(1) 5 V[cite: 9]",
+        "(2) 15 V[cite: 9]",
+        "(3) 12 V[cite: 9]",
+        "(4) 10 V[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 31,
+      "type": "single_choice",
+      "text": "If the radius of the first orbit of hydrogen atom is $a_{0}$, then de Broglie's wavelength of electron in 3rd orbit is:[cite: 9]",
+      "options": [
+        "(1) $\\frac{\\pi a_{0}}{6}[cite: 9]",
+        "(2) $\\frac{\\pi a_{0}}{3}[cite: 9]",
+        "(3) $6\\pi a_{0}[cite: 9]",
+        "(4) $3\\pi a_{0}[cite: 9]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 32,
+      "type": "single_choice",
+      "text": "Which one of the following elements will remain as liquid inside pure boiling water?[cite: 9]",
+      "options": [
+        "(1) Ga[cite: 9]",
+        "(2) Br[cite: 9]",
+        "(3) Li[cite: 9]",
+        "(4) Cs[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 33,
+      "type": "single_choice",
+      "text": "Group-13 elements react with $O_{2}$ in amorphous form to form oxides of type $M_{2}O_{3}$ ($M=$ element). Which among the following is the most basic oxide?[cite: 9]",
+      "options": [
+        "(1) $Al_{2}O_{3}[cite: 9]",
+        "(2) $B_{2}O_{3}[cite: 9]",
+        "(3) $Tl_{2}O_{3}[cite: 9]",
+        "(4) $Ga_{2}O_{3}[cite: 9]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 34,
+      "type": "single_choice",
+      "text": "The number of species having a square planar shape from the following is: $XeF_{4}$, $SF_{4}$, $SiF_{4}$, $BF_{4}^{-}$, $BrF_{4}^{-}$, $[Cu(NH_{3})_{4}]^{2+}$, $[FeCl_{4}]^{2-}$, $[PtCl_{4}]^{2-}$[cite: 9]",
+      "options": [
+        "(1) 3[cite: 9]",
+        "(2) 4[cite: 9]",
+        "(3) 5[cite: 9]",
+        "(4) 2[cite: 9]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 35,
+      "type": "single_choice",
+      "text": "In an ice crystal, each water molecule is hydrogen bonded to ___ neighbouring molecules.[cite: 9]",
+      "options": [
+        "(1) 2[cite: 9]",
+        "(2) 3[cite: 9]",
+        "(3) 4[cite: 9]",
+        "(4) 6[cite: 9]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 36,
+      "type": "integer_or_numerical",
+      "text": "Consider the following data: Heat of combustion of $H_{2}(g)=-241.8~kJ~mol^{-1}$, Heat of combustion of $C(s)=-393.5~kJ~mol^{-1}$, Heat of combustion of $C_{2}H_{5}OH(l)=-1234.7~kJ~mol^{-1}$. The heat of formation of $C_{2}H_{5}OH(l)$ is (-) ___ $kJ~mol^{-1}$ (Nearest integer).[cite: 9]",
+      "options": [],
+      "answer": "278"
+    },
+    {
+      "question_number": 37,
+      "type": "integer_or_numerical",
+      "text": "The equilibrium composition for the reaction $PCl_{3}+Cl_{2}\\rightleftharpoons PCl_{5}$ at 298 K is given below: $[PCl_{3}]_{eq}=0.2~mol~L^{-1}$, $[Cl_{2}]_{eq}=0.1~mol~L^{-1}$, $[PCl_{5}]_{eq}=0.40~mol~L^{-1}$. If 0.2 mol of $Cl_{2}$ is added at the same temperature, the equilibrium concentrations of $PCl_{5}$ is ___ $\\times 10^{-2}~mol~L^{-1}$. Given: $K_{c}$ for the reaction at 298 K is 20.[cite: 9]",
+      "options": [],
+      "answer": "462"
+    },
+    {
+      "question_number": 38,
+      "type": "single_choice",
+      "text": "During the reaction of permanganate with thiosulphate, the change in oxidation state of manganese occurs by value of 3. Identify which of the below medium will favour the reaction.[cite: 9]",
+      "options": [
+        "(1) Both aqueous acidic and neutral[cite: 9]",
+        "(2) Aqueous neutral[cite: 9]",
+        "(3) Both aqueous acidic and faintly alkaline[cite: 9]",
+        "(4) Aqueous acidic[cite: 9]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 39,
+      "type": "single_choice",
+      "text": "The volume of 0.02 M aqueous HBr required to neutralize 10.0 mL of 0.01 M aqueous $Ba(OH)_{2}$ is (Assume complete neutralization):[cite: 9]",
+      "options": [
+        "(1) 2.5 mL[cite: 9]",
+        "(2) 5.0 mL[cite: 9]",
+        "(3) 10.0 mL[cite: 9]",
+        "(4) 7.5 mL[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 40,
+      "type": "single_choice",
+      "text": "Ion having highest hydration enthalpy among the given alkaline earth metal ions is:[cite: 9]",
+      "options": [
+        "(1) $Be^{2+}[cite: 9]",
+        "(2) $Sr^{2+}[cite: 9]",
+        "(3) $Ba^{2+}[cite: 9]",
+        "(4) $Ca^{2+}[cite: 9]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 41,
+      "type": "single_choice",
+      "text": "Structures of $BeCl_{2}$ in solid state, vapour phase and at very high temperature respectively are:[cite: 9]",
+      "options": [
+        "(1) Monomeric, Dimeric, Polymeric[cite: 9]",
+        "(2) Dimeric, Polymeric, Monomeric[cite: 9]",
+        "(3) Polymeric, Monomeric, Dimeric[cite: 9]",
+        "(4) Polymeric, Dimeric, Monomeric[cite: 9]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 42,
+      "type": "single_choice",
+      "text": "From the figure of column chromatography given below, identify incorrect statements. A. Compound 'c' is more polar than 'a' and 'b'. B. Compound 'a' is least polar. C. Compound 'b' comes out of the column before 'c' and after 'a'. D. Compound 'a' spends more time in the column.[cite: 9]",
+      "options": [
+        "(1) A, B and D only[cite: 9]",
+        "(2) A, B and C only[cite: 9]",
+        "(3) B and D only[cite: 9]",
+        "(4) B, C and D only[cite: 9]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 43,
+      "type": "single_choice",
+      "text": "The strongest acid from the following is:[cite: 9]",
+      "options": [
+        "(1) p-nitrophenol[cite: 9]",
+        "(2) m-cresol[cite: 9]",
+        "(3) m-chlorophenol[cite: 9]",
+        "(4) phenol[cite: 9]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 44,
+      "type": "single_choice",
+      "text": "The group of chemicals used as pesticide is:[cite: 9]",
+      "options": [
+        "(1) Aldrin, Sodium Chlorate, Sodium arsinite[cite: 9]",
+        "(2) DDT, Aldrin[cite: 9]",
+        "(3) Sodium chlorate, DDT, PAN[cite: 9]",
+        "(4) Dieldrin, Sodium arsinite, Tetrachloroethene[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 45,
+      "type": "integer_or_numerical",
+      "text": "Number of crystal systems from the following where body centred unit cell can be found, is: Cubic, tetragonal, orthorhombic, hexagonal, rhombohedral, monoclinic, triclinic.[cite: 9]",
+      "options": [],
+      "answer": "3"
+    },
+    {
+      "question_number": 46,
+      "type": "integer_or_numerical",
+      "text": "Consider the following pairs of solution which will be isotonic at the same temperature. The number of pairs of solutions is/are: A. 1 M aq. NaCl and 2 M aq. urea, B. 1 M aq. $CaCl_{2}$ and 1.5 M aq. KCl, C. 1.5 M aq. $AlCl_{3}$ and 2 M aq. $Na_{2}SO_{4}$, D. 2.5 M aq. KCl and 1 M aq. $Al_{2}(SO_{4})_{3}$.[cite: 9]",
+      "options": [],
+      "answer": "3"
+    },
+    {
+      "question_number": 47,
+      "type": "single_choice",
+      "text": "The product, which is not obtained during the electrolysis of brine solution is:[cite: 9]",
+      "options": [
+        "(1) $H_{2}[cite: 9]",
+        "(2) HCl[cite: 9]",
+        "(3) NaOH[cite: 9]",
+        "(4) $Cl_{2}[cite: 9]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 48,
+      "type": "integer_or_numerical",
+      "text": "The standard reduction potentials at 295 K for the given half cells are given. The number of metal(s) which will be oxidised by $NO_{3}^{-}$ in aqueous solution is ___.[cite: 9]",
+      "options": [],
+      "answer": "4"
+    },
+    {
+      "question_number": 49,
+      "type": "single_choice",
+      "text": "Consider the following reaction that goes from A to B in three steps as shown in the energy profile diagram: (Number of intermediates, number of activated complexes, rate determining step)[cite: 9]",
+      "options": [
+        "(1) Option 1[cite: 9]",
+        "(2) Option 2[cite: 9]",
+        "(3) Option 3[cite: 9]",
+        "(4) Option 4[cite: 9]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 50,
+      "type": "single_choice",
+      "text": "The number of colloidal systems from the following, which will have 'liquid' as the dispersion medium, is: Gem stones, paints, smoke, cheese, milk, hair cream, insecticide sprays, froth, soap lather.[cite: 9]",
+      "options": [
+        "(1) 5[cite: 9]",
+        "(2) 4[cite: 9]",
+        "(3) 6[cite: 9]",
+        "(4) 3[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 51,
+      "type": "single_choice",
+      "text": "The IUPAC name of $K_{3}[Co(C_{2}O_{4})_{3}]$ is:[cite: 9]",
+      "options": [
+        "(1) Potassium tris(oxalato)cobaltate (III)[cite: 9]",
+        "(2) Potassium tris(oxalato) cobalt (III)[cite: 9]",
+        "(3) Potassium trioxalatocobalt (III)[cite: 9]",
+        "(4) Potassium trioxalatocobaltate (III)[cite: 9]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 52,
+      "type": "single_choice",
+      "text": "Given below are two statements: one is labelled as \"Assertion A\" and the other is labelled as \"Reason R\". Assertion A: In the complex $Ni(CO)_{4}$ and $Fe(CO)_{5}$, the metals have zero oxidation state. Reason R: Low oxidation states are found when a complex has ligands capable of $\\pi$-donor character in addition to the $\\sigma$-bonding. In the light of the above statements, choose the most appropriate answer from the options given below:[cite: 9]",
+      "options": [
+        "(1) A is correct but R is not correct[cite: 9]",
+        "(2) A is not correct but R is correct[cite: 9]",
+        "(3) Both A and R are correct but R is NOT the correct explanation of A[cite: 9]",
+        "(4) Both A and R are correct and R is the correct explanation of A[cite: 9]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 53,
+      "type": "single_choice",
+      "text": "Element not present in Nessler's reagent is:[cite: 9]",
+      "options": [
+        "(1) N[cite: 9]",
+        "(2) Hg[cite: 9]",
+        "(3) I[cite: 9]",
+        "(4) K[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 54,
+      "type": "single_choice",
+      "text": "In the following reaction, 'B' is (Intra-molecular oxysolvation / hydration sequence starting from given hydroxy alkene structure)[cite: 9]",
+      "options": [
+        "(1) Option 1[cite: 9]",
+        "(2) Option 2[cite: 9]",
+        "(3) Option 3[cite: 9]",
+        "(4) Option 4[cite: 9]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 55,
+      "type": "single_choice",
+      "text": "Find out the major product from the following reaction: 3-methylcyclohex-2-en-1-one $\\xrightarrow{1) MeMgBr/CuI, 2) nPrI}$[cite: 9]",
+      "options": [
+        "(1) Option 1[cite: 9]",
+        "(2) Option 2[cite: 9]",
+        "(3) Option 3[cite: 9]",
+        "(4) Option 4[cite: 9]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 56,
+      "type": "integer_or_numerical",
+      "text": "Among the following the number of compounds which will give positive iodoform reaction is: (a) 1-Phenylbutan-2-one, (b) 2-Methylbutan-2-ol, (c) 3-Methylbutan-2-ol, (d) 1-Phenylethanol, (e) 3,3-dimethylbutan-2-one, (f) 1-Phenylpropan-2-ol.[cite: 9]",
+      "options": [],
+      "answer": "4"
+    },
+    {
+      "question_number": 57,
+      "type": "integer_or_numerical",
+      "text": "Number of isomeric aromatic amines with molecular formula $C_{8}H_{11}N$, which can be synthesized by Gabriel Phthalimide synthesis is ___.[cite: 9]"
+    },
+    {
+      "question_number": 58,
+      "type": "single_choice",
+      "text": "Given below are two statements: Statement I: Morphine is a narcotic analgesic. It helps in relieving pain without producing sleep. Statement II: Morphine and its derivatives are obtained from opium poppy. In the light of the above statements, choose the most appropriate answer from the options given below:[cite: 9]",
+      "options": [
+        "(1) Both Statement I and Statement II are true[cite: 9]",
+        "(2) Statement I is true but Statement II is false[cite: 9]",
+        "(3) Both Statement I and Statement II are false[cite: 9]",
+        "(4) Statement I is false but Statement II is true[cite: 9]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 59,
+      "type": "single_choice",
+      "text": "Formation of which complex, among the following, is not a confirmatory test of $Pb^{2+}$ ions:[cite: 9]",
+      "options": [
+        "(1) Lead sulphate[cite: 9]",
+        "(2) Lead nitrate[cite: 9]",
+        "(3) Lead chromate[cite: 9]",
+        "(4) Lead iodide[cite: 9]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 60,
+      "type": "single_choice",
+      "text": "Match List-I with List-II: List-I (Natural Amino acid): (A) Arginine, (B) Aspartic acid, (C) Asparagine, (D) Alanine. List-II (One Letter Code): (I) D, (II) N, (III) A, (IV) R.[cite: 9]",
+      "options": [
+        "(1) (A)-IV, (B)-I, (C)-II, (D)-III[cite: 9]",
+        "(2) (A)-I, (B)-III, (C)-IV, (D)-II[cite: 9]",
+        "(3) (A)-III, (B)-I, (C)-II, (D)-IV[cite: 9]",
+        "(4) (A)-IV, (B)-I, (C)-III, (D)-II[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 61,
+      "type": "single_choice",
+      "text": "Let $a\\neq b$ be two non-zero real numbers. Then the number of elements in the set $X=\\{z\\in C: \\text{Re}(az^{2}+bz)=a \\text{ and } \\text{Re}(bz^{2}+az)=b\\}$ is equal to:[cite: 9]",
+      "options": [
+        "(1) 0[cite: 9]",
+        "(2) 1[cite: 9]",
+        "(3) 3[cite: 9]",
+        "(4) 2[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 62,
+      "type": "single_choice",
+      "text": "For $\\alpha, \\beta, z\\in \\mathbb{C}$ and $\\lambda>1$, if $\\sqrt{\\lambda-1}$ is the radius of the circle $|z-\\alpha|^{2}+|z-\\beta|^{2}=2\\lambda$ then $|\\alpha-\\beta|$ is equal to:[cite: 9]",
+      "options": [
+        "(1) 2[cite: 9]",
+        "(2) 1[cite: 9]",
+        "(3) $\\sqrt{\\lambda-1}[cite: 9]",
+        "(4) 2[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 63,
+      "type": "single_choice",
+      "text": "All the letters of the word PUBLIC are written in all possible orders and these words are written as in a dictionary with serial numbers. Then the serial number of the word PUBLIC is:[cite: 9]",
+      "options": [
+        "(1) 576[cite: 9]",
+        "(2) 578[cite: 9]",
+        "(3) 580[cite: 9]",
+        "(4) 582[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 64,
+      "type": "single_choice",
+      "text": "The number of 4-letter words, with or without meaning, each consisting of 2 vowels and 2 consonants, which can be formed from the letters of the word UNIVERSE without repetition is:[cite: 9]",
+      "options": [
+        "(1) 240[cite: 9]",
+        "(2) 200[cite: 9]",
+        "(3) 220[cite: 9]",
+        "(4) 180[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 65,
+      "type": "single_choice",
+      "text": "If $\\text{gcd}(m,n)=1$ and $1^{2}-2^{2}+3^{2}-4^{2}+...+(2021)^{2}-(2022)^{2}+(2023)^{2}=1012m^{2}n$ then $m^{2}-n^{2}$ is equal to:[cite: 9]",
+      "options": [
+        "(1) 240[cite: 9]",
+        "(2) 200[cite: 9]",
+        "(3) 220[cite: 9]",
+        "(4) 180[cite: 9]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 66,
+      "type": "integer_or_numerical",
+      "text": "If $(20)^{19}+2(21)(20)^{18}+3(21)^{2}(20)^{17}+...+20(21)^{19}=k(20)^{19}$, then k is equal to ___.[cite: 9]",
+      "options": [],
+      "answer": "40"
+    },
+    {
+      "question_number": 67,
+      "type": "single_choice",
+      "text": "If the coefficients of $x^{7}$ in $(ax^{2}+\\frac{1}{2bx})^{11}$ and $x^{-7}$ in $(ax-\\frac{1}{3bx^{2}})^{11}$ are equal, then:[cite: 9]",
+      "options": [
+        "(1) $729ab=32[cite: 9]",
+        "(2) $32ab=729[cite: 9]",
+        "(3) $64ab=243[cite: 9]",
+        "(4) $243ab=64[cite: 9]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 68,
+      "type": "single_choice",
+      "text": "Among the statements: (S1): $2023^{2022}-1999^{2022}$ is divisible by 8. (S2): $13(13)^{n}-11n-13$ is divisible by 144 for infinitely many $n\\in \\mathbb{N}$:[cite: 9]",
+      "options": [
+        "(1) Only (S2) is correct[cite: 9]",
+        "(2) Only (S1) is correct[cite: 9]",
+        "(3) Both (S1) and (S2) are correct[cite: 9]",
+        "(4) Both (S1) and (S2) are incorrect[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 69,
+      "type": "single_choice",
+      "text": "The value of $\\tan 9^{\circ}-\\tan 27^{\circ}-\\tan 63^{\circ}+\\tan 81^{\circ}$ is:[cite: 9]",
+      "options": [
+        "(1) 4[cite: 9]",
+        "(2) 1[cite: 9]",
+        "(3) 2[cite: 9]",
+        "(4) 3[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 70,
+      "type": "single_choice",
+      "text": "If the tangents at the points P and Q on the circle $x^{2}+y^{2}-2x+y=5$ meet at the point $R(\\frac{9}{4},2)$, then the area of the triangle PQR is:[cite: 9]",
+      "options": [
+        "(1) $\\frac{5}{8}[cite: 9]",
+        "(2) $\\frac{13}{8}[cite: 9]",
+        "(3) $\\frac{5}{4}[cite: 9]",
+        "(4) $\\frac{13}{4}[cite: 9]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 71,
+      "type": "integer_or_numerical",
+      "text": "Let the eccentricity of an ellipse $\\frac{x^{2}}{a^{2}}+\\frac{y^{2}}{b^{2}}=1$ is reciprocal to that of the hyperbola $2x^{2}-2y^{2}=1$. If the ellipse intersects the hyperbola at right angles, then square of length of the latus-rectum of the ellipse is ___.[cite: 9]"
+    },
+    {
+      "question_number": 72,
+      "type": "single_choice",
+      "text": "$\\lim_{n\\rightarrow \\infty}\\left\\{(2^{\\frac{1}{2}}-2^{\\frac{1}{3}})(2^{\\frac{1}{2}}-2^{\\frac{1}{5}})...(2^{\\frac{1}{2}}-2^{\\frac{1}{2n+1}})\\right\\}$ is equal to:[cite: 9]",
+      "options": [
+        "(1) 1[cite: 9]",
+        "(2) 0[cite: 9]",
+        "(3) $\\sqrt{2}[cite: 9]",
+        "(4) $\\frac{1}{\\sqrt{2}}[cite: 9]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 73,
+      "type": "single_choice",
+      "text": "Among the statements: (S1): $(p\\Rightarrow q)\\vee((-p)\\wedge q)$ is a tautology. (S2): $(q\\Rightarrow p)\\Rightarrow((-p)\\wedge q)$ is a contradiction:[cite: 9]",
+      "options": [
+        "(1) Neither (S1) and (S2) is True[cite: 9]",
+        "(2) Both (S1) and (S2) are True[cite: 9]",
+        "(3) Only (S2) is True[cite: 9]",
+        "(4) Only (S1) is True[cite: 9]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 74,
+      "type": "single_choice",
+      "text": "If the mean and variance of the frequency distribution: $x_{i}$ (4, 6, 8, 10, 12, 16), $f_{i}$ (4, 4, $\\alpha$, 15, 8, 2) are 9 and 15.08 respectively, then the value of $\\alpha^{2}+\\beta^{2}-\\alpha\\beta$ is:[cite: 9]",
+      "options": [
+        "(1) 43[cite: 9]",
+        "(2) 25[cite: 9]",
+        "(3) 37[cite: 9]",
+        "(4) 49[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 75,
+      "type": "single_choice",
+      "text": "In a group of 100 persons 75 speak English and 40 speak Hindi. Each person speaks at least one of the two languages. If the number of persons who speak only English is $\\alpha$ and the number of persons who speaks only Hindi is $\\beta$, then the eccentricity of the ellipse $25(\\beta^{2}x^{2}+\\alpha^{2}y^{2})=\\alpha^{2}\\beta^{2}$ is:[cite: 9]",
+      "options": [
+        "(1) $\\frac{\\sqrt{119}}{12}[cite: 9]",
+        "(2) $\\frac{\\sqrt{117}}{12}[cite: 9]",
+        "(3) $\\frac{3\\sqrt{15}}{12}[cite: 9]",
+        "(4) $\\frac{\\sqrt{129}}{12}[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 76,
+      "type": "single_choice",
+      "text": "Let P be a square matrix such that $P^{2}=I-P$. For $\\alpha, \\beta, \\gamma, \\delta \\in \\mathbb{N}$, if $P^{\\alpha}+P^{\\beta}=\\gamma I-29P$ and $P^{\\alpha}-P^{\\beta}=\\delta I-13P$, then $\\alpha+\\beta+\\gamma-\\delta$ is equal to:[cite: 9]",
+      "options": [
+        "(1) 18[cite: 9]",
+        "(2) 40[cite: 9]",
+        "(3) 22[cite: 9]",
+        "(4) 24[cite: 9]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 77,
+      "type": "single_choice",
+      "text": "For the system of equations $x+y+z=6$, $x+2y+\\alpha z=10$, $x+3y+5z=\\beta$, which one of the following is NOT true?[cite: 9]",
+      "options": [
+        "(1) System has no solution for $\\alpha=3$, $\\beta=24[cite: 9]",
+        "(2) System has a unique solution for $\\alpha=-3$, $\\beta=14[cite: 9]",
+        "(3) System has infinitely many solutions for $\\alpha=3$, $\\beta=14[cite: 9]",
+        "(4) System has a unique solution for $\\alpha=3$, $\\beta \\neq 14[cite: 9]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 78,
+      "type": "single_choice",
+      "text": "Let the sets A and B denote the domain and range respectively of the function $f(x)=\\frac{1}{\\sqrt{[x]-x}}$, where [x] denotes the smallest integer greater than or equal to x (or greatest integer depending on convention, here domain/range relation). Then among the statements (S1): $A\\cap B=(1,\\infty)-\\mathbb{N}$ and (S2): $A\\cup B=(1,\\infty)$:[cite: 9]",
+      "options": [
+        "(1) Only (S2) is true[cite: 9]",
+        "(2) Only (S1) is true[cite: 9]",
+        "(3) Neither (S1) nor (S2) is true[cite: 9]",
+        "(4) Both (S1) and (S2) are true[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 79,
+      "type": "single_choice",
+      "text": "Let a curve $y=f(x)$, $x\\in(0,\\infty)$ pass through the points $P(1,\\frac{3}{2})$ and $Q(a,\\frac{1}{2})$. If the tangent at any point $R(b,f(b))$ to the given curve cuts the y-axis at the point $S(0,c)$ such that $bc=3$, then $(PQ)^{2}$ is equal to:[cite: 9]",
+      "options": [
+        "(1) 5[cite: 9]",
+        "(2) 10[cite: 9]",
+        "(3) 12[cite: 9]",
+        "(4) 8[cite: 9]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 80,
+      "type": "single_choice",
+      "text": "The number of points, where the curve $y=x^{5}-20x^{3}+50x+2$ crosses the x-axis, is:[cite: 9]",
+      "options": [
+        "(1) 2[cite: 9]",
+        "(2) 1[cite: 9]",
+        "(3) 3[cite: 9]",
+        "(4) 4[cite: 9]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 81,
+      "type": "single_choice",
+      "text": "Let $f(x)$ be a function satisfying $f(x)+f(\\pi-x)=\\pi^{2}$, $\\forall x\\in \\mathbb{R}$. Then $\\int_{0}^{\\pi}f(x)\\sin x~dx$ is equal to:[cite: 9]",
+      "options": [
+        "(1) $\\frac{\\pi^{2}}{4}[cite: 9]",
+        "(2) $2\\pi^{2}[cite: 9]",
+        "(3) \\pi^{2}[cite: 9]",
+        "(4) $\\frac{\\pi^{2}}{2}[cite: 9]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 82,
+      "type": "integer_or_numerical",
+      "text": "Let $f(x)=\\frac{x}{(1+x^{n})^{\\frac{1}{n}}}$, $x\\in \\mathbb{R}-\\{-1\\}$, $n\\in \\mathbb{N}$, $n>2$. If $f^{n}(x)=(f\\circ f\\circ ... \\text{ n times})(x)$, then $\\lim_{n\\rightarrow \\infty}\\int_{0}^{1}x^{n-2}(f^{n}(x))dx$ is equal to ___.[cite: 9]",
+      "options": [],
+      "answer": "432"
+    },
+    {
+      "question_number": 83,
+      "type": "integer_or_numerical",
+      "text": "The area bounded by the curves $y=|x-1|+|x-2|$ and $y=3$ is equal to ___.[cite: 9]",
+      "options": [],
+      "answer": "400"
+    },
+    {
+      "question_number": 84,
+      "type": "integer_or_numerical",
+      "text": "If the solution curve $f(x,y)=0$ of the differential equation $(1+\\log_{e}x)\\frac{dx}{dy}-x\\log_{e}x=e^{y}$, $x>0$, passes through the points (1, 0) and (a, 2), then $a^{a}$ is equal to ___.[cite: 9]",
+      "options": [],
+      "answer": "4"
+    },
+    {
+      "question_number": 85,
+      "type": "integer_or_numerical",
+      "text": "Let the vectors $\\vec{a}$, $\\vec{b}$, $\\vec{c}$ represent three coterminous edges of a parallelopiped of volume V. Then the volume of the parallelopiped, whose coterminous edges are represented by $\\vec{a}, \\vec{b}+\\vec{c}$ and $\\vec{a}+2\\vec{b}+3\\vec{c}$, is equal to ___ V.[cite: 9]",
+      "options": [],
+      "answer": "2"
+    },
+    {
+      "question_number": 86,
+      "type": "integer_or_numerical",
+      "text": "The sum of all values of $\\alpha$, for which the points whose position vectors are $\\hat{i}-2\\hat{j}+3\\hat{k}$, $2\\hat{i}-3\\hat{j}+4\\hat{k}$, $(\\alpha+1)\\hat{i}+2\\hat{k}$ and $9\\hat{i}+(\\alpha-8)\\hat{j}+6\\hat{k}$ are coplanar, is equal to ___.[cite: 9]",
+      "options": [],
+      "answer": "25"
+    },
+    {
+      "question_number": 87,
+      "type": "integer_or_numerical",
+      "text": "Let the line L pass through the point (0, 1, 2), intersect the line $\\frac{x-1}{2}=\\frac{y-2}{3}=\\frac{z-3}{4}$ and be parallel to the plane $2x+y-3z=4$. Then the distance of the point $P(1,-9,2)$ from the line L is ___.[cite: 9]",
+      "options": [],
+      "answer": "5"
+    },
+    {
+      "question_number": 88,
+      "type": "integer_or_numerical",
+      "text": "A plane P contains the line of intersection of the plane $\\vec{r}\\cdot(\\hat{i}+\\hat{j}+\\hat{k})=6$ and $\\vec{r}\\cdot(2\\hat{i}+3\\hat{j}+4\\hat{k})=-5$. If P passes through the point (0, 2, 2), then the square of distance of the point (12, 12, 18) from the plane P is ___.[cite: 9]",
+      "options": [],
+      "answer": "5"
+    },
+    {
+      "question_number": 89,
+      "type": "integer_or_numerical",
+      "text": "If the lines $\\frac{x-1}{2}=\\frac{2-y}{-3}=\\frac{z-3}{\\alpha}$ and $\\frac{x-4}{5}=\\frac{y-1}{2}=\\frac{z}{\\beta}$ intersect, then the magnitude of the minimum value of $8\\alpha \\beta$ is ___.[cite: 9]",
+      "options": [],
+      "answer": "0"
+    },
+    {
+      "question_number": 90,
+      "type": "single_choice",
+      "text": "Three dice are rolled. If the probability of getting different numbers on the three dice is $\\frac{p}{q}$, where p and q are co-prime, then $q-p$ is equal to:[cite: 9]",
+      "options": [
+        "(1) 2[cite: 9]",
+        "(2) 1[cite: 9]",
+        "(3) 3[cite: 9]",
+        "(4) 4[cite: 9]"
+      ],
+      "answer": "(1)"
+    }
+  ]
+}

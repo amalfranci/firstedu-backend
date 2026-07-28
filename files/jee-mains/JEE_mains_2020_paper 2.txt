@@ -1,0 +1,838 @@
+{
+  "title": "JEE Main 2020 (02 Sep Shift 1) Previous Year Paper with Answer Keys",
+  "source": "MathonGo",
+  "exam_info": {
+    "exam": "JEE Main",
+    "year": 2020,
+    "session": "September",
+    "date": "2020-09-02",
+    "shift": 1
+  },
+  "questions": [
+    {
+      "question_number": 1,
+      "type": "single_choice",
+      "text": "If speed V, area A and force F are chosen as fundamental units, then the dimension of Young's modulus will be :[cite: 5]",
+      "options": [
+        "(1) $FA^{2}V^{-1}[cite: 5]",
+        "(2) $FA^{-1}V^{0}[cite: 5]",
+        "(3) $FA^{2}V^{-2}[cite: 5]",
+        "(4) $FA^{2}V^{-3}[cite: 5]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 2,
+      "type": "single_choice",
+      "text": "Train A and train B are running on parallel tracks in the opposite directions with speed of 36 km hour$^{-1}$ and 72 km hour$^{-1}$, respectively. A person is walking in train A in the direction opposite to its motion with a speed of 1.8 km hour$^{-1}$. Speed (in $m~s^{-1}$) of this person as observed from train B will be close to: (take the distance between the tracks as negligible)[cite: 5]",
+      "options": [
+        "(1) $29.5~m~s^{-1}[cite: 5]",
+        "(2) $28.5~m~s^{-1}[cite: 5]",
+        "(3) $31.5~m~s^{-1}[cite: 5]",
+        "(4) $30.5~m~s^{-1}[cite: 5]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 3,
+      "type": "single_choice",
+      "text": "A bead of mass m stays at point $P(a,b)$ on a wire bent in the shape of a parabola $y=4Cx^{2}$ and rotating with angular speed $\\omega$ (see figure). The value of $\\omega$ is (neglect friction)[cite: 5]",
+      "options": [
+        "(1) $2\\sqrt{2gC}[cite: 5]",
+        "(2) $\\sqrt{2gC}[cite: 5]",
+        "(3) $\\sqrt{\\frac{2gC}{ab}}[cite: 5]",
+        "(4) $\\frac{\\sqrt{2g}}{C}[cite: 5]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 4,
+      "type": "single_choice",
+      "text": "A uniform cylinder of mass M and radius R is to be pulled over a step of height a $(a<R)$ by applying a force F at its centre 'O' perpendicular to the plane through the axes of the cylinder on the edge of the step (see figure). The minimum value of F required is :[cite: 5]",
+      "options": [
+        "(1) $Mg\\sqrt{1-\\left(\\frac{R-a}{R}\\right)^{2}}[cite: 5]",
+        "(2) $Mg\\sqrt{\\left(\\frac{R}{R-a}\\right)^{2}-1}[cite: 5]",
+        "(3) $Mg[cite: 5]",
+        "(4) $Mg\\sqrt{1-\\frac{a^{2}}{R^{2}}}[cite: 5]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 5,
+      "type": "single_choice",
+      "text": "In a reactor, 2 kg of $_{92}U^{235}$ fuel is fully used up in 30 days. The energy released per fission is 200 MeV. Given that the Avogadro number, $N=6.023\\times 10^{26}$ per kilo mole and 1 eV $=1.6\\times 10^{-19}$ J. The power output of the reactor is close to:[cite: 5]",
+      "options": [
+        "(1) 35 MW[cite: 5]",
+        "(2) 60 MW[cite: 5]",
+        "(3) 125 MW[cite: 5]",
+        "(4) 54 MW[cite: 5]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 6,
+      "type": "single_choice",
+      "text": "A particle of mass m with an initial velocity $u\\hat{i}$ collides perfectly elastically with a mass 3m at rest. It moves with a velocity $v\\hat{j}$ after collision, then, v is given by:[cite: 5]",
+      "options": [
+        "(1) $v=\\sqrt{\\frac{2}{3}}u[cite: 5]",
+        "(2) $v=\\frac{u}{\\sqrt{3}}[cite: 5]",
+        "(3) $v=\\frac{u}{\\sqrt{2}}[cite: 5]",
+        "(4) $v=\\frac{1}{\\sqrt{6}}u[cite: 5]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 7,
+      "type": "single_choice",
+      "text": "Shown in the figure is rigid and uniform one meter long rod AB held in horizontal position by two strings tied to its ends and attached to the ceiling. The rod is of mass m and has another weight of mass 2m hung at a distance of 75 cm from A. The tension in the string at A is:[cite: 5]",
+      "options": [
+        "(1) 0.5 mg[cite: 5]",
+        "(2) 2 mg[cite: 5]",
+        "(3) 0.75 mg[cite: 5]",
+        "(4) 1 mg[cite: 5]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 8,
+      "type": "single_choice",
+      "text": "A cylindrical vessel containing a liquid is rotated about its axis so that the liquid rises at its sides as shown in the figure. The radius of vessel is 5 cm and the angular speed of rotation is $\\omega$ rad $s^{-1}$. The difference in the height, h (in cm) of liquid at the Centre of vessel and at the sides of the vessel will be :[cite: 5]",
+      "options": [
+        "(1) $\\frac{2\\omega^{2}}{25g}[cite: 5]",
+        "(2) $\\frac{5\\omega^{2}}{2g}[cite: 5]",
+        "(3) $\\frac{25\\omega^{2}}{2g}[cite: 5]",
+        "(4) $\\frac{2m\\omega^{2}}{5g}[cite: 5]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 9,
+      "type": "single_choice",
+      "text": "The mass density of a spherical galaxy varies as $\\frac{K}{r}$ over a large distance r from its center. In that region, a small star is in a circular orbit of radius R. Then the period of revolution, T depends on R as:[cite: 5]",
+      "options": [
+        "(1) $T^{2}\\propto R[cite: 5]",
+        "(2) $T^{2}\\propto R^{3}[cite: 5]",
+        "(3) $T^{2}\\propto \\frac{1}{R^{3}}[cite: 5]",
+        "(4) $T\\propto R[cite: 5]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 10,
+      "type": "single_choice",
+      "text": "A gas mixture consists of 3 moles of oxygen and 5 moles of argon at temperature T. Assuming the gases to be ideal and the oxygen bond to be rigid, the total internal energy (in units of RT) of the mixture is:[cite: 5]",
+      "options": [
+        "(1) 15[cite: 5]",
+        "(2) 13[cite: 5]",
+        "(3) 20[cite: 5]",
+        "(4) 11[cite: 5]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 11,
+      "type": "single_choice",
+      "text": "Two identical strings X and Z made of same material have tension $T_{X}$ and $T_{Z}$ in them if their fundamental frequencies are 450 Hz and 300 Hz, respectively, then the ratio $T_{X}/T_{Z}$ is:[cite: 5]",
+      "options": [
+        "(1) 2.25[cite: 5]",
+        "(2) 0.44[cite: 5]",
+        "(3) 1.25[cite: 5]",
+        "(4) 1.5[cite: 5]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 12,
+      "type": "single_choice",
+      "text": "Consider four conducting materials copper, tungsten, mercury and aluminum with resistivity $\\rho_{C}$, $\\rho_{T}$, $\\rho_{M}$ and $\\rho_{A}$ respectively. Then :[cite: 5]",
+      "options": [
+        "(1) $\\rho_{C}>\\rho_{A}>\\rho_{T}[cite: 5]",
+        "(2) $\\rho_{M}>\\rho_{A}>\\rho_{C}[cite: 5]",
+        "(3) $\\rho_{A}>\\rho_{T}>\\rho_{C}[cite: 5]",
+        "(4) $\\rho_{A}>\\rho_{M}>\\rho_{C}[cite: 5]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 13,
+      "type": "single_choice",
+      "text": "A beam of protons with speed $4\\times 10^{5}~m~s^{-1}$ enters a uniform magnetic field of 0.3 T at an angle $60^{\circ}$ to the magnetic field, the pitch of the resulting helical path of protons is close to: (Mass of the proton $=1.67\\times 10^{-27}$ kg, charge of the proton $=1.6\\times 10^{-19}$ C)[cite: 5]",
+      "options": [
+        "(1) 2 cm[cite: 5]",
+        "(2) 5 cm[cite: 5]",
+        "(3) 12 cm[cite: 5]",
+        "(4) 4 cm[cite: 5]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 14,
+      "type": "single_choice",
+      "text": "A charged particle (mass m and charge q) moves along X axis with velocity $V_{0}$. When it passes through the origin it enters a region having uniform electric field $\\vec{E}=-E\\hat{j}$ which extends upto $x=d$. Equation of path of electron in the region $x>d$ is:[cite: 5]",
+      "options": [
+        "(1) $y=\\frac{qEd}{mv_{0}^{2}}(x-d)[cite: 5]",
+        "(2) $y=\\frac{qEd}{mv_{0}^{2}}\\left(\\frac{d}{2}-x\\right)[cite: 5]",
+        "(3) $y=\\frac{qEd}{mv_{0}^{2}}[cite: 5]",
+        "(4) $y=\\frac{qEd^{2}}{mv_{0}^{2}}x[cite: 5]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 15,
+      "type": "single_choice",
+      "text": "Magnetic materials used for making permanent magnets (P) and magnets in a transformer (T) have different properties. Of the following, which property best matches for the type of magnet required?[cite: 5]",
+      "options": [
+        "(1) T: Large retentivity, small coercivity[cite: 5]",
+        "(2) P: small retentivity, large coercivity[cite: 5]",
+        "(3) T: Large retentivity, large coercivity[cite: 5]",
+        "(4) P: large retentivity, large coercivity[cite: 5]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 16,
+      "type": "single_choice",
+      "text": "A plane electromagnetic wave, has frequency of $2.0\\times 10^{10}$ Hz and its energy density is $1.02\\times 10^{-8}~J~m^{-3}$ in vacuum. The amplitude of the magnetic field of the wave is close to $(\\frac{1}{4\\pi\\epsilon_{0}}=9\\times 10^{9}\\frac{Nm^{2}}{C^{2}})$ and speed of light $=3\\times 10^{8}~m~s^{-1}$.[cite: 5]",
+      "options": [
+        "(1) 150 nT[cite: 5]",
+        "(2) 160 nT[cite: 5]",
+        "(3) 180 nT[cite: 5]",
+        "(4) 190 nT[cite: 5]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 17,
+      "type": "single_choice",
+      "text": "A spherical mirror is obtained as shown in the figure from a hollow glass sphere, if an object is positioned in front of the mirror, what will be the nature and magnification of the image of the object? (Figure drawn as schematic and not to scale)[cite: 5]",
+      "options": [
+        "(1) Inverted, real and magnified[cite: 5]",
+        "(2) Erect, virtual and magnified[cite: 5]",
+        "(3) Erect, virtual and unmagnified[cite: 5]",
+        "(4) Inverted, real and unmagnified[cite: 5]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 18,
+      "type": "single_choice",
+      "text": "Interference fringes are observed on a screen by illuminating two thin slits 1 mm apart with a light source $(\\lambda=632.8$ nm). The distance between the screen and the slits is 100 cm. If a bright fringe is observed on a screen at distance of 1.27 mm from the central bright fringe, then the path difference between the waves, which are reaching this point from the slits is close to :[cite: 5]",
+      "options": [
+        "(1) 1.27 $\\mu$m[cite: 5]",
+        "(2) 2.87 nm[cite: 5]",
+        "(3) 2 nm[cite: 5]",
+        "(4) 2.05 $\\mu$m[cite: 5]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 19,
+      "type": "single_choice",
+      "text": "An amplitude modulated wave is represented by expression $v_{m}=5(1+0.6\\cos 6280t)\\sin(2\\pi\\times 10^{4}t)$ V. The minimum and maximum amplitudes of the amplitude modulated wave are, respectively:[cite: 5]",
+      "options": [
+        "(1) $\\frac{3}{2}$ V, 5 V[cite: 5]",
+        "(2) $\\frac{5}{2}$ V, 8 V[cite: 5]",
+        "(3) 5 V, 8 V[cite: 5]",
+        "(4) 3 V, 5 V[cite: 5]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 20,
+      "type": "single_choice",
+      "text": "The least count of the main scale of a vernier calipers is 1 mm. Its vernier scale is divided into 10 divisions and coincide with 9 divisions of the main scale. When jaws are touching each other, the $7^{th}$ division of the vernier scale coincides with a division of the main scale and the zero of vernier scale is lying right side of the zero of the main scale. When this vernier is used to measure the length of the cylinder the zero of the vernier scale is between 3.1 cm and 3.2 cm and $4^{th}$ VSD coincides with the main scale division. The length of the cylinder is (VSD is vernier scale division)[cite: 5]",
+      "options": [
+        "(1) 3.2 cm[cite: 5]",
+        "(2) 3.21 cm[cite: 5]",
+        "(3) 3.07 cm[cite: 5]",
+        "(4) 2.99 cm[cite: 5]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 21,
+      "type": "integer_or_numerical",
+      "text": "A small block starts slipping down from a point B on an inclined plane AB, which is making an angle $\\theta$ with the horizontal. Section BC is smooth and the remaining section CA is rough with a coefficient of friction $\\mu$. It is found that the block comes to rest as it reaches the bottom (point A) of the inclined plane. If $BC=2AC$, the coefficient of friction is given by $\\mu=k\\tan \\theta$. The value of k is ___.[cite: 5]",
+      "options": [],
+      "answer": "3"
+    },
+    {
+      "question_number": 22,
+      "type": "integer_or_numerical",
+      "text": "An engine takes in 5 moles of air at $20^{\circ}C$ and 1 atm, and compresses it adiabatically to $1/10^{th}$ of the original volume. Assuming air to be a diatomic ideal gas made up of rigid molecules, the change in its internal energy during this process comes out to be X kJ. The value of X to the nearest integer is:[cite: 5]",
+      "options": [],
+      "answer": "46"
+    },
+    {
+      "question_number": 23,
+      "type": "integer_or_numerical",
+      "text": "A 5 $\\mu$F capacitor is charged fully by a 220 V supply. It is then disconnected from the supply and is connected in series to another uncharged 2.5 $\\mu$F capacitor. If the energy change during the charge redistribution is $\\frac{X}{100}$ J then value of X to the nearest integer is :[cite: 5]",
+      "options": [],
+      "answer": "4"
+    },
+    {
+      "question_number": 24,
+      "type": "integer_or_numerical",
+      "text": "A circular coil of radius 10 cm is placed in a uniform magnetic field of $3.0\\times 10^{-5}$ T with its plane perpendicular to the field initially. It is rotated at constant angular speed about an axis along the diameter of coil and perpendicular to magnetic field so that it undergoes half of rotation in 0.2 s. The maximum value of EMF induced (in $\\mu$V) in the coil will be close to the integer ___.[cite: 5]",
+      "options": [],
+      "answer": "15"
+    },
+    {
+      "question_number": 25,
+      "type": "integer_or_numerical",
+      "text": "When radiation of wavelength $\\lambda$ is used to illuminate a metallic surface, the stopping potential is V. When the same surface is illuminated with radiation of wavelength $3\\lambda$, the stopping potential is $\\frac{V}{4}$. If the threshold wavelength for the metallic surface is $n\\lambda$ then value of n will be :[cite: 5]",
+      "options": [],
+      "answer": "9"
+    },
+    {
+      "question_number": 26,
+      "type": "single_choice",
+      "text": "The figure that is not a direct manifestation of the quantum nature of atom is:[cite: 5]",
+      "options": [
+        "(1) Intensity of black body radiation vs wavelength[cite: 5]",
+        "(2) Kinetic energy of photoelectrons vs frequency of incident radiation[cite: 5]",
+        "(3) Absorption spectrum[cite: 5]",
+        "(4) Internal energy of Ar vs Temperature (K)[cite: 5]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 27,
+      "type": "single_choice",
+      "text": "In general, the property (magnitudes only) that shows an opposite trend in comparison to other properties across a period is:[cite: 5]",
+      "options": [
+        "(1) Ionization enthalpy[cite: 5]",
+        "(2) Electronegativity[cite: 5]",
+        "(3) Electron gain enthalpy[cite: 5]",
+        "(4) Atomic radius[cite: 5]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 28,
+      "type": "single_choice",
+      "text": "If $AB_{4}$ molecule is a polar molecule, a possible geometry of $AB_{4}$ is:[cite: 5]",
+      "options": [
+        "(1) Square pyramidal[cite: 5]",
+        "(2) Tetrahedral[cite: 5]",
+        "(3) Rectangular planar[cite: 5]",
+        "(4) Square planar[cite: 5]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 29,
+      "type": "single_choice",
+      "text": "Which one of the following graphs is not correct for ideal gas? d = Density, P = Pressure, T = Temperature[cite: 5]",
+      "options": [
+        "(1) I[cite: 5]",
+        "(2) II[cite: 5]",
+        "(3) IV[cite: 5]",
+        "(4) III[cite: 5]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 30,
+      "type": "single_choice",
+      "text": "For the following Assertion and Reason, the correct option is Assertion (A): When Cu (II) and sulphide ions are mixed, they react together extremely quickly to give a solid. Reason (R): The equilibrium constant of $Cu^{2+}(aq)+S^{2-}(aq)\\rightleftharpoons CuS(s)$ is high because the solubility product is low.[cite: 5]",
+      "options": [
+        "(1) (A) is false and (R) is true.[cite: 5]",
+        "(2) Both (A) and (R) are false.[cite: 5]",
+        "(3) Both (A) and (R) are true but (R) is not the explanation for (A).[cite: 5]",
+        "(4) Both (A) and (R) are true and (R) is the explanation for (A).[cite: 5]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 31,
+      "type": "single_choice",
+      "text": "An open beaker of water in equilibrium with water vapour is in a sealed container. When a few grams of glucose are added to the beaker of water, the rate at which water molecules:[cite: 5]",
+      "options": [
+        "(1) leaves the vapour increases[cite: 5]",
+        "(2) leaves the solution increases[cite: 5]",
+        "(3) leaves the solution decreases[cite: 5]",
+        "(4) leaves the vapour decreases[cite: 5]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 32,
+      "type": "single_choice",
+      "text": "While titration dilute HCl solution with aqueous NaOH, which of the following will not be required?[cite: 5]",
+      "options": [
+        "(1) Burette and porcelain tile[cite: 5]",
+        "(2) Pipette and distilled water[cite: 5]",
+        "(3) Clamp and phenolphthalein[cite: 5]",
+        "(4) Bunsen burner and measuring cylinder[cite: 5]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 33,
+      "type": "single_choice",
+      "text": "The metal mainly used in devising photoelectric cells is :[cite: 5]",
+      "options": [
+        "(1) Na[cite: 5]",
+        "(2) Li[cite: 5]",
+        "(3) Rb[cite: 5]",
+        "(4) Cs[cite: 5]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 34,
+      "type": "single_choice",
+      "text": "On heating compound (A) gives a gas (B) which is constituent of air. This gas when treated with $H_{2}$ in the presence of a catalyst gives another gas (C) which is basic in nature. (A) should not be :[cite: 5]",
+      "options": [
+        "(1) $NaN_{3}[cite: 5]",
+        "(2) $Pb(NO_{3})_{2}[cite: 5]",
+        "(3) $(NH_{4})_{2}Cr_{2}O_{7}[cite: 5]",
+        "(4) $NH_{4}NO_{2}[cite: 5]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 35,
+      "type": "single_choice",
+      "text": "In Carius method of estimation of halogen, 0.172 g of an organic compound showed presence of 0.08 g of bromine. Which of these is the correct structure of the compound?[cite: 5]",
+      "options": [
+        "(1) $CH_{3}CHBr_{2}[cite: 5]",
+        "(2) Option 2[cite: 5]",
+        "(3) Option 3[cite: 5]",
+        "(4) $H_{3}C-CH_{2}-Br[cite: 5]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 36,
+      "type": "single_choice",
+      "text": "The increasing order of the following compounds towards HCN addition is: (i) 4-methoxybenzaldehyde, (ii) 4-nitrobenzaldehyde, (iii) benzaldehyde, (iv) 4-bromobenzaldehyde[cite: 5]",
+      "options": [
+        "(1) $(i)<(iii)<(iv)<(ii)[cite: 5]",
+        "(2) $(iii)<(iv)<(i)<(ii)[cite: 5]",
+        "(3) $(iii)<(i)<(iv)<(ii)[cite: 5]",
+        "(4) $(iii)<(iv)<(ii)<(i)[cite: 5]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 37,
+      "type": "single_choice",
+      "text": "The IUPAC name for the following compound is : 2, 5-dimethyl-6-oxo-hex-3-enoic acid[cite: 5]",
+      "options": [
+        "(1) 2, 5-dimethyl-5-carboxy-hex-3-enal[cite: 5]",
+        "(2) 2, 5-dimethyl-6-carboxy-hex-3-enal[cite: 5]",
+        "(3) 2, 5-dimethyl-6-carboxy-hex-3-enoic acid[cite: 5]",
+        "(4) 6-formyl-2-methyl-hex-3-enoic acid[cite: 5]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 38,
+      "type": "single_choice",
+      "text": "The major product in the following reaction is: 1,2-dimethylcyclopentanol formed via acid-catalyzed dehydration of 1-(1-hydroxycyclopentyl)ethane (or similar pinacol-pinacolone type rearrangement)[cite: 5]",
+      "options": [
+        "(1) Option 1[cite: 5]",
+        "(2) Option 2[cite: 5]",
+        "(3) Option 3[cite: 5]",
+        "(4) Option 4[cite: 5]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 39,
+      "type": "single_choice",
+      "text": "The statement that is not true about ozone is:[cite: 5]",
+      "options": [
+        "(1) in the stratosphere, CFCs release chlorine free radicals (Cl) which reacts with $O_{3}$ to give chlorine dioxide[cite: 5]",
+        "(2) in the atmosphere, it is depleted by CFCs.[cite: 5]",
+        "(3) in the stratosphere, it forms a protective shield against UV radiation.[cite: 5]",
+        "(4) It is a toxic gas and its reaction with NO gives $NO_{2}$.[cite: 5]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 40,
+      "type": "single_choice",
+      "text": "Which of the following is used for the preparation of colloids ?[cite: 5]",
+      "options": [
+        "(1) Ostwald process[cite: 5]",
+        "(2) Van Arkel Method[cite: 5]",
+        "(3) Bredig's Arc Method[cite: 5]",
+        "(4) Mond Process[cite: 5]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 41,
+      "type": "single_choice",
+      "text": "Consider that $d^{6}$ metal ion $(M^{2+})$ forms a complex with aqua ligands, and the spin only magnetic moment of the complex is 4.90 BM. The geometry and the crystal field stabilization energy of the complex is:[cite: 5]",
+      "options": [
+        "(1) octahedral and $4\\Delta_{0}+2P[cite: 5]",
+        "(2) tetrahedral and $-0.6\\Delta_{t}[cite: 5]",
+        "(3) octahedral and $-1.6\\Delta_{0}[cite: 5]",
+        "(4) tetrahedral and $-1.6\\Delta_{t}+1P[cite: 5]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 42,
+      "type": "single_choice",
+      "text": "For octahedral Mn(II) and tetrahedral Ni(II) complexes, consider the following statements: (I) both the complexes can be high spin. (II) Ni(II) complex can very rarely be of low spin. (III) with strong field ligands, Mn(II) complexes can be low spin. (IV) aqueous solution of Mn(II) ions is yellow in color. The correct statements are:[cite: 5]",
+      "options": [
+        "(1) (I) and (II) only[cite: 5]",
+        "(2) (I), (II) and (IV) only[cite: 5]",
+        "(3) (I), (II) and (III) only[cite: 5]",
+        "(4) (II), (III) and (IV) only[cite: 5]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 43,
+      "type": "single_choice",
+      "text": "Which of the following compounds will show retention in configuration on nucleophile substitution by $OH^{-}$ ion?[cite: 5]",
+      "options": [
+        "(1) Option 1[cite: 5]",
+        "(2) Option 2[cite: 5]",
+        "(3) Option 3[cite: 5]",
+        "(4) Option 4[cite: 5]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 44,
+      "type": "single_choice",
+      "text": "The major aromatic product C in the following reaction sequence will be : (Starting with bromobenzene/toluene derivative via HBr, KOH, O3)[cite: 5]",
+      "options": [
+        "(1) Option 1[cite: 5]",
+        "(2) Option 2[cite: 5]",
+        "(3) Option 3[cite: 5]",
+        "(4) Option 4[cite: 5]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 45,
+      "type": "single_choice",
+      "text": "Consider the following reactions: (i) Glucose + ROH $\\xrightarrow{dry~HCl}$ Acetal $\\xrightarrow{x~eq.~of~(CH_{3}CO)_{2}O}$ acetyl derivative. (ii) Glucose $\\xrightarrow{Ni/H_{2}}$ A $\\xrightarrow{y~eq.~of~(CH_{3}CO)_{2}O}$ acetyl derivative. (iii) Glucose $\\xrightarrow{z~eq.~of~(CH_{3}CO)_{2}O}$ acetyl derivative. 'x', 'y' and 'z' in these reactions are respectively.[cite: 5]",
+      "options": [
+        "(1) 5, 4 & 6[cite: 5]",
+        "(2) 4, 6 & 5[cite: 5]",
+        "(3) 4, 5 & 5[cite: 5]",
+        "(4) 5, 6 & 5[cite: 5]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 46,
+      "type": "integer_or_numerical",
+      "text": "The Gibbs energy change (in J) for the given reaction at $[Cu^{2+}]=[Sn^{2+}]=1$ M and 298 K is : $Cu(s)+Sn^{2+}(aq.)\\rightarrow Cu^{2+}(aq.)+Sn(s)$ ($E^{\\circ}_{Sn^{2+}|Sn}=-0.16$ V, $E^{\\circ}_{Cu^{2+}|Cu}=0.34$ V, Take $F=96500$ C $mol^{-1}$)[cite: 5]",
+      "options": [],
+      "answer": "96500"
+    },
+    {
+      "question_number": 47,
+      "type": "integer_or_numerical",
+      "text": "The internal energy change (in J) when 90 g of water undergoes complete evaporation at $100^{\circ}C$ is ___ (Given: $\\Delta H_{vap}$ for water at 373 K $=41$ kJ/mol, $R=8.314$ J $K^{-1}$ $mol^{-1}$)[cite: 5]",
+      "options": [],
+      "answer": "189494"
+    },
+    {
+      "question_number": 48,
+      "type": "integer_or_numerical",
+      "text": "The number of chiral carbons present in the molecule given below (Quinine structure) is ___.[cite: 5]",
+      "options": [],
+      "answer": "5"
+    },
+    {
+      "question_number": 49,
+      "type": "integer_or_numerical",
+      "text": "The mass of gas adsorbed, x, per unit mass of adsorbate, m, was measured at various pressures, p. A graph between $\\log\\frac{x}{m}$ and $\\log p$ gives a straight line with slope equal to 2 and the intercept equal to 0.4771. The value of $\\frac{x}{m}$ at a pressure of 4 atm is: (Given $\\log 3 = 0.4771$)[cite: 5]",
+      "options": [],
+      "answer": "48"
+    },
+    {
+      "question_number": 50,
+      "type": "integer_or_numerical",
+      "text": "The oxidation states of iron atoms in compounds (A), (B) and (C), respectively, are x, y and z. Then sum of x, y and z is: $Na_{4}[Fe(CN)_{5}(NOS)]$, $Na_{4}[FeO_{4}]$, $Fe_{2}(CO)_{9}$[cite: 5]",
+      "options": [],
+      "answer": "6"
+    },
+    {
+      "question_number": 51,
+      "type": "single_choice",
+      "text": "Let $\\alpha$ and $\\beta$ be the roots of the equation, $5x^{2}+6x-2=0$. If $S_{n}=\\alpha^{n}+\\beta^{n}$, $n=1, 2, 3, ....$, then:[cite: 5]",
+      "options": [
+        "(1) $6S_{6}+5S_{5}=2S_{4}[cite: 5]",
+        "(2) $5S_{6}+6S_{5}+2S_{4}=0[cite: 5]",
+        "(3) $5S_{6}+6S_{5}=2S_{4}[cite: 5]",
+        "(4) $6S_{6}+5S_{5}+2S_{4}=0[cite: 5]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 52,
+      "type": "single_choice",
+      "text": "The value of $\\left(\\frac{1+\\sin\\frac{2\\pi}{9}+i\\cos\\frac{2\\pi}{9}}{1+\\sin\\frac{2\\pi}{9}-i\\cos\\frac{2\\pi}{9}}\\right)^{3}$ is:[cite: 5]",
+      "options": [
+        "(1) $\\frac{1}{2}(1-i\\sqrt{3})[cite: 5]",
+        "(2) $\\frac{1}{2}(\\sqrt{3}-i)[cite: 5]",
+        "(3) $-\\frac{1}{2}(\\sqrt{3}-i)[cite: 5]",
+        "(4) $-\\frac{1}{2}(1-i\\sqrt{3})[cite: 5]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 53,
+      "type": "single_choice",
+      "text": "The sum of the first three terms of G.P. is S and their products is 27. Then all such S lie in:[cite: 5]",
+      "options": [
+        "(1) $(-\\infty, -9]\\cup[3, \\infty)[cite: 5]",
+        "(2) $[-3, \\infty)[cite: 5]",
+        "(3) $(-\\infty, -3]\\cup[9, \\infty)[cite: 5]",
+        "(4) $(-\\infty, 9][cite: 5]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 54,
+      "type": "single_choice",
+      "text": "If $|x|<1$, $|y|<1$ and $x\\neq y$ then the sum to infinity of the following series $(x+y)+(x^{2}+xy+y^{2})+(x^{3}+x^{2}y+xy^{2}+y^{3})+....$ is:[cite: 5]",
+      "options": [
+        "(1) $\\frac{x+y-xy}{(1+x)(1+y)}[cite: 5]",
+        "(2) $\\frac{x+y+xy}{(1+x)(1+y)}[cite: 5]",
+        "(3) $\\frac{x+y-xy}{(1-x)(1-y)}[cite: 5]",
+        "(4) $\\frac{x+y+xy}{(1-x)(1-y)}[cite: 5]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 55,
+      "type": "single_choice",
+      "text": "Let $\\alpha>0$, $\\beta>0$ be such that $\\alpha^{3}+\\beta^{2}=4$. If the maximum value of the term independent of x in the binomial expansion of $(\\alpha x^{\\frac{1}{5}}+\\beta x^{-\\frac{1}{5}})^{10}$ is 10k, then k is equal to:[cite: 5]",
+      "options": [
+        "(1) 336[cite: 5]",
+        "(2) 352[cite: 5]",
+        "(3) 84[cite: 5]",
+        "(4) 176[cite: 5]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 56,
+      "type": "single_choice",
+      "text": "A line parallel to the straight line $2x-y=0$ is tangent to the hyperbola $\\frac{x^{2}}{4}-\\frac{y^{2}}{2}=1$ at the point $(x_{1}, y_{1})$. Then $x_{1}^{2}+5y_{1}^{2}$ is equal to:[cite: 5]",
+      "options": [
+        "(1) 6[cite: 5]",
+        "(2) 8[cite: 5]",
+        "(3) 10[cite: 5]",
+        "(4) 5[cite: 5]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 57,
+      "type": "single_choice",
+      "text": "The contrapositive of the statement \"If I reach the station in time, then I will catch the train\" is:[cite: 5]",
+      "options": [
+        "(1) If I do not reach the station in time, then I will catch the train.[cite: 5]",
+        "(2) If I do not reach the station in time, then I will not catch the train.[cite: 5]",
+        "(3) If I will catch the train, then I reach the station in time.[cite: 5]",
+        "(4) If I will not catch the train, then I do not reach the station in time.[cite: 5]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 58,
+      "type": "single_choice",
+      "text": "Let $X=\\{x\\in N:1\\le x\\le 17\\}$ and $Y=\\{ax+b:x\\in X \\text{ and } a,b\\in R, a>0\\}$. If mean and variance of elements of Y are 17 and 216 respectively then $a+b$ is equal to:[cite: 5]",
+      "options": [
+        "(1) 7[cite: 5]",
+        "(2) -7[cite: 5]",
+        "(3) -27[cite: 5]",
+        "(4) 9[cite: 5]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 59,
+      "type": "single_choice",
+      "text": "If $R=\\{(x,y):x,y\\in Z, x^{2}+3y^{2}\\le 8\\}$ is a relation on the set of integers Z, then the domain of $R^{-1}$ is:[cite: 5]",
+      "options": [
+        "(1) $\\{-2, -1, 1, 2\\[cite: 5]",
+        "(2) $\\{0, 1\\}[cite: 5]",
+        "(3) $\\{-2, -1, 0, 1, 2\\}[cite: 5]",
+        "(4) $\\{-1, 0, 1\\}[cite: 5]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 60,
+      "type": "single_choice",
+      "text": "Let A be a $2\\times 2$ real matrix with entries from $\\{0, 1\\}$ and $|A|\\neq 0$. Consider the following two statements; (P) If $A\\neq I_{2}$, then $|A|=-1$. (Q) If $|A|=1$ then $tr(A)=2$. Where $I_{2}$ denotes $2\\times 2$ identity matrix and $tr(A)$ denotes the sum of the diagonal entries of A. Then:[cite: 5]",
+      "options": [
+        "(1) (P) is false and (Q) is true[cite: 5]",
+        "(2) Both (P) and (Q) are false[cite: 5]",
+        "(3) (P) is true and (Q) is false[cite: 5]",
+        "(4) Both (P) and (Q) are true[cite: 5]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 61,
+      "type": "single_choice",
+      "text": "Let S be the set of all $\\lambda \\in R$ for which the system of linear equations $2x-y+2z=2$, $x-2y+\\lambda z=-4$, $x+\\lambda y+z=4$ has no solution. Then the set S:[cite: 5]",
+      "options": [
+        "(1) Contains more than two elements[cite: 5]",
+        "(2) Is an empty set[cite: 5]",
+        "(3) Is a singleton[cite: 5]",
+        "(4) Contains exactly two elements[cite: 5]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 62,
+      "type": "single_choice",
+      "text": "The domain of the function $f(x)=\\sin^{-1}\\left(\\frac{|x|+5}{x^{2}+1}\\right)$ is $(-\\infty, -a]\\cup[a, \\infty)$ then a is equal to:[cite: 5]",
+      "options": [
+        "(1) $\\frac{\\sqrt{17}}{2}[cite: 5]",
+        "(2) $\\frac{\\sqrt{17}-1}{2}[cite: 5]",
+        "(3) $\\frac{1+\\sqrt{17}}{2}[cite: 5]",
+        "(4) $\\frac{\\sqrt{17}}{2}+1[cite: 5]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 63,
+      "type": "single_choice",
+      "text": "If a function $f(x)$ defined by $f(x)=\\begin{cases} ae^{x}+be^{-x}, & -1\\le x<1 \\\\ cx^{2}, & 1\\le x\\le 3 \\\\ ax^{2}+2cx, & 3<x\\le 4 \\end{cases}$ is continuous for some a, b, $c\\in R$ and $f'(0)+f'(2)=e$ then the value of a is:[cite: 5]",
+      "options": [
+        "(1) $\\frac{e}{e^{2}-3e-13}[cite: 5]",
+        "(2) $\\frac{e}{e^{2}-3e+13}[cite: 5]",
+        "(3) $\\frac{e}{e^{2}+3e+13}[cite: 5]",
+        "(4) $\\frac{e}{e^{2}-3e+13}$ (duplicate option or similar)[cite: 5]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 64,
+      "type": "single_choice",
+      "text": "If the tangent to the curve $y=x+\\sin y$ at a point $(a,b)$ is parallel to the line joining $(0, \\frac{3}{2})$ and $(\\frac{1}{2}, 2)$, then:[cite: 5]",
+      "options": [
+        "(1) $b=a[cite: 5]",
+        "(2) $|b-a|=1[cite: 5]",
+        "(3) |a+b|=1[cite: 5]",
+        "(4) $b=\\frac{\\pi}{2}+a[cite: 5]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 65,
+      "type": "single_choice",
+      "text": "If $p(x)$ be a polynomial of degree three that has a local maximum value 8 at $x=1$ and a local minimum value 4 at $x=2$ then $p(0)$ is equal to:[cite: 5]",
+      "options": [
+        "(1) 6[cite: 5]",
+        "(2) -12[cite: 5]",
+        "(3) 24[cite: 5]",
+        "(4) 12[cite: 5]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 66,
+      "type": "single_choice",
+      "text": "Let $P(h,k)$ be a point on the curve $y=x^{2}+7x+2$, nearest to the line, $y=3x-3$. Then the equation of the normal to the curve at P is:[cite: 5]",
+      "options": [
+        "(1) $x+3y+26=0[cite: 5]",
+        "(2) $x+3y-62=0[cite: 5]",
+        "(3) $x-3y-11=0[cite: 5]",
+        "(4) $x-3y+22=0[cite: 5]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 67,
+      "type": "single_choice",
+      "text": "Area (in sq. units) of the region outside the ellipse $\\frac{x^{2}}{4}+\\frac{y^{2}}{9}=1$ and inside the ellipse $\\frac{|x|}{2}+\\frac{|y|}{3}=1$ is:[cite: 5]",
+      "options": [
+        "(1) $6(\\pi-2)[cite: 5]",
+        "(2) $3(\\pi-2)[cite: 5]",
+        "(3) $3(4-\\pi)[cite: 5]",
+        "(4) $6(4-\\pi)[cite: 5]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 68,
+      "type": "single_choice",
+      "text": "Let $y=y(x)$ be the solution of the differential equation, $(2+\\sin x)\\frac{dy}{dx}+(y+1)\\cos x=0$, $y>0$, $y(0)=1$. If $y(\\pi)=a$ and $\\frac{dy}{dx}$ at $x=\\pi$ is b, then the ordered pair $(a,b)$ is equal to:[cite: 5]",
+      "options": [
+        "(1) $(2, \\frac{3}{2})[cite: 5]",
+        "(2) $(1, 1)[cite: 5]",
+        "(3) $(1, -1)[cite: 5]",
+        "(4) $(2, 1)[cite: 5]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 69,
+      "type": "single_choice",
+      "text": "The plane passing through the points $(1,2,1)$, $(2,1,2)$ and parallel to the line, $2x=3y=z=1$ also passes through the point:[cite: 5]",
+      "options": [
+        "(1) $(0, 6, -2)[cite: 5]",
+        "(2) $(-2, 0, 1)[cite: 5]",
+        "(3) $(0, -6, 2)[cite: 5]",
+        "(4) $(2, 0, -1)[cite: 5]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 70,
+      "type": "single_choice",
+      "text": "Box 1 contains 30 cards numbered 1 to 30 and Box 2 contains 20 cards numbered 31 to 50. A box is selected at random and a card is drawn from it. The number on the card is found to be a non-prime number. The probability that the card was drawn from Box 1 is:[cite: 5]",
+      "options": [
+        "(1) $\\frac{2}{3}[cite: 5]",
+        "(2) $\\frac{8}{17}[cite: 5]",
+        "(3) $\\frac{4}{17}[cite: 5]",
+        "(4) $\\frac{2}{5}[cite: 5]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 71,
+      "type": "integer_or_numerical",
+      "text": "If the letters of the word 'MOTHER' be permuted and all the words so formed (with or without meaning) be listed as in a dictionary, then the position of the word 'MOTHER' is ___.[cite: 5]",
+      "options": [],
+      "answer": "309"
+    },
+    {
+      "question_number": 72,
+      "type": "integer_or_numerical",
+      "text": "The numbers of integral values of k for which the line, $3x+4y=k$ intersects the circle, $x^{2}+y^{2}-2x-4y+4=0$ at two distinct points is ___.[cite: 5]",
+      "options": [],
+      "answer": "9"
+    },
+    {
+      "question_number": 73,
+      "type": "integer_or_numerical",
+      "text": "If $\\lim_{x\\rightarrow 1}\\frac{x+x^{2}+x^{3}+...+x^{n}-n}{x-1}=820$, $(n\\in N)$ then the value of n is equal to ___.[cite: 5]",
+      "options": [],
+      "answer": "40"
+    },
+    {
+      "question_number": 74,
+      "type": "integer_or_numerical",
+      "text": "The integral $\\int_{0}^{2}||x-1|-x|dx$ is equal to ___.[cite: 5]",
+      "options": [],
+      "answer": "1.5"
+    },
+    {
+      "question_number": 75,
+      "type": "integer_or_numerical",
+      "text": "Let $\\vec{a}$, $\\vec{b}$ and $\\vec{c}$ be three unit vectors such that $|\\vec{a}-\\vec{b}|^{2}+|\\vec{a}-\\vec{c}|^{2}=8$. Then $|\\vec{a}+2\\vec{b}|^{2}+|\\vec{a}+2\\vec{c}|^{2}$ is equal to ___.[cite: 5]",
+      "options": [],
+      "answer": "2"
+    }
+  ]
+}

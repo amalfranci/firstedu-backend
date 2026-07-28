@@ -5,6 +5,7 @@
 
 import {
     detectExplanationConclusionMismatch,
+    detectExplanationNamedConclusionMismatch,
     detectInvalidPhScaleOptions,
     detectHybridizationFactualError,
     runDeterministicCorrectnessAudit,
@@ -28,6 +29,10 @@ describe('correctnessPreAudit.service.js', () => {
             expect(issue).toBeNull();
         });
 
+        // "Team 14" is a named/text conclusion (not a bare number), so it's caught by
+        // detectExplanationNamedConclusionMismatch — detectExplanationConclusionMismatch
+        // only matches claim patterns requiring a number immediately after the trigger
+        // phrase ("answer is 42"), which "answer is Team 14" does not satisfy.
         test('detects actual Team 1 vs Team 14 mismatch', () => {
             const q = {
                 questionNumber: 1,
@@ -39,7 +44,7 @@ describe('correctnessPreAudit.service.js', () => {
                 explanation: 'After analysis, Team 14 dominated the tournament. Therefore, the correct answer is Team 14.',
             };
 
-            const issue = detectExplanationConclusionMismatch(q);
+            const issue = detectExplanationNamedConclusionMismatch(q);
             expect(issue).toBeDefined();
             expect(issue.severity).toBe('critical');
             expect(issue.issue).toMatch(/Team 14.*Team 1/i);
@@ -130,8 +135,8 @@ describe('correctnessPreAudit.service.js', () => {
             ];
 
             const result = runDeterministicCorrectnessAudit(questions);
-            expect(result.issues.length).toBeGreaterThan(0);
-            expect(result.correctedCount).toBeDefined();
+            expect(result.confirmedIssues.length).toBeGreaterThan(0);
+            expect(result.correctnessScore).toBeDefined();
         });
 
         test('returns empty issues for valid questions', () => {
@@ -148,7 +153,7 @@ describe('correctnessPreAudit.service.js', () => {
             ];
 
             const result = runDeterministicCorrectnessAudit(questions);
-            expect(Array.isArray(result.issues)).toBe(true);
+            expect(Array.isArray(result.confirmedIssues)).toBe(true);
         });
     });
 });

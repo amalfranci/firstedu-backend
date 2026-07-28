@@ -98,6 +98,12 @@ const aiQuestionSchema = new mongoose.Schema(
 );
 
 aiQuestionSchema.index({ aiQuestionBank: 1, orderInBank: 1 });
+// Supports questionCorpusRag.service.js's candidate-pool query. NOTE: subject/topic
+// on this schema are not reliably populated by the save path (aiQuestionBank.service.js
+// never sets .subject, and .topic mirrors an often-empty per-question input field) — the
+// populated topic lives on the parent AiQuestionBank (generationTopic/name), so retrieval
+// filters via aiQuestionBank rather than these fields.
+aiQuestionSchema.index({ aiQuestionBank: 1, isActive: 1, questionType: 1 });
 
 export default mongoose.models.AiQuestion ||
   mongoose.model("AiQuestion", aiQuestionSchema);

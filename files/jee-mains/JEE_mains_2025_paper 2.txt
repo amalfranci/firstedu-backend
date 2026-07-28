@@ -1,0 +1,843 @@
+{
+  "title": "JEE Main 2025 (28 Jan Shift 2) Previous Year Paper with Answer Keys",
+  "source": "MathonGo",
+  "exam_info": {
+    "exam": "JEE Main",
+    "year": 2025,
+    "session": "January",
+    "date": "2025-01-28",
+    "shift": 2
+  },
+  "questions": [
+    {
+      "question_number": 1,
+      "type": "single_choice",
+      "text": "Let $A=\\begin{bmatrix}\\frac{1}{\\sqrt{2}} & -2 \\\\ 0 & 1\\end{bmatrix}$ and $P=\\begin{bmatrix}\\cos~\\theta & -\\sin~\\theta \\\\ \\sin~\\theta & \\cos~\\theta\\end{bmatrix}$, $\\theta>0$. If $B=PAP^{T}$, $C=P^{T}B^{10}P$ and the sum of the diagonal elements of C is $\\frac{m}{n}$ where $gcd(m,n)=1$ then $m+n$ is:[cite: 3]",
+      "options": [
+        "(1) 127[cite: 3]",
+        "(2) 258[cite: 3]",
+        "(3) 65[cite: 3]",
+        "(4) 2049[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 2,
+      "type": "single_choice",
+      "text": "If the components of $\\vec{a}=\\alpha\\hat{i}+\\beta\\hat{j}+\\gamma\\hat{k}$ along and perpendicular to $\\vec{b}=3\\hat{i}+\\hat{j}-\\hat{k}$ respectively, are $\\frac{16}{11}(3\\hat{i}+\\hat{j}-\\hat{k})$ and $\\frac{1}{11}(-4\\hat{i}-5\\hat{j}-17\\hat{k})$, then $\\alpha^{2}+\\beta^{2}+\\gamma^{2}$ is equal to:[cite: 3]",
+      "options": [
+        "(1) 26[cite: 3]",
+        "(2) 18[cite: 3]",
+        "(3) 23[cite: 3]",
+        "(4) 16[cite: 3]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 3,
+      "type": "single_choice",
+      "text": "Let A, B, C be three points in xy-plane, whose position vector are given by $\\sqrt{3}\\hat{i}+\\hat{j}$, $\\hat{i}+\\sqrt{3}\\hat{j}$ and $a\\hat{i}+(1-a)\\hat{j}$ respectively with respect to the origin O. If the distance of the point C from the line bisecting the angle between the vectors $\\vec{OA}$ and $\\vec{OB}$ is $\\frac{9}{\\sqrt{2}}$, then the sum of all the possible values of a is :[cite: 3]",
+      "options": [
+        "(1) 2[cite: 3]",
+        "(2) $9/2$[cite: 3]",
+        "(3) 1[cite: 3]",
+        "(4) 0[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 4,
+      "type": "single_choice",
+      "text": "Let the coefficients of three consecutive terms $T_{r}$, $T_{r+1}$ and $T_{r+2}$ in the binomial expansion of $(a+b)^{12}$ be in a G.P. and let p be the number of all possible values of r. Let q be the sum of all rational terms in the binomial expansion of $(\\sqrt[4]{3}+\\sqrt[3]{4})^{12}$. Then $p+q$ is equal to :[cite: 3]",
+      "options": [
+        "(1) 283[cite: 3]",
+        "(2) 287[cite: 3]",
+        "(3) 295[cite: 3]",
+        "(4) 299[cite: 3]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 5,
+      "type": "single_choice",
+      "text": "Let [ ] denote the greatest integer less than or equal to x. Then the domain of $f(x)=\\sec^{-1}(2[x]+1)$ is:[cite: 3]",
+      "options": [
+        "(1) $(-\\infty,-1]\\cup[0,\\infty)[cite: 3]",
+        "(2) $(-\\infty,-1]\\cup[1,\\infty)[cite: 3]",
+        "(3) $(-\\infty,\\infty)[cite: 3]",
+        "(4) $(-\\infty,\\infty)-\\{0\\}[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 6,
+      "type": "single_choice",
+      "text": "Let S be the set of all the words that can be formed by arranging all the letters of the word GARDEN. From the set S, one word is selected at random. The probability that the selected word will NOT have vowels in alphabetical order is:[cite: 3]",
+      "options": [
+        "(1) $\\frac{1}{2}[cite: 3]",
+        "(2) $\\frac{1}{4}[cite: 3]",
+        "(3) $\\frac{2}{3}[cite: 3]",
+        "(4) $\\frac{1}{3}[cite: 3]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 7,
+      "type": "single_choice",
+      "text": "If $\\sum_{r=1}^{13}\\left\\{\\frac{1}{\\sin(\\frac{\\pi}{4}+(r-1)\\frac{\\pi}{5})\\sin(\\frac{\\pi}{4}+\\frac{r\\pi}{6})}\\right\\}=a\\sqrt{3}+b$, $a,b\\in Z$, then $a^{2}+b^{2}$ is equal to:[cite: 3]",
+      "options": [
+        "(1) 10[cite: 3]",
+        "(2) 4[cite: 3]",
+        "(3) 2[cite: 3]",
+        "(4) 8[cite: 3]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 8,
+      "type": "single_choice",
+      "text": "Let f be a real valued continuous function defined on the positive real axis such that $g(x)=\\int_{0}^{x}tf(t)dt$. If $g(x^{3})=x^{6}+x^{7}$, then value of $\\sum_{r=1}^{15}f(r^{3})$ is:[cite: 3]",
+      "options": [
+        "(1) 270[cite: 3]",
+        "(2) 340[cite: 3]",
+        "(3) 320[cite: 3]",
+        "(4) 310[cite: 3]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 9,
+      "type": "single_choice",
+      "text": "Let $f:[0,3]\\rightarrow A$ be defined by $f(x)=2x^{3}-15x^{2}+36x+7$ and $g:[0,\\infty)\\rightarrow B$ be defined by $g(x)=\\frac{x^{2025}}{x^{2025}+1}$. If both the functions are onto and $S=\\{x\\in Z:x\\in A \\text{ or } x\\in B\\}$, then $n(S)$ is equal to :[cite: 3]",
+      "options": [
+        "(1) 29[cite: 3]",
+        "(2) 30[cite: 3]",
+        "(3) 31[cite: 3]",
+        "(4) 36[cite: 3]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 10,
+      "type": "single_choice",
+      "text": "Bag $B_{1}$ contains 6 white and 4 blue balls, Bag $B_{2}$ contains 4 white and 6 blue balls, and Bag $B_{3}$ contains 5 white and 5 blue balls. One of the bags is selected at random and a ball is drawn from it. If the ball is white, then the probability, that the ball is drawn from Bag $B_{2}$, is:[cite: 3]",
+      "options": [
+        "(1) $\\frac{4}{15}[cite: 3]",
+        "(2) $\\frac{1}{3}[cite: 3]",
+        "(3) $\\frac{2}{5}[cite: 3]",
+        "(4) $\\frac{2}{3}[cite: 3]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 11,
+      "type": "single_choice",
+      "text": "Let $f:R\\rightarrow R$ be a twice differentiable function such that $f(2)=1$. If $F(x)=xf(x)$ for all $x\\in R$, $\\int_{0}^{2}x~F'(x)dx=6$ and $\\int_{0}^{2}x^{2}F''(x)dx=40$, then $F'(2)+\\int_{0}^{2}F(x)dx$ is equal to :[cite: 3]",
+      "options": [
+        "(1) 11[cite: 3]",
+        "(2) 13[cite: 3]",
+        "(3) 15[cite: 3]",
+        "(4) 9[cite: 3]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 12,
+      "type": "single_choice",
+      "text": "For positive integers n, if $4a_{n}=(n^{2}+5n+6)$ and $S_{n}=\\sum_{k=1}^{n}(\\frac{1}{a_{k}})$, then $S_{2025}$ is:[cite: 3]",
+      "options": [
+        "(1) 540[cite: 3]",
+        "(2) 675[cite: 3]",
+        "(3) 1350[cite: 3]",
+        "(4) 135[cite: 3]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 13,
+      "type": "single_choice",
+      "text": "Let $f:R-\\{0\\}\\rightarrow(-\\infty,1)$ be a polynomial of degree 2, satisfying $f(x)f(\\frac{1}{x})=f(x)+f(\\frac{1}{x})$. If $f(K)=-2K$ then the sum of squares of all possible values of K is:[cite: 3]",
+      "options": [
+        "(1) 7[cite: 3]",
+        "(2) 6[cite: 3]",
+        "(3) 1[cite: 3]",
+        "(4) 9[cite: 3]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 14,
+      "type": "single_choice",
+      "text": "If A and B are the points of intersection of the circle $x^{2}+y^{2}-8x=0$ and the hyperbola $\\frac{x^{2}}{9}-\\frac{y^{2}}{4}=1$ and a point P moves on the line $2x-3y+4=0$, then the centroid of $\\triangle PAB$ lies on the line:[cite: 3]",
+      "options": [
+        "(1) $x+9y=36[cite: 3]",
+        "(2) $4x-9y=12[cite: 3]",
+        "(3) $6x-9y=20[cite: 3]",
+        "(4) $9x-9y=32[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 15,
+      "type": "single_choice",
+      "text": "If $f(x)=\\int\\frac{1}{x^{1/4}(1+x^{1/4})}dx$; $f(0)=-6$ then $f(1)$ is equal to :[cite: 3]",
+      "options": [
+        "(1) $4(\\log_{e}2-2)[cite: 3]",
+        "(2) $2-\\log_{e}2[cite: 3]",
+        "(3) $\\log_{e}2+2[cite: 3]",
+        "(4) $4(\\log_{e}2+2)[cite: 3]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 16,
+      "type": "single_choice",
+      "text": "The area of the region bounded by the curves $x(1+y^{2})=1$ and $y^{2}=2x$ is:[cite: 3]",
+      "options": [
+        "(1) $2(\\frac{\\pi}{2}-\\frac{1}{3})[cite: 3]",
+        "(2) $\\frac{\\pi}{2}-\\frac{1}{3}[cite: 3]",
+        "(3) $\\frac{\\pi}{4}-\\frac{1}{3}[cite: 3]",
+        "(4) \\frac{1}{2}(\\frac{\\pi}{2}-\\frac{1}{3})[cite: 3]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 17,
+      "type": "single_choice",
+      "text": "The square of the distance of the point $(\\frac{15}{7},\\frac{32}{7},7)$ from the line $\\frac{x+1}{3}=\\frac{y+3}{5}=\\frac{z+5}{7}$ in the direction of the vector $\\hat{i}+4\\hat{j}+7\\hat{k}$ is:[cite: 3]",
+      "options": [
+        "(1) 54[cite: 3]",
+        "(2) 44[cite: 3]",
+        "(3) 41[cite: 3]",
+        "(4) 66[cite: 3]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 18,
+      "type": "single_choice",
+      "text": "If the midpoint of a chord of the ellipse $\\frac{x^{2}}{9}+\\frac{y^{2}}{4}=1$ is $(\\sqrt{2}, 4/3)$ and the length of the chord is $\\frac{2\\sqrt{\\alpha}}{3}$, then $\\alpha$ is:[cite: 3]",
+      "options": [
+        "(1) 20[cite: 3]",
+        "(2) 22[cite: 3]",
+        "(3) 18[cite: 3]",
+        "(4) 26[cite: 3]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 19,
+      "type": "single_choice",
+      "text": "If $\\alpha+i\\beta$ and $\\gamma+i\\delta$ are the roots of $x^{2}-(3-2i)x-(2i-2)=0$, $i=\\sqrt{-1}$ then $\\alpha\\gamma+\\beta\\delta$ is equal to :[cite: 3]",
+      "options": [
+        "(1) -2[cite: 3]",
+        "(2) 6[cite: 3]",
+        "(3) -6[cite: 3]",
+        "(4) 2[cite: 3]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 20,
+      "type": "single_choice",
+      "text": "Two equal sides of an isosceles triangle are along $-x+2y=4$ and $x+y=4$. If m is the slope of its third side, then the sum of all possible distinct values of m, is:[cite: 3]",
+      "options": [
+        "(1) $-2\\sqrt{10}[cite: 3]",
+        "(2) 12[cite: 3]",
+        "(3) 6[cite: 3]",
+        "(4) -6[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 21,
+      "type": "integer_or_numerical",
+      "text": "Let A and B be the two points of intersection of the line $y+5=0$ and the mirror image of the parabola $y^{2}=4x$ with respect to the line $x+y+4=0$. If d denotes the distance between A and B, and a denotes the area of $\\triangle SAB$ where S is the focus of the parabola $y^{2}=4x$, then the value of $(a+d)$ is ___.[cite: 3]",
+      "options": [],
+      "answer": "14"
+    },
+    {
+      "question_number": 22,
+      "type": "integer_or_numerical",
+      "text": "The number of natural numbers, between 212 and 999, such that the sum of their digits is 15, is ___.[cite: 3]",
+      "options": [],
+      "answer": "64"
+    },
+    {
+      "question_number": 23,
+      "type": "integer_or_numerical",
+      "text": "If $y=y(x)$ is the solution of the differential equation, $\\sqrt{4-x^{2}}dy=((\\sin^{-1}(\\frac{x}{2}))^{2}-y)\\sin^{-1}(\\frac{x}{2})dx$, $-2\\le x\\le 2$, $y(2)=\\frac{\\pi^{2}-8}{4}$ then $y^{2}(0)$ is equal to ___.[cite: 3]",
+      "options": [],
+      "answer": "4"
+    },
+    {
+      "question_number": 24,
+      "type": "integer_or_numerical",
+      "text": "The interior angles of a polygon with n sides, are in an A.P. with common difference $6^{\\circ}$. If the largest interior angle of the polygon is $219^{\\circ}$, then n is equal to ___.[cite: 3]",
+      "options": [],
+      "answer": "20"
+    },
+    {
+      "question_number": 25,
+      "type": "integer_or_numerical",
+      "text": "Let $f(x)=\\lim_{n\\rightarrow \\infty}\\sum_{r=0}^{n}\\left(\\frac{\\tan(x/2^{r+1})+\\tan^{3}(x/2^{r+1})}{1-\\tan^{2}(x/2^{r+1})}\\right)$. Then $\\lim_{x\\rightarrow 0}\\frac{e^{x}-e^{f(x)}}{x-f(x)}$ is equal to ___.[cite: 3]",
+      "options": [],
+      "answer": "1"
+    },
+    {
+      "question_number": 26,
+      "type": "single_choice",
+      "text": "A bar magnet has total length $2l=20$ units and the field point P is at a distance $d=10$ units from the centre of the magnet. If the relative uncertainty of length measurement is 1%, then uncertainty of the magnetic field at point P is:[cite: 3]",
+      "options": [
+        "(1) 4%[cite: 3]",
+        "(2) 15%[cite: 3]",
+        "(3) 5%[cite: 3]",
+        "(4) 10%[cite: 3]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 27,
+      "type": "single_choice",
+      "text": "A concave mirror produces an image of an object such that the distance between the object and image is 20 cm. If the magnification of the image is '-3', then the magnitude of the radius of curvature of the mirror is:[cite: 3]",
+      "options": [
+        "(1) 30 cm[cite: 3]",
+        "(2) 3.75 cm[cite: 3]",
+        "(3) 15 cm[cite: 3]",
+        "(4) 7.5 cm[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 28,
+      "type": "single_choice",
+      "text": "The velocity-time graph of an object moving along a straight line is shown in figure. What is the distance covered by the object between $t=0$ to $t=4$ s?[cite: 3]",
+      "options": [
+        "(1) 30 m[cite: 3]",
+        "(2) 11 m[cite: 3]",
+        "(3) 10 m[cite: 3]",
+        "(4) 13 m[cite: 3]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 29,
+      "type": "single_choice",
+      "text": "A body of mass 4 kg is placed on a plane at a point P having coordinate (3, 4)m. Under the action of force $\\vec{F}=(2\\hat{i}+3\\hat{j})$ N, it moves to a new point Q having coordinates (6, 10)m in 4 sec. The average power and instantaneous power at the end of 4 sec are in the ratio of:[cite: 3]",
+      "options": [
+        "(1) 13:6[cite: 3]",
+        "(2) 4:3[cite: 3]",
+        "(3) 1:2[cite: 3]",
+        "(4) 6:13[cite: 3]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 30,
+      "type": "single_choice",
+      "text": "Match List - I with List - II. List - I: (A) Angular Impulse, (B) Latent Heat, (C) Electrical resistivity, (D) Electromotive force. List - II: (I) $[M^{0}L^{2}T^{-2}]$, (II) $[ML^{2}T^{-3}A^{-1}]$, (III) $[ML^{2}T^{-1}]$, (IV) $[ML^{3}T^{-3}A^{-2}]$. Choose the correct answer from the options given below :[cite: 3]",
+      "options": [
+        "(1) (A)-(II), (B)-(I), (C)-(IV), (D)-(III)[cite: 3]",
+        "(2) (A)-(I), (B)-(III), (C)-(IV), (D)-(II)[cite: 3]",
+        "(3) (A)-(III), (B)-(I), (C)-(II), (D)-(IV)[cite: 3]",
+        "(4) (A)-(III), (B)-(I), (C)-(IV), (D)-(II)[cite: 3]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 31,
+      "type": "single_choice",
+      "text": "A uniform magnetic field of 0.4 T acts perpendicular to a circular copper disc 20 cm in radius. The disc is having a uniform angular velocity of $10\\pi$ rad $s^{-1}$ about an axis through its centre and perpendicular to the disc. What is the potential difference developed between the axis of the disc and the rim ? $(\\pi=3.14)[cite: 3]",
+      "options": [
+        "(1) 0.5024 V[cite: 3]",
+        "(2) 1.0 V[cite: 3]",
+        "(3) 0.2512 V[cite: 3]",
+        "(4) 0.1256 V[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 32,
+      "type": "single_choice",
+      "text": "An infinite wire has a circular bend of radius a, and carrying a current I as shown in figure. The magnitude of magnetic field at the origin O of the arc is given by:[cite: 3]",
+      "options": [
+        "(1) $\\frac{\\mu_{0}}{4\\pi}\\frac{I}{a}[\\frac{\\pi}{2}+1][cite: 3]",
+        "(2) $\\frac{\\mu_{0}}{4\\pi}\\frac{I}{a}[\\frac{3\\pi}{2}+2][cite: 3]",
+        "(3) $\\frac{\\mu_{0}}{2\\pi}\\frac{I}{a}[\\frac{\\pi}{2}+2][cite: 3]",
+        "(4) $\\frac{\\mu_{0}}{4\\pi}\\frac{I}{a}[\\frac{3\\pi}{2}+1][cite: 3]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 33,
+      "type": "single_choice",
+      "text": "In a long glass tube, mixture of two liquids A and B with refractive indices 1.3 and 1.4 respectively, forms a convex refractive meniscus towards A. If an object placed at 13 cm from the vertex of the meniscus in A forms an image with a magnification of '-2' then the radius of curvature of meniscus is:[cite: 3]",
+      "options": [
+        "(1) $\\frac{1}{3}$ cm[cite: 3]",
+        "(2) $\\frac{4}{3}$ cm[cite: 3]",
+        "(3) 1 cm[cite: 3]",
+        "(4) 2 cm[cite: 3]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 34,
+      "type": "single_choice",
+      "text": "A 400 g solid cube having an edge of length 10 cm floats in water. How much volume of the cube is outside the water? (Given: density of water $=1000~kg~m^{-3}$)[cite: 3]",
+      "options": [
+        "(1) $1400~cm^{3}[cite: 3]",
+        "(2) $600~cm^{3}[cite: 3]",
+        "(3) $4000~cm^{3}[cite: 3]",
+        "(4) $400~cm^{3}[cite: 3]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 35,
+      "type": "single_choice",
+      "text": "Given below are two statements. One is labelled as Assertion (A) and the other is labelled as Reason (R). Assertion (A): Knowing initial position $x_{0}$ and initial momentum $p_{0}$ is enough to determine the position and momentum at any time t for a simple harmonic motion with a given angular frequency $\\omega$. Reason (R): The amplitude and phase can be expressed in terms of $x_{0}$ and $p_{0}$. In the light of the above statements, choose the correct answer from the options given below:[cite: 3]",
+      "options": [
+        "(1) (A) is false but (R) is true[cite: 3]",
+        "(2) (A) is true but (R) is false[cite: 3]",
+        "(3) Both (A) and (R) are true but (R) is NOT the correct explanation of (A)[cite: 3]",
+        "(4) Both (A) and (R) are true and (R) is the correct explanation of (A)[cite: 3]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 36,
+      "type": "single_choice",
+      "text": "A uniform rod of mass 250 g having length 100 cm is balanced on a sharp edge at 40 cm mark. A mass of 400 g is suspended at 10 cm mark. To maintain the balance of the rod, the mass to be suspended at 90 cm mark, is:[cite: 3]",
+      "options": [
+        "(1) 190 g[cite: 3]",
+        "(2) 200 g[cite: 3]",
+        "(3) 300 g[cite: 3]",
+        "(4) 290 g[cite: 3]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 37,
+      "type": "single_choice",
+      "text": "Earth has mass 8 times and radius 2 times that of a planet. If the escape velocity from the earth is $11.2~km/s$, the escape velocity in $km/s$ from the planet will be :[cite: 3]",
+      "options": [
+        "(1) 2.8[cite: 3]",
+        "(2) 11.2[cite: 3]",
+        "(3) 5.6[cite: 3]",
+        "(4) 8.4[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 38,
+      "type": "single_choice",
+      "text": "The magnetic field of an E.M. wave is given by $\\vec{B}=(\\frac{\\sqrt{3}}{2}\\hat{i}+\\frac{1}{2}\\hat{j})30\\sin[\\omega(t-\\frac{z}{c})]$ (S.I. Units). The corresponding electric field in S.I. units is:[cite: 3]",
+      "options": [
+        "(1) $\\vec{E}=(\\frac{1}{2}\\hat{i}-\\frac{\\sqrt{3}}{2}\\hat{j})30c\\sin[\\omega(t-\\frac{z}{c})][cite: 3]",
+        "(2) $\\vec{E}=(\\frac{3}{4}\\hat{i}+\\frac{1}{4}\\hat{j})30c\\cos[\\omega(t-\\frac{z}{c})][cite: 3]",
+        "(3) $\\vec{E}=(\\frac{1}{2}\\hat{i}+\\frac{\\sqrt{3}}{2}\\hat{j})30c\\sin[\\omega(t+\\frac{z}{c})][cite: 3]",
+        "(4) $\\vec{E}=(\\frac{\\sqrt{3}}{2}\\hat{i}-\\frac{1}{2}\\hat{j})30c\\sin[\\omega(t+\\frac{z}{c})][cite: 3]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 39,
+      "type": "single_choice",
+      "text": "The kinetic energy of translation of the molecules in 50 g of $CO_{2}$ gas at $17^{\circ}C$ is:[cite: 3]",
+      "options": [
+        "(1) 4205.5 J[cite: 3]",
+        "(2) 4102.8 J[cite: 3]",
+        "(3) 3582.7 J[cite: 3]",
+        "(4) 3986.3 J[cite: 3]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 40,
+      "type": "single_choice",
+      "text": "Which of the following phenomena can not be explained by wave theory of light?[cite: 3]",
+      "options": [
+        "(1) Compton effect[cite: 3]",
+        "(2) Refraction of light[cite: 3]",
+        "(3) Reflection of light[cite: 3]",
+        "(4) Diffraction of light[cite: 3]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 41,
+      "type": "single_choice",
+      "text": "A balloon and its content having mass M is moving up with an acceleration 'a'. The mass that must be released from the content so that the balloon starts moving up with an acceleration '3a' will be (Take 'g' as acceleration due to gravity):[cite: 3]",
+      "options": [
+        "(1) $\\frac{2Ma}{3a+g}[cite: 3]",
+        "(2) $\\frac{3Ma}{2a-g}[cite: 3]",
+        "(3) $\\frac{3Ma}{2a+g}[cite: 3]",
+        "(4) $\\frac{2Ma}{3a-g}[cite: 3]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 42,
+      "type": "single_choice",
+      "text": "The ratio of vapour densities of two gases at the same temperature is $\\frac{4}{25}$, then the ratio of r.m.s. velocities will be:[cite: 3]",
+      "options": [
+        "(1) $\\frac{25}{4}[cite: 3]",
+        "(2) $\\frac{2}{5}[cite: 3]",
+        "(3) $\\frac{5}{2}[cite: 3]",
+        "(4) $\\frac{4}{25}[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 43,
+      "type": "single_choice",
+      "text": "A parallel plate capacitor of capacitance 1 $\\mu$F is charged to a potential difference of 20 V. The distance between plates is 1 $\\mu$m. The energy density between plates of capacitor is:[cite: 3]",
+      "options": [
+        "(1) $2\\times 10^{-4}~J/m^{3}[cite: 3]",
+        "(2) $1.8\\times 10^{5}~J/m^{3}[cite: 3]",
+        "(3) $1.8\\times 10^{3}~J/m^{3}[cite: 3]",
+        "(4) $2\\times 10^{2}~J/m^{3}[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 44,
+      "type": "single_choice",
+      "text": "The frequency of revolution of the electron in Bohr's orbit varies with n, the principal quantum number as:[cite: 3]",
+      "options": [
+        "(1) $\\frac{1}{n^{4}}[cite: 3]",
+        "(2) $\\frac{1}{n^{2}}[cite: 3]",
+        "(3) $\\frac{1}{n}[cite: 3]",
+        "(4) $\\frac{1}{n^{3}}[cite: 3]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 45,
+      "type": "single_choice",
+      "text": "In the circuit shown here, assuming threshold voltage of diode is negligibly small, then voltage $V_{AB}$ is correctly represented by:[cite: 3]",
+      "options": [
+        "(1) $V_{AB}$ would be zero at all times[cite: 3]",
+        "(2) Option 2[cite: 3]",
+        "(3) Option 3[cite: 3]",
+        "(4) Option 4[cite: 3]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 46,
+      "type": "integer_or_numerical",
+      "text": "A thin transparent film with refractive index 1.4, is held on circular ring of radius 1.8 cm. The fluid in the film evaporates such that transmission through the film at wavelength 560 nm goes to a minimum every 12 seconds. Assuming that the film is flat on its two sides, the rate of evaporation is $\\pi \\times 10^{-13}~m^{3}/s$.[cite: 3]",
+      "options": [],
+      "answer": "54"
+    },
+    {
+      "question_number": 47,
+      "type": "single_choice",
+      "text": "The value of current I in the electrical circuit as given below, when potential at A is equal to the potential at B, will be ___ A.[cite: 3]",
+      "options": [
+        "(1) Option 1[cite: 3]",
+        "(2) Option 2[cite: 3]",
+        "(3) Option 3[cite: 3]",
+        "(4) Option 4[cite: 3]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 48,
+      "type": "integer_or_numerical",
+      "text": "An electric dipole of dipole moment $6\\times 10^{-6}~Cm$ is placed in uniform electric field of magnitude $10^{6}~V/m$. Initially, the dipole moment is parallel to electric field. The work that needs to be done on the dipole to make its dipole moment opposite to the field, will be ___ J.[cite: 3]",
+      "options": [],
+      "answer": "12"
+    },
+    {
+      "question_number": 49,
+      "type": "integer_or_numerical",
+      "text": "A conducting bar moves on two conducting rails as shown in the figure. A constant magnetic field B exists into the page. The bar starts to move from the vertex at time $t=0$ with a constant velocity. If the induced EMF is $E\\propto t^{n}$, then value of n is ___.[cite: 3]",
+      "options": [],
+      "answer": "1"
+    },
+    {
+      "question_number": 50,
+      "type": "integer_or_numerical",
+      "text": "The volume contraction of a solid copper cube of edge length 10 cm, when subjected to a hydraulic pressure of $7\\times 10^{6}$ Pa, would be ___ $mm^{3}$. (Given bulk modulus of copper $=1.4\\times 10^{11}~N~m^{-2}$)[cite: 3]",
+      "options": [],
+      "answer": "50"
+    },
+    {
+      "question_number": 51,
+      "type": "single_choice",
+      "text": "Concentrated nitric acid is labelled as 75% by mass. The volume in mL of the solution which contains 30 g of nitric acid is ___ (Given: Density of nitric acid solution is $1.25~g/mL$)[cite: 3]",
+      "options": [
+        "(1) 40[cite: 3]",
+        "(2) 32[cite: 3]",
+        "(3) 45[cite: 3]",
+        "(4) 55[cite: 3]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 52,
+      "type": "single_choice",
+      "text": "Given below are two statements: Statement (I): and $NH_{2}$ are isomeric compounds. Statement (II): and are functional group isomers. Choose the correct answer:[cite: 3]",
+      "options": [
+        "(1) Both Statement (I) and Statement (II) are false.[cite: 3]",
+        "(2) Both Statement (I) and Statement (II) are true.[cite: 3]",
+        "(3) Statement (I) is false but Statement (II) is true.[cite: 3]",
+        "(4) Statement (I) is true but Statement (II) is false.[cite: 3]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 53,
+      "type": "single_choice",
+      "text": "Identify product [A], [B] and [C] in the following reaction sequence. $CH_{3}-C\\equiv CH\\xrightarrow[H_{2}]{Pd/C}[A]\\xrightarrow[(ii)Zn,H_{2}O]{(i)O_{3}}[B]+[C]$[cite: 3]",
+      "options": [
+        "(1) [A]: $CH_{2}=CH_{2}$, [B]: $H_{3}C-C(=O)-CH_{3}$, [C]: $HCHO$[cite: 3]",
+        "(2) [A]: $CH_{3}-CH=CH_{2}$, [B]: $CH_{3}CHO$, [C]: $CH_{3}CH_{2}OH$[cite: 3]",
+        "(3) [A]: $CH_{3}-CH=CH_{2}$, [B]: $CH_{3}CHO$, [C]: $HCHO$[cite: 3]",
+        "(4) [A]: $CH_{3}CH_{2}CH_{3}$, [B]: $CH_{3}CHO$, [C]: $HCHO$[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 54,
+      "type": "single_choice",
+      "text": "The total number of compounds from below when treated with hot $KMnO_{4}$ giving benzoic acid is :[cite: 3]",
+      "options": [
+        "(1) 6[cite: 3]",
+        "(2) 3[cite: 3]",
+        "(3) 5[cite: 3]",
+        "(4) 4[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 55,
+      "type": "single_choice",
+      "text": "Match List - I with List - II. List - I (Complex): (A) $[CoF_{6}]^{3-}$, (B) $[NiCl_{4}]^{2-}$, (C) $[Co(NH_{3})_{6}]^{3+}$, (D) $[Ni(CN)_{4}]^{2-}$. List - II (Hybridisation of central metal ion): (I) $d^{2}sp^{3}$, (II) $sp^{3}$, (III) $sp^{3}d^{2}$, (IV) $dsp^{2}$. Choose the correct answer from the options given below :[cite: 3]",
+      "options": [
+        "(1) (A)-(I), (B)-(IV), (C)-(III), (D)-(II)[cite: 3]",
+        "(2) (A)-(I), (B)-(II), (C)-(III), (D)-(IV)[cite: 3]",
+        "(3) (A)-(III), (B)-(IV), (C)-(I), (D)-(II)[cite: 3]",
+        "(4) (A)-(III), (B)-(II), (C)-(I), (D)-(IV)[cite: 3]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 56,
+      "type": "single_choice",
+      "text": "Identify correct statements: (A) Primary amines do not give diazonium salts when treated with $NaNO_{2}$ in acidic condition. (B) Aliphatic and aromatic primary amines on heating with $CHCl_{3}$ and ethanolic KOH form carbylamines. (C) Secondary and tertiary amines also give carbylamine test. (D) Benzenesulfonyl chloride is known as Hinsberg's reagent. (E) Tertiary amines reacts with benzenesulfonyl chloride very easily. Choose the correct answer from the options given below:[cite: 3]",
+      "options": [
+        "(1) (A) and (B) only[cite: 3]",
+        "(2) (D) and (E) only[cite: 3]",
+        "(3) (B) and (D) only[cite: 3]",
+        "(4) (B) and (C) only[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 57,
+      "type": "single_choice",
+      "text": "For bacterial growth in a cell culture, growth law is very similar to the law of radioactive decay. Which of the following graphs is most suitable to represent bacterial colony growth? Where N - Number of Bacteria at any time, $N_{0}$ - Initial number of Bacteria.[cite: 3]",
+      "options": [
+        "(1) Option 1[cite: 3]",
+        "(2) Option 2[cite: 3]",
+        "(3) Option 3[cite: 3]",
+        "(4) Option 4[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 58,
+      "type": "single_choice",
+      "text": "The amphoteric oxide among $V_{2}O_{3}$, $V_{2}O_{4}$ and $V_{2}O_{5}$, upon reaction with alkali leads to formation of an oxide anion. The oxidation state of V in the oxide anion is :[cite: 3]",
+      "options": [
+        "(1) +3[cite: 3]",
+        "(2) +4[cite: 3]",
+        "(3) +7[cite: 3]",
+        "(4) +5[cite: 3]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 59,
+      "type": "single_choice",
+      "text": "Arrange the following in increasing order of solubility product: $Ca(OH)_{2}$, AgBr, PbS, HgS[cite: 3]",
+      "options": [
+        "(1) $HgS<AgBr<PbS<Ca(OH)_{2}[cite: 3]",
+        "(2) $Ca(OH)_{2}<AgBr<HgS<PbS[cite: 3]",
+        "(3) $PbS<HgS<Ca(OH)_{2}<AgBr[cite: 3]",
+        "(4) $HgS<PbS<AgBr<Ca(OH)_{2}[cite: 3]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 60,
+      "type": "single_choice",
+      "text": "The purification method based on the following physical transformation is: Solid (X) $\\xrightarrow{\\text{Heat}}$ Vapour $\\xrightarrow{\\text{Cool}}$ Solid (X)[cite: 3]",
+      "options": [
+        "(1) Distillation[cite: 3]",
+        "(2) Extractions[cite: 3]",
+        "(3) Sublimation[cite: 3]",
+        "(4) Crystallization[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 61,
+      "type": "single_choice",
+      "text": "Which of the following is/are not correct with respect to energy of atomic orbitals of hydrogen atom? (A) $1s<2p=3d<4s$ (B) $1s<2s=2p<3s=3p$ (C) $1s<2s<2p<3s<3p$ (D) $1s<2s<4s<3d$. Choose the correct answer from the options given below:[cite: 3]",
+      "options": [
+        "(1) (A) and (C) only[cite: 3]",
+        "(2) (B) and (D) only[cite: 3]",
+        "(3) (C) and (D) only[cite: 3]",
+        "(4) (A) and (B) only[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 62,
+      "type": "single_choice",
+      "text": "Consider an elementary reaction $A(g)+B(g)\\rightarrow C(g)+D(g)$. If the volume of reaction mixture is suddenly reduced to $\\frac{1}{3}$ of its initial volume, the reaction rate will become 'x' times of the original reaction rate. The value of x is:[cite: 3]",
+      "options": [
+        "(1) 3[cite: 3]",
+        "(2) 1/9[cite: 3]",
+        "(3) 9[cite: 3]",
+        "(4) 1/3[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 63,
+      "type": "single_choice",
+      "text": "The product B formed in the following reaction sequence is : 1-(4-methylphenyl)prop-1-ene $\\xrightarrow{HCl} (A) \\xrightarrow{AgCN} (B)$[cite: 3]",
+      "options": [
+        "(1) Option 1[cite: 3]",
+        "(2) Option 2[cite: 3]",
+        "(3) Option 3[cite: 3]",
+        "(4) Option 4[cite: 3]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 64,
+      "type": "single_choice",
+      "text": "Assume a living cell with $0.9\\%(\\omega/\\omega)$ of glucose solution (aqueous). This cell is immersed in another solution having equal mole fraction of glucose and water. (Consider the data upto first decimal place only) The cell will:[cite: 3]",
+      "options": [
+        "(1) show no change in volume since solution is $0.9\\%(\\omega/\\omega)$[cite: 3]",
+        "(2) shrink since solution is $0.5\\%(\\omega/\\omega)[cite: 3]",
+        "(3) swell up since solution is $1\\%(\\omega/\\omega)[cite: 3]",
+        "(4) None of these[cite: 3]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 65,
+      "type": "single_choice",
+      "text": "Given below are two statements: Statement (I): According to the Law of Octaves, the elements were arranged in the increasing order of their atomic number. Statement (II): Meyer observed a periodically repeated pattern upon plotting physical properties of certain elements against their respective atomic numbers. In the light of the above statements, choose the correct answer from the options given below :[cite: 3]",
+      "options": [
+        "(1) Both Statement (I) and Statement (II) are false.[cite: 3]",
+        "(2) Both Statement (I) and Statement (II) are true.[cite: 3]",
+        "(3) Statement (I) is false but Statement (II) is true.[cite: 3]",
+        "(4) Statement (I) is true but Statement (II) is false.[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 66,
+      "type": "single_choice",
+      "text": "Match List - I with List - II. List - I (Saccharides): (A) Sucrose, (B) Maltose, (C) Lactose, (D) Amylopectin. List - II (Glycosidic-linkages found): (I) $\\alpha$ 1-4, (II) $\\alpha$ 1-4 and $\\alpha$ 1-6, (III) $\\alpha$ 1-\\beta 2, (IV) $\\beta$ 1-4. Choose the correct answer from the options given below :[cite: 3]",
+      "options": [
+        "(1) (A)-(IV), (B)-(II), (C)-(I), (D)-(III)[cite: 3]",
+        "(2) (A)-(I), (B)-(II), (C)-(III), (D)-(IV)[cite: 3]",
+        "(3) (A)-(III), (B)-(I), (C)-(IV), (D)-(II)[cite: 3]",
+        "(4) (A)-(II), (B)-(IV), (C)-(III), (D)-(I)[cite: 3]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 67,
+      "type": "single_choice",
+      "text": "An ideal gas undergoes a cyclic transformation starting from the point A and coming back to the same point by tracing the path $A\\rightarrow B\\rightarrow C\\rightarrow D\\rightarrow A$ as shown in the three cases above. Choose the correct option regarding $\\Delta U$:[cite: 3]",
+      "options": [
+        "(1) $\\Delta U(Case-I)=\\Delta U(Case-II)=\\Delta U(Case-III)[cite: 3]",
+        "(2) $\\Delta U(Case-I)>\\Delta U(Case-III)>\\Delta U(Case-II)[cite: 3]",
+        "(3) $\\Delta U(Case-III)>\\Delta U(Case-II)>\\Delta U(Case-I)[cite: 3]",
+        "(4) $\\Delta U(Case-I)>\\Delta U(Case-II)>\\Delta U(Case-III)[cite: 3]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 68,
+      "type": "single_choice",
+      "text": "Identify the inorganic sulphides that are yellow in colour: (A) $(NH_{4})_{2}S$, (B) PbS, (C) CuS, (D) $As_{2}S_{3}$, (E) $As_{2}S_{5}$. Choose the correct answer from the options given below:[cite: 3]",
+      "options": [
+        "(1) (A), (D) and (E) only[cite: 3]",
+        "(2) (D) and (E) only[cite: 3]",
+        "(3) (A) and (B) only[cite: 3]",
+        "(4) (A) and (C) only[cite: 3]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 69,
+      "type": "single_choice",
+      "text": "The major product of the following reaction is : 2,4-dibromo-6-phenylheptane $\\xrightarrow[\\Delta]{\\text{KOH/EtOH (excess)}} \\text{Major product}$[cite: 3]",
+      "options": [
+        "(1) 2-Phenylhepta-2,5-diene[cite: 3]",
+        "(2) 6-Phenylhepta-2,4-diene[cite: 3]",
+        "(3) 6-Phenylhepta-3,5-diene[cite: 3]",
+        "(4) 2-Phenylhepta-2,4-diene[cite: 3]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 70,
+      "type": "single_choice",
+      "text": "Identify correct conversion during acidic hydrolysis from the following: (A) starch gives galactose. (B) cane sugar gives equal amount of glucose and fructose. (C) milk sugar gives glucose and galactose. (D) amylopectin gives glucose and fructose. (E) amylose gives only glucose. Choose the correct answer from the options given below:[cite: 3]",
+      "options": [
+        "(1) (A), (B) and (C) only[cite: 3]",
+        "(2) (B), (C) and (E) only[cite: 3]",
+        "(3) (C), (D) and (E) only[cite: 3]",
+        "(4) (B), (C) and (D) only[cite: 3]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 71,
+      "type": "integer_or_numerical",
+      "text": "Electrolysis of 600 mL aqueous solution of NaCl for 5 min changes the pH of the solution to 12. The current in Amperes used for the given electrolysis is ___ (Nearest integer).[cite: 3]",
+      "options": [],
+      "answer": "2"
+    },
+    {
+      "question_number": 72,
+      "type": "integer_or_numerical",
+      "text": "A group 15 element forms $d\\pi-d\\pi$ bond with transition metals. It also forms hydride, which is a strongest base among the hydrides of other group members that form $d\\pi-d\\pi$ bond. The atomic number of the element is ___.[cite: 3]",
+      "options": [],
+      "answer": "15"
+    },
+    {
+      "question_number": 73,
+      "type": "integer_or_numerical",
+      "text": "Total number of molecules/species from following which will be paramagnetic is: $O_{2}$, $O_{2}^{+}$, $O_{2}^{-}$, NO, $NO_{2}$, CO, $K_{2}[NiCl_{4}]$, $[Co(NH_{3})_{6}]Cl_{3}$, $K_{2}[Ni(CN)_{4}]$[cite: 3]",
+      "options": [],
+      "answer": "6"
+    },
+    {
+      "question_number": 74,
+      "type": "integer_or_numerical",
+      "text": "Consider the following data: Heat of formation of $CO_{2}(g)=-393.5~kJ~mol^{-1}$, Heat of formation of $H_{2}O(l)=-286.0~kJ~mol^{-1}$, Heat of combustion of benzene $=-3267.0~kJ~mol^{-1}$. The heat of formation of benzene is ___ $kJ~mol^{-1}$. (Nearest integer)[cite: 3]",
+      "options": [],
+      "answer": "48"
+    },
+    {
+      "question_number": 75,
+      "type": "integer_or_numerical",
+      "text": "The spin only magnetic moment (\\mu) value (B.M.) of the compound with strongest oxidising power among $Mn_{2}O_{3}$, TiO and VO is ___ B.M. (Nearest integer).[cite: 3]",
+      "options": [],
+      "answer": "5"
+    }
+  ]
+}

@@ -124,8 +124,57 @@ export const getGenerationJob = (jobId) => {
     return null;
 };
 
+/**
+ * Nodemon / process restarts kill in-flight generation. Jobs left on disk as
+ * pending/running can never complete — mark them failed so the UI stops polling
+ * forever and shows a clear error instead of a Network Error.
+ */
+export const failOrphanedGenerationJobs = (
+    reason = "Server restarted during generation. Tap Retry — questions already shown were kept."
+) => {
+    let failed = 0;
+    try {
+        ensureJobDir();
+        for (const file of fs.readdirSync(JOB_DIR)) {
+            if (!file.endsWith(".json")) continue;
+            const filePath = path.join(JOB_DIR, file);
+            let job;
+            try {
+                job = JSON.parse(fs.readFileSync(filePath, "utf8"));
+            } catch {
+                continue;
+            }
+            const status = String(job?.status || "").toLowerCase();
+            if (status !== "pending" && status !== "running" && status !== "queued") {
+                continue;
+            }
+            const updated = {
+                ...job,
+                status: "failed",
+                phase: "error",
+                error: reason,
+                updatedAt: Date.now(),
+            };
+            if (job?.jobId) {
+                jobs.set(job.jobId, updated);
+                writeJobToDisk(updated);
+                failed += 1;
+            }
+        }
+    } catch {
+        // non-fatal
+    }
+    if (failed > 0) {
+        console.warn(
+            `[ai-qb] marked ${failed} orphaned generation job(s) as failed after restart`
+        );
+    }
+    return failed;
+};
+
 export default {
     createGenerationJob,
     updateGenerationJob,
     getGenerationJob,
+    failOrphanedGenerationJobs,
 };

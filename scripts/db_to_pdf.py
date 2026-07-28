@@ -28,6 +28,13 @@ import sys
 from pathlib import Path
 from xml.sax.saxutils import escape
 
+# Windows consoles default stdout/stderr to cp1252, which can't encode the
+# Unicode arrows/bullets this script prints (e.g. "Building PDF → ..."),
+# crashing before the PDF is ever built. UTF-8 handles all of them.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+
 # ---- MongoDB (pymongo) ----
 try:
     from pymongo import MongoClient

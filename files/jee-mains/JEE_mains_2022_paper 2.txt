@@ -1,0 +1,946 @@
+```json
+{
+  "title": "JEE Main 2022 (25 Jul Shift 2) Previous Year Paper with Answer Keys",
+  "source": "MathonGo",
+  "exam_info": {
+    "exam": "JEE Main",
+    "year": 2022,
+    "session": "July",
+    "date": "2022-07-25",
+    "shift": 2
+  },
+  "questions": [
+    {
+      "question_number": 1,
+      "type": "single_choice",
+      "text": "The maximum error in the measurement of resistance, current and time for which current flows in an electrical circuit are 1%, 2% and 3% respectively. The maximum percentage error in the detection of the dissipated heat will be:[cite: 8]",
+      "options": [
+        "(1) 2[cite: 8]",
+        "(2) 4[cite: 8]",
+        "(3) 6[cite: 8]",
+        "(4) 8[cite: 8]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 2,
+      "type": "single_choice",
+      "text": "A ball is projected from the ground with a speed $15~m~s^{-1}$ at an angle $\\theta$ with horizontal so that its range and maximum height are equal, then $\\tan \\theta$ will be equal to:[cite: 8]",
+      "options": [
+        "(1) $\\frac{1}{4}[cite: 8]",
+        "(2) $\\frac{1}{2}[cite: 8]",
+        "(3) 2[cite: 8]",
+        "(4) 4[cite: 8]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 3,
+      "type": "single_choice",
+      "text": "For a free body diagram shown in the figure, the four forces are applied in the 'x' and 'y' directions (6N left, 5N right, 7N up, 8N down). What additional force must be applied and at what angle with positive z-axis so that the net acceleration of body is zero?[cite: 8]",
+      "options": [
+        "(1) $\\sqrt{2}$ N, $45^{\circ}[cite: 8]",
+        "(2) $\\sqrt{2}$ N, $135^{\circ}[cite: 8]",
+        "(3) $\\frac{2}{\\sqrt{3}}$ N, $30^{\circ}[cite: 8]",
+        "(4) 2 N, $45^{\circ}[cite: 8]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 4,
+      "type": "single_choice",
+      "text": "A bag of sand of mass 9.8 kg is suspended by a rope. A bullet of 200 g travelling with speed $10~m~s^{-1}$ gets embedded in it, then loss of kinetic energy will be:[cite: 8]",
+      "options": [
+        "(1) 4.9 J[cite: 8]",
+        "(2) 9.8 J[cite: 8]",
+        "(3) 14.7 J[cite: 8]",
+        "(4) 19.6 J[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 5,
+      "type": "single_choice",
+      "text": "Two billiard balls of mass 0.05 kg each moving in opposite directions with $10~m~s^{-1}$ collide and rebound with the same speed. If the time duration of contact is $t=0.005$ s, then what is the force exerted on the ball due to each other?[cite: 8]",
+      "options": [
+        "(1) 100 N[cite: 8]",
+        "(2) 200 N[cite: 8]",
+        "(3) 300 N[cite: 8]",
+        "(4) 400 N[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 6,
+      "type": "single_choice",
+      "text": "The length of a seconds pendulum at a height $h=2R$ from earth surface will be: (Given: $R=$ Radius of earth and acceleration due to gravity at the surface of earth $g=\pi^{2}~m~s^{-2}$)[cite: 8]",
+      "options": [
+        "(1) $\\frac{2}{9}$ m[cite: 8]",
+        "(2) $\\frac{4}{9}$ m[cite: 8]",
+        "(3) $\\frac{8}{9}$ m[cite: 8]",
+        "(4) $\\frac{1}{9}$ m[cite: 8]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 7,
+      "type": "single_choice",
+      "text": "An object is taken to a height above the surface of earth at a distance $\\frac{5}{4}R$ from the centre of the earth. Where radius of earth, $R=6400$ km. The percentage decrease in the weight of the object will be:[cite: 8]",
+      "options": [
+        "(1) 36%[cite: 8]",
+        "(2) 50%[cite: 8]",
+        "(3) 64%[cite: 8]",
+        "(4) 25%[cite: 8]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 8,
+      "type": "single_choice",
+      "text": "A drop of liquid of density $\\rho$ is floating half immersed in a liquid of density $\\sigma$ and surface tension $7.5\\times 10^{-4}~N~cm^{-1}$. The radius of drop in cm will be : (Take: $g=10~m~s^{-2}$)[cite: 8]",
+      "options": [
+        "(1) $\\frac{15}{\\sqrt{2\\rho-\\sigma}}[cite: 8]",
+        "(2) $\\frac{15}{\\sqrt{\\rho-\\sigma}}[cite: 8]",
+        "(3) $\\frac{3}{2\\sqrt{\\rho-\\sigma}}[cite: 8]",
+        "(4) $\\frac{3}{20\\sqrt{2\\rho-\\sigma}}[cite: 8]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 9,
+      "type": "single_choice",
+      "text": "Let $\\eta_{1}$ is the efficiency of an engine at $T_{1}=447^{\circ}C$ and $T_{2}=147^{\circ}C$ while $\\eta_{2}$ is the efficiency at $T_{1}=947^{\circ}C$ and $T_{2}=47^{\circ}C$. The ratio $\\frac{\\eta_{1}}{\\eta_{2}}$ will be:[cite: 8]",
+      "options": [
+        "(1) 0.41[cite: 8]",
+        "(2) 0.56[cite: 8]",
+        "(3) 0.73[cite: 8]",
+        "(4) 0.70[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 10,
+      "type": "single_choice",
+      "text": "Sound travels in a mixture of two moles of helium and n moles of hydrogen. If rms speed of gas molecules in the mixture is $\\sqrt{2}$ times the speed of sound, then the value of n will be:[cite: 8]",
+      "options": [
+        "(1) 1[cite: 8]",
+        "(2) 2[cite: 8]",
+        "(3) 3[cite: 8]",
+        "(4) 4[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 11,
+      "type": "single_choice",
+      "text": "Capacitance of an isolated conducting sphere of radius $R_{1}$ becomes n times when it is enclosed by a concentric conducting sphere of radius $R_{2}$ connected to earth. The ratio of their radii $(\\frac{R_{2}}{R_{1}})$ is:[cite: 8]",
+      "options": [
+        "(1) $\\frac{n}{n-1}[cite: 8]",
+        "(2) $\\frac{2n}{2n+1}[cite: 8]",
+        "(3) $\\frac{n+1}{n}[cite: 8]",
+        "(4) $\\frac{2n+1}{n}[cite: 8]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 12,
+      "type": "single_choice",
+      "text": "A current of 15 mA flows in the circuit as shown in figure. The value of potential difference between the points A and B will be:[cite: 8]",
+      "options": [
+        "(1) 50 V[cite: 8]",
+        "(2) 75 V[cite: 8]",
+        "(3) 150 V[cite: 8]",
+        "(4) 275 V[cite: 8]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 13,
+      "type": "single_choice",
+      "text": "An electron with energy 0.1 keV moves at right angle to the earth's magnetic field of $1\\times 10^{-4}~Wb~m^{-2}$. The frequency of revolution of the electron will be: (Take mass of electron $=9.0\\times 10^{-31}$ kg)[cite: 8]",
+      "options": [
+        "(1) $1.6\\times 10^{5}$ Hz[cite: 8]",
+        "(2) $3.6\\times 10^{5}$ Hz[cite: 8]",
+        "(3) $2.8\\times 10^{6}$ Hz[cite: 8]",
+        "(4) $1.8\\times 10^{6}$ Hz[cite: 8]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 14,
+      "type": "single_choice",
+      "text": "The electric current in a circular coil of 2 turns produces a magnetic induction $B_{1}$ at its centre. The coil is unwound and is rewound into a circular coil of 5 turns and the same current produces a magnetic induction $B_{2}$ at its centre. The ratio of $\\frac{B_{2}}{B_{1}}$ is:[cite: 8]",
+      "options": [
+        "(1) $\\frac{5}{2}[cite: 8]",
+        "(2) $\\frac{25}{4}[cite: 8]",
+        "(3) $\\frac{5}{4}[cite: 8]",
+        "(4) $\\frac{25}{2}[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 15,
+      "type": "single_choice",
+      "text": "When you walk through a metal detector carrying a metal object in your pocket, it raises an alarm. This phenomenon works on:[cite: 8]",
+      "options": [
+        "(1) Electromagnetic induction[cite: 8]",
+        "(2) Resonance in ac circuits[cite: 8]",
+        "(3) Mutual induction in ac circuits[cite: 8]",
+        "(4) interference of electromagnetic waves[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 16,
+      "type": "single_choice",
+      "text": "Light wave travelling in air along x-direction is given by $E_{y}=540~\\sin \\pi \\times 10^{4}(x-ct)~V~m^{-1}$. Then, the peak value of magnetic field of wave will be (Given $c=3\\times 10^{8}~m~s^{-1}$)[cite: 8]",
+      "options": [
+        "(1) $1.8\\times 10^{-7}$ T[cite: 8]",
+        "(2) $5.4\\times 10^{-7}$ T[cite: 8]",
+        "(3) $5.4\\times 10^{-8}$ T[cite: 8]",
+        "(4) $1.8\\times 10^{-8}$ T[cite: 8]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 17,
+      "type": "single_choice",
+      "text": "For an object placed at a distance 2.4 m from a lens, a sharp focused image is observed on a screen placed at a distance 12 cm from the lens. A glass plate of refractive index 1.5 and thickness 1 cm is introduced between lens and screen such that the glass plate plane faces parallel to the screen. By what distance should the object be shifted so that a sharp focused image is observed again on the screen?[cite: 8]",
+      "options": [
+        "(1) 0.8 m[cite: 8]",
+        "(2) 3.2 m[cite: 8]",
+        "(3) 1.2 m[cite: 8]",
+        "(4) 5.6 m[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 18,
+      "type": "single_choice",
+      "text": "The ratio of wavelengths of proton and deuteron accelerated by potential $V_{p}$ and $V_{d}$ is $1:\\sqrt{2}$. Then, the ratio of $V_{p}$ to $V_{d}$ will be:[cite: 8]",
+      "options": [
+        "(1) 1:1[cite: 8]",
+        "(2) $\\sqrt{2}$:1[cite: 8]",
+        "(3) 2:1[cite: 8]",
+        "(4) 4:1[cite: 8]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 19,
+      "type": "single_choice",
+      "text": "Hydrogen atom from excited state comes to the ground by emitting a photon of wavelength $\\lambda$. The value of principal quantum number n of the excited state will be: (R: Rydberg constant)[cite: 8]",
+      "options": [
+        "(1) $\\sqrt{\\frac{\\lambda R}{\\lambda-1}}[cite: 8]",
+        "(2) $\\sqrt{\\frac{\\lambda R}{\\lambda R-1}}[cite: 8]",
+        "(3) $\\sqrt{\\frac{\\lambda}{\\lambda R-1}}[cite: 8]",
+        "(4) $\\sqrt{\\frac{\\lambda R^{2}}{\\lambda R-1}}[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 20,
+      "type": "single_choice",
+      "text": "In AM modulation, a signal is modulated on a carrier wave such that maximum and minimum amplitude are found to be 6 V and 2 V respectively. The modulation index is:[cite: 8]",
+      "options": [
+        "(1) 100%[cite: 8]",
+        "(2) 80%[cite: 8]",
+        "(3) 60%[cite: 8]",
+        "(4) 50%[cite: 8]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 21,
+      "type": "integer_or_numerical",
+      "text": "A particle is moving in a straight line such that its velocity is increasing at $5~m~s^{-1}$ per meter. The acceleration of the particle is ___ $m~s^{-2}$ at a point where its velocity is $20~m~s^{-1}$.[cite: 8]",
+      "options": [],
+      "answer": "100"
+    },
+    {
+      "question_number": 22,
+      "type": "integer_or_numerical",
+      "text": "Three identical spheres each of mass M are placed at the corners of a right angled triangle with mutually perpendicular sides equal to 3 m each. Taking point of intersection of mutually perpendicular sides as origin, the magnitude of position vector of centre of mass of the system will be $\\sqrt{x}$ m. The value of x is ___.[cite: 8]",
+      "options": [],
+      "answer": "2"
+    },
+    {
+      "question_number": 23,
+      "type": "integer_or_numerical",
+      "text": "A block of ice of mass 120 g at temperature $0^{\circ}C$ is put in 300 g of water at $25^{\circ}C$. The x g of ice melts as the temperature of the water reaches $0^{\circ}C$. The value of x is ___ [Use: Specific heat capacity of water $=4200~J~kg^{-1}~K^{-1}$, Latent heat of ice $=3.5\\times 10^{5}~J~kg^{-1}$].[cite: 8]",
+      "options": [],
+      "answer": "90"
+    },
+    {
+      "question_number": 24,
+      "type": "integer_or_numerical",
+      "text": "Two waves executing simple harmonic motion travelling in the same direction with same amplitude and frequency are superimposed. The resultant amplitude is equal to the $\\sqrt{3}$ times of amplitude of individual motions. The phase difference between the two motions is ___ (degree).[cite: 8]",
+      "options": [],
+      "answer": "60"
+    },
+    {
+      "question_number": 25,
+      "type": "integer_or_numerical",
+      "text": "Two parallel plate capacitors of capacity C and 3C are connected in parallel combination and charged to a potential difference 18 V. The battery is then disconnected and the space between the plates of the capacitor of capacity C is completely filled with a material of dielectric constant 9. The final potential difference across the combination of capacitors will be ___ V.[cite: 8]",
+      "options": [],
+      "answer": "6"
+    },
+    {
+      "question_number": 26,
+      "type": "integer_or_numerical",
+      "text": "In a potentiometer arrangement, a cell of emf 1.20 V gives a balance point at 36 cm length of wire. This cell is now replaced by another cell of emf 1.80 V. The difference in balancing length of potentiometer wire in above conditions will be ___ cm.[cite: 8]",
+      "options": [],
+      "answer": "18"
+    },
+    {
+      "question_number": 27,
+      "type": "integer_or_numerical",
+      "text": "Magnetic flux (in weber) in a closed circuit of resistance 20 $\\Omega$ varies with time t(s) as $\\phi=8t^{2}-9t+5$. The magnitude of the induced current at $t=0.25$ s will be ___ mA.[cite: 8]",
+      "options": [],
+      "answer": "250"
+    },
+    {
+      "question_number": 28,
+      "type": "integer_or_numerical",
+      "text": "A convex lens of focal length 20 cm is placed in front of convex mirror with principal axis coinciding each other. The distance between the lens and mirror is 10 cm. A point object is placed on principal axis at a distance of 60 cm from the convex lens. The image formed by combination coincides the object itself. The focal length of the convex mirror is ___ cm.[cite: 8]",
+      "options": [],
+      "answer": "10"
+    },
+    {
+      "question_number": 29,
+      "type": "integer_or_numerical",
+      "text": "$\\frac{x}{x+4}$ is the ratio of energies of photons produced due to transition of an electron of hydrogen atom from its (i) third permitted energy level to the second level and (ii) the highest permitted energy level to the second permitted level. The value of x will be ___.[cite: 8]",
+      "options": [],
+      "answer": "5"
+    },
+    {
+      "question_number": 30,
+      "type": "integer_or_numerical",
+      "text": "Two ideal diodes are connected in the network as shown in figure. The equivalent resistance between A and B is ___ $\\Omega$.[cite: 8]",
+      "options": [],
+      "answer": "25"
+    },
+    {
+      "question_number": 31,
+      "type": "single_choice",
+      "text": "The first ionization enthalpies of Be, B, N and O follow the order:[cite: 8]",
+      "options": [
+        "(1) $B<Be<O<N[cite: 8]",
+        "(2) $O<N<B<Be[cite: 8]",
+        "(3) $Be<B<N<O[cite: 8]",
+        "(4) $B<Be<N<O[cite: 8]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 32,
+      "type": "single_choice",
+      "text": "Match List I with List II: List I ($XeO_{3}, XeF_{2}, XeOF_{4}, XeF_{6}$), List II ($sp^{3}d$ linear, $sp^{3}$ pyramidal, $sp^{3}d^{3}$ distorted octahedral, $sp^{3}d^{2}$ square pyramidal)[cite: 8]",
+      "options": [
+        "(1) $A-II, B-IV, C-II, D-I[cite: 8]",
+        "(2) $A-IV, B-II, C-III, D-I[cite: 8]",
+        "(3) $A-II, B-I, C-IV, D-III[cite: 8]",
+        "(4) $A-IV, B-II, C-I, D-III[cite: 8]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 33,
+      "type": "single_choice",
+      "text": "$Ka_{1}$, $Ka_{2}$ and $Ka_{3}$ are the respective ionization constants for the following reactions (a) $H_{2}C_{2}O_{4}\\rightleftharpoons H^{+}+HC_{2}O_{4}^{-}$, (b) $HC_{2}O_{4}^{-}\\rightleftharpoons H^{+}+C_{2}O_{4}^{2-}$, (c) $H_{2}C_{2}O_{4}\\rightleftharpoons 2H^{+}+C_{2}O_{4}^{2-}$. The relationship between $K_{a_{1}}$, $K_{a_{2}}$ and $K_{a_{3}}$ is given as:[cite: 8]",
+      "options": [
+        "(1) $K_{a3}=K_{a1}+K_{a2}[cite: 8]",
+        "(2) $K_{a3}=\\frac{K_{a1}}{K_{a2}}[cite: 8]",
+        "(3) $K_{a3}=K_{a1}-K_{a2}[cite: 8]",
+        "(4) $K_{a3}=K_{a1}\\times K_{a2}[cite: 8]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 34,
+      "type": "single_choice",
+      "text": "In base vs. Acid titration, at the end point methyl orange is present as:[cite: 8]",
+      "options": [
+        "(1) quinonoid form[cite: 8]",
+        "(2) heterocyclic form[cite: 8]",
+        "(3) phenolic form[cite: 8]",
+        "(4) benzenoid form[cite: 8]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 35,
+      "type": "single_choice",
+      "text": "High purity $(>99.95\\%)$ dihydrogen is obtained by:[cite: 8]",
+      "options": [
+        "(1) reaction of zinc with aqueous alkali.[cite: 8]",
+        "(2) electrolysis of warm aqueous barium hydroxide solution between nickel electrodes.[cite: 8]",
+        "(3) electrolysis of acidified water using platinum electrodes.[cite: 8]",
+        "(4) reaction of zinc with dilute acid.[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 36,
+      "type": "single_choice",
+      "text": "The correct order of density is:[cite: 8]",
+      "options": [
+        "(1) $Be>Mg>Ca>Sr[cite: 8]",
+        "(2) $Sr>Ca>Mg>Be[cite: 8]",
+        "(3) $Sr>Be>Mg>Ca[cite: 8]",
+        "(4) $Be>Sr>Mg>Ca[cite: 8]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 37,
+      "type": "single_choice",
+      "text": "Arrange the following in decreasing acidic strength: (A) m-nitrophenol, (B) m-methoxyphenol, (C) phenol, (D) m-cresol (or similar derivatives shown in figures)[cite: 8]",
+      "options": [
+        "(1) $A>B>C>D[cite: 8]",
+        "(2) $B>A>C>D[cite: 8]",
+        "(3) $D>C>A>B[cite: 8]",
+        "(4) $D>C>B>A[cite: 8]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 38,
+      "type": "single_choice",
+      "text": "Major product of the following reaction is: 2-bromobutane or ester with 2HBr (or similar bromination reaction sequence)[cite: 8]",
+      "options": [
+        "(1) Option 1[cite: 8]",
+        "(2) Option 2[cite: 8]",
+        "(3) Option 3[cite: 8]",
+        "(4) Option 4[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 39,
+      "type": "single_choice",
+      "text": "Match List-I with List-II: List-I (A) Sulphate, (B) Fluoride, (C) Nicotine, (D) Sodium arsinite. List-II (I) Pesticide, (II) Bending of bones, (III) Laxative effect, (IV) Herbicide.[cite: 8]",
+      "options": [
+        "(1) $A-II, B-III, C-IV, D-I[cite: 8]",
+        "(2) $A-III, B-II, C-I, D-IV[cite: 8]",
+        "(3) $A-IV, B-II, C-III, D-I[cite: 8]",
+        "(4) $A-III, B-II, C-IV, D-I[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 40,
+      "type": "single_choice",
+      "text": "Two solutions A and B are prepared by dissolving 1 g of non-volatile solutes X and Y respectively in 1 kg of water. The ratio of depression in freezing points for A and B is found to be 1:4. The ratio of molar masses of X and Y is:[cite: 8]",
+      "options": [
+        "(1) 1:4[cite: 8]",
+        "(2) 1:0.25[cite: 8]",
+        "(3) 1:0.20[cite: 8]",
+        "(4) 1:5[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 41,
+      "type": "single_choice",
+      "text": "The molar conductivity of a conductivity cell filled with 10 moles of 20 mL NaCl solution is $\\Lambda_{m1}$ and that of 20 moles another identical cell having 80 mL NaCl solution is $\\Lambda_{m2}$. The conductivities exhibited by these two cells are same. The relationship between $\\Lambda_{m2}$ and $\\Lambda_{m1}$ is:[cite: 8]",
+      "options": [
+        "(1) $\\Lambda_{m2}=2\\Lambda_{m1}[cite: 8]",
+        "(2) $\\Lambda_{m2}=\\Lambda_{m1}/2[cite: 8]",
+        "(3) $\\Lambda_{m2}=\\Lambda_{m1}[cite: 8]",
+        "(4) $\\Lambda_{m2}=4\\Lambda_{m1}[cite: 8]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 42,
+      "type": "single_choice",
+      "text": "For micelle formation, which of the following statements are correct? (A) Micelle formation is an exothermic process. (B) Micelle formation is an endothermic process. (C) The entropy change is positive. (D) The entropy change is negative.[cite: 8]",
+      "options": [
+        "(1) A & D only[cite: 8]",
+        "(2) A & C only[cite: 8]",
+        "(3) B & C only[cite: 8]",
+        "(4) B & D only[cite: 8]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 43,
+      "type": "single_choice",
+      "text": "Given below two statements. Statement I: Pig iron is obtained by heating cast iron with scrap iron. Statement II: Pig iron has a relatively lower carbon content than that of cast iron. In the light of the above statements, choose the correct answer from the options given below:[cite: 8]",
+      "options": [
+        "(1) Both Statement I and Statement II are correct.[cite: 8]",
+        "(2) Both Statement I and Statement II are not correct.[cite: 8]",
+        "(3) Statement I is correct but Statement II is not correct[cite: 8]",
+        "(4) Statement I is not correct but Statement II is correct.[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 44,
+      "type": "single_choice",
+      "text": "The total number of acidic oxides from the following list is: $NO, N_{2}O, B_{2}O_{3}, N_{2}O_{5}, CO, SO_{3}, P_{4}O_{10}$[cite: 8]",
+      "options": [
+        "(1) 5[cite: 8]",
+        "(2) 4[cite: 8]",
+        "(3) 3[cite: 8]",
+        "(4) 6[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 45,
+      "type": "single_choice",
+      "text": "The correct order of energy of absorption for the following metal complexes is A: $[Ni(en)_{3}]^{2+}$, B: $[Ni(NH_{3})_{6}]^{2+}$, C: $[Ni(H_{2}O)_{6}]^{2+}$:[cite: 8]",
+      "options": [
+        "(1) $C<B<A[cite: 8]",
+        "(2) $B<C<A[cite: 8]",
+        "(3) $C<A<B[cite: 8]",
+        "(4) $A<C<B[cite: 8]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 46,
+      "type": "single_choice",
+      "text": "What is the major product of the following reaction? (Acid-catalyzed hydration or rearrangement of a given alkene/epoxide/diol structure)[cite: 8]",
+      "options": [
+        "(1) Option 1[cite: 8]",
+        "(2) Option 2[cite: 8]",
+        "(3) Option 3[cite: 8]",
+        "(4) Option 4[cite: 8]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 47,
+      "type": "single_choice",
+      "text": "$CH_{3}-CH_{2}-CN \\xrightarrow[Ether]{CH_{3}MgBr} A \\xrightarrow{H_{3}O^{+}} B \\xrightarrow[HCl]{Zn-Hg} C$. The correct structure of C is:[cite: 8]",
+      "options": [
+        "(1) $CH_{3}-CH_{2}-CH_{2}-CH_{3}[cite: 8]",
+        "(2) $CH_{3}-CH_{2}-C(OH)(CH_{3})_{2}[cite: 8]",
+        "(3) $CH_{3}-CH_{2}-CH(OH)-CH_{3}[cite: 8]",
+        "(4) $CH_{3}-CH_{2}-CH=CH_{2}[cite: 8]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 48,
+      "type": "single_choice",
+      "text": "Match List-I with List-II: List-I (A) Nylon 6, 6, (B) Low density polythene, (C) High density polythene, (D) Teflon. List-II (I) Toys, (II) Non-stick utensils, (III) Bristles of brushes, (IV) Buckets.[cite: 8]",
+      "options": [
+        "(1) $A-III, B-I, C-IV, D-II[cite: 8]",
+        "(2) $A-III, B-IV, C-I, D-II[cite: 8]",
+        "(3) $A-II, B-I, C-IV, D-III[cite: 8]",
+        "(4) $A-II, B-IV, C-I, D-III[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 49,
+      "type": "single_choice",
+      "text": "Some drugs bind to a site other than the active site of an enzyme. This site is known as:[cite: 8]",
+      "options": [
+        "(1) non-active site[cite: 8]",
+        "(2) allosteric site[cite: 8]",
+        "(3) competitive site[cite: 8]",
+        "(4) therapeutic site[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 50,
+      "type": "single_choice",
+      "text": "Glycosidic linkage between $C_{1}$ of $\\alpha$-glucose and $C_{2}$ of $\\beta$-fructose is found in:[cite: 8]",
+      "options": [
+        "(1) Maltose[cite: 8]",
+        "(2) Sucrose[cite: 8]",
+        "(3) Lactose[cite: 8]",
+        "(4) amylose[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 51,
+      "type": "integer_or_numerical",
+      "text": "56.0 L of nitrogen gas is mixed with excess of hydrogen gas and it is found that 20 L of ammonia gas is produced. The volume of unused nitrogen gas is found to be ___ L.[cite: 8]",
+      "options": [],
+      "answer": "46"
+    },
+    {
+      "question_number": 52,
+      "type": "integer_or_numerical",
+      "text": "When the excited electron of a H atom from $n=5$ drops to the ground state, the maximum number of emission lines observed are ___.[cite: 8]",
+      "options": [],
+      "answer": "10"
+    },
+    {
+      "question_number": 53,
+      "type": "integer_or_numerical",
+      "text": "The sum of number of lone pairs of electrons present on the central atoms of $XeO_{3}$, $XeOF_{4}$ and $XeF_{6}$ is ___.[cite: 8]",
+      "options": [],
+      "answer": "3"
+    },
+    {
+      "question_number": 54,
+      "type": "integer_or_numerical",
+      "text": "A sealed flask with a capacity of $2~dm^{3}$ contains 11 g of propane gas. The flask is so weak that it will burst if the pressure becomes 2 MPa. The minimum temperature at which the flask will burst is ___ $^{\\circ}C$. [Nearest integer] (Given: $R=8.3~J~K^{-1}~mol^{-1}$. Atomic masses of C and H are 12u and 1u respectively.) (Assume that propane behaves as an ideal gas.)[cite: 8]",
+      "options": [],
+      "answer": "1655"
+    },
+    {
+      "question_number": 55,
+      "type": "integer_or_numerical",
+      "text": "While performing a thermodynamics experiment, a student made the following observations, $HCl+NaOH\\rightarrow NaCl+H_{2}O, \\Delta H=-57.3~kJ~mol^{-1}$, $CH_{3}COOH+NaOH\\rightarrow CH_{3}COONa+H_{2}O, \\Delta H=-55.3~kJ~mol^{-1}$. The enthalpy of ionization of $CH_{3}COOH$ as calculated by the student is ___ $kJ~mol^{-1}$.[cite: 8]",
+      "options": [],
+      "answer": "2"
+    },
+    {
+      "question_number": 56,
+      "type": "integer_or_numerical",
+      "text": "The separation of two coloured substances was done by paper chromatography. The distances travelled by solvent front, substance A and substance B from the base line are 3.25 cm, 2.08 cm and 1.05 cm, respectively. The ratio of $R_{f}$ values of A to B is ___ (Answer the nearest integer).[cite: 8]",
+      "options": [],
+      "answer": "2"
+    },
+    {
+      "question_number": 57,
+      "type": "integer_or_numerical",
+      "text": "The total number of monobromo derivatives formed by the alkanes with molecular formula $C_{5}H_{12}$ is ___ (excluding stereo isomers).[cite: 8]",
+      "options": [],
+      "answer": "8"
+    },
+    {
+      "question_number": 58,
+      "type": "integer_or_numerical",
+      "text": "For the decomposition of azomethane, $CH_{3}N_{2}CH_{3}(g)\\rightarrow CH_{3}CH_{3}(g)+N_{2}$ a first order reaction, the variation in partial pressure with time at 600 K is given with slope $-3.465\\times 10^{4}$. The half life of the reaction is ___ $\\times 10^{-5}$ s.[cite: 8]",
+      "options": [],
+      "answer": "2"
+    },
+    {
+      "question_number": 59,
+      "type": "integer_or_numerical",
+      "text": "The spin-only magnetic moment value of $M^{3+}$ ion (in gaseous state) from the pairs $Cr^{3+}/Cr^{2+}$, $Mn^{3+}/Mn^{2+}$, $Fe^{3+}/Fe^{2+}$ and $Co^{3+}/Co^{2+}$ that has negative standard electrode potential, is ___ B. M.[cite: 8]",
+      "options": [],
+      "answer": "4"
+    },
+    {
+      "question_number": 60,
+      "type": "integer_or_numerical",
+      "text": "A sample of 4.5 mg of an unknown monohydric alcohol, R-OH was added to methylmagnesium iodide. A gas is evolved and is collected and its volume measured to be 3.1 mL. The molecular weight of the unknown alcohol is ___ g/mol.[cite: 8]",
+      "options": [],
+      "answer": "33"
+    },
+    {
+      "question_number": 61,
+      "type": "single_choice",
+      "text": "For $z\\in \\mathbb{C}$ if the minimum value of $(|z-3\\sqrt{2}|+|z-p\\sqrt{2}i|)$ is $5\\sqrt{2}$ then a value of p is:[cite: 8]",
+      "options": [
+        "(1) 3[cite: 8]",
+        "(2) $\\frac{7}{2}[cite: 8]",
+        "(3) 4[cite: 8]",
+        "(4) $\\frac{9}{2}[cite: 8]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 62,
+      "type": "single_choice",
+      "text": "The sum $\\sum_{n=1}^{21}\\frac{3}{(4n-1)(4n+3)}$ is equal to:[cite: 8]",
+      "options": [
+        "(1) $\\frac{7}{87}[cite: 8]",
+        "(2) $\\frac{7}{29}[cite: 8]",
+        "(3) $\\frac{14}{87}[cite: 8]",
+        "(4) $\\frac{21}{29}[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 63,
+      "type": "single_choice",
+      "text": "The remainder when $(11)^{1011}+(1011)^{11}$ is divided by 9 is:[cite: 8]",
+      "options": [
+        "(1) 1[cite: 8]",
+        "(2) 8[cite: 8]",
+        "(3) 6[cite: 8]",
+        "(4) 4[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 64,
+      "type": "single_choice",
+      "text": "The value of $2\\sin \\frac{\\pi}{22}\\sin \\frac{3\\pi}{22}\\sin \\frac{5\\pi}{22}\\sin \\frac{7\\pi}{22}\\sin \\frac{9\\pi}{22}$ is equal to:[cite: 8]",
+      "options": [
+        "(1) $\\frac{1}{16}[cite: 8]",
+        "(2) $\\frac{5}{16}[cite: 8]",
+        "(3) $\\frac{7}{16}[cite: 8]",
+        "(4) $\\frac{3}{16}[cite: 8]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 65,
+      "type": "single_choice",
+      "text": "Let the point $P(\\alpha, \\beta)$ be at a unit distance from each of the two lines $L_{1}:3x-4y+12=0$ and $L_{2}:8x+6y+11=0$. If P lies below $L_{1}$ and above $L_{2}$ then $100(\\alpha+\\beta)$ is equal to:[cite: 8]",
+      "options": [
+        "(1) -14[cite: 8]",
+        "(2) 42[cite: 8]",
+        "(3) -22[cite: 8]",
+        "(4) 14[cite: 8]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 66,
+      "type": "single_choice",
+      "text": "The tangents at the points $A(1,3)$ and $B(1,-1)$ on the parabola $y^{2}-2x-2y=1$ meet at the point P. Then the area (in unit $^{2}$) of the triangle PAB is:[cite: 8]",
+      "options": [
+        "(1) 4[cite: 8]",
+        "(2) 6[cite: 8]",
+        "(3) 7[cite: 8]",
+        "(4) 8[cite: 8]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 67,
+      "type": "single_choice",
+      "text": "If the ellipse $\\frac{x^{2}}{a^{2}}+\\frac{y^{2}}{b^{2}}=1$ meets the line $\\frac{x}{7}+\\frac{y}{2\\sqrt{6}}=1$ on the x-axis and the line $\\frac{x}{7}-\\frac{y}{2\\sqrt{6}}=1$ on the y-axis, then the eccentricity of the ellipse is:[cite: 8]",
+      "options": [
+        "(1) $\\frac{5}{7}[cite: 8]",
+        "(2) $\\frac{2\\sqrt{6}}{7}[cite: 8]",
+        "(3) $\\frac{3}{7}[cite: 8]",
+        "(4) $\\frac{2\\sqrt{5}}{7}[cite: 8]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 68,
+      "type": "single_choice",
+      "text": "Let the foci of the ellipse $\\frac{x^{2}}{16}+\\frac{y^{2}}{7}=1$ and the hyperbola $\\frac{x^{2}}{144}-\\frac{y^{2}}{\\alpha}=\\frac{1}{25}$ coincide. Then the length of the latus rectum of the hyperbola is:[cite: 8]",
+      "options": [
+        "(1) $\\frac{32}{9}[cite: 8]",
+        "(2) $\\frac{18}{5}[cite: 8]",
+        "(3) $\\frac{27}{4}[cite: 8]",
+        "(4) $\\frac{27}{10}[cite: 8]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 69,
+      "type": "single_choice",
+      "text": "$\\lim_{x\\rightarrow \\frac{\\pi}{4}}\\frac{8\\sqrt{2}-(\\cos x+\\sin x)^{7}}{\\sqrt{2}-\\sqrt{2}\\sin 2x}$ is equal to:[cite: 8]",
+      "options": [
+        "(1) 14[cite: 8]",
+        "(2) 7[cite: 8]",
+        "(3) $14\\sqrt{2}[cite: 8]",
+        "(4) $7\\sqrt{2}[cite: 8]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 70,
+      "type": "single_choice",
+      "text": "Consider the following statements: P: Ramu is intelligent. Q: Ramu is rich. R: Ramu is not honest. The negation of the statement \"Ramu is intelligent and honest if and only if Ramu is not rich\" can be expressed as:[cite: 8]",
+      "options": [
+        "(1) $((P\\wedge(\\neg R))\\wedge Q)\\wedge((\\neg Q)\\wedge((\\neg P)\\vee R))[cite: 8]",
+        "(2) $((P\\wedge R)\\wedge Q)\\vee((\\neg Q)\\wedge((\\neg P)\\vee(\\neg R)))[cite: 8]",
+        "(3) $((P\\wedge R)\\wedge Q)\\wedge((\\neg Q)\\wedge((\\neg P)\\vee(\\neg R)))[cite: 8]",
+        "(4) $((P\\wedge(\\neg R))\\wedge Q)\\vee((\\neg Q)\\wedge((\\neg P)\\wedge R))[cite: 8]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 71,
+      "type": "single_choice",
+      "text": "If the mean deviation about median for the number 3, 5, 7, 2k, 12, 16, 21, 24 arranged in the ascending order, is 6 then the median is:[cite: 8]",
+      "options": [
+        "(1) 11.5[cite: 8]",
+        "(2) 10.5[cite: 8]",
+        "(3) 12[cite: 8]",
+        "(4) 11[cite: 8]"
+      ],
+      "answer": "(4)"
+    },
+    {
+      "question_number": 72,
+      "type": "single_choice",
+      "text": "The number of real values of $\\lambda$, such that the system of linear equations $2x-3y+5z=9$, $x+3y-z=-18$, $3x-y+(\\lambda^{2}-|\\lambda|)z=16$ has no solutions, is:[cite: 8]",
+      "options": [
+        "(1) 0[cite: 8]",
+        "(2) 1[cite: 8]",
+        "(3) 2[cite: 8]",
+        "(4) 4[cite: 8]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 73,
+      "type": "single_choice",
+      "text": "The number of bijective function $f:\\{1,3,5,7,...99\\}\\rightarrow \\{2,4,6,8,...100\\}$ if $f(3)>f(5)>f(7)\\cdot\\cdot\\cdot>f(99)$ is:[cite: 8]",
+      "options": [
+        "(1) ${}^{50}C_{1}[cite: 8]",
+        "(2) ${}^{50}C_{2}[cite: 8]",
+        "(3) $\\frac{50!}{2}[cite: 8]",
+        "(4) ${}^{50}C_{3}\\times 3![cite: 8]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 74,
+      "type": "single_choice",
+      "text": "$\\lim_{n\\rightarrow \\infty}\\frac{1}{2^{n}}\\left(\\frac{1}{\\sqrt{1-\\frac{1}{2^{n}}}}+\\frac{1}{\\sqrt{1-\\frac{2}{2^{n}}}} + ... + \\frac{1}{\\sqrt{1-\\frac{2^{n}-1}{2^{n}}}}\\right)$ is equal to:[cite: 8]",
+      "options": [
+        "(1) $\\frac{1}{2}[cite: 8]",
+        "(2) 1[cite: 8]",
+        "(3) 2[cite: 8]",
+        "(4) -2[cite: 8]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 75,
+      "type": "single_choice",
+      "text": "Let [t] denote the greatest integer less than or equal to t. Then the value of the integral $\\int_{-3}^{101}([\\sin(\\pi x)]+e^{[\\cos(2\\pi x)]})dx$ is equal to:[cite: 8]",
+      "options": [
+        "(1) $\\frac{104(1-e)}{e}[cite: 8]",
+        "(2) $\\frac{52}{e}[cite: 8]",
+        "(3) $\\frac{52(2+e)}{e}[cite: 8]",
+        "(4) $\\frac{104}{e}[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 76,
+      "type": "single_choice",
+      "text": "Let a smooth curve $y=f(x)$ be such that the slope of the tangent at any point $(x,y)$ on it is directly proportional to $(\\frac{-y}{x})$. If the curve passes through the points (1, 2) and (8, 1), then $|y(\\frac{1}{8})|$ is equal to:[cite: 8]",
+      "options": [
+        "(1) $2\\log_{e}2[cite: 8]",
+        "(2) 4[cite: 8]",
+        "(3) 1[cite: 8]",
+        "(4) $4\\log_{e}2[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 77,
+      "type": "single_choice",
+      "text": "Let $\\vec{a}=\\hat{i}-\\hat{j}+2\\hat{k}$ and let $\\vec{b}$ be a vector such that $\\vec{a}\\times \\vec{b}=2\\hat{i}-\\hat{k}$ and $\\vec{a}\\cdot \\vec{b}=3$. Then the projection of $\\vec{b}$ on the vector $\\vec{a}-\\vec{b}$ is:[cite: 8]",
+      "options": [
+        "(1) $\\frac{2}{\\sqrt{21}}[cite: 8]",
+        "(2) $2\\sqrt{\\frac{3}{7}}[cite: 8]",
+        "(3) $\\frac{2}{3}\\sqrt{\\frac{7}{3}}[cite: 8]",
+        "(4) $\\frac{2}{3}[cite: 8]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 78,
+      "type": "single_choice",
+      "text": "A plane E is perpendicular to the two planes $2x-2y+z=0$ and $x-y+2z=4$ and passes through the point $P(1,-1,1)$. If the distance of the plane E from the point $Q(a,a,2)$ is $3\\sqrt{2}$ then $(PQ)^{2}$ is equal to:[cite: 8]",
+      "options": [
+        "(1) 9[cite: 8]",
+        "(2) 12[cite: 8]",
+        "(3) 21[cite: 8]",
+        "(4) 33[cite: 8]"
+      ],
+      "answer": "(3)"
+    },
+    {
+      "question_number": 79,
+      "type": "single_choice",
+      "text": "The shortest distance between the lines $\\frac{x+7}{-6}=\\frac{y-6}{7}=z$ and $\\frac{7-x}{2}=y-2=z-6$ is:[cite: 8]",
+      "options": [
+        "(1) $2\\sqrt{29}[cite: 8]",
+        "(2) $\\sqrt{29}[cite: 8]",
+        "(3) $\\sqrt{\\frac{37}{29}}[cite: 8]",
+        "(4) $\\frac{\\sqrt{29}}{2}[cite: 8]"
+      ],
+      "answer": "(1)"
+    },
+    {
+      "question_number": 80,
+      "type": "single_choice",
+      "text": "If A and B are two events such that $P(A)=\\frac{1}{3}$, $P(B)=\\frac{1}{5}$ and $P(A\\cup B)=\\frac{1}{2}$ then $P(A|B')+P(B|A')$ is equal to:[cite: 8]",
+      "options": [
+        "(1) $\\frac{3}{4}[cite: 8]",
+        "(2) $\\frac{5}{8}[cite: 8]",
+        "(3) $\\frac{5}{4}[cite: 8]",
+        "(4) $\\frac{7}{8}[cite: 8]"
+      ],
+      "answer": "(2)"
+    },
+    {
+      "question_number": 81,
+      "type": "integer_or_numerical",
+      "text": "Let $f(x)$ be a quadratic polynomial with leading coefficient 1 such that $f(0)=p$, $p\\neq 0$, and $f(1)=\\frac{1}{3}$. If the equations $f(x)=0$ and $f\\circ f\\circ f\\circ f(x)=0$ have a common real root, then $f(-3)$ is equal to ___.[cite: 8]",
+      "options": [],
+      "answer": "25"
+    },
+    {
+      "question_number": 82,
+      "type": "integer_or_numerical",
+      "text": "If the circles $x^{2}+y^{2}+6x+8y+16=0$ and $x^{2}+y^{2}+2(3-\\sqrt{3})x+2(4-\\sqrt{6})y=k+6\\sqrt{3}+8\\sqrt{6}$, $k>0$ touch internally at the point $P(\\alpha, \\beta)$, then $(\\alpha+\\sqrt{3})^{2}+(\\beta+\\sqrt{6})^{2}$ is equal to ___.[cite: 8]",
+      "options": [],
+      "answer": "25"
+    },
+    {
+      "question_number": 83,
+      "type": "integer_or_numerical",
+      "text": "Let $A=\\{1,2,3,4,5,6,7\}$. Define $B=\\{T\\subseteq A: \\text{either } 1\\notin T \\text{ or } 2\\in T\\}$ and $C=\\{T\\subseteq A: \\text{the sum of all the elements of } T \\text{ is a prime number\\}}$. Then the number of elements in the set $B\\cup C$ is ___.[cite: 8]",
+      "options": [],
+      "answer": "107"
+    },
+    {
+      "question_number": 84,
+      "type": "integer_or_numerical",
+      "text": "Let $A=\\begin{bmatrix} 1 & a & a \\\\ 0 & 1 & b \\\\ 0 & 0 & 1 \\end{bmatrix}$, $a, b\\in \\mathbb{R}$. If for some $n\\in N$, $A^{n}=\\begin{bmatrix} 1 & 48 & 2160 \\\\ 0 & 1 & 96 \\\\ 0 & 0 & 1 \\end{bmatrix}$, then $n+a+b$ is equal to ___.[cite: 8]",
+      "options": [],
+      "answer": "24"
+    },
+    {
+      "question_number": 85,
+      "type": "integer_or_numerical",
+      "text": "Let $x=\\sin(2\\tan^{-1}\\alpha)$ and $y=\\sin(\\frac{1}{2}\\tan^{-1}\\frac{4}{3})$. If $S=\\{\\alpha \\in \\mathbb{R}: y^{2}=1-x\\}$, then $\\sum_{\\alpha \\in S}16\\alpha^{3}$ is equal to ___.[cite: 8]",
+      "options": [],
+      "answer": "130"
+    },
+    {
+      "question_number": 86,
+      "type": "integer_or_numerical",
+      "text": "The sum of the maximum and minimum values of the function $f(x)=|5x-7|+[x^{2}+2x]$ in the interval $[\\frac{5}{4}, 2]$, where $[t]$ is the greatest integer $\\le t$, is ___.[cite: 8]",
+      "options": [],
+      "answer": "15"
+    },
+    {
+      "question_number": 87,
+      "type": "integer_or_numerical",
+      "text": "Let the area enclosed by the x-axis, and the tangent and normal drawn to the curve $4x^{3}-3xy^{2}+6x^{2}-5xy-8y^{2}+9x+14=0$ at the point (-2, 3) be A. Then 8A is equal to ___.[cite: 8]",
+      "options": [],
+      "answer": "170"
+    },
+    {
+      "question_number": 88,
+      "type": "integer_or_numerical",
+      "text": "Let f be a twice differentiable function on R. If $f'(0)=4$ and $f(x)+\\int_{0}^{x}(x-t)f'(t)dt=(e^{2x}+e^{-2x})\\cos 2x+\\frac{2}{a}x$, then $(2a+1)^{5}a^{2}$ is equal to ___.[cite: 8]",
+      "options": [],
+      "answer": "8"
+    },
+    {
+      "question_number": 89,
+      "type": "integer_or_numerical",
+      "text": "Let $a_{n}=\\int_{-1}^{n}(1+\\frac{x}{2}+\\frac{x^{2}}{3}+...+\\frac{x^{n-1}}{n})dx$ for every $n\\in N$. Then the sum of all the elements of the set $\\{n\\in N: a_{n}\\in (2, 30)\\}$ is ___.[cite: 8]",
+      "options": [],
+      "answer": "5"
+    },
+    {
+      "question_number": 90,
+      "type": "integer_or_numerical",
+      "text": "Let $y=y(x)$ be the solution of the differential equation $\\frac{dy}{dx}=\\frac{4y^{3}+2yx^{2}}{3xy^{2}+x^{3}}$, $y(1)=1$. If for some $n\\in N$, $y(2)\\in[n-1, n)$, then n is equal to ___.[cite: 8]",
+      "options": [],
+      "answer": "3"
+    }
+  ]
+}
+
+```

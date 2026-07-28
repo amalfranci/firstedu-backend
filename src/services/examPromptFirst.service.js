@@ -10,6 +10,7 @@ export const GENERATION_MODES = {
     DEFAULT: "default",
     PROMPT_FIRST: "prompt_first",
     PAPER_REFERENCE: "paper_reference",
+    QUESTION_RAG: "question_rag",
 };
 
 export const isPromptFirstGenerationMode = (mode) =>
@@ -19,6 +20,11 @@ export const isPromptFirstGenerationMode = (mode) =>
 export const isPaperReferenceGenerationMode = (mode) =>
     String(mode || GENERATION_MODES.DEFAULT).toLowerCase() ===
     GENERATION_MODES.PAPER_REFERENCE;
+
+/** default + style/pattern grounding retrieved from previously confirmed questions (questionCorpusRag.service.js) */
+export const isQuestionRagGenerationMode = (mode) =>
+    String(mode || GENERATION_MODES.DEFAULT).toLowerCase() ===
+    GENERATION_MODES.QUESTION_RAG;
 
 /**
  * Fallback-only reference range. The passage length is DECIDED BY THE AI from the

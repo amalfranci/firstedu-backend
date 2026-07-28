@@ -106,7 +106,7 @@ const findOptionIndexForValue = (opts, value, excludeIdx = -1) =>
     );
 
 /** pH / buffer stems with options outside 0–14 (e.g. bare 44 or 74). */
-const detectInvalidPhScaleOptions = (q) => {
+export const detectInvalidPhScaleOptions = (q) => {
     const stem = norm(q.questionText);
     if (!/\bph\b|\bpka\b|\bbuffer\b|\bacetic acid\b|\bhenderson/i.test(stem)) {
         return null;
@@ -131,8 +131,37 @@ const detectInvalidPhScaleOptions = (q) => {
     return null;
 };
 
+const SQUARE_ONLY_MATRIX_PROPERTY =
+    /\b(skew[- ]symmetric|symmetric|orthogonal|idempotent|invertible|non-?singular|singular|diagonaliz\w*|determinant|trace|eigenvalue\w*|eigenvector\w*|adjoint|inverse)\b/i;
+
+/**
+ * Stem claims a non-square matrix (e.g. "2x3 matrix") has a property that is only
+ * defined for square (n×n) matrices — skew-symmetric, determinant, eigenvalues, etc.
+ * The premise itself is mathematically invalid regardless of subject/exam.
+ */
+const detectNonSquareMatrixPropertyClaim = (q) => {
+    const stem = String(q.questionText || "");
+    if (!/\bmatrix\b/i.test(stem)) return null;
+    if (!SQUARE_ONLY_MATRIX_PROPERTY.test(stem)) return null;
+    const dims = stem.match(
+        /(\d+)\s*(?:x|×|\*)\s*(\d+)\s*matrix|matrix(?:\s+of\s+order)?\s*(\d+)\s*(?:x|×|\*)\s*(\d+)/i
+    );
+    if (!dims) return null;
+    const rows = Number(dims[1] ?? dims[3]);
+    const cols = Number(dims[2] ?? dims[4]);
+    if (!Number.isFinite(rows) || !Number.isFinite(cols) || rows === cols) return null;
+    const property = stem.match(SQUARE_ONLY_MATRIX_PROPERTY)[1];
+    return {
+        questionNumber: q.sampleNumber,
+        issue: `Stem describes a ${rows}x${cols} matrix but asks about "${property}", a property only defined for square (n×n) matrices — the premise is invalid.`,
+        severity: "critical",
+        confidence: "confirmed",
+        category: ISSUE_CATEGORY.FACTUAL,
+    };
+};
+
 /** Hybridization in stem vs marked option (e.g. SF6 must be sp³d²). */
-const detectHybridizationFactualError = (q) => {
+export const detectHybridizationFactualError = (q) => {
     const stem = String(q.questionText || "");
     if (!/hybridization/i.test(stem)) return null;
     const mol = extractMoleculeFromStem(stem);
@@ -204,7 +233,7 @@ const detectInvalidOptions = (q) => {
 };
 
 /** Explanation explicitly names a different answer than the marked option. */
-const detectExplanationConclusionMismatch = (q) => {
+export const detectExplanationConclusionMismatch = (q) => {
     const explanation = String(q.explanation || "");
     const opts = q.options || [];
     const markedIdx = getMarkedOptionIndex(q);
@@ -239,8 +268,23 @@ const detectExplanationConclusionMismatch = (q) => {
     return null;
 };
 
+const escapeRegExp = (s) => String(s || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+/**
+ * Word-boundary-aware containment: "team 1" must NOT be treated as contained in
+ * "team 14" (naive .includes() said it was, which suppressed the exact "Team 1
+ * vs Team 14" mismatch this detector exists to catch — the shorter string was
+ * followed by an alphanumeric character, not a real boundary, in the longer one).
+ */
+const containsAsToken = (haystack, needle) => {
+    if (!haystack || !needle) return false;
+    if (haystack === needle) return true;
+    const re = new RegExp(`(?:^|[^a-z0-9])${escapeRegExp(needle)}(?:$|[^a-z0-9])`, "i");
+    return re.test(haystack);
+};
+
 /** Explanation names a compound/option text that differs from the marked answer. */
-const detectExplanationNamedConclusionMismatch = (q) => {
+export const detectExplanationNamedConclusionMismatch = (q) => {
     const explanation = String(q.explanation || "");
     const opts = (q.options || []).map((o) => String(o || "").trim()).filter(Boolean);
     const markedIdx = getMarkedOptionIndex(q);
@@ -260,7 +304,7 @@ const detectExplanationNamedConclusionMismatch = (q) => {
         if (claimed.length < 4) continue;
 
         const markedNorm = norm(opts[markedIdx]);
-        if (markedNorm.includes(claimed) || claimed.includes(markedNorm)) continue;
+        if (containsAsToken(markedNorm, claimed) || containsAsToken(claimed, markedNorm)) continue;
 
         let bestIdx = -1;
         let bestScore = 0;
@@ -328,7 +372,7 @@ const detectExplanationOptionClaimMismatch = (q) => {
 };
 
 const VAGUE_JUSTIFICATION =
-    /\b(?:adjusting for(?: the)? specific|specific (?:fringe|logic)|fringe count logic|without (?:proper )?(?:calculation|derivation)|hence (?:the )?answer follows|logic suggests|therefore we choose)\b/i;
+    /\b(?:adjusting for(?: the)? specific|adjusted (?:for|to)|specific (?:fringe|logic|metal|geometry|distractor)|fringe count logic|without (?:proper )?(?:calculation|derivation)|hence (?:the )?answer follows|logic suggests|therefore we choose|for the specific (?:distractor|metal|geometry))\b/i;
 
 /** Explanation uses vague hand-waving instead of deriving the marked answer. */
 const detectExplanationVagueJustification = (q) => {
@@ -344,13 +388,252 @@ const detectExplanationVagueJustification = (q) => {
     };
 };
 
+/**
+ * Recompute explicit arithmetic written in the explanation.
+ * Catches "A op B = C" where C is wrong, and √N ≈ X when X ≠ √N —
+ * the dominant failure mode in JEE papers (same bug repeated across Maths Qs).
+ */
+const arithmeticRelTol = (expected) =>
+    Math.max(1e-9, Math.abs(expected) * 0.02, 0.02);
+
+const valuesDisagree = (stated, expected) => {
+    if (!Number.isFinite(stated) || !Number.isFinite(expected)) return false;
+    return Math.abs(stated - expected) > arithmeticRelTol(expected);
+};
+
+const scanBinaryArithmeticClaims = (text) => {
+    const claims = [];
+    // 12 × 5 = 70  |  3.0 + 4.5 = 8  |  90 / 3 = 25
+    const re =
+        /(-?\d+(?:\.\d+)?)\s*([+\-−×xX*\/÷])\s*(-?\d+(?:\.\d+)?)\s*(?:=|equals?|gives?|yields?|≈|~)\s*(-?\d+(?:\.\d+)?)/g;
+    for (const m of String(text || "").matchAll(re)) {
+        const a = parseFloat(m[1]);
+        const b = parseFloat(m[3]);
+        const stated = parseFloat(m[4]);
+        if (![a, b, stated].every(Number.isFinite)) continue;
+        const op = m[2];
+        let expected = NaN;
+        if (op === "+" ) expected = a + b;
+        else if (op === "-" || op === "−") expected = a - b;
+        else if (op === "×" || op === "x" || op === "X" || op === "*") expected = a * b;
+        else if (op === "/" || op === "÷") {
+            if (b === 0) continue;
+            expected = a / b;
+        }
+        if (!Number.isFinite(expected)) continue;
+        claims.push({
+            kind: "binary",
+            expr: `${m[1]} ${op} ${m[3]}`,
+            stated,
+            expected,
+            raw: m[0],
+        });
+    }
+    return claims;
+};
+
+const scanSqrtClaims = (text) => {
+    const claims = [];
+    // √66 ≈ 7.35  |  sqrt(66) = 8.12  |  √(16+1+49) ≈ 8.12 (handled only for plain √N)
+    const re =
+        /(?:√|sqrt\s*\()\s*(\d+(?:\.\d+)?)\s*\)?\s*(?:=|≈|~|approximately|is)\s*(-?\d+(?:\.\d+)?)/gi;
+    for (const m of String(text || "").matchAll(re)) {
+        const rad = parseFloat(m[1]);
+        const stated = parseFloat(m[2]);
+        if (![rad, stated].every(Number.isFinite) || rad < 0) continue;
+        const expected = Math.sqrt(rad);
+        claims.push({
+            kind: "sqrt",
+            expr: `√${rad}`,
+            stated,
+            expected,
+            raw: m[0],
+        });
+    }
+    return claims;
+};
+
+const scanSquareClaims = (text) => {
+    const claims = [];
+    // 8^2 = 63  |  (−4)² = 15
+    const re =
+        /\(?\s*(-?\d+(?:\.\d+)?)\s*\)?\s*(?:\^2|²)\s*(?:=|equals?|≈)\s*(-?\d+(?:\.\d+)?)/g;
+    for (const m of String(text || "").matchAll(re)) {
+        const base = parseFloat(m[1]);
+        const stated = parseFloat(m[2]);
+        if (![base, stated].every(Number.isFinite)) continue;
+        claims.push({
+            kind: "square",
+            expr: `${base}²`,
+            stated,
+            expected: base * base,
+            raw: m[0],
+        });
+    }
+    return claims;
+};
+
+/** Bridging language that overrides a just-computed value with an unrelated number. */
+const scanFabricatedBridgeOverrides = (text) => {
+    const claims = [];
+    const body = String(text || "");
+    // "… ≈ 8.12 … adjusted … to 7.35" or "adjusted for exact geometry … 7.35"
+    const bridgeRe =
+        /(?:≈|=|is)\s*(-?\d+(?:\.\d+)?)[^.|]{0,120}?\b(?:adjusted|adjusting|nearest option|for the specific)\b[^.|]{0,80}?(?:to|=|is|:)?\s*(-?\d+(?:\.\d+)?)/gi;
+    for (const m of body.matchAll(bridgeRe)) {
+        const computed = parseFloat(m[1]);
+        const overridden = parseFloat(m[2]);
+        if (![computed, overridden].every(Number.isFinite)) continue;
+        if (!valuesDisagree(overridden, computed)) continue;
+        claims.push({
+            kind: "bridge",
+            expr: `computed ${computed}`,
+            stated: overridden,
+            expected: computed,
+            raw: m[0].slice(0, 120),
+        });
+    }
+    return claims;
+};
+
+export const detectExplanationArithmeticInconsistency = (q) => {
+    const explanation = stripAppendedClosing(q.explanation);
+    if (!explanation || explanation.length < 8) return null;
+
+    const claims = [
+        ...scanBinaryArithmeticClaims(explanation),
+        ...scanSqrtClaims(explanation),
+        ...scanSquareClaims(explanation),
+        ...scanFabricatedBridgeOverrides(explanation),
+    ];
+    if (!claims.length) return null;
+
+    for (const c of claims) {
+        if (!valuesDisagree(c.stated, c.expected)) continue;
+        const expectedDisp =
+            Math.abs(c.expected) >= 100 || Number.isInteger(c.expected)
+                ? String(Math.round(c.expected * 1000) / 1000)
+                : c.expected.toFixed(4).replace(/\.?0+$/, "");
+        if (c.kind === "bridge") {
+            return {
+                questionNumber: q.sampleNumber,
+                issue: `Explanation computes ${c.expected} then overrides it to ${c.stated} via fabricated bridging language ("adjusted…") — arithmetic does not support the stated answer.`,
+                severity: "critical",
+                confidence: "confirmed",
+                category: ISSUE_CATEGORY.FACTUAL,
+            };
+        }
+        return {
+            questionNumber: q.sampleNumber,
+            issue: `Explanation arithmetic is inconsistent: ${c.expr} should be ${expectedDisp} but states ${c.stated}.`,
+            severity: "critical",
+            confidence: "confirmed",
+            category: ISSUE_CATEGORY.FACTUAL,
+        };
+    }
+    return null;
+};
+
+/**
+ * Marked option's unit family disagrees with what the stem asks for
+ * (e.g. voltage/temperature stem keyed to J·mol⁻¹·K⁻¹).
+ */
+const UNIT_FAMILIES = [
+    {
+        id: "voltage",
+        stem: /\b(?:voltage|potential\s+difference|\bemf\b|\bvolt)/i,
+        opt: /\b(?:V|volt|mV|kV)\b/,
+        foreign: /\b(?:J(?:\/|·|⋅)?(?:mol|K)|mol[-⁻]?1|K[-⁻]?1|ohm|Ω|farad|henry|tesla|weber)\b/i,
+    },
+    {
+        id: "temperature",
+        stem: /\b(?:temperature|kelvin|\b°?C\b|\b°?F\b|\bcelsius|\bkelvin)\b/i,
+        // Bare "K" must NOT match when it's the trailing unit of a compound like
+        // "J/mol·K" or "J/(mol K)" (entropy, not a temperature) — a real review
+        // finding was a temperature question keyed to "140.7 J/mol·K" that this
+        // regex originally let through because a plain \bK\b matches the "K" at
+        // the end of "J/mol·K" too.
+        opt: /(?<![\/·.\s]mol[\s·]?)\bK\b|°C|°F|kelvin|celsius/i,
+        foreign: /\b(?:J(?:\/|·)?mol|V\b|volt|ohm|Ω|farad|henry|tesla|pascal|Pa\b)\b/i,
+    },
+    {
+        id: "energy",
+        stem: /\b(?:energy|work\s+done|heat\s+(?:released|absorbed)|enthalpy|\bΔ[HUGe]\b)/i,
+        opt: /\b(?:J|kJ|eV|cal|kcal|J\/mol|kJ\/mol)\b/i,
+        foreign: /\b(?:volt|\bV\b|ohm|Ω|ampere|\bA\b|farad|tesla|K\b(?!\s*\/))\b/i,
+    },
+    {
+        id: "force",
+        stem: /\b(?:force|thrust|tension|weight)\b/i,
+        opt: /\b(?:N|kN|newton)\b/i,
+        foreign: /\b(?:J\b|watt|\bW\b|volt|ohm|Pa\b|pascal)\b/i,
+    },
+    {
+        id: "length",
+        stem: /\b(?:length|distance|radius|diameter|wavelength|displacement)\b/i,
+        opt: /\b(?:nm|mm|cm|m\b|km|Å|angstrom)\b/i,
+        foreign: /\b(?:J\/mol|volt|\bV\b|ohm|Ω|K\b|pascal|Pa\b)\b/i,
+    },
+];
+
+export const detectMarkedOptionUnitMismatch = (q) => {
+    const stem = String(q.questionText || "");
+    const opts = q.options || [];
+    const markedIdx = getMarkedOptionIndex(q);
+    if (markedIdx == null || !opts[markedIdx]) return null;
+    const marked = String(opts[markedIdx]);
+
+    for (const fam of UNIT_FAMILIES) {
+        if (!fam.stem.test(stem)) continue;
+        // Only flag when the marked option clearly carries a foreign unit family
+        // AND does not also carry a matching unit (avoid "5 V" false positives).
+        if (fam.opt.test(marked)) continue;
+        if (!fam.foreign.test(marked)) continue;
+        return {
+            questionNumber: q.sampleNumber,
+            issue: `Marked option "${marked}" has a unit that does not match what the stem asks (${fam.id}) — dimensional mismatch.`,
+            severity: "critical",
+            confidence: "confirmed",
+            category: ISSUE_CATEGORY.FACTUAL,
+        };
+    }
+    return null;
+};
+
+/** Extract a short template signature (device/setup nouns) for within-batch dedup. */
+const stemTemplateSignature = (stem) => {
+    const s = norm(stem);
+    const templates = [
+        [/wheatstone|metre\s*bridge|meter\s*bridge/, "wheatstone_bridge"],
+        [/magnetic\s+flux|disk.*(?:rotate|spin)|rotating\s+disk/, "disk_flux"],
+        [/point\s+to\s+(?:a\s+)?line|distance\s+from\s+(?:the\s+)?point/, "point_line_distance"],
+        [/king'?s?\s+property|integral.*property/, "kings_property_integral"],
+        [/photoelectric|work\s+function|stopping\s+potential/, "photoelectric"],
+        [/angular\s+momentum|moment\s+of\s+inertia.*collision/, "angular_momentum_collision"],
+        [/carnot\s+engine|efficiency\s+of\s+(?:the\s+)?engine/, "carnot_engine"],
+        [/lens\s+formula|combination\s+of\s+lenses/, "lens_combo"],
+        [/rc\s+circuit|time\s+constant.*capacitor/, "rc_circuit"],
+        [/binomial\s+theorem|coefficient\s+of\s+x/, "binomial_coeff"],
+    ];
+    for (const [re, id] of templates) {
+        if (re.test(s)) return id;
+    }
+    return null;
+};
+
 /** Explanation's final computed value is absent from all options (e.g. fringe math → 12.5 mm but options are 10, 15…). */
 const detectExplanationFinalValueNotInOptions = (q) => {
-    const explanation = String(q.explanation || "");
     const opts = q.options || [];
     const markedIdx = getMarkedOptionIndex(q);
     if (markedIdx == null || !opts.length) return null;
 
+    // Without this strip, a fabricated "Therefore, the correct answer is <marked>"
+    // closing — which by construction always agrees with the marked option — sits at
+    // the very end of the explanation and wins the "last match" below, masking
+    // whatever value the derivation actually computed a sentence earlier (e.g. an
+    // explanation that computes 7500 Pa throughout and then closes with "...is 1500
+    // Pa": unstripped, this detector saw only the fabricated 1500 and passed).
+    const explanation = stripAppendedClosing(q.explanation);
     const tail = explanation.slice(Math.max(0, explanation.length - 400));
     const matches = [
         ...tail.matchAll(
@@ -706,10 +989,28 @@ const BATCH_DUPLICATE_STEM_RATIO = 0.85;
 export const detectBatchDuplicateStemIssues = (sampled = []) => {
     const issues = [];
     const seen = [];
+    const templateCounts = new Map(); // signature -> first sampleNumber
 
     for (const q of sampled) {
         const stem = norm(q.questionText);
         if (!stem || stem.length < 12) continue;
+
+        // Template-family duplication (Wheatstone ×3, disk-flux ×3, …) — distinct
+        // from RAG near-copy against the historical corpus.
+        const sig = stemTemplateSignature(stem);
+        if (sig) {
+            if (templateCounts.has(sig)) {
+                issues.push({
+                    questionNumber: q.sampleNumber,
+                    issue: `Within-paper template duplicate of question ${templateCounts.get(sig)} ("${sig.replace(/_/g, " ")}") — use a different problem family.`,
+                    severity: "major",
+                    confidence: "confirmed",
+                    category: ISSUE_CATEGORY.DIVERSITY,
+                });
+            } else {
+                templateCounts.set(sig, q.sampleNumber);
+            }
+        }
 
         for (const prev of seen) {
             const ratio = levenshteinRatio(stem, prev.norm);
@@ -842,15 +1143,48 @@ const detectExplanationContradictsKey = (q) => {
         /^-?\d+(?:\.\d+)?\s*[%°]?[a-zA-ZμΩ°/·⁻¹²³]{0,10}$/.test(marked);
 
     if (isNumericAnswer) {
+        // Prefer the derivation before force-align / distractor-override language.
+        const OVERRIDE_SPLIT =
+            /\b(?:however|,?\s*for the specific distractor|nearest option|closest option|among the (?:given )?options|but (?:for the specific|the nearest|using the distractor))\b/i;
+        const preOverride = body.split(OVERRIDE_SPLIT)[0] || body;
+
         const NUM = "(-?\\d+(?:\\.\\d+)?)";
         const re = new RegExp(
-            `(?:=|\\bis\\b|\\bequals?\\b|\\byields?\\b|\\bgives?\\b|\\btherefore\\b[^.]{0,24}?)\\s*${NUM}`,
+            `(?:=|\\bis\\b|\\bequals?\\b|\\byields?\\b|\\bgives?\\b|≈|approximately|\\btherefore\\b[^.]{0,24}?)\\s*${NUM}`,
             "gi"
         );
-        const found = [...body.matchAll(re)]
+        const scanText = preOverride.trim().length >= 12 ? preOverride : body;
+        const found = [...scanText.matchAll(re)]
             .map((m) => parseFloat(m[1]))
             .filter(Number.isFinite);
         if (!found.length) return null;
+
+        // Check EVERY stated conclusion, not just the last one. A derivation that computes
+        // the right value first and only overrides it in a later sentence to match a
+        // pre-decided key will always have that override as the LAST match — so it always
+        // "agrees" with the marked answer if only the last value is checked. Any earlier
+        // value that clearly matches a DIFFERENT option is a contradiction on its own,
+        // regardless of what the explanation asserts afterward — flag the earliest such
+        // conflict, since that is the genuine computation the rest of the text overrides.
+        for (let i = 0; i < found.length - 1; i++) {
+            const earlier = found[i];
+            const earlierTol = optionGapTolerance(earlier, opts);
+            if (Math.abs(earlier - markedNum) <= earlierTol) continue;
+            const earlierAltIdx = opts.findIndex((o, idx) => {
+                if (idx === markedIdx) return false;
+                const n = parseNumber(o);
+                return Number.isFinite(n) && Math.abs(n - earlier) <= optionGapTolerance(n, opts);
+            });
+            if (earlierAltIdx < 0) continue;
+            return {
+                questionNumber: q.sampleNumber,
+                issue: `Explanation computes ${earlier} earlier in the derivation (matching option ${String.fromCharCode(65 + earlierAltIdx)}) but a later, unjustified statement overrides it to match marked answer ${String.fromCharCode(65 + markedIdx)} (${marked}) — the derivation and the key disagree.`,
+                severity: "critical",
+                confidence: "confirmed",
+                category: ISSUE_CATEGORY.FACTUAL,
+            };
+        }
+
         const concluded = found[found.length - 1];
         const tol = optionGapTolerance(concluded, opts);
         if (Math.abs(concluded - markedNum) <= tol) return null;
@@ -859,10 +1193,21 @@ const detectExplanationContradictsKey = (q) => {
             const n = parseNumber(o);
             return Number.isFinite(n) && Math.abs(n - concluded) <= tol;
         });
-        if (altIdx < 0) return null; // concluded value isn't any option — other detectors own that
+        if (altIdx >= 0) {
+            return {
+                questionNumber: q.sampleNumber,
+                issue: `Explanation concludes ${concluded} but marked answer is ${String.fromCharCode(65 + markedIdx)} (${marked}); ${concluded} matches option ${String.fromCharCode(65 + altIdx)}.`,
+                severity: "critical",
+                confidence: "confirmed",
+                category: ISSUE_CATEGORY.FACTUAL,
+            };
+        }
+        // Concluded value is not among options AND disagrees with the key — classic
+        // force-align precursor (compute 8.12, options are 7.35/9.15/…). Reject rather
+        // than let a later "Therefore, the correct answer is <marked>" mask it.
         return {
             questionNumber: q.sampleNumber,
-            issue: `Explanation concludes ${concluded} but marked answer is ${String.fromCharCode(65 + markedIdx)} (${marked}); ${concluded} matches option ${String.fromCharCode(65 + altIdx)}.`,
+            issue: `Explanation concludes ${concluded} but marked answer is ${String.fromCharCode(65 + markedIdx)} (${marked}); ${concluded} is not among the options — reject, do not force-align.`,
             severity: "critical",
             confidence: "confirmed",
             category: ISSUE_CATEGORY.FACTUAL,
@@ -973,7 +1318,10 @@ const mentionsToken = (fullText, token) => {
 
 const DETECTORS = [
     detectExplanationContradictsKey,
+    detectExplanationArithmeticInconsistency,
+    detectMarkedOptionUnitMismatch,
     detectInvalidPhScaleOptions,
+    detectNonSquareMatrixPropertyClaim,
     detectHybridizationFactualError,
     detectIndependentSolveMismatch,
     detectInvalidOptions,
@@ -1086,7 +1434,7 @@ const isStrippableCorrectnessIssue = (issue) => {
     }
     if (
         sev !== "minor" &&
-        /draft\/meta commentary|independent solve disagrees|does not appear among|not among any option|explanation (?:concludes|derives|states)|marked answer is option/i.test(
+        /draft\/meta commentary|independent solve disagrees|does not appear among|not among any option|explanation (?:concludes|derives|states)|marked answer is option|arithmetic is inconsistent|fabricated bridging|dimensional mismatch|within-paper template duplicate/i.test(
             text
         )
     ) {

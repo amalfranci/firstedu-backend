@@ -97,14 +97,33 @@ const getSubjectComposition = (subject = "") => {
     return null;
 };
 
+/**
+ * Optional overrides that force a fixed theory/direct/multi_concept mix for an
+ * exam profile. Intentionally empty: JEE Main previously forced 100%
+ * multi_concept ("all hard = all multi"), which made topic plans ignore direct
+ * and theory. Hard difficulty now means each *kind* is hard within its type —
+ * use DEFAULT_COMPOSITION / SUBJECT_COMPOSITION_RULES instead.
+ * Set AI_QB_FORCE_ALL_MULTI=1 to restore the old all-multi_concept behaviour.
+ */
+const EXAM_PROFILE_FORCED_COMPOSITION = (() => {
+    if (
+        process.env.AI_QB_FORCE_ALL_MULTI === "1" ||
+        process.env.AI_QB_FORCE_ALL_MULTI === "true"
+    ) {
+        return { jee_main: { theory: 0, direct: 0, multi_concept: 1 } };
+    }
+    return {};
+})();
+
 const getDefaultComposition = (examProfile = "", catSection = "", subject = "") => {
+    const key = String(examProfile || "").toLowerCase().trim();
+    if (EXAM_PROFILE_FORCED_COMPOSITION[key]) return EXAM_PROFILE_FORCED_COMPOSITION[key];
     const section = String(catSection || "").toLowerCase();
     if (CAT_SECTION_COMPOSITION[section]) return CAT_SECTION_COMPOSITION[section];
     // Subject character (theory vs calculation) takes precedence over the
     // exam-level default so e.g. NEET Botany is theory-heavy, NEET Physics is not.
     const bySubject = getSubjectComposition(subject);
     if (bySubject) return bySubject;
-    const key = String(examProfile || "").toLowerCase().trim();
     return DEFAULT_COMPOSITION[key] || DEFAULT_COMPOSITION.competitive;
 };
 
@@ -248,18 +267,24 @@ export const buildArchetypePlanningPrompt = ({
               .trim()
               .slice(0, 2500)}\n`
         : "";
-    const kindMixBlock = `
+    const forcedAllHard = defComp.theory === 0 && defComp.direct === 0;
+    const kindMixBlock = forcedAllHard
+        ? `
+**Question composition — MANDATORY, NOT A SUGGESTION:**
+Every one of the ${n} slots MUST be tagged \`questionKind: "multi_concept"\` — **zero** \`theory\`, **zero** \`direct\`. This bank is explicitly configured for maximum difficulty, overriding what a "typical" ${examLabel} paper looks like. Each slot must fuse **≥2 concepts** and require a **multi-step derivation** (≥4 solve steps) that a well-prepared veteran repeater with 1000+ mock attempts would need several minutes on, and a meaningful share should be hard enough that even a strong veteran cannot reliably solve it within the time limit. Do not tag anything \`theory\` or \`direct\` — that guidance does not apply to this bank. Still write each slot's \`pattern\`/\`required\`/\`banned\` at multi_concept depth (fused, multi-step).
+${referenceBlock}`
+        : `
 **Question composition (determine the mix for THIS exam from authentic recent papers, then tag every slot):**
 A real ${examLabel} ${subjectLabel} paper is **not** one bucket. Set \`questionKind\` on each slot to exactly one of:
-- \`theory\` — pure conceptual / qualitative: assertion–reason, statement-correctness, match-the-column reasoning, mechanism/definition discrimination. **No numeric givens, no solve steps.**
-- \`direct\` — a **direct single-formula / single-concept numerical** MCQ: one clean formula or one concept applied in ~1–2 steps. These are the bulk of most papers. A single-step solve is CORRECT here — do NOT over-complicate.
-- \`multi_concept\` — **moderate/multi-step, multi-concept** application: ≥2 fused concepts, ≥3 solve steps, the peak-difficulty items.
+- \`theory\` — pure conceptual / qualitative: assertion–reason, statement-correctness, match-the-column reasoning, mechanism/definition discrimination. **No numeric givens, no calculation.** Still **hard** for this exam (close distractors, multi-statement traps) — theory ≠ easy.
+- \`direct\` — a **direct single-formula / single-concept numerical** MCQ: one clean formula or one concept applied in ~1–2 steps. Still **hard** (non-obvious application, careful units/limits) — direct ≠ easy drill.
+- \`multi_concept\` — **multi-step, multi-concept** application: ≥2 fused concepts, ≥3 solve steps — the fused/peak items.
 
-**Determine counts from what a genuine ${examLabel} paper looks like** (use your knowledge of real past papers${referenceBlock ? " and the reference brief above" : ""}). For example, a JEE Main-style set of ${n} is roughly **${sc.theory} theory · ${sc.direct} direct · ${sc.multi_concept} multi_concept** — treat that as a starting point and adjust to the real exam/subject (Biology/GK skew more theory; JEE Advanced skews more multi_concept). Write each slot's \`pattern\`/\`required\`/\`banned\` to match its kind (theory = conceptual, direct = one clean formula/step, multi_concept = fused multi-step).
+**Hard difficulty ≠ all multi_concept.** Do NOT tag every slot \`multi_concept\` just because the bank is hard. Hard means each kind is exam-caliber within its type. Target mix for ${n} slots ≈ **${sc.theory} theory · ${sc.direct} direct · ${sc.multi_concept} multi_concept** (adjust for subject: Biology/GK → more theory; Advanced Maths → more multi_concept). Write each slot's \`pattern\`/\`required\`/\`banned\` to match its kind.
 ${referenceBlock}`;
     const tierNote = examCalibrated
-        ? "Slots are **exam-native** (real paper caliber for this profile) — `multi_concept` slots are peak/hard, `direct` slots are clean single-step numericals, `theory` slots are conceptual."
-        : `Bank difficulty profile: **${bankDifficulty}** — calibrate each slot to real ${examLabel} depth for its kind.`;
+        ? "Slots are **exam-native hard** for this profile across ALL kinds — `multi_concept` = fused multi-step, `direct` = hard single-concept numericals (not easy drills), `theory` = hard conceptual (not trivia). Never collapse the whole plan to multi_concept only."
+        : `Bank difficulty profile: **${bankDifficulty}** — calibrate each slot to real ${examLabel} **hard** depth for its kind (theory / direct / multi_concept). Hard does not mean every slot is multi_concept.`;
 
     const excludeArchetypeBlock = excludeArchetypes.length
         ? `\n**Already used in this question bank (do NOT repeat these problem types or near-clones):**\n${[
@@ -398,6 +423,66 @@ export const parseArchetypePlanResponse = (rawText, expectedCount = 1) => {
     const result = unique.slice(0, Math.max(1, expectedCount));
     result.excludedTopics = excludedTopics;
     return result;
+};
+
+/**
+ * If the planner tagged nearly everything multi_concept (common when "hard"
+ * is misread as "all multi"), redistribute kinds to match the exam/subject
+ * composition. Preserves labels/blueprints; only rewrites questionKind.
+ */
+export const rebalanceSlotPlanKinds = (
+    slotPlans = [],
+    {
+        examProfile = "",
+        catSection = "",
+        subject = "",
+        force = false,
+    } = {}
+) => {
+    const plans = Array.isArray(slotPlans) ? [...slotPlans] : [];
+    if (plans.length < 2) return plans;
+
+    const target = compositionToCounts(
+        getDefaultComposition(examProfile, catSection, subject),
+        plans.length
+    );
+    // Forced all-multi profiles keep the AI tags as-is.
+    if (target.theory === 0 && target.direct === 0) return plans;
+
+    const counts = { theory: 0, direct: 0, multi_concept: 0 };
+    for (const p of plans) {
+        const k = normalizeQuestionKind(p.questionKind);
+        counts[k] = (counts[k] || 0) + 1;
+    }
+    const multiShare = counts.multi_concept / plans.length;
+    const needsRebalance =
+        force ||
+        (multiShare >= 0.85 && (target.direct > 0 || target.theory > 0)) ||
+        (counts.direct === 0 && target.direct >= 2) ||
+        (counts.theory === 0 && target.theory >= 1);
+
+    if (!needsRebalance) return plans;
+
+    const desiredKinds = [];
+    for (let i = 0; i < (target.theory || 0); i++) desiredKinds.push("theory");
+    for (let i = 0; i < (target.direct || 0); i++) desiredKinds.push("direct");
+    while (desiredKinds.length < plans.length) desiredKinds.push("multi_concept");
+
+    const rebalanced = plans.map((p, i) => ({
+        ...p,
+        questionKind: desiredKinds[i] || "multi_concept",
+    }));
+    pipelineTrace("TOPIC_KIND_REBALANCE", {
+        before: counts,
+        after: {
+            theory: desiredKinds.filter((k) => k === "theory").length,
+            direct: desiredKinds.filter((k) => k === "direct").length,
+            multi_concept: desiredKinds.filter((k) => k === "multi_concept")
+                .length,
+        },
+        reason: force ? "forced" : "planner_over_multi",
+    });
+    return rebalanced;
 };
 
 const buildFallbackSteering = ({
@@ -590,16 +675,31 @@ export const resolveConceptArchetypeSteering = async (
             slotPlans = [...slotPlans, ...filler.slotPlans];
         }
 
-        const conceptSlots = slotPlans.slice(0, n).map((p) => p.conceptSlot);
+        slotPlans = rebalanceSlotPlanKinds(slotPlans.slice(0, n), {
+            examProfile,
+            catSection,
+            subject: `${subjectId || ""} ${subject || ""}`,
+        });
+
+        const conceptSlots = slotPlans.map((p) => p.conceptSlot);
         pipelineTrace("ARCHETYPE_STEERING", {
             source: "ai",
             slotCount: conceptSlots.length,
             slots: conceptSlots.slice(0, 12),
+            kinds: {
+                theory: slotPlans.filter((p) => p.questionKind === "theory")
+                    .length,
+                direct: slotPlans.filter((p) => p.questionKind === "direct")
+                    .length,
+                multi_concept: slotPlans.filter(
+                    (p) => p.questionKind === "multi_concept"
+                ).length,
+            },
             excludedTopics,
         });
         return {
             conceptSlots,
-            slotPlans: slotPlans.slice(0, n),
+            slotPlans,
             excludedTopics,
             source: "ai",
         };
@@ -616,5 +716,6 @@ export default {
     isAiArchetypeSteeringEnabled,
     buildArchetypePlanningPrompt,
     parseArchetypePlanResponse,
+    rebalanceSlotPlanKinds,
     resolveConceptArchetypeSteering,
 };

@@ -1,6 +1,7 @@
 /**
  * Hard-tier question mandate — generation prompts + deterministic validation.
- * Every hard question must be multi-concept, multi-step, non plug-in.
+ * Hard difficulty applies within each question kind (theory / direct / multi_concept);
+ * only multi_concept slots must be multi-concept + multi-step + non plug-in.
  */
 
 import { normalizeQuestionTier } from "./difficultyMix.service.js";
@@ -626,6 +627,35 @@ ${buildSkeletonGenerationComplianceBlock({ examProfile, examCalibrated: true })}
 - solveSteps that disagree with \`finalAnswer\``;
 };
 
+/**
+ * Feed prior-attempt difficulty-audit rejection reasons back into the next
+ * generation attempt so the model targets the SPECIFIC weakness the auditor
+ * named, instead of blindly resampling the same instructions and getting the
+ * same reject rate again.
+ */
+export const buildDifficultyRegenFeedbackBlock = (rejections = []) => {
+    const rows = (Array.isArray(rejections) ? rejections : [])
+        .filter((r) => r && Number.isFinite(Number(r.difficultyScore)))
+        .slice(0, 8);
+    if (!rows.length) return "";
+
+    const lines = rows
+        .map((r, i) => {
+            const label = r.conceptSlot ? ` [${r.conceptSlot}]` : "";
+            const reason =
+                String(r.reason || "").trim() || "too easy for assigned tier";
+            return `${i + 1}.${label} scored ${r.difficultyScore}/100 — ${reason}`;
+        })
+        .join("\n");
+
+    return `
+**PRIOR ATTEMPT REJECTED BY DIFFICULTY AUDIT — FIX THESE SPECIFIC WEAKNESSES:**
+The last batch was scored below the required difficulty bar. Do not just resubmit similar skeletons — address the NAMED weakness in each reason below:
+${lines}
+
+For this attempt: if a reason says "only 1 concept fused" → explicitly link ≥2 syllabus ideas in the stem. If it says "no derivation depth" / "too few solve steps" → add substantive intermediate solveSteps that build toward the answer. If it says "single-formula plug-in" → restructure so no step is a direct one-shot substitution. Treat each reason as a literal defect to correct, not generic feedback.`;
+};
+
 /** Map mandate failures to audit issues for difficulty scoring. */
 export const detectHardMandateIssues = (q, ctx = {}) => {
     const tier =
@@ -654,6 +684,7 @@ export default {
     buildHardQuestionMandateBlock,
     buildSkeletonGenerationComplianceBlock,
     buildVeteranExamNativeGenerationBlock,
+    buildDifficultyRegenFeedbackBlock,
     isExamNativeVeteranGeneration,
     isStemProfile,
     validateHardQuestionMandate,
