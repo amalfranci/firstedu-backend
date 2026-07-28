@@ -204,24 +204,60 @@ const markedOptionLetter = (q) => {
     return idx >= 0 ? String.fromCharCode(65 + idx) : null;
 };
 
-const formatExemplarBlock = (candidates) =>
-    candidates
+const formatExemplarBlock = (candidates) => {
+    const metadataOnly =
+        process.env.AI_QB_RAG_METADATA_ONLY === "1" ||
+        process.env.AI_QB_RAG_METADATA_ONLY === "true";
+
+    return candidates
         .map((q, i) => {
             const opts = (q.options || [])
-                .map((o, j) => `${String.fromCharCode(65 + j)}. ${String(o?.text || "").trim()}`)
-                .join("\n");
+                .map((o, j) =>
+                    String(o?.text || "").trim()
+                        ? `${String.fromCharCode(65 + j)}. ${String(o?.text || "").trim()}`
+                        : null
+                )
+                .filter(Boolean);
             const letter = markedOptionLetter(q);
+            const difficulty =
+                q.difficulty || q.difficultyTier || q.overallDifficulty || "";
+            const concept =
+                q.conceptSlot || q._conceptSlot || q.topic || q.subject || "";
+            const solvingLength = String(q.explanation || "")
+                .split(/(?:Step\s*\d+)/i)
+                .filter(Boolean).length;
+
+            if (metadataOnly) {
+                return [
+                    `Exemplar ${i + 1} (style metadata — do NOT copy content):`,
+                    concept ? `Concept: ${concept}` : "",
+                    difficulty ? `Difficulty example: ${difficulty}` : "",
+                    `Distractor pattern: ${opts.length} options; near-miss / adjacent-concept traps preferred`,
+                    solvingLength > 1
+                        ? `Expected solving length: ~${solvingLength} steps`
+                        : "Expected solving length: short",
+                    `Common mistakes to target in distractors: sign error, unit slip, adjacent formula, incomplete condition`,
+                    `Formula constraint: keep exam-legal relations for this concept only`,
+                    q._id ? `Prior question id: ${q._id}` : "",
+                    `Stem texture: ${stemSnippet(q.questionText)}`,
+                ]
+                    .filter(Boolean)
+                    .join("\n");
+            }
+
             return [
                 `Exemplar ${i + 1}:`,
                 `Question: ${q.questionText}`,
-                opts,
+                opts.join("\n"),
                 letter ? `Correct: ${letter}` : "",
+                difficulty ? `Difficulty: ${difficulty}` : "",
+                concept ? `Concept: ${concept}` : "",
             ]
                 .filter(Boolean)
                 .join("\n");
         })
         .join("\n\n");
-
+};
 const stemSnippet = (text) => {
     const s = String(text || "").replace(/\s+/g, " ").trim();
     if (!s) return "";
@@ -360,6 +396,7 @@ export const retrieveSimilarConfirmedQuestions = async ({
     subject = "",
     sectionName = "",
     conceptHints = [],
+    difficulty = "",
     k = DEFAULT_K,
 } = {}) => {
     if (!topic?.trim() && !bankName?.trim()) return emptyRetrieval("empty_query");
@@ -428,13 +465,29 @@ export const retrieveSimilarConfirmedQuestions = async ({
         }
         candidates = filtered;
 
+        // Phase C2: prefer candidates matching requested difficulty tier when set.
+        const wantTier = String(difficulty || "").toLowerCase().trim();
+        if (wantTier === "easy" || wantTier === "medium" || wantTier === "hard") {
+            const tierMatched = candidates.filter((c) => {
+                const d = String(
+                    c.difficulty || c.difficultyTier || ""
+                ).toLowerCase();
+                return d === wantTier;
+            });
+            if (tierMatched.length >= Math.min(4, k)) {
+                candidates = tierMatched;
+            }
+        }
+
         const model = resolveGeminiEmbeddingModel();
         const embeddingsById = await ensureEmbeddings(candidates, model);
         const queryText = buildRetrievalQueryText({
             topic,
             subject,
             sectionName,
-            conceptHints,
+            conceptHints: difficulty
+                ? [...(conceptHints || []), `${difficulty}-tier`]
+                : conceptHints,
         });
         const queryVector = await getEmbedding(queryText, { taskType: "RETRIEVAL_QUERY" });
 

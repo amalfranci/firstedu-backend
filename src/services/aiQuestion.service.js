@@ -128,6 +128,10 @@ import {
     reconcileQuestionBankWithIndependentVerify,
 } from "./questionNumericVerify.service.js";
 import { runAnswerCorrectnessPass } from "./answerCorrection.service.js";
+import { runIndependentVerificationPipeline } from "./independentVerification.service.js";
+import { applySymbolicVerificationToQuestions } from "./symbolicVerify.service.js";
+import { withStageTiming, recordVerificationTelemetry } from "./verificationTelemetry.service.js";
+import { parkLowConfidenceForHumanReview } from "./humanReviewQueue.service.js";
 import {
     repairSkeletonAuditRejections,
     repairDifficultyRejectedQuestions,
@@ -226,7 +230,26 @@ import {
     getAnthropicApiKey,
     normalizeGenerationProvider,
     resolveGenerationTemperature,
+    resolveVerificationStageProvider,
+    resolveProviderForDifficulty,
 } from "./generationProvider.service.js";
+import {
+    enrichSlotPlansToBlueprints,
+    blueprintsToPresetSteering,
+    buildExamBlueprintDistribution,
+    checkBlueprintCoverage,
+    buildBlueprintGenerationBlock,
+    isBlueprintPlannerEnabled,
+} from "./questionBlueprint.service.js";
+import {
+    retrieveDifficultyCalibration,
+    isDifficultyCalibrationEnabled,
+} from "./difficultyCalibration.service.js";
+import {
+    runDistractorPass,
+    isDistractorPassEnabled,
+} from "./distractorPass.service.js";
+import { runFormulaValidationPass } from "./formulaValidator.service.js";
 
 export {
     GEMINI_IMAGE_MODEL_IDS,
@@ -1022,6 +1045,38 @@ Do NOT convert theory items into calculations, and do NOT inject numeric variabl
         examProfile,
     });
     const postSolveSelfCheckBlock = buildPostSolveSelfCheckBlock();
+    const compactPrompts =
+        process.env.AI_QB_COMPACT_PROMPTS === "1" ||
+        process.env.AI_QB_COMPACT_PROMPTS === "true";
+    if (compactPrompts) {
+        return `You are an expert educator creating exam questions for an Indian competitive-education platform.
+${correctnessFirstBlock}
+${generationCorrectnessMandatesBlock}
+${explanationOptionLockBlock}
+${examNativeDifficultyBlock}
+${postSolveSelfCheckBlock}
+Generate exactly ${total} top-level items for a question bank with these specifications:
+
+**Question bank name:** ${bankName}
+**Topic / syllabus focus (AUTHORITATIVE):** ${syllabusFocus || topic}
+**Bank difficulty profile:** ${effectiveDifficulty}${difficultyResolution?.examCalibrated ? " (exam-native — all questions hard)" : ""}
+${difficultyMixBlock}
+${assignedTierSlotsBlock}
+${subjectBlock}
+${examReferenceBlock}
+${competitivePlanBlock}
+${hardMandateBlock}
+${excludeBlock}
+**Standalone counts:** single=${singleCount}, multiple=${multipleCount}, true_false=${trueFalseCount}
+**Passages:** ${resolvedPassageCount} (per-passage: single=${passageSingleCount}, multiple=${passageMultipleCount}, true_false=${passageTrueFalseCount})
+${kindMixBlock}
+Return ONLY a valid JSON array. Each item needs questionType, difficultyTier, questionText, options, correctAnswer, explanation.
+End every explanation with FINAL_ANSWER: <letter(s)>.
+${preOutputCorrectnessChecklist}
+${examAnswerKeyLockBlock}
+${exampleNote}
+Generate exactly ${singleCount} standalone single, ${multipleCount} standalone multiple, ${trueFalseCount} standalone true_false, and ${resolvedPassageCount} connected passage item(s). Return ONLY the JSON array.`;
+    }
     return `You are an expert educator creating exam questions for an Indian competitive-education platform.
 ${correctnessFirstBlock}
 ${generationCorrectnessMandatesBlock}
@@ -2113,7 +2168,10 @@ export const finalizeQuestionBankSuggestions = async ({
             {
                 callLlm: (auditPrompt) =>
                     callQuestionBankGenerationLLM(auditPrompt, {
-                        generationProvider: provider,
+                        generationProvider: resolveVerificationStageProvider(
+                            "difficulty_judge",
+                            provider
+                        ),
                         temperature: 0.1,
                     }),
             }
@@ -2214,11 +2272,86 @@ export const finalizeQuestionBankSuggestions = async ({
         issueCount: reconcileAudit.confirmedIssues?.length ?? 0,
     });
 
-    // NOTE: answer-key / explanation correctness is fixed by the repair call below
-    // (buildQuestionBankRepairPrompt MODE A) — no separate verification call is made
-    // here, so generation costs no extra LLM calls. The deterministic audit above
-    // decides what reaches that repair call. A deeper independent re-solve is available
-    // on demand via applyAnswerCorrectionToQuestionBank().
+    // Independent verification: blind solver + explanation verifier (env-gated).
+    // Unfixables are dropped here so strip/top-up only regenerates failures.
+    const examProfileForVerify = detectExamProfile({
+        bankName,
+        topic,
+        subject,
+        sectionName,
+        categoryPaths,
+    });
+    const solverProvider = resolveVerificationStageProvider(
+        "solver",
+        provider
+    );
+    let verificationStats = {
+        passed: 0,
+        fixed: 0,
+        regenerated: 0,
+        stripped: 0,
+    };
+    try {
+        const verification = await withStageTiming(
+            "independent_verification",
+            () =>
+                runIndependentVerificationPipeline(normalized, {
+                    topic,
+                    bankName,
+                    examProfile: examProfileForVerify,
+                    callLlm: (prompt) =>
+                        callQuestionBankGenerationLLM(prompt, {
+                            generationProvider: solverProvider,
+                            temperature: 0.1,
+                        }),
+                }),
+            { provider: solverProvider, topic, bankName }
+        );
+        normalized = verification.questions || normalized;
+        verificationStats = {
+            ...verificationStats,
+            ...(verification.verificationStats || {}),
+            stripped:
+                (verification.droppedCount || 0) +
+                (verification.verificationStats?.stripped || 0),
+            fixed: verification.fixedCount || 0,
+        };
+        if (verification.droppedCount > 0) {
+            pipelineTrace("FINALIZE_INDEPENDENT_SOLVER_DROPPED", {
+                dropped: verification.droppedCount,
+                byType: verification.droppedByType,
+            });
+        }
+    } catch (err) {
+        pipelineTrace("FINALIZE_INDEPENDENT_VERIFICATION_FAILED", {
+            error: err?.message || String(err),
+        });
+        console.warn(
+            `[ai-qb] independent verification failed — continuing with deterministic strip: ${err?.message || err}`
+        );
+    }
+
+    try {
+        const symbolic = await applySymbolicVerificationToQuestions(normalized, {
+            subject,
+        });
+        normalized = (symbolic.questions || normalized).filter(
+            (q) => q?._verification?.symbolicOk !== false
+        );
+        if (symbolic.failed > 0) {
+            verificationStats.stripped += symbolic.failed;
+            recordVerificationTelemetry({
+                stage: "symbolic_verify",
+                failed: symbolic.failed,
+                checked: symbolic.checked,
+            });
+        }
+    } catch (err) {
+        pipelineTrace("FINALIZE_SYMBOLIC_VERIFY_FAILED", {
+            error: err?.message || String(err),
+        });
+    }
+
     const repairFn =
         GEMINI_QB_CORRECTNESS_REPAIR_PASSES > 0
             ? (current, flawedEntries, pass) =>
@@ -2238,6 +2371,8 @@ export const finalizeQuestionBankSuggestions = async ({
             repairFn,
             maxRepairPasses: GEMINI_QB_CORRECTNESS_REPAIR_PASSES,
         });
+
+    verificationStats.stripped += strippedCount || 0;
 
     pipelineTrace('FINALIZE_STRIP', {
         strippedCount,
@@ -2298,6 +2433,7 @@ export const finalizeQuestionBankSuggestions = async ({
             });
             if (acceptedTopUp.length) {
                 cleaned = [...cleaned, ...acceptedTopUp];
+                verificationStats.regenerated += acceptedTopUp.length;
             }
         }
     }
@@ -2310,6 +2446,7 @@ export const finalizeQuestionBankSuggestions = async ({
         difficultySelfAuditRejected: selfAuditResult.rejectedCount,
         outputCount: cleaned.length,
         confirmedIssueCount: audit?.confirmedIssues?.length ?? 0,
+        verification: verificationStats,
     };
 
     cleaned = assignDifficultyTiersToQuestions(
@@ -2360,6 +2497,30 @@ export const finalizeQuestionBankSuggestions = async ({
     }
 
     pipelineTrace('FINALIZE_DONE', stats);
+
+    try {
+        const parked = await parkLowConfidenceForHumanReview(cleaned, {
+            topic,
+            bankName,
+            sectionName,
+        });
+        if (parked.parkedCount > 0) {
+            cleaned = parked.questions;
+            stats.verification = {
+                ...(stats.verification || {}),
+                humanReviewParked: parked.parkedCount,
+            };
+            stats.outputCount = cleaned.length;
+            pipelineTrace("FINALIZE_HUMAN_REVIEW_PARKED", {
+                parked: parked.parkedCount,
+                remaining: cleaned.length,
+            });
+        }
+    } catch (err) {
+        pipelineTrace("FINALIZE_HUMAN_REVIEW_FAILED", {
+            error: err?.message || String(err),
+        });
+    }
 
     return { questions: cleaned, stats };
 };
@@ -2708,8 +2869,33 @@ const generateSolveFirstSingles = async ({
     );
     // Local copies — swap-after-failures below mutates these per-attempt, and
     // steering may be a caller-supplied presetSteering shared across other calls.
-    const conceptSlots = [...(steering.conceptSlots || [])];
-    const slotPlans = [...(steering.slotPlans || [])];
+    let conceptSlots = [...(steering.conceptSlots || [])];
+    let slotPlans = [...(steering.slotPlans || [])];
+
+    // Phase C1: enrich to blueprints; drive per-slot difficulty tiers from plan.
+    let blueprints =
+        Array.isArray(steering.blueprints) && steering.blueprints.length
+            ? steering.blueprints
+            : isBlueprintPlannerEnabled()
+              ? enrichSlotPlansToBlueprints(slotPlans, {
+                    topic,
+                    bankDifficulty: effectiveDifficulty,
+                    examProfile,
+                    examCalibrated: difficultyResolution?.examCalibrated || false,
+                    catSection,
+                    subject: subjectId || subject,
+                })
+              : [];
+    if (blueprints.length && isBlueprintPlannerEnabled()) {
+        const mapped = blueprintsToPresetSteering(blueprints, steering.source || "blueprint");
+        conceptSlots = [...mapped.conceptSlots];
+        slotPlans = [...mapped.slotPlans];
+        pipelineTrace("BLUEPRINT_PLAN_APPLIED", {
+            slots: blueprints.length,
+            difficulties: blueprints.map((b) => b.difficulty),
+        });
+    }
+
     // Slot → question kind (calculative | theory), so the hard-quality gate judges
     // theory items on concept depth instead of numeric givens / solve steps.
     const kindBySlot = Object.fromEntries(
@@ -2717,11 +2903,38 @@ const generateSolveFirstSingles = async ({
             .filter((p) => p?.conceptSlot)
             .map((p) => [p.conceptSlot, p.questionKind || "multi_concept"])
     );
-    const difficultyTierSlots = buildDifficultyTierSlots(
-        singleCount,
-        effectiveDifficulty,
-        mixOpts
+    const difficultyTierSlots =
+        blueprints.length === singleCount
+            ? blueprints.map((b) =>
+                  String(b.difficulty || effectiveDifficulty || "hard").toLowerCase()
+              )
+            : buildDifficultyTierSlots(
+                  singleCount,
+                  effectiveDifficulty,
+                  mixOpts
+              );
+
+    // Phase C9: route provider by dominant difficulty in this batch.
+    const dominantDifficulty =
+        difficultyTierSlots.filter((t) => t === "hard").length >=
+        Math.ceil(difficultyTierSlots.length / 2)
+            ? "hard"
+            : difficultyTierSlots.filter((t) => t === "easy").length >=
+                Math.ceil(difficultyTierSlots.length / 2)
+              ? "easy"
+              : "medium";
+    const routedProvider = resolveProviderForDifficulty(
+        dominantDifficulty,
+        provider
     );
+    if (routedProvider !== provider) {
+        pipelineTrace("DIFFICULTY_MODEL_ROUTE", {
+            from: provider,
+            to: routedProvider,
+            dominantDifficulty,
+        });
+    }
+    const activeProvider = routedProvider;
 
     let questions = [];
     let runningExclude = [...excludeQuestionTexts];
@@ -2729,10 +2942,36 @@ const generateSolveFirstSingles = async ({
     let attempts = 0;
     let priorAttemptFeedback = [];
     const solveFirstMaxAttempts = getSolveFirstMaxAttempts({ examProfile });
-    const llmTemperature = resolveGenerationTemperature(provider, {
+    const llmTemperature = resolveGenerationTemperature(activeProvider, {
         genTemperature,
     });
 
+    // Phase C2: difficulty calibration exemplars (optional RAG grounding).
+    let calibrationBlock = retrievedQuestionContextBlock || "";
+    if (
+        isDifficultyCalibrationEnabled() &&
+        !calibrationBlock &&
+        dominantDifficulty
+    ) {
+        try {
+            const cal = await retrieveDifficultyCalibration({
+                topic,
+                bankName,
+                subject: subjectId || subject,
+                sectionName,
+                difficulty: dominantDifficulty,
+                conceptHints: conceptSlots.slice(0, 6),
+                k: 4,
+            });
+            if (cal.calibrationBlock) {
+                calibrationBlock = cal.calibrationBlock;
+            }
+        } catch (err) {
+            pipelineTrace("DIFFICULTY_CALIBRATION_FAILED", {
+                error: err?.message || String(err),
+            });
+        }
+    }
     if (examNativeVeteran) {
         pipelineTrace("VETERAN_GENERATION_STRATEGY", {
             skeletonDifficultyAudit: !skipLlmDifficultyAudit,
@@ -2822,16 +3061,31 @@ const generateSolveFirstSingles = async ({
             questions.length + need
         );
 
+        const slicePlans = slotPlans.slice(
+            questions.length,
+            questions.length + need
+        );
+        const sliceBlueprints =
+            blueprints.length > questions.length
+                ? blueprints.slice(questions.length, questions.length + need)
+                : enrichSlotPlansToBlueprints(slicePlans, {
+                      topic,
+                      bankDifficulty: effectiveDifficulty,
+                      examProfile,
+                      examCalibrated:
+                          difficultyResolution?.examCalibrated || false,
+                      catSection,
+                      subject: subjectId || subject,
+                  });
+        const blueprintBlock = buildBlueprintGenerationBlock(sliceBlueprints);
+
         const prompt = buildSolveFirstSkeletonPrompt({
             topic,
             bankName,
             difficulty: effectiveDifficulty,
             count: need,
             conceptSlots: slots,
-            slotPlans: slotPlans.slice(
-                questions.length,
-                questions.length + need
-            ),
+            slotPlans: slicePlans,
             archetypeSteeringSource: steering.source,
             difficultyTierSlots: tiers,
             excludeQuestionTexts: runningExclude,
@@ -2843,19 +3097,22 @@ const generateSolveFirstSingles = async ({
             sectionName,
             subject,
             examProfile,
-            examReferenceBlock,
+            examReferenceBlock: [blueprintBlock, examReferenceBlock]
+                .filter(Boolean)
+                .join("\n"),
             difficultyResolution,
             slotOffset: archetypeOffset + questions.length,
             generateIntent,
             topicRelevanceFeedback,
             maxSelectableSlots,
             referenceCalibrationBlock,
-            retrievedQuestionContextBlock,
+            retrievedQuestionContextBlock:
+                calibrationBlock || retrievedQuestionContextBlock,
             priorAttemptFeedback,
         });
 
         const rawText = await callQuestionBankGenerationLLM(prompt, {
-            generationProvider: provider,
+            generationProvider: activeProvider,
             temperature: llmTemperature,
         });
 
@@ -3107,8 +3364,10 @@ const generateSolveFirstSingles = async ({
             );
         } else if (
             difficultyResolution?.examCalibrated &&
-            isVeteranDifficultyEnabled()
+            isVeteranDifficultyEnabled() &&
+            questions.length > 0
         ) {
+            // Partial veteran yield — keep what passed gates; don't dilute with easy filler.
             pipelineTrace("SOLVE_FIRST_VETERAN_NO_FALLBACK", {
                 produced: questions.length,
                 target: singleCount,
@@ -3119,14 +3378,27 @@ const generateSolveFirstSingles = async ({
                 `[solve-first] veteran mode: ${questions.length}/${singleCount} after ${attempts} attempt(s) — no one-shot fallback (quality over easy filler)`
             );
         } else {
-            pipelineTrace('SOLVE_FIRST_FALLBACK', {
-                produced: questions.length,
-                target: singleCount,
-                deficit,
-                attempts,
-            });
+            // Includes veteran total wipeout (produced===0): empty UI is worse than
+            // a fallback batch that still goes through finalize correctness gates.
+            const emergencyVeteranWipeout =
+                difficultyResolution?.examCalibrated &&
+                isVeteranDifficultyEnabled() &&
+                questions.length === 0;
+            pipelineTrace(
+                emergencyVeteranWipeout
+                    ? "SOLVE_FIRST_VETERAN_EMERGENCY_FALLBACK"
+                    : "SOLVE_FIRST_FALLBACK",
+                {
+                    produced: questions.length,
+                    target: singleCount,
+                    deficit,
+                    attempts,
+                }
+            );
             console.warn(
-                `[solve-first] ${questions.length}/${singleCount} after ${attempts} attempt(s) — one-shot fallback for ${deficit}`
+                `[solve-first] ${questions.length}/${singleCount} after ${attempts} attempt(s) — ${
+                    emergencyVeteranWipeout ? "emergency " : ""
+                }one-shot fallback for ${deficit}`
             );
 
             const fallbackPrompt = buildQuestionBankPrompt({
@@ -3153,7 +3425,7 @@ const generateSolveFirstSingles = async ({
             });
 
             const fallbackRaw = await callQuestionBankGenerationLLM(fallbackPrompt, {
-                generationProvider: provider,
+                generationProvider: activeProvider || provider,
                 temperature: llmTemperature,
             });
 
@@ -3183,7 +3455,9 @@ const generateSolveFirstSingles = async ({
                 } catch (err) {
                     pipelineTrace("GENERATION_CORRECTNESS_REJECT", {
                         attempt: attempts,
-                        source: "solve_first_fallback",
+                        source: emergencyVeteranWipeout
+                            ? "solve_first_veteran_emergency_fallback"
+                            : "solve_first_fallback",
                         error: err?.message || String(err),
                         stem: String(q?.questionText || "").slice(0, 120),
                     });
@@ -3192,6 +3466,7 @@ const generateSolveFirstSingles = async ({
             pipelineTrace("SOLVE_FIRST_FALLBACK_VERIFIED", {
                 produced: fallbackParsed.length,
                 accepted: verifiedFallback.length,
+                emergencyVeteranWipeout,
             });
             questions = questions.concat(verifiedFallback);
         }
@@ -3204,11 +3479,58 @@ const generateSolveFirstSingles = async ({
             : null;
     }
 
-    return assignDifficultyTiersToQuestions(
-        questions.slice(0, singleCount),
-        effectiveDifficulty,
-        mixOpts
-    );
+    let finalized = questions.slice(0, singleCount);
+
+    // Stamp blueprint metadata onto each question (1:1 when lengths match).
+    if (blueprints.length) {
+        finalized = finalized.map((q, i) => {
+            const b = blueprints[i];
+            if (!b) return q;
+            return {
+                ...q,
+                difficulty: b.difficulty || q.difficulty,
+                difficultyTier: b.difficulty || q.difficultyTier,
+                _conceptSlot: q._conceptSlot || b.conceptSlot,
+                _questionKind: q._questionKind || b.questionKind,
+                _blueprint: b,
+                blooms: b.blooms,
+                estimatedTime: b.estimatedTime,
+            };
+        });
+    } else {
+        finalized = assignDifficultyTiersToQuestions(
+            finalized,
+            effectiveDifficulty,
+            mixOpts
+        );
+    }
+
+    // Phase C8: formula allow-list / impossible-pattern gate
+    {
+        const formulaResult = runFormulaValidationPass(finalized, { topic });
+        finalized = formulaResult.questions;
+    }
+
+    // Phase C6: dedicated distractor pass
+    if (isDistractorPassEnabled()) {
+        try {
+            const dist = await runDistractorPass(finalized, {
+                topic,
+                callLlm: (prompt) =>
+                    callQuestionBankGenerationLLM(prompt, {
+                        generationProvider: activeProvider,
+                        temperature: 0.35,
+                    }),
+            });
+            finalized = dist.questions;
+        } catch (err) {
+            pipelineTrace("DISTRACTOR_PASS_ERROR", {
+                error: err?.message || String(err),
+            });
+        }
+    }
+
+    return finalized;
 };
 
 /**
@@ -4034,7 +4356,10 @@ export const applyAnswerCorrectionToQuestionBank = async (params = {}) => {
         };
     }
 
-    const provider = assertGenerationProviderConfigured(generationProvider);
+    const provider = resolveVerificationStageProvider(
+        "solver",
+        assertGenerationProviderConfigured(generationProvider)
+    );
     const examCtx = resolveExamContextForGeneration({
         topic,
         bankName,
@@ -4188,24 +4513,64 @@ export const planQuestionBankTopics = async (params) => {
         questionKind: p.questionKind || "multi_concept",
     }));
 
-    const kindRatio = summarizeKindComposition(includedTopics);
+    const examDistribution = buildExamBlueprintDistribution({
+        totalSlots: slotCount,
+        bankDifficulty: difficultyResolution.generationDifficulty,
+        examProfile: examCtx.examProfile,
+        examCalibrated: difficultyResolution.examCalibrated,
+        subjects: competitiveExamPlan?.subjects || [],
+    });
+
+    let blueprints = [];
+    let finalSteering = steering;
+    if (isBlueprintPlannerEnabled()) {
+        blueprints = enrichSlotPlansToBlueprints(steering.slotPlans || [], {
+            topic,
+            bankDifficulty: difficultyResolution.generationDifficulty,
+            examProfile: examCtx.examProfile,
+            examCalibrated: difficultyResolution.examCalibrated,
+            catSection: examCtx.catSection,
+            subject: resolvedSubject.id || subject,
+        });
+        finalSteering = {
+            ...blueprintsToPresetSteering(blueprints, steering.source || "blueprint"),
+            excludedTopics: steering.excludedTopics || [],
+        };
+    }
+
+    const enrichedTopics = (finalSteering.slotPlans || []).map((p) => ({
+        conceptSlot: p.conceptSlot,
+        label: humanizeTopicLabel(p),
+        description: humanizeTopicDescription(p),
+        questionKind: p.questionKind || "multi_concept",
+        difficulty: p.difficulty,
+        blooms: p.blooms,
+        estimatedTime: p.estimatedTime,
+        type: p.type || "single",
+    }));
+
+    const kindRatio = summarizeKindComposition(enrichedTopics);
 
     pipelineTrace("TOPIC_PLAN", {
-        source: steering.source,
-        slotCount: includedTopics.length,
-        excludedCount: (steering.excludedTopics || []).length,
+        source: finalSteering.source,
+        slotCount: enrichedTopics.length,
+        excludedCount: (finalSteering.excludedTopics || []).length,
         replanned: Boolean(String(planningFeedback || "").trim()),
         kindRatio: kindRatio.label,
+        blueprintEnabled: isBlueprintPlannerEnabled(),
     });
 
     return {
-        includedTopics,
-        excludedTopics: steering.excludedTopics || [],
+        includedTopics: enrichedTopics,
+        excludedTopics: finalSteering.excludedTopics || [],
         kindRatio,
+        blueprints,
+        examDistribution,
         steering: {
-            conceptSlots: steering.conceptSlots,
-            slotPlans: steering.slotPlans,
-            source: steering.source,
+            conceptSlots: finalSteering.conceptSlots,
+            slotPlans: finalSteering.slotPlans,
+            blueprints,
+            source: finalSteering.source,
         },
         meta: {
             subject:
@@ -4215,8 +4580,9 @@ export const planQuestionBankTopics = async (params) => {
             difficulty: difficultyResolution.generationDifficulty,
             examCalibrated: difficultyResolution.examCalibrated,
             examProfile: examCtx.examProfile,
-            slotCount: includedTopics.length,
+            slotCount: enrichedTopics.length,
             kindRatio,
+            examDistribution,
         },
     };
 };
@@ -4337,6 +4703,39 @@ export const generateQuestionBankSuggestions = async (params) => {
         passageMultipleCount: resolvedPassageMultipleCount,
         passageTrueFalseCount: resolvedPassageTrueFalseCount,
     }));
+
+    // Hard ceiling from the UI section/bank empty-slot limit — never generate more
+    // than maxSelectableSlots when the client sent an explicit cap.
+    if (
+        Number(maxSelectableSlots) > 0 &&
+        generateIntent !== "evaluation_regen"
+    ) {
+        const selectableBefore = countSelectableSlots({
+            singleCount: resolvedSingleCount,
+            multipleCount: resolvedMultipleCount,
+            trueFalseCount: resolvedTrueFalseCount,
+            passageCount: resolvedPassageCount,
+            passageSingleCount: resolvedPassageSingleCount,
+            passageMultipleCount: resolvedPassageMultipleCount,
+            passageTrueFalseCount: resolvedPassageTrueFalseCount,
+        });
+        if (selectableBefore > Number(maxSelectableSlots)) {
+            const slotCap = Number(maxSelectableSlots);
+            pipelineTrace("COUNT_CLAMPED_TO_SLOT_LIMIT", {
+                from: selectableBefore,
+                to: slotCap,
+                singleCount: resolvedSingleCount,
+                multipleCount: resolvedMultipleCount,
+            });
+            resolvedSingleCount = slotCap;
+            resolvedMultipleCount = 0;
+            resolvedTrueFalseCount = 0;
+            resolvedPassageCount = 0;
+            resolvedPassageSingleCount = 0;
+            resolvedPassageMultipleCount = 0;
+            resolvedPassageTrueFalseCount = 0;
+        }
+    }
 
     if (generateIntent === "evaluation_regen") {
         const flawed = extractRegenerationTargetNumbers(topicRelevanceFeedback);
@@ -4846,6 +5245,46 @@ export const generateQuestionBankSuggestions = async (params) => {
             });
         }
 
+        // Phase C7: blueprint coverage checker
+        const planBlueprints =
+            Array.isArray(presetSteering?.blueprints) &&
+            presetSteering.blueprints.length
+                ? presetSteering.blueprints
+                : Array.isArray(presetSteering?.slotPlans)
+                  ? enrichSlotPlansToBlueprints(presetSteering.slotPlans, {
+                        topic,
+                        bankDifficulty: generationDifficulty,
+                        examProfile: difficultyResolution?.examProfile,
+                        examCalibrated:
+                            difficultyResolution?.examCalibrated || false,
+                        subject: resolvedSubject?.id || subject,
+                    })
+                  : [];
+        const examDistribution = buildExamBlueprintDistribution({
+            totalSlots: planBlueprints.length || cappedQuestions.length,
+            bankDifficulty: generationDifficulty,
+            examProfile: difficultyResolution?.examProfile,
+            examCalibrated: difficultyResolution?.examCalibrated || false,
+            subjects: competitiveExamPlan?.subjects || [],
+        });
+        const coverage = checkBlueprintCoverage(
+            planBlueprints,
+            cappedQuestions,
+            { examDistribution }
+        );
+        pipelineTrace("BLUEPRINT_COVERAGE", {
+            ok: coverage.ok,
+            expected: coverage.expectedCount,
+            generated: coverage.generatedCount,
+            missing: coverage.missing?.length || 0,
+            difficultyGaps: coverage.difficultyGaps?.length || 0,
+        });
+        pipelineSummary = {
+            ...pipelineSummary,
+            blueprintCoverage: coverage,
+            examDistribution,
+        };
+
         return {
             questions: cappedQuestions,
             detectedSubject: resolvedSubject,
@@ -4856,6 +5295,9 @@ export const generateQuestionBankSuggestions = async (params) => {
             difficultyResolution,
             generationDifficulty,
             ragMeta: mergedRagMeta,
+            blueprintCoverage: coverage,
+            blueprints: planBlueprints,
+            examDistribution,
             validationDeferred: promptFirst ? false : deferValidation,
             skipBackgroundValidation: promptFirst,
             backgroundValidationContext:

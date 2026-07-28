@@ -49,3 +49,71 @@ export const generationProviderLabel = (provider) => {
     if (p === "claude") return "Claude";
     return "Gemini";
 };
+
+/**
+ * Phase C9 — route generation provider by difficulty tier.
+ * Env:
+ *   AI_QB_EASY_PROVIDER=gemini
+ *   AI_QB_MEDIUM_PROVIDER=claude
+ *   AI_QB_HARD_PROVIDER=openai
+ * Falls back to fallbackProvider when unset / key missing.
+ */
+export const resolveProviderForDifficulty = (
+    difficulty = "hard",
+    fallbackProvider = "gemini"
+) => {
+    const tier = String(difficulty || "hard").toLowerCase().trim();
+    const envKey =
+        tier === "easy"
+            ? "AI_QB_EASY_PROVIDER"
+            : tier === "medium"
+              ? "AI_QB_MEDIUM_PROVIDER"
+              : "AI_QB_HARD_PROVIDER";
+    const raw = String(process.env[envKey] || "").trim().toLowerCase();
+    const fallback = normalizeGenerationProvider(fallbackProvider);
+    if (!raw) return fallback;
+    try {
+        return assertGenerationProviderConfigured(raw);
+    } catch {
+        return fallback;
+    }
+};
+
+/**
+ * Per-stage provider override (solver / difficulty_judge / audit).
+ * Falls back to generation provider when unset or key missing.
+ */
+export const resolveVerificationStageProvider = (
+    stage,
+    fallbackProvider = "gemini"
+) => {
+    const fallback = normalizeGenerationProvider(fallbackProvider);
+    const envKey =
+        stage === "solver"
+            ? "AI_QB_SOLVER_PROVIDER"
+            : stage === "difficulty_judge"
+              ? "AI_QB_DIFFICULTY_JUDGE_PROVIDER"
+              : stage === "audit"
+                ? "AI_QB_AUDIT_PROVIDER"
+                : null;
+    const raw = envKey
+        ? String(process.env[envKey] || "").trim().toLowerCase()
+        : "";
+    const candidate = raw
+        ? normalizeGenerationProvider(raw)
+        : stage === "difficulty_judge" || stage === "audit"
+          ? process.env.OPENAI_API_KEY
+              ? "openai"
+              : fallback
+          : fallback;
+
+    try {
+        return assertGenerationProviderConfigured(candidate);
+    } catch {
+        try {
+            return assertGenerationProviderConfigured(fallback);
+        } catch {
+            return fallback;
+        }
+    }
+};

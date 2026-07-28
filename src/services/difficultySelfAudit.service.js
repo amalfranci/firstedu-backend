@@ -31,6 +31,10 @@ export const SKELETON_DIFFICULTY_SELF_AUDIT_MIN_SCORE = Number(
 const SKELETON_SELF_AUDIT_RELAXED_FLOOR = Number(
     process.env.AI_QB_SKELETON_SELF_AUDIT_RELAXED_FLOOR || 72
 );
+/** Last attempt only — admit near-misses so Physics/STEM batches don't wipe to 0. */
+const SKELETON_SELF_AUDIT_LAST_ATTEMPT_FLOOR = Number(
+    process.env.AI_QB_SKELETON_SELF_AUDIT_LAST_ATTEMPT_FLOOR || 55
+);
 
 const SKELETON_SELF_AUDIT_RELAX_THRESHOLD = Number(
     process.env.AI_QB_SKELETON_SELF_AUDIT_RELAX_THRESHOLD || 0.5
@@ -43,19 +47,21 @@ export const isDifficultySelfAuditEnabled = () => {
 };
 
 /**
- * Exam-native JEE/NEET: trust generation prompts + code mandates — skip LLM difficulty scoring.
- * Set AI_QB_DIFFICULTY_SELF_AUDIT=1 to force audit; =0 to disable globally.
- *
- * Difficulty LLM audits were the main latency source on JEE full-paper Physics
- * (extra call per attempt + reject loops that burned 6 attempts/chunk). Correctness
- * gates (solve-steps vs marked answer) remain on; force AI_QB_DIFFICULTY_SELF_AUDIT=1
- * if you need the old strict difficulty filter.
+ * Difficulty LLM judge: default ON even for exam-native (independent verification).
+ * Set AI_QB_DIFFICULTY_SELF_AUDIT=0 to disable globally.
+ * Set AI_QB_DIFFICULTY_JUDGE=0 to restore legacy skip-on-exam-native behaviour.
+ * Set AI_QB_DIFFICULTY_SELF_AUDIT=1 to force audit (same as judge default now).
  */
 export const shouldSkipLlmDifficultySelfAudit = (difficultyResolution) => {
     const flag = process.env.AI_QB_DIFFICULTY_SELF_AUDIT;
     if (flag === "1" || flag === "true") return false;
     if (flag === "0" || flag === "false") return true;
-    return isExamNativeVeteranGeneration(difficultyResolution);
+    const judgeFlag = process.env.AI_QB_DIFFICULTY_JUDGE;
+    // Default: do NOT skip (independent difficulty judge always runs).
+    if (judgeFlag === "0" || judgeFlag === "false") {
+        return isExamNativeVeteranGeneration(difficultyResolution);
+    }
+    return false;
 };
 
 const truncate = (text, max = 320) => {
@@ -313,7 +319,13 @@ export const applySkeletonDifficultySelfAuditGate = async (
             // so admit near-bar skeletons rather than return nothing. On any
             // earlier attempt, leave the bar intact and let the caller's retry
             // loop regenerate the deficit at full quality instead.
-            effectiveMin = Math.min(minScore, SKELETON_SELF_AUDIT_RELAXED_FLOOR);
+            // Use a lower floor than mid-run relax (72) — flash-lite Physics often
+            // scores 55–75 and previously wiped the whole batch at the 72 bar.
+            effectiveMin = Math.min(
+                minScore,
+                SKELETON_SELF_AUDIT_LAST_ATTEMPT_FLOOR,
+                SKELETON_SELF_AUDIT_RELAXED_FLOOR
+            );
             pipelineTrace("SKELETON_SELF_AUDIT_RELAXED", {
                 inputCount: asAuditItems.length,
                 wouldReject,
@@ -321,6 +333,7 @@ export const applySkeletonDifficultySelfAuditGate = async (
                 minScore,
                 effectiveMin,
                 scoredCount,
+                lastAttempt: true,
             });
         } else {
             pipelineTrace("SKELETON_SELF_AUDIT_RELAX_SKIPPED", {
@@ -364,6 +377,30 @@ export const applySkeletonDifficultySelfAuditGate = async (
             inputCount: list.length,
             kept: kept.length,
             rejected: rejected.length,
+        });
+    }
+
+    // Absolute last resort: if every skeleton is below the (already relaxed) floor on
+    // the final attempt, keep the highest-scoring ones so generation is not empty.
+    if (ctx.isLastAttempt && kept.length === 0 && rejected.length > 0) {
+        const ranked = [...rejected].sort(
+            (a, b) => (b.difficultyScore || 0) - (a.difficultyScore || 0)
+        );
+        const salvageCount = Math.max(1, Math.ceil(list.length / 2));
+        const salvage = ranked.slice(0, salvageCount);
+        for (const row of salvage) {
+            kept.push(row.skeleton);
+            keptIndices.push(row.skeletonIndex);
+        }
+        const salvagedIndexes = new Set(salvage.map((r) => r.skeletonIndex));
+        const stillRejected = rejected.filter(
+            (r) => !salvagedIndexes.has(r.skeletonIndex)
+        );
+        rejected.length = 0;
+        rejected.push(...stillRejected);
+        pipelineTrace("SKELETON_SELF_AUDIT_LAST_ATTEMPT_SALVAGE", {
+            salvaged: salvage.length,
+            scores: salvage.map((r) => r.difficultyScore),
         });
     }
 

@@ -34,6 +34,7 @@ import {
     buildExplanationOptionLockBlock,
     buildExamAnswerKeyLockBlock,
 } from "./examPromptContext.service.js";
+import { runTasksWithConcurrency } from "./aiQuestionCountInference.service.js";
 
 /** Default ON — set AI_QB_ANSWER_CORRECTION=0 to disable (restores prior behaviour). */
 export const isAnswerCorrectionEnabled = () => {
@@ -44,6 +45,10 @@ export const isAnswerCorrectionEnabled = () => {
 
 /** Questions per independent-solve LLM call. */
 const SOLVE_BATCH_SIZE = Number(process.env.AI_QB_ANSWER_CORRECTION_BATCH || 10);
+const SOLVE_CONCURRENCY = Math.max(
+    1,
+    Number(process.env.AI_QB_ANSWER_CORRECTION_CONCURRENCY || 3)
+);
 
 /**
  * A low-confidence disagreement is usually the checker failing to solve, not a real
@@ -268,27 +273,31 @@ export const runAnswerCorrectnessPass = async (
 
     // ── 1. Independent re-solve (stem + options only) ──────────────────────────
     const solved = new Map();
-    for (const batch of chunk(entries, SOLVE_BATCH_SIZE)) {
-        try {
-            const raw = await callLlm(
-                buildIndependentSolvePrompt({
-                    questions: batch,
-                    topic: topic || bankName,
-                    examProfile,
-                })
-            );
-            const parsed = parseIndependentSolveResponse(raw, batch.length);
-            for (const [localIdx, result] of parsed.entries()) {
-                const globalIdx = entries.indexOf(batch[localIdx]);
-                if (globalIdx >= 0) solved.set(globalIdx, result);
+    const solveBatches = chunk(entries, SOLVE_BATCH_SIZE);
+    await runTasksWithConcurrency(
+        solveBatches.map((batch) => async () => {
+            try {
+                const raw = await callLlm(
+                    buildIndependentSolvePrompt({
+                        questions: batch,
+                        topic: topic || bankName,
+                        examProfile,
+                    })
+                );
+                const parsed = parseIndependentSolveResponse(raw, batch.length);
+                for (const [localIdx, result] of parsed.entries()) {
+                    const globalIdx = entries.indexOf(batch[localIdx]);
+                    if (globalIdx >= 0) solved.set(globalIdx, result);
+                }
+            } catch (err) {
+                pipelineTrace("ANSWER_CORRECTION_SOLVE_FAILED", {
+                    error: err?.message || String(err),
+                    batchSize: batch.length,
+                });
             }
-        } catch (err) {
-            pipelineTrace("ANSWER_CORRECTION_SOLVE_FAILED", {
-                error: err?.message || String(err),
-                batchSize: batch.length,
-            });
-        }
-    }
+        }),
+        SOLVE_CONCURRENCY
+    );
 
     // Mark everything we solved as checked so later finalize passes (per-chunk AND the
     // merged-bank pass) skip it. Done here, before the early return below, so it applies
@@ -353,27 +362,41 @@ export const runAnswerCorrectnessPass = async (
         return { ...noop, questions: next, checkedCount: entries.length };
     }
 
-    // ── 3. Fix in place ───────────────────────────────────────────────────────
+    // ── 3. Fix in place (parallel LLM calls, sequential apply) ────────────────
     let fixedCount = 0;
     const unfixableRefs = [];
     const report = [];
 
-    for (const batch of chunk(fixSet, SOLVE_BATCH_SIZE)) {
-        let parsed;
-        try {
-            const raw = await callLlm(
-                buildAnswerExplanationFixPrompt({
-                    entries: batch,
-                    topic: topic || bankName,
-                    examProfile,
-                })
-            );
-            parsed = parseAnswerFixResponse(raw, batch.length);
-        } catch (err) {
-            pipelineTrace("ANSWER_CORRECTION_FIX_FAILED", {
-                error: err?.message || String(err),
-                batchSize: batch.length,
-            });
+    const fixBatches = chunk(fixSet, SOLVE_BATCH_SIZE);
+    const fixParsedByBatch = await runTasksWithConcurrency(
+        fixBatches.map((batch, batchIndex) => async () => {
+            try {
+                const raw = await callLlm(
+                    buildAnswerExplanationFixPrompt({
+                        entries: batch,
+                        topic: topic || bankName,
+                        examProfile,
+                    })
+                );
+                return {
+                    batchIndex,
+                    batch,
+                    parsed: parseAnswerFixResponse(raw, batch.length),
+                    error: null,
+                };
+            } catch (err) {
+                pipelineTrace("ANSWER_CORRECTION_FIX_FAILED", {
+                    error: err?.message || String(err),
+                    batchSize: batch.length,
+                });
+                return { batchIndex, batch, parsed: null, error: err };
+            }
+        }),
+        SOLVE_CONCURRENCY
+    );
+
+    for (const { batch, parsed, error } of fixParsedByBatch) {
+        if (error || !parsed) {
             batch.forEach((e) =>
                 unfixableRefs.push({ ref: e.ref, reason: "fix call failed" })
             );
@@ -398,24 +421,39 @@ export const runAnswerCorrectnessPass = async (
             }
 
             const markedText = opts[fix.correctIndex];
-            // Build the explanation from the RAW steps — lockExplanationToMarkedOption adds
-            // the "Therefore, the correct answer is …" closing itself. Feeding it the synced
-            // steps (which already carry that closing) would duplicate it.
+            const correctLetter = letter(fix.correctIndex);
             const steps = fix.solveSteps.length
-                ? syncSolveStepsToMarkedAnswer(fix.solveSteps, markedText)
+                ? syncSolveStepsToMarkedAnswer(fix.solveSteps, markedText).map(
+                      (s, si, arr) =>
+                          si === arr.length - 1
+                              ? `${String(s || "")
+                                    .replace(/\s*FINAL_ANSWER\s*:\s*[^\n.]*/gi, "")
+                                    .trim()} FINAL_ANSWER: ${correctLetter}`
+                              : s
+                  )
                 : [];
             const explanation = fix.solveSteps.length
-                ? lockExplanationToMarkedOption(fix.solveSteps, markedText)
+                ? lockExplanationToMarkedOption(fix.solveSteps, markedText, {
+                      correctLetter,
+                  })
                 : fix.explanation || entry.question.explanation;
 
-            // Spread from the CURRENT version at this ref, not the entry snapshot taken
-            // before stamping — otherwise the fix would wipe the _answerChecked flag.
             const updated = {
                 ...(getAtRef(next, entry.ref) || entry.question),
                 correctIndex: fix.correctIndex,
-                correctAnswer: letter(fix.correctIndex),
+                correctAnswer: correctLetter,
                 explanation,
                 ...(steps.length ? { _solveSteps: steps } : {}),
+                _verification: {
+                    ...((getAtRef(next, entry.ref) || entry.question)?._verification ||
+                        {}),
+                    status: "fixed",
+                    answerConfidence:
+                        entry.reasons?.some((r) => /Independent re-solve/i.test(r))
+                            ? "medium"
+                            : "high",
+                    explanationOk: true,
+                },
             };
             next = setAtRef(next, entry.ref, updated);
             fixedCount++;

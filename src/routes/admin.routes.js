@@ -265,6 +265,10 @@ import {
   runCleanupNowController,
   forceCleanupController,
 } from '../controllers/adminCleanup.controller.js';
+import {
+  listAiQuestionReviewQueue,
+  updateAiQuestionReviewItem,
+} from '../controllers/aiQuestionReview.controller.js';
 
 import {
   createPressAnnouncement,
@@ -1019,6 +1023,20 @@ router.post(
   verifyJWT,
   verifyAdmin,
   forceCleanupController
+);
+
+router.get(
+  '/ai/review-queue',
+  verifyJWT,
+  verifyAdmin,
+  listAiQuestionReviewQueue
+);
+
+router.patch(
+  '/ai/review-queue/:id',
+  verifyJWT,
+  verifyAdmin,
+  updateAiQuestionReviewItem
 );
 
 export default router;
