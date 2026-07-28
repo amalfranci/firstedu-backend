@@ -529,6 +529,7 @@ const isRetryableQuestionBankError = (error) => {
     if (msg.includes("invalid answer")) return true;
     if (msg.includes("multiple-choice needs")) return true;
     if (msg.includes("multiple-choice questions can have at most")) return true;
+    if (msg.includes("multiple-choice questions can have at most")) return true;
     if (msg.includes("options must be answer text")) return true;
     if (msg.includes("Response is not an array")) return true;
     if (msg.includes("Response is not a JSON array")) return true;
@@ -1065,6 +1066,7 @@ ${relevanceFeedbackBlock}${excludeBlock}
 2. Each standalone item must include: questionType, difficultyTier, questionText, options, correctAnswer, explanation. Each passage sub-question must include difficultyTier.
 3. questionType must be exactly one of: "single", "multiple", "true_false", "connected".
 4. For "single": exactly 4 options; correctAnswer is one letter "A", "B", "C", or "D".
+5. For "multiple": exactly 4 options; correctAnswer is an array of EXACTLY 2 letters, e.g. ["A","C"]. Never mark 3 or all 4 options correct — a multiple-correct question always has exactly 2 right answers and 2 wrong ones.
 5. For "multiple": exactly 4 options; correctAnswer is an array of EXACTLY 2 letters, e.g. ["A","C"]. Never mark 3 or all 4 options correct — a multiple-correct question always has exactly 2 right answers and 2 wrong ones.
 6. For "true_false": options must be ["True", "False"]; correctAnswer is "True" or "False".
 7. For "connected" (reading passage): include title (short label), passage (reading paragraph — ${passageLengthInstruction}), and subQuestions array with exactly ${passageSubPerPassage} sub-question(s) per passage (${passageSingleCount} single, ${passageMultipleCount} multiple, ${passageTrueFalseCount} true_false in EACH passage). Sub-questions must use only types single, multiple, or true_false. Each sub-question must be answerable ONLY from its passage. Do NOT repeat standalone questions as passage sub-questions. Do NOT put all singles in passage 1 and all true/false in passage 2 — every passage must follow the per-passage mix above.
