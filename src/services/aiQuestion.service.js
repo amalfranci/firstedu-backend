@@ -4791,39 +4791,6 @@ export const generateQuestionBankSuggestions = async (params) => {
         passageTrueFalseCount: resolvedPassageTrueFalseCount,
     }));
 
-    // Hard ceiling from the UI section/bank empty-slot limit — never generate more
-    // than maxSelectableSlots when the client sent an explicit cap.
-    if (
-        Number(maxSelectableSlots) > 0 &&
-        generateIntent !== "evaluation_regen"
-    ) {
-        const selectableBefore = countSelectableSlots({
-            singleCount: resolvedSingleCount,
-            multipleCount: resolvedMultipleCount,
-            trueFalseCount: resolvedTrueFalseCount,
-            passageCount: resolvedPassageCount,
-            passageSingleCount: resolvedPassageSingleCount,
-            passageMultipleCount: resolvedPassageMultipleCount,
-            passageTrueFalseCount: resolvedPassageTrueFalseCount,
-        });
-        if (selectableBefore > Number(maxSelectableSlots)) {
-            const slotCap = Number(maxSelectableSlots);
-            pipelineTrace("COUNT_CLAMPED_TO_SLOT_LIMIT", {
-                from: selectableBefore,
-                to: slotCap,
-                singleCount: resolvedSingleCount,
-                multipleCount: resolvedMultipleCount,
-            });
-            resolvedSingleCount = slotCap;
-            resolvedMultipleCount = 0;
-            resolvedTrueFalseCount = 0;
-            resolvedPassageCount = 0;
-            resolvedPassageSingleCount = 0;
-            resolvedPassageMultipleCount = 0;
-            resolvedPassageTrueFalseCount = 0;
-        }
-    }
-
     if (generateIntent === "evaluation_regen") {
         const flawed = extractRegenerationTargetNumbers(topicRelevanceFeedback);
         pipelineTrace("REGEN_TARGETED", {
