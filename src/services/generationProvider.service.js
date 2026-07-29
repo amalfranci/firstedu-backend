@@ -103,23 +103,22 @@ export const resolveVerificationStageProvider = (
     const raw = envKey
         ? String(process.env[envKey] || "").trim().toLowerCase()
         : "";
-    // Secondary solver defaults to the other major provider when unset.
+    // Secondary solver: prefer a different configured provider; skip Claude by
+    // default (billing failures are common). Fall back to same provider (gemini).
     const autoSecondary =
         stage === "solver_b" && !raw
-            ? fallback === "claude"
+            ? fallback === "gemini"
                 ? process.env.OPENAI_API_KEY
                     ? "openai"
-                    : fallback === "gemini"
-                      ? "openai"
-                      : "gemini"
+                    : "gemini"
                 : fallback === "openai"
-                  ? process.env.ANTHROPIC_API_KEY
-                      ? "claude"
-                      : "gemini"
-                  : process.env.ANTHROPIC_API_KEY
-                    ? "claude"
-                    : process.env.OPENAI_API_KEY
-                      ? "openai"
+                  ? process.env.GOOGLE_API_KEY || process.env.GEMINI_API_KEY
+                      ? "gemini"
+                      : "openai"
+                  : process.env.OPENAI_API_KEY
+                    ? "openai"
+                    : process.env.GOOGLE_API_KEY || process.env.GEMINI_API_KEY
+                      ? "gemini"
                       : fallback
             : null;
     const candidate = raw
