@@ -1,0 +1,312 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "provider": "CAREER POINT",
+  "date": "22nd January 2026",
+  "session": "Morning",
+  "sections": {
+    "Chemistry": {
+      "questions": [
+        {
+          "number": 51,
+          "type": "MCQ",
+          "question": "Consider the transition metal ions Mn3+, Cr3+, Fe3+ and Co3+, all forming low spin octahedral complexes. The correct decreasing order of unpaired electrons in their respective d-orbitals is",
+          "options": {
+            "1": "Cr3+>Fe3+>Co3+>Mn3+",
+            "2": "Mn3+>Fe3+>Co3+>Cr3+",
+            "3": "Fe3+>Co3+>Mn3+>Cr3+",
+            "4": "Cr3+>Mn3+>Fe3+>Co3+"
+          },
+          "answer": "Cr3+ > Mn3+ > Fe3+ > Co3+",
+          "solution": "Co3+ (3d6, low spin): t2g^6 eg^0, unpaired=0. Fe3+ (3d5): t2g^5, unpaired=1. Cr3+ (3d3): t2g^3, unpaired=3. Mn3+ (3d4): t2g^4, unpaired=2. Order: Cr3+(3) > Mn3+(2) > Fe3+(1) > Co3+(0)."
+        },
+        {
+          "number": 52,
+          "type": "MCQ",
+          "question": "The formal charges on the atoms marked (1) to (4) in the Lewis representation of HNO3 molecule are respectively",
+          "options": {
+            "1": "+1,0,0,-1",
+            "2": "0,-1,0,+1",
+            "3": "0,+1,0,-1",
+            "4": "0,0,-1,+1"
+          },
+          "answer": "0, +1, 0, -1",
+          "solution": "For HNO3 Lewis structure: the singly-bonded O attached to H has formal charge 0, the central N has formal charge +1, the doubly bonded O has formal charge 0, and the O- (single bond, three lone pairs) has formal charge -1."
+        },
+        {
+          "number": 53,
+          "type": "MCQ",
+          "question": "Statement I: Phenol on treatment with CHCl3/aq. KOH under refluxing condition, followed by acidification produces p-hydroxybenzaldehyde as major product and o-hydroxybenzaldehyde as minor product. Statement II: The mixture of p-hydroxybenzaldehyde and o-hydroxybenzaldehyde can be easily separated through steam distillation.",
+          "options": {
+            "1": "Both false",
+            "2": "I true, II false",
+            "3": "Both true",
+            "4": "I false, II true"
+          },
+          "answer": "Statement I is false but Statement II is true",
+          "solution": "In the Reimer-Tiemann reaction on phenol, o-hydroxybenzaldehyde is actually the major product (due to intramolecular H-bonding stabilizing it) while p-hydroxybenzaldehyde is minor, making Statement I false. The o-isomer, being intramolecularly H-bonded and more volatile, can be separated by steam distillation, making Statement II true."
+        },
+        {
+          "number": 54,
+          "type": "MCQ",
+          "question": "The energy required by electrons present in the first Bohr orbit of hydrogen atom to be excited to the second Bohr orbit is ____ J mol^-1. (Given RH = 2.18×10^-11 ergs)",
+          "options": {
+            "1": "1.635×10^-18",
+            "2": "9.835×10^5",
+            "3": "9.835×10^12",
+            "4": "1.635×10^-11"
+          },
+          "answer": "9.835×10^5",
+          "solution": "ΔE = RH×10^-7×1^2[1/1^2-1/2^2] = 1.635×10^-18 J/atom = 1.635×10^-18×6.02×10^23 = 9.835×10^5 J/mol."
+        },
+        {
+          "number": 55,
+          "type": "MCQ",
+          "question": "A p-block element (E) and hydrogen form a binary cation (EHx)+, while EH3 on treatment with K2HgI4 in alkaline medium gives a precipitate of basic mercury(II) amido-iodide. Identify the correct first ionisation enthalpy value for element E.",
+          "options": {
+            "1": "1312",
+            "2": "1086",
+            "3": "1402",
+            "4": "801"
+          },
+          "answer": "1402 kJ/mol",
+          "solution": "Element E is Nitrogen (Nessler's reagent test confirms NH3, and NH4+ is the binary cation). Among B, C, N, O, nitrogen has the highest first ionization energy due to its half-filled stability, i.e. 1402 kJ/mol."
+        },
+        {
+          "number": 56,
+          "type": "MCQ",
+          "question": "In the reaction 2Al(s) + 6HCl(aq) → 2Al3+(aq) + 6Cl-(aq) + 3H2(g), which statement is correct?",
+          "options": {
+            "1": "11.2 L H2 per mole HCl consumed",
+            "2": "67.2 L H2 per mole Al reacted",
+            "3": "12 L HCl consumed per 6 L H2 produced",
+            "4": "33.6 L H2 produced regardless of T,P per mole Al"
+          },
+          "answer": "11.2 L H2(g) at STP is produced for every mole of HCl consumed",
+          "solution": "Moles of H2 produced = (3/6)×moles HCl used = 0.5×moles HCl, so per mole HCl, 0.5 mol H2 = 11.2 L at STP is produced."
+        },
+        {
+          "number": 57,
+          "type": "MCQ",
+          "question": "Consider a solution of CO2(g) dissolved in water in a closed container. Which plot correctly represents variation of log(partial pressure of CO2 in vapour phase) [y-axis] with log(mole fraction of CO2 in water) [x-axis] at 25°C?",
+          "options": {
+            "1": "Plot 1",
+            "2": "Plot 2",
+            "3": "Plot 3",
+            "4": "Plot 4"
+          },
+          "answer": "Option 3 (straight line through origin with positive slope, log-log plot per Henry's Law)",
+          "solution": "From Henry's law, P(g) = KH·X(g), so logP(g) = logKH + logX(g), a straight line with slope 1 and positive intercept logKH."
+        },
+        {
+          "number": 58,
+          "type": "MCQ",
+          "question": "A first row transition metal (M) does not liberate H2 gas from dilute HCl. 1 mol of aqueous MSO4 is treated with excess aqueous KCN and then H2S(g) is passed through the solution. The amount of MS (metal sulphide) formed is ____ mol.",
+          "options": {
+            "1": "2",
+            "2": "1",
+            "3": "3",
+            "4": "0"
+          },
+          "answer": "0",
+          "solution": "M is Cu (does not react with dilute HCl). CuSO4 with excess KCN forms the perfect/stable complex [Cu(CN)4]3-, which does not release Cu2+ ions to react with H2S, so no sulphide precipitate forms."
+        },
+        {
+          "number": 59,
+          "type": "MCQ",
+          "question": "The correct order of reactivity of CH3Br in methanol with the nucleophiles F-, I-, C2H5O- and C6H5O- is",
+          "options": {
+            "1": "I->C6H5O->F->C2H5O-",
+            "2": "I->C2H5O->C6H5O->F-",
+            "3": "I->C2H5O->F->C6H5O-",
+            "4": "I->F->C6H5O->C2H5O-"
+          },
+          "answer": "I- > C2H5O- > C6H5O- > F-",
+          "solution": "Order of nucleophilicity (SN2 in polar protic solvent): I- > C2H5O- > PhO- > F-, based on polarizability and basicity trends."
+        },
+        {
+          "number": 60,
+          "type": "MCQ",
+          "question": "Match List-I (Thermodynamic Process) with List-II (Magnitude in kJ): A. Reversible isothermal expansion of 2 mol ideal gas from 2dm3 to 20dm3 at 300K. B. Irreversible isothermal expansion of 1 mol ideal gas from 1m3 to 3m3 at 300K against constant pressure 3kPa. C. Change in internal energy for adiabatic expansion of 1 mol ideal gas, ΔT=320K, Cv=3R/2. D. Change in enthalpy at constant pressure, 1 mol ideal gas, ΔT=337K, Cp=5R/2.",
+          "options": {
+            "1": "A-III,B-II,C-IV,D-I",
+            "2": "A-II,B-III,C-I,D-IV",
+            "3": "A-I,B-II,C-III,D-IV",
+            "4": "A-II,B-I,C-III,D-IV"
+          },
+          "answer": "A-II, B-III, C-I, D-IV",
+          "solution": "A: W=-nRTln(V2/V1)= -11.5 kJ (magnitude II). B: W=-Pext(V2-V1)=-6 kJ (magnitude III). C: ΔU=nCvΔT≈3.99≈4 kJ (magnitude I). D: ΔH=nCpΔT=7 kJ (magnitude IV)."
+        },
+        {
+          "number": 61,
+          "type": "MCQ",
+          "question": "Statement I: Benzene is nitrated to give nitrobenzene, which on further treatment with CH3COCl/AlCl3 gives a meta-substituted acetophenone product (3-nitroacetophenone). Statement II: NO2 group is m-directing and deactivating.",
+          "options": {
+            "1": "I correct, II incorrect",
+            "2": "Both correct",
+            "3": "I incorrect, II correct",
+            "4": "Both incorrect"
+          },
+          "answer": "Statement I is incorrect but Statement II is correct",
+          "solution": "Nitrobenzene, being highly deactivated, does not undergo Friedel-Crafts acylation at all, so Statement I is incorrect. Statement II is a correct general property of the NO2 group."
+        },
+        {
+          "number": 62,
+          "type": "MCQ",
+          "question": "A → products (first order reaction). Run 1: 100 mL of 10M A. Run 2: 200 mL of 10M A. Run 3: 100 mL of 10M A + 100 mL H2O added. The correct variation of rate of reaction is",
+          "options": {
+            "1": "Run1=Run2=Run3",
+            "2": "Run3<Run1=Run2",
+            "3": "Run3<Run1<Run2",
+            "4": "Run1<Run2<Run3"
+          },
+          "answer": "Run 3 < Run 1 = Run 2",
+          "solution": "For a first order reaction, Rate = k[A], depending only on concentration, not volume. Run1 and Run2 have same concentration (10M) so equal rates; Run3 has diluted (lower) concentration, so lower rate."
+        },
+        {
+          "number": 63,
+          "type": "MCQ",
+          "question": "Match List-I (Reagents: NH2-NH2/KOH; Ag(NH3)2OH; Aq. CuSO4+Sodium Potassium tartarate/KOH; Zn-Hg/HCl) with List-II (Reaction names: Tollen's Test; Clemmensen Reduction; Wolff-Kishner Reduction; Fehling's Test).",
+          "options": {
+            "1": "A-III,B-I,C-IV,D-II",
+            "2": "A-II,B-I,C-IV,D-III",
+            "3": "A-IV,B-III,C-II,D-I",
+            "4": "A-III,B-IV,C-I,D-II"
+          },
+          "answer": "A-III, B-I, C-IV, D-II",
+          "solution": "NH2-NH2/KOH corresponds to Wolff-Kishner Reduction (III). Ag(NH3)2OH corresponds to Tollen's Test (I). Aq. CuSO4 with Rochelle's salt/KOH corresponds to Fehling's Test (IV). Zn-Hg/HCl corresponds to Clemmensen Reduction (II)."
+        },
+        {
+          "number": 64,
+          "type": "MCQ",
+          "question": "Statement I: The halogen that makes the longest bond with hydrogen in HX has the smallest covalent radius in its group. Statement II: A group 15 element's hydride EH3 has the lowest boiling point among corresponding hydrides of other group 15 elements; the maximum covalency of that element E is 4.",
+          "options": {
+            "1": "Both true",
+            "2": "I false, II true",
+            "3": "Both false",
+            "4": "I true, II false"
+          },
+          "answer": "Both Statement I and Statement II are false",
+          "solution": "Bond length order HF<HCl<HBr<HI, so HI (longest bond) corresponds to Iodine which has the largest, not smallest, covalent radius in its group — Statement I is false. PH3 has the lowest boiling point among group 15 hydrides, and phosphorus's maximum possible covalency is 6, not 4 — Statement II is also false."
+        },
+        {
+          "number": 65,
+          "type": "MCQ",
+          "question": "Statement I: Sucrose is dextrorotatory; hydrolysis gives a mixture showing laevorotation. Statement II: Hydrolysis of sucrose gives glucose and fructose; since laevorotation of glucose (fructose, actually) is more than dextrorotation of glucose, resulting solution becomes laevorotatory.",
+          "options": {
+            "1": "I false, II true",
+            "2": "Both false",
+            "3": "Both true",
+            "4": "I true, II false"
+          },
+          "answer": "Statement I is true but Statement II is false",
+          "solution": "Sucrose [α]=+66.5° (dextrorotatory); hydrolysis gives glucose [α]=+52.5° and fructose [α]=-92.4°. Statement I is true (hydrolysed mixture is laevorotatory overall). Statement II incorrectly attributes the laevorotation to glucose instead of fructose's stronger laevorotation, so it's false."
+        },
+        {
+          "number": 66,
+          "type": "MCQ",
+          "question": "'A' is a neutral organic compound (C8H9ON). On treatment with aqueous Br2/HO-, 'A' forms compound 'B' soluble in dilute acid. 'B' with aqueous NaNO2/HCl (0-5°C) gives 'C', which with CuCN/NaCN gives 'D'. Hydrolysis of 'D' gives 'E' (also obtainable from hydrolysis of 'A'). 'E' with acidified KMnO4 gives 'F' containing two different types of hydrogen atoms. Identify structure of 'A'.",
+          "options": {
+            "1": "N-methylbenzamide",
+            "2": "m-toluamide",
+            "3": "p-toluamide",
+            "4": "o-toluamide"
+          },
+          "answer": "p-Toluamide (4-methylbenzamide, CH3-C6H4-CONH2)",
+          "solution": "'A' undergoes Hofmann bromamide degradation (Br2/KOH) on the amide to give the aromatic amine 'B' (p-toluidine), which via diazotization/Sandmeyer (NaNO2/HCl then CuCN) gives the nitrile 'D' (p-tolunitrile), whose hydrolysis gives 'E' (p-toluic acid, also obtainable from hydrolysis of amide 'A'). Oxidation of the methyl group with KMnO4 gives terephthalic acid 'F', which has two distinct types of H (aromatic and COOH). Hence A = p-toluamide."
+        },
+        {
+          "number": 67,
+          "type": "MCQ",
+          "question": "The correct order of rate of reaction of the following reactants with a nucleophile by SN1 mechanism is (I: bromocyclohexane-fused bicyclic bridgehead Br, II: bridgehead Br in bicyclic system, III: tert-butyl bromide, IV: triphenylmethyl bromide - structures I and II are rigid bridgehead systems).",
+          "options": {
+            "1": "IV<III<II<I",
+            "2": "III<I<II<IV",
+            "3": "II<I<III<IV",
+            "4": "I<II<III<IV"
+          },
+          "answer": "II < I < III < IV",
+          "solution": "Rate of SN1 ∝ stability of carbocation formed. Structures I and II are bridgehead carbocations, unstable due to Bredt's rule (cannot achieve planarity); I has more +I stabilization than II, but both are less reactive than III (3° carbocation) and IV (highly stabilized triphenylmethyl cation). Order: II < I < III < IV."
+        },
+        {
+          "number": 68,
+          "type": "MCQ",
+          "question": "Two p-block elements X and Y form fluorides of the type EF3. XF3 is a Lewis acid and YF3 is a Lewis base. The hybridization of the central atoms of XF3 and YF3 respectively are",
+          "options": {
+            "1": "Both sp3",
+            "2": "sp2 and sp3",
+            "3": "sp3 and sp2",
+            "4": "Both sp2"
+          },
+          "answer": "sp2 and sp3",
+          "solution": "XF3 = BF3 (Lewis acid, sp2 hybridized, electron deficient). YF3 = NF3 (Lewis base, sp3 hybridized, has a lone pair)."
+        },
+        {
+          "number": 69,
+          "type": "MCQ",
+          "question": "As compared with chlorocyclohexane, which statements correctly apply to chlorobenzene? A. Negative charge magnitude more on Cl atoms. B. C-Cl bond has partial double bond character. C. C-Cl bond is less polar. D. C-Cl bond is longer due to repulsion between delocalised ring electrons and lone pairs on Cl. E. C-Cl bond formed using sp2 hybridised orbital of carbon.",
+          "options": {
+            "1": "A, C and E only",
+            "2": "B, C and D only",
+            "3": "A, D and E only",
+            "4": "B, C and E only"
+          },
+          "answer": "B, C and E only",
+          "solution": "In chlorobenzene, resonance donation of Cl lone pair into the ring gives the C-Cl bond partial double bond character (B) and makes it less polar than in chlorocyclohexane (C) since -I effect is opposed by +M; the carbon is sp2 hybridized (E). Statement A is false (charge on Cl is actually reduced due to resonance donation) and D is false (bond is shorter, not longer, due to partial double bond character)."
+        },
+        {
+          "number": 70,
+          "type": "MCQ",
+          "question": "Statement I: Henry's law constant KH is constant with respect to variations in solution's concentration over the range for which the solution is ideally dilute. Statement II: KH does not differ for the same solute in different solvents.",
+          "options": {
+            "1": "I false, II true",
+            "2": "I true, II false",
+            "3": "Both true",
+            "4": "Both false"
+          },
+          "answer": "Statement I is true but Statement II is false",
+          "solution": "Statement I correctly describes the applicability range of Henry's Law. Statement II is false because KH depends on the nature of both the gas (solute) and the solvent."
+        },
+        {
+          "number": 71,
+          "type": "Numerical",
+          "question": "The cycloalkane (X) on bromination consumes one mole of bromine per mole of (X) and gives product (Y) in which C:Br ratio is 3:1. The percentage of bromine in product (Y) is ____ %. (Nearest integer) (Molar mass: H:1, C:12, O:16, Br:80)",
+          "options": null,
+          "answer": "66",
+          "solution": "X = C6H10 (cyclohexene), Y = C6H10Br2. Molecular mass of C6H10Br2 = 72+10+160 = 242. % Br = 160/242 ×100 = 66.11% ≈ 66%."
+        },
+        {
+          "number": 72,
+          "type": "Numerical",
+          "question": "Consider the electrochemical cell Pt|HSnO2-(aq)|Sn(OH)6(2-)(aq)|Bi2O3(s)|Bi(s) at 298K. If reaction quotient at a given time is 10^6, the cell EMF (Ecell) is ____ ×10^-1 V (Nearest integer). Given E°(Bi2O3/Bi,OH-) = -0.44V, E°(Sn(OH)6(2-)/HSnO2-,OH-) = -0.90V.",
+          "options": null,
+          "answer": "4",
+          "solution": "E°cell = -0.44-(-0.90) = 0.46V. Using Nernst equation: Ecell = E°cell - (0.06/n)logQ = 0.46 - (0.06/6)log(10^6) = 0.46-0.06 = 0.40 V = 4×10^-1 V. So x=4."
+        },
+        {
+          "number": 73,
+          "type": "Numerical",
+          "question": "The temperature at which the rate constants of two gaseous reactions become equal is ____ K (nearest integer). X→Y: k1=10^6 e^(-30000/T). P→Q: k2=10^4 e^(-24000/T). Given ln10=2.303.",
+          "options": null,
+          "answer": "1303",
+          "solution": "Setting k1=k2: 10^4 e^(-24000/T) = 10^6 e^(-30000/T). Simplifying, e^(6000/T)=100, so 6000/T=2ln10=4.606. T=6000/4.606≈1302.64≈1303 K."
+        },
+        {
+          "number": 74,
+          "type": "Numerical",
+          "question": "Sodium fusion extract of an organic compound (Y) with CHCl3 and chlorine water gives violet color to the CHCl3 layer. 0.15 g of (Y) gave 0.12 g of silver halide precipitate in Carius method. Percentage of halogen in compound (Y) is ____ (Nearest integer). (Molar mass: C:12,H:1,Cl:35.5,Br:80,I=127)",
+          "options": null,
+          "answer": "43",
+          "solution": "Violet color indicates the halogen is Iodine. % of I = (atomic weight of I / molecular weight of AgI) × (mass of AgI/mass of sample) ×100 = (127/235)×(0.12/0.15)×100 = 43.23% ≈ 43%."
+        },
+        {
+          "number": 75,
+          "type": "Numerical",
+          "question": "Dissociation of gas A2 occurs as A2(g) ⇌ 2A(g). At equilibrium, total pressure is 1 bar at 300K. Standard Gibbs energy of formation: A2 = -100.00 kJ/mol, A = -50.832 kJ/mol. The degree of dissociation of A2(g) is given by (x×10^-2)^(1/2) where x = ____ (Nearest integer). [R=8 J/mol.K, log2=0.3010, log3=0.48]",
+          "options": null,
+          "answer": "33",
+          "solution": "ΔG° = 2(-50.832)-(-100) = -1.664 kJ = -1.664×10^3 J. Using ΔG°=-RTlnKp: -1664 = -8×300×lnKp, giving lnKp=0.693, Kp=2. From Kp=4α^2P0/(1-α^2) with P0=1: solving gives α=1/√3 = (100/3×10^-2)^(1/2) = (33.33×10^-2)^(1/2). So x≈33."
+        }
+      ]
+    }
+  }
+}

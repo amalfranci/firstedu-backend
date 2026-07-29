@@ -150,7 +150,7 @@ export const QB_PARALLEL_CHUNK_CONCURRENCY = Math.max(
     1,
     Math.min(
         6,
-        Number(process.env.AI_QB_PARALLEL_CHUNK_CONCURRENCY ?? 2)
+        Number(process.env.AI_QB_PARALLEL_CHUNK_CONCURRENCY ?? 3)
     )
 );
 

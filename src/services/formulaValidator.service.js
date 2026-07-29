@@ -219,14 +219,38 @@ export const runFormulaValidationPass = (questions = [], { topic = "" } = {}) =>
                     issues: result.issues,
                     stem: String(q.questionText || "").slice(0, 80),
                 });
+                kept.push({
+                    ...q,
+                    _formulaValidation: result,
+                    _verification: {
+                        ...(q._verification || {}),
+                        formulaOk: false,
+                        status: "stripped",
+                        ruleFailures: [
+                            ...((q._verification?.ruleFailures) || []),
+                            "formula_validation_failed",
+                        ],
+                    },
+                });
                 continue;
             }
             kept.push({
                 ...q,
                 _formulaValidation: result,
+                _verification: {
+                    ...(q._verification || {}),
+                    formulaOk: true,
+                },
             });
         } else {
-            kept.push({ ...q, _formulaValidation: result });
+            kept.push({
+                ...q,
+                _formulaValidation: result,
+                _verification: {
+                    ...(q._verification || {}),
+                    formulaOk: true,
+                },
+            });
         }
     }
     pipelineTrace("FORMULA_VALIDATOR_DONE", {

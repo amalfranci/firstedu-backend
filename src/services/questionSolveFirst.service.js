@@ -59,6 +59,8 @@ import {
     buildBankArchetypeExcludeBlock,
     allocateRankedConceptSlots,
 } from "./conceptArchetypeGuidance.service.js";
+import { buildScoringConceptWriterBlock } from "./jeeMainScoringConcept.service.js";
+import { buildOfficialSyllabusWriterBlock } from "./jeeMainOfficialSyllabus.service.js";
 import {
     buildHardQuestionMandateBlock,
     buildSkeletonGenerationComplianceBlock,
@@ -310,6 +312,20 @@ Each new skeleton must use a **different problem structure** from every excluded
     const jeeHardBlock = isJeeStem
         ? buildJeeHardStemAuthoringBlock(examProfile)
         : "";
+    const scoringConceptWriterBlock = isJeeStem
+        ? buildScoringConceptWriterBlock({
+              subject: subject || bankName || topic,
+              examProfile,
+              difficulty,
+              examCalibrated: difficultyResolution?.examCalibrated || false,
+          })
+        : "";
+    const officialSyllabusWriterBlock = isJeeStem
+        ? buildOfficialSyllabusWriterBlock({
+              subject: subject || bankName || topic,
+              examProfile,
+          })
+        : "";
 
     const aiSteered =
         archetypeSteeringSource === "ai" ||
@@ -456,6 +472,8 @@ ${jeeAuthenticityBlock}
 ${difficultyCalibrationBlock}
 ${jeeHardBlock}
 ${jeeHardAntiTemplate}
+${officialSyllabusWriterBlock}
+${scoringConceptWriterBlock}
 ${examNativeVeteran ? "" : `${hardMandateBlock}\n${skeletonComplianceBlock}\n${veteranCaliberBlock}`}
 ${archetypeSelectionBlock}
 ${archetypeBatchBlock}

@@ -1,0 +1,923 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "provider": "CAREER POINT",
+  "date": "22nd January 2026",
+  "session": "Morning",
+  "sections": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "number": 1,
+          "type": "MCQ",
+          "question": "Let AB = 2i + 4j - 5k and AD = i + 2j + λk, λ ∈ R. Let the projection of the vector v = i + j + k on the diagonal AC of the parallelogram ABCD be of length one unit. If α, β (α > β) are the roots of λ^2 x^2 - 6λx + 5 = 0, then 2α - β is equal to",
+          "options": {
+            "1": "1",
+            "2": "4",
+            "3": "3",
+            "4": "6"
+          },
+          "answer": "3",
+          "solution": "AC = 3i + 6j + (λ-5)k. Projection of v on AC = 1 gives 3+6+λ-5 = sqrt(9+36+(λ-5)^2), solving gives λ = 3. Equation becomes 9x^2 - 18x + 5 = 0, roots x = 1/3, 5/3. So 2α - β = (10-1)/3 = 3."
+        },
+        {
+          "number": 2,
+          "type": "MCQ",
+          "question": "Let the relation R on the set M = {1,2,3,...,16} be given by R = {(x,y): 4y = 5x - 3, x,y ∈ M}. Then the minimum number of elements required to be added in R, in order to make the relation symmetric, is equal to",
+          "options": {
+            "1": "1",
+            "2": "2",
+            "3": "4",
+            "4": "3"
+          },
+          "answer": "2",
+          "solution": "R = {(3,3),(7,8),(11,13)}. To make it symmetric, (8,7) and (13,11) must be added, i.e. 2 elements."
+        },
+        {
+          "number": 3,
+          "type": "MCQ",
+          "question": "Let the line x = -1 divide the area of the region {(x,y): 1+x^2 ≤ y ≤ 3-x} in the ratio m:n, gcd(m,n)=1. Then m+n is equal to",
+          "options": {
+            "1": "25",
+            "2": "28",
+            "3": "26",
+            "4": "27"
+          },
+          "answer": "27",
+          "solution": "m/n = Integral(-1 to 1)[(3-x)-(1+x^2)]dx / Integral(-2 to -1)[(3-x)-(1+x^2)]dx = 20/7. So m+n = 20+7 = 27."
+        },
+        {
+          "number": 4,
+          "type": "MCQ",
+          "question": "Two distinct numbers a and b are selected at random from 1,2,3,...,50. The probability that their product ab is divisible by 3 is",
+          "options": {
+            "1": "561/1225",
+            "2": "664/1225",
+            "3": "272/1225",
+            "4": "8/25"
+          },
+          "answer": "664/1225",
+          "solution": "Required probability = 1 - P(product not divisible by 3). Multiples of 3 = 16, not multiples of 3 = 34. Probability = 1 - C(34,2)/C(50,2) = 664/1225."
+        },
+        {
+          "number": 5,
+          "type": "MCQ",
+          "question": "Let f(x) = x^2025 - x^2000, x ∈ [0,1], and the minimum value of f(x) in [0,1] be (80)^80 (n)^-81. Then n is equal to",
+          "options": {
+            "1": "-81",
+            "2": "-40",
+            "3": "-41",
+            "4": "-80"
+          },
+          "answer": "-81",
+          "solution": "f'(x)=0 gives x = (2000/2025)^(1/25) = α. f(0)=0, f(1)=0, f(α) = (80/81)^80 · (-1/81) = 80^80 · (-81)^-81. So n = -81."
+        },
+        {
+          "number": 6,
+          "type": "MCQ",
+          "question": "Let P(α,β,γ) be the point on the line (x-1)/2 = (y+1)/-3 = z at a distance 4√14 from the point (1,-1,0) and nearer to the origin. Then the shortest distance between the lines (x-α)/1 = (y-β)/2 = (z-γ)/3 and (x+5)/2 = (y-10)/1 = (z-3)/1 is equal to",
+          "options": {
+            "1": "7√(5/4)",
+            "2": "4√(7/5)",
+            "3": "4√(5/7)",
+            "4": "2√(7/4)"
+          },
+          "answer": "4√(7/5)",
+          "solution": "P = (2λ+1, -3λ-1, λ). From distance condition, λ = -4 (nearer to origin), so P(-7,11,-4). Shortest distance computed via cross product = 28/√35 = 4√7/√5."
+        },
+        {
+          "number": 7,
+          "type": "MCQ",
+          "question": "If a random variable x has probability distribution p(0)=0, p(1)=2k, p(2)=k, p(3)=3k, p(4)=2k^2, p(5)=2k, p(6)=k^2+k, p(7)=7k^2, then P(3<x≤6) is equal to",
+          "options": {
+            "1": "0.34",
+            "2": "0.22",
+            "3": "0.64",
+            "4": "0.33"
+          },
+          "answer": "0.33",
+          "solution": "Sum of probabilities = 1 gives 10k^2+9k-1=0, so k=1/10. P(3<x≤6) = 3k+3k^2 = 0.3+0.03 = 0.33."
+        },
+        {
+          "number": 8,
+          "type": "MCQ",
+          "question": "The number of distinct real solutions of the equation x|x+4| + 3|x+2| + 10 = 0 is",
+          "options": {
+            "1": "3",
+            "2": "1",
+            "3": "0",
+            "4": "2"
+          },
+          "answer": "1",
+          "solution": "Case x<-4: x^2+7x-4=0 gives two roots, both must be checked against domain (rejected as not satisfying case). Case -4≤x<-2: x^2+x+4=0, D<0, no solution. Case x≥-2: x^2+7x+16=0, D<0, no solution. Only 1 valid solution overall."
+        },
+        {
+          "number": 9,
+          "type": "MCQ",
+          "question": "Let f:[1,∞)→R be differentiable. If 6∫(1 to x) f(t)dt = 3x f(x) + x^3 - 4 for all x≥1, then the value of f(2) - f(3) is",
+          "options": {
+            "1": "-4",
+            "2": "-3",
+            "3": "4",
+            "4": "3"
+          },
+          "answer": "3",
+          "solution": "Differentiating: 6f(x) = 3xf'(x)+3f(x)+3x^2, giving d(y/x)/dx = -1 where y=f(x). Solving: y/x = -x + C. Using f(1)=1 gives C=2, so f(x) = -x^2+2x. f(2)-f(3) = 0-(-3) = 3."
+        },
+        {
+          "number": 10,
+          "type": "MCQ",
+          "question": "If the line αx + 2y = 1, α ∈ R, does not meet the hyperbola x^2 - 9y^2 = 9, then a possible value of α is",
+          "options": {
+            "1": "0.6",
+            "2": "0.8",
+            "3": "0.5",
+            "4": "0.7"
+          },
+          "answer": "0.8",
+          "solution": "Substituting y=(1-αx)/2 into hyperbola gives (4-9α^2)x^2+18αx-45=0. For no intersection, D<0, giving α^2 > 5/9, i.e. α ∈ (-∞,-√5/3) ∪ (√5/3,∞). √5/3 ≈ 0.74, so α=0.8 works."
+        },
+        {
+          "number": 11,
+          "type": "MCQ",
+          "question": "If the image of the point P(1,2,a) in the line (x-6)/3 = (y-7)/2 = (7-z)/2 is Q(5,b,c), then a^2+b^2+c^2 is equal to",
+          "options": {
+            "1": "293",
+            "2": "264",
+            "3": "298",
+            "4": "283"
+          },
+          "answer": "298",
+          "solution": "Midpoint M=(3, b/2+1, (c+a)/2) lies on line, and PQ ⊥ line. Solving simultaneous equations: b=8, c+a=18, c-a=12. So c=15, a=3. a^2+b^2+c^2 = 9+64+225 = 298."
+        },
+        {
+          "number": 12,
+          "type": "MCQ",
+          "question": "Let the set of all values of r, for which the circles (x+1)^2+(y+4)^2=r^2 and x^2+y^2-4x-2y-4=0 intersect at two distinct points, be the interval (α,β). Then αβ is equal to",
+          "options": {
+            "1": "25",
+            "2": "20",
+            "3": "21",
+            "4": "24"
+          },
+          "answer": "25",
+          "solution": "Second circle: (x-2)^2+(y-1)^2=9 (center (2,1), radius 3). |r-3| < √34 < r+3, giving r ∈ (√34-3, √34+3). αβ = (√34-3)(√34+3) = 34-9 = 25."
+        },
+        {
+          "number": 13,
+          "type": "MCQ",
+          "question": "If A = [[2,3],[3,5]], then the determinant of the matrix (A^2025 - 3A^2024 + A^2023) is",
+          "options": {
+            "1": "28",
+            "2": "12",
+            "3": "24",
+            "4": "16"
+          },
+          "answer": "16",
+          "solution": "A^2 = [[13,21],[21,34]]. |A^2025-3A^2024+A^2023| = |A|^2023 |A^2-3A+I|. |A|=1. A^2-3A+I = [[8,12],[12,20]], determinant = 160-144=16."
+        },
+        {
+          "number": 14,
+          "type": "MCQ",
+          "question": "If the domain of f(x) = sin^-1((5-x)/(3+2x)) + 1/log_e(10-x) is (-∞,α] ∪ [β,γ) - {δ}, then 6(α+β+γ+δ) is equal to",
+          "options": {
+            "1": "70",
+            "2": "66",
+            "3": "67",
+            "4": "68"
+          },
+          "answer": "70",
+          "solution": "Conditions: -1≤(5-x)/(2x+3)≤1, x<10, x≠9. Solving gives x ≤ -8 or x ≥ 2/3, combined with x<10, x≠9: (-∞,-8] ∪ [2/3,10) - {9}. 6(-8+2/3+10+9) = 6(11.667) = 70."
+        },
+        {
+          "number": 15,
+          "type": "MCQ",
+          "question": "The value of ∫(-π/2 to π/2) 1/([x]+4) dx, where [.] denotes the greatest integer function, is",
+          "options": {
+            "1": "(21π-1)/60",
+            "2": "(π-7)/60",
+            "3": "7(3π-1)/60",
+            "4": "7(π-3)/60"
+          },
+          "answer": "7(3π-1)/60",
+          "solution": "Split integral over intervals where [x] is constant: I = ∫(-π/2 to -1) dx/2 + ∫(-1 to 0) dx/3 + ∫(0 to 1) dx/4 + ∫(1 to π/2) dx/5 = 7π/20 - 7/60 = 7(3π-1)/60."
+        },
+        {
+          "number": 16,
+          "type": "MCQ",
+          "question": "The coefficient of x^48 in (1+x) + 2(1+x)^2 + 3(1+x)^3 + ... + 100(1+x)^100 is equal to",
+          "options": {
+            "1": "100.100C49 - 100C50",
+            "2": "100C50 + 101C49",
+            "3": "100.100C49 - 100C48",
+            "4": "100.101C49 - 101C50"
+          },
+          "answer": "100.101C49 - 101C50",
+          "solution": "Let 1+x=r. S = sum k r^k for k=1 to 100. Using S - rS trick: S = -(1+x)^101/x^2 + (x+1)/x^2 + 100(1+x)^101/x. Coefficient of x^48 in S = 100.101C49 - 101C50."
+        },
+        {
+          "number": 17,
+          "type": "MCQ",
+          "question": "If the chord joining the points P1(x1,y1) and P2(x2,y2) on the parabola y^2=12x subtends a right angle at the vertex of the parabola, then x1x2 - y1y2 is equal to",
+          "options": {
+            "1": "288",
+            "2": "280",
+            "3": "284",
+            "4": "292"
+          },
+          "answer": "288",
+          "solution": "Using parametric points (3t1^2,6t1),(3t2^2,6t2), condition gives t1t2=-4. x1x2 - y1y2 = 9(t1t2)^2 - 36 t1t2 = 9(16)-36(-4) = 144+144 = 288."
+        },
+        {
+          "number": 18,
+          "type": "MCQ",
+          "question": "The number of solutions of tan^-1(4x) + tan^-1(6x) = π/6, where -1/(2√6) < x < 1/(2√6), is equal to",
+          "options": {
+            "1": "3",
+            "2": "0",
+            "3": "1",
+            "4": "2"
+          },
+          "answer": "1",
+          "solution": "tan^-1((4x+6x)/(1-24x^2)) = π/6 gives 10x/(1-24x^2) = 1/√3, leading to 24x^2+10√3x-1=0. Only one root lies in the given interval."
+        },
+        {
+          "number": 19,
+          "type": "MCQ",
+          "question": "Let the solution curve of the differential equation x dy - y dx = √(x^2+y^2) dx, x>0, y(1)=0, be y=y(x). Then y(3) is equal to",
+          "options": {
+            "1": "4",
+            "2": "6",
+            "3": "1",
+            "4": "2"
+          },
+          "answer": "4",
+          "solution": "d(y/x) = √(1+(y/x)^2) (1/x) dx leads to ln(y/x + √(1+(y/x)^2)) = ln(kx). Using y(1)=0 gives k=1, so y+√(x^2+y^2)=x^2. At x=3: y+√(9+y^2)=9 gives y=4."
+        },
+        {
+          "number": 20,
+          "type": "MCQ",
+          "question": "If the sum of the first four terms of an A.P. is 6 and the sum of its first six terms is 4, then the sum of its first twelve terms is",
+          "options": {
+            "1": "-20",
+            "2": "-24",
+            "3": "-26",
+            "4": "-22"
+          },
+          "answer": "-22",
+          "solution": "S4=6 gives 2a+3d=3. S6=4 gives 2a+5d=4/3. Solving, d=-5/6, a=11/4. S12 = 6(2a+11d) = 6(22/4 - 55/6) = -22."
+        },
+        {
+          "number": 21,
+          "type": "Numerical",
+          "question": "Let α = (-1+i√3)/2 and β = (-1-i√3)/2, i=√-1. If (7-7α+9β)^20 + (9+7α-7β)^20 + (-7+9α+7β)^20 + (14+7α+7β)^20 = m^10, then m is ____.",
+          "options": null,
+          "answer": "49",
+          "solution": "Using α=ω, β=ω^2 (cube roots of unity), simplifying each term shows most vanish and the equation reduces to 7^20 = m^10, giving m = 7^2 = 49."
+        },
+        {
+          "number": 22,
+          "type": "Numerical",
+          "question": "Let A be a 3×3 matrix such that A+A^T=O. If A[1,-1,0]^T=[3,3,2]^T, A^2[1,-1,0]^T=[-3,19,-24]^T, and det(adj(2adj(A+I))) = 2^α · 3^β · 11^γ, α,β,γ non-negative integers, then α+β+γ is equal to ____.",
+          "options": null,
+          "answer": "18",
+          "solution": "Since A is skew-symmetric, A = [[0,a,b],[-a,0,c],[-b,-c,0]]. Using given vector equations: a=-3,b=3,c=5. |A+I| = 44 = 2^2·11. det(adj(2adj(A+I))) = 64|A+I|^4 = 2^6 · (2^2·11)^4 = 2^14·11^4, giving α=14,β=0,γ=4, so α+β+γ=18."
+        },
+        {
+          "number": 23,
+          "type": "Numerical",
+          "question": "If ∫(sinx)^(-11/2)(cosx)^(-5/2) dx = -(p1/q1)(cotx)^(9/2) - (p2/q2)(cotx)^(5/2) - (p3/q3)(cotx)^(1/2) + (p4/q4)(cotx)^(-3/2) + C, where pi,qi are coprime positive integers, then 15p1p2p3p4/(q1q2q3q4) is equal to ____.",
+          "options": null,
+          "answer": "16",
+          "solution": "Rewriting integrand as (tanx)^(-11/2) sec^8x dx and substituting t=tanx gives the antiderivative -(2/9)(cotx)^(9/2) - (6/5)(cotx)^(5/2) - 6(cotx)^(1/2) + (2/3)(cotx)^(-3/2) + C. So p1=2,q1=9; p2=6,q2=5; p3=6,q3=1; p4=2,q4=3. 15p1p2p3p4/(q1q2q3q4) = 15·2·6·6·2/(9·5·1·3) = 16."
+        },
+        {
+          "number": 24,
+          "type": "Numerical",
+          "question": "If (cos^2 48° - sin^2 12°)/(sin^2 24° - sin^2 6°) = (α+β√5)/2, where α,β ∈ N, then α+β is equal to ____.",
+          "options": null,
+          "answer": "4",
+          "solution": "Using cos(A+B)cos(A-B)=cos^2A-sin^2B and sin(A+B)sin(A-B)=sin^2A-sin^2B: expression = cos60°cos36°/(sin30°sin18°) = (3+√5)/2. So α=3,β=1, α+β=4."
+        },
+        {
+          "number": 25,
+          "type": "Numerical",
+          "question": "Let ABC be a triangle with 4 points p1,p2,p3,p4 on side AB, 5 points p5,...,p9 on side BC, and 4 points p10,...,p13 on side AC. None of these is a vertex of the triangle. The total number of pentagons formed by taking all vertices from p1,...,p13 is ____.",
+          "options": null,
+          "answer": "660",
+          "solution": "Considering possible distributions of 5 vertices among the 3 sides (2,2,1),(2,1,2),(1,2,2): Case1: C(4,2)C(5,2)C(4,1)=240; Case2: C(4,2)C(5,1)C(4,2)=180; Case3: C(4,1)C(5,2)C(4,2)=240. Total = 240+180+240 = 660."
+        }
+      ]
+    },
+    {
+      "subject": "Physics",
+      "questions": [
+        {
+          "number": 26,
+          "type": "MCQ",
+          "question": "A solid sphere of mass 5 kg and radius 10 cm is kept in contact with another solid sphere of mass 10 kg and radius 20 cm. The moment of inertia of this pair of spheres about the tangent passing through the point of contact is ____ kg.m^2.",
+          "options": {
+            "1": "0.36",
+            "2": "0.72",
+            "3": "0.18",
+            "4": "0.63"
+          },
+          "answer": "0.63",
+          "solution": "I = (7/5)[m1R1^2 + m2R2^2] = (7/5)[5(10)^2+10(20)^2]×10^-4 = 63×10^-2 = 0.63 kg.m^2."
+        },
+        {
+          "number": 27,
+          "type": "MCQ",
+          "question": "7.9 MeV alpha-particle scatters from a target material of atomic number 79. From the given data the estimated diameter of nuclei of the target material is (approximately) ____ m. [1/4πε0 = 9×10^9 Nm^2/C^2, e = 1.6×10^-19 C]",
+          "options": {
+            "1": "5.76×10^-14",
+            "2": "1.44×10^-13",
+            "3": "2.88×10^-14",
+            "4": "1.69×10^-12"
+          },
+          "answer": "5.76×10^-14",
+          "solution": "By energy conservation: 7.9×10^6×1.6×10^-19 = k(2e)(Ze)/r. Solving r = 2.88×10^-14 m. Diameter D=2r=5.76×10^-14 m."
+        },
+        {
+          "number": 28,
+          "type": "MCQ",
+          "question": "Six point charges are kept 60° apart from each other on the circumference of a circle of radius R (arrangement as shown, with charges +Q,-Q,+Q,+Q,-Q,+Q at alternating consecutive positions per figure). The net electric field at the centre of the circle is ____ (ε0 is permittivity of free space).",
+          "options": {
+            "1": "-5Q/(8πε0R^2)(i+√3j)",
+            "2": "-Q/(4πε0R^2)(√3i-j)",
+            "3": "-(5Q/8πε0R^2)(i-3j)",
+            "4": "Q/(4πε0R^2)(√3i-j)"
+          },
+          "answer": "-Q/(4πε0R^2) (√3 i - j)",
+          "solution": "Let KQ/r^2=E0. Resolving components of unpaired charges: E_net = 2E0cos30°(-i)+2E0sin30°(j) = (2kQ/r^2)[(√3/2)(-i)+(1/2)(j)] = -Q/(4πε0r^2)(√3 i - j)."
+        },
+        {
+          "number": 29,
+          "type": "MCQ",
+          "question": "XPQY is a vertical smooth long loop of total resistance R where PX is parallel to QY, separation l. A constant magnetic field B perpendicular to the loop's plane exists in the entire space. A rod CD of length L (L>l) and mass m slides down from rest under gravity. The terminal speed acquired by the rod is ____ m/s (g = acceleration due to gravity).",
+          "options": {
+            "1": "2mgR/(B^2 l^2)",
+            "2": "8mgR/(B^2 l^2)",
+            "3": "2mgR/(B^2 L^2)",
+            "4": "mgR/(B^2 l^2)"
+          },
+          "answer": "mgR/(B^2 l^2)",
+          "solution": "At terminal velocity, mg = iBl = (Bvl/R)Bl, giving v = mgR/(B^2 l^2)."
+        },
+        {
+          "number": 30,
+          "type": "MCQ",
+          "question": "The escape velocity from a spherical planet A is 10 km/s. The escape velocity from another planet B whose density and radius are 10% of those of planet A is ____ m/s.",
+          "options": {
+            "1": "1000",
+            "2": "200√5",
+            "3": "100√10",
+            "4": "1000√2"
+          },
+          "answer": "100√10",
+          "solution": "Ve = √(2GM/R) ∝ √ρ×R. (Ve)B/(Ve)A = √(0.1)×0.1 = 1/(10√10). (Ve)B = 10000/(10√10) = 100√10 m/s."
+        },
+        {
+          "number": 31,
+          "type": "MCQ",
+          "question": "A meter bridge with two resistances R1 and R2 was balanced (null point) at 40 cm from point P. The null point changed to 50 cm from P when 16Ω resistance is connected in parallel to R2. The values of R1 and R2 are ____.",
+          "options": {
+            "1": "R2=16Ω, R1=16/3Ω",
+            "2": "R2=4Ω, R1=4/3Ω",
+            "3": "R2=8Ω, R1=16/3Ω",
+            "4": "R2=12Ω, R1=12/3Ω"
+          },
+          "answer": "R2 = 8Ω, R1 = 16/3 Ω",
+          "solution": "R1/R2 = 40/60 = 2/3. After parallel combination: R1/(R2×16/(R2+16)) = 50/50, giving R1 = 16R2/(16+R2). Solving simultaneously gives R2=8Ω, R1=16/3 Ω."
+        },
+        {
+          "number": 32,
+          "type": "MCQ",
+          "question": "A projectile is thrown upward at an angle 60° with the horizontal. The speed of the projectile is 20 m/s when its direction of motion is 45° with the horizontal. The initial speed of the projectile is ____ m/s.",
+          "options": {
+            "1": "40√2",
+            "2": "40",
+            "3": "20√3",
+            "4": "20√2"
+          },
+          "answer": "20√2",
+          "solution": "Horizontal component conserved: u cos60° = 20/√2 (since vcos45°=20/√2). u/2 = 20/√2, u = 40/√2 = 20√2 m/s."
+        },
+        {
+          "number": 33,
+          "type": "MCQ",
+          "question": "Statement I: Pressure of fluid is exerted only on a solid surface in contact as fluid-pressure does not exist everywhere in a still fluid. Statement II: Excess potential energy of molecules on the surface of a liquid, compared to interior, results in surface tension. Choose the correct answer.",
+          "options": {
+            "1": "Statement I true, II false",
+            "2": "Both false",
+            "3": "Both true",
+            "4": "Statement I false, II true"
+          },
+          "answer": "Statement I is false but Statement II is true",
+          "solution": "By Pascal's law, pressure exists at every point in the liquid, not just at boundaries, so Statement I is false. Statement II correctly describes surface tension, so it is true."
+        },
+        {
+          "number": 34,
+          "type": "MCQ",
+          "question": "Find the correct combination of A, B, C and D inputs (logic gate circuit with NOR gates feeding a NAND gate to node P, and an XOR gate of C,D feeding node Q, driving an LED) which can cause the LED to glow.",
+          "options": {
+            "1": "0100",
+            "2": "0011",
+            "3": "1000",
+            "4": "1101"
+          },
+          "answer": "1101",
+          "solution": "LED glows in forward biasing: P must be at higher potential (1), Q at lower potential (0). Checking combination A=1,B=1,C=0,D=1 satisfies P=1, Q=0."
+        },
+        {
+          "number": 35,
+          "type": "MCQ",
+          "question": "Net gravitational force at the centre of a square is F1 when four particles of mass M,2M,3M,4M are placed at the corners as shown, and F2 when positions of 3M and 4M are interchanged. The ratio F1/F2 = α/√5. The value of α is ____.",
+          "options": {
+            "1": "2",
+            "2": "3",
+            "3": "1",
+            "4": "2√5"
+          },
+          "answer": "2",
+          "solution": "Initial configuration gives F1 = 2√2(Gmm0/r^2). New configuration gives F2 = √10(Gmm0/r^2). F1/F2 = 2√2/√10 = 2/√5, so α=2."
+        },
+        {
+          "number": 36,
+          "type": "MCQ",
+          "question": "The minimum frequency of photon required to break a particle of mass 15.348 amu into 4 alpha particles is ____ kHz. [mass of He nucleus = 4.002 amu, 1amu=1.66×10^-27 kg, h=6.6×10^-34 J.s, c=3×10^8 m/s]",
+          "options": {
+            "1": "9×10^19",
+            "2": "9×10^20",
+            "3": "14.94×10^20",
+            "4": "14.94×10^19"
+          },
+          "answer": "14.94×10^19",
+          "solution": "hν = (4×4.002 - 15.348)×1.66×10^-27×(3×10^8)^2. Solving ν = 14.94×10^19 kHz."
+        },
+        {
+          "number": 37,
+          "type": "MCQ",
+          "question": "A cylindrical tube AB of length l, closed at both ends, contains an ideal gas of 1 mol with molecular weight M. The tube is rotated in a horizontal plane with constant angular velocity ω about an axis perpendicular to AB passing through edge A. If PA and PB are pressures at A and B (temperature same throughout), then",
+          "options": {
+            "1": "PB=PA exp(Mω^2l^2/2RT)",
+            "2": "PB=PA",
+            "3": "PB=PA exp(Mω^2l^2/3RT)",
+            "4": "PB=PA exp(Mω^2l^2/RT)"
+          },
+          "answer": "PB = PA exp(Mω^2 l^2 / 2RT)",
+          "solution": "Force balance on a fluid element gives dP = (PM/RT)ω^2 x dx. Integrating from A to B: ln(PB/PA) = Mω^2l^2/(2RT), so PB = PA e^(Mω^2l^2/2RT)."
+        },
+        {
+          "number": 38,
+          "type": "MCQ",
+          "question": "Rods x and y of equal dimensions but different materials are joined in a diamond-bridge configuration (A-B-C-D-E-F with x and y rods). Temperatures of end points A and F are maintained at 100°C and 40°C. Thermal conductivity of rod x is three times that of rod y. The temperatures at junction points B and E are (close to):",
+          "options": {
+            "1": "89°C and 73°C",
+            "2": "80°C and 60°C",
+            "3": "80°C and 70°C",
+            "4": "60°C and 45°C"
+          },
+          "answer": "89°C and 73°C respectively",
+          "solution": "Using thermal resistance R=l/(3KA) for rod x and corresponding relations, solving the network equations gives 120=1100-11TA type relation, leading to TB=89°C and TE=73°C."
+        },
+        {
+          "number": 39,
+          "type": "MCQ",
+          "question": "A thin convex lens of focal length 5 cm and a thin concave lens of focal length 4 cm are combined together (without gap), giving magnification m1 for an object 10 cm before the convex lens. A gap of 1 cm is then introduced between the lenses by moving the concave lens away, changing magnification to m2. Find |m1/m2|.",
+          "options": {
+            "1": "5/9",
+            "2": "5/27",
+            "3": "3/2",
+            "4": "25/27"
+          },
+          "answer": "Dropped by JEE (none of the given options correct)",
+          "solution": "Initial combined lens: 1/f = 1/5-1/4 = -1/20, f=-20cm; with u=-10cm, v=uf/(u+f)=+20/3, m1=v/u=+2/3. New configuration (gap=1cm): 1st refraction (convex, f=5,u=-10) gives v=+10cm, m=-1; 2nd refraction (concave,f=-4,u=+9) gives m'=-4/5; m2=mm'=4/5. m1/m2 = (2/3)/(4/5) = 5/6. This does not match any given option, so the question was dropped by JEE."
+        },
+        {
+          "number": 40,
+          "type": "MCQ",
+          "question": "Consider an equilateral prism (refractive index √2). A ray of light is incident on its one surface at a certain angle i. If the emergent ray is found to graze along the other surface then the angle of refraction at the incident surface is close to",
+          "options": {
+            "1": "15°",
+            "2": "20°",
+            "3": "40°",
+            "4": "30°"
+          },
+          "answer": "15°",
+          "solution": "For grazing emergence, e=90°. μ sin(r2) = sin(e) = 1, giving sin(r2)=1/√2, r2=45°. Since A=60°, r1=A-r2=15°."
+        },
+        {
+          "number": 41,
+          "type": "MCQ",
+          "question": "The volume of an ideal gas increases 8 times and temperature becomes 1/4th of the initial temperature during a reversible adiabatic change. Identify the gas.",
+          "options": {
+            "1": "CO2",
+            "2": "O2",
+            "3": "NH3",
+            "4": "He"
+          },
+          "answer": "He",
+          "solution": "TV^(γ-1)=constant gives 4 = 8^(γ-1), so 2^2=2^(3γ-3), giving γ=5/3, which corresponds to a monoatomic gas, i.e. He."
+        },
+        {
+          "number": 42,
+          "type": "MCQ",
+          "question": "Electric field in a region is given by E = Ax i + By j, where A=10 V/m^2 and B=5 V/m^2. If the electric potential at point (10,20) is 500 V, then the electric potential at origin is ____ V.",
+          "options": {
+            "1": "1000",
+            "2": "500",
+            "3": "2000",
+            "4": "0"
+          },
+          "answer": "2000",
+          "solution": "ΔV = -∫E·dr. Integrating gives 500-V0 = -[5x^2+5y^2/2] from (0,0) to (10,20) = -(500+1000). So V0-500=1500, V0=2000 V."
+        },
+        {
+          "number": 43,
+          "type": "MCQ",
+          "question": "A simple pendulum has a bob with mass m and charge q. When a uniform horizontal electric field E is applied, the tension in the string changes. The final tension in the string at equilibrium is ____.",
+          "options": {
+            "1": "mg-qE",
+            "2": "mg+qE",
+            "3": "√(m^2g^2+q^2E^2)",
+            "4": "√(m^2g^2-q^2E^2)"
+          },
+          "answer": "√(m^2g^2 + q^2E^2)",
+          "solution": "At equilibrium, tension balances resultant of mg (vertical) and qE (horizontal): T = √((qE)^2+(mg)^2)."
+        },
+        {
+          "number": 44,
+          "type": "MCQ",
+          "question": "Match List-I (Spring constant, Thermal conductivity, Boltzmann constant, Inductive reactance) with List-II dimensional formulas.",
+          "options": {
+            "1": "A-II,B-I,C-IV,D-III",
+            "2": "A-I,B-IV,C-II,D-III",
+            "3": "A-III,B-II,C-IV,D-I",
+            "4": "A-II,B-IV,C-I,D-III"
+          },
+          "answer": "A-II, B-IV, C-I, D-III",
+          "solution": "Spring constant: [K]=ML^0T^-2 (II). Thermal conductivity: [K]=MLT^-3K^-1 (IV). Boltzmann constant: [K]=ML^2T^-2K^-1 (I). Inductive reactance: [V]/[I]=ML^2T^-3A^-2 (III)."
+        },
+        {
+          "number": 45,
+          "type": "MCQ",
+          "question": "Three identical coils C1, C2, C3 share a common axis, C2 exactly midway. C1 carries current I anti-clockwise, C3 carries current I clockwise. An induced current flows through C2 in clockwise direction when",
+          "options": {
+            "1": "C1 and C3 move away from C2 with equal speeds",
+            "2": "C1 moves towards C2, C3 moves away from C2",
+            "3": "C1 moves away from C2, C3 moves towards C2",
+            "4": "C1 and C3 move towards C2 with equal speeds"
+          },
+          "answer": "C1 moves towards C2 and C3 moves away from C2",
+          "solution": "Flux through C2 depends on (B_C2-B_C1) type relation; applying Lenz's law to determine the direction for the given motion condition, moving C1 towards C2 and C3 away from C2 produces the specified clockwise induced current."
+        },
+        {
+          "number": 46,
+          "type": "Numerical",
+          "question": "Two loudspeakers L1 and L2 are placed 10 m apart. Both are fed with an audio signal of the same frequency. A voice recorder starting at point A (equidistant from both speakers) is moved 25 m along line AB. The signal undergoes 10 cycles of minima and maxima. Find the frequency of the input signal in Hz. (Speed of sound = 324 m/s, √5=2.23)",
+          "options": null,
+          "answer": "600",
+          "solution": "Point B (after 25m) corresponds to the 10th maxima. Path difference Δx = L2B - L1B = 50-44.6 = 5.4 m = 10λ, so λ=0.54m. f=V/λ=324/0.54=600 Hz."
+        },
+        {
+          "number": 47,
+          "type": "Numerical",
+          "question": "The electric field of a plane EM wave in an unknown non-magnetic medium is Ey=20sin(3×10^6 x - 4.5×10^14 t) V/m. The dielectric constant of the medium is ____.",
+          "options": null,
+          "answer": "4",
+          "solution": "n=C/V, V=ω/k=4.5×10^14/(3×10^6)=1.5×10^8 m/s. n=C/V=2. Since n=√(μrεr) with μr=1, εr=n^2=4."
+        },
+        {
+          "number": 48,
+          "type": "Numerical",
+          "question": "A parallel beam of light in air (n=1.0) is incident on a convex spherical glass surface of radius of curvature 50 cm (glass n=1.5). The rays converge to a point at distance x cm from the centre of curvature. Find x.",
+          "options": null,
+          "answer": "100",
+          "solution": "Using refraction formula μ2/v - μ1/u = (μ2-μ1)/R: 1.5/v - 1/∞ = 0.5/50, giving v=150 cm. x = v - R = 150-50 = 100 cm."
+        },
+        {
+          "number": 49,
+          "type": "Numerical",
+          "question": "A circular disc has radius R1 and thickness T1. Another disc of same material has radius R2 and thickness T2. If moment of inertia of both discs are same and R1/R2=2, then T1/T2 = 1/α. Find α.",
+          "options": null,
+          "answer": "16",
+          "solution": "Using I=mR^2/2 with m=ρπR^2T, equating I1=I2 gives πR1^2T1ρR1^2 = πR2^2T2ρR2^2, leading to T1/T2 = (R2/R1)^4 = 1/16, so α=16."
+        },
+        {
+          "number": 50,
+          "type": "Numerical",
+          "question": "Inductance of a coil with 10^4 turns is 10 mH, connected to a dc source of 10V with internal resistance 10Ω. The energy density in the inductor when the current reaches (1/e) of maximum value is απ×(1/e^2) J/m^3. Find α. (μ0=4π×10^-7 Tm/A)",
+          "options": null,
+          "answer": "20",
+          "solution": "Max current I0=10/10=1A. Ed=B^2/(2μ0) with B=μ0nI and L=μ0n^2πR^2l. Ed = μ0n^2I^2/2 = (4π×10^-7×10^8×(1/e^2))/2 = 20π/e^2, giving α=20."
+        }
+      ]
+    },
+    {
+      "subject": "Chemistry",
+      "questions": [
+        {
+          "number": 51,
+          "type": "MCQ",
+          "question": "Consider the transition metal ions Mn3+, Cr3+, Fe3+ and Co3+, all forming low spin octahedral complexes. The correct decreasing order of unpaired electrons in their respective d-orbitals is",
+          "options": {
+            "1": "Cr3+>Fe3+>Co3+>Mn3+",
+            "2": "Mn3+>Fe3+>Co3+>Cr3+",
+            "3": "Fe3+>Co3+>Mn3+>Cr3+",
+            "4": "Cr3+>Mn3+>Fe3+>Co3+"
+          },
+          "answer": "Cr3+ > Mn3+ > Fe3+ > Co3+",
+          "solution": "Co3+ (3d6, low spin): t2g^6 eg^0, unpaired=0. Fe3+ (3d5): t2g^5, unpaired=1. Cr3+ (3d3): t2g^3, unpaired=3. Mn3+ (3d4): t2g^4, unpaired=2. Order: Cr3+(3) > Mn3+(2) > Fe3+(1) > Co3+(0)."
+        },
+        {
+          "number": 52,
+          "type": "MCQ",
+          "question": "The formal charges on the atoms marked (1) to (4) in the Lewis representation of HNO3 molecule are respectively",
+          "options": {
+            "1": "+1,0,0,-1",
+            "2": "0,-1,0,+1",
+            "3": "0,+1,0,-1",
+            "4": "0,0,-1,+1"
+          },
+          "answer": "0, +1, 0, -1",
+          "solution": "For HNO3 Lewis structure: the singly-bonded O attached to H has formal charge 0, the central N has formal charge +1, the doubly bonded O has formal charge 0, and the O- (single bond, three lone pairs) has formal charge -1."
+        },
+        {
+          "number": 53,
+          "type": "MCQ",
+          "question": "Statement I: Phenol on treatment with CHCl3/aq. KOH under refluxing condition, followed by acidification produces p-hydroxybenzaldehyde as major product and o-hydroxybenzaldehyde as minor product. Statement II: The mixture of p-hydroxybenzaldehyde and o-hydroxybenzaldehyde can be easily separated through steam distillation.",
+          "options": {
+            "1": "Both false",
+            "2": "I true, II false",
+            "3": "Both true",
+            "4": "I false, II true"
+          },
+          "answer": "Statement I is false but Statement II is true",
+          "solution": "In the Reimer-Tiemann reaction on phenol, o-hydroxybenzaldehyde is actually the major product (due to intramolecular H-bonding stabilizing it) while p-hydroxybenzaldehyde is minor, making Statement I false. The o-isomer, being intramolecularly H-bonded and more volatile, can be separated by steam distillation, making Statement II true."
+        },
+        {
+          "number": 54,
+          "type": "MCQ",
+          "question": "The energy required by electrons present in the first Bohr orbit of hydrogen atom to be excited to the second Bohr orbit is ____ J mol^-1. (Given RH = 2.18×10^-11 ergs)",
+          "options": {
+            "1": "1.635×10^-18",
+            "2": "9.835×10^5",
+            "3": "9.835×10^12",
+            "4": "1.635×10^-11"
+          },
+          "answer": "9.835×10^5",
+          "solution": "ΔE = RH×10^-7×1^2[1/1^2-1/2^2] = 1.635×10^-18 J/atom = 1.635×10^-18×6.02×10^23 = 9.835×10^5 J/mol."
+        },
+        {
+          "number": 55,
+          "type": "MCQ",
+          "question": "A p-block element (E) and hydrogen form a binary cation (EHx)+, while EH3 on treatment with K2HgI4 in alkaline medium gives a precipitate of basic mercury(II) amido-iodide. Identify the correct first ionisation enthalpy value for element E.",
+          "options": {
+            "1": "1312",
+            "2": "1086",
+            "3": "1402",
+            "4": "801"
+          },
+          "answer": "1402 kJ/mol",
+          "solution": "Element E is Nitrogen (Nessler's reagent test confirms NH3, and NH4+ is the binary cation). Among B, C, N, O, nitrogen has the highest first ionization energy due to its half-filled stability, i.e. 1402 kJ/mol."
+        },
+        {
+          "number": 56,
+          "type": "MCQ",
+          "question": "In the reaction 2Al(s) + 6HCl(aq) → 2Al3+(aq) + 6Cl-(aq) + 3H2(g), which statement is correct?",
+          "options": {
+            "1": "11.2 L H2 per mole HCl consumed",
+            "2": "67.2 L H2 per mole Al reacted",
+            "3": "12 L HCl consumed per 6 L H2 produced",
+            "4": "33.6 L H2 produced regardless of T,P per mole Al"
+          },
+          "answer": "11.2 L H2(g) at STP is produced for every mole of HCl consumed",
+          "solution": "Moles of H2 produced = (3/6)×moles HCl used = 0.5×moles HCl, so per mole HCl, 0.5 mol H2 = 11.2 L at STP is produced."
+        },
+        {
+          "number": 57,
+          "type": "MCQ",
+          "question": "Consider a solution of CO2(g) dissolved in water in a closed container. Which plot correctly represents variation of log(partial pressure of CO2 in vapour phase) [y-axis] with log(mole fraction of CO2 in water) [x-axis] at 25°C?",
+          "options": {
+            "1": "Plot 1",
+            "2": "Plot 2",
+            "3": "Plot 3",
+            "4": "Plot 4"
+          },
+          "answer": "Option 3 (straight line through origin with positive slope, log-log plot per Henry's Law)",
+          "solution": "From Henry's law, P(g) = KH·X(g), so logP(g) = logKH + logX(g), a straight line with slope 1 and positive intercept logKH."
+        },
+        {
+          "number": 58,
+          "type": "MCQ",
+          "question": "A first row transition metal (M) does not liberate H2 gas from dilute HCl. 1 mol of aqueous MSO4 is treated with excess aqueous KCN and then H2S(g) is passed through the solution. The amount of MS (metal sulphide) formed is ____ mol.",
+          "options": {
+            "1": "2",
+            "2": "1",
+            "3": "3",
+            "4": "0"
+          },
+          "answer": "0",
+          "solution": "M is Cu (does not react with dilute HCl). CuSO4 with excess KCN forms the perfect/stable complex [Cu(CN)4]3-, which does not release Cu2+ ions to react with H2S, so no sulphide precipitate forms."
+        },
+        {
+          "number": 59,
+          "type": "MCQ",
+          "question": "The correct order of reactivity of CH3Br in methanol with the nucleophiles F-, I-, C2H5O- and C6H5O- is",
+          "options": {
+            "1": "I->C6H5O->F->C2H5O-",
+            "2": "I->C2H5O->C6H5O->F-",
+            "3": "I->C2H5O->F->C6H5O-",
+            "4": "I->F->C6H5O->C2H5O-"
+          },
+          "answer": "I- > C2H5O- > C6H5O- > F-",
+          "solution": "Order of nucleophilicity (SN2 in polar protic solvent): I- > C2H5O- > PhO- > F-, based on polarizability and basicity trends."
+        },
+        {
+          "number": 60,
+          "type": "MCQ",
+          "question": "Match List-I (Thermodynamic Process) with List-II (Magnitude in kJ): A. Reversible isothermal expansion of 2 mol ideal gas from 2dm3 to 20dm3 at 300K. B. Irreversible isothermal expansion of 1 mol ideal gas from 1m3 to 3m3 at 300K against constant pressure 3kPa. C. Change in internal energy for adiabatic expansion of 1 mol ideal gas, ΔT=320K, Cv=3R/2. D. Change in enthalpy at constant pressure, 1 mol ideal gas, ΔT=337K, Cp=5R/2.",
+          "options": {
+            "1": "A-III,B-II,C-IV,D-I",
+            "2": "A-II,B-III,C-I,D-IV",
+            "3": "A-I,B-II,C-III,D-IV",
+            "4": "A-II,B-I,C-III,D-IV"
+          },
+          "answer": "A-II, B-III, C-I, D-IV",
+          "solution": "A: W=-nRTln(V2/V1)= -11.5 kJ (magnitude II). B: W=-Pext(V2-V1)=-6 kJ (magnitude III). C: ΔU=nCvΔT≈3.99≈4 kJ (magnitude I). D: ΔH=nCpΔT=7 kJ (magnitude IV)."
+        },
+        {
+          "number": 61,
+          "type": "MCQ",
+          "question": "Statement I: Benzene is nitrated to give nitrobenzene, which on further treatment with CH3COCl/AlCl3 gives a meta-substituted acetophenone product (3-nitroacetophenone). Statement II: NO2 group is m-directing and deactivating.",
+          "options": {
+            "1": "I correct, II incorrect",
+            "2": "Both correct",
+            "3": "I incorrect, II correct",
+            "4": "Both incorrect"
+          },
+          "answer": "Statement I is incorrect but Statement II is correct",
+          "solution": "Nitrobenzene, being highly deactivated, does not undergo Friedel-Crafts acylation at all, so Statement I is incorrect. Statement II is a correct general property of the NO2 group."
+        },
+        {
+          "number": 62,
+          "type": "MCQ",
+          "question": "A → products (first order reaction). Run 1: 100 mL of 10M A. Run 2: 200 mL of 10M A. Run 3: 100 mL of 10M A + 100 mL H2O added. The correct variation of rate of reaction is",
+          "options": {
+            "1": "Run1=Run2=Run3",
+            "2": "Run3<Run1=Run2",
+            "3": "Run3<Run1<Run2",
+            "4": "Run1<Run2<Run3"
+          },
+          "answer": "Run 3 < Run 1 = Run 2",
+          "solution": "For a first order reaction, Rate = k[A], depending only on concentration, not volume. Run1 and Run2 have same concentration (10M) so equal rates; Run3 has diluted (lower) concentration, so lower rate."
+        },
+        {
+          "number": 63,
+          "type": "MCQ",
+          "question": "Match List-I (Reagents: NH2-NH2/KOH; Ag(NH3)2OH; Aq. CuSO4+Sodium Potassium tartarate/KOH; Zn-Hg/HCl) with List-II (Reaction names: Tollen's Test; Clemmensen Reduction; Wolff-Kishner Reduction; Fehling's Test).",
+          "options": {
+            "1": "A-III,B-I,C-IV,D-II",
+            "2": "A-II,B-I,C-IV,D-III",
+            "3": "A-IV,B-III,C-II,D-I",
+            "4": "A-III,B-IV,C-I,D-II"
+          },
+          "answer": "A-III, B-I, C-IV, D-II",
+          "solution": "NH2-NH2/KOH corresponds to Wolff-Kishner Reduction (III). Ag(NH3)2OH corresponds to Tollen's Test (I). Aq. CuSO4 with Rochelle's salt/KOH corresponds to Fehling's Test (IV). Zn-Hg/HCl corresponds to Clemmensen Reduction (II)."
+        },
+        {
+          "number": 64,
+          "type": "MCQ",
+          "question": "Statement I: The halogen that makes the longest bond with hydrogen in HX has the smallest covalent radius in its group. Statement II: A group 15 element's hydride EH3 has the lowest boiling point among corresponding hydrides of other group 15 elements; the maximum covalency of that element E is 4.",
+          "options": {
+            "1": "Both true",
+            "2": "I false, II true",
+            "3": "Both false",
+            "4": "I true, II false"
+          },
+          "answer": "Both Statement I and Statement II are false",
+          "solution": "Bond length order HF<HCl<HBr<HI, so HI (longest bond) corresponds to Iodine which has the largest, not smallest, covalent radius in its group — Statement I is false. PH3 has the lowest boiling point among group 15 hydrides, and phosphorus's maximum possible covalency is 6, not 4 — Statement II is also false."
+        },
+        {
+          "number": 65,
+          "type": "MCQ",
+          "question": "Statement I: Sucrose is dextrorotatory; hydrolysis gives a mixture showing laevorotation. Statement II: Hydrolysis of sucrose gives glucose and fructose; since laevorotation of glucose (fructose, actually) is more than dextrorotation of glucose, resulting solution becomes laevorotatory.",
+          "options": {
+            "1": "I false, II true",
+            "2": "Both false",
+            "3": "Both true",
+            "4": "I true, II false"
+          },
+          "answer": "Statement I is true but Statement II is false",
+          "solution": "Sucrose [α]=+66.5° (dextrorotatory); hydrolysis gives glucose [α]=+52.5° and fructose [α]=-92.4°. Statement I is true (hydrolysed mixture is laevorotatory overall). Statement II incorrectly attributes the laevorotation to glucose instead of fructose's stronger laevorotation, so it's false."
+        },
+        {
+          "number": 66,
+          "type": "MCQ",
+          "question": "'A' is a neutral organic compound (C8H9ON). On treatment with aqueous Br2/HO-, 'A' forms compound 'B' soluble in dilute acid. 'B' with aqueous NaNO2/HCl (0-5°C) gives 'C', which with CuCN/NaCN gives 'D'. Hydrolysis of 'D' gives 'E' (also obtainable from hydrolysis of 'A'). 'E' with acidified KMnO4 gives 'F' containing two different types of hydrogen atoms. Identify structure of 'A'.",
+          "options": {
+            "1": "N-methylbenzamide",
+            "2": "m-toluamide",
+            "3": "p-toluamide",
+            "4": "o-toluamide"
+          },
+          "answer": "p-Toluamide (4-methylbenzamide, CH3-C6H4-CONH2)",
+          "solution": "'A' undergoes Hofmann bromamide degradation (Br2/KOH) on the amide to give the aromatic amine 'B' (p-toluidine), which via diazotization/Sandmeyer (NaNO2/HCl then CuCN) gives the nitrile 'D' (p-tolunitrile), whose hydrolysis gives 'E' (p-toluic acid, also obtainable from hydrolysis of amide 'A'). Oxidation of the methyl group with KMnO4 gives terephthalic acid 'F', which has two distinct types of H (aromatic and COOH). Hence A = p-toluamide."
+        },
+        {
+          "number": 67,
+          "type": "MCQ",
+          "question": "The correct order of rate of reaction of the following reactants with a nucleophile by SN1 mechanism is (I: bromocyclohexane-fused bicyclic bridgehead Br, II: bridgehead Br in bicyclic system, III: tert-butyl bromide, IV: triphenylmethyl bromide - structures I and II are rigid bridgehead systems).",
+          "options": {
+            "1": "IV<III<II<I",
+            "2": "III<I<II<IV",
+            "3": "II<I<III<IV",
+            "4": "I<II<III<IV"
+          },
+          "answer": "II < I < III < IV",
+          "solution": "Rate of SN1 ∝ stability of carbocation formed. Structures I and II are bridgehead carbocations, unstable due to Bredt's rule (cannot achieve planarity); I has more +I stabilization than II, but both are less reactive than III (3° carbocation) and IV (highly stabilized triphenylmethyl cation). Order: II < I < III < IV."
+        },
+        {
+          "number": 68,
+          "type": "MCQ",
+          "question": "Two p-block elements X and Y form fluorides of the type EF3. XF3 is a Lewis acid and YF3 is a Lewis base. The hybridization of the central atoms of XF3 and YF3 respectively are",
+          "options": {
+            "1": "Both sp3",
+            "2": "sp2 and sp3",
+            "3": "sp3 and sp2",
+            "4": "Both sp2"
+          },
+          "answer": "sp2 and sp3",
+          "solution": "XF3 = BF3 (Lewis acid, sp2 hybridized, electron deficient). YF3 = NF3 (Lewis base, sp3 hybridized, has a lone pair)."
+        },
+        {
+          "number": 69,
+          "type": "MCQ",
+          "question": "As compared with chlorocyclohexane, which statements correctly apply to chlorobenzene? A. Negative charge magnitude more on Cl atoms. B. C-Cl bond has partial double bond character. C. C-Cl bond is less polar. D. C-Cl bond is longer due to repulsion between delocalised ring electrons and lone pairs on Cl. E. C-Cl bond formed using sp2 hybridised orbital of carbon.",
+          "options": {
+            "1": "A, C and E only",
+            "2": "B, C and D only",
+            "3": "A, D and E only",
+            "4": "B, C and E only"
+          },
+          "answer": "B, C and E only",
+          "solution": "In chlorobenzene, resonance donation of Cl lone pair into the ring gives the C-Cl bond partial double bond character (B) and makes it less polar than in chlorocyclohexane (C) since -I effect is opposed by +M; the carbon is sp2 hybridized (E). Statement A is false (charge on Cl is actually reduced due to resonance donation) and D is false (bond is shorter, not longer, due to partial double bond character)."
+        },
+        {
+          "number": 70,
+          "type": "MCQ",
+          "question": "Statement I: Henry's law constant KH is constant with respect to variations in solution's concentration over the range for which the solution is ideally dilute. Statement II: KH does not differ for the same solute in different solvents.",
+          "options": {
+            "1": "I false, II true",
+            "2": "I true, II false",
+            "3": "Both true",
+            "4": "Both false"
+          },
+          "answer": "Statement I is true but Statement II is false",
+          "solution": "Statement I correctly describes the applicability range of Henry's Law. Statement II is false because KH depends on the nature of both the gas (solute) and the solvent."
+        },
+        {
+          "number": 71,
+          "type": "Numerical",
+          "question": "The cycloalkane (X) on bromination consumes one mole of bromine per mole of (X) and gives product (Y) in which C:Br ratio is 3:1. The percentage of bromine in product (Y) is ____ %. (Nearest integer) (Molar mass: H:1, C:12, O:16, Br:80)",
+          "options": null,
+          "answer": "66",
+          "solution": "X = C6H10 (cyclohexene), Y = C6H10Br2. Molecular mass of C6H10Br2 = 72+10+160 = 242. % Br = 160/242 ×100 = 66.11% ≈ 66%."
+        },
+        {
+          "number": 72,
+          "type": "Numerical",
+          "question": "Consider the electrochemical cell Pt|HSnO2-(aq)|Sn(OH)6(2-)(aq)|Bi2O3(s)|Bi(s) at 298K. If reaction quotient at a given time is 10^6, the cell EMF (Ecell) is ____ ×10^-1 V (Nearest integer). Given E°(Bi2O3/Bi,OH-) = -0.44V, E°(Sn(OH)6(2-)/HSnO2-,OH-) = -0.90V.",
+          "options": null,
+          "answer": "4",
+          "solution": "E°cell = -0.44-(-0.90) = 0.46V. Using Nernst equation: Ecell = E°cell - (0.06/n)logQ = 0.46 - (0.06/6)log(10^6) = 0.46-0.06 = 0.40 V = 4×10^-1 V. So x=4."
+        },
+        {
+          "number": 73,
+          "type": "Numerical",
+          "question": "The temperature at which the rate constants of two gaseous reactions become equal is ____ K (nearest integer). X→Y: k1=10^6 e^(-30000/T). P→Q: k2=10^4 e^(-24000/T). Given ln10=2.303.",
+          "options": null,
+          "answer": "1303",
+          "solution": "Setting k1=k2: 10^4 e^(-24000/T) = 10^6 e^(-30000/T). Simplifying, e^(6000/T)=100, so 6000/T=2ln10=4.606. T=6000/4.606≈1302.64≈1303 K."
+        },
+        {
+          "number": 74,
+          "type": "Numerical",
+          "question": "Sodium fusion extract of an organic compound (Y) with CHCl3 and chlorine water gives violet color to the CHCl3 layer. 0.15 g of (Y) gave 0.12 g of silver halide precipitate in Carius method. Percentage of halogen in compound (Y) is ____ (Nearest integer). (Molar mass: C:12,H:1,Cl:35.5,Br:80,I=127)",
+          "options": null,
+          "answer": "43",
+          "solution": "Violet color indicates the halogen is Iodine. % of I = (atomic weight of I / molecular weight of AgI) × (mass of AgI/mass of sample) ×100 = (127/235)×(0.12/0.15)×100 = 43.23% ≈ 43%."
+        },
+        {
+          "number": 75,
+          "type": "Numerical",
+          "question": "Dissociation of gas A2 occurs as A2(g) ⇌ 2A(g). At equilibrium, total pressure is 1 bar at 300K. Standard Gibbs energy of formation: A2 = -100.00 kJ/mol, A = -50.832 kJ/mol. The degree of dissociation of A2(g) is given by (x×10^-2)^(1/2) where x = ____ (Nearest integer). [R=8 J/mol.K, log2=0.3010, log3=0.48]",
+          "options": null,
+          "answer": "33",
+          "solution": "ΔG° = 2(-50.832)-(-100) = -1.664 kJ = -1.664×10^3 J. Using ΔG°=-RTlnKp: -1664 = -8×300×lnKp, giving lnKp=0.693, Kp=2. From Kp=4α^2P0/(1-α^2) with P0=1: solving gives α=1/√3 = (100/3×10^-2)^(1/2) = (33.33×10^-2)^(1/2). So x≈33."
+        }
+      ]
+    }
+  ]
+}

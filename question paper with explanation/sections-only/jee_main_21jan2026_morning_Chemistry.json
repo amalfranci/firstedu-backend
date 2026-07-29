@@ -1,0 +1,332 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "date": "21st January 2026",
+  "shift": "Morning",
+  "source": "Career Point Kota - Questions & Solutions",
+  "sections": {
+    "Chemistry": {
+      "questions": [
+        {
+          "number": 51,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Consider the following reactions: PbCl2 + K2CrO4 -> A + 2KCl (hot solution). A + NaOH <=> B + Na2CrO4. PbSO4 + 4CH3COONH4 -> (NH4)2SO4 + X. In the above reactions, A, B and X are respectively.",
+          "options": {
+            "1": "Na2[Pb(OH)2], PbCrO4 and (NH4)2[Pb(CH3COO)4]",
+            "2": "PbCrO4, Na2[Pb(OH)4] and [Pb(NH3)4]SO4",
+            "3": "Na2[Pb(OH)2], PbCrO4 and [Pb(NH3)4]SO4",
+            "4": "PbCrO4, Na2[Pb(OH)4] and (NH4)2[Pb(CH3COO)4]"
+          },
+          "answer": "4",
+          "solution": "PbCl2+K2CrO4 -> PbCrO4 (A) + 2KCl. PbCrO4 + 4NaOH(excess) -> Na2[Pb(OH)4] (B) + Na2CrO4. PbSO4+4CH3COONH4 -> (NH4)2[Pb(CH3COO)4] (X) + (NH4)2SO4."
+        },
+        {
+          "number": 52,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Which of the following represents the correct trend for the mentioned property? A. F>P>S>B - First Ionization Energy; B. Cl>F>S>P - Electron Affinity; C. K>Al>Mg>B - Metallic character; D. K2O>Na2O>MgO>Al2O3 - Basic character. Choose the correct answer:",
+          "options": {
+            "1": "A, B and D only",
+            "2": "A, B, C and D",
+            "3": "A and B only",
+            "4": "B and C only"
+          },
+          "answer": "1",
+          "solution": "A: correct IE order F>P>S>B. B: correct EA order Cl>F>S>P (halogens higher than corresponding period chalcogen/pnictogen). C: metallic character order should be K>Mg>Al>B, not K>Al>Mg>B, so C is incorrect. D: correct basic character order K2O>Na2O>MgO>Al2O3. So A, B, D only."
+        },
+        {
+          "number": 53,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Identify A in the reaction: A --(2H2/Pt)--> decahydronaphthalene; A --(KMnO4)--> cyclohexane-1,2-dicarboxylic acid + oxalic acid (COOH-COOH).",
+          "options": {
+            "1": "1,2-dihydronaphthalene",
+            "2": "naphthalene",
+            "3": "1,2,3,4-tetrahydronaphthalene",
+            "4": "octahydronaphthalene"
+          },
+          "answer": "3",
+          "solution": "A is 1,2,3,4-tetrahydronaphthalene (tetralin), which on hydrogenation with 2H2/Pt gives decahydronaphthalene (decalin), and on oxidative cleavage with KMnO4 gives cyclohexane-1,2-dicarboxylic acid from the saturated ring plus oxalic acid from the aromatic ring carbons."
+        },
+        {
+          "number": 54,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "A hydrocarbon 'P' (C4H8) on reaction with HCl gives an optically active compound 'Q' (C4H9Cl) which on reaction with one mole of ammonia gives compound 'R' (C4H11N). 'R' on diazotization followed by hydrolysis gives 'S'. Identify P, Q, R and S.",
+          "options": {
+            "1": "P=but-1-ene; Q=1-chlorobutane derivative; R=amine; S=alcohol (as specifically drawn)",
+            "2": "P=methylenecyclopropane type; Q, R, S as drawn",
+            "3": "P=but-2-ene (CH3-CH=CH-CH3); Q=2-chlorobutane (CH3-CH2-CHCl-CH3); R=2-aminobutane (CH3-CH2-CH(NH2)-CH3); S=2-butanol (CH3-CH2-CH(OH)-CH3)",
+            "4": "P=but-2-ene; Q=1-chlorobutane; R=1-aminobutane; S=1-butanol"
+          },
+          "answer": "3",
+          "solution": "CH3-CH=CH-CH3 (but-2-ene, P) + HCl -> CH3-CH2-CHCl-CH3 (2-chlorobutane, Q, optically active). Q + NH3 -> CH3-CH2-CH(NH2)-CH3 (R). R diazotization/hydrolysis (NaNO2/HCl) -> CH3-CH2-CH(OH)-CH3 (S, 2-butanol)."
+        },
+        {
+          "number": 55,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Statement I: The number of pairs among [SiO2,CO2], [SnO,SnO2], [PbO,PbO2] and [GeO,GeO2], which contain oxides that are both amphoteric, is 2. Statement II: BF3 is an electron deficient molecule that can act as a Lewis acid, forms adduct with NH3, and has a trigonal planar geometry. Choose the correct answer:",
+          "options": {
+            "1": "Both Statement I and Statement II are true",
+            "2": "Both Statement I and Statement II are false",
+            "3": "Statement I is true but Statement II is false",
+            "4": "Statement I is false but Statement II is true"
+          },
+          "answer": "1",
+          "solution": "SiO2, CO2, GeO, GeO2 are acidic in nature; SnO, SnO2, PbO, PbO2 are amphoteric in nature. So 2 pairs ([SnO,SnO2] and [PbO,PbO2]) are both amphoteric (Statement I true). BF3 is an electron-deficient Lewis acid with sp2 hybridization, trigonal planar geometry, and accepts a lone pair from NH3 to form an adduct (Statement II true)."
+        },
+        {
+          "number": 56,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "80 mL of a hydrocarbon on mixing with 264 mL of oxygen in a closed U-tube undergoes complete combustion. The residual gases after cooling to 273K occupy 224 mL. When the system is treated with KOH solution, the volume decreases to 64 mL. The formula of the hydrocarbon is:",
+          "options": {
+            "1": "C2H4",
+            "2": "C4H10",
+            "3": "C2H2",
+            "4": "C2H6"
+          },
+          "answer": "3",
+          "solution": "CxHy + (x+y/4)O2 -> xCO2 + (y/2)H2O(l). Using volume balance: 264 - 80(x+y/4) + 80x = 224 gives y=2. Using the KOH absorption (CO2 absorbed): 264-80(x+1/2)=64 gives x=2. So hydrocarbon is C2H2 (acetylene)."
+        },
+        {
+          "number": 57,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "14.0 g of calcium metal is allowed to react with excess HCl at 1.0 atm pressure and 273 K. Which of the following statements is incorrect? (Ca=40, Cl=35.5, H=1)",
+          "options": {
+            "1": "0.35 mol of H2 gas is evolved",
+            "2": "7.84 L of H2 gas is evolved",
+            "3": "33.3 g of CaCl2 is produced",
+            "4": "The limiting reagent is calcium metal"
+          },
+          "answer": "3",
+          "solution": "Ca + 2HCl -> CaCl2 + H2. Moles of Ca = 14/40 = 0.35 mol, giving 0.35 mol H2 (volume=0.35*22.4=7.84L) and 0.35 mol CaCl2 (weight=0.35*111=38.85 g, not 33.3 g). So statement (3) is incorrect."
+        },
+        {
+          "number": 58,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "In Carius method, 0.75 g of an organic compound gave 1.2 g of barium sulphate; find percentage of sulphur (molar mass 32 g/mol). Molar mass of barium sulphate is 233 g/mol.",
+          "options": {
+            "1": "4.55%",
+            "2": "10.30%",
+            "3": "21.97%",
+            "4": "16.48%"
+          },
+          "answer": "3",
+          "solution": "%S = (n_BaSO4*32/weight)*100 = (1.2/233 * 32 / 0.75)*100 = 21.97%."
+        },
+        {
+          "number": 59,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Elements P and Q form two types of non-volatile, non-ionizable compounds PQ and PQ2. When 1g of PQ is dissolved in 50g of solvent 'A', deltaTb was 1.176K, while when 1g of PQ2 is dissolved in 50g of solvent 'A', deltaTb was 0.689K. (Kb of A = 5 K.kg/mol). The molar masses of elements P and Q (in g/mol) respectively, are:",
+          "options": {
+            "1": "70,110",
+            "2": "65,145",
+            "3": "60,25",
+            "4": "25,60"
+          },
+          "answer": "4",
+          "solution": "For PQ: 1.176 = 5*(1/M1)*(1000/50), giving M1 (molar mass of PQ) = 85.03. For PQ2: 0.689 = 5*(1/M2)*(1000/50), giving M2 (molar mass of PQ2) = 145.13. Solving Mp+Mq=85.03 and Mp+2Mq=145.13 gives Mq=60.1~60, Mp=24.93~25."
+        },
+        {
+          "number": 60,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "An organic compound (P) on treatment with aqueous ammonia under hot conditions forms compound (Q), which on heating with Br2 and KOH forms compound (R) having molecular formula C6H7N. Names of P, Q and R respectively are:",
+          "options": {
+            "1": "Benzoic acid, benzamide, aniline",
+            "2": "Toluic acid, methylbenzamide, 2-methylaniline",
+            "3": "Benzoic acid, 4-methylbenzamide, 4-methylaniline",
+            "4": "Phenylethanoic acid, phenylethanamide, benzamine"
+          },
+          "answer": "1",
+          "solution": "PhCOOH (benzoic acid, P) + NH3/heat -> PhCONH2 (benzamide, Q). Q + Br2/KOH (Hofmann bromamide degradation) -> PhNH2 (aniline, R, C6H7N)."
+        },
+        {
+          "number": 61,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "An organic compound P of molecular formula C6H12O3 gives a positive iodoform test but negative Tollen's test. When P is treated with dilute acid, it produces Q. Q gives a positive Tollen's test and also iodoform test. The structure of P is:",
+          "options": {
+            "1": "CH3-C(=O)-CH-CH2(OCH3)(OCH3) type dimethyl acetal at alpha carbon",
+            "2": "CH3-C(=O)-CH2-CH(OCH3)-OCH3 (dimethyl acetal of an aldehyde attached to methyl ketone chain)",
+            "3": "H-C(=O)-CH2-CH2-CH(OCH3)-OCH3",
+            "4": "CH3-C(=O)-C(OCH3)(OCH3)-CH3"
+          },
+          "answer": "2",
+          "solution": "P is a methyl ketone with a dimethyl acetal group elsewhere in the chain: the methyl ketone (CH3-CO-) gives positive iodoform but the acetal-protected aldehyde gives negative Tollen's test. On hydrolysis with dilute acid (H2O/H+), the acetal is converted back to the aldehyde (Q), which now gives positive Tollen's test (aldehyde) as well as positive iodoform test (since the methyl ketone portion remains)."
+        },
+        {
+          "number": 62,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "From the following resonance structures of an allyl-nitro type system, the least stable structure is: (structures differing in placement of + and - charges on the conjugated chain and nitro group)",
+          "options": {
+            "1": "Structure 1",
+            "2": "Structure 2",
+            "3": "Structure 3",
+            "4": "Structure 4"
+          },
+          "answer": "3",
+          "solution": "The structure with positive charges on two adjacent atoms is least stable due to charge-charge repulsion between like charges in close proximity, making structure (3) the least stable resonance form."
+        },
+        {
+          "number": 63,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "MnO4(2-), in acidic medium, disproportionates to:",
+          "options": {
+            "1": "Mn2O7 and MnO2",
+            "2": "MnO4(-) and MnO",
+            "3": "MnO4(-) and MnO2",
+            "4": "Mn2O7 and MnO"
+          },
+          "answer": "3",
+          "solution": "3MnO4^2- + 4H+ -> 2MnO4^- + MnO2 + 2H2O. Manganate ion disproportionates into permanganate (MnO4-) and manganese dioxide (MnO2) in acidic medium."
+        },
+        {
+          "number": 64,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Statement I: The number of species among SF4, NH4+, [NiCl4]2-, XeF4, [PtCl4]2-, SeF4 and [Ni(CN)4]2- that have tetrahedral geometry is 3. Statement II: In the set [NO2, BeH2, BF3, AlCl3], all the molecules have incomplete octet around the central atom. Choose the correct answer:",
+          "options": {
+            "1": "Statement I is true but Statement II is false",
+            "2": "Both Statement I and Statement II are false",
+            "3": "Statement I is false but Statement II is true",
+            "4": "Both Statement I and Statement II are true"
+          },
+          "answer": "3",
+          "solution": "Geometries: SF4 (see-saw), XeF4 (square planar), [PtCl4]2- (square planar), [NiCl4]2- (tetrahedral), [Ni(CN)4]2- (square planar), SeF4 (see-saw), NH4+ (tetrahedral). Only 2 species (NiCl4^2- and NH4+) are tetrahedral, not 3, so Statement I is false. NO2 has 7 electrons around N (odd electron species), BeH2 has 4 electrons on Be, BF3 has 6 electrons on B, AlCl3 has 6 electrons on Al - all incomplete octets, so Statement II is true."
+        },
+        {
+          "number": 65,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Statement I: Among [Cu(NH3)4]2+, [Ni(en)3]2+, [Ni(NH3)6]2+ and [Mn(H2O)6]2+, [Mn(H2O)6]2+ has the maximum number of unpaired electrons. Statement II: The number of pairs among {[NiCl4]2-,[Ni(CO)4]}, {[NiCl4]2-,[Ni(CN)4]2-} and {[Ni(CO)4],[Ni(CN)4]2-} that contain only diamagnetic species is two. Choose the correct answer:",
+          "options": {
+            "1": "Statement I is false but Statement II is true",
+            "2": "Both Statement I and Statement II are true",
+            "3": "Both Statement I and Statement II are false",
+            "4": "Statement I is true but Statement II is false"
+          },
+          "answer": "4",
+          "solution": "[Cu(NH3)4]2+ (d9, dsp2) has 1 unpaired electron. [Ni(en)3]2+ (d8, sp3d2) has 2 unpaired electrons. [Ni(NH3)6]2+ (d8, sp3d2) has 2 unpaired electrons. [Mn(H2O)6]2+ (d5, sp3d2) has 5 unpaired electrons (maximum), so Statement I is true. [Ni(CO)4] is diamagnetic, [NiCl4]2- is paramagnetic, [Ni(CN)4]2- is diamagnetic. Only the pair {[Ni(CO)4],[Ni(CN)4]2-} has both diamagnetic, so only 1 pair qualifies (not two), making Statement II false."
+        },
+        {
+          "number": 66,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Identify the correct statement(s) from the following: A. Propanal and propanone are functional isomers. B. Ethoxyethane and methoxypropane are metamers. C. But-2-ene shows optical isomerism. D. But-1-ene and but-2-ene are functional isomers. E. Pentane and 2,2-dimethylpropane are chain isomers. Choose the correct answer:",
+          "options": {
+            "1": "B, C and D only",
+            "2": "A, B and C only",
+            "3": "A, B and E only",
+            "4": "C, D and E only"
+          },
+          "answer": "3",
+          "solution": "A: propanal and propanone are functional isomers (true). B: ethoxyethane and methoxypropane are metamers (true, both ethers with different alkyl groups on either side of O). C: but-2-ene does NOT have optical isomerism (false - it lacks a chiral center). D: but-1-ene and but-2-ene are positional isomers, not functional isomers (false). E: pentane and 2,2-dimethylpropane are chain isomers (true). So A, B, E only."
+        },
+        {
+          "number": 67,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Identify the correct statements: A. Arginine and Tryptophan are essential amino acids. B. Histidine does not contain a heterocyclic ring in its structure. C. Proline is a six-membered cyclic ring amino acid. D. Glycine does not have a chiral centre. E. Cysteine has characteristic feature of side chain as MeS-CH2-CH2-. Choose the correct answer:",
+          "options": {
+            "1": "C and E Only",
+            "2": "B and E Only",
+            "3": "C and D Only",
+            "4": "A and D Only"
+          },
+          "answer": "4",
+          "solution": "A: Arginine and Tryptophan are essential amino acids (true). B: Histidine DOES contain a heterocyclic (imidazole) ring, so B is false. C: Proline is a FIVE-membered cyclic ring amino acid, not six-membered, so C is false. D: Glycine (simplest amino acid, R=H) does not have a chiral centre (true). E: Cysteine's characteristic side chain is -CH2-SH, not MeS-CH2-CH2- (that describes methionine), so E is false. So A and D only."
+        },
+        {
+          "number": 68,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Which of the following graphs between pressure 'P' versus volume 'V' represents the maximum work done? (Four P-V diagrams shown with different paths between states at 22.4L and 44.8L, pressures 1.0 and 2.0 bar)",
+          "options": {
+            "1": "Graph 1 (cyclic path)",
+            "2": "Graph 2 (isochoric/vertical drop)",
+            "3": "Graph 3 (cyclic path variant)",
+            "4": "Graph 4 (single reversible curve)"
+          },
+          "answer": "4",
+          "solution": "The area under the P-V curve equals the magnitude of work done. In the option with a single smooth reversible expansion curve from (22.4L, 2.0 bar) to (44.8L, 1.0 bar), the enclosed area (and hence magnitude of work) is maximum compared to the cyclic paths (where net work is smaller due to path retracing) or the isochoric option (zero net work)."
+        },
+        {
+          "number": 69,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "For the reaction N2O4 <=> 2NO2, a graph of G (kJ/mol) vs fraction of N2O4 dissociated is plotted (constant P,T), with values 5.40 and 0.84 kJ marked. Identify correct statements: A. Standard free energy change for the reaction is -5.40 kJ/mol. B. As deltaG(standard) in graph is positive, N2O4 will not dissociate into NO2 at all. C. Reverse reaction will go to completion. D. When 1 mole of N2O4 changes into equilibrium mixture, value of deltaG(standard) = -0.84 kJ/mol. E. When 2 mole of NO2 changes into equilibrium mixture, deltaG(standard) for equilibrium mixture is -6.24 kJ/mol.",
+          "options": {
+            "1": "D and E only",
+            "2": "C and E only",
+            "3": "A and D only",
+            "4": "B and C only"
+          },
+          "answer": "1",
+          "solution": "From the graph, delta_r*G° = G°B - G°A = +5.40 kJ/mol (positive, not -5.40), so A is false. Since delta_r*G°=+ve, N2O4 will PARTIALLY dissociate (equilibrium exists, doesn't mean zero dissociation), so B is false. The reverse reaction reaches equilibrium at point E (partially completed, not complete), so C is false. For 1 mole N2O4 forming the equilibrium mixture, delta_r*G° = -0.84 kJ/mol (true, D). For 2 mole NO2 forming equilibrium mixture, deltaG° = -5.4-0.84 = -6.24 kJ/mol (true, E). So D and E only."
+        },
+        {
+          "number": 70,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Statement I: When an electric discharge is passed through gaseous hydrogen, the hydrogen molecules dissociate and the energetically excited hydrogen atoms produce electromagnetic radiation of discrete frequencies. Statement II: The frequency of the second line of the Balmer series obtained from He+ is equal to that of the first line of the Lyman series obtained from a hydrogen atom. Choose the correct answer:",
+          "options": {
+            "1": "Both Statement I and Statement II are true",
+            "2": "Both Statement I and Statement II are false",
+            "3": "Statement I is false but Statement II is true",
+            "4": "Statement I is true but Statement II is false"
+          },
+          "answer": "1",
+          "solution": "Statement I describes the standard mechanism of atomic hydrogen emission spectra (true). For Statement II: 1st Lyman line of H: 1/lambda = R(1)^2(1/1^2-1/2^2) = 3R/4. 2nd Balmer line of He+ (Z=2): 1/lambda' = R(2)^2(1/2^2-1/4^2) = 3R/4. Since 1/lambda=1/lambda', the frequencies are equal (true)."
+        },
+        {
+          "number": 71,
+          "subject": "Chemistry",
+          "type": "Numerical",
+          "question": "Pre-exponential factors of two different reactions of the same order are identical. Let the activation energy of the first reaction exceed the activation energy of the second reaction by 20 kJ/mol. If k1 and k2 are the rate constants of the first and second reaction respectively at 300K, then ln(k2/k1) will be (nearest integer). (R=8.3 J K^-1 mol^-1)",
+          "answer": "8",
+          "solution": "ln(k2/k1) = (E1-E2)/(300R) = (20*1000)/(300*8.3) = 8.032, which rounds to 8."
+        },
+        {
+          "number": 72,
+          "subject": "Chemistry",
+          "type": "Numerical",
+          "question": "The pH and conductance of a weak acid (HX) was found to be 5 and 4x10^-5 S respectively. The conductance was measured under standard conditions using a cell where the electrode plates having a surface area of 1 cm^2 were at a distance of 1.5 cm apart. The value of the limiting molar conductivity is ____ Sm^2 mol^-1 (nearest integer). (degree of dissociation << 1)",
+          "answer": "6",
+          "solution": "[H+]=10^-5=[HX]*alpha=[HX]*(Lambda_m/Lambda_m_infinity). Cell constant K=G* = 1.5/1=1.5 cm^-1 (given as 15/1 in some steps, using given values k=G.G*=4x10^-5*15=6x10^-4 S/cm). Lambda_m = k*1000/[HX]. Substituting into [H+] equation and solving gives Lambda_m_infinity = 60000 S.cm^2/mol = 6 S.m^2/mol."
+        },
+        {
+          "number": 73,
+          "subject": "Chemistry",
+          "type": "Numerical",
+          "question": "Using thermodynamic data for substances AB(g), A2(g), B2(g) at 500K (given DeltaHf and S values), one mole each of A2(g) and B2(g) are taken in a 1L closed flask and allowed to establish equilibrium at 500K: A2(g)+B2(g) <=> 2AB(g). The value of x (DeltaHf of B2 in kJ/mol) is ____ (nearest integer). (log K = 2.2, R=8.3 J K^-1 mol^-1)",
+          "answer": "70",
+          "solution": "DeltaH° = 2*32-(6+x) = (58-x) kJ. DeltaS° = 2*222-(146+280) = 18 J/K. DeltaG° = -RTlnK = -(8.314*500*2.2*2.303)/1000 = -21.06 kJ. Using DeltaG°=DeltaH°-T*DeltaS°: 58-x-500*(18/1000) = -21.06, solving gives x = 70.06, i.e., 70 (nearest integer)."
+        },
+        {
+          "number": 74,
+          "subject": "Chemistry",
+          "type": "Numerical",
+          "question": "Consider a reaction sequence starting from benzene: conc.HNO3+conc.H2SO4 (333K) -> P; then (1) Sn/HCl/heat (2) pH neutralised -> Q; then (CH3CO)2O -> R; then conc.HNO3+conc.H2SO4 -> S (major product); then (1) HCl/EtOH/heat (2) pH neutralised -> T. The percentage of nitrogen in product T formed is ____ % (nearest integer). (H:1, C:12, N:14, O:16)",
+          "answer": "20",
+          "solution": "Benzene -> nitrobenzene (P) -> aniline (Q, via Sn/HCl reduction) -> acetanilide (R, via acetylation) -> nitration gives p-nitroacetanilide (S, major product due to directing effect of acetamido group) -> hydrolysis (HCl/EtOH) gives p-nitroaniline (T). Molecular formula of T (C6H6N2O2): mol wt = 6*12+6*1+2*14+2*16 = 138. %N = (28/138)*100 = 20.29% ~ 20%."
+        },
+        {
+          "number": 75,
+          "subject": "Chemistry",
+          "type": "Numerical",
+          "question": "Consider the following reactions: NaCl+K2Cr2O7+H2SO4 -> A+KHSO4+NaHSO4+H2O. A+NaOH -> B+NaCl+H2O. B+H2SO4+H2O2 -> C+Na2SO4+H2O. In product C, X is the number of O2(2-) (peroxide) units, Y is the total number of oxygen atoms present, and Z is the oxidation state of Cr. The value of X+Y+Z is ____.",
+          "answer": "13",
+          "solution": "A = CrO2Cl2 (chromyl chloride). B = Na2CrO4 (sodium chromate). C = CrO5 (chromium peroxide, blue peroxide, with structure containing two peroxide (-O-O-) groups and one =O group around Cr in +6 oxidation state). X=2 (peroxide units), Y=5 (total oxygen atoms: 2 peroxide groups=4 O + 1 double-bond O = 5), Z=6 (oxidation state of Cr). X+Y+Z = 2+5+6 = 13."
+        }
+      ]
+    }
+  }
+}

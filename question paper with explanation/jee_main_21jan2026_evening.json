@@ -1,0 +1,748 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "date": "21st January 2026",
+  "shift": "Evening",
+  "source": "Career Point Kota - Questions & Solutions",
+  "sections": {
+    "Mathematics": "Q1-Q25 (Section-A: Q1-Q20 MCQ, Section-B: Q21-Q25 Numerical)",
+    "Physics": "Q26-Q50 (Section-A: Q26-Q45 MCQ, Section-B: Q46-Q50 Numerical)",
+    "Chemistry": "Q51-Q75 (Section-A: Q51-Q70 MCQ, Section-B: Q71-Q75 Numerical)"
+  },
+  "questions": [
+    {
+      "number": 1,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "The positive integer n, for which the solutions of the equation x(x+2)+(x+2)(x+4)+...+(x+2n-2)(x+2n) = 8n/3 are two consecutive even integers, is:",
+      "options": {"1": "3", "2": "6", "3": "12", "4": "9"},
+      "answer": "1",
+      "solution": "Summing the series gives nx^2 + 2nx^2 + 4n(n^2-1)/3 - 8n/3 = 0, i.e. x^2 + 2nx + 4(n^2-1)/3 - 8/3 = 0. Since |alpha - beta| = 2, sqrt(D)/|a| = 2 => D = 4. Solving gives n^2 = 9 (using the condition), so n = 3."
+    },
+    {
+      "number": 2,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "Let f: R -> R be a twice differentiable function such that f''(x) > 0 for all x in R and f'(a-1) = 0, where a is a real number. Let g(x) = f(tan^2 x - 2tanx + a), 0 < x < pi/2. Consider: (I) g is increasing in (0, pi/4); (II) g is decreasing in (pi/4, pi/2). Then,",
+      "options": {"1": "Neither (I) nor (II) is True", "2": "Only (II) is True", "3": "Only (I) is True", "4": "Both (I) and (II) are True"},
+      "answer": "1",
+      "solution": "g(x) = f((tanx-1)^2 + a-1). g'(x) = f'((tanx-1)^2+a-1) * 2(tanx-1)sec^2x. Since f'(a-1)=0 and f''(x)>0, f'((tanx-1)^2+a-1) > 0. So g'(x) > 0 when tanx-1 > 0, i.e., g is increasing in (pi/4, pi/2), and g'(x) < 0 when tanx-1 < 0, i.e., g is decreasing in (0, pi/4). So both given statements (I) and (II) are actually reversed/false as stated -> Neither (I) nor (II) is true."
+    },
+    {
+      "number": 3,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "Let f(x) = x^3 + x^2 f'(1) + 2x f''(2) + f'''(3), x in R. Then the value of f'(5) is:",
+      "options": {"1": "62/5", "2": "657/5", "3": "2/5", "4": "117/5"},
+      "answer": "4",
+      "solution": "f'(x) = 3x^2 + 2x f'(1) + 2f''(2); f''(x) = 6x + 2f'(1); f''(2) = 12 + 2f'(1). Substituting and putting x=1: f'(1) = 3 + 6f'(1) + 24 => -5f'(1) = 27 => f'(1) = -27/5. Then f''(2) = 6/5, so f'(x) = 3x^2 - (54/5)x + 12/5. f'(5) = 75 - 54 + 12/5 = 117/5."
+    },
+    {
+      "number": 4,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "If the line alpha*x + 4y = sqrt(7), where alpha in R, touches the ellipse 3x^2 + 4y^2 = 1 at the point P in the first quadrant, then one of the focal distances of P is:",
+      "options": {"1": "1/sqrt(3) - 1/(2*sqrt(11))", "2": "1/sqrt(3) + 1/(2*sqrt(5))", "3": "1/sqrt(3) - 1/(2*sqrt(5))", "4": "1/sqrt(3) + 1/(2*sqrt(7))"},
+      "answer": "4",
+      "solution": "Using c^2 = a^2 m^2 + b^2 for the line 3x+4y-sqrt(7)=0 tangent to the ellipse gives alpha = 3, -3, so tangent is 3x+4y-sqrt(7)=0. Point of contact P = (1/sqrt7, 1/sqrt7), eccentricity e = 1/2. PS' = e(PM') = (1/2)(a/e + 1/sqrt7) = 1/sqrt(3) + 1/(2*sqrt(7))."
+    },
+    {
+      "number": 5,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "Let y^2 = 12x be the parabola with its vertex at O. Let P be a point on the parabola and A be a point on the x-axis such that angle OPA = 90 degrees. Then the locus of the centroid of such triangles OPA is:",
+      "options": {"1": "y^2 - 6x + 4 = 0", "2": "y^2 - 9x + 6 = 0", "3": "y^2 - 2x + 8 = 0", "4": "y^2 - 4x + 8 = 0"},
+      "answer": "3",
+      "solution": "P = (3t^2, 6t). Slope of AP = -t/2, giving A = (12+3t^2, 0). Centroid G(h,k): 3h = 3t^2+12+3t^2, 3k = 6t. So t = k/2, h = 2t^2+4 = k^2/2 + 4. Locus: y^2 = 2x - 8."
+    },
+    {
+      "number": 6,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "Let one end of a focal chord of the parabola y^2 = 16x be (16,16). If P(alpha,beta) divides this focal chord internally in the ratio 5:2, then the minimum value of alpha+beta is equal to:",
+      "options": {"1": "22", "2": "7", "3": "5", "4": "16"},
+      "answer": "2",
+      "solution": "Parameter of A is t=2, so parameter of B is t=-1/2, giving B=(1,-4). Case 1 (A:P:B = 5:2): alpha=37/7, beta=12/7, sum=7. Case 2 (2:5): sum=22. Minimum value is 7."
+    },
+    {
+      "number": 7,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "Let the line L pass through the point (-3,5,2) and make equal angles with the positive coordinate axes. If the distance of L from the point (-2, r, 1) is sqrt(14/3), then the sum of all possible values of r is:",
+      "options": {"1": "12", "2": "16", "3": "6", "4": "10"},
+      "answer": "4",
+      "solution": "Line: (x+3)/1=(y-5)/1=(z-2)/1=lambda. Foot of perpendicular R found via PR.d=0, giving lambda=(r-5)/3. Distance condition gives 6r^2-60r+126=0 => r^2-10r+21=0 => r=3,7. Sum=10."
+    },
+    {
+      "number": 8,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "Let the line L1 be parallel to the vector -3i+2j+4k and pass through the point (2,6,7), and the line L2 be parallel to the vector 2i+j+3k and pass through the point (4,3,5). If the line L3 is parallel to the vector -3i+5j+16k and intersects the lines L1 and L2 at points C and D respectively, then |CD|^2 is equal to:",
+      "options": {"1": "171", "2": "290", "3": "312", "4": "89"},
+      "answer": "2",
+      "solution": "Parametrize C on L1 and D on L2, use direction ratios of L3 to solve for parameters (lambda1=-3, lambda2=2), giving C(11,0,-5), D(8,5,11). |CD|^2 = 3^2+5^2+16^2 = 290."
+    },
+    {
+      "number": 9,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "Let alpha and beta be the roots of equation x^2 + 2ax + (3a+10) = 0 such that alpha < 1 < beta. Then the set of all possible values of a is:",
+      "options": {"1": "(-infinity, -11/5) U (5, infinity)", "2": "(-infinity, -2) U (5, infinity)", "3": "(-infinity, -3)", "4": "(-infinity, -11/5)"},
+      "answer": "4",
+      "solution": "For alpha<1<beta, f(1)<0: 1+2a+3a+10<0 => 5a+11<0 => a < -11/5. So a in (-infinity, -11/5)."
+    },
+    {
+      "number": 10,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "A random variable X takes values 0,1,2,3 with probabilities (2a+1)/30, (8a-1)/30, (4a+1)/30, b respectively, where a,b in R. Let mu and sigma respectively be the mean and standard deviation of X such that sigma^2+mu^2=2. Then a/b is equal to:",
+      "options": {"1": "30", "2": "3", "3": "60", "4": "12"},
+      "answer": "3",
+      "solution": "sigma^2+mu^2 = sum x_i^2 p(x_i) = (8a-1)/30 + 4(4a+1)/30 + 9b = 2 gives 24a+270b=57 i.e. 8a+90b=19. Sum of probabilities =1 gives 14a+30b=29. Solving simultaneously: a=2, b=1/30, so a/b=60."
+    },
+    {
+      "number": 11,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "If the area of the region {(x,y): 1-2x <= y <= 4-x^2, x>=0, y>=0} is alpha/beta where alpha,beta in N, gcd(alpha,beta)=1, then the value of (alpha+beta) is:",
+      "options": {"1": "73", "2": "85", "3": "91", "4": "67"},
+      "answer": "1",
+      "solution": "Required area = (2/3)*8 - (1/2)*(1/2)*1 = 16/3 - 1/4 = 61/12 = alpha/beta. alpha+beta = 61+12 = 73."
+    },
+    {
+      "number": 12,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "Let a1, a2/2, a3/2^2, ..., a10/2^9 be a G.P. of common ratio 1/sqrt(2). If a1+a2+...+a10 = 62, then a1 is equal to:",
+      "options": {"1": "2(sqrt(2)-1)", "2": "2-sqrt(2)", "3": "sqrt(2)-1", "4": "2(2-sqrt(2))"},
+      "answer": "1",
+      "solution": "a1,a2,...,a10 form a G.P. with common ratio sqrt(2). Sum = a1((sqrt2)^10 - 1)/(sqrt2-1) = 62. Solving gives a1 = 2(sqrt(2)-1)."
+    },
+    {
+      "number": 13,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "Let A = {x : |x^2-10| <= 6} and B = {x : |x-2| > 1}. Then",
+      "options": {
+        "1": "A U B = (-infinity,1] U (2,infinity)",
+        "2": "A - B = [2,3]",
+        "3": "A ∩ B = [-4,-2] U [3,4]",
+        "4": "B - A = (-infinity,-4) U (-2,1) U (4,infinity)"
+      },
+      "answer": "4",
+      "solution": "A = [-4,-2] U [2,4]; B = (-infinity,1) U (3,infinity). A U B = (-infinity,1) U [2,infinity); A ∩ B = [-4,-2] U (3,4]; A-B = [2,3]; B-A = (-infinity,-4) U (-2,1) U (4,infinity). So option (4) is correct."
+    },
+    {
+      "number": 14,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "For the matrices A = [[3,-4],[1,-1]] and B = [[-29,49],[-13,18]], if (A^15 + B)[x,y]^T = [0,0]^T, then among the following which one is true?",
+      "options": {"1": "x=5, y=7", "2": "x=18, y=11", "3": "x=11, y=2", "4": "x=16, y=3"},
+      "answer": "3",
+      "solution": "A^n = [[2n+1,-4n],[n,-2n+1]]. A^15 = [[31,-60],[15,-29]]. A^15+B = [[2,-11],[2,-11]]. Equation gives 2x-11y=0, satisfied by x=11, y=2."
+    },
+    {
+      "number": 15,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "For a triangle ABC, let p = vector BC, q = vector CA, r = vector BA. If |p| = 2*sqrt(3), |q| = 2, and cos(theta) = 1/sqrt(3), where theta is the angle between p and q, then |p x (q - 3r)|^2 + 3|r|^2 is equal to:",
+      "options": {"1": "340", "2": "220", "3": "410", "4": "200"},
+      "answer": "4",
+      "solution": "p+q=r. Using cos(pi-theta) formula, |r|^2 = 24. Then p x (q-3r) = p x (-3p-2q) = -2(p x q). So expression = 4|p|^2|q|^2 sin^2(theta) + 72 = 4*12*4*(2/3) + 72 = 200."
+    },
+    {
+      "number": 16,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "Let y = y(x) be the solution of the differential equation sec(x) dy/dx - 2y = 2 + 3sinx, x in (-pi/2, pi/2), y(0) = -7/4. Then y(pi/6) is equal to:",
+      "options": {"1": "-5/2", "2": "-5/4", "3": "-3*sqrt(3) - 7", "4": "-3*sqrt(2) - 7"},
+      "answer": "1",
+      "solution": "dy/dx - 2y cosx = 2cosx + 3sinx cosx. I.F. = e^(-2sinx). Solving, y = -(3/2)sinx - 7/4 + C e^(2sinx). Using y(0)=-7/4 gives C=0. y(pi/6) = -3/4 - 7/4 = -5/2."
+    },
+    {
+      "number": 17,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "Let A = {2,3,5,7,9}. Let R be the relation on A defined by xRy if and only if 2x <= 3y. Let l be the number of elements in R, and m be the minimum number of elements required to be added in R to make it a symmetric relation. Then l+m is equal to:",
+      "options": {"1": "23", "2": "25", "3": "21", "4": "27"},
+      "answer": "2",
+      "solution": "Counting pairs satisfying y >= 2x/3 for each x gives l=18. To make symmetric, elements to add: (5,2),(7,2),(9,2),(5,3),(7,3),(9,3),(9,5) => m=7. l+m=25."
+    },
+    {
+      "number": 18,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "If the system of equations 3x+y+4z=3, 2x+alpha*y-z=-3, x+2y+z=4 has no solution, then the value of alpha is equal to:",
+      "options": {"1": "19", "2": "4", "3": "13", "4": "23"},
+      "answer": "1",
+      "solution": "For no solution, determinant Delta=0: 3(alpha+2)+1(-1-2)+4(4-alpha)=0 => 19-alpha=0 => alpha=19. Checking Delta_x != 0 for alpha=19 confirms no solution."
+    },
+    {
+      "number": 19,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "Let z be the complex number satisfying |z-5| <= 3 and having maximum positive principal argument. Then 34 |(5z-12)/(5iz+16)|^2 is equal to:",
+      "options": {"1": "16", "2": "12", "3": "26", "4": "20"},
+      "answer": "4",
+      "solution": "For arg(z) maximum, z lies at tangent point: z = 4cos(theta)+4i sin(theta) with theta found from the geometry, giving z = 16/5 + 12i/5. Substituting into the expression gives 34*(160/272) = 20."
+    },
+    {
+      "number": 20,
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "question": "The largest n in N, for which 7^n divides 101!, is:",
+      "options": {"1": "16", "2": "18", "3": "15", "4": "19"},
+      "answer": "1",
+      "solution": "Exponent of 7 in 101! = floor(101/7) + floor(101/49) + floor(101/343) + ... = 14 + 2 = 16."
+    },
+    {
+      "number": 21,
+      "subject": "Mathematics",
+      "type": "Numerical",
+      "question": "Let [.] denote the greatest integer function and f(x) = lim(n->infinity) (1/n^3) * sum_{k=1}^{n} [k^2/3^x]. Then 12*sum_{j=1}^{infinity} f(j) is equal to ____.",
+      "answer": "2",
+      "solution": "Bounding the sum and taking the limit gives f(x) = 1/3^(x+1). Then 12*sum f(j) = 12*sum(1/3^(j+1)) = 12*(1/9)/(1-1/3) = 2."
+    },
+    {
+      "number": 22,
+      "subject": "Mathematics",
+      "type": "Numerical",
+      "question": "If Integral from 0 to 1 of 4*cot^-1(1-2x+4x^2) dx = a*tan^-1(2) - b*log_e(5), where a,b in N, then (2a+b) is equal to ____.",
+      "answer": "9",
+      "solution": "Using king's rule (x -> 1-x) twice and integration by parts (with substitution 1+4x^2=t), the integral evaluates to 4I = 4tan^-1(2) - ln5, giving a=1, b=1 (after matching 4tan^-1(2)-ln5 form scaled), so 2a+b = 8+1 = 9."
+    },
+    {
+      "number": 23,
+      "subject": "Mathematics",
+      "type": "Numerical",
+      "question": "Let the maximum value of (sin^-1 x)^2 + (cos^-1 x)^2 for x in [-sqrt(3)/2, 1/sqrt(2)] be (m/n)*pi^2, where gcd(m,n)=1. Then m+n is equal to ____.",
+      "answer": "65",
+      "solution": "(sin^-1x)^2+(cos^-1x)^2 = 2(sin^-1x - pi/4)^2 + pi^2/8, where sin^-1x in [-pi/3, pi/4]. Max occurs at sin^-1x = -pi/3, giving value 29*pi^2/36. So m=29, n=36, m+n=65."
+    },
+    {
+      "number": 24,
+      "subject": "Mathematics",
+      "type": "Numerical",
+      "question": "If (1/15C0 + 1/15C1)(1/15C1 + 1/15C2)...(1/15C12 + 1/15C13) = alpha^13 / (14C0 * 14C1 * ... * 14C12), then 30*alpha is equal to ____.",
+      "answer": "32",
+      "solution": "Product simplifies to (16/15)^13 / (14C0*14C1*...*14C12), giving alpha = 16/15. So 30*alpha = 32."
+    },
+    {
+      "number": 25,
+      "subject": "Mathematics",
+      "type": "Numerical",
+      "question": "If P is a point on the circle x^2+y^2=4, Q is a point on the straight line 5x+y+2=0, and x-y+1=0 is the perpendicular bisector of PQ, then 13 times the sum of abscissa of all such points P is ____.",
+      "answer": "2",
+      "solution": "Setting P=(2costheta,2sintheta), Q on the line, and using midpoint on x-y+1=0 and slope condition, eliminating alpha gives cos(theta)+5sin(theta)=1. Solutions: costheta=1 or costheta=-12/13. Sum of abscissas = 2*1+2*(-12/13) = 2/13. 13 times this sum = 2."
+    },
+    {
+      "number": 26,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "Consider two identical metallic spheres of radius R each having charge Q and mass m. Their centers have an initial separation of 4R. Both spheres are given an initial speed of u towards each other. The minimum value of u so that they can just touch each other is: (Take k = 1/(4*pi*epsilon0), assume kQ^2 > Gm^2, G is the Gravitational constant)",
+      "options": {
+        "1": "sqrt[(kQ^2/4mR)(1 - Gm^2/kQ^2)]",
+        "2": "sqrt[(kQ^2/4mR)(1 + Gm^2/kQ^2)]",
+        "3": "sqrt[(kQ^2/2mR)(1 - Gm^2/kQ^2)]",
+        "4": "sqrt[(kQ^2/2mR)(1 - Gm^2/2kQ^2)]"
+      },
+      "answer": "1",
+      "solution": "Using energy conservation (electrostatic PE + gravitational PE + KE) between initial separation 4R (center-to-center) and final separation 2R (touching), solve for u: u = sqrt[(1/4mR)(KQ^2 - Gm^2)] = sqrt[(kQ^2/4mR)(1-Gm^2/kQ^2)]."
+    },
+    {
+      "number": 27,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "The charge stored by the capacitor C in the given circuit in the steady state is ____ microC. (Circuit: 2.5V source, 1ohm, C=5microF, 2ohm, 3ohm, 4ohm branches as shown)",
+      "options": {"1": "12.5", "2": "10", "3": "7.5", "4": "5"},
+      "answer": "2",
+      "solution": "In steady state no current flows through capacitor branch. Current i = 2.5/5 = 0.5A through the 1ohm+4ohm branch. Vc = 4*0.5 = 2V. Charge Q = C*Vc = 5*2 = 10 microC."
+    },
+    {
+      "number": 28,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "The total length of potentiometer wire AB is 50 cm in the arrangement shown (6ohm and 4ohm resistors with galvanometer at point P). If P is the point where the galvanometer shows zero reading, the length AP is ____ cm.",
+      "options": {"1": "15", "2": "30", "3": "25", "4": "20"},
+      "answer": "2",
+      "solution": "6/R_AP = 4/R_PB and l_AP + l_PB = 50. R_AP/R_PB = l_AP/l_PB = 3/2. l_AP = (3/5)*50 = 30 cm."
+    },
+    {
+      "number": 29,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "A capacitor C is first charged fully with potential difference V0 and disconnected from the battery. The charged capacitor is connected across an inductor of inductance L. In t seconds 25% of the initial energy in the capacitor is transferred to the inductor. The value of t is ____ s.",
+      "options": {"1": "pi*sqrt(LC)/3", "2": "pi*sqrt(LC)/6", "3": "pi*sqrt(LC)/2", "4": "pi*sqrt(LC/2)"},
+      "answer": "2",
+      "solution": "U_cf = 75% U_ci => Qf^2 = (3/4)Qi^2. Qi*cos(wt) = (sqrt3/2)Qi => t = T/12 = (pi/6)*sqrt(LC)."
+    },
+    {
+      "number": 30,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "The r.m.s speed of oxygen molecules at 47 degC is equal to that of hydrogen molecules kept at ____ degC. (Mass of oxygen/mass of hydrogen = 32/2)",
+      "options": {"1": "-235", "2": "-100", "3": "-253", "4": "-20"},
+      "answer": "3",
+      "solution": "Vrms = sqrt(3RT/M). T_O2 = 320K. Equate: T2/M_O2 = T_H2/M_H2 => 320/32 = T_H2/2 => T_H2 = 20K = -253 degC."
+    },
+    {
+      "number": 31,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "Two cars A and B each of mass 10^3 kg are moving on parallel tracks separated by 10 m, in the same direction with speeds 72 km/h and 36 km/h. The magnitude of angular momentum of car A with respect to car B is ____ J.s.",
+      "options": {"1": "3.6x10^5", "2": "10^5", "3": "3x10^5", "4": "2x10^5"},
+      "answer": "2",
+      "solution": "L = m*V_rel*r_perp = 1000*(36*5/18)*10 = 10^5 kg m^2/s."
+    },
+    {
+      "number": 32,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "The pulley shown is made using a thin rim and two rods of length equal to the diameter of the rim, the rim and each rod having mass M. Two blocks of mass M and m are attached to two ends of a light string over the pulley (hinged, rotates freely in a vertical plane about its centre). The acceleration experienced by the blocks is ____ (assume no slipping).",
+      "options": {
+        "1": "(M-m)g / [(13/6)M + m]",
+        "2": "(M-m)g / (M+m)",
+        "3": "(M-m)g / [(8/3)M + m]",
+        "4": "(M-m)g / (2M+m)"
+      },
+      "answer": "3",
+      "solution": "Newton's laws for both blocks and torque equation for pulley: (M-m)g = (M+m+I/r^2)a. Moment of inertia I = Mr^2 + 2*(M*(2r)^2/12) = (5/3)Mr^2. Solving gives a = (M-m)g / [M+m+(5/3)M] = (M-m)g/[(8/3)M+m]."
+    },
+    {
+      "number": 33,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "The kinetic energy of a simple harmonic oscillator is oscillating with angular frequency of 176 rad/s. The frequency of this simple harmonic oscillator is ____ Hz. (Take pi = 22/7)",
+      "options": {"1": "14", "2": "88", "3": "28", "4": "176"},
+      "answer": "1",
+      "solution": "Kinetic energy oscillates at twice the SHM frequency. f_k = omega/(2pi) = 176/(2*22/7) = 28 Hz. So oscillator frequency = f_k/2 = 14 Hz."
+    },
+    {
+      "number": 34,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "Statement I: In Young's double slit experiment, the angular separation of fringes will increase as the screen is moved away from the plane of the slits. Statement II: The angular separation of fringes will increase when monochromatic source is replaced by another of higher wavelength. Choose the correct answer:",
+      "options": {
+        "1": "Both Statement I and Statement II are true",
+        "2": "Both Statement I and Statement II are false",
+        "3": "Statement I is false but Statement II is true",
+        "4": "Statement I is true but Statement II is false"
+      },
+      "answer": "3",
+      "solution": "Angular fringe width = lambda/d, which is independent of screen distance D (so Statement I is false), and increases with wavelength (so Statement II is true)."
+    },
+    {
+      "number": 35,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "A battery with EMF E and internal resistance r is connected across a resistance R. The power consumption in R will be maximum when:",
+      "options": {"1": "R=2r", "2": "R=r/2", "3": "R=sqrt(2)*r", "4": "R=r"},
+      "answer": "4",
+      "solution": "For maximum power transfer to load, R_load = R_internal, i.e., R = r."
+    },
+    {
+      "number": 36,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "Keeping the significant figures in view, the sum of the physical quantities 52.01 m, 153.2 m and 0.123 m is:",
+      "options": {"1": "205 m", "2": "205.333 m", "3": "205.33 m", "4": "205.3 m"},
+      "answer": "4",
+      "solution": "Sum = 52.01+153.2+0.123 = 205.333, rounded to least decimal places (1 decimal, from 153.2) = 205.3 m."
+    },
+    {
+      "number": 37,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "A spherical body of radius r and density sigma falls freely through a viscous liquid of density rho and viscosity eta, attaining terminal velocity v0. Estimated maximum error in the quantity eta is: (ignore errors in sigma, rho, g)",
+      "options": {
+        "1": "2*(Delta r/r) - (Delta v0/v0)",
+        "2": "2*(Delta r/r) + (Delta v0/v0)",
+        "3": "2*[(Delta r/r) + (Delta v0/v0)]",
+        "4": "2*[(Delta r/r) - (Delta v0/v0)]"
+      },
+      "answer": "2",
+      "solution": "v0 = (2r^2 g/9eta)(rhoB-rhoL) => eta = (2r^2 g/9v0)(rhoB-rhoL). Delta(eta)/eta = 2*Delta(r)/r + Delta(v0)/v0."
+    },
+    {
+      "number": 38,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "Surface tension of two liquids (same density), T1 and T2, measured using capillary rise method with tubes of inner radii r1 and r2 where r1 > r2. Heights are h1 and h2 respectively (ignore weight below meniscus). The relation satisfied is:",
+      "options": {
+        "1": "h1 < h2 and T1 = T2",
+        "2": "h1 = h2 and T1 = T2",
+        "3": "h1 > h2 and T1 = T2",
+        "4": "h1 > h2 and T1 < T2"
+      },
+      "answer": "1",
+      "solution": "h = 2T/(rho*g*r), so h is inversely proportional to r. Since r1 > r2, h2 > h1 i.e. h1 < h2. Since T1, T2 not otherwise specified as different, T1=T2 (same liquid property class assumed)."
+    },
+    {
+      "number": 39,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "A river of width 200 m flows west to east with speed 18 km/h. A boat moving with speed 36 km/h in still water travels one round trip (bank to bank). The minimum time taken by the boat and the displacement along the river bank are ____ and ____ respectively.",
+      "options": {"1": "20 s and 100 m", "2": "40 s and 0 m", "3": "40 s and 200 m", "4": "40 s and 100 m"},
+      "answer": "3",
+      "solution": "v_R=5m/s (river), v_BR=10m/s (boat). Minimum time (boat heads straight across at full speed relative to water) t_min=200/10=20s one way, 40s round trip. Displacement along bank = 40*5=200m."
+    },
+    {
+      "number": 40,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "Two known resistances of R ohm and 2R ohm and one unknown resistance X ohm are connected in a circuit as shown. If the equivalent resistance between points A and B is X ohm, then the value of X is ____ ohm.",
+      "options": {"1": "(sqrt(3)-1)R", "2": "R", "3": "2(sqrt(3)-1)R", "4": "(sqrt(3)+1)R"},
+      "answer": "1",
+      "solution": "(2R+x)*R/(3R+x) = x leads to x^2+2Rx-2R^2=0, giving x = (sqrt(3)-1)R."
+    },
+    {
+      "number": 41,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "The energy of an electron in an orbit of the Bohr atom is -0.04*E0 eV, where E0 is the ground state energy. If L is the angular momentum of the electron in this orbit and h is Planck's constant, then 2*pi*L/h is ____:",
+      "options": {"1": "2", "2": "4", "3": "5", "4": "6"},
+      "answer": "3",
+      "solution": "Angular momentum L = nh/2pi => n = 2piL/h. Energy E = -13.6z^2/n^2 => -E0/n^2 = -0.04E0 => n^2=25, n=5."
+    },
+    {
+      "number": 42,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "An infinitely long straight wire carrying current I is bent in a planar shape as shown (two straight segments and a circular loop of radius r). The magnetic field at the centre O of the circular loop is:",
+      "options": {
+        "1": "(mu0*I/2*pi*r)*(pi+1) i-hat",
+        "2": "-(mu0*I/2*pi*r)*(pi-1) i-hat",
+        "3": "(mu0*I/2*pi*r)*(pi-1) i-hat",
+        "4": "-(mu0*I/2*pi*r)*(pi+1) i-hat"
+      },
+      "answer": "2",
+      "solution": "B0 = B_AB + B_DE + B_BCD (contributions from straight wires and 3/4 circular arc). Combining: B0 = (mu0*i/2*pi*r)(1-pi) i-hat = -(mu0*i/2*pi*r)(pi-1) i-hat."
+    },
+    {
+      "number": 43,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "A large drum of radius R spins around its axis with angular velocity omega. The minimum value of omega so that a body of mass M remains stuck to the inner wall of the drum (coefficient of friction mu) is:",
+      "options": {"1": "sqrt(mu*g/R)", "2": "sqrt(2g/(mu*R))", "3": "sqrt(g/(2*mu*R))", "4": "sqrt(g/(mu*R))"},
+      "answer": "4",
+      "solution": "N = m*omega^2*r provides centripetal force; friction mu*N supports weight mg. mu*m*omega^2*r = mg => omega = sqrt(g/(mu*r))."
+    },
+    {
+      "number": 44,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "A body of mass 2 kg moves along x-direction with displacement x(t) = alpha*t^2 + beta*t + gamma, where alpha=1 m/s^2, beta=1 m/s, gamma=1 m. The work done on the body from t=2s to t=3s is ____ J.",
+      "options": {"1": "49", "2": "42", "3": "24", "4": "12"},
+      "answer": "3",
+      "solution": "x(t)=t^2+t+1, v(t)=2t+1, a(t)=2, F=4N (constant). Displacement from t=2 to t=3: x(3)-x(2)=13-7=6m. W=F*S=4*6=24 J."
+    },
+    {
+      "number": 45,
+      "subject": "Physics",
+      "type": "MCQ",
+      "question": "As shown, when the incident ray is parallel to the base of the prism, the emergent ray grazes along the second surface, with base angle 45 degrees. If the refractive index of the prism material is sqrt(2), the angle theta of the prism is:",
+      "options": {"1": "60", "2": "75", "3": "90", "4": "45"},
+      "answer": "1",
+      "solution": "For grazing emergence sin(r2)=1/mu. By Snell's law at incidence: (1)(1/sqrt2)=sqrt2*sin(r1) => r1=30 deg. A = r1+r2 = 75 deg. Then 75+45+theta=180 => theta=60 degrees."
+    },
+    {
+      "number": 46,
+      "subject": "Physics",
+      "type": "Numerical",
+      "question": "An electromagnetic wave of frequency 100 MHz propagates through a medium of conductivity sigma=10 mho/m. The ratio of maximum conduction current density to maximum displacement current density is ____. (Take 1/(4*pi*epsilon0) = 9x10^9 Nm^2/C^2)",
+      "answer": "1800",
+      "solution": "jc_max = sigma*E0, jd_max = epsilon0*E0*omega. Ratio = sigma/(epsilon0*omega) = (10*4*pi*9x10^9)/(2*pi*100x10^6) = 1800."
+    },
+    {
+      "number": 47,
+      "subject": "Physics",
+      "type": "Numerical",
+      "question": "The terminal velocity of a metallic ball of radius 6 mm in a viscous fluid is 20 cm/s. The terminal velocity of another ball of the same material with radius 3 mm in the same fluid will be ____ cm/s.",
+      "answer": "5",
+      "solution": "Terminal velocity proportional to radius^2. (vT1/vT2) = (6/3)^2 = 4. vT2 = 20/4 = 5 cm/s."
+    },
+    {
+      "number": 48,
+      "subject": "Physics",
+      "type": "Numerical",
+      "question": "A particle having electric charge 3x10^-19 C and mass 6x10^-27 kg is accelerated by applying an electric potential of 1.21 V. Wavelength of the matter wave associated with the particle is alpha x 10^-12 m. The value of alpha is ____. (Take Planck's constant = 6.6x10^-34 J.s)",
+      "answer": "10",
+      "solution": "lambda = h/sqrt(2mqV) = 6.6x10^-34 / sqrt(2*18x10^-46*1.21) = 10^-11 m = 10x10^-12 m. So alpha=10."
+    },
+    {
+      "number": 49,
+      "subject": "Physics",
+      "type": "Numerical",
+      "question": "In a Young's double slit experiment set up, the two slits are kept 0.4 mm apart and screen is placed 1 m from the slits. A thin transparent sheet of thickness 20 micrometers is introduced in front of one slit, and the centre fringe shifts by 20 mm on the screen. The refractive index of the sheet is alpha/10, where alpha is ____.",
+      "answer": "14",
+      "solution": "y_shift = (mu-1)*t*D/d. 20x10^-3 = (mu-1)*20x10^-6*1/(0.4x10^-3). (mu-1)=0.4, mu=1.4. alpha/10=1.4 => alpha=14."
+    },
+    {
+      "number": 50,
+      "subject": "Physics",
+      "type": "Numerical",
+      "question": "A diatomic gas (gamma=1.4) does 100 J of work when it is expanded isobarically. Then the heat given to the gas is ____ J.",
+      "answer": "350",
+      "solution": "W=100J=nR*DeltaT (isobaric). Q = nCp*DeltaT = (f/2+1)*nR*DeltaT = (7/2)*100 = 350 J."
+    },
+    {
+      "number": 51,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "Consider the following spectral lines for atomic hydrogen: A. First line of Paschen series; B. Second line of Balmer series; C. Third line of Paschen series; D. Fourth line of Bracket series. The correct arrangement of the above lines in ascending order of energy is:",
+      "options": {"1": "D < C < A < B", "2": "A < B < C < D", "3": "C < D < B < A", "4": "D < A < C < B"},
+      "answer": "4",
+      "solution": "Using deltaE=13.6*Z^2*(1/n1^2-1/n2^2) with (A) n1=3,n2=4; (B) n1=2,n2=4; (C) n1=3,n2=6; (D) n1=4,n2=8, the ascending order of energy is D < A < C < B."
+    },
+    {
+      "number": 52,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "Match List-I (Pair of Compounds) with List-II (Type of Isomers): A. 2-Methylpropene and but-1-ene; B. Cis-but-2-ene and trans-but-2-ene; C. 2-Butanol and diethyl ether; D. But-1-ene and but-2-ene. List-II: I. Stereoisomers, II. Position isomers, III. Chain isomers, IV. Functional group isomers.",
+      "options": {
+        "1": "A-III, B-I, C-IV, D-II",
+        "2": "A-III, B-I, C-II, D-IV",
+        "3": "A-I, B-IV, C-III, D-II",
+        "4": "A-II, B-I, C-IV, D-III"
+      },
+      "answer": "1",
+      "solution": "A: 2-methylpropene & but-1-ene are chain isomers (III). B: cis/trans-but-2-ene are stereoisomers (I). C: 2-butanol & diethyl ether are functional isomers (IV). D: but-1-ene & but-2-ene are position isomers (II)."
+    },
+    {
+      "number": 53,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "Nitrobenzene undergoes the sequence: (1) Br2/FeBr3/heat, (2) Sn/HCl/heat, (3) pH neutralisation, (4) Br2/H2O, (5) NaNO2/HBr 0-5degC, (6) CuBr/NaBr, to give major product (P). The number of bromine atoms in the final product (P) will be:",
+      "options": {"1": "1", "2": "6", "3": "5", "4": "3"},
+      "answer": "3",
+      "solution": "Bromination of nitrobenzene, reduction to amine, tribromination via Br2/H2O (2,4,6-tribromoaniline), diazotization and Sandmeyer with CuBr replaces NH2 by Br, giving pentabromobenzene: 5 Br atoms in product P."
+    },
+    {
+      "number": 54,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "Aqueous HCl reacts with MnO2(s) to form MnCl2(aq), Cl2(g) and H2O(l). What is the weight (in g) of Cl2 liberated when 8.7 g of MnO2(s) is reacted with excess aqueous HCl solution? (Mn=55, Cl=35.5, O=16, H=1)",
+      "options": {"1": "7.1", "2": "71", "3": "21.3", "4": "14.2"},
+      "answer": "1",
+      "solution": "MnO2 + 4HCl -> MnCl2 + Cl2 + 2H2O. Moles of MnO2 = 8.7/87 = 0.1 mol, giving 0.1 mol Cl2. Weight = 0.1*71 = 7.1 g."
+    },
+    {
+      "number": 55,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "By usual analysis, 1.00 g of compound (X) gave 1.79 g of magnesium pyrophosphate. The percentage of phosphorus in compound (X) is (nearest integer): (O=16, Mg=24, P=31)",
+      "options": {"1": "50", "2": "30", "3": "20", "4": "40"},
+      "answer": "1",
+      "solution": "%P = (n_Mg2P2O7 * 2*31 / weight) *100 = (1.79/222 * 2*31)*100 = 49.99% ~ 50%."
+    },
+    {
+      "number": 56,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "Given: Delta_fH(methane,g) = -X kJ/mol; enthalpy of sublimation of graphite = Y kJ/mol; dissociation enthalpy of H2 = Z kJ/mol. The bond enthalpy of C-H bond is given by:",
+      "options": {"1": "(X+Y+2Z)/4", "2": "(X+Y+4Z)/2", "3": "X+Y+Z", "4": "(-X+Y+Z)/4"},
+      "answer": "1",
+      "solution": "C(s)+2H2(g) -> CH4(g). -X = Y + 2Z - 4*(B.E. of C-H). So B.E.(C-H) = (Y+2Z+X)/4."
+    },
+    {
+      "number": 57,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "Match List-I (Reagents) with List-II (Reaction Name involving aldehydes): A. H2, Pd-BaSO4; B. SnCl2,HCl; C. CrO2Cl2,CS2; D. CO,HCl/Anhyd. AlCl3. List-II: I. Etard Reaction, II. Rosenmund Reduction, III. Gatterman-Koch Reaction, IV. Stephen Reaction.",
+      "options": {
+        "1": "A-II, B-III, C-IV, D-I",
+        "2": "A-IV, B-III, C-I, D-II",
+        "3": "A-IV, B-I, C-II, D-III",
+        "4": "A-II, B-IV, C-I, D-III"
+      },
+      "answer": "4",
+      "solution": "A. H2/Pd-BaSO4 -> Rosenmund Reduction (II). B. SnCl2/HCl -> Stephen Reaction (IV). C. CrO2Cl2/CS2 -> Etard Reaction (I). D. CO/HCl/AlCl3 -> Gatterman-Koch Reaction (III). So A-II, B-IV, C-I, D-III."
+    },
+    {
+      "number": 58,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "Decomposition of A is a first order reaction at T(K): A(g) -> B(g)+C(g). In a closed 1 L vessel, 1 bar A(g) is allowed to decompose at T(K). After 100 minutes, the total pressure was 1.5 bar. What is the rate constant (in min^-1) of the reaction? (log2=0.3)",
+      "options": {"1": "6.9x10^-1", "2": "6.9x10^-3", "3": "6.9x10^-2", "4": "6.9x10^-4"},
+      "answer": "2",
+      "solution": "P_total = 1+P = 1.5 => P=0.5. K = (1/100)*ln(1/0.5) = 0.693/100 = 6.9x10^-3 min^-1."
+    },
+    {
+      "number": 59,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "The correct order of reactivity of the following benzyl halides towards reaction with KCN is: (a) 4-hydroxybenzyl bromide, (b) 4-aminobenzyl bromide, (c) 4-nitrobenzyl bromide, (d) 3-nitrobenzyl bromide",
+      "options": {"1": "a>b>c>d", "2": "b>a>d>c", "3": "b>a>c>d", "4": "a>b>d>c"},
+      "answer": "2",
+      "solution": "This is an SN1 reaction; rate proportional to carbocation stability, which depends on the electron-donating/withdrawing nature and position of substituents. Order: b>a>d>c."
+    },
+    {
+      "number": 60,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "Statement I: The correct order in terms of atomic/ionic radii is Al > Mg > Mg2+ > Al3+. Statement II: The correct order in terms of magnitude of electron gain enthalpy is Cl > Br > S > O. Choose the correct answer:",
+      "options": {
+        "1": "Both Statement I and Statement II are false",
+        "2": "Statement I is false but Statement II is true",
+        "3": "Statement I is true but Statement II is false",
+        "4": "Both Statement I and Statement II are true"
+      },
+      "answer": "2",
+      "solution": "Correct order of atomic/ionic size is Mg > Al > Mg2+ > Al3+ (Statement I false, since it says Al>Mg which is wrong). Electron gain enthalpy: Cl has highest magnitude among halogens/chalcogens listed, correct order Cl>Br>S>O (Statement II true)."
+    },
+    {
+      "number": 61,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "The correct statements are: A. Activation energy for enzyme catalysed hydrolysis of sucrose is lower than that of acid catalysed hydrolysis. B. During denaturation, secondary and tertiary structures of a protein are destroyed but primary structure remains intact. C. Nucleotides are joined together by glycosidic linkage between C1 and C4 carbons of the pentose sugar. D. Quaternary structure of proteins represents overall folding of the polypeptide chain. Choose the correct answer:",
+      "options": {"1": "A, C and D Only", "2": "A, B and D Only", "3": "A and B Only", "4": "B and C Only"},
+      "answer": "3",
+      "solution": "A and B are correct as stated (enzyme catalysis lowers activation energy; denaturation destroys secondary/tertiary but not primary structure). C and D are incorrect statements (nucleotides are joined by phosphodiester linkages, not C1-C4 glycosidic; quaternary structure refers to assembly of multiple polypeptide subunits, not overall folding of a single chain)."
+    },
+    {
+      "number": 62,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "The correct order of the rate of reaction CH3Br + Nu- -> CH3Nu + Br- with respect to nucleophiles is:",
+      "options": {
+        "1": "PhO- > OH- > CH3COO- > ClO4-",
+        "2": "ClO4- > CH3COO- > OH- > PhO-",
+        "3": "CH3COO- > PhO- > OH- > ClO4-",
+        "4": "OH- > PhO- > CH3COO- > ClO4-"
+      },
+      "answer": "4",
+      "solution": "Stability order of anion: ClO4- > CH3COO- > PhO- > OH-. Nucleophilicity is reverse of anion stability: OH- > PhO- > CH3COO- > ClO4-."
+    },
+    {
+      "number": 63,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "Statement I: CFSE of [Cr(H2O)6]2+ is greater than that of [Mn(H2O)6]2+. Statement II: Potassium ferricyanide has a greater spin-only magnetic moment than sodium ferrocyanide. Choose the correct answer:",
+      "options": {
+        "1": "Both Statement I and Statement II are true",
+        "2": "Both Statement I and Statement II are false",
+        "3": "Statement I is true but Statement II is false",
+        "4": "Statement I is false but Statement II is true"
+      },
+      "answer": "1",
+      "solution": "[Mn(H2O)6]2+ has d5 (WFL) config, CFSE=0. [Cr(H2O)6]2+ has d4 (WFL), CFSE=-0.6*Delta0 (nonzero, greater magnitude), so Statement I is true. K3[Fe(CN)6] (d5, 1 unpaired e-, mu=sqrt(3) BM) vs Na4[Fe(CN)6] (d6, 0 unpaired e-, mu=0), so Statement II is true."
+    },
+    {
+      "number": 64,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "The correct increasing order of C-H (A), C-O (B), C=O (C) and C≡N (D) bond lengths is:",
+      "options": {"1": "A < B < C < D", "2": "A < D < C < B", "3": "D < C < B < A", "4": "D < C < A < B"},
+      "answer": "2",
+      "solution": "Approximate bond lengths: C-H (A) ~107pm, C≡N (D) ~116pm, C=O (C) ~121pm, C-O (B) ~143pm. Increasing order: A < D < C < B."
+    },
+    {
+      "number": 65,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "Given four compounds: (a) n-propyl chloride, (b) iso-propyl chloride, (c) sec-butyl chloride, (d) neo-pentyl chloride. Percentage of carbon in the one which exhibits optical isomerism is:",
+      "options": {"1": "52", "2": "56", "3": "46", "4": "40"},
+      "answer": "1",
+      "solution": "sec-Butyl chloride (2-chlorobutane) is the chiral molecule (optically active). Molecular formula C4H9Cl, molar mass = 48+9+35.5 = 92.5. %C = (48/92.5)*100 = 51.89% ~ 52%."
+    },
+    {
+      "number": 66,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "Given below are statements about Mn and Mn2O7: A. Mn forms the oxide Mn2O7 in which Mn is in its highest oxidation state. B. Oxygen stabilizes Mn in higher oxidation states by forming multiple bonds with Mn. C. Mn2O7 is an ionic oxide. D. The structure of Mn2O7 consists of one bridged oxygen. Choose the correct answer:",
+      "options": {"1": "A, B, C and D", "2": "A, B and D Only", "3": "A, C and D Only", "4": "A, B and C Only"},
+      "answer": "2",
+      "solution": "Mn2O7 has Mn in +7 (highest) oxidation state (A true). Oxygen forms multiple (pi) bonds stabilizing high oxidation state Mn (B true). Mn2O7 is a covalent (not ionic) oxide, so C is false. The structure has one bridging oxygen linking two MnO3 tetrahedra (D true)."
+    },
+    {
+      "number": 67,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "For a closed circuit Daniell cell, which of the following plots (E_cell vs time) is accurate at a given temperature?",
+      "options": {"1": "Sudden vertical jump", "2": "Horizontal constant line", "3": "Decreasing linear line", "4": "Increasing linear line"},
+      "answer": "2",
+      "solution": "The standard E_cell (E°cell) remains constant with time regardless of the cell's operation, as it is defined at standard conditions - hence a horizontal constant line."
+    },
+    {
+      "number": 68,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "Statement I: Compound (X) - a bromophenyl ketone attached to a cyclopentane ring bearing a COOH group - dissolves in NaHCO3 solution and has two chiral carbon atoms. Statement II: Compound (Y), CH2=C=C=O type structure, has two carbons with sp3 hybridization, one carbon with sp2 and one carbon with sp hybridization. Choose the correct answer:",
+      "options": {
+        "1": "Statement I is true but Statement II is false",
+        "2": "Statement I is false but Statement II is true",
+        "3": "Both Statement I and Statement II are true",
+        "4": "Both Statement I and Statement II are false"
+      },
+      "answer": "3",
+      "solution": "Compound X has two chiral centers on the cyclopentane ring and dissolves in NaHCO3 due to the -COOH group (Statement I true). Compound Y's cumulated diene/ketene-type structure has the described hybridization pattern (sp3, sp3, sp2, sp) as shown (Statement II true)."
+    },
+    {
+      "number": 69,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "Statement I: The correct order in terms of bond dissociation enthalpy is Cl2 > Br2 > F2 > I2. Statement II: The correct trend in covalent character of metal halides is [SnCl4 > SnCl2], [PbCl4 > PbCl2] and [UF4 > UF6]. Choose the correct answer:",
+      "options": {
+        "1": "Statement I is true but Statement II is false",
+        "2": "Both Statement I and Statement II are true",
+        "3": "Statement I is false but Statement II is true",
+        "4": "Both Statement I and Statement II are false"
+      },
+      "answer": "1",
+      "solution": "Bond dissociation enthalpy order Cl2>Br2>F2>I2 is correct (Statement I true). By Fajan's rule, higher charge on cation gives greater covalent character: PbCl4>PbCl2, UF6>UF4 (not UF4>UF6 as stated), SnCl4>SnCl2. So Statement II is false (UF4>UF6 part is wrong)."
+    },
+    {
+      "number": 70,
+      "subject": "Chemistry",
+      "type": "MCQ",
+      "question": "On heating a mixture of common salt and K2Cr2O7 in equal amounts along with concentrated H2SO4 in a test tube, a gas is evolved. Formula of the gas evolved and oxidation state of the central metal atom in the gas respectively are:",
+      "options": {
+        "1": "CrO2Cl2 and +5",
+        "2": "CrO2Cl2 and +6",
+        "3": "Cr2O2Cl2 and +6",
+        "4": "Cr2O2Cl2 and +3"
+      },
+      "answer": "2",
+      "solution": "4NaCl + K2Cr2O7 + 6H2SO4 -> 2KHSO4 + 2CrO2Cl2 + 4NaHSO4 + 3H2O (chromyl chloride test). In CrO2Cl2, Cr is in +6 oxidation state."
+    },
+    {
+      "number": 71,
+      "subject": "Chemistry",
+      "type": "Numerical",
+      "question": "The first and second ionization constants of H2X are 2.5x10^-8 and 1.0x10^-13 respectively. The concentration of X2- in 0.1M H2X solution is ____ x10^-15 M. (Nearest integer)",
+      "answer": "100",
+      "solution": "Since Ka1 >> Ka2, approximate x>>y where x+y~x, x-y~x for the second equilibrium. This gives y ~ Ka2 = 10^-13 M = 100x10^-15 M for [X2-]."
+    },
+    {
+      "number": 72,
+      "subject": "Chemistry",
+      "type": "Numerical",
+      "question": "The osmotic pressure of a living cell is 12 atm at 300 K. The strength of sodium chloride solution that is isotonic with the living cell at this temperature is ____ gL^-1. (Nearest integer) (R=0.08 L atm K^-1 mol^-1; assume complete dissociation of NaCl; Na=23, Cl=35.5 g/mol)",
+      "answer": "15",
+      "solution": "pi = iCRT: 12 = 2*C*0.08*300 = 2*C*24 => C = 1/4 mol/L. Strength = (1/4)*58.5 = 14.625 g/L ~ 15 g/L."
+    },
+    {
+      "number": 73,
+      "subject": "Chemistry",
+      "type": "Numerical",
+      "question": "A substance X (1.5 g) dissolved in 150 g of solvent Y (molar mass=300 g/mol) led to an elevation of the boiling point by 0.5 K. The relative lowering of vapour pressure of solvent Y is ____ x10^-2. (Kb of solvent = 5.0 K kg/mol; nearest integer; assume dilute solution, no association/dissociation)",
+      "answer": "3",
+      "solution": "DeltaTb = i*Kb*m: 0.5 = i*m*5 => i*m=0.1, i*a=15/1000 (a=moles of solute). Relative lowering = i*X_solute = i*a/(a+150/300) = (15/1000)/(1/2) = 3x10^-2."
+    },
+    {
+      "number": 74,
+      "subject": "Chemistry",
+      "type": "Numerical",
+      "question": "Identify the metal ions among Co2+, Ni2+, Fe2+, V3+ and Ti2+ having a spin-only magnetic moment value more than 3.0 BM. The sum of unpaired electrons present in the high spin octahedral complexes formed by those metal ions is ____.",
+      "answer": "7",
+      "solution": "V3+=3d2, Ti2+=3d2, Ni2+=3d8, Fe2+=3d6, Co2+=3d7. Only Fe2+ (4 unpaired e-, mu>3) and Co2+ (3 unpaired e-, mu>3) exceed 3.0 BM. Sum of unpaired electrons = 4+3 = 7."
+    },
+    {
+      "number": 75,
+      "subject": "Chemistry",
+      "type": "Numerical",
+      "question": "MX is a sparingly soluble salt following MX(s) <=> M+(aq) + X-(aq); Ksp=10^-10 at 298K. If the standard reduction potential for M+(aq) + e- -> M(s) is E°(M+/M) = 0.79 V, then the value of the standard reduction potential for the metal/metal insoluble salt electrode E°(X-/MX(s)/M) is ____ mV. (Nearest integer) (2.303RT/F = 0.059 V)",
+      "answer": "200",
+      "solution": "E°(X-/MX(s)/M) = E°(M+/M) + (0.0591/n)*log(Ksp) = 0.79 + 0.059*log(10^-10) = 0.79 - 0.59 = 0.20 V = 200 mV."
+    }
+  ]
+}

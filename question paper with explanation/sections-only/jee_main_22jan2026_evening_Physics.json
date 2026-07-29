@@ -1,0 +1,272 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "source": "Career Point - Questions & Solutions",
+  "date": "22nd January 2026",
+  "shift": "Evening",
+  "sections": {
+    "Physics": {
+      "questions": [
+        {
+          "number": 26,
+          "type": "MCQ",
+          "question": "If ε, E and t represent the free space permittivity, electric field and time respectively, then the unit of εE/t will be:",
+          "options": [
+            "Am",
+            "Am²",
+            "A/m²",
+            "A/m"
+          ],
+          "answer": "A/m²",
+          "solution": "εE/t = (ε/t)(q/4πεr²) = AT/(TL²) = A/m²."
+        },
+        {
+          "number": 27,
+          "type": "MCQ",
+          "question": "Using a simple pendulum experiment g is determined by measuring its time period T. Which of the following plots represent the correct relation between the pendulum length L and time period T?",
+          "options": [
+            "Plot 1",
+            "Plot 2",
+            "Plot 3",
+            "Plot 4"
+          ],
+          "answer": "Plot 2",
+          "solution": "T²=4π²L/g ⇒ 1/T² = g/(4π²L), a decreasing curve approaching zero (rectangular hyperbola type) — matches plot 2."
+        },
+        {
+          "number": 28,
+          "type": "MCQ",
+          "question": "Consider two boxes containing ideal gases A and B such that their temperatures, pressures and number densities are same. The molecular size of A is half of that of B and mass of molecule A is four times that of B. If the collision frequency in gas B is 32×10¹⁸ per sec then collision frequency in gas A is ____ /s.",
+          "options": [
+            "32×10⁸",
+            "4×10⁸",
+            "2×10⁸",
+            "8×10⁸"
+          ],
+          "answer": "Dropped by JEE (data error; with Z=32×10⁸ correct answer is 4×10⁸)",
+          "solution": "Z ∝ d²/√M. Z_A/Z_B = (d_A/d_B)²×√(M_B/M_A) = (1/4)×(1/2) = 1/8. With corrected Z_B=32×10⁸, Z_A = 4×10⁸/s."
+        },
+        {
+          "number": 29,
+          "type": "MCQ",
+          "question": "A uniform bar of length 12 cm and mass 20m lies on a smooth horizontal table. Two point masses m and 2m are moving in opposite directions with same speed v, in the same plane as the bar, and strike the bar simultaneously, sticking to it. After collision the system rotates with angular frequency ω. The ratio of v and ω is:",
+          "options": [
+            "33",
+            "2√88",
+            "66",
+            "32"
+          ],
+          "answer": "33",
+          "solution": "Using angular momentum conservation about COM of rod: 8mV = 264mω ⇒ V/ω = 33."
+        },
+        {
+          "number": 30,
+          "type": "MCQ",
+          "question": "Three small identical bubbles of water having same charge on each coalesce to form a bigger bubble. Then the ratio of the potentials on one initial bubble and that on the resultant bigger bubble is:",
+          "options": [
+            "1:3^(1/3)",
+            "1:2^(2/3)",
+            "3^(2/3):1",
+            "1:3^(2/3)"
+          ],
+          "answer": "1:3^(2/3)",
+          "solution": "Volume conservation: R=3^(1/3)r. Vi/Vf = (kq/r)/(k3q/R) = R/3r = 1/3^(2/3)."
+        },
+        {
+          "number": 31,
+          "type": "MCQ",
+          "question": "In parallax method for the determination of focal length of a concave mirror, the object should always be placed:",
+          "options": [
+            "between F and C only",
+            "at any point beyond focus F",
+            "beyond centre of curvature C only",
+            "between pole P and focus F only"
+          ],
+          "answer": "at any point beyond focus F",
+          "solution": "Image should be real, so the object must be placed beyond the focus."
+        },
+        {
+          "number": 32,
+          "type": "MCQ",
+          "question": "The smallest wavelength of Lyman series is 91 nm. The difference between the largest wavelengths of Paschen and Balmer series is nearly ____ nm.",
+          "options": [
+            "1875",
+            "1550",
+            "1217",
+            "1784"
+          ],
+          "answer": "1217",
+          "solution": "R=1/91 nm⁻¹. λ(Balmer max)=655.2 nm, λ(Paschen max)=1872 nm. Δλ=1872-655.2≈1217 nm."
+        },
+        {
+          "number": 33,
+          "type": "MCQ",
+          "question": "In an open organ pipe v3 and v6 are 3rd and 6th harmonic frequencies, respectively. If v6-v3=2200 Hz then length of the pipe is ____ mm. (Take velocity of sound in air is 330 m/s.)",
+          "options": [
+            "275",
+            "225",
+            "200",
+            "250"
+          ],
+          "answer": "225",
+          "solution": "3V₀/2L = 2200 ⇒ L=3×330/(2×2200)=0.225 m = 225 mm."
+        },
+        {
+          "number": 34,
+          "type": "MCQ",
+          "question": "When a part of a straight capillary tube is placed vertically in a liquid, the liquid rises to height h. If the inner radius, density and surface tension all decrease by 1% each, the height of liquid in the tube will change by ____ %.",
+          "options": [
+            "-1",
+            "+3",
+            "-3",
+            "+1"
+          ],
+          "answer": "+1",
+          "solution": "h=2Tcosθ/(ρgr). %Δh = %ΔT - %Δρ - %Δr = 1+1+1 = +1%."
+        },
+        {
+          "number": 35,
+          "type": "MCQ",
+          "question": "The correct truth table for the given input data of the logic gate circuit (NOR/NAND combination) is:",
+          "options": [
+            "Table 1",
+            "Table 2",
+            "Table 3",
+            "Table 4"
+          ],
+          "answer": "Table 2",
+          "solution": "Y = (A·B)' · (C+D) simplified = (A·B) + (C+D)'; matches truth table option 2."
+        },
+        {
+          "number": 36,
+          "type": "MCQ",
+          "question": "An electric power line having total resistance of 2Ω, delivers 1 kW of power at 250 V. The percentage efficiency of transmission line is ____.",
+          "options": [
+            "96.9",
+            "86.5",
+            "100",
+            "92.5"
+          ],
+          "answer": "96.9",
+          "solution": "I=4A, P_loss=I²R=32W, P_net=1032W, η=1000/1032×100=96.9%."
+        },
+        {
+          "number": 37,
+          "type": "MCQ",
+          "question": "The wavelength of light, while passing through water is 540 nm. The refractive index of water is 4/3. The wavelength of the same light when passing through a medium of refractive index 3/2 is ____ nm.",
+          "options": [
+            "380",
+            "840",
+            "480",
+            "540"
+          ],
+          "answer": "480",
+          "solution": "μ1/μ2 = λ2/λ1 ⇒ λ = (4/3)/(3/2) × 540 = 480 nm."
+        },
+        {
+          "number": 38,
+          "type": "MCQ",
+          "question": "A circuit contains three resistances (9Ω each) and two inductors (4 mH each). The reading of ammeter at the moment switch K is turned ON is ____ A.",
+          "options": [
+            "1",
+            "zero",
+            "3",
+            "2"
+          ],
+          "answer": "1",
+          "solution": "Just after closing switch, inductors act as open circuits, so I = 9/9 = 1A."
+        },
+        {
+          "number": 39,
+          "type": "MCQ",
+          "question": "Statement I: A satellite moving very close to earth's surface has time period depending on density of earth. Statement II: T=2π√(Re/g) for satellite very close to earth's surface.",
+          "options": [
+            "Both false",
+            "Both true",
+            "I true, II false",
+            "I false, II true"
+          ],
+          "answer": "Both true",
+          "solution": "T=2π√(R³/GM), M=ρ(4/3)πR³, so T=2π√(1/(Gρ(4/3)π)) — depends on density (Statement I true). Also GM/R²=g gives T=2π√(R/g) (Statement II true)."
+        },
+        {
+          "number": 40,
+          "type": "MCQ",
+          "question": "Which of the following are true for a single slit diffraction? (A) Width of central maxima increases with increase in wavelength (const. slit width). (B) increases with decrease in wavelength. (C) increases with decrease in slit width. (D) increases with increase in slit width. (E) Brightness of central maxima increases for decrease in wavelength at constant slit width.",
+          "options": [
+            "A, D, E only",
+            "A, D only",
+            "B, D only",
+            "B, C only"
+          ],
+          "answer": "Dropped by JEE (correct statements are A, C, E — no matching option)",
+          "solution": "β=2λD/a. β∝λ (A correct), β∝1/d (C correct), and E is correct. No given option matches A,C,E, so JEE dropped this question."
+        },
+        {
+          "number": 41,
+          "type": "MCQ",
+          "question": "Statement I: An object moves from position r1 to r2 under a conservative force field F. The work done is W = -∫F·dr. Statement II: Since infinite paths are possible, work done by a conservative force changes with path.",
+          "options": [
+            "Both true",
+            "I false, II true",
+            "I true, II false",
+            "Both false"
+          ],
+          "answer": "Both false",
+          "solution": "Correct equation is W=+∫F·dr (Statement I incorrect). Work done by a conservative force is path-independent (Statement II incorrect)."
+        },
+        {
+          "number": 42,
+          "type": "MCQ",
+          "question": "Five positive charges each having charge q are placed at the vertices of a pentagon. The electric potential (V) and electric field (E) at the center O due to these charges are:",
+          "options": [
+            "V=5q/(4πε₀r), E=0",
+            "V=5q/(4πε₀r), E=(5√3q/8πε₀r²) r̂",
+            "V=5q/(4πε₀r), E=(5q/4πε₀r²) r̂",
+            "V=0, E=0"
+          ],
+          "answer": "V=5q/(4πε₀r), E=0",
+          "solution": "By symmetry of a regular polygon, the net electric field at the center is zero while the potential adds up as V=5kq/R."
+        },
+        {
+          "number": 43,
+          "type": "MCQ",
+          "question": "A laser beam has intensity of 4.0×10¹⁴ W/m². The amplitude of magnetic field associated with beam is ____ T. (ε₀=8.85×10⁻¹² C²/Nm², c=3×10⁸ m/s)",
+          "options": [
+            "2.0",
+            "18.3",
+            "5.5",
+            "1.83"
+          ],
+          "answer": "1.83",
+          "solution": "B0 = (1/c)√(2I/(ε₀c)) ≈ 1.83 T."
+        },
+        {
+          "number": 44,
+          "type": "MCQ",
+          "question": "Light is incident on a metallic plate having work function 110×10⁻²⁰ J. If the produced photoelectrons have zero kinetic energy then the angular frequency of the incident light is ____ rad/s. (h=6.63×10⁻³⁴ J.s)",
+          "options": [
+            "1.04×10¹⁶",
+            "1.04×10¹³",
+            "1.66×10¹⁶",
+            "1.66×10¹⁵"
+          ],
+          "answer": "1.04×10¹⁶",
+          "solution": "φ=hν ⇒ ω=2πφ/h = 1.04×10¹⁶ rad/sec."
+        },
+        {
+          "number": 45,
+          "type": "MCQ",
+          "question": "Statement I: For a mechanical system of many particles total kinetic energy is the sum of kinetic energies of all particles. Statement II: The total kinetic energy can be the sum of KE of center of mass w.r.t. origin and KE of particles w.r.t. center of mass.",
+          "options": [
+            "Both true",
+            "I true, II false",
+            "I false, II true",
+            "Both false"
+          ],
+          "answer": "Both true",
+          "solution": "KE = ½m1v1² + ½m2v2² = ½(m1+m2)v_cm² + ½(m1m2/(m1+m2))|v1-v2|² — both statements hold."
+        }
+      ]
+    }
+  }
+}

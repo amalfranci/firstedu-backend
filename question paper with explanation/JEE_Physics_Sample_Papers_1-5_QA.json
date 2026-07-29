@@ -1,0 +1,1782 @@
+[
+  {
+    "paper_number": 1,
+    "title": "JEE Mains Physics Sample Paper 1",
+    "questions": [
+      {
+        "question_number": 1,
+        "type": "mcq",
+        "question_text": "Young's double-slit interference apparatus is immersed in a liquid with a refractive index of\n1.44. It has a slit separation of 1.5 mm. The slits are illuminated by a parallel beam of light\nwhose wavelength in air is 690 nm. The fringe width on a screen placed behind the plane of\nslits at a distance of 0.72 m, will be :",
+        "options": [
+          "0.23 mm",
+          "0.33 mm",
+          "0.63 mm",
+          "0.46 mm"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "0.23 mm",
+        "explanation": "The fringe width is given as,\nβ = (λ 0)× D = 690×10−9×0.72 = 0.23 mm\nμ d 1.44×1.5×10−3\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 2,
+        "type": "mcq",
+        "question_text": "In stationary wave",
+        "options": [
+          "Strain is maximum at nodes",
+          "Strain is maximum at antinodes",
+          "Strain is minimum at nodes",
+          "amplitude is zero at all points"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "Strain is maximum at nodes",
+        "explanation": "As we learnt in\nStanding wave -\nTwo identical waves travel in opposite directions in the same medium and combine to form a stationary\nwave\nAt nodes pressure changes so, strain is maximum\nHence, the answer is the option 1.",
+        "note": null
+      },
+      {
+        "question_number": 3,
+        "type": "mcq",
+        "question_text": "Ionosphere layer of atmosphere is part of the",
+        "options": [
+          "Thermosphere",
+          "Mesosphere",
+          "Troposphere",
+          "Exosphere"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "Thermosphere",
+        "explanation": "In the fourth layer of Earth’s surface, the thermosphere, the air is thin, meaning that there are far fewer\nair molecules. The thermosphere is very sensitive to solar activity and can heat up to 1,500°C or higher\nwhen the Sun is active making an aurora that lights up the night sky. Astronauts orbiting Earth in the\nspace station or space shuttle spend their time in this layer. This layer reflects radio waves.\nThe ionosphere lies mostly in the thermosphere and extends from a height of ~ 65 Km to about 400 km\nabove the earth’s surface\nHence, the answer is the option 1.",
+        "note": null
+      },
+      {
+        "question_number": 4,
+        "type": "mcq",
+        "question_text": "Thermal expansion in solids takes place due to",
+        "options": [
+          "Increased vibrational frequency of molecule",
+          "Increase in vibrational amplitude",
+          "Increase in potential energy",
+          "All of the above"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "Increase in vibrational amplitude",
+        "explanation": "Thermal Expansion -\nThermal expansion is the tendency of matter to change in shape, area, and volume in response to a\nchange in temperature.\nDue to an increase in vibrational amplitude, the average bond length of the molecule increases, and\nhence expansion takes place.\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 5,
+        "type": "mcq",
+        "question_text": "Two magnets, each magnetic moment 'M' are placed to form a cross at right angles to each\nother. The magnetic moment of the system will be",
+        "options": [
+          "2M",
+          "√2M",
+          "0.5",
+          "1 M"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "√2M",
+        "explanation": "Given,\nTwo magnets having magnetic moment M\nSo, the net magnetic moment is:\nM = √M2+M2+2m@cos90∘\nnet\n= √2M2 = √2M\nHence, the correct answer is option (2).",
+        "note": null
+      },
+      {
+        "question_number": 6,
+        "type": "mcq",
+        "question_text": "Two particles, of masses M and 2M, moving as shown, with speeds of 10 m/s and 5 m/s,\ncollide elastically at the origin. After the collision, they move along the indicated directions\nwith\nspeeds v and v . The values of v and v are approximately:\n1 2 1 2",
+        "options": [
+          "6.5 m/s and 6.3 m/s",
+          "3.2 m/s and 6.3 m/s",
+          "6.5 m/s and 3.2 m/s",
+          "3.2 m/s and 12.6 m/s"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "6.5 m/s and 6.3 m/s",
+        "explanation": "u u = 10×\n√3^i\n1 1x 2\nu = 10× 1^j = −5^j\n1y 2\nu = 5 ^i\n2\n√2\nu = 5 ^j\n2y\n√2\nv M = 2M\n1 1x\nv = v × √3^i\n1y 1 2\nv = v × 1^j\n1y 1 2\n1\nv v = v × ^i\n2 2x 2\n√2\nv\nv = 2 (−^j)\n2y\n√2\n10√3 5 √3 v\n2\nΔP = 0 => m×( )+(2m× ) = 2m( )v +m( )\nx 1\n2 √2 2 √2\nv\n=> 5√3+5√2 = √3v + 2 .\n1\n√2\n5 v v\n1 2\nΔP = 0 => −m×(5)+(2m× ) = 2m( )−m( )\ny\n√2 2 √2\nv\n=> 5√2−5 = v − 2 .\n1\n√2\n5(√3−1)+10√2 = (√3+1)v\n1\n5(√3−1)+10√2)\n=> v = ≈ 6.5 m/s\n1\n√3+1\n=> v ≈ 6.3 m/s\n2\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 7,
+        "type": "mcq",
+        "question_text": "When one light ray is reflected from a plane mirror with 30∘ angle of reflection, the angle of\ndeviation of the ray after reflection is:",
+        "options": [
+          "140∘",
+          "130∘",
+          "120∘",
+          "110∘"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "120∘",
+        "explanation": "δ = Π−2i = Π−2×30\n= 180−60 = 120∘\nHence, the correct answer is option (3).",
+        "note": null
+      },
+      {
+        "question_number": 8,
+        "type": "mcq",
+        "question_text": "A particle is moving with a uniform speed in a circular orbit of radius R in a central force\ninversely proportional to the nth power of R. If the period of rotation of the particle is T, then\n:",
+        "options": [
+          "T∝Rn/2",
+          "T∝R3/2 for any n.",
+          "",
+          "T∝R(n+1)/2"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "T∝R(n+1)/2",
+        "explanation": "As we learnt that\nRelation of Angular Velocity frequency and Time period -\n- wherein\nAngular Velocity\nn = frequency\nT = time period\nHence, the answer is the option 4.",
+        "note": "Options [3] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text."
+      },
+      {
+        "question_number": 9,
+        "type": "mcq",
+        "question_text": "The dielectric constant k of an insulator cannot be :",
+        "options": [
+          "3",
+          "6",
+          "8",
+          "infinity"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "infinity",
+        "explanation": "For metal, the dielectric constant K is infinite.\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 10,
+        "type": "mcq",
+        "question_text": "Given below are two statements :\nStatements I: An AC circuit undergoes electrical resonance if it contains either a capacitor or\nan inductor.\nStatement II: An AC circuit containing a pure capacitor or a pure inductor consumes high\npower due to its non-zero power factor.\nIn the light of above statements, choose the correct answer from the options given below :",
+        "options": [
+          "Statement I is false but Statement II is true",
+          "Statement I is true but Statement II is false",
+          "Both Statement I and Statement II are false",
+          "Both Statement I and Statement II are true"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "Both Statement I and Statement II are false",
+        "explanation": "Statement-I: An AC circuit for resonance inductor and capacitor both should required.\nStatement II: An AC circuit containing a pure capacitor and pure inductor has no power loss\nFor resonance, = 0\nmeans both capacitor and inductor must be present.\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 11,
+        "type": "mcq",
+        "question_text": "The bulk modulus of a liquid is . The pressure required to reduce the\nvolume of liquid by is :",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "Given-\nThe bulk modulus of a liquid\nand volume reduced by 2%,\nWe know that,\nBulk modulus\nHence, the answer is the option(3).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 12,
+        "type": "mcq",
+        "question_text": "Two small identical conducting spheres, each of charge q, are placed at a distance d apart in\nvacuum. A third identical sphere, initially uncharged, is touched with the first sphere and\nthen placed at the midpoint of the two original spheres. What is the net electrostatic force\non the third sphere?",
+        "options": [
+          "q2\n4πϵ d2\n∘",
+          "q2\n16πϵ d2\n∘",
+          "3q2\n16πϵ d2\n∘",
+          "5q2\n16πϵ d2\n∘"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "q2\n4πϵ d2\n∘",
+        "explanation": "1. Charge Redistribution:\nThe first sphere (charge q) is touched with the third sphere (initially uncharged).\nSince the spheres are identical, the charge is redistributed equally.\nAfter touching, each gets a charge of q/2.\n2. New Charges:\nFirst sphere: q/2\nSecond sphere: q\nThird sphere (placed at midpoint): q/2\n3. Forces on the Third Sphere:\nForce due to the first sphere (distance d/2 ):\n1 (q )(q )\nF = 2 2\n1\n4πϵ (d/2)2\n0\nq2 q2\nF = ×4 =\n1\n16πϵ d2 4πϵ d2\n0 0\nForce due to the second sphere (distance d/2 ):\nq\n1 q×\nF = 2\n2 4πϵ (d/2)2\n0\nq2 q2\nF = ×4 =\n2\n8πϵ d2 2πϵ d2\n0 0\n4. Net Force on the Third Sphere:\nBoth forces act in opposite directions (toward the middle sphere).\nF = F −F\nnet 2 1\nq2 q2\nF = −\nnet\n2πϵ d2 4πϵ d2\n0 0\nq2\nF =\nnet\n4πϵ d2\n0\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 13,
+        "type": "mcq",
+        "question_text": "A conducting circular loop made of a thin wire has area and resistance .\nIt is placed perpendicular to a time-dependent magnetic field\nThe field is uniform in space. Then the net charge (in ) flowing through the loop during\nis close to :",
+        "options": [
+          "0.14",
+          "7",
+          "21",
+          "6"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "0.14",
+        "explanation": "Induced Charge -\n= 1.4 x 10-4\n= 0.14 mC\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 14,
+        "type": "mcq",
+        "question_text": "An IC (Integrated circuit) is a",
+        "options": [
+          "Single terminal device",
+          "Two terminal device",
+          "Three terminal device",
+          "Multi terminal device"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "Multi terminal device",
+        "explanation": "As we learn\nUse of multimeter to check the electronic component (LED, diode, transistor, IC) is in working order -\n* for the diode make the connections forward check the current reverse the connections and verify V & I.\n* For LED also repeat the procedure. Both diode and LED work in forward bias.\n- wherein\n* For working of the transistor we will check if the common terminal and one of other gives current. If the\ngiven current flow in the multimeter is more or less compared to first the transistor is in proper order.\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 15,
+        "type": "mcq",
+        "question_text": "The following graph represents-",
+        "options": [
+          "The value of U is changing from maximum to zero",
+          "A.C Voltage superimposed on D.C",
+          "Rectangular alternative voltage",
+          "None of the above."
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "A.C Voltage superimposed on D.C",
+        "explanation": "As we have learned,\nGraphical representation -\nA.C. Superimposed on D.C\nWhere,\nThe graph shows A.C voltage superimposed on D.C.\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 16,
+        "type": "mcq",
+        "question_text": "Under the condition of weightlessness due to the rotation of Earth at the equator time\nperiod of the earth will be",
+        "options": [
+          "times of present time period of earth.",
+          "times of present time period of earth.",
+          "times of present time period of earth.",
+          "times of present time period of earth."
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "times of present time period of earth.",
+        "explanation": "Time period of Rotation of earth\nRadius of earth\nTime period of rotation of the earth\nwherein\nTime period of Rotation of earth\nPresent time of earth rotation = 24hr\nso 24/1.4=17 times\nHence the rotation time period could be 1/17th times of present time period.\nHence, the answer is the option 4.",
+        "note": null
+      },
+      {
+        "question_number": 17,
+        "type": "mcq",
+        "question_text": "The magnetic field of an Electromagnetic Wave is given by\nB = 3×10−7sin(103x+6.29×1012t). The wavelength of the Electromagnetic Wave is\nY",
+        "options": [
+          "6.28 cm",
+          "3.14 cm",
+          "0.63 cm",
+          "0.32 cm"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "0.63 cm",
+        "explanation": "Given, B = 3×10−7sin(103x+6.28×1012t).\ny\nComparing with the general equation\nB = B sin(kx+ωt)\ny 0\nwe get k = 103.\nor\n2π\n⇒ λ =\n103\n= 6.28×10−3 m.\n= 0.63 cm\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 18,
+        "type": "mcq",
+        "question_text": "Two coils require 20 minutes and 60 minutes respectively to produce the same amount of\nheat energy when connected separately to the same source. If they are connected in parallel\narrangement to the same source; the time required to produce the same amount of heat by\nthe combination of coils, will be____________min.",
+        "options": [
+          "15",
+          "20",
+          "25",
+          "30"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "15",
+        "explanation": "If connected in parallel.\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 19,
+        "type": "mcq",
+        "question_text": "A particle of mass m moving with velocity v collides with a stationary particle of mass 2m.\nAfter collision,they stick together and continue to move together with velocity",
+        "options": [
+          "v\n2",
+          "v\n3",
+          "v\n4",
+          "v"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "v\n3",
+        "explanation": "p = p ⇒ mv+2 m(0) = 3 m(v′)\ni f\nv\n⟹ v′ =\n3\nHence, the answer is the option 2.",
+        "note": null
+      },
+      {
+        "question_number": 20,
+        "type": "mcq",
+        "question_text": "A parallel plate capacitor of capacitance C is charged to a potential difference V and then\ndisconnected from the battery. A dielectric slab of dielectric constant K is now inserted\nbetween the plates, completely filling the space. What will be the ratio of the final stored\nenergy (U ) to the initial stored energy (U ) ?\nf i",
+        "options": [
+          "1\nK",
+          "K",
+          "K2",
+          "1\nK2"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "1\nK",
+        "explanation": "Before inserting the dielectric, the initial energy stored in the capacitor is:\n1\nU = CV 2\ni\n2\nSince the battery is disconnected, the charge remains constant at Q = CV.\nStep 2: Effect of Dielectric Insertion\nWhen the dielectric of constant K is inserted:\n- The capacitance increases to C′ = KC.\n- The charge remains the same since the battery is disconnected.\n- The new voltage across the plates becomes:\nQ CV V\nV ′ = = =\nC′ KC K\nThe new energy stored in the capacitor is:\n1\nU = C′V ′2\nf\n2\n2\n1 V\nU = (KC)( )\nf\n2 K\n1 V 2\nU = KC ×\nf 2 K2\n1 1\nU = CV 2×\nf\n2 K\nU\ni\nU =\nf\nK\nThus, the ratio U /U = 1 , and the correct answer is (A) 1 .\nf i K K\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 21,
+        "type": "numerical",
+        "question_text": "For a measurement of the diameter of a hollow cylinder following calculations are obtained\nfor absolute error of different measurements\nWhat will be the mean absolute error for the measurement?",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "0.022",
+        "explanation": "For a measurement of the diameter of a hollow cylinder following calculations are obtained for absolute\nerror of different measurements-\nMean absolute error -\n= (0.01 + 0.02 + 0.06 + 0.01 + 0.01)/5\n= 0.11/5=0.022\nHence, the correct answer is (0.022).",
+        "note": null
+      },
+      {
+        "question_number": 22,
+        "type": "numerical",
+        "question_text": "In the given figure, block of mass 4 kg is given a velocity μ = 20 ms up the plane. Find the\nwork done (in Jule) by the frictional force before block stop for a while.",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "-320",
+        "explanation": "As we learn\nWork done over a rough inclined surface -\nmg = [sinθ+μcosθ]\nmg = weight\n- wherein\nW = F × displacement\nS= displacement\nAnet (on inclined plane)\na = gsinθ+μgcosθ\nnet\n3 4\n= 10∗ +0.5∗10∗ = 10 m/s2\n5 5\nNow distance cover by block\nV 2 = 42+29s ⇒ 0 = 42−29s\n42 20∗20\ns = = = 20m\n29 2∗10\nf = μN ⇒ f = μmgcos37\nr r\nωf = f dcosβ\nr r\n⇒ μmgcos37.20cos(180)\n4\n= 0.5∗4∗10∗ ∗20∗(−1)\n5\n= −320 J\nHence, the answer is (320).",
+        "note": null
+      },
+      {
+        "question_number": 23,
+        "type": "numerical",
+        "question_text": "A non-conducting sphere of radius 0.5m carries a total charge of distributed non-\nuniformly on its circumference producing an electric field E everywhere in space. The value of\n, potential V in volt is",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "2",
+        "explanation": "As we had learned\nIf P at the surface r = R -\nHence, the answer is 2.",
+        "note": null
+      },
+      {
+        "question_number": 24,
+        "type": "numerical",
+        "question_text": "In a hydraulic lift, the surface area of the input piston is 6 cm2 and that of the output piston\nis 1500 cm2. If a 100 N force is applied to the input piston to raise the output piston by 20\ncm, then the work done is ________ kJ.",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "5",
+        "explanation": "From Pascal's Law,\nF F\n1 2\n=\nA A\n1 2\n100 F\n=\n6 1500\n50\nF = ×1500\n3\nF = 50×500 = 25×103 N\n20\n∴ W = F×S = 25×103× = 5×103 = 5 kJ\n100\nHence, the answer is 5.",
+        "note": null
+      },
+      {
+        "question_number": 25,
+        "type": "numerical",
+        "question_text": "A horizontal force of 10 N is necessary to just hold a block stationary against a wall. The\ncoefficient of friction between the block and the wall is 0.2. The weight of the block is ........ N",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "2",
+        "explanation": "Solution :\nGiven:\nHorizontal force (F) = 10 N coefficient of friction between block and wall, (μ) = 0.2\nApplying Newton's Second Law\n∑F = 0\nx\nN −10 = 0\n∴ N = 10N\nAnd, ∑F = 0\ny\nf −W = 0\n⇒ f = W = μN = 0.2×10\n∴ W = 2N\nHence, the answer is 2 N.\nJEE Main Physics Sample Paper 2",
+        "note": null
+      }
+    ]
+  },
+  {
+    "paper_number": 2,
+    "title": "JEE Mains Physics Sample Paper 2",
+    "questions": [
+      {
+        "question_number": 1,
+        "type": "mcq",
+        "question_text": "The vertical component of Earth's magnetic field is zero or the Earth's magnetic field always\nhas a vertical component except at the",
+        "options": [
+          "Magnetic Poles",
+          "Geographical Poles",
+          "Every Place",
+          "Magnetic equator"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "Magnetic equator",
+        "explanation": "Earth's Magnetic Field at the Equator -\nor\nAt the magnetic equator, the angle of dip is 0o . Hence the vertical component\nHence, the answer is the Option (4).",
+        "note": null
+      },
+      {
+        "question_number": 2,
+        "type": "mcq",
+        "question_text": "The spherical shape of rain drop is due to -",
+        "options": [
+          "Density of the liquid",
+          "surface tension",
+          "Atmospheric pressure",
+          "Gravity"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "surface tension",
+        "explanation": "Surface Tension -\nIt is the elastic tendency of a fluid surface that makes it acquire the least surface area.\nDue to surface tension, the raindrop has a tendency to minimize its surface energy. This liquid drop\nattained a spherical shape.\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 3,
+        "type": "mcq",
+        "question_text": "The ratio of the weight of mass m a stationary lift and a lift accelerated downwards with\nuniform acceleration 'a' is 3: 2. The acceleration of lift is",
+        "options": [
+          "g/3",
+          "g/2",
+          "g",
+          "2g"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "g/3",
+        "explanation": "Lift is at Rest -\n- wherein\nAt stationary lift\nAt lift accelerated downwards with a\nGiven\nor a = g/3\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 4,
+        "type": "mcq",
+        "question_text": "The equation is valid:",
+        "options": [
+          "for an electron",
+          "for a photon",
+          "for a photon as well as for an electron",
+          "neither for an electron nor for a photon"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "for a photon",
+        "explanation": "According to the relativistic formula\nFor photon,\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 5,
+        "type": "mcq",
+        "question_text": "At the Magnetic north pole of the earth, the value of the horizontal component of earth's\nmagnetic field and angle of dip are -",
+        "options": [
+          "Zero, maximum",
+          "maximum, minimum",
+          "maximum, maximum",
+          "minimum, minimum"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "Zero, maximum",
+        "explanation": "At poles, the horizontal component is zero and the angle of dip is .\nThe angle of dip is always b/w horizontal & Earth's net magnetic field.\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 6,
+        "type": "mcq",
+        "question_text": "Given below are two statements:\nStatements I: When the frequency of an a.c source in a series LCR circuit increases, the\ncurrent in the circuit first increases, attains a maximum value and then decreases\nStatements II: In a series LCR circuit, the value of the power factor at resonance is one.\nIn the light of the given statements, choose the most appropriate answer from the options\ngiven below.",
+        "options": [
+          "Statement I is correct but Statement II is false.",
+          "Both Statement I and Statement II are true.",
+          "Statement I is incorrect but Statement II is true.",
+          "Both Statement I and Statement II are false."
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "Both Statement I and Statement II are true.",
+        "explanation": "(i) At resonance frequency power factor of the RLC circuit is one\n(ii) Graph of RLC circuit is:\nAt\nω = ω\nR\nZ = R\nR\ncosϕ = = 1\nZ\nhence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 7,
+        "type": "mcq",
+        "question_text": "A long straight wire with a circular cross-section having radius R is carrying a steady current I\n. The current I is uniformly distributed across this cross-section. Then the variation of\nmagnetic field due to current I with distance r(r < R) from its centre will be :",
+        "options": [
+          "B ∝ r2",
+          "B ∝ r",
+          "B ∝ 1\nr2",
+          "B ∝ 1\nr"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "B ∝ r",
+        "explanation": "By Ampere's law,\n––\n∮ B⋅ dl = μ I\n0 enc\n= μ J\n0 enc\nB∫ dlcos0∘ = μ 0 I ×πr2\nπR2\nμ Ir2\nB(2πr) = 0\nR2\nB = μ 0 Ir\n2πR2\nHere pt plies at r < R\n∴ Bαr ( for r < R)\nHence, the answer is option (2).",
+        "note": null
+      },
+      {
+        "question_number": 8,
+        "type": "mcq",
+        "question_text": "According to the Bohr hydrogen atom model the radius of the station orbiting is directly\nproportional to the principal quantum number n as →",
+        "options": [
+          "1\nn",
+          "n",
+          "1\nn2",
+          "n2"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "n2",
+        "explanation": "As we learn\nRadius of nth orbital -\nϵ n2h2\n0\nr =\nn\nπmZe2\n-wherein\nn2\nr α\nn\nZ\nϵ h2\n0 = 0.529A∘\nπme2\nϵ n2h2\n0\nRadius = r =\nn πmZe2\nor\nr ∝ n2\nhence the answer is option 4.",
+        "note": null
+      },
+      {
+        "question_number": 9,
+        "type": "mcq",
+        "question_text": "System shown in the figure is in equilibrium and at rest. The spring and strings are massless.\nNow the string between B and C is cut. Find out accelerations of A,B and C just after the\nstring is cut. ( g = 10 m/s2).",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": null,
+        "correct_answer": "",
+        "explanation": "At equilibrium\nWhen string is cut T will be equal to zero, net force acting on block A is zero\nB\nacceleration of Block A = 0\nBlock B\nBlock C",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 10,
+        "type": "mcq",
+        "question_text": "A wire of length 'L' and radius 'r' is clamped rigidly at one end. When the other end of the\nwire is pulled by a force f, its length increases by ' '. Another wire of the same material of\nlength '2L' and radius '2r' is pulled by a force '2f'. Then the increase in its length will be :",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "By Hooke’s law,\nHence, the answer is the option (3).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 11,
+        "type": "mcq",
+        "question_text": "An n-p-n transistor has three leads A, B and C. Connecting B and C by moist fingers, A to the\npositive lead of an ammeter, and C to the negative lead of the ammeter, one finds a large\ndeflection. Then, A, B and C refer respectively to :",
+        "options": [
+          "Emitter, base and collector",
+          "Base, emitter and collector",
+          "Base, collector and emitter",
+          "Collector, emitter and base."
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "Base, collector and emitter",
+        "explanation": "As we know a transistor is a three-layered semiconducting device. It can be NPN or PNP and\n1. Emitter is heavily doped\n2. The collector is moderately doped.\n3. Base is lightly doped & very thin\nIn the given situation\nA=base\nB =collector\nC = emitter\nHence, the answer is the option 3.",
+        "note": null
+      },
+      {
+        "question_number": 12,
+        "type": "mcq",
+        "question_text": "A light spring balance hangs from the hook of the other light spring balance and a block of\nmass M Kg hangs from the former one. Then the true statement about the scale reading is :\nYour Answer:\nNot Answered",
+        "options": [
+          "both the scales read M Kg each",
+          "the scale of the lower one reads M kg and of the upper one zero",
+          "the reading of the two scales can be anything but the sum of the reading will be M kg",
+          "both the scales read M/2 kg"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "both the scales read M Kg each",
+        "explanation": "Hence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 13,
+        "type": "mcq",
+        "question_text": "Centre of mass of uniform symmetrical body like square, rectangular and circular lamina lies\nat-",
+        "options": [
+          "Metacentric center",
+          "Geometrical center",
+          "Center of pressure",
+          "Center of universe"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "Geometrical center",
+        "explanation": "Position of center of mass for uniform rectangular, square and circular plate -\n1. Rectangular plate\n2. Square plate\n3. Circular plate\nSo, from the figure, we can see that for a symmetrical object the center of mass coincides with the\nGeometrical center of that body\nHence, the answer is the option 2.",
+        "note": null
+      },
+      {
+        "question_number": 14,
+        "type": "mcq",
+        "question_text": "For a particle SHM the displacement x is given by x = Acosωt. Identify the graph which\nrepresents the variation of potential energy as a function of time t and displacement x :",
+        "options": [
+          "I, III",
+          "II, IV",
+          "II, III",
+          "I, IV"
+        ],
+        "correct_option_number": null,
+        "correct_answer": "I, III",
+        "explanation": "As we had learnt in\nGraph of Energy in S.H.M. -\n- wherein\nSince energy is function of\nx2\n, so the graph is a parabola.\nP.E is minimum at mean (x = 0)\nMaximum at extreme (x = ±A)\nat t = 0,x = A\nHence, the correct answer is option (a).",
+        "note": null
+      },
+      {
+        "question_number": 15,
+        "type": "mcq",
+        "question_text": "It is hotter for the same distance over the top of fire than it is on the side of it, mainly\nbecause",
+        "options": [
+          "Air conducts heat upwards",
+          "Heat is radiated upwards",
+          "Conversion takes more heat upward.",
+          "Conversion, conduction and radiation all contribute significantly transferring heat upwards."
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "Heat is radiated upwards",
+        "explanation": "Convection: Mode of transfer of heat through migration of material particles of the medium.\nConvection significantly transfers heat upwards. The top of a fire is hotter than its sides because hot air\nrises, creating a column of intense heat directly above the flames, while the heat is more dispersed on the\nsides.\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 16,
+        "type": "mcq",
+        "question_text": "Two projectiles are projected at two different angles. If h and h are maximum height when\n1 2\nthe range in the two cases is R , then the relation between R , h and h is\n1 2",
+        "options": [
+          "R = 4√h h\n1 2",
+          "R = 2√h h\n1 2",
+          "R = √h h\n1 2",
+          "none of these"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "R = 4√h h\n1 2",
+        "explanation": "R = u2sin2θ\ng\nR will be the same for θ and 90−θ\nu2sin2θ u2sin2(90−θ) u2cos2θ\n∴ h = and h = =\n1 2\n2g 2g 2g\n(u2) 2 sin2θ⋅cos2θ [(u2)(2sinθ⋅cosθ)] 2 (u2) 2 (sin2θ)2 1\nh h = = = [ ]⋅\n1 2\n4g2 16g2 g2 16\nR2 = 16h h or R = 4√h h\n1 2 1 2\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 17,
+        "type": "mcq",
+        "question_text": "An object of mass 'm' is suspended at the end of a mass-less wire of length L and area of\ncross-section A. Young's modulus of the maternal of the wire is Y. if the mass is pulled down\nslightly its freq. of oscillation along the vertical direction is :",
+        "options": [
+          "f = 1 √ mA\n2π YL",
+          "f = 1 √ YL\n2π mA",
+          "f = 1 √ YA\n2π mL",
+          "f = 1 √ mL\n2π YA"
+        ],
+        "correct_option_number": null,
+        "correct_answer": "f = 1 √ YA\n2π mL",
+        "explanation": "At equilibrium\nNow for a small displacement x\nsmall amount ΔL is related to the Young's modulus Y by the formula:\nYAΔL\nF =\nL\nThis is similar to the restoring force provided by a spring. The force acts to restore the object to its\nequilibrium position when displaced.\nThe spring constant k of the wire is then:\nYA\nk =\nL\nFor a mass m attached to a spring with spring constant k, the frequency of oscillation in simple harmonic\nmotion (for vertical oscillations) is given by the formula:\n1 k\nf = √\n2π m\nSubstitute the value of k from Step 1:\n1 YA\nf = √\n2π Lm\nHence, the correct answer is option (c).",
+        "note": null
+      },
+      {
+        "question_number": 18,
+        "type": "mcq",
+        "question_text": "Attenuation is",
+        "options": [
+          "a process which provides strength to the signal",
+          "the loss of strength of signal",
+          "a device which create a message signal",
+          "combination of receivers"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "the loss of strength of signal",
+        "explanation": "as we learnt\nAttenuation -\nThe loss of strength of a signal while propagating through a medium is known as attenuation.\nHence, the answer is the option(2).",
+        "note": null
+      },
+      {
+        "question_number": 19,
+        "type": "mcq",
+        "question_text": "What is the gravitational field strength at a point outside the uniform solid sphere?",
+        "options": [
+          "Zero",
+          "Non-zero and constant",
+          "Non-zero and variable",
+          "Cannot be determined"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "Non-zero and variable",
+        "explanation": "The gravitational field due to a point at a distance r from the centre of a solid sphere is-\nOutside surface\nGravitational field Intensity outside the surface is non-zero and inversely proportional to the square of\nthe distance from the centre of the sphere.\nHence, the answer is the option(3).",
+        "note": null
+      },
+      {
+        "question_number": 20,
+        "type": "mcq",
+        "question_text": "The outermost layer of Earth's atmosphere is",
+        "options": [
+          "Troposphere",
+          "Ionosphere",
+          "Exosphere",
+          "Stratosphere"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "Exosphere",
+        "explanation": "As we learned\nExosphere -\nThe outermost layer of the earth's atmosphere. (640 Km - 1280 Km)\nThe outermost layer of the earth's surface is the exosphere. (640 Km - 1280 Km)\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 21,
+        "type": "numerical",
+        "question_text": "A certain metallic surface is illuminated by monochromatic radiation of wavelength . The\nstopping potential for photoelectric current for this radiation is . If the same surface is\nilluminated with a radiation of wavelength , the stopping potential is . The threshold\nwavelength of this surface for the photoelectric effect is_______ .",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "4",
+        "explanation": "As we know, Einstein's photoelectric equation is\nBy applying the above equations we get,\nHence, the answer is (4).",
+        "note": null
+      },
+      {
+        "question_number": 22,
+        "type": "numerical",
+        "question_text": "10 ideal cells of emf 5V are connected in parallel across 10Ω. The current (in A) through 10Ω\nis",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "0.5",
+        "explanation": "As we learned\nCurrent through the external resistor: Using Ohm's Law:\nI = E eff\nR\nI = 5 = 0.5 A\n10\nCurrent through each cell: Since the cells are in parallel, the total current III is equally distributed among\nthe 10 cells:\nCurrent through each cell = I = 0.5 = 0.05 A.\n10 10\nThe current through the 10Ω resistor is 0.5 A, and the current from each cell is 0.05 A.\nHence, the answer is 0.5",
+        "note": null
+      },
+      {
+        "question_number": 23,
+        "type": "numerical",
+        "question_text": "(a) Differentiate between three segments of an n-p-n transistor on the basis of their size and\nlevel of doping.\n(b) Draw a plot of transfer characteristic and show which portion of the characteristic is used\nin amplification and why.",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "-",
+        "explanation": "(a) The three segments of n-p-n transistor are ;\nEmitter Base and Collector\nDifference between these on the basis of their size and level of doping ;\n1. Emitter 2. Base\n3. Collector\nThe collector size is\nThe base is a very\nThe emitter is a moderate size slightly more than the\nthin\nemitter region\nIt is a heavily doped semiconductor. Its doping intensity is\nThe collector terminal is\nits size is more than base but less less than emitter and\nmoderately doped.\nthan the collector collector\n(b) Plotting of graph ;\nIn the above graph, the active region of the transfer characteristics is used for the amplification purpose.\nThis is because in this region I increases almost linearly with the increase of V .\nC i",
+        "note": null
+      },
+      {
+        "question_number": 24,
+        "type": "numerical",
+        "question_text": "A wire of density is stretched between two clamps apart. The\nextension developed in the wire is . If , the\nfundamental frequency of vibration in the wire will be___________ .",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "80",
+        "explanation": "Hence, the answer is (80).",
+        "note": null
+      },
+      {
+        "question_number": 25,
+        "type": "numerical",
+        "question_text": "A sample of an ideal gas is taken through the cyclic process abca as shown in the figure. The\nchange in the internal energy of the gas along the path ca is -180 J. The gas absorbs 250 J of\nheat along the path ab and 60 J along the path bc. The work done by the gas along the path\nABC is (in J):",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "130",
+        "explanation": "Cyclic Process -\nA cyclic process consists of several changes that return the system to its initial state.\n- wherein\nin cyclic process ΔU = 0\nProcess abaca is a cyclic process.\n⇒ △Uabca = 0\n⇒ △Uabc+△Uca = 0\n⇒ △Uabc−180 = 0\n△Uabc = 180 J\nNow according to Ist has of thermodynamics\n△Q = ΔU +△W\n⇒ △W = △Q −△U\nabc abc abc\n= (250+60)−180\n△W = 130J\nabc\nHence, The answer is the option (1).\nJEE Main Physics Sample paper 3",
+        "note": null
+      }
+    ]
+  },
+  {
+    "paper_number": 3,
+    "title": "JEE Mains Physics Sample Paper 3",
+    "questions": [
+      {
+        "question_number": 1,
+        "type": "mcq",
+        "question_text": "Which of the following statements is true about a geostationary satellite:",
+        "options": [
+          "Its height above the earth's surface is about the same as the radius of the earth.",
+          "Its time period is equal to 24 hours.",
+          "It can be placed anywhere on the earth's surface.",
+          "It is placed only on the north pole or south pole of the earth."
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "Its time period is equal to 24 hours.",
+        "explanation": "As we learn\nGeostationary satellite -\nSatellites which appear stationary relative to Earth are geostationary satellite\n- wherein\nAlso known as a communication satellite or geosynchronous satellite\nThe time period of geostationary satellites is 24 hours.\nHence, The answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 2,
+        "type": "mcq",
+        "question_text": "The figure shows a square current carrying loop ABCD of side 10 cm and current i = 10 A.\n→\nThe magnetic moment M of the loop is",
+        "options": [
+          "(0.05)(^i−√3k^)A−m2",
+          "(0.05)(^j+k^)A−m2",
+          "(0.05)(√3^i+k ^ )A−m2",
+          "(^i+k^)A−m2"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "(0.05)(^i−√3k^)A−m2",
+        "explanation": "The magnitude of magnetic moment is\nM = Il2 = 10×(10×10−2) 2 Am2\n= 10×10−2 = 0.1Am2\nThe normal on the loop is in x−z plane.\nIt makes 60∘ angle with x-axis.\n∴ M→ = M cos60∘^i−M sin60∘^j\nM √3\n∴ M→ = ^i− M^j\n2 2\n0.1\n∴ M → = (^i−√3^j)\n2\nM → = (0.05)(^i−√3^j)Am2\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 3,
+        "type": "mcq",
+        "question_text": "The heliocentric theory proposed by Nicolas Copernicus was",
+        "options": [
+          "replaced by circular orbits to fit the data better",
+          "replaced by elliptical orbits to fit the data better",
+          "replaced by elliptical orbits to fit the taste of new rulers of Italy",
+          "replaced by parabolic orbits to fit the data better"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "replaced by elliptical orbits to fit the data better",
+        "explanation": "The heliocentric theory is an astronomical model which was proposed by Polish astronomer Nicolaus\nCopernicus. In this theory, the sun is at the centre of the solar system and all the planets and heavenly\nbodies revolve around it.\nThe heliocentric theory was replaced by Kepler's theory which proposed the orbits are elliptical, which the\nGerman astronomer Johannes Kepler demonstrated in 1609.\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 4,
+        "type": "mcq",
+        "question_text": "The maximum and minimum distances of a comet from the Sun are and\nrespectively. If the speed of the comet at the nearest point is\nthe speed at the farthest point is :",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": "Hence, the answer is the Option (4).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 5,
+        "type": "mcq",
+        "question_text": "The diagram shows stress v/s strain for the materials A and B. From the curves we infer that",
+        "options": [
+          "A is brittle but B is ductile",
+          "A is ductile and B is brittle",
+          "Both A and B are ductile",
+          "Both A and B are brittle"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "A is ductile and B is brittle",
+        "explanation": "According to stress-strain curve, we see that for the same value of applied stress, strain produced is more\nin material B than in material A in the linear region. In ductile materials, yield point exists whereas in\nbrittle materials failure occurs without yielding. A has yield point hence it is ductile. B doesn't have yield\npoint hence B is brittle.\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 6,
+        "type": "mcq",
+        "question_text": "A block of mass 0.50 kg is moving with a speed of 2.00 ms-1 on a smooth surface. It strikes\nanother mass of 1.00 kg and then they move together as a single body. The energy loss (in\nJoule) during the collision is :\nYour Answer:\nNot Answered",
+        "options": [
+          "0.34 Joule",
+          "0.16 Joule",
+          "1 Joule",
+          "0.67 Joule"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "0.67 Joule",
+        "explanation": "Initial kinetic energy\nAfter collision momentum = 1.5 v\nFrom momentum conservation,\nFinal kinetic energy\nLoss in kinetic energy\nSo, the loss will be 0.67 Joule\nHence, the answer is option(4)",
+        "note": null
+      },
+      {
+        "question_number": 7,
+        "type": "mcq",
+        "question_text": "A dc source of emf E = 100 V and internal resistance r = 0.5Ω, a storage battery of emf\n1\nE = 90 V and an external resistance R are connected as shown in figure. For what value of\n2\nR no current will pass through the battery?",
+        "options": [
+          "5.5Ω",
+          "3.5Ω",
+          "4.5Ω",
+          "2.5Ω"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "4.5Ω",
+        "explanation": "Given E = 100V, r = 0.5ohms, e = 90V.\nFor no current to flow through the battery,\nE/V = (R+r)/R\n100/90 = (R+0.5)/R\nHence R = 4.5 ohms\nHence, the answer is the option 3.",
+        "note": null
+      },
+      {
+        "question_number": 8,
+        "type": "mcq",
+        "question_text": "The given figure illustrates the graph depicting the relationship between displacement (x)\nand time (t) for a particle moving in a straight line. Based on the intervals OA, AB, BC, and CD\nshown on the graph, we can determine the acceleration of the particle during each interval.",
+        "options": [
+          "OA, AB, BC, CD\n+ O + +",
+          "OA, AB, BC, CD\n- O + O",
+          "OA, AB, BC, CD\n+ O - +",
+          "OA, AB, BC, CD\n- O - O"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "OA, AB, BC, CD\n- O + O",
+        "explanation": "In region OA of the graph, where the graph bends toward the time axis, it indicates that the acceleration\nof the particle is negative.\nIn region AB, where the graph is parallel to the time axis, it signifies that the velocity is zero.\nConsequently, the acceleration during this interval is zero as well.\nIn region BC, where the graph bends toward the displacement axis, it indicates that the acceleration of\nthe particle is positive.\nLastly, in region CD, where the graph exhibits a constant slope, it implies that the velocity is constant. As a\nresult, the acceleration during this interval is zero.\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 9,
+        "type": "mcq",
+        "question_text": "Four identical hollow cylindrical columns of mild steel support a big structure of mass\n50×103 kg. The inner and outer radii of each column are 50 cm and 100 cm respectively.\nAssuming uniform local distribution, calculate the compression strain of each column. [ use\nY = 2.0×1011 Pa, g = 9.8 m/s2]",
+        "options": [
+          "1.87×10−3",
+          "2.60×10−7",
+          "3.60×10−8",
+          "7.07×10−4"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "2.60×10−7",
+        "explanation": "R = 50×10−2 m\n1\nR = 100×10−2 m\n2\nA = πR2 −πR2\n2 1\n= π(12 −0.25)\nA = 0.75π\nF 50×103 ×9.8\nStress = =\n4A 4×0.75π\n5×104 ×9.8\nStress =\n3π\nStress\nY =\nStrain\n49×104\nStress\nStrain = = 3π\nY 2×1011\n49\n= ×10−7\n6π\n= 2.6×10−7\nHence, the answer is option (2).",
+        "note": null
+      },
+      {
+        "question_number": 10,
+        "type": "mcq",
+        "question_text": "All resistances in the figure are 1Ω each. The value of current 'l' is a\n5\nThe value of a is _______ .",
+        "options": [
+          "8",
+          "4",
+          "2",
+          "1"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "8",
+        "explanation": "Using Kirchoff's Law\ni i i\n−3+i×1+ ×1+ ×1+ ×1 = 0\n2 4 8\ni i i\n3 = i+ + +\n2 4 8\n24 8\ni = =\n15 5\nSo, the value of a is 8.\nHence, the answer is the option(1).",
+        "note": null
+      },
+      {
+        "question_number": 11,
+        "type": "mcq",
+        "question_text": "The ball strikes and lodges in a fixed block placed on a horizontal frictionless table. What was\npreserved?",
+        "options": [
+          "Momentum and kinetic energy",
+          "Kinetic energy alone",
+          "Momentum itself",
+          "Neither momentum nor kinetic energy"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "Momentum itself",
+        "explanation": "Only internal impulse forces act on the system when the projectile is embedded in a body lying on a\nfrictionless table and no external force acts on the system. As a result, the momentum of the system is\nconserved.\nDue to the inelastic nature of this contact, some kinetic energy is lost, so kinetic energy is not conserved.\nHence, The answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 12,
+        "type": "mcq",
+        "question_text": "Radiation coming from transitions to of hydrogen atoms fall on ions in\nand states. The possible transition of helium ions as they adsorb energy from\nthe radiation is :",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "Energy emitted due to transition of electron -\n- wherein\nFor H- atom\nand\nequate\nso possible transition will be\nHence, the answer is the option (3).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 13,
+        "type": "mcq",
+        "question_text": "If we want to reduce De - Broglie wavelength of an electron from 10-9 m to 0.25 x 10-9 m then\nwe have to increase its velocity by:",
+        "options": [
+          "Twice of the initial velocity",
+          "Equal to the initial velocity",
+          "Thrice the initial velocity",
+          "Four times the initial velocity"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "Four times the initial velocity",
+        "explanation": "We know from the concept of De-Broglie wavelength,\nλ = h = h\np mv\nNow,\nλ = h = 10−9\n1 mv\n1\nλ = h = 0.25×10−9 = 1 ×10−9\n2 mv 4\n2\nλ v\n1 2\n∴ = 4 =\nλ v\n2 1\n⟹ v = 4v\n2 1\nHence, the answer is the option 4.",
+        "note": null
+      },
+      {
+        "question_number": 14,
+        "type": "mcq",
+        "question_text": "A simple pendulum has a time period T in a vacuum. Its time period when it is completely\nimmersed in a liquid of density equal to one-eight of the density of the material of the bob is",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": "In vacuum,\nLet be the volume and be the density of the mass of the bob.\nThe net downward force acting on the bob inside the liquid\n= weight - upthrust\nNet downward acceleration becomes .\nSo, time period of the bob inside the liquid\nHence, the answer is the option (4).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 15,
+        "type": "mcq",
+        "question_text": "When a particle is projected the quantity that remains unchanged is",
+        "options": [
+          "vertical component of velocity",
+          "horizontal component of velocity",
+          "kinetic energy",
+          "potential energy"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "horizontal component of velocity",
+        "explanation": "As we learned\nProjectile Motion- Two dimensional motion under action of uniform force is called is called projectile\nmotion.\nThe horizontal component of velocity remains unchanged since there is no acceleration along this\ndirection.\nHence, the correct answer is option (2).",
+        "note": null
+      },
+      {
+        "question_number": 16,
+        "type": "mcq",
+        "question_text": "A particle is moving with a uniform speed in a circular orbit of radius R in a central force\ninversely proportional to the nth power of R. If the period of rotation of the particle is T, then\n:",
+        "options": [
+          "T∝Rn/2",
+          "T∝R3/2 for any n.",
+          "",
+          "T∝R(n+1)/2"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "T∝R(n+1)/2",
+        "explanation": "As we learnt that\nRelation of Angular Velocity frequency and Time period -\n- wherein\nAngular Velocity\nn = frequency\nT = time period\nHence, the answer is the option 4.",
+        "note": "Options [3] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text."
+      },
+      {
+        "question_number": 17,
+        "type": "mcq",
+        "question_text": "In an experiment to determine the velocity of sound in the air at room temperature using a\nresonance is observed. When the air column has a length of for a tuning fork of\nfrequency is . The velocity of the Sound at room temperature is The\nthird resonance is observed when the air column has a length 0.62 . Then ?",
+        "options": [
+          "0.408",
+          "4.08",
+          "40.8",
+          "0.00408"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "0.408",
+        "explanation": "Hence, the answer is the option(1).",
+        "note": null
+      },
+      {
+        "question_number": 18,
+        "type": "mcq",
+        "question_text": "A 50 resistance is connected to a battery of 5 V. A galvanometer of resistance 100 is to\nbe used as an ammeter to measure the current through the resistance, for this, a resistance\nis connected to the galvanometer. Which of the following connections should be\nrs\nemployed if the measured current is within 1% of the current without the ammeter in the\ncircuit?",
+        "options": [
+          "= 0.5 in parallel with the galvanometer\nrs",
+          "= 0.5 in series with the galvanometer\nrs",
+          "= 1 in series with the galvanometer\nrs",
+          "= 1 n parallel with the galvanometer\nrs"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "= 0.5 in parallel with the galvanometer\nrs",
+        "explanation": "Moving coil galvanometer -\nIt is a very sensitive instrument used to measure the small current. The galvanometer gives the deflection\nwhich is proportional to the electric current flowing through it.\nCurrent in the circuit without an ammeter\nAllowed current with an ammeter\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 19,
+        "type": "mcq",
+        "question_text": "A simple pendulum performs simple harmonic motion about x = 0 with an amplitude A\nand time period T. The speed of the pendulum at x = A will be\n2",
+        "options": [
+          "πA√3\nT",
+          "πA\nT",
+          "πA√3\n2T",
+          "3π2A\nT"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "πA√3\nT",
+        "explanation": "The velocity of a particle executing S.H.M is given by\nv = ω√a2 −x2 = 2π√A2 − A2 = 2π√ 3A2 = πA√3\nT 4 T 4 T\nHence, the answer is the option 1.",
+        "note": null
+      },
+      {
+        "question_number": 20,
+        "type": "mcq",
+        "question_text": "The dielectric constant k of an insulator cannot be :",
+        "options": [
+          "3",
+          "6",
+          "8",
+          "infinity"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "infinity",
+        "explanation": "For metal, the dielectric constant K is infinite.\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 21,
+        "type": "numerical",
+        "question_text": "The space between the plates of a parallel plate capacitor is filled in two ways. In the first\ncase, it is filled with a slab of dielectric constant K. In the second case, it is filled with two\nslabs of equal thickness and dielectric constants K and K respectively as shown in the\n1 2\nfigure. The capacitance of the capacitor is the same in the two cases. Obtain the relationship\nbetween K,K and K\n1 2..",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "-",
+        "explanation": "C = kϵ 0 A\n1 d\nIn the second case, the capacitors are connected in series.\n2k k ϵ A\n1 2 0\nC = ( )\n2\nk +k d\n1 2\nC = C\n1 2\nimplies\nk = 2k 1 k 2\nk +k\n1 2\nHence, the answer is k = 2k 1 k 2 .\nk +k\n1 2",
+        "note": null
+      },
+      {
+        "question_number": 22,
+        "type": "numerical",
+        "question_text": "The surface of a metal is illuminated alternatively with photons of energies E=4eV and\nE=2.5eV resp. The ratio of maximum speeds of the photoelectrons emitted in the two cases\nis 2. The work function of the metal in eV is ____.",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "2",
+        "explanation": "Hence, the answer is (2).",
+        "note": null
+      },
+      {
+        "question_number": 23,
+        "type": "numerical",
+        "question_text": "A photocell connected in an electrical circuit is placed at a distance ‘d’ from a source of light.\nAs a result, current I flow in the circuit.\na). What will be the current in the circuit, when the distance is reduced to ‘\nd?\n3",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "-",
+        "explanation": "The electrons emitted per second is ∝ 1\nd2\nSo, when d=d/3, Current will be 9I",
+        "note": null
+      },
+      {
+        "question_number": 24,
+        "type": "numerical",
+        "question_text": "A parallel plate capacitor is made up of stair-like structure with a plate area A of each stair\nand that is connected with a wire of length b, as shown in the figure. The capacitance of the\nx ∈ A\narrangement is 0 . The value of x is\n15 b",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "23",
+        "explanation": "ϵ A\n0\nC =\n1\n5 b\nϵ A\n0\nC =\n2\n3 b\nϵ A\n0\nC =\n3\nb\nC ,C &C are in parallel\n1 2 3\n∵ C = C +C +C\neq 1 2 3\nϵ A ϵ A ϵ A\n0 0 0\n= + +\n5 b 3 b b\n23 ϵ A\n0\n=\n15 b\nHence, the correct answer is option (a).",
+        "note": null
+      },
+      {
+        "question_number": 25,
+        "type": "numerical",
+        "question_text": "A bent tube is lowered into a water stream as shown in the figure. The velocity of the\nstream relative to the tube is equal to v = 5 m/s. The closed upper end of the tube located\n0\nat the height h = 36 cm has a small orifice. To what height h (in cm)will the water get\n0\nspurt?\nh\nho\nV",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "89",
+        "explanation": "let the velocity of the water jet, near the surface be v'.\nThen applying Bernoulli's theorem\n1 1\nρv2 = h ρg+ ρv2\n0\n2 2\nOr v′ = √v2 −2gh −(1)\n0\nHere the pressure on both sides is the same and eternal atmospheric pressure.\nNow, if it is raised up to a height 'h' K.E converted into P.E\n1 v′2\nρv′2 = ρgh or h =\n2 2g\nv2\n−h\n0\n2g\n52 36 25 36\n− = −\n20 100 20 100\n89\nm ⇒ 89 cm.\n100\nHence, the correct answer is option (a).\nJEE Main Physics Sample Paper 4",
+        "note": null
+      }
+    ]
+  },
+  {
+    "paper_number": 4,
+    "title": "JEE Mains Physics Sample Paper 4",
+    "questions": [
+      {
+        "question_number": 1,
+        "type": "mcq",
+        "question_text": "Given below are two statements: one is labeled as Assertion A and the other is labeled as\nReason R\nAssertion A: A bar magnet dropped through a metallic cylindrical pipe takes more time to\ncome down compared to a non-magnetic bar with the same geometry and mass.\nReason R: For the magnetic bar, Eddy currents are produced in the metallic pipe which\nopposes the motion of the magnetic bar.\nIn light of the above statements, choose the correct answer from the options given below",
+        "options": [
+          "A is true but R is false",
+          "Both A and R are true but R is NOT the correct explanation of A",
+          "A is false but R is true",
+          "Both A and R are true and R is the correct explanation of A"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "Both A and R are true and R is the correct explanation of A",
+        "explanation": "Due to Eddy current in the metallic piece which opposes the motion of the magnetic bar. So, it takes more\ntime to come down compared to a non-magnetic bar.\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 2,
+        "type": "mcq",
+        "question_text": "A radioactive sample disintegrates via two independent decay processes having half-lives\nand respectively. The effective half-life, of the nuclei, is :",
+        "options": [
+          "",
+          "",
+          "",
+          "None of the above"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "Let the decay constant for the first process and the second decay constant be given as:\nHence, the answer is the option(3).",
+        "note": "Options [1, 2, 3] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 3,
+        "type": "mcq",
+        "question_text": "A satellite of mass m, initially at rest on the earth, is launched into a circular orbit at a height\nequal to the radius of the earth. The minimum energy required is",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": "Difference in energy -\nHence, the answer is the option (4).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 4,
+        "type": "mcq",
+        "question_text": "It is found that the zero of the Vernier scale lies between and of the main\nscale. The Vernier scale has 50 divisions equivalent to . The 22nd division of the\nVernier scale exactly coincides with one of the main scale divisions. The diameter of the\ncylinder is:",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": "Step 1: Determine the main scale reading range: The zero of the Vernier scale lies between and\n. This means the main scale reading (MSR) can be any value between these two extremes.\nStep 2: Calculate the value of one main scale division: Since the main scale reading range is from\nto , the difference is . Divide this difference by the number of divisions on the\nmain scale to get the value of one main-scale division.\nValue of one main scale division\nStep 3: Calculate the value of one Vernier scale division: Given that the Vernier scale has 50 divisions\nequivalent , divide the total length of the Vernier scale by the number of divisions to get the\nvalue of one Vernier scale division.\nStep 4: Calculate the least count (LC): The least count is the difference between the values of one main\nscale division and one Vernier scale division.\nStep 5: Calculate the true main scale reading: Since the 22nd division of the Vernier scale coincides with a\nmain scale division, we can add 22 main scale divisions to the minimum main scale reading to find the\ntrue main scale reading.\nTrue Main Scale Reading\nStep 6: Calculate the diameter of the cylinder: Since the cylinder's diameter is twice its radius, we can\ndirectly use the true main scale reading as the diameter.\nDiameter of the Cylinder\nSo, the diameter of the cylinder is approximately.\nHence, the answer is the option (4).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 5,
+        "type": "mcq",
+        "question_text": "A cell of emf 90 V is connected across series combination of two resistors each of 100Ω\nresistance. A voltmeter of resistance 400Ω is used to measure the potential difference\nacross each resistor. The reading of the voltmeter will be:",
+        "options": [
+          "90 V",
+          "45 V",
+          "80 V",
+          "40 V"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "40 V",
+        "explanation": "400×100\nR = +100\ncq\n500\n= 180Ω\n90 1\ni = = A\n180 2\n1 400\nReading = × ×100\n2 500\n= 40volt\nHence, the answer is the option(4).",
+        "note": null
+      },
+      {
+        "question_number": 6,
+        "type": "mcq",
+        "question_text": "What happens to the total kinetic energy of the system in a head-on inelastic collision?",
+        "options": [
+          "It remains constant",
+          "It is increasing",
+          "Decreases",
+          "Becomes zero"
+        ],
+        "correct_option_number": null,
+        "correct_answer": "Decreases",
+        "explanation": "Explanation:\nIn an inelastic collision, some of the kinetic energy is lost as heat or sound, and the objects stick together\nafter the collision and move with a common velocity. Therefore, the total kinetic energy of the system\ndecreases.\nHence, The answer is the option ().",
+        "note": null
+      },
+      {
+        "question_number": 7,
+        "type": "mcq",
+        "question_text": "Which one of the following is the property of a monochromatic, plane electromagnetic waves\nin free space?",
+        "options": [
+          "Electric and magnetic fields have a phase difference of",
+          "The energy contribution of both electric and magnetic fields are equal",
+          "The pressure exerted by the wave is the product of energy density and the speed of the wave.",
+          "The speed of the wave is"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "The energy contribution of both electric and magnetic fields are equal",
+        "explanation": "The energy in EM waves is divided equally between the electric and magnetic fields.\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 8,
+        "type": "mcq",
+        "question_text": "The correct figure that shows, schematically, the wave pattern produced by the\nsuperposition of two waves of frequencies 9 Hz and 11 Hz, is:",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "Time Period -\nSince all periodic motions repeat themselves in equal time intervals. This minimum time interval is known\nas the time period for oscillation.\n- wherein\nIt is denoted by T.\nAngular frequency -\nThe number of revolutions (expressed in radians) performed per unit time is known as Angular\nFrequency.\n- wherein\nIt is represented by w = 2π\nT\nν = (11−9) = 2 Hz\n0\n1\nT = sec = 0⋅5sec\n0\n2\nHence, The answer is the option (3).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 9,
+        "type": "mcq",
+        "question_text": "A proton moving with a constant velocity passes through a region of space without any\nchange in its velocity if\nE→\nand\nB→\nrepresents the electric and magnetic fields respectively,\nthen the region of space may have:\n(A)E = 0, B = 0\n(B)E = 0, B ≠ 0\n(C)E ≠ 0, B = 0\n(D)E ≠ 0, B ≠ 0\nChoose the most appropriate answer from the options given below ;",
+        "options": [
+          "(A), (B) and (C) only",
+          "(A), (C) and (D) only",
+          "(A), (B) and (D) only",
+          "(B), (C) and (D) only"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "(A), (B) and (D) only",
+        "explanation": "−→ → →\nF = q( V×B)\nB\n→ → →\nCase (a) is correct when E∥B∥V\nCase (b) is correct when\nV→∥B→\n→ → →\nCase (d) is correct when E ⊥ B ⊥ V\nHence, the answer is option (3).",
+        "note": null
+      },
+      {
+        "question_number": 10,
+        "type": "mcq",
+        "question_text": "Choose the correct option regarding inelastic collision between two bodies:",
+        "options": [
+          "Kinetic energy is conserved",
+          "Momentum is conserved",
+          "Both a and b",
+          "None of these"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "Momentum is conserved",
+        "explanation": "Inelastic Collision -\nThe law of conservation of momentum holds good but kinetic energy is not conserved.\n- wherein\n1 1 1 1\nm u2 + m u2 ≠ m v2 + m v2\n2 1 1 2 2 2 2 1 1 2 2 2\nm u +m u = m v +m\n1 1 2 2 1 1 2\nm ,m : masses\n1 2\nu ,v : initial and final velocities of mass m\n1 1 1\nu ,v : initial and final velocities of mass m\n2 2 2\nHence, The answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 11,
+        "type": "mcq",
+        "question_text": "In a resonance column, two successive resonances are obtained at depth\nrespectively. The next resonance will be obtained at a depth -",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "Given,\nNeat resonance will be obtained at\nHence, the answer is the option (3).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 12,
+        "type": "mcq",
+        "question_text": "Which of the following is diamagnetic",
+        "options": [
+          "Aluminum",
+          "Quartz",
+          "Nickel",
+          "Bismuth"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "Bismuth",
+        "explanation": "As we learned\nDiamagnetic Substance -\nThe magnetic field lines are expelled by this substance.\n- wherein\nHence, the answer is the option(4).",
+        "note": null
+      },
+      {
+        "question_number": 13,
+        "type": "mcq",
+        "question_text": "Direction: In the following question, a statement of Assertion (A) is followed by a statement\nof reason (R). Mark the correct choice as :\nC\nAssertion : The ratio p for monoatomic gas is more than for a diatomic gas\nC\nu\nReason: monoatomic gas have, an ore degree of freedom than those of a diatomic gas",
+        "options": [
+          "If both assertion and reason are true and reason is the correct explanation of assertion.",
+          "If both assertion and reason are true but reason is not the correct explanation of assertion.",
+          "If assertion is true but reason is false.",
+          "If both assertion and reason are false."
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "If assertion is true but reason is false.",
+        "explanation": "As we have learned\nValue of degree of freedom for monoatomic gas -\nf = 3\n- wherein\nA monoatomic gas can only have a translational degree of freedom.\nC\nγ = p is more for the monoatomic gas\nC\nu\ndegree of freedom is more for a diatomic gas\nHence, The answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 14,
+        "type": "mcq",
+        "question_text": "Sphere A & sphere B are made up from same material, but radius of A is twice of that of\nsphere B. Then gravitational force between them is equal to:",
+        "options": [
+          "27Gπ2ρ2r4",
+          "1 Gπ2ρ2r3\n27",
+          "3Gπ2ρ2r4",
+          "1Gπ2ρ2r2\n3"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "3Gπ2ρ2r4",
+        "explanation": "As we learned\nNewton's Law of Gravitation -\nFαm\n1\nm\n2\nr2\nGm m\n1 2\nF =\nr2\nF → Force\nG → Gravitational constant\nm ,m → Masses\n1 2\nr → Distance between masses\n- wherein\nForce is along the line joining the two masses\nF = Gm 1 m 2\nAs r2\nand mass = density × volume\nboth have the same ρ\n4\nm = ( πr3)×ρ\nB\n3\nso\nand r = 3r = 3r\nA B\n4 4\nm = ( π(3r)3) = ( πr3)×27×ρ\nA\n3 3\nGm m\nF = A B\n4r2\nG×(4πr3 × 4πr3)×27ρ2\n= 3 3\n4×4r2\nF = 3Gπ2ρ2r4\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 15,
+        "type": "mcq",
+        "question_text": "A particle has an initial velocity and an acceleration of Its speed after\n10s is",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "",
+        "explanation": "so, speed is the magnitude of velocity-\nHence, the answer is the option (2).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 16,
+        "type": "mcq",
+        "question_text": "Consider the situation as shown in the figure. The point O is the centre. The light ray forms\nan angle of 60∘ with the normal. The normal makes an angle 60∘ with the horizontal and the\nmirror makes an angle 60∘ with the normal. The value of the refractive index of the spherical\nportions, so that the light ray retraces its path is:",
+        "options": [
+          "√2",
+          "2\n√3",
+          "3\n2",
+          "√3"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "√3",
+        "explanation": "Refractive index, μ = sin60∘ = √3/2 = √3\nsin30∘ 1/2\nHence, The answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 17,
+        "type": "mcq",
+        "question_text": "An arc lamp requires a direct current of 10 A at 80 V to function. If it is connected to a 220 V\n( ), 50 Hz AC supply, the series inductor needed for it to work is close to :\nRMS",
+        "options": [
+          "80 H",
+          "0.08 H",
+          "0.044 H",
+          "0.065 H"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "0.065 H",
+        "explanation": "V\nI =\n√82 +X2\nL\n220\n⇒ 10 =\n√64+X2\nL\n⇒ √64+X2 = 22\nL\nSquaring on both sides, we get\n64+X2 = 484\nL\nX2 = 484−64 = 420\nL\nX = √420\nL\n2πωL = √420\nSeries induction on an arc lamp.\nL =\n√420\n= 0.065H\n(2π×50)\nHence, the answer is the option(4).",
+        "note": null
+      },
+      {
+        "question_number": 18,
+        "type": "mcq",
+        "question_text": "An electron with mass ' m ' with an initial velocity (t = 0)v→ = v ^i (v > 0) enters a\n0 0\n→\nmagnetic field B = B ^j. If the initial de-Broglie wavelength at t = 0 is λ then its value after\n0 0\ntime ' t ' would be :",
+        "options": [
+          "λ\n0\n√1−\ne2 B2 0t2\nm2",
+          "λ\n0\n√1+\ne2 B2 0t2\nm2",
+          "λ √1+ e2 B2 0 t2\n0 m2",
+          "λ\n0"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "λ\n0",
+        "explanation": "λ = R = h\nP mv\n0\nspeed will not change in magnetic field (λ )\n0\nHence, the answer is the option (4)",
+        "note": null
+      },
+      {
+        "question_number": 19,
+        "type": "mcq",
+        "question_text": "The de Broglie wavelength of a molecule in a gas at room temperature (300 K) is If the\ntemperature of the gas is increased to 600 K, then the de Broglie wavelength of the same gas\nmolecule becomes :",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "",
+        "explanation": "The root mean squared velocity of a gas is given by-\nLet, and ,\nTaking velocity ratios at the given temperatures,\nThe de Broglie wavelength is given by :\nThe ratio of the wavelengths is -\nHence, the answer is the option(2).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 20,
+        "type": "mcq",
+        "question_text": "A bakelite breaker has a volume capacity of at 30oC when it is partially filled with\nvolume (at ) of mercury, it is found that the unfilled volume of the beaker remains\nconstant as temperature is varied. If and\n, where y is the coefficient of volume expansion then\nis close to -",
+        "options": [
+          "10",
+          "20",
+          "30",
+          "40"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "20",
+        "explanation": "Hence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 21,
+        "type": "numerical",
+        "question_text": "A ring and a solid sphere rotating about an axis passing through their centers have the same\nradii of gyration. The axis of rotation is perpendicular to the plane of the ring. The ratio of\nthe radius of the ring to that of the sphere is . The value of x is ______.",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "5",
+        "explanation": "Given radius of gyration is the same for the ring and solid sphere\ntherefore x = 5\nHence, the answer is (5).",
+        "note": null
+      },
+      {
+        "question_number": 22,
+        "type": "numerical",
+        "question_text": "A transformer has 1000 turns in the primary coil and carries 8A current. If the input power is\none kilowatt, the number of turns on the secondary coil to have 100V output will be",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "800",
+        "explanation": "As we have learnt,\nStep down transformer If decrease voltage and increase current -\nR < R\ns P\nE I = E I\nP P S S\nE I\nP P\nI =\nS\nE\nS\n1000\nI = = 10 A\nS\n100\nN 8\nS\n=\nN 10\nP\n⇒ N = 800\ns\nHence, the answer is 800",
+        "note": null
+      },
+      {
+        "question_number": 23,
+        "type": "numerical",
+        "question_text": "A car is moving on a circular path of radius such that the magnitudes of the\ntangential acceleration and centripetal acceleration are equal. The time taken by the car to\ncomplete the first quarter of revolution, if it is moving with an initial speed of is\n. The value of is _____________.",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "40",
+        "explanation": "∣ ∣ ∣ ∣\nHence, the answer is (40).",
+        "note": null
+      },
+      {
+        "question_number": 24,
+        "type": "numerical",
+        "question_text": "The position vectors of two 1 kg particles, (A) and (B), are given by\n→ →\nr = (α t2^i+α ^t+α k ^ )m and r = (β t^i+β t2^ j+β tk ^ )m, respectively;\nA 1 2 3 B 1 2 3\n(α = 1 m/s2,α = 3 n m/s,α = 2 m/s,β = 2 m/s, β = −1 m/s2,β = 4p m/s ),\n1 2 3 1 2 3\n−→ →\nwhere t is time, n and p are constants, At t = 1 s, V = V and velocities v→ and v→ of\nA B A B\nthe particles are orthogonal to each other. At t = 1 s, the magnitude of angular momentum\nof particle (A) with respect to the position of particle (B) is √L kgm2 s−1 . The value of L is\n________.",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "90",
+        "explanation": "∣ ∣ ∣ ∣\n∣ ∣\nV = (2t^i+3nj+2k ^ )\nA\n→\nV = (2^i−2t^j+4pk^)\nB\n−→ →\nV ⋅ V = 0\nA B\n4−6n+8p = 0\n2−3n+4p = 0\n3n = 2+4p\n−→ →\nV = V\nA B\n4+9n2 +4 = 4+4+16p2\n−1 1\np = ⇒ n =\n4 3\n→ → →\nL = m (r ×V )\nA A/B A\n→\nr = (α −β )^i+(α −β )^j+(α −β )\nA/B 1 1 2 2 3 3\n= (1−2)^i+(1+1)^j+3k^\n^i ^j k^\n^ ^ ^\n= −1 2 3 = i+8j−5k\n2 1 2\n= √1+64+25 = √90\nHence, the answer is 90.",
+        "note": null
+      },
+      {
+        "question_number": 25,
+        "type": "numerical",
+        "question_text": "Plot a graph showing the variation of photoelectric current versus intensity of light.",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "",
+        "explanation": "The graph is plotted by keeping the potential and frequency constant.\nJEE Main Physics Sample Paper 5",
+        "note": null
+      }
+    ]
+  },
+  {
+    "paper_number": 5,
+    "title": "JEE Mains Physics Sample Paper 5",
+    "questions": [
+      {
+        "question_number": 1,
+        "type": "mcq",
+        "question_text": "When an AC circuit is passing through a pure inductor of impedance L, the average power\ndissipated is-",
+        "options": [
+          "1LI2\n2",
+          "1LI2\n4",
+          "LI2",
+          "zero"
+        ],
+        "correct_option_number": null,
+        "correct_answer": "zero",
+        "explanation": "As we have learned,\nPower -\nP = 0\npower factor cosϕ = 0\nSo , Power = 0\nHence, the correct option is (4).",
+        "note": null
+      },
+      {
+        "question_number": 2,
+        "type": "mcq",
+        "question_text": "Direction : In the following question, a statement of Assertion ( A ) is followed by a\nstatement of reason (R). Mark the correct choice as\nAssertion : Gravitational field is zero both at centre and infinity.\nReason : The unit of gravitational field is N/kg",
+        "options": [
+          "If both assertion and reason are true and reason is the correct explanation of assertion.",
+          "If both assertion and reason are true but reason is not the correct explanation of assertion.",
+          "If assertion is true but reason is false.",
+          "If both assertion and reason are false."
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "If both assertion and reason are true but reason is not the correct explanation of assertion.",
+        "explanation": "As we learn\nGravitational field:\nSpace or surroundings in which a material body feels the gravitational force of attraction.\n- wherein\nGravitational force is only attractive in nature.\nThe gravitational field is zero at the center and infinity.\nHence, the answer is option (2).",
+        "note": null
+      },
+      {
+        "question_number": 3,
+        "type": "mcq",
+        "question_text": "A sample of a radioactive nucleus A disintegrates to another radioactive nucleus B, which in\nturn disintegrates to some other stable nucleus C. Plot of a graph showing the variation of\nnumber of atoms of nucleus B versus time is :\n(Assume that , there are no B atoms in the sample)",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "λ λ\n−−A →A B →B ?C\n(N ) = (N ) e−λ A t → (1)\nA t A 0\nAfter time t, the no.of nuclei of B,\n(N ) = [((N ) −(N ) )]+(N ) e−λ B t\nB t A 0 A t B 0\n(N B ) t = (N A ) 0 (1−e−λ A t)+(N B ) 0 e−λ B t\nbut (N ) = 0\nB 0\n(N B ) t = (N A ) 0 (1−e−λ A t)\nHence, The answer is the option (3).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 4,
+        "type": "mcq",
+        "question_text": "In an interference experiment, the ratio of amplitudes of coherent waves is . The\nratio of maximum and minimum intensities of fringes will be :",
+        "options": [
+          "4",
+          "18",
+          "2",
+          "9"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "4",
+        "explanation": "and\nAs\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 5,
+        "type": "mcq",
+        "question_text": "A block of mass m, lying on a smooth horizontal surface, is attached to a spring (of negligible\nmass), as shown in the figure. The block is initially at rest in its equilibrium position. If now\nthe block is pulled with a constant force F, the maximum speed of the block is:",
+        "options": [
+          "2F\n√mk",
+          "F\nπ√mk",
+          "πF\n√mk",
+          "F\n√mk"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "F\n√mk",
+        "explanation": "Net work done by all the forces gives the change in kinetic energy -\n1 1\nW = mv2 − mv2\n2 2 0\nW = k −k\nf i\n− wherein\nm = mass of the body\nv = initial velocity\n0\nv = final velocity\nLet the block be pulled to a distance x\nF = kx\nx = F −(1)\nk\nApplying the work-energy theorem\nWork done due to F + Work done by spring = Change in kinetic energy\ni.e F.x − 1kx2 = 1mv2 −0\n2 2\nHere work done due to spring is taken as negative because it is against the force applied.\nFrom (1) and (2)\nF 1 F 1\nF ⋅ − K( ) = mv2\nK 2 K2 2\nF2 F2 1\n− = mv2\nK 2K 2\nF\nv =\n√mK\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 6,
+        "type": "mcq",
+        "question_text": "PQ is an infinite current carrying conductor. AB and CD are smooth conducting rods on\nwhich a conductor EF moves with constant velocity V as shown. The force needed to\nmaintain constant speed of EF is.",
+        "options": [
+          "2\n1 [μ 0 IV ln( b )]\nVR 2π a",
+          "[ μ 0 IV ln( b )] 1\n2π a R",
+          "2\n[ μ 0 IV ln( b )] V\n2π a R",
+          "[μ 0 IV ln( b )]\n2π a"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "2\n1 [μ 0 IV ln( b )]\nVR 2π a",
+        "explanation": "Motional EMF -\nε = Blv\n- wherein\nB → magnetic field\nl → length\nu → the velocity of u perpendicular to the uniform magnetic field.\nb b μ Iv\n0\nInduced emf ∫ Bvdx = ∫ vdx\n2π\na a\nb b μ Iv b\n0\n⇒ Induced emf = ∫ Bvdx = ∫ ln( )\n2π a\na a\n⇒ power dissipated = E2\nR\nAlso , power = F.V. ⇒ F = E2\nVR\n2\n⇒ F = 1 [μ 0 IV ln( b )]\nVR 2π a\nHence, the correct answer is option (1).",
+        "note": null
+      },
+      {
+        "question_number": 7,
+        "type": "mcq",
+        "question_text": "To get three images of a single object, one should have two plane mirrors at an angle of",
+        "options": [
+          "600",
+          "900",
+          "1200",
+          "300"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "900",
+        "explanation": "The number of images formed is given by:-\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 8,
+        "type": "mcq",
+        "question_text": "Which of the following is true for mutual inductance M between two coils for rotation,\nM = K√L L\n1 2",
+        "options": [
+          "0 ≤ k ≤ 1",
+          "A system cannot have mutual inductance without self inductance",
+          "K = Magneticfluxlinkedtosecondary\nMagneticfluxlinkedtoprimary",
+          "All of the above"
+        ],
+        "correct_option_number": null,
+        "correct_answer": "All of the above",
+        "explanation": "The formula M = K√L 1 L 2 is true for the mutual inductance between two coils. The value of M\ndepends on the physical configuration of the coils, such as:\n- Distance between the coils,\n- Relative orientation of the coils,\n- Medium between the coils.\nFor example, if two coils are aligned coaxially with small separation, K is close to 1 . If the coils are\nrotated relative to each other, K decreases.\nThe statement M = K√L L is true for mutual inductance between two coils.\n1 2\nHence, the correct answer is option (d).",
+        "note": null
+      },
+      {
+        "question_number": 9,
+        "type": "mcq",
+        "question_text": "The velocity of sound in air at 4 atmospheres and that at 1-atmosphere pressure would be",
+        "options": [
+          "1 : 1",
+          "4 : 1",
+          "1 : 4",
+          "3 : 1"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "1 : 1",
+        "explanation": "As we learnt in\nEffect of temperature on the speed of sound -\nP RT\n∵ =\nρ M\nγRT\n∴ V = √\nM\n- wherein\nVα√T\nThis in Kelvin\nSo velocity increases with an increase in temperature.\nSince V = √ γP = √ γRT\nρ M\nV is independent of P\n∴ Ratio of velocity = 1 : 1\nHence, the answer is the option(1).",
+        "note": null
+      },
+      {
+        "question_number": 10,
+        "type": "mcq",
+        "question_text": "Pressure at A immediately below the meniscus is :",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": "Excess Pressure -\nDifference of pressure between two sides of the liquid surface. Excess pressure is provided by hydrostatic\npressure\nJust outside the meniscus pressure is\nHence, the answer is the option (4).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 11,
+        "type": "mcq",
+        "question_text": "In the given arrangement of their ring each of mass M and radius R, the moment of inertia\nabout the yy axis is",
+        "options": [
+          "3MR2\n2",
+          "5MR2\n2",
+          "7MR2\n2",
+          "1MR2\n2"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "7MR2\n2",
+        "explanation": "As we learned\nParallel Axis Theorem -\nI = I +Mh2\nbb′ aa′\n- wherein\nbb′ is axis parallel to aa′&aa′ an axis passing through centre of mass.\nI = I +I +I\n1 2 3\nMR2\nI = ( Perpendicular axis theorem)\n1\n2\nI = I = I +MR2 (Parallel axis theorem)\n2 3 c\nMR2 3\n+MR2 = MR2\n2 2\nMR2 3 7\nI = +2[ MR2] = MR2\n2 2 2\nHence, the answer is the option(3).",
+        "note": null
+      },
+      {
+        "question_number": 12,
+        "type": "mcq",
+        "question_text": "Two point charges – Q and 2Q are separated by a distance R, neutral point will be obtained\nat",
+        "options": [
+          "R\nA distance of from – Q charge and lies between the charges.\n√2−1",
+          "R\nA distance of from – Q charge on the left side of it\n√2−1",
+          "R\nA distance of from 2Q charge on the right side of it\n√2−1",
+          "A point on the line which passes perpendicularly through the centre of the line joining – Q and 2Q\ncharge."
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "R\nA distance of from – Q charge on the left side of it\n√2−1",
+        "explanation": "As we learned\nZero potential due to a system of two point charge -\nIf both charges are like then resultant potential is not zero at any finite point.\nIf the charges are unequal and unlike then all such points where resultant potential is zero lies on a closed curve\n- wherein\nFor internal point\n(It is assumed that |Q | < |Q | )\n1 2\nQ Q\n1 2\nP, =\nx (x−x )\n1 1\nx\n⇒ x =\n1\n(Q /Q +1)\n2 1\nAs already we discussed neutral point will be obtained on the side of charge which is smaller in\nmagnitude i.e. it will obtained on the left side of – Q charge and at a distance.\nt = R ⇒ t = R\n√2Q−1 √2−1\nQ\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 13,
+        "type": "mcq",
+        "question_text": "The graph shown represents that the alternative voltage is -",
+        "options": [
+          "Triangular",
+          "Sinusoidal",
+          "Rectangular",
+          "None of above"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "Triangular",
+        "explanation": "The graph represents triangular alternative voltage.\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 14,
+        "type": "mcq",
+        "question_text": "A glass capillary tube with a radius of is dipped into a container of liquid\nmercury. The liquid mercury falls to a height of below the normal liquid level\ninside the capillary due to capillary action. Calculate the surface tension of mercury using the\ngiven data. If a detergent is added to the mercury, increasing the surface tension to\ntimes its original value, calculate the new capillary fall.",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "",
+        "explanation": "Given:\nRadius of capillary tube\nCapillary fall\nIncreased surface tension due to detergent , where is the original surface tension.\nStep 1: Calculate the original surface tension using the capillary fall formula:\nStep 2: Calculate the new surface tension due to the detergent:\nStep 3: Calculate the new capillary fall using the increased surface tension :\nThe surface tension of mercury is . After adding the detergent, the new\ncapillary fall is .\nHence, the answer is the option (2).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 15,
+        "type": "mcq",
+        "question_text": "A ball projected from the ground at an angle of 45∘ just clears a wall in front. If the point of\nprojection is 4m from the foot of the wall and the ball strikes the ground at a distance of 6m\non the other side of the wall, the height of the wall is :",
+        "options": [
+          "4.4m",
+          "2.4m",
+          "3.6m",
+          "1.6m"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "2.4m",
+        "explanation": "As the ball is projected at an angle 45o\nto the horizontal therefore Range = 4H\n10 = 4H ⇒ H = 10 = 2.5m( Range = 4m+6m = 10m)\n4\nu2sin2θ H ×2g 2.5×2×10\nH = ∴ u2 = = = 100 or\n2g sin2θ 2\n( 1 )\n√2\nu = √100 = 10 ms−1\nHeight of wall PA = OAtanθ− 1 g(OA)2 = 4− 1 × 10×16 = 2.4 m\n2 u2cos2θ 2 10×10× 1 × 1\n√2 √2\nHence, the answer is the option 2.",
+        "note": null
+      },
+      {
+        "question_number": 16,
+        "type": "mcq",
+        "question_text": "The magnetic field B inside a long solenoid carrying a current of 10 A, is .\nFind the no of turns per unit length of the Solenoid.",
+        "options": [
+          "1500 turns /m",
+          "3500 turns /m",
+          "2000 turns /m",
+          "2500 turns /m"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "2500 turns /m",
+        "explanation": "For, a solenoid having n turns, then\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 17,
+        "type": "mcq",
+        "question_text": "The liquid is filled in a cylindrical container of radius R. What should be the height of the\nliquid, so that the force at the wall of the container is equal to the force at the bottom?",
+        "options": [
+          "h=2R",
+          "h=R",
+          "h=R/2",
+          "h=3R"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "h=R",
+        "explanation": "Let the height upto which the water is filled be h.\nArea of the bottom A = πr2\nb\nPressure exerted at the bottom P = ρgh\nb\n∴ Thrust at the bottom T = ρgh(πr2)\nb\nFor the walls : Force exerted at the walls F = P A\nCM\nh\n∴ F = ρg ×2πrh\n2\nAccording to the question, F = T\nb\nh\n∴ ρg ×2πr h = ρg h(πr2) ⟹ h = r\n2\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 18,
+        "type": "mcq",
+        "question_text": "Suppose that the circuit shown in the adjacent figure was connected to a source of emf and\nswitched on. After a long time, the circuit is switched off. The charge on the capacitors as a\nfunction of time after the external circuit is switched off is",
+        "options": [
+          "{(C 1 +1)τ −C V }e−t/τ +(C 1 +C 2 )τ\nC 2 0 C\n2 2",
+          "{(C 1 +1)τ −C V }e−t/τ +(C 1 +C 2 )τ\nC 1 0 C\n2 2",
+          "{(C 1 +1)τ −C V }e−t/τ +(C 1 +C 2 )τ\nC 1 0 C\n2 1",
+          "None of the above"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "{(C 1 +1)τ −C V }e−t/τ +(C 1 +C 2 )τ\nC 1 0 C\n2 2",
+        "explanation": "Suppose that the potential difference applied between A and B is V\n0\nThe charges on C and C are respectively,\n1 2\nq0 = C V and q0 = C V …\n1 1 0 2 2 0\nAfter the external potential is switched off, let I be the current in the circuit while q ( T) and q (t) be the\n1 2\ncharges on C and C\n1 2\nKirchoff's law gives\nq dq q\n1 +2( 1 )R+ 2 = 0\nC dt C\n1 2\ndq1 dq2\ni = =\ndt dt\nor, q = q + constant\n1 2\n= q +a( say ) ⋯ (ii)\n2\nequation (I) gives\n1 1 q dq\nq ( + )+ +2( 1 )R = 0\n1\nC C C dt\n1 2 2\ndq 1 1 1 −a\nor 1 + ( + )q = −\n1\ndt 2R C C C\n1 2 2\na\n⇒ q = A e−t/τ − ×τ\n1 1\nC\n2\nwhere 1 = 1 ( 1 + 1 )\nτ 2R C C\n1 2\nq = q −a\n2 1\nτ\n= A e−t/τ −a +1\n1\nC\n2\nInitially, q (0) = −C V and q (0) = C V\n(0) 1 0 2 2 0\na = q (0)−q (0) = −(C V +C V )\n1 2 1 0 2 0\n= −(C +C )V\n1 2 0\nq (t) = A e−t/τ + C 1 +C 2 ×τ\n1 1 C\n2\n∴ A = (C 1 +1)τ −C V\n1 C 1 0\n2\n∴ (C 1 +1)τ −C V }e−t/τ +(C 1 +C 2 )τ\nC 1 0 C\n2 2\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 19,
+        "type": "mcq",
+        "question_text": "The position of a projectile launched from the origin at t=0 is given by\nat t = 2s. If the projectile was launched at an angle from the\nhorizontal, then is (take g=10 ms-2).",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "Using\nFrom equation (1) and (2)\nHence, the answer is the option (3).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 20,
+        "type": "mcq",
+        "question_text": "A plank is resting on a horizontal ground in the northern hemisphere of the Earth at a 45∘\nlatitude. Let the angular speed of the Earth be w and its radius r . The magnitude of the\ne\nfrictional force on the plank will be",
+        "options": [
+          "mr w2S\ne",
+          "mr w2\ne\n√2",
+          "mr w2\ne\n2",
+          "Zero"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "mr w2\ne\n2",
+        "explanation": "f = mw2rcos450\nr\nf = mw2r cos2450\nr e\nr = r cos45\ne\nf = mw2r 1/2\nr e\nmw2r\ne\nf =\nr\n2\nHence, the correct answer is the option(3).",
+        "note": null
+      },
+      {
+        "question_number": 21,
+        "type": "numerical",
+        "question_text": "Two wires with current 2A and 1A are enclosed in a circular loop. Another wire with current 3\n→\nA is situated outside the circular loop. The ∫ B⋅dl around the loop is nμ 0 then find the\nvalue of n ?",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "1",
+        "explanation": "As we learned\nAmpere's Law -\nIt gives another method to calculate the magnetic field due to the given current distribution.\nAnother wire with current 3A is situated outside the loop as shown-\nAccording to Ampere's circuital law\n→ →\n∮ B⋅d = μ I = μ (2A−1A) = μ\n0 enclosed 0 0\nHence, the answer is 1.",
+        "note": null
+      },
+      {
+        "question_number": 22,
+        "type": "numerical",
+        "question_text": "10 identical cell each of emf 4V and internal resistance 10 are connected in parallel across\nexternal resistance of 1 then current (in A) through each cell is",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "0.2",
+        "explanation": "As we learnt\nCurrent from each cell -\nTotal Current\nCurrent through each cell is\nHence, the answer is 0.2.",
+        "note": null
+      },
+      {
+        "question_number": 23,
+        "type": "numerical",
+        "question_text": "A parallel plate capacitor has charge 5×10−6C. A dielectric slab is inserted between the\nplates and almost fills the space between the plates. If the induced charge on one face of the\nslab is\n4×10−6C\nthen the dielectric constant of the slab is ______ .",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "5",
+        "explanation": "E = E −E\nnet 0 in\n1\nE = E (1− )\nin 0\nk\n1\nQ = Q (1− )\nin 0\nk\n1\n4×10−6 = 5×10−6(1− )\nk\nk = 5\nHence, the answer is 5.",
+        "note": null
+      },
+      {
+        "question_number": 24,
+        "type": "numerical",
+        "question_text": "A body is projected at t= 0 with a velocity 10ms-1 at an angle of 600 with the horizontal. The\nradius of curvature of its trajectory at t = 1s is R. Neglecting air resistance and taking\nacceleration due to gravity g = 10 ms-2, the value of R (in meters) is:",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "2.8",
+        "explanation": "We know that,\nv2\na =\nc\nR\nu = 10 m/s,θ = 60∘\nNow, calculating speed at t = 1 s\n1\nv = ucosθ = 10× = 5 m/s\nx\n2\nv = u −gt\ny y\n√3\nv = usinθ−gt = 10× −10×1 = −1.34 m/s( downward )\ny\n2\nv 5\nAngle, (α) = tan−1( x ) = tan−1( )\nv 1.34\ny\na = gsinα (Acceleration perpendicular to speed)\nc\nv2\n⇒ gsinα =\nR\nv2 +v2\nx y\n⇒ R =\ngsinα\n25+1.7956\nR = = 2.8 m\n10×0.9659\nHence, the answer is the option(1).",
+        "note": null
+      },
+      {
+        "question_number": 25,
+        "type": "numerical",
+        "question_text": "A solid sphere of mass 2 kg is making pure rolling on a horizontal surface with kinetic energy\n2240 J. The velocity of centre of mass of the sphere will be ______ ms−1",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "40",
+        "explanation": "Mass = 2 kg\nK.E = 2240 J\n1 1\nK⋅E = mv2 + I2\n2 0 2 0\n1 1 2 v2\n= mv2 + ⋅ mR2 ⋅ 0\n2 0 2 5 R2\n1 mv2\n= mv2 + 0\n2 0 5\n7\nK.E = mv2\n10 0\n7\n2240 = ×2×v2\n10 0\n22400\nv2 = = 1600\n0 14\nv = 40 m/sec\n0\nHence, the correct answer is option (a).",
+        "note": null
+      }
+    ]
+  }
+]

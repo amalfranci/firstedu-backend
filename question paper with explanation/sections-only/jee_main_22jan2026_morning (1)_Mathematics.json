@@ -1,0 +1,312 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "provider": "CAREER POINT",
+  "date": "22nd January 2026",
+  "session": "Morning",
+  "sections": {
+    "Mathematics": {
+      "questions": [
+        {
+          "number": 1,
+          "type": "MCQ",
+          "question": "Let AB = 2i + 4j - 5k and AD = i + 2j + λk, λ ∈ R. Let the projection of the vector v = i + j + k on the diagonal AC of the parallelogram ABCD be of length one unit. If α, β (α > β) are the roots of λ^2 x^2 - 6λx + 5 = 0, then 2α - β is equal to",
+          "options": {
+            "1": "1",
+            "2": "4",
+            "3": "3",
+            "4": "6"
+          },
+          "answer": "3",
+          "solution": "AC = 3i + 6j + (λ-5)k. Projection of v on AC = 1 gives 3+6+λ-5 = sqrt(9+36+(λ-5)^2), solving gives λ = 3. Equation becomes 9x^2 - 18x + 5 = 0, roots x = 1/3, 5/3. So 2α - β = (10-1)/3 = 3."
+        },
+        {
+          "number": 2,
+          "type": "MCQ",
+          "question": "Let the relation R on the set M = {1,2,3,...,16} be given by R = {(x,y): 4y = 5x - 3, x,y ∈ M}. Then the minimum number of elements required to be added in R, in order to make the relation symmetric, is equal to",
+          "options": {
+            "1": "1",
+            "2": "2",
+            "3": "4",
+            "4": "3"
+          },
+          "answer": "2",
+          "solution": "R = {(3,3),(7,8),(11,13)}. To make it symmetric, (8,7) and (13,11) must be added, i.e. 2 elements."
+        },
+        {
+          "number": 3,
+          "type": "MCQ",
+          "question": "Let the line x = -1 divide the area of the region {(x,y): 1+x^2 ≤ y ≤ 3-x} in the ratio m:n, gcd(m,n)=1. Then m+n is equal to",
+          "options": {
+            "1": "25",
+            "2": "28",
+            "3": "26",
+            "4": "27"
+          },
+          "answer": "27",
+          "solution": "m/n = Integral(-1 to 1)[(3-x)-(1+x^2)]dx / Integral(-2 to -1)[(3-x)-(1+x^2)]dx = 20/7. So m+n = 20+7 = 27."
+        },
+        {
+          "number": 4,
+          "type": "MCQ",
+          "question": "Two distinct numbers a and b are selected at random from 1,2,3,...,50. The probability that their product ab is divisible by 3 is",
+          "options": {
+            "1": "561/1225",
+            "2": "664/1225",
+            "3": "272/1225",
+            "4": "8/25"
+          },
+          "answer": "664/1225",
+          "solution": "Required probability = 1 - P(product not divisible by 3). Multiples of 3 = 16, not multiples of 3 = 34. Probability = 1 - C(34,2)/C(50,2) = 664/1225."
+        },
+        {
+          "number": 5,
+          "type": "MCQ",
+          "question": "Let f(x) = x^2025 - x^2000, x ∈ [0,1], and the minimum value of f(x) in [0,1] be (80)^80 (n)^-81. Then n is equal to",
+          "options": {
+            "1": "-81",
+            "2": "-40",
+            "3": "-41",
+            "4": "-80"
+          },
+          "answer": "-81",
+          "solution": "f'(x)=0 gives x = (2000/2025)^(1/25) = α. f(0)=0, f(1)=0, f(α) = (80/81)^80 · (-1/81) = 80^80 · (-81)^-81. So n = -81."
+        },
+        {
+          "number": 6,
+          "type": "MCQ",
+          "question": "Let P(α,β,γ) be the point on the line (x-1)/2 = (y+1)/-3 = z at a distance 4√14 from the point (1,-1,0) and nearer to the origin. Then the shortest distance between the lines (x-α)/1 = (y-β)/2 = (z-γ)/3 and (x+5)/2 = (y-10)/1 = (z-3)/1 is equal to",
+          "options": {
+            "1": "7√(5/4)",
+            "2": "4√(7/5)",
+            "3": "4√(5/7)",
+            "4": "2√(7/4)"
+          },
+          "answer": "4√(7/5)",
+          "solution": "P = (2λ+1, -3λ-1, λ). From distance condition, λ = -4 (nearer to origin), so P(-7,11,-4). Shortest distance computed via cross product = 28/√35 = 4√7/√5."
+        },
+        {
+          "number": 7,
+          "type": "MCQ",
+          "question": "If a random variable x has probability distribution p(0)=0, p(1)=2k, p(2)=k, p(3)=3k, p(4)=2k^2, p(5)=2k, p(6)=k^2+k, p(7)=7k^2, then P(3<x≤6) is equal to",
+          "options": {
+            "1": "0.34",
+            "2": "0.22",
+            "3": "0.64",
+            "4": "0.33"
+          },
+          "answer": "0.33",
+          "solution": "Sum of probabilities = 1 gives 10k^2+9k-1=0, so k=1/10. P(3<x≤6) = 3k+3k^2 = 0.3+0.03 = 0.33."
+        },
+        {
+          "number": 8,
+          "type": "MCQ",
+          "question": "The number of distinct real solutions of the equation x|x+4| + 3|x+2| + 10 = 0 is",
+          "options": {
+            "1": "3",
+            "2": "1",
+            "3": "0",
+            "4": "2"
+          },
+          "answer": "1",
+          "solution": "Case x<-4: x^2+7x-4=0 gives two roots, both must be checked against domain (rejected as not satisfying case). Case -4≤x<-2: x^2+x+4=0, D<0, no solution. Case x≥-2: x^2+7x+16=0, D<0, no solution. Only 1 valid solution overall."
+        },
+        {
+          "number": 9,
+          "type": "MCQ",
+          "question": "Let f:[1,∞)→R be differentiable. If 6∫(1 to x) f(t)dt = 3x f(x) + x^3 - 4 for all x≥1, then the value of f(2) - f(3) is",
+          "options": {
+            "1": "-4",
+            "2": "-3",
+            "3": "4",
+            "4": "3"
+          },
+          "answer": "3",
+          "solution": "Differentiating: 6f(x) = 3xf'(x)+3f(x)+3x^2, giving d(y/x)/dx = -1 where y=f(x). Solving: y/x = -x + C. Using f(1)=1 gives C=2, so f(x) = -x^2+2x. f(2)-f(3) = 0-(-3) = 3."
+        },
+        {
+          "number": 10,
+          "type": "MCQ",
+          "question": "If the line αx + 2y = 1, α ∈ R, does not meet the hyperbola x^2 - 9y^2 = 9, then a possible value of α is",
+          "options": {
+            "1": "0.6",
+            "2": "0.8",
+            "3": "0.5",
+            "4": "0.7"
+          },
+          "answer": "0.8",
+          "solution": "Substituting y=(1-αx)/2 into hyperbola gives (4-9α^2)x^2+18αx-45=0. For no intersection, D<0, giving α^2 > 5/9, i.e. α ∈ (-∞,-√5/3) ∪ (√5/3,∞). √5/3 ≈ 0.74, so α=0.8 works."
+        },
+        {
+          "number": 11,
+          "type": "MCQ",
+          "question": "If the image of the point P(1,2,a) in the line (x-6)/3 = (y-7)/2 = (7-z)/2 is Q(5,b,c), then a^2+b^2+c^2 is equal to",
+          "options": {
+            "1": "293",
+            "2": "264",
+            "3": "298",
+            "4": "283"
+          },
+          "answer": "298",
+          "solution": "Midpoint M=(3, b/2+1, (c+a)/2) lies on line, and PQ ⊥ line. Solving simultaneous equations: b=8, c+a=18, c-a=12. So c=15, a=3. a^2+b^2+c^2 = 9+64+225 = 298."
+        },
+        {
+          "number": 12,
+          "type": "MCQ",
+          "question": "Let the set of all values of r, for which the circles (x+1)^2+(y+4)^2=r^2 and x^2+y^2-4x-2y-4=0 intersect at two distinct points, be the interval (α,β). Then αβ is equal to",
+          "options": {
+            "1": "25",
+            "2": "20",
+            "3": "21",
+            "4": "24"
+          },
+          "answer": "25",
+          "solution": "Second circle: (x-2)^2+(y-1)^2=9 (center (2,1), radius 3). |r-3| < √34 < r+3, giving r ∈ (√34-3, √34+3). αβ = (√34-3)(√34+3) = 34-9 = 25."
+        },
+        {
+          "number": 13,
+          "type": "MCQ",
+          "question": "If A = [[2,3],[3,5]], then the determinant of the matrix (A^2025 - 3A^2024 + A^2023) is",
+          "options": {
+            "1": "28",
+            "2": "12",
+            "3": "24",
+            "4": "16"
+          },
+          "answer": "16",
+          "solution": "A^2 = [[13,21],[21,34]]. |A^2025-3A^2024+A^2023| = |A|^2023 |A^2-3A+I|. |A|=1. A^2-3A+I = [[8,12],[12,20]], determinant = 160-144=16."
+        },
+        {
+          "number": 14,
+          "type": "MCQ",
+          "question": "If the domain of f(x) = sin^-1((5-x)/(3+2x)) + 1/log_e(10-x) is (-∞,α] ∪ [β,γ) - {δ}, then 6(α+β+γ+δ) is equal to",
+          "options": {
+            "1": "70",
+            "2": "66",
+            "3": "67",
+            "4": "68"
+          },
+          "answer": "70",
+          "solution": "Conditions: -1≤(5-x)/(2x+3)≤1, x<10, x≠9. Solving gives x ≤ -8 or x ≥ 2/3, combined with x<10, x≠9: (-∞,-8] ∪ [2/3,10) - {9}. 6(-8+2/3+10+9) = 6(11.667) = 70."
+        },
+        {
+          "number": 15,
+          "type": "MCQ",
+          "question": "The value of ∫(-π/2 to π/2) 1/([x]+4) dx, where [.] denotes the greatest integer function, is",
+          "options": {
+            "1": "(21π-1)/60",
+            "2": "(π-7)/60",
+            "3": "7(3π-1)/60",
+            "4": "7(π-3)/60"
+          },
+          "answer": "7(3π-1)/60",
+          "solution": "Split integral over intervals where [x] is constant: I = ∫(-π/2 to -1) dx/2 + ∫(-1 to 0) dx/3 + ∫(0 to 1) dx/4 + ∫(1 to π/2) dx/5 = 7π/20 - 7/60 = 7(3π-1)/60."
+        },
+        {
+          "number": 16,
+          "type": "MCQ",
+          "question": "The coefficient of x^48 in (1+x) + 2(1+x)^2 + 3(1+x)^3 + ... + 100(1+x)^100 is equal to",
+          "options": {
+            "1": "100.100C49 - 100C50",
+            "2": "100C50 + 101C49",
+            "3": "100.100C49 - 100C48",
+            "4": "100.101C49 - 101C50"
+          },
+          "answer": "100.101C49 - 101C50",
+          "solution": "Let 1+x=r. S = sum k r^k for k=1 to 100. Using S - rS trick: S = -(1+x)^101/x^2 + (x+1)/x^2 + 100(1+x)^101/x. Coefficient of x^48 in S = 100.101C49 - 101C50."
+        },
+        {
+          "number": 17,
+          "type": "MCQ",
+          "question": "If the chord joining the points P1(x1,y1) and P2(x2,y2) on the parabola y^2=12x subtends a right angle at the vertex of the parabola, then x1x2 - y1y2 is equal to",
+          "options": {
+            "1": "288",
+            "2": "280",
+            "3": "284",
+            "4": "292"
+          },
+          "answer": "288",
+          "solution": "Using parametric points (3t1^2,6t1),(3t2^2,6t2), condition gives t1t2=-4. x1x2 - y1y2 = 9(t1t2)^2 - 36 t1t2 = 9(16)-36(-4) = 144+144 = 288."
+        },
+        {
+          "number": 18,
+          "type": "MCQ",
+          "question": "The number of solutions of tan^-1(4x) + tan^-1(6x) = π/6, where -1/(2√6) < x < 1/(2√6), is equal to",
+          "options": {
+            "1": "3",
+            "2": "0",
+            "3": "1",
+            "4": "2"
+          },
+          "answer": "1",
+          "solution": "tan^-1((4x+6x)/(1-24x^2)) = π/6 gives 10x/(1-24x^2) = 1/√3, leading to 24x^2+10√3x-1=0. Only one root lies in the given interval."
+        },
+        {
+          "number": 19,
+          "type": "MCQ",
+          "question": "Let the solution curve of the differential equation x dy - y dx = √(x^2+y^2) dx, x>0, y(1)=0, be y=y(x). Then y(3) is equal to",
+          "options": {
+            "1": "4",
+            "2": "6",
+            "3": "1",
+            "4": "2"
+          },
+          "answer": "4",
+          "solution": "d(y/x) = √(1+(y/x)^2) (1/x) dx leads to ln(y/x + √(1+(y/x)^2)) = ln(kx). Using y(1)=0 gives k=1, so y+√(x^2+y^2)=x^2. At x=3: y+√(9+y^2)=9 gives y=4."
+        },
+        {
+          "number": 20,
+          "type": "MCQ",
+          "question": "If the sum of the first four terms of an A.P. is 6 and the sum of its first six terms is 4, then the sum of its first twelve terms is",
+          "options": {
+            "1": "-20",
+            "2": "-24",
+            "3": "-26",
+            "4": "-22"
+          },
+          "answer": "-22",
+          "solution": "S4=6 gives 2a+3d=3. S6=4 gives 2a+5d=4/3. Solving, d=-5/6, a=11/4. S12 = 6(2a+11d) = 6(22/4 - 55/6) = -22."
+        },
+        {
+          "number": 21,
+          "type": "Numerical",
+          "question": "Let α = (-1+i√3)/2 and β = (-1-i√3)/2, i=√-1. If (7-7α+9β)^20 + (9+7α-7β)^20 + (-7+9α+7β)^20 + (14+7α+7β)^20 = m^10, then m is ____.",
+          "options": null,
+          "answer": "49",
+          "solution": "Using α=ω, β=ω^2 (cube roots of unity), simplifying each term shows most vanish and the equation reduces to 7^20 = m^10, giving m = 7^2 = 49."
+        },
+        {
+          "number": 22,
+          "type": "Numerical",
+          "question": "Let A be a 3×3 matrix such that A+A^T=O. If A[1,-1,0]^T=[3,3,2]^T, A^2[1,-1,0]^T=[-3,19,-24]^T, and det(adj(2adj(A+I))) = 2^α · 3^β · 11^γ, α,β,γ non-negative integers, then α+β+γ is equal to ____.",
+          "options": null,
+          "answer": "18",
+          "solution": "Since A is skew-symmetric, A = [[0,a,b],[-a,0,c],[-b,-c,0]]. Using given vector equations: a=-3,b=3,c=5. |A+I| = 44 = 2^2·11. det(adj(2adj(A+I))) = 64|A+I|^4 = 2^6 · (2^2·11)^4 = 2^14·11^4, giving α=14,β=0,γ=4, so α+β+γ=18."
+        },
+        {
+          "number": 23,
+          "type": "Numerical",
+          "question": "If ∫(sinx)^(-11/2)(cosx)^(-5/2) dx = -(p1/q1)(cotx)^(9/2) - (p2/q2)(cotx)^(5/2) - (p3/q3)(cotx)^(1/2) + (p4/q4)(cotx)^(-3/2) + C, where pi,qi are coprime positive integers, then 15p1p2p3p4/(q1q2q3q4) is equal to ____.",
+          "options": null,
+          "answer": "16",
+          "solution": "Rewriting integrand as (tanx)^(-11/2) sec^8x dx and substituting t=tanx gives the antiderivative -(2/9)(cotx)^(9/2) - (6/5)(cotx)^(5/2) - 6(cotx)^(1/2) + (2/3)(cotx)^(-3/2) + C. So p1=2,q1=9; p2=6,q2=5; p3=6,q3=1; p4=2,q4=3. 15p1p2p3p4/(q1q2q3q4) = 15·2·6·6·2/(9·5·1·3) = 16."
+        },
+        {
+          "number": 24,
+          "type": "Numerical",
+          "question": "If (cos^2 48° - sin^2 12°)/(sin^2 24° - sin^2 6°) = (α+β√5)/2, where α,β ∈ N, then α+β is equal to ____.",
+          "options": null,
+          "answer": "4",
+          "solution": "Using cos(A+B)cos(A-B)=cos^2A-sin^2B and sin(A+B)sin(A-B)=sin^2A-sin^2B: expression = cos60°cos36°/(sin30°sin18°) = (3+√5)/2. So α=3,β=1, α+β=4."
+        },
+        {
+          "number": 25,
+          "type": "Numerical",
+          "question": "Let ABC be a triangle with 4 points p1,p2,p3,p4 on side AB, 5 points p5,...,p9 on side BC, and 4 points p10,...,p13 on side AC. None of these is a vertex of the triangle. The total number of pentagons formed by taking all vertices from p1,...,p13 is ____.",
+          "options": null,
+          "answer": "660",
+          "solution": "Considering possible distributions of 5 vertices among the 3 sides (2,2,1),(2,1,2),(1,2,2): Case1: C(4,2)C(5,2)C(4,1)=240; Case2: C(4,2)C(5,1)C(4,2)=180; Case3: C(4,1)C(5,2)C(4,2)=240. Total = 240+180+240 = 660."
+        }
+      ]
+    }
+  }
+}

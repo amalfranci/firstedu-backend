@@ -1,0 +1,307 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "source": "Career Point - Questions & Solutions",
+  "date": "22nd January 2026",
+  "shift": "Evening",
+  "sections": {
+    "Mathematics": {
+      "questions": [
+        {
+          "number": 1,
+          "type": "MCQ",
+          "question": "Let n be the number obtained on rolling a fair die. If the probability that the system x - ny + z = 6; x + (n-2)y + (n+1)z = 8; (n-1)y + z = 1 has a unique solution is k/6, then the sum of k and all possible values of n is:",
+          "options": [
+            "21",
+            "24",
+            "20",
+            "22"
+          ],
+          "answer": "22",
+          "solution": "Determinant ≠ 0 gives n² - 3n + 2 ≠ 0 ⇒ n ≠ 1,2. So unique solution for n = 3,4,5,6, giving P = 4/6, so k = 4. Required sum = 4 + (3+4+5+6) = 22."
+        },
+        {
+          "number": 2,
+          "type": "MCQ",
+          "question": "If the mean deviation about the median of the numbers k, 2k, 3k, ..., 1000k is 500, then k² is equal to:",
+          "options": [
+            "16",
+            "4",
+            "1",
+            "9"
+          ],
+          "answer": "4",
+          "solution": "Median = 1001k/2. Mean deviation about median = 500k/2 = 500 ⇒ k = 2 ⇒ k² = 4."
+        },
+        {
+          "number": 3,
+          "type": "MCQ",
+          "question": "The number of elements in the relation R = {(x,y) : 4x² + y² < 52, x,y ∈ Z} is",
+          "options": [
+            "77",
+            "89",
+            "67",
+            "86"
+          ],
+          "answer": "77",
+          "solution": "Counting integer pairs for x = 0,±1,±2,±3 gives 15+26+22+14 = 77."
+        },
+        {
+          "number": 4,
+          "type": "MCQ",
+          "question": "Let S = {z ∈ C : 4z² + z̄ = 0}. Then Σ_{z∈S} |z|² is equal to:",
+          "options": [
+            "3/16",
+            "7/64",
+            "1/16",
+            "5/64"
+          ],
+          "answer": "3/16",
+          "solution": "Solving 4x²-4y²+x=0 and y(8x-1)=0 gives z₁=0, z₂=-1/4, z₃,z₄ = 1/8 ± (√3/8)i. Sum of |z|² = 0 + 1/16 + 1/16 + 1/16 = 3/16."
+        },
+        {
+          "number": 5,
+          "type": "MCQ",
+          "question": "If lim(x→0) [e^((a-1)x) + 2cos(bx) + (c-2)e^(-x)] / [x cos x - log_e(1+x)] = 2, then a² + b² + c² is equal to:",
+          "options": [
+            "5",
+            "3",
+            "7",
+            "9"
+          ],
+          "answer": "7",
+          "solution": "Expanding series and matching coefficients: c = -1, a = -2, b² = 2. So a² + b² + c² = 4 + 2 + 1 = 7."
+        },
+        {
+          "number": 6,
+          "type": "MCQ",
+          "question": "If y = y(x) satisfies the given differential equation involving 16(√(x+9√x))(4+√(9+√x)) cos y dy = (1+2sin y)dx, x>0, and y(256) = π/2, y(49) = α, then 2 sin α is equal to:",
+          "options": [
+            "2√2 - 1",
+            "2(√2-1)",
+            "3(√2-1)",
+            "√2 - 1"
+          ],
+          "answer": "Dropped by JEE (equation printed incorrectly; correct form gives 2sinα = 2√2 - 1)",
+          "solution": "Provided equation as printed is incorrect (√(x·√x + 9x) should replace √(x+9√x)); question dropped by JEE. With corrected equation, solving gives 2sinα + 1 = 2√2, so 2sinα = 2√2 - 1."
+        },
+        {
+          "number": 7,
+          "type": "MCQ",
+          "question": "Among the statements — (S1): If A(5,-1) and B(-2,3) are two vertices of a triangle whose orthocentre is (0,0), then its third vertex is (-4,-7). (S2): If positive numbers 2a, b, c are three consecutive terms of an A.P., then the lines ax+by+c=0 are concurrent at (2,-2).",
+          "options": [
+            "Only (S1) is correct",
+            "Only (S2) is correct",
+            "Both are incorrect",
+            "Both are correct"
+          ],
+          "answer": "Both are correct",
+          "solution": "Statement 1: using orthocentre perpendicularity conditions, third vertex = (-4,-7) — correct. Statement 2: 2a-2b+c=0 matches line family through (2,-2) — correct."
+        },
+        {
+          "number": 8,
+          "type": "MCQ",
+          "question": "Let a = 2î - ĵ + k̂ and b = λĵ + 2k̂, λ ∈ Z be two vectors. Let c = a × b and d be a vector of magnitude 2 in yz-plane. If |c| = √53, then the maximum possible value of (c·d)² is equal to:",
+          "options": [
+            "26",
+            "104",
+            "208",
+            "52"
+          ],
+          "answer": "208",
+          "solution": "Solving 5λ²+4λ-33=0 gives λ=-3 (integer), c = î - 4ĵ - 6k̂. Maximizing (4y+6z)² with y²+z²=4 gives max = (4²+6²)(y²+z²) = 52×4 = 208."
+        },
+        {
+          "number": 9,
+          "type": "MCQ",
+          "question": "If X = [X,Y,Z]^T is a solution of the system of equations AX=B, where adj A = [[4,2,2],[-5,0,5],[1,-2,3]] and B = [4,0,2]^T, then |x+y+z| is equal to:",
+          "options": [
+            "3",
+            "3/2",
+            "1",
+            "2"
+          ],
+          "answer": "2",
+          "solution": "X = A⁻¹B = ±(adjA/|A|)B = ±(2,-1,1). So |x+y+z| = 2."
+        },
+        {
+          "number": 10,
+          "type": "MCQ",
+          "question": "Let L be the line (x+1)/2 = (y+1)/3 = (z+3)/6 and let S be the set of all points (a,b,c) on L, whose distance from the line (x+1)/2 = (y+1)/3 = (z-9)/0 along the line L is 7. Then Σ(a,b,c)∈S (a+b+c) is equal to:",
+          "options": [
+            "34",
+            "28",
+            "40",
+            "6"
+          ],
+          "answer": "34",
+          "solution": "Intersection point M(3,5,9). Solving PM=7 gives K=1,3, points (1,2,3) and (5,8,15); sum of all coordinates = 34."
+        },
+        {
+          "number": 11,
+          "type": "MCQ",
+          "question": "Let P(10, 2√15) be a point on the hyperbola x²/a² - y²/b² = 1, whose foci are S and S'. If the length of its latus rectum is 8, then the square of the area of ΔPSS' is equal to:",
+          "options": [
+            "4200",
+            "900",
+            "1462",
+            "2700"
+          ],
+          "answer": "2700",
+          "solution": "Using the point on hyperbola and latus rectum = 8, solve for a=5, b²=20; hyperbola x²/25 - y²/20 = 1. Focal length SS' = 6√5. Area = 30√3, so square of area = 2700."
+        },
+        {
+          "number": 12,
+          "type": "MCQ",
+          "question": "The area of the region A = {(x,y) : 4x²+y² ≤ 8 and y² ≤ 4x} is:",
+          "options": [
+            "π/2 + 2",
+            "π + 2/3",
+            "π + 4",
+            "π/2 + 1/3"
+          ],
+          "answer": "π + 2/3",
+          "solution": "Integrating the two curves' bounded region gives area = π + 2/3 sq units."
+        },
+        {
+          "number": 13,
+          "type": "MCQ",
+          "question": "Let α, β be the roots of the quadratic equation 12x² - 20x + 3λ = 0, λ ∈ Z. If 1/2 ≤ |β-α| ≤ 3/2, then the sum of all possible values of λ is:",
+          "options": [
+            "6",
+            "1",
+            "3",
+            "4"
+          ],
+          "answer": "3",
+          "solution": "Using (α+β)² - 4αβ bounds gives 19/36 ≤ λ ≤ 91/36, so λ = 1,2; sum = 3."
+        },
+        {
+          "number": 14,
+          "type": "MCQ",
+          "question": "Let the domain of the function f(x) = log₃log₅(7 - log₂(x²-10x+85)) + sin⁻¹(|3x-7|/|17-x|) be (α, β]. Then α+β is equal to:",
+          "options": [
+            "10",
+            "12",
+            "9",
+            "8"
+          ],
+          "answer": "9",
+          "solution": "Domain from first term: x ∈ (3,7); from second term: x ∈ [-5,6]. Combined domain: (3,6]. α=3, β=6, α+β=9."
+        },
+        {
+          "number": 15,
+          "type": "MCQ",
+          "question": "Let [•] denote the greatest integer function, and let f(x) = min{√2x, x²}. Let S = {x ∈ (-2,2) : the function g(x) = |x|[x²] is discontinuous at x}. Then Σ_{x∈S} f(x) equals:",
+          "options": [
+            "2-√2",
+            "2√6-3√2",
+            "1-√2",
+            "√6-2√2"
+          ],
+          "answer": "1-√2",
+          "solution": "Points of discontinuity: S = {-1,1,-√2,√2,-√3,√3}. Sum of f(x) over S = -√2+1-2+2-√6+√6 = 1-√2."
+        },
+        {
+          "number": 16,
+          "type": "MCQ",
+          "question": "Let S and S' be the foci of the ellipse x²/25 + y²/9 = 1 and P(α,β) be a point on the ellipse in the first quadrant. If (SP)² + (S'P)² - SP·S'P = 37, then α²+β² is equal to:",
+          "options": [
+            "15",
+            "11",
+            "17",
+            "13"
+          ],
+          "answer": "13",
+          "solution": "PS+PS'=10; using (PS+PS')²-3PS·PS'=37 gives PS·PS'=21, leading to α²=25/4, β²=27/4, so α²+β²=13."
+        },
+        {
+          "number": 17,
+          "type": "MCQ",
+          "question": "Let the locus of the mid-point of the chord through the origin O of the parabola y²=4x be the curve S. Let P be any point on S. Then the locus of the point, which internally divides OP in the ratio 3:1, is:",
+          "options": [
+            "3y²=2x",
+            "2y²=3x",
+            "3x²=2y",
+            "2x²=3y"
+          ],
+          "answer": "2y²=3x",
+          "solution": "Locus of midpoint of chord: y²=2x (curve S). Locus of point dividing OP in ratio 3:1 gives 2y²=3x."
+        },
+        {
+          "number": 18,
+          "type": "MCQ",
+          "question": "Let f(x) = [x]² - [x+3] - 3, x ∈ R, where [•] is the greatest integer function. Then:",
+          "options": [
+            "f(x)>0 only for x∈[4,∞)",
+            "f(x)<0 only for x∈[-1,3)",
+            "∫₀² f(x)dx = -6",
+            "f(x)=0 for finitely many values of x"
+          ],
+          "answer": "f(x)<0 only for x∈[-1,3)",
+          "solution": "f(x) = ([x]+2)([x]-3). f(x)<0 ⇒ [x]∈(-2,3) ⇒ x∈[-1,3). ∫₀²f(x)dx = -12 (not -6). f(x)=0 for infinitely many x."
+        },
+        {
+          "number": 19,
+          "type": "MCQ",
+          "question": "Let f and g be functions satisfying f(x+y)=f(x)f(y), f(1)=7 and g(x+y)=g(xy), g(1)=1, for all x,y∈N. If Σ_{x=1}^{n} f(x)/g(x) = 19607, then n is equal to:",
+          "options": [
+            "7",
+            "5",
+            "6",
+            "4"
+          ],
+          "answer": "5",
+          "solution": "f(x)=7^x, g(x)=1 for all x. Σ7^x = 19607 gives 7^n = 16807, so n=5."
+        },
+        {
+          "number": 20,
+          "type": "MCQ",
+          "question": "Let Cr denote the coefficient of x^r in the binomial expansion of (1+x)^n. If Pn = C0 - C1 + (2²/3)C2 - (2³/4)C3 + ... + ((-2)^n/(n+1))Cn, then the value of Σ_{n=1}^{25} 1/P_{2n} equals.",
+          "options": [
+            "580",
+            "525",
+            "650",
+            "675"
+          ],
+          "answer": "675",
+          "solution": "Pn simplifies to (1-(-1)^(n+1))/(2(n+1)), giving P_{2n} = 1/(2n+1). Σ(2n+1) for n=1 to 25 = 3+5+...+51 = 25×27 = 675."
+        },
+        {
+          "number": 21,
+          "type": "Numerical",
+          "question": "Let a vector a = √2 î - ĵ + λk̂, λ>0, make an obtuse angle with the vector b = -λ²î + 4√2ĵ + 4√2k̂ and an angle θ, π/6<θ<π/2, with the positive z-axis. If the set of all possible values of λ is (α,β) - {γ}, then α+β+γ is equal to ____.",
+          "answer": "5",
+          "solution": "From angle condition λ∈(0,3); from obtuse angle condition λ≠2. So λ∈(0,3)-{2}, giving α=0, β=3, γ=2, α+β+γ=5."
+        },
+        {
+          "number": 22,
+          "type": "Numerical",
+          "question": "Let [•] be the greatest integer function. If α = ∫₀⁶⁴ (x^(1/3) - [x^(1/3)]) dx, then (1/π)∫₀^{απ} sin²θ/(sin⁶θ+cos⁶θ) dθ is equal to ____.",
+          "answer": "36",
+          "solution": "∫₀⁶⁴x^(1/3)dx=192, ∫₀⁶⁴[x^(1/3)]dx=156, so α=36. Evaluating the trigonometric integral gives J=π/2, and final expression E=36."
+        },
+        {
+          "number": 23,
+          "type": "Numerical",
+          "question": "Let cos(α+β) = -1/10 and sin(α-β) = 3/8, where 0<α<π/3 and 0<β<π/4. If tan2α = 3(1-r√5)/[√11(s+√5)], r,s∈N, then r+s is equal to ____.",
+          "answer": "20",
+          "solution": "Using tan2α = tan[(α+β)+(α-β)] and computing tan(α+β), tan(α-β), simplifying gives tan2α = 3(1-11√5)/[√11(9+√5)]. So r=11, s=9, r+s=20."
+        },
+        {
+          "number": 24,
+          "type": "Numerical",
+          "question": "Suppose a,b,c are in A.P. and a², 2b², c² are in G.P. If a<b<c and a+b+c=1, then 9(a²+b²+c²) is equal to ____.",
+          "answer": "9",
+          "solution": "b=1/3, and solving 4b⁴=a²c² gives d²=1/3, d=1/√3 (since a<b<c). Then 9(a²+b²+c²) = 9[1/3+2/3] = 9."
+        },
+        {
+          "number": 25,
+          "type": "Numerical",
+          "question": "Let S be the set of the first 11 natural numbers. Then the number of elements in A = {B⊆S : n(B)≥2 and the product of all elements of B is even} is ____.",
+          "answer": "1979",
+          "solution": "Total subsets = 2¹¹ = 2048. Subtract subsets with only odd elements (2⁶=64, includes null set) and subsets with exactly one element that is even (5). Answer = 2048-64-5 = 1979."
+        }
+      ]
+    }
+  }
+}

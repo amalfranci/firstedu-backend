@@ -1,0 +1,312 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "provider": "CAREER POINT",
+  "date": "22nd January 2026",
+  "session": "Morning",
+  "sections": {
+    "Physics": {
+      "questions": [
+        {
+          "number": 26,
+          "type": "MCQ",
+          "question": "A solid sphere of mass 5 kg and radius 10 cm is kept in contact with another solid sphere of mass 10 kg and radius 20 cm. The moment of inertia of this pair of spheres about the tangent passing through the point of contact is ____ kg.m^2.",
+          "options": {
+            "1": "0.36",
+            "2": "0.72",
+            "3": "0.18",
+            "4": "0.63"
+          },
+          "answer": "0.63",
+          "solution": "I = (7/5)[m1R1^2 + m2R2^2] = (7/5)[5(10)^2+10(20)^2]×10^-4 = 63×10^-2 = 0.63 kg.m^2."
+        },
+        {
+          "number": 27,
+          "type": "MCQ",
+          "question": "7.9 MeV alpha-particle scatters from a target material of atomic number 79. From the given data the estimated diameter of nuclei of the target material is (approximately) ____ m. [1/4πε0 = 9×10^9 Nm^2/C^2, e = 1.6×10^-19 C]",
+          "options": {
+            "1": "5.76×10^-14",
+            "2": "1.44×10^-13",
+            "3": "2.88×10^-14",
+            "4": "1.69×10^-12"
+          },
+          "answer": "5.76×10^-14",
+          "solution": "By energy conservation: 7.9×10^6×1.6×10^-19 = k(2e)(Ze)/r. Solving r = 2.88×10^-14 m. Diameter D=2r=5.76×10^-14 m."
+        },
+        {
+          "number": 28,
+          "type": "MCQ",
+          "question": "Six point charges are kept 60° apart from each other on the circumference of a circle of radius R (arrangement as shown, with charges +Q,-Q,+Q,+Q,-Q,+Q at alternating consecutive positions per figure). The net electric field at the centre of the circle is ____ (ε0 is permittivity of free space).",
+          "options": {
+            "1": "-5Q/(8πε0R^2)(i+√3j)",
+            "2": "-Q/(4πε0R^2)(√3i-j)",
+            "3": "-(5Q/8πε0R^2)(i-3j)",
+            "4": "Q/(4πε0R^2)(√3i-j)"
+          },
+          "answer": "-Q/(4πε0R^2) (√3 i - j)",
+          "solution": "Let KQ/r^2=E0. Resolving components of unpaired charges: E_net = 2E0cos30°(-i)+2E0sin30°(j) = (2kQ/r^2)[(√3/2)(-i)+(1/2)(j)] = -Q/(4πε0r^2)(√3 i - j)."
+        },
+        {
+          "number": 29,
+          "type": "MCQ",
+          "question": "XPQY is a vertical smooth long loop of total resistance R where PX is parallel to QY, separation l. A constant magnetic field B perpendicular to the loop's plane exists in the entire space. A rod CD of length L (L>l) and mass m slides down from rest under gravity. The terminal speed acquired by the rod is ____ m/s (g = acceleration due to gravity).",
+          "options": {
+            "1": "2mgR/(B^2 l^2)",
+            "2": "8mgR/(B^2 l^2)",
+            "3": "2mgR/(B^2 L^2)",
+            "4": "mgR/(B^2 l^2)"
+          },
+          "answer": "mgR/(B^2 l^2)",
+          "solution": "At terminal velocity, mg = iBl = (Bvl/R)Bl, giving v = mgR/(B^2 l^2)."
+        },
+        {
+          "number": 30,
+          "type": "MCQ",
+          "question": "The escape velocity from a spherical planet A is 10 km/s. The escape velocity from another planet B whose density and radius are 10% of those of planet A is ____ m/s.",
+          "options": {
+            "1": "1000",
+            "2": "200√5",
+            "3": "100√10",
+            "4": "1000√2"
+          },
+          "answer": "100√10",
+          "solution": "Ve = √(2GM/R) ∝ √ρ×R. (Ve)B/(Ve)A = √(0.1)×0.1 = 1/(10√10). (Ve)B = 10000/(10√10) = 100√10 m/s."
+        },
+        {
+          "number": 31,
+          "type": "MCQ",
+          "question": "A meter bridge with two resistances R1 and R2 was balanced (null point) at 40 cm from point P. The null point changed to 50 cm from P when 16Ω resistance is connected in parallel to R2. The values of R1 and R2 are ____.",
+          "options": {
+            "1": "R2=16Ω, R1=16/3Ω",
+            "2": "R2=4Ω, R1=4/3Ω",
+            "3": "R2=8Ω, R1=16/3Ω",
+            "4": "R2=12Ω, R1=12/3Ω"
+          },
+          "answer": "R2 = 8Ω, R1 = 16/3 Ω",
+          "solution": "R1/R2 = 40/60 = 2/3. After parallel combination: R1/(R2×16/(R2+16)) = 50/50, giving R1 = 16R2/(16+R2). Solving simultaneously gives R2=8Ω, R1=16/3 Ω."
+        },
+        {
+          "number": 32,
+          "type": "MCQ",
+          "question": "A projectile is thrown upward at an angle 60° with the horizontal. The speed of the projectile is 20 m/s when its direction of motion is 45° with the horizontal. The initial speed of the projectile is ____ m/s.",
+          "options": {
+            "1": "40√2",
+            "2": "40",
+            "3": "20√3",
+            "4": "20√2"
+          },
+          "answer": "20√2",
+          "solution": "Horizontal component conserved: u cos60° = 20/√2 (since vcos45°=20/√2). u/2 = 20/√2, u = 40/√2 = 20√2 m/s."
+        },
+        {
+          "number": 33,
+          "type": "MCQ",
+          "question": "Statement I: Pressure of fluid is exerted only on a solid surface in contact as fluid-pressure does not exist everywhere in a still fluid. Statement II: Excess potential energy of molecules on the surface of a liquid, compared to interior, results in surface tension. Choose the correct answer.",
+          "options": {
+            "1": "Statement I true, II false",
+            "2": "Both false",
+            "3": "Both true",
+            "4": "Statement I false, II true"
+          },
+          "answer": "Statement I is false but Statement II is true",
+          "solution": "By Pascal's law, pressure exists at every point in the liquid, not just at boundaries, so Statement I is false. Statement II correctly describes surface tension, so it is true."
+        },
+        {
+          "number": 34,
+          "type": "MCQ",
+          "question": "Find the correct combination of A, B, C and D inputs (logic gate circuit with NOR gates feeding a NAND gate to node P, and an XOR gate of C,D feeding node Q, driving an LED) which can cause the LED to glow.",
+          "options": {
+            "1": "0100",
+            "2": "0011",
+            "3": "1000",
+            "4": "1101"
+          },
+          "answer": "1101",
+          "solution": "LED glows in forward biasing: P must be at higher potential (1), Q at lower potential (0). Checking combination A=1,B=1,C=0,D=1 satisfies P=1, Q=0."
+        },
+        {
+          "number": 35,
+          "type": "MCQ",
+          "question": "Net gravitational force at the centre of a square is F1 when four particles of mass M,2M,3M,4M are placed at the corners as shown, and F2 when positions of 3M and 4M are interchanged. The ratio F1/F2 = α/√5. The value of α is ____.",
+          "options": {
+            "1": "2",
+            "2": "3",
+            "3": "1",
+            "4": "2√5"
+          },
+          "answer": "2",
+          "solution": "Initial configuration gives F1 = 2√2(Gmm0/r^2). New configuration gives F2 = √10(Gmm0/r^2). F1/F2 = 2√2/√10 = 2/√5, so α=2."
+        },
+        {
+          "number": 36,
+          "type": "MCQ",
+          "question": "The minimum frequency of photon required to break a particle of mass 15.348 amu into 4 alpha particles is ____ kHz. [mass of He nucleus = 4.002 amu, 1amu=1.66×10^-27 kg, h=6.6×10^-34 J.s, c=3×10^8 m/s]",
+          "options": {
+            "1": "9×10^19",
+            "2": "9×10^20",
+            "3": "14.94×10^20",
+            "4": "14.94×10^19"
+          },
+          "answer": "14.94×10^19",
+          "solution": "hν = (4×4.002 - 15.348)×1.66×10^-27×(3×10^8)^2. Solving ν = 14.94×10^19 kHz."
+        },
+        {
+          "number": 37,
+          "type": "MCQ",
+          "question": "A cylindrical tube AB of length l, closed at both ends, contains an ideal gas of 1 mol with molecular weight M. The tube is rotated in a horizontal plane with constant angular velocity ω about an axis perpendicular to AB passing through edge A. If PA and PB are pressures at A and B (temperature same throughout), then",
+          "options": {
+            "1": "PB=PA exp(Mω^2l^2/2RT)",
+            "2": "PB=PA",
+            "3": "PB=PA exp(Mω^2l^2/3RT)",
+            "4": "PB=PA exp(Mω^2l^2/RT)"
+          },
+          "answer": "PB = PA exp(Mω^2 l^2 / 2RT)",
+          "solution": "Force balance on a fluid element gives dP = (PM/RT)ω^2 x dx. Integrating from A to B: ln(PB/PA) = Mω^2l^2/(2RT), so PB = PA e^(Mω^2l^2/2RT)."
+        },
+        {
+          "number": 38,
+          "type": "MCQ",
+          "question": "Rods x and y of equal dimensions but different materials are joined in a diamond-bridge configuration (A-B-C-D-E-F with x and y rods). Temperatures of end points A and F are maintained at 100°C and 40°C. Thermal conductivity of rod x is three times that of rod y. The temperatures at junction points B and E are (close to):",
+          "options": {
+            "1": "89°C and 73°C",
+            "2": "80°C and 60°C",
+            "3": "80°C and 70°C",
+            "4": "60°C and 45°C"
+          },
+          "answer": "89°C and 73°C respectively",
+          "solution": "Using thermal resistance R=l/(3KA) for rod x and corresponding relations, solving the network equations gives 120=1100-11TA type relation, leading to TB=89°C and TE=73°C."
+        },
+        {
+          "number": 39,
+          "type": "MCQ",
+          "question": "A thin convex lens of focal length 5 cm and a thin concave lens of focal length 4 cm are combined together (without gap), giving magnification m1 for an object 10 cm before the convex lens. A gap of 1 cm is then introduced between the lenses by moving the concave lens away, changing magnification to m2. Find |m1/m2|.",
+          "options": {
+            "1": "5/9",
+            "2": "5/27",
+            "3": "3/2",
+            "4": "25/27"
+          },
+          "answer": "Dropped by JEE (none of the given options correct)",
+          "solution": "Initial combined lens: 1/f = 1/5-1/4 = -1/20, f=-20cm; with u=-10cm, v=uf/(u+f)=+20/3, m1=v/u=+2/3. New configuration (gap=1cm): 1st refraction (convex, f=5,u=-10) gives v=+10cm, m=-1; 2nd refraction (concave,f=-4,u=+9) gives m'=-4/5; m2=mm'=4/5. m1/m2 = (2/3)/(4/5) = 5/6. This does not match any given option, so the question was dropped by JEE."
+        },
+        {
+          "number": 40,
+          "type": "MCQ",
+          "question": "Consider an equilateral prism (refractive index √2). A ray of light is incident on its one surface at a certain angle i. If the emergent ray is found to graze along the other surface then the angle of refraction at the incident surface is close to",
+          "options": {
+            "1": "15°",
+            "2": "20°",
+            "3": "40°",
+            "4": "30°"
+          },
+          "answer": "15°",
+          "solution": "For grazing emergence, e=90°. μ sin(r2) = sin(e) = 1, giving sin(r2)=1/√2, r2=45°. Since A=60°, r1=A-r2=15°."
+        },
+        {
+          "number": 41,
+          "type": "MCQ",
+          "question": "The volume of an ideal gas increases 8 times and temperature becomes 1/4th of the initial temperature during a reversible adiabatic change. Identify the gas.",
+          "options": {
+            "1": "CO2",
+            "2": "O2",
+            "3": "NH3",
+            "4": "He"
+          },
+          "answer": "He",
+          "solution": "TV^(γ-1)=constant gives 4 = 8^(γ-1), so 2^2=2^(3γ-3), giving γ=5/3, which corresponds to a monoatomic gas, i.e. He."
+        },
+        {
+          "number": 42,
+          "type": "MCQ",
+          "question": "Electric field in a region is given by E = Ax i + By j, where A=10 V/m^2 and B=5 V/m^2. If the electric potential at point (10,20) is 500 V, then the electric potential at origin is ____ V.",
+          "options": {
+            "1": "1000",
+            "2": "500",
+            "3": "2000",
+            "4": "0"
+          },
+          "answer": "2000",
+          "solution": "ΔV = -∫E·dr. Integrating gives 500-V0 = -[5x^2+5y^2/2] from (0,0) to (10,20) = -(500+1000). So V0-500=1500, V0=2000 V."
+        },
+        {
+          "number": 43,
+          "type": "MCQ",
+          "question": "A simple pendulum has a bob with mass m and charge q. When a uniform horizontal electric field E is applied, the tension in the string changes. The final tension in the string at equilibrium is ____.",
+          "options": {
+            "1": "mg-qE",
+            "2": "mg+qE",
+            "3": "√(m^2g^2+q^2E^2)",
+            "4": "√(m^2g^2-q^2E^2)"
+          },
+          "answer": "√(m^2g^2 + q^2E^2)",
+          "solution": "At equilibrium, tension balances resultant of mg (vertical) and qE (horizontal): T = √((qE)^2+(mg)^2)."
+        },
+        {
+          "number": 44,
+          "type": "MCQ",
+          "question": "Match List-I (Spring constant, Thermal conductivity, Boltzmann constant, Inductive reactance) with List-II dimensional formulas.",
+          "options": {
+            "1": "A-II,B-I,C-IV,D-III",
+            "2": "A-I,B-IV,C-II,D-III",
+            "3": "A-III,B-II,C-IV,D-I",
+            "4": "A-II,B-IV,C-I,D-III"
+          },
+          "answer": "A-II, B-IV, C-I, D-III",
+          "solution": "Spring constant: [K]=ML^0T^-2 (II). Thermal conductivity: [K]=MLT^-3K^-1 (IV). Boltzmann constant: [K]=ML^2T^-2K^-1 (I). Inductive reactance: [V]/[I]=ML^2T^-3A^-2 (III)."
+        },
+        {
+          "number": 45,
+          "type": "MCQ",
+          "question": "Three identical coils C1, C2, C3 share a common axis, C2 exactly midway. C1 carries current I anti-clockwise, C3 carries current I clockwise. An induced current flows through C2 in clockwise direction when",
+          "options": {
+            "1": "C1 and C3 move away from C2 with equal speeds",
+            "2": "C1 moves towards C2, C3 moves away from C2",
+            "3": "C1 moves away from C2, C3 moves towards C2",
+            "4": "C1 and C3 move towards C2 with equal speeds"
+          },
+          "answer": "C1 moves towards C2 and C3 moves away from C2",
+          "solution": "Flux through C2 depends on (B_C2-B_C1) type relation; applying Lenz's law to determine the direction for the given motion condition, moving C1 towards C2 and C3 away from C2 produces the specified clockwise induced current."
+        },
+        {
+          "number": 46,
+          "type": "Numerical",
+          "question": "Two loudspeakers L1 and L2 are placed 10 m apart. Both are fed with an audio signal of the same frequency. A voice recorder starting at point A (equidistant from both speakers) is moved 25 m along line AB. The signal undergoes 10 cycles of minima and maxima. Find the frequency of the input signal in Hz. (Speed of sound = 324 m/s, √5=2.23)",
+          "options": null,
+          "answer": "600",
+          "solution": "Point B (after 25m) corresponds to the 10th maxima. Path difference Δx = L2B - L1B = 50-44.6 = 5.4 m = 10λ, so λ=0.54m. f=V/λ=324/0.54=600 Hz."
+        },
+        {
+          "number": 47,
+          "type": "Numerical",
+          "question": "The electric field of a plane EM wave in an unknown non-magnetic medium is Ey=20sin(3×10^6 x - 4.5×10^14 t) V/m. The dielectric constant of the medium is ____.",
+          "options": null,
+          "answer": "4",
+          "solution": "n=C/V, V=ω/k=4.5×10^14/(3×10^6)=1.5×10^8 m/s. n=C/V=2. Since n=√(μrεr) with μr=1, εr=n^2=4."
+        },
+        {
+          "number": 48,
+          "type": "Numerical",
+          "question": "A parallel beam of light in air (n=1.0) is incident on a convex spherical glass surface of radius of curvature 50 cm (glass n=1.5). The rays converge to a point at distance x cm from the centre of curvature. Find x.",
+          "options": null,
+          "answer": "100",
+          "solution": "Using refraction formula μ2/v - μ1/u = (μ2-μ1)/R: 1.5/v - 1/∞ = 0.5/50, giving v=150 cm. x = v - R = 150-50 = 100 cm."
+        },
+        {
+          "number": 49,
+          "type": "Numerical",
+          "question": "A circular disc has radius R1 and thickness T1. Another disc of same material has radius R2 and thickness T2. If moment of inertia of both discs are same and R1/R2=2, then T1/T2 = 1/α. Find α.",
+          "options": null,
+          "answer": "16",
+          "solution": "Using I=mR^2/2 with m=ρπR^2T, equating I1=I2 gives πR1^2T1ρR1^2 = πR2^2T2ρR2^2, leading to T1/T2 = (R2/R1)^4 = 1/16, so α=16."
+        },
+        {
+          "number": 50,
+          "type": "Numerical",
+          "question": "Inductance of a coil with 10^4 turns is 10 mH, connected to a dc source of 10V with internal resistance 10Ω. The energy density in the inductor when the current reaches (1/e) of maximum value is απ×(1/e^2) J/m^3. Find α. (μ0=4π×10^-7 Tm/A)",
+          "options": null,
+          "answer": "20",
+          "solution": "Max current I0=10/10=1A. Ed=B^2/(2μ0) with B=μ0nI and L=μ0n^2πR^2l. Ed = μ0n^2I^2/2 = (4π×10^-7×10^8×(1/e^2))/2 = 20π/e^2, giving α=20."
+        }
+      ]
+    }
+  }
+}

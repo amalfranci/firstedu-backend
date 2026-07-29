@@ -1,0 +1,282 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "date": "24th January 2026",
+  "session": "Morning",
+  "source": "Career Point Ltd.",
+  "sections": {
+    "Chemistry": {
+      "questions": [
+        {
+          "question_number": 51,
+          "question": "Statement-I: Hybridisation, shape and spin only magnetic moment of K3[Co(CO3)3] is sp3d2, octahedral and 4.9 BM respectively. Statement-II: Geometry, hybridisation and spin only magnetic moment (BM) of [Ni(CN)4]2-,[MnBr4]2- and [CoF6]3- respectively are square planar, tetrahedral, octahedral: dsp2,sp3,sp3d2 and 0, 5.9, 4.9.",
+          "options": {
+            "1": "Both statement-I and II are false",
+            "2": "Statement I is false but II is true",
+            "3": "Both statement-I and II are true",
+            "4": "Statement-I is true but II is false"
+          },
+          "answer": 3,
+          "solution": "In K3[Co(CO3)3]: sp3d2 hybridized, octahedral, 4 unpaired electrons, 4.9 BM (Statement I true). [Ni(CN)4]2-: dsp2, square planar, 0 unpaired electrons, 0 BM. [MnBr4]2-: sp3, tetrahedral, 5 unpaired electrons, 5.9 BM. [CoF6]3-: sp3d2, octahedral, 4 unpaired electrons, 4.9 BM (Statement II true). Both statements are true."
+        },
+        {
+          "question_number": 52,
+          "question": "A→D is an endothermic reaction occurring in three elementary steps: (i) A→B, ΔHi=+ve; (ii) B→C, ΔHii=-ve; (iii) C→D, ΔHiii=-ve. Which graph of potential energy vs reaction coordinate correctly represents A→D?",
+          "options": {
+            "1": "graph option 1",
+            "2": "graph option 2",
+            "3": "graph option 3 (correct shape)",
+            "4": "graph option 4"
+          },
+          "answer": 3,
+          "solution": "Since A→D is overall endothermic, ED>EA. Step-wise: A→B (EB>EA), B→C (EC<EB), C→D (ED<EC), with net ED>EA. This matches the profile with three humps of decreasing height, ending above the starting point A."
+        },
+        {
+          "question_number": 53,
+          "question": "Arrange the following alkenes in decreasing order of stability: I (tetrasubstituted), II (trans-disubstituted), III (trisubstituted), IV (cis-disubstituted)",
+          "options": {
+            "1": "III > I > II > IV",
+            "2": "III > II > I > IV",
+            "3": "I > III > II > IV",
+            "4": "I > III > IV > II"
+          },
+          "answer": 3,
+          "solution": "Stability order based on degree of substitution and alpha-hydrogen count (hyperconjugation): tetrasubstituted (αH=12) > trisubstituted (αH=9) > trans-disubstituted (αH=6) > cis-disubstituted (αH=6), with trans more stable than cis. Order: I > III > II > IV."
+        },
+        {
+          "question_number": 54,
+          "question": "Given statements: A. Dipole moment of NF3 is higher than NH3. B. Dipole moment of BeH2 is zero. C. Bond order of O2^2- and F2 is same. D. Formal charge on central oxygen of ozone is -1. E. In NO2, all three atoms satisfy octet rule.",
+          "options": {
+            "1": "A,B,C,D & E",
+            "2": "B & C only",
+            "3": "B,C & D only",
+            "4": "A,C & D only"
+          },
+          "answer": 2,
+          "solution": "A is false: dipole moment NF3<NH3 (due to opposing lone pair and bond dipole directions in NF3). B is true: BeH2 is linear sp hybridized with zero dipole moment. C is true: both O2^2- and F2 have bond order 1. D is false: formal charge on central O in ozone is +1, not -1. E is false: N in NO2 doesn't follow octet rule (odd electron molecule). Correct: B & C only."
+        },
+        {
+          "question_number": 55,
+          "question": "A solution is prepared by dissolving 0.3g of nonvolatile nonelectrolyte solute A (M=60 g/mol) and 0.9g of nonvolatile nonelectrolyte solute B (M=180 g/mol) in 100mL H2O at 27°C. Osmotic pressure will be [R=0.082 L.atm/K.mol]",
+          "options": {
+            "1": "1.23 atm",
+            "2": "2.46 atm",
+            "3": "0.82 atm",
+            "4": "1.47 atm"
+          },
+          "answer": 2,
+          "solution": "Moles of A=0.3/60=1/200 mol. Moles of B=0.9/180=1/200 mol. Total molarity=(2/200)/100×1000=1/10 M. π=(1/10)(0.082)(300)=2.46 atm."
+        },
+        {
+          "question_number": 56,
+          "question": "Among the following, the correct combinations are: A. IF3 → T-shaped (sp3d), B. IF5 → Square pyramidal (sp3d2), C. IF7 → Pentagonal bipyramidal (spd3), D. ClO4⁻ → Square planar (sp2d)",
+          "options": {
+            "1": "A, B and C only",
+            "2": "A and B only",
+            "3": "A, B, C and D",
+            "4": "B, C and D only"
+          },
+          "answer": 1,
+          "solution": "IF3 is T-shaped with sp3d hybridization (correct). IF5 is square pyramidal with sp3d2 hybridization (correct). IF7 is pentagonal bipyramidal with sp3d3 hybridization (correct, though labeled spd3 which likely means sp3d3). ClO4⁻ is actually tetrahedral with sp3 hybridization, not square planar (incorrect). So A, B, C only."
+        },
+        {
+          "question_number": 57,
+          "question": "The correct stability order of the following diazonium salts (with para substituents OCH3, NO2, H, CN) is?",
+          "options": {
+            "1": "A > B > C > D",
+            "2": "C > D > B > A",
+            "3": "A > C > D > B",
+            "4": "C > A > D > B"
+          },
+          "answer": 3,
+          "solution": "Electron donating groups (+M, like OCH3) increase stability of the diazonium salt by donating into the ring, while electron withdrawing groups (-M, like NO2, CN) decrease stability. Order: A(OCH3) > C(H) > D(CN) > B(NO2)."
+        },
+        {
+          "question_number": 58,
+          "question": "A mixture X is made by dissolving 0.4 mol of [Co(NH3)5SO4]Br and 0.4 mol of [Co(NH3)5Br]SO4 in water to make 4L solution. 2L of X reacts with excess AgNO3 to form precipitate Y. The other 2L reacts with excess BaCl2 to form precipitate Z. Which statement is correct?",
+          "options": {
+            "1": "0.2 mol of Z is formed",
+            "2": "Y is BaSO4 and Z is AgBr",
+            "3": "0.4 mol of Z is formed",
+            "4": "0.1 mol of Y is formed"
+          },
+          "answer": 1,
+          "solution": "2L of mixture contains 0.2 mol of each complex. With excess AgNO3, 0.2 mol AgBr (Y) forms (only from the ionizable Br⁻ in [Co(NH3)5Br]SO4, since Br is coordinated/complexed in the other). With excess BaCl2, 0.2 mol BaSO4 (Z) forms similarly. So 0.2 mol of Z is formed."
+        },
+        {
+          "question_number": 59,
+          "question": "Statement-I: The number of paramagnetic species among [CoF6]3-, [TiF6]3-, V2O5 and [Fe(CN)6]3- is 3. Statement-II: K4[Fe(CN)6]<K3[Fe(CN)6]<[Fe(H2O)6]SO4.H2O<[Fe(H2O)6]Cl3 is the correct order in terms of number of unpaired electrons.",
+          "options": {
+            "1": "Both statement-I and II are true",
+            "2": "Both statement-I and II are false",
+            "3": "Statement-I is true but II is false",
+            "4": "Statement-I is false but II is true"
+          },
+          "answer": 1,
+          "solution": "Paramagnetic species: [CoF6]3-, [TiF6]3-, [Fe(CN)6]3- (3 species); V2O5 is diamagnetic. Statement I is true. For Statement II: K4[Fe(CN)6] has 0 unpaired e-, K3[Fe(CN)6] has 1, [Fe(H2O)6]SO4.H2O has 4, [Fe(H2O)6]Cl3 has 5 unpaired electrons - this increasing order is correct, so Statement II is true. Both true."
+        },
+        {
+          "question_number": 60,
+          "question": "Consider three metal chlorides x,y,z, where x is water soluble at room temp, y is sparingly soluble in water at room temp, z is soluble in hot water. x,y,z are respectively",
+          "options": {
+            "1": "MgCl2,AgCl and AlCl3",
+            "2": "AgCl,Hg2Cl2 and PbCl2",
+            "3": "AlCl3,PbCl2 and BaCl2",
+            "4": "CuCl2,AgCl and PbCl2"
+          },
+          "answer": 4,
+          "solution": "MgCl2, AlCl3, CuCl2 are all water soluble at room temperature. AgCl and Hg2Cl2 are sparingly soluble in water at room temperature. PbCl2 is soluble in hot water (but not cold water). So x=CuCl2, y=AgCl, z=PbCl2."
+        },
+        {
+          "question_number": 61,
+          "question": "Match List-I (Chloro derivative) with List-II (Example): A. Vinyl Chloride, B. Benzyl chloride, C. Alkyl chloride, D. Allyl chloride. List-II: I. CH2=CH-CH2Cl, II. CH3-CHCl-CH3, III. CH2=CHCl, IV. Ph-CHCl-CH3",
+          "options": {
+            "1": "A-IV,B-I,C-III,D-II",
+            "2": "A-III,B-IV,C-I,D-II",
+            "3": "A-III,B-IV,C-II,D-I",
+            "4": "A-I,B-II,C-IV,D-III"
+          },
+          "answer": 3,
+          "solution": "Vinyl chloride is CH2=CHCl (III). Benzyl chloride is Ph-CH2Cl type structure (IV, shown as substituted variant). Alkyl chloride example is CH3-CHCl-CH3 (II). Allyl chloride is CH2=CH-CH2Cl (I). Match: A-III, B-IV, C-II, D-I."
+        },
+        {
+          "question_number": 62,
+          "question": "'W'g of a non-volatile electrolyte solid solute of molar mass 'M' g/mol dissolved in 100mL water decreases vapour pressure from 640mmHg to 600mmHg. If the solution boils at 375K and Kb=0.52 K.kg/mol, the mole fraction of electrolyte solute (x2) can be expressed as (density of water=1g/mL, bp of water=373K)",
+          "options": {
+            "1": "1.3×(W/M)/8",
+            "2": "16×(W/M)/2.6",
+            "3": "2.6×(M/W)/16",
+            "4": "1.3×(M/W)/8"
+          },
+          "answer": 1,
+          "solution": "ΔP/P°=i.Xsolute: 40/640=i.Xsolute. ΔTb=i×kb×m: 2=i×0.52×(W/M)/100×1000, giving i=2M/(5.2W). Xsolute=(40/640)×(1/i)=(1/16)×(5.2/2)×(W/M)=1.3(W/M)/8."
+        },
+        {
+          "question_number": 63,
+          "question": "Match List-I (Isothermal process for ideal gas) with List-II (Work done if Vf>Vi): A. Reversible expansion, B. Free expansion, C. Irreversible expansion, D. Irreversible compression. List-II: I. w=0, II. w=-nRTln(Vf/Vi), III. w=-Pex(Vf-Vi), IV. w=-Pex(Vi-Vf)",
+          "options": {
+            "1": "A-IV,B-I,C-III,D-II",
+            "2": "A-IV,B-II,C-III,D-I",
+            "3": "A-I,B-III,C-II,D-IV",
+            "4": "A-II,B-I,C-III,D-IV"
+          },
+          "answer": 4,
+          "solution": "Reversible expansion work: w=-nRTln(Vf/Vi) (II). Free expansion: Pext=0, so w=0 (I). Irreversible expansion: w=-Pext(Vf-Vi) (III). Irreversible compression: w=-Pext(Vi-Vf) (IV). Match: A-II, B-I, C-III, D-IV."
+        },
+        {
+          "question_number": 64,
+          "question": "A student is given one compound among four cyclic structures (hemiacetal/acetal forms) that gives positive test with Tollen's reagent. The compound is:",
+          "options": {
+            "1": "D",
+            "2": "A",
+            "3": "B",
+            "4": "C"
+          },
+          "answer": 4,
+          "solution": "The compound C is a hemiacetal (has free anomeric -OH), which can open to the free aldehyde form under basic conditions and give a positive Tollen's test (silver mirror), unlike the fully acetalized forms A and B which lack a free anomeric center."
+        },
+        {
+          "question_number": 65,
+          "question": "A hydroxy compound (X) with molar mass 122 g/mol is acetylated with acetic anhydride using excess reagent for complete acetylation. The product has molar mass 290 g/mol. The number of hydroxyl groups in X is:",
+          "options": {
+            "1": "3",
+            "2": "5",
+            "3": "2",
+            "4": "4"
+          },
+          "answer": 4,
+          "solution": "Each OH→OCOCH3 conversion adds 42 g/mol (mass of acetyl group minus H). Number of OH groups=(290-122)/42=4."
+        },
+        {
+          "question_number": 66,
+          "question": "At 27°C in presence of a catalyst, activation energy of a reaction is lowered by 10 kJ/mol. The logarithm ratio of k(catalysed)/k(uncatalysed) is: (frequency factor same for both)",
+          "options": {
+            "1": "17.41",
+            "2": "1.741",
+            "3": "3.482",
+            "4": "0.1741"
+          },
+          "answer": 2,
+          "solution": "log(Kcatalyst/Kuncatalyst)=ΔEa/(2.303RT)=10000/(2.303×8.314×300)=1.741."
+        },
+        {
+          "question_number": 67,
+          "question": "Statement I: 'C-Cl' bond is stronger in CH2=CH-Cl than CH3-CH2-Cl. Statement II: The given optically active molecule (Ph-C(Me)(Et)-Cl) on hydrolysis gives a solution that can rotate the plane polarized light.",
+          "options": {
+            "1": "Statement I is false but II is true",
+            "2": "Both Statement I and II are true",
+            "3": "Both Statement I and II are false",
+            "4": "Statement I is true but II is false"
+          },
+          "answer": 4,
+          "solution": "Statement I is true: C-Cl bond in vinyl chloride is stronger due to partial double bond character from resonance. Statement II is false: SN1 hydrolysis of the optically active chiral chloride gives a racemic mixture (via planar carbocation intermediate), which is optically inactive and cannot rotate plane polarized light."
+        },
+        {
+          "question_number": 68,
+          "question": "Consider two reactions: (A) Phenol + Na → main product + gas(x); (B) Benzoic acid + NaHCO3 → main product + gas(y). Numerical value of [molar mass of x + molar mass of y] is",
+          "options": {
+            "1": "4",
+            "2": "88",
+            "3": "46",
+            "4": "160"
+          },
+          "answer": 3,
+          "solution": "x=H2 gas (from phenol+Na, molar mass 2). y=CO2 gas (from carboxylic acid+NaHCO3, molar mass 44). Sum=2+44=46."
+        },
+        {
+          "question_number": 69,
+          "question": "Arrange the following carbanions (with para substituents Br, H(phenyl), OCH3, CHO, CH3) in decreasing order of stability",
+          "options": {
+            "1": "I > II > IV > V > III",
+            "2": "I > IV > II > V > III",
+            "3": "IV > I > II > V > III",
+            "4": "IV > II > I > III > V"
+          },
+          "answer": 3,
+          "solution": "Electron withdrawing groups (like -CHO) increase carbanion stability through resonance/induction, while electron donating groups (like -OCH3, -CH3) decrease stability. Order: IV(CHO) > I(Br) > II(H) > V(CH3) > III(OCH3)."
+        },
+        {
+          "question_number": 70,
+          "question": "Statement I: K>Mg>Al>B is the correct order in terms of metallic character. Statement II: Atomic radius is always greater than the ionic radius for any element.",
+          "options": {
+            "1": "Both Statement I and II are true",
+            "2": "Both Statement I and II are false",
+            "3": "Statement I is false but II is true",
+            "4": "Statement I is true but II is false"
+          },
+          "answer": 4,
+          "solution": "Statement I is true: metallic character decreases across period/increases down group appropriately for these elements. Statement II is false: while cationic radius is always smaller than atomic radius, anionic radius is larger than atomic radius, so the statement 'always greater' is false in general."
+        },
+        {
+          "question_number": 71,
+          "question": "Electricity is passed through an acidic solution of Cu2+ till all Cu2+ was exhausted, depositing 300mg Cu. A current of 600mA was continued for another 28 minutes, keeping total volume at 200mL. The total volume of oxygen evolved at STP during the entire process is ____ mL. (Molar mass Cu=63.54, O2=32, F=96500, molar volume STP=22.4L)",
+          "answer": "111",
+          "solution": "Eq of Cu=Eq of O2 initially: (300×10⁻³×2)/63.54=nO2×4, giving nO2=2.36×10⁻³ mol. From further current: nO2×4=(600×28×60)/(96500×1000), giving nO2=2.611×10⁻³ mol. Total O2=10⁻³×(2.36+2.611)×22400=111.35 mL≈111."
+        },
+        {
+          "question_number": 72,
+          "question": "Consider two Group IV metal ions X2+ and Y2+. A solution containing 0.01M X2+ and 0.01M Y2+ is saturated with H2S. The pH at which metal sulphide YS will form as precipitate is ____ (Ksp(XS)=1×10⁻²², Ksp(YS)=4×10⁻¹⁶, [H2S]=0.1M, Ka1×Ka2=1.0×10⁻²¹, log2=0.30,log3=0.48,log5=0.70)",
+          "answer": "4",
+          "solution": "For YS precipitation: [S2-]≥Ksp(YS)/[Y2+]=4×10⁻¹⁶/10⁻²=4×10⁻¹⁴. Using [S2-]=Ka1Ka2[H2S]/[H+]²≥4×10⁻¹⁴, solving gives [H+]≤(1/2)×10⁻⁴, so pH≥4.3, nearest integer 4."
+        },
+        {
+          "question_number": 73,
+          "question": "The hydrogen spectrum has spectral lines in Lyman series (L1 lowest energy) and Balmer series (B1 lowest energy). The energy of L1 is x times energy of B1. The value of x is ____×10⁻¹ (nearest integer)",
+          "answer": "54",
+          "solution": "ΔE(L1)=13.6Z²(1-1/4)=13.6Z²(3/4). ΔE(B1)=13.6Z²(1/4-1/9)=13.6Z²(5/36). Ratio=ΔE(L1)/ΔE(B1)=(3/4)/(5/36)=27/5=x. x=(27/5×10)×10⁻¹=54×10⁻¹."
+        },
+        {
+          "question_number": 74,
+          "question": "In Dumas method, 0.50g of organic compound gave 70mL of nitrogen collected at 300K and 715mm pressure. The percentage of nitrogen in the compound is ____% (aqueous tension at 300K=15mm)",
+          "answer": "15",
+          "solution": "PN2=(715-15)mm=700/760 atm. VN2=70/1000 L. nN2=PV/RT=(700/760×70/1000)/(0.0821×300). WN2=nN2×28. %N=(WN2/0.5)×100≈14.65%≈15."
+        },
+        {
+          "question_number": 75,
+          "question": "X and Y are the number of electrons involved during oxidation of I⁻ to I2 and S2- to S by acidified K2Cr2O7. The value of X+Y is ____.",
+          "answer": "12",
+          "solution": "Cr2O7²⁻+14H⁺+6I⁻→2Cr³⁺+3I2+7H2O: X=6 electrons. Cr2O7²⁻+3S²⁻+14H⁺→3S+2Cr³⁺+7H2O: Y=6 electrons. X+Y=6+6=12."
+        }
+      ]
+    }
+  }
+}

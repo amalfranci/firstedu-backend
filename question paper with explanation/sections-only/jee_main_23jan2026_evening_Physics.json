@@ -1,0 +1,272 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "source": "Career Point - Questions & Solutions",
+  "date": "23rd January 2026",
+  "shift": "Evening",
+  "sections": {
+    "Physics": {
+      "questions": [
+        {
+          "number": 26,
+          "type": "MCQ",
+          "question": "The internal energy of a monoatomic gas is 3nRT. One mole of helium is kept in a cylinder having internal cross section area of 17 cm² fitted with a light movable frictionless piston. The gas is heated slowly by supplying 126 J heat. If the temperature rises by 4°C, then the piston will move ____ cm. (atmospheric pressure = 10⁵ Pa)",
+          "options": [
+            "14.5",
+            "1.55",
+            "15.5",
+            "1.45"
+          ],
+          "answer": "15.5",
+          "solution": "ΔU=3nRΔT=100 J. W=ΔQ-ΔU=26 J=PΔV. Δx=26/(10⁵×17×10⁻⁴)=15.3 cm ≈ 15.5."
+        },
+        {
+          "number": 27,
+          "type": "MCQ",
+          "question": "A body of mass 14 kg initially at rest explodes and breaks into three fragments of masses in the ratio 2:2:3. The two pieces of equal masses fly off perpendicular to each other with a speed of 18 m/s each. The velocity of the heavier fragment is ____ m/s.",
+          "options": [
+            "10√2",
+            "12√2",
+            "12",
+            "24√2"
+          ],
+          "answer": "12√2",
+          "solution": "Conservation of momentum: 2(-18î)+2(-18ĵ)+3V3=0, giving V3=12î+12ĵ, |V3|=12√2 m/s."
+        },
+        {
+          "number": 28,
+          "type": "MCQ",
+          "question": "A block is sliding down on an inclined plane of slope θ and at t=0 is given an upward momentum so it starts moving up with velocity u. The distance S travelled by the block before its velocity becomes zero is ____.",
+          "options": [
+            "u²/(4gsinθ)",
+            "2u²/(gcosθ)",
+            "u²/(√2 gcosθ)",
+            "u²/(2gcosθ)"
+          ],
+          "answer": "Dropped by JEE (correct result u²/(2gsinθ) does not match any option)",
+          "solution": "Using v²=u²-2gsinθ·s: s = u²/(2gsinθ) — this doesn't match any of the given options (which use cosθ instead of sinθ), so JEE dropped the question."
+        },
+        {
+          "number": 29,
+          "type": "MCQ",
+          "question": "The current passing through a conducting loop in the form of an equilateral triangle of side 4√3 cm is 2A. The magnetic field at its centroid is α×10⁻⁵ T. The value of α is ____. (μ0=4π×10⁻⁷ SI units)",
+          "options": [
+            "2√3",
+            "√3",
+            "3√3",
+            "√3/2"
+          ],
+          "answer": "3√3",
+          "solution": "B = (μ0/4π)(I/d)[sin60°+sin60°]×3 (for 3 sides) = 3√3×10⁻⁵ T, so α=3√3."
+        },
+        {
+          "number": 30,
+          "type": "MCQ",
+          "question": "A paratrooper jumps from an aeroplane and opens a parachute after 2s of free fall and starts decelerating with 3 m/s². At 10 m height from ground, descending with the parachute, the speed is 5 m/s. The initial height of the aeroplane is ____ m. (g=10 m/s²)",
+          "options": [
+            "62.5",
+            "92.5",
+            "20",
+            "82.5"
+          ],
+          "answer": "92.5",
+          "solution": "Free fall for 2s: x1=20m, v=20m/s. Deceleration phase: 5²=20²-2(3)x2, x2=62.5m. Final phase: x3=10m. Total H=20+62.5+10=92.5m."
+        },
+        {
+          "number": 31,
+          "type": "MCQ",
+          "question": "Two short dipoles (A,B), A having charges ±2μC and length 1cm and B having charges ±4μC and length 1cm are placed with centres 80cm apart. The electric field at point P, equidistant from centres of both dipoles is ____ N/C.",
+          "options": [
+            "(9/16)√2×10⁵",
+            "4.5√2×10⁴",
+            "9√2×10⁴",
+            "(9/16)√2×10⁴"
+          ],
+          "answer": "(9/16)√2×10⁴",
+          "solution": "P1=2×10⁻⁸, P2=4×10⁻⁸ Cm. Net field combining perpendicular components (axial and equatorial) gives |E_net| = (9×10⁴/16)√2."
+        },
+        {
+          "number": 32,
+          "type": "MCQ",
+          "question": "Two charges 7μC and -2μC are placed at (-9,0,0)cm and (9,0,0)cm respectively in an external field E=A/r² r̂, where A=9×10⁵ N/C·m². Considering the potential at infinity is 0, the electrostatic energy of the configuration is ____ J.",
+          "options": [
+            "1.4",
+            "-90.7",
+            "49.3",
+            "24.3"
+          ],
+          "answer": "49.3",
+          "solution": "V=A/r for the external field. U = U_self + U_interaction = q1V1+q2V2+kq1q2/(2r) = 50-0.7 = 49.3 J."
+        },
+        {
+          "number": 33,
+          "type": "MCQ",
+          "question": "A bead P sliding on a frictionless semi-circular string (ACB) is at point S at t=0 with horizontal velocity component v. Another bead Q ejected from A at t=0 along horizontal string AB with speed v. Let tp and tQ be respective times taken to reach point B. The relation between tp and tQ is",
+          "options": [
+            "tp>tQ",
+            "tp<tQ",
+            "tp>1.25tQ",
+            "tp=tQ"
+          ],
+          "answer": "tp<tQ",
+          "solution": "Horizontal displacement of Q is greater than P (XQ>XP), and since horizontal velocity component is the same for both, tQ=XQ/v > tp=XP/v."
+        },
+        {
+          "number": 34,
+          "type": "MCQ",
+          "question": "A parallel plate capacitor with plate separation 5mm is charged by a battery. On introducing a mica sheet of 2mm and maintaining connections, it draws 25% more charge from the battery. The dielectric constant of mica is ____.",
+          "options": [
+            "2.5",
+            "2.0",
+            "1.5",
+            "1.0"
+          ],
+          "answer": "2.0",
+          "solution": "Combining series-parallel capacitance model: Ceq = Kε0A/(2+3K). Setting 1.25×(ε0A/5) = Ceq gives 0.25(2+3K)=K, so 2+3K=4K, K=2."
+        },
+        {
+          "number": 35,
+          "type": "MCQ",
+          "question": "To compare EMF of two cells using a potentiometer, the balancing lengths obtained are 200 cm and 150 cm. The least count of scale is 1 cm. The percentage error in the ratio of EMFs is ____",
+          "options": [
+            "1.45",
+            "1.65",
+            "1.75",
+            "1.55"
+          ],
+          "answer": "Dropped by JEE (calculated value ≈1.16% doesn't match any option)",
+          "solution": "Δy/y = Δℓ1/ℓ1 + Δℓ2/ℓ2 = 1/200+1/150 = 7/600 ≈1.16%, which doesn't match any given option, so the question was dropped."
+        },
+        {
+          "number": 36,
+          "type": "MCQ",
+          "question": "An air bubble of volume 2.9 cm³ rises from the bottom of a swimming pool 5m deep. At the bottom, water temperature is 17°C. The volume of the bubble at the surface, where temperature is 27°C, is ____ cm³. (g=10 m/s², density of water=10³ kg/m³, 1 atm=10⁵ Pa)",
+          "options": [
+            "4.2",
+            "2.0",
+            "3.0",
+            "4.5"
+          ],
+          "answer": "4.5",
+          "solution": "Using P1V1/T1=P2V2/T2 with P1=Patm+ρgh: V2 = 4.5 cm³."
+        },
+        {
+          "number": 37,
+          "type": "MCQ",
+          "question": "Which of the following pair of nuclei are isobars of the element?",
+          "options": [
+            "²H and ³H",
+            "²³⁶U and ²³⁸U",
+            "¹⁹⁸Hg and ¹⁹⁷Au",
+            "³H and ³He"
+          ],
+          "answer": "³H and ³He",
+          "solution": "Isobars are nuclei with the same mass number; ³H and ³He both have mass number 3."
+        },
+        {
+          "number": 38,
+          "type": "MCQ",
+          "question": "For a given logic gate circuit (OR gate feeding a NAND gate with one input direct and other from OR output), which is the correct truth table for inputs n,m and output z?",
+          "options": [
+            "Table 1",
+            "Table 2",
+            "Table 3",
+            "Table 4"
+          ],
+          "answer": "Table 4",
+          "solution": "Output z = NOT(n·(n+m)) = NOT(n) = n̄. Truth table: (n,m,z) = (0,0,1),(0,1,1),(1,1,0),(1,0,0), matching option 4."
+        },
+        {
+          "number": 39,
+          "type": "MCQ",
+          "question": "One mole of an ideal diatomic gas expands from volume V to 2V isothermally at 27°C and does W joule of work. If the gas undergoes the same magnitude of expansion adiabatically from 27°C doing the same amount of work W, then its final temperature will be (close to) ____ °C.",
+          "options": [
+            "-189",
+            "-56",
+            "-30",
+            "-117"
+          ],
+          "answer": "-56",
+          "solution": "W_isothermal = RT ln2 = 300R(0.693). Setting W_adiabatic = nR(T1-T2)/(γ-1) equal to this and solving gives T_final ≈ 216.84 K ≈ -56.3°C."
+        },
+        {
+          "number": 40,
+          "type": "MCQ",
+          "question": "A prism of angle 75° and refractive index √3 is coated with a thin film of refractive index 1.5 only at the back exit surface. To have total internal reflection at the back exit surface, the incident angle must be ____. (sin15°=0.25, sin25°=0.43)",
+          "options": [
+            "between 15° and 20°",
+            "15°",
+            "<15°",
+            "not applicable"
+          ],
+          "answer": "Answer options given as [1,2,4] meaning i < 25° satisfies multiple listed ranges (i≈25°, so i<25° or i≤20°); precise computed value i=25°",
+          "solution": "For TIR at back surface, r2≥60°, so r1≤15°, giving sin i = √3 sin15° = 0.433, i≈25°. This satisfies i<25° (and consequently the 'between 15° and 20°' and '<15°' ranges are approximately consistent per JEE's multiple accepted answers 1,2,4)."
+        },
+        {
+          "number": 41,
+          "type": "MCQ",
+          "question": "A circular loop of radius 7cm is placed in a uniform magnetic field of 0.2T perpendicular to its plane. The loop is converted into a square loop in 0.5s. The EMF induced in the loop is ____ mV.",
+          "options": [
+            "6.6",
+            "13.2",
+            "8.25",
+            "1.32"
+          ],
+          "answer": "1.32",
+          "solution": "Circumference=14π cm, side of square = 14π/4 = 7π/2. Δφ=B(A1-A2)=6.614×10⁻⁴ Wb. EMF=Δφ/0.5=1.32×10⁻³ V=1.32mV."
+        },
+        {
+          "number": 42,
+          "type": "MCQ",
+          "question": "A long solenoid of 100cm length, radius 2cm, 500 turns per unit length, carries current I=10sin(ωt)A, ω=1000rad/s. A circular loop (B) of radius 1cm coaxially slides through the solenoid at speed v=1cm/s. The rms current through loop B when inserted 10cm inside is α/√2 μA. The value of α is ____. (Resistance of loop=10Ω)",
+          "options": [
+            "197",
+            "80",
+            "280",
+            "100"
+          ],
+          "answer": "197",
+          "solution": "Induced current i = πr²μ0ni0ω/(√2 R) ≈ 197/√2 μA, so α=197."
+        },
+        {
+          "number": 43,
+          "type": "MCQ",
+          "question": "The ratio of speeds of electromagnetic waves in vacuum and a medium, having dielectric constant k=3 and permeability μ=2μ0, is (μ0=permeability of vacuum)",
+          "options": [
+            "36:1",
+            "3:2",
+            "6:1",
+            "√6:1"
+          ],
+          "answer": "√6:1",
+          "solution": "C/V = √(εrμr) = √(3×2) = √6, giving ratio √6:1."
+        },
+        {
+          "number": 44,
+          "type": "MCQ",
+          "question": "When unpolarized light falls at a particular angle on a glass plate (in air), the reflected beam is linearly polarized. The angle of refracted beam with respect to normal is ____. (tan⁻¹(1.52)=57.7°, refractive indices of air and glass are 1.00 and 1.52 respectively)",
+          "options": [
+            "39.6°",
+            "32.3°",
+            "42.6°",
+            "36.3°"
+          ],
+          "answer": "32.3°",
+          "solution": "At Brewster's angle, tan i = μg/μa = 1.52, so i=57.7°. Refraction angle r=90°-i=32.3°."
+        },
+        {
+          "number": 45,
+          "type": "MCQ",
+          "question": "A small metallic sphere of diameter 2mm and density 10.5 g/cm³ is dropped in glycerine having viscosity 10 Poise and density 1.5 g/cm³. The terminal velocity attained by the sphere is ____ cm/s. (π=22/7, g=10 m/s²)",
+          "options": [
+            "2.0",
+            "1.0",
+            "3.0",
+            "1.5"
+          ],
+          "answer": "2.0",
+          "solution": "VT = 2r²g(ρb-ρl)/(9η) = 2(0.1)²×10×(10.5-1.5)/(9×10) = 2 cm/s."
+        }
+      ]
+    }
+  }
+}

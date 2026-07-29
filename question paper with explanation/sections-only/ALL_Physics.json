@@ -1,0 +1,2017 @@
+{
+  "sections": {
+    "Physics": {
+      "questions": [
+        {
+          "number": 26,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Consider two identical metallic spheres of radius R each having charge Q and mass m. Their centers have an initial separation of 4R. Both spheres are given an initial speed of u towards each other. The minimum value of u so that they can just touch each other is: (Take k = 1/(4*pi*epsilon0), assume kQ^2 > Gm^2, G is the Gravitational constant)",
+          "options": {
+            "1": "sqrt[(kQ^2/4mR)(1 - Gm^2/kQ^2)]",
+            "2": "sqrt[(kQ^2/4mR)(1 + Gm^2/kQ^2)]",
+            "3": "sqrt[(kQ^2/2mR)(1 - Gm^2/kQ^2)]",
+            "4": "sqrt[(kQ^2/2mR)(1 - Gm^2/2kQ^2)]"
+          },
+          "answer": "1",
+          "solution": "Using energy conservation (electrostatic PE + gravitational PE + KE) between initial separation 4R (center-to-center) and final separation 2R (touching), solve for u: u = sqrt[(1/4mR)(KQ^2 - Gm^2)] = sqrt[(kQ^2/4mR)(1-Gm^2/kQ^2)]."
+        },
+        {
+          "number": 27,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "The charge stored by the capacitor C in the given circuit in the steady state is ____ microC. (Circuit: 2.5V source, 1ohm, C=5microF, 2ohm, 3ohm, 4ohm branches as shown)",
+          "options": {
+            "1": "12.5",
+            "2": "10",
+            "3": "7.5",
+            "4": "5"
+          },
+          "answer": "2",
+          "solution": "In steady state no current flows through capacitor branch. Current i = 2.5/5 = 0.5A through the 1ohm+4ohm branch. Vc = 4*0.5 = 2V. Charge Q = C*Vc = 5*2 = 10 microC."
+        },
+        {
+          "number": 28,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "The total length of potentiometer wire AB is 50 cm in the arrangement shown (6ohm and 4ohm resistors with galvanometer at point P). If P is the point where the galvanometer shows zero reading, the length AP is ____ cm.",
+          "options": {
+            "1": "15",
+            "2": "30",
+            "3": "25",
+            "4": "20"
+          },
+          "answer": "2",
+          "solution": "6/R_AP = 4/R_PB and l_AP + l_PB = 50. R_AP/R_PB = l_AP/l_PB = 3/2. l_AP = (3/5)*50 = 30 cm."
+        },
+        {
+          "number": 29,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A capacitor C is first charged fully with potential difference V0 and disconnected from the battery. The charged capacitor is connected across an inductor of inductance L. In t seconds 25% of the initial energy in the capacitor is transferred to the inductor. The value of t is ____ s.",
+          "options": {
+            "1": "pi*sqrt(LC)/3",
+            "2": "pi*sqrt(LC)/6",
+            "3": "pi*sqrt(LC)/2",
+            "4": "pi*sqrt(LC/2)"
+          },
+          "answer": "2",
+          "solution": "U_cf = 75% U_ci => Qf^2 = (3/4)Qi^2. Qi*cos(wt) = (sqrt3/2)Qi => t = T/12 = (pi/6)*sqrt(LC)."
+        },
+        {
+          "number": 30,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "The r.m.s speed of oxygen molecules at 47 degC is equal to that of hydrogen molecules kept at ____ degC. (Mass of oxygen/mass of hydrogen = 32/2)",
+          "options": {
+            "1": "-235",
+            "2": "-100",
+            "3": "-253",
+            "4": "-20"
+          },
+          "answer": "3",
+          "solution": "Vrms = sqrt(3RT/M). T_O2 = 320K. Equate: T2/M_O2 = T_H2/M_H2 => 320/32 = T_H2/2 => T_H2 = 20K = -253 degC."
+        },
+        {
+          "number": 31,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Two cars A and B each of mass 10^3 kg are moving on parallel tracks separated by 10 m, in the same direction with speeds 72 km/h and 36 km/h. The magnitude of angular momentum of car A with respect to car B is ____ J.s.",
+          "options": {
+            "1": "3.6x10^5",
+            "2": "10^5",
+            "3": "3x10^5",
+            "4": "2x10^5"
+          },
+          "answer": "2",
+          "solution": "L = m*V_rel*r_perp = 1000*(36*5/18)*10 = 10^5 kg m^2/s."
+        },
+        {
+          "number": 32,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "The pulley shown is made using a thin rim and two rods of length equal to the diameter of the rim, the rim and each rod having mass M. Two blocks of mass M and m are attached to two ends of a light string over the pulley (hinged, rotates freely in a vertical plane about its centre). The acceleration experienced by the blocks is ____ (assume no slipping).",
+          "options": {
+            "1": "(M-m)g / [(13/6)M + m]",
+            "2": "(M-m)g / (M+m)",
+            "3": "(M-m)g / [(8/3)M + m]",
+            "4": "(M-m)g / (2M+m)"
+          },
+          "answer": "3",
+          "solution": "Newton's laws for both blocks and torque equation for pulley: (M-m)g = (M+m+I/r^2)a. Moment of inertia I = Mr^2 + 2*(M*(2r)^2/12) = (5/3)Mr^2. Solving gives a = (M-m)g / [M+m+(5/3)M] = (M-m)g/[(8/3)M+m]."
+        },
+        {
+          "number": 33,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "The kinetic energy of a simple harmonic oscillator is oscillating with angular frequency of 176 rad/s. The frequency of this simple harmonic oscillator is ____ Hz. (Take pi = 22/7)",
+          "options": {
+            "1": "14",
+            "2": "88",
+            "3": "28",
+            "4": "176"
+          },
+          "answer": "1",
+          "solution": "Kinetic energy oscillates at twice the SHM frequency. f_k = omega/(2pi) = 176/(2*22/7) = 28 Hz. So oscillator frequency = f_k/2 = 14 Hz."
+        },
+        {
+          "number": 34,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Statement I: In Young's double slit experiment, the angular separation of fringes will increase as the screen is moved away from the plane of the slits. Statement II: The angular separation of fringes will increase when monochromatic source is replaced by another of higher wavelength. Choose the correct answer:",
+          "options": {
+            "1": "Both Statement I and Statement II are true",
+            "2": "Both Statement I and Statement II are false",
+            "3": "Statement I is false but Statement II is true",
+            "4": "Statement I is true but Statement II is false"
+          },
+          "answer": "3",
+          "solution": "Angular fringe width = lambda/d, which is independent of screen distance D (so Statement I is false), and increases with wavelength (so Statement II is true)."
+        },
+        {
+          "number": 35,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A battery with EMF E and internal resistance r is connected across a resistance R. The power consumption in R will be maximum when:",
+          "options": {
+            "1": "R=2r",
+            "2": "R=r/2",
+            "3": "R=sqrt(2)*r",
+            "4": "R=r"
+          },
+          "answer": "4",
+          "solution": "For maximum power transfer to load, R_load = R_internal, i.e., R = r."
+        },
+        {
+          "number": 36,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Keeping the significant figures in view, the sum of the physical quantities 52.01 m, 153.2 m and 0.123 m is:",
+          "options": {
+            "1": "205 m",
+            "2": "205.333 m",
+            "3": "205.33 m",
+            "4": "205.3 m"
+          },
+          "answer": "4",
+          "solution": "Sum = 52.01+153.2+0.123 = 205.333, rounded to least decimal places (1 decimal, from 153.2) = 205.3 m."
+        },
+        {
+          "number": 37,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A spherical body of radius r and density sigma falls freely through a viscous liquid of density rho and viscosity eta, attaining terminal velocity v0. Estimated maximum error in the quantity eta is: (ignore errors in sigma, rho, g)",
+          "options": {
+            "1": "2*(Delta r/r) - (Delta v0/v0)",
+            "2": "2*(Delta r/r) + (Delta v0/v0)",
+            "3": "2*[(Delta r/r) + (Delta v0/v0)]",
+            "4": "2*[(Delta r/r) - (Delta v0/v0)]"
+          },
+          "answer": "2",
+          "solution": "v0 = (2r^2 g/9eta)(rhoB-rhoL) => eta = (2r^2 g/9v0)(rhoB-rhoL). Delta(eta)/eta = 2*Delta(r)/r + Delta(v0)/v0."
+        },
+        {
+          "number": 38,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Surface tension of two liquids (same density), T1 and T2, measured using capillary rise method with tubes of inner radii r1 and r2 where r1 > r2. Heights are h1 and h2 respectively (ignore weight below meniscus). The relation satisfied is:",
+          "options": {
+            "1": "h1 < h2 and T1 = T2",
+            "2": "h1 = h2 and T1 = T2",
+            "3": "h1 > h2 and T1 = T2",
+            "4": "h1 > h2 and T1 < T2"
+          },
+          "answer": "1",
+          "solution": "h = 2T/(rho*g*r), so h is inversely proportional to r. Since r1 > r2, h2 > h1 i.e. h1 < h2. Since T1, T2 not otherwise specified as different, T1=T2 (same liquid property class assumed)."
+        },
+        {
+          "number": 39,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A river of width 200 m flows west to east with speed 18 km/h. A boat moving with speed 36 km/h in still water travels one round trip (bank to bank). The minimum time taken by the boat and the displacement along the river bank are ____ and ____ respectively.",
+          "options": {
+            "1": "20 s and 100 m",
+            "2": "40 s and 0 m",
+            "3": "40 s and 200 m",
+            "4": "40 s and 100 m"
+          },
+          "answer": "3",
+          "solution": "v_R=5m/s (river), v_BR=10m/s (boat). Minimum time (boat heads straight across at full speed relative to water) t_min=200/10=20s one way, 40s round trip. Displacement along bank = 40*5=200m."
+        },
+        {
+          "number": 40,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Two known resistances of R ohm and 2R ohm and one unknown resistance X ohm are connected in a circuit as shown. If the equivalent resistance between points A and B is X ohm, then the value of X is ____ ohm.",
+          "options": {
+            "1": "(sqrt(3)-1)R",
+            "2": "R",
+            "3": "2(sqrt(3)-1)R",
+            "4": "(sqrt(3)+1)R"
+          },
+          "answer": "1",
+          "solution": "(2R+x)*R/(3R+x) = x leads to x^2+2Rx-2R^2=0, giving x = (sqrt(3)-1)R."
+        },
+        {
+          "number": 41,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "The energy of an electron in an orbit of the Bohr atom is -0.04*E0 eV, where E0 is the ground state energy. If L is the angular momentum of the electron in this orbit and h is Planck's constant, then 2*pi*L/h is ____:",
+          "options": {
+            "1": "2",
+            "2": "4",
+            "3": "5",
+            "4": "6"
+          },
+          "answer": "3",
+          "solution": "Angular momentum L = nh/2pi => n = 2piL/h. Energy E = -13.6z^2/n^2 => -E0/n^2 = -0.04E0 => n^2=25, n=5."
+        },
+        {
+          "number": 42,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "An infinitely long straight wire carrying current I is bent in a planar shape as shown (two straight segments and a circular loop of radius r). The magnetic field at the centre O of the circular loop is:",
+          "options": {
+            "1": "(mu0*I/2*pi*r)*(pi+1) i-hat",
+            "2": "-(mu0*I/2*pi*r)*(pi-1) i-hat",
+            "3": "(mu0*I/2*pi*r)*(pi-1) i-hat",
+            "4": "-(mu0*I/2*pi*r)*(pi+1) i-hat"
+          },
+          "answer": "2",
+          "solution": "B0 = B_AB + B_DE + B_BCD (contributions from straight wires and 3/4 circular arc). Combining: B0 = (mu0*i/2*pi*r)(1-pi) i-hat = -(mu0*i/2*pi*r)(pi-1) i-hat."
+        },
+        {
+          "number": 43,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A large drum of radius R spins around its axis with angular velocity omega. The minimum value of omega so that a body of mass M remains stuck to the inner wall of the drum (coefficient of friction mu) is:",
+          "options": {
+            "1": "sqrt(mu*g/R)",
+            "2": "sqrt(2g/(mu*R))",
+            "3": "sqrt(g/(2*mu*R))",
+            "4": "sqrt(g/(mu*R))"
+          },
+          "answer": "4",
+          "solution": "N = m*omega^2*r provides centripetal force; friction mu*N supports weight mg. mu*m*omega^2*r = mg => omega = sqrt(g/(mu*r))."
+        },
+        {
+          "number": 44,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A body of mass 2 kg moves along x-direction with displacement x(t) = alpha*t^2 + beta*t + gamma, where alpha=1 m/s^2, beta=1 m/s, gamma=1 m. The work done on the body from t=2s to t=3s is ____ J.",
+          "options": {
+            "1": "49",
+            "2": "42",
+            "3": "24",
+            "4": "12"
+          },
+          "answer": "3",
+          "solution": "x(t)=t^2+t+1, v(t)=2t+1, a(t)=2, F=4N (constant). Displacement from t=2 to t=3: x(3)-x(2)=13-7=6m. W=F*S=4*6=24 J."
+        },
+        {
+          "number": 45,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "As shown, when the incident ray is parallel to the base of the prism, the emergent ray grazes along the second surface, with base angle 45 degrees. If the refractive index of the prism material is sqrt(2), the angle theta of the prism is:",
+          "options": {
+            "1": "60",
+            "2": "75",
+            "3": "90",
+            "4": "45"
+          },
+          "answer": "1",
+          "solution": "For grazing emergence sin(r2)=1/mu. By Snell's law at incidence: (1)(1/sqrt2)=sqrt2*sin(r1) => r1=30 deg. A = r1+r2 = 75 deg. Then 75+45+theta=180 => theta=60 degrees."
+        },
+        {
+          "number": 46,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "An electromagnetic wave of frequency 100 MHz propagates through a medium of conductivity sigma=10 mho/m. The ratio of maximum conduction current density to maximum displacement current density is ____. (Take 1/(4*pi*epsilon0) = 9x10^9 Nm^2/C^2)",
+          "answer": "1800",
+          "solution": "jc_max = sigma*E0, jd_max = epsilon0*E0*omega. Ratio = sigma/(epsilon0*omega) = (10*4*pi*9x10^9)/(2*pi*100x10^6) = 1800."
+        },
+        {
+          "number": 47,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "The terminal velocity of a metallic ball of radius 6 mm in a viscous fluid is 20 cm/s. The terminal velocity of another ball of the same material with radius 3 mm in the same fluid will be ____ cm/s.",
+          "answer": "5",
+          "solution": "Terminal velocity proportional to radius^2. (vT1/vT2) = (6/3)^2 = 4. vT2 = 20/4 = 5 cm/s."
+        },
+        {
+          "number": 48,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "A particle having electric charge 3x10^-19 C and mass 6x10^-27 kg is accelerated by applying an electric potential of 1.21 V. Wavelength of the matter wave associated with the particle is alpha x 10^-12 m. The value of alpha is ____. (Take Planck's constant = 6.6x10^-34 J.s)",
+          "answer": "10",
+          "solution": "lambda = h/sqrt(2mqV) = 6.6x10^-34 / sqrt(2*18x10^-46*1.21) = 10^-11 m = 10x10^-12 m. So alpha=10."
+        },
+        {
+          "number": 49,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "In a Young's double slit experiment set up, the two slits are kept 0.4 mm apart and screen is placed 1 m from the slits. A thin transparent sheet of thickness 20 micrometers is introduced in front of one slit, and the centre fringe shifts by 20 mm on the screen. The refractive index of the sheet is alpha/10, where alpha is ____.",
+          "answer": "14",
+          "solution": "y_shift = (mu-1)*t*D/d. 20x10^-3 = (mu-1)*20x10^-6*1/(0.4x10^-3). (mu-1)=0.4, mu=1.4. alpha/10=1.4 => alpha=14."
+        },
+        {
+          "number": 50,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "A diatomic gas (gamma=1.4) does 100 J of work when it is expanded isobarically. Then the heat given to the gas is ____ J.",
+          "answer": "350",
+          "solution": "W=100J=nR*DeltaT (isobaric). Q = nCp*DeltaT = (f/2+1)*nR*DeltaT = (7/2)*100 = 350 J."
+        },
+        {
+          "number": 26,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Potential energy (V) versus distance (x) is given by a graph with segments AB, BC, CD, DE. Rank various regions as per the magnitudes of the force (F) acting on a particle from high to low.",
+          "options": {
+            "1": "F_BC > F_CD > F_DE > F_AB",
+            "2": "F_CD > F_AB > F_BC > F_DE",
+            "3": "F_CD > F_DE > F_AB > F_BC",
+            "4": "F_BC > F_AB > F_DE > F_CD"
+          },
+          "answer": "4",
+          "solution": "Force = negative of slope of the V-x curve. Comparing slopes of segments BC, AB, DE, CD from the graph gives F_BC > F_AB > F_DE > F_CD."
+        },
+        {
+          "number": 27,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A gas based geyser heats water flowing at the rate of 5.0 litres per minute from 27degC to 87degC. The rate of consumption of the gas is ____ g/s. (heat of combustion of gas = 5.0x10^4 J/g, specific heat capacity of water = 4200 J/kg.degC)",
+          "options": {
+            "1": "2.1",
+            "2": "4.2",
+            "3": "0.42",
+            "4": "0.21"
+          },
+          "answer": "3",
+          "solution": "Water flow rate = 5/60 kg/s. Power of heater = (dm/dt)*S*deltaT = (1/12)*4200*60 W. Rate of gas consumption x satisfies x*5.0x10^4 = (1/12)*4200*60, giving x = 0.42 g/s."
+        },
+        {
+          "number": 28,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A conducting circular loop of area 1.0 m^2 is placed perpendicular to a magnetic field which varies as B = sin(100t) Tesla. If the resistance of the loop is 100 ohm, then the average thermal energy dissipated in the loop in one period is ____ J.",
+          "options": {
+            "1": "pi/2",
+            "2": "2*pi",
+            "3": "pi",
+            "4": "pi^2"
+          },
+          "answer": "3",
+          "solution": "EMF = d(phi)/dt = 100cos(100t). P = V^2/R = 10^4*cos^2(100t)/100. Integrating P over one period T=2pi/100=pi/50 gives thermal energy Q = 100*Integral(0 to pi/50) cos^2(100t)dt = 100*[pi/100] = pi."
+        },
+        {
+          "number": 29,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Water flows through a horizontal tube as shown. The difference in height between water columns in vertical tubes is 5 cm, and the areas of cross-section at A and B are 6 cm^2 and 3 cm^2 respectively. The rate of flow will be ____ cm^3/s. (g=10 m/s^2)",
+          "options": {
+            "1": "200/sqrt(3)",
+            "2": "200*sqrt(6)",
+            "3": "200*sqrt(3)",
+            "4": "100*sqrt(3)"
+          },
+          "answer": "3",
+          "solution": "From continuity: A_A*V_A = A_B*V_B => V_B=2V_A. Bernoulli's equation between A and B: rho*g*0.05 = (1/2)*rho*(V_B^2-V_A^2) = (1/2)*rho*3*V_A^2. Solving V_A = sqrt(2g*0.05/3) = 100/sqrt(3) cm/s. Volume flow rate = A_A*V_A = 6*100/sqrt(3) = 200*sqrt(3) cm^3/s."
+        },
+        {
+          "number": 30,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "In an experiment the values of two spring constants were measured as k1=(10+-0.2) N/m and k2=(20+-0.3) N/m. If these springs are connected in parallel, then the percentage error in equivalent spring constant is:",
+          "options": {
+            "1": "2.67%",
+            "2": "2.33%",
+            "3": "1.33%",
+            "4": "1.67%"
+          },
+          "answer": "4",
+          "solution": "For parallel combination, K_eq=K1+K2=30 N/m, Delta(K_eq)=0.2+0.3=0.5 N/m. %Error = (0.5/30)*100 = 1.67%."
+        },
+        {
+          "number": 31,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A 4 kg mass moves under the influence of a force F = (4t^3 i - 3t j) N, where t is time in seconds. If mass starts from origin at t=0, the velocity and position after t=2s will be:",
+          "options": {
+            "1": "v = 3i + (3/2)j; r = (6/5)i + j",
+            "2": "v = 4i - (3/2)j; r = (8/5)i - j",
+            "3": "v = 4i + (5/2)j; r = (8/5)i + 2j",
+            "4": "v = 4i - (3/2)j; r = (6/5)i - j"
+          },
+          "answer": "2",
+          "solution": "a = F/m = t^3*i - (3/4)t*j. Integrating: vx = t^4/4, at t=2 vx=4; vy = -(3/8)t^2, at t=2 vy=-3/2. So v=4i-1.5j. Integrating again: x=t^5/20, at t=2 x=8/5; y=-t^3/8, at t=2 y=-1. So r=(8/5)i-j."
+        },
+        {
+          "number": 32,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Consider a modified Bernoulli equation: (P + A/(Bt^2)) + rho*g*(h+Bt) + (1/2)*rho*V^2 = constant. If t has the dimension of time, then the dimensions of A and B are ____, ____ respectively.",
+          "options": {
+            "1": "[ML^0 T^-1] and [M^0 LT]",
+            "2": "[ML^0 T^-1] and [M^0 LT^-1]",
+            "3": "[ML^0 T^-2] and [M^0 LT^-2]",
+            "4": "[ML^0 T^-2] and [M^0 LT^-1]"
+          },
+          "answer": "2",
+          "solution": "From [h]=[Bt], [B]=[h]/[t]=[L]/[T]=[LT^-1]. From [P]=[A/(Bt^2)], [A]=[P]*[B]*[t^2] = [ML^-1T^-2]*[LT^-1]*[T^2] = [ML^0T^-1]."
+        },
+        {
+          "number": 33,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A current-carrying solenoid is placed vertically and a particle of mass m with charge Q is released from rest. The particle moves along the axis of the solenoid. If g is acceleration due to gravity, the acceleration (a) of the charged particle will satisfy:",
+          "options": {
+            "1": "a = g",
+            "2": "a > g",
+            "3": "a = 0",
+            "4": "0 < a < g"
+          },
+          "answer": "1",
+          "solution": "Since the particle moves along the axis (velocity parallel to B), the magnetic force F=q(v x B)=0. So net force is just gravity, giving a=g."
+        },
+        {
+          "number": 34,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A parallel plate capacitor has capacitance C when there is vacuum within the parallel plates. A sheet having thickness (1/3)rd of the separation between the plates and relative permittivity K is introduced between the plates. The new capacitance of the system is:",
+          "options": {
+            "1": "3KC/(2K+1)",
+            "2": "CK/(2+K)",
+            "3": "3CK^2/(2K+1)^2",
+            "4": "4KC/(3K-1)"
+          },
+          "answer": "1",
+          "solution": "The capacitor splits into two series capacitors: C1 (2d/3 gap, vacuum) = (3/2)C, and C2 (d/3 gap with dielectric K) = 3KC. Series combination Ceq = C1*C2/(C1+C2) = 3KC/(2K+1)."
+        },
+        {
+          "number": 35,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "The electric field of a plane electromagnetic wave is given by: Ey = 69sin[0.6x10^3 x - 1.8x10^11 t] V/m. The expression for the magnetic field associated with this wave is ____ T.",
+          "options": {
+            "1": "Bz = 2.3x10^-7 sin[0.6x10^3 x - 1.8x10^11 t]",
+            "2": "Bz = 2.3x10^-7 sin[0.6x10^3 x + 1.8x10^11 t]",
+            "3": "By = 69 sin[0.6x10^3 x + 1.8x10^11 t]",
+            "4": "By = 2.3x10^-7 sin[0.6x10^3 x - 1.8x10^11 t]"
+          },
+          "answer": "1",
+          "solution": "Direction: c-hat = i-hat (wave travels along x), E-hat=j-hat, so B-hat=i x j=k-hat (Bz). Magnitude |B|=|E|/c = (69*0.6x10^3)/(1.8x10^11) = 69/(3x10^8) ~ 2.3x10^-7 T. Phase matches E field: Bz = 2.3x10^-7 sin(0.6x10^3 x - 1.8x10^11 t)."
+        },
+        {
+          "number": 36,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "In a double slit experiment the distance between the slits is 0.1 cm and the screen is placed at 50 cm from the slits plane. When one slit is covered with a transparent sheet of thickness t and refractive index n=1.5, the central fringe shifts by 0.2 cm. The value of t is ____ cm.",
+          "options": {
+            "1": "8x10^-4",
+            "2": "6.0x10^-3",
+            "3": "5.6x10^-4",
+            "4": "5.0x10^-3"
+          },
+          "answer": "1",
+          "solution": "d*sin(theta) = (mu-1)*t, i.e., d*(x/D) = (mu-1)*t. t = xd/(D(mu-1)) = (0.2*0.1)/(50*(1.5-1)) = 8x10^-4 cm."
+        },
+        {
+          "number": 37,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A light wave described by E = 60sin[(3x10^15)t] + sin[(12x10^15)t] (in SI units) falls on a metal surface of work function 2.8 eV. The maximum kinetic energy of the ejected photoelectron is (approximately) ____ eV. (h=6.6x10^-34 J-s, e=1.6x10^-19 C)",
+          "options": {
+            "1": "5.1",
+            "2": "3.8",
+            "3": "6.0",
+            "4": "7.8"
+          },
+          "answer": "1",
+          "solution": "The higher frequency component omega2=12x10^15 rad/s dominates photoemission. v=omega/2pi. E_photon = h*v = 6.6x10^-34*1.91x10^15 = 1.26x10^-18 J = 7.9 eV. K_max = E_photon - work function = 7.9 - 2.8 = 5.1 eV."
+        },
+        {
+          "number": 38,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "If an alpha particle with energy 7.7 MeV is bombarded on a thin gold foil, the closest distance from the nucleus it can reach is ____ m. (Atomic number of gold = 79, 1/(4*pi*epsilon0) = 9x10^9 SI units)",
+          "options": {
+            "1": "2.95x10^-14",
+            "2": "2.95x10^-16",
+            "3": "3.85x10^-16",
+            "4": "3.85x10^-14"
+          },
+          "answer": "1",
+          "solution": "By energy conservation, KE = k*q_alpha*q_gold/r. 7.7x10^6*1.6x10^-19 = 9x10^9*(1.6x10^-19)*(79*1.6x10^-19)/r. Solving gives r = 2.95x10^-14 m."
+        },
+        {
+          "number": 39,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A uniform rod of mass m and length l is suspended by means of two identical inextensible light strings as shown. Tension in one string immediately after the other string is cut, is ____. (g = acceleration due to gravity)",
+          "options": {
+            "1": "mg/2",
+            "2": "mg/4",
+            "3": "mg/3",
+            "4": "mg"
+          },
+          "answer": "2",
+          "solution": "Taking torque about the pivot (remaining string attachment point): mg*(l/2) = (ml^2/3)*alpha => alpha = 3g/(2l). Then T = mg - m*(l/2)*alpha = mg - m*(l/2)*(3g/(2l)) = mg - (3/4)mg = mg/4."
+        },
+        {
+          "number": 40,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Aluminium and steel rods having the same lengths and cross-sections are joined to make a total length of 120 cm at 30degC. The coefficient of linear expansion of aluminium and steel are 24x10^-6/degC and 1.2x10^-5/degC respectively. The length of this composite rod when its temperature is raised to 100degC, is ____ cm.",
+          "options": {
+            "1": "120.20",
+            "2": "120.15",
+            "3": "120.03",
+            "4": "120.06"
+          },
+          "answer": "2",
+          "solution": "Each rod has original length 60 cm. l_final = l0*[2 + (alpha_A+alpha_B)*deltaT] = 60*[2 + (24x10^-6+12x10^-6)*70] = 60*[2+0.0025] wait recompute: (24+12)x10^-6*70=36x10^-6*70=0.00252... Using given values: l_final = 60*[2 + (36x10^-6)*70] = 60*[2+0.00252] = 120.15 cm."
+        },
+        {
+          "number": 41,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A 1 m long metal rod AB completes the circuit as shown. The area of circuit is perpendicular to the magnetic field of 0.10 T. If the resistance of the total circuit is 2 ohm, then the force needed to move the rod towards right with constant speed (v) of 1.5 m/s is ____ N.",
+          "options": {
+            "1": "7.5x10^-2",
+            "2": "5.7x10^-3",
+            "3": "5.7x10^-2",
+            "4": "7.5x10^-3"
+          },
+          "answer": "4",
+          "solution": "To maintain constant speed, F_ext = F_B = i*l*B = (vBl/R)*l*B = B^2*l^2*v/R = (0.1)^2*(1)^2*1.5/2 = 7.5x10^-3 N."
+        },
+        {
+          "number": 42,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A circuit consists of two NOR gates feeding into a NOR gate, then into a NOR gate again (as shown). The given circuit works as:",
+          "options": {
+            "1": "AND gate",
+            "2": "NOR gate",
+            "3": "NAND gate",
+            "4": "OR gate"
+          },
+          "answer": "3",
+          "solution": "P = A-bar (NOR with itself), Q = B-bar. R = NOR(P,Q) = (P+Q)-bar = (A-bar+B-bar)-bar = AB (using De Morgan's). S = (AB)-bar (final NOR with itself) = NAND gate."
+        },
+        {
+          "number": 43,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Two strings (A,B) having linear densities mu_A=2x10^-4 kg/m and mu_B=4x10^-4 kg/m and lengths L_A=2.5m and L_B=1.5m respectively are joined. Free ends of A and B are tied to two rigid supports C and D creating a tension of 500N in the wire. Two identical pulses sent from C and D ends take time t1 and t2 respectively to reach the joint. The ratio t1/t2 is:",
+          "options": {
+            "1": "1.08",
+            "2": "1.90",
+            "3": "1.67",
+            "4": "1.18"
+          },
+          "answer": "4",
+          "solution": "V_A = sqrt(T/mu_A) = sqrt(500/(2x10^-4)) = 5*sqrt(10)x10^2 m/s. V_B = sqrt(500/(4x10^-4)) = 5*sqrt(5)x10^2 m/s. t1=L_A/V_A, t2=L_B/V_B. t1/t2 = (2.5/5sqrt10)/(1.5/5sqrt5) = (2.5*5sqrt5)/(5sqrt10*1.5) = 1.18."
+        },
+        {
+          "number": 44,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Initially a satellite of 100 kg is in a circular orbit of radius 1.5*R_E. This satellite can be moved to a circular orbit of radius 3*R_E by supplying alpha x10^6 J of energy. The value of alpha is ____. (R_E=6x10^6 m, g=10 m/s^2)",
+          "options": {
+            "1": "150",
+            "2": "500",
+            "3": "100",
+            "4": "1000"
+          },
+          "answer": "4",
+          "solution": "Energy of satellite in circular orbit: E=-GM_E*m/(2r). Required energy = E_final - E_initial = GM_E*m/(6*R_E). Using g=GM_E/R_E^2 => GM_E=g*R_E^2, so deltaE = g*m*R_E/6 = (10*100*6x10^6)/6 = 1000x10^6 J. alpha=1000."
+        },
+        {
+          "number": 45,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A point charge of 10^-8 C is placed at origin. The work done in moving a point charge 2 microC from point A(4,4,2)m to B(2,2,1)m is ____ J. (1/(4*pi*epsilon0) = 9x10^9 SI units)",
+          "options": {
+            "1": "45x10^-6",
+            "2": "0",
+            "3": "30x10^-6",
+            "4": "15x10^-6"
+          },
+          "answer": "3",
+          "solution": "r_f = sqrt((2)^2+(2)^2+(1)^2) = 3m; r_i = sqrt(4^2+4^2+2^2) = 6m. W_ext = k*q1*q2*(1/r_f - 1/r_i) = 9x10^9*(10^-8*2x10^-6)*(1/3-1/6) = 3x10^-5 = 30x10^-6 J."
+        },
+        {
+          "number": 46,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "A collimated beam of light of diameter 2 mm is propagating along the x-axis. The beam is required to be expanded into a collimated beam of diameter 14 mm using a system of two convex lenses. If the first lens has focal length 40 mm, then the focal length of the second lens is ____ mm.",
+          "answer": "280",
+          "solution": "Using similar triangles for beam expansion: 40/2 = f/14, giving f = 280 mm."
+        },
+        {
+          "number": 47,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "The heat generated in 1 minute between points A and B in the given circuit, when a battery of 9V with internal resistance 1 ohm is connected across these points, is ____ J.",
+          "answer": "1080",
+          "solution": "The bridge is a balanced Wheatstone bridge (1ohm/2ohm on one side, 2ohm/4ohm on the other with 1ohm bridge resistor carrying no current), so it reduces to two parallel branches equivalent to 2 ohm between A and B. With 9V battery and 1ohm internal resistance, i=9/3=3A. Heat H_AB = i^2*R_AB*t = 3^2*2*60 = 1080 J."
+        },
+        {
+          "number": 48,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "Two identical thin rods of mass M kg and length L m are connected in a T-shape as shown. Moment of inertia of the combined rod system about an axis passing through point P (top of vertical rod) and perpendicular to the plane of the rods is (X/2)*M*L^2 kg.m^2. The value of X is ____.",
+          "answer": "17",
+          "solution": "I = ML^2/3 (vertical rod about end P) + [ML^2/12 + ML^2] (horizontal rod about P, using parallel axis theorem) = ML^2/3 + 13ML^2/12 = (4ML^2+ML^2+12ML^2)/12 = 17ML^2/12. So X/2 = 17/12, giving X=17 (using I=17ML^2/12 directly, X=17)."
+        },
+        {
+          "number": 49,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "10 mole of oxygen is heated at constant volume from 30degC to 40degC. The change in the internal energy of the gas is ____ cal. (Molecular specific heat of oxygen at constant pressure Cp=7 cal/mol.degC, R=2 cal/mol.degC)",
+          "answer": "500",
+          "solution": "deltaU = n*Cv*deltaT = n*(Cp-R)*deltaT = 10*(7-2)*(40-30) = 10*5*10 = 500 cal."
+        },
+        {
+          "number": 50,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "In a microscope the objective is having focal length f0=2 cm and eye-piece is having focal length fe=4 cm. The tube length is 32 cm. The magnification produced by this microscope for normal adjustment is ____.",
+          "answer": "100",
+          "solution": "m = (length*D)/(f0*fe) = (32*25)/(2*4) = 800/8 = 100."
+        },
+        {
+          "number": 26,
+          "type": "MCQ",
+          "question": "If ε, E and t represent the free space permittivity, electric field and time respectively, then the unit of εE/t will be:",
+          "options": [
+            "Am",
+            "Am²",
+            "A/m²",
+            "A/m"
+          ],
+          "answer": "A/m²",
+          "solution": "εE/t = (ε/t)(q/4πεr²) = AT/(TL²) = A/m²."
+        },
+        {
+          "number": 27,
+          "type": "MCQ",
+          "question": "Using a simple pendulum experiment g is determined by measuring its time period T. Which of the following plots represent the correct relation between the pendulum length L and time period T?",
+          "options": [
+            "Plot 1",
+            "Plot 2",
+            "Plot 3",
+            "Plot 4"
+          ],
+          "answer": "Plot 2",
+          "solution": "T²=4π²L/g ⇒ 1/T² = g/(4π²L), a decreasing curve approaching zero (rectangular hyperbola type) — matches plot 2."
+        },
+        {
+          "number": 28,
+          "type": "MCQ",
+          "question": "Consider two boxes containing ideal gases A and B such that their temperatures, pressures and number densities are same. The molecular size of A is half of that of B and mass of molecule A is four times that of B. If the collision frequency in gas B is 32×10¹⁸ per sec then collision frequency in gas A is ____ /s.",
+          "options": [
+            "32×10⁸",
+            "4×10⁸",
+            "2×10⁸",
+            "8×10⁸"
+          ],
+          "answer": "Dropped by JEE (data error; with Z=32×10⁸ correct answer is 4×10⁸)",
+          "solution": "Z ∝ d²/√M. Z_A/Z_B = (d_A/d_B)²×√(M_B/M_A) = (1/4)×(1/2) = 1/8. With corrected Z_B=32×10⁸, Z_A = 4×10⁸/s."
+        },
+        {
+          "number": 29,
+          "type": "MCQ",
+          "question": "A uniform bar of length 12 cm and mass 20m lies on a smooth horizontal table. Two point masses m and 2m are moving in opposite directions with same speed v, in the same plane as the bar, and strike the bar simultaneously, sticking to it. After collision the system rotates with angular frequency ω. The ratio of v and ω is:",
+          "options": [
+            "33",
+            "2√88",
+            "66",
+            "32"
+          ],
+          "answer": "33",
+          "solution": "Using angular momentum conservation about COM of rod: 8mV = 264mω ⇒ V/ω = 33."
+        },
+        {
+          "number": 30,
+          "type": "MCQ",
+          "question": "Three small identical bubbles of water having same charge on each coalesce to form a bigger bubble. Then the ratio of the potentials on one initial bubble and that on the resultant bigger bubble is:",
+          "options": [
+            "1:3^(1/3)",
+            "1:2^(2/3)",
+            "3^(2/3):1",
+            "1:3^(2/3)"
+          ],
+          "answer": "1:3^(2/3)",
+          "solution": "Volume conservation: R=3^(1/3)r. Vi/Vf = (kq/r)/(k3q/R) = R/3r = 1/3^(2/3)."
+        },
+        {
+          "number": 31,
+          "type": "MCQ",
+          "question": "In parallax method for the determination of focal length of a concave mirror, the object should always be placed:",
+          "options": [
+            "between F and C only",
+            "at any point beyond focus F",
+            "beyond centre of curvature C only",
+            "between pole P and focus F only"
+          ],
+          "answer": "at any point beyond focus F",
+          "solution": "Image should be real, so the object must be placed beyond the focus."
+        },
+        {
+          "number": 32,
+          "type": "MCQ",
+          "question": "The smallest wavelength of Lyman series is 91 nm. The difference between the largest wavelengths of Paschen and Balmer series is nearly ____ nm.",
+          "options": [
+            "1875",
+            "1550",
+            "1217",
+            "1784"
+          ],
+          "answer": "1217",
+          "solution": "R=1/91 nm⁻¹. λ(Balmer max)=655.2 nm, λ(Paschen max)=1872 nm. Δλ=1872-655.2≈1217 nm."
+        },
+        {
+          "number": 33,
+          "type": "MCQ",
+          "question": "In an open organ pipe v3 and v6 are 3rd and 6th harmonic frequencies, respectively. If v6-v3=2200 Hz then length of the pipe is ____ mm. (Take velocity of sound in air is 330 m/s.)",
+          "options": [
+            "275",
+            "225",
+            "200",
+            "250"
+          ],
+          "answer": "225",
+          "solution": "3V₀/2L = 2200 ⇒ L=3×330/(2×2200)=0.225 m = 225 mm."
+        },
+        {
+          "number": 34,
+          "type": "MCQ",
+          "question": "When a part of a straight capillary tube is placed vertically in a liquid, the liquid rises to height h. If the inner radius, density and surface tension all decrease by 1% each, the height of liquid in the tube will change by ____ %.",
+          "options": [
+            "-1",
+            "+3",
+            "-3",
+            "+1"
+          ],
+          "answer": "+1",
+          "solution": "h=2Tcosθ/(ρgr). %Δh = %ΔT - %Δρ - %Δr = 1+1+1 = +1%."
+        },
+        {
+          "number": 35,
+          "type": "MCQ",
+          "question": "The correct truth table for the given input data of the logic gate circuit (NOR/NAND combination) is:",
+          "options": [
+            "Table 1",
+            "Table 2",
+            "Table 3",
+            "Table 4"
+          ],
+          "answer": "Table 2",
+          "solution": "Y = (A·B)' · (C+D) simplified = (A·B) + (C+D)'; matches truth table option 2."
+        },
+        {
+          "number": 36,
+          "type": "MCQ",
+          "question": "An electric power line having total resistance of 2Ω, delivers 1 kW of power at 250 V. The percentage efficiency of transmission line is ____.",
+          "options": [
+            "96.9",
+            "86.5",
+            "100",
+            "92.5"
+          ],
+          "answer": "96.9",
+          "solution": "I=4A, P_loss=I²R=32W, P_net=1032W, η=1000/1032×100=96.9%."
+        },
+        {
+          "number": 37,
+          "type": "MCQ",
+          "question": "The wavelength of light, while passing through water is 540 nm. The refractive index of water is 4/3. The wavelength of the same light when passing through a medium of refractive index 3/2 is ____ nm.",
+          "options": [
+            "380",
+            "840",
+            "480",
+            "540"
+          ],
+          "answer": "480",
+          "solution": "μ1/μ2 = λ2/λ1 ⇒ λ = (4/3)/(3/2) × 540 = 480 nm."
+        },
+        {
+          "number": 38,
+          "type": "MCQ",
+          "question": "A circuit contains three resistances (9Ω each) and two inductors (4 mH each). The reading of ammeter at the moment switch K is turned ON is ____ A.",
+          "options": [
+            "1",
+            "zero",
+            "3",
+            "2"
+          ],
+          "answer": "1",
+          "solution": "Just after closing switch, inductors act as open circuits, so I = 9/9 = 1A."
+        },
+        {
+          "number": 39,
+          "type": "MCQ",
+          "question": "Statement I: A satellite moving very close to earth's surface has time period depending on density of earth. Statement II: T=2π√(Re/g) for satellite very close to earth's surface.",
+          "options": [
+            "Both false",
+            "Both true",
+            "I true, II false",
+            "I false, II true"
+          ],
+          "answer": "Both true",
+          "solution": "T=2π√(R³/GM), M=ρ(4/3)πR³, so T=2π√(1/(Gρ(4/3)π)) — depends on density (Statement I true). Also GM/R²=g gives T=2π√(R/g) (Statement II true)."
+        },
+        {
+          "number": 40,
+          "type": "MCQ",
+          "question": "Which of the following are true for a single slit diffraction? (A) Width of central maxima increases with increase in wavelength (const. slit width). (B) increases with decrease in wavelength. (C) increases with decrease in slit width. (D) increases with increase in slit width. (E) Brightness of central maxima increases for decrease in wavelength at constant slit width.",
+          "options": [
+            "A, D, E only",
+            "A, D only",
+            "B, D only",
+            "B, C only"
+          ],
+          "answer": "Dropped by JEE (correct statements are A, C, E — no matching option)",
+          "solution": "β=2λD/a. β∝λ (A correct), β∝1/d (C correct), and E is correct. No given option matches A,C,E, so JEE dropped this question."
+        },
+        {
+          "number": 41,
+          "type": "MCQ",
+          "question": "Statement I: An object moves from position r1 to r2 under a conservative force field F. The work done is W = -∫F·dr. Statement II: Since infinite paths are possible, work done by a conservative force changes with path.",
+          "options": [
+            "Both true",
+            "I false, II true",
+            "I true, II false",
+            "Both false"
+          ],
+          "answer": "Both false",
+          "solution": "Correct equation is W=+∫F·dr (Statement I incorrect). Work done by a conservative force is path-independent (Statement II incorrect)."
+        },
+        {
+          "number": 42,
+          "type": "MCQ",
+          "question": "Five positive charges each having charge q are placed at the vertices of a pentagon. The electric potential (V) and electric field (E) at the center O due to these charges are:",
+          "options": [
+            "V=5q/(4πε₀r), E=0",
+            "V=5q/(4πε₀r), E=(5√3q/8πε₀r²) r̂",
+            "V=5q/(4πε₀r), E=(5q/4πε₀r²) r̂",
+            "V=0, E=0"
+          ],
+          "answer": "V=5q/(4πε₀r), E=0",
+          "solution": "By symmetry of a regular polygon, the net electric field at the center is zero while the potential adds up as V=5kq/R."
+        },
+        {
+          "number": 43,
+          "type": "MCQ",
+          "question": "A laser beam has intensity of 4.0×10¹⁴ W/m². The amplitude of magnetic field associated with beam is ____ T. (ε₀=8.85×10⁻¹² C²/Nm², c=3×10⁸ m/s)",
+          "options": [
+            "2.0",
+            "18.3",
+            "5.5",
+            "1.83"
+          ],
+          "answer": "1.83",
+          "solution": "B0 = (1/c)√(2I/(ε₀c)) ≈ 1.83 T."
+        },
+        {
+          "number": 44,
+          "type": "MCQ",
+          "question": "Light is incident on a metallic plate having work function 110×10⁻²⁰ J. If the produced photoelectrons have zero kinetic energy then the angular frequency of the incident light is ____ rad/s. (h=6.63×10⁻³⁴ J.s)",
+          "options": [
+            "1.04×10¹⁶",
+            "1.04×10¹³",
+            "1.66×10¹⁶",
+            "1.66×10¹⁵"
+          ],
+          "answer": "1.04×10¹⁶",
+          "solution": "φ=hν ⇒ ω=2πφ/h = 1.04×10¹⁶ rad/sec."
+        },
+        {
+          "number": 45,
+          "type": "MCQ",
+          "question": "Statement I: For a mechanical system of many particles total kinetic energy is the sum of kinetic energies of all particles. Statement II: The total kinetic energy can be the sum of KE of center of mass w.r.t. origin and KE of particles w.r.t. center of mass.",
+          "options": [
+            "Both true",
+            "I true, II false",
+            "I false, II true",
+            "Both false"
+          ],
+          "answer": "Both true",
+          "solution": "KE = ½m1v1² + ½m2v2² = ½(m1+m2)v_cm² + ½(m1m2/(m1+m2))|v1-v2|² — both statements hold."
+        },
+        {
+          "number": 26,
+          "type": "MCQ",
+          "question": "A solid sphere of mass 5 kg and radius 10 cm is kept in contact with another solid sphere of mass 10 kg and radius 20 cm. The moment of inertia of this pair of spheres about the tangent passing through the point of contact is ____ kg.m^2.",
+          "options": {
+            "1": "0.36",
+            "2": "0.72",
+            "3": "0.18",
+            "4": "0.63"
+          },
+          "answer": "0.63",
+          "solution": "I = (7/5)[m1R1^2 + m2R2^2] = (7/5)[5(10)^2+10(20)^2]×10^-4 = 63×10^-2 = 0.63 kg.m^2."
+        },
+        {
+          "number": 27,
+          "type": "MCQ",
+          "question": "7.9 MeV alpha-particle scatters from a target material of atomic number 79. From the given data the estimated diameter of nuclei of the target material is (approximately) ____ m. [1/4πε0 = 9×10^9 Nm^2/C^2, e = 1.6×10^-19 C]",
+          "options": {
+            "1": "5.76×10^-14",
+            "2": "1.44×10^-13",
+            "3": "2.88×10^-14",
+            "4": "1.69×10^-12"
+          },
+          "answer": "5.76×10^-14",
+          "solution": "By energy conservation: 7.9×10^6×1.6×10^-19 = k(2e)(Ze)/r. Solving r = 2.88×10^-14 m. Diameter D=2r=5.76×10^-14 m."
+        },
+        {
+          "number": 28,
+          "type": "MCQ",
+          "question": "Six point charges are kept 60° apart from each other on the circumference of a circle of radius R (arrangement as shown, with charges +Q,-Q,+Q,+Q,-Q,+Q at alternating consecutive positions per figure). The net electric field at the centre of the circle is ____ (ε0 is permittivity of free space).",
+          "options": {
+            "1": "-5Q/(8πε0R^2)(i+√3j)",
+            "2": "-Q/(4πε0R^2)(√3i-j)",
+            "3": "-(5Q/8πε0R^2)(i-3j)",
+            "4": "Q/(4πε0R^2)(√3i-j)"
+          },
+          "answer": "-Q/(4πε0R^2) (√3 i - j)",
+          "solution": "Let KQ/r^2=E0. Resolving components of unpaired charges: E_net = 2E0cos30°(-i)+2E0sin30°(j) = (2kQ/r^2)[(√3/2)(-i)+(1/2)(j)] = -Q/(4πε0r^2)(√3 i - j)."
+        },
+        {
+          "number": 29,
+          "type": "MCQ",
+          "question": "XPQY is a vertical smooth long loop of total resistance R where PX is parallel to QY, separation l. A constant magnetic field B perpendicular to the loop's plane exists in the entire space. A rod CD of length L (L>l) and mass m slides down from rest under gravity. The terminal speed acquired by the rod is ____ m/s (g = acceleration due to gravity).",
+          "options": {
+            "1": "2mgR/(B^2 l^2)",
+            "2": "8mgR/(B^2 l^2)",
+            "3": "2mgR/(B^2 L^2)",
+            "4": "mgR/(B^2 l^2)"
+          },
+          "answer": "mgR/(B^2 l^2)",
+          "solution": "At terminal velocity, mg = iBl = (Bvl/R)Bl, giving v = mgR/(B^2 l^2)."
+        },
+        {
+          "number": 30,
+          "type": "MCQ",
+          "question": "The escape velocity from a spherical planet A is 10 km/s. The escape velocity from another planet B whose density and radius are 10% of those of planet A is ____ m/s.",
+          "options": {
+            "1": "1000",
+            "2": "200√5",
+            "3": "100√10",
+            "4": "1000√2"
+          },
+          "answer": "100√10",
+          "solution": "Ve = √(2GM/R) ∝ √ρ×R. (Ve)B/(Ve)A = √(0.1)×0.1 = 1/(10√10). (Ve)B = 10000/(10√10) = 100√10 m/s."
+        },
+        {
+          "number": 31,
+          "type": "MCQ",
+          "question": "A meter bridge with two resistances R1 and R2 was balanced (null point) at 40 cm from point P. The null point changed to 50 cm from P when 16Ω resistance is connected in parallel to R2. The values of R1 and R2 are ____.",
+          "options": {
+            "1": "R2=16Ω, R1=16/3Ω",
+            "2": "R2=4Ω, R1=4/3Ω",
+            "3": "R2=8Ω, R1=16/3Ω",
+            "4": "R2=12Ω, R1=12/3Ω"
+          },
+          "answer": "R2 = 8Ω, R1 = 16/3 Ω",
+          "solution": "R1/R2 = 40/60 = 2/3. After parallel combination: R1/(R2×16/(R2+16)) = 50/50, giving R1 = 16R2/(16+R2). Solving simultaneously gives R2=8Ω, R1=16/3 Ω."
+        },
+        {
+          "number": 32,
+          "type": "MCQ",
+          "question": "A projectile is thrown upward at an angle 60° with the horizontal. The speed of the projectile is 20 m/s when its direction of motion is 45° with the horizontal. The initial speed of the projectile is ____ m/s.",
+          "options": {
+            "1": "40√2",
+            "2": "40",
+            "3": "20√3",
+            "4": "20√2"
+          },
+          "answer": "20√2",
+          "solution": "Horizontal component conserved: u cos60° = 20/√2 (since vcos45°=20/√2). u/2 = 20/√2, u = 40/√2 = 20√2 m/s."
+        },
+        {
+          "number": 33,
+          "type": "MCQ",
+          "question": "Statement I: Pressure of fluid is exerted only on a solid surface in contact as fluid-pressure does not exist everywhere in a still fluid. Statement II: Excess potential energy of molecules on the surface of a liquid, compared to interior, results in surface tension. Choose the correct answer.",
+          "options": {
+            "1": "Statement I true, II false",
+            "2": "Both false",
+            "3": "Both true",
+            "4": "Statement I false, II true"
+          },
+          "answer": "Statement I is false but Statement II is true",
+          "solution": "By Pascal's law, pressure exists at every point in the liquid, not just at boundaries, so Statement I is false. Statement II correctly describes surface tension, so it is true."
+        },
+        {
+          "number": 34,
+          "type": "MCQ",
+          "question": "Find the correct combination of A, B, C and D inputs (logic gate circuit with NOR gates feeding a NAND gate to node P, and an XOR gate of C,D feeding node Q, driving an LED) which can cause the LED to glow.",
+          "options": {
+            "1": "0100",
+            "2": "0011",
+            "3": "1000",
+            "4": "1101"
+          },
+          "answer": "1101",
+          "solution": "LED glows in forward biasing: P must be at higher potential (1), Q at lower potential (0). Checking combination A=1,B=1,C=0,D=1 satisfies P=1, Q=0."
+        },
+        {
+          "number": 35,
+          "type": "MCQ",
+          "question": "Net gravitational force at the centre of a square is F1 when four particles of mass M,2M,3M,4M are placed at the corners as shown, and F2 when positions of 3M and 4M are interchanged. The ratio F1/F2 = α/√5. The value of α is ____.",
+          "options": {
+            "1": "2",
+            "2": "3",
+            "3": "1",
+            "4": "2√5"
+          },
+          "answer": "2",
+          "solution": "Initial configuration gives F1 = 2√2(Gmm0/r^2). New configuration gives F2 = √10(Gmm0/r^2). F1/F2 = 2√2/√10 = 2/√5, so α=2."
+        },
+        {
+          "number": 36,
+          "type": "MCQ",
+          "question": "The minimum frequency of photon required to break a particle of mass 15.348 amu into 4 alpha particles is ____ kHz. [mass of He nucleus = 4.002 amu, 1amu=1.66×10^-27 kg, h=6.6×10^-34 J.s, c=3×10^8 m/s]",
+          "options": {
+            "1": "9×10^19",
+            "2": "9×10^20",
+            "3": "14.94×10^20",
+            "4": "14.94×10^19"
+          },
+          "answer": "14.94×10^19",
+          "solution": "hν = (4×4.002 - 15.348)×1.66×10^-27×(3×10^8)^2. Solving ν = 14.94×10^19 kHz."
+        },
+        {
+          "number": 37,
+          "type": "MCQ",
+          "question": "A cylindrical tube AB of length l, closed at both ends, contains an ideal gas of 1 mol with molecular weight M. The tube is rotated in a horizontal plane with constant angular velocity ω about an axis perpendicular to AB passing through edge A. If PA and PB are pressures at A and B (temperature same throughout), then",
+          "options": {
+            "1": "PB=PA exp(Mω^2l^2/2RT)",
+            "2": "PB=PA",
+            "3": "PB=PA exp(Mω^2l^2/3RT)",
+            "4": "PB=PA exp(Mω^2l^2/RT)"
+          },
+          "answer": "PB = PA exp(Mω^2 l^2 / 2RT)",
+          "solution": "Force balance on a fluid element gives dP = (PM/RT)ω^2 x dx. Integrating from A to B: ln(PB/PA) = Mω^2l^2/(2RT), so PB = PA e^(Mω^2l^2/2RT)."
+        },
+        {
+          "number": 38,
+          "type": "MCQ",
+          "question": "Rods x and y of equal dimensions but different materials are joined in a diamond-bridge configuration (A-B-C-D-E-F with x and y rods). Temperatures of end points A and F are maintained at 100°C and 40°C. Thermal conductivity of rod x is three times that of rod y. The temperatures at junction points B and E are (close to):",
+          "options": {
+            "1": "89°C and 73°C",
+            "2": "80°C and 60°C",
+            "3": "80°C and 70°C",
+            "4": "60°C and 45°C"
+          },
+          "answer": "89°C and 73°C respectively",
+          "solution": "Using thermal resistance R=l/(3KA) for rod x and corresponding relations, solving the network equations gives 120=1100-11TA type relation, leading to TB=89°C and TE=73°C."
+        },
+        {
+          "number": 39,
+          "type": "MCQ",
+          "question": "A thin convex lens of focal length 5 cm and a thin concave lens of focal length 4 cm are combined together (without gap), giving magnification m1 for an object 10 cm before the convex lens. A gap of 1 cm is then introduced between the lenses by moving the concave lens away, changing magnification to m2. Find |m1/m2|.",
+          "options": {
+            "1": "5/9",
+            "2": "5/27",
+            "3": "3/2",
+            "4": "25/27"
+          },
+          "answer": "Dropped by JEE (none of the given options correct)",
+          "solution": "Initial combined lens: 1/f = 1/5-1/4 = -1/20, f=-20cm; with u=-10cm, v=uf/(u+f)=+20/3, m1=v/u=+2/3. New configuration (gap=1cm): 1st refraction (convex, f=5,u=-10) gives v=+10cm, m=-1; 2nd refraction (concave,f=-4,u=+9) gives m'=-4/5; m2=mm'=4/5. m1/m2 = (2/3)/(4/5) = 5/6. This does not match any given option, so the question was dropped by JEE."
+        },
+        {
+          "number": 40,
+          "type": "MCQ",
+          "question": "Consider an equilateral prism (refractive index √2). A ray of light is incident on its one surface at a certain angle i. If the emergent ray is found to graze along the other surface then the angle of refraction at the incident surface is close to",
+          "options": {
+            "1": "15°",
+            "2": "20°",
+            "3": "40°",
+            "4": "30°"
+          },
+          "answer": "15°",
+          "solution": "For grazing emergence, e=90°. μ sin(r2) = sin(e) = 1, giving sin(r2)=1/√2, r2=45°. Since A=60°, r1=A-r2=15°."
+        },
+        {
+          "number": 41,
+          "type": "MCQ",
+          "question": "The volume of an ideal gas increases 8 times and temperature becomes 1/4th of the initial temperature during a reversible adiabatic change. Identify the gas.",
+          "options": {
+            "1": "CO2",
+            "2": "O2",
+            "3": "NH3",
+            "4": "He"
+          },
+          "answer": "He",
+          "solution": "TV^(γ-1)=constant gives 4 = 8^(γ-1), so 2^2=2^(3γ-3), giving γ=5/3, which corresponds to a monoatomic gas, i.e. He."
+        },
+        {
+          "number": 42,
+          "type": "MCQ",
+          "question": "Electric field in a region is given by E = Ax i + By j, where A=10 V/m^2 and B=5 V/m^2. If the electric potential at point (10,20) is 500 V, then the electric potential at origin is ____ V.",
+          "options": {
+            "1": "1000",
+            "2": "500",
+            "3": "2000",
+            "4": "0"
+          },
+          "answer": "2000",
+          "solution": "ΔV = -∫E·dr. Integrating gives 500-V0 = -[5x^2+5y^2/2] from (0,0) to (10,20) = -(500+1000). So V0-500=1500, V0=2000 V."
+        },
+        {
+          "number": 43,
+          "type": "MCQ",
+          "question": "A simple pendulum has a bob with mass m and charge q. When a uniform horizontal electric field E is applied, the tension in the string changes. The final tension in the string at equilibrium is ____.",
+          "options": {
+            "1": "mg-qE",
+            "2": "mg+qE",
+            "3": "√(m^2g^2+q^2E^2)",
+            "4": "√(m^2g^2-q^2E^2)"
+          },
+          "answer": "√(m^2g^2 + q^2E^2)",
+          "solution": "At equilibrium, tension balances resultant of mg (vertical) and qE (horizontal): T = √((qE)^2+(mg)^2)."
+        },
+        {
+          "number": 44,
+          "type": "MCQ",
+          "question": "Match List-I (Spring constant, Thermal conductivity, Boltzmann constant, Inductive reactance) with List-II dimensional formulas.",
+          "options": {
+            "1": "A-II,B-I,C-IV,D-III",
+            "2": "A-I,B-IV,C-II,D-III",
+            "3": "A-III,B-II,C-IV,D-I",
+            "4": "A-II,B-IV,C-I,D-III"
+          },
+          "answer": "A-II, B-IV, C-I, D-III",
+          "solution": "Spring constant: [K]=ML^0T^-2 (II). Thermal conductivity: [K]=MLT^-3K^-1 (IV). Boltzmann constant: [K]=ML^2T^-2K^-1 (I). Inductive reactance: [V]/[I]=ML^2T^-3A^-2 (III)."
+        },
+        {
+          "number": 45,
+          "type": "MCQ",
+          "question": "Three identical coils C1, C2, C3 share a common axis, C2 exactly midway. C1 carries current I anti-clockwise, C3 carries current I clockwise. An induced current flows through C2 in clockwise direction when",
+          "options": {
+            "1": "C1 and C3 move away from C2 with equal speeds",
+            "2": "C1 moves towards C2, C3 moves away from C2",
+            "3": "C1 moves away from C2, C3 moves towards C2",
+            "4": "C1 and C3 move towards C2 with equal speeds"
+          },
+          "answer": "C1 moves towards C2 and C3 moves away from C2",
+          "solution": "Flux through C2 depends on (B_C2-B_C1) type relation; applying Lenz's law to determine the direction for the given motion condition, moving C1 towards C2 and C3 away from C2 produces the specified clockwise induced current."
+        },
+        {
+          "number": 46,
+          "type": "Numerical",
+          "question": "Two loudspeakers L1 and L2 are placed 10 m apart. Both are fed with an audio signal of the same frequency. A voice recorder starting at point A (equidistant from both speakers) is moved 25 m along line AB. The signal undergoes 10 cycles of minima and maxima. Find the frequency of the input signal in Hz. (Speed of sound = 324 m/s, √5=2.23)",
+          "options": null,
+          "answer": "600",
+          "solution": "Point B (after 25m) corresponds to the 10th maxima. Path difference Δx = L2B - L1B = 50-44.6 = 5.4 m = 10λ, so λ=0.54m. f=V/λ=324/0.54=600 Hz."
+        },
+        {
+          "number": 47,
+          "type": "Numerical",
+          "question": "The electric field of a plane EM wave in an unknown non-magnetic medium is Ey=20sin(3×10^6 x - 4.5×10^14 t) V/m. The dielectric constant of the medium is ____.",
+          "options": null,
+          "answer": "4",
+          "solution": "n=C/V, V=ω/k=4.5×10^14/(3×10^6)=1.5×10^8 m/s. n=C/V=2. Since n=√(μrεr) with μr=1, εr=n^2=4."
+        },
+        {
+          "number": 48,
+          "type": "Numerical",
+          "question": "A parallel beam of light in air (n=1.0) is incident on a convex spherical glass surface of radius of curvature 50 cm (glass n=1.5). The rays converge to a point at distance x cm from the centre of curvature. Find x.",
+          "options": null,
+          "answer": "100",
+          "solution": "Using refraction formula μ2/v - μ1/u = (μ2-μ1)/R: 1.5/v - 1/∞ = 0.5/50, giving v=150 cm. x = v - R = 150-50 = 100 cm."
+        },
+        {
+          "number": 49,
+          "type": "Numerical",
+          "question": "A circular disc has radius R1 and thickness T1. Another disc of same material has radius R2 and thickness T2. If moment of inertia of both discs are same and R1/R2=2, then T1/T2 = 1/α. Find α.",
+          "options": null,
+          "answer": "16",
+          "solution": "Using I=mR^2/2 with m=ρπR^2T, equating I1=I2 gives πR1^2T1ρR1^2 = πR2^2T2ρR2^2, leading to T1/T2 = (R2/R1)^4 = 1/16, so α=16."
+        },
+        {
+          "number": 50,
+          "type": "Numerical",
+          "question": "Inductance of a coil with 10^4 turns is 10 mH, connected to a dc source of 10V with internal resistance 10Ω. The energy density in the inductor when the current reaches (1/e) of maximum value is απ×(1/e^2) J/m^3. Find α. (μ0=4π×10^-7 Tm/A)",
+          "options": null,
+          "answer": "20",
+          "solution": "Max current I0=10/10=1A. Ed=B^2/(2μ0) with B=μ0nI and L=μ0n^2πR^2l. Ed = μ0n^2I^2/2 = (4π×10^-7×10^8×(1/e^2))/2 = 20π/e^2, giving α=20."
+        },
+        {
+          "number": 26,
+          "type": "MCQ",
+          "question": "The internal energy of a monoatomic gas is 3nRT. One mole of helium is kept in a cylinder having internal cross section area of 17 cm² fitted with a light movable frictionless piston. The gas is heated slowly by supplying 126 J heat. If the temperature rises by 4°C, then the piston will move ____ cm. (atmospheric pressure = 10⁵ Pa)",
+          "options": [
+            "14.5",
+            "1.55",
+            "15.5",
+            "1.45"
+          ],
+          "answer": "15.5",
+          "solution": "ΔU=3nRΔT=100 J. W=ΔQ-ΔU=26 J=PΔV. Δx=26/(10⁵×17×10⁻⁴)=15.3 cm ≈ 15.5."
+        },
+        {
+          "number": 27,
+          "type": "MCQ",
+          "question": "A body of mass 14 kg initially at rest explodes and breaks into three fragments of masses in the ratio 2:2:3. The two pieces of equal masses fly off perpendicular to each other with a speed of 18 m/s each. The velocity of the heavier fragment is ____ m/s.",
+          "options": [
+            "10√2",
+            "12√2",
+            "12",
+            "24√2"
+          ],
+          "answer": "12√2",
+          "solution": "Conservation of momentum: 2(-18î)+2(-18ĵ)+3V3=0, giving V3=12î+12ĵ, |V3|=12√2 m/s."
+        },
+        {
+          "number": 28,
+          "type": "MCQ",
+          "question": "A block is sliding down on an inclined plane of slope θ and at t=0 is given an upward momentum so it starts moving up with velocity u. The distance S travelled by the block before its velocity becomes zero is ____.",
+          "options": [
+            "u²/(4gsinθ)",
+            "2u²/(gcosθ)",
+            "u²/(√2 gcosθ)",
+            "u²/(2gcosθ)"
+          ],
+          "answer": "Dropped by JEE (correct result u²/(2gsinθ) does not match any option)",
+          "solution": "Using v²=u²-2gsinθ·s: s = u²/(2gsinθ) — this doesn't match any of the given options (which use cosθ instead of sinθ), so JEE dropped the question."
+        },
+        {
+          "number": 29,
+          "type": "MCQ",
+          "question": "The current passing through a conducting loop in the form of an equilateral triangle of side 4√3 cm is 2A. The magnetic field at its centroid is α×10⁻⁵ T. The value of α is ____. (μ0=4π×10⁻⁷ SI units)",
+          "options": [
+            "2√3",
+            "√3",
+            "3√3",
+            "√3/2"
+          ],
+          "answer": "3√3",
+          "solution": "B = (μ0/4π)(I/d)[sin60°+sin60°]×3 (for 3 sides) = 3√3×10⁻⁵ T, so α=3√3."
+        },
+        {
+          "number": 30,
+          "type": "MCQ",
+          "question": "A paratrooper jumps from an aeroplane and opens a parachute after 2s of free fall and starts decelerating with 3 m/s². At 10 m height from ground, descending with the parachute, the speed is 5 m/s. The initial height of the aeroplane is ____ m. (g=10 m/s²)",
+          "options": [
+            "62.5",
+            "92.5",
+            "20",
+            "82.5"
+          ],
+          "answer": "92.5",
+          "solution": "Free fall for 2s: x1=20m, v=20m/s. Deceleration phase: 5²=20²-2(3)x2, x2=62.5m. Final phase: x3=10m. Total H=20+62.5+10=92.5m."
+        },
+        {
+          "number": 31,
+          "type": "MCQ",
+          "question": "Two short dipoles (A,B), A having charges ±2μC and length 1cm and B having charges ±4μC and length 1cm are placed with centres 80cm apart. The electric field at point P, equidistant from centres of both dipoles is ____ N/C.",
+          "options": [
+            "(9/16)√2×10⁵",
+            "4.5√2×10⁴",
+            "9√2×10⁴",
+            "(9/16)√2×10⁴"
+          ],
+          "answer": "(9/16)√2×10⁴",
+          "solution": "P1=2×10⁻⁸, P2=4×10⁻⁸ Cm. Net field combining perpendicular components (axial and equatorial) gives |E_net| = (9×10⁴/16)√2."
+        },
+        {
+          "number": 32,
+          "type": "MCQ",
+          "question": "Two charges 7μC and -2μC are placed at (-9,0,0)cm and (9,0,0)cm respectively in an external field E=A/r² r̂, where A=9×10⁵ N/C·m². Considering the potential at infinity is 0, the electrostatic energy of the configuration is ____ J.",
+          "options": [
+            "1.4",
+            "-90.7",
+            "49.3",
+            "24.3"
+          ],
+          "answer": "49.3",
+          "solution": "V=A/r for the external field. U = U_self + U_interaction = q1V1+q2V2+kq1q2/(2r) = 50-0.7 = 49.3 J."
+        },
+        {
+          "number": 33,
+          "type": "MCQ",
+          "question": "A bead P sliding on a frictionless semi-circular string (ACB) is at point S at t=0 with horizontal velocity component v. Another bead Q ejected from A at t=0 along horizontal string AB with speed v. Let tp and tQ be respective times taken to reach point B. The relation between tp and tQ is",
+          "options": [
+            "tp>tQ",
+            "tp<tQ",
+            "tp>1.25tQ",
+            "tp=tQ"
+          ],
+          "answer": "tp<tQ",
+          "solution": "Horizontal displacement of Q is greater than P (XQ>XP), and since horizontal velocity component is the same for both, tQ=XQ/v > tp=XP/v."
+        },
+        {
+          "number": 34,
+          "type": "MCQ",
+          "question": "A parallel plate capacitor with plate separation 5mm is charged by a battery. On introducing a mica sheet of 2mm and maintaining connections, it draws 25% more charge from the battery. The dielectric constant of mica is ____.",
+          "options": [
+            "2.5",
+            "2.0",
+            "1.5",
+            "1.0"
+          ],
+          "answer": "2.0",
+          "solution": "Combining series-parallel capacitance model: Ceq = Kε0A/(2+3K). Setting 1.25×(ε0A/5) = Ceq gives 0.25(2+3K)=K, so 2+3K=4K, K=2."
+        },
+        {
+          "number": 35,
+          "type": "MCQ",
+          "question": "To compare EMF of two cells using a potentiometer, the balancing lengths obtained are 200 cm and 150 cm. The least count of scale is 1 cm. The percentage error in the ratio of EMFs is ____",
+          "options": [
+            "1.45",
+            "1.65",
+            "1.75",
+            "1.55"
+          ],
+          "answer": "Dropped by JEE (calculated value ≈1.16% doesn't match any option)",
+          "solution": "Δy/y = Δℓ1/ℓ1 + Δℓ2/ℓ2 = 1/200+1/150 = 7/600 ≈1.16%, which doesn't match any given option, so the question was dropped."
+        },
+        {
+          "number": 36,
+          "type": "MCQ",
+          "question": "An air bubble of volume 2.9 cm³ rises from the bottom of a swimming pool 5m deep. At the bottom, water temperature is 17°C. The volume of the bubble at the surface, where temperature is 27°C, is ____ cm³. (g=10 m/s², density of water=10³ kg/m³, 1 atm=10⁵ Pa)",
+          "options": [
+            "4.2",
+            "2.0",
+            "3.0",
+            "4.5"
+          ],
+          "answer": "4.5",
+          "solution": "Using P1V1/T1=P2V2/T2 with P1=Patm+ρgh: V2 = 4.5 cm³."
+        },
+        {
+          "number": 37,
+          "type": "MCQ",
+          "question": "Which of the following pair of nuclei are isobars of the element?",
+          "options": [
+            "²H and ³H",
+            "²³⁶U and ²³⁸U",
+            "¹⁹⁸Hg and ¹⁹⁷Au",
+            "³H and ³He"
+          ],
+          "answer": "³H and ³He",
+          "solution": "Isobars are nuclei with the same mass number; ³H and ³He both have mass number 3."
+        },
+        {
+          "number": 38,
+          "type": "MCQ",
+          "question": "For a given logic gate circuit (OR gate feeding a NAND gate with one input direct and other from OR output), which is the correct truth table for inputs n,m and output z?",
+          "options": [
+            "Table 1",
+            "Table 2",
+            "Table 3",
+            "Table 4"
+          ],
+          "answer": "Table 4",
+          "solution": "Output z = NOT(n·(n+m)) = NOT(n) = n̄. Truth table: (n,m,z) = (0,0,1),(0,1,1),(1,1,0),(1,0,0), matching option 4."
+        },
+        {
+          "number": 39,
+          "type": "MCQ",
+          "question": "One mole of an ideal diatomic gas expands from volume V to 2V isothermally at 27°C and does W joule of work. If the gas undergoes the same magnitude of expansion adiabatically from 27°C doing the same amount of work W, then its final temperature will be (close to) ____ °C.",
+          "options": [
+            "-189",
+            "-56",
+            "-30",
+            "-117"
+          ],
+          "answer": "-56",
+          "solution": "W_isothermal = RT ln2 = 300R(0.693). Setting W_adiabatic = nR(T1-T2)/(γ-1) equal to this and solving gives T_final ≈ 216.84 K ≈ -56.3°C."
+        },
+        {
+          "number": 40,
+          "type": "MCQ",
+          "question": "A prism of angle 75° and refractive index √3 is coated with a thin film of refractive index 1.5 only at the back exit surface. To have total internal reflection at the back exit surface, the incident angle must be ____. (sin15°=0.25, sin25°=0.43)",
+          "options": [
+            "between 15° and 20°",
+            "15°",
+            "<15°",
+            "not applicable"
+          ],
+          "answer": "Answer options given as [1,2,4] meaning i < 25° satisfies multiple listed ranges (i≈25°, so i<25° or i≤20°); precise computed value i=25°",
+          "solution": "For TIR at back surface, r2≥60°, so r1≤15°, giving sin i = √3 sin15° = 0.433, i≈25°. This satisfies i<25° (and consequently the 'between 15° and 20°' and '<15°' ranges are approximately consistent per JEE's multiple accepted answers 1,2,4)."
+        },
+        {
+          "number": 41,
+          "type": "MCQ",
+          "question": "A circular loop of radius 7cm is placed in a uniform magnetic field of 0.2T perpendicular to its plane. The loop is converted into a square loop in 0.5s. The EMF induced in the loop is ____ mV.",
+          "options": [
+            "6.6",
+            "13.2",
+            "8.25",
+            "1.32"
+          ],
+          "answer": "1.32",
+          "solution": "Circumference=14π cm, side of square = 14π/4 = 7π/2. Δφ=B(A1-A2)=6.614×10⁻⁴ Wb. EMF=Δφ/0.5=1.32×10⁻³ V=1.32mV."
+        },
+        {
+          "number": 42,
+          "type": "MCQ",
+          "question": "A long solenoid of 100cm length, radius 2cm, 500 turns per unit length, carries current I=10sin(ωt)A, ω=1000rad/s. A circular loop (B) of radius 1cm coaxially slides through the solenoid at speed v=1cm/s. The rms current through loop B when inserted 10cm inside is α/√2 μA. The value of α is ____. (Resistance of loop=10Ω)",
+          "options": [
+            "197",
+            "80",
+            "280",
+            "100"
+          ],
+          "answer": "197",
+          "solution": "Induced current i = πr²μ0ni0ω/(√2 R) ≈ 197/√2 μA, so α=197."
+        },
+        {
+          "number": 43,
+          "type": "MCQ",
+          "question": "The ratio of speeds of electromagnetic waves in vacuum and a medium, having dielectric constant k=3 and permeability μ=2μ0, is (μ0=permeability of vacuum)",
+          "options": [
+            "36:1",
+            "3:2",
+            "6:1",
+            "√6:1"
+          ],
+          "answer": "√6:1",
+          "solution": "C/V = √(εrμr) = √(3×2) = √6, giving ratio √6:1."
+        },
+        {
+          "number": 44,
+          "type": "MCQ",
+          "question": "When unpolarized light falls at a particular angle on a glass plate (in air), the reflected beam is linearly polarized. The angle of refracted beam with respect to normal is ____. (tan⁻¹(1.52)=57.7°, refractive indices of air and glass are 1.00 and 1.52 respectively)",
+          "options": [
+            "39.6°",
+            "32.3°",
+            "42.6°",
+            "36.3°"
+          ],
+          "answer": "32.3°",
+          "solution": "At Brewster's angle, tan i = μg/μa = 1.52, so i=57.7°. Refraction angle r=90°-i=32.3°."
+        },
+        {
+          "number": 45,
+          "type": "MCQ",
+          "question": "A small metallic sphere of diameter 2mm and density 10.5 g/cm³ is dropped in glycerine having viscosity 10 Poise and density 1.5 g/cm³. The terminal velocity attained by the sphere is ____ cm/s. (π=22/7, g=10 m/s²)",
+          "options": [
+            "2.0",
+            "1.0",
+            "3.0",
+            "1.5"
+          ],
+          "answer": "2.0",
+          "solution": "VT = 2r²g(ρb-ρl)/(9η) = 2(0.1)²×10×(10.5-1.5)/(9×10) = 2 cm/s."
+        },
+        {
+          "question_number": 26,
+          "question": "A thin prism with angle 5° of refractive index 1.72 is combined with another prism of refractive index 1.9 to produce dispersion without deviation. The angle of second prism is ____.",
+          "options": {
+            "1": "4.5°",
+            "2": "6°",
+            "3": "4°",
+            "4": "5°"
+          },
+          "answer": 3,
+          "solution": "Net deviation = 0 => (μ1-1)A1 + (μ2-1)A2 = 0 => A2 = (μ1-1)A1/(μ2-1) = (0.72*5)/(0.9) = 4°."
+        },
+        {
+          "question_number": 27,
+          "question": "A small ball A of mass m is attached to a massless rigid rod of length 1 m pivoted at point P and kept at an angle of 60° with vertical. At a distance of 1 m below point P, an identical bob B is at rest on a smooth horizontal surface leading to a circular track of radius R. If bob B just manages to complete the circular path after being hit elastically by bob A, radius R is ____ m.",
+          "options": {
+            "1": "3/5",
+            "2": "1/5",
+            "3": "(2+√3)/5",
+            "4": "(2-√3)/5"
+          },
+          "answer": 2,
+          "solution": "V_A at lowest point = sqrt(2gl(1-cosθ)) = sqrt(2*10*1*(1-1/2)) = √10. After elastic collision (equal mass), V_B=√10. For completing circular motion, V_B=sqrt(5gR) => R = 10/(5*10) = 1/5."
+        },
+        {
+          "question_number": 28,
+          "question": "Match List-I (Relations) with List-II (Laws): A) ∮E·dl=-d/dt∮B·da; B) ∮B·dl=μ0(1+ε0 dφE/dt); C) ∮E·da=(1/ε0)∫ρdv; D) ∮B·dl=μ0I. List-II: I. Ampere's circuital law, II. Faraday's law, III. Ampere-Maxwell law, IV. Gauss's law of electrostatics.",
+          "options": {
+            "1": "A-II,B-III,C-I,D-IV",
+            "2": "A-II,B-III,C-IV,D-I",
+            "3": "A-I,B-IV,C-III,D-II",
+            "4": "A-IV,B-I,C-II,D-III"
+          },
+          "answer": 2,
+          "solution": "A corresponds to Faraday's law (II), B to Ampere-Maxwell law (III), C to Gauss's law (IV), D to Ampere's circuital law (I)."
+        },
+        {
+          "question_number": 29,
+          "question": "Four persons measure the length of a rod as 20.00 cm, 19.75 cm, 17.01 cm and 18.25 cm. The relative error in the measurement of average length of the rod is:",
+          "options": {
+            "1": "0.24",
+            "2": "0.18",
+            "3": "0.06",
+            "4": "0.08"
+          },
+          "answer": 3,
+          "solution": "Mean = (20.00+19.75+17.01+18.25)/4 = 18.75. Mean absolute error = (1.25+1+1.74+0.5)/4 = 1.12. Relative error = 1.12/18.75 ≈ 0.06."
+        },
+        {
+          "question_number": 30,
+          "question": "The de Broglie wavelength of an oxygen molecule at 27°C is x×10⁻¹² m. The value of x is (Planck's constant=6.63×10⁻³⁴ J.s, Boltzmann constant=1.38×10⁻²³ J/K, mass of oxygen molecule=5.31×10⁻²⁶ kg).",
+          "options": {
+            "1": "26",
+            "2": "24",
+            "3": "30",
+            "4": "20"
+          },
+          "answer": 1,
+          "solution": "λ = h/sqrt(3mkT) = 6.63e-34/sqrt(3*5.31e-26*1.38e-23*300) = 2.58e-11 = 25.8×10⁻¹² m, so x=26."
+        },
+        {
+          "question_number": 31,
+          "question": "A simple pendulum of string length 30 cm performs 20 oscillations in 10s. The length of the string required for the pendulum to perform 40 oscillations in the same time duration is ____ cm.",
+          "options": {
+            "1": "120",
+            "2": "0.75",
+            "3": "7.5",
+            "4": "15"
+          },
+          "answer": 3,
+          "solution": "Time period becomes half, and T∝√ℓ, so length becomes ℓ/4 = 30/4 = 7.5 cm."
+        },
+        {
+          "question_number": 32,
+          "question": "Two blocks with masses 100 g and 200 g are attached to the ends of springs A and B. The energy stored in A is E. The energy stored in B, when spring constants kA, kB satisfy 4kA=3kB, is:",
+          "options": {
+            "1": "4E",
+            "2": "2E",
+            "3": "3E",
+            "4": "4E/3"
+          },
+          "answer": 3,
+          "solution": "U∝m²/k. U_A/U_B = (mA/mB)²(kB/kA) = (1/2)²(4/3) = 1/3. So U_B = 3E."
+        },
+        {
+          "question_number": 33,
+          "question": "The moment of inertia of a square loop made of four uniform solid cylinders, each having radius R and length L (R<L) about an axis passing through the mid points of opposite sides, is (mass of entire loop = M):",
+          "options": {
+            "1": "3MR²/8 + 7ML²/12",
+            "2": "3MR²/4 + ML²/6",
+            "3": "3MR²/4 + 7ML²/12",
+            "4": "3MR²/8 + ML²/6"
+          },
+          "answer": 4,
+          "solution": "For each cylinder: parallel and perpendicular pairs contribute. I_net = 2(I1+I2). With mass per cylinder M'=M/4: I = 3(M/4)R²/2 + 2(M/4)L²/3 = 3MR²/8 + ML²/6."
+        },
+        {
+          "question_number": 34,
+          "question": "A wire of uniform resistance λΩ/m is bent into a circle of radius r and another piece of wire with length 2r is connected between points A and B (through center O), as shown. The equivalent resistance between points A and B is ____ Ω.",
+          "options": {
+            "1": "3πλr/8",
+            "2": "(π+1)2rλ",
+            "3": "6πλr/(3π+16)",
+            "4": "2πλr"
+          },
+          "answer": 3,
+          "solution": "1/R_AB = 2/(λπr) + 1/(λ.2r) + 2/(λ.3πr) = (1/λr)[16+3π]/(6π). So R_AB = λr(6π)/(16+3π)."
+        },
+        {
+          "question_number": 35,
+          "question": "The strain-stress plot for materials A,B,C and D is shown in the figure. Which material has the largest Young's modulus?",
+          "options": {
+            "1": "C",
+            "2": "D",
+            "3": "A",
+            "4": "B"
+          },
+          "answer": 1,
+          "solution": "Strain/Stress = 1/Y = slope. The material with the smallest slope (C) has the largest Young's modulus."
+        },
+        {
+          "question_number": 36,
+          "question": "Consider light travelling from a medium A to medium B separated by a plane interface. If the light undergoes total internal reflection during its travel from medium A to B and the speed of light in media A and B are 2.4×10⁸ m/s and 2.7×10⁸ m/s respectively, then the value of critical angle is:",
+          "options": {
+            "1": "cot⁻¹(3/√13)",
+            "2": "sin⁻¹(9/8)",
+            "3": "tan⁻¹(8/√17)",
+            "4": "cos⁻¹(8/9)"
+          },
+          "answer": 3,
+          "solution": "sinC = vA/vB = 2.4/2.7 = 8/9. tanC = 8/sqrt(81-64) = 8/√17. C = tan⁻¹(8/√17)."
+        },
+        {
+          "question_number": 37,
+          "question": "The following diagram shows a Zener diode as a voltage regulator. The Zener diode is rated at Vz=5V and the desired current in load is 5mA. The unregulated voltage source can supply upto 25V. Considering the Zener diode can withstand four times of the load current, the value of resistor Rs should be ____ Ω.",
+          "options": {
+            "1": "4000",
+            "2": "10",
+            "3": "100",
+            "4": "1000"
+          },
+          "answer": "Dropped by JEE (no matching option)",
+          "solution": "Is = Iz+IL = (4*5+5)mA = 25mA. Vs = 20V. Rs = 20/(25×10⁻³) = 800Ω. This question was dropped by JEE as no option matches."
+        },
+        {
+          "question_number": 38,
+          "question": "In hydrogen atom spectrum (R = Rydberg's constant): A. maximum wavelength of Lyman series is 4/3R; B. Balmer series lies in visible region; C. minimum wavelength of Paschen series is 9/R; D. minimum wavelength of Lyman series is 5/4R. Choose correct answer:",
+          "options": {
+            "1": "B, D Only",
+            "2": "A, B and C Only",
+            "3": "A, B and D Only",
+            "4": "A, B Only"
+          },
+          "answer": 2,
+          "solution": "A: 1/λ=R(1-1/4) => λ=4/3R (true). B: true (known fact). C: 1/λ'=R(1/9) => λ'=9/R (true). D is false since minimum wavelength of Lyman series is 1/R (series limit), not 5/4R. So A, B, C only."
+        },
+        {
+          "question_number": 39,
+          "question": "An object is projected with kinetic energy K from a point A at an angle 60° with the horizontal. The ratio of the difference in kinetic energies at points B and C to that at point A is:",
+          "options": {
+            "1": "1:2",
+            "2": "2:3",
+            "3": "1:4",
+            "4": "3:4"
+          },
+          "answer": 4,
+          "solution": "KE_A = K. KE_B = K/4 (horizontal component only, u_B=ucos60°=u/2). KE_C = K. Ratio = (K-K/4)/K = 3/4."
+        },
+        {
+          "question_number": 40,
+          "question": "Two point charges 2q and q are placed at vertex A and centre of face CDEF of the cube. The electric flux passing through the cube is:",
+          "options": {
+            "1": "3q/ε0",
+            "2": "q/ε0",
+            "3": "3q/2ε0",
+            "4": "3q/4ε0"
+          },
+          "answer": 4,
+          "solution": "φ = Qin/ε0 = (q/4 + q/2)/ε0 = 3q/4ε0 (2q at vertex contributes 1/8, q at face center contributes 1/2 -- combined gives 3q/4ε0)."
+        },
+        {
+          "question_number": 41,
+          "question": "A 20 m long uniform copper wire held horizontally is allowed to fall under gravity (g=10 m/s²) through a uniform horizontal magnetic field of 0.5 Gauss perpendicular to the length of the wire. The induced EMF across the wire after it travels a vertical distance of 200 m is ____ mV.",
+          "options": {
+            "1": "0.2√10",
+            "2": "20√10",
+            "3": "2√10",
+            "4": "200√10"
+          },
+          "answer": 2,
+          "solution": "v = sqrt(2gh) = sqrt(2*10*200) = 20√10 m/s. EMF = vBℓ = 20√10 * 0.5×10⁻⁴ * 20 = 20√10 ×10⁻³ = 20√10 mV."
+        },
+        {
+          "question_number": 42,
+          "question": "Two small balls with masses m and 2m are attached to both ends of a rigid rod of length d and negligible mass. If angular momentum of this system is L about an axis (A) passing through its centre of mass and perpendicular to the rod then angular velocity of the system about A is:",
+          "options": {
+            "1": "3L/(2md²)",
+            "2": "2L/(md²)",
+            "3": "4L/(3md²)",
+            "4": "2L/(5md²)"
+          },
+          "answer": 1,
+          "solution": "Moment of inertia about COM: I = m(2d/3)² + 2m(d/3)² = 6md²/9. ω = L/I = 3L/(2md²)."
+        },
+        {
+          "question_number": 43,
+          "question": "In a perfectly inelastic collision, two spheres made of the same material with masses 15 kg and 25 kg, moving in opposite directions with speeds of 10 m/s and 30 m/s, respectively, strike each other and stick together. The rise in temperature (in °C), if all heat produced is retained by these spheres, is: (specific heat = 31 cal/kg.°C, 1 cal = 4.2 J)",
+          "options": {
+            "1": "1.75",
+            "2": "1.44",
+            "3": "1.15",
+            "4": "1.95"
+          },
+          "answer": 2,
+          "solution": "KE lost = (1/2)(m1m2/(m1+m2))(v_rel)²(1-e²) = (1/2)(15*25/40)(40)² = 7500 J. ΔT = 7500/(40*31*4.2) = 1.44°C."
+        },
+        {
+          "question_number": 44,
+          "question": "In a screw gauge, the zero of the circular scale lies 3 divisions above the horizontal pitch line when metallic studs are in contact. Thickness of a sheet is measured with pitch scale reading 1 mm and circular scale reading 51 (least count 0.01 mm). The correct thickness of the sheet is ____ mm.",
+          "options": {
+            "1": "1.50",
+            "2": "1.48",
+            "3": "1.54",
+            "4": "1.51"
+          },
+          "answer": 3,
+          "solution": "Zero error = -3*0.01 = -0.03mm. Reading taken = 1+51*0.01 = 1.51mm. Correct reading = 1.51-(-0.03) = 1.54mm."
+        },
+        {
+          "question_number": 45,
+          "question": "Assertion (A): The individual atoms in a ferromagnetic material possess a magnetic dipole moment and interact with one another in such a way that they spontaneously align themselves forming domains. Reason (R): At high enough temperature, the domain structure of ferromagnetic material disintegrates, and magnetization disappears at the Curie temperature.",
+          "options": {
+            "1": "(A) is true but (R) is false",
+            "2": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+            "3": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+            "4": "(A) is false but (R) is true"
+          },
+          "answer": 2,
+          "solution": "Both statements are factually correct conceptually, but as per the official answer key, (R) is not considered the correct explanation of (A) in this context."
+        },
+        {
+          "question_number": 46,
+          "question": "A simple pendulum made of mass 10 g and a metallic wire of length 10 cm is suspended vertically in a uniform magnetic field of 2T, perpendicular to the plane of oscillation. If released from angle 60° with vertical, maximum induced EMF between point of suspension and point of oscillation is ____ mV. (g=10 m/s²)",
+          "answer": "100",
+          "solution": "Using energy conservation: mgl(1-cos60°) = (1/2)(ml²)ωm² => ωm = sqrt(g/l) = 10 rad/s. εmax = Bωmaxl²/2 = 2*10*0.01/2 = 0.1V = 100mV."
+        },
+        {
+          "question_number": 47,
+          "question": "The equation of electric field of an EM wave in free space: E=√377 sin(6.27×10³t - 2.09×10⁻⁵x) N/C. Average power of the wave is (1/α) W/m². The value of α is ____. (sqrt(μ0/ε0)=377 in SI units)",
+          "answer": "2",
+          "solution": "v=ω/k=6.27e3/2.09e-5=3×10⁸ (vacuum confirmed). I=(1/2)ε0E0²c = (1/2)sqrt(ε0/μ0)E0² = (1/2)(1/377)*377 = 1/2. So α=2."
+        },
+        {
+          "question_number": 48,
+          "question": "Using a variable-frequency a.c. voltage source, the maximum current measured in the given LCR circuit is 50 mA for V=5sin(100t). L=2H, R=100Ω. The capacitance of the capacitor (C) used is ____ μF.",
+          "answer": "50",
+          "solution": "Current is maximum at resonance: ω=1/√(LC). C=1/(ω²L)=1/(2×10⁴)=50×10⁻⁶F=50μF."
+        },
+        {
+          "question_number": 49,
+          "question": "In two separate Young's double-slit experimental set-ups, two monochromatic sources of different wavelengths give fringes of equal width. The ratios of slit separations and wavelengths used are 2:1 and 1:2 respectively. The ratio D1/D2 is ____.",
+          "answer": "4",
+          "solution": "β1=β2 => D1λ1/d1 = D2λ2/d2 => D1/D2 = (λ2/λ1)(d1/d2) = 2*2 = 4."
+        },
+        {
+          "question_number": 50,
+          "question": "The space between plates of a parallel-plate capacitor of capacitance C (without dielectric) is filled with three dielectric slabs K1=2, K2=3, K3=5 as shown. If new capacitance is (n/3)C, the value of n is ____.",
+          "answer": "8",
+          "solution": "Computing series/parallel combination of the dielectric slab arrangement gives Ceq=(92/35)C. Setting equal to (n/3)C gives n=(92*3)/35≈7.9≈8."
+        },
+        {
+          "question_number": 26,
+          "question": "Match List-I with List-II: A. Magnetic induction, B. Magnetic flux, C. Magnetic permeability, D. Self inductance. List-II: I. MLT⁻²A⁻², II. ML²T⁻²A⁻², III. ML⁰T²A⁻¹, IV. ML²T⁻²A⁻¹",
+          "options": {
+            "1": "A-IV,B-III,C-I,D-II",
+            "2": "A-III,B-IV,C-II,D-I",
+            "3": "A-I,B-III,C-IV,D-II",
+            "4": "A-III,B-IV,C-I,D-II"
+          },
+          "answer": 4,
+          "solution": "Magnetic induction B: [F/qv]=[MT⁻²A⁻¹] matches I. Magnetic flux φ=B×Area: [ML²T⁻²A⁻¹] matches IV. Magnetic permeability μ: [MLT⁻²A⁻²] matches II. Self inductance (from U=½LI²): [ML²T⁻²A⁻¹] -- wait, matches IV as well conceptually but assigned as II based on official key: A-III,B-IV,C-I,D-II is correct per official solution provided."
+        },
+        {
+          "question_number": 27,
+          "question": "Three charges +2q, +3q and -4q are situated at (0,-3a), (2a,0) and (-2a,0) respectively in the xy plane. The resultant dipole moment about origin is",
+          "options": {
+            "1": "2qa(3ĵ-î)",
+            "2": "2qa(3î-7ĵ)",
+            "3": "2qa(7î-3ĵ)",
+            "4": "2qa(3ĵ-7î)"
+          },
+          "answer": 3,
+          "solution": "p=q1r1+q2r2+q3r3 = 2q(-3a)ĵ+3q(2a)î+(-4q)(-2a)î = 2qa(7î-3ĵ)."
+        },
+        {
+          "question_number": 28,
+          "question": "A cylindrical block of mass M and area of cross section A is floating in a liquid of density ρ with axis vertical. When depressed a little and released, the block oscillates. The period of oscillation is",
+          "options": {
+            "1": "2π√(M/ρAg)",
+            "2": "π√(2M/ρAg)",
+            "3": "π√(ρA/Mg)",
+            "4": "2π√(ρA/Mg)"
+          },
+          "answer": 1,
+          "solution": "At equilibrium ρAhg=Mg. After displacement x: Ma=-ρAxg, giving ω=√(ρAg/M). T=2π√(M/ρAg)."
+        },
+        {
+          "question_number": 29,
+          "question": "Density of water at 4°C and 20°C are 1000 kg/m³ and 998 kg/m³ respectively. The increase in internal energy of 4 kg water when heated from 4°C to 20°C is ____ J. (Specific heat=4.2 J/kg.°C, 1 atm=10⁵ Pa)",
+          "options": {
+            "1": "315826.2",
+            "2": "234699.2",
+            "3": "258700.8",
+            "4": "268799.2"
+          },
+          "answer": 4,
+          "solution": "Q=mSΔT=4×4200×16=268800 J. W=PΔV=10⁵×4×(1/998-1/1000)≈0.8 J. ΔU=Q-W=268799.2 J."
+        },
+        {
+          "question_number": 30,
+          "question": "Two resistors of 100Ω each are connected in series with a 9V battery. A voltmeter of 400Ω resistance measures voltage across one resistor. The voltmeter reading is ____ V.",
+          "options": {
+            "1": "3",
+            "2": "4.5",
+            "3": "4",
+            "4": "2"
+          },
+          "answer": 3,
+          "solution": "Req=100+(400×100)/(500)=180Ω. I=9/180=1/20 A. Voltmeter reading=I×(parallel combination 80Ω)=1/20×80=4V."
+        },
+        {
+          "question_number": 31,
+          "question": "The exit surface of a prism with refractive index n is coated with a material having refractive index n/2. When set for minimum deviation it exactly meets the critical angle condition. The prism angle is",
+          "options": {
+            "1": "60°",
+            "2": "15°",
+            "3": "30°",
+            "4": "45°"
+          },
+          "answer": 1,
+          "solution": "At minimum deviation, r=A/2. For TIR at exit surface, sinr=sinθc=(n/2)/n=1/2, so r=30°, A=2r=60°."
+        },
+        {
+          "question_number": 32,
+          "question": "Two electrons move in orbits of two hydrogen like atoms with speeds 3×10⁵ m/s and 2.5×10⁵ m/s. If radii of orbits are nearly same, the possible order of energy states are ____ respectively.",
+          "options": {
+            "1": "6 and 5",
+            "2": "9 and 8",
+            "3": "8 and 10",
+            "4": "10 and 12"
+          },
+          "answer": 1,
+          "solution": "v∝Z/n, r∝n²/Z, so r∝n/v. Equal radii: n1/V1=n2/V2 => n1/n2=V1/V2=(3×10⁵)/(2.5×10⁵)=6/5. Possible order: 6 and 5."
+        },
+        {
+          "question_number": 33,
+          "question": "In a microscope of tube length 10 cm, two convex lenses have focal lengths 2 cm and 5 cm. Total magnification for normal adjustment is (5)^k. The value of k is",
+          "options": {
+            "1": "2",
+            "2": "5",
+            "3": "3.5",
+            "4": "4"
+          },
+          "answer": 1,
+          "solution": "M=(ℓ/f0)(D/fe)=(10/2)(25/5)=25=5², so k=2."
+        },
+        {
+          "question_number": 34,
+          "question": "For the series LCR circuit connected with 220V, 50Hz a.c source, XL=70Ω, XC=150Ω, R=60Ω, the power factor is α/10. The value of α is",
+          "options": {
+            "1": "4",
+            "2": "10",
+            "3": "6",
+            "4": "8"
+          },
+          "answer": 3,
+          "solution": "Z=√(R²+(XL-XC)²)=√(60²+80²)=100Ω. Power factor=R/Z=60/100=6/10, so α=6."
+        },
+        {
+          "question_number": 35,
+          "question": "Match List-I with List-II: A. Radio-wave, B. Micro-wave, C. Infrared-wave, D. X-ray. List-II: I. produced by magnetron valve, II. change in vibrational modes, III. inner shell electron transition high to low energy, IV. rapid acceleration of electrons",
+          "options": {
+            "1": "A-II,B-IV,C-III,D-I",
+            "2": "A-IV,B-III,C-I,D-II",
+            "3": "A-IV,B-I,C-II,D-III",
+            "4": "A-IV,B-II,C-I,D-III"
+          },
+          "answer": 3,
+          "solution": "Radio wave: produced by rapid acceleration of electrons (IV). Micro wave: by magnetron valve (I). Infrared: change in vibrational modes (II). X-ray: inner shell electron transition (III)."
+        },
+        {
+          "question_number": 36,
+          "question": "A spring of force constant 15 N/m is cut into two pieces. If the ratio of their lengths is 1:3, the force constant of the smaller piece is ____ N/m",
+          "options": {
+            "1": "15",
+            "2": "20",
+            "3": "60",
+            "4": "45"
+          },
+          "answer": 3,
+          "solution": "Kℓ=constant. For the smaller piece of length ℓ/4: Kℓ=K'(ℓ/4), so K'=4K=60 N/m."
+        },
+        {
+          "question_number": 37,
+          "question": "Two resistors 2Ω and 3Ω are connected in a Wheatstone bridge. The null point is at some point on wire XY. When an unknown resistor is connected in parallel with the 3Ω resistor, the null point shifts by 22.5 cm toward Y. The resistance of the unknown resistor is",
+          "options": {
+            "1": "3",
+            "2": "2",
+            "3": "4",
+            "4": "1"
+          },
+          "answer": 2,
+          "solution": "Initially 2/3=x/(100-x) gives x=40cm. With R in parallel: 2/(3R/(3+R))=(40+22.5)/(60-22.5)=62.5/37.5. Solving gives R=2Ω."
+        },
+        {
+          "question_number": 38,
+          "question": "Statement I: For all elements, greater the mass of the nucleus, greater is the binding energy per nucleon. Statement II: For all elements, nuclei with less binding energy per nucleon transforms to nuclei with greater binding energy per nucleon.",
+          "options": {
+            "1": "Both Statement I and II are true",
+            "2": "Statement I is true but II is false",
+            "3": "Both Statement I and II are false",
+            "4": "Statement I is false but II is true"
+          },
+          "answer": 4,
+          "solution": "Statement I is false since binding energy per nucleon peaks around iron and decreases for heavier nuclei. Statement II is true - this describes the driving principle behind fission and fusion (nuclei moving toward the more stable, higher binding-energy-per-nucleon state)."
+        },
+        {
+          "question_number": 39,
+          "question": "A brass wire of length 2m and radius 1mm at 27°C is held taut between two rigid supports. It is cooled to -43°C creating tension T. The temperature to which it must be cooled to increase tension to 1.4T is ____ °C",
+          "options": {
+            "1": "-86",
+            "2": "-71",
+            "3": "-65",
+            "4": "-80"
+          },
+          "answer": 2,
+          "solution": "T=αYA(27-(-43))=αYA(70). 1.4T=αYA(27-θ). Ratio: 1.4=(27-θ)/70, so 27-θ=98, θ=-71°C."
+        },
+        {
+          "question_number": 40,
+          "question": "The electrostatic potential in a charged spherical region of radius r varies as V=ar³+b. The total charge in the sphere of unit radius is α×πaε0. The value of α is ____",
+          "options": {
+            "1": "-12",
+            "2": "-6",
+            "3": "-9",
+            "4": "-8"
+          },
+          "answer": 1,
+          "solution": "E=-dV/dr=-3ar². q_enc=ε0×E×A=ε0(-3a)(4π)=-12πaε0, so α=-12."
+        },
+        {
+          "question_number": 41,
+          "question": "Two masses 400g and 350g are suspended from a light string passing over a heavy pulley of radius 2cm. Released from rest, the heavier mass falls 81cm in 9s. The rotational inertia of the pulley is ____ kg.m² (g=9.8 m/s²)",
+          "options": {
+            "1": "9.5×10⁻³",
+            "2": "4.75×10⁻³",
+            "3": "1.86×10⁻²",
+            "4": "8.3×10⁻³"
+          },
+          "answer": 1,
+          "solution": "a=2s/t²=2(0.81)/81=0.02 m/s². Using the coupled equations for m1,m2 and pulley torque: I/R²=(50×10⁻³g-750×10⁻³)/0.02=23.75. I=23.75×4×10⁻⁴=9.5×10⁻³ kg.m²."
+        },
+        {
+          "question_number": 42,
+          "question": "Unpolarised light is incident at an interface of two dielectric media with refractive indices 2 (incident) and 2√3. To satisfy the condition that reflected and refracted rays are perpendicular, the angle of incidence is ____",
+          "options": {
+            "1": "60°",
+            "2": "10°",
+            "3": "30°",
+            "4": "45°"
+          },
+          "answer": 1,
+          "solution": "By Brewster's law: tanθ=μrel=√3, so θ=60°."
+        },
+        {
+          "question_number": 43,
+          "question": "A boy throws a ball at 45° from horizontal to land on a roof of height H. If it attains max height in 2s and lands on the building in 3s after launch, H is ____ m. (g=10 m/s²)",
+          "options": {
+            "1": "20",
+            "2": "10",
+            "3": "25",
+            "4": "15"
+          },
+          "answer": 4,
+          "solution": "T(to max height)=uy/g=2 => uy=20 m/s. y=uyΔt-½g(Δt)² at Δt=3s: H=20(3)-5(9)=60-45=15m."
+        },
+        {
+          "question_number": 44,
+          "question": "Three co-centric conducting spherical shells A, B and C of radii a, b and c respectively have charges q1,q2,q3. The potentials of A, B, C respectively are:",
+          "options": {
+            "1": "(1/4πε0)(q1+q2+q3)/a etc.",
+            "2": "(1/4πε0)(q1+q2+q3)/a etc. variant 2",
+            "3": "(1/4πε0)(q1/a+q2/b+q3/c) for A; (q1+q2)/b+q3/c for B; (q1+q2+q3)/c for C",
+            "4": "variant 4"
+          },
+          "answer": 3,
+          "solution": "VA=Kq1/a+Kq2/b+Kq3/c. VB=Kq1/b+Kq2/b+Kq3/c=(q1+q2)/b+q3/c (times 1/4πε0). VC=(q1+q2+q3)/c (times 1/4πε0)."
+        },
+        {
+          "question_number": 45,
+          "question": "Three masses 200kg, 300kg, 400kg placed at vertices of equilateral triangle with sides 20m are rearranged to a bigger triangle of side 25m with same centre. The work done is ____ J. (G=6.7×10⁻¹¹ Nm²/kg²)",
+          "options": {
+            "1": "9.86×10⁻⁶",
+            "2": "2.85×10⁻⁷",
+            "3": "1.74×10⁻⁷",
+            "4": "4.77×10⁻⁷"
+          },
+          "answer": 3,
+          "solution": "Wext=Uf-Ui. Ui=-Gm1m2/ri - Gm2m3/ri - Gm1m3/ri at ri=20m = -86.71×10⁻⁸J. Uf at rf=25m = -69.36×10⁻⁸J. ΔU=Uf-Ui=1.74×10⁻⁷J."
+        },
+        {
+          "question_number": 46,
+          "question": "A short bar magnet placed with its axis at 30° with an external field of 800 Gauss, experiences a torque of 0.016 N.m. The work done in moving it from most stable to most unstable position is α×10⁻³ J. The value of α is ____.",
+          "answer": "64",
+          "solution": "τ=μBsinθ => 0.016=μB(1/2), so μ=0.032/B. Wext=μB-(-μB)=2μB=2(0.032/B)(B)=0.064J. So α=64."
+        },
+        {
+          "question_number": 47,
+          "question": "A gas of certain mass filled in a closed cylinder at a pressure of 3.23 kPa has temperature 50°C. The gas is heated to double its temperature (in Kelvin equivalent doubling per NTA's interpretation). The modified pressure is ____ Pa.",
+          "answer": "3730",
+          "solution": "Ti=323K (50°C), Tf=373K (100°C, per official NTA solution interpreting 'double' loosely). Pf/Pi=Tf/Ti. Pf=3.23kPa×373/323=3730 Pa."
+        },
+        {
+          "question_number": 48,
+          "question": "A voltage regulating circuit with Zener diode, breakdown voltage 10V and max power dissipation 0.4W, operated at 15V. The approximate value of protective resistance is ____ Ω.",
+          "answer": "125",
+          "solution": "PD=0.4W=10×i => i=0.04A. R=(15-10)/0.04=125Ω."
+        },
+        {
+          "question_number": 49,
+          "question": "Blocks A, B, C weigh 4kg, 6kg, 8kg. Coefficient of sliding friction between any two surfaces is 0.5. The force F required to slide block C with constant speed is ____ N. (g=10 m/s²)",
+          "answer": "210",
+          "solution": "For constant velocity, Fnet=0 on the 8kg block system. F=90+T+50 (friction forces on 8kg block), where T=20+50 (from 6kg block friction balance). F=210N."
+        },
+        {
+          "question_number": 50,
+          "question": "Sixty four rain drops of radius 1mm each falling with terminal velocity 10 cm/s coalesce to form a bigger drop. The terminal velocity of the bigger drop is ____ cm/s.",
+          "answer": "160",
+          "solution": "Volume conservation: 64(4/3πR1³)=4/3πR2³ gives R2=4R1. VT∝r². (VT)1/(VT)2=(R1/R2)²=(1/4)²=1/16. (VT)2=10×16=160 cm/s."
+        }
+      ]
+    }
+  },
+  "sourceFiles": [
+    "jee_main_21jan2026_evening_Physics.json",
+    "jee_main_21jan2026_morning_Physics.json",
+    "jee_main_22jan2026_evening_Physics.json",
+    "jee_main_22jan2026_morning (1)_Physics.json",
+    "jee_main_23jan2026_evening_Physics.json",
+    "jee_main_23jan2026_morning_Physics.json",
+    "jee_main_24jan2026_morning_Physics.json"
+  ]
+}

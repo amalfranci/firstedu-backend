@@ -1,0 +1,282 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "date": "23rd January 2026",
+  "session": "Morning",
+  "source": "Career Point Ltd.",
+  "sections": {
+    "Physics": {
+      "questions": [
+        {
+          "question_number": 26,
+          "question": "A thin prism with angle 5° of refractive index 1.72 is combined with another prism of refractive index 1.9 to produce dispersion without deviation. The angle of second prism is ____.",
+          "options": {
+            "1": "4.5°",
+            "2": "6°",
+            "3": "4°",
+            "4": "5°"
+          },
+          "answer": 3,
+          "solution": "Net deviation = 0 => (μ1-1)A1 + (μ2-1)A2 = 0 => A2 = (μ1-1)A1/(μ2-1) = (0.72*5)/(0.9) = 4°."
+        },
+        {
+          "question_number": 27,
+          "question": "A small ball A of mass m is attached to a massless rigid rod of length 1 m pivoted at point P and kept at an angle of 60° with vertical. At a distance of 1 m below point P, an identical bob B is at rest on a smooth horizontal surface leading to a circular track of radius R. If bob B just manages to complete the circular path after being hit elastically by bob A, radius R is ____ m.",
+          "options": {
+            "1": "3/5",
+            "2": "1/5",
+            "3": "(2+√3)/5",
+            "4": "(2-√3)/5"
+          },
+          "answer": 2,
+          "solution": "V_A at lowest point = sqrt(2gl(1-cosθ)) = sqrt(2*10*1*(1-1/2)) = √10. After elastic collision (equal mass), V_B=√10. For completing circular motion, V_B=sqrt(5gR) => R = 10/(5*10) = 1/5."
+        },
+        {
+          "question_number": 28,
+          "question": "Match List-I (Relations) with List-II (Laws): A) ∮E·dl=-d/dt∮B·da; B) ∮B·dl=μ0(1+ε0 dφE/dt); C) ∮E·da=(1/ε0)∫ρdv; D) ∮B·dl=μ0I. List-II: I. Ampere's circuital law, II. Faraday's law, III. Ampere-Maxwell law, IV. Gauss's law of electrostatics.",
+          "options": {
+            "1": "A-II,B-III,C-I,D-IV",
+            "2": "A-II,B-III,C-IV,D-I",
+            "3": "A-I,B-IV,C-III,D-II",
+            "4": "A-IV,B-I,C-II,D-III"
+          },
+          "answer": 2,
+          "solution": "A corresponds to Faraday's law (II), B to Ampere-Maxwell law (III), C to Gauss's law (IV), D to Ampere's circuital law (I)."
+        },
+        {
+          "question_number": 29,
+          "question": "Four persons measure the length of a rod as 20.00 cm, 19.75 cm, 17.01 cm and 18.25 cm. The relative error in the measurement of average length of the rod is:",
+          "options": {
+            "1": "0.24",
+            "2": "0.18",
+            "3": "0.06",
+            "4": "0.08"
+          },
+          "answer": 3,
+          "solution": "Mean = (20.00+19.75+17.01+18.25)/4 = 18.75. Mean absolute error = (1.25+1+1.74+0.5)/4 = 1.12. Relative error = 1.12/18.75 ≈ 0.06."
+        },
+        {
+          "question_number": 30,
+          "question": "The de Broglie wavelength of an oxygen molecule at 27°C is x×10⁻¹² m. The value of x is (Planck's constant=6.63×10⁻³⁴ J.s, Boltzmann constant=1.38×10⁻²³ J/K, mass of oxygen molecule=5.31×10⁻²⁶ kg).",
+          "options": {
+            "1": "26",
+            "2": "24",
+            "3": "30",
+            "4": "20"
+          },
+          "answer": 1,
+          "solution": "λ = h/sqrt(3mkT) = 6.63e-34/sqrt(3*5.31e-26*1.38e-23*300) = 2.58e-11 = 25.8×10⁻¹² m, so x=26."
+        },
+        {
+          "question_number": 31,
+          "question": "A simple pendulum of string length 30 cm performs 20 oscillations in 10s. The length of the string required for the pendulum to perform 40 oscillations in the same time duration is ____ cm.",
+          "options": {
+            "1": "120",
+            "2": "0.75",
+            "3": "7.5",
+            "4": "15"
+          },
+          "answer": 3,
+          "solution": "Time period becomes half, and T∝√ℓ, so length becomes ℓ/4 = 30/4 = 7.5 cm."
+        },
+        {
+          "question_number": 32,
+          "question": "Two blocks with masses 100 g and 200 g are attached to the ends of springs A and B. The energy stored in A is E. The energy stored in B, when spring constants kA, kB satisfy 4kA=3kB, is:",
+          "options": {
+            "1": "4E",
+            "2": "2E",
+            "3": "3E",
+            "4": "4E/3"
+          },
+          "answer": 3,
+          "solution": "U∝m²/k. U_A/U_B = (mA/mB)²(kB/kA) = (1/2)²(4/3) = 1/3. So U_B = 3E."
+        },
+        {
+          "question_number": 33,
+          "question": "The moment of inertia of a square loop made of four uniform solid cylinders, each having radius R and length L (R<L) about an axis passing through the mid points of opposite sides, is (mass of entire loop = M):",
+          "options": {
+            "1": "3MR²/8 + 7ML²/12",
+            "2": "3MR²/4 + ML²/6",
+            "3": "3MR²/4 + 7ML²/12",
+            "4": "3MR²/8 + ML²/6"
+          },
+          "answer": 4,
+          "solution": "For each cylinder: parallel and perpendicular pairs contribute. I_net = 2(I1+I2). With mass per cylinder M'=M/4: I = 3(M/4)R²/2 + 2(M/4)L²/3 = 3MR²/8 + ML²/6."
+        },
+        {
+          "question_number": 34,
+          "question": "A wire of uniform resistance λΩ/m is bent into a circle of radius r and another piece of wire with length 2r is connected between points A and B (through center O), as shown. The equivalent resistance between points A and B is ____ Ω.",
+          "options": {
+            "1": "3πλr/8",
+            "2": "(π+1)2rλ",
+            "3": "6πλr/(3π+16)",
+            "4": "2πλr"
+          },
+          "answer": 3,
+          "solution": "1/R_AB = 2/(λπr) + 1/(λ.2r) + 2/(λ.3πr) = (1/λr)[16+3π]/(6π). So R_AB = λr(6π)/(16+3π)."
+        },
+        {
+          "question_number": 35,
+          "question": "The strain-stress plot for materials A,B,C and D is shown in the figure. Which material has the largest Young's modulus?",
+          "options": {
+            "1": "C",
+            "2": "D",
+            "3": "A",
+            "4": "B"
+          },
+          "answer": 1,
+          "solution": "Strain/Stress = 1/Y = slope. The material with the smallest slope (C) has the largest Young's modulus."
+        },
+        {
+          "question_number": 36,
+          "question": "Consider light travelling from a medium A to medium B separated by a plane interface. If the light undergoes total internal reflection during its travel from medium A to B and the speed of light in media A and B are 2.4×10⁸ m/s and 2.7×10⁸ m/s respectively, then the value of critical angle is:",
+          "options": {
+            "1": "cot⁻¹(3/√13)",
+            "2": "sin⁻¹(9/8)",
+            "3": "tan⁻¹(8/√17)",
+            "4": "cos⁻¹(8/9)"
+          },
+          "answer": 3,
+          "solution": "sinC = vA/vB = 2.4/2.7 = 8/9. tanC = 8/sqrt(81-64) = 8/√17. C = tan⁻¹(8/√17)."
+        },
+        {
+          "question_number": 37,
+          "question": "The following diagram shows a Zener diode as a voltage regulator. The Zener diode is rated at Vz=5V and the desired current in load is 5mA. The unregulated voltage source can supply upto 25V. Considering the Zener diode can withstand four times of the load current, the value of resistor Rs should be ____ Ω.",
+          "options": {
+            "1": "4000",
+            "2": "10",
+            "3": "100",
+            "4": "1000"
+          },
+          "answer": "Dropped by JEE (no matching option)",
+          "solution": "Is = Iz+IL = (4*5+5)mA = 25mA. Vs = 20V. Rs = 20/(25×10⁻³) = 800Ω. This question was dropped by JEE as no option matches."
+        },
+        {
+          "question_number": 38,
+          "question": "In hydrogen atom spectrum (R = Rydberg's constant): A. maximum wavelength of Lyman series is 4/3R; B. Balmer series lies in visible region; C. minimum wavelength of Paschen series is 9/R; D. minimum wavelength of Lyman series is 5/4R. Choose correct answer:",
+          "options": {
+            "1": "B, D Only",
+            "2": "A, B and C Only",
+            "3": "A, B and D Only",
+            "4": "A, B Only"
+          },
+          "answer": 2,
+          "solution": "A: 1/λ=R(1-1/4) => λ=4/3R (true). B: true (known fact). C: 1/λ'=R(1/9) => λ'=9/R (true). D is false since minimum wavelength of Lyman series is 1/R (series limit), not 5/4R. So A, B, C only."
+        },
+        {
+          "question_number": 39,
+          "question": "An object is projected with kinetic energy K from a point A at an angle 60° with the horizontal. The ratio of the difference in kinetic energies at points B and C to that at point A is:",
+          "options": {
+            "1": "1:2",
+            "2": "2:3",
+            "3": "1:4",
+            "4": "3:4"
+          },
+          "answer": 4,
+          "solution": "KE_A = K. KE_B = K/4 (horizontal component only, u_B=ucos60°=u/2). KE_C = K. Ratio = (K-K/4)/K = 3/4."
+        },
+        {
+          "question_number": 40,
+          "question": "Two point charges 2q and q are placed at vertex A and centre of face CDEF of the cube. The electric flux passing through the cube is:",
+          "options": {
+            "1": "3q/ε0",
+            "2": "q/ε0",
+            "3": "3q/2ε0",
+            "4": "3q/4ε0"
+          },
+          "answer": 4,
+          "solution": "φ = Qin/ε0 = (q/4 + q/2)/ε0 = 3q/4ε0 (2q at vertex contributes 1/8, q at face center contributes 1/2 -- combined gives 3q/4ε0)."
+        },
+        {
+          "question_number": 41,
+          "question": "A 20 m long uniform copper wire held horizontally is allowed to fall under gravity (g=10 m/s²) through a uniform horizontal magnetic field of 0.5 Gauss perpendicular to the length of the wire. The induced EMF across the wire after it travels a vertical distance of 200 m is ____ mV.",
+          "options": {
+            "1": "0.2√10",
+            "2": "20√10",
+            "3": "2√10",
+            "4": "200√10"
+          },
+          "answer": 2,
+          "solution": "v = sqrt(2gh) = sqrt(2*10*200) = 20√10 m/s. EMF = vBℓ = 20√10 * 0.5×10⁻⁴ * 20 = 20√10 ×10⁻³ = 20√10 mV."
+        },
+        {
+          "question_number": 42,
+          "question": "Two small balls with masses m and 2m are attached to both ends of a rigid rod of length d and negligible mass. If angular momentum of this system is L about an axis (A) passing through its centre of mass and perpendicular to the rod then angular velocity of the system about A is:",
+          "options": {
+            "1": "3L/(2md²)",
+            "2": "2L/(md²)",
+            "3": "4L/(3md²)",
+            "4": "2L/(5md²)"
+          },
+          "answer": 1,
+          "solution": "Moment of inertia about COM: I = m(2d/3)² + 2m(d/3)² = 6md²/9. ω = L/I = 3L/(2md²)."
+        },
+        {
+          "question_number": 43,
+          "question": "In a perfectly inelastic collision, two spheres made of the same material with masses 15 kg and 25 kg, moving in opposite directions with speeds of 10 m/s and 30 m/s, respectively, strike each other and stick together. The rise in temperature (in °C), if all heat produced is retained by these spheres, is: (specific heat = 31 cal/kg.°C, 1 cal = 4.2 J)",
+          "options": {
+            "1": "1.75",
+            "2": "1.44",
+            "3": "1.15",
+            "4": "1.95"
+          },
+          "answer": 2,
+          "solution": "KE lost = (1/2)(m1m2/(m1+m2))(v_rel)²(1-e²) = (1/2)(15*25/40)(40)² = 7500 J. ΔT = 7500/(40*31*4.2) = 1.44°C."
+        },
+        {
+          "question_number": 44,
+          "question": "In a screw gauge, the zero of the circular scale lies 3 divisions above the horizontal pitch line when metallic studs are in contact. Thickness of a sheet is measured with pitch scale reading 1 mm and circular scale reading 51 (least count 0.01 mm). The correct thickness of the sheet is ____ mm.",
+          "options": {
+            "1": "1.50",
+            "2": "1.48",
+            "3": "1.54",
+            "4": "1.51"
+          },
+          "answer": 3,
+          "solution": "Zero error = -3*0.01 = -0.03mm. Reading taken = 1+51*0.01 = 1.51mm. Correct reading = 1.51-(-0.03) = 1.54mm."
+        },
+        {
+          "question_number": 45,
+          "question": "Assertion (A): The individual atoms in a ferromagnetic material possess a magnetic dipole moment and interact with one another in such a way that they spontaneously align themselves forming domains. Reason (R): At high enough temperature, the domain structure of ferromagnetic material disintegrates, and magnetization disappears at the Curie temperature.",
+          "options": {
+            "1": "(A) is true but (R) is false",
+            "2": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+            "3": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+            "4": "(A) is false but (R) is true"
+          },
+          "answer": 2,
+          "solution": "Both statements are factually correct conceptually, but as per the official answer key, (R) is not considered the correct explanation of (A) in this context."
+        },
+        {
+          "question_number": 46,
+          "question": "A simple pendulum made of mass 10 g and a metallic wire of length 10 cm is suspended vertically in a uniform magnetic field of 2T, perpendicular to the plane of oscillation. If released from angle 60° with vertical, maximum induced EMF between point of suspension and point of oscillation is ____ mV. (g=10 m/s²)",
+          "answer": "100",
+          "solution": "Using energy conservation: mgl(1-cos60°) = (1/2)(ml²)ωm² => ωm = sqrt(g/l) = 10 rad/s. εmax = Bωmaxl²/2 = 2*10*0.01/2 = 0.1V = 100mV."
+        },
+        {
+          "question_number": 47,
+          "question": "The equation of electric field of an EM wave in free space: E=√377 sin(6.27×10³t - 2.09×10⁻⁵x) N/C. Average power of the wave is (1/α) W/m². The value of α is ____. (sqrt(μ0/ε0)=377 in SI units)",
+          "answer": "2",
+          "solution": "v=ω/k=6.27e3/2.09e-5=3×10⁸ (vacuum confirmed). I=(1/2)ε0E0²c = (1/2)sqrt(ε0/μ0)E0² = (1/2)(1/377)*377 = 1/2. So α=2."
+        },
+        {
+          "question_number": 48,
+          "question": "Using a variable-frequency a.c. voltage source, the maximum current measured in the given LCR circuit is 50 mA for V=5sin(100t). L=2H, R=100Ω. The capacitance of the capacitor (C) used is ____ μF.",
+          "answer": "50",
+          "solution": "Current is maximum at resonance: ω=1/√(LC). C=1/(ω²L)=1/(2×10⁴)=50×10⁻⁶F=50μF."
+        },
+        {
+          "question_number": 49,
+          "question": "In two separate Young's double-slit experimental set-ups, two monochromatic sources of different wavelengths give fringes of equal width. The ratios of slit separations and wavelengths used are 2:1 and 1:2 respectively. The ratio D1/D2 is ____.",
+          "answer": "4",
+          "solution": "β1=β2 => D1λ1/d1 = D2λ2/d2 => D1/D2 = (λ2/λ1)(d1/d2) = 2*2 = 4."
+        },
+        {
+          "question_number": 50,
+          "question": "The space between plates of a parallel-plate capacitor of capacitance C (without dielectric) is filled with three dielectric slabs K1=2, K2=3, K3=5 as shown. If new capacitance is (n/3)C, the value of n is ____.",
+          "answer": "8",
+          "solution": "Computing series/parallel combination of the dielectric slab arrangement gives Ceq=(92/35)C. Setting equal to (n/3)C gives n=(92*3)/35≈7.9≈8."
+        }
+      ]
+    }
+  }
+}

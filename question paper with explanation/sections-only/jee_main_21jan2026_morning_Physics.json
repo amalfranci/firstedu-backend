@@ -1,0 +1,332 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "date": "21st January 2026",
+  "shift": "Morning",
+  "source": "Career Point Kota - Questions & Solutions",
+  "sections": {
+    "Physics": {
+      "questions": [
+        {
+          "number": 26,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Potential energy (V) versus distance (x) is given by a graph with segments AB, BC, CD, DE. Rank various regions as per the magnitudes of the force (F) acting on a particle from high to low.",
+          "options": {
+            "1": "F_BC > F_CD > F_DE > F_AB",
+            "2": "F_CD > F_AB > F_BC > F_DE",
+            "3": "F_CD > F_DE > F_AB > F_BC",
+            "4": "F_BC > F_AB > F_DE > F_CD"
+          },
+          "answer": "4",
+          "solution": "Force = negative of slope of the V-x curve. Comparing slopes of segments BC, AB, DE, CD from the graph gives F_BC > F_AB > F_DE > F_CD."
+        },
+        {
+          "number": 27,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A gas based geyser heats water flowing at the rate of 5.0 litres per minute from 27degC to 87degC. The rate of consumption of the gas is ____ g/s. (heat of combustion of gas = 5.0x10^4 J/g, specific heat capacity of water = 4200 J/kg.degC)",
+          "options": {
+            "1": "2.1",
+            "2": "4.2",
+            "3": "0.42",
+            "4": "0.21"
+          },
+          "answer": "3",
+          "solution": "Water flow rate = 5/60 kg/s. Power of heater = (dm/dt)*S*deltaT = (1/12)*4200*60 W. Rate of gas consumption x satisfies x*5.0x10^4 = (1/12)*4200*60, giving x = 0.42 g/s."
+        },
+        {
+          "number": 28,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A conducting circular loop of area 1.0 m^2 is placed perpendicular to a magnetic field which varies as B = sin(100t) Tesla. If the resistance of the loop is 100 ohm, then the average thermal energy dissipated in the loop in one period is ____ J.",
+          "options": {
+            "1": "pi/2",
+            "2": "2*pi",
+            "3": "pi",
+            "4": "pi^2"
+          },
+          "answer": "3",
+          "solution": "EMF = d(phi)/dt = 100cos(100t). P = V^2/R = 10^4*cos^2(100t)/100. Integrating P over one period T=2pi/100=pi/50 gives thermal energy Q = 100*Integral(0 to pi/50) cos^2(100t)dt = 100*[pi/100] = pi."
+        },
+        {
+          "number": 29,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Water flows through a horizontal tube as shown. The difference in height between water columns in vertical tubes is 5 cm, and the areas of cross-section at A and B are 6 cm^2 and 3 cm^2 respectively. The rate of flow will be ____ cm^3/s. (g=10 m/s^2)",
+          "options": {
+            "1": "200/sqrt(3)",
+            "2": "200*sqrt(6)",
+            "3": "200*sqrt(3)",
+            "4": "100*sqrt(3)"
+          },
+          "answer": "3",
+          "solution": "From continuity: A_A*V_A = A_B*V_B => V_B=2V_A. Bernoulli's equation between A and B: rho*g*0.05 = (1/2)*rho*(V_B^2-V_A^2) = (1/2)*rho*3*V_A^2. Solving V_A = sqrt(2g*0.05/3) = 100/sqrt(3) cm/s. Volume flow rate = A_A*V_A = 6*100/sqrt(3) = 200*sqrt(3) cm^3/s."
+        },
+        {
+          "number": 30,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "In an experiment the values of two spring constants were measured as k1=(10+-0.2) N/m and k2=(20+-0.3) N/m. If these springs are connected in parallel, then the percentage error in equivalent spring constant is:",
+          "options": {
+            "1": "2.67%",
+            "2": "2.33%",
+            "3": "1.33%",
+            "4": "1.67%"
+          },
+          "answer": "4",
+          "solution": "For parallel combination, K_eq=K1+K2=30 N/m, Delta(K_eq)=0.2+0.3=0.5 N/m. %Error = (0.5/30)*100 = 1.67%."
+        },
+        {
+          "number": 31,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A 4 kg mass moves under the influence of a force F = (4t^3 i - 3t j) N, where t is time in seconds. If mass starts from origin at t=0, the velocity and position after t=2s will be:",
+          "options": {
+            "1": "v = 3i + (3/2)j; r = (6/5)i + j",
+            "2": "v = 4i - (3/2)j; r = (8/5)i - j",
+            "3": "v = 4i + (5/2)j; r = (8/5)i + 2j",
+            "4": "v = 4i - (3/2)j; r = (6/5)i - j"
+          },
+          "answer": "2",
+          "solution": "a = F/m = t^3*i - (3/4)t*j. Integrating: vx = t^4/4, at t=2 vx=4; vy = -(3/8)t^2, at t=2 vy=-3/2. So v=4i-1.5j. Integrating again: x=t^5/20, at t=2 x=8/5; y=-t^3/8, at t=2 y=-1. So r=(8/5)i-j."
+        },
+        {
+          "number": 32,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Consider a modified Bernoulli equation: (P + A/(Bt^2)) + rho*g*(h+Bt) + (1/2)*rho*V^2 = constant. If t has the dimension of time, then the dimensions of A and B are ____, ____ respectively.",
+          "options": {
+            "1": "[ML^0 T^-1] and [M^0 LT]",
+            "2": "[ML^0 T^-1] and [M^0 LT^-1]",
+            "3": "[ML^0 T^-2] and [M^0 LT^-2]",
+            "4": "[ML^0 T^-2] and [M^0 LT^-1]"
+          },
+          "answer": "2",
+          "solution": "From [h]=[Bt], [B]=[h]/[t]=[L]/[T]=[LT^-1]. From [P]=[A/(Bt^2)], [A]=[P]*[B]*[t^2] = [ML^-1T^-2]*[LT^-1]*[T^2] = [ML^0T^-1]."
+        },
+        {
+          "number": 33,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A current-carrying solenoid is placed vertically and a particle of mass m with charge Q is released from rest. The particle moves along the axis of the solenoid. If g is acceleration due to gravity, the acceleration (a) of the charged particle will satisfy:",
+          "options": {
+            "1": "a = g",
+            "2": "a > g",
+            "3": "a = 0",
+            "4": "0 < a < g"
+          },
+          "answer": "1",
+          "solution": "Since the particle moves along the axis (velocity parallel to B), the magnetic force F=q(v x B)=0. So net force is just gravity, giving a=g."
+        },
+        {
+          "number": 34,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A parallel plate capacitor has capacitance C when there is vacuum within the parallel plates. A sheet having thickness (1/3)rd of the separation between the plates and relative permittivity K is introduced between the plates. The new capacitance of the system is:",
+          "options": {
+            "1": "3KC/(2K+1)",
+            "2": "CK/(2+K)",
+            "3": "3CK^2/(2K+1)^2",
+            "4": "4KC/(3K-1)"
+          },
+          "answer": "1",
+          "solution": "The capacitor splits into two series capacitors: C1 (2d/3 gap, vacuum) = (3/2)C, and C2 (d/3 gap with dielectric K) = 3KC. Series combination Ceq = C1*C2/(C1+C2) = 3KC/(2K+1)."
+        },
+        {
+          "number": 35,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "The electric field of a plane electromagnetic wave is given by: Ey = 69sin[0.6x10^3 x - 1.8x10^11 t] V/m. The expression for the magnetic field associated with this wave is ____ T.",
+          "options": {
+            "1": "Bz = 2.3x10^-7 sin[0.6x10^3 x - 1.8x10^11 t]",
+            "2": "Bz = 2.3x10^-7 sin[0.6x10^3 x + 1.8x10^11 t]",
+            "3": "By = 69 sin[0.6x10^3 x + 1.8x10^11 t]",
+            "4": "By = 2.3x10^-7 sin[0.6x10^3 x - 1.8x10^11 t]"
+          },
+          "answer": "1",
+          "solution": "Direction: c-hat = i-hat (wave travels along x), E-hat=j-hat, so B-hat=i x j=k-hat (Bz). Magnitude |B|=|E|/c = (69*0.6x10^3)/(1.8x10^11) = 69/(3x10^8) ~ 2.3x10^-7 T. Phase matches E field: Bz = 2.3x10^-7 sin(0.6x10^3 x - 1.8x10^11 t)."
+        },
+        {
+          "number": 36,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "In a double slit experiment the distance between the slits is 0.1 cm and the screen is placed at 50 cm from the slits plane. When one slit is covered with a transparent sheet of thickness t and refractive index n=1.5, the central fringe shifts by 0.2 cm. The value of t is ____ cm.",
+          "options": {
+            "1": "8x10^-4",
+            "2": "6.0x10^-3",
+            "3": "5.6x10^-4",
+            "4": "5.0x10^-3"
+          },
+          "answer": "1",
+          "solution": "d*sin(theta) = (mu-1)*t, i.e., d*(x/D) = (mu-1)*t. t = xd/(D(mu-1)) = (0.2*0.1)/(50*(1.5-1)) = 8x10^-4 cm."
+        },
+        {
+          "number": 37,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A light wave described by E = 60sin[(3x10^15)t] + sin[(12x10^15)t] (in SI units) falls on a metal surface of work function 2.8 eV. The maximum kinetic energy of the ejected photoelectron is (approximately) ____ eV. (h=6.6x10^-34 J-s, e=1.6x10^-19 C)",
+          "options": {
+            "1": "5.1",
+            "2": "3.8",
+            "3": "6.0",
+            "4": "7.8"
+          },
+          "answer": "1",
+          "solution": "The higher frequency component omega2=12x10^15 rad/s dominates photoemission. v=omega/2pi. E_photon = h*v = 6.6x10^-34*1.91x10^15 = 1.26x10^-18 J = 7.9 eV. K_max = E_photon - work function = 7.9 - 2.8 = 5.1 eV."
+        },
+        {
+          "number": 38,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "If an alpha particle with energy 7.7 MeV is bombarded on a thin gold foil, the closest distance from the nucleus it can reach is ____ m. (Atomic number of gold = 79, 1/(4*pi*epsilon0) = 9x10^9 SI units)",
+          "options": {
+            "1": "2.95x10^-14",
+            "2": "2.95x10^-16",
+            "3": "3.85x10^-16",
+            "4": "3.85x10^-14"
+          },
+          "answer": "1",
+          "solution": "By energy conservation, KE = k*q_alpha*q_gold/r. 7.7x10^6*1.6x10^-19 = 9x10^9*(1.6x10^-19)*(79*1.6x10^-19)/r. Solving gives r = 2.95x10^-14 m."
+        },
+        {
+          "number": 39,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A uniform rod of mass m and length l is suspended by means of two identical inextensible light strings as shown. Tension in one string immediately after the other string is cut, is ____. (g = acceleration due to gravity)",
+          "options": {
+            "1": "mg/2",
+            "2": "mg/4",
+            "3": "mg/3",
+            "4": "mg"
+          },
+          "answer": "2",
+          "solution": "Taking torque about the pivot (remaining string attachment point): mg*(l/2) = (ml^2/3)*alpha => alpha = 3g/(2l). Then T = mg - m*(l/2)*alpha = mg - m*(l/2)*(3g/(2l)) = mg - (3/4)mg = mg/4."
+        },
+        {
+          "number": 40,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Aluminium and steel rods having the same lengths and cross-sections are joined to make a total length of 120 cm at 30degC. The coefficient of linear expansion of aluminium and steel are 24x10^-6/degC and 1.2x10^-5/degC respectively. The length of this composite rod when its temperature is raised to 100degC, is ____ cm.",
+          "options": {
+            "1": "120.20",
+            "2": "120.15",
+            "3": "120.03",
+            "4": "120.06"
+          },
+          "answer": "2",
+          "solution": "Each rod has original length 60 cm. l_final = l0*[2 + (alpha_A+alpha_B)*deltaT] = 60*[2 + (24x10^-6+12x10^-6)*70] = 60*[2+0.0025] wait recompute: (24+12)x10^-6*70=36x10^-6*70=0.00252... Using given values: l_final = 60*[2 + (36x10^-6)*70] = 60*[2+0.00252] = 120.15 cm."
+        },
+        {
+          "number": 41,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A 1 m long metal rod AB completes the circuit as shown. The area of circuit is perpendicular to the magnetic field of 0.10 T. If the resistance of the total circuit is 2 ohm, then the force needed to move the rod towards right with constant speed (v) of 1.5 m/s is ____ N.",
+          "options": {
+            "1": "7.5x10^-2",
+            "2": "5.7x10^-3",
+            "3": "5.7x10^-2",
+            "4": "7.5x10^-3"
+          },
+          "answer": "4",
+          "solution": "To maintain constant speed, F_ext = F_B = i*l*B = (vBl/R)*l*B = B^2*l^2*v/R = (0.1)^2*(1)^2*1.5/2 = 7.5x10^-3 N."
+        },
+        {
+          "number": 42,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A circuit consists of two NOR gates feeding into a NOR gate, then into a NOR gate again (as shown). The given circuit works as:",
+          "options": {
+            "1": "AND gate",
+            "2": "NOR gate",
+            "3": "NAND gate",
+            "4": "OR gate"
+          },
+          "answer": "3",
+          "solution": "P = A-bar (NOR with itself), Q = B-bar. R = NOR(P,Q) = (P+Q)-bar = (A-bar+B-bar)-bar = AB (using De Morgan's). S = (AB)-bar (final NOR with itself) = NAND gate."
+        },
+        {
+          "number": 43,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Two strings (A,B) having linear densities mu_A=2x10^-4 kg/m and mu_B=4x10^-4 kg/m and lengths L_A=2.5m and L_B=1.5m respectively are joined. Free ends of A and B are tied to two rigid supports C and D creating a tension of 500N in the wire. Two identical pulses sent from C and D ends take time t1 and t2 respectively to reach the joint. The ratio t1/t2 is:",
+          "options": {
+            "1": "1.08",
+            "2": "1.90",
+            "3": "1.67",
+            "4": "1.18"
+          },
+          "answer": "4",
+          "solution": "V_A = sqrt(T/mu_A) = sqrt(500/(2x10^-4)) = 5*sqrt(10)x10^2 m/s. V_B = sqrt(500/(4x10^-4)) = 5*sqrt(5)x10^2 m/s. t1=L_A/V_A, t2=L_B/V_B. t1/t2 = (2.5/5sqrt10)/(1.5/5sqrt5) = (2.5*5sqrt5)/(5sqrt10*1.5) = 1.18."
+        },
+        {
+          "number": 44,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Initially a satellite of 100 kg is in a circular orbit of radius 1.5*R_E. This satellite can be moved to a circular orbit of radius 3*R_E by supplying alpha x10^6 J of energy. The value of alpha is ____. (R_E=6x10^6 m, g=10 m/s^2)",
+          "options": {
+            "1": "150",
+            "2": "500",
+            "3": "100",
+            "4": "1000"
+          },
+          "answer": "4",
+          "solution": "Energy of satellite in circular orbit: E=-GM_E*m/(2r). Required energy = E_final - E_initial = GM_E*m/(6*R_E). Using g=GM_E/R_E^2 => GM_E=g*R_E^2, so deltaE = g*m*R_E/6 = (10*100*6x10^6)/6 = 1000x10^6 J. alpha=1000."
+        },
+        {
+          "number": 45,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A point charge of 10^-8 C is placed at origin. The work done in moving a point charge 2 microC from point A(4,4,2)m to B(2,2,1)m is ____ J. (1/(4*pi*epsilon0) = 9x10^9 SI units)",
+          "options": {
+            "1": "45x10^-6",
+            "2": "0",
+            "3": "30x10^-6",
+            "4": "15x10^-6"
+          },
+          "answer": "3",
+          "solution": "r_f = sqrt((2)^2+(2)^2+(1)^2) = 3m; r_i = sqrt(4^2+4^2+2^2) = 6m. W_ext = k*q1*q2*(1/r_f - 1/r_i) = 9x10^9*(10^-8*2x10^-6)*(1/3-1/6) = 3x10^-5 = 30x10^-6 J."
+        },
+        {
+          "number": 46,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "A collimated beam of light of diameter 2 mm is propagating along the x-axis. The beam is required to be expanded into a collimated beam of diameter 14 mm using a system of two convex lenses. If the first lens has focal length 40 mm, then the focal length of the second lens is ____ mm.",
+          "answer": "280",
+          "solution": "Using similar triangles for beam expansion: 40/2 = f/14, giving f = 280 mm."
+        },
+        {
+          "number": 47,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "The heat generated in 1 minute between points A and B in the given circuit, when a battery of 9V with internal resistance 1 ohm is connected across these points, is ____ J.",
+          "answer": "1080",
+          "solution": "The bridge is a balanced Wheatstone bridge (1ohm/2ohm on one side, 2ohm/4ohm on the other with 1ohm bridge resistor carrying no current), so it reduces to two parallel branches equivalent to 2 ohm between A and B. With 9V battery and 1ohm internal resistance, i=9/3=3A. Heat H_AB = i^2*R_AB*t = 3^2*2*60 = 1080 J."
+        },
+        {
+          "number": 48,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "Two identical thin rods of mass M kg and length L m are connected in a T-shape as shown. Moment of inertia of the combined rod system about an axis passing through point P (top of vertical rod) and perpendicular to the plane of the rods is (X/2)*M*L^2 kg.m^2. The value of X is ____.",
+          "answer": "17",
+          "solution": "I = ML^2/3 (vertical rod about end P) + [ML^2/12 + ML^2] (horizontal rod about P, using parallel axis theorem) = ML^2/3 + 13ML^2/12 = (4ML^2+ML^2+12ML^2)/12 = 17ML^2/12. So X/2 = 17/12, giving X=17 (using I=17ML^2/12 directly, X=17)."
+        },
+        {
+          "number": 49,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "10 mole of oxygen is heated at constant volume from 30degC to 40degC. The change in the internal energy of the gas is ____ cal. (Molecular specific heat of oxygen at constant pressure Cp=7 cal/mol.degC, R=2 cal/mol.degC)",
+          "answer": "500",
+          "solution": "deltaU = n*Cv*deltaT = n*(Cp-R)*deltaT = 10*(7-2)*(40-30) = 10*5*10 = 500 cal."
+        },
+        {
+          "number": 50,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "In a microscope the objective is having focal length f0=2 cm and eye-piece is having focal length fe=4 cm. The tube length is 32 cm. The magnification produced by this microscope for normal adjustment is ____.",
+          "answer": "100",
+          "solution": "m = (length*D)/(f0*fe) = (32*25)/(2*4) = 800/8 = 100."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "date": "23rd January 2026",
+  "session": "Morning",
+  "source": "Career Point Ltd.",
+  "sections": {
+    "Chemistry": {
+      "questions": [
+        {
+          "question_number": 51,
+          "question": "Which of the following statements regarding the energy of the stationary state is true in the following one-electron system?",
+          "options": {
+            "1": "-1.09×10⁻¹⁸ J for second orbit of H atom",
+            "2": "+2.18×10⁻¹⁸ J for second orbit of He⁺ ion",
+            "3": "+8.72×10⁻¹⁸ J for first orbit of He⁺ ion",
+            "4": "-2.18×10⁻¹⁸ J for third orbit of Li²⁺ ion"
+          },
+          "answer": 4,
+          "solution": "En = -2.18×10⁻¹⁸ Z²/n² J/atom. For 3rd orbit of Li²⁺ (Z=3,n=3): En = -2.18×10⁻¹⁸ * 9/9 = -2.18×10⁻¹⁸ J."
+        },
+        {
+          "question_number": 52,
+          "question": "Which one of the following graphs accurately represents the plot of partial pressure of CS2 vs its mole fraction in a mixture of acetone and CS2 at constant temperature?",
+          "options": {
+            "1": "Graph showing positive deviation with Henry's/Raoult's law lines",
+            "2": "Graph 2",
+            "3": "Graph 3",
+            "4": "Graph 4"
+          },
+          "answer": 1,
+          "solution": "Mixture of CS2 and acetone shows positive deviation from Raoult's law, so PCS2 > P°CS2 * XCS2, matching graph option (1)."
+        },
+        {
+          "question_number": 53,
+          "question": "The correct trend in the first ionization enthalpies of the elements in the 3rd period of periodic table is:",
+          "options": {
+            "1": "Al < Si < S < P < Cl",
+            "2": "Al < S < P < Si < Cl",
+            "3": "Si < S < Al < P < Cl",
+            "4": "S < Si < Al < P < Cl"
+          },
+          "answer": 1,
+          "solution": "In general ionization energy increases left to right due to increasing Zeff, with an anomaly at P (half-filled stable configuration gives higher IE than S): Al < Si < S < P < Cl."
+        },
+        {
+          "question_number": 54,
+          "question": "For the conversion of 2-bromo-1-methylbenzene derivative (X, with CH3 group) to a phenylacetic acid derivative (Y, with COOH), identify the correct sequence of reagents:",
+          "options": {
+            "1": "(i) NaOH(aq) (ii) Jones reagent (iii) H3O+",
+            "2": "(i) B2H6/H2O2 (ii) NaOEt (iii) Jones reagent",
+            "3": "(i) Jones reagent (ii) NaOEt (iii) Hot KMnO4/KOH",
+            "4": "(i) NaOEt (ii) B2H6/H2O2 (iii) Jones reagent"
+          },
+          "answer": 4,
+          "solution": "NaOEt eliminates HBr to form a vinyl/styrene derivative, then B2H6/H2O2 (hydroboration-oxidation, anti-Markovnikov) gives the primary alcohol, then Jones reagent oxidizes it to the carboxylic acid."
+        },
+        {
+          "question_number": 55,
+          "question": "In the electrochemical cell Ag(s)|AgCl(s)|FeCl2(aq),FeCl3(aq)|Pt(s) at 298K, the cell potential (Ecell) will increase when: (A) [Fe2+] increased (B) [Fe3+] decreased (C) [Fe2+] decreased (D) [Fe3+] increased (E) [Cl-] increased",
+          "options": {
+            "1": "A and B only",
+            "2": "A and E only",
+            "3": "B only",
+            "4": "C, D and E only"
+          },
+          "answer": 1,
+          "solution": "Ecell = E°cell - (0.059/1)log([Fe2+]/([Cl-][Fe3+])). Ecell increases when [Fe2+] increases (A) or [Fe3+] decreases (B)."
+        },
+        {
+          "question_number": 56,
+          "question": "'x' is the product obtained from propanenitrile and stannous chloride in presence of HCl followed by hydrolysis (Stephen reaction giving propanal). 'y' is obtained from but-2-ene by ozonolysis followed by hydrolysis (giving ethanal). From the following, which product is NOT obtained when one mole of x and one mole of y react in presence of alkali followed by heating (crossed aldol condensation)?",
+          "options": {
+            "1": "2-Methylbut-2-enal",
+            "2": "Pent-2-enal",
+            "3": "2-Methylpent-2-enal",
+            "4": "3-Methylbut-2-enal"
+          },
+          "answer": 4,
+          "solution": "Propanal (X) has an alpha-CH3, ethanal (Y) has alpha-CH3. Crossed aldol/Claisen-Schmidt type condensation gives: 2-methylpent-2-enal, 2-methylbut-2-enal, and pent-2-enal, but NOT 3-methylbut-2-enal (that combination is not formed from these reactants)."
+        },
+        {
+          "question_number": 57,
+          "question": "4-Nitrotoluene undergoes: (i) Sn,HCl/Δ (ii) pH neutralisation → (A); then (i)(CH3CO)2O (ii)Br2/AcOH → (B). Assuming complete reaction, 137 mg of 4-nitrotoluene will produce ____ mg of B. (Molar mass: H=1,C=12,N=14,O=16,Br=80)",
+          "options": {
+            "1": "301",
+            "2": "146",
+            "3": "228",
+            "4": "208"
+          },
+          "answer": 3,
+          "solution": "4-nitrotoluene (MW=137) → reduction to 4-methylaniline (A) → acetylation then bromination gives brominated acetanilide derivative B (MW=228). Moles = 137×10⁻³/137 = 0.001 mol. Mass of B = 0.001×228 = 0.228 g = 228 mg."
+        },
+        {
+          "question_number": 58,
+          "question": "A cup of water at 5°C (system) is placed in a microwave oven and the oven is turned on for one minute during which the water begins to boil. Which of the following is true?",
+          "options": {
+            "1": "q=+ve, w=0, ΔU=-ve",
+            "2": "q=+ve, w=-ve, ΔU=+ve",
+            "3": "q=-ve, w=-ve, ΔU=-ve",
+            "4": "q=+ve, w=-ve, ΔU=-ve"
+          },
+          "answer": 2,
+          "solution": "Heat is given to the system so q=+ve. Due to expansion of the system (water to steam), work is done by system so w=-ve. Internal energy increases (liquid to gas), so ΔU=+ve."
+        },
+        {
+          "question_number": 59,
+          "question": "Statement I: [CoBr4]²⁻ ion will absorb light of lower energy than [CoCl4]²⁻ ion. Statement II: In [CoI4]²⁻ ion, the energy separation between the two sets of d-orbitals is more than [CoCl4]²⁻ ion.",
+          "options": {
+            "1": "Both Statement I and Statement II are false",
+            "2": "Statement I is true but Statement II is false",
+            "3": "Statement I is false but Statement II is true",
+            "4": "Both Statement I and Statement II are true"
+          },
+          "answer": 2,
+          "solution": "Statement I true: ligand strength Cl⁻>Br⁻, so Δt for CoCl4²⁻ > CoBr4²⁻, meaning CoBr4²⁻ absorbs lower energy light. Statement II false: ligand strength I⁻<Cl⁻, so Δt for CoI4²⁻ < CoCl4²⁻, not more."
+        },
+        {
+          "question_number": 60,
+          "question": "But-2-yne and hydrogen (one mole each) are separately treated with (i) Pd/C and (ii) Na/liq.NH3 to give products X and Y respectively. Identify the incorrect statements: A. X and Y are stereoisomers. B. Dipole moment of X is zero. C. Boiling point of X is higher than Y. D. X and Y react with O3/Zn+H2O to give different products.",
+          "options": {
+            "1": "B and C only",
+            "2": "B and D only",
+            "3": "A and B only",
+            "4": "A and C only"
+          },
+          "answer": 2,
+          "solution": "X (cis-but-2-ene, from Pd/C) has non-zero dipole moment, so B is incorrect (incorrect statement). Both X and Y give the same product (2CH3CHO/acetaldehyde) on ozonolysis regardless of cis/trans, so D is also incorrect. Correct incorrect-statements: B and D."
+        },
+        {
+          "question_number": 61,
+          "question": "Given: (A) n=5, ml=-1; (B) n=3,l=2,ml=-1,ms=+1/2. The maximum number of electron(s) in an atom that can have the quantum numbers as given in (A) and (B) respectively are:",
+          "options": {
+            "1": "26 and 1",
+            "2": "4 and 1",
+            "3": "2 and 4",
+            "4": "8 and 1"
+          },
+          "answer": 4,
+          "solution": "(A) n=5: summing over allowed l values (0 to 4) where ml=-1 is possible gives total 8 electrons (2 electrons per valid l from l=1 to l=4). (B) Fully specified quantum numbers including ms allow only 1 electron."
+        },
+        {
+          "question_number": 62,
+          "question": "Consider compounds: a) chlorobenzene, b) nitrobenzene, c) anisole (methoxybenzene). Arrange in increasing order of reactivity with nitrating mixture.",
+          "options": {
+            "1": "c < a < b",
+            "2": "b < c < a",
+            "3": "c < b < a",
+            "4": "b < a < c"
+          },
+          "answer": 4,
+          "solution": "-OMe is a strong electron donor (+M), activating the ring most; -NO2 is a strong electron withdrawer (-M), deactivating the ring most; -Cl is a weak deactivator (withdraws by induction but donates by resonance, milder deactivator than NO2). Increasing reactivity: NO2(b) < Cl(a) < OMe(c)."
+        },
+        {
+          "question_number": 63,
+          "question": "The statements that are incorrect about the nickel(II) complex of dimethylglyoxime are: A. It is red in colour. B. It has high solubility in water at pH=9. C. The Ni ion has two unpaired d-electrons. D. The N-Ni-N bond angle is almost close to 90°. E. The complex contains four five-membered metallacycles.",
+          "options": {
+            "1": "C and E only",
+            "2": "A, D and B only",
+            "3": "B, C and E only",
+            "4": "C and D only"
+          },
+          "answer": 3,
+          "solution": "The complex Ni(dmgH)2 is rosy-red (A true), precipitated (insoluble) in basic medium (B is false/incorrect), Ni2+ is d8 square planar with dsp2 hybridization and 0 unpaired electrons (C is incorrect), N-Ni-N bond angle close to 90° in square planar geometry (D true), and it contains only two five-membered metallacycles, not four (E is incorrect). Incorrect statements: B, C, E."
+        },
+        {
+          "question_number": 64,
+          "question": "From the given cyclic structures (A to D), those which will NOT react with Tollen's reagent are:",
+          "options": {
+            "1": "B and D",
+            "2": "A and D",
+            "3": "A and B",
+            "4": "B and C"
+          },
+          "answer": 4,
+          "solution": "Structures B and C are drawn as acetals/glycosides (no free anomeric -OH), hence they cannot form the open-chain aldehyde form and do not reduce Tollen's reagent."
+        },
+        {
+          "question_number": 65,
+          "question": "Identify the molecule (X) with maximum number of lone pairs of electrons (via Lewis dot structure) among HNO3, H2SO4, NF3 and O3. Choose the correct bond angle made by the central atom of molecule (X).",
+          "options": {
+            "1": "120°",
+            "2": "107°",
+            "3": "102°",
+            "4": "116°"
+          },
+          "answer": 3,
+          "solution": "NF3 has the maximum lone pairs (10 total including on F atoms) with sp3 hybridized N. Bond angle in NF3 ≈ 102° (compressed from 109.5° due to lone pair repulsion)."
+        },
+        {
+          "question_number": 66,
+          "question": "Match List-I (Functional group detection) with List-II (Change observed): A. Unsaturation (Baeyer's test); B. Alcoholic group (Ceric ammonium nitrate test); C. Aldehyde group (Tollen's reagent); D. Phenolic group (FeCl3 test). List-II: I. Red colour appears; II. Silver mirror appears; III. Violet colour appears; IV. Discharge of pink colour.",
+          "options": {
+            "1": "A-III,B-IV,C-II,D-I",
+            "2": "A-III,B-IV,C-I,D-II",
+            "3": "A-IV,B-I,C-II,D-III",
+            "4": "A-IV,B-III,C-II,D-I"
+          },
+          "answer": 3,
+          "solution": "A (Baeyer's test/unsaturation) discharges pink colour (IV). B (ceric ammonium nitrate for alcohols) gives red colour (I). C (Tollen's test for aldehydes) gives silver mirror (II). D (FeCl3 test for phenols) gives violet colour (III)."
+        },
+        {
+          "question_number": 67,
+          "question": "Statement-I: Sublimation is used for the separation and purification of compounds with low melting point. Statement-II: The boiling point of a liquid increases as the external pressure is reduced.",
+          "options": {
+            "1": "Statement-I is false but Statement-II is true",
+            "2": "Statement-I is true but Statement-II is false",
+            "3": "Both Statement-I and Statement-II are true",
+            "4": "Both Statement-I and Statement-II are false"
+          },
+          "answer": 4,
+          "solution": "Statement-I is false: sublimation is used for compounds that sublime (solid to vapor directly), not simply low melting point compounds. Statement-II is false: boiling point decreases as external pressure is reduced (not increases). Both statements are false."
+        },
+        {
+          "question_number": 68,
+          "question": "Compound 'P' undergoes: (i) NH3 (ii) Δ → Q; then (i) KOH,Br2 (ii) CHCl3, KOH(alc),Δ → a nitrile-substituted cyclohexane product. 'P' is:",
+          "options": {
+            "1": "2-cyclohexylacetaldehyde",
+            "2": "cyclohexanecarboxylic acid",
+            "3": "1-cyclohexylpropan-1-one",
+            "4": "cyclohexanecarboxamide"
+          },
+          "answer": 2,
+          "solution": "Cyclohexanecarboxylic acid (P) reacts with NH3 then heat (Δ) to form the amide (Q, cyclohexanecarboxamide). This then undergoes Hofmann bromamide degradation (KOH, Br2) to form cyclohexylamine, which via carbylamine reaction (CHCl3, KOH(alc), Δ) forms the isocyanide (nitrile-like NC group) product."
+        },
+        {
+          "question_number": 69,
+          "question": "The correct statements from the following are: (A) Ionic radii of trivalent cations of group 13 elements decreases down the group. (B) Electronegativity of group 13 elements decreases down the group. (C) Among group 13 elements, Boron has highest first ionisation enthalpy. (D) The trichloride and triiodide of group 13 elements are covalent in nature.",
+          "options": {
+            "1": "A and C only",
+            "2": "A and D only",
+            "3": "C and D only",
+            "4": "B and D only"
+          },
+          "answer": 3,
+          "solution": "(A) is false: ionic radii of M3+ actually generally increases down the group (B3+<Al3+<Ga3+<In3+<Tl3+), so this trend as stated (decreases) is false — actually verified true order is increasing, so A as 'decreases' is false. (B) is false: electronegativity order is B>Tl>In>Ga>Al, not monotonically decreasing. (C) true: B has the highest IE among group 13 (B>Tl>Ga>Al>In). (D) true: trichlorides/triiodides of group 13 elements are covalent. Correct: C and D only."
+        },
+        {
+          "question_number": 70,
+          "question": "Consider the general reaction xA(g) ⇌ yB(g) at 400K. Kp and Kc studied under same T but variation in x,y: (i) Kp=85.87, Kc=2.586 (appropriate units); (ii) Kp=0.862, Kc=28.62 (appropriate units). The value of x and y in (i) and (ii) respectively are:",
+          "options": {
+            "1": "(i) 3,1; (ii) 3,1",
+            "2": "(i) 4,1; (ii) 4,1",
+            "3": "(i) 1,3; (ii) 2,1",
+            "4": "(i) 1,2; (ii) 2,1"
+          },
+          "answer": 4,
+          "solution": "For reaction (i): Kp>Kc implies Δng>0, i.e., y>x. Solving 85.87=2.586(0.0821*400)^(y-x) gives y-x≈1, consistent with (i) x=1,y=2. For reaction (ii): Kp<Kc implies y<x, consistent with (ii) x=2,y=1."
+        },
+        {
+          "question_number": 71,
+          "question": "For the thermal decomposition of reaction AB(g), a graph of [AB] vs time is constructed (zero order, [AB] decreases from 0.60M at t=0 to 0.55M at t=100s, linear). The half life of the reaction is 'x' min.",
+          "answer": "10",
+          "solution": "[AB]0-[AB]t=kt => 0.60-0.55=k(100) => k=5×10⁻⁴ M/s (zero order). Half life t1/2=[AB]0/(2k)=0.60/(2*5×10⁻⁴)=600s=10 min."
+        },
+        {
+          "question_number": 72,
+          "question": "For the gas phase equilibrium NH3(g) ⇌ (1/2)N2(g) + (3/2)H2(g) at constant temperature, if total pressure is √3 atm and Kp=9 atm, the degree of dissociation is given as (x×10⁻²)⁻¹/². The value of x is ____ (nearest integer).",
+          "answer": "125",
+          "solution": "Setting up Kp expression with degree of dissociation α and total pressure √3 atm: 9 = 9(α/2)²/(1-α²) leads to α²=0.8, α=(0.8)^(1/2)=[1/0.8]^(-1/2)=[125×10⁻²]^(-1/2). So x=125."
+        },
+        {
+          "question_number": 73,
+          "question": "x mg of pure HCl was used to make an aqueous solution. 25.0 mL of 0.1M Ba(OH)2 solution is used when the HCl solution is titrated against it. The numerical value of x is ____ ×10⁻¹. (Molar mass: HCl=36.5, Ba(OH)2=171.0 g/mol)",
+          "answer": "1825",
+          "solution": "Ba(OH)2 + 2HCl → BaCl2 + 2H2O. Moles Ba(OH)2 = 25×0.1/1000=2.5 mmol, so HCl=5 mmol. Mass HCl = 5×36.5=182.5 mg = 1825×10⁻¹ mg. x=1825."
+        },
+        {
+          "question_number": 74,
+          "question": "Consider all structural isomers with molecular formula C5H11Br separately treated with KOH(aq) to give respective substitution products (SN2, no rearrangement). The number of products which can exhibit optical isomerism is ____.",
+          "answer": "3 or 6",
+          "solution": "Among the C5H11Br isomers, three of the resulting alcohol products (from isomers with a stereocenter) show optical isomerism (or 6 if counting both enantiomers of each as separate active isomers)."
+        },
+        {
+          "question_number": 75,
+          "question": "The crystal field splitting energy of [Co(oxalate)3]³⁻ complex is 'n' times that of the [Cr(oxalate)3]³⁻ complex. Here 'n' is ____. (Assume Δ0 >> P)",
+          "answer": "2",
+          "solution": "Neglecting pairing energy relative to Δ0: [Co(ox)3]3- is Co3+ (d6, low spin, t2g^6) CFSE=6*(-0.4Δ0)=-2.4Δ0. [Cr(ox)3]3- is Cr3+ (d3, t2g^3) CFSE=3*(-0.4Δ0)=-1.2Δ0. Ratio CFSE(Co3+)/CFSE(Cr3+) = 2.4/1.2 = 2."
+        }
+      ]
+    }
+  }
+}

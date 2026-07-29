@@ -7,6 +7,7 @@ import { spawn } from "child_process";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import { pipelineTrace } from "../utils/aiApiCallLogger.js";
+import { runTasksWithConcurrency } from "./aiQuestionCountInference.service.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SCRIPT_PATH = join(__dirname, "..", "..", "scripts", "sympy_verify.py");
@@ -14,10 +15,18 @@ const SCRIPT_PATH = join(__dirname, "..", "..", "scripts", "sympy_verify.py");
 export const isSymbolicVerifyEnabled = () => {
     const flag = process.env.AI_QB_SYMBOLIC_VERIFY;
     if (flag === "0" || flag === "false") return false;
-    return flag === "1" || flag === "true";
+    // Default ON for Math — set AI_QB_SYMBOLIC_VERIFY=0 to disable.
+    if (flag === "1" || flag === "true" || flag == null || flag === "") {
+        return true;
+    }
+    return false;
 };
 
 const PYTHON_BIN = String(process.env.AI_QB_PYTHON || "python").trim() || "python";
+const SYMBOLIC_CONCURRENCY = Math.max(
+    1,
+    Math.min(6, Number(process.env.AI_QB_SYMBOLIC_VERIFY_CONCURRENCY || 3))
+);
 
 const looksAlgebraic = (text = "") =>
     /[=+\-*/^]|\b(?:sin|cos|tan|log|ln|integral|matrix|det|solve)\b/i.test(
@@ -92,15 +101,15 @@ export const verifyWithSymPy = (
  */
 export const applySymbolicVerificationToQuestions = async (
     questions = [],
-    { subject = "" } = {}
+    { subject = "", sectionName = "" } = {}
 ) => {
     if (!isSymbolicVerifyEnabled()) {
         return { questions, checked: 0, failed: 0, skipped: questions.length };
     }
 
-    const subjectLower = String(subject || "").toLowerCase();
-    const isMathBank =
-        /math|algebra|calculus|jee/.test(subjectLower) || !subjectLower;
+    const subjectLower = `${subject || ""} ${sectionName || ""}`.toLowerCase();
+    const isMathBank = /math|algebra|calculus|mathematics/.test(subjectLower);
+    // Skip SymPy for Physics/Chemistry; only run when subject is clearly Math.
     if (!isMathBank) {
         return { questions, checked: 0, failed: 0, skipped: questions.length };
     }
@@ -108,21 +117,21 @@ export const applySymbolicVerificationToQuestions = async (
     let checked = 0;
     let failed = 0;
     let skipped = 0;
-    const next = [];
+    const next = new Array(questions.length);
 
-    for (const q of questions) {
+    const tasks = questions.map((q, index) => async () => {
         const type = String(q?.questionType || "single").toLowerCase();
         if (type !== "single") {
-            next.push(q);
+            next[index] = q;
             skipped++;
-            continue;
+            return;
         }
         const stem = String(q.questionText || "");
         const explanation = String(q.explanation || "");
         if (!looksAlgebraic(stem) && !looksAlgebraic(explanation)) {
-            next.push(q);
+            next[index] = q;
             skipped++;
-            continue;
+            return;
         }
 
         const marked =
@@ -134,29 +143,33 @@ export const applySymbolicVerificationToQuestions = async (
                   )
                 : String(q.correctAnswer || "");
 
-        // Best-effort: ask SymPy to simplify marked answer if it looks numeric/expr.
-        const exprMatch = marked.match(/[-+]?\d+(?:\.\d+)?(?:\s*[×x*]\s*10\^?[+-]?\d+)?/);
+        const exprMatch = marked.match(
+            /[-+]?\d+(?:\.\d+)?(?:\s*[×x*]\s*10\^?[+-]?\d+)?/
+        );
         if (!exprMatch) {
-            next.push(q);
+            next[index] = q;
             skipped++;
-            continue;
+            return;
         }
 
         checked++;
+        const normalizedExpr = exprMatch[0]
+            .replace(/×|x/gi, "*")
+            .replace(/\^/g, "**");
         const result = await verifyWithSymPy({
-            expression: exprMatch[0].replace(/×|x/gi, "*").replace(/\^/g, "**"),
-            expected: exprMatch[0].replace(/×|x/gi, "*").replace(/\^/g, "**"),
+            expression: normalizedExpr,
+            expected: normalizedExpr,
             mode: "numeric",
         });
 
         if (result.skipped) {
             skipped++;
-            next.push(q);
-            continue;
+            next[index] = q;
+            return;
         }
         if (!result.ok) {
             failed++;
-            next.push({
+            next[index] = {
                 ...q,
                 _verification: {
                     ...(q._verification || {}),
@@ -167,22 +180,24 @@ export const applySymbolicVerificationToQuestions = async (
                         "symbolic_verify_failed",
                     ],
                 },
-            });
+            };
             pipelineTrace("SYMBOLIC_VERIFY_FAIL", {
                 stem: stem.slice(0, 80),
                 error: result.error,
             });
-            continue;
+            return;
         }
-        next.push({
+        next[index] = {
             ...q,
             _verification: {
                 ...(q._verification || {}),
                 symbolicOk: true,
             },
-        });
-    }
+        };
+    });
+
+    await runTasksWithConcurrency(tasks, SYMBOLIC_CONCURRENCY);
 
     pipelineTrace("SYMBOLIC_VERIFY_DONE", { checked, failed, skipped });
-    return { questions: next, checked, failed, skipped };
+    return { questions: next.filter(Boolean), checked, failed, skipped };
 };

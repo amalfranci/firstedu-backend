@@ -1,0 +1,332 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "date": "21st January 2026",
+  "shift": "Evening",
+  "source": "Career Point Kota - Questions & Solutions",
+  "sections": {
+    "Physics": {
+      "questions": [
+        {
+          "number": 26,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Consider two identical metallic spheres of radius R each having charge Q and mass m. Their centers have an initial separation of 4R. Both spheres are given an initial speed of u towards each other. The minimum value of u so that they can just touch each other is: (Take k = 1/(4*pi*epsilon0), assume kQ^2 > Gm^2, G is the Gravitational constant)",
+          "options": {
+            "1": "sqrt[(kQ^2/4mR)(1 - Gm^2/kQ^2)]",
+            "2": "sqrt[(kQ^2/4mR)(1 + Gm^2/kQ^2)]",
+            "3": "sqrt[(kQ^2/2mR)(1 - Gm^2/kQ^2)]",
+            "4": "sqrt[(kQ^2/2mR)(1 - Gm^2/2kQ^2)]"
+          },
+          "answer": "1",
+          "solution": "Using energy conservation (electrostatic PE + gravitational PE + KE) between initial separation 4R (center-to-center) and final separation 2R (touching), solve for u: u = sqrt[(1/4mR)(KQ^2 - Gm^2)] = sqrt[(kQ^2/4mR)(1-Gm^2/kQ^2)]."
+        },
+        {
+          "number": 27,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "The charge stored by the capacitor C in the given circuit in the steady state is ____ microC. (Circuit: 2.5V source, 1ohm, C=5microF, 2ohm, 3ohm, 4ohm branches as shown)",
+          "options": {
+            "1": "12.5",
+            "2": "10",
+            "3": "7.5",
+            "4": "5"
+          },
+          "answer": "2",
+          "solution": "In steady state no current flows through capacitor branch. Current i = 2.5/5 = 0.5A through the 1ohm+4ohm branch. Vc = 4*0.5 = 2V. Charge Q = C*Vc = 5*2 = 10 microC."
+        },
+        {
+          "number": 28,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "The total length of potentiometer wire AB is 50 cm in the arrangement shown (6ohm and 4ohm resistors with galvanometer at point P). If P is the point where the galvanometer shows zero reading, the length AP is ____ cm.",
+          "options": {
+            "1": "15",
+            "2": "30",
+            "3": "25",
+            "4": "20"
+          },
+          "answer": "2",
+          "solution": "6/R_AP = 4/R_PB and l_AP + l_PB = 50. R_AP/R_PB = l_AP/l_PB = 3/2. l_AP = (3/5)*50 = 30 cm."
+        },
+        {
+          "number": 29,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A capacitor C is first charged fully with potential difference V0 and disconnected from the battery. The charged capacitor is connected across an inductor of inductance L. In t seconds 25% of the initial energy in the capacitor is transferred to the inductor. The value of t is ____ s.",
+          "options": {
+            "1": "pi*sqrt(LC)/3",
+            "2": "pi*sqrt(LC)/6",
+            "3": "pi*sqrt(LC)/2",
+            "4": "pi*sqrt(LC/2)"
+          },
+          "answer": "2",
+          "solution": "U_cf = 75% U_ci => Qf^2 = (3/4)Qi^2. Qi*cos(wt) = (sqrt3/2)Qi => t = T/12 = (pi/6)*sqrt(LC)."
+        },
+        {
+          "number": 30,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "The r.m.s speed of oxygen molecules at 47 degC is equal to that of hydrogen molecules kept at ____ degC. (Mass of oxygen/mass of hydrogen = 32/2)",
+          "options": {
+            "1": "-235",
+            "2": "-100",
+            "3": "-253",
+            "4": "-20"
+          },
+          "answer": "3",
+          "solution": "Vrms = sqrt(3RT/M). T_O2 = 320K. Equate: T2/M_O2 = T_H2/M_H2 => 320/32 = T_H2/2 => T_H2 = 20K = -253 degC."
+        },
+        {
+          "number": 31,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Two cars A and B each of mass 10^3 kg are moving on parallel tracks separated by 10 m, in the same direction with speeds 72 km/h and 36 km/h. The magnitude of angular momentum of car A with respect to car B is ____ J.s.",
+          "options": {
+            "1": "3.6x10^5",
+            "2": "10^5",
+            "3": "3x10^5",
+            "4": "2x10^5"
+          },
+          "answer": "2",
+          "solution": "L = m*V_rel*r_perp = 1000*(36*5/18)*10 = 10^5 kg m^2/s."
+        },
+        {
+          "number": 32,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "The pulley shown is made using a thin rim and two rods of length equal to the diameter of the rim, the rim and each rod having mass M. Two blocks of mass M and m are attached to two ends of a light string over the pulley (hinged, rotates freely in a vertical plane about its centre). The acceleration experienced by the blocks is ____ (assume no slipping).",
+          "options": {
+            "1": "(M-m)g / [(13/6)M + m]",
+            "2": "(M-m)g / (M+m)",
+            "3": "(M-m)g / [(8/3)M + m]",
+            "4": "(M-m)g / (2M+m)"
+          },
+          "answer": "3",
+          "solution": "Newton's laws for both blocks and torque equation for pulley: (M-m)g = (M+m+I/r^2)a. Moment of inertia I = Mr^2 + 2*(M*(2r)^2/12) = (5/3)Mr^2. Solving gives a = (M-m)g / [M+m+(5/3)M] = (M-m)g/[(8/3)M+m]."
+        },
+        {
+          "number": 33,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "The kinetic energy of a simple harmonic oscillator is oscillating with angular frequency of 176 rad/s. The frequency of this simple harmonic oscillator is ____ Hz. (Take pi = 22/7)",
+          "options": {
+            "1": "14",
+            "2": "88",
+            "3": "28",
+            "4": "176"
+          },
+          "answer": "1",
+          "solution": "Kinetic energy oscillates at twice the SHM frequency. f_k = omega/(2pi) = 176/(2*22/7) = 28 Hz. So oscillator frequency = f_k/2 = 14 Hz."
+        },
+        {
+          "number": 34,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Statement I: In Young's double slit experiment, the angular separation of fringes will increase as the screen is moved away from the plane of the slits. Statement II: The angular separation of fringes will increase when monochromatic source is replaced by another of higher wavelength. Choose the correct answer:",
+          "options": {
+            "1": "Both Statement I and Statement II are true",
+            "2": "Both Statement I and Statement II are false",
+            "3": "Statement I is false but Statement II is true",
+            "4": "Statement I is true but Statement II is false"
+          },
+          "answer": "3",
+          "solution": "Angular fringe width = lambda/d, which is independent of screen distance D (so Statement I is false), and increases with wavelength (so Statement II is true)."
+        },
+        {
+          "number": 35,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A battery with EMF E and internal resistance r is connected across a resistance R. The power consumption in R will be maximum when:",
+          "options": {
+            "1": "R=2r",
+            "2": "R=r/2",
+            "3": "R=sqrt(2)*r",
+            "4": "R=r"
+          },
+          "answer": "4",
+          "solution": "For maximum power transfer to load, R_load = R_internal, i.e., R = r."
+        },
+        {
+          "number": 36,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Keeping the significant figures in view, the sum of the physical quantities 52.01 m, 153.2 m and 0.123 m is:",
+          "options": {
+            "1": "205 m",
+            "2": "205.333 m",
+            "3": "205.33 m",
+            "4": "205.3 m"
+          },
+          "answer": "4",
+          "solution": "Sum = 52.01+153.2+0.123 = 205.333, rounded to least decimal places (1 decimal, from 153.2) = 205.3 m."
+        },
+        {
+          "number": 37,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A spherical body of radius r and density sigma falls freely through a viscous liquid of density rho and viscosity eta, attaining terminal velocity v0. Estimated maximum error in the quantity eta is: (ignore errors in sigma, rho, g)",
+          "options": {
+            "1": "2*(Delta r/r) - (Delta v0/v0)",
+            "2": "2*(Delta r/r) + (Delta v0/v0)",
+            "3": "2*[(Delta r/r) + (Delta v0/v0)]",
+            "4": "2*[(Delta r/r) - (Delta v0/v0)]"
+          },
+          "answer": "2",
+          "solution": "v0 = (2r^2 g/9eta)(rhoB-rhoL) => eta = (2r^2 g/9v0)(rhoB-rhoL). Delta(eta)/eta = 2*Delta(r)/r + Delta(v0)/v0."
+        },
+        {
+          "number": 38,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Surface tension of two liquids (same density), T1 and T2, measured using capillary rise method with tubes of inner radii r1 and r2 where r1 > r2. Heights are h1 and h2 respectively (ignore weight below meniscus). The relation satisfied is:",
+          "options": {
+            "1": "h1 < h2 and T1 = T2",
+            "2": "h1 = h2 and T1 = T2",
+            "3": "h1 > h2 and T1 = T2",
+            "4": "h1 > h2 and T1 < T2"
+          },
+          "answer": "1",
+          "solution": "h = 2T/(rho*g*r), so h is inversely proportional to r. Since r1 > r2, h2 > h1 i.e. h1 < h2. Since T1, T2 not otherwise specified as different, T1=T2 (same liquid property class assumed)."
+        },
+        {
+          "number": 39,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A river of width 200 m flows west to east with speed 18 km/h. A boat moving with speed 36 km/h in still water travels one round trip (bank to bank). The minimum time taken by the boat and the displacement along the river bank are ____ and ____ respectively.",
+          "options": {
+            "1": "20 s and 100 m",
+            "2": "40 s and 0 m",
+            "3": "40 s and 200 m",
+            "4": "40 s and 100 m"
+          },
+          "answer": "3",
+          "solution": "v_R=5m/s (river), v_BR=10m/s (boat). Minimum time (boat heads straight across at full speed relative to water) t_min=200/10=20s one way, 40s round trip. Displacement along bank = 40*5=200m."
+        },
+        {
+          "number": 40,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "Two known resistances of R ohm and 2R ohm and one unknown resistance X ohm are connected in a circuit as shown. If the equivalent resistance between points A and B is X ohm, then the value of X is ____ ohm.",
+          "options": {
+            "1": "(sqrt(3)-1)R",
+            "2": "R",
+            "3": "2(sqrt(3)-1)R",
+            "4": "(sqrt(3)+1)R"
+          },
+          "answer": "1",
+          "solution": "(2R+x)*R/(3R+x) = x leads to x^2+2Rx-2R^2=0, giving x = (sqrt(3)-1)R."
+        },
+        {
+          "number": 41,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "The energy of an electron in an orbit of the Bohr atom is -0.04*E0 eV, where E0 is the ground state energy. If L is the angular momentum of the electron in this orbit and h is Planck's constant, then 2*pi*L/h is ____:",
+          "options": {
+            "1": "2",
+            "2": "4",
+            "3": "5",
+            "4": "6"
+          },
+          "answer": "3",
+          "solution": "Angular momentum L = nh/2pi => n = 2piL/h. Energy E = -13.6z^2/n^2 => -E0/n^2 = -0.04E0 => n^2=25, n=5."
+        },
+        {
+          "number": 42,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "An infinitely long straight wire carrying current I is bent in a planar shape as shown (two straight segments and a circular loop of radius r). The magnetic field at the centre O of the circular loop is:",
+          "options": {
+            "1": "(mu0*I/2*pi*r)*(pi+1) i-hat",
+            "2": "-(mu0*I/2*pi*r)*(pi-1) i-hat",
+            "3": "(mu0*I/2*pi*r)*(pi-1) i-hat",
+            "4": "-(mu0*I/2*pi*r)*(pi+1) i-hat"
+          },
+          "answer": "2",
+          "solution": "B0 = B_AB + B_DE + B_BCD (contributions from straight wires and 3/4 circular arc). Combining: B0 = (mu0*i/2*pi*r)(1-pi) i-hat = -(mu0*i/2*pi*r)(pi-1) i-hat."
+        },
+        {
+          "number": 43,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A large drum of radius R spins around its axis with angular velocity omega. The minimum value of omega so that a body of mass M remains stuck to the inner wall of the drum (coefficient of friction mu) is:",
+          "options": {
+            "1": "sqrt(mu*g/R)",
+            "2": "sqrt(2g/(mu*R))",
+            "3": "sqrt(g/(2*mu*R))",
+            "4": "sqrt(g/(mu*R))"
+          },
+          "answer": "4",
+          "solution": "N = m*omega^2*r provides centripetal force; friction mu*N supports weight mg. mu*m*omega^2*r = mg => omega = sqrt(g/(mu*r))."
+        },
+        {
+          "number": 44,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "A body of mass 2 kg moves along x-direction with displacement x(t) = alpha*t^2 + beta*t + gamma, where alpha=1 m/s^2, beta=1 m/s, gamma=1 m. The work done on the body from t=2s to t=3s is ____ J.",
+          "options": {
+            "1": "49",
+            "2": "42",
+            "3": "24",
+            "4": "12"
+          },
+          "answer": "3",
+          "solution": "x(t)=t^2+t+1, v(t)=2t+1, a(t)=2, F=4N (constant). Displacement from t=2 to t=3: x(3)-x(2)=13-7=6m. W=F*S=4*6=24 J."
+        },
+        {
+          "number": 45,
+          "subject": "Physics",
+          "type": "MCQ",
+          "question": "As shown, when the incident ray is parallel to the base of the prism, the emergent ray grazes along the second surface, with base angle 45 degrees. If the refractive index of the prism material is sqrt(2), the angle theta of the prism is:",
+          "options": {
+            "1": "60",
+            "2": "75",
+            "3": "90",
+            "4": "45"
+          },
+          "answer": "1",
+          "solution": "For grazing emergence sin(r2)=1/mu. By Snell's law at incidence: (1)(1/sqrt2)=sqrt2*sin(r1) => r1=30 deg. A = r1+r2 = 75 deg. Then 75+45+theta=180 => theta=60 degrees."
+        },
+        {
+          "number": 46,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "An electromagnetic wave of frequency 100 MHz propagates through a medium of conductivity sigma=10 mho/m. The ratio of maximum conduction current density to maximum displacement current density is ____. (Take 1/(4*pi*epsilon0) = 9x10^9 Nm^2/C^2)",
+          "answer": "1800",
+          "solution": "jc_max = sigma*E0, jd_max = epsilon0*E0*omega. Ratio = sigma/(epsilon0*omega) = (10*4*pi*9x10^9)/(2*pi*100x10^6) = 1800."
+        },
+        {
+          "number": 47,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "The terminal velocity of a metallic ball of radius 6 mm in a viscous fluid is 20 cm/s. The terminal velocity of another ball of the same material with radius 3 mm in the same fluid will be ____ cm/s.",
+          "answer": "5",
+          "solution": "Terminal velocity proportional to radius^2. (vT1/vT2) = (6/3)^2 = 4. vT2 = 20/4 = 5 cm/s."
+        },
+        {
+          "number": 48,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "A particle having electric charge 3x10^-19 C and mass 6x10^-27 kg is accelerated by applying an electric potential of 1.21 V. Wavelength of the matter wave associated with the particle is alpha x 10^-12 m. The value of alpha is ____. (Take Planck's constant = 6.6x10^-34 J.s)",
+          "answer": "10",
+          "solution": "lambda = h/sqrt(2mqV) = 6.6x10^-34 / sqrt(2*18x10^-46*1.21) = 10^-11 m = 10x10^-12 m. So alpha=10."
+        },
+        {
+          "number": 49,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "In a Young's double slit experiment set up, the two slits are kept 0.4 mm apart and screen is placed 1 m from the slits. A thin transparent sheet of thickness 20 micrometers is introduced in front of one slit, and the centre fringe shifts by 20 mm on the screen. The refractive index of the sheet is alpha/10, where alpha is ____.",
+          "answer": "14",
+          "solution": "y_shift = (mu-1)*t*D/d. 20x10^-3 = (mu-1)*20x10^-6*1/(0.4x10^-3). (mu-1)=0.4, mu=1.4. alpha/10=1.4 => alpha=14."
+        },
+        {
+          "number": 50,
+          "subject": "Physics",
+          "type": "Numerical",
+          "question": "A diatomic gas (gamma=1.4) does 100 J of work when it is expanded isobarically. Then the heat given to the gas is ____ J.",
+          "answer": "350",
+          "solution": "W=100J=nR*DeltaT (isobaric). Q = nCp*DeltaT = (f/2+1)*nR*DeltaT = (7/2)*100 = 350 J."
+        }
+      ]
+    }
+  }
+}

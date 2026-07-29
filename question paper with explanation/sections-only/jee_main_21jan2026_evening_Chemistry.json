@@ -1,0 +1,332 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "date": "21st January 2026",
+  "shift": "Evening",
+  "source": "Career Point Kota - Questions & Solutions",
+  "sections": {
+    "Chemistry": {
+      "questions": [
+        {
+          "number": 51,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Consider the following spectral lines for atomic hydrogen: A. First line of Paschen series; B. Second line of Balmer series; C. Third line of Paschen series; D. Fourth line of Bracket series. The correct arrangement of the above lines in ascending order of energy is:",
+          "options": {
+            "1": "D < C < A < B",
+            "2": "A < B < C < D",
+            "3": "C < D < B < A",
+            "4": "D < A < C < B"
+          },
+          "answer": "4",
+          "solution": "Using deltaE=13.6*Z^2*(1/n1^2-1/n2^2) with (A) n1=3,n2=4; (B) n1=2,n2=4; (C) n1=3,n2=6; (D) n1=4,n2=8, the ascending order of energy is D < A < C < B."
+        },
+        {
+          "number": 52,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Match List-I (Pair of Compounds) with List-II (Type of Isomers): A. 2-Methylpropene and but-1-ene; B. Cis-but-2-ene and trans-but-2-ene; C. 2-Butanol and diethyl ether; D. But-1-ene and but-2-ene. List-II: I. Stereoisomers, II. Position isomers, III. Chain isomers, IV. Functional group isomers.",
+          "options": {
+            "1": "A-III, B-I, C-IV, D-II",
+            "2": "A-III, B-I, C-II, D-IV",
+            "3": "A-I, B-IV, C-III, D-II",
+            "4": "A-II, B-I, C-IV, D-III"
+          },
+          "answer": "1",
+          "solution": "A: 2-methylpropene & but-1-ene are chain isomers (III). B: cis/trans-but-2-ene are stereoisomers (I). C: 2-butanol & diethyl ether are functional isomers (IV). D: but-1-ene & but-2-ene are position isomers (II)."
+        },
+        {
+          "number": 53,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Nitrobenzene undergoes the sequence: (1) Br2/FeBr3/heat, (2) Sn/HCl/heat, (3) pH neutralisation, (4) Br2/H2O, (5) NaNO2/HBr 0-5degC, (6) CuBr/NaBr, to give major product (P). The number of bromine atoms in the final product (P) will be:",
+          "options": {
+            "1": "1",
+            "2": "6",
+            "3": "5",
+            "4": "3"
+          },
+          "answer": "3",
+          "solution": "Bromination of nitrobenzene, reduction to amine, tribromination via Br2/H2O (2,4,6-tribromoaniline), diazotization and Sandmeyer with CuBr replaces NH2 by Br, giving pentabromobenzene: 5 Br atoms in product P."
+        },
+        {
+          "number": 54,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Aqueous HCl reacts with MnO2(s) to form MnCl2(aq), Cl2(g) and H2O(l). What is the weight (in g) of Cl2 liberated when 8.7 g of MnO2(s) is reacted with excess aqueous HCl solution? (Mn=55, Cl=35.5, O=16, H=1)",
+          "options": {
+            "1": "7.1",
+            "2": "71",
+            "3": "21.3",
+            "4": "14.2"
+          },
+          "answer": "1",
+          "solution": "MnO2 + 4HCl -> MnCl2 + Cl2 + 2H2O. Moles of MnO2 = 8.7/87 = 0.1 mol, giving 0.1 mol Cl2. Weight = 0.1*71 = 7.1 g."
+        },
+        {
+          "number": 55,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "By usual analysis, 1.00 g of compound (X) gave 1.79 g of magnesium pyrophosphate. The percentage of phosphorus in compound (X) is (nearest integer): (O=16, Mg=24, P=31)",
+          "options": {
+            "1": "50",
+            "2": "30",
+            "3": "20",
+            "4": "40"
+          },
+          "answer": "1",
+          "solution": "%P = (n_Mg2P2O7 * 2*31 / weight) *100 = (1.79/222 * 2*31)*100 = 49.99% ~ 50%."
+        },
+        {
+          "number": 56,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Given: Delta_fH(methane,g) = -X kJ/mol; enthalpy of sublimation of graphite = Y kJ/mol; dissociation enthalpy of H2 = Z kJ/mol. The bond enthalpy of C-H bond is given by:",
+          "options": {
+            "1": "(X+Y+2Z)/4",
+            "2": "(X+Y+4Z)/2",
+            "3": "X+Y+Z",
+            "4": "(-X+Y+Z)/4"
+          },
+          "answer": "1",
+          "solution": "C(s)+2H2(g) -> CH4(g). -X = Y + 2Z - 4*(B.E. of C-H). So B.E.(C-H) = (Y+2Z+X)/4."
+        },
+        {
+          "number": 57,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Match List-I (Reagents) with List-II (Reaction Name involving aldehydes): A. H2, Pd-BaSO4; B. SnCl2,HCl; C. CrO2Cl2,CS2; D. CO,HCl/Anhyd. AlCl3. List-II: I. Etard Reaction, II. Rosenmund Reduction, III. Gatterman-Koch Reaction, IV. Stephen Reaction.",
+          "options": {
+            "1": "A-II, B-III, C-IV, D-I",
+            "2": "A-IV, B-III, C-I, D-II",
+            "3": "A-IV, B-I, C-II, D-III",
+            "4": "A-II, B-IV, C-I, D-III"
+          },
+          "answer": "4",
+          "solution": "A. H2/Pd-BaSO4 -> Rosenmund Reduction (II). B. SnCl2/HCl -> Stephen Reaction (IV). C. CrO2Cl2/CS2 -> Etard Reaction (I). D. CO/HCl/AlCl3 -> Gatterman-Koch Reaction (III). So A-II, B-IV, C-I, D-III."
+        },
+        {
+          "number": 58,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Decomposition of A is a first order reaction at T(K): A(g) -> B(g)+C(g). In a closed 1 L vessel, 1 bar A(g) is allowed to decompose at T(K). After 100 minutes, the total pressure was 1.5 bar. What is the rate constant (in min^-1) of the reaction? (log2=0.3)",
+          "options": {
+            "1": "6.9x10^-1",
+            "2": "6.9x10^-3",
+            "3": "6.9x10^-2",
+            "4": "6.9x10^-4"
+          },
+          "answer": "2",
+          "solution": "P_total = 1+P = 1.5 => P=0.5. K = (1/100)*ln(1/0.5) = 0.693/100 = 6.9x10^-3 min^-1."
+        },
+        {
+          "number": 59,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "The correct order of reactivity of the following benzyl halides towards reaction with KCN is: (a) 4-hydroxybenzyl bromide, (b) 4-aminobenzyl bromide, (c) 4-nitrobenzyl bromide, (d) 3-nitrobenzyl bromide",
+          "options": {
+            "1": "a>b>c>d",
+            "2": "b>a>d>c",
+            "3": "b>a>c>d",
+            "4": "a>b>d>c"
+          },
+          "answer": "2",
+          "solution": "This is an SN1 reaction; rate proportional to carbocation stability, which depends on the electron-donating/withdrawing nature and position of substituents. Order: b>a>d>c."
+        },
+        {
+          "number": 60,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Statement I: The correct order in terms of atomic/ionic radii is Al > Mg > Mg2+ > Al3+. Statement II: The correct order in terms of magnitude of electron gain enthalpy is Cl > Br > S > O. Choose the correct answer:",
+          "options": {
+            "1": "Both Statement I and Statement II are false",
+            "2": "Statement I is false but Statement II is true",
+            "3": "Statement I is true but Statement II is false",
+            "4": "Both Statement I and Statement II are true"
+          },
+          "answer": "2",
+          "solution": "Correct order of atomic/ionic size is Mg > Al > Mg2+ > Al3+ (Statement I false, since it says Al>Mg which is wrong). Electron gain enthalpy: Cl has highest magnitude among halogens/chalcogens listed, correct order Cl>Br>S>O (Statement II true)."
+        },
+        {
+          "number": 61,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "The correct statements are: A. Activation energy for enzyme catalysed hydrolysis of sucrose is lower than that of acid catalysed hydrolysis. B. During denaturation, secondary and tertiary structures of a protein are destroyed but primary structure remains intact. C. Nucleotides are joined together by glycosidic linkage between C1 and C4 carbons of the pentose sugar. D. Quaternary structure of proteins represents overall folding of the polypeptide chain. Choose the correct answer:",
+          "options": {
+            "1": "A, C and D Only",
+            "2": "A, B and D Only",
+            "3": "A and B Only",
+            "4": "B and C Only"
+          },
+          "answer": "3",
+          "solution": "A and B are correct as stated (enzyme catalysis lowers activation energy; denaturation destroys secondary/tertiary but not primary structure). C and D are incorrect statements (nucleotides are joined by phosphodiester linkages, not C1-C4 glycosidic; quaternary structure refers to assembly of multiple polypeptide subunits, not overall folding of a single chain)."
+        },
+        {
+          "number": 62,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "The correct order of the rate of reaction CH3Br + Nu- -> CH3Nu + Br- with respect to nucleophiles is:",
+          "options": {
+            "1": "PhO- > OH- > CH3COO- > ClO4-",
+            "2": "ClO4- > CH3COO- > OH- > PhO-",
+            "3": "CH3COO- > PhO- > OH- > ClO4-",
+            "4": "OH- > PhO- > CH3COO- > ClO4-"
+          },
+          "answer": "4",
+          "solution": "Stability order of anion: ClO4- > CH3COO- > PhO- > OH-. Nucleophilicity is reverse of anion stability: OH- > PhO- > CH3COO- > ClO4-."
+        },
+        {
+          "number": 63,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Statement I: CFSE of [Cr(H2O)6]2+ is greater than that of [Mn(H2O)6]2+. Statement II: Potassium ferricyanide has a greater spin-only magnetic moment than sodium ferrocyanide. Choose the correct answer:",
+          "options": {
+            "1": "Both Statement I and Statement II are true",
+            "2": "Both Statement I and Statement II are false",
+            "3": "Statement I is true but Statement II is false",
+            "4": "Statement I is false but Statement II is true"
+          },
+          "answer": "1",
+          "solution": "[Mn(H2O)6]2+ has d5 (WFL) config, CFSE=0. [Cr(H2O)6]2+ has d4 (WFL), CFSE=-0.6*Delta0 (nonzero, greater magnitude), so Statement I is true. K3[Fe(CN)6] (d5, 1 unpaired e-, mu=sqrt(3) BM) vs Na4[Fe(CN)6] (d6, 0 unpaired e-, mu=0), so Statement II is true."
+        },
+        {
+          "number": 64,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "The correct increasing order of C-H (A), C-O (B), C=O (C) and C≡N (D) bond lengths is:",
+          "options": {
+            "1": "A < B < C < D",
+            "2": "A < D < C < B",
+            "3": "D < C < B < A",
+            "4": "D < C < A < B"
+          },
+          "answer": "2",
+          "solution": "Approximate bond lengths: C-H (A) ~107pm, C≡N (D) ~116pm, C=O (C) ~121pm, C-O (B) ~143pm. Increasing order: A < D < C < B."
+        },
+        {
+          "number": 65,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Given four compounds: (a) n-propyl chloride, (b) iso-propyl chloride, (c) sec-butyl chloride, (d) neo-pentyl chloride. Percentage of carbon in the one which exhibits optical isomerism is:",
+          "options": {
+            "1": "52",
+            "2": "56",
+            "3": "46",
+            "4": "40"
+          },
+          "answer": "1",
+          "solution": "sec-Butyl chloride (2-chlorobutane) is the chiral molecule (optically active). Molecular formula C4H9Cl, molar mass = 48+9+35.5 = 92.5. %C = (48/92.5)*100 = 51.89% ~ 52%."
+        },
+        {
+          "number": 66,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Given below are statements about Mn and Mn2O7: A. Mn forms the oxide Mn2O7 in which Mn is in its highest oxidation state. B. Oxygen stabilizes Mn in higher oxidation states by forming multiple bonds with Mn. C. Mn2O7 is an ionic oxide. D. The structure of Mn2O7 consists of one bridged oxygen. Choose the correct answer:",
+          "options": {
+            "1": "A, B, C and D",
+            "2": "A, B and D Only",
+            "3": "A, C and D Only",
+            "4": "A, B and C Only"
+          },
+          "answer": "2",
+          "solution": "Mn2O7 has Mn in +7 (highest) oxidation state (A true). Oxygen forms multiple (pi) bonds stabilizing high oxidation state Mn (B true). Mn2O7 is a covalent (not ionic) oxide, so C is false. The structure has one bridging oxygen linking two MnO3 tetrahedra (D true)."
+        },
+        {
+          "number": 67,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "For a closed circuit Daniell cell, which of the following plots (E_cell vs time) is accurate at a given temperature?",
+          "options": {
+            "1": "Sudden vertical jump",
+            "2": "Horizontal constant line",
+            "3": "Decreasing linear line",
+            "4": "Increasing linear line"
+          },
+          "answer": "2",
+          "solution": "The standard E_cell (E°cell) remains constant with time regardless of the cell's operation, as it is defined at standard conditions - hence a horizontal constant line."
+        },
+        {
+          "number": 68,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Statement I: Compound (X) - a bromophenyl ketone attached to a cyclopentane ring bearing a COOH group - dissolves in NaHCO3 solution and has two chiral carbon atoms. Statement II: Compound (Y), CH2=C=C=O type structure, has two carbons with sp3 hybridization, one carbon with sp2 and one carbon with sp hybridization. Choose the correct answer:",
+          "options": {
+            "1": "Statement I is true but Statement II is false",
+            "2": "Statement I is false but Statement II is true",
+            "3": "Both Statement I and Statement II are true",
+            "4": "Both Statement I and Statement II are false"
+          },
+          "answer": "3",
+          "solution": "Compound X has two chiral centers on the cyclopentane ring and dissolves in NaHCO3 due to the -COOH group (Statement I true). Compound Y's cumulated diene/ketene-type structure has the described hybridization pattern (sp3, sp3, sp2, sp) as shown (Statement II true)."
+        },
+        {
+          "number": 69,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "Statement I: The correct order in terms of bond dissociation enthalpy is Cl2 > Br2 > F2 > I2. Statement II: The correct trend in covalent character of metal halides is [SnCl4 > SnCl2], [PbCl4 > PbCl2] and [UF4 > UF6]. Choose the correct answer:",
+          "options": {
+            "1": "Statement I is true but Statement II is false",
+            "2": "Both Statement I and Statement II are true",
+            "3": "Statement I is false but Statement II is true",
+            "4": "Both Statement I and Statement II are false"
+          },
+          "answer": "1",
+          "solution": "Bond dissociation enthalpy order Cl2>Br2>F2>I2 is correct (Statement I true). By Fajan's rule, higher charge on cation gives greater covalent character: PbCl4>PbCl2, UF6>UF4 (not UF4>UF6 as stated), SnCl4>SnCl2. So Statement II is false (UF4>UF6 part is wrong)."
+        },
+        {
+          "number": 70,
+          "subject": "Chemistry",
+          "type": "MCQ",
+          "question": "On heating a mixture of common salt and K2Cr2O7 in equal amounts along with concentrated H2SO4 in a test tube, a gas is evolved. Formula of the gas evolved and oxidation state of the central metal atom in the gas respectively are:",
+          "options": {
+            "1": "CrO2Cl2 and +5",
+            "2": "CrO2Cl2 and +6",
+            "3": "Cr2O2Cl2 and +6",
+            "4": "Cr2O2Cl2 and +3"
+          },
+          "answer": "2",
+          "solution": "4NaCl + K2Cr2O7 + 6H2SO4 -> 2KHSO4 + 2CrO2Cl2 + 4NaHSO4 + 3H2O (chromyl chloride test). In CrO2Cl2, Cr is in +6 oxidation state."
+        },
+        {
+          "number": 71,
+          "subject": "Chemistry",
+          "type": "Numerical",
+          "question": "The first and second ionization constants of H2X are 2.5x10^-8 and 1.0x10^-13 respectively. The concentration of X2- in 0.1M H2X solution is ____ x10^-15 M. (Nearest integer)",
+          "answer": "100",
+          "solution": "Since Ka1 >> Ka2, approximate x>>y where x+y~x, x-y~x for the second equilibrium. This gives y ~ Ka2 = 10^-13 M = 100x10^-15 M for [X2-]."
+        },
+        {
+          "number": 72,
+          "subject": "Chemistry",
+          "type": "Numerical",
+          "question": "The osmotic pressure of a living cell is 12 atm at 300 K. The strength of sodium chloride solution that is isotonic with the living cell at this temperature is ____ gL^-1. (Nearest integer) (R=0.08 L atm K^-1 mol^-1; assume complete dissociation of NaCl; Na=23, Cl=35.5 g/mol)",
+          "answer": "15",
+          "solution": "pi = iCRT: 12 = 2*C*0.08*300 = 2*C*24 => C = 1/4 mol/L. Strength = (1/4)*58.5 = 14.625 g/L ~ 15 g/L."
+        },
+        {
+          "number": 73,
+          "subject": "Chemistry",
+          "type": "Numerical",
+          "question": "A substance X (1.5 g) dissolved in 150 g of solvent Y (molar mass=300 g/mol) led to an elevation of the boiling point by 0.5 K. The relative lowering of vapour pressure of solvent Y is ____ x10^-2. (Kb of solvent = 5.0 K kg/mol; nearest integer; assume dilute solution, no association/dissociation)",
+          "answer": "3",
+          "solution": "DeltaTb = i*Kb*m: 0.5 = i*m*5 => i*m=0.1, i*a=15/1000 (a=moles of solute). Relative lowering = i*X_solute = i*a/(a+150/300) = (15/1000)/(1/2) = 3x10^-2."
+        },
+        {
+          "number": 74,
+          "subject": "Chemistry",
+          "type": "Numerical",
+          "question": "Identify the metal ions among Co2+, Ni2+, Fe2+, V3+ and Ti2+ having a spin-only magnetic moment value more than 3.0 BM. The sum of unpaired electrons present in the high spin octahedral complexes formed by those metal ions is ____.",
+          "answer": "7",
+          "solution": "V3+=3d2, Ti2+=3d2, Ni2+=3d8, Fe2+=3d6, Co2+=3d7. Only Fe2+ (4 unpaired e-, mu>3) and Co2+ (3 unpaired e-, mu>3) exceed 3.0 BM. Sum of unpaired electrons = 4+3 = 7."
+        },
+        {
+          "number": 75,
+          "subject": "Chemistry",
+          "type": "Numerical",
+          "question": "MX is a sparingly soluble salt following MX(s) <=> M+(aq) + X-(aq); Ksp=10^-10 at 298K. If the standard reduction potential for M+(aq) + e- -> M(s) is E°(M+/M) = 0.79 V, then the value of the standard reduction potential for the metal/metal insoluble salt electrode E°(X-/MX(s)/M) is ____ mV. (Nearest integer) (2.303RT/F = 0.059 V)",
+          "answer": "200",
+          "solution": "E°(X-/MX(s)/M) = E°(M+/M) + (0.0591/n)*log(Ksp) = 0.79 + 0.059*log(10^-10) = 0.79 - 0.59 = 0.20 V = 200 mV."
+        }
+      ]
+    }
+  }
+}

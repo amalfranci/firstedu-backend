@@ -1,6 +1,11 @@
 /**
  * Resolve which subject to generate when topic/bank name omit it.
- * Uses: explicit param → topic (primary) → section → category (only if topic empty).
+ * Uses: explicit → section (multi-section banks) → topic RHS after "—" →
+ * topic / bank → category (only if topic empty).
+ *
+ * Section wins over topic/bank because the UI topic is often
+ * "{bankName} — {sectionName}" (e.g. "…Mathematics — Physics"), and
+ * matchSubjectInText would otherwise lock onto the bank leaf subject.
  */
 
 /** Parse category path segments for dynamic scope (no fixed subject catalog). */
@@ -129,6 +134,24 @@ export const matchSubjectInText = (text) => {
     return null;
 };
 
+/** All subject ids that match (definition order). */
+export const matchAllSubjectsInText = (text) => {
+    const s = String(text || "").toLowerCase();
+    if (!s.trim()) return [];
+    return SUBJECT_DEFINITIONS.filter((def) =>
+        def.patterns.some((p) => p.test(s))
+    ).map((def) => def.id);
+};
+
+/** Prefer the subject named after the last "—" / en-dash / hyphen separator. */
+const matchSubjectFromCompoundTopic = (topic) => {
+    const trimmed = String(topic || "").trim();
+    if (!trimmed) return null;
+    const parts = trimmed.split(/\s+[—–-]\s+/).map((p) => p.trim()).filter(Boolean);
+    if (parts.length < 2) return null;
+    return matchSubjectInText(parts[parts.length - 1]);
+};
+
 const labelFor = (id) => SUBJECT_BY_ID[id]?.label || null;
 
 /**
@@ -167,20 +190,39 @@ export const resolveGenerationSubject = ({
         };
     }
 
-    const fromTopic = matchSubjectInText(topicTrimmed);
-    if (fromTopic) {
-        return { id: fromTopic, label: labelFor(fromTopic), source: "topic" };
-    }
-
-    const textBlob = [topic, bankName].filter(Boolean).join(" ");
-    const fromText = matchSubjectInText(textBlob);
-    if (fromText) {
-        return { id: fromText, label: labelFor(fromText), source: "topic" };
-    }
-
+    // Section is authoritative for multi-section banks (Physics / Chem / Math).
     const fromSection = matchSubjectInText(sectionName);
     if (fromSection) {
         return { id: fromSection, label: labelFor(fromSection), source: "section" };
+    }
+
+    // Topic shaped like "{bank} — Physics" → use the RHS subject.
+    const fromCompound = matchSubjectFromCompoundTopic(topicTrimmed);
+    if (fromCompound) {
+        return {
+            id: fromCompound,
+            label: labelFor(fromCompound),
+            source: "topic-section",
+        };
+    }
+
+    const topicHits = matchAllSubjectsInText(topicTrimmed);
+    if (topicHits.length === 1) {
+        return {
+            id: topicHits[0],
+            label: labelFor(topicHits[0]),
+            source: "topic",
+        };
+    }
+
+    const textBlob = [topic, bankName].filter(Boolean).join(" ");
+    const blobHits = matchAllSubjectsInText(textBlob);
+    if (blobHits.length === 1) {
+        return {
+            id: blobHits[0],
+            label: labelFor(blobHits[0]),
+            source: "topic",
+        };
     }
 
     if (!topicTrimmed) {
@@ -215,6 +257,11 @@ export const resolveGenerationSubject = ({
         }
     }
 
+    // Ambiguous multi-subject topic/bank with no usable section — do not guess.
+    if (topicHits.length > 1 || blobHits.length > 1) {
+        return { id: null, label: null, source: "ambiguous" };
+    }
+
     return { id: null, label: null, source: null };
 };
 
@@ -230,7 +277,7 @@ export const buildSubjectScopeBlock = (resolved) => {
     }
 
     const sourceNote =
-        resolved.source === "topic"
+        resolved.source === "topic" || resolved.source === "topic-section"
             ? "mentioned in topic/bank name"
             : resolved.source === "section" || resolved.source === "section+category"
               ? "inferred from section name"

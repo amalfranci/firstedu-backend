@@ -117,15 +117,22 @@ export const isFinalizeDifficultyRegenEnabled = () =>
 export const isFinalizeTopUpEnabled = () =>
     process.env.AI_QB_FINALIZE_TOP_UP !== "0";
 
-/** Max shallow one-shot replacement waves per root finalize (default 1). */
+/** Max shallow one-shot replacement waves per root finalize (default 3 for count guarantee). */
 export const getFinalizeTopUpMaxWaves = () =>
     Math.min(
-        3,
+        5,
         Math.max(
             0,
-            Number(process.env.AI_QB_FINALIZE_TOP_UP_MAX_WAVES ?? 1)
+            Number(process.env.AI_QB_FINALIZE_TOP_UP_MAX_WAVES ?? 3)
         )
     );
+
+/**
+ * After verification strips failures, allow up to target+N extras from refill
+ * (default +3). Floor remains the requested target.
+ */
+export const getCountOverflowMax = () =>
+    Math.max(0, Math.min(10, Number(process.env.AI_QB_COUNT_OVERFLOW_MAX ?? 3)));
 
 /** Exam-native JEE/NEET — veteran hard, trust generation prompt not post-hoc difficulty audits. */
 export const isExamNativeVeteranGeneration = (difficultyResolution) =>

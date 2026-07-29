@@ -1,0 +1,1782 @@
+[
+  {
+    "paper_number": 1,
+    "title": "JEE Mains Maths Sample Paper 1",
+    "questions": [
+      {
+        "question_number": 1,
+        "type": "mcq",
+        "question_text": "If the probabilities for A to fail in an examination is 0.2 and that for B is 0.3, then the\nprobability that either A or B fails is",
+        "options": [
+          ">0 . 5",
+          "0.5",
+          "≤ 0.5",
+          "0"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "≤ 0.5",
+        "explanation": "Let us consider that-\nE 1 → event that A fails in the examination\n& E 2 → event that B fails in the examination\nThus,\nP (E ) = 0.2\n1\nP (E ) = 0.3\n2\nTo find: P (either E or E fails)\n1 2\nThus, P (either E 1 or E 2 fails) = P (E 1 ) + P (E 2 ) – P (E 1 ∩ E 2 )\n≤ P(E ) + P (E )\n1 2\n≤ 0.2 + 0.3\n≤ 0.5\nHence, the answer is the option 3.",
+        "note": null
+      },
+      {
+        "question_number": 2,
+        "type": "mcq",
+        "question_text": "Let the solution curve of the differential equation\npass through the points and . Then is equal to",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "",
+        "explanation": "Hence, the answer is the option 1.",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 3,
+        "type": "mcq",
+        "question_text": "The angle of elevation of the summit of a mountain from a point on the ground is 45∘ . After\nclimbing up one km towards the summit at an inclination of\n30∘\nfrom the ground, the angle\nof elevation of the summit is found to be\n60∘\n. Then the height (in km) of the summit from\nthe ground is:",
+        "options": [
+          "√3−1\n√3+1",
+          "√3+1\n√3−1",
+          "1\n√3−1",
+          "1\n√3+1"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "1\n√3−1",
+        "explanation": "1\nsin30∘ = x ⇒ x =\n2\n√3\ncos30∘ = z ⇒ z =\n2\nh\ntan45∘ = ⇒ h = y+z\ny+z\nh−x h−x\ntan60∘ = ⇒ tan60∘ =\ny h−z\n√3(h−z) = h−x\n(√3−1)h = √3z−x\nh\ntan45∘ = ⇒ h = y+z\ny+z\nh−x h−x\ntan60∘ = ⇒ tan60∘ =\ny h−z\n√3(h−z) = h−x\n(√3−1)h = √3z−x\n3 1\n⇒ (√3−1)h = −\n2 2\n⇒ (√3−1)h = 1\n1\nh =\n√3−1\nHence, the answer is the Option (3)",
+        "note": null
+      },
+      {
+        "question_number": 4,
+        "type": "mcq",
+        "question_text": "What is the name of the geometrical figure obtained for angle β, which is between the\nvertical axis and intersecting plane in a double-napped circular cone?",
+        "options": [
+          "square",
+          "conic sections",
+          "Quadrilateral",
+          "Polygon"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "conic sections",
+        "explanation": "Double-napped circular cone. -\nThe angle made by the intersecting plane with the vertical axis is β\nHence the correct answer is option 2.",
+        "note": null
+      },
+      {
+        "question_number": 5,
+        "type": "mcq",
+        "question_text": "Evaluate",
+        "options": [
+          "0",
+          "25",
+          "625",
+          "None of these"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "None of these",
+        "explanation": "Only the first limit deserves further treatment\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 6,
+        "type": "mcq",
+        "question_text": "Using the method of L’ Hospital, evaluate the limit.",
+        "options": [
+          "",
+          "0",
+          "2",
+          "Cannot be determined"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "2",
+        "explanation": "The provided limit is\nHere use the L’ Hospital rule and also refer to the following formula.\nNow, derive the following:\nHence, the answer is the option 3.",
+        "note": "Options [1] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text."
+      },
+      {
+        "question_number": 7,
+        "type": "mcq",
+        "question_text": "The equations of the three circles are:\nx2 +y2 −12x−16y+64 = 0, 3x2 +3y2 −36x+81 = 0 and\nx2 +y2 −16x+81 = 0. Find the coordinates of the point from which the length of\ntangents drawn to each of the three circles is equal.",
+        "options": [
+          "(33,2)\n4",
+          "(2,2)",
+          "(2, 33)\n4",
+          "None of these"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "None of these",
+        "explanation": "The required point is the radical center of the three given circles.\nNow,\nS −S = 0 ⇒ −16y+37 = 0\n1 2\nS −S = 0 ⇒ 4x−54 = 0\n2 3\nS −S = 0 ⇒ −4x+16y+17 = 0\n3 1\nSolving these equations, we get x = 54,y = 37 ⇒ x = 27,y = 37 .\n4 16 2 16\nHence the required point is\n(27, 37).\n2 16\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 8,
+        "type": "mcq",
+        "question_text": "is equal to:",
+        "options": [
+          "",
+          "",
+          "1",
+          "none of these"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "",
+        "explanation": "Hence, the answer is the option (1).",
+        "note": "Options [1, 2] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 9,
+        "type": "mcq",
+        "question_text": "All the letters of the word PUBLIC are written in all possible orders and these words are\nwritten as in a dictionary with serial numbers. Then the serial number of the word PUBLIC is :",
+        "options": [
+          "580",
+          "578",
+          "576",
+          "582"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "582",
+        "explanation": "Rank =582\nHence, the answer is the option 4.",
+        "note": null
+      },
+      {
+        "question_number": 10,
+        "type": "mcq",
+        "question_text": "The equation of common chord of the circles\nand is",
+        "options": [
+          "y = 2x",
+          "y = x",
+          "y + x = 0",
+          "None of these"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "y = x",
+        "explanation": "Hence, the answer is the option 2.",
+        "note": null
+      },
+      {
+        "question_number": 11,
+        "type": "mcq",
+        "question_text": "Using the principal values of the inverse trigonometric functions, the sum of the maximum\nand the minimum values of 16((sec−1x) 2 +(cosec−1x) 2 ) is :",
+        "options": [
+          "24π2",
+          "18π2",
+          "31π2",
+          "22π2"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "22π2",
+        "explanation": "π\nLet sec−1x = a ∈ [0,π]−{ }\n2\nπ\nWe know thatcosec−1x = −a\n2\n16(sec−1x) 2 +(cosec−1x) 2\nπ 2\n= 16[a2 +( −a) ]\n2\nπ2\n= 16[2a2 −πa+ ]\n4\nmax] = 16[2π2 −π2 + π2 ] = 20π2\na=π 4\nmin] = 16[2×π2 − π2 + π2 ] = 2π2\na=π\n16 4 4\n4\n∴ Sum = 20π2 +2π2 = 22π2\nHence, the correct answer is option (4).",
+        "note": null
+      },
+      {
+        "question_number": 12,
+        "type": "mcq",
+        "question_text": "Let the tangents drawn to the circle, x2 +y2 = 16 from the point P(0,h) meet the x axis\nat points A and B. If the area of △APB is minimum, then n is equal to :",
+        "options": [
+          "4√3",
+          "3√3",
+          "3√2",
+          "4√2"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "4√2",
+        "explanation": "A functions graph follows up and down along the x-axis then the upper part is known as maxima and the\nlower part is known as minima.\nLet the equation of tangent is\n(y−h) = M(x−0)\n∴ y = Mx−h\n∴ h = ±√1+M2\n4√1+M2\n∴ AB = ±\nM\n1\n∴ Area = ×AB×OP\n2\n1 8√1+M2\n= × ×4√1+M2\n2 M\ndA\n= 0 ∴ m = 1\ndm\n∴ h = 4√1+1 = 4√2\nHence, the answer is the option (4)",
+        "note": null
+      },
+      {
+        "question_number": 13,
+        "type": "mcq",
+        "question_text": "If , then",
+        "options": [
+          "",
+          "",
+          "",
+          "None of these"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "Hence, the answer is the option (3).",
+        "note": "Options [1, 2, 3] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 14,
+        "type": "mcq",
+        "question_text": "In a coding competition, there are 8 problems of varying difficulty levels, labelled from A to\nH. A contestant needs to solve 4 problems. However, the contestant can only choose\nproblems with difficulty levels that are adjacent in alphabetical order. How many different\nsets of problems can the contestant choose to solve?",
+        "options": [
+          "6",
+          "10",
+          "14",
+          "18"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "6",
+        "explanation": "To determine the number of different sets of problems the contestant can choose to solve, we need to\nconsider the combinations of selecting 4 adjacent problems from the given set.\nNumber of adjacent pairs of problems: 7 (A-B, B-C, C-D, D-E, E-F, F-G, G-H)\nNumber of ways to select 4 adjacent problems: 7\nThe contestant can choose from 6 different sets of problems to solve, each consisting of 4 adjacent\nproblems.\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 15,
+        "type": "mcq",
+        "question_text": "A chord of the circle , drawn from the point (a, b), is divided by the\nx-axis in the ratio . Then",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "The given point A(a,b) lies on the given circle. Any point on the circle is P\nThe x-axis cuts the chord AP in the ratio 2:1.\nHence\nHence, the answer is the option (3).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 16,
+        "type": "mcq",
+        "question_text": "If the equation, has conjugate complex roots and they satisfy\n, then:",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "Let be roots of the equation\nso\nSo,\nHence, the answer is the option (3).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 17,
+        "type": "mcq",
+        "question_text": "If the radius of the base of a cone is decreasing at the rate of 5 cm/s and the height\nincreasing at the rate of 3 cm/s, then the volume is --- when the height is 2cm and radius is 1\ncm, fill in the blank",
+        "options": [
+          "Decreasing",
+          "Increasing",
+          "Constant",
+          "None of these"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "Decreasing",
+        "explanation": "As we learned\nSign convention for Rate measurement -\nIf it is increasing then it is positive otherwise negative.\n1\nV = πr2h\n3\ndv π dh 2π dr\n⇒ = r2 + hr\ndt 3 dt 3 dt\nπ\n= [1×3+2×2×1×(−5)]\n3\n17π\n= − < 0\n3\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 18,
+        "type": "mcq",
+        "question_text": "A bag contains 7 different colored marbles. In how many ways can the marbles be arranged\nin a row such that two specific marbles are not placed together?",
+        "options": [
+          "4200",
+          "2500",
+          "3600",
+          "4800"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "3600",
+        "explanation": "Given that,\n7 different colored marbles are placed in a bag so that 2 specific marbles shall not be together.\nThe number of ways in which 7 marbles can be arranged is 12! ways.\nThe number of ways, when 2 specific marbles are together, is given by,\nSo, the number of ways when 2 specific marbles are not together is given by,\nThus,\nTherefore, the total number of ways to place the marbles in the bag is 3600 ways.\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 19,
+        "type": "mcq",
+        "question_text": "If where denotes the greatest integer function , then :",
+        "options": [
+          "is continuous at .",
+          "exist but does not exist.",
+          "Both and exist but are not equal .",
+          "exist but does not exist ."
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "is continuous at .",
+        "explanation": "Continuity at a point -\nA function f(x) is said to be continuous at x = a in its domain if\n1. f(a) is defined : at x = a.\nof f(x) at x = a exists from left and right.\nhence is continuous at\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 20,
+        "type": "mcq",
+        "question_text": "Let m be the mean and be the standard deviation of the distribution.\nx 0 l 2 3 4 5\ni\nf k+2 2k k2 −1 k2 −1 k2 +1 k−3\ni\nwhere ∑f = 62. If [x] denotes the greatest integer ≤ x, then [μ2+σ2] is equal to\ni",
+        "options": [
+          "8",
+          "7",
+          "6",
+          "9"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "8",
+        "explanation": "∑f = 62\ni\n3k2 +16k−12k−64 = 0\n16\nk = 4 or − ( rejected )\n3\n∑f x\ni i\nμ =\n∑f\ni\n8+2(15)+3(15)+4(17)+5 156\nμ = =\n62 62\n2\nσ2 = ∑f x2 −(∑f x )\ni i i i\n8×12 +15×13+17×16+25 156 2\n= −( )\n62 62\n500 156 2\nσ2 = −( )\n62 62\n500\nσ2 +μ2 =\n62\n[σ2 +μ2] = 8\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 21,
+        "type": "numerical",
+        "question_text": "A value of x satisfying the equation is",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "-0.5",
+        "explanation": "As we learned in\nTrigonometric Equations -\nThe equations involving trigonometric functions of unknown angles are known as trigonometric\nequations.\nwherein\ne.g.\nLet, and\nand\n..............( 1 )\n.............. ( 2 )\nFrom ( 1 ) and ( 2 ),\nHence, the answer is the option 1.",
+        "note": null
+      },
+      {
+        "question_number": 22,
+        "type": "numerical",
+        "question_text": "The largest value of a, for which the perpendicular distance of the plane containing the\nlines from the\npoint is is ___________.",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "2",
+        "explanation": "Normal vector of the plane\nHence, the answer is the option(1).",
+        "note": null
+      },
+      {
+        "question_number": 23,
+        "type": "numerical",
+        "question_text": "Some couples participated in a mixed doubles badminton tournament. If the number of\nmatches played, so\nthat no couple in a match, is 840, then the total number of persons, who participated in the\ntournament, is\n____:",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "16",
+        "explanation": "Let the number of couples = n\nHence, the number of persons = 16.\nHence, the answer is 16.",
+        "note": null
+      },
+      {
+        "question_number": 24,
+        "type": "numerical",
+        "question_text": "What is the exponent of 5 in (45)! ?",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "10",
+        "explanation": "45 45\n[ ]+[ ]+0\n5 52\n= 9+1\n= 10\nHence the correct answer is 10 .",
+        "note": null
+      },
+      {
+        "question_number": 25,
+        "type": "numerical",
+        "question_text": "Let f be a differentiable function such that\n2(x+2)2f(x)−3(x+2)2 = 10∫ x (t+2)f(t)dt\n0\nx ≥ 0. Then f(2) is equal to_____________.",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "19",
+        "explanation": "Let f be a differentiable function such that\n2(x+2)2f(x)−3(x+2)2 = 10∫ x (t+2)f(t)dt, x ≥ 0.\n0\nDifferentiate both sides with respect to x:\nd [2(x+2)2f(x)−3(x+2)2] = d [10∫ x (t+2)f(t)dt].\ndx dx 0\nUsing the Leibniz rule on the right side:\nd [10∫ x (t+2)f(t)dt] = 10(x+2)f(x).\ndx 0\nNow compute the derivative on the left side:\nd [2(x+2)2f(x)]− d [3(x+2)2].\ndx dx\nCalculate each term separately:\nd [2(x+2)2f(x)] = 2[2(x+2)f(x)+(x+2)2f′(x)],\ndx\nd [3(x+2)2] = 6(x+2).\ndx\nSo the equation becomes:\n2[2(x+2)f(x)+(x+2)2f′(x)]−6(x+2) = 10(x+2)f(x).\nDivide both sides by x+2 (which is nonzero for x ≥ 0):\n2[2f(x)+(x+2)f′(x)]−6 = 10f(x).\nExpand and simplify:\n4f(x)+2(x+2)f′(x)−6 = 10f(x),\n2(x+2)f′(x) = 10f(x)−4f(x)+6 = 6f(x)+6.\nDivide both sides by 2:\n(x+2)f′(x) = 3f(x)+3.\nRewrite as:\n(x+2)df −3f = 3.\ndx\nThis is a linear differential equation in standard form:\ndf − 3 f = 3 .\ndx x+2 x+2\nThe integrating factor is:\nμ(x) = e−∫ 3 dx = e−3ln|x+2| = (x+2)−3.\nx+2\nMultiply both sides by μ(x):\n(x+2)−3 df − 3 (x+2)−3f = 3 (x+2)−3,\ndx x+2 x+2\nd [(x+2)−3f] = 3(x+2)−4.\ndx\nIntegrate both sides with respect to x:\n(x+2)−3f = ∫ 3(x+2)−4dx+C = 3(− 1 )+C = −(x+2)−3 +C.\n3(x+2)3\nMultiply both sides by\n(x+2)3\n:\nf(x) = −1+C(x+2)3.\nUse the original integral equation at x = 0 to find C:\n2(0+2)2f(0)−3(0+2)2 = 10∫ 0 (t+2)f(t)dt = 0,\n0\n2×4×f(0)−3×4 = 0,\n8f(0)−12 = 0,\n8f(0) = 12,\nf(0) = 3.\n2\nFrom general solution:\nf(0) = −1+C(2)3 = −1+8C = 3,\n2\n8C = 3 +1 = 5,\n2 2\nC = 5 .\n16\nThus,\nf(x) = −1+ 5 (x+2)3.\n16\nFinally, find f(2):\nf(2) = −1+ 5 (2+2)3 = −1+ 5 ×64 = −1+20 = 19.\n16 16\nTherefore, f(2) = 19.\nHence, the answer is 19.",
+        "note": null
+      }
+    ]
+  },
+  {
+    "paper_number": 2,
+    "title": "JEE Mains Maths Sample Paper 2",
+    "questions": [
+      {
+        "question_number": 1,
+        "type": "mcq",
+        "question_text": "sin−1(1)+sin−1(2) =\n2 3",
+        "options": [
+          "π−sin−1(√5+2√3)\n6",
+          "sin−1(5+2√3)\n6",
+          "sin−1(√5+1)\n6",
+          "sin−1(√5+2√3)\n6"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "sin−1( √5+2√3)\n6",
+        "explanation": "1 2 1 4 2 1\nsin−1( )+sin−1( ) = sin−1[ ×√1− + ×√1− ]\n2 3 2 9 3 4\n1 5 2 3\n= sin−1[ ×√ + ×√ ]\n2 9 3 4\n1 √5 2 √3\n= sin−1[ × + × ]\n2 3 3 2\n√5 √3\n= sin−1[ + ]\n6 3\n√5+2√3\n= sin−1( ).\n6\nHene, the correct answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 2,
+        "type": "mcq",
+        "question_text": "If where c is a constant of\nintegration, then is equal to :",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": "Hence, the answer is the option 4.",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 3,
+        "type": "mcq",
+        "question_text": "If\nˆi,ˆj,ˆk\nare unit vectors along three mutually perpendicular directions, then",
+        "options": [
+          "ˆi.ˆj = 1",
+          "ˆi×ˆj = 1",
+          "ˆi. ˆ k = 0",
+          "ˆi×ˆk = 0"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "ˆi.ˆk = 0",
+        "explanation": "Given:\nˆi,ˆj,ˆk\nare unit vectors along three mutually perpendicular directions\n^i.^j = 0^i.k ^ = 0^j.k ^ = 0\nHence, the answer is the Option (3).",
+        "note": null
+      },
+      {
+        "question_number": 4,
+        "type": "mcq",
+        "question_text": "Find the sum of the first n terms of the natural numbers, where the nth term is defined as",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "",
+        "explanation": "To find the sum of the first n terms of the natural numbers, where the nth term is defined as\nwe can use the formula for the sum of an arithmetic series.\nThe formula for the sum of an arithmetic series is given by:\nIn this case, the first term is the value of the nth term when , which is\nThe last term is the value of the nth term when , which is\nSubstituting these values into the formula, we get:\nSimplifying the expression, we have:\nExpanding further, we get:\nTherefore, the sum of the first n terms of the natural numbers, where the nth term is defined as\nHence, the answer is the option (2).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 5,
+        "type": "mcq",
+        "question_text": "Which of the following does not represent the probability of occurrence of exactly one of A\nand B.",
+        "options": [
+          "P(A∩B′)+P(B∩A′)",
+          "P(A)+P(B)−2P(A∩B)",
+          "P(A)+P(B)−P(A∩B)",
+          "None of these"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "P(A)+P(B)−P(A∩B)",
+        "explanation": "We need the probability of a shaded area, which equals\nP(A−B)+P(B−A) and P(A∩B′)+P(B∩A′) and P(A)+P(B)−2.P(A∩B)\nHence, the answer is the Option (3)",
+        "note": null
+      },
+      {
+        "question_number": 6,
+        "type": "mcq",
+        "question_text": "A portion of a 30 m long tree is broken by a tornado and the top strikes the ground making\nan angle of 30° with the ground\nlevel. The height of the point where the tree is broken is equal to",
+        "options": [
+          "30 m\n√3",
+          "10 m",
+          "30√3m",
+          "60 m"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "10 m",
+        "explanation": "Let the height of the tree from the ground to the point where the tree is broken be x meters.\nThen, According to the given information, we get this figure, Let AC = y\nThe height of the tree = 30 m.\nSo x+y = 30m\n⇒ y = 30−x\nx 1 x\nsin30∘ = ⇒ = ⇒ y = 2x\ny 2 y\n3x = 30\nSo x = 10 m.\nHence, the answer is the Option (2)",
+        "note": null
+      },
+      {
+        "question_number": 7,
+        "type": "mcq",
+        "question_text": "There are three men have 3 coats,4 waist coats and 6 caps. In how many ways can they wear\nthem? Also ensure that no 3 men should wear both caps and coats?",
+        "options": [
+          "12,560",
+          "64,640",
+          "86,420",
+          "92,160"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "92,160",
+        "explanation": "To find the number of ways the three men can wear the coats, waistcoats, and caps while ensuring that\nno three men wear both caps and coats, we can use permutations.\nFor the first man, there are 3 choices for the coat, 4 choices for the waistcoat, and 6 choices for the cap.\nTherefore, the number of ways the first man can wear the items is\n.\nFor the second man, since he cannot wear both a coat and a cap, there are 2 choices for the coat\n(excluding the one already chosen by the first man), 4 choices for the waistcoat, and 5 choices for the cap\n(excluding the one already chosen by the first man). Therefore, the number of ways the second man can\nwear the items is .\n.\nFor the third man, there is only 1 choice left for the coat (excluding the ones already chosen by the first\nand second men), 4 choices for the waistcoat, and 4 choices for the cap (excluding the ones already\nchosen by the first and second men). Therefore, the number of ways the third man can wear the items is .\nTo find the total number of ways they can wear all the items, we multiply the number of options for each\nman together:\nTherefore, there are 92,160 different ways the three men can wear the coats, waistcoats, and caps,\nensuring that no three men wear both caps and coats.\nHence, the answer is the option(4).",
+        "note": null
+      },
+      {
+        "question_number": 8,
+        "type": "mcq",
+        "question_text": "3 boys picked up 30 oranges. In how many ways can they divide them if all oranges are\nidentical?",
+        "options": [
+          "795",
+          "496",
+          "646",
+          "694"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "496",
+        "explanation": "30 oranges can be distributed among 4 boys such that each boy can receive any number of oranges.\nn+r−1C\nr−1\nn = 30+3−1C\n3−1\nn = 32C\n2\n= 496\nHence, the correct answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 9,
+        "type": "mcq",
+        "question_text": "There are 15 men and 20 women in the company. For a function, the manager wants to\nchoose one man and one woman to represent the function. How many different ways can\nthe manager make this decision?",
+        "options": [
+          "100",
+          "200",
+          "300",
+          "400"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "300",
+        "explanation": "The manager must do two operations in this situation.\nChoosing men from a group of 15 men and women from a group of 20 women.\nThe first selection can be done in 15 different ways, while the second can be done in 20 different ways.\nAccording to the basic counting principle, the required number of ways is\n15×20 = 300\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 10,
+        "type": "mcq",
+        "question_text": "For a set of observations with 12 & 9 as no. of observations respectively, means as 5 and 7\nrespectively and 2 and 4 are standard deviations respectively, then find the combined\nvariance of two series.",
+        "options": [
+          "12.52",
+          "10.12",
+          "13.72",
+          "9.24"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "10.12",
+        "explanation": "As we learned\nProperties of Standard deviation -\n––\nLet n ,n be the number of observations of two series and their means and S.D are x ,x and σ ,σ\n1 2 1 2 1 2\nrespectively.\nLet x¯ denote the combined mean of two series then.\nx¯ = n 1 x¯ 1 +n 2 x¯ 2\nn +n\n1 2\n∴ The combined variance of two series is given by\nσ2 = n 1 (σ2 1 +d2 1 )+n 2 (σ2 2 +d2 2 )\nn +n\n1 2\n- wherein\nwhere\n––\nd = x −x¯ and d = x −x¯\n1 1 2 2\n12×5+9×7\nx¯ =\n12+9\n60+63 123 41\n= = =\n21 21 7\n41 −6\nd = 5− =\n1\n7 7\n41 8\nd = 7− =\n2\n7 7\n12(4+ 36)+9(16+ 64)\n∴ σ2 = 49 49\n12+9\n2784+7632\n=\n49×21\n10416\n= ≈ 10.12\n1029\nHence, the correct answer is option (2).",
+        "note": null
+      },
+      {
+        "question_number": 11,
+        "type": "mcq",
+        "question_text": "A game show has 8 questions, each with 4 possible answers. How many different ways can a\ncontestant answer all 8 questions, if they are allowed to guess on every question and can\nchoose the same answer more than once?",
+        "options": [
+          "35536",
+          "45563",
+          "65536",
+          "55363"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "65536",
+        "explanation": "For each of the 8 questions, the contestant has 4 possible answers. Therefore, using the multiplication\nprinciple of counting, we can find the total number of ways a contestant can answer all 8 questions given\nby,\nSince the contestant can guess every question and choose the same answer more than once, there are 4\npossible ways to answer each of the 8 questions. Therefore, we get:\nSimplifying this expression, we get,\nThe total number of ways\nUsing a calculator, we can evaluate to get,\nThe number of ways\nTherefore, there are 65536 different ways a contestant can answer all 8 questions if they are allowed to\nguess every question and can choose the same answer more than once.\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 12,
+        "type": "mcq",
+        "question_text": "A pizza place offers 5 different toppings, and a customer must choose at least 1 topping, but\nno more than 4 toppings, for their pizza. How many different pizza combinations are\npossible?",
+        "options": [
+          "50",
+          "10",
+          "20",
+          "30"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "30",
+        "explanation": "To calculate the number of different pizza combinations, we need to consider the options for the number\nof toppings the customer can choose: 1, 2, 3, or 4 toppings.\nCase 1: 1 topping:\nThere are 5 options to choose from for the single topping.\nCase 2: 2 toppings:\nTo calculate the number of combinations for 2 toppings, we can use the combination formula:\nCase 3: 3 toppings:\nSimilarly, using the combination formula:\nCase 4: 4 toppings:\nUsing the combination formula:\nTo find the total number of different pizza combinations, we sum the possibilities from all the cases:\nTherefore, there are 30 different pizza combinations possible.\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 13,
+        "type": "mcq",
+        "question_text": "Let and be two fixed points, then the locus of a point P such that the perimeter of\nis 4, is",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "",
+        "explanation": "Let be any point on the locus.\nThen, using the distance formula, we have:\nThe perimeter of triangle AOP is:\nTherefore, the locus of the point P is the set of all points that satisfy the equation:\nHence, the answer is the option (1).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 14,
+        "type": "mcq",
+        "question_text": "The outcome of each of 30 items was observed; 10 items gave an outcome each, 10\nitems gave outcome each and remaining 10 items gave outcome each. If the\nvariance of this outcome data is then equals:",
+        "options": [
+          "2",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": "Variance -\nIn case of discrete data\nNow,\nHence, the answer is the option 4.",
+        "note": "Options [2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 15,
+        "type": "mcq",
+        "question_text": "Find the limit of following function:",
+        "options": [
+          "",
+          "",
+          "",
+          "limit does not exists"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "",
+        "explanation": "Hence, the answer is the option (2).",
+        "note": "Options [1, 2, 3] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 16,
+        "type": "mcq",
+        "question_text": "The equation of the bisector of the acute angle between the lines and\nis:",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "",
+        "explanation": "The bisector of the angles is given by:\nand\nLet the angle between the line and (i) be , then:\nHence, is the bisector of the acute angle between the given lines.\nHence, the answer is the option (2).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 17,
+        "type": "mcq",
+        "question_text": "Distance between two parallel planes is :",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": "Multiplying the equation of plane by 2, we get:\n4x+2y+4z -16 = 0\n4x+2y+4z + 5 = 0\nHence, the answer is the option (4).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 18,
+        "type": "mcq",
+        "question_text": "Find the slopes of the straight lines which are equally inclined to lines 3x−4y−7 = 0 and\n12x−5y+6 = 0",
+        "options": [
+          "4, −5\n5 4",
+          "9, −7\n7 9",
+          "5, −4\n4 5",
+          "7, −9\n9 7"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "9, −7\n7 9",
+        "explanation": "Given:\n3\nslope of line 1 = m =\n1\n4\n12\nslope of line 2 = m =\n2\n5\nIf slope of line L is m, then\n∣ ∣ ∣ ∣\n∣ ∣ ∣ ∣\ntanΘ = tanΘ\n1 2\nm− 3 m− 12\n⇒ 4 = 5\n1+ 3m 1+ 12m\n4 5\n4m−3 5m−12\n⇒ =\n4+3m 5+12m\n4m−3 5m−12\n⇒ =\n4+3m 5+12m\n⇒ 20m−15+48m2 −36m = 20m+15m2 −48−36m\n⇒ 33m2 = −33\n⇒ m2 = −1\n⇒ No result\nor\n4m−3 (5m−12)\n⇒ = −\n4+3m (5+12m)\n⇒ 20m−15+48m2 −36m = −20m−15m2 +48+36m\n⇒ 63m2 −32m−63 = 0\n9 −7\n⇒ m = ,\n7 9\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 19,
+        "type": "mcq",
+        "question_text": "Let the tangent to the circle C : x2 +y2 = 2 at the point M(−1,1) intersect the circle\n1\nC : (x−3)2 +(y−2)2 = 5, at two distinct points A and B. If the tangents to C at the\n2 2\npoints A and B intersect at N, then the area of the triangle ANB is equal to :",
+        "options": [
+          "1\n2",
+          "2\n3",
+          "1\n6",
+          "5\n6"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "1\n6",
+        "explanation": "Using T = 0, equation of tangent at M(−1,1) to x2 +y2 = 2 is\nxx +yy = 2\n1 1\n−x+y = 2\n⇒ y = x+2\n|2−3−2| 3\nCM = =\n√1+1 √2\nCM 3 3\nNow cosθ = = =\nBC √2⋅√5 √10\nAnd BM = √ CB2 −CM2\n9\n= √5−\n2\n1\n=\n√2\nArea of △ANB = 2 area of △NMB\n1\n= 2× ×MB⋅MN\n2\n1 MB\n= ( )( )\n√2 tan(90−θ)\n1\n= ⋅tanθ\n2\n1 1 1\n= ⋅ =\n2 3 6\nHence, the answer is the option (3)",
+        "note": null
+      },
+      {
+        "question_number": 20,
+        "type": "mcq",
+        "question_text": "Find the integral of :",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "",
+        "explanation": "Given integral,\nUsing the formula,\nTherefore,\nHence, the answer is the option (2).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 21,
+        "type": "numerical",
+        "question_text": "Find the number of points where f(x) has its maximum value?\nf(x) = |sin(3x)|+|cos(3x)| xϵ[0,π]",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "6",
+        "explanation": "We know the maximum possible value of f(x) ≤ √2 at x = π\n12\nWe can see in the graph that there are 6 points where the graph of |sin(3x)| and |cos(3x)| intersects and\nhas its maximum value.\nHence, the answer is 6",
+        "note": null
+      },
+      {
+        "question_number": 22,
+        "type": "numerical",
+        "question_text": "The number of selections of four letters from the letters of the word ASSASSINATION is:",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "917",
+        "explanation": "Case I: All 4 letters are different\nWe choose 4 distinct letters from the 6 available and arrange them.\n6C ×4! = 15×24 = 360\n4\nCase II: 2 letters are the same, 2 are different\nChoose 1 pair from the 4 available types ( A,S,I,N ) and 2 distinct letters from the remaining 5 types.\n4C × 5C × 4! = 4×10×12 = 480\n1 2 2!\nCase III: 2 letters repeated twice (2 pairs)\nChoose 2 types for the pairs from the 4 available types ( A,S,I,N ).\n4C × 4! = 6×6 = 36\n2 2!2!\nCase IV: 3 letters are the same, 1 is different\nChoose 1 triplet from the 2 available types (A,S) and 1 distinct letter from the remaining 5 types.\n2C × 5C × 4! = 2×5×4 = 40\n1 1 3!\nCase V: All 4 letters are the same\nOnly the letter S can form a group of four.\n1C × 4! = 1\n1 4!\nTotal = 360+480+36+40+1 = 917\nHence, the correct answer is 917.",
+        "note": null
+      },
+      {
+        "question_number": 23,
+        "type": "numerical",
+        "question_text": "Let and let be the roots of the equation If\n, then the product of all possible values of a is",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "45",
+        "explanation": "Hence, the answer is 45.",
+        "note": null
+      },
+      {
+        "question_number": 24,
+        "type": "numerical",
+        "question_text": "For a differentiable function f : IR → IR, suppose f′(x) = 3f(x)+α, where\nα ∈ IR,f(0) = 1 and lim f(x) = 7. Then 9f(−log 3) is equal to\nx→−∞ e",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "61",
+        "explanation": "dy\n−3y = α\ndx\nIf = e∫−3dx = e−3x\n∴ y−e−3x = ∫ e−3x ⋅αdx\nαe−3x\nye−3x = +c\n−3\n(∗e3x)\nα\ny = +C ⋅e3x\n−3\non substituting x = 0,y = 1\nx → −∞,y = 7\nwe get y = 7−6e3x\n9f(−log 3) = 61\ne\nHence, the correct answer is 61.",
+        "note": null
+      },
+      {
+        "question_number": 25,
+        "type": "numerical",
+        "question_text": "Area of the region bounded by the curve y2 = 4x,y-axis and the line y = 3 is ___________.\nWrite upto 2 decimal places.",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "2.25",
+        "explanation": "From figure\n3 3 y2 y3 3\n∫ xdy = ∫ dy = [ ]\n4 12\n0 0 0\n27 9\n= = 2.25\n12 4\nHence, the answer is 2.25.",
+        "note": null
+      }
+    ]
+  },
+  {
+    "paper_number": 3,
+    "title": "JEE Mains Maths Sample Paper 3",
+    "questions": [
+      {
+        "question_number": 1,
+        "type": "mcq",
+        "question_text": "Let be an integer such that exists, where is greatest integer .\nThen is equal to:",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "",
+        "explanation": "For limit to exist\nHence the answer is the option (1).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 2,
+        "type": "mcq",
+        "question_text": "The lengths of the sides of a triangle are 10+x2,10+x2 and 20−2x2. If for , the\narea of the triangle is maximum, then is equal to:",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "Semiperimeter s of the triangle\nwill be the point of maxima so,\nHence, the answer is the option (3).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 3,
+        "type": "mcq",
+        "question_text": "If the second, third and fourth term in the expansion of are 240,720 and 1080\nrespectively, then the value of n is",
+        "options": [
+          "15",
+          "20",
+          "10",
+          "5"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "5",
+        "explanation": "Hence, the answer is the option(4).",
+        "note": null
+      },
+      {
+        "question_number": 4,
+        "type": "mcq",
+        "question_text": "If the line x−2y = 12 is the tangent to the ellipse x2 + y2 = 1 at the point (3, −9) , then\na2 b2 2\nthe length of the latus rectum of the ellipse is :",
+        "options": [
+          "9",
+          "12√2",
+          "5",
+          "8√3"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "9",
+        "explanation": "Using the point form of a tangent, the equation of the tangent (3, −9) is\n2\n3x − 9y = 1\na2 2b2\nNow compare this equation with the given equation of tangent x - 2y = 12\n3 = 9 = 1\na2 4b2 12\na = 6 and b = 3√3\nLength of LR = 2b2 = 2×(3√3)2 = 9\na 6\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 5,
+        "type": "mcq",
+        "question_text": "Find the angle b/w(x−1) = y = (z+3) and 3x+2y+z = 4\n2 3 6",
+        "options": [
+          "sin−1(18)\n28",
+          "sin−1( 18 )\n7√14",
+          "sin−1(√ 18)\n28",
+          "cos−1 √14\n28"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "sin−1( 18 )\n7√14",
+        "explanation": "(2×3+3×2+6×1)\nsinθ = √9+4+1\n√4+9+36\n18\nθ = sin−1( )\n7√14\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 6,
+        "type": "mcq",
+        "question_text": "If and then",
+        "options": [
+          "{1}",
+          "{3,4}",
+          "{1,3,4}",
+          "None of these."
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "None of these.",
+        "explanation": "A x (C -B) = (A x C) - (A x B)\n= does not exist =\nHence, the answer is the option 4.",
+        "note": null
+      },
+      {
+        "question_number": 7,
+        "type": "mcq",
+        "question_text": "Three houses are available in a locality. Three persons apply for the houses. Each applies for\none house without consulting others. The probability that all the three apply for the same\nhouse is",
+        "options": [
+          "1/9",
+          "2/9",
+          "7/9",
+          "8/9"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "1/9",
+        "explanation": "As we learnt in\nProbability of occurrence of an event -\nLet S be the sample space then the probability of occurrence of an event E is denoted by P(E) and it is\ndefined as\n- wherein\nWhere n repeated experiment and E occurs r times.\nReliability of a person applying to each house =\nReliability that they apply to the same house =\nTherefore, the Total Reliability for 3 house\nHence, the answer is the option 1.",
+        "note": null
+      },
+      {
+        "question_number": 8,
+        "type": "mcq",
+        "question_text": "(n)+2(n)+22(n)+…+2n(n)equals\n0 1 2 n",
+        "options": [
+          "2n",
+          "3n",
+          "4n",
+          "nn"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "3n",
+        "explanation": "We know that\n(1+x)n = ∑n (n)x′\nr=0 r\nPutting x = 2, we get\n(n)20 +(n)21 +(n)22 +……+(n)2n = 3n.\n0 1 2 r\nHence, the correct answer is the option 2.",
+        "note": null
+      },
+      {
+        "question_number": 9,
+        "type": "mcq",
+        "question_text": "If are the two roots of the equation .Then",
+        "options": [
+          "3",
+          "2",
+          "4",
+          "1"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "2",
+        "explanation": "Given,\nNow,\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 10,
+        "type": "mcq",
+        "question_text": "sinx > 1 for x in the interval (−2π,2π) :\n2",
+        "options": [
+          "(−11π,−7π)∪(π, 7π)\n6 6 6 6",
+          "(−11π,−5π)∪(π, 7π)\n6 6 6 6",
+          "(π, 5π)\n6 6",
+          "(−11π,−7π)∪(π, 5π)\n6 6 6 6"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "(−11π,−7π)∪(π, 5π)\n6 6 6 6",
+        "explanation": "This is the graph of y = sinx\n1\nsinx > for\n2\n11π 7π π 5π\nxϵ(− ,− )∪( , )\n6 6 6 6\nHene, the correct answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 11,
+        "type": "mcq",
+        "question_text": "Find the equation of a circle touching the y-axis and having a center (3,−5)",
+        "options": [
+          "x2 +y2 −6x+10y+9 = 0",
+          "x2 +y2 −6x+10y+25 = 0",
+          "x2 +y2 −10x+6y+9 = 0",
+          "x2 +y2 −10x+6y+25 = 0"
+        ],
+        "correct_option_number": null,
+        "correct_answer": "x2 +y2 −6x+10y+25 = 0",
+        "explanation": "3 = ∓r;−f = −5\nr = ∓3;f = 5\nx2 +y2 −6x+10y+25 = 0\nHence the correct answer option is 2.",
+        "note": null
+      },
+      {
+        "question_number": 12,
+        "type": "mcq",
+        "question_text": "If R is a relation on the set of lines in a plane . Then R is?",
+        "options": [
+          "Reflexive",
+          "Symmetric",
+          "Transitive",
+          "Equivalence relation"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "Equivalence relation",
+        "explanation": "Since , So all (L1, L1) types of elements lie in R, and R is a reflexive relation.\nIf , so if (L1, L2) lies in R, then (L2, L1) also lies in R, and R is a symmetric relation.\nIf and , so if (L1, L2) and (L2, L3) lie in R, then (L1, L3) lie in R. Hence it is a\ntransitive relation.\nSo, R is an equivalence relation.\nHence, the answer is the option 4.",
+        "note": null
+      },
+      {
+        "question_number": 13,
+        "type": "mcq",
+        "question_text": "The graph of y = min{x2,−x}",
+        "options": [
+          "",
+          "",
+          "",
+          "None of these"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "",
+        "explanation": "Draw y = x2 and y = −x graphs\nFor x < −1,−x < x2, so we have y = −x graph.\nFor −1 ≤ x < 0,−x > x2, so we keep y = x2 graph.\nFor 0 ≤ x,−x < x2, so we keep y = −x graph.\nHence, the answer is the option (2).",
+        "note": "Options [1, 2, 3] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 14,
+        "type": "mcq",
+        "question_text": "A student is to answer 10 out of 13 questions in an examination such that he must choose at\nleast 4 from the first five questions. The number of choices available to him is",
+        "options": [
+          "196",
+          "280",
+          "346",
+          "140"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "196",
+        "explanation": "Choose 10 out of 13 questions and choose at least 4 out of the first five.\nSo, either he can select 4 from the first 5 (and he has to select 6 questions out of the remaining 8\nquestions)\nOR\nHe can select 5 from the first 5 (and he has to select 5 questions out of the remaining 8 questions)\nSo, number of ways and\nTotal = 196\nHence, the answer is the option 1.",
+        "note": null
+      },
+      {
+        "question_number": 15,
+        "type": "mcq",
+        "question_text": "A−B A+B A B\nIf and are positive acute angles, find the values of and from the equations\nsin(A−B) = 1 cos(A+B) = 1 :\n,\n2 2",
+        "options": [
+          "A = 600 and B = 300",
+          "A = 15o, B = 45o",
+          "A = 450 and B = 150",
+          "A = 300 and B = 300"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "A = 450 and B = 150",
+        "explanation": "The equations are sin (A – B) = 1/2 = sin 30o\nA – B = 30o. …(1)\nAnd cos (A + B) = 1/2 = cos 60o\nA + B = 60o. ...(2)\nAdd (1) and (2),\n2A=90o\nA = 45o and B = 15o\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 16,
+        "type": "mcq",
+        "question_text": "Evaluate",
+        "options": [
+          "3",
+          "0",
+          "1",
+          "5"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "3",
+        "explanation": "By Taylor's expansion\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 17,
+        "type": "mcq",
+        "question_text": "Evaluate .",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "0",
+        "explanation": "Using L-hospital\nNow as x approaches to 0 it is in so just apply L'Hospital's rule differentiating numerator and\ndenominator we get\nWhich is\nHence, the answer is option (1).",
+        "note": null
+      },
+      {
+        "question_number": 18,
+        "type": "mcq",
+        "question_text": "In how many ways can the letters of the word \"SUCCESS\" be arranged such that the vowels\nalways come together and ending letter being S?",
+        "options": [
+          "20",
+          "24",
+          "28",
+          "26"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "24",
+        "explanation": "To calculate the number of ways the letters of the word \"SUCCESS\" can be arranged such that the vowels\nalways come together and the ending letter is S, we can treat the group of vowels (\"UE\") as a single entity.\nThis means we have \"S(UE)SC\" to arrange.\nNow, we have 4 entities to arrange, which are \"S, (UE), S, C\".\nThe 4 entities can be arranged in ways. However, within this arrangement, the letter S repeats twice.\nTherefore, we need to divide by to account for the repetition.\nAdditionally, within the group (UE), the vowels U and E can be arranged among themselves in ways.\nTherefore, the total number of arrangements where the vowels always come together and the ending\nletter is S is given by:\n.\nThus, there are 24 ways to arrange the letters of the word \"SUCCESS\" such that the vowels always come\ntogether and the ending letter is S.\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 19,
+        "type": "mcq",
+        "question_text": "Each of the persons A and B independently tosses three fair coins. The probability that both\nof them get the same number of heads is :",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "",
+        "explanation": "Both get 0 Heads\n1 Heads\n2 Heads\n3 Heads\nTotal desired probability\nHence, the answer is the option 2.",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 20,
+        "type": "mcq",
+        "question_text": "If is",
+        "options": [
+          "",
+          "",
+          "",
+          "none of these."
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "Hence, the answer is the option (3).",
+        "note": "Options [1, 2, 3] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 21,
+        "type": "numerical",
+        "question_text": "If the letter of the word 'MOTHER' is permuted and all the words so formed (with or without\nmeaning) are listed as in a dictionary, then the position of the word 'MOTHER' is",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "309",
+        "explanation": "We need to find the position of the word MOTHER in the dictionary.\nStarting with E: 5!\nStarting with H: 5!\nStarting with ME: 4!\nStarting with MH: 4!\nStarting with MOE: 3!\nStarting with MOH: 3!\nStarting with MOR: 3!\nStarting with MOTE: 2!\nThe next word is MOTHER: 1\nTotal: 309\nHence, the answer is the option 3.",
+        "note": null
+      },
+      {
+        "question_number": 22,
+        "type": "numerical",
+        "question_text": "For real numbers a,b(a > b > 0) let\nArea {(x,y) : x2 +y2 ≤ a2 and x2 + y2 ≥ 1} = 30π\na2 b2\nand\nArea {(x,y) : x2 +y2 ≥ b2 and x2 + y2 ≤ 1} = 18π\na2 b2\nThen the value of (a−b)2 is equal to",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "12",
+        "explanation": "x2 +y2 ≤ a represents region inside circle x2 +y2 = a2\nand x2 + y2 ⩾ 1 represents region outside the ellipse x2 + y2 = 1\na2 b2 a2 b2\nFirst area = 30π = area of circle - area of ellipse\n= πa2 −πab\n⇒ 30π = πa2 −πab\n⇒ a2 −ab = 30\nSimilarly second area = 18π = πab−πb2\n⇒ ab−b2 = 18\nSubtracting (i) - (ii)\n⇒ a2 −ab−ab+b2 = 30−18\n⇒ (a−b)2 = 12\nHence, the correct answer is 12.",
+        "note": null
+      },
+      {
+        "question_number": 23,
+        "type": "numerical",
+        "question_text": "General term of an A.P is T = 4n−2, then find its common difference.\nn",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "4",
+        "explanation": "Given:\n⇒ First Term T = 4×1−2 = 2\n1\nT = 4×2−2 = 6\n2\nT = 4×3−2 = 10\n3\nHence,\nd = T −T or T −T\n3 2 2 1\n= 10−6 = 4\nHence, the correct answer is 4.",
+        "note": null
+      },
+      {
+        "question_number": 24,
+        "type": "numerical",
+        "question_text": "equals",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "2",
+        "explanation": "As we have learned\nEvaluation of limits : (algebraic limits) : (Method of direct substitution) -\n- wherein\nMeans at x = a f(x) defined.\nHence, the answer is the option 2.",
+        "note": null
+      },
+      {
+        "question_number": 25,
+        "type": "numerical",
+        "question_text": "If , then equals :",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "2.375",
+        "explanation": "As we learned in\nEquality in Complex Numbers\nz = x + iy & w = a + ib are equal iff x=a & y=b\nNow,\nSince the given complex numbers are equal so,\nand\nand\nHence, the answer is the option (3).",
+        "note": null
+      }
+    ]
+  },
+  {
+    "paper_number": 4,
+    "title": "JEE Mains Maths Sample Paper 4",
+    "questions": [
+      {
+        "question_number": 1,
+        "type": "mcq",
+        "question_text": "The differential equation representing the family of ellipses having foci either on the x-axis\nor on the y-axis, centre at the origin and passing through the point (0, 3) is:",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": "Formation of Differential Equations\nA differential equation can be derived from its equation by the process of differentiation and other\nalgebraical processes of elimination\nFormation of Differential Equations -\nLet y and x be the dependent and the independent variables respectively. The equation of (x, y, c) = 0 , is\nfamily of curves\n- wherein\nC is the arbitrary Constant\nEquation of ellipse :\npass through (0,3)\n; differentiating we get\nHence, the answer is option (4).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 2,
+        "type": "mcq",
+        "question_text": "∫ 1 =?\n(9x2−12x+4)3dx",
+        "options": [
+          "1 +C\n15(3x−2)5",
+          "1 +C\n15(3x+2)5",
+          "−1 +C\n15(3x−2)5",
+          "− 1 +C\n15(3x−2)5"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "1 +C\n15(3x+2)5",
+        "explanation": "1\nI = ∫\n(9x2 −12x+9)3dx\n9x2 −12x+4 = (3x−2)2\n1\nI = ∫ dx\n(3x−2)6\n1 1 1\nI = ∫ dt = − 1/3+C\n3 t6 5t2\n1 1\nI = − +C\n15 (3x−2)5\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 3,
+        "type": "mcq",
+        "question_text": "([.] denotes the greatest integer function)",
+        "options": [
+          "has value -1",
+          "has value 0",
+          "has value 1",
+          "does not exist"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "has value -1",
+        "explanation": "As will approach to faster than\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 4,
+        "type": "mcq",
+        "question_text": "Finding .",
+        "options": [
+          "0",
+          "1",
+          "",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": ". Indeed,\nHence, the answer is option (4).",
+        "note": "Options [3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 5,
+        "type": "mcq",
+        "question_text": "The number of points with integral coordinates that lie in the interior of the region common\nto the circle and the parabola is:",
+        "options": [
+          "two",
+          "four",
+          "three",
+          "none of these"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "three",
+        "explanation": "The number of integral parts lying inside the circle is . Out of this, the parabola contains .\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 6,
+        "type": "mcq",
+        "question_text": "If are the roots of the equation , then the area of the triangle\nformed by the three straight lines is:",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "",
+        "explanation": "Vertices of the given triangle are so that the area of the triangles is\nequal to\nSince, are the roots of , so\nso, the required area is\nsince the area is a positive quantity.\n.\nHence, the answer is the option (1).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 7,
+        "type": "mcq",
+        "question_text": "If the circles intersect\northogonally, then is:",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "",
+        "explanation": "Apply\nHence, the answer is the option (1).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 8,
+        "type": "mcq",
+        "question_text": "Let respectively be the position vectors of the\npoints A,B and C with respect to the origin O.\nIf the distance of C from the bisector of the acute angle between OA and OB is , then the\nsum of all possible values of is:",
+        "options": [
+          "1",
+          "3",
+          "2",
+          "4"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "1",
+        "explanation": "Angle between vector a and vector b -\nwherein\nHere\nAnle bisector passes through and origin.\nAngle bisector is x - y = 0\nPerpendicular distance from c =\nAnswer is\nHence, the answer is the option 1.",
+        "note": null
+      },
+      {
+        "question_number": 9,
+        "type": "mcq",
+        "question_text": "If , then the value of\nis",
+        "options": [
+          "-1",
+          "2",
+          "1",
+          "0"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "1",
+        "explanation": "Given that,\nMultiplying by tan on both sides to get,\nHence, the answer is option (3).",
+        "note": null
+      },
+      {
+        "question_number": 10,
+        "type": "mcq",
+        "question_text": "Calculate the limit",
+        "options": [
+          "2",
+          "0",
+          "-1",
+          "-2"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "2",
+        "explanation": "We know that , so\nHence, the answer is the option 1.",
+        "note": null
+      },
+      {
+        "question_number": 11,
+        "type": "mcq",
+        "question_text": "∫ dx = Ktan−1(M tan(x))+C What is K and C ?\n5+4cosx 2",
+        "options": [
+          "K = 1,M = 2/3",
+          "K = 1/3,M = 3/2",
+          "K = 1,M = 1/3",
+          "K = 1,M = 1/3"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "K = 1/3,M = 3/2",
+        "explanation": "To solve the given integral:\n∫ dx\n5+4cosx\nWe use the standard method for integrating expressions of the form ∫ dx , which can be solved\na+bcosx\nusing the substitution:\ncosx = 1−tan2 x 2 and dx = 2du , where u = tan x.\n1+tan2 x 1+u2 2\n2\nUpon solving, the result is:\n∫ dx = Ktan−1(M tan x)+C\n5+4cosx 2\nwhere K = 1 = 1 and M = 3 .\n√9 3 2\nThus, the final solution is:\n∫ dx = 1tan−1(3tan x)+C\n5+4cosx 3 2 2\nHence, the correct answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 12,
+        "type": "mcq",
+        "question_text": "Let a→ = 2ˆi+λ ˆj+3ˆk,→b = 4ˆi+(3−λ )ˆj+6ˆk and c→= 3ˆi+6ˆj+(λ −1)ˆk, be three\n1 2 3\n→\nvectors such that b = 2a→\nand a→ is perpendicular to c→. Then a possible value of (λ ,λ ,λ ) is:\n1 2 3",
+        "options": [
+          "(1,3,1)",
+          "(-1/2,4,0)",
+          "(1/2,4,-2)",
+          "(1,5,1)"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "(-1/2,4,0)",
+        "explanation": "Scalar multiplication -\nwherein\nThe directed line segment becomes m times longer\nAngle between vector a and vector b -\ncosΘ =\na→⋅→b\n|a→||→b|\nwherein\nHere 0 ≤ Θ ≤ π\nFrom the concept\nGiven, → b = 2a→\n4^i+(3−λ )^j+6k ^ = 4^i+2λ +6k ^\n2 1\n=> 3−λ = 2λ\n2 1\n=> 2λ +λ = 3\n1 2\nGiven a→ and c→ is perpendicular\nSo, a→ ⋅c→= 0\n=> 6+6λ +3(λ −1) = 0\n1 3\n=> 2λ +λ = −1\n1 3\nNow,\n(λ ,λ ,λ ) = (λ ,3−2λ ,−1−2λ )\n1 2 3 1 1 1\n−1\n( ,4,0) satisfies this.\n2\nHence correct answer is option 2",
+        "note": null
+      },
+      {
+        "question_number": 13,
+        "type": "mcq",
+        "question_text": "If A+B+C=D and D is a matrix of order 3 x 3;then D*=",
+        "options": [
+          "A*+B*+C*",
+          "B*+A*+C*",
+          "C*+A*+B*",
+          "All of these"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "All of these",
+        "explanation": "As we learn\nProperty of Transpose Conjugate\n- wherein\nis the conjugate matrix of\nMatrix Addition is commutative in nature.\nHence, the answer is the option 4.",
+        "note": null
+      },
+      {
+        "question_number": 14,
+        "type": "mcq",
+        "question_text": "If the coefficients of T ,T , T terms of (1+3x)16 are in AP, then the value of r is\nr r+1 r+2",
+        "options": [
+          "6",
+          "7",
+          "8",
+          "10"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "10",
+        "explanation": "We know that, the rth ,(r+1)th and (r+2)th terms are defined as:\nT = 16C (3x)(r−1)\nr (r−1)\nT = 16C (3x)r\n(r+1) r\nT = 16C (3x)(r+1)\n(r+2) (r+1)\nIf a,b,c are in AP then, 2 b = a+c\nSince, the coefficients of terms T ,T , T are in AP,\nr r+1 r+2\n2 T = T +T\nr+1 r r+2\n26C (3)r = 16C (3)(r−1) + 16C (3)(r+1)\nr (r−1) (r+1)\n2. 16!.3 = 16! + 16!.9\nr!(16−r)! (r−1)!(16−r+1)! (r+1)!(16−r−1)!\nCanceling common terms and simplifying, we get,\n6 r 9\n= +\nr!(16−r)! r!(17−r)! r!(r+1)(15−r)!\n6 r 9(16−r)\n= +\n(16−r)! (16−r)!(17−r) (r+1)(16−r)!\nCanceling common terms on both sides, we are left with.\n6 = r + 9(16−r)\n(17−r) (r+1)\nTaking LCM,\n(102−6r)(r+1) (r2 +r)+9(16−r)(17−r)\n=\n(17−r)(r+1) (r+1)(17−r)\n(102−6r)(r+1) = (r2 +r)+9r2 −297r+2448\nSimplifying, we get,\n−6r2 +96r+102 = 10r2 −296r+2448\n0 = 16r2 −392r+2346\nOn solving this quadratic equation, we get,\n392±√3922 −4⋅16.2346\nr =\n2.16\n392±59.3\nr =\n32\nr ≈ 10,14\nSince 14 is not given in the options we get the value r = 10\nTherefore, if the coefficients of T ,T , T terms of (1+3x)16 are in AP , then the value of r is 10\nr r+1 r+2\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 15,
+        "type": "mcq",
+        "question_text": "If coefficient of in is non-zero, then n cannot be of the form\n(t∈N)",
+        "options": [
+          "3t + 1",
+          "3t",
+          "3t+2",
+          "4t+1"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "3t+2",
+        "explanation": "Clearly, n cannot be of the form 3 t+2.\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 16,
+        "type": "mcq",
+        "question_text": "",
+        "options": [
+          "discontinuous at x=4",
+          "neither continuous nor differentiable at x=4",
+          "everywhere continuous but not differentiable at x=4",
+          "everywhere continuous and differentiable"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "everywhere continuous but not differentiable at x=4",
+        "explanation": "For x > 4, we have\nThus, we have\nClearly, f(x) is continuous at x = 4.We have,\nSo,f(x) is not differentiable atx=4.\nThus,f(x) is everywhere continuous but not differentiable atx=4.\nHence, the answer is the option 3.",
+        "note": null
+      },
+      {
+        "question_number": 17,
+        "type": "mcq",
+        "question_text": "A person writes letters to five friends and addresses on the corresponding envelopes. In how\nmany ways can the letters be placed in the envelopes so that at least four of them are in\nwrong envelopes?",
+        "options": [
+          "44",
+          "89",
+          "109",
+          "None of these"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "89",
+        "explanation": "Case 1 : Four letters are in wrong envelop\nFirst select one letter that gets in its correct place in 5C = 5 ways\n1\nThen remaining 4 letters can be put in wrong envelops in D(4) = 9 ways\nCase 2 All 5 letters go in wrong envelop\nThis case equals D(5) = 44\nSo, total ways = 5×9+44 = 89\nHence, the correct answer is option 2.",
+        "note": null
+      },
+      {
+        "question_number": 18,
+        "type": "mcq",
+        "question_text": "Let f : [0,1] → [0,∞) be a continuous function such that ∫ 1 f(x)dx = 10 Which if the\n0\nfollowing statements are NOT necessarily true?",
+        "options": [
+          "∫ 1 e−xf(x)dx ≤ 10\n0",
+          "1 f(x)\n∫ dx ≤ 10\n0 (1+x)2",
+          "1\n−10 ≤ ∫ sin(100x)f(x)dx ≤ 10\n0",
+          "∫ 1 f(x)2dx ≤ 100\n0"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "∫ 1 f(x)2dx ≤ 100\n0",
+        "explanation": "∵ f(x) ≥ 0\n1\n⇒ ∫ (f(x))2dx ≤ 100\n0\nnot always true because (f(x))2 can take very high values than area bounded by (f(x))2, x -axis and\nx = 0 to 1 may cross 100 .\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 19,
+        "type": "mcq",
+        "question_text": "Let the foot of perpendicular from a point P(1,2,−1) to the straight line L : x = y = z\n1 0 −1\nbe N. Let a line be drawn from P parallel to the plane x+y+2z = 0 which meets L at\npoint Q . If α is the acute angle between the lines PN and PQ, then cosα is equal to",
+        "options": [
+          "1\n√5",
+          "√3\n2",
+          "1\n√3",
+          "1\n2√3"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "1\n√3",
+        "explanation": "x y z\nLet N be = = = λ ⇒ x = λ,y = 0,z = −λ\n1 0 −1\nN(λ,0,−λ)\n−→\nNow PN ⊥ L ⇒ PN ⋅(i−k) = 0\n⇒ ((λ−1)i−2j+(−λ+1)k)⋅(i−k) = 0\n⇒ (λ−1)+λ−1 = 0 ⇒ λ = 1\n⇒ N(1,0,−1)\n∣ ∣\n∣ ∣\nLet Qbe(p,0,−p)\n−→\n∴ PQ ⊥ ( normal to plane )\n−→\n⇒ PQ⋅n→ = 0\n⇒ [(p−1)i+(−2)j+(−p+1)k]⋅(i+j+2k) = 0\n⇒ p = −1\n⇒ Q(−1,0,1)\n−−→ →\n∴ PN = 2j and PQ = −2i−2j+2k\n−−→ →\nPN ⋅PQ\nAngle between these = cos−1\n−−→ →\n|PN||PQ|\n4 1\n= cos−1 = cos−1( )\n2⋅2√3 √3\nHence, the answer is the option (3)",
+        "note": null
+      },
+      {
+        "question_number": 20,
+        "type": "mcq",
+        "question_text": "Let 10 vertical poles standing at equal distances on a straight line, subtend the same angle of\nelevation α at a point O on this line and all the poles are on the same side of O. If the height\nof the longest pole is ' h ' and the distance of the foot of the smallest pole from O is ' a ',\nthen the distance between two consecutive poles is",
+        "options": [
+          "hsinα+acosα\n9sinα",
+          "hcosα−asinα\n9cosα",
+          "hcosα−asinα\n9sinα",
+          "hsinα+acosα\n9cosα"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "hcosα−asinα\n9sinα",
+        "explanation": "For all poles to subtend the same angle, the longest pole must be farthest, the smallest pole must be\nnearest, while all other poles are arranged in ascending order of height. Let the distance between 2\nconsecutive poles be x. Then, B B = 9x\n1 10\nA B h\n1 1\nΔA B O,tanα = =\n1 1\nB O B B +B O\n1 1 10 10\nh\ntanα =\n9x+a\nsinα h\n=\ncosα 9x+a\n⇒ 9xsinα+asinα = hcosα\nhcosα−asinα\n⇒ x =\n9sinα\nHence, the correct answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 21,
+        "type": "numerical",
+        "question_text": "Torque on a bolt when pulling with a force of 200 N directed perpendicular to a wrench of\nlength 20 cm is ......................Nm",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "40",
+        "explanation": "As we have learned in\nApplications of Vectors -\nwherein\nis the position vector of P part M is the moment of about O. Direction of is along the normal to\nthe plane OPN.\nWe know\nhere r = 0.2 m , F = 200 N\nHence, the answer is 40.\n∣ ∣",
+        "note": null
+      },
+      {
+        "question_number": 22,
+        "type": "numerical",
+        "question_text": "If for the complex numbers z satisfying |z−2−2l| ≤ 1, the maximum value of |3iz+6| is\nattained at a+ib, then a+b is equal to",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "5",
+        "explanation": "z lies on the boundary or interior of circle with centre (2,2) and r = 1\n|3iz+6| = 3i(z+ 2) = 3|z−2i|\ni\n⇒ Maximum distance of z from (0,2) = 3\nSo, 3|z−2i| = 3×3 = 9\nmax\nz = 3+2i\nso a+b = 5\nHence, the answer is 5.",
+        "note": null
+      },
+      {
+        "question_number": 23,
+        "type": "numerical",
+        "question_text": "The number of ways of getting a sum 16 on throwing a dice four times is __________.",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "125",
+        "explanation": "(x1 +x2…+x6) 4\n1−x6 4\nx4 ⋅( )\n1−x\nx4 ⋅(1−x6) 4 ⋅(1−x)−4\nx4[1−4x6 +6x12….][(1−x)−4]\n(x4 −4x10 +6x16…)(1−x)−4\n(x4 −4x10 +6x16)(1+ 15C x12 + 9C x6…)\n12 6\n(15C −4⋅ 9C +6)x16\n12 6\n(15C −4⋅ 9C +6)\n3 6\n= 35×13−6×8×7+6\n= 455−336+6\n= 125\nHence, the answer is (125)",
+        "note": null
+      },
+      {
+        "question_number": 24,
+        "type": "numerical",
+        "question_text": "Consider the function\nWhere is a polynomial such that is always a constant and . If is\ncontinuous at , then is equal to__________.",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "39",
+        "explanation": "Given is continuous at\nFrom (i) & (ii), a = 2, b = 3\nHence, the answer is 39.",
+        "note": null
+      },
+      {
+        "question_number": 25,
+        "type": "numerical",
+        "question_text": "What is the value of 3⋅4⋅5⋅6⋅7 ?",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "2520",
+        "explanation": "3⋅4⋅5⋅6⋅7\n1⋅2⋅3⋅4⋅5⋅6.7\n=\n1.2\n7!\n=\n2!\n= 2520\nHence the correct answer is 2520.",
+        "note": null
+      }
+    ]
+  },
+  {
+    "paper_number": 5,
+    "title": "JEE Mains Maths Sample Paper 5",
+    "questions": [
+      {
+        "question_number": 1,
+        "type": "mcq",
+        "question_text": "If has real and distinct roots then",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "As we learnt in\nCondition for Real and distinct roots of Quadratic Equation -\n- wherein\nis the quadratic equation\nFor real and distinct roots,\nHence, the answer is the option 3.",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 2,
+        "type": "mcq",
+        "question_text": "If then A= ?",
+        "options": [
+          "",
+          "",
+          "",
+          "None of these"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "Now checking options\nDifferentiation of options A and B give 0 as these are constant functions\nOn differentiating option C , , we get\nHence, the answer is the option 3.",
+        "note": "Options [1, 2, 3] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 3,
+        "type": "mcq",
+        "question_text": "Evaluate .",
+        "options": [
+          "0",
+          "2",
+          "-1",
+          "1"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "0",
+        "explanation": "You can't use the Taylor series in this case, in fact, the approximations and work\nonly when but in this limit x approaches infinity. There's no need to use sophisticated tools, just use the\nsqueeze theorem:\nHence you have:\nHence, the answer is option (1).",
+        "note": null
+      },
+      {
+        "question_number": 4,
+        "type": "mcq",
+        "question_text": "If sin2A = √3 and 0 ≤ A ≤ 90∘ , then find the value of sinA\n2",
+        "options": [
+          "1\n2",
+          "1\n√2",
+          "−1\n2",
+          "1\n√2"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "1\n2",
+        "explanation": "Given that,\n√3\nsin2A =\n2\nsin2A = sin60∘\nA = 30∘\nTherefore,\nsinA = sin30∘\n1\nsinA =\n2\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 5,
+        "type": "mcq",
+        "question_text": "Let for some function y = f(x),∫xtf(t)dt = x2f(x), x > 0 and f(2) = 3. Then f(6) is equal to:\n0",
+        "options": [
+          "1",
+          "2",
+          "6",
+          "3"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "1",
+        "explanation": "Given:\n∫xtf(t)dt = x2f(x), x > 0, f(2) = 3\n0\nDifferentiate both sides with respect to x\nUse Leibniz rule on the left side and product rule on the right:\nd (∫xtf(t)dt) = xf(x)\ndx 0\nd (x2f(x)) = 2xf(x)+x2f′(x)\ndx\nSo,\nxf(x) = 2xf(x)+x2f′(x)\nRearranging the equation\nxf(x)−2xf(x) = x2f′(x) ⇒ −xf(x) = x2f′(x)\nDivide both sides by x2f(x):\nf′(x) = −1\nf(x) x\nIntegrate both sides\n∫ f′(x)dx = ∫ −1dx ⇒ lnf(x) = −lnx+lnC\nf(x) x\n⇒ f(x) = C\nx\nUse the initial condition f(2) = 3\nf(2) = C = 3 ⇒ C = 6\n2\n⇒ f(x) = 6\nx\nFind f(6)\nf(6) = 6 = 1\n6\nHence, the correct answer is option (1).",
+        "note": null
+      },
+      {
+        "question_number": 6,
+        "type": "mcq",
+        "question_text": "The term that is independent of x, in the expression is:",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "",
+        "explanation": "For the term that is independent of x,\nWe must have\nRequired term\nHence, the answer is the option (2).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 7,
+        "type": "mcq",
+        "question_text": "A, B, C, and D develop 18 items. Five items jointly by A and C, four items by A and D, four items by\nB and C and five items by B and D. The number of ways of selecting eight items out of 18 so that\nthe selected ones belong equally to A,B,C,D is",
+        "options": [
+          "5226",
+          "5626",
+          "4418",
+          "4936"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "5626",
+        "explanation": "Required number of ways of selecting 8 items out of ' 18 ' so that selected ones belong equally to A, B, C, D\n=(5C ) 2 ⋅(4C ) 2 +(5C ) 2 ⋅(4C ) 2\n2 2 1 3\n+(5C ) 2 ⋅(4C ) 2 +(5C ) 2 +(4C ) 2\n3 1 4 4\n=100×36+25×16+100×16+25+1\n=5626\nHence, the correct answer is option (2).",
+        "note": null
+      },
+      {
+        "question_number": 8,
+        "type": "mcq",
+        "question_text": "In how many ways 4-digit numbers can be formed using the digit 2,3,4,6,8,9 without repetition? How\nmany of these are odd numbers?",
+        "options": [
+          "120",
+          "360",
+          "280",
+          "180"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "120",
+        "explanation": "Using the permutation formula,\nHere,\nThus,\nTherefore, in 360 ways the 4-digits numbers can be formed using the digit 2,3,4,6,8,9.\nHere, the last digit for the odd numbers will be 3 or 9.\nSo, odd numbers will have the possibility of\nThus, the total number of odd numbers is,\nTherefore, there are 120 odd numbers.\nHence, the answer is the option 1.",
+        "note": null
+      },
+      {
+        "question_number": 9,
+        "type": "mcq",
+        "question_text": "Tangents and drawn to from point P which lies on the line , then\nthe locus of the midpoint of the chord is:",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "",
+        "explanation": "The equation of chord of contact AB is:\nEquation of chord whose midpoint is is:\nComparing both, we get:\nSolving it, we get:\nReplacing with , we get:\nHence, the answer is the option (1).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 10,
+        "type": "mcq",
+        "question_text": "Find the inverse of the matrix .",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": "Use AA-1=I\nhence,\nHence, the answer is option (4).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 11,
+        "type": "mcq",
+        "question_text": "If y = y(x) is the solution of the differential equation xdy +2y = xex,y(1) = 0 then the local\ndx\nmaximum value of the function z(x) = x2y(x)−ex,x ∈ R is :",
+        "options": [
+          "1-e",
+          "0",
+          "1\n2",
+          "4 −e\ne"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "4 −e\ne",
+        "explanation": "dy\nx +2y = xex\ndx\ndy 2\n+( )y = ex\ndx x\nIf = ef2dx = x2\nx\n∴ (x2) = ∫ x2exdx\ny(x2) = ex(x2 −2x+2)+c\nat x = 1,y = 0\n0 = e+c ⇒ c = −e\ny(x)\nz(x) = ex(x2 −2x+2)−e\nx2\nz\nz(x) = ex(x2 −2x+2)−e−ex\nz′(x) = 2ex(x−1)+ex(x−1)2\n= ex(x−1)[x+1]\nThe local maximum of x = −1\nz(−1) = e−1(4)−e = 4 −e\ne\nHence, the correct answer is option (4).",
+        "note": null
+      },
+      {
+        "question_number": 12,
+        "type": "mcq",
+        "question_text": "is equal to",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "",
+        "explanation": "Hence, the answer is the option (1).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 13,
+        "type": "mcq",
+        "question_text": "",
+        "options": [
+          "2",
+          "3",
+          "0",
+          "1"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "2",
+        "explanation": "Hence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 14,
+        "type": "mcq",
+        "question_text": "The locus represented by xy + yz = 0 is:",
+        "options": [
+          "A pair of perpendicular lines",
+          "A pair of parallel lines",
+          "A pair of parallel planes",
+          "A pair of perpendicular planes"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "A pair of perpendicular planes",
+        "explanation": "Given, xy + yz = 0\n=> x (y + z) = 0\n=> x = 0 and y + z = 0\nClearly, the above equations are the equations of planes [of the form ax + by + cz + d = 0]\nAlso, x = 0 has the normal vector ^i\nAnd y+z = 0 has the normal vector ^j+k ^\nAnd the dot product of these two is\n^i(^j+k ^ ) =^i⋅^j+^i⋅k ^\n= 0\nHence, the answer is the Option (4)",
+        "note": null
+      },
+      {
+        "question_number": 15,
+        "type": "mcq",
+        "question_text": "Let S = set of points inside the square, T = the set of points inside the triangle and C = the set of\npoints inside the circle. If the triangle and circle intersect each other and are contained in a square.\nThen",
+        "options": [
+          "S ∩ T ∩ C = φ",
+          "S ∪ T ∪ C = C",
+          "S ∪ T ∪ C = S",
+          "S ∪ T = S ∩ C"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "S ∪ T ∪ C = S",
+        "explanation": "The answer is the option (3)\nFrom the above Venn diagram\nS ∪T ∪C = S\nHence, the answer is the Option (3)",
+        "note": null
+      },
+      {
+        "question_number": 16,
+        "type": "mcq",
+        "question_text": "is equal to",
+        "options": [
+          "",
+          "",
+          "",
+          "None of these"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "Hence, the answer is the option (3).",
+        "note": "Options [1, 2, 3] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 17,
+        "type": "mcq",
+        "question_text": "lim x→1 xs x i − n{ 1 x} , where {x} denotes the fractional part of x , is equal to:",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": "The limit lim xsin{x} does not exist because its left-hand limit and right-hand limit approach completely\nx→1 x−1\ndifferent values.\nHence, the answer is the option (4).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 18,
+        "type": "mcq",
+        "question_text": "The numerically greatest term in",
+        "options": [
+          "",
+          "",
+          "",
+          "none of these"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "",
+        "explanation": "For numerical greatest term\nSo T is the greatest term.\n12\nHence, the answer is the option (1),",
+        "note": "Options [1, 2, 3] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 19,
+        "type": "mcq",
+        "question_text": "If the 7th term in the binomial expansion of , , is equal to 729, then x\ncan be :",
+        "options": [
+          "",
+          "e",
+          "",
+          ""
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "e",
+        "explanation": "Given expansion is\nAccording to the question\nHence, the answer is option 2.",
+        "note": "Options [1, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text."
+      },
+      {
+        "question_number": 20,
+        "type": "mcq",
+        "question_text": "Differentiate the following w.r.t. x :\nex6",
+        "options": [
+          "6x5ex6",
+          "ex66x",
+          "6xex6",
+          "Cannot be determined"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "6x5ex6",
+        "explanation": "Let y = ex6\nThen taking the derivative of the given term,\ndy d\n∴ = ex6 ⋅ (x6)\ndx dx\n= ex6 ⋅6x5\n= 6x5ex6\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 21,
+        "type": "numerical",
+        "question_text": "The area (in sq. units) of the region bounded by the curves x2 +2y−1 = 0,y2 +4x−4 = 0 and\ny2 −4x−4 = 0, in the upper half plane is",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "2",
+        "explanation": "1\nx2 +2y−1 = 0 ⇒ x2 = −2y+1 ⇒ x2 = −2(y− )\n2\nand y2 +4x−4 = 0 ⇒ y2 = −4x+4 ⇒ y2 = −4(x−1)\nand y2 −4x−4 = 0 ⇒ y2 = 4x+4 ⇒ y2 = 4(x+1)\n∣ ∣\n∣ ∣\nRequired area,\n2 4−y2 1 1−x2\n= 2[∫ ( )dy−∫ ( )dx]\n4 2\n0 0\n4 1\n= 2( − ) = 2\n3 3\nHence, the answer is 2.",
+        "note": null
+      },
+      {
+        "question_number": 22,
+        "type": "numerical",
+        "question_text": "Find the value of d if the distance b/w the plane r⋅(2ˆi−3ˆj+5ˆk) = 16 and\n2\nr⋅(2ˆi−3ˆj+5ˆk) = d is √38 unit.\n2",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "54",
+        "explanation": "Planes are parallel\n|d −d |/|n| = √38\n1 2\n|16−d |/√4+9+25 = √38 ⇒ |16−d | = 38\n2 2\nd = 54 or −12\n2\nHence, the answer is 54.",
+        "note": null
+      },
+      {
+        "question_number": 23,
+        "type": "numerical",
+        "question_text": "If ∫ 2x2+5x+9dx = x√x2 +x+1+α√x2 +x+1+βlog x+ 1 +√x2 +x+1 +C,\n√x2+x+1 e 2\nwhere C is the constant of integration, then α+2β is equal to___________.",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "16",
+        "explanation": "We are given:\n∫ 2x2+5x+9 dx = x√x2 +x+1+α√x2 +x+1+βlog x+ 1 +√x2 +x+1 +C\n√x2+x+1 e 2\nWe aim to find α+2β.\n∣ ∣\n∣ ∣\n∣ ∣ ∣ ∣\nStep 1: Express numerator in terms of the derivative of denominator and its components\nLet:\n2x2 +5x+9 = A(x2 +x+1)+B(2x+1)+C\nExpand RHS:\nA(x2 +x+1)+B(2x+1)+C = Ax2 +Ax+A+2Bx+B+C\nGroup like terms:\n= Ax2 +(A+2B)x+(A+B+C)\nEquating coefficients:\nA = 2\n3\nA+2B = 5 ⇒ 2+2B = 5 ⇒ B =\n2\n3 11\nA+B+C = 9 ⇒ 2+ +C = 9 ⇒ C =\n2 2\nStep 2: Break the integral using partial components\n∫ 2x2+5x+9 dx = ∫ A(x2+x+1)+B(2x+1)+C dx\n√x2+x+1 √x2+x+1\n= A∫ √x2 +x+1dx+B∫ 2x+1 dx+C∫ 1 dx\n√x2+x+1 √x2+x+1\nSubstitute values:\n= 2∫ √x2 +x+1dx+ 3 ∫ 2x+1 dx+ 11 ∫ 1 dx\n2 √x2+x+1 2 √x2+x+1\nWe recognize standard integrals:\n- ∫ 2x+1 dx = 2√x2 +x+1\n√x2+x+1\n2\n- Complete the square: x2 +x+1 = (x+ 1) 2 +(√3)\n2 2\nUse standard results:\n∫ √x2 +x+1dx =\nx+1\n2 √x2 +x+1+ 3log x+ 1 +√x2 +x+1 +C\n2 8 2\n∫ 1 dx = log x+ 1 +√x2 +x+1 +C\n√x2+x+1 2\nNow substitute back:\n= 2(\nx+1\n2 √x2 +x+1+ 3log x+ 1 +√x2 +x+1 )+3√x2 +x+1+ 11log x+ 1 +√x2 +x+1\n2 8 2 2 2\nSimplify:\n- Coefficient of √x2 +x+1 is:\n2(x+1 2 ) +3 = x+ 1 +3 = x+ 7 ⇒ α = 7\n2 2 2 2\n- Coefficient of log term:\n2⋅ 3 + 11 = 3 + 11 = 3+22 = 25 ⇒ β = 25\n8 2 4 2 4 4 4\nα+2β = 7 +2⋅ 25 = 7 + 50 = 14+50 = 64 = 16\n2 4 2 4 4 4\nHence, the answer is 16.",
+        "note": null
+      },
+      {
+        "question_number": 24,
+        "type": "numerical",
+        "question_text": "The coefficient of in the expansion of is equal to:",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "52",
+        "explanation": "Expression of Binomial Theorem\n(when n is a natural number)\nThe expression is\nHence, the answer is the option 1.",
+        "note": null
+      },
+      {
+        "question_number": 25,
+        "type": "numerical",
+        "question_text": "cosec−1(cosec(−2π)) = _______________ (in degrees)\n3",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "-60",
+        "explanation": "We know that −2π lies in the second quadrant, where cosec(x) = cosec(−x).\n3\nThus,\ncosec(−2π) = cosec(2π)\n3 3\nThe principal value range of cosec−1(x) is [−π, π], excluding 0 . Therefore, the equivalent angle within this\n2 2\nrange is −π , sincesin(−π) = −sin(π).\n3 3 3\ncosec−1(cosec(−2π)) = −π = 60∘\n3 3\nHence, the answer is 60.",
+        "note": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,1772 @@
+[
+  {
+    "paper_number": 1,
+    "title": "JEE Mains Chemistry Sample Paper 1",
+    "questions": [
+      {
+        "question_number": 1,
+        "type": "mcq",
+        "question_text": "Hydrogen bomb is based on the principle of",
+        "options": [
+          "nuclear fission",
+          "natural radioactivity",
+          "nuclear fusion",
+          "artificial radioactivity"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "nuclear fusion",
+        "explanation": "A hydrogen bomb is based on the principle of Nuclear fusion.\nHence, the answer is the Option (3)",
+        "note": null
+      },
+      {
+        "question_number": 2,
+        "type": "mcq",
+        "question_text": "Which of the following gas is/are evolved upon decomposition of carbonate of alkaline earth metals?",
+        "options": [
+          "O2",
+          "CO2",
+          "Both a and b",
+          "None of these"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "CO2",
+        "explanation": "As we learn\nReaction of carbonate of alkaline earth metals on heating -\nDecompose to give and oxide\n- wherein\nMCO3 ð MO + CO2 á [M- alkaline earth metal]\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 3,
+        "type": "mcq",
+        "question_text": "Directions: In the following questions, a statement if Assertion (A) is followed by a statement of reason\n (R).\n Assertion: The enthalpy of formation of both graphite and diamond is taken to be zero.\n Reason : The enthalpy of formation of are elementary substance in any phase is taken as\n zero.\n Mark the correct choice as:",
+        "options": [
+          "If both assertion and reason are true and reason is correct explanation of assertion",
+          "If both assertion and reason are true but reason is not correct explanation of assertion",
+          "If assertion is true but reason is false",
+          "If both assertion and reason are false"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "If both assertion and reason are false",
+        "explanation": "As we learn\nGraphite is thermodynamically more stable than Cdiamond. The Enthalpy of an element in the most stable\nstate is zero in standard conditions.\ntherefore, both assertion and reason are false.\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 4,
+        "type": "mcq",
+        "question_text": "Correct relationship between free energy change in a reaction and the corresponding\n equilibrium constant Kc is :-",
+        "options": [
+          "ΔG = RT In K c",
+          "−ΔG = RT In K c",
+          "ΔG = RT In K c",
+          "−ΔG = RT In K c"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "−ΔG = RT In K c",
+        "explanation": "As we learn\nG of equilibrium -\n ΔG 0 = −2.303RT log K c\nwherein\nAt Equilibrium\n ΔG = 0\n and Q = K c\n ΔG = ΔG + RT In Q\n m\n At eq , ΔG = 0, Q = K c\n − ΔG = RT In K c\nHence, the answer is option (2).",
+        "note": "Some options appear visually identical after text extraction — likely due to subscripts/superscripts (e.g. ΔG° vs ΔG) not being captured by the text layer; refer to the explanation for the precise relation."
+      },
+      {
+        "question_number": 5,
+        "type": "mcq",
+        "question_text": "Which of the following reaction proceeds nearly to completion ?",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": "As we have learned\nThe composition of the equilibrium mixture when Kc > 1000 -\nIf Kc > 103, products predominate over reactants i.e. if Kc is very large, the reaction proceeds nearly to\ncompletion.\ne.g.\nReactions a,b, and c have a Kc value less than 103, but reaction d has a value greater than 103. We can say\nthis reaction proceeds to completion.\nHence, the answer is the option (4).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 6,
+        "type": "mcq",
+        "question_text": "What is the major product \"P\" of the following reaction ?",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": "As we have learnt,\nReaction of primary amines withNaNO , HCl followed by H O yields alcohols.\n 2 2\nHence, the answer is the option (4)",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 7,
+        "type": "mcq",
+        "question_text": "In which of the following species is the underlined carbon having sp hybridisation?\n 3",
+        "options": [
+          "CH 3 COOH",
+          "CH 3 CH 2 OH",
+          "CH 3 COCH 3",
+          "CH 2 = CH − CH 3"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "CH 3 CH 2 OH",
+        "explanation": "In molecules\n(i)\n(iii) and\n(iv)\nThe carbon atom has multiple bonds,\nonly (ii) has sp3 hybridization.\nIf the atom has 4 sigma bond without lone pair then the atom is sp2 hybridised.\nIn CH − CH − OH both C atom is sp hybridised.\n 3 2\n 3\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 8,
+        "type": "mcq",
+        "question_text": "If two molecule are very near to each other then which type of force is working between\n them",
+        "options": [
+          "Attractive force",
+          "Repulsive force",
+          "Either attractive or repulsive",
+          "none of these"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "Repulsive force",
+        "explanation": "As we learn\nRepulsive forces -\nMolecules exert repulsive forces when they are very near to each other.\n-Hence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 9,
+        "type": "mcq",
+        "question_text": "The diffusion coefficient of an ideal is proportional to its mean free path and mean speed.\n The absolute temperature of an ideal gas is increased 8 times, and its pressure 4 time. As a\n result, the diffusion coefficient of this gas increases A time. The value of A is -",
+        "options": [
+          "4",
+          "2",
+          "8",
+          "10"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "2",
+        "explanation": "Rate of diffusion\nRate of diffuaion\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 10,
+        "type": "mcq",
+        "question_text": "The major product in the following reaction is",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "",
+        "explanation": "carboxylic acid in presence of anhydride will not react with carboxylic acid present in benzene ring . it will\nreact with alcohol and form ester group .\n Hence , the answer is the option (2).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 11,
+        "type": "mcq",
+        "question_text": "In the following sequence of reactions,\n P+I 2 Mg HCHO H2 O\n−\n−\n−\n−\nCH 3 CH 2 OH → A → B → C → D rs ether\n the compound D is",
+        "options": [
+          "propanal",
+          "butanal",
+          "n-butyl alcohol",
+          "n-propyl alcohol."
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "n-propyl alcohol.",
+        "explanation": "As we learnt in\n Test for alcohols by Victor - Meyer's test -\n Reagents used\n P + I 2 , AgNO 2 , HNO 2 , NaOH\n - wherein\n 1\n ∘\n alcohol → red color\n 2\n ∘\n alcohol → blue colon\n 3\n ∘\n alcohol → No action\n The reaction of Haloalkanes with Mg in the presence of ether - Grignard reagent is obtained\n - wherein\n P2 I2 Mg HCHO\n H2 O\n−\n−\n−\nCH 3 CH 2 OH → CH 3 CHH 2 I → CH 3 CH 2 MgI → CH 3 CH 2 CH 2 OMgI\n dry ather\n CH 3 CH 2 CH 2 OH + Mg(OH)I\n CH 3 CH 2 CH 2 OH\n ( n - propylachohol)\n Hence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 12,
+        "type": "mcq",
+        "question_text": "The magnetic momet ( in μ ) B of\n [N i( dimethylglyxoimate ) 2 ] complex is closed to:\n (A) 5.37 (B) 0.00\n (C) 1.73 (D) 2.25",
+        "options": [
+          "(A)",
+          "(B)",
+          "(C)",
+          "(D)"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "(B)",
+        "explanation": "Solution:\nAs we know:\n rs [N i( dimethylglyxoimate ) 2 ] = [N i(DM G) 2 ]\nNi\n 2+\n with strong field ligand (DMG) form low spin complex.\nSo, number of unpaired electron will be=0\nSo,\n m = √ n(n + 2)BM\nKeeping value of n in it. We get,\n m = √ n(n + 2)BM = 0\nSo, magnetic moment=0\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 13,
+        "type": "mcq",
+        "question_text": "Find enthalpy of sublimation A(s) → A(g) If, enthalpy of formation of A(s) is -54 Kcal and\n that of A(g) is −42Kcal",
+        "options": [
+          "-12 Kcal",
+          "+12 Kcal",
+          "-24 Kcal",
+          "+24 Kcal"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "+12 Kcal",
+        "explanation": "As we have learnt,\n(ΔH ) Sublimation\n= −42 − (−54)\n= +12Kcal\n = ΔH f , (Ag) − ΔH f , (As)\nHence ,the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 14,
+        "type": "mcq",
+        "question_text": "In which of the following ionization processes, the bond order has increased and the\n magnetic behaviour has changed?",
+        "options": [
+          "+\n N2 → N2",
+          "+\n C2 → C\n 2",
+          "+\n NO → NO",
+          "+\n O2 → O2"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "+\n NO → NO",
+        "explanation": "Bond order is defined as one half the difference between the number of electrons present in the bonding\nand the antibonding orbitals.\n N b −N a\nBond Order =\n 2\nMolecular orbital configuration of\n 2 ∗ 2 2 ∗ 2 2 2 2 ∗ 1\n O 2 ⇒ σ1s σ 1s σ2s σ 2s σ2p z π2p x π2p y π 2p x\n 1\n π ∗ 2p y\n ⇒ paramagnetic\n Bond order = 10−6\n 2\n = 2\n 10 − 6\n Bond order = = 2\n 2\n + 2 ∗ 2 2 ∗ 2 2 2 2 ∗ 1\n O ⇒ σ1s σ 1s σ2s σ 2s σ2p π2p π2p π 2p\n 2 z x y x\n ⇒ paramagnetic\n 10 − 5\n Bond order = = 2.5\n 2\n 2~\n 2 ∗ 2 ∗ 2 2 2 2\n N 2 ⇒ σ1s σ 1s σ2s σ 2s π2p x π2p y π2p z\n ⇒ paramagnetic\n 10 − 4\n Bond order = = 3\n 2\n + 2 ∗ 2 2 ∗ 2 2 2\n N ⇒ σ1s σ 1s σ2s σ 2s π2p x π2p y π2\n 2\n ⇒ paramagnetic\n 9 − 4\n Bond order = = 2.5\n 2\n 2 ∗ 2 2 ∗ 2 2 2\n C 2 ⇒ σ1s σ 1s σ2s σ 2s π2p x π2p y\n ⇒ diamagnetic\n 8 − 4\n Bond order = = 2\n 2\n + 2 ∗ 2 2 ∗ 2 2 1\n C2 ⇒ σ1s σ 1s σ2s σ 2s π2p π2p\n x y\n ⇒ paramagnetic\n 7 − 4\n Bond order = = 1.5\n 2\n 2 ∗ 2 2 ∗ 2 2 2 2 1\n NO ⇒ σ1s σ 1s σ̄2s σ 2s σ2p z π2p x π2p y π ∗ 2p x\n ⇒ paramagnetic\n 10 − 5\n Bond order\n = 2.5 =\n 2\n–\n + 2 ∗ 2 2 ∗ 2 2 2 2\nNO ⇒ σ1s σ 1s σ2s σ 2s σ2p s π2p x π2p y\n ⇒ diamagnetic.\n Bond order = 10−4\n 2\n = 3\n Hence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 15,
+        "type": "mcq",
+        "question_text": "According to MO theory, number of species/ions from the following having identical bond\n order is_______.",
+        "options": [
+          "3",
+          "-",
+          "-",
+          "-"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "3",
+        "explanation": "We know,\n have the same bond order.\nHence, the answer is the option (1).",
+        "note": "Some options appear visually identical after text extraction — likely due to subscripts/superscripts (e.g. ΔG° vs ΔG) not being captured by the text layer; refer to the explanation for the precise relation."
+      },
+      {
+        "question_number": 16,
+        "type": "mcq",
+        "question_text": "If the true value of a quantity is 3g, which of the following values are most precise?",
+        "options": [
+          "2.98g, 2.97g",
+          "3.01g, 2.99g",
+          "2.94g, 2.97g",
+          "2.97g, 2.99g"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "2.98g, 2.97g",
+        "explanation": "Since 2.98g & 2.97g are closest to each other for the same quantity, thus they are most precise for the\ngiven value.\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 17,
+        "type": "mcq",
+        "question_text": "The green pigment chlorophyll found in plants contains which element :",
+        "options": [
+          "Na",
+          "Mg",
+          "AI",
+          "Ca"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "Mg",
+        "explanation": "As we learn\nBiological Significance of Magnesium -\n1. Cofactor of many enzymes that utilize ATP in phosphate transfer.\n2. Chlorophyll contains magnesium.\n3. Acts as a fuel for the production of ATP.\n4. Required for the stability and proper functioning of DNA.\n5. Maintain healthy electrolytic balance.\nChlorophyll is the green pigment found in plants. It is a metal complex in which Mg is the metal.\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 18,
+        "type": "mcq",
+        "question_text": "In the lead chamber process the catalyst is",
+        "options": [
+          "NO",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "NO",
+        "explanation": "As we have learned,\nLead chamber process -In this process, SO2 is oxidised to SO3 by the oxides of nitrogen and the SO3 thus\nformed is dissolved in steam to form H2So4.\nHence, the answer is the option (1).",
+        "note": "Options [2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text."
+      },
+      {
+        "question_number": 19,
+        "type": "mcq",
+        "question_text": "Five moles of an ideal gas at 1 bar and 298K is expanded into vacuum to double the volume.\n The work done is:",
+        "options": [
+          "CV(T2 – T1)",
+          "",
+          "",
+          "zero"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "zero",
+        "explanation": "The expansion is done in a vacuum that is in the absence of ext. pressure.\nIf ext. pressure = 0\nSo, Work Done = zero\nHence, the answer is the option (4).",
+        "note": "Options [2, 3] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text."
+      },
+      {
+        "question_number": 20,
+        "type": "mcq",
+        "question_text": "The gas produced on heating MnO2 with conc. HCl is:",
+        "options": [
+          "CI2",
+          "H2",
+          "O2",
+          "O3"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "CI2",
+        "explanation": "This reaction can be analysed by redox:\n +2\nMnO 2 + HCl → Mn + Cl 2\nSince Cl will reduce MnO and will get oxidise to Cl . As\n −\n 2 2 Cl − has reducing agent. Hence the answer is\nthe option (1).",
+        "note": null
+      },
+      {
+        "question_number": 21,
+        "type": "numerical",
+        "question_text": "In 120 gm aqueous solution (density = 1gm /ml) , 30 gm CH3COOH is present then molality of\n solution (in m) will be:",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "5.555",
+        "explanation": "As we learn\nThe relation between concentration terms\n x solute × 1000\nm =\n x solvent × M 1\n-wherein\nM1 = Molecular Mass of Solvent\nx solute = mole f raction of solute\nx solvent = mole f raction of solvent\n x solute × 1000\nm =\n x solvent × M 1\n is the molar mass of the solvent.\nM1\nm =\n 1\n 2\n ×1000\n =\n 50\n 5×18 9\n=5.555\nHence, the answer is 5.555",
+        "note": null
+      },
+      {
+        "question_number": 22,
+        "type": "numerical",
+        "question_text": "The equilibrium constant Kc at 298 K for the reaction is 100. Starting with\n an equimolar solution with concentrations of A, B, C and D all equal to 1 M, the equilibrium\n concentration of D is ____ . (Nearest integer)",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "182",
+        "explanation": "From the expression we have,\nHence, the answer is (182).",
+        "note": null
+      },
+      {
+        "question_number": 23,
+        "type": "numerical",
+        "question_text": "Data given for the following reaction is as follows :\n Substance\n The minimum temperature in at which the reaction becomes spontaneous is____________\n (Integer answer)",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "964",
+        "explanation": "For the reaction,\nFor spontaneity,\nFor minimum temperature,\nHence, the answer is (964).",
+        "note": null
+      },
+      {
+        "question_number": 24,
+        "type": "numerical",
+        "question_text": "The mole fraction of ethylene glycol (C2H6O2) in an aqueous solution containing 10% of\n C2H6O2 by mass",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "0.0312",
+        "explanation": "Mole Fraction =\n Moles of solute\n Moles of solute + Moles of solvent\n $\nmolar mass of ethylene glycol (C H O ) = 62\n 2 6 2\n100 g of solution containing 10 g of C H O and 90 gH O.\n 2 6 2 2\nmoles of C H O = 10\n = 0.161\n 2 6 2\n 62\nmoles of H O =\n 2\n 90\n = 5\n 18\n 0.161\nMole f raction of ethylene glycol =\n 0.16145 $\n= 0.0312\nHence, the answer is 0.0312",
+        "note": null
+      },
+      {
+        "question_number": 25,
+        "type": "numerical",
+        "question_text": "1 mole of occupies a volume of 350 ml at 300 K and 50 atm pressure. Calculate the\n compressibility factor of the gas.",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "0.711",
+        "explanation": "We have given:\nP = 50 atm\nV = 350 ml or 0.350 L\nn = 1 mole\nT = 300 K\nNow, for the compressibility factor, we know:\nHence, the answer is (0.711).",
+        "note": null
+      }
+    ]
+  },
+  {
+    "paper_number": 2,
+    "title": "JEE Mains Chemistry Sample Paper 2",
+    "questions": [
+      {
+        "question_number": 1,
+        "type": "mcq",
+        "question_text": "Consider the reaction given below\n The given reaction is named as",
+        "options": [
+          "Benzillic acid rearrangement",
+          "Benzoin condensation",
+          "Cannizaro reaction",
+          "Aldol condensation"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "Benzillic acid rearrangement",
+        "explanation": "The above reaction is named as Benzillic acid rearrangement in which Benzil undergoes rearrangement\nto form Benzillic Acid.\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 2,
+        "type": "mcq",
+        "question_text": "A vessel at 1000 K contains CO2 with a pressure of 0.5 atm. Some of the CO2 is converted\n into CO on the addition of graphite. If the total pressure at equilibrium is 0.8 atm, the value\n of K is",
+        "options": [
+          "1.8 atm",
+          "3 atm",
+          "0.3 atm",
+          "0.18 atm"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "1.8 atm",
+        "explanation": "Given,\nInitial pressure 0.5 atm 0\nPressure at equilibrium 0.5-x\n rs 2x\nTotal Pressure = 0.5 - x + 2x = 0.8\nx = 0.3\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 3,
+        "type": "mcq",
+        "question_text": "E 2 = +0.34 V\n Cu +∣Cu\n o\n E 2 = −0.76 V\n Zn +∣Zn\n Identify the incorrect statement from the options below for the above cell:",
+        "options": [
+          "If Eext > 1.1 V, e- flows from Cu to Zn",
+          "If Eext > 1.1 V, Zn dissolves at Zn electrode and Cu deposits at Cu electrode",
+          "If Eext < 1.1 V Zn dissolves at anode and Cu deposits at cathode",
+          "If Eext = 1.1 V, no flow of e- or current occurs"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "If Eext > 1.1 V, Zn dissolves at Zn electrode and Cu deposits at Cu electrode",
+        "explanation": "We know,\n o o o\nE = E − E\n cell right lef t\n o\nE cell = 0.34 − (−0.76)\n o\nE = 1.10volt\n cell\nIncorrect statement: If Eext > 1.1 V, Zn dissolves at the Zn electrode, and Cu deposits at the Cu electrode.\nHence, the answer is the option (2)",
+        "note": null
+      },
+      {
+        "question_number": 4,
+        "type": "mcq",
+        "question_text": "The percentage of copper and oxygen in samples of CuO obtained by different methods\n were found to be the same.\n This illustrates the law of",
+        "options": [
+          "Constant proportions",
+          "Conservation of mass",
+          "Multiple proportions",
+          "Reciprocal proportions"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "Constant proportions",
+        "explanation": "Irrespective of the source, a compound will have the same composition as its constituent elements. This\nis the statement of the Law of definite or constant proportions.\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 5,
+        "type": "mcq",
+        "question_text": "Heat of solution of anhydrous CuSO is -15.9 Kcal and that of\n 4\n CuSO , 5H Ois 2.8Kcal, then heat of hydration of CuSOS will be :-\n 4 2 4",
+        "options": [
+          "-15.9 Kcal",
+          "-13.1 Kcal",
+          "+13.1 Kcal",
+          "-18.7 Kcal"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "-18.7 Kcal",
+        "explanation": "As we learn\nEnthalpy of Hydration -\nAmount of enthalpy evolved during hydration of 1 mole anhydrous compound.\n- wherein\n CuSO 4 + 5H 2 O → CuSO 4 .5H 2 O; ΔH = −78.2 kJ\nGiven,\n CuSO 4 + aq → CuSO 4 .5H 2 O(aq); ΔH = −15.5Kcal\n CuSO 4 .5H 2 O + aq → CuSO 4 .5H 2 O(aq); ΔH = +2.8Kcal\nNow, subtracting equation (2) from equation (1)\n CuSO 4 + 5H 2 O → CuSO 4 .5H 2 O; ΔH = −15.9 − 2.8 = −18.7Kcal\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 6,
+        "type": "mcq",
+        "question_text": "Aniline dissolved in dilute HCl is reacted with sodium nitrite at 0 C. This solution was added\n ∘\n dropwise to a solution containing an equimolar mixture of aniline and phenol in dilute HCl.\n The structure of the major product is:",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "Aniline dissolved in dilute HCl when reacted with sodium nitrite at 0 C forms Benzene Diazonium\n ∘\nChloride.\nWhen this solution is added dropwise to a solution containing an equimolar mixture of aniline and phenol\nin dilute HCl and diazotization occurs with aniline in the acidic medium.\nIt is to be noted that diazotization occurs with phenol in a slightly basic medium, which converts it to the\nmore activated Phenoxide ion,\nHence, the answer is the option (3).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 7,
+        "type": "mcq",
+        "question_text": "Match List-I with List-II.\n Choose the correct answer from the options given\n below :",
+        "options": [
+          "(A)-(II), (B)-(I), (C)-(III), (D)-(IV)",
+          "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+          "(A)-(I), (B)-(II), (C)-(IV), (D)-(III)",
+          "(A)-(II), (B)-(III), (C)-(I), (D)-(IV)"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+        "explanation": "(A) dG = VdP − SdT\nConstant pressure\n dG = −SdT\n ∂G\n ( ) = −S\n ∂ T\n p\n(B) dH = (dq) p = nCpdT\n ∂H\n ( ) = Cp\n ∂ T\n p\n(C) dG = VdP − SdT\nAt constant temperature rs dG = VdP\n ∂G\n ( ) = V\n ∂P\n T\n(D) dU = nC dT = (q)\n V V\n ∂U\n ( ) = Cv\n ∂ T\n v\nHence, the correct answer is option (2).",
+        "note": null
+      },
+      {
+        "question_number": 8,
+        "type": "mcq",
+        "question_text": "The shape of XeOF is\n 2",
+        "options": [
+          "Triangular Planar",
+          "Tetrahedral",
+          "Pyramidal",
+          "T-shaped"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "T-shaped",
+        "explanation": "As we learnt\nStructure of XeOF2 -\nsp3d hybridised and T-shaped structure.\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 9,
+        "type": "mcq",
+        "question_text": "Which one of the following compounds of Group-14 elements is not known?",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "Out of the given complexes, does not exist due to steric reasons.\nSi and Cl belong to the same period and it is not possible to arrange 6 chloride ligands around the silicon\ncenter.\nHence, the answer is the option (3).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 10,
+        "type": "mcq",
+        "question_text": "Consider the reaction given below which lead to the formation of major products (P) and (Q)\n as given below\n Which of the following correctly represents the structures of (P) and (Q) respectively?",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "",
+        "explanation": "The reactions are given below\nThe reaction of alcohols with HX usually proceeds viathe formation of and its rearrangement. This\ncan sometimes lead to a change in the carbon skeleton as shown above\nThe reaction of alcohols with Thionyl chloride involves the substitution of OH group with the Cl group\nwithout any rearrangement\nHence, the answer is the option (2).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 11,
+        "type": "mcq",
+        "question_text": "A is :",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "",
+        "explanation": "As we have learned\nPreparation of Nitrobenzene medium -\nIt is prepared by nitration of benzene by nitrating mixture conc. HNO and conc. H SO . At 50 − 60 C\n 3 2 4\n ∘\n- wherein\n Benzene + Nitrating mixture → Nitrobenzene\nBenzene can be nitrated with a mixture of concentrated nitric acid and concentrated sulphuric acid at\ntemprature below 60 C ∘\nHence, the answer is the option (1).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 12,
+        "type": "mcq",
+        "question_text": "Which of the following is/are biotic components?",
+        "options": [
+          "Atmosphere",
+          "Hydrosphere",
+          "Both a & b",
+          "plants and animals"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "plants and animals",
+        "explanation": "Biotic living components - Plants and animals\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 13,
+        "type": "mcq",
+        "question_text": "which of the following plots of ln k vs ( 1\n t\n ) are correct?",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "",
+        "explanation": "∘ ∘ ∘\n ΔG = −RT ln k = ΔH − T ΔS\n ∘ ∘\n ΔS ΔH\n ln k = =\n R RT\nA plot of ln k vs (1/7) and slope\n ∘ ∘\n ΔS −ΔH\n will be a straight line with intercept\n R R\nHence, the answer is the option (1)",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 14,
+        "type": "mcq",
+        "question_text": "Which of the following will react with CHCl + alc. KOH ? 3",
+        "options": [
+          "Adenine and Proline",
+          "Thymine and Proline",
+          "Adenine and Lysine",
+          "Adenine and Thymine"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "Adenine and Lysine",
+        "explanation": "alc. KOH group.\nCHCl 3 +\n reacts with those compounds which have\n − NH 2\nOnly Lysine and Adenine have −NH group.\n 2\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 15,
+        "type": "mcq",
+        "question_text": "The basic character of hydroxides of alkaline earth metals is in the order:",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "",
+        "explanation": "Down the group in IIA group basicity increases with increases in metallic character.\n Hence, the answer is the option (2).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 16,
+        "type": "mcq",
+        "question_text": "Solution of II A group precipitate in dil. when treated with becomes blue\n because of the presence of",
+        "options": [
+          "Mg",
+          "Cd",
+          "Bi",
+          "Cu"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "Cu",
+        "explanation": "reacts with and forms the tetra amine complex which has deep blue\n colour.\n Hence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 17,
+        "type": "mcq",
+        "question_text": "The reaction in which the hybridization of the underlined atom is affected is:",
+        "options": [
+          "Disproportionation\n−\nH 3 PO 2 →",
+          "420 K\n−\nH 2 SO + NaCl →\n– 4",
+          "+\n H\n−\nNH 3 →",
+          "XeF 4 + SbF 5 ⟶\n –"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "XeF 4 + SbF 5 ⟶\n –",
+        "explanation": "The reactions will be -\nSo, the hybridization of the underlined atom Xe is affected.\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 18,
+        "type": "mcq",
+        "question_text": "The overall order of reaction between X & Y is 3. Which of the following rate equation must\n be correct, if on doubling the concentration of Y, the rate of reaction gets doubled?",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "",
+        "explanation": "Since the order of the reaction is 3, options 1 and 3 can not be true as the order is 2 and 4 respectively as\nper those options.\nFurther, it is given that the rate of the equation gets doubled when the concentration of Y is doubled\nwhich means order of reaction concerning reactant Y. Hence,\nHence, the answer is the option (2).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 19,
+        "type": "mcq",
+        "question_text": "The cell,\n was allowed to be completely discharged at 298 K .The relative concentration of\n is",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": "From the Nernst equation, we can write\nWhen the cell is completely discharged,\nHence, the answer is the option (4).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 20,
+        "type": "mcq",
+        "question_text": "Which of the following group shows -I effect",
+        "options": [
+          "−\n −COO",
+          "−COOH",
+          "−\n −O",
+          "−CH 3"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "−COOH",
+        "explanation": "As we learned\n-I - effect (Negative inductive effect) -\nThose atoms or group of atoms having more tendency to displace e - towards itself as compared to\nHydrogen atom is called Negative Inductive effect\n- wherein\n−COO\n −\n , −O\n −\n , - R (alkyl groups)\nshows +I effect. -CWH shows -I effect.\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 21,
+        "type": "numerical",
+        "question_text": "The total number of geometrical isomers possible for an octahedral complex of the type\n [M A B C ] is2 2 2\n (M = transition metal; A, B and C are monodentate ligands)",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "5",
+        "explanation": "The total number of geometrical isomers for [M A B C ] 2 2 2\nTotal 5 geometrical isomers are possible for [M A B C ]2 2 2\nHence, the answer is 5",
+        "note": null
+      },
+      {
+        "question_number": 22,
+        "type": "numerical",
+        "question_text": "2.7Kg of each of water and acetic acid are mixed, The freezing point of the solution will be\n −x C. Consider the acetic acid does not dimerise in water, nor dissociates in water x =\n ∘\n ___________ (nearest integer)\n [Given : Molar mass of water = 18 g mol , acetic acid = 60 g mol\n −1 −1\n ]\n Kf −1\n H 2 O : 1.86 K kg mol\n Kf acetic acid : 3.90 K kg mol −1\n freezing point : H O = 273 K, acetic acid = 290 K]\n 2",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "31",
+        "explanation": "As moles of water > moles of CH COOH water is solvent.\n 3\n ∘\nT F − (T F ) = KF × M\n S\n 2700/60\n0 − (T F ) = 1.86 ×\n S 2700/1000\n ∘\n( TF ) = −31 C.\n S\nHence, the answer is (31).",
+        "note": null
+      },
+      {
+        "question_number": 23,
+        "type": "numerical",
+        "question_text": "The number of chiral alcohol (s) with molecular formula C H O is ___________.\n 4 10",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "1",
+        "explanation": "The number of possible alcohol structures with molecular formula C H 4 10\n O are\nHence, the answer is 1.",
+        "note": null
+      },
+      {
+        "question_number": 24,
+        "type": "numerical",
+        "question_text": "A hydrocarbon C H5 12\n gives only one monochloride on photochemical chlorination. Identify\n the compound.",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "-",
+        "explanation": "(CH3)4C gives only one product .",
+        "note": null
+      },
+      {
+        "question_number": 25,
+        "type": "numerical",
+        "question_text": "The following results were obtained during kinetic studies of the reaction\n 2A + B→Product:\n Experiment [A] [B] Initial rate of\n reaction\n (in mole L- (in mole L-\n 1) 1) (in mole L-1min-1)\n I 0.10 0.20 6.93 X 10-3\n II\n rs 0.10 0.25 6.93 X 10-3\n III 0.20 0.30 1.386 X 10-2\n The time (in minutes) required to consume half of A is:",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "5",
+        "explanation": "As we know that:\nrate =\nSo, we get y = 0 after solving 1 and 2\nThen\nAfter doing (1)/(3) then\nNow, the Half-Life Formula for the reaction,\nIn reaction, 2A is the reactant. So, Half-Life 10 min will be for 2A.\nNow, For half-life of A will be = 10/2 = 5 min.\nHence, the answer is the option (1).",
+        "note": null
+      }
+    ]
+  },
+  {
+    "paper_number": 3,
+    "title": "JEE Mains Chemistry Sample Paper 3",
+    "questions": [
+      {
+        "question_number": 1,
+        "type": "mcq",
+        "question_text": "When NH4OH is added to a salt solution in the process of NH4Cl, A gelatinous white\n precipitate is formed which confirms the presence of",
+        "options": [
+          "Pb+2",
+          "Cu+2",
+          "Al+3",
+          "Cr+3"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "Al+3",
+        "explanation": "as we learn\nTest of Aluminum Ion -\nAl(OH) 3 is amphoteric which dissolved in NaOH\n − −\nAl(OH) 3 + OH → [Al(OH) 4 ]\n[Al(OH) 4 ]\n −\n on reaction with NH Cl gives white Al(OH)\n 4 3\n[Al(OH) 4 ]\n −\n + NH\n +\n 4\n → Al(OH) 3 + NH 3 ( White )\n- wherein\nwhite gelatinous Al(OH) Con firm the Al\n 3\n 3+\nAl\n +3\n + NH 4 OH → Al (OH 3 ) gelatinous white\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 2,
+        "type": "mcq",
+        "question_text": "The rate equation for the reaction is found to be : rate The\n correct statement in relation to this reaction is that the",
+        "options": [
+          "unit of must be s-1",
+          "is a constant",
+          "rate of formation of C is twice the rate of disappearance of A",
+          "value of k is independent of the initial concentrations of A and B"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "value of k is independent of the initial concentrations of A and B",
+        "explanation": "Rate= k[A] [B]\nAccording to the rate law equation, the order of reaction concerning A and concerning B is the first order.\nSo, Order of the reaction = 1 + 1 = 2.\nFor second-order reaction -\nAnd\nThe half-life period is not constant. It is inversely proportional to the concentration of reactants.\nAnd\nThe rate of formation of C is one-half the rate of disappearance of A.\nSo, the value of k is independent of the initial concentration of A and B, it changes when the temperature\nchanges.\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 3,
+        "type": "mcq",
+        "question_text": "compound (A) is :",
+        "options": [
+          "",
+          "(CH) 3 − CCl − C − (CH 3 )\n 3",
+          "(CH) 2 Cl − CH 2 − C(CH 3 )\n 3",
+          "Both (1) and (2)"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "",
+        "explanation": "As we learn\nFrom alkyl halide -\nAlkyl halides on heating with alcoholic potash eliminate one molecule of Hydrogen acid to form alkene.\n- wherein\n - elimination reaction\nHence, the answer is the option (1).",
+        "note": "Options [1] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 4,
+        "type": "mcq",
+        "question_text": "The order of tendency of formation of hydride is",
+        "options": [
+          "C > Si > Ge > Sn >Pb",
+          "Pb > Sn > Ge > Si > C",
+          "C > Pb > Sn > Ge> Si",
+          "Pb > Ge > Sn > Si >C"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "C > Si > Ge > Sn >Pb",
+        "explanation": "As we have learnt,\nMembers of the Carbon family form covalent hydrides of type . Its formation tendency decreases\ndown the group due to the lessening the bond energy.\nThe order of tendency of formation of hydride is\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 5,
+        "type": "mcq",
+        "question_text": "A solution of m-chloroaniline, m-chlorophenol and m-chlorobenzoic acid in ethyl acetate\n was extracted initially with a saturated solution of NaHCO3 to give fraction A. The leftover\n organic phase was extracted with dilute NaOH solution to give fraction B. The final organic\n layer was labelled as fraction C. Fractions A, B and C contain respectively:",
+        "options": [
+          "m-chlorobenzoic acid, m-chloroaniline and m-chlorophenol",
+          "m-chlorobenzoic acid, m-chlorophenol and m-chloroaniline",
+          "m-chlorophenol,m-chlorobenzoic acid and m-chloroaniline",
+          "m-chloroaniline ,m-chlorobenzoic acid and m-chlorophenol"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "m-chlorobenzoic acid, m-chlorophenol and m-chloroaniline",
+        "explanation": "As we have learnt,\nCarboxylic acids react with NaHCO while Phenol and Aniline do not.\n 3\nOut of phenol and aniline, only Phenol reacts with NaOH.\nTherefore, the given reactions occur as follows:\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 6,
+        "type": "mcq",
+        "question_text": "Particles of the gases are constantly colliding with each other and the walls of the container,\n Which of the following is correct option",
+        "options": [
+          "motion is random",
+          "collisions are elastic",
+          "there is no net loss of energy",
+          "All options are correct"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "All options are correct",
+        "explanation": "Kinetic Theory of Gases -\n Explanation:\n1. Gas particles are in constant random motion.\n2. They collide elastically with each other and with the walls of the container.\n3. These collisions with the walls are responsible for the pressure exerted by the gas\n Particles of gas are always in constant and random motion.\n Hence, the answer is option (4).",
+        "note": null
+      },
+      {
+        "question_number": 7,
+        "type": "mcq",
+        "question_text": "What is the electronic configuration of calcium ion (Ca 2+\n )",
+        "options": [
+          "2, 8",
+          "2, 8, 2",
+          "2, 8, 4",
+          "2, 8, 8"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "2, 8, 8",
+        "explanation": "The atomic number of calcium is 20 , so its electronic configuration is 2, 8, 8, 2, and it has 2 electrons in\n the outermost shell.\n Therefore to form calcium ion (Ca ) 2+\n Calcium will lose 2 electrons and its configuration becomes 2, 8, 8.\n Hence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 8,
+        "type": "mcq",
+        "question_text": "Which of the following is true about chemical cells?",
+        "options": [
+          "Convert chemical energy to electrical energy",
+          "most batteries are chemical cells",
+          "i and ii",
+          "none"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "i and ii",
+        "explanation": "Chemical Cells - The cells in which electrical energy is produced from the energy change accompanying\nchemical reactions or a physical process are known as chemical cells. Chemical cells convert chemical\nenergy to electrical energy\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 9,
+        "type": "mcq",
+        "question_text": "The of different types of half cells are as follows :\n (Where E is the electromotive force)\n Which of the above half cells would be preferred to be used as reference electrode?",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "of different half cells are given which represents the change in EMF of a cell with temperature.\nA cell showing lesser variation of EMF with respect to temperature is preferred as it can be used over\na wide range of temperatures without much deviation from the standard EMF of a cell.\nHere, is lowest for Half cell \"C\" which is\nHence, the most preferable half-cell to be used as a reference electrode is C.\nHence, the answer is the option (3).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 10,
+        "type": "mcq",
+        "question_text": "Which of the following statements is correct?",
+        "options": [
+          "Gluconic acid can form cyclic (acetal/hemiacetal) structure",
+          "Gluconic acid is a dicarboxylic acid",
+          "Gluconic acid is obtained by oxidation of glucose with",
+          "Gluconic acid is a partial oxidation product of glucose"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "Gluconic acid is a partial oxidation product of glucose",
+        "explanation": "Gluconic acid is obtained by partial oxidation of glucose by mild oxidising agents like Tollen's reagent or\nFehling solution or Bromine water.\nGluconic acid can not form cyclic hemiacetal or acetal.\nIt is to be noted that Glucose reacts with strong oxidising agents to form Saccharic acid.\nTherefore, Option(4) is correct.",
+        "note": null
+      },
+      {
+        "question_number": 11,
+        "type": "mcq",
+        "question_text": "can be separated from by addition of",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "is amphoteric and it is because of this reason it is soluble in . It dissolves in the excess\nof the reagent to form Sodium Aluminate.\n is basic and it does not dissolve in and hence can be used to separate\n from .\nHence, the answer is the option (3).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 12,
+        "type": "mcq",
+        "question_text": "What is the composition of baryta-water?",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "",
+        "explanation": "Baryta-water contains which is used as a reagent and to detect .\nHence, the answer is the option (1).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 13,
+        "type": "mcq",
+        "question_text": "Choose the correct option regarding H-bond",
+        "options": [
+          "H2O -inter molecular H- bonding",
+          "- Intermolecular H- bonding",
+          "CH3-COOH -intermolecular H- bonding",
+          "All the above"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "All the above",
+        "explanation": "as we learn\nHydrogen Bonding -\nThe attractive force binds the hydrogen atom of one molecule with the electronegative ( F, O, N ) atom of\nanother molecule.\n- wherein\nIt is of two type\n1. Intermolecular and\n2. Intramolecular\nIntramolecular H-bonding is the bonding within a molecule. whereas intermolecular H-bonding is the\nbonding with two or more molecules. Thus, all the given options have intermolecular hydrogen bonding.\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 14,
+        "type": "mcq",
+        "question_text": "The correct sequence of correct reagents for the following transformation is :-",
+        "options": [
+          "(i) Fe, HCl (ii) Cl , HCl,\n 2\n ∘ +\n (iii) NaNO 2 , HCl, 0 C (iv)H 2 O/H",
+          "(i) Fe, HCl\n (ii) NaNO 2 , HCl, 0 C\n ∘\n +\n (iii) H 2 O/H (iv) Cl 2 , FeCl 3",
+          "(i) Cl 2 , FeCl 3 (ii) Fe, HCl\n ∘ +\n (iii) NaNO 2 , HCl, 0 C (iv)H 2 O/H",
+          "∘\n (i)Cl 2 , FeCl 3 (ii)NaNO 2 , HCl, 0 C\n +\n (iii) Fe, HCl (iv)H 2 O/H"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "(i) Cl 2 , FeCl 3 (ii) Fe, HCl\n ∘ +\n (iii) NaNO 2 , HCl, 0 C (iv)H 2 O/H",
+        "explanation": "The given conversion can be carried out as\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 15,
+        "type": "mcq",
+        "question_text": "Consider the following reactions,\n (i) NaNO /HCl, 0 − 5 C\n 2\n ∘",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": "Hence, the answer is the option (4).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 16,
+        "type": "mcq",
+        "question_text": "In a 5 Ltr vessel 3 moles of N2 (g) are taken at 300 K . The pressure of gas will be :-",
+        "options": [
+          "20 atm",
+          "2 atm",
+          "14.4 atm",
+          "1.44 atm"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "14.4 atm",
+        "explanation": "As we learned\nRelation between pressure and concentration -\nP V = nRT\n n\nor P = RT\n V\nor P = CRT\nR = 0.0831 bar inter /molK\n- wherein\nP is pressure in Pa. C is the concentration in mol / litre. T is the temperature in kelvin\nP V = nRT\n nRT\nP =\n V\n 3 × 0.08 × 300\n=\n 5\n= 14.4 atm\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 17,
+        "type": "mcq",
+        "question_text": "The order of magnitude of ionic radii of ions",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": "As we have learned,\nIn isoelectronic species, as the positive charge increases, the radii decrease due to an increase in the\neffective nuclear charge.\nThus the correct order of radius is\n rs .\nHence, the answer is the option (4).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 18,
+        "type": "mcq",
+        "question_text": "Amongst the following elements whose electronic configurations are given below, the one\n having the highest ionization enthalpy is",
+        "options": [
+          "2 1\n [N e]3s 3p",
+          "2 3\n [N e]3s 3p",
+          "2 2\n [N e]3s 3p",
+          "10 2 3\n [Ar]3d 4s 4p"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "2 3\n [N e]3s 3p",
+        "explanation": "Explanation: As compared to partially filled orbital, half-filled p-orbital is more stable. Hence opt(ii).\nHence, the answer is the Option (2)",
+        "note": null
+      },
+      {
+        "question_number": 19,
+        "type": "mcq",
+        "question_text": "If a reaction follows the Arrhenius equation, the plot Ink vs 1/(RT) gives a straight line with a\n gradient ( -y) unit. The energy required to activate the reactant is:",
+        "options": [
+          "-y unit",
+          "y/R unit",
+          "y unit",
+          "yR unit"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "y unit",
+        "explanation": "Arrhenius Equation\n rs k = Ae\n −E n /RT\n Ea\n ln k = ln A −\n RT\nslope of ln K vs 1\n RT\n = −y = −E a\n ∴ Ea = y\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 20,
+        "type": "mcq",
+        "question_text": "The reaction of formaldehyde with grignard reagent gives",
+        "options": [
+          "Secondary alcohol",
+          "Primary alcohol",
+          "Tertiary alcohol",
+          "all of these"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "Primary alcohol",
+        "explanation": "As we learned\nReaction of Aldehydes and Ketones with Grignard reagent -\n– With formaldehyde gives primary alcohol\n– With aldehyde gives secondary alcohol\n– With ketone gives tertiary alcohol\n- wherein\nHCHO + CH 3 MgBr → CH 3 CH 2 − OH\n ⊕\n H\n 3\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 21,
+        "type": "numerical",
+        "question_text": "An X molal solution of a compound in benzene has mole fraction of solute equal to 0.2. The\n value of X is",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "3.2",
+        "explanation": "Relation between concentration terms (Molality & Mole fraction) -\n- wherein\nx = 3.2\nHence, the answer is (3.2).",
+        "note": null
+      },
+      {
+        "question_number": 22,
+        "type": "numerical",
+        "question_text": "Consider the graph of Gibbs free energy G vs extent of reaction. The number of statement/s\n from the following which are true with respect to points (a), (b) and (c) is_______\n A. Reaction is spontaneous at (a) and (b)\n B. Reaction is at equilibrium at point (b) and non- spontaneous at point (c)\n C. Reaction is spontaneous at (a) and non- spontaneous at (c)\n D. Reaction is non-spontaneous at (a) and (b)",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "2",
+        "explanation": "At point a : Slope = –ve\n dG = –ve\n ⇒ spontaneous\nAt point b : Slope = 0\n dG = 0\n ⇒ equilibrium\nAt point c: Slope = +ve\n dG = +ve\n ⇒ non-spontaneous\nHence, the answer is (2).",
+        "note": null
+      },
+      {
+        "question_number": 23,
+        "type": "numerical",
+        "question_text": "The oxidation state of S in H SO is +n. What is the value of n?\n 2 4",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "6",
+        "explanation": "As we have learned,\n is a covalent molecule with sulphur in a +6 oxidation state\nH 2 SO 4\nHydrogen (H ) : +1\nOxygen (O) : -2\n2(H ) + 1(S) + 4(O) = 0\n2(+1) + x + 4(−2) = 0\n2 + x − 8 = 0\nx − 6 = 0\nx = +6\nHence, the answer is 6.",
+        "note": null
+      },
+      {
+        "question_number": 24,
+        "type": "numerical",
+        "question_text": "The number of isomers of Co (diethylene triamine) Cl3 is",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "2",
+        "explanation": "[CO( diethylene triamine )Cl ] 3\nWe know that methyl triamine is a tridentate symmetrical ligand.\n[m(AAA) 2 ]Cl 3 type\nThis type of molecule only has GI i.e, Cis and trans.\nPos exist in a molecule, so the type is not an optical isomer.\nHence, the answer is 2.",
+        "note": null
+      },
+      {
+        "question_number": 25,
+        "type": "mcq",
+        "question_text": "The physical state of Xenon is :",
+        "options": [
+          "Monoatomic gas",
+          "diatomic gas",
+          "solid",
+          "liquid"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "Monoatomic gas",
+        "explanation": "As we have learnt,\nPhysical state -\nAll are monoatomic gas\n- wherein\nCp\n = 1.66\nCv\nXe is a noble gas. So it is found as a monoatomic gas.\nHence, the answer is the option (1).",
+        "note": null
+      }
+    ]
+  },
+  {
+    "paper_number": 4,
+    "title": "JEE Mains Chemistry Sample Paper 4",
+    "questions": [
+      {
+        "question_number": 1,
+        "type": "mcq",
+        "question_text": "1.1 mole of A and 2.2 moles of B are taken in 1L vessel at equilibrium 0.2 moles of C are\n formed according to given equation\n A + 2B 2C+ D ,then Kc will be",
+        "options": [
+          "0.1",
+          "0.01",
+          "0.001",
+          "1"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "0.001",
+        "explanation": "as we learn\nLaw of Chemical equilibrium -\nA + B ⇌ C + D\nwhere A & B are the reactants, and C & D are the products in balanced chemical equations.\n- wherein\n [C][D]\nKc =\n [A][B]\nKc is the equilibrium constant.\n A 2B 2C D\nt = 0 1.1 2.2 − −\nt = t eq 1.1 − 0.1 2.2 − 0.2 − −\n 1 2 0.2 0.1\nActive Mass\n 1 1 1 1\n 2\n (0.2) (0.1)\nKc = 2\n = 0.001\n (1)(2)\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 2,
+        "type": "mcq",
+        "question_text": "Match the column I with column II\n a) Kohlrausch Law p)\n b) q)\n c) K r)\n d) s)",
+        "options": [
+          "a -r , b- s, c- q , d -p",
+          "a -s , b- r, c- q , d -p",
+          "a -r , b- s, c- p , d -q",
+          "a -s , b- r, c- p , d -q"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "a -r , b- s, c- q , d -p",
+        "explanation": "Kohlrausch's law states that the equivalent conductivity of an electrolyte at infinite dilution is equal to the\nsum of the conductances of the anions and cations. If salt is dissolved in water, the conductivity of the\nsolution is the sum of the conductances of the anions and cations.\nAccording to Kohlrausch's law,\nMolar conductivity is given by,\nThe degree of dissociation is given by,\nSo, Correct Match => a -r, b- s, c- q, d -p\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 3,
+        "type": "mcq",
+        "question_text": "Among the following complexes, the one that can exhibit optical activity is",
+        "options": [
+          "−3\n [CoCl 6 ]",
+          "−\n [Co(en)Cl 4 ]",
+          "cis −[Co(en) Cl ] 2 2\n +",
+          "trans −[Co(en) Cl ] 2 2\n +"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "cis −[Co(en) Cl ] 2 2\n +",
+        "explanation": "(a) [CoCl ] 6\n 3−\n [Ma 6 ] type\nthis compound has POS , COS AOS , so it is optically inactive .\n(b) [Co(en)Cl ] 4\n −\n [M AA a 4 [Co(en)Cl 4 ]\n −\n [MAAa 4 ] type\nThis compound has element of symmetry so this is optically inactive .\n(c) Cis[Co(en) 2 Cl 2 ]\n −\n = [M (AA) 2 a 2 ] type\nthis molecule do not have element of symmetry so it is Op active .\n(d) trans Cis [Co(en) Cl ] 2 2\n [M(AA) 2 a 2 ] type\nthis compound has element of symmetry so o it is optically inactive\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 4,
+        "type": "mcq",
+        "question_text": "Hydrogen bomb is based on the principle of",
+        "options": [
+          "nuclear fission",
+          "natural radioactivity",
+          "nuclear fusion",
+          "artificial radioactivity"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "nuclear fusion",
+        "explanation": "A hydrogen bomb is based on the principle of Nuclear fusion.\nHence, the answer is the Option (3)",
+        "note": null
+      },
+      {
+        "question_number": 5,
+        "type": "mcq",
+        "question_text": "Which of the following can be used to reduce nitro compounds to amine ?\n a) H2/Pd in ethanol\n b) Sn + HCl\n c) Fe + HCl",
+        "options": [
+          "a",
+          "a,b,c",
+          "a,b",
+          "b,c"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "a,b,c",
+        "explanation": "As we have learnt,\nBy Reducing Nitro Compounds -\nThe Nitro group is reduced to NH2 group by Sn + HCl, Fe + HCl or by catalytic hydrogenation.\nAll of the above can be used for this purpose.\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 6,
+        "type": "mcq",
+        "question_text": "Among the following compounds most basic amino acid is :",
+        "options": [
+          "Lysine",
+          "Serine",
+          "Histidine",
+          "Asparagine"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "Lysine",
+        "explanation": "As we have learned in amino acids the PI values of the compounds are\nHistidine: 7.6\nAsparagine: 5.4\nSerine: 5.7\nLysine: 9.8\nTherefore Lysine is the most basic.\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 7,
+        "type": "mcq",
+        "question_text": "Which of the following can act as a reducing agent?",
+        "options": [
+          "SO 3",
+          "SO 2",
+          "TeO 3",
+          "SeO 3"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "SO 2",
+        "explanation": "As we learn\n and TeO cannot act as a reducing agent because the central atom is in its highest oxidation\nSO 2 , SeO 2 2\nstate soSO can act as a reducing agent.\n 2\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 8,
+        "type": "mcq",
+        "question_text": "Time taken for the complete evapouration of a liquid depends on :",
+        "options": [
+          "The nature of the liquid",
+          "The amount of the liquid",
+          "The temperature",
+          "All of these"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "All of these",
+        "explanation": "The Time taken for complete evaporation of a liquid depends on all of these parameters\n1. The nature of the liquid\n2. The amount of the liquid\n3. The temperature\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 9,
+        "type": "mcq",
+        "question_text": "A element x has a body centered cubic structure With a cell edge of 200 pm. The density of\n element is 5 cm . The number of atom present in 300 g of the element x is\n −3",
+        "options": [
+          "4 NA",
+          "20 NA",
+          "15 NA",
+          "25 NA"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "25 NA",
+        "explanation": "Z × M\nρ =\n 3\n a × NA\nz = 2 f or (bcc)\nM =?\n 3\n ρ × a × NA\nM =\n z\n 3\n −10 23\n 5 × (200 × 10 cm) × 6.023 × 10\nM =\n 2\nM = 12 g\n 300\n300 g of element contain → NA × = 25 N A .\n 12\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 10,
+        "type": "mcq",
+        "question_text": "When 262 g of xenon (atomic mass = 131) reacted completely with 152 g of fluoride (atomic\n mass = 19), a mixture of XeF2 and XeF6 was produced. The molar ration XeF2 : XeF6 is",
+        "options": [
+          "1:2",
+          "1:4",
+          "1:1",
+          "1:3"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "1:1",
+        "explanation": "Wt of Xe = 262gm = 2 mole\nWt of F = 152gm = 8 mole\n 2\nTo find the molar ratio of XeF and XeF will be\n 2 6\n Xe + F 2 → XeF 2\n x x\n(Assume x mole of ' Xe ' is reacted to form XeF (x mole ) )\n Xe + 3F 2 → XeF 6\n y\n 3y\n (Assume 'y' mole of 'Xe' is reacted to form 'y' moles of XeF ) 6\n Total Xe = 2 = x + y\n Total F = 6 = x + 3y\n 2\n x and y are 1 and 1\n Hence XeF 2\n =\n XeF 6\n 1\n = 1 : 1\n 1\n Hence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 11,
+        "type": "mcq",
+        "question_text": "In the following reaction ‘X’ is\n Anhy. AlCl 3\n ′\n−\nCH 3 (CH 2 ) CH 3 → ′ X\n 4\n HCl major product\n Δ",
+        "options": [
+          "CH 3 (CH 2 ) CH 2 Cl\n 4",
+          "",
+          "Cl − CH 2 − (CH 2 ) − CH 2 − Cl\n 4",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": "n-alkanes on heating in this presence of anhydrous AlCl and hydrogen chloride gas isomerise to\n 3\n branched-chain alkanes. The major product has one methyl side chain.\nHence, the answer is the option (4).",
+        "note": "Options [2, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 12,
+        "type": "mcq",
+        "question_text": "The red line in lithium atomic spectrum corresponds to which species?",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "",
+        "explanation": "gives the red line in Lithium atomic spectra.\nHence, the answer is the option (2).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 13,
+        "type": "mcq",
+        "question_text": "Which of the following statement is not correct?",
+        "options": [
+          "Hybridization is the mixing of atomic orbitals prior to their combining into molecular orbitals",
+          "hybrid orbitals are formed from two p atomic orbitals and one s atomic orbital",
+          "hybrid orbitals are directed towards the corners of a regular octahedron",
+          "hybrid orbitals are all at to one another"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "hybrid orbitals are all at to one another",
+        "explanation": "orbitals are arranged in a trigonal bipyramidal geometry and as a result, the bond angles are\nand\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 14,
+        "type": "mcq",
+        "question_text": "Which of the following statements is not correct about an order of a reaction.",
+        "options": [
+          "The order of a reaction can be a fractional number.",
+          "Order of a reaction is experimentally determined quantity.",
+          "The order of a reaction is always equal to the sum of the stoichiometric coefficients of reactants in the\n balanced chemical equation for a reaction.",
+          "The order of a reaction is the sum of the powers of the molar concentration of the reactants in the\n rate law expression."
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "The order of a reaction is always equal to the sum of the stoichiometric coefficients of reactants in the\n balanced chemical equation for a reaction.",
+        "explanation": "The answer is option (3). The sum of the powers of the reactant’s concentration is used to determine the\norder of the reaction. The order of a reaction is always equal to the sum of the stoichiometric coefficients\nof the reacting species in the balanced chemical equation.\nHence , the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 15,
+        "type": "mcq",
+        "question_text": "The correct order of repulsive interaction of electron pair :-",
+        "options": [
+          "lp -dp > dp -bp > lp -lp",
+          "dp - bp > lp - bp > lp - lp",
+          "lp -lp > bp - bp > lp - bp",
+          "lp - lp > lp - bp > bp - bp"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "lp - lp > lp - bp > bp - bp",
+        "explanation": "as we learn\nVSEPR Theory -\n1. The shape of the molecule is determined by repulsions between all of the electron pairs present in the\nvalence shell.\n2. Order of repulsion\n lone pair - Lone pair >Lone pair - Bond pair > Bond pair - bond pair\n3 Repulsion among the bond pair is directly proportional to the bond order and electronegativity\ndifference between the central atom and the other atom.\nLp has a high electron cloud so, lp-lp has more repulsion interaction due to electron repulsing other\nelectrons and bp has less electron density than lp.\nHence, the answer is the option (4).",
+        "note": null
+      },
+      {
+        "question_number": 16,
+        "type": "mcq",
+        "question_text": "pKa of a weak acid (HA) and pKb of a weak base (BOH) are 3.2 and 3.4, respectively. The pH\n of their salt (AB) solution is :",
+        "options": [
+          "7.0",
+          "1.0",
+          "7.2",
+          "6.9"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "6.9",
+        "explanation": "It is given that,\n pKa for weak acid = 3.2\n pKb for weak base = 3.4\n We know that for the salt of a weak acid and weak base,\n pH of a salt solution is given by,\n Hence, the answer is an option (4).",
+        "note": null
+      },
+      {
+        "question_number": 17,
+        "type": "mcq",
+        "question_text": "What is the correct sequence of reagents used for converting nitrobenzene into m-\n dibromobenzene ?",
+        "options": [
+          "+\n NaNO 2 HCl KBr H\n−\n−\n−\n−→ / → / → / →",
+          "Sn/HCl Br 2 NaNO 2 NaBr\n−\n−\n−\n−→ / → / → / →",
+          "Br 2 /Fe Sn/HCl NaNO 2 /HCl CuBr/HBr\n−\n−\n−\n−→ / → / → / →",
+          "+\n Sn/HCl KBr Br 2 H\n−\n−\n−\n−→ / → / → / →"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "Br 2 /Fe Sn/HCl NaNO 2 /HCl CuBr/HBr\n−\n−\n−\n−→ / → / → / →",
+        "explanation": "Hence , the answer is the Option (3).",
+        "note": null
+      },
+      {
+        "question_number": 18,
+        "type": "mcq",
+        "question_text": "The freezing point of benzene decreases by 0.450C when 0.2 g of acetic acid is added to 20 g\n of benzene. If acetic acid associates to form a dimer in benzene, the percentage association\n of acetic acid in benzene will be :\n (Kf for benzene = 5.12 K kg mol−1)",
+        "options": [
+          "74.6%",
+          "94.6%",
+          "64.6%",
+          "80.4%"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "94.6%",
+        "explanation": "Given,\nKf for benzene = 5.12 K kg mol−1\nIn benzene,\n t=0 1 -\n t=t 1-\nwhere ß is the degree of association.\nGiven:\n w = 0.2g W = 20 g T = 0.45 K\nAs we know,\nTherefore, observed M = 113.78 (acetic acid)\nThe molecular weight of acetic acid = 60\nThe van't hoff factor is given as,\n% degree of association = 94.5 %\nHence, the answer is an option (2).",
+        "note": null
+      },
+      {
+        "question_number": 19,
+        "type": "mcq",
+        "question_text": "Ammonia forms the complex ion with copper ions in alkaline solutions but\n not in acidic solutions. What is the reason for it?",
+        "options": [
+          "In acidic solutions hydration protects copper ions.",
+          "In acidic solutions protons coordinate with ammonia molecules forming ions and\n molecules are not available.",
+          "In alkaline solutions insoluble is precipitated which is soluble in excess of any alkali.",
+          "Copper hydroxide is an amphoteric substance."
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "In acidic solutions protons coordinate with ammonia molecules forming ions and\n molecules are not available.",
+        "explanation": "In an acidic medium, protons coordinate with molecule of to form and\nhence the lone pair of Nitrogen is not available for donation but in an alkaline medium, the complex is\nstable.\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 20,
+        "type": "numerical",
+        "question_text": "The rate coefficient (k) for a particular reactions is 1.3 X 10-4 M-1 s-1 at 1000C, and 1.3 X 10-3\n M-1 s-1 at 1500C. What\n is the energy of activation (Ea) (in kJ) for this reaction ? (R = molar gas constant = 8.314 JK-1\n mol-1)",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "60",
+        "explanation": "Arrhenius Equation -\nAs we know the relation,\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 21,
+        "type": "numerical",
+        "question_text": "In an experiment, 2.0 moles of was placed in a one-litre flask and the concentration\n of after equilibrium established, was found to be . The equilibrium constant\n at is____________",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "125",
+        "explanation": "The equilibrium can be solved as\nHence, the answer is (125).",
+        "note": null
+      },
+      {
+        "question_number": 22,
+        "type": "numerical",
+        "question_text": "A cube solid is made up of two elements A and B. Element A forms ccp while atoms of\n element B occupy one-third of the tetrahedral voids. What is the formula of the solid?",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "-",
+        "explanation": "Tetrahedral voids is double the ccp atoms.\nccp atoms = A\ntetrahedral voids = 2A\n 1 2\n B = × 2A = A\n 3 3\nRatio of A and B = A\n B\n =\n A\n 2\n A\n =\n 3\n 2\n 3\n Formula = B2 A3",
+        "note": null
+      },
+      {
+        "question_number": 23,
+        "type": "numerical",
+        "question_text": "Write the IUPAC name of the given compound:",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "-",
+        "explanation": "N,2- Dimethylpropan-1-amine",
+        "note": null
+      },
+      {
+        "question_number": 24,
+        "type": "numerical",
+        "question_text": "The minimum number of moles of O2 required for complete combustion of 1 mole of\n propane and 2 moles of butane is ______",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "18",
+        "explanation": "Combustion reaction of 1 mole of propane and 2 moles of butane-\nC 3 H 8 + 5O 2 → 3CO 2 + 4H 2 O\n1 mol 5 mol\n 13\nC 4 H 10 + O 2 → 4CO 2 + 5H 2 O\n 2\n2 mol 13 mol\nSo, Total required mol of O2 = 5 + 13 = 18.\nHence, the answer is (18).",
+        "note": null
+      },
+      {
+        "question_number": 25,
+        "type": "mcq",
+        "question_text": "The major product obtained in the following reaction is:",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "",
+        "explanation": "As we have learned when NaOEt is used as a catalyst it acts as a reducing agent.\nHence, the answer is the option (1).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      }
+    ]
+  },
+  {
+    "paper_number": 5,
+    "title": "JEE Mains Chemistry Sample Paper 5",
+    "questions": [
+      {
+        "question_number": 1,
+        "type": "mcq",
+        "question_text": "The reaction of ozone with oxygen atoms in the presence of chlorine atoms can occur\n through a two-step process shown below :\n O3(g) + Cl•(g) → O2(g) + ClO•(g) ____ (i)\n ki = 5.2 × 109 L mol−1 s−1\n ClO•(g) + O•(g) → O2(g) + Cl•(g) ____ (ii)\n kii = 2.6 × 1010 L mol−1 s−1\n The closest rate constant for the overall reaction O3(g) + O•(g) → 2 O2(g) is :",
+        "options": [
+          "5.2 × 109 L mol−1 s−1",
+          "2.6 × 1010 L mol−1 s−1",
+          "3.1 × 1010 L mol−1 s−1",
+          "1.4 × 1020 L mol−1 s−1"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "5.2 × 109 L mol−1 s−1",
+        "explanation": "The rate constant of the overall reaction depends on the slowest step. Hence equation(i) is the slowest\nstep.\nHence, the answer is an option (1).",
+        "note": null
+      },
+      {
+        "question_number": 2,
+        "type": "mcq",
+        "question_text": "can be prepared by",
+        "options": [
+          "Lead chamber process",
+          "Contact process",
+          "A and b both",
+          "none"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "A and b both",
+        "explanation": "As we have learned,\nManufacture of Sulphuric acid -H2SO4 can be manufactured by following the process.\nLead chamber process.\ncontact process.\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 3,
+        "type": "mcq",
+        "question_text": "The limestone is heated, and we get compound (A) and CO2. Now, (A) is heated with coke\n and (B) is formed. Now, (B) is treated with water. Final we get hydrocarbon. Then what is (A),\n (B) and that hydrocarbon.",
+        "options": [
+          "CaO, CaCO 2 , C 2 H 2",
+          "CaO, Ca(OH) 2 , C 3 H 4",
+          "CaO, CaC 2 , C 2 H 2",
+          "CaC 2 , Ca(OH) 2 , C 3 H 4"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "CaO, CaC 2 , C 2 H 2",
+        "explanation": "As we learn\nPreparation of alkyne from calcium carbide -\nEthyne is prepared by treating calcium carbide with water.\n- wherein\nCaC 2 + 2H 2 O → C 2 H 2 + Ca(OH) 2\nLimestone - CaCO 3\nCaCO 3 → CaO + Co 2\n Δ\n(A)\nCaO 3 + 3C → CaC 2 + Co\nCaC 2 + H 2 O → C 2 H 2 + Ca(OH) 2\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 4,
+        "type": "mcq",
+        "question_text": "NaCl is only soluble in water but when a crown ether is added it is soluble in organic\n solvents. Why?",
+        "options": [
+          "Change in oxidation state.",
+          "Change in polarity.",
+          "Change in charge of anion.",
+          "Change in hydration energy."
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "Change in polarity.",
+        "explanation": "Because of the sequestration of ion with crown ether the polarity of the complex changes and then\nit is soluble in organic solvents too.\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 5,
+        "type": "mcq",
+        "question_text": "The crystal field splitting energy for octahedral and tetrahedral complexes is\n related as",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "The crystal field splitting energy for octahedral and tetrahedral complexes is related as\nThis is because of the following reasons:\n(1) The number of ligands in a tetrahedra complex is 4 whereas that in an octahedral complex is 6. This\naccounts for a factor of roughly\n(2) No ligands directly approach the d- orbitals of the metals in a Tetrahedral field whereas, in an\nOctahedral field, the orbitals directly face the incoming ligands which roughly\naccounts for another factor of .\nHence, the answer is the option (3).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 6,
+        "type": "mcq",
+        "question_text": "If we have 1 mole of P and 3 mole of Cl2, which one is the limiting reagent and how many\n moles of PCl3 are formed?",
+        "options": [
+          "P, 1",
+          "Cl, 0.5",
+          "Cl, 2",
+          "None of these"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "P, 1",
+        "explanation": "As we learnt in\nConcept of limiting reagent and excess reagent -\nThe reactant which gets consumed and thus limits the amount of product formed is called the limiting\nreagent.\nCH4 (g) + 2O2 (g) → CO2 (g) + 2 H2O (g) ;\nIn this reaction, if 1 mole of methane and 1 mole of oxygen are taken then oxygen would be limiting\nreagent.\nThe chemical reaction we have:\nMole Before Reaction 1.0 3.0\nMoles After 0 1.5 1.0\nP is limiting reagent and 1 mole of PCl3 is formed\nHence, the answer is an option (1).",
+        "note": null
+      },
+      {
+        "question_number": 7,
+        "type": "mcq",
+        "question_text": "Which of the following is a sturcture of Lactose ?",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "",
+        "explanation": "As we have learned\n Lactose/ Milk sugar -\n Reducing sugar formed by condensation of one molecule each of galactose and glucose\n - wherein\n It is composed of β − D Galactose and β − D glucose.\n Hence, the answer is the option (1).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 8,
+        "type": "mcq",
+        "question_text": "2[H] HCl in Al\n−\n−\n−→ A → B → C, C 1-Butyne is\n BenzoylPeroxide KOH",
+        "options": [
+          "1-butene",
+          "2-butene",
+          "1-butyne",
+          "2-butyne"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "2-butene",
+        "explanation": "As we learnt in\nReaction of alkyl halide with KOH (alc) -\nβ- elimination reaction take place and produces alkenes.\n- wherein\n CH3CH2Br + KOH( alc. ) → H2C = CH2 + KBr + H2O\nHence, the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 9,
+        "type": "mcq",
+        "question_text": "The correct match between item I and item -II is\n Item-I Item-II\n (drug) (test)\n A chloroxylenol P carbylamine test\n B Norethindrone Q sodium hydrogen carbonate test\n C Sulphapyridine R ferric choride test\n D Penicillamine S Baeyer's test",
+        "options": [
+          "A→R; B→P;C→S;D→Q",
+          "A→Q; B→S;C→P;D→R",
+          "A→R; B→S;C→P;D→Q",
+          "A→Q; B→P;C→S;D→R"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "A→R; B→S;C→P;D→Q",
+        "explanation": "As we have learnt,\n1. carbylamine test - test for primary amines\n2. sodium hydrogen carbonate test - acidic hydrogen\n3. Feric chloride test - test for phenolic functional group\n Chloroxylenol\n4.Bayer's test - Test for unsaturation\n Norethindrone\nHence, the answer is the option (3)..",
+        "note": null
+      },
+      {
+        "question_number": 10,
+        "type": "mcq",
+        "question_text": "The potential energy curve for the H2 molecule as a function of internuclear distance is :",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "",
+        "explanation": "The potential energy curve for H2 molecules is.\nIt will follow the same as\nHence, the answer is the option (2).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 11,
+        "type": "mcq",
+        "question_text": "In qualitative analysis when H S is passed through an aqueous solution of salt acidified\n 2\n with dil. HCl ,, a black precipitate is obtained. On boiling the precipitate with dil. HNO , it\n 3\n forms a solution of blue colour. Addition of excess of aqueous solution of ammonia to this\n solution gives _________.",
+        "options": [
+          "a deep blue precipitate of Cu(OH) 2",
+          "a deep blue solution of [Cu(NH ) ] 3 4\n 2+",
+          "a deep blue solution of Cu(NO ) 3 2",
+          "a deep blue solution of Cu(OH) ⋅ Cu(NO )\n 2 3 2"
+        ],
+        "correct_option_number": 2,
+        "correct_answer": "a deep blue solution of [Cu(NH ) ] 3 4\n 2+",
+        "explanation": "The answer is the option (2). The black precipitate of copper sulfide is formed on passing H S through\n 2\nacidified solution of salt. On boiling with dilute HNO , the precipitate gives a blue color of copper\n 3\nnitrate. In addition of an excess aqueous solution of ammonia, a deep blue-coloured compound is found.\nThe reactions involved are:\n 2+ +\nCu + H 2 S → CuS( black ) + 2H\nCuS + dil. HNO 3 → Cu(NO 3 )\n 2\n 2+\nCu(NO 3 ) + 4NH 3 → [Cu(NH 3 ) ] ( Deep blue )\n 2 4\nHence , the answer is the option (2).",
+        "note": null
+      },
+      {
+        "question_number": 12,
+        "type": "mcq",
+        "question_text": "In the following reaction, ' A ' is",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "Hence, the answer is the option (3).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 13,
+        "type": "mcq",
+        "question_text": "A black precipitate soluble in 50% HNO3 if KI is added a yellow precipitate is formed.The\n yellow ppt. is?",
+        "options": [
+          "Cu2I2",
+          "AgI",
+          "PbI2",
+          "none"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "PbI2",
+        "explanation": "as we learn\nTest of Lead(2+) ion -\nPbCl 2 is soluble in hot water but very much less soluble in cold water.\n 2+ 2−\n Pb + SO → PbSO 4\n 4\n 2+ 2−\n Pb + CrO → PbCrO 4\n 4\n 2+ −\n Pb + 2I → PbI 2\n- wherein\nPbSO is white ppt\n 4\nPbCrO is yellow ppt\n 4\nPbI is yellow ppt\n 2\nHence, the answer is option (3).",
+        "note": null
+      },
+      {
+        "question_number": 14,
+        "type": "mcq",
+        "question_text": "Guess the metal ' A ' that is bad conductor of electricity in both liquid and solid and melts at\n low temperature",
+        "options": [
+          "Copper Sulphide",
+          "Boron",
+          "Antimony",
+          "Carbon tetrachioride"
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "Carbon tetrachioride",
+        "explanation": "CCl 4 is nonpolar solid so it does not conduct electricity neither in liquid not in solid state & melting paint\nof\nCCl 4 is −22.92 C ∘\nHence, the answer is the option (4)",
+        "note": null
+      },
+      {
+        "question_number": 15,
+        "type": "mcq",
+        "question_text": "WHich of the following is an homolytic complex",
+        "options": [
+          "+2\n [Co(NH 3 ) NO 3 ]\n 5",
+          "Cr(NH 3 ) Br 3\n 3",
+          "3+\n [Co(NH 3 ) ]\n 6",
+          "−2\n [Fe(CN) 5 NO]"
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "3+\n [Co(NH 3 ) ]\n 6",
+        "explanation": "As we have learned\nHomolytic and Heterolytic Complex -\nComplex in which a metal is bond to only one kind of donor group is known as homolytic complex.\nComplex in which a metal is bond to more than one kind of donor group is known as heterolytic complex.\n- wherein\nHomolytic complex [Co(NH ) ] 3 6\n 3+\n ]\nHeterolytic complex [Co(NH ) Cl ]\n 3 4 2\nAll the ligands are of same type\nHence, the answer is the option (3).",
+        "note": null
+      },
+      {
+        "question_number": 16,
+        "type": "mcq",
+        "question_text": "is heated in dinitrogen at to produce a white solid that is used as a slow\n nitrogenous fertiliser. What is the solid?",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 3,
+        "correct_answer": "",
+        "explanation": "Hence, the answer is the option (3).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 17,
+        "type": "mcq",
+        "question_text": "Which of the following are aromatic?",
+        "options": [
+          "B and D only",
+          "A and C only",
+          "A and B only",
+          "C and D only"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "B and D only",
+        "explanation": "Hence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 18,
+        "type": "mcq",
+        "question_text": "The correct order of basicity of oxides of vanadium is",
+        "options": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "correct_option_number": 4,
+        "correct_answer": "",
+        "explanation": "The lower the charge on the centre atom, the more the basicity will be.\nHence, the answer is the option (4).",
+        "note": "Options [1, 2, 3, 4] were rendered as images/diagrams in the source PDF and could not be reliably extracted as text. The correct option's content is also image-based; see explanation for the reasoning/answer."
+      },
+      {
+        "question_number": 19,
+        "type": "mcq",
+        "question_text": "Reduction of nitrobenzene by which of the following reagent gives aniline?\n (i) Sn/HCl\n (ii) Fe/HCl\n (iii) H − Pd\n 2\n (iv) Sn/NH OH\n 4",
+        "options": [
+          "(i), (ii) and (iii)",
+          "(i), (ii) and (iv)",
+          "(i), (iii) and (iv)",
+          "(ii), (iii) and (iv)"
+        ],
+        "correct_option_number": 1,
+        "correct_answer": "(i), (ii) and (iii)",
+        "explanation": "-\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 20,
+        "type": "numerical",
+        "question_text": "The co-ordination number of cobalt in the complex [Co(en) Br ]Cl is\n 2 2 2",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "6",
+        "explanation": "The coordination number of Co in the complex [Co(en) Br ]Cl is 6\n 2 2 2\nen (ethylene diamine) is a bidentate ligand while bromine is a monodentate ligand.\nC.N. of Co = 2× number of bidentate ligand +1× number of monodentate ligand\n= 2 × 2 + 1 × 2 = 6\nHence, the answer is 6.",
+        "note": null
+      },
+      {
+        "question_number": 21,
+        "type": "numerical",
+        "question_text": "An average person needs about 10000 kJ energy per day. The amount of glucose (molar\n mass = 180.0 g mol–1) needed to meet this energy requirement is _________ g.",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "667",
+        "explanation": "Total energy required\nEnergy obtained from 1 mole of Glucose\n 2700 kJ is obtained from 180 g Glucose.\n will be obtained from\nHence, the answer is the option (1).",
+        "note": null
+      },
+      {
+        "question_number": 22,
+        "type": "numerical",
+        "question_text": "The number of molecules or ions from the following, which do not have odd number of\n electrons are______\n (A) NO 2\n (B) ICl−\n 4\n (C) BrF 3\n (D) ClO 2\n (E) NO +\n 2\n (D) NO",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "3",
+        "explanation": "ICl\n −\n 4\n , BrF 3 and NO do not have odd number of\n +\n 2\n electron.\nHence, the answer is (3).",
+        "note": null
+      },
+      {
+        "question_number": 23,
+        "type": "numerical",
+        "question_text": "How many moles of ethanol are required for the formation of Mitaldehyde (solid) ?",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "4",
+        "explanation": "As we learnt ,\nPolymerization of acetaldehyde -\nThree molecules of acetaldehyde form paraldehyde used as hypnotic (sleep-inducing drug)\nFour molecules of acetaldehyde form metaldehyde used as fuels in lamps.\nwherein\nHence, the answer is 4",
+        "note": null
+      },
+      {
+        "question_number": 24,
+        "type": "numerical",
+        "question_text": "For complete combustion of methanol\n the amount of heat produced as measured by bomb calorimeter is 726 kJ mol-1. The\n enthalpy of combustion for the reaction is , where is _____________.(Nearest\n integer)\n (Given : )",
+        "options": [],
+        "correct_option_number": null,
+        "correct_answer": "727",
+        "explanation": "Now, the relation between and is given as\nHence, the answer is (727).",
+        "note": null
+      }
+    ]
+  }
+]

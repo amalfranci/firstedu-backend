@@ -1,0 +1,332 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "date": "21st January 2026",
+  "shift": "Morning",
+  "source": "Career Point Kota - Questions & Solutions",
+  "sections": {
+    "Mathematics": {
+      "questions": [
+        {
+          "number": 1,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "If the domain of the function f(x) = cos^-1((2x-5)/(11-3x)) + sin^-1(2x^2-3x+1) is the interval [alpha,beta], then alpha+2beta is equal to:",
+          "options": {
+            "1": "1",
+            "2": "3",
+            "3": "5",
+            "4": "2"
+          },
+          "answer": "2",
+          "solution": "From sin^-1 domain: -1<=2x^2-3x+1<=1 gives x in [0, 3/2]. From cos^-1 domain: -1<=(2x-5)/(11-3x)<=1 gives x in (-infinity,16/5] U [6,infinity). Intersecting both conditions gives x in [0, 3/2]. So alpha=0, beta=3/2, and alpha+2beta = 0 + 2*(3/2) = 3."
+        },
+        {
+          "number": 2,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "The area of the region, inside the ellipse x^2 + 4y^2 = 4 and outside the region bounded by the curves y=|x|-1 and y=1-|x|, is:",
+          "options": {
+            "1": "2(pi-1)",
+            "2": "2pi - 1/2",
+            "3": "3(pi-1)",
+            "4": "2pi - 1"
+          },
+          "answer": "1",
+          "solution": "Required area = area of ellipse - shaded (rhombus) area = pi*2*1 - 4*(1/2*1*1) = 2pi - 2 = 2(pi-1)."
+        },
+        {
+          "number": 3,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "The number of relations, defined on the set {a,b,c,d}, which are both reflexive and symmetric, is equal to:",
+          "options": {
+            "1": "256",
+            "2": "16",
+            "3": "1024",
+            "4": "64"
+          },
+          "answer": "4",
+          "solution": "For reflexive+symmetric relations on a 4-element set, the 4 diagonal pairs are fixed (must be included), and there are 4C2=6 off-diagonal unordered pairs, each independently included or not (with symmetric partner). Number = 1^4 * 2^6 = 64."
+        },
+        {
+          "number": 4,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let a point A lie between the parallel lines L1 and L2 such that its distances from L1 and L2 are 6 and 3 units respectively. Then the area (in sq units) of the equilateral triangle ABC, where points B and C lie on lines L1 and L2 respectively, is:",
+          "options": {
+            "1": "15*sqrt(6)",
+            "2": "27",
+            "3": "21*sqrt(3)",
+            "4": "12*sqrt(2)"
+          },
+          "answer": "3",
+          "solution": "Using sin(theta)=3/a and sin(60+theta)=9/a, solving gives a^2=84. Area of equilateral triangle = (sqrt3/4)*a^2 = (sqrt3/4)*84 = 21*sqrt(3)."
+        },
+        {
+          "number": 5,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let a = -i+2j+2k, b = 8i+7j-3k and c be a vector such that a x c = b. If c.(i+j+k) = 4, then |a+c|^2 is equal to:",
+          "options": {
+            "1": "33",
+            "2": "30",
+            "3": "35",
+            "4": "27"
+          },
+          "answer": "4",
+          "solution": "Let c = c1*i+c2*j+c3*k. From a x c = b: 2c3-2c2=8, c3+2c1=7, c2+2c1=3. From c.(i+j+k)=4: c1+c2+c3=4. Solving: c1=2, c2=-1, c3=3. a+c = i+j+5k, |a+c|^2 = 1+1+25 = 27."
+        },
+        {
+          "number": 6,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let a1,a2,a3,... be a G.P. of increasing positive terms such that a2*a3*a4 = 64 and a1+a3+a5 = 813/7. Then a3+a5+a7 is equal to:",
+          "options": {
+            "1": "3256",
+            "2": "3252",
+            "3": "3244",
+            "4": "3248"
+          },
+          "answer": "2",
+          "solution": "ar*ar^2*ar^3=64 => a^3 r^6=64 => ar^2=4. a+ar^2+ar^4=813/7, with ar^2=4, solving gives r^2=28. Then ar^2+ar^4+ar^6 = ar^2*(1+r^2+r^4) = 4*(1+28+784) = 3252."
+        },
+        {
+          "number": 7,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let c and d be vectors such that |c+d| = sqrt(29) and c x (2i+3j+4k) = (2i+3j+4k) x d. If lambda1, lambda2 (lambda1>lambda2) are the possible values of (c+d).(-7i+2j+3k), then the equation K^2*x^2 + (K^2-5K+lambda1)xy + (3K+lambda2/2)y^2 - 8x + 12y + lambda2 = 0 represents a circle, for K equal to:",
+          "options": {
+            "1": "4",
+            "2": "1",
+            "3": "-1",
+            "4": "2"
+          },
+          "answer": "2",
+          "solution": "c+d = lambda*(2i+3j+4k) with lambda=+-1 (from |c+d|=sqrt29). lambda(-14+6+12) = 4*lambda, giving lambda1=4, lambda2=-4. Substituting into the equation and applying circle conditions (coeff of x^2=coeff of y^2, coeff of xy=0): K^2-5K+4=0 => K=1,4; and K^2=3K-2 => K=1,2. Common value: K=1."
+        },
+        {
+          "number": 8,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let y=y(x) be the solution curve of the differential equation (1+x^2)dy + (y-tan^-1x)dx = 0, y(0)=1. Then the value of y(1) is:",
+          "options": {
+            "1": "2/e^(pi/4) + pi/4 - 1",
+            "2": "2/e^(pi/4) - pi/4 - 1",
+            "3": "4/e^(pi/2) + pi/2 - 1",
+            "4": "4/e^(pi/2) - pi/2 - 1"
+          },
+          "answer": "1",
+          "solution": "dy/dx + y/(x^2+1) = tan^-1(x)/(x^2+1). I.F. = e^(tan^-1 x). Solving by parts: y*e^(tan^-1x) = tan^-1(x)*e^(tan^-1x) - e^(tan^-1x) + c. Using y(0)=1 gives c=2. y(1) = 2/e^(pi/4) + pi/4 - 1."
+        },
+        {
+          "number": 9,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "The number of strictly increasing functions f from the set {1,2,3,4,5,6} to the set {1,2,...,9} such that f(i)!=i for 1<=i<=6, is equal to:",
+          "options": {
+            "1": "21",
+            "2": "27",
+            "3": "22",
+            "4": "28"
+          },
+          "answer": "4",
+          "solution": "Case f(1)=2: 7C5=21 ways. Case f(1)=3: 6C5=6 ways. Case f(1)=4: 5C5=1 way. Total strictly increasing functions with f(i)!=i for all i = 21+6+1 = 28."
+        },
+        {
+          "number": 10,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let f: R -> (0,infinity) be a twice differentiable function such that f(3)=18, f'(3)=0 and f''(3)=4. Then lim(x->1) log_e[(f(2+x)/f(3))^(18/(x-1)^2)] is equal to:",
+          "options": {
+            "1": "1",
+            "2": "9",
+            "3": "2",
+            "4": "18"
+          },
+          "answer": "3",
+          "solution": "The limit T = lim [f(x+2)/f(3)]^(18/(x-1)^2), a 1^infinity form. Taking log and applying L'Hospital's rule twice (using f'(3)=0), we get log_e(T) = f''(2+2)/2 evaluated appropriately = 4/2 = 2."
+        },
+        {
+          "number": 11,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let the foci of a hyperbola coincide with the foci of the ellipse x^2/36 + y^2/16 = 1. If the eccentricity of the hyperbola is 5, then the length of its latus rectum is:",
+          "options": {
+            "1": "12",
+            "2": "16",
+            "3": "96/sqrt(5)",
+            "4": "24*sqrt(5)"
+          },
+          "answer": "3",
+          "solution": "Eccentricity of ellipse e1 = sqrt(1-16/36) = sqrt(5)/3. ae1 = 6*sqrt(5)/3 = 2*sqrt(5) = focal distance = p*e (hyperbola), with e=5 for hyperbola: p*5=2sqrt(5) => p=2/sqrt(5). Using e^2=1+q^2/p^2: 25=1+5q^2/4 => q^2=96/5. Length of latus rectum = 2q^2/p = 96/sqrt(5)."
+        },
+        {
+          "number": 12,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "The value of the integral from -pi/6 to pi/6 of (pi+4x^11)/(1-sin(|x|+pi/6)) dx is equal to:",
+          "options": {
+            "1": "2*pi",
+            "2": "4*pi",
+            "3": "8*pi",
+            "4": "6*pi"
+          },
+          "answer": "2",
+          "solution": "Using the even/odd decomposition, the integral simplifies to 2pi*Integral(0 to pi/6) of 1/(1-sin(x+pi/6)) dx. Substituting t=x+pi/6 and simplifying using 1/(1-sint)=(1+sint)/cos^2t, the integral evaluates via sec^2 and sec*tan antiderivatives to 2pi[sqrt(3)+2-sqrt(3)] = 4*pi."
+        },
+        {
+          "number": 13,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let the mean and variance of 7 observations 2,4,10,x,12,14,y where x>y, be 8 and 16 respectively. Two numbers are chosen from {1,2,3,x-4,y,5} one after another without replacement, then the probability that the smaller number among the two chosen numbers is less than 4, is:",
+          "options": {
+            "1": "3/5",
+            "2": "4/5",
+            "3": "2/5",
+            "4": "1/3"
+          },
+          "answer": "2",
+          "solution": "Mean=8 gives x+y=14. Variance=16 gives x^2+y^2=100. Since (x+y)^2=x^2+y^2+2xy, xy=48. With x>y: x=8, y=6. Set becomes {1,2,3,4,6,5}. Total outcomes choosing 2 without replacement = 6*5=30. P(smaller<4) = 1 - P(smaller>=4) = 1 - 6/30 = 4/5."
+        },
+        {
+          "number": 14,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let (alpha,beta,gamma) be the coordinates of the foot of the perpendicular drawn from the point (5,4,2) on the line r = (-i+3j+k) + lambda(2i+3j-k). Then the length of the projection of the vector alpha*i+beta*j+gamma*k on the vector 6i+2j+3k is:",
+          "options": {
+            "1": "15/7",
+            "2": "4",
+            "3": "18/7",
+            "4": "3"
+          },
+          "answer": "3",
+          "solution": "General point on line: (2lambda-1, 3lambda+3, -lambda+1). AP vector perpendicular to line direction gives lambda=1, so foot = (1,6,0). Vector u = i+6j+0k. Projection onto w=6i+2j+3k: |u.w|/|w| = |6+12+0|/7 = 18/7."
+        },
+        {
+          "number": 15,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let PQ and MN be two straight lines touching the circle x^2+y^2-4x-6y-3=0 at points A and B respectively. Let O be the centre of the circle and angle AOB = pi/3. Then the locus of the point of intersection of the lines PQ and MN is:",
+          "options": {
+            "1": "3(x^2+y^2) - 18x - 12y + 25 = 0",
+            "2": "x^2+y^2 - 12x - 18y - 25 = 0",
+            "3": "x^2+y^2 - 18x - 12y - 25 = 0",
+            "4": "3(x^2+y^2) - 12x - 18y - 25 = 0"
+          },
+          "answer": "4",
+          "solution": "Circle center C(2,3), radius r=4. With angle AOB=pi/3 (half angle 30deg at O), cos30 = r/OR => OR = 8/sqrt(3). Setting OR^2=(h-2)^2+(k-3)^2 = 64/3 gives locus 3(x^2+y^2) - 12x - 18y - 25 = 0."
+        },
+        {
+          "number": 16,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "If the coefficient of x in the expansion of (ax^2+bx+c)(1-2x)^26 is -56 and the coefficients of x^2 and x^3 are both zero, then a+b+c is equal to:",
+          "options": {
+            "1": "1300",
+            "2": "1500",
+            "3": "1403",
+            "4": "1483"
+          },
+          "answer": "3",
+          "solution": "Expanding (1-2x)^26 = sum 26Cr(-2x)^r and matching coefficients: coeff of x^2 gives a-52b+1300c=0; coeff of x^3 gives -52a+1300b-20800c=0; coeff of x gives b-52c=-56. Solving simultaneously: a=1300, b=100, c=3, so a+b+c=1403."
+        },
+        {
+          "number": 17,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "If x^2+x+1=0, then the value of (x+1/x)^4 + (x^2+1/x^2)^4 + (x^3+1/x^3)^4 + ... + (x^25+1/x^25)^4 is:",
+          "options": {
+            "1": "128",
+            "2": "162",
+            "3": "175",
+            "4": "145"
+          },
+          "answer": "4",
+          "solution": "x = omega or omega^2 (cube roots of unity). The sum becomes (omega+omega^2)^4 repeated for non-multiples-of-3 indices (=(-1)^4=1, occurring 17 times) plus (omega^3+omega^6)^4=(1+1)^4=16 type terms occurring 8 times (for multiples of 3). Total = 17*1 + 8*16 = 17+128 = 145."
+        },
+        {
+          "number": 18,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "The value of cosec(10deg) - sqrt(3)*sec(10deg) is equal to:",
+          "options": {
+            "1": "4",
+            "2": "2",
+            "3": "8",
+            "4": "6"
+          },
+          "answer": "1",
+          "solution": "Simplify to [cos10 - sqrt3*sin10]/[sin10*cos10] = 4*[(1/2)cos10 - (sqrt3/2)sin10]/[2sin10cos10] = 4*sin(30-10)/sin20 = 4*sin20/sin20 = 4."
+        },
+        {
+          "number": 19,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "The sum of all the roots of the equation (x-1)^2 - 5|x-1| + 6 = 0, is:",
+          "options": {
+            "1": "4",
+            "2": "3",
+            "3": "1",
+            "4": "5"
+          },
+          "answer": "1",
+          "solution": "Let |x-1|=t: t^2-5t+6=0 => t=2 or t=3. |x-1|=2 gives x=3,-1. |x-1|=3 gives x=4,-2. Roots: 3,-1,4,-2. Sum = 3-1+4-2 = 4."
+        },
+        {
+          "number": 20,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let O be the vertex of the parabola x^2=4y and Q be any point on it. Let the locus of the point P, which divides the line segment OQ internally in the ratio 2:3, be the conic C. Then the equation of the chord of C, which is bisected at the point (1,2), is:",
+          "options": {
+            "1": "5x-y-3=0",
+            "2": "4x-5y+6=0",
+            "3": "x-2y+3=0",
+            "4": "5x-4y+3=0"
+          },
+          "answer": "4",
+          "solution": "Q=(2t,t^2). P divides OQ in ratio 2:3: h=4t/5, k=2t^2/5. Eliminating t gives 5x^2=8y (conic C). Using T=S1 (chord bisected at (1,2)): 5(x)(1)-4(y+2)=5(1)^2-8(2), simplifying gives 5x-4y+3=0."
+        },
+        {
+          "number": 21,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "Let f: R->R be a twice differentiable function such that the quadratic equation f(x)m^2 - 2f'(x)m + f''(x) = 0 in m has two equal roots for every x in R. If f(0)=1, f'(0)=2 and (alpha,beta) is the largest interval in which the function f(log_e(x) - x) is increasing, then alpha+beta is equal to ____.",
+          "answer": "1",
+          "solution": "Equal roots give (f'(x))^2 = f''(x)*f(x), leading to f'(x)/f(x) = f''(x)/f'(x). Integrating twice with initial conditions gives f(x)=e^(2x). Then g(x)=f(lnx-x)=e^(2(lnx-x)); g'(x) has sign of (1-x)/x, positive for x in (0,1]. So alpha=0, beta=1, alpha+beta=1."
+        },
+        {
+          "number": 22,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "Let a1=1 and for n>=1, a_(n+1) = (1/2)a_n + (n^2-2n-1)/(n^2(n+1)^2). Then |sum_{n=1}^{infinity} (a_n - 2/n^2)| is equal to ____.",
+          "answer": "2",
+          "solution": "Rearranging gives a_(n+1) - (1/2)a_n = 2/(n+1)^2 - 1/n^2. Multiplying by 2^(n-1) telescopically and summing gives a_n = 2/n^2 - 1/2^(n-1). So sum(a_n - 2/n^2) = -sum(1/2^(n-1)) = -2, and the absolute value is 2."
+        },
+        {
+          "number": 23,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "Let S = {(m,n): m,n in {1,2,3,...,50}}. If the number of elements (m,n) in S such that 6^m+9^n is a multiple of 5 is p, and the number of elements (m,n) in S such that m+n is a square of a prime number is q, then p+q is equal to ____.",
+          "answer": "1333",
+          "solution": "6^m mod5 = 1 always. 9^n mod5 cycles: needs n odd for the sum to be divisible by 5 pattern; analysis gives p = 50*25 = 1250. For q, m+n in {4,9,25,49} (squares of primes 2,3,5,7): number of (m,n) pairs are 3, 8, 24, 48 respectively, summing to q=83. p+q = 1250+83 = 1333."
+        },
+        {
+          "number": 24,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "For some alpha,beta in R, let A = [[alpha,2],[1,2]] and B = [[1,1],[1,beta]] be such that A^2-4A+2I = B^2-3B+I = O. Then (det(adj(A^3-B^3)))^2 is equal to ____.",
+          "answer": "225",
+          "solution": "Trace(A)=4 gives alpha=2; Trace(B)=3 gives beta=2. Using A^2=4A-2I, compute A^3=14A-8I=[[20,28],[14,20]]. Using B^2=3B-I, compute B^3=8B-3I=[[5,8],[8,13]]. A^3-B^3=[[15,20],[6,7]], determinant=105-120=-15. adj of 2x2 matrix has same determinant magnitude, so |adj(A^3-B^3)|=-15 (or 15), squared gives 225."
+        },
+        {
+          "number": 25,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "6*Integral from 0 to pi of |sin3x + sin2x + sinx| dx is equal to ____.",
+          "answer": "17",
+          "solution": "Simplify sin3x+sin2x+sinx = 2sin2x*cosx+sin2x = sinx(4cos^2x+2cosx) type expression. Substituting cosx=t and splitting the integral into regions where the expression changes sign, evaluating gives the integral = 17."
+        }
+      ]
+    }
+  }
+}

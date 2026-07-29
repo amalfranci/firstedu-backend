@@ -1,0 +1,282 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "date": "24th January 2026",
+  "session": "Morning",
+  "source": "Career Point Ltd.",
+  "sections": {
+    "Mathematics": {
+      "questions": [
+        {
+          "question_number": 1,
+          "question": "If the function f(x) = [e^x(e^(tanx-x)-1) + loge(secx+tanx) - x] / (tanx - x) is continuous at x=0, then the value of f(0) is equal to",
+          "options": {
+            "1": "2",
+            "2": "2/3",
+            "3": "1/2",
+            "4": "3/2"
+          },
+          "answer": 4,
+          "solution": "Applying L'Hospital's rule and simplifying the limit term by term: f(0) = lim[e^tanx + e^x(e^(tanx-x)-1)/tan²x + 1/(secx+1)] = 1 + 0 + 1/2 = 3/2."
+        },
+        {
+          "question_number": 2,
+          "question": "Let a circle of radius 4 pass through the origin O, the points A(-√3a,0) and B(0,-√2b), where a and b are real parameters and ab≠0. Then the locus of the centroid of ΔOAB is a circle of radius",
+          "options": {
+            "1": "5/3",
+            "2": "7/3",
+            "3": "8/3",
+            "4": "11/3"
+          },
+          "answer": 3,
+          "solution": "AB=8 (diameter, since angle AOB=90°) gives 3a²+2b²=64. Centroid G(h,k): h=-√3a/3, k=-√2b/3. Substituting gives 9h²+9k²=64, so x²+y²=64/9, radius=8/3."
+        },
+        {
+          "question_number": 3,
+          "question": "Let the lines L1: r=î+2ĵ+3k̂+λ(2î+3ĵ+4k̂) and L2: r=(4î+ĵ)+μ(5î+2ĵ+k̂) intersect at point R. Let P and Q be points on L1 and L2 respectively such that |PR|=√29 and |PQ|=√(47/3). If P lies in the first octant, then 27(QR)² is equal to",
+          "options": {
+            "1": "340",
+            "2": "360",
+            "3": "320",
+            "4": "348"
+          },
+          "answer": 2,
+          "solution": "Finding intersection gives λ=μ=-1, R(-1,-1,-1). Solving PR²=29 gives λ=0, P(1,2,3). Solving PQ²=47/3 gives μ=-1/3, Q(7/3,1/3,-1/3). (QR)²=120/9, so 27(QR)²=360."
+        },
+        {
+          "question_number": 4,
+          "question": "Let 729,81,9,1,... be a sequence and Pn denote the product of the first n terms. If 2Σ[n=1 to 40](Pn)^(1/n) = (3^α-1)/3^β and gcd(α,β)=1, then α+β is equal to",
+          "options": {
+            "1": "73",
+            "2": "74",
+            "3": "75",
+            "4": "76"
+          },
+          "answer": 1,
+          "solution": "Pn=3^6.3^4.3^2...3^(-2n+8)=3^(n(7-n)). Pn^(1/n)=3^(7-n). Sum of geometric series from n=1 to 40 gives Σ(Pn)^(1/n)=(3^40-1)/(2*3^33), so α=40, β=33, α+β=73."
+        },
+        {
+          "question_number": 5,
+          "question": "Let a=2î+ĵ-2k̂, b=î+ĵ and c=a×b. Let d be a vector such that |d-a|=√11, |c×d|=3 and the angle between c and d is π/4. Then a·d is equal to",
+          "options": {
+            "1": "11",
+            "2": "3",
+            "3": "0",
+            "4": "1"
+          },
+          "answer": 3,
+          "solution": "c=2î-2ĵ+k̂, |c|=3. |c×d|=3 with sinπ/4 gives |d|=√2. Using |d-a|²=11: |a|²+|d|²-2a·d=11 => 9+2-2a·d=11 => a·d=0."
+        },
+        {
+          "question_number": 6,
+          "question": "If the domain of the function f(x) = log(10x²-17x+7)(18x²-11x+1) is (-∞,a)∪(b,c)∪(d,∞)-{e}, then 90(a+b+c+d+e) equals:",
+          "options": {
+            "1": "170",
+            "2": "177",
+            "3": "307",
+            "4": "316"
+          },
+          "answer": 4,
+          "solution": "18x²-11x+1>0 gives x<1/9 or x>1/2. 10x²-17x+7>0 gives x<7/10 or x>1. Also base≠1 excludes x=6/5. Domain: (-∞,1/9)∪(1/2,7/10)∪(1,∞)-{6/5}. 90(1/9+1/2+7/10+1+6/5)=316."
+        },
+        {
+          "question_number": 7,
+          "question": "Let each of the two ellipses E1: x²/a²+y²/b²=1,(a>b) and E2: x²/A²+y²/B²=1,(A<B) have eccentricity 4/5. Let the lengths of latus rectum of E1 and E2 be ℓ1 and ℓ2, such that 2ℓ1²=9ℓ2. If distance between foci of E1 is 8, then distance between foci of E2 is",
+          "options": {
+            "1": "96/5",
+            "2": "32/5",
+            "3": "16/5",
+            "4": "8/5"
+          },
+          "answer": 2,
+          "solution": "2ae=8 => a=5. b²=a²(1-e²)=9. E1: x²/25+y²/9=1, ℓ1=18/5. Using 2ℓ1²=9ℓ2: ℓ2=72/25. For E2 (A<B, so major axis along y): solving gives B=4. Distance between foci=2Be=2(4/5)(4)=32/5."
+        },
+        {
+          "question_number": 8,
+          "question": "The value of (√3cosec20° - sec20°)/(cos20°cos40°cos60°cos80°) is equal to",
+          "options": {
+            "1": "32",
+            "2": "16",
+            "3": "64",
+            "4": "12"
+          },
+          "answer": 3,
+          "solution": "Simplifying: E = [(√3cos20°-sin20°)/(cos20°sin20°)]×16 = [(√3/2 cos20°-1/2 sin20°)×32×2]/(2cos20°sin20°) = sin40°/sin40° × 64 = 64."
+        },
+        {
+          "question_number": 9,
+          "question": "Let S={z∈C: |z-6i|/|z-2i|=1 and |z-8+2i|/|z+2i|=3/5}. Then Σ|z|² is equal to",
+          "options": {
+            "1": "398",
+            "2": "413",
+            "3": "423",
+            "4": "385"
+          },
+          "answer": 4,
+          "solution": "Solving |z-6i|/|z-2i|=1 gives y=4. Solving the second equation gives x²+y²-25x+4y+104=0. Solving simultaneously: z=17+4i and z=8+4i. Σ|z|²=(17)²+4²+8²+4²=385."
+        },
+        {
+          "question_number": 10,
+          "question": "If cotx=5/12 for some x∈(π,3π/2), then sin7x(cos(13x/2)+sin(13x/2))+cos7x(cos(13x/2)-sin(13x/2)) is equal to",
+          "options": {
+            "1": "4/√26",
+            "2": "6/√26",
+            "3": "1/√13",
+            "4": "5/√13"
+          },
+          "answer": 3,
+          "solution": "cotx=5/12 => cosx=-5/13=2cos²(x/2)-1 => cos(x/2)=-2/√13 (2/√13 rejected since x/2 is in second quadrant). Simplifying the expression reduces to cos(x/2)+sin(x/2) = -2/√13+3/√13 = 1/√13."
+        },
+        {
+          "question_number": 11,
+          "question": "Let f(t)=∫[(1-sin(loge t))/(1-cos(loge t))]dt, t>1. If f(e^(π/2))=-e^(π/2) and f(e^(π/4))=αe^(π/4), then α equals",
+          "options": {
+            "1": "-1-√2",
+            "2": "-1-2√2",
+            "3": "1+√2",
+            "4": "-1+√2"
+          },
+          "answer": 1,
+          "solution": "Substituting lnt=x, t=e^x: f(t)=-t·cot(lnt/2)+C. Using f(e^(π/2))=-e^(π/2)cot(π/4)+C=-e^(π/2) gives C=0. Then f(e^(π/4))=-e^(π/4)cot(π/8)=-e^(π/4)(√2+1), so α=-1-√2."
+        },
+        {
+          "question_number": 12,
+          "question": "Let R be a relation defined on the set {1,2,3,4}×{1,2,3,4} by R={((a,b),(c,d)): 2a+3b=3c+4d}. Then the number of elements in R is",
+          "options": {
+            "1": "6",
+            "2": "18",
+            "3": "12",
+            "4": "15"
+          },
+          "answer": 3,
+          "solution": "By systematically checking all (a,b) pairs against the equation 2a+3b=3c+4d for valid (c,d) in {1,2,3,4}, the total count of valid pairs is 12."
+        },
+        {
+          "question_number": 13,
+          "question": "Let A(1,0), B(2,-1) and C(7/3,4/3) be three points. If the equation of the bisector of the angle ABC is αx+βy=5, then the value of α²+β² is",
+          "options": {
+            "1": "8",
+            "2": "5",
+            "3": "13",
+            "4": "10"
+          },
+          "answer": 4,
+          "solution": "AD/DC=AB/BC=3/5 (angle bisector theorem). D=(3/2,1/2). Slope of BD=-3. Line: 3x+y=5. α=3,β=1, α²+β²=10."
+        },
+        {
+          "question_number": 14,
+          "question": "Let S=1/25!+1/(3!23!)+1/(5!21!)+... up to 13 terms. If 13S=2^k/n!, k∈N, then n+k is equal to",
+          "options": {
+            "1": "51",
+            "2": "52",
+            "3": "49",
+            "4": "50"
+          },
+          "answer": 3,
+          "solution": "S=(1/26!)(C(26,1)+C(26,3)+...+C(26,25))=(1/26!)×2^25. So 13S=2^24/25!. n+k=25+24=49."
+        },
+        {
+          "question_number": 15,
+          "question": "Consider an A.P.: a1,a2,...,an; a1>0. If a2-a1=-3/4, an=(1/4)a1, and Σ[i=1 to n]ai=525/2, then Σ[i=1 to 17]ai is equal to",
+          "options": {
+            "1": "476",
+            "2": "952",
+            "3": "238",
+            "4": "136"
+          },
+          "answer": 3,
+          "solution": "d=-3/4. From sum formula, a1n=420. From an=a1+(n-1)d equation, a1=n-1. Solving n(n-1)=420 gives n=21, a1=20. Σ[i=1 to 17]ai=(17/2)[2(20)+16(-3/4)]=17×14=238."
+        },
+        {
+          "question_number": 16,
+          "question": "Let α,β∈R be such that the function f(x)=2α(x²-2)+2βx for x<1, (α+3)x+(α-β) for x≥1 be differentiable at all x∈R. Then 34(α+β) is equal to",
+          "options": {
+            "1": "84",
+            "2": "48",
+            "3": "36",
+            "4": "24"
+          },
+          "answer": 2,
+          "solution": "Continuity: 2α-β+3=2β-2α => 4α-3β+3=0. Differentiability: 4α+2β=α+3 => 3α+2β-3=0. Solving gives α=3/17, β=21/17. 34(α+β)=34×24/17=48."
+        },
+        {
+          "question_number": 17,
+          "question": "From a lot containing 10 defective and 90 non-defective bulbs, 8 bulbs are selected one by one with replacement. Then the probability of getting at least 7 defective bulbs is:",
+          "options": {
+            "1": "7/10^7",
+            "2": "81/10^8",
+            "3": "67/10^8",
+            "4": "73/10^8"
+          },
+          "answer": 4,
+          "solution": "Required probability = P(7 defective, 1 good) + P(8 defective) = [C(8,7)×10^7×90 + 10^8]/100^8 = (72×10^8+10^8)/10^16 = 73/10^8."
+        },
+        {
+          "question_number": 18,
+          "question": "The mean and variance of a data of 10 observations are 10 and 2, respectively. If an observation α in this data is replaced by β, then the mean and variance become 10.1 and 1.99, respectively. Then α+β equals.",
+          "options": {
+            "1": "10",
+            "2": "15",
+            "3": "5",
+            "4": "20"
+          },
+          "answer": 4,
+          "solution": "From mean equations: β-α=1. From variance equations: β²-α²=20, giving (β-α)(β+α)=20, so β+α=20."
+        },
+        {
+          "question_number": 19,
+          "question": "Let A1 be the bounded area enclosed by the curves y=x²+2, x+y=8 and y-axis in first quadrant. Let A2 be the bounded area enclosed by y=x²+2, y²=x, x=2, and y-axis in first quadrant. Then A1-A2 is equal to",
+          "options": {
+            "1": "(2/3)(2√2+1)",
+            "2": "(2/3)(4√2+1)",
+            "3": "(2/3)(√2+1)",
+            "4": "(2/3)(3√2+1)"
+          },
+          "answer": 1,
+          "solution": "A1=∫[0,2](6-x-x²)dx=22/3. A2=∫[0,2](x²+2)dx-(2/3)(2√2)=20/3-4√2/3. A1-A2=2/3+4√2/3=(2/3)(2√2+1)."
+        },
+        {
+          "question_number": 20,
+          "question": "The number of the real solutions of the equation: x|x+3|+|x-1|-2=0 is",
+          "options": {
+            "1": "3",
+            "2": "2",
+            "3": "5",
+            "4": "4"
+          },
+          "answer": 1,
+          "solution": "Splitting into regions x<-3, -3≤x<1, x≥1: Region I gives no valid solutions (both rejected); Region II gives x=-1+√2, -1-√2 (both valid); Region III gives x=-2-√3, -2+√3 (one rejected as x≥1 not satisfied, giving only 1 solution from this case combined). Total valid real solutions = 3."
+        },
+        {
+          "question_number": 21,
+          "question": "Let a differentiable function f satisfy the equation ∫[0,36]f(tx/36)dt=4αf(x). If y=f(x) is a standard parabola passing through the points (2,1) and (-4,β), then β^α is equal to ____.",
+          "answer": "64",
+          "solution": "Substituting tx/36=y transforms the integral equation to f(x)=(α/9)(f(x)+xf'(x)). Solving the resulting differential equation gives f(x)=cx^(9/α - 1). For a standard parabola, 9/α-1=2, so α=3, f(x)=cx². Using (2,1): c=1/4, f(x)=x²/4. Passing through (-4,β): β=4. β^α=4³=64."
+        },
+        {
+          "question_number": 22,
+          "question": "Let a line L passing through P(1,1,1) be perpendicular to the lines (x-4)/4=(y-1)/1=(z-1)/1 and (x-17)/1=(y-71)/1=z/0. Let L intersect the yz-plane at Q. Another line parallel to L passing through S(1,0,-1) intersects the yz-plane at R. Then the square of the area of the parallelogram PQRS is equal to ____.",
+          "answer": "6",
+          "solution": "Direction of L = cross product of the two given line directions = (-1,1,3). Line L: Q=(0,2,4). Parallel line through S: R=(0,1,2). Using vectors PQ=(-1,1,3) and PS=(0,-1,-2), their cross product=(1,-2,1), area=√6, so area²=6."
+        },
+        {
+          "question_number": 23,
+          "question": "The number of numbers greater than 5000, less than 9000 and divisible by 3, that can be formed using the digits 0,1,2,5,9, if repetition is allowed, is ____",
+          "answer": "42",
+          "solution": "Categorizing by digit repetition patterns (all different, 2 alike+2 different, 3 alike+1 different, 2 pairs of alike) satisfying divisibility by 3 and the range constraint, and summing all valid arrangements gives 42."
+        },
+        {
+          "question_number": 24,
+          "question": "Let (2α,α) be the largest interval in which the function f(t)=|t+1|/t², t<0, is strictly decreasing. Then the local maximum value of the function g(x)=2loge(x-2)+αx²+4x-α, x>2, is ____",
+          "answer": "4",
+          "solution": "From the graph of f(t) for t<0, f is decreasing in (-2,-1), so α=-1. g(x)=2loge(x-2)-x²+4x+1. g'(x)=2/(x-2)-2(x-2)=2[-(x-3)(x-1)]/(x-2). Maxima occurs at x=3. g(3)=2loge(1)-9+12+1=4."
+        },
+        {
+          "question_number": 25,
+          "question": "The number of 3×2 matrices A, which can be formed using the elements of the set {-2,-1,0,1,2} such that the sum of all the diagonal elements of A^T A is 5, is ____",
+          "answer": "312",
+          "solution": "Tr(A^TA)=a1²+a2²+a3²+b1²+b2²+b3²=5, using values from {-2,-1,0,1,2}. Counting all valid combinations across different partition cases (e.g., one 2, one 1, four 0s; five 1s and one 0, etc.) and their arrangements gives total 312 matrices."
+        }
+      ]
+    }
+  }
+}

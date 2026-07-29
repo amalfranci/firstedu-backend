@@ -130,6 +130,8 @@ import {
 import { runAnswerCorrectnessPass } from "./answerCorrection.service.js";
 import { runIndependentVerificationPipeline } from "./independentVerification.service.js";
 import { applySymbolicVerificationToQuestions } from "./symbolicVerify.service.js";
+import { isSolverTruthEnabled } from "./solverTruth.service.js";
+import { runConceptCoveragePass } from "./conceptCoverage.service.js";
 import { withStageTiming, recordVerificationTelemetry } from "./verificationTelemetry.service.js";
 import { parkLowConfidenceForHumanReview } from "./humanReviewQueue.service.js";
 import {
@@ -145,6 +147,7 @@ import {
     isFinalizeDifficultyRegenEnabled,
     isFinalizeTopUpEnabled,
     getFinalizeTopUpMaxWaves,
+    getCountOverflowMax,
 } from "./hardQuestionMandate.service.js";
 import {
     buildCompetitiveExamPlanGenerationBlock,
@@ -1983,6 +1986,11 @@ export const finalizeQuestionBankSuggestions = async ({
     topUpWave = 0,
     skipDifficultyAudit = false,
     multipleTopUpCount = 0,
+    /** Requested counts for this section/batch — used to refill after strip. */
+    targetSingleCount = null,
+    targetMultipleCount = null,
+    targetTrueFalseCount = null,
+    generationMode = "default",
 }) => {
     const provider = normalizeGenerationProvider(generationProvider);
     const effectiveDifficulty =
@@ -1997,6 +2005,18 @@ export const finalizeQuestionBankSuggestions = async ({
         allowTopUp &&
         isFinalizeTopUpEnabled() &&
         topUpWavesUsed < topUpBudgetRemaining;
+
+    const countByType = (list = []) => {
+        const out = { single: 0, multiple: 0, true_false: 0, connected: 0 };
+        for (const q of list || []) {
+            const t = String(q?.questionType || "single").toLowerCase();
+            if (t === "multiple") out.multiple += 1;
+            else if (t === "true_false" || t === "truefalse") out.true_false += 1;
+            else if (t === "connected") out.connected += 1;
+            else out.single += 1;
+        }
+        return out;
+    };
 
     /** When top-up can't run, keep near-miss rejects instead of wiping the batch. */
     const DIFFICULTY_KEEP_FLOOR = Math.max(
@@ -2054,9 +2074,9 @@ export const finalizeQuestionBankSuggestions = async ({
                 topic,
                 bankName,
                 difficulty,
-                singleCount: type === "multiple" ? 0 : countForTopUp,
+                singleCount: type === "single" ? countForTopUp : 0,
                 multipleCount: type === "multiple" ? countForTopUp : 0,
-                trueFalseCount: 0,
+                trueFalseCount: type === "true_false" ? countForTopUp : 0,
                 passageCount: 0,
                 passageSingleCount: 0,
                 passageMultipleCount: 0,
@@ -2080,10 +2100,13 @@ export const finalizeQuestionBankSuggestions = async ({
                 genTemperature: resolveGenerationTemperature(provider),
                 allowTopUp: false,
                 forceOneShot:
-                    type === "multiple" || !difficultyResolution?.examCalibrated,
+                    type === "multiple" ||
+                    type === "true_false" ||
+                    !difficultyResolution?.examCalibrated,
                 skipFinalizeDifficultyAudit: !difficultyResolution?.examCalibrated,
                 topUpWave: topUpWave + topUpWavesUsed + 1,
                 difficultyResolution,
+                generationMode,
             });
             const topUpQuestions = unwrapFinalizedQuestions(topUpResult);
             topUpWavesUsed += 1;
@@ -2151,13 +2174,22 @@ export const finalizeQuestionBankSuggestions = async ({
         }
     }
 
+    // Difficulty judge runs AFTER independent solver + SymPy (solver-truth pipeline).
+    // Legacy path (!solverTruth) still judges before verify for backward compatibility.
     let selfAuditResult = { questions: sanitizedInput, rejectedCount: 0, rejected: [] };
+    const deferDifficultyUntilAfterVerify = isSolverTruthEnabled();
     const effectiveSkipDifficultyAudit =
         skipDifficultyAudit ||
         shouldSkipLlmDifficultySelfAudit(difficultyResolution);
-    if (!effectiveSkipDifficultyAudit) {
-        selfAuditResult = await applyDifficultySelfAuditGate(
-            sanitizedInput,
+
+    const runDifficultyJudgeOn = async (inputQuestions) => {
+        let working = inputQuestions;
+        let result = { questions: working, rejectedCount: 0, rejected: [] };
+        if (effectiveSkipDifficultyAudit) {
+            return { questions: working, selfAuditResult: result };
+        }
+        result = await applyDifficultySelfAuditGate(
+            working,
             {
                 topic,
                 bankName,
@@ -2176,89 +2208,97 @@ export const finalizeQuestionBankSuggestions = async ({
                     }),
             }
         );
-        sanitizedInput = selfAuditResult.questions;
-    }
+        working = result.questions;
 
-    if (selfAuditResult.rejectedCount > 0) {
-        if (isRepairOnFailEnabled()) {
-            const repairedSingles = await repairDifficultyRejectedQuestions(
-                selfAuditResult.rejected,
-                { topic, bankName, examProfile: examProfileForGate },
-                {
-                    callLlm: (repairPrompt) =>
-                        callQuestionBankGenerationLLM(repairPrompt, {
-                            generationProvider: provider,
-                            temperature: 0.1,
-                        }),
-                    parseQuestion: (raw, index) =>
-                        parseQuestionBankAIItem(raw, index, "Difficulty repair"),
+        if (result.rejectedCount > 0) {
+            if (isRepairOnFailEnabled()) {
+                const repairedSingles = await repairDifficultyRejectedQuestions(
+                    result.rejected,
+                    { topic, bankName, examProfile: examProfileForGate },
+                    {
+                        callLlm: (repairPrompt) =>
+                            callQuestionBankGenerationLLM(repairPrompt, {
+                                generationProvider: provider,
+                                temperature: 0.1,
+                            }),
+                        parseQuestion: (raw, index) =>
+                            parseQuestionBankAIItem(raw, index, "Difficulty repair"),
+                    }
+                );
+                if (repairedSingles.length) {
+                    working = [...working, ...repairedSingles];
+                    pipelineTrace("FINALIZE_DIFFICULTY_REPAIRED", {
+                        repairedCount: repairedSingles.length,
+                        rejectedCount: result.rejectedCount,
+                    });
+                } else {
+                    const kept = restoreNearMissRejected(
+                        result.rejected,
+                        "repair_empty"
+                    );
+                    if (kept.length) working = [...working, ...kept];
+                    pipelineTrace("FINALIZE_DIFFICULTY_SELF_AUDIT_STRIPPED", {
+                        rejectedCount: result.rejectedCount,
+                        keptNearMiss: kept.length,
+                        minScore: DIFFICULTY_SELF_AUDIT_MIN_SCORE,
+                    });
                 }
-            );
-            if (repairedSingles.length) {
-                sanitizedInput = [...sanitizedInput, ...repairedSingles];
-                pipelineTrace("FINALIZE_DIFFICULTY_REPAIRED", {
-                    repairedCount: repairedSingles.length,
-                    rejectedCount: selfAuditResult.rejectedCount,
+            } else if (
+                (isFinalizeDifficultyRegenEnabled() ||
+                    difficultyResolution?.examCalibrated ||
+                    deferDifficultyUntilAfterVerify) &&
+                result.rejectedCount <= Math.max(1, GEMINI_QB_REPAIR_BATCH_SIZE)
+            ) {
+                const regenCount = result.rejectedCount;
+                pipelineTrace("FINALIZE_DIFFICULTY_REGEN", {
+                    count: regenCount,
+                    minScore: DIFFICULTY_SELF_AUDIT_MIN_SCORE,
+                    afterVerify: deferDifficultyUntilAfterVerify,
                 });
+                const regenQuestions = await runShallowReplacementBatch(regenCount, {
+                    extraExclude: result.rejected
+                        .map((r) => r.question?.questionText)
+                        .filter(Boolean),
+                    traceEvent: "FINALIZE_DIFFICULTY_REGEN",
+                });
+                if (regenQuestions.length) {
+                    working = [...working, ...regenQuestions];
+                    pipelineTrace("FINALIZE_DIFFICULTY_REGEN_DONE", {
+                        added: regenQuestions.length,
+                        requested: regenCount,
+                    });
+                } else {
+                    const kept = restoreNearMissRejected(
+                        result.rejected,
+                        "regen_empty_or_budget"
+                    );
+                    if (kept.length) working = [...working, ...kept];
+                    pipelineTrace("FINALIZE_DIFFICULTY_REGEN_EMPTY", {
+                        requested: regenCount,
+                        keptNearMiss: kept.length,
+                    });
+                }
             } else {
                 const kept = restoreNearMissRejected(
-                    selfAuditResult.rejected,
-                    "repair_empty"
+                    result.rejected,
+                    "stripped_no_regen"
                 );
-                if (kept.length) sanitizedInput = [...sanitizedInput, ...kept];
+                if (kept.length) working = [...working, ...kept];
                 pipelineTrace("FINALIZE_DIFFICULTY_SELF_AUDIT_STRIPPED", {
-                    rejectedCount: selfAuditResult.rejectedCount,
+                    rejectedCount: result.rejectedCount,
                     keptNearMiss: kept.length,
                     minScore: DIFFICULTY_SELF_AUDIT_MIN_SCORE,
+                    regenEnabled: isFinalizeDifficultyRegenEnabled(),
                 });
             }
-        } else if (
-            (isFinalizeDifficultyRegenEnabled() ||
-                difficultyResolution?.examCalibrated) &&
-            selfAuditResult.rejectedCount <=
-                Math.max(1, GEMINI_QB_REPAIR_BATCH_SIZE)
-        ) {
-            const regenCount = selfAuditResult.rejectedCount;
-            pipelineTrace("FINALIZE_DIFFICULTY_REGEN", {
-                count: regenCount,
-                minScore: DIFFICULTY_SELF_AUDIT_MIN_SCORE,
-            });
-            const regenQuestions = await runShallowReplacementBatch(regenCount, {
-                extraExclude: selfAuditResult.rejected
-                    .map((r) => r.question?.questionText)
-                    .filter(Boolean),
-                traceEvent: "FINALIZE_DIFFICULTY_REGEN",
-            });
-            if (regenQuestions.length) {
-                sanitizedInput = [...sanitizedInput, ...regenQuestions];
-                pipelineTrace("FINALIZE_DIFFICULTY_REGEN_DONE", {
-                    added: regenQuestions.length,
-                    requested: regenCount,
-                });
-            } else {
-                const kept = restoreNearMissRejected(
-                    selfAuditResult.rejected,
-                    "regen_empty_or_budget"
-                );
-                if (kept.length) sanitizedInput = [...sanitizedInput, ...kept];
-                pipelineTrace("FINALIZE_DIFFICULTY_REGEN_EMPTY", {
-                    requested: regenCount,
-                    keptNearMiss: kept.length,
-                });
-            }
-        } else {
-            const kept = restoreNearMissRejected(
-                selfAuditResult.rejected,
-                "stripped_no_regen"
-            );
-            if (kept.length) sanitizedInput = [...sanitizedInput, ...kept];
-            pipelineTrace("FINALIZE_DIFFICULTY_SELF_AUDIT_STRIPPED", {
-                rejectedCount: selfAuditResult.rejectedCount,
-                keptNearMiss: kept.length,
-                minScore: DIFFICULTY_SELF_AUDIT_MIN_SCORE,
-                regenEnabled: isFinalizeDifficultyRegenEnabled(),
-            });
         }
+        return { questions: working, selfAuditResult: result };
+    };
+
+    if (!deferDifficultyUntilAfterVerify) {
+        const early = await runDifficultyJudgeOn(sanitizedInput);
+        sanitizedInput = early.questions;
+        selfAuditResult = early.selfAuditResult;
     }
 
     let normalized = reconcileQuestionBankWithIndependentVerify(sanitizedInput).map(
@@ -2299,10 +2339,25 @@ export const finalizeQuestionBankSuggestions = async ({
                     topic,
                     bankName,
                     examProfile: examProfileForVerify,
+                    subject,
+                    sectionName,
+                    difficulty: effectiveDifficulty,
+                    skipExplanationVerifier:
+                        isSolverTruthEnabled() ||
+                        process.env.AI_QB_DEFER_EXPLANATION_VERIFY === "1" ||
+                        process.env.AI_QB_DEFER_EXPLANATION_VERIFY === "true",
                     callLlm: (prompt) =>
                         callQuestionBankGenerationLLM(prompt, {
                             generationProvider: solverProvider,
-                            temperature: 0.1,
+                            temperature: 0,
+                        }),
+                    callLlmSecondary: (prompt) =>
+                        callQuestionBankGenerationLLM(prompt, {
+                            generationProvider: resolveVerificationStageProvider(
+                                "solver_b",
+                                solverProvider
+                            ),
+                            temperature: 0,
                         }),
                 }),
             { provider: solverProvider, topic, bankName }
@@ -2321,6 +2376,24 @@ export const finalizeQuestionBankSuggestions = async ({
                 dropped: verification.droppedCount,
                 byType: verification.droppedByType,
             });
+            // Regenerate only failed questions (not the full batch).
+            if (
+                isSolverTruthEnabled() &&
+                verification.droppedCount <=
+                    Math.max(1, GEMINI_QB_REPAIR_BATCH_SIZE)
+            ) {
+                const replacements = await runShallowReplacementBatch(
+                    verification.droppedCount,
+                    {
+                        excludeFrom: normalized,
+                        traceEvent: "FINALIZE_SOLVER_TRUTH_REGEN",
+                    }
+                );
+                if (replacements.length) {
+                    normalized = [...normalized, ...replacements];
+                    verificationStats.regenerated += replacements.length;
+                }
+            }
         }
     } catch (err) {
         pipelineTrace("FINALIZE_INDEPENDENT_VERIFICATION_FAILED", {
@@ -2332,8 +2405,10 @@ export const finalizeQuestionBankSuggestions = async ({
     }
 
     try {
+        const beforeSympy = normalized.length;
         const symbolic = await applySymbolicVerificationToQuestions(normalized, {
             subject,
+            sectionName,
         });
         normalized = (symbolic.questions || normalized).filter(
             (q) => q?._verification?.symbolicOk !== false
@@ -2345,10 +2420,86 @@ export const finalizeQuestionBankSuggestions = async ({
                 failed: symbolic.failed,
                 checked: symbolic.checked,
             });
+            pipelineTrace("FINALIZE_SYMBOLIC_VERIFY_REJECTED", {
+                failed: symbolic.failed,
+                kept: normalized.length,
+                before: beforeSympy,
+            });
+            // Regenerate only SymPy failures (Math).
+            if (
+                isSolverTruthEnabled() &&
+                symbolic.failed <= Math.max(1, GEMINI_QB_REPAIR_BATCH_SIZE)
+            ) {
+                const replacements = await runShallowReplacementBatch(
+                    symbolic.failed,
+                    {
+                        excludeFrom: normalized,
+                        traceEvent: "FINALIZE_SYMPY_REGEN",
+                    }
+                );
+                if (replacements.length) {
+                    normalized = [...normalized, ...replacements];
+                    verificationStats.regenerated += replacements.length;
+                }
+            }
         }
     } catch (err) {
         pipelineTrace("FINALIZE_SYMBOLIC_VERIFY_FAILED", {
             error: err?.message || String(err),
+        });
+    }
+
+    // Difficulty judge AFTER answer verification (solver-truth required order).
+    if (deferDifficultyUntilAfterVerify) {
+        // Concept coverage + formula gates before difficulty (cheap, deterministic).
+        try {
+            const coverage = runConceptCoveragePass(normalized, {
+                subject,
+                sectionName,
+            });
+            normalized = (coverage.questions || normalized).filter(
+                (q) => q?._verification?.conceptCoverageOk !== false
+            );
+            if (coverage.rejected?.length) {
+                verificationStats.stripped += coverage.rejected.length;
+                pipelineTrace("FINALIZE_CONCEPT_COVERAGE_REJECTED", {
+                    rejected: coverage.rejected.length,
+                });
+            }
+        } catch (err) {
+            pipelineTrace("FINALIZE_CONCEPT_COVERAGE_FAILED", {
+                error: err?.message || String(err),
+            });
+        }
+
+        try {
+            const formulaResult = runFormulaValidationPass(normalized, { topic });
+            const hardFormula = (formulaResult.rejected || []).length;
+            normalized = formulaResult.questions || normalized;
+            // Stamp hard formula rejects
+            if (hardFormula) {
+                verificationStats.stripped += hardFormula;
+            }
+            if (process.env.AI_QB_FORMULA_HARD_REJECT === "1") {
+                normalized = normalized.filter(
+                    (q) =>
+                        !q?._formulaValidation?.issues?.some((i) =>
+                            /allow-listed|Impossible/i.test(String(i))
+                        )
+                );
+            }
+        } catch (err) {
+            pipelineTrace("FINALIZE_FORMULA_GATE_FAILED", {
+                error: err?.message || String(err),
+            });
+        }
+
+        const late = await runDifficultyJudgeOn(normalized);
+        normalized = late.questions;
+        selfAuditResult = late.selfAuditResult;
+        pipelineTrace("FINALIZE_DIFFICULTY_AFTER_VERIFY", {
+            kept: normalized.length,
+            rejected: selfAuditResult.rejectedCount || 0,
         });
     }
 
@@ -2390,19 +2541,25 @@ export const finalizeQuestionBankSuggestions = async ({
         );
     }
 
-    if (
-        strippedCount > 0 &&
-        strippedCount <= Math.max(1, GEMINI_QB_REPAIR_BATCH_SIZE)
-    ) {
+    // Always attempt refill for stripped items (not only when count ≤ repair batch).
+    if (strippedCount > 0 && canRunShallowTopUp()) {
+        const refillCount = Math.min(
+            strippedCount,
+            Math.max(1, GEMINI_QB_REPAIR_BATCH_SIZE * 2)
+        );
         pipelineTrace('FINALIZE_TOP_UP', {
-            count: strippedCount,
+            count: refillCount,
+            strippedCount,
             preAuditScore: audit?.correctnessScore,
         });
         console.log(
-            `[ai-qb] top-up: generating ${strippedCount} replacement(s) after stripping flawed items (pre-audit ${audit?.correctnessScore ?? "?"}/100)`
+            `[ai-qb] top-up: generating ${refillCount} replacement(s) after stripping flawed items (pre-audit ${audit?.correctnessScore ?? "?"}/100)`
         );
-        const strippedMultiple = strippedByType?.multiple || 0;
-        const strippedOther = strippedCount - strippedMultiple;
+        const strippedMultiple = Math.min(
+            strippedByType?.multiple || 0,
+            refillCount
+        );
+        const strippedOther = refillCount - strippedMultiple;
         const topUpQuestions = [
             ...(strippedOther > 0
                 ? await runShallowReplacementBatch(strippedOther, {
@@ -2438,6 +2595,111 @@ export const finalizeQuestionBankSuggestions = async ({
         }
     }
 
+    // Count guarantee: refill until requested minimum; allow up to target + overflow.
+    {
+        const overflow = getCountOverflowMax();
+        const minSingle = Math.max(0, Number(targetSingleCount) || 0);
+        const minMultiple = Math.max(
+            0,
+            Number(targetMultipleCount) || Number(multipleTopUpCount) || 0
+        );
+        const minTrueFalse = Math.max(0, Number(targetTrueFalseCount) || 0);
+        const minTotal = minSingle + minMultiple + minTrueFalse;
+        const maxTotal =
+            minTotal > 0 ? minTotal + overflow : Number.POSITIVE_INFINITY;
+
+        const fillDeficit = async (type, need) => {
+            if (need < 1 || !canRunShallowTopUp()) return 0;
+            const batch = await runShallowReplacementBatch(need, {
+                excludeFrom: cleaned,
+                type,
+                traceEvent: `FINALIZE_COUNT_GUARANTEE_${type.toUpperCase()}`,
+            });
+            const accepted = (batch || []).filter((q) => {
+                try {
+                    assertGenerationCorrectness(q);
+                    return true;
+                } catch {
+                    return false;
+                }
+            });
+            if (accepted.length) {
+                cleaned = [...cleaned, ...accepted];
+                verificationStats.regenerated += accepted.length;
+            }
+            return accepted.length;
+        };
+
+        // Up to remaining waves: keep filling type deficits toward the minimum.
+        let guard = 0;
+        while (canRunShallowTopUp() && guard < 6) {
+            guard += 1;
+            const counts = countByType(cleaned);
+            const needSingle = Math.max(0, minSingle - counts.single);
+            const needMultiple = Math.max(0, minMultiple - counts.multiple);
+            const needTf = Math.max(0, minTrueFalse - counts.true_false);
+            if (needSingle + needMultiple + needTf < 1) break;
+
+            pipelineTrace("FINALIZE_COUNT_GUARANTEE", {
+                have: counts,
+                need: {
+                    single: needSingle,
+                    multiple: needMultiple,
+                    true_false: needTf,
+                },
+                minTotal,
+                maxTotal: Number.isFinite(maxTotal) ? maxTotal : null,
+                wave: topUpWavesUsed + 1,
+            });
+
+            if (needSingle > 0) await fillDeficit("single", needSingle);
+            if (needMultiple > 0) await fillDeficit("multiple", needMultiple);
+            if (needTf > 0) await fillDeficit("true_false", needTf);
+
+            const after = countByType(cleaned);
+            if (
+                after.single >= minSingle &&
+                after.multiple >= minMultiple &&
+                after.true_false >= minTrueFalse
+            ) {
+                break;
+            }
+            // If a wave added nothing, stop to avoid spinning.
+            if (
+                after.single === counts.single &&
+                after.multiple === counts.multiple &&
+                after.true_false === counts.true_false
+            ) {
+                pipelineTrace("FINALIZE_COUNT_GUARANTEE_STALLED", { counts: after });
+                break;
+            }
+        }
+
+        if (Number.isFinite(maxTotal) && cleaned.length > maxTotal) {
+            pipelineTrace("FINALIZE_COUNT_OVERFLOW_CAP", {
+                before: cleaned.length,
+                maxTotal,
+                overflow,
+            });
+            cleaned = cleaned.slice(0, maxTotal);
+        }
+
+        const finalCounts = countByType(cleaned);
+        pipelineTrace("FINALIZE_COUNT_GUARANTEE_DONE", {
+            min: { single: minSingle, multiple: minMultiple, true_false: minTrueFalse },
+            have: finalCounts,
+            total: cleaned.length,
+            maxTotal: Number.isFinite(maxTotal) ? maxTotal : null,
+            shortfall: Math.max(
+                0,
+                minTotal -
+                    (finalCounts.single +
+                        finalCounts.multiple +
+                        finalCounts.true_false)
+            ),
+        });
+    }
+
     const stats = {
         correctnessScore: audit?.correctnessScore,
         styleScore: audit?.styleScore,
@@ -2447,6 +2709,12 @@ export const finalizeQuestionBankSuggestions = async ({
         outputCount: cleaned.length,
         confirmedIssueCount: audit?.confirmedIssues?.length ?? 0,
         verification: verificationStats,
+        countGuarantee: {
+            targetSingle: targetSingleCount,
+            targetMultiple: targetMultipleCount,
+            targetTrueFalse: targetTrueFalseCount,
+            overflowMax: getCountOverflowMax(),
+        },
     };
 
     cleaned = assignDifficultyTiersToQuestions(
@@ -3574,6 +3842,7 @@ const generateQuestionBankBatch = async ({
     promptFirstComposeSource = null,
     promptBasedGenRun = null,
     presetSteering = null,
+    cachedRagRetrieval = null,
 }) => {
     const promptFirst = isPromptFirstGenerationMode(generationMode);
     const skipLlmDifficultyAudit =
@@ -3905,19 +4174,31 @@ const generateQuestionBankBatch = async ({
                 : []),
         ];
 
+        const retrieval =
+            cachedRagRetrieval ||
+            (await retrieveSimilarConfirmedQuestions({
+                topic,
+                bankName,
+                subject,
+                sectionName,
+                conceptHints,
+                difficulty,
+            }));
+
         const {
             retrievedQuestionContextBlock,
             exemplarStems,
             exemplarSnippets,
             corpusTexts,
             ragMeta: retrievalMeta,
-        } = await retrieveSimilarConfirmedQuestions({
-            topic,
-            bankName,
-            subject,
-            sectionName,
-            conceptHints,
-        });
+        } = retrieval;
+
+        if (cachedRagRetrieval) {
+            pipelineTrace("QUESTION_RAG_CACHE_HIT", {
+                returned: retrievalMeta?.returned || 0,
+                chunk: `${chunkIndex + 1}/${chunkTotal}`,
+            });
+        }
 
         // Generate with RAG is strict: no silent fallback to ungrounded generation.
         if (!retrievalMeta?.hit || !exemplarStems?.length) {
@@ -4153,6 +4434,10 @@ const generateQuestionBankBatch = async ({
                         (q) => q?.questionType === "multiple"
                     ).length
             ),
+            targetSingleCount: Number(singleCount) || 0,
+            targetMultipleCount: Number(multipleCount) || 0,
+            targetTrueFalseCount: Number(trueFalseCount) || 0,
+            generationMode,
         });
         pipelineTrace("BATCH_DONE", {
             mode: "question-rag",
@@ -4253,6 +4538,10 @@ const generateQuestionBankBatch = async ({
                 difficultyResolution
             ),
             topUpWave,
+            targetSingleCount: Number(singleCount) || 0,
+            targetMultipleCount: Number(multipleCount) || 0,
+            targetTrueFalseCount: Number(trueFalseCount) || 0,
+            generationMode,
         });
         pipelineTrace('BATCH_DONE', {
             mode: 'solve-first',
@@ -4364,6 +4653,10 @@ const generateQuestionBankBatch = async ({
         skipDifficultyAudit: skipLlmDifficultyAudit,
         topUpWave,
         multipleTopUpCount: questions.multipleDeficit || 0,
+        targetSingleCount: Number(singleCount) || 0,
+        targetMultipleCount: Number(multipleCount) || 0,
+        targetTrueFalseCount: Number(trueFalseCount) || 0,
+        generationMode,
     });
     pipelineTrace('BATCH_DONE', {
         mode: 'one-shot',
@@ -5089,6 +5382,54 @@ export const generateQuestionBankSuggestions = async (params) => {
             };
         };
 
+        // Retrieve RAG once per job (not once per chunk) — embeddings + Mongo scan
+        // are expensive and identical exemplars across chunks are fine for style grounding.
+        let jobCachedRag = null;
+        if (isQuestionRagGenerationMode(generationMode)) {
+            const jobConceptHints = [
+                ...(Array.isArray(presetSteering?.conceptSlots)
+                    ? presetSteering.conceptSlots
+                    : []),
+                ...(Array.isArray(presetSteering?.slotPlans)
+                    ? presetSteering.slotPlans.map(
+                          (p) => p?.label || p?.conceptSlot || ""
+                      )
+                    : []),
+                subject,
+                sectionName,
+            ].filter(Boolean);
+            jobCachedRag = await retrieveSimilarConfirmedQuestions({
+                topic,
+                bankName,
+                subject,
+                sectionName,
+                conceptHints: jobConceptHints,
+                difficulty: generationDifficulty,
+            });
+            if (!jobCachedRag?.ragMeta?.hit || !jobCachedRag?.exemplarStems?.length) {
+                const reason = jobCachedRag?.ragMeta?.reason || "no_matching_bank";
+                throw new ApiError(
+                    422,
+                    `RAG required but no reference questions matched (${String(reason).replace(/_/g, " ")}). Prefer explained ${sectionName || subject || "subject"} papers in AiQuestion, then retry Generate with RAG.`
+                );
+            }
+            mergedRagMeta = mergeRagMeta(null, {
+                ...jobCachedRag.ragMeta,
+                exemplarSnippets: jobCachedRag.exemplarSnippets || [],
+                cachedOnce: true,
+            });
+            pipelineTrace("QUESTION_RAG_JOB_CACHE", {
+                returned: jobCachedRag.ragMeta.returned,
+                candidates: jobCachedRag.ragMeta.candidateCount,
+                chunks: countChunks.length,
+            });
+        }
+
+        // Multi-chunk: skip per-chunk finalize (verify/audit/repair once after merge).
+        // This alone removes N−1 full verification pipelines for a 25-question run.
+        const deferPerChunk =
+            deferValidation || (countChunks.length > 1 && !promptFirst);
+
         const runOneChunk = async (chunkIndex) => {
             const chunk = countChunks[chunkIndex];
             const batchResult = await generateQuestionBankBatch({
@@ -5124,7 +5465,7 @@ export const generateQuestionBankSuggestions = async (params) => {
                 totalBatchSelectable,
                 forceOneShot,
                 difficultyResolution,
-                deferValidation,
+                deferValidation: deferPerChunk,
                 generationMode,
                 promptFirstComposedBody,
                 promptFirstComposeSource,
@@ -5133,6 +5474,7 @@ export const generateQuestionBankSuggestions = async (params) => {
                     chunkIndex,
                     chunk.singleCount
                 ),
+                cachedRagRetrieval: jobCachedRag,
             });
             return { chunkIndex, chunk, batchResult };
         };
@@ -5140,15 +5482,16 @@ export const generateQuestionBankSuggestions = async (params) => {
         let chunkResults;
         // Parallel chunking is normally off for exam-calibrated (JEE/NEET) banks
         // because sequential runs thread used-topics/archetypes forward so later
-        // chunks don't repeat earlier ones. But when the topic plan is pre-locked
-        // (presetSteering), each chunk already owns a DISTINCT slice of topics
-        // (sliceChunkPresetSteering), so there's no cross-chunk overlap to guard
-        // against — making parallel generation safe even for exam-calibrated banks.
+        // chunks don't repeat earlier ones. Safe when topics are pre-locked OR
+        // question_rag mode (job-cached exemplars + slot offsets diversify chunks).
         const topicsPreAssigned = Boolean(presetSteering?.slotPlans?.length);
+        const ragModeParallelSafe = isQuestionRagGenerationMode(generationMode);
         const useParallelChunks =
             countChunks.length > 1 &&
             isParallelChunkGenerationEnabled() &&
-            (!difficultyResolution?.examCalibrated || topicsPreAssigned);
+            (!difficultyResolution?.examCalibrated ||
+                topicsPreAssigned ||
+                ragModeParallelSafe);
 
         if (useParallelChunks) {
             pipelineTrace("PARALLEL_CHUNK_GENERATION", {
@@ -5176,10 +5519,20 @@ export const generateQuestionBankSuggestions = async (params) => {
             const batchQuestions = unwrapFinalizedQuestions(batchResult);
             lastStats = unwrapFinalizedStats(batchResult);
             if (batchResult?.ragMeta) {
-                mergedRagMeta = mergeRagMeta(mergedRagMeta, {
-                    ...batchResult.ragMeta,
-                    exemplarSnippets: batchResult.ragMeta.exemplarSnippets || [],
-                });
+                if (jobCachedRag && mergedRagMeta) {
+                    mergedRagMeta = {
+                        ...mergedRagMeta,
+                        rejectedNearCopies:
+                            (mergedRagMeta.rejectedNearCopies || 0) +
+                            (batchResult.ragMeta.rejectedNearCopies || 0),
+                    };
+                } else {
+                    mergedRagMeta = mergeRagMeta(mergedRagMeta, {
+                        ...batchResult.ragMeta,
+                        exemplarSnippets:
+                            batchResult.ragMeta.exemplarSnippets || [],
+                    });
+                }
             }
 
             mergedQuestions = mergedQuestions.concat(batchQuestions);
@@ -5228,6 +5581,7 @@ export const generateQuestionBankSuggestions = async (params) => {
         };
         let repairedQuestions = mergedQuestions;
 
+        // Finalize once after merge when multi-chunk deferred per-chunk validation.
         if (!deferValidation && countChunks.length > 1 && !promptFirst) {
             const finalResult = await finalizeQuestionBankSuggestions({
                 questions: mergedQuestions,
@@ -5245,6 +5599,10 @@ export const generateQuestionBankSuggestions = async (params) => {
                 maxSelectableSlots,
                 allowTopUp: true,
                 difficultyResolution,
+                targetSingleCount: Number(resolvedSingleCount) || 0,
+                targetMultipleCount: Number(resolvedMultipleCount) || 0,
+                targetTrueFalseCount: Number(resolvedTrueFalseCount) || 0,
+                generationMode: resolvedGenerationMode,
             });
             repairedQuestions = unwrapFinalizedQuestions(finalResult);
             pipelineSummary = {
@@ -5257,6 +5615,7 @@ export const generateQuestionBankSuggestions = async (params) => {
                           ragReturned: mergedRagMeta.returned || 0,
                           ragRejectedNearCopies:
                               mergedRagMeta.rejectedNearCopies || 0,
+                          ragCachedOnce: !!mergedRagMeta.cachedOnce,
                       }
                     : {}),
             };
@@ -5284,18 +5643,34 @@ export const generateQuestionBankSuggestions = async (params) => {
                     examCalibrated: difficultyResolution?.examCalibrated,
                 })
               : repairedQuestions;
+        // Allow target + overflow (default +3) so refill after strip isn't cut to exact target.
+        const requestedTotal =
+            (Number(resolvedSingleCount) || 0) +
+            (Number(resolvedMultipleCount) || 0) +
+            (Number(resolvedTrueFalseCount) || 0) +
+            (Number(resolvedPassageCount) || 0);
+        const overflowCap =
+            requestedTotal > 0 ? requestedTotal + getCountOverflowMax() : 0;
+        const slotCap =
+            effectiveMaxSelectableSlots > 0 && overflowCap > 0
+                ? Math.max(effectiveMaxSelectableSlots, overflowCap)
+                : effectiveMaxSelectableSlots > 0
+                  ? effectiveMaxSelectableSlots
+                  : overflowCap;
         const cappedQuestions = capQuestionsToMaxSlots(
             outputQuestions,
-            effectiveMaxSelectableSlots
+            slotCap
         );
         if (
-            effectiveMaxSelectableSlots > 0 &&
+            slotCap > 0 &&
             cappedQuestions.length < outputQuestions.length
         ) {
             pipelineTrace("GENERATION_SLOT_CAP_APPLIED", {
                 before: outputQuestions.length,
                 after: cappedQuestions.length,
                 maxSelectableSlots: effectiveMaxSelectableSlots,
+                overflowCap,
+                slotCap,
             });
         }
 

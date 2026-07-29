@@ -1,21 +1,14 @@
 /**
  * Independent answer verification + in-place answer/explanation correction.
  *
- * WHY: the deterministic correctness audit (correctnessPreAudit.service.js) only catches
- * *internal inconsistency* — explanation says X while the key says Y. A question solved
- * WRONG but explained consistently with that wrong answer passes every check. And the only
- * existing in-place fix (reconcileQuestionWithIndependentVerify) covers just 11 hardcoded
- * solver patterns; everything else was handed to the rewrite path, which discards an
- * otherwise-good question instead of correcting its key/explanation.
+ * SOLVER-TRUTH MODE (AI_QB_SOLVER_TRUTH=1, default):
+ *   Independent Solver is the ONLY source of truth. Generator answer/explanation
+ *   are ignored. Solver returns answerIndex + solveSteps → FINAL_ANSWER →
+ *   explanation is derived from those steps (no second reasoning chain).
  *
- * THIS PASS:
- *   1. Re-solves every question independently — the model sees ONLY the stem + options,
- *      never the marked key or the existing explanation (otherwise it just agrees).
- *   2. Fixes, IN PLACE, any item where the independent answer disagrees with the marked key
- *      or the deterministic audit flagged an explanation/key defect: corrected correctIndex
- *      + rewritten explanation/solveSteps, with the stem and options left untouched.
- *   3. Reports anything unsalvageable (no correct option, duplicate options, broken stem) as
- *      `unfixableRefs` so the caller's existing rewrite/strip path handles it.
+ * LEGACY MODE (AI_QB_SOLVER_TRUTH=0):
+ *   1. Blind re-solve (stem + options only).
+ *   2. Fix in place only on medium/high disagreement or audit flags.
  */
 
 import { parseJsonArrayFromAIText } from "../utils/aiJsonRepair.js";
@@ -35,6 +28,15 @@ import {
     buildExamAnswerKeyLockBlock,
 } from "./examPromptContext.service.js";
 import { runTasksWithConcurrency } from "./aiQuestionCountInference.service.js";
+import {
+    isSolverTruthEnabled,
+    normalizeSolverConfidence,
+    confidenceIsActionable,
+    shouldDoubleSolve,
+    getAnswerConfidenceFloor,
+    getSolverTruthConcurrency,
+    rebuildExplanationFromVerifiedSolution,
+} from "./solverTruth.service.js";
 
 /** Default ON — set AI_QB_ANSWER_CORRECTION=0 to disable (restores prior behaviour). */
 export const isAnswerCorrectionEnabled = () => {
@@ -43,7 +45,7 @@ export const isAnswerCorrectionEnabled = () => {
     return true;
 };
 
-/** Questions per independent-solve LLM call. */
+/** Questions per independent-solve LLM call. Legacy batching; solver-truth uses 1. */
 const SOLVE_BATCH_SIZE = Number(process.env.AI_QB_ANSWER_CORRECTION_BATCH || 10);
 const SOLVE_CONCURRENCY = Math.max(
     1,
@@ -103,6 +105,8 @@ export const buildIndependentSolvePrompt = ({
     questions = [],
     topic = "",
     examProfile = "competitive",
+    requireSolveSteps = false,
+    structuredTruthSchema = false,
 } = {}) => {
     const blocks = questions
         .map((entry, i) => {
@@ -112,6 +116,35 @@ export const buildIndependentSolvePrompt = ({
             return `#${i + 1}\n${String(entry.question.questionText || "").trim()}\n${opts}`;
         })
         .join("\n\n");
+
+    if (structuredTruthSchema || requireSolveSteps) {
+        return `You are an expert ${examProfile} examiner. Independently solve each question from scratch.
+
+**Topic:** ${topic || "(not set)"}
+
+You are deliberately NOT shown any answer key or prior explanation — do not guess what was intended.
+
+${buildExamSolveThenWriteBlock()}
+
+For EACH question return ONE JSON object with this exact schema:
+- \`index\`: question number
+- \`final_answer\`: option letter only — "A" | "B" | "C" | "D"
+- \`answerConfidence\`: 0.0–1.0 how sure the option letter is correct
+- \`reasoningConfidence\`: 0.0–1.0 how sure the derivation is free of arithmetic/logic errors
+- \`steps\`: array of 3–8 short derivation steps (same reasoning chain as explanation)
+- \`explanation\`: clean student-facing prose of THOSE SAME steps (not a re-derivation). Must end by stating the chosen option letter (e.g. "Therefore, the correct answer is C. FINAL_ANSWER: C").
+
+HARD RULES:
+- \`explanation\` and \`steps\` must be the SAME reasoning chain — never invent a second solution.
+- \`final_answer\` is the ONLY answer — do not bury a different letter in the explanation.
+- If no option matches, set \`final_answer\` to "" and \`answerConfidence\` ≤ 0.3.
+
+**Questions:**
+${blocks}
+
+Return ONLY a valid JSON array:
+[{"index":1,"final_answer":"C","answerConfidence":0.96,"reasoningConfidence":0.88,"steps":["…","…"],"explanation":"… Therefore, the correct answer is C. FINAL_ANSWER: C"}]`;
+    }
 
     return `You are an expert ${examProfile} examiner independently solving questions to verify an answer key.
 
@@ -127,9 +160,6 @@ For each question return:
 - \`answerIndex\`: 0-based index of the option YOU compute to be correct (0=A, 1=B, …)
 - \`value\`: your computed final value/answer as text (with unit if any)
 - \`confidence\`: "high" | "medium" | "low"
-  · "high"   — you solved it fully and exactly one option matches
-  · "medium" — you solved it but the match is approximate or rounding-dependent
-  · "low"    — you could not solve it confidently (ambiguous stem, missing data)
 
 If NO option matches your computed answer, set \`answerIndex\` to -1 and explain in \`value\`.
 
@@ -146,15 +176,242 @@ export const parseIndependentSolveResponse = (rawText, expected = 0) => {
     for (const row of rows) {
         const idx = Number(row?.index);
         if (!Number.isInteger(idx) || idx < 1 || (expected && idx > expected)) continue;
+
+        const steps = Array.isArray(row?.steps)
+            ? row.steps.map(String).map((s) => s.trim()).filter(Boolean)
+            : Array.isArray(row?.solveSteps)
+              ? row.solveSteps.map(String).map((s) => s.trim()).filter(Boolean)
+              : [];
+
+        let finalLetter = String(row?.final_answer || row?.finalAnswer || "")
+            .trim()
+            .toUpperCase();
+        if (!/^[A-D]$/.test(finalLetter) && Number.isFinite(Number(row?.answerIndex))) {
+            const ai = Number(row.answerIndex);
+            if (ai >= 0 && ai <= 3) finalLetter = letter(ai);
+        }
+
+        const answerConfidence = normalizeSolverConfidence(
+            row?.answerConfidence ?? row?.confidence ?? 0.5
+        );
+        const reasoningConfidence = normalizeSolverConfidence(
+            row?.reasoningConfidence ?? row?.answerConfidence ?? row?.confidence ?? 0.5
+        );
+
         out.set(idx - 1, {
-            answerIndex: Number.isFinite(Number(row?.answerIndex))
-                ? Number(row.answerIndex)
-                : -1,
+            final_answer: /^[A-D]$/.test(finalLetter) ? finalLetter : "",
+            answerIndex: /^[A-D]$/.test(finalLetter)
+                ? finalLetter.charCodeAt(0) - 65
+                : Number.isFinite(Number(row?.answerIndex))
+                  ? Number(row.answerIndex)
+                  : -1,
             value: String(row?.value ?? "").trim(),
-            confidence: String(row?.confidence || "low").toLowerCase(),
+            confidence:
+                answerConfidence >= 0.85
+                    ? "high"
+                    : answerConfidence >= 0.55
+                      ? "medium"
+                      : "low",
+            answerConfidence,
+            reasoningConfidence,
+            solveSteps: steps,
+            explanation: String(row?.explanation || "").trim(),
         });
     }
     return out;
+};
+
+const pickBetterSolve = (a, b) => {
+    if (!a) return b;
+    if (!b) return a;
+    const score = (x) =>
+        (x.answerConfidence || 0) * 0.6 + (x.reasoningConfidence || 0) * 0.4;
+    return score(a) >= score(b) ? a : b;
+};
+
+/**
+ * Apply Independent Solver structured JSON as the sole source of truth.
+ * Generator answer/explanation are ignored. correctAnswer = final_answer only.
+ */
+const applySolverAsSourceOfTruth = ({ questions, entries, solved }) => {
+    let next = questions;
+    let fixedCount = 0;
+    let disagreementCount = 0;
+    const unfixableRefs = [];
+    const report = [];
+    const floor = getAnswerConfidenceFloor();
+
+    entries.forEach((entry, i) => {
+        const cur = getAtRef(next, entry.ref) || entry.question;
+        const opts = optionTexts(cur);
+        const priorMarked = markedIndexOf(cur);
+        const check = solved.get(i);
+
+        if (!check || !check.final_answer) {
+            unfixableRefs.push({
+                ref: entry.ref,
+                reason: "independent solver returned no final_answer",
+            });
+            report.push({
+                ref: entry.ref,
+                status: "unfixable",
+                reason: "missing_final_answer",
+                stage: "solver_truth",
+            });
+            next = setAtRef(next, entry.ref, {
+                ...cur,
+                _answerChecked: true,
+                _solverTruthApplied: false,
+            });
+            return;
+        }
+
+        const correctIndex = check.final_answer.charCodeAt(0) - 65;
+        if (correctIndex < 0 || correctIndex >= opts.length) {
+            unfixableRefs.push({
+                ref: entry.ref,
+                reason: "final_answer not in option set",
+            });
+            next = setAtRef(next, entry.ref, {
+                ...cur,
+                _answerChecked: true,
+                _solverTruthApplied: false,
+            });
+            return;
+        }
+
+        if (!confidenceIsActionable(check.answerConfidence, floor)) {
+            unfixableRefs.push({
+                ref: entry.ref,
+                reason: `answerConfidence ${check.answerConfidence} < ${floor}`,
+            });
+            report.push({
+                ref: entry.ref,
+                status: "unfixable",
+                reason: "low_answer_confidence",
+                answerConfidence: check.answerConfidence,
+                stage: "solver_truth",
+            });
+            next = setAtRef(next, entry.ref, {
+                ...cur,
+                _answerChecked: true,
+                _solverTruthApplied: false,
+                _verification: {
+                    ...(cur._verification || {}),
+                    answerConfidence: check.answerConfidence,
+                    reasoningConfidence: check.reasoningConfidence,
+                    status: "stripped",
+                    ruleFailures: [
+                        ...((cur._verification?.ruleFailures) || []),
+                        "low_answer_confidence",
+                    ],
+                },
+            });
+            return;
+        }
+
+        const stepsRaw =
+            check.solveSteps?.length >= 2
+                ? check.solveSteps
+                : check.explanation
+                  ? [check.explanation]
+                  : [];
+
+        if (!stepsRaw.length && !check.explanation) {
+            unfixableRefs.push({ ref: entry.ref, reason: "empty_solution" });
+            next = setAtRef(next, entry.ref, {
+                ...cur,
+                _answerChecked: true,
+                _solverTruthApplied: false,
+            });
+            return;
+        }
+
+        const correctLetter = check.final_answer;
+        const markedText = opts[correctIndex];
+        const steps = (stepsRaw.length
+            ? syncSolveStepsToMarkedAnswer(stepsRaw, markedText)
+            : stepsRaw
+        ).map((s, si, arr) =>
+            si === arr.length - 1
+                ? `${String(s || "")
+                      .replace(/\s*FINAL_ANSWER\s*:\s*[^\n.]*/gi, "")
+                      .trim()} FINAL_ANSWER: ${correctLetter}`
+                : s
+        );
+
+        // Prefer solver's explanation if present; else derive from steps (same chain).
+        let explanation = String(check.explanation || "").trim();
+        if (!explanation && stepsRaw.length) {
+            explanation = lockExplanationToMarkedOption(stepsRaw, markedText, {
+                correctLetter,
+            });
+        }
+
+        let updated = {
+            ...cur,
+            correctIndex,
+            correctAnswer: correctLetter,
+            final_answer: correctLetter,
+            explanation,
+            _solveSteps: steps.length ? steps : stepsRaw,
+            answerConfidence: check.answerConfidence,
+            reasoningConfidence: check.reasoningConfidence,
+            _answerChecked: true,
+            _solverTruthApplied: true,
+            _generatorCorrectIndex:
+                priorMarked >= 0 ? priorMarked : cur._generatorCorrectIndex,
+            _verification: {
+                ...(cur._verification || {}),
+                status:
+                    priorMarked >= 0 && priorMarked !== correctIndex
+                        ? "fixed"
+                        : "passed",
+                answerConfidence: check.answerConfidence,
+                reasoningConfidence: check.reasoningConfidence,
+                explanationOk: true,
+                sourceOfTruth: "independent_solver",
+                solverValue: check.value || null,
+            },
+        };
+
+        // Ensure explanation concludes with final_answer (repair only — never change answer).
+        updated = rebuildExplanationFromVerifiedSolution(updated);
+
+        if (priorMarked >= 0 && priorMarked !== correctIndex) disagreementCount++;
+        fixedCount++;
+        next = setAtRef(next, entry.ref, updated);
+
+        report.push({
+            ref: entry.ref,
+            status:
+                priorMarked >= 0 && priorMarked !== correctIndex
+                    ? "fixed"
+                    : "passed",
+            from: priorMarked >= 0 ? letter(priorMarked) : "(ignored)",
+            to: correctLetter,
+            answerConfidence: check.answerConfidence,
+            reasoningConfidence: check.reasoningConfidence,
+            stage: "solver_truth",
+        });
+    });
+
+    pipelineTrace("SOLVER_TRUTH_APPLIED", {
+        checked: entries.length,
+        applied: fixedCount,
+        disagreements: disagreementCount,
+        unfixable: unfixableRefs.length,
+        confidenceFloor: floor,
+    });
+
+    return {
+        questions: next,
+        checkedCount: entries.length,
+        disagreementCount,
+        fixedCount,
+        unfixableRefs,
+        report,
+    };
 };
 
 // ── Prompt 2: fix the key + explanation in place ───────────────────────────────
@@ -248,8 +505,15 @@ const chunk = (arr, size) => {
  */
 export const runAnswerCorrectnessPass = async (
     questions = [],
-    { topic = "", bankName = "", examProfile = "competitive" } = {},
-    { callLlm } = {}
+    {
+        topic = "",
+        bankName = "",
+        examProfile = "competitive",
+        subject = "",
+        sectionName = "",
+        difficulty = "",
+    } = {},
+    { callLlm, callLlmSecondary = null } = {}
 ) => {
     const noop = {
         questions,
@@ -261,18 +525,103 @@ export const runAnswerCorrectnessPass = async (
     };
     if (!isAnswerCorrectionEnabled() || typeof callLlm !== "function") return noop;
 
-    // finalizeQuestionBankSuggestions runs per generation chunk AND again on the merged
-    // bank, so without this guard the same questions would be re-solved several times.
-    // `_answerChecked` makes the pass idempotent: each question costs one solve, once.
+    const solverTruth = isSolverTruthEnabled();
+
     const entries = flattenQuestionBankForCorrectnessAudit(questions)
         .map((e) => ({ ref: e.ref, question: getAtRef(questions, e.ref) }))
-        .filter(
-            (e) => e.question && isCorrectable(e.question) && !e.question._answerChecked
-        );
+        .filter((e) => {
+            if (!e.question || !isCorrectable(e.question)) return false;
+            if (solverTruth) return !e.question._solverTruthApplied;
+            return !e.question._answerChecked;
+        });
     if (!entries.length) return noop;
 
     // ── 1. Independent re-solve (stem + options only) ──────────────────────────
     const solved = new Map();
+
+    if (solverTruth) {
+        // One question per call, parallel workers — avoids batch anchoring & cuts latency.
+        const concurrency = getSolverTruthConcurrency();
+        await runTasksWithConcurrency(
+            entries.map((entry, globalIdx) => async () => {
+                const batch = [entry];
+                const prompt = buildIndependentSolvePrompt({
+                    questions: batch,
+                    topic: topic || bankName,
+                    examProfile,
+                    structuredTruthSchema: true,
+                });
+                try {
+                    const raw = await callLlm(prompt);
+                    const parsed = parseIndependentSolveResponse(raw, 1);
+                    let primary = parsed.get(0) || null;
+
+                    const needDouble = shouldDoubleSolve({
+                        difficulty:
+                            difficulty ||
+                            entry.question?.difficulty ||
+                            entry.question?.difficultyTier ||
+                            "",
+                        subject,
+                        sectionName,
+                        question: entry.question,
+                    });
+
+                    if (needDouble) {
+                        const secondaryFn =
+                            typeof callLlmSecondary === "function"
+                                ? callLlmSecondary
+                                : callLlm;
+                        try {
+                            const raw2 = await secondaryFn(prompt);
+                            const parsed2 = parseIndependentSolveResponse(raw2, 1);
+                            const secondary = parsed2.get(0) || null;
+                            if (
+                                primary?.final_answer &&
+                                secondary?.final_answer &&
+                                primary.final_answer !== secondary.final_answer
+                            ) {
+                                pipelineTrace("SOLVER_DOUBLE_DISAGREE", {
+                                    a: primary.final_answer,
+                                    b: secondary.final_answer,
+                                    stem: String(
+                                        entry.question?.questionText || ""
+                                    ).slice(0, 80),
+                                });
+                                // Disagreement → leave unsolved so question regenerates.
+                                solved.set(globalIdx, null);
+                                return;
+                            }
+                            primary = pickBetterSolve(primary, secondary);
+                            pipelineTrace("SOLVER_DOUBLE_AGREE", {
+                                final_answer: primary?.final_answer,
+                                answerConfidence: primary?.answerConfidence,
+                            });
+                        } catch (err) {
+                            pipelineTrace("SOLVER_DOUBLE_SECONDARY_FAILED", {
+                                error: err?.message || String(err),
+                            });
+                        }
+                    }
+
+                    if (primary) solved.set(globalIdx, primary);
+                } catch (err) {
+                    pipelineTrace("ANSWER_CORRECTION_SOLVE_FAILED", {
+                        error: err?.message || String(err),
+                        batchSize: 1,
+                    });
+                }
+            }),
+            concurrency
+        );
+
+        return applySolverAsSourceOfTruth({
+            questions,
+            entries,
+            solved,
+        });
+    }
+
     const solveBatches = chunk(entries, SOLVE_BATCH_SIZE);
     await runTasksWithConcurrency(
         solveBatches.map((batch) => async () => {
@@ -282,6 +631,7 @@ export const runAnswerCorrectnessPass = async (
                         questions: batch,
                         topic: topic || bankName,
                         examProfile,
+                        requireSolveSteps: false,
                     })
                 );
                 const parsed = parseIndependentSolveResponse(raw, batch.length);
@@ -320,7 +670,6 @@ export const runAnswerCorrectnessPass = async (
         if (!auditIssuesByNumber.has(n)) auditIssuesByNumber.set(n, []);
         auditIssuesByNumber.get(n).push(issue.issue);
     }
-    // flat[] is 1-indexed by questionNumber in the same order as it was built
     const refKey = (ref) => `${ref.topIndex}:${ref.subIndex ?? "-"}`;
     const auditReasonsByRef = new Map();
     flat.forEach((e, i) => {

@@ -153,9 +153,20 @@ ${blocks}
 Return ONLY valid JSON:
 {
   "scores": [
-    { "questionNumber": 1, "difficultyScore": 72, "reason": "one-line reason referencing assigned tier criteria" }
+    {
+      "questionNumber": 1,
+      "difficulty": "Hard",
+      "difficultyScore": 0.91,
+      "reason": "one-line reason referencing assigned tier criteria + what makes it this hard"
+    }
   ]
-}`;
+}
+
+Rules for difficultyScore:
+- Use a **0.0–1.0** scale (preferred). Legacy 0–100 integers are also accepted.
+- Also return categorical \`difficulty\`: "Easy" | "Medium" | "Hard" matching your score band
+  (Easy <0.45, Medium 0.45–0.74, Hard ≥0.75) calibrated to the **assigned tier**.
+- \`reason\` must mention concept fusion / reasoning depth when relevant.`;
 };
 
 export const parseDifficultySelfAuditResponse = (rawText, expectedCount = 1) => {
@@ -164,12 +175,24 @@ export const parseDifficultySelfAuditResponse = (rawText, expectedCount = 1) => 
     const byNumber = new Map();
     for (const row of rows) {
         const n = Number(row.questionNumber);
-        const score = Number(row.difficultyScore);
+        let score = Number(row.difficultyScore);
         if (!Number.isFinite(n) || n < 1) continue;
         if (!Number.isFinite(score)) continue;
+        // Accept 0–1 or 0–100; normalize to 0–100 for existing minScore gates.
+        if (score >= 0 && score <= 1) score = Math.round(score * 100);
+        const label = String(row.difficulty || row.tier || "")
+            .trim()
+            .toLowerCase();
         byNumber.set(n, {
             questionNumber: n,
             difficultyScore: Math.max(0, Math.min(100, Math.round(score))),
+            difficultyLabel: /hard|medium|easy/.test(label)
+                ? label.charAt(0).toUpperCase() + label.slice(1)
+                : score >= 75
+                  ? "Hard"
+                  : score >= 45
+                    ? "Medium"
+                    : "Easy",
             reason: String(row.reason || "").trim(),
         });
     }
@@ -178,7 +201,8 @@ export const parseDifficultySelfAuditResponse = (rawText, expectedCount = 1) => 
         scores.push(
             byNumber.get(i) || {
                 questionNumber: i,
-                difficultyScore: 100,
+                difficultyScore: 0,
+                difficultyLabel: "Easy",
                 reason: "not scored",
             }
         );
@@ -234,11 +258,24 @@ export const applyDifficultySelfAuditGate = async (
                     questionNumber: num,
                     question: q,
                     difficultyScore: row?.difficultyScore,
+                    difficultyLabel: row?.difficultyLabel,
                     reason: row?.reason,
                     stem: truncate(q.questionText, 120),
                 });
             } else {
-                keptSingles.push(q);
+                keptSingles.push({
+                    ...q,
+                    _verification: {
+                        ...(q._verification || {}),
+                        difficultyScore: row?.difficultyScore ?? null,
+                        difficultyLabel: row?.difficultyLabel || null,
+                        difficultyReason: row?.reason || null,
+                    },
+                    timeEstimate:
+                        q.timeEstimate ||
+                        q._verification?.timeEstimate ||
+                        undefined,
+                });
             }
         });
 

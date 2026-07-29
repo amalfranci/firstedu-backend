@@ -13,6 +13,12 @@ import {
     runExplanationVerifierPass,
 } from "./explanationVerifier.service.js";
 import { flattenQuestionBankForCorrectnessAudit } from "./correctnessPreAudit.service.js";
+import {
+    isSolverTruthEnabled,
+    runRuleEngineRejects,
+    runRuleBasedConsistencyCheck,
+    attachComplexityMetadata,
+} from "./solverTruth.service.js";
 
 /** Drop top-level (or connected sub) questions listed in unfixableRefs. */
 export const dropQuestionsByRefs = (questions = [], unfixableRefs = []) => {
@@ -143,7 +149,11 @@ export const runIndependentVerificationPipeline = async (
         topic = "",
         bankName = "",
         examProfile = "competitive",
+        subject = "",
+        sectionName = "",
+        difficulty = "",
         callLlm,
+        callLlmSecondary = null,
         skipExplanationVerifier = false,
     } = {}
 ) => {
@@ -177,8 +187,8 @@ export const runIndependentVerificationPipeline = async (
     if (isAnswerCorrectionEnabled()) {
         solverResult = await runAnswerCorrectnessPass(
             next,
-            { topic, bankName, examProfile },
-            { callLlm }
+            { topic, bankName, examProfile, subject, sectionName, difficulty },
+            { callLlm, callLlmSecondary }
         );
         next = solverResult.questions || next;
         pipelineTrace("FINALIZE_INDEPENDENT_SOLVER", {
@@ -186,6 +196,7 @@ export const runIndependentVerificationPipeline = async (
             disagreements: solverResult.disagreementCount,
             fixed: solverResult.fixedCount,
             unfixable: solverResult.unfixableRefs?.length || 0,
+            solverTruth: isSolverTruthEnabled(),
         });
     }
 
@@ -194,7 +205,11 @@ export const runIndependentVerificationPipeline = async (
         unfixableRefs: [],
         report: [],
     };
-    if (!skipExplanationVerifier && isExplanationVerifierEnabled()) {
+    const skipExpl =
+        skipExplanationVerifier ||
+        isSolverTruthEnabled() ||
+        !isExplanationVerifierEnabled();
+    if (!skipExpl) {
         explanationResult = await runExplanationVerifierPass(
             next,
             { topic, bankName, examProfile },
@@ -205,17 +220,39 @@ export const runIndependentVerificationPipeline = async (
             fixed: explanationResult.fixedCount,
             unfixable: explanationResult.unfixableRefs?.length || 0,
         });
+    } else if (isSolverTruthEnabled()) {
+        pipelineTrace("FINALIZE_EXPLANATION_FROM_SOLVER", {
+            note: "explanation from solver JSON; final_answer is source of truth",
+        });
+    }
+
+    let consistencyUnfixable = [];
+    let ruleUnfixable = [];
+    if (isSolverTruthEnabled()) {
+        const consistency = runRuleBasedConsistencyCheck(next);
+        next = consistency.questions || next;
+        consistencyUnfixable = consistency.unfixableRefs || [];
+        next = attachComplexityMetadata(next);
+        const rules = runRuleEngineRejects(next);
+        ruleUnfixable = rules.unfixableRefs || [];
+        pipelineTrace("FINALIZE_SOLVER_TRUTH_GATES", {
+            explanationRepaired: consistency.repairedCount || 0,
+            consistencyRejected: consistencyUnfixable.length,
+            ruleRejected: ruleUnfixable.length,
+        });
     }
 
     const allUnfixable = [
         ...(solverResult.unfixableRefs || []),
         ...(explanationResult.unfixableRefs || []),
+        ...consistencyUnfixable,
+        ...ruleUnfixable,
     ];
     const dropped = dropQuestionsByRefs(next, allUnfixable);
     next = dropped.questions;
 
     const fixedRefs = (solverResult.report || [])
-        .filter((r) => r.status === "fixed")
+        .filter((r) => r.status === "fixed" || r.status === "passed")
         .map((r) => r.ref);
     next = attachVerificationStatus(next, {
         fixedRefs,
@@ -237,10 +274,7 @@ export const runIndependentVerificationPipeline = async (
         report: solverResult.report || [],
         explanationReport: explanationResult.report || [],
         verificationStats: {
-            passed: Math.max(
-                0,
-                flatCount - (solverResult.fixedCount || 0)
-            ),
+            passed: Math.max(0, flatCount - (solverResult.fixedCount || 0)),
             fixed:
                 (solverResult.fixedCount || 0) +
                 (explanationResult.fixedCount || 0),

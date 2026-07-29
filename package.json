@@ -48,6 +48,20 @@
   },
   "devDependencies": {
     "jest": "^30.4.2",
-    "nodemon": "^3.1.10"
-  }
+    "nodemon": "^3.1.10",
+    "pdf-parse": "^2.4.5",
+    "pdfjs-dist": "^6.2.108"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kodstechnologies/firstedu-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kodstechnologies/firstedu-backend/issues"
+  },
+  "homepage": "https://github.com/kodstechnologies/firstedu-backend#readme"
 }

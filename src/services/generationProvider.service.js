@@ -91,21 +91,46 @@ export const resolveVerificationStageProvider = (
     const envKey =
         stage === "solver"
             ? "AI_QB_SOLVER_PROVIDER"
-            : stage === "difficulty_judge"
-              ? "AI_QB_DIFFICULTY_JUDGE_PROVIDER"
-              : stage === "audit"
-                ? "AI_QB_AUDIT_PROVIDER"
-                : null;
+            : stage === "solver_b"
+              ? "AI_QB_SOLVER_PROVIDER_B"
+              : stage === "difficulty_judge"
+                ? "AI_QB_DIFFICULTY_JUDGE_PROVIDER"
+                : stage === "audit"
+                  ? "AI_QB_AUDIT_PROVIDER"
+                  : stage === "planner"
+                    ? "AI_QB_PLANNER_PROVIDER"
+                    : null;
     const raw = envKey
         ? String(process.env[envKey] || "").trim().toLowerCase()
         : "";
+    // Secondary solver defaults to the other major provider when unset.
+    const autoSecondary =
+        stage === "solver_b" && !raw
+            ? fallback === "claude"
+                ? process.env.OPENAI_API_KEY
+                    ? "openai"
+                    : fallback === "gemini"
+                      ? "openai"
+                      : "gemini"
+                : fallback === "openai"
+                  ? process.env.ANTHROPIC_API_KEY
+                      ? "claude"
+                      : "gemini"
+                  : process.env.ANTHROPIC_API_KEY
+                    ? "claude"
+                    : process.env.OPENAI_API_KEY
+                      ? "openai"
+                      : fallback
+            : null;
     const candidate = raw
         ? normalizeGenerationProvider(raw)
-        : stage === "difficulty_judge" || stage === "audit"
-          ? process.env.OPENAI_API_KEY
-              ? "openai"
-              : fallback
-          : fallback;
+        : autoSecondary
+          ? normalizeGenerationProvider(autoSecondary)
+          : stage === "difficulty_judge" || stage === "audit"
+            ? process.env.OPENAI_API_KEY
+                ? "openai"
+                : fallback
+            : fallback;
 
     try {
         return assertGenerationProviderConfigured(candidate);

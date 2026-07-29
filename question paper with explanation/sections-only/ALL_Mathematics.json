@@ -1,0 +1,2087 @@
+{
+  "sections": {
+    "Mathematics": {
+      "questions": [
+        {
+          "number": 1,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "The positive integer n, for which the solutions of the equation x(x+2)+(x+2)(x+4)+...+(x+2n-2)(x+2n) = 8n/3 are two consecutive even integers, is:",
+          "options": {
+            "1": "3",
+            "2": "6",
+            "3": "12",
+            "4": "9"
+          },
+          "answer": "1",
+          "solution": "Summing the series gives nx^2 + 2nx^2 + 4n(n^2-1)/3 - 8n/3 = 0, i.e. x^2 + 2nx + 4(n^2-1)/3 - 8/3 = 0. Since |alpha - beta| = 2, sqrt(D)/|a| = 2 => D = 4. Solving gives n^2 = 9 (using the condition), so n = 3."
+        },
+        {
+          "number": 2,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let f: R -> R be a twice differentiable function such that f''(x) > 0 for all x in R and f'(a-1) = 0, where a is a real number. Let g(x) = f(tan^2 x - 2tanx + a), 0 < x < pi/2. Consider: (I) g is increasing in (0, pi/4); (II) g is decreasing in (pi/4, pi/2). Then,",
+          "options": {
+            "1": "Neither (I) nor (II) is True",
+            "2": "Only (II) is True",
+            "3": "Only (I) is True",
+            "4": "Both (I) and (II) are True"
+          },
+          "answer": "1",
+          "solution": "g(x) = f((tanx-1)^2 + a-1). g'(x) = f'((tanx-1)^2+a-1) * 2(tanx-1)sec^2x. Since f'(a-1)=0 and f''(x)>0, f'((tanx-1)^2+a-1) > 0. So g'(x) > 0 when tanx-1 > 0, i.e., g is increasing in (pi/4, pi/2), and g'(x) < 0 when tanx-1 < 0, i.e., g is decreasing in (0, pi/4). So both given statements (I) and (II) are actually reversed/false as stated -> Neither (I) nor (II) is true."
+        },
+        {
+          "number": 3,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let f(x) = x^3 + x^2 f'(1) + 2x f''(2) + f'''(3), x in R. Then the value of f'(5) is:",
+          "options": {
+            "1": "62/5",
+            "2": "657/5",
+            "3": "2/5",
+            "4": "117/5"
+          },
+          "answer": "4",
+          "solution": "f'(x) = 3x^2 + 2x f'(1) + 2f''(2); f''(x) = 6x + 2f'(1); f''(2) = 12 + 2f'(1). Substituting and putting x=1: f'(1) = 3 + 6f'(1) + 24 => -5f'(1) = 27 => f'(1) = -27/5. Then f''(2) = 6/5, so f'(x) = 3x^2 - (54/5)x + 12/5. f'(5) = 75 - 54 + 12/5 = 117/5."
+        },
+        {
+          "number": 4,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "If the line alpha*x + 4y = sqrt(7), where alpha in R, touches the ellipse 3x^2 + 4y^2 = 1 at the point P in the first quadrant, then one of the focal distances of P is:",
+          "options": {
+            "1": "1/sqrt(3) - 1/(2*sqrt(11))",
+            "2": "1/sqrt(3) + 1/(2*sqrt(5))",
+            "3": "1/sqrt(3) - 1/(2*sqrt(5))",
+            "4": "1/sqrt(3) + 1/(2*sqrt(7))"
+          },
+          "answer": "4",
+          "solution": "Using c^2 = a^2 m^2 + b^2 for the line 3x+4y-sqrt(7)=0 tangent to the ellipse gives alpha = 3, -3, so tangent is 3x+4y-sqrt(7)=0. Point of contact P = (1/sqrt7, 1/sqrt7), eccentricity e = 1/2. PS' = e(PM') = (1/2)(a/e + 1/sqrt7) = 1/sqrt(3) + 1/(2*sqrt(7))."
+        },
+        {
+          "number": 5,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let y^2 = 12x be the parabola with its vertex at O. Let P be a point on the parabola and A be a point on the x-axis such that angle OPA = 90 degrees. Then the locus of the centroid of such triangles OPA is:",
+          "options": {
+            "1": "y^2 - 6x + 4 = 0",
+            "2": "y^2 - 9x + 6 = 0",
+            "3": "y^2 - 2x + 8 = 0",
+            "4": "y^2 - 4x + 8 = 0"
+          },
+          "answer": "3",
+          "solution": "P = (3t^2, 6t). Slope of AP = -t/2, giving A = (12+3t^2, 0). Centroid G(h,k): 3h = 3t^2+12+3t^2, 3k = 6t. So t = k/2, h = 2t^2+4 = k^2/2 + 4. Locus: y^2 = 2x - 8."
+        },
+        {
+          "number": 6,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let one end of a focal chord of the parabola y^2 = 16x be (16,16). If P(alpha,beta) divides this focal chord internally in the ratio 5:2, then the minimum value of alpha+beta is equal to:",
+          "options": {
+            "1": "22",
+            "2": "7",
+            "3": "5",
+            "4": "16"
+          },
+          "answer": "2",
+          "solution": "Parameter of A is t=2, so parameter of B is t=-1/2, giving B=(1,-4). Case 1 (A:P:B = 5:2): alpha=37/7, beta=12/7, sum=7. Case 2 (2:5): sum=22. Minimum value is 7."
+        },
+        {
+          "number": 7,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let the line L pass through the point (-3,5,2) and make equal angles with the positive coordinate axes. If the distance of L from the point (-2, r, 1) is sqrt(14/3), then the sum of all possible values of r is:",
+          "options": {
+            "1": "12",
+            "2": "16",
+            "3": "6",
+            "4": "10"
+          },
+          "answer": "4",
+          "solution": "Line: (x+3)/1=(y-5)/1=(z-2)/1=lambda. Foot of perpendicular R found via PR.d=0, giving lambda=(r-5)/3. Distance condition gives 6r^2-60r+126=0 => r^2-10r+21=0 => r=3,7. Sum=10."
+        },
+        {
+          "number": 8,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let the line L1 be parallel to the vector -3i+2j+4k and pass through the point (2,6,7), and the line L2 be parallel to the vector 2i+j+3k and pass through the point (4,3,5). If the line L3 is parallel to the vector -3i+5j+16k and intersects the lines L1 and L2 at points C and D respectively, then |CD|^2 is equal to:",
+          "options": {
+            "1": "171",
+            "2": "290",
+            "3": "312",
+            "4": "89"
+          },
+          "answer": "2",
+          "solution": "Parametrize C on L1 and D on L2, use direction ratios of L3 to solve for parameters (lambda1=-3, lambda2=2), giving C(11,0,-5), D(8,5,11). |CD|^2 = 3^2+5^2+16^2 = 290."
+        },
+        {
+          "number": 9,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let alpha and beta be the roots of equation x^2 + 2ax + (3a+10) = 0 such that alpha < 1 < beta. Then the set of all possible values of a is:",
+          "options": {
+            "1": "(-infinity, -11/5) U (5, infinity)",
+            "2": "(-infinity, -2) U (5, infinity)",
+            "3": "(-infinity, -3)",
+            "4": "(-infinity, -11/5)"
+          },
+          "answer": "4",
+          "solution": "For alpha<1<beta, f(1)<0: 1+2a+3a+10<0 => 5a+11<0 => a < -11/5. So a in (-infinity, -11/5)."
+        },
+        {
+          "number": 10,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "A random variable X takes values 0,1,2,3 with probabilities (2a+1)/30, (8a-1)/30, (4a+1)/30, b respectively, where a,b in R. Let mu and sigma respectively be the mean and standard deviation of X such that sigma^2+mu^2=2. Then a/b is equal to:",
+          "options": {
+            "1": "30",
+            "2": "3",
+            "3": "60",
+            "4": "12"
+          },
+          "answer": "3",
+          "solution": "sigma^2+mu^2 = sum x_i^2 p(x_i) = (8a-1)/30 + 4(4a+1)/30 + 9b = 2 gives 24a+270b=57 i.e. 8a+90b=19. Sum of probabilities =1 gives 14a+30b=29. Solving simultaneously: a=2, b=1/30, so a/b=60."
+        },
+        {
+          "number": 11,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "If the area of the region {(x,y): 1-2x <= y <= 4-x^2, x>=0, y>=0} is alpha/beta where alpha,beta in N, gcd(alpha,beta)=1, then the value of (alpha+beta) is:",
+          "options": {
+            "1": "73",
+            "2": "85",
+            "3": "91",
+            "4": "67"
+          },
+          "answer": "1",
+          "solution": "Required area = (2/3)*8 - (1/2)*(1/2)*1 = 16/3 - 1/4 = 61/12 = alpha/beta. alpha+beta = 61+12 = 73."
+        },
+        {
+          "number": 12,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let a1, a2/2, a3/2^2, ..., a10/2^9 be a G.P. of common ratio 1/sqrt(2). If a1+a2+...+a10 = 62, then a1 is equal to:",
+          "options": {
+            "1": "2(sqrt(2)-1)",
+            "2": "2-sqrt(2)",
+            "3": "sqrt(2)-1",
+            "4": "2(2-sqrt(2))"
+          },
+          "answer": "1",
+          "solution": "a1,a2,...,a10 form a G.P. with common ratio sqrt(2). Sum = a1((sqrt2)^10 - 1)/(sqrt2-1) = 62. Solving gives a1 = 2(sqrt(2)-1)."
+        },
+        {
+          "number": 13,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let A = {x : |x^2-10| <= 6} and B = {x : |x-2| > 1}. Then",
+          "options": {
+            "1": "A U B = (-infinity,1] U (2,infinity)",
+            "2": "A - B = [2,3]",
+            "3": "A ∩ B = [-4,-2] U [3,4]",
+            "4": "B - A = (-infinity,-4) U (-2,1) U (4,infinity)"
+          },
+          "answer": "4",
+          "solution": "A = [-4,-2] U [2,4]; B = (-infinity,1) U (3,infinity). A U B = (-infinity,1) U [2,infinity); A ∩ B = [-4,-2] U (3,4]; A-B = [2,3]; B-A = (-infinity,-4) U (-2,1) U (4,infinity). So option (4) is correct."
+        },
+        {
+          "number": 14,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "For the matrices A = [[3,-4],[1,-1]] and B = [[-29,49],[-13,18]], if (A^15 + B)[x,y]^T = [0,0]^T, then among the following which one is true?",
+          "options": {
+            "1": "x=5, y=7",
+            "2": "x=18, y=11",
+            "3": "x=11, y=2",
+            "4": "x=16, y=3"
+          },
+          "answer": "3",
+          "solution": "A^n = [[2n+1,-4n],[n,-2n+1]]. A^15 = [[31,-60],[15,-29]]. A^15+B = [[2,-11],[2,-11]]. Equation gives 2x-11y=0, satisfied by x=11, y=2."
+        },
+        {
+          "number": 15,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "For a triangle ABC, let p = vector BC, q = vector CA, r = vector BA. If |p| = 2*sqrt(3), |q| = 2, and cos(theta) = 1/sqrt(3), where theta is the angle between p and q, then |p x (q - 3r)|^2 + 3|r|^2 is equal to:",
+          "options": {
+            "1": "340",
+            "2": "220",
+            "3": "410",
+            "4": "200"
+          },
+          "answer": "4",
+          "solution": "p+q=r. Using cos(pi-theta) formula, |r|^2 = 24. Then p x (q-3r) = p x (-3p-2q) = -2(p x q). So expression = 4|p|^2|q|^2 sin^2(theta) + 72 = 4*12*4*(2/3) + 72 = 200."
+        },
+        {
+          "number": 16,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let y = y(x) be the solution of the differential equation sec(x) dy/dx - 2y = 2 + 3sinx, x in (-pi/2, pi/2), y(0) = -7/4. Then y(pi/6) is equal to:",
+          "options": {
+            "1": "-5/2",
+            "2": "-5/4",
+            "3": "-3*sqrt(3) - 7",
+            "4": "-3*sqrt(2) - 7"
+          },
+          "answer": "1",
+          "solution": "dy/dx - 2y cosx = 2cosx + 3sinx cosx. I.F. = e^(-2sinx). Solving, y = -(3/2)sinx - 7/4 + C e^(2sinx). Using y(0)=-7/4 gives C=0. y(pi/6) = -3/4 - 7/4 = -5/2."
+        },
+        {
+          "number": 17,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let A = {2,3,5,7,9}. Let R be the relation on A defined by xRy if and only if 2x <= 3y. Let l be the number of elements in R, and m be the minimum number of elements required to be added in R to make it a symmetric relation. Then l+m is equal to:",
+          "options": {
+            "1": "23",
+            "2": "25",
+            "3": "21",
+            "4": "27"
+          },
+          "answer": "2",
+          "solution": "Counting pairs satisfying y >= 2x/3 for each x gives l=18. To make symmetric, elements to add: (5,2),(7,2),(9,2),(5,3),(7,3),(9,3),(9,5) => m=7. l+m=25."
+        },
+        {
+          "number": 18,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "If the system of equations 3x+y+4z=3, 2x+alpha*y-z=-3, x+2y+z=4 has no solution, then the value of alpha is equal to:",
+          "options": {
+            "1": "19",
+            "2": "4",
+            "3": "13",
+            "4": "23"
+          },
+          "answer": "1",
+          "solution": "For no solution, determinant Delta=0: 3(alpha+2)+1(-1-2)+4(4-alpha)=0 => 19-alpha=0 => alpha=19. Checking Delta_x != 0 for alpha=19 confirms no solution."
+        },
+        {
+          "number": 19,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let z be the complex number satisfying |z-5| <= 3 and having maximum positive principal argument. Then 34 |(5z-12)/(5iz+16)|^2 is equal to:",
+          "options": {
+            "1": "16",
+            "2": "12",
+            "3": "26",
+            "4": "20"
+          },
+          "answer": "4",
+          "solution": "For arg(z) maximum, z lies at tangent point: z = 4cos(theta)+4i sin(theta) with theta found from the geometry, giving z = 16/5 + 12i/5. Substituting into the expression gives 34*(160/272) = 20."
+        },
+        {
+          "number": 20,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "The largest n in N, for which 7^n divides 101!, is:",
+          "options": {
+            "1": "16",
+            "2": "18",
+            "3": "15",
+            "4": "19"
+          },
+          "answer": "1",
+          "solution": "Exponent of 7 in 101! = floor(101/7) + floor(101/49) + floor(101/343) + ... = 14 + 2 = 16."
+        },
+        {
+          "number": 21,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "Let [.] denote the greatest integer function and f(x) = lim(n->infinity) (1/n^3) * sum_{k=1}^{n} [k^2/3^x]. Then 12*sum_{j=1}^{infinity} f(j) is equal to ____.",
+          "answer": "2",
+          "solution": "Bounding the sum and taking the limit gives f(x) = 1/3^(x+1). Then 12*sum f(j) = 12*sum(1/3^(j+1)) = 12*(1/9)/(1-1/3) = 2."
+        },
+        {
+          "number": 22,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "If Integral from 0 to 1 of 4*cot^-1(1-2x+4x^2) dx = a*tan^-1(2) - b*log_e(5), where a,b in N, then (2a+b) is equal to ____.",
+          "answer": "9",
+          "solution": "Using king's rule (x -> 1-x) twice and integration by parts (with substitution 1+4x^2=t), the integral evaluates to 4I = 4tan^-1(2) - ln5, giving a=1, b=1 (after matching 4tan^-1(2)-ln5 form scaled), so 2a+b = 8+1 = 9."
+        },
+        {
+          "number": 23,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "Let the maximum value of (sin^-1 x)^2 + (cos^-1 x)^2 for x in [-sqrt(3)/2, 1/sqrt(2)] be (m/n)*pi^2, where gcd(m,n)=1. Then m+n is equal to ____.",
+          "answer": "65",
+          "solution": "(sin^-1x)^2+(cos^-1x)^2 = 2(sin^-1x - pi/4)^2 + pi^2/8, where sin^-1x in [-pi/3, pi/4]. Max occurs at sin^-1x = -pi/3, giving value 29*pi^2/36. So m=29, n=36, m+n=65."
+        },
+        {
+          "number": 24,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "If (1/15C0 + 1/15C1)(1/15C1 + 1/15C2)...(1/15C12 + 1/15C13) = alpha^13 / (14C0 * 14C1 * ... * 14C12), then 30*alpha is equal to ____.",
+          "answer": "32",
+          "solution": "Product simplifies to (16/15)^13 / (14C0*14C1*...*14C12), giving alpha = 16/15. So 30*alpha = 32."
+        },
+        {
+          "number": 25,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "If P is a point on the circle x^2+y^2=4, Q is a point on the straight line 5x+y+2=0, and x-y+1=0 is the perpendicular bisector of PQ, then 13 times the sum of abscissa of all such points P is ____.",
+          "answer": "2",
+          "solution": "Setting P=(2costheta,2sintheta), Q on the line, and using midpoint on x-y+1=0 and slope condition, eliminating alpha gives cos(theta)+5sin(theta)=1. Solutions: costheta=1 or costheta=-12/13. Sum of abscissas = 2*1+2*(-12/13) = 2/13. 13 times this sum = 2."
+        },
+        {
+          "number": 1,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "If the domain of the function f(x) = cos^-1((2x-5)/(11-3x)) + sin^-1(2x^2-3x+1) is the interval [alpha,beta], then alpha+2beta is equal to:",
+          "options": {
+            "1": "1",
+            "2": "3",
+            "3": "5",
+            "4": "2"
+          },
+          "answer": "2",
+          "solution": "From sin^-1 domain: -1<=2x^2-3x+1<=1 gives x in [0, 3/2]. From cos^-1 domain: -1<=(2x-5)/(11-3x)<=1 gives x in (-infinity,16/5] U [6,infinity). Intersecting both conditions gives x in [0, 3/2]. So alpha=0, beta=3/2, and alpha+2beta = 0 + 2*(3/2) = 3."
+        },
+        {
+          "number": 2,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "The area of the region, inside the ellipse x^2 + 4y^2 = 4 and outside the region bounded by the curves y=|x|-1 and y=1-|x|, is:",
+          "options": {
+            "1": "2(pi-1)",
+            "2": "2pi - 1/2",
+            "3": "3(pi-1)",
+            "4": "2pi - 1"
+          },
+          "answer": "1",
+          "solution": "Required area = area of ellipse - shaded (rhombus) area = pi*2*1 - 4*(1/2*1*1) = 2pi - 2 = 2(pi-1)."
+        },
+        {
+          "number": 3,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "The number of relations, defined on the set {a,b,c,d}, which are both reflexive and symmetric, is equal to:",
+          "options": {
+            "1": "256",
+            "2": "16",
+            "3": "1024",
+            "4": "64"
+          },
+          "answer": "4",
+          "solution": "For reflexive+symmetric relations on a 4-element set, the 4 diagonal pairs are fixed (must be included), and there are 4C2=6 off-diagonal unordered pairs, each independently included or not (with symmetric partner). Number = 1^4 * 2^6 = 64."
+        },
+        {
+          "number": 4,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let a point A lie between the parallel lines L1 and L2 such that its distances from L1 and L2 are 6 and 3 units respectively. Then the area (in sq units) of the equilateral triangle ABC, where points B and C lie on lines L1 and L2 respectively, is:",
+          "options": {
+            "1": "15*sqrt(6)",
+            "2": "27",
+            "3": "21*sqrt(3)",
+            "4": "12*sqrt(2)"
+          },
+          "answer": "3",
+          "solution": "Using sin(theta)=3/a and sin(60+theta)=9/a, solving gives a^2=84. Area of equilateral triangle = (sqrt3/4)*a^2 = (sqrt3/4)*84 = 21*sqrt(3)."
+        },
+        {
+          "number": 5,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let a = -i+2j+2k, b = 8i+7j-3k and c be a vector such that a x c = b. If c.(i+j+k) = 4, then |a+c|^2 is equal to:",
+          "options": {
+            "1": "33",
+            "2": "30",
+            "3": "35",
+            "4": "27"
+          },
+          "answer": "4",
+          "solution": "Let c = c1*i+c2*j+c3*k. From a x c = b: 2c3-2c2=8, c3+2c1=7, c2+2c1=3. From c.(i+j+k)=4: c1+c2+c3=4. Solving: c1=2, c2=-1, c3=3. a+c = i+j+5k, |a+c|^2 = 1+1+25 = 27."
+        },
+        {
+          "number": 6,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let a1,a2,a3,... be a G.P. of increasing positive terms such that a2*a3*a4 = 64 and a1+a3+a5 = 813/7. Then a3+a5+a7 is equal to:",
+          "options": {
+            "1": "3256",
+            "2": "3252",
+            "3": "3244",
+            "4": "3248"
+          },
+          "answer": "2",
+          "solution": "ar*ar^2*ar^3=64 => a^3 r^6=64 => ar^2=4. a+ar^2+ar^4=813/7, with ar^2=4, solving gives r^2=28. Then ar^2+ar^4+ar^6 = ar^2*(1+r^2+r^4) = 4*(1+28+784) = 3252."
+        },
+        {
+          "number": 7,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let c and d be vectors such that |c+d| = sqrt(29) and c x (2i+3j+4k) = (2i+3j+4k) x d. If lambda1, lambda2 (lambda1>lambda2) are the possible values of (c+d).(-7i+2j+3k), then the equation K^2*x^2 + (K^2-5K+lambda1)xy + (3K+lambda2/2)y^2 - 8x + 12y + lambda2 = 0 represents a circle, for K equal to:",
+          "options": {
+            "1": "4",
+            "2": "1",
+            "3": "-1",
+            "4": "2"
+          },
+          "answer": "2",
+          "solution": "c+d = lambda*(2i+3j+4k) with lambda=+-1 (from |c+d|=sqrt29). lambda(-14+6+12) = 4*lambda, giving lambda1=4, lambda2=-4. Substituting into the equation and applying circle conditions (coeff of x^2=coeff of y^2, coeff of xy=0): K^2-5K+4=0 => K=1,4; and K^2=3K-2 => K=1,2. Common value: K=1."
+        },
+        {
+          "number": 8,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let y=y(x) be the solution curve of the differential equation (1+x^2)dy + (y-tan^-1x)dx = 0, y(0)=1. Then the value of y(1) is:",
+          "options": {
+            "1": "2/e^(pi/4) + pi/4 - 1",
+            "2": "2/e^(pi/4) - pi/4 - 1",
+            "3": "4/e^(pi/2) + pi/2 - 1",
+            "4": "4/e^(pi/2) - pi/2 - 1"
+          },
+          "answer": "1",
+          "solution": "dy/dx + y/(x^2+1) = tan^-1(x)/(x^2+1). I.F. = e^(tan^-1 x). Solving by parts: y*e^(tan^-1x) = tan^-1(x)*e^(tan^-1x) - e^(tan^-1x) + c. Using y(0)=1 gives c=2. y(1) = 2/e^(pi/4) + pi/4 - 1."
+        },
+        {
+          "number": 9,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "The number of strictly increasing functions f from the set {1,2,3,4,5,6} to the set {1,2,...,9} such that f(i)!=i for 1<=i<=6, is equal to:",
+          "options": {
+            "1": "21",
+            "2": "27",
+            "3": "22",
+            "4": "28"
+          },
+          "answer": "4",
+          "solution": "Case f(1)=2: 7C5=21 ways. Case f(1)=3: 6C5=6 ways. Case f(1)=4: 5C5=1 way. Total strictly increasing functions with f(i)!=i for all i = 21+6+1 = 28."
+        },
+        {
+          "number": 10,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let f: R -> (0,infinity) be a twice differentiable function such that f(3)=18, f'(3)=0 and f''(3)=4. Then lim(x->1) log_e[(f(2+x)/f(3))^(18/(x-1)^2)] is equal to:",
+          "options": {
+            "1": "1",
+            "2": "9",
+            "3": "2",
+            "4": "18"
+          },
+          "answer": "3",
+          "solution": "The limit T = lim [f(x+2)/f(3)]^(18/(x-1)^2), a 1^infinity form. Taking log and applying L'Hospital's rule twice (using f'(3)=0), we get log_e(T) = f''(2+2)/2 evaluated appropriately = 4/2 = 2."
+        },
+        {
+          "number": 11,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let the foci of a hyperbola coincide with the foci of the ellipse x^2/36 + y^2/16 = 1. If the eccentricity of the hyperbola is 5, then the length of its latus rectum is:",
+          "options": {
+            "1": "12",
+            "2": "16",
+            "3": "96/sqrt(5)",
+            "4": "24*sqrt(5)"
+          },
+          "answer": "3",
+          "solution": "Eccentricity of ellipse e1 = sqrt(1-16/36) = sqrt(5)/3. ae1 = 6*sqrt(5)/3 = 2*sqrt(5) = focal distance = p*e (hyperbola), with e=5 for hyperbola: p*5=2sqrt(5) => p=2/sqrt(5). Using e^2=1+q^2/p^2: 25=1+5q^2/4 => q^2=96/5. Length of latus rectum = 2q^2/p = 96/sqrt(5)."
+        },
+        {
+          "number": 12,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "The value of the integral from -pi/6 to pi/6 of (pi+4x^11)/(1-sin(|x|+pi/6)) dx is equal to:",
+          "options": {
+            "1": "2*pi",
+            "2": "4*pi",
+            "3": "8*pi",
+            "4": "6*pi"
+          },
+          "answer": "2",
+          "solution": "Using the even/odd decomposition, the integral simplifies to 2pi*Integral(0 to pi/6) of 1/(1-sin(x+pi/6)) dx. Substituting t=x+pi/6 and simplifying using 1/(1-sint)=(1+sint)/cos^2t, the integral evaluates via sec^2 and sec*tan antiderivatives to 2pi[sqrt(3)+2-sqrt(3)] = 4*pi."
+        },
+        {
+          "number": 13,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let the mean and variance of 7 observations 2,4,10,x,12,14,y where x>y, be 8 and 16 respectively. Two numbers are chosen from {1,2,3,x-4,y,5} one after another without replacement, then the probability that the smaller number among the two chosen numbers is less than 4, is:",
+          "options": {
+            "1": "3/5",
+            "2": "4/5",
+            "3": "2/5",
+            "4": "1/3"
+          },
+          "answer": "2",
+          "solution": "Mean=8 gives x+y=14. Variance=16 gives x^2+y^2=100. Since (x+y)^2=x^2+y^2+2xy, xy=48. With x>y: x=8, y=6. Set becomes {1,2,3,4,6,5}. Total outcomes choosing 2 without replacement = 6*5=30. P(smaller<4) = 1 - P(smaller>=4) = 1 - 6/30 = 4/5."
+        },
+        {
+          "number": 14,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let (alpha,beta,gamma) be the coordinates of the foot of the perpendicular drawn from the point (5,4,2) on the line r = (-i+3j+k) + lambda(2i+3j-k). Then the length of the projection of the vector alpha*i+beta*j+gamma*k on the vector 6i+2j+3k is:",
+          "options": {
+            "1": "15/7",
+            "2": "4",
+            "3": "18/7",
+            "4": "3"
+          },
+          "answer": "3",
+          "solution": "General point on line: (2lambda-1, 3lambda+3, -lambda+1). AP vector perpendicular to line direction gives lambda=1, so foot = (1,6,0). Vector u = i+6j+0k. Projection onto w=6i+2j+3k: |u.w|/|w| = |6+12+0|/7 = 18/7."
+        },
+        {
+          "number": 15,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let PQ and MN be two straight lines touching the circle x^2+y^2-4x-6y-3=0 at points A and B respectively. Let O be the centre of the circle and angle AOB = pi/3. Then the locus of the point of intersection of the lines PQ and MN is:",
+          "options": {
+            "1": "3(x^2+y^2) - 18x - 12y + 25 = 0",
+            "2": "x^2+y^2 - 12x - 18y - 25 = 0",
+            "3": "x^2+y^2 - 18x - 12y - 25 = 0",
+            "4": "3(x^2+y^2) - 12x - 18y - 25 = 0"
+          },
+          "answer": "4",
+          "solution": "Circle center C(2,3), radius r=4. With angle AOB=pi/3 (half angle 30deg at O), cos30 = r/OR => OR = 8/sqrt(3). Setting OR^2=(h-2)^2+(k-3)^2 = 64/3 gives locus 3(x^2+y^2) - 12x - 18y - 25 = 0."
+        },
+        {
+          "number": 16,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "If the coefficient of x in the expansion of (ax^2+bx+c)(1-2x)^26 is -56 and the coefficients of x^2 and x^3 are both zero, then a+b+c is equal to:",
+          "options": {
+            "1": "1300",
+            "2": "1500",
+            "3": "1403",
+            "4": "1483"
+          },
+          "answer": "3",
+          "solution": "Expanding (1-2x)^26 = sum 26Cr(-2x)^r and matching coefficients: coeff of x^2 gives a-52b+1300c=0; coeff of x^3 gives -52a+1300b-20800c=0; coeff of x gives b-52c=-56. Solving simultaneously: a=1300, b=100, c=3, so a+b+c=1403."
+        },
+        {
+          "number": 17,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "If x^2+x+1=0, then the value of (x+1/x)^4 + (x^2+1/x^2)^4 + (x^3+1/x^3)^4 + ... + (x^25+1/x^25)^4 is:",
+          "options": {
+            "1": "128",
+            "2": "162",
+            "3": "175",
+            "4": "145"
+          },
+          "answer": "4",
+          "solution": "x = omega or omega^2 (cube roots of unity). The sum becomes (omega+omega^2)^4 repeated for non-multiples-of-3 indices (=(-1)^4=1, occurring 17 times) plus (omega^3+omega^6)^4=(1+1)^4=16 type terms occurring 8 times (for multiples of 3). Total = 17*1 + 8*16 = 17+128 = 145."
+        },
+        {
+          "number": 18,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "The value of cosec(10deg) - sqrt(3)*sec(10deg) is equal to:",
+          "options": {
+            "1": "4",
+            "2": "2",
+            "3": "8",
+            "4": "6"
+          },
+          "answer": "1",
+          "solution": "Simplify to [cos10 - sqrt3*sin10]/[sin10*cos10] = 4*[(1/2)cos10 - (sqrt3/2)sin10]/[2sin10cos10] = 4*sin(30-10)/sin20 = 4*sin20/sin20 = 4."
+        },
+        {
+          "number": 19,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "The sum of all the roots of the equation (x-1)^2 - 5|x-1| + 6 = 0, is:",
+          "options": {
+            "1": "4",
+            "2": "3",
+            "3": "1",
+            "4": "5"
+          },
+          "answer": "1",
+          "solution": "Let |x-1|=t: t^2-5t+6=0 => t=2 or t=3. |x-1|=2 gives x=3,-1. |x-1|=3 gives x=4,-2. Roots: 3,-1,4,-2. Sum = 3-1+4-2 = 4."
+        },
+        {
+          "number": 20,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let O be the vertex of the parabola x^2=4y and Q be any point on it. Let the locus of the point P, which divides the line segment OQ internally in the ratio 2:3, be the conic C. Then the equation of the chord of C, which is bisected at the point (1,2), is:",
+          "options": {
+            "1": "5x-y-3=0",
+            "2": "4x-5y+6=0",
+            "3": "x-2y+3=0",
+            "4": "5x-4y+3=0"
+          },
+          "answer": "4",
+          "solution": "Q=(2t,t^2). P divides OQ in ratio 2:3: h=4t/5, k=2t^2/5. Eliminating t gives 5x^2=8y (conic C). Using T=S1 (chord bisected at (1,2)): 5(x)(1)-4(y+2)=5(1)^2-8(2), simplifying gives 5x-4y+3=0."
+        },
+        {
+          "number": 21,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "Let f: R->R be a twice differentiable function such that the quadratic equation f(x)m^2 - 2f'(x)m + f''(x) = 0 in m has two equal roots for every x in R. If f(0)=1, f'(0)=2 and (alpha,beta) is the largest interval in which the function f(log_e(x) - x) is increasing, then alpha+beta is equal to ____.",
+          "answer": "1",
+          "solution": "Equal roots give (f'(x))^2 = f''(x)*f(x), leading to f'(x)/f(x) = f''(x)/f'(x). Integrating twice with initial conditions gives f(x)=e^(2x). Then g(x)=f(lnx-x)=e^(2(lnx-x)); g'(x) has sign of (1-x)/x, positive for x in (0,1]. So alpha=0, beta=1, alpha+beta=1."
+        },
+        {
+          "number": 22,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "Let a1=1 and for n>=1, a_(n+1) = (1/2)a_n + (n^2-2n-1)/(n^2(n+1)^2). Then |sum_{n=1}^{infinity} (a_n - 2/n^2)| is equal to ____.",
+          "answer": "2",
+          "solution": "Rearranging gives a_(n+1) - (1/2)a_n = 2/(n+1)^2 - 1/n^2. Multiplying by 2^(n-1) telescopically and summing gives a_n = 2/n^2 - 1/2^(n-1). So sum(a_n - 2/n^2) = -sum(1/2^(n-1)) = -2, and the absolute value is 2."
+        },
+        {
+          "number": 23,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "Let S = {(m,n): m,n in {1,2,3,...,50}}. If the number of elements (m,n) in S such that 6^m+9^n is a multiple of 5 is p, and the number of elements (m,n) in S such that m+n is a square of a prime number is q, then p+q is equal to ____.",
+          "answer": "1333",
+          "solution": "6^m mod5 = 1 always. 9^n mod5 cycles: needs n odd for the sum to be divisible by 5 pattern; analysis gives p = 50*25 = 1250. For q, m+n in {4,9,25,49} (squares of primes 2,3,5,7): number of (m,n) pairs are 3, 8, 24, 48 respectively, summing to q=83. p+q = 1250+83 = 1333."
+        },
+        {
+          "number": 24,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "For some alpha,beta in R, let A = [[alpha,2],[1,2]] and B = [[1,1],[1,beta]] be such that A^2-4A+2I = B^2-3B+I = O. Then (det(adj(A^3-B^3)))^2 is equal to ____.",
+          "answer": "225",
+          "solution": "Trace(A)=4 gives alpha=2; Trace(B)=3 gives beta=2. Using A^2=4A-2I, compute A^3=14A-8I=[[20,28],[14,20]]. Using B^2=3B-I, compute B^3=8B-3I=[[5,8],[8,13]]. A^3-B^3=[[15,20],[6,7]], determinant=105-120=-15. adj of 2x2 matrix has same determinant magnitude, so |adj(A^3-B^3)|=-15 (or 15), squared gives 225."
+        },
+        {
+          "number": 25,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "6*Integral from 0 to pi of |sin3x + sin2x + sinx| dx is equal to ____.",
+          "answer": "17",
+          "solution": "Simplify sin3x+sin2x+sinx = 2sin2x*cosx+sin2x = sinx(4cos^2x+2cosx) type expression. Substituting cosx=t and splitting the integral into regions where the expression changes sign, evaluating gives the integral = 17."
+        },
+        {
+          "number": 1,
+          "type": "MCQ",
+          "question": "Let n be the number obtained on rolling a fair die. If the probability that the system x - ny + z = 6; x + (n-2)y + (n+1)z = 8; (n-1)y + z = 1 has a unique solution is k/6, then the sum of k and all possible values of n is:",
+          "options": [
+            "21",
+            "24",
+            "20",
+            "22"
+          ],
+          "answer": "22",
+          "solution": "Determinant ≠ 0 gives n² - 3n + 2 ≠ 0 ⇒ n ≠ 1,2. So unique solution for n = 3,4,5,6, giving P = 4/6, so k = 4. Required sum = 4 + (3+4+5+6) = 22."
+        },
+        {
+          "number": 2,
+          "type": "MCQ",
+          "question": "If the mean deviation about the median of the numbers k, 2k, 3k, ..., 1000k is 500, then k² is equal to:",
+          "options": [
+            "16",
+            "4",
+            "1",
+            "9"
+          ],
+          "answer": "4",
+          "solution": "Median = 1001k/2. Mean deviation about median = 500k/2 = 500 ⇒ k = 2 ⇒ k² = 4."
+        },
+        {
+          "number": 3,
+          "type": "MCQ",
+          "question": "The number of elements in the relation R = {(x,y) : 4x² + y² < 52, x,y ∈ Z} is",
+          "options": [
+            "77",
+            "89",
+            "67",
+            "86"
+          ],
+          "answer": "77",
+          "solution": "Counting integer pairs for x = 0,±1,±2,±3 gives 15+26+22+14 = 77."
+        },
+        {
+          "number": 4,
+          "type": "MCQ",
+          "question": "Let S = {z ∈ C : 4z² + z̄ = 0}. Then Σ_{z∈S} |z|² is equal to:",
+          "options": [
+            "3/16",
+            "7/64",
+            "1/16",
+            "5/64"
+          ],
+          "answer": "3/16",
+          "solution": "Solving 4x²-4y²+x=0 and y(8x-1)=0 gives z₁=0, z₂=-1/4, z₃,z₄ = 1/8 ± (√3/8)i. Sum of |z|² = 0 + 1/16 + 1/16 + 1/16 = 3/16."
+        },
+        {
+          "number": 5,
+          "type": "MCQ",
+          "question": "If lim(x→0) [e^((a-1)x) + 2cos(bx) + (c-2)e^(-x)] / [x cos x - log_e(1+x)] = 2, then a² + b² + c² is equal to:",
+          "options": [
+            "5",
+            "3",
+            "7",
+            "9"
+          ],
+          "answer": "7",
+          "solution": "Expanding series and matching coefficients: c = -1, a = -2, b² = 2. So a² + b² + c² = 4 + 2 + 1 = 7."
+        },
+        {
+          "number": 6,
+          "type": "MCQ",
+          "question": "If y = y(x) satisfies the given differential equation involving 16(√(x+9√x))(4+√(9+√x)) cos y dy = (1+2sin y)dx, x>0, and y(256) = π/2, y(49) = α, then 2 sin α is equal to:",
+          "options": [
+            "2√2 - 1",
+            "2(√2-1)",
+            "3(√2-1)",
+            "√2 - 1"
+          ],
+          "answer": "Dropped by JEE (equation printed incorrectly; correct form gives 2sinα = 2√2 - 1)",
+          "solution": "Provided equation as printed is incorrect (√(x·√x + 9x) should replace √(x+9√x)); question dropped by JEE. With corrected equation, solving gives 2sinα + 1 = 2√2, so 2sinα = 2√2 - 1."
+        },
+        {
+          "number": 7,
+          "type": "MCQ",
+          "question": "Among the statements — (S1): If A(5,-1) and B(-2,3) are two vertices of a triangle whose orthocentre is (0,0), then its third vertex is (-4,-7). (S2): If positive numbers 2a, b, c are three consecutive terms of an A.P., then the lines ax+by+c=0 are concurrent at (2,-2).",
+          "options": [
+            "Only (S1) is correct",
+            "Only (S2) is correct",
+            "Both are incorrect",
+            "Both are correct"
+          ],
+          "answer": "Both are correct",
+          "solution": "Statement 1: using orthocentre perpendicularity conditions, third vertex = (-4,-7) — correct. Statement 2: 2a-2b+c=0 matches line family through (2,-2) — correct."
+        },
+        {
+          "number": 8,
+          "type": "MCQ",
+          "question": "Let a = 2î - ĵ + k̂ and b = λĵ + 2k̂, λ ∈ Z be two vectors. Let c = a × b and d be a vector of magnitude 2 in yz-plane. If |c| = √53, then the maximum possible value of (c·d)² is equal to:",
+          "options": [
+            "26",
+            "104",
+            "208",
+            "52"
+          ],
+          "answer": "208",
+          "solution": "Solving 5λ²+4λ-33=0 gives λ=-3 (integer), c = î - 4ĵ - 6k̂. Maximizing (4y+6z)² with y²+z²=4 gives max = (4²+6²)(y²+z²) = 52×4 = 208."
+        },
+        {
+          "number": 9,
+          "type": "MCQ",
+          "question": "If X = [X,Y,Z]^T is a solution of the system of equations AX=B, where adj A = [[4,2,2],[-5,0,5],[1,-2,3]] and B = [4,0,2]^T, then |x+y+z| is equal to:",
+          "options": [
+            "3",
+            "3/2",
+            "1",
+            "2"
+          ],
+          "answer": "2",
+          "solution": "X = A⁻¹B = ±(adjA/|A|)B = ±(2,-1,1). So |x+y+z| = 2."
+        },
+        {
+          "number": 10,
+          "type": "MCQ",
+          "question": "Let L be the line (x+1)/2 = (y+1)/3 = (z+3)/6 and let S be the set of all points (a,b,c) on L, whose distance from the line (x+1)/2 = (y+1)/3 = (z-9)/0 along the line L is 7. Then Σ(a,b,c)∈S (a+b+c) is equal to:",
+          "options": [
+            "34",
+            "28",
+            "40",
+            "6"
+          ],
+          "answer": "34",
+          "solution": "Intersection point M(3,5,9). Solving PM=7 gives K=1,3, points (1,2,3) and (5,8,15); sum of all coordinates = 34."
+        },
+        {
+          "number": 11,
+          "type": "MCQ",
+          "question": "Let P(10, 2√15) be a point on the hyperbola x²/a² - y²/b² = 1, whose foci are S and S'. If the length of its latus rectum is 8, then the square of the area of ΔPSS' is equal to:",
+          "options": [
+            "4200",
+            "900",
+            "1462",
+            "2700"
+          ],
+          "answer": "2700",
+          "solution": "Using the point on hyperbola and latus rectum = 8, solve for a=5, b²=20; hyperbola x²/25 - y²/20 = 1. Focal length SS' = 6√5. Area = 30√3, so square of area = 2700."
+        },
+        {
+          "number": 12,
+          "type": "MCQ",
+          "question": "The area of the region A = {(x,y) : 4x²+y² ≤ 8 and y² ≤ 4x} is:",
+          "options": [
+            "π/2 + 2",
+            "π + 2/3",
+            "π + 4",
+            "π/2 + 1/3"
+          ],
+          "answer": "π + 2/3",
+          "solution": "Integrating the two curves' bounded region gives area = π + 2/3 sq units."
+        },
+        {
+          "number": 13,
+          "type": "MCQ",
+          "question": "Let α, β be the roots of the quadratic equation 12x² - 20x + 3λ = 0, λ ∈ Z. If 1/2 ≤ |β-α| ≤ 3/2, then the sum of all possible values of λ is:",
+          "options": [
+            "6",
+            "1",
+            "3",
+            "4"
+          ],
+          "answer": "3",
+          "solution": "Using (α+β)² - 4αβ bounds gives 19/36 ≤ λ ≤ 91/36, so λ = 1,2; sum = 3."
+        },
+        {
+          "number": 14,
+          "type": "MCQ",
+          "question": "Let the domain of the function f(x) = log₃log₅(7 - log₂(x²-10x+85)) + sin⁻¹(|3x-7|/|17-x|) be (α, β]. Then α+β is equal to:",
+          "options": [
+            "10",
+            "12",
+            "9",
+            "8"
+          ],
+          "answer": "9",
+          "solution": "Domain from first term: x ∈ (3,7); from second term: x ∈ [-5,6]. Combined domain: (3,6]. α=3, β=6, α+β=9."
+        },
+        {
+          "number": 15,
+          "type": "MCQ",
+          "question": "Let [•] denote the greatest integer function, and let f(x) = min{√2x, x²}. Let S = {x ∈ (-2,2) : the function g(x) = |x|[x²] is discontinuous at x}. Then Σ_{x∈S} f(x) equals:",
+          "options": [
+            "2-√2",
+            "2√6-3√2",
+            "1-√2",
+            "√6-2√2"
+          ],
+          "answer": "1-√2",
+          "solution": "Points of discontinuity: S = {-1,1,-√2,√2,-√3,√3}. Sum of f(x) over S = -√2+1-2+2-√6+√6 = 1-√2."
+        },
+        {
+          "number": 16,
+          "type": "MCQ",
+          "question": "Let S and S' be the foci of the ellipse x²/25 + y²/9 = 1 and P(α,β) be a point on the ellipse in the first quadrant. If (SP)² + (S'P)² - SP·S'P = 37, then α²+β² is equal to:",
+          "options": [
+            "15",
+            "11",
+            "17",
+            "13"
+          ],
+          "answer": "13",
+          "solution": "PS+PS'=10; using (PS+PS')²-3PS·PS'=37 gives PS·PS'=21, leading to α²=25/4, β²=27/4, so α²+β²=13."
+        },
+        {
+          "number": 17,
+          "type": "MCQ",
+          "question": "Let the locus of the mid-point of the chord through the origin O of the parabola y²=4x be the curve S. Let P be any point on S. Then the locus of the point, which internally divides OP in the ratio 3:1, is:",
+          "options": [
+            "3y²=2x",
+            "2y²=3x",
+            "3x²=2y",
+            "2x²=3y"
+          ],
+          "answer": "2y²=3x",
+          "solution": "Locus of midpoint of chord: y²=2x (curve S). Locus of point dividing OP in ratio 3:1 gives 2y²=3x."
+        },
+        {
+          "number": 18,
+          "type": "MCQ",
+          "question": "Let f(x) = [x]² - [x+3] - 3, x ∈ R, where [•] is the greatest integer function. Then:",
+          "options": [
+            "f(x)>0 only for x∈[4,∞)",
+            "f(x)<0 only for x∈[-1,3)",
+            "∫₀² f(x)dx = -6",
+            "f(x)=0 for finitely many values of x"
+          ],
+          "answer": "f(x)<0 only for x∈[-1,3)",
+          "solution": "f(x) = ([x]+2)([x]-3). f(x)<0 ⇒ [x]∈(-2,3) ⇒ x∈[-1,3). ∫₀²f(x)dx = -12 (not -6). f(x)=0 for infinitely many x."
+        },
+        {
+          "number": 19,
+          "type": "MCQ",
+          "question": "Let f and g be functions satisfying f(x+y)=f(x)f(y), f(1)=7 and g(x+y)=g(xy), g(1)=1, for all x,y∈N. If Σ_{x=1}^{n} f(x)/g(x) = 19607, then n is equal to:",
+          "options": [
+            "7",
+            "5",
+            "6",
+            "4"
+          ],
+          "answer": "5",
+          "solution": "f(x)=7^x, g(x)=1 for all x. Σ7^x = 19607 gives 7^n = 16807, so n=5."
+        },
+        {
+          "number": 20,
+          "type": "MCQ",
+          "question": "Let Cr denote the coefficient of x^r in the binomial expansion of (1+x)^n. If Pn = C0 - C1 + (2²/3)C2 - (2³/4)C3 + ... + ((-2)^n/(n+1))Cn, then the value of Σ_{n=1}^{25} 1/P_{2n} equals.",
+          "options": [
+            "580",
+            "525",
+            "650",
+            "675"
+          ],
+          "answer": "675",
+          "solution": "Pn simplifies to (1-(-1)^(n+1))/(2(n+1)), giving P_{2n} = 1/(2n+1). Σ(2n+1) for n=1 to 25 = 3+5+...+51 = 25×27 = 675."
+        },
+        {
+          "number": 21,
+          "type": "Numerical",
+          "question": "Let a vector a = √2 î - ĵ + λk̂, λ>0, make an obtuse angle with the vector b = -λ²î + 4√2ĵ + 4√2k̂ and an angle θ, π/6<θ<π/2, with the positive z-axis. If the set of all possible values of λ is (α,β) - {γ}, then α+β+γ is equal to ____.",
+          "answer": "5",
+          "solution": "From angle condition λ∈(0,3); from obtuse angle condition λ≠2. So λ∈(0,3)-{2}, giving α=0, β=3, γ=2, α+β+γ=5."
+        },
+        {
+          "number": 22,
+          "type": "Numerical",
+          "question": "Let [•] be the greatest integer function. If α = ∫₀⁶⁴ (x^(1/3) - [x^(1/3)]) dx, then (1/π)∫₀^{απ} sin²θ/(sin⁶θ+cos⁶θ) dθ is equal to ____.",
+          "answer": "36",
+          "solution": "∫₀⁶⁴x^(1/3)dx=192, ∫₀⁶⁴[x^(1/3)]dx=156, so α=36. Evaluating the trigonometric integral gives J=π/2, and final expression E=36."
+        },
+        {
+          "number": 23,
+          "type": "Numerical",
+          "question": "Let cos(α+β) = -1/10 and sin(α-β) = 3/8, where 0<α<π/3 and 0<β<π/4. If tan2α = 3(1-r√5)/[√11(s+√5)], r,s∈N, then r+s is equal to ____.",
+          "answer": "20",
+          "solution": "Using tan2α = tan[(α+β)+(α-β)] and computing tan(α+β), tan(α-β), simplifying gives tan2α = 3(1-11√5)/[√11(9+√5)]. So r=11, s=9, r+s=20."
+        },
+        {
+          "number": 24,
+          "type": "Numerical",
+          "question": "Suppose a,b,c are in A.P. and a², 2b², c² are in G.P. If a<b<c and a+b+c=1, then 9(a²+b²+c²) is equal to ____.",
+          "answer": "9",
+          "solution": "b=1/3, and solving 4b⁴=a²c² gives d²=1/3, d=1/√3 (since a<b<c). Then 9(a²+b²+c²) = 9[1/3+2/3] = 9."
+        },
+        {
+          "number": 25,
+          "type": "Numerical",
+          "question": "Let S be the set of the first 11 natural numbers. Then the number of elements in A = {B⊆S : n(B)≥2 and the product of all elements of B is even} is ____.",
+          "answer": "1979",
+          "solution": "Total subsets = 2¹¹ = 2048. Subtract subsets with only odd elements (2⁶=64, includes null set) and subsets with exactly one element that is even (5). Answer = 2048-64-5 = 1979."
+        },
+        {
+          "number": 1,
+          "type": "MCQ",
+          "question": "Let AB = 2i + 4j - 5k and AD = i + 2j + λk, λ ∈ R. Let the projection of the vector v = i + j + k on the diagonal AC of the parallelogram ABCD be of length one unit. If α, β (α > β) are the roots of λ^2 x^2 - 6λx + 5 = 0, then 2α - β is equal to",
+          "options": {
+            "1": "1",
+            "2": "4",
+            "3": "3",
+            "4": "6"
+          },
+          "answer": "3",
+          "solution": "AC = 3i + 6j + (λ-5)k. Projection of v on AC = 1 gives 3+6+λ-5 = sqrt(9+36+(λ-5)^2), solving gives λ = 3. Equation becomes 9x^2 - 18x + 5 = 0, roots x = 1/3, 5/3. So 2α - β = (10-1)/3 = 3."
+        },
+        {
+          "number": 2,
+          "type": "MCQ",
+          "question": "Let the relation R on the set M = {1,2,3,...,16} be given by R = {(x,y): 4y = 5x - 3, x,y ∈ M}. Then the minimum number of elements required to be added in R, in order to make the relation symmetric, is equal to",
+          "options": {
+            "1": "1",
+            "2": "2",
+            "3": "4",
+            "4": "3"
+          },
+          "answer": "2",
+          "solution": "R = {(3,3),(7,8),(11,13)}. To make it symmetric, (8,7) and (13,11) must be added, i.e. 2 elements."
+        },
+        {
+          "number": 3,
+          "type": "MCQ",
+          "question": "Let the line x = -1 divide the area of the region {(x,y): 1+x^2 ≤ y ≤ 3-x} in the ratio m:n, gcd(m,n)=1. Then m+n is equal to",
+          "options": {
+            "1": "25",
+            "2": "28",
+            "3": "26",
+            "4": "27"
+          },
+          "answer": "27",
+          "solution": "m/n = Integral(-1 to 1)[(3-x)-(1+x^2)]dx / Integral(-2 to -1)[(3-x)-(1+x^2)]dx = 20/7. So m+n = 20+7 = 27."
+        },
+        {
+          "number": 4,
+          "type": "MCQ",
+          "question": "Two distinct numbers a and b are selected at random from 1,2,3,...,50. The probability that their product ab is divisible by 3 is",
+          "options": {
+            "1": "561/1225",
+            "2": "664/1225",
+            "3": "272/1225",
+            "4": "8/25"
+          },
+          "answer": "664/1225",
+          "solution": "Required probability = 1 - P(product not divisible by 3). Multiples of 3 = 16, not multiples of 3 = 34. Probability = 1 - C(34,2)/C(50,2) = 664/1225."
+        },
+        {
+          "number": 5,
+          "type": "MCQ",
+          "question": "Let f(x) = x^2025 - x^2000, x ∈ [0,1], and the minimum value of f(x) in [0,1] be (80)^80 (n)^-81. Then n is equal to",
+          "options": {
+            "1": "-81",
+            "2": "-40",
+            "3": "-41",
+            "4": "-80"
+          },
+          "answer": "-81",
+          "solution": "f'(x)=0 gives x = (2000/2025)^(1/25) = α. f(0)=0, f(1)=0, f(α) = (80/81)^80 · (-1/81) = 80^80 · (-81)^-81. So n = -81."
+        },
+        {
+          "number": 6,
+          "type": "MCQ",
+          "question": "Let P(α,β,γ) be the point on the line (x-1)/2 = (y+1)/-3 = z at a distance 4√14 from the point (1,-1,0) and nearer to the origin. Then the shortest distance between the lines (x-α)/1 = (y-β)/2 = (z-γ)/3 and (x+5)/2 = (y-10)/1 = (z-3)/1 is equal to",
+          "options": {
+            "1": "7√(5/4)",
+            "2": "4√(7/5)",
+            "3": "4√(5/7)",
+            "4": "2√(7/4)"
+          },
+          "answer": "4√(7/5)",
+          "solution": "P = (2λ+1, -3λ-1, λ). From distance condition, λ = -4 (nearer to origin), so P(-7,11,-4). Shortest distance computed via cross product = 28/√35 = 4√7/√5."
+        },
+        {
+          "number": 7,
+          "type": "MCQ",
+          "question": "If a random variable x has probability distribution p(0)=0, p(1)=2k, p(2)=k, p(3)=3k, p(4)=2k^2, p(5)=2k, p(6)=k^2+k, p(7)=7k^2, then P(3<x≤6) is equal to",
+          "options": {
+            "1": "0.34",
+            "2": "0.22",
+            "3": "0.64",
+            "4": "0.33"
+          },
+          "answer": "0.33",
+          "solution": "Sum of probabilities = 1 gives 10k^2+9k-1=0, so k=1/10. P(3<x≤6) = 3k+3k^2 = 0.3+0.03 = 0.33."
+        },
+        {
+          "number": 8,
+          "type": "MCQ",
+          "question": "The number of distinct real solutions of the equation x|x+4| + 3|x+2| + 10 = 0 is",
+          "options": {
+            "1": "3",
+            "2": "1",
+            "3": "0",
+            "4": "2"
+          },
+          "answer": "1",
+          "solution": "Case x<-4: x^2+7x-4=0 gives two roots, both must be checked against domain (rejected as not satisfying case). Case -4≤x<-2: x^2+x+4=0, D<0, no solution. Case x≥-2: x^2+7x+16=0, D<0, no solution. Only 1 valid solution overall."
+        },
+        {
+          "number": 9,
+          "type": "MCQ",
+          "question": "Let f:[1,∞)→R be differentiable. If 6∫(1 to x) f(t)dt = 3x f(x) + x^3 - 4 for all x≥1, then the value of f(2) - f(3) is",
+          "options": {
+            "1": "-4",
+            "2": "-3",
+            "3": "4",
+            "4": "3"
+          },
+          "answer": "3",
+          "solution": "Differentiating: 6f(x) = 3xf'(x)+3f(x)+3x^2, giving d(y/x)/dx = -1 where y=f(x). Solving: y/x = -x + C. Using f(1)=1 gives C=2, so f(x) = -x^2+2x. f(2)-f(3) = 0-(-3) = 3."
+        },
+        {
+          "number": 10,
+          "type": "MCQ",
+          "question": "If the line αx + 2y = 1, α ∈ R, does not meet the hyperbola x^2 - 9y^2 = 9, then a possible value of α is",
+          "options": {
+            "1": "0.6",
+            "2": "0.8",
+            "3": "0.5",
+            "4": "0.7"
+          },
+          "answer": "0.8",
+          "solution": "Substituting y=(1-αx)/2 into hyperbola gives (4-9α^2)x^2+18αx-45=0. For no intersection, D<0, giving α^2 > 5/9, i.e. α ∈ (-∞,-√5/3) ∪ (√5/3,∞). √5/3 ≈ 0.74, so α=0.8 works."
+        },
+        {
+          "number": 11,
+          "type": "MCQ",
+          "question": "If the image of the point P(1,2,a) in the line (x-6)/3 = (y-7)/2 = (7-z)/2 is Q(5,b,c), then a^2+b^2+c^2 is equal to",
+          "options": {
+            "1": "293",
+            "2": "264",
+            "3": "298",
+            "4": "283"
+          },
+          "answer": "298",
+          "solution": "Midpoint M=(3, b/2+1, (c+a)/2) lies on line, and PQ ⊥ line. Solving simultaneous equations: b=8, c+a=18, c-a=12. So c=15, a=3. a^2+b^2+c^2 = 9+64+225 = 298."
+        },
+        {
+          "number": 12,
+          "type": "MCQ",
+          "question": "Let the set of all values of r, for which the circles (x+1)^2+(y+4)^2=r^2 and x^2+y^2-4x-2y-4=0 intersect at two distinct points, be the interval (α,β). Then αβ is equal to",
+          "options": {
+            "1": "25",
+            "2": "20",
+            "3": "21",
+            "4": "24"
+          },
+          "answer": "25",
+          "solution": "Second circle: (x-2)^2+(y-1)^2=9 (center (2,1), radius 3). |r-3| < √34 < r+3, giving r ∈ (√34-3, √34+3). αβ = (√34-3)(√34+3) = 34-9 = 25."
+        },
+        {
+          "number": 13,
+          "type": "MCQ",
+          "question": "If A = [[2,3],[3,5]], then the determinant of the matrix (A^2025 - 3A^2024 + A^2023) is",
+          "options": {
+            "1": "28",
+            "2": "12",
+            "3": "24",
+            "4": "16"
+          },
+          "answer": "16",
+          "solution": "A^2 = [[13,21],[21,34]]. |A^2025-3A^2024+A^2023| = |A|^2023 |A^2-3A+I|. |A|=1. A^2-3A+I = [[8,12],[12,20]], determinant = 160-144=16."
+        },
+        {
+          "number": 14,
+          "type": "MCQ",
+          "question": "If the domain of f(x) = sin^-1((5-x)/(3+2x)) + 1/log_e(10-x) is (-∞,α] ∪ [β,γ) - {δ}, then 6(α+β+γ+δ) is equal to",
+          "options": {
+            "1": "70",
+            "2": "66",
+            "3": "67",
+            "4": "68"
+          },
+          "answer": "70",
+          "solution": "Conditions: -1≤(5-x)/(2x+3)≤1, x<10, x≠9. Solving gives x ≤ -8 or x ≥ 2/3, combined with x<10, x≠9: (-∞,-8] ∪ [2/3,10) - {9}. 6(-8+2/3+10+9) = 6(11.667) = 70."
+        },
+        {
+          "number": 15,
+          "type": "MCQ",
+          "question": "The value of ∫(-π/2 to π/2) 1/([x]+4) dx, where [.] denotes the greatest integer function, is",
+          "options": {
+            "1": "(21π-1)/60",
+            "2": "(π-7)/60",
+            "3": "7(3π-1)/60",
+            "4": "7(π-3)/60"
+          },
+          "answer": "7(3π-1)/60",
+          "solution": "Split integral over intervals where [x] is constant: I = ∫(-π/2 to -1) dx/2 + ∫(-1 to 0) dx/3 + ∫(0 to 1) dx/4 + ∫(1 to π/2) dx/5 = 7π/20 - 7/60 = 7(3π-1)/60."
+        },
+        {
+          "number": 16,
+          "type": "MCQ",
+          "question": "The coefficient of x^48 in (1+x) + 2(1+x)^2 + 3(1+x)^3 + ... + 100(1+x)^100 is equal to",
+          "options": {
+            "1": "100.100C49 - 100C50",
+            "2": "100C50 + 101C49",
+            "3": "100.100C49 - 100C48",
+            "4": "100.101C49 - 101C50"
+          },
+          "answer": "100.101C49 - 101C50",
+          "solution": "Let 1+x=r. S = sum k r^k for k=1 to 100. Using S - rS trick: S = -(1+x)^101/x^2 + (x+1)/x^2 + 100(1+x)^101/x. Coefficient of x^48 in S = 100.101C49 - 101C50."
+        },
+        {
+          "number": 17,
+          "type": "MCQ",
+          "question": "If the chord joining the points P1(x1,y1) and P2(x2,y2) on the parabola y^2=12x subtends a right angle at the vertex of the parabola, then x1x2 - y1y2 is equal to",
+          "options": {
+            "1": "288",
+            "2": "280",
+            "3": "284",
+            "4": "292"
+          },
+          "answer": "288",
+          "solution": "Using parametric points (3t1^2,6t1),(3t2^2,6t2), condition gives t1t2=-4. x1x2 - y1y2 = 9(t1t2)^2 - 36 t1t2 = 9(16)-36(-4) = 144+144 = 288."
+        },
+        {
+          "number": 18,
+          "type": "MCQ",
+          "question": "The number of solutions of tan^-1(4x) + tan^-1(6x) = π/6, where -1/(2√6) < x < 1/(2√6), is equal to",
+          "options": {
+            "1": "3",
+            "2": "0",
+            "3": "1",
+            "4": "2"
+          },
+          "answer": "1",
+          "solution": "tan^-1((4x+6x)/(1-24x^2)) = π/6 gives 10x/(1-24x^2) = 1/√3, leading to 24x^2+10√3x-1=0. Only one root lies in the given interval."
+        },
+        {
+          "number": 19,
+          "type": "MCQ",
+          "question": "Let the solution curve of the differential equation x dy - y dx = √(x^2+y^2) dx, x>0, y(1)=0, be y=y(x). Then y(3) is equal to",
+          "options": {
+            "1": "4",
+            "2": "6",
+            "3": "1",
+            "4": "2"
+          },
+          "answer": "4",
+          "solution": "d(y/x) = √(1+(y/x)^2) (1/x) dx leads to ln(y/x + √(1+(y/x)^2)) = ln(kx). Using y(1)=0 gives k=1, so y+√(x^2+y^2)=x^2. At x=3: y+√(9+y^2)=9 gives y=4."
+        },
+        {
+          "number": 20,
+          "type": "MCQ",
+          "question": "If the sum of the first four terms of an A.P. is 6 and the sum of its first six terms is 4, then the sum of its first twelve terms is",
+          "options": {
+            "1": "-20",
+            "2": "-24",
+            "3": "-26",
+            "4": "-22"
+          },
+          "answer": "-22",
+          "solution": "S4=6 gives 2a+3d=3. S6=4 gives 2a+5d=4/3. Solving, d=-5/6, a=11/4. S12 = 6(2a+11d) = 6(22/4 - 55/6) = -22."
+        },
+        {
+          "number": 21,
+          "type": "Numerical",
+          "question": "Let α = (-1+i√3)/2 and β = (-1-i√3)/2, i=√-1. If (7-7α+9β)^20 + (9+7α-7β)^20 + (-7+9α+7β)^20 + (14+7α+7β)^20 = m^10, then m is ____.",
+          "options": null,
+          "answer": "49",
+          "solution": "Using α=ω, β=ω^2 (cube roots of unity), simplifying each term shows most vanish and the equation reduces to 7^20 = m^10, giving m = 7^2 = 49."
+        },
+        {
+          "number": 22,
+          "type": "Numerical",
+          "question": "Let A be a 3×3 matrix such that A+A^T=O. If A[1,-1,0]^T=[3,3,2]^T, A^2[1,-1,0]^T=[-3,19,-24]^T, and det(adj(2adj(A+I))) = 2^α · 3^β · 11^γ, α,β,γ non-negative integers, then α+β+γ is equal to ____.",
+          "options": null,
+          "answer": "18",
+          "solution": "Since A is skew-symmetric, A = [[0,a,b],[-a,0,c],[-b,-c,0]]. Using given vector equations: a=-3,b=3,c=5. |A+I| = 44 = 2^2·11. det(adj(2adj(A+I))) = 64|A+I|^4 = 2^6 · (2^2·11)^4 = 2^14·11^4, giving α=14,β=0,γ=4, so α+β+γ=18."
+        },
+        {
+          "number": 23,
+          "type": "Numerical",
+          "question": "If ∫(sinx)^(-11/2)(cosx)^(-5/2) dx = -(p1/q1)(cotx)^(9/2) - (p2/q2)(cotx)^(5/2) - (p3/q3)(cotx)^(1/2) + (p4/q4)(cotx)^(-3/2) + C, where pi,qi are coprime positive integers, then 15p1p2p3p4/(q1q2q3q4) is equal to ____.",
+          "options": null,
+          "answer": "16",
+          "solution": "Rewriting integrand as (tanx)^(-11/2) sec^8x dx and substituting t=tanx gives the antiderivative -(2/9)(cotx)^(9/2) - (6/5)(cotx)^(5/2) - 6(cotx)^(1/2) + (2/3)(cotx)^(-3/2) + C. So p1=2,q1=9; p2=6,q2=5; p3=6,q3=1; p4=2,q4=3. 15p1p2p3p4/(q1q2q3q4) = 15·2·6·6·2/(9·5·1·3) = 16."
+        },
+        {
+          "number": 24,
+          "type": "Numerical",
+          "question": "If (cos^2 48° - sin^2 12°)/(sin^2 24° - sin^2 6°) = (α+β√5)/2, where α,β ∈ N, then α+β is equal to ____.",
+          "options": null,
+          "answer": "4",
+          "solution": "Using cos(A+B)cos(A-B)=cos^2A-sin^2B and sin(A+B)sin(A-B)=sin^2A-sin^2B: expression = cos60°cos36°/(sin30°sin18°) = (3+√5)/2. So α=3,β=1, α+β=4."
+        },
+        {
+          "number": 25,
+          "type": "Numerical",
+          "question": "Let ABC be a triangle with 4 points p1,p2,p3,p4 on side AB, 5 points p5,...,p9 on side BC, and 4 points p10,...,p13 on side AC. None of these is a vertex of the triangle. The total number of pentagons formed by taking all vertices from p1,...,p13 is ____.",
+          "options": null,
+          "answer": "660",
+          "solution": "Considering possible distributions of 5 vertices among the 3 sides (2,2,1),(2,1,2),(1,2,2): Case1: C(4,2)C(5,2)C(4,1)=240; Case2: C(4,2)C(5,1)C(4,2)=180; Case3: C(4,1)C(5,2)C(4,2)=240. Total = 240+180+240 = 660."
+        },
+        {
+          "number": 1,
+          "type": "MCQ",
+          "question": "If f(x) = [a|x|+x²-2(sin|x|)(cos|x|)]/x for x≠0, and f(x)=b for x=0, is continuous at x=0, then a+b is equal to:",
+          "options": [
+            "1",
+            "2",
+            "0",
+            "4"
+          ],
+          "answer": "2",
+          "solution": "Using left/right limits with expansion: -a+2 = a-2 = b gives 2a=4, so a=2, b=0, and a+b=2."
+        },
+        {
+          "number": 2,
+          "type": "MCQ",
+          "question": "Let π/2<θ<π and cotθ = -1/(2√2). Then the value of sin(15θ/2)(cos8θ+sin8θ) + cos(15θ/2)(cos8θ-sin8θ) is equal to:",
+          "options": [
+            "(1-√2)/√3",
+            "-√2/√3",
+            "(√2-1)/√3",
+            "√2/√3"
+          ],
+          "answer": "(1-√2)/√3",
+          "solution": "Expression simplifies to cos(θ/2)-sin(θ/2) = -√(1-sinθ). Using cotθ=-1/(2√2), sinθ=2√2/3, giving -√((3-2√2)/3) = (1-√2)/√3."
+        },
+        {
+          "number": 3,
+          "type": "MCQ",
+          "question": "Let a = î-2ĵ+3k̂, b = 2î+ĵ-k̂, c = λî+ĵ+k̂ and v = a×b. If v·c=11 and the length of the projection of b on c is p, then 9p² is equal to:",
+          "options": [
+            "9",
+            "6",
+            "4",
+            "12"
+          ],
+          "answer": "12",
+          "solution": "Solving determinant equation gives λ=1. Projection of b on c = b·ĉ = 2/√3 = p. So 9p² = 9(4/3) = 12."
+        },
+        {
+          "number": 4,
+          "type": "MCQ",
+          "question": "Let A(1,2) and C(-3,-6) be two diagonally opposite vertices of a rhombus, whose sides AD and BC are parallel to the line 7x-y=14. If B(α,β) and D(γ,δ) are the other two vertices, then |α+β+γ+δ| is equal to:",
+          "options": [
+            "9",
+            "3",
+            "6",
+            "1"
+          ],
+          "answer": "6",
+          "solution": "Midpoint of A and C is (-1,-2), so (α+γ)/2=-1 and (β+δ)/2=-2, giving |α+β+γ+δ|=|-2-4|=6."
+        },
+        {
+          "number": 5,
+          "type": "MCQ",
+          "question": "Consider two sets A = {x∈Z : ||x-3|-3|≤1} and B = {x∈R-{1,2} : [(x-2)(x-4)/(x-1)]log_e(|x-2|)=0}. Then the number of onto functions f:A→B is equal to:",
+          "options": [
+            "62",
+            "79",
+            "32",
+            "81"
+          ],
+          "answer": "62",
+          "solution": "A={-1,0,1,5,6,7} (6 elements), B={3,4} (2 elements). Number of onto functions from a 6-element set to a 2-element set = 2⁶-2 = 62."
+        },
+        {
+          "number": 6,
+          "type": "MCQ",
+          "question": "The system of linear equations x+y+z=6; 2x+5y+az=36; x+2y+3z=b has:",
+          "options": [
+            "unique solution for a=8 and b=16",
+            "infinitely many solutions for a=8 and b=14",
+            "infinitely many solutions for a=8 and b=16",
+            "unique solution for a=8 and b=14"
+          ],
+          "answer": "infinitely many solutions for a=8 and b=14",
+          "solution": "D=0 when a=8. For a=8, D1, D2, D3 are all zero only when b=14, giving infinitely many solutions."
+        },
+        {
+          "number": 7,
+          "type": "MCQ",
+          "question": "The sum of all the real solutions of the equation log_(x+3)(6x²+28x+30) = 5 - 2log_(6x+10)(x²+6x+9) is equal to:",
+          "options": [
+            "2",
+            "1",
+            "0",
+            "4"
+          ],
+          "answer": "0",
+          "solution": "Substituting A=log_(x+3)(6x+10) gives A+4/A=4 or A=2, solving to x²=1, x=±1. Sum of roots = 0."
+        },
+        {
+          "number": 8,
+          "type": "MCQ",
+          "question": "If the points of intersection of the ellipses x²+2y²-6x-12y+23=0 and 4x²+2y²-20x-12y+35=0 lie on a circle of radius r and centre (a,b), then the value of ab+18r² is",
+          "options": [
+            "53",
+            "51",
+            "52",
+            "55"
+          ],
+          "answer": "55",
+          "solution": "Using family of curves S1+λS2=0 with λ=1/2 gives the circle x²+y²-16x/3-6y+27/2=0, centre (8/3,3), radius r=√(47/18). ab+18r²=8+47=55."
+        },
+        {
+          "number": 9,
+          "type": "MCQ",
+          "question": "Let PQ be a chord of the hyperbola x²/4 - y²/b² = 1, perpendicular to the x-axis such that OPQ is an equilateral triangle, O being the centre of the hyperbola. If the eccentricity of the hyperbola is √3, then the area of the triangle OPQ is:",
+          "options": [
+            "2√3",
+            "8√3/5",
+            "11/5",
+            "9/5"
+          ],
+          "answer": "8√3/5",
+          "solution": "e=√3 gives b²=8, hyperbola x²/4-y²/8=1. Solving with 30° angle condition gives sinθ=1/√6, and area = 4√2·sinθ/cos²θ = 8√3/5."
+        },
+        {
+          "number": 10,
+          "type": "MCQ",
+          "question": "Let a, b, c be three vectors such that a×b = 2(a×c). If |a|=1, |b|=4, |c|=2, and the angle between b and c is 60°, then |a·c| is:",
+          "options": [
+            "2",
+            "4",
+            "0",
+            "1"
+          ],
+          "answer": "1",
+          "solution": "b-2c=λa with λ²=16 gives λ=±4. Dotting b-2c=±4a with c gives |a·c|=1."
+        },
+        {
+          "number": 11,
+          "type": "MCQ",
+          "question": "Bag A contains 9 white and 8 black balls, while bag B contains 6 white and 4 black balls. One ball is randomly picked from bag B and mixed with bag A. Then a ball is randomly drawn from bag A. If the probability that the ball drawn is white is p/q, gcd(p,q)=1, then p+q is equal to:",
+          "options": [
+            "22",
+            "23",
+            "24",
+            "21"
+          ],
+          "answer": "23",
+          "solution": "P(white) = (3/5)(10/18) + (2/5)(9/18) = 48/90 = 8/15. p+q = 8+15 = 23."
+        },
+        {
+          "number": 12,
+          "type": "MCQ",
+          "question": "The area of the region enclosed between the circles x²+y²=4 and x²+(y-2)²=4 is:",
+          "options": [
+            "(2/3)(2π-3√3)",
+            "(4/3)(2π-3√3)",
+            "(4/3)(2π-√3)",
+            "(2/3)(4π-3√3)"
+          ],
+          "answer": "(2/3)(4π-3√3)",
+          "solution": "Integrating the intersection area: A = 4∫₀^√3(√(4-x²)-1)dx = 8π/3 - 2√3 sq. units, which equals (2/3)(4π-3√3)."
+        },
+        {
+          "number": 13,
+          "type": "MCQ",
+          "question": "The least value of (cos²θ - 6sinθcosθ + 3sin²θ + 2) is",
+          "options": [
+            "-1",
+            "4+√10",
+            "4-√10",
+            "1"
+          ],
+          "answer": "4-√10",
+          "solution": "Simplifying gives f(θ) = 4 - 3sin2θ - cos2θ, which ranges in [4-√10, 4+√10]. Least value is 4-√10."
+        },
+        {
+          "number": 14,
+          "type": "MCQ",
+          "question": "Let I(x) = ∫3dx/[(4x+6)√(4x²+8x+3)] and I(0) = √3/4 + 20. If I(1/2) = a√2/b + c, where a,b,c∈N, gcd(a,b)=1, then a+b+c is equal to:",
+          "options": [
+            "29",
+            "28",
+            "31",
+            "30"
+          ],
+          "answer": "31",
+          "solution": "Substitution 4x+6=1/t leads to I(x) = (3/4)√[(4x+2)/(4x+6)] + c, with c=20. Evaluating at x=1/2 gives I(1/2) = 3√2/8 + 20, so a=3,b=8,c=20, sum=31."
+        },
+        {
+          "number": 15,
+          "type": "MCQ",
+          "question": "The number of ways, in which 16 oranges can be distributed to four children such that each child gets at least one orange, is",
+          "options": [
+            "429",
+            "384",
+            "403",
+            "455"
+          ],
+          "answer": "455",
+          "solution": "Using stars and bars with each ≥1: reduces to x1'+x2'+x3'+x4'=12, giving C(15,3)=455 solutions."
+        },
+        {
+          "number": 16,
+          "type": "MCQ",
+          "question": "Let A={0,1,2,...,9}. Let R be a relation on A defined by (x,y)∈R iff |x-y| is a multiple of 3. Statement I: n(R)=36. Statement II: R is an equivalence relation.",
+          "options": [
+            "Both Statement I and Statement II are correct",
+            "Statement I is incorrect but Statement II is correct",
+            "Statement I is correct but Statement II is incorrect",
+            "Both Statement I and Statement II are incorrect"
+          ],
+          "answer": "Statement I is incorrect but Statement II is correct",
+          "solution": "n(R) = 4×4+3×3+3×3 = 34 (not 36), so Statement I is false. R is reflexive, symmetric, transitive, so it is an equivalence relation — Statement II is true."
+        },
+        {
+          "number": 17,
+          "type": "MCQ",
+          "question": "If z = √3/2 + i/2, i=√-1, then (z²⁰¹-i)⁸ is equal to",
+          "options": [
+            "-1",
+            "0",
+            "1",
+            "256"
+          ],
+          "answer": "256",
+          "solution": "z=cos(π/6)+isin(π/6). z²⁰¹ = cos(201π/6)+isin(201π/6) = -i. (z²⁰¹-i)⁸ = (-2i)⁸ = 256."
+        },
+        {
+          "number": 18,
+          "type": "MCQ",
+          "question": "If the mean and the variance of the data (Classes 4-8,8-12,12-16,16-20 with frequencies 3,λ,4,7) are μ and 19 respectively, then the value of λ+μ is",
+          "options": [
+            "18",
+            "21",
+            "20",
+            "19"
+          ],
+          "answer": "19",
+          "solution": "μ = 10+60/(λ+14), requiring λ+14 to divide 60 evenly. Using variance condition gives 19λ²-28λ-516=0, so λ=6, μ=13, λ+μ=19."
+        },
+        {
+          "number": 19,
+          "type": "MCQ",
+          "question": "An equilateral triangle OAB is inscribed in the parabola y²=4x with vertex O at the vertex of the parabola. Then the minimum distance of the circle having AB as a diameter from the origin is",
+          "options": [
+            "4(3-√3)",
+            "2(8-3√3)",
+            "4(6+√3)",
+            "2(3+√3)"
+          ],
+          "answer": "4(3-√3)",
+          "solution": "Using slope=tan30° gives t=2√3. Circle centre at (12,0), radius 4√3. Least distance = 12-4√3 = 4(3-√3)."
+        },
+        {
+          "number": 20,
+          "type": "MCQ",
+          "question": "Let Σ_{k=1}^n a_k = αn²+βn. If a10=59 and a6=7a1, then α+β is equal to",
+          "options": [
+            "12",
+            "3",
+            "5",
+            "7"
+          ],
+          "answer": "5",
+          "solution": "a10 gives 19α+β=59; a6=7a1 gives 11α+β=7(α+β), leading to 2α=3β. Solving: α=3, β=2, α+β=5."
+        },
+        {
+          "number": 21,
+          "type": "Numerical",
+          "question": "If the solution curve y=f(x) of the differential equation (x²-4)y' - 2xy + 2x(4-x²)² = 0, x>2, passes through the point (3,15), then the local maximum value of f is",
+          "answer": "16",
+          "solution": "d(y/(x²-4)) = -2x dx integrates to y=(-x²+C)(x²-4). With (3,15): C=12. y'=0 at x=2√2, giving local maximum y = ((2√2)²-4)(-(2√2)²+12) = 16."
+        },
+        {
+          "number": 22,
+          "type": "Numerical",
+          "question": "If the image of the point P(a,2,a) in the line x/2=(y+a)/1=z/1 is Q and the image of Q in the line (x-2b)/2=(y-a)/1=(z+2b)/-5 is P, then a+b is equal to.",
+          "answer": "3",
+          "solution": "Setting up the reflection equations for both lines and solving simultaneously gives b=2a and a=1, so b=2, a+b=3."
+        },
+        {
+          "number": 23,
+          "type": "Numerical",
+          "question": "The number of elements in the set S={x : x∈[0,100] and ∫₀ˣ t²sin(x-t)dt = x²} is.....",
+          "answer": "16",
+          "solution": "Integration by parts reduces the integral equation to x²-2(1-cosx)=x², giving cosx=1, so x=0,2π,4π,...,30π — 16 total elements."
+        },
+        {
+          "number": 24,
+          "type": "Numerical",
+          "question": "Let A = [[0,2,-3],[-2,0,1],[3,-1,0]] and B be a matrix such that B(I-A) = I+A. Then the sum of the diagonal elements of B^T B is equal to",
+          "answer": "3",
+          "solution": "Since A^T=-A, computing B^T B = (I+A)^{-1}(I+A)(I-A)(I-A)^{-1} = I. Trace of B^T B = trace(I) = 3 (3x3 identity)."
+        },
+        {
+          "number": 25,
+          "type": "Numerical",
+          "question": "Let S denote the set of 4-digit numbers abcd such that a>b>c>d and P denote the set of 5-digit numbers having product of its digits equal to 20. Then n(S)+n(P) is equal to.",
+          "answer": "260",
+          "solution": "n(S)=C(10,4)=210 (choosing 4 distinct digits and arranging in decreasing order). For n(P): digit combinations (5,4,1,1,1) and (5,2,2,1,1) give 5!/3!+5!/(2!2!) = 20+30 = 50. Total = 210+50 = 260."
+        },
+        {
+          "question_number": 1,
+          "question": "Let the domain of the function f(x) = log3 log5 log7 (9x - x^2 - 13) be the interval (m, n). Let the hyperbola x^2/a^2 - y^2/b^2 = 1 have eccentricity n/3 and the length of the latus rectum 8m/3. Then b^2 - a^2 is equal to:",
+          "options": {
+            "1": "5",
+            "2": "11",
+            "3": "9",
+            "4": "7"
+          },
+          "answer": 4,
+          "solution": "log5(log7(9x-x^2-13)) > 0 => 9x - x^2 - 13 > 7 => x^3 - 9x + 20 < 0 (typo in original, actually -x^2+9x-20<0) => 4 < x < 5, so m=4, n=5. e = sqrt(1+b^2/a^2) = 5/3 => b^2/a^2 = 16/9 => b/a = 4/3. 2b^2/a = 8m/3 = 32/3 => b=4, a=3. b^2 - a^2 = 16-9 = 7."
+        },
+        {
+          "question_number": 2,
+          "question": "Let f(x) = ∫ (2-x^2)e^x / [sqrt(1+x)(1-x)^(3/2)] dx. If f(0)=0, then f(1/2) is equal to:",
+          "options": {
+            "1": "√3e - 1",
+            "2": "√2e + 1",
+            "3": "√2e - 1",
+            "4": "√3e + 1"
+          },
+          "answer": 1,
+          "solution": "Simplify integrand as e^x[sqrt((1+x)/(1-x)) + 1/(sqrt(1+x)(1-x)^(3/2))] dx = d/dx[e^x sqrt((1+x)/(1-x))]. So f(x) = e^x sqrt((1+x)/(1-x)) + C. f(0)=0 => C=-1. f(1/2) = e^(1/2) sqrt(3) - 1 = √3e - 1."
+        },
+        {
+          "question_number": 3,
+          "question": "Let a = -i + j + 2k, b = i - j - 3k, c = a×b and d = c×a. Then (a-b)·d is equal to:",
+          "options": {
+            "1": "4",
+            "2": "-4",
+            "3": "-2",
+            "4": "2"
+          },
+          "answer": 3,
+          "solution": "d = (a×b)×a = (a·a)b - (a·b)a = 6b + 8a (computed). (a-b)·d = (a-b)·(6b+8a) = 8a^2 - 6b^2 - 2a·b = 48 - 66 + 16 = -2."
+        },
+        {
+          "question_number": 4,
+          "question": "A rectangle is formed by the lines x=0, y=0, x=3 and y=4. Let the line L be perpendicular to 3x+y+6=0 and divide the area of the rectangle into two equal parts. Then the distance of the point (1/2,-5) from the line L is equal to:",
+          "options": {
+            "1": "2√5",
+            "2": "3√10",
+            "3": "√10",
+            "4": "2√10"
+          },
+          "answer": 4,
+          "solution": "L has slope 1/3 (perpendicular to 3x+y+6=0) and passes through the rectangle's center (3/2, 2). Equation: y = x/3 + 3/2 => 2x-6y+9=0. Distance from (1/2,-5): |1+30+9|/√40 = √40 = 2√10."
+        },
+        {
+          "question_number": 5,
+          "question": "Let the line y - x = 1 intersect the ellipse x^2/2 + y^2 = 1 at the points A and B. Then the angle made by the line segment AB at the center of the ellipse is:",
+          "options": {
+            "1": "π - tan⁻¹(1/4)",
+            "2": "π/2 + tan⁻¹(1/4)",
+            "3": "π/2 + 2tan⁻¹(1/4)",
+            "4": "π/2 - tan⁻¹(1/4)"
+          },
+          "answer": 2,
+          "solution": "Solving gives A(0,1), B(-4/3,-1/3). Slope OB = 1/4. Angle AOB = π/2 + tan⁻¹(1/4)."
+        },
+        {
+          "question_number": 6,
+          "question": "Let A = {-2,-1,0,1,2,3,4}. Let R be a relation on A defined by xRy if and only if 2x+y ≤ 2. Let ℓ be the number of elements in R. Let m and n be the minimum number of elements required to be added in R to make it reflexive and symmetric relations respectively. Then ℓ+m+n is equal to:",
+          "options": {
+            "1": "32",
+            "2": "34",
+            "3": "33",
+            "4": "35"
+          },
+          "answer": 3,
+          "solution": "Counting elements gives ℓ=23. Minimum for reflexive m=4. Minimum for symmetric n=6. ℓ+m+n = 23+4+6 = 33."
+        },
+        {
+          "question_number": 7,
+          "question": "Let y=y(x) be the solution of the differential equation x^4 dy + (4x^3 y + 2sinx)dx = 0, x>0, y(π/2)=0. Then π^4 y(π/3) is equal to:",
+          "options": {
+            "1": "81",
+            "2": "92",
+            "3": "64",
+            "4": "72"
+          },
+          "answer": 1,
+          "solution": "d(x^4 y) = -2sinx dx => x^4 y = 2cosx + C. Using y(π/2)=0, C=0. So x^4 y = 2cosx. At x=π/3: (π/3)^4 y(π/3) = 2cos(π/3) = 1, so π^4 y(π/3) = 81."
+        },
+        {
+          "question_number": 8,
+          "question": "If α and β(α<β) are the roots of the equation (-2+√3)(|√x-3|)+(x-6√x)+(9-2√3)=0, x≥0, then sqrt(β/α) + sqrt(αβ) is equal to:",
+          "options": {
+            "1": "8",
+            "2": "9",
+            "3": "10",
+            "4": "11"
+          },
+          "answer": 3,
+          "solution": "Let t=√x. Solving the equation in cases gives α=1, β=25. sqrt(β/α)+sqrt(αβ) = 5 + 5 = 10."
+        },
+        {
+          "question_number": 9,
+          "question": "Let f(x) = (ax^2+2ax+3)/(4x^2+4x-3) for x≠-3/2, 1/2; b for x=-3/2, 1/2 be continuous at x=-3/2. If fof(x)=7/5, then x is equal to:",
+          "options": {
+            "1": "2",
+            "2": "1",
+            "3": "0",
+            "4": "1.4"
+          },
+          "answer": 2,
+          "solution": "Continuity gives a=4. f(x) simplifies to (2x+1)/(2x-1) for x≠-3/2,1/2. Solving fof(x)=(6x+1)/(2x+3)=7/5 gives x=1."
+        },
+        {
+          "question_number": 10,
+          "question": "The value of the integral ∫[π/24 to 5π/24] dx/(1+cube_root(tan2x)) is:",
+          "options": {
+            "1": "π/12",
+            "2": "π/18",
+            "3": "π/6",
+            "4": "π/3"
+          },
+          "answer": 1,
+          "solution": "Using king's rule (property of definite integrals), 2I = ∫(1)dx over the interval = π/6, so I = π/12."
+        },
+        {
+          "question_number": 11,
+          "question": "Among the statements: I: If |1 cosα cosβ; cosα 1 cosγ; cosβ cosγ 1| = |0 cosα cosβ; cosα 0 cosγ; cosβ cosγ 0|, then cos²α+cos²β+cos²γ=3/2. II: If a 3x3 determinant with polynomial entries in x equals px+q, then p²=196q². Which is true?",
+          "options": {
+            "1": "both are false",
+            "2": "only II is true",
+            "3": "both are true",
+            "4": "only I is true"
+          },
+          "answer": 1,
+          "solution": "Expanding both sides of statement I gives cos²α+cos²β+cos²γ=1, so statement I is false. For statement II, computing q=-12 and p=24 gives p²/q²=4, so p²=4q²≠196q², statement II is false. Both are false."
+        },
+        {
+          "question_number": 12,
+          "question": "The value of ΣC(100,r)/(r+1) for r=50 to 100 is:",
+          "options": {
+            "1": "2^101/100",
+            "2": "2^100/100",
+            "3": "2^101/101",
+            "4": "2^100/101"
+          },
+          "answer": 4,
+          "solution": "S = (1/101)ΣC(101,r+1) for r=50 to 100 = (1/101)(2^101/2) = 2^100/101."
+        },
+        {
+          "question_number": 13,
+          "question": "Let the mean and variance of 8 numbers -10,-7,-1,x,y,9,2,16 be 7/2 and 293/4, respectively. Then the mean of 4 numbers x,y,x+y+1,|x-y| is:",
+          "options": {
+            "1": "11",
+            "2": "9",
+            "3": "10",
+            "4": "12"
+          },
+          "answer": 1,
+          "solution": "Mean equation gives x+y=28... wait, x+y+9=28 => x+y=19 (per solution: sum leads to x=12,y=7). Mean of (1+x+y),x,y,|y-x| = (20+12+7+5)/4 = 11."
+        },
+        {
+          "question_number": 14,
+          "question": "The sum of all possible values of n∈N, so that the coefficients of x, x^2 and x^3 in the expansion of (1+x^2)^2(1+x)^n, are in arithmetic progression is:",
+          "options": {
+            "1": "3",
+            "2": "7",
+            "3": "12",
+            "4": "9"
+          },
+          "answer": 4,
+          "solution": "Setting up the AP condition gives n^3-9n^2+26n-24=0, roots n=2,3,4. Checking n=2 also satisfies condition directly. Sum = 2+3+4 = 9."
+        },
+        {
+          "question_number": 15,
+          "question": "The vertices B and C of a triangle ABC lie on the line x/1 = (1-y)/(-2) = (z-2)/3. The coordinates of A and B are (1,6,3) and (4,9,α) respectively and C is at a distance of 10 units from B. The area (in sq. units) of ΔABC is:",
+          "options": {
+            "1": "5√13",
+            "2": "15√13",
+            "3": "20√13",
+            "4": "10√13"
+          },
+          "answer": 1,
+          "solution": "α=14 from B lying on the line. Foot of perpendicular D from A found as (1,3,5), AD=√13. Area = (1/2)(√13)(10) = 5√13."
+        },
+        {
+          "question_number": 16,
+          "question": "Number of solutions of √3 cos2θ + 8cosθ + 3√3 = 0, θ∈[-3π,2π] is:",
+          "options": {
+            "1": "0",
+            "2": "5",
+            "3": "3",
+            "4": "4"
+          },
+          "answer": 2,
+          "solution": "Factoring gives (√3cosθ+1)(cosθ+√3)=0. cosθ=-1/√3 is valid (cosθ=-√3 rejected). This has 5 solutions in [-3π,2π]."
+        },
+        {
+          "question_number": 17,
+          "question": "Let S = {z: 3 ≤ |2z-3(1+i)| ≤ 7} be a set of complex numbers. Then Min_{z∈S} |z + (1/2)(5+3i)| is equal to:",
+          "options": {
+            "1": "1/2",
+            "2": "3/2",
+            "3": "2",
+            "4": "5/2"
+          },
+          "answer": 2,
+          "solution": "The region is an annulus centered at (3/2,3/2) with radii 3/2 and 7/2. Minimum distance from point P(-5/2,-3/2) is PC - 7/2 = 5 - 7/2 = 3/2."
+        },
+        {
+          "question_number": 18,
+          "question": "Let α and β respectively be the maximum and the minimum values of the function f(θ) = 4(sin^4(7π/2-θ)+sin^4(11π+θ)) - 2(sin^6(3π/2-θ)+sin^6(9π-θ)), θ∈R. Then α+2β is equal to:",
+          "options": {
+            "1": "4",
+            "2": "5",
+            "3": "3",
+            "4": "6"
+          },
+          "answer": 2,
+          "solution": "Simplifies to f(θ) = 2 - sin²(2θ)/2. α = f_max = 2, β = f_min = 3/2. α+2β = 2+3 = 5."
+        },
+        {
+          "question_number": 19,
+          "question": "A building construction work can be completed by two masons A and B together in 22.5 days. Mason A alone can complete the construction work in 24 days less than mason B alone. Then mason A alone will complete the construction work in:",
+          "options": {
+            "1": "24 days",
+            "2": "42 days",
+            "3": "30 days",
+            "4": "36 days"
+          },
+          "answer": 4,
+          "solution": "1/x + 1/(x+24) = 2/45 => x^2-21x-540=0 => x=36 (x=-15 rejected)."
+        },
+        {
+          "question_number": 20,
+          "question": "Let the direction cosines of two lines satisfy the equations: 4ℓ+m-n=0 and 2mn+10nℓ+3ℓm=0. Then the cosine of the acute angle between these lines is:",
+          "options": {
+            "1": "10/√38",
+            "2": "20/(3√38)",
+            "3": "10/(7√38)",
+            "4": "10/(3√38)"
+          },
+          "answer": 4,
+          "solution": "Substituting n=4ℓ+m into second equation gives (8ℓ+m)(5ℓ+2m)=0. Two cases give direction ratios (1,-8,-4) and (1,-5/2,3/2)(scaled). Computing cosθ = 15ℓ²/(9ℓ·√38ℓ/2) = 10/(3√38)."
+        },
+        {
+          "question_number": 21,
+          "question": "Let |A|=6, where A is a 3x3 matrix. If |adj(3adj(A^2.adj(2A)))| = 2^m . 3^n, m,n∈N, then m+n is equal to ____.",
+          "answer": "62",
+          "solution": "adj(2A)=4adjA. A^2(adj2A)=4A.(A.AdjA)=4A|A|I=24A. 3adj(A^2(adj2A))=3adj(24A)=3.(24)^2 adjA. adj(3.(24)^2 adjA) = (3.(24)^2)^2 . |adjA|^2 = (3.(24)^2)^2.(|A|^2)^2 = 3^6.(3.2^3)^12.6^4 = 3^22.2^40. m=40, n=22, m+n=62."
+        },
+        {
+          "question_number": 22,
+          "question": "Let the area of the region bounded by the curve y=max{sinx,cosx}, lines x=0, x=3π/2, and the x-axis be A. Then A+A^2 is equal to ____.",
+          "answer": "12",
+          "solution": "Splitting into intervals [0,π/4],[π/4,π],[π,5π/4],[5π/4,3π/2] and integrating gives A=3. A+A^2=3+9=12."
+        },
+        {
+          "question_number": 23,
+          "question": "Let f be a twice differentiable non-negative function such that (f(x))^2 = 25 + ∫[0,x]((f(t))^2+(f'(t))^2)dt. Then the mean of f(loge(1)), f(loge(2)), ..., f(loge(625)) is equal to ____.",
+          "answer": "1565",
+          "solution": "Differentiating gives (f(x)-f'(x))^2=0 => f(x)=f'(x) => f(x)=ce^x. f(0)=5 => f(x)=5e^x. Mean = 5(1+2+...+625)/625 = 1565."
+        },
+        {
+          "question_number": 24,
+          "question": "From the first 100 natural numbers, two numbers first a and then b are selected randomly without replacement. If the probability that a-b≥10 is m/n, gcd(m,n)=1, then m+n is equal to ____.",
+          "answer": "311",
+          "solution": "Favorable cases = 1+2+...+90 = 90*91/2. Total = 100*99. Prob = 91/220 (reduced). m+n = 91+220 = 311."
+        },
+        {
+          "question_number": 25,
+          "question": "The number of 4-letter words, with or without meaning, which can be formed using the letters PQRPQRSTUVP, is ____.",
+          "answer": "1422",
+          "solution": "Letters: P(3),Q(2),R(2),S,T,U,V. Case I (3 alike,1 diff)=24; Case II (2alike,2alike)=18; Case III (2alike,2diff)=540; Case IV (all diff)=840. Total = 1422."
+        },
+        {
+          "question_number": 1,
+          "question": "If the function f(x) = [e^x(e^(tanx-x)-1) + loge(secx+tanx) - x] / (tanx - x) is continuous at x=0, then the value of f(0) is equal to",
+          "options": {
+            "1": "2",
+            "2": "2/3",
+            "3": "1/2",
+            "4": "3/2"
+          },
+          "answer": 4,
+          "solution": "Applying L'Hospital's rule and simplifying the limit term by term: f(0) = lim[e^tanx + e^x(e^(tanx-x)-1)/tan²x + 1/(secx+1)] = 1 + 0 + 1/2 = 3/2."
+        },
+        {
+          "question_number": 2,
+          "question": "Let a circle of radius 4 pass through the origin O, the points A(-√3a,0) and B(0,-√2b), where a and b are real parameters and ab≠0. Then the locus of the centroid of ΔOAB is a circle of radius",
+          "options": {
+            "1": "5/3",
+            "2": "7/3",
+            "3": "8/3",
+            "4": "11/3"
+          },
+          "answer": 3,
+          "solution": "AB=8 (diameter, since angle AOB=90°) gives 3a²+2b²=64. Centroid G(h,k): h=-√3a/3, k=-√2b/3. Substituting gives 9h²+9k²=64, so x²+y²=64/9, radius=8/3."
+        },
+        {
+          "question_number": 3,
+          "question": "Let the lines L1: r=î+2ĵ+3k̂+λ(2î+3ĵ+4k̂) and L2: r=(4î+ĵ)+μ(5î+2ĵ+k̂) intersect at point R. Let P and Q be points on L1 and L2 respectively such that |PR|=√29 and |PQ|=√(47/3). If P lies in the first octant, then 27(QR)² is equal to",
+          "options": {
+            "1": "340",
+            "2": "360",
+            "3": "320",
+            "4": "348"
+          },
+          "answer": 2,
+          "solution": "Finding intersection gives λ=μ=-1, R(-1,-1,-1). Solving PR²=29 gives λ=0, P(1,2,3). Solving PQ²=47/3 gives μ=-1/3, Q(7/3,1/3,-1/3). (QR)²=120/9, so 27(QR)²=360."
+        },
+        {
+          "question_number": 4,
+          "question": "Let 729,81,9,1,... be a sequence and Pn denote the product of the first n terms. If 2Σ[n=1 to 40](Pn)^(1/n) = (3^α-1)/3^β and gcd(α,β)=1, then α+β is equal to",
+          "options": {
+            "1": "73",
+            "2": "74",
+            "3": "75",
+            "4": "76"
+          },
+          "answer": 1,
+          "solution": "Pn=3^6.3^4.3^2...3^(-2n+8)=3^(n(7-n)). Pn^(1/n)=3^(7-n). Sum of geometric series from n=1 to 40 gives Σ(Pn)^(1/n)=(3^40-1)/(2*3^33), so α=40, β=33, α+β=73."
+        },
+        {
+          "question_number": 5,
+          "question": "Let a=2î+ĵ-2k̂, b=î+ĵ and c=a×b. Let d be a vector such that |d-a|=√11, |c×d|=3 and the angle between c and d is π/4. Then a·d is equal to",
+          "options": {
+            "1": "11",
+            "2": "3",
+            "3": "0",
+            "4": "1"
+          },
+          "answer": 3,
+          "solution": "c=2î-2ĵ+k̂, |c|=3. |c×d|=3 with sinπ/4 gives |d|=√2. Using |d-a|²=11: |a|²+|d|²-2a·d=11 => 9+2-2a·d=11 => a·d=0."
+        },
+        {
+          "question_number": 6,
+          "question": "If the domain of the function f(x) = log(10x²-17x+7)(18x²-11x+1) is (-∞,a)∪(b,c)∪(d,∞)-{e}, then 90(a+b+c+d+e) equals:",
+          "options": {
+            "1": "170",
+            "2": "177",
+            "3": "307",
+            "4": "316"
+          },
+          "answer": 4,
+          "solution": "18x²-11x+1>0 gives x<1/9 or x>1/2. 10x²-17x+7>0 gives x<7/10 or x>1. Also base≠1 excludes x=6/5. Domain: (-∞,1/9)∪(1/2,7/10)∪(1,∞)-{6/5}. 90(1/9+1/2+7/10+1+6/5)=316."
+        },
+        {
+          "question_number": 7,
+          "question": "Let each of the two ellipses E1: x²/a²+y²/b²=1,(a>b) and E2: x²/A²+y²/B²=1,(A<B) have eccentricity 4/5. Let the lengths of latus rectum of E1 and E2 be ℓ1 and ℓ2, such that 2ℓ1²=9ℓ2. If distance between foci of E1 is 8, then distance between foci of E2 is",
+          "options": {
+            "1": "96/5",
+            "2": "32/5",
+            "3": "16/5",
+            "4": "8/5"
+          },
+          "answer": 2,
+          "solution": "2ae=8 => a=5. b²=a²(1-e²)=9. E1: x²/25+y²/9=1, ℓ1=18/5. Using 2ℓ1²=9ℓ2: ℓ2=72/25. For E2 (A<B, so major axis along y): solving gives B=4. Distance between foci=2Be=2(4/5)(4)=32/5."
+        },
+        {
+          "question_number": 8,
+          "question": "The value of (√3cosec20° - sec20°)/(cos20°cos40°cos60°cos80°) is equal to",
+          "options": {
+            "1": "32",
+            "2": "16",
+            "3": "64",
+            "4": "12"
+          },
+          "answer": 3,
+          "solution": "Simplifying: E = [(√3cos20°-sin20°)/(cos20°sin20°)]×16 = [(√3/2 cos20°-1/2 sin20°)×32×2]/(2cos20°sin20°) = sin40°/sin40° × 64 = 64."
+        },
+        {
+          "question_number": 9,
+          "question": "Let S={z∈C: |z-6i|/|z-2i|=1 and |z-8+2i|/|z+2i|=3/5}. Then Σ|z|² is equal to",
+          "options": {
+            "1": "398",
+            "2": "413",
+            "3": "423",
+            "4": "385"
+          },
+          "answer": 4,
+          "solution": "Solving |z-6i|/|z-2i|=1 gives y=4. Solving the second equation gives x²+y²-25x+4y+104=0. Solving simultaneously: z=17+4i and z=8+4i. Σ|z|²=(17)²+4²+8²+4²=385."
+        },
+        {
+          "question_number": 10,
+          "question": "If cotx=5/12 for some x∈(π,3π/2), then sin7x(cos(13x/2)+sin(13x/2))+cos7x(cos(13x/2)-sin(13x/2)) is equal to",
+          "options": {
+            "1": "4/√26",
+            "2": "6/√26",
+            "3": "1/√13",
+            "4": "5/√13"
+          },
+          "answer": 3,
+          "solution": "cotx=5/12 => cosx=-5/13=2cos²(x/2)-1 => cos(x/2)=-2/√13 (2/√13 rejected since x/2 is in second quadrant). Simplifying the expression reduces to cos(x/2)+sin(x/2) = -2/√13+3/√13 = 1/√13."
+        },
+        {
+          "question_number": 11,
+          "question": "Let f(t)=∫[(1-sin(loge t))/(1-cos(loge t))]dt, t>1. If f(e^(π/2))=-e^(π/2) and f(e^(π/4))=αe^(π/4), then α equals",
+          "options": {
+            "1": "-1-√2",
+            "2": "-1-2√2",
+            "3": "1+√2",
+            "4": "-1+√2"
+          },
+          "answer": 1,
+          "solution": "Substituting lnt=x, t=e^x: f(t)=-t·cot(lnt/2)+C. Using f(e^(π/2))=-e^(π/2)cot(π/4)+C=-e^(π/2) gives C=0. Then f(e^(π/4))=-e^(π/4)cot(π/8)=-e^(π/4)(√2+1), so α=-1-√2."
+        },
+        {
+          "question_number": 12,
+          "question": "Let R be a relation defined on the set {1,2,3,4}×{1,2,3,4} by R={((a,b),(c,d)): 2a+3b=3c+4d}. Then the number of elements in R is",
+          "options": {
+            "1": "6",
+            "2": "18",
+            "3": "12",
+            "4": "15"
+          },
+          "answer": 3,
+          "solution": "By systematically checking all (a,b) pairs against the equation 2a+3b=3c+4d for valid (c,d) in {1,2,3,4}, the total count of valid pairs is 12."
+        },
+        {
+          "question_number": 13,
+          "question": "Let A(1,0), B(2,-1) and C(7/3,4/3) be three points. If the equation of the bisector of the angle ABC is αx+βy=5, then the value of α²+β² is",
+          "options": {
+            "1": "8",
+            "2": "5",
+            "3": "13",
+            "4": "10"
+          },
+          "answer": 4,
+          "solution": "AD/DC=AB/BC=3/5 (angle bisector theorem). D=(3/2,1/2). Slope of BD=-3. Line: 3x+y=5. α=3,β=1, α²+β²=10."
+        },
+        {
+          "question_number": 14,
+          "question": "Let S=1/25!+1/(3!23!)+1/(5!21!)+... up to 13 terms. If 13S=2^k/n!, k∈N, then n+k is equal to",
+          "options": {
+            "1": "51",
+            "2": "52",
+            "3": "49",
+            "4": "50"
+          },
+          "answer": 3,
+          "solution": "S=(1/26!)(C(26,1)+C(26,3)+...+C(26,25))=(1/26!)×2^25. So 13S=2^24/25!. n+k=25+24=49."
+        },
+        {
+          "question_number": 15,
+          "question": "Consider an A.P.: a1,a2,...,an; a1>0. If a2-a1=-3/4, an=(1/4)a1, and Σ[i=1 to n]ai=525/2, then Σ[i=1 to 17]ai is equal to",
+          "options": {
+            "1": "476",
+            "2": "952",
+            "3": "238",
+            "4": "136"
+          },
+          "answer": 3,
+          "solution": "d=-3/4. From sum formula, a1n=420. From an=a1+(n-1)d equation, a1=n-1. Solving n(n-1)=420 gives n=21, a1=20. Σ[i=1 to 17]ai=(17/2)[2(20)+16(-3/4)]=17×14=238."
+        },
+        {
+          "question_number": 16,
+          "question": "Let α,β∈R be such that the function f(x)=2α(x²-2)+2βx for x<1, (α+3)x+(α-β) for x≥1 be differentiable at all x∈R. Then 34(α+β) is equal to",
+          "options": {
+            "1": "84",
+            "2": "48",
+            "3": "36",
+            "4": "24"
+          },
+          "answer": 2,
+          "solution": "Continuity: 2α-β+3=2β-2α => 4α-3β+3=0. Differentiability: 4α+2β=α+3 => 3α+2β-3=0. Solving gives α=3/17, β=21/17. 34(α+β)=34×24/17=48."
+        },
+        {
+          "question_number": 17,
+          "question": "From a lot containing 10 defective and 90 non-defective bulbs, 8 bulbs are selected one by one with replacement. Then the probability of getting at least 7 defective bulbs is:",
+          "options": {
+            "1": "7/10^7",
+            "2": "81/10^8",
+            "3": "67/10^8",
+            "4": "73/10^8"
+          },
+          "answer": 4,
+          "solution": "Required probability = P(7 defective, 1 good) + P(8 defective) = [C(8,7)×10^7×90 + 10^8]/100^8 = (72×10^8+10^8)/10^16 = 73/10^8."
+        },
+        {
+          "question_number": 18,
+          "question": "The mean and variance of a data of 10 observations are 10 and 2, respectively. If an observation α in this data is replaced by β, then the mean and variance become 10.1 and 1.99, respectively. Then α+β equals.",
+          "options": {
+            "1": "10",
+            "2": "15",
+            "3": "5",
+            "4": "20"
+          },
+          "answer": 4,
+          "solution": "From mean equations: β-α=1. From variance equations: β²-α²=20, giving (β-α)(β+α)=20, so β+α=20."
+        },
+        {
+          "question_number": 19,
+          "question": "Let A1 be the bounded area enclosed by the curves y=x²+2, x+y=8 and y-axis in first quadrant. Let A2 be the bounded area enclosed by y=x²+2, y²=x, x=2, and y-axis in first quadrant. Then A1-A2 is equal to",
+          "options": {
+            "1": "(2/3)(2√2+1)",
+            "2": "(2/3)(4√2+1)",
+            "3": "(2/3)(√2+1)",
+            "4": "(2/3)(3√2+1)"
+          },
+          "answer": 1,
+          "solution": "A1=∫[0,2](6-x-x²)dx=22/3. A2=∫[0,2](x²+2)dx-(2/3)(2√2)=20/3-4√2/3. A1-A2=2/3+4√2/3=(2/3)(2√2+1)."
+        },
+        {
+          "question_number": 20,
+          "question": "The number of the real solutions of the equation: x|x+3|+|x-1|-2=0 is",
+          "options": {
+            "1": "3",
+            "2": "2",
+            "3": "5",
+            "4": "4"
+          },
+          "answer": 1,
+          "solution": "Splitting into regions x<-3, -3≤x<1, x≥1: Region I gives no valid solutions (both rejected); Region II gives x=-1+√2, -1-√2 (both valid); Region III gives x=-2-√3, -2+√3 (one rejected as x≥1 not satisfied, giving only 1 solution from this case combined). Total valid real solutions = 3."
+        },
+        {
+          "question_number": 21,
+          "question": "Let a differentiable function f satisfy the equation ∫[0,36]f(tx/36)dt=4αf(x). If y=f(x) is a standard parabola passing through the points (2,1) and (-4,β), then β^α is equal to ____.",
+          "answer": "64",
+          "solution": "Substituting tx/36=y transforms the integral equation to f(x)=(α/9)(f(x)+xf'(x)). Solving the resulting differential equation gives f(x)=cx^(9/α - 1). For a standard parabola, 9/α-1=2, so α=3, f(x)=cx². Using (2,1): c=1/4, f(x)=x²/4. Passing through (-4,β): β=4. β^α=4³=64."
+        },
+        {
+          "question_number": 22,
+          "question": "Let a line L passing through P(1,1,1) be perpendicular to the lines (x-4)/4=(y-1)/1=(z-1)/1 and (x-17)/1=(y-71)/1=z/0. Let L intersect the yz-plane at Q. Another line parallel to L passing through S(1,0,-1) intersects the yz-plane at R. Then the square of the area of the parallelogram PQRS is equal to ____.",
+          "answer": "6",
+          "solution": "Direction of L = cross product of the two given line directions = (-1,1,3). Line L: Q=(0,2,4). Parallel line through S: R=(0,1,2). Using vectors PQ=(-1,1,3) and PS=(0,-1,-2), their cross product=(1,-2,1), area=√6, so area²=6."
+        },
+        {
+          "question_number": 23,
+          "question": "The number of numbers greater than 5000, less than 9000 and divisible by 3, that can be formed using the digits 0,1,2,5,9, if repetition is allowed, is ____",
+          "answer": "42",
+          "solution": "Categorizing by digit repetition patterns (all different, 2 alike+2 different, 3 alike+1 different, 2 pairs of alike) satisfying divisibility by 3 and the range constraint, and summing all valid arrangements gives 42."
+        },
+        {
+          "question_number": 24,
+          "question": "Let (2α,α) be the largest interval in which the function f(t)=|t+1|/t², t<0, is strictly decreasing. Then the local maximum value of the function g(x)=2loge(x-2)+αx²+4x-α, x>2, is ____",
+          "answer": "4",
+          "solution": "From the graph of f(t) for t<0, f is decreasing in (-2,-1), so α=-1. g(x)=2loge(x-2)-x²+4x+1. g'(x)=2/(x-2)-2(x-2)=2[-(x-3)(x-1)]/(x-2). Maxima occurs at x=3. g(3)=2loge(1)-9+12+1=4."
+        },
+        {
+          "question_number": 25,
+          "question": "The number of 3×2 matrices A, which can be formed using the elements of the set {-2,-1,0,1,2} such that the sum of all the diagonal elements of A^T A is 5, is ____",
+          "answer": "312",
+          "solution": "Tr(A^TA)=a1²+a2²+a3²+b1²+b2²+b3²=5, using values from {-2,-1,0,1,2}. Counting all valid combinations across different partition cases (e.g., one 2, one 1, four 0s; five 1s and one 0, etc.) and their arrangements gives total 312 matrices."
+        }
+      ]
+    }
+  },
+  "sourceFiles": [
+    "jee_main_21jan2026_evening_Mathematics.json",
+    "jee_main_21jan2026_morning_Mathematics.json",
+    "jee_main_22jan2026_evening_Mathematics.json",
+    "jee_main_22jan2026_morning (1)_Mathematics.json",
+    "jee_main_23jan2026_evening_Mathematics.json",
+    "jee_main_23jan2026_morning_Mathematics.json",
+    "jee_main_24jan2026_morning_Mathematics.json"
+  ]
+}

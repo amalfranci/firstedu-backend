@@ -1,0 +1,272 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "source": "Career Point - Questions & Solutions",
+  "date": "23rd January 2026",
+  "shift": "Evening",
+  "sections": {
+    "Chemistry": {
+      "questions": [
+        {
+          "number": 51,
+          "type": "MCQ",
+          "question": "A concentration vs time plot for a dissociation reaction A→nB is given. Based on the data of the initial phase of the reaction (initial 10 min), the value of n is ____.",
+          "options": [
+            "4",
+            "3",
+            "2",
+            "5"
+          ],
+          "answer": "3",
+          "solution": "At t=0, [A]=0.05; at t=10min, [A]=0.04, [B]=0.01×n. Change in A (0.01) relates to B formed (0.03), so 0.01n=0.03, n=3."
+        },
+        {
+          "number": 52,
+          "type": "MCQ",
+          "question": "It is noticed that Pb²⁺ is more stable than Pb⁴⁺ but Sn²⁺ is less stable than Sn⁴⁺. Reactions: PbO2+Pb→2PbO (ΔrG°(1)); SnO2+Sn→2SnO (ΔrG°(2)). Identify the correct set.",
+          "options": [
+            "ΔrG°(1)>0; ΔrG°(2)<0",
+            "ΔrG°(1)<0; ΔrG°(2)<0",
+            "ΔrG°(1)<0; ΔrG°(2)>0",
+            "ΔrG°(1)>0; ΔrG°(2)>0"
+          ],
+          "answer": "ΔrG°(1)<0; ΔrG°(2)>0",
+          "solution": "Since Pb²⁺ is more stable, reaction 1 is spontaneous (ΔrG°(1)<0). Since Sn²⁺ is less stable, reaction 2 is non-spontaneous (ΔrG°(2)>0)."
+        },
+        {
+          "number": 53,
+          "type": "MCQ",
+          "question": "In an electrochemical cell with a metal electrode M undergoing M→M⁺+e, the cation M⁺ is present at two concentrations c1 and c2 separated by a semi-permeable membrane. Which statement is correct for generating a positive cell potential?",
+          "options": [
+            "If c1 is at anode, then c1=c2",
+            "If c1 is at cathode, then c1<c2",
+            "If c1 is at cathode, then c1>c2",
+            "If c1 is at anode, then c1>c2"
+          ],
+          "answer": "If c1 is at cathode, then c1>c2",
+          "solution": "For a concentration cell, positive E_cell requires the cathode to have higher concentration than the anode. If c1 is at cathode, E_cell = -0.059log(c2/c1) > 0 requires c2<c1, i.e., c1>c2."
+        },
+        {
+          "number": 54,
+          "type": "MCQ",
+          "question": "Both human DNA and RNA are chiral molecules. The chirality in DNA and RNA arises due to the presence of",
+          "options": [
+            "Base unit",
+            "Chiral phosphate unit",
+            "D-sugar component",
+            "L-sugar component"
+          ],
+          "answer": "D-sugar component",
+          "solution": "DNA and RNA are chiral due to the chiral 2-deoxy-D-ribose and D-ribose sugar units respectively."
+        },
+        {
+          "number": 55,
+          "type": "MCQ",
+          "question": "Identify the CORRECT set of details: A. [Co(NH3)6]³⁺: Inner orbital complex, d²sp³. B. [MnCl6]³⁻: Outer orbital complex, sp³d². C. [CoF6]³⁻: Outer orbital, d²sp³. D. [FeF6]³⁻: Outer orbital, sp³d². E. [Ni(CN)4]²⁻: Inner orbital, sp³.",
+          "options": [
+            "C & D only",
+            "A, B & D only",
+            "A, C & E only",
+            "A, B, C, D & E"
+          ],
+          "answer": "A, B & D only",
+          "solution": "Co³⁺ with NH3 (SFL): d²sp³, inner orbital (A correct). Mn³⁺ with Cl⁻ (WFL): sp³d², outer orbital (B correct). Co³⁺ with F⁻ (WFL): sp³d² not d²sp³ (C incorrect as stated). Fe³⁺ with F⁻ (WFL): sp³d², outer orbital (D correct). Ni²⁺ with CN⁻ (SFL): dsp², inner orbital, not sp³ (E incorrect)."
+        },
+        {
+          "number": 56,
+          "type": "MCQ",
+          "question": "Elements X and Y belong to Group 15. The difference between the electronegativity values of X and phosphorus is higher than that between phosphorus and Y. X & Y are respectively",
+          "options": [
+            "N & As",
+            "As & Bi",
+            "Bi & N",
+            "As & Sb"
+          ],
+          "answer": "N & As",
+          "solution": "EN values: N=3.0, P=2.1, As=2.0. |EN(N)-EN(P)|=0.9 > |EN(P)-EN(As)|=0.1, so X=N, Y=As."
+        },
+        {
+          "number": 57,
+          "type": "MCQ",
+          "question": "Statement I: (CH3)3C⁺ is more stable than •CH3⁺ as nine hyperconjugation interactions are possible in (CH3)3C⁺. Statement II: •CH3⁺ is less stable than (CH3)3C⁺ as only three hyperconjugation interactions are possible in •CH3⁺.",
+          "options": [
+            "Statement I is true but Statement II is false",
+            "Both Statement I and Statement II are true",
+            "Both Statement I and Statement II are false",
+            "Statement I is false but Statement II is true"
+          ],
+          "answer": "Statement I is true but Statement II is false",
+          "solution": "Statement I is correct due to nine hyperconjugative C-H bonds available. Statement II is false since methyl cation CH3⁺ has no alkyl hydrogens for hyperconjugation (it's a primary carbocation with no adjacent C-H for hyperconjugation in the way described)."
+        },
+        {
+          "number": 58,
+          "type": "MCQ",
+          "question": "Iodoform test can differentiate between: A. Methanol and Ethanol. B. CH3COOH and CH3CH2COOH. C. Cyclohexene and cyclohexanone. D. Diethyl ether and Pentan-3-one. E. Anisole and acetone.",
+          "options": [
+            "A & E only",
+            "A & D only",
+            "A, B & E only",
+            "B, C & E only"
+          ],
+          "answer": "A & E only",
+          "solution": "Ethanol gives positive iodoform test (methanol doesn't) - A correct. Acetone gives positive iodoform test (anisole doesn't) - E correct. Acetic acid, cyclohexanone, and pentan-3-one do not give the iodoform test as they lack the CH3-CO- or CH3-CH(OH)- group."
+        },
+        {
+          "number": 59,
+          "type": "MCQ",
+          "question": "Statement I: The second ionisation enthalpy of Na is larger than the corresponding ionisation enthalpy of Mg. Statement II: The ionic radius of O²⁻ is larger than that of F⁻.",
+          "options": [
+            "Both statement I and statement II are true",
+            "Both statement I and statement II are false",
+            "Statement I is false but statement II is true",
+            "Statement I is true but statement II is false"
+          ],
+          "answer": "Both statement I and statement II are true",
+          "solution": "Na⁺ has a stable fully-filled noble gas configuration, so removing a second electron requires much more energy than for Mg⁺ (which still has one electron to lose from a stable config easily) - Statement I true. O²⁻ has a larger ionic radius than F⁻ due to greater electron-electron repulsion for the same number of protons - Statement II true."
+        },
+        {
+          "number": 60,
+          "type": "MCQ",
+          "question": "A dibromocyclopentane derivative undergoes (i) Zn, Δ (ii) HBr to give major product P. Identify (P).",
+          "options": [
+            "Structure 1",
+            "Structure 2",
+            "Structure 3",
+            "Structure 4"
+          ],
+          "answer": "Structure 2",
+          "solution": "Zn/Δ causes debromination to form a cyclopentene ring fused system; addition of HBr proceeds via the more stable carbocation with a 1,2-hydride shift, giving the rearranged bromide product (structure 2)."
+        },
+        {
+          "number": 61,
+          "type": "MCQ",
+          "question": "Reactions at T(K): I. A→products. II. 5Br⁻(aq)+BrO3⁻(aq)+6H⁺(aq)→3Br2(aq)+3H2O(l). Both reactions started at 10:00am; rates are equal at 10:10am. -Δ[Br⁻]/Δt at 10:10am is 2×10⁻⁴ mol L⁻¹min⁻¹. Concentration of A at 10:10am is 10⁻² mol L⁻¹. What is the first order rate constant (min⁻¹) of reaction I?",
+          "options": [
+            "2×10⁻³",
+            "10⁻³",
+            "10⁻²",
+            "4×10⁻³"
+          ],
+          "answer": "4×10⁻³",
+          "solution": "Rate of reaction II = (1/5)(2×10⁻⁴) = 4×10⁻⁵ mol/L/min. Setting this equal to k[A]: 4×10⁻⁵=k×10⁻², k=4×10⁻³ min⁻¹."
+        },
+        {
+          "number": 62,
+          "type": "MCQ",
+          "question": "Which statements are TRUE about the Haloform reaction? A. NaOCl reacts with KI to give KOI. B. KOI is a reducing agent. C. α,β-unsaturated methylketone (CH3-CH=CH-CO-CH3) will give iodoform reaction. D. Isopropyl alcohol will not give iodoform test. E. Methanoic acid will give positive iodoform test.",
+          "options": [
+            "A, C & E only",
+            "A, B & C only",
+            "A & C only",
+            "B, D & E only"
+          ],
+          "answer": "A & C only",
+          "solution": "NaOCl+KI→NaCl+KOI (A correct). KOI is an oxidizing agent, not reducing (B incorrect). The α,β-unsaturated methyl ketone still contains the CH3-CO- group and gives iodoform reaction (C correct). Isopropyl alcohol does give a positive iodoform test (D incorrect). Methanoic (formic) acid does not give iodoform test (E incorrect)."
+        },
+        {
+          "number": 63,
+          "type": "MCQ",
+          "question": "Which statements are NOT TRUE about XeO2F2? A. It has a see-saw shape. B. Xe has 5 electron pairs in its valence shell. C. The O-Xe-O bond angle is close to 180°. D. The F-Xe-F bond angle is close to 180°. E. Xe has 16 valence electrons in XeO2F2.",
+          "options": [
+            "B, C and E only",
+            "B and D only",
+            "A and D only",
+            "B, D and E only"
+          ],
+          "answer": "B, C and E only",
+          "solution": "The molecule does have a see-saw shape (A true). Xe actually has 7 electron pairs, not 5 (B false/not true). O-Xe-O bond angle is close to 120°, not 180° (C false/not true). F-Xe-F bond angle is close to 180° (D true). Xe has 14 valence electrons in this molecule, not 16 (E false/not true). So B, C, E are the NOT TRUE statements."
+        },
+        {
+          "number": 64,
+          "type": "MCQ",
+          "question": "Identify the INCORRECT statements: A. Notation ²⁴₁₂Mg represents 24 protons and 12 neutrons. B. Wavelength of radiation of frequency 4.5×10¹⁵ s⁻¹ is 6.7×10⁻⁸ m. C. One radiation has λ1=900nm, energy=E1; another has λ2=300nm, energy=E2, E1:E2=3:1. D. Number of photons of light of wavelength 2000pm that provides 1J of energy is 1.006×10¹⁶.",
+          "options": [
+            "A and D only",
+            "A and C only",
+            "A and B only",
+            "B and C only"
+          ],
+          "answer": "A and C only",
+          "solution": "²⁴₁₂Mg has 12 protons and 12 neutrons, not 24 protons (A incorrect). λ=c/v=6.67×10⁻⁸m (B correct). E1/E2=λ2/λ1=300/900=1/3, not 3:1 (C incorrect). Number of photons = Energy/(hc/λ) = 10¹⁶ (D correct, close to stated value)."
+        },
+        {
+          "number": 65,
+          "type": "MCQ",
+          "question": "In Carius method 0.2425g of an organic compound gave 0.5253g silver chloride. The percentage of chlorine in the organic compound is",
+          "options": [
+            "53.58%",
+            "87.65%",
+            "37.57%",
+            "34.79%"
+          ],
+          "answer": "53.58%",
+          "solution": "%Cl = (35.5/143.5)×(0.5253/0.2425)×100 = 53.58%."
+        },
+        {
+          "number": 66,
+          "type": "MCQ",
+          "question": "A mixed ether (P), when heated with excess hot concentrated HI produces two different alkyl iodides which when treated with aq. NaOH give compounds (Q) and (R). Both (Q) and (R) give yellow precipitate with NaOI. Identify the mixed ether (P):",
+          "options": [
+            "Ethyl sec-butyl ether",
+            "Structure 2",
+            "Structure 3",
+            "Structure 4"
+          ],
+          "answer": "Ethyl sec-butyl ether",
+          "solution": "Ether cleavage with excess conc. HI gives ethyl iodide and sec-butyl iodide; hydrolysis gives ethanol (Q) and sec-butanol (R), both of which contain the CH3-CH(OH)- pattern and give positive iodoform/NaOI test."
+        },
+        {
+          "number": 67,
+          "type": "MCQ",
+          "question": "The oxidation state of chromium in the final product formed in the reaction between KI and acidified K2Cr2O7 solution is:",
+          "options": [
+            "+4",
+            "+3",
+            "+2",
+            "+6"
+          ],
+          "answer": "+3",
+          "solution": "K2Cr2O7 + KI + H⁺ → I2 + Cr³⁺; chromium is reduced from +6 to +3 in the final product."
+        },
+        {
+          "number": 68,
+          "type": "MCQ",
+          "question": "The work functions of two metals (MA and MB) are in 1:2 ratio. When exposed to photons of energy 6eV, the kinetic energy of liberated electrons of MA:MB is in ratio 2.642:1. The work functions (in eV) of MA and MB are respectively.",
+          "options": [
+            "3.1, 6.2",
+            "2.3, 4.6",
+            "1.4, 2.8",
+            "1.5, 3.0"
+          ],
+          "answer": "2.3, 4.6",
+          "solution": "KEmax1=6-φ1, KEmax2=6-φ2=6-2φ1. Ratio 2.642 = (6-φ1)/(6-2φ1) gives φ1=2.3 eV, φ2=4.6 eV."
+        },
+        {
+          "number": 69,
+          "type": "MCQ",
+          "question": "Statement I: 3,4-diaminotoluene-type diamine can be synthesized from the corresponding diethyl-substituted arene using i) acidic KMnO4, ii) ammonia, iii) bromine and alkali. Statement II: p-toluidine can be converted into 3,5-dibromotoluene using reagents (i) Br2-H2O, (ii) NaNO2/HCl (0-5°C), (iii) aq. H3PO2.",
+          "options": [
+            "Both Statement I and Statement II are false",
+            "Statement I is true but Statement II is false",
+            "Both Statement I and Statement II are true",
+            "Statement I is false but Statement II is true"
+          ],
+          "answer": "Both Statement I and Statement II are true",
+          "solution": "Statement I: KMnO4/H+ oxidizes side chains to carboxylic acids, converted to amide via NH3, then Hofmann bromamide (Br2+KOH) gives the diamine — correct sequence. Statement II: Bromination directs ortho to NH2, diazotization then H3PO2 replaces the original amino group with H, leaving the dibromo product — correct sequence."
+        },
+        {
+          "number": 70,
+          "type": "MCQ",
+          "question": "A student is given compound 'x' of molecular formula C6H7N. 'x' is sparingly soluble in water but becomes soluble with dilute mineral acid. 'x' with CHCl3 and KOH(alc.) gives 'y' with unpleasant smell. On treatment with benzenesulphonyl chloride, 'x' gives compound 'z' soluble in alkali. The number of different H atoms present in 'z' is:",
+          "options": [
+            "5",
+            "8",
+            "4",
+            "7"
+          ],
+          "answer": "7",
+          "solution": "x is aniline (C6H5NH2). Carbylamine reaction with CHCl3/KOH gives phenyl isocyanide (y, unpleasant smell). Hinsberg test with benzenesulphonyl chloride gives N-phenylbenzenesulfonamide (z, soluble in alkali since it's a secondary sulfonamide from a primary amine). Counting distinct H environments in Ph-NH-SO2-Ph gives 7 different types of H atoms."
+        }
+      ]
+    }
+  }
+}

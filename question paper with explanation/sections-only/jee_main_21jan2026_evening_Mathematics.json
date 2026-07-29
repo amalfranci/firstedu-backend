@@ -1,0 +1,332 @@
+{
+  "exam": "JEE Main Online Exam 2026",
+  "date": "21st January 2026",
+  "shift": "Evening",
+  "source": "Career Point Kota - Questions & Solutions",
+  "sections": {
+    "Mathematics": {
+      "questions": [
+        {
+          "number": 1,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "The positive integer n, for which the solutions of the equation x(x+2)+(x+2)(x+4)+...+(x+2n-2)(x+2n) = 8n/3 are two consecutive even integers, is:",
+          "options": {
+            "1": "3",
+            "2": "6",
+            "3": "12",
+            "4": "9"
+          },
+          "answer": "1",
+          "solution": "Summing the series gives nx^2 + 2nx^2 + 4n(n^2-1)/3 - 8n/3 = 0, i.e. x^2 + 2nx + 4(n^2-1)/3 - 8/3 = 0. Since |alpha - beta| = 2, sqrt(D)/|a| = 2 => D = 4. Solving gives n^2 = 9 (using the condition), so n = 3."
+        },
+        {
+          "number": 2,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let f: R -> R be a twice differentiable function such that f''(x) > 0 for all x in R and f'(a-1) = 0, where a is a real number. Let g(x) = f(tan^2 x - 2tanx + a), 0 < x < pi/2. Consider: (I) g is increasing in (0, pi/4); (II) g is decreasing in (pi/4, pi/2). Then,",
+          "options": {
+            "1": "Neither (I) nor (II) is True",
+            "2": "Only (II) is True",
+            "3": "Only (I) is True",
+            "4": "Both (I) and (II) are True"
+          },
+          "answer": "1",
+          "solution": "g(x) = f((tanx-1)^2 + a-1). g'(x) = f'((tanx-1)^2+a-1) * 2(tanx-1)sec^2x. Since f'(a-1)=0 and f''(x)>0, f'((tanx-1)^2+a-1) > 0. So g'(x) > 0 when tanx-1 > 0, i.e., g is increasing in (pi/4, pi/2), and g'(x) < 0 when tanx-1 < 0, i.e., g is decreasing in (0, pi/4). So both given statements (I) and (II) are actually reversed/false as stated -> Neither (I) nor (II) is true."
+        },
+        {
+          "number": 3,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let f(x) = x^3 + x^2 f'(1) + 2x f''(2) + f'''(3), x in R. Then the value of f'(5) is:",
+          "options": {
+            "1": "62/5",
+            "2": "657/5",
+            "3": "2/5",
+            "4": "117/5"
+          },
+          "answer": "4",
+          "solution": "f'(x) = 3x^2 + 2x f'(1) + 2f''(2); f''(x) = 6x + 2f'(1); f''(2) = 12 + 2f'(1). Substituting and putting x=1: f'(1) = 3 + 6f'(1) + 24 => -5f'(1) = 27 => f'(1) = -27/5. Then f''(2) = 6/5, so f'(x) = 3x^2 - (54/5)x + 12/5. f'(5) = 75 - 54 + 12/5 = 117/5."
+        },
+        {
+          "number": 4,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "If the line alpha*x + 4y = sqrt(7), where alpha in R, touches the ellipse 3x^2 + 4y^2 = 1 at the point P in the first quadrant, then one of the focal distances of P is:",
+          "options": {
+            "1": "1/sqrt(3) - 1/(2*sqrt(11))",
+            "2": "1/sqrt(3) + 1/(2*sqrt(5))",
+            "3": "1/sqrt(3) - 1/(2*sqrt(5))",
+            "4": "1/sqrt(3) + 1/(2*sqrt(7))"
+          },
+          "answer": "4",
+          "solution": "Using c^2 = a^2 m^2 + b^2 for the line 3x+4y-sqrt(7)=0 tangent to the ellipse gives alpha = 3, -3, so tangent is 3x+4y-sqrt(7)=0. Point of contact P = (1/sqrt7, 1/sqrt7), eccentricity e = 1/2. PS' = e(PM') = (1/2)(a/e + 1/sqrt7) = 1/sqrt(3) + 1/(2*sqrt(7))."
+        },
+        {
+          "number": 5,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let y^2 = 12x be the parabola with its vertex at O. Let P be a point on the parabola and A be a point on the x-axis such that angle OPA = 90 degrees. Then the locus of the centroid of such triangles OPA is:",
+          "options": {
+            "1": "y^2 - 6x + 4 = 0",
+            "2": "y^2 - 9x + 6 = 0",
+            "3": "y^2 - 2x + 8 = 0",
+            "4": "y^2 - 4x + 8 = 0"
+          },
+          "answer": "3",
+          "solution": "P = (3t^2, 6t). Slope of AP = -t/2, giving A = (12+3t^2, 0). Centroid G(h,k): 3h = 3t^2+12+3t^2, 3k = 6t. So t = k/2, h = 2t^2+4 = k^2/2 + 4. Locus: y^2 = 2x - 8."
+        },
+        {
+          "number": 6,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let one end of a focal chord of the parabola y^2 = 16x be (16,16). If P(alpha,beta) divides this focal chord internally in the ratio 5:2, then the minimum value of alpha+beta is equal to:",
+          "options": {
+            "1": "22",
+            "2": "7",
+            "3": "5",
+            "4": "16"
+          },
+          "answer": "2",
+          "solution": "Parameter of A is t=2, so parameter of B is t=-1/2, giving B=(1,-4). Case 1 (A:P:B = 5:2): alpha=37/7, beta=12/7, sum=7. Case 2 (2:5): sum=22. Minimum value is 7."
+        },
+        {
+          "number": 7,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let the line L pass through the point (-3,5,2) and make equal angles with the positive coordinate axes. If the distance of L from the point (-2, r, 1) is sqrt(14/3), then the sum of all possible values of r is:",
+          "options": {
+            "1": "12",
+            "2": "16",
+            "3": "6",
+            "4": "10"
+          },
+          "answer": "4",
+          "solution": "Line: (x+3)/1=(y-5)/1=(z-2)/1=lambda. Foot of perpendicular R found via PR.d=0, giving lambda=(r-5)/3. Distance condition gives 6r^2-60r+126=0 => r^2-10r+21=0 => r=3,7. Sum=10."
+        },
+        {
+          "number": 8,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let the line L1 be parallel to the vector -3i+2j+4k and pass through the point (2,6,7), and the line L2 be parallel to the vector 2i+j+3k and pass through the point (4,3,5). If the line L3 is parallel to the vector -3i+5j+16k and intersects the lines L1 and L2 at points C and D respectively, then |CD|^2 is equal to:",
+          "options": {
+            "1": "171",
+            "2": "290",
+            "3": "312",
+            "4": "89"
+          },
+          "answer": "2",
+          "solution": "Parametrize C on L1 and D on L2, use direction ratios of L3 to solve for parameters (lambda1=-3, lambda2=2), giving C(11,0,-5), D(8,5,11). |CD|^2 = 3^2+5^2+16^2 = 290."
+        },
+        {
+          "number": 9,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let alpha and beta be the roots of equation x^2 + 2ax + (3a+10) = 0 such that alpha < 1 < beta. Then the set of all possible values of a is:",
+          "options": {
+            "1": "(-infinity, -11/5) U (5, infinity)",
+            "2": "(-infinity, -2) U (5, infinity)",
+            "3": "(-infinity, -3)",
+            "4": "(-infinity, -11/5)"
+          },
+          "answer": "4",
+          "solution": "For alpha<1<beta, f(1)<0: 1+2a+3a+10<0 => 5a+11<0 => a < -11/5. So a in (-infinity, -11/5)."
+        },
+        {
+          "number": 10,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "A random variable X takes values 0,1,2,3 with probabilities (2a+1)/30, (8a-1)/30, (4a+1)/30, b respectively, where a,b in R. Let mu and sigma respectively be the mean and standard deviation of X such that sigma^2+mu^2=2. Then a/b is equal to:",
+          "options": {
+            "1": "30",
+            "2": "3",
+            "3": "60",
+            "4": "12"
+          },
+          "answer": "3",
+          "solution": "sigma^2+mu^2 = sum x_i^2 p(x_i) = (8a-1)/30 + 4(4a+1)/30 + 9b = 2 gives 24a+270b=57 i.e. 8a+90b=19. Sum of probabilities =1 gives 14a+30b=29. Solving simultaneously: a=2, b=1/30, so a/b=60."
+        },
+        {
+          "number": 11,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "If the area of the region {(x,y): 1-2x <= y <= 4-x^2, x>=0, y>=0} is alpha/beta where alpha,beta in N, gcd(alpha,beta)=1, then the value of (alpha+beta) is:",
+          "options": {
+            "1": "73",
+            "2": "85",
+            "3": "91",
+            "4": "67"
+          },
+          "answer": "1",
+          "solution": "Required area = (2/3)*8 - (1/2)*(1/2)*1 = 16/3 - 1/4 = 61/12 = alpha/beta. alpha+beta = 61+12 = 73."
+        },
+        {
+          "number": 12,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let a1, a2/2, a3/2^2, ..., a10/2^9 be a G.P. of common ratio 1/sqrt(2). If a1+a2+...+a10 = 62, then a1 is equal to:",
+          "options": {
+            "1": "2(sqrt(2)-1)",
+            "2": "2-sqrt(2)",
+            "3": "sqrt(2)-1",
+            "4": "2(2-sqrt(2))"
+          },
+          "answer": "1",
+          "solution": "a1,a2,...,a10 form a G.P. with common ratio sqrt(2). Sum = a1((sqrt2)^10 - 1)/(sqrt2-1) = 62. Solving gives a1 = 2(sqrt(2)-1)."
+        },
+        {
+          "number": 13,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let A = {x : |x^2-10| <= 6} and B = {x : |x-2| > 1}. Then",
+          "options": {
+            "1": "A U B = (-infinity,1] U (2,infinity)",
+            "2": "A - B = [2,3]",
+            "3": "A ∩ B = [-4,-2] U [3,4]",
+            "4": "B - A = (-infinity,-4) U (-2,1) U (4,infinity)"
+          },
+          "answer": "4",
+          "solution": "A = [-4,-2] U [2,4]; B = (-infinity,1) U (3,infinity). A U B = (-infinity,1) U [2,infinity); A ∩ B = [-4,-2] U (3,4]; A-B = [2,3]; B-A = (-infinity,-4) U (-2,1) U (4,infinity). So option (4) is correct."
+        },
+        {
+          "number": 14,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "For the matrices A = [[3,-4],[1,-1]] and B = [[-29,49],[-13,18]], if (A^15 + B)[x,y]^T = [0,0]^T, then among the following which one is true?",
+          "options": {
+            "1": "x=5, y=7",
+            "2": "x=18, y=11",
+            "3": "x=11, y=2",
+            "4": "x=16, y=3"
+          },
+          "answer": "3",
+          "solution": "A^n = [[2n+1,-4n],[n,-2n+1]]. A^15 = [[31,-60],[15,-29]]. A^15+B = [[2,-11],[2,-11]]. Equation gives 2x-11y=0, satisfied by x=11, y=2."
+        },
+        {
+          "number": 15,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "For a triangle ABC, let p = vector BC, q = vector CA, r = vector BA. If |p| = 2*sqrt(3), |q| = 2, and cos(theta) = 1/sqrt(3), where theta is the angle between p and q, then |p x (q - 3r)|^2 + 3|r|^2 is equal to:",
+          "options": {
+            "1": "340",
+            "2": "220",
+            "3": "410",
+            "4": "200"
+          },
+          "answer": "4",
+          "solution": "p+q=r. Using cos(pi-theta) formula, |r|^2 = 24. Then p x (q-3r) = p x (-3p-2q) = -2(p x q). So expression = 4|p|^2|q|^2 sin^2(theta) + 72 = 4*12*4*(2/3) + 72 = 200."
+        },
+        {
+          "number": 16,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let y = y(x) be the solution of the differential equation sec(x) dy/dx - 2y = 2 + 3sinx, x in (-pi/2, pi/2), y(0) = -7/4. Then y(pi/6) is equal to:",
+          "options": {
+            "1": "-5/2",
+            "2": "-5/4",
+            "3": "-3*sqrt(3) - 7",
+            "4": "-3*sqrt(2) - 7"
+          },
+          "answer": "1",
+          "solution": "dy/dx - 2y cosx = 2cosx + 3sinx cosx. I.F. = e^(-2sinx). Solving, y = -(3/2)sinx - 7/4 + C e^(2sinx). Using y(0)=-7/4 gives C=0. y(pi/6) = -3/4 - 7/4 = -5/2."
+        },
+        {
+          "number": 17,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let A = {2,3,5,7,9}. Let R be the relation on A defined by xRy if and only if 2x <= 3y. Let l be the number of elements in R, and m be the minimum number of elements required to be added in R to make it a symmetric relation. Then l+m is equal to:",
+          "options": {
+            "1": "23",
+            "2": "25",
+            "3": "21",
+            "4": "27"
+          },
+          "answer": "2",
+          "solution": "Counting pairs satisfying y >= 2x/3 for each x gives l=18. To make symmetric, elements to add: (5,2),(7,2),(9,2),(5,3),(7,3),(9,3),(9,5) => m=7. l+m=25."
+        },
+        {
+          "number": 18,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "If the system of equations 3x+y+4z=3, 2x+alpha*y-z=-3, x+2y+z=4 has no solution, then the value of alpha is equal to:",
+          "options": {
+            "1": "19",
+            "2": "4",
+            "3": "13",
+            "4": "23"
+          },
+          "answer": "1",
+          "solution": "For no solution, determinant Delta=0: 3(alpha+2)+1(-1-2)+4(4-alpha)=0 => 19-alpha=0 => alpha=19. Checking Delta_x != 0 for alpha=19 confirms no solution."
+        },
+        {
+          "number": 19,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "Let z be the complex number satisfying |z-5| <= 3 and having maximum positive principal argument. Then 34 |(5z-12)/(5iz+16)|^2 is equal to:",
+          "options": {
+            "1": "16",
+            "2": "12",
+            "3": "26",
+            "4": "20"
+          },
+          "answer": "4",
+          "solution": "For arg(z) maximum, z lies at tangent point: z = 4cos(theta)+4i sin(theta) with theta found from the geometry, giving z = 16/5 + 12i/5. Substituting into the expression gives 34*(160/272) = 20."
+        },
+        {
+          "number": 20,
+          "subject": "Mathematics",
+          "type": "MCQ",
+          "question": "The largest n in N, for which 7^n divides 101!, is:",
+          "options": {
+            "1": "16",
+            "2": "18",
+            "3": "15",
+            "4": "19"
+          },
+          "answer": "1",
+          "solution": "Exponent of 7 in 101! = floor(101/7) + floor(101/49) + floor(101/343) + ... = 14 + 2 = 16."
+        },
+        {
+          "number": 21,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "Let [.] denote the greatest integer function and f(x) = lim(n->infinity) (1/n^3) * sum_{k=1}^{n} [k^2/3^x]. Then 12*sum_{j=1}^{infinity} f(j) is equal to ____.",
+          "answer": "2",
+          "solution": "Bounding the sum and taking the limit gives f(x) = 1/3^(x+1). Then 12*sum f(j) = 12*sum(1/3^(j+1)) = 12*(1/9)/(1-1/3) = 2."
+        },
+        {
+          "number": 22,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "If Integral from 0 to 1 of 4*cot^-1(1-2x+4x^2) dx = a*tan^-1(2) - b*log_e(5), where a,b in N, then (2a+b) is equal to ____.",
+          "answer": "9",
+          "solution": "Using king's rule (x -> 1-x) twice and integration by parts (with substitution 1+4x^2=t), the integral evaluates to 4I = 4tan^-1(2) - ln5, giving a=1, b=1 (after matching 4tan^-1(2)-ln5 form scaled), so 2a+b = 8+1 = 9."
+        },
+        {
+          "number": 23,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "Let the maximum value of (sin^-1 x)^2 + (cos^-1 x)^2 for x in [-sqrt(3)/2, 1/sqrt(2)] be (m/n)*pi^2, where gcd(m,n)=1. Then m+n is equal to ____.",
+          "answer": "65",
+          "solution": "(sin^-1x)^2+(cos^-1x)^2 = 2(sin^-1x - pi/4)^2 + pi^2/8, where sin^-1x in [-pi/3, pi/4]. Max occurs at sin^-1x = -pi/3, giving value 29*pi^2/36. So m=29, n=36, m+n=65."
+        },
+        {
+          "number": 24,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "If (1/15C0 + 1/15C1)(1/15C1 + 1/15C2)...(1/15C12 + 1/15C13) = alpha^13 / (14C0 * 14C1 * ... * 14C12), then 30*alpha is equal to ____.",
+          "answer": "32",
+          "solution": "Product simplifies to (16/15)^13 / (14C0*14C1*...*14C12), giving alpha = 16/15. So 30*alpha = 32."
+        },
+        {
+          "number": 25,
+          "subject": "Mathematics",
+          "type": "Numerical",
+          "question": "If P is a point on the circle x^2+y^2=4, Q is a point on the straight line 5x+y+2=0, and x-y+1=0 is the perpendicular bisector of PQ, then 13 times the sum of abscissa of all such points P is ____.",
+          "answer": "2",
+          "solution": "Setting P=(2costheta,2sintheta), Q on the line, and using midpoint on x-y+1=0 and slope condition, eliminating alpha gives cos(theta)+5sin(theta)=1. Solutions: costheta=1 or costheta=-12/13. Sum of abscissas = 2*1+2*(-12/13) = 2/13. 13 times this sum = 2."
+        }
+      ]
+    }
+  }
+}
