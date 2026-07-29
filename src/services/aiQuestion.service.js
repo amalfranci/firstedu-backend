@@ -3886,6 +3886,9 @@ const generateQuestionBankBatch = async ({
     if (isQuestionRagGenerationMode(generationMode)) {
         pipelineTrace("QUESTION_RAG_BATCH", {
             singleCount,
+            multipleCount,
+            trueFalseCount,
+            passageCount,
             topic,
             subject,
             chunk: `${chunkIndex + 1}/${chunkTotal}`,
@@ -3933,94 +3936,171 @@ const generateQuestionBankBatch = async ({
             );
         }
 
-        // Retrieved exemplars are STYLE/PATTERN grounding only — topic/concept-slot
-        // planning stays fully AI-driven via the same archetype planner as default.
-        // Exemplar stems are folded into excludeQuestionTexts so the existing
-        // near-duplicate machinery also guards against echoing them verbatim.
         const questionRagAuditStats = {};
-        let questions = await generateSolveFirstSingles({
-            topic,
-            bankName,
-            difficulty,
-            singleCount,
-            excludeQuestionTexts: [...excludeQuestionTexts, ...exemplarStems],
-            excludeArchetypes,
-            categoryPaths,
-            sectionName,
-            subject,
-            topicRelevanceFeedback,
-            generateIntent,
-            examReferenceBlock,
-            competitiveExamPlan,
-            provider,
-            genTemperature,
-            slotOffset: tierSlotOffset,
-            difficultyResolution,
-            maxSelectableSlots,
-            skipSkeletonDifficultyAudit: skipLlmDifficultyAudit,
-            streamPartials: topUpWave === 0,
-            retrievedQuestionContextBlock,
-            auditStats: questionRagAuditStats,
-            presetSteering,
-        });
-
-        // Hard anti-copy: drop items too similar to retrieved corpus exemplars,
-        // then one refill attempt for the deficit with rejected stems excluded.
+        let questions = [];
         let ragMeta = {
             ...(retrievalMeta || {}),
             exemplarSnippets: exemplarSnippets || [],
             rejectedNearCopies: 0,
         };
-        if (corpusTexts?.length && questions?.length) {
-            const { kept, rejected, rejectedNearCopies } =
-                await rejectNearCorpusDuplicates(questions, {
-                    corpusTexts,
-                });
-            ragMeta = {
-                ...ragMeta,
-                rejectedNearCopies,
-            };
-            questions = kept;
-            if (rejectedNearCopies > 0 && kept.length < singleCount) {
-                const deficit = singleCount - kept.length;
-                const rejectedStems = rejected
-                    .map((r) => r?.question?.questionText)
-                    .filter(Boolean);
-                const refill = await generateSolveFirstSingles({
-                    topic,
-                    bankName,
-                    difficulty,
-                    singleCount: deficit,
-                    excludeQuestionTexts: [
-                        ...excludeQuestionTexts,
-                        ...exemplarStems,
-                        ...rejectedStems,
-                        ...kept.map((q) => q.questionText).filter(Boolean),
-                    ],
-                    excludeArchetypes,
-                    categoryPaths,
-                    sectionName,
-                    subject,
-                    topicRelevanceFeedback,
-                    generateIntent,
-                    examReferenceBlock,
-                    competitiveExamPlan,
-                    provider,
-                    genTemperature,
-                    slotOffset: tierSlotOffset + kept.length,
-                    difficultyResolution,
-                    maxSelectableSlots,
-                    skipSkeletonDifficultyAudit: skipLlmDifficultyAudit,
-                    streamPartials: false,
-                    retrievedQuestionContextBlock,
-                    auditStats: questionRagAuditStats,
-                    presetSteering,
-                });
-                const { kept: refillKept, rejectedNearCopies: refillRejected } =
-                    await rejectNearCorpusDuplicates(refill, { corpusTexts });
-                ragMeta.rejectedNearCopies += refillRejected;
-                questions = [...kept, ...refillKept].slice(0, singleCount);
+
+        // Solve-first only produces single-correct items. When the client asks for
+        // multiples / T-F / passages only, skip solve-first (singleCount=0 used to
+        // finalize an empty batch and show "AI returned no questions").
+        if (singleCount > 0) {
+            questions = await generateSolveFirstSingles({
+                topic,
+                bankName,
+                difficulty,
+                singleCount,
+                excludeQuestionTexts: [
+                    ...excludeQuestionTexts,
+                    ...exemplarStems,
+                ],
+                excludeArchetypes,
+                categoryPaths,
+                sectionName,
+                subject,
+                topicRelevanceFeedback,
+                generateIntent,
+                examReferenceBlock,
+                competitiveExamPlan,
+                provider,
+                genTemperature,
+                slotOffset: tierSlotOffset,
+                difficultyResolution,
+                maxSelectableSlots,
+                skipSkeletonDifficultyAudit: skipLlmDifficultyAudit,
+                streamPartials: topUpWave === 0,
+                retrievedQuestionContextBlock,
+                auditStats: questionRagAuditStats,
+                presetSteering,
+            });
+
+            if (corpusTexts?.length && questions?.length) {
+                const { kept, rejected, rejectedNearCopies } =
+                    await rejectNearCorpusDuplicates(questions, {
+                        corpusTexts,
+                    });
+                ragMeta = {
+                    ...ragMeta,
+                    rejectedNearCopies,
+                };
+                questions = kept;
+                if (rejectedNearCopies > 0 && kept.length < singleCount) {
+                    const deficit = singleCount - kept.length;
+                    const rejectedStems = rejected
+                        .map((r) => r?.question?.questionText)
+                        .filter(Boolean);
+                    const refill = await generateSolveFirstSingles({
+                        topic,
+                        bankName,
+                        difficulty,
+                        singleCount: deficit,
+                        excludeQuestionTexts: [
+                            ...excludeQuestionTexts,
+                            ...exemplarStems,
+                            ...rejectedStems,
+                            ...kept.map((q) => q.questionText).filter(Boolean),
+                        ],
+                        excludeArchetypes,
+                        categoryPaths,
+                        sectionName,
+                        subject,
+                        topicRelevanceFeedback,
+                        generateIntent,
+                        examReferenceBlock,
+                        competitiveExamPlan,
+                        provider,
+                        genTemperature,
+                        slotOffset: tierSlotOffset + kept.length,
+                        difficultyResolution,
+                        maxSelectableSlots,
+                        skipSkeletonDifficultyAudit: skipLlmDifficultyAudit,
+                        streamPartials: false,
+                        retrievedQuestionContextBlock,
+                        auditStats: questionRagAuditStats,
+                        presetSteering,
+                    });
+                    const {
+                        kept: refillKept,
+                        rejectedNearCopies: refillRejected,
+                    } = await rejectNearCorpusDuplicates(refill, {
+                        corpusTexts,
+                    });
+                    ragMeta.rejectedNearCopies += refillRejected;
+                    questions = [...kept, ...refillKept].slice(0, singleCount);
+                }
             }
+        }
+
+        const nonSingleCount =
+            (Number(multipleCount) || 0) +
+            (Number(trueFalseCount) || 0) +
+            (Number(passageCount) || 0);
+        if (nonSingleCount > 0) {
+            pipelineTrace("QUESTION_RAG_ONE_SHOT_NON_SINGLES", {
+                multipleCount,
+                trueFalseCount,
+                passageCount,
+                chunk: `${chunkIndex + 1}/${chunkTotal}`,
+            });
+            const ragExamBlock = [
+                examReferenceBlock,
+                retrievedQuestionContextBlock,
+            ]
+                .filter(Boolean)
+                .join("\n\n");
+            const expectedCounts = {
+                singleCount: 0,
+                multipleCount,
+                trueFalseCount,
+                connectedCount: passageCount,
+                passageCount,
+                passageSingleCount,
+                passageMultipleCount,
+                passageTrueFalseCount,
+            };
+            const oneShotPrompt = buildQuestionBankPrompt({
+                topic,
+                bankName,
+                difficulty,
+                singleCount: 0,
+                multipleCount,
+                trueFalseCount,
+                passageCount,
+                passageSingleCount,
+                passageMultipleCount,
+                passageTrueFalseCount,
+                connectedCount: passageCount,
+                excludeQuestionTexts: [
+                    ...excludeQuestionTexts,
+                    ...exemplarStems,
+                    ...questions.map((q) => q.questionText).filter(Boolean),
+                ],
+                categoryPaths,
+                sectionName,
+                subject,
+                topicRelevanceFeedback,
+                generateIntent,
+                maxSelectableSlots,
+                examReferenceBlock: ragExamBlock,
+                competitiveExamPlan,
+                tierSlotOffset,
+                difficultyResolution,
+            });
+            const oneShotRaw = await callQuestionBankGenerationLLM(
+                oneShotPrompt,
+                {
+                    generationProvider: provider,
+                    temperature: genTemperature,
+                }
+            );
+            const oneShotQuestions = parseQuestionBankAIResponse(
+                oneShotRaw,
+                expectedCounts
+            );
+            questions = [...questions, ...(oneShotQuestions || [])];
         }
 
         if (deferValidation) {
@@ -4066,6 +4146,13 @@ const generateQuestionBankBatch = async ({
                 difficultyResolution
             ),
             topUpWave,
+            multipleTopUpCount: Math.max(
+                0,
+                (Number(multipleCount) || 0) -
+                    (questions || []).filter(
+                        (q) => q?.questionType === "multiple"
+                    ).length
+            ),
         });
         pipelineTrace("BATCH_DONE", {
             mode: "question-rag",
