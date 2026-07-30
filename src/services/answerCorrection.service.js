@@ -11,7 +11,7 @@
  *   2. Fix in place only on medium/high disagreement or audit flags.
  */
 
-import { parseJsonArrayFromAIText } from "../utils/aiJsonRepair.js";
+import { parseJsonArrayFromAIText, parseJsonFlexibleFromAIText } from "../utils/aiJsonRepair.js";
 import { pipelineTrace } from "../utils/aiApiCallLogger.js";
 import {
     flattenQuestionBankForCorrectnessAudit,
@@ -35,8 +35,8 @@ import {
     shouldDoubleSolve,
     getAnswerConfidenceFloor,
     getSolverTruthConcurrency,
-    rebuildExplanationFromVerifiedSolution,
 } from "./solverTruth.service.js";
+import { rewriteExplanationFromVerifiedSteps } from "./explanationRewrite.service.js";
 
 /** Default ON — set AI_QB_ANSWER_CORRECTION=0 to disable (restores prior behaviour). */
 export const isAnswerCorrectionEnabled = () => {
@@ -100,14 +100,152 @@ const isCorrectable = (q) => {
     return opts.length >= 2 && opts.every((t) => t.trim().length > 0);
 };
 
-// ── Prompt 1: independent solve (never shows the key or explanation) ────────────
+// ── Prompt 1: BLIND independent solve (stem only — hide options to avoid bias) ──
+export const buildBlindIndependentSolvePrompt = ({
+    questions = [],
+    topic = "",
+    examProfile = "competitive",
+} = {}) => {
+    const blocks = questions
+        .map((entry, i) => {
+            const stem = String(entry.question.questionText || "").trim();
+            return `#${i + 1}\n${stem}`;
+        })
+        .join("\n\n");
+
+    return `You are an expert ${examProfile} examiner. Solve each question from scratch.
+
+**Topic:** ${topic || "(not set)"}
+
+CRITICAL: Options are HIDDEN on purpose. Do NOT invent option letters (A/B/C/D).
+Derive the pure final numerical/symbolic/textual answer only.
+
+${buildExamSolveThenWriteBlock()}
+
+For EACH question return ONE JSON object:
+- \`index\`: question number
+- \`computed_value\`: your final answer as plain text (number, expression, or short phrase — NO option letter)
+- \`answerConfidence\`: 0.0–1.0 certainty that computed_value is correct
+- \`reasoningConfidence\`: 0.0–1.0 certainty the derivation is error-free
+- \`steps\`: array of 3–8 short derivation steps
+- \`explanation\`: student-facing prose of THOSE SAME steps. End with: "COMPUTED_ANSWER: <same as computed_value>"
+
+HARD RULES:
+- Do not mention A/B/C/D.
+- \`explanation\` and \`steps\` must be the SAME reasoning chain.
+- If unsolvable, set \`computed_value\` to "" and \`answerConfidence\` ≤ 0.3.
+
+**Questions (stem only):**
+${blocks}
+
+Return ONLY a valid JSON array:
+[{"index":1,"computed_value":"2.36","answerConfidence":0.94,"reasoningConfidence":0.9,"steps":["…"],"explanation":"… COMPUTED_ANSWER: 2.36"}]`;
+};
+
+/** Fast secondary step: map a blind computed_value onto MCQ options (no re-solving). */
+export const buildOptionMapPrompt = ({
+    computedValue = "",
+    options = [],
+    stem = "",
+} = {}) => {
+    const opts = (options || [])
+        .map((t, oi) => `   ${letter(oi)}) ${t}`)
+        .join("\n");
+    return `Map a verified computed answer onto the closest matching option letter.
+
+Stem (context only): ${String(stem || "").slice(0, 400)}
+Computed answer: ${computedValue}
+Options:
+${opts}
+
+Return ONLY JSON object (not an array):
+{"final_answer":"B","answerConfidence":0.95}`;
+};
+
+/**
+ * Deterministic map of computed_value → option letter.
+ * @returns {{ final_answer: string, answerConfidence: number } | null}
+ */
+export const mapComputedValueToOption = (computedValue = "", options = []) => {
+    const raw = String(computedValue || "").trim();
+    if (!raw || !options?.length) return null;
+
+    const norm = (s) =>
+        String(s || "")
+            .toLowerCase()
+            .replace(/\$/g, "")
+            .replace(/\\mathrm\{([^}]+)\}/g, "$1")
+            .replace(/\\text\{([^}]+)\}/g, "$1")
+            .replace(/\\frac\{([^}]+)\}\{([^}]+)\}/g, "($1)/($2)")
+            .replace(/[{}\\]/g, "")
+            .replace(/\s+/g, "")
+            .replace(/×/g, "*")
+            .replace(/,/g, "");
+
+    const nRaw = norm(raw);
+    for (let i = 0; i < options.length; i++) {
+        if (norm(options[i]) === nRaw) {
+            return { final_answer: letter(i), answerConfidence: 0.98 };
+        }
+    }
+
+    const parseNum = (s) => {
+        const m = String(s)
+            .replace(/,/g, "")
+            .match(/[-+]?\d+(?:\.\d+)?(?:\s*[eE][+-]?\d+)?/);
+        return m ? Number(m[0]) : NaN;
+    };
+    const target = parseNum(raw);
+    if (Number.isFinite(target)) {
+        let best = -1;
+        let bestRel = Infinity;
+        for (let i = 0; i < options.length; i++) {
+            const v = parseNum(options[i]);
+            if (!Number.isFinite(v)) continue;
+            const rel = Math.abs(v - target) / Math.max(1, Math.abs(target));
+            if (rel < bestRel) {
+                bestRel = rel;
+                best = i;
+            }
+        }
+        // Tight match for numerical MCQs (Q3-style 2.36 vs 51.75).
+        if (best >= 0 && bestRel <= 0.02) {
+            return {
+                final_answer: letter(best),
+                answerConfidence: bestRel <= 0.005 ? 0.97 : 0.9,
+            };
+        }
+        if (best >= 0 && Math.abs(target - parseNum(options[best])) < 1e-6) {
+            return { final_answer: letter(best), answerConfidence: 0.97 };
+        }
+    }
+
+    // Substring / containment for short symbolic answers
+    for (let i = 0; i < options.length; i++) {
+        const o = norm(options[i]);
+        if (o && (o.includes(nRaw) || nRaw.includes(o)) && nRaw.length >= 1) {
+            if (Math.abs(o.length - nRaw.length) <= 4) {
+                return { final_answer: letter(i), answerConfidence: 0.85 };
+            }
+        }
+    }
+    return null;
+};
+
+// ── Prompt (legacy): independent solve with options visible ───────────────────
 export const buildIndependentSolvePrompt = ({
     questions = [],
     topic = "",
     examProfile = "competitive",
     requireSolveSteps = false,
     structuredTruthSchema = false,
+    /** When true, hide options and ask for computed_value only (preferred). */
+    blindStemOnly = false,
 } = {}) => {
+    if (blindStemOnly || (structuredTruthSchema && process.env.AI_QB_BLIND_SOLVER !== "0")) {
+        return buildBlindIndependentSolvePrompt({ questions, topic, examProfile });
+    }
+
     const blocks = questions
         .map((entry, i) => {
             const opts = optionTexts(entry.question)
@@ -129,6 +267,7 @@ ${buildExamSolveThenWriteBlock()}
 For EACH question return ONE JSON object with this exact schema:
 - \`index\`: question number
 - \`final_answer\`: option letter only — "A" | "B" | "C" | "D"
+- \`computed_value\`: your derived value before picking the letter
 - \`answerConfidence\`: 0.0–1.0 how sure the option letter is correct
 - \`reasoningConfidence\`: 0.0–1.0 how sure the derivation is free of arithmetic/logic errors
 - \`steps\`: array of 3–8 short derivation steps (same reasoning chain as explanation)
@@ -143,7 +282,7 @@ HARD RULES:
 ${blocks}
 
 Return ONLY a valid JSON array:
-[{"index":1,"final_answer":"C","answerConfidence":0.96,"reasoningConfidence":0.88,"steps":["…","…"],"explanation":"… Therefore, the correct answer is C. FINAL_ANSWER: C"}]`;
+[{"index":1,"final_answer":"C","computed_value":"2.36","answerConfidence":0.96,"reasoningConfidence":0.88,"steps":["…","…"],"explanation":"… Therefore, the correct answer is C. FINAL_ANSWER: C"}]`;
     }
 
     return `You are an expert ${examProfile} examiner independently solving questions to verify an answer key.
@@ -183,6 +322,10 @@ export const parseIndependentSolveResponse = (rawText, expected = 0) => {
               ? row.solveSteps.map(String).map((s) => s.trim()).filter(Boolean)
               : [];
 
+        const computedValue = String(
+            row?.computed_value ?? row?.computedValue ?? row?.value ?? ""
+        ).trim();
+
         let finalLetter = String(row?.final_answer || row?.finalAnswer || "")
             .trim()
             .toUpperCase();
@@ -200,12 +343,13 @@ export const parseIndependentSolveResponse = (rawText, expected = 0) => {
 
         out.set(idx - 1, {
             final_answer: /^[A-D]$/.test(finalLetter) ? finalLetter : "",
+            computed_value: computedValue,
             answerIndex: /^[A-D]$/.test(finalLetter)
                 ? finalLetter.charCodeAt(0) - 65
                 : Number.isFinite(Number(row?.answerIndex))
                   ? Number(row.answerIndex)
                   : -1,
-            value: String(row?.value ?? "").trim(),
+            value: computedValue || String(row?.value ?? "").trim(),
             confidence:
                 answerConfidence >= 0.85
                     ? "high"
@@ -227,6 +371,90 @@ const pickBetterSolve = (a, b) => {
     const score = (x) =>
         (x.answerConfidence || 0) * 0.6 + (x.reasoningConfidence || 0) * 0.4;
     return score(a) >= score(b) ? a : b;
+};
+
+/**
+ * After a blind solve, map computed_value → option letter.
+ * Deterministic first; small LLM map only if needed.
+ */
+const resolveBlindSolveToOption = async (solve, question, callLlm) => {
+    if (!solve) return null;
+    if (/^[A-D]$/.test(String(solve.final_answer || ""))) {
+        return ensureExplanationEndsWithLetter(solve);
+    }
+    const opts = optionTexts(question);
+    const computed = String(solve.computed_value || solve.value || "").trim();
+    const mapped = mapComputedValueToOption(computed, opts);
+    if (mapped?.final_answer) {
+        pipelineTrace("SOLVER_OPTION_MAP_DETERMINISTIC", {
+            computed,
+            final_answer: mapped.final_answer,
+        });
+        return ensureExplanationEndsWithLetter({
+            ...solve,
+            final_answer: mapped.final_answer,
+            answerIndex: mapped.final_answer.charCodeAt(0) - 65,
+            answerConfidence: Math.min(
+                solve.answerConfidence ?? 0.9,
+                mapped.answerConfidence
+            ),
+        });
+    }
+
+    if (typeof callLlm === "function" && computed) {
+        try {
+            const raw = await callLlm(
+                buildOptionMapPrompt({
+                    computedValue: computed,
+                    options: opts,
+                    stem: question?.questionText || "",
+                })
+            );
+            // Option-map returns a JSON **object**, not an array — parse flexibly.
+            const obj = parseJsonFlexibleFromAIText(raw);
+            const letterOut = String(obj?.final_answer || "")
+                .trim()
+                .toUpperCase();
+            if (/^[A-D]$/.test(letterOut) && letterOut.charCodeAt(0) - 65 < opts.length) {
+                pipelineTrace("SOLVER_OPTION_MAP_LLM", {
+                    computed,
+                    final_answer: letterOut,
+                });
+                return ensureExplanationEndsWithLetter({
+                    ...solve,
+                    final_answer: letterOut,
+                    answerIndex: letterOut.charCodeAt(0) - 65,
+                    answerConfidence: normalizeSolverConfidence(
+                        obj?.answerConfidence ?? solve.answerConfidence ?? 0.75
+                    ),
+                });
+            }
+        } catch (err) {
+            pipelineTrace("SOLVER_OPTION_MAP_FAILED", {
+                error: err?.message || String(err),
+            });
+        }
+    }
+
+    // No option match → unsolvable (e.g. computed 2.36A but options say 51.75A).
+    return {
+        ...solve,
+        final_answer: "",
+        answerIndex: -1,
+        answerConfidence: Math.min(solve.answerConfidence || 0.3, 0.3),
+    };
+};
+
+const ensureExplanationEndsWithLetter = (solve) => {
+    const letterOut = String(solve?.final_answer || "").toUpperCase();
+    if (!/^[A-D]$/.test(letterOut)) return solve;
+    let explanation = String(solve.explanation || "").trim();
+    if (!/FINAL_ANSWER\s*:/i.test(explanation)) {
+        explanation = `${explanation}${
+            explanation ? " " : ""
+        }Therefore, the correct answer is ${letterOut}. FINAL_ANSWER: ${letterOut}`;
+    }
+    return { ...solve, explanation };
 };
 
 /**
@@ -340,20 +568,14 @@ const applySolverAsSourceOfTruth = ({ questions, entries, solved }) => {
                 : s
         );
 
-        // Prefer solver's explanation if present; else derive from steps (same chain).
-        let explanation = String(check.explanation || "").trim();
-        if (!explanation && stepsRaw.length) {
-            explanation = lockExplanationToMarkedOption(stepsRaw, markedText, {
-                correctLetter,
-            });
-        }
-
-        let updated = {
+        // NEVER use freeform LLM explanation as student text — rewrite from
+        // verified steps only (no re-solve, no number changes).
+        const stepsOnly = {
             ...cur,
             correctIndex,
             correctAnswer: correctLetter,
             final_answer: correctLetter,
-            explanation,
+            explanation: "", // filled by rewrite
             _solveSteps: steps.length ? steps : stepsRaw,
             answerConfidence: check.answerConfidence,
             reasoningConfidence: check.reasoningConfidence,
@@ -369,14 +591,13 @@ const applySolverAsSourceOfTruth = ({ questions, entries, solved }) => {
                         : "passed",
                 answerConfidence: check.answerConfidence,
                 reasoningConfidence: check.reasoningConfidence,
-                explanationOk: true,
+                explanationOk: false,
                 sourceOfTruth: "independent_solver",
-                solverValue: check.value || null,
+                solverValue: check.computed_value || check.value || null,
             },
         };
 
-        // Ensure explanation concludes with final_answer (repair only — never change answer).
-        updated = rebuildExplanationFromVerifiedSolution(updated);
+        const updated = rewriteExplanationFromVerifiedSteps(stepsOnly);
 
         if (priorMarked >= 0 && priorMarked !== correctIndex) disagreementCount++;
         fixedCount++;
@@ -540,7 +761,10 @@ export const runAnswerCorrectnessPass = async (
     const solved = new Map();
 
     if (solverTruth) {
-        // One question per call, parallel workers — avoids batch anchoring & cuts latency.
+        // Blind solve (stem only) → map computed_value onto options (no option bias).
+        const blind =
+            process.env.AI_QB_BLIND_SOLVER !== "0" &&
+            process.env.AI_QB_BLIND_SOLVER !== "false";
         const concurrency = getSolverTruthConcurrency();
         await runTasksWithConcurrency(
             entries.map((entry, globalIdx) => async () => {
@@ -550,11 +774,20 @@ export const runAnswerCorrectnessPass = async (
                     topic: topic || bankName,
                     examProfile,
                     structuredTruthSchema: true,
+                    blindStemOnly: blind,
                 });
                 try {
                     const raw = await callLlm(prompt);
                     const parsed = parseIndependentSolveResponse(raw, 1);
                     let primary = parsed.get(0) || null;
+
+                    if (primary && blind) {
+                        primary = await resolveBlindSolveToOption(
+                            primary,
+                            entry.question,
+                            callLlm
+                        );
+                    }
 
                     const needDouble = shouldDoubleSolve({
                         difficulty:
@@ -575,7 +808,14 @@ export const runAnswerCorrectnessPass = async (
                         try {
                             const raw2 = await secondaryFn(prompt);
                             const parsed2 = parseIndependentSolveResponse(raw2, 1);
-                            const secondary = parsed2.get(0) || null;
+                            let secondary = parsed2.get(0) || null;
+                            if (secondary && blind) {
+                                secondary = await resolveBlindSolveToOption(
+                                    secondary,
+                                    entry.question,
+                                    secondaryFn
+                                );
+                            }
                             if (
                                 primary?.final_answer &&
                                 secondary?.final_answer &&
@@ -588,7 +828,6 @@ export const runAnswerCorrectnessPass = async (
                                         entry.question?.questionText || ""
                                     ).slice(0, 80),
                                 });
-                                // Disagreement → leave unsolved so question regenerates.
                                 solved.set(globalIdx, null);
                                 return;
                             }

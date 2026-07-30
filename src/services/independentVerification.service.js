@@ -141,8 +141,34 @@ export const attachVerificationStatus = (
 };
 
 /**
- * Run independent solver (+ optional explanation verifier) on a bank.
+ * Answer + explanation consistency + final rule engine.
+ * Run AFTER SymPy (ideal order: solver → sympy → answer/expl → difficulty → rules).
  */
+export const runPostSymbolicTruthGates = (questions = []) => {
+    if (!isSolverTruthEnabled()) {
+        return {
+            questions,
+            consistencyUnfixable: [],
+            ruleUnfixable: [],
+            repairedCount: 0,
+        };
+    }
+    const consistency = runRuleBasedConsistencyCheck(questions);
+    let next = attachComplexityMetadata(consistency.questions || questions);
+    const rules = runRuleEngineRejects(next);
+    pipelineTrace("FINALIZE_POST_SYMBOLIC_TRUTH_GATES", {
+        explanationRepaired: consistency.repairedCount || 0,
+        consistencyRejected: (consistency.unfixableRefs || []).length,
+        ruleRejected: (rules.unfixableRefs || []).length,
+    });
+    return {
+        questions: next,
+        consistencyUnfixable: consistency.unfixableRefs || [],
+        ruleUnfixable: rules.unfixableRefs || [],
+        repairedCount: consistency.repairedCount || 0,
+    };
+};
+
 export const runIndependentVerificationPipeline = async (
     questions = [],
     {
@@ -155,6 +181,8 @@ export const runIndependentVerificationPipeline = async (
         callLlm,
         callLlmSecondary = null,
         skipExplanationVerifier = false,
+        /** When true, defer consistency+rule engine until after SymPy (recommended). */
+        deferTruthGates = true,
     } = {}
 ) => {
     const empty = {
@@ -227,18 +255,21 @@ export const runIndependentVerificationPipeline = async (
     }
 
     let consistencyUnfixable = [];
-    let ruleUnfixable = [];
-    if (isSolverTruthEnabled()) {
-        const consistency = runRuleBasedConsistencyCheck(next);
-        next = consistency.questions || next;
-        consistencyUnfixable = consistency.unfixableRefs || [];
-        next = attachComplexityMetadata(next);
-        const rules = runRuleEngineRejects(next);
-        ruleUnfixable = rules.unfixableRefs || [];
+    let ruleUnsolvable = [];
+    if (isSolverTruthEnabled() && !deferTruthGates) {
+        const gates = runPostSymbolicTruthGates(next);
+        next = gates.questions;
+        consistencyUnfixable = gates.consistencyUnfixable;
+        ruleUnsolvable = gates.ruleUnfixable;
         pipelineTrace("FINALIZE_SOLVER_TRUTH_GATES", {
-            explanationRepaired: consistency.repairedCount || 0,
+            explanationRepaired: gates.repairedCount || 0,
             consistencyRejected: consistencyUnfixable.length,
-            ruleRejected: ruleUnfixable.length,
+            ruleRejected: ruleUnsolvable.length,
+            deferred: false,
+        });
+    } else if (isSolverTruthEnabled() && deferTruthGates) {
+        pipelineTrace("FINALIZE_SOLVER_TRUTH_GATES_DEFERRED", {
+            note: "consistency + rule engine run after SymPy / difficulty",
         });
     }
 
@@ -246,7 +277,7 @@ export const runIndependentVerificationPipeline = async (
         ...(solverResult.unfixableRefs || []),
         ...(explanationResult.unfixableRefs || []),
         ...consistencyUnfixable,
-        ...ruleUnfixable,
+        ...ruleUnsolvable,
     ];
     const dropped = dropQuestionsByRefs(next, allUnfixable);
     next = dropped.questions;

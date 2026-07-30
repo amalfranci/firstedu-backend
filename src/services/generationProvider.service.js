@@ -82,6 +82,10 @@ export const resolveProviderForDifficulty = (
 /**
  * Per-stage provider override (solver / difficulty_judge / audit).
  * Falls back to generation provider when unset or key missing.
+ *
+ * Ideal routing (budget-aware):
+ *   solver / solver_b → OpenAI o-series when key present
+ *   difficulty_judge / audit → GPT-4o family
  */
 export const resolveVerificationStageProvider = (
     stage,
@@ -103,32 +107,30 @@ export const resolveVerificationStageProvider = (
     const raw = envKey
         ? String(process.env[envKey] || "").trim().toLowerCase()
         : "";
-    // Secondary solver: prefer a different configured provider; skip Claude by
-    // default (billing failures are common). Fall back to same provider (gemini).
+
+    // Solver defaults to OpenAI (o-series) when available — calculation/reasoning gate.
+    const preferOpenAi =
+        stage === "solver" ||
+        stage === "solver_b" ||
+        stage === "difficulty_judge" ||
+        stage === "audit";
+
+    // Secondary solver: prefer a second OpenAI reasoning model when unset.
     const autoSecondary =
         stage === "solver_b" && !raw
-            ? fallback === "gemini"
-                ? process.env.OPENAI_API_KEY
-                    ? "openai"
-                    : "gemini"
-                : fallback === "openai"
-                  ? process.env.GOOGLE_API_KEY || process.env.GEMINI_API_KEY
-                      ? "gemini"
-                      : "openai"
-                  : process.env.OPENAI_API_KEY
-                    ? "openai"
-                    : process.env.GOOGLE_API_KEY || process.env.GEMINI_API_KEY
-                      ? "gemini"
-                      : fallback
+            ? process.env.OPENAI_API_KEY
+                ? "openai"
+                : process.env.GEMINI_API_KEY
+                  ? "gemini"
+                  : fallback
             : null;
+
     const candidate = raw
         ? normalizeGenerationProvider(raw)
         : autoSecondary
           ? normalizeGenerationProvider(autoSecondary)
-          : stage === "difficulty_judge" || stage === "audit"
-            ? process.env.OPENAI_API_KEY
-                ? "openai"
-                : fallback
+          : preferOpenAi && process.env.OPENAI_API_KEY
+            ? "openai"
             : fallback;
 
     try {
@@ -140,4 +142,105 @@ export const resolveVerificationStageProvider = (
             return fallback;
         }
     }
+};
+
+/**
+ * Model id for a verification stage (OpenAI). Reasoning models for solver;
+ * GPT-4o for final audit / difficulty judge.
+ */
+export const resolveVerificationStageModel = (stage = "solver") => {
+    if (stage === "solver") {
+        return (
+            String(process.env.OPENAI_SOLVER_MODEL || process.env.AI_QB_SOLVER_MODEL || "")
+                .trim() || "o3"
+        );
+    }
+    if (stage === "solver_b") {
+        return (
+            String(
+                process.env.OPENAI_SOLVER_MODEL_B ||
+                    process.env.AI_QB_SOLVER_MODEL_B ||
+                    ""
+            ).trim() ||
+            String(process.env.OPENAI_SOLVER_MODEL || "").trim() ||
+            "o4-mini"
+        );
+    }
+    if (stage === "difficulty_judge") {
+        return (
+            String(
+                process.env.OPENAI_DIFFICULTY_JUDGE_MODEL ||
+                    process.env.AI_QB_DIFFICULTY_JUDGE_MODEL ||
+                    ""
+            ).trim() ||
+            String(process.env.OPENAI_AUDIT_MODEL || "").trim() ||
+            "gpt-4o"
+        );
+    }
+    if (stage === "audit") {
+        return (
+            String(process.env.OPENAI_AUDIT_MODEL || process.env.OPENAI_CORRECTNESS_AUDIT_MODEL || "")
+                .trim() || "gpt-4o"
+        );
+    }
+    return (
+        String(process.env.OPENAI_QB_GENERATION_MODEL || process.env.OPENAI_CHAT_MODEL || "")
+            .trim() || "gpt-4o-mini"
+    );
+};
+
+/** True for OpenAI o-series / reasoning models that reject temperature + json_object quirks. */
+export const isOpenAIReasoningModel = (model = "") =>
+    /^(o[0-9]|o[0-9]-|gpt-5)/i.test(String(model || "").trim());
+
+/**
+ * reasoning_effort for o-series. Hard STEM → high; otherwise medium.
+ * Override with OPENAI_REASONING_EFFORT=low|medium|high.
+ */
+export const resolveReasoningEffort = ({
+    difficulty = "",
+    subject = "",
+    sectionName = "",
+} = {}) => {
+    const forced = String(process.env.OPENAI_REASONING_EFFORT || "")
+        .trim()
+        .toLowerCase();
+    if (forced === "low" || forced === "medium" || forced === "high") {
+        return forced;
+    }
+    // Default medium for reliability; set OPENAI_REASONING_EFFORT=high for max depth.
+    const diff = String(difficulty || "").toLowerCase();
+    const stem = `${subject || ""} ${sectionName || ""}`.toLowerCase();
+    const hardStem =
+        diff.includes("hard") &&
+        /physics|chemistry|math|algebra|calculus|mathematics/.test(stem);
+    return hardStem ? "high" : "medium";
+};
+
+/**
+ * Solver model fallback: stay on reasoning models before gpt-4o.
+ * Default: primary → o4-mini → o3-mini → (optional gpt-4o if AI_QB_SOLVER_ALLOW_GPT4O_FALLBACK=1)
+ */
+export const resolveSolverFallbackChain = (primaryModel = "o3") => {
+    const primary = String(primaryModel || "o3").trim() || "o3";
+    const envChain = String(process.env.OPENAI_SOLVER_FALLBACK_CHAIN || "")
+        .split(",")
+        .map((s) => s.trim())
+        .filter(Boolean);
+    const defaults = [
+        String(process.env.OPENAI_SOLVER_FALLBACK_MODEL || "o4-mini").trim(),
+        "o3-mini",
+        "o4-mini",
+    ].filter(Boolean);
+    const allowGpt4o =
+        process.env.AI_QB_SOLVER_ALLOW_GPT4O_FALLBACK === "1" ||
+        process.env.AI_QB_SOLVER_ALLOW_GPT4O_FALLBACK === "true";
+    const chain = [];
+    const push = (m) => {
+        if (m && !chain.includes(m)) chain.push(m);
+    };
+    push(primary);
+    (envChain.length ? envChain : defaults).forEach(push);
+    if (allowGpt4o) push("gpt-4o");
+    return chain;
 };

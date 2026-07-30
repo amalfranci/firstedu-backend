@@ -48,7 +48,7 @@ const hasNonEmptyExplanation = (q) =>
 /** Cosine threshold above which a generated question is treated as a near-copy. */
 export const RAG_COPY_THRESHOLD = Math.min(
     0.99,
-    Math.max(0.8, Number(process.env.AI_QB_QUESTION_RAG_COPY_THRESHOLD || 0.92))
+    Math.max(0.8, Number(process.env.AI_QB_QUESTION_RAG_COPY_THRESHOLD || 0.93))
 );
 
 /** Named exams only — not generic "competitive"/"board", which would over-match. */

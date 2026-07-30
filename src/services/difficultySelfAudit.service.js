@@ -136,10 +136,11 @@ ${rubricsBlock}
 **How to score each question:**
 1. Read the **Assigned difficultyTier** line for that question
 2. Apply the matching **tier scoring** rubric above (not a generic "hard" feel)
-3. **80+** = clearly meets that tier's Target + REQUIRED bars
-4. **65–79** = borderline for that tier
-5. **Below 65** = too easy for the assigned tier (see "too easy" note for that tier)
-6. **Below 50** = BANNED pattern for that tier
+3. Use the provided **Solve steps** / explanation as the true step-count signal (not stem length alone)
+4. **80+** = clearly meets that tier's Target + REQUIRED bars
+5. **65–79** = borderline for that tier
+6. **Below 65** = too easy for the assigned tier (see "too easy" note for that tier)
+7. **Below 50** = BANNED pattern for that tier
 
 Penalize: meta draft text ("adjusting", "re-evaluating"), formula-only stems when tier requires fusion, duplicate template logic.
 

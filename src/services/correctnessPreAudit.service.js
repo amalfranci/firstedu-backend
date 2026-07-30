@@ -330,7 +330,7 @@ export const detectExplanationNamedConclusionMismatch = (q) => {
 };
 
 const EXPLANATION_META_COMMENTARY =
-    /\b(?:re-?evaluat|re-?calculat|recomput|adjustment|editing option|my mistake|error in distractor|let(?:'s| us)\s+(?:adjust|use|recalculate|assume|pick|choose)|however,?\s+considering|calculated\s+as|is incorrect,\s*checking|none match|correction:|wait)\b/i;
+    /\b(?:re-?evaluat(?:ing|e|ion)?|re-?calculat(?:ing|e|ion)?|recomput(?:ing|e)?|correcting|correction|upon reconsideration|actually|instead|however|wait|my mistake|i made a mistake|let us correct|let'?s correct|adjustment|editing option|error in distractor|let(?:'s| us)\s+(?:adjust|use|recalculate|assume|pick|choose|correct)|however,?\s+considering|calculated\s+as|is incorrect,\s*checking|none match)\b/i;
 
 /** Draft/meta commentary in explanation — not publishable on first pass. */
 const detectExplanationMetaCommentary = (q) => {
@@ -1093,7 +1093,7 @@ const detectExplanationNumericMismatch = (q) => {
     return null;
 };
 
-const BATCH_DUPLICATE_STEM_RATIO = 0.85;
+const BATCH_DUPLICATE_STEM_RATIO = 0.95;
 
 /** Near-duplicate stems within the same batch (e.g. Q5 = Q14, Q8 = Q15). */
 export const detectBatchDuplicateStemIssues = (sampled = []) => {

@@ -128,9 +128,11 @@ import {
     reconcileQuestionBankWithIndependentVerify,
 } from "./questionNumericVerify.service.js";
 import { runAnswerCorrectnessPass } from "./answerCorrection.service.js";
-import { runIndependentVerificationPipeline } from "./independentVerification.service.js";
-import { applySymbolicVerificationToQuestions } from "./symbolicVerify.service.js";
+import { runIndependentVerificationPipeline, runPostSymbolicTruthGates, dropQuestionsByRefs } from "./independentVerification.service.js";
+import { applySymbolicVerificationToQuestions, applySymPyPreSolvePass } from "./symbolicVerify.service.js";
 import { isSolverTruthEnabled } from "./solverTruth.service.js";
+import { rewriteExplanationsForBank } from "./explanationRewrite.service.js";
+import { dedupeBatchByHashAndEmbedding } from "./batchDuplicate.service.js";
 import { runConceptCoveragePass } from "./conceptCoverage.service.js";
 import { withStageTiming, recordVerificationTelemetry } from "./verificationTelemetry.service.js";
 import { parkLowConfidenceForHumanReview } from "./humanReviewQueue.service.js";
@@ -234,8 +236,16 @@ import {
     normalizeGenerationProvider,
     resolveGenerationTemperature,
     resolveVerificationStageProvider,
+    resolveVerificationStageModel,
+    isOpenAIReasoningModel,
+    resolveReasoningEffort,
+    resolveSolverFallbackChain,
     resolveProviderForDifficulty,
 } from "./generationProvider.service.js";
+import {
+    callOpenAIReasoningJson,
+    callOpenAIReasoningText,
+} from "./openaiReasoningChat.service.js";
 import {
     enrichSlotPlansToBlueprints,
     blueprintsToPresetSteering,
@@ -274,7 +284,7 @@ export {
 // Increased from 90s to 120s to account for network jitter and Gemini latency variations.
 const GEMINI_REQUEST_TIMEOUT_MS = Math.max(
     10_000,
-    Number(process.env.GEMINI_REQUEST_TIMEOUT_MS ?? 120_000)
+    Number(process.env.GEMINI_REQUEST_TIMEOUT_MS ?? 30_000)
 );
 const genAI = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY,
@@ -374,11 +384,11 @@ const GEMINI_QB_MAX_ATTEMPTS = Math.max(
 );
 const GEMINI_RETRY_DELAY_MS = Math.max(
     500,
-    Number(process.env.GEMINI_RETRY_DELAY_MS) || 4000
+    Number(process.env.GEMINI_RETRY_DELAY_MS) || 1500
 );
 const GEMINI_RETRY_MAX_DELAY_MS = Math.max(
     GEMINI_RETRY_DELAY_MS,
-    Number(process.env.GEMINI_RETRY_MAX_DELAY_MS) || 20000
+    Number(process.env.GEMINI_RETRY_MAX_DELAY_MS) || 5000
 );
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -1815,6 +1825,12 @@ ${buildExamSolveThenWriteBlock()}
 ${buildExamAnswerKeyLockBlock()}
 ${buildPreOutputCorrectnessChecklist({ examProfile })}
 
+**CRITICAL CONSTRAINTS FOR REPAIR (schema — enforced by validator):**
+1. For \`questionType: "single"\`: \`correctAnswer\` must be exactly ONE letter (A/B/C/D).
+2. For \`questionType: "multiple"\`: \`correctAnswer\` must be an array of EXACTLY 2 letters (e.g. ["A","C"]). Never 1, never 3+, never all 4.
+3. For \`questionType: "true_false"\`: \`correctAnswer\` must be exactly "True" or "False".
+4. Do NOT include draft/meta language (re-evaluating, actually, however, wait, correction, upon reconsideration).
+
 **TASK — FIX FIRST, REWRITE ONLY IF YOU MUST.** Return ONLY a valid JSON array with exactly **${flawedEntries.length}** object(s), in the same order as below, each using the same questionType as its draft.
 
 **For each item, FIRST re-solve the question yourself from its stem.** Then pick ONE mode:
@@ -2205,6 +2221,7 @@ export const finalizeQuestionBankSuggestions = async ({
                             provider
                         ),
                         temperature: 0.1,
+                        model: resolveVerificationStageModel("difficulty_judge"),
                     }),
             }
         );
@@ -2325,12 +2342,56 @@ export const finalizeQuestionBankSuggestions = async ({
         "solver",
         provider
     );
+    const solverModel = resolveVerificationStageModel("solver");
+    const solverBModel = resolveVerificationStageModel("solver_b");
     let verificationStats = {
         passed: 0,
         fixed: 0,
         regenerated: 0,
         stripped: 0,
     };
+
+    // Within-batch duplicates: LaTeX-normalized hash + embedding (~93%) — keep one.
+    try {
+        const deduped = await dedupeBatchByHashAndEmbedding(normalized);
+        if (deduped.dropped > 0) {
+            verificationStats.stripped += deduped.dropped;
+            pipelineTrace("FINALIZE_BATCH_DEDUPED", {
+                dropped: deduped.dropped,
+                kept: deduped.kept,
+            });
+        }
+        normalized = deduped.questions || normalized;
+    } catch (err) {
+        pipelineTrace("FINALIZE_BATCH_DEDUPE_FAILED", {
+            error: err?.message || String(err),
+        });
+    }
+
+    // SymPy pre-parse BEFORE expensive LLM solver (pure math equations only).
+    try {
+        const pre = await applySymPyPreSolvePass(normalized, {
+            subject,
+            sectionName,
+        });
+        if (pre.preSolved > 0) {
+            pipelineTrace("FINALIZE_SYMPY_PRESOLVE", {
+                preSolved: pre.preSolved,
+            });
+        }
+        normalized = pre.questions || normalized;
+    } catch (err) {
+        pipelineTrace("FINALIZE_SYMPY_PRESOLVE_FAILED", {
+            error: err?.message || String(err),
+        });
+    }
+
+    const solverReasoningEffort = resolveReasoningEffort({
+        difficulty: effectiveDifficulty,
+        subject,
+        sectionName,
+    });
+
     try {
         const verification = await withStageTiming(
             "independent_verification",
@@ -2346,10 +2407,13 @@ export const finalizeQuestionBankSuggestions = async ({
                         isSolverTruthEnabled() ||
                         process.env.AI_QB_DEFER_EXPLANATION_VERIFY === "1" ||
                         process.env.AI_QB_DEFER_EXPLANATION_VERIFY === "true",
+                    deferTruthGates: true,
                     callLlm: (prompt) =>
                         callQuestionBankGenerationLLM(prompt, {
                             generationProvider: solverProvider,
                             temperature: 0,
+                            model: solverModel,
+                            reasoningEffort: solverReasoningEffort,
                         }),
                     callLlmSecondary: (prompt) =>
                         callQuestionBankGenerationLLM(prompt, {
@@ -2358,9 +2422,17 @@ export const finalizeQuestionBankSuggestions = async ({
                                 solverProvider
                             ),
                             temperature: 0,
+                            model: solverBModel,
+                            reasoningEffort: solverReasoningEffort,
                         }),
                 }),
-            { provider: solverProvider, topic, bankName }
+            {
+                provider: solverProvider,
+                model: solverModel,
+                reasoning_effort: solverReasoningEffort,
+                topic,
+                bankName,
+            }
         );
         normalized = verification.questions || normalized;
         verificationStats = {
@@ -2449,6 +2521,46 @@ export const finalizeQuestionBankSuggestions = async ({
         });
     }
 
+    // Rewrite student explanations ONLY from verified solver steps (never re-solve).
+    if (isSolverTruthEnabled()) {
+        try {
+            normalized = rewriteExplanationsForBank(normalized);
+            pipelineTrace("FINALIZE_EXPLANATION_REWRITE", {
+                count: normalized.length,
+            });
+        } catch (err) {
+            pipelineTrace("FINALIZE_EXPLANATION_REWRITE_FAILED", {
+                error: err?.message || String(err),
+            });
+        }
+    }
+
+    // Answer + explanation consistency after SymPy (final_answer is source of truth).
+    if (isSolverTruthEnabled()) {
+        try {
+            const gates = runPostSymbolicTruthGates(normalized);
+            normalized = gates.questions || normalized;
+            // Drop consistency failures now; rule engine runs again after difficulty
+            // (indices change if difficulty drops items — do not reuse rule refs).
+            if (gates.consistencyUnsolvable?.length) {
+                const dropped = dropQuestionsByRefs(
+                    normalized,
+                    gates.consistencyUnsolvable
+                );
+                verificationStats.stripped += dropped.droppedCount || 0;
+                normalized = dropped.questions;
+                pipelineTrace("FINALIZE_ANSWER_EXPL_CONSISTENCY", {
+                    dropped: dropped.droppedCount,
+                    repaired: gates.repairedCount,
+                });
+            }
+        } catch (err) {
+            pipelineTrace("FINALIZE_ANSWER_EXPL_CONSISTENCY_FAILED", {
+                error: err?.message || String(err),
+            });
+        }
+    }
+
     // Difficulty judge AFTER answer verification (solver-truth required order).
     if (deferDifficultyUntilAfterVerify) {
         // Concept coverage + formula gates before difficulty (cheap, deterministic).
@@ -2501,10 +2613,45 @@ export const finalizeQuestionBankSuggestions = async ({
             kept: normalized.length,
             rejected: selfAuditResult.rejectedCount || 0,
         });
+
+        // Rule engine last (after solver → sympy → answer/expl → difficulty).
+        if (isSolverTruthEnabled()) {
+            const rulesAgain = runPostSymbolicTruthGates(normalized);
+            const gateRefs = [
+                ...(rulesAgain.ruleUnsolvable || []),
+                ...(rulesAgain.consistencyUnsolvable || []),
+            ];
+            normalized = rulesAgain.questions || normalized;
+            if (gateRefs.length) {
+                const dropped = dropQuestionsByRefs(normalized, gateRefs);
+                verificationStats.stripped += dropped.droppedCount || 0;
+                normalized = dropped.questions;
+                pipelineTrace("FINALIZE_RULE_ENGINE_AFTER_DIFFICULTY", {
+                    dropped: dropped.droppedCount,
+                    kept: normalized.length,
+                });
+            }
+        }
     }
 
+    if (!deferDifficultyUntilAfterVerify && isSolverTruthEnabled()) {
+        const gates = runPostSymbolicTruthGates(normalized);
+        normalized = gates.questions || normalized;
+        const gateRefs = [
+            ...(gates.ruleUnsolvable || []),
+            ...(gates.consistencyUnsolvable || []),
+        ];
+        if (gateRefs.length) {
+            const dropped = dropQuestionsByRefs(normalized, gateRefs);
+            verificationStats.stripped += dropped.droppedCount || 0;
+            normalized = dropped.questions;
+        }
+    }
+
+    // Under solver-truth, do NOT re-solve via correctness repair (causes answer drift).
+    // Failures are already stripped/regenerated selectively after solver + SymPy.
     const repairFn =
-        GEMINI_QB_CORRECTNESS_REPAIR_PASSES > 0
+        GEMINI_QB_CORRECTNESS_REPAIR_PASSES > 0 && !isSolverTruthEnabled()
             ? (current, flawedEntries, pass) =>
                   repairFlawedEntriesBatch({
                       questions: current,
@@ -2520,8 +2667,17 @@ export const finalizeQuestionBankSuggestions = async ({
     let { questions: cleaned, strippedCount, strippedByType, repairedPasses, audit } =
         await stripFlawedQuestionBankEntries(normalized, {
             repairFn,
-            maxRepairPasses: GEMINI_QB_CORRECTNESS_REPAIR_PASSES,
+            maxRepairPasses: isSolverTruthEnabled()
+                ? 0
+                : GEMINI_QB_CORRECTNESS_REPAIR_PASSES,
         });
+
+    if (isSolverTruthEnabled() && GEMINI_QB_CORRECTNESS_REPAIR_PASSES > 0) {
+        pipelineTrace("CORRECTNESS_REPAIR_SKIP", {
+            reason: "solver_truth_enabled",
+            configuredPasses: GEMINI_QB_CORRECTNESS_REPAIR_PASSES,
+        });
+    }
 
     verificationStats.stripped += strippedCount || 0;
 
@@ -6441,81 +6597,35 @@ const toOpenAIChatError = (error) => toOpenAIApiError(error, "OpenAI question ge
 
 const callOpenAIChatForText = async (
     prompt,
-    { model: modelOverride, temperature = 0.2 } = {}
+    { model: modelOverride, temperature = 0.2, reasoningEffort } = {}
 ) => {
     const { apiKey, model: defaultModel } = getOpenAIChatConfig();
     const model = modelOverride || defaultModel;
-
-    if (!apiKey) {
-        throw new ApiError(500, "OpenAI API key is not configured (OPENAI_API_KEY)");
-    }
-
-    try {
-        const response = await callOpenAIWithRetries(() =>
-            axios.post(
-                OPENAI_CHAT_URL,
-                {
-                    model,
-                    messages: [{ role: "user", content: prompt }],
-                    temperature,
-                },
-                {
-                    headers: {
-                        Authorization: `Bearer ${apiKey}`,
-                        "Content-Type": "application/json",
-                    },
-                    timeout: 120000,
-                }
-            )
-        );
-
-        const text = response.data?.choices?.[0]?.message?.content || "";
-        if (!text.trim()) {
-            throw new ApiError(500, "OpenAI returned empty response");
-        }
-
-        return text;
-    } catch (error) {
-        throw toOpenAIChatError(error);
-    }
+    return callOpenAIReasoningText({
+        apiKey,
+        prompt,
+        model,
+        temperature,
+        reasoningEffort,
+        callWithRetries: callOpenAIWithRetries,
+        toError: toOpenAIChatError,
+    });
 };
 
-const callOpenAIChatForJson = async (prompt, { model: modelOverride } = {}) => {
+const callOpenAIChatForJson = async (
+    prompt,
+    { model: modelOverride, reasoningEffort } = {}
+) => {
     const { apiKey, model: defaultModel } = getOpenAIChatConfig();
     const model = modelOverride || defaultModel;
-
-    if (!apiKey) {
-        throw new ApiError(500, "OpenAI API key is not configured (OPENAI_API_KEY)");
-    }
-
-    try {
-        const response = await callOpenAIWithRetries(() =>
-            axios.post(
-                OPENAI_CHAT_URL,
-                {
-                    model,
-                    messages: [{ role: "user", content: prompt }],
-                    response_format: { type: "json_object" },
-                },
-                {
-                    headers: {
-                        Authorization: `Bearer ${apiKey}`,
-                        "Content-Type": "application/json",
-                    },
-                    timeout: 120000,
-                }
-            )
-        );
-
-        const text = response.data?.choices?.[0]?.message?.content || "";
-        if (!text.trim()) {
-            throw new ApiError(500, "OpenAI returned empty response");
-        }
-
-        return text;
-    } catch (error) {
-        throw toOpenAIChatError(error);
-    }
+    return callOpenAIReasoningJson({
+        apiKey,
+        prompt,
+        model,
+        reasoningEffort,
+        callWithRetries: callOpenAIWithRetries,
+        toError: toOpenAIChatError,
+    });
 };
 
 /**
@@ -6672,7 +6782,7 @@ const withProviderFallback = async (primaryProvider, attemptFn) => {
     }
 };
 
-const dispatchGenerationLLMText = async (provider, prompt, temperature) => {
+const dispatchGenerationLLMText = async (provider, prompt, temperature, modelOverride) => {
     if (provider === "openai") {
         if (!process.env.OPENAI_API_KEY) {
             throw new ApiError(
@@ -6681,6 +6791,7 @@ const dispatchGenerationLLMText = async (provider, prompt, temperature) => {
             );
         }
         const model =
+            modelOverride ||
             process.env.OPENAI_QB_GENERATION_MODEL?.trim() ||
             getOpenAIChatConfig().model;
         return callOpenAIChatForText(prompt, { model, temperature });
@@ -6710,15 +6821,21 @@ const dispatchGenerationLLMText = async (provider, prompt, temperature) => {
 
 const callQuestionBankGenerationLLMText = async (
     prompt,
-    { generationProvider = "gemini", temperature = 0.2 } = {}
+    { generationProvider = "gemini", temperature = 0.2, model } = {}
 ) => {
     const provider = normalizeGenerationProvider(generationProvider);
     return withProviderFallback(provider, (p) =>
-        dispatchGenerationLLMText(p, prompt, temperature)
+        dispatchGenerationLLMText(p, prompt, temperature, model)
     );
 };
 
-const dispatchGenerationLLM = async (provider, prompt, temperature) => {
+const dispatchGenerationLLM = async (
+    provider,
+    prompt,
+    temperature,
+    modelOverride,
+    reasoningEffort
+) => {
     if (provider === "openai") {
         if (!process.env.OPENAI_API_KEY) {
             throw new ApiError(
@@ -6727,9 +6844,10 @@ const dispatchGenerationLLM = async (provider, prompt, temperature) => {
             );
         }
         const model =
+            modelOverride ||
             process.env.OPENAI_QB_GENERATION_MODEL?.trim() ||
             getOpenAIChatConfig().model;
-        return callOpenAIChatForJson(prompt, { model });
+        return callOpenAIChatForJson(prompt, { model, reasoningEffort });
     }
 
     if (provider === "claude") {
@@ -6760,11 +6878,11 @@ const dispatchGenerationLLM = async (provider, prompt, temperature) => {
 
 const callQuestionBankGenerationLLM = async (
     prompt,
-    { generationProvider = "gemini", temperature } = {}
+    { generationProvider = "gemini", temperature, model, reasoningEffort } = {}
 ) => {
     const provider = normalizeGenerationProvider(generationProvider);
     return withProviderFallback(provider, (p) =>
-        dispatchGenerationLLM(p, prompt, temperature)
+        dispatchGenerationLLM(p, prompt, temperature, model, reasoningEffort)
     );
 };
 

@@ -1,0 +1,242 @@
+/**
+ * OpenAI Chat Completions helpers tuned for o-series reasoning models.
+ * - No temperature on reasoning models
+ * - reasoning_effort: low|medium|high
+ * - developer role (not system) for JSON instructions
+ * - Fail-fast timeout (default 45s) + reasoning-model fallback chain
+ */
+
+import axios from "axios";
+import { ApiError } from "../utils/ApiError.js";
+import { pipelineTrace } from "../utils/aiApiCallLogger.js";
+import {
+    isOpenAIReasoningModel,
+    resolveSolverFallbackChain,
+} from "./generationProvider.service.js";
+
+const OPENAI_CHAT_URL = "https://api.openai.com/v1/chat/completions";
+
+/** Solver fail-fast — do not hang 5 minutes. Override with OPENAI_SOLVER_TIMEOUT_MS. */
+export const getOpenAISolverTimeoutMs = () =>
+    Math.max(
+        10_000,
+        Math.min(
+            180_000,
+            Number(process.env.OPENAI_SOLVER_TIMEOUT_MS || 45_000)
+        )
+    );
+
+export const buildOpenAIChatBody = ({
+    model,
+    prompt,
+    temperature = 0.2,
+    reasoningEffort,
+    jsonMode = false,
+}) => {
+    const reasoning = isOpenAIReasoningModel(model);
+    const effort = String(reasoningEffort || "medium").toLowerCase();
+    const body = { model };
+
+    if (reasoning) {
+        body.max_completion_tokens = Number(
+            process.env.OPENAI_SOLVER_MAX_TOKENS || 8000
+        );
+        if (effort === "low" || effort === "medium" || effort === "high") {
+            body.reasoning_effort = effort;
+        }
+        const developerHint = jsonMode
+            ? "Return ONLY valid JSON. No markdown fences, no commentary. Do not re-evaluate or self-correct mid-answer."
+            : "Follow the user instructions exactly. Be concise.";
+        body.messages = [
+            { role: "developer", content: developerHint },
+            { role: "user", content: String(prompt || "") },
+        ];
+    } else {
+        body.temperature = temperature;
+        body.messages = [{ role: "user", content: String(prompt || "") }];
+        if (jsonMode) {
+            body.response_format = { type: "json_object" };
+        }
+    }
+    return body;
+};
+
+export const extractOpenAIChatText = (response) => {
+    const msg = response?.data?.choices?.[0]?.message || {};
+    return String(msg.content || msg.refusal || "").trim();
+};
+
+const postChat = async (apiKey, body, timeout) =>
+    axios.post(OPENAI_CHAT_URL, body, {
+        headers: {
+            Authorization: `Bearer ${apiKey}`,
+            "Content-Type": "application/json",
+        },
+        timeout,
+    });
+
+/**
+ * JSON-mode chat with o-series-safe params + reasoning-model fallback chain.
+ */
+export const callOpenAIReasoningJson = async ({
+    apiKey,
+    prompt,
+    model,
+    reasoningEffort = "medium",
+    callWithRetries,
+    toError,
+    timeoutMs,
+}) => {
+    if (!apiKey) {
+        throw new ApiError(500, "OpenAI API key is not configured (OPENAI_API_KEY)");
+    }
+    const effort = String(reasoningEffort || "medium").toLowerCase();
+    const primary = String(model || "o4-mini").trim();
+    const tryModels = isOpenAIReasoningModel(primary)
+        ? resolveSolverFallbackChain(primary)
+        : [primary];
+    const timeout = timeoutMs || getOpenAISolverTimeoutMs();
+
+    let lastError = null;
+    for (const candidate of tryModels) {
+        try {
+            const body = buildOpenAIChatBody({
+                model: candidate,
+                prompt,
+                temperature: 0,
+                reasoningEffort: effort,
+                jsonMode: true,
+            });
+            const response = await callWithRetries(() =>
+                postChat(apiKey, body, timeout)
+            );
+            const text = extractOpenAIChatText(response);
+            if (!text) {
+                throw new ApiError(500, "OpenAI returned empty response");
+            }
+            if (candidate !== primary) {
+                pipelineTrace("OPENAI_SOLVER_MODEL_FALLBACK", {
+                    from: primary,
+                    to: candidate,
+                    reasoning_effort: body.reasoning_effort || null,
+                    timeoutMs: timeout,
+                });
+            }
+            return text;
+        } catch (error) {
+            lastError = error;
+            const msg = String(
+                error?.response?.data?.error?.message ||
+                    error?.message ||
+                    error ||
+                    ""
+            );
+            const isTimeout = /timeout|aborted|ECONNABORTED/i.test(msg);
+
+            // developer role not accepted → retry user-only
+            if (/developer|unsupported.*role|unknown.*role/i.test(msg)) {
+                try {
+                    const fallbackBody = {
+                        model: candidate,
+                        max_completion_tokens: Number(
+                            process.env.OPENAI_SOLVER_MAX_TOKENS || 8000
+                        ),
+                        messages: [
+                            {
+                                role: "user",
+                                content: `${prompt}\n\nReturn ONLY valid JSON. No markdown fences.`,
+                            },
+                        ],
+                    };
+                    if (
+                        isOpenAIReasoningModel(candidate) &&
+                        (effort === "low" ||
+                            effort === "medium" ||
+                            effort === "high")
+                    ) {
+                        fallbackBody.reasoning_effort = effort;
+                    } else if (!isOpenAIReasoningModel(candidate)) {
+                        fallbackBody.response_format = { type: "json_object" };
+                        fallbackBody.temperature = 0;
+                        delete fallbackBody.max_completion_tokens;
+                    }
+                    const response = await callWithRetries(() =>
+                        postChat(apiKey, fallbackBody, timeout)
+                    );
+                    const text = extractOpenAIChatText(response);
+                    if (text) return text;
+                } catch (err2) {
+                    lastError = err2;
+                }
+            }
+
+            if (/reasoning_effort/i.test(msg)) {
+                try {
+                    const noEffort = buildOpenAIChatBody({
+                        model: candidate,
+                        prompt,
+                        jsonMode: true,
+                    });
+                    delete noEffort.reasoning_effort;
+                    const response = await callWithRetries(() =>
+                        postChat(apiKey, noEffort, timeout)
+                    );
+                    const text = extractOpenAIChatText(response);
+                    if (text) return text;
+                } catch (err3) {
+                    lastError = err3;
+                }
+            }
+
+            const retryable =
+                isTimeout ||
+                /model|not found|does not exist|unsupported|404|invalid_request|reasoning_effort|developer|role/i.test(
+                    msg
+                );
+            if (!retryable || candidate === tryModels[tryModels.length - 1]) {
+                throw toError(lastError || error);
+            }
+            pipelineTrace("OPENAI_SOLVER_MODEL_RETRY", {
+                from: candidate,
+                error: msg.slice(0, 160),
+                timeoutMs: timeout,
+            });
+        }
+    }
+    throw toError(lastError);
+};
+
+export const callOpenAIReasoningText = async ({
+    apiKey,
+    prompt,
+    model,
+    temperature = 0.2,
+    reasoningEffort = "medium",
+    callWithRetries,
+    toError,
+    timeoutMs,
+}) => {
+    if (!apiKey) {
+        throw new ApiError(500, "OpenAI API key is not configured (OPENAI_API_KEY)");
+    }
+    const timeout = timeoutMs || getOpenAISolverTimeoutMs();
+    const body = buildOpenAIChatBody({
+        model,
+        prompt,
+        temperature,
+        reasoningEffort,
+        jsonMode: false,
+    });
+    try {
+        const response = await callWithRetries(() =>
+            postChat(apiKey, body, timeout)
+        );
+        const text = extractOpenAIChatText(response);
+        if (!text) {
+            throw new ApiError(500, "OpenAI returned empty response");
+        }
+        return text;
+    } catch (error) {
+        throw toError(error);
+    }
+};

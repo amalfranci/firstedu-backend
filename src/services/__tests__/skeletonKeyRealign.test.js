@@ -6,6 +6,16 @@
 import { buildMcqFromSkeleton } from "../questionSolveFirst.service.js";
 
 describe("buildMcqFromSkeleton — rematch key to derivation", () => {
+    const prev = process.env.AI_QB_SOLVER_TRUTH;
+    beforeAll(() => {
+        // Rematch logic applies in legacy (non solver-truth) mode only.
+        process.env.AI_QB_SOLVER_TRUTH = "0";
+    });
+    afterAll(() => {
+        if (prev === undefined) delete process.env.AI_QB_SOLVER_TRUTH;
+        else process.env.AI_QB_SOLVER_TRUTH = prev;
+    });
+
     test("rematches when derivation matches a distractor option", () => {
         const built = buildMcqFromSkeleton(
             {

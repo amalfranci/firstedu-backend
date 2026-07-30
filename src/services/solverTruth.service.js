@@ -24,11 +24,11 @@ export const getSolverTruthMaxRetries = () =>
 export const getSolverTruthConcurrency = () =>
     Math.max(1, Math.min(8, Number(process.env.AI_QB_SOLVER_TRUTH_CONCURRENCY || 5)));
 
-/** Auto-reject / regen when answerConfidence below this (default 0.65). */
+/** Auto-reject / regen when answerConfidence below this (default 0.75). */
 export const getAnswerConfidenceFloor = () =>
     Math.max(
         0,
-        Math.min(1, Number(process.env.AI_QB_ANSWER_CONFIDENCE_FLOOR || 0.65))
+        Math.min(1, Number(process.env.AI_QB_ANSWER_CONFIDENCE_FLOOR || 0.75))
     );
 
 const letter = (i) => String.fromCharCode(65 + Number(i));
@@ -73,11 +73,29 @@ export const shouldDoubleSolve = ({
     question = null,
 } = {}) => {
     if (process.env.AI_QB_DOUBLE_SOLVE === "0") return false;
+    // Budget path: double-solve only Hard Mathematics (two reasoning runs + SymPy).
+    // Easy/Medium and non-math use a single independent solve.
+    if (
+        process.env.AI_QB_DOUBLE_SOLVE_HARD_MATH_ONLY === "0" ||
+        process.env.AI_QB_DOUBLE_SOLVE_HARD_MATH_ONLY === "false"
+    ) {
+        const diffLegacy = String(
+            difficulty || question?.difficulty || question?.difficultyTier || ""
+        ).toLowerCase();
+        const subjLegacy = `${subject || ""} ${sectionName || ""} ${question?.subject || ""}`.toLowerCase();
+        return (
+            diffLegacy === "hard" ||
+            diffLegacy.includes("hard") ||
+            /math|algebra|calculus|mathematics/.test(subjLegacy)
+        );
+    }
     const diff = String(
         difficulty || question?.difficulty || question?.difficultyTier || ""
     ).toLowerCase();
+    const isHard = diff === "hard" || diff.includes("hard");
+    if (!isHard) return false;
     const subj = `${subject || ""} ${sectionName || ""} ${question?.subject || ""}`.toLowerCase();
-    return diff === "hard" || diff.includes("hard") || /math|algebra|calculus|mathematics/.test(subj);
+    return /math|algebra|calculus|mathematics/.test(subj);
 };
 
 export const shouldSkipSymbolicVerify = (q = {}, { subject = "", sectionName = "" } = {}) => {
@@ -87,10 +105,25 @@ export const shouldSkipSymbolicVerify = (q = {}, { subject = "", sectionName = "
         .map((x) => String(x || ""))
         .join(" ")
         .toLowerCase();
-    if (/assertion[\s-]*reason|organic\s+chemistry|conceptual\s+only|match\s+the\s+column/.test(blob)) {
+    if (
+        /assertion[\s-]*reason|organic\s+chemistry|conceptual\s+only|match\s+the\s+column/.test(
+            blob
+        )
+    ) {
         return true;
     }
-    return !/math|algebra|calculus|mathematics/.test(`${subject} ${sectionName}`.toLowerCase());
+    const subj = `${subject || ""} ${sectionName || ""} ${q?.subject || ""}`.toLowerCase();
+    const isMath = /math|algebra|calculus|mathematics/.test(subj);
+    const isPhysics = /\bphysics\b/.test(subj);
+    const isChem = /\bchem/.test(subj);
+    // SymPy: Mathematics + numerical Physics / Physical Chemistry only.
+    if (!isMath && !isPhysics && !isChem) return true;
+    if (!isMath && (isPhysics || isChem)) {
+        // Conceptual / qualitative stems — skip symbolic.
+        const stem = String(q?.questionText || "");
+        if (!/\d/.test(stem)) return true;
+    }
+    return false;
 };
 
 /** Consistency check only — never sets the answer from explanation text. */
@@ -112,36 +145,50 @@ export const explanationConcludesWithFinalAnswer = (explanation = "", finalAnswe
 };
 
 export const rebuildExplanationFromVerifiedSolution = (q) => {
-    const opts = optionTextsOf(q);
-    const finalLetter = markedLetterOf(q);
-    const idx = finalLetter ? finalLetter.charCodeAt(0) - 65 : -1;
-    if (idx < 0 || idx >= opts.length) return q;
-    const stepsRaw = Array.isArray(q._solveSteps)
-        ? q._solveSteps.map(String).filter((s) => s.trim())
-        : [];
-    if (!stepsRaw.length) return q;
-    const markedText = opts[idx];
-    const steps = syncSolveStepsToMarkedAnswer(stepsRaw, markedText).map((s, si, arr) =>
-        si === arr.length - 1
-            ? `${String(s || "").replace(/\s*FINAL_ANSWER\s*:\s*[^\n.]*/gi, "").trim()} FINAL_ANSWER: ${finalLetter}`
-            : s
-    );
-    const explanation = lockExplanationToMarkedOption(stepsRaw, markedText, {
-        correctLetter: finalLetter,
-    });
-    return {
-        ...q,
-        explanation,
-        _solveSteps: steps,
-        correctAnswer: finalLetter,
-        correctIndex: idx,
-        _verification: {
-            ...(q._verification || {}),
-            explanationOk: true,
-            explanationRepaired: true,
-            sourceOfTruth: "independent_solver",
-        },
-    };
+    // Prefer the shared rewriter (strips meta, locks FINAL_ANSWER, never re-solves).
+    try {
+        // Lazy require-style import avoided — keep logic inline-compatible with rewrite.
+        const opts = optionTextsOf(q);
+        const finalLetter = markedLetterOf(q);
+        const idx = finalLetter ? finalLetter.charCodeAt(0) - 65 : -1;
+        if (idx < 0 || idx >= opts.length) return q;
+        const stepsRaw = Array.isArray(q._solveSteps)
+            ? q._solveSteps.map(String).filter((s) => s.trim())
+            : [];
+        if (!stepsRaw.length) return q;
+        const markedText = opts[idx];
+        const steps = syncSolveStepsToMarkedAnswer(stepsRaw, markedText).map((s, si, arr) =>
+            si === arr.length - 1
+                ? `${String(s || "").replace(/\s*FINAL_ANSWER\s*:\s*[^\n.]*/gi, "").trim()} FINAL_ANSWER: ${finalLetter}`
+                : s
+        );
+        let explanation = lockExplanationToMarkedOption(stepsRaw, markedText, {
+            correctLetter: finalLetter,
+        });
+        // Strip draft/meta self-correction language before publish.
+        explanation = String(explanation || "")
+            .replace(/\b(?:re-?evaluat(?:ing|e|ion)?|actually|instead|however|upon reconsideration|wait|correction)\b[^.]*\./gi, "")
+            .replace(/\s{2,}/g, " ")
+            .trim();
+        if (!/FINAL_ANSWER\s*:/i.test(explanation)) {
+            explanation = `${explanation} Therefore, the correct answer is ${finalLetter}. FINAL_ANSWER: ${finalLetter}`;
+        }
+        return {
+            ...q,
+            explanation,
+            _solveSteps: steps,
+            correctAnswer: finalLetter,
+            correctIndex: idx,
+            _verification: {
+                ...(q._verification || {}),
+                explanationOk: true,
+                explanationRepaired: true,
+                sourceOfTruth: "independent_solver",
+            },
+        };
+    } catch {
+        return q;
+    }
 };
 
 /**

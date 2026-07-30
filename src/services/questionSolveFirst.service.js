@@ -516,9 +516,10 @@ ${bankArchetypeExcludeBlock}
     }.
 10. **Hard-tier depth (mandatory):** **≥${mandateFloors.minConcepts} concepts** in stem vocabulary, **≥${mandateFloors.minSolveSteps} solveSteps**, **≥${mandateFloors.minSolutionLines} derivation lines**, **no direct substitution** — see SKELETON COMPLIANCE above.
 11. **Option craft:** never use a bare number from the stem as an option (if stem gives f = 20 cm, no option "20 cm").
-12. **No meta commentary** in solveSteps — never write "re-evaluating", "correcting", or "wait"; solve once cleanly.
-13. **Batch diversity:** every skeleton must use a **different micro-topic and problem structure** — no two pulley-incline, lens-contact, or de Broglie-ratio clones in the same batch.
-14. **Per-slot concept fusion:** read the assigned \`conceptSlot\` blueprint — the stem must explicitly weave **both** fused ideas from that archetype (e.g. viscosity + terminal velocity + thermal; wavefront + refractive gradient; photoelectric + momentum recoil).
+12. **CRITICAL — no self-corrections:** Never output draft thoughts, "re-evaluating", "correcting", "wait", "my mistake", "adjusting", or "therefore override to …". Compute the math **once**, sequentially. If the final value does not match what you planned for option A, set \`finalAnswer.display\` to the **exact** computed final value (do not invent a bridging sentence).
+13. **calcOps (recommended for numeric items):** emit a short machine-checkable arithmetic trace, e.g. \`[{"a":11.76,"b":10.0,"op":"-","result":1.76}]\`. The last \`result\` MUST equal \`finalAnswer.value\`. Text explanations must not invent arithmetic that contradicts \`calcOps\`.
+14. **Batch diversity:** every skeleton must use a **different micro-topic and problem structure** — no two pulley-incline, lens-contact, or de Broglie-ratio clones in the same batch.
+15. **Per-slot concept fusion:** read the assigned \`conceptSlot\` blueprint — the stem must explicitly weave **both** fused ideas from that archetype (e.g. viscosity + terminal velocity + thermal; wavefront + refractive gradient; photoelectric + momentum recoil).
 
 ${buildPreOutputCorrectnessChecklist({ examProfile })}
 
@@ -534,6 +535,7 @@ Return ONLY valid JSON:
         "display": "5.04",
         "unit": ""
       },
+      "calcOps": [{"a": 5.0, "b": 0.04, "op": "+", "result": 5.04}],
       "solveSteps": ["Step 1 with full reasoning …", "Step 2 …", "Step 3 …", "Step 4 …", "Step 5 concluding with the same value as finalAnswer.display …"],
       "distractorValues": ["4.74", "5.34", "5.74"]
     }
@@ -1314,6 +1316,58 @@ const buildTextDistractors = (display, distractorValues = []) => {
     return shuffleWithSeed([correct, ...unique.slice(0, 3)]);
 };
 
+/**
+ * Apply machine-checkable calcOps to override finalAnswer when present.
+ * Ops: { a, b, op: '+'|'-'|'*'|'/'|'^', result? }
+ * Last computed result becomes finalAnswer.value/display.
+ */
+export const applyCalcOpsToSkeleton = (skeleton = {}) => {
+    const ops = Array.isArray(skeleton?.calcOps) ? skeleton.calcOps : [];
+    if (!ops.length) return skeleton;
+
+    let last = null;
+    for (const op of ops) {
+        const a = Number(op?.a);
+        const b = Number(op?.b);
+        const kind = String(op?.op || "").trim();
+        if (![a, b].every(Number.isFinite) || !kind) continue;
+        let computed = NaN;
+        if (kind === "+") computed = a + b;
+        else if (kind === "-") computed = a - b;
+        else if (kind === "*" || kind === "×" || kind === "x") computed = a * b;
+        else if (kind === "/" || kind === "÷") computed = b === 0 ? NaN : a / b;
+        else if (kind === "^" || kind === "**") computed = a ** b;
+        if (!Number.isFinite(computed)) {
+            throw new Error(
+                `calcOps invalid: ${a} ${kind} ${b} is not a finite number`
+            );
+        }
+        const stated = Number(op?.result);
+        if (Number.isFinite(stated) && Math.abs(stated - computed) > 1e-6 * Math.max(1, Math.abs(computed))) {
+            throw new Error(
+                `calcOps mismatch: ${a} ${kind} ${b} should be ${computed} but states ${stated}`
+            );
+        }
+        last = computed;
+    }
+    if (last == null) return skeleton;
+
+    const fa = { ...(skeleton.finalAnswer || {}) };
+    const display =
+        Math.abs(last) >= 100 || Number.isInteger(last)
+            ? String(Math.round(last * 1000) / 1000)
+            : String(Number(last.toFixed(6)));
+    return {
+        ...skeleton,
+        finalAnswer: {
+            ...fa,
+            type: fa.type || "numeric",
+            value: last,
+            display,
+        },
+    };
+};
+
 export const buildMcqFromSkeleton = (
     skeleton,
     index = 0,
@@ -1322,6 +1376,8 @@ export const buildMcqFromSkeleton = (
 ) => {
     const stem = String(skeleton.stem || "").trim();
     const tier = String(assignedTier || skeleton.difficultyTier || "medium").toLowerCase();
+    // Prefer calcOps-derived finalAnswer when present (deterministic arithmetic).
+    skeleton = applyCalcOpsToSkeleton(skeleton);
     const solveSteps = (skeleton.solveSteps || [])
         .map(String)
         .map(stripMetaCommentary)
@@ -1333,22 +1389,31 @@ export const buildMcqFromSkeleton = (
         .filter((s) => /[A-Za-z0-9]{2,}/.test(s));
     let fa = { ...(skeleton.finalAnswer || {}) };
 
-    const preCheck = independentlyVerifyQuestion({
-        questionText: stem,
-        options: [
-            String(fa.display ?? fa.value ?? ""),
-            ...(skeleton.distractorValues || []).map(String),
-        ].filter(Boolean).slice(0, 4),
-        correctIndex: 0,
-    });
-    if (preCheck.expected?.display) {
-        fa = {
-            ...fa,
-            display: preCheck.expected.display,
-            value: preCheck.expected.value,
-            unit: preCheck.expected.unit || fa.unit,
-            type: preCheck.expected.type || fa.type,
-        };
+    // Solver-truth: Independent Solver owns the answer. Generator builds stem+options only.
+    const solverTruth =
+        process.env.AI_QB_SOLVER_TRUTH !== "0" &&
+        process.env.AI_QB_SOLVER_TRUTH !== "false";
+
+    if (!solverTruth) {
+        const preCheck = independentlyVerifyQuestion({
+            questionText: stem,
+            options: [
+                String(fa.display ?? fa.value ?? ""),
+                ...(skeleton.distractorValues || []).map(String),
+            ]
+                .filter(Boolean)
+                .slice(0, 4),
+            correctIndex: 0,
+        });
+        if (preCheck.expected?.display) {
+            fa = {
+                ...fa,
+                display: preCheck.expected.display,
+                value: preCheck.expected.value,
+                unit: preCheck.expected.unit || fa.unit,
+                type: preCheck.expected.type || fa.type,
+            };
+        }
     }
 
     const type = String(fa.type || "numeric").toLowerCase();
@@ -1433,31 +1498,33 @@ export const buildMcqFromSkeleton = (
         options,
         correctIndex,
     };
-    const postVerify = independentlyVerifyQuestion(builtForVerify);
-    if (
-        postVerify.verified === false &&
-        Number.isFinite(postVerify.matchedOptionIndex) &&
-        postVerify.matchedOptionIndex >= 0
-    ) {
-        correctIndex = postVerify.matchedOptionIndex;
-    } else if (postVerify.verified === false && postVerify.expected?.value != null) {
-        options = buildOptionsAroundExpected(postVerify.expected, options);
-        correctIndex = findOptionIndexForNumericValue(
-            options,
-            postVerify.expected.value
-        );
-        if (correctIndex < 0) correctIndex = 0;
-        fa = {
-            ...fa,
-            display: postVerify.expected.display,
-            value: postVerify.expected.value,
-            unit: postVerify.expected.unit || fa.unit,
-        };
-    } else if (postVerify.verified === false) {
-        throw new Error(
-            postVerify.issue ||
-                `Skeleton ${index + 1}: independent verification failed`
-        );
+    if (!solverTruth) {
+        const postVerify = independentlyVerifyQuestion(builtForVerify);
+        if (
+            postVerify.verified === false &&
+            Number.isFinite(postVerify.matchedOptionIndex) &&
+            postVerify.matchedOptionIndex >= 0
+        ) {
+            correctIndex = postVerify.matchedOptionIndex;
+        } else if (postVerify.verified === false && postVerify.expected?.value != null) {
+            options = buildOptionsAroundExpected(postVerify.expected, options);
+            correctIndex = findOptionIndexForNumericValue(
+                options,
+                postVerify.expected.value
+            );
+            if (correctIndex < 0) correctIndex = 0;
+            fa = {
+                ...fa,
+                display: postVerify.expected.display,
+                value: postVerify.expected.value,
+                unit: postVerify.expected.unit || fa.unit,
+            };
+        } else if (postVerify.verified === false) {
+            throw new Error(
+                postVerify.issue ||
+                    `Skeleton ${index + 1}: independent verification failed`
+            );
+        }
     }
 
     if (isPhStem(stem)) {
@@ -1468,30 +1535,54 @@ export const buildMcqFromSkeleton = (
     // Flash-lite / weaker models often derive the right number then mark a distractor.
     // Rematch (or rebuild options around the derivation) BEFORE consistency checks —
     // this is NOT the forbidden "force-align Therefore to wrong key"; we trust the math.
-    const realigned = realignOptionsToDerivation({
-        _solveSteps: solveSteps,
-        options,
-        correctIndex,
-        unit,
-        distractorValues,
-    });
-    if (realigned) {
-        options = realigned.options;
-        correctIndex = realigned.correctIndex;
-        pipelineTrace("SKELETON_KEY_REALIGNED_TO_DERIVATION", {
-            index: index + 1,
-            mode: realigned.realigned,
-            computed: realigned.candidate?.display,
-            marked: options[correctIndex],
+    let realigned = null;
+    if (!solverTruth) {
+        realigned = realignOptionsToDerivation({
+            _solveSteps: solveSteps,
+            options,
+            correctIndex,
+            unit,
+            distractorValues,
         });
-        if (isPhStem(stem)) {
-            options = sanitizePhOptions(options, correctIndex);
+        if (realigned) {
+            options = realigned.options;
+            correctIndex = realigned.correctIndex;
+            pipelineTrace("SKELETON_KEY_REALIGNED_TO_DERIVATION", {
+                index: index + 1,
+                mode: realigned.realigned,
+                computed: realigned.candidate?.display,
+                marked: options[correctIndex],
+            });
+            if (isPhStem(stem)) {
+                options = sanitizePhOptions(options, correctIndex);
+            }
+            options = sanitizeDistractorQuality(stem, options, correctIndex, unit);
         }
-        options = sanitizeDistractorQuality(stem, options, correctIndex, unit);
     }
 
     const markedOption = options[correctIndex];
     const correctLetter = String.fromCharCode(65 + correctIndex);
+
+    if (solverTruth) {
+        return {
+            questionType: "single",
+            questionText: stem,
+            options,
+            correctIndex,
+            correctAnswer: correctLetter,
+            multipleCorrectIndexes: [],
+            // Placeholder — never treat generator derivation as publishable truth.
+            explanation: `Pending independent verification. FINAL_ANSWER: ${correctLetter}`,
+            difficulty: tier,
+            _solveSteps: [],
+            _generatorSolveSteps: solveSteps,
+            _answerProvisional: true,
+            _conceptSlot:
+                String(assignedConceptSlot || skeleton.conceptSlot || "").trim() ||
+                undefined,
+            _questionKind: skeleton.questionKind || undefined,
+        };
+    }
 
     // Verify the model's OWN derivation against the marked option BEFORE any alignment.
     // syncSolveStepsToMarkedAnswer / lockExplanationToMarkedOption staple
@@ -2446,6 +2537,25 @@ export const getSolveFirstSubjectId = (params) => {
 export const sanitizeMcqForPipeline = (q) => {
     if (!q?.questionText || !Array.isArray(q.options) || !q.options.length) {
         return q;
+    }
+    // Solver-truth provisional items: stem+options only until Independent Solver runs.
+    // Do not rebuild explanation from generator drafts / placeholders.
+    if (
+        q._answerProvisional === true ||
+        /^Pending independent verification\b/i.test(String(q.explanation || ""))
+    ) {
+        const correctIndex = Number.isFinite(q.correctIndex) ? q.correctIndex : 0;
+        const correctLetter = String.fromCharCode(65 + correctIndex);
+        return {
+            ...q,
+            correctIndex,
+            correctAnswer: correctLetter,
+            explanation:
+                String(q.explanation || "").trim() ||
+                `Pending independent verification. FINAL_ANSWER: ${correctLetter}`,
+            _solveSteps: Array.isArray(q._solveSteps) ? q._solveSteps : [],
+            _answerProvisional: true,
+        };
     }
     let correctIndex = Number.isFinite(q.correctIndex)
         ? q.correctIndex

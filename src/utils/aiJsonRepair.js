@@ -7,6 +7,61 @@ export const cleanAIResponse = (responseText) => {
     return cleaned.trim().replace(/^\uFEFF/, "");
 };
 
+/**
+ * Robust JSON parse for LLM output (objects or arrays).
+ * Strips markdown fences, then falls back to first {...} or [...] extract.
+ */
+export const safeJsonParse = (rawResponse) => {
+    const raw = String(rawResponse ?? "");
+    try {
+        const cleaned = raw
+            .replace(/^```(?:json)?\s*/i, "")
+            .replace(/\s*```$/i, "")
+            .trim();
+        return JSON.parse(cleanAIResponse(cleaned));
+    } catch (err) {
+        const match = raw.match(/\[[\s\S]*\]|\{[\s\S]*\}/);
+        if (match) {
+            try {
+                return JSON.parse(match[0]);
+            } catch {
+                /* fall through */
+            }
+            try {
+                return JSON.parse(repairAIJsonString(match[0]));
+            } catch {
+                /* fall through */
+            }
+        }
+        const err2 = new Error(
+            `Failed to parse AI response: ${err?.message || "Invalid JSON"}`
+        );
+        err2.cause = err;
+        throw err2;
+    }
+};
+
+/** Parse LLM JSON that may be a bare object or a one-element array. */
+export const parseJsonFlexibleFromAIText = (rawText) => {
+    try {
+        const parsed = safeJsonParse(rawText);
+        if (Array.isArray(parsed)) return parsed[0] ?? null;
+        if (parsed && typeof parsed === "object") return parsed;
+        return null;
+    } catch {
+        try {
+            return parseJsonObjectFromAIText(rawText);
+        } catch {
+            try {
+                const arr = parseJsonArrayFromAIText(rawText);
+                return Array.isArray(arr) ? arr[0] ?? null : null;
+            } catch {
+                return null;
+            }
+        }
+    }
+};
+
 const normalizeSmartQuotes = (str) =>
     String(str || "")
         .replace(/[\u201C\u201D]/g, '"')
