@@ -66,37 +66,79 @@ export const normalizeSolverConfidence = (raw) => {
 export const confidenceIsActionable = (raw, floor = getAnswerConfidenceFloor()) =>
     normalizeSolverConfidence(raw) >= floor;
 
+/**
+ * Strict answer-correctness mode (AI_QB_STRICT_ANSWER_CORRECTNESS=1):
+ * - dual independent solvers required for hard math
+ * - secondary failure / disagreement → DROP (never ship single-solver keys)
+ * - higher confidence floor
+ * This is the only practical path toward ~100% shipped-key correctness with LLMs.
+ */
+export const isStrictAnswerCorrectnessEnabled = () => {
+    const flag = process.env.AI_QB_STRICT_ANSWER_CORRECTNESS;
+    return flag === "1" || flag === "true";
+};
+
+/** When ON, secondary solver failure or missing answer is a hard drop (not soft keep-primary). */
+export const isDoubleSolveRequired = () => {
+    if (isStrictAnswerCorrectnessEnabled()) return true;
+    const flag = process.env.AI_QB_REQUIRE_DOUBLE_SOLVE;
+    return flag === "1" || flag === "true";
+};
+
 export const shouldDoubleSolve = ({
     difficulty = "",
     subject = "",
     sectionName = "",
     question = null,
 } = {}) => {
+    // Explicit off — unless strict mode forces dual consensus for hard math.
+    if (
+        process.env.AI_QB_DOUBLE_SOLVE === "0" ||
+        process.env.AI_QB_DOUBLE_SOLVE === "false"
+    ) {
+        if (!isStrictAnswerCorrectnessEnabled()) return false;
+        // strict mode still double-solves hard math even if DOUBLE_SOLVE=0
+    } else if (
+        process.env.AI_QB_DOUBLE_SOLVE !== "1" &&
+        process.env.AI_QB_DOUBLE_SOLVE !== "true" &&
+        !isStrictAnswerCorrectnessEnabled()
+    ) {
+        // Default when unset: enable only for hard math (safer than off).
+        // Explicit "0" handled above.
+    }
+
+    const diff = String(
+        difficulty || question?.difficulty || question?.difficultyTier || ""
+    ).toLowerCase();
+    const subj = `${subject || ""} ${sectionName || ""} ${question?.subject || ""}`.toLowerCase();
+    const isHard = diff === "hard" || diff.includes("hard");
+    const isMath = /math|algebra|calculus|mathematics/.test(subj);
+
+    // Strict: always dual-solve hard math (and all math if STRICT_ALL_MATH=1).
+    if (isStrictAnswerCorrectnessEnabled()) {
+        if (process.env.AI_QB_STRICT_ALL_MATH === "1") return isMath;
+        return isHard && isMath;
+    }
+
     if (process.env.AI_QB_DOUBLE_SOLVE === "0") return false;
-    // Budget path: double-solve only Hard Mathematics (two reasoning runs + SymPy).
-    // Easy/Medium and non-math use a single independent solve.
+
+    // Budget path: double-solve only Hard Mathematics by default.
     if (
         process.env.AI_QB_DOUBLE_SOLVE_HARD_MATH_ONLY === "0" ||
         process.env.AI_QB_DOUBLE_SOLVE_HARD_MATH_ONLY === "false"
     ) {
-        const diffLegacy = String(
-            difficulty || question?.difficulty || question?.difficultyTier || ""
-        ).toLowerCase();
-        const subjLegacy = `${subject || ""} ${sectionName || ""} ${question?.subject || ""}`.toLowerCase();
-        return (
-            diffLegacy === "hard" ||
-            diffLegacy.includes("hard") ||
-            /math|algebra|calculus|mathematics/.test(subjLegacy)
-        );
+        return isHard || isMath;
     }
-    const diff = String(
-        difficulty || question?.difficulty || question?.difficultyTier || ""
-    ).toLowerCase();
-    const isHard = diff === "hard" || diff.includes("hard");
     if (!isHard) return false;
-    const subj = `${subject || ""} ${sectionName || ""} ${question?.subject || ""}`.toLowerCase();
-    return /math|algebra|calculus|mathematics/.test(subj);
+    return isMath;
 };
+
+/** Confidence floor — higher under strict mode (default 0.9 vs 0.75). */
+export const getStrictAnswerConfidenceFloor = () =>
+    Math.max(
+        getAnswerConfidenceFloor(),
+        Number(process.env.AI_QB_STRICT_ANSWER_CONFIDENCE_FLOOR || 0.9)
+    );
 
 export const shouldSkipSymbolicVerify = (q = {}, { subject = "", sectionName = "" } = {}) => {
     const kind = String(q?.questionKind || q?._questionKind || "").toLowerCase();

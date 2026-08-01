@@ -11,6 +11,11 @@ import {
 import { normalizeBankDifficulty, normalizeQuestionTier } from "./difficultyMix.service.js";
 import { flattenQuestionBankForCorrectnessAudit } from "./correctnessPreAudit.service.js";
 import { detectHardMandateIssues } from "./hardQuestionMandate.service.js";
+import {
+    computeWeightedDifficultyScore,
+    detectWeightedDifficultyIssue,
+    isWeightedDifficultyScoreEnabled,
+} from "./weightedDifficultyScore.service.js";
 
 /** Internal target — empirically ~20–30 pts above OpenAI validation difficultyMatch. */
 export const INITIAL_GEN_DIFFICULTY_MATCH_TARGET = Number(
@@ -138,6 +143,49 @@ const TOO_EASY_TEMPLATES = [
         message:
             "Capillary rise percentage drill — chapter-test ease for veteran tier.",
         maxTier: "medium",
+    },
+    // ── Mathematics easy/medium templates (JEE Main hard fail) ──
+    {
+        re: /cos\s*\(\s*2x\s*\).*cos\s*\(\s*4x\s*\)|lim.*cos.*-\s*cos|sum-to-product identities and standard limit/i,
+        message:
+            "Standard cosA−cosB / sum-to-product limit — medium at most for hard slots.",
+        maxTier: "medium",
+    },
+    {
+        re: /f\(x\)\s*=\s*ln\s*\(\s*e\^|find the derivative.*at.*x\s*=\s*0|instantaneous rate of change of this function at/i,
+        message:
+            "Single chain-rule evaluation at a point — easy calculus drill.",
+        maxTier: "easy",
+    },
+    {
+        re: /sin\^3.*cos\^2|integral from 0 to pi\/2 of sin\^3/i,
+        message:
+            "Textbook ∫sin³x cos²x substitution drill — easy/medium NCERT.",
+        maxTier: "easy",
+    },
+    {
+        re: /parity of the (?:integrand|function)|even\/odd properties|odd function.*integral from -/i,
+        message:
+            "Pure even/odd integral recognition — one-trick, not hard tier.",
+        maxTier: "medium",
+    },
+    {
+        re: /tangent line is drawn to this curve at the specific point|area.*bounded by this curve, the tangent line/i,
+        message:
+            "Standard area-between-curve-and-tangent — medium JEE Main, not hard.",
+        maxTier: "medium",
+    },
+    {
+        re: /particle moves.*potential (?:field|energy)|kinetic energy is proportional to the area|particle of mass \d+ kg moves along/i,
+        message:
+            "Particle/energy fluff padding on a simple math ask — does not raise difficulty.",
+        maxTier: "medium",
+    },
+    {
+        re: /statement 1 asserts that if g\(x\) is continuous.*statement 2 asserts/i,
+        message:
+            "Bare composite-continuity assertion–reason — easy theory.",
+        maxTier: "easy",
     },
 ];
 
@@ -411,6 +459,25 @@ export const detectTooEasyForTier = (
         };
     }
 
+    // 7-factor weighted difficulty (0–100) — measurable floor for the assigned tier.
+    if (isWeightedDifficultyScoreEnabled()) {
+        const weightedIssue = detectWeightedDifficultyIssue(q, {
+            assignedTier: tier,
+            examProfile,
+            sampleNumber: q.sampleNumber,
+        });
+        if (weightedIssue) {
+            return {
+                questionNumber: weightedIssue.questionNumber,
+                issue: weightedIssue.issue,
+                severity: weightedIssue.severity,
+                confidence: weightedIssue.confidence,
+                category: ISSUE_CATEGORY.DIFFICULTY,
+                weightedDifficulty: weightedIssue.weightedDifficulty,
+            };
+        }
+    }
+
     return null;
 };
 
@@ -429,12 +496,31 @@ export const runDeterministicDifficultyAudit = (
 ) => {
     const confirmedIssues = [];
     const seen = new Set();
+    const weightedScores = [];
 
     sampled.forEach((q, i) => {
         const assignedTier =
             normalizeQuestionTier(q.difficultyTier || q.difficulty) ||
             tierSlots[i] ||
             "medium";
+
+        // Always compute weighted breakdown for telemetry / attachment (when enabled).
+        if (isWeightedDifficultyScoreEnabled()) {
+            const w = computeWeightedDifficultyScore(q, {
+                assignedTier,
+            });
+            weightedScores.push({
+                questionNumber: q.sampleNumber ?? i + 1,
+                ...w,
+            });
+            // Attach for downstream salvage / reporting when caller keeps object refs.
+            try {
+                q._weightedDifficulty = w;
+            } catch {
+                /* ignore frozen objects */
+            }
+        }
+
         const primary = detectTooEasyForTier(q, {
             assignedTier,
             bankDifficulty,
@@ -468,6 +554,7 @@ export const runDeterministicDifficultyAudit = (
         confirmedIssues: dimensional.tagged,
         difficultyIssues: dimensional.difficultyIssues,
         difficultyMatchScore: dimensional.difficultyMatchScore ?? 100,
+        weightedScores,
     };
 };
 
@@ -537,4 +624,5 @@ export default {
     isBlockingDifficultyIssue,
     runDeterministicDifficultyAudit,
     findDifficultyFlawedSampleNumbers,
+    computeWeightedDifficultyScore,
 };

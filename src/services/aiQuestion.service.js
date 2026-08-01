@@ -130,7 +130,10 @@ import {
 import { runAnswerCorrectnessPass } from "./answerCorrection.service.js";
 import { runIndependentVerificationPipeline, runPostSymbolicTruthGates, dropQuestionsByRefs } from "./independentVerification.service.js";
 import { applySymbolicVerificationToQuestions, applySymPyPreSolvePass } from "./symbolicVerify.service.js";
-import { isSolverTruthEnabled } from "./solverTruth.service.js";
+import {
+    isSolverTruthEnabled,
+    isStrictAnswerCorrectnessEnabled,
+} from "./solverTruth.service.js";
 import { rewriteExplanationsForBank } from "./explanationRewrite.service.js";
 import { dedupeBatchByHashAndEmbedding } from "./batchDuplicate.service.js";
 import { runConceptCoveragePass } from "./conceptCoverage.service.js";
@@ -140,6 +143,7 @@ import {
     repairSkeletonAuditRejections,
     repairDifficultyRejectedQuestions,
 } from "./skeletonRepair.service.js";
+import { filterSkeletonsByCasVerification } from "./skeletonCasVerification.service.js";
 import {
     buildHardQuestionMandateBlock,
     isVeteranDifficultyEnabled,
@@ -222,6 +226,7 @@ import {
     GEMINI_TEXT_MODEL_OPTIONS,
     getGeminiTextModelOptions,
     resolveGeminiTextModel,
+    resolveGeminiTextModelForTier,
 } from "./geminiTextModels.js";
 import {
     CLAUDE_TEXT_MODEL_IDS,
@@ -1976,11 +1981,258 @@ export const prepareFastPathQuestions = (
             if (!sanitized) return null;
             return {
                 ...sanitized,
-                _validationStatus: "pending",
+                _validationStatus: sanitized._validationStatus || "pending",
                 _questionIndex: index,
             };
         })
         .filter(Boolean);
+
+/**
+ * Stage-A answer lock (default ON).
+ * When generation uses deferValidation (questions-only / fast path), the full
+ * finalize pipeline is skipped — but hard/exam banks still need correct keys.
+ * This runs the Independent Solver (OpenAI o-series by default) against Stage A
+ * output so answers are locked before return.
+ *
+ * Env:
+ *   AI_QB_STAGE_A_ANSWER_LOCK=1|0   (default 1)
+ *   AI_QB_STAGE_A_DROP_UNVERIFIED=1 (drop items solver could not lock)
+ */
+export const isStageAAnswerLockEnabled = () => {
+    const flag = process.env.AI_QB_STAGE_A_ANSWER_LOCK;
+    if (flag === "0" || flag === "false") return false;
+    return true;
+};
+
+export const shouldDropStageAUnverified = () => {
+    // Strict correctness always drops anything not dual-verified.
+    if (isStrictAnswerCorrectnessEnabled()) return true;
+    const flag = process.env.AI_QB_STAGE_A_DROP_UNVERIFIED;
+    return flag === "1" || flag === "true";
+};
+
+/** Only ship keys that passed dual independent solvers (strict mode). */
+export const shouldRequireDualSolverForShip = () => {
+    if (isStrictAnswerCorrectnessEnabled()) return true;
+    const flag = process.env.AI_QB_STAGE_A_REQUIRE_DOUBLE_AGREE;
+    return flag === "1" || flag === "true";
+};
+
+/**
+ * Lock Stage A provisional keys via independent solver (solver-truth).
+ * Safe no-op when OpenAI is not configured or answer correction is disabled.
+ */
+export const runStageAAnswerLock = async (
+    questions = [],
+    {
+        topic = "",
+        bankName = "",
+        sectionName = "",
+        subject = "",
+        categoryPaths = [],
+        difficulty = "hard",
+        generationProvider = "gemini",
+        examProfile = null,
+    } = {}
+) => {
+    if (!isStageAAnswerLockEnabled() || !questions?.length) {
+        return {
+            questions,
+            lockedCount: 0,
+            droppedCount: 0,
+            unfixableCount: 0,
+            skipped: true,
+        };
+    }
+
+    if (!process.env.OPENAI_API_KEY && !process.env.GEMINI_API_KEY) {
+        pipelineTrace("STAGE_A_ANSWER_LOCK_SKIPPED", {
+            reason: "no_solver_provider_key",
+        });
+        return {
+            questions,
+            lockedCount: 0,
+            droppedCount: 0,
+            unfixableCount: 0,
+            skipped: true,
+        };
+    }
+
+    const solverProvider = resolveVerificationStageProvider(
+        "solver",
+        normalizeGenerationProvider(generationProvider)
+    );
+    const solverModel = resolveVerificationStageModel("solver");
+    const solverEffort = resolveReasoningEffort({
+        difficulty,
+        subject,
+        sectionName,
+    });
+
+    pipelineTrace("STAGE_A_ANSWER_LOCK_START", {
+        count: questions.length,
+        provider: solverProvider,
+        model: solverModel,
+        difficulty,
+    });
+    console.log(
+        `[ai-qb] Stage A answer lock: ${questions.length} question(s) via ${solverProvider}/${solverModel}`
+    );
+
+    let locked = questions;
+    let unfixableCount = 0;
+    let lockedCount = 0;
+
+    try {
+        const correction = await runAnswerCorrectnessPass(
+            questions,
+            {
+                topic,
+                bankName,
+                examProfile:
+                    examProfile ||
+                    detectExamProfile({
+                        bankName,
+                        topic,
+                        subject,
+                        sectionName,
+                        categoryPaths,
+                    }),
+                subject,
+                sectionName,
+                difficulty,
+            },
+            {
+                callLlm: (prompt) =>
+                    callQuestionBankGenerationLLM(prompt, {
+                        generationProvider: solverProvider,
+                        temperature: 0,
+                        model: solverModel,
+                        reasoningEffort: solverEffort,
+                    }),
+                callLlmSecondary: (prompt) =>
+                    callQuestionBankGenerationLLM(prompt, {
+                        generationProvider: resolveVerificationStageProvider(
+                            "solver_b",
+                            solverProvider
+                        ),
+                        temperature: 0,
+                        model: resolveVerificationStageModel("solver_b"),
+                        reasoningEffort: solverEffort,
+                    }),
+            }
+        );
+
+        locked = correction.questions || questions;
+        unfixableCount = (correction.unfixableRefs || []).length;
+        lockedCount = (locked || []).filter((q) => q?._solverTruthApplied).length;
+
+        locked = (locked || []).map((q) => {
+            if (q?._solverTruthApplied) {
+                return {
+                    ...q,
+                    _answerProvisional: false,
+                    _validationStatus: "stage_a_answer_locked",
+                    _stageAAnswerLocked: true,
+                    _answerCorrectnessGuaranteed:
+                        q._doubleSolverAgree === true ||
+                        q?._verification?.doubleSolverAgree === true,
+                };
+            }
+            return {
+                ...q,
+                _validationStatus: q?._validationStatus || "pending",
+                _stageAAnswerLocked: false,
+                _answerCorrectnessGuaranteed: false,
+            };
+        });
+    } catch (err) {
+        pipelineTrace("STAGE_A_ANSWER_LOCK_FAILED", {
+            error: err?.message || String(err),
+        });
+        // Strict mode: NEVER fall back to generator-claimed keys.
+        if (isStrictAnswerCorrectnessEnabled()) {
+            console.warn(
+                `[ai-qb] Stage A answer lock failed under STRICT mode — shipping 0 questions (no generator keys): ${err?.message || err}`
+            );
+            return {
+                questions: [],
+                lockedCount: 0,
+                droppedCount: questions.length,
+                unfixableCount: questions.length,
+                skipped: false,
+                failed: true,
+                error: err?.message || String(err),
+            };
+        }
+        console.warn(
+            `[ai-qb] Stage A answer lock failed — returning generator keys: ${err?.message || err}`
+        );
+        return {
+            questions,
+            lockedCount: 0,
+            droppedCount: 0,
+            unfixableCount: 0,
+            skipped: false,
+            failed: true,
+            error: err?.message || String(err),
+        };
+    }
+
+    let droppedCount = 0;
+    if (shouldDropStageAUnverified()) {
+        const before = locked.length;
+        locked = locked.filter((q) => {
+            if (q?._solverTruthApplied !== true) return false;
+            // Strict / require-dual: only dual-agreed keys ship for calculative items.
+            if (shouldRequireDualSolverForShip()) {
+                const kind = String(
+                    q?._questionKind || q?.questionKind || ""
+                ).toLowerCase();
+                if (kind === "theory") return true;
+                return (
+                    q._doubleSolverAgree === true ||
+                    q?._verification?.doubleSolverAgree === true ||
+                    q?._answerCorrectnessGuaranteed === true
+                );
+            }
+            return true;
+        });
+        droppedCount = before - locked.length;
+        if (droppedCount > 0) {
+            pipelineTrace("STAGE_A_ANSWER_LOCK_DROPPED_UNVERIFIED", {
+                dropped: droppedCount,
+                kept: locked.length,
+                strict: isStrictAnswerCorrectnessEnabled(),
+                requireDual: shouldRequireDualSolverForShip(),
+            });
+            console.warn(
+                `[ai-qb] Stage A answer lock dropped ${droppedCount} unverified question(s)` +
+                    (isStrictAnswerCorrectnessEnabled()
+                        ? " [STRICT: dual-solver consensus required]"
+                        : "")
+            );
+        }
+    }
+
+    pipelineTrace("STAGE_A_ANSWER_LOCK_DONE", {
+        lockedCount,
+        unfixableCount,
+        droppedCount,
+        kept: locked.length,
+    });
+    console.log(
+        `[ai-qb] Stage A answer lock done: locked=${lockedCount}, unfixable=${unfixableCount}, dropped=${droppedCount}, kept=${locked.length}`
+    );
+
+    return {
+        questions: locked,
+        lockedCount,
+        droppedCount,
+        unfixableCount,
+        skipped: false,
+    };
+};
 
 /** After repair, drop items that still fail critical/major factual checks. */
 export const finalizeQuestionBankSuggestions = async ({
@@ -3360,14 +3612,55 @@ const generateSolveFirstSingles = async ({
     }
     const activeProvider = routedProvider;
 
+    // Hard / exam-calibrated batches use a stronger Gemini model (not flash-lite).
+    // Flash-lite is the dominant source of first-stage arithmetic + option-key errors.
+    const generationModel =
+        activeProvider === "gemini"
+            ? resolveGeminiTextModelForTier({
+                  difficulty: effectiveDifficulty,
+                  examCalibrated: difficultyResolution?.examCalibrated || false,
+              })
+            : activeProvider === "openai"
+              ? String(
+                    process.env.OPENAI_QB_HARD_GENERATION_MODEL ||
+                        process.env.OPENAI_QB_GENERATION_MODEL ||
+                        process.env.OPENAI_CHAT_MODEL ||
+                        ""
+                ).trim() || undefined
+              : undefined;
+    if (generationModel) {
+        pipelineTrace("GENERATION_MODEL_TIER", {
+            provider: activeProvider,
+            model: generationModel,
+            difficulty: effectiveDifficulty,
+            examCalibrated: !!difficultyResolution?.examCalibrated,
+        });
+        console.log(
+            `[ai-qb] stage-A generation model: ${activeProvider}/${generationModel} (tier=${effectiveDifficulty}${
+                difficultyResolution?.examCalibrated ? ", examCalibrated" : ""
+            })`
+        );
+    }
+
     let questions = [];
     let runningExclude = [...excludeQuestionTexts];
     const batchSeenStems = [];
     let attempts = 0;
     let priorAttemptFeedback = [];
     const solveFirstMaxAttempts = getSolveFirstMaxAttempts({ examProfile });
+    const hardTier =
+        String(effectiveDifficulty || "").toLowerCase().includes("hard") ||
+        !!difficultyResolution?.examCalibrated;
     const llmTemperature = resolveGenerationTemperature(activeProvider, {
-        genTemperature,
+        // Harder math needs lower sampling noise for answer stability.
+        genTemperature:
+            genTemperature != null
+                ? genTemperature
+                : hardTier
+                  ? 0.05
+                  : undefined,
+        defaultTemp: hardTier ? 0.05 : 0.1,
+        openaiDefault: hardTier ? 0.1 : 0.15,
     });
 
     // Phase C2: difficulty calibration exemplars (optional RAG grounding).
@@ -3538,6 +3831,7 @@ const generateSolveFirstSingles = async ({
         const rawText = await callQuestionBankGenerationLLM(prompt, {
             generationProvider: activeProvider,
             temperature: llmTemperature,
+            model: generationModel,
         });
 
         let skeletons = [];
@@ -3562,6 +3856,32 @@ const generateSolveFirstSingles = async ({
             console.warn(
                 `[solve-first] attempt ${attempts}/${solveFirstMaxAttempts}: no parseable skeletons for ${need} slot(s)`
             );
+            continue;
+        }
+
+        // Root-cause-1 fix from the correctness review: deterministic SymPy
+        // re-derivation, BEFORE the (expensive, LLM-opinion-only) difficulty
+        // self-audit and before hardQuestionMandate. A skeleton whose claimed
+        // answer provably disagrees with an independent re-derivation from its
+        // own declared `givens` is hard-rejected here — no LLM judgment call.
+        // Skeletons with no/unrecognized archetype (most non-Maths subjects,
+        // and Maths patterns the CAS doesn't cover yet) pass through unchanged.
+        const casResult = await filterSkeletonsByCasVerification(skeletons);
+        if (casResult.rejected.length) {
+            console.warn(
+                `[solve-first] attempt ${attempts}/${solveFirstMaxAttempts}: CAS verifier rejected ${casResult.rejected.length}/${skeletons.length} skeleton(s) — ` +
+                    casResult.rejected
+                        .map((r) => `${r.skeleton?.conceptSlot || "?"} (computed=${r.result.computedAnswer}, claimed=${r.result.claimedAnswer})`)
+                        .join("; ")
+            );
+        }
+        skeletons = casResult.kept;
+
+        if (!skeletons.length) {
+            pipelineTrace('SKELETON_CAS_VERIFY_ALL_REJECTED', {
+                attempt: attempts,
+                requested: need,
+            });
             continue;
         }
 
@@ -3851,6 +4171,7 @@ const generateSolveFirstSingles = async ({
             const fallbackRaw = await callQuestionBankGenerationLLM(fallbackPrompt, {
                 generationProvider: activeProvider || provider,
                 temperature: llmTemperature,
+                model: generationModel,
             });
 
             const fallbackExpected = {
@@ -4001,8 +4322,10 @@ const generateQuestionBankBatch = async ({
     cachedRagRetrieval = null,
 }) => {
     const promptFirst = isPromptFirstGenerationMode(generationMode);
+    // IMPORTANT: deferValidation only skips full finalize (eval/regen loops).
+    // It must NOT skip Stage-A skeleton difficulty audit — that was shipping
+    // Easy/Medium drills as Hard on the questions-only path.
     const skipLlmDifficultyAudit =
-        deferValidation ||
         skipFinalizeDifficultyAudit ||
         shouldSkipLlmDifficultySelfAudit(difficultyResolution);
 
@@ -4661,15 +4984,44 @@ const generateQuestionBankBatch = async ({
         });
 
         if (deferValidation) {
-            const fastQuestions = prepareFastPathQuestions(questions, {
-                examCalibrated: difficultyResolution?.examCalibrated,
+            // Stage A answer lock: even when full finalize is deferred, hard/exam
+            // (and by default all deferred) batches get independent-solver keys so
+            // questions-only scripts do not ship generator-wrong answer keys.
+            const lockResult = await runStageAAnswerLock(questions, {
+                topic,
+                bankName,
+                sectionName,
+                subject,
+                categoryPaths,
+                difficulty:
+                    difficultyResolution?.generationDifficulty || difficulty,
+                generationProvider: provider,
             });
+            const fastQuestions = prepareFastPathQuestions(
+                lockResult.questions || questions,
+                {
+                    examCalibrated: difficultyResolution?.examCalibrated,
+                }
+            );
             pipelineTrace("BATCH_DONE", {
                 mode: "solve-first-deferred",
                 chunk: `${chunkIndex + 1}/${chunkTotal}`,
                 outputCount: fastQuestions.length,
+                stageALocked: lockResult.lockedCount || 0,
+                stageADropped: lockResult.droppedCount || 0,
             });
-            return { questions: fastQuestions, stats: { mode: "deferred" } };
+            return {
+                questions: fastQuestions,
+                stats: {
+                    mode: "deferred",
+                    stageAAnswerLock: {
+                        lockedCount: lockResult.lockedCount || 0,
+                        droppedCount: lockResult.droppedCount || 0,
+                        unfixableCount: lockResult.unfixableCount || 0,
+                        skipped: !!lockResult.skipped,
+                    },
+                },
+            };
         }
 
         const finalized = await finalizeQuestionBankSuggestions({
@@ -4905,18 +5257,30 @@ export const applyAnswerCorrectionToQuestionBank = async (params = {}) => {
         competitiveExamPlan: params.competitiveExamPlan || null,
     });
 
+    const solverModel = resolveVerificationStageModel("solver");
+    const solverEffort = resolveReasoningEffort({
+        difficulty: params.difficulty || "",
+        subject,
+        sectionName,
+    });
+
     return runAnswerCorrectnessPass(
         questions,
         {
             topic,
             bankName,
             examProfile: examCtx.examProfile,
+            subject,
+            sectionName,
+            difficulty: params.difficulty || "",
         },
         {
             callLlm: (prompt) =>
                 callQuestionBankGenerationLLM(prompt, {
                     generationProvider: provider,
-                    temperature: 0.1,
+                    temperature: 0,
+                    model: solverModel,
+                    reasoningEffort: solverEffort,
                 }),
         }
     );
@@ -6806,8 +7170,11 @@ const dispatchGenerationLLMText = async (provider, prompt, temperature, modelOve
     }
 
     return callGeminiWithRetries(async () => {
+        const model = modelOverride
+            ? resolveGeminiTextModel(modelOverride)
+            : geminiTextModel();
         const result = await genAI.models.generateContent({
-            model: geminiTextModel(),
+            model,
             contents: [{ role: "user", parts: [{ text: prompt }] }],
             config: { temperature },
         });
@@ -6863,8 +7230,13 @@ const dispatchGenerationLLM = async (
     }
 
     return callGeminiWithRetries(async () => {
+        // Honor modelOverride so hard/exam batches can use GEMINI_HARD_TEXT_MODEL
+        // (gemini-3.5-flash / 2.5-flash) instead of the global flash-lite default.
+        const model = modelOverride
+            ? resolveGeminiTextModel(modelOverride)
+            : geminiTextModel();
         const result = await genAI.models.generateContent({
-            model: geminiTextModel(),
+            model,
             contents: [{ role: "user", parts: [{ text: prompt }] }],
             config: geminiJsonConfig(temperature),
         });

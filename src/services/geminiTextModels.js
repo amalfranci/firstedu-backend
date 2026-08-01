@@ -44,6 +44,13 @@ export const GEMINI_TEXT_MODEL_IDS = GEMINI_TEXT_MODEL_OPTIONS.map((m) => m.id);
 /** Default tuned for availability; override with GEMINI_TEXT_MODEL in .env */
 export const DEFAULT_GEMINI_TEXT_MODEL = "gemini-3.1-flash-lite";
 
+/**
+ * Hard / exam-calibrated generation must not use flash-lite — multi-step JEE
+ * arithmetic error rates are too high. Override with GEMINI_HARD_TEXT_MODEL.
+ * Prefer 3.5-flash when available; fall back to 2.5-flash.
+ */
+export const DEFAULT_GEMINI_HARD_TEXT_MODEL = "gemini-3.5-flash";
+
 export const getGeminiTextModelOptions = () => GEMINI_TEXT_MODEL_OPTIONS;
 
 export const getGeminiTextModelMeta = (modelId) =>
@@ -72,4 +79,50 @@ export const resolveGeminiTextModel = (requestedModel) => {
         );
     }
     return model;
+};
+
+/**
+ * Pick generation model by difficulty tier.
+ * Hard / exam-calibrated → GEMINI_HARD_TEXT_MODEL (default gemini-3.5-flash).
+ * Easy/medium → GEMINI_TEXT_MODEL (default flash-lite).
+ */
+export const resolveGeminiTextModelForTier = ({
+    difficulty = "",
+    examCalibrated = false,
+    requestedModel = null,
+} = {}) => {
+    if (requestedModel) {
+        try {
+            return resolveGeminiTextModel(requestedModel);
+        } catch {
+            /* fall through */
+        }
+    }
+
+    const tier = String(difficulty || "").toLowerCase();
+    const needsHardModel =
+        examCalibrated ||
+        tier === "hard" ||
+        tier.includes("hard") ||
+        tier === "veteran";
+
+    if (needsHardModel) {
+        const hardCandidates = [
+            process.env.GEMINI_HARD_TEXT_MODEL,
+            DEFAULT_GEMINI_HARD_TEXT_MODEL,
+            "gemini-2.5-flash",
+            process.env.GEMINI_TEXT_MODEL,
+            DEFAULT_GEMINI_TEXT_MODEL,
+        ]
+            .map((s) => normalizeGeminiTextModelId(s))
+            .filter(Boolean);
+
+        for (const candidate of hardCandidates) {
+            if (GEMINI_TEXT_MODEL_IDS.includes(candidate)) {
+                return candidate;
+            }
+        }
+    }
+
+    return resolveGeminiTextModel();
 };

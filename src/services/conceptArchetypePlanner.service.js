@@ -11,6 +11,7 @@ import {
 import {
     buildOfficialSyllabusPlanningBlock,
 } from "./jeeMainOfficialSyllabus.service.js";
+import { buildNcertHardArchetypePlanBlock } from "./ncertChapterReference.service.js";
 
 /**
  * Known-deleted / out-of-scope topics per subject+exam, seeded into the planning
@@ -107,26 +108,53 @@ const getSubjectComposition = (subject = "") => {
 };
 
 /**
- * Optional overrides that force a fixed theory/direct/multi_concept mix for an
- * exam profile. Intentionally empty: JEE Main previously forced 100%
- * multi_concept ("all hard = all multi"), which made topic plans ignore direct
- * and theory. Hard difficulty now means each *kind* is hard within its type —
- * use DEFAULT_COMPOSITION / SUBJECT_COMPOSITION_RULES instead.
- * Set AI_QB_FORCE_ALL_MULTI=1 to restore the old all-multi_concept behaviour.
+ * Optional overrides that force a fixed theory/direct/multi_concept mix.
+ * AI_QB_FORCE_ALL_MULTI=1 → 100% multi_concept (max difficulty).
+ * AI_QB_HARD_MULTI_HEAVY=1 (default for exam-calibrated via getDefaultComposition
+ * when examCalibrated is passed) → mostly multi, few theory, almost no direct.
  */
-const EXAM_PROFILE_FORCED_COMPOSITION = (() => {
+/** Exam-calibrated hard banks: multi-concept heavy (not 50% direct easy drills). */
+const EXAM_HARD_MULTI_HEAVY = {
+    theory: 0.05,
+    direct: 0.1,
+    multi_concept: 0.85,
+};
+
+const ALL_MULTI = { theory: 0, direct: 0, multi_concept: 1 };
+
+const getDefaultComposition = (
+    examProfile = "",
+    catSection = "",
+    subject = "",
+    { examCalibrated = false, bankDifficulty = "" } = {}
+) => {
+    const key = String(examProfile || "").toLowerCase().trim();
+    // Read env at call time so scripts can set AI_QB_FORCE_ALL_MULTI before generation.
     if (
         process.env.AI_QB_FORCE_ALL_MULTI === "1" ||
         process.env.AI_QB_FORCE_ALL_MULTI === "true"
     ) {
-        return { jee_main: { theory: 0, direct: 0, multi_concept: 1 } };
+        if (key === "jee_main" || key === "jee_advanced" || key === "neet" || !key) {
+            return ALL_MULTI;
+        }
     }
-    return {};
-})();
 
-const getDefaultComposition = (examProfile = "", catSection = "", subject = "") => {
-    const key = String(examProfile || "").toLowerCase().trim();
-    if (EXAM_PROFILE_FORCED_COMPOSITION[key]) return EXAM_PROFILE_FORCED_COMPOSITION[key];
+    const hardTier =
+        examCalibrated ||
+        String(bankDifficulty || "").toLowerCase().includes("hard");
+    const multiHeavy =
+        process.env.AI_QB_HARD_MULTI_HEAVY === "1" ||
+        process.env.AI_QB_HARD_MULTI_HEAVY === "true" ||
+        // Default ON for JEE/NEET hard/exam-calibrated — was shipping ~50% direct Easy.
+        (hardTier &&
+            (key === "jee_main" || key === "jee_advanced" || key === "neet") &&
+            process.env.AI_QB_HARD_MULTI_HEAVY !== "0" &&
+            process.env.AI_QB_HARD_MULTI_HEAVY !== "false");
+
+    if (multiHeavy && (key === "jee_main" || key === "jee_advanced" || key === "neet")) {
+        return EXAM_HARD_MULTI_HEAVY;
+    }
+
     const section = String(catSection || "").toLowerCase();
     if (CAT_SECTION_COMPOSITION[section]) return CAT_SECTION_COMPOSITION[section];
     // Subject character (theory vs calculation) takes precedence over the
@@ -146,9 +174,14 @@ export const getKindCompositionCounts = ({
     subject = "",
     catSection = "",
     count = 10,
+    examCalibrated = false,
+    bankDifficulty = "",
 } = {}) =>
     compositionToCounts(
-        getDefaultComposition(examProfile, catSection, subject),
+        getDefaultComposition(examProfile, catSection, subject, {
+            examCalibrated,
+            bankDifficulty,
+        }),
         Math.max(1, Number(count) || 1)
     );
 
@@ -266,7 +299,8 @@ export const buildArchetypePlanningPrompt = ({
     const defComp = getDefaultComposition(
         examProfile,
         catSection,
-        `${subjectId || ""} ${subject || ""}`
+        `${subjectId || ""} ${subject || ""}`,
+        { examCalibrated, bankDifficulty }
     );
     const sc = compositionToCounts(defComp, n);
     const referenceBlock = String(examReferenceBlock || "").trim()
@@ -355,6 +389,15 @@ ${referenceBlock}`;
         examProfile,
     });
 
+    // File-backed hard archetypes for Mathematics — steers planner away from easy drills
+    // while keeping NCERT-only methods (accuracy/explanation path stays dual-solvable).
+    const ncertHardArchetypeBlock =
+        String(bankDifficulty || "").toLowerCase().includes("hard") || examCalibrated
+            ? buildNcertHardArchetypePlanBlock({
+                  subject: subjectId || subject || topic || bankName,
+              })
+            : "";
+
     const syllabusStep0 = officialSyllabusBlock
         ? `**Step 0 — official syllabus lock (file-backed, not model memory):**
 Use the OFFICIAL JEE (Main) 2026 unit list below as the only in-scope source. Put anything outside that list in \`excludedTopics\`. Do not rely on memorized/deleted chapters.
@@ -378,6 +421,7 @@ ${officialSyllabusBlock ? syllabusExclusionBlock : ""}
 ${planningFeedbackBlock}
 ${excludeArchetypeBlock}${excludeStemBlock}${regenBlock}
 ${scoringConceptBlock}
+${ncertHardArchetypeBlock}
 ${kindMixBlock}
 
 **Planning rules:**

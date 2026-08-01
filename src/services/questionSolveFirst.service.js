@@ -62,6 +62,10 @@ import {
 import { buildScoringConceptWriterBlock } from "./jeeMainScoringConcept.service.js";
 import { buildOfficialSyllabusWriterBlock } from "./jeeMainOfficialSyllabus.service.js";
 import {
+    buildNcertChapterReferenceBlock,
+    inferNcertChaptersFromSlots,
+} from "./ncertChapterReference.service.js";
+import {
     buildHardQuestionMandateBlock,
     buildSkeletonGenerationComplianceBlock,
     buildVeteranExamNativeGenerationBlock,
@@ -82,6 +86,7 @@ import {
     repairSkeleton,
     repairSkeletonAuditRejections,
 } from "./skeletonRepair.service.js";
+import { buildCasVerificationContractBlock } from "./skeletonCasVerification.service.js";
 import { stripMetaCommentary } from "../utils/stripMetaCommentary.js";
 
 export { stripMetaCommentary };
@@ -327,6 +332,37 @@ Each new skeleton must use a **different problem structure** from every excluded
           })
         : "";
 
+    // NCERT Class 11/12 chapter reference for the chapters this batch touches.
+    // Chapters are inferred from the planned slots (their own `chapter` field
+    // when the caller set one, else from concept-slot vocabulary), so no extra
+    // param has to be threaded through the generation layers. Returns "" for
+    // non-Mathematics batches or when no chapter matches.
+    const ncertChapterReferenceBlock = isJeeStem
+        ? buildNcertChapterReferenceBlock({
+              chapters: inferNcertChaptersFromSlots(
+                  slotPlans?.slice(0, count)?.length
+                      ? slotPlans.slice(0, count)
+                      : conceptSlots.slice(0, count)
+              ).map((c) => c.label),
+              subject: subject || bankName || topic,
+          })
+        : "";
+
+    // Root-cause-1 fix from the correctness review: neither the hard-mandate
+    // nor the difficulty self-audit ever recomputes the actual math, so a
+    // deterministic SymPy re-derivation is wired in right after skeleton
+    // parsing (see skeletonCasVerification.service.js) — but it can only
+    // check a skeleton that declares its raw inputs in machine-readable
+    // form. This block asks for that, gated to Mathematics only since the
+    // known archetypes (area-between-curves, limits, integrals, matrices,
+    // linear ODEs) are all Maths-specific.
+    const isMathSubject = /\bmath(?:s|ematics)?\b/.test(
+        `${subjLower} ${String(topic || "").toLowerCase()} ${String(bankName || "").toLowerCase()}`
+    );
+    const casVerificationContractBlock = isMathSubject
+        ? buildCasVerificationContractBlock()
+        : "";
+
     const aiSteered =
         archetypeSteeringSource === "ai" ||
         archetypeSteeringSource === "ai_partial";
@@ -473,6 +509,8 @@ ${difficultyCalibrationBlock}
 ${jeeHardBlock}
 ${jeeHardAntiTemplate}
 ${officialSyllabusWriterBlock}
+${ncertChapterReferenceBlock}
+${casVerificationContractBlock}
 ${scoringConceptWriterBlock}
 ${examNativeVeteran ? "" : `${hardMandateBlock}\n${skeletonComplianceBlock}\n${veteranCaliberBlock}`}
 ${archetypeSelectionBlock}
@@ -520,6 +558,9 @@ ${bankArchetypeExcludeBlock}
 13. **calcOps (recommended for numeric items):** emit a short machine-checkable arithmetic trace, e.g. \`[{"a":11.76,"b":10.0,"op":"-","result":1.76}]\`. The last \`result\` MUST equal \`finalAnswer.value\`. Text explanations must not invent arithmetic that contradicts \`calcOps\`.
 14. **Batch diversity:** every skeleton must use a **different micro-topic and problem structure** — no two pulley-incline, lens-contact, or de Broglie-ratio clones in the same batch.
 15. **Per-slot concept fusion:** read the assigned \`conceptSlot\` blueprint — the stem must explicitly weave **both** fused ideas from that archetype (e.g. viscosity + terminal velocity + thermal; wavefront + refractive gradient; photoelectric + momentum recoil).
+16. **ANSWER LOCK (critical for correctness):** The LAST solveStep MUST end with the same number/expression as \`finalAnswer.display\` / \`finalAnswer.value\`. Never invent a bridging fudge ("subtract 0.43 to match option A"). If the computed value is not among your planned distractors, change \`finalAnswer\` and rebuild \`distractorValues\` around the true value.
+17. **Exact form over decimals (JEE Main Maths):** Prefer exact answers (e.g. \`2/3\`, \`(8/3)ln2 - 7/9\`, \`π/4\`, \`√2\`) over rounded decimals when the integral/limit closes exactly. Decimal options only when the problem truly has no clean closed form.
+18. **Single clear ask:** One stem = one final numeric/text answer. Do not combine two unrelated asks ("find x for horizontal tangent AND dy/dt") into one MCQ.
 
 ${buildPreOutputCorrectnessChecklist({ examProfile })}
 
@@ -537,7 +578,13 @@ Return ONLY valid JSON:
       },
       "calcOps": [{"a": 5.0, "b": 0.04, "op": "+", "result": 5.04}],
       "solveSteps": ["Step 1 with full reasoning …", "Step 2 …", "Step 3 …", "Step 4 …", "Step 5 concluding with the same value as finalAnswer.display …"],
-      "distractorValues": ["4.74", "5.34", "5.74"]
+      "distractorValues": ["4.74", "5.34", "5.74"]${
+          isMathSubject
+              ? `,
+      "archetype": "definite_integral",
+      "givens": {"expr": "sin(x)**8", "lower": "0", "upper": "pi/2"}`
+              : ""
+      }
     }
   ]
 }
@@ -1532,38 +1579,53 @@ export const buildMcqFromSkeleton = (
     }
     options = sanitizeDistractorQuality(stem, options, correctIndex, unit);
 
-    // Flash-lite / weaker models often derive the right number then mark a distractor.
-    // Rematch (or rebuild options around the derivation) BEFORE consistency checks —
-    // this is NOT the forbidden "force-align Therefore to wrong key"; we trust the math.
+    // Models (esp. flash-lite) often derive the right number then mark a distractor
+    // or invent a fudge to force-fit option A. Rematch / rebuild options around the
+    // derivation BEFORE any consistency check — even under solverTruth, so Stage A
+    // provisional keys are far less wrong before the independent solver runs.
+    // This is NOT "force-align Therefore to wrong key"; we trust the derivation math.
     let realigned = null;
-    if (!solverTruth) {
-        realigned = realignOptionsToDerivation({
-            _solveSteps: solveSteps,
-            options,
-            correctIndex,
-            unit,
-            distractorValues,
+    realigned = realignOptionsToDerivation({
+        _solveSteps: solveSteps,
+        options,
+        correctIndex,
+        unit,
+        distractorValues,
+    });
+    if (realigned) {
+        options = realigned.options;
+        correctIndex = realigned.correctIndex;
+        pipelineTrace("SKELETON_KEY_REALIGNED_TO_DERIVATION", {
+            index: index + 1,
+            mode: realigned.realigned,
+            computed: realigned.candidate?.display,
+            marked: options[correctIndex],
+            provisional: !!solverTruth,
         });
-        if (realigned) {
-            options = realigned.options;
-            correctIndex = realigned.correctIndex;
-            pipelineTrace("SKELETON_KEY_REALIGNED_TO_DERIVATION", {
-                index: index + 1,
-                mode: realigned.realigned,
-                computed: realigned.candidate?.display,
-                marked: options[correctIndex],
-            });
-            if (isPhStem(stem)) {
-                options = sanitizePhOptions(options, correctIndex);
-            }
-            options = sanitizeDistractorQuality(stem, options, correctIndex, unit);
+        if (isPhStem(stem)) {
+            options = sanitizePhOptions(options, correctIndex);
         }
+        options = sanitizeDistractorQuality(stem, options, correctIndex, unit);
     }
 
     const markedOption = options[correctIndex];
     const correctLetter = String.fromCharCode(65 + correctIndex);
 
     if (solverTruth) {
+        // Soft consistency check on generator derivation vs marked key.
+        // Failures reject the skeleton so the slot can regenerate instead of
+        // shipping a self-contradictory provisional answer into Stage A output.
+        try {
+            assertSolveStepsConsistency({
+                _solveSteps: solveSteps,
+                options,
+                correctIndex,
+            });
+        } catch (err) {
+            throw new Error(
+                `Skeleton ${index + 1}: generator derivation disagrees with marked key — ${err?.message || err}`
+            );
+        }
         return {
             questionType: "single",
             questionText: stem,
@@ -1571,7 +1633,7 @@ export const buildMcqFromSkeleton = (
             correctIndex,
             correctAnswer: correctLetter,
             multipleCorrectIndexes: [],
-            // Placeholder — never treat generator derivation as publishable truth.
+            // Placeholder until Stage A answer-lock / full finalize runs.
             explanation: `Pending independent verification. FINAL_ANSWER: ${correctLetter}`,
             difficulty: tier,
             _solveSteps: [],
@@ -1581,6 +1643,9 @@ export const buildMcqFromSkeleton = (
                 String(assignedConceptSlot || skeleton.conceptSlot || "").trim() ||
                 undefined,
             _questionKind: skeleton.questionKind || undefined,
+            ...(realigned
+                ? { _keyRealignedFromDerivation: realigned.realigned }
+                : {}),
         };
     }
 
@@ -2533,10 +2598,72 @@ export const getSolveFirstSubjectId = (params) => {
     return resolved.id || "";
 };
 
+/**
+ * Safe pass-through for dual-verified / solver-truth-locked MCQs.
+ * Never drop these for explanation-vs-key nitpicks — the answer key is already locked.
+ */
+const sanitizeDualVerifiedMcq = (q) => {
+    const correctIndex = Number.isFinite(q.correctIndex) ? q.correctIndex : 0;
+    const correctLetter = String.fromCharCode(65 + correctIndex);
+    const marked = String(q.options?.[correctIndex] ?? "").trim() || correctLetter;
+    const solverVal = String(
+        q?._verification?.solverValue || q?.solverValue || ""
+    ).trim();
+    let solveSteps = Array.isArray(q._solveSteps)
+        ? q._solveSteps.map(String).filter(Boolean)
+        : [];
+    if (!solveSteps.length && q.explanation) {
+        solveSteps = inferSolveStepsFromExplanation(q.explanation);
+    }
+    // Strip conflicting therefore closings; re-lock to the verified option only.
+    solveSteps = solveSteps
+        .map(stripMetaCommentary)
+        .map(stripTrailingThereforeClosing)
+        .map((s) => s.replace(/\s*FINAL_ANSWER\s*:\s*[^\n.]*/gi, "").trim())
+        .filter(Boolean);
+    const explanation =
+        solveSteps.length >= 2
+            ? lockExplanationToMarkedOption(solveSteps, marked, { correctLetter })
+            : `Verified result: ${
+                  solverVal || marked
+              }. Therefore, the correct answer is ${marked}. FINAL_ANSWER: ${correctLetter}`;
+    return {
+        ...q,
+        correctIndex,
+        correctAnswer: correctLetter,
+        explanation: stripMetaCommentary(explanation),
+        _solveSteps:
+            solveSteps.length >= 1
+                ? syncSolveStepsToMarkedAnswer(solveSteps, marked).map(
+                      (s, i, arr) =>
+                          i === arr.length - 1
+                              ? `${String(s || "")
+                                    .replace(/\s*FINAL_ANSWER\s*:\s*[^\n.]*/gi, "")
+                                    .trim()} FINAL_ANSWER: ${correctLetter}`
+                              : s
+                  )
+                : [
+                      `Verified result: ${
+                          solverVal || marked
+                      }. FINAL_ANSWER: ${correctLetter}`,
+                  ],
+        _sanitizeMode: "dual_verified_safe",
+    };
+};
+
 /** Rebuild explanation from solve steps and assert option consistency. */
 export const sanitizeMcqForPipeline = (q) => {
     if (!q?.questionText || !Array.isArray(q.options) || !q.options.length) {
         return q;
+    }
+    // Dual-verified / Stage-A answer-locked: never drop — key is already trusted.
+    if (
+        q._answerCorrectnessGuaranteed === true ||
+        q._doubleSolverAgree === true ||
+        q?._verification?.doubleSolverAgree === true ||
+        (q._solverTruthApplied === true && q._stageAAnswerLocked === true)
+    ) {
+        return sanitizeDualVerifiedMcq(q);
     }
     // Solver-truth provisional items: stem+options only until Independent Solver runs.
     // Do not rebuild explanation from generator drafts / placeholders.

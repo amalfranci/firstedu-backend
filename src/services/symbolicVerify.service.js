@@ -25,6 +25,7 @@ export const isSymbolicVerifyEnabled = () => {
 };
 
 const PYTHON_BIN = String(process.env.AI_QB_PYTHON || "python").trim() || "python";
+let warnedSidecarUnavailable = false;
 const SYMBOLIC_CONCURRENCY = Math.max(
     1,
     Math.min(6, Number(process.env.AI_QB_SYMBOLIC_VERIFY_CONCURRENCY || 3))
@@ -177,17 +178,36 @@ export const verifyWithSymPy = (
                 skipped: true,
             });
         });
-        child.on("close", () => {
+        child.on("close", (code) => {
             clearTimeout(timer);
             try {
                 const parsed = JSON.parse(stdout || "{}");
+                // The sidecar always prints `{"ok": true|false, ...}` when it actually
+                // ran. If `ok` is missing (e.g. the "python" binary resolved to the
+                // Windows Store app-execution-alias stub — it exits non-zero with no
+                // stdout instead of throwing a spawn error) we must NOT treat that as
+                // a correctness failure: that previously stripped nearly every
+                // Mathematics question regardless of whether the answer was right.
+                const ranSuccessfully = typeof parsed.ok === "boolean";
+                const unavailable =
+                    !ranSuccessfully ||
+                    code !== 0 ||
+                    Boolean(parsed.error?.includes?.("sympy_unavailable"));
                 resolve({
                     ok: Boolean(parsed.ok),
                     value: parsed.value ?? null,
-                    error: parsed.error ?? (stderr.trim() || null),
+                    error:
+                        parsed.error ??
+                        (stderr.trim() || (code !== 0 ? `sidecar_exit_${code}` : null)),
                     method: parsed.method ?? null,
-                    skipped: Boolean(parsed.error?.includes?.("sympy_unavailable")),
+                    skipped: unavailable,
                 });
+                if (unavailable && !ranSuccessfully && !warnedSidecarUnavailable) {
+                    warnedSidecarUnavailable = true;
+                    console.warn(
+                        `[symbolic-verify] sympy sidecar unavailable (PYTHON_BIN="${PYTHON_BIN}", exit=${code}) — skipping symbolic checks instead of failing questions. Set AI_QB_PYTHON to a working interpreter or AI_QB_SYMBOLIC_VERIFY=0 to silence.`
+                    );
+                }
             } catch {
                 resolve({
                     ok: false,

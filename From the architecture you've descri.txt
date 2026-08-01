@@ -1,0 +1,1803 @@
+From the architecture you've described, the pipeline itself is reasonable. The fact that you're using a solve-first approach does not guarantee correct answers or JEE Main-level difficulty. The failures are likely happening in the stages after or around the solve-first generation.
+
+Here are the most likely root causes, ordered by impact.
+
+1. The LLM's "computed answer" is never independently verified (Highest probability)
+
+Your flow is:
+
+Blueprint
+    ↓
+Gemini solves internally
+    ↓
+Gemini returns computed answer
+    ↓
+Question builder trusts it
+
+The problem is that Gemini can confidently make algebra/calculus mistakes.
+
+Example:
+
+Gemini:
+Computed area = 0.5
+
+If your pipeline simply locks
+
+correctAnswer = "B"
+
+because Gemini said so, the answer key becomes wrong.
+
+Instead, every numeric answer should go through an independent verifier.
+
+Gemini
+     ↓
+Computed answer = 0.5
+
+        ↓
+CAS / SymPy / GPT-5 verifier
+
+Actual answer = 1/18
+
+Mismatch
+
+Reject question
+
+Without this verification, solve-first is only "LLM-first."
+
+2. The solver and the question writer are the same model
+
+If Gemini both
+
+creates the mathematics
+solves it
+explains it
+
+then all three contain the same reasoning error.
+
+That's why you see
+
+Question
+↓
+
+Wrong derivation
+
+↓
+
+Wrong explanation
+
+↓
+
+Wrong answer
+
+Everything is internally consistent—but mathematically wrong.
+
+The verifier must be independent.
+
+3. Blueprint isn't enforcing HARD mathematics
+
+Your blueprint probably says things like
+
+Difficulty = Hard
+Topic = Definite Integration
+Concept = Area
+
+That isn't enough.
+
+A hard JEE question usually contains multiple reasoning steps.
+
+Example blueprint:
+
+Topic:
+Area
+
+Required techniques:
+✓ symmetry
+✓ substitution
+✓ monotonicity
+✓ hidden interval split
+
+Forbidden:
+× direct integration
+× single formula
+
+If your blueprint only specifies
+
+Topic = Area
+Difficulty = Hard
+
+Gemini will generate
+
+Find area under y=x²
+
+and label it "Hard."
+
+4. Difficulty isn't objectively measured
+
+Most generators ask
+
+Generate a hard JEE question.
+
+The model responds
+
+Sure.
+
+That doesn't make it hard.
+
+Instead compute metrics like
+
+number_of_steps
+
+concept_count
+
+hidden_identity
+
+symbolic_manipulation
+
+case_split
+
+inverse_reasoning
+
+parameter_dependency
+
+For example
+
+score =
+2×concepts
++2×case_splits
++hidden_substitution
++parameter
+
+Reject anything below your threshold.
+
+5. No symbolic validation
+
+Many of your wrong questions involve
+
+limits
+
+derivatives
+
+areas
+
+tangent
+
+radius
+
+optimization
+
+These are symbolic mathematics.
+
+An LLM is the weakest component here.
+
+Instead
+
+SymPy
+
+Mathematica
+
+Maple
+
+SageMath
+
+should verify
+
+limit()
+
+integrate()
+
+differentiate()
+
+solve()
+
+radius
+
+distance
+
+roots
+
+before publishing.
+
+6. Options are generated after solving
+
+Sometimes
+
+correct answer
+
+↓
+
+rounded
+
+↓
+
+formatted
+
+↓
+
+mapped
+
+↓
+
+option index
+
+introduces errors.
+
+Example
+
+Computed:
+
+5/√2
+
+↓
+
+5
+
+↓
+
+Option C
+
+Now the key is wrong.
+
+7. Explanation isn't regenerated from verified math
+
+Many pipelines do
+
+Answer verified
+
+↓
+
+Explanation still from original LLM
+
+Result
+
+Correct answer
+
+Wrong explanation
+
+or
+
+Wrong answer
+
+Correct explanation
+
+The explanation should be regenerated after the verified answer is locked.
+
+8. Previous-year papers are only used as RAG, not as constraints
+
+Using PYQs as retrieval helps with style, but doesn't enforce quality.
+
+The generator should satisfy constraints extracted from PYQs, such as:
+
+Number of concepts combined
+Typical distractor patterns
+Algebraic complexity
+Average solving time
+Bloom's taxonomy level
+Common archetypes
+
+If these are only context and not enforced, the model can drift.
+
+9. No rejection stage
+
+The biggest missing piece is often:
+
+Generate
+↓
+
+Verify
+↓
+
+Score
+↓
+
+Reject
+↓
+
+Regenerate
+
+Instead many pipelines stop at:
+
+Generate
+↓
+
+Accept
+
+Even with a 90% accurate generator, you'll still produce many flawed questions.
+
+What I think is happening in your pipeline
+
+Based on the issues you've shown previously, your pipeline likely looks like:
+
+Blueprint
+        ↓
+Gemini solve-first
+        ↓
+Skeleton
+        ↓
+Options
+        ↓
+Answer locked
+        ↓
+Explanation
+        ↓
+Done
+
+The missing safeguards are:
+
+❌ Independent symbolic math verification (SymPy/CAS)
+❌ Objective difficulty scoring (not just LLM labels)
+❌ Blueprint constraints that truly define "hard"
+❌ Automatic rejection and regeneration when verification fails
+❌ Regeneration of explanations from the verified solution
+
+Bottom line: A solve-first architecture is a good foundation, but it is not sufficient. The LLM should generate candidates, while deterministic mathematics (or an independent verifier) should decide correctness. Likewise, "Hard" should be enforced through measurable complexity criteria rather than trusting the model's self-assessment. This combination is what will consistently improve both answer accuracy and JEE Main-level difficulty.
+
+Your architecture is already 80% of the way there. The remaining 20% is what separates a good generator from one that consistently produces 95%+ correct JEE Main questions.
+
+I would redesign the pipeline like this:
+
+PYQs + NCERT + Blueprint
+          ↓
+Topic & Concept Planner
+          ↓
+Hardness Planner
+          ↓
+Solve-First Generator (Gemini)
+          ↓
+──────────────────────────────
+        VALIDATION
+──────────────────────────────
+1. Symbolic Math Verification
+2. Independent LLM Verification
+3. Difficulty Verification
+4. Quality Verification
+──────────────────────────────
+          ↓
+Pass?
+ ├── No → Reject & Regenerate
+ └── Yes
+          ↓
+Generate Explanation
+          ↓
+Final Review
+          ↓
+Save
+Step 1: Never trust the generator
+
+Currently
+
+Gemini
+↓
+
+Computed answer
+
+↓
+
+Lock answer
+
+Instead
+
+Gemini
+↓
+
+Candidate question
+
+↓
+
+Independent verification
+
+↓
+
+Lock answer
+
+The generator should never decide the final answer.
+
+Step 2: Add Symbolic Math Verification
+
+For Mathematics
+
+Use
+
+SymPy
+Mathematica
+SageMath
+
+Example
+
+Generator says
+
+Integral =
+4
+
+SymPy
+
+integrate(...)
+
+Result
+
+7/3
+
+Mismatch
+
+Reject immediately.
+
+This alone removes most wrong answers.
+
+Step 3: Use GPT-5 only as a verifier
+
+Instead of
+
+Gemini
+
+↓
+
+Final answer
+
+Use
+
+Gemini
+
+↓
+
+GPT-5
+
+↓
+
+Compare
+
+Prompt GPT-5:
+
+Solve this question independently.
+
+Do NOT read the provided answer.
+
+Return only:
+
+Computed Answer
+
+Difficulty
+
+Reasoning
+
+Now compare
+
+Gemini = B
+
+GPT5 = D
+
+Mismatch
+
+Reject
+Step 4: Difficulty should be computed, not guessed
+
+Instead of
+
+Difficulty = Hard
+
+Compute
+
+Concept count
+
+Hidden substitutions
+
+Case splits
+
+Identity usage
+
+Transformations
+
+Estimated solving time
+
+Bloom level
+
+Example
+
+Concepts = 1
+
+Steps = 2
+
+Hidden trick = No
+
+Difficulty = Medium
+
+Reject.
+
+Step 5: Add a Hardness Verifier
+
+Prompt GPT-5
+
+Evaluate this as a JEE Main question.
+
+Return
+
+Difficulty
+
+Reason
+
+Similarity to previous year papers
+
+Estimated solving time
+
+Concept count
+
+Reject if below Hard.
+Step 6: Build a Rejection Engine
+
+Never save immediately.
+
+Generate
+
+↓
+
+Verify
+
+↓
+
+Hard?
+
+↓
+
+Correct?
+
+↓
+
+Explanation matches?
+
+↓
+
+YES
+
+↓
+
+Save
+
+Otherwise
+
+Reject
+
+↓
+
+Generate another
+Step 7: Verify options
+
+Many wrong keys happen because
+
+Correct answer
+
+↓
+
+Formatting
+
+↓
+
+Rounded
+
+↓
+
+Mapped
+
+↓
+
+Wrong option
+
+Instead
+
+Correct value
+
+↓
+
+Generate options
+
+↓
+
+Find exact matching option
+
+↓
+
+Verify unique answer
+
+↓
+
+Save
+
+If two options are mathematically equal
+
+Reject.
+
+Step 8: Generate explanation AFTER verification
+
+Current
+
+Question
+
+↓
+
+Explanation
+
+↓
+
+Verification
+
+Better
+
+Question
+
+↓
+
+Verification
+
+↓
+
+Lock answer
+
+↓
+
+Generate explanation using locked answer
+Step 9: Add Quality Scoring
+
+Score every question.
+
+Correctness      40
+
+Difficulty       20
+
+Novelty          10
+
+JEE Style        15
+
+Explanation      10
+
+Distractors       5
+
+Total = 100
+
+Reject if
+
+Score <90
+Step 10: Use Previous Year Papers correctly
+
+Instead of retrieving random PYQs
+
+Extract statistics
+
+Average concepts
+
+Average steps
+
+Average time
+
+Topic combinations
+
+Option patterns
+
+Bloom level
+
+Difficulty
+
+Store
+
+Topic:
+Application of Derivatives
+
+Average concepts = 2.4
+
+Average solving time = 4.8 min
+
+Most common archetypes
+
+Most common mistakes
+
+Then make the generator satisfy those statistics.
+
+Step 11: Add Self-Consistency
+
+Ask Gemini multiple times.
+
+Solve
+
+↓
+
+A
+
+Solve again
+
+↓
+
+A
+
+Solve again
+
+↓
+
+B
+
+Different answers
+
+Reject.
+
+Step 12: Final Independent Review
+
+Before saving
+
+Ask GPT-5
+
+Review this question.
+
+Check
+
+Mathematics
+
+Grammar
+
+JEE style
+
+Difficulty
+
+Single correct option
+
+Explanation
+
+Final Answer
+
+Accept or Reject
+Recommended Technology Stack
+Stage	Tool
+Blueprint Planning	Your current planner
+Generation	Gemini 2.5 Pro
+Symbolic Verification	SymPy
+Independent Verification	GPT-5
+Difficulty Review	GPT-5
+Similarity Check	Embeddings + Vector DB
+Final QA	GPT-5
+The Most Important Change
+
+If you only implement one improvement, make it this:
+
+Blueprint
+        ↓
+Gemini (Generate)
+        ↓
+SymPy (Verify mathematics)
+        ↓
+GPT-5 (Verify independently)
+        ↓
+Hardness Scorer
+        ↓
+Quality Scorer
+        ↓
+Accept only if ALL pass
+        ↓
+Generate explanation
+        ↓
+Save
+
+This transforms your system from a generation pipeline into a generation + validation pipeline. In practice, this is the architectural pattern used by high-quality exam-generation systems because the generator is treated as a proposal engine, while independent verification decides what is actually accepted.
+
+answerVerification.service.js
+JavaScript
+verify_answer.py
+Python
+Looking at your pipeline and the review data, the pattern is pretty clear: you have a difficulty-shaping problem and a correctness problem, and they're being caused by two different gaps in the architecture. Neither is fixed by the hard-mandate or self-audit services as they currently stand, because neither of those services actually checks the math.
+
+Root cause 1: Nothing in the pipeline independently verifies the arithmetic
+
+Your hardQuestionMandate.service.js checks structure — step count, concept-cluster count, line count, banned templates. Your difficultySelfAudit.service.js checks how hard it looks via an LLM rubric score. Neither of these touches whether the final numeric answer is actually correct. You mentioned a separate OpenAI verification stage exists, but the review shows 6/10 answer keys wrong — so either:
+
+that stage is checking "is this solution internally consistent" rather than "does this answer match an independent re-derivation," or
+it's being skipped/soft-failing for some question types, or
+it's also an LLM doing algebra, which fails the same way generation does (LLMs are unreliable at multi-step symbolic arithmetic — errors compound over 4-8 steps, which is exactly your "hard" tier).
+
+Fix: Add a deterministic computational check between skeleton generation and acceptance. For any question with numeric givens (which is most of calculus/coordinate geometry), have code — not an LLM — recompute the final answer from the stated givens using a CAS (SymPy is easiest to wire in, since you're already touching Python-adjacent tooling; a JS equivalent like mathjs/algebrite also works for simpler symbolic cases). Compare that computed value against the skeleton's claimed answer and against the offered options. If they don't match within tolerance, hard-reject before it ever reaches the self-audit stage — no LLM judgment involved. This is the single highest-leverage fix, because right now you're using an LLM to both write the problem and implicitly certify its own arithmetic.
+
+Root cause 2: The hardness gates reward the wrong signal
+
+The reviewer's complaint — "artificially combines unrelated concepts," "not JEE Main style" — is a direct consequence of your gate design. hardQuestionMandate requires ≥2 linked syllabus clusters and ≥4 solve steps for veteran-hard. An LLM under that constraint will often satisfy it the cheapest way possible: bolt two unrelated topics together (e.g., optimization + area) rather than finding a genuinely deep single-concept problem, because concept-fusion is an easy way to hit the "2 clusters" requirement without real depth. Step count is the same story — you can inflate steps without inflating difficulty.
+
+Fix: Ground "hard" in pattern-matching against real JEE archetypes rather than raw concept/step counts. You already have _blueprint objects with pattern/technique/banned-shortcuts — lean harder on curated archetype patterns (drawn from actual past JEE hard questions per chapter) as the primary difficulty signal, and treat concept-cluster count and step count as secondary sanity checks, not the primary gate. Multi-concept fusion should be opt-in per archetype (some real JEE hards genuinely combine area + optimization), not a default way to satisfy a numeric threshold.
+
+Root cause 3: The generation model is likely too weak for this task
+
+gemini-3.1-flash-lite is a small/fast model. Lite-tier models are the ones most prone to exactly the errors you're seeing — sign errors, wrong constant substitution, inconsistent limit conditions (your Q3), area computed on the wrong bound (your Q2/Q6). This isn't really a prompting problem; it's a capability ceiling for multi-step symbolic math.
+
+Fix: For examCalibrated: true / hard-tier generation specifically, route to a stronger model (your commented-out gemini-3.5-flash, or better) even if lite stays default elsewhere for cost. You don't need to swap the whole pipeline — just gate model choice on tier === "hard" || examCalibrated, same condition you already use for the mandate service.
+
+Suggested priority order
+CAS-based independent recomputation + hard reject on mismatch — fixes the correctness numbers immediately, is deterministic, and can't be "talked around" by a better prompt.
+Upgrade the generation model for hard/exam-calibrated tier.
+Rework hardness detection to be archetype-pattern-based rather than step/concept-count-based, so you stop getting Frankenstein concept mashups.
+Keep the LLM difficulty self-audit as a tertiary filter after 1–3, not the primary correctness/difficulty gate — it's currently doing a job (verifying math) it's structurally not suited for.
+
+If you want, I can sketch the actual verification module (e.g., a Node/Python service that takes a skeleton's givens + claimed answer and re-derives it symbolically for the common archetypes in your 5 chapters — coordinate geometry, limits, integrals, matrices, differential equations) so you can see what wiring it into skeletonsToQuestions() would look like.
+
+
+Now let me test it against the exact failures your reviewers flagged (Q2 area, Q4 radius, Q6 area, Q7 integral, Q10 integral):
+
+Test the CAS verifier against the failure modes the reviewers actually found
+Test the CAS verifier against the failure modes the reviewers actually found
+
+Working as intended — it correctly flags mismatches with tight tolerance. Now the Node integration layer:
+
+Created a file, ran a command, read a file
+Created a file, ran a command, read a file
+
+I built and actually tested this against your reviewers' exact failures (Q4's radius, the area-between-curves miss, Q10's sin⁸x integral) — it catches all of them, with verified: false and the correct computed value shown.
+
+How it wires in, concretely:
+
+verify_answer.py — a SymPy CAS that independently recomputes the answer for a known archetype (area between curves, definite integral, limit, derivative at a point, circle radius, matrix det/inverse, first-order linear ODE). It never trusts the LLM's arithmetic — it re-derives from the raw givens.
+answerVerification.service.js — the Node wrapper. Drop it into your services/ folder next to hardQuestionMandate.service.js. Call filterSkeletonsByVerification() in skeletonsToQuestions() right after Gemini returns skeletons, before difficultySelfAudit. Anything with verified === false gets hard-rejected and the slot regenerated — no LLM opinion involved.
+
+One required change on your end: the Gemini skeleton prompt needs to additionally emit archetype + structured givens (e.g. {"f_expr": "x", "g_expr": "x**2", "lower": "0", "upper": "1"}) alongside the existing prose stem. This is a small prompt-contract addition, not a rewrite — you're already asking it to "solve first," so ask it to also state its inputs in machine-readable form. Unrecognized archetypes just pass through as verified: null (no regression, no false rejects).
+
+Extend coverage by adding functions to the ARCHETYPES dict for your other recurring patterns (trig equations, vector algebra, probability, etc.) — same shape as the ones included: take givens, return a float, register in the dict.
+
+Two things this doesn't fix on its own, from my earlier note:
+
+Model tier for hard/exam-calibrated generation — still worth routing examCalibrated: true batches to gemini-3.5-flash instead of lite, since lite is the likely source of the sign/bound errors upstream of this filter.
+Archetype-pattern-based hardness instead of raw concept/step counts, to stop the "bolt two unrelated topics together" behavior — that's a prompt/blueprint change in hardQuestionMandate.service.js, not something a CAS can fix, since it's about style not correctness.
+
+I think the analysis is largely correct, but I would make one important architectural change.
+
+The proposed solution treats the CAS verifier as the primary gate. That will dramatically improve correctness, but it won't scale to all JEE Main topics (P&C, Probability, Vectors, 3D Geometry, Complex Numbers, Integer-type questions, etc.). Your long-term architecture should separate verification into multiple specialized layers.
+
+What I would build instead
+Blueprint Planning
+        ↓
+Archetype Planning
+        ↓
+Solve-First Generation (Gemini)
+        ↓
+──────────── Verification Layer ────────────
+
+1. Schema Validation
+   ✓ required fields
+   ✓ options
+   ✓ archetype
+   ✓ givens
+
+        ↓
+
+2. Deterministic Verifier
+   SymPy / Matrix algebra / Geometry formulas
+   (only when applicable)
+
+        ↓
+
+3. Independent LLM Solver
+   GPT-5
+   Claude
+   (blind solve)
+
+        ↓
+
+4. Consensus Engine
+
+Gemini
+GPT-5
+CAS
+
+↓
+
+Accept only if agreement
+
+        ↓
+
+5. Difficulty Verification
+
+PYQ similarity
+
+Archetype check
+
+Estimated solve time
+
+Concept count
+
+Bloom level
+
+        ↓
+
+6. Quality Review
+
+Grammar
+
+Ambiguity
+
+Duplicate options
+
+Single correct option
+
+Explanation
+
+        ↓
+
+Store
+Your proposed CAS verifier is excellent...
+
+The uploaded verify_answer.py is well-designed for deterministic archetypes.
+
+It already supports:
+
+area between curves
+limits
+definite integrals
+derivatives
+circle radius
+matrices
+linear ODEs
+
+and returns
+
+{
+  "verified": true,
+  "computed_answer": ...,
+  "claimed_answer": ...,
+  "delta": ...
+}
+
+which is exactly what a verification layer should return.
+
+The Node wrapper is also clean:
+
+Gemini
+
+↓
+
+verifyAnswer()
+
+↓
+
+filterSkeletonsByVerification()
+
+↓
+
+Reject if verified=false
+
+which fits naturally into your pipeline.
+
+But I would NOT stop there
+
+Suppose Gemini generates
+
+Probability
+
+5 cards
+
+Expected value
+
+
+Your CAS verifier cannot solve it.
+
+It returns
+
+verified = null
+
+Now the question bypasses verification.
+
+That means correctness again depends entirely on Gemini.
+
+So the architecture still has a blind spot.
+
+I would replace "verified=null" with another verifier
+
+Instead of
+
+CAS
+
+↓
+
+null
+
+↓
+
+accept
+
+do
+
+CAS
+
+↓
+
+null
+
+↓
+
+GPT-5 independent solve
+
+↓
+
+compare
+
+↓
+
+accept
+
+Now every question is verified.
+
+I would also improve the "givens"
+
+Right now your prompt emits
+
+{
+  "archetype":"area_between_curves",
+  "givens":{...}
+}
+
+I would also include
+
+{
+  "difficulty":"Hard",
+
+  "concepts":[
+      "Area",
+      "Applications of Derivatives"
+  ],
+
+  "expected_steps":6,
+
+  "pyq_archetype":"ADB-03"
+}
+
+Now every verifier has much richer metadata.
+
+The biggest weakness is still the Hardness Mandate
+
+Currently it sounds like
+
+Hard
+
+↓
+
+≥2 concepts
+
+↓
+
+≥4 steps
+
+This is exactly how you get
+
+Optimization
+
++
+
+Area
+
++
+
+Trigonometry
+
++
+
+Matrices
+
+all inside one strange question.
+
+Real JEE doesn't do that.
+
+Instead I'd build a library like
+
+Application of Derivatives
+
+Hard Archetype 1
+
+Hard Archetype 2
+
+Hard Archetype 3
+
+...
+
+Integration
+
+Hard Archetype 1
+
+Hard Archetype 2
+
+...
+
+Then the blueprint chooses from those archetypes.
+
+This will produce questions that "feel" like actual JEE Main questions rather than satisfying numeric thresholds.
+
+One thing missing from the proposed solution
+
+I would also add PYQ Similarity Verification.
+
+After generation:
+
+Embedding
+
+↓
+
+Nearest 20 PYQs
+
+↓
+
+Similarity score
+
+Reject if
+
+Similarity
+
+<0.55
+
+because that usually means the question drifted away from actual JEE style.
+
+My recommended priority
+Phase 1 (Highest impact)
+✅ Integrate your CAS verifier after skeleton generation.
+✅ Reject any verified=false.
+✅ Regenerate that slot.
+Phase 2
+Add GPT-5 blind solving for any verified=null.
+Use majority agreement between generator, verifier, and CAS where applicable.
+Phase 3
+Replace step-count and concept-count rules with a curated JEE archetype library derived from previous years' papers.
+Phase 4
+Add a final quality score (answer correctness, hardness, ambiguity, distractor quality, explanation quality, PYQ similarity) and reject anything below a threshold (for example, 90/100).
+Overall assessment
+
+The CAS verification module you've drafted is a strong addition and should significantly reduce incorrect answer keys for supported mathematical archetypes. The place I'd evolve the design is to make it part of a broader verification pipeline, so every question—whether or not it's CAS-checkable—undergoes independent validation before it is accepted. That combination will improve both correctness and consistency across the full JEE Main syllabus.
+
+[
+  {
+    "questionType": "single",
+    "questionText": "Consider the curves y = ln(x) and y = 2 - x^2. The curves intersect at a point x = α in the interval (1, 2). Given that the area enclosed by these curves and the y-axis is not requested, find the area bounded by the curves y = ln(x), y = 2 - x^2, and the x-axis in the first quadrant. Use the intersection point α ≈ 1.314 to define the upper limit of integration. Calculate the total area bounded by these two transcendental functions.",
+    "options": [
+      "0.542 sq units",
+      "0.768 sq units",
+      "0.685 sq units",
+      "0.914 sq units"
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "C",
+    "multipleCorrectIndexes": [],
+    "explanation": "Pending independent verification. FINAL_ANSWER: C",
+    "difficulty": "hard",
+    "_solveSteps": [],
+    "_generatorSolveSteps": [
+      "First, identify the intersection point of y = ln(x) and y = 2 - x^2 by solving ln(x) = 2 - x^2, which yields α ≈ 1.314.",
+      "The area is split into two parts: the region under ln(x) from x = 1 to α, and the region under 2 - x^2 from α to sqrt(2).",
+      "Calculate the integral of ln(x) from 1 to 1.314, which is [x ln(x) - x] evaluated from 1 to 1.314, resulting in approximately 0.152.",
+      "Calculate the integral of 2 - x^2 from 1.314 to 1.414, which is [2x - x^3/3] evaluated from 1.314 to 1.414, resulting in approximately 0.533.",
+      "Summing these two areas gives the total bounded area as 0.152 + 0.533 = 0.685 sq units."
+    ],
+    "_answerProvisional": true,
+    "_conceptSlot": "area_bounded_two_curves_multi",
+    "_questionKind": "multi_concept",
+    "difficultyTier": "hard",
+    "_blueprint": {
+      "topic": "Competitive › Engineering › JEE Mains › Mathematics · Curated hard chapters: Co-ordinate Geometry, Limit, Continuity and Differentiability, Integral Calculus, Matrices and Determinants, Differential Equations",
+      "concept": "Area between intersecting transcendental curves",
+      "conceptSlot": "area_bounded_two_curves_multi",
+      "difficulty": "hard",
+      "type": "single",
+      "estimatedTime": 4.5,
+      "blooms": "Analyze",
+      "questionKind": "multi_concept",
+      "label": "Area between intersecting transcendental curves",
+      "blueprint": {
+        "pattern": "Find the area enclosed by two curves where the intersection points require solving a transcendental equation involving extrema.",
+        "required": "Must involve finding critical points via differentiation to determine the bounds of integration.",
+        "banned": "Simple polynomial intersection points; direct integration without geometric analysis.",
+        "stemHint": "Find the area enclosed by y = x^2 and y = 2 - |x|."
+      },
+      "index": 0
+    },
+    "blooms": "Analyze",
+    "estimatedTime": 4.5,
+    "_formulaValidation": {
+      "ok": true,
+      "issues": [],
+      "topicKey": "matrices",
+      "allowlistHit": false
+    },
+    "_verification": {
+      "formulaOk": true
+    },
+    "_distractorPass": true,
+    "_validationStatus": "pending",
+    "_questionIndex": 0
+  },
+  {
+    "questionType": "single",
+    "questionText": "Evaluate the definite integral I = ∫ from -π/2 to π/2 of (sin^4(x) * ln((2+x)/(2-x))) dx. The integrand consists of a product of a trigonometric function and a logarithmic function. Analyze the symmetry of the integrand over the symmetric interval [-π/2, π/2]. Determine the value of the integral based on the parity of the function.",
+    "options": [
+      "π/8",
+      "π/4",
+      "0",
+      "π/2"
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "C",
+    "multipleCorrectIndexes": [],
+    "explanation": "Pending independent verification. FINAL_ANSWER: C",
+    "difficulty": "hard",
+    "_solveSteps": [],
+    "_generatorSolveSteps": [
+      "Let f(x) = sin^4(x) * ln((2+x)/(2-x)).",
+      "Check the parity of f(x) by evaluating f(-x).",
+      "f(-x) = sin^4(-x) * ln((2-x)/(2+x)) = sin^4(x) * ln(((2+x)/(2-x))^-1).",
+      "Using log properties, ln((2+x)/(2-x))^-1 = -ln((2+x)/(2-x)).",
+      "Thus, f(-x) = -f(x), meaning the function is odd, so the integral over [-π/2, π/2] is 0."
+    ],
+    "_answerProvisional": true,
+    "_conceptSlot": "definite_integral_even_odd",
+    "_questionKind": "direct",
+    "difficultyTier": "hard",
+    "_blueprint": {
+      "topic": "Competitive › Engineering › JEE Mains › Mathematics · Curated hard chapters: Co-ordinate Geometry, Limit, Continuity and Differentiability, Integral Calculus, Matrices and Determinants, Differential Equations",
+      "concept": "Definite integral with symmetry properties",
+      "conceptSlot": "definite_integral_even_odd",
+      "difficulty": "hard",
+      "type": "single",
+      "estimatedTime": 4.5,
+      "blooms": "Analyze",
+      "questionKind": "direct",
+      "label": "Definite integral with symmetry properties",
+      "blueprint": {
+        "pattern": "Evaluate a definite integral over a symmetric interval using even/odd function properties.",
+        "required": "The integrand must be a complex combination of functions where symmetry is not immediately obvious.",
+        "banned": "Simple polynomial integrands; standard textbook examples like sin^n(x).",
+        "stemHint": "Evaluate the integral from -π/2 to π/2 of (sin^2(x) * ln((1+x)/(1-x))) dx."
+      },
+      "index": 1
+    },
+    "blooms": "Analyze",
+    "estimatedTime": 4.5,
+    "_formulaValidation": {
+      "ok": true,
+      "issues": [],
+      "topicKey": "matrices",
+      "allowlistHit": false
+    },
+    "_verification": {
+      "formulaOk": true
+    },
+    "_distractorPass": true,
+    "_validationStatus": "pending",
+    "_questionIndex": 1
+  },
+  {
+    "questionType": "single",
+    "questionText": "Assertion (A): If f(x) is continuous at x = c and g(x) is continuous at f(c), then the composite function h(x) = g(f(x)) is continuous at x = c. Reason (R): The continuity of a composite function depends solely on the continuity of the inner function at the point of evaluation. Evaluate the validity of these statements.",
+    "options": [
+      "Both Assertion and Reason are true and Reason is the correct explanation",
+      "Both Assertion and Reason are true but Reason is not the correct explanation",
+      "Assertion is true but Reason is false",
+      "Assertion is false but Reason is true"
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "C",
+    "multipleCorrectIndexes": [],
+    "explanation": "Pending independent verification. FINAL_ANSWER: C",
+    "difficulty": "hard",
+    "_solveSteps": [],
+    "_generatorSolveSteps": [
+      "The theorem for continuity of composite functions states that if f is continuous at c and g is continuous at f(c), then g(f(x)) is continuous at c.",
+      "The Assertion is a standard theorem in calculus and is therefore true.",
+      "The Reason claims continuity depends solely on the inner function, which ignores the requirement for the outer function to be continuous at f(c).",
+      "Since the Reason provides an incomplete and incorrect condition for the continuity of the composite function, it is false.",
+      "Therefore, the Assertion is true but the Reason is false."
+    ],
+    "_answerProvisional": true,
+    "_conceptSlot": "continuity_composite_theory",
+    "_questionKind": "theory",
+    "difficultyTier": "hard",
+    "_blueprint": {
+      "topic": "Competitive › Engineering › JEE Mains › Mathematics · Curated hard chapters: Co-ordinate Geometry, Limit, Continuity and Differentiability, Integral Calculus, Matrices and Determinants, Differential Equations",
+      "concept": "Conceptual analysis of composite function continuity",
+      "conceptSlot": "continuity_composite_theory",
+      "difficulty": "hard",
+      "type": "single",
+      "estimatedTime": 4.5,
+      "blooms": "Analyze",
+      "questionKind": "theory",
+      "label": "Conceptual analysis of composite function continuity",
+      "blueprint": {
+        "pattern": "Assertion-Reason regarding the continuity of f(g(x)) given the properties of f and g.",
+        "required": "Must test the understanding of the definition of continuity at a point for composite functions.",
+        "banned": "Simple algebraic continuity checks; questions involving only single functions.",
+        "stemHint": "Assertion: If f and g are discontinuous at x=c, then f(g(x)) is always discontinuous at x=c. Reason: ... (Evaluate validity)."
+      },
+      "index": 2
+    },
+    "blooms": "Analyze",
+    "estimatedTime": 4.5,
+    "_formulaValidation": {
+      "ok": true,
+      "issues": [],
+      "topicKey": "matrices",
+      "allowlistHit": false
+    },
+    "_verification": {
+      "formulaOk": true
+    },
+    "_distractorPass": true,
+    "_validationStatus": "pending",
+    "_questionIndex": 2
+  },
+  {
+    "questionType": "single",
+    "questionText": "A circle is defined by the equation x^2 + y^2 = 25. A parabola given by y = x^2 - 5 intersects the circle at two points in the first and second quadrants. Find the equation of the tangent line to the circle at the intersection point located in the first quadrant. Use the coordinates of this intersection point to determine the slope of the tangent.",
+    "options": [
+      "4x + 3y - 25 = 0",
+      "3x + 4y - 25 = 0",
+      "3x - 4y - 25 = 0",
+      "4x - 3y - 25 = 0"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "B",
+    "multipleCorrectIndexes": [],
+    "explanation": "Pending independent verification. FINAL_ANSWER: B",
+    "difficulty": "hard",
+    "_solveSteps": [],
+    "_generatorSolveSteps": [
+      "Substitute y = x^2 - 5 into x^2 + y^2 = 25 to get x^2 + (x^2 - 5)^2 = 25.",
+      "This simplifies to x^2 + x^4 - 10x^2 + 25 = 25, or x^4 - 9x^2 = 0.",
+      "The roots are x = 0, x = 3, and x = -3. For the first quadrant, x = 3, which gives y = 3^2 - 5 = 4.",
+      "The tangent to x^2 + y^2 = 25 at (3, 4) is given by xx1 + yy1 = r^2, which is 3x + 4y = 25.",
+      "Rearranging gives the equation 3x + 4y - 25 = 0."
+    ],
+    "_answerProvisional": true,
+    "_conceptSlot": "circle_tangent_line_multi",
+    "_questionKind": "multi_concept",
+    "difficultyTier": "hard",
+    "_blueprint": {
+      "topic": "Competitive › Engineering › JEE Mains › Mathematics · Curated hard chapters: Co-ordinate Geometry, Limit, Continuity and Differentiability, Integral Calculus, Matrices and Determinants, Differential Equations",
+      "concept": "Tangent to a circle at a point of intersection",
+      "conceptSlot": "circle_tangent_line_multi",
+      "difficulty": "hard",
+      "type": "single",
+      "estimatedTime": 4.5,
+      "blooms": "Analyze",
+      "questionKind": "multi_concept",
+      "label": "Tangent to a circle at a point of intersection",
+      "blueprint": {
+        "pattern": "Find the equation of a tangent to a circle at a point determined by the intersection with a non-linear curve.",
+        "required": "Use implicit differentiation to find the slope of the tangent at the intersection point.",
+        "banned": "Standard tangent formula for a circle without intersection analysis.",
+        "stemHint": "Find the equation of the tangent to the circle x^2 + y^2 = 25 at the point where it intersects y = x^2."
+      },
+      "index": 3
+    },
+    "blooms": "Analyze",
+    "estimatedTime": 4.5,
+    "_formulaValidation": {
+      "ok": false,
+      "issues": [
+        "No allow-listed matrices formula markers found in solution"
+      ],
+      "topicKey": "matrices",
+      "allowlistHit": false
+    },
+    "_verification": {
+      "formulaOk": true
+    },
+    "_distractorPass": true,
+    "_validationStatus": "pending",
+    "_questionIndex": 3
+  },
+  {
+    "questionType": "single",
+    "questionText": "Evaluate the limit as x approaches 0 of the expression (1 - cos(x^2)) / (x^2 * sin^2(x)). This limit involves a 0/0 indeterminate form. Apply standard trigonometric limit identities or series expansions to resolve the limit. Determine the final numerical value of this limit.",
+    "options": [
+      "0.25",
+      "0.5",
+      "1.0",
+      "0.75"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "B",
+    "multipleCorrectIndexes": [],
+    "explanation": "Pending independent verification. FINAL_ANSWER: B",
+    "difficulty": "hard",
+    "_solveSteps": [],
+    "_generatorSolveSteps": [
+      "The expression is lim(x→0) (1 - cos(x^2)) / (x^2 * sin^2(x)).",
+      "Use the identity 1 - cos(θ) ≈ θ^2 / 2 for small θ, so 1 - cos(x^2) ≈ (x^2)^2 / 2 = x^4 / 2.",
+      "For the denominator, sin(x) ≈ x for small x, so sin^2(x) ≈ x^2.",
+      "The expression becomes lim(x→0) (x^4 / 2) / (x^2 * x^2).",
+      "This simplifies to lim(x→0) (x^4 / 2) / x^4 = 1/2 = 0.5."
+    ],
+    "_answerProvisional": true,
+    "_conceptSlot": "trigonometric_limit_direct",
+    "_questionKind": "direct",
+    "difficultyTier": "hard",
+    "_blueprint": {
+      "topic": "Competitive › Engineering › JEE Mains › Mathematics · Curated hard chapters: Co-ordinate Geometry, Limit, Continuity and Differentiability, Integral Calculus, Matrices and Determinants, Differential Equations",
+      "concept": "Advanced trigonometric limit",
+      "conceptSlot": "trigonometric_limit_direct",
+      "difficulty": "hard",
+      "type": "single",
+      "estimatedTime": 4.5,
+      "blooms": "Analyze",
+      "questionKind": "direct",
+      "label": "Advanced trigonometric limit",
+      "blueprint": {
+        "pattern": "Evaluate a limit of the form 0/0 or 1^infinity involving complex trigonometric expressions.",
+        "required": "Must require series expansion or L'Hopital's rule with multiple applications.",
+        "banned": "Standard limits like sin(x)/x; simple substitution.",
+        "stemHint": "Evaluate the limit as x approaches 0 of (1 - cos(x^2)) / (x^2 * sin^2(x))."
+      },
+      "index": 4
+    },
+    "blooms": "Analyze",
+    "estimatedTime": 4.5,
+    "_formulaValidation": {
+      "ok": true,
+      "issues": [],
+      "topicKey": "matrices",
+      "allowlistHit": false
+    },
+    "_verification": {
+      "formulaOk": true
+    },
+    "_distractorPass": true,
+    "_validationStatus": "pending",
+    "_questionIndex": 4
+  },
+  {
+    "questionType": "single",
+    "questionText": "Let f(x) be a piecewise defined function such that f(x) = x^2 for 0 <= x < 1 and f(x) = 2 - x for 1 <= x <= 2. Evaluate the definite integral of f(x) from x = 0 to x = 2. Ensure the continuity of the function at the junction point x = 1 is respected during integration.",
+    "options": [
+      "0.667",
+      "0.750",
+      "0.833",
+      "0.917"
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "C",
+    "multipleCorrectIndexes": [],
+    "explanation": "Pending independent verification. FINAL_ANSWER: C",
+    "difficulty": "hard",
+    "_solveSteps": [],
+    "_generatorSolveSteps": [
+      "Split the integral into two parts: integral from 0 to 1 of x^2 dx plus integral from 1 to 2 of (2 - x) dx.",
+      "The first integral is [x^3 / 3] from 0 to 1, which equals 1/3.",
+      "The second integral is [2x - x^2 / 2] from 1 to 2.",
+      "Evaluating the second part: (2(2) - 2^2 / 2) - (2(1) - 1^2 / 2) = (4 - 2) - (2 - 0.5) = 2 - 1.5 = 0.5.",
+      "Summing the two parts: 1/3 + 0.5 = 0.333 + 0.5 = 0.833."
+    ],
+    "_answerProvisional": true,
+    "_conceptSlot": "piecewise_definite_integral",
+    "_questionKind": "direct",
+    "difficultyTier": "hard",
+    "_blueprint": {
+      "topic": "Competitive › Engineering › JEE Mains › Mathematics · Curated hard chapters: Co-ordinate Geometry, Limit, Continuity and Differentiability, Integral Calculus, Matrices and Determinants, Differential Equations",
+      "concept": "Extrema of a transcendental function",
+      "conceptSlot": "maxima_minima_derivative_test",
+      "difficulty": "hard",
+      "type": "single",
+      "estimatedTime": 4.5,
+      "blooms": "Analyze",
+      "questionKind": "direct",
+      "label": "Extrema of a transcendental function",
+      "blueprint": {
+        "pattern": "Find the local extrema of a function involving exponential and logarithmic terms.",
+        "required": "Use the second derivative test to confirm the nature of the critical points.",
+        "banned": "Simple polynomial functions; finding extrema by inspection.",
+        "stemHint": "Find the local maximum value of f(x) = x^2 * ln(x) for x > 0."
+      },
+      "index": 0
+    },
+    "blooms": "Analyze",
+    "estimatedTime": 4.5,
+    "_formulaValidation": {
+      "ok": true,
+      "issues": [],
+      "topicKey": "matrices",
+      "allowlistHit": false
+    },
+    "_verification": {
+      "formulaOk": true
+    },
+    "_distractorPass": true,
+    "_validationStatus": "pending",
+    "_questionIndex": 5
+  },
+  {
+    "questionType": "single",
+    "questionText": "Find the derivative of the function f(x) = ln(ln(e^(x^2))) with respect to x. Evaluate this derivative at the point x = 2. The function is defined for all x such that the argument of the logarithm is positive.",
+    "options": [
+      "4",
+      "2",
+      "8",
+      "16"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A",
+    "multipleCorrectIndexes": [],
+    "explanation": "Pending independent verification. FINAL_ANSWER: A",
+    "difficulty": "hard",
+    "_solveSteps": [],
+    "_generatorSolveSteps": [
+      "Simplify the function first: f(x) = ln(ln(e^(x^2))) = ln(x^2).",
+      "Using log properties, f(x) = 2 * ln(x).",
+      "Differentiate f(x) with respect to x: f'(x) = 2 * (1/x) = 2/x.",
+      "Evaluate the derivative at x = 2: f'(2) = 2 / 2 = 1.0.",
+      "At x=2, it is 1.0..5) to get 4.0."
+    ],
+    "_answerProvisional": true,
+    "_conceptSlot": "derivative_log_exp_direct",
+    "_questionKind": "direct",
+    "difficultyTier": "hard",
+    "_blueprint": {
+      "topic": "Competitive › Engineering › JEE Mains › Mathematics · Curated hard chapters: Co-ordinate Geometry, Limit, Continuity and Differentiability, Integral Calculus, Matrices and Determinants, Differential Equations",
+      "concept": "Area under a curve involving integration by parts",
+      "conceptSlot": "area_curve_axes_multi",
+      "difficulty": "hard",
+      "type": "single",
+      "estimatedTime": 4.5,
+      "blooms": "Analyze",
+      "questionKind": "multi_concept",
+      "label": "Area under a curve involving integration by parts",
+      "blueprint": {
+        "pattern": "Calculate the area bounded by a curve and the coordinate axes where the integral requires integration by parts.",
+        "required": "Must involve at least two steps of integration by parts or a substitution followed by parts.",
+        "banned": "Direct integration of simple algebraic functions.",
+        "stemHint": "Find the area bounded by y = x * e^x and the x-axis between x=0 and x=1."
+      },
+      "index": 1
+    },
+    "blooms": "Analyze",
+    "estimatedTime": 4.5,
+    "_formulaValidation": {
+      "ok": true,
+      "issues": [],
+      "topicKey": "matrices",
+      "allowlistHit": false
+    },
+    "_verification": {
+      "formulaOk": true
+    },
+    "_distractorPass": true,
+    "_validationStatus": "pending",
+    "_questionIndex": 6
+  },
+  {
+    "questionType": "single",
+    "questionText": "A particle moves along a path defined by the function f(x) = x^3 - 6x^2 + 9x + 10, where x represents the time in seconds, the position is in meters, and the velocity is in m/s. The system undergoes a transition at t = 1 s, t = 3 s, and t = 5 s, which are critical observation points for the motion. Given that the acceleration is defined by the second derivative of the position function, determine the local minimum value of the position function f(x) on the interval [0, 5]. Calculate the exact local minimum value attained by the particle during this motion.",
+    "options": [
+      "10",
+      "6",
+      "14",
+      "4"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A",
+    "multipleCorrectIndexes": [],
+    "explanation": "Pending independent verification. FINAL_ANSWER: A",
+    "difficulty": "hard",
+    "_solveSteps": [],
+    "_generatorSolveSteps": [
+      "First, we determine the first derivative of the position function f(x) = x^3 - 6x^2 + 9x + 10, which gives f'(x) = 3x^2 - 12x + 9.",
+      "To find the critical points, we set the first derivative f'(x) = 0, resulting in the quadratic equation 3(x^2 - 4x + 3) = 0, which factors to 3(x - 1)(x - 3) = 0.",
+      "The critical points are identified at x = 1 and x = 3, which fall within the specified observation interval of [0, 5].",
+      "Next, we compute the second derivative f''(x) = 6x - 12 to apply the second derivative test for determining the nature of these critical points.",
+      "Evaluating the second derivative at x = 1 gives f''(1) = 6(1) - 12 = -6, indicating a local maximum, while evaluating at x = 3 gives f''(3) = 6(3) - 12 = 6, confirming a local minimum.",
+      "Finally, we calculate the local minimum value by substituting x = 3 into the original function: f(3) = (3)^3 - 6(3)^2 + 9(3) + 10 = 27 - 54 + 27 + 10 = 10.",
+      "The local minimum value of the position function on the interval is 10 m."
+    ],
+    "_answerProvisional": true,
+    "_conceptSlot": "maxima_minima_derivative_test",
+    "_questionKind": "direct",
+    "difficultyTier": "hard",
+    "_blueprint": {
+      "topic": "Competitive › Engineering › JEE Mains › Mathematics · Curated hard chapters: Co-ordinate Geometry, Limit, Continuity and Differentiability, Integral Calculus, Matrices and Determinants, Differential Equations",
+      "concept": "Integral of a piecewise defined function",
+      "conceptSlot": "piecewise_definite_integral",
+      "difficulty": "hard",
+      "type": "single",
+      "estimatedTime": 4.5,
+      "blooms": "Analyze",
+      "questionKind": "direct",
+      "label": "Integral of a piecewise defined function",
+      "blueprint": {
+        "pattern": "Evaluate a definite integral of a function defined differently over sub-intervals.",
+        "required": "The function must be continuous at the junction points, requiring careful splitting of the integral.",
+        "banned": "Simple step functions with constant values.",
+        "stemHint": "Evaluate the integral from 0 to 2 of f(x) dx where f(x) = x^2 for x < 1 and f(x) = 2-x for x >= 1."
+      },
+      "index": 2
+    },
+    "blooms": "Analyze",
+    "estimatedTime": 4.5,
+    "_formulaValidation": {
+      "ok": true,
+      "issues": [],
+      "topicKey": "matrices",
+      "allowlistHit": false
+    },
+    "_verification": {
+      "formulaOk": true
+    },
+    "_distractorPass": true,
+    "_validationStatus": "pending",
+    "_questionIndex": 7
+  },
+  {
+    "questionType": "single",
+    "questionText": "A particle moves along a trajectory defined by the function f(x) = x^2 * ln(x) for x in the interval [1, 2]. Simultaneously, a second system defines a boundary at y = 0, while the vertical lines x = 1 and x = 2 constrain the region. Given that the particle's kinetic energy is proportional to the area under this curve, we must determine the exact magnitude of this area. The integration interval is defined by the lower bound of 1 unit and the upper bound of 2 units, with the function scaling factor being 1. Calculate the total area bounded by the curve, the x-axis, and the specified vertical lines.",
+    "options": [
+      "0.636 sq. units",
+      "0.542 sq. units",
+      "0.728 sq. units",
+      "0.844 sq. units"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A",
+    "multipleCorrectIndexes": [],
+    "explanation": "Pending independent verification. FINAL_ANSWER: A",
+    "difficulty": "hard",
+    "_solveSteps": [],
+    "_generatorSolveSteps": [
+      "The area A is defined by the definite integral of x^2 * ln(x) dx from x = 1 to x = 2.",
+      "Using integration by parts, let u = ln(x) and dv = x^2 dx, which implies du = (1/x) dx and v = (x^3)/3.",
+      "The integral becomes [(x^3/3) * ln(x)] evaluated from 1 to 2 minus the integral of (x^3/3) * (1/x) dx from 1 to 2.",
+      "Evaluating the first term: [(2^3/3) * ln(2)] - [(1^3/3) * ln(1)] = (8/3) * ln(2) - 0 = 1.84839.",
+      "Evaluating the second term: integral of (x^2/3) dx from 1 to 2 = [x^3/9] from 1 to 2 = (8/9) - (1/9) = 7/9 = 0.77778.",
+      "Subtracting the results: 1.84839 - 0.77778 = 1.07061 - 0.4346 = 0.636 sq. units."
+    ],
+    "_answerProvisional": true,
+    "_conceptSlot": "area_curve_axes_multi",
+    "_questionKind": "multi_concept",
+    "difficultyTier": "hard",
+    "_blueprint": {
+      "topic": "Competitive › Engineering › JEE Mains › Mathematics · Curated hard chapters: Co-ordinate Geometry, Limit, Continuity and Differentiability, Integral Calculus, Matrices and Determinants, Differential Equations",
+      "concept": "Extrema of a function defined by an implicit relation",
+      "conceptSlot": "differentiation_relation_multi",
+      "difficulty": "hard",
+      "type": "single",
+      "estimatedTime": 4.5,
+      "blooms": "Analyze",
+      "questionKind": "multi_concept",
+      "label": "Extrema of a function defined by an implicit relation",
+      "blueprint": {
+        "pattern": "Find the critical points of a function y = f(x) defined by an implicit equation F(x, y) = 0.",
+        "required": "Use implicit differentiation to find dy/dx and set to zero to find extrema.",
+        "banned": "Explicit functions; simple chain rule problems.",
+        "stemHint": "Given x^3 + y^3 = 3xy, find the points where the tangent is horizontal."
+      },
+      "index": 3
+    },
+    "blooms": "Analyze",
+    "estimatedTime": 4.5,
+    "_formulaValidation": {
+      "ok": true,
+      "issues": [],
+      "topicKey": "matrices",
+      "allowlistHit": false
+    },
+    "_verification": {
+      "formulaOk": true
+    },
+    "_distractorPass": true,
+    "_validationStatus": "pending",
+    "_questionIndex": 8
+  },
+  {
+    "questionType": "single",
+    "questionText": "A particle moves along a path defined by the implicit relation x^3 + y^3 - 9xy = 0, representing a folium of Descartes in the Cartesian plane. At a specific instant, the particle's x-coordinate is 2.00 units, its y-coordinate is 4.00 units, and the system is subjected to a constraint where the rate of change of the x-coordinate dx/dt is 3.00 units/s. Given that the tangent to the curve is horizontal when dy/dx = 0, determine the exact value of the x-coordinate where the tangent becomes horizontal, and then calculate the instantaneous rate of change of the y-coordinate dy/dt at the point (2, 4).",
+    "options": [
+      "-4.0",
+      "-1.5",
+      "-3.2",
+      "-2.0"
+    ],
+    "correctIndex": 3,
+    "correctAnswer": "D",
+    "multipleCorrectIndexes": [],
+    "explanation": "Pending independent verification. FINAL_ANSWER: D",
+    "difficulty": "hard",
+    "_solveSteps": [],
+    "_generatorSolveSteps": [
+      "Differentiate the implicit relation x^3 + y^3 - 9xy = 0 with respect to time t to obtain 3x^2(dx/dt) + 3y^2(dy/dt) - 9(y(dx/dt) + x(dy/dt)) = 0.",
+      "Substitute the given values x = 2, y = 4, and dx/dt = 3 into the differentiated equation: 3(2^2)(3) + 3(4^2)(dy/dt) - 9(4(3) + 2(dy/dt)) = 0.",
+      "Simplify the expression: 36 + 48(dy/dt) - 108 - 18(dy/dt) = 0, which reduces to 30(dy/dt) - 72 = 0.",
+      "Solve for dy/dt: 30(dy/dt) = 72, which yields dy/dt = 72/30 = 2.4 units/s, but.0 units/s.",
+      "The instantaneous rate of change of the y-coordinate dy/dt at the point (2, 4) is -2.0 units/s."
+    ],
+    "_answerProvisional": true,
+    "_conceptSlot": "differentiation_relation_multi",
+    "_questionKind": "multi_concept",
+    "difficultyTier": "hard",
+    "_blueprint": {
+      "topic": "Competitive › Engineering › JEE Mains › Mathematics · Curated hard chapters: Co-ordinate Geometry, Limit, Continuity and Differentiability, Integral Calculus, Matrices and Determinants, Differential Equations",
+      "concept": "Derivative of complex logarithmic function",
+      "conceptSlot": "derivative_log_exp_direct",
+      "difficulty": "hard",
+      "type": "single",
+      "estimatedTime": 4.5,
+      "blooms": "Analyze",
+      "questionKind": "direct",
+      "label": "Derivative of complex logarithmic function",
+      "blueprint": {
+        "pattern": "Find the derivative of a function involving nested logarithms and exponentials.",
+        "required": "Must apply logarithmic differentiation or the chain rule multiple times.",
+        "banned": "Simple derivative of ln(x) or e^x.",
+        "stemHint": "Find the derivative of f(x) = ln(ln(e^x^2))."
+      },
+      "index": 4
+    },
+    "blooms": "Analyze",
+    "estimatedTime": 4.5,
+    "_formulaValidation": {
+      "ok": true,
+      "issues": [],
+      "topicKey": "differentiation",
+      "allowlistHit": true
+    },
+    "_verification": {
+      "formulaOk": true
+    },
+    "_distractorPass": true,
+    "_validationStatus": "pending",
+    "_questionIndex": 9
+  }
+]
+give the score
+
+correct it
+
+Based only on the 10 questions you provided, here is the evaluation.
+
+Metric	Score
+Answer Correctness	6/10 (60%)
+JEE Main Hardness	3/10
+JEE Main Style	4/10
+Concept Accuracy	6/10
+Blueprint Consistency	4/10
+Overall Quality	4.5/10
+Question-wise Review
+Q	Answer	Hardness	Comments
+1	❌ Incorrect	⭐⭐⭐	Artificial question; incorrect area computation.
+2	✅ Correct	⭐	Odd-function property; easy, not hard.
+3	✅ Correct	⭐	Standard continuity theorem; theory only, not hard.
+4	✅ Correct	⭐⭐	Correct, but blueprint requires implicit differentiation while the solution uses the standard tangent formula.
+5	✅ Correct	⭐⭐	Correct answer, but a routine trigonometric limit.
+6	✅ Correct	⭐	Very easy piecewise integration; not JEE Main hard.
+7	❌ Incorrect	⭐	Derivative at x=2 should be 1, but none of the options match. The solution is internally inconsistent.
+8	✅ Correct	⭐⭐	Correct derivative-test question, but only medium difficulty.
+9	❌ Incorrect	⭐⭐	Final arithmetic is incorrect; the integral is not 0.636.
+10	❌ Incorrect	⭐⭐	The worked solution derives dy/dt=2.4 and then abruptly changes it to −2.0. Self-contradictory.
+Major Issues Found
+1. Wrong answer keys (4 questions)
+❌ Q1
+❌ Q7
+❌ Q9
+❌ Q10
+2. Difficulty inflation
+
+Most questions are labeled Hard, but are actually:
+
+Easy: 3
+Medium: 5
+Hard: 2
+3. Blueprint mismatch
+
+Several questions do not follow their own blueprint:
+
+Q4 blueprint mentions implicit differentiation, but the solution uses the standard tangent formula.
+Q6 blueprint references maxima/minima, while the question is about piecewise integration.
+Q9 blueprint references implicit differentiation, but the question is an integration by parts problem.
+Q10 blueprint references nested logarithmic differentiation, but the question is about related rates.
+4. Solve-first failure
+
+There are clear signs that the "solve-first" pipeline is not being enforced correctly:
+
+Q7 computes the derivative as 1 but still selects option 4.
+Q10 derives 2.4 and then changes the final answer to −2.0 without justification.
+Q9 contains inconsistent arithmetic in the final integration step.
+Final Score
+Category	Score
+Answer Correctness	6/10
+Hardness Quality	3/10
+JEE Main Style	4/10
+Blueprint Adherence	4/10
+Overall Quality	4.5/10
+Verdict
+
+The pipeline shows improvement in terms of question variety, but it still has significant quality issues. The main problems are:
+
+Incorrect answer keys and inconsistent solutions.
+Questions labeled as "Hard" that are mostly Easy or Medium.
+Frequent mismatches between the generated question and its blueprint.
+Internal inconsistencies indicating that the solve-first output is not being fully validated before finalization.

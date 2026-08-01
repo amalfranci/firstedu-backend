@@ -11,6 +11,11 @@ import {
     buildDifficultyAuditRubricsBlock,
     normalizeQuestionTier,
 } from "./difficultyMix.service.js";
+import {
+    buildWeightedDifficultyRubricBlock,
+    computeWeightedDifficultyScore,
+    isWeightedDifficultyScoreEnabled,
+} from "./weightedDifficultyScore.service.js";
 
 // Veteran gate aligned to the audit rubric's own "clearly meets tier" line (80,
 // see buildDifficultySelfAuditPrompt). A higher bar (was 85) rejected questions
@@ -54,12 +59,20 @@ export const isDifficultySelfAuditEnabled = () => {
  */
 export const shouldSkipLlmDifficultySelfAudit = (difficultyResolution) => {
     const flag = process.env.AI_QB_DIFFICULTY_SELF_AUDIT;
-    if (flag === "1" || flag === "true") return false;
+    // Explicit off only.
     if (flag === "0" || flag === "false") return true;
+    // Exam-calibrated / JEE hard MUST run the independent difficulty judge —
+    // skipping it was the main reason Easy drills shipped as "Hard".
+    if (
+        difficultyResolution?.examCalibrated ||
+        isExamNativeVeteranGeneration(difficultyResolution)
+    ) {
+        return false;
+    }
+    if (flag === "1" || flag === "true") return false;
     const judgeFlag = process.env.AI_QB_DIFFICULTY_JUDGE;
-    // Default: do NOT skip (independent difficulty judge always runs).
     if (judgeFlag === "0" || judgeFlag === "false") {
-        return isExamNativeVeteranGeneration(difficultyResolution);
+        return true;
     }
     return false;
 };
@@ -89,14 +102,34 @@ const formatQuestionForAudit = (q, index) => {
     if (q._conceptSlot || q.conceptSlot) {
         lines.push(`Archetype: ${q._conceptSlot || q.conceptSlot}`);
     }
+    if (isWeightedDifficultyScoreEnabled()) {
+        const w =
+            q._weightedDifficulty ||
+            computeWeightedDifficultyScore(q, {
+                assignedTier: q.difficultyTier || q.difficulty,
+            });
+        q._weightedDifficulty = w;
+        lines.push(
+            `Deterministic weighted difficulty: **${w.total}/100** (floor ${w.floor} for ${w.tier}; est. ~${w.estimatedTimeMinutes} min)`
+        );
+        lines.push(
+            `  Factors: concept=${w.factors.conceptDifficulty}, #concepts=${w.factors.numberOfConcepts}, depth=${w.factors.reasoningDepth}, calc=${w.factors.calculationComplexity}, insight=${w.factors.trickinessInsight}, options=${w.factors.optionQuality}, time=${w.factors.estimatedTime}`
+        );
+    }
     const kind = String(q._questionKind || q.questionKind || "").toLowerCase();
+    const assignedHard =
+        String(q.difficultyTier || q.difficulty || "").toLowerCase() === "hard";
     if (kind === "theory") {
         lines.push(
-            "Question kind: **THEORY** (conceptual — score on concept depth and close distractors, NOT computation, numeric givens, or solve-step count)"
+            assignedHard
+                ? "Question kind: **THEORY HARD** — score on multi-statement traps, close distractors, and non-trivial reasoning. Single-fact recall must score ≤55."
+                : "Question kind: **THEORY** (conceptual — score on concept depth and close distractors, NOT computation, numeric givens, or solve-step count)"
         );
     } else if (kind === "direct") {
         lines.push(
-            "Question kind: **DIRECT** (single-formula numerical by design — a clean 1–2 step solve is correct; do NOT penalize for lacking multi-step depth or concept fusion)"
+            assignedHard
+                ? "Question kind: **DIRECT but assigned HARD** — still require non-obvious application (≥3 conceptual steps or a hidden trick). Textbook 1-step plug-ins / standard identity limits / chain-rule-at-a-point MUST score ≤50."
+                : "Question kind: **DIRECT** (single-formula numerical by design — a clean 1–2 step solve is correct; do NOT penalize for lacking multi-step depth or concept fusion)"
         );
     }
     return lines.join("\n");
@@ -126,21 +159,27 @@ export const buildDifficultySelfAuditPrompt = ({
             tiersInBatch.every((t) => t === "hard"),
     });
 
+    const weightedRubric = isWeightedDifficultyScoreEnabled()
+        ? buildWeightedDifficultyRubricBlock()
+        : "";
+
     return `You are a ${examLabel} difficulty auditor. Score each question against its **assigned difficultyTier** using the **same tier criteria used during generation**.
 
 **Topic:** ${topic || bankName}
 **Bank difficulty profile:** ${difficulty} (overall paper weighting — each question is scored against its own assigned tier)
 
 ${rubricsBlock}
+${weightedRubric}
 
 **How to score each question:**
 1. Read the **Assigned difficultyTier** line for that question
 2. Apply the matching **tier scoring** rubric above (not a generic "hard" feel)
 3. Use the provided **Solve steps** / explanation as the true step-count signal (not stem length alone)
-4. **80+** = clearly meets that tier's Target + REQUIRED bars
-5. **65–79** = borderline for that tier
-6. **Below 65** = too easy for the assigned tier (see "too easy" note for that tier)
-7. **Below 50** = BANNED pattern for that tier
+4. When a **Deterministic weighted difficulty** line is present, treat low factor scores (concept, #concepts, depth, calc, insight, options, time) as evidence the item is below tier — do not inflate scores for long but single-formula stems
+5. **80+** = clearly meets that tier's Target + REQUIRED bars
+6. **65–79** = borderline for that tier
+7. **Below 65** = too easy for the assigned tier (see "too easy" note for that tier)
+8. **Below 50** = BANNED pattern for that tier
 
 Penalize: meta draft text ("adjusting", "re-evaluating"), formula-only stems when tier requires fusion, duplicate template logic.
 

@@ -1,0 +1,909 @@
+{
+  "title": "Syllabus for JEE (Main) - 2026",
+  "papers": [
+    {
+      "paper": "Paper 1 (B.E./B.Tech.)",
+      "subjects": [
+        {
+          "subject": "MATHEMATICS",
+          "units": [
+            {
+              "unit": "UNIT 1",
+              "title": "SETS, RELATIONS AND FUNCTIONS",
+              "content": "Sets and their representation; Union, intersection and complement of sets and their algebraic properties; Power set; Relations, type of relations, equivalence relations, functions; one-one, into and onto functions, the composition of functions."
+            },
+            {
+              "unit": "UNIT 2",
+              "title": "COMPLEX NUMBERS AND QUADRATIC EQUATIONS",
+              "content": "Complex numbers as ordered pairs of reals, representation of complex numbers in the form a+ib and their representation in a plane, Argand diagram, algebra of complex numbers, modulus and argument (or amplitude) of a complex number, quadratic equations in real and complex number systems and their solutions; relations between roots and coefficients, nature of roots, the formation of quadratic equations with given roots."
+            },
+            {
+              "unit": "UNIT 3",
+              "title": "MATRICES AND DETERMINANTS",
+              "content": "Matrices, algebra of matrices, type of matrices, determinants and matrices of order two and three, evaluation of determinants, area of triangles using determinants; adjoint and inverse of a square matrix; test of consistency and solution of simultaneous linear equations in two or three variables using matrices."
+            },
+            {
+              "unit": "UNIT 4",
+              "title": "PERMUTATIONS AND COMBINATIONS",
+              "content": "The fundamental principle of counting, permutations and combinations; meaning of P(n,r) and C(n,r). Simple applications."
+            },
+            {
+              "unit": "UNIT 5",
+              "title": "BINOMIAL THEOREM AND ITS SIMPLE APPLICATIONS",
+              "content": "Binomial theorem for a positive integral index, general term and middle term and simple applications."
+            },
+            {
+              "unit": "UNIT 6",
+              "title": "SEQUENCE AND SERIES",
+              "content": "Arithmetic and Geometric progressions, insertion of arithmetic, geometric means between two given numbers, relation between A.M and G.M."
+            },
+            {
+              "unit": "UNIT 7",
+              "title": "LIMIT, CONTINUITY AND DIFFERENTIABILITY",
+              "content": "Real-valued functions, algebra of functions; polynomial, rational, trigonometric, logarithmic and exponential functions; inverse functions. Graphs of simple functions. Limits, continuity and differentiability. Differentiation of the sum, difference, product and quotient of two functions. Differentiation of trigonometric, inverse trigonometric, logarithmic, exponential, composite and implicit functions; derivatives of order upto two. Applications of derivatives: rate of change of quantities, monotonic-increasing and decreasing functions, maxima and minima of functions of one variable."
+            },
+            {
+              "unit": "UNIT 8",
+              "title": "INTEGRAL CALCULUS",
+              "content": "Integral as an anti-derivative. Fundamental integrals involving algebraic, trigonometric, exponential and logarithmic functions. Integration by substitution, by parts and by partial fractions. Integration using trigonometric identities. Evaluation of simple integrals of the type: dx/(x^2+a^2), dx/sqrt(x^2 +- a^2), dx/(a^2-x^2), dx/sqrt(a^2-x^2), dx/(ax^2+bx+c), dx/sqrt(ax^2+bx+c), (px+q)dx/(ax^2+bx+c), (px+q)dx/sqrt(ax^2+bx+c), sqrt(a^2 +- x^2)dx, sqrt(x^2-a^2)dx. The fundamental theorem of calculus, properties of definite integrals. Evaluation of definite integrals, determining areas of the regions bounded by simple curves in standard forms."
+            },
+            {
+              "unit": "UNIT 9",
+              "title": "DIFFERENTIAL EQUATIONS",
+              "content": "Ordinary differential equations, their order and degree, the solution of differential equations by the method of separation of variables, solution of a homogeneous and linear differential equation of the type dy/dx + p(x)y = q(x)."
+            },
+            {
+              "unit": "UNIT 10",
+              "title": "CO-ORDINATE GEOMETRY",
+              "content": "Cartesian system of rectangular coordinates in a plane, distance formula, section formula, locus and its equation, the slope of a line, parallel and perpendicular lines, intercepts of a line on the co-ordinate axis. Straight line: various forms of equations of a line, intersection of lines, angles between two lines, conditions for concurrence of three lines, the distance of a point from a line, co-ordinates of the centroid, orthocentre and circumcentre of a triangle. Circle, conic sections: standard form of equations of a circle, the general form of the equation of a circle, its radius and centre, equation of a circle when the endpoints of a diameter are given, points of intersection of a line and a circle with the centre at the origin and sections of conics, equations of conic sections (parabola, ellipse and hyperbola) in standard forms."
+            },
+            {
+              "unit": "UNIT 11",
+              "title": "THREE DIMENSIONAL GEOMETRY",
+              "content": "Coordinates of a point in space, the distance between two points, section formula, direction ratios and direction cosines and the angle between two intersecting lines. Equation of a line; skew lines, the shortest distance between them and its equation."
+            },
+            {
+              "unit": "UNIT 12",
+              "title": "VECTOR ALGEBRA",
+              "content": "Vectors and scalars, the addition of vectors, components of a vector in two and three-dimensional spaces, scalar and vector products."
+            },
+            {
+              "unit": "UNIT 13",
+              "title": "STATISTICS AND PROBABILITY",
+              "content": "Measures of dispersion; calculation of mean, median, mode of grouped and ungrouped data, calculation of standard deviation, variance and mean deviation for grouped and ungrouped data. Probability: probability of an event, addition and multiplication theorems of probability, Baye's theorem, probability distribution of a random variable."
+            },
+            {
+              "unit": "UNIT 14",
+              "title": "TRIGONOMETRY",
+              "content": "Trigonometrical identities and trigonometrical functions, inverse trigonometrical functions and their properties."
+            }
+          ]
+        },
+        {
+          "subject": "PHYSICS",
+          "units": [
+            {
+              "unit": "UNIT 1",
+              "title": "Units and Measurements",
+              "content": "Units of measurements, System of units, SI Units, fundamental and derived units, least count, significant figures, Errors in measurements. Dimensions of Physics quantities, dimensional analysis and its applications."
+            },
+            {
+              "unit": "UNIT 2",
+              "title": "Kinematics",
+              "content": "The frame of reference, motion in a straight line, speed and velocity, uniform and non-uniform motion, average speed and instantaneous velocity, uniformly accelerated motion, velocity-time, position-time graph, relations for uniformly accelerated motion, relative velocity. Motion in a plane, projectile motion, uniform circular motion."
+            },
+            {
+              "unit": "UNIT 3",
+              "title": "Laws of Motion",
+              "content": "Force and inertia, Newton's first law of motion, momentum, Newton's second law of motion, impulse, Newton's third law of motion. Law of conservation of linear momentum and its applications, equilibrium of concurrent forces. Static and kinetic friction, laws of friction, rolling friction. Dynamics of uniform circular motion, centripetal force and its applications: vehicle on a level circular road, vehicle on a banked road."
+            },
+            {
+              "unit": "UNIT 4",
+              "title": "Work, Energy and Power",
+              "content": "Work done by a constant force and a variable force, kinetic and potential energies, work-energy theorem, power. The potential energy of a spring, conservation of mechanical energy, conservative and non-conservative forces, motion in a vertical circle. Elastic and inelastic collisions in one and two dimensions."
+            },
+            {
+              "unit": "UNIT 5",
+              "title": "Rotational Motion",
+              "content": "Centre of mass of a two-particle system, centre of mass of a rigid body. Basic concepts of rotational motion, moment of a force, torque, angular momentum, conservation of angular momentum and its applications. The moment of inertia, the radius of gyration, values of moments of inertia for simple geometrical objects, parallel and perpendicular axes theorems and their applications. Equilibrium of rigid bodies, rigid body rotation and equations of rotational motion, comparison of linear and rotational motions."
+            },
+            {
+              "unit": "UNIT 6",
+              "title": "Gravitation",
+              "content": "The universal law of gravitation. Acceleration due to gravity and its variation with altitude and depth. Kepler's law of planetary motion. Gravitational potential energy, gravitational potential. Escape velocity, motion of a satellite, orbital velocity, time period and energy of satellite."
+            },
+            {
+              "unit": "UNIT 7",
+              "title": "Properties of Solids and Liquids",
+              "content": "Elastic behaviour, stress-strain relationship, Hooke's Law, Young's modulus, bulk modulus and modulus of rigidity. Pressure due to a fluid column, Pascal's law and its applications, effect of gravity on fluid pressure, viscosity, Stoke's law, terminal velocity, streamline and turbulent flow, critical velocity, Bernoulli's principle and its applications. Surface energy and surface tension, angle of contact, excess of pressure across a curved surface, application of surface tension: drops, bubbles and capillary rise. Heat, temperature, thermal expansion, specific heat capacity, calorimetry, change of state, latent heat. Heat transfer: conduction, convection and radiation."
+            },
+            {
+              "unit": "UNIT 8",
+              "title": "Thermodynamics",
+              "content": "Thermal equilibrium and the concept of temperature, zeroth law of thermodynamics, heat, work and internal energy. The first law of thermodynamics, isothermal and adiabatic processes. The second law of thermodynamics: reversible and irreversible processes."
+            },
+            {
+              "unit": "UNIT 9",
+              "title": "Kinetic Theory of Gases",
+              "content": "Equation of state of a perfect gas, work done on compressing a gas, kinetic theory of gases: assumptions, the concept of pressure, kinetic interpretation of temperature, RMS speed of gas molecules, degrees of freedom, law of equipartition of energy and applications to specific heat capacities of gases, mean free path, Avogadro's number."
+            },
+            {
+              "unit": "UNIT 10",
+              "title": "Oscillations and Waves",
+              "content": "Oscillations and periodic motion: time period, frequency, displacement as a function of time, periodic functions. Simple harmonic motion (S.H.M.) and its equation, phase, oscillations of a spring: restoring force and force constant, energy in S.H.M.: kinetic and potential energies, simple pendulum: derivation of expression for its time period. Wave motion, longitudinal and transverse waves, speed of the travelling wave, displacement relation for a progressive wave, principle of superposition of waves, reflection of waves, standing waves in strings and organ pipes, fundamental mode and harmonics, beats."
+            },
+            {
+              "unit": "UNIT 11",
+              "title": "Electrostatics",
+              "content": "Electric charges: conservation of charge, Coulomb's law forces between two point charges, forces between multiple charges, superposition principle and continuous charge distribution. Electric field: electric field due to a point charge, electric field lines, electric dipole, electric field due to a dipole, torque on a dipole in a uniform electric field. Electric flux, Gauss's law and its applications to find field due to infinitely long uniformly charged straight wire, uniformly charged infinite plane sheet and uniformly charged thin spherical shell. Electric potential and its calculation for a point charge, electric dipole and system of charges, potential difference, equipotential surfaces, electrical potential energy of a system of two point charges and of electric dipole in an electrostatic field. Conductors and insulators, dielectrics and electric polarization, capacitors and capacitance, the combination of capacitors in series and parallel and capacitance of a parallel plate capacitor with and without dielectric medium between the plates, energy stored in a capacitor."
+            },
+            {
+              "unit": "UNIT 12",
+              "title": "Current Electricity",
+              "content": "Electric current: drift velocity, mobility and their relation with electric current, Ohm's law, electrical resistance, I-V characteristics of Ohmic and non-ohmic conductors, electrical energy and power, electrical resistivity and conductivity, series and parallel combinations of resistors, temperature dependence of resistance. Internal resistance, potential difference and emf of a cell, a combination of cells in series and parallel. Kirchhoff's laws and their applications, Wheatstone bridge, Metre Bridge."
+            },
+            {
+              "unit": "UNIT 13",
+              "title": "Magnetic Effects of Current and Magnetism",
+              "content": "Biot-Savart law and its application to the current carrying circular loop, Ampere's law and its applications to infinitely long current carrying straight wire and solenoid. Force on a moving charge in uniform magnetic and electric fields, force on a current-carrying conductor in a uniform magnetic field, the force between two parallel currents carrying conductors-definition of ampere, torque experienced by a current loop in a uniform magnetic field: Moving coil galvanometer, its sensitivity and conversion to ammeter and voltmeter. Current loop as a magnetic dipole and its magnetic dipole moment, bar magnet as an equivalent solenoid, magnetic field lines, magnetic field due to a magnetic dipole (bar magnet) along its axis and perpendicular to its axis, torque on a magnetic dipole in a uniform magnetic field, para-, dia- and ferromagnetic substances with examples, the effect of temperature on magnetic properties."
+            },
+            {
+              "unit": "UNIT 14",
+              "title": "Electromagnetic Induction and Alternating Currents",
+              "content": "Electromagnetic induction: Faraday's law, induced emf and current, Lenz's law, eddy currents, self and mutual inductance. Alternating currents, peak and RMS value of alternating current/voltage, reactance and impedance, LCR series circuit, resonance, power in AC circuits, wattless current, AC generator and transformer."
+            },
+            {
+              "unit": "UNIT 15",
+              "title": "Electromagnetic Waves",
+              "content": "Displacement current, electromagnetic waves and their characteristics, transverse nature of electromagnetic waves, electromagnetic spectrum (radio waves, microwaves, infrared, visible, ultraviolet, X-rays, Gamma rays), applications of electromagnetic waves."
+            },
+            {
+              "unit": "UNIT 16",
+              "title": "Optics",
+              "content": "Reflection of light, spherical mirrors, mirror formula. Refraction of light at plane and spherical surfaces, thin lens formula and lens maker formula, total internal reflection and its applications, magnification, power of a lens, combination of thin lenses in contact, refraction of light through a prism, microscope and astronomical telescope (reflecting and refracting) and their magnifying powers. Wave optics: wavefront and Huygens' Principle, laws of reflection and refraction using Huygens principle. Interference: Young's double-slit experiment and expression for fringe width, coherent sources and sustained interference of light. Diffraction due to a single slit, width of central maximum. Polarization: plane-polarized light, Brewster's law, uses of plane-polarized light and Polaroid."
+            },
+            {
+              "unit": "UNIT 17",
+              "title": "Dual Nature of Matter and Radiation",
+              "content": "Dual nature of radiation, Photoelectric effect, Hertz and Lenard's observations, Einstein's photoelectric equation, particle nature of light. Matter waves: wave nature of particle, de-Broglie relation."
+            },
+            {
+              "unit": "UNIT 18",
+              "title": "Atoms and Nuclei",
+              "content": "Alpha-particle scattering experiment, Rutherford's model of atom, Bohr model, energy levels, hydrogen spectrum. Composition and size of nucleus, atomic masses, mass-energy relation, mass defect, binding energy per nucleon and its variation with mass number, nuclear fission and fusion."
+            },
+            {
+              "unit": "UNIT 19",
+              "title": "Electronic Devices",
+              "content": "Semiconductors, semiconductor diode: I-V characteristics in forward and reverse bias, diode as a rectifier; I-V characteristics of LED, the photodiode, solar cell, Zener diode, Zener diode as a voltage regulator. Logic gates (OR, AND, NOT, NAND and NOR)."
+            },
+            {
+              "unit": "UNIT 20",
+              "title": "Experimental Skills",
+              "content": "Familiarity with the basic approach and observations of the experiments and activities: 1. Vernier calipers - its use to measure the internal and external diameter and depth of a vessel. 2. Screw gauge - its use to determine the thickness/diameter of thin sheet/wire. 3. Simple pendulum - dissipation of energy by plotting a graph between the square of amplitude and time. 4. Metre scale - the mass of a given object by the principle of moments. 5. Young's modulus of elasticity of the material of a metallic wire. 6. Surface tension of water by capillary rise and effect of detergents. 7. Co-efficient of viscosity of a given viscous liquid by measuring the terminal velocity of a given spherical body. 8. Speed of sound in air at room temperature using a resonance tube. 9. Specific heat capacity of a given (i) solid and (ii) liquid by method of mixtures. 10. The resistivity of the material of a given wire using a metre bridge. 11. The resistance of a given wire using Ohm's law. 12. Resistance and figure of merit of a galvanometer by half deflection method. 13. The focal length of (i) Convex mirror (ii) Concave mirror and (iii) Convex lens, using the parallax method. 14. The plot of the angle of deviation vs angle of incidence for a triangular prism. 15. The refractive index of a glass slab using a travelling microscope. 16. Characteristic curves of a p-n junction diode in forward and reverse bias. 17. Characteristic curves of a Zener diode and finding reverse breakdown voltage. 18. Identification of diode, LED, resistor, a capacitor from a mixed collection of such items."
+            }
+          ]
+        },
+        {
+          "subject": "CHEMISTRY",
+          "sections": [
+            {
+              "branch": "PHYSICAL CHEMISTRY",
+              "units": [
+                {
+                  "unit": "UNIT 1",
+                  "title": "SOME BASIC CONCEPTS IN CHEMISTRY",
+                  "content": "Matter and its nature, Dalton's atomic theory, Concept of atom, molecule, element and compound, Laws of chemical combination, Atomic and molecular masses, mole concept, molar mass, percentage composition, empirical and molecular formulae, Chemical equations and stoichiometry."
+                },
+                {
+                  "unit": "UNIT 2",
+                  "title": "ATOMIC STRUCTURE",
+                  "content": "Nature of electromagnetic radiation, photoelectric effect, spectrum of the hydrogen atom, Bohr model of a hydrogen atom - its postulates, derivation of the relations for the energy of the electron and radii of the different orbits, limitations of Bohr's model, dual nature of matter, de Broglie's relationship, Heisenberg uncertainty principle, elementary ideas of quantum mechanics, the quantum mechanical model of the atom and its important features, concept of atomic orbitals as one-electron wave functions, variation of psi and psi^2 with r for 1s and 2s orbitals, various quantum numbers (principal, angular momentum and magnetic quantum numbers) and their significance, shapes of s, p and d-orbitals, electron spin and spin quantum number, rules for filling electrons in orbitals - Aufbau principle, Pauli's exclusion principle and Hund's rule, electronic configuration of elements and extra stability of half-filled and completely filled orbitals."
+                },
+                {
+                  "unit": "UNIT 3",
+                  "title": "CHEMICAL BONDING AND MOLECULAR STRUCTURE",
+                  "content": "Kossel-Lewis approach to chemical bond formation, the concept of ionic and covalent bonds. Ionic Bonding: Formation of ionic bonds, factors affecting the formation of ionic bonds; calculation of lattice enthalpy. Covalent Bonding: Concept of electronegativity, Fajan's rule, dipole moment, Valence Shell Electron Pair Repulsion (VSEPR) theory and shapes of simple molecules. Quantum mechanical approach to covalent bonding: Valence bond theory - its important features, the concept of hybridization involving s, p and d orbitals, resonance. Molecular Orbital Theory - its important features, LCAOs, types of molecular orbitals (bonding, antibonding), sigma and pi-bonds, molecular orbital electronic configurations of homonuclear diatomic molecules, the concept of bond order, bond length and bond energy. Elementary idea of metallic bonding, hydrogen bonding and its applications."
+                },
+                {
+                  "unit": "UNIT 4",
+                  "title": "CHEMICAL THERMODYNAMICS",
+                  "content": "Fundamentals of thermodynamics: System and surroundings, extensive and intensive properties, state functions, entropy, types of processes. The first law of thermodynamics - Concept of work, heat, internal energy and enthalpy, heat capacity, molar heat capacity, Hess's law of constant heat summation, Enthalpies of bond dissociation, combustion, formation, atomization, sublimation, phase transition, hydration, ionization and solution. The second law of thermodynamics - Spontaneity of processes, deltaS of the universe and deltaG of the system as criteria for spontaneity. deltaG-standard (Standard Gibbs energy change) and equilibrium constant."
+                },
+                {
+                  "unit": "UNIT 5",
+                  "title": "SOLUTIONS",
+                  "content": "Different methods for expressing the concentration of solution - molality, molarity, mole fraction, percentage (by volume and mass both), the vapour pressure of solutions and Raoult's Law - Ideal and non-ideal solutions, vapour pressure - composition plots for ideal and non-ideal solutions, Colligative properties of dilute solutions - relative lowering of vapour pressure, depression of freezing point, the elevation of boiling point and osmotic pressure, determination of molecular mass using colligative properties, abnormal value of molar mass, van't Hoff factor and its significance."
+                },
+                {
+                  "unit": "UNIT 6",
+                  "title": "EQUILIBRIUM",
+                  "content": "Meaning of equilibrium, the concept of dynamic equilibrium. Equilibria involving physical processes: Solid-liquid, liquid-gas, gas-gas and solid-gas equilibria, Henry's law. General characteristics of equilibrium involving physical processes. Equilibrium involving chemical processes: Law of chemical equilibrium, equilibrium constants (Kp and Kc) and their significance, the significance of deltaG and deltaG-standard in chemical equilibrium, factors affecting equilibrium concentration, pressure, temperature, the effect of catalyst, Le Chatelier's principle. Ionic equilibrium: Weak and strong electrolytes, ionization of electrolytes, various concepts of acids and bases (Arrhenius, Bronsted-Lowry and Lewis) and their ionization, acid-base equilibria (including multistage ionization) and ionization constants, ionization of water, pH scale, common ion effect, hydrolysis of salts and pH of their solutions, the solubility of sparingly soluble salts, solubility products and buffer solutions."
+                },
+                {
+                  "unit": "UNIT 7",
+                  "title": "REDOX REACTIONS AND ELECTROCHEMISTRY",
+                  "content": "Electronic concepts of oxidation and reduction, redox reactions, oxidation number, rules for assigning oxidation number and balancing of redox reactions. Electrolytic and metallic conduction, conductance in electrolytic solutions, molar conductivities and their variation with concentration, Kohlrausch's law and its applications. Electrochemical cells - Electrolytic and Galvanic cells, different types of electrodes, electrode potentials including standard electrode potential, half-cell and cell reactions, emf of a Galvanic cell and its measurement, Nernst equation and its applications, relationship between cell potential and Gibbs' energy change, dry cell and lead accumulator, fuel cells."
+                },
+                {
+                  "unit": "UNIT 8",
+                  "title": "CHEMICAL KINETICS",
+                  "content": "Rate of a chemical reaction, factors affecting the rate of reactions: concentration, temperature, pressure and catalyst, elementary and complex reactions, order and molecularity of reactions, rate law, rate constant and its units, differential and integral forms of zero and first-order reactions, their characteristics and half-lives, the effect of temperature on the rate of reactions, Arrhenius theory, activation energy and its calculation, collision theory of bi-molecular gaseous reactions (no derivation)."
+                }
+              ]
+            },
+            {
+              "branch": "INORGANIC CHEMISTRY",
+              "units": [
+                {
+                  "unit": "UNIT 9",
+                  "title": "CLASSIFICATION OF ELEMENTS AND PERIODICITY IN PROPERTIES",
+                  "content": "Modern periodic law and present form of the periodic table, s, p, d and f block elements, periodic trends in properties of elements - atomic and ionic radii, ionization enthalpy, electron gain enthalpy, valence, oxidation states and chemical reactivity."
+                },
+                {
+                  "unit": "UNIT 10",
+                  "title": "p-BLOCK ELEMENTS (Group-13 to Group 18 Elements)",
+                  "content": "General Introduction: Electronic configuration and general trends in physical and chemical properties of elements across the periods and down the groups, unique behaviour of the first element in each group."
+                },
+                {
+                  "unit": "UNIT 11",
+                  "title": "d- AND f-BLOCK ELEMENTS",
+                  "content": "Transition Elements - General introduction, electronic configuration, occurrence and characteristics, general trends in properties of the first-row transition elements - physical properties, ionization enthalpy, oxidation states, atomic radii, colour, catalytic behaviour, magnetic properties, complex formation, interstitial compounds, alloy formation, preparation, properties and uses of K2Cr2O7 and KMnO4. Inner Transition Elements: Lanthanoids - Electronic configuration, oxidation states and Lanthanoid contraction. Actinoids - Electronic configuration and oxidation states."
+                },
+                {
+                  "unit": "UNIT 12",
+                  "title": "COORDINATION COMPOUNDS",
+                  "content": "Introduction to coordination compounds. Werner's theory, ligands, coordination number, denticity, chelation, IUPAC nomenclature of mononuclear co-ordination compounds, isomerism, Bonding: Valence bond approach and basic ideas of Crystal field theory, colour and magnetic properties, importance of coordination compounds (in qualitative analysis, extraction of metals and in biological systems)."
+                }
+              ]
+            },
+            {
+              "branch": "ORGANIC CHEMISTRY",
+              "units": [
+                {
+                  "unit": "UNIT 13",
+                  "title": "PURIFICATION AND CHARACTERISATION OF ORGANIC COMPOUNDS",
+                  "content": "Purification - Crystallization, sublimation, distillation, differential extraction and chromatography - principles and their applications. Qualitative analysis - Detection of nitrogen, sulphur, phosphorus and halogens. Quantitative analysis (basic principles only) - Estimation of carbon, hydrogen, nitrogen, halogens, sulphur and phosphorus. Calculations of empirical formulae and molecular formulae, numerical problems in organic quantitative analysis."
+                },
+                {
+                  "unit": "UNIT 14",
+                  "title": "SOME BASIC PRINCIPLES OF ORGANIC CHEMISTRY",
+                  "content": "Tetravalency of carbon, shapes of simple molecules - hybridization (s and p): classification of organic compounds based on functional groups and those containing halogens, oxygen, nitrogen and sulphur, homologous series: Isomerism - structural and stereoisomerism. Nomenclature (Trivial and IUPAC). Covalent bond fission - Homolytic and heterolytic, free radicals, carbocations and carbanions, stability of carbocations and free radicals, electrophiles and nucleophiles. Electronic displacement in a covalent bond - Inductive effect, electromeric effect, resonance and hyperconjugation. Common types of organic reactions - Substitution, addition, elimination and rearrangement."
+                },
+                {
+                  "unit": "UNIT 15",
+                  "title": "HYDROCARBONS",
+                  "content": "Classification, isomerism, IUPAC nomenclature, general methods of preparation, properties and reactions. Alkanes - Conformations: Sawhorse and Newman projections (of ethane), mechanism of halogenation of alkanes. Alkenes - Geometrical isomerism, mechanism of electrophilic addition, addition of hydrogen, halogens, water, hydrogen halides (Markownikoff's and peroxide effect), Ozonolysis and polymerization. Alkynes - Acidic character, addition of hydrogen, halogens, water and hydrogen halides, polymerization. Aromatic hydrocarbons - Nomenclature, benzene - structure and aromaticity, mechanism of electrophilic substitution, halogenation, nitration, Friedel-Craft's alkylation and acylation, directive influence of the functional group in mono-substituted benzene."
+                },
+                {
+                  "unit": "UNIT 16",
+                  "title": "ORGANIC COMPOUNDS CONTAINING HALOGENS",
+                  "content": "General methods of preparation, properties and reactions, nature of C-X bond, mechanisms of substitution reactions. Uses, environmental effects of chloroform, iodoform, freons and DDT."
+                },
+                {
+                  "unit": "UNIT 17",
+                  "title": "ORGANIC COMPOUNDS CONTAINING OXYGEN",
+                  "content": "General methods of preparation, properties, reactions and uses. ALCOHOLS, PHENOLS AND ETHERS - Alcohols: Identification of primary, secondary and tertiary alcohols, mechanism of dehydration. Phenols: Acidic nature, electrophilic substitution reactions, halogenation, nitration and sulphonation, Reimer-Tiemann reaction. Ethers: Structure. Aldehydes and Ketones: Nature of carbonyl group, nucleophilic addition to >C=O group, relative reactivities of aldehydes and ketones, important reactions such as - Nucleophilic addition reactions (addition of HCN, NH3 and its derivatives), Grignard reagent, oxidation, reduction (Wolf Kishner and Clemmensen), the acidity of alpha-hydrogen. Aldol condensation, Cannizzaro reaction, Haloform reaction, chemical tests to distinguish between aldehydes and ketones. Carboxylic Acids: Acidic strength and factors affecting it."
+                },
+                {
+                  "unit": "UNIT 18",
+                  "title": "ORGANIC COMPOUNDS CONTAINING NITROGEN",
+                  "content": "General methods of preparation, properties, reactions and uses. Amines: Nomenclature, classification, structure, basic character and identification of primary, secondary and tertiary amines and their basic character. Diazonium Salts: Importance in synthetic organic chemistry."
+                },
+                {
+                  "unit": "UNIT 19",
+                  "title": "BIOMOLECULES",
+                  "content": "General introduction and importance of biomolecules. CARBOHYDRATES - Classification, aldoses and ketoses, monosaccharides (glucose and fructose) and constituent monosaccharides of oligosaccharides (sucrose, lactose and maltose). PROTEINS - Elementary idea of alpha-amino acids, peptide bond, polypeptides, proteins: primary, secondary, tertiary and quaternary structure (qualitative idea only), denaturation of proteins, enzymes. VITAMINS - Classification and functions. NUCLEIC ACIDS - Chemical constitution of DNA and RNA, biological functions of nucleic acids. Hormones (General introduction)."
+                },
+                {
+                  "unit": "UNIT 20",
+                  "title": "PRINCIPLES RELATED TO PRACTICAL CHEMISTRY",
+                  "content": "Detection of extra elements (Nitrogen, sulphur, halogens) in organic compounds, detection of the following functional groups: hydroxyl (alcoholic and phenolic), carbonyl (aldehyde and ketones), carboxyl and amino groups in organic compounds. The chemistry involved in the preparation of the following: Inorganic compounds - Mohr's salt, potash alum. Organic compounds - Acetanilide, p-nitro acetanilide, aniline yellow, iodoform. The chemistry involved in the titrimetric exercises - acids, bases and the use of indicators, oxalic-acid vs KMnO4, Mohr's salt vs KMnO4. Chemical principles involved in the qualitative salt analysis: Cations - Pb2+, Cu2+, Al3+, Fe3+, Zn2+, Ni2+, Ca2+, Ba2+, Mg2+, NH4+. Anions - CO3(2-), S2-, SO4(2-), NO3-, NO2-, Cl-, Br-, I- (Insoluble salts excluded). Chemical principles involved in the following experiments: 1. Enthalpy of solution of CuSO4. 2. Enthalpy of neutralization of strong acid and strong base. 3. Preparation of lyophilic and lyophobic sols. 4. Kinetic study of the reaction of iodide ions with hydrogen peroxide at room temperature."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper": "Paper 2A (B.Arch.) - Mathematics, Aptitude Test and Drawing Test",
+      "parts": [
+        {
+          "part": "Part I - MATHEMATICS",
+          "note": "Same 14 units as Paper 1 Mathematics syllabus.",
+          "units": [
+            {
+              "unit": "UNIT 1",
+              "title": "SETS, RELATIONS AND FUNCTIONS",
+              "content": "Sets and their representation; Union, intersection and complement of sets and their algebraic properties; Power set; Relations, type of relations, equivalence relations, functions; one-one, into and onto functions, the composition of functions."
+            },
+            {
+              "unit": "UNIT 2",
+              "title": "COMPLEX NUMBERS AND QUADRATIC EQUATIONS",
+              "content": "Complex numbers as ordered pairs of reals, representation of complex numbers in the form a+ib and their representation in a plane, Argand diagram, algebra of complex numbers, modulus and argument (or amplitude) of a complex number, quadratic equations in real and complex number systems and their solutions; relations between roots and coefficients, nature of roots, the formation of quadratic equations with given roots."
+            },
+            {
+              "unit": "UNIT 3",
+              "title": "MATRICES AND DETERMINANTS",
+              "content": "Matrices, algebra of matrices, type of matrices, determinants and matrices of order two and three, evaluation of determinants, area of triangles using determinants; adjoint and inverse of a square matrix; test of consistency and solution of simultaneous linear equations in two or three variables using matrices."
+            },
+            {
+              "unit": "UNIT 4",
+              "title": "PERMUTATIONS AND COMBINATIONS",
+              "content": "The fundamental principle of counting, permutations and combinations; meaning of P(n,r) and C(n,r). Simple applications."
+            },
+            {
+              "unit": "UNIT 5",
+              "title": "BINOMIAL THEOREM AND ITS SIMPLE APPLICATIONS",
+              "content": "Binomial theorem for a positive integral index, general term and middle term and simple applications."
+            },
+            {
+              "unit": "UNIT 6",
+              "title": "SEQUENCE AND SERIES",
+              "content": "Arithmetic and Geometric progressions, insertion of arithmetic, geometric means between two given numbers, relation between A.M and G.M."
+            },
+            {
+              "unit": "UNIT 7",
+              "title": "LIMIT, CONTINUITY AND DIFFERENTIABILITY",
+              "content": "Real-valued functions, algebra of functions; polynomial, rational, trigonometric, logarithmic and exponential functions; inverse functions. Graphs of simple functions. Limits, continuity and differentiability. Differentiation of the sum, difference, product and quotient of two functions. Differentiation of trigonometric, inverse trigonometric, logarithmic, exponential, composite and implicit functions; derivatives of order upto two. Applications of derivatives: rate of change of quantities, monotonic-increasing and decreasing functions, maxima and minima of functions of one variable."
+            },
+            {
+              "unit": "UNIT 8",
+              "title": "INTEGRAL CALCULUS",
+              "content": "Integral as an anti-derivative. Fundamental integrals involving algebraic, trigonometric, exponential and logarithmic functions. Integration by substitution, by parts and by partial fractions. Integration using trigonometric identities. Evaluation of simple integrals of the type: dx/(x^2+a^2), dx/sqrt(x^2 +- a^2), dx/(a^2-x^2), dx/sqrt(a^2-x^2), dx/(ax^2+bx+c), dx/sqrt(ax^2+bx+c), (px+q)dx/(ax^2+bx+c), (px+q)dx/sqrt(ax^2+bx+c), sqrt(a^2 +- x^2)dx, sqrt(x^2-a^2)dx. The fundamental theorem of calculus, properties of definite integrals. Evaluation of definite integrals, determining areas of the regions bounded by simple curves in standard forms."
+            },
+            {
+              "unit": "UNIT 9",
+              "title": "DIFFERENTIAL EQUATIONS",
+              "content": "Ordinary differential equations, their order and degree, the solution of differential equations by the method of separation of variables, solution of a homogeneous and linear differential equation of the type dy/dx + p(x)y = q(x)."
+            },
+            {
+              "unit": "UNIT 10",
+              "title": "CO-ORDINATE GEOMETRY",
+              "content": "Cartesian system of rectangular coordinates in a plane, distance formula, section formula, locus and its equation, the slope of a line, parallel and perpendicular lines, intercepts of a line on the co-ordinate axis. Straight line: various forms of equations of a line, intersection of lines, angles between two lines, conditions for concurrence of three lines, the distance of a point from a line, co-ordinates of the centroid, orthocentre and circumcentre of a triangle. Circle, conic sections: standard form of equations of a circle, the general form of the equation of a circle, its radius and centre, equation of a circle when the endpoints of a diameter are given, points of intersection of a line and a circle with the centre at the origin and sections of conics, equations of conic sections (parabola, ellipse and hyperbola) in standard forms."
+            },
+            {
+              "unit": "UNIT 11",
+              "title": "THREE DIMENSIONAL GEOMETRY",
+              "content": "Coordinates of a point in space, the distance between two points, section formula, direction ratios and direction cosines and the angle between two intersecting lines. Equation of a line; skew lines, the shortest distance between them and its equation."
+            },
+            {
+              "unit": "UNIT 12",
+              "title": "VECTOR ALGEBRA",
+              "content": "Vectors and scalars, the addition of vectors, components of a vector in two and three-dimensional spaces, scalar and vector products."
+            },
+            {
+              "unit": "UNIT 13",
+              "title": "STATISTICS AND PROBABILITY",
+              "content": "Measures of dispersion; calculation of mean, median, mode of grouped and ungrouped data, calculation of standard deviation, variance and mean deviation for grouped and ungrouped data. Probability: probability of an event, addition and multiplication theorems of probability, Baye's theorem, probability distribution of a random variable."
+            },
+            {
+              "unit": "UNIT 14",
+              "title": "TRIGONOMETRY",
+              "content": "Trigonometrical identities and trigonometrical functions, inverse trigonometrical functions and their properties."
+            }
+          ]
+        },
+        {
+          "part": "Part II - APTITUDE TEST",
+          "units": [
+            {
+              "unit": "UNIT 1",
+              "title": "Awareness and Reasoning",
+              "content": "Awareness of persons, buildings, materials, objects, texture related to Architecture and build-environment. Visualizing three-dimensional objects from two-dimensional drawings. Visualizing different sides of three-dimensional objects. Analytical Reasoning, Mental Ability (Visual, Numerical and Verbal)."
+            },
+            {
+              "unit": "UNIT 2",
+              "title": "Three Dimensional Perception",
+              "content": "Understanding and appreciation of scale and proportions of objects, building forms and elements, colour texture harmony and contrast. Design and drawing of geometrical or abstract shapes and patterns in pencil. Transformation of forms both 2D and 3D - union, subtraction, rotation, development of surfaces and volumes. Generation of plans, elevations and 3D views of objects, creating two-dimensional and three-dimensional compositions using given shapes and forms."
+            }
+          ]
+        },
+        {
+          "part": "Part III - DRAWING TEST",
+          "content": "Sketching of scenes and activities from memory of urbanscape (public space, market, festivals, street scenes, monuments, recreational spaces, etc.), landscape (riverfronts, jungle, gardens, trees, plants, etc.) and rural life. To be conducted on a Drawing sheet.",
+          "note": "Candidates are advised to bring pencils, their own geometry box set, erasers, and colour pencils and crayons for the Drawing Test."
+        }
+      ]
+    },
+    {
+      "paper": "Paper 2B (B.Planning) - Mathematics, Aptitude Test and Planning",
+      "parts": [
+        {
+          "part": "Part I - MATHEMATICS",
+          "note": "Same 14 units as Paper 1 Mathematics syllabus.",
+          "units": [
+            {
+              "unit": "UNIT 1",
+              "title": "SETS, RELATIONS AND FUNCTIONS",
+              "content": "Sets and their representation; Union, intersection and complement of sets and their algebraic properties; Power set; Relations, type of relations, equivalence relations, functions; one-one, into and onto functions, the composition of functions."
+            },
+            {
+              "unit": "UNIT 2",
+              "title": "COMPLEX NUMBERS AND QUADRATIC EQUATIONS",
+              "content": "Complex numbers as ordered pairs of reals, representation of complex numbers in the form a+ib and their representation in a plane, Argand diagram, algebra of complex numbers, modulus and argument (or amplitude) of a complex number, quadratic equations in real and complex number systems and their solutions; relations between roots and coefficients, nature of roots, the formation of quadratic equations with given roots."
+            },
+            {
+              "unit": "UNIT 3",
+              "title": "MATRICES AND DETERMINANTS",
+              "content": "Matrices, algebra of matrices, type of matrices, determinants and matrices of order two and three, evaluation of determinants, area of triangles using determinants; adjoint and inverse of a square matrix; test of consistency and solution of simultaneous linear equations in two or three variables using matrices."
+            },
+            {
+              "unit": "UNIT 4",
+              "title": "PERMUTATIONS AND COMBINATIONS",
+              "content": "The fundamental principle of counting, permutations and combinations; meaning of P(n,r) and C(n,r). Simple applications."
+            },
+            {
+              "unit": "UNIT 5",
+              "title": "BINOMIAL THEOREM AND ITS SIMPLE APPLICATIONS",
+              "content": "Binomial theorem for a positive integral index, general term and middle term and simple applications."
+            },
+            {
+              "unit": "UNIT 6",
+              "title": "SEQUENCE AND SERIES",
+              "content": "Arithmetic and Geometric progressions, insertion of arithmetic, geometric means between two given numbers, relation between A.M and G.M."
+            },
+            {
+              "unit": "UNIT 7",
+              "title": "LIMIT, CONTINUITY AND DIFFERENTIABILITY",
+              "content": "Real-valued functions, algebra of functions; polynomial, rational, trigonometric, logarithmic and exponential functions; inverse functions. Graphs of simple functions. Limits, continuity and differentiability. Differentiation of the sum, difference, product and quotient of two functions. Differentiation of trigonometric, inverse trigonometric, logarithmic, exponential, composite and implicit functions; derivatives of order upto two. Applications of derivatives: rate of change of quantities, monotonic-increasing and decreasing functions, maxima and minima of functions of one variable."
+            },
+            {
+              "unit": "UNIT 8",
+              "title": "INTEGRAL CALCULUS",
+              "content": "Integral as an anti-derivative. Fundamental integrals involving algebraic, trigonometric, exponential and logarithmic functions. Integration by substitution, by parts and by partial fractions. Integration using trigonometric identities. Evaluation of simple integrals of the type: dx/(x^2+a^2), dx/sqrt(x^2 +- a^2), dx/(a^2-x^2), dx/sqrt(a^2-x^2), dx/(ax^2+bx+c), dx/sqrt(ax^2+bx+c), (px+q)dx/(ax^2+bx+c), (px+q)dx/sqrt(ax^2+bx+c), sqrt(a^2 +- x^2)dx, sqrt(x^2-a^2)dx. The fundamental theorem of calculus, properties of definite integrals. Evaluation of definite integrals, determining areas of the regions bounded by simple curves in standard forms."
+            },
+            {
+              "unit": "UNIT 9",
+              "title": "DIFFERENTIAL EQUATIONS",
+              "content": "Ordinary differential equations, their order and degree, the solution of differential equations by the method of separation of variables, solution of a homogeneous and linear differential equation of the type dy/dx + p(x)y = q(x)."
+            },
+            {
+              "unit": "UNIT 10",
+              "title": "CO-ORDINATE GEOMETRY",
+              "content": "Cartesian system of rectangular coordinates in a plane, distance formula, section formula, locus and its equation, the slope of a line, parallel and perpendicular lines, intercepts of a line on the co-ordinate axis. Straight line: various forms of equations of a line, intersection of lines, angles between two lines, conditions for concurrence of three lines, the distance of a point from a line, co-ordinates of the centroid, orthocentre and circumcentre of a triangle. Circle, conic sections: standard form of equations of a circle, the general form of the equation of a circle, its radius and centre, equation of a circle when the endpoints of a diameter are given, points of intersection of a line and a circle with the centre at the origin and sections of conics, equations of conic sections (parabola, ellipse and hyperbola) in standard forms."
+            },
+            {
+              "unit": "UNIT 11",
+              "title": "THREE DIMENSIONAL GEOMETRY",
+              "content": "Coordinates of a point in space, the distance between two points, section formula, direction ratios and direction cosines and the angle between two intersecting lines. Equation of a line; skew lines, the shortest distance between them and its equation."
+            },
+            {
+              "unit": "UNIT 12",
+              "title": "VECTOR ALGEBRA",
+              "content": "Vectors and scalars, the addition of vectors, components of a vector in two and three-dimensional spaces, scalar and vector products."
+            },
+            {
+              "unit": "UNIT 13",
+              "title": "STATISTICS AND PROBABILITY",
+              "content": "Measures of dispersion; calculation of mean, median, mode of grouped and ungrouped data, calculation of standard deviation, variance and mean deviation for grouped and ungrouped data. Probability: probability of an event, addition and multiplication theorems of probability, Baye's theorem, probability distribution of a random variable."
+            },
+            {
+              "unit": "UNIT 14",
+              "title": "TRIGONOMETRY",
+              "content": "Trigonometrical identities and trigonometrical functions, inverse trigonometrical functions and their properties."
+            }
+          ]
+        },
+        {
+          "part": "Part II - APTITUDE TEST",
+          "units": [
+            {
+              "unit": "UNIT 1",
+              "title": "Awareness and Reasoning",
+              "content": "Awareness of persons, buildings, materials, objects and textures related to Architecture and build-environment. Visualizing three-dimensional objects from two-dimensional drawings. Visualizing different sides of three-dimensional objects. Analytical Reasoning, Mental Ability (Visual, Numerical and Verbal)."
+            },
+            {
+              "unit": "UNIT 2",
+              "title": "Three Dimensional Perception",
+              "content": "Understanding and appreciation of scale and proportions of objects, building forms and elements, colour texture harmony and contrast. Design and drawing of geometrical or abstract shapes and patterns in pencil. Transformation of forms both 2D and 3D - union, subtraction, rotation, development of surfaces and volumes. Generation of plans, elevations and 3D views of objects, creating two-dimensional and three-dimensional compositions using given shapes and forms."
+            }
+          ]
+        },
+        {
+          "part": "Part III - PLANNING",
+          "units": [
+            {
+              "unit": "UNIT 1",
+              "title": "General Awareness",
+              "content": "General knowledge questions and knowledge about prominent cities, development issues, government programs etc."
+            },
+            {
+              "unit": "UNIT 2",
+              "title": "Social Sciences",
+              "content": "The idea of nationalism, nationalism in India, pre-modern world, 19th-century global economy, colonialism and colonial cities, industrialization, resources and development, types of resources, agriculture, water, mineral resources, industries, national economy; Human Settlements. Power-sharing, federalism, political parties, democracy, the constitution of India. Economic development - economic sectors, globalization, the concept of development, poverty; Population structure, social exclusion and inequality, urbanization, rural development, colonial cities."
+            },
+            {
+              "unit": "UNIT 3",
+              "title": "Thinking Skills",
+              "content": "Comprehension (unseen passage); map reading skills, scale, distance, direction, area etc.; critical reasoning; understanding of charts, graphs and tables; basic concepts of statistics and quantitative reasoning."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+{
+  "note": "Content restricted to NCERT Class 11 & 12 scope. Any commonly-tested JEE concept that goes beyond NCERT is explicitly flagged inside 'constraints' for that chapter, not silently included in concepts/formulas.",
+
+  "1_Coordinate_Geometry": {
+    "ncert_source": "Class 11 Ch10 Straight Lines, Ch11 Conic Sections, Ch12 Introduction to 3D Geometry",
+    "concepts": [
+      "Cartesian plane, quadrants, distance and section formula",
+      "Centroid and area of a triangle using coordinates",
+      "Slope of a line and angle of inclination",
+      "Equations of a line: slope-intercept, point-slope, two-point, intercept, normal form",
+      "General equation of a line ax+by+c=0 and its interpretation",
+      "Angle between two lines, conditions for parallel/perpendicular lines",
+      "Distance of a point from a line, distance between parallel lines",
+      "Conic sections as intersection of a plane with a double cone",
+      "Circle: standard and general equation",
+      "Parabola: standard equations (4 orientations), focus, directrix, latus rectum",
+      "Ellipse: standard equation, eccentricity, foci, directrices, latus rectum",
+      "Hyperbola: standard equation, eccentricity, foci, directrices, latus rectum",
+      "3D: coordinate axes/planes, distance formula, section formula in space"
+    ],
+    "formulas": [
+      "Distance = sqrt((x2-x1)^2+(y2-y1)^2)",
+      "Section formula (internal) = (mx2+nx1)/(m+n), (my2+ny1)/(m+n); external uses (m-n) in denominator with a minus sign in numerator",
+      "Centroid = ((x1+x2+x3)/3, (y1+y2+y3)/3)",
+      "Area of triangle = 1/2 |x1(y2-y3)+x2(y3-y1)+x3(y1-y2)|",
+      "Slope m = (y2-y1)/(x2-x1) = tanθ",
+      "Line forms: y=mx+c; y-y1=m(x-x1); intercept x/a+y/b=1; normal form xcosω+ysinω=p",
+      "tanθ = |(m1-m2)/(1+m1m2)| for angle between two lines",
+      "Distance of point from line = |Ax1+By1+C|/sqrt(A²+B²)",
+      "Distance between parallels Ax+By+C1=0, Ax+By+C2=0 = |C1-C2|/sqrt(A²+B²)",
+      "Circle: (x-h)²+(y-k)²=r²; general x²+y²+2gx+2fy+c=0, centre(-g,-f), radius=sqrt(g²+f²-c)",
+      "Parabola y²=4ax: focus(a,0), directrix x=-a, latus rectum=4a (similarly for y²=-4ax, x²=4ay, x²=-4ay)",
+      "Ellipse x²/a²+y²/b²=1 (a>b): b²=a²(1-e²), foci(±ae,0), directrices x=±a/e, LR=2b²/a",
+      "Hyperbola x²/a²-y²/b²=1: b²=a²(e²-1), foci(±ae,0), directrices x=±a/e, LR=2b²/a"
+    ],
+    "standard_results": [
+      "Three points collinear ⇔ area of triangle formed = 0",
+      "Lines parallel ⇔ m1=m2; perpendicular ⇔ m1·m2=-1",
+      "Family of lines through intersection of L1=0, L2=0: L1+λL2=0",
+      "Parametric forms: circle (a+rcosθ, a+rsinθ); parabola (at²,2at); ellipse (acosθ,bsinθ); hyperbola (asecθ,btanθ)",
+      "Eccentricity ranges: e=1 (parabola), 0<e<1 (ellipse), e>1 (hyperbola)"
+    ],
+    "allowed_methods": [
+      "Pure coordinate algebra: distance/section formula, slope comparison, substitution into standard forms",
+      "Family-of-lines/circles technique for concurrency/common-point problems",
+      "Locus method: assume (h,k), apply given geometric condition, eliminate to get equation"
+    ],
+    "common_traps": [
+      "Mixing up internal vs external division sign in section formula",
+      "Forgetting the modulus in the area formula, leading to negative 'area'",
+      "Confusing 'a' with 'latus rectum=4a' in parabola problems",
+      "Assuming major axis is always along x-axis in ellipse without checking a vs b",
+      "Missing ± sign when writing both foci/directrices",
+      "Treating parallel and coincident lines as the same case"
+    ],
+    "jee_patterns": [
+      "Locus of a variable point satisfying a geometric condition",
+      "Family of lines/circles passing through fixed intersection point",
+      "Conic focus-directrix and eccentricity-based problems",
+      "Combined straight line + circle problems (chords, common tangents)"
+    ],
+    "constraints": [
+      "Pair of straight lines (ax²+2hxy+by²=0), chord of contact, pole-polar, and director circle are NOT covered in NCERT — frequently appear in JEE but require material beyond NCERT",
+      "Tangent/normal equations to parabola, ellipse, hyperbola are not explicitly derived in NCERT Conic Sections chapter, which is largely definitional",
+      "3D coordinate geometry (lines, planes, direction cosines) is a separate Class 12 topic, not merged here"
+    ],
+    "difficulty_patterns": [
+      "14 hard / 20 medium / 0 easy — heaviest chapter by weightage (#1)",
+      "Medium questions: direct application of standard forms (line/circle/conic equations)",
+      "Hard questions: locus + family of curves + conic property combinations, often needing results beyond bare NCERT statements"
+    ]
+  },
+
+  "2_Limit_Continuity_Differentiability": {
+    "ncert_source": "Class 11 Ch13 Limits and Derivatives, Class 12 Ch5 Continuity and Differentiability",
+    "concepts": [
+      "Intuitive definition of limit, left-hand and right-hand limits",
+      "Algebra of limits (sum, difference, product, quotient)",
+      "Limits of polynomial, rational, and trigonometric functions",
+      "Continuity at a point and on an interval",
+      "Algebra of continuous functions, continuity of composite functions",
+      "Differentiability at a point; relation between continuity and differentiability",
+      "Derivative from first principles",
+      "Algebra of derivatives, chain rule",
+      "Derivatives of implicit functions",
+      "Logarithmic differentiation",
+      "Derivatives of inverse trigonometric, exponential and logarithmic functions",
+      "Second order derivatives",
+      "Rolle's Theorem and Lagrange's Mean Value Theorem (statement and geometric meaning)"
+    ],
+    "formulas": [
+      "lim(x→0) sinx/x = 1; lim(x→0)(1-cosx)/x = 0; lim(x→0) tanx/x = 1",
+      "lim(x→a) (x^n-a^n)/(x-a) = n·a^(n-1)",
+      "lim(x→0) (e^x-1)/x = 1; lim(x→0) ln(1+x)/x = 1; lim(x→0) (a^x-1)/x = ln a",
+      "e = lim(n→∞) (1+1/n)^n",
+      "f'(x) = lim(h→0) [f(x+h)-f(x)]/h",
+      "d/dx(x^n)=nx^(n-1), d/dx(sinx)=cosx, d/dx(cosx)=-sinx, d/dx(tanx)=sec²x, d/dx(e^x)=e^x, d/dx(lnx)=1/x, d/dx(a^x)=a^x lna",
+      "Product rule: (uv)'=u'v+uv'; Quotient rule: (u/v)'=(u'v-uv')/v²; Chain rule: dy/dx = dy/du · du/dx",
+      "Derivatives of inverse trig: d/dx(sin⁻¹x)=1/sqrt(1-x²), d/dx(tan⁻¹x)=1/(1+x²), d/dx(sec⁻¹x)=1/(|x|sqrt(x²-1))",
+      "Logarithmic differentiation for y=[f(x)]^g(x): take ln both sides then differentiate"
+    ],
+    "standard_results": [
+      "f continuous at a ⇔ lim(x→a) f(x) = f(a) (LHL = RHL = f(a))",
+      "Differentiability at a point ⇒ continuity there (converse false, e.g. f(x)=|x| at x=0)",
+      "Rolle's Theorem: if f continuous on [a,b], differentiable on (a,b), f(a)=f(b), then ∃c∈(a,b) with f'(c)=0",
+      "Lagrange's MVT: ∃c∈(a,b) such that f'(c) = [f(b)-f(a)]/(b-a)"
+    ],
+    "allowed_methods": [
+      "Direct substitution, factorization/cancellation, rationalization for limits",
+      "Standard limit formulas listed above",
+      "First-principles definition for checking differentiability at a specific point",
+      "Chain rule / implicit / logarithmic differentiation for derivatives"
+    ],
+    "common_traps": [
+      "Using L'Hôpital's Rule (not in NCERT) instead of algebraic/standard-limit methods",
+      "Direct substitution into 0/0 form without simplification",
+      "Not separately checking LHL and RHL for piecewise/modulus/greatest-integer functions",
+      "Assuming continuity automatically implies differentiability",
+      "Missing chain-rule inner derivative in composite functions",
+      "Domain errors when differentiating log/inverse-trig expressions"
+    ],
+    "jee_patterns": [
+      "Evaluating limits reducible to standard forms via algebraic manipulation",
+      "Continuity/differentiability of piecewise, |x|, or [x] functions; finding unknown constants",
+      "Higher-order derivatives of implicit or parametric-style relations",
+      "Existence/verification problems using Rolle's Theorem or LMVT"
+    ],
+    "constraints": [
+      "L'Hôpital's Rule is NOT in NCERT — limits must be evaluated via algebraic/standard-limit techniques only",
+      "Formal epsilon-delta definition of limits is not covered; NCERT treatment is intuitive/algebraic",
+      "Series expansions (Taylor/Maclaurin) for limit evaluation are not NCERT content"
+    ],
+    "difficulty_patterns": [
+      "14 hard / 4 medium / 0 easy — despite modest weightage (#4), this chapter is disproportionately hard-skewed",
+      "Medium: direct standard-limit substitution or single differentiation rule application",
+      "Hard: multi-point differentiability checks, implicit + logarithmic differentiation combined, MVT-based proof questions"
+    ]
+  },
+
+  "3_Integral_Calculus": {
+    "ncert_source": "Class 12 Ch7 Integrals, Ch8 Application of Integrals",
+    "concepts": [
+      "Indefinite integration as the inverse process of differentiation",
+      "Standard integrals of elementary functions",
+      "Integration by substitution",
+      "Integration using trigonometric identities",
+      "Integration of specific rational/irrational forms (1/(x²±a²), 1/sqrt(a²-x²), etc.)",
+      "Integration by partial fractions (linear, repeated linear, irreducible quadratic factors)",
+      "Integration by parts, ILATE rule",
+      "Definite integral as a limit of a sum",
+      "Fundamental Theorem of Calculus",
+      "Properties of definite integrals",
+      "Area under a curve, area between two curves"
+    ],
+    "formulas": [
+      "∫x^n dx = x^(n+1)/(n+1)+C (n≠-1); ∫1/x dx = ln|x|+C",
+      "∫e^x dx=e^x+C; ∫a^x dx=a^x/ln a+C",
+      "∫sinx dx=-cosx+C; ∫cosx dx=sinx+C; ∫sec²x dx=tanx+C; ∫secx tanx dx=secx+C",
+      "∫1/sqrt(1-x²) dx=sin⁻¹x+C; ∫1/(1+x²) dx=tan⁻¹x+C; ∫1/(x sqrt(x²-1)) dx=sec⁻¹x+C",
+      "∫1/(x²-a²)dx=1/2a·ln|(x-a)/(x+a)|+C; ∫1/(a²-x²)dx=1/2a·ln|(a+x)/(a-x)|+C; ∫1/(x²+a²)dx=1/a·tan⁻¹(x/a)+C",
+      "∫1/sqrt(x²-a²)dx=ln|x+sqrt(x²-a²)|+C; ∫1/sqrt(a²-x²)dx=sin⁻¹(x/a)+C; ∫1/sqrt(x²+a²)dx=ln|x+sqrt(x²+a²)|+C",
+      "Integration by parts: ∫uv dx = u∫v dx − ∫(u'∫v dx) dx",
+      "Definite integral properties: ∫a^b f = −∫b^a f; ∫a^a f=0; ∫a^b f(x)dx=∫a^b f(a+b-x)dx; ∫0^a f(x)dx=∫0^a f(a-x)dx; ∫-a^a f(x)dx=2∫0^a f(x)dx if f even, =0 if f odd; ∫0^2a f(x)dx=2∫0^a f(x)dx if f(2a-x)=f(x), else 0",
+      "Area under curve = ∫a^b y dx (or ∫x dy); area between curves = ∫a^b [f(x)-g(x)] dx"
+    ],
+    "standard_results": [
+      "Fundamental Theorem of Calculus Part I and II linking differentiation and definite integration",
+      "King's property ∫0^a f(x)dx = ∫0^a f(a-x)dx frequently collapses complex integrands",
+      "Definite integral over symmetric limits splits by even/odd nature of integrand"
+    ],
+    "allowed_methods": [
+      "Substitution method",
+      "Partial fractions strictly for NCERT-listed forms (proper rational functions, linear/repeated-linear/irreducible-quadratic denominators)",
+      "Integration by parts with ILATE preference order",
+      "Trigonometric identity reduction before integrating",
+      "Definite-integral property manipulation (king's rule, symmetry, periodicity)"
+    ],
+    "common_traps": [
+      "Forgetting '+C' in indefinite integrals",
+      "Sign errors between ∫sinx and ∫cosx",
+      "Wrong choice of u and dv in integration by parts (misapplying ILATE)",
+      "Missing modulus sign in log-form integrals",
+      "Not simplifying via king's property, leading to unnecessarily long direct integration",
+      "Forgetting to change limits when substituting variable in a definite integral"
+    ],
+    "jee_patterns": [
+      "Definite integrals solved via property tricks rather than direct integration",
+      "Area bounded by two curves requiring intersection points first",
+      "Integrals disguised as complex expressions that simplify via substitution",
+      "Combined substitution + integration-by-parts problems"
+    ],
+    "constraints": [
+      "Leibniz rule for differentiation under the integral sign is NOT in NCERT",
+      "Beta and Gamma functions are NOT in NCERT",
+      "Advanced reduction formulas (e.g. Walli's formula) are not NCERT content",
+      "Partial fractions restricted to the standard NCERT-listed denominator types only"
+    ],
+    "difficulty_patterns": [
+      "13 hard / 8 medium / 1 easy — second highest weightage (#2)",
+      "Medium: standard-form integrals solvable by a single technique",
+      "Hard: multi-step combinations (substitution+parts, or property-based simplification) dominate JEE-level sets; pure direct standard-integral questions are rare"
+    ]
+  },
+
+  "4_Matrices_and_Determinants": {
+    "ncert_source": "Class 12 Ch3 Matrices, Ch4 Determinants",
+    "concepts": [
+      "Matrix definition, order, types (row, column, square, diagonal, scalar, identity, zero, symmetric, skew-symmetric)",
+      "Matrix operations: addition, scalar multiplication, multiplication",
+      "Transpose of a matrix and its properties",
+      "Symmetric/skew-symmetric decomposition of a square matrix",
+      "Invertible matrices",
+      "Elementary row/column operations",
+      "Determinant definition (2×2 and 3×3 expansion)",
+      "Properties of determinants",
+      "Minors and cofactors",
+      "Adjoint of a matrix, inverse via adjoint",
+      "Solving systems of linear equations by matrix method and Cramer's rule",
+      "Consistency/inconsistency of a system of linear equations",
+      "Area of a triangle using determinants"
+    ],
+    "formulas": [
+      "(AB)_ij = Σ_k A_ik B_kj (multiplication defined only when columns of A = rows of B)",
+      "(A')'=A; (A+B)'=A'+B'; (kA)'=kA'; (AB)'=B'A'",
+      "det (2×2) = ad−bc; det (3×3) via cofactor expansion along any row/column",
+      "det(A)=det(A'); det(kA)=k^n det(A) for n×n matrix; det(AB)=det(A)det(B)",
+      "Swapping two rows/columns changes sign of determinant; det=0 if two rows/columns are identical or proportional",
+      "adj(A) = transpose of the cofactor matrix; A⁻¹ = adj(A)/det(A), valid iff det(A)≠0",
+      "(AB)⁻¹ = B⁻¹A⁻¹",
+      "Area of triangle = 1/2 |det of matrix with rows (x1,y1,1),(x2,y2,1),(x3,y3,1)|",
+      "Cramer's rule: x=Dx/D, y=Dy/D, z=Dz/D; matrix method: AX=B ⇒ X=A⁻¹B"
+    ],
+    "standard_results": [
+      "Every square matrix A = 1/2(A+A') + 1/2(A-A'), a sum of a symmetric and a skew-symmetric matrix",
+      "A·adj(A) = adj(A)·A = |A|·I",
+      "|adj(A)| = |A|^(n-1) for an n×n matrix",
+      "Consistency test: det(A)≠0 ⇒ unique solution; det(A)=0 ⇒ check (adjA)B to determine infinite vs no solution"
+    ],
+    "allowed_methods": [
+      "Cofactor expansion for determinants",
+      "Elementary row operations to simplify a determinant before expansion",
+      "Matrix inversion strictly via the adjoint method (NCERT does not use row-reduction/Gauss elimination for inverses)",
+      "Matrix method or Cramer's rule for solving linear systems"
+    ],
+    "common_traps": [
+      "Attempting AB when column count of A ≠ row count of B",
+      "Assuming AB=BA (matrix multiplication is not commutative in general)",
+      "Sign errors in cofactor expansion (+,−,+,… checkerboard pattern)",
+      "Treating det(A)=0 as automatically 'no solution' without checking adj(A)B",
+      "Confusing minor and cofactor (cofactor = minor × (−1)^(i+j))",
+      "Believing det(kA)=k|A| instead of the correct k^n|A|",
+      "Forgetting order reversal in (AB)' = B'A'"
+    ],
+    "jee_patterns": [
+      "Proving matrix identities using listed properties",
+      "Classifying a system as unique/infinite/no-solution",
+      "Constructing/verifying symmetric–skew-symmetric decomposition",
+      "Simplifying large determinants via row operations before evaluation",
+      "Property-based proofs using adjoint/inverse relations"
+    ],
+    "constraints": [
+      "Rank of a matrix and Gauss-Jordan elimination are NOT in NCERT Class 12",
+      "Cayley-Hamilton theorem is NOT in NCERT",
+      "Eigenvalues/eigenvectors are NOT covered in NCERT"
+    ],
+    "difficulty_patterns": [
+      "9 hard / 9 medium / 0 easy — evenly split, weightage rank #5",
+      "Medium: direct computation of determinant/inverse/matrix product",
+      "Hard: property-based proofs, consistency analysis, and combined adjoint/inverse identity problems"
+    ]
+  },
+
+  "5_Differential_Equations": {
+    "ncert_source": "Class 12 Ch9 Differential Equations",
+    "concepts": [
+      "Order and degree of a differential equation",
+      "Formation of a differential equation from a family of curves (by eliminating arbitrary constants)",
+      "General and particular solutions",
+      "Variable separable method",
+      "Homogeneous differential equations",
+      "Linear differential equations of the first order",
+      "Integrating factor method"
+    ],
+    "formulas": [
+      "Order = highest order derivative present; Degree = power of highest order derivative after removing radicals/fractional powers",
+      "Variable separable: dy/dx=f(x)g(y) ⇒ ∫dy/g(y) = ∫f(x)dx",
+      "Homogeneous DE dy/dx=F(y/x): substitute y=vx ⇒ dy/dx=v+x·dv/dx, then separate variables",
+      "Linear DE (in y): dy/dx+Py=Q, Integrating Factor IF=e^∫P dx, solution y·IF=∫Q·IF dx+C",
+      "Linear DE (in x): dx/dy+P1x=Q1, IF=e^∫P1 dy, solution x·IF=∫Q1·IF dy+C"
+    ],
+    "standard_results": [
+      "A family of curves with n arbitrary constants gives rise to a differential equation of order n (differentiate n times, then eliminate constants)",
+      "A DE dy/dx=F(x,y) is homogeneous if F(λx,λy)=F(x,y), i.e. numerator/denominator are homogeneous polynomials of the same degree"
+    ],
+    "allowed_methods": [
+      "Variable separable method",
+      "Homogeneous substitution y=vx (or x=vy when more convenient)",
+      "Linear first-order solution via integrating factor"
+    ],
+    "common_traps": [
+      "Misjudging order/degree when radicals or fractional powers are present without first rationalizing",
+      "Forgetting the constant of integration '+C' in the general solution",
+      "Sign errors while computing e^∫P dx for the integrating factor",
+      "Forgetting product rule when substituting y=vx (dy/dx = v + x dv/dx, not just v)",
+      "Misidentifying whether the equation is linear in y or in x, leading to a harder integral"
+    ],
+    "jee_patterns": [
+      "Forming the differential equation from a geometric condition (tangent/normal property) then solving it",
+      "Two-stage problems: derive the DE first, then apply variable separable/homogeneous/linear method",
+      "Particular solution problems using a given initial condition"
+    ],
+    "constraints": [
+      "Second-order differential equations are NOT in NCERT Class 12",
+      "Exact differential equations are NOT in NCERT",
+      "Bernoulli's equation is NOT explicitly in NCERT",
+      "This chapter is restricted to first-order, first-degree equations solvable by variable separable, homogeneous, or linear methods"
+    ],
+    "difficulty_patterns": [
+      "6 hard / 5 medium / 0 easy — lowest weightage of the five (#11)",
+      "Fewer total JEE questions from this chapter, but rarely trivial: NCERT's narrow scope means questions typically combine formation-of-DE with a solving technique rather than testing either in isolation"
+    ]
+  }
+}
+
+
+
+
+
+
+ Difficulty-checking files
+There are 3 separate files doing 3 different jobs — deterministic rules, LLM scoring, and difficulty-source resolution:
+
+A. src\services\hardQuestionMandate.service.js — deterministic "is this actually hard" gate, run on every hard-tier skeleton before it's accepted:
+
+Gate	Normal hard	Veteran hard (JEE/NEET default)
+Linked concepts in stem (≥2 syllabus clusters, or a recognized multi-concept archetype pattern)
+2
+2
+solveSteps count
+≥3
+≥4
+Solution lines (steps >12 chars)
+≥4
+≥5
+Direct substitution (single formula, plug-and-done)
+banned
+banned
+Stem length
+–
+≥200 chars
+Distinct numeric givens
+–
+≥3
+Coaching-drill template match (e.g. Van der Waals work, Compton Δλ, capillary-rise %)
+–
+banned
+Condition to even apply these: tier === "hard" || examCalibrated (validateHardQuestionMandate). Theory-kind and direct-kind slots get relaxed rules (theory just needs ≥2 reasoning steps; direct slots skip the concept-fusion/step-count gates entirely since they're meant to be single-technique).
+
+B. src\services\difficultySelfAudit.service.js — a separate LLM call scores the skeleton/question 0–100 against a rubric, and anything below the floor is rejected/regenerated:
+
+export const DIFFICULTY_SELF_AUDIT_MIN_SCORE = Number(
+    process.env.AI_QB_DIFFICULTY_SELF_AUDIT_MIN ||
+        (isVeteranDifficultyEnabled() ? 80 : 75)
+);
+export const SKELETON_DIFFICULTY_SELF_AUDIT_MIN_SCORE = Number(
+    process.env.AI_QB_SKELETON_DIFFICULTY_SELF_AUDIT_MIN ||
+        (isVeteranDifficultyEnabled() ? 78 : 70)
+);
+(That 78 is exactly the minScore: 78 you saw in the logs — skeleton-stage floor, veteran mode.) There's also a relaxed floor (72) if most of a batch would otherwise get wiped, and a last-attempt floor (55) so a batch never ends at 0.
+
+C. src\services\examGenerationDifficulty.service.js — decides difficulty before any of the above runs at all: if the topic/bank looks like a real entrance exam (JEE Main/Advanced, NEET, CAT — detected via isExamPaperGenerationContext), it ignores the UI's Easy/Medium/Hard setting entirely and forces generationDifficulty = "hard" for every question, tagging the batch examCalibrated: true (this is the EXAM_NATIVE_DIFFICULTY / "exam-native" logic you saw in every run's logs).
+
+In one sentence: exam-native resolution decides whether everything must be hard → the hard-mandate service enforces hard structurally (concepts/steps/lines/no-plug-in) at write time → the difficulty self-audit LLM call double-checks it qualitatively (0–100 score) before it's accepted.
+
+3) Gemini model currently in use
+GEMINI_TEXT_MODEL=gemini-3.1-flash-lite
+# GEMINI_TEXT_MODEL=gemini-3.5-flash
+So the active generation model is gemini-3.1-flash-lite (confirmed by the runtime log line [gemini] text model: gemini-3.1-flash-lite in every run). The default in code (geminiTextModels.js) is also gemini-3.1-flash-lite, and gemini-3.5-flash is commented out as the alternative. This is the model used for question creation only — the answer-verification stage uses OpenAI (o4-mini/GPT‑5 family), not Gemini.

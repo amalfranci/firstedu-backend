@@ -1,0 +1,911 @@
+{
+  "note": "Content restricted to NCERT Class 11 and 12 scope for ALL JEE Main Mathematics units. Hard/exam-calibrated generation MUST prefer hard_archetypes and hard_techniques. banned_easy_templates must NOT be used as the main ask for hard banks. Out-of-NCERT methods appear under constraints and must not be required to solve.",
+  "1_Coordinate_Geometry": {
+    "ncert_source": "Class 11 Ch10 Straight Lines, Ch11 Conic Sections, Ch12 Introduction to 3D Geometry",
+    "concepts": [
+      "Cartesian plane, quadrants, distance and section formula",
+      "Centroid and area of a triangle using coordinates",
+      "Slope of a line and angle of inclination",
+      "Equations of a line: slope-intercept, point-slope, two-point, intercept, normal form",
+      "General equation of a line ax+by+c=0 and its interpretation",
+      "Angle between two lines, conditions for parallel/perpendicular lines",
+      "Distance of a point from a line, distance between parallel lines",
+      "Conic sections as intersection of a plane with a double cone",
+      "Circle: standard and general equation",
+      "Parabola: standard equations (4 orientations), focus, directrix, latus rectum",
+      "Ellipse: standard equation, eccentricity, foci, directrices, latus rectum",
+      "Hyperbola: standard equation, eccentricity, foci, directrices, latus rectum",
+      "3D: coordinate axes/planes, distance formula, section formula in space"
+    ],
+    "formulas": [
+      "Distance = sqrt((x2-x1)^2+(y2-y1)^2)",
+      "Section formula (internal) = (mx2+nx1)/(m+n), (my2+ny1)/(m+n); external uses (m-n) in denominator with a minus sign in numerator",
+      "Centroid = ((x1+x2+x3)/3, (y1+y2+y3)/3)",
+      "Area of triangle = 1/2 |x1(y2-y3)+x2(y3-y1)+x3(y1-y2)|",
+      "Slope m = (y2-y1)/(x2-x1) = tanθ",
+      "Line forms: y=mx+c; y-y1=m(x-x1); intercept x/a+y/b=1; normal form xcosω+ysinω=p",
+      "tanθ = |(m1-m2)/(1+m1m2)| for angle between two lines",
+      "Distance of point from line = |Ax1+By1+C|/sqrt(A²+B²)",
+      "Distance between parallels Ax+By+C1=0, Ax+By+C2=0 = |C1-C2|/sqrt(A²+B²)",
+      "Circle: (x-h)²+(y-k)²=r²; general x²+y²+2gx+2fy+c=0, centre(-g,-f), radius=sqrt(g²+f²-c)",
+      "Parabola y²=4ax: focus(a,0), directrix x=-a, latus rectum=4a (similarly for y²=-4ax, x²=4ay, x²=-4ay)",
+      "Ellipse x²/a²+y²/b²=1 (a>b): b²=a²(1-e²), foci(±ae,0), directrices x=±a/e, LR=2b²/a",
+      "Hyperbola x²/a²-y²/b²=1: b²=a²(e²-1), foci(±ae,0), directrices x=±a/e, LR=2b²/a"
+    ],
+    "standard_results": [
+      "Three points collinear ⇔ area of triangle formed = 0",
+      "Lines parallel ⇔ m1=m2; perpendicular ⇔ m1·m2=-1",
+      "Family of lines through intersection of L1=0, L2=0: L1+λL2=0",
+      "Parametric forms: circle (a+rcosθ, a+rsinθ); parabola (at²,2at); ellipse (acosθ,bsinθ); hyperbola (asecθ,btanθ)",
+      "Eccentricity ranges: e=1 (parabola), 0<e<1 (ellipse), e>1 (hyperbola)"
+    ],
+    "allowed_methods": [
+      "Pure coordinate algebra: distance/section formula, slope comparison, substitution into standard forms",
+      "Family-of-lines/circles technique for concurrency/common-point problems",
+      "Locus method: assume (h,k), apply given geometric condition, eliminate to get equation"
+    ],
+    "common_traps": [
+      "Mixing up internal vs external division sign in section formula",
+      "Forgetting the modulus in the area formula, leading to negative 'area'",
+      "Confusing 'a' with 'latus rectum=4a' in parabola problems",
+      "Assuming major axis is always along x-axis in ellipse without checking a vs b",
+      "Missing ± sign when writing both foci/directrices",
+      "Treating parallel and coincident lines as the same case"
+    ],
+    "jee_patterns": [
+      "Locus of a variable point satisfying a geometric condition",
+      "Family of lines/circles passing through fixed intersection point",
+      "Conic focus-directrix and eccentricity-based problems",
+      "Combined straight line + circle problems (chords, common tangents)"
+    ],
+    "constraints": [
+      "Pair of straight lines (ax²+2hxy+by²=0), chord of contact, pole-polar, and director circle are NOT covered in NCERT — frequently appear in JEE but require material beyond NCERT",
+      "Tangent/normal equations to parabola, ellipse, hyperbola are not explicitly derived in NCERT Conic Sections chapter, which is largely definitional",
+      "3D coordinate geometry (lines, planes, direction cosines) is a separate Class 12 topic, not merged here"
+    ],
+    "difficulty_patterns": [
+      "14 hard / 20 medium / 0 easy — heaviest chapter by weightage (#1)",
+      "Medium questions: direct application of standard forms (line/circle/conic equations)",
+      "Hard questions: locus + family of curves + conic property combinations, often needing results beyond bare NCERT statements"
+    ],
+    "hard_archetypes": [
+      "Locus of a point with two geometric constraints (distance + angle / section + parallel)",
+      "Family of lines L1+λL2 through fixed intersection with circle chord condition",
+      "Combined circle + line: chord length, power of a point, common-tangent count",
+      "Conic focus-directrix condition fused with line/circle constraint",
+      "Optimization of a geometric quantity (max/min distance under constraint)"
+    ],
+    "banned_easy_templates": [
+      "Direct plug-in of distance formula only",
+      "Find centre/radius of a given circle equation only",
+      "Simple slope of line joining two points only"
+    ],
+    "hard_techniques": [
+      "Simultaneous geometric conditions",
+      "Parameter elimination for locus",
+      "Case splits (parallel vs intersecting; internal vs external)"
+    ],
+    "target_difficulty": "hard",
+    "min_solve_techniques": 2
+  },
+  "2_Limit_Continuity_Differentiability": {
+    "ncert_source": "Class 11 Ch13 Limits and Derivatives, Class 12 Ch5 Continuity and Differentiability",
+    "concepts": [
+      "Intuitive definition of limit, left-hand and right-hand limits",
+      "Algebra of limits (sum, difference, product, quotient)",
+      "Limits of polynomial, rational, and trigonometric functions",
+      "Continuity at a point and on an interval",
+      "Algebra of continuous functions, continuity of composite functions",
+      "Differentiability at a point; relation between continuity and differentiability",
+      "Derivative from first principles",
+      "Algebra of derivatives, chain rule",
+      "Derivatives of implicit functions",
+      "Logarithmic differentiation",
+      "Derivatives of inverse trigonometric, exponential and logarithmic functions",
+      "Second order derivatives",
+      "Rolle's Theorem and Lagrange's Mean Value Theorem (statement and geometric meaning)"
+    ],
+    "formulas": [
+      "lim(x→0) sinx/x = 1; lim(x→0)(1-cosx)/x = 0; lim(x→0) tanx/x = 1",
+      "lim(x→a) (x^n-a^n)/(x-a) = n·a^(n-1)",
+      "lim(x→0) (e^x-1)/x = 1; lim(x→0) ln(1+x)/x = 1; lim(x→0) (a^x-1)/x = ln a",
+      "e = lim(n→∞) (1+1/n)^n",
+      "f'(x) = lim(h→0) [f(x+h)-f(x)]/h",
+      "d/dx(x^n)=nx^(n-1), d/dx(sinx)=cosx, d/dx(cosx)=-sinx, d/dx(tanx)=sec²x, d/dx(e^x)=e^x, d/dx(lnx)=1/x, d/dx(a^x)=a^x lna",
+      "Product rule: (uv)'=u'v+uv'; Quotient rule: (u/v)'=(u'v-uv')/v²; Chain rule: dy/dx = dy/du · du/dx",
+      "Derivatives of inverse trig: d/dx(sin⁻¹x)=1/sqrt(1-x²), d/dx(tan⁻¹x)=1/(1+x²), d/dx(sec⁻¹x)=1/(|x|sqrt(x²-1))",
+      "Logarithmic differentiation for y=[f(x)]^g(x): take ln both sides then differentiate"
+    ],
+    "standard_results": [
+      "f continuous at a ⇔ lim(x→a) f(x) = f(a) (LHL = RHL = f(a))",
+      "Differentiability at a point ⇒ continuity there (converse false, e.g. f(x)=|x| at x=0)",
+      "Rolle's Theorem: if f continuous on [a,b], differentiable on (a,b), f(a)=f(b), then ∃c∈(a,b) with f'(c)=0",
+      "Lagrange's MVT: ∃c∈(a,b) such that f'(c) = [f(b)-f(a)]/(b-a)"
+    ],
+    "allowed_methods": [
+      "Direct substitution, factorization/cancellation, rationalization for limits",
+      "Standard limit formulas listed above",
+      "First-principles definition for checking differentiability at a specific point",
+      "Chain rule / implicit / logarithmic differentiation for derivatives"
+    ],
+    "common_traps": [
+      "Using L'Hôpital's Rule (not in NCERT) instead of algebraic/standard-limit methods",
+      "Direct substitution into 0/0 form without simplification",
+      "Not separately checking LHL and RHL for piecewise/modulus/greatest-integer functions",
+      "Assuming continuity automatically implies differentiability",
+      "Missing chain-rule inner derivative in composite functions",
+      "Domain errors when differentiating log/inverse-trig expressions"
+    ],
+    "jee_patterns": [
+      "Evaluating limits reducible to standard forms via algebraic manipulation",
+      "Continuity/differentiability of piecewise, |x|, or [x] functions; finding unknown constants",
+      "Higher-order derivatives of implicit or parametric-style relations",
+      "Existence/verification problems using Rolle's Theorem or LMVT"
+    ],
+    "constraints": [
+      "L'Hôpital's Rule is NOT in NCERT — limits must be evaluated via algebraic/standard-limit techniques only",
+      "Formal epsilon-delta definition of limits is not covered; NCERT treatment is intuitive/algebraic",
+      "Series expansions (Taylor/Maclaurin) for limit evaluation are not NCERT content"
+    ],
+    "difficulty_patterns": [
+      "14 hard / 4 medium / 0 easy — despite modest weightage (#4), this chapter is disproportionately hard-skewed",
+      "Medium: direct standard-limit substitution or single differentiation rule application",
+      "Hard: multi-point differentiability checks, implicit + logarithmic differentiation combined, MVT-based proof questions"
+    ],
+    "hard_archetypes": [
+      "0/0 limit needing multi-identity reduction (not a single sinx/x)",
+      "Piecewise continuity + differentiability for unknown constants at two or more points",
+      "Implicit differentiation + related rates on a curve",
+      "Nested logarithmic/chain differentiation with evaluation under constraint",
+      "Rolle/MVT style existence with a parameter",
+      "Standard-limit expansion path without L'Hopital (multi-step)"
+    ],
+    "banned_easy_templates": [
+      "lim sin(kx)/x as x→0 alone",
+      "Single chain-rule evaluation f'(a) for a simple composite",
+      "Bare assertion-reason on continuity definition only"
+    ],
+    "hard_techniques": [
+      "Algebraic reduction before standard limits",
+      "LHL/RHL casework",
+      "Linked differentiation conditions"
+    ],
+    "target_difficulty": "hard",
+    "min_solve_techniques": 2
+  },
+  "3_Integral_Calculus": {
+    "ncert_source": "Class 12 Ch7 Integrals, Ch8 Application of Integrals",
+    "concepts": [
+      "Indefinite integration as the inverse process of differentiation",
+      "Standard integrals of elementary functions",
+      "Integration by substitution",
+      "Integration using trigonometric identities",
+      "Integration of specific rational/irrational forms (1/(x²±a²), 1/sqrt(a²-x²), etc.)",
+      "Integration by partial fractions (linear, repeated linear, irreducible quadratic factors)",
+      "Integration by parts, ILATE rule",
+      "Definite integral as a limit of a sum",
+      "Fundamental Theorem of Calculus",
+      "Properties of definite integrals",
+      "Area under a curve, area between two curves"
+    ],
+    "formulas": [
+      "∫x^n dx = x^(n+1)/(n+1)+C (n≠-1); ∫1/x dx = ln|x|+C",
+      "∫e^x dx=e^x+C; ∫a^x dx=a^x/ln a+C",
+      "∫sinx dx=-cosx+C; ∫cosx dx=sinx+C; ∫sec²x dx=tanx+C; ∫secx tanx dx=secx+C",
+      "∫1/sqrt(1-x²) dx=sin⁻¹x+C; ∫1/(1+x²) dx=tan⁻¹x+C; ∫1/(x sqrt(x²-1)) dx=sec⁻¹x+C",
+      "∫1/(x²-a²)dx=1/2a·ln|(x-a)/(x+a)|+C; ∫1/(a²-x²)dx=1/2a·ln|(a+x)/(a-x)|+C; ∫1/(x²+a²)dx=1/a·tan⁻¹(x/a)+C",
+      "∫1/sqrt(x²-a²)dx=ln|x+sqrt(x²-a²)|+C; ∫1/sqrt(a²-x²)dx=sin⁻¹(x/a)+C; ∫1/sqrt(x²+a²)dx=ln|x+sqrt(x²+a²)|+C",
+      "Integration by parts: ∫uv dx = u∫v dx − ∫(u'∫v dx) dx",
+      "Definite integral properties: ∫a^b f = −∫b^a f; ∫a^a f=0; ∫a^b f(x)dx=∫a^b f(a+b-x)dx; ∫0^a f(x)dx=∫0^a f(a-x)dx; ∫-a^a f(x)dx=2∫0^a f(x)dx if f even, =0 if f odd; ∫0^2a f(x)dx=2∫0^a f(x)dx if f(2a-x)=f(x), else 0",
+      "Area under curve = ∫a^b y dx (or ∫x dy); area between curves = ∫a^b [f(x)-g(x)] dx"
+    ],
+    "standard_results": [
+      "Fundamental Theorem of Calculus Part I and II linking differentiation and definite integration",
+      "King's property ∫0^a f(x)dx = ∫0^a f(a-x)dx frequently collapses complex integrands",
+      "Definite integral over symmetric limits splits by even/odd nature of integrand"
+    ],
+    "allowed_methods": [
+      "Substitution method",
+      "Partial fractions strictly for NCERT-listed forms (proper rational functions, linear/repeated-linear/irreducible-quadratic denominators)",
+      "Integration by parts with ILATE preference order",
+      "Trigonometric identity reduction before integrating",
+      "Definite-integral property manipulation (king's rule, symmetry, periodicity)"
+    ],
+    "common_traps": [
+      "Forgetting '+C' in indefinite integrals",
+      "Sign errors between ∫sinx and ∫cosx",
+      "Wrong choice of u and dv in integration by parts (misapplying ILATE)",
+      "Missing modulus sign in log-form integrals",
+      "Not simplifying via king's property, leading to unnecessarily long direct integration",
+      "Forgetting to change limits when substituting variable in a definite integral"
+    ],
+    "jee_patterns": [
+      "Definite integrals solved via property tricks rather than direct integration",
+      "Area bounded by two curves requiring intersection points first",
+      "Integrals disguised as complex expressions that simplify via substitution",
+      "Combined substitution + integration-by-parts problems"
+    ],
+    "constraints": [
+      "Leibniz rule for differentiation under the integral sign is NOT in NCERT",
+      "Beta and Gamma functions are NOT in NCERT",
+      "Advanced reduction formulas (e.g. Walli's formula) are not NCERT content",
+      "Partial fractions restricted to the standard NCERT-listed denominator types only"
+    ],
+    "difficulty_patterns": [
+      "13 hard / 8 medium / 1 easy — second highest weightage (#2)",
+      "Medium: standard-form integrals solvable by a single technique",
+      "Hard: multi-step combinations (substitution+parts, or property-based simplification) dominate JEE-level sets; pure direct standard-integral questions are rare"
+    ],
+    "hard_archetypes": [
+      "Definite integral via King's property + non-obvious simplification (not pure even/odd zero)",
+      "Area between curves requiring intersection solve + split integrals",
+      "Substitution + integration by parts multi-stage definite integral",
+      "Integral-defined F(x) with extrema of F on an interval",
+      "Piecewise integrand with symmetry that is NOT trivially odd",
+      "Trig/rational form needing identity reduction then standard integral"
+    ],
+    "banned_easy_templates": [
+      "∫sin^n cos^m with a single u-sub only (textbook)",
+      "∫ of an odd function over symmetric limits = 0 alone",
+      "Direct ∫x^n from 0 to b only",
+      "Plain antiderivative without multi-step setup"
+    ],
+    "hard_techniques": [
+      "Property first then integrate",
+      "Intersection + area split",
+      "Parts + substitution fusion"
+    ],
+    "target_difficulty": "hard",
+    "min_solve_techniques": 2
+  },
+  "4_Matrices_and_Determinants": {
+    "ncert_source": "Class 12 Ch3 Matrices, Ch4 Determinants",
+    "concepts": [
+      "Matrix definition, order, types (row, column, square, diagonal, scalar, identity, zero, symmetric, skew-symmetric)",
+      "Matrix operations: addition, scalar multiplication, multiplication",
+      "Transpose of a matrix and its properties",
+      "Symmetric/skew-symmetric decomposition of a square matrix",
+      "Invertible matrices",
+      "Elementary row/column operations",
+      "Determinant definition (2×2 and 3×3 expansion)",
+      "Properties of determinants",
+      "Minors and cofactors",
+      "Adjoint of a matrix, inverse via adjoint",
+      "Solving systems of linear equations by matrix method and Cramer's rule",
+      "Consistency/inconsistency of a system of linear equations",
+      "Area of a triangle using determinants"
+    ],
+    "formulas": [
+      "(AB)_ij = Σ_k A_ik B_kj (multiplication defined only when columns of A = rows of B)",
+      "(A')'=A; (A+B)'=A'+B'; (kA)'=kA'; (AB)'=B'A'",
+      "det (2×2) = ad−bc; det (3×3) via cofactor expansion along any row/column",
+      "det(A)=det(A'); det(kA)=k^n det(A) for n×n matrix; det(AB)=det(A)det(B)",
+      "Swapping two rows/columns changes sign of determinant; det=0 if two rows/columns are identical or proportional",
+      "adj(A) = transpose of the cofactor matrix; A⁻¹ = adj(A)/det(A), valid iff det(A)≠0",
+      "(AB)⁻¹ = B⁻¹A⁻¹",
+      "Area of triangle = 1/2 |det of matrix with rows (x1,y1,1),(x2,y2,1),(x3,y3,1)|",
+      "Cramer's rule: x=Dx/D, y=Dy/D, z=Dz/D; matrix method: AX=B ⇒ X=A⁻¹B"
+    ],
+    "standard_results": [
+      "Every square matrix A = 1/2(A+A') + 1/2(A-A'), a sum of a symmetric and a skew-symmetric matrix",
+      "A·adj(A) = adj(A)·A = |A|·I",
+      "|adj(A)| = |A|^(n-1) for an n×n matrix",
+      "Consistency test: det(A)≠0 ⇒ unique solution; det(A)=0 ⇒ check (adjA)B to determine infinite vs no solution"
+    ],
+    "allowed_methods": [
+      "Cofactor expansion for determinants",
+      "Elementary row operations to simplify a determinant before expansion",
+      "Matrix inversion strictly via the adjoint method (NCERT does not use row-reduction/Gauss elimination for inverses)",
+      "Matrix method or Cramer's rule for solving linear systems"
+    ],
+    "common_traps": [
+      "Attempting AB when column count of A ≠ row count of B",
+      "Assuming AB=BA (matrix multiplication is not commutative in general)",
+      "Sign errors in cofactor expansion (+,−,+,… checkerboard pattern)",
+      "Treating det(A)=0 as automatically 'no solution' without checking adj(A)B",
+      "Confusing minor and cofactor (cofactor = minor × (−1)^(i+j))",
+      "Believing det(kA)=k|A| instead of the correct k^n|A|",
+      "Forgetting order reversal in (AB)' = B'A'"
+    ],
+    "jee_patterns": [
+      "Proving matrix identities using listed properties",
+      "Classifying a system as unique/infinite/no-solution",
+      "Constructing/verifying symmetric–skew-symmetric decomposition",
+      "Simplifying large determinants via row operations before evaluation",
+      "Property-based proofs using adjoint/inverse relations"
+    ],
+    "constraints": [
+      "Rank of a matrix and Gauss-Jordan elimination are NOT in NCERT Class 12",
+      "Cayley-Hamilton theorem is NOT in NCERT",
+      "Eigenvalues/eigenvectors are NOT covered in NCERT"
+    ],
+    "difficulty_patterns": [
+      "9 hard / 9 medium / 0 easy — evenly split, weightage rank #5",
+      "Medium: direct computation of determinant/inverse/matrix product",
+      "Hard: property-based proofs, consistency analysis, and combined adjoint/inverse identity problems"
+    ],
+    "hard_archetypes": [
+      "Determinant properties + identity proof then numeric evaluation",
+      "Consistency of a 3-variable system with parameter λ (unique/infinite/none)",
+      "adj(A) and A^{-1} combined identity with one entry computation",
+      "Area via determinant + collinearity/orientation constraint",
+      "Matrix equation AX=B including singular case analysis"
+    ],
+    "banned_easy_templates": [
+      "Compute 2×2 determinant only",
+      "Multiply two small matrices only",
+      "Find inverse of a diagonal matrix only"
+    ],
+    "hard_techniques": [
+      "Property-based det reduction",
+      "Parameter case split",
+      "Adjoint-inverse linkage"
+    ],
+    "target_difficulty": "hard",
+    "min_solve_techniques": 2
+  },
+  "5_Differential_Equations": {
+    "ncert_source": "Class 12 Ch9 Differential Equations",
+    "concepts": [
+      "Order and degree of a differential equation",
+      "Formation of a differential equation from a family of curves (by eliminating arbitrary constants)",
+      "General and particular solutions",
+      "Variable separable method",
+      "Homogeneous differential equations",
+      "Linear differential equations of the first order",
+      "Integrating factor method"
+    ],
+    "formulas": [
+      "Order = highest order derivative present; Degree = power of highest order derivative after removing radicals/fractional powers",
+      "Variable separable: dy/dx=f(x)g(y) ⇒ ∫dy/g(y) = ∫f(x)dx",
+      "Homogeneous DE dy/dx=F(y/x): substitute y=vx ⇒ dy/dx=v+x·dv/dx, then separate variables",
+      "Linear DE (in y): dy/dx+Py=Q, Integrating Factor IF=e^∫P dx, solution y·IF=∫Q·IF dx+C",
+      "Linear DE (in x): dx/dy+P1x=Q1, IF=e^∫P1 dy, solution x·IF=∫Q1·IF dy+C"
+    ],
+    "standard_results": [
+      "A family of curves with n arbitrary constants gives rise to a differential equation of order n (differentiate n times, then eliminate constants)",
+      "A DE dy/dx=F(x,y) is homogeneous if F(λx,λy)=F(x,y), i.e. numerator/denominator are homogeneous polynomials of the same degree"
+    ],
+    "allowed_methods": [
+      "Variable separable method",
+      "Homogeneous substitution y=vx (or x=vy when more convenient)",
+      "Linear first-order solution via integrating factor"
+    ],
+    "common_traps": [
+      "Misjudging order/degree when radicals or fractional powers are present without first rationalizing",
+      "Forgetting the constant of integration '+C' in the general solution",
+      "Sign errors while computing e^∫P dx for the integrating factor",
+      "Forgetting product rule when substituting y=vx (dy/dx = v + x dv/dx, not just v)",
+      "Misidentifying whether the equation is linear in y or in x, leading to a harder integral"
+    ],
+    "jee_patterns": [
+      "Forming the differential equation from a geometric condition (tangent/normal property) then solving it",
+      "Two-stage problems: derive the DE first, then apply variable separable/homogeneous/linear method",
+      "Particular solution problems using a given initial condition"
+    ],
+    "constraints": [
+      "Second-order differential equations are NOT in NCERT Class 12",
+      "Exact differential equations are NOT in NCERT",
+      "Bernoulli's equation is NOT explicitly in NCERT",
+      "This chapter is restricted to first-order, first-degree equations solvable by variable separable, homogeneous, or linear methods"
+    ],
+    "difficulty_patterns": [
+      "6 hard / 5 medium / 0 easy — lowest weightage of the five (#11)",
+      "Fewer total JEE questions from this chapter, but rarely trivial: NCERT's narrow scope means questions typically combine formation-of-DE with a solving technique rather than testing either in isolation"
+    ],
+    "hard_archetypes": [
+      "Form DE from geometric condition (tangent/normal slope) then solve",
+      "Linear first-order with integrating factor + initial condition",
+      "Homogeneous DE with y=vx and a non-trivial integral",
+      "Modeling DE + particular solution evaluated at a point",
+      "Formation of order-n DE then solve by separation/linear method"
+    ],
+    "banned_easy_templates": [
+      "dy/dx = f(x) direct integrate only",
+      "Pure separable with given answer form and no multi-step geometry",
+      "Order and degree identification only"
+    ],
+    "hard_techniques": [
+      "Formation + solution two-stage",
+      "Integrating-factor method carefully",
+      "Initial-condition evaluation"
+    ],
+    "target_difficulty": "hard",
+    "min_solve_techniques": 2
+  },
+  "6_Sets_Relations_Functions": {
+    "ncert_source": "Class 11 Ch1 Sets, Ch2 Relations and Functions",
+    "concepts": [
+      "Sets: roster/set-builder, union, intersection, complement, power set",
+      "Venn diagram identities and counting with two/three sets",
+      "Relations: domain, range, reflexive, symmetric, transitive, equivalence",
+      "Functions: one-one, onto, into, bijective; composition fog",
+      "Inverse of a bijective function",
+      "Binary operations and identity/inverse elements (NCERT scope)"
+    ],
+    "formulas": [
+      "n(A∪B)=n(A)+n(B)-n(A∩B); three-set inclusion-exclusion",
+      "(fog)(x)=f(g(x)); (fog)^{-1}=g^{-1}∘f^{-1} when invertible",
+      "Number of relations from A to B = 2^{|A|·|B|}"
+    ],
+    "standard_results": [
+      "Equivalence relation ⇔ partitions the set",
+      "f invertible ⇔ f bijective"
+    ],
+    "allowed_methods": [
+      "Set algebra and Venn counting",
+      "Definition checks for relation properties",
+      "Composition and invertibility tests"
+    ],
+    "common_traps": [
+      "Confusing one-one with onto",
+      "Forgetting empty set in power set count",
+      "Wrong order of composition fog vs gof"
+    ],
+    "jee_patterns": [
+      "Counting equivalence relations / number of functions of a type",
+      "Composition invertibility multi-step",
+      "Three-set survey word problems with constraints"
+    ],
+    "constraints": [
+      "Advanced order theory (lattices, partial orders) beyond NCERT not required"
+    ],
+    "difficulty_patterns": [
+      "Hard: multi-condition function type + composition + inverse",
+      "Hard: three-set counting with inclusion and constraints",
+      "Easy banned: single two-set Venn direct plug"
+    ],
+    "hard_archetypes": [
+      "Number of onto/one-one functions with cardinality constraints",
+      "fog bijective conditions with careful logic",
+      "Three-set word problem needing inclusion-exclusion + case logic"
+    ],
+    "banned_easy_templates": [
+      "n(A∪B) with two given numbers only",
+      "Is relation reflexive only"
+    ],
+    "hard_techniques": [
+      "Cardinality constraints",
+      "Composition chain",
+      "Case counting"
+    ],
+    "target_difficulty": "hard",
+    "min_solve_techniques": 2
+  },
+  "7_Complex_Numbers_and_Quadratic_Equations": {
+    "ncert_source": "Class 11 Ch5 Complex Numbers and Quadratic Equations",
+    "concepts": [
+      "Complex number a+ib, conjugate, modulus, argument",
+      "Argand plane, polar form",
+      "Multiplication/division in polar form",
+      "Quadratic equations over reals and complexes",
+      "Nature of roots, sum and product of roots",
+      "Formation of quadratic with given roots"
+    ],
+    "formulas": [
+      "|z|=sqrt(a²+b²); arg(z) with quadrant care",
+      "z·z̄=|z|²; |z1 z2|=|z1||z2|; arg(z1 z2)=arg z1+arg z2",
+      "For ax²+bx+c=0: sum=-b/a, product=c/a; D=b²-4ac"
+    ],
+    "standard_results": [
+      "Non-real roots of real-coefficient quadratic occur in conjugate pairs",
+      "|z1+z2| ≤ |z1|+|z2|"
+    ],
+    "allowed_methods": [
+      "Cartesian and polar algebra",
+      "Modulus-argument method",
+      "Quadratic formula and Vieta"
+    ],
+    "common_traps": [
+      "Wrong quadrant for arg",
+      "Discriminant sign misread for complex roots"
+    ],
+    "jee_patterns": [
+      "Locus |z-z1|/|z-z2|=k in Argand plane",
+      "Quadratic with parameter for real roots",
+      "Simultaneous modulus and argument conditions"
+    ],
+    "constraints": [
+      "Full complex analysis beyond NCERT algebra is out of scope"
+    ],
+    "difficulty_patterns": [
+      "Hard: locus + modulus multi-constraint",
+      "Hard: parameter quadratic with root conditions"
+    ],
+    "hard_archetypes": [
+      "Argand locus from two modulus conditions",
+      "Quadratic parameter for real roots + inequality",
+      "Polar form power with principal argument casework"
+    ],
+    "banned_easy_templates": [
+      "Find |3+4i| only",
+      "Solve x²+1=0 only"
+    ],
+    "hard_techniques": [
+      "Locus geometry",
+      "Parameter discriminant",
+      "Argument case split"
+    ],
+    "target_difficulty": "hard",
+    "min_solve_techniques": 2
+  },
+  "8_Permutations_and_Combinations": {
+    "ncert_source": "Class 11 Ch7 Permutations and Combinations",
+    "concepts": [
+      "Fundamental principle of counting",
+      "P(n,r) and C(n,r) meanings",
+      "Permutations with restrictions",
+      "Circular permutations (basic)",
+      "Combinations with at-least / at-most constraints"
+    ],
+    "formulas": [
+      "P(n,r)=n!/(n-r)!; C(n,r)=n!/(r!(n-r)!)",
+      "C(n,r)=C(n,n-r); C(n,r)+C(n,r-1)=C(n+1,r)"
+    ],
+    "standard_results": [
+      "Complement counting often shorter for 'at least one' problems"
+    ],
+    "allowed_methods": [
+      "Casework counting",
+      "Complement method",
+      "Multiplication and addition principles"
+    ],
+    "common_traps": [
+      "P vs C confusion",
+      "Overcounting identical objects"
+    ],
+    "jee_patterns": [
+      "Digits/letters with separation constraints",
+      "At least one via complement",
+      "Multi-stage selection with capacity limits"
+    ],
+    "constraints": [
+      "Generating functions not in NCERT"
+    ],
+    "difficulty_patterns": [
+      "Hard: multi-constraint casework counting",
+      "Easy banned: single C(n,r) plug-in"
+    ],
+    "hard_archetypes": [
+      "Arrangement with separation conditions",
+      "Complement counting multi-condition",
+      "Numbers/words with digit restrictions and leading-zero rules"
+    ],
+    "banned_easy_templates": [
+      "Compute C(10,3) only",
+      "Simple P(n,2) only"
+    ],
+    "hard_techniques": [
+      "Casework",
+      "Complement",
+      "Restriction chaining"
+    ],
+    "target_difficulty": "hard",
+    "min_solve_techniques": 2
+  },
+  "9_Binomial_Theorem": {
+    "ncert_source": "Class 11 Ch8 Binomial Theorem",
+    "concepts": [
+      "Binomial expansion (a+b)^n for positive integral n",
+      "General term T_{r+1}",
+      "Middle term(s)",
+      "Coefficient extraction applications"
+    ],
+    "formulas": [
+      "(a+b)^n = Σ C(n,r) a^{n-r} b^r",
+      "T_{r+1}=C(n,r) a^{n-r} b^r"
+    ],
+    "standard_results": [
+      "Sum of coefficients = (1+1)^n; alternating sum = (1-1)^n"
+    ],
+    "allowed_methods": [
+      "General term analysis",
+      "Coefficient comparison",
+      "Ratio of consecutive terms for greatest term"
+    ],
+    "common_traps": [
+      "Off-by-one in general term index",
+      "Wrong middle term for even/odd n"
+    ],
+    "jee_patterns": [
+      "Coefficient of x^k with multiple contributing terms",
+      "Greatest term under numerical condition",
+      "Binomial coefficient identities"
+    ],
+    "constraints": [
+      "Negative/fractional index full series is beyond core NCERT Main focus here"
+    ],
+    "difficulty_patterns": [
+      "Hard: coefficient from constrained general term or product of expansions"
+    ],
+    "hard_archetypes": [
+      "Coeff of x^k in (ax+b/x)^n with multiple r contributing",
+      "Greatest term + numerical condition",
+      "Sum of selected coefficients via clever substitution"
+    ],
+    "banned_easy_templates": [
+      "Expand (a+b)^3 only",
+      "Find T2 only"
+    ],
+    "hard_techniques": [
+      "General term constraints",
+      "Substitution tricks"
+    ],
+    "target_difficulty": "hard",
+    "min_solve_techniques": 2
+  },
+  "10_Sequence_and_Series": {
+    "ncert_source": "Class 11 Ch9 Sequences and Series",
+    "concepts": [
+      "AP: nth term, sum of n terms",
+      "GP: nth term, finite and infinite sum |r|<1",
+      "AM-GM relation between two positives",
+      "Insertion of AMs and GMs"
+    ],
+    "formulas": [
+      "AP: a_n=a+(n-1)d; S_n=n/2[2a+(n-1)d]",
+      "GP: a_n=ar^{n-1}; S_n=a(r^n-1)/(r-1); S_∞=a/(1-r) for |r|<1",
+      "AM≥GM: (a+b)/2 ≥ √(ab) for a,b>0"
+    ],
+    "standard_results": [
+      "AM-GM equality iff a=b for two positives"
+    ],
+    "allowed_methods": [
+      "AP/GP term and sum formulas",
+      "AM-GM applications",
+      "Hybrid sequence analysis"
+    ],
+    "common_traps": [
+      "Wrong Sn when r=1",
+      "Infinite GP when |r|≥1"
+    ],
+    "jee_patterns": [
+      "Mixed AP-GP hybrid sequences",
+      "Sum condition solving for n",
+      "AM-GM style numerical constraints"
+    ],
+    "constraints": [
+      "Advanced special series beyond NCERT limited"
+    ],
+    "difficulty_patterns": [
+      "Hard: hybrid sequence + sum condition multi-step"
+    ],
+    "hard_archetypes": [
+      "Sequence linking AP and GP properties",
+      "Find n from Sn condition (quadratic in n)",
+      "AM-GM with equality case analysis"
+    ],
+    "banned_easy_templates": [
+      "Find 10th term of AP only",
+      "Sum of GP with r=2 only"
+    ],
+    "hard_techniques": [
+      "Hybrid AP-GP",
+      "Parameter n solve",
+      "Inequality equality"
+    ],
+    "target_difficulty": "hard",
+    "min_solve_techniques": 2
+  },
+  "11_Three_Dimensional_Geometry": {
+    "ncert_source": "Class 12 Ch11 Three Dimensional Geometry",
+    "concepts": [
+      "Direction cosines and direction ratios",
+      "Equation of a line in space",
+      "Angle between two lines",
+      "Shortest distance between skew lines",
+      "Basic coplanarity conditions (NCERT)"
+    ],
+    "formulas": [
+      "cos²α+cos²β+cos²γ=1",
+      "cosθ = |d1·d2|/(|d1||d2|)",
+      "Shortest distance between skew lines (NCERT form)"
+    ],
+    "standard_results": [
+      "Parallel ⇔ DRs proportional; perpendicular ⇔ d1·d2=0"
+    ],
+    "allowed_methods": [
+      "DR/DC conversion",
+      "Symmetric/parametric form of a line",
+      "Skew-distance formula"
+    ],
+    "common_traps": [
+      "Treating intersecting lines as skew",
+      "Sign errors in SD formula"
+    ],
+    "jee_patterns": [
+      "SD between skew lines with non-unit DR",
+      "Angle + geometric condition multi-step",
+      "Line through a point parallel/perpendicular to given lines"
+    ],
+    "constraints": [
+      "Stick to NCERT 3D line content; advanced plane theory only if in syllabus unit"
+    ],
+    "difficulty_patterns": [
+      "Hard: skew distance + geometric interpretation multi-step"
+    ],
+    "hard_archetypes": [
+      "Shortest distance between skew lines with non-normalized DR",
+      "Line satisfying two geometric conditions in space",
+      "Angle between lines from symmetric equations"
+    ],
+    "banned_easy_templates": [
+      "Find DCs from DRs only",
+      "Angle between i and j only"
+    ],
+    "hard_techniques": [
+      "Skew SD",
+      "Multi-condition line",
+      "Vector basics"
+    ],
+    "target_difficulty": "hard",
+    "min_solve_techniques": 2
+  },
+  "12_Vector_Algebra": {
+    "ncert_source": "Class 12 Ch10 Vector Algebra",
+    "concepts": [
+      "Vector addition and scalar multiplication",
+      "Section formula for vectors",
+      "Dot product and projections",
+      "Cross product and area of parallelogram",
+      "Scalar triple product (basic)"
+    ],
+    "formulas": [
+      "a·b=|a||b|cosθ; a×b=|a||b|sinθ n̂",
+      "|a×b|²=|a|²|b|²-(a·b)²",
+      "[a b c]=a·(b×c)"
+    ],
+    "standard_results": [
+      "a⊥b ⇔ a·b=0; a∥b ⇔ a×b=0"
+    ],
+    "allowed_methods": [
+      "Component form i,j,k",
+      "Dot/cross identities",
+      "Geometric magnitude interpretation"
+    ],
+    "common_traps": [
+      "Cross product non-commutativity",
+      "Confusing scalar vs vector product results"
+    ],
+    "jee_patterns": [
+      "Angle/area from vectors with constraints",
+      "Coplanarity via scalar triple product",
+      "Projection + perpendicular component multi-step"
+    ],
+    "constraints": [
+      "Advanced vector calculus out of scope"
+    ],
+    "difficulty_patterns": [
+      "Hard: combined dot and cross conditions"
+    ],
+    "hard_archetypes": [
+      "Vector satisfying simultaneous a·b and a×b conditions",
+      "Area/volume via triple product",
+      "Unit vector along projection under constraints"
+    ],
+    "banned_easy_templates": [
+      "Compute i·j only",
+      "Simple |a×b| for perpendicular unit vectors only"
+    ],
+    "hard_techniques": [
+      "Dot+cross fusion",
+      "Triple product",
+      "Projection casework"
+    ],
+    "target_difficulty": "hard",
+    "min_solve_techniques": 2
+  },
+  "13_Statistics_and_Probability": {
+    "ncert_source": "Class 11 Ch15 Statistics; Class 12 Ch13 Probability",
+    "concepts": [
+      "Mean, median, mode (basic)",
+      "Variance and standard deviation",
+      "Classical probability",
+      "Addition and multiplication theorems",
+      "Conditional probability and Bayes theorem",
+      "Independent events",
+      "Simple probability distributions (NCERT)"
+    ],
+    "formulas": [
+      "P(A∪B)=P(A)+P(B)-P(A∩B)",
+      "P(A|B)=P(A∩B)/P(B)",
+      "Bayes formula for a partition",
+      "Var(X)=E(X²)-(E(X))²"
+    ],
+    "standard_results": [
+      "Independent A,B ⇒ P(A∩B)=P(A)P(B)"
+    ],
+    "allowed_methods": [
+      "Total probability / tree diagrams",
+      "Bayes with partition",
+      "Variance from frequency data"
+    ],
+    "common_traps": [
+      "Mutually exclusive confused with independent",
+      "Wrong sample space for conditional probability"
+    ],
+    "jee_patterns": [
+      "Multi-stage Bayes",
+      "Variance after data scaling/shift",
+      "Independent events multi-condition"
+    ],
+    "constraints": [
+      "Advanced continuous distributions beyond NCERT not required"
+    ],
+    "difficulty_patterns": [
+      "Hard: multi-stage Bayes or combinatorics+probability fusion"
+    ],
+    "hard_archetypes": [
+      "Bayes with three hypotheses",
+      "Probability fused with permutations/combinations constraints",
+      "Variance after linear transformation of data"
+    ],
+    "banned_easy_templates": [
+      "Single coin P(H) only",
+      "Mean of 2,4,6 only"
+    ],
+    "hard_techniques": [
+      "Bayes multi-stage",
+      "Conditional+independence",
+      "Var transform"
+    ],
+    "target_difficulty": "hard",
+    "min_solve_techniques": 2
+  },
+  "14_Trigonometry": {
+    "ncert_source": "Class 11 Ch3 Trigonometric Functions; inverse trig as in NCERT",
+    "concepts": [
+      "Trigonometric ratios and identities",
+      "Compound and multiple angles",
+      "Transformation formulas",
+      "Trigonometric equations (general solutions)",
+      "Inverse trigonometric functions and principal values"
+    ],
+    "formulas": [
+      "sin(A±B), cos(A±B), tan(A±B)",
+      "sin2A, cos2A, tan2A; sin3A, cos3A",
+      "sum-to-product identities",
+      "sin^{-1}x + cos^{-1}x = π/2 on [-1,1]"
+    ],
+    "standard_results": [
+      "General solution patterns for sinθ=0, cosθ=0, sinθ=sinα, etc."
+    ],
+    "allowed_methods": [
+      "Identity reduction",
+      "Auxiliary angle method",
+      "Principal value handling for inverse trig"
+    ],
+    "common_traps": [
+      "Wrong general solution",
+      "Principal-value branch errors"
+    ],
+    "jee_patterns": [
+      "Multi-angle trig equation with interval filter",
+      "Expression simplify then evaluate",
+      "Inverse trig equation with domain restrictions"
+    ],
+    "constraints": [
+      "Advanced complex trigonometric series out of scope"
+    ],
+    "difficulty_patterns": [
+      "Hard: multi-angle equation + domain filter",
+      "Easy banned: evaluate sin(π/6) only"
+    ],
+    "hard_archetypes": [
+      "Trig equation with 2A/3A after identity, then general solution in an interval",
+      "Inverse trig expression with principal values",
+      "Max/min of a cosθ + b sinθ under constraint"
+    ],
+    "banned_easy_templates": [
+      "Evaluate sin30° only",
+      "Expand sin(A+B) only"
+    ],
+    "hard_techniques": [
+      "Multi-angle solve",
+      "Principal value care",
+      "a cos+b sin extrema"
+    ],
+    "target_difficulty": "hard",
+    "min_solve_techniques": 2
+  }
+}
