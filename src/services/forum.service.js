@@ -1,7 +1,7 @@
 import { ApiError } from "../utils/ApiError.js";
 import forumRepository from "../repository/forum.repository.js";
 import { uploadImageToCloudinary, deleteFileFromCloudinary } from "../utils/s3Upload.js";
-
+import ForumReport from "../models/forumReport.model.js";
 const FORUM_IMAGE_FOLDER = "forums";
 
 const defaultPopulate = [
@@ -41,6 +41,13 @@ export const createForum = async (data, userId, file) => {
 export const getForums = async (userId, options = {}) => {
   const { search, page = 1, limit = 10 } = options;
   const query = {};
+  const reportedForums = await ForumReport.find({
+    userId,
+}).select("forumId");
+
+const reportedForumIds = reportedForums.map(
+    report => report.forumId
+);
   if (search && search.trim()) {
     query.$or = [
       { title: { $regex: search.trim(), $options: "i" } },
@@ -48,7 +55,11 @@ export const getForums = async (userId, options = {}) => {
       { topic: { $regex: search.trim(), $options: "i" } },
     ];
   }
-
+if (reportedForumIds.length > 0) {
+    query._id = {
+        $nin: reportedForumIds,
+    };
+}
   const [all, total] = await Promise.all([
     forumRepository.find(query, {
       populate: defaultPopulate,
@@ -113,6 +124,29 @@ export const updateForum = async (id, data, userId, file) => {
   return await forumRepository.updateById(id, updateData);
 };
 
+export const reportForum = async (
+
+    forumId,
+
+    userId,
+
+    reason
+
+)=>{
+
+    const report = await ForumReport.create({
+
+        forumId,
+
+        userId,
+
+        reason
+
+    });
+
+    return report;
+
+}
 export const deleteForum = async (id, userId) => {
   const forum = await forumRepository.findById(id);
   if (!forum) throw new ApiError(404, "Forum not found");
@@ -303,6 +337,7 @@ export default {
   likeReply,
   deleteComment,
   deleteReply,
+  reportForum,
   getForumsForAdmin,
   deleteForumByAdmin,
   deleteCommentAdmin,

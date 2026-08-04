@@ -110,7 +110,38 @@ export const deleteReply = asyncHandler(async (req, res) => {
   const forum = await forumService.deleteReply(forumId, commentId, replyId, req.user._id);
   return res.status(200).json(ApiResponse.success(forum, "Reply deleted successfully"));
 });
+export const reportForum = async (req,res)=>{
 
+    try{
+
+        const { forumId } = req.params;
+
+        const { reason } = req.body;
+
+        const userId = req.user._id;
+
+        const result = await forumService.reportForum(
+    forumId,
+    userId,
+    reason
+);
+        return res.status(200).json({
+            success:true,
+            message:"The sender won't see if you read their messages until you reply or add them as a contact.",
+            data:result
+        });
+
+    }
+    catch(error){
+
+        return res.status(500).json({
+            success:false,
+            message:error.message
+        });
+
+    }
+
+}
 // ==================== ADMIN ====================
 
 export const getForumsAdmin = asyncHandler(async (req, res) => {

@@ -75,6 +75,7 @@ import {
   likeReply,
   deleteComment,
   deleteReply,
+  reportForum,
 } from "../controllers/forum.controller.js";
 import { getHallOfFame } from "../controllers/hallOfFame.controller.js";
 import { getMyEventsDashboard } from "../controllers/eventRegistration.controller.js";
@@ -387,6 +388,11 @@ router.put(
   verifyJWT,
   uploadImage.single("attachment"),
   updateForum,
+);
+router.post(
+    "/forums/:forumId/report",
+    verifyJWT,
+    reportForum
 );
 router.delete("/forums/:id", verifyJWT, deleteForum);
 router.post("/forums/:forumId/comments", verifyJWT, addComment);
