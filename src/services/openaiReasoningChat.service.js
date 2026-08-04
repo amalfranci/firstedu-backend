@@ -16,12 +16,17 @@ import {
 
 const OPENAI_CHAT_URL = "https://api.openai.com/v1/chat/completions";
 
-/** Solver fail-fast — do not hang 5 minutes. Override with OPENAI_SOLVER_TIMEOUT_MS. */
+/**
+ * Solver timeout. Default is fail-fast (45s) for short Main/UI calls.
+ * Hard JEE Advanced multi-concept dual-lock legitimately needs 2–3 min on
+ * o4-mini/o3-mini — scripts set OPENAI_SOLVER_TIMEOUT_MS accordingly.
+ * Cap 300s so a stuck call cannot hang forever.
+ */
 export const getOpenAISolverTimeoutMs = () =>
     Math.max(
         10_000,
         Math.min(
-            180_000,
+            300_000,
             Number(process.env.OPENAI_SOLVER_TIMEOUT_MS || 45_000)
         )
     );

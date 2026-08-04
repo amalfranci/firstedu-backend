@@ -45,6 +45,11 @@ import {
     inferNcertChaptersFromSlots,
 } from "./ncertChapterReference.service.js";
 import {
+    buildJeeAdvancedNcertSolverBlock,
+    inferJeeAdvancedTopicsFromSlots,
+    isJeeAdvancedMathsDataAvailable,
+} from "./jeeAdvancedMaths.service.js";
+import {
     parseNumber,
     formatValueForOption,
     buildOptionsAroundExpected,
@@ -70,6 +75,34 @@ const buildSolverNcertBlock = (questions = [], topic = "") => {
             })
             .filter((s) => s.chapter || s.conceptSlot || s.description);
         if (!slots.length) return "";
+
+        const hay = String(topic || "").toLowerCase();
+        const looksAdvanced =
+            hay.includes("jee advanced") ||
+            hay.includes("jee-advance") ||
+            hay.includes("iit-jee advanced") ||
+            hay.includes("advanced ›") ||
+            hay.includes("jee_advanced");
+
+        // Prefer Advanced pack when topic path is Advanced Maths and data exists.
+        if (looksAdvanced && isJeeAdvancedMathsDataAvailable()) {
+            const adv = buildJeeAdvancedNcertSolverBlock({
+                subject: topic,
+                examProfile: "jee_advanced",
+                slots,
+            });
+            if (adv) return adv;
+            // If slots didn't map, still try inferred Advanced topics
+            const inferred = inferJeeAdvancedTopicsFromSlots(slots);
+            if (inferred.length) {
+                return buildJeeAdvancedNcertSolverBlock({
+                    subject: topic,
+                    examProfile: "jee_advanced",
+                    topics: inferred.map((t) => t.topicId),
+                });
+            }
+        }
+
         const chapters = inferNcertChaptersFromSlots(slots).map((c) => c.label);
         if (!chapters.length) return "";
         return buildNcertSolverReferenceBlock({

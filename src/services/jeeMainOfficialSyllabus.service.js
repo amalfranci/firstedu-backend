@@ -160,6 +160,10 @@ export const buildOfficialSyllabusPlanningBlock = ({
     const profile = String(examProfile || "").toLowerCase();
     if (profile !== "jee_main" && profile !== "jee_advanced") return "";
 
+    // Advanced Maths syllabus is file-backed in jee_advanced/ (M01–M19).
+    // Planner injects that pack separately — do not double-inject Main units.
+    if (profile === "jee_advanced") return "";
+
     const units = getOfficialSyllabusUnits(subject);
     if (!units.length) return "";
 
@@ -193,6 +197,8 @@ export const buildOfficialSyllabusWriterBlock = ({
 } = {}) => {
     const profile = String(examProfile || "").toLowerCase();
     if (profile !== "jee_main" && profile !== "jee_advanced") return "";
+    // Advanced writer uses jeeAdvancedMaths syllabus block instead.
+    if (profile === "jee_advanced") return "";
     const units = getOfficialSyllabusUnits(subject);
     if (!units.length) return "";
 

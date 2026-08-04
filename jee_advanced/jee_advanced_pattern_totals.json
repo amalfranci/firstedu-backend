@@ -1,0 +1,46 @@
+{
+  "exam": "JEE Advanced",
+  "data_provenance": "Verified against JEE Advanced 2025 official pattern (IIT Kanpur) via Careers360 + esaral + PW reporting, Aug 2026",
+  "important_caveat": "IIT organizer changes exact section counts EVERY year. Do not hardcode these numbers into a generator without a per-year override.",
+  "structure_per_subject_per_paper": {
+    "Paper_1": {
+      "section_1_single_correct":   {"questions": 4, "options": 4},
+      "section_2_multi_correct":    {"questions": 3, "options": 4},
+      "section_3_numerical":        {"questions": 6, "options": 0},
+      "section_4_match_list":       {"questions": 4, "options": 4},
+      "subject_total_paper_1": 17
+    },
+    "Paper_2": {
+      "section_1_single_correct":   {"questions": 4, "options": 4},
+      "section_2_multi_correct":    {"questions": 3, "options": 4},
+      "section_3_numerical":        {"questions": 6, "options": 0},
+      "section_4_match_list":       {"questions": 4, "options": 4},
+      "subject_total_paper_2": 17
+    }
+  },
+  "combined_both_papers_per_subject": {
+    "single": 8,
+    "multi": 6,
+    "integer": 12,
+    "match": 8,
+    "total": 34
+  },
+  "all_subjects_table": {
+    "Physics":     {"single": 8, "multi": 6, "integer": 12, "match": 8, "total": 34},
+    "Chemistry":   {"single": 8, "multi": 6, "integer": 12, "match": 8, "total": 34},
+    "Mathematics": {"single": 8, "multi": 6, "integer": 12, "match": 8, "total": 34}
+  },
+  "grand_total_across_subjects": {
+    "single": 24,
+    "multi": 18,
+    "integer": 36,
+    "match": 24,
+    "total": 102
+  },
+  "option_count_rule": {
+    "single": 4,
+    "multi": 4,
+    "integer": 0,
+    "match": "4 answer options (A-D), each representing a full matching arrangement; underlying List-I has 4 entries, List-II may have 4-5 entries"
+  }
+}

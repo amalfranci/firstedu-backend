@@ -1,0 +1,613 @@
+{
+  "subject": "Mathematics",
+  "exam": "JEE Advanced 2026",
+  "schema_note": "Keyed by topic_id (matches maths_syllabus.json). Fields: concepts, formulas, methods, traps, hard_archetypes, banned_easy_templates, out_of_scope.",
+  "topics": {
+    "M01": {
+      "concepts": [
+        "Equivalence relations",
+        "Injective/surjective/bijective maps",
+        "Functional equations",
+        "Domain-range restriction under composition"
+      ],
+      "formulas": [
+        "f(g(x)) domain = {x in Dom(g): g(x) in Dom(f)}",
+        "For bijection f: f^-1(f(x)) = x"
+      ],
+      "methods": [
+        "Check well-definedness of a relation before checking equivalence",
+        "Verify injectivity via f(a)=f(b) => a=b; surjectivity by solving y=f(x) for x"
+      ],
+      "traps": [
+        "Confusing 'into' with 'onto'",
+        "Ignoring domain restrictions after composing functions",
+        "Assuming a relation is transitive without proof"
+      ],
+      "hard_archetypes": [
+        "Functional equations solved by substitution (e.g. f(x+y)=f(x)+f(y))",
+        "Composite function domain/range chains of 3+ functions",
+        "Proving a given relation is/isn't an equivalence relation with an abstract set"
+      ],
+      "banned_easy_templates": [
+        "Direct 'is this relation reflexive/symmetric/transitive' with no compound reasoning",
+        "Plug-in-a-number-and-evaluate f(g(x)) single step"
+      ],
+      "out_of_scope": [
+        "Group theory / abstract algebra structures beyond relations & functions"
+      ]
+    },
+    "M02": {
+      "concepts": [
+        "Polar/Euler form",
+        "De Moivre's theorem",
+        "Locus of complex numbers",
+        "Cube roots of unity identities (1+w+w^2=0)"
+      ],
+      "formulas": [
+        "z = r(cos \u03b8 + i sin \u03b8) = re^{i\u03b8}",
+        "|z1+z2|^2 = |z1|^2+|z2|^2+2Re(z1 bar z2)",
+        "z^n = r^n(cos n\u03b8 + i sin n\u03b8)"
+      ],
+      "methods": [
+        "Convert to polar form before powers/roots",
+        "Use rotation (multiply by e^{i\u03b8}) for geometric transformations"
+      ],
+      "traps": [
+        "Sign errors in argument when point is in 2nd/3rd/4th quadrant",
+        "Forgetting argument is defined mod 2\u03c0; principal value range (-\u03c0, \u03c0]"
+      ],
+      "hard_archetypes": [
+        "Locus problems combining |z-a|=k|z-b| type Apollonius circles",
+        "nth roots of unity summed against trigonometric identities",
+        "Complex number rotation used to prove geometric properties of triangles"
+      ],
+      "banned_easy_templates": [
+        "Simple 'find modulus and argument of z=a+ib' with no further step"
+      ],
+      "out_of_scope": [
+        "Complex analysis (contour integration, analytic functions)"
+      ]
+    },
+    "M03": {
+      "concepts": [
+        "Nature of roots via discriminant",
+        "Symmetric functions of roots",
+        "Common roots between two quadratics",
+        "Location of roots relative to an interval"
+      ],
+      "formulas": [
+        "sum = -b/a, product = c/a",
+        "D = b^2-4ac",
+        "For common root: eliminate x between two quadratics using cross-multiplication"
+      ],
+      "methods": [
+        "Use sign of f(k) and vertex location for 'roots lie between' problems",
+        "Express symmetric expressions (a^2+b^2, a^3+b^3) via sum & product"
+      ],
+      "traps": [
+        "Forgetting leading coefficient sign when reasoning about f(k) sign",
+        "Treating repeated root case (D=0) as two distinct conditions"
+      ],
+      "hard_archetypes": [
+        "Roots-in-interval problems needing 3 simultaneous conditions (D>=0, f(k) sign, vertex position)",
+        "Parametrized quadratics where a condition on roots must hold for all/some parameter values"
+      ],
+      "banned_easy_templates": [
+        "Plain 'solve for x' quadratic with no parameter or root-location reasoning"
+      ],
+      "out_of_scope": [
+        "Higher degree polynomial root-finding beyond quadratic (covered lightly under Algebra fundamentals only)"
+      ]
+    },
+    "M04": {
+      "concepts": [
+        "AP-GP mixed series (arithmetico-geometric)",
+        "Telescoping sums",
+        "Sum to infinity convergence condition |r|<1"
+      ],
+      "formulas": [
+        "S_n(AP) = n/2[2a+(n-1)d]",
+        "S_n(GP) = a(r^n-1)/(r-1)",
+        "S_inf(GP) = a/(1-r), |r|<1",
+        "sum k = n(n+1)/2, sum k^2, sum k^3 (NCERT formulas)"
+      ],
+      "methods": [
+        "Multiply-and-subtract technique for AGP (arithmetico-geometric) sums",
+        "Method of differences for series with non-constant pattern"
+      ],
+      "traps": [
+        "Applying S_inf formula when |r|>=1",
+        "Off-by-one errors in index/number of terms"
+      ],
+      "hard_archetypes": [
+        "Arithmetico-geometric series requiring the shift-and-subtract technique",
+        "Series requiring method of differences before summing",
+        "Nested sigma sums combining AP/GP with binomial coefficients"
+      ],
+      "banned_easy_templates": [
+        "Find nth term of a plain AP/GP with no combination"
+      ],
+      "out_of_scope": [
+        "Harmonic progression beyond basic relation with AP"
+      ]
+    },
+    "M05": {
+      "concepts": [
+        "Change of base formula",
+        "Circular vs linear permutations",
+        "Permutations with repetition/restriction",
+        "Combinations with grouping"
+      ],
+      "formulas": [
+        "log_a b = ln b/ln a",
+        "nPr = n!/(n-r)!",
+        "nCr = n!/(r!(n-r)!)",
+        "Circular permutations = (n-1)!"
+      ],
+      "methods": [
+        "Use complementary counting for 'at least one' conditions",
+        "Case-split by fixed positions/constraints before applying nCr"
+      ],
+      "traps": [
+        "Double counting when items are identical",
+        "Forgetting circular arrangement divides by n not counts n!"
+      ],
+      "hard_archetypes": [
+        "Distribution of distinct objects into identical groups (Stirling-style counting)",
+        "Multi-constraint seating arrangements (some together, some never together)",
+        "Log inequality problems needing domain + monotonicity reasoning together"
+      ],
+      "banned_easy_templates": [
+        "Plain nCr/nPr evaluation with given numbers, no constraint"
+      ],
+      "out_of_scope": [
+        "Formal generating functions"
+      ]
+    },
+    "M06": {
+      "concepts": [
+        "General term T_r+1",
+        "Middle term(s)",
+        "Greatest coefficient/term",
+        "Binomial coefficient identities"
+      ],
+      "formulas": [
+        "T_{r+1} = nCr a^{n-r} b^r",
+        "sum nCr = 2^n",
+        "sum r.nCr = n.2^{n-1}"
+      ],
+      "methods": [
+        "Use ratio T_{r+1}/T_r to find greatest term",
+        "Differentiate/integrate (1+x)^n to derive coefficient-sum identities"
+      ],
+      "traps": [
+        "Off-by-one in identifying which term is 'the rth term' vs T_r vs T_{r+1}",
+        "Sign errors when b is negative in (a+b)^n expansion"
+      ],
+      "hard_archetypes": [
+        "Proving binomial coefficient identities via calculus (differentiation/integration trick)",
+        "Multinomial-flavoured coefficient extraction problems",
+        "Sum of series expressed as coefficients from a cleverly chosen expansion"
+      ],
+      "banned_easy_templates": [
+        "Expand (a+b)^n fully with small n, no coefficient reasoning"
+      ],
+      "out_of_scope": [
+        "Binomial theorem for rational/negative index (not in JEE Advanced syllabus)"
+      ]
+    },
+    "M07": {
+      "concepts": [
+        "Matrix inverse via adjoint",
+        "Rank via row reduction",
+        "Consistency of linear systems",
+        "Symmetric/skew-symmetric decomposition"
+      ],
+      "formulas": [
+        "A^-1 = adj(A)/|A|",
+        "det(AB) = det(A)det(B)",
+        "Any square matrix = symmetric + skew-symmetric part"
+      ],
+      "methods": [
+        "Row-reduce augmented matrix to test consistency of a linear system",
+        "Use Cramer's rule only for unique-solution 3-variable systems"
+      ],
+      "traps": [
+        "Applying inverse formula when det(A)=0",
+        "Sign errors in cofactor expansion"
+      ],
+      "hard_archetypes": [
+        "System of equations with a parameter, discuss unique/infinite/no solution cases",
+        "Matrix equation problems requiring properties (A^2=A, orthogonal, idempotent) rather than direct computation",
+        "Proving determinant identities using row/column operations"
+      ],
+      "banned_easy_templates": [
+        "Compute determinant of a fixed 2x2/3x3 numeric matrix with no further reasoning"
+      ],
+      "out_of_scope": [
+        "Eigenvalues/eigenvectors, matrix diagonalization (not in JEE Advanced syllabus)"
+      ]
+    },
+    "M08": {
+      "concepts": [
+        "Bayes' theorem",
+        "Total probability",
+        "Independence vs mutual exclusivity",
+        "Probability via combinatorics"
+      ],
+      "formulas": [
+        "P(A|B) = P(A\u2229B)/P(B)",
+        "P(A) = sum P(A|B_i)P(B_i)",
+        "P(B_i|A) = P(A|B_i)P(B_i) / sum P(A|B_j)P(B_j)"
+      ],
+      "methods": [
+        "Draw a tree diagram for multi-stage experiments before writing probabilities",
+        "Distinguish 'with replacement' vs 'without replacement' explicitly"
+      ],
+      "traps": [
+        "Treating independent events as mutually exclusive (or vice versa)",
+        "Forgetting to condition correctly in sequential/dependent trials"
+      ],
+      "hard_archetypes": [
+        "Bayes' theorem with 3+ prior hypotheses and multi-step evidence",
+        "Probability of a random variable defined via a game/urn model requiring recursion",
+        "Combining P&C counting with conditional probability in one problem"
+      ],
+      "banned_easy_templates": [
+        "Single coin/die toss probability with no conditioning"
+      ],
+      "out_of_scope": [
+        "Continuous probability distributions (normal, etc.)"
+      ]
+    },
+    "M09": {
+      "concepts": [
+        "Variance/SD of grouped data (step-deviation method)",
+        "Effect of linear transformation on mean/variance",
+        "Combined mean/variance of two groups"
+      ],
+      "formulas": [
+        "Var(aX+b) = a^2 Var(X)",
+        "SD = sqrt(sum f(x-mean)^2 / N)",
+        "Combined mean = (n1 m1 + n2 m2)/(n1+n2)"
+      ],
+      "methods": [
+        "Use step-deviation/assumed-mean method for large grouped datasets",
+        "Apply shortcut variance formula: Var = E(X^2) - [E(X)]^2"
+      ],
+      "traps": [
+        "Using population vs sample variance formula inconsistently",
+        "Forgetting variance scales by a^2, not a, under linear transform"
+      ],
+      "hard_archetypes": [
+        "Given same mean but different variance across two frequency distributions \u2014 compare/derive missing frequencies",
+        "Reconstruct a dataset given mean & variance constraints (reverse problem)"
+      ],
+      "banned_easy_templates": [
+        "Compute mean of a small ungrouped list directly"
+      ],
+      "out_of_scope": [
+        "Correlation and regression (not in JEE Advanced syllabus)"
+      ]
+    },
+    "M10": {
+      "concepts": [
+        "General solution vs principal solution of trig equations",
+        "Inverse trig identity manipulation",
+        "Conditional trig identities in a triangle"
+      ],
+      "formulas": [
+        "sin \u03b8 = sin \u03b1 => \u03b8 = n\u03c0 + (-1)^n \u03b1",
+        "cos \u03b8 = cos \u03b1 => \u03b8 = 2n\u03c0 \u00b1 \u03b1",
+        "tan^-1 x + tan^-1 y = tan^-1[(x+y)/(1-xy)] (with domain caveat)"
+      ],
+      "methods": [
+        "Reduce multi-angle equations to a single trig function before solving",
+        "Check inverse-trig identity domain restrictions before combining terms"
+      ],
+      "traps": [
+        "Applying tan^-1 addition formula outside its valid domain (sign of 1-xy)",
+        "Losing solutions by dividing both sides by a trig expression that can be zero"
+      ],
+      "hard_archetypes": [
+        "General solution problems requiring domain restriction + verification of extraneous roots",
+        "Inverse trig equations needing substitution (x=sin\u03b8 / x=tan\u03b8) plus range analysis",
+        "Triangle identity proofs combining multiple trig formulae"
+      ],
+      "banned_easy_templates": [
+        "Evaluate a single standard trig value (sin30, cos60) with no equation to solve"
+      ],
+      "out_of_scope": [
+        "Hyperbolic trig functions"
+      ]
+    },
+    "M11": {
+      "concepts": [
+        "Family of lines",
+        "Angle bisector selection (internal vs external)",
+        "Concurrency of three lines",
+        "Locus of a variable point under linear constraints"
+      ],
+      "formulas": [
+        "Line through intersection: L1 + \u03bbL2 = 0",
+        "Distance = |ax0+by0+c|/sqrt(a^2+b^2)",
+        "Angle bisector: (a1x+b1y+c1)/sqrt(a1^2+b1^2) = \u00b1(a2x+b2y+c2)/sqrt(a2^2+b2^2)"
+      ],
+      "methods": [
+        "Use family-of-lines to avoid solving for exact intersection point",
+        "Determine correct bisector sign by testing a known interior point (e.g. centroid)"
+      ],
+      "traps": [
+        "Picking the wrong bisector sign (internal vs external) without testing a point",
+        "Sign errors in distance formula when line is not in normalized form"
+      ],
+      "hard_archetypes": [
+        "Locus of orthocentre/circumcentre as a vertex moves under a constraint",
+        "Problems combining family of lines with a tangency or distance condition",
+        "Reflection of a line/point in another line as an intermediate step"
+      ],
+      "banned_easy_templates": [
+        "Find distance between two given fixed points/lines with no locus or family reasoning"
+      ],
+      "out_of_scope": [
+        "Polar coordinates for straight lines"
+      ]
+    },
+    "M12": {
+      "concepts": [
+        "Family of circles",
+        "Radical axis",
+        "Orthogonality of two circles",
+        "Pole-polar relationship (implicit via tangent/chord of contact)"
+      ],
+      "formulas": [
+        "Family: S1 + \u03bbS2 = 0 (circles) or S + \u03bbL = 0 (circle+line)",
+        "Orthogonal circles: 2g1g2 + 2f1f2 = c1 + c2",
+        "Chord of contact from external point: T = 0"
+      ],
+      "methods": [
+        "Use radical axis to find common chord without solving simultaneously",
+        "Use director circle / chord of contact formulas rather than re-deriving tangents"
+      ],
+      "traps": [
+        "Forgetting condition for two circles to actually intersect before using common chord",
+        "Mixing up chord of contact (T=0) with the tangent equation at a point on the circle"
+      ],
+      "hard_archetypes": [
+        "Family of circles through intersection of a circle and line, subject to an extra tangency condition",
+        "Orthogonal circle construction problems",
+        "Locus of midpoint of chords subtending a fixed angle at centre"
+      ],
+      "banned_easy_templates": [
+        "Find centre and radius of a circle given directly in standard form"
+      ],
+      "out_of_scope": [
+        "Inversive geometry"
+      ]
+    },
+    "M13": {
+      "concepts": [
+        "Focal chord properties",
+        "Reflection property of conics",
+        "Auxiliary circle",
+        "Director circle",
+        "Chord in terms of parameters t1, t2"
+      ],
+      "formulas": [
+        "Parabola: y^2=4ax, focal distance = x+a",
+        "Ellipse: b^2=a^2(1-e^2)",
+        "Hyperbola: b^2=a^2(e^2-1)",
+        "Tangent to parabola at t: ty = x + at^2"
+      ],
+      "methods": [
+        "Use parametric point (at^2, 2at) etc. instead of Cartesian for tangent/normal problems",
+        "Apply the reflection/optical property to shortcut ray-path problems"
+      ],
+      "traps": [
+        "Confusing eccentricity formula direction for ellipse vs hyperbola",
+        "Sign errors in directrix location relative to centre for hyperbola"
+      ],
+      "hard_archetypes": [
+        "Chord joining two parametric points with a locus-of-midpoint requirement",
+        "Common tangent to two conics (parabola-ellipse, ellipse-hyperbola)",
+        "Problems combining focal chord property with a triangle/area condition"
+      ],
+      "banned_easy_templates": [
+        "Identify a,b,e from a conic equation given directly in standard form with no further step"
+      ],
+      "out_of_scope": [
+        "Polar equations of conics, general second-degree conic classification beyond standard forms"
+      ]
+    },
+    "M14": {
+      "concepts": [
+        "Shortest distance between skew lines",
+        "Foot of perpendicular from point to plane/line",
+        "Angle and distance formulas in vector/Cartesian form",
+        "Coplanarity condition"
+      ],
+      "formulas": [
+        "Shortest distance = |(a2-a1).(b1\u00d7b2)| / |b1\u00d7b2|",
+        "Distance point-to-plane = |ax0+by0+cz0+d|/sqrt(a^2+b^2+c^2)",
+        "Coplanar lines: scalar triple product = 0"
+      ],
+      "methods": [
+        "Convert Cartesian line/plane to vector form before cross/triple products",
+        "Use image (reflection) of a point in a plane via foot-of-perpendicular method"
+      ],
+      "traps": [
+        "Sign/direction errors in normal vector when plane equation isn't normalized",
+        "Confusing direction ratios with direction cosines (normalization step skipped)"
+      ],
+      "hard_archetypes": [
+        "Reflection of a line in a plane",
+        "Family of planes through intersection line of two planes with extra constraint",
+        "Shortest distance + foot of perpendicular combined multi-part problem"
+      ],
+      "banned_easy_templates": [
+        "Find direction ratios of a line given two points, no further construction"
+      ],
+      "out_of_scope": [
+        "Spherical/cylindrical coordinate systems"
+      ]
+    },
+    "M15": {
+      "concepts": [
+        "Indeterminate forms and L'Hospital",
+        "Sandwich/squeeze theorem",
+        "Differentiability implies continuity (not converse)",
+        "IVT applications"
+      ],
+      "formulas": [
+        "lim (sin x)/x = 1 (x->0)",
+        "lim (1+1/x)^x = e",
+        "L'Hospital: lim f/g = lim f'/g' when 0/0 or inf/inf"
+      ],
+      "methods": [
+        "Check indeterminate form before applying L'Hospital; reduce algebraically first if possible",
+        "Use standard limits + series expansion (e^x, sin x, ln(1+x)) for tricky limits"
+      ],
+      "traps": [
+        "Applying L'Hospital to a non-indeterminate form",
+        "Assuming continuity implies differentiability"
+      ],
+      "hard_archetypes": [
+        "Piecewise function continuity/differentiability at a junction point requiring parameter solving",
+        "Limits requiring series expansion rather than direct substitution or L'Hospital",
+        "IVT-based existence proofs for roots of a constructed function"
+      ],
+      "banned_easy_templates": [
+        "Direct substitution limit with no indeterminate form"
+      ],
+      "out_of_scope": [
+        "Epsilon-delta formal proofs of limits"
+      ]
+    },
+    "M16": {
+      "concepts": [
+        "Global vs local extrema",
+        "Rolle's/LMVT geometric meaning",
+        "Rate of change / related rates",
+        "Concavity via second derivative"
+      ],
+      "formulas": [
+        "Rolle's: f(a)=f(b) => exists c in (a,b), f'(c)=0",
+        "LMVT: f'(c) = [f(b)-f(a)]/(b-a)",
+        "Tangent: y-y1 = f'(x1)(x-x1)"
+      ],
+      "methods": [
+        "Use first-derivative sign chart for monotonicity/extrema classification",
+        "Reduce optimization word problems to single-variable function before differentiating"
+      ],
+      "traps": [
+        "Forgetting to check endpoints for global extrema on a closed interval",
+        "Misapplying Rolle's theorem when f is not differentiable on the open interval"
+      ],
+      "hard_archetypes": [
+        "Proving an inequality using MVT/Rolle's theorem",
+        "Optimization problems with a geometric constraint (min distance, max area) needing implicit differentiation",
+        "Existence-of-root proofs combining IVT and Rolle's"
+      ],
+      "banned_easy_templates": [
+        "Find tangent line at a given point on a simple explicit curve, no further reasoning"
+      ],
+      "out_of_scope": [
+        "Multivariable optimization (Lagrange multipliers)"
+      ]
+    },
+    "M17": {
+      "concepts": [
+        "Reduction formulae",
+        "Definite integral via property P1-P6 (King's rule etc.)",
+        "Integration of rational functions via partial fractions",
+        "Leibniz rule for differentiation under integral sign"
+      ],
+      "formulas": [
+        "Integral a to b f(x)dx = Integral a to b f(a+b-x)dx",
+        "d/dx [Integral_{g(x)}^{h(x)} f(t)dt] = f(h(x))h'(x) - f(g(x))g'(x)"
+      ],
+      "methods": [
+        "Exploit symmetry (even/odd, periodicity) before brute-force integrating",
+        "Choose substitution to convert to a standard/reduction-formula form"
+      ],
+      "traps": [
+        "Sign errors in partial fraction decomposition for repeated/irreducible factors",
+        "Forgetting +C for indefinite integrals in a multi-part derivation"
+      ],
+      "hard_archetypes": [
+        "Definite integrals solved via King's property / symmetry tricks rather than direct antiderivative",
+        "Integrals requiring a clever substitution not visible from the surface form",
+        "Leibniz-rule problems involving a function defined by an integral"
+      ],
+      "banned_easy_templates": [
+        "Standard antiderivative lookup with no manipulation (e.g. integral of x^n)"
+      ],
+      "out_of_scope": [
+        "Improper integrals with divergence analysis, multiple integrals"
+      ]
+    },
+    "M18": {
+      "concepts": [
+        "Order and degree of a DE",
+        "Homogeneous DE via v=y/x substitution",
+        "Linear first-order DE integrating factor",
+        "Area between curves via definite integration"
+      ],
+      "formulas": [
+        "Linear DE: dy/dx + P(x)y = Q(x); IF = e^{Integral P dx}",
+        "Solution: y.IF = Integral Q.IF dx + C",
+        "Area = Integral (upper - lower) dx"
+      ],
+      "methods": [
+        "Identify DE type (variable separable / homogeneous / linear) before choosing a method",
+        "Sketch region roughly before setting up the area integral (avoid sign errors)"
+      ],
+      "traps": [
+        "Missing the constant of integration when forming the general solution",
+        "Wrong integrating factor sign or forgetting exponent simplification"
+      ],
+      "hard_archetypes": [
+        "DE formation from a geometric property (tangent/normal condition) then solved",
+        "Area problems requiring intersection-point computation plus multiple sub-regions",
+        "DE problems requiring a non-obvious substitution to reduce to a standard type"
+      ],
+      "banned_easy_templates": [
+        "Direct variable-separable DE with no formation step or geometric context"
+      ],
+      "out_of_scope": [
+        "Second-order/higher-order differential equations, Laplace transforms"
+      ]
+    },
+    "M19": {
+      "concepts": [
+        "Scalar/vector triple product geometric meaning (volume, coplanarity)",
+        "Vector equation of line/plane",
+        "Projection of one vector on another"
+      ],
+      "formulas": [
+        "a.(b\u00d7c) = volume of parallelepiped",
+        "a\u00d7(b\u00d7c) = b(a.c) - c(a.b)",
+        "Projection of a on b = (a.b)/|b|"
+      ],
+      "methods": [
+        "Convert geometry word problems (area, volume) into vector operations directly",
+        "Use component form only after setting up the vector relationship symbolically"
+      ],
+      "traps": [
+        "Cross product order matters (a\u00d7b = -b\u00d7a) \u2014 sign errors are common",
+        "Confusing scalar triple product (number) with vector triple product (vector)"
+      ],
+      "hard_archetypes": [
+        "Volume/coplanarity problems combined with unknown parameter to solve for",
+        "Vector proofs of geometric theorems (e.g. diagonals of a parallelogram)",
+        "Combined vector + 3D geometry problems (shared with M14)"
+      ],
+      "banned_easy_templates": [
+        "Compute dot product of two given numeric vectors with no further step"
+      ],
+      "out_of_scope": [
+        "Tensor algebra, higher-dimensional vector spaces"
+      ]
+    }
+  }
+}

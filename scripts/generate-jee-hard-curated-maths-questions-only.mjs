@@ -1,11 +1,14 @@
 /**
  * JEE Main — Hard Mathematics, STAGE A only (+ dual-solver answer lock).
  *
- * GOLDEN STAGE (default) matches reference run:
- *   temp/.../2026-08-01_08-16-14
+ * GOLDEN STAGE (default) matches paper-quality reference run:
+ *   temp/jee-main-hard-10-curated-maths-questions-only/2026-08-01_11-25-30
+ *   (earlier lock probe: 2026-08-01_08-16-14)
  *   - 5 curated chapters (Coord Geo, LCD, Integrals, Matrices, DE)
  *   - gemini-3.5-flash generation
- *   - o4-mini dual independent solvers (drop if disagree)
+ *   - o4-mini + o3-mini dual independent solvers (drop if disagree)
+ *   - curatedMathSlotsOnly — no swap into probability / off-lock fluff
+ *   - distractor pass OFF (preserve clean exam-style options)
  *   - deferValidation=true (no Stage B full finalize)
  *
  * Stage A pipeline:
@@ -67,22 +70,46 @@ process.env.GEMINI_QB_MAX_ATTEMPTS = String(
     process.env.JEE_GEN_GEMINI_MAX_ATTEMPTS || 3
 );
 
-// Stage A accuracy stack for this script:
+// ---------------------------------------------------------------------------
+// GOLDEN STAGE lock — match 2026-08-01_11-25-30 paper quality
+// (script overrides beat loose .env defaults that degrade slot fidelity)
+// ---------------------------------------------------------------------------
+// Stage A accuracy stack:
 // 1) Hard-tier Gemini (not flash-lite) for generation
-// 2) Independent OpenAI solver locks the answer key after skeletons are built
-// 3) Drop items the solver could not lock (unless --keep-unverified)
+// 2) Independent dual OpenAI solvers lock the answer key
+// 3) Curated chapter/slot lock — no probability / off-lock swaps
+// 4) Drop items solvers could not dual-agree (unless --keep-unverified)
 process.env.GEMINI_HARD_TEXT_MODEL = String(
     argv["gemini-model"] ||
         process.env.JEE_GEN_GEMINI_HARD_MODEL ||
         process.env.GEMINI_HARD_TEXT_MODEL ||
         "gemini-3.5-flash"
 ).trim();
+
+// Lean Stage A path (same as 11-25-30 questions-only run)
+process.env.AI_QB_DEFER_VALIDATION = "1";
+process.env.EXAM_REFERENCE_RESEARCH_ENABLED =
+    process.env.EXAM_REFERENCE_RESEARCH_ENABLED || "0";
+process.env.AI_QB_DIFFICULTY_CALIBRATION =
+    process.env.AI_QB_DIFFICULTY_CALIBRATION || "0";
+// Distractor rewrite pass degrades clean JEE options (decimals / unit mix) —
+// keep OFF for this paper-quality stage.
+process.env.AI_QB_DISTRACTOR_PASS =
+    argv["distractor-pass"] === "1" || argv["distractor-pass"] === true
+        ? "1"
+        : "0";
+// Critical: prevent ARCHETYPE_SWAPPED into probability / off-lock fluff
+// (missing this was the main quality regression vs 11-25-30).
+process.env.AI_QB_CURATED_MATH_SLOTS_ONLY =
+    argv["all-units"] || process.env.JEE_GEN_ALL_UNITS === "1"
+        ? process.env.AI_QB_CURATED_MATH_SLOTS_ONLY || "0"
+        : "1";
+
 process.env.AI_QB_STAGE_A_ANSWER_LOCK = "1";
 if (argv["keep-unverified"] || argv.keepUnverified) {
     process.env.AI_QB_STAGE_A_DROP_UNVERIFIED = "0";
 } else {
-    process.env.AI_QB_STAGE_A_DROP_UNVERIFIED =
-        process.env.AI_QB_STAGE_A_DROP_UNVERIFIED || "1";
+    process.env.AI_QB_STAGE_A_DROP_UNVERIFIED = "1";
 }
 // Solver model for Stage A answer lock (same family as full-pipeline verify)
 const VERIFY_MODEL = String(
@@ -91,13 +118,19 @@ const VERIFY_MODEL = String(
 process.env.AI_QB_SOLVER_PROVIDER = "openai";
 process.env.AI_QB_SOLVER_PROVIDER_B = "openai";
 process.env.OPENAI_SOLVER_MODEL = VERIFY_MODEL;
-// Secondary must be a DIFFERENT model than primary for dual independence.
-const SECONDARY_SOLVER = String(
+// Secondary MUST differ from primary (dual independence). Never keep both as o4-mini.
+const rawSecondary = String(
     argv["verify-model-b"] ||
         process.env.JEE_GEN_VERIFY_MODEL_B ||
         process.env.OPENAI_SOLVER_FALLBACK_MODEL ||
-        (VERIFY_MODEL === "o4-mini" ? "o3-mini" : "o4-mini")
+        "o3-mini"
 ).trim();
+const SECONDARY_SOLVER =
+    rawSecondary && rawSecondary !== VERIFY_MODEL
+        ? rawSecondary
+        : VERIFY_MODEL === "o4-mini"
+          ? "o3-mini"
+          : "o4-mini";
 process.env.OPENAI_SOLVER_MODEL_B = SECONDARY_SOLVER;
 process.env.OPENAI_SOLVER_TIMEOUT_MS = String(
     argv["solver-timeout-ms"] || process.env.JEE_GEN_SOLVER_TIMEOUT_MS || 60000
@@ -108,11 +141,23 @@ process.env.AI_QB_BLIND_SOLVER = "1";
 process.env.AI_QB_DIFFICULTY_SELF_AUDIT = "1";
 process.env.AI_QB_HARD_MULTI_HEAVY = "1";
 process.env.AI_QB_FORCE_ALL_MULTI =
-    argv["all-multi"] || process.env.AI_QB_FORCE_ALL_MULTI || "1";
+    argv["all-multi"] === "0" || argv["all-multi"] === false
+        ? "0"
+        : "1";
 process.env.AI_QB_SKELETON_DIFFICULTY_SELF_AUDIT_MIN = String(
     argv["min-difficulty"] ||
         process.env.AI_QB_SKELETON_DIFFICULTY_SELF_AUDIT_MIN ||
         80
+);
+// Do NOT dump weak skeletons at last attempt (old floor 55 admitted non-paper items).
+// Keep near mid-run relax floor so quality matches 11-25-30 survivors.
+process.env.AI_QB_SKELETON_SELF_AUDIT_LAST_ATTEMPT_FLOOR = String(
+    argv["last-attempt-floor"] ||
+        process.env.AI_QB_SKELETON_SELF_AUDIT_LAST_ATTEMPT_FLOOR ||
+        72
+);
+process.env.AI_QB_SKELETON_SELF_AUDIT_RELAXED_FLOOR = String(
+    process.env.AI_QB_SKELETON_SELF_AUDIT_RELAXED_FLOOR || 72
 );
 process.env.AI_QB_VETERAN_DIFFICULTY = "1";
 
@@ -169,11 +214,10 @@ const {
 } = await import("../src/services/ncertChapterReference.service.js");
 
 // ---------------------------------------------------------------------------
-// GOLDEN STAGE (matches temp/.../2026-08-01_08-16-14):
-//   Stage A + answer lock · gemini-3.5-flash · o4-mini dual solvers
+// GOLDEN STAGE (paper quality: 2026-08-01_11-25-30):
+//   Stage A + dual answer lock · gemini-3.5-flash · o4-mini + o3-mini
 //   5 curated hard chapters only (default). Use --all-units for full 14.
-// Reference run: 4 dual-verified multi-step calculus items (series limit,
-// inscribed-area optim, King's property piecewise, trig definite integral).
+//   curatedMathSlotsOnly=1 · distractor pass OFF · last-attempt floor 72
 // ---------------------------------------------------------------------------
 const ALL_UNIT_TITLES = [
     "SETS, RELATIONS AND FUNCTIONS",
@@ -451,7 +495,7 @@ async function connectMongo() {
 async function main() {
     console.log(`\n=== JEE Main Hard Mathematics — STAGE A + STRICT ANSWER CORRECTNESS ===`);
     console.log(
-        `Mode     : ${USE_ALL_UNITS ? "all 14 units" : "GOLDEN curated-5 (08-16-14 stage)"}`
+        `Mode     : ${USE_ALL_UNITS ? "all 14 units" : "GOLDEN curated-5 (11-25-30 paper stage)"}`
     );
     console.log(`Chapters : ${CHAPTER_LABELS.join(" | ")}`);
     console.log(`Count    : ${REQUESTED_COUNT} (${DIFFICULTY})`);
@@ -462,7 +506,13 @@ async function main() {
         `Solvers  : primary=${VERIFY_MODEL} · secondary=${SECONDARY_SOLVER} · dual-agree required`
     );
     console.log(
-        `Strict correctness: ${process.env.AI_QB_STRICT_ANSWER_CORRECTNESS === "1" ? "ON (ship only dual-verified keys)" : "OFF"} · drop-unverified=${process.env.AI_QB_STAGE_A_DROP_UNVERIFIED}\n`
+        `Strict correctness: ${process.env.AI_QB_STRICT_ANSWER_CORRECTNESS === "1" ? "ON (ship only dual-verified keys)" : "OFF"} · drop-unverified=${process.env.AI_QB_STAGE_A_DROP_UNVERIFIED}`
+    );
+    console.log(
+        `Paper lock: curatedMathSlotsOnly=${process.env.AI_QB_CURATED_MATH_SLOTS_ONLY} · distractorPass=${process.env.AI_QB_DISTRACTOR_PASS} · skeletonMin=${process.env.AI_QB_SKELETON_DIFFICULTY_SELF_AUDIT_MIN} · lastAttemptFloor=${process.env.AI_QB_SKELETON_SELF_AUDIT_LAST_ATTEMPT_FLOOR}`
+    );
+    console.log(
+        `Reference : temp/jee-main-hard-10-curated-maths-questions-only/2026-08-01_11-25-30\n`
     );
 
     phaseStart("0", "Connect MongoDB", [
@@ -714,7 +764,7 @@ async function main() {
             {
                 stage: "stage_a_plus_answer_lock",
                 goldenStageReference:
-                    "temp/jee-main-hard-10-curated-maths-questions-only/2026-08-01_08-16-14",
+                    "temp/jee-main-hard-10-curated-maths-questions-only/2026-08-01_11-25-30",
                 chapterMode: USE_ALL_UNITS ? "all_14_units" : "curated_five",
                 stageBSkipped: [
                     "full_finalize_quality_eval",
@@ -727,9 +777,20 @@ async function main() {
                     "derivation_key_realign",
                     "independent_solver_answer_lock",
                     "dual_solver_strict_agree",
+                    "curated_math_slots_only",
+                    "distractor_pass_off",
                 ],
                 hardGeminiModel: process.env.GEMINI_HARD_TEXT_MODEL,
                 verifyModel: VERIFY_MODEL,
+                verifyModelB: SECONDARY_SOLVER,
+                curatedMathSlotsOnly: process.env.AI_QB_CURATED_MATH_SLOTS_ONLY === "1",
+                distractorPass: process.env.AI_QB_DISTRACTOR_PASS === "1",
+                skeletonDifficultyMin: Number(
+                    process.env.AI_QB_SKELETON_DIFFICULTY_SELF_AUDIT_MIN || 80
+                ),
+                lastAttemptFloor: Number(
+                    process.env.AI_QB_SKELETON_SELF_AUDIT_LAST_ATTEMPT_FLOOR || 72
+                ),
                 dropUnverified: process.env.AI_QB_STAGE_A_DROP_UNVERIFIED === "1",
                 lockedCount: questions.filter(
                     (q) => q._stageAAnswerLocked || q._solverTruthApplied
@@ -743,7 +804,7 @@ async function main() {
                 failError: failError ? String(failError?.message || failError) : null,
                 elapsedMs: elapsed(),
                 outDir,
-                note: "Stage A now locks answers via independent OpenAI solver when possible. Items with _stageAAnswerLocked=true have solver-truth keys; others are still provisional.",
+                note: "Golden paper stage locked to 2026-08-01_11-25-30: curated slots only, dual o4/o3 agree, distractor pass OFF, last-attempt floor 72. Items with _stageAAnswerLocked=true have dual-solver keys.",
             },
             null,
             2

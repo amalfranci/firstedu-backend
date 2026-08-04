@@ -3733,22 +3733,57 @@ const generateSolveFirstSingles = async ({
             const failCount = archetypeFailureCounts.get(currentArchetype) || 0;
             if (failCount < ARCHETYPE_SWAP_AFTER_FAILURES) continue;
 
-            const [replacement] = allocateRankedConceptSlots(1, {
-                examProfile,
-                subjectId,
-                slotOffset: archetypeOffset + i + attempts * 100,
-                subjects: competitiveExamPlan?.subjects,
-                preferPeak:
-                    difficultyResolution?.examCalibrated ||
-                    isVeteranDifficultyEnabled() ||
-                    String(effectiveDifficulty || "").toLowerCase() === "hard",
-                bankDifficulty: effectiveDifficulty,
-                excludeArchetypes: [
-                    ...excludeArchetypes,
-                    ...Array.from(archetypesEverUsed),
-                ],
-                maxPerArchetype: 1,
-            });
+            // Prefer on-syllabus replacements. For curated JEE Maths hard banks,
+            // never swap into probability/trig fluff slots that break blueprint lock
+            // (paper-quality lock: 2026-08-01_11-25-30 curated-5 stage).
+            const curatedMathOnly =
+                process.env.AI_QB_CURATED_MATH_SLOTS_ONLY === "1" ||
+                process.env.AI_QB_CURATED_MATH_SLOTS_ONLY === "true";
+            const mathSwapOk = (name = "") => {
+                const s = String(name || "").toLowerCase().trim();
+                if (!s) return false;
+                if (curatedMathOnly) {
+                    // Off-lock / fluff chapters and bare non-multi archetypes.
+                    if (
+                        /^(probability|trigonometry|algebra|statistics)$/.test(s) ||
+                        /probability|bayes|permutation|combination|binomial_coeff|statistics|heron|triangle_sides|random_variable|bayesian/.test(
+                            s
+                        )
+                    ) {
+                        return false;
+                    }
+                    // Only multi-technique curated-5 patterns (coord-geo / LCD /
+                    // integrals / matrices / DE) — reject bare single-word generics.
+                    return /area_|integral|limit|contin|diff|implicit|maxima|minima|circle|chord|parabola|ellipse|hyperbola|locus|tangent|matrix|determinant|coordinate|calculus|de_|differential|piecewise|series_limit|trig_limit|definite|line_and|derivative|family_of_lines|even_odd|kings_property|homogeneous/.test(
+                        s
+                    );
+                }
+                return true;
+            };
+
+            let replacement = null;
+            for (let tryN = 0; tryN < 8 && !replacement; tryN++) {
+                const [cand] = allocateRankedConceptSlots(1, {
+                    examProfile,
+                    subjectId,
+                    slotOffset: archetypeOffset + i + attempts * 100 + tryN * 17,
+                    subjects: competitiveExamPlan?.subjects,
+                    preferPeak:
+                        difficultyResolution?.examCalibrated ||
+                        isVeteranDifficultyEnabled() ||
+                        String(effectiveDifficulty || "").toLowerCase() ===
+                            "hard",
+                    bankDifficulty: effectiveDifficulty,
+                    excludeArchetypes: [
+                        ...excludeArchetypes,
+                        ...Array.from(archetypesEverUsed),
+                    ],
+                    maxPerArchetype: 1,
+                });
+                if (cand && cand !== currentArchetype && mathSwapOk(cand)) {
+                    replacement = cand;
+                }
+            }
             if (replacement && replacement !== currentArchetype) {
                 pipelineTrace("ARCHETYPE_SWAPPED_AFTER_FAILURES", {
                     slotIndex: i,
@@ -3756,6 +3791,7 @@ const generateSolveFirstSingles = async ({
                     to: replacement,
                     failures: failCount,
                     attempt: attempts,
+                    curatedMathOnly,
                 });
                 conceptSlots[i] = replacement;
                 slotPlans[i] = {

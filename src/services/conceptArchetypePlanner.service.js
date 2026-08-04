@@ -12,6 +12,10 @@ import {
     buildOfficialSyllabusPlanningBlock,
 } from "./jeeMainOfficialSyllabus.service.js";
 import { buildNcertHardArchetypePlanBlock } from "./ncertChapterReference.service.js";
+import {
+    buildJeeAdvancedPlannerInjection,
+    isJeeAdvancedMathsDataAvailable,
+} from "./jeeAdvancedMaths.service.js";
 
 /**
  * Known-deleted / out-of-scope topics per subject+exam, seeded into the planning
@@ -376,33 +380,66 @@ ${referenceBlock}`;
               .slice(0, 1500)}\nApply it exactly: add any topics the reviewer asked for, drop any they rejected (also add rejected ones to \`excludedTopics\`), and keep the rest of the plan fresh — do not simply repeat the previous slots.\n`
         : "";
 
-    const scoringConceptBlock = buildScoringConceptPlanningBlock({
-        subject: subjectId || subject,
-        examProfile,
-        bankDifficulty,
-        examCalibrated,
-        count: n,
-    });
+    const isAdvMaths =
+        String(examProfile || "").toLowerCase() === "jee_advanced" &&
+        isJeeAdvancedMathsDataAvailable() &&
+        /\bmath/i.test(
+            `${subjectId || ""} ${subject || ""} ${topic || ""} ${bankName || ""}`
+        );
 
-    const officialSyllabusBlock = buildOfficialSyllabusPlanningBlock({
-        subject: subjectId || subject,
-        examProfile,
-    });
+    // JEE Advanced Maths: prefer dedicated Advanced pack (syllabus M01–M19 +
+    // hard archetypes + scoring). Fall back to Main packs only if Advanced data missing.
+    const advancedPlannerBlock = isAdvMaths
+        ? buildJeeAdvancedPlannerInjection({
+              subject: subjectId || subject,
+              subjectId: subjectId || subject,
+              examProfile,
+              bankDifficulty,
+              count: n,
+              highOnly:
+                  String(bankDifficulty || "").toLowerCase().includes("hard") ||
+                  examCalibrated,
+          })
+        : "";
+
+    const scoringConceptBlock = isAdvMaths
+        ? ""
+        : buildScoringConceptPlanningBlock({
+              subject: subjectId || subject,
+              examProfile,
+              bankDifficulty,
+              examCalibrated,
+              count: n,
+          });
+
+    const officialSyllabusBlock = isAdvMaths
+        ? ""
+        : buildOfficialSyllabusPlanningBlock({
+              subject: subjectId || subject,
+              examProfile,
+          });
 
     // File-backed hard archetypes for Mathematics — steers planner away from easy drills
     // while keeping NCERT-only methods (accuracy/explanation path stays dual-solvable).
+    // Advanced path already includes hard archetypes in advancedPlannerBlock.
     const ncertHardArchetypeBlock =
-        String(bankDifficulty || "").toLowerCase().includes("hard") || examCalibrated
+        !isAdvMaths &&
+        (String(bankDifficulty || "").toLowerCase().includes("hard") ||
+            examCalibrated)
             ? buildNcertHardArchetypePlanBlock({
                   subject: subjectId || subject || topic || bankName,
               })
             : "";
 
-    const syllabusStep0 = officialSyllabusBlock
-        ? `**Step 0 — official syllabus lock (file-backed, not model memory):**
+    const syllabusStep0 = advancedPlannerBlock
+        ? `**Step 0 — official JEE Advanced Mathematics syllabus lock (file-backed):**
+Use the JEE Advanced topic list (M01–M19) and hard-topic scoring below as the only in-scope source. Put anything outside that list in \`excludedTopics\`. Prefer HIGH advanced_relevance topics for hard banks.
+${advancedPlannerBlock}`
+        : officialSyllabusBlock
+          ? `**Step 0 — official syllabus lock (file-backed, not model memory):**
 Use the OFFICIAL JEE (Main) 2026 unit list below as the only in-scope source. Put anything outside that list in \`excludedTopics\`. Do not rely on memorized/deleted chapters.
 ${officialSyllabusBlock}`
-        : `**Step 0 — determine syllabus scope first:**
+          : `**Step 0 — determine syllabus scope first:**
 Before planning any slot, work out what is actually in-scope for the **current ${examLabel} syllabus** on this topic (rationalized NCERT / current exam pattern). List any topic you are deliberately leaving out — recently deleted chapters, or topics that read as this subject but are outside this exam's syllabus (e.g. college-level material) — in \`excludedTopics\`. Then plan every slot ONLY from what remains in scope. If you are unsure whether a topic was deleted, treat it as excluded rather than risk an out-of-syllabus question.
 ${syllabusExclusionBlock}`;
 
@@ -417,7 +454,7 @@ ${buildVeteranExamineeCaliberBlock({ examProfile })}
 Your output steers a downstream question writer. Plan **exam-native items** (mixed by kind per the composition below) spread across the **full syllabus** for this topic — not one chapter only.
 
 ${syllabusStep0}
-${officialSyllabusBlock ? syllabusExclusionBlock : ""}
+${officialSyllabusBlock || advancedPlannerBlock ? syllabusExclusionBlock : ""}
 ${planningFeedbackBlock}
 ${excludeArchetypeBlock}${excludeStemBlock}${regenBlock}
 ${scoringConceptBlock}

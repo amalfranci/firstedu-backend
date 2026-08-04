@@ -66,6 +66,12 @@ import {
     inferNcertChaptersFromSlots,
 } from "./ncertChapterReference.service.js";
 import {
+    buildJeeAdvancedNcertWriterBlock,
+    buildJeeAdvancedSyllabusWriterBlock,
+    buildJeeAdvancedPatternAuthoringBlock,
+    isJeeAdvancedMathsDataAvailable,
+} from "./jeeAdvancedMaths.service.js";
+import {
     buildHardQuestionMandateBlock,
     buildSkeletonGenerationComplianceBlock,
     buildVeteranExamNativeGenerationBlock,
@@ -325,28 +331,55 @@ Each new skeleton must use a **different problem structure** from every excluded
               examCalibrated: difficultyResolution?.examCalibrated || false,
           })
         : "";
-    const officialSyllabusWriterBlock = isJeeStem
-        ? buildOfficialSyllabusWriterBlock({
-              subject: subject || bankName || topic,
-              examProfile,
-          })
-        : "";
+    const isAdvProfile = examProfile === "jee_advanced";
+    const slotSlice =
+        slotPlans?.slice(0, count)?.length
+            ? slotPlans.slice(0, count)
+            : conceptSlots.slice(0, count);
+    const subjectForRef = subject || bankName || topic;
+
+    // JEE Advanced Maths: dedicated pack from jee_advanced/ (M01–M19).
+    // JEE Main: Main official syllabus + NCERT chapter reference.
+    const advancedWriterPack =
+        isAdvProfile && isJeeAdvancedMathsDataAvailable()
+            ? [
+                  buildJeeAdvancedSyllabusWriterBlock({
+                      subject: subjectForRef,
+                      examProfile,
+                  }),
+                  buildJeeAdvancedPatternAuthoringBlock({ examProfile }),
+                  buildJeeAdvancedNcertWriterBlock({
+                      subject: subjectForRef,
+                      examProfile,
+                      slots: slotSlice,
+                  }),
+              ]
+                  .filter(Boolean)
+                  .join("\n")
+            : "";
+
+    const officialSyllabusWriterBlock =
+        isJeeStem && !advancedWriterPack
+            ? buildOfficialSyllabusWriterBlock({
+                  subject: subjectForRef,
+                  examProfile,
+              })
+            : "";
 
     // NCERT Class 11/12 chapter reference for the chapters this batch touches.
     // Chapters are inferred from the planned slots (their own `chapter` field
-    // when the caller set one, else from concept-slot vocabulary), so no extra
-    // param has to be threaded through the generation layers. Returns "" for
-    // non-Mathematics batches or when no chapter matches.
-    const ncertChapterReferenceBlock = isJeeStem
-        ? buildNcertChapterReferenceBlock({
-              chapters: inferNcertChaptersFromSlots(
-                  slotPlans?.slice(0, count)?.length
-                      ? slotPlans.slice(0, count)
-                      : conceptSlots.slice(0, count)
-              ).map((c) => c.label),
-              subject: subject || bankName || topic,
-          })
-        : "";
+    // when the caller set one, else from concept-slot vocabulary). Advanced
+    // path uses advancedWriterPack instead (richer M01–M19 hard context).
+    const ncertChapterReferenceBlock = advancedWriterPack
+        ? advancedWriterPack
+        : isJeeStem
+          ? buildNcertChapterReferenceBlock({
+                chapters: inferNcertChaptersFromSlots(slotSlice).map(
+                    (c) => c.label
+                ),
+                subject: subjectForRef,
+            })
+          : "";
 
     // Root-cause-1 fix from the correctness review: neither the hard-mandate
     // nor the difficulty self-audit ever recomputes the actual math, so a

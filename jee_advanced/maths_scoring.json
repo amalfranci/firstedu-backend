@@ -1,0 +1,218 @@
+{
+  "subject": "Mathematics",
+  "exam_context": "JEE Main + JEE Advanced (used to steer hard-topic planning for Advanced)",
+  "data_provenance": "Estimated from PYQ-trend analysis (not official NTA data); last grounded Aug 2026",
+  "topics": {
+    "M01": {
+      "jee_main_freq_band": "low",
+      "avg_q_per_session_jee_main": "0-1",
+      "difficulty_split": {
+        "easy": 40,
+        "medium": 45,
+        "hard": 15
+      },
+      "advanced_relevance": "medium",
+      "notes": "Often merged into a compound question with another topic (esp. M06 sets+relations)"
+    },
+    "M02": {
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 45,
+        "hard": 30
+      },
+      "advanced_relevance": "high",
+      "notes": "Locus/geometry-flavoured complex number problems are a classic Advanced hard archetype"
+    },
+    "M03": {
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 35,
+        "medium": 40,
+        "hard": 25
+      },
+      "advanced_relevance": "medium",
+      "notes": "Rarely standalone in Advanced; usually embedded in a larger algebra/calculus problem"
+    },
+    "M04": {
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 40,
+        "hard": 30
+      },
+      "advanced_relevance": "medium"
+    },
+    "M05": {
+      "jee_main_freq_band": "medium-high",
+      "avg_q_per_session_jee_main": "2-3",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 40,
+        "hard": 35
+      },
+      "advanced_relevance": "high",
+      "notes": "P&C is one of the most common Advanced 'hard counting' sources"
+    },
+    "M06": {
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 45,
+        "hard": 25
+      },
+      "advanced_relevance": "medium"
+    },
+    "M07": {
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "2-3",
+      "difficulty_split": {
+        "easy": 20,
+        "medium": 40,
+        "hard": 40
+      },
+      "advanced_relevance": "high",
+      "notes": "One of the highest-weightage JEE Main chapters per most PYQ trackers; also a reliable Advanced source (matrix property proofs)"
+    },
+    "M08": {
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "2-3",
+      "difficulty_split": {
+        "easy": 20,
+        "medium": 40,
+        "hard": 40
+      },
+      "advanced_relevance": "high",
+      "notes": "High-weightage in both exams; Bayes'/conditional-probability variants are Advanced staples"
+    },
+    "M09": {
+      "jee_main_freq_band": "low",
+      "avg_q_per_session_jee_main": "0-1",
+      "difficulty_split": {
+        "easy": 50,
+        "medium": 35,
+        "hard": 15
+      },
+      "advanced_relevance": "low"
+    },
+    "M10": {
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 35,
+        "medium": 40,
+        "hard": 25
+      },
+      "advanced_relevance": "medium",
+      "notes": "Lower weightage than a decade ago; still shows up combined with inverse-trig in Advanced"
+    },
+    "M11": {
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 40,
+        "hard": 30
+      },
+      "advanced_relevance": "medium"
+    },
+    "M12": {
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 40,
+        "hard": 30
+      },
+      "advanced_relevance": "medium"
+    },
+    "M13": {
+      "jee_main_freq_band": "medium-high",
+      "avg_q_per_session_jee_main": "2-3",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 40,
+        "hard": 35
+      },
+      "advanced_relevance": "high",
+      "notes": "Parabola/ellipse/hyperbola combined problems are a very common Advanced match/list-type source"
+    },
+    "M14": {
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "2-4",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 40,
+        "hard": 35
+      },
+      "advanced_relevance": "high",
+      "notes": "Per recent PYQ trackers, 3D Geometry is consistently top-weighted in JEE Main; strong Advanced overlap with Vectors (M19)"
+    },
+    "M15": {
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 40,
+        "hard": 30
+      },
+      "advanced_relevance": "medium"
+    },
+    "M16": {
+      "jee_main_freq_band": "medium-high",
+      "avg_q_per_session_jee_main": "2-3",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 40,
+        "hard": 35
+      },
+      "advanced_relevance": "high",
+      "notes": "MVT/Rolle's inequality proofs are a recurring Advanced hard archetype"
+    },
+    "M17": {
+      "jee_main_freq_band": "very high",
+      "avg_q_per_session_jee_main": "3-5",
+      "difficulty_split": {
+        "easy": 20,
+        "medium": 35,
+        "hard": 45
+      },
+      "advanced_relevance": "high",
+      "notes": "Definite integration is the single highest-yield Maths chapter in recent JEE Main PYQ trackers (up to 20 Qs across shifts in 2025); Calculus overall dominates both papers"
+    },
+    "M18": {
+      "jee_main_freq_band": "medium-high",
+      "avg_q_per_session_jee_main": "2-3",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 40,
+        "hard": 35
+      },
+      "advanced_relevance": "high",
+      "notes": "One of the top chapters flagged by 2026 trackers (Differential Equations)"
+    },
+    "M19": {
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 40,
+        "hard": 30
+      },
+      "advanced_relevance": "high",
+      "notes": "Frequently fused with M14 (3D Geometry) into one composite Advanced problem"
+    }
+  },
+  "broad_category_weightage_pct": {
+    "note": "Coarser cross-check figures from PYQ trend sources, % share of Maths paper",
+    "Calculus": "20-25%",
+    "Coordinate_Geometry": "12-15%",
+    "Algebra": "15-18%",
+    "Vectors_and_3D": "8-10%",
+    "Trigonometry": "5-7%"
+  }
+}

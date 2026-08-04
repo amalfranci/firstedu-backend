@@ -205,6 +205,10 @@ export const buildScoringConceptPlanningBlock = ({
     const profile = String(examProfile || "").toLowerCase();
     if (profile !== "jee_main" && profile !== "jee_advanced") return "";
 
+    // Advanced Maths scoring lives in jee_advanced/ — handled by planner injection.
+    // Avoid double-injecting Main April-2026 scoring into Advanced plans.
+    if (profile === "jee_advanced") return "";
+
     const preferHard =
         examCalibrated || String(bankDifficulty || "").toLowerCase() === "hard";
 
@@ -274,6 +278,14 @@ export const buildScoringConceptWriterBlock = ({
 } = {}) => {
     const profile = String(examProfile || "").toLowerCase();
     if (profile !== "jee_main" && profile !== "jee_advanced") return "";
+
+    // Advanced: writer already gets hard archetypes from jeeAdvancedMaths pack.
+    if (profile === "jee_advanced") {
+        return `
+**JEE ADVANCED HARDNESS LOCK:** Write IIT Advanced multi-step depth (insight, multi-condition stems, fused concepts). JEE Main one-line formula drills will be rejected even if the arithmetic is correct. Prefer HIGH advanced_relevance topics and hard_archetypes from the Advanced context pack.
+`;
+    }
+
     const preferHard =
         examCalibrated || String(difficulty || "").toLowerCase() === "hard";
     const top = getRankedScoringConcepts(subject, {

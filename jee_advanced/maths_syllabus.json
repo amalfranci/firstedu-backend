@@ -1,0 +1,224 @@
+{
+  "subject": "Mathematics",
+  "exam": "JEE Advanced 2026",
+  "source_note": "Extracted from official JEE Advanced 2026 syllabus PDF (same as 2025).",
+  "topics": [
+    {
+      "topic_id": "M01",
+      "chapter": "Sets, Relations and Functions",
+      "class_level": "11",
+      "subtopics": [
+        "Sets and representations, algebra of sets, De Morgan's laws",
+        "Cartesian product, relations, domain/codomain, equivalence relation",
+        "Functions as mappings: domain, codomain, range",
+        "Invertible, even/odd, into/onto/one-one functions",
+        "Special functions: polynomial, trig, exponential, log, power, |x|, [x]",
+        "Sum, difference, product, composition of functions"
+      ]
+    },
+    {
+      "topic_id": "M02",
+      "chapter": "Complex Numbers",
+      "class_level": "11",
+      "subtopics": [
+        "Algebra of complex numbers: addition, multiplication, conjugation",
+        "Polar representation, modulus and principal argument",
+        "Triangle inequality",
+        "Cube roots of unity",
+        "Geometric interpretation (locus problems)"
+      ]
+    },
+    {
+      "topic_id": "M03",
+      "chapter": "Quadratic Equations",
+      "class_level": "11",
+      "subtopics": [
+        "Fundamental theorem of algebra (statement)",
+        "Quadratic equations with real coefficients",
+        "Relations between roots and coefficients",
+        "Formation of quadratic equations with given roots",
+        "Symmetric functions of roots"
+      ]
+    },
+    {
+      "topic_id": "M04",
+      "chapter": "Sequences and Series",
+      "class_level": "11",
+      "subtopics": [
+        "Arithmetic and geometric progressions (AP, GP)",
+        "Arithmetic and geometric means",
+        "Sum of finite AP/GP, infinite GP series",
+        "Sum of first n naturals, sum of squares and cubes"
+      ]
+    },
+    {
+      "topic_id": "M05",
+      "chapter": "Logarithms, Permutations and Combinations",
+      "class_level": "11",
+      "subtopics": [
+        "Logarithms and their properties",
+        "Permutations and combinations (fundamental counting)"
+      ]
+    },
+    {
+      "topic_id": "M06",
+      "chapter": "Binomial Theorem",
+      "class_level": "11",
+      "subtopics": [
+        "Binomial theorem for positive integral index",
+        "Properties of binomial coefficients"
+      ]
+    },
+    {
+      "topic_id": "M07",
+      "chapter": "Matrices and Determinants",
+      "class_level": "12",
+      "subtopics": [
+        "Matrix algebra: addition, scalar mult., multiplication, transpose",
+        "Elementary row/column transformations",
+        "Determinant of a square matrix (order up to 3)",
+        "Adjoint and inverse of a square matrix (order up to 3)",
+        "Diagonal, symmetric, skew-symmetric matrices",
+        "Solving simultaneous linear equations in 2/3 variables"
+      ]
+    },
+    {
+      "topic_id": "M08",
+      "chapter": "Probability",
+      "class_level": "12",
+      "subtopics": [
+        "Random experiment, sample space, event types",
+        "Addition and multiplication rules of probability",
+        "Conditional probability, independence of events",
+        "Total probability theorem, Bayes' theorem",
+        "Probability via permutations and combinations"
+      ]
+    },
+    {
+      "topic_id": "M09",
+      "chapter": "Statistics",
+      "class_level": "11",
+      "subtopics": [
+        "Mean, median, mode (grouped/ungrouped)",
+        "Mean deviation, standard deviation, variance",
+        "Frequency distributions with same mean, different variance",
+        "Random variable: mean and variance"
+      ]
+    },
+    {
+      "topic_id": "M10",
+      "chapter": "Trigonometry",
+      "class_level": "11",
+      "subtopics": [
+        "Trig functions: periodicity, graphs",
+        "Addition/subtraction formulae, multiple/sub-multiple angles",
+        "General solution of trigonometric equations",
+        "Inverse trigonometric functions (principal value) and properties"
+      ]
+    },
+    {
+      "topic_id": "M11",
+      "chapter": "Straight Lines (2D Analytical Geometry)",
+      "class_level": "11",
+      "subtopics": [
+        "Cartesian coordinates, distance, section formula, shift of origin",
+        "Equation of a line: forms, angle between lines, distance of a point",
+        "Family of lines through intersection, angle bisector, concurrency",
+        "Centroid, orthocentre, incentre, circumcentre of a triangle"
+      ]
+    },
+    {
+      "topic_id": "M12",
+      "chapter": "Circles",
+      "class_level": "11",
+      "subtopics": [
+        "Equation of circle in various forms",
+        "Tangent, normal, chord equations",
+        "Parametric equations of a circle",
+        "Intersection of circle with line/circle",
+        "Family of circles through intersection points"
+      ]
+    },
+    {
+      "topic_id": "M13",
+      "chapter": "Conic Sections (Parabola, Ellipse, Hyperbola)",
+      "class_level": "11",
+      "subtopics": [
+        "Standard forms of parabola, ellipse, hyperbola",
+        "Foci, directrices, eccentricity",
+        "Parametric equations",
+        "Tangent and normal equations",
+        "Locus problems"
+      ]
+    },
+    {
+      "topic_id": "M14",
+      "chapter": "Three-Dimensional Geometry",
+      "class_level": "12",
+      "subtopics": [
+        "Distance between points, direction cosines/ratios",
+        "Equation of a line in space, skew lines, shortest distance",
+        "Equation of a plane, distance of point from plane",
+        "Angle between lines/planes/line-plane, coplanar lines"
+      ]
+    },
+    {
+      "topic_id": "M15",
+      "chapter": "Limits, Continuity and Differentiability",
+      "class_level": "11-12",
+      "subtopics": [
+        "Limit of a function at a real number",
+        "L'Hospital's rule",
+        "Continuity of sum/difference/product/quotient, composite functions",
+        "Intermediate value property",
+        "Derivative: sum/diff/product/quotient rule, chain rule",
+        "Derivatives of standard function classes"
+      ]
+    },
+    {
+      "topic_id": "M16",
+      "chapter": "Applications of Derivatives",
+      "class_level": "12",
+      "subtopics": [
+        "Tangents and normals",
+        "Increasing/decreasing functions, monotonicity",
+        "Second-order derivatives, maxima and minima",
+        "Rolle's theorem and Lagrange's mean value theorem",
+        "Implicit function derivatives up to order 2"
+      ]
+    },
+    {
+      "topic_id": "M17",
+      "chapter": "Integral Calculus",
+      "class_level": "12",
+      "subtopics": [
+        "Indefinite integrals of standard functions",
+        "Definite integral as limit of sums, properties, FTC",
+        "Integration by parts, substitution, partial fractions",
+        "Application of definite integrals to area under curves"
+      ]
+    },
+    {
+      "topic_id": "M18",
+      "chapter": "Differential Equations",
+      "class_level": "12",
+      "subtopics": [
+        "Formation of ordinary differential equations",
+        "Homogeneous differential equations, first order first degree",
+        "Variable separable method",
+        "Linear first-order differential equations"
+      ]
+    },
+    {
+      "topic_id": "M19",
+      "chapter": "Vectors",
+      "class_level": "12",
+      "subtopics": [
+        "Addition of vectors, scalar multiplication",
+        "Dot and cross products",
+        "Scalar and vector triple products",
+        "Geometrical interpretations"
+      ]
+    }
+  ]
+}
