@@ -16,6 +16,10 @@ import {
     buildJeeAdvancedPlannerInjection,
     isJeeAdvancedMathsDataAvailable,
 } from "./jeeAdvancedMaths.service.js";
+import {
+    buildJeeAdvancedPhysicsPlannerInjection,
+    isJeeAdvancedPhysicsDataAvailable,
+} from "./jeeAdvancedPhysics.service.js";
 
 /**
  * Known-deleted / out-of-scope topics per subject+exam, seeded into the planning
@@ -386,8 +390,15 @@ ${referenceBlock}`;
         /\bmath/i.test(
             `${subjectId || ""} ${subject || ""} ${topic || ""} ${bankName || ""}`
         );
+    const isAdvPhysics =
+        String(examProfile || "").toLowerCase() === "jee_advanced" &&
+        isJeeAdvancedPhysicsDataAvailable() &&
+        /\bphysics\b/i.test(
+            `${subjectId || ""} ${subject || ""} ${topic || ""} ${bankName || ""}`
+        );
+    const isAdvSubjectPack = isAdvMaths || isAdvPhysics;
 
-    // JEE Advanced Maths: prefer dedicated Advanced pack (syllabus M01–M19 +
+    // JEE Advanced Maths/Physics: prefer dedicated Advanced pack (syllabus +
     // hard archetypes + scoring). Fall back to Main packs only if Advanced data missing.
     const advancedPlannerBlock = isAdvMaths
         ? buildJeeAdvancedPlannerInjection({
@@ -400,9 +411,21 @@ ${referenceBlock}`;
                   String(bankDifficulty || "").toLowerCase().includes("hard") ||
                   examCalibrated,
           })
-        : "";
+        : isAdvPhysics
+          ? buildJeeAdvancedPhysicsPlannerInjection({
+                subject: subjectId || subject,
+                subjectId: subjectId || subject,
+                examProfile,
+                bankDifficulty,
+                count: n,
+                highOnly:
+                    String(bankDifficulty || "")
+                        .toLowerCase()
+                        .includes("hard") || examCalibrated,
+            })
+          : "";
 
-    const scoringConceptBlock = isAdvMaths
+    const scoringConceptBlock = isAdvSubjectPack
         ? ""
         : buildScoringConceptPlanningBlock({
               subject: subjectId || subject,
@@ -412,18 +435,16 @@ ${referenceBlock}`;
               count: n,
           });
 
-    const officialSyllabusBlock = isAdvMaths
+    const officialSyllabusBlock = isAdvSubjectPack
         ? ""
         : buildOfficialSyllabusPlanningBlock({
               subject: subjectId || subject,
               examProfile,
           });
 
-    // File-backed hard archetypes for Mathematics — steers planner away from easy drills
-    // while keeping NCERT-only methods (accuracy/explanation path stays dual-solvable).
-    // Advanced path already includes hard archetypes in advancedPlannerBlock.
+    // File-backed hard archetypes — Advanced Maths/Physics packs already inject them.
     const ncertHardArchetypeBlock =
-        !isAdvMaths &&
+        !isAdvSubjectPack &&
         (String(bankDifficulty || "").toLowerCase().includes("hard") ||
             examCalibrated)
             ? buildNcertHardArchetypePlanBlock({
@@ -431,9 +452,14 @@ ${referenceBlock}`;
               })
             : "";
 
+    const advSyllabusStep0Header = isAdvPhysics
+        ? `**Step 0 — official JEE Advanced Physics syllabus lock (file-backed):**
+Use the JEE Advanced Physics topic list (P01–P19) and hard-topic scoring below as the only in-scope source. Put anything outside that list in \`excludedTopics\`. Prefer HIGH advanced_relevance topics for hard banks.`
+        : `**Step 0 — official JEE Advanced Mathematics syllabus lock (file-backed):**
+Use the JEE Advanced topic list (M01–M19) and hard-topic scoring below as the only in-scope source. Put anything outside that list in \`excludedTopics\`. Prefer HIGH advanced_relevance topics for hard banks.`;
+
     const syllabusStep0 = advancedPlannerBlock
-        ? `**Step 0 — official JEE Advanced Mathematics syllabus lock (file-backed):**
-Use the JEE Advanced topic list (M01–M19) and hard-topic scoring below as the only in-scope source. Put anything outside that list in \`excludedTopics\`. Prefer HIGH advanced_relevance topics for hard banks.
+        ? `${advSyllabusStep0Header}
 ${advancedPlannerBlock}`
         : officialSyllabusBlock
           ? `**Step 0 — official syllabus lock (file-backed, not model memory):**

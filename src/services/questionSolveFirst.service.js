@@ -72,6 +72,12 @@ import {
     isJeeAdvancedMathsDataAvailable,
 } from "./jeeAdvancedMaths.service.js";
 import {
+    buildJeeAdvancedPhysicsNcertWriterBlock,
+    buildJeeAdvancedPhysicsSyllabusWriterBlock,
+    buildJeeAdvancedPhysicsPatternAuthoringBlock,
+    isJeeAdvancedPhysicsDataAvailable,
+} from "./jeeAdvancedPhysics.service.js";
+import {
     buildHardQuestionMandateBlock,
     buildSkeletonGenerationComplianceBlock,
     buildVeteranExamNativeGenerationBlock,
@@ -338,25 +344,47 @@ Each new skeleton must use a **different problem structure** from every excluded
             : conceptSlots.slice(0, count);
     const subjectForRef = subject || bankName || topic;
 
-    // JEE Advanced Maths: dedicated pack from jee_advanced/ (M01–M19).
+    // JEE Advanced Maths/Physics: dedicated packs from jee_advanced/.
     // JEE Main: Main official syllabus + NCERT chapter reference.
-    const advancedWriterPack =
-        isAdvProfile && isJeeAdvancedMathsDataAvailable()
-            ? [
-                  buildJeeAdvancedSyllabusWriterBlock({
-                      subject: subjectForRef,
-                      examProfile,
-                  }),
-                  buildJeeAdvancedPatternAuthoringBlock({ examProfile }),
-                  buildJeeAdvancedNcertWriterBlock({
-                      subject: subjectForRef,
-                      examProfile,
-                      slots: slotSlice,
-                  }),
-              ]
-                  .filter(Boolean)
-                  .join("\n")
-            : "";
+    const isAdvMathsWriter =
+        isAdvProfile &&
+        isJeeAdvancedMathsDataAvailable() &&
+        /\bmath/i.test(`${subjectForRef || ""}`);
+    const isAdvPhysicsWriter =
+        isAdvProfile &&
+        isJeeAdvancedPhysicsDataAvailable() &&
+        /\bphysics\b/i.test(`${subjectForRef || ""}`);
+    const advancedWriterPack = isAdvMathsWriter
+        ? [
+              buildJeeAdvancedSyllabusWriterBlock({
+                  subject: subjectForRef,
+                  examProfile,
+              }),
+              buildJeeAdvancedPatternAuthoringBlock({ examProfile }),
+              buildJeeAdvancedNcertWriterBlock({
+                  subject: subjectForRef,
+                  examProfile,
+                  slots: slotSlice,
+              }),
+          ]
+              .filter(Boolean)
+              .join("\n")
+        : isAdvPhysicsWriter
+          ? [
+                buildJeeAdvancedPhysicsSyllabusWriterBlock({
+                    subject: subjectForRef,
+                    examProfile,
+                }),
+                buildJeeAdvancedPhysicsPatternAuthoringBlock({ examProfile }),
+                buildJeeAdvancedPhysicsNcertWriterBlock({
+                    subject: subjectForRef,
+                    examProfile,
+                    slots: slotSlice,
+                }),
+            ]
+                .filter(Boolean)
+                .join("\n")
+          : "";
 
     const officialSyllabusWriterBlock =
         isJeeStem && !advancedWriterPack

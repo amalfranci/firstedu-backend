@@ -1,12 +1,12 @@
 /**
- * JEE Advanced Mathematics — file-backed knowledge pack.
+ * JEE Advanced Physics — file-backed knowledge pack.
  *
- * Data root: `jee_advanced/` (project root)
- *   - maths_syllabus.json              official Advanced topic map (M01–M19)
- *   - maths_ncert_context.json         concepts / formulas / hard archetypes / banned easy
- *   - maths_scoring.json               advanced_relevance + difficulty splits
- *   - maths_question_type_quotas.json  bank quotas by type × difficulty
- *   - jee_advanced_pattern_totals.json paper section pattern (single/multi/integer/match)
+ * Data root: `jee_advanced/physics/` (project root)
+ *   - physics_syllabus.json              official Advanced topic map (P01–P19)
+ *   - physics_ncert_context.json         concepts / formulas / hard archetypes / banned easy
+ *   - physics_scoring.json               advanced_relevance + difficulty splits
+ *   - physics_question_type_quotas.json  bank quotas by type × difficulty
+ *   - ../jee_advanced_pattern_totals.json shared paper section pattern
  *
  * Prefer these over JEE Main scoring/syllabus when examProfile === "jee_advanced".
  */
@@ -16,14 +16,14 @@ import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_ROOT = join(__dirname, "..", "..", "jee_advanced");
+const DATA_ROOT = join(__dirname, "..", "..", "jee_advanced", "physics");
 
 const PATHS = {
-    syllabus: join(DATA_ROOT, "maths_syllabus.json"),
-    ncert: join(DATA_ROOT, "maths_ncert_context.json"),
-    scoring: join(DATA_ROOT, "maths_scoring.json"),
-    quotas: join(DATA_ROOT, "maths_question_type_quotas.json"),
-    pattern: join(DATA_ROOT, "jee_advanced_pattern_totals.json"),
+    syllabus: join(DATA_ROOT, "physics_syllabus.json"),
+    ncert: join(DATA_ROOT, "physics_ncert_context.json"),
+    scoring: join(DATA_ROOT, "physics_scoring.json"),
+    quotas: join(DATA_ROOT, "physics_question_type_quotas.json"),
+    pattern: join(__dirname, "..", "..", "jee_advanced", "jee_advanced_pattern_totals.json"),
 };
 
 const cache = new Map();
@@ -45,8 +45,8 @@ const loadJson = (key) => {
     }
 };
 
-const isMathSubject = (subject = "") =>
-    /\bmath(?:s|ematics)?\b/i.test(String(subject || ""));
+const isPhysicsSubject = (subject = "") =>
+    /\bphysics\b/i.test(String(subject || ""));
 
 const isAdvancedProfile = (examProfile = "") =>
     String(examProfile || "").toLowerCase() === "jee_advanced";
@@ -68,17 +68,17 @@ const bullets = (items = [], max = 0) => {
 // Loaders
 // ---------------------------------------------------------------------------
 
-export const isJeeAdvancedMathsDataAvailable = () =>
+export const isJeeAdvancedPhysicsDataAvailable = () =>
     Boolean(loadJson("syllabus")?.topics?.length && loadJson("ncert")?.topics);
 
-export const loadJeeAdvancedPattern = () => loadJson("pattern");
-export const loadJeeAdvancedSyllabus = () => loadJson("syllabus");
-export const loadJeeAdvancedNcert = () => loadJson("ncert");
-export const loadJeeAdvancedScoring = () => loadJson("scoring");
-export const loadJeeAdvancedQuotas = () => loadJson("quotas");
+export const loadJeeAdvancedPhysicsPattern = () => loadJson("pattern");
+export const loadJeeAdvancedPhysicsSyllabus = () => loadJson("syllabus");
+export const loadJeeAdvancedPhysicsNcert = () => loadJson("ncert");
+export const loadJeeAdvancedPhysicsScoring = () => loadJson("scoring");
+export const loadJeeAdvancedPhysicsQuotas = () => loadJson("quotas");
 
-/** All Advanced maths topics: { topicId, chapter, classLevel, subtopics, scoring, ncert, quotas } */
-export const getJeeAdvancedMathTopics = () => {
+/** All Advanced physics topics: { topicId, chapter, classLevel, subtopics, scoring, ncert, quotas } */
+export const getJeeAdvancedPhysicsTopics = () => {
     const syllabus = loadJson("syllabus");
     const ncert = loadJson("ncert");
     const scoring = loadJson("scoring");
@@ -99,16 +99,16 @@ export const getJeeAdvancedMathTopics = () => {
     });
 };
 
-export const listJeeAdvancedChapterLabels = () =>
-    getJeeAdvancedMathTopics().map((t) => t.chapter);
+export const listJeeAdvancedPhysicsChapterLabels = () =>
+    getJeeAdvancedPhysicsTopics().map((t) => t.chapter);
 
-export const getHighRelevanceAdvancedTopics = () =>
-    getJeeAdvancedMathTopics().filter(
+export const getHighRelevanceAdvancedPhysicsTopics = () =>
+    getJeeAdvancedPhysicsTopics().filter(
         (t) => String(t.scoring?.advanced_relevance || "").toLowerCase() === "high"
     );
 
-export const getMediumPlusAdvancedTopics = () =>
-    getJeeAdvancedMathTopics().filter((t) => {
+export const getMediumPlusAdvancedPhysicsTopics = () =>
+    getJeeAdvancedPhysicsTopics().filter((t) => {
         const r = String(t.scoring?.advanced_relevance || "").toLowerCase();
         return r === "high" || r === "medium";
     });
@@ -116,8 +116,8 @@ export const getMediumPlusAdvancedTopics = () =>
 /**
  * Soft-match chapter / slot text → Advanced topic entry.
  */
-export const matchJeeAdvancedTopic = (chapterOrSlot = "") => {
-    const topics = getJeeAdvancedMathTopics();
+export const matchJeeAdvancedPhysicsTopic = (chapterOrSlot = "") => {
+    const topics = getJeeAdvancedPhysicsTopics();
     if (!topics.length) return null;
     const needle = normalizeForMatch(chapterOrSlot);
     if (!needle) return null;
@@ -159,7 +159,7 @@ export const matchJeeAdvancedTopic = (chapterOrSlot = "") => {
     return bestScore >= 35 ? best : null;
 };
 
-export const resolveJeeAdvancedTopics = (chaptersOrIds = []) => {
+export const resolveJeeAdvancedPhysicsTopics = (chaptersOrIds = []) => {
     const requested = (Array.isArray(chaptersOrIds) ? chaptersOrIds : [chaptersOrIds])
         .map((c) => String(c || "").trim())
         .filter(Boolean);
@@ -168,10 +168,10 @@ export const resolveJeeAdvancedTopics = (chaptersOrIds = []) => {
     const seen = new Set();
     for (const name of requested) {
         // Direct topic id
-        const byId = getJeeAdvancedMathTopics().find(
+        const byId = getJeeAdvancedPhysicsTopics().find(
             (t) => t.topicId.toLowerCase() === name.toLowerCase()
         );
-        const hit = byId || matchJeeAdvancedTopic(name);
+        const hit = byId || matchJeeAdvancedPhysicsTopic(name);
         if (!hit) {
             unmatched.push(name);
             continue;
@@ -186,8 +186,8 @@ export const resolveJeeAdvancedTopics = (chaptersOrIds = []) => {
 /**
  * Infer topics from planned slots (labels / conceptSlot / chapter field).
  */
-export const inferJeeAdvancedTopicsFromSlots = (slots = []) => {
-    const topics = getJeeAdvancedMathTopics();
+export const inferJeeAdvancedPhysicsTopicsFromSlots = (slots = []) => {
+    const topics = getJeeAdvancedPhysicsTopics();
     if (!topics.length) return [];
 
     const index = topics.map((t) => {
@@ -224,11 +224,11 @@ export const inferJeeAdvancedTopicsFromSlots = (slots = []) => {
                 : "";
         if (explicit) {
             const direct =
-                getJeeAdvancedMathTopics().find(
+                getJeeAdvancedPhysicsTopics().find(
                     (t) =>
                         t.topicId.toLowerCase() === explicit.toLowerCase() ||
                         normalizeForMatch(t.chapter) === normalizeForMatch(explicit)
-                ) || matchJeeAdvancedTopic(explicit);
+                ) || matchJeeAdvancedPhysicsTopic(explicit);
             if (direct) {
                 bump(direct.topicId, direct, 10);
                 continue;
@@ -275,7 +275,7 @@ export const inferJeeAdvancedTopicsFromSlots = (slots = []) => {
  * Default paper-section mix for one subject one paper (from pattern file).
  * Returns { single, multi, integer, match, total }.
  */
-export const getAdvancedPaperTypeCounts = ({
+export const getAdvancedPhysicsPaperTypeCounts = ({
     paper = 1,
     scale = 1,
 } = {}) => {
@@ -308,15 +308,15 @@ export const getAdvancedPaperTypeCounts = ({
  * Build a small hard bank plan: only hard singles from high-relevance topics
  * (quality-first Stage A). Paper-mode expands later.
  */
-export const buildAdvancedHardSlotTargets = ({
+export const buildAdvancedPhysicsHardSlotTargets = ({
     count = 10,
     highOnly = true,
     hardOnly = true,
 } = {}) => {
     const pool = highOnly
-        ? getHighRelevanceAdvancedTopics()
-        : getMediumPlusAdvancedTopics();
-    const topics = pool.length ? pool : getJeeAdvancedMathTopics();
+        ? getHighRelevanceAdvancedPhysicsTopics()
+        : getMediumPlusAdvancedPhysicsTopics();
+    const topics = pool.length ? pool : getJeeAdvancedPhysicsTopics();
     if (!topics.length) return [];
 
     const targets = [];
@@ -345,17 +345,17 @@ export const buildAdvancedHardSlotTargets = ({
 // Prompt blocks
 // ---------------------------------------------------------------------------
 
-export const buildJeeAdvancedSyllabusPlanningBlock = ({
+export const buildJeeAdvancedPhysicsSyllabusPlanningBlock = ({
     subject = "",
     examProfile = "",
     topicFilter = null,
     maxSubtopics = 4,
 } = {}) => {
     if (!isAdvancedProfile(examProfile)) return "";
-    if (subject && !isMathSubject(subject)) return "";
+    if (subject && !isPhysicsSubject(subject)) return "";
     const topics = topicFilter?.length
-        ? resolveJeeAdvancedTopics(topicFilter).matched
-        : getJeeAdvancedMathTopics();
+        ? resolveJeeAdvancedPhysicsTopics(topicFilter).matched
+        : getJeeAdvancedPhysicsTopics();
     if (!topics.length) return "";
 
     const lines = topics.map((t, i) => {
@@ -368,29 +368,29 @@ export const buildJeeAdvancedSyllabusPlanningBlock = ({
     });
 
     return `
-**OFFICIAL JEE ADVANCED 2026 MATHEMATICS SYLLABUS — AUTHORITATIVE (file-backed, not model memory):**
+**OFFICIAL JEE ADVANCED 2026 PHYSICS SYLLABUS — AUTHORITATIVE (file-backed, not model memory):**
 Source: ${loadJson("syllabus")?.source_note || "JEE Advanced 2026 syllabus PDF"}.
-Every planned slot MUST map to one of these topic ids (M01–M19). Put anything outside this list in \`excludedTopics\`.
-Do **not** use JEE Main-only unit boundaries when they conflict — Advanced splits (e.g. Circles vs Conics, AOD vs LCD) win.
+Every planned slot MUST map to one of these topic ids (P01–P19). Put anything outside this list in \`excludedTopics\`.
+Do **not** use JEE Main-only unit boundaries when they conflict — Advanced Physics depth (multi-block, rotation+energy, field+potential, EMI+circuits) wins.
 
 ${lines.join("\n")}
 `;
 };
 
-export const buildJeeAdvancedSyllabusWriterBlock = ({
+export const buildJeeAdvancedPhysicsSyllabusWriterBlock = ({
     subject = "",
     examProfile = "",
     topicIds = [],
 } = {}) => {
     if (!isAdvancedProfile(examProfile)) return "";
-    if (subject && !isMathSubject(subject)) return "";
+    if (subject && !isPhysicsSubject(subject)) return "";
     const topics = topicIds?.length
-        ? resolveJeeAdvancedTopics(topicIds).matched
-        : getJeeAdvancedMathTopics();
+        ? resolveJeeAdvancedPhysicsTopics(topicIds).matched
+        : getJeeAdvancedPhysicsTopics();
     if (!topics.length) return "";
 
     return `
-**JEE ADVANCED 2026 syllabus lock (Mathematics):** Generate ONLY within these topics — ${topics
+**JEE ADVANCED 2026 syllabus lock (Physics):** Generate ONLY within these topics — ${topics
         .map((t) => `${t.topicId} ${t.chapter}`)
         .join("; ")}.
 Depth must match **IIT Advanced** (insight + multi-stage fusion), not JEE Main speed drills.
@@ -402,44 +402,43 @@ Depth must match **IIT Advanced** (insight + multi-stage fusion), not JEE Main s
  * correct while stems stay "apply known formula" (Main-ish). Advanced depth =
  * hidden insight first, then computation — not longer arithmetic alone.
  */
-export const buildJeeAdvancedDesignQualityBlock = ({
+export const buildJeeAdvancedPhysicsDesignQualityBlock = ({
     examProfile = "",
     subject = "",
 } = {}) => {
     if (examProfile && !isAdvancedProfile(examProfile)) return "";
-    if (subject && !isMathSubject(subject) && examProfile) {
+    if (subject && !isPhysicsSubject(subject) && examProfile) {
         // allow when profile is Advanced even if subject label is odd
         if (!isAdvancedProfile(examProfile)) return "";
     }
     return `
-**JEE ADVANCED DESIGN QUALITY (target ~9.2 authentic Advanced — not olympiad-overstack):**
+**JEE ADVANCED PHYSICS DESIGN QUALITY (target ~9.2 authentic Advanced — not olympiad-overstack):**
 Correct keys alone are NOT enough. Every stem must force **discovery**, not memorized plug-in.
 
 DO (Advanced authenticity):
-1. **Hidden first step / "aha"** — student spends minutes deciding *what* to do (invariant, symmetry, substitution, geometric interpretation, state model) before routine algebra.
-2. **Multi-layer reasoning** — fuse **exactly 2 techniques** (occasionally 3 max). Intermediate result re-used non-obviously.
-3. **DEPTH GOVERNOR (critical for correctness):** Real Advanced Paper-1/2 hard items usually stop after **2–3 major ideas**. Do NOT stack 4+ independent constructions (e.g. focal chord + tangents + normals + diameter circle + locus + area all in one stem). Prefer one clear chain of length 2–3.
-4. **Non-telegraphed ask** — do NOT ask only for the quantity that the standard formula names. Prefer a property that follows from one core observation.
-5. **Minimal but meaningful calculation** — challenge from structure, not giant expressions. Prefer answers that are dual-solvable in one focused derivation.
-6. **Explanations must derive** — insight first, then steps; state theorems when used.
+1. **Hidden first step / "aha"** — FBD/constraint choice, energy vs force, field+potential, relative motion frame before routine algebra.
+2. **Multi-layer reasoning** — fuse **exactly 2 techniques** (occasionally 3 max), e.g. rotation+energy, circuit+transient, optics+wave, thermo+ideal gas process pair.
+3. **DEPTH GOVERNOR:** Real Advanced hard Physics usually stops after **2–3 major ideas**. Do NOT stack pulley+friction+constraint+energy+angular all at once.
+4. **Non-telegraphed ask** — not pure plug into F=ma / V=IR / 1/f=1/v+1/u alone. Prefer multi-body, process path, or multi-statement multi-correct.
+5. **SI units, consistent sign convention, dual-solvable numeric keys** for integer types.
+6. **Explanations must derive** — insight first (why this FBD/energy/method), then steps.
 
-DO NOT (quality / hardness / correctness breaks):
-- Commuting-matrix compare-entries with no second layer (Main drill).
-- Pure dy/dx = (dy/dt)/(dx/dt) option pick with no further idea.
-- Single formula recall only.
-- **Over-ambition:** four major geometric engines in one multi-correct (kills verifiability).
-- Stretch difficulty only by longer arithmetic / denser LaTeX.
-- One-line explanations without the core derivation.
+DO NOT:
+- Single-block horizontal friction with no system/constraint (Main drill).
+- Plain range/max-height plug-in projectile.
+- Direct Ohm's law with two resistors only.
+- **Over-ambition:** four independent physics engines in one multi (kills verifiability).
+- Stretch difficulty only by messier numbers / denser LaTeX.
 
-Self-check before emit (reject & rewrite if any fail):
+Self-check:
 - [ ] Top Main scorer still needs a non-obvious idea? If no → rewrite.
-- [ ] Major technique count is 2–3 (not 4+)? If 4+ → simplify stem.
-- [ ] Can an independent solver verify the key in a focused derivation? If no → simplify.
-- [ ] For multi: options share a core intermediate (coupled), not four mini-papers.
+- [ ] Major technique count is 2–3 (not 4+)? If 4+ → simplify.
+- [ ] Independent solver can verify the key in one focused derivation? If no → simplify.
+- [ ] Multi options share a core intermediate (coupled).
 `;
 };
 
-export const buildJeeAdvancedScoringPlanningBlock = ({
+export const buildJeeAdvancedPhysicsScoringPlanningBlock = ({
     subject = "",
     examProfile = "",
     bankDifficulty = "hard",
@@ -447,14 +446,14 @@ export const buildJeeAdvancedScoringPlanningBlock = ({
     count = 10,
 } = {}) => {
     if (!isAdvancedProfile(examProfile)) return "";
-    if (subject && !isMathSubject(subject)) return "";
+    if (subject && !isPhysicsSubject(subject)) return "";
 
     const preferHard =
         String(bankDifficulty || "").toLowerCase().includes("hard") || highOnly;
     let pool = preferHard
-        ? getHighRelevanceAdvancedTopics()
-        : getMediumPlusAdvancedTopics();
-    if (!pool.length) pool = getJeeAdvancedMathTopics();
+        ? getHighRelevanceAdvancedPhysicsTopics()
+        : getMediumPlusAdvancedPhysicsTopics();
+    if (!pool.length) pool = getJeeAdvancedPhysicsTopics();
     if (!pool.length) return "";
 
     // Sort high first, then by quota_weight if present
@@ -535,18 +534,18 @@ const topicNcertSection = (t, { compact = false } = {}) => {
     return parts.join("\n");
 };
 
-export const buildJeeAdvancedHardArchetypePlanBlock = ({
+export const buildJeeAdvancedPhysicsHardArchetypePlanBlock = ({
     subject = "",
     examProfile = "",
     topicFilter = null,
 } = {}) => {
     if (!isAdvancedProfile(examProfile)) return "";
-    if (subject && !isMathSubject(subject)) return "";
+    if (subject && !isPhysicsSubject(subject)) return "";
     const topics = topicFilter?.length
-        ? resolveJeeAdvancedTopics(topicFilter).matched
-        : getHighRelevanceAdvancedTopics().length
-          ? getHighRelevanceAdvancedTopics()
-          : getJeeAdvancedMathTopics();
+        ? resolveJeeAdvancedPhysicsTopics(topicFilter).matched
+        : getHighRelevanceAdvancedPhysicsTopics().length
+          ? getHighRelevanceAdvancedPhysicsTopics()
+          : getJeeAdvancedPhysicsTopics();
     if (!topics.length) return "";
 
     const sections = topics.map((t) => {
@@ -566,7 +565,7 @@ export const buildJeeAdvancedHardArchetypePlanBlock = ({
     });
 
     return `
-**JEE ADVANCED HARD ARCHETYPE PLAN (file-backed — concentrated IIT Advanced Maths):**
+**JEE ADVANCED HARD ARCHETYPE PLAN (file-backed — concentrated IIT Advanced Physics):**
 Every planned hard slot MUST map to a hard_archetype below (or equal multi-step fusion). Never plan banned easy templates. Keep solutions dual-solvable with a unique correct key.
 
 ${sections.join("\n\n")}
@@ -576,25 +575,25 @@ ${sections.join("\n\n")}
 /**
  * Full writer-facing Advanced NCERT context for topics touched by this batch.
  */
-export const buildJeeAdvancedNcertWriterBlock = ({
+export const buildJeeAdvancedPhysicsNcertWriterBlock = ({
     subject = "",
     examProfile = "",
     topics = [],
     slots = [],
 } = {}) => {
     if (!isAdvancedProfile(examProfile)) return "";
-    if (subject && !isMathSubject(subject)) return "";
+    if (subject && !isPhysicsSubject(subject)) return "";
 
     let matched = [];
     if (topics?.length) {
-        matched = resolveJeeAdvancedTopics(topics).matched;
+        matched = resolveJeeAdvancedPhysicsTopics(topics).matched;
     }
     if (!matched.length && slots?.length) {
-        matched = inferJeeAdvancedTopicsFromSlots(slots);
+        matched = inferJeeAdvancedPhysicsTopicsFromSlots(slots);
     }
     if (!matched.length) {
         // Fallback: high-relevance pack so writer still has hard guidance
-        matched = getHighRelevanceAdvancedTopics().slice(0, 6);
+        matched = getHighRelevanceAdvancedPhysicsTopics().slice(0, 6);
     }
     if (!matched.length) return "";
 
@@ -609,7 +608,7 @@ Rules (priority order):
 5. Build distractors from listed traps.
 6. Design quality: hidden insight first; explanations must fully derive (see DESIGN QUALITY block).
 
-${buildJeeAdvancedDesignQualityBlock({ examProfile: "jee_advanced", subject })}
+${buildJeeAdvancedPhysicsDesignQualityBlock({ examProfile: "jee_advanced", subject })}
 
 ${matched.map((t) => topicNcertSection(t)).join("\n\n")}
 `;
@@ -618,26 +617,26 @@ ${matched.map((t) => topicNcertSection(t)).join("\n\n")}
 /**
  * Compact solver-facing formula/method lock.
  */
-export const buildJeeAdvancedNcertSolverBlock = ({
+export const buildJeeAdvancedPhysicsNcertSolverBlock = ({
     subject = "",
     examProfile = "",
     topics = [],
     slots = [],
 } = {}) => {
     // Solver may not pass examProfile; still emit when we have Advanced slots
-    // if subject is math and topics resolve against Advanced pack.
+    // if subject is physics and topics resolve against Advanced pack.
     if (examProfile && !isAdvancedProfile(examProfile) && examProfile !== "") {
         // If explicitly non-advanced, skip
         if (String(examProfile).toLowerCase() !== "jee_advanced") return "";
     }
-    if (subject && !isMathSubject(subject) && !/\badvanced\b/i.test(String(subject))) {
+    if (subject && !isPhysicsSubject(subject) && !/\badvanced\b/i.test(String(subject))) {
         // still allow when slots map to advanced topics
     }
 
     let matched = [];
-    if (topics?.length) matched = resolveJeeAdvancedTopics(topics).matched;
+    if (topics?.length) matched = resolveJeeAdvancedPhysicsTopics(topics).matched;
     if (!matched.length && slots?.length) {
-        matched = inferJeeAdvancedTopicsFromSlots(slots);
+        matched = inferJeeAdvancedPhysicsTopicsFromSlots(slots);
     }
     if (!matched.length) return "";
 
@@ -660,12 +659,12 @@ ${sections.join("\n\n")}
 `;
 };
 
-export const buildJeeAdvancedPatternAuthoringBlock = ({
+export const buildJeeAdvancedPhysicsPatternAuthoringBlock = ({
     examProfile = "",
     paper = 1,
 } = {}) => {
     if (!isAdvancedProfile(examProfile)) return "";
-    const counts = getAdvancedPaperTypeCounts({ paper });
+    const counts = getAdvancedPhysicsPaperTypeCounts({ paper });
     const pattern = loadJson("pattern");
     return `
 **JEE ADVANCED PAPER PATTERN (subject × paper — reference, year may vary):**
@@ -678,18 +677,18 @@ When generating a **hard quality bank** (not full paper), prefer single-correct 
 };
 
 /**
- * Composite planner injection when exam is Advanced Maths.
+ * Composite planner injection when exam is Advanced Physics.
  */
-export const buildJeeAdvancedPlannerInjection = (opts = {}) => {
+export const buildJeeAdvancedPhysicsPlannerInjection = (opts = {}) => {
     if (!isAdvancedProfile(opts.examProfile)) return "";
-    if (opts.subject && !isMathSubject(opts.subject) && !isMathSubject(opts.subjectId)) {
+    if (opts.subject && !isPhysicsSubject(opts.subject) && !isPhysicsSubject(opts.subjectId)) {
         return "";
     }
     return [
-        buildJeeAdvancedSyllabusPlanningBlock(opts),
-        buildJeeAdvancedScoringPlanningBlock(opts),
-        buildJeeAdvancedHardArchetypePlanBlock(opts),
-        buildJeeAdvancedPatternAuthoringBlock(opts),
+        buildJeeAdvancedPhysicsSyllabusPlanningBlock(opts),
+        buildJeeAdvancedPhysicsScoringPlanningBlock(opts),
+        buildJeeAdvancedPhysicsHardArchetypePlanBlock(opts),
+        buildJeeAdvancedPhysicsPatternAuthoringBlock(opts),
     ]
         .filter(Boolean)
         .join("\n");

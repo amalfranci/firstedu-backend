@@ -1,0 +1,605 @@
+{
+  "subject": "Physics",
+  "exam": "JEE Advanced 2026",
+  "schema_note": "Keyed by topic_id (matches physics_syllabus.json). Same field set as Maths file.",
+  "topics": {
+    "P01": {
+      "concepts": [
+        "Propagation of errors in derived quantities",
+        "Least count vs precision",
+        "Systematic vs random error"
+      ],
+      "formulas": [
+        "\u0394z/z = \u0394x/x + \u0394y/y for z=xy or x/y",
+        "\u0394z = |\u2202z/\u2202x|\u0394x + |\u2202z/\u2202y|\u0394y (general)"
+      ],
+      "methods": [
+        "Always compute max % error via partial derivatives, not just add absolute errors blindly",
+        "Identify which experiment's formula is being tested before propagating error"
+      ],
+      "traps": [
+        "Adding absolute errors when the quantity is a product/quotient (should add % errors)",
+        "Ignoring least-count limit when reporting significant figures"
+      ],
+      "hard_archetypes": [
+        "Multi-quantity error propagation combining a power-law formula (e.g. g = 4\u03c0\u00b2L/T\u00b2)",
+        "Experiment-based conceptual question testing a specific NCERT setup (meter bridge, post office box) rather than pure error formula"
+      ],
+      "banned_easy_templates": [
+        "Direct 'round to correct significant figures' with no propagation step"
+      ],
+      "out_of_scope": [
+        "Statistical treatment beyond mean/error bars (no regression analysis)"
+      ]
+    },
+    "P02": {
+      "concepts": [
+        "Relative motion in 2D",
+        "Projectile on an incline",
+        "Non-uniform circular motion (tangential+radial accel)"
+      ],
+      "formulas": [
+        "Range R = u\u00b2sin2\u03b8/g",
+        "Max height H = u\u00b2sin\u00b2\u03b8/2g",
+        "a_radial = v\u00b2/r, a_tangential = dv/dt"
+      ],
+      "methods": [
+        "Resolve motion along/perpendicular to incline for projectile-on-incline problems",
+        "Use relative velocity vector diagrams for river-boat / rain-man problems"
+      ],
+      "traps": [
+        "Forgetting g direction sign convention when axes are rotated for incline problems",
+        "Confusing average speed with average velocity magnitude"
+      ],
+      "hard_archetypes": [
+        "Projectile motion with a moving frame of reference (relative velocity fused in)",
+        "Non-uniform circular motion requiring simultaneous tangential+radial analysis",
+        "Multi-stage motion (projectile then collision then second projectile)"
+      ],
+      "banned_easy_templates": [
+        "Plain 'find range/max height' with values plugged into standard formula"
+      ],
+      "out_of_scope": [
+        "Motion in non-Cartesian (polar) coordinates as a formal topic"
+      ]
+    },
+    "P03": {
+      "concepts": [
+        "Pseudo force in non-inertial frames",
+        "Static vs kinetic friction transition",
+        "Constraint relations in connected-block systems"
+      ],
+      "formulas": [
+        "f_max(static) = \u03bcs\u00b7N",
+        "f(kinetic) = \u03bck\u00b7N",
+        "Pseudo force = -ma (frame accel a)"
+      ],
+      "methods": [
+        "Draw free-body diagrams for each block separately before writing equations",
+        "Check whether friction is at limiting value before assuming kinetic friction acts"
+      ],
+      "traps": [
+        "Assuming friction is always kinetic without checking if the surfaces are actually slipping",
+        "Sign errors when combining pseudo-force with real forces in an accelerating frame"
+      ],
+      "hard_archetypes": [
+        "Multi-block systems with pulleys, friction, and constraint relations combined",
+        "Non-inertial frame problems (accelerating wedge/lift) requiring pseudo-force analysis",
+        "Problems where friction changes from static to kinetic mid-motion"
+      ],
+      "banned_easy_templates": [
+        "Single block on a horizontal surface, find friction force, no system/constraint"
+      ],
+      "out_of_scope": [
+        "Rolling friction as a separate formal quantity (only used qualitatively with rolling)"
+      ]
+    },
+    "P04": {
+      "concepts": [
+        "Work-energy theorem with variable force",
+        "Elastic/inelastic collision in 2D",
+        "Power as a function of time in variable-force systems"
+      ],
+      "formulas": [
+        "W = Integral F.dx",
+        "e = (v2'-v1')/(v1-v2) [coefficient of restitution]",
+        "For elastic collision: v1' = ((m1-m2)v1 + 2m2v2)/(m1+m2)"
+      ],
+      "methods": [
+        "Use work-energy theorem directly rather than kinematics when force varies with position",
+        "Decompose 2D collisions into component-wise momentum conservation"
+      ],
+      "traps": [
+        "Applying 1D elastic-collision formulas directly to a 2D oblique collision",
+        "Forgetting energy is NOT conserved in inelastic collisions (only momentum is)"
+      ],
+      "hard_archetypes": [
+        "Variable-force work problems requiring integration of F(x) or F(t)",
+        "Oblique/2D collision problems combined with energy loss calculation",
+        "Multi-body collision chains (block hits block hits block)"
+      ],
+      "banned_easy_templates": [
+        "Constant-force work = F.d.cos\u03b8 with no variable force or system"
+      ],
+      "out_of_scope": [
+        "Relativistic energy-momentum relations"
+      ]
+    },
+    "P05": {
+      "concepts": [
+        "Rolling without slipping (constraint v=\u03c9R)",
+        "Instantaneous axis of rotation",
+        "Conservation of angular momentum with changing moment of inertia"
+      ],
+      "formulas": [
+        "L = I\u03c9",
+        "\u03c4 = I\u03b1",
+        "KE(rolling) = \u00bdmv\u00b2 + \u00bdI\u03c9\u00b2",
+        "For rolling down incline: a = g sin\u03b8/(1+I/mR\u00b2)"
+      ],
+      "methods": [
+        "Use instantaneous axis of rotation to simplify torque/angular momentum about a moving point",
+        "Apply angular momentum conservation about a fixed axis when external torque about that axis is zero"
+      ],
+      "traps": [
+        "Applying \u03c4=I\u03b1 about a non-fixed/non-CM axis without justification",
+        "Forgetting friction provides the torque needed for rolling without slipping (not always kinetic)"
+      ],
+      "hard_archetypes": [
+        "Rolling body on incline/rough surface combined with impulsive collision",
+        "System with changing moment of inertia (person walking on rotating disc)",
+        "Rigid body toppling/critical-angle problems combining torque and friction"
+      ],
+      "banned_easy_templates": [
+        "Find moment of inertia of a standard shape from the formula sheet directly"
+      ],
+      "out_of_scope": [
+        "Gyroscopic precession (not explicitly in JEE Advanced syllabus)"
+      ]
+    },
+    "P06": {
+      "concepts": [
+        "Orbital mechanics energy (total energy = -GMm/2r)",
+        "Escape velocity derivation",
+        "Gravitational field/potential due to extended bodies (shell, sphere)"
+      ],
+      "formulas": [
+        "v_orbit = sqrt(GM/r)",
+        "v_escape = sqrt(2GM/R)",
+        "U = -GMm/r",
+        "T\u00b2 proportional to r\u00b3 (Kepler's third law)"
+      ],
+      "methods": [
+        "Use energy conservation (KE+PE) for orbit transfer/escape problems rather than force equations alone",
+        "Apply shell theorem to reduce extended-body gravitation problems to point-mass equivalents"
+      ],
+      "traps": [
+        "Sign errors with gravitational PE (always negative, taken zero at infinity)",
+        "Confusing orbital velocity with escape velocity by a factor of \u221a2"
+      ],
+      "hard_archetypes": [
+        "Orbit transfer (Hohmann-style) problems requiring energy at two radii",
+        "Gravitational field due to a non-uniform or partially removed spherical mass",
+        "Combined satellite + relative motion / collision problem"
+      ],
+      "banned_easy_templates": [
+        "Direct substitution into v=sqrt(GM/r) with given numbers only"
+      ],
+      "out_of_scope": [
+        "General relativity corrections to gravitation"
+      ]
+    },
+    "P07": {
+      "concepts": [
+        "SHM energy method (using E=\u00bdkA\u00b2)",
+        "Combination of springs (series/parallel)",
+        "Damped oscillation amplitude decay",
+        "SHM in non-standard restoring-force setups"
+      ],
+      "formulas": [
+        "x = A sin(\u03c9t+\u03c6)",
+        "T = 2\u03c0\u221a(m/k)",
+        "For springs in series: 1/k_eff = 1/k1+1/k2",
+        "For springs in parallel: k_eff = k1+k2"
+      ],
+      "methods": [
+        "Identify the effective restoring force/torque first, then match to SHM form -\u03c9\u00b2x",
+        "Use energy method (KE+PE=const) instead of full differential equation for amplitude/speed questions"
+      ],
+      "traps": [
+        "Assuming any periodic motion is SHM without verifying restoring force is linear in displacement",
+        "Errors combining spring constants when springs act in a non-obvious geometric configuration"
+      ],
+      "hard_archetypes": [
+        "SHM of a system requiring derivation of effective 'k' from a non-spring restoring mechanism (e.g. floating body, rod on a pivot)",
+        "Two-spring combined SHM with an intermediate mass or pulley",
+        "SHM combined with collision (a moving object embeds into an oscillating mass)"
+      ],
+      "banned_easy_templates": [
+        "Find T for a given mass-spring system with k, m given directly"
+      ],
+      "out_of_scope": [
+        "Forced oscillation transient response beyond resonance qualitative treatment"
+      ]
+    },
+    "P08": {
+      "concepts": [
+        "Bernoulli's theorem with varying pipe cross-section",
+        "Terminal velocity via Stoke's law",
+        "Surface tension in capillary rise / bubble pressure excess"
+      ],
+      "formulas": [
+        "P + \u00bd\u03c1v\u00b2 + \u03c1gh = const (Bernoulli)",
+        "v_terminal = 2r\u00b2(\u03c1-\u03c3)g/9\u03b7",
+        "Excess pressure in a bubble (soap) = 4T/r; in a drop = 2T/r"
+      ],
+      "methods": [
+        "Apply continuity equation (A1v1=A2v2) alongside Bernoulli for varying pipe problems",
+        "Track buoyancy + viscous + gravity forces separately before combining for terminal velocity"
+      ],
+      "traps": [
+        "Forgetting soap bubble has two surfaces (factor of 4T/r, not 2T/r)",
+        "Using Bernoulli across a region where energy is NOT conserved (viscous losses present)"
+      ],
+      "hard_archetypes": [
+        "Efflux/draining-tank problems combining Bernoulli + continuity + time-varying height",
+        "Terminal velocity problems with a changing medium (settling through two fluids)",
+        "Capillary rise combined with a temperature-dependent surface tension"
+      ],
+      "banned_easy_templates": [
+        "Plain 'find excess pressure inside a bubble' with r, T given directly"
+      ],
+      "out_of_scope": [
+        "Turbulent flow / Reynolds number analysis"
+      ]
+    },
+    "P09": {
+      "concepts": [
+        "Standing waves in strings/pipes (open/closed) harmonics",
+        "Doppler effect with both source and observer moving",
+        "Beats frequency from two close frequencies"
+      ],
+      "formulas": [
+        "f_n(string) = nv/2L",
+        "f_n(closed pipe) = (2n-1)v/4L",
+        "Doppler: f' = f(v\u00b1v_o)/(v\u2213v_s)"
+      ],
+      "methods": [
+        "Draw the standing wave pattern (nodes/antinodes) before assigning the harmonic formula",
+        "Carefully assign sign convention (source/observer approaching vs receding) before substituting into Doppler formula"
+      ],
+      "traps": [
+        "Using open-pipe harmonic formula for a closed pipe (only odd harmonics exist in closed pipe)",
+        "Sign errors in Doppler formula when both source and observer move"
+      ],
+      "hard_archetypes": [
+        "Doppler effect with reflection off a moving wall/observer (double Doppler shift)",
+        "Superposition of multiple traveling waves producing a resultant with time-varying amplitude",
+        "String/pipe resonance combined with temperature-dependent speed of sound"
+      ],
+      "banned_easy_templates": [
+        "Find fundamental frequency of a string with L, v given directly"
+      ],
+      "out_of_scope": [
+        "Shock waves / supersonic Doppler cone"
+      ]
+    },
+    "P10": {
+      "concepts": [
+        "First law applied to non-standard processes (polytropic)",
+        "Entropy change in irreversible processes",
+        "Heat conduction through composite/series-parallel rods"
+      ],
+      "formulas": [
+        "\u0394U = nCv\u0394T",
+        "W(isothermal) = nRT ln(V2/V1)",
+        "PV^\u03b3 = const (adiabatic)",
+        "Thermal resistance R = L/kA (series/parallel like electrical resistance)"
+      ],
+      "methods": [
+        "Treat composite conducting rods with the same electrical-circuit-style series/parallel resistance method",
+        "Identify process type (isothermal/adiabatic/isochoric/isobaric) before choosing the work formula"
+      ],
+      "traps": [
+        "Using PV=const formula for an adiabatic process (should be PV^\u03b3=const)",
+        "Forgetting sign convention: work done BY gas vs ON gas in first law statement used"
+      ],
+      "hard_archetypes": [
+        "Cyclic process problems requiring net work via P-V diagram area + efficiency calculation",
+        "Composite rod heat conduction combined with radiation loss at the ends",
+        "Polytropic process problems requiring derivation of molar heat capacity"
+      ],
+      "banned_easy_templates": [
+        "Direct substitution into ideal gas law PV=nRT with no process/cycle"
+      ],
+      "out_of_scope": [
+        "Statistical mechanics derivation of entropy (only classical thermodynamic entropy)"
+      ]
+    },
+    "P11": {
+      "concepts": [
+        "Gauss's law for non-uniform/asymmetric charge distributions",
+        "Electric dipole in non-uniform field",
+        "Continuous charge distribution field/potential via integration"
+      ],
+      "formulas": [
+        "\u222eE.dA = Q_enc/\u03b50",
+        "E(dipole, axial) = 2kp/r\u00b3, E(equatorial) = kp/r\u00b3",
+        "V = kQ/r for point charge; superposition for systems"
+      ],
+      "methods": [
+        "Choose a Gaussian surface that exploits the symmetry of the charge distribution",
+        "Integrate dE or dV directly for charge distributions lacking high symmetry (rod, arc)"
+      ],
+      "traps": [
+        "Applying Gauss's law to a surface where E is not constant/perpendicular (invalid shortcut)",
+        "Forgetting a dipole in a non-uniform field experiences a net force, not just torque"
+      ],
+      "hard_archetypes": [
+        "Field/potential due to a non-uniformly charged sphere or rod requiring integration",
+        "System of multiple charges/dipoles requiring superposition + energy calculation",
+        "Charge distribution with a cavity (superposition trick: real + fictitious negative charge)"
+      ],
+      "banned_easy_templates": [
+        "Coulomb's law force between two point charges with given q, r"
+      ],
+      "out_of_scope": [
+        "Electric field inside a dielectric medium beyond basic polarization concept"
+      ]
+    },
+    "P12": {
+      "concepts": [
+        "Capacitor networks with symmetry-based simplification",
+        "Dielectric slab partially filling a capacitor",
+        "Energy redistribution when capacitors are connected"
+      ],
+      "formulas": [
+        "C = \u03b50A/d",
+        "With dielectric: C = \u03b50A/(d-t+t/k)",
+        "Energy stored = \u00bdCV\u00b2 = Q\u00b2/2C",
+        "Energy loss on connecting charged capacitors = C1C2(V1-V2)\u00b2/2(C1+C2)"
+      ],
+      "methods": [
+        "Use symmetry (equal potential nodes) to simplify complex capacitor networks before series/parallel reduction",
+        "Track charge conservation separately from voltage when capacitors are reconnected"
+      ],
+      "traps": [
+        "Applying V-doubling naively when capacitors of different capacitance are connected (charge redistributes, not voltage)",
+        "Forgetting energy is lost as heat when charged capacitors are connected (not conserved)"
+      ],
+      "hard_archetypes": [
+        "Non-trivial capacitor bridge networks requiring symmetry or \u0394-Y-style reduction",
+        "Partially-filled dielectric capacitor combined with a moving-slab (variable capacitance) scenario",
+        "Multi-capacitor charging/discharging via a battery with switches at multiple stages"
+      ],
+      "banned_easy_templates": [
+        "Two capacitors in series or parallel, given C1, C2, compute C_eq directly"
+      ],
+      "out_of_scope": [
+        "Non-linear dielectric response, ferroelectric materials"
+      ]
+    },
+    "P13": {
+      "concepts": [
+        "Kirchhoff's laws in multi-loop circuits",
+        "Wheatstone bridge balance condition",
+        "Internal resistance / terminal voltage effects",
+        "RC circuit charging/discharging"
+      ],
+      "formulas": [
+        "Wheatstone balance: P/Q = R/S",
+        "Terminal V = EMF - Ir",
+        "RC charging: q(t) = CV(1-e^{-t/RC})"
+      ],
+      "methods": [
+        "Assign loop currents systematically (mesh analysis) for multi-loop circuits before applying KVL",
+        "Check for a balanced bridge (no current through galvanometer) before solving generally"
+      ],
+      "traps": [
+        "Sign errors in KVL when traversing a loop against assumed current direction",
+        "Treating an unbalanced Wheatstone bridge as if it were balanced"
+      ],
+      "hard_archetypes": [
+        "Multi-loop resistor networks requiring full Kirchhoff's law solution (not reducible by series/parallel)",
+        "RC circuit problems with a switch changing configuration mid-transient",
+        "Hybrid problems combining a Wheatstone-bridge-like network with a capacitor"
+      ],
+      "banned_easy_templates": [
+        "Simple series/parallel resistor combination, find equivalent resistance"
+      ],
+      "out_of_scope": [
+        "AC circuit analysis (covered separately under P15)"
+      ]
+    },
+    "P14": {
+      "concepts": [
+        "Force on a current loop in a non-uniform field",
+        "Magnetic field due to combined current-carrying geometries",
+        "Motion of a charged particle in combined E and B fields (velocity selector, cyclotron)"
+      ],
+      "formulas": [
+        "F = qv\u00d7B",
+        "B(solenoid) = \u03bc0nI",
+        "B(circular coil centre) = \u03bc0I/2R",
+        "r(circular motion in B) = mv/qB"
+      ],
+      "methods": [
+        "Superpose fields from multiple current elements/segments using Biot-Savart before combining",
+        "Separate the charged-particle motion into components parallel and perpendicular to B (helical motion)"
+      ],
+      "traps": [
+        "Sign errors in cross product direction (right-hand rule) for force/field direction",
+        "Forgetting the component of velocity parallel to B is unaffected by the magnetic force"
+      ],
+      "hard_archetypes": [
+        "Charged particle in combined E and B fields following a helical/cycloidal path",
+        "Magnetic field due to a combination of straight wires and arcs at a point",
+        "Current loop in a non-uniform magnetic field experiencing both force and torque"
+      ],
+      "banned_easy_templates": [
+        "Find B at the centre of a single circular loop with I, R given directly"
+      ],
+      "out_of_scope": [
+        "Magnetic materials (para/dia/ferro) beyond qualitative classification"
+      ]
+    },
+    "P15": {
+      "concepts": [
+        "Motional EMF in a moving/rotating conductor",
+        "LCR series resonance and phasor analysis",
+        "Mutual inductance between coupled circuits"
+      ],
+      "formulas": [
+        "EMF = -d\u03a6/dt",
+        "Motional EMF = BLv",
+        "Resonance: \u03c90 = 1/\u221a(LC)",
+        "Impedance Z = sqrt(R\u00b2 + (XL-XC)\u00b2)"
+      ],
+      "methods": [
+        "Use phasor diagrams to combine R, L, C voltage/current relationships in AC circuits",
+        "Apply Lenz's law direction reasoning before computing EMF magnitude"
+      ],
+      "traps": [
+        "Sign errors in Lenz's law direction (induced current opposes the change, not the field itself)",
+        "Confusing peak and rms values when computing power in AC circuits"
+      ],
+      "hard_archetypes": [
+        "Rod sliding on rails in a magnetic field with an additional circuit element (combined EMF + circuit analysis)",
+        "LCR circuit problems requiring resonance condition plus power factor calculation",
+        "Mutual inductance problems with two coupled circuits and a time-varying current"
+      ],
+      "banned_easy_templates": [
+        "Compute EMF = -d\u03a6/dt for a simple linear flux change with no circuit interaction"
+      ],
+      "out_of_scope": [
+        "Three-phase AC systems, transformers beyond basic mutual inductance idea"
+      ]
+    },
+    "P16": {
+      "concepts": [
+        "EM wave field relationships (E, B, propagation direction)",
+        "Energy/intensity in an EM wave",
+        "EM spectrum band identification and use-cases"
+      ],
+      "formulas": [
+        "c = 1/sqrt(\u03bc0\u03b50)",
+        "E0/B0 = c",
+        "Intensity I = \u00bd\u03b50cE0\u00b2"
+      ],
+      "methods": [
+        "Use the mutual perpendicularity of E, B, and propagation direction to deduce missing field components",
+        "Cross-reference EM spectrum band with typical frequency/wavelength range for identification questions"
+      ],
+      "traps": [
+        "Confusing E0/B0 ratio direction (which one is larger in SI units)",
+        "Mixing up frequency ranges of adjacent EM spectrum bands"
+      ],
+      "hard_archetypes": [
+        "Problems combining EM wave intensity with radiation pressure calculations",
+        "Given E(x,t) or B(x,t) expression, deduce the other field and propagation direction"
+      ],
+      "banned_easy_templates": [
+        "Direct 'name the EM spectrum band for this wavelength' recall question"
+      ],
+      "out_of_scope": [
+        "Maxwell's equations in full differential form (only qualitative treatment)"
+      ]
+    },
+    "P17": {
+      "concepts": [
+        "Lens/mirror combination with intermediate image formation",
+        "Refraction through multiple media (slabs, prisms)",
+        "Minimum deviation condition for a prism"
+      ],
+      "formulas": [
+        "1/v - 1/u = 1/f (mirror/lens, sign convention)",
+        "n = sin((A+Dm)/2)/sin(A/2) (prism min deviation)",
+        "Lens maker's formula: 1/f = (n-1)(1/R1-1/R2)"
+      ],
+      "methods": [
+        "Treat each optical element sequentially: output image of one becomes object for the next",
+        "Use lateral shift / apparent depth formulas explicitly for slab-refraction problems rather than re-deriving"
+      ],
+      "traps": [
+        "Sign convention errors (Cartesian sign convention inconsistency between mirror and lens formulas)",
+        "Forgetting virtual image distances/heights carry sign in magnification formulas"
+      ],
+      "hard_archetypes": [
+        "Multi-element optical system (lens+mirror+lens) requiring sequential image tracing",
+        "Prism problems requiring derivation near minimum deviation or grazing incidence",
+        "Combined refraction-through-slab and lens-image problems with total internal reflection check"
+      ],
+      "banned_easy_templates": [
+        "Single thin lens, find image distance from u and f directly"
+      ],
+      "out_of_scope": [
+        "Aberrations (chromatic/spherical) beyond qualitative mention"
+      ]
+    },
+    "P18": {
+      "concepts": [
+        "Fringe shift due to inserted slab in YDSE",
+        "Diffraction minima/maxima conditions",
+        "Polarization by reflection (Brewster's angle) and by Polaroids (Malus's law)"
+      ],
+      "formulas": [
+        "Fringe width \u03b2 = \u03bbD/d",
+        "Path diff for slab insertion = (n-1)t",
+        "Single slit minima: a sin\u03b8 = n\u03bb",
+        "Malus's law: I = I0cos\u00b2\u03b8"
+      ],
+      "methods": [
+        "Track path difference changes explicitly when a slab/medium is introduced in one arm of YDSE",
+        "Distinguish diffraction minima condition (single slit) from interference maxima condition (double slit) carefully"
+      ],
+      "traps": [
+        "Using double-slit interference formulas for a single-slit diffraction problem or vice versa",
+        "Forgetting central diffraction maximum is twice as wide as secondary maxima"
+      ],
+      "hard_archetypes": [
+        "YDSE with a dielectric slab inserted in one slit, find resulting fringe shift/pattern change",
+        "Combined interference-diffraction envelope problems (double slit within diffraction envelope)",
+        "Polarization problems chaining multiple Polaroids at different angles"
+      ],
+      "banned_easy_templates": [
+        "Find fringe width given \u03bb, D, d directly with no modification"
+      ],
+      "out_of_scope": [
+        "Diffraction gratings with resolving power formalism beyond basic condition"
+      ]
+    },
+    "P19": {
+      "concepts": [
+        "Photoelectric effect stopping potential analysis",
+        "Bohr model energy level transitions",
+        "Radioactive decay chains and activity calculations",
+        "Nuclear binding energy per nucleon trends"
+      ],
+      "formulas": [
+        "KE_max = hf - \u03c6 (photoelectric)",
+        "E_n = -13.6Z\u00b2/n\u00b2 eV (Bohr model)",
+        "N = N0 e^{-\u03bbt}",
+        "Activity A = \u03bbN"
+      ],
+      "methods": [
+        "Use energy-level diagrams to identify which transition matches a given photon energy/wavelength",
+        "Separate decay-chain problems into successive N(t) equations for parent and daughter nuclei"
+      ],
+      "traps": [
+        "Forgetting work function \u03c6 varies by material in photoelectric problems",
+        "Confusing half-life with mean life in decay calculations (factor of ln2)"
+      ],
+      "hard_archetypes": [
+        "Sequential radioactive decay chain (parent->daughter->granddaughter) activity problems",
+        "Photoelectric effect combined with de Broglie wavelength of emitted electron",
+        "Nuclear reaction Q-value problems requiring mass-defect and binding energy calculation"
+      ],
+      "banned_easy_templates": [
+        "Direct substitution into E_n=-13.6/n\u00b2 for hydrogen with no transition/comparison"
+      ],
+      "out_of_scope": [
+        "Quantum field theory, particle physics beyond basic nuclear/atomic models"
+      ]
+    }
+  }
+}

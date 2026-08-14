@@ -50,6 +50,11 @@ import {
     isJeeAdvancedMathsDataAvailable,
 } from "./jeeAdvancedMaths.service.js";
 import {
+    buildJeeAdvancedPhysicsNcertSolverBlock,
+    inferJeeAdvancedPhysicsTopicsFromSlots,
+    isJeeAdvancedPhysicsDataAvailable,
+} from "./jeeAdvancedPhysics.service.js";
+import {
     parseNumber,
     formatValueForOption,
     buildOptionsAroundExpected,
@@ -84,18 +89,37 @@ const buildSolverNcertBlock = (questions = [], topic = "") => {
             hay.includes("advanced ›") ||
             hay.includes("jee_advanced");
 
-        // Prefer Advanced pack when topic path is Advanced Maths and data exists.
-        if (looksAdvanced && isJeeAdvancedMathsDataAvailable()) {
+        // Prefer Advanced pack when topic path is Advanced Maths/Physics and data exists.
+        if (looksAdvanced && isJeeAdvancedMathsDataAvailable() && /\bmath/i.test(hay)) {
             const adv = buildJeeAdvancedNcertSolverBlock({
                 subject: topic,
                 examProfile: "jee_advanced",
                 slots,
             });
             if (adv) return adv;
-            // If slots didn't map, still try inferred Advanced topics
             const inferred = inferJeeAdvancedTopicsFromSlots(slots);
             if (inferred.length) {
                 return buildJeeAdvancedNcertSolverBlock({
+                    subject: topic,
+                    examProfile: "jee_advanced",
+                    topics: inferred.map((t) => t.topicId),
+                });
+            }
+        }
+        if (
+            looksAdvanced &&
+            isJeeAdvancedPhysicsDataAvailable() &&
+            /\bphysics\b/i.test(hay)
+        ) {
+            const adv = buildJeeAdvancedPhysicsNcertSolverBlock({
+                subject: topic,
+                examProfile: "jee_advanced",
+                slots,
+            });
+            if (adv) return adv;
+            const inferred = inferJeeAdvancedPhysicsTopicsFromSlots(slots);
+            if (inferred.length) {
+                return buildJeeAdvancedPhysicsNcertSolverBlock({
                     subject: topic,
                     examProfile: "jee_advanced",
                     topics: inferred.map((t) => t.topicId),

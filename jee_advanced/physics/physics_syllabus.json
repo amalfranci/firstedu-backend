@@ -1,0 +1,219 @@
+{
+  "subject": "Physics",
+  "exam": "JEE Advanced 2026",
+  "source_note": "Extracted from official JEE Advanced 2026 syllabus PDF (same as 2025).",
+  "topics": [
+    {
+      "topic_id": "P01",
+      "chapter": "Units, Dimensions, Errors and Experimental Physics",
+      "class_level": "11",
+      "subtopics": [
+        "Units and dimensions, dimensional analysis",
+        "Least count, significant figures",
+        "Error analysis for standard experiments (vernier, screw gauge)",
+        "g via simple pendulum; Young's modulus; surface tension by capillary rise",
+        "Specific heat via calorimeter; focal length (u-v method)",
+        "Speed of sound by resonance column; Ohm's law verification; meter bridge/post office box"
+      ]
+    },
+    {
+      "topic_id": "P02",
+      "chapter": "Kinematics",
+      "class_level": "11",
+      "subtopics": [
+        "1D and 2D kinematics (Cartesian only)",
+        "Projectile motion",
+        "Uniform circular motion",
+        "Relative velocity"
+      ]
+    },
+    {
+      "topic_id": "P03",
+      "chapter": "Newton's Laws of Motion and Friction",
+      "class_level": "11",
+      "subtopics": [
+        "Newton's laws, inertial/accelerated frames",
+        "Static and dynamic friction",
+        "Conservation of linear momentum"
+      ]
+    },
+    {
+      "topic_id": "P04",
+      "chapter": "Work, Energy and Power",
+      "class_level": "11",
+      "subtopics": [
+        "Kinetic and potential energy",
+        "Work and power",
+        "Conservation of mechanical energy",
+        "Elastic and inelastic collisions"
+      ]
+    },
+    {
+      "topic_id": "P05",
+      "chapter": "System of Particles and Rotational Motion",
+      "class_level": "11",
+      "subtopics": [
+        "Centre of mass and its motion, impulse",
+        "Moment of inertia (parallel/perpendicular axes)",
+        "Angular momentum, torque, conservation of angular momentum",
+        "Rigid body dynamics with fixed axis",
+        "Rolling without slipping",
+        "Equilibrium of rigid bodies",
+        "Collision of point masses with rigid bodies"
+      ]
+    },
+    {
+      "topic_id": "P06",
+      "chapter": "Gravitation",
+      "class_level": "11",
+      "subtopics": [
+        "Law of gravitation",
+        "Gravitational potential and field, acceleration due to gravity",
+        "Kepler's laws, geostationary orbits",
+        "Motion of planets/satellites, escape velocity"
+      ]
+    },
+    {
+      "topic_id": "P07",
+      "chapter": "Simple Harmonic Motion and Oscillations",
+      "class_level": "11",
+      "subtopics": [
+        "Linear and angular SHM",
+        "Hooke's law, Young's modulus",
+        "Forced and damped oscillation (1D), resonance"
+      ]
+    },
+    {
+      "topic_id": "P08",
+      "chapter": "Mechanical Properties of Solids and Fluids",
+      "class_level": "11",
+      "subtopics": [
+        "Pressure in fluid, Pascal's law, buoyancy",
+        "Surface energy/tension, angle of contact, drops, bubbles, capillary rise",
+        "Viscosity, Stoke's law, terminal velocity",
+        "Streamline flow, equation of continuity, Bernoulli's theorem",
+        "Modulus of rigidity, bulk modulus"
+      ]
+    },
+    {
+      "topic_id": "P09",
+      "chapter": "Wave Motion and Sound",
+      "class_level": "11",
+      "subtopics": [
+        "Plane waves, longitudinal/transverse waves, superposition",
+        "Progressive and stationary waves",
+        "Vibration of strings and air columns",
+        "Resonance, beats",
+        "Speed of sound in gases, Doppler effect"
+      ]
+    },
+    {
+      "topic_id": "P10",
+      "chapter": "Thermal Physics",
+      "class_level": "11",
+      "subtopics": [
+        "Thermal expansion, calorimetry, latent heat",
+        "Heat conduction (1D), convection/radiation basics, Newton's law of cooling",
+        "Ideal gas laws, specific heats (Cv, Cp)",
+        "Isothermal/adiabatic processes, bulk modulus of gases",
+        "First and second law of thermodynamics, Carnot engine",
+        "Blackbody radiation: Kirchhoff's, Wien's, Stefan's laws"
+      ]
+    },
+    {
+      "topic_id": "P11",
+      "chapter": "Electrostatics",
+      "class_level": "12",
+      "subtopics": [
+        "Coulomb's law, electric field and potential",
+        "Potential energy of point charges and dipoles in uniform field",
+        "Electric field lines, flux, Gauss's law and applications"
+      ]
+    },
+    {
+      "topic_id": "P12",
+      "chapter": "Capacitance",
+      "class_level": "12",
+      "subtopics": [
+        "Parallel plate capacitor with/without dielectrics",
+        "Capacitors in series and parallel",
+        "Energy stored in a capacitor"
+      ]
+    },
+    {
+      "topic_id": "P13",
+      "chapter": "Current Electricity",
+      "class_level": "12",
+      "subtopics": [
+        "Ohm's law, series/parallel resistances and cells",
+        "Kirchhoff's laws and applications",
+        "Heating effect of current"
+      ]
+    },
+    {
+      "topic_id": "P14",
+      "chapter": "Magnetic Effects of Current and Magnetism",
+      "class_level": "12",
+      "subtopics": [
+        "Biot-Savart law, Ampere's law",
+        "Magnetic field: straight wire, circular coil axis, solenoid",
+        "Force on moving charge / current-carrying wire in magnetic field",
+        "Magnetic moment of current loop, effect of uniform field on loop",
+        "Moving coil galvanometer, voltmeter, ammeter conversions"
+      ]
+    },
+    {
+      "topic_id": "P15",
+      "chapter": "Electromagnetic Induction and AC Circuits",
+      "class_level": "12",
+      "subtopics": [
+        "Faraday's law, Lenz's law",
+        "Self and mutual inductance",
+        "RC, LR, LC, LCR (series) circuits with DC and AC sources"
+      ]
+    },
+    {
+      "topic_id": "P16",
+      "chapter": "Electromagnetic Waves",
+      "class_level": "12",
+      "subtopics": [
+        "EM wave characteristics",
+        "EM spectrum (radio to gamma) and elementary uses"
+      ]
+    },
+    {
+      "topic_id": "P17",
+      "chapter": "Ray Optics",
+      "class_level": "12",
+      "subtopics": [
+        "Rectilinear propagation, reflection/refraction (plane & spherical)",
+        "Total internal reflection",
+        "Deviation and dispersion by a prism",
+        "Thin lenses, combinations of mirrors and lenses, magnification"
+      ]
+    },
+    {
+      "topic_id": "P18",
+      "chapter": "Wave Optics",
+      "class_level": "12",
+      "subtopics": [
+        "Huygens' principle",
+        "Young's double slit interference",
+        "Single-slit diffraction",
+        "Polarization, Brewster's law, Polaroids"
+      ]
+    },
+    {
+      "topic_id": "P19",
+      "chapter": "Modern Physics",
+      "class_level": "12",
+      "subtopics": [
+        "Atomic nucleus, alpha/beta/gamma radiation, radioactive decay law",
+        "Binding energy, fission and fusion",
+        "Photoelectric effect, Bohr's theory of hydrogen-like atoms",
+        "Characteristic/continuous X-rays, Moseley's law",
+        "de Broglie wavelength"
+      ]
+    }
+  ]
+}

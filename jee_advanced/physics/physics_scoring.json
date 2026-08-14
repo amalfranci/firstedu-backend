@@ -1,0 +1,220 @@
+{
+  "subject": "Physics",
+  "exam_context": "JEE Main + JEE Advanced (used to steer hard-topic planning for Advanced)",
+  "data_provenance": "Estimated from PYQ-trend analysis (not official NTA data); last grounded Aug 2026",
+  "topics": {
+    "P01": {
+      "jee_main_freq_band": "low",
+      "avg_q_per_session_jee_main": "0-1",
+      "difficulty_split": {
+        "easy": 45,
+        "medium": 40,
+        "hard": 15
+      },
+      "advanced_relevance": "low",
+      "notes": "High-yield in Main as a quick-scoring topic; Advanced rarely tests it standalone"
+    },
+    "P02": {
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "2-3",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 40,
+        "hard": 30
+      },
+      "advanced_relevance": "medium",
+      "notes": "Motion in 1D flagged as a top-12-question chapter in 2025 session-1 trackers"
+    },
+    "P03": {
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "3-4",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 40,
+        "hard": 35
+      },
+      "advanced_relevance": "high",
+      "notes": "Laws of Motion: 16Q flagged in 2025 session-1; strong multi-block/pulley Advanced source"
+    },
+    "P04": {
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 40,
+        "hard": 30
+      },
+      "advanced_relevance": "medium"
+    },
+    "P05": {
+      "jee_main_freq_band": "medium-high",
+      "avg_q_per_session_jee_main": "2-3",
+      "difficulty_split": {
+        "easy": 20,
+        "medium": 40,
+        "hard": 40
+      },
+      "advanced_relevance": "high",
+      "notes": "Rotational mechanics is a classic Advanced hard-question source (rolling + torque)"
+    },
+    "P06": {
+      "jee_main_freq_band": "low-medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": {
+        "easy": 35,
+        "medium": 40,
+        "hard": 25
+      },
+      "advanced_relevance": "medium"
+    },
+    "P07": {
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 40,
+        "hard": 30
+      },
+      "advanced_relevance": "medium"
+    },
+    "P08": {
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 40,
+        "hard": 30
+      },
+      "advanced_relevance": "medium",
+      "notes": "Fluid Mechanics separately flagged in some 2026 trackers as a top-priority chapter"
+    },
+    "P09": {
+      "jee_main_freq_band": "low-medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": {
+        "easy": 35,
+        "medium": 40,
+        "hard": 25
+      },
+      "advanced_relevance": "medium"
+    },
+    "P10": {
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "2-3",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 40,
+        "hard": 35
+      },
+      "advanced_relevance": "high",
+      "notes": "Thermodynamics repeatedly flagged as top-priority across trackers; Kinetic Theory of Gases had 12Q in 2025 session-1"
+    },
+    "P11": {
+      "jee_main_freq_band": "very high",
+      "avg_q_per_session_jee_main": "3-4",
+      "difficulty_split": {
+        "easy": 20,
+        "medium": 40,
+        "hard": 40
+      },
+      "advanced_relevance": "high",
+      "notes": "Electrostatics: 18Q flagged in 2025 session-1, consistently top-3 weighted chapter"
+    },
+    "P12": {
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 40,
+        "hard": 35
+      },
+      "advanced_relevance": "high",
+      "notes": "Capacitor networks a frequent Advanced multi-concept fusion source"
+    },
+    "P13": {
+      "jee_main_freq_band": "very high",
+      "avg_q_per_session_jee_main": "4-5",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 40,
+        "hard": 35
+      },
+      "advanced_relevance": "high",
+      "notes": "Current Electricity: 25Q flagged in 2025 session-1 \u2014 single highest-weighted Physics chapter that year"
+    },
+    "P14": {
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "2-3",
+      "difficulty_split": {
+        "easy": 20,
+        "medium": 40,
+        "hard": 40
+      },
+      "advanced_relevance": "high",
+      "notes": "Magnetic Effects of Current: 15Q flagged in 2025 session-1"
+    },
+    "P15": {
+      "jee_main_freq_band": "medium-high",
+      "avg_q_per_session_jee_main": "2",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 40,
+        "hard": 35
+      },
+      "advanced_relevance": "high",
+      "notes": "Alternating Current had 12Q in 2025 session-1; EMI+AC fusion is a recurring Advanced archetype"
+    },
+    "P16": {
+      "jee_main_freq_band": "low",
+      "avg_q_per_session_jee_main": "0-1",
+      "difficulty_split": {
+        "easy": 55,
+        "medium": 35,
+        "hard": 10
+      },
+      "advanced_relevance": "low",
+      "notes": "Mostly conceptual/recall; rarely a standalone Advanced hard question"
+    },
+    "P17": {
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "2-3",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 40,
+        "hard": 35
+      },
+      "advanced_relevance": "high",
+      "notes": "Ray Optics flagged as a top chapter across multiple 2026 trackers"
+    },
+    "P18": {
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 40,
+        "hard": 35
+      },
+      "advanced_relevance": "medium",
+      "notes": "Wave Optics had 12Q in 2025 session-1"
+    },
+    "P19": {
+      "jee_main_freq_band": "very high",
+      "avg_q_per_session_jee_main": "3-5",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 35,
+        "hard": 40
+      },
+      "advanced_relevance": "high",
+      "notes": "Modern Physics rated highest-weightage Physics chapter over a 10-year trailing average by most PYQ trackers"
+    }
+  },
+  "broad_category_weightage_pct": {
+    "note": "Coarser cross-check figures from PYQ trend sources, % share of Physics paper",
+    "Mechanics": "25-30%",
+    "Electrodynamics": "20-25%",
+    "Optics": "8-10%",
+    "Modern_Physics": "12-15%",
+    "Thermodynamics": "6-8%"
+  }
+}

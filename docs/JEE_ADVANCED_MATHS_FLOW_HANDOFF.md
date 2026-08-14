@@ -131,11 +131,23 @@ Banner should print `Timeouts : gemini=…ms · solver=…ms` and `Difficulty fl
 3. Post dual-lock **`expandExplanation`** — key locked, solution rewritten to full derivation
 4. Multi dual-lock by letter-set (Stage A single-only re-key cannot verify multi)
 
+**Quality-preserving upgrades (post 9.2 authenticity set):**
+1. **Trust grades** on every locked item (`production_dual` / `provisional` / `A-only` …) — never treat A+generator as production dual
+2. **Selective B** with **force B** on integer/match/high-risk; integer **independent recompute** when lock is weak
+3. **Insight-first solutions only on final kept items** (not mid-regen) — preserves hard stem quality
+4. **Archetype diversity** hints + slot reordering (cap pure Apollonius→transform chains)
+
+**Balanced hard (~9.2) + correctness (92–100% ship path):**
+1. **Depth governor** — max 2–3 major techniques per stem (no 4-engine mega multi)
+2. **No generator-as-B** — when OpenAI 429, B is independent Gemini solve
+3. **Mandatory recompute** on all integers + all multi letter-sets; mismatch → DROP
+4. Multi difficulty self-score target **78–88** (hard Advanced, not olympiad stack)
+
 **Still deferred for 100/100 authenticity:**
-- LLM design-quality auditor that drops stems without insight (not only difficulty score)
-- Single-correct Advanced path with same design block
+- Full CAS/sympy on every integer (optional when Python available)
+- Single-correct Advanced path with same stack
 - Paragraph / matrix-match types
-- Human paper-setter review loop
+- Human paper-setter review loop for provisional tags
 
 ---
 
@@ -171,3 +183,57 @@ node -e "import('./src/services/jeeAdvancedMaths.service.js').then(m => {
   console.log('paper P1', m.getAdvancedPaperTypeCounts({ paper: 1 }));
 })"
 ```
+
+---
+
+## 9. Gemini cost (accurate · no buffer) — 2026-08-05
+
+**Canonical report:** `temp/reports/jee-advanced-gemini-paper-cost-report.md`  
+**Regenerate:** `node scripts/report-jee-advanced-gemini-paper-cost.mjs`
+
+### Wallet calibration (real)
+
+| Item | Value |
+|------|------:|
+| Credit added | ₹2,000 |
+| Remaining after runs | ₹950 |
+| **Spent** | **₹1,050** |
+| Successful Qs | **24** hard Maths non-single (4 × 6) |
+| **Accurate unit** | **₹43.75 / hard non-single Q** |
+| Wall time (4 runs) | ~42 min (~105 s/Q) |
+| Writer | `gemini-3.5-flash` |
+
+Baseline folders: `temp/jee-advanced-hard-6-nonsingle-maths/2026-08-04_*`  
+Pattern: multi 3 + integer 2 + match 1 per run (no singles, no Phy/Chem, hard only).
+
+### Full paper Gemini estimate (accurate only)
+
+Pattern from `jee_advanced/jee_advanced_pattern_totals.json`: 17/subject/paper → **51/paper**, **102 total**.
+
+| Scope | Accurate Gemini ₹ | Est. wall |
+|-------|------------------:|----------:|
+| Hard non-single unit | **₹43.75** | ~105 s |
+| One paper (51 Q, mixed E/M/H) | **₹1,392** | ~0.93 h |
+| **Full dual paper (102 Q, mixed)** | **₹2,783** | **~1.86 h** |
+| Full dual paper (102 Q, all-hard) | **₹3,693** | ~2.47 h |
+| Avg ₹/Q mixed | **₹27.3** | |
+| Avg ₹/Q all-hard | **₹36.2** | |
+
+**Per subject one paper (mixed):** Physics ~₹464 · Chemistry ~₹439 · Maths ~₹488.
+
+**Hard type rates (Maths):** multi ~₹56.4 · integer ~₹23.2 · match ~₹46.8 · single (est.) ~₹38.1.
+
+### Credit check
+
+| Goal | Need | Have (₹950) | Shortfall |
+|------|-----:|------------:|----------:|
+| Mixed 102 | ₹2,783 | ₹950 | ₹1,833 |
+| All-hard 102 | ₹3,693 | ₹950 | ₹2,743 |
+| ₹950 alone | | | ~**21** hard non-single Qs |
+
+### Notes
+
+- Figures are **wallet-calibrated** and **do not** include abort/kill buffers.
+- **OpenAI dual-lock cost is separate** (and was exhausted independently).
+- Tokens remain estimates until `usageMetadata` is logged on Gemini calls.
+- Do **not** use `temp/reports/jee-advanced-gemini-cost-WITH-BUFFER.md` for planning (deprecated).

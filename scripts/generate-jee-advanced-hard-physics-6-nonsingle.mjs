@@ -1,11 +1,11 @@
 /**
- * JEE Advanced — Hard Mathematics — 6 NON-SINGLE questions only.
+ * JEE Advanced — Hard Physics — 6 NON-SINGLE questions only.
  *
  * Skips single-correct. Produces exactly 6 hard items by default as:
  *   multi-correct × 3  +  integer/numerical × 2  +  match-list × 1
  *
  * Stages (quality-first, same stack as Main/Advanced singles where applicable):
- *   0) Mongo + load jee_advanced/ pack (syllabus, NCERT hard context, scoring)
+ *   0) Mongo + load jee_advanced/physics/ pack (P01–P19 + hard archetypes)
  *   1) Plan HIGH advanced_relevance multi_concept slots
  *   2) Generate by type (Gemini hard model)
  *   3) Answer lock: o4-mini always; o3-mini ONLY when selective criteria fire
@@ -17,16 +17,16 @@
  *
  * Usage (YOU run this — do not auto-run in CI unless intended):
  *   cd firstedu-backend
- *   node scripts/generate-jee-advanced-hard-maths-6-nonsingle.mjs
- *   node scripts/generate-jee-advanced-hard-maths-6-nonsingle.mjs --count=6
- *   node scripts/generate-jee-advanced-hard-maths-6-nonsingle.mjs --multi=3 --integer=2 --match=1
- *   node scripts/generate-jee-advanced-hard-maths-6-nonsingle.mjs --keep-unverified
- *   node scripts/generate-jee-advanced-hard-maths-6-nonsingle.mjs --dual-mode=selective
- *   node scripts/generate-jee-advanced-hard-maths-6-nonsingle.mjs --dual-mode=always
- *   node scripts/generate-jee-advanced-hard-maths-6-nonsingle.mjs --dual-mode=never
+ *   node scripts/generate-jee-advanced-hard-physics-6-nonsingle.mjs
+ *   node scripts/generate-jee-advanced-hard-physics-6-nonsingle.mjs --count=6
+ *   node scripts/generate-jee-advanced-hard-physics-6-nonsingle.mjs --multi=3 --integer=2 --match=1
+ *   node scripts/generate-jee-advanced-hard-physics-6-nonsingle.mjs --keep-unverified
+ *   node scripts/generate-jee-advanced-hard-physics-6-nonsingle.mjs --dual-mode=selective
+ *   node scripts/generate-jee-advanced-hard-physics-6-nonsingle.mjs --dual-mode=always
+ *   node scripts/generate-jee-advanced-hard-physics-6-nonsingle.mjs --dual-mode=never
  *
  * Output:
- *   temp/jee-advanced-hard-6-nonsingle-maths/<timestamp>/
+ *   temp/jee-advanced-hard-physics-6-nonsingle/<timestamp>/
  */
 
 import dotenv from "dotenv";
@@ -75,7 +75,7 @@ let MATCH_N = Number(argv.match ?? 1);
 }
 
 const DIFFICULTY = "hard";
-const SUBJECT = "Mathematics";
+const SUBJECT = "Physics";
 const GENERATION_PROVIDER = String(
     argv.provider || process.env.JEE_ADV_GEN_PROVIDER || "gemini"
 )
@@ -330,15 +330,15 @@ const {
     generateQuestionBankSuggestions,
 } = await import("../src/services/aiQuestion.service.js");
 const {
-    isJeeAdvancedMathsDataAvailable,
-    getJeeAdvancedMathTopics,
-    getHighRelevanceAdvancedTopics,
-    buildJeeAdvancedNcertWriterBlock,
-    buildJeeAdvancedSyllabusWriterBlock,
-    buildJeeAdvancedHardArchetypePlanBlock,
-    buildJeeAdvancedDesignQualityBlock,
-    inferJeeAdvancedTopicsFromSlots,
-} = await import("../src/services/jeeAdvancedMaths.service.js");
+    isJeeAdvancedPhysicsDataAvailable,
+    getJeeAdvancedPhysicsTopics,
+    getHighRelevanceAdvancedPhysicsTopics,
+    buildJeeAdvancedPhysicsNcertWriterBlock,
+    buildJeeAdvancedPhysicsSyllabusWriterBlock,
+    buildJeeAdvancedPhysicsHardArchetypePlanBlock,
+    buildJeeAdvancedPhysicsDesignQualityBlock,
+    inferJeeAdvancedPhysicsTopicsFromSlots,
+} = await import("../src/services/jeeAdvancedPhysics.service.js");
 const {
     callOpenAIReasoningJson,
     buildOpenAIChatBody,
@@ -457,15 +457,15 @@ const callSolverJson = async (model, prompt, { allowGemini = true } = {}) => {
 // ---------------------------------------------------------------------------
 // Topic lock — HIGH advanced_relevance only
 // ---------------------------------------------------------------------------
-if (!isJeeAdvancedMathsDataAvailable()) {
+if (!isJeeAdvancedPhysicsDataAvailable()) {
     console.error(
-        "FATAL: jee_advanced/ pack incomplete (need maths_syllabus.json + maths_ncert_context.json)"
+        "FATAL: jee_advanced/physics/ pack incomplete (need physics_syllabus.json + physics_ncert_context.json)"
     );
     process.exit(1);
 }
 
-const highTopics = getHighRelevanceAdvancedTopics();
-const allTopics = getJeeAdvancedMathTopics();
+const highTopics = getHighRelevanceAdvancedPhysicsTopics();
+const allTopics = getJeeAdvancedPhysicsTopics();
 const TARGET_TOPICS = highTopics.length ? highTopics : allTopics;
 const CHAPTER_LABELS = TARGET_TOPICS.map((t) => t.chapter);
 const TARGET_IDS = new Set(TARGET_TOPICS.map((t) => t.topicId));
@@ -474,9 +474,9 @@ const EXCLUDED_TOPICS = allTopics
     .map((t) => `${t.topicId} ${t.chapter}`);
 
 // MUST include "JEE Advanced" so examProfile = jee_advanced
-const TOPIC = `Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: ${CHAPTER_LABELS.join(", ")}`;
+const TOPIC = `Competitive › Engineering › JEE Advanced › Physics · Hard non-single (multi/integer/match) HIGH topics: ${CHAPTER_LABELS.join(", ")}`;
 const BANK_NAME = TOPIC;
-const CATEGORY_PATHS = ["JEE Advanced > Mathematics"];
+const CATEGORY_PATHS = ["JEE Advanced > Physics"];
 
 // ---------------------------------------------------------------------------
 // Logging
@@ -566,6 +566,7 @@ const callGeminiJson = async (prompt, { kind = "generate" } = {}) => {
             });
             const text = String(result.text || "").trim();
             if (!text) throw new Error("Gemini returned empty text");
+            // API error payload sometimes returned as text
             if (/"status"\s*:\s*"UNAVAILABLE"|code"\s*:\s*503/.test(text)) {
                 throw new Error(text.slice(0, 200));
             }
@@ -954,7 +955,7 @@ const sanitizeGeneratedQuestion = (q) => {
 // Dual-lock helpers for integer + match
 // ---------------------------------------------------------------------------
 const dualSolveNumeric = async (stem, generatorAnswer = null) => {
-    const prompt = `You are an independent JEE Advanced Mathematics solver.
+    const prompt = `You are an independent JEE Advanced Physics solver.
 Solve the following INTEGER / NUMERICAL answer question.
 Return ONLY JSON:
 {"final_answer": <integer or exact numeric>, "confidence": 0.0-1.0, "brief_steps": ["step"]}
@@ -998,7 +999,7 @@ ${stem}`;
 };
 
 const dualSolveMatch = async (stem, listI, listII, options) => {
-    const prompt = `You are an independent JEE Advanced Mathematics solver.
+    const prompt = `You are an independent JEE Advanced Physics solver.
 Solve this MATCH THE FOLLOWING question. Pick the correct matching arrangement option letter (A/B/C/D).
 Return ONLY JSON:
 {"final_answer": "A"|"B"|"C"|"D", "confidence": 0.0-1.0, "brief_steps": ["..."]}
@@ -1084,7 +1085,7 @@ const dualSolveMulti = async (stem, options = [], generatorKey = null) => {
     const optBlock = (options || [])
         .map((o, i) => `${String.fromCharCode(65 + i)}. ${o}`)
         .join("\n");
-    const prompt = `You are an independent JEE Advanced Mathematics solver.
+    const prompt = `You are an independent JEE Advanced Physics solver.
 This is a MULTI-CORRECT MCQ: one or more options may be correct.
 Solve from scratch and list EVERY correct option letter.
 
@@ -1155,19 +1156,19 @@ const lettersToCorrectIndices = (key) => {
 // ---------------------------------------------------------------------------
 const buildAdvContextBlock = (slots = []) =>
     [
-        buildJeeAdvancedSyllabusWriterBlock({
+        buildJeeAdvancedPhysicsSyllabusWriterBlock({
             subject: SUBJECT,
             examProfile: "jee_advanced",
         }),
-        buildJeeAdvancedDesignQualityBlock({
+        buildJeeAdvancedPhysicsDesignQualityBlock({
             subject: SUBJECT,
             examProfile: "jee_advanced",
         }),
-        buildJeeAdvancedHardArchetypePlanBlock({
+        buildJeeAdvancedPhysicsHardArchetypePlanBlock({
             subject: SUBJECT,
             examProfile: "jee_advanced",
         }),
-        buildJeeAdvancedNcertWriterBlock({
+        buildJeeAdvancedPhysicsNcertWriterBlock({
             subject: SUBJECT,
             examProfile: "jee_advanced",
             slots,
@@ -1418,20 +1419,20 @@ const stampTrust = (q) => {
 const DEPTH_GOVERNOR = `
 **DEPTH GOVERNOR — target authentic Advanced hard (~9.2), NOT olympiad mega-stack:**
 - Each question: **2 major techniques** (max 3). Reject mental drafts with 4+ independent engines.
-- BAD (too hard / hard to verify): focal chord + tangents + normals + diameter circle + locus + area all at once.
-- GOOD: focal chord + one locus property; OR matrix rank + consistency; OR Bayes + one series/state idea.
+- BAD (too hard / hard to verify): pulley + friction + constraint + energy + angular all at once + locus + area all at once.
+- GOOD: multi-block + friction; OR rotation + energy; OR circuit + transient; OR thermo process pair.
 - Solve path should be dual-checkable in one focused derivation (favor correctness).
 - Prefer clean intermediate results; avoid chains where one algebra slip invalidates four options.
 - Stay HARD (multi_concept, non-Main) but **controlled** hardness.
 `;
 
-/** Diversity: prefer mixed chapters; limit Apollonius/locus-transform clustering. */
+/** Diversity: prefer mixed Physics chapters; avoid one-domain clustering. */
 const DIVERSITY_HINT = `
-**ARCHETYPE DIVERSITY (keep ~9.2 Advanced quality; avoid AI pattern smell):**
-- In one pack of 6, at most ONE pure "Apollonius → Möbius/inversion → optimize" chain.
-- Prefer distinct first observations: algebraic (rank/consistency), probabilistic (Bayes/states), DE/area, 3D, complex rotation/arg, conic tangent — not three complex loci.
+**ARCHETYPE DIVERSITY (keep ~9.2 Advanced Physics quality; avoid AI pattern smell):**
+- In one pack of 6, at most ONE pure "ideal gas multi-process mega-stack" and at most ONE pure ray-optics construction chain.
+- Prefer distinct first observations across: multi-block/rotation mechanics, electrostatics/capacitance, current+magnetism/EMI, thermal processes, ray/wave optics, modern physics — not three nearly identical mechanics FBDs.
 - Multi options: ≥2 options share the SAME intermediate (coupled).
-- Do NOT telegraph every tool when avoidable.
+- Do NOT telegraph every formula name when avoidable.
 - Diversity is structure mix — do NOT reduce to Main drills.
 ${DEPTH_GOVERNOR}
 `;
@@ -1444,24 +1445,29 @@ const diversifySlotPlans = (slots = [], accepted = []) => {
             )
             .filter(Boolean)
     );
-    const apolloniusRe =
-        /apollonius|locus.*invers|m[oö]bius|w\s*=\s*1\/z|circle.*transform/i;
-    let apCount = accepted.filter((q) =>
-        apolloniusRe.test(String(q.questionText || ""))
+    const mechanicsRe =
+        /newton|friction|rotation|rolling|pulley|projectile|kinematics|work.?energy/i;
+    let mechCount = accepted.filter((q) =>
+        mechanicsRe.test(
+            `${q.questionText || ""} ${q._conceptSlot || ""} ${q._chapter || ""}`
+        )
     ).length;
 
     const scored = (slots || []).map((s, i) => {
         const key = String(s.conceptSlot || s.label || s.chapter || "").toLowerCase();
         let score = 0;
         if (used.has(key)) score -= 5;
-        if (/complex|locus|apollonius|invers/i.test(key)) {
-            score -= apCount >= 1 ? 3 : 0;
+        if (mechanicsRe.test(key)) {
+            score -= mechCount >= 2 ? 3 : 0;
         }
-        if (/probab|bayes|urn|matrix|rank|diff|integral|vector|3d|conic|parabola/i.test(key)) {
+        if (
+            /electro|capacit|current|magnet|emi|induction|thermal|thermo|optics|modern|photo|nuclear|wave/i.test(
+                key
+            )
+        ) {
             score += 2;
         }
-        // Prefer unused topic ids from HIGH pack rotation
-        score += (i % 3 === 0 ? 0.1 : 0);
+        score += i % 3 === 0 ? 0.1 : 0;
         return { s, score, i };
     });
     scored.sort((a, b) => b.score - a.score || a.i - b.i);
@@ -1485,7 +1491,7 @@ const generateIntegerBatch = async (count, slots = [], exclude = []) => {
               .join("\n")}`
         : "";
 
-    const prompt = `You are a senior JEE Advanced Mathematics paper setter (IIT Advanced depth — NOT JEE Main drills).
+    const prompt = `You are a senior JEE Advanced Physics paper setter (IIT Advanced depth — NOT JEE Main drills).
 
 Generate exactly ${count} HARD INTEGER / NUMERICAL answer questions (answer is an integer or short exact number; NO options).
 
@@ -1571,7 +1577,7 @@ const generateMatchBatch = async (count, slots = [], exclude = []) => {
               .join("\n")}`
         : "";
 
-    const prompt = `You are a senior JEE Advanced Mathematics paper setter (IIT Advanced match-list depth).
+    const prompt = `You are a senior JEE Advanced Physics paper setter (IIT Advanced match-list depth).
 
 Generate exactly ${count} HARD MATCH THE FOLLOWING questions.
 Each has List-I (4 entries), List-II (4–5 entries), and 4 options A–D where each option is a full matching arrangement (e.g. "1-P, 2-Q, 3-R, 4-S").
@@ -1673,7 +1679,7 @@ const generateMultiBatch = async (count, steering, excludeTexts = []) => {
               .join("\n")}`
         : "";
 
-    const prompt = `You are a senior JEE Advanced Mathematics paper setter (IIT Advanced multi-correct depth — NOT JEE Main).
+    const prompt = `You are a senior JEE Advanced Physics paper setter (IIT Advanced multi-correct depth — NOT JEE Main).
 
 Generate exactly ${count} HARD MULTI-CORRECT MCQs (one or more of A–D may be correct).
 
@@ -1970,7 +1976,7 @@ const stemKey = (q) =>
 
 const attachChapters = (questions = []) =>
     questions.map((q) => {
-        const hits = inferJeeAdvancedTopicsFromSlots([
+        const hits = inferJeeAdvancedPhysicsTopicsFromSlots([
             {
                 chapter: q._chapter || q.chapter || "",
                 conceptSlot: q._conceptSlot || q.conceptSlot || "",
@@ -2036,7 +2042,7 @@ async function connectMongo() {
 async function main() {
     console.log("\n" + RULE);
     console.log(
-        "JEE ADVANCED — Hard Maths — 6 NON-SINGLE (multi / integer / match)"
+        "JEE ADVANCED — Hard Physics — 6 NON-SINGLE (multi / integer / match)"
     );
     console.log(RULE);
     console.log(`Target   : ${TOTAL} questions TOTAL (single SKIPPED)`);
@@ -2080,7 +2086,7 @@ async function main() {
     console.log("");
 
     phaseStart("0", "Mongo + Advanced data pack", [
-        "Load jee_advanced/ syllabus + NCERT hard context + scoring",
+        "Load jee_advanced/physics/ P01–P19 syllabus + NCERT hard context + scoring",
         "Connect Mongo for archetype history",
     ]);
     await connectMongo();
@@ -2113,7 +2119,7 @@ async function main() {
         });
         const slots = planResult?.steering?.slotPlans || [];
         slots.forEach((s, i) => {
-            const hits = inferJeeAdvancedTopicsFromSlots([s]);
+            const hits = inferJeeAdvancedPhysicsTopicsFromSlots([s]);
             phaseStep(
                 "1",
                 `Slot ${i + 1}: ${hits[0]?.topicId || "?"} ${hits[0]?.chapter || s.label || s.conceptSlot}`
@@ -2441,7 +2447,7 @@ async function main() {
         }
 
         console.log(
-            `\nDONE — ${accepted.length}/${TOTAL} non-single hard Advanced Maths (dual-locked where required).\n`
+            `\nDONE — ${accepted.length}/${TOTAL} non-single hard Advanced Physics (dual-locked where required).\n`
         );
     } catch (err) {
         failed = true;
@@ -2462,7 +2468,7 @@ async function main() {
     const outDir = join(
         ROOT_DIR,
         "temp",
-        `jee-advanced-hard-${TOTAL}-nonsingle-maths`,
+        `jee-advanced-hard-physics-${TOTAL}-nonsingle`,
         ts
     );
     mkdirSync(outDir, { recursive: true });
@@ -2493,7 +2499,7 @@ async function main() {
         JSON.stringify(
             {
                 exam: "JEE Advanced",
-                subject: "Mathematics",
+                subject: "Physics",
                 mode: "non_single_only",
                 skipSingle: true,
                 requested: {
@@ -2564,7 +2570,7 @@ async function main() {
                     topicId: t.topicId,
                     chapter: t.chapter,
                 })),
-                dataRoot: "jee_advanced/",
+                dataRoot: "jee_advanced/physics/",
                 failed,
                 failError: failError
                     ? String(failError?.message || failError)
