@@ -1,0 +1,18 @@
+{
+  "exam": "SSC CGL Tier II Paper I",
+  "year": 2026,
+  "source": "SSC_CGL_Tier_2/SSC_CGL_Tier2_2026_Syllabus.json",
+  "exam_pattern": {
+    "duration_minutes": 135,
+    "questions": 150,
+    "marks_per_question": 3,
+    "negative": 1,
+    "subjects": {
+      "Mathematical Abilities": 30,
+      "Reasoning and General Intelligence": 30,
+      "English Language and Comprehension": 45,
+      "General Awareness": 25,
+      "Computer Knowledge": 20
+    }
+  }
+}

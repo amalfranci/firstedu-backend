@@ -1,0 +1,1322 @@
+{
+  "paper_id": "UPSC-GS-Paper1",
+  "title": "UPSC Prelims GS Paper 1",
+  "exam": "UPSC Prelims GS",
+  "year": 2026,
+  "subjects": {
+    "History": [
+      {
+        "q": 1,
+        "topic": "Ancient India",
+        "question": "Consider the following historical sites of ancient India: 1. Lepakshi 2. Srikalahasti 3. Amaravati. Which of the above sites is/are famous for exquisite mural paintings or temple architecture belonging to the Vijayanagara or post-Satavahana periods?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "A",
+        "explanation": "Lepakshi is renowned for its Vijayanagara paintings and sculpture. Srikalahasti is famous for its temple architecture and Kalamkari tradition. Amaravati is primarily known for its Buddhist stupa remains of the Satavahana period rather than mural paintings. Thus, only 1 and 2 are correct."
+      },
+      {
+        "q": 2,
+        "topic": "Medieval India",
+        "question": "With reference to the religious history of medieval India, the term 'Varkari' refers to which of the following?",
+        "options": {
+          "A": "A sect of militant ascetic warriors who protected temples",
+          "B": "A Vaishnava devotional movement centered around Pandharpur in Maharashtra",
+          "C": "A royal tax levied on pilgrims visiting sacred rivers",
+          "D": "A guild of maritime traders operating along the Konkan coast"
+        },
+        "correct": "B",
+        "explanation": "The Varkari movement is a well-known Vaishnava bhakti tradition in Maharashtra, focusing on the worship of Vitthal at Pandharpur, emphasizing egalitarianism and devotion."
+      },
+      {
+        "q": 3,
+        "topic": "Medieval India",
+        "question": "Consider the following statements regarding Ramanujacharya, the prominent medieval philosopher-saint: 1. He propounded the philosophical system known as Visishtadvaita or qualified non-dualism. 2. He argued that the physical universe and individual souls are completely independent entities devoid of any connection to Brahman. Which of the statements given above is/are correct?",
+        "options": {
+          "A": "Both 1 and 2",
+          "B": "2 only",
+          "C": "1 only",
+          "D": "Neither 1 nor 2"
+        },
+        "correct": "C",
+        "explanation": "Statement 1 is correct as Ramanujacharya propounded Visishtadvaita Vedanta. Statement 2 is incorrect because Visishtadvaita asserts that souls and the physical universe form an inseparable part of the supreme reality (Brahman), rather than being completely independent or devoid of connection."
+      },
+      {
+        "q": 4,
+        "topic": "Modern India",
+        "question": "In the context of ancient Indian temple architecture, what do the terms 'Urushringa', 'Mandapa', and 'Antarala' signify?",
+        "options": {
+          "A": "Administrative divisions of the temple land grants",
+          "B": "Ritualistic musical instruments played during temple processions",
+          "C": "Categorizations of bronze casting techniques used for deities",
+          "D": "Architectural components and subsidiary shrines of a Nagara style temple"
+        },
+        "correct": "D",
+        "explanation": "Urushringa represents subsidiary mini spires on the main shikhara, Mandapa is the pillared assembly hall, and Antarala is the vestibule connecting the sanctum to the mandapa in Nagara architecture."
+      },
+      {
+        "q": 5,
+        "topic": "Modern India",
+        "question": "The 'Public Safety Bill' introduced in the Central Legislative Assembly in 1928 aimed primarily to achieve which of the following objectives?",
+        "options": {
+          "A": "To deport foreign socialists and communists suspected of organizing trade union movements in India",
+          "B": "To nationalize key heavy industries to protect domestic laborers",
+          "C": "To establish state monopoly over public broadcasting and print media",
+          "D": "To impose strict censorship on vernacular newspapers criticizing land revenue settlements"
+        },
+        "correct": "A",
+        "explanation": "The Public Safety Bill of 1928 was designed to empower the government to deport foreign communists and radical agitators who were perceived as threats to British rule through trade union organizing."
+      },
+      {
+        "q": 6,
+        "topic": "Ancient India",
+        "question": "Varahamihira, a luminary of the classical age of Indian science, is best known for his monumental contributions in which of the following fields?",
+        "options": {
+          "A": "Formulation of algebraic algorithms for indeterminate equations and cyclical quadrilateral properties",
+          "B": "Encyclopedic compilations covering planetary motion, astral science, and physical geography",
+          "C": "Calculation of the exact value of Pi and formulation of planetary epicycles for heliocentric calculations",
+          "D": "Development of calculus-like differential coefficients for astronomical timekeeping"
+        },
+        "correct": "B",
+        "explanation": "Varahamihira's works like Brihat Samhita and Panchasiddhantika are encyclopedic compilations spanning astronomy, planetary movements, astrology, and physical geography. Options A, B, and D describe contributions traditionally associated with mathematicians and astronomers like Brahmagupta, Aryabhata, and Bhaskara."
+      },
+      {
+        "q": 7,
+        "topic": "Modern India",
+        "question": "The Cripps Mission of 1942 proposed which of the following key concessions to secure Indian cooperation during World War II?",
+        "options": {
+          "A": "Immediate grant of complete independence and withdrawal of British troops",
+          "B": "Partition of British India into two sovereign states prior to cessation of hostilities",
+          "C": "Dominion status for India after the war with the right of provinces to secede from the union",
+          "D": "Establishment of a unitary Indian federation with absolute veto power given to the Viceroy"
+        },
+        "correct": "C",
+        "explanation": "The Cripps Mission offered Dominion status to India after the conclusion of World War II, alongside a provision allowing any province unwilling to join the proposed Indian Union to form a separate constitution or secede."
+      },
+      {
+        "q": 8,
+        "topic": "Ancient India",
+        "question": "Consider the following statements regarding the early Buddhist councils: 1. The First Buddhist Council was held at Rajagriha under the patronage of King Ajatashatru. 2. The Fourth Buddhist Council was convened under the patronage of Ashoka at Pataliputra.",
+        "options": {
+          "A": "Neither 1 nor 2",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "1 only"
+        },
+        "correct": "D",
+        "explanation": "The First Buddhist Council was indeed held at Rajagriha under Ajatashatru. However, the Fourth Buddhist Council was held in Kashmir under the patronage of Kanishka, not Ashoka (Ashoka patronized the Third Council at Pataliputra)."
+      },
+      {
+        "q": 9,
+        "topic": "Indian National Movement",
+        "question": "Which of the following provisions was/were part of the Gandhi-Irwin Pact of 1931?",
+        "options": {
+          "A": "Release of all political prisoners not convicted of violence",
+          "B": "Establishment of a responsible federal government at the Centre",
+          "C": "Immediate commutation of death sentence of Bhagat Singh and his associates",
+          "D": "Complete suspension of the revenue collection in all provinces"
+        },
+        "correct": "A",
+        "explanation": "Under the Gandhi-Irwin Pact, the government agreed to release political prisoners who were not convicted of violence. The demand for commuting Bhagat Singh's sentence was rejected by Irwin."
+      },
+      {
+        "q": 10,
+        "topic": "Modern India",
+        "question": "Which of the following Indus Valley Civilization sites is characterized by the presence of a dockyard and evidence of foreign trade seals?",
+        "options": {
+          "A": "Harappa",
+          "B": "Lothal",
+          "C": "Kalibangan",
+          "D": "Mohenjodaro"
+        },
+        "correct": "B",
+        "explanation": "Lothal, located in Gujarat along the Sabarmati river basin, featured an elaborate brick basin identified by archaeologists as a tidal dockyard, along with Persian Gulf seals indicating maritime trade."
+      },
+      {
+        "q": 11,
+        "topic": "Modern India",
+        "question": "The Munda uprising, also known as Ulgulan, was led by Birsa Munda against the oppressive agrarian system introduced by British colonial rule. In this context, the term 'Kuntkati' system refers to which of the following?",
+        "options": {
+          "A": "A traditional system of forest conservation practiced in the Chotanagpur plateau",
+          "B": "A brutal forced labor extraction tax levied on tribal peasants",
+          "C": "Joint tribal ownership and tenure system of land among the Munda community",
+          "D": "The judicial council of elders responsible for settling blood feuds"
+        },
+        "correct": "C",
+        "explanation": "The Kuntkati system was the traditional joint or communal land tenure system practiced by the Munda tribe, which was systematically disrupted by the introduction of landlords and British revenue contractors."
+      },
+      {
+        "q": 12,
+        "topic": "Modern India",
+        "question": "Sattriya, a classical dance form recognized by the Sangeet Natak Akademi, traces its origin and religious roots to which of the following traditions?",
+        "options": {
+          "A": "Shaivite temple rituals performed in medieval Kerala",
+          "B": "Tantric Buddhist rituals practiced in the monasteries of Arunachal Pradesh",
+          "C": "Court dances performed under the patronage of the Ahoms in upper Assam",
+          "D": "Vaishnava Bhakti movement propagated by Srimanta Sankardeva in Assam"
+        },
+        "correct": "D",
+        "explanation": "Sattriya dance was introduced in the 15th century by the Vaishnava saint and reformer Srimanta Sankardeva in Assam as an artistic medium to propagate the Neo-Vaishnavite movement through the Sattras."
+      },
+      {
+        "q": 13,
+        "topic": "Ancient India",
+        "question": "Consider the following statements regarding the rock-cut edicts of Emperor Ashoka: 1. The Major Rock Edicts are found exclusively in the Prakrit language written in the Brahmi script. 2. Ashoka's edicts make prominent references to contemporary Hellenistic kings of the Mediterranean world.",
+        "options": {
+          "A": "2 only",
+          "B": "1 only",
+          "C": "Neither 1 nor 2",
+          "D": "Both 1 and 2"
+        },
+        "correct": "A",
+        "explanation": "Statement 1 is incorrect because while most edicts are in Prakrit/Brahmi, edicts in the northwest are written in Greek and Aramaic, and Kharoshthi script is also used. Statement 2 is correct as Rock Edict XIII mentions Greek kings."
+      },
+      {
+        "q": 14,
+        "topic": "Medieval India",
+        "question": "In the administrative vocabulary of the Mughal Empire, what did the term 'Madad-i-Maash' denote?",
+        "options": {
+          "A": "Military allowances granted to cavalrymen serving in distant frontiers",
+          "B": "Revenue-free land grants given to religious scholars, ascetics, and needy persons",
+          "C": "A specialized toll tax levied on commercial goods transported across provincial boundaries",
+          "D": "Emergency grain storage reserves maintained to combat famine conditions"
+        },
+        "correct": "B",
+        "explanation": "Madad-i-Maash (meaning assistance for subsistence) refers to revenue-free land grants bestowed by Mughal emperors upon learned men, religious figures, and the destitute."
+      },
+      {
+        "q": 15,
+        "topic": "Modern India",
+        "question": "The Wood's Despatch of 1854 is frequently regarded as a landmark in educational reforms in India. Which of the following was specifically recommended by it?",
+        "options": {
+          "A": "Complete discontinuation of vernacular languages as mediums of instruction at all levels",
+          "B": "Direct centralization of all primary school funding under the Viceroy's executive council",
+          "C": "Creation of an independent department of public instruction in each of the provinces",
+          "D": "Abolition of all grants-in-aid systems for private indigenous schools"
+        },
+        "correct": "C",
+        "explanation": "Wood's Despatch recommended the creation of a Department of Public Instruction in each of the provinces to oversee the educational apparatus, while supporting vernacular education at the primary level and grants-in-aid."
+      },
+      {
+        "q": 16,
+        "topic": "Modern India",
+        "question": "The famous Ellora Caves contain rock-cut monuments belonging to which of the following religious traditions?",
+        "options": {
+          "A": "Buddhism only",
+          "B": "Hinduism and Jainism only",
+          "C": "Buddhism and Jainism only",
+          "D": "Buddhism, Hinduism, and Jainism"
+        },
+        "correct": "D",
+        "explanation": "The Ellora Caves complex in Maharashtra represents an exceptional synthesis of religious tolerance, featuring rock-cut shrines and temples belonging to Buddhism, Hinduism, and Jainism across its 34 excavated caves."
+      }
+    ],
+    "Indian Polity and Governance": [
+      {
+        "q": 1,
+        "topic": "Political system",
+        "question": "Consider the following statements regarding the Ordinance-making power of the President of India under Article 123: 1. It can be promulgated only when both Houses of Parliament are not in session. 2. An ordinance ceases to operate on the expiration of six weeks from the reassembly of Parliament, or sooner if resolutions disapproving it are passed by both Houses. Which of the statements given above is/are correct?",
+        "options": {
+          "A": "Both 1 and 2",
+          "B": "1 only",
+          "C": "2 only",
+          "D": "Neither 1 nor 2"
+        },
+        "correct": "A",
+        "explanation": "Both statements are correct. The President can issue ordinances only when Parliament is not in session (or either House is not in session), and under Article 123, an ordinance ceases to operate six weeks after reassembly unless approved or if disapproved earlier by both Houses."
+      },
+      {
+        "q": 2,
+        "topic": "Rights issues",
+        "question": "With reference to the Directive Principles of State Policy (DPSP) enshrined in Part IV of the Constitution of India, which of the following provisions were added by the 42nd Constitutional Amendment Act of 1976? 1. To secure opportunities for healthy development of children. 2. To promote equal justice and provide free legal aid to the poor. 3. To take steps to secure the participation of workers in the management of industries. Select the correct answer using the code given below:",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "1, 2 and 3",
+          "C": "2 and 3 only",
+          "D": "1 and 3 only"
+        },
+        "correct": "B",
+        "explanation": "All three provisions (Article 39(f) on children, Article 39A on free legal aid, and Article 43A on worker participation in management) were added to the DPSP by the 42nd Constitutional Amendment Act, 1976."
+      },
+      {
+        "q": 3,
+        "topic": "Political system",
+        "question": "Consider the following authorities: 1. Speaker of the Lok Sabha 2. Chairman of the Rajya Sabha 3. Deputy Chairman of the Rajya Sabha. Which of the above are not members of either House of Parliament?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "1 only",
+          "C": "2 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "C",
+        "explanation": "The Chairman of the Rajya Sabha is the Vice-President of India, who is an ex-officio chairman and is not a member of either House of Parliament. The Speaker of the Lok Sabha is a member of the Lok Sabha, and the Deputy Chairman of the Rajya Sabha is elected from amongst the members of the Rajya Sabha."
+      },
+      {
+        "q": 4,
+        "topic": "Political system",
+        "question": "Which of the following constitutional bodies or functionaries is/are appointed directly by the President of India under a warrant under his hand and seal? 1. Judges of the Supreme Court and High Courts 2. Governors of States 3. Comptroller and Auditor General of India. Select the correct answer using the code given below:",
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "D",
+        "explanation": "All three functionaries (Supreme Court/High Court judges, State Governors, and the Comptroller and Auditor General of India) are appointed by warrants under the hand and seal of the President of India."
+      },
+      {
+        "q": 5,
+        "topic": "Political system",
+        "question": "Consider the following statements regarding the Attorney General for India: 1. He must be a person qualified to be appointed as a judge of the Supreme Court. 2. He has the right to speak and take part in the proceedings of both Houses of Parliament or any joint sitting, with a full right to vote in case of a tie.",
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "correct": "A",
+        "explanation": "Statement 1 is correct as the Attorney General must be qualified to be a Supreme Court judge. Statement 2 is incorrect because while he has the right to speak and participate in parliamentary proceedings, he does not have the right to vote."
+      },
+      {
+        "q": 6,
+        "topic": "Rights issues",
+        "question": "Which of the following writs can be issued against both public authorities and private individuals whose actions violate fundamental rights or statutory duties?",
+        "options": {
+          "A": "Certiorari",
+          "B": "Habeas Corpus",
+          "C": "Quo-Warranto",
+          "D": "Prohibition"
+        },
+        "correct": "B",
+        "explanation": "The writ of Habeas Corpus (to have the body of) can be issued against both public authorities and private individuals who illegally detain a person, unlike Prohibition or Certiorari which lie primarily against judicial and quasi-judicial bodies."
+      },
+      {
+        "q": 7,
+        "topic": "Rights issues",
+        "question": "In the context of the legislative powers of the Indian Parliament, under which Article can Parliament make laws on any matter enumerated in the State List if the Rajya Sabha passes a resolution supported by not less than two-thirds of the members present and voting?",
+        "options": {
+          "A": "Article 252",
+          "B": "Article 250",
+          "C": "Article 249",
+          "D": "Article 253"
+        },
+        "correct": "C",
+        "explanation": "Article 249 empowers Parliament to legislate on a State List matter if the Rajya Sabha declares by a resolution supported by two-thirds majority that it is necessary in the national interest."
+      },
+      {
+        "q": 8,
+        "topic": "Rights issues",
+        "question": "Consider the following statements regarding the National Human Rights Commission (NHRC) of India: 1. It is a constitutional body established under Article 324 of the Constitution. 2. The Chairperson must be a retired Chief Justice of India or a judge of the Supreme Court. Which of the statements given above is/are correct?",
+        "options": {
+          "A": "1 only",
+          "B": "Both 1 and 2",
+          "C": "Neither 1 nor 2",
+          "D": "2 only"
+        },
+        "correct": "D",
+        "explanation": "Statement 1 is incorrect because NHRC is a statutory body established under the Protection of Human Rights Act, 1993, not a constitutional body. Statement 2 is correct as the chairperson must be a retired Chief Justice of India or a Supreme Court judge."
+      },
+      {
+        "q": 9,
+        "topic": "Rights issues",
+        "question": "Which of the following constitutional amendments incorporated the fundamental duty relating to providing opportunities for education to one's child between the age of six and fourteen years?",
+        "options": {
+          "A": "86th Constitutional Amendment Act, 2002",
+          "B": "91st Constitutional Amendment Act, 2003",
+          "C": "42nd Constitutional Amendment Act, 1976",
+          "D": "44th Constitutional Amendment Act, 1978"
+        },
+        "correct": "A",
+        "explanation": "The 86th Constitutional Amendment Act, 2002 added Article 21A as a fundamental right and inserted the eleventh fundamental duty under Article 51A(k) concerning education for children aged 6 to 14 years."
+      },
+      {
+        "q": 10,
+        "topic": "Political system",
+        "question": "With reference to the Central Vigilance Commission (CVC), consider the following statements: 1. It was established in 1964 based on the recommendations of the Santhanam Committee. 2. The Central Vigilance Commissioner and Vigilance Commissioners are appointed by the President on the recommendation of a committee consisting of the Prime Minister, the Home Minister, and the Leader of the Opposition in the Lok Sabha.",
+        "options": {
+          "A": "1 only",
+          "B": "Both 1 and 2",
+          "C": "2 only",
+          "D": "Neither 1 nor 2"
+        },
+        "correct": "B",
+        "explanation": "Both statements are correct. The CVC was set up on the recommendation of the Committee on Prevention of Corruption (Santhanam Committee) and its members are appointed by the President via a high-powered committee comprising the PM, Home Minister, and Leader of Opposition."
+      },
+      {
+        "q": 11,
+        "topic": "Public policy",
+        "question": "What is the primary function of the Estimates Committee of the Lok Sabha?",
+        "options": {
+          "A": "To examine the audit reports of the Comptroller and Auditor General relating to public undertakings",
+          "B": "To inquire into the financial irregularities and corruption charges against government ministries",
+          "C": "To report what economies, improvements in organization, or administrative reforms can be effected consistent with the policy underlying the estimates",
+          "D": "To scrutinize government bills before they are introduced in the lower house"
+        },
+        "correct": "C",
+        "explanation": "The Estimates Committee examines whether the money is well laid out within the limits of the policy implied in the estimates and suggests economies and administrative reforms in public expenditure."
+      },
+      {
+        "q": 12,
+        "topic": "Political system",
+        "question": "Which of the following constitutional provisions empowers the Supreme Court to complete complete justice in any cause or matter pending before it?",
+        "options": {
+          "A": "Article 131",
+          "B": "Article 136",
+          "C": "Article 141",
+          "D": "Article 142"
+        },
+        "correct": "D",
+        "explanation": "Article 142 of the Constitution of India provides that the Supreme Court in the exercise of its jurisdiction may pass such decree or make such order as is necessary for doing complete justice in any cause or matter pending before it."
+      },
+      {
+        "q": 13,
+        "topic": "Rights issues",
+        "question": "Consider the following statements regarding the creation of a new State or alteration of boundaries under Article 3 of the Indian Constitution: 1. A Bill for this purpose can be introduced in either House of Parliament only on the recommendation of the President. 2. Before recommending the Bill, the President must refer it to the concerned State Legislature, whose views are binding on Parliament.",
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "correct": "A",
+        "explanation": "Statement 1 is correct as prior recommendation of the President is mandatory. Statement 2 is incorrect because while the President must refer the bill to the State legislature to ascertain its views, those views are not binding on Parliament."
+      },
+      {
+        "q": 14,
+        "topic": "Rights issues",
+        "question": "In the context of the Indian polity, what does the doctrine of 'Basic Structure' established by the Supreme Court primarily signify?",
+        "options": {
+          "A": "The fundamental economic framework governing public sector undertakings",
+          "B": "Certain core features of the Constitution that cannot be amended by Parliament under Article 368",
+          "C": "The supremacy of executive orders over parliamentary legislation",
+          "D": "The absolute rigidity of federal distribution of powers between Centre and States"
+        },
+        "correct": "B",
+        "explanation": "The basic structure doctrine, propounded in the landmark Kesavananda Bharati case (1973), establishes that Parliament's constituent power under Article 368 does not extend to altering the core, foundational features of the Constitution."
+      }
+    ],
+    "Geography": [
+      {
+        "q": 1,
+        "topic": "Physical geography",
+        "question": "Regarding the 'Geostrophic Wind' and its relationship with pressure gradient, consider the following statements: (A) It flows parallel to isobars due to the balancing of Coriolis force and pressure gradient force. (B) It is observed primarily in the friction-dominated planetary boundary layer. (C) Its velocity is inversely proportional to the spacing of isobars. (D) It typically occurs at the equator where the Coriolis force is at its maximum.",
+        "options": {
+          "A": "It flows parallel to isobars due to the balancing of Coriolis force and pressure gradient force.",
+          "B": "It is observed primarily in the friction-dominated planetary boundary layer.",
+          "C": "Its velocity is inversely proportional to the spacing of isobars.",
+          "D": "It typically occurs at the equator where the Coriolis force is at its maximum."
+        },
+        "correct": "A",
+        "explanation": "Geostrophic wind results from the balance between the Coriolis force and the pressure gradient force in the free atmosphere, causing it to flow parallel to isobars. It is not found near the surface due to friction, and the Coriolis force is zero at the equator."
+      },
+      {
+        "q": 2,
+        "topic": "Indian geography",
+        "question": "With reference to the 'Tethys Himalayan' zone of India, which of the following statements is correct?",
+        "options": {
+          "A": "It consists predominantly of crystalline metamorphic rocks of Precambrian age.",
+          "B": "It represents the transition zone between the Higher Himalayas and the Indo-Gangetic Plains.",
+          "C": "It contains a nearly complete sedimentary sequence ranging from the Cambrian to the Eocene.",
+          "D": "It is characterized by high-grade regional metamorphism resulting from the final phase of Himalayan orogeny."
+        },
+        "correct": "C",
+        "explanation": "The Tethys Himalayas (or Tibetan Himalayas) are distinguished by their rich, well-preserved sedimentary fossil record spanning from the Cambrian to the Eocene, unlike the Higher Himalayas which are mostly crystalline."
+      },
+      {
+        "q": 3,
+        "topic": "Economic geography",
+        "question": "Consider the following characteristics of a specific soil type found in India: (A) Rich in phosphorus and nitrogen, primarily found in the Western Ghats. (B) High water-retention capacity due to montmorillonite clay mineralogy. (C) Formed by intensive leaching in areas of high temperature and high rainfall. (D) Highly alkaline in nature, unsuitable for cultivation of any crop.",
+        "options": {
+          "A": "Rich in phosphorus and nitrogen, primarily found in the Western Ghats.",
+          "B": "High water-retention capacity due to montmorillonite clay mineralogy.",
+          "C": "Formed by intensive leaching in areas of high temperature and high rainfall.",
+          "D": "Highly alkaline in nature, unsuitable for cultivation of any crop."
+        },
+        "correct": "B",
+        "explanation": "Black soils (Regur) are characterized by the presence of the clay mineral montmorillonite, which gives them high moisture retention and self-ploughing characteristics."
+      },
+      {
+        "q": 4,
+        "topic": "Indian geography",
+        "question": "Which of the following best describes the 'Thermohaline Circulation' in the context of oceanography?",
+        "options": {
+          "A": "A surface current driven purely by prevailing wind systems across the Atlantic.",
+          "B": "A deep-ocean circulation driven by density differences resulting from temperature and salinity variations.",
+          "C": "A tidal phenomenon causing the mixing of freshwater and saltwater in estuarine environments.",
+          "D": "A cyclical atmospheric-oceanic interaction localized strictly to the Indian Ocean basin."
+        },
+        "correct": "B",
+        "explanation": "Thermohaline circulation, often called the 'Global Conveyor Belt,' is the large-scale movement of ocean water driven by density gradients, which are determined by temperature (thermo) and salinity (haline)."
+      },
+      {
+        "q": 5,
+        "topic": "Indian geography",
+        "question": "With reference to the 'Koppen Classification' of climates in India, the 'Amw' climate type is characterized by:",
+        "options": {
+          "A": "A short dry season followed by a very heavy monsoon rainfall.",
+          "B": "Semi-arid conditions with rainfall occurring primarily during the winter months.",
+          "C": "Hot, dry summers with extremely cold winters characteristic of the Thar Desert.",
+          "D": "Perpetual ice-cap conditions found in the trans-Himalayan region."
+        },
+        "correct": "A",
+        "explanation": "According to the Koppen climate classification, the 'Amw' type refers to the Tropical Monsoon climate with a short dry season, specifically found along the Konkan coast and parts of the Western Ghats."
+      },
+      {
+        "q": 6,
+        "topic": "Physical geography",
+        "question": "Regarding the 'Milankovitch Cycles', which of the following is correct?",
+        "options": {
+          "A": "They explain the short-term fluctuations in weather patterns over a period of 5-10 years.",
+          "B": "They include eccentricity, obliquity, and precession, affecting Earth's climate on long-term scales.",
+          "C": "They describe the chemical interactions between the ozone layer and greenhouse gases.",
+          "D": "They are primarily responsible for the diurnal variation in sea-level pressure."
+        },
+        "correct": "B",
+        "explanation": "Milankovitch Cycles represent the collective effects of changes in the Earth's movements on its climate over tens of thousands of years: eccentricity (orbit shape), obliquity (axial tilt), and precession (wobble)."
+      },
+      {
+        "q": 7,
+        "topic": "Indian geography",
+        "question": "The 'Bhabar' plain in India is distinguished by:",
+        "options": {
+          "A": "Fine-grained alluvial deposits suitable for intensive agriculture.",
+          "B": "The phenomenon of river disappearance due to highly porous, coarse-grained sediment deposits.",
+          "C": "Its location at the deltaic mouth of the Ganga-Brahmaputra system.",
+          "D": "Persistent waterlogging leading to the development of marshy 'Terai' conditions throughout the year."
+        },
+        "correct": "B",
+        "explanation": "The Bhabar is a narrow belt of gravel and pebble-laden sediment deposited at the foot of the Himalayas. Because the sediment is so coarse and porous, small streams disappear into it, only to re-emerge in the Terai region."
+      },
+      {
+        "q": 8,
+        "topic": "Indian geography",
+        "question": "Which of the following factors primarily contributes to the formation of 'Tropical Cyclones' in the Bay of Bengal?",
+        "options": {
+          "A": "Strong vertical wind shear preventing cloud formation.",
+          "B": "Sea surface temperatures (SSTs) exceeding 26.5°C up to a depth of at least 50 meters.",
+          "C": "Persistent high-pressure conditions in the upper troposphere.",
+          "D": "Location within 5 degrees latitude of the equator."
+        },
+        "correct": "B",
+        "explanation": "Tropical cyclones require high SSTs (at least 26.5°C) to a sufficient depth to provide latent heat energy. Vertical wind shear must be low for a cyclone to develop, and the Coriolis force is negligible within 5 degrees of the equator."
+      },
+      {
+        "q": 9,
+        "topic": "Indian geography",
+        "question": "With reference to the 'Peninsular Plateau' of India, consider the following:",
+        "options": {
+          "A": "It is the youngest physiographic division of India.",
+          "B": "It is composed primarily of sedimentary rocks formed during the Quaternary period.",
+          "C": "It is a stable landmass, mostly composed of ancient crystalline, igneous, and metamorphic rocks.",
+          "D": "It is characterized by high seismic activity compared to the Himalayan region."
+        },
+        "correct": "C",
+        "explanation": "The Peninsular Plateau is one of the oldest and most stable landmasses in India, consisting of ancient igneous and metamorphic rocks (granites and gneisses)."
+      },
+      {
+        "q": 10,
+        "topic": "Indian geography",
+        "question": "'El Niño' is associated with which of the following atmospheric/oceanic conditions?",
+        "options": {
+          "A": "Strengthening of the Walker Circulation, leading to increased rainfall in Indonesia.",
+          "B": "Abnormal warming of surface ocean waters in the eastern tropical Pacific.",
+          "C": "Upwelling of cold, nutrient-rich water along the coast of Peru.",
+          "D": "A decrease in global average surface temperatures."
+        },
+        "correct": "B",
+        "explanation": "El Niño is characterized by an abnormal warming of surface waters in the central and eastern Pacific, which disrupts the normal Walker Circulation and shifts weather patterns globally."
+      },
+      {
+        "q": 11,
+        "topic": "Physical geography",
+        "question": "The 'Western Disturbances' that influence the climate of Northwest India originate from:",
+        "options": {
+          "A": "The Indian Ocean, traveling through the Bay of Bengal.",
+          "B": "The Mediterranean Sea, moving as extra-tropical cyclonic storms.",
+          "C": "The South China Sea, moving across the Tibetan Plateau.",
+          "D": "Localized heating effects over the Thar Desert."
+        },
+        "correct": "B",
+        "explanation": "Western Disturbances are extra-tropical storms originating in the Mediterranean region that bring winter rainfall to the northwestern parts of the Indian subcontinent."
+      },
+      {
+        "q": 12,
+        "topic": "Indian geography",
+        "question": "Which of the following is correct regarding 'Geosynclines'?",
+        "options": {
+          "A": "They are stable mountain ranges formed by volcanic activity.",
+          "B": "They are narrow, shallow ocean basins that have remained unchanged for millions of years.",
+          "C": "They are large, subsiding basins that accumulate thick sedimentary layers, often precursors to mountain building.",
+          "D": "They are high-altitude plateaus formed by tectonic uplift of the mantle."
+        },
+        "correct": "C",
+        "explanation": "A geosyncline is a massive, slowly sinking basin that accumulates vast quantities of sediment. According to classical theory, the pressure and heating of these sediments, followed by tectonic compression, lead to mountain formation (orogenesis)."
+      },
+      {
+        "q": 13,
+        "topic": "Indian geography",
+        "question": "In the context of India's river systems, the 'Antecedent Drainage' pattern is best represented by:",
+        "options": {
+          "A": "Rivers like the Ganga and Yamuna in the Indo-Gangetic Plains.",
+          "B": "Rivers like the Indus, Satluj, and Brahmaputra, which cut across the Himalayas.",
+          "C": "Rivers in the Peninsular region flowing through rift valleys, such as the Narmada.",
+          "D": "Small seasonal streams that originate in the Aravali Range."
+        },
+        "correct": "B",
+        "explanation": "Antecedent rivers existed before the Himalayas were uplifted. As the mountains rose, these rivers maintained their course by eroding downward, creating deep gorges through the uplifted range."
+      }
+    ],
+    "Economic and Social Development": [
+      {
+        "q": 1,
+        "topic": "Sustainable development",
+        "question": "Regarding the 'Capital Adequacy Ratio (CAR)' for commercial banks under Basel norms, consider the following statements: (A) It is the ratio of a bank's risk-weighted assets to its core capital base. (B) It is designed to ensure that banks can absorb a reasonable amount of loss and comply with statutory risks. (C) Tier 2 capital under CAR consists strictly of equity share capital and disclosed reserves. (D) The Reserve Bank of India mandates a CAR significantly lower than the baseline prescribed by the Basel Committee.",
+        "options": {
+          "A": "It is the ratio of a bank's risk-weighted assets to its core capital base.",
+          "B": "It is designed to ensure that banks can absorb a reasonable amount of loss and comply with statutory risks.",
+          "C": "Tier 2 capital under CAR consists strictly of equity share capital and disclosed reserves.",
+          "D": "The Reserve Bank of India mandates a CAR significantly lower than the baseline prescribed by the Basel Committee."
+        },
+        "correct": "B",
+        "explanation": "CAR ensures banks have enough cushion to absorb potential losses, protecting depositors. Tier 1 capital represents core capital (equity and disclosed reserves), while Tier 2 represents supplementary capital. RBI mandates a higher CAR than Basel III minimums."
+      },
+      {
+        "q": 2,
+        "topic": "Sustainable development",
+        "question": "With reference to 'Open Market Operations (OMOs)' conducted by the Reserve Bank of India, which of the following is correct?",
+        "options": {
+          "A": "They involve direct lending to corporate houses during financial crunches.",
+          "B": "They are restricted exclusively to the purchase and sale of foreign exchange reserves.",
+          "C": "They refer to changes in the cash reserve ratio mandated for scheduled commercial banks.",
+          "D": "They involve the outright purchase or sale of government securities to regulate liquidity in the economy."
+        },
+        "correct": "D",
+        "explanation": "Open Market Operations are monetary policy tools where the central bank buys or sells government securities in the open market to expand or contract the amount of money in the banking system."
+      },
+      {
+        "q": 3,
+        "topic": "Sustainable development",
+        "question": "Which of the following best defines 'Potential Gross Domestic Product (GDP)'?",
+        "options": {
+          "A": "The maximum output an economy can sustain over the long term without accelerating inflation.",
+          "B": "The total value of goods and services produced exclusively in the unorganized sector.",
+          "C": "The projected GDP adjusted strictly for international trade tariffs and subsidies.",
+          "D": "The absolute peak GDP recorded by an economy during a severe depression cycle."
+        },
+        "correct": "A",
+        "explanation": "Potential GDP represents the highest level of real output an economy can sustain over the long run without triggering inflationary pressures, operating at full capacity of labor and capital."
+      },
+      {
+        "q": 4,
+        "topic": "Sustainable development",
+        "question": "In the context of public finance in India, 'Revenue Deficit' implies that:",
+        "options": {
+          "A": "Total government expenditure exceeds total government revenue including borrowings.",
+          "B": "The government has successfully generated a surplus in its capital account transactions.",
+          "C": "The government's current receipts are insufficient to meet its current operational expenditures.",
+          "D": "Capital receipts are utilized entirely to finance long-term infrastructure projects."
+        },
+        "correct": "C",
+        "explanation": "Revenue deficit occurs when the government's revenue expenditure exceeds revenue receipts, meaning the government is borrowing to finance day-to-day consumption rather than asset creation."
+      },
+      {
+        "q": 5,
+        "topic": "Social sector initiatives",
+        "question": "Regarding 'Prompt Corrective Action (PCA)' framework for banks in India, consider the following:",
+        "options": {
+          "A": "It is triggered automatically when a bank experiences a surge in agricultural lending.",
+          "B": "It is a tool used by the RBI to monitor and intervene early in banks showing financial vulnerability.",
+          "C": "It applies exclusively to non-banking financial companies (NBFCs) and cooperative banks.",
+          "D": "It prevents banks from holding any government securities in their investment portfolio."
+        },
+        "correct": "B",
+        "explanation": "PCA is a supervisory framework invoked by the RBI for weak banks based on parameters like capital, asset quality, and profitability to check deterioration in financial health."
+      },
+      {
+        "q": 6,
+        "topic": "Poverty",
+        "question": "Which of the following indices is compiled and published by the World Bank Group?",
+        "options": {
+          "A": "Global Competitiveness Report",
+          "B": "World Economic Outlook",
+          "C": "Corruption Perceptions Index",
+          "D": "Ease of Doing Business / Business Ready (B-READY) project"
+        },
+        "correct": "D",
+        "explanation": "The World Bank Group publishes the business environment assessments (historically Ease of Doing Business, now succeeded by the B-READY project). World Economic Outlook is by IMF, Competitiveness Report by WEF, and Corruption Index by Transparency International."
+      },
+      {
+        "q": 7,
+        "topic": "Sustainable development",
+        "question": "The term 'Securitization', often seen in financial news, refers to:",
+        "options": {
+          "A": "Pooling various types of contractual debt and converting them into marketable securities.",
+          "B": "The conversion of public sector undertakings into private corporate entities.",
+          "C": "Providing government guarantees to foreign direct investments in core sectors.",
+          "D": "The issuance of sovereign bonds denominated entirely in domestic currency."
+        },
+        "correct": "A",
+        "explanation": "Securitization is the financial practice of pooling various kinds of contractual debt (like mortgages or auto loans) and selling their related cash flows to third party investors as securities."
+      },
+      {
+        "q": 8,
+        "topic": "Sustainable development",
+        "question": "With reference to the 'Special Drawing Rights (SDR)', consider the following statements:",
+        "options": {
+          "A": "It is a physical currency issued directly by the World Bank for developing nations.",
+          "B": "It can be used by member countries to purchase gold reserves from private markets.",
+          "C": "It is an international reserve asset created by the IMF, valued on the basis of a basket of key currencies.",
+          "D": "Its value remains permanently pegged to the United States Dollar without any fluctuation."
+        },
+        "correct": "C",
+        "explanation": "SDR is an international reserve asset created by the IMF in 1969. Its value is based on a basket of major currencies including the US Dollar, Euro, Chinese Yuan, Japanese Yen, and British Pound."
+      },
+      {
+        "q": 9,
+        "topic": "Poverty",
+        "question": "Which of the following best describes 'Stagflation' in an economic system?",
+        "options": {
+          "A": "Rapid economic growth coupled with falling price levels and high employment.",
+          "B": "Stagnant economic growth combined with high unemployment and high inflation.",
+          "C": "Zero inflation rates accompanied by absolute boom conditions in the stock market.",
+          "D": "Deflationary spirals caused by excessive currency appreciation in export markets."
+        },
+        "correct": "B",
+        "explanation": "Stagflation is an economic condition characterized by simultaneous slow economic growth, high unemployment, and rising prices (inflation), which is difficult to manage using standard monetary policy tools."
+      },
+      {
+        "q": 10,
+        "topic": "Sustainable development",
+        "question": "The 'Marginal Standing Facility (MSF)' window allows scheduled commercial banks to:",
+        "options": {
+          "A": "Borrow funds from other commercial banks at variable overnight interest rates.",
+          "B": "Sell their surplus statutory liquidity ratio securities directly to retail investors.",
+          "C": "Deposit excess foreign exchange reserves with the central bank for long-term yields.",
+          "D": "Borrow overnight funds from the RBI against government securities exceeding their SLR quota."
+        },
+        "correct": "D",
+        "explanation": "MSF is a penal rate window through which scheduled commercial banks can borrow overnight funds from the RBI by dipping into their Statutory Liquidity Ratio (SLR) portfolio up to a specified limit."
+      },
+      {
+        "q": 11,
+        "topic": "Sustainable development",
+        "question": "With reference to 'Participatory Notes (P-Notes)', consider the following:",
+        "options": {
+          "A": "They are financial instruments issued by registered foreign portfolio investors to overseas investors who wish to invest in Indian markets without direct registration.",
+          "B": "They are promissory notes issued exclusively by the Reserve Bank of India to manage fiscal deficit.",
+          "C": "They represent debt instruments issued by domestic corporate houses in foreign stock exchanges.",
+          "D": "They are unlisted shares traded exclusively among retail investors in rural cooperative banks."
+        },
+        "correct": "A",
+        "explanation": "Participatory Notes are offshore derivative instruments issued by registered Foreign Portfolio Investors (FPIs) to overseas investors, allowing them to invest in Indian securities without registering directly with SEBI."
+      },
+      {
+        "q": 12,
+        "topic": "Poverty",
+        "question": "The term 'Phillips Curve' represents the economic relationship between:",
+        "options": {
+          "A": "Tax rates and total government tax revenue generated over a fiscal year.",
+          "B": "Money supply growth and long-term economic productivity.",
+          "C": "The rate of inflation and the rate of unemployment.",
+          "D": "Foreign direct investment inflows and domestic interest rate fluctuations."
+        },
+        "correct": "C",
+        "explanation": "The Phillips Curve illustrates an inverse relationship between rates of unemployment and corresponding rates of inflation within an economy, suggesting lower unemployment is associated with higher inflation."
+      }
+    ],
+    "Environment and Ecology": [
+      {
+        "q": 1,
+        "topic": "Environmental issues",
+        "question": "If agricultural nutrient runoff significantly increases into a shallow freshwater lake, which of the following sequences of ecological events is most likely to follow?",
+        "options": {
+          "A": "Proliferation of submerged macrophytes -> Increase in dissolved oxygen -> Death of anaerobic bacteria -> Clear water state",
+          "B": "Rapid algal bloom -> Reduction of light penetration -> Death of submerged vegetation -> Bacterial decomposition and oxygen depletion -> Fish kill",
+          "C": "Immediate spike in herbivorous zooplankton -> Complete elimination of phytoplankton -> Rise in water transparency -> Stable trophic equilibrium",
+          "D": "Proliferation of carnivorous fish -> Depletion of small herbivores -> Surge in toxic cyanobacteria -> Permanent chemical neutralization"
+        },
+        "correct": "B",
+        "explanation": "Excessive nutrient loading (nitrogen and phosphorus) triggers rapid algal blooms. As these algae die, aerobic decomposition by bacteria depletes dissolved oxygen levels in the water column, leading to severe hypoxia and widespread fish kills."
+      },
+      {
+        "q": 2,
+        "topic": "Biodiversity",
+        "question": "Consider the following statements regarding specific endangered species and their natural habitats in India: 1. The Pygmy Hog, the world's smallest wild pig, is critically endangered and its last viable wild population is restricted primarily to the Manas National Park. 2. The Sangai deer is an endemic and endangered subspecies found exclusively in the floating phumdis of Loktak Lake. 3. The Lion-tailed Macaque is an arboreal old-world monkey endemic exclusively to the deciduous forests of the Aravalli range. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "A",
+        "explanation": "Statement 1 is correct: The Pygmy Hog conservation is centered around Manas National Park in Assam. Statement 2 is correct: Sangai deer (Rucervus eldii eldii) is endemic to the phumdis of Loktak Lake in Manipur. Statement 3 is incorrect because the Lion-tailed Macaque is endemic to the tropical evergreen rainforests of the Western Ghats, not the Aravalli range."
+      },
+      {
+        "q": 3,
+        "topic": "Biodiversity",
+        "question": "With reference to the Ramsar Convention and wetland ecosystems in India, consider the following statements: 1. The Montreux Record is a register of wetland sites on the List of Wetlands of International Importance where changes in ecological character have occurred, are occurring, or are likely to occur. 2. Keoladeo National Park in Rajasthan and Loktak Lake in Manipur are currently included in the Montreux Record. 3. India has the highest number of Ramsar sites in the entire Asian continent. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 only",
+          "B": "2 and 3 only",
+          "C": "1 and 2 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "C",
+        "explanation": "Statement 1 is correct: The Montreux Record is maintained as part of the Ramsar List. Statement 2 is correct: Both Keoladeo National Park and Loktak Lake were placed on the Montreux Record. Statement 3 is incorrect because while India has a large network of Ramsar sites, countries like the United Kingdom or others frequently hold high counts, and China also has extensive designations; India does not hold the absolute highest count globally or solely in Asia by default comparison across all metrics without qualification, and historically UK has the highest number of sites overall."
+      },
+      {
+        "q": 4,
+        "topic": "Biodiversity",
+        "question": "Consider the following statements regarding international conservation frameworks: 1. CITES Appendix I lists species that are threatened with extinction and provides the highest level of international trade prohibition except under exceptional circumstances. 2. The Convention on the Conservation of Migratory Species of Wild Animals (CMS) is an environmental treaty under the aegis of the United Nations Environment Programme. 3. Appendix II of CITES includes species that are not necessarily threatened with extinction, but whose trade must be controlled to avoid utilization incompatible with their survival. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "D",
+        "explanation": "All statements regarding CITES appendices and the administrative backing of CMS under UNEP are factually correct. Appendix I protects endangered species from commercial trade, Appendix II regulates trade to prevent unsustainable exploitation, and CMS operates under UNEP."
+      },
+      {
+        "q": 5,
+        "topic": "Environmental issues",
+        "question": "Match the following Protected Areas with their respective States incorrectly or correctly, and consider the statements below: 1. Papikonda National Park : Andhra Pradesh 2. Orang National Park : Assam 3. Valmiki National Park : Jharkhand. Which of the pairs given above are correctly matched?",
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "B",
+        "explanation": "Pair 1 is correct: Papikonda National Park is located in Andhra Pradesh. Pair 2 is correct: Orang National Park is located in Assam. Pair 3 is incorrect: Valmiki National Park is located in West Champaran district of Bihar, not Jharkhand."
+      },
+      {
+        "q": 6,
+        "topic": "Climate change",
+        "question": "In the context of marine carbon cycling and geoengineering approaches, 'Ocean Iron Fertilization' is hypothesized to sequester carbon dioxide primarily by:",
+        "options": {
+          "A": "Stimulating massive phytoplankton blooms that fix carbon dioxide through photosynthesis and subsequently sink to the deep ocean floor upon death.",
+          "B": "Creating synthetic chemical precipitates of calcium carbonate that permanently bind dissolved carbon dioxide in shallow intertidal zones.",
+          "C": "Neutralizing ocean acidification directly by increasing basic pH levels through catalytic iron-hydroxide reactions.",
+          "D": "Enhancing the solubility pump by raising surface water density in equatorial upwelling regions."
+        },
+        "correct": "A",
+        "explanation": "Ocean iron fertilization is a form of marine geoengineering intended to stimulate phytoplankton production in high-nutrient, low-chlorophyll regions. The goal is to drive the biological pump, sequestering carbon as organic matter sinks into the deep ocean."
+      },
+      {
+        "q": 7,
+        "topic": "Biodiversity",
+        "question": "With reference to the Kunming-Montreal Global Biodiversity Framework adopted under the Convention on Biological Diversity (CBD), consider the following statements: 1. It aims to effectively conserve and manage at least 30 percent of the world's terrestrial, inland water, and coastal and marine areas by 2030. 2. It establishes a dedicated multilateral fund exclusively financed by developed nations for biodiversity conservation in developing countries. 3. It legally binds all ratifying member states to achieve absolute zero carbon emissions by 2035. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 3 only",
+          "B": "2 and 3 only",
+          "C": "1 and 2 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "C",
+        "explanation": "Statement 1 is correct: The 30x30 target is a central pillar of the Kunming-Montreal Global Biodiversity Framework. Statement 2 is correct: A new Global Biodiversity Framework Fund was established under the GEF to support implementation. Statement 3 is incorrect because emission targets and carbon neutrality timelines fall under the UNFCCC/Paris Agreement framework, not CBD biodiversity targets."
+      },
+      {
+        "q": 8,
+        "topic": "Biodiversity",
+        "question": "Consider the following statements regarding high-profile Indian wildlife species and their current IUCN Red List status: 1. Great Indian Bustard : Critically Endangered 2. Gangetic Dolphin : Endangered 3. Greater One-horned Rhinoceros : Vulnerable. Which of the pairs given above are correctly matched?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "D",
+        "explanation": "All three matchings are accurate according to the IUCN Red List: The Great Indian Bustard is Critically Endangered due to habitat loss and power line collisions; the South Asian River (Gangetic) Dolphin is Endangered; and the Greater One-horned Rhinoceros has recovered to Vulnerable status through dedicated conservation efforts."
+      },
+      {
+        "q": 9,
+        "topic": "Biodiversity",
+        "question": "During primary ecological succession on a newly cooled volcanic lava flow, which of the following processes or organisms typically appear first to initiate soil formation?",
+        "options": {
+          "A": "Deep-rooting perennial shrubs and woody angiosperms breaking down deep bedrock layers.",
+          "B": "Pioneer species such as crustose lichens and mosses secreting organic acids to weather bare rock surfaces.",
+          "C": "Fast-growing annual grasses supported by thick organic humus layers deposited by wind.",
+          "D": "Mycorrhizal fungi establishing symbiotic networks exclusively with coniferous tree seedlings."
+        },
+        "correct": "B",
+        "explanation": "Primary succession starts on lifeless substrates like bare rock. Pioneer species like lichens and mosses are instrumental because they break down rock surfaces physically and chemically through acid secretion, initiating soil creation."
+      },
+      {
+        "q": 10,
+        "topic": "Biodiversity",
+        "question": "With reference to the World Network of Biosphere Reserves under UNESCO's Man and the Biosphere (MAB) Programme, consider the following statements: 1. A biosphere reserve is mandated to consist of three mutually reinforcing zones: core area, buffer zone, and transition area. 2. The core area permits sustainable resource extraction and eco-tourism activities by local indigenous communities. 3. India currently has a designated number of biosphere reserves included in the UNESCO World Network of Biosphere Reserves. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 3 only",
+          "B": "2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "A",
+        "explanation": "Statement 1 is correct: Biosphere reserves are organized into core, buffer, and transition zones. Statement 2 is incorrect because the core area is strictly protected with minimal human activity; sustainable resource use and eco-tourism occur in the buffer and transition zones. Statement 3 is correct as India has multiple sites recognized under UNESCO's MAB network."
+      },
+      {
+        "q": 11,
+        "topic": "Environmental issues",
+        "question": "The 'Namdapha Flying Squirrel', an extremely rare nocturnal gliding mammal, is endemic to which of the following protected regions?",
+        "options": {
+          "A": "Silent Valley National Park, Kerala",
+          "B": "Great Himalayan National Park, Himachal Pradesh",
+          "C": "Namdapha National Park, Arunachal Pradesh",
+          "D": "Periyar Wildlife Sanctuary, Kerala"
+        },
+        "correct": "C",
+        "explanation": "The Namdapha Flying Squirrel (Biswamoyopterus biswasi) is a critically endangered rodent endemic to a single valley within Namdapha National Park in Arunachal Pradesh."
+      },
+      {
+        "q": 12,
+        "topic": "Environmental ecology",
+        "question": "In an aquatic food web contaminated with persistent organic pollutants like PCBs or heavy metals such as mercury, which organism is most likely to exhibit the highest tissue concentration due to biomagnification?",
+        "options": {
+          "A": "Primary phytoplankton floating in surface waters",
+          "B": "Herbivorous zooplankton grazing on microalgae",
+          "C": "Small filter-feeding bivalves like freshwater mussels",
+          "D": "Apex piscivorous birds or top-level predatory fish such as tuna or river dolphins"
+        },
+        "correct": "D",
+        "explanation": "Biomagnification causes persistent toxic substances to multiply in concentration at each higher trophic level. Apex predators at the top of the food chain accumulate the highest tissue concentrations."
+      },
+      {
+        "q": 13,
+        "topic": "Environmental issues",
+        "question": "Consider the following statements regarding the geographical distribution of national parks in India: 1. Hemis National Park, the largest national park in India, is situated in the Union Territory of Ladakh and is renowned for snow leopards. 2. Loktak Lake houses the world's only floating national park named Keibul Lamjao National Park. 3. Jim Corbett National Park, established as the first national park in mainland India, is located in the state of Himachal Pradesh. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 3 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "B",
+        "explanation": "Statement 1 is correct: Hemis is India's largest national park located in Ladakh. Statement 2 is correct: Keibul Lamjao in Manipur is the world's only floating national park. Statement 3 is incorrect because Jim Corbett National Park is located in Uttarakhand, not Himachal Pradesh."
+      },
+      {
+        "q": 14,
+        "topic": "Climate change",
+        "question": "With reference to carbon markets and flexibility mechanisms under the Paris Agreement (UNFCCC), consider the following statements: 1. Article 6 of the Paris Agreement sets out provisions allowing countries to cooperate voluntarily to achieve emission reduction targets through carbon markets. 2. Article 6.4 establishes a centralized international carbon credit market overseen by a UN body, succeeding the Clean Development Mechanism of the Kyoto Protocol. 3. Under these mechanisms, double counting of emission reductions between host countries and purchasing countries is explicitly encouraged to maximize market liquidity. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 3 only",
+          "B": "2 and 3 only",
+          "C": "1 and 2 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "C",
+        "explanation": "Statements 1 and 2 correctly describe the cooperative approaches (Article 6.2) and the centralized mechanism (Article 6.4) under the Paris Agreement. Statement 3 is incorrect because the framework explicitly prohibits double counting through corresponding adjustments, ensuring environmental integrity."
+      },
+      {
+        "q": 15,
+        "topic": "Biodiversity",
+        "question": "Consider the following ecological services provided by mangrove forests: 1. Acting as natural coastal buffers that attenuate wave energy and mitigate storm surge impacts. 2. Serving as essential nursery grounds for various commercial fish and crustacean species. 3. Facilitating high rates of carbon sequestration, commonly referred to as 'blue carbon'. Which of the statements given above are correct?",
+        "options": {
+          "A": "1, 2 and 3",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1 and 3 only"
+        },
+        "correct": "A",
+        "explanation": "Mangroves provide vital ecological services: they protect shorelines from erosion and storm surges (Statement 1), support juvenile marine life as nurseries (Statement 2), and store substantial amounts of organic carbon in their anaerobic soils, known as blue carbon (Statement 3). All statements are correct."
+      }
+    ],
+    "General Science": [
+      {
+        "q": 1,
+        "topic": "Science and technology basics",
+        "question": "Consider the following statements regarding Quantum Key Distribution (QKD): 1. It relies on the fundamental laws of quantum mechanics to ensure secure communication. 2. It allows for the instantaneous transmission of classical data over unlimited distances without attenuation. 3. Any attempt by an unauthorized third party to intercept the key introduces measurable disturbances due to the observer effect. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 3 only",
+          "B": "2 and 3 only",
+          "C": "1 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "A",
+        "explanation": "Statements 1 and 3 are correct: QKD uses quantum mechanics and detects interception via the observer effect. Statement 2 is incorrect because QKD does not enable instantaneous transmission nor bypass distance-attenuation limitations."
+      },
+      {
+        "q": 2,
+        "topic": "Biology",
+        "question": "Consider the following statements regarding CRISPR-Cas9 technology: 1. It is a natural defense mechanism found in bacteria against viral infections. 2. It utilizes a guide RNA molecule to direct the Cas9 endonuclease to a specific target sequence in the DNA. 3. It is exclusively used for gene silencing and cannot be used to insert new genetic sequences. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 3 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "B",
+        "explanation": "Statements 1 and 2 are correct: CRISPR-Cas9 originates from bacterial immune systems and uses guide RNA with Cas9 to target DNA. Statement 3 is incorrect because it can be used for insertions, deletions, and precise modifications."
+      },
+      {
+        "q": 3,
+        "topic": "Science and technology basics",
+        "question": "With reference to Brain-Computer Interfaces (BCIs), consider the following statements: 1. Invasive BCIs require sensors to be implanted directly into the cerebral cortex through neurosurgery. 2. Non-invasive BCIs use electrodes placed on the scalp to measure electrical activity without surgery. 3. BCIs are exclusively restricted to military applications and have no medical utility. Which of the statements given above are correct?",
+        "options": {
+          "A": "2 and 3 only",
+          "B": "1 and 3 only",
+          "C": "1 and 2 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "C",
+        "explanation": "Statements 1 and 2 correctly differentiate between invasive and non-invasive BCI systems. Statement 3 is incorrect as BCIs are primarily researched and deployed for neurological medical therapies."
+      },
+      {
+        "q": 4,
+        "topic": "Physics",
+        "question": "Consider the following statements regarding Lidar (Light Detection and Ranging) technology: 1. It measures distances by illuminating a target with laser light and measuring the reflection time. 2. It relies exclusively on acoustic sound waves under water and is ineffective in terrestrial atmospheres. 3. It is extensively deployed in autonomous vehicles for high-resolution 3D environmental mapping. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1, 2 and 3",
+          "D": "1 and 3 only"
+        },
+        "correct": "D",
+        "explanation": "Statements 1 and 3 are correct: Lidar uses laser pulses for distance measurement and is critical for autonomous vehicle mapping. Statement 2 is incorrect because Lidar uses light/laser waves, not acoustic sound waves."
+      },
+      {
+        "q": 5,
+        "topic": "Biology",
+        "question": "With reference to Small Modular Reactors (SMRs), consider the following statements: 1. They have a smaller physical footprint and lower power generation capacity compared to traditional nuclear reactors. 2. Their modular design allows systems and components to be factory-assembled and transported to sites. 3. They produce radioactive waste that requires no long-term management or disposal. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "A",
+        "explanation": "Statements 1 and 2 accurately describe the definition, capacity scaling, and factory-fabricated modularity of SMRs. Statement 3 is incorrect because SMRs still generate spent nuclear fuel requiring proper waste management."
+      },
+      {
+        "q": 6,
+        "topic": "Biology",
+        "question": "Consider the following statements regarding Edge Computing: 1. It processes data closer to where it is generated rather than depending entirely on a centralized cloud data center. 2. It significantly reduces network latency and bandwidth consumption for real-time applications. 3. It completely eliminates the need for any underlying physical server infrastructure. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 3 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "B",
+        "explanation": "Statements 1 and 2 correctly highlight the decentralized processing and latency advantages of edge computing. Statement 3 is incorrect because edge nodes still require physical hardware and servers at local locations."
+      },
+      {
+        "q": 7,
+        "topic": "Physics",
+        "question": "With reference to Li-Fi (Light Fidelity) technology, consider the following statements: 1. It uses visible light communication to transmit data at high speeds. 2. It can penetrate solid opaque walls easily, making it superior to Wi-Fi for inter-room connectivity. 3. It offers enhanced security because light signals cannot pass through opaque physical barriers. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "C",
+        "explanation": "Statements 1 and 3 are correct: Li-Fi uses light waves for data transfer, and because light cannot pass through walls, it offers high localized security. Statement 2 is incorrect precisely because light cannot penetrate opaque walls."
+      },
+      {
+        "q": 8,
+        "topic": "Chemistry",
+        "question": "Consider the following statements regarding Carbon Nanotubes: 1. They are allotropes of carbon with a cylindrical nanostructure possessing extraordinary tensile strength. 2. They exhibit exceptional thermal and electrical conductivity properties. 3. They are synthesized exclusively through high-temperature biological fermentation processes. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 3 only",
+          "B": "2 and 3 only",
+          "C": "1, 2 and 3",
+          "D": "1 and 2 only"
+        },
+        "correct": "D",
+        "explanation": "Statements 1 and 2 are correct: Carbon nanotubes are cylindrical carbon allotropes with high strength and conductivity. Statement 3 is incorrect as they are produced via chemical vapor deposition, arc discharge, or laser ablation."
+      },
+      {
+        "q": 9,
+        "topic": "Science and technology basics",
+        "question": "With reference to the Internet of Things (IoT), consider the following statements: 1. It refers to a network of physical objects embedded with sensors and software to exchange data over networks. 2. It requires direct human intervention for every single data transmission event between devices. 3. It is utilized across smart homes, industrial automation, and healthcare monitoring systems. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 3 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "A",
+        "explanation": "Statements 1 and 3 are correct: IoT connects physical sensors and is widely applied in smart infrastructure and industry. Statement 2 is incorrect because IoT devices communicate autonomously machine-to-machine."
+      },
+      {
+        "q": 10,
+        "topic": "Biology",
+        "question": "Consider the following statements regarding Deepfake technology and artificial intelligence: 1. It utilizes deep learning neural networks to create or alter audio and video content to mimic real individuals. 2. It is exclusively used for verifying secure cryptographic blockchain signatures. 3. Generative Adversarial Networks (GANs) play a foundational role in generating realistic synthetic media. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "1 and 3 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "B",
+        "explanation": "Statements 1 and 3 are correct: Deepfakes use deep learning and GANs to generate realistic synthetic media. Statement 2 is incorrect as deepfakes relate to media synthesis, not cryptographic blockchain verification."
+      }
+    ],
+    "Current Affairs": [
+      {
+        "q": 1,
+        "topic": "National events",
+        "question": "Consider the following statements regarding the 'Global North-South Divide': 1. It represents a socio-economic and political grouping between industrialized developed nations and developing countries. 2. Geographically, all nations belonging to the Global North are situated strictly in the Northern Hemisphere. 3. Climate negotiations frequently involve debates regarding historical emissions responsibilities between these blocs. Which of the statements given above are correct?",
+        "options": {
+          "A": "2 and 3 only",
+          "B": "1 and 2 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "C",
+        "explanation": "Statements 1 and 3 are correct: The divide highlights economic disparities and historical climate responsibilities. Statement 2 is incorrect because high-income nations like Australia and New Zealand are part of the 'Global North' despite being in the Southern Hemisphere."
+      },
+      {
+        "q": 2,
+        "topic": "International events",
+        "question": "With reference to the G20 Framework, consider the following statements: 1. It is a premier forum for international economic and financial cooperation comprising major advanced and emerging economies. 2. Its permanent membership includes individual sovereign nations as well as the European Union and the African Union. 3. It possesses a permanent secretariat with binding enforcement authority over member state budgets. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 and 3",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1 and 2 only"
+        },
+        "correct": "D",
+        "explanation": "Statements 1 and 2 are correct: G20 focuses on economic cooperation and includes countries along with the EU and AU. Statement 3 is incorrect because the G20 operates on consensus and has no permanent secretariat or legal enforcement powers."
+      },
+      {
+        "q": 3,
+        "topic": "Government initiatives",
+        "question": "Consider the following statements regarding Digital Public Infrastructure (DPI): 1. It consists of foundational modular systems like digital identification, payment gateways, and secure data exchange. 2. It is designed to be interoperable and open-source to drive scalable public and private service delivery. 3. It mandates that all citizen data be stored exclusively on private corporate cloud servers without government oversight. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "A",
+        "explanation": "Statements 1 and 2 are correct: DPI encompasses foundational identity and payment layers designed for public benefit. Statement 3 is incorrect because DPI architectures emphasize secure consent frameworks and sovereign data governance."
+      },
+      {
+        "q": 4,
+        "topic": "Government initiatives",
+        "question": "With reference to Green Bonds, consider the following statements: 1. They are fixed-income financial instruments specifically earmarked to raise capital for climate and environmental projects. 2. Their utilization of proceeds must typically be verified by independent third-party reviewers to ensure environmental integrity. 3. They are issued exclusively by multilateral banks and cannot be issued by corporate entities or sovereign governments. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 3 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "B",
+        "explanation": "Statements 1 and 2 are correct: Green bonds fund eco-friendly projects and undergo independent verification. Statement 3 is incorrect because sovereigns, municipalities, and corporations can all issue green bonds."
+      },
+      {
+        "q": 5,
+        "topic": "National events",
+        "question": "Consider the following statements regarding the Abraham Accords: 1. They represent joint normalization agreements between Israel and several Arab nations. 2. They resulted in a comprehensive military defense pact modeled after NATO in the Middle East. 3. They were brokered with the diplomatic mediation of the United States. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "C",
+        "explanation": "Statements 1 and 3 are correct: The accords normalized diplomatic ties between Israel and Arab nations with US mediation. Statement 2 is incorrect because the accords are bilateral normalization agreements and do not constitute a NATO-style military alliance."
+      },
+      {
+        "q": 6,
+        "topic": "National events",
+        "question": "With reference to the World Trade Organization (WTO), consider the following statements: 1. The 'Most Favored Nation' (MFN) principle requires members to treat all other WTO members equally in trade relations without arbitrary discrimination. 2. Under the MFN rule, a tariff concession granted to one trading partner must be extended to all other WTO members. 3. Developing countries are permitted special and differential treatment provisions under WTO rules. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "D",
+        "explanation": "All three statements are correct: MFN ensures non-discrimination and extension of tariff concessions, and WTO rules explicitly provide special and differential treatment provisions for developing countries."
+      },
+      {
+        "q": 7,
+        "topic": "National events",
+        "question": "Consider the following statements regarding the BIMSTEC grouping: 1. It is a regional organization linking countries situated around the Bay of Bengal littoral and adjacent regions. 2. Its membership includes both South Asian and Southeast Asian nations. 3. It focuses exclusively on defense cooperation and joint maritime military exercises. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "A",
+        "explanation": "Statements 1 and 2 are correct: BIMSTEC comprises nations in the Bay of Bengal region, including South Asian and Southeast Asian members. Statement 3 is incorrect as BIMSTEC focuses primarily on economic, technical, and developmental cooperation."
+      },
+      {
+        "q": 8,
+        "topic": "National events",
+        "question": "With reference to Central Bank Digital Currencies (CBDCs), consider the following statements: 1. They are digital forms of a sovereign currency issued and backed by a nation's central bank. 2. They carry sovereign liability and circulate as legal tender. 3. They operate on decentralized, anonymous ledgers completely independent of any regulatory authority. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 3 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "B",
+        "explanation": "Statements 1 and 2 are correct: CBDCs are centralized sovereign liabilities issued by central banks as legal tender. Statement 3 is incorrect because CBDCs are centralized and regulated, unlike anonymous decentralized cryptocurrencies."
+      },
+      {
+        "q": 9,
+        "topic": "National events",
+        "question": "Consider the following statements regarding the Indo-Pacific Economic Framework (IPEF): 1. It functions as a traditional free trade agreement providing reciprocal market access and tariff reductions. 2. It is an economic initiative launched with leadership from the United States. 3. It is structured around distinct pillars including trade, supply chains, clean economy, and fair economy. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "1 and 3 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "C",
+        "explanation": "Statements 2 and 3 are correct: IPEF is a US-led initiative built on specific economic pillars. Statement 1 is incorrect because IPEF does not negotiate market access or tariff reductions typical of conventional Free Trade Agreements."
+      },
+      {
+        "q": 10,
+        "topic": "International events",
+        "question": "With reference to Base Erosion and Profit Shifting (BEPS), consider the following statements: 1. It refers to tax avoidance strategies used by multinational enterprises to exploit gaps in tax rules. 2. It results in artificially shifting profits to low-tax or no-tax jurisdictions where little or no economic activity occurs. 3. The initiative is spearheaded globally by the OECD and G20 to establish international tax integrity. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "D",
+        "explanation": "All statements are correct: BEPS describes corporate tax avoidance via profit shifting to low-tax jurisdictions, and the OECD/G20 framework addresses this through international tax reforms."
+      },
+      {
+        "q": 11,
+        "topic": "International events",
+        "question": "Consider the following statements regarding the Shanghai Cooperation Organisation (SCO): 1. It is a permanent intergovernmental international organization focusing on regional security, economic, and political cooperation. 2. Its membership includes both India and Pakistan. 3. It was originally established as a military alliance equivalent to the Warsaw Pact to counter NATO. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "A",
+        "explanation": "Statements 1 and 2 are correct: SCO focuses on Eurasian security and economic cooperation, with India and Pakistan as members. Statement 3 is incorrect because the SCO is not a mutual defense military alliance."
+      },
+      {
+        "q": 12,
+        "topic": "International events",
+        "question": "With reference to the International Solar Alliance (ISA), consider the following statements: 1. Its membership is strictly restricted to countries located entirely within the Tropics of Cancer and Capricorn. 2. It was jointly launched by India and France at the COP21 climate conference in Paris. 3. It aims to mobilize investment in solar energy to reduce dependence on fossil fuels. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 3 only",
+          "B": "2 and 3 only",
+          "C": "1 and 2 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "B",
+        "explanation": "Statements 2 and 3 are correct: ISA was launched by India and France to boost solar energy adoption. Statement 1 is incorrect because membership has since been expanded to include all UN member states, well beyond the tropics."
+      },
+      {
+        "q": 13,
+        "topic": "International events",
+        "question": "Consider the following statements regarding the Global Minimum Corporate Tax (GMCT): 1. It applies uniformly to all micro, small, and medium enterprises irrespective of their global turnover. 2. It is an OECD/G20-led initiative designed to establish a global minimum tax rate of 15 percent for large multinationals. 3. It aims to curb a race to the bottom where countries aggressively lower corporate taxes to attract foreign investment. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "1 and 3 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "C",
+        "explanation": "Statements 2 and 3 are correct: GMCT establishes a 15% floor to prevent tax competition. Statement 1 is incorrect because the rule targets large multinational enterprises exceeding specific revenue thresholds, not small or medium enterprises."
+      },
+      {
+        "q": 14,
+        "topic": "National events",
+        "question": "With reference to the Quad grouping, consider the following statements: 1. It is a strategic security dialogue between India, the United States, Japan, and Australia. 2. It aims to support a free, open, and inclusive Indo-Pacific region. 3. It operates as a flexible diplomatic and minilateral platform rather than a formal mutual defense treaty. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "D",
+        "explanation": "All three statements are correct: The Quad brings together India, the US, Japan, and Australia to promote a free Indo-Pacific through flexible minilateral diplomatic dialogue rather than a mutual defense pact."
+      },
+      {
+        "q": 15,
+        "topic": "National events",
+        "question": "Consider the following statements regarding the Circular Economy model: 1. It aims to decouple economic growth from the consumption of finite natural resources by designing out waste. 2. It promotes closed-loop systems involving sharing, reusing, repairing, and recycling materials. 3. It relies entirely on a linear take-make-dispose model of production. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "A",
+        "explanation": "Statements 1 and 2 are correct: A circular economy focuses on eliminating waste and keeping materials in continuous use. Statement 3 is incorrect because the linear take-make-dispose model is precisely what a circular economy seeks to replace."
+      },
+      {
+        "q": 16,
+        "topic": "Government initiatives",
+        "question": "With reference to the Arctic Council, consider the following statements: 1. It has the authority to regulate and manage commercial military deployments and naval exercises in the Arctic. 2. It is the leading intergovernmental forum promoting cooperation, coordination, and interaction among Arctic States. 3. Its mandate includes addressing environmental protection and sustainable development in the Arctic region. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "B",
+        "explanation": "Statements 2 and 3 are correct: The Arctic Council is the primary forum for circumpolar environmental and sustainable development cooperation. Statement 1 is incorrect because military security matters are explicitly excluded from its mandate."
+      },
+      {
+        "q": 17,
+        "topic": "Government initiatives",
+        "question": "Consider the following statements regarding Debt-for-Nature Swaps: 1. They are issued exclusively by private commercial banks without any involvement from governments or NGOs. 2. They are financial transactions where a portion of a developing nation's foreign debt is forgiven or reduced in exchange for domestic conservation commitments. 3. They help debtor nations lower debt servicing burdens while simultaneously funding biodiversity or climate projects. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "1 and 3 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "C",
+        "explanation": "Statements 2 and 3 are correct: Debt-for-nature swaps reduce sovereign debt loads in exchange for conservation funding. Statement 1 is incorrect because these complex swaps typically involve sovereign governments, multilateral institutions, and conservation NGOs."
+      },
+      {
+        "q": 18,
+        "topic": "National events",
+        "question": "With reference to the AUKUS security pact, consider the following statements: 1. It is a trilateral security partnership between Australia, the United Kingdom, and the United States. 2. A prominent pillar of the pact involves assisting Australia in acquiring conventionally armed, nuclear-powered submarines. 3. It focuses on advancing joint technological capabilities such as artificial intelligence, quantum technologies, and undersea capabilities. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "D",
+        "explanation": "All three statements are correct: AUKUS is a trilateral partnership between Australia, the UK, and the US focusing on nuclear-powered submarines and advanced defense technologies like AI and quantum computing."
+      },
+      {
+        "q": 19,
+        "topic": "National events",
+        "question": "Consider the following statements regarding the term 'Global South': 1. It broadly refers to nations characterized by lower levels of industrialization and shared socio-economic and colonial histories. 2. It serves as a political and economic umbrella term in multilateral forums for developing nations. 3. It is strictly limited to countries located south of the Equator. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "A",
+        "explanation": "Statements 1 and 2 are correct: Global South is a socio-economic term representing developing and emerging nations. Statement 3 is incorrect because many countries in the Global South (like India and China) are located in the Northern Hemisphere."
+      },
+      {
+        "q": 20,
+        "topic": "National events",
+        "question": "With reference to Inflation Targeting as a monetary policy framework, consider the following statements: 1. It prevents central banks from ever adjusting interest rates in response to supply-side shocks. 2. It involves the central bank publicly announcing a target inflation rate or band and using policy instruments to achieve it. 3. Its primary objective is to maintain medium-term price stability as an anchor for economic growth. Which of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "B",
+        "explanation": "Statements 2 and 3 are correct: Inflation targeting uses transparent targets to achieve price stability. Statement 1 is incorrect because central banks frequently account for supply shocks through flexible inflation-targeting frameworks."
+      }
+    ]
+  }
+}

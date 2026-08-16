@@ -1,0 +1,1062 @@
+{
+  "paper_id": "JEE_MAINS_paper5",
+  "title": "JEE Main Paper 5 (Advanced-level Question Bank)",
+  "subjects": {
+    "Physics": [
+      {
+        "q": 1,
+        "global_q": 1,
+        "topic": "Units and Measurements",
+        "question": "A physical quantity X is related to four measurable quantities a, b, c, and d as X = (a^2 b^3 c^(5/2))/d^2. The percentage errors in a, b, c, and d are 1%, 2%, 2%, and 4% respectively. The maximum percentage error in X is:",
+        "options": {
+          "A": "15%",
+          "B": "21%",
+          "C": "17%",
+          "D": "25%"
+        },
+        "correct": "B",
+        "explanation": "Maximum percentage error = 2(1%) + 3(2%) + 2.5(2%) + 2(4%) = 2%+6%+5%+8% = 21%."
+      },
+      {
+        "q": 2,
+        "global_q": 2,
+        "topic": "Kinematics",
+        "question": "The velocity of a particle moving in a straight line is given by v = α√x, where α is a positive constant and x is displacement. The acceleration of the particle is:",
+        "options": {
+          "A": "α^2/2",
+          "B": "α^2 x",
+          "C": "α/2",
+          "D": "2α^2"
+        },
+        "correct": "A",
+        "explanation": "a = v(dv/dx) = (α√x)(α/(2√x)) = α^2/2."
+      },
+      {
+        "q": 3,
+        "global_q": 3,
+        "topic": "Laws of Motion",
+        "question": "Two masses m1 = 5 kg and m2 = 10 kg are in contact on a frictionless horizontal surface. If a force of 15 N is applied horizontally on m1, the contact force between the two masses is:",
+        "options": {
+          "A": "5 N",
+          "B": "10 N",
+          "C": "15 N",
+          "D": "0 N"
+        },
+        "correct": "B",
+        "explanation": "Common acceleration a = 15/(5+10) = 1 m/s^2. Contact force = m2×a = 10×1 = 10 N."
+      },
+      {
+        "q": 4,
+        "global_q": 4,
+        "topic": "Work, Energy and Power",
+        "question": "A particle of mass m is moving in a circular path of constant radius r such that its centripetal acceleration a_c varies with time t as a_c = k^2 r t^2. The power delivered by the forces acting on it is:",
+        "options": {
+          "A": "2πmk^2 r^2 t",
+          "B": "mk^2 r^2 t",
+          "C": "mk^4 r^2 t^5/3",
+          "D": "0"
+        },
+        "correct": "B",
+        "explanation": "a_c = v^2/r = k^2rt^2 ⇒ v = krt. Tangential acceleration a_t = kr, tangential force F_t = mkr. Power P = F_t·v = mk^2r^2t."
+      },
+      {
+        "q": 5,
+        "global_q": 5,
+        "topic": "Work, Energy and Power",
+        "question": "A ball of mass m moving with velocity v undergoes a perfectly elastic head-on collision with another identical ball initially at rest. After the collision, the velocities of the first and second balls respectively are:",
+        "options": {
+          "A": "v/2, v/2",
+          "B": "0, v",
+          "C": "-v, 0",
+          "D": "v, 0"
+        },
+        "correct": "B",
+        "explanation": "In a 1D perfectly elastic collision between identical masses where one is at rest, they exchange velocities: the first ball stops (0), the second moves with v."
+      },
+      {
+        "q": 6,
+        "global_q": 6,
+        "topic": "Rotational Motion",
+        "question": "A solid sphere and a solid cylinder of the same mass and radius are released from rest from the top of an inclined plane. Assuming they roll without slipping, which reaches the bottom first?",
+        "options": {
+          "A": "Solid sphere",
+          "B": "Solid cylinder",
+          "C": "Both reach simultaneously",
+          "D": "Depends on angle of inclination"
+        },
+        "correct": "A",
+        "explanation": "a = g sinθ/(1+I/MR^2). Sphere has I/MR^2=0.4 (smaller than cylinder's 0.5), giving greater acceleration, so the sphere reaches first."
+      },
+      {
+        "q": 7,
+        "global_q": 7,
+        "topic": "Gravitation",
+        "question": "The value of acceleration due to gravity g' at a height h = R (where R is the Earth's radius) is:",
+        "options": {
+          "A": "g/2",
+          "B": "g/4",
+          "C": "g/8",
+          "D": "g"
+        },
+        "correct": "B",
+        "explanation": "g' = GM/r^2. At h=R, r=2R, so g' = GM/(2R)^2 = g/4."
+      },
+      {
+        "q": 8,
+        "global_q": 8,
+        "topic": "Properties of Solids and Liquids",
+        "question": "A wire of length L and cross-sectional area A is stretched by a force F. If Y is the Young's modulus, the elastic potential energy stored per unit volume is:",
+        "options": {
+          "A": "(1/2)Y(Strain)^2",
+          "B": "(1/2)Y(Stress)^2",
+          "C": "Y(Strain)^2",
+          "D": "(1/2)(Strain)/Y"
+        },
+        "correct": "A",
+        "explanation": "Energy per unit volume u = (1/2)×Stress×Strain = (1/2)Y(Strain)^2 since Stress = Y×Strain."
+      },
+      {
+        "q": 9,
+        "global_q": 9,
+        "topic": "Properties of Solids and Liquids",
+        "question": "Eight spherical rain drops of equal radius fall through air with a terminal velocity of 5 cm/s. If they coalesce to form a single large drop, the new terminal velocity is:",
+        "options": {
+          "A": "10 cm/s",
+          "B": "15 cm/s",
+          "C": "20 cm/s",
+          "D": "40 cm/s"
+        },
+        "correct": "C",
+        "explanation": "Volume conservation gives R=2r. Since v∝r^2, new v = 4×5 = 20 cm/s."
+      },
+      {
+        "q": 10,
+        "global_q": 10,
+        "topic": "Thermodynamics",
+        "question": "An ideal Carnot engine works between T1 and T2 with efficiency 1/6. If sink temperature T2 is reduced by 62 K, efficiency becomes 1/3. T1 is:",
+        "options": {
+          "A": "372 K",
+          "B": "310 K",
+          "C": "248 K",
+          "D": "400 K"
+        },
+        "correct": "A",
+        "explanation": "1-T2/T1=1/6 ⇒ T2/T1=5/6. 1-(T2-62)/T1=1/3 ⇒ 62/T1=1/6 ⇒ T1=372 K."
+      },
+      {
+        "q": 11,
+        "global_q": 11,
+        "topic": "Kinetic Theory of Gases",
+        "question": "If the v_rms speed of O2 at temperature T is v, then the v_rms speed of H2 at the same temperature T is:",
+        "options": {
+          "A": "v",
+          "B": "4v",
+          "C": "16v",
+          "D": "v/4"
+        },
+        "correct": "B",
+        "explanation": "v_rms ∝ 1/√M. M(O2)=32, M(H2)=2. Ratio = √(32/2) = 4, so v(H2)=4v."
+      },
+      {
+        "q": 12,
+        "global_q": 12,
+        "topic": "Oscillations and Waves",
+        "question": "A mass m suspended from a spring of constant k has period T. If cut into two equal halves and m is suspended from one half, the new period is:",
+        "options": {
+          "A": "T",
+          "B": "T/2",
+          "C": "T/√2",
+          "D": "T√2"
+        },
+        "correct": "C",
+        "explanation": "k∝1/L, so halving length doubles k (k'=2k). T'=2π√(m/2k)=T/√2."
+      },
+      {
+        "q": 13,
+        "global_q": 13,
+        "topic": "Oscillations and Waves",
+        "question": "An open organ pipe resonates at fundamental frequency. If one end is closed, the new fundamental frequency will:",
+        "options": {
+          "A": "Double",
+          "B": "Halve",
+          "C": "Remain the same",
+          "D": "Increase by 1.5x"
+        },
+        "correct": "B",
+        "explanation": "Open pipe f_o = v/2L. Closed pipe f_c = v/4L = f_o/2."
+      },
+      {
+        "q": 14,
+        "global_q": 14,
+        "topic": "Electrostatics",
+        "question": "Electric potential V = 4x^2 volts. The electric field E at (1, 0, 2) in V/m is:",
+        "options": {
+          "A": "8 along negative x-axis",
+          "B": "8 along positive x-axis",
+          "C": "4 along negative x-axis",
+          "D": "4 along positive x-axis"
+        },
+        "correct": "A",
+        "explanation": "E = -dV/dx = -8x. At x=1, E = -8 (i.e., 8 along negative x-axis)."
+      },
+      {
+        "q": 15,
+        "global_q": 15,
+        "topic": "Electrostatics",
+        "question": "An isolated parallel plate capacitor has energy U. If separation is doubled, new energy is:",
+        "options": {
+          "A": "U",
+          "B": "U/2",
+          "C": "2U",
+          "D": "4U"
+        },
+        "correct": "C",
+        "explanation": "Charge Q is constant. U=Q^2/2C. Doubling distance halves C, so U'=Q^2/(2(C/2))=2U."
+      },
+      {
+        "q": 16,
+        "global_q": 16,
+        "topic": "Current Electricity",
+        "question": "A galvanometer of 50 Ω gives full-scale deflection for 0.05 A. Resistance required for 0 to 100 V range is:",
+        "options": {
+          "A": "1950 Ω",
+          "B": "2000 Ω",
+          "C": "2050 Ω",
+          "D": "1000 Ω"
+        },
+        "correct": "A",
+        "explanation": "V=Ig(G+R). 100=0.05(50+R) ⇒ 50+R=2000 ⇒ R=1950 Ω."
+      },
+      {
+        "q": 17,
+        "global_q": 17,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "Two wires A and B carry currents I and 2I. Force is F. If B's current is reversed and doubled to 4I, new force is:",
+        "options": {
+          "A": "2F (attractive)",
+          "B": "2F (repulsive)",
+          "C": "4F (attractive)",
+          "D": "4F (repulsive)"
+        },
+        "correct": "B",
+        "explanation": "F∝I1I2. Old force ∝2I^2 (attractive). New force ∝4I^2, but currents are now opposite, so it's repulsive with magnitude doubled: 2F (repulsive)."
+      },
+      {
+        "q": 18,
+        "global_q": 18,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "Magnetic flux Φ = 3t^2 + 4t + 9 Wb. Induced EMF at t = 2 s is:",
+        "options": {
+          "A": "16 V",
+          "B": "9 V",
+          "C": "25 V",
+          "D": "4 V"
+        },
+        "correct": "A",
+        "explanation": "|e|=dΦ/dt=6t+4. At t=2, |e|=12+4=16 V."
+      },
+      {
+        "q": 19,
+        "global_q": 19,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "In series LCR, voltages are V_R=10V, V_C=20V, V_L=20V. Power factor is:",
+        "options": {
+          "A": "0",
+          "B": "0.5",
+          "C": "1",
+          "D": "0.707"
+        },
+        "correct": "C",
+        "explanation": "Since V_L=V_C, the circuit is at resonance. Phase angle φ=0, so cosφ=1."
+      },
+      {
+        "q": 20,
+        "global_q": 20,
+        "topic": "Electromagnetic Waves",
+        "question": "Ratio of contributions of electric field and magnetic field to EM wave intensity is:",
+        "options": {
+          "A": "1:1",
+          "B": "c:1",
+          "C": "1:c^2",
+          "D": "1:c"
+        },
+        "correct": "A",
+        "explanation": "In an EM wave, the average energy densities of the E and B fields are equal, so their intensity contributions are 1:1."
+      },
+      {
+        "q": 21,
+        "global_q": 21,
+        "topic": "Optics",
+        "question": "A convex glass lens (μ=1.5) has f = 20 cm in air. If immersed in liquid of μ=1.5, new f is:",
+        "options": {
+          "A": "20 cm",
+          "B": "40 cm",
+          "C": "10 cm",
+          "D": "Infinity"
+        },
+        "correct": "D",
+        "explanation": "1/f = (μ_L/μ_M - 1)(1/R1-1/R2). Since μ_L=μ_M, 1/f=0, so f=∞."
+      },
+      {
+        "q": 22,
+        "global_q": 22,
+        "topic": "Optics",
+        "question": "In YDSE, slit separation is doubled, screen distance is halved. Fringe width:",
+        "options": {
+          "A": "becomes one-fourth",
+          "B": "becomes half",
+          "C": "remains same",
+          "D": "is doubled"
+        },
+        "correct": "A",
+        "explanation": "β=λD/d. New β'=λ(D/2)/(2d)=(1/4)(λD/d)=β/4."
+      },
+      {
+        "q": 23,
+        "global_q": 23,
+        "topic": "Dual Nature of Matter and Radiation",
+        "question": "Stopping potential is V0 for frequency ν. For frequency 2ν, new stopping potential is:",
+        "options": {
+          "A": "Exactly 2V0",
+          "B": "Less than 2V0",
+          "C": "Greater than 2V0",
+          "D": "V0"
+        },
+        "correct": "C",
+        "explanation": "eV0=hν-W. New eVs=2hν-W=2(eV0+W)-W=2eV0+W, so Vs > 2V0."
+      },
+      {
+        "q": 24,
+        "global_q": 24,
+        "topic": "Atoms and Nuclei",
+        "question": "Ratio of radius of 1st orbit to 2nd orbit of H-atom is:",
+        "options": {
+          "A": "1:2",
+          "B": "1:4",
+          "C": "1:8",
+          "D": "4:1"
+        },
+        "correct": "B",
+        "explanation": "r_n ∝ n^2. For n=1 and n=2, ratio = 1^2:2^2 = 1:4."
+      },
+      {
+        "q": 25,
+        "global_q": 25,
+        "topic": "Electronic Devices",
+        "question": "In an n-type semiconductor, which is true?",
+        "options": {
+          "A": "Electrons are majority carriers, trivalent dopants",
+          "B": "Electrons are minority carriers, pentavalent dopants",
+          "C": "Holes are minority carriers, pentavalent dopants",
+          "D": "Holes are majority carriers, trivalent dopants"
+        },
+        "correct": "C",
+        "explanation": "n-type semiconductors are made using pentavalent dopants, making electrons the majority carriers and holes the minority carriers."
+      }
+    ],
+    "Chemistry": [
+      {
+        "q": 1,
+        "global_q": 26,
+        "topic": "Atomic Structure",
+        "question": "The orbital having two radial nodes and two angular nodes is:",
+        "options": {
+          "A": "3p",
+          "B": "4f",
+          "C": "5d",
+          "D": "4d"
+        },
+        "correct": "C",
+        "explanation": "Angular nodes = l = 2 (d-orbital). Radial nodes = n-l-1 = 2 ⇒ n-2-1=2 ⇒ n=5. Orbital is 5d."
+      },
+      {
+        "q": 2,
+        "global_q": 27,
+        "topic": "Atomic Structure",
+        "question": "In a hydrogen atom, the energy of an electron in the first Bohr orbit is -13.6 eV. What is the energy of the electron in the third Bohr orbit?",
+        "options": {
+          "A": "-1.51 eV",
+          "B": "-3.4 eV",
+          "C": "-4.53 eV",
+          "D": "-13.6 eV"
+        },
+        "correct": "A",
+        "explanation": "E_n = -13.6/n^2 eV. For n=3, E3 = -13.6/9 = -1.51 eV."
+      },
+      {
+        "q": 3,
+        "global_q": 28,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "According to VSEPR theory, the geometry of XeF4 is:",
+        "options": {
+          "A": "Tetrahedral",
+          "B": "Square planar",
+          "C": "Octahedral",
+          "D": "See-saw"
+        },
+        "correct": "B",
+        "explanation": "Xe forms 4 bonds and has 2 lone pairs (steric number 6, sp3d2 hybridization). With lone pairs at axial positions, the molecular shape is square planar."
+      },
+      {
+        "q": 4,
+        "global_q": 29,
+        "topic": "Chemical Thermodynamics",
+        "question": "The standard enthalpy of formation of H2O(l) and H2O(g) are -285.8 kJ/mol and -241.8 kJ/mol respectively. What is the enthalpy of vaporization of liquid water?",
+        "options": {
+          "A": "44.0 kJ/mol",
+          "B": "-44.0 kJ/mol",
+          "C": "527.6 kJ/mol",
+          "D": "-527.6 kJ/mol"
+        },
+        "correct": "A",
+        "explanation": "ΔH_vap = ΔHf(H2O,g) - ΔHf(H2O,l) = -241.8 - (-285.8) = +44.0 kJ/mol."
+      },
+      {
+        "q": 5,
+        "global_q": 30,
+        "topic": "Equilibrium",
+        "question": "For the reaction N2(g) + 3H2(g) ⇌ 2NH3(g), what is the relationship between Kp and Kc at temperature T?",
+        "options": {
+          "A": "Kp = Kc(RT)",
+          "B": "Kp = Kc(RT)^-2",
+          "C": "Kp = Kc(RT)^2",
+          "D": "Kp = Kc"
+        },
+        "correct": "B",
+        "explanation": "Kp = Kc(RT)^Δn. Δn = 2-(1+3) = -2, so Kp = Kc(RT)^-2."
+      },
+      {
+        "q": 6,
+        "global_q": 31,
+        "topic": "Redox Reactions and Electrochemistry",
+        "question": "The standard electrode potential (E°) for the cell Zn | Zn^2+(1M) || Cu^2+(1M) | Cu is 1.10 V at 298 K. The equilibrium constant (K) for the cell reaction is approximately:",
+        "options": {
+          "A": "10^-37",
+          "B": "10^37",
+          "C": "10^-18",
+          "D": "10^18"
+        },
+        "correct": "B",
+        "explanation": "E°cell = (0.0591/n)logKc, n=2. 1.10=(0.0591/2)logKc ⇒ logKc≈37.2, so Kc≈10^37."
+      },
+      {
+        "q": 7,
+        "global_q": 32,
+        "topic": "Chemical Kinetics",
+        "question": "A first-order reaction has a half-life period of 34.65 seconds. Its rate constant is:",
+        "options": {
+          "A": "2×10^-2 s^-1",
+          "B": "4×10^-4 s^-1",
+          "C": "2×10^-4 s^-1",
+          "D": "2×10^-3 s^-1"
+        },
+        "correct": "A",
+        "explanation": "t1/2 = 0.693/k. k = 0.693/34.65 = 0.02 = 2×10^-2 s^-1."
+      },
+      {
+        "q": 8,
+        "global_q": 33,
+        "topic": "Solutions",
+        "question": "Which of the following aqueous solutions will have the highest boiling point? (Assume complete dissociation for electrolytes)",
+        "options": {
+          "A": "0.1 M Urea",
+          "B": "0.1 M NaCl",
+          "C": "0.1 M Na2SO4",
+          "D": "0.1 M Al2(SO4)3"
+        },
+        "correct": "D",
+        "explanation": "ΔTb = i·Kb·m. Van't Hoff factors: Urea i=1, NaCl i=2, Na2SO4 i=3, Al2(SO4)3 i=5. Highest i gives the highest boiling point elevation."
+      },
+      {
+        "q": 9,
+        "global_q": 34,
+        "topic": "d- and f-Block Elements",
+        "question": "The oxidation state of Cr in CrO5 is:",
+        "options": {
+          "A": "+10",
+          "B": "+6",
+          "C": "+4",
+          "D": "+8"
+        },
+        "correct": "B",
+        "explanation": "CrO5 has two peroxo linkages (4 O at -1) and one double-bonded O (-2). x+4(-1)+1(-2)=0 gives x=+6."
+      },
+      {
+        "q": 10,
+        "global_q": 35,
+        "topic": "Coordination Compounds",
+        "question": "Which among the following complexes is diamagnetic in nature?",
+        "options": {
+          "A": "[Fe(CN)6]^3-",
+          "B": "[CoF6]^3-",
+          "C": "[Ni(CN)4]^2-",
+          "D": "[NiCl4]^2-"
+        },
+        "correct": "C",
+        "explanation": "In [Ni(CN)4]^2-, Ni^2+ (3d^8) with strong field CN- forces pairing, giving dsp^2 hybridization and zero unpaired electrons (diamagnetic)."
+      },
+      {
+        "q": 11,
+        "global_q": 36,
+        "topic": "p-Block Elements (Group-13 to Group 18 Elements)",
+        "question": "In solid state, PCl5 exists as:",
+        "options": {
+          "A": "Covalent PCl5 molecules",
+          "B": "[PCl4]+ and [PCl6]- ions",
+          "C": "[PCl4]+ and Cl- ions",
+          "D": "[PCl5]+ and Cl- ions"
+        },
+        "correct": "B",
+        "explanation": "In the solid state, PCl5 autoionizes into tetrahedral [PCl4]+ cations and octahedral [PCl6]- anions."
+      },
+      {
+        "q": 12,
+        "global_q": 37,
+        "topic": "Classification of Elements and Periodicity in Properties",
+        "question": "The correct order of first ionization enthalpy among N, O, and F is:",
+        "options": {
+          "A": "F > O > N",
+          "B": "F > N > O",
+          "C": "O > F > N",
+          "D": "N > O > F"
+        },
+        "correct": "B",
+        "explanation": "N has a stable half-filled 2p3 configuration giving it a higher IE than O. F has the highest due to greatest effective nuclear charge. Order: F > N > O."
+      },
+      {
+        "q": 13,
+        "global_q": 38,
+        "topic": "Some Basic Principles of Organic Chemistry",
+        "question": "Which of the following carbocations is the most stable?",
+        "options": {
+          "A": "Primary allylic",
+          "B": "Secondary alkyl",
+          "C": "Triphenylmethyl",
+          "D": "Benzyl"
+        },
+        "correct": "C",
+        "explanation": "The triphenylmethyl carbocation is stabilized by extensive resonance delocalization over three phenyl rings, making it the most stable."
+      },
+      {
+        "q": 14,
+        "global_q": 39,
+        "topic": "Hydrocarbons",
+        "question": "Ozonolysis of an alkene yields one molecule of acetone and one molecule of formaldehyde. The alkene is:",
+        "options": {
+          "A": "Propene",
+          "B": "2-Methylpropene",
+          "C": "2-Butene",
+          "D": "2-Methyl-2-butene"
+        },
+        "correct": "B",
+        "explanation": "Joining the fragments of acetone (CH3)2C=O and formaldehyde H2C=O by removing the oxygens gives (CH3)2C=CH2, i.e., 2-methylpropene."
+      },
+      {
+        "q": 15,
+        "global_q": 40,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "An alkyl halide reacts with sodium alkoxide to form an ether. This reaction is known as:",
+        "options": {
+          "A": "Wurtz reaction",
+          "B": "Williamson synthesis",
+          "C": "Finkelstein reaction",
+          "D": "Swarts reaction"
+        },
+        "correct": "B",
+        "explanation": "The SN2 reaction of an alkyl halide with a sodium alkoxide to give an ether is the Williamson ether synthesis."
+      },
+      {
+        "q": 16,
+        "global_q": 41,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "When phenol is treated with chloroform and aqueous NaOH, the major product is:",
+        "options": {
+          "A": "Salicylic acid",
+          "B": "Salicylaldehyde",
+          "C": "Benzoquinone",
+          "D": "Picric acid"
+        },
+        "correct": "B",
+        "explanation": "This is the Reimer-Tiemann reaction, introducing a -CHO group ortho to -OH to form salicylaldehyde."
+      },
+      {
+        "q": 17,
+        "global_q": 42,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "Which of the following compounds will not undergo Aldol condensation?",
+        "options": {
+          "A": "Acetaldehyde",
+          "B": "Acetone",
+          "C": "Formaldehyde",
+          "D": "Propanal"
+        },
+        "correct": "C",
+        "explanation": "Aldol condensation requires an α-hydrogen. Formaldehyde has no α-carbon, so it undergoes the Cannizzaro reaction instead."
+      },
+      {
+        "q": 18,
+        "global_q": 43,
+        "topic": "Organic Compounds Containing Nitrogen",
+        "question": "Hinsberg's reagent, used to distinguish primary, secondary, and tertiary amines, is chemically:",
+        "options": {
+          "A": "Benzoyl chloride",
+          "B": "Benzenesulfonyl chloride",
+          "C": "p-Toluenesulfonyl chloride",
+          "D": "Acetyl chloride"
+        },
+        "correct": "B",
+        "explanation": "Hinsberg's reagent is benzenesulfonyl chloride, forming alkali-soluble sulfonamides with primary amines and alkali-insoluble ones with secondary amines, and not reacting with tertiary amines."
+      },
+      {
+        "q": 19,
+        "global_q": 44,
+        "topic": "Biomolecules",
+        "question": "Glucose on prolonged heating with HI forms:",
+        "options": {
+          "A": "Hexanoic acid",
+          "B": "n-Hexane",
+          "C": "Gluconic acid",
+          "D": "Saccharic acid"
+        },
+        "correct": "B",
+        "explanation": "Prolonged heating of glucose with HI and red phosphorus completely reduces the molecule to n-hexane, proving the straight-chain structure of glucose."
+      },
+      {
+        "q": 20,
+        "global_q": 45,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "How many moles of methane are required to produce 22g of CO2(g) after combustion?",
+        "options": {
+          "A": "0.5 moles",
+          "B": "1.0 moles",
+          "C": "1.5 moles",
+          "D": "2.0 moles"
+        },
+        "correct": "A",
+        "explanation": "CH4 + 2O2 → CO2 + 2H2O. 1 mole CH4 gives 1 mole CO2 (44 g/mol). 22g CO2 = 0.5 moles, requiring 0.5 moles CH4."
+      },
+      {
+        "q": 21,
+        "global_q": 46,
+        "topic": "Equilibrium",
+        "question": "Which of the following mixtures acts as a buffer solution?",
+        "options": {
+          "A": "Strong acid + Strong base",
+          "B": "Weak acid + its salt with a strong base",
+          "C": "Strong acid + its salt with a weak base",
+          "D": "Weak acid + Weak base"
+        },
+        "correct": "B",
+        "explanation": "An acidic buffer consists of a weak acid and its salt with a strong base (e.g., CH3COOH + CH3COONa), resisting pH changes on small acid/base additions."
+      },
+      {
+        "q": 22,
+        "global_q": 47,
+        "topic": "Chemical Thermodynamics",
+        "question": "The work done when 1 mole of an ideal gas expands isothermally and reversibly from 1 L to 10 L at 300 K is (R = 8.314 J/K·mol):",
+        "options": {
+          "A": "-5744 J",
+          "B": "-2872 J",
+          "C": "+5744 J",
+          "D": "+2872 J"
+        },
+        "correct": "A",
+        "explanation": "W = -2.303nRT log(V2/V1) = -2.303×1×8.314×300×log(10) ≈ -5744 J."
+      },
+      {
+        "q": 23,
+        "global_q": 48,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "According to Molecular Orbital Theory, the bond order of O2+ ion is:",
+        "options": {
+          "A": "1.5",
+          "B": "2.0",
+          "C": "2.5",
+          "D": "3.0"
+        },
+        "correct": "C",
+        "explanation": "O2+ has 15 valence electrons: σ1s²σ*1s²σ2s²σ*2s²σ2pz²π2px²=π2py²π*2px¹. Bond order = (10-5)/2 = 2.5."
+      },
+      {
+        "q": 24,
+        "global_q": 49,
+        "topic": "Coordination Compounds",
+        "question": "Which kind of isomerism is exhibited by the complex [Co(en)3]Cl3?",
+        "options": {
+          "A": "Geometrical isomerism",
+          "B": "Optical isomerism",
+          "C": "Ionization isomerism",
+          "D": "Linkage isomerism"
+        },
+        "correct": "B",
+        "explanation": "[Co(en)3]^3+ with symmetrical bidentate ligands in an octahedral arrangement lacks a plane of symmetry, existing as non-superimposable mirror images (optical isomerism)."
+      },
+      {
+        "q": 25,
+        "global_q": 50,
+        "topic": "d- and f-Block Elements",
+        "question": "Which transition metal ion is colorless in aqueous solution?",
+        "options": {
+          "A": "Ti^3+",
+          "B": "V^3+",
+          "C": "Sc^3+",
+          "D": "Fe^3+"
+        },
+        "correct": "C",
+        "explanation": "Sc^3+ has an empty d-orbital (d^0), so no d-d transitions are possible, making it colorless."
+      }
+    ],
+    "Mathematics": [
+      {
+        "q": 1,
+        "global_q": 51,
+        "topic": "Matrices and Determinants",
+        "question": "If A = [[2, 0], [1, 2]], then the sum of all elements of the matrix A^10 is:",
+        "options": {
+          "A": "7168",
+          "B": "6144",
+          "C": "7160",
+          "D": "8192"
+        },
+        "correct": "A",
+        "explanation": "A=2I+N where N=[[0,0],[1,0]]. By the binomial theorem, A^10=1024I+5120N. Sum of elements = 1024+1024+5120 = 7168."
+      },
+      {
+        "q": 2,
+        "global_q": 52,
+        "topic": "Complex Numbers and Quadratic Equations",
+        "question": "The non-zero complex number z satisfying |z-1| = |z-i| = 1 is:",
+        "options": {
+          "A": "1 + i",
+          "B": "1 - i",
+          "C": "-1 + i",
+          "D": "(1+i)/2"
+        },
+        "correct": "A",
+        "explanation": "Let z=x+iy. (x-1)^2+y^2=1 and x^2+(y-1)^2=1. Solving gives x=y=1, so z=1+i."
+      },
+      {
+        "q": 3,
+        "global_q": 53,
+        "topic": "Sequence and Series",
+        "question": "Let α and β be the roots of x^2 - 6x - 2 = 0. If a_n = α^n - β^n, then (a_10 - 2a_8)/2a_9 is:",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "6"
+        },
+        "correct": "C",
+        "explanation": "From the recurrence a_n - 6a_(n-1) - 2a_(n-2) = 0, a_10 - 2a_8 = 6a_9. Dividing by 2a_9 gives 3."
+      },
+      {
+        "q": 4,
+        "global_q": 54,
+        "topic": "Sequence and Series",
+        "question": "The sum of the infinite series 1 + 2/3 + 6/3^2 + 10/3^3 + 14/3^4 + ... is:",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5/2"
+        },
+        "correct": "B",
+        "explanation": "Using the method of differences (AGP), the sum of the series starting from 2/3 evaluates to 2. Total sum = 1+2 = 3."
+      },
+      {
+        "q": 5,
+        "global_q": 55,
+        "topic": "Binomial Theorem and its Simple Applications",
+        "question": "The coefficient of x^7 in the expansion of (1 - x - x^2 + x^3)^6 is:",
+        "options": {
+          "A": "-144",
+          "B": "144",
+          "C": "-108",
+          "D": "132"
+        },
+        "correct": "A",
+        "explanation": "(1-x-x^2+x^3)^6 = (1-x)^6(1-x^2)^6. Expanding and matching powers of x^7 gives 36-300+120 = -144."
+      },
+      {
+        "q": 6,
+        "global_q": 56,
+        "topic": "Permutations and Combinations",
+        "question": "The number of 4-digit numbers formed using the digits 0, 1, 2, 3, 4, 5 without repetition that are divisible by 6 is:",
+        "options": {
+          "A": "52",
+          "B": "48",
+          "C": "56",
+          "D": "60"
+        },
+        "correct": "A",
+        "explanation": "The digit sum must be a multiple of 3 and the last digit must be even. Checking all valid subsets yields 12+10+14+6+10 = 52."
+      },
+      {
+        "q": 7,
+        "global_q": 57,
+        "topic": "Statistics and Probability",
+        "question": "A bag contains 4 red and 6 black balls. Three balls are drawn. Given at least one is red, the probability all three are red is:",
+        "options": {
+          "A": "1/25",
+          "B": "3/25",
+          "C": "1/20",
+          "D": "4/105"
+        },
+        "correct": "A",
+        "explanation": "Total ways = 120. Ways with no red = 20. At least one red = 100. All red = 4. Probability = 4/100 = 1/25."
+      },
+      {
+        "q": 8,
+        "global_q": 58,
+        "topic": "Limit, Continuity and Differentiability",
+        "question": "The value of lim(x→0) (e^(x^2) - cos x) / x^2 is:",
+        "options": {
+          "A": "1",
+          "B": "3/2",
+          "C": "1/2",
+          "D": "2"
+        },
+        "correct": "B",
+        "explanation": "Using Taylor expansion: e^(x^2)≈1+x^2, cos x≈1-x^2/2. The limit = (1+1/2) = 3/2."
+      },
+      {
+        "q": 9,
+        "global_q": 59,
+        "topic": "Limit, Continuity and Differentiability",
+        "question": "The number of points where f(x) = |x-1| + |x-2| is not differentiable is:",
+        "options": {
+          "A": "0",
+          "B": "1",
+          "C": "2",
+          "D": "3"
+        },
+        "correct": "C",
+        "explanation": "The function has sharp corners at x=1 and x=2, the roots of the absolute value terms."
+      },
+      {
+        "q": 10,
+        "global_q": 60,
+        "topic": "Limit, Continuity and Differentiability",
+        "question": "The maximum value of f(x) = x(1-x)^2 for x ∈ [0, 1] is:",
+        "options": {
+          "A": "4/27",
+          "B": "2/9",
+          "C": "1/27",
+          "D": "4/9"
+        },
+        "correct": "A",
+        "explanation": "f'(x)=(3x-1)(x-1). Critical point at x=1/3. f(1/3)=(1/3)(2/3)^2=4/27."
+      },
+      {
+        "q": 11,
+        "global_q": 61,
+        "topic": "Integral Calculus",
+        "question": "The integral ∫0^(π/2) (sin^3 x)/(sin x + cos x) dx is equal to:",
+        "options": {
+          "A": "(π-1)/4",
+          "B": "(π+1)/4",
+          "C": "(π-1)/2",
+          "D": "π/4"
+        },
+        "correct": "A",
+        "explanation": "Using King's property, 2I=∫(sin^3x+cos^3x)/(sinx+cosx)dx=∫(1-sinx cosx)dx=π/2-1/2. So I=(π-1)/4."
+      },
+      {
+        "q": 12,
+        "global_q": 62,
+        "topic": "Integral Calculus",
+        "question": "The area bounded by the parabola y = x^2 and the line y = 2x is:",
+        "options": {
+          "A": "4/3",
+          "B": "2/3",
+          "C": "8/3",
+          "D": "2"
+        },
+        "correct": "A",
+        "explanation": "Intersections at x=0,2. Area = ∫0^2 (2x-x^2)dx = [x^2-x^3/3] = 4-8/3 = 4/3."
+      },
+      {
+        "q": 13,
+        "global_q": 63,
+        "topic": "Differential Equations",
+        "question": "The general solution of dy/dx + y tan x = sec x is:",
+        "options": {
+          "A": "y = sin x + C cos x",
+          "B": "y = cos x + C sin x",
+          "C": "y = tan x + C sec x",
+          "D": "y = sec x + C tan x"
+        },
+        "correct": "A",
+        "explanation": "IF = sec x. Solution: y sec x = ∫sec^2x dx = tan x + C. Multiplying by cos x gives y = sin x + C cos x."
+      },
+      {
+        "q": 14,
+        "global_q": 64,
+        "topic": "Co-ordinate Geometry",
+        "question": "If the lines 2x+y-3=0, 5x+ky-3=0, and 3x-y-2=0 are concurrent, then k is:",
+        "options": {
+          "A": "-2",
+          "B": "2",
+          "C": "3",
+          "D": "-3"
+        },
+        "correct": "A",
+        "explanation": "The determinant of coefficients must be 0. Solving |[2,1,-3],[5,k,-3],[3,-1,-2]| = 0 yields k = -2."
+      },
+      {
+        "q": 15,
+        "global_q": 65,
+        "topic": "Co-ordinate Geometry",
+        "question": "The circle touching the x-axis at (3, 0) and passing through (1, 4) is:",
+        "options": {
+          "A": "x^2+y^2-6x-5y+9=0",
+          "B": "x^2+y^2-6x+5y+9=0",
+          "C": "x^2+y^2+6x-5y+9=0",
+          "D": "x^2+y^2-3x-5y+9=0"
+        },
+        "correct": "A",
+        "explanation": "Center is (3,r) with radius r. (1-3)^2+(4-r)^2=r^2 gives 4+16-8r=0, so r=5/2. Equation: x^2+y^2-6x-5y+9=0."
+      },
+      {
+        "q": 16,
+        "global_q": 66,
+        "topic": "Co-ordinate Geometry",
+        "question": "The equation of the parabola with focus (2, 0) and directrix x = -2 is:",
+        "options": {
+          "A": "y^2 = 8x",
+          "B": "y^2 = -8x",
+          "C": "x^2 = 8y",
+          "D": "x^2 = -8y"
+        },
+        "correct": "A",
+        "explanation": "Vertex at origin, a=2. Standard equation y^2=4ax becomes y^2=8x."
+      },
+      {
+        "q": 17,
+        "global_q": 67,
+        "topic": "Vector Algebra",
+        "question": "Projection of vector a = i+j+k on b = i-j+2k is:",
+        "options": {
+          "A": "√(2/3)",
+          "B": "2/3",
+          "C": "1/√6",
+          "D": "2/√3"
+        },
+        "correct": "A",
+        "explanation": "Projection = (a·b)/|b| = (1-1+2)/√6 = 2/√6 = √(4/6) = √(2/3)."
+      },
+      {
+        "q": 18,
+        "global_q": 68,
+        "topic": "Three Dimensional Geometry",
+        "question": "Shortest distance between lines (x-1)/2=(y-2)/3=(z-3)/4 and (x-2)/3=(y-4)/4=(z-5)/5 is:",
+        "options": {
+          "A": "1/√6",
+          "B": "1/6",
+          "C": "2/√6",
+          "D": "0"
+        },
+        "correct": "A",
+        "explanation": "b1×b2 = -i+2j-k. (a2-a1)=i+2j+2k, dot product =1. |b1×b2|=√6. Distance = 1/√6."
+      },
+      {
+        "q": 19,
+        "global_q": 69,
+        "topic": "Trigonometry",
+        "question": "The value of tan^-1(1) + cos^-1(-1/2) + sin^-1(-1/2) is:",
+        "options": {
+          "A": "3π/4",
+          "B": "π/4",
+          "C": "π",
+          "D": "π/2"
+        },
+        "correct": "A",
+        "explanation": "sin^-1(x)+cos^-1(x)=π/2. tan^-1(1)=π/4. Total = π/4+π/2 = 3π/4."
+      },
+      {
+        "q": 20,
+        "global_q": 70,
+        "topic": "Statistics and Probability",
+        "question": "If mean of x, x+2, x+4, x+6, x+8 is 11, then variance is:",
+        "options": {
+          "A": "8",
+          "B": "10",
+          "C": "4",
+          "D": "16"
+        },
+        "correct": "A",
+        "explanation": "Mean = x+4 = 11 ⇒ x=7. Deviations: -4,-2,0,2,4. Variance = (16+4+0+4+16)/5 = 8."
+      },
+      {
+        "q": 21,
+        "global_q": 71,
+        "topic": "Sets, Relations and Functions",
+        "question": "Relation R on ℕ where a + 3b = 12. The domain is:",
+        "options": {
+          "A": "{3, 6, 9}",
+          "B": "{1, 2, 3}",
+          "C": "{3, 6, 9, 12}",
+          "D": "{2, 4, 6}"
+        },
+        "correct": "A",
+        "explanation": "b=1⇒a=9; b=2⇒a=6; b=3⇒a=3. For b≥4, a≤0, not in ℕ. Domain is {3,6,9}."
+      },
+      {
+        "q": 22,
+        "global_q": 72,
+        "topic": "Trigonometry",
+        "question": "The number of real solutions of sin^2x - 3sinx + 2 = 0 in [0, 2π] is:",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "0"
+        },
+        "correct": "A",
+        "explanation": "(sinx-1)(sinx-2)=0. sinx=2 rejected. sinx=1 gives x=π/2 (1 solution)."
+      },
+      {
+        "q": 23,
+        "global_q": 73,
+        "topic": "Co-ordinate Geometry",
+        "question": "The eccentricity of the ellipse 9x^2 + 25y^2 = 225 is:",
+        "options": {
+          "A": "4/5",
+          "B": "3/5",
+          "C": "16/25",
+          "D": "2/5"
+        },
+        "correct": "A",
+        "explanation": "x^2/25+y^2/9=1, a=5,b=3. e=√(1-9/25)=4/5."
+      },
+      {
+        "q": 24,
+        "global_q": 74,
+        "topic": "Integral Calculus",
+        "question": "Area bounded by y = |x-1| and y = 3-|x| is:",
+        "options": {
+          "A": "4",
+          "B": "3",
+          "C": "5",
+          "D": "6"
+        },
+        "correct": "A",
+        "explanation": "The vertices of intersection form a region; integrating from -1 to 2 yields Area = 4."
+      },
+      {
+        "q": 25,
+        "global_q": 75,
+        "topic": "Matrices and Determinants",
+        "question": "System x+y+z=6, x+2y+3z=10, x+2y+λz=μ has infinite solutions if:",
+        "options": {
+          "A": "λ = 3, μ = 10",
+          "B": "λ = 3, μ ≠ 10",
+          "C": "λ ≠ 3, μ = 10",
+          "D": "λ = 2, μ = 10"
+        },
+        "correct": "A",
+        "explanation": "Δ=0 gives λ=3. For infinite solutions, equations 2 and 3 must be identical, so μ=10."
+      }
+    ]
+  }
+}

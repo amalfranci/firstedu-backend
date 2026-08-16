@@ -1,0 +1,11 @@
+{
+  "exam": "UPSC Prelims GS Paper I",
+  "year": 2026,
+  "source": "UPSC EXAM/UPSC_2026_Syllabus.json",
+  "exam_pattern": {
+    "duration_minutes": 120,
+    "questions": 100,
+    "marks_per_question": 2,
+    "negative": 0.66
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "exam": "IBPS PO / MT",
+  "year": 2026,
+  "stage": "Prelims",
+  "source_note": "Official IBPS PO Prelims 2026 syllabus topics from IBPS/IBPS_2026_Syllabus.json",
+  "exam_pattern": {
+    "duration_minutes": 60,
+    "questions": 100,
+    "total_marks": 100,
+    "correct": 1,
+    "incorrect": -0.25,
+    "subjects": {
+      "English Language": 30,
+      "Quantitative Aptitude": 35,
+      "Reasoning Ability": 35
+    }
+  },
+  "subjects": {
+    "English Language": [
+      "Reading Comprehension",
+      "Main idea",
+      "Inference",
+      "Tone",
+      "Vocabulary in context",
+      "Error detection",
+      "Sentence correction",
+      "Fill in the blanks",
+      "Synonyms",
+      "Antonyms",
+      "Word usage",
+      "Idioms and phrases",
+      "Para jumbles",
+      "Sentence rearrangement",
+      "Cloze test"
+    ],
+    "Quantitative Aptitude": [
+      "Percentage",
+      "Profit and loss",
+      "Ratio and proportion",
+      "Average",
+      "Simple and compound interest",
+      "Time and work",
+      "Time, speed and distance",
+      "Mixture and allegation",
+      "Simplification",
+      "Approximation",
+      "Number series",
+      "HCF and LCM",
+      "Tables",
+      "Bar graphs",
+      "Line graphs",
+      "Pie charts",
+      "Caselets",
+      "Basic equations",
+      "Quadratic equations",
+      "Area",
+      "Volume"
+    ],
+    "Reasoning Ability": [
+      "Linear seating",
+      "Circular seating",
+      "Floor puzzles",
+      "Box puzzles",
+      "Scheduling",
+      "Syllogism",
+      "Inequality",
+      "Coding-decoding",
+      "Blood relations",
+      "Direction sense",
+      "Order and ranking",
+      "Alphanumeric series",
+      "Input-output",
+      "Data sufficiency",
+      "Statement and conclusion"
+    ]
+  }
+}

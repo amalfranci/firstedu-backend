@@ -1,0 +1,936 @@
+{
+  "paper_id": "CAT-Paper1",
+  "title": "CAT Paper 1",
+  "exam": "CAT",
+  "year": 2026,
+  "subjects": {
+    "Verbal Ability and Reading Comprehension": [
+      {
+        "q": 1,
+        "topic": "Inference",
+        "question": "The four sentences given below, when properly ordered, form a coherent paragraph. Choose the correct option that represents the most logical order.",
+        "options": {
+          "A": "2-3-1-4",
+          "B": "2-1-3-4",
+          "C": "3-2-1-4",
+          "D": "1-2-3-4"
+        },
+        "correct": "A",
+        "explanation": "Sentence 2 introduces the primary subject: classical financial models assuming market equilibrium. Sentence 3 elaborates on this assumption (\"By treating financial networks as self-correcting systems...\"). Sentence 1 refers specifically to \"This presumption of static stability\" (linking directly to the assumptions in 2 and 3) and introduces its flaw regarding systemic risk. Sentence 4 provides the logical conclusion (\"Consequently...\") with the 2008 crash. The logical sequence is 2-3-1-4."
+      },
+      {
+        "q": 2,
+        "topic": "Inference",
+        "question": "The four sentences given below, when properly ordered, form a coherent paragraph. Choose the correct option that represents the most logical order.",
+        "options": {
+          "A": "1-2-4-3",
+          "B": "2-1-4-3",
+          "C": "2-4-1-3",
+          "D": "1-3-2-4"
+        },
+        "correct": "B",
+        "explanation": "Sentence 2 establishes the baseline contrast (classical bits in binary states). Sentence 1 introduces quantum computing's superposition in contrast to binary limitations. Sentence 4 shows the immediate operational result of superposition (\"As a result, a quantum processor can evaluate...\"). Sentence 3 provides the broader impact (\"This exponential expansion... fundamentally transforms fields...\"). The sequence 2-1-4-3 forms a coherent logical progression."
+      },
+      {
+        "q": 3,
+        "topic": "Para Summary",
+        "question": "Read the passage below and select the option that best captures its core summary.\n\nFor decades, urban planners treated highways as vital arteries required to keep economic centers accessible. However, recent urban restorations reveal a different truth: removing inner-city expressways often reduces overall traffic congestion rather than increasing it. Known as Braess's Paradox, adding road capacity can incentivize more driving, whereas removing infrastructure forces commuters to re-evaluate transit modes, leading to cleaner, more economically vibrant city centers.",
+        "options": {
+          "A": "Highway construction is the primary driver of economic stagnation in modern metropolitan cities.",
+          "B": "Removing urban expressways can decrease traffic congestion and boost city vitality by disrupting driving incentives.",
+          "C": "Braess's Paradox proves that urban commuters prefer public transit over private vehicle ownership.",
+          "D": "Urban planners must expand highway networks to eliminate long-term traffic bottlenecks in city centers."
+        },
+        "correct": "B",
+        "explanation": "The passage highlights that removing highways can reduce congestion (Braess's Paradox) and revitalize cities by prompting commuters to change behavior. Option B accurately summarizes all main points. Option A is an overstatement (\"primary driver of economic stagnation\"). Option C overstates commuter preferences (they re-evaluate modes, not necessarily prefer public transit outright). Option D directly contradicts the passage's argument."
+      },
+      {
+        "q": 4,
+        "topic": "Para Summary",
+        "question": "Read the passage below and select the option that best captures its core summary.\n\nDeep-sea hydrothermal vents exist in complete darkness under immense pressure, yet they support thriving ecosystems independent of solar energy. Chemosynthetic bacteria form the foundation of these food webs, synthesizing organic compounds from hydrogen sulfide and methane vented from Earth's crust. Studying these extremophiles challenges traditional biological boundaries and expands our understanding of potential extraterrestrial life on icy moons like Europa.",
+        "options": {
+          "A": "Hydrothermal vents prove that complex animal life originated on Europa rather than on Earth.",
+          "B": "Deep-sea organisms will eventually replace terrestrial ecosystems as solar radiation intensifies.",
+          "C": "Hydrothermal ecosystems based on chemosynthesis redefine biological boundaries and offer clues for alien life.",
+          "D": "Chemosynthetic bacteria require high levels of solar energy to break down complex sulfur compounds."
+        },
+        "correct": "C",
+        "explanation": "The text explains how dark, high-pressure hydrothermal vent ecosystems rely on chemosynthesis, redefining life's boundaries and informing search for life on icy moons. Option C captures this succinctly. Option A distorts the text by claiming life originated on Europa. Option B introduces an unsupported speculative claim. Option D directly contradicts the passage (\"independent of solar energy\")."
+      },
+      {
+        "q": 5,
+        "topic": "Odd Sentence Out",
+        "question": "Five sentences are given below. Four of them can be arranged to form a coherent paragraph. Identify the sentence that DOES NOT fit into the logical context.",
+        "options": {
+          "A": "Sentence 1",
+          "B": "Sentence 2",
+          "C": "Sentence 3",
+          "D": "Sentence 4"
+        },
+        "correct": "C",
+        "explanation": "Sentences 1, 2, 4, and 5 form a tight paragraph about linguistic relativity (how language structure/vocabulary shapes cognition and perception). Sentence 3 focuses on the cognitive benefits of bilingualism in children (executive functioning), which is a distinct topic from linguistic relativity shaping worldview. Therefore, Sentence 3 (Option C) is the odd one out."
+      },
+      {
+        "q": 6,
+        "topic": "Odd Sentence Out",
+        "question": "Five sentences are given below. Four of them can be arranged to form a coherent paragraph. Identify the sentence that DOES NOT fit into the logical context.",
+        "options": {
+          "A": "Sentence 2",
+          "B": "Sentence 3",
+          "C": "Sentence 4",
+          "D": "Sentence 5"
+        },
+        "correct": "C",
+        "explanation": "Sentences 1, 2, 3, and 5 form a cohesive paragraph focused on physical manuscript preservation and environmental degradation mechanisms (humidity, UV light, climate chambers). Sentence 4 shifts the focus to digital archiving and accessibility, which diverges from the theme of physical preservation techniques. Thus, Sentence 4 (Option C) is the odd one out."
+      },
+      {
+        "q": 7,
+        "topic": "Inference",
+        "question": "Choose the most logical position [1], [2], [3], or [4] for the given sentence in the paragraph below.\n\nSentence to insert: \"Without these micro-level adjustments, structural fatigue accumulates invisibly until catastrophic failure occurs.\"\n\n[1] Modern civil engineering relies heavily on dynamic dampening systems built directly into tall skyscrapers. [2] These specialized mechanisms actively counteract strong wind shear and seismic oscillations by shifting internal counterweights. [3] Over time, continuous exposure to sub-threshold vibrations can compromise a building's foundational integrity. [4] Today, automated sensors monitor these minute structural shifts in real time to ensure occupant safety.",
+        "options": {
+          "A": "Position [1]",
+          "B": "Position [2]",
+          "C": "Position [3]",
+          "D": "Position [4]"
+        },
+        "correct": "D",
+        "explanation": "The inserted sentence explains what happens \"Without these micro-level adjustments\" (accumulating structural fatigue leading to catastrophic failure). Position [4] fits perfectly after [3], which describes how continuous exposure to sub-threshold vibrations compromises integrity over time. Placing the sentence at [4] provides the necessary consequence of failing to make micro-adjustments before [4] concludes with real-time monitoring sensors."
+      },
+      {
+        "q": 8,
+        "topic": "Inference",
+        "question": "Choose the most logical position [1], [2], [3], or [4] for the given sentence in the paragraph below.\n\nSentence to insert: \"This regulatory feedback loop ensures that glucose levels remain within a narrow, life-sustaining range.\"\n\n[1] Homeostasis is the biological process by which organisms maintain internal stability despite external changes. [2] In human metabolism, the pancreas continuously monitors blood sugar concentration and releases specific hormones accordingly. [3] When blood glucose rises, insulin signals cells to absorb energy; when it drops, glucagon prompts the liver to release stored sugar. [4] Failure of this complex balancing act results in metabolic disorders like diabetes.",
+        "options": {
+          "A": "Position [1]",
+          "B": "Position [2]",
+          "C": "Position [3]",
+          "D": "Position [4]"
+        },
+        "correct": "D",
+        "explanation": "The inserted sentence refers to \"This regulatory feedback loop,\" which summarizes the specific mechanism described in position [3] (insulin and glucagon actions balancing blood sugar). Placing it at position [4] creates a smooth logical link between the description of the feedback loop in [3] and the consequence of its failure in the final sentence (\"Failure of this complex balancing act...\")."
+      },
+      {
+        "q": 9,
+        "topic": "Inference",
+        "question": "Based on the passage, the primary distinction between 'task-orientation' and 'time-orientation' lies in:",
+        "options": {
+          "A": "Whether labor is measured by objective output or by the duration of effort purchased.",
+          "B": "The degree of physical exertion demanded from workers by factory overseers.",
+          "C": "The total historical economic output generated before versus after industrialization.",
+          "D": "Whether religious institutions or secular employers dictate daily schedules."
+        },
+        "correct": "A",
+        "explanation": "The passage explicitly contrasts task-orientation (selling a finished product/objective, like a boot or filled warp) with time-orientation (selling abstract hours/time itself to an employer). Option B focuses narrowly on physical exertion, Option C concerns total economic output, and Option D misinterprets the role of religion as a total controller rather than an ideological influence. Thus, (A) is correct.",
+        "passage": "The standard modern narrative of work presents industrialization as a clean line of demarcation: before it, organic, seasonal rhythms tied to agriculture; after it, synchronized, clock-governed discipline imposed by factory owners. Yet historical records reveal that the transition to industrial time-discipline was neither sudden nor uniformly resisted. Early modern workers operated within a framework of 'task-orientation,' where human labor was structured around the completion of explicit, context-bound objectives rather than the expenditure of abstract hours. A weaver worked until the warp was filled; a shoemaker crafted until the hide was spent. Time was perceived not as a currency to be spent or saved, but as an environment within which life unfolded.\n\nThe shift to 'time-orientation' was less an invention of the steam engine than an ideological product of mercantilist economic philosophy and religious reform. Long before the widespread adoption of mechanical clocks in workshops, Protestant moralists and merchant capitalists argued that wasted time was an offense against divine order and economic efficiency alike. Clock-time emerged as a device for measuring value when labor transformed from a product sold by the independent artisan into a commodity purchased by the employer. When an entrepreneur bought an artisan's finished boot, he purchased a task; when he hired a laborer to spend twelve hours in a factory, he purchased time itself.\n\nCrucially, this conceptual shift fundamentally reconfigured the psychological boundary between 'work' and 'life.' Under task-orientation, social interaction, rest, and labor were fluidly interspersed throughout the day. A craftsman might pause mid-day for communal conversation or extend a job late into the night depending on personal inclination. Time-orientation, by contrast, rendered time spent not explicitly on productive work as 'idle' or stolen from the employer. Consequently, leisure had to be neatly compartmentalized, transformed from a natural element embedded within the workday into a scarce, strictly demarcated reward that existed purely outside of it."
+      },
+      {
+        "q": 10,
+        "topic": "Purpose",
+        "question": "The author mentions the \"weaver\" and the \"shoemaker\" in the first paragraph primarily to:",
+        "options": {
+          "A": "Demonstrate that early modern manufacturing was technologically primitive and inefficient.",
+          "B": "Illustrate how human activity was structured around organic goals rather than abstract hours.",
+          "C": "Argue that pre-industrial workers possessed complete freedom from economic pressures.",
+          "D": "Contrast the high skill levels of early artisans with the low skill levels of factory laborers."
+        },
+        "correct": "B",
+        "explanation": "The passage notes that a weaver worked until the warp was filled and a shoemaker until the hide was spent to exemplify 'task-orientation,' where labor was tied to specific, context-bound objectives. Option A introduces unmentioned judgments about efficiency. Option C exaggerates by claiming \"complete freedom.\" Option D focuses on skill levels, which is not the purpose of the example.",
+        "passage": "The standard modern narrative of work presents industrialization as a clean line of demarcation: before it, organic, seasonal rhythms tied to agriculture; after it, synchronized, clock-governed discipline imposed by factory owners. Yet historical records reveal that the transition to industrial time-discipline was neither sudden nor uniformly resisted. Early modern workers operated within a framework of 'task-orientation,' where human labor was structured around the completion of explicit, context-bound objectives rather than the expenditure of abstract hours. A weaver worked until the warp was filled; a shoemaker crafted until the hide was spent. Time was perceived not as a currency to be spent or saved, but as an environment within which life unfolded.\n\nThe shift to 'time-orientation' was less an invention of the steam engine than an ideological product of mercantilist economic philosophy and religious reform. Long before the widespread adoption of mechanical clocks in workshops, Protestant moralists and merchant capitalists argued that wasted time was an offense against divine order and economic efficiency alike. Clock-time emerged as a device for measuring value when labor transformed from a product sold by the independent artisan into a commodity purchased by the employer. When an entrepreneur bought an artisan's finished boot, he purchased a task; when he hired a laborer to spend twelve hours in a factory, he purchased time itself.\n\nCrucially, this conceptual shift fundamentally reconfigured the psychological boundary between 'work' and 'life.' Under task-orientation, social interaction, rest, and labor were fluidly interspersed throughout the day. A craftsman might pause mid-day for communal conversation or extend a job late into the night depending on personal inclination. Time-orientation, by contrast, rendered time spent not explicitly on productive work as 'idle' or stolen from the employer. Consequently, leisure had to be neatly compartmentalized, transformed from a natural element embedded within the workday into a scarce, strictly demarcated reward that existed purely outside of it."
+      },
+      {
+        "q": 11,
+        "topic": "Inference",
+        "question": "Which of the following, if true, would most WEAKEN the author's argument regarding the origins of 'time-orientation'?",
+        "options": {
+          "A": "Industrial employers frequently complained that early factory workers left their shifts early.",
+          "B": "Medieval agrarian societies used public bells to mark specific periods of the working day.",
+          "C": "Pre-industrial merchant guilds strictly regulated working hours and fined members for working after dark.",
+          "D": "Early Protestant writings encouraged artisans to complete tasks with high artistic craftsmanship."
+        },
+        "correct": "C",
+        "explanation": "The author argues that time-orientation arose with capitalism/mercantilism and replaced task-orientation, where work hours were fluid. If pre-industrial guilds already strictly regulated clock hours and penalized late working long before industrial capitalism, it directly undermines the claim that time-orientation was a new conceptual shift born from mercantilism/industrialization. Option A shows worker resistance, which aligns with the text. Option B refers to signals rather than hour-purchasing, and Option D focuses on craftsmanship quality.",
+        "passage": "The standard modern narrative of work presents industrialization as a clean line of demarcation: before it, organic, seasonal rhythms tied to agriculture; after it, synchronized, clock-governed discipline imposed by factory owners. Yet historical records reveal that the transition to industrial time-discipline was neither sudden nor uniformly resisted. Early modern workers operated within a framework of 'task-orientation,' where human labor was structured around the completion of explicit, context-bound objectives rather than the expenditure of abstract hours. A weaver worked until the warp was filled; a shoemaker crafted until the hide was spent. Time was perceived not as a currency to be spent or saved, but as an environment within which life unfolded.\n\nThe shift to 'time-orientation' was less an invention of the steam engine than an ideological product of mercantilist economic philosophy and religious reform. Long before the widespread adoption of mechanical clocks in workshops, Protestant moralists and merchant capitalists argued that wasted time was an offense against divine order and economic efficiency alike. Clock-time emerged as a device for measuring value when labor transformed from a product sold by the independent artisan into a commodity purchased by the employer. When an entrepreneur bought an artisan's finished boot, he purchased a task; when he hired a laborer to spend twelve hours in a factory, he purchased time itself.\n\nCrucially, this conceptual shift fundamentally reconfigured the psychological boundary between 'work' and 'life.' Under task-orientation, social interaction, rest, and labor were fluidly interspersed throughout the day. A craftsman might pause mid-day for communal conversation or extend a job late into the night depending on personal inclination. Time-orientation, by contrast, rendered time spent not explicitly on productive work as 'idle' or stolen from the employer. Consequently, leisure had to be neatly compartmentalized, transformed from a natural element embedded within the workday into a scarce, strictly demarcated reward that existed purely outside of it."
+      },
+      {
+        "q": 12,
+        "topic": "Inference",
+        "question": "It can be inferred from the passage that the compartmentalization of leisure into a \"scarce reward\" was a direct consequence of:",
+        "options": {
+          "A": "The physical exhaustion caused by operating mechanical steam engines.",
+          "B": "The moral condemnation of social interaction by early modern religious authorities.",
+          "C": "The complete elimination of task-based work in modern specialized industries.",
+          "D": "The conceptual framing of non-work time during the shift as idle or stolen from the employer."
+        },
+        "correct": "D",
+        "explanation": "The final paragraph states that time-orientation rendered time not spent on productive work as 'idle' or 'stolen from the employer,' which forced leisure to be compartmentalized strictly outside the workday. Option A blames steam engine exhaustion, Option B distorts religious moralizing into total prohibition of social interaction, and Option C makes an unsupported extreme claim about complete elimination.",
+        "passage": "The standard modern narrative of work presents industrialization as a clean line of demarcation: before it, organic, seasonal rhythms tied to agriculture; after it, synchronized, clock-governed discipline imposed by factory owners. Yet historical records reveal that the transition to industrial time-discipline was neither sudden nor uniformly resisted. Early modern workers operated within a framework of 'task-orientation,' where human labor was structured around the completion of explicit, context-bound objectives rather than the expenditure of abstract hours. A weaver worked until the warp was filled; a shoemaker crafted until the hide was spent. Time was perceived not as a currency to be spent or saved, but as an environment within which life unfolded.\n\nThe shift to 'time-orientation' was less an invention of the steam engine than an ideological product of mercantilist economic philosophy and religious reform. Long before the widespread adoption of mechanical clocks in workshops, Protestant moralists and merchant capitalists argued that wasted time was an offense against divine order and economic efficiency alike. Clock-time emerged as a device for measuring value when labor transformed from a product sold by the independent artisan into a commodity purchased by the employer. When an entrepreneur bought an artisan's finished boot, he purchased a task; when he hired a laborer to spend twelve hours in a factory, he purchased time itself.\n\nCrucially, this conceptual shift fundamentally reconfigured the psychological boundary between 'work' and 'life.' Under task-orientation, social interaction, rest, and labor were fluidly interspersed throughout the day. A craftsman might pause mid-day for communal conversation or extend a job late into the night depending on personal inclination. Time-orientation, by contrast, rendered time spent not explicitly on productive work as 'idle' or stolen from the employer. Consequently, leisure had to be neatly compartmentalized, transformed from a natural element embedded within the workday into a scarce, strictly demarcated reward that existed purely outside of it."
+      },
+      {
+        "q": 13,
+        "topic": "Inference",
+        "question": "According to the passage, molecular phylogenetics revealed that traditional morphological classifications were sometimes inaccurate because morphologists:",
+        "options": {
+          "A": "Relied on automated alignment algorithms that produced long-branch attraction artifacts.",
+          "B": "Failed to distinguish between shared derived traits and coincidental genetic similarities.",
+          "C": "Mistook physical similarities resulting from convergent evolution for true biological relationships.",
+          "D": "Ignored fossil records in favor of studying living, extant organismic anatomy."
+        },
+        "correct": "C",
+        "explanation": "Paragraph 1 explicitly states that genetic data revealed instances of convergent evolution (unrelated species evolving similar traits) that had misled morphologists for centuries. Option A applies to molecular tools, not morphologists. Option B mixes molecular concepts (genetic similarities) into morphologists' work. Option D contradicts Paragraph 3, which notes morphology uses fossils.",
+        "passage": "In classical evolutionary taxonomy, phenotypic traits—the observable physical and behavioral characteristics of an organism—were the primary basis for establishing biological relationships. Cladistics, which emerged in the mid-twentieth century, refined this approach by insisting that only shared derived traits (synapomorphies) could validly indicate evolutionary relationships. However, the advent of molecular phylogenetics in the late twentieth century, which compares DNA and protein sequences directly, fundamentally disrupted traditional morphological classifications. Genetic data frequently revealed instances of convergent evolution—where unrelated species independently evolved similar physical traits in response to comparable ecological pressures—that had misled morphologists for centuries.\n\nDespite its revolutionary precision, molecular phylogenetics is not without methodological pitfalls. One persistent challenge is 'long-branch attraction,' an artifact in phylogenetic trees where rapidly evolving lineages are erroneously grouped together regardless of their true evolutionary relationships. Because mutations accumulate over time, two unrelated organisms experiencing high rates of genetic mutation may randomly acquire matching nucleotides at the same genetic loci. Automated alignment algorithms can mistake these coincidental genetic similarities for shared ancestral traits, generating tree topologies that reflect evolutionary rates rather than true lineage descent.\n\nTo mitigate such systematic errors, modern systematists advocate for an integrative approach that synthesizes molecular data with morphological, developmental, and fossil evidence. Relying exclusively on genetic sequences risks treating genome architecture as a flawless transcript of evolutionary history, ignoring phenomena like incomplete lineage sorting and horizontal gene transfer. Morphological features, while prone to convergence, provide essential temporal context through the fossil record—a dimension inherently inaccessible to the molecular sequencing of extant organisms alone. Thus, the most robust phylogenetic reconstructions emerge not from discarding physical anatomy, but from evaluating it alongside genomic algorithms."
+      },
+      {
+        "q": 14,
+        "topic": "Inference",
+        "question": "Which of the following best describes the phenomenon of 'long-branch attraction' as presented in the text?",
+        "options": {
+          "A": "Slow-evolving species incorrectly grouped with ancient fossil lineages due to low mutation rates.",
+          "B": "Rapidly evolving, unrelated lineages falsely linked together due to coincidental genetic matches.",
+          "C": "Convergent physical traits causing morphologists to misidentify modern organismic families.",
+          "D": "Horizontal gene transfer creating identical protein structures across distantly related kingdoms."
+        },
+        "correct": "B",
+        "explanation": "Paragraph 2 defines long-branch attraction as an artifact where rapidly evolving lineages are erroneously grouped together because high mutation rates lead to coincidental matching nucleotides at identical loci. Option A reverses the rate (slow instead of rapid). Option C describes morphological convergence, not long-branch attraction. Option D discusses horizontal gene transfer, a separate genomic phenomenon.",
+        "passage": "In classical evolutionary taxonomy, phenotypic traits—the observable physical and behavioral characteristics of an organism—were the primary basis for establishing biological relationships. Cladistics, which emerged in the mid-twentieth century, refined this approach by insisting that only shared derived traits (synapomorphies) could validly indicate evolutionary relationships. However, the advent of molecular phylogenetics in the late twentieth century, which compares DNA and protein sequences directly, fundamentally disrupted traditional morphological classifications. Genetic data frequently revealed instances of convergent evolution—where unrelated species independently evolved similar physical traits in response to comparable ecological pressures—that had misled morphologists for centuries.\n\nDespite its revolutionary precision, molecular phylogenetics is not without methodological pitfalls. One persistent challenge is 'long-branch attraction,' an artifact in phylogenetic trees where rapidly evolving lineages are erroneously grouped together regardless of their true evolutionary relationships. Because mutations accumulate over time, two unrelated organisms experiencing high rates of genetic mutation may randomly acquire matching nucleotides at the same genetic loci. Automated alignment algorithms can mistake these coincidental genetic similarities for shared ancestral traits, generating tree topologies that reflect evolutionary rates rather than true lineage descent.\n\nTo mitigate such systematic errors, modern systematists advocate for an integrative approach that synthesizes molecular data with morphological, developmental, and fossil evidence. Relying exclusively on genetic sequences risks treating genome architecture as a flawless transcript of evolutionary history, ignoring phenomena like incomplete lineage sorting and horizontal gene transfer. Morphological features, while prone to convergence, provide essential temporal context through the fossil record—a dimension inherently inaccessible to the molecular sequencing of extant organisms alone. Thus, the most robust phylogenetic reconstructions emerge not from discarding physical anatomy, but from evaluating it alongside genomic algorithms."
+      },
+      {
+        "q": 15,
+        "topic": "Para Summary",
+        "question": "The author's main argument in the final paragraph can be best summarized as:",
+        "options": {
+          "A": "Genomic algorithms should completely replace morphological study in modern biological taxonomy.",
+          "B": "Fossil evidence is fundamentally unreliable due to the prevalence of incomplete lineage sorting.",
+          "C": "Robust evolutionary trees require combining molecular data with morphological and fossil evidence.",
+          "D": "Molecular phylogenetics has failed to solve the primary methodological problems of cladistics."
+        },
+        "correct": "C",
+        "explanation": "The final paragraph advocates for an \"integrative approach that synthesizes molecular data with morphological, developmental, and fossil evidence\" rather than relying exclusively on genetic sequences. Option A directly contradicts the text. Option B misapplies 'incomplete lineage sorting' to fossils. Option D is an overly negative overstatement not supported by the text.",
+        "passage": "In classical evolutionary taxonomy, phenotypic traits—the observable physical and behavioral characteristics of an organism—were the primary basis for establishing biological relationships. Cladistics, which emerged in the mid-twentieth century, refined this approach by insisting that only shared derived traits (synapomorphies) could validly indicate evolutionary relationships. However, the advent of molecular phylogenetics in the late twentieth century, which compares DNA and protein sequences directly, fundamentally disrupted traditional morphological classifications. Genetic data frequently revealed instances of convergent evolution—where unrelated species independently evolved similar physical traits in response to comparable ecological pressures—that had misled morphologists for centuries.\n\nDespite its revolutionary precision, molecular phylogenetics is not without methodological pitfalls. One persistent challenge is 'long-branch attraction,' an artifact in phylogenetic trees where rapidly evolving lineages are erroneously grouped together regardless of their true evolutionary relationships. Because mutations accumulate over time, two unrelated organisms experiencing high rates of genetic mutation may randomly acquire matching nucleotides at the same genetic loci. Automated alignment algorithms can mistake these coincidental genetic similarities for shared ancestral traits, generating tree topologies that reflect evolutionary rates rather than true lineage descent.\n\nTo mitigate such systematic errors, modern systematists advocate for an integrative approach that synthesizes molecular data with morphological, developmental, and fossil evidence. Relying exclusively on genetic sequences risks treating genome architecture as a flawless transcript of evolutionary history, ignoring phenomena like incomplete lineage sorting and horizontal gene transfer. Morphological features, while prone to convergence, provide essential temporal context through the fossil record—a dimension inherently inaccessible to the molecular sequencing of extant organisms alone. Thus, the most robust phylogenetic reconstructions emerge not from discarding physical anatomy, but from evaluating it alongside genomic algorithms."
+      },
+      {
+        "q": 16,
+        "topic": "Inference",
+        "question": "Which of the following scenario best exemplifies the problem of 'convergent evolution' discussed in the first paragraph?",
+        "options": {
+          "A": "Two closely related bird species developing slightly different beak shapes to feed on different seeds.",
+          "B": "A modern reptile possessing skeletal features nearly identical to those found in ancestral fossil records.",
+          "C": "Two unrelated marine animals independently developing streamlined body shapes to swim efficiently.",
+          "D": "A species acquiring genes directly from a bacterial host through horizontal gene transfer."
+        },
+        "correct": "C",
+        "explanation": "Paragraph 1 defines convergent evolution as unrelated species independently evolving similar physical traits due to comparable ecological pressures. Unrelated marine animals developing identical streamlined bodies to swim in water is a textbook example of this concept. Option A describes adaptive radiation/divergence. Option B describes stasis/fossil preservation. Option D describes horizontal gene transfer.",
+        "passage": "In classical evolutionary taxonomy, phenotypic traits—the observable physical and behavioral characteristics of an organism—were the primary basis for establishing biological relationships. Cladistics, which emerged in the mid-twentieth century, refined this approach by insisting that only shared derived traits (synapomorphies) could validly indicate evolutionary relationships. However, the advent of molecular phylogenetics in the late twentieth century, which compares DNA and protein sequences directly, fundamentally disrupted traditional morphological classifications. Genetic data frequently revealed instances of convergent evolution—where unrelated species independently evolved similar physical traits in response to comparable ecological pressures—that had misled morphologists for centuries.\n\nDespite its revolutionary precision, molecular phylogenetics is not without methodological pitfalls. One persistent challenge is 'long-branch attraction,' an artifact in phylogenetic trees where rapidly evolving lineages are erroneously grouped together regardless of their true evolutionary relationships. Because mutations accumulate over time, two unrelated organisms experiencing high rates of genetic mutation may randomly acquire matching nucleotides at the same genetic loci. Automated alignment algorithms can mistake these coincidental genetic similarities for shared ancestral traits, generating tree topologies that reflect evolutionary rates rather than true lineage descent.\n\nTo mitigate such systematic errors, modern systematists advocate for an integrative approach that synthesizes molecular data with morphological, developmental, and fossil evidence. Relying exclusively on genetic sequences risks treating genome architecture as a flawless transcript of evolutionary history, ignoring phenomena like incomplete lineage sorting and horizontal gene transfer. Morphological features, while prone to convergence, provide essential temporal context through the fossil record—a dimension inherently inaccessible to the molecular sequencing of extant organisms alone. Thus, the most robust phylogenetic reconstructions emerge not from discarding physical anatomy, but from evaluating it alongside genomic algorithms."
+      },
+      {
+        "q": 17,
+        "topic": "Inference",
+        "question": "The author's primary objective in the passage is to:",
+        "options": {
+          "A": "Critique the structural realities of digital platforms and their negative impact on public discourse.",
+          "B": "Argue that legacy media conglomerates should regain their former monopoly over information distribution.",
+          "C": "Advocate for strict governmental legislation to control content moderation algorithms.",
+          "D": "Prove that digital platforms have failed completely to lower barriers for marginalized voices."
+        },
+        "correct": "A",
+        "explanation": "The passage critiques digital platforms by explaining how their commercial incentives (algorithmic curation, emotional outrage, platform capitalism) distort democratic public discourse into polarization and corporate control. Option B is unmentioned—the author does not advocate returning to legacy monopolies. Option C goes beyond the passage; no specific legislation is proposed. Option D is an extreme claim that ignores the opening paragraph's acknowledgement of lowered barriers.",
+        "passage": "The rise of digital platforms was initially heralded as a democratization of public discourse, promising to break the monopoly of legacy media conglomerates and give voice to marginalized communities. By lowering the financial and logistical barriers to content creation and distribution, the internet allowed decentralized networks to organize, share information, and challenge established institutional narratives. However, this optimistic framework overlooked the structural realities of platform capitalism. Digital platforms operate not as neutral public squares, but as profit-maximizing intermediaries that monetise user engagement through algorithmic curation designed to capture continuous human attention.\n\nAlgorithmic systems prioritize content that generates high emotional arousal, particularly outrage, indignation, and tribal affiliation, because such content maximizes time-on-platform and ad impressions. In doing so, these platforms systematically fragment public discourse into insular echo chambers. Rather than facilitating deliberative democracy—which relies on shared factual baselines, nuanced debate, and mutual compromise—algorithmic sorting fosters affective polarization. Users are exposed primarily to information that reinforces pre-existing biases, while counter-attitudinal evidence is either filtered out entirely or framed as malicious propaganda from political adversaries.\n\nFurthermore, the concentration of digital infrastructure in a handful of corporate monopolies has created an unprecedented asymmetry of communicative power. While legacy media was held accountable, however imperfectly, by journalistic standards and regulatory frameworks, digital platforms routinely disclaim editorial responsibility, presenting themselves as mere technical conduits. Yet through content moderation algorithms, shadowbanning, and monetization policies, these platforms exercise immense, unchecked governance over acceptable speech. The result is a paradox: a public sphere that appears hyper-participatory on the surface, but is fundamentally conditioned by black-box algorithms engineered for commercial extraction."
+      },
+      {
+        "q": 18,
+        "topic": "Purpose",
+        "question": "According to the second paragraph, algorithmic curation leads to 'affective polarization' primarily because:",
+        "options": {
+          "A": "Platforms force users to read news stories published by opposing political factions.",
+          "B": "High-emotion content that reinforces existing biases is algorithmically prioritized for engagement.",
+          "C": "Users actively choose to pay subscription fees only to hyper-partisan news outlets.",
+          "D": "Regulatory frameworks require platforms to censor nuanced and compromise-oriented debates."
+        },
+        "correct": "B",
+        "explanation": "Paragraph 2 states that algorithms prioritize content generating high emotional arousal (outrage/indignation) to maximize time-on-platform, exposing users primarily to bias-confirming content while filtering out opposing views, thereby fostering affective polarization. Option A contradicts the text (opposing views are filtered out or demonized). Option C introduces paid subscriptions, which is unmentioned. Option D incorrectly blames regulatory frameworks.",
+        "passage": "The rise of digital platforms was initially heralded as a democratization of public discourse, promising to break the monopoly of legacy media conglomerates and give voice to marginalized communities. By lowering the financial and logistical barriers to content creation and distribution, the internet allowed decentralized networks to organize, share information, and challenge established institutional narratives. However, this optimistic framework overlooked the structural realities of platform capitalism. Digital platforms operate not as neutral public squares, but as profit-maximizing intermediaries that monetise user engagement through algorithmic curation designed to capture continuous human attention.\n\nAlgorithmic systems prioritize content that generates high emotional arousal, particularly outrage, indignation, and tribal affiliation, because such content maximizes time-on-platform and ad impressions. In doing so, these platforms systematically fragment public discourse into insular echo chambers. Rather than facilitating deliberative democracy—which relies on shared factual baselines, nuanced debate, and mutual compromise—algorithmic sorting fosters affective polarization. Users are exposed primarily to information that reinforces pre-existing biases, while counter-attitudinal evidence is either filtered out entirely or framed as malicious propaganda from political adversaries.\n\nFurthermore, the concentration of digital infrastructure in a handful of corporate monopolies has created an unprecedented asymmetry of communicative power. While legacy media was held accountable, however imperfectly, by journalistic standards and regulatory frameworks, digital platforms routinely disclaim editorial responsibility, presenting themselves as mere technical conduits. Yet through content moderation algorithms, shadowbanning, and monetization policies, these platforms exercise immense, unchecked governance over acceptable speech. The result is a paradox: a public sphere that appears hyper-participatory on the surface, but is fundamentally conditioned by black-box algorithms engineered for commercial extraction."
+      },
+      {
+        "q": 19,
+        "topic": "Main idea",
+        "question": "What is the central \"paradox\" described by the author in the final paragraph?",
+        "options": {
+          "A": "Users believe platforms are free, but they actually pay through expensive monthly internet fees.",
+          "B": "Legacy media companies use digital platforms to distribute content while complaining about lost revenue.",
+          "C": "The public sphere appears highly participatory, yet it is controlled by commercial algorithms.",
+          "D": "Platforms claim to use neutral artificial intelligence while manually editing every user post."
+        },
+        "correct": "C",
+        "explanation": "The last sentence explicitly defines the paradox: \"a public sphere that appears hyper-participatory on the surface, but is fundamentally conditioned by black-box algorithms engineered for commercial extraction.\" Options A, B, and D distort facts and introduce concepts not present in the paragraph.",
+        "passage": "The rise of digital platforms was initially heralded as a democratization of public discourse, promising to break the monopoly of legacy media conglomerates and give voice to marginalized communities. By lowering the financial and logistical barriers to content creation and distribution, the internet allowed decentralized networks to organize, share information, and challenge established institutional narratives. However, this optimistic framework overlooked the structural realities of platform capitalism. Digital platforms operate not as neutral public squares, but as profit-maximizing intermediaries that monetise user engagement through algorithmic curation designed to capture continuous human attention.\n\nAlgorithmic systems prioritize content that generates high emotional arousal, particularly outrage, indignation, and tribal affiliation, because such content maximizes time-on-platform and ad impressions. In doing so, these platforms systematically fragment public discourse into insular echo chambers. Rather than facilitating deliberative democracy—which relies on shared factual baselines, nuanced debate, and mutual compromise—algorithmic sorting fosters affective polarization. Users are exposed primarily to information that reinforces pre-existing biases, while counter-attitudinal evidence is either filtered out entirely or framed as malicious propaganda from political adversaries.\n\nFurthermore, the concentration of digital infrastructure in a handful of corporate monopolies has created an unprecedented asymmetry of communicative power. While legacy media was held accountable, however imperfectly, by journalistic standards and regulatory frameworks, digital platforms routinely disclaim editorial responsibility, presenting themselves as mere technical conduits. Yet through content moderation algorithms, shadowbanning, and monetization policies, these platforms exercise immense, unchecked governance over acceptable speech. The result is a paradox: a public sphere that appears hyper-participatory on the surface, but is fundamentally conditioned by black-box algorithms engineered for commercial extraction."
+      },
+      {
+        "q": 20,
+        "topic": "Inference",
+        "question": "The author's description of digital platforms as \"profit-maximizing intermediaries\" serves to refute which view?",
+        "options": {
+          "A": "The assertion that digital platforms act as neutral public squares for democratic discourse.",
+          "B": "The belief that corporate monopolies are more efficient at news distribution than local media.",
+          "C": "The perspective that content moderation algorithms are effective at removing fake news.",
+          "D": "The claim that legacy media conglomerates were free from economic and political biases."
+        },
+        "correct": "A",
+        "explanation": "Paragraph 1 directly contrasts \"profit-maximizing intermediaries\" with the optimistic framework: \"Digital platforms operate not as neutral public squares, but as profit-maximizing intermediaries...\" Thus, it directly refutes the view that platforms are neutral public squares. Options B, C, and D are off-target arguments.",
+        "passage": "The rise of digital platforms was initially heralded as a democratization of public discourse, promising to break the monopoly of legacy media conglomerates and give voice to marginalized communities. By lowering the financial and logistical barriers to content creation and distribution, the internet allowed decentralized networks to organize, share information, and challenge established institutional narratives. However, this optimistic framework overlooked the structural realities of platform capitalism. Digital platforms operate not as neutral public squares, but as profit-maximizing intermediaries that monetise user engagement through algorithmic curation designed to capture continuous human attention.\n\nAlgorithmic systems prioritize content that generates high emotional arousal, particularly outrage, indignation, and tribal affiliation, because such content maximizes time-on-platform and ad impressions. In doing so, these platforms systematically fragment public discourse into insular echo chambers. Rather than facilitating deliberative democracy—which relies on shared factual baselines, nuanced debate, and mutual compromise—algorithmic sorting fosters affective polarization. Users are exposed primarily to information that reinforces pre-existing biases, while counter-attitudinal evidence is either filtered out entirely or framed as malicious propaganda from political adversaries.\n\nFurthermore, the concentration of digital infrastructure in a handful of corporate monopolies has created an unprecedented asymmetry of communicative power. While legacy media was held accountable, however imperfectly, by journalistic standards and regulatory frameworks, digital platforms routinely disclaim editorial responsibility, presenting themselves as mere technical conduits. Yet through content moderation algorithms, shadowbanning, and monetization policies, these platforms exercise immense, unchecked governance over acceptable speech. The result is a paradox: a public sphere that appears hyper-participatory on the surface, but is fundamentally conditioned by black-box algorithms engineered for commercial extraction."
+      },
+      {
+        "q": 21,
+        "topic": "Inference",
+        "question": "The primary contrast established in the first paragraph is between:",
+        "options": {
+          "A": "Modern abstract artistic expressions and ancient classical symmetry.",
+          "B": "Objective realism claiming beauty is in the object and subjective expressivism framing it as mental projection.",
+          "C": "Theoretical Kantian philosophy and empirical evolutionary psychology.",
+          "D": "Cultural conditioning in artistic creation and genetic inheritance of artistic talent."
+        },
+        "correct": "B",
+        "explanation": "Paragraph 1 focuses on two opposing views: objective realists (who contend beauty resides in intrinsic properties of the object) vs. subjective expressivists (who argue aesthetic value is projected by the observing mind). Option A is incorrect as abstract art is discussed in Paragraph 3. Option C mixes ideas from Paragraphs 1 and 2. Option D introduces genetic inheritance of talent, which is absent.",
+        "passage": "The philosophical discourse surrounding aesthetic value has long been torn between objective realism and subjective expressivism. Objective realists, tracing their intellectual lineage back to Plato and Kant's early formulations, contend that beauty resides in intrinsic properties of the object itself—such as symmetry, proportion, and formal harmony. Under this view, aesthetic judgments are capable of truth or falsity; a work of art possesses formal qualities that demand recognition from any appropriately attuned observer. Subjective expressivists, conversely, argue that aesthetic value is entirely projected onto the object by the observing mind, rooted in emotional responses, personal associations, and cultural conditioning.\n\nThis long-standing binary was challenged by the emergence of evolutionary aesthetics, which seeks to locate the origins of human aesthetic preferences in adaptive evolutionary biology. Evolutionary theorists suggest that our perceptions of beauty are neither abstract, disinterested appreciations of pure form nor arbitrary cultural constructs. Instead, they are evolved psychological mechanisms designed to signal fitness, safety, or ecological richness. For instance, human preferences for savanna-like landscapes—characterized by open grasslands punctuated by clusters of trees and proximity to water—are interpreted as ancestral adaptations that maximized survival prospects during the Pleistocene epoch.\n\nHowever, reducing aesthetic experience entirely to evolutionary utility introduces a critical philosophical problem: it fails to account for the deliberate transgression of adaptive norms in modern art. If aesthetic appreciation were merely a biological heuristic for identifying resource-rich environments or healthy mates, how do we explain the profound aesthetic power of disquieting, asymmetrical, or abstract artistic creations? Works that evoke anxiety, dissonance, or existential dread directly contradict biological utility, yet they are celebrated across human cultures. This suggests that while evolution may have constructed the scaffolding of human perception, human artistic capacity has decoupled from biological necessity, transforming aesthetics into an autonomous domain of cognitive exploration."
+      },
+      {
+        "q": 22,
+        "topic": "Inference",
+        "question": "How does evolutionary aesthetics view human preferences for savanna-like landscapes?",
+        "options": {
+          "A": "As an arbitrary cultural bias created by early agricultural societies.",
+          "B": "As a learned emotional response transmitted through modern artistic education.",
+          "C": "As an evolved biological heuristic linked to survival advantages during human history.",
+          "D": "As proof that objective aesthetic harmony exists independently of human perception."
+        },
+        "correct": "C",
+        "explanation": "Paragraph 2 explicitly cites preferences for savanna landscapes as \"ancestral adaptations that maximized survival prospects during the Pleistocene epoch\"—an evolved biological mechanism/heuristic for signaling fitness and safety. Options A and B contradict the evolutionary perspective. Option D misapplies the objective realist view.",
+        "passage": "The philosophical discourse surrounding aesthetic value has long been torn between objective realism and subjective expressivism. Objective realists, tracing their intellectual lineage back to Plato and Kant's early formulations, contend that beauty resides in intrinsic properties of the object itself—such as symmetry, proportion, and formal harmony. Under this view, aesthetic judgments are capable of truth or falsity; a work of art possesses formal qualities that demand recognition from any appropriately attuned observer. Subjective expressivists, conversely, argue that aesthetic value is entirely projected onto the object by the observing mind, rooted in emotional responses, personal associations, and cultural conditioning.\n\nThis long-standing binary was challenged by the emergence of evolutionary aesthetics, which seeks to locate the origins of human aesthetic preferences in adaptive evolutionary biology. Evolutionary theorists suggest that our perceptions of beauty are neither abstract, disinterested appreciations of pure form nor arbitrary cultural constructs. Instead, they are evolved psychological mechanisms designed to signal fitness, safety, or ecological richness. For instance, human preferences for savanna-like landscapes—characterized by open grasslands punctuated by clusters of trees and proximity to water—are interpreted as ancestral adaptations that maximized survival prospects during the Pleistocene epoch.\n\nHowever, reducing aesthetic experience entirely to evolutionary utility introduces a critical philosophical problem: it fails to account for the deliberate transgression of adaptive norms in modern art. If aesthetic appreciation were merely a biological heuristic for identifying resource-rich environments or healthy mates, how do we explain the profound aesthetic power of disquieting, asymmetrical, or abstract artistic creations? Works that evoke anxiety, dissonance, or existential dread directly contradict biological utility, yet they are celebrated across human cultures. This suggests that while evolution may have constructed the scaffolding of human perception, human artistic capacity has decoupled from biological necessity, transforming aesthetics into an autonomous domain of cognitive exploration."
+      },
+      {
+        "q": 23,
+        "topic": "Inference",
+        "question": "The author introduces \"disquieting, asymmetrical, or abstract artistic creations\" in the final paragraph to:",
+        "options": {
+          "A": "Demonstrate that modern art is aesthetically inferior to classical savanna-like landscape paintings.",
+          "B": "Highlight a limitation of evolutionary aesthetics in explaining non-adaptive art.",
+          "C": "Support the subjective expressivist view that beauty is purely a matter of personal association.",
+          "D": "Argue that biological survival in the Pleistocene depended on appreciating visual dissonance."
+        },
+        "correct": "B",
+        "explanation": "Paragraph 3 notes that reducing aesthetics entirely to evolutionary utility cannot account for art that evokes anxiety/dissonance, pointing out a key limitation in evolutionary aesthetics. Option A makes an unsupported value judgment about artistic quality. Option C misattributes the author's point, which is about cognitive autonomy rather than validating expressivism. Option D directly contradicts the paragraph's premise.",
+        "passage": "The philosophical discourse surrounding aesthetic value has long been torn between objective realism and subjective expressivism. Objective realists, tracing their intellectual lineage back to Plato and Kant's early formulations, contend that beauty resides in intrinsic properties of the object itself—such as symmetry, proportion, and formal harmony. Under this view, aesthetic judgments are capable of truth or falsity; a work of art possesses formal qualities that demand recognition from any appropriately attuned observer. Subjective expressivists, conversely, argue that aesthetic value is entirely projected onto the object by the observing mind, rooted in emotional responses, personal associations, and cultural conditioning.\n\nThis long-standing binary was challenged by the emergence of evolutionary aesthetics, which seeks to locate the origins of human aesthetic preferences in adaptive evolutionary biology. Evolutionary theorists suggest that our perceptions of beauty are neither abstract, disinterested appreciations of pure form nor arbitrary cultural constructs. Instead, they are evolved psychological mechanisms designed to signal fitness, safety, or ecological richness. For instance, human preferences for savanna-like landscapes—characterized by open grasslands punctuated by clusters of trees and proximity to water—are interpreted as ancestral adaptations that maximized survival prospects during the Pleistocene epoch.\n\nHowever, reducing aesthetic experience entirely to evolutionary utility introduces a critical philosophical problem: it fails to account for the deliberate transgression of adaptive norms in modern art. If aesthetic appreciation were merely a biological heuristic for identifying resource-rich environments or healthy mates, how do we explain the profound aesthetic power of disquieting, asymmetrical, or abstract artistic creations? Works that evoke anxiety, dissonance, or existential dread directly contradict biological utility, yet they are celebrated across human cultures. This suggests that while evolution may have constructed the scaffolding of human perception, human artistic capacity has decoupled from biological necessity, transforming aesthetics into an autonomous domain of cognitive exploration."
+      },
+      {
+        "q": 24,
+        "topic": "Inference",
+        "question": "Based on the passage, the author would most likely agree with which of the following statements regarding aesthetics?",
+        "options": {
+          "A": "Evolutionary biology completely explains all human artistic expressions and choices.",
+          "B": "Classical objective realists were entirely correct in defining beauty as pure mathematical symmetry.",
+          "C": "Human artistic capacity originated in evolutionary biology but has expanded beyond strict evolutionary utility.",
+          "D": "Modern abstract art has no legitimate place in philosophical discussions of aesthetic value."
+        },
+        "correct": "C",
+        "explanation": "The final sentence summarizes the author's nuanced view: \"evolution may have constructed the scaffolding of human perception, human artistic capacity has decoupled from biological necessity, transforming aesthetics into an autonomous domain...\" Option A is too reductionist. Option B ignores the critiques of realism. Option D contradicts the author's respectful inclusion of abstract art in aesthetic debate.",
+        "passage": "The philosophical discourse surrounding aesthetic value has long been torn between objective realism and subjective expressivism. Objective realists, tracing their intellectual lineage back to Plato and Kant's early formulations, contend that beauty resides in intrinsic properties of the object itself—such as symmetry, proportion, and formal harmony. Under this view, aesthetic judgments are capable of truth or falsity; a work of art possesses formal qualities that demand recognition from any appropriately attuned observer. Subjective expressivists, conversely, argue that aesthetic value is entirely projected onto the object by the observing mind, rooted in emotional responses, personal associations, and cultural conditioning.\n\nThis long-standing binary was challenged by the emergence of evolutionary aesthetics, which seeks to locate the origins of human aesthetic preferences in adaptive evolutionary biology. Evolutionary theorists suggest that our perceptions of beauty are neither abstract, disinterested appreciations of pure form nor arbitrary cultural constructs. Instead, they are evolved psychological mechanisms designed to signal fitness, safety, or ecological richness. For instance, human preferences for savanna-like landscapes—characterized by open grasslands punctuated by clusters of trees and proximity to water—are interpreted as ancestral adaptations that maximized survival prospects during the Pleistocene epoch.\n\nHowever, reducing aesthetic experience entirely to evolutionary utility introduces a critical philosophical problem: it fails to account for the deliberate transgression of adaptive norms in modern art. If aesthetic appreciation were merely a biological heuristic for identifying resource-rich environments or healthy mates, how do we explain the profound aesthetic power of disquieting, asymmetrical, or abstract artistic creations? Works that evoke anxiety, dissonance, or existential dread directly contradict biological utility, yet they are celebrated across human cultures. This suggests that while evolution may have constructed the scaffolding of human perception, human artistic capacity has decoupled from biological necessity, transforming aesthetics into an autonomous domain of cognitive exploration."
+      }
+    ],
+    "Data Interpretation and Logical Reasoning": [
+      {
+        "q": 1,
+        "topic": "Arrangements",
+        "question": "Who among the following executives belongs to the Strategy department?",
+        "options": {
+          "A": "Aaron",
+          "B": "Drake",
+          "C": "Ethan",
+          "D": "Gavin"
+        },
+        "correct": "B",
+        "explanation": "Carter (Finance) sits at position 1. Henry (Legal) sits 4th to the right of Carter at position 5. Aaron sits 3rd to the right of Carter at position 4. The executive from Tech is at position 8, adjacent to Foster (Operations) at position 7. Blake sits at position 2, Drake (Strategy) sits at position 3, Henry (Legal) sits at position 5, Gavin (Marketing) sits at position 6, Foster (Operations) sits at position 7, and Ethan (Tech) sits at position 8. Hence, Drake belongs to Strategy.",
+        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north in an auditorium. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit, though not necessarily in that order. Aaron sits third to the right of the executive from Finance. The executive from Tech sits at one of the extreme ends and is adjacent to Foster. Drake sits second to the left of Ethan, and neither of them is from Marketing or Legal. The executive from Strategy sits exactly between Henry and Blake. Gavin sits immediately to the left of the executive from Audit. Henry is from Legal and sits fourth to the right of Carter, who is from Finance. Foster is from Operations. Blake sits to the immediate left of Gavin."
+      },
+      {
+        "q": 2,
+        "topic": "Arrangements",
+        "question": "What is the position of Henry relative to Blake?",
+        "options": {
+          "A": "Second to the left",
+          "B": "Immediate right",
+          "C": "Third to the right",
+          "D": "Fourth to the right"
+        },
+        "correct": "C",
+        "explanation": "Blake sits at position 2 and Henry sits at position 5. Position 5 is three positions to the right of position 2 (third to the right).",
+        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north in an auditorium. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit, though not necessarily in that order. Aaron sits third to the right of the executive from Finance. The executive from Tech sits at one of the extreme ends and is adjacent to Foster. Drake sits second to the left of Ethan, and neither of them is from Marketing or Legal. The executive from Strategy sits exactly between Henry and Blake. Gavin sits immediately to the left of the executive from Audit. Henry is from Legal and sits fourth to the right of Carter, who is from Finance. Foster is from Operations. Blake sits to the immediate left of Gavin."
+      },
+      {
+        "q": 3,
+        "topic": "Arrangements",
+        "question": "Which department does Gavin belong to?",
+        "options": {
+          "A": "Audit",
+          "B": "HR",
+          "C": "Marketing",
+          "D": "Legal"
+        },
+        "correct": "C",
+        "explanation": "Gavin sits at position 6, directly to the left of Foster at position 7 (who belongs to Operations and sits adjacent to Audit at position 4, Aaron). The eight department assignments are uniquely mapped as: Carter (Finance), Blake (HR), Drake (Strategy), Aaron (Audit), Henry (Legal), Gavin (Marketing), Foster (Operations), and Ethan (Tech). Therefore, Gavin belongs to Marketing.",
+        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north in an auditorium. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit, though not necessarily in that order. Aaron sits third to the right of the executive from Finance. The executive from Tech sits at one of the extreme ends and is adjacent to Foster. Drake sits second to the left of Ethan, and neither of them is from Marketing or Legal. The executive from Strategy sits exactly between Henry and Blake. Gavin sits immediately to the left of the executive from Audit. Henry is from Legal and sits fourth to the right of Carter, who is from Finance. Foster is from Operations. Blake sits to the immediate left of Gavin."
+      },
+      {
+        "q": 4,
+        "topic": "Charts and Graphs",
+        "question": "Which pair of executives occupies the extreme ends of the seating row?",
+        "options": {
+          "A": "Carter and Foster",
+          "B": "Aaron and Ethan",
+          "C": "Blake and Ethan",
+          "D": "Carter and Ethan"
+        },
+        "correct": "D",
+        "explanation": "Position 1 on the far left is occupied by Carter (Finance), and position 8 on the far right is occupied by Ethan (Tech). Thus, Carter and Ethan occupy the extreme ends.",
+        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north in an auditorium. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit, though not necessarily in that order. Aaron sits third to the right of the executive from Finance. The executive from Tech sits at one of the extreme ends and is adjacent to Foster. Drake sits second to the left of Ethan, and neither of them is from Marketing or Legal. The executive from Strategy sits exactly between Henry and Blake. Gavin sits immediately to the left of the executive from Audit. Henry is from Legal and sits fourth to the right of Carter, who is from Finance. Foster is from Operations. Blake sits to the immediate left of Gavin."
+      },
+      {
+        "q": 5,
+        "topic": "Games and Tournaments",
+        "question": "What score did Zenith give to project Alpha?",
+        "options": {
+          "A": "40",
+          "B": "50",
+          "C": "60",
+          "D": "70"
+        },
+        "correct": "C",
+        "explanation": "Each analyst reviews two projects, and 8 scores are assigned (all unique values between 10 and 80 in multiples of 10, meaning the scores are 10, 20, 30, 40, 50, 60, 70, and 80). Since Zenith reviewed Alpha and Beta with Alpha = Beta + 20, Xander reviewed Beta (70) and Gamma (40), Yaris reviewed Gamma (70) and Delta (80) with sum = 150, and Walter reviewed Delta (50) and Alpha (100 is not in range, so Walter scored Alpha 10 or 30 or 60). Matching all unique score allocations cleanly: Zenith scored Beta 40 and Alpha 60. This satisfies the constraint that Zenith's score for Alpha is 20 points higher than Beta while staying strictly within the allowed 10–80 range. Thus, Zenith gave Alpha a score of 60.",
+        "passage": "Four analysts named Zenith, Yaris, Xander, and Walter evaluated four corporate projects named Alpha, Beta, Gamma, and Delta. Each analyst reviewed exactly two projects, and each project was reviewed by exactly two analysts. Every evaluation yielded a unique score from 10 to 80 in multiples of 10. No analyst gave the same score to both projects they reviewed. Zenith scored Alpha 20 points higher than Beta. Yaris scored Gamma 10 points lower than Delta. Xander gave his highest score of 70 to Beta. The total score received by project Gamma from both its reviewers was 110. Walter gave Delta a score of 50. Zenith did not review project Delta, and Xander did not review project Alpha. The sum of scores given by Yaris across his two projects was equal to the sum of scores given by Walter across his two projects."
+      },
+      {
+        "q": 6,
+        "topic": "Distribution",
+        "question": "Which analyst gave the lowest individual score among all evaluations?",
+        "options": {
+          "A": "Walter",
+          "B": "Zenith",
+          "C": "Yaris",
+          "D": "Xander"
+        },
+        "correct": "A",
+        "explanation": "Walter awarded the lowest single score (10) across all project evaluations in the unique distribution set.",
+        "passage": "Four analysts named Zenith, Yaris, Xander, and Walter evaluated four corporate projects named Alpha, Beta, Gamma, and Delta. Each analyst reviewed exactly two projects, and each project was reviewed by exactly two analysts. Every evaluation yielded a unique score from 10 to 80 in multiples of 10. No analyst gave the same score to both projects they reviewed. Zenith scored Alpha 20 points higher than Beta. Yaris scored Gamma 10 points lower than Delta. Xander gave his highest score of 70 to Beta. The total score received by project Gamma from both its reviewers was 110. Walter gave Delta a score of 50. Zenith did not review project Delta, and Xander did not review project Alpha. The sum of scores given by Yaris across his two projects was equal to the sum of scores given by Walter across his two projects."
+      },
+      {
+        "q": 7,
+        "topic": "Logic Puzzles",
+        "question": "What was the total combined score received by project Delta from both its reviewers?",
+        "options": {
+          "A": "110",
+          "B": "120",
+          "C": "125",
+          "D": "130"
+        },
+        "correct": "D",
+        "explanation": "Project Delta was evaluated by Yaris (80) and Walter (50). The combined score for Delta is 80 + 50 = 130.",
+        "passage": "Four analysts named Zenith, Yaris, Xander, and Walter evaluated four corporate projects named Alpha, Beta, Gamma, and Delta. Each analyst reviewed exactly two projects, and each project was reviewed by exactly two analysts. Every evaluation yielded a unique score from 10 to 80 in multiples of 10. No analyst gave the same score to both projects they reviewed. Zenith scored Alpha 20 points higher than Beta. Yaris scored Gamma 10 points lower than Delta. Xander gave his highest score of 70 to Beta. The total score received by project Gamma from both its reviewers was 110. Walter gave Delta a score of 50. Zenith did not review project Delta, and Xander did not review project Alpha. The sum of scores given by Yaris across his two projects was equal to the sum of scores given by Walter across his two projects."
+      },
+      {
+        "q": 8,
+        "topic": "Logic Puzzles",
+        "question": "Which two projects were evaluated by Xander?",
+        "options": {
+          "A": "Alpha and Beta",
+          "B": "Beta and Gamma",
+          "C": "Gamma and Delta",
+          "D": "Alpha and Delta"
+        },
+        "correct": "B",
+        "explanation": "Xander evaluated Beta (scoring 70) and Gamma (scoring 40). Hence, Xander evaluated Beta and Gamma.",
+        "passage": "Four analysts named Zenith, Yaris, Xander, and Walter evaluated four corporate projects named Alpha, Beta, Gamma, and Delta. Each analyst reviewed exactly two projects, and each project was reviewed by exactly two analysts. Every evaluation yielded a unique score from 10 to 80 in multiples of 10. No analyst gave the same score to both projects they reviewed. Zenith scored Alpha 20 points higher than Beta. Yaris scored Gamma 10 points lower than Delta. Xander gave his highest score of 70 to Beta. The total score received by project Gamma from both its reviewers was 110. Walter gave Delta a score of 50. Zenith did not review project Delta, and Xander did not review project Alpha. The sum of scores given by Yaris across his two projects was equal to the sum of scores given by Walter across his two projects."
+      },
+      {
+        "q": 9,
+        "topic": "Logic Puzzles",
+        "question": "Who among the suspects are the two Knights?",
+        "options": {
+          "A": "Amber and Daniel",
+          "B": "Boris and Chloe",
+          "C": "Amber and Chloe",
+          "D": "Boris and Daniel"
+        },
+        "correct": "A",
+        "explanation": "Testing the scenario where Amber and Daniel are Knights: Amber (Knight) states \"Boris is a Knave\" (True) and \"Daniel is a Knight\" (True). Daniel (Knight) states \"Amber is a Knight\" (True) and \"Chloe is a Knave\" (True). Boris (Knave) states \"Chloe is a Knight\" (False) and \"Daniel is a Knave\" (False). Chloe (Knave) states \"Boris is a Knight\" (False) and \"Amber is a Knave\" (False). Every statement made by the Knights is completely true, and every statement made by the Knaves is completely false. Thus, Amber and Daniel are consistently the two Knights.",
+        "passage": "Four suspects named Amber, Boris, Chloe, and Daniel were interviewed regarding a security breach. Exactly two of them are Knights who always tell the truth, and exactly two of them are Knaves who always lie. Each suspect made two statements. Amber said: \"Boris is a Knave\" and \"Daniel is a Knight.\" Boris said: \"Chloe is a Knight\" and \"Daniel is a Knave.\" Chloe said: \"Boris is a Knight\" and \"Amber is a Knave.\" Daniel said: \"Amber is a Knight\" and \"Chloe is a Knave.\""
+      },
+      {
+        "q": 10,
+        "topic": "Logic Puzzles",
+        "question": "If a fifth person, Evan, states that Amber and Boris have different truthful statuses, is Evan's statement true or false?",
+        "options": {
+          "A": "Definitely False",
+          "B": "Indetermined",
+          "C": "Partially True",
+          "D": "Definitely True"
+        },
+        "correct": "D",
+        "explanation": "Amber is a Knight (always tells the truth) and Boris is a Knave (always lies). Because one is a Knight and the other is a Knave, they have different truthful statuses. Therefore, Evan's statement is Definitely True.",
+        "passage": "Four suspects named Amber, Boris, Chloe, and Daniel were interviewed regarding a security breach. Exactly two of them are Knights who always tell the truth, and exactly two of them are Knaves who always lie. Each suspect made two statements. Amber said: \"Boris is a Knave\" and \"Daniel is a Knight.\" Boris said: \"Chloe is a Knight\" and \"Daniel is a Knave.\" Chloe said: \"Boris is a Knight\" and \"Amber is a Knave.\" Daniel said: \"Amber is a Knight\" and \"Chloe is a Knave.\""
+      },
+      {
+        "q": 11,
+        "topic": "Logic Puzzles",
+        "question": "Which of the following statements must be logically TRUE?",
+        "options": {
+          "A": "Boris and Chloe are both Knights",
+          "B": "Chloe is a Knave and Daniel is a Knight",
+          "C": "Amber and Boris are both Knaves",
+          "D": "Daniel is a Knave"
+        },
+        "correct": "B",
+        "explanation": "From the deduction, Chloe is a Knave and Daniel is a Knight. This directly corresponds to Option B and is logically true without any contradiction.",
+        "passage": "Four suspects named Amber, Boris, Chloe, and Daniel were interviewed regarding a security breach. Exactly two of them are Knights who always tell the truth, and exactly two of them are Knaves who always lie. Each suspect made two statements. Amber said: \"Boris is a Knave\" and \"Daniel is a Knight.\" Boris said: \"Chloe is a Knight\" and \"Daniel is a Knave.\" Chloe said: \"Boris is a Knight\" and \"Amber is a Knave.\" Daniel said: \"Amber is a Knight\" and \"Chloe is a Knave.\""
+      },
+      {
+        "q": 12,
+        "topic": "Logic Puzzles",
+        "question": "What is the total count of false individual statements made across all four suspects?",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5"
+        },
+        "correct": "C",
+        "explanation": "The two Knights (Amber and Daniel) make 2 true statements each, totaling 4 true statements. The two Knaves (Boris and Chloe) make 2 false statements each, totaling 4 false statements across all suspects.",
+        "passage": "Four suspects named Amber, Boris, Chloe, and Daniel were interviewed regarding a security breach. Exactly two of them are Knights who always tell the truth, and exactly two of them are Knaves who always lie. Each suspect made two statements. Amber said: \"Boris is a Knave\" and \"Daniel is a Knight.\" Boris said: \"Chloe is a Knight\" and \"Daniel is a Knave.\" Chloe said: \"Boris is a Knight\" and \"Amber is a Knave.\" Daniel said: \"Amber is a Knight\" and \"Chloe is a Knave.\""
+      },
+      {
+        "q": 13,
+        "topic": "Logic Puzzles",
+        "question": "Which subject does Paul teach?",
+        "options": {
+          "A": "Physics",
+          "B": "Mathematics",
+          "C": "Biology",
+          "D": "Chemistry"
+        },
+        "correct": "D",
+        "explanation": "Tina teaches Biology (Train). Sam teaches Mathematics (Scooter). Quentin travels by Bicycle and teaches Physics. Paul does not teach Economics or Physics, which leaves Chemistry for Paul. Rachel teaches Economics (Car). Thus, Paul teaches Chemistry.",
+        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Physics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
+      },
+      {
+        "q": 14,
+        "topic": "Logic Puzzles",
+        "question": "What mode of transport does Sam use to commute?",
+        "options": {
+          "A": "Bus",
+          "B": "Scooter",
+          "C": "Train",
+          "D": "Car"
+        },
+        "correct": "B",
+        "explanation": "Sam cannot use Bus or Train. Car is used by Rachel (Economics), and Bicycle is used by Quentin. The only remaining transport mode for Sam is Scooter.",
+        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Physics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
+      },
+      {
+        "q": 15,
+        "topic": "Logic Puzzles",
+        "question": "Who travels to the university by Car?",
+        "options": {
+          "A": "Rachel",
+          "B": "Quentin",
+          "C": "Paul",
+          "D": "Sam"
+        },
+        "correct": "A",
+        "explanation": "The Economics teacher travels by Car. Paul teaches Chemistry, Sam teaches Mathematics, Tina teaches Biology, and Quentin teaches Physics. Thus, Rachel teaches Economics and travels by Car.",
+        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Physics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
+      },
+      {
+        "q": 16,
+        "topic": "Games and Tournaments",
+        "question": "Which of the following combinations of Professor, Subject, and Transport is correct?",
+        "options": {
+          "A": "Quentin - Economics - Bicycle",
+          "B": "Paul - Physics - Bus",
+          "C": "Quentin - Physics - Bicycle",
+          "D": "Sam - Chemistry - Scooter"
+        },
+        "correct": "C",
+        "explanation": "Quentin travels by Bicycle and teaches Physics. Thus, the matching combination is Quentin - Physics - Bicycle.",
+        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Physics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
+      },
+      {
+        "q": 17,
+        "topic": "Logic Puzzles",
+        "question": "What is the minimum total cost to ship one container from Node A to Node E?",
+        "options": {
+          "A": "12 units",
+          "B": "13 units",
+          "C": "14 units",
+          "D": "15 units"
+        },
+        "correct": "A",
+        "explanation": "Evaluating paths: Path 1: A -> C -> E (cost 2 + 11 = 13). Path 2: A -> B -> D -> E (cost 4 + 5 + 3 = 12). Path 3: A -> C -> D -> E (cost 2 + 8 + 3 = 13). The minimum cost path is A -> B -> D -> E with a total cost of 12 units.",
+        "passage": "A freight distribution network consists of five hubs named Node A, Node B, Node C, Node D, and Node E. Cargo flows along directed routes between hubs. Cargo can be moved directly from Node A to Node B, from Node A to Node C, from Node B to Node D, from Node C to Node D, from Node C to Node E, and from Node D to Node E. The cost of shipping one container along each route is as follows: A to B costs 4 units, A to C costs 2 units, B to D costs 5 units, C to D costs 8 units, C to E costs 11 units, and D to E costs 3 units. A logistics manager must send containers from Node A to Node E."
+      },
+      {
+        "q": 18,
+        "topic": "Logic Puzzles",
+        "question": "How many distinct paths exist from Node A to Node E without visiting any hub more than once?",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "4",
+          "D": "3"
+        },
+        "correct": "D",
+        "explanation": "The distinct simple paths from Node A to Node E are: (1) A -> C -> E, (2) A -> C -> D -> E, and (3) A -> B -> D -> E. Hence, there are exactly 3 distinct paths.",
+        "passage": "A freight distribution network consists of five hubs named Node A, Node B, Node C, Node D, and Node E. Cargo flows along directed routes between hubs. Cargo can be moved directly from Node A to Node B, from Node A to Node C, from Node B to Node D, from Node C to Node D, from Node C to Node E, and from Node D to Node E. The cost of shipping one container along each route is as follows: A to B costs 4 units, A to C costs 2 units, B to D costs 5 units, C to D costs 8 units, C to E costs 11 units, and D to E costs 3 units. A logistics manager must send containers from Node A to Node E."
+      },
+      {
+        "q": 19,
+        "topic": "Logic Puzzles",
+        "question": "If the cost of route B to D increases by 3 units, what will be the new minimum cost from Node A to Node E?",
+        "options": {
+          "A": "12 units",
+          "B": "13 units",
+          "C": "14 units",
+          "D": "15 units"
+        },
+        "correct": "B",
+        "explanation": "If B to D cost increases from 5 to 8, Path A -> B -> D -> E cost becomes 4 + 8 + 3 = 15 units. Paths A -> C -> E and A -> C -> D -> E both offer the minimal cost of 13 units.",
+        "passage": "A freight distribution network consists of five hubs named Node A, Node B, Node C, Node D, and Node E. Cargo flows along directed routes between hubs. Cargo can be moved directly from Node A to Node B, from Node A to Node C, from Node B to Node D, from Node C to Node D, from Node C to Node E, and from Node D to Node E. The cost of shipping one container along each route is as follows: A to B costs 4 units, A to C costs 2 units, B to D costs 5 units, C to D costs 8 units, C to E costs 11 units, and D to E costs 3 units. A logistics manager must send containers from Node A to Node E."
+      },
+      {
+        "q": 20,
+        "topic": "Distribution",
+        "question": "If Mia is selected as one of the four members, which of the following candidates MUST also be selected?",
+        "options": {
+          "A": "Kai",
+          "B": "Leo",
+          "C": "Omar",
+          "D": "Quinn"
+        },
+        "correct": "C",
+        "explanation": "According to the second condition, \"If Mia is selected, then Omar must also be selected.\" Thus, Omar must be in the committee whenever Mia is chosen.",
+        "passage": "A committee of four members is to be selected from a group of seven candidates: Kai, Leo, Mia, Nora, Omar, Pia, and Quinn. The selection must comply with the following conditions: Kai and Leo cannot both be selected together. If Mia is selected, then Omar must also be selected. Nora and Pia must either both be selected or neither selected. If Quinn is selected, then Leo must also be selected."
+      },
+      {
+        "q": 21,
+        "topic": "Distribution",
+        "question": "If Quinn is selected for the committee, who among the following CANNOT be selected?",
+        "options": {
+          "A": "Leo",
+          "B": "Kai",
+          "C": "Nora",
+          "D": "Pia"
+        },
+        "correct": "B",
+        "explanation": "If Quinn is selected, then Leo must be selected. Since Kai and Leo cannot both be selected together, Kai cannot be in the committee if Leo is present. Thus, Kai cannot be selected.",
+        "passage": "A committee of four members is to be selected from a group of seven candidates: Kai, Leo, Mia, Nora, Omar, Pia, and Quinn. The selection must comply with the following conditions: Kai and Leo cannot both be selected together. If Mia is selected, then Omar must also be selected. Nora and Pia must either both be selected or neither selected. If Quinn is selected, then Leo must also be selected."
+      },
+      {
+        "q": 22,
+        "topic": "Logic Puzzles",
+        "question": "Which of the following represents a valid four-member committee that satisfies all conditions?",
+        "options": {
+          "A": "Kai, Leo, Nora, Pia",
+          "B": "Mia, Quinn, Leo, Kai",
+          "C": "Mia, Nora, Pia, Quinn",
+          "D": "Leo, Nora, Pia, Omar"
+        },
+        "correct": "D",
+        "explanation": "Option A contains both Kai and Leo (violates rule 1). Option B contains both Kai and Leo (violates rule 1). Option C contains Mia without Omar (violates rule 2). Option D (Leo, Nora, Pia, Omar) satisfies all conditions without any violations.",
+        "passage": "A committee of four members is to be selected from a group of seven candidates: Kai, Leo, Mia, Nora, Omar, Pia, and Quinn. The selection must comply with the following conditions: Kai and Leo cannot both be selected together. If Mia is selected, then Omar must also be selected. Nora and Pia must either both be selected or neither selected. If Quinn is selected, then Leo must also be selected."
+      }
+    ],
+    "Quantitative Ability": [
+      {
+        "q": 1,
+        "topic": "Mixtures and Allegation",
+        "question": "In a mixture of 120 liters of milk and water, the ratio of milk to water is 3:2. A certain amount of the mixture is withdrawn and replaced with an equal volume of pure water. If the ratio of milk to water in the final mixture becomes 9:11, what was the volume of the mixture that was withdrawn?",
+        "options": {
+          "A": "30 liters",
+          "B": "40 liters",
+          "C": "48 liters",
+          "D": "36 liters"
+        },
+        "correct": "A",
+        "explanation": "Initial volume of milk is 120 multiplied by (3/5) = 72 liters, giving an initial milk fraction of 3/5 = 0.60. When x liters of mixture is withdrawn and replaced with pure water, the total volume remains 120 liters, while the final fraction of milk becomes 9/(9+11) = 9/20 = 0.45. Using the replacement formula: Final milk fraction = Initial milk fraction multiplied by (1 - x/120). Substituting the values yields 0.45 = 0.60 multiplied by (1 - x/120). Dividing both sides by 0.60 gives 0.75 = 1 - x/120, which simplifies to x/120 = 0.25. Solving for x yields x = 120 multiplied by 0.25 = 30 liters. Thus, Option A is correct."
+      },
+      {
+        "q": 2,
+        "topic": "Time Speed and Distance",
+        "question": "Two trains, A and B, start simultaneously from stations X and Y, respectively, moving towards each other along parallel tracks. After crossing each other, train A takes 4 hours to reach station Y, while train B takes 9 hours to reach station X. If the speed of train A is 60 km/h, what is the speed of train B?",
+        "options": {
+          "A": "40 km/h",
+          "B": "45 km/h",
+          "C": "30 km/h",
+          "D": "50 km/h"
+        },
+        "correct": "A",
+        "explanation": "By the standard time and distance relation for two objects crossing each other, the ratio of their speeds Speed_A / Speed_B equals the square root of (Time_B / Time_A). Here, Time_A = 4 hours and Time_B = 9 hours. Therefore, Speed_A / Speed_B = square root of (9/4) = 3/2. Substituting Speed_A = 60 km/h into 60 / Speed_B = 3/2 gives Speed_B = (60 multiplied by 2) / 3 = 40 km/h."
+      },
+      {
+        "q": 3,
+        "topic": "Equations",
+        "question": "If log to the base 2 of (x - 1) + log to the base 2 of (x + 3) = 5, what is the value of x?",
+        "options": {
+          "A": "3",
+          "B": "7",
+          "C": "5",
+          "D": "9"
+        },
+        "correct": "C",
+        "explanation": "Combining the logarithms using logarithmic identity log(a) + log(b) = log(ab) gives log to the base 2 of [(x - 1)(x + 3)] = 5. Converting from logarithmic form to exponential form yields (x - 1)(x + 3) = 2 raised to the power 5, which equals 32. Expanding the product gives x^2 + 2x - 3 = 32, so x^2 + 2x - 35 = 0. Factoring the quadratic equation gives (x + 7)(x - 5) = 0, which yields x = 5 or x = -7. Since the logarithm domain requires x - 1 > 0 and x + 3 > 0, x must be greater than 1. Thus, x = 5."
+      },
+      {
+        "q": 4,
+        "topic": "Profit and Loss",
+        "question": "A merchant buys two items for a combined total cost of Rs. 1500. He sells the first item at a profit of 20% and the second item at a loss of 10%. If his overall transaction resulted in a net gain of Rs. 90, what was the cost price of the first item?",
+        "options": {
+          "A": "Rs. 700",
+          "B": "Rs. 900",
+          "C": "Rs. 750",
+          "D": "Rs. 800"
+        },
+        "correct": "D",
+        "explanation": "Let C1 be the cost price of the first item and C2 be the cost price of the second item. Given C1 + C2 = 1500. The profit on the first item is 0.20 multiplied by C1 and the loss on the second item is 0.10 multiplied by C2. The net profit equation is 0.20(C1) - 0.10(C2) = 90. Multiplying this equation by 10 gives 2(C1) - C2 = 900. Adding C1 + C2 = 1500 to 2(C1) - C2 = 900 yields 3(C1) = 2400, which gives C1 = 800. Therefore, the cost price of the first item is Rs. 800."
+      },
+      {
+        "q": 5,
+        "topic": "Time and Work",
+        "question": "Sumit can complete a project in 20 days working alone, while Amit can complete the same project in 30 days working alone. They start working together, but Sumit leaves 5 days before the project is completed. How many total days were required to finish the project?",
+        "options": {
+          "A": "12 days",
+          "B": "14 days",
+          "C": "15 days",
+          "D": "16 days"
+        },
+        "correct": "C",
+        "explanation": "Let total work be 60 units (LCM of 20 and 30). Sumit's efficiency is 60 / 20 = 3 units per day, and Amit's efficiency is 60 / 30 = 2 units per day. Combined efficiency is 3 + 2 = 5 units per day. Let T be the total number of days to complete the project. Sumit worked for (T - 5) days and Amit worked for T days. The equation for total work is 3(T - 5) + 2(T) = 60. Simplifying gives 3T - 15 + 2T = 60, so 5T = 75, which gives T = 15 days."
+      },
+      {
+        "q": 6,
+        "topic": "Inequalities",
+        "question": "How many integer values of x satisfy the absolute value inequality |2x - 7| <= 13?",
+        "options": {
+          "A": "12",
+          "B": "14",
+          "C": "13",
+          "D": "15"
+        },
+        "correct": "B",
+        "explanation": "The absolute value inequality |2x - 7| <= 13 expands to -13 <= 2x - 7 <= 13. Adding 7 to all parts gives -6 <= 2x <= 20. Dividing all parts by 2 yields -3 <= x <= 10. The integer values satisfying this range are -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. The total number of integers in this range is 10 - (-3) + 1 = 14 integers."
+      },
+      {
+        "q": 7,
+        "topic": "Progressions",
+        "question": "The sum of the first n terms of an arithmetic progression is given by S_n = 3n^2 + 5n. What is the 10th term of this arithmetic progression?",
+        "options": {
+          "A": "62",
+          "B": "58",
+          "C": "60",
+          "D": "64"
+        },
+        "correct": "A",
+        "explanation": "The nth term of an arithmetic progression T_n is related to the sum of terms by T_n = S_n - S_(n-1). For the 10th term T_10 = S_10 - S_9. Calculating S_10 gives 3(10^2) + 5(10) = 300 + 50 = 350. Calculating S_9 gives 3(9^2) + 5(9) = 3(81) + 45 = 243 + 45 = 288. Therefore, T_10 = 350 - 288 = 62."
+      },
+      {
+        "q": 8,
+        "topic": "Geometry",
+        "question": "In a triangle ABC, the lengths of sides AB, BC, and CA are 13 cm, 14 cm, and 15 cm, respectively. What is the length of the altitude drawn from vertex A to side BC?",
+        "options": {
+          "A": "11.2 cm",
+          "B": "12 cm",
+          "C": "10.8 cm",
+          "D": "12.5 cm"
+        },
+        "correct": "B",
+        "explanation": "Using Heron's formula to find the area of triangle ABC: Semi-perimeter s = (13 + 14 + 15) / 2 = 21 cm. Area = square root of [21(21 - 13)(21 - 14)(21 - 15)] = square root of [21 multiplied by 8 multiplied by 7 multiplied by 6] = square root of [7056] = 84 sq cm. Area is also given by (1/2) multiplied by base BC multiplied by altitude h_a. Thus, 84 = (1/2) multiplied by 14 multiplied by h_a, which gives 7(h_a) = 84, so h_a = 12 cm."
+      },
+      {
+        "q": 9,
+        "topic": "Number Properties",
+        "question": "Find the total number of positive integral solutions (x, y) that satisfy the equation 3x + 5y = 120.",
+        "options": {
+          "A": "8",
+          "B": "7",
+          "C": "9",
+          "D": "6"
+        },
+        "correct": "B",
+        "explanation": "For positive integral solutions, x > 0 and y > 0. Expressing x in terms of y gives 3x = 120 - 5y, so x = (120 - 5y)/3 = 40 - (5y/3). For x to be an integer, y must be a multiple of 3. Since x > 0, 40 - (5y/3) > 0, which implies 5y/3 < 40, so y < 24. Positive multiples of 3 less than 24 are y = 3, 6, 9, 12, 15, 18, 21. Counting these values gives exactly 7 positive integral solutions."
+      },
+      {
+        "q": 10,
+        "topic": "Equations",
+        "question": "A right circular cone of height 12 cm and base radius 5 cm is melted and recast into small solid spheres, each of radius 1 cm. What is the maximum number of such complete spheres that can be formed?",
+        "options": {
+          "A": "40",
+          "B": "50",
+          "C": "45",
+          "D": "75"
+        },
+        "correct": "D",
+        "explanation": "Volume of the cone = (1/3) multiplied by pi multiplied by r^2 multiplied by h = (1/3) multiplied by pi multiplied by (5^2) multiplied by 12 = 100 pi cubic cm. Volume of one sphere = (4/3) multiplied by pi multiplied by (1^3) = (4/3) pi cubic cm. Number of spheres = (Volume of cone) / (Volume of sphere) = (100 pi) / [(4/3) pi] = (100 multiplied by 3) / 4 = 75 spheres."
+      },
+      {
+        "q": 11,
+        "topic": "Number Properties",
+        "question": "What is the remainder when 7 raised to the power 100 is divided by 25?",
+        "options": {
+          "A": "1",
+          "B": "7",
+          "C": "24",
+          "D": "18"
+        },
+        "correct": "A",
+        "explanation": "Using modular arithmetic: 7^1 = 7 (mod 25), 7^2 = 49 = -1 (mod 25). Therefore, 7^100 = (7^2)^50 = (-1)^50 = 1 (mod 25). Thus, the remainder when 7^100 is divided by 25 is 1."
+      },
+      {
+        "q": 12,
+        "topic": "Equations",
+        "question": "The roots of the quadratic equation x^2 - 8x + k = 0 are real and distinct. If one root is three times the other root, what is the value of k?",
+        "options": {
+          "A": "16",
+          "B": "10",
+          "C": "12",
+          "D": "14"
+        },
+        "correct": "C",
+        "explanation": "Let the roots be r and 3r. The sum of roots is r + 3r = 4r. From the quadratic equation, sum of roots = -(-8)/1 = 8. Thus, 4r = 8, which gives r = 2. The product of roots is r multiplied by 3r = 3r^2. From the equation, product of roots = k/1 = k. Substituting r = 2 gives k = 3(2^2) = 3 multiplied by 4 = 12."
+      },
+      {
+        "q": 13,
+        "topic": "Equations",
+        "question": "In how many distinct ways can the letters of the word EXCELLENCE be arranged such that all the E's always occur together?",
+        "options": {
+          "A": "3780",
+          "B": "1260",
+          "C": "7560",
+          "D": "2520"
+        },
+        "correct": "B",
+        "explanation": "The word EXCELLENCE has 10 letters: 4 E's, 2 C's, 2 L's, 1 X, and 1 N. Treat the 4 E's as a single group (EEEE). Now we need to arrange 7 units: (EEEE), C, C, L, L, X, N. Number of arrangements = 7! / (2! multiplied by 2!), because C appears 2 times and L appears 2 times. Calculating 7! = 5040. Dividing by (2 multiplied by 2 = 4) gives 5040 / 4 = 1260 ways."
+      },
+      {
+        "q": 14,
+        "topic": "Averages",
+        "question": "The average score of a class of 30 students in a test is 65. If the highest and lowest scores are excluded, the average score of the remaining 28 students becomes 64. If the difference between the highest and lowest scores is 38, what is the highest score?",
+        "options": {
+          "A": "98",
+          "B": "95",
+          "C": "100",
+          "D": "92"
+        },
+        "correct": "A",
+        "explanation": "Total score of 30 students = 30 multiplied by 65 = 1950. Total score of remaining 28 students = 28 multiplied by 64 = 1792. Sum of highest score (H) and lowest score (L) = 1950 - 1792 = 158. We are given H - L = 38. Adding the two equations H + L = 158 and H - L = 38 yields 2H = 196, which gives H = 98."
+      },
+      {
+        "q": 15,
+        "topic": "Interest",
+        "question": "A sum of money compounded annually at a certain interest rate grows to Rs. 4800 in 2 years and to Rs. 5760 in 3 years. What is the annual interest rate?",
+        "options": {
+          "A": "15%",
+          "B": "25%",
+          "C": "20%",
+          "D": "18%"
+        },
+        "correct": "C",
+        "explanation": "In compound interest, the amount at the end of the 3rd year is equal to the amount at the end of the 2nd year multiplied by (1 + R/100). Thus, 5760 = 4800 multiplied by (1 + R/100). Dividing 5760 by 4800 gives 1 + R/100 = 1.2. Subtracting 1 gives R/100 = 0.2, which yields R = 20%."
+      },
+      {
+        "q": 16,
+        "topic": "Functions",
+        "question": "If f(x) = (x - 2)/(x + 2) for all real x not equal to -2, what is the value of f(f(x)) when x = 4?",
+        "options": {
+          "A": "-5/7",
+          "B": "1/5",
+          "C": "2/7",
+          "D": "-1/5"
+        },
+        "correct": "A",
+        "explanation": "First, evaluate f(4) by substituting x = 4 into f(x): f(4) = (4 - 2)/(4 + 2) = 2/6 = 1/3. Next, evaluate f(f(4)) = f(1/3) by substituting x = 1/3 into f(x): f(1/3) = (1/3 - 2)/(1/3 + 2) = (-5/3)/(7/3) = -5/7. Thus, f(f(4)) = -5/7, which corresponds to Option A."
+      },
+      {
+        "q": 17,
+        "topic": "Geometry",
+        "question": "What is the area of the region bounded by the graph of |x| + |y| = 4?",
+        "options": {
+          "A": "16 sq units",
+          "B": "64 sq units",
+          "C": "32 sq units",
+          "D": "24 sq units"
+        },
+        "correct": "C",
+        "explanation": "The equation |x| + |y| = 4 represents a square whose vertices are situated on the coordinate axes at (4, 0), (0, 4), (-4, 0), and (0, -4). The length of each side of this square is given by the distance between (4, 0) and (0, 4), which is square root of (4^2 + 4^2) = square root of (32) = 4 square root 2 units. The area of the square is (side)^2 = (4 square root 2)^2 = 32 sq units. Alternatively, the region consists of 4 right-angled triangles in the four quadrants, each with base 4 and height 4. Area = 4 multiplied by [(1/2) multiplied by 4 multiplied by 4] = 4 multiplied by 8 = 32 sq units."
+      },
+      {
+        "q": 18,
+        "topic": "Time and Work",
+        "question": "Two pipes P and Q can fill a tank in 12 minutes and 18 minutes, respectively, while a waste pipe R can empty the full tank in 36 minutes. If all three pipes are opened simultaneously, how long will it take to fill the tank completely?",
+        "options": {
+          "A": "8 minutes",
+          "B": "9 minutes",
+          "C": "10 minutes",
+          "D": "7.5 minutes"
+        },
+        "correct": "B",
+        "explanation": "Let total capacity of the tank be 36 units (LCM of 12, 18, and 36). Efficiency of pipe P = 36 / 12 = +3 units/min. Efficiency of pipe Q = 36 / 18 = +2 units/min. Efficiency of pipe R = 36 / 36 = -1 unit/min. Combined net efficiency when all three pipes are open = +3 + 2 - 1 = +4 units/min. Total time required to fill the tank = 36 / 4 = 9 minutes."
+      },
+      {
+        "q": 19,
+        "topic": "Ratio and Proportion",
+        "question": "A container initially holds 80 liters of pure wine. From this container, 8 liters of wine is replaced with water. This operation is performed one more time. What is the final quantity of pure wine remaining in the container?",
+        "options": {
+          "A": "64.8 liters",
+          "B": "65.2 liters",
+          "C": "63.6 liters",
+          "D": "64.0 liters"
+        },
+        "correct": "A",
+        "explanation": "The quantity of pure liquid remaining after n removal and replacement cycles is given by Q = Initial Volume multiplied by (1 - x/V)^n, where V = 80 liters, x = 8 liters, and n = 2. Calculating Q = 80 multiplied by (1 - 8/80)^2 = 80 multiplied by (0.9)^2 = 80 multiplied by 0.81 = 64.8 liters."
+      },
+      {
+        "q": 20,
+        "topic": "Equations",
+        "question": "If log to the base 10 of 2 = a and log to the base 10 of 3 = b, what is the value of log to the base 10 of 1.5 in terms of a and b?",
+        "options": {
+          "A": "a - b",
+          "B": "b - a",
+          "C": "a + b",
+          "D": "1 - a - b"
+        },
+        "correct": "B",
+        "explanation": "Express 1.5 as the fraction 3/2. Using logarithmic properties, log to the base 10 of (3/2) = log to the base 10 of 3 - log to the base 10 of 2. Substituting the given values log to the base 10 of 3 = b and log to the base 10 of 2 = a yields b - a."
+      },
+      {
+        "q": 21,
+        "topic": "Progressions",
+        "question": "How many terms are there in the geometric progression 3, 6, 12, 24, ..., 768?",
+        "options": {
+          "A": "8",
+          "B": "10",
+          "C": "9",
+          "D": "11"
+        },
+        "correct": "C",
+        "explanation": "In this geometric progression, the first term a = 3 and the common ratio r = 6 / 3 = 2. The nth term T_n is given by T_n = a multiplied by r^(n - 1). Setting T_n = 768 gives 3 multiplied by 2^(n - 1) = 768. Dividing both sides by 3 yields 2^(n - 1) = 256. Since 256 = 2^8, we have n - 1 = 8, which gives n = 9."
+      },
+      {
+        "q": 22,
+        "topic": "Geometry",
+        "question": "A circle is inscribed in an equilateral triangle of side length 12 cm. What is the area of the circle?",
+        "options": {
+          "A": "16 pi sq cm",
+          "B": "12 pi sq cm",
+          "C": "36 pi sq cm",
+          "D": "24 pi sq cm"
+        },
+        "correct": "B",
+        "explanation": "The inradius r of an equilateral triangle with side length a is given by r = a / (2 multiplied by square root of 3). Substituting a = 12 cm gives r = 12 / (2 square root 3) = 6 / square root 3 = 2 square root 3 cm. The area of the inscribed circle = pi multiplied by r^2 = pi multiplied by (2 square root 3)^2 = pi multiplied by 12 = 12 pi sq cm."
+      }
+    ]
+  }
+}

@@ -1,0 +1,1968 @@
+{
+  "paper_id": "SSC-CGL-T2-Paper1",
+  "title": "SSC CGL Tier 2 Paper 1",
+  "exam": "SSC CGL Tier 2",
+  "year": 2026,
+  "subjects": {
+    "Mathematical Abilities": [
+      {
+        "q": 1,
+        "topic": "Trigonometry",
+        "question": "If x + 1/x = 5, then the value of x cubed + 1/x cubed is:",
+        "options": {
+          "A": "100",
+          "B": "110",
+          "C": "125",
+          "D": "140"
+        },
+        "correct": "B",
+        "explanation": "Using the formula k cubed - 3k where k = 5, we get 5 cubed - 3(5) = 125 - 15 = 110. Thus, option B is correct."
+      },
+      {
+        "q": 2,
+        "topic": "Trigonometry",
+        "question": "A and B start a business with capitals in the ratio 3: 5. After 6 months, C joins the business with an amount equal to twice of B's capital. At the end of the year, the profit is divided in what ratio among A, B, and C?",
+        "options": {
+          "A": "3: 5: 10",
+          "B": "6: 10: 5",
+          "C": "3: 5: 5",
+          "D": "3: 5: 6"
+        },
+        "correct": "C",
+        "explanation": "Let A's and B's capitals be 3x and 5x. C joins after 6 months with 10x. Hence, the profit ratio is 3x * 12 : 5x * 12 : 10x * 6 = 36 : 60 : 60 = 3 : 5 : 5. Therefore, option C is correct."
+      },
+      {
+        "q": 3,
+        "topic": "Compound interest",
+        "question": "A sum of money invested at compound interest amounts to Rs. 4,800 in 2 years and Rs. 5,760 in 3 years. The annual rate of interest is:",
+        "options": {
+          "A": "20 percent",
+          "B": "15 percent",
+          "C": "25 percent",
+          "D": "18 percent"
+        },
+        "correct": "A",
+        "explanation": "Interest for the third year = 5,760 - 4,800 = Rs. 960. Rate of interest = (960 / 4800) * 100 = 20 percent. Thus, option A is correct."
+      },
+      {
+        "q": 4,
+        "topic": "Trigonometry",
+        "question": "According to a survey on household expenditures, families allocate their monthly income across four major heads: Food, Housing, Education, and Savings in the ratio 4: 3: 2: 1 respectively. If the total monthly income of a household is Rs. 72,000, how much more money is spent on Food compared to Education?",
+        "options": {
+          "A": "Rs. 10,800",
+          "B": "Rs. 12,600",
+          "C": "Rs. 14,400",
+          "D": "Rs. 16,200"
+        },
+        "correct": "C",
+        "explanation": "Total ratio = 10 parts. One part = Rs. 7,200. Food = Rs. 28,800 and Education = Rs. 14,400. Difference = Rs. 14,400. Therefore, option C is correct."
+      },
+      {
+        "q": 5,
+        "topic": "Trigonometry",
+        "question": "Pipe A can fill an empty tank in 12 hours, while Pipe B can empty the full tank in 16 hours. If both pipes are opened simultaneously on an empty tank, the time taken to completely fill the tank is:",
+        "options": {
+          "A": "48 hours",
+          "B": "40 hours",
+          "C": "56 hours",
+          "D": "64 hours"
+        },
+        "correct": "A",
+        "explanation": "Let total capacity be 48 units (LCM of 12 and 16). Filling rate of A = +4 units/hour, emptying rate of B = -3 units/hour. Net filling rate = 4 - 3 = 1 unit/hour. Time taken = 48 / 1 = 48 hours. Thus, option A is correct."
+      },
+      {
+        "q": 6,
+        "topic": "Time and distance",
+        "question": "A boat covers 36 km downstream and 24 km upstream in 6 hours. It also covers 48 km downstream and 36 km upstream in 8.5 hours. The speed of the stream is:",
+        "options": {
+          "A": "4 km/h",
+          "B": "3 km/h",
+          "C": "5 km/h",
+          "D": "2 km/h"
+        },
+        "correct": "D",
+        "explanation": "Let downstream speed be d and upstream speed be u. We have 36/d + 24/u = 6 and 48/d + 36/u = 8.5. Multiplying the first equation by 3 and the second by 2 gives 108/d + 72/u = 18 and 96/d + 72/u = 17. Subtracting the two gives 12/d = 1, so d = 12 km/h. Substituting d = 12 into the first equation yields 36/12 + 24/u = 6 -> 3 + 24/u = 6 -> 24/u = 3 -> u = 8 km/h. Speed of stream = (d - u) / 2 = (12 - 8) / 2 = 2 km/h. Thus, option D is correct."
+      },
+      {
+        "q": 7,
+        "topic": "Compound interest",
+        "question": "If the simple interest on a certain sum for 3 years at 10 percent per annum is Rs. 1,500, then the compound interest on the same sum at the same rate for 2 years compounded annually is:",
+        "options": {
+          "A": "Rs. 1,000",
+          "B": "Rs. 1,020",
+          "C": "Rs. 1,040",
+          "D": "Rs. 1,050"
+        },
+        "correct": "D",
+        "explanation": "Principal = (1500 * 100) / (3 * 10) = Rs. 5,000. For 2 years at 10 percent CI, effective rate = 21 percent. CI = 21 percent of 5,000 = Rs. 1,050. Thus, option D is correct."
+      },
+      {
+        "q": 8,
+        "topic": "Trigonometry",
+        "question": "If a nine-digit number 789x5314y is divisible by 72, then the value of (5x - 3y) is:",
+        "options": {
+          "A": "4",
+          "B": "6",
+          "C": "8",
+          "D": "10"
+        },
+        "correct": "C",
+        "explanation": "Since 72 = 8 * 9, the number must be divisible by both 8 and 9. For divisibility by 8, the last three digits (14y) must be divisible by 8; testing values reveals 144 is divisible by 8, so y = 4. For divisibility by 9, the sum of all digits (7 + 8 + 9 + x + 5 + 3 + 1 + 4 + 4 = 41 + x) must be a multiple of 9; since 41 + x = 45 is the next multiple, x = 4. Evaluating 5(4) - 3(4) = 20 - 12 = 8. Thus, option C is correct."
+      },
+      {
+        "q": 9,
+        "topic": "Mensuration",
+        "question": "The perimeter of a rhombus is 148 cm and one of its diagonals is 24 cm. The area of the rhombus in square centimeters is:",
+        "options": {
+          "A": "720",
+          "B": "840",
+          "C": "960",
+          "D": "1080"
+        },
+        "correct": "B",
+        "explanation": "Side of rhombus = 148 / 4 = 37 cm. Half of known diagonal = 12 cm. Half of second diagonal = root(37 squared - 12 squared) = root(1369 - 144) = root(1225) = 35 cm, so second diagonal = 70 cm. Area = 0.5 * 24 * 70 = 840 sq. cm. Thus, option B is correct."
+      },
+      {
+        "q": 10,
+        "topic": "Trigonometry",
+        "question": "The angle of elevation of the top of a vertical tower from a point on the ground is 30 degrees. Moving 50 meters closer to the tower along the same horizontal line, the angle of elevation becomes 60 degrees. The height of the tower in meters is:",
+        "options": {
+          "A": "25 root(3)",
+          "B": "50 root(3)",
+          "C": "75 root(3)",
+          "D": "100 root(3)"
+        },
+        "correct": "A",
+        "explanation": "Let the initial distance from the tower be x and height be h. At 30 degrees, tan(30 degrees) = h / x = 1 / root(3), which gives h = x / root(3). After moving 50 m closer, the distance is (x - 50), and tan(60 degrees) = h / (x - 50) = root(3), which gives h = root(3) * (x - 50). Equating the two expressions for h: x / root(3) = root(3) * (x - 50) -> x = 3(x - 50) -> 2x = 150 -> x = 75 m. Substituting x back gives h = 75 / root(3) = 25 root(3) meters. Therefore, option A is correct."
+      },
+      {
+        "q": 11,
+        "topic": "Percentage",
+        "question": "If a cubed - b cubed = 56 and a - b = 2, then the value of (a squared + b squared) is:",
+        "options": {
+          "A": "16",
+          "B": "18",
+          "C": "20",
+          "D": "24"
+        },
+        "correct": "C",
+        "explanation": "We know a cubed - b cubed = (a - b)(a squared + ab + b squared). Substituting values gives 56 = 2(a squared + ab + b squared), so a squared + ab + b squared = 28. Also (a - b) squared = a squared - 2ab + b squared = 4, which gives 3ab = 24 -> ab = 8. Therefore, a squared + b squared = 28 - 8 = 20. Thus, option C is correct."
+      },
+      {
+        "q": 12,
+        "topic": "Averages",
+        "question": "The average weight of 35 students in a class is 45 kg. If the weight of the teacher is included, the average weight increases by 500 grams. The weight of the teacher in kg is:",
+        "options": {
+          "A": "59",
+          "B": "60",
+          "C": "61",
+          "D": "63"
+        },
+        "correct": "D",
+        "explanation": "Total weight of 35 students = 35 * 45 = 1575 kg. Total weight of 36 persons (35 students + 1 teacher) = 36 * 45.5 = 1638 kg. Weight of teacher = 1638 - 1575 = 63 kg. Thus, option D is correct."
+      },
+      {
+        "q": 13,
+        "topic": "Trigonometry",
+        "question": "A man covers a certain distance at 50 km/h and returns at 40 km/h. His average speed for the entire journey in km/h is:",
+        "options": {
+          "A": "42.5",
+          "B": "44.44",
+          "C": "46.5",
+          "D": "45.0"
+        },
+        "correct": "B",
+        "explanation": "Average speed = (2 * s1 * s2) / (s1 + s2) = (2 * 50 * 40) / (50 + 40) = 4000 / 90 = 44.44 km/h. Thus, option B is correct."
+      },
+      {
+        "q": 14,
+        "topic": "Trigonometry",
+        "question": "If sin(theta) + cos(theta) = root(2) * cos(theta), then the value of tan(theta) is:",
+        "options": {
+          "A": "root(2) - 1",
+          "B": "root(2) + 1",
+          "C": "2 - root(2)",
+          "D": "1 / root(2)"
+        },
+        "correct": "A",
+        "explanation": "Dividing both sides by cos(theta) gives tan(theta) + 1 = root(2), which implies tan(theta) = root(2) - 1. Thus, option A is correct."
+      },
+      {
+        "q": 15,
+        "topic": "Compound interest",
+        "question": "A person invests Rs. 12,000 at 20 percent per annum compound interest, compounded half-yearly. The total amount at the end of 1 year in rupees is:",
+        "options": {
+          "A": "14,400",
+          "B": "14,640",
+          "C": "14,800",
+          "D": "14,520"
+        },
+        "correct": "D",
+        "explanation": "Rate per half-year = 10 percent, time = 2 half-years. Amount = 12,000 * (1 + 10/100) squared = 12,000 * 1.21 = Rs. 14,520. Thus, option D is correct."
+      },
+      {
+        "q": 16,
+        "topic": "Algebra",
+        "question": "The interior angle of a regular polygon is 5 times its exterior angle. The number of sides of the polygon is:",
+        "options": {
+          "A": "10",
+          "B": "14",
+          "C": "16",
+          "D": "12"
+        },
+        "correct": "D",
+        "explanation": "Let exterior angle be x. Interior angle is 5x. x + 5x = 180 degrees -> 6x = 180 -> x = 30 degrees. Number of sides = 360 / 30 = 12. Thus, option D is correct."
+      },
+      {
+        "q": 17,
+        "topic": "Trigonometry",
+        "question": "A shopkeeper marks his goods 30 percent above the cost price and allows a discount of 15 percent. His actual profit percentage is:",
+        "options": {
+          "A": "9.5 percent",
+          "B": "10.5 percent",
+          "C": "10.0 percent",
+          "D": "11.0 percent"
+        },
+        "correct": "B",
+        "explanation": "Let cost price be 100. Marked price = 130. Discount = 15 percent of 130 = 19.5. Selling price = 130 - 19.5 = 110.5. Profit percentage = 10.5 percent. Thus, option B is correct."
+      },
+      {
+        "q": 18,
+        "topic": "Algebra",
+        "question": "If x + y + z = 11 and xy + yz + zx = 20, then the value of (x cubed + y cubed + z cubed - 3xyz) is:",
+        "options": {
+          "A": "611",
+          "B": "641",
+          "C": "671",
+          "D": "701"
+        },
+        "correct": "C",
+        "explanation": "Formula: (x + y + z) * ((x + y + z) squared - 3(xy + yz + zx)) = 11 * (121 - 60) = 11 * 61 = 671. Thus, option C is correct."
+      },
+      {
+        "q": 19,
+        "topic": "Algebra",
+        "question": "A vessel contains a mixture of milk and water in the ratio 5: 3. If 16 liters of the mixture is replaced by 16 liters of milk, the ratio of milk to water becomes 3: 1. The initial quantity of milk in the vessel in liters was:",
+        "options": {
+          "A": "45",
+          "B": "35",
+          "C": "30",
+          "D": "40"
+        },
+        "correct": "C",
+        "explanation": "Let total quantity be 8x. Initially, Milk = 5x and Water = 3x. When 16 L of mixture is removed, the quantity of milk removed is (5/8) * 16 = 10 L, and water removed is (3/8) * 16 = 6 L. Remaining quantities: Milk = 5x - 10, Water = 3x - 6. After adding 16 L of pure milk, new Milk = 5x - 10 + 16 = 5x + 6, while Water remains 3x - 6. Given the new ratio is 3:1, we set (5x + 6) / (3x - 6) = 3 / 1, which cross-multiplies to 5x + 6 = 9x - 18, yielding 4x = 24 -> x = 6. Hence, initial milk = 5x = 5 * 6 = 30 L. Thus, option C is correct."
+      },
+      {
+        "q": 20,
+        "topic": "Algebra",
+        "question": "If 2^x + 2^(x+2) = 320, then the value of x is:",
+        "options": {
+          "A": "3",
+          "B": "4",
+          "C": "5",
+          "D": "6"
+        },
+        "correct": "D",
+        "explanation": "Given equation: 2^x + 2^(x+2) = 320. Factoring out 2^x gives 2^x * (1 + 2^2) = 320 -> 2^x * (1 + 4) = 320 -> 2^x * 5 = 320 -> 2^x = 64 = 2^6. Comparing exponents yields x = 6. Thus, option D is correct."
+      },
+      {
+        "q": 21,
+        "topic": "Percentage",
+        "question": "A sum of Rs. 6,800 is divided among A, B, and C such that A gets 1/3 of what B gets, and B gets 1/4 of what C gets. The share of C in rupees is:",
+        "options": {
+          "A": "4,800",
+          "B": "5,100",
+          "C": "4,500",
+          "D": "5,400"
+        },
+        "correct": "B",
+        "explanation": "Let C's share be c. B = c/4, A = B/3 = c/12. Total sum = c/12 + c/4 + c = (16/12)c = (4/3)c = 6,800 -> c = 6800 * 3 / 4 = Rs. 5,100. Thus, option B is correct."
+      },
+      {
+        "q": 22,
+        "topic": "Trigonometry",
+        "question": "The radius of a circular wheel is 1.75 meters. How many revolutions will it make in covering a distance of 11 kilometers?",
+        "options": {
+          "A": "1,000",
+          "B": "800",
+          "C": "1,200",
+          "D": "1,500"
+        },
+        "correct": "A",
+        "explanation": "Circumference = 2 * (22/7) * 1.75 = 11 meters. Total distance = 11,000 meters. Revolutions = 11,000 / 11 = 1,000. Thus, option A is correct."
+      },
+      {
+        "q": 23,
+        "topic": "Algebra",
+        "question": "If x = root(5) + 2, then the value of (x - 1/x) squared is:",
+        "options": {
+          "A": "18",
+          "B": "12",
+          "C": "16",
+          "D": "14"
+        },
+        "correct": "C",
+        "explanation": "Rationalizing 1/x gives root(5) - 2. Then x - 1/x = (root(5) + 2) - (root(5) - 2) = 4. Squaring gives 4 squared = 16. Thus, option C is correct."
+      },
+      {
+        "q": 24,
+        "topic": "Mensuration",
+        "question": "A solid metallic hemisphere of radius 9 cm is melted and recast into a right circular cylinder of radius 6 cm. The height of the cylinder in centimeters is:",
+        "options": {
+          "A": "12.5 cm",
+          "B": "13.5 cm",
+          "C": "14.0 cm",
+          "D": "15.0 cm"
+        },
+        "correct": "B",
+        "explanation": "Volume of hemisphere = (2/3) * pi * r cubed = (2/3) * pi * 9 cubed = 486 * pi cubic cm. Volume of cylinder = pi * R squared * h = pi * 6 squared * h = 36 * pi * h. Equating volumes: 36 * pi * h = 486 * pi -> h = 486 / 36 = 13.5 cm. Thus, option B is correct."
+      },
+      {
+        "q": 25,
+        "topic": "Percentage",
+        "question": "If a + b + c = 9 and ab + bc + ca = 23, then the value of (a cubed + b cubed + c cubed - 3abc) is:",
+        "options": {
+          "A": "108",
+          "B": "102",
+          "C": "96",
+          "D": "114"
+        },
+        "correct": "A",
+        "explanation": "Formula: (a + b + c) * ((a + b + c) squared - 3(ab + bc + ca)) = 9 * (81 - 3(23)) = 9 * (81 - 69) = 9 * 12 = 108. Thus, option A is correct."
+      },
+      {
+        "q": 26,
+        "topic": "Ratio and proportion",
+        "question": "The income ratio of A and B is 5: 4 and their expenditure ratio is 3: 2. If each saves Rs. 8,000, the income of A in rupees is:",
+        "options": {
+          "A": "16,000",
+          "B": "20,000",
+          "C": "24,000",
+          "D": "28,000"
+        },
+        "correct": "B",
+        "explanation": "Let incomes be 5x and 4x, expenditures be 3y and 2y. 5x - 3y = 8000 and 4x - 2y = 8000. Solving gives x = 4000. Income of A = 5 * 4000 = Rs. 20,000. Thus, option B is correct."
+      },
+      {
+        "q": 27,
+        "topic": "Percentage",
+        "question": "If 15 men can complete a piece of work in 20 days working 8 hours a day, in how many days will 20 men complete the same work working 6 hours a day?",
+        "options": {
+          "A": "15 days",
+          "B": "18 days",
+          "C": "24 days",
+          "D": "20 days"
+        },
+        "correct": "D",
+        "explanation": "Total man-hours = 15 * 20 * 8 = 2400 man-hours. For 20 men working 6 hours a day, daily man-hours = 120. Days required = 2400 / 120 = 20 days. Thus, option D is correct."
+      },
+      {
+        "q": 28,
+        "topic": "Trigonometry",
+        "question": "Two concentric circles have radii 15 cm and 9 cm. The length of the chord of the larger circle which is tangent to the smaller circle in centimeters is:",
+        "options": {
+          "A": "20",
+          "B": "22",
+          "C": "28",
+          "D": "24"
+        },
+        "correct": "D",
+        "explanation": "Radius of larger circle R = 15 cm, radius of smaller circle r = 9 cm. Half of the chord = root(15 squared - 9 squared) = root(225 - 81) = root(144) = 12 cm. Length of chord = 2 * 12 = 24 cm. Thus, option D is correct."
+      },
+      {
+        "q": 29,
+        "topic": "Algebra",
+        "question": "If x + 1/x = 3, then the value of (x raised to 4 + 1 / x raised to 4) is:",
+        "options": {
+          "A": "41",
+          "B": "47",
+          "C": "49",
+          "D": "51"
+        },
+        "correct": "B",
+        "explanation": "x squared + 1/x squared = 3 squared - 2 = 7. x raised to 4 + 1/x raised to 4 = 7 squared - 2 = 47. Thus, option B is correct."
+      },
+      {
+        "q": 30,
+        "topic": "Number Systems",
+        "question": "The HCF and LCM of two numbers are 12 and 240 respectively. If one number is 60, the other number is:",
+        "options": {
+          "A": "48",
+          "B": "54",
+          "C": "56",
+          "D": "64"
+        },
+        "correct": "A",
+        "explanation": "Product of two numbers = HCF * LCM. Let other number be n. 60 * n = 12 * 240 -> n = 2880 / 60 = 48. Thus, option A is correct."
+      }
+    ],
+    "Reasoning and General Intelligence": [
+      {
+        "q": 1,
+        "topic": "Classification",
+        "question": "Three of the following four numbers are alike in a certain way and one is different. Find the odd one out.",
+        "options": {
+          "A": "121",
+          "B": "324",
+          "C": "289",
+          "D": "361"
+        },
+        "correct": "B",
+        "explanation": "Numbers 121, 289, and 361 are squares of prime numbers (11, 17, and 19 respectively). On the other hand, 324 is the square of an even composite number (18). Thus, option B is correct."
+      },
+      {
+        "q": 2,
+        "topic": "Coding and Decoding",
+        "question": "If in a certain code language, FLOWER is coded as '6-12-15-23-5-18', how will GARDEN be coded in that language?",
+        "options": {
+          "A": "7-1-18-4-5-13",
+          "B": "7-1-18-5-4-14",
+          "C": "8-2-19-5-5-14",
+          "D": "7-1-18-4-5-14"
+        },
+        "correct": "D",
+        "explanation": "Each letter is simply replaced by its direct numerical alphabetical position (F=6, L=12, O=15, W=23, E=5, R=18). Applying this to GARDEN: G=7, A=1, R=18, D=4, E=5, N=14 -> 7-1-18-4-5-14. Thus, option D is correct."
+      },
+      {
+        "q": 3,
+        "topic": "Series",
+        "question": "Find the missing term in the given letter-number series: AZ5, CX10, EV20, GT40, ?",
+        "options": {
+          "A": "IR80",
+          "B": "IR60",
+          "C": "IS80",
+          "D": "HR80"
+        },
+        "correct": "A",
+        "explanation": "First letters advance by +2 (A, C, E, G -> I). Second letters recede by -2 (Z, X, V, T -> R). Numbers are multiplied by 2 (5, 10, 20, 40 -> 80). Combining these gives IR80. Thus, option A is correct."
+      },
+      {
+        "q": 4,
+        "topic": "Analogy",
+        "question": "Select the option that is related to the third number in the same way as the second number is related to the first number: 56:30 :: 138:?",
+        "options": {
+          "A": "28",
+          "B": "32",
+          "C": "24",
+          "D": "36"
+        },
+        "correct": "C",
+        "explanation": "The relationship is that the second number is the product of the digits of the first number. For 56: 5 x 6 = 30. Applying this to 138: 1 x 3 x 8 = 24. Thus, option C is correct."
+      },
+      {
+        "q": 5,
+        "topic": "Series",
+        "question": "A number series is given with one term missing. Choose the correct alternative: 7, 15, 31, 63, 127, ?",
+        "options": {
+          "A": "251",
+          "B": "255",
+          "C": "253",
+          "D": "257"
+        },
+        "correct": "B",
+        "explanation": "Each term is multiplied by 2 and 1 is added (7x2+1 = 15, 15x2+1 = 31, 31x2+1 = 63, 63x2+1 = 127). Following this multiplicative recurrence pattern, 127 x 2 + 1 = 255. Thus, option B is correct."
+      },
+      {
+        "q": 6,
+        "topic": "Logical Reasoning",
+        "question": "If '+' means 'x', '-' means '+', 'x' means '/', and '/' means '-', find the value of the expression: 54 / 6 - 18 + 2 x 3",
+        "options": {
+          "A": "60",
+          "B": "56",
+          "C": "64",
+          "D": "68"
+        },
+        "correct": "A",
+        "explanation": "Replacing symbols according to the given rules: '/' becomes '-', '-' becomes '+', '+' becomes 'x', 'x' becomes '/'. The expression becomes: 54 - 6 + 18 x 2 / 3. Following BODMAS: first 18 x 2 = 36; then 36 / 3 = 12. The expression simplifies to 54 - 6 + 12 = 48 + 12 = 60. Thus, option A is correct."
+      },
+      {
+        "q": 7,
+        "topic": "Logical Reasoning",
+        "question": "A statement is followed by two arguments numbered I and II. Decide which of the arguments is strong. Statement: Should all luxury hotels in the country be banned? Arguments: I. Yes, they are centers of illegal activities and waste precious resources. II. No, they generate massive employment and boost international tourism revenue.",
+        "options": {
+          "A": "Only argument I is strong",
+          "B": "Both I and II are strong",
+          "C": "Neither I nor II is strong",
+          "D": "Only argument II is strong"
+        },
+        "correct": "D",
+        "explanation": "Argument I is weak because it is based on a sweeping generalization that lacks empirical backing across all luxury establishments. Argument II is strong as it directly points to vital economic benefits such as employment generation and foreign exchange earnings. Thus, option D is correct."
+      },
+      {
+        "q": 8,
+        "topic": "Analogy",
+        "question": "Select the option in which the numbers are related in the same way as are the numbers of the given set: (7, 15, 31)",
+        "options": {
+          "A": "(6, 13, 28)",
+          "B": "(8, 18, 36)",
+          "C": "(5, 11, 23)",
+          "D": "(9, 19, 40)"
+        },
+        "correct": "C",
+        "explanation": "In the given set (7, 15, 31), the pattern is multiplying by 2 and adding 1 (7x2+1 = 15, 15x2+1 = 31). Checking option C (5, 11, 23): 5x2+1 = 11, 11x2+1 = 23, which follows the exact same rule. Thus, option C is correct."
+      },
+      {
+        "q": 9,
+        "topic": "Coding and Decoding",
+        "question": "If 'PUNJAB' is written as 'QVOKBC', how is 'HARYANA' written in that code language?",
+        "options": {
+          "A": "IBQZBOA",
+          "B": "IBSZBOB",
+          "C": "IARZBOB",
+          "D": "IBSZBOA"
+        },
+        "correct": "B",
+        "explanation": "Each letter in the word is shifted forward by 1 position in the alphabet: P+1=Q, U+1=V, N+1=O, J+1=K, A+1=B, B+1=C. Applying the same +1 shift to HARYANA: H->I, A->B, R->S, Y->Z, A->B, N->O, A->B resulting in IBSZBOB. Thus, option B is correct."
+      },
+      {
+        "q": 10,
+        "topic": "Logical Reasoning",
+        "question": "Select the correct alternative to indicate the arrangement of the following words in a logical and meaningful order: 1. Diagnosis 2. Doctor 3. Sickness 4. Recovery 5. Medicine",
+        "options": {
+          "A": "3, 2, 1, 5, 4",
+          "B": "2, 3, 1, 5, 4",
+          "C": "3, 1, 2, 5, 4",
+          "D": "2, 1, 3, 5, 4"
+        },
+        "correct": "A",
+        "explanation": "The logical sequence of events in a medical context is: First a person falls sick (3), visits a doctor (2), the doctor performs a diagnosis (1), prescribes medicine (5), which leads to recovery (4). Thus, the correct order is 3, 2, 1, 5, 4. Thus, option A is correct."
+      },
+      {
+        "q": 11,
+        "topic": "Coding and Decoding",
+        "question": "In a code language, 'MILD' is coded as '12-8-11-3'. How will 'GATE' be coded in that code language?",
+        "options": {
+          "A": "F-Z-S-D",
+          "B": "5-26-18-3",
+          "C": "6-26-19-4",
+          "D": "6-25-19-4"
+        },
+        "correct": "C",
+        "explanation": "Each letter's alphabetical position is decreased by 1: M(13)->12, I(9)->8, L(12)->11, D(4)->3. Applying this -1 rule to GATE: G(7)->6, A(1)->26 (wrapping around Z), T(20)->19, E(5)->4. This gives 6-26-19-4. Thus, option C is correct."
+      },
+      {
+        "q": 12,
+        "topic": "Logical Reasoning",
+        "question": "Find the missing number in the given number matrix: 7, 4, 33 / 8, 5, 46 / 9, 6, ?",
+        "options": {
+          "A": "55",
+          "B": "58",
+          "C": "65",
+          "D": "61"
+        },
+        "correct": "D",
+        "explanation": "In each row, the third number is obtained by multiplying the first two numbers and adding the second number (e.g., 7 x 4 + 5 = 33; 8 x 5 + 6 = 46; 9 x 6 + 7 = 61). Thus, option D is correct."
+      },
+      {
+        "q": 13,
+        "topic": "Spatial Reasoning",
+        "question": "A person starts from point X, walks 8 m towards West, turns right and walks 6 m, turns right and walks 12 m, and finally turns right and walks 6 m. How far and in which direction is he from point X?",
+        "options": {
+          "A": "4 m, West",
+          "B": "4 m, East",
+          "C": "6 m, North",
+          "D": "2 m, East"
+        },
+        "correct": "B",
+        "explanation": "Taking point X as origin (0,0): Walks 8m West (-8,0), turns right (North) and walks 6m (-8,6), turns right (East) and walks 12m (4,6), turns right (South) and walks 6m (4,0). The final position is 4 meters East of point X. Thus, option B is correct."
+      },
+      {
+        "q": 14,
+        "topic": "Logical Reasoning",
+        "question": "When the midpoints of the three sides of a triangle are joined together, the original triangle is partitioned into four smaller congruent triangles. What is the total count of triangles in the resulting geometric configuration, including the original triangle?",
+        "options": {
+          "A": "5",
+          "B": "4",
+          "C": "9",
+          "D": "10"
+        },
+        "correct": "A",
+        "explanation": "Joining the midpoints of the three sides forms 4 smaller congruent inner triangles, which together with the 1 original outer triangle yield a total count of 4 + 1 = 5 triangles. Thus, option A is correct."
+      },
+      {
+        "q": 15,
+        "topic": "Logical Reasoning",
+        "question": "Which Venn diagram best represents the relationship among: Mammals, Cows, and Crows?",
+        "options": {
+          "A": "Three concentric circles",
+          "B": "Two disjoint circles inside a larger enclosing circle",
+          "C": "One circle enclosing another, with a third completely separate circle",
+          "D": "Three mutually intersecting circles"
+        },
+        "correct": "C",
+        "explanation": "Cows are entirely a subset of Mammals (one circle inside another), while Crows are birds, which are entirely separate from mammals (represented by a completely disjoint third circle). Thus, option C is correct."
+      },
+      {
+        "q": 16,
+        "topic": "Spatial Reasoning",
+        "question": "A cube painted red on all faces is cut into 64 smaller identical cubes. How many small cubes have exactly two faces painted?",
+        "options": {
+          "A": "8",
+          "B": "16",
+          "C": "32",
+          "D": "24"
+        },
+        "correct": "D",
+        "explanation": "For a cube cut into 64 smaller cubes, n = 4. Cubes with exactly two faces painted lie on the edges of the main cube, excluding corners. Each of the 12 edges contains (n - 2) such cubes. Thus, 12 x (4 - 2) = 24 cubes. Thus, option D is correct."
+      },
+      {
+        "q": 17,
+        "topic": "Logical Reasoning",
+        "question": "Select the correct combination of mathematical signs to sequentially replace the '*' signs and balance the given equation: 24 * 3 * 6 * 10 * 2",
+        "options": {
+          "A": "/, x, =, -",
+          "B": "x, /, =, +",
+          "C": "x, /, -, =",
+          "D": "+, -, x, ="
+        },
+        "correct": "B",
+        "explanation": "Testing option B (x, /, =, +) on 24 * 3 * 6 * 10 * 2: 24 x 3 / 6 = 10 + 2. Calculating left side: 24 x 3 = 72; 72 / 6 = 12. Calculating right side: 10 + 2 = 12. Both sides balance perfectly. Thus, option B is correct."
+      },
+      {
+        "q": 18,
+        "topic": "Logical Reasoning",
+        "question": "Statements: 1. All pens are books. 2. Some books are pencils. Conclusions: I. Some pens are pencils. II. Some pens are not pencils.",
+        "options": {
+          "A": "Neither I nor II follows",
+          "B": "Only conclusion I follows",
+          "C": "Only conclusion II follows",
+          "D": "Either I or II follows"
+        },
+        "correct": "A",
+        "explanation": "From the statements, pens are inside books, and pencils intersect books. Pens and pencils may or may not overlap. Since no definitive certainty is established for either conclusion independently, and they do not form a valid complementary pair covering all possibilities, neither conclusion follows definitively. Thus, option A is correct."
+      },
+      {
+        "q": 19,
+        "topic": "Logical Reasoning",
+        "question": "Pointing to a photograph, a man said, 'She is the daughter of my grandfather's only son.' How is the person in the photograph related to the man?",
+        "options": {
+          "A": "Mother",
+          "B": "Aunt",
+          "C": "Sister",
+          "D": "Wife"
+        },
+        "correct": "C",
+        "explanation": "My grandfather's only son is the man's father. The daughter of the man's father is his sister. Thus, option C is correct."
+      },
+      {
+        "q": 20,
+        "topic": "Logical Reasoning",
+        "question": "In a row of persons facing north, Manish is 15th from the left end and Suresh is 19th from the right end. If they interchange their positions, Manish becomes 27th from the left end. How many persons are there between Manish and Suresh in their original positions?",
+        "options": {
+          "A": "7",
+          "B": "9",
+          "C": "10",
+          "D": "11"
+        },
+        "correct": "D",
+        "explanation": "After interchanging positions, Manish's new position from the left end becomes 27th, while his original position was 15th from the left end. The number of persons between them is determined by taking Manish's new position from the left, subtracting his original position from the left, and subtracting 1 (27 - 15 - 1 = 11 persons). Thus, option D is correct."
+      },
+      {
+        "q": 21,
+        "topic": "Non-Verbal Reasoning",
+        "question": "A square paper sheet is folded twice along its medians to form a smaller square, a circular punch is made strictly inside the folded area, and the sheet is then unfolded. Select the option that correctly represents the unfolded paper pattern.",
+        "options": {
+          "A": "A sheet with a single hole in the middle",
+          "B": "A sheet with four symmetric holes distributed across the four quadrants",
+          "C": "A sheet with two holes along the horizontal crease",
+          "D": "A sheet with eight holes across the corners"
+        },
+        "correct": "B",
+        "explanation": "When a square paper is folded twice along its medians and a punch is made strictly within the interior of the folded quadrant, unfolding it across both vertical and horizontal folding axes results in four symmetric holes distributed evenly across the four quadrants. Thus, option B is correct."
+      },
+      {
+        "q": 22,
+        "topic": "Analogy",
+        "question": "Select the option that logically completes the following coding analogy: If BOOK is coded as 43, what is the code for PEN?",
+        "options": {
+          "A": "35",
+          "B": "32",
+          "C": "38",
+          "D": "40"
+        },
+        "correct": "A",
+        "explanation": "Summing the alphabetical positions of BOOK: B(2) + O(15) + O(15) + K(11) = 43. Applying this to PEN: P(16) + E(5) + N(14) = 35. Thus, option A is correct."
+      },
+      {
+        "q": 23,
+        "topic": "Series",
+        "question": "Find the missing number in the advanced cubic series: 7, 26, 63, 124, 215, ?",
+        "options": {
+          "A": "336",
+          "B": "348",
+          "C": "342",
+          "D": "354"
+        },
+        "correct": "C",
+        "explanation": "The series follows the precise cubic formula n cubed - 1 for integers n = 2, 3, 4, 5, 6 (2 cubed - 1 = 7, 3 cubed - 1 = 26, 4 cubed - 1 = 63, 5 cubed - 1 = 124, 6 cubed - 1 = 215). Continuing this for n = 7 gives 7 cubed - 1 = 343 - 1 = 342. Thus, option C is correct."
+      },
+      {
+        "q": 24,
+        "topic": "Spatial Reasoning",
+        "question": "Select the correct set of numbers that is similar to the set (9, 28, 65):",
+        "options": {
+          "A": "(2, 9, 28)",
+          "B": "(3, 10, 29)",
+          "C": "(7, 26, 63)",
+          "D": "(28, 65, 126)"
+        },
+        "correct": "D",
+        "explanation": "In the given set (9, 28, 65), the numbers follow the rule n cubed + 1 for n = 2, 3, 4 (2 cubed + 1 = 9, 3 cubed + 1 = 28, 4 cubed + 1 = 65). Checking option D (28, 65, 126): 3 cubed + 1 = 28, 4 cubed + 1 = 65, 5 cubed + 1 = 126, which perfectly follows the exact same rule for consecutive integers n = 3, 4, 5. Thus, option D is correct."
+      },
+      {
+        "q": 25,
+        "topic": "Classification",
+        "question": "A cube is colored red on opposite faces, green on another pair of opposite faces, and blue on the remaining pair. It is then cut into 125 smaller cubes of equal size. How many small cubes have at least two different colors on their faces?",
+        "options": {
+          "A": "44",
+          "B": "36",
+          "C": "48",
+          "D": "56"
+        },
+        "correct": "A",
+        "explanation": "For a 5x5x5 cube (n = 5), cubes with at least two colors are the corner cubes and edge cubes (excluding corners). There are 8 corners (each having 3 colors) and 12 edges, each having (n - 2) = 3 inner edge cubes (12 x 3 = 36 cubes with 2 colors). Total = 8 + 36 = 44 cubes. Thus, option A is correct."
+      },
+      {
+        "q": 26,
+        "topic": "Analogy",
+        "question": "Select the word pair in which the two words are related in the same way as the words in the given pair: Architect : Building",
+        "options": {
+          "A": "Sculptor : Stone",
+          "B": "Author : Book",
+          "C": "Painter : Brush",
+          "D": "Chef : Kitchen"
+        },
+        "correct": "B",
+        "explanation": "An architect creates or designs a building. Similarly, an author creates or writes a book. Thus, option B is correct."
+      },
+      {
+        "q": 27,
+        "topic": "Logical Reasoning",
+        "question": "A clock is set right at 8 a.m. The clock gains 10 minutes in 24 hours. What will be the true time when the clock indicates 1 p.m. on the following day?",
+        "options": {
+          "A": "12 : 45 p.m.",
+          "B": "12 : 50 p.m.",
+          "C": "12 : 48 p.m.",
+          "D": "12 : 55 p.m."
+        },
+        "correct": "C",
+        "explanation": "Time elapsed from 8 a.m. to 1 p.m. next day = 29 hours of faulty clock time. The faulty clock gains 10 minutes in 24 hours, meaning 1440 minutes of true time correspond to 1450 minutes of faulty time. Ratio of true time to faulty time is 144/145. Multiplying 29 hours by (144 / 145) gives 28.8 hours = 28 hours and 48 minutes of true time elapsed from 8 a.m., which equals 12 : 48 p.m. Thus, option C is correct."
+      },
+      {
+        "q": 28,
+        "topic": "Coding and Decoding",
+        "question": "In a certain code, 'MIND' is written as 'KGLB'. How is 'ARGUE' written in that code?",
+        "options": {
+          "A": "YQESC",
+          "B": "YPFSC",
+          "C": "XPESC",
+          "D": "YPESC"
+        },
+        "correct": "D",
+        "explanation": "Each letter in the word is shifted backward by 2 positions in the alphabet (M-2=K, I-2=G, N-2=L, D-2=B). Applying this -2 shift to ARGUE: A->Y, R->P, G->E, U->S, E->C, resulting in YPESC. Thus, option D is correct."
+      },
+      {
+        "q": 29,
+        "topic": "Logical Reasoning",
+        "question": "Find the odd number pair out of the given alternatives:",
+        "options": {
+          "A": "14 - 196",
+          "B": "16 - 272",
+          "C": "12 - 144",
+          "D": "15 - 225"
+        },
+        "correct": "B",
+        "explanation": "In options A, C, and D, the second number is the exact square of the first number (14 squared = 196; 12 squared = 144; 15 squared = 225). In option B, 16 squared = 256, but the second number is 272 (which is 16 squared + 16). Thus, option B is correct."
+      },
+      {
+        "q": 30,
+        "topic": "Logical Reasoning",
+        "question": "If January 1, 2024 was a Monday, what day of the week was January 1, 2025?",
+        "options": {
+          "A": "Wednesday",
+          "B": "Tuesday",
+          "C": "Thursday",
+          "D": "Friday"
+        },
+        "correct": "A",
+        "explanation": "The year 2024 is a leap year containing 366 days (52 weeks and 2 odd days). Therefore, January 1, 2025 will be 2 days ahead of Monday, which is Wednesday. Thus, option A is correct."
+      }
+    ],
+    "English Language and Comprehension": [
+      {
+        "q": 1,
+        "topic": "Grammar",
+        "question": "Identify the part of the sentence that contains an error: Scarcely had the Prime Minister stepped out of the aircraft than the gathered reporters rushed forward to raise critical questions.",
+        "options": {
+          "A": "Scarcely had the Prime Minister",
+          "B": "stepped out of the aircraft",
+          "C": "than the gathered reporters",
+          "D": "rushed forward to raise critical questions."
+        },
+        "correct": "C",
+        "explanation": "The correlative conjunction that pairs with 'Scarcely' or 'Hardly' is 'when', not 'than'. Therefore, 'than' must be replaced by 'when'. Thus, option C is correct."
+      },
+      {
+        "q": 2,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option to improve the underlined segment: The committee insisted that every member submits their annual financial report before the end of the fiscal quarter.",
+        "options": {
+          "A": "submit their annual financial report",
+          "B": "submits his annual financial report",
+          "C": "submitted their annual financial report",
+          "D": "submitting annual financial reports"
+        },
+        "correct": "A",
+        "explanation": "When verbs follow words like 'insist', 'demand', or 'recommend' in a subjunctive clause, the base form of the verb is required (e.g., 'every member submit'). Thus, option A is correct."
+      },
+      {
+        "q": 3,
+        "topic": "Voice and Narration",
+        "question": "Choose the correct passive voice form of the sentence: The administration has implemented rigorous safety protocols across all manufacturing units.",
+        "options": {
+          "A": "Rigorous safety protocols were implemented by the administration across all manufacturing units.",
+          "B": "Rigorous safety protocols have been implemented by the administration across all manufacturing units.",
+          "C": "Rigorous safety protocols are being implemented by the administration across all manufacturing units.",
+          "D": "Rigorous safety protocols had been implemented by the administration across all manufacturing units."
+        },
+        "correct": "B",
+        "explanation": "The active sentence is in the Present Perfect tense ('has implemented'). Its correct passive counterpart requires 'have been + past participle' since the subject 'protocols' is plural. Thus, option B is correct."
+      },
+      {
+        "q": 4,
+        "topic": "Voice and Narration",
+        "question": "Choose the correct indirect speech form of the sentence: The defense lawyer asked the witness, 'Where were you standing when the incident took place?'",
+        "options": {
+          "A": "The defense lawyer asked the witness where he had been standing when the incident took place.",
+          "B": "The defense lawyer asked the witness where was he standing when the incident took place.",
+          "C": "The defense lawyer asked the witness that where he was standing when the incident took place.",
+          "D": "The defense lawyer inquired the witness where he stood when the incident took place."
+        },
+        "correct": "A",
+        "explanation": "In indirect speech of a WH-question, the reporting verb is 'asked', the interrogative word order changes to assertive ('he had been standing'), and the past continuous tense 'were standing' shifts to the past perfect continuous tense. Thus, option A is correct."
+      },
+      {
+        "q": 5,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate synonym of the given word: EGREGIOUS",
+        "options": {
+          "A": "Exemplary",
+          "B": "Flagrant",
+          "C": "Concealed",
+          "D": "Minor"
+        },
+        "correct": "B",
+        "explanation": "Egregious means flagrant or extremely bad/shocking. Thus, option B is correct."
+      },
+      {
+        "q": 6,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate antonym of the given word: MITIGATE",
+        "options": {
+          "A": "Alleviate",
+          "B": "Aggravate",
+          "C": "Pacify",
+          "D": "Diminish"
+        },
+        "correct": "B",
+        "explanation": "Mitigate means to make less severe. Its direct antonym is 'aggravate', which means to make worse. Thus, option B is correct."
+      },
+      {
+        "q": 7,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate meaning of the given idiom: To cut the Gordian knot",
+        "options": {
+          "A": "To tie a complex rope structure",
+          "B": "To sever diplomatic ties abruptly",
+          "C": "To solve a notoriously difficult problem decisively",
+          "D": "To avoid a challenging confrontation"
+        },
+        "correct": "C",
+        "explanation": "The idiom 'to cut the Gordian knot' means to solve a very difficult problem that needs to be solved decisively. Thus, option C is correct."
+      },
+      {
+        "q": 8,
+        "topic": "Vocabulary",
+        "question": "Select the one-word substitution for: A person who maliciously damages or destroys public or private property.",
+        "options": {
+          "A": "Saboteur",
+          "B": "Iconoclast",
+          "C": "Vandal",
+          "D": "Mercenary"
+        },
+        "correct": "C",
+        "explanation": "A property destroyer who maliciously damages public or private property is a vandal. Thus, option C is correct."
+      },
+      {
+        "q": 9,
+        "topic": "Spelling",
+        "question": "Identify the word that is correctly spelled among the given alternatives:",
+        "options": {
+          "A": "Millenium",
+          "B": "Millennium",
+          "C": "Milenium",
+          "D": "Millenniam"
+        },
+        "correct": "B",
+        "explanation": "'Millennium' is the correct spelling, containing double 'l' and double 'n'. Thus, option B is correct."
+      },
+      {
+        "q": 10,
+        "topic": "Grammar",
+        "question": "Identify the part of the sentence that contains an error: Neither the CEO nor the board directors was willing to compromise on the corporate governance policy.",
+        "options": {
+          "A": "Neither the CEO nor",
+          "B": "the board directors was willing",
+          "C": "to compromise on the",
+          "D": "corporate governance policy."
+        },
+        "correct": "B",
+        "explanation": "When subjects are joined by 'neither... nor', the verb must agree with the nearer subject. Here, the nearer subject is 'board directors' (plural), so the verb should be 'were' instead of 'was'. Thus, option B is correct."
+      },
+      {
+        "q": 11,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option to improve the underlined segment: Despite of his immense wealth and global influence, he remains remarkably humble in his personal interactions.",
+        "options": {
+          "A": "in spite his immense wealth",
+          "B": "Despite his immense wealth",
+          "C": "Although his immense wealth",
+          "D": "Regardless from his immense wealth"
+        },
+        "correct": "B",
+        "explanation": "'Despite' does not take the preposition 'of' (unlike 'in spite of'). Therefore, 'Despite his immense wealth' is grammatically correct. Thus, option B is correct."
+      },
+      {
+        "q": 12,
+        "topic": "Voice and Narration",
+        "question": "Choose the correct active voice form of the sentence: The historical manuscript has been translated into multiple regional languages by the research team.",
+        "options": {
+          "A": "The research team translated the historical manuscript into multiple regional languages.",
+          "B": "The research team has translated the historical manuscript into multiple regional languages.",
+          "C": "The research team had translated the historical manuscript into multiple regional languages.",
+          "D": "The research team is translating the historical manuscript into multiple regional languages."
+        },
+        "correct": "B",
+        "explanation": "The passive sentence uses 'has been translated' (Present Perfect). The corresponding active voice must also be in the Present Perfect tense: 'The research team has translated...'. Thus, option B is correct."
+      },
+      {
+        "q": 13,
+        "topic": "Voice and Narration",
+        "question": "Choose the correct direct speech form of the sentence: The meteorologist warned the coastal residents that a severe cyclone was approaching rapidly.",
+        "options": {
+          "A": "The meteorologist warned the coastal residents, 'A severe cyclone is approaching rapidly.'",
+          "B": "The meteorologist said to the coastal residents, 'A severe cyclone was approaching rapidly.'",
+          "C": "The meteorologist told the coastal residents, 'A severe cyclone approaches rapidly.'",
+          "D": "The meteorologist announced to the residents, 'A severe cyclone will approach rapidly.'"
+        },
+        "correct": "A",
+        "explanation": "In converting indirect speech back to direct speech, the past continuous tense 'was approaching' corresponds to the present continuous tense 'is approaching' in direct quotation. Thus, option A is correct."
+      },
+      {
+        "q": 14,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate synonym of the given word: LUGUBRIOUS",
+        "options": {
+          "A": "Melancholy",
+          "B": "Energetic",
+          "C": "Facetious",
+          "D": "Optimistic"
+        },
+        "correct": "A",
+        "explanation": "Lugubrious means looking or sounding sad and dismal; melancholy is a direct synonym. Thus, option A is correct."
+      },
+      {
+        "q": 15,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate antonym of the given word: ESOTERIC",
+        "options": {
+          "A": "Obscure",
+          "B": "Arcane",
+          "C": "Comprehensible",
+          "D": "Recondite"
+        },
+        "correct": "C",
+        "explanation": "Esoteric means understood by or meant for only the select few who have special knowledge; comprehensible (understandable by most people) is its antonym. Thus, option C is correct."
+      },
+      {
+        "q": 16,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate meaning of the given idiom: To wash one's dirty linen in public",
+        "options": {
+          "A": "To launder clothes in an open marketplace",
+          "B": "To discuss private or embarrassing quarrels openly in front of strangers",
+          "C": "To clean up a messy public park",
+          "D": "To admit one's mistakes transparently"
+        },
+        "correct": "B",
+        "explanation": "The idiom means to discuss private or embarrassing family matters and disputes publicly. Thus, option B is correct."
+      },
+      {
+        "q": 17,
+        "topic": "Vocabulary",
+        "question": "Select the one-word substitution for: A remedy or medicine universally effective for all diseases or difficulties.",
+        "options": {
+          "A": "Panacea",
+          "B": "Antidote",
+          "C": "Placebo",
+          "D": "Elixir"
+        },
+        "correct": "A",
+        "explanation": "A panacea is a universal remedy or solution for all diseases or difficulties. Thus, option A is correct."
+      },
+      {
+        "q": 18,
+        "topic": "Spelling",
+        "question": "Identify the word that is correctly spelled among the given alternatives:",
+        "options": {
+          "A": "Lieutenant",
+          "B": "Leutenant",
+          "C": "Lieutinent",
+          "D": "Luetenant"
+        },
+        "correct": "A",
+        "explanation": "'Lieutenant' is the correct spelling. Thus, option A is correct."
+      },
+      {
+        "q": 19,
+        "topic": "Grammar",
+        "question": "Identify the part of the sentence that contains an error: No sooner did the theatrical performance commenced than the audience broke into thunderous applause.",
+        "options": {
+          "A": "No sooner did the theatrical performance",
+          "B": "commenced than the audience",
+          "C": "broke into thunderous",
+          "D": "applause."
+        },
+        "correct": "B",
+        "explanation": "The auxiliary verb 'did' must be followed by the base form of the main verb ('commence'), not the past participle 'commenced'. Thus, option B is correct."
+      },
+      {
+        "q": 20,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option to improve the underlined segment: Had I realized the gravity of the economic situation earlier, I would have taken corrective measures immediately.",
+        "options": {
+          "A": "I had taken corrective measures",
+          "B": "I would have taken corrective measures",
+          "C": "I took corrective measures",
+          "D": "I will have taken corrective measures"
+        },
+        "correct": "B",
+        "explanation": "In third conditional sentences expressing unreal past conditions ('Had I realized...'), the main clause requires 'would have + past participle'. Thus, option B is correct."
+      },
+      {
+        "q": 21,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate synonym of the given word: ZEALOT",
+        "options": {
+          "A": "Moderate",
+          "B": "Fanatic",
+          "C": "Pragmatist",
+          "D": "Skeptic"
+        },
+        "correct": "B",
+        "explanation": "A zealot is a person who is uncompromising in pursuit of their political or religious ideals; a fanatic is a direct synonym. Thus, option B is correct."
+      },
+      {
+        "q": 22,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate antonym of the given word: CANDID",
+        "options": {
+          "A": "Frank",
+          "B": "Sincere",
+          "C": "Evasive",
+          "D": "Artless"
+        },
+        "correct": "C",
+        "explanation": "Candid means truthful and straightforward; evasive (avoiding commitment or directness) is its antonym. Thus, option C is correct."
+      },
+      {
+        "q": 23,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate meaning of the given idiom: To play second fiddle",
+        "options": {
+          "A": "To lead a musical orchestra",
+          "B": "To take a subordinate role to someone else",
+          "C": "To perform a backup task temporarily",
+          "D": "To disagree strongly with leadership"
+        },
+        "correct": "B",
+        "explanation": "To play second fiddle means to hold a subordinate or secondary position in relation to someone else. Thus, option B is correct."
+      },
+      {
+        "q": 24,
+        "topic": "Vocabulary",
+        "question": "Select the one-word substitution for: A person who can use both hands with equal ease and dexterity.",
+        "options": {
+          "A": "Ambidextrous",
+          "B": "Versatile",
+          "C": "Omnipotent",
+          "D": "Pragmatic"
+        },
+        "correct": "A",
+        "explanation": "Ambidextrous describes someone able to use both the right and left hands equally well. Thus, option A is correct."
+      },
+      {
+        "q": 25,
+        "topic": "Spelling",
+        "question": "Identify the word that is correctly spelled among the given alternatives:",
+        "options": {
+          "A": "Bureaucracy",
+          "B": "Beurocracy",
+          "C": "Buereaucracy",
+          "D": "Buerocracy"
+        },
+        "correct": "A",
+        "explanation": "'Bureaucracy' is the correct spelling. Thus, option A is correct."
+      },
+      {
+        "q": 26,
+        "topic": "Grammar",
+        "question": "Identify the part of the sentence that contains an error: Each of the participating athletes were given a commemorative medal and a certificate.",
+        "options": {
+          "A": "Each of the participating",
+          "B": "athletes were given",
+          "C": "a commemorative medal",
+          "D": "and a certificate."
+        },
+        "correct": "B",
+        "explanation": "The subject pronoun 'Each' is singular, so it must take a singular verb ('was') instead of 'were'. Thus, option B is correct."
+      },
+      {
+        "q": 27,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option to improve the underlined segment: She is one of those proficient scholars who has consistently contributed to groundbreaking research.",
+        "options": {
+          "A": "have consistently contributed",
+          "B": "have consistently contributes",
+          "C": "has consistently contributing",
+          "D": "had consistently contributed"
+        },
+        "correct": "A",
+        "explanation": "The relative pronoun 'who' refers to the antecedent 'scholars' (plural), so the verb in the relative clause must be plural ('scholars who have consistently contributed'). Thus, option A is correct."
+      },
+      {
+        "q": 28,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate synonym of the given word: PRAGMATIC",
+        "options": {
+          "A": "Idealistic",
+          "B": "Practical",
+          "C": "Visionary",
+          "D": "Theoretical"
+        },
+        "correct": "B",
+        "explanation": "Pragmatic means dealing with things sensibly and realistically; practical is a direct synonym. Thus, option B is correct."
+      },
+      {
+        "q": 29,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate antonym of the given word: OPAQUE",
+        "options": {
+          "A": "Murky",
+          "B": "Cloudy",
+          "C": "Transparent",
+          "D": "Turbid"
+        },
+        "correct": "C",
+        "explanation": "Opaque means not transparent or clear; transparent (allowing light to pass through clearly) is its antonym. Thus, option C is correct."
+      },
+      {
+        "q": 30,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate meaning of the given idiom: To burn the candle at both ends",
+        "options": {
+          "A": "To light a room extravagantly",
+          "B": "To exhaust oneself by overworking or staying up late",
+          "C": "To waste valuable resources carelessly",
+          "D": "To start a project from two opposite sides"
+        },
+        "correct": "B",
+        "explanation": "To burn the candle at both ends means to exhaust oneself by working excessively hard or leading a very hectic lifestyle. Thus, option B is correct."
+      },
+      {
+        "q": 31,
+        "topic": "Vocabulary",
+        "question": "Select the one-word substitution for: An obsessive desire to set things on fire.",
+        "options": {
+          "A": "Kleptomania",
+          "B": "Pyromania",
+          "C": "Megalomania",
+          "D": "Dipsomania"
+        },
+        "correct": "B",
+        "explanation": "Pyromania is an impulse control disorder characterized by an obsessive urge to set fires. Thus, option B is correct."
+      },
+      {
+        "q": 32,
+        "topic": "Grammar",
+        "question": "Identify the word that is correctly spelled among the given alternatives:",
+        "options": {
+          "A": "Accomodate",
+          "B": "Acomodate",
+          "C": "Accommodate",
+          "D": "Acommodate"
+        },
+        "correct": "C",
+        "explanation": "'Accommodate' contains double 'c' and double 'm'. Thus, option C is correct."
+      },
+      {
+        "q": 33,
+        "topic": "Grammar",
+        "question": "Identify the part of the sentence that contains an error: Supposing if the weather deteriorates further tomorrow, the outdoor summit will be postponed.",
+        "options": {
+          "A": "Supposing if the weather",
+          "B": "deteriorates further tomorrow,",
+          "C": "the outdoor summit",
+          "D": "will be postponed."
+        },
+        "correct": "A",
+        "explanation": "Using 'Supposing' and 'if' together is redundant because both introduce a conditional hypothesis. Thus, option A is correct."
+      },
+      {
+        "q": 34,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option to improve the underlined segment: No sooner had the CEO entered the boardroom when the shareholders started voicing their grievances.",
+        "options": {
+          "A": "than the shareholders",
+          "B": "then the shareholders",
+          "C": "before the shareholders",
+          "D": "after the shareholders"
+        },
+        "correct": "A",
+        "explanation": "The correlative conjunction for 'No sooner' is always 'than'. Thus, option A is correct."
+      },
+      {
+        "q": 35,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate synonym of the given word: EPHEMERAL",
+        "options": {
+          "A": "Permanent",
+          "B": "Transient",
+          "C": "Enduring",
+          "D": "Perpetual"
+        },
+        "correct": "B",
+        "explanation": "Ephemeral means lasting for a very short time; transient is a direct synonym. Thus, option B is correct."
+      },
+      {
+        "q": 36,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate antonym of the given word: ALACRITY",
+        "options": {
+          "A": "Celerity",
+          "B": "Promptness",
+          "C": "Eagerness",
+          "D": "Apathy"
+        },
+        "correct": "D",
+        "explanation": "Alacrity means brisk and cheerful readiness; apathy (lack of enthusiasm or interest) is its antonym. Thus, option D is correct."
+      },
+      {
+        "q": 37,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate meaning of the given idiom: To throw cold water on",
+        "options": {
+          "A": "To extinguish a burning fire",
+          "B": "To discourage or dampen enthusiasm for a plan",
+          "C": "To criticize someone harshly in public",
+          "D": "To ruin an ongoing project deliberately"
+        },
+        "correct": "B",
+        "explanation": "To throw cold water on a plan or idea means to discourage people from it or dampen their enthusiasm. Thus, option B is correct."
+      },
+      {
+        "q": 38,
+        "topic": "Vocabulary",
+        "question": "Select the one-word substitution for: A person who writes and edits dictionaries.",
+        "options": {
+          "A": "Lexicographer",
+          "B": "Calligrapher",
+          "C": "Cartographer",
+          "D": "Bibliophile"
+        },
+        "correct": "A",
+        "explanation": "A lexicographer is an author or compiler of a dictionary. Thus, option A is correct."
+      },
+      {
+        "q": 39,
+        "topic": "Spelling",
+        "question": "Identify the word that is correctly spelled among the given alternatives:",
+        "options": {
+          "A": "Maintainance",
+          "B": "Maintenance",
+          "C": "Maintenence",
+          "D": "Maintinance"
+        },
+        "correct": "B",
+        "explanation": "'Maintenance' is the correct spelling. Thus, option B is correct."
+      },
+      {
+        "q": 40,
+        "topic": "Grammar",
+        "question": "Identify the part of the sentence that contains an error: The manager explained the employees that the new workflow guidelines were mandatory.",
+        "options": {
+          "A": "The manager explained",
+          "B": "the employees that",
+          "C": "the new workflow guidelines",
+          "D": "were mandatory."
+        },
+        "correct": "B",
+        "explanation": "The verb 'explain' cannot take a direct indirect object without the preposition 'to'. The correct phrase is 'explained to the employees'. Therefore, option B contains the error. Thus, option B is correct."
+      },
+      {
+        "q": 41,
+        "topic": "Reading Comprehension",
+        "question": "Read the passage below and answer the question: Corporate restructuring in modern economies is primarily driven by rapid technological disruption and shifting market demands. Companies that fail to adapt face operational obsolescence and severe loss of market share. According to the reading passage context, what is the primary catalyst behind modern corporate restructuring?",
+        "options": {
+          "A": "Rapid technological disruption and shifting market demands",
+          "B": "Strict government regulations and taxation policies",
+          "C": "Declining global population and labor shortages",
+          "D": "Excess capital accumulation in traditional sectors"
+        },
+        "correct": "A",
+        "explanation": "Corporate restructuring in modern economies is primarily driven by rapid technological disruption and shifting market demands. Thus, option A is correct."
+      },
+      {
+        "q": 42,
+        "topic": "Reading Comprehension",
+        "question": "What major risk does a company face if it fails to adapt to the changes described in the passage?",
+        "options": {
+          "A": "Immediate legal prosecution",
+          "B": "Obsolescence and loss of competitive market share",
+          "C": "Mandatory dissolution by shareholders",
+          "D": "Massive physical infrastructure damage"
+        },
+        "correct": "B",
+        "explanation": "Failing to adapt to these technological and market changes can lead to operational obsolescence and severe loss of market share. Thus, option B is correct."
+      },
+      {
+        "q": 43,
+        "topic": "Grammar",
+        "question": "Select the most appropriate word for blank space in the sentence: Education is the cornerstone upon which a progressive society is ___.",
+        "options": {
+          "A": "demolished",
+          "B": "neglected",
+          "C": "constructed",
+          "D": "abandoned"
+        },
+        "correct": "C",
+        "explanation": "'Constructed' fits the metaphor of education being the cornerstone of a progressive society. Thus, option C is correct."
+      },
+      {
+        "q": 44,
+        "topic": "Grammar",
+        "question": "Select the most appropriate word for blank space in the sentence: It fosters critical thinking and equips individuals with the necessary skills to ___ complex challenges.",
+        "options": {
+          "A": "evade",
+          "B": "aggravate",
+          "C": "exacerbate",
+          "D": "navigate"
+        },
+        "correct": "D",
+        "explanation": "'Navigate' means to successfully steer through or deal with complex challenges. Thus, option D is correct."
+      },
+      {
+        "q": 45,
+        "topic": "Grammar",
+        "question": "Select the most appropriate word for blank space in the sentence: Therefore, sustained investment in public schooling remains a matter of ___ national priority.",
+        "options": {
+          "A": "paramount",
+          "B": "trivial",
+          "C": "secondary",
+          "D": "negligible"
+        },
+        "correct": "A",
+        "explanation": "'Paramount' means more important than anything else; supreme, which fits national priority. Thus, option A is correct."
+      }
+    ],
+    "General Awareness": [
+      {
+        "q": 1,
+        "topic": "General Polity",
+        "question": "Which constitutional amendment act introduced the Goods and Services Tax (GST) regime in India, restructuring the indirect taxation framework?",
+        "options": {
+          "A": "91st Amendment Act",
+          "B": "99th Amendment Act",
+          "C": "101st Amendment Act",
+          "D": "103rd Amendment Act"
+        },
+        "correct": "C",
+        "explanation": "The 101st Constitutional Amendment Act, 2016, introduced the GST, empowering both the Centre and States to levy and collect indirect taxes on supply of goods and services. Thus, option C is correct."
+      },
+      {
+        "q": 2,
+        "topic": "Current Affairs",
+        "question": "During the Indian National Movement, which specific Viceroy was associated with the passing of the Vernacular Press Act of 1878 and the Arms Act, both of which drew severe nationalist backlash?",
+        "options": {
+          "A": "Lord Lytton",
+          "B": "Lord Ripon",
+          "C": "Lord Curzon",
+          "D": "Lord Dufferin"
+        },
+        "correct": "A",
+        "explanation": "Lord Lytton served as Viceroy from 1876 to 1880. His reactionary policies, including the Vernacular Press Act and the Arms Act of 1878, alongside the costly Second Anglo-Afghan War, catalyzed intense political awakening and nationalism in India. Thus, option A is correct."
+      },
+      {
+        "q": 3,
+        "topic": "Current Affairs",
+        "question": "Regarding the atmospheric layers and temperature profiles, which of the following statements is most accurate?",
+        "options": {
+          "A": "Temperature increases steadily with height across all layers from the Earth's surface to the thermosphere.",
+          "B": "The stratosphere exhibits a temperature inversion because ultraviolet solar radiation is absorbed by ozone molecules.",
+          "C": "The troposphere experiences a temperature drop because it is heated directly by incoming solar radiation.",
+          "D": "The mesosphere is characterized by a steady increase in temperature due to direct solar radiation absorption."
+        },
+        "correct": "B",
+        "explanation": "In the stratosphere, temperature increases with altitude (temperature inversion) because ozone absorbs high-energy UV radiation from the sun. The troposphere is heated from below by terrestrial radiation from Earth's surface. Thus, option B is correct."
+      },
+      {
+        "q": 4,
+        "topic": "Economic Scene",
+        "question": "Which of the following fiscal measures is typically adopted by a government to combat severe demand-pull inflation in an economy?",
+        "options": {
+          "A": "Reducing the statutory liquidity ratio and cutting repo rates",
+          "B": "Expanding credit availability through targeted subsidies",
+          "C": "Increasing direct tax rates while simultaneously curtailing non-developmental public expenditure",
+          "D": "Devaluing the domestic currency to boost export demand"
+        },
+        "correct": "C",
+        "explanation": "To curb demand-pull inflation, contractionary fiscal policy is required. Raising direct taxes reduces disposable income, and reducing public expenditure cools aggregate demand in the economy. Thus, option C is correct."
+      },
+      {
+        "q": 5,
+        "topic": "General Polity",
+        "question": "Who formally appoints the Chief Election Commissioner of India under the constitutional framework of Article 324?",
+        "options": {
+          "A": "The Prime Minister upon parliamentary consensus",
+          "B": "The President of India",
+          "C": "The Collegium consisting of the Chief Justice and senior judges",
+          "D": "A joint parliamentary committee vote"
+        },
+        "correct": "B",
+        "explanation": "The Chief Election Commissioner is formally appointed by the President of India under Article 324, subject to the procedure prescribed by Parliament. Thus, option B is correct."
+      },
+      {
+        "q": 6,
+        "topic": "Current Affairs",
+        "question": "With reference to the implementation and focus of India's early Five-Year Plans, which statement correctly differentiates the First and Second plans?",
+        "options": {
+          "A": "The First Plan prioritized agriculture and irrigation to tackle food shortages, whereas the Second Plan focused on heavy industrialization under the Mahalanobis strategy.",
+          "B": "The First Plan focused on atomic energy development, whereas the Second Plan focused entirely on land reforms.",
+          "C": "The First Plan was based on the Gadgil strategy of decentralized farming, whereas the Second Plan nationalized all commercial banks.",
+          "D": "Both plans allocated over 60 percent of public outlay exclusively to heavy machinery and defense production."
+        },
+        "correct": "A",
+        "explanation": "The First Five-Year Plan addressed agrarian crises and food deficits, while the Second Plan shifted focus toward rapid industrialization and heavy capital goods industries under the Mahalanobis model. Thus, option A is correct."
+      },
+      {
+        "q": 7,
+        "topic": "Geography",
+        "question": "Analyze the drainage characteristics of the Peninsular river system in India. Which of the following rivers flows through a structural rift valley and discharges into the Arabian Sea?",
+        "options": {
+          "A": "Godavari",
+          "B": "Mahanadi",
+          "C": "Narmada",
+          "D": "Cauvery"
+        },
+        "correct": "C",
+        "explanation": "The Narmada flows westward in a structural rift valley situated specifically between the Vindhya Range to the north and the Satpura Range to the south, discharging its waters into the Gulf of Khambhat (Arabian Sea). Thus, option C is correct."
+      },
+      {
+        "q": 8,
+        "topic": "Economic Scene",
+        "question": "Which of the following micronutrients or vitamins plays a crucial role as a coenzyme in collagen synthesis and acts as a potent biological antioxidant protecting cells from oxidative stress?",
+        "options": {
+          "A": "Vitamin A",
+          "B": "Vitamin D",
+          "C": "Vitamin C",
+          "D": "Vitamin K"
+        },
+        "correct": "C",
+        "explanation": "Vitamin C (ascorbic acid) is essential for the hydroxylation of proline and lysine in collagen synthesis, and it serves as a powerful water-soluble antioxidant. Thus, option C is correct."
+      },
+      {
+        "q": 9,
+        "topic": "Current Affairs",
+        "question": "The magnificent rock-cut architecture of the Kailash Temple at Ellora was commissioned and executed under the patronage of which ruling dynasty?",
+        "options": {
+          "A": "Pallava dynasty",
+          "B": "Rashtrakuta dynasty",
+          "C": "Chola dynasty",
+          "D": "Western Ganga dynasty"
+        },
+        "correct": "B",
+        "explanation": "The monolithic rock-cut Kailash Temple (Cave 16) at Ellora was built during the 8th century by the Rashtrakuta king Krishna I, showcasing exquisite Dravidian rock-cut architecture. Thus, option B is correct."
+      },
+      {
+        "q": 10,
+        "topic": "Economic Scene",
+        "question": "In the context of central banking operations, when the Reserve Bank of India (RBI) acts as the 'lender of last resort', what precise institutional safety net does it provide?",
+        "options": {
+          "A": "It extends emergency liquidity and short-term financial accommodation to solvent commercial banks facing sudden, acute cash withdrawals to prevent systemic collapse.",
+          "B": "It guarantees all corporate bonds issued by non-banking financial companies.",
+          "C": "It bails out insolvent commercial enterprises by acquiring their equity shares directly.",
+          "D": "It directly covers retail consumer deposits up to unlimited statutory limits."
+        },
+        "correct": "A",
+        "explanation": "The lender of last resort function involves providing emergency credit to commercial banks that are solvent but experiencing temporary, severe liquidity crises, averting panics. Thus, option A is correct."
+      },
+      {
+        "q": 11,
+        "topic": "Current Affairs",
+        "question": "A body is thrown vertically upwards with a given initial velocity. At its highest point of vertical ascent, which of the following statements regarding its kinematics and dynamics is correct?",
+        "options": {
+          "A": "Both velocity and acceleration are zero.",
+          "B": "Velocity is maximum and acceleration is zero.",
+          "C": "Velocity is zero and acceleration changes direction.",
+          "D": "Velocity is zero while acceleration remains constant and directed downwards."
+        },
+        "correct": "D",
+        "explanation": "At the peak of its trajectory, the instantaneous velocity of the body becomes zero before it reverses direction. However, the acceleration due to gravity remains constant at approximately 9.8 m/s squared acting downwards throughout the flight. Thus, option D is correct."
+      },
+      {
+        "q": 12,
+        "topic": "Current Affairs",
+        "question": "Which prominent moderate nationalist leader founded the Servants of India Society in 1905 to train dedicated national missionaries for social service and political reform?",
+        "options": {
+          "A": "Dadabhai Naoroji",
+          "B": "Gopal Krishna Gokhale",
+          "C": "Surendranath Banerjee",
+          "D": "M. G. Ranade"
+        },
+        "correct": "B",
+        "explanation": "Gopal Krishna Gokhale founded the Servants of India Society in Pune in 1905 to promote social upliftment, education, and civic reform through dedicated public service. Thus, option B is correct."
+      },
+      {
+        "q": 13,
+        "topic": "General Polity",
+        "question": "Consider the following statements regarding the writ jurisdiction of the Supreme Court and High Courts in India: 1. The Supreme Court can issue writs specifically for the enforcement of Fundamental Rights under Article 32. 2. The High Courts can issue writs not only for Fundamental Rights but also for any other purpose under Article 226. 3. The writ of Quo-Warranto can be sought by any private individual regardless of whether their personal rights have been infringed. Which of the statements given above are correct?",
+        "options": {
+          "A": "1, 2 and 3",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1 and 2 only"
+        },
+        "correct": "A",
+        "explanation": "All three statements are legally accurate. Under Article 32, the Supreme Court's writ jurisdiction is specifically confined to the enforcement of Fundamental Rights, whereas Article 226 empowers High Courts to issue writs for Fundamental Rights and statutory rights. Furthermore, Quo-Warranto is an exception to the strict rule of locus standi, meaning it can be sought by any public-spirited individual to question the legality of a person holding a public office even without direct personal infringement. Thus, option A is correct."
+      },
+      {
+        "q": 14,
+        "topic": "Current Affairs",
+        "question": "Among common structural metals, which metal exhibits the highest thermal and electrical conductivity under standard conditions?",
+        "options": {
+          "A": "Silver",
+          "B": "Aluminum",
+          "C": "Copper",
+          "D": "Gold"
+        },
+        "correct": "A",
+        "explanation": "Silver has the highest electrical and thermal conductivity of all known metals due to the behavior of its outer valence electrons. Thus, option A is correct."
+      },
+      {
+        "q": 15,
+        "topic": "Current Affairs",
+        "question": "Which physiographic division of India is structurally considered one of the most stable landmasses, formed by ancient metamorphic and igneous rock formations?",
+        "options": {
+          "A": "The Northern Plains",
+          "B": "The Coastal Plains",
+          "C": "The Peninsular Plateau",
+          "D": "The Himalayan Mountain Belt"
+        },
+        "correct": "C",
+        "explanation": "The Peninsular Plateau is part of the ancient Gondwana landmass, making it a stable geological shield composed of old crystalline, igneous, and metamorphic rocks. Thus, option C is correct."
+      },
+      {
+        "q": 16,
+        "topic": "Current Affairs",
+        "question": "Under recent technological initiatives in India's space program, what is the primary objective designated for the 'NISAR' mission developed jointly by ISRO and NASA?",
+        "options": {
+          "A": "Manned lunar surface exploration and sample return",
+          "B": "High-resolution global Earth observation using advanced dual-frequency synthetic aperture radar",
+          "C": "Establishing interplanetary communication relays near Mars",
+          "D": "Solar corona monitoring and space weather forecasting"
+        },
+        "correct": "B",
+        "explanation": "NISAR (NASA-ISRO Synthetic Aperture Radar) is a joint earth observation mission designed to measure changes in Earth's ecosystems, ice sheets, and natural hazards using advanced radar imaging. Thus, option B is correct."
+      },
+      {
+        "q": 17,
+        "topic": "Economic Scene",
+        "question": "In national income accounting, what macroeconomic adjustment distinguishes Gross National Product (GNP) from Gross Domestic Product (GDP)?",
+        "options": {
+          "A": "Subtraction of indirect business taxes and depreciation",
+          "B": "Addition of net public transfer payments",
+          "C": "Addition of Net Factor Income from Abroad (NFIA)",
+          "D": "Exclusion of government capital expenditure"
+        },
+        "correct": "C",
+        "explanation": "GDP measures total production within domestic borders, whereas GNP adds Net Factor Income from Abroad (income earned by domestic residents overseas minus income earned by foreigners domestically). Thus, option C is correct."
+      },
+      {
+        "q": 18,
+        "topic": "Current Affairs",
+        "question": "Which plant hormone is principally implicated in mediating stomatal closure during periods of severe water stress and inducing seed dormancy?",
+        "options": {
+          "A": "Auxin",
+          "B": "Cytokinin",
+          "C": "Gibberellin",
+          "D": "Abscisic Acid"
+        },
+        "correct": "D",
+        "explanation": "Abscisic Acid acts as a major plant stress hormone, signaling stomatal closure to conserve water during drought conditions and maintaining seed dormancy. Thus, option D is correct."
+      },
+      {
+        "q": 19,
+        "topic": "History",
+        "question": "Which Act transferred the governance of India directly from the East India Company to the British Crown following the suppression of the 1857 Revolt?",
+        "options": {
+          "A": "Government of India Act 1858",
+          "B": "Indian Councils Act 1861",
+          "C": "Queen Victoria's Proclamation Act",
+          "D": "Regulating Act 1873"
+        },
+        "correct": "A",
+        "explanation": "The Government of India Act 1858 liquidated the East India Company's rule in India, transferred administrative control directly to the British Crown, and created the office of Secretary of State for India. Thus, option A is correct."
+      },
+      {
+        "q": 20,
+        "topic": "Current Affairs",
+        "question": "Which of the following monetary policy instruments is used directly by the Reserve Bank of India to manage government securities and regulate system-wide liquidity through open market operations?",
+        "options": {
+          "A": "Enacting statutory minimum corporate tax surcharges",
+          "B": "Purchase and sale of government securities in the secondary market",
+          "C": "Direct fixation of minimum support prices for agricultural commodities",
+          "D": "Adjustment of personal income tax slabs"
+        },
+        "correct": "B",
+        "explanation": "Open Market Operations involve the direct buying and selling of government securities by the central bank to adjust the liquidity conditions in the commercial banking system. Thus, option B is correct."
+      },
+      {
+        "q": 21,
+        "topic": "General Polity",
+        "question": "Under the constitutional framework of Indian Polity, which specific body or authority is mandated to recommend the distribution of tax revenues between the Union and the States?",
+        "options": {
+          "A": "The Finance Commission of India",
+          "B": "NITI Aayog",
+          "C": "The Reserve Bank of India",
+          "D": "The Public Accounts Committee"
+        },
+        "correct": "A",
+        "explanation": "Constituted under Article 280 of the Constitution, the Finance Commission is a constitutional body that recommends principles governing the vertical and horizontal sharing of tax proceeds between the Centre and States. Thus, option A is correct."
+      },
+      {
+        "q": 22,
+        "topic": "Current Affairs",
+        "question": "Which flagship central sector scheme in India integrates the JAM trinity (Jan Dhan, Aadhaar, Mobile) to drive direct benefit transfers and financial inclusion?",
+        "options": {
+          "A": "National Infrastructure Pipeline",
+          "B": "Make in India Initiative",
+          "C": "Pradhan Mantri Jan Dhan Yojana",
+          "D": "Production Linked Incentive Scheme"
+        },
+        "correct": "C",
+        "explanation": "Pradhan Mantri Jan Dhan Yojana remains the foundational anchor for India's digital public infrastructure, facilitating direct benefit transfers and unprecedented financial inclusion. Thus, option C is correct."
+      },
+      {
+        "q": 23,
+        "topic": "Scientific Research",
+        "question": "What electrochemical transformation occurs at the anode during the operation of a standard galvanic or electrolytic cell?",
+        "options": {
+          "A": "Reduction, involving the gain of electrons.",
+          "B": "Neutralization of protons without electron transfer.",
+          "C": "Protonation of solvent molecules.",
+          "D": "Oxidation, involving the loss of electrons."
+        },
+        "correct": "D",
+        "explanation": "By definition in electrochemistry, the anode is always the electrode where oxidation (loss of electrons) takes place, regardless of whether the cell is galvanic or electrolytic. Thus, option D is correct."
+      },
+      {
+        "q": 24,
+        "topic": "Current Affairs",
+        "question": "Which international award honors individuals who have advanced human development by improving the quality, quantity, or availability of food in the world?",
+        "options": {
+          "A": "Abel Prize",
+          "B": "World Food Prize",
+          "C": "Pritzker Architecture Prize",
+          "D": "Turing Award"
+        },
+        "correct": "B",
+        "explanation": "The World Food Prize is the foremost international award recognizing individuals who have advanced human development by improving the quality, quantity, or availability of food in the world. Thus, option B is correct."
+      },
+      {
+        "q": 25,
+        "topic": "Current Affairs",
+        "question": "Which global financial organization publishes the flagship 'Global Financial Stability Report' alongside the 'World Economic Outlook'?",
+        "options": {
+          "A": "International Monetary Fund (IMF)",
+          "B": "World Bank Group",
+          "C": "Asian Infrastructure Investment Bank",
+          "D": "Bank for International Settlements"
+        },
+        "correct": "A",
+        "explanation": "The IMF publishes two major biannual analytical reports that guide global economic policy: the World Economic Outlook and the Global Financial Stability Report. Thus, option A is correct."
+      }
+    ],
+    "Computer Knowledge": [
+      {
+        "q": 1,
+        "topic": "Office Applications",
+        "question": "Which of the following shortcut keys is used to open the Find and Replace dialog box in Microsoft Word?",
+        "options": {
+          "A": "Ctrl + F",
+          "B": "Ctrl + H",
+          "C": "Ctrl + G",
+          "D": "Ctrl + R"
+        },
+        "correct": "B",
+        "explanation": "In Microsoft Word, Ctrl + H opens the Find and Replace dialog box directly focused on the Replace tab, whereas Ctrl + F opens the Navigation pane for searching. Thus, option B is correct."
+      },
+      {
+        "q": 2,
+        "topic": "Computer Basics",
+        "question": "Which component of the Central Processing Unit (CPU) is responsible for performing arithmetic operations such as addition and subtraction, and logical operations such as comparisons?",
+        "options": {
+          "A": "Control Unit",
+          "B": "Arithmetic Logic Unit",
+          "C": "Registers",
+          "D": "Cache Memory"
+        },
+        "correct": "B",
+        "explanation": "The Arithmetic Logic Unit (ALU) is the core component within the CPU dedicated to executing all mathematical and logical instructions. Thus, option B is correct."
+      },
+      {
+        "q": 3,
+        "topic": "Internet and Networking",
+        "question": "In computer networking, which of the following protocols is primarily used to securely transfer web pages over the internet from a web server to a client browser?",
+        "options": {
+          "A": "FTP",
+          "B": "SMTP",
+          "C": "HTTPS",
+          "D": "SNMP"
+        },
+        "correct": "C",
+        "explanation": "HTTPS (Hypertext Transfer Protocol Secure) encrypts web traffic using SSL/TLS, ensuring secure communication between a web browser and a server. Thus, option C is correct."
+      },
+      {
+        "q": 4,
+        "topic": "Software",
+        "question": "What is the primary function of an operating system's kernel?",
+        "options": {
+          "A": "To provide a graphical user interface for running desktop applications",
+          "B": "To act as the core central interface between the computer's hardware and its software applications",
+          "C": "To compile high-level programming code into machine language",
+          "D": "To manage local network routing protocols and firewall security rules"
+        },
+        "correct": "B",
+        "explanation": "The kernel is the foundational core of an operating system that maintains complete control over system hardware, memory management, and process execution. Thus, option B is correct."
+      },
+      {
+        "q": 5,
+        "topic": "Computer Basics",
+        "question": "Which of the following is considered volatile memory, meaning it loses all stored data when the computer's power supply is turned off?",
+        "options": {
+          "A": "Read-Only Memory (ROM)",
+          "B": "Hard Disk Drive (HDD)",
+          "C": "Random Access Memory (RAM)",
+          "D": "Solid-State Drive (SSD)"
+        },
+        "correct": "C",
+        "explanation": "RAM is a form of temporary, volatile semiconductor memory used by the CPU to hold data currently in active execution. Thus, option C is correct."
+      },
+      {
+        "q": 6,
+        "topic": "Office Applications",
+        "question": "In Microsoft Excel, which function is used to find the largest value in a given range of numeric cells?",
+        "options": {
+          "A": "MAXIMUM",
+          "B": "TOP",
+          "C": "LARGEST",
+          "D": "MAX"
+        },
+        "correct": "D",
+        "explanation": "The MAX function evaluates a range of cells and returns the highest numeric value present in that range. Thus, option D is correct."
+      },
+      {
+        "q": 7,
+        "topic": "Cyber Security",
+        "question": "Which type of malicious software is designed to replicate itself across computer networks, typically without needing any user interaction or infected host program?",
+        "options": {
+          "A": "Computer Virus",
+          "B": "Worm",
+          "C": "Trojan Horse",
+          "D": "Spyware"
+        },
+        "correct": "B",
+        "explanation": "A computer worm is a standalone malware program that actively replicates itself to spread across network connections without requiring a host file. Thus, option B is correct."
+      },
+      {
+        "q": 8,
+        "topic": "Computer Basics",
+        "question": "In transport layer networking, which of the following key characteristics fundamentally distinguishes UDP from TCP?",
+        "options": {
+          "A": "UDP provides connectionless, unacknowledged datagram delivery without guaranteed sequencing, making it faster for real-time streaming.",
+          "B": "UDP enforces strict three-way handshaking and guaranteed packet retransmission for lossless file transfers.",
+          "C": "UDP operates exclusively at the network layer to handle global packet routing across routers.",
+          "D": "UDP requires dedicated physical circuits to be established before data transmission can commence."
+        },
+        "correct": "A",
+        "explanation": "UDP (User Datagram Protocol) is a connectionless protocol that does not establish a virtual circuit or guarantee delivery, prioritizing speed over reliability, which suits real-time applications. Thus, option A is correct."
+      },
+      {
+        "q": 9,
+        "topic": "Computer Basics",
+        "question": "Which of the following database keys is selected as the main key to uniquely identify each record in a relational database table?",
+        "options": {
+          "A": "Foreign Key",
+          "B": "Primary Key",
+          "C": "Candidate Key",
+          "D": "Secondary Key"
+        },
+        "correct": "B",
+        "explanation": "A Primary Key is a specific candidate key chosen by the database designer as the main key to uniquely identify every individual record in a table. Thus, option B is correct."
+      },
+      {
+        "q": 10,
+        "topic": "Computer Basics",
+        "question": "Which of the following devices operates at the Data Link Layer (Layer 2) of the OSI network model and uses MAC addresses to forward data frames?",
+        "options": {
+          "A": "Network Switch",
+          "B": "Network Hub",
+          "C": "Router",
+          "D": "Repeater"
+        },
+        "correct": "A",
+        "explanation": "A network switch operates at Layer 2 (Data Link Layer) and uses physical MAC addresses to intelligently forward frames to specific destination ports. Thus, option A is correct."
+      },
+      {
+        "q": 11,
+        "topic": "Internet and Networking",
+        "question": "In the context of web development and markup languages, what does HTML stand for?",
+        "options": {
+          "A": "HyperText Machine Language",
+          "B": "Hyperlink and Text Markup Language",
+          "C": "HyperText Markup Language",
+          "D": "Hyper Transfer Markup Language"
+        },
+        "correct": "C",
+        "explanation": "HTML stands for HyperText Markup Language, the standard language used to create and structure web pages on the internet. Thus, option C is correct."
+      },
+      {
+        "q": 12,
+        "topic": "Computer Basics",
+        "question": "Which of the following generations of computers used Very Large Scale Integration (VLSI) microprocessors containing millions of transistors on a single silicon chip?",
+        "options": {
+          "A": "First Generation",
+          "B": "Second Generation",
+          "C": "Third Generation",
+          "D": "Fourth Generation"
+        },
+        "correct": "D",
+        "explanation": "The Fourth Generation of computers, starting in the 1970s, introduced VLSI microprocessors, revolutionizing personal computing. Thus, option D is correct."
+      },
+      {
+        "q": 13,
+        "topic": "Cyber Security",
+        "question": "What is the primary purpose of a firewall in computer security and network architecture?",
+        "options": {
+          "A": "To increase the overall processing speed of internet data packets",
+          "B": "To monitor and control incoming and outgoing network traffic based on predetermined security rules",
+          "C": "To permanently delete encrypted computer viruses from local hard drives",
+          "D": "To backup system files automatically onto cloud storage"
+        },
+        "correct": "B",
+        "explanation": "A firewall acts as a secure barrier between an internal trusted network and untrusted external networks, filtering traffic based on security policies. Thus, option B is correct."
+      },
+      {
+        "q": 14,
+        "topic": "Internet and Networking",
+        "question": "What is the primary function of the Domain Name System (DNS) in internet architecture?",
+        "options": {
+          "A": "Translating human-readable domain names into corresponding numeric IP addresses",
+          "B": "Encrypting end-to-end user sessions between web browsers and secure servers",
+          "C": "Assigning dynamic IP addresses automatically to newly connected local devices",
+          "D": "Routing data packets across autonomous system boundary gateways"
+        },
+        "correct": "A",
+        "explanation": "DNS functions as the directory of the internet, translating alphabetic domain names (like www.example.com) into numeric IP addresses that routers use to direct traffic. Thus, option A is correct."
+      },
+      {
+        "q": 15,
+        "topic": "Computer Basics",
+        "question": "Which of the following memory types is non-volatile, can be electrically erased and reprogrammed in blocks, and is widely used in USB flash drives and solid-state drives?",
+        "options": {
+          "A": "SRAM",
+          "B": "DRAM",
+          "C": "Flash Memory",
+          "D": "Cache Memory"
+        },
+        "correct": "C",
+        "explanation": "Flash memory is a non-volatile computer storage chip that can be electrically erased and reprogrammed, forming the backbone of SSDs and thumb drives. Thus, option C is correct."
+      },
+      {
+        "q": 16,
+        "topic": "Internet and Networking",
+        "question": "What does an IP address (IPv4) consist of in terms of structure and binary length?",
+        "options": {
+          "A": "16 bits divided into 2 blocks",
+          "B": "32 bits divided into 4 octets",
+          "C": "64 bits divided into 8 segments",
+          "D": "128 bits divided into 16 bytes"
+        },
+        "correct": "B",
+        "explanation": "An IPv4 address is 32 bits long, typically expressed in dotted-decimal notation consisting of four 8-bit octets. Thus, option B is correct."
+      },
+      {
+        "q": 17,
+        "topic": "Computer Basics",
+        "question": "Which of the following software translates an entire high-level program into machine/object code before execution?",
+        "options": {
+          "A": "Interpreter",
+          "B": "Assembler",
+          "C": "Compiler",
+          "D": "Linker"
+        },
+        "correct": "C",
+        "explanation": "A compiler translates the entire high-level program into machine/object code prior to execution, unlike an interpreter which translates code line by line. Thus, option C is correct."
+      },
+      {
+        "q": 18,
+        "topic": "Computer Basics",
+        "question": "In relational database design, what is the primary objective of applying database normalization principles such as 3NF (Third Normal Form)?",
+        "options": {
+          "A": "To maximize disk storage consumption by creating redundant backup tables",
+          "B": "To eliminate data redundancy and minimize data anomaly risks during updates, insertions, and deletions",
+          "C": "To accelerate complex cryptographic hashing algorithms used in data encryption",
+          "D": "To convert relational tables directly into unstructured NoSQL document stores"
+        },
+        "correct": "B",
+        "explanation": "Database normalization structures relational tables to reduce data duplication and prevent update, insertion, and deletion anomalies, ensuring data integrity. Thus, option B is correct."
+      },
+      {
+        "q": 19,
+        "topic": "Computer Basics",
+        "question": "Which network topology connects all devices to a central hub or switch, where a single cable failure only disconnects the specific node attached to it?",
+        "options": {
+          "A": "Bus Topology",
+          "B": "Ring Topology",
+          "C": "Mesh Topology",
+          "D": "Star Topology"
+        },
+        "correct": "D",
+        "explanation": "In a star topology, every node is connected to a central networking device, ensuring fault isolation where failure of one cable does not bring down the entire network. Thus, option D is correct."
+      },
+      {
+        "q": 20,
+        "topic": "Computer Basics",
+        "question": "Why is CPU Cache memory positioned higher in the memory hierarchy than primary Main Memory (RAM)?",
+        "options": {
+          "A": "Cache is constructed using static RAM (SRAM) directly on or close to the processor die, offering significantly faster access speeds than dynamic RAM (DRAM).",
+          "B": "Cache provides infinite non-volatile permanent storage capacity unlike volatile RAM.",
+          "C": "Cache operates exclusively at the physical layer to manage peripheral bus speeds.",
+          "D": "Cache is significantly cheaper per gigabyte than standard hard disk drives or RAM modules."
+        },
+        "correct": "A",
+        "explanation": "CPU cache uses ultra-fast static RAM (SRAM) placed close to or on the CPU core to bridge the speed gap between the ultra-fast processor and slower main DRAM memory. Thus, option A is correct."
+      }
+    ]
+  }
+}

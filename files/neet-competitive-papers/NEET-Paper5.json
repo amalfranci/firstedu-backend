@@ -1,0 +1,2356 @@
+{
+  "paper_id": "NEET-Paper5",
+  "title": "NEET Paper 5",
+  "exam": "NEET",
+  "year": 2026,
+  "subjects": {
+    "Physics": [
+      {
+        "q": 1,
+        "topic": "Experimental Skills",
+        "question": "In a Vernier caliper, 10 divisions of the vernier scale coincide with 9 divisions of the main scale. If each main scale division is 1 mm, the least count of the instrument is:",
+        "options": {
+          "A": "0.1 mm",
+          "B": "0.01 mm",
+          "C": "0.2 mm",
+          "D": "0.05 mm"
+        },
+        "correct": "A",
+        "explanation": "Least count (LC) = 1 MSD - 1 VSD. Given 10 VSD = 9 MSD, 1 VSD = 0.9 MSD. LC = 1 - 0.9 = 0.1 mm."
+      },
+      {
+        "q": 2,
+        "topic": "Experimental Skills",
+        "question": "A screw gauge has a pitch of 0.5 mm and 50 divisions on its circular scale. The reading of the screw gauge for a wire of diameter 1.25 mm with no zero error would be:",
+        "options": {
+          "A": "2 full rotations and 15 divisions",
+          "B": "2 full rotations and 25 divisions",
+          "C": "3 full rotations and 0 divisions",
+          "D": "2 full rotations and 50 divisions"
+        },
+        "correct": "B",
+        "explanation": "Least count = 0.5/50 = 0.01 mm. Diameter 1.25 mm = 2 full rotations (1.0 mm) + 0.25 mm (25 divisions)."
+      },
+      {
+        "q": 3,
+        "topic": "Physics and Measurement",
+        "question": "If the percentage error in the measurement of the radius of a sphere is 2%, the percentage error in the calculation of its surface area is:",
+        "options": {
+          "A": "2%",
+          "B": "6%",
+          "C": "4%",
+          "D": "8%"
+        },
+        "correct": "C",
+        "explanation": "Area A = 4πr². Percentage error ΔA/A = 2(Δr/r) = 2 × 2% = 4%."
+      },
+      {
+        "q": 4,
+        "topic": "Work, Energy and Power",
+        "question": "A particle is dropped from a height h. At what height from the ground will its kinetic energy be three times its potential energy?",
+        "options": {
+          "A": "h/2",
+          "B": "h/3",
+          "C": "2h/3",
+          "D": "h/4"
+        },
+        "correct": "D",
+        "explanation": "Total energy E = mgh. At height y, PE = mgy, KE = mg(h-y). Given KE = 3 PE ⇒ mg(h-y) = 3mgy ⇒ h = 4y ⇒ y = h/4."
+      },
+      {
+        "q": 5,
+        "topic": "Physics and Measurement",
+        "question": "The dimensions of the Stefan-Boltzmann constant σ are:",
+        "options": {
+          "A": "[M¹ L⁰ T⁻³ K⁻⁴]",
+          "B": "[M¹ L¹ T⁻³ K⁻⁴]",
+          "C": "[M¹ L² T⁻² K⁻¹]",
+          "D": "[M⁰ L⁰ T⁻³ K⁻⁴]"
+        },
+        "correct": "A",
+        "explanation": "σ = Power / (Area × T⁴) = [M L² T⁻³] / ([L²] [K⁴]) = [M¹ L⁰ T⁻³ K⁻⁴]."
+      },
+      {
+        "q": 6,
+        "topic": "Electronic Devices",
+        "question": "A car moving at speed v is stopped by a constant braking force in distance d. If speed is doubled to 2v, the stopping distance for the same force will be:",
+        "options": {
+          "A": "2d",
+          "B": "d",
+          "C": "3d",
+          "D": "4d"
+        },
+        "correct": "D",
+        "explanation": "Stopping distance s = u² / (2a). Since s ∝ u², doubling speed quadruples distance to 4d."
+      },
+      {
+        "q": 7,
+        "topic": "Gravitation",
+        "question": "The ratio of escape velocity from Earth to escape velocity from a planet with twice the radius and same mean density as Earth is:",
+        "options": {
+          "A": "1 : 2",
+          "B": "1 : √2",
+          "C": "1 : 4",
+          "D": "2 : 1"
+        },
+        "correct": "A",
+        "explanation": "Escape velocity v = √(2GM/R) ∝ R√ρ. For same density, doubling radius doubles escape velocity, so ratio is 1:2."
+      },
+      {
+        "q": 8,
+        "topic": "Oscillations and Waves",
+        "question": "A particle executes SHM with amplitude A and frequency f. The frequency with which its kinetic energy oscillates is:",
+        "options": {
+          "A": "f",
+          "B": "2f",
+          "C": "f/2",
+          "D": "4f"
+        },
+        "correct": "B",
+        "explanation": "Kinetic energy KE ∝ cos²(2πft) = (1 + cos(4πft))/2. The oscillation frequency of KE is 2f."
+      },
+      {
+        "q": 9,
+        "topic": "Kinetic Theory of Gases",
+        "question": "In an adiabatic process, pressure of a gas is proportional to the cube of absolute temperature. The value of γ (Cp/Cv) for the gas is:",
+        "options": {
+          "A": "1.5",
+          "B": "1.67",
+          "C": "1.4",
+          "D": "1.33"
+        },
+        "correct": "A",
+        "explanation": "For adiabatic process, P^(1-γ) T^γ = const ⇒ P ∝ T^(γ/(γ-1)). Given P ∝ T³, γ/(γ-1) = 3 ⇒ γ = 1.5."
+      },
+      {
+        "q": 10,
+        "topic": "Kinematics",
+        "question": "Two projectiles are fired from the same point with same speed at angles 30° and 60°. Which of the following is true?",
+        "options": {
+          "A": "Their ranges are equal",
+          "B": "Their max heights are equal",
+          "C": "Their flight times are equal",
+          "D": "Horizontal speeds are equal"
+        },
+        "correct": "A",
+        "explanation": "Range R = u² sin(2θ)/g. For complementary angles 30° and 60°, sin(60°) = sin(120°), so ranges are equal."
+      },
+      {
+        "q": 11,
+        "topic": "Current Electricity",
+        "question": "A wire of resistance R is stretched to double its length. Its new resistance will be:",
+        "options": {
+          "A": "2R",
+          "B": "R/2",
+          "C": "4R",
+          "D": "R/4"
+        },
+        "correct": "C",
+        "explanation": "Volume is constant. Length L' = 2L ⇒ Area A' = A/2. New resistance R' = ρ(2L)/(A/2) = 4R."
+      },
+      {
+        "q": 12,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "Magnetic field at center of circular loop of radius r carrying current I is B. Field at point on axis distance r from center is:",
+        "options": {
+          "A": "B / 2",
+          "B": "B / (2√2)",
+          "C": "B / √2",
+          "D": "B / 4"
+        },
+        "correct": "B",
+        "explanation": "Axis field B' = μ₀ I r² / [2(r² + x²)^(3/2)]. At x = r, B' = μ₀ I / (4√2 r) = B / (2√2)."
+      },
+      {
+        "q": 13,
+        "topic": "Optics",
+        "question": "A convex lens of focal length 20 cm is in contact with concave lens of focal length 25 cm. Power of combination is:",
+        "options": {
+          "A": "+1 D",
+          "B": "-1 D",
+          "C": "+9 D",
+          "D": "-9 D"
+        },
+        "correct": "A",
+        "explanation": "P = P₁ + P₂ = 1/0.20 - 1/0.25 = +5 - 4 = +1 D."
+      },
+      {
+        "q": 14,
+        "topic": "Dual Nature of Matter and Radiation",
+        "question": "Work function of metal is 2.0 eV. Light of wavelength 310 nm falls on it. Max kinetic energy of photoelectrons is:",
+        "options": {
+          "A": "1.0 eV",
+          "B": "2.0 eV",
+          "C": "3.0 eV",
+          "D": "4.0 eV"
+        },
+        "correct": "B",
+        "explanation": "Photon energy E = 1240 / 310 = 4.0 eV. KE_max = E - Φ = 4.0 - 2.0 = 2.0 eV."
+      },
+      {
+        "q": 15,
+        "topic": "Electronic Devices",
+        "question": "In a Zener diode regulated circuit, if input voltage increases, the:",
+        "options": {
+          "A": "Current through Zener diode increases",
+          "B": "Voltage across Zener increases significantly",
+          "C": "Load current decreases",
+          "D": "Series resistor current remains constant"
+        },
+        "correct": "A",
+        "explanation": "Zener voltage remains fixed. Increase in input voltage increases voltage drop across series resistor, increasing Zener current."
+      },
+      {
+        "q": 16,
+        "topic": "Electronic Devices",
+        "question": "Speed of sound in air at NTP is 330 m/s. What will be the speed if pressure is doubled keeping temperature constant?",
+        "options": {
+          "A": "660 m/s",
+          "B": "330 m/s",
+          "C": "165 m/s",
+          "D": "330√2 m/s"
+        },
+        "correct": "B",
+        "explanation": "Speed of sound v = √(γP/ρ). At constant temperature, P/ρ is constant, so speed of sound is unchanged."
+      },
+      {
+        "q": 17,
+        "topic": "Electrostatics",
+        "question": "A capacitor of 10 μF is charged to 100 V. Energy stored in it is:",
+        "options": {
+          "A": "0.01 J",
+          "B": "0.05 J",
+          "C": "0.1 J",
+          "D": "1.0 J"
+        },
+        "correct": "B",
+        "explanation": "Energy U = 0.5 C V² = 0.5 × (10 × 10⁻⁶) × 10000 = 0.05 J."
+      },
+      {
+        "q": 18,
+        "topic": "Electronic Devices",
+        "question": "Transistor in CE mode has β = 100 and base current Ib = 20 μA. Collector current is:",
+        "options": {
+          "A": "2 mA",
+          "B": "0.2 mA",
+          "C": "20 mA",
+          "D": "200 mA"
+        },
+        "correct": "A",
+        "explanation": "Ic = β × Ib = 100 × 20 μA = 2000 μA = 2 mA."
+      },
+      {
+        "q": 19,
+        "topic": "Kinematics",
+        "question": "Threshold frequency is f₀. Light of 2f₀ gives max velocity v₁. Light of 5f₀ gives max velocity v₂. Ratio v₁/v₂ is:",
+        "options": {
+          "A": "1 : 2",
+          "B": "1 : 4",
+          "C": "1 : √2",
+          "D": "2 : 1"
+        },
+        "correct": "A",
+        "explanation": "0.5 m v₁² = h(2f₀ - f₀) = hf₀. 0.5 m v₂² = h(5f₀ - f₀) = 4hf₀. v₁²/v₂² = 1/4 ⇒ v₁/v₂ = 1/2."
+      },
+      {
+        "q": 20,
+        "topic": "Oscillations and Waves",
+        "question": "Mass m on spring constant k oscillates with period T. If mass is replaced by 4m, new period is:",
+        "options": {
+          "A": "2T",
+          "B": "4T",
+          "C": "T/2",
+          "D": "T"
+        },
+        "correct": "A",
+        "explanation": "Period T = 2π √(m/k) ∝ √m. Replacing m with 4m doubles the period to 2T."
+      },
+      {
+        "q": 21,
+        "topic": "Kinetic Theory of Gases",
+        "question": "RMS speed of gas molecules is v at 27°C. At what temperature will it be 2v?",
+        "options": {
+          "A": "54°C",
+          "B": "108°C",
+          "C": "927°C",
+          "D": "1200°C"
+        },
+        "correct": "C",
+        "explanation": "v_rms ∝ √T. T₁ = 300 K. For speed 2v, T₂ = 4 T₁ = 1200 K = 927°C."
+      },
+      {
+        "q": 22,
+        "topic": "Optics",
+        "question": "Object placed 10 cm in front of concave mirror of radius 30 cm forms an image that is:",
+        "options": {
+          "A": "Real and inverted",
+          "B": "Virtual and erect",
+          "C": "Real and diminished",
+          "D": "No image formed"
+        },
+        "correct": "B",
+        "explanation": "Focal length f = -15 cm. Object distance u = -10 cm. Since |u| < |f|, image is virtual, erect and magnified."
+      },
+      {
+        "q": 23,
+        "topic": "Properties of Solids and Liquids",
+        "question": "Soap bubble of radius r has surface tension S. Excess pressure inside is:",
+        "options": {
+          "A": "2S/r",
+          "B": "4S/r",
+          "C": "S/r",
+          "D": "8S/r"
+        },
+        "correct": "B",
+        "explanation": "Soap bubble has two free surfaces, so excess pressure ΔP = 2 × (2S/r) = 4S/r."
+      },
+      {
+        "q": 24,
+        "topic": "Gravitation",
+        "question": "Satellite orbits Earth at height R above surface (R = Earth radius). Orbital velocity is:",
+        "options": {
+          "A": "√(gR)",
+          "B": "√(gR/2)",
+          "C": "√(2gR)",
+          "D": "gR"
+        },
+        "correct": "B",
+        "explanation": "Orbital radius r = 2R. Orbital speed v = √(GM/2R) = √(gR²/2R) = √(gR/2)."
+      },
+      {
+        "q": 25,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "Laminated core in transformer is used to reduce:",
+        "options": {
+          "A": "Copper loss",
+          "B": "Hysteresis loss",
+          "C": "Eddy current loss",
+          "D": "Magnetic leakage"
+        },
+        "correct": "C",
+        "explanation": "Lamination increases electrical resistance to induced currents, minimizing eddy current loss."
+      },
+      {
+        "q": 26,
+        "topic": "Dual Nature of Matter and Radiation",
+        "question": "Transition in hydrogen atom emitting photon of highest frequency is:",
+        "options": {
+          "A": "n = 2 to n = 1",
+          "B": "n = 3 to n = 2",
+          "C": "n = 4 to n = 3",
+          "D": "n = 5 to n = 4"
+        },
+        "correct": "A",
+        "explanation": "Energy difference ΔE = 13.6(1/n₁² - 1/n₂²) eV is largest for transition n = 2 to n = 1."
+      },
+      {
+        "q": 27,
+        "topic": "Kinematics",
+        "question": "Horizontal pipe has area 10 cm² at point 1 and 5 cm² at point 2. Velocity at point 1 is 2 m/s. Velocity at point 2 is:",
+        "options": {
+          "A": "1 m/s",
+          "B": "4 m/s",
+          "C": "2 m/s",
+          "D": "8 m/s"
+        },
+        "correct": "B",
+        "explanation": "Continuity equation A₁ v₁ = A₂ v₂ ⇒ 10 × 2 = 5 × v₂ ⇒ v₂ = 4 m/s."
+      },
+      {
+        "q": 28,
+        "topic": "Electrostatics",
+        "question": "Torque on dipole p in uniform electric field E is:",
+        "options": {
+          "A": "p · E",
+          "B": "p × E",
+          "C": "Zero",
+          "D": "p E²"
+        },
+        "correct": "B",
+        "explanation": "Torque vector τ = p × E."
+      },
+      {
+        "q": 29,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "Phase difference between current and voltage in purely capacitive AC circuit is:",
+        "options": {
+          "A": "0",
+          "B": "π",
+          "C": "π/2 (current leads)",
+          "D": "π/2 (voltage leads)"
+        },
+        "correct": "C",
+        "explanation": "In pure capacitive circuit, current leads voltage by π/2 radians (90°)."
+      },
+      {
+        "q": 30,
+        "topic": "Atoms and Nuclei",
+        "question": "Radioactive sample decays to 1/16 of initial value in 80 days. Its half-life is:",
+        "options": {
+          "A": "20 days",
+          "B": "40 days",
+          "C": "10 days",
+          "D": "5 days"
+        },
+        "correct": "A",
+        "explanation": "1/16 = (1/2)⁴, meaning 4 half-lives elapsed. 4 T_1/2 = 80 ⇒ T_1/2 = 20 days."
+      },
+      {
+        "q": 31,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "Galvanometer resistance G is converted to voltmeter range V using series resistance R. Value of R is:",
+        "options": {
+          "A": "V/Ig - G",
+          "B": "V/Ig + G",
+          "C": "Ig V - G",
+          "D": "G - V/Ig"
+        },
+        "correct": "A",
+        "explanation": "Total voltage V = Ig (G + R) ⇒ R = V/Ig - G."
+      },
+      {
+        "q": 32,
+        "topic": "Work, Energy and Power",
+        "question": "Work done in moving 2 C charge across potential difference of 5 V is:",
+        "options": {
+          "A": "2.5 J",
+          "B": "10 J",
+          "C": "0.4 J",
+          "D": "7 J"
+        },
+        "correct": "B",
+        "explanation": "Work W = q V = 2 × 5 = 10 J."
+      },
+      {
+        "q": 33,
+        "topic": "Optics",
+        "question": "When light travels from air to glass, which property remains unchanged?",
+        "options": {
+          "A": "Speed",
+          "B": "Wavelength",
+          "C": "Frequency",
+          "D": "Amplitude"
+        },
+        "correct": "C",
+        "explanation": "Frequency depends only on the source of light and remains constant across media."
+      },
+      {
+        "q": 34,
+        "topic": "Kinematics",
+        "question": "Mass 5 kg moves in circle of radius 1 m with angular speed 2 rad/s. Centripetal force is:",
+        "options": {
+          "A": "10 N",
+          "B": "20 N",
+          "C": "5 N",
+          "D": "2.5 N"
+        },
+        "correct": "B",
+        "explanation": "Centripetal force F = m ω² r = 5 × (2)² × 1 = 20 N."
+      },
+      {
+        "q": 35,
+        "topic": "Gravitation",
+        "question": "Escape velocity from Earth is 11.2 km/s. If projected at 45° to horizontal, escape velocity is:",
+        "options": {
+          "A": "11.2 km/s",
+          "B": "11.2√2 km/s",
+          "C": "11.2 / √2 km/s",
+          "D": "22.4 km/s"
+        },
+        "correct": "A",
+        "explanation": "Escape velocity depends only on gravitational potential and is independent of angle of projection."
+      },
+      {
+        "q": 36,
+        "topic": "Optics",
+        "question": "Telescope has magnifying power 10 in normal adjustment. Objective focal length is 100 cm. Eyepiece focal length is:",
+        "options": {
+          "A": "10 cm",
+          "B": "1 cm",
+          "C": "1000 cm",
+          "D": "110 cm"
+        },
+        "correct": "A",
+        "explanation": "Magnifying power M = fo / fe ⇒ 10 = 100 / fe ⇒ fe = 10 cm."
+      },
+      {
+        "q": 37,
+        "topic": "Electronic Devices",
+        "question": "Logic gate giving output 1 only when both inputs are 1 is:",
+        "options": {
+          "A": "OR gate",
+          "B": "AND gate",
+          "C": "NOR gate",
+          "D": "NAND gate"
+        },
+        "correct": "B",
+        "explanation": "AND gate gives output Y = A · B, which is 1 only when A=1 and B=1."
+      },
+      {
+        "q": 38,
+        "topic": "Physics and Measurement",
+        "question": "The unit of self-inductance is:",
+        "options": {
+          "A": "Weber",
+          "B": "Tesla",
+          "C": "Henry",
+          "D": "Farad"
+        },
+        "correct": "C",
+        "explanation": "Self-inductance is measured in Henry (H)."
+      },
+      {
+        "q": 39,
+        "topic": "Kinematics",
+        "question": "Displacement x = 3 sin(2t + π/4). Maximum acceleration magnitude is:",
+        "options": {
+          "A": "3",
+          "B": "6",
+          "C": "12",
+          "D": "9"
+        },
+        "correct": "C",
+        "explanation": "Max acceleration = ω² A = 2² × 3 = 12."
+      },
+      {
+        "q": 40,
+        "topic": "Electronic Devices",
+        "question": "In Young's double slit experiment, if slit separation is halved and screen distance doubled, fringe width becomes:",
+        "options": {
+          "A": "2 times",
+          "B": "4 times",
+          "C": "Unchanged",
+          "D": "1/2 times"
+        },
+        "correct": "B",
+        "explanation": "Fringe width β = λ D / d. New β' = λ (2D) / (d/2) = 4 β."
+      },
+      {
+        "q": 41,
+        "topic": "Thermodynamics",
+        "question": "Refrigerator operates between 0°C (273 K) and 27°C (300 K). Coefficient of performance is:",
+        "options": {
+          "A": "10",
+          "B": "9",
+          "C": "1",
+          "D": "0.1"
+        },
+        "correct": "A",
+        "explanation": "COP = T₂ / (T₁ - T₂) = 273 / (300 - 273) = 273 / 27 ≈ 10.1."
+      },
+      {
+        "q": 42,
+        "topic": "Electrostatics",
+        "question": "Electric potential on axis of electric dipole at distance r varies as:",
+        "options": {
+          "A": "1/r",
+          "B": "1/r²",
+          "C": "1/r³",
+          "D": "r"
+        },
+        "correct": "B",
+        "explanation": "Axial potential of electric dipole V = k p / r², varying inversely with r²."
+      },
+      {
+        "q": 43,
+        "topic": "Atoms and Nuclei",
+        "question": "Electromagnetic wave with shortest wavelength is:",
+        "options": {
+          "A": "Radio waves",
+          "B": "Infrared",
+          "C": "Gamma rays",
+          "D": "Ultraviolet"
+        },
+        "correct": "C",
+        "explanation": "Gamma rays have the highest frequency and shortest wavelength in the EM spectrum."
+      },
+      {
+        "q": 44,
+        "topic": "Kinematics",
+        "question": "Body starts from rest with uniform acceleration. Ratio of distance in 4th second to 3rd second is:",
+        "options": {
+          "A": "7 : 5",
+          "B": "4 : 3",
+          "C": "16 : 9",
+          "D": "1 : 1"
+        },
+        "correct": "A",
+        "explanation": "Distance in nth second Sn = a/2 (2n - 1). S₄ / S₃ = (2(4)-1) / (2(3)-1) = 7/5."
+      },
+      {
+        "q": 45,
+        "topic": "Properties of Solids and Liquids",
+        "question": "Young's modulus of wire of length L and radius r is Y. If length and radius are halved, Young's modulus becomes:",
+        "options": {
+          "A": "Y",
+          "B": "2Y",
+          "C": "4Y",
+          "D": "Y/2"
+        },
+        "correct": "A",
+        "explanation": "Young's modulus is a material property and remains constant regardless of dimensions."
+      }
+    ],
+    "Chemistry": [
+      {
+        "q": 1,
+        "topic": "Atomic Structure",
+        "question": "Which of the following sets of quantum numbers is NOT allowed?",
+        "options": {
+          "A": "n=3, l=2, m=0, s=+1/2",
+          "B": "n=2, l=2, m=1, s=-1/2",
+          "C": "n=4, l=0, m=0, s=+1/2",
+          "D": "n=3, l=1, m=-1, s=-1/2"
+        },
+        "correct": "B",
+        "explanation": "Azimuthal quantum number l must be strictly less than n. For n=2, l can only be 0 or 1."
+      },
+      {
+        "q": 2,
+        "topic": "Classification of Elements and Periodicity in Properties",
+        "question": "Correct order of increasing ionic radii for isoelectronic species Mg²⁺, Na⁺, F⁻, O²⁻ is:",
+        "options": {
+          "A": "Mg²⁺ < Na⁺ < F⁻ < O²⁻",
+          "B": "O²⁻ < F⁻ < Na⁺ < Mg²⁺",
+          "C": "Na⁺ < Mg²⁺ < O²⁻ < F⁻",
+          "D": "F⁻ < O²⁻ < Mg²⁺ < Na⁺"
+        },
+        "correct": "A",
+        "explanation": "For isoelectronic species, radius decreases with increasing nuclear charge Z (Mg²⁺ Z=12 to O²⁻ Z=8)."
+      },
+      {
+        "q": 3,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "Molecule having zero dipole moment is:",
+        "options": {
+          "A": "H₂O",
+          "B": "NH₃",
+          "C": "BF₃",
+          "D": "CHCl₃"
+        },
+        "correct": "C",
+        "explanation": "BF₃ is symmetrical trigonal planar, so individual B-F bond dipoles sum to zero."
+      },
+      {
+        "q": 4,
+        "topic": "Equilibrium",
+        "question": "For PCl₅(g) ⇌ PCl₃(g) + Cl₂(g), relation between Kp and Kc is:",
+        "options": {
+          "A": "Kp = Kc",
+          "B": "Kp = Kc(RT)",
+          "C": "Kp = Kc(RT)⁻¹",
+          "D": "Kp = Kc(RT)²"
+        },
+        "correct": "B",
+        "explanation": "Kp = Kc(RT)^Δng. Δng = (1+1) - 1 = 1, so Kp = Kc(RT)."
+      },
+      {
+        "q": 5,
+        "topic": "d- and f-Block Elements",
+        "question": "Oxidation state of Cr in K₂Cr₂O₇ is:",
+        "options": {
+          "A": "+3",
+          "B": "+6",
+          "C": "+7",
+          "D": "+4"
+        },
+        "correct": "B",
+        "explanation": "2(+1) + 2x + 7(-2) = 0 ⇒ 2x = 12 ⇒ x = +6."
+      },
+      {
+        "q": 6,
+        "topic": "Equilibrium",
+        "question": "Which pair forms a buffer solution?",
+        "options": {
+          "A": "CH₃COOH + CH₃COONa",
+          "B": "HCl + NaCl",
+          "C": "NaOH + NaCl",
+          "D": "NH₄Cl + HCl"
+        },
+        "correct": "A",
+        "explanation": "A mixture of weak acid (CH₃COOH) and its salt with strong base (CH₃COONa) forms an acidic buffer."
+      },
+      {
+        "q": 7,
+        "topic": "Chemical Kinetics",
+        "question": "Rate constant of first-order reaction is 0.693 min⁻¹. Half-life of reaction is:",
+        "options": {
+          "A": "1 min",
+          "B": "0.5 min",
+          "C": "2 min",
+          "D": "10 min"
+        },
+        "correct": "A",
+        "explanation": "t_1/2 = 0.693 / k = 0.693 / 0.693 = 1 minute."
+      },
+      {
+        "q": 8,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "Molecular geometry of XeF₄ according to VSEPR theory is:",
+        "options": {
+          "A": "Tetrahedral",
+          "B": "Square planar",
+          "C": "Octahedral",
+          "D": "Pyramidal"
+        },
+        "correct": "B",
+        "explanation": "XeF₄ has 4 bond pairs and 2 lone pairs (sp³d²). Square planar shape minimizes lone pair repulsions."
+      },
+      {
+        "q": 9,
+        "topic": "p-Block Elements",
+        "question": "Noble gas with the highest boiling point is:",
+        "options": {
+          "A": "He",
+          "B": "Ne",
+          "C": "Ar",
+          "D": "Kr"
+        },
+        "correct": "D",
+        "explanation": "Boiling point increases down group 18 due to increased polarizability and van der Waals forces."
+      },
+      {
+        "q": 10,
+        "topic": "p-Block Elements",
+        "question": "In self-reduction of copper during extraction, Cu₂O reacts with:",
+        "options": {
+          "A": "FeS",
+          "B": "CO",
+          "C": "Cu₂S",
+          "D": "SO₂"
+        },
+        "correct": "C",
+        "explanation": "2 Cu₂O + Cu₂S → 6 Cu + SO₂ (Self-reduction process)."
+      },
+      {
+        "q": 11,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "Moles of KMnO₄ required to oxidize 1 mole of ferrous oxalate FeC₂O₄ in acidic medium is:",
+        "options": {
+          "A": "0.6",
+          "B": "1.5",
+          "C": "0.4",
+          "D": "1.0"
+        },
+        "correct": "A",
+        "explanation": "FeC₂O₄ loses 3 e⁻ (Fe²⁺→Fe³⁺ and C₂O₄²⁻→2CO₂). MnO₄⁻ accepts 5 e⁻. Moles = 3/5 = 0.6."
+      },
+      {
+        "q": 12,
+        "topic": "Classification of Elements and Periodicity in Properties",
+        "question": "Element with most negative electron gain enthalpy is:",
+        "options": {
+          "A": "Fluorine",
+          "B": "Chlorine",
+          "C": "Bromine",
+          "D": "Iodine"
+        },
+        "correct": "B",
+        "explanation": "Chlorine has higher negative electron gain enthalpy than Fluorine due to smaller inter-electronic repulsion in 3p."
+      },
+      {
+        "q": 13,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "IUPAC name of CH₃-CH(OH)-CH₂-CHO is:",
+        "options": {
+          "A": "3-hydroxybutanal",
+          "B": "2-hydroxybutanal",
+          "C": "3-oxobutanol",
+          "D": "4-hydroxybutanal"
+        },
+        "correct": "A",
+        "explanation": "Aldehyde carbon is C1. C3 has -OH substituent, giving 3-hydroxybutanal."
+      },
+      {
+        "q": 14,
+        "topic": "Redox Reactions and Electrochemistry",
+        "question": "Which property is NOT characteristic of interstitial compounds?",
+        "options": {
+          "A": "High hardness",
+          "B": "High melting point",
+          "C": "High chemical reactivity",
+          "D": "Retained metallic conductivity"
+        },
+        "correct": "C",
+        "explanation": "Interstitial compounds are chemically inert and maintain metallic conductivity."
+      },
+      {
+        "q": 15,
+        "topic": "Hydrocarbons",
+        "question": "Major product formed when propene reacts with HBr in presence of peroxide is:",
+        "options": {
+          "A": "2-bromopropane",
+          "B": "1-bromopropane",
+          "C": "1,2-dibromopropane",
+          "D": "2-bromopropene"
+        },
+        "correct": "B",
+        "explanation": "Peroxide effect causes Anti-Markovnikov addition of HBr, producing 1-bromopropane."
+      },
+      {
+        "q": 16,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "Which functional group gives positive Tollen's test?",
+        "options": {
+          "A": "Ketone",
+          "B": "Alcohol",
+          "C": "Aldehyde",
+          "D": "Ester"
+        },
+        "correct": "C",
+        "explanation": "Aldehydes reduce Tollen's reagent to form a metallic silver mirror."
+      },
+      {
+        "q": 17,
+        "topic": "Hydrocarbons",
+        "question": "Hybridization of carbon atoms in ethyne (HC≡CH) is:",
+        "options": {
+          "A": "sp",
+          "B": "sp²",
+          "C": "sp³",
+          "D": "dsp²"
+        },
+        "correct": "A",
+        "explanation": "Each carbon forms 2 sigma bonds and 2 pi bonds, corresponding to sp hybridization."
+      },
+      {
+        "q": 18,
+        "topic": "Principles Related to Practical Chemistry",
+        "question": "Which polymer is classified as a polyamide?",
+        "options": {
+          "A": "Terylene",
+          "B": "Nylon-6,6",
+          "C": "Buna-S",
+          "D": "Bakelite"
+        },
+        "correct": "B",
+        "explanation": "Nylon-6,6 consists of repeating amide linkages (-CO-NH-)."
+      },
+      {
+        "q": 19,
+        "topic": "Redox Reactions and Electrochemistry",
+        "question": "Standard reduction potential E° for Zn²⁺/Zn is -0.76 V. This indicates:",
+        "options": {
+          "A": "Zn is a strong reducing agent",
+          "B": "Zn is a strong oxidizing agent",
+          "C": "Zn²⁺ is easily reduced",
+          "D": "Zn is less reactive than H₂"
+        },
+        "correct": "A",
+        "explanation": "Negative standard reduction potential indicates strong tendency to undergo oxidation, acting as strong reducer."
+      },
+      {
+        "q": 20,
+        "topic": "Chemical Thermodynamics",
+        "question": "Which of the following is an intensive thermodynamic property?",
+        "options": {
+          "A": "Enthalpy",
+          "B": "Entropy",
+          "C": "Temperature",
+          "D": "Volume"
+        },
+        "correct": "C",
+        "explanation": "Temperature does not depend on the size or mass of the system."
+      },
+      {
+        "q": 21,
+        "topic": "Biomolecules",
+        "question": "Glucose on prolonged heating with HI yields:",
+        "options": {
+          "A": "n-hexane",
+          "B": "Saccharic acid",
+          "C": "Gluconic acid",
+          "D": "Hexanoic acid"
+        },
+        "correct": "A",
+        "explanation": "Prolonged heating with HI reduces all carbons in glucose to form n-hexane."
+      },
+      {
+        "q": 22,
+        "topic": "Principles Related to Practical Chemistry",
+        "question": "Primary greenhouse gas responsible for global warming is:",
+        "options": {
+          "A": "N₂",
+          "B": "O₂",
+          "C": "CO₂",
+          "D": "Ar"
+        },
+        "correct": "C",
+        "explanation": "CO₂ absorbs infrared radiation re-emitted by Earth's surface."
+      },
+      {
+        "q": 23,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "Bond order of O₂⁺ ion is:",
+        "options": {
+          "A": "2",
+          "B": "2.5",
+          "C": "1.5",
+          "D": "3"
+        },
+        "correct": "B",
+        "explanation": "O₂ has 16 e⁻ (BO=2.0). O₂⁺ has 15 e⁻, removing antibonding electron increases BO to 2.5."
+      },
+      {
+        "q": 24,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "Total number of atoms per unit cell in face-centered cubic (FCC) lattice is:",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "4",
+          "D": "6"
+        },
+        "correct": "C",
+        "explanation": "Corners: 8 × (1/8) = 1; Faces: 6 × (1/2) = 3; Total = 4 atoms."
+      },
+      {
+        "q": 25,
+        "topic": "Chemical Kinetics",
+        "question": "Unit of rate constant for a second-order reaction is:",
+        "options": {
+          "A": "mol L⁻¹ s⁻¹",
+          "B": "s⁻¹",
+          "C": "L mol⁻¹ s⁻¹",
+          "D": "L² mol⁻² s⁻¹"
+        },
+        "correct": "C",
+        "explanation": "Unit = (mol L⁻¹)^(1-n) s⁻¹. For n=2, unit is L mol⁻¹ s⁻¹."
+      },
+      {
+        "q": 26,
+        "topic": "p-Block Elements",
+        "question": "Most basic hydride among group 15 elements is:",
+        "options": {
+          "A": "NH₃",
+          "B": "PH₃",
+          "C": "AsH₃",
+          "D": "SbH₃"
+        },
+        "correct": "A",
+        "explanation": "Basicity decreases down group 15 as electron density on central atom decreases with size."
+      },
+      {
+        "q": 27,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "Reaction of phenol with CHCl₃ and NaOH to form salicylaldehyde is:",
+        "options": {
+          "A": "Kolbe's reaction",
+          "B": "Reimer-Tiemann reaction",
+          "C": "Etard reaction",
+          "D": "Rosenmund reduction"
+        },
+        "correct": "B",
+        "explanation": "Reimer-Tiemann reaction introduces -CHO group on phenol using chloroform and base."
+      },
+      {
+        "q": 28,
+        "topic": "Principles Related to Practical Chemistry",
+        "question": "Solubilizing and cleansing action of soap is due to its:",
+        "options": {
+          "A": "Acidic nature",
+          "B": "Amphiphilic nature",
+          "C": "Oxidizing nature",
+          "D": "Covalent nature"
+        },
+        "correct": "B",
+        "explanation": "Soap molecules have hydrophobic hydrocarbon tails and hydrophilic ionic heads forming micelles."
+      },
+      {
+        "q": 29,
+        "topic": "Hydrocarbons",
+        "question": "Which alkane CANNOT be prepared in good yield by Wurtz reaction?",
+        "options": {
+          "A": "Ethane",
+          "B": "Butane",
+          "C": "Methane",
+          "D": "Hexane"
+        },
+        "correct": "C",
+        "explanation": "Wurtz reaction couples two alkyl groups, so methane (1 carbon) cannot be synthesized."
+      },
+      {
+        "q": 30,
+        "topic": "Equilibrium",
+        "question": "Solubility product Ksp of AgCl is 1.0 × 10⁻¹⁰. Its molar solubility in pure water is:",
+        "options": {
+          "A": "1.0 × 10⁻⁵ mol/L",
+          "B": "1.0 × 10⁻¹⁰ mol/L",
+          "C": "2.0 × 10⁻⁵ mol/L",
+          "D": "1.0 × 10⁻²⁰ mol/L"
+        },
+        "correct": "A",
+        "explanation": "Ksp = s² = 10⁻¹⁰ ⇒ s = √10⁻¹⁰ = 1.0 × 10⁻⁵ mol/L."
+      },
+      {
+        "q": 31,
+        "topic": "d- and f-Block Elements",
+        "question": "Indicator suitable for titration of strong acid against weak base is:",
+        "options": {
+          "A": "Phenolphthalein",
+          "B": "Methyl orange",
+          "C": "Litmus",
+          "D": "Starch"
+        },
+        "correct": "B",
+        "explanation": "Equivalence point is acidic (pH 4-6), matching color transition range of methyl orange."
+      },
+      {
+        "q": 32,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "An example of non-polar molecular solid is:",
+        "options": {
+          "A": "NaCl",
+          "B": "Ice",
+          "C": "Solid CO₂ (Dry ice)",
+          "D": "Graphite"
+        },
+        "correct": "C",
+        "explanation": "Dry ice consists of non-polar CO₂ molecules bound by weak London dispersion forces."
+      },
+      {
+        "q": 33,
+        "topic": "Organic Compounds Containing Nitrogen",
+        "question": "Carbylamine test is specific for detection of:",
+        "options": {
+          "A": "Secondary amines",
+          "B": "Primary amines",
+          "C": "Tertiary amines",
+          "D": "Aromatic nitro compounds"
+        },
+        "correct": "B",
+        "explanation": "Primary aliphatic and aromatic amines produce foul-smelling isocyanides with CHCl₃ + KOH."
+      },
+      {
+        "q": 34,
+        "topic": "Biomolecules",
+        "question": "Metal ion present in Vitamin B₁₂ (cyanocobalamin) is:",
+        "options": {
+          "A": "Iron",
+          "B": "Magnesium",
+          "C": "Cobalt",
+          "D": "Zinc"
+        },
+        "correct": "C",
+        "explanation": "Vitamin B₁₂ is a coordination complex containing Cobalt."
+      },
+      {
+        "q": 35,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "Compressibility factor Z for an ideal gas is equal to:",
+        "options": {
+          "A": "1",
+          "B": "0",
+          "C": "Infinity",
+          "D": "Variable"
+        },
+        "correct": "A",
+        "explanation": "Z = PV / nRT = 1 for ideal gas at all temperatures and pressures."
+      },
+      {
+        "q": 36,
+        "topic": "p-Block Elements",
+        "question": "Which oxide exhibits amphoteric character?",
+        "options": {
+          "A": "Na₂O",
+          "B": "SO₂",
+          "C": "Al₂O₃",
+          "D": "CO₂"
+        },
+        "correct": "C",
+        "explanation": "Al₂O₃ reacts with both acids and bases to form corresponding salts."
+      },
+      {
+        "q": 37,
+        "topic": "Biomolecules",
+        "question": "Number of asymmetric (chiral) carbons in open-chain D-glucose is:",
+        "options": {
+          "A": "3",
+          "B": "4",
+          "C": "5",
+          "D": "6"
+        },
+        "correct": "B",
+        "explanation": "Carbons C2, C3, C4, and C5 are chiral centers in open-chain glucose."
+      },
+      {
+        "q": 38,
+        "topic": "Principles Related to Practical Chemistry",
+        "question": "Which of the following is a primary atmospheric pollutant?",
+        "options": {
+          "A": "PAN",
+          "B": "Ozone",
+          "C": "SO₂",
+          "D": "Acid rain"
+        },
+        "correct": "C",
+        "explanation": "SO₂ is directly emitted from sulfur-containing fuel combustion."
+      },
+      {
+        "q": 39,
+        "topic": "Organic Compounds Containing Nitrogen",
+        "question": "Coordination number of Cobalt in [Co(en)₃]³⁺ is:",
+        "options": {
+          "A": "3",
+          "B": "4",
+          "C": "6",
+          "D": "2"
+        },
+        "correct": "C",
+        "explanation": "Ethylenediamine (en) is bidentate. 3 bidentate ligands give coordination number 3 × 2 = 6."
+      },
+      {
+        "q": 40,
+        "topic": "Coordination Compounds",
+        "question": "Which ligand acts as a strong pi-acceptor (pi-acid)?",
+        "options": {
+          "A": "NH₃",
+          "B": "CO",
+          "C": "Cl⁻",
+          "D": "H₂O"
+        },
+        "correct": "B",
+        "explanation": "CO forms strong back-bonding by accepting electron density into empty π* orbitals."
+      },
+      {
+        "q": 41,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "Molecular geometry of PCl₅ in gas phase is:",
+        "options": {
+          "A": "Square pyramidal",
+          "B": "Trigonal bipyramidal",
+          "C": "Octahedral",
+          "D": "Tetrahedral"
+        },
+        "correct": "B",
+        "explanation": "PCl₅ has sp³d hybridization with 5 bonding pairs, yielding trigonal bipyramidal geometry."
+      },
+      {
+        "q": 42,
+        "topic": "Principles Related to Practical Chemistry",
+        "question": "Which chemical compound is used as an antacid?",
+        "options": {
+          "A": "Aspirin",
+          "B": "Penicillin",
+          "C": "Magnesium hydroxide",
+          "D": "Paracetamol"
+        },
+        "correct": "C",
+        "explanation": "Mg(OH)₂ neutralizes excess stomach acid."
+      },
+      {
+        "q": 43,
+        "topic": "Chemical Thermodynamics",
+        "question": "Enthalpy of neutralization of strong acid and strong base is constant at:",
+        "options": {
+          "A": "-57.1 kJ/mol",
+          "B": "0 kJ/mol",
+          "C": "-13.7 kJ/mol",
+          "D": "-100 kJ/mol"
+        },
+        "correct": "A",
+        "explanation": "Constant value corresponds to combination H⁺ + OH⁻ → H₂O (-57.1 kJ/mol)."
+      },
+      {
+        "q": 44,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "Which aldehyde does NOT undergo Aldol condensation?",
+        "options": {
+          "A": "Acetaldehyde",
+          "B": "Propionaldehyde",
+          "C": "Benzaldehyde",
+          "D": "Acetone"
+        },
+        "correct": "C",
+        "explanation": "Benzaldehyde lacks α-hydrogen atoms required for Aldol condensation."
+      },
+      {
+        "q": 45,
+        "topic": "Some Basic Principles of Organic Chemistry",
+        "question": "Most stable carbocation among the following is:",
+        "options": {
+          "A": "Methyl",
+          "B": "Ethyl",
+          "C": "Isopropyl",
+          "D": "Tert-butyl"
+        },
+        "correct": "D",
+        "explanation": "Tert-butyl carbocation has 9 hyperconjugative α-hydrogens and +I stabilization."
+      }
+    ],
+    "Botany": [
+      {
+        "q": 1,
+        "topic": "Diversity in the Living World",
+        "question": "The basic and lowest unit of taxonomic classification is:",
+        "options": {
+          "A": "Genus",
+          "B": "Species",
+          "C": "Family",
+          "D": "Order"
+        },
+        "correct": "B",
+        "explanation": "Species is the basic unit containing closely related interbreeding organisms."
+      },
+      {
+        "q": 2,
+        "topic": "Diversity in the Living World",
+        "question": "Feature characteristic of Chrysophytes (Diatoms) is:",
+        "options": {
+          "A": "Parasitic nutrition",
+          "B": "Silica-embedded cell walls",
+          "C": "Two flagella of unequal size",
+          "D": "Multicellular thallus"
+        },
+        "correct": "B",
+        "explanation": "Diatoms have indestructible silica walls forming frustules that deposit as diatomaceous earth."
+      },
+      {
+        "q": 3,
+        "topic": "Structural Organisation in Animals and Plants",
+        "question": "Functional visual unit in compound eye of insects is:",
+        "options": {
+          "A": "Ommatidium",
+          "B": "Nephridium",
+          "C": "Osteon",
+          "D": "Statocyst"
+        },
+        "correct": "A",
+        "explanation": "Ommatidia are structural units that collectively form mosaic images."
+      },
+      {
+        "q": 4,
+        "topic": "Structural Organisation in Animals and Plants",
+        "question": "Plant family characterized by presence of gynobasic style is:",
+        "options": {
+          "A": "Solanaceae",
+          "B": "Liliaceae",
+          "C": "Lamiaceae (Labiatae)",
+          "D": "Fabaceae"
+        },
+        "correct": "C",
+        "explanation": "In Lamiaceae, style arises directly from the base of four-lobed ovary (gynobasic)."
+      },
+      {
+        "q": 5,
+        "topic": "Diversity in the Living World",
+        "question": "In binomial nomenclature, second word represents:",
+        "options": {
+          "A": "Genus name",
+          "B": "Specific epithet",
+          "C": "Family name",
+          "D": "Author citation"
+        },
+        "correct": "B",
+        "explanation": "Binomial name consists of generic name followed by specific epithet."
+      },
+      {
+        "q": 6,
+        "topic": "Plant Physiology",
+        "question": "Major site of ATP synthesis via aerobic respiration is:",
+        "options": {
+          "A": "Ribosome",
+          "B": "Golgi apparatus",
+          "C": "Mitochondria",
+          "D": "Lysosome"
+        },
+        "correct": "C",
+        "explanation": "Mitochondrial matrix and inner membrane host Krebs cycle and oxidative phosphorylation."
+      },
+      {
+        "q": 7,
+        "topic": "Plant Physiology",
+        "question": "Which of the following is a C4 plant?",
+        "options": {
+          "A": "Rice",
+          "B": "Wheat",
+          "C": "Maize",
+          "D": "Potato"
+        },
+        "correct": "C",
+        "explanation": "Maize utilizes Kranz anatomy and C4 pathway for efficient CO₂ fixation."
+      },
+      {
+        "q": 8,
+        "topic": "Plant Physiology",
+        "question": "Primary CO₂ acceptor in C3 plants is:",
+        "options": {
+          "A": "PEP",
+          "B": "RuBP",
+          "C": "OAA",
+          "D": "PGA"
+        },
+        "correct": "B",
+        "explanation": "Ribulose-1,5-bisphosphate (RuBP) accepts CO₂ catalyzed by RuBisCO."
+      },
+      {
+        "q": 9,
+        "topic": "Plant Physiology",
+        "question": "Plant hormone responsible for bolting (internode elongation prior to flowering) is:",
+        "options": {
+          "A": "Auxin",
+          "B": "Cytokinin",
+          "C": "Gibberellin",
+          "D": "Abscisic acid"
+        },
+        "correct": "C",
+        "explanation": "Gibberellins induce rapid internode elongation in rosette plants."
+      },
+      {
+        "q": 10,
+        "topic": "Reproduction",
+        "question": "Double fertilization is unique diagnostic feature of:",
+        "options": {
+          "A": "Algae",
+          "B": "Bryophytes",
+          "C": "Pteridophytes",
+          "D": "Angiosperms"
+        },
+        "correct": "D",
+        "explanation": "Involves syngamy (egg fusion) and triple fusion (polar nuclei fusion)."
+      },
+      {
+        "q": 11,
+        "topic": "Cell Structure and Function",
+        "question": "Sequential stages of Prophase I of Meiosis are:",
+        "options": {
+          "A": "Leptotene, Zygotene, Pachytene, Diplotene, Diakinesis",
+          "B": "Zygotene, Leptotene, Pachytene, Diakinesis, Diplotene",
+          "C": "Pachytene, Leptotene, Zygotene, Diplotene, Diakinesis",
+          "D": "Leptotene, Pachytene, Zygotene, Diplotene, Diakinesis"
+        },
+        "correct": "A",
+        "explanation": "Correct chronological sequence of meiotic Prophase I stages."
+      },
+      {
+        "q": 12,
+        "topic": "Ecology and Environment",
+        "question": "Which region in India is recognized as a Sacred Grove?",
+        "options": {
+          "A": "Jim Corbett National Park",
+          "B": "Khasi Hills in Meghalaya",
+          "C": "Nilgiri Biosphere Reserve",
+          "D": "Kaziranga National Park"
+        },
+        "correct": "B",
+        "explanation": "Khasi and Jaintia Hills in Meghalaya are protected forest tracts preserved by culture."
+      },
+      {
+        "q": 13,
+        "topic": "Plant Physiology",
+        "question": "Enzyme nitrogenase responsible for biological nitrogen fixation is inactivated by:",
+        "options": {
+          "A": "Carbon dioxide",
+          "B": "Molecular oxygen",
+          "C": "Light",
+          "D": "High nitrogen concentration"
+        },
+        "correct": "B",
+        "explanation": "Nitrogenase is highly oxygen-sensitive and requires anaerobic conditions provided by leghemoglobin."
+      },
+      {
+        "q": 14,
+        "topic": "Cell Structure and Function",
+        "question": "Which of the following is a non-reducing disaccharide?",
+        "options": {
+          "A": "Glucose",
+          "B": "Fructose",
+          "C": "Sucrose",
+          "D": "Lactose"
+        },
+        "correct": "C",
+        "explanation": "In sucrose, reducing groups of both glucose and fructose are linked in glycosidic bond."
+      },
+      {
+        "q": 15,
+        "topic": "Genetics and Evolution",
+        "question": "Genetic recombination via crossing over occurs during:",
+        "options": {
+          "A": "Zygotene",
+          "B": "Pachytene",
+          "C": "Diplotene",
+          "D": "Diakinesis"
+        },
+        "correct": "B",
+        "explanation": "Exchange of genetic material between non-sister chromatids occurs in pachytene stage."
+      },
+      {
+        "q": 16,
+        "topic": "Reproduction",
+        "question": "Gynoecium structure in Fabaceae family flower is:",
+        "options": {
+          "A": "Monocarpellary, superior ovary",
+          "B": "Bicarpellary, inferior ovary",
+          "C": "Tricarpellary, superior ovary",
+          "D": "Multicarpellary, syncarpous"
+        },
+        "correct": "A",
+        "explanation": "Fabaceae flowers feature single carpel with unilocular superior ovary."
+      },
+      {
+        "q": 17,
+        "topic": "Plant Physiology",
+        "question": "Pigment acting as photoreceptor for photoperiodism in plants is:",
+        "options": {
+          "A": "Chlorophyll",
+          "B": "Phytochrome",
+          "C": "Carotenoid",
+          "D": "Xanthophyll"
+        },
+        "correct": "B",
+        "explanation": "Phytochrome senses red and far-red light regulating flowering responses."
+      },
+      {
+        "q": 18,
+        "topic": "Cell Structure and Function",
+        "question": "Water transport through cell walls and non-living intercellular spaces is:",
+        "options": {
+          "A": "Symplast",
+          "B": "Apoplast",
+          "C": "Tonoplast",
+          "D": "Transmembrane"
+        },
+        "correct": "B",
+        "explanation": "Apoplast pathway consists of continuous cell wall system excluding cytoplasm."
+      },
+      {
+        "q": 19,
+        "topic": "Genetics and Evolution",
+        "question": "Which codon functions as a translation termination (stop) signal?",
+        "options": {
+          "A": "AUG",
+          "B": "UGG",
+          "C": "UAA",
+          "D": "GGG"
+        },
+        "correct": "C",
+        "explanation": "UAA, UAG, and UGA are universal stop codons."
+      },
+      {
+        "q": 20,
+        "topic": "Plant Physiology",
+        "question": "First stable product formed in Hatch-Slack (C4) pathway is:",
+        "options": {
+          "A": "Malic acid",
+          "B": "Oxaloacetic acid (OAA)",
+          "C": "Pyruvic acid",
+          "D": "Aspartic acid"
+        },
+        "correct": "B",
+        "explanation": "CO₂ fixation in mesophyll cells produces 4-carbon dicarboxylic acid, OAA."
+      },
+      {
+        "q": 21,
+        "topic": "Reproduction",
+        "question": "Saffron spice is obtained from which part of Crocus sativus plant?",
+        "options": {
+          "A": "Dried leaves",
+          "B": "Dried stigma and style",
+          "C": "Dried roots",
+          "D": "Dried seeds"
+        },
+        "correct": "B",
+        "explanation": "Commercial saffron consists of dried stigmas and style tips."
+      },
+      {
+        "q": 22,
+        "topic": "Biotechnology and its Applications",
+        "question": "Extra-chromosomal circular DNA molecules found naturally in bacteria are:",
+        "options": {
+          "A": "Plasmids",
+          "B": "Viruses",
+          "C": "Viroids",
+          "D": "Prions"
+        },
+        "correct": "A",
+        "explanation": "Plasmids are autonomous, self-replicating extrachromosomal DNA elements."
+      },
+      {
+        "q": 23,
+        "topic": "Genetics and Evolution",
+        "question": "Phenotypic ratio obtained in F2 generation of Mendelian dihybrid cross is:",
+        "options": {
+          "A": "3 : 1",
+          "B": "1 : 2 : 1",
+          "C": "9 : 3 : 3 : 1",
+          "D": "1 : 1 : 1 : 1"
+        },
+        "correct": "C",
+        "explanation": "Standard F2 ratio when two gene pairs assort independently."
+      },
+      {
+        "q": 24,
+        "topic": "Ecology and Environment",
+        "question": "Recognized biodiversity hotspot in Indian subcontinent is:",
+        "options": {
+          "A": "Western Ghats",
+          "B": "Indo-Gangetic Plains",
+          "C": "Thar Desert",
+          "D": "Deccan Plateau"
+        },
+        "correct": "A",
+        "explanation": "Western Ghats possess rich endemic biodiversity under threat."
+      },
+      {
+        "q": 25,
+        "topic": "Cell Structure and Function",
+        "question": "Primary energy currency of living cells is:",
+        "options": {
+          "A": "DNA",
+          "B": "RNA",
+          "C": "ATP",
+          "D": "NADP"
+        },
+        "correct": "C",
+        "explanation": "ATP stores and transfers chemical energy for cellular work."
+      },
+      {
+        "q": 26,
+        "topic": "Genetics and Evolution",
+        "question": "In double-stranded DNA, Adenine pairs with Thymine through:",
+        "options": {
+          "A": "One hydrogen bond",
+          "B": "Two hydrogen bonds",
+          "C": "Three hydrogen bonds",
+          "D": "Covalent bond"
+        },
+        "correct": "B",
+        "explanation": "A=T base pairing involves two hydrogen bonds; G≡C involves three."
+      },
+      {
+        "q": 27,
+        "topic": "Diversity in the Living World",
+        "question": "Insectivorous adaptation for nitrogen absorption is seen in:",
+        "options": {
+          "A": "Cuscuta",
+          "B": "Nepenthes",
+          "C": "Rafflesia",
+          "D": "Viscum"
+        },
+        "correct": "B",
+        "explanation": "Pitcher plant (Nepenthes) traps insects in nitrogen-deficient soil."
+      },
+      {
+        "q": 28,
+        "topic": "Genetics and Evolution",
+        "question": "Theory of evolution by Natural Selection was proposed by:",
+        "options": {
+          "A": "Lamarck",
+          "B": "Charles Darwin",
+          "C": "Gregor Mendel",
+          "D": "Hugo de Vries"
+        },
+        "correct": "B",
+        "explanation": "Darwin published natural selection mechanism in Origin of Species."
+      },
+      {
+        "q": 29,
+        "topic": "Plant Physiology",
+        "question": "Gaseous plant hormone used commercially to hasten fruit ripening is:",
+        "options": {
+          "A": "Auxin",
+          "B": "Ethylene",
+          "C": "Cytokinin",
+          "D": "Abscisic acid"
+        },
+        "correct": "B",
+        "explanation": "Ethylene promotes respiratory climacteric and fruit maturation."
+      },
+      {
+        "q": 30,
+        "topic": "Genetics and Evolution",
+        "question": "Genome of plant viruses most commonly consists of:",
+        "options": {
+          "A": "Single-stranded DNA",
+          "B": "Single-stranded or double-stranded RNA",
+          "C": "Circular double-stranded DNA",
+          "D": "Equal mix of DNA and RNA"
+        },
+        "correct": "C",
+        "explanation": "Plant viruses predominantly possess RNA genomes."
+      },
+      {
+        "q": 31,
+        "topic": "Cell Structure and Function",
+        "question": "Cell organelle designated as Powerhouse of the Cell is:",
+        "options": {
+          "A": "Nucleus",
+          "B": "Mitochondrion",
+          "C": "Ribosome",
+          "D": "Chloroplast"
+        },
+        "correct": "B",
+        "explanation": "Mitochondrion generates bulk of cellular ATP."
+      },
+      {
+        "q": 32,
+        "topic": "Cell Structure and Function",
+        "question": "Organelle containing hydrolytic enzymes and called Suicide Bag is:",
+        "options": {
+          "A": "Lysosome",
+          "B": "Ribosome",
+          "C": "Vacuole",
+          "D": "Centrosome"
+        },
+        "correct": "A",
+        "explanation": "Lysosomes store acid hydrolases capable of autolysis."
+      },
+      {
+        "q": 33,
+        "topic": "Genetics and Evolution",
+        "question": "Mendel's Law of Independent Assortment is demonstrated using:",
+        "options": {
+          "A": "Monohybrid cross",
+          "B": "Dihybrid cross",
+          "C": "Test cross",
+          "D": "Back cross"
+        },
+        "correct": "B",
+        "explanation": "Requires tracking inheritance of two distinct genetic characters simultaneously."
+      },
+      {
+        "q": 34,
+        "topic": "Cell Structure and Function",
+        "question": "Which of the following is a fat-soluble vitamin?",
+        "options": {
+          "A": "Vitamin C",
+          "B": "Vitamin B12",
+          "C": "Vitamin A",
+          "D": "Vitamin B6"
+        },
+        "correct": "C",
+        "explanation": "Vitamins A, D, E, and K are lipid-soluble."
+      },
+      {
+        "q": 35,
+        "topic": "Cell Structure and Function",
+        "question": "Fluid Mosaic Model of plasma membrane structure was proposed by:",
+        "options": {
+          "A": "Watson and Crick",
+          "B": "Singer and Nicolson",
+          "C": "Schleiden and Schwann",
+          "D": "Robert Hooke"
+        },
+        "correct": "B",
+        "explanation": "Proposed in 1972 describing fluid lipid bilayer with floating proteins."
+      },
+      {
+        "q": 36,
+        "topic": "Genetics and Evolution",
+        "question": "Wobble hypothesis regarding codon-anticodon interaction was proposed by:",
+        "options": {
+          "A": "Watson",
+          "B": "Francis Crick",
+          "C": "Nirenberg",
+          "D": "Khorana"
+        },
+        "correct": "B",
+        "explanation": "Crick proposed flexible pairing at 3rd base position of codon."
+      },
+      {
+        "q": 37,
+        "topic": "Plant Physiology",
+        "question": "Most abundant protein in entire biosphere is:",
+        "options": {
+          "A": "Collagen",
+          "B": "Insulin",
+          "C": "RuBisCO",
+          "D": "Hemoglobin"
+        },
+        "correct": "C",
+        "explanation": "RuBisCO constitutes major protein fraction in photosynthetic tissues."
+      },
+      {
+        "q": 38,
+        "topic": "Ecology and Environment",
+        "question": "Potent greenhouse gas produced during anaerobic decomposition in rice fields is:",
+        "options": {
+          "A": "Oxygen",
+          "B": "Methane",
+          "C": "Nitrogen",
+          "D": "Argon"
+        },
+        "correct": "B",
+        "explanation": "Methanogenic bacteria produce CH₄ in waterlogged paddy fields."
+      },
+      {
+        "q": 39,
+        "topic": "Genetics and Evolution",
+        "question": "Fundamental physical and functional unit of heredity is:",
+        "options": {
+          "A": "Chromosome",
+          "B": "Gene",
+          "C": "DNA strand",
+          "D": "Nucleotide"
+        },
+        "correct": "B",
+        "explanation": "Gene is functional sequence encoding polypeptide or functional RNA."
+      },
+      {
+        "q": 40,
+        "topic": "Reproduction",
+        "question": "Microspores (pollen grains) are produced within:",
+        "options": {
+          "A": "Anther",
+          "B": "Stigma",
+          "C": "Ovary",
+          "D": "Filament"
+        },
+        "correct": "A",
+        "explanation": "Anther sporangia undergo meiosis to yield microspores."
+      },
+      {
+        "q": 41,
+        "topic": "Structural Organisation in Animals and Plants",
+        "question": "Simple plant tissue composed of single uniform cell type is:",
+        "options": {
+          "A": "Xylem",
+          "B": "Phloem",
+          "C": "Parenchyma",
+          "D": "Vascular bundle"
+        },
+        "correct": "C",
+        "explanation": "Parenchyma consists solely of living thin-walled cells."
+      },
+      {
+        "q": 42,
+        "topic": "Diversity in the Living World",
+        "question": "Binomial scientific name of Mango is:",
+        "options": {
+          "A": "Mangifera indica",
+          "B": "Solanum tuberosum",
+          "C": "Triticum aestivum",
+          "D": "Oryza sativa"
+        },
+        "correct": "A",
+        "explanation": "Correct botanical name following ICBN rules."
+      },
+      {
+        "q": 43,
+        "topic": "Plant Physiology",
+        "question": "Primary site of photosynthetic carbon fixation in plant cell is:",
+        "options": {
+          "A": "Mitochondria",
+          "B": "Chloroplast",
+          "C": "Ribosome",
+          "D": "Nucleus"
+        },
+        "correct": "B",
+        "explanation": "Chloroplasts contain thylakoid and stroma machinery for photosynthesis."
+      },
+      {
+        "q": 44,
+        "topic": "Structural Organisation in Animals and Plants",
+        "question": "Vascular cryptogams possessing xylem/phloem but reproducing without seeds are:",
+        "options": {
+          "A": "Mosses",
+          "B": "Ferns (Pteridophytes)",
+          "C": "Pines",
+          "D": "Roses"
+        },
+        "correct": "B",
+        "explanation": "Pteridophytes are first seedless vascular land plants."
+      },
+      {
+        "q": 45,
+        "topic": "Genetics and Evolution",
+        "question": "Scientist honored as Father of Genetics is:",
+        "options": {
+          "A": "Darwin",
+          "B": "Gregor Mendel",
+          "C": "Thomas Hunt Morgan",
+          "D": "Jean-Baptiste Lamarck"
+        },
+        "correct": "B",
+        "explanation": "Mendel established fundamental principles of inheritance."
+      }
+    ],
+    "Zoology": [
+      {
+        "q": 1,
+        "topic": "Biology and Human Welfare",
+        "question": "Biological pathogen responsible for causing Dengue fever is:",
+        "options": {
+          "A": "Aedes mosquito",
+          "B": "Dengue virus (Flavivirus)",
+          "C": "Plasmodium vivax",
+          "D": "Salmonella enterica"
+        },
+        "correct": "B",
+        "explanation": "Dengue is caused by arbovirus (Flavivirus); Aedes acts as vector."
+      },
+      {
+        "q": 2,
+        "topic": "Biology and Human Welfare",
+        "question": "Vector-borne disease transmitted to humans via Culex mosquito bite is:",
+        "options": {
+          "A": "Malaria",
+          "B": "Filariasis (Elephantiasis)",
+          "C": "Dengue",
+          "D": "Typhoid"
+        },
+        "correct": "B",
+        "explanation": "Wuchereria bancrofti larvae are transmitted by Culex mosquitoes."
+      },
+      {
+        "q": 3,
+        "topic": "Human Physiology",
+        "question": "Primary anatomical site for gas exchange in human respiratory system is:",
+        "options": {
+          "A": "Bronchi",
+          "B": "Trachea",
+          "C": "Alveoli",
+          "D": "Larynx"
+        },
+        "correct": "C",
+        "explanation": "Alveoli provide high surface area with thin membrane for diffusion."
+      },
+      {
+        "q": 4,
+        "topic": "Biology and Human Welfare",
+        "question": "Universal donor blood group for red cell transfusions is:",
+        "options": {
+          "A": "AB positive",
+          "B": "O negative",
+          "C": "A negative",
+          "D": "B positive"
+        },
+        "correct": "B",
+        "explanation": "O negative RBCs lack A, B, and Rh antigens, avoiding agglutination."
+      },
+      {
+        "q": 5,
+        "topic": "Human Physiology",
+        "question": "Basic structural and functional unit of human kidney is:",
+        "options": {
+          "A": "Neuron",
+          "B": "Nephron",
+          "C": "Osteon",
+          "D": "Alveolus"
+        },
+        "correct": "B",
+        "explanation": "Each human kidney contains approximately 1 million nephrons."
+      },
+      {
+        "q": 6,
+        "topic": "Reproduction",
+        "question": "Fight-or-flight hormone secreted by adrenal medulla in response to stress is:",
+        "options": {
+          "A": "Insulin",
+          "B": "Adrenaline (Epinephrine)",
+          "C": "Thyroxine",
+          "D": "Estrogen"
+        },
+        "correct": "B",
+        "explanation": "Epinephrine increases heart rate, blood pressure, and glucose mobilization."
+      },
+      {
+        "q": 7,
+        "topic": "Human Physiology",
+        "question": "Uricotelic nitrogenous waste excretion is characteristic of:",
+        "options": {
+          "A": "Bony fishes",
+          "B": "Mammals",
+          "C": "Birds and Reptiles",
+          "D": "Adult amphibians"
+        },
+        "correct": "C",
+        "explanation": "Birds excrete insoluble uric acid paste to conserve water."
+      },
+      {
+        "q": 8,
+        "topic": "Reproduction",
+        "question": "Primary pacemaker of human heart that initiates cardiac impulse is:",
+        "options": {
+          "A": "AV Node",
+          "B": "SA Node",
+          "C": "Purkinje fibers",
+          "D": "Bundle of His"
+        },
+        "correct": "B",
+        "explanation": "Sinoatrial node generates self-excitatory action potentials at fastest rate."
+      },
+      {
+        "q": 9,
+        "topic": "Human Physiology",
+        "question": "Hormone promoting water reabsorption in renal distal tubule and collecting duct is:",
+        "options": {
+          "A": "Oxytocin",
+          "B": "Vasopressin (ADH)",
+          "C": "Glucagon",
+          "D": "Prolactin"
+        },
+        "correct": "B",
+        "explanation": "Anti-diuretic hormone increases aquaporin channels in collecting ducts."
+      },
+      {
+        "q": 10,
+        "topic": "Human Physiology",
+        "question": "Hypersecretion of Growth Hormone in adults leads to clinical condition known as:",
+        "options": {
+          "A": "Acromegaly",
+          "B": "Gigantism",
+          "C": "Cretinism",
+          "D": "Dwarfism"
+        },
+        "correct": "A",
+        "explanation": "Adult hypersecretion causes facial bone and limb enlargement (Acromegaly)."
+      },
+      {
+        "q": 11,
+        "topic": "Human Physiology",
+        "question": "Common anatomical passage for both digestive food bolus and respiratory air is:",
+        "options": {
+          "A": "Larynx",
+          "B": "Pharynx",
+          "C": "Esophagus",
+          "D": "Glottis"
+        },
+        "correct": "B",
+        "explanation": "Pharynx connects nasal/oral cavities to larynx/esophagus."
+      },
+      {
+        "q": 12,
+        "topic": "Human Physiology",
+        "question": "Vestigial structure attached to cecum in human digestive system is:",
+        "options": {
+          "A": "Spleen",
+          "B": "Vermiform appendix",
+          "C": "Gallbladder",
+          "D": "Pancreas"
+        },
+        "correct": "B",
+        "explanation": "Appendix is homologous to cecal pouch but non-functional in humans."
+      },
+      {
+        "q": 13,
+        "topic": "Genetics and Evolution",
+        "question": "Hemophilia A is inherited as an:",
+        "options": {
+          "A": "Y-linked disorder",
+          "B": "X-linked recessive trait",
+          "C": "Autosomal dominant trait",
+          "D": "Autosomal recessive trait"
+        },
+        "correct": "B",
+        "explanation": "Defect in Factor VIII gene on X chromosome affects mostly males."
+      },
+      {
+        "q": 14,
+        "topic": "Human Physiology",
+        "question": "Digestion of dietary starch is initiated in human body within:",
+        "options": {
+          "A": "Stomach",
+          "B": "Oral cavity (Mouth)",
+          "C": "Duodenum",
+          "D": "Ileum"
+        },
+        "correct": "B",
+        "explanation": "Salivary amylase (ptyalin) initiates starch hydrolysis in mouth."
+      },
+      {
+        "q": 15,
+        "topic": "Diversity in the Living World",
+        "question": "Which bird is naturally adapted to marine life and completely flightless?",
+        "options": {
+          "A": "Peacock",
+          "B": "Penguin",
+          "C": "Ostrich",
+          "D": "Albatross"
+        },
+        "correct": "B",
+        "explanation": "Penguins modified wings into flippers for underwater swimming."
+      },
+      {
+        "q": 16,
+        "topic": "Human Physiology",
+        "question": "Endocrine gland referred to as Master Gland of endocrine system is:",
+        "options": {
+          "A": "Thyroid gland",
+          "B": "Adrenal gland",
+          "C": "Pituitary gland",
+          "D": "Pancreas"
+        },
+        "correct": "C",
+        "explanation": "Anterior pituitary secretes tropic hormones regulating other endocrine glands."
+      },
+      {
+        "q": 17,
+        "topic": "Human Physiology",
+        "question": "Which component is absent in human liver bile secretion?",
+        "options": {
+          "A": "Bilirubin",
+          "B": "Bile salts",
+          "C": "Cholesterol",
+          "D": "Digestive enzymes"
+        },
+        "correct": "D",
+        "explanation": "Bile contains pigments and salts for lipid emulsification but no enzymes."
+      },
+      {
+        "q": 18,
+        "topic": "Human Physiology",
+        "question": "Shape of oxygen-hemoglobin dissociation curve under physiological conditions is:",
+        "options": {
+          "A": "Sigmoid",
+          "B": "Linear",
+          "C": "Hyperbolic",
+          "D": "Parabolic"
+        },
+        "correct": "A",
+        "explanation": "Sigmoid curve results from cooperative binding of oxygen to hemoglobin tetramer."
+      },
+      {
+        "q": 19,
+        "topic": "Human Physiology",
+        "question": "Monosynaptic spinal reflex arc is illustrated by:",
+        "options": {
+          "A": "Knee-jerk reflex",
+          "B": "Withdrawal reflex",
+          "C": "Pupil constriction",
+          "D": "Salivation"
+        },
+        "correct": "A",
+        "explanation": "Knee-jerk involves direct single synapse between afferent and efferent neurons."
+      },
+      {
+        "q": 20,
+        "topic": "Human Physiology",
+        "question": "Vitamin synthesized in human skin upon exposure to ultraviolet-B radiation is:",
+        "options": {
+          "A": "Vitamin A",
+          "B": "Vitamin D",
+          "C": "Vitamin E",
+          "D": "Vitamin K"
+        },
+        "correct": "B",
+        "explanation": "7-dehydrocholesterol converts to cholecalciferol via UV irradiation."
+      },
+      {
+        "q": 21,
+        "topic": "Human Physiology",
+        "question": "Largest internal organ and gland in human body is:",
+        "options": {
+          "A": "Pancreas",
+          "B": "Liver",
+          "C": "Thyroid",
+          "D": "Brain"
+        },
+        "correct": "B",
+        "explanation": "Liver weighs approx 1.5 kg performing metabolic and exocrine functions."
+      },
+      {
+        "q": 22,
+        "topic": "Diversity in the Living World",
+        "question": "Oviparous (egg-laying) mammal species is:",
+        "options": {
+          "A": "Kangaroo",
+          "B": "Duck-billed Platypus",
+          "C": "Blue Whale",
+          "D": "Fruit Bat"
+        },
+        "correct": "B",
+        "explanation": "Monotremes like Platypus and Echidna lay eggs while nursing young with milk."
+      },
+      {
+        "q": 23,
+        "topic": "Reproduction",
+        "question": "Average human gestation period from fertilization to parturition is:",
+        "options": {
+          "A": "150 days",
+          "B": "280 days (40 weeks)",
+          "C": "360 days",
+          "D": "90 days"
+        },
+        "correct": "B",
+        "explanation": "Standard human gestation lasts ~280 days from last menstrual period."
+      },
+      {
+        "q": 24,
+        "topic": "Genetics and Evolution",
+        "question": "Karyotype configuration associated with Turner's Syndrome in females is:",
+        "options": {
+          "A": "47, XXY",
+          "B": "45, X0",
+          "C": "47, XYY",
+          "D": "47, XXX"
+        },
+        "correct": "B",
+        "explanation": "Monosomy X results in female phenotype with underdeveloped gonads."
+      },
+      {
+        "q": 25,
+        "topic": "Biology and Human Welfare",
+        "question": "Secondary lymphoid organ filtering blood-borne pathogens is:",
+        "options": {
+          "A": "Spleen",
+          "B": "Liver",
+          "C": "Kidney",
+          "D": "Thymus"
+        },
+        "correct": "A",
+        "explanation": "Spleen filters circulating blood, recycling RBCs and mounting immune responses."
+      },
+      {
+        "q": 26,
+        "topic": "Genetics and Evolution",
+        "question": "Inborn metabolic disorder Phenylketonuria (PKU) is caused by mutation in gene for:",
+        "options": {
+          "A": "Phenylalanine hydroxylase",
+          "B": "Tyrosinase",
+          "C": "Insulin",
+          "D": "Hemoglobin"
+        },
+        "correct": "A",
+        "explanation": "Deficiency of phenylalanine hydroxylase leads to accumulation of phenylalanine."
+      },
+      {
+        "q": 27,
+        "topic": "Human Physiology",
+        "question": "Major nitrogenous waste excreted by ureotelic human kidneys is:",
+        "options": {
+          "A": "Ammonia",
+          "B": "Urea",
+          "C": "Uric acid",
+          "D": "Creatinine"
+        },
+        "correct": "B",
+        "explanation": "Urea is synthesized in liver via ornithine cycle and excreted by kidneys."
+      },
+      {
+        "q": 28,
+        "topic": "Human Physiology",
+        "question": "Region of human brain regulating body temperature, hunger, and thirst is:",
+        "options": {
+          "A": "Cerebrum",
+          "B": "Cerebellum",
+          "C": "Hypothalamus",
+          "D": "Medulla oblongata"
+        },
+        "correct": "C",
+        "explanation": "Hypothalamus contains neural centers maintaining homeostatic autonomic functions."
+      },
+      {
+        "q": 29,
+        "topic": "Human Physiology",
+        "question": "Auditory sensory receptor structure inside inner ear cochlea is:",
+        "options": {
+          "A": "Organ of Corti",
+          "B": "Pinna",
+          "C": "Incus",
+          "D": "Tympanic membrane"
+        },
+        "correct": "A",
+        "explanation": "Organ of Corti contains hair cells that convert mechanical fluid waves into neural signals."
+      },
+      {
+        "q": 30,
+        "topic": "Human Physiology",
+        "question": "Pulmonary disorder characterized by destruction of alveolar walls and reduced surface area is:",
+        "options": {
+          "A": "Asthma",
+          "B": "Bronchitis",
+          "C": "Emphysema",
+          "D": "Pneumonia"
+        },
+        "correct": "C",
+        "explanation": "Emphysema, usually caused by chronic smoking, degrades alveolar septa."
+      },
+      {
+        "q": 31,
+        "topic": "Human Physiology",
+        "question": "Specific endocrine cells in Islets of Langerhans that secrete insulin are:",
+        "options": {
+          "A": "Alpha cells",
+          "B": "Beta cells",
+          "C": "Delta cells",
+          "D": "F cells"
+        },
+        "correct": "B",
+        "explanation": "Pancreatic β-cells synthesize and release insulin to reduce blood glucose."
+      },
+      {
+        "q": 32,
+        "topic": "Human Physiology",
+        "question": "Anatomical structure functioning as Voice Box in humans is:",
+        "options": {
+          "A": "Pharynx",
+          "B": "Larynx",
+          "C": "Trachea",
+          "D": "Epiglottis"
+        },
+        "correct": "B",
+        "explanation": "Larynx contains vocal folds responsible for sound production."
+      },
+      {
+        "q": 33,
+        "topic": "Reproduction",
+        "question": "Sexually transmitted bacterial infection caused by Treponema pallidum is:",
+        "options": {
+          "A": "Cholera",
+          "B": "Syphilis",
+          "C": "Malaria",
+          "D": "Tuberculosis"
+        },
+        "correct": "B",
+        "explanation": "Syphilis is a venereal infection treated with penicillin antibiotics."
+      },
+      {
+        "q": 34,
+        "topic": "Human Physiology",
+        "question": "Average physiological lifespan of human Red Blood Cells (RBCs) in circulation is:",
+        "options": {
+          "A": "10 days",
+          "B": "120 days",
+          "C": "365 days",
+          "D": "30 days"
+        },
+        "correct": "B",
+        "explanation": "RBCs circulate for ~120 days before phagocytosis in spleen and liver."
+      },
+      {
+        "q": 35,
+        "topic": "Genetics and Evolution",
+        "question": "Forelimbs of human, bat, and whale demonstrate evolutionary concept of:",
+        "options": {
+          "A": "Analogous organs",
+          "B": "Homologous organs",
+          "C": "Vestigial organs",
+          "D": "Atavistic traits"
+        },
+        "correct": "B",
+        "explanation": "Homologous structures share common anatomical origin modified for different functions."
+      },
+      {
+        "q": 36,
+        "topic": "Genetics and Evolution",
+        "question": "Down's Syndrome is genetic condition caused by:",
+        "options": {
+          "A": "Monosomy of chromosome 21",
+          "B": "Trisomy of chromosome 21",
+          "C": "Nullisomy of X chromosome",
+          "D": "Deletion on chromosome 5"
+        },
+        "correct": "B",
+        "explanation": "Trisomy 21 (47, +21) leads to characteristic physical and cognitive features."
+      },
+      {
+        "q": 37,
+        "topic": "Genetics and Evolution",
+        "question": "Branch of biology devoted to study of preserved animal/plant fossils is:",
+        "options": {
+          "A": "Ornithology",
+          "B": "Paleontology",
+          "C": "Entomology",
+          "D": "Herpetology"
+        },
+        "correct": "B",
+        "explanation": "Paleontology provides direct physical evidence for evolutionary history."
+      },
+      {
+        "q": 38,
+        "topic": "Genetics and Evolution",
+        "question": "Translation stop codon among the following is:",
+        "options": {
+          "A": "UAA",
+          "B": "AUG",
+          "C": "GGG",
+          "D": "CCC"
+        },
+        "correct": "A",
+        "explanation": "UAA signals ribosome termination during protein synthesis."
+      },
+      {
+        "q": 39,
+        "topic": "Biology and Human Welfare",
+        "question": "First nutrient-dense milk rich in IgA antibodies secreted post-parturition is:",
+        "options": {
+          "A": "Colostrum",
+          "B": "Blood serum",
+          "C": "Amniotic fluid",
+          "D": "Sebum"
+        },
+        "correct": "A",
+        "explanation": "Colostrum imparts passive immunity to newborn during initial nursing days."
+      },
+      {
+        "q": 40,
+        "topic": "Human Physiology",
+        "question": "Hormonal surge directly triggering ovulation from mature Graafian follicle is:",
+        "options": {
+          "A": "FSH surge",
+          "B": "LH surge",
+          "C": "Progesterone surge",
+          "D": "Oxytocin surge"
+        },
+        "correct": "B",
+        "explanation": "Luteinizing Hormone (LH) peak on ~day 14 induces follicular rupture."
+      },
+      {
+        "q": 41,
+        "topic": "Human Physiology",
+        "question": "Functional contractile unit of myofibril bounded by two adjacent Z-lines is:",
+        "options": {
+          "A": "Myofilament",
+          "B": "Sarcomere",
+          "C": "Sarcoplasm",
+          "D": "Sarcolemma"
+        },
+        "correct": "B",
+        "explanation": "Sarcomere contains overlapping actin and myosin filaments."
+      },
+      {
+        "q": 42,
+        "topic": "Genetics and Evolution",
+        "question": "Classic example of single gene mutation causing multiple phenotypic effects (Pleiotropy) is:",
+        "options": {
+          "A": "Eye color gene",
+          "B": "Phenylketonuria (PKU)",
+          "C": "Polygenic height",
+          "D": "ABO blood group"
+        },
+        "correct": "B",
+        "explanation": "Mutated PAH gene affects brain development, skin pigmentation, and hair color."
+      },
+      {
+        "q": 43,
+        "topic": "Genetics and Evolution",
+        "question": "Geological era recognized as Age of Reptiles is:",
+        "options": {
+          "A": "Paleozoic",
+          "B": "Mesozoic",
+          "C": "Cenozoic",
+          "D": "Proterozoic"
+        },
+        "correct": "B",
+        "explanation": "Mesozoic era (Triassic, Jurassic, Cretaceous) was dominated by archosaurs and dinosaurs."
+      },
+      {
+        "q": 44,
+        "topic": "Biology and Human Welfare",
+        "question": "Acquisition of long-term immunity via memory cell production induced by antigen exposure is:",
+        "options": {
+          "A": "Passive natural immunity",
+          "B": "Active immunity (Vaccination)",
+          "C": "Passive artificial immunity",
+          "D": "Innate immunity"
+        },
+        "correct": "B",
+        "explanation": "Vaccination stimulates immune system to generate specific antibodies and memory T/B cells."
+      },
+      {
+        "q": 45,
+        "topic": "Human Physiology",
+        "question": "Universal recipient blood group for packed RBC transfusion is:",
+        "options": {
+          "A": "O positive",
+          "B": "AB positive",
+          "C": "AB negative",
+          "D": "A negative"
+        },
+        "correct": "B",
+        "explanation": "AB positive individuals lack plasma antibodies against A, B, and Rh factors."
+      }
+    ]
+  }
+}

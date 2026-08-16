@@ -1,0 +1,770 @@
+{
+  "paper_id": "JEE-ADVANCED-Paper2",
+  "title": "JEE Advanced Paper 2",
+  "exam": "JEE Advanced",
+  "year": 2026,
+  "subjects": {
+    "Mathematics": [
+      {
+        "q": 1,
+        "type": "Single Correct MCQ",
+        "topic": "Complex Numbers",
+        "question": "Let z be a complex number such that |z-1| = 1. Find the locus of w = 2/z.",
+        "options": {
+          "A": "A parabola.",
+          "B": "A circle.",
+          "C": "A straight line.",
+          "D": "An ellipse."
+        },
+        "correct": "C",
+        "explanation": "Substituting z = 2/w gives |(2/w)-1|=1, simplifying to |2-w|=|w|, the perpendicular bisector of 0 and 2, i.e. the line x=1."
+      },
+      {
+        "q": 2,
+        "type": "Single Correct MCQ",
+        "topic": "Limits, Continuity and Differentiability",
+        "question": "What is the value of lim(n→∞) Σ(r=1 to n) 1/(n+r)?",
+        "options": {
+          "A": "1",
+          "B": "0",
+          "C": "ln 3",
+          "D": "ln 2"
+        },
+        "correct": "D",
+        "explanation": "The sum converts to the definite integral of 1/(1+x) from 0 to 1, which equals ln 2."
+      },
+      {
+        "q": 3,
+        "type": "Single Correct MCQ",
+        "topic": "Sets, Relations and Functions",
+        "question": "Determine the number of real solutions for the equation cos(e^x) = 2^x + 2^(-x).",
+        "options": {
+          "A": "0",
+          "B": "1",
+          "C": "Infinite",
+          "D": "2"
+        },
+        "correct": "A",
+        "explanation": "RHS >= 2 by AM-GM, LHS <= 1 always. Since min(RHS) > max(LHS), no real solution exists."
+      },
+      {
+        "q": 4,
+        "type": "Single Correct MCQ",
+        "topic": "Matrices and Determinants",
+        "question": "If A is a 3x3 matrix with det(A) = 3, find the value of det(adj(adj(A))).",
+        "options": {
+          "A": "81",
+          "B": "9",
+          "C": "27",
+          "D": "243"
+        },
+        "correct": "A",
+        "explanation": "det(adj(adj(A))) = det(A)^((n-1)^2) with n=3, power=4. 3^4 = 81."
+      },
+      {
+        "q": 5,
+        "type": "Single Correct MCQ",
+        "topic": "Applications of Derivatives",
+        "question": "Find the minimum value of the function f(x) = |x-1| + |x-2| + |x-3|.",
+        "options": {
+          "A": "0",
+          "B": "2",
+          "C": "1",
+          "D": "3"
+        },
+        "correct": "B",
+        "explanation": "Minimum occurs at the median, x=2. f(2) = 1+0+1 = 2."
+      },
+      {
+        "q": 6,
+        "type": "Single Correct MCQ",
+        "topic": "Logarithms, Permutations and Combinations",
+        "question": "Calculate the number of distinct ways to distribute 5 identical balls into 3 distinct boxes.",
+        "options": {
+          "A": "15",
+          "B": "35",
+          "C": "10",
+          "D": "21"
+        },
+        "correct": "D",
+        "explanation": "Stars and bars: C(n+r-1, r-1) = C(7,2) = 21."
+      },
+      {
+        "q": 7,
+        "type": "Single Correct MCQ",
+        "topic": "Integral Calculus",
+        "question": "Evaluate the definite integral of (sin^3 x * cos^2 x) dx from -π/2 to π/2.",
+        "options": {
+          "A": "1",
+          "B": "0",
+          "C": "π/4",
+          "D": "π/2"
+        },
+        "correct": "B",
+        "explanation": "The integrand is an odd function; integral over symmetric limits is 0."
+      },
+      {
+        "q": 8,
+        "type": "Single Correct MCQ",
+        "topic": "Applications of Derivatives",
+        "question": "Find the absolute maximum value of the function f(x) = x^(1/x) for x > 0.",
+        "options": {
+          "A": "e",
+          "B": "1",
+          "C": "e^(1/e)",
+          "D": "1/e"
+        },
+        "correct": "C",
+        "explanation": "Logarithmic differentiation gives critical point x=e; f(e) = e^(1/e), the maximum."
+      },
+      {
+        "q": 9,
+        "type": "Single Correct MCQ",
+        "topic": "Conic Sections (Parabola, Ellipse, Hyperbola)",
+        "question": "What is the eccentricity of any rectangular hyperbola?",
+        "options": {
+          "A": "√3",
+          "B": "√2",
+          "C": "2",
+          "D": "1"
+        },
+        "correct": "B",
+        "explanation": "For a rectangular hyperbola a=b, so e = √(1+b²/a²) = √2."
+      },
+      {
+        "q": 10,
+        "type": "Multiple Correct MSQ",
+        "topic": "Applications of Derivatives",
+        "question": "Let f(x) = x^3 - 3x. Which of the following statements correctly describe this function?",
+        "options": {
+          "A": "A local maximum occurs at x=-1.",
+          "B": "A local minimum occurs at x=1.",
+          "C": "The function is strictly increasing on (1, infinity).",
+          "D": "The function is strictly decreasing on (-infinity, -1)."
+        },
+        "correct": "A,B,C",
+        "explanation": "f'(x)=3(x-1)(x+1). x=-1 is local max, x=1 is local min. f is increasing for x>1 and x<-1, so D (decreasing) is false."
+      },
+      {
+        "q": 11,
+        "type": "Multiple Correct MSQ",
+        "topic": "Matrices and Determinants",
+        "question": "Which of the following properties hold true for the matrix A = [[0, 1], [-1, 0]]?",
+        "options": {
+          "A": "A^2 = -I",
+          "B": "A^4 = I",
+          "C": "A is an orthogonal matrix",
+          "D": "A is a symmetric matrix"
+        },
+        "correct": "A,B,C",
+        "explanation": "A^2 = -I, so A^4 = I. A^T = -A (skew-symmetric, not symmetric). A·A^T = I, so A is orthogonal."
+      },
+      {
+        "q": 12,
+        "type": "Multiple Correct MSQ",
+        "topic": "Limits, Continuity and Differentiability",
+        "question": "Identify which of the following functions are uniformly continuous on the open interval (0, 1).",
+        "options": {
+          "A": "f(x) = sin(1/x)",
+          "B": "f(x) = x*sin(1/x)",
+          "C": "f(x) = e^x",
+          "D": "f(x) = 1/x"
+        },
+        "correct": "B,C",
+        "explanation": "A continuous function on a bounded open interval is uniformly continuous iff limits at both endpoints exist and are finite. This holds for x·sin(1/x) and e^x, but not sin(1/x) (limit doesn't exist at 0) or 1/x (unbounded)."
+      },
+      {
+        "q": 13,
+        "type": "Multiple Correct MSQ",
+        "topic": "Differential Equations",
+        "question": "Consider the first-order differential equation dy/dx = (x+y)/x. Which of the following statements accurately classify or solve this equation?",
+        "options": {
+          "A": "It is a homogeneous differential equation.",
+          "B": "It is a linear differential equation.",
+          "C": "The general solution is y = x*ln|x| + C*x.",
+          "D": "It is an exact differential equation in its current form."
+        },
+        "correct": "A,B,C",
+        "explanation": "Rewritten as dy/dx - y/x = 1, it is linear; also expressible as a function of y/x, so homogeneous. Using integrating factor 1/x yields y = x ln|x| + Cx."
+      },
+      {
+        "q": 14,
+        "type": "Multiple Correct MSQ",
+        "topic": "Conic Sections (Parabola, Ellipse, Hyperbola)",
+        "question": "For the ellipse given by the equation x^2/16 + y^2/9 = 1, determine which geometric properties are correct.",
+        "options": {
+          "A": "The eccentricity is √7/4.",
+          "B": "The foci are located at (±√7, 0).",
+          "C": "The equations of the directrices are x = ±16/√7.",
+          "D": "The length of the latus rectum is 9/2."
+        },
+        "correct": "A,B,C,D",
+        "explanation": "a²=16, b²=9. e=√(1-9/16)=√7/4. Foci at (±ae,0)=(±√7,0). Directrices x=±a/e=±16/√7. Latus rectum = 2b²/a = 9/2."
+      },
+      {
+        "q": 15,
+        "type": "Multiple Correct MSQ",
+        "topic": "Vectors",
+        "question": "Let three vectors be defined as a = i + j, b = j + k, and c = k + i. Which of the following vector properties hold true?",
+        "options": {
+          "A": "The scalar triple product [a b c] strictly equals 2.",
+          "B": "The vectors are non-coplanar.",
+          "C": "The cross product a x b = i - j + k.",
+          "D": "The magnitude of the sum a + b + c evaluates to 2√3."
+        },
+        "correct": "A,B,C,D",
+        "explanation": "Triple product determinant = 2, so non-coplanar. a×b = i - j + k. a+b+c = 2i+2j+2k, magnitude = 2√3."
+      },
+      {
+        "q": 16,
+        "type": "Multiple Correct MSQ",
+        "topic": "Probability",
+        "question": "Assume A and B are statistically independent events in a probability space where P(A) = 0.3 and P(B) = 0.4. Which specific probabilities are correctly calculated?",
+        "options": {
+          "A": "P(A and B) = 0.12",
+          "B": "P(A or B) = 0.58",
+          "C": "P(A|B) = 0.3",
+          "D": "P(A and not B) = 0.18"
+        },
+        "correct": "A,B,C,D",
+        "explanation": "P(A∩B)=0.12. P(A∪B)=0.3+0.4-0.12=0.58. P(A|B)=P(A)=0.3 (independence). P(A∩not B)=0.3-0.12=0.18."
+      },
+      {
+        "q": 17,
+        "type": "Multiple Correct MSQ",
+        "topic": "Integral Calculus",
+        "question": "Consider the definite integral evaluated as I = integral from 0 to π of (x*sin x)/(1+cos^2 x) dx. Which of the following evaluations of I are correct?",
+        "options": {
+          "A": "Its exact analytical value is π²/4.",
+          "B": "It can be successfully simplified using the integration property integral f(x) = integral f(a-x).",
+          "C": "Its exact analytical value is π²/2.",
+          "D": "Its numerical value is strictly less than 3."
+        },
+        "correct": "A,B,D",
+        "explanation": "King's property gives 2I = π ∫(sinx)/(1+cos²x)dx; substituting u=cosx integrates to π²/4. Since π²/4 ≈ 2.47 < 3, D is also correct."
+      },
+      {
+        "q": 18,
+        "type": "Multiple Correct MSQ",
+        "topic": "Sequences and Series",
+        "question": "Consider the mathematical sequence defined by a_n = (1 + 1/n)^n for all natural numbers n. Which properties accurately characterize this sequence?",
+        "options": {
+          "A": "The sequence converges strictly to the constant e.",
+          "B": "It acts as a strictly increasing sequence.",
+          "C": "It acts as a strictly decreasing sequence.",
+          "D": "It is strictly bounded above by the integer 3."
+        },
+        "correct": "A,B,D",
+        "explanation": "This sequence converges to e, is strictly increasing, and is bounded above by 3."
+      }
+    ],
+    "Physics": [
+      {
+        "q": 1,
+        "type": "Single Correct MCQ",
+        "topic": "Kinematics",
+        "question": "A particle moves along a straight line such that its velocity v depends on its displacement x as v = alpha*sqrt(x), where alpha is a positive constant. If the particle starts from rest at the origin, the average velocity of the particle over the time taken to cover a distance S is:",
+        "options": {
+          "A": "alpha*sqrt(S)",
+          "B": "(1/2)alpha*sqrt(S)",
+          "C": "(2/3)alpha*sqrt(S)",
+          "D": "(1/3)alpha*sqrt(S)"
+        },
+        "correct": "B",
+        "explanation": "Given v = dx/dt = alpha x^(1/2). Rearranging and integrating gives x^(-1/2) dx = alpha dt, which yields 2x^(1/2) = alpha*t. Squaring both sides gives x = (alpha^2 t^2)/4. The velocity at time t is v = dx/dt = (alpha^2 t)/2. The time t0 required to travel distance S is found using S = (alpha^2 t0^2)/4, meaning t0 = 2*sqrt(S)/alpha. Average velocity = S / t0 = S / (2sqrt(S)/alpha) = (1/2)alpha*sqrt(S)."
+      },
+      {
+        "q": 2,
+        "type": "Single Correct MCQ",
+        "topic": "Thermal Physics",
+        "question": "An ideal diatomic gas undergoes a process in which its pressure is directly proportional to its volume. The molar heat capacity of the gas for this process is (R is the universal gas constant):",
+        "options": {
+          "A": "(5/2)R",
+          "B": "(7/2)R",
+          "C": "2R",
+          "D": "3R"
+        },
+        "correct": "D",
+        "explanation": "The process equation is P ∝ V, written as PV^-1 = constant, a polytropic process with n = -1. For an ideal diatomic gas, Cv = (5/2)R. C = Cv + R/(1-n) = (5/2)R + R/(1-(-1)) = (5/2)R + R/2 = 3R."
+      },
+      {
+        "q": 3,
+        "type": "Single Correct MCQ",
+        "topic": "Modern Physics",
+        "question": "A sample of hydrogen atoms in a specific excited state de-excites to the ground state. If the maximum number of distinct spectral lines emitted is 10, the principal quantum number of the initial excited state is:",
+        "options": {
+          "A": "5",
+          "B": "6",
+          "C": "4",
+          "D": "7"
+        },
+        "correct": "A",
+        "explanation": "N = n(n-1)/2 = 10 gives n^2 - n - 20 = 0, so (n-5)(n+4) = 0. Since n must be positive, n = 5."
+      },
+      {
+        "q": 4,
+        "type": "Single Correct MCQ",
+        "topic": "Electrostatics",
+        "question": "Two identical small conducting spheres carry initial charges Q1 and Q2. They are separated by a distance r and exert a repulsive electrostatic force F on each other. They are brought into contact and then separated back to the same distance r. The new electrostatic force between them is F'. Which of the following statements is true?",
+        "options": {
+          "A": "F' is less than F",
+          "B": "F' is equal to F",
+          "C": "F' is greater than or equal to F",
+          "D": "F' is zero"
+        },
+        "correct": "C",
+        "explanation": "Initial F = kQ1Q2/r^2. After contact, charge on each sphere is (Q1+Q2)/2, so F' = k((Q1+Q2)/2)^2/r^2. By AM-GM, ((Q1+Q2)/2)^2 >= Q1Q2, so F' >= F."
+      },
+      {
+        "q": 5,
+        "type": "Single Correct MCQ",
+        "topic": "Current Electricity",
+        "question": "A uniform wire of resistance 36 Ω is bent into the shape of a circle. The equivalent resistance between two points on the circumference that subtend an angle of 60° at the center is:",
+        "options": {
+          "A": "5 Ω",
+          "B": "6 Ω",
+          "C": "10 Ω",
+          "D": "12 Ω"
+        },
+        "correct": "A",
+        "explanation": "60° is 1/6 of the circle. R1 = 36 × (1/6) = 6 Ω, R2 = 36 × (5/6) = 30 Ω. Req = (R1R2)/(R1+R2) = 180/36 = 5 Ω."
+      },
+      {
+        "q": 6,
+        "type": "Single Correct MCQ",
+        "topic": "Ray Optics",
+        "question": "A light ray traveling in a transparent medium of refractive index 1.5 is incident on the interface with another transparent medium of refractive index 1.2. The sine of the critical angle for total internal reflection at this interface is:",
+        "options": {
+          "A": "0.6",
+          "B": "0.8",
+          "C": "0.75",
+          "D": "0.9"
+        },
+        "correct": "B",
+        "explanation": "n1 sin(θc) = n2 sin(90°). sin(θc) = n2/n1 = 1.2/1.5 = 0.8."
+      },
+      {
+        "q": 7,
+        "type": "Single Correct MCQ",
+        "topic": "System of Particles and Rotational Motion",
+        "question": "A uniform solid sphere of mass M and radius R rolls without slipping down a rough inclined plane of inclination θ. The minimum coefficient of static friction μ required to support this motion is:",
+        "options": {
+          "A": "(2/5) tan(θ)",
+          "B": "(2/7) sin(θ)",
+          "C": "(5/7) tan(θ)",
+          "D": "(2/7) tan(θ)"
+        },
+        "correct": "D",
+        "explanation": "a = g sinθ/(1+2/5) = (5/7)g sinθ. f = (2/5)Ma = (2/7)Mg sinθ. N = Mg cosθ. μ >= f/N = (2/7)tanθ."
+      },
+      {
+        "q": 8,
+        "type": "Single Correct MCQ",
+        "topic": "Gravitation",
+        "question": "A satellite is in a circular orbit at a height h = R above the surface of the Earth, where R is the radius of the Earth. The ratio of the magnitude of its kinetic energy to the magnitude of its potential energy is:",
+        "options": {
+          "A": "2",
+          "B": "1",
+          "C": "1/2",
+          "D": "1/4"
+        },
+        "correct": "C",
+        "explanation": "r = 2R. KE = GMm/(2r), |PE| = GMm/r. Ratio |KE|/|PE| = 1/2."
+      },
+      {
+        "q": 9,
+        "type": "Single Correct MCQ",
+        "topic": "Simple Harmonic Motion and Oscillations",
+        "question": "A simple pendulum of length L has a time period T on the surface of the Earth. It is taken to a planet whose mass is twice that of Earth and radius is half that of Earth. The new time period of the pendulum on this planet is:",
+        "options": {
+          "A": "T/√2",
+          "B": "T/2",
+          "C": "T/(2√2)",
+          "D": "2T"
+        },
+        "correct": "C",
+        "explanation": "g' = G(2M)/(R/2)^2 = 8g. T' = 2π√(L/8g) = T/2√2."
+      },
+      {
+        "q": 10,
+        "type": "Single Correct MCQ",
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "An electron enters a region of uniform magnetic field B with a velocity v at an angle of 30° to the magnetic field direction. The path of the electron is a helix. The ratio of the pitch of the helix to the radius of the helix is:",
+        "options": {
+          "A": "π",
+          "B": "π√3",
+          "C": "2π",
+          "D": "2π√3"
+        },
+        "correct": "D",
+        "explanation": "p/r = 2π(v∥/v⊥) = 2π cot(30°) = 2π√3."
+      },
+      {
+        "q": 11,
+        "type": "Single Correct MCQ",
+        "topic": "Electromagnetic Induction and AC Circuits",
+        "question": "A conducting rod of length L rotates with a constant angular velocity ω about an axis passing through one of its ends and perpendicular to its length. A uniform magnetic field B is perpendicular to the plane of rotation. The magnitude of the induced emf across the ends of the rod is:",
+        "options": {
+          "A": "BωL^2",
+          "B": "(1/2)BωL^2",
+          "C": "2BωL^2",
+          "D": "(1/4)BωL^2"
+        },
+        "correct": "B",
+        "explanation": "E = ∫0^L Bωx dx = (1/2)BωL^2."
+      },
+      {
+        "q": 12,
+        "type": "Single Correct MCQ",
+        "topic": "Mechanical Properties of Solids and Fluids",
+        "question": "A spherical water drop of radius R is divided into 8 equal smaller drops. If the surface tension of water is T, the work done in this process is:",
+        "options": {
+          "A": "4πR^2T",
+          "B": "2πR^2T",
+          "C": "8πR^2T",
+          "D": "3πR^2T"
+        },
+        "correct": "A",
+        "explanation": "r = R/2. A1 = 4πR^2, A2 = 8πR^2. ΔA = 4πR^2. W = TΔA = 4πR^2T."
+      },
+      {
+        "q": 13,
+        "type": "Multiple Select Question (MSQ)",
+        "topic": "Thermal Physics",
+        "question": "An ideal gas undergoes an adiabatic free expansion into a vacuum. Which of the following statements is/are correct?",
+        "options": {
+          "A": "The change in internal energy of the gas is zero.",
+          "B": "The work done by the gas is positive.",
+          "C": "The temperature of the gas remains constant.",
+          "D": "The total entropy of the gas remains constant."
+        },
+        "correct": "A,C",
+        "explanation": "W = 0, Q = 0, so ΔU = 0, meaning ΔT = 0. The process is irreversible, so entropy increases (not constant)."
+      },
+      {
+        "q": 14,
+        "type": "Multiple Select Question (MSQ)",
+        "topic": "Electromagnetic Induction and AC Circuits",
+        "question": "In a series LCR circuit connected to a variable frequency AC source, which of the following statements is/are correct at resonance?",
+        "options": {
+          "A": "The current and the source voltage are in phase.",
+          "B": "The impedance of the circuit is purely resistive and minimum.",
+          "C": "The power factor of the circuit is zero.",
+          "D": "The peak voltages across the inductor and the capacitor are equal in magnitude and opposite in phase."
+        },
+        "correct": "A,B,D",
+        "explanation": "At resonance XL = XC, Z = R (minimum, resistive). Current and voltage are in phase, so power factor = 1 (not zero). VL and VC are equal magnitude, 180° out of phase."
+      },
+      {
+        "q": 15,
+        "type": "Multiple Select Question (MSQ)",
+        "topic": "Wave Optics",
+        "question": "In a Young's double-slit experiment using monochromatic light of wavelength λ, which of the following changes will increase the fringe width on the screen?",
+        "options": {
+          "A": "Decreasing the distance D between the slits and the screen.",
+          "B": "Increasing the wavelength λ of the incident light.",
+          "C": "Decreasing the distance d between the slits.",
+          "D": "Submerging the entire apparatus in water."
+        },
+        "correct": "B,C",
+        "explanation": "W = λD/d. Decreasing D decreases W. Increasing λ increases W. Decreasing d increases W. Submerging in water reduces λ, decreasing W."
+      },
+      {
+        "q": 16,
+        "type": "Multiple Select Question (MSQ)",
+        "topic": "Work, Energy and Power",
+        "question": "A particle of mass m moving with velocity v collides elastically with an identical particle initially at rest. The collision is not necessarily head-on. Which of the following statements is/are correct?",
+        "options": {
+          "A": "The total kinetic energy of the two-particle system is conserved.",
+          "B": "The total linear momentum of the two-particle system is conserved.",
+          "C": "If the collision is oblique, the two particles will move at right angles to each other after the collision.",
+          "D": "The maximum possible speed acquired by the target particle is v."
+        },
+        "correct": "A,B,C,D",
+        "explanation": "Elastic collision conserves KE and momentum. Momentum vectors form a right triangle for equal masses, so particles diverge at 90° when oblique. In a head-on collision the target moves with speed v (maximum possible)."
+      },
+      {
+        "q": 17,
+        "type": "Multiple Select Question (MSQ)",
+        "topic": "Electrostatics",
+        "question": "An isolated solid conducting sphere of radius R carries a net charge Q. In electrostatic equilibrium, which of the following is/are correct?",
+        "options": {
+          "A": "The electric field inside the sphere is zero everywhere.",
+          "B": "The electrostatic potential inside the sphere varies with distance from the center.",
+          "C": "The magnitude of the electric field just outside the surface is proportional to R^2.",
+          "D": "The entire net charge Q resides on the outer surface of the sphere."
+        },
+        "correct": "A,D",
+        "explanation": "E = 0 inside a conductor in equilibrium, so potential is constant inside (not varying). All net charge resides on the outer surface. E just outside = kQ/R^2, inversely proportional to R^2 (not proportional)."
+      },
+      {
+        "q": 18,
+        "type": "Multiple Select Question (MSQ)",
+        "topic": "Modern Physics",
+        "question": "Which of the following statements is/are correct regarding beta-minus (β-) decay of a radioactive nucleus?",
+        "options": {
+          "A": "The mass number (A) of the daughter nucleus decreases by one.",
+          "B": "The atomic number (Z) of the daughter nucleus increases by one.",
+          "C": "An electron and an electron antineutrino are emitted.",
+          "D": "The decay is governed by the weak nuclear force."
+        },
+        "correct": "B,C,D",
+        "explanation": "n → p + e- + antineutrino. Mass number A stays constant (not decreased). Z increases by one. An electron and antineutrino are emitted, governed by the weak nuclear force."
+      }
+    ],
+    "Chemistry": [
+      {
+        "q": 1,
+        "type": "Single Correct Type (MCQ)",
+        "topic": "Electrochemistry",
+        "question": "The standard EMF of a galvanic cell involving the cell reaction with n = 2 is found to be 0.295 V at 25 °C. The temperature coefficient of the EMF of the cell is −1.5 × 10^-4 V/K. What is the standard enthalpy change (ΔH°) for the cell reaction? (Given 1 F = 96500 C/mol)",
+        "options": {
+          "A": "−28.4 kJ/mol",
+          "B": "−65.6 kJ/mol",
+          "C": "+34.2 kJ/mol",
+          "D": "−85.1 kJ/mol"
+        },
+        "correct": "B",
+        "explanation": "ΔH° = −nFE° + nFT(dE°/dT). With n=2, E°=0.295 V, T=298K, dE°/dT=−1.5×10^-4 V/K: ΔH° = −(2×96500×0.295) + (2×96500×298×(−1.5×10^-4)) = −56935 − 8627.1 ≈ −65.6 kJ/mol."
+      },
+      {
+        "q": 2,
+        "type": "Single Correct Type (MCQ)",
+        "topic": "Aldehydes and Ketones",
+        "question": "An organic compound P (C8H8O) gives a positive iodoform test. P reacts with HCN followed by acidic hydrolysis to yield an alpha-hydroxy acid Q. When Q is heated with concentrated H2SO4, it undergoes dehydration to give an alpha, beta-unsaturated acid R. Ozonolysis of R followed by an oxidative workup (using H2O2) yields which of the following pairs of products?",
+        "options": {
+          "A": "Phenylglyoxylic acid and Carbon dioxide",
+          "B": "Benzoic acid and Formic acid",
+          "C": "Benzoic acid and Oxalic acid",
+          "D": "Phenylacetic acid and Carbon dioxide"
+        },
+        "correct": "A",
+        "explanation": "P is acetophenone (Ph-CO-CH3). HCN addition/hydrolysis gives atrolactic acid Q (Ph-C(OH)(CH3)-COOH). Dehydration gives atropic acid R (Ph-C(=CH2)-COOH). Oxidative ozonolysis cleaves the terminal =CH2 to CO2 (via formic acid) and the internal carbon becomes phenylglyoxylic acid (Ph-CO-COOH)."
+      },
+      {
+        "q": 3,
+        "type": "Single Correct Type (MCQ)",
+        "topic": "Coordination Compounds",
+        "question": "In the octahedral complex [Mn(H2O)6]²⁺, the pairing energy (P) is 28800 cm⁻¹ and the crystal field splitting energy (Δ∞) is 8500 cm⁻¹. Which of the following correctly describes the electronic configuration and the Crystal Field Stabilization Energy (CFSE) of this complex?",
+        "options": {
+          "A": "t2g^5 eg^0, CFSE = −2.0 Δ∞ + 2P",
+          "B": "t2g^3 eg^2, CFSE = 0.0 Δ∞",
+          "C": "t2g^4 eg^1, CFSE = −0.4 Δ∞ + P",
+          "D": "t2g^3 eg^2, CFSE = −0.4 Δ∞"
+        },
+        "correct": "B",
+        "explanation": "Mn²⁺ is d5. Since Δ∞ < P, it is high-spin: t2g^3 eg^2. CFSE = (−0.4×3 + 0.6×2)Δ∞ = 0.0 Δ∞."
+      },
+      {
+        "q": 4,
+        "type": "Single Correct Type (MCQ)",
+        "topic": "Chemical Kinetics",
+        "question": "A radioactive element A decays into a transient element B, which further decays into a stable element C. The decay constants for A → B and B → C are λ1 and λ2 respectively. If initially only A is present at concentration N0, the time t_max at which the concentration of B reaches its maximum is given by:",
+        "options": {
+          "A": "(λ2−λ1)/ln(λ2/λ1)",
+          "B": "ln(λ1/λ2)/(λ1−λ2)",
+          "C": "(λ1+λ2)/ln(λ1λ2)",
+          "D": "ln(2)/(λ1+λ2)"
+        },
+        "correct": "B",
+        "explanation": "Using the Bateman equation and differentiating NB w.r.t. t and setting to zero: λ1 e^(-λ1t) = λ2 e^(-λ2t). Solving gives t_max = ln(λ1/λ2)/(λ1−λ2)."
+      },
+      {
+        "q": 5,
+        "type": "Single Correct Type (MCQ)",
+        "topic": "States of Matter: Gases and Liquids",
+        "question": "For a real gas obeying the van der Waals equation, the compressibility factor Z at the Boyle temperature is equal to 1 in the limit of zero pressure. Which of the following expressions correctly defines the Boyle temperature (TB) in terms of the van der Waals constants a and b?",
+        "options": {
+          "A": "a/(Rb)",
+          "B": "8a/(27Rb)",
+          "C": "2a/(Rb)",
+          "D": "a/(2Rb)"
+        },
+        "correct": "A",
+        "explanation": "At the Boyle temperature, the second virial coefficient B(T) = b − a/RTB = 0, giving TB = a/(Rb)."
+      },
+      {
+        "q": 6,
+        "type": "Single Correct Type (MCQ)",
+        "topic": "Basic Principles of Organic Chemistry",
+        "question": "A mixture of two enantiomers of 2-butanol has a specific rotation of +6.76°. If the specific rotation of pure (S)-2-butanol is +13.52°, what is the percentage of the (R)-enantiomer present in the mixture?",
+        "options": {
+          "A": "75%",
+          "B": "25%",
+          "C": "50%",
+          "D": "40%"
+        },
+        "correct": "B",
+        "explanation": "ee = (6.76/13.52)×100 = 50%. Total S = 50% + 25% (racemic half) = 75%, so R = 25%."
+      },
+      {
+        "q": 7,
+        "type": "Single Correct Type (MCQ)",
+        "topic": "p-Block Elements",
+        "question": "When considering the oxoacids of sulphur, peroxodisulphuric acid (H2S2O8) and peroxomonosulphuric acid (H2SO5) possess unique structural features. Upon complete quantitative hydrolysis of 1 mole of H2S2O8, which of the following best represents the stoichiometric products?",
+        "options": {
+          "A": "1 mole of H2SO4 and 1 mole of H2O2",
+          "B": "2 moles of H2SO4 and 1 mole of O2",
+          "C": "2 moles of H2SO4 and 1 mole of H2O2",
+          "D": "1 mole of H2SO5 and 1 mole of H2SO3"
+        },
+        "correct": "C",
+        "explanation": "H2S2O8 + 2H2O → 2H2SO4 + H2O2 (via intermediate Caro's acid H2SO5)."
+      },
+      {
+        "q": 8,
+        "type": "Single Correct Type (MCQ)",
+        "topic": "Solid State",
+        "question": "An element X (atomic mass = 60 g/mol) crystallizes in a face-centered cubic (FCC) lattice. The edge length of the unit cell is 400 pm. What is the approximate density of the element in g/cm³? (Given NA = 6.022 × 10²³ /mol)",
+        "options": {
+          "A": "6.23",
+          "B": "8.42",
+          "C": "4.15",
+          "D": "2.50"
+        },
+        "correct": "A",
+        "explanation": "d = ZM/(a³NA). Z=4 for FCC, a = 4×10⁻⁸ cm, a³ = 64×10⁻²⁴ cm³. d = (4×60)/(64×10⁻²⁴×6.022×10²³) ≈ 6.23 g/cm³."
+      },
+      {
+        "q": 9,
+        "type": "Single Correct Type (MCQ)",
+        "topic": "Alkyl Halides",
+        "question": "Which of the following elimination reactions exhibits a strong primary Kinetic Isotope Effect (KIE) where kH/kD > 1, confirming that the C-H bond breaking is involved in the rate-determining step?",
+        "options": {
+          "A": "E1 elimination of tert-butyl chloride",
+          "B": "Hofmann elimination of quaternary ammonium salts",
+          "C": "E1cB elimination of aldol precursors",
+          "D": "E2 elimination of 2-bromobutane with ethoxide ion"
+        },
+        "correct": "D",
+        "explanation": "In E2, C-H bond breaking occurs concertedly with leaving group departure in the RDS, giving a strong primary KIE (kH/kD ≈ 7). E1 and E1cB do not show this in the same way."
+      },
+      {
+        "q": 10,
+        "type": "Multiple Correct Type (MSQ)",
+        "topic": "Solutions",
+        "question": "For a non-ideal binary liquid solution of components A and B exhibiting a large positive deviation from Raoult's law, which of the following thermodynamic and physical observations are correct?",
+        "options": {
+          "A": "The intermolecular attractive forces between A-A and B-B are stronger than those between A-B.",
+          "B": "The process of mixing the two liquids is endothermic (ΔHmix > 0).",
+          "C": "The total volume of the solution is less than the sum of the volumes of the pure components (ΔVmix < 0).",
+          "D": "The solution is capable of forming a minimum boiling azeotrope at a specific composition."
+        },
+        "correct": "A,B,D",
+        "explanation": "A-B forces are weaker than A-A/B-B (A correct). Mixing is endothermic (B correct). Volume expands, ΔVmix > 0, so C is incorrect. Positive deviation can form a minimum boiling azeotrope (D correct)."
+      },
+      {
+        "q": 11,
+        "type": "Multiple Correct Type (MSQ)",
+        "topic": "Isolation of Metals",
+        "question": "In the extractive metallurgy of silver via the Macarthur-Forrest cyanide process, metallic silver is leached using an aqueous cyanide solution and subsequently recovered. Which of the following statements concerning this multi-step process are true?",
+        "options": {
+          "A": "The leaching step involves the oxidation of metallic silver by dissolved atmospheric oxygen.",
+          "B": "The soluble complex formed during leaching is the dicyanoargentate(I) ion, [Ag(CN)2]⁻.",
+          "C": "The recovery of silver is achieved by smelting the cyanide complex with carbon.",
+          "D": "Zinc dust is used as a reducing agent in the cementation step to displace silver from the complex."
+        },
+        "correct": "A,B,D",
+        "explanation": "4Ag + 8CN⁻ + O2 + 2H2O → 4[Ag(CN)2]⁻ + 4OH⁻ (A, B correct). Recovery is via zinc cementation, not smelting with carbon (C false, D correct)."
+      },
+      {
+        "q": 12,
+        "type": "Multiple Correct Type (MSQ)",
+        "topic": "Basic Principles of Organic Chemistry",
+        "question": "The stability of carbocations is governed by various electronic effects including resonance, hyperconjugation, and aromaticity. Which of the following statements regarding specific carbocations are correct?",
+        "options": {
+          "A": "The tropylium cation (cycloheptatrienyl cation) is highly stable due to possessing 6 pi electrons in a continuous cyclic planar system, satisfying Huckel's rule.",
+          "B": "The benzyl carbocation is more stable than the tert-butyl carbocation primarily due to hyperconjugation.",
+          "C": "The cyclopropylmethyl carbocation exhibits exceptional stability due to bent 'sigma-bond' resonance (dancing resonance) from the strained cyclopropyl rings.",
+          "D": "The anti-aromatic cyclopentadienyl cation is exceptionally stable at room temperature."
+        },
+        "correct": "A,C",
+        "explanation": "Tropylium is aromatic (4n+2, n=1), highly stable (A correct). Cyclopropylmethyl cation is stabilized by dancing resonance (C correct). tert-Butyl is generally more stable than benzyl due to 9 hyperconjugative H's (B false). Cyclopentadienyl cation is antiaromatic and highly unstable (D false)."
+      },
+      {
+        "q": 13,
+        "type": "Multiple Correct Type (MSQ)",
+        "topic": "Electrochemistry",
+        "question": "During the potentiometric titration of a weak monoprotic acid (HA) with a strong base (NaOH), the pH of the solution changes. Which of the following boundary conditions and region characteristics are correct?",
+        "options": {
+          "A": "At the exact half-equivalence point, the pH of the solution is equal to the pKa of the weak acid.",
+          "B": "The buffer capacity of the solution reaches its maximum value exactly at the equivalence point.",
+          "C": "At the equivalence point, the pH of the solution is greater than 7 due to anionic hydrolysis.",
+          "D": "Beyond the equivalence point, the pH is determined primarily by the excess concentration of the strong base."
+        },
+        "correct": "A,C,D",
+        "explanation": "At half-equivalence, pH = pKa (A correct). Buffer capacity is maximal at half-equivalence, not equivalence (B false). At equivalence, A⁻ hydrolyzes making pH > 7 (C correct). Beyond equivalence, excess strong base dominates pH (D correct)."
+      },
+      {
+        "q": 14,
+        "type": "Multiple Correct Type (MSQ)",
+        "topic": "p-Block Elements",
+        "question": "Boron chemistry features electron-deficient bonding architectures. Regarding diborane (B2H6) and borazine (B3N3H6), which of the following assertions are correct?",
+        "options": {
+          "A": "In diborane, the two bridging hydrogen atoms participate in three-center two-electron (3c-2e) bonds.",
+          "B": "The boron atoms in diborane are sp² hybridized, resulting in a completely planar molecule.",
+          "C": "Borazine is isoelectronic and isostructural with benzene, leading to its common name 'inorganic benzene'.",
+          "D": "Unlike benzene, borazine readily undergoes addition reactions due to the polarity of the B-N bonds."
+        },
+        "correct": "A,C,D",
+        "explanation": "Diborane has 3c-2e bridging B-H-B bonds (A correct); boron is sp³ (not sp²), molecule is non-planar (B false). Borazine is isoelectronic with benzene, 'inorganic benzene' (C correct), and undergoes addition reactions due to polar B-N bonds (D correct)."
+      },
+      {
+        "q": 15,
+        "type": "Multiple Correct Type (MSQ)",
+        "topic": "Aldehydes and Ketones",
+        "question": "Aldehydes can undergo various reactions depending on their structural features and the reaction conditions. Which of the following statements correctly distinguish the Aldol condensation from the Cannizzaro reaction?",
+        "options": {
+          "A": "The Cannizzaro reaction is a disproportionation redox reaction, while the Aldol reaction forms a new carbon-carbon bond.",
+          "B": "The Aldol condensation requires the presence of at least one alpha-hydrogen atom on the aldehyde.",
+          "C": "The Cannizzaro reaction typically utilizes dilute aqueous base, whereas the Aldol reaction requires highly concentrated alkali (e.g., 50% NaOH).",
+          "D": "Formaldehyde (HCHO) and benzaldehyde (PhCHO) will undergo the crossed Cannizzaro reaction to yield sodium formate and benzyl alcohol."
+        },
+        "correct": "A,B,D",
+        "explanation": "Cannizzaro is disproportionation, Aldol forms C-C bond (A correct). Aldol needs alpha-H (B correct). Conditions are swapped in statement C (Aldol uses dilute base, Cannizzaro uses concentrated alkali) - C is false. Crossed Cannizzaro of HCHO/PhCHO gives sodium formate and benzyl alcohol (D correct)."
+      },
+      {
+        "q": 16,
+        "type": "Multiple Correct Type (MSQ)",
+        "topic": "Surface Chemistry",
+        "question": "The phenomenon of gas adsorption onto a solid surface is characterized by different mathematical isotherms. Regarding the Langmuir adsorption isotherm, which of the following postulates and deductions are correct?",
+        "options": {
+          "A": "The surface of the adsorbent consists of a fixed number of localized, equivalent adsorption sites.",
+          "B": "Adsorption is assumed to result in the formation of a multilayer coverage on the solid surface.",
+          "C": "There is no lateral interaction between adjacent adsorbed gas molecules.",
+          "D": "At very high pressures, the extent of adsorption (x/m) becomes independent of pressure (zero-order kinetics)."
+        },
+        "correct": "A,C,D",
+        "explanation": "Langmuir assumes localized equivalent sites (A correct), monolayer only, not multilayer (B false), no lateral interaction (C correct), and saturation at high pressure (D correct)."
+      },
+      {
+        "q": 17,
+        "type": "Multiple Correct Type (MSQ)",
+        "topic": "p-Block Elements",
+        "question": "Interhalogen compounds exhibit a variety of geometries predicted by VSEPR theory. Which of the following pairings of interhalogen compound, hybridization of the central atom, and molecular shape are correct?",
+        "options": {
+          "A": "ClF3: sp³d hybridization, T-shaped",
+          "B": "BrF5: sp³d² hybridization, Square pyramidal",
+          "C": "IF7: sp³d³ hybridization, Pentagonal bipyramidal",
+          "D": "ICl2⁻: sp³ hybridization, V-shaped (Bent)"
+        },
+        "correct": "A,B,C",
+        "explanation": "ClF3 is sp³d, T-shaped (A correct). BrF5 is sp³d², square pyramidal (B correct). IF7 is sp³d³, pentagonal bipyramidal (C correct). ICl2⁻ is sp³d with 3 equatorial lone pairs, giving a linear (not bent) shape (D false)."
+      },
+      {
+        "q": 18,
+        "type": "Multiple Correct Type (MSQ)",
+        "topic": "Biomolecules",
+        "question": "The isoelectric point (pI) of an amino acid is the pH at which the molecule carries no net electrical charge. Which of the following statements regarding amino acids and their behavior in electric fields are correct?",
+        "options": {
+          "A": "At a pH strictly equal to its pI, an amino acid exists almost entirely as a zwitterion and will not migrate towards the anode or cathode in an electric field.",
+          "B": "For basic amino acids like Lysine, the pI is calculated as the average of the pKa of the alpha-amino group and the pKa of the side-chain amino group.",
+          "C": "In a strongly acidic medium (pH < pI), the amino acid acts as a cation and will migrate towards the cathode.",
+          "D": "The pI of aspartic acid (an acidic amino acid) is higher than that of neutral amino acids like glycine."
+        },
+        "correct": "A,B,C",
+        "explanation": "At pI, zwitterion is neutral, no migration (A correct). For Lysine, pI is average of two highest pKa values (B correct). At pH<pI, molecule is cationic, migrates to cathode (C correct). Aspartic acid has a lower pI than glycine, not higher (D false)."
+      }
+    ]
+  }
+}

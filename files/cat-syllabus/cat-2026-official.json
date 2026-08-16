@@ -1,0 +1,16 @@
+{
+  "exam": "CAT",
+  "year": 2026,
+  "source": "CAT/CAT_2026_Syllabus.json",
+  "exam_pattern": {
+    "duration_minutes": 120,
+    "questions": 68,
+    "marks_per_question": 3,
+    "negative": 1,
+    "subjects": {
+      "Verbal Ability and Reading Comprehension": 24,
+      "Data Interpretation and Logical Reasoning": 22,
+      "Quantitative Ability": 22
+    }
+  }
+}

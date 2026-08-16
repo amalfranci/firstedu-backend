@@ -1,0 +1,914 @@
+{
+  "paper_id": "CAT-Paper5",
+  "title": "CAT Paper 5",
+  "exam": "CAT",
+  "year": 2026,
+  "subjects": {
+    "Verbal Ability and Reading Comprehension": [
+      {
+        "q": 1,
+        "topic": "Inference",
+        "question": "The following four sentences, when properly sequenced, form a coherent paragraph. Determine the most logical order.\nSentence 1: The advent of agriculture fundamentally altered human societal structures.\nSentence 2: Before this, nomadic hunter-gatherer bands relied on the seasonal availability of wild resources.\nSentence 3: Consequently, concepts of private property and social hierarchy began to emerge.\nSentence 4: By cultivating crops, communities could finally settle in fixed locations and accumulate surplus food.",
+        "options": {
+          "A": "1243",
+          "B": "2143",
+          "C": "1432",
+          "D": "2413"
+        },
+        "correct": "A",
+        "explanation": "Sentence 1 introduces the main topic (the advent of agriculture altering society). Sentence 2 provides the historical baseline (before agriculture). Sentence 4 explains how agriculture specifically changed things (settling down, surplus). Sentence 3 gives the result of those changes (private property, hierarchy). Thus, 1-2-4-3 is the coherent sequence."
+      },
+      {
+        "q": 2,
+        "topic": "Inference",
+        "question": "The following four sentences, when properly sequenced, form a coherent paragraph. Determine the most logical order.\nSentence 1: However, this definition obscures the complex algorithms dictating what content goes viral.\nSentence 2: Social media is frequently championed as a democratizing force for global communication.\nSentence 3: Ultimately, the platforms prioritize engagement metrics over the egalitarian distribution of ideas.\nSentence 4: The assumption is that anyone with a smartphone can broadcast their voice to the world.",
+        "options": {
+          "A": "2143",
+          "B": "2413",
+          "C": "4213",
+          "D": "4132"
+        },
+        "correct": "B",
+        "explanation": "Sentence 2 introduces the primary claim (social media as a democratizing force). Sentence 4 elaborates on this claim (the assumption that anyone can broadcast). Sentence 1 provides the pivot (\"However, this definition obscures...\"). Sentence 3 concludes by explaining the reality (platforms prioritize engagement). The correct order is 2-4-1-3."
+      },
+      {
+        "q": 3,
+        "topic": "Odd Sentence Out",
+        "question": "Five sentences are given below, related to a single topic. Four of them form a coherent paragraph. Identify the odd sentence that does not fit the context.\nSentence 1: The James Webb Space Telescope uses infrared imaging to peer through cosmic dust clouds.\nSentence 2: By analyzing these ancient light signatures, astronomers can study the formation of the universe's earliest galaxies.\nSentence 3: String theory proposes that the fundamental ingredients of the universe are one-dimensional vibrating strings.\nSentence 4: This unprecedented optical resolution allows scientists to observe stellar nurseries that were previously hidden.",
+        "options": {
+          "A": "Sentence 1",
+          "B": "Sentence 2",
+          "C": "Sentence 3",
+          "D": "Sentence 4"
+        },
+        "correct": "C",
+        "explanation": "Sentences 1, 2, and 4 all discuss the capabilities of the James Webb Space Telescope (infrared imaging, analyzing light signatures, observing stellar nurseries). Sentence 3 abruptly introduces string theory, which belongs to theoretical physics and has no connection to the telescope's observational capabilities. Therefore, Sentence 3 is the odd one out."
+      },
+      {
+        "q": 4,
+        "topic": "Odd Sentence Out",
+        "question": "Five sentences are given below, related to a single topic. Four of them form a coherent paragraph. Identify the odd sentence that does not fit the context.\nSentence 1: In classical conditioning, a neutral stimulus is paired with an unconditioned stimulus to elicit a learned response.\nSentence 2: Operant conditioning, conversely, relies on rewards and punishments to shape voluntary behavior over time.\nSentence 3: Cognitive behavioral therapy focuses on identifying and changing negative thought patterns to treat depression.\nSentence 4: Both classical and operant frameworks formed the bedrock of early 20th-century behaviorism, which largely ignored internal mental states.",
+        "options": {
+          "A": "Sentence 1",
+          "B": "Sentence 2",
+          "C": "Sentence 4",
+          "D": "Sentence 3"
+        },
+        "correct": "D",
+        "explanation": "Sentences 1, 2, and 4 discuss the foundational concepts of behaviorism (classical conditioning and operant conditioning) which focus on external stimuli and observable behavior. Sentence 3 discusses Cognitive Behavioral Therapy (CBT), a modern psychological treatment focusing on internal thought patterns, which breaks the historical and thematic unity of the paragraph. Sentence 3 is the odd one out."
+      },
+      {
+        "q": 5,
+        "topic": "Para Summary",
+        "question": "Read the paragraph below and choose the option that best summarizes it in essence.\n'While renewable energy sources like solar and wind are crucial for combating climate change, their intermittent nature poses significant grid stability challenges. Without massive advancements in battery storage technology or supplementary nuclear power, relying solely on renewables could lead to frequent blackouts during periods of low generation.'",
+        "options": {
+          "A": "The transition to renewable energy requires improved storage or supplementary power to mitigate the grid instability caused by its intermittency.",
+          "B": "Solar and wind energy are insufficient to combat climate change and must be entirely replaced by nuclear power and advanced batteries.",
+          "C": "Frequent blackouts are the inevitable consequence of adopting solar and wind energy, regardless of future technological advancements in storage.",
+          "D": "The intermittent nature of renewable energy makes it obsolete compared to the consistent grid stability provided by traditional nuclear power."
+        },
+        "correct": "A",
+        "explanation": "The paragraph highlights both the importance of renewables and their primary flaw (intermittency causing instability), concluding that advancements in storage or supplementary power are necessary. Option A perfectly encapsulates this balanced condition, avoiding the extreme generalizations or misinterpretations found in B, C, and D."
+      },
+      {
+        "q": 6,
+        "topic": "Para Summary",
+        "question": "Read the paragraph below and choose the option that best summarizes it in essence.\n'The modernization of urban spaces often involves gentrification, a process that revitalizes decaying infrastructure and attracts new investments. However, this economic uplift frequently displaces marginalized, long-term residents who can no longer afford the inflated property taxes and rising rents, effectively fracturing established communities under the guise of progress.'",
+        "options": {
+          "A": "Gentrification is a universally beneficial urban policy that brings necessary investment to decaying neighborhoods and lowers property taxes.",
+          "B": "Although gentrification brings economic revitalization to urban areas, it simultaneously causes the displacement of vulnerable, long-standing communities.",
+          "C": "The primary goal of urban modernization is to fracture marginalized communities by intentionally inflating property taxes and rent prices.",
+          "D": "Marginalized residents usually benefit from the infrastructural improvements brought about by gentrification despite the rising costs."
+        },
+        "correct": "B",
+        "explanation": "The passage presents a dual-sided view of gentrification: it revitalizes infrastructure but displaces marginalized residents due to rising costs. Option B accurately captures this duality without assuming malicious intent (as in C) or ignoring the displacement (as in A and D)."
+      },
+      {
+        "q": 7,
+        "topic": "Inference",
+        "question": "The paragraph below is missing its final sentence. Choose the option that logically completes the paragraph.\n'The philosophical doctrine of determinism posits that every event, including human cognition and behavior, is causally necessitated by an unbroken chain of prior occurrences. If the universe operates like a flawless clockwork mechanism, then the concept of free will—the idea that individuals could have chosen to act differently under the exact same circumstances—becomes fundamentally untenable. Consequently, moral responsibility, which traditionally relies on the capacity for autonomous choice, _____________.'",
+        "options": {
+          "A": "is perfectly preserved because individuals are still the agents performing the actions.",
+          "B": "becomes the only logical framework for punishing criminal behavior in modern society.",
+          "C": "must be radically redefined or entirely discarded within a strictly deterministic framework.",
+          "D": "proves that the universe does not operate according to predictable causal laws."
+        },
+        "correct": "C",
+        "explanation": "The paragraph builds an argument that determinism destroys the concept of free will. It then sets up a premise: moral responsibility relies on free will (\"autonomous choice\"). If free will is untenable under determinism, the logical conclusion is that moral responsibility itself must be in jeopardy. Option C correctly completes this thought by stating it must be redefined or discarded."
+      },
+      {
+        "q": 8,
+        "topic": "Inference",
+        "question": "The paragraph below is missing its final sentence. Choose the option that logically completes the paragraph.\n'Artificial intelligence models are trained on vast datasets scraped from the internet, which inevitably contain the societal biases, prejudices, and historical inequalities of their human creators. When these algorithms are deployed in high-stakes areas like criminal justice or loan approval, they do not neutrally evaluate data. Instead, they risk _____________.'",
+        "options": {
+          "A": "eliminating all historical prejudices by mathematically neutralizing the flawed human inputs.",
+          "B": "acting as unbiased arbiters that consistently correct the historical inequalities of human systems.",
+          "C": "reducing the efficiency of loan approvals due to the overwhelming volume of internet data.",
+          "D": "amplifying and automating systemic discrimination under a veneer of objective technological authority."
+        },
+        "correct": "D",
+        "explanation": "The paragraph states that AI models absorb human biases and do not evaluate data neutrally in high-stakes situations. The logical consequence is that they will replicate or worsen those biases. Option D seamlessly completes this by pointing out that they risk amplifying and automating discrimination while appearing objective."
+      },
+      {
+        "q": 9,
+        "topic": "Purpose",
+        "question": "The primary purpose of the passage is to:",
+        "options": {
+          "A": "distinguish between two modes of nostalgia and explore their socio-political implications in modernity.",
+          "B": "argue that restorative nostalgia is the only effective psychological anchor for modern displaced populations.",
+          "C": "analyze the impact of algorithmic echo chambers on the aesthetic quality of historical archives.",
+          "D": "prove that reflective nostalgia is an obsolete concept in the face of hyper-accelerated digital memory."
+        },
+        "correct": "A",
+        "explanation": "The passage introduces Boym's distinction between restorative and reflective nostalgia (paragraphs 1 & 2) and applies this framework to contemporary socio-political issues, such as global displacement and digital archiving (paragraph 3). Thus, option A accurately captures the primary purpose.",
+        "passage": "In her seminal work on the phenomenology of longing, Svetlana Boym draws a crucial distinction between two forms of nostalgia: restorative and reflective. Restorative nostalgia operates on a fundamental illusion. It does not perceive itself as nostalgia, but rather as truth and tradition. It attempts a transhistorical reconstruction of a lost home, patching up the memory gaps with a seamless, manufactured narrative of national or cultural purity. This mode is inherently serious, often mobilizing collective anxieties into rigid political orthodoxies that seek to return to an idealized, unfragmented past that, ironically, never existed.\n\nConversely, reflective nostalgia dwells in the alogia of longing itself. It is fundamentally ambivalent, acutely aware of the historical gaps and the ultimate irrecoverability of the past. Rather than attempting to rebuild the ruined edifice of history, reflective nostalgia explores the ruins. It is playful, ironic, and individually focused, accommodating the fragmented nature of modern memory without succumbing to the dangerous allure of totalitarian restoration. For the reflective nostalgic, the focus is not on the recovery of what is lost, but on the mediation of history and the passage of time.\n\nIn the contemporary era of unprecedented global displacement and hyper-accelerated digital archiving, these two modes find themselves in violent friction. Restorative nostalgia is frequently weaponized by algorithmic echo chambers that serve up sanitized, ahistorical aesthetic visions of bygone eras, radicalizing displaced populations by offering them a false cure for their modern alienation. Reflective nostalgia, on the other hand, is increasingly marginalized as mere aesthetic melancholy, incapable of providing the robust ideological anchors that modern subjects crave. The tragedy of modern epistemology is that it consistently favors the restorative fiction over the reflective truth."
+      },
+      {
+        "q": 10,
+        "topic": "Inference",
+        "question": "What can be most validly inferred about restorative nostalgia from the passage?",
+        "options": {
+          "A": "It embraces the fragmentary nature of historical truth in order to build stronger communal bonds.",
+          "B": "It operates on the dangerous illusion that a fractured past can be perfectly and authentically reconstructed.",
+          "C": "It is primarily a playful and ironic approach to mediating the inevitable passage of time.",
+          "D": "It relies exclusively on objective digital archives to establish its narratives of cultural purity."
+        },
+        "correct": "B",
+        "explanation": "The passage states that restorative nostalgia \"operates on a fundamental illusion\" and \"attempts a transhistorical reconstruction of a lost home, patching up the memory gaps with a seamless, manufactured narrative... to return to an idealized, unfragmented past that, ironically, never existed.\" This directly supports option B.",
+        "passage": "In her seminal work on the phenomenology of longing, Svetlana Boym draws a crucial distinction between two forms of nostalgia: restorative and reflective. Restorative nostalgia operates on a fundamental illusion. It does not perceive itself as nostalgia, but rather as truth and tradition. It attempts a transhistorical reconstruction of a lost home, patching up the memory gaps with a seamless, manufactured narrative of national or cultural purity. This mode is inherently serious, often mobilizing collective anxieties into rigid political orthodoxies that seek to return to an idealized, unfragmented past that, ironically, never existed.\n\nConversely, reflective nostalgia dwells in the alogia of longing itself. It is fundamentally ambivalent, acutely aware of the historical gaps and the ultimate irrecoverability of the past. Rather than attempting to rebuild the ruined edifice of history, reflective nostalgia explores the ruins. It is playful, ironic, and individually focused, accommodating the fragmented nature of modern memory without succumbing to the dangerous allure of totalitarian restoration. For the reflective nostalgic, the focus is not on the recovery of what is lost, but on the mediation of history and the passage of time.\n\nIn the contemporary era of unprecedented global displacement and hyper-accelerated digital archiving, these two modes find themselves in violent friction. Restorative nostalgia is frequently weaponized by algorithmic echo chambers that serve up sanitized, ahistorical aesthetic visions of bygone eras, radicalizing displaced populations by offering them a false cure for their modern alienation. Reflective nostalgia, on the other hand, is increasingly marginalized as mere aesthetic melancholy, incapable of providing the robust ideological anchors that modern subjects crave. The tragedy of modern epistemology is that it consistently favors the restorative fiction over the reflective truth."
+      },
+      {
+        "q": 11,
+        "topic": "Tone",
+        "question": "The author's attitude towards reflective nostalgia is best described as:",
+        "options": {
+          "A": "dismissively critical of its inability to provide ideological stability.",
+          "B": "aggressively condemnatory of its role in modern alienation.",
+          "C": "appreciative of its intellectual capacity to accommodate historical fragmentation.",
+          "D": "entirely neutral, presenting it merely as a psychological anomaly."
+        },
+        "correct": "C",
+        "explanation": "The author describes reflective nostalgia as \"aware of the historical gaps,\" \"playful, ironic,\" and \"accommodating the fragmented nature of modern memory without succumbing to the dangerous allure of totalitarian restoration.\" Furthermore, the author calls it a \"reflective truth\" compared to a \"restorative fiction,\" demonstrating an appreciative tone regarding its intellectual honesty.",
+        "passage": "In her seminal work on the phenomenology of longing, Svetlana Boym draws a crucial distinction between two forms of nostalgia: restorative and reflective. Restorative nostalgia operates on a fundamental illusion. It does not perceive itself as nostalgia, but rather as truth and tradition. It attempts a transhistorical reconstruction of a lost home, patching up the memory gaps with a seamless, manufactured narrative of national or cultural purity. This mode is inherently serious, often mobilizing collective anxieties into rigid political orthodoxies that seek to return to an idealized, unfragmented past that, ironically, never existed.\n\nConversely, reflective nostalgia dwells in the alogia of longing itself. It is fundamentally ambivalent, acutely aware of the historical gaps and the ultimate irrecoverability of the past. Rather than attempting to rebuild the ruined edifice of history, reflective nostalgia explores the ruins. It is playful, ironic, and individually focused, accommodating the fragmented nature of modern memory without succumbing to the dangerous allure of totalitarian restoration. For the reflective nostalgic, the focus is not on the recovery of what is lost, but on the mediation of history and the passage of time.\n\nIn the contemporary era of unprecedented global displacement and hyper-accelerated digital archiving, these two modes find themselves in violent friction. Restorative nostalgia is frequently weaponized by algorithmic echo chambers that serve up sanitized, ahistorical aesthetic visions of bygone eras, radicalizing displaced populations by offering them a false cure for their modern alienation. Reflective nostalgia, on the other hand, is increasingly marginalized as mere aesthetic melancholy, incapable of providing the robust ideological anchors that modern subjects crave. The tragedy of modern epistemology is that it consistently favors the restorative fiction over the reflective truth."
+      },
+      {
+        "q": 12,
+        "topic": "Inference",
+        "question": "Which of the following scenarios would serve as the most accurate example of reflective nostalgia?",
+        "options": {
+          "A": "A political campaign promising a return to a specific decade's moral purity through strict legislation.",
+          "B": "A community group rebuilding a destroyed historical monument to look exactly as it did centuries ago without acknowledging the damage.",
+          "C": "An algorithm that exclusively feeds users idealized, vintage photographs to evoke a longing for the 1950s.",
+          "D": "An immigrant writing a fragmentary memoir that explores their longing for their homeland while embracing the impossibility of true return."
+        },
+        "correct": "D",
+        "explanation": "Reflective nostalgia \"dwells in the alogia of longing itself,\" is \"aware of the historical gaps,\" and acknowledges the \"ultimate irrecoverability of the past.\" Option D perfectly encapsulates this by combining a longing for the homeland with the acceptance that returning is impossible, whereas A, B, and C represent restorative nostalgia.",
+        "passage": "In her seminal work on the phenomenology of longing, Svetlana Boym draws a crucial distinction between two forms of nostalgia: restorative and reflective. Restorative nostalgia operates on a fundamental illusion. It does not perceive itself as nostalgia, but rather as truth and tradition. It attempts a transhistorical reconstruction of a lost home, patching up the memory gaps with a seamless, manufactured narrative of national or cultural purity. This mode is inherently serious, often mobilizing collective anxieties into rigid political orthodoxies that seek to return to an idealized, unfragmented past that, ironically, never existed.\n\nConversely, reflective nostalgia dwells in the alogia of longing itself. It is fundamentally ambivalent, acutely aware of the historical gaps and the ultimate irrecoverability of the past. Rather than attempting to rebuild the ruined edifice of history, reflective nostalgia explores the ruins. It is playful, ironic, and individually focused, accommodating the fragmented nature of modern memory without succumbing to the dangerous allure of totalitarian restoration. For the reflective nostalgic, the focus is not on the recovery of what is lost, but on the mediation of history and the passage of time.\n\nIn the contemporary era of unprecedented global displacement and hyper-accelerated digital archiving, these two modes find themselves in violent friction. Restorative nostalgia is frequently weaponized by algorithmic echo chambers that serve up sanitized, ahistorical aesthetic visions of bygone eras, radicalizing displaced populations by offering them a false cure for their modern alienation. Reflective nostalgia, on the other hand, is increasingly marginalized as mere aesthetic melancholy, incapable of providing the robust ideological anchors that modern subjects crave. The tragedy of modern epistemology is that it consistently favors the restorative fiction over the reflective truth."
+      },
+      {
+        "q": 13,
+        "topic": "Inference",
+        "question": "According to the passage, the primary challenge epigenetics poses to strict neo-Darwinism is that:",
+        "options": {
+          "A": "it suggests that acquired environmental adaptations can be passed down to subsequent generations.",
+          "B": "it proves that natural selection plays absolutely no role in the survival of biological organisms.",
+          "C": "it demonstrates that genetic mutations are exclusively caused by environmental toxins rather than random chance.",
+          "D": "it entirely rewrites the underlying nucleotide sequences of DNA during an organism's lifetime."
+        },
+        "correct": "A",
+        "explanation": "The passage notes that strict neo-Darwinism dismissed the inheritance of acquired traits as \"Lamarckian heresy.\" Epigenetics challenges this by showing that \"epigenetic markers, induced by severe environmental stressors... can bypass the assumed slate-wiping process... and be transmitted to subsequent generations.\" This aligns directly with Option A. Option D is factually incorrect per the text (it alters expression without changing the sequence).",
+        "passage": "For decades, the bedrock of evolutionary biology rested upon the strict neo-Darwinian synthesis, which posited that random genetic mutation and natural selection were the sole drivers of evolutionary change. In this framework, the genome was viewed as an isolated, immutable blueprint, insulated from the experiential rigors of the organism's environment. The idea that acquired traits could be inherited was routinely dismissed as Lamarckian heresy. However, the burgeoning field of epigenetics has fundamentally disrupted this insular view, revealing a dynamic molecular interface where the environment directly converses with the genome.\n\nEpigenetics involves chemical modifications—such as DNA methylation and histone modification—that alter how genes are expressed without changing the underlying nucleotide sequence. Crucially, evidence is mounting that these epigenetic markers, induced by severe environmental stressors like famine, trauma, or toxins, can bypass the assumed slate-wiping process of embryonic development and be transmitted to subsequent generations. This transgenerational epigenetic inheritance suggests that the physiological experiences of ancestors can leave molecular echoes in their descendants, fundamentally altering their phenotypic destiny.\n\nWhile critics argue that epigenetics threatens the core of Darwinian theory, rendering the \"blind watchmaker\" of random mutation obsolete, a more nuanced synthesis is emerging. Epigenetics does not replace natural selection; rather, it provides a rapid, environmentally responsive mechanism of adaptation that operates alongside the slower, random engine of genetic mutation. It introduces a temporal flexibility to evolution, allowing organisms to adjust to immediate ecological shifts without waiting for the lottery of genetic mutation. Thus, rather than dismantling Darwinism, epigenetics enriches the evolutionary synthesis, transforming the genome from a static blueprint into a highly responsive, learning archive."
+      },
+      {
+        "q": 14,
+        "topic": "Main idea",
+        "question": "In the context of the passage, the phrase \"blind watchmaker\" refers most directly to:",
+        "options": {
+          "A": "the precision with which epigenetic markers silence specific genetic codes.",
+          "B": "the random, undirected nature of genetic mutation in classical evolutionary theory.",
+          "C": "the invisible environmental stressors that trigger immediate phenotypic adaptations.",
+          "D": "the scientists who blindly adhered to Lamarckian evolutionary models."
+        },
+        "correct": "B",
+        "explanation": "The phrase is used in contrast to the rapid, responsive mechanisms of epigenetics. The passage contrasts epigenetics with the \"slower, random engine of genetic mutation\" and notes critics fear it renders the \"blind watchmaker of random mutation obsolete.\" Thus, it represents the undirected, random mutations central to classical Darwinism.",
+        "passage": "For decades, the bedrock of evolutionary biology rested upon the strict neo-Darwinian synthesis, which posited that random genetic mutation and natural selection were the sole drivers of evolutionary change. In this framework, the genome was viewed as an isolated, immutable blueprint, insulated from the experiential rigors of the organism's environment. The idea that acquired traits could be inherited was routinely dismissed as Lamarckian heresy. However, the burgeoning field of epigenetics has fundamentally disrupted this insular view, revealing a dynamic molecular interface where the environment directly converses with the genome.\n\nEpigenetics involves chemical modifications—such as DNA methylation and histone modification—that alter how genes are expressed without changing the underlying nucleotide sequence. Crucially, evidence is mounting that these epigenetic markers, induced by severe environmental stressors like famine, trauma, or toxins, can bypass the assumed slate-wiping process of embryonic development and be transmitted to subsequent generations. This transgenerational epigenetic inheritance suggests that the physiological experiences of ancestors can leave molecular echoes in their descendants, fundamentally altering their phenotypic destiny.\n\nWhile critics argue that epigenetics threatens the core of Darwinian theory, rendering the \"blind watchmaker\" of random mutation obsolete, a more nuanced synthesis is emerging. Epigenetics does not replace natural selection; rather, it provides a rapid, environmentally responsive mechanism of adaptation that operates alongside the slower, random engine of genetic mutation. It introduces a temporal flexibility to evolution, allowing organisms to adjust to immediate ecological shifts without waiting for the lottery of genetic mutation. Thus, rather than dismantling Darwinism, epigenetics enriches the evolutionary synthesis, transforming the genome from a static blueprint into a highly responsive, learning archive."
+      },
+      {
+        "q": 15,
+        "topic": "Inference",
+        "question": "How does the author reconcile the discoveries of epigenetics with Darwinian evolutionary theory?",
+        "options": {
+          "A": "By arguing that epigenetics completely invalidates Darwinism and forces a return to Lamarckian biology.",
+          "B": "By suggesting that Darwinism only applies to simple organisms, whereas epigenetics applies to complex mammals.",
+          "C": "By framing epigenetics as a supplementary, flexible mechanism that extends rather than refutes the evolutionary synthesis.",
+          "D": "By asserting that epigenetic markers are ultimately illusions that do not affect long-term phenotypic destiny."
+        },
+        "correct": "C",
+        "explanation": "In the final paragraph, the author notes that \"a more nuanced synthesis is emerging. Epigenetics does not replace natural selection; rather, it provides a rapid, environmentally responsive mechanism of adaptation that operates alongside... Thus, rather than dismantling Darwinism, epigenetics enriches the evolutionary synthesis.\" Option C perfectly encapsulates this view.",
+        "passage": "For decades, the bedrock of evolutionary biology rested upon the strict neo-Darwinian synthesis, which posited that random genetic mutation and natural selection were the sole drivers of evolutionary change. In this framework, the genome was viewed as an isolated, immutable blueprint, insulated from the experiential rigors of the organism's environment. The idea that acquired traits could be inherited was routinely dismissed as Lamarckian heresy. However, the burgeoning field of epigenetics has fundamentally disrupted this insular view, revealing a dynamic molecular interface where the environment directly converses with the genome.\n\nEpigenetics involves chemical modifications—such as DNA methylation and histone modification—that alter how genes are expressed without changing the underlying nucleotide sequence. Crucially, evidence is mounting that these epigenetic markers, induced by severe environmental stressors like famine, trauma, or toxins, can bypass the assumed slate-wiping process of embryonic development and be transmitted to subsequent generations. This transgenerational epigenetic inheritance suggests that the physiological experiences of ancestors can leave molecular echoes in their descendants, fundamentally altering their phenotypic destiny.\n\nWhile critics argue that epigenetics threatens the core of Darwinian theory, rendering the \"blind watchmaker\" of random mutation obsolete, a more nuanced synthesis is emerging. Epigenetics does not replace natural selection; rather, it provides a rapid, environmentally responsive mechanism of adaptation that operates alongside the slower, random engine of genetic mutation. It introduces a temporal flexibility to evolution, allowing organisms to adjust to immediate ecological shifts without waiting for the lottery of genetic mutation. Thus, rather than dismantling Darwinism, epigenetics enriches the evolutionary synthesis, transforming the genome from a static blueprint into a highly responsive, learning archive."
+      },
+      {
+        "q": 16,
+        "topic": "Inference",
+        "question": "Which of the following hypothetical scientific findings would most significantly weaken the premise of transgenerational epigenetic inheritance as described in the passage?",
+        "options": {
+          "A": "Evidence showing that certain epigenetic changes can enhance an organism's resistance to famine.",
+          "B": "Evidence proving that genetic mutations occur at a slightly faster rate than previously assumed.",
+          "C": "Evidence revealing that DNA methylation can alter gene expression without changing nucleotide sequences.",
+          "D": "Evidence showing that all environmentally induced epigenetic markers are universally erased during embryonic development."
+        },
+        "correct": "D",
+        "explanation": "The premise relies entirely on the claim that these markers \"can bypass the assumed slate-wiping process of embryonic development and be transmitted to subsequent generations.\" If a finding showed that all such markers are universally erased (meaning they cannot be inherited), the core premise of transgenerational epigenetic inheritance would be invalidated.",
+        "passage": "For decades, the bedrock of evolutionary biology rested upon the strict neo-Darwinian synthesis, which posited that random genetic mutation and natural selection were the sole drivers of evolutionary change. In this framework, the genome was viewed as an isolated, immutable blueprint, insulated from the experiential rigors of the organism's environment. The idea that acquired traits could be inherited was routinely dismissed as Lamarckian heresy. However, the burgeoning field of epigenetics has fundamentally disrupted this insular view, revealing a dynamic molecular interface where the environment directly converses with the genome.\n\nEpigenetics involves chemical modifications—such as DNA methylation and histone modification—that alter how genes are expressed without changing the underlying nucleotide sequence. Crucially, evidence is mounting that these epigenetic markers, induced by severe environmental stressors like famine, trauma, or toxins, can bypass the assumed slate-wiping process of embryonic development and be transmitted to subsequent generations. This transgenerational epigenetic inheritance suggests that the physiological experiences of ancestors can leave molecular echoes in their descendants, fundamentally altering their phenotypic destiny.\n\nWhile critics argue that epigenetics threatens the core of Darwinian theory, rendering the \"blind watchmaker\" of random mutation obsolete, a more nuanced synthesis is emerging. Epigenetics does not replace natural selection; rather, it provides a rapid, environmentally responsive mechanism of adaptation that operates alongside the slower, random engine of genetic mutation. It introduces a temporal flexibility to evolution, allowing organisms to adjust to immediate ecological shifts without waiting for the lottery of genetic mutation. Thus, rather than dismantling Darwinism, epigenetics enriches the evolutionary synthesis, transforming the genome from a static blueprint into a highly responsive, learning archive."
+      },
+      {
+        "q": 17,
+        "topic": "Purpose",
+        "question": "The passage suggests that central banks maintained punishingly high interest rates primarily to:",
+        "options": {
+          "A": "prevent the depletion of their national gold reserves during a period of economic instability.",
+          "B": "aggressively stimulate domestic investment and lower unemployment rates.",
+          "C": "force other nations to expand their money supplies and devalue their exchange rates.",
+          "D": "intentionally trigger deflation to correct artificially inflated domestic asset prices."
+        },
+        "correct": "A",
+        "explanation": "The second paragraph states that \"central banks, terrified of gold hemorrhaging from their vaults, deliberately maintained punishingly high interest rates.\" This commitment prioritized gold reserve stability over domestic health, making Option A the correct answer.",
+        "passage": "Economic historians continue to fiercely debate the mechanisms that exacerbated the Great Depression, but a formidable consensus has coalesced around the catastrophic role of the international Gold Standard. Originally designed to foster price stability and facilitate international trade by pegging currencies to fixed gold reserves, the standard inadvertently became an economic straitjacket during the interwar period. The inherent structural flaw of the Gold Standard was its asymmetry: countries losing gold reserves were forced to aggressively contract their money supplies, while countries accumulating gold were under no reciprocal obligation to expand theirs.\n\nWhen the global economic contraction began in the late 1920s, central banks, terrified of gold hemorrhaging from their vaults, deliberately maintained punishingly high interest rates. This orthodox commitment to the \"golden fetters\" prioritized international currency stability over domestic economic health. The result was a vicious cycle of severe deflation, collapsing asset prices, and widespread bank failures. By refusing to inject liquidity into the system, policymakers actively suffocated domestic investment and employment, turning a severe recession into a generational catastrophe.\n\nThe recovery trajectory of various nations provides the starkest empirical indictment of the system. Countries that abandoned the Gold Standard early, such as Great Britain in 1931, experienced relatively swift economic recoveries, as untethering their currencies allowed them to lower interest rates, devalue their exchange rates, and pursue expansionary monetary policies. Conversely, the \"Gold Bloc\" nations, notably France, clung to the standard until the mid-1930s, enduring prolonged economic stagnation. The eventual dismantling of the standard did not just resolve a crisis; it catalyzed a fundamental shift in macroeconomic philosophy, elevating the management of domestic employment above the rigid preservation of exchange rate parity."
+      },
+      {
+        "q": 18,
+        "topic": "Inference",
+        "question": "Based on the passage, how did the Gold Standard most directly contribute to the severity of the Great Depression?",
+        "options": {
+          "A": "By forcing countries accumulating gold to indiscriminately print excess currency, leading to hyperinflation.",
+          "B": "By restricting monetary expansion, thereby inducing severe deflation and discouraging domestic investment.",
+          "C": "By encouraging reckless domestic spending, which depleted bank reserves entirely.",
+          "D": "By promoting a massive increase in global trade that domestic industries could not sustain."
+        },
+        "correct": "B",
+        "explanation": "The passage notes that the standard forced countries to contract money supplies, and by maintaining high interest rates and refusing to inject liquidity, it led to \"severe deflation, collapsing asset prices\" and \"actively suffocated domestic investment.\" Option B summarizes this chain of causation perfectly.",
+        "passage": "Economic historians continue to fiercely debate the mechanisms that exacerbated the Great Depression, but a formidable consensus has coalesced around the catastrophic role of the international Gold Standard. Originally designed to foster price stability and facilitate international trade by pegging currencies to fixed gold reserves, the standard inadvertently became an economic straitjacket during the interwar period. The inherent structural flaw of the Gold Standard was its asymmetry: countries losing gold reserves were forced to aggressively contract their money supplies, while countries accumulating gold were under no reciprocal obligation to expand theirs.\n\nWhen the global economic contraction began in the late 1920s, central banks, terrified of gold hemorrhaging from their vaults, deliberately maintained punishingly high interest rates. This orthodox commitment to the \"golden fetters\" prioritized international currency stability over domestic economic health. The result was a vicious cycle of severe deflation, collapsing asset prices, and widespread bank failures. By refusing to inject liquidity into the system, policymakers actively suffocated domestic investment and employment, turning a severe recession into a generational catastrophe.\n\nThe recovery trajectory of various nations provides the starkest empirical indictment of the system. Countries that abandoned the Gold Standard early, such as Great Britain in 1931, experienced relatively swift economic recoveries, as untethering their currencies allowed them to lower interest rates, devalue their exchange rates, and pursue expansionary monetary policies. Conversely, the \"Gold Bloc\" nations, notably France, clung to the standard until the mid-1930s, enduring prolonged economic stagnation. The eventual dismantling of the standard did not just resolve a crisis; it catalyzed a fundamental shift in macroeconomic philosophy, elevating the management of domestic employment above the rigid preservation of exchange rate parity."
+      },
+      {
+        "q": 19,
+        "topic": "Inference",
+        "question": "What is the logical relationship between abandoning the Gold Standard and the subsequent economic recovery of nations like Great Britain?",
+        "options": {
+          "A": "It forced them to accumulate more gold, which artificially inflated their stock markets.",
+          "B": "It allowed them to raise interest rates even higher, finally halting bank failures.",
+          "C": "It severed the constraint on currency supply, facilitating the stimulation of their domestic economies.",
+          "D": "It immediately restored the pre-war exchange rate parities, reassuring international investors."
+        },
+        "correct": "C",
+        "explanation": "The text explicitly states that untethering their currencies allowed countries to \"lower interest rates, devalue their exchange rates, and pursue expansionary monetary policies,\" which catalyzed recovery. Option C correctly links the removal of the constraint to the ability to stimulate domestic economies.",
+        "passage": "Economic historians continue to fiercely debate the mechanisms that exacerbated the Great Depression, but a formidable consensus has coalesced around the catastrophic role of the international Gold Standard. Originally designed to foster price stability and facilitate international trade by pegging currencies to fixed gold reserves, the standard inadvertently became an economic straitjacket during the interwar period. The inherent structural flaw of the Gold Standard was its asymmetry: countries losing gold reserves were forced to aggressively contract their money supplies, while countries accumulating gold were under no reciprocal obligation to expand theirs.\n\nWhen the global economic contraction began in the late 1920s, central banks, terrified of gold hemorrhaging from their vaults, deliberately maintained punishingly high interest rates. This orthodox commitment to the \"golden fetters\" prioritized international currency stability over domestic economic health. The result was a vicious cycle of severe deflation, collapsing asset prices, and widespread bank failures. By refusing to inject liquidity into the system, policymakers actively suffocated domestic investment and employment, turning a severe recession into a generational catastrophe.\n\nThe recovery trajectory of various nations provides the starkest empirical indictment of the system. Countries that abandoned the Gold Standard early, such as Great Britain in 1931, experienced relatively swift economic recoveries, as untethering their currencies allowed them to lower interest rates, devalue their exchange rates, and pursue expansionary monetary policies. Conversely, the \"Gold Bloc\" nations, notably France, clung to the standard until the mid-1930s, enduring prolonged economic stagnation. The eventual dismantling of the standard did not just resolve a crisis; it catalyzed a fundamental shift in macroeconomic philosophy, elevating the management of domestic employment above the rigid preservation of exchange rate parity."
+      },
+      {
+        "q": 20,
+        "topic": "Tone",
+        "question": "Which of the following best describes the author's tone regarding the international Gold Standard?",
+        "options": {
+          "A": "Mildly apologetic regarding its unavoidable historical necessity.",
+          "B": "Wholly objective and detached, merely cataloging chronological events.",
+          "C": "Enthusiastically supportive of its role in preventing global hyperinflation.",
+          "D": "Analytically critical of its rigidity and its catastrophic macroeconomic consequences."
+        },
+        "correct": "D",
+        "explanation": "The author uses terms like \"economic straitjacket,\" \"inherent structural flaw,\" \"catastrophic role,\" \"punishingly high,\" and \"empirical indictment.\" These word choices indicate a tone that is highly critical and analytical regarding the standard's rigid mechanics and disastrous results.",
+        "passage": "Economic historians continue to fiercely debate the mechanisms that exacerbated the Great Depression, but a formidable consensus has coalesced around the catastrophic role of the international Gold Standard. Originally designed to foster price stability and facilitate international trade by pegging currencies to fixed gold reserves, the standard inadvertently became an economic straitjacket during the interwar period. The inherent structural flaw of the Gold Standard was its asymmetry: countries losing gold reserves were forced to aggressively contract their money supplies, while countries accumulating gold were under no reciprocal obligation to expand theirs.\n\nWhen the global economic contraction began in the late 1920s, central banks, terrified of gold hemorrhaging from their vaults, deliberately maintained punishingly high interest rates. This orthodox commitment to the \"golden fetters\" prioritized international currency stability over domestic economic health. The result was a vicious cycle of severe deflation, collapsing asset prices, and widespread bank failures. By refusing to inject liquidity into the system, policymakers actively suffocated domestic investment and employment, turning a severe recession into a generational catastrophe.\n\nThe recovery trajectory of various nations provides the starkest empirical indictment of the system. Countries that abandoned the Gold Standard early, such as Great Britain in 1931, experienced relatively swift economic recoveries, as untethering their currencies allowed them to lower interest rates, devalue their exchange rates, and pursue expansionary monetary policies. Conversely, the \"Gold Bloc\" nations, notably France, clung to the standard until the mid-1930s, enduring prolonged economic stagnation. The eventual dismantling of the standard did not just resolve a crisis; it catalyzed a fundamental shift in macroeconomic philosophy, elevating the management of domestic employment above the rigid preservation of exchange rate parity."
+      },
+      {
+        "q": 21,
+        "topic": "Inference",
+        "question": "The primary function of metafiction, as opposed to traditional literary realism, is to:",
+        "options": {
+          "A": "deliberately expose the structural mechanisms of narrative to challenge the illusion of an objective reality.",
+          "B": "meticulously conceal narrative scaffolding to allow readers a more immersive, escapist experience.",
+          "C": "exclusively catalog historical events without employing any subjective linguistic framing.",
+          "D": "reinforce the boundaries separating literary invention from factual political histories."
+        },
+        "correct": "A",
+        "explanation": "The passage states that while traditional realism conceals its scaffolding to act as a \"transparent window,\" metafiction \"violently shatters this illusion, drawing deliberate and relentless attention to its own artifactual nature\" to lay bare the mechanisms of storytelling. Option A captures this perfectly.",
+        "passage": "Traditional literary realism operates on a foundational conceit: it asks the reader to look through the text as if it were a transparent window onto a pre-existing objective reality. The narrative scaffolding is deliberately concealed to sustain the illusion of mimesis. In stark contrast, postmodern metafiction violently shatters this illusion, drawing deliberate and relentless attention to its own artifactual nature. By breaking the fourth wall, employing self-conscious narrators, and laying bare the mechanisms of storytelling, metafiction refuses to let the reader passively consume the narrative.\n\nAuthors such as Italo Calvino and Jorge Luis Borges deploy metafictional techniques not merely as playful aesthetic gimmicks, but as profound epistemological inquiries. When Calvino interrupts his narrative to discuss the act of reading itself, or when Borges constructs labyrinths of fictional encyclopedias, they are dismantling the arbitrary boundaries separating objective reality from literary invention. They suggest that what we casually term \"history\" or \"truth\" is itself a constructed narrative, governed by the same subjective mechanisms of selection, omission, and linguistic framing as a novel.\n\nTherefore, metafiction serves a deeply critical function. It trains the reader to become suspicious of all totalizing narratives, whether they emanate from literature, history, or political ideology. By exposing the artificiality of its own construction, the metafictional text forces the audience to acknowledge that reality is not something passively observed, but actively narrated into existence. The discomfort elicited by a self-referential text is the discomfort of recognizing our own complicity in the construction of reality."
+      },
+      {
+        "q": 22,
+        "topic": "Inference",
+        "question": "By suggesting that \"what we casually term 'history' or 'truth' is itself a constructed narrative,\" the author implies that:",
+        "options": {
+          "A": "history books are intentionally fabricated by novelists seeking to deceive the public.",
+          "B": "historical accounts are subject to the same subjective storytelling mechanisms as fictional works.",
+          "C": "there is no value in studying history since all events are completely imaginary.",
+          "D": "postmodern authors are the only individuals capable of writing accurate historical textbooks."
+        },
+        "correct": "B",
+        "explanation": "The text explains that history is governed by \"the same subjective mechanisms of selection, omission, and linguistic framing as a novel.\" This implies that historical records are constructed through storytelling lenses, not that they are purely malicious lies or useless. Option B is the accurate inference.",
+        "passage": "Traditional literary realism operates on a foundational conceit: it asks the reader to look through the text as if it were a transparent window onto a pre-existing objective reality. The narrative scaffolding is deliberately concealed to sustain the illusion of mimesis. In stark contrast, postmodern metafiction violently shatters this illusion, drawing deliberate and relentless attention to its own artifactual nature. By breaking the fourth wall, employing self-conscious narrators, and laying bare the mechanisms of storytelling, metafiction refuses to let the reader passively consume the narrative.\n\nAuthors such as Italo Calvino and Jorge Luis Borges deploy metafictional techniques not merely as playful aesthetic gimmicks, but as profound epistemological inquiries. When Calvino interrupts his narrative to discuss the act of reading itself, or when Borges constructs labyrinths of fictional encyclopedias, they are dismantling the arbitrary boundaries separating objective reality from literary invention. They suggest that what we casually term \"history\" or \"truth\" is itself a constructed narrative, governed by the same subjective mechanisms of selection, omission, and linguistic framing as a novel.\n\nTherefore, metafiction serves a deeply critical function. It trains the reader to become suspicious of all totalizing narratives, whether they emanate from literature, history, or political ideology. By exposing the artificiality of its own construction, the metafictional text forces the audience to acknowledge that reality is not something passively observed, but actively narrated into existence. The discomfort elicited by a self-referential text is the discomfort of recognizing our own complicity in the construction of reality."
+      },
+      {
+        "q": 23,
+        "topic": "Inference",
+        "question": "Which of the following literary scenarios would a metafictional author most likely employ based on the passage?",
+        "options": {
+          "A": "A strictly chronological recounting of a war, utilizing only verified primary source documents.",
+          "B": "A third-person omniscient narrative that never acknowledges the reader or the writing process.",
+          "C": "A narrator who abruptly halts the story's climax to debate plot choices and character motivations with the reader.",
+          "D": "A fantasy novel that focuses entirely on world-building to create a seamless, immersive alternative universe."
+        },
+        "correct": "C",
+        "explanation": "Metafiction involves \"breaking the fourth wall, employing self-conscious narrators, and laying bare the mechanisms of storytelling\" (e.g., Calvino interrupting his narrative). Option C represents exactly this self-referential, illusion-breaking technique.",
+        "passage": "Traditional literary realism operates on a foundational conceit: it asks the reader to look through the text as if it were a transparent window onto a pre-existing objective reality. The narrative scaffolding is deliberately concealed to sustain the illusion of mimesis. In stark contrast, postmodern metafiction violently shatters this illusion, drawing deliberate and relentless attention to its own artifactual nature. By breaking the fourth wall, employing self-conscious narrators, and laying bare the mechanisms of storytelling, metafiction refuses to let the reader passively consume the narrative.\n\nAuthors such as Italo Calvino and Jorge Luis Borges deploy metafictional techniques not merely as playful aesthetic gimmicks, but as profound epistemological inquiries. When Calvino interrupts his narrative to discuss the act of reading itself, or when Borges constructs labyrinths of fictional encyclopedias, they are dismantling the arbitrary boundaries separating objective reality from literary invention. They suggest that what we casually term \"history\" or \"truth\" is itself a constructed narrative, governed by the same subjective mechanisms of selection, omission, and linguistic framing as a novel.\n\nTherefore, metafiction serves a deeply critical function. It trains the reader to become suspicious of all totalizing narratives, whether they emanate from literature, history, or political ideology. By exposing the artificiality of its own construction, the metafictional text forces the audience to acknowledge that reality is not something passively observed, but actively narrated into existence. The discomfort elicited by a self-referential text is the discomfort of recognizing our own complicity in the construction of reality."
+      },
+      {
+        "q": 24,
+        "topic": "Purpose",
+        "question": "The passage indicates that authors like Calvino and Borges use metafiction primarily to:",
+        "options": {
+          "A": "entertain audiences who are bored by traditional suspense and character development.",
+          "B": "prove that reading is fundamentally a passive and transparent cognitive exercise.",
+          "C": "establish a new, rigid set of rules for how political ideologies should be documented.",
+          "D": "dismantle the rigid epistemological boundaries separating objective reality from literary invention."
+        },
+        "correct": "D",
+        "explanation": "The second paragraph explicitly states that they deploy these techniques \"as profound epistemological inquiries... dismantling the arbitrary boundaries separating objective reality from literary invention.\" Option D is a direct reflection of this text.",
+        "passage": "Traditional literary realism operates on a foundational conceit: it asks the reader to look through the text as if it were a transparent window onto a pre-existing objective reality. The narrative scaffolding is deliberately concealed to sustain the illusion of mimesis. In stark contrast, postmodern metafiction violently shatters this illusion, drawing deliberate and relentless attention to its own artifactual nature. By breaking the fourth wall, employing self-conscious narrators, and laying bare the mechanisms of storytelling, metafiction refuses to let the reader passively consume the narrative.\n\nAuthors such as Italo Calvino and Jorge Luis Borges deploy metafictional techniques not merely as playful aesthetic gimmicks, but as profound epistemological inquiries. When Calvino interrupts his narrative to discuss the act of reading itself, or when Borges constructs labyrinths of fictional encyclopedias, they are dismantling the arbitrary boundaries separating objective reality from literary invention. They suggest that what we casually term \"history\" or \"truth\" is itself a constructed narrative, governed by the same subjective mechanisms of selection, omission, and linguistic framing as a novel.\n\nTherefore, metafiction serves a deeply critical function. It trains the reader to become suspicious of all totalizing narratives, whether they emanate from literature, history, or political ideology. By exposing the artificiality of its own construction, the metafictional text forces the audience to acknowledge that reality is not something passively observed, but actively narrated into existence. The discomfort elicited by a self-referential text is the discomfort of recognizing our own complicity in the construction of reality."
+      }
+    ],
+    "Data Interpretation and Logical Reasoning": [
+      {
+        "q": 1,
+        "topic": "Logic Puzzles",
+        "question": "What is the total number of Enterprise clients who successfully reached the Activation phase?",
+        "options": {
+          "A": "144",
+          "B": "192",
+          "C": "216",
+          "D": "168"
+        },
+        "correct": "A",
+        "explanation": "Total clients = 2400. Enterprise clients starting Registration = 10% of 2400 = 240. Dropouts in Registration = 20% of 240 = 48. Enterprise clients moving to Integration = 240 - 48 = 192. Dropouts in Integration = 25% of 192 = 48. Enterprise clients reaching Activation = 192 - 48 = 144."
+      },
+      {
+        "q": 2,
+        "topic": "Logic Puzzles",
+        "question": "Which client type saw the highest absolute number of dropouts during the Integration phase?",
+        "options": {
+          "A": "Mid-Market",
+          "B": "SMB",
+          "C": "Enterprise",
+          "D": "Startup"
+        },
+        "correct": "B",
+        "explanation": "Starting Integration: E = 192, M = 480 - 48 = 432, S = 1440 - 216 = 1224, St = 240 - 60 = 180. Integration dropouts: E = 25% of 192 = 48; M = 25% of 432 = 108; S = 25% of 1224 = 306; St = 20% of 180 = 36. SMB had the highest dropouts (306)."
+      },
+      {
+        "q": 3,
+        "topic": "Logic Puzzles",
+        "question": "What is the overall activation rate for all client types combined, calculated as total activated clients divided by total initial clients?",
+        "options": {
+          "A": "58.50 percent",
+          "B": "60.20 percent",
+          "C": "63.75 percent",
+          "D": "65.50 percent"
+        },
+        "correct": "C",
+        "explanation": "Final Activated: E = 144; M = 432 - 108 = 324; S = 1224 - 306 = 918; St = 180 - 36 = 144. Total Activated = 144 + 324 + 918 + 144 = 1530. Overall activation rate = 1530 / 2400 = 0.6375, which is 63.75 percent."
+      },
+      {
+        "q": 4,
+        "topic": "Logic Puzzles",
+        "question": "How many more Mid-Market clients activated their accounts compared to Startup clients?",
+        "options": {
+          "A": "120",
+          "B": "140",
+          "C": "160",
+          "D": "180"
+        },
+        "correct": "D",
+        "explanation": "Activated Mid-Market clients = 324. Activated Startup clients = 144. The difference is 324 - 144 = 180."
+      },
+      {
+        "q": 5,
+        "topic": "Logic Puzzles",
+        "question": "What is the total number of dropouts in the Registration phase across all four client groups?",
+        "options": {
+          "A": "372",
+          "B": "420",
+          "C": "296",
+          "D": "408"
+        },
+        "correct": "A",
+        "explanation": "Registration dropouts are: Enterprise = 48; Mid-Market = 10% of 480 = 48; SMB = 15% of 1440 = 216; Startup = 25% of 240 = 60. Total Registration dropouts = 48 + 48 + 216 + 60 = 372."
+      },
+      {
+        "q": 6,
+        "topic": "Logic Puzzles",
+        "question": "Which medical ward is Dr. Lal assigned to?",
+        "options": {
+          "A": "Oncology",
+          "B": "Neurology",
+          "C": "Orthopedics",
+          "D": "Pediatrics"
+        },
+        "correct": "B",
+        "explanation": "The Orthopedics doctor has 2 years of experience. Dr. Menon has 10 years and cannot be in Neurology or Orthopedics (since Ortho is 2). Dr. Menon must be in Pediatrics (since K=Cardiology, N=Oncology, leaving Neu, Ped, Orth. If M is Ped, Ped=10). Since Ped=10 and Ped = Lal's exp + 4, Lal has 6 years. With Lal having 6 years, he cannot be Orthopedics (2 years). Thus, Dr. Lal must be assigned to Neurology."
+      },
+      {
+        "q": 7,
+        "topic": "Logic Puzzles",
+        "question": "How many years of professional experience does the doctor assigned to the Cardiology ward have?",
+        "options": {
+          "A": "Two years",
+          "B": "Six years",
+          "C": "Four years",
+          "D": "Eight years"
+        },
+        "correct": "C",
+        "explanation": "Dr. Kumar is in Cardiology. Dr. Ojha is the only one left for Orthopedics, so Dr. Ojha has 2 years. This leaves 4 and 8 years for Dr. Kumar and Dr. Nayak. Since Dr. Nayak has more experience than Dr. Kumar, Dr. Nayak (Oncology) has 8 years, and Dr. Kumar (Cardiology) has 4 years."
+      },
+      {
+        "q": 8,
+        "topic": "Logic Puzzles",
+        "question": "Which doctor is assigned to oversee the Orthopedics ward?",
+        "options": {
+          "A": "Dr. Kumar",
+          "B": "Dr. Lal",
+          "C": "Dr. Menon",
+          "D": "Dr. Ojha"
+        },
+        "correct": "D",
+        "explanation": "Based on the deductions, Dr. Kumar is Cardiology, Dr. Nayak is Oncology, Dr. Menon is Pediatrics, and Dr. Lal is Neurology. This leaves Dr. Ojha as the only doctor available to oversee Orthopedics with 2 years of experience."
+      },
+      {
+        "q": 9,
+        "topic": "Logic Puzzles",
+        "question": "What is the absolute difference in years of experience between Dr. Nayak and Dr. Lal?",
+        "options": {
+          "A": "Two years",
+          "B": "Four years",
+          "C": "Six years",
+          "D": "Eight years"
+        },
+        "correct": "A",
+        "explanation": "Dr. Nayak is assigned to Oncology with 8 years of experience. Dr. Lal is assigned to Neurology with 6 years of experience. The absolute difference is 8 - 6 = 2 years."
+      },
+      {
+        "q": 10,
+        "topic": "Logic Puzzles",
+        "question": "Which of the following combinations of Doctor, Ward, and Experience is correct?",
+        "options": {
+          "A": "Dr. Nayak, Oncology, Ten years",
+          "B": "Dr. Menon, Pediatrics, Ten years",
+          "C": "Dr. Kumar, Neurology, Four years",
+          "D": "Dr. Ojha, Pediatrics, Two years"
+        },
+        "correct": "B",
+        "explanation": "Dr. Menon is assigned to Pediatrics and has 10 years of experience. Dr. Nayak has 8 years, Dr. Kumar is in Cardiology, and Dr. Ojha is in Orthopedics. Only option B is completely correct."
+      },
+      {
+        "q": 11,
+        "topic": "Logic Puzzles",
+        "question": "How many investors invested in exactly one property?",
+        "options": {
+          "A": "One hundred and eighty",
+          "B": "Two hundred",
+          "C": "Two hundred and twenty",
+          "D": "Two hundred and forty"
+        },
+        "correct": "C",
+        "explanation": "The total number of investors is 400. Investors in all 4 = 20, exactly 3 = 40, exactly 2 = 120. The remaining investors invested in exactly one property. Therefore, 400 - (20 + 40 + 120) = 400 - 180 = 220 investors."
+      },
+      {
+        "q": 12,
+        "topic": "Distribution",
+        "question": "How many investors invested exclusively in The Obsidian Penthouse and no other properties?",
+        "options": {
+          "A": "Forty",
+          "B": "Forty-five",
+          "C": "Fifty",
+          "D": "Fifty-five"
+        },
+        "correct": "D",
+        "explanation": "The 220 investors who invested in exactly one property are equally distributed among the four properties. Therefore, the number of investors investing exclusively in The Obsidian Penthouse is 220 / 4 = 55."
+      },
+      {
+        "q": 13,
+        "topic": "Logic Puzzles",
+        "question": "What is the total number of individual investments made across all four properties combined?",
+        "options": {
+          "A": "Six hundred and sixty",
+          "B": "Six hundred and forty",
+          "C": "Six hundred and eighty",
+          "D": "Seven hundred"
+        },
+        "correct": "A",
+        "explanation": "The total investments can be found by summing the specific investments per property: 200 (Maroon) + 180 (Obsidian) + 150 (Golden) + 130 (Azure) = 660. Alternatively, (220 * 1) + (120 * 2) + (40 * 3) + (20 * 4) = 220 + 240 + 120 + 80 = 660."
+      },
+      {
+        "q": 14,
+        "topic": "Logic Puzzles",
+        "question": "How many investors invested in exactly two properties, excluding the specific pair of The Maroon Villa and The Obsidian Penthouse?",
+        "options": {
+          "A": "Sixty",
+          "B": "Eighty",
+          "C": "One hundred",
+          "D": "One hundred and twenty"
+        },
+        "correct": "B",
+        "explanation": "The total number of investors who invested in exactly two properties is 120. The number of investors who invested only in The Maroon Villa and The Obsidian Penthouse is 40. Excluding this pair, the remaining number is 120 - 40 = 80."
+      },
+      {
+        "q": 15,
+        "topic": "Logic Puzzles",
+        "question": "How many investors invested in both The Maroon Villa and The Azure Estate and no other properties?",
+        "options": {
+          "A": "Five",
+          "B": "Ten",
+          "C": "Fifteen",
+          "D": "Twenty"
+        },
+        "correct": "C",
+        "explanation": "Total exactly two-property investors = 120. Maroon & Obsidian = 40. Golden & Azure = 20. The remaining investors for the other four pairs = 120 - 40 - 20 = 60. These 60 are equally divided among the four remaining pairs. Thus, Maroon & Azure = 60 / 4 = 15."
+      },
+      {
+        "q": 16,
+        "topic": "Logic Puzzles",
+        "question": "What is the ratio of investors who invested in exactly three properties to those who invested in all four properties?",
+        "options": {
+          "A": "Three to one",
+          "B": "Four to one",
+          "C": "Three to two",
+          "D": "Two to one"
+        },
+        "correct": "D",
+        "explanation": "The number of investors in exactly three properties is 40. The number of investors in all four properties is 20. The ratio is 40 to 20, which simplifies to 2:1 or two to one."
+      },
+      {
+        "q": 17,
+        "topic": "Scheduling",
+        "question": "Which module is deployed on Wednesday?",
+        "options": {
+          "A": "Volunteer Tracking",
+          "B": "Fund Management",
+          "C": "Media Outreach",
+          "D": "Speech Drafting"
+        },
+        "correct": "A",
+        "explanation": "Media Outreach (MO) is immediately after Volunteer Tracking (VT). Fund Management (FM) is two days before MO, meaning the sequence is FM, VT, MO. Since Polling Data is on Friday, this 3-day block cannot overlap Friday. It cannot start on Monday (FM rule), so it must be Tue-Wed-Thu. Thus, FM is Tuesday, VT is Wednesday, MO is Thursday."
+      },
+      {
+        "q": 18,
+        "topic": "Scheduling",
+        "question": "On which day is Voter Analytics deployed?",
+        "options": {
+          "A": "Friday",
+          "B": "Saturday",
+          "C": "Monday",
+          "D": "Tuesday"
+        },
+        "correct": "B",
+        "explanation": "The remaining days after placing FM (Tue), VT (Wed), MO (Thu), and Polling Data (Fri) are Monday and Saturday. Since Speech Drafting must be deployed before Voter Analytics, Speech Drafting is on Monday and Voter Analytics is on Saturday."
+      },
+      {
+        "q": 19,
+        "topic": "Scheduling",
+        "question": "Which module is deployed immediately before Fund Management?",
+        "options": {
+          "A": "Voter Analytics",
+          "B": "Polling Data",
+          "C": "Speech Drafting",
+          "D": "Volunteer Tracking"
+        },
+        "correct": "C",
+        "explanation": "Fund Management is deployed on Tuesday. The module deployed immediately before it on Monday is Speech Drafting."
+      },
+      {
+        "q": 20,
+        "topic": "Scheduling",
+        "question": "How many days pass between the deployment of Speech Drafting and Polling Data?",
+        "options": {
+          "A": "One day",
+          "B": "Two days",
+          "C": "Four days",
+          "D": "Three days"
+        },
+        "correct": "D",
+        "explanation": "Speech Drafting is deployed on Monday. Polling Data is deployed on Friday. The days that pass between them are Tuesday, Wednesday, and Thursday, which totals three days."
+      },
+      {
+        "q": 21,
+        "topic": "Scheduling",
+        "question": "Which of the following statements is true regarding the deployment schedule?",
+        "options": {
+          "A": "Media Outreach is deployed on Friday.",
+          "B": "Speech Drafting is deployed on Monday.",
+          "C": "Volunteer Tracking is deployed on Tuesday.",
+          "D": "Voter Analytics is deployed on Wednesday."
+        },
+        "correct": "B",
+        "explanation": "Based on the derived schedule, Speech Drafting is on Monday, Fund Management on Tuesday, Volunteer Tracking on Wednesday, Media Outreach on Thursday, Polling Data on Friday, and Voter Analytics on Saturday. Only option B is correct."
+      },
+      {
+        "q": 22,
+        "topic": "Scheduling",
+        "question": "If a sudden technical error delays Polling Data such that it swaps its deployment day with Voter Analytics, which module will be deployed on Friday?",
+        "options": {
+          "A": "Polling Data",
+          "B": "Speech Drafting",
+          "C": "Media Outreach",
+          "D": "Voter Analytics"
+        },
+        "correct": "D",
+        "explanation": "Polling Data is originally on Friday, and Voter Analytics is on Saturday. If their days are swapped, Voter Analytics moves to Friday and Polling Data moves to Saturday. Therefore, Voter Analytics is deployed on Friday."
+      }
+    ],
+    "Quantitative Ability": [
+      {
+        "q": 1,
+        "topic": "Time Speed and Distance",
+        "question": "A boat goes 20 km downstream and 20 km upstream in a total of 5 hours. If the speed of the stream is 3 km/hr, find the speed of the boat in still water.",
+        "options": {
+          "A": "9 km/hr",
+          "B": "10 km/hr",
+          "C": "8 km/hr",
+          "D": "12 km/hr"
+        },
+        "correct": "A",
+        "explanation": "Let the speed of the boat in still water be v. Upstream speed = v - 3, Downstream speed = v + 3. Total time = 20/(v+3) + 20/(v-3) = 5. Dividing by 5 gives 4/(v+3) + 4/(v-3) = 1. Simplifying this: 4(v-3) + 4(v+3) = v^2 - 9. This gives 8v = v^2 - 9, which means v^2 - 8v - 9 = 0. Factoring gives (v - 9)(v + 1) = 0. Since speed must be positive, v = 9 km/hr."
+      },
+      {
+        "q": 2,
+        "topic": "Mixtures and Allegation",
+        "question": "A mixture of 40 liters of milk and water contains 10 percent water. How much water must be added to this mixture to make the water content 20 percent in the new mixture?",
+        "options": {
+          "A": "4 liters",
+          "B": "5 liters",
+          "C": "6 liters",
+          "D": "8 liters"
+        },
+        "correct": "B",
+        "explanation": "Initial mixture = 40 liters. Water = 10% of 40 = 4 liters. Milk = 36 liters. Let x liters of water be added. The new total volume is 40 + x. The new water volume is 4 + x. We want the new mixture to be 20% water, so (4 + x) / (40 + x) = 0.20. 4 + x = 8 + 0.2x. 0.8x = 4, so x = 5 liters."
+      },
+      {
+        "q": 3,
+        "topic": "Time and Work",
+        "question": "A can do a piece of work in 10 days and B can do the same work in 15 days. They work together for 2 days, and then A leaves the work. In how many days will B finish the remaining work?",
+        "options": {
+          "A": "8 days",
+          "B": "9 days",
+          "C": "10 days",
+          "D": "12 days"
+        },
+        "correct": "C",
+        "explanation": "A's 1-day work = 1/10. B's 1-day work = 1/15. Together, their 1-day work = 1/10 + 1/15 = 3/30 + 2/30 = 5/30 = 1/6. In 2 days, they complete 2 * (1/6) = 1/3 of the work. The remaining work is 1 - 1/3 = 2/3. B completes 1/15 of the work in 1 day. So, B will take (2/3) / (1/15) = (2/3) * 15 = 10 days to finish the remaining work."
+      },
+      {
+        "q": 4,
+        "topic": "Profit and Loss",
+        "question": "A merchant marks his goods 40 percent above the cost price and offers a discount of 15 percent on the marked price. What is his net profit percentage?",
+        "options": {
+          "A": "15 percent",
+          "B": "17 percent",
+          "C": "18 percent",
+          "D": "19 percent"
+        },
+        "correct": "D",
+        "explanation": "Let Cost Price (CP) = 100. Marked Price (MP) = 100 + 40% = 140. Discount = 15% on MP = 0.15 * 140 = 21. Selling Price (SP) = 140 - 21 = 119. Profit = SP - CP = 119 - 100 = 19. Net profit percentage = 19 percent."
+      },
+      {
+        "q": 5,
+        "topic": "Time Speed and Distance",
+        "question": "Two trains start at the same time from stations A and B and proceed towards each other at the speeds of 45 km/hr and 60 km/hr respectively. When they meet, it is found that one train has traveled 30 km more than the other. Find the distance between stations A and B.",
+        "options": {
+          "A": "210 km",
+          "B": "240 km",
+          "C": "280 km",
+          "D": "300 km"
+        },
+        "correct": "A",
+        "explanation": "Let the time taken when they meet be t hours. Distance traveled by first train = 45t. Distance traveled by second train = 60t. The difference in distance is 60t - 45t = 15t = 30 km, so t = 2 hours. Total distance between A and B is the sum of distances = 45t + 60t = 105t. Total distance = 105 * 2 = 210 km."
+      },
+      {
+        "q": 6,
+        "topic": "Interest",
+        "question": "A sum of money placed at compound interest (compounded annually) amounts to thrice itself in 4 years. In how many years will it amount to 9 times itself at the same rate of interest?",
+        "options": {
+          "A": "6 years",
+          "B": "8 years",
+          "C": "10 years",
+          "D": "12 years"
+        },
+        "correct": "B",
+        "explanation": "Let the principal be P. Amount = P(1 + r/100)^t. We are given P(1 + r/100)^4 = 3P, so (1 + r/100)^4 = 3. We want the amount to be 9P, which means (1 + r/100)^T = 9. Since 9 = 3^2, we can substitute: (1 + r/100)^T = ((1 + r/100)^4)^2 = (1 + r/100)^8. Therefore, T = 8 years."
+      },
+      {
+        "q": 7,
+        "topic": "Averages",
+        "question": "The average of 11 numbers is 50. If the average of the first 6 numbers is 49 and the average of the last 6 numbers is 52, find the sixth number.",
+        "options": {
+          "A": "50",
+          "B": "52",
+          "C": "56",
+          "D": "58"
+        },
+        "correct": "C",
+        "explanation": "The sum of all 11 numbers = 11 * 50 = 550. The sum of the first 6 numbers = 6 * 49 = 294. The sum of the last 6 numbers = 6 * 52 = 312. The 6th number is counted twice in these two groups. Thus, the 6th number = (Sum of first 6 + Sum of last 6) - Total Sum = (294 + 312) - 550 = 606 - 550 = 56."
+      },
+      {
+        "q": 8,
+        "topic": "Equations",
+        "question": "If alpha and beta are the roots of the quadratic equation x^2 - 7x + 10 = 0, find the value of (alpha)^3 + (beta)^3.",
+        "options": {
+          "A": "117",
+          "B": "123",
+          "C": "127",
+          "D": "133"
+        },
+        "correct": "D",
+        "explanation": "The roots of x^2 - 7x + 10 = 0 are alpha and beta. Sum of roots (alpha + beta) = 7. Product of roots (alpha * beta) = 10. We need (alpha)^3 + (beta)^3 = (alpha + beta)^3 - 3(alpha * beta)(alpha + beta) = 7^3 - 3(10)(7) = 343 - 210 = 133."
+      },
+      {
+        "q": 9,
+        "topic": "Equations",
+        "question": "Given that log_10(2) = 0.3010, find the value of log_10(80).",
+        "options": {
+          "A": "1.9030",
+          "B": "1.8030",
+          "C": "1.9040",
+          "D": "2.9030"
+        },
+        "correct": "A",
+        "explanation": "We need log_10(80). We can write 80 as 8 * 10 = 2^3 * 10. Using log properties, log_10(80) = log_10(2^3 * 10) = log_10(2^3) + log_10(10) = 3 * log_10(2) + 1. Substituting the given value, 3 * 0.3010 + 1 = 0.9030 + 1 = 1.9030."
+      },
+      {
+        "q": 10,
+        "topic": "Progressions",
+        "question": "In an Arithmetic Progression (AP), the sum of the first 10 terms is 150 and the sum of the next 10 terms is 350. Find the first term of the AP.",
+        "options": {
+          "A": "4",
+          "B": "6",
+          "C": "8",
+          "D": "10"
+        },
+        "correct": "B",
+        "explanation": "Let the first term be a and the common difference be d. Sum of first 10 terms S_10 = (10/2)[2a + 9d] = 150, so 2a + 9d = 30. The sum of the first 20 terms is S_10 + next 10 terms = 150 + 350 = 500. S_20 = (20/2)[2a + 19d] = 500, so 2a + 19d = 50. Subtracting the first equation from the second gives 10d = 20, so d = 2. Substituting back: 2a + 9(2) = 30, which gives 2a = 12, so a = 6."
+      },
+      {
+        "q": 11,
+        "topic": "Inequalities",
+        "question": "Find the total number of integer solutions to the inequality |x - 3| < 5.",
+        "options": {
+          "A": "7",
+          "B": "8",
+          "C": "9",
+          "D": "10"
+        },
+        "correct": "C",
+        "explanation": "The inequality is |x - 3| < 5. This translates to -5 < x - 3 < 5. Adding 3 to all parts gives -2 < x < 8. The integer solutions for x are -1, 0, 1, 2, 3, 4, 5, 6, 7. Counting these yields exactly 9 integer solutions."
+      },
+      {
+        "q": 12,
+        "topic": "Functions",
+        "question": "If a function is defined as f(x) = (x + 1) / (x - 1) for x not equal to 1, find the value of f(f(x)).",
+        "options": {
+          "A": "1/x",
+          "B": "-x",
+          "C": "1",
+          "D": "x"
+        },
+        "correct": "D",
+        "explanation": "Given f(x) = (x + 1) / (x - 1). Substitute f(x) into itself: f(f(x)) = (f(x) + 1) / (f(x) - 1). Numerator = (x + 1)/(x - 1) + 1 = (x + 1 + x - 1)/(x - 1) = 2x / (x - 1). Denominator = (x + 1)/(x - 1) - 1 = (x + 1 - x + 1)/(x - 1) = 2 / (x - 1). Dividing the numerator by the denominator gives (2x) / 2 = x."
+      },
+      {
+        "q": 13,
+        "topic": "Inequalities",
+        "question": "What is the minimum value of the expression 4^x + 4^(1 - x) for any real number x?",
+        "options": {
+          "A": "4",
+          "B": "5",
+          "C": "2",
+          "D": "8"
+        },
+        "correct": "A",
+        "explanation": "Let y = 4^x. Since x is real, y > 0. The expression is y + 4/y. By the AM-GM inequality, the arithmetic mean is greater than or equal to the geometric mean: (y + 4/y) / 2 >= sqrt(y * 4/y) = sqrt(4) = 2. Thus, y + 4/y >= 4. The minimum value is 4, which occurs when 4^x = 2 (so x = 1/2)."
+      },
+      {
+        "q": 14,
+        "topic": "Geometry",
+        "question": "A chord of length 16 cm is drawn in a circle of radius 10 cm. Find the perpendicular distance of the chord from the center of the circle.",
+        "options": {
+          "A": "4 cm",
+          "B": "6 cm",
+          "C": "8 cm",
+          "D": "5 cm"
+        },
+        "correct": "B",
+        "explanation": "A perpendicular from the center of a circle to a chord bisects the chord. So, the half-chord length is 16 / 2 = 8 cm. This forms a right-angled triangle with the radius as the hypotenuse (10 cm) and the half-chord as one side. The perpendicular distance d = sqrt(10^2 - 8^2) = sqrt(100 - 64) = sqrt(36) = 6 cm."
+      },
+      {
+        "q": 15,
+        "topic": "Geometry",
+        "question": "In a right-angled triangle, the two sides forming the right angle are 5 cm and 12 cm. Find the radius of the incircle of this triangle.",
+        "options": {
+          "A": "1 cm",
+          "B": "1.5 cm",
+          "C": "2 cm",
+          "D": "2.5 cm"
+        },
+        "correct": "C",
+        "explanation": "The hypotenuse of the right-angled triangle is sqrt(5^2 + 12^2) = sqrt(25 + 144) = sqrt(169) = 13 cm. The area of the triangle is (1/2) * 5 * 12 = 30 sq cm. The semi-perimeter s = (5 + 12 + 13) / 2 = 30 / 2 = 15 cm. The inradius r is given by Area / s = 30 / 15 = 2 cm."
+      },
+      {
+        "q": 16,
+        "topic": "Geometry",
+        "question": "Find the ratio of the area of a regular hexagon inscribed in a circle to the area of a regular hexagon circumscribing the same circle.",
+        "options": {
+          "A": "1:2",
+          "B": "2:3",
+          "C": "sqrt(3):2",
+          "D": "3:4"
+        },
+        "correct": "D",
+        "explanation": "A regular hexagon inscribed in a circle of radius R consists of 6 equilateral triangles of side R. Its area is 6 * (sqrt(3)/4) * R^2. A regular hexagon circumscribing the same circle has the circle as its incircle, so its apothem is R. The side length a is given by R = a * sqrt(3)/2, so a = 2R/sqrt(3). Its area is 6 * (sqrt(3)/4) * (4R^2/3) = 2 * sqrt(3) * R^2. The ratio is (3 * sqrt(3) / 2) / (2 * sqrt(3)) = 3/4, or 3:4."
+      },
+      {
+        "q": 17,
+        "topic": "Equations",
+        "question": "A solid metallic right circular cylinder of base radius 3 cm and height 5 cm is melted and recast into small solid right circular cones, each of height 1 cm and base radius 1 cm. Find the total number of cones formed.",
+        "options": {
+          "A": "135",
+          "B": "140",
+          "C": "145",
+          "D": "150"
+        },
+        "correct": "A",
+        "explanation": "The volume of the metallic cylinder is pi * r^2 * h = pi * 3^2 * 5 = 45 * pi cubic cm. The volume of one small cone is (1/3) * pi * r^2 * h = (1/3) * pi * 1^2 * 1 = pi / 3 cubic cm. The number of cones formed is the total volume divided by the volume of one cone: (45 * pi) / (pi / 3) = 45 * 3 = 135."
+      },
+      {
+        "q": 18,
+        "topic": "Geometry",
+        "question": "Find the area of the triangle formed by the straight lines 3x + 4y = 12, x = 0, and y = 0 on the Cartesian plane.",
+        "options": {
+          "A": "4",
+          "B": "6",
+          "C": "8",
+          "D": "12"
+        },
+        "correct": "B",
+        "explanation": "The lines x = 0 (y-axis) and y = 0 (x-axis) form a right angle at the origin (0,0). The line 3x + 4y = 12 intersects the x-axis at y=0, giving 3x = 12, so x = 4. It intersects the y-axis at x=0, giving 4y = 12, so y = 3. The triangle is a right-angled triangle with base 4 and height 3. Area = (1/2) * 4 * 3 = 6 square units."
+      },
+      {
+        "q": 19,
+        "topic": "Equations",
+        "question": "Find the number of trailing zeros in the value of 100! (100 factorial).",
+        "options": {
+          "A": "20",
+          "B": "22",
+          "C": "24",
+          "D": "25"
+        },
+        "correct": "C",
+        "explanation": "The number of trailing zeros in n! is determined by the highest power of 5 dividing n!. This is found using Legendre's formula: floor(n/5) + floor(n/25) + floor(n/125) + ... For n = 100, we get floor(100/5) + floor(100/25) = 20 + 4 = 24 trailing zeros."
+      },
+      {
+        "q": 20,
+        "topic": "Number Properties",
+        "question": "Find the remainder when 3^40 is divided by 13.",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "0",
+          "D": "3"
+        },
+        "correct": "D",
+        "explanation": "We need to find the remainder of 3^40 divided by 13. By Fermat's Little Theorem, since 13 is prime, a^12 = 1 (mod 13) for any 'a' not divisible by 13. So, 3^12 = 1 (mod 13). We can write 3^40 = 3^(12 * 3 + 4) = (3^12)^3 * 3^4. Since (3^12)^3 = 1^3 = 1 (mod 13), the expression simplifies to 3^4 = 81. Now, 81 divided by 13 is 6 with a remainder of 3 (13 * 6 = 78, 81 - 78 = 3). So the remainder is 3."
+      },
+      {
+        "q": 21,
+        "topic": "Equations",
+        "question": "In how many ways can 5 boys and 3 girls be seated in a row such that no two girls sit together?",
+        "options": {
+          "A": "12000",
+          "B": "14400",
+          "C": "2400",
+          "D": "43200"
+        },
+        "correct": "B",
+        "explanation": "First, arrange the 5 boys. They can be seated in 5! = 120 ways. The 5 boys create 6 spaces (one at each end and four between them) where the girls can sit to ensure no two girls are together. We must choose 3 spaces out of 6 for the girls, and then arrange the 3 girls in those spaces. The number of ways is 6P3 = 6! / 3! = 6 * 5 * 4 = 120 ways. Total arrangements = 120 * 120 = 14400 ways."
+      },
+      {
+        "q": 22,
+        "topic": "Modern Math",
+        "question": "Two fair six-sided dice are thrown simultaneously. What is the probability that the sum of the numbers appearing on the top faces of the two dice is a prime number?",
+        "options": {
+          "A": "1/3",
+          "B": "7/18",
+          "C": "5/12",
+          "D": "1/2"
+        },
+        "correct": "C",
+        "explanation": "When two dice are thrown, there are 6 * 6 = 36 possible outcomes. The possible sums are from 2 to 12. The prime sums are 2, 3, 5, 7, and 11. The number of ways to get these sums are: Sum 2 (1 way: 1,1), Sum 3 (2 ways: 1,2; 2,1), Sum 5 (4 ways: 1,4; 4,1; 2,3; 3,2), Sum 7 (6 ways: 1,6; 6,1; 2,5; 5,2; 3,4; 4,3), Sum 11 (2 ways: 5,6; 6,5). Total favorable outcomes = 1 + 2 + 4 + 6 + 2 = 15. Probability = 15 / 36 = 5 / 12."
+      }
+    ]
+  }
+}

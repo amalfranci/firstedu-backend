@@ -1,0 +1,1357 @@
+{
+  "paper_id": "IBPS-Paper5",
+  "title": "IBPS PO Prelims Paper 5",
+  "exam": "IBPS PO Prelims",
+  "year": 2026,
+  "subjects": {
+    "English Language": [
+      {
+        "q": 1,
+        "topic": "Main idea",
+        "question": "According to the passage, what has completely changed how people manage their money today?",
+        "options": {
+          "A": "Strict international trade tariffs and customs agreements.",
+          "B": "The complete abolition of physical paper currency worldwide.",
+          "C": "Decentralized cryptocurrency mining operations.",
+          "D": "The rapid growth of digital banking and electronic transactions."
+        },
+        "correct": "D",
+        "explanation": "The passage explicitly states that the rapid growth of digital banking has completely changed how people manage their money today.",
+        "passage": "The rapid growth of digital banking has completely changed how people manage their money today. Traditional banking systems, which relied heavily on physical branches and paper documents, have been replaced by fast electronic transactions. Customers can now transfer funds, pay utility bills, and open savings accounts directly from their smartphones within seconds. However, this shift toward online financial services has also brought serious security challenges. Cyber criminals are finding new ways to target bank customers and financial institutions through online fraud, fake links, and data theft.\n\nTo protect users, commercial banks and financial regulators are introducing strict security rules. Most banks now require two-factor authentication and send instant mobile notifications for every transaction. Despite these strong technical safeguards, human error remains the biggest security risk in the financial sector. Many customers still fall victim to online scams, where fraudsters trick them into sharing their personal passwords or OTPs through deceptive phone calls or emails. Therefore, banks must run regular customer awareness programs to educate people about safe digital habits and password management.\n\nFurthermore, close cooperation between commercial banks and law enforcement agencies is essential to track cyber criminals quickly and recover stolen funds before they disappear. Financial institutions also need to invest continuously in upgrading their software systems to prevent system failures and protect customer data from unauthorized access. Bank executives must allocate sufficient budgets toward hiring IT security experts and improving network defenses against modern malware. Regular security audits of mobile apps and web portals are also necessary to find and fix hidden software bugs before hackers exploit them.\n\nIn conclusion, while digital banking offers immense convenience and daily speed, maintaining long-term safety requires a combined effort from banks, regulators, and vigilant customers. Without strong cooperation and continuous education, the banking sector could face increased fraud risks that might shake public confidence in electronic payments across the nation."
+      },
+      {
+        "q": 2,
+        "topic": "Error detection",
+        "question": "Which of the following is identified in the passage as the biggest security risk in the financial sector?",
+        "options": {
+          "A": "Outdated cloud computing storage servers.",
+          "B": "Real-time anomaly detection algorithms.",
+          "C": "End-to-end encryption communication channels.",
+          "D": "Human error and falling victim to online scams."
+        },
+        "correct": "D",
+        "explanation": "The text notes that despite technical safeguards, human error remains the biggest security risk in the financial sector.",
+        "passage": "The rapid growth of digital banking has completely changed how people manage their money today. Traditional banking systems, which relied heavily on physical branches and paper documents, have been replaced by fast electronic transactions. Customers can now transfer funds, pay utility bills, and open savings accounts directly from their smartphones within seconds. However, this shift toward online financial services has also brought serious security challenges. Cyber criminals are finding new ways to target bank customers and financial institutions through online fraud, fake links, and data theft.\n\nTo protect users, commercial banks and financial regulators are introducing strict security rules. Most banks now require two-factor authentication and send instant mobile notifications for every transaction. Despite these strong technical safeguards, human error remains the biggest security risk in the financial sector. Many customers still fall victim to online scams, where fraudsters trick them into sharing their personal passwords or OTPs through deceptive phone calls or emails. Therefore, banks must run regular customer awareness programs to educate people about safe digital habits and password management.\n\nFurthermore, close cooperation between commercial banks and law enforcement agencies is essential to track cyber criminals quickly and recover stolen funds before they disappear. Financial institutions also need to invest continuously in upgrading their software systems to prevent system failures and protect customer data from unauthorized access. Bank executives must allocate sufficient budgets toward hiring IT security experts and improving network defenses against modern malware. Regular security audits of mobile apps and web portals are also necessary to find and fix hidden software bugs before hackers exploit them.\n\nIn conclusion, while digital banking offers immense convenience and daily speed, maintaining long-term safety requires a combined effort from banks, regulators, and vigilant customers. Without strong cooperation and continuous education, the banking sector could face increased fraud risks that might shake public confidence in electronic payments across the nation."
+      },
+      {
+        "q": 3,
+        "topic": "Reading Comprehension",
+        "question": "What security measure have commercial banks and regulators introduced to protect users?",
+        "options": {
+          "A": "A complete ban on mobile banking apps.",
+          "B": "Two-factor authentication and instant mobile notifications for transactions.",
+          "C": "Mandatory nationalization of all commercial banking institutions.",
+          "D": "Total prohibition of online bill payments."
+        },
+        "correct": "B",
+        "explanation": "Most banks now require two-factor authentication and send instant mobile notifications for every transaction.",
+        "passage": "The rapid growth of digital banking has completely changed how people manage their money today. Traditional banking systems, which relied heavily on physical branches and paper documents, have been replaced by fast electronic transactions. Customers can now transfer funds, pay utility bills, and open savings accounts directly from their smartphones within seconds. However, this shift toward online financial services has also brought serious security challenges. Cyber criminals are finding new ways to target bank customers and financial institutions through online fraud, fake links, and data theft.\n\nTo protect users, commercial banks and financial regulators are introducing strict security rules. Most banks now require two-factor authentication and send instant mobile notifications for every transaction. Despite these strong technical safeguards, human error remains the biggest security risk in the financial sector. Many customers still fall victim to online scams, where fraudsters trick them into sharing their personal passwords or OTPs through deceptive phone calls or emails. Therefore, banks must run regular customer awareness programs to educate people about safe digital habits and password management.\n\nFurthermore, close cooperation between commercial banks and law enforcement agencies is essential to track cyber criminals quickly and recover stolen funds before they disappear. Financial institutions also need to invest continuously in upgrading their software systems to prevent system failures and protect customer data from unauthorized access. Bank executives must allocate sufficient budgets toward hiring IT security experts and improving network defenses against modern malware. Regular security audits of mobile apps and web portals are also necessary to find and fix hidden software bugs before hackers exploit them.\n\nIn conclusion, while digital banking offers immense convenience and daily speed, maintaining long-term safety requires a combined effort from banks, regulators, and vigilant customers. Without strong cooperation and continuous education, the banking sector could face increased fraud risks that might shake public confidence in electronic payments across the nation."
+      },
+      {
+        "q": 4,
+        "topic": "Main idea",
+        "question": "How do fraudsters typically trick customers into falling victim to online scams according to the passage?",
+        "options": {
+          "A": "By tricking them into sharing personal passwords or OTPs through deceptive phone calls or emails.",
+          "B": "Because commercial banks refuse to install anti-malware software.",
+          "C": "By hacking into physical bank branch computers directly.",
+          "D": "Because regulatory bodies prohibit two-factor authentication."
+        },
+        "correct": "A",
+        "explanation": "Fraudsters trick customers into sharing personal passwords or OTPs through deceptive phone calls or emails.",
+        "passage": "The rapid growth of digital banking has completely changed how people manage their money today. Traditional banking systems, which relied heavily on physical branches and paper documents, have been replaced by fast electronic transactions. Customers can now transfer funds, pay utility bills, and open savings accounts directly from their smartphones within seconds. However, this shift toward online financial services has also brought serious security challenges. Cyber criminals are finding new ways to target bank customers and financial institutions through online fraud, fake links, and data theft.\n\nTo protect users, commercial banks and financial regulators are introducing strict security rules. Most banks now require two-factor authentication and send instant mobile notifications for every transaction. Despite these strong technical safeguards, human error remains the biggest security risk in the financial sector. Many customers still fall victim to online scams, where fraudsters trick them into sharing their personal passwords or OTPs through deceptive phone calls or emails. Therefore, banks must run regular customer awareness programs to educate people about safe digital habits and password management.\n\nFurthermore, close cooperation between commercial banks and law enforcement agencies is essential to track cyber criminals quickly and recover stolen funds before they disappear. Financial institutions also need to invest continuously in upgrading their software systems to prevent system failures and protect customer data from unauthorized access. Bank executives must allocate sufficient budgets toward hiring IT security experts and improving network defenses against modern malware. Regular security audits of mobile apps and web portals are also necessary to find and fix hidden software bugs before hackers exploit them.\n\nIn conclusion, while digital banking offers immense convenience and daily speed, maintaining long-term safety requires a combined effort from banks, regulators, and vigilant customers. Without strong cooperation and continuous education, the banking sector could face increased fraud risks that might shake public confidence in electronic payments across the nation."
+      },
+      {
+        "q": 5,
+        "topic": "Reading Comprehension",
+        "question": "Why is close cooperation between commercial banks and law enforcement agencies essential?",
+        "options": {
+          "A": "To track cyber criminals quickly and recover stolen funds before they disappear.",
+          "B": "To determine international interest rates and monetary policy.",
+          "C": "To audit retail customer bank accounts daily.",
+          "D": "To design decentralized cryptocurrency tokens."
+        },
+        "correct": "A",
+        "explanation": "Cooperation is essential to track cyber criminals quickly and recover stolen funds before they disappear.",
+        "passage": "The rapid growth of digital banking has completely changed how people manage their money today. Traditional banking systems, which relied heavily on physical branches and paper documents, have been replaced by fast electronic transactions. Customers can now transfer funds, pay utility bills, and open savings accounts directly from their smartphones within seconds. However, this shift toward online financial services has also brought serious security challenges. Cyber criminals are finding new ways to target bank customers and financial institutions through online fraud, fake links, and data theft.\n\nTo protect users, commercial banks and financial regulators are introducing strict security rules. Most banks now require two-factor authentication and send instant mobile notifications for every transaction. Despite these strong technical safeguards, human error remains the biggest security risk in the financial sector. Many customers still fall victim to online scams, where fraudsters trick them into sharing their personal passwords or OTPs through deceptive phone calls or emails. Therefore, banks must run regular customer awareness programs to educate people about safe digital habits and password management.\n\nFurthermore, close cooperation between commercial banks and law enforcement agencies is essential to track cyber criminals quickly and recover stolen funds before they disappear. Financial institutions also need to invest continuously in upgrading their software systems to prevent system failures and protect customer data from unauthorized access. Bank executives must allocate sufficient budgets toward hiring IT security experts and improving network defenses against modern malware. Regular security audits of mobile apps and web portals are also necessary to find and fix hidden software bugs before hackers exploit them.\n\nIn conclusion, while digital banking offers immense convenience and daily speed, maintaining long-term safety requires a combined effort from banks, regulators, and vigilant customers. Without strong cooperation and continuous education, the banking sector could face increased fraud risks that might shake public confidence in electronic payments across the nation."
+      },
+      {
+        "q": 6,
+        "topic": "Reading Comprehension",
+        "question": "What must bank executives allocate sufficient budgets toward, as suggested in the third paragraph?",
+        "options": {
+          "A": "Opening more physical bank branches in rural areas.",
+          "B": "Printing more physical paper currency.",
+          "C": "Banning online transactions for retail customers.",
+          "D": "Hiring IT security experts and improving network defenses against modern malware."
+        },
+        "correct": "D",
+        "explanation": "Bank executives must allocate sufficient budgets toward hiring IT security experts and improving network defenses against modern malware.",
+        "passage": "The rapid growth of digital banking has completely changed how people manage their money today. Traditional banking systems, which relied heavily on physical branches and paper documents, have been replaced by fast electronic transactions. Customers can now transfer funds, pay utility bills, and open savings accounts directly from their smartphones within seconds. However, this shift toward online financial services has also brought serious security challenges. Cyber criminals are finding new ways to target bank customers and financial institutions through online fraud, fake links, and data theft.\n\nTo protect users, commercial banks and financial regulators are introducing strict security rules. Most banks now require two-factor authentication and send instant mobile notifications for every transaction. Despite these strong technical safeguards, human error remains the biggest security risk in the financial sector. Many customers still fall victim to online scams, where fraudsters trick them into sharing their personal passwords or OTPs through deceptive phone calls or emails. Therefore, banks must run regular customer awareness programs to educate people about safe digital habits and password management.\n\nFurthermore, close cooperation between commercial banks and law enforcement agencies is essential to track cyber criminals quickly and recover stolen funds before they disappear. Financial institutions also need to invest continuously in upgrading their software systems to prevent system failures and protect customer data from unauthorized access. Bank executives must allocate sufficient budgets toward hiring IT security experts and improving network defenses against modern malware. Regular security audits of mobile apps and web portals are also necessary to find and fix hidden software bugs before hackers exploit them.\n\nIn conclusion, while digital banking offers immense convenience and daily speed, maintaining long-term safety requires a combined effort from banks, regulators, and vigilant customers. Without strong cooperation and continuous education, the banking sector could face increased fraud risks that might shake public confidence in electronic payments across the nation."
+      },
+      {
+        "q": 7,
+        "topic": "Reading Comprehension",
+        "question": "Why are regular security audits of mobile apps and web portals necessary?",
+        "options": {
+          "A": "To eliminate human bank tellers entirely.",
+          "B": "To explain how physical currency management costs are reduced.",
+          "C": "To find and fix hidden software bugs before hackers exploit them.",
+          "D": "To increase the interest rates on savings accounts."
+        },
+        "correct": "C",
+        "explanation": "Regular security audits are necessary to find and fix hidden software bugs before hackers exploit them.",
+        "passage": "The rapid growth of digital banking has completely changed how people manage their money today. Traditional banking systems, which relied heavily on physical branches and paper documents, have been replaced by fast electronic transactions. Customers can now transfer funds, pay utility bills, and open savings accounts directly from their smartphones within seconds. However, this shift toward online financial services has also brought serious security challenges. Cyber criminals are finding new ways to target bank customers and financial institutions through online fraud, fake links, and data theft.\n\nTo protect users, commercial banks and financial regulators are introducing strict security rules. Most banks now require two-factor authentication and send instant mobile notifications for every transaction. Despite these strong technical safeguards, human error remains the biggest security risk in the financial sector. Many customers still fall victim to online scams, where fraudsters trick them into sharing their personal passwords or OTPs through deceptive phone calls or emails. Therefore, banks must run regular customer awareness programs to educate people about safe digital habits and password management.\n\nFurthermore, close cooperation between commercial banks and law enforcement agencies is essential to track cyber criminals quickly and recover stolen funds before they disappear. Financial institutions also need to invest continuously in upgrading their software systems to prevent system failures and protect customer data from unauthorized access. Bank executives must allocate sufficient budgets toward hiring IT security experts and improving network defenses against modern malware. Regular security audits of mobile apps and web portals are also necessary to find and fix hidden software bugs before hackers exploit them.\n\nIn conclusion, while digital banking offers immense convenience and daily speed, maintaining long-term safety requires a combined effort from banks, regulators, and vigilant customers. Without strong cooperation and continuous education, the banking sector could face increased fraud risks that might shake public confidence in electronic payments across the nation."
+      },
+      {
+        "q": 8,
+        "topic": "Reading Comprehension",
+        "question": "What is required to maintain long-term safety in digital banking according to the conclusion?",
+        "options": {
+          "A": "A combined effort from banks, regulators, and vigilant customers.",
+          "B": "Complete isolation of national banking networks from the internet.",
+          "C": "Elimination of all digital banking applications for retail customers.",
+          "D": "Centralized governmental control over all private sector software development."
+        },
+        "correct": "A",
+        "explanation": "Maintaining long-term safety requires a combined effort from banks, regulators, and vigilant customers.",
+        "passage": "The rapid growth of digital banking has completely changed how people manage their money today. Traditional banking systems, which relied heavily on physical branches and paper documents, have been replaced by fast electronic transactions. Customers can now transfer funds, pay utility bills, and open savings accounts directly from their smartphones within seconds. However, this shift toward online financial services has also brought serious security challenges. Cyber criminals are finding new ways to target bank customers and financial institutions through online fraud, fake links, and data theft.\n\nTo protect users, commercial banks and financial regulators are introducing strict security rules. Most banks now require two-factor authentication and send instant mobile notifications for every transaction. Despite these strong technical safeguards, human error remains the biggest security risk in the financial sector. Many customers still fall victim to online scams, where fraudsters trick them into sharing their personal passwords or OTPs through deceptive phone calls or emails. Therefore, banks must run regular customer awareness programs to educate people about safe digital habits and password management.\n\nFurthermore, close cooperation between commercial banks and law enforcement agencies is essential to track cyber criminals quickly and recover stolen funds before they disappear. Financial institutions also need to invest continuously in upgrading their software systems to prevent system failures and protect customer data from unauthorized access. Bank executives must allocate sufficient budgets toward hiring IT security experts and improving network defenses against modern malware. Regular security audits of mobile apps and web portals are also necessary to find and fix hidden software bugs before hackers exploit them.\n\nIn conclusion, while digital banking offers immense convenience and daily speed, maintaining long-term safety requires a combined effort from banks, regulators, and vigilant customers. Without strong cooperation and continuous education, the banking sector could face increased fraud risks that might shake public confidence in electronic payments across the nation."
+      },
+      {
+        "q": 9,
+        "topic": "Error detection",
+        "question": "(A) Several economic analysts predicted that / (B) inflation rates would stabilize / (C) across all developing sectors lately. / (D) No error",
+        "options": {
+          "A": "A",
+          "B": "B",
+          "C": "C",
+          "D": "D"
+        },
+        "correct": "C",
+        "explanation": "The word 'lately' is typically used with the present perfect tense, whereas the sentence uses 'predicted' (past tense). Thus, part C contains the grammatical error."
+      },
+      {
+        "q": 10,
+        "topic": "Error detection",
+        "question": "(A) The rapid expansion of e-commerce platforms / (B) have significantly altered consumer / (C) purchasing habits over the past decade. / (D) No error",
+        "options": {
+          "A": "A",
+          "B": "B",
+          "C": "C",
+          "D": "D"
+        },
+        "correct": "B",
+        "explanation": "The subject of the sentence is 'expansion' (singular), so the auxiliary verb should be 'has' instead of 'have'. Thus, part B contains the grammatical error."
+      },
+      {
+        "q": 11,
+        "topic": "Error detection",
+        "question": "(A) Despite facing severe supply chain disruptions, / (B) the manufacturing unit successfully met / (C) their quarterly production targets on time. / (D) No error",
+        "options": {
+          "A": "A",
+          "B": "B",
+          "C": "C",
+          "D": "D"
+        },
+        "correct": "C",
+        "explanation": "The singular noun 'manufacturing unit' requires the singular possessive pronoun 'its' instead of the plural pronoun 'their'. Thus, part C contains the grammatical error."
+      },
+      {
+        "q": 12,
+        "topic": "Error detection",
+        "question": "(A) No sooner did the finance minister begin / (B) his budget speech when opposition / (C) members started shouting slogans. / (D) No error",
+        "options": {
+          "A": "A",
+          "B": "B",
+          "C": "C",
+          "D": "D"
+        },
+        "correct": "B",
+        "explanation": "The correlative conjunction for 'No sooner' is 'than', not 'when'. Thus, part B contains the error."
+      },
+      {
+        "q": 13,
+        "topic": "Error detection",
+        "question": "(A) Supposing if the monsoon fails completely, / (B) agricultural output will decline sharply, / (C) impacting rural credit repayment rates. / (D) No error",
+        "options": {
+          "A": "A",
+          "B": "B",
+          "C": "C",
+          "D": "D"
+        },
+        "correct": "A",
+        "explanation": "'Supposing' and 'if' mean the same thing and should not be used together. Using either 'Supposing' or 'If' is correct, making part A erroneous."
+      },
+      {
+        "q": 14,
+        "topic": "Error detection",
+        "question": "(A) Unless the government does not implement / (B) structural fiscal reforms urgently, / (C) sovereign credit ratings may suffer downgrades. / (D) No error",
+        "options": {
+          "A": "A",
+          "B": "B",
+          "C": "C",
+          "D": "D"
+        },
+        "correct": "A",
+        "explanation": "'Unless' is a negative conditional word and should not be followed by another negative ('does not'). It should be 'Unless the government implements'. Thus, part A has the error."
+      },
+      {
+        "q": 15,
+        "topic": "Sentence correction",
+        "question": "Recognizing the escalating cyber threats, the board demanded that immediate security upgrades must be implemented across all legacy systems.",
+        "options": {
+          "A": "demanded immediate security upgrades to be implemented",
+          "B": "demanded that immediate security upgrades are implemented",
+          "C": "demanded immediate security upgrades must implemented",
+          "D": "demanded that immediate security upgrades be implemented"
+        },
+        "correct": "D",
+        "explanation": "After verbs of demand or recommendation (like 'demand', 'insist', 'propose'), the subjunctive mood is used, which requires the base form of the verb ('be implemented' without 'must')."
+      },
+      {
+        "q": 16,
+        "topic": "Sentence correction",
+        "question": "The retail banking division succeeded to expand its customer base by introducing zero-balance digital savings accounts.",
+        "options": {
+          "A": "succeeded to expanding its customer base",
+          "B": "was successful to expand its customer base",
+          "C": "succeeded to expand its customer base",
+          "D": "succeeded in expanding its customer base"
+        },
+        "correct": "D",
+        "explanation": "The verb 'succeed' is correctly followed by the preposition 'in' and the gerund 'expanding', making option D grammatically superior."
+      },
+      {
+        "q": 17,
+        "topic": "Sentence correction",
+        "question": "Had the monetary policy committee anticipated the sudden inflation spike, they will raise benchmark interest rates earlier.",
+        "options": {
+          "A": "would raise benchmark interest rates",
+          "B": "would have raised benchmark interest rates",
+          "C": "will have raised benchmark interest rates",
+          "D": "had raised benchmark interest rates"
+        },
+        "correct": "B",
+        "explanation": "In third conditional sentences expressing past hypothetical situations ('Had + subject + V3'), the main clause must use 'would have + V3'."
+      },
+      {
+        "q": 18,
+        "topic": "Vocabulary in context",
+        "question": "The startup secured venture capital funding owing due to its innovative artificial intelligence algorithm.",
+        "options": {
+          "A": "owing because of its innovative artificial intelligence",
+          "B": "due to owing its innovative artificial intelligence",
+          "C": "owing to its innovative artificial intelligence",
+          "D": "because of owing to its innovative artificial intelligence"
+        },
+        "correct": "C",
+        "explanation": "The redundant phrase 'owing due to' is grammatically incorrect; the correct prepositional phrase indicating cause is 'owing to' or 'due to'."
+      },
+      {
+        "q": 19,
+        "topic": "Sentence correction",
+        "question": "Neither the chief executive nor the regional directors was willing to compromise on compliance standards.",
+        "options": {
+          "A": "were willing in compromising on compliance",
+          "B": "was willing for compromising on compliance",
+          "C": "were willing for compromise on compliance",
+          "D": "were willing to compromise on compliance"
+        },
+        "correct": "D",
+        "explanation": "In a 'neither...nor' construction, the verb agrees with the nearer subject ('directors', which is plural). Therefore, 'was' must be replaced with 'were'."
+      },
+      {
+        "q": 20,
+        "topic": "Fill in the blanks",
+        "question": "Commercial banks must maintain rigorous compliance protocols to __________ illicit financial transactions and money laundering activities.",
+        "options": {
+          "A": "facilitate",
+          "B": "intercept",
+          "C": "encourage",
+          "D": "stimulate"
+        },
+        "correct": "B",
+        "explanation": "The context requires a verb meaning to stop or catch illicit transactions; 'intercept' is the most appropriate word."
+      },
+      {
+        "q": 21,
+        "topic": "Fill in the blanks",
+        "question": "The central bank implemented expansionary monetary policies to __________ liquidity into the sluggish national economy.",
+        "options": {
+          "A": "extract",
+          "B": "withdraw",
+          "C": "inject",
+          "D": "absorb"
+        },
+        "correct": "C",
+        "explanation": "In monetary economics, expansionary policies are used to 'inject' liquidity into the financial system to stimulate economic activity."
+      },
+      {
+        "q": 22,
+        "topic": "Fill in the blanks",
+        "question": "Despite facing severe macroeconomic headwinds, the technology sector demonstrated remarkable __________ by growing its export revenues.",
+        "options": {
+          "A": "fragility",
+          "B": "volatility",
+          "C": "resilience",
+          "D": "stagnation"
+        },
+        "correct": "C",
+        "explanation": "'Resilience' refers to the capacity to recover quickly from difficulties, perfectly matching the context of growing despite macroeconomic headwinds."
+      },
+      {
+        "q": 23,
+        "topic": "Fill in the blanks",
+        "question": "Financial analysts expressed concern over the __________ rise in unsecured retail loans across major metropolitan markets.",
+        "options": {
+          "A": "sluggish",
+          "B": "negligible",
+          "C": "declining",
+          "D": "astronomical"
+        },
+        "correct": "D",
+        "explanation": "The context of concern over unsecured retail loans indicates a rapid or 'astronomical' rise that poses potential risks to financial stability."
+      },
+      {
+        "q": 24,
+        "topic": "Fill in the blanks",
+        "question": "The audit committee recommended immediate structural changes to __________ operational inefficiencies within the procurement department.",
+        "options": {
+          "A": "exacerbate",
+          "B": "prolong",
+          "C": "eradicate",
+          "D": "tolerate"
+        },
+        "correct": "C",
+        "explanation": "Audit committees recommend changes to 'eradicate' (eliminate) operational inefficiencies."
+      },
+      {
+        "q": 25,
+        "topic": "Para jumbles",
+        "question": "Which of the following sentences should be the first statement (opening sentence) after rearrangement?",
+        "options": {
+          "A": "D",
+          "B": "B",
+          "C": "C",
+          "D": "A"
+        },
+        "correct": "A",
+        "explanation": "Sentence (D) introduces the broad topic of electronic payment gateways revolutionizing commercial retail trade, making it the ideal opening sentence. (Correct sequence: D - B - C - A - E)."
+      },
+      {
+        "q": 26,
+        "topic": "Para jumbles",
+        "question": "Which of the following sentences should be the second statement in the rearranged paragraph?",
+        "options": {
+          "A": "C",
+          "B": "B",
+          "C": "A",
+          "D": "E"
+        },
+        "correct": "B",
+        "explanation": "Sentence (B) logically follows (D) by highlighting that as economies transition toward cashless ecosystems, cybersecurity assumes paramount importance."
+      },
+      {
+        "q": 27,
+        "topic": "Para jumbles",
+        "question": "Which of the following sentences should be the third statement in the rearranged paragraph?",
+        "options": {
+          "A": "C",
+          "B": "B",
+          "C": "D",
+          "D": "E"
+        },
+        "correct": "A",
+        "explanation": "Sentence (C) follows (B) by explaining how governments and regulators collaborate to establish legal frameworks against cyber fraud in response to these security needs."
+      },
+      {
+        "q": 28,
+        "topic": "Para jumbles",
+        "question": "Which of the following sentences should be the fourth statement in the rearranged paragraph?",
+        "options": {
+          "A": "E",
+          "B": "A",
+          "C": "C",
+          "D": "D"
+        },
+        "correct": "B",
+        "explanation": "Sentence (A) introduces an additional supportive measure ('Furthermore, digital literacy programs must be expanded...')."
+      },
+      {
+        "q": 29,
+        "topic": "Para jumbles",
+        "question": "Which of the following sentences should be the fifth (concluding) statement in the rearranged paragraph?",
+        "options": {
+          "A": "E",
+          "B": "A",
+          "C": "B",
+          "D": "C"
+        },
+        "correct": "A",
+        "explanation": "Sentence (E) concludes the paragraph by stating the consequence ('Without such comprehensive protective measures...')."
+      },
+      {
+        "q": 30,
+        "topic": "Para jumbles",
+        "question": "What is the correct logical sequence of sentences for the paragraph?",
+        "options": {
+          "A": "B-D-C-A-E",
+          "B": "D-B-C-A-E",
+          "C": "D-C-B-A-E",
+          "D": "A-B-C-D-E"
+        },
+        "correct": "B",
+        "explanation": "The correct logical sequence is D-B-C-A-E, establishing the progression from electronic payments growth to cybersecurity, regulatory action, digital literacy, and final concluding warning."
+      }
+    ],
+    "Quantitative Aptitude": [
+      {
+        "q": 1,
+        "topic": "Percentage",
+        "question": "What is the total number of vehicles sold by EcoDrive Corp across all three zones combined?",
+        "options": {
+          "A": "35,000",
+          "B": "40,000",
+          "C": "45,000",
+          "D": "50,000"
+        },
+        "correct": "D",
+        "explanation": "Total sales = 500,000 units. Apex = 30% (150,000), Bluebell = 25% (125,000), Crimson = 20% (100,000), Delta = 15% (75,000). Total percentage accounted for = 90%. EcoDrive Corp has 10%, which equals 0.10 * 500,000 = 50,000 units."
+      },
+      {
+        "q": 2,
+        "topic": "Volume",
+        "question": "What is the total number of vehicles sold in the West Zone across all five companies combined?",
+        "options": {
+          "A": "100,000",
+          "B": "120,000",
+          "C": "130,000",
+          "D": "150,000"
+        },
+        "correct": "B",
+        "explanation": "North Zone = 200,000 units, South Zone = 180,000 units. Total aggregate volume = 500,000 units. West Zone = 500,000 - (200,000 + 180,000) = 120,000 units."
+      },
+      {
+        "q": 3,
+        "topic": "Bar graphs",
+        "question": "How many units did EcoDrive Corp sell in the North Zone?",
+        "options": {
+          "A": "10,000",
+          "B": "15,000",
+          "C": "20,000",
+          "D": "25,000"
+        },
+        "correct": "C",
+        "explanation": "Total North Zone sales = 200,000 units. Apex = 60,000, Bluebell = 50,000, Crimson = 40,000, Delta = 30,000. Sum = 180,000 units. EcoDrive sold 200,000 - 180,000 = 20,000 units in the North Zone."
+      },
+      {
+        "q": 4,
+        "topic": "Average",
+        "question": "What is the total gross revenue generated by Apex Motors from its total vehicle sales across all zones?",
+        "options": {
+          "A": "Rs. 10,000 crore",
+          "B": "Rs. 11,250 crore",
+          "C": "Rs. 12,000 crore",
+          "D": "Rs. 13,500 crore"
+        },
+        "correct": "C",
+        "explanation": "Apex Motors total sales = 150,000 units. Average selling price = Rs. 800,000. Total revenue = 150,000 * 800,000 = 120,000,000,000 rupees = Rs. 12,000 crore."
+      },
+      {
+        "q": 5,
+        "topic": "Profit and loss",
+        "question": "What is the total net profit earned by EcoDrive Corp from its total vehicle sales?",
+        "options": {
+          "A": "Rs. 950 crore",
+          "B": "Rs. 1,050 crore",
+          "C": "Rs. 1,120 crore",
+          "D": "Rs. 1,250 crore"
+        },
+        "correct": "A",
+        "explanation": "EcoDrive total sales = 50,000 units. Average selling price = Rs. 950,000. Total revenue = Rs. 4,750 crore. Net profit margin = 20%. Net profit = 0.20 * 4,750 crore = Rs. 950 crore."
+      },
+      {
+        "q": 6,
+        "topic": "Number series",
+        "question": "Find the missing or wrong number in the given number series:\n4, 7, 12, 21, 38, ?",
+        "options": {
+          "A": "65",
+          "B": "68",
+          "C": "71",
+          "D": "75"
+        },
+        "correct": "C",
+        "explanation": "Differences are powers of 2 plus 1 (3, 5, 9, 17). Next difference = 33. Next term = 38 + 33 = 71."
+      },
+      {
+        "q": 7,
+        "topic": "Number series",
+        "question": "Find the missing or wrong number in the given number series:\n12, 14, 30, 92, 370, ?",
+        "options": {
+          "A": "1480",
+          "B": "1852",
+          "C": "1920",
+          "D": "2110"
+        },
+        "correct": "B",
+        "explanation": "Pattern is multiplier increasing by 1 and adding 2: 12*1+2 = 14, 14*2+2 = 30, 30*3+2 = 92, 92*4+2 = 370. Next term = 370*5+2 = 1852."
+      },
+      {
+        "q": 8,
+        "topic": "Number series",
+        "question": "Find the missing or wrong number in the given number series:\n5, 11, 24, 51, 106, ?",
+        "options": {
+          "A": "210",
+          "B": "217",
+          "C": "222",
+          "D": "235"
+        },
+        "correct": "B",
+        "explanation": "Pattern is multiplying by 2 and adding an increasing sequence: 5*2+1 = 11, 11*2+2 = 24, 24*2+3 = 51, 51*2+4 = 106. Next term = 106*2+5 = 217."
+      },
+      {
+        "q": 9,
+        "topic": "Number series",
+        "question": "Find the missing or wrong number in the given number series:\n220, 200, 182, 166, 152, ?",
+        "options": {
+          "A": "138",
+          "B": "142",
+          "C": "145",
+          "D": "140"
+        },
+        "correct": "D",
+        "explanation": "Differences are decreasing by 2: 220-20=200, 200-18=182, 182-16=166, 166-14=152. Next difference = 12. Next term = 152-12 = 140."
+      },
+      {
+        "q": 10,
+        "topic": "Number series",
+        "question": "Find the missing or wrong number in the given number series:\n3, 4, 10, 33, 136, ?",
+        "options": {
+          "A": "545",
+          "B": "620",
+          "C": "675",
+          "D": "685"
+        },
+        "correct": "D",
+        "explanation": "Pattern is multiplying by position index and adding increasing sequence: 3*1+1=4, 4*2+2=10, 10*3+3=33, 33*4+4=136. Next term = 136*5+5 = 685."
+      },
+      {
+        "q": 11,
+        "topic": "Number series",
+        "question": "Find the missing or wrong number in the given number series:\n8, 12, 24, 60, 180, ?",
+        "options": {
+          "A": "540",
+          "B": "630",
+          "C": "720",
+          "D": "810"
+        },
+        "correct": "B",
+        "explanation": "Multipliers are in AP by 0.5: 8*1.5=12, 12*2=24, 24*2.5=60, 60*3=180. Next multiplier = 3.5. Next term = 180*3.5 = 630."
+      },
+      {
+        "q": 12,
+        "topic": "Number series",
+        "question": "Find the missing or wrong number in the given number series:\n15, 19, 28, 44, 69, ?",
+        "options": {
+          "A": "95",
+          "B": "98",
+          "C": "105",
+          "D": "112"
+        },
+        "correct": "C",
+        "explanation": "Differences are consecutive squares: +4, +9, +16, +25. Next difference = 36. Next term = 69+36 = 105."
+      },
+      {
+        "q": 13,
+        "topic": "Quadratic equations",
+        "question": "I. x² - 15x + 56 = 0\nII. y² - 17y + 72 = 0",
+        "options": {
+          "A": "x less than or equal to y",
+          "B": "x greater than y",
+          "C": "x less than y",
+          "D": "Relationship cannot be established"
+        },
+        "correct": "A",
+        "explanation": "For equation I: x = 7, 8. For equation II: y = 8, 9. Comparing roots: 7 <= 8, 7 < 9, 8 <= 8, 8 < 9. Thus, x <= y."
+      },
+      {
+        "q": 14,
+        "topic": "Quadratic equations",
+        "question": "I. x² - 9x + 20 = 0\nII. y² - 11y + 24 = 0",
+        "options": {
+          "A": "x greater than y",
+          "B": "x less than y",
+          "C": "Relationship cannot be established",
+          "D": "x greater than or equal to y"
+        },
+        "correct": "C",
+        "explanation": "Equation I: x = 4, 5. Equation II: y = 3, 8. Comparing roots shows they overlap (4 > 3, 4 < 8), so relationship cannot be established."
+      },
+      {
+        "q": 15,
+        "topic": "Quadratic equations",
+        "question": "I. x² = 81\nII. y² - 18y + 81 = 0",
+        "options": {
+          "A": "x greater than y",
+          "B": "x less than y",
+          "C": "x greater than or equal to y",
+          "D": "Relationship cannot be established between x and y"
+        },
+        "correct": "D",
+        "explanation": "Equation I: x = +9, -9. Equation II: y = 9. Comparing: 9 = 9, -9 < 9. Thus, relationship cannot be established."
+      },
+      {
+        "q": 16,
+        "topic": "Quadratic equations",
+        "question": "I. x² - 11x + 30 = 0\nII. y² - 13y + 42 = 0",
+        "options": {
+          "A": "x less than or equal to y",
+          "B": "x greater than y",
+          "C": "x less than y",
+          "D": "Relationship cannot be established"
+        },
+        "correct": "A",
+        "explanation": "Equation I: x = 5, 6. Equation II: y = 6, 7. Comparing roots: 5 < 6, 5 < 7, 6 = 6, 6 < 7. Thus, x <= y."
+      },
+      {
+        "q": 17,
+        "topic": "Quadratic equations",
+        "question": "I. 3x² + 10x + 8 = 0\nII. 2y² + 11y + 12 = 0",
+        "options": {
+          "A": "Relationship cannot be established between x and y",
+          "B": "x greater than y",
+          "C": "x less than y",
+          "D": "x greater than or equal to y"
+        },
+        "correct": "A",
+        "explanation": "Equation I roots: x = -2, -1.33. Equation II roots: y = -4, -1.5. Roots cross, so relationship cannot be established."
+      },
+      {
+        "q": 18,
+        "topic": "Quadratic equations",
+        "question": "I. x² - 7x + 12 = 0\nII. y² - 5y + 6 = 0",
+        "options": {
+          "A": "x greater than or equal to y",
+          "B": "x less than y",
+          "C": "x greater than y",
+          "D": "Relationship cannot be established"
+        },
+        "correct": "A",
+        "explanation": "Equation I: x = 3, 4. Equation II: y = 2, 3. Comparing roots: 3 >= 2, 3 = 3, 4 > 2, 4 > 3. Thus, x >= y."
+      },
+      {
+        "q": 19,
+        "topic": "Quadratic equations",
+        "question": "I. x² - 12x + 35 = 0\nII. y² - 11y + 28 = 0",
+        "options": {
+          "A": "x less than or equal to y",
+          "B": "x greater than y",
+          "C": "x less than y",
+          "D": "Relationship cannot be established"
+        },
+        "correct": "D",
+        "explanation": "Equation I: x = 5, 7. Equation II: y = 4, 7. Comparing: 5 > 4, 5 < 7, 7 > 4, 7 = 7. Roots cross, so relationship cannot be established."
+      },
+      {
+        "q": 20,
+        "topic": "Approximation",
+        "question": "(1499.85 ÷ 24.95) + √576.25 - 15.15 = ?",
+        "options": {
+          "A": "55",
+          "B": "62",
+          "C": "69",
+          "D": "75"
+        },
+        "correct": "C",
+        "explanation": "Approximating: 1500/25 = 60. Square root of 576 = 24. Expression: 60+24-15 = 69."
+      },
+      {
+        "q": 21,
+        "topic": "Approximation",
+        "question": "35.85 percent of 450.25 + 64.15 percent of 750.50 - 325.40 = ?",
+        "options": {
+          "A": "280",
+          "B": "317",
+          "C": "345",
+          "D": "380"
+        },
+        "correct": "B",
+        "explanation": "0.36*450 = 162. 0.64*750 = 480. Sum = 642. 642-325 = 317."
+      },
+      {
+        "q": 22,
+        "topic": "Approximation",
+        "question": "(15.22 × 18.78) + (24.05 × 14.95) - 349.85 = ?",
+        "options": {
+          "A": "220",
+          "B": "255",
+          "C": "275",
+          "D": "295"
+        },
+        "correct": "D",
+        "explanation": "15*19 = 285. 24*15 = 360. 285+360-350 = 295."
+      },
+      {
+        "q": 23,
+        "topic": "Approximation",
+        "question": "∛1728.45 + (18.05²) - 215.15 = ?",
+        "options": {
+          "A": "121",
+          "B": "135",
+          "C": "142",
+          "D": "150"
+        },
+        "correct": "A",
+        "explanation": "Cube root of 1728 = 12. 18^2 = 324. 12+324-215 = 121."
+      },
+      {
+        "q": 24,
+        "topic": "Approximation",
+        "question": "(56.25 percent of 800.40) + (45.15 percent of 600.80) - 245.50 = ?",
+        "options": {
+          "A": "415",
+          "B": "474",
+          "C": "520",
+          "D": "560"
+        },
+        "correct": "B",
+        "explanation": "0.5625*800 = 450. 0.45*600 = 270. 450+270-246 = 474."
+      },
+      {
+        "q": 25,
+        "topic": "Approximation",
+        "question": "(12.5 × 16.4) + (24.8 × 12.2) - 180.5 = ?",
+        "options": {
+          "A": "345",
+          "B": "320",
+          "C": "370",
+          "D": "395"
+        },
+        "correct": "B",
+        "explanation": "12.5*16 = 200. 24.8*12.2 = 302.56 ~ 300. 200+300-180 = 320."
+      },
+      {
+        "q": 26,
+        "topic": "Approximation",
+        "question": "(624.75 ÷ 24.85) + √729.15 × 12.10 = ?",
+        "options": {
+          "A": "351",
+          "B": "375",
+          "C": "405",
+          "D": "430"
+        },
+        "correct": "A",
+        "explanation": "625/25 = 25. sqrt(729) = 27. 27*12 = 324. 25+324 = 351."
+      },
+      {
+        "q": 27,
+        "topic": "Profit and loss",
+        "question": "A shopkeeper marks up his goods by 50 percent above the cost price and offers a successive discount of 20 percent on the marked price. If he earns a net profit of Rs. 400, what is the cost price of the article?",
+        "options": {
+          "A": "Rs. 1,500",
+          "B": "Rs. 1,750",
+          "C": "Rs. 1,850",
+          "D": "Rs. 2,000"
+        },
+        "correct": "D",
+        "explanation": "Let CP = 100x. MP = 150x. Discount = 20% on 150x = 30x. SP = 120x. Profit = 20x = Rs. 400. Thus, x = 20. CP = 100*20 = Rs. 2,000."
+      },
+      {
+        "q": 28,
+        "topic": "Ratio and proportion",
+        "question": "The present age ratio of father to son is 7:3. After 10 years, the age ratio of father to son will become 9:5. What is the present age of the father?",
+        "options": {
+          "A": "35 years",
+          "B": "42 years",
+          "C": "49 years",
+          "D": "56 years"
+        },
+        "correct": "A",
+        "explanation": "Let present ages be 7x and 3x. (7x+10)/(3x+10) = 9/5 -> 35x+50 = 27x+90 -> 8x = 40 -> x = 5. Father present age = 7*5 = 35 years."
+      },
+      {
+        "q": 29,
+        "topic": "Time, speed and distance",
+        "question": "A boat can travel 24 km downstream and 16 km upstream in 6 hours. It can also travel 36 km downstream and 24 km upstream in 9 hours. What is the speed of the stream in km/hr?",
+        "options": {
+          "A": "2 km/hr",
+          "B": "3 km/hr",
+          "C": "4 km/hr",
+          "D": "5 km/hr"
+        },
+        "correct": "C",
+        "explanation": "Let downstream speed = D, upstream speed = U. 24/D + 16/U = 6 and 36/D + 24/U = 9. Solving these equations yields D = 12 km/hr and U = 4 km/hr. Speed of the stream = (D-U)/2 = (12-4)/2 = 4 km/hr."
+      },
+      {
+        "q": 30,
+        "topic": "Time and work",
+        "question": "Pipe A can fill an empty tank in 12 hours, while Pipe B can fill it in 15 hours. Pipe C can empty the full tank in 20 hours. If all three pipes are opened simultaneously, in how many hours will the tank be completely filled?",
+        "options": {
+          "A": "10 hours",
+          "B": "12 hours",
+          "C": "15 hours",
+          "D": "18 hours"
+        },
+        "correct": "A",
+        "explanation": "Total capacity = LCM(12,15,20) = 60 units. Efficiency of A = +5, B = +4, C = -3. Net efficiency = 5+4-3 = 6 units/hr. Time taken = 60/6 = 10 hours."
+      },
+      {
+        "q": 31,
+        "topic": "Simple and compound interest",
+        "question": "A sum of money invested at simple interest amounts to Rs. 2,400 in 2 years and Rs. 2,800 in 4 years. What is the annual rate of interest?",
+        "options": {
+          "A": "8 percent",
+          "B": "10 percent",
+          "C": "12 percent",
+          "D": "15 percent"
+        },
+        "correct": "B",
+        "explanation": "Simple interest for 2 years = 2,800-2,400 = Rs. 400. Simple interest for 1 year = Rs. 200. Principal = 2,400-400 = Rs. 2,000. Rate = (200/2,000)*100 = 10 percent."
+      },
+      {
+        "q": 32,
+        "topic": "Average",
+        "question": "The average weight of 30 students in a class is 45 kg. If the weight of the teacher is included, the average weight increases by 1 kg. What is the weight of the teacher?",
+        "options": {
+          "A": "72 kg",
+          "B": "74 kg",
+          "C": "76 kg",
+          "D": "80 kg"
+        },
+        "correct": "C",
+        "explanation": "Total weight of 30 students = 1,350 kg. Total weight of 31 persons = 31*46 = 1,426 kg. Weight of teacher = 1,426-1,350 = 76 kg."
+      },
+      {
+        "q": 33,
+        "topic": "Mixture and allegation",
+        "question": "A mixture of 80 liters contains milk and water in the ratio 3:1. How much water must be added to the mixture so that the ratio of milk to water becomes 2:1?",
+        "options": {
+          "A": "6 liters",
+          "B": "8 liters",
+          "C": "10 liters",
+          "D": "12 liters"
+        },
+        "correct": "C",
+        "explanation": "Initial milk = 60 liters, water = 20 liters. Let x liters of water be added. 60/(20+x) = 2/1 -> 60 = 40+2x -> x = 10 liters."
+      },
+      {
+        "q": 34,
+        "topic": "Time, speed and distance",
+        "question": "A person covers a certain distance at a speed of 60 km/hr and returns at a speed of 40 km/hr. What is the average speed of the entire journey?",
+        "options": {
+          "A": "45 km/hr",
+          "B": "48 km/hr",
+          "C": "50 km/hr",
+          "D": "52 km/hr"
+        },
+        "correct": "B",
+        "explanation": "Average speed = (2*60*40)/(60+40) = 4,800/100 = 48 km/hr."
+      },
+      {
+        "q": 35,
+        "topic": "Profit and loss",
+        "question": "A invests Rs. 15,000 for 8 months and B invests Rs. 20,000 for 6 months in a business. If the total annual profit is Rs. 7,000, what is the share of A in the profit?",
+        "options": {
+          "A": "Rs. 3,000",
+          "B": "Rs. 3,200",
+          "C": "Rs. 3,350",
+          "D": "Rs. 3,500"
+        },
+        "correct": "D",
+        "explanation": "A's capital-time product = 120,000. B's capital-time product = 120,000. Ratio = 1:1. A's share = 1/2*7,000 = Rs. 3,500."
+      }
+    ],
+    "Reasoning Ability": [
+      {
+        "q": 1,
+        "topic": "Circular seating",
+        "question": "Eight persons P, Q, R, S, T, U, V, and W are sitting in a straight row facing north. Only two persons sit between R and V. R sits at one of the extreme ends. S sits second to the left of V. Only three persons sit between S and Q. T sits immediate right of Q. U sits third to the left of P. Who sits at the extreme right end?",
+        "options": {
+          "A": "T",
+          "B": "W",
+          "C": "U",
+          "D": "P",
+          "E": "Q"
+        },
+        "correct": "A",
+        "explanation": "Arrangement from left to right: R, W, V, U, S, P, Q, T. T sits at the extreme right end."
+      },
+      {
+        "q": 2,
+        "topic": "Box puzzles",
+        "question": "Seven boxes A, B, C, D, E, F, and G are kept one above another. F is kept above A. Only three boxes are between F and E. G is kept immediately below E. C is kept below G. B is kept immediately above D. Which box is kept at the topmost position?",
+        "options": {
+          "A": "A",
+          "B": "F",
+          "C": "B",
+          "D": "E",
+          "E": "C"
+        },
+        "correct": "B",
+        "explanation": "The vertical arrangement from top to bottom is: F, B, D, A, E, G, C. Box F is at the top."
+      },
+      {
+        "q": 3,
+        "topic": "Order and ranking",
+        "question": "Five persons A, B, C, D, and E have different heights. B is taller than A but shorter than D. C is the shortest. E is taller than D. Who is the second tallest person?",
+        "options": {
+          "A": "A",
+          "B": "B",
+          "C": "D",
+          "D": "E",
+          "E": "Cannot be determined"
+        },
+        "correct": "C",
+        "explanation": "Height order in descending: E > D > B > A > C. D is the second tallest."
+      },
+      {
+        "q": 4,
+        "topic": "Scheduling",
+        "question": "Seven persons A, B, C, D, E, F, and G attend seminars on seven different days of the same week starting from Monday to Sunday. E attends on Wednesday. Only two persons attend between E and F. A attends immediately before G. G attends after F. B attends before D. C attends on Tuesday. Who attends the seminar on Monday?",
+        "options": {
+          "A": "E",
+          "B": "C",
+          "C": "D",
+          "D": "B",
+          "E": "F"
+        },
+        "correct": "D",
+        "explanation": "Step-by-step deduction: C is on Tuesday and E is on Wednesday. With only two persons between E (Wednesday) and F, F must be on Saturday. Since A attends immediately before G and both are after F, A is on Thursday and G is on Friday. This leaves Sunday for D and Monday for B, yielding a uniquely determined schedule."
+      },
+      {
+        "q": 5,
+        "topic": "Circular seating",
+        "question": "Certain number of persons are sitting in a linear row facing north. M sits fourth to the left of N. Only two persons sit between M and O. P sits immediate right of O. Q sits fourth to the right of P. How many minimum persons are seated in the row?",
+        "options": {
+          "A": "10",
+          "B": "13",
+          "C": "12",
+          "D": "9",
+          "E": "11"
+        },
+        "correct": "E",
+        "explanation": "Positional derivation step-by-step: 1) Let M be at position 4. 2) Since M sits fourth to the left of N, N is at position 8. 3) With two persons between M (4) and O, O is placed at position 1. 4) P is immediate right of O, placing P at position 2. 5) Q is fourth to the right of P, placing Q at position 6. The total span ranges from position 1 to position 11, giving a minimum of 11 persons."
+      },
+      {
+        "q": 6,
+        "topic": "Circular seating",
+        "question": "Six persons L, M, N, O, P, and Q are sitting around a circular table facing towards the center. M sits second to the left of L. Q sits immediate right of M. N sits between P and L. Who sits immediate left of P?",
+        "options": {
+          "A": "O",
+          "B": "N",
+          "C": "Q",
+          "D": "M",
+          "E": "L"
+        },
+        "correct": "A",
+        "explanation": "Arranging them clockwise: L, N, P, O, M, Q. O sits immediate left of P."
+      },
+      {
+        "q": 7,
+        "topic": "Floor puzzles",
+        "question": "Four persons W, X, Y, Z live on different floors of a 4-floor building where ground floor is 1 and top floor is 4. Z lives on an even-numbered floor. W lives immediately above Z. X lives below Y. Who lives on the topmost floor?",
+        "options": {
+          "A": "X",
+          "B": "W",
+          "C": "Y",
+          "D": "Z",
+          "E": "Cannot be determined"
+        },
+        "correct": "B",
+        "explanation": "Floor 4: W, Floor 3: Z, Floor 2: Y, Floor 1: X. W lives on the topmost floor."
+      },
+      {
+        "q": 8,
+        "topic": "Linear seating",
+        "question": "In a row of students, X is 15th from the left end and Y is 12th from the right end. If they interchange their positions, X becomes 20th from the left end. How many total students are there in the row?",
+        "options": {
+          "A": "30",
+          "B": "32",
+          "C": "31",
+          "D": "33",
+          "E": "35"
+        },
+        "correct": "C",
+        "explanation": "Total students = (New position of X from left) + (Original position of Y from right) - 1 = 20 + 12 - 1 = 31."
+      },
+      {
+        "q": 9,
+        "topic": "Floor puzzles",
+        "question": "Six persons P, Q, R, S, T, and U live on a 3-floor building numbered 1 to 3 from bottom to top. Each floor has two flats: Flat-X (west of Flat-Y). Flat-X of floor 2 is immediately above Flat-X of floor 1. P lives west of Q on floor 1. R lives immediately above P in Flat-X. S lives on an even-numbered floor in Flat-Y. T lives above S. Who lives on Flat-Y of floor 3?",
+        "options": {
+          "A": "P",
+          "B": "Q",
+          "C": "R",
+          "D": "U",
+          "E": "T"
+        },
+        "correct": "E",
+        "explanation": "Step-by-step derivation: 1) P is on floor 1, Flat-X, and Q is on floor 1, Flat-Y. 2) R lives immediately above P in Flat-X (Floor 2, Flat-X). 3) S lives on an even-numbered floor in Flat-Y (Floor 2, Flat-Y). 4) T lives above S, placing T on Floor 3, Flat-Y. 5) U occupies the remaining slot (Floor 3, Flat-X). Thus, T lives on Flat-Y of floor 3."
+      },
+      {
+        "q": 10,
+        "topic": "Syllogism",
+        "question": "Statements: All cars are buses. Some buses are trucks. No truck is a train.\nConclusions:\nI. Some cars are trucks.\nII. No train is a bus.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Neither conclusion I nor II follows",
+          "D": "Either conclusion I or II follows",
+          "E": "Both conclusions I and II follow"
+        },
+        "correct": "C",
+        "explanation": "Neither conclusion directly follows from the given statements with absolute certainty."
+      },
+      {
+        "q": 11,
+        "topic": "Syllogism",
+        "question": "Statements: Some pens are pencils. All pencils are erasers. No eraser is a marker.\nConclusions:\nI. Some pens are not markers.\nII. No pencil is a marker.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Either conclusion I or II follows",
+          "D": "Both conclusions I and II follow",
+          "E": "Neither conclusion I nor II follows"
+        },
+        "correct": "D",
+        "explanation": "Since all pencils are erasers and no eraser is a marker, no pencil can be a marker (II follows). Also, the pens that are pencils cannot be markers (I follows)."
+      },
+      {
+        "q": 12,
+        "topic": "Syllogism",
+        "question": "Statements: All apples are mangoes. All mangoes are grapes. Some grapes are oranges.\nConclusions:\nI. Some apples are grapes.\nII. Some mangoes are oranges.",
+        "options": {
+          "A": "Both conclusions I and II follow",
+          "B": "Only conclusion II follows",
+          "C": "Either conclusion I or II follows",
+          "D": "Neither conclusion I nor II follows",
+          "E": "Only conclusion I follows"
+        },
+        "correct": "E",
+        "explanation": "All apples are mangoes and all mangoes are grapes, so all apples are grapes making 'Some apples are grapes' true. II does not necessarily follow."
+      },
+      {
+        "q": 13,
+        "topic": "Syllogism",
+        "question": "Statements: All bags are books. Some books are pens. No pen is a paper.\nConclusions:\nI. Some bags are pens.\nII. No bag is a pen.",
+        "options": {
+          "A": "Either conclusion I or II follows",
+          "B": "Only conclusion II follows",
+          "C": "Only conclusion I follows",
+          "D": "Neither conclusion I nor II follows",
+          "E": "Both conclusions I and II follow"
+        },
+        "correct": "A",
+        "explanation": "Either some bags are pens or no bag is a pen forms a complementary pair, satisfying 'Either I or II follows'."
+      },
+      {
+        "q": 14,
+        "topic": "Syllogism",
+        "question": "Statements: Some tables are chairs. All chairs are desks. Some desks are fans.\nConclusions:\nI. Some tables are desks.\nII. Some chairs are fans.",
+        "options": {
+          "A": "Only conclusion II follows",
+          "B": "Only conclusion I follows",
+          "C": "Either conclusion I or II follows",
+          "D": "Neither conclusion I nor II follows",
+          "E": "Both conclusions I and II follow"
+        },
+        "correct": "B",
+        "explanation": "Since some tables are chairs and all chairs are desks, some tables are definitely desks. Conclusion I follows."
+      },
+      {
+        "q": 15,
+        "topic": "Syllogism",
+        "question": "Statements: A > B = C >= D < E.\nConclusions:\nI. A > D.\nII. B >= E.",
+        "options": {
+          "A": "Either conclusion I or II follows",
+          "B": "Only conclusion II follows",
+          "C": "Only conclusion I follows",
+          "D": "Neither conclusion I nor II follows",
+          "E": "Both conclusions I and II follow"
+        },
+        "correct": "C",
+        "explanation": "A > B = C >= D gives A > D. Between B and E, relation is indeterminate due to opposite signs between D and E."
+      },
+      {
+        "q": 16,
+        "topic": "Syllogism",
+        "question": "Statements: P <= Q < R = S.\nConclusions:\nI. P < S.\nII. Q < S.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Either conclusion I or II follows",
+          "D": "Both conclusions I and II follow",
+          "E": "Neither conclusion I nor II follows"
+        },
+        "correct": "D",
+        "explanation": "P <= Q < R = S implies P < S and Q < S are both true."
+      },
+      {
+        "q": 17,
+        "topic": "Syllogism",
+        "question": "Statements: X > Y >= Z < W.\nConclusions:\nI. X > Z.\nII. Z < W.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Either conclusion I or II follows",
+          "D": "Neither conclusion I nor II follows",
+          "E": "Both conclusions I and II follow"
+        },
+        "correct": "E",
+        "explanation": "X > Y >= Z means X > Z. Also Z < W is directly given in the statement. Both follow."
+      },
+      {
+        "q": 18,
+        "topic": "Syllogism",
+        "question": "Statements: M < N <= O > P.\nConclusions:\nI. M < O.\nII. N < P.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Either conclusion I or II follows",
+          "D": "Neither conclusion I nor II follows",
+          "E": "Both conclusions I and II follow"
+        },
+        "correct": "A",
+        "explanation": "M < N <= O implies M < O. N and P have an opposite sign break, so II does not follow."
+      },
+      {
+        "q": 19,
+        "topic": "Coding-decoding",
+        "question": "If HEALTH is coded as IDBMUI, then how is NORTH coded in that language?",
+        "options": {
+          "A": "MNSIG",
+          "B": "OPSUI",
+          "C": "OQUVI",
+          "D": "NRQUI",
+          "E": "None of these"
+        },
+        "correct": "B",
+        "explanation": "Each letter is shifted forward by +1 position: N->O, O->P, R->S, T->U, H->I. Result is OPSUI."
+      },
+      {
+        "q": 20,
+        "topic": "Coding-decoding",
+        "question": "If TABLE is coded as UCAMF, then how is CHAIR coded in that language?",
+        "options": {
+          "A": "DIJJS",
+          "B": "DIJBS",
+          "C": "DIBJS",
+          "D": "DJIBS",
+          "E": "DHBHS"
+        },
+        "correct": "C",
+        "explanation": "Each letter is shifted forward by +1: C->D, H->I, A->B, I->J, R->S. Result is DIBJS."
+      },
+      {
+        "q": 21,
+        "topic": "Coding-decoding",
+        "question": "In a certain code language, WORK is written as XPSL. How is LIFE written in that language?",
+        "options": {
+          "A": "MJGE",
+          "B": "KJED",
+          "C": "NKHF",
+          "D": "MJGF",
+          "E": "MHGE"
+        },
+        "correct": "D",
+        "explanation": "Each letter is shifted forward by +1: L->M, I->J, F->G, E->F. Result is MJGF."
+      },
+      {
+        "q": 22,
+        "topic": "Coding-decoding",
+        "question": "If APPLE is coded as ELPPA, how is MANGO coded in that language?",
+        "options": {
+          "A": "ONGAM",
+          "B": "AMNGO",
+          "C": "GNOMA",
+          "D": "OGNMA",
+          "E": "OGNAM"
+        },
+        "correct": "E",
+        "explanation": "The word is written in exact reverse order. MANGO reversed is OGNAM."
+      },
+      {
+        "q": 23,
+        "topic": "Coding-decoding",
+        "question": "In a certain code, STUDY is written as TVVEZ. How is EXAM written in that code?",
+        "options": {
+          "A": "FYBN",
+          "B": "FZBN",
+          "C": "EYBN",
+          "D": "FYBO",
+          "E": "GXBN"
+        },
+        "correct": "A",
+        "explanation": "Each letter is shifted forward by +1: E->F, X->Y, A->B, M->N. Result is FYBN."
+      },
+      {
+        "q": 24,
+        "topic": "Coding-decoding",
+        "question": "In a certain code language, sky blue color is written as pit nit sot, blue ink pen is written as rit sot mit, and pen color paper is written as nit mit git. What is the code for color?",
+        "options": {
+          "A": "pit",
+          "B": "sot",
+          "C": "nit",
+          "D": "rit",
+          "E": "mit"
+        },
+        "correct": "C",
+        "explanation": "Comparing sentence 1 and 3, color is common, and the common code is nit. Thus color is coded as nit."
+      },
+      {
+        "q": 25,
+        "topic": "Blood relations",
+        "question": "P is the brother of Q. R is the mother of P. S is the father of R. T is the mother of S. How is P related to T?",
+        "options": {
+          "A": "Grandson",
+          "B": "Great grandson",
+          "C": "Grandfather",
+          "D": "Son",
+          "E": "Nephew"
+        },
+        "correct": "B",
+        "explanation": "T is the mother of S, S is the father of R, R is the mother of P. Therefore, P is the great-grandson of T."
+      },
+      {
+        "q": 26,
+        "topic": "Blood relations",
+        "question": "Pointing to a man, a woman said, 'His mother is the only daughter of my father'. How is the woman related to the man?",
+        "options": {
+          "A": "Sister",
+          "B": "Aunt",
+          "C": "Mother",
+          "D": "Daughter",
+          "E": "Wife"
+        },
+        "correct": "C",
+        "explanation": "The only daughter of the woman's father is the woman herself. Thus, the woman is the mother of the man."
+      },
+      {
+        "q": 27,
+        "topic": "Blood relations",
+        "question": "A is the father of B. C is the daughter of B. D is the brother of C. E is the spouse of A. Who is the grandmother of D?",
+        "options": {
+          "A": "A",
+          "B": "B",
+          "C": "C",
+          "D": "E",
+          "E": "Cannot be determined"
+        },
+        "correct": "D",
+        "explanation": "E is the wife of A, and A is the grandfather of D. Hence, E is the grandmother of D."
+      },
+      {
+        "q": 28,
+        "topic": "Blood relations",
+        "question": "A is the daughter of B. C is the son of A. D is the sister of C. How is D related to B?",
+        "options": {
+          "A": "Sister",
+          "B": "Grandson",
+          "C": "Daughter",
+          "D": "Mother",
+          "E": "Granddaughter"
+        },
+        "correct": "E",
+        "explanation": "B is the parent of A, A is the parent of D. Since D is female, D is the granddaughter of B."
+      },
+      {
+        "q": 29,
+        "topic": "Direction sense",
+        "question": "A person walks 5 km North, then turns East and walks 3 km, then turns South and walks 5 km. How far is he from the starting point?",
+        "options": {
+          "A": "3 km",
+          "B": "8 km",
+          "C": "5 km",
+          "D": "10 km",
+          "E": "2 km"
+        },
+        "correct": "A",
+        "explanation": "The vertical movements cancel out (5 km North and 5 km South). The remaining horizontal displacement is 3 km East."
+      },
+      {
+        "q": 30,
+        "topic": "Direction sense",
+        "question": "A man walks 3 meters North, turns right and walks 4 meters. What is the straight-line distance from the starting point?",
+        "options": {
+          "A": "7 meters",
+          "B": "5 meters",
+          "C": "6 meters",
+          "D": "4 meters",
+          "E": "3 meters"
+        },
+        "correct": "B",
+        "explanation": "Using Pythagoras theorem: square root of (3 squared + 4 squared) = 5 meters."
+      },
+      {
+        "q": 31,
+        "topic": "Alphanumeric series",
+        "question": "How many such pairs of letters are there in the word TERMINAL which have as many letters between them in the word as in the English alphabetical series?",
+        "options": {
+          "A": "None",
+          "B": "One",
+          "C": "Two",
+          "D": "Three",
+          "E": "More than three"
+        },
+        "correct": "D",
+        "explanation": "The pairs are (E, I), (I, L), and (R, T). There are 3 such pairs."
+      },
+      {
+        "q": 32,
+        "topic": "Alphanumeric series",
+        "question": "Which of the following numbers should come next in the series: 2, 6, 12, 20, 30, ?",
+        "options": {
+          "A": "40",
+          "B": "44",
+          "C": "48",
+          "D": "36",
+          "E": "42"
+        },
+        "correct": "E",
+        "explanation": "The differences are consecutive even numbers: +4, +6, +8, +10, +12. Adding 12 to 30 gives 42."
+      },
+      {
+        "q": 33,
+        "topic": "Linear seating",
+        "question": "Find the odd one out from the given options:",
+        "options": {
+          "A": "198",
+          "B": "144",
+          "C": "169",
+          "D": "121",
+          "E": "225"
+        },
+        "correct": "A",
+        "explanation": "121, 144, 169, and 225 are perfect squares. 198 is not a perfect square."
+      },
+      {
+        "q": 34,
+        "topic": "Scheduling",
+        "question": "If 1st January 2023 was a Sunday, what day of the week was 1st January 2024?",
+        "options": {
+          "A": "Sunday",
+          "B": "Monday",
+          "C": "Wednesday",
+          "D": "Thursday",
+          "E": "Tuesday"
+        },
+        "correct": "B",
+        "explanation": "2023 is an ordinary year having 365 days (1 odd day). Sunday + 1 day = Monday."
+      },
+      {
+        "q": 35,
+        "topic": "Alphanumeric series",
+        "question": "Study the following alphanumeric arrangement and answer the question: 5 R 4 $ 9 E % 3 T # 8 A @ 2 K 6 & 1 P. How many such numbers are there which are immediately preceded by a symbol and immediately followed by a letter?",
+        "options": {
+          "A": "None",
+          "B": "Three",
+          "C": "Two",
+          "D": "One",
+          "E": "More than three"
+        },
+        "correct": "D",
+        "explanation": "Checking the sequence: Symbol followed by Number followed by Letter. We find % 3 T satisfies this condition. Only one such combination exists."
+      }
+    ]
+  }
+}

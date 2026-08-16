@@ -1,0 +1,945 @@
+{
+  "paper_id": "GMAT-Paper2",
+  "title": "GMAT Paper 2",
+  "exam": "GMAT",
+  "year": 2026,
+  "subjects": {
+    "Quantitative Reasoning": [
+      {
+        "q": 1,
+        "topic": "Quadratic equations",
+        "question": "If x and y are positive integers such that x^2 - y^2 = 77, what is the value of xy?",
+        "options": {
+          "A": "77",
+          "B": "18",
+          "C": "14",
+          "D": "36",
+          "E": "72"
+        },
+        "correct": "B",
+        "explanation": "x^2 - y^2 = (x-y)(x+y) = 77. The factors of 77 are 1x77 and 7x11. If x+y=11 and x-y=7, x=9, y=2. xy = 18."
+      },
+      {
+        "q": 2,
+        "topic": "Average speed",
+        "question": "A train travels from Station A to Station B at 60 mph and returns at 40 mph. What is the average speed in mph?",
+        "options": {
+          "A": "50",
+          "B": "48",
+          "C": "45",
+          "D": "52",
+          "E": "46"
+        },
+        "correct": "B",
+        "explanation": "Average speed = 2ab/(a+b) = 2(60)(40)/100 = 4800/100 = 48 mph."
+      },
+      {
+        "q": 3,
+        "topic": "Mixtures",
+        "question": "In a mixture of 80 liters, the ratio of milk to water is 7:1. How much water must be added to make the ratio 3:1?",
+        "options": {
+          "A": "13.33 liters",
+          "B": "10 liters",
+          "C": "15 liters",
+          "D": "12 liters",
+          "E": "14 liters"
+        },
+        "correct": "A",
+        "explanation": "Milk = 70L, Water = 10L. For 3:1, water needed = 70/3 = 23.33L. Added = 23.33 - 10 = 13.33L."
+      },
+      {
+        "q": 4,
+        "topic": "Exponents",
+        "question": "What is the units digit of 3^2023?",
+        "options": {
+          "A": "1",
+          "B": "7",
+          "C": "3",
+          "D": "9",
+          "E": "5"
+        },
+        "correct": "B",
+        "explanation": "The units digit of powers of 3 repeats every 4: 3, 9, 7, 1. 2023 mod 4 = 3. The 3rd in cycle is 7."
+      },
+      {
+        "q": 5,
+        "topic": "Arithmetic reasoning",
+        "question": "A committee of 3 is to be formed from 5 men and 4 women. What is the probability it has exactly 2 women?",
+        "options": {
+          "A": "5/21",
+          "B": "1/2",
+          "C": "3/7",
+          "D": "10/21",
+          "E": "8/21"
+        },
+        "correct": "D",
+        "explanation": "Ways to choose 2 women and 1 man = C(4,2)*C(5,1) = 6*5 = 30. Total ways = C(9,3) = 84. Prob = 30/84 = 10/21."
+      },
+      {
+        "q": 6,
+        "topic": "Linear inequalities",
+        "question": "If |2x - 3| < 5, how many integer values can x take?",
+        "options": {
+          "A": "3",
+          "B": "5",
+          "C": "4",
+          "D": "6",
+          "E": "2"
+        },
+        "correct": "C",
+        "explanation": "-5 < 2x - 3 < 5 => -2 < 2x < 8 => -1 < x < 4. Integers: 0, 1, 2, 3 (Total 4)."
+      },
+      {
+        "q": 7,
+        "topic": "Quadratic equations",
+        "question": "What is the sum of the roots of the equation 2x^2 - 12x + 15 = 0?",
+        "options": {
+          "A": "-6",
+          "B": "6",
+          "C": "15",
+          "D": "7.5",
+          "E": "12"
+        },
+        "correct": "B",
+        "explanation": "Sum of roots = -b/a = -(-12)/2 = 6."
+      },
+      {
+        "q": 8,
+        "topic": "Percentages",
+        "question": "A certain stock increased by 20% in year one and decreased by 15% in year two. What is the overall percentage change?",
+        "options": {
+          "A": "5% increase",
+          "B": "2% decrease",
+          "C": "4% increase",
+          "D": "No change",
+          "E": "2% increase"
+        },
+        "correct": "E",
+        "explanation": "100 * 1.2 * 0.85 = 102. Overall change is 2% increase."
+      },
+      {
+        "q": 9,
+        "topic": "Arithmetic reasoning",
+        "question": "If the perimeter of a rectangle is 40 and its diagonal is 10*sqrt(2), what is its area?",
+        "options": {
+          "A": "150",
+          "B": "200",
+          "C": "50",
+          "D": "100",
+          "E": "120"
+        },
+        "correct": "D",
+        "explanation": "L+W=20. L^2+W^2=200. (L+W)^2 = 400. 2LW = 400 - 200 = 200. LW = 100."
+      },
+      {
+        "q": 10,
+        "topic": "Prime numbers",
+        "question": "If n is an integer such that 10 < n < 20, and n is a prime number, what is the product of all possible values of n?",
+        "options": {
+          "A": "11 * 13 * 17 * 19 = 46189",
+          "B": "11 * 13 * 17 = 2431",
+          "C": "13 * 17 * 19 = 4199",
+          "D": "11 * 17 * 19 = 3553",
+          "E": "11 * 13 = 143"
+        },
+        "correct": "A",
+        "explanation": "Primes between 10 and 20 are 11, 13, 17, 19. Product is 46189."
+      },
+      {
+        "q": 11,
+        "topic": "Combined work",
+        "question": "Machine A produces a batch in 4 hours, Machine B in 6 hours. How long in hours will they take working together?",
+        "options": {
+          "A": "2.5",
+          "B": "5",
+          "C": "3.2",
+          "D": "2.4",
+          "E": "2.8"
+        },
+        "correct": "D",
+        "explanation": "Rate = 1/4 + 1/6 = 5/12 per hour. Time = 12/5 = 2.4 hours."
+      },
+      {
+        "q": 12,
+        "topic": "Exponents",
+        "question": "What is the greatest common divisor of 120 and 150?",
+        "options": {
+          "A": "10",
+          "B": "30",
+          "C": "15",
+          "D": "60",
+          "E": "50"
+        },
+        "correct": "B",
+        "explanation": "120 = 2^3 * 3 * 5, 150 = 2 * 3 * 5^2. GCD = 2 * 3 * 5 = 30."
+      },
+      {
+        "q": 13,
+        "topic": "Exponents",
+        "question": "If 4^(x+1) = 8^(x-1), what is x?",
+        "options": {
+          "A": "3",
+          "B": "4",
+          "C": "2",
+          "D": "5",
+          "E": "6"
+        },
+        "correct": "D",
+        "explanation": "2^(2x+2) = 2^(3x-3). 2x+2 = 3x-3. x=5."
+      },
+      {
+        "q": 14,
+        "topic": "Weighted average",
+        "question": "The sequence a_n is defined as a_n = a_(n-1) + 3, with a_1 = 2. What is a_50?",
+        "options": {
+          "A": "150",
+          "B": "152",
+          "C": "149",
+          "D": "147",
+          "E": "151"
+        },
+        "correct": "C",
+        "explanation": "a_n = 2 + (n-1)*3. a_50 = 2 + 49*3 = 2 + 147 = 149."
+      },
+      {
+        "q": 15,
+        "topic": "Arithmetic reasoning",
+        "question": "A right triangle has legs of length 5 and 12. What is the length of the altitude drawn to the hypotenuse?",
+        "options": {
+          "A": "12/5",
+          "B": "60/13",
+          "C": "13/2",
+          "D": "30/13",
+          "E": "10/3"
+        },
+        "correct": "B",
+        "explanation": "Hypotenuse = 13. Area = 0.5 * 5 * 12 = 30. Also Area = 0.5 * 13 * h. h = 60/13."
+      },
+      {
+        "q": 16,
+        "topic": "Quadratic equations",
+        "question": "If x + 1/x = 4, what is the value of x^2 + 1/x^2?",
+        "options": {
+          "A": "16",
+          "B": "14",
+          "C": "12",
+          "D": "18",
+          "E": "8"
+        },
+        "correct": "B",
+        "explanation": "(x + 1/x)^2 = 16 => x^2 + 2 + 1/x^2 = 16 => x^2 + 1/x^2 = 14."
+      },
+      {
+        "q": 17,
+        "topic": "Factors and multiples",
+        "question": "How many trailing zeros are in 50!?",
+        "options": {
+          "A": "10",
+          "B": "11",
+          "C": "12",
+          "D": "14",
+          "E": "15"
+        },
+        "correct": "C",
+        "explanation": "Trailing zeros = 50//5 + 50//25 = 10 + 2 = 12."
+      },
+      {
+        "q": 18,
+        "topic": "Simple interest",
+        "question": "At simple interest, a sum doubles in 8 years. What is the annual interest rate?",
+        "options": {
+          "A": "10%",
+          "B": "8%",
+          "C": "15%",
+          "D": "12.5%",
+          "E": "12.0%"
+        },
+        "correct": "D",
+        "explanation": "I = P. P = P * r * 8 / 100. r = 100/8 = 12.5%."
+      },
+      {
+        "q": 19,
+        "topic": "Exponents",
+        "question": "If a set has 5 elements, how many subsets does it have?",
+        "options": {
+          "A": "25",
+          "B": "10",
+          "C": "32",
+          "D": "16",
+          "E": "64"
+        },
+        "correct": "C",
+        "explanation": "Number of subsets = 2^n = 2^5 = 32."
+      },
+      {
+        "q": 20,
+        "topic": "Arithmetic reasoning",
+        "question": "A polygon has 35 diagonals. How many sides does it have?",
+        "options": {
+          "A": "9",
+          "B": "10",
+          "C": "12",
+          "D": "8",
+          "E": "11"
+        },
+        "correct": "B",
+        "explanation": "n(n-3)/2 = 35 => n^2 - 3n - 70 = 0 => (n-10)(n+7) = 0. n = 10."
+      },
+      {
+        "q": 21,
+        "topic": "Distance-time problems",
+        "question": "In coordinate geometry, what is the distance between (3, 4) and (-3, -4)?",
+        "options": {
+          "A": "10",
+          "B": "8",
+          "C": "12",
+          "D": "14",
+          "E": "6"
+        },
+        "correct": "A",
+        "explanation": "Distance = sqrt((-3-3)^2 + (-4-4)^2) = sqrt(36 + 64) = 10."
+      }
+    ],
+    "Verbal Reasoning": [
+      {
+        "q": 1,
+        "topic": "Purpose",
+        "question": "The primary purpose of the passage is to:",
+        "options": {
+          "A": "Compare the weather of HD 189733b with that of Earth in detail.",
+          "B": "Argue that silicate particles are common in exoplanet atmospheres.",
+          "C": "Explain the mechanism behind star proximity and planetary heat.",
+          "D": "Describe a unique atmospheric phenomenon on a specific exoplanet.",
+          "E": "Suggest that Earth's water cycle is less extreme than glass rain."
+        },
+        "correct": "D",
+        "explanation": "The passage introduces the planet, describes its unique weather ('glass rain' driven by extreme heat and silicate condensation), and highlights how it differs from our solar system models.",
+        "passage": "In the burgeoning field of exoplanetary meteorology, recent astrophysical observations of the \"Hot Jupiter\" exoplanet HD 189733b have unveiled atmospheric phenomena that drastically challenge terrestrial meteorological models. Located approximately 64 light-years from Earth, HD 189733b orbits its host star at a distance of merely 3 million miles, completing a revolution in just 2.2 Earth days. This extreme proximity subjects the planet's dayside to blistering temperatures exceeding 1,700 degrees Celsius, resulting in severe tidal locking where one hemisphere perpetually faces the star while the other remains in darkness. The resulting thermal gradient between the dayside and nightside generates supersonic winds estimated at 5,400 miles per hour, capable of sweeping atmospheric particulates across the globe. Most notably, spectroscopic data indicates a high concentration of silicate particles suspended in the atmosphere. Under the planet's extreme thermal and kinetic conditions, these silicates condense into airborne glass, which is then driven sideways by the ferocity of the winds. Consequently, HD 189733b experiences a harrowing form of precipitation: lateral 'glass rain.' Unlike Earth's weather systems, which are fundamentally driven by the phase changes of water within a relatively narrow temperature range, the climate of HD 189733b is governed by the sublimation and condensation of rock-forming minerals. This stark contrast highlights the vast diversity of atmospheric dynamics in the cosmos. While terrestrial models emphasize thermodynamic cycles of water, understanding hot gas giants necessitates a paradigm shift toward high-energy thermochemical hydrodynamics, suggesting that our solar system's weather paradigms are but a narrow subset of possible planetary climates."
+      },
+      {
+        "q": 2,
+        "topic": "Supporting idea",
+        "question": "Based on the passage, which of the following is true about HD 189733b?",
+        "options": {
+          "A": "It is the only exoplanet known to have silicate particles.",
+          "B": "Its winds are slower than those on Earth.",
+          "C": "Water cycles play a minor role in its extreme weather.",
+          "D": "Its weather is strongly influenced by how close it is to its star.",
+          "E": "It is located within our solar system."
+        },
+        "correct": "D",
+        "explanation": "The passage explicitly states its climate is governed by extreme heat and thermal gradients caused by its 'extreme proximity' (merely 3 million miles) to its host star."
+      },
+      {
+        "q": 3,
+        "topic": "Purpose",
+        "question": "The author mentions Earth's weather primarily in order to:",
+        "options": {
+          "A": "Prove that water cycles are essential for planetary weather.",
+          "B": "Illustrate the universal nature of extreme atmospheric conditions.",
+          "C": "Demonstrate that 'glass rain' could eventually happen on Earth.",
+          "D": "Contrast it with the atmospheric dynamics of HD 189733b.",
+          "E": "Highlight the lack of silicate particles in Earth's atmosphere."
+        },
+        "correct": "D",
+        "explanation": "Earth is mentioned to say 'Unlike Earth's weather systems... the climate of HD 189733b is governed by...' acting as a stark contrast to highlight the diversity of cosmic climates."
+      },
+      {
+        "q": 4,
+        "topic": "Main idea",
+        "question": "Which of the following best summarizes the main idea of the passage?",
+        "options": {
+          "A": "The British industrial revolution generated great wealth but caused significant social inequality.",
+          "B": "Urban centers in 19th-century Britain were poorly planned and disease-ridden.",
+          "C": "The shift from agriculture to industry was a purely positive economic development.",
+          "D": "Factory owners in Britain were primarily responsible for agrarian decline.",
+          "E": "Socioeconomic stratification was the main cause of the industrial revolution."
+        },
+        "correct": "A",
+        "explanation": "The text highlights both the macroeconomic output (triumph/wealth) and the contrasting severe socioeconomic stratifications (hardship and inequality).",
+        "passage": "The advent of the Industrial Revolution in late 18th and 19th-century Britain catalyzed a profound demographic and economic metamorphosis, fundamentally reconfiguring the nation's social architecture. Prior to this epoch, the British economy was overwhelmingly agrarian, characterized by decentralized cottage industries and a population dispersed across rural landscapes. However, the introduction of mechanized manufacturing, particularly in the textile and metallurgical sectors, precipitated a mass migration toward burgeoning urban centers. This unprecedented urbanization fueled an exponential increase in macroeconomic output and established Britain as the paramount global industrial power. Yet, this macroeconomic triumph belied a stark domestic reality: the rapid industrialization engendered severe, systemic socioeconomic stratifications. For the newly formed industrial working class, the transition from rural to urban life was marked by extreme hardship. Laborers, including women and children, were subjected to grueling hours in hazardous, unregulated factory environments. The urban infrastructure, utterly unprepared for the massive influx of migrants, degenerated into overcrowded, squalid slums plagued by poor sanitation and endemic disease. Conversely, the bourgeoisie—comprising factory owners, financiers, and merchants—amassed unprecedented wealth, effectively consolidating political and economic leverage. This stark polarization laid the groundwork for intense class conflict and eventually spurred the genesis of modern labor movements. Consequently, while traditional economic historiography frequently emphasizes the Industrial Revolution as a period of unambiguous technological and financial progress, a more comprehensive socio-historical analysis reveals it as a deeply paradoxical era where national prosperity was inextricably linked to profound individual and collective exploitation."
+      },
+      {
+        "q": 5,
+        "topic": "Inference",
+        "question": "The passage suggests that the economic output of the industrial revolution:",
+        "options": {
+          "A": "Benefited all members of British society equally.",
+          "B": "Was primarily driven by advancements in agrarian technology.",
+          "C": "Was accompanied by poor living conditions for the working class.",
+          "D": "Led to a mass exodus from urban centers to rural areas.",
+          "E": "Prevented the amassing of wealth by factory owners."
+        },
+        "correct": "C",
+        "explanation": "The passage explicitly states that for the industrial working class, urbanization resulted in 'squalid slums plagued by poor sanitation' and 'unregulated factory environments.'"
+      },
+      {
+        "q": 6,
+        "topic": "Inference",
+        "question": "The word 'engendered' in the passage most closely means:",
+        "options": {
+          "A": "Eliminated entirely.",
+          "B": "Produced or caused.",
+          "C": "Hidden or obscured.",
+          "D": "Justified logically.",
+          "E": "Prevented from occurring."
+        },
+        "correct": "B",
+        "explanation": "In context, the rapid industrialization 'engendered' (produced/caused) severe, systemic socioeconomic stratifications."
+      },
+      {
+        "q": 7,
+        "topic": "Inference",
+        "question": "The critics mentioned in the passage would most likely agree with which statement?",
+        "options": {
+          "A": "CSR initiatives always lead to a decrease in long-term financial returns.",
+          "B": "Corporations should completely abandon CSR in favor of traditional marketing.",
+          "C": "Superficial marketing tools are necessary for enhancing brand image.",
+          "D": "Societal benefits cannot be achieved by modern corporations.",
+          "E": "CSR initiatives are most effective when integrated into a company's fundamental business practices."
+        },
+        "correct": "E",
+        "explanation": "Critics argue that CSR fails 'when... decoupled from a company's core operational strategies', implying that embedding it into core practices (like CSV) is the effective approach.",
+        "passage": "In contemporary business administration, Corporate Social Responsibility (CSR) has evolved from a marginal philanthropic endeavor into a prominent fixture of corporate governance. Driven by escalating consumer demand for ethical business practices and heightened scrutiny from investors, modern corporations frequently adopt CSR initiatives ostensibly aimed at addressing environmental sustainability, social equity, and community development. Proponents argue that robust CSR programs can yield significant strategic advantages, including enhanced brand equity, increased customer loyalty, and improved employee retention. However, a growing contingent of management scholars and organizational critics contend that the proliferation of CSR is often performative rather than substantive. This skepticism is largely rooted in the observation that CSR departments are frequently siloed within organizations, entirely decoupled from the company's core operational strategies and supply chain management. When CSR remains a peripheral activity—managed by public relations teams rather than integrated into the C-suite's central decision-making matrix—it tends to function merely as a superficial marketing tool, or 'greenwashing.' Under these circumstances, corporate initiatives rarely challenge the underlying business models that may generate negative externalities, thereby failing to deliver substantial societal benefits. Furthermore, empirical studies on the financial impact of peripheral CSR yield ambiguous results; while it may offer a temporary boost to brand image, it seldom translates into durable, long-term financial returns. Consequently, critics advocate for 'Creating Shared Value' (CSV), a paradigm wherein societal needs are directly embedded into the formulation of the company's core strategic operations, ensuring that profitability and social progress are intrinsically linked rather than loosely associated."
+      },
+      {
+        "q": 8,
+        "topic": "Supporting idea",
+        "question": "According to the passage, what is a common motivation for corporations to adopt CSR?",
+        "options": {
+          "A": "To improve the public perception of their brand.",
+          "B": "To minimize their tax liabilities.",
+          "C": "To transition away from their core operational strategies.",
+          "D": "To silence critics of modern capitalism.",
+          "E": "To directly increase short-term financial returns."
+        },
+        "correct": "A",
+        "explanation": "The passage states CSR is often driven by 'escalating consumer demand' and is used to 'enhance brand equity.'"
+      },
+      {
+        "q": 9,
+        "topic": "Inference",
+        "question": "The passage characterizes unintegrated CSR as:",
+        "options": {
+          "A": "A profound societal reform.",
+          "B": "A financial liability.",
+          "C": "A core operational strategy.",
+          "D": "An unavoidable corporate risk.",
+          "E": "A cosmetic marketing tactic."
+        },
+        "correct": "E",
+        "explanation": "It describes siloed CSR as 'merely a superficial marketing tool, or greenwashing.'"
+      },
+      {
+        "q": 10,
+        "topic": "Inference",
+        "question": "The passage implies that the traditional Darwinian view of forests:",
+        "options": {
+          "A": "Fully accounts for the role of fungi in resource distribution.",
+          "B": "Suggests that older trees are always detrimental to younger seedlings.",
+          "C": "Was based entirely on the study of mycorrhizal networks.",
+          "D": "Ignores the role of water and carbon in plant growth.",
+          "E": "Focuses primarily on the competition for survival among individual plants."
+        },
+        "correct": "E",
+        "explanation": "The passage states that under the traditional Darwinian view, 'individual trees were viewed as solitary competitors locked in a relentless struggle for finite resources.'",
+        "passage": "For over a century, the prevailing paradigm in forest ecology was heavily influenced by a strict Darwinian interpretation of natural selection, wherein individual trees were viewed as solitary competitors locked in a relentless struggle for finite resources such as sunlight, water, and soil nutrients. Under this model, forest dynamics were understood primarily through the lens of competition, with older, dominant trees overshadowing and passively starving younger saplings. However, recent advancements in below-ground ecosystem research have compelled a profound reevaluation of this competitive framework. Central to this paradigm shift is the discovery and subsequent mapping of mycorrhizal networks—complex, subterranean symbiotic associations between soil fungi and the root systems of most vascular plants. These fungal hyphae act as an expansive biological superhighway, functionally connecting the root systems of disparate trees, even those of different species, across vast tracts of forest. Isotope tracing experiments have demonstrated that these networks facilitate a sophisticated, multi-directional transfer of essential resources, including carbon, nitrogen, and water. Crucially, researchers have identified the pivotal role of 'hub trees'—the oldest, most deeply rooted individuals within the forest. Rather than merely hoarding resources, these hub trees actively utilize the mycorrhizal networks to channel excess carbon and nutrients to struggling, shaded seedlings that would otherwise perish. This resource redistribution significantly enhances the overall resilience and regenerative capacity of the forest ecosystem. Consequently, modern ecologists increasingly view forests not merely as arenas of ruthless competition, but as highly integrated, cooperative biological societies where symbiotic resource-sharing is as critical to survival as competitive fitness."
+      },
+      {
+        "q": 11,
+        "topic": "Inference",
+        "question": "What role do 'hub trees' play according to the recent studies mentioned?",
+        "options": {
+          "A": "They compete heavily with seedlings for limited carbon.",
+          "B": "They destroy mycorrhizal networks to survive.",
+          "C": "They rely entirely on seedlings for their nutrient supply.",
+          "D": "They share essential resources with younger plants via fungal connections.",
+          "E": "They prevent the growth of fungi on their roots."
+        },
+        "correct": "D",
+        "explanation": "The text explains that hub trees 'actively utilize the mycorrhizal networks to channel excess carbon and nutrients to struggling, shaded seedlings.'"
+      },
+      {
+        "q": 12,
+        "topic": "Purpose",
+        "question": "The passage primarily serves to:",
+        "options": {
+          "A": "Introduce a scientific finding that alters a long-held ecological perspective.",
+          "B": "Debunk the existence of mycorrhizal networks in modern forests.",
+          "C": "Argue that competition is irrelevant in forest ecosystems.",
+          "D": "Explain the chemical process of carbon transfer in fungi.",
+          "E": "Compare the growth rates of hub trees and seedlings."
+        },
+        "correct": "A",
+        "explanation": "The passage introduces the discovery of mycorrhizal networks and resource sharing to show a 'paradigm shift' away from the strictly competitive traditional view."
+      },
+      {
+        "q": 13,
+        "topic": "Weaken an argument",
+        "question": "A new study shows that people who drink coffee every day are less likely to develop a certain cognitive disease than those who do not. The researchers concluded that coffee consumption prevents the disease. Which of the following, if true, most weakens the researchers' conclusion?",
+        "options": {
+          "A": "People who are in the early, undiagnosed stages of the disease develop a strong aversion to the taste of coffee.",
+          "B": "Coffee contains antioxidants known to have positive effects on brain health.",
+          "C": "The study did not track the consumption of tea, which has similar properties to coffee.",
+          "D": "Most people who drink coffee daily also consume high amounts of sugar.",
+          "E": "The disease is more common in elderly populations than in young populations."
+        },
+        "correct": "A",
+        "explanation": "If the early stages of the disease cause an aversion to coffee, the disease prevents coffee drinking, rather than coffee preventing the disease (reverse causation).",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 14,
+        "topic": "Identify assumptions",
+        "question": "To increase profits, a restaurant manager plans to replace the current expensive brand of olive oil with a cheaper substitute. The manager argues that customers will not notice the difference because the oil is primarily used in strongly flavored dishes. Which of the following is an assumption required by the manager's argument?",
+        "options": {
+          "A": "The cheaper substitute is healthier than the expensive brand of olive oil.",
+          "B": "Customers choose this restaurant primarily for its strongly flavored dishes.",
+          "C": "The cost savings from switching oils will be enough to significantly increase profits.",
+          "D": "The chef is willing to use the cheaper substitute in all dishes.",
+          "E": "The strong flavors in the dishes will mask any difference in taste between the two oils."
+        },
+        "correct": "E",
+        "explanation": "The argument relies on the assumption that the strong flavors successfully hide the oil's taste, thus the customers won't notice.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 15,
+        "topic": "Inference",
+        "question": "In an effort to reduce traffic congestion, the city implemented a toll on the main highway. Traffic on the highway decreased by 20%, but congestion in the city center worsened. Which of the following best explains this paradox?",
+        "options": {
+          "A": "Many people chose to carpool instead of driving alone on the highway.",
+          "B": "The toll was too high for most daily commuters to afford.",
+          "C": "Drivers avoided the toll by taking alternate routes that run directly through the city center.",
+          "D": "The city center has always suffered from severe traffic congestion.",
+          "E": "Public transportation usage increased significantly after the toll was introduced."
+        },
+        "correct": "C",
+        "explanation": "If drivers bypass the highway and use city center roads, highway traffic drops while city center congestion rises, resolving the paradox.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 16,
+        "topic": "Identify flaws",
+        "question": "Dietician: Eating organic foods heavily reduces the intake of harmful pesticides. Therefore, a strictly organic diet guarantees better long-term health than a conventional diet. Which of the following, if true, points out a flaw in the dietician's reasoning?",
+        "options": {
+          "A": "It fails to consider that organic foods can be more expensive.",
+          "B": "It overlooks the fact that some pesticides are derived from natural sources.",
+          "C": "It ignores the taste differences between organic and conventional foods.",
+          "D": "It assumes that pesticide intake is the sole determinant of long-term health.",
+          "E": "It relies on outdated studies regarding conventional farming methods."
+        },
+        "correct": "D",
+        "explanation": "The argument leaps from 'reduces pesticides' to 'guarantees better health', ignoring other health factors like diet balance, sugar, exercise, etc.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 17,
+        "topic": "Inference",
+        "question": "Company X requires its employees to undergo regular cybersecurity training. Despite this, the company experienced a major data breach caused by an employee clicking on a phishing link. The CEO concluded that the training program is completely useless. Which of the following most strongly counters the CEO's conclusion?",
+        "options": {
+          "A": "The phishing link was designed by a highly sophisticated group of hackers.",
+          "B": "The employee who clicked the link had only recently joined the company.",
+          "C": "Without the training, the frequency of employees falling for phishing attacks would have been ten times higher.",
+          "D": "Other companies in the same industry have experienced similar data breaches.",
+          "E": "The cybersecurity training program was inexpensive to implement."
+        },
+        "correct": "C",
+        "explanation": "If the training prevented many other attacks, it is not 'completely useless', even if it didn't prevent this specific one.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 18,
+        "topic": "Inference",
+        "question": "Mayor: We should build a new sports stadium downtown. Not only will it create construction jobs, but it will also revitalize the local economy by attracting tourists. Which of the following, if true, most strongly supports the Mayor's proposal?",
+        "options": {
+          "A": "The proposed stadium will take at least three years to construct.",
+          "B": "Many local residents are opposed to the increased noise a stadium would bring.",
+          "C": "The construction company hired for the project is based in another state.",
+          "D": "The city currently has a budget deficit that must be addressed.",
+          "E": "Cities similar in size to this one experienced a 15% increase in local business revenue after building downtown stadiums."
+        },
+        "correct": "E",
+        "explanation": "Showing that similar cities saw economic boosts supports the claim that the stadium will revitalize the economy.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 19,
+        "topic": "Inference",
+        "question": "Paleontologist: The newly discovered fossil of a feathered dinosaur suggests that flight evolved much earlier than previously thought. However, the feathers on this species are symmetrical, unlike the asymmetrical feathers necessary for sustained flight in modern birds. Therefore, this dinosaur likely used its feathers for gliding rather than powered flight. Which of the following is the main conclusion of the paleontologist's argument?",
+        "options": {
+          "A": "The newly discovered dinosaur likely used its feathers for gliding, not powered flight.",
+          "B": "Flight evolved much earlier than scientists previously believed.",
+          "C": "Asymmetrical feathers are absolutely necessary for powered flight.",
+          "D": "The newly discovered fossil has symmetrical feathers.",
+          "E": "Modern birds are direct descendants of this feathered dinosaur."
+        },
+        "correct": "A",
+        "explanation": "The word 'Therefore' indicates the main conclusion: the dinosaur used feathers for gliding.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 20,
+        "topic": "Identify assumptions",
+        "question": "Analyst: Company Y's stock price will definitely drop next quarter. Their main supplier recently went bankrupt, which will cause a delay in manufacturing, leading to missed sales targets. Which of the following is an assumption on which the analyst's argument depends?",
+        "options": {
+          "A": "Company Y's missed sales targets will immediately become public knowledge.",
+          "B": "Company Y relies exclusively on one product for its revenue.",
+          "C": "Company Y cannot quickly find an alternative supplier to meet its manufacturing needs.",
+          "D": "The bankrupt supplier produced components that are highly specialized.",
+          "E": "Stock prices are entirely dependent on meeting sales targets."
+        },
+        "correct": "C",
+        "explanation": "If they could quickly find an alternative, there wouldn't be a delay. The argument assumes they can't.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 21,
+        "topic": "Application",
+        "question": "Environmentalist: Solar power is a cleaner energy source than coal. We should immediately shut down all coal power plants and replace them with solar panels. Which of the following, if true, most strongly highlights a practical weakness in the environmentalist's plan?",
+        "options": {
+          "A": "Solar panels are becoming cheaper to manufacture every year.",
+          "B": "Coal mining provides thousands of jobs in rural areas.",
+          "C": "The environmentalist owns shares in a major solar panel manufacturer.",
+          "D": "Coal power plants release large amounts of carbon dioxide.",
+          "E": "Solar power generation fluctuates wildly based on weather, whereas coal provides a stable, continuous baseline power supply."
+        },
+        "correct": "E",
+        "explanation": "The weakness is practical feasibility: you can't replace a stable baseline with a wildly fluctuating source without a massive storage solution.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 22,
+        "topic": "Application",
+        "question": "In an experiment, Group A was asked to solve a puzzle in a quiet room, while Group B solved the same puzzle in a noisy room. Group A completed the puzzle faster. The researcher concluded that noise impairs problem-solving ability. Which of the following, if true, offers the best alternative explanation for the results?",
+        "options": {
+          "A": "The puzzle was particularly difficult and required intense concentration.",
+          "B": "The noise in Group B's room consisted of classical music.",
+          "C": "The participants in Group A were all professional puzzle solvers, while those in Group B were beginners.",
+          "D": "The participants were not told the purpose of the experiment.",
+          "E": "Group A was given 10 minutes to solve it, while Group B was given 15 minutes."
+        },
+        "correct": "C",
+        "explanation": "If Group A had higher prior skill, their speed could be due to skill, not the lack of noise, undermining the conclusion.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 23,
+        "topic": "Weaken an argument",
+        "question": "Economist: The government's decision to increase the minimum wage will inevitably lead to higher unemployment. Businesses will simply fire workers to offset the increased labor costs. Which of the following, if true, most weakens the economist's argument?",
+        "options": {
+          "A": "Most businesses operating in the country are large multinational corporations.",
+          "B": "The current minimum wage has not been adjusted for inflation in over a decade.",
+          "C": "Higher minimum wages increase the purchasing power of workers, leading to higher consumer demand and allowing businesses to retain or hire more staff.",
+          "D": "Some businesses will choose to automate their processes rather than fire workers.",
+          "E": "Unemployment rates are currently at a historic low."
+        },
+        "correct": "C",
+        "explanation": "If higher wages boost demand enough that businesses need the staff and can afford them, it breaks the link between wage hikes and unemployment.",
+        "type": "Critical Reasoning"
+      }
+    ],
+    "Data Insights": [
+      {
+        "q": 1,
+        "topic": "Data Sufficiency",
+        "question": "What is the value of integer x?\n\n(1) x^2 = 25\n(2) x > 0",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "EACH statement ALONE is sufficient.",
+          "D": "Statements (1) and (2) TOGETHER are NOT sufficient.",
+          "E": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient."
+        },
+        "correct": "E",
+        "explanation": "1: x could be 5 or -5. 2: x>0. Together: x must be 5. Both needed.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 2,
+        "topic": "Data Sufficiency",
+        "question": "Is triangle ABC a right triangle?\n\n(1) The lengths of the sides are in the ratio 3:4:5.\n(2) The area of the triangle is 6.",
+        "options": {
+          "A": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "B": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "B",
+        "explanation": "1: 3:4:5 satisfies Pythagorean theorem, so it is a right triangle. 2: Infinite triangles have area 6. Stat 1 alone is sufficient.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 3,
+        "topic": "Data Sufficiency",
+        "question": "What is the average speed of a car on a 100-mile trip?\n\n(1) The car travels the first 50 miles at 50 mph.\n(2) The car travels the second 50 miles at 50 mph.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "EACH statement ALONE is sufficient.",
+          "D": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "D",
+        "explanation": "Need total time. 1 gives first half time. 2 gives second half time. Together give total time (2 hrs). Both needed.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 4,
+        "topic": "Data Sufficiency",
+        "question": "What is the value of y?\n\n(1) 2y + x = 10\n(2) 4y + 2x = 20",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "E",
+        "explanation": "Equations are identical. Cannot solve for y. Not sufficient together.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 5,
+        "topic": "Data Sufficiency",
+        "question": "If n is an integer, is n even?\n\n(1) n + 1 is an odd integer.\n(2) n/2 is an integer.",
+        "options": {
+          "A": "EACH statement ALONE is sufficient.",
+          "B": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "C": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "D": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "A",
+        "explanation": "1: n+1 odd => n even. 2: n/2 integer => n is even. Each alone is sufficient.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 6,
+        "topic": "Data Sufficiency",
+        "question": "What is the perimeter of a rectangle?\n\n(1) The area of the rectangle is 48.\n(2) The length of the diagonal is 10.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "C",
+        "explanation": "1: L*W=48. 2: L^2+W^2=100. Together: (L+W)^2 = L^2+W^2 + 2LW = 100 + 96 = 196 => L+W=14 => Perimeter=28. Both needed.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 7,
+        "topic": "Data Sufficiency",
+        "question": "Is x > y?\n\n(1) x = y + 2\n(2) x/y = 2",
+        "options": {
+          "A": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "B": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "C": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "C",
+        "explanation": "1: x-y = 2 => x > y. 2: if y is negative, x < y. Stat 1 alone sufficient.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 8,
+        "topic": "Data Sufficiency",
+        "question": "What is the median of a set of 5 distinct integers?\n\n(1) The average (arithmetic mean) is 10.\n(2) The sum of the numbers is 50.",
+        "options": {
+          "A": "Statements (1) and (2) TOGETHER are NOT sufficient.",
+          "B": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "C": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "D": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "E": "EACH statement ALONE is sufficient."
+        },
+        "correct": "A",
+        "explanation": "1 and 2 give the exact same information (sum=50). Neither tells us the individual values or median. Not sufficient together.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 9,
+        "topic": "Data Sufficiency",
+        "question": "How many employees does a company have?\n\n(1) The ratio of male to female employees is 3:2.\n(2) There are 15 more male employees than female employees.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "C",
+        "explanation": "1: Males=3x, Females=2x. 2: Males = Females + 15. Together: 3x = 2x + 15 => x=15. Total = 5x = 75. Both needed.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 10,
+        "topic": "Data Sufficiency",
+        "question": "Is integer p a prime number?\n\n(1) p is odd.\n(2) p > 2 and p has exactly two distinct positive factors.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "C": "EACH statement ALONE is sufficient.",
+          "D": "Statements (1) and (2) TOGETHER are NOT sufficient.",
+          "E": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient."
+        },
+        "correct": "E",
+        "explanation": "1: Many odd numbers aren't prime. 2: Definition of a prime number. Stat 2 alone sufficient.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 11,
+        "topic": "Multi-Source Reasoning",
+        "question": "Based on the scenario, why did TechCorp's profits fall despite revenue growth?",
+        "options": {
+          "A": "Because their competitors launched better products.",
+          "B": "Because the investor demanded a 10% margin.",
+          "C": "Because their overall revenue actually decreased.",
+          "D": "Because of significant investments in Research and Development.",
+          "E": "Because the company fired its top executives."
+        },
+        "correct": "D",
+        "explanation": "Email 2 states that heavy investments in R&D caused the short-term profit drops.",
+        "type": "Multi-Source Reasoning"
+      },
+      {
+        "q": 12,
+        "topic": "Multi-Source Reasoning",
+        "question": "According to the emails, will the investor likely invest in TechCorp today?",
+        "options": {
+          "A": "No, because TechCorp's profits fell, violating the investor's requirement for a 10% immediate profit margin.",
+          "B": "Yes, because revenue is projected to grow by 30% next year.",
+          "C": "Yes, because the revenue grew by 15% this year.",
+          "D": "No, because the R&D department failed to produce results.",
+          "E": "It cannot be determined from the information provided."
+        },
+        "correct": "A",
+        "explanation": "Email 3 demands a 10% immediate profit margin, but Email 1 says profits fell. Thus, criteria not met.",
+        "type": "Multi-Source Reasoning"
+      },
+      {
+        "q": 13,
+        "topic": "Multi-Source Reasoning",
+        "question": "What is the projected revenue growth for TechCorp next year?",
+        "options": {
+          "A": "15%",
+          "B": "5%",
+          "C": "10%",
+          "D": "20%",
+          "E": "30%"
+        },
+        "correct": "E",
+        "explanation": "Email 2 explicitly forecasts a 30% revenue increase next year.",
+        "type": "Multi-Source Reasoning"
+      },
+      {
+        "q": 14,
+        "topic": "Two-Part Analysis",
+        "question": "A project has a fixed budget of $120,000. Department A requires twice as much funding as Department B. Department C requires $30,000. Which pair correctly identifies the funding for A and B respectively?",
+        "options": {
+          "A": "A = $60,000; B = $30,000",
+          "B": "A = $40,000; B = $50,000",
+          "C": "A = $80,000; B = $10,000",
+          "D": "A = $50,000; B = $40,000",
+          "E": "A = $30,000; B = $60,000"
+        },
+        "correct": "A",
+        "explanation": "A + B + 30,000 = 120,000 => A + B = 90,000. A = 2B => 3B = 90,000 => B = 30,000, A = 60,000.",
+        "type": "Two-Part Analysis"
+      },
+      {
+        "q": 15,
+        "topic": "Two-Part Analysis",
+        "question": "X and Y are prime numbers such that X - Y = 1. Which pair correctly identifies X and Y?",
+        "options": {
+          "A": "X = 5; Y = 4",
+          "B": "X = 2; Y = 1",
+          "C": "X = 7; Y = 6",
+          "D": "X = 4; Y = 3",
+          "E": "X = 3; Y = 2"
+        },
+        "correct": "E",
+        "explanation": "The only two prime numbers with a difference of 1 are 3 and 2.",
+        "type": "Two-Part Analysis"
+      },
+      {
+        "q": 16,
+        "topic": "Two-Part Analysis",
+        "question": "A baker uses a ratio of Flour:Sugar:Butter of 5:2:1 by weight. If the total weight of these ingredients is 16 kg, what are the weights of Flour and Sugar respectively?",
+        "options": {
+          "A": "Flour = 8 kg; Sugar = 6 kg",
+          "B": "Flour = 10 kg; Sugar = 4 kg",
+          "C": "Flour = 12 kg; Sugar = 2 kg",
+          "D": "Flour = 5 kg; Sugar = 2 kg",
+          "E": "Flour = 10 kg; Sugar = 2 kg"
+        },
+        "correct": "B",
+        "explanation": "Total parts = 5+2+1 = 8. 1 part = 16/8 = 2kg. Flour = 5*2 = 10kg, Sugar = 2*2 = 4kg.",
+        "type": "Two-Part Analysis"
+      },
+      {
+        "q": 17,
+        "topic": "Graphics Interpretation",
+        "question": "A bar chart displays ice cream sales over four weeks. Week 1: 200 units, Week 2: 250 units, Week 3: 300 units, Week 4: 150 units. What is the percentage drop in sales from Week 3 to Week 4?",
+        "options": {
+          "A": "33.3%",
+          "B": "50%",
+          "C": "150%",
+          "D": "25%",
+          "E": "75%"
+        },
+        "correct": "B",
+        "explanation": "Drop = 300 - 150 = 150. Percentage = (150 / 300) * 100% = 50%.",
+        "type": "Graph Interpretation"
+      },
+      {
+        "q": 18,
+        "topic": "Table Analysis",
+        "question": "A table lists 3 products (A, B, C) with their Cost and Selling Price. A: Cost $10, Sell $15. B: Cost $20, Sell $24. C: Cost $50, Sell $65. Which product has the highest profit margin as a percentage of cost?",
+        "options": {
+          "A": "Product B",
+          "B": "Product C",
+          "C": "They are all equal",
+          "D": "Product A",
+          "E": "Cannot be determined"
+        },
+        "correct": "D",
+        "explanation": "A margin = 5/10 = 50%. B margin = 4/20 = 20%. C margin = 15/50 = 30%. A is highest.",
+        "type": "Table Analysis"
+      },
+      {
+        "q": 19,
+        "topic": "Table Analysis",
+        "question": "Same data as Q62. What is the total profit if 10 units of A, 5 units of B, and 2 units of C are sold?",
+        "options": {
+          "A": "$100",
+          "B": "$80",
+          "C": "$110",
+          "D": "$90",
+          "E": "$120"
+        },
+        "correct": "A",
+        "explanation": "Profit A = 5 * 10 = 50. Profit B = 4 * 5 = 20. Profit C = 15 * 2 = 30. Total = 50 + 20 + 30 = 100.",
+        "type": "Table Analysis"
+      },
+      {
+        "q": 20,
+        "topic": "Graphics Interpretation",
+        "question": "A line graph shows a company's stock price over 5 days: Monday $10, Tuesday $12, Wednesday $11, Thursday $14, Friday $18. On which day did the stock experience the largest absolute dollar increase from the previous day?",
+        "options": {
+          "A": "Tuesday",
+          "B": "Friday",
+          "C": "Wednesday",
+          "D": "Thursday",
+          "E": "Monday"
+        },
+        "correct": "B",
+        "explanation": "Increases: Tue (+2), Wed (-1), Thu (+3), Fri (+4). Friday is the largest increase.",
+        "type": "Graph Interpretation"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1316 @@
+{
+  "paper_id": "SSC-CGL-T1-Paper5",
+  "title": "SSC CGL Tier 1 Paper 5",
+  "exam": "SSC CGL Tier 1",
+  "year": 2026,
+  "subjects": {
+    "General Intelligence and Reasoning": [
+      {
+        "q": 1,
+        "topic": "Problem Solving",
+        "question": "If 'P + Q' means 'P is father of Q', 'P - Q' means 'P is sister of Q', 'P × Q' means 'P is brother of Q', and 'P ÷ Q' means 'P is mother of Q', then how is K related to M in the expression: K ÷ L + N × O - M?",
+        "options": {
+          "A": "Paternal grandmother",
+          "B": "Maternal grandmother",
+          "C": "Mother",
+          "D": "Aunt"
+        },
+        "correct": "A",
+        "explanation": "Decoding the expression step-by-step from right to left: • O - M means O is the sister of M. • N × O means N is the brother of O (and M). • L + N means L is the father of N (and M). • K ÷ L means K is the mother of L. Since L is M's father and K is L's mother, K is the paternal grandmother of M."
+      },
+      {
+        "q": 2,
+        "topic": "Series",
+        "question": "Select the number from among the given options that can replace the question mark (?) in the following series: 7, 16, 41, 90, 171, ?",
+        "options": {
+          "A": "282",
+          "B": "292",
+          "C": "290",
+          "D": "302"
+        },
+        "correct": "B",
+        "explanation": "Calculate the differences between consecutive terms: • 16 - 7 = 9 (3²) • 41 - 16 = 25 (5²) • 90 - 41 = 49 (7²) • 171 - 90 = 81 (9²) The differences are squares of consecutive odd numbers (3, 5, 7, 9, 11). Next difference = 11² = 121. Missing term = 171 + 121 = 292."
+      },
+      {
+        "q": 3,
+        "topic": "Coding and Decoding",
+        "question": "In a certain code language, 'STERN' is coded as '8722913' and 'PLANT' is coded as '111526137'. How will 'CRAFT' be coded in that language?",
+        "options": {
+          "A": "24926207",
+          "B": "24826217",
+          "C": "24926217",
+          "D": "24925217"
+        },
+        "correct": "C",
+        "explanation": "Each letter is coded using its reverse alphabetical position (calculated as 27 - forward position): • C = 27 - 3 = 24 • R = 27 - 18 = 9 • A = 27 - 1 = 26 • F = 27 - 6 = 21 • T = 27 - 20 = 7 Concatenating these values yields 24926217."
+      },
+      {
+        "q": 4,
+        "topic": "Series",
+        "question": "What will come in place of the question mark (?) in the following equation, if '+' and '-' are interchanged and '×' and '÷' are interchanged? 5 - 4 ÷ 9 + 60 × 10 = ?",
+        "options": {
+          "A": "31",
+          "B": "33",
+          "C": "38",
+          "D": "35"
+        },
+        "correct": "D",
+        "explanation": "Interchanging '+' with '-' and '×' with '÷': Given: 5 - 4 ÷ 9 + 60 × 10 Modified: 5 + 4 × 9 - 60 ÷ 10 Applying BODMAS rule: • Step 1 (Division): 60 ÷ 10 = 6 • Step 2 (Multiplication): 4 × 9 = 36 • Step 3 (Addition & Subtraction): 5 + 36 - 6 = 41 - 6 = 35."
+      },
+      {
+        "q": 5,
+        "topic": "Problem Solving",
+        "question": "Statements: 1. All titaniums are metals. 2. No metal is a liquid. 3. All liquids are solutions. Conclusions: I. No titanium is a liquid. II. Some solutions are liquids. III. No solution is a metal.",
+        "options": {
+          "A": "Only conclusions I and II follow",
+          "B": "Only conclusions I and III follow",
+          "C": "Only conclusions II and III follow",
+          "D": "All conclusions follow"
+        },
+        "correct": "A",
+        "explanation": "• Conclusion I: Since all titaniums are inside metals and no metal can overlap with liquid, no titanium can be a liquid. (Follows) • Conclusion II: All liquids are solutions, which directly implies that some solutions are liquids. (Follows) • Conclusion III: Solutions that are outside the liquid circle can potentially intersect with metals, so 'No solution is a metal' is not definitely true. (Does not follow)."
+      },
+      {
+        "q": 6,
+        "topic": "Analogy",
+        "question": "Select the set in which the numbers are related in the same way as are the numbers of the following sets: (14, 21, 175) (18, 24, 252)",
+        "options": {
+          "A": "(12, 20, 160)",
+          "B": "(16, 26, 240)",
+          "C": "(15, 22, 200)",
+          "D": "(10, 18, 120)"
+        },
+        "correct": "B",
+        "explanation": "Pattern rule: Third number c = First number a × (Second number b ÷ 2 + 2). • Set 1: 14 × (21 ÷ 2 + 2) = 14 × (10.5 + 2) = 14 × 12.5 = 175. • Set 2: 18 × (24 ÷ 2 + 2) = 18 × (12 + 2) = 18 × 14 = 252. • Checking Option B: 16 × (26 ÷ 2 + 2) = 16 × (13 + 2) = 16 × 15 = 240."
+      },
+      {
+        "q": 7,
+        "topic": "Problem Solving",
+        "question": "Seven friends A, B, C, D, E, F, and G are sitting in a straight row facing North. G sits at the extreme left end. C sits third to the right of G. Exactly two people sit between C and E. B sits second to the left of E. F sits to the immediate left of D. Who sits third to the right of D?",
+        "options": {
+          "A": "B",
+          "B": "E",
+          "C": "A",
+          "D": ""
+        },
+        "correct": "C",
+        "explanation": "Determine row positions 1 (left) through 7 (right): • Position 1 = G (extreme left). • Position 4 = C (3rd to right of G). • Position 7 = E (2 people between C and E). • Position 5 = B (2nd to left of E). • Positions 2 and 3 = F and D respectively (F immediate left of D). • Position 6 = A (remaining position). Seating layout: G - F - D - C - B - A - E. D is at Position 3; third to the right of D is Position 6, which is occupied by A."
+      },
+      {
+        "q": 8,
+        "topic": "Series",
+        "question": "Select the letter-cluster that can replace the question mark (?) in the following series: PMT, RNV, TOX, VPZ, ?",
+        "options": {
+          "A": "YQC",
+          "B": "XPB",
+          "C": "YQB",
+          "D": "XQB"
+        },
+        "correct": "D",
+        "explanation": "Pattern across positional letters: • 1st letter: P(16) + 2 → R(18) + 2 → T(20) + 2 → V(22) + 2 → X(24) • 2nd letter: M(13) + 1 → N(14) + 1 → O(15) + 1 → P(16) + 1 → Q(17) • 3rd letter: T(20) + 2 → V(22) + 2 → X(24) + 2 → Z(26) + 2 → B(2) Combining these yields XQB."
+      },
+      {
+        "q": 9,
+        "topic": "Problem Solving",
+        "question": "31 is related to 152 by a certain logic. Following the same logic, 47 is related to 168. To which of the following is 66 related, following the same logic?",
+        "options": {
+          "A": "187",
+          "B": "180",
+          "C": "195",
+          "D": "190"
+        },
+        "correct": "A",
+        "explanation": "Analyze the relationship between the pairs: • Second number - First number = 121 (11²). • Check Pair 1: 152 - 31 = 121. • Check Pair 2: 168 - 47 = 121. Applying the same rule to 66: 66 + 121 = 187."
+      },
+      {
+        "q": 10,
+        "topic": "Classification",
+        "question": "Three of the following four letter-clusters are alike in a certain way and one is different. Pick the odd one out.",
+        "options": {
+          "A": "HSKP",
+          "B": "EVJP",
+          "C": "DWGT",
+          "D": "CXFU"
+        },
+        "correct": "B",
+        "explanation": "In options A, C, and D, the 1st-2nd letters and 3rd-4th letters form pairs of opposite alphabets (H-S, K-P; DW, G-T; C-X, F-U). In option B, E-V are opposite alphabets, but J and P are not opposite alphabets (the opposite of J is Q, and opposite of P is K). Hence, EVJP is the odd one out."
+      },
+      {
+        "q": 11,
+        "topic": "Problem Solving",
+        "question": "Select the correct option that indicates the logical and meaningful arrangement of the following words in order of increasing geographical scale: 1. World 2. Country 3. City 4. Continent 5. State",
+        "options": {
+          "A": "3, 5, 2, 1, 4",
+          "B": "3, 2, 5, 4, 1",
+          "C": "3, 5, 2, 4, 1",
+          "D": "2, 3, 5, 4, 1"
+        },
+        "correct": "C",
+        "explanation": "The logical sequence from smallest to largest geographical scale is: City (3) → State (5) → Country (2) → Continent (4) → World (1). Therefore, the correct order is 3, 5, 2, 4, 1."
+      },
+      {
+        "q": 12,
+        "topic": "Series",
+        "question": "Select the number from among the given options that can replace the question mark (?) in the following series: 2, 10, 30, 68, 130, ?",
+        "options": {
+          "A": "218",
+          "B": "220",
+          "C": "224",
+          "D": "222"
+        },
+        "correct": "D",
+        "explanation": "The pattern followed is n³ + n for n = 1, 2, 3, 4, 5, 6: • 1³ + 1 = 2 • 2³ + 2 = 10 • 3³ + 3 = 30 • 4³ + 4 = 68 • 5³ + 5 = 130 • 6³ + 6 = 216 + 6 = 222."
+      },
+      {
+        "q": 13,
+        "topic": "Analogy",
+        "question": "Select the option that is related to the third number in the same way as the second number is related to the first number: 12 : 168 :: 16 : ?",
+        "options": {
+          "A": "288",
+          "B": "272",
+          "C": "280",
+          "D": "296"
+        },
+        "correct": "A",
+        "explanation": "Logic: n : n × (n + 2). • For 12: 12 × (12 + 2) = 12 × 14 = 168. • Applying the same logic for 16: 16 × (16 + 2) = 16 × 18 = 288."
+      },
+      {
+        "q": 14,
+        "topic": "Problem Solving",
+        "question": "Statements: 1. All shirts are skirts. 2. No skirt is a dress. 3. All dresses are garments. Conclusions: I. No shirt is a dress. II. Some garments are dresses. III. Some skirts are shirts.",
+        "options": {
+          "A": "Only conclusions I and II follow",
+          "B": "All conclusions follow",
+          "C": "Only conclusions II and III follow",
+          "D": "Only conclusions I and III follow"
+        },
+        "correct": "B",
+        "explanation": "• Conclusion I: All shirts are inside skirts, and no skirt is a dress. Thus, no shirt can be a dress. (Follows) • Conclusion II: All dresses are garments, which directly implies that some garments are dresses. (Follows) • Conclusion III: All shirts are skirts implies that some skirts are shirts. (Follows)."
+      },
+      {
+        "q": 15,
+        "topic": "Problem Solving",
+        "question": "Eight persons A, B, C, D, E, F, G, and H are sitting around a circular table facing towards the center. A sits third to the left of F. D sits second to the right of A. E sits immediate left of D. B sits third to the right of E. C sits second to the left of H. G is not an immediate neighbor of F. Who sits opposite to B?",
+        "options": {
+          "A": "• E = Pos 7 (immediate left of",
+          "B": "",
+          "C": "A",
+          "D": "• B = Pos 2 (3rd to right of E) • H = Pos 5, C = Pos 3 (C is 2nd to left of H) • G = Pos 4 (remaining position, not adjacent to F) Opposite to Position 2 ("
+        },
+        "correct": "C",
+        "explanation": "Map positions 1 to 8 clockwise, setting F at Position 1: • F = Pos 1 • A = Pos 6 (3rd to left of F) • D = Pos 8 (2nd to right of A) • E = Pos 7 (immediate left of D) • B = Pos 2 (3rd to right of E) • H = Pos 5, C = Pos 3 (C is 2nd to left of H) • G = Pos 4 (remaining position, not adjacent to F) Opposite to Position 2 (B) is Position 6, which is A."
+      },
+      {
+        "q": 16,
+        "topic": "Problem Solving",
+        "question": "Pointing to a man, Neha said, 'His mother is the only daughter-in-law of my mother's husband.' How is the man related to Neha?",
+        "options": {
+          "A": "Son",
+          "B": "Brother",
+          "C": "Uncle",
+          "D": "Nephew"
+        },
+        "correct": "D",
+        "explanation": "Break down the relationships step-by-step: • 'My mother's husband' → Neha's father. • 'Only daughter-in-law of Neha's father' → Wife of Neha's brother. • 'His mother is Neha's sister-in-law' → The man is the son of Neha's brother. A brother's son is Neha's nephew."
+      },
+      {
+        "q": 17,
+        "topic": "Classification",
+        "question": "In the following number-pairs, the second number is obtained by applying a rule to the first number. Three pairs follow the same rule and form a group. Pick the odd one out.",
+        "options": {
+          "A": "17 : 288",
+          "B": "13 : 170",
+          "C": "11 : 122",
+          "D": "15 : 226"
+        },
+        "correct": "A",
+        "explanation": "Pattern rule: Second number = (First number)² + 1. • Option B: 13² + 1 = 169 + 1 = 170 • Option C: 11² + 1 = 121 + 1 = 122 • Option D: 15² + 1 = 225 + 1 = 226 • Option A: 17² + 1 = 290. (Given 288, which is 17² - 1). Hence 17 : 288 is the odd pair."
+      },
+      {
+        "q": 18,
+        "topic": "Analogy",
+        "question": "Select the set in which the numbers are related in the same way as are the numbers of the following sets: (11, 13, 264) (15, 17, 480)",
+        "options": {
+          "A": "(12, 16, 300)",
+          "B": "(9, 14, 207)",
+          "C": "(10, 15, 220)",
+          "D": "(14, 18, 400)"
+        },
+        "correct": "B",
+        "explanation": "Pattern rule: Third number c = (First number a + Second number b) × First number a. • Set 1: (11 + 13) × 11 = 24 × 11 = 264. • Set 2: (15 + 17) × 15 = 32 × 15 = 480. • Option B: (9 + 14) × 9 = 23 × 9 = 207."
+      },
+      {
+        "q": 19,
+        "topic": "Series",
+        "question": "Select the letter-cluster that can replace the question mark (?) in the following series: AZB, CYD, EXF, GWH, ?",
+        "options": {
+          "A": "IUJ",
+          "B": "IVK",
+          "C": "IVJ",
+          "D": "JWJ"
+        },
+        "correct": "C",
+        "explanation": "Pattern across positional letters: • 1st letter: A(1) + 2 → C(3) + 2 → E(5) + 2 → G(7) + 2 → I(9) • 2nd letter: Z(26) - 1 → Y(25) - 1 → X(24) - 1 → W(23) - 1 → V(22) • 3rd letter: B(2) + 2 → D(4) + 2 → F(6) + 2 → H(8) + 2 → J(10) Combining these yields IVJ."
+      },
+      {
+        "q": 20,
+        "topic": "Problem Solving",
+        "question": "Which two signs should be interchanged to make the given equation correct? 36 ÷ 4 × 3 + 12 - 3 = 18",
+        "options": {
+          "A": "÷ and ×",
+          "B": "× and +",
+          "C": "÷ and -",
+          "D": "+ and -"
+        },
+        "correct": "D",
+        "explanation": "Interchanging '+' and '-' in the equation: 36 ÷ 4 × 3 - 12 + 3 Applying BODMAS rule: • Step 1 (Division): 36 ÷ 4 = 9 • Step 2 (Multiplication): 9 × 3 = 27 • Step 3 (Addition & Subtraction): 27 - 12 + 3 = 15 + 3 = 18."
+      },
+      {
+        "q": 21,
+        "topic": "Problem Solving",
+        "question": "A person walks 10 m North from point P, turns right and walks 15 m, turns right again and walks 10 m, then turns left and walks 5 m to reach point Q. What is the shortest distance and direction of point Q with respect to point P?",
+        "options": {
+          "A": "20 m, East",
+          "B": "25 m, East",
+          "C": "20 m, West",
+          "D": "15 m, North-East"
+        },
+        "correct": "A",
+        "explanation": "Take starting point P as origin (0, 0): • Step 1: Walk 10 m North → Coordinates (0, 10) • Step 2: Turn right (East) 15 m → Coordinates (15, 10) • Step 3: Turn right (South) 10 m → Coordinates (15, 0) • Step 4: Turn left (East) 5 m → Coordinates (20, 0) [Point Q] Shortest distance from P(0,0) to Q(20,0) = 20 m due East."
+      },
+      {
+        "q": 22,
+        "topic": "Venn Diagrams",
+        "question": "Which of the following descriptions best represents the Venn diagram relationship between the three classes: 'Engineers', 'Doctors', and 'Females'?",
+        "options": {
+          "A": "Three mutually intersecting circles",
+          "B": "Two non-overlapping circles partially intersecting a third circle",
+          "C": "Two concentric circles inside a third circle",
+          "D": "Three completely separate circles"
+        },
+        "correct": "B",
+        "explanation": "'Engineers' and 'Doctors' are distinct professional categories and do not overlap. However, females can be engineers, and females can also be doctors. Thus, the circle representing 'Females' partially intersects both nonoverlapping circles of 'Engineers' and 'Doctors'."
+      },
+      {
+        "q": 23,
+        "topic": "Relationship Concepts",
+        "question": "Arrange the following words in the order in which they appear in an English dictionary: 1. Master 2. Magnet 3. Machine 4. Manner 5. Matrix",
+        "options": {
+          "A": "3, 4, 2, 1, 5",
+          "B": "2, 3, 4, 1, 5",
+          "C": "3, 2, 4, 1, 5",
+          "D": "3, 2, 1, 4, 5"
+        },
+        "correct": "C",
+        "explanation": "Alphabetical ordering by consecutive letters: 1. Machine (3) - M-a-c 2. Magnet (2) - M-a-g 3. Manner (4) - M-a-n 4. Master (1) - M-a-s 5. Matrix (5) - M-a-t The correct sequence is 3, 2, 4, 1, 5."
+      },
+      {
+        "q": 24,
+        "topic": "Series",
+        "question": "Select the number from among the given options that can replace the question mark (?) in the following series: 3, 7, 16, 35, 74, ?",
+        "options": {
+          "A": "150",
+          "B": "151",
+          "C": "155",
+          "D": "153"
+        },
+        "correct": "D",
+        "explanation": "The pattern followed in the series is: • 3 × 2 + 1 = 7 • 7 × 2 + 2 = 16 • 16 × 2 + 3 = 35 • 35 × 2 + 4 = 74 • 74 × 2 + 5 = 148 + 5 = 153."
+      },
+      {
+        "q": 25,
+        "topic": "Coding and Decoding",
+        "question": "In a certain code language, a word is reversed and then each letter is shifted forward by +2 positions in alphabetical order. How will 'HOLIDAY' be written in that language?",
+        "options": {
+          "A": "ACFKNRJ",
+          "B": "ABFKNQJ",
+          "C": "ACFLNQJ",
+          "D": "ACFKNQJ"
+        },
+        "correct": "D",
+        "explanation": "Step 1: Reverse the word 'HOLIDAY' → Y - A - D - I - L - O - H. Step 2: Shift each letter forward by +2 positions in alphabetical order: • Y (+2) = A • A (+2) = C • D (+2) = F • I (+2) = K • L (+2) = N • O (+2) = Q • H (+2) = J Combining these gives ACFKNQJ."
+      }
+    ],
+    "General Awareness": [
+      {
+        "q": 1,
+        "topic": "Current Affairs",
+        "question": "Which of the following Rock Edicts of Emperor Ashoka specifically mentions the victory over Kalinga and expresses his remorse for the loss of lives in the war?",
+        "options": {
+          "A": "Major Rock Edict XIII",
+          "B": "Major Rock Edict XII",
+          "C": "Major Rock Edict X",
+          "D": "Major Rock Edict XI"
+        },
+        "correct": "A",
+        "explanation": "Major Rock Edict XIII gives a detailed account of Ashoka's war with Kalinga fought in 261 BC, describing his intense grief and remorse over the war's destruction, which ultimately transformed his philosophy toward Dhamma Vijaya."
+      },
+      {
+        "q": 2,
+        "topic": "General Polity",
+        "question": "Which article of the Indian Constitution empowers the Parliament to create or abolish Legislative Councils in the states?",
+        "options": {
+          "A": "Article 168",
+          "B": "Article 169",
+          "C": "Article 170",
+          "D": "Article 171"
+        },
+        "correct": "B",
+        "explanation": "Article 169 of the Indian Constitution provides the mechanism for the creation or abolition of Legislative Councils in states if the Legislative Assembly of the state passes a resolution by a special majority."
+      },
+      {
+        "q": 3,
+        "topic": "Current Affairs",
+        "question": "Which layer of the atmosphere contains the ozone layer that absorbs harmful ultraviolet solar radiation?",
+        "options": {
+          "A": "Troposphere",
+          "B": "Mesosphere",
+          "C": "Stratosphere",
+          "D": "Thermosphere"
+        },
+        "correct": "C",
+        "explanation": "The ozone layer is concentrated in the Stratosphere, primarily between 15 km and 35 km above the Earth's surface, where it absorbs high-energy ultraviolet radiation emitted by the Sun."
+      },
+      {
+        "q": 4,
+        "topic": "Economic Scene",
+        "question": "The measure of the total market value of all final goods and services produced within the domestic territory of a country minus depreciation during a given year is known as:",
+        "options": {
+          "A": "Gross Domestic Product",
+          "B": "Gross National Product",
+          "C": "Net National Product",
+          "D": "Net Domestic Product"
+        },
+        "correct": "D",
+        "explanation": "Net Domestic Product (NDP) equals Gross Domestic Product (GDP) minus Depreciation (capital consumption allowance) accrued on capital assets within the domestic boundary."
+      },
+      {
+        "q": 5,
+        "topic": "Culture",
+        "question": "Who among the following founded the Asiatic Society of Bengal in Kolkata in 1784?",
+        "options": {
+          "A": "Sir William Jones",
+          "B": "Warren Hastings",
+          "C": "James Prinsep",
+          "D": "Charles Wilkins"
+        },
+        "correct": "A",
+        "explanation": "Sir William Jones founded the Asiatic Society of Bengal on 15 January 1784 to encourage Oriental studies and research into Asian history and literature."
+      },
+      {
+        "q": 6,
+        "topic": "Current Affairs",
+        "question": "According to the 2011 Census of India, which state recorded the highest population density?",
+        "options": {
+          "A": "West Bengal",
+          "B": "Bihar",
+          "C": "Uttar Pradesh",
+          "D": "Kerala"
+        },
+        "correct": "B",
+        "explanation": "Bihar recorded the highest population density among Indian states in the 2011 Census with 1,106 persons per square kilometre, surpassing West Bengal (1,028 persons per sq km)."
+      },
+      {
+        "q": 7,
+        "topic": "General Polity",
+        "question": "Which fundamental right under the Indian Constitution cannot be suspended even during a National Emergency declared under Article 352?",
+        "options": {
+          "A": "Article 19 and Article 20",
+          "B": "Article 14 and Article 19",
+          "C": "Article 20 and Article 21",
+          "D": "Article 21 and Article 22"
+        },
+        "correct": "C",
+        "explanation": "The 44th Constitutional Amendment Act of 1978 restricted the suspension of Fundamental Rights, ruling that rights under Article 20 (protection in respect of conviction for offences) and Article 21 (protection of life and personal liberty) cannot be suspended during an Emergency."
+      },
+      {
+        "q": 8,
+        "topic": "Current Affairs",
+        "question": "What is the SI unit of magnetic flux density?",
+        "options": {
+          "A": "Weber",
+          "B": "Henry",
+          "C": "Faraday",
+          "D": "Tesla"
+        },
+        "correct": "D",
+        "explanation": "The SI unit of magnetic flux density (or magnetic field strength) is the Tesla (T), defined as one Weber per square metre (Wb/m²)."
+      },
+      {
+        "q": 9,
+        "topic": "Current Affairs",
+        "question": "Which enzyme present in human saliva breaks down complex starches into simpler sugars like maltose?",
+        "options": {
+          "A": "Salivary Amylase",
+          "B": "Pepsin",
+          "C": "Trypsin",
+          "D": "Lipase"
+        },
+        "correct": "A",
+        "explanation": "Salivary Amylase (also called ptyalin) is an enzyme secreted by salivary glands that initiates carbohydrate digestion by cleaving starch molecules into maltose and dextrins."
+      },
+      {
+        "q": 10,
+        "topic": "Culture",
+        "question": "The famous classical dance form 'Sattriya' originated in which Indian state?",
+        "options": {
+          "A": "Odisha",
+          "B": "Assam",
+          "C": "Manipur",
+          "D": "Kerala"
+        },
+        "correct": "B",
+        "explanation": "Sattriya dance originated in the 15th century AD in the Vaishnavite monasteries (Sattras) of Assam, introduced by the saint-reformer Srimanta Sankardev."
+      },
+      {
+        "q": 11,
+        "topic": "Geography",
+        "question": "Which Sultan of Delhi established a separate department for agriculture named 'Diwan-i-Kohi'?",
+        "options": {
+          "A": "Alauddin Khalji",
+          "B": "Firoz Shah Tughlaq",
+          "C": "Muhammad bin Tughlaq",
+          "D": "Balban"
+        },
+        "correct": "C",
+        "explanation": "Muhammad bin Tughlaq established the department 'Diwan-i-Amir-i-Kohi' (or Diwan-i-Kohi) to promote agricultural extension, improve soil yield, and provide state loans (Sondhar) to farmers."
+      },
+      {
+        "q": 12,
+        "topic": "Current Affairs",
+        "question": "Chemical compound Calcium Sulphate Hemihydrate is commonly known by which popular name?",
+        "options": {
+          "A": "Washing Soda",
+          "B": "Baking Soda",
+          "C": "Bleaching Powder",
+          "D": "Plaster of Paris"
+        },
+        "correct": "D",
+        "explanation": "Plaster of Paris has the chemical formula CaSO4 · 1/2 H2O and is chemically named Calcium Sulphate Hemihydrate, prepared by heating gypsum (CaSO4 · 2 H2O) at 373 K."
+      },
+      {
+        "q": 13,
+        "topic": "Geography",
+        "question": "Which mountain pass connects Leh with the Nubra Valley in Ladakh?",
+        "options": {
+          "A": "Khardung La",
+          "B": "Nathu La",
+          "C": "Shipki La",
+          "D": "Zoji La"
+        },
+        "correct": "A",
+        "explanation": "Khardung La is a high mountain pass located in the Ladakh region that serves as the gateway to the Shyok and Nubra Valleys."
+      },
+      {
+        "q": 14,
+        "topic": "General Polity",
+        "question": "Who among the following presides over the joint sitting of both Houses of Parliament in India?",
+        "options": {
+          "A": "President of India",
+          "B": "Speaker of Lok Sabha",
+          "C": "Chairman of Rajya Sabha",
+          "D": "Prime Minister of India"
+        },
+        "correct": "B",
+        "explanation": "Under Article 118(4) of the Indian Constitution, the Speaker of the Lok Sabha (or in their absence, the Deputy Speaker) presides over a joint sitting of both Houses."
+      },
+      {
+        "q": 15,
+        "topic": "Current Affairs",
+        "question": "What is the phenomenon called when light bends around the sharp corners of an obstacle?",
+        "options": {
+          "A": "Refraction",
+          "B": "Polarization",
+          "C": "Diffraction",
+          "D": "Dispersion"
+        },
+        "correct": "C",
+        "explanation": "Diffraction refers to the bending of light waves around the edges of an obstacle or opening into the geometrical shadow region."
+      },
+      {
+        "q": 16,
+        "topic": "Current Affairs",
+        "question": "Which Five Year Plan in India introduced the 'Garibi Hatao' (Poverty Eradication) slogan?",
+        "options": {
+          "A": "Third Five Year Plan",
+          "B": "Fourth Five Year Plan",
+          "C": "Fifth Five Year Plan",
+          "D": "Sixth Five Year Plan"
+        },
+        "correct": "C",
+        "explanation": "The Fifth Five Year Plan (1974-1978) focused on poverty alleviation ('Garibi Hatao') and attainment of selfreliance."
+      },
+      {
+        "q": 17,
+        "topic": "Current Affairs",
+        "question": "Who among the following was the Governor-General of India when the Doctrine of Lapse was officially introduced?",
+        "options": {
+          "A": "Lord Dalhousie",
+          "B": "Lord Canning",
+          "C": "Lord Wellesley",
+          "D": "Lord Cornwallis"
+        },
+        "correct": "A",
+        "explanation": "Lord Dalhousie (Governor-General from 1848 to 1856) devised and extensively applied the Doctrine of Lapse to annex Indian princely states lacking direct male heirs."
+      },
+      {
+        "q": 18,
+        "topic": "Current Affairs",
+        "question": "The term 'Butterfly Stroke' is associated with which of the following sports disciplines?",
+        "options": {
+          "A": "Badminton",
+          "B": "Swimming",
+          "C": "Rowing",
+          "D": "Archery"
+        },
+        "correct": "B",
+        "explanation": "Butterfly stroke is a competitive swimming technique swum on the chest, where both arms move symmetrically accompanied by a dolphin kick."
+      },
+      {
+        "q": 19,
+        "topic": "Scientific Research",
+        "question": "Which cell organelle is known as the 'Suicide Bag' of the cell due to the presence of hydrolytic enzymes?",
+        "options": {
+          "A": "Mitochondria",
+          "B": "Ribosome",
+          "C": "Lysosome",
+          "D": "Golgi Apparatus"
+        },
+        "correct": "C",
+        "explanation": "Lysosomes contain acidic digestive hydrolytic enzymes capable of breaking down cellular waste; when cellular damage occurs, lysosomes burst and digest the cell itself."
+      },
+      {
+        "q": 20,
+        "topic": "General Polity",
+        "question": "Under which schedule of the Indian Constitution are the provisions regarding anti-defection laws enumerated?",
+        "options": {
+          "A": "Eighth Schedule",
+          "B": "Ninth Schedule",
+          "C": "Eleventh Schedule",
+          "D": "Tenth Schedule"
+        },
+        "correct": "D",
+        "explanation": "The Tenth Schedule of the Indian Constitution, added by the 52nd Constitutional Amendment Act of 1985, contains provisions regarding disqualification on grounds of defection."
+      },
+      {
+        "q": 21,
+        "topic": "Economic Scene",
+        "question": "Which among the following rivers is a right-bank tributary of the Ganga River?",
+        "options": {
+          "A": "Yamuna",
+          "B": "Gomti",
+          "C": "Ghaghara",
+          "D": "Gandak"
+        },
+        "correct": "A",
+        "explanation": "The Yamuna River is the major right-bank tributary of the Ganga, whereas Gomti, Ghaghara, and Gandak are left-bank tributaries."
+      },
+      {
+        "q": 22,
+        "topic": "Scientific Research",
+        "question": "Which gas is liberated when an active metal reacts with dilute hydrochloric acid?",
+        "options": {
+          "A": "Oxygen",
+          "B": "Hydrogen",
+          "C": "Chlorine",
+          "D": "Carbon Dioxide"
+        },
+        "correct": "B",
+        "explanation": "Active metals react with dilute acids to displace hydrogen, producing a metal salt and releasing Hydrogen gas (H2)."
+      },
+      {
+        "q": 23,
+        "topic": "History",
+        "question": "Who wrote the famous ancient historical play 'Mudrarakshasa'?",
+        "options": {
+          "A": "Kalidasa",
+          "B": "Banabhatta",
+          "C": "Vishakhadatta",
+          "D": "Bhasa"
+        },
+        "correct": "C",
+        "explanation": "Vishakhadatta authored 'Mudrarakshasa', a Sanskrit political drama depicting Chandragupta Maurya's rise to power with Chanakya's guidance."
+      },
+      {
+        "q": 24,
+        "topic": "General Polity",
+        "question": "What is the maximum strength of members permitted in the Lok Sabha under the Constitution of India?",
+        "options": {
+          "A": "545",
+          "B": "550",
+          "C": "543",
+          "D": "552"
+        },
+        "correct": "D",
+        "explanation": "The maximum constitutional strength of the Lok Sabha is 552 members (530 representing States, 20 representing Union Territories, and 2 nominated Anglo-Indians, though Anglo-Indian nomination was ended by the 104th Amendment Act)."
+      },
+      {
+        "q": 25,
+        "topic": "Current Affairs",
+        "question": "Which phenomenon causes optical mirages in hot deserts?",
+        "options": {
+          "A": "Polarization of Light",
+          "B": "Scattering of Light",
+          "C": "Interference of Light",
+          "D": "Total Internal Reflection"
+        },
+        "correct": "D",
+        "explanation": "Mirages in deserts are optical illusions caused by atmospheric refraction and Total Internal Reflection of light through air layers of differing temperatures and densities."
+      }
+    ],
+    "Quantitative Aptitude": [
+      {
+        "q": 1,
+        "topic": "Algebra",
+        "question": "If x + 1/x = 4, then what is the value of x^6 + 1/x^6?",
+        "options": {
+          "A": "2702",
+          "B": "2704",
+          "C": "2700",
+          "D": "2710"
+        },
+        "correct": "A",
+        "explanation": "Step 1: Find x^2 + 1/x^2 = (4)^2 - 2 = 16 - 2 = 14. Step 2: Find x^6 + 1/x^6 by cubing (x^2 + 1/x^2): (x^2 + 1/x^2)^3 = x^6 + 1/x^6 + 3(x^2 + 1/x^2) (14)^3 = x^6 + 1/x^6 + 3(14) 2744 = x^6 + 1/x^6 + 42 x^6 + 1/x^6 = 2744 - 42 = 2702."
+      },
+      {
+        "q": 2,
+        "topic": "Trigonometry",
+        "question": "A shopkeeper marks an article 40% above its cost price and allows two successive discounts of 20% and 15% on the marked price. If he suffers a loss of Rs 96, then what is the marked price of the article?",
+        "options": {
+          "A": "Rs 2400",
+          "B": "Rs 2800",
+          "C": "Rs 2500",
+          "D": "Rs 3000"
+        },
+        "correct": "B",
+        "explanation": "Let Cost Price (CP) = 100 units. Marked Price (MP) = 140% of CP = 140 units. After two successive discounts of 20% and 15%, Selling Price (SP) = 140 × (80 / 100) × (85 / 100) = 140 × 0.8 × 0.85 = 95.2 units. Loss = CP - SP = 100 - 95.2 = 4.8 units. Given Loss = Rs 96. 4.8 units = Rs 96 ⇒ 1 unit = Rs 20. Cost Price = 100 × 20 = Rs 2000. Marked Price = 140 × 20 = Rs 2800."
+      },
+      {
+        "q": 3,
+        "topic": "Mensuration",
+        "question": "A solid metallic sphere of radius 12 cm is melted and recast into small solid cones, each of radius 4 cm and height 6 cm. How many such small cones can be formed?",
+        "options": {
+          "A": "128",
+          "B": "144",
+          "C": "288",
+          "D": "216"
+        },
+        "correct": "C",
+        "explanation": "Volume of sphere = (4 / 3) × π × R^3 = (4 / 3) × π × (12)^3 = (4 / 3) × π × 1728 = 2304 π cm^3. Volume of one cone = (1 / 3) × π × r^2 × h = (1 / 3) × π × (4)^2 × 6 = 32 π cm^3. Number of cones = Volume of sphere / Volume of one cone = 2304 π / 32 π = 288."
+      },
+      {
+        "q": 4,
+        "topic": "Trigonometry",
+        "question": "If tan A + sec A = 3, where A is an acute angle, then what is the value of sin A?",
+        "options": {
+          "A": "",
+          "B": "4 / 3",
+          "C": "5 / 4",
+          "D": "4 / 5 Correct Option: D Explanation: Given sec A + tan A = 3. We know that sec^2 A - tan^2 A = 1 ⇒ (sec A - tan"
+        },
+        "correct": "D",
+        "explanation": "Given sec A + tan A = 3. We know that sec^2 A - tan^2 A = 1 ⇒ (sec A - tan A)(sec A + tan A) = 1. Therefore, sec A - tan A = 1 / 3. Adding the two equations: 2 sec A = 3 + 1 / 3 = 10 / 3 ⇒ sec A = 5 / 3. Subtracting the two equations: 2 tan A = 3 - 1 / 3 = 8 / 3 ⇒ tan A = 4 / 3. Since sin A = tan A / sec A = (4 / 3) / (5 / 3) = 4 / 5."
+      },
+      {
+        "q": 5,
+        "topic": "Trigonometry",
+        "question": "A train running at a speed of 72 km/h crosses a pole in 18 seconds. How much time (in seconds) will it take to cross a bridge of length 240 metres?",
+        "options": {
+          "A": "30",
+          "B": "32",
+          "C": "36",
+          "D": "28"
+        },
+        "correct": "A",
+        "explanation": "Speed of train in m/s = 72 × (5 / 18) = 20 m/s. Length of train = Speed × Time = 20 × 18 = 360 metres. Total distance to cross the bridge = Length of train + Length of bridge = 360 + 240 = 600 metres. Time taken to cross the bridge = Total distance / Speed = 600 / 20 = 30 seconds."
+      },
+      {
+        "q": 6,
+        "topic": "Interest",
+        "question": "A sum of money doubles itself in 4 years at compound interest, compounded annually. In how many years will it become 8 times of itself at the same rate of interest?",
+        "options": {
+          "A": "16 years",
+          "B": "12 years",
+          "C": "10 years",
+          "D": "14 years"
+        },
+        "correct": "B",
+        "explanation": "Under compound interest, if a principal becomes 'k' times in 't' years, it becomes (k^n) times in (n × t) years. Here, the sum becomes 2 times (k = 2) in t = 4 years. We want the sum to become 8 times = 2^3 times (so n = 3). Time required = n × t = 3 × 4 = 12 years."
+      },
+      {
+        "q": 7,
+        "topic": "Number Systems",
+        "question": "A and B working together can complete a work in 12 days. B and C working together can complete it in 15 days, while C and A can complete it in 20 days. In how many days can A alone complete the work?",
+        "options": {
+          "A": "= 60 / 20 = 3 units/day. Sum of efficiencies: 2(A + B +",
+          "B": "= 60 / 12 = 5 units/day. Efficiency of (B +",
+          "C": "",
+          "D": "40 days Correct Option: C Explanation: Let total work = LCM(12, 15, 20) = 60 units. Efficiency of (A +"
+        },
+        "correct": "C",
+        "explanation": "Let total work = LCM(12, 15, 20) = 60 units. Efficiency of (A + B) = 60 / 12 = 5 units/day. Efficiency of (B + C) = 60 / 15 = 4 units/day. Efficiency of (C + A) = 60 / 20 = 3 units/day. Sum of efficiencies: 2(A + B + C) = 5 + 4 + 3 = 12 units/day. Efficiency of (A + B + C) = 6 units/day. Efficiency of A = Efficiency of (A + B + C) - Efficiency of (B + C) = 6 - 4 = 2 units/day. Time taken by A alone = Total work / Efficiency of A = 60 / 2 = 30 days."
+      },
+      {
+        "q": 8,
+        "topic": "Geometry",
+        "question": "In a triangle ABC, the bisector of angle A meets BC at D. If AB = 10 cm, AC = 14 cm, and BC = 12 cm, then what is the length of BD?",
+        "options": {
+          "A": "6 cm",
+          "B": "7 cm",
+          "C": "4 cm",
+          "D": "5 cm"
+        },
+        "correct": "D",
+        "explanation": "By Angle Bisector Theorem in triangle ABC: BD / DC = AB / AC = 10 / 14 = 5 / 7. Given BC = BD + DC = 12 cm. Length of BD = (5 / (5 + 7)) × BC = (5 / 12) × 12 = 5 cm."
+      },
+      {
+        "q": 9,
+        "topic": "Trigonometry",
+        "question": "What is the remainder when (67^67 + 67) is divided by 68?",
+        "options": {
+          "A": "66",
+          "B": "67",
+          "C": "1",
+          "D": "0"
+        },
+        "correct": "A",
+        "explanation": "Using modular arithmetic: 67 ≡ -1 (mod 68). Therefore, 67^67 ≡ (-1)^67 (mod 68) = -1 (mod 68). So, (67^67 + 67) ≡ (-1 + 67) (mod 68) = 66 (mod 68). Hence, the remainder is 66."
+      },
+      {
+        "q": 10,
+        "topic": "Averages",
+        "question": "The average weight of 25 students in a class is 50 kg. If the weight of the teacher is included, the average weight increases by 1 kg. What is the weight of the teacher?",
+        "options": {
+          "A": "75 kg",
+          "B": "76 kg",
+          "C": "74 kg",
+          "D": "80 kg"
+        },
+        "correct": "B",
+        "explanation": "Total weight of 25 students = 25 × 50 = 1250 kg. When teacher is included, total people = 26. New average weight = 50 + 1 = 51 kg. Total weight of 26 people = 26 × 51 = 1326 kg. Weight of teacher = 1326 - 1250 = 76 kg."
+      },
+      {
+        "q": 11,
+        "topic": "Percentages",
+        "question": "In an examination, 65% of the students passed in Mathematics, 60% passed in History, and 40% passed in both subjects. If 90 students failed in both subjects, what is the total number of students who appeared in the examination?",
+        "options": {
+          "A": "500",
+          "B": "550",
+          "C": "600",
+          "D": "650"
+        },
+        "correct": "C",
+        "explanation": "Percentage of students who passed in at least one subject = P(Math) + P(History) - P(Both) = 65% + 60% - 40% = 85%. Percentage of students who failed in both subjects = 100% - 85% = 15%. Given 15% of total students = 90. Total number of students = (90 / 15) × 100 = 600."
+      },
+      {
+        "q": 12,
+        "topic": "Ratio and proportion",
+        "question": "The ratio of two numbers is 3 : 4 and their HCF is 5. What is their LCM?",
+        "options": {
+          "A": "45",
+          "B": "50",
+          "C": "55",
+          "D": "60"
+        },
+        "correct": "D",
+        "explanation": "Let the two numbers be 3x and 4x. The HCF of 3x and 4x is x. Given HCF = 5, so x = 5. The numbers are 3 × 5 = 15 and 4 × 5 = 20. LCM of 15 and 20 = 3 × 4 × x = 12 × 5 = 60."
+      },
+      {
+        "q": 13,
+        "topic": "Algebra",
+        "question": "If a + b + c = 9 and ab + bc + ca = 26, then what is the value of a^3 + b^3 + c^3 - 3abc?",
+        "options": {
+          "A": "27",
+          "B": "81",
+          "C": "54",
+          "D": "36"
+        },
+        "correct": "A",
+        "explanation": "We know the algebraic identity: a^3 + b^3 + c^3 - 3abc = (a + b + c)[(a + b + c)^2 - 3(ab + bc + ca)]. Substitute the given values: a^3 + b^3 + c^3 - 3abc = (9)[(9)^2 - 3(26)] = 9 × [81 - 78] = 9 × 3 = 27."
+      },
+      {
+        "q": 14,
+        "topic": "Trigonometry",
+        "question": "Two concentric circles have radii 13 cm and 5 cm. What is the length of the chord of the outer circle which touches the inner circle?",
+        "options": {
+          "A": "20 cm",
+          "B": "24 cm",
+          "C": "22 cm",
+          "D": "26 cm"
+        },
+        "correct": "B",
+        "explanation": "Let O be the common center. Let AB be the chord of the outer circle touching the inner circle at P. Since OP is perpendicular to AB, AP = PB. In right-angled triangle OPA: OA = radius of outer circle = 13 cm. OP = radius of inner circle = 5 cm. AP = sqrt(OA^2 - OP^2) = sqrt(13^2 - 5^2) = sqrt(169 - 25) = sqrt(144) = 12 cm. Length of chord AB = 2 × AP = 2 × 12 = 24 cm."
+      },
+      {
+        "q": 15,
+        "topic": "Trigonometry",
+        "question": "If 5 sin^2 θ - 13 sin θ + 6 = 0, where 0° < θ < 90°, then what is the value of tan θ?",
+        "options": {
+          "A": "3 / 5",
+          "B": "4 / 5",
+          "C": "3 / 4",
+          "D": "4 / 3"
+        },
+        "correct": "C",
+        "explanation": "Given equation: 5 sin^2 θ - 13 sin θ + 6 = 0. Factorizing quadratic equation: (5 sin θ - 3)(sin θ - 2) = 0 Since sin θ cannot exceed 1, sin θ = 3 / 5. In a right-angled triangle, Opposite = 3, Hypotenuse = 5. Adjacent side = sqrt(5^2 - 3^2) = sqrt(25 - 9) = 4. Therefore, tan θ = Opposite / Adjacent = 3 / 4."
+      },
+      {
+        "q": 16,
+        "topic": "Mixture and allegation",
+        "question": "A vessel contains 80 litres of a mixture of milk and water in the ratio 7 : 3. How many litres of water must be added to this mixture to make the ratio of milk and water 2 : 1?",
+        "options": {
+          "A": "3 litres",
+          "B": "5 litres",
+          "C": "6 litres",
+          "D": "4 litres"
+        },
+        "correct": "D",
+        "explanation": "In 80 litres mixture: Milk = 80 × (7 / 10) = 56 litres. Water = 80 × (3 / 10) = 24 litres. Let 'x' litres of water be added to make ratio 2 : 1. 56 / (24 + x) = 2 / 1 56 = 2(24 + x) 56 = 48 + 2x 2x = 8 ⇒ x = 4 litres."
+      },
+      {
+        "q": 17,
+        "topic": "Interest",
+        "question": "The simple interest on a certain sum of money for 3 years at 8% per annum is Rs 1196 less than the simple interest on the same sum for 5 years at 10% per annum. What is the sum of money?",
+        "options": {
+          "A": "Rs 4600",
+          "B": "Rs 4800",
+          "C": "Rs 5000",
+          "D": "Rs 5200"
+        },
+        "correct": "A",
+        "explanation": "Let the Principal sum = P. SI1 (for 3 yrs at 8%) = (P × 8 × 3) / 100 = 24P / 100. SI2 (for 5 yrs at 10%) = (P × 10 × 5) / 100 = 50P / 100. Given SI2 - SI1 = Rs 1196. (50P / 100) - (24P / 100) = 1196 26P / 100 = 1196 ⇒ 26P = 119600 ⇒ P = Rs 4600. Therefore, the sum of money is Rs 4600."
+      },
+      {
+        "q": 18,
+        "topic": "Trigonometry",
+        "question": "If the length of a rectangle is increased by 20% and its breadth is decreased by 10%, then what is the percentage change in its area?",
+        "options": {
+          "A": "10% increase",
+          "B": "8% increase",
+          "C": "8% decrease",
+          "D": "12% increase"
+        },
+        "correct": "B",
+        "explanation": "Using effective percentage change formula: Percentage change = x + y + (x × y) / 100 Here x = +20% (increase) and y = -10% (decrease). Percentage change = 20 + (-10) + (20 × -10) / 100 = 10 - 200 / 100 = 10 - 2 = +8%. Since the result is positive, the area increases by 8%."
+      },
+      {
+        "q": 19,
+        "topic": "Mensuration",
+        "question": "The curved surface area of a right circular cylinder is 660 cm^2 and its height is 15 cm. What is the volume of the cylinder? (Take π = 22 / 7)",
+        "options": {
+          "A": "2205 cm^3",
+          "B": "2250 cm^3",
+          "C": "2310 cm^3",
+          "D": "2420 cm^3"
+        },
+        "correct": "C",
+        "explanation": "Curved surface area of cylinder = 2 × π × r × h = 660. 2 × (22 / 7) × r × 15 = 660 (660 / 7) × r = 660 ⇒ r = 7 cm. Volume of cylinder = π × r^2 × h = (22 / 7) × (7)^2 × 15 = 22 × 7 × 15 = 154 × 15 = 2310 cm^3."
+      },
+      {
+        "q": 20,
+        "topic": "Trigonometry",
+        "question": "Two pipes A and B can fill a tank in 15 hours and 20 hours respectively, while a third pipe C can empty the full tank in 30 hours. If all three pipes are opened together, in how many hours will the tank be completely filled?",
+        "options": {
+          "A": "10 hours",
+          "B": "11 hours",
+          "C": "13 hours",
+          "D": "12 hours"
+        },
+        "correct": "D",
+        "explanation": "Let total capacity of tank = LCM(15, 20, 30) = 60 units. Efficiency of pipe A = 60 / 15 = +4 units/hour. Efficiency of pipe B = 60 / 20 = +3 units/hour. Efficiency of pipe C = 60 / 30 = -2 units/hour (emptying). Combined efficiency of A, B, and C = 4 + 3 - 2 = 5 units/hour. Time taken to fill the tank = 60 / 5 = 12 hours."
+      },
+      {
+        "q": 21,
+        "topic": "Trigonometry",
+        "question": "A single discount equivalent to three successive discounts of 10%, 20%, and 25% is equal to:",
+        "options": {
+          "A": "46%",
+          "B": "48%",
+          "C": "50%",
+          "D": "45%"
+        },
+        "correct": "A",
+        "explanation": "Let Marked Price = 100. Price after 1st discount (10%) = 100 × (90 / 100) = 90. Price after 2nd discount (20%) = 90 × (80 / 100) = 72. Price after 3rd discount (25%) = 72 × (75 / 100) = 54. Single equivalent discount = Marked Price - Final Price = 100 - 54 = 46%."
+      },
+      {
+        "q": 22,
+        "topic": "Trigonometry",
+        "question": "If x - y = 5 and xy = 15, then what is the value of x^3 - y^3?",
+        "options": {
+          "A": "325",
+          "B": "350",
+          "C": "300",
+          "D": "375"
+        },
+        "correct": "B",
+        "explanation": "Using algebraic identity: x^3 - y^3 = (x - y)^3 + 3xy(x - y) Substitute given values: x^3 - y^3 = (5)^3 + 3(15)(5) = 125 + 225 = 350."
+      },
+      {
+        "q": 23,
+        "topic": "Trigonometry",
+        "question": "A chord of length 16 cm is at a distance of 6 cm from the center of a circle. What is the radius of the circle?",
+        "options": {
+          "A": "8 cm",
+          "B": "9 cm",
+          "C": "10 cm",
+          "D": "12 cm"
+        },
+        "correct": "C",
+        "explanation": "The perpendicular drawn from the center of a circle to a chord bisects the chord. Half chord length = 16 / 2 = 8 cm. Distance from center = 6 cm. By Pythagoras theorem in the right triangle formed by radius, distance, and half chord: Radius = sqrt(6^2 + 8^2) = sqrt(36 + 64) = sqrt(100) = 10 cm."
+      },
+      {
+        "q": 24,
+        "topic": "Statistics and Probability",
+        "question": "The mean proportional between 12 and 48 is:",
+        "options": {
+          "A": "20",
+          "B": "22",
+          "C": "28",
+          "D": "24"
+        },
+        "correct": "D",
+        "explanation": "Mean proportional between two numbers 'a' and 'b' is given by sqrt(a × b). Mean proportional = sqrt(12 × 48) = sqrt(576) = 24."
+      },
+      {
+        "q": 25,
+        "topic": "Trigonometry",
+        "question": "A thief steals a car at 1:30 PM and drives it at 40 km/h. The theft is discovered at 2:00 PM and the owner sets off in another car at 50 km/h. At what time will the owner catch the thief?",
+        "options": {
+          "A": "3:30 PM",
+          "B": "4:30 PM",
+          "C": "5:00 PM",
+          "D": "4:00 PM"
+        },
+        "correct": "D",
+        "explanation": "Time elapsed between theft and discovery = 2:00 PM - 1:30 PM = 30 minutes = 0.5 hours. Distance covered by thief in 0.5 hours = Speed × Time = 40 × 0.5 = 20 km. Relative speed of owner with respect to thief = 50 - 40 = 10 km/h. Time taken by owner to catch thief = Distance / Relative speed = 20 / 10 = 2 hours. Time at which owner catches thief = 2:00 PM + 2 hours = 4:00 PM."
+      }
+    ],
+    "English Comprehension": [
+      {
+        "q": 1,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate synonym of the given word: FASTIDIOUS",
+        "options": {
+          "A": "Meticulous",
+          "B": "Careless",
+          "C": "Indifferent",
+          "D": "Amiable"
+        },
+        "correct": "A",
+        "explanation": "'Fastidious' means very attentive to and concerned about accuracy and detail. 'Meticulous' also means showing great attention to detail, making it the most appropriate synonym."
+      },
+      {
+        "q": 2,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate antonym of the given word: EPHEMERAL",
+        "options": {
+          "A": "Transient",
+          "B": "Perpetual",
+          "C": "Fleeting",
+          "D": "Evanescent"
+        },
+        "correct": "B",
+        "explanation": "'Ephemeral' means lasting for a very short time. 'Perpetual' means never ending or changing, making it the exact antonym."
+      },
+      {
+        "q": 3,
+        "topic": "Spelling",
+        "question": "Select the correctly spelt word.",
+        "options": {
+          "A": "Accomodation",
+          "B": "Accomodasion",
+          "C": "Accommodation",
+          "D": "Acommodation"
+        },
+        "correct": "C",
+        "explanation": "The correct spelling is 'Accommodation', which contains double 'c' and double 'm'."
+      },
+      {
+        "q": 4,
+        "topic": "Vocabulary",
+        "question": "Select the option that can be used as a one-word substitute for the given group of words: A person who pretends to have virtues, moral or religious beliefs, principles, etc., that he or she does not actually possess.",
+        "options": {
+          "A": "Egotist",
+          "B": "Fanatic",
+          "C": "Pedant",
+          "D": "Hypocrite"
+        },
+        "correct": "D",
+        "explanation": "A 'Hypocrite' is a person who engages in hypocrisy, pretending to hold principles or virtues that they do not actually practice."
+      },
+      {
+        "q": 5,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate meaning of the given idiom: To burn the midnight oil",
+        "options": {
+          "A": "To work or study late into the night",
+          "B": "To waste resources uselessly",
+          "C": "To cause accidental fire",
+          "D": "To wake up early at dawn"
+        },
+        "correct": "A",
+        "explanation": "The idiom 'to burn the midnight oil' means to read, study, or work late into the night."
+      },
+      {
+        "q": 6,
+        "topic": "Grammar",
+        "question": "Identify the segment in the sentence which contains a grammatical error: Neither the manager nor the employees was present at the meeting when the announcement was made.",
+        "options": {
+          "A": "when the announcement was made",
+          "B": "was present at the meeting",
+          "C": "Neither the manager",
+          "D": "nor the employees"
+        },
+        "correct": "B",
+        "explanation": "When two subjects are connected by 'neither... nor', the verb agrees in number with the subject closer to it. Since 'employees' is plural, the plural verb 'were' should be used instead of 'was'."
+      },
+      {
+        "q": 7,
+        "topic": "Grammar",
+        "question": "Select the option that expresses the given sentence in passive voice: The committee will scrutinize all the application forms thoroughly.",
+        "options": {
+          "A": "All the application forms were scrutinized thoroughly by the committee.",
+          "B": "All the application forms are scrutinized thoroughly by the committee.",
+          "C": "All the application forms will be scrutinized thoroughly by the committee.",
+          "D": "All the application forms have been scrutinized thoroughly by the committee."
+        },
+        "correct": "C",
+        "explanation": "The active voice sentence is in Simple Future tense ('will scrutinize'). In passive voice, 'will + V1' changes to 'will be + V3' ('will be scrutinized')."
+      },
+      {
+        "q": 8,
+        "topic": "Grammar",
+        "question": "Select the option that expresses the given sentence in indirect speech: He said to his friend, 'Where are you going for the summer vacation?'",
+        "options": {
+          "A": "He asked his friend where was he going for the summer vacation.",
+          "B": "He told his friend where he is going for the summer vacation.",
+          "C": "He asked his friend where he had gone for the summer vacation.",
+          "D": "He asked his friend where he was going for the summer vacation."
+        },
+        "correct": "D",
+        "explanation": "In reporting interrogative sentences starting with question words ('where'), the reporting verb 'said to' becomes 'asked', present continuous ('are going') changes to past continuous ('was going'), and word order becomes assertive."
+      },
+      {
+        "q": 9,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate synonym of the given word: PLACATE",
+        "options": {
+          "A": "Appease",
+          "B": "Enrage",
+          "C": "Provoke",
+          "D": "Agitate"
+        },
+        "correct": "A",
+        "explanation": "'Placate' means to make someone less angry or hostile. 'Appease' means to pacify or placate someone by acceding to their demands, making it the correct synonym."
+      },
+      {
+        "q": 10,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate antonym of the given word: AUDACIOUS",
+        "options": {
+          "A": "Daring",
+          "B": "Timid",
+          "C": "Bold",
+          "D": "Rash"
+        },
+        "correct": "B",
+        "explanation": "'Audacious' means showing a willingness to take surprisingly bold risks. 'Timid' means showing a lack of courage or confidence, making it the exact antonym."
+      },
+      {
+        "q": 11,
+        "topic": "Spelling",
+        "question": "Select the correctly spelt word.",
+        "options": {
+          "A": "Burocracy",
+          "B": "Beuraucracy",
+          "C": "Bureaucracy",
+          "D": "Bureaucracey"
+        },
+        "correct": "C",
+        "explanation": "The correct spelling is 'Bureaucracy'."
+      },
+      {
+        "q": 12,
+        "topic": "Vocabulary",
+        "question": "Select the option that can be used as a one-word substitute for the given group of words: One who is indifferent to pleasure or pain.",
+        "options": {
+          "A": "Cynic",
+          "B": "Hedonist",
+          "C": "Recluse",
+          "D": "Stoic"
+        },
+        "correct": "D",
+        "explanation": "A 'Stoic' is a person who can endure pain or hardship without showing feelings or complaining."
+      },
+      {
+        "q": 13,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate meaning of the given idiom: To bite the bullet",
+        "options": {
+          "A": "To face a difficult situation courageously",
+          "B": "To act foolishly under pressure",
+          "C": "To force someone to obey",
+          "D": "To accept defeat gracefully"
+        },
+        "correct": "A",
+        "explanation": "The idiom 'to bite the bullet' means to endure a painful or difficult situation that is unavoidable with courage."
+      },
+      {
+        "q": 14,
+        "topic": "Grammar",
+        "question": "Identify the segment in the sentence which contains a grammatical error: Hardly had he stepped out of the office than it started raining heavily.",
+        "options": {
+          "A": "of the office",
+          "B": "than it started raining heavily",
+          "C": "Hardly had he",
+          "D": "stepped out"
+        },
+        "correct": "B",
+        "explanation": "'Hardly' is always followed by 'when', not 'than'. Therefore, 'than it started' should be replaced with 'when it started'."
+      },
+      {
+        "q": 15,
+        "topic": "Fillers",
+        "question": "Select the most appropriate option to fill in the blank: The magistrate acquitted the accused _______ all charges after finding no substantial evidence.",
+        "options": {
+          "A": "with",
+          "B": "from",
+          "C": "of",
+          "D": "by"
+        },
+        "correct": "C",
+        "explanation": "The verb 'acquitted' takes the fixed preposition 'of' when referring to charges or crimes (i.e., 'acquitted of all charges')."
+      },
+      {
+        "q": 16,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate synonym of the given word: LACONIC",
+        "options": {
+          "A": "Verbose",
+          "B": "Talkative",
+          "C": "Garrulous",
+          "D": "Concise"
+        },
+        "correct": "D",
+        "explanation": "'Laconic' means using very few words. 'Concise' means giving a lot of information clearly and in a few words, making it the appropriate synonym."
+      },
+      {
+        "q": 17,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate antonym of the given word: BENEVOLENT",
+        "options": {
+          "A": "Malevolent",
+          "B": "Generous",
+          "C": "Altruistic",
+          "D": "Compassionate"
+        },
+        "correct": "A",
+        "explanation": "'Benevolent' means well-meaning and kindly. 'Malevolent' means having or showing a wish to do evil to others, making it the direct antonym."
+      },
+      {
+        "q": 18,
+        "topic": "Grammar",
+        "question": "Improve the underlined part of the sentence. Choose 'No improvement' if sentence is correct: He is senior than me in the department.",
+        "options": {
+          "A": "to I",
+          "B": "to me",
+          "C": "than I",
+          "D": "No improvement"
+        },
+        "correct": "B",
+        "explanation": "Adjectives ending in '-ior' like senior, junior, superior, inferior take the preposition 'to' instead of 'than', followed by the objective case pronoun ('me'). Thus, 'to me' is correct."
+      },
+      {
+        "q": 19,
+        "topic": "Vocabulary",
+        "question": "Select the option that can be used as a one-word substitute for the given group of words: A government by officials in a state.",
+        "options": {
+          "A": "Oligarchy",
+          "B": "Plutocracy",
+          "C": "Bureaucracy",
+          "D": "Autocracy"
+        },
+        "correct": "C",
+        "explanation": "'Bureaucracy' refers to a system of government in which most of the important decisions are taken by state officials rather than by elected representatives."
+      },
+      {
+        "q": 20,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate meaning of the given idiom: Through thick and thin",
+        "options": {
+          "A": "Under extreme financial pressure",
+          "B": "Through changing weather conditions",
+          "C": "In good times only",
+          "D": "In spite of all obstacles and difficulties"
+        },
+        "correct": "D",
+        "explanation": "The idiom 'through thick and thin' means under all circumstances, no matter how difficult and adverse they are."
+      },
+      {
+        "q": 21,
+        "topic": "Grammar",
+        "question": "Identify the segment in the sentence which contains a grammatical error: The news of his sudden demise were a great shock to everyone in the village.",
+        "options": {
+          "A": "were a great shock",
+          "B": "The news of",
+          "C": "to everyone",
+          "D": "in the village"
+        },
+        "correct": "A",
+        "explanation": "'News' is an uncountable noun and always takes a singular verb. Therefore, 'were a great shock' must be corrected to 'was a great shock'."
+      },
+      {
+        "q": 22,
+        "topic": "Grammar",
+        "question": "Select the option that expresses the given sentence in passive voice: They have constructed a new bridge over the river.",
+        "options": {
+          "A": "A new bridge was constructed over the river by them.",
+          "B": "A new bridge has been constructed over the river by them.",
+          "C": "A new bridge is constructed over the river by them.",
+          "D": "A new bridge had been constructed over the river by them."
+        },
+        "correct": "B",
+        "explanation": "The active sentence is in Present Perfect tense ('have constructed'). In passive voice, 'has/have + V3' changes to 'has/have + been + V3' ('has been constructed')."
+      },
+      {
+        "q": 23,
+        "topic": "Fillers",
+        "question": "Select the most appropriate option to fill in the blank: Despite facing severe financial hardship, she refused to _______ her principles.",
+        "options": {
+          "A": "comply",
+          "B": "conform",
+          "C": "compromise",
+          "D": "yield"
+        },
+        "correct": "C",
+        "explanation": "To 'compromise principles' means to accept standards that are lower than desirable or to abandon moral standards. Contextually, 'compromise' is the most appropriate verb."
+      },
+      {
+        "q": 24,
+        "topic": "Spelling",
+        "question": "Select the incorrectly spelt word.",
+        "options": {
+          "A": "Maintenance",
+          "B": "Perseverance",
+          "C": "Millennium",
+          "D": "Conscientous"
+        },
+        "correct": "D",
+        "explanation": "The word 'Conscientous' is incorrectly spelt. The correct spelling is 'Conscientious'."
+      },
+      {
+        "q": 25,
+        "topic": "Vocabulary",
+        "question": "Select the option that can be used as a one-word substitute for the given group of words: A place where wild animals are kept in their natural environment for protection.",
+        "options": {
+          "A": "Aquarium",
+          "B": "Aviary",
+          "C": "Apiary",
+          "D": "Sanctuary"
+        },
+        "correct": "D",
+        "explanation": "A 'Sanctuary' is a reserve or protected area where wild animals are kept in their natural environment to protect them from hunting or predation."
+      }
+    ]
+  }
+}

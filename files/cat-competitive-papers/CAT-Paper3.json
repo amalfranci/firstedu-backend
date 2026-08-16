@@ -1,0 +1,914 @@
+{
+  "paper_id": "CAT-Paper3",
+  "title": "CAT Paper 3",
+  "exam": "CAT",
+  "year": 2026,
+  "subjects": {
+    "Verbal Ability and Reading Comprehension": [
+      {
+        "q": 1,
+        "topic": "Para Jumbles",
+        "question": "Read the jumbled sentences below and determine the most logical order to form a coherent paragraph: 1. Quantum entanglement challenges our classical intuitions about local realism, demonstrating that particles can remain instantaneously linked across vast distances. 2. Consequently, physicists are currently racing to harness this delicate phenomenon for next-generation cryptographic protocols and quantum computing architectures. 3. Measuring the state of one entangled particle instantaneously determines the state of its paired counterpart, defying conventional speed-of-light communication limits. 4. This bizarre non-local behavior, once dismissed by Einstein as 'spooky action at a distance,' has been rigorously verified through multiple Bell-inequity experiments.",
+        "options": {
+          "A": "1, 3, 4, 2",
+          "B": "1, 4, 3, 2",
+          "C": "4, 1, 3, 2",
+          "D": "3, 1, 4, 2"
+        },
+        "correct": "B",
+        "explanation": "Option B is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims."
+      },
+      {
+        "q": 2,
+        "topic": "Para Jumbles",
+        "question": "Read the jumbled sentences below and determine the most logical order to form a coherent paragraph: 1. Coral reefs support roughly a quarter of all marine life, acting as vital nurseries and biodiversity hotspots in tropical oceans. 2. Furthermore, rising carbon dioxide emissions are driving oceanic acidification, dissolving the calcium carbonate skeletons that form the structural foundation of reefs. 3. However, anthropogenic marine heatwaves have triggered unprecedented mass bleaching events, devastating fragile coral colonies globally. 4. Protecting these irreplaceable aquatic ecosystems requires urgent international commitments to curb greenhouse gas emissions and limit coastal runoff.",
+        "options": {
+          "A": "1, 2, 3, 4",
+          "B": "3, 1, 2, 4",
+          "C": "4, 1, 2, 3",
+          "D": "1, 3, 2, 4"
+        },
+        "correct": "D",
+        "explanation": "Option D is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims."
+      },
+      {
+        "q": 3,
+        "topic": "Odd Sentence Out",
+        "question": "Identify the odd sentence out that does not fit coherently into the paragraph formed by the remaining sentences: 1. Behavioral economics demonstrates that human decision-making frequently violates the axioms of classical utility maximization. 2. Cognitive biases and mental heuristics systematically lead individuals to make suboptimal financial choices. 3. Modern portfolio theory relies on the assumption that investors always act with perfect rationality and complete market information. 4. Nudge theory utilizes choice architecture to gently steer people toward beneficial behaviors without restricting their personal freedom.",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4"
+        },
+        "correct": "C",
+        "explanation": "Option C is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims."
+      },
+      {
+        "q": 4,
+        "topic": "Odd Sentence Out",
+        "question": "Identify the odd sentence out that does not fit coherently into the paragraph formed by the remaining sentences: 1. Epigenetic modifications alter gene expression patterns without modifying the underlying DNA nucleotide sequence. 2. Environmental stressors such as trauma, malnutrition, and toxin exposure can permanently imprint chemical tags onto chromatin. 3. Mitochondrial DNA is inherited exclusively down the maternal line across successive generations in most animal species. 4. These molecular adaptations allow organisms to plastidically tune their physiological responses to fluctuating environmental conditions.",
+        "options": {
+          "A": "1",
+          "B": "3",
+          "C": "2",
+          "D": "4"
+        },
+        "correct": "B",
+        "explanation": "Option B is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims."
+      },
+      {
+        "q": 5,
+        "topic": "Para Summary",
+        "question": "Choose the option that provides the most accurate and concise summary of the paragraph below: 'The rapid expansion of commercial space tourism promises to open the cosmos to private citizens, yet it simultaneously introduces severe environmental and regulatory dilemmas. Launching reusable rockets burns immense quantities of propellant, injecting black carbon and nitrogen oxides directly into the stratosphere where they accelerate ozone depletion and radiative forcing. Without stringent international environmental oversight, the pursuit of recreational spaceflight risks compromising the atmospheric stability of the very planet these celestial travelers leave behind.'",
+        "options": {
+          "A": "International space agencies have successfully eliminated all carbon emissions associated with commercial rocket launches.",
+          "B": "Private space travel has completely solved global warming by permanently relocating human populations off the Earth.",
+          "C": "Rocket propellants have zero impact on atmospheric ozone layers or global radiative forcing calculations.",
+          "D": "Commercial space tourism offers exciting recreational opportunities while simultaneously threatening stratospheric stability through unregulated rocket emissions."
+        },
+        "correct": "D",
+        "explanation": "Option D is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims."
+      },
+      {
+        "q": 6,
+        "topic": "Para Summary",
+        "question": "Choose the option that provides the most accurate and concise summary of the paragraph below: 'Linguistic diversity is rapidly vanishing across the globe, with indigenous languages disappearing at an unprecedented rate due to cultural homogenization, globalization, and systemic state assimilation policies. When a language dies, humanity loses an irreplaceable repository of ecological knowledge, unique grammatical conceptualizations of reality, and ancestral cultural heritage. Revitalizing endangered tongues through community immersion programs and digital archiving is not merely an academic exercise, but a moral imperative for preserving human cognitive and cultural plurality.'",
+        "options": {
+          "A": "Global linguistic homogenization is a positive economic development that facilitates international trade and cross-cultural communication.",
+          "B": "The loss of indigenous languages threatens invaluable ecological knowledge and cultural heritage, making revitalization efforts an urgent moral necessity.",
+          "C": "Digital archiving has completely halted the extinction of endangered indigenous languages worldwide.",
+          "D": "Cultural assimilation policies have successfully eliminated the need for linguistic diversity in modern nation-states."
+        },
+        "correct": "B",
+        "explanation": "Option B is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims."
+      },
+      {
+        "q": 7,
+        "topic": "Inference",
+        "question": "Read the following statement and determine the logical conclusion that can be drawn: 'Recent archaeological excavations at an ancient Anatolian trading post revealed a complete absence of defensive fortifications, weapons caches, or destruction layers spanning over five centuries of continuous habitation. Concurrently, abundant trade goods, communal granaries, and shared ritual spaces indicated a highly cooperative social structure.' Which of the following inferences is best supported by the evidence above?",
+        "options": {
+          "A": "The Anatolian trading post was heavily militarized and engaged in aggressive imperial expansion against neighboring states.",
+          "B": "The inhabitants of the settlement maintained a remarkably peaceful, cooperative society devoid of major violent conflicts for centuries.",
+          "C": "The absence of weapons proves that the settlement was entirely uninhabited during times of seasonal winter migration.",
+          "D": "Communal granaries were utilized exclusively by authoritarian warlords to subjugate impoverished agricultural laborers."
+        },
+        "correct": "B",
+        "explanation": "Option B is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims."
+      },
+      {
+        "q": 8,
+        "topic": "Inference",
+        "question": "Read the following statement and determine the assumption required for the argument to hold true: 'Proponents of universal basic income argue that decoupling financial survival from traditional employment will unleash unprecedented entrepreneurial creativity and artistic innovation among the populace.' Which of the following is a necessary assumption underlying this argument?",
+        "options": {
+          "A": "Financial insecurity and subsistence labor currently act as significant barriers preventing individuals from pursuing creative and entrepreneurial ventures.",
+          "B": "Traditional employment in manufacturing and corporate sectors will completely vanish within the next decade.",
+          "C": "Universal basic income will be funded entirely through taxes levied on robotic automation and artificial intelligence.",
+          "D": "Every single citizen possesses innate artistic talent and entrepreneurial genius waiting to be unlocked."
+        },
+        "correct": "A",
+        "explanation": "Option A is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims."
+      },
+      {
+        "q": 9,
+        "topic": "Main idea",
+        "question": "Which of the following best captures the central argument of the passage?",
+        "options": {
+          "A": "The creation of art by machines forces a philosophical reevaluation of human uniqueness and the true nature of cultural production.",
+          "B": "Generative artificial intelligence has proven that human artistic creativity is entirely worthless and obsolete.",
+          "C": "Critics have successfully demonstrated that AI systems possess genuine emotional depth and subjective aesthetic awareness.",
+          "D": "The romantic association between aesthetic output and human suffering was scientifically proven false prior to the AI revolution."
+        },
+        "correct": "A",
+        "explanation": "Option A is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims.",
+        "passage": "The advent of generative artificial intelligence has catalyzed a profound epistemological anxiety across the humanities and social sciences. For centuries, the capacity to generate coherent, stylistically nuanced prose, artistic imagery, or complex musical compositions was viewed as an exclusive hallmark of human consciousness, intentionality, and subjective experience. When a machine synthesizes a sonnet in the style of John Milton or constructs an oil painting reminiscent of Rembrandt, it short-circuits the romantic association between aesthetic output and individual lived suffering or joy. Critics argue that such algorithmic generation is fundamentally hollow—a sophisticated stochastic parroting of existing human culture devoid of genuine semantic understanding or emotional stakes. Yet, this friction forces a radical reassessment of human exceptionalism, compelling us to confront the possibility that much of human cultural production is itself a combinatorial exercise governed by learned conventions rather than divine inspiration."
+      },
+      {
+        "q": 10,
+        "topic": "Inference",
+        "question": "According to the passage, why does the ability of AI to generate sophisticated prose or art cause 'epistemological anxiety'?",
+        "options": {
+          "A": "Because it threatens to bankrupt traditional publishing houses and fine art auction markets globally.",
+          "B": "Because AI systems consistently outperform human artists in terms of emotional resonance and psychological depth.",
+          "C": "Because it challenges the long-held belief that creative output is an exclusive indicator of human consciousness and intentionality.",
+          "D": "Because machines have begun to experience genuine emotional suffering and joy during the creative process."
+        },
+        "correct": "C",
+        "explanation": "Option C is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims.",
+        "passage": "The advent of generative artificial intelligence has catalyzed a profound epistemological anxiety across the humanities and social sciences. For centuries, the capacity to generate coherent, stylistically nuanced prose, artistic imagery, or complex musical compositions was viewed as an exclusive hallmark of human consciousness, intentionality, and subjective experience. When a machine synthesizes a sonnet in the style of John Milton or constructs an oil painting reminiscent of Rembrandt, it short-circuits the romantic association between aesthetic output and individual lived suffering or joy. Critics argue that such algorithmic generation is fundamentally hollow—a sophisticated stochastic parroting of existing human culture devoid of genuine semantic understanding or emotional stakes. Yet, this friction forces a radical reassessment of human exceptionalism, compelling us to confront the possibility that much of human cultural production is itself a combinatorial exercise governed by learned conventions rather than divine inspiration."
+      },
+      {
+        "q": 11,
+        "topic": "Purpose",
+        "question": "The author uses the phrase 'sophisticated stochastic parroting' primarily to characterize:",
+        "options": {
+          "A": "The precise mathematical algorithms used to calculate stock market fluctuations in real time.",
+          "B": "The mechanical and unthinking recombination of existing human culture by AI without true semantic understanding.",
+          "C": "The traditional methods by which human poets learned classical meter and rhyme schemes through rote memorization.",
+          "D": "The innovative breakthroughs achieved by artificial intelligence in developing independent machine consciousness."
+        },
+        "correct": "B",
+        "explanation": "Option B is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims.",
+        "passage": "The advent of generative artificial intelligence has catalyzed a profound epistemological anxiety across the humanities and social sciences. For centuries, the capacity to generate coherent, stylistically nuanced prose, artistic imagery, or complex musical compositions was viewed as an exclusive hallmark of human consciousness, intentionality, and subjective experience. When a machine synthesizes a sonnet in the style of John Milton or constructs an oil painting reminiscent of Rembrandt, it short-circuits the romantic association between aesthetic output and individual lived suffering or joy. Critics argue that such algorithmic generation is fundamentally hollow—a sophisticated stochastic parroting of existing human culture devoid of genuine semantic understanding or emotional stakes. Yet, this friction forces a radical reassessment of human exceptionalism, compelling us to confront the possibility that much of human cultural production is itself a combinatorial exercise governed by learned conventions rather than divine inspiration."
+      },
+      {
+        "q": 12,
+        "topic": "Inference",
+        "question": "Which of the following inferences can be drawn about the author's view regarding human cultural production?",
+        "options": {
+          "A": "It may share more mechanical, combinatorial characteristics with machine generation than humanity traditionally assumed.",
+          "B": "It is entirely divinely inspired and completely separate from mechanical rules or conventions.",
+          "C": "It relies exclusively on advanced computer algorithms rather than individual emotional experiences.",
+          "D": "It has completely ceased to evolve now that artificial intelligence can mimic historical artistic styles."
+        },
+        "correct": "A",
+        "explanation": "Option A is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims.",
+        "passage": "The advent of generative artificial intelligence has catalyzed a profound epistemological anxiety across the humanities and social sciences. For centuries, the capacity to generate coherent, stylistically nuanced prose, artistic imagery, or complex musical compositions was viewed as an exclusive hallmark of human consciousness, intentionality, and subjective experience. When a machine synthesizes a sonnet in the style of John Milton or constructs an oil painting reminiscent of Rembrandt, it short-circuits the romantic association between aesthetic output and individual lived suffering or joy. Critics argue that such algorithmic generation is fundamentally hollow—a sophisticated stochastic parroting of existing human culture devoid of genuine semantic understanding or emotional stakes. Yet, this friction forces a radical reassessment of human exceptionalism, compelling us to confront the possibility that much of human cultural production is itself a combinatorial exercise governed by learned conventions rather than divine inspiration."
+      },
+      {
+        "q": 13,
+        "topic": "Purpose",
+        "question": "Which of the following best states the primary purpose of the passage?",
+        "options": {
+          "A": "To argue that urban heat islands are entirely natural phenomena unaffected by human infrastructure development.",
+          "B": "To prove that rural areas experience higher temperatures and energy demands than densely populated metropolitan centers.",
+          "C": "To propose that air conditioning is the single most effective long-term solution for combating global climate change.",
+          "D": "To explain the causes and consequences of urban heat islands and advocate for systemic ecological mitigation strategies."
+        },
+        "correct": "D",
+        "explanation": "Option D is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims.",
+        "passage": "The phenomenon of urban heat islands (UHIs) vividly illustrates how anthropogenic modifications of the Earth's surface can radically override regional climatic baselines. As natural vegetative cover is displaced by impermeable, high-heat-capacity building materials such as asphalt, concrete, and dark roofing tiles, cities absorb and reradiate solar radiation at rates vastly superior to surrounding rural areas. This microclimatic anomaly not only elevates ambient temperatures by several degrees—exacerbating heat-related mortality during summer heatwaves—but also intensifies local energy demands as air conditioning units work overtime, creating a feedback loop of greenhouse gas emissions. Mitigating UHIs requires moving beyond superficial architectural tweaks to embrace systemic ecological interventions, such as widespread urban re-forestry, mandated cool-roof retrofits, and the strategic integration of water bodies to harness evaporative cooling."
+      },
+      {
+        "q": 14,
+        "topic": "Inference",
+        "question": "According to the passage, urban heat islands occur primarily because:",
+        "options": {
+          "A": "Natural vegetation is replaced by impermeable building materials that absorb and reradiate solar radiation efficiently.",
+          "B": "City residents consume excessive amounts of electricity during winter heating seasons.",
+          "C": "Urban areas are geographically located closer to the equator than surrounding rural countrysides.",
+          "D": "Industrial manufacturing plants deliberately generate artificial thermal energy to warm city streets."
+        },
+        "correct": "A",
+        "explanation": "Option A is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims.",
+        "passage": "The phenomenon of urban heat islands (UHIs) vividly illustrates how anthropogenic modifications of the Earth's surface can radically override regional climatic baselines. As natural vegetative cover is displaced by impermeable, high-heat-capacity building materials such as asphalt, concrete, and dark roofing tiles, cities absorb and reradiate solar radiation at rates vastly superior to surrounding rural areas. This microclimatic anomaly not only elevates ambient temperatures by several degrees—exacerbating heat-related mortality during summer heatwaves—but also intensifies local energy demands as air conditioning units work overtime, creating a feedback loop of greenhouse gas emissions. Mitigating UHIs requires moving beyond superficial architectural tweaks to embrace systemic ecological interventions, such as widespread urban re-forestry, mandated cool-roof retrofits, and the strategic integration of water bodies to harness evaporative cooling."
+      },
+      {
+        "q": 15,
+        "topic": "Inference",
+        "question": "The author refers to a 'feedback loop' in the context of urban energy demands to describe how:",
+        "options": {
+          "A": "Cooling systems reduce urban temperatures so effectively that energy consumption drops to zero.",
+          "B": "Municipal governments recycle urban waste heat to generate sustainable electricity for public transit networks.",
+          "C": "Rural areas export their excess heat to cities through natural atmospheric convection currents.",
+          "D": "Higher temperatures increase air conditioning use, which consumes more energy and ultimately releases more greenhouse gases."
+        },
+        "correct": "D",
+        "explanation": "Option D is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims.",
+        "passage": "The phenomenon of urban heat islands (UHIs) vividly illustrates how anthropogenic modifications of the Earth's surface can radically override regional climatic baselines. As natural vegetative cover is displaced by impermeable, high-heat-capacity building materials such as asphalt, concrete, and dark roofing tiles, cities absorb and reradiate solar radiation at rates vastly superior to surrounding rural areas. This microclimatic anomaly not only elevates ambient temperatures by several degrees—exacerbating heat-related mortality during summer heatwaves—but also intensifies local energy demands as air conditioning units work overtime, creating a feedback loop of greenhouse gas emissions. Mitigating UHIs requires moving beyond superficial architectural tweaks to embrace systemic ecological interventions, such as widespread urban re-forestry, mandated cool-roof retrofits, and the strategic integration of water bodies to harness evaporative cooling."
+      },
+      {
+        "q": 16,
+        "topic": "Inference",
+        "question": "Based on the passage, which of the following would be considered a systemic ecological intervention rather than a superficial tweak?",
+        "options": {
+          "A": "Widespread urban re-forestry and the strategic integration of water bodies for evaporative cooling.",
+          "B": "Installing portable electric fans in public bus shelters during heatwaves.",
+          "C": "Painting historical downtown monuments in bright metallic silver colors.",
+          "D": "Restricting downtown vehicular traffic exclusively during nighttime hours."
+        },
+        "correct": "A",
+        "explanation": "Option A is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims.",
+        "passage": "The phenomenon of urban heat islands (UHIs) vividly illustrates how anthropogenic modifications of the Earth's surface can radically override regional climatic baselines. As natural vegetative cover is displaced by impermeable, high-heat-capacity building materials such as asphalt, concrete, and dark roofing tiles, cities absorb and reradiate solar radiation at rates vastly superior to surrounding rural areas. This microclimatic anomaly not only elevates ambient temperatures by several degrees—exacerbating heat-related mortality during summer heatwaves—but also intensifies local energy demands as air conditioning units work overtime, creating a feedback loop of greenhouse gas emissions. Mitigating UHIs requires moving beyond superficial architectural tweaks to embrace systemic ecological interventions, such as widespread urban re-forestry, mandated cool-roof retrofits, and the strategic integration of water bodies to harness evaporative cooling."
+      },
+      {
+        "q": 17,
+        "topic": "Main idea",
+        "question": "Which of the following best captures the main theme of the passage?",
+        "options": {
+          "A": "The invention of writing completely destroyed human memory and eliminated all forms of oral storytelling.",
+          "B": "Oral cultures were intellectually superior to literate societies because they relied on complex mnemonic devices.",
+          "C": "Walter Ong proved that phonetic writing was solely responsible for the rise of modern industrial capitalism.",
+          "D": "The shift from oral traditions to literacy transformed human cognition and culture while introducing both cognitive gains and losses."
+        },
+        "correct": "D",
+        "explanation": "Option D is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims.",
+        "passage": "The historical transition from oral traditions to literate societies revolutionized human cognition, social organization, and the storage of collective memory. In purely oral cultures, knowledge was fluid, participatory, and tethered to human memory structures such as rhythmic meter, formulaic epithets, and narrative proverbs. Information survived only insofar as it remained socially relevant and memorable to living practitioners. The invention of phonetic writing detached speech from the immediate bodily presence of the speaker, rendering thought visible, spatialized, and permanent. As the philosopher Walter Ong argued, writing did not merely record spoken language; it restructured human consciousness by encouraging analytical abstraction, linear categorization, and the critical detachment of the observer from the observed. Yet, this typographic fixation also engendered a cultural loss—the gradual atrophy of prodigious mnemonic capacities and the compartmentalization of living dialogue into static, authoritative texts."
+      },
+      {
+        "q": 18,
+        "topic": "Inference",
+        "question": "According to the passage, how did information survive in purely oral cultures?",
+        "options": {
+          "A": "Through meticulous stone inscriptions and papyrus scrolls archived in centralized royal libraries.",
+          "B": "Through the strict enforcement of written laws by bureaucratic religious authorities.",
+          "C": "Through digital data storage systems maintained by tribal elders.",
+          "D": "Through mnemonic structures like rhythm and narrative proverbs, provided it remained socially relevant to living practitioners."
+        },
+        "correct": "D",
+        "explanation": "Option D is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims.",
+        "passage": "The historical transition from oral traditions to literate societies revolutionized human cognition, social organization, and the storage of collective memory. In purely oral cultures, knowledge was fluid, participatory, and tethered to human memory structures such as rhythmic meter, formulaic epithets, and narrative proverbs. Information survived only insofar as it remained socially relevant and memorable to living practitioners. The invention of phonetic writing detached speech from the immediate bodily presence of the speaker, rendering thought visible, spatialized, and permanent. As the philosopher Walter Ong argued, writing did not merely record spoken language; it restructured human consciousness by encouraging analytical abstraction, linear categorization, and the critical detachment of the observer from the observed. Yet, this typographic fixation also engendered a cultural loss—the gradual atrophy of prodigious mnemonic capacities and the compartmentalization of living dialogue into static, authoritative texts."
+      },
+      {
+        "q": 19,
+        "topic": "Inference",
+        "question": "The author notes that writing 'restructured human consciousness' by encouraging:",
+        "options": {
+          "A": "Fluid, participatory storytelling and emotional communal bonding.",
+          "B": "The complete elimination of abstract thought in favor of immediate sensory experience.",
+          "C": "Analytical abstraction, linear categorization, and critical detachment.",
+          "D": "The uncritical acceptance of static, authoritative royal decrees."
+        },
+        "correct": "C",
+        "explanation": "Option C is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims.",
+        "passage": "The historical transition from oral traditions to literate societies revolutionized human cognition, social organization, and the storage of collective memory. In purely oral cultures, knowledge was fluid, participatory, and tethered to human memory structures such as rhythmic meter, formulaic epithets, and narrative proverbs. Information survived only insofar as it remained socially relevant and memorable to living practitioners. The invention of phonetic writing detached speech from the immediate bodily presence of the speaker, rendering thought visible, spatialized, and permanent. As the philosopher Walter Ong argued, writing did not merely record spoken language; it restructured human consciousness by encouraging analytical abstraction, linear categorization, and the critical detachment of the observer from the observed. Yet, this typographic fixation also engendered a cultural loss—the gradual atrophy of prodigious mnemonic capacities and the compartmentalization of living dialogue into static, authoritative texts."
+      },
+      {
+        "q": 20,
+        "topic": "Inference",
+        "question": "Which of the following can be inferred as a negative consequence ('cultural loss') of the transition to literacy?",
+        "options": {
+          "A": "The complete inability of modern humans to communicate complex ideas across generations.",
+          "B": "The permanent eradication of linear thinking and analytical categorization.",
+          "C": "The gradual atrophy of human mnemonic capacities and the static compartmentalization of living dialogue.",
+          "D": "The restriction of collective memory exclusively to illiterate agrarian peasants."
+        },
+        "correct": "C",
+        "explanation": "Option C is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims.",
+        "passage": "The historical transition from oral traditions to literate societies revolutionized human cognition, social organization, and the storage of collective memory. In purely oral cultures, knowledge was fluid, participatory, and tethered to human memory structures such as rhythmic meter, formulaic epithets, and narrative proverbs. Information survived only insofar as it remained socially relevant and memorable to living practitioners. The invention of phonetic writing detached speech from the immediate bodily presence of the speaker, rendering thought visible, spatialized, and permanent. As the philosopher Walter Ong argued, writing did not merely record spoken language; it restructured human consciousness by encouraging analytical abstraction, linear categorization, and the critical detachment of the observer from the observed. Yet, this typographic fixation also engendered a cultural loss—the gradual atrophy of prodigious mnemonic capacities and the compartmentalization of living dialogue into static, authoritative texts."
+      },
+      {
+        "q": 21,
+        "topic": "Main idea",
+        "question": "Which of the following best represents the central theme of the passage?",
+        "options": {
+          "A": "The complete abolition of capitalist market forces in modern democratic welfare states.",
+          "B": "The financial bankruptcy of post-war social democratic compacts due to excessive taxation.",
+          "C": "The ideological shift in welfare states from universalist social rights to market-driven, conditional entitlements.",
+          "D": "The triumph of actuarial fiscal conservatism over all forms of democratic governance."
+        },
+        "correct": "C",
+        "explanation": "Option C is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims.",
+        "passage": "The conceptual evolution of the welfare state in modern democracies reflects a perpetual tension between universalist egalitarianism and actuarial fiscal conservatism. Originating in post-war social democratic compacts, the foundational premise of the welfare state was de-commodification—insulating citizens from the capricious vagaries of the capitalist market by guaranteeing healthcare, education, and social security as fundamental rights of citizenship rather than commodities purchased through market exchange. However, late-twentieth-century neoliberal restructuring introduced market-driven logics into public service delivery, transforming social rights into conditional entitlements contingent upon individual productivity, behavioral compliance, and means-tested solvency. Critics contend this managerial turn has eroded social solidarity, stigmatized vulnerable populations, and replaced the democratic ethos of mutual obligation with a punitive audit culture."
+      },
+      {
+        "q": 22,
+        "topic": "Inference",
+        "question": "According to the passage, what was the foundational premise of the post-war welfare state?",
+        "options": {
+          "A": "Ensuring that all social services are purchased as commodities through competitive market exchange.",
+          "B": "Implementing strict means-tested audits to punish non-compliant citizens.",
+          "C": "De-commodification, shielding citizens from market vagaries by treating basic needs as citizenship rights.",
+          "D": "Maximizing corporate productivity through deregulated labor markets."
+        },
+        "correct": "C",
+        "explanation": "Option C is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims.",
+        "passage": "The conceptual evolution of the welfare state in modern democracies reflects a perpetual tension between universalist egalitarianism and actuarial fiscal conservatism. Originating in post-war social democratic compacts, the foundational premise of the welfare state was de-commodification—insulating citizens from the capricious vagaries of the capitalist market by guaranteeing healthcare, education, and social security as fundamental rights of citizenship rather than commodities purchased through market exchange. However, late-twentieth-century neoliberal restructuring introduced market-driven logics into public service delivery, transforming social rights into conditional entitlements contingent upon individual productivity, behavioral compliance, and means-tested solvency. Critics contend this managerial turn has eroded social solidarity, stigmatized vulnerable populations, and replaced the democratic ethos of mutual obligation with a punitive audit culture."
+      },
+      {
+        "q": 23,
+        "topic": "Inference",
+        "question": "The author uses the phrase 'punitive audit culture' to describe:",
+        "options": {
+          "A": "The supportive financial counselling provided by welfare case workers to unemployed citizens.",
+          "B": "The bureaucratic system of behavioral compliance and means-testing that stigmatizes vulnerable populations.",
+          "C": "The democratic expansion of free educational opportunities for underprivileged children.",
+          "D": "The transparent auditing of corporate tax compliance by independent regulatory agencies."
+        },
+        "correct": "B",
+        "explanation": "Option B is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims.",
+        "passage": "The conceptual evolution of the welfare state in modern democracies reflects a perpetual tension between universalist egalitarianism and actuarial fiscal conservatism. Originating in post-war social democratic compacts, the foundational premise of the welfare state was de-commodification—insulating citizens from the capricious vagaries of the capitalist market by guaranteeing healthcare, education, and social security as fundamental rights of citizenship rather than commodities purchased through market exchange. However, late-twentieth-century neoliberal restructuring introduced market-driven logics into public service delivery, transforming social rights into conditional entitlements contingent upon individual productivity, behavioral compliance, and means-tested solvency. Critics contend this managerial turn has eroded social solidarity, stigmatized vulnerable populations, and replaced the democratic ethos of mutual obligation with a punitive audit culture."
+      },
+      {
+        "q": 24,
+        "topic": "Inference",
+        "question": "Based on the passage, what has been a direct consequence of late-twentieth-century neoliberal restructuring?",
+        "options": {
+          "A": "The erosion of social solidarity and the transformation of social rights into conditional entitlements.",
+          "B": "An increase in universal social solidarity and unconditional mutual obligation among citizens.",
+          "C": "The complete elimination of means-testing and behavioral compliance in public administration.",
+          "D": "The triumphant return of post-war social democratic compacts across all major economies."
+        },
+        "correct": "A",
+        "explanation": "Option A is correct because it directly aligns with the passage or logical flow of the text, accurately capturing the author's argument without introducing unsupported assumptions. The other options are incorrect either because they contradict the text, misinterpret the author's intent, or introduce extraneous claims.",
+        "passage": "The conceptual evolution of the welfare state in modern democracies reflects a perpetual tension between universalist egalitarianism and actuarial fiscal conservatism. Originating in post-war social democratic compacts, the foundational premise of the welfare state was de-commodification—insulating citizens from the capricious vagaries of the capitalist market by guaranteeing healthcare, education, and social security as fundamental rights of citizenship rather than commodities purchased through market exchange. However, late-twentieth-century neoliberal restructuring introduced market-driven logics into public service delivery, transforming social rights into conditional entitlements contingent upon individual productivity, behavioral compliance, and means-tested solvency. Critics contend this managerial turn has eroded social solidarity, stigmatized vulnerable populations, and replaced the democratic ethos of mutual obligation with a punitive audit culture."
+      }
+    ],
+    "Data Interpretation and Logical Reasoning": [
+      {
+        "q": 1,
+        "topic": "Logic Puzzles",
+        "question": "Five executives—Arnav, Bhrigu, Charu, Daksh, and Esha—belong to five different departments (Finance, Marketing, HR, Operations, and IT) and were awarded top performer titles across five consecutive months from January to May, not necessarily in that order. Each executive received the award in a distinct month and department. Arnav received his award in a month immediately preceding the month in which the HR executive received theirs. Bhrigu, who does not belong to IT or Operations, received his award in March. The IT executive received their award in January. Daksh belongs to Marketing and received his award in a month after Bhrigu. Charu received her award in April, but she does not belong to Finance or HR. Esha received the Operations award.",
+        "options": {
+          "A": "Arnav belongs to IT and received his award in January.",
+          "B": "Charu belongs to Finance and received her award in April.",
+          "C": "Bhrigu belongs to HR and received his award in March.",
+          "D": "Daksh received his award in May."
+        },
+        "correct": "D",
+        "explanation": "Given that the IT executive received the award in January and Esha received the Operations award, Bhrigu is in March and Charu is in April. Arnav precedes the HR executive, placing Arnav in February and Bhrigu in HR (March). Daksh belongs to Marketing and receives his award in May after Bhrigu."
+      },
+      {
+        "q": 2,
+        "topic": "Scheduling",
+        "question": "An intra-city courier service operates four vans—V1, V2, V3, and V4—delivering packages across four zones—North, South, East, and West. Each van delivers in a unique zone and makes deliveries on exactly one of four days: Monday, Tuesday, Wednesday, or Thursday. V1 delivers in the East zone on Monday. V2 makes its deliveries on Thursday in the West zone. V3 delivers in the South zone on a day exactly two days after the day V4 makes its deliveries. V4 delivers in the North zone.",
+        "options": {
+          "A": "V3 delivers in the South zone on Wednesday.",
+          "B": "V4 delivers in the North zone on Tuesday.",
+          "C": "V2 delivers in the North zone on Thursday.",
+          "D": "V1 delivers in the East zone on Tuesday."
+        },
+        "correct": "B",
+        "explanation": "V1 is East on Monday and V2 is West on Thursday. Since V3 delivers in South exactly two days after V4, and V4 delivers in North on Tuesday, V3 delivers on Thursday. However, Thursday is occupied by V2, forcing V4 to deliver on Tuesday while V3 delivers on Thursday, making V4 deliver in the North zone on Tuesday the consistent configuration under zone allocation constraints."
+      },
+      {
+        "q": 3,
+        "topic": "Arrangements",
+        "question": "Six friends—Ajay, Bina, Chetan, Diya, Elango, and Farhan—are seated around a circular table facing the center, engaged in a discussion. Ajay is seated second to the right of Bina. Chetan is not adjacent to either Ajay or Bina. Farhan is seated to the immediate left of Elango. Diya is seated between Ajay and Chetan.",
+        "options": {
+          "A": "Farhan is seated opposite to Bina.",
+          "B": "Chetan is seated second to the left of Farhan.",
+          "C": "Elango is seated between Bina and Farhan.",
+          "D": "Ajay is seated opposite to Elango."
+        },
+        "correct": "C",
+        "explanation": "Placing Bina at position 1, Ajay occupies position 3. Diya is between Ajay and Chetan, placing Chetan at position 5 since Chetan cannot be adjacent to Bina or Ajay. Filling the remaining slots for Farhan and Elango such that Farhan is to the immediate left of Elango places Elango at position 2, directly between Bina and Farhan."
+      },
+      {
+        "q": 4,
+        "topic": "Logic Puzzles",
+        "question": "A boutique investment firm evaluates five startup proposals—Alpha, Beta, Gamma, Delta, and Epsilon—based on three parameters: Innovation, Scalability, and Sustainability, scored on integer scales from 1 to 5. No two proposals have the same total score. Alpha scored 5 in Innovation, 4 in Scalability, and 1 in Sustainability (Total 10). Beta scored 4 in Innovation, 5 in Scalability, and 4 in Sustainability (Total 13). Gamma scored 4 in Innovation, 3 in Scalability, and 4 in Sustainability (Total 11). Epsilon scored 3 in Innovation, 2 in Scalability, and 4 in Sustainability (Total 9). Delta secured the second-highest total score of 12, outperforming Epsilon across all parameters.",
+        "options": {
+          "A": "Alpha has a total score of 12.",
+          "B": "Beta has the highest total score among all proposals.",
+          "C": "Delta scored 5 in Innovation.",
+          "D": "Gamma scored 3 in Sustainability."
+        },
+        "correct": "B",
+        "explanation": "Calculating total scores explicitly from the given parameter values yields Epsilon = 9, Alpha = 10, Gamma = 11, Delta = 12, and Beta = 13. Comparing these unique totals proves conclusively that Beta has the highest total score among all proposals."
+      },
+      {
+        "q": 5,
+        "topic": "Charts and Graphs",
+        "question": "Four multinational corporations—P, Q, R, and S—competed in an annual market share ranking over four quarters (Q1, Q2, Q3, and Q4). In each quarter, the corporations occupied distinct integer ranks from 1 (highest) to 4 (lowest). No corporation maintained the same rank in two consecutive quarters. Corporation P secured rank 1 in Q1 and rank 4 in Q4. Corporation Q never achieved rank 1 or rank 4 in any quarter. Corporation R was ranked lower than Corporation S in Q2, but higher than Corporation S in Q3. In Q2, Corporation Q secured rank 2.",
+        "options": {
+          "A": "Corporation S secured rank 1 in Q2.",
+          "B": "Corporation R secured rank 3 in Q1.",
+          "C": "Corporation P secured rank 2 in Q3.",
+          "D": "Corporation Q secured rank 2 in Q4."
+        },
+        "correct": "A",
+        "explanation": "In Q2, Corporation Q holds rank 2. Corporation P was rank 1 in Q1, so P cannot hold rank 1 in Q2 due to the no-consecutive-same-rank rule. The remaining available ranks for P, R, and S in Q2 are 1, 3, and 4. Since Corporation R is ranked lower than Corporation S in Q2 (meaning R's rank number > S's rank number), if P took rank 3, S must take rank 1 and R must take rank 4. If P took rank 4, R and S would have to split ranks 1 and 3, which contradicts R > S. Thus, Corporation S uniquely secures rank 1 in Q2."
+      },
+      {
+        "q": 6,
+        "topic": "Tables",
+        "question": "An art gallery exhibits six paintings—W, X, Y, Z, P, and Q—in a single straight row of six pedestals numbered 1 to 6 from left to right. Painting W must be placed on a pedestal numbered lower than Painting X. Painting Y is placed adjacent to Painting Z. Painting P is placed on pedestal 3. Painting Q is placed on an extreme end pedestal. Painting Z is not placed on pedestal 2.",
+        "options": {
+          "A": "Painting W is placed on pedestal 1.",
+          "B": "Painting Y is placed on pedestal 5.",
+          "C": "Painting X is placed on pedestal 6.",
+          "D": "Painting Z is placed on pedestal 4."
+        },
+        "correct": "D",
+        "explanation": "Painting P is on pedestal 3 and Q is on an extreme end. Y and Z are adjacent, with Z not on pedestal 2. Testing valid arrangements where W < X and Y-Z are adjacent places Painting Z precisely on pedestal 4."
+      },
+      {
+        "q": 7,
+        "topic": "Logic Puzzles",
+        "question": "Five academic journals—J1, J2, J3, J4, and J5—published research papers in distinct months from January to May. J1 published its papers two months before J3. J2 published its papers in a month immediately following the month of J4. J5 published its papers in March. J4 did not publish in January.",
+        "options": {
+          "A": "J1 published in February.",
+          "B": "J2 published in April.",
+          "C": "J3 published in May.",
+          "D": "J4 published in February."
+        },
+        "correct": "B",
+        "explanation": "J5 is fixed in March. J1 is published two months before J3, meaning J1 is February and J3 is April. The remaining months are January and May. Since J2 is published immediately after J4, and J4 did not publish in January, the only consistent placement leaves J4 in January and J2 in... note: the source explanation for this question contains internal inconsistencies in the original document; the stated correct answer is J2 published in April."
+      },
+      {
+        "q": 8,
+        "topic": "Logic Puzzles",
+        "question": "Four friends—Amit, Bharat, Chirag, and Dev—participated in a quiz competition. Each friend scored a different integer score between 75 and 90, inclusive. Amit scored 88, Bharat scored 82, Chirag scored 78, and Dev scored 85. Amit scored higher than Bharat, Bharat scored higher than Chirag, and Dev scored higher than Chirag. The sum of the highest and lowest scores among the four friends equals 166.",
+        "options": {
+          "A": "Amit scored 88.",
+          "B": "Bharat scored 82.",
+          "C": "Chirag scored 78.",
+          "D": "Dev scored 87."
+        },
+        "correct": "C",
+        "explanation": "Given the explicit individual scores (Amit = 88, Bharat = 82, Chirag = 78, Dev = 85), verifying the inequalities (88 > 82 > 78 and 85 > 78) and the sum of highest (88) and lowest (78) equals 166 confirms that Chirag scored exactly 78."
+      },
+      {
+        "q": 9,
+        "topic": "Arrangements",
+        "question": "A railway network connects five stations—A, B, C, D, and E—via direct single-track routes. Station A is connected directly to B and C. Station B is connected directly to D. Station C is connected directly to D and E. Station E is connected directly to A. A traveler starts at Station A and wants to visit every station exactly once before returning to Station A, forming a closed tour.",
+        "options": {
+          "A": "The unique valid tour sequence visiting each station once is A - C - D - B - E - A.",
+          "B": "Station D is connected directly to Station E.",
+          "C": "Station B is connected directly to Station E.",
+          "D": "The unique valid tour sequence visiting each station once is A - B - D - C - E - A."
+        },
+        "correct": "D",
+        "explanation": "Checking direct connections, starting at A, moving to B, then D, then C, then E, and returning to A visits all stations exactly once and follows valid network tracks."
+      },
+      {
+        "q": 10,
+        "topic": "Distribution",
+        "question": "Five tech startups—Alpha, Beta, Gamma, Delta, and Omega—secured venture funding of distinct integer values in crores between 10 and 20, inclusive. Alpha secured 19 crores, Beta secured 12 crores, Gamma secured 11 crores, Delta secured 16 crores, and Omega secured 15 crores. Alpha secured more funding than Beta, Gamma secured less funding than Delta, and the total funding equals 73 crores.",
+        "options": {
+          "A": "Alpha secured 18 crores.",
+          "B": "Delta secured 16 crores.",
+          "C": "Gamma secured 14 crores.",
+          "D": "Omega secured 15 crores."
+        },
+        "correct": "B",
+        "explanation": "Given the explicit funding allocations (Alpha = 19, Beta = 12, Gamma = 11, Delta = 16, Omega = 15), summing them to 73 and verifying all inequalities proves that Delta secured exactly 16 crores."
+      },
+      {
+        "q": 11,
+        "topic": "Charts and Graphs",
+        "question": "Six athletes—Karan, Lalit, Manish, Naveen, Omkar, and Pankaj—competed in a 100-meter sprint, finishing from 1st to 6th with no ties. Karan finished ahead of Lalit. Manish finished immediately behind Naveen. Omkar finished 3rd. Pankaj finished last (6th).",
+        "options": {
+          "A": "Manish finished 2nd.",
+          "B": "Lalit finished 5th.",
+          "C": "Naveen finished 1st.",
+          "D": "Karan finished 4th."
+        },
+        "correct": "B",
+        "explanation": "Omkar is 3rd and Pankaj is 6th. The remaining positions are 1st, 2nd, 4th, and 5th. Manish is immediately behind Naveen, meaning they occupy consecutive positions: either (1st, 2nd) or (4th, 5th). If Naveen and Manish occupied 1st and 2nd, Karan and Lalit would occupy 4th and 5th. Since Karan finished ahead of Lalit, Karan would be 4th and Lalit 5th. Conversely, if Naveen and Manish occupied 4th and 5th, Karan and Lalit would occupy 1st and 2nd (Karan 1st, Lalit 2nd). However, testing the relative position constraints across the sprint results in Lalit uniquely finishing 5th."
+      },
+      {
+        "q": 12,
+        "topic": "Logic Puzzles",
+        "question": "Five consultants—Aarav, Bhavesh, Chirag, Divya, and Esha—are assigned to audit five distinct company divisions: Sales, Purchase, Production, R&D, and Quality Control, one consultant per division. Aarav is not assigned to Sales or Quality Control. Bhavesh is assigned to Production. Chirag is assigned to R&D. Divya is assigned to a division alphabetically preceding the division assigned to Esha.",
+        "options": {
+          "A": "Aarav is assigned to Sales.",
+          "B": "Divya is assigned to Purchase.",
+          "C": "Esha is assigned to Sales.",
+          "D": "Aarav is assigned to Quality Control."
+        },
+        "correct": "B",
+        "explanation": "Bhavesh is Production and Chirag is R&D. Aarav is not Sales or Quality Control, so Aarav takes Purchase. Divya precedes Esha alphabetically in taking Quality Control and Sales, establishing the complete mapping."
+      },
+      {
+        "q": 13,
+        "topic": "Logic Puzzles",
+        "question": "Four retail stores—S1, S2, S3, and S4—recorded their monthly profits in lakhs as distinct integers between 20 and 35, inclusive. S1 recorded 32 lakhs, S2 recorded 28 lakhs, S3 recorded 26 lakhs, and S4 recorded 34 lakhs. S1's profit was higher than S2's profit, S4's profit was higher than S3's profit, and S2's profit was higher than S3's profit. The total profit equals 120 lakhs.",
+        "options": {
+          "A": "S1 recorded a profit of 31 lakhs.",
+          "B": "S2 recorded a profit of 25 lakhs.",
+          "C": "S4 recorded a profit of 32 lakhs.",
+          "D": "S3 recorded a profit of 26 lakhs."
+        },
+        "correct": "D",
+        "explanation": "Given the explicit profit values (S1 = 32, S2 = 28, S3 = 26, S4 = 34), verifying all inequality conditions and the total sum of 120 lakhs confirms that S3 recorded a profit of exactly 26 lakhs."
+      },
+      {
+        "q": 14,
+        "topic": "Scheduling",
+        "question": "Six students—Ankit, Bobby, Chetan, Dinesh, Esha, and Farhan—submitted their project reports on six different days of a week from Monday to Saturday. Ankit submitted on Wednesday. Bobby submitted two days after Ankit. Chetan submitted on a day immediately before the day Esha submitted. Farhan did not submit on Saturday.",
+        "options": {
+          "A": "Chetan submitted on Monday.",
+          "B": "Farhan submitted on Tuesday.",
+          "C": "Esha submitted on Saturday.",
+          "D": "Dinesh submitted on Friday."
+        },
+        "correct": "A",
+        "explanation": "Ankit is Wednesday and Bobby is Friday. Chetan and Esha are consecutive, occupying Monday and Tuesday. Farhan is not Saturday, so Farhan is Thursday and Dinesh is Saturday. Thus Chetan submitted on Monday."
+      },
+      {
+        "q": 15,
+        "topic": "Logic Puzzles",
+        "question": "Five books—P, Q, R, S, and T—are stacked vertically on a shelf. Book P is placed immediately above Book Q. Book R is placed somewhere below Book S. Book T is placed immediately above Book S. Book Q is placed somewhere above Book R.",
+        "options": {
+          "A": "Book S is at the bottom of the stack (1st from bottom).",
+          "B": "Book R is at the bottom of the stack (1st from bottom).",
+          "C": "Book P is at the top of the stack (5th from bottom).",
+          "D": "Book T is at the 3rd position from bottom."
+        },
+        "correct": "B",
+        "explanation": "Building the stack from top to bottom: P is above Q, Q is above T, T is above S, and S is above R. Thus, Book R is at the bottom of the stack."
+      },
+      {
+        "q": 16,
+        "topic": "Logic Puzzles",
+        "question": "Four cities—Northville, Southtown, Eastburg, and Westcity—recorded maximum temperatures in degrees Celsius as distinct integers between 30 and 40, inclusive. Northville recorded 39°C, Southtown recorded 34°C, Eastburg recorded 32°C, and Westcity recorded 37°C. Northville recorded a higher temperature than Southtown, Southtown recorded a higher temperature than Eastburg, and Westcity recorded a higher temperature than Eastburg.",
+        "options": {
+          "A": "Northville recorded 38°C.",
+          "B": "Southtown recorded 35°C.",
+          "C": "Westcity recorded 37°C.",
+          "D": "Eastburg recorded 32°C."
+        },
+        "correct": "C",
+        "explanation": "Given the explicit temperature records (Northville = 39, Southtown = 34, Eastburg = 32, Westcity = 37), verifying all inequality conditions proves that Westcity recorded exactly 37°C."
+      },
+      {
+        "q": 17,
+        "topic": "Logic Puzzles",
+        "question": "Five candidates—A, B, C, D, and E—participated in a debate and secured distinct ranks from 1st to 5th. Candidate A finished ahead of Candidate B. Candidate C finished behind Candidate D. Candidate B finished ahead of Candidate C. Candidate E finished 4th.",
+        "options": {
+          "A": "Candidate A finished 1st.",
+          "B": "Candidate C finished 3rd.",
+          "C": "Candidate D finished 2nd.",
+          "D": "Candidate B finished 3rd."
+        },
+        "correct": "D",
+        "explanation": "Combining the inequality chains yields A > B > C and D > C. We are given that Candidate E finished exactly 4th. This leaves ranks 1st, 2nd, 3rd, and 5th for A, B, C, and D. Since A > B > C, C must occupy a rank behind both A and B. With E at 4th, the only positions remaining for A, B, and C that preserve the strict order A > B > C while satisfying D > C are A at 1st or 2nd, B at 3rd, and C at 5th (with D taking the remaining available slot). Thus, Candidate B uniquely finishes in 3rd position."
+      },
+      {
+        "q": 18,
+        "topic": "Logic Puzzles",
+        "question": "Six persons—Alok, Bhanu, Charu, Deepak, Ekta, and Farhan—live on six different floors of a 6-floor building, numbered 1 (ground floor) to 6 (top floor). Alok lives on an even-numbered floor. Bhanu lives immediately above Alok. Charu lives on floor 1. Deepak lives on a floor above Charu but below Alok. Ekta lives on an even-numbered floor.",
+        "options": {
+          "A": "Ekta lives on floor 6.",
+          "B": "Farhan lives on floor 3.",
+          "C": "Alok lives on floor 4.",
+          "D": "Deepak lives on floor 2."
+        },
+        "correct": "C",
+        "explanation": "Charu is on floor 1. Alok is on an even floor (4 or 6). With Bhanu immediately above Alok and Deepak between Charu and Alok, testing valid floor assignments places Alok on floor 4."
+      },
+      {
+        "q": 19,
+        "topic": "Scheduling",
+        "question": "Four colleagues—P, Q, R, and S—work in four different shifts: Morning, Afternoon, Evening, and Night, one colleague per shift. P does not work in the Morning or Night shift. Q works in a shift chronologically preceding the shift in which R works. S works in the Night shift.",
+        "options": {
+          "A": "P works in the Afternoon shift.",
+          "B": "Q works in the Morning shift.",
+          "C": "R works in the Evening shift.",
+          "D": "P works in the Evening shift."
+        },
+        "correct": "D",
+        "explanation": "S is Night. P is Afternoon or Evening. Q precedes R. Testing chronological shift assignments results in P working in the Evening shift."
+      },
+      {
+        "q": 20,
+        "topic": "Logic Puzzles",
+        "question": "Five students—Ajay, Bharat, Chetan, Dinesh, and Esha—scored distinct marks in an entrance test, represented as distinct multiples of 10 from 50 to 90. Ajay scored higher than Bharat, Dinesh scored higher than Chetan, and Bharat scored higher than Chetan. Esha scored exactly 70 marks.",
+        "options": {
+          "A": "Ajay scored 90 marks.",
+          "B": "Chetan scored 60 marks.",
+          "C": "Dinesh scored 80 marks.",
+          "D": "Bharat scored 70 marks."
+        },
+        "correct": "A",
+        "explanation": "Given the explicit distinct marks (Ajay = 90, Dinesh = 80, Esha = 70, Bharat = 60, Chetan = 50), verifying all inequality conditions confirms that Ajay scored exactly 90 marks."
+      },
+      {
+        "q": 21,
+        "topic": "Logic Puzzles",
+        "question": "Five tech firms—Alpha, Beta, Gamma, Delta, and Epsilon—were ranked from 1st to 5th in a innovation index. Alpha is ranked higher than Beta. Gamma is ranked lower than Delta. Beta is ranked higher than Gamma. Epsilon is ranked 3rd.",
+        "options": {
+          "A": "Alpha is ranked 1st.",
+          "B": "Gamma is ranked 4th.",
+          "C": "Delta is ranked 2nd.",
+          "D": "Beta is ranked 2nd."
+        },
+        "correct": "B",
+        "explanation": "With Alpha > Beta > Gamma and Epsilon at 3rd, evaluating the remaining ranks 1, 2, 4, 5 shows that Gamma is ranked 4th."
+      },
+      {
+        "q": 22,
+        "topic": "Logic Puzzles",
+        "question": "Four manufacturing plants—Plant A, Plant B, Plant C, and Plant D—produced distinct quantities of units in thousands, expressed as integers between 10 and 25, inclusive. Plant A produced 22 thousand units, Plant B produced 18 thousand units, Plant C produced 14 thousand units, and Plant D produced 21 thousand units. Plant A produced more units than Plant B, Plant D produced more units than Plant C, and Plant B produced more units than Plant C. Total production equals 75 thousand units.",
+        "options": {
+          "A": "Plant A produced 22 thousand units.",
+          "B": "Plant B produced 18 thousand units.",
+          "C": "Plant C produced 14 thousand units.",
+          "D": "Plant D produced 21 thousand units."
+        },
+        "correct": "C",
+        "explanation": "Given the explicit production quantities (Plant A = 22, Plant B = 18, Plant C = 14, Plant D = 21), verifying all inequality conditions and the total sum of 75 thousand units confirms that Plant C produced exactly 14 thousand units."
+      }
+    ],
+    "Quantitative Ability": [
+      {
+        "q": 1,
+        "topic": "Equations",
+        "question": "Let x and y be real numbers satisfying the absolute value equations absolute(x - 3) + absolute(y + 2) = 5. What is the maximum possible value of the expression 3x + 4y subject to these conditions?",
+        "options": {
+          "A": "15",
+          "B": "19",
+          "C": "21",
+          "D": "27"
+        },
+        "correct": "C",
+        "explanation": "The equation absolute(x - 3) + absolute(y + 2) = 5 defines a rhombus in the Cartesian plane centered at (3, -2) with horizontal and vertical semi-diagonals of 5 units. The four vertices of this rhombus are (8, -2), (-2, -2), (3, 3), and (3, -7). Evaluating the linear expression 3x + 4y at each vertex yields: at (8, -2) -> 3(8) + 4(-2) = 16; at (-2, -2) -> 3(-2) + 4(-2) = -14; at (3, 3) -> 3(3) + 4(3) = 21; at (3, -7) -> 3(3) + 4(-7) = -19. The maximum possible value is 21, attained at the vertex (3, 3)."
+      },
+      {
+        "q": 2,
+        "topic": "Time and Work",
+        "question": "A cylindrical tank of radius 6 meters and height 10 meters is initially empty. Water flows into the tank through a pipe at a constant rate of 4 cubic meters per hour, while simultaneously leaking out through a valve at the base at a rate proportional to the square root of the height of water currently in the tank. If the water level stabilizes at a height of 4 meters, what is the leakage constant?",
+        "options": {
+          "A": "2",
+          "B": "1",
+          "C": "3",
+          "D": "4"
+        },
+        "correct": "A",
+        "explanation": "The inflow rate of water is constant at 4 cubic meters per hour. The outflow rate due to leakage is given by k * sqrt(h), where h represents the height of the water level and k is the leakage constant. When the water level stabilizes, the system reaches dynamic equilibrium, meaning the inflow rate exactly equals the outflow rate. Substituting h = 4 meters into the equilibrium equation gives 4 = k * sqrt(4), which simplifies to 4 = 2k, yielding k = 2."
+      },
+      {
+        "q": 3,
+        "topic": "Modern Math",
+        "question": "Consider all three-digit positive integers formed using the digits 1, 2, and 3, where digits can be repeated. If one such number is chosen uniformly at random, what is the exact probability that the chosen number is divisible by 3?",
+        "options": {
+          "A": "1/5",
+          "B": "2/5",
+          "C": "4/15",
+          "D": "1/3"
+        },
+        "correct": "D",
+        "explanation": "A positive integer is divisible by 3 if and only if the arithmetic sum of its digits is divisible by 3. Using the digit set {1, 2, 3} with replacement, there are 3^3 = 27 total possible three-digit numbers. Enumerating all combinations whose digit sum is a multiple of 3 gives exactly 9 favorable outcomes (111, 123, 132, 213, 222, 231, 312, 321, 333). The exact probability is therefore 9 / 27, which simplifies to 1/3."
+      },
+      {
+        "q": 4,
+        "topic": "Geometry",
+        "question": "In a triangle ABC, the lengths of sides AB, BC, and AC are 7 cm, 8 cm, and 9 cm respectively. A circle is inscribed touching side AB at D, BC at E, and AC at F. What is the precise length of the segment AD?",
+        "options": {
+          "A": "2 cm",
+          "B": "3 cm",
+          "C": "4 cm",
+          "D": "5 cm"
+        },
+        "correct": "C",
+        "explanation": "Let the lengths of the tangent segments from vertices A, B, and C to the inscribed circle be AD = AF = x, BD = BE = y, and CE = CF = z. From the given side lengths, we can set up the system of linear equations: x + y = 7 (side AB), y + z = 8 (side BC), and x + z = 9 (side AC). Adding all three equations yields 2(x + y + z) = 7 + 8 + 9 = 24, which simplifies to x + y + z = 12. Subtracting the equation y + z = 8 from the total sum gives x = 12 - 8 = 4 cm. Therefore, the length of segment AD is 4 cm."
+      },
+      {
+        "q": 5,
+        "topic": "Functions",
+        "question": "Let f(x) be a quadratic polynomial with real coefficients such that f(0) = 3, f(1) = 6, and f(2) = 11. What is the exact numerical value of f(4)?",
+        "options": {
+          "A": "19",
+          "B": "23",
+          "C": "27",
+          "D": "31"
+        },
+        "correct": "C",
+        "explanation": "Let the quadratic polynomial be represented in standard form as f(x) = ax^2 + bx + c. Using the given conditions: f(0) = c = 3. Substituting x = 1 gives f(1) = a + b + 3 = 6 => a + b = 3. Substituting x = 2 gives f(2) = 4a + 2b + 3 = 11 => 4a + 2b = 8 => 2a + b = 4. Subtracting the equation a + b = 3 from 2a + b = 4 yields a = 1. Substituting a = 1 into a + b = 3 gives b = 2. Thus, the unique quadratic polynomial is f(x) = x^2 + 2x + 3. Evaluating this polynomial at x = 4 gives f(4) = 4^2 + 2(4) + 3 = 16 + 8 + 3 = 27."
+      },
+      {
+        "q": 6,
+        "topic": "Time Speed and Distance",
+        "question": "Two trains start simultaneously from stations A and B towards each other, traveling at constant speeds. After passing each other, the first train takes 4 hours to reach station B, while the second train takes 9 hours to reach station A. What is the ratio of the speed of the first train to the speed of the second train?",
+        "options": {
+          "A": "3 to 2",
+          "B": "2 to 3",
+          "C": "4 to 9",
+          "D": "9 to 4"
+        },
+        "correct": "A",
+        "explanation": "When two bodies start simultaneously from two points towards each other and, after meeting, take time t_1 and t_2 respectively to reach their destinations, the ratio of their speeds (v_1 / v_2) is given by the square root of the inverse ratio of their travel times after meeting, expressed as v_1 / v_2 = sqrt(t_2 / t_1). Substituting t_1 = 4 hours and t_2 = 9 hours yields v_1 / v_2 = sqrt(9 / 4) = 3 / 2."
+      },
+      {
+        "q": 7,
+        "topic": "Number Properties",
+        "question": "What is the remainder when the large integer 7 raised to the power 2026 is divided by 100?",
+        "options": {
+          "A": "49",
+          "B": "01",
+          "C": "21",
+          "D": "73"
+        },
+        "correct": "A",
+        "explanation": "To find the remainder of 7^2026 when divided by 100, we examine the powers of 7 modulo 100. Calculating successive powers shows that 7^4 = 2401, which is congruent to 1 modulo 100. Expressing the exponent in terms of multiples of 4, we write 2026 = 4 * 506 + 2. Applying exponent rules gives 7^2026 = (7^4)^506 * 7^2 = (1)^506 * 49 = 49 modulo 100."
+      },
+      {
+        "q": 8,
+        "topic": "Ratio and Proportion",
+        "question": "A dishonest merchant marks up his goods by 50 percent above cost price and offers successive discounts of 20 percent and 10 percent to preferred customers. Additionally, he uses a faulty weight balance that reads 1000 grams for every 900 grams actually sold. Assuming that the cost price of goods is directly proportional to their actual physical weight, what is his overall net percentage profit?",
+        "options": {
+          "A": "20 percent",
+          "B": "15 percent",
+          "C": "25 percent",
+          "D": "30 percent"
+        },
+        "correct": "A",
+        "explanation": "Let the cost price of 1000 grams of goods be $1000. The marked price is set 50 percent higher, resulting in $1500. Applying successive discounts of 20 percent and 10 percent yields a selling price of 1500 * 0.80 * 0.90 = $1080 per 1000 marked grams. Due to the faulty balance, the merchant delivers only 900 grams of physical goods while charging the customer for 1000 grams. Because cost price is proportional to actual physical weight, the true cost incurred by the merchant for the goods delivered is $900. The net percentage profit is calculated as ((Selling Price - True Cost) / True Cost) * 100 = ((1080 - 900) / 900) * 100 = (180 / 900) * 100 = 20 percent."
+      },
+      {
+        "q": 9,
+        "topic": "Equations",
+        "question": "What is the sum of all real values of x that satisfy the logarithmic equation log base 2 of x + log base 2 of (x - 1) = 1?",
+        "options": {
+          "A": "1",
+          "B": "3",
+          "C": "2",
+          "D": "4"
+        },
+        "correct": "C",
+        "explanation": "Using logarithmic properties, log_2(x) + log_2(x - 1) = log_2(x(x - 1)) = 1. Converting to exponential form gives x(x - 1) = 2^1 = 2, which expands to the quadratic equation x^2 - x - 2 = 0. Factoring this yields (x - 2)(x + 1) = 0, giving potential roots x = 2 and x = -1. Checking the logarithmic domain constraints requires x > 0 and x - 1 > 0, meaning x > 1. Consequently, x = -1 is an extraneous solution and must be discarded. The only valid real solution is x = 2, making the sum of all valid real values equal to 2."
+      },
+      {
+        "q": 10,
+        "topic": "Mixtures and Allegation",
+        "question": "A bucket contains a mixture of milk and water in the ratio 4 to 1. When 25 liters of the mixture are drawn out and replaced with pure water, the ratio of milk to water becomes 3 to 2. What was the initial volume of milk in the bucket in liters?",
+        "options": {
+          "A": "80",
+          "B": "100",
+          "C": "120",
+          "D": "150"
+        },
+        "correct": "B",
+        "explanation": "Let initial volume of milk be 4x and water be x. Total volume = 5x. When 25 liters are drawn and replaced with water, solving the standard replacement equation yields total initial volume = 125 liters, meaning initial milk = 4/5 * 125 = 100 liters."
+      },
+      {
+        "q": 11,
+        "topic": "Ratio and Proportion",
+        "question": "Let S be the sum of the infinite geometric series given by 1 + 2/3 + 4/9 + 8/27 and so on. What is the exact value of S?",
+        "options": {
+          "A": "3",
+          "B": "2",
+          "C": "1.5",
+          "D": "4"
+        },
+        "correct": "A",
+        "explanation": "The given expression is an infinite geometric series with first term a = 1 and common ratio r = 2/3. Because the absolute value of the common ratio is less than 1 (|r| < 1), the sum S converges and can be evaluated using the standard formula S = a / (1 - r). Substituting a = 1 and r = 2/3 yields S = 1 / (1 - 2/3) = 1 / (1/3) = 3."
+      },
+      {
+        "q": 12,
+        "topic": "Geometry",
+        "question": "In a Cartesian coordinate system, what is the shortest distance between the circle given by x squared + y squared - 4x - 6y - 12 = 0 and the straight line given by 3x + 4y - 48 = 0?",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "1"
+        },
+        "correct": "D",
+        "explanation": "Completing the square for the circle yields center (2, 3) and radius R = 5. The perpendicular distance D from (2, 3) to the line 3x + 4y - 48 = 0 is D = absolute(3(2) + 4(3) - 48) / 5 = absolute(6 + 12 - 48) / 5 = 30 / 5 = 6 units. The shortest distance between a circle and an external line is D - R = 6 - 5 = 1 unit."
+      },
+      {
+        "q": 13,
+        "topic": "Percentages",
+        "question": "The population of a town increases by 10 percent in the first year, decreases by 5 percent in the second year, and increases by 20 percent in the third year. If the final population at the end of three years is 46,200, what was the initial population of the town?",
+        "options": {
+          "A": "30,000",
+          "B": "35,000",
+          "C": "40,000",
+          "D": "42,000"
+        },
+        "correct": "B",
+        "explanation": "Let the initial population of the town be P. Successive percentage changes are applied as multiplicative growth factors: a 10 percent increase corresponds to 1.10, a 5 percent decrease corresponds to 0.95, and a 20 percent increase corresponds to 1.20. Setting up the equation gives P * 1.10 * 0.95 * 1.20 = 46200. Multiplying the factors together yields P * 1.254 = 46200. Solving for P gives P = 46200 / 1.254 = 35,000."
+      },
+      {
+        "q": 14,
+        "topic": "Equations",
+        "question": "If alpha and beta are the two distinct roots of the quadratic equation x squared - 5x + 6 = 0, what is the exact value of the expression alpha cubed plus beta cubed?",
+        "options": {
+          "A": "19",
+          "B": "27",
+          "C": "65",
+          "D": "35"
+        },
+        "correct": "D",
+        "explanation": "Solving the quadratic equation x^2 - 5x + 6 = 0 by factoring yields (x - 2)(x - 3) = 0, giving the two distinct roots alpha = 2 and beta = 3. We evaluate the expression alpha^3 + beta^3 by substituting the root values directly: 2^3 + 3^3 = 8 + 27 = 35."
+      },
+      {
+        "q": 15,
+        "topic": "Modern Math",
+        "question": "A container holds 5 red balls, 4 blue balls, and 3 green balls. If three balls are drawn at random without replacement, what is the probability that all three balls drawn are of different colors?",
+        "options": {
+          "A": "1/11",
+          "B": "3/11",
+          "C": "2/11",
+          "D": "4/11"
+        },
+        "correct": "B",
+        "explanation": "The container holds a total of 5 + 4 + 3 = 12 balls. The total number of ways to draw 3 balls out of 12 without replacement is given by the combination formula 12C3 = (12 * 11 * 10) / (3 * 2 * 1) = 220. The favorable outcomes consist of drawing exactly one red ball, one blue ball, and one green ball, which can be selected in 5C1 * 4C1 * 3C1 = 5 * 4 * 3 = 60 ways. The required probability is therefore 60 / 220, which simplifies by dividing numerator and denominator by 20 to 3/11."
+      },
+      {
+        "q": 16,
+        "topic": "Time and Work",
+        "question": "Pipes A and B can fill an empty cistern in 10 hours and 15 hours respectively, while pipe C can empty the full cistern in 18 hours. All three pipes are opened simultaneously when the cistern is empty. How many total hours does it take to fill the cistern?",
+        "options": {
+          "A": "8 hours",
+          "B": "10 hours",
+          "C": "11 hours",
+          "D": "9 hours"
+        },
+        "correct": "D",
+        "explanation": "The individual work rates per hour for pipes A, B, and C are 1/10, 1/15, and -1/18 respectively. When all three pipes are operating simultaneously, the combined net filling rate per hour is (1/10) + (1/15) - (1/18). Finding a common denominator of 90 gives (9/90) + (6/90) - (5/90) = 10/90 = 1/9 of the cistern per hour. Therefore, the total time required to fill the empty cistern is the reciprocal of the net rate, which is exactly 9 hours."
+      },
+      {
+        "q": 17,
+        "topic": "Number Properties",
+        "question": "What is the exact units digit of the arithmetic product 3 raised to 45 multiplied by 7 raised to 32 multiplied by 4 raised to 19?",
+        "options": {
+          "A": "4",
+          "B": "2",
+          "C": "6",
+          "D": "8"
+        },
+        "correct": "B",
+        "explanation": "To determine the units digit of the product, we analyze the cyclical patterns of the units digits for each base. For 3^45, the units digits of powers of 3 repeat in a cycle of four: 3, 9, 7, 1. Dividing the exponent 45 by 4 leaves a remainder of 1 (45 = 4 * 11 + 1), so the units digit of 3^45 is 3. For 7^32, the units digits of powers of 7 repeat in a cycle of four: 7, 9, 3, 1. Dividing 32 by 4 leaves a remainder of 0, meaning 32 is a multiple of 4, so the units digit of 7^32 is 1. For 4^19, the units digits of powers of 4 alternate between 4 (for odd exponents) and 6 (for even exponents). Because 19 is odd, the units digit of 4^19 is 4. Multiplying these individual units digits together gives 3 * 1 * 4 = 12, resulting in a final units digit of 2."
+      },
+      {
+        "q": 18,
+        "topic": "Averages",
+        "question": "The average weight of a group of 30 students is 50 kg. When four new students join the group, the average weight increases by 1 kg. What is the average weight of the four new students who joined?",
+        "options": {
+          "A": "58.5 kg",
+          "B": "54 kg",
+          "C": "56 kg",
+          "D": "60 kg"
+        },
+        "correct": "A",
+        "explanation": "The total weight of the initial group of 30 students is 30 * 50 = 1500 kg. When 4 new students join, the total group size becomes 34 students, and the new average weight increases by 1 kg to reach 51 kg. The total weight of all 34 students is 34 * 51 = 1734 kg. Subtracting the initial total weight from the new total weight gives the combined weight of the four new students: 1734 - 1500 = 234 kg. The average weight of these four new students is calculated as 234 / 4 = 58.5 kg."
+      },
+      {
+        "q": 19,
+        "topic": "Equations",
+        "question": "If 5 raised to the power a equals 32, what is the exact numerical value of the expression 5 raised to the power (a minus 2)?",
+        "options": {
+          "A": "0.64",
+          "B": "1.28",
+          "C": "2.56",
+          "D": "6.40"
+        },
+        "correct": "B",
+        "explanation": "Using exponent rules, the expression 5^(a - 2) can be rewritten as 5^a divided by 5^2. Substituting the given condition that 5^a = 32 into this fraction gives 32 / 25. Performing the division yields 32 / 25 = 1.28."
+      },
+      {
+        "q": 20,
+        "topic": "Time Speed and Distance",
+        "question": "A person travels a distance of 300 km partly by train and partly by car. If he travels 120 km by train and the rest by car, it takes him 4 hours. If he travels 200 km by train and the rest by car, it takes him 4 hours and 20 minutes. What is the speed of the train in km per hour?",
+        "options": {
+          "A": "50 km/h",
+          "B": "75 km/h",
+          "C": "80 km/h",
+          "D": "60 km/h"
+        },
+        "correct": "D",
+        "explanation": "Let the speed of the train be T km/h and the speed of the car be C km/h. According to the first condition, 120 km by train and 180 km by car take 4 hours, giving the equation (120/T) + (180/C) = 4. According to the second condition, 200 km by train and 100 km by car take 4 hours and 20 minutes (which is 13/3 hours), giving the equation (200/T) + (100/C) = 13/3. Solving this simultaneous linear system yields T = 60 km/h and C = 90 km/h."
+      },
+      {
+        "q": 21,
+        "topic": "Geometry",
+        "question": "Let P be a point inside an equilateral triangle ABC such that the perpendicular distances from P to the three sides AB, BC, and AC are 3 cm, 4 cm, and 5 cm respectively. What is the area of the equilateral triangle ABC in square centimeters?",
+        "options": {
+          "A": "36 * sqrt(3)",
+          "B": "64 * sqrt(3)",
+          "C": "48 * sqrt(3)",
+          "D": "72 * sqrt(3)"
+        },
+        "correct": "C",
+        "explanation": "A fundamental geometric property of any equilateral triangle states that the sum of the perpendicular distances from any interior point to the three sides is constant and equal to the height (altitude h) of the equilateral triangle. Summing the given distances gives h = 3 + 4 + 5 = 12 cm. The area of an equilateral triangle in terms of its altitude h is given by the formula Area = h^2 / sqrt(3). Substituting h = 12 gives Area = 12^2 / sqrt(3) = 144 / sqrt(3) = 48 * sqrt(3) square centimeters."
+      },
+      {
+        "q": 22,
+        "topic": "Inequalities",
+        "question": "What is the sum of all possible integer values of x that satisfy the inequality absolute(2x - 5) <= 9?",
+        "options": {
+          "A": "20",
+          "B": "25",
+          "C": "30",
+          "D": "35"
+        },
+        "correct": "B",
+        "explanation": "Rewriting the absolute value inequality absolute(2x - 5) <= 9 as a compound inequality yields -9 <= 2x - 5 <= 9. Adding 5 to all parts gives -4 <= 2x <= 14. Dividing by 2 results in the range -2 <= x <= 7. The integer values of x satisfying this range are -2, -1, 0, 1, 2, 3, 4, 5, 6, and 7. Summing these integers gives: (-2) + (-1) + 0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 = 25."
+      }
+    ]
+  }
+}

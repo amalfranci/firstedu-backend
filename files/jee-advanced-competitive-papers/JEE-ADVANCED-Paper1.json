@@ -1,0 +1,770 @@
+{
+  "paper_id": "JEE-ADVANCED-Paper1",
+  "title": "JEE Advanced Paper 1",
+  "exam": "JEE Advanced",
+  "year": 2026,
+  "subjects": {
+    "Mathematics": [
+      {
+        "q": 1,
+        "type": "MCQ",
+        "topic": "Complex Numbers",
+        "question": "Let z be a complex number such that |z-1| = 1. Find the locus of w = 2/z.",
+        "options": {
+          "A": "A parabola.",
+          "B": "A circle.",
+          "C": "A straight line.",
+          "D": "An ellipse."
+        },
+        "correct": "C",
+        "explanation": "Substituting z=2/w into |z-1|=1 gives |(2/w)-1|=1, which simplifies to |2-w|=|w| — the perpendicular bisector of the segment from origin to 2, i.e., the line x=1."
+      },
+      {
+        "q": 2,
+        "type": "MCQ",
+        "topic": "Limits, Continuity and Differentiability",
+        "question": "What is the value of lim(n→∞) Σ(r=1 to n) 1/(n+r)?",
+        "options": {
+          "A": "1",
+          "B": "0",
+          "C": "ln 3",
+          "D": "ln 2"
+        },
+        "correct": "D",
+        "explanation": "This sum converts to the definite integral of 1/(1+x) from 0 to 1, which evaluates to ln 2."
+      },
+      {
+        "q": 3,
+        "type": "MCQ",
+        "topic": "Sets, Relations and Functions",
+        "question": "Determine the number of real solutions for the equation cos(e^x) = 2^x + 2^(-x).",
+        "options": {
+          "A": "0",
+          "B": "1",
+          "C": "Infinite",
+          "D": "2"
+        },
+        "correct": "A",
+        "explanation": "By AM-GM, 2^x+2^-x ≥ 2 for all real x, but cos(e^x) ≤ 1 always. Since RHS minimum exceeds LHS maximum, no real solution exists."
+      },
+      {
+        "q": 4,
+        "type": "MCQ",
+        "topic": "Matrices and Determinants",
+        "question": "If A is a 3x3 matrix with det(A) = 3, find the value of det(adj(adj(A))).",
+        "options": {
+          "A": "81",
+          "B": "9",
+          "C": "27",
+          "D": "243"
+        },
+        "correct": "A",
+        "explanation": "det(adj(adj(A))) = det(A)^((n-1)^2). For n=3, power = 4. 3^4 = 81."
+      },
+      {
+        "q": 5,
+        "type": "MCQ",
+        "topic": "Applications of Derivatives",
+        "question": "Find the minimum value of the function f(x) = |x-1| + |x-2| + |x-3|.",
+        "options": {
+          "A": "0",
+          "B": "2",
+          "C": "1",
+          "D": "3"
+        },
+        "correct": "B",
+        "explanation": "The minimum of the sum of absolute distances to an odd number of collinear points occurs at the median (x=2). f(2) = 1+0+1 = 2."
+      },
+      {
+        "q": 6,
+        "type": "MCQ",
+        "topic": "Logarithms, Permutations and Combinations",
+        "question": "Calculate the number of distinct ways to distribute 5 identical balls into 3 distinct boxes.",
+        "options": {
+          "A": "15",
+          "B": "35",
+          "C": "10",
+          "D": "21"
+        },
+        "correct": "D",
+        "explanation": "Stars and bars: C(n+r-1, r-1) = C(5+3-1, 3-1) = C(7,2) = 21."
+      },
+      {
+        "q": 7,
+        "type": "MCQ",
+        "topic": "Integral Calculus",
+        "question": "Evaluate the definite integral of (sin^3 x · cos^2 x) dx from -π/2 to π/2.",
+        "options": {
+          "A": "1",
+          "B": "0",
+          "C": "π/4",
+          "D": "π/2"
+        },
+        "correct": "B",
+        "explanation": "f(x)=sin^3x·cos^2x is odd: f(-x)=-f(x). The integral of an odd function over symmetric limits is 0."
+      },
+      {
+        "q": 8,
+        "type": "MCQ",
+        "topic": "Applications of Derivatives",
+        "question": "Find the absolute maximum value of the function f(x) = x^(1/x) for x > 0.",
+        "options": {
+          "A": "e",
+          "B": "1",
+          "C": "e^(1/e)",
+          "D": "1/e"
+        },
+        "correct": "C",
+        "explanation": "Logarithmic differentiation gives y' = x^(1/x)(1-ln x)/x^2. Setting this to zero gives x=e. f(e) = e^(1/e)."
+      },
+      {
+        "q": 9,
+        "type": "MCQ",
+        "topic": "Conic Sections (Parabola, Ellipse, Hyperbola)",
+        "question": "What is the eccentricity of any rectangular hyperbola?",
+        "options": {
+          "A": "√3",
+          "B": "√2",
+          "C": "2",
+          "D": "1"
+        },
+        "correct": "B",
+        "explanation": "A rectangular hyperbola has a=b. e = √(1+b^2/a^2) = √(1+1) = √2."
+      },
+      {
+        "q": 10,
+        "type": "MSQ",
+        "topic": "Applications of Derivatives",
+        "question": "Let f(x) = x^3 - 3x. Which of the following statements correctly describe this function?",
+        "options": {
+          "A": "A local maximum occurs at x=-1.",
+          "B": "A local minimum occurs at x=1.",
+          "C": "The function is strictly increasing on (1, infinity).",
+          "D": "The function is strictly decreasing on (-infinity, -1)."
+        },
+        "correct": "A,B,C",
+        "explanation": "f'(x)=3(x-1)(x+1). Critical points at x=±1. First derivative test shows local max at x=-1, local min at x=1. f'(x)>0 for x>1 and x<-1, so the function increases on both those intervals, making D false."
+      },
+      {
+        "q": 11,
+        "type": "MSQ",
+        "topic": "Matrices and Determinants",
+        "question": "Which of the following properties hold true for the matrix A = [[0, 1], [-1, 0]]?",
+        "options": {
+          "A": "A^2 = -I",
+          "B": "A^4 = I",
+          "C": "A is an orthogonal matrix",
+          "D": "A is a symmetric matrix"
+        },
+        "correct": "A,B,C",
+        "explanation": "A^2=-I, so A^4=I. A^T=-A (skew-symmetric, not symmetric — D false). A·A^T=I satisfies the orthogonal matrix definition."
+      },
+      {
+        "q": 12,
+        "type": "MSQ",
+        "topic": "Limits, Continuity and Differentiability",
+        "question": "Identify which of the following functions are uniformly continuous on the open interval (0, 1).",
+        "options": {
+          "A": "f(x) = sin(1/x)",
+          "B": "f(x) = x·sin(1/x)",
+          "C": "f(x) = e^x",
+          "D": "f(x) = 1/x"
+        },
+        "correct": "B,C",
+        "explanation": "A continuous function on a bounded open interval is uniformly continuous iff its limits at both endpoints exist and are finite. x·sin(1/x) and e^x satisfy this, but sin(1/x) has no limit as x→0, and 1/x diverges as x→0."
+      },
+      {
+        "q": 13,
+        "type": "MSQ",
+        "topic": "Differential Equations",
+        "question": "Consider the first-order differential equation dy/dx = (x+y)/x. Which of the following statements accurately classify or solve this equation?",
+        "options": {
+          "A": "It is a homogeneous differential equation.",
+          "B": "It is a linear differential equation.",
+          "C": "The general solution is y = x·ln|x| + C·x.",
+          "D": "It is an exact differential equation in its current form."
+        },
+        "correct": "A,B,C",
+        "explanation": "Rewriting as dy/dx - y/x = 1 shows it's linear; it can also be expressed as a function of y/x, showing it's homogeneous. Using integrating factor 1/x gives the general solution y = x·ln|x| + Cx."
+      },
+      {
+        "q": 14,
+        "type": "MSQ",
+        "topic": "Conic Sections (Parabola, Ellipse, Hyperbola)",
+        "question": "For the ellipse given by the equation x^2/16 + y^2/9 = 1, determine which geometric properties are correct.",
+        "options": {
+          "A": "The eccentricity is √7/4.",
+          "B": "The foci are located at (±√7, 0).",
+          "C": "The equations of the directrices are x = ±16/√7.",
+          "D": "The length of the latus rectum is 9/2."
+        },
+        "correct": "A,B,C,D",
+        "explanation": "a^2=16, b^2=9. e=√(1-9/16)=√7/4. Foci (±ae,0)=(±√7,0). Directrices x=±a/e=±16/√7. Latus rectum = 2b^2/a = 9/2."
+      },
+      {
+        "q": 15,
+        "type": "MSQ",
+        "topic": "Vectors",
+        "question": "Let three vectors be defined as a = i + j, b = j + k, and c = k + i. Which of the following vector properties hold true?",
+        "options": {
+          "A": "The scalar triple product [a b c] strictly equals 2.",
+          "B": "The vectors are non-coplanar.",
+          "C": "The cross product a x b = i - j + k.",
+          "D": "The magnitude of the sum a + b + c evaluates to 2√3."
+        },
+        "correct": "A,B,C,D",
+        "explanation": "The scalar triple product determinant evaluates to 2, confirming non-coplanarity. a×b = i-j+k by expansion. a+b+c = 2i+2j+2k, magnitude √12 = 2√3."
+      },
+      {
+        "q": 16,
+        "type": "MSQ",
+        "topic": "Probability",
+        "question": "Assume A and B are statistically independent events in a probability space where P(A) = 0.3 and P(B) = 0.4. Which specific probabilities are correctly calculated?",
+        "options": {
+          "A": "P(A and B) = 0.12",
+          "B": "P(A or B) = 0.58",
+          "C": "P(A|B) = 0.3",
+          "D": "P(A and not B) = 0.18"
+        },
+        "correct": "A,B,C,D",
+        "explanation": "Independence gives P(A∩B)=P(A)P(B)=0.12. P(A∪B)=0.3+0.4-0.12=0.58. P(A|B)=P(A)=0.3. P(A∩not B)=P(A)-P(A∩B)=0.3-0.12=0.18."
+      },
+      {
+        "q": 17,
+        "type": "MSQ",
+        "topic": "Integral Calculus",
+        "question": "Consider the definite integral evaluated as I = integral from 0 to π of (x·sin x)/(1+cos^2 x) dx. Which of the following evaluations of I are correct?",
+        "options": {
+          "A": "Its exact analytical value is π^2/4.",
+          "B": "It can be successfully simplified using the integration property integral f(x) = integral f(a-x).",
+          "C": "Its exact analytical value is π^2/2.",
+          "D": "Its numerical value is strictly less than 3."
+        },
+        "correct": "A,B,D",
+        "explanation": "Using King's property, 2I = π·∫(sin x)/(1+cos^2 x)dx from 0 to π. Substituting u=cos x integrates to π^2/4. Since π≈3.14, π^2/4≈2.47 < 3."
+      },
+      {
+        "q": 18,
+        "type": "MSQ",
+        "topic": "Sequences and Series",
+        "question": "Consider the mathematical sequence defined by a_n = (1 + 1/n)^n for all natural numbers n. Which properties accurately characterize this sequence?",
+        "options": {
+          "A": "The sequence converges strictly to the constant e.",
+          "B": "It acts as a strictly increasing sequence.",
+          "C": "It acts as a strictly decreasing sequence.",
+          "D": "It is strictly bounded above by the integer 3."
+        },
+        "correct": "A,B,D",
+        "explanation": "This sequence is the classical definition of e. Binomial expansion proofs show it is strictly increasing and bounded above by 3, converging near 2.718."
+      }
+    ],
+    "Physics": [
+      {
+        "q": 1,
+        "type": "MCQ",
+        "topic": "Work, Energy and Power",
+        "question": "A particle of mass m is projected horizontally with speed u from the top of a smooth fixed hemisphere of radius R. The normal reaction force exerted by the hemisphere on the particle becomes zero when the position vector of the particle makes an angle theta with the upward vertical. The value of cos(theta) is:",
+        "options": {
+          "A": "u^2 / (3gR)",
+          "B": "2/3 + u^2 / (3gR)",
+          "C": "1 - u^2 / (3gR)",
+          "D": "2/3 - u^2 / (3gR)"
+        },
+        "correct": "B",
+        "explanation": "By energy conservation, v^2 = u^2 + 2gR(1-cosθ). At N=0, g cosθ = v^2/R. Substituting gives 3g cosθ = u^2/R + 2g, so cosθ = 2/3 + u^2/(3gR)."
+      },
+      {
+        "q": 2,
+        "type": "MCQ",
+        "topic": "System of Particles and Rotational Motion",
+        "question": "A uniform thin rod of mass M and length L is hinged at one end and is free to rotate in a vertical plane. It is released from rest from the horizontal position. When the rod passes through the vertical downward position, an impulse J is applied horizontally at its free end to bring it instantaneously to rest. The magnitude of J is:",
+        "options": {
+          "A": "M√(gL)",
+          "B": "0.5 M√(gL)",
+          "C": "M√(gL/3)",
+          "D": "2M√(gL/3)"
+        },
+        "correct": "C",
+        "explanation": "By energy conservation, ω = √(3g/L). Angular momentum about hinge L_i = Iω = (ML^2/3)√(3g/L) = M√(gL^3/3). Since J·L = L_i, J = M√(gL/3)."
+      },
+      {
+        "q": 3,
+        "type": "MCQ",
+        "topic": "System of Particles and Rotational Motion",
+        "question": "Two identical small balls each of mass m are connected by a light inextensible string of length l and placed on a smooth horizontal table. One of the balls is given a velocity v0 perpendicular to the string, and the other ball is at rest. The tension in the string immediately after the string becomes taut is:",
+        "options": {
+          "A": "m v0^2 / (2l)",
+          "B": "m v0^2 / l",
+          "C": "2 m v0^2 / l",
+          "D": "m v0^2 / (4l)"
+        },
+        "correct": "A",
+        "explanation": "Relative angular velocity about the center of mass ω = v0/l. Centripetal acceleration a_c = (l/2)ω^2 = v0^2/(2l). Tension T = m·a_c = m v0^2/(2l)."
+      },
+      {
+        "q": 4,
+        "type": "MCQ",
+        "topic": "Thermal Physics",
+        "question": "An ideal gas undergoes a polytropic process given by P·V^2 = constant. If the molar heat capacity of the gas in this process is C, and the degrees of freedom of the gas molecules is f, then C is equal to:",
+        "options": {
+          "A": "(f/2)R",
+          "B": "(1+f/2)R",
+          "C": "(f/2 - 1)R",
+          "D": "(1-f/2)R"
+        },
+        "correct": "C",
+        "explanation": "For P·V^x = constant, C = Cv + R/(1-x). Here x=2, Cv=(f/2)R, so C = (f/2)R + R/(1-2) = (f/2 - 1)R."
+      },
+      {
+        "q": 5,
+        "type": "MCQ",
+        "topic": "Ray Optics",
+        "question": "A concave mirror of radius of curvature R is placed at the bottom of a beaker containing water of refractive index mu up to a depth d. An object is placed at a distance x above the water surface. For a paraxial ray, the final image formed by the mirror-water system coincides with the object itself. The value of x in terms of R, d, and mu is:",
+        "options": {
+          "A": "R/2 - d/mu",
+          "B": "(R - d) / mu",
+          "C": "R/2 - d",
+          "D": "mu(R/2 - d)"
+        },
+        "correct": "B",
+        "explanation": "The apparent distance below the water surface is mu·x. For self-retracing rays, d + mu·x = R, giving x = (R-d)/mu."
+      },
+      {
+        "q": 6,
+        "type": "MCQ",
+        "topic": "Electromagnetic Induction and AC Circuits",
+        "question": "A long straight wire carries a current I and is placed along the z-axis. A circular loop of radius a is placed in the xy-plane with its center at coordinates (d, 0, 0) where d > a. The mutual inductance between the straight wire and the circular loop is:",
+        "options": {
+          "A": "mu0·a / (2π)",
+          "B": "(mu0/(2π))(d - √(d^2 - a^2))",
+          "C": "mu0·d / (2π)",
+          "D": "(mu0/π)(d - √(d^2 - a^2))"
+        },
+        "correct": "D",
+        "explanation": "Integrating B(r)=mu0I/(2πr) over the loop area (chord length 2√(a^2-(x-d)^2)) yields mutual inductance M = (mu0/π)(d - √(d^2-a^2))."
+      },
+      {
+        "q": 7,
+        "type": "MCQ",
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "A particle of mass m and charge q is projected with velocity v0 into a region of uniform magnetic field B directed perpendicular to the velocity. Due to medium resistance, the particle experiences a drag force F_drag = -k·v. The total distance traveled by the particle before coming to rest is:",
+        "options": {
+          "A": "m v0 / k",
+          "B": "m v0^2 / (2k)",
+          "C": "qBv0 / k^2",
+          "D": "m v0 / √(k^2 + q^2 B^2)"
+        },
+        "correct": "A",
+        "explanation": "Since the magnetic force does no work, m·v(dv/ds) = -k·v simplifies to m·dv = -k·ds. Integrating from v0 to 0 gives S = m v0/k."
+      },
+      {
+        "q": 8,
+        "type": "MCQ",
+        "topic": "Wave Optics",
+        "question": "In a Young's double slit experiment, light of wavelength lambda is used. The intensity at a point on the screen where the path difference is lambda/4 is I. If I0 is the maximum intensity, the ratio I/I0 is:",
+        "options": {
+          "A": "1/4",
+          "B": "1/2",
+          "C": "√2/2",
+          "D": "3/4"
+        },
+        "correct": "B",
+        "explanation": "Phase difference φ = (2π/λ)(λ/4) = π/2. I = I0 cos²(φ/2) = I0 cos²(π/4) = I0/2, so I/I0 = 1/2."
+      },
+      {
+        "q": 9,
+        "type": "MCQ",
+        "topic": "Modern Physics",
+        "question": "A radioactive nucleus A decays into a stable nucleus B with a decay constant lambda_A. Nucleus B also decays further into a stable nucleus C with a decay constant lambda_B. Initially, at t=0, only nuclei of A are present with number N0. The time t_max at which the number of nuclei of B is at its maximum is given by:",
+        "options": {
+          "A": "ln(λB/λA) / (λB-λA)",
+          "B": "ln(λA/λB) / (λB-λA)",
+          "C": "(1/(λA-λB))·ln(λA/λB)",
+          "D": "ln(λA·λB) / (λA+λB)"
+        },
+        "correct": "C",
+        "explanation": "Setting dN_B/dt = 0 requires λA·N_A(t_max) = λB·N_B(t_max). Solving the decay equations gives t_max = (1/(λA-λB))ln(λA/λB)."
+      },
+      {
+        "q": 10,
+        "type": "MCQ",
+        "topic": "Capacitance",
+        "question": "A parallel plate capacitor with air between the plates has capacitance C0. A dielectric slab of dielectric constant K and thickness equal to half the separation between the plates is inserted inside the capacitor, filling the lower half of the gap while the upper half remains filled with air. The new capacitance of the system is:",
+        "options": {
+          "A": "(2K/(K+1))C0",
+          "B": "((K+1)/(2K))C0",
+          "C": "(2K/(K+2))C0",
+          "D": "((K+2)/(2K))C0"
+        },
+        "correct": "A",
+        "explanation": "The system is two series capacitors: C1=2C0 (air half) and C2=2KC0 (dielectric half). 1/C_eq = 1/C1+1/C2 gives C_eq = (2K/(K+1))C0."
+      },
+      {
+        "q": 11,
+        "type": "MCQ",
+        "topic": "Simple Harmonic Motion and Oscillations",
+        "question": "A particle executes simple harmonic motion along the x-axis with amplitude A and time period T. The mean speed of the particle during the time interval in which it moves from x=0 to the extreme position x=A is:",
+        "options": {
+          "A": "2A/T",
+          "B": "3A/T",
+          "C": "4A/T",
+          "D": "6A/T"
+        },
+        "correct": "C",
+        "explanation": "Distance traveled = A in time T/4. Mean speed = A/(T/4) = 4A/T."
+      },
+      {
+        "q": 12,
+        "type": "MCQ",
+        "topic": "Electromagnetic Induction and AC Circuits",
+        "question": "A uniform magnetic field B exists in a region of space pointing perpendicularly into the page. A conducting ring of radius r and resistance R is pulled with constant velocity v out of the magnetic field region. The magnitude of the induced current in the ring when half of the ring is outside the field is:",
+        "options": {
+          "A": "Bvr/R",
+          "B": "2Bvr/(πR)",
+          "C": "πBvr/(2R)",
+          "D": "2Bvr/R"
+        },
+        "correct": "D",
+        "explanation": "The effective chord (diameter 2r) cuts the field boundary with velocity v: emf = B(2r)v = 2Bvr. Current I = emf/R = 2Bvr/R."
+      },
+      {
+        "q": 13,
+        "type": "MCQ",
+        "topic": "Wave Motion and Sound",
+        "question": "A sound source of frequency f0 is moving along a circle of radius R with a constant angular speed omega. An observer is stationed at a large distance in the plane of the circle. The maximum frequency heard by the observer is:",
+        "options": {
+          "A": "f0(1 - ωR/v)^-1",
+          "B": "f0(1 - ωR/v)",
+          "C": "f0(1 + ωR/v)^-1",
+          "D": "f0√(1 - (ωR)^2/v^2)"
+        },
+        "correct": "A",
+        "explanation": "Maximum frequency occurs when the source moves directly toward the observer at speed v_s=ωR: f_max = f0·v/(v-v_s) = f0(1-ωR/v)^-1."
+      },
+      {
+        "q": 14,
+        "type": "MCQ",
+        "topic": "Mechanical Properties of Solids and Fluids",
+        "question": "A spherical drop of water has surface tension T. If the drop is broken into n identical small droplets, the work done in this process is proportional to:",
+        "options": {
+          "A": "n^(1/3) - 1",
+          "B": "n^(2/3) - 1",
+          "C": "n - 1",
+          "D": "n^(4/3) - 1"
+        },
+        "correct": "A",
+        "explanation": "By volume conservation, r=R/n^(1/3). Work = T(A_f-A_i) = T·4πR^2(n^(1/3)-1), so W ∝ n^(1/3)-1."
+      },
+      {
+        "q": 15,
+        "type": "MCQ",
+        "topic": "Simple Harmonic Motion and Oscillations",
+        "question": "A block of mass m is attached to a vertical spring of spring constant k. The block is released from rest with the spring in its unstretched natural length position. The maximum extension of the spring during the subsequent motion is:",
+        "options": {
+          "A": "mg/k",
+          "B": "2mg/k",
+          "C": "4mg/k",
+          "D": "mg/(2k)"
+        },
+        "correct": "B",
+        "explanation": "By energy conservation, mg·x_max = 0.5k·x_max^2, giving x_max = 2mg/k."
+      },
+      {
+        "q": 16,
+        "type": "MCQ",
+        "topic": "Ray Optics",
+        "question": "A thin plano-convex lens of refractive index 1.5 has a radius of curvature of 20 cm for its curved surface. If the flat surface is silvered, the focal length of the equivalent mirror system is:",
+        "options": {
+          "A": "10 cm",
+          "B": "15 cm",
+          "C": "40 cm",
+          "D": "20 cm"
+        },
+        "correct": "D",
+        "explanation": "P_L = (1.5-1)(1/∞ - 1/(-20)) = 1/40 cm^-1. P_eq = 2P_L + P_M = 2(1/40) + 0 = 1/20 cm^-1. F = 1/P_eq = 20 cm."
+      },
+      {
+        "q": 17,
+        "type": "MCQ",
+        "topic": "Electromagnetic Induction and AC Circuits",
+        "question": "In an LCR series circuit connected to an AC source of angular frequency omega, the root-mean-square voltages across the inductor, capacitor, and resistor are 40 V, 10 V, and 40 V respectively. The total source voltage applied to the circuit is:",
+        "options": {
+          "A": "30 V",
+          "B": "50 V",
+          "C": "70 V",
+          "D": "90 V"
+        },
+        "correct": "B",
+        "explanation": "V_rms = √(V_R^2+(V_L-V_C)^2) = √(40^2+30^2) = √2500 = 50 V."
+      },
+      {
+        "q": 18,
+        "type": "MCQ",
+        "topic": "Electrostatics",
+        "question": "A non-conducting solid sphere of radius R carries a total charge Q distributed uniformly throughout its volume. The electrostatic self-energy of the sphere is:",
+        "options": {
+          "A": "Q^2/(4πε0R)",
+          "B": "Q^2/(8πε0R)",
+          "C": "3Q^2/(5πε0R)",
+          "D": "3Q^2/(20πε0R)"
+        },
+        "correct": "D",
+        "explanation": "Integrating the electrostatic energy density over all space for a uniformly charged sphere gives U = 3Q^2/(20πε0R)."
+      }
+    ],
+    "Chemistry": [
+      {
+        "q": 1,
+        "type": "MCQ",
+        "topic": "Electrochemistry",
+        "question": "A galvanic cell is constructed using a standard hydrogen electrode and a Cu2+/Cu half-cell. If the Cu2+ solution is replaced by a solution saturated with Cu(OH)2 in pure water (where Ksp = 1.0×10^-19), the measured cell potential at 298 K drops to 0.0295 V. Assuming standard conditions for the hydrogen electrode, what is the standard reduction potential (E°) of the Cu2+/Cu half-cell? (Given: 2.303RT/F = 0.059 V)",
+        "options": {
+          "A": "+0.34 V",
+          "B": "−0.34 V",
+          "C": "+0.22 V",
+          "D": "+0.59 V"
+        },
+        "correct": "A",
+        "explanation": "With [OH-]=2[Cu2+], 4[Cu2+]^3=1.0×10^-19 gives [Cu2+]≈2.9×10^-7 M. Substituting into the Nernst equation 0.0295=E°-0.0295·log(1/2.9×10^-7) gives E°≈+0.34 V."
+      },
+      {
+        "q": 2,
+        "type": "MCQ",
+        "topic": "Alkenes and Alkynes",
+        "question": "An organic compound X (C5H10) exhibits geometric isomerism. Upon ozonolysis followed by reductive workup (Zn/H2O), X yields two different aldehydes. When X reacts with Br2 in CCl4, it forms a racemic mixture. What is the IUPAC name of the most stable geometric isomer of X?",
+        "options": {
+          "A": "cis-2-Pentene",
+          "B": "trans-2-Pentene",
+          "C": "2-Methyl-2-butene",
+          "D": "Cyclopentane"
+        },
+        "correct": "B",
+        "explanation": "The compound is 2-pentene. The trans-isomer is more stable due to reduced steric hindrance, and anti-addition of Br2 to trans-2-pentene gives a racemic mixture."
+      },
+      {
+        "q": 3,
+        "type": "MCQ",
+        "topic": "Coordination Compounds",
+        "question": "Consider the octahedral complex [Co(en)2Cl2]+. Which of the following statements regarding its stereochemistry and optical activity is correct?",
+        "options": {
+          "A": "The complex exists only as a pair of enantiomers.",
+          "B": "The trans-isomer is optically active due to the absence of a center of symmetry.",
+          "C": "The cis-isomer is optically active, while the trans-isomer is optically inactive.",
+          "D": "Both cis and trans isomers are optically inactive."
+        },
+        "correct": "C",
+        "explanation": "The trans-isomer has a plane of symmetry and center of inversion (achiral). The cis-isomer lacks any symmetry element, making it chiral and resolvable into d and l forms."
+      },
+      {
+        "q": 4,
+        "type": "MCQ",
+        "topic": "Chemical Kinetics",
+        "question": "A first-order parallel reaction involves reactant A decomposing into B (rate constant k1 = 2×10^-3 s^-1) and C (rate constant k2 = 6×10^-3 s^-1). What is the percentage yield of product B and the overall half-life of reactant A?",
+        "options": {
+          "A": "75% yield of B, t1/2 = 86.6 s",
+          "B": "25% yield of B, t1/2 = 346.5 s",
+          "C": "75% yield of B, t1/2 = 115.5 s",
+          "D": "25% yield of B, t1/2 = 86.6 s"
+        },
+        "correct": "D",
+        "explanation": "k_eff = k1+k2 = 8×10^-3 s^-1. t1/2 = 0.693/k_eff ≈ 86.6 s. %B = [k1/(k1+k2)]×100 = 25%."
+      },
+      {
+        "q": 5,
+        "type": "MCQ",
+        "topic": "Aldehydes and Ketones",
+        "question": "In a multi-step organic synthesis, benzaldehyde is treated with a concentrated solution of NaOH, followed by acidification. One of the resulting isolated organic products is then heated with a mixture of concentrated HNO3 and H2SO4. What is the major final product of this sequence?",
+        "options": {
+          "A": "m-Nitrobenzoic acid",
+          "B": "p-Nitrotoluene",
+          "C": "m-Nitrobenzyl alcohol",
+          "D": "o-Nitrobenzoic acid"
+        },
+        "correct": "A",
+        "explanation": "Cannizzaro reaction gives benzyl alcohol and benzoic acid (isolated after acidification). Nitration of benzoic acid, a meta-director, gives m-nitrobenzoic acid."
+      },
+      {
+        "q": 6,
+        "type": "MCQ",
+        "topic": "p-Block Elements",
+        "question": "Which of the following arrangements correctly represents the decreasing order of Lewis acidity among the boron trihalides?",
+        "options": {
+          "A": "BF3 > BCl3 > BBr3 > BI3",
+          "B": "BI3 > BBr3 > BCl3 > BF3",
+          "C": "BCl3 > BF3 > BBr3 > BI3",
+          "D": "BBr3 > BI3 > BCl3 > BF3"
+        },
+        "correct": "B",
+        "explanation": "BF3 has strong pπ-pπ back-bonding reducing its electron deficiency. As halogen size increases, back-bonding weakens, increasing Lewis acidity: BI3 > BBr3 > BCl3 > BF3."
+      },
+      {
+        "q": 7,
+        "type": "MCQ",
+        "topic": "Solid State",
+        "question": "A crystalline solid exhibits a defect where equal numbers of cations and anions are missing from their normal lattice sites. Which thermodynamic property of the crystal significantly decreases as a result of this defect?",
+        "options": {
+          "A": "Electrical conductivity",
+          "B": "Entropy",
+          "C": "Density",
+          "D": "Dielectric constant"
+        },
+        "correct": "C",
+        "explanation": "This is a Schottky defect. Missing ions reduce the mass of the unit cell while volume stays roughly constant, decreasing density."
+      },
+      {
+        "q": 8,
+        "type": "MCQ",
+        "topic": "Chemical Thermodynamics",
+        "question": "One mole of an ideal monatomic gas is subjected to a reversible cyclic process. Which of the following statements correctly describes the thermodynamic parameters for the complete cycle?",
+        "options": {
+          "A": "ΔU > 0, ΔH > 0, q = w",
+          "B": "ΔU = 0, ΔH = 0, q = 0",
+          "C": "ΔU < 0, ΔH < 0, q = −w",
+          "D": "ΔU = 0, ΔH = 0, q = −w"
+        },
+        "correct": "D",
+        "explanation": "For any cyclic process, ΔU=0 and ΔH=0 (state functions). By the first law, ΔU=q+w=0, so q=-w."
+      },
+      {
+        "q": 9,
+        "type": "MCQ",
+        "topic": "States of Matter: Gases and Liquids",
+        "question": "The critical temperature (Tc) of gas A is higher than that of gas B. Which of the following deductions regarding their intermolecular forces and liquefaction behavior is most accurate?",
+        "options": {
+          "A": "Gas A has stronger intermolecular forces and is easier to liquefy than gas B.",
+          "B": "Gas A has weaker intermolecular forces and is harder to liquefy than gas B.",
+          "C": "Gas A has a lower van der Waals constant 'a' compared to gas B.",
+          "D": "Both gases deviate equally from ideal behavior at the same temperature."
+        },
+        "correct": "A",
+        "explanation": "Tc = 8a/(27Rb). Higher Tc indicates larger van der Waals constant 'a', signifying stronger intermolecular forces and easier liquefaction."
+      },
+      {
+        "q": 10,
+        "type": "MCQ",
+        "topic": "Isolation of Metals",
+        "question": "In the extraction of silver by the Macarthur-Forrest cyanide process, the ore is leached with dilute NaCN solution in the presence of air. What is the role of oxygen in this complexation reaction?",
+        "options": {
+          "A": "It reduces Ag+ to metallic silver.",
+          "B": "It oxidizes Ag to Ag+, facilitating the formation of the [Ag(CN)2]− complex.",
+          "C": "It prevents the precipitation of silver sulfide.",
+          "D": "It acts as a catalyst for the dissolution process without participating in the stoichiometry."
+        },
+        "correct": "B",
+        "explanation": "4Ag + 8CN− + 2H2O + O2 → 4[Ag(CN)2]− + 4OH−. Oxygen oxidizes metallic silver to Ag+, which then complexes with cyanide."
+      },
+      {
+        "q": 11,
+        "type": "MCQ",
+        "topic": "Principles of Qualitative Analysis",
+        "question": "A white salt produces a colorless, suffocating gas upon heating with concentrated H2SO4. The gas produces dense white fumes with ammonia. When the salt solution is treated with AgNO3, a white precipitate forms which is soluble in dilute NH3(aq). What is the most likely anion present?",
+        "options": {
+          "A": "Bromide",
+          "B": "Sulfate",
+          "C": "Chloride",
+          "D": "Carbonate"
+        },
+        "correct": "C",
+        "explanation": "HCl gas forms white fumes of NH4Cl with ammonia. AgCl is a curdy white precipitate soluble in dilute ammonia via [Ag(NH3)2]+ formation, confirming chloride."
+      },
+      {
+        "q": 12,
+        "type": "MCQ",
+        "topic": "Alkenes and Alkynes",
+        "question": "When 1-butyne undergoes hydration in the presence of Hg2+ and dilute H2SO4, it undergoes tautomerization. Which of the following represents the correct sequence of intermediates and the final product?",
+        "options": {
+          "A": "But-1-en-2-ol intermediate, final product is Butanal.",
+          "B": "But-1-en-1-ol intermediate, final product is Butanal.",
+          "C": "But-1-en-1-ol intermediate, final product is Butan-2-one.",
+          "D": "But-1-en-2-ol intermediate, final product is Butan-2-one."
+        },
+        "correct": "D",
+        "explanation": "Markovnikov addition via mercurinium ion gives the enol but-1-en-2-ol, which tautomerizes to the more stable ketone, butan-2-one."
+      },
+      {
+        "q": 13,
+        "type": "MSQ",
+        "topic": "Atomic Structure",
+        "question": "Consider the hydrogen-like species He+ and Li2+. Which of the following statements comparing their atomic orbitals are correct?",
+        "options": {
+          "A": "The 2s orbital of Li2+ has a lower energy (more negative) than the 2s orbital of He+.",
+          "B": "The radius of the first Bohr orbit of He+ is exactly twice that of the first Bohr orbit of Li2+.",
+          "C": "The ionization energy of Li2+ is greater than the ionization energy of He+.",
+          "D": "The number of radial nodes in the 3p orbital is the same for both species."
+        },
+        "correct": "A,C,D",
+        "explanation": "Energy ∝ Z^2/n^2, so Li2+ (Z=3) has lower energy and higher IE than He+ (Z=2). Radius ∝ n^2/Z gives ratio 3:2 (not 2:1), invalidating B. Radial nodes = n-l-1 = 1, independent of Z, so D is correct."
+      },
+      {
+        "q": 14,
+        "type": "MSQ",
+        "topic": "Solutions",
+        "question": "When analyzing the colligative properties of a dilute aqueous solution of a complex K3[Fe(CN)6], which of the following scenarios would result in a Van't Hoff factor (i) value approaching 4?",
+        "options": {
+          "A": "Complete dissociation of the complex into individual K+, Fe3+, and CN− ions.",
+          "B": "Complete dissociation of the complex into 3K+ and [Fe(CN)6]3−.",
+          "C": "The solution is subjected to high pressures, causing dimer formation.",
+          "D": "The freezing point depression is measured in a highly dilute state assuming 100% ionization."
+        },
+        "correct": "B,D",
+        "explanation": "The [Fe(CN)6]3− coordination sphere stays intact, giving i=4 (3K+ + 1 complex anion), approached under 100% ionization in dilute solution. Option A wrongly breaks the coordination sphere (would give i=10); Option C would give i<1 due to association."
+      },
+      {
+        "q": 15,
+        "type": "MSQ",
+        "topic": "Amines",
+        "question": "Aniline undergoes electrophilic aromatic substitution. However, direct nitration using a HNO3/H2SO4 mixture yields a significant amount of m-nitroaniline. Which chemical strategies can be employed to exclusively synthesize p-nitroaniline from aniline?",
+        "options": {
+          "A": "Protect the amino group by acetylation with acetic anhydride before nitration, then hydrolyze.",
+          "B": "Conduct the nitration in strongly basic conditions to prevent protonation of the amine.",
+          "C": "Form a diazonium salt, react it with nitrous acid, then hydrolyze.",
+          "D": "React aniline with sulfanilic acid to block the meta position, nitrate, and then desulfonate."
+        },
+        "correct": "A",
+        "explanation": "Acetylation lowers nitrogen's reactivity, preventing protonation while remaining an ortho/para director (para favored sterically), followed by hydrolysis. Basic nitration conditions (B) are impractical since nitrating mixtures are inherently acidic; C and D are synthetic dead-ends."
+      },
+      {
+        "q": 16,
+        "type": "MSQ",
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "According to Molecular Orbital Theory, which of the following heteronuclear diatomic molecules or ions possess a fractional bond order and are paramagnetic?",
+        "options": {
+          "A": "NO",
+          "B": "CN−",
+          "C": "CO+",
+          "D": "O2+"
+        },
+        "correct": "A,C,D",
+        "explanation": "NO (15 electrons) has one unpaired π* electron, bond order 2.5 (paramagnetic). O2+ (15 electrons) is structurally similar, bond order 2.5, paramagnetic. CO+ (13 electrons) also has a fractional bond order (2.5) and is paramagnetic. CN− (14 electrons) is fully paired, diamagnetic, bond order 3."
+      },
+      {
+        "q": 17,
+        "type": "MSQ",
+        "topic": "d-Block Elements",
+        "question": "Transition metals and their compounds exhibit excellent catalytic properties. Which of the following correctly pairs the catalyst with its industrial process and the underlying chemical principle?",
+        "options": {
+          "A": "V2O5 in the Contact process; acts by adopting multiple oxidation states to facilitate oxygen transfer.",
+          "B": "Ziegler-Natta catalyst (TiCl4/Al(C2H5)3) in polymerization; provides a surface for monomer coordination and insertion.",
+          "C": "Finely divided Iron in the Haber process; operates exclusively via homogeneous catalysis.",
+          "D": "PdCl2 in the Wacker process; catalyzes the oxidation of ethene to ethanal via redox cycling of Pd."
+        },
+        "correct": "A,B,D",
+        "explanation": "V2O5 toggles between +5 and +4 to oxidize SO2 to SO3. Ziegler-Natta catalysts facilitate alkene coordination at titanium's vacant d-orbitals. The Wacker process relies on the Pd2+/Pd0 redox cycle. Option C is wrong: solid iron in the Haber process is a heterogeneous catalyst, not homogeneous."
+      },
+      {
+        "q": 18,
+        "type": "MSQ",
+        "topic": "Chemical and Ionic Equilibrium",
+        "question": "For the reversible endothermic reaction CaCO3(s) ⇌ CaO(s) + CO2(g), established in a closed rigid container, which of the following perturbations will increase the partial pressure of CO2 at equilibrium?",
+        "options": {
+          "A": "Adding more CaCO3(s) to the container.",
+          "B": "Removing some CaO(s) from the container.",
+          "C": "Increasing the temperature of the system.",
+          "D": "Injecting an inert gas at constant volume."
+        },
+        "correct": "C",
+        "explanation": "Kp = P(CO2), independent of the amount of pure solids present, so A and B have no effect (provided solid remains). Since the reaction is endothermic, increasing temperature shifts equilibrium right, increasing P(CO2). Inert gas at constant volume (D) does not change partial pressures of reactive gases."
+      }
+    ]
+  }
+}

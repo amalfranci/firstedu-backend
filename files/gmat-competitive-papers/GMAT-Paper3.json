@@ -1,0 +1,953 @@
+{
+  "paper_id": "GMAT-Paper3",
+  "title": "GMAT Paper 3",
+  "exam": "GMAT",
+  "year": 2026,
+  "subjects": {
+    "Quantitative Reasoning": [
+      {
+        "q": 1,
+        "topic": "Integers",
+        "question": "If x and y are positive integers and 3x + 4y = 24, what is the value of x?",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "6",
+          "D": "8",
+          "E": "4"
+        },
+        "correct": "E",
+        "explanation": "Testing positive integers: y=1 gives 3x=20 (no integer); y=2 gives 3x=16 (no integer); y=3 gives 3x=12, x=4 (valid); y=4 gives 3x=8; y=5 gives 3x=4; y=6 gives x=0 (not positive). The only valid pair is x=4, y=3."
+      },
+      {
+        "q": 2,
+        "topic": "Combined work",
+        "question": "Machine A produces 100 widgets in 4 hours. Machine B produces 100 widgets in 6 hours. Working together, how many hours does it take to produce 100 widgets?",
+        "options": {
+          "A": "2",
+          "B": "2.4",
+          "C": "2.5",
+          "D": "3",
+          "E": "5"
+        },
+        "correct": "B",
+        "explanation": "Rate A = 25 widgets/hr, Rate B = 50/3 widgets/hr. Combined rate = 125/3 widgets/hr. Time = 100 / (125/3) = 300/125 = 2.4 hours."
+      },
+      {
+        "q": 3,
+        "topic": "Profit and loss",
+        "question": "A store sells an item for a 20% profit on the cost price. If the selling price is $60, what is the cost price?",
+        "options": {
+          "A": "$40",
+          "B": "$45",
+          "C": "$50",
+          "D": "$55",
+          "E": "$72"
+        },
+        "correct": "C",
+        "explanation": "1.20 * C = 60, so C = 60 / 1.2 = 50."
+      },
+      {
+        "q": 4,
+        "topic": "Quadratic equations",
+        "question": "If 2^(x+1) = 32, what is the value of x^2?",
+        "options": {
+          "A": "16",
+          "B": "4",
+          "C": "25",
+          "D": "9",
+          "E": "8"
+        },
+        "correct": "A",
+        "explanation": "32 = 2^5, so x+1 = 5, x = 4. x^2 = 16."
+      },
+      {
+        "q": 5,
+        "topic": "Ratios",
+        "question": "The ratio of boys to girls in a class is 3:5. If 4 boys leave and 4 girls join, the ratio becomes 1:3. How many students were originally in the class?",
+        "options": {
+          "A": "16",
+          "B": "24",
+          "C": "40",
+          "D": "32",
+          "E": "48"
+        },
+        "correct": "D",
+        "explanation": "Let boys=3k, girls=5k. (3k-4)/(5k+4) = 1/3 => 9k-12 = 5k+4 => 4k=16 => k=4. Original total = 8k = 32."
+      },
+      {
+        "q": 6,
+        "topic": "Weighted average",
+        "question": "The average (arithmetic mean) of 4 numbers is 20. If one number is removed, the average of the remaining numbers is 15. What was the removed number?",
+        "options": {
+          "A": "15",
+          "B": "20",
+          "C": "25",
+          "D": "30",
+          "E": "35"
+        },
+        "correct": "E",
+        "explanation": "Sum of 4 numbers = 80. Sum of remaining 3 = 45. Removed number = 80 - 45 = 35."
+      },
+      {
+        "q": 7,
+        "topic": "Arithmetic reasoning",
+        "question": "In a group of 50 students, 30 play soccer, 25 play basketball, and 10 play neither. How many students play both sports?",
+        "options": {
+          "A": "5",
+          "B": "10",
+          "C": "12",
+          "D": "15",
+          "E": "20"
+        },
+        "correct": "D",
+        "explanation": "50 = 30 + 25 - Both + 10 => 50 = 65 - Both => Both = 15."
+      },
+      {
+        "q": 8,
+        "topic": "Arithmetic reasoning",
+        "question": "A bag contains 4 red marbles and 6 blue marbles. If two marbles are drawn without replacement, what is the probability that both are red?",
+        "options": {
+          "A": "1/5",
+          "B": "4/25",
+          "C": "2/15",
+          "D": "3/10",
+          "E": "8/45"
+        },
+        "correct": "C",
+        "explanation": "P = (4/10) * (3/9) = 12/90 = 2/15."
+      },
+      {
+        "q": 9,
+        "topic": "Arithmetic reasoning",
+        "question": "How many different 3-letter passwords can be formed from the letters A, B, C, D, E if letters cannot be repeated?",
+        "options": {
+          "A": "60",
+          "B": "125",
+          "C": "120",
+          "D": "24",
+          "E": "10"
+        },
+        "correct": "A",
+        "explanation": "5 * 4 * 3 = 60."
+      },
+      {
+        "q": 10,
+        "topic": "Average speed",
+        "question": "A car travels 120 miles at 40 mph and returns the same distance at 60 mph. What is the average speed for the round trip in mph?",
+        "options": {
+          "A": "50",
+          "B": "48",
+          "C": "52",
+          "D": "45",
+          "E": "46"
+        },
+        "correct": "B",
+        "explanation": "Total distance = 240 miles. Time there = 3 hrs, time back = 2 hrs, total time = 5 hrs. Average speed = 240/5 = 48 mph."
+      },
+      {
+        "q": 11,
+        "topic": "Quadratic equations",
+        "question": "If x = -2, what is the value of x^3 - x^2 - x?",
+        "options": {
+          "A": "-10",
+          "B": "-14",
+          "C": "-6",
+          "D": "-2",
+          "E": "6"
+        },
+        "correct": "A",
+        "explanation": "(-2)^3 - (-2)^2 - (-2) = -8 - 4 + 2 = -10."
+      },
+      {
+        "q": 12,
+        "topic": "Linear inequalities",
+        "question": "Which of the following is equivalent to the inequality 3x - 5 < 7x + 3?",
+        "options": {
+          "A": "x < -2",
+          "B": "x > 2",
+          "C": "x > -2",
+          "D": "x < 2",
+          "E": "x > 1"
+        },
+        "correct": "C",
+        "explanation": "-5 < 4x + 3 => -8 < 4x => -2 < x, i.e. x > -2."
+      },
+      {
+        "q": 13,
+        "topic": "Mixtures",
+        "question": "A 10-liter mixture is 20% alcohol. How many liters of pure alcohol must be added to make it a 50% alcohol mixture?",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5",
+          "E": "6"
+        },
+        "correct": "E",
+        "explanation": "Initial alcohol = 2L, water = 8L. For 50%, alcohol must equal water = 8L, so need to add 8-2 = 6 liters."
+      },
+      {
+        "q": 14,
+        "topic": "Distance-time problems",
+        "question": "What is the distance between the points (1, 2) and (4, -2) on the coordinate plane?",
+        "options": {
+          "A": "4",
+          "B": "5",
+          "C": "6",
+          "D": "7",
+          "E": "25"
+        },
+        "correct": "B",
+        "explanation": "d = sqrt((4-1)^2 + (-2-2)^2) = sqrt(9+16) = sqrt(25) = 5."
+      },
+      {
+        "q": 15,
+        "topic": "Linear inequalities",
+        "question": "If |2x - 3| = 7, which of the following could be the value of x?",
+        "options": {
+          "A": "-1",
+          "B": "2",
+          "C": "-5",
+          "D": "-2",
+          "E": "4"
+        },
+        "correct": "D",
+        "explanation": "Case 1: 2x-3=7 => x=5. Case 2: 2x-3=-7 => x=-2. -2 is the option that matches."
+      },
+      {
+        "q": 16,
+        "topic": "Weighted average",
+        "question": "In a sequence, the first term is 3, and each subsequent term is 2 more than twice the previous term. What is the 4th term?",
+        "options": {
+          "A": "38",
+          "B": "22",
+          "C": "94",
+          "D": "46",
+          "E": "78"
+        },
+        "correct": "A",
+        "explanation": "t1=3, t2=2(3)+2=8, t3=2(8)+2=18, t4=2(18)+2=38."
+      },
+      {
+        "q": 17,
+        "topic": "Exponents",
+        "question": "If n is an integer and n^2 is divisible by 72, what is the smallest positive value of n?",
+        "options": {
+          "A": "6",
+          "B": "8",
+          "C": "24",
+          "D": "12",
+          "E": "36"
+        },
+        "correct": "D",
+        "explanation": "72 = 2^3 * 3^2. For n^2 to be divisible by 72, n^2 must be divisible by 2^4 * 3^2 = 144, so n must be a multiple of 12. Smallest positive n = 12."
+      },
+      {
+        "q": 18,
+        "topic": "Fractions",
+        "question": "What is the value of (1/2 + 1/3) / (1/4 - 1/5)?",
+        "options": {
+          "A": "10",
+          "B": "25/3",
+          "C": "50/3",
+          "D": "15",
+          "E": "20/3"
+        },
+        "correct": "C",
+        "explanation": "Numerator = 5/6. Denominator = 1/20. (5/6)/(1/20) = (5/6)*(20/1) = 100/6 = 50/3."
+      },
+      {
+        "q": 19,
+        "topic": "Compound interest",
+        "question": "A principal of $1,000 is invested at an annual interest rate of 10% compounded annually. What is the total amount after 2 years?",
+        "options": {
+          "A": "$1,100",
+          "B": "$1,200",
+          "C": "$1,220",
+          "D": "$1,215",
+          "E": "$1,210"
+        },
+        "correct": "E",
+        "explanation": "A = 1000(1.10)^2 = 1000(1.21) = 1210."
+      },
+      {
+        "q": 20,
+        "topic": "Linear equations",
+        "question": "Five years ago, Alice was twice as old as Bob. If the sum of their current ages is 40, how old is Bob now?",
+        "options": {
+          "A": "10",
+          "B": "15",
+          "C": "20",
+          "D": "25",
+          "E": "30"
+        },
+        "correct": "B",
+        "explanation": "A+B=40. A-5=2(B-5). Substituting A=40-B: 35-B=2B-10 => 45=3B => B=15."
+      },
+      {
+        "q": 21,
+        "topic": "Quadratic equations",
+        "question": "If the operation # is defined by x # y = x^2 - y^2, what is the value of (4 # 3) # 2?",
+        "options": {
+          "A": "24",
+          "B": "-5",
+          "C": "41",
+          "D": "35",
+          "E": "45"
+        },
+        "correct": "E",
+        "explanation": "4 # 3 = 16-9 = 7. 7 # 2 = 49-4 = 45."
+      }
+    ],
+    "Verbal Reasoning": [
+      {
+        "q": 1,
+        "topic": "Inference",
+        "question": "Toucan Airlines recently implemented a policy to board passengers strictly from the back of the plane to the front, aiming to reduce boarding time. However, after one month, the average boarding time has actually increased by five minutes per flight. Which of the following would it be most useful to establish in order to evaluate the policy's effectiveness?",
+        "options": {
+          "A": "Whether Toucan Airlines' competitors board passengers from the front to the back.",
+          "B": "Whether the new policy required hiring additional gate staff to enforce the boarding zones.",
+          "C": "Whether passengers prefer boarding from the back of the plane rather than the front.",
+          "D": "Whether the airline also changed its baggage allowance policy, leading to fewer carry-on bags.",
+          "E": "Whether other operational changes, such as stricter security screenings at the gate, were implemented simultaneously."
+        },
+        "correct": "E",
+        "explanation": "Evaluating a causal claim requires ruling out confounding variables. Determining whether simultaneous operational changes occurred helps isolate the actual impact of the boarding policy.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 2,
+        "topic": "Weaken an argument",
+        "question": "In a certain region, the population of field mice has decreased dramatically over the past decade. Researchers hypothesize that this decline is entirely due to the introduction of a non-native predatory bird species that preys heavily on field mice. Which of the following, if true, most seriously weakens the researchers' hypothesis?",
+        "options": {
+          "A": "The predatory bird species also preys on several other small mammals in the region.",
+          "B": "A disease that specifically targets field mice and has a high mortality rate swept through the region five years ago.",
+          "C": "The population of field mice in a neighboring region, where the predatory bird is not present, has remained stable.",
+          "D": "The predatory bird species was introduced to control a different agricultural pest, not the field mice.",
+          "E": "Field mice have a high reproductive rate and can rapidly rebuild their numbers under favorable conditions."
+        },
+        "correct": "B",
+        "explanation": "A highly fatal, species-specific disease introduces a compelling alternative explanation, undermining the claim that the predatory bird is entirely responsible.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 3,
+        "topic": "Supporting idea",
+        "question": "A software company is considering shifting its sales strategy from a one-time perpetual license model to a monthly subscription model. The CEO argues that this change will ultimately increase the company's long-term revenue because the cumulative subscription fees over a customer's typical usage period will exceed the price of a single perpetual license. Which of the following, if true, most strongly supports the CEO's argument?",
+        "options": {
+          "A": "Most customers currently using the perpetual license upgrade their software every three years.",
+          "B": "The administrative costs of managing a subscription model are slightly higher than those of a perpetual license model.",
+          "C": "The subscription model will lower the upfront cost, attracting a significant number of new customers who previously found the software too expensive.",
+          "D": "Competitors in the software industry are also moving toward subscription-based sales models.",
+          "E": "Customers often complain about the high initial cost of the perpetual license."
+        },
+        "correct": "C",
+        "explanation": "This confirms that the new pricing model will expand the customer base, multiplying the higher lifetime value across more users, supporting the CEO's revenue projections.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 4,
+        "topic": "Identify assumptions",
+        "question": "The city council of Oakville plans to reduce traffic congestion in the downtown area by imposing a high toll on all private vehicles entering the district during peak hours. The council reasons that the toll will incentivize commuters to use the city's extensive and underutilized public transportation system instead. The city council's plan assumes which of the following?",
+        "options": {
+          "A": "The revenue generated from the toll will be sufficient to cover the costs of maintaining the public transportation system.",
+          "B": "The public transportation system currently covers every residential neighborhood in Oakville.",
+          "C": "Traffic congestion in Oakville's downtown area is primarily caused by commercial delivery vehicles rather than private commuters.",
+          "D": "A significant portion of the commuters currently driving private vehicles into downtown Oakville have reasonable access to the public transportation system.",
+          "E": "The toll will not negatively impact retail businesses located in the downtown area."
+        },
+        "correct": "D",
+        "explanation": "For a behavioral incentive to work, the desired alternative (transit) must be practically accessible to the target commuters.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 5,
+        "topic": "Inference",
+        "question": "Historical records indicate that during the 18th century, the coastal town of Port Haven experienced a massive economic boom primarily due to the export of a specific type of durable sailcloth. However, recent archaeological excavations of 18th-century shipwrecks originating from Port Haven have uncovered sails made predominantly of a cheaper, less durable fabric. If the statements above are true, which of the following can be properly inferred?",
+        "options": {
+          "A": "At least some of the high-quality durable sailcloth produced in Port Haven was likely exported rather than utilized exclusively by the local fleet.",
+          "B": "The historical records greatly exaggerated the extent of Port Haven's economic boom in the 18th century.",
+          "C": "The cheaper fabric was actually more resistant to the specific weather conditions commonly encountered by Port Haven ships.",
+          "D": "Port Haven's sailcloth industry eventually collapsed due to the widespread adoption of cheaper, inferior fabrics by the end of the century.",
+          "E": "The shipwrecks excavated by archaeologists were not representative of the typical merchant vessels operating out of Port Haven."
+        },
+        "correct": "A",
+        "explanation": "Since Port Haven's economy thrived on exporting durable cloth, yet its own ships used cheaper materials, it follows logically that a portion of the durable cloth was sent outward rather than used domestically.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 6,
+        "topic": "Inference",
+        "question": "Despite a nationwide decrease in the consumption of sugary carbonated beverages over the last five years, the incidence of severe dental cavities among teenagers has risen by 15% during the same period. Which of the following, if true, best helps to resolve the apparent paradox?",
+        "options": {
+          "A": "Dental care technology has improved, allowing dentists to detect minor cavities before they become severe.",
+          "B": "The price of sugary carbonated beverages has increased significantly due to new regional taxes.",
+          "C": "Over the last five years, teenagers have drastically increased their consumption of non-carbonated sports drinks, which contain highly acidic sugar compounds.",
+          "D": "Public health campaigns targeting teenagers have focused primarily on the risks of obesity rather than dental health.",
+          "E": "Teenagers today are less likely to visit a dentist for routine checkups than they were a decade ago."
+        },
+        "correct": "C",
+        "explanation": "Revealing that teenagers substituted soda with another highly cariogenic beverage bridges the gap between declining soda consumption and rising cavity rates.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 7,
+        "topic": "Purpose",
+        "question": "Economist: Traditional metrics of economic health focus heavily on GDP growth. However, GDP fails to account for environmental degradation and the depletion of natural resources. Therefore, a country can show robust GDP growth while actually impoverishing its future generations. To get a true picture of economic health, nations must adopt new metrics that subtract the cost of environmental damage from overall output. In the argument given, the two boldfaced portions play which of the following roles? (Boldface 1: \"GDP fails to account for environmental degradation and the depletion of natural resources\"; Boldface 2: \"nations must adopt new metrics that subtract the cost of environmental damage from overall output\")",
+        "options": {
+          "A": "The first is a conclusion supported by the argument; the second is a premise supporting that conclusion.",
+          "B": "The first is an observation that the argument attempts to refute; the second is the main conclusion of the argument.",
+          "C": "The first is a premise that supports a secondary conclusion; the second is that secondary conclusion.",
+          "D": "The first provides context for the argument's main claim; the second presents a claim that opposes the main conclusion.",
+          "E": "The first is a premise that forms the basis of the argument's main criticism; the second is the main conclusion drawn from that criticism."
+        },
+        "correct": "E",
+        "explanation": "The first boldface is the foundational fact detailing GDP's limitation; the second is the prescriptive recommendation derived from that analysis, i.e. the main conclusion.",
+        "type": "Boldface / Argument Structure"
+      },
+      {
+        "q": 8,
+        "topic": "Weaken an argument",
+        "question": "A new study shows that people who regularly take Vitamin Z supplements are 30% less likely to develop chronic joint pain than those who do not. The study authors conclude that Vitamin Z actively prevents joint inflammation. Which of the following, if true, most weakens the authors' conclusion?",
+        "options": {
+          "A": "Vitamin Z is naturally present in small amounts in leafy green vegetables.",
+          "B": "People who regularly take dietary supplements are generally more likely to engage in daily physical exercise, which is known to prevent joint pain.",
+          "C": "The study was conducted on a relatively small sample size of 500 participants.",
+          "D": "High doses of Vitamin Z can cause minor gastrointestinal discomfort in some individuals.",
+          "E": "Chronic joint pain is more common among the elderly, who are also the demographic most likely to purchase supplements."
+        },
+        "correct": "B",
+        "explanation": "This introduces a common-cause variable: health-conscious individuals who take supplements also exercise, so exercise—not the vitamin—may be responsible for the improved joint health.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 9,
+        "topic": "Application",
+        "question": "A local bakery, Sweet Crumbs, has seen a steady decline in foot traffic since a large supermarket opened nearby. The owner plans to revive the business by exclusively baking organic, gluten-free artisan breads, arguing that this niche focus will differentiate Sweet Crumbs from the supermarket. Which of the following, if true, most strongly supports the owner's plan?",
+        "options": {
+          "A": "The supermarket relies on commercial yeast and conventional flour for all its baked goods.",
+          "B": "Organic, gluten-free ingredients cost roughly 40% more than conventional baking ingredients.",
+          "C": "Sweet Crumbs currently employs three bakers who have been with the shop for over five years.",
+          "D": "A recent survey of the neighborhood revealed a high, unmet demand for specialty health-conscious baked goods.",
+          "E": "The supermarket's bakery section is located at the very back of the store, making it inconvenient for quick trips."
+        },
+        "correct": "D",
+        "explanation": "A differentiation strategy succeeds only if a market exists for the new offering; evidence of unfulfilled local demand validates the pivot's economic viability.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 10,
+        "topic": "Identify assumptions",
+        "question": "An electronics manufacturer has developed a new smartphone battery that charges to full capacity in under five minutes. The manufacturer expects this new battery to quickly replace lithium-ion batteries as the industry standard. This expectation relies on which of the following assumptions?",
+        "options": {
+          "A": "The new battery does not suffer from rapid degradation that would make its overall lifespan unacceptably short for consumers.",
+          "B": "Consumers currently list slow charging times as their primary complaint about modern smartphones.",
+          "C": "The materials required to manufacture the new battery are less expensive than those used in standard lithium-ion batteries.",
+          "D": "The new battery is physically smaller and lighter than standard lithium-ion batteries.",
+          "E": "Other smartphone manufacturers will not be able to develop a competing fast-charging battery in the near future."
+        },
+        "correct": "A",
+        "explanation": "The projection implicitly assumes the extreme charging speed doesn't cause fatal degradation issues that would make the battery commercially useless.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 11,
+        "topic": "Identify assumptions",
+        "question": "Paleontologists have recently discovered the fossilized remains of a dinosaur species in a sedimentary rock layer previously believed to predate all known dinosaur life. The researchers conclude that dinosaurs evolved millions of years earlier than currently estimated. Which of the following, if true, most seriously undermines the researchers' conclusion?",
+        "options": {
+          "A": "The newly discovered fossil belongs to a relatively small and anatomically simple dinosaur species.",
+          "B": "Other types of marine fossils found in the same rock layer match the original dating of the rock.",
+          "C": "Paleontologists often revise evolutionary timelines as new fossil evidence is continuously discovered.",
+          "D": "Geological shifts in the area caused older rock layers to slide completely over much younger rock layers containing the fossil.",
+          "E": "The fossilized bones show signs of having been exposed to extreme heat and pressure."
+        },
+        "correct": "D",
+        "explanation": "Stratigraphic dating depends on undisturbed layering; evidence of tectonic displacement invalidates the assumption that deeper layers are older, undermining the conclusion.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 12,
+        "topic": "Strengthen an argument",
+        "question": "To stimulate economic growth, the government of Xylos plans to eliminate corporate taxes for companies that relocate their headquarters to rural provinces. Officials claim this will significantly boost employment in these struggling areas. Which of the following, if true, most strengthens the officials' claim?",
+        "options": {
+          "A": "Most companies currently headquartered in the capital city of Xylos operate in the financial services sector.",
+          "B": "Companies relocating to rural provinces typically require a large local workforce for administrative and logistical operations.",
+          "C": "The rural provinces of Xylos have recently invested heavily in upgrading their high-speed internet infrastructure.",
+          "D": "Corporate taxes in Xylos are currently among the highest in the region.",
+          "E": "Many residents of rural provinces currently commute to urban centers for work."
+        },
+        "correct": "B",
+        "explanation": "Corporate relocation benefits local labor markets only if the incoming businesses draw heavily on the local workforce, which this statement confirms.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 13,
+        "topic": "Identify assumptions",
+        "question": "A pharmaceutical company claims that its new memory-enhancing drug, Memora, is entirely safe because no adverse side effects were reported during a rigorous six-month clinical trial involving thousands of human subjects. The company's argument assumes which of the following?",
+        "options": {
+          "A": "Memora is more effective at enhancing memory than competing drugs currently on the market.",
+          "B": "The participants in the clinical trial strictly adhered to the prescribed dosage of Memora.",
+          "C": "Any adverse side effects caused by Memora would manifest within the first six months of use.",
+          "D": "The human subjects in the trial were carefully selected to represent a diverse cross-section of the general population.",
+          "E": "Memory-enhancing drugs generally do not interact negatively with standard over-the-counter pain medications."
+        },
+        "correct": "C",
+        "explanation": "Drawing an absolute safety conclusion from a time-bounded study requires assuming that six months is long enough for any toxicities to become observable.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 14,
+        "topic": "Evaluate an argument",
+        "question": "The CEO of a retail chain intends to boost overall profits by closing the 10% of store locations that currently report the lowest net revenues. The CEO reasons that eliminating these underperforming stores will reduce overhead costs without significantly impacting total sales, as the revenue loss will be minimal. Which of the following would be most important to evaluate in assessing the CEO's plan?",
+        "options": {
+          "A": "Whether the physical size of the underperforming stores is smaller than the average size of the chain's other stores.",
+          "B": "Whether the competitors of the retail chain are also closing their lowest-performing store locations.",
+          "C": "Whether the overhead costs associated with closing a store outstrip the expected first-year savings.",
+          "D": "Whether the local economy in the areas where the stores will be closed is expected to improve in the next fiscal year.",
+          "E": "Whether the lowest-revenue stores absorb a disproportionately large share of regional marketing expenses that would not be eliminated upon closure."
+        },
+        "correct": "E",
+        "explanation": "If these stores absorb shared marketing costs that would simply shift to remaining stores after closure, the expected overhead reduction is illusory, undermining the plan's goal.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 15,
+        "topic": "Identify flaws",
+        "question": "Critic: The mayor claims that the new recycling program has been a resounding success because the volume of recycled materials collected by the city has doubled since the program's inception. However, the mayor ignores the fact that the total volume of all waste generated by the city has tripled in that same period. Therefore, the recycling program has actually been a failure. The critic's argument is flawed because it:",
+        "options": {
+          "A": "conflates a failure to increase the proportion of waste recycled with a failure to increase the absolute volume of materials successfully diverted from landfills.",
+          "B": "assumes without justification that the primary goal of the recycling program was to reduce overall waste generation.",
+          "C": "attacks the mayor's credibility rather than addressing the substance of the mayor's statistical claims.",
+          "D": "fails to consider that the city's population may have grown significantly during the period in question.",
+          "E": "treats a failure to achieve absolute perfection as a complete failure of the program."
+        },
+        "correct": "A",
+        "explanation": "The critic conflates the drop in relative recycling efficiency with a complete failure, ignoring the mayor's valid point about absolute improvement (doubled raw recycled volume).",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 16,
+        "topic": "Inference",
+        "question": "In an effort to reduce urban smog, the government mandated that all new factories install advanced air scrubbers. Five years later, the total amount of industrial pollutants released into the air has dropped by 40%. However, air quality tests show that the concentration of smog in the city's air is exactly the same as it was five years ago. Which of the following can be properly inferred from the statements above?",
+        "options": {
+          "A": "The advanced air scrubbers installed in the new factories were defective or improperly maintained.",
+          "B": "Industrial pollutants are not the sole source of the emissions that cause urban smog in the city.",
+          "C": "Older factories that were not subject to the mandate have increased their production and their emissions.",
+          "D": "The government mandate did not go far enough in regulating airborne pollutants.",
+          "E": "Wind patterns over the city have changed, trapping pollutants that would previously have blown away."
+        },
+        "correct": "B",
+        "explanation": "Since a significant reduction in industrial emissions produced no change in smog levels, industrial pollutants cannot be the exclusive driver of the smog problem.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 17,
+        "topic": "Purpose",
+        "question": "Business Analyst: Companies that prioritize short-term stock price over long-term research and development generally lose their competitive edge within a decade. Our firm recently cut its R&D budget by 50% in order to fund a massive share buyback program. While the board insists this is a necessary correction to appease shareholders, it is highly likely that our market share will decline significantly in the coming years. In the analyst's argument, the two boldfaced portions play which of the following roles? (Boldface 1: \"Companies that prioritize short-term stock price over long-term research and development generally lose their competitive edge within a decade\"; Boldface 2: \"it is highly likely that our market share will decline significantly in the coming years\")",
+        "options": {
+          "A": "The first is the main conclusion of the argument; the second is a premise offered in support of that conclusion.",
+          "B": "The first is a general principle that the argument rejects; the second is the conclusion drawn from that rejection.",
+          "C": "The first is a general principle that supports the argument's main conclusion; the second is that main conclusion.",
+          "D": "The first is a premise describing a specific situation; the second is a general principle derived from that situation.",
+          "E": "The first provides context that opposes the main conclusion; the second is a prediction based on that context."
+        },
+        "correct": "C",
+        "explanation": "The first boldface cites an established industry trend (general principle); the second applies this rule to the firm's own situation to forecast an outcome (the main conclusion).",
+        "type": "Boldface / Argument Structure"
+      },
+      {
+        "q": 18,
+        "topic": "Weaken an argument",
+        "question": "A university plans to transition all its introductory lecture courses to an online, asynchronous format, arguing that this will save the university money on classroom maintenance and allow students greater scheduling flexibility. Student groups oppose the plan, arguing that it will decrease educational quality. Which of the following, if true, most seriously weakens the university's argument?",
+        "options": {
+          "A": "Many students prefer synchronous online classes to asynchronous ones.",
+          "B": "The cost of maintaining digital servers and software platforms for online learning has been decreasing steadily.",
+          "C": "Several peer universities have already successfully transitioned their introductory courses to an online format.",
+          "D": "The proprietary software licensing fees required for asynchronous lectures scale exponentially with user volume, ultimately exceeding current maintenance budgets.",
+          "E": "Introductory courses typically have the largest class sizes of any courses offered by the university."
+        },
+        "correct": "D",
+        "explanation": "Exposing that digital infrastructure costs will mathematically exceed traditional maintenance savings dismantles the university's core financial rationale.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 19,
+        "topic": "Inference",
+        "question": "An agricultural conglomerate introduced a genetically modified, drought-resistant strain of wheat to farmers in an arid region. Yields per acre increased significantly in the first year. However, the conglomerate's agronomists recommend that farmers rotate this new wheat with traditional crops every other year to maintain long-term soil health. Which of the following, if true, most strongly supports the agronomists' recommendation?",
+        "options": {
+          "A": "The drought-resistant wheat rapidly metabolizes micronutrients that require years to naturally replenish in arid topsoil.",
+          "B": "The genetically modified wheat seeds are more expensive to purchase than traditional wheat seeds.",
+          "C": "Farmers in the arid region have historically struggled to secure reliable irrigation sources.",
+          "D": "The drought-resistant wheat produces a grain that is slightly lower in protein content than traditional wheat.",
+          "E": "Traditional crops grown in the region are highly susceptible to sudden shifts in temperature."
+        },
+        "correct": "A",
+        "explanation": "Clarifying that the engineered crop strips slow-recovering nutrients from the soil provides the biochemical justification for a strict crop rotation schedule.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 20,
+        "topic": "Inference",
+        "question": "During an economic recession, the sales of luxury sports cars sharply declined, as expected. Paradoxically, during the exact same period, the sales of ultra-luxury yachts (costing over $10 million) experienced a record-breaking surge. Which of the following, if true, best helps to explain this paradox?",
+        "options": {
+          "A": "The materials used to construct ultra-luxury yachts became significantly cheaper during the recession.",
+          "B": "Luxury sports cars are often purchased on credit, whereas ultra-luxury yachts are typically purchased with cash.",
+          "C": "The government imposed a new luxury tax on all vehicles and vessels priced over $100,000.",
+          "D": "During a recession, middle-class consumers drastically reduce their discretionary spending.",
+          "E": "The ultra-wealthy individuals who buy $10 million yachts often view them as secure, tangible investments when traditional stock markets are failing."
+        },
+        "correct": "E",
+        "explanation": "Reframing mega-yachts as 'financial safe havens' rather than frivolous purchases explains their rising demand despite the broad economic downturn.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 21,
+        "topic": "Identify flaws",
+        "question": "A recent survey of professional musicians found that those who learned to play an instrument before the age of six are far more likely to have absolute pitch (perfect pitch) than those who started learning later. The researchers concluded that early childhood music education directly causes the development of absolute pitch. The researchers' reasoning is most vulnerable to the criticism that it:",
+        "options": {
+          "A": "relies on self-reported data from musicians, which may be exaggerated or inaccurate.",
+          "B": "fails to consider that children with a genetic predisposition for absolute pitch might naturally gravitate toward playing an instrument at an earlier age.",
+          "C": "assumes that absolute pitch is a necessary skill for a professional musician to achieve success.",
+          "D": "does not define what specific types of instruments the musicians in the survey learned to play.",
+          "E": "generalizes about all musicians based on a survey that only included professionals."
+        },
+        "correct": "B",
+        "explanation": "Highlighting the possibility of reverse causation—that an innate trait prompted early musical exposure rather than the reverse—exposes a flaw in the causal claim.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 22,
+        "topic": "Inference",
+        "question": "The city of Riverton recently converted a major downtown thoroughfare into a pedestrian-only zone, hoping to increase foot traffic to local businesses. While pedestrian volume has indeed increased by 20%, retail sales for businesses on that street have plummeted by 15%. Which of the following, if true, best reconciles the apparent discrepancy?",
+        "options": {
+          "A": "The city implemented a massive advertising campaign to promote the new pedestrian-only zone.",
+          "B": "Several new retail stores opened on the street just before the conversion took place.",
+          "C": "The pedestrian zone has become a popular route for daily commuters walking to the nearby financial district, rather than a destination for shoppers.",
+          "D": "The weather during the months following the conversion was unusually mild and pleasant.",
+          "E": "The elimination of parallel parking spots severely deterred suburban residents, who historically accounted for the majority of the street's commercial revenue."
+        },
+        "correct": "E",
+        "explanation": "Demonstrating that the pedestrian demographic shifted—losing high-spending suburban drivers who relied on parking—explains the drop in sales despite higher foot traffic.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 23,
+        "topic": "Identify assumptions",
+        "question": "In an attempt to reduce plastic waste, a coffee shop chain stopped offering disposable plastic straws and instead provided biodegradable paper straws. Within a month, customer complaints increased significantly, and sales of iced beverages dropped. The management assumes that the paper straws are the direct cause of the decline in iced beverage sales. Which of the following is an assumption required by management's argument?",
+        "options": {
+          "A": "Customers generally prefer the aesthetic appearance of plastic straws over paper straws.",
+          "B": "The cost of purchasing biodegradable paper straws is higher than the cost of plastic straws.",
+          "C": "Environmental groups have not publicly praised the coffee shop chain for its eco-friendly initiative.",
+          "D": "The coffee shop chain did not simultaneously introduce a new, unpopular recipe for its iced beverages.",
+          "E": "Biodegradable paper straws decompose rapidly when discarded in standard landfill conditions."
+        },
+        "correct": "D",
+        "explanation": "Assigning sole responsibility to the straw change requires ruling out other simultaneous changes, such as a new unpopular beverage recipe.",
+        "type": "Critical Reasoning"
+      }
+    ],
+    "Data Insights": [
+      {
+        "q": 1,
+        "topic": "Data Sufficiency",
+        "question": "In a group of 100 students, each takes at least one of Physics or Chemistry. How many students take both subjects?\n\n(1) The ratio of the number of students taking Physics to those taking Chemistry is 6:5.\n(2) The number of students taking only Physics is 5 times the number of students taking both subjects.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "C",
+        "explanation": "Statement 1 gives the class sizes as 6k and 5k, but substituting into 6k + 5k - Both = 100 leaves two unknowns, so it is insufficient alone. Statement 2 says Physics-only = 5 x Both, meaning Total Physics = 6 x Both, but this alone gives no numerical anchor. Combined: 6k = 6 x Both, so Both = k. Substituting into the union formula gives 6k + 5k - k = 100 => 10k = 100 => k = 10, so Both = 10.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 2,
+        "topic": "Data Sufficiency",
+        "question": "If f(x) = ax^2 + bx + c, where a, b, and c are constants and a ≠ 0, does the equation f(x) = 0 have two distinct real roots?\n\n(1) f(3) x f(5) < 0\n(2) c < 0",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "A",
+        "explanation": "By the Intermediate Value Theorem, a negative product means the function changes sign between x=3 and x=5, so a continuous parabola crossing the x-axis there must cross again, guaranteeing two distinct real roots (sufficient). Statement 2 only places the y-intercept below the origin; a downward-opening parabola could still have its vertex below the x-axis with zero real roots, so it's insufficient alone.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 3,
+        "topic": "Data Sufficiency",
+        "question": "A bag contains r red marbles and b blue marbles. If two marbles are drawn at random without replacement, what is the probability that both are red?\n\n(1) There are at least 10 red marbles in the bag.\n(2) The ratio of red marbles to blue marbles is 3:2.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "E",
+        "explanation": "Statement 1 gives only a lower bound on one color, no way to compute probability. Statement 2 gives a ratio, but scale matters since probabilities differ without replacement (e.g. 3 red/2 blue vs 30 red/20 blue). Combined, multiple scenarios (12 red/8 blue giving 33/95, or 15 red/10 blue giving 7/20) yield different probabilities, so it remains insufficient.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 4,
+        "topic": "Data Sufficiency",
+        "question": "Is k^3 < k^2?\n\n(1) k < 0\n(2) k^2 + k < 0",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "D",
+        "explanation": "The inequality factors as k^2(k-1) < 0, true for any k < 1, k ≠ 0. Statement 1: k < 0 satisfies this region. Statement 2 factors as k(k+1) < 0, restricting k to between -1 and 0, which also satisfies k < 1, k ≠ 0. Each statement alone is sufficient.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 5,
+        "topic": "Data Sufficiency",
+        "question": "A merchant blended two types of tea, Brand X and Brand Y. What percent of the total weight of the blend consists of Brand X?\n\n(1) The ratio of the price per pound of Brand X to Brand Y is 2:1.\n(2) The total financial value of Brand X in the blend is equal to the total financial value of Brand Y, and the price per pound of Brand X is twice that of Brand Y.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "B",
+        "explanation": "Statement 1 only gives pricing, ignoring physical quantities, so weight percentage is unknown. Statement 2 links cost and mass: equal value with Brand X priced double per pound means Brand Y weighs twice as much. Setting Brand X's weight as w and Brand Y's as 2w gives Brand X = 1/3 (33.3%) of the total, so statement 2 alone is sufficient.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 6,
+        "topic": "Data Sufficiency",
+        "question": "When the positive integer n is divided by 12, the remainder is r. What is the value of r?\n\n(1) When n is divided by 4, the remainder is 3.\n(2) When n is divided by 3, the remainder is 2.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "C",
+        "explanation": "Statement 1 gives n = 4k+3, allowing remainder mod 12 to be 3, 7, or 11 (insufficient). Statement 2 gives n = 3m+2, allowing remainder mod 12 to be 2, 5, 8, or 11 (insufficient). The only value satisfying both a mod-4 remainder of 3 and a mod-3 remainder of 2 within 0-11 is 11. Both statements together are needed.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 7,
+        "topic": "Data Sufficiency",
+        "question": "Is the sum of a sequence of 15 consecutive positive integers a multiple of 30?\n\n(1) The median of the sequence is a multiple of 6.\n(2) The smallest integer in the sequence is a multiple of 3.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "A",
+        "explanation": "For 15 consecutive integers, sum = 15 x median. If the median is 6k (statement 1), sum = 90k, always divisible by 30 (sufficient). For statement 2, if the smallest term is 3, sum = 150 (multiple of 30), but if smallest is 6, sum = 195 (not a multiple of 30) — inconsistent, so insufficient.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 8,
+        "topic": "Data Sufficiency",
+        "question": "What is the value of (x - y)^2?\n\n(1) x^2 + y^2 = 25 and xy = 12\n(2) x + y = 7 and xy = 12",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "D",
+        "explanation": "(x-y)^2 = x^2 - 2xy + y^2. Statement 1: 25 - 2(12) = 1 (sufficient). Alternatively (x-y)^2 = (x+y)^2 - 4xy. Statement 2: 7^2 - 4(12) = 49 - 48 = 1 (sufficient). Each statement alone is sufficient.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 9,
+        "topic": "Data Sufficiency",
+        "question": "In a survey of 200 people, how many individuals own both a car and a bicycle?\n\n(1) 120 people own a car.\n(2) 80 people do not own a bicycle.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "E",
+        "explanation": "Statement 2 implies 120 own a bicycle. Combined, 120 own cars and 120 own bicycles out of 200, but without knowing how many own neither, the overlap can't be pinned down (e.g., 40 if none own neither, 60 if 20 own neither). Together still insufficient.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 10,
+        "topic": "Data Sufficiency",
+        "question": "Set S consists of 5 positive integers. Is the standard deviation of the integers in Set S greater than 2?\n\n(1) The average (arithmetic mean) of the integers in Set S is 10.\n(2) The range of Set S is 20.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "B",
+        "explanation": "The mean alone gives no info on dispersion (insufficient). For statement 2, even the tightest clustering with a range of 20 (e.g., 0,10,10,10,20) produces a standard deviation around 6.3, which always exceeds 2, so the answer is definitively yes — sufficient alone.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 11,
+        "topic": "Data Sufficiency",
+        "question": "Working at their respective constant rates, Machine A and Machine B can complete a production run together in t hours. What is the value of t?\n\n(1) Machine A alone would take 4 hours longer than t to complete the production run.\n(2) Machine B alone would take 9 hours longer than t to complete the production run.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "C",
+        "explanation": "Each statement alone has two unknowns. Together: 1/(t+4) + 1/(t+9) = 1/t. Multiplying out gives t^2 = 36, so t = 6 (positive). Both statements are needed.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 12,
+        "topic": "Data Sufficiency",
+        "question": "Is the product of three consecutive integers x, y, and z (where x < y < z) a multiple of 24?\n\n(1) x is an even integer.\n(2) z is an even integer.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "D",
+        "explanation": "Three consecutive integers always include a multiple of 3. If x (the smallest) is even, z (the largest) is also even, and since they are consecutive even numbers, one is divisible by 4, giving the needed factor of 8 (24 total). Statement 2 mirrors this logic. Each statement alone is sufficient.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 13,
+        "topic": "Data Sufficiency",
+        "question": "If m and n are positive integers, what is the value of the sum m + n?\n\n(1) m^n = 64\n(2) m and n are both even integers.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "E",
+        "explanation": "64 can be 64^1, 8^2, 4^3, or 2^6, giving sums of 65, 10, 7, or 8 (insufficient). Adding the even-parity restriction narrows to (8,2) and (2,6), still leaving two possible sums (10 and 8). Together still insufficient.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 14,
+        "topic": "Data Sufficiency",
+        "question": "What is the area of right triangle T?\n\n(1) The perimeter of T is 30.\n(2) The radius of the inscribed circle of T is 2, and the length of its hypotenuse is 13.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "B",
+        "explanation": "A perimeter alone cannot isolate individual leg lengths (insufficient). Using r = (a+b-c)/2 with r=2, c=13 gives a+b=17. Combined with a^2+b^2=169 (Pythagorean theorem), 2ab = 17^2 - 169 = 120, so area = ab/2 = 30. Statement 2 alone is sufficient.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 15,
+        "topic": "Data Sufficiency",
+        "question": "A cylindrical tank is being filled with water at a constant volume per minute. How long will it take to fill the empty tank completely?\n\n(1) It takes 15 minutes to raise the water level by a height equal to one-quarter of the tank's total height.\n(2) The radius of the tank's circular base is 3 meters, and water is being pumped into the tank at a rate of 5 cubic meters per minute.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "A",
+        "explanation": "Volume scales directly with height for a uniform cylinder, so 15 minutes for 25% of the height scales to 60 minutes for the whole tank (sufficient). Statement 2 gives radius and flow rate but no total height, so the fill time can't be determined.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 16,
+        "topic": "Data Sufficiency",
+        "question": "Is the area of triangle XYZ strictly greater than 20?\n\n(1) The length of side XY is 8.\n(2) The length of side YZ is 6.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "E",
+        "explanation": "Single side lengths give no area information. Even combined, two fixed sides of 8 and 6 allow a maximum area of 24 (right angle between them) down to near-zero (angle near 0), spanning across the threshold of 20, so it can't be determined.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 17,
+        "topic": "Data Sufficiency",
+        "question": "An investor purchased a bond that yields a constant annual simple interest. What is the initial principal amount invested in the bond?\n\n(1) The cumulative interest earned over 4 years is $1,200.\n(2) The interest earned in a single year equates to 5% of the principal amount, and this principal amount is $6,000 greater than the total interest earned over 10 years.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "B",
+        "explanation": "Statement 1 alone leaves rate and principal both variable (insufficient). Statement 2: annual interest I = 0.05P, and P = 10(0.05P) + 6000, simplifying to 0.5P = 6000, so P = $12,000. Statement 2 alone is sufficient.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 18,
+        "topic": "Data Sufficiency",
+        "question": "Is Sarah currently older than John?\n\n(1) In 5 years, Sarah's age will be exactly 4/3 of John's current age.\n(2) Five years ago, Sarah's age was exactly half of what John's age will be 5 years from now.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "C",
+        "explanation": "Each statement alone (S+5 = 1.33J, or S-5 = 0.5(J+5)) allows multiple age scenarios. Combining: (4/3)J - 5 = 0.5J + 7.5 gives J = 15, and substituting back gives S = 15. They are the same age, definitively answering 'no'. Both statements together are sufficient.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 19,
+        "topic": "Data Sufficiency",
+        "question": "Is |a| - |b| > 0?\n\n(1) a^2 - b^2 > 0\n(2) a - b > 0",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "A",
+        "explanation": "Statement 1 rearranges to a^2 > b^2, which directly implies |a| > |b| (sufficient). Statement 2 only places a to the right of b on the number line; e.g., a=1, b=-5 gives |b| > |a|, contradicting the claim, so statement 2 alone is insufficient.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 20,
+        "topic": "Data Sufficiency",
+        "question": "Does the linear function y = mx + c pass through the first quadrant of the xy-coordinate plane?\n\n(1) m > 0\n(2) c > 0",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "D",
+        "explanation": "A positive slope (statement 1) forces the line to climb indefinitely to the right, guaranteeing it enters Quadrant 1 regardless of intercept. A positive y-intercept (statement 2) places a point at (0,c) on the boundary of Quadrant 1, and the line must bleed into Quadrant 1 or 2, always touching Quadrant 1's positive-positive region regardless of slope. Each statement alone is sufficient.",
+        "type": "Data Sufficiency"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "exam": "SSC CGL Tier I",
+  "year": 2026,
+  "source": "SSC _CGL_tier_1/SSC_CGL_Tier1_2026_Syllabus.json",
+  "exam_pattern": {
+    "duration_minutes": 60,
+    "questions": 100,
+    "marks_per_question": 2,
+    "negative": 0.5,
+    "subjects": {
+      "General Intelligence and Reasoning": 25,
+      "General Awareness": 25,
+      "Quantitative Aptitude": 25,
+      "English Comprehension": 25
+    }
+  }
+}

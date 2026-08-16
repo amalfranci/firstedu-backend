@@ -1,0 +1,987 @@
+{
+  "paper_id": "JEE-MAIN-Paper1",
+  "title": "JEE Main Paper 1",
+  "subjects": {
+    "Mathematics": [
+      {
+        "q": 1,
+        "topic": "Matrices and Determinants",
+        "question": "Let A be a 3 × 3 matrix such that det(A) = 2. If adj(2A⁻¹) = kA, then the value of k is equal to:",
+        "options": {
+          "A": "2",
+          "B": "4",
+          "C": "8",
+          "D": "16"
+        },
+        "correct": "A",
+        "explanation": "Using the property adj(cA) = c^(n−1) adj(A) for an n × n matrix with n = 3: adj(2A⁻¹) = 2^(3−1) adj(A⁻¹) = 4 adj(A⁻¹). Since adj(A⁻¹) = det(A⁻¹)(A⁻¹)⁻¹ = (1/det(A))A = (1/2)A, we get adj(2A⁻¹) = 4 × (1/2)A = 2A. Comparing with kA yields k = 2."
+      },
+      {
+        "q": 2,
+        "topic": "Limit, Continuity and Differentiability",
+        "question": "The value of the limit lim(x→0) [cos(sin x) − cos x] / x⁴ is equal to:",
+        "options": {
+          "A": "1/3",
+          "B": "1/6",
+          "C": "1/12",
+          "D": "1/2"
+        },
+        "correct": "B",
+        "explanation": "Using Maclaurin expansions: sin x = x − x³/6 + O(x⁵) and cos u = 1 − u²/2 + u⁴/24 − ... Thus cos(sin x) = 1 − (x − x³/6)²/2 + x⁴/24 = 1 − x²/2 + 5x⁴/24. Since cos x = 1 − x²/2 + x⁴/24, we get cos(sin x) − cos x = 4x⁴/24 = x⁴/6. Dividing by x⁴ yields 1/6."
+      },
+      {
+        "q": 3,
+        "topic": "Vector Algebra",
+        "question": "If the vectors a = i − j + 2k, b = 2i + 4j + λk, and c = i + μj + 3k satisfy a · b = 0 and a · c = 0, then the ordered pair (λ, μ) is:",
+        "options": {
+          "A": "(1, −7)",
+          "B": "(−1, 7)",
+          "C": "(1, 7)",
+          "D": "(−1, −7)"
+        },
+        "correct": "C",
+        "explanation": "Given a·b = 0 ⇒ 1(2) + (−1)(4) + 2(λ) = 0 ⇒ −2 + 2λ = 0 ⇒ λ = 1. Given a·c = 0 ⇒ 1(1) + (−1)(μ) + 2(3) = 0 ⇒ 7 − μ = 0 ⇒ μ = 7. Hence, (λ, μ) = (1, 7)."
+      },
+      {
+        "q": 4,
+        "topic": "Statistics and Probability",
+        "question": "The probability that a leap year selected at random contains 53 Sundays is:",
+        "options": {
+          "A": "1/7",
+          "B": "5/7",
+          "C": "3/7",
+          "D": "2/7"
+        },
+        "correct": "D",
+        "explanation": "A leap year has 366 days = 52 full weeks + 2 extra days. The 2 extra days can be any of 7 consecutive pairs; 2 of these contain Sunday. Probability = 2/7."
+      },
+      {
+        "q": 5,
+        "topic": "Limit, Continuity and Differentiability",
+        "question": "If f(x) = sin⁻¹[(2·3ˣ)/(1+9ˣ)], then f'(1/2) is equal to:",
+        "options": {
+          "A": "√3 ln 3",
+          "B": "(√3/2) ln 3",
+          "C": "−√3 ln 3",
+          "D": "ln 3"
+        },
+        "correct": "B",
+        "explanation": "Let 3ˣ = tan θ. Then f(x) = 2 tan⁻¹(3ˣ). Differentiating: f'(x) = (2·3ˣ ln 3)/(1+9ˣ). At x=1/2, 3^(1/2)=√3, so f'(1/2) = (2√3 ln 3)/4 = (√3/2) ln 3."
+      },
+      {
+        "q": 6,
+        "topic": "Integral Calculus",
+        "question": "The area bounded by the curve y = x|x|, the x-axis, and the lines x = −1 and x = 1 is:",
+        "options": {
+          "A": "1/3",
+          "B": "2/3",
+          "C": "1",
+          "D": "4/3"
+        },
+        "correct": "B",
+        "explanation": "For x≥0, y=x²; for x<0, y=−x². Area = ∫₋₁⁰ x² dx + ∫₀¹ x² dx = 1/3 + 1/3 = 2/3."
+      },
+      {
+        "q": 7,
+        "topic": "Sequence and Series",
+        "question": "The sum of the series 1 + (1+2)/2 + (1+2+3)/3 + ... up to n terms is:",
+        "options": {
+          "A": "n(n+1)/2",
+          "B": "n(n+2)/4",
+          "C": "n(n+3)/4",
+          "D": "n²/2"
+        },
+        "correct": "C",
+        "explanation": "The rth term Tr = (r+1)/2. Sum Sn = (1/2)[n(n+1)/2 + n] = n(n+3)/4."
+      },
+      {
+        "q": 8,
+        "topic": "Matrices and Determinants",
+        "question": "If the system of linear equations x+y+z=6, x+2y+3z=10, and x+2y+λz=μ has infinitely many solutions, then:",
+        "options": {
+          "A": "λ = 3, μ = 10",
+          "B": "λ = 3, μ = 12",
+          "C": "λ = 2, μ = 10",
+          "D": "λ = 4, μ = 8"
+        },
+        "correct": "A",
+        "explanation": "Subtracting equations gives (λ−3)z = μ−10. For infinitely many solutions this must be an identity, so λ=3 and μ=10."
+      },
+      {
+        "q": 9,
+        "topic": "Complex Numbers and Quadratic Equations",
+        "question": "If z is a complex number such that |z| = 1, then the expression (1+z)/(1+z̄) is equal to:",
+        "options": {
+          "A": "z",
+          "B": "z̄",
+          "C": "1",
+          "D": "−1"
+        },
+        "correct": "A",
+        "explanation": "Since |z|=1, z̄ = 1/z. Substituting gives (1+z)/(1+1/z) = z(1+z)/(1+z) = z."
+      },
+      {
+        "q": 10,
+        "topic": "Permutations and Combinations",
+        "question": "The number of words that can be formed using all the letters of the word 'ASSASSINATION' such that all the S's are always together is:",
+        "options": {
+          "A": "13!/(4!3!2!2!)",
+          "B": "10!/(3!2!2!)",
+          "C": "13!/4!",
+          "D": "10!/4!"
+        },
+        "correct": "B",
+        "explanation": "The word has 13 letters: A(3), S(4), I(2), N(2), T(1), O(1). Treating all 4 S's as one block gives 10 entities. Permutations = 10!/(3!2!2!)."
+      },
+      {
+        "q": 11,
+        "topic": "Binomial Theorem and its Simple Applications",
+        "question": "The coefficient of x⁷ in the expansion of (1 − x − x² + x³)⁶ is equal to:",
+        "options": {
+          "A": "132",
+          "B": "144",
+          "C": "−144",
+          "D": "120"
+        },
+        "correct": "C",
+        "explanation": "Factorize as (1−x)⁶(1−x²)⁶. Summing terms where r+2k=7 gives 36 − 300 + 120 = −144."
+      },
+      {
+        "q": 12,
+        "topic": "Sequence and Series",
+        "question": "If a, b, c are in A.P. and a, b, d are in G.P., then a, a−b, d−c are in:",
+        "options": {
+          "A": "A.P.",
+          "B": "G.P.",
+          "C": "H.P.",
+          "D": "Neither A.P. nor G.P."
+        },
+        "correct": "B",
+        "explanation": "a(d−c) = (a−b)², so the middle term squared equals the product of the first and third terms, meaning a, a−b, d−c are in G.P."
+      },
+      {
+        "q": 13,
+        "topic": "Three Dimensional Geometry",
+        "question": "The shortest distance between the lines (x−1)/2 = (y−2)/3 = (z−3)/4 and (x−2)/3 = (y−4)/4 = (z−5)/5 is:",
+        "options": {
+          "A": "1/√6",
+          "B": "2/√6",
+          "C": "0",
+          "D": "1/√3"
+        },
+        "correct": "A",
+        "explanation": "Using the shortest distance formula with cross product b1×b2 = (−1,2,−1), |b1×b2|=√6, and AB=(1,2,2), distance = |−1+4−2|/√6 = 1/√6."
+      },
+      {
+        "q": 14,
+        "topic": "Differential Equations",
+        "question": "The differential equation of the family of circles passing through the origin and having centers on the x-axis is:",
+        "options": {
+          "A": "y² = x² + 2xy(dy/dx)",
+          "B": "y² = x² − 2xy(dy/dx)",
+          "C": "x² = y² + 2xy(dy/dx)",
+          "D": "x² = y² − 2xy(dy/dx)"
+        },
+        "correct": "A",
+        "explanation": "Circle: x²+y²−2ax=0. Differentiating and substituting 2a back gives y² = x² + 2xy(dy/dx)."
+      },
+      {
+        "q": 15,
+        "topic": "Co-ordinate Geometry",
+        "question": "If the tangent at (1, 7) to the curve x² = y − 6 touches the circle x² + y² + 16x + 12y + c = 0, then the value of c is:",
+        "options": {
+          "A": "185",
+          "B": "85",
+          "C": "95",
+          "D": "75"
+        },
+        "correct": "C",
+        "explanation": "Tangent line: 2x − y + 5 = 0. Circle center (−8,−6). Distance = √5 = radius, so 100−c=5, c=95."
+      },
+      {
+        "q": 16,
+        "topic": "Co-ordinate Geometry",
+        "question": "The eccentricity of the hyperbola whose length of latus rectum is 8 and length of conjugate axis is equal to half of the distance between its foci is:",
+        "options": {
+          "A": "4/3",
+          "B": "4/√3",
+          "C": "2/√3",
+          "D": "√3/2"
+        },
+        "correct": "C",
+        "explanation": "2b = (1/2)(2ae) ⇒ b = ae/2. Using b² = a²(e²−1): e²/4 = e²−1 ⇒ e² = 4/3 ⇒ e = 2/√3."
+      },
+      {
+        "q": 17,
+        "topic": "Statistics and Probability",
+        "question": "If the mean of 8 observations is 9 and 7 of the observations are 6, 7, 10, 12, 12, 13, 8, then the 8th observation is:",
+        "options": {
+          "A": "4",
+          "B": "6",
+          "C": "10",
+          "D": "12"
+        },
+        "correct": "A",
+        "explanation": "Sum of 8 obs = 72. Sum of given 7 = 68. 8th observation = 72−68 = 4."
+      },
+      {
+        "q": 18,
+        "topic": "Statistics and Probability",
+        "question": "If A and B are two independent events such that P(A) = 1/3 and P(B) = 1/4, then P(A∪B) is equal to:",
+        "options": {
+          "A": "1/2",
+          "B": "7/12",
+          "C": "5/12",
+          "D": "1/6"
+        },
+        "correct": "A",
+        "explanation": "P(A∩B) = 1/12. P(A∪B) = 1/3+1/4−1/12 = 6/12 = 1/2."
+      },
+      {
+        "q": 19,
+        "topic": "Integral Calculus",
+        "question": "The value of the definite integral ∫₀^(π/2) [sin¹⁰⁰x/(sin¹⁰⁰x+cos¹⁰⁰x)] dx is:",
+        "options": {
+          "A": "π",
+          "B": "π/2",
+          "C": "π/4",
+          "D": "π/8"
+        },
+        "correct": "C",
+        "explanation": "Using the property I = ∫f(a−x)dx and adding, 2I = π/2, so I = π/4."
+      },
+      {
+        "q": 20,
+        "topic": "Trigonometry",
+        "question": "If tan⁻¹x + tan⁻¹y + tan⁻¹z = π, then the value of x+y+z is equal to:",
+        "options": {
+          "A": "0",
+          "B": "1",
+          "C": "xyz",
+          "D": "xy+yz+zx"
+        },
+        "correct": "C",
+        "explanation": "A+B = π−C ⇒ tan(A+B) = −tan C ⇒ (x+y)/(1−xy) = −z ⇒ x+y+z = xyz."
+      },
+      {
+        "q": 21,
+        "topic": "Sets, Relations and Functions",
+        "question": "Let R be a relation on the set of integers Z defined by a R b if and only if a−b is divisible by 5. Then R is:",
+        "options": {
+          "A": "Equivalence Relation",
+          "B": "Reflexive but not symmetric",
+          "C": "Symmetric but not transitive",
+          "D": "Anti-symmetric"
+        },
+        "correct": "A",
+        "explanation": "R is reflexive, symmetric, and transitive, hence an equivalence relation."
+      },
+      {
+        "q": 22,
+        "topic": "Integral Calculus",
+        "question": "The indefinite integral ∫ eˣ(tan x + ln sec x) dx is equal to:",
+        "options": {
+          "A": "eˣ tan x + C",
+          "B": "eˣ ln sec x + C",
+          "C": "eˣ sec x + C",
+          "D": "eˣ(tan x + sec x) + C"
+        },
+        "correct": "B",
+        "explanation": "Using ∫eˣ[f(x)+f'(x)]dx = eˣf(x)+C with f(x)=ln sec x, f'(x)=tan x, the integral is eˣ ln sec x + C."
+      },
+      {
+        "q": 23,
+        "topic": "Statistics and Probability",
+        "question": "The variance of the first n natural numbers is:",
+        "options": {
+          "A": "(n²+1)/12",
+          "B": "(n²−1)/6",
+          "C": "(n²−1)/12",
+          "D": "n(n+1)/2"
+        },
+        "correct": "C",
+        "explanation": "σ² = (n+1)(2n+1)/6 − (n+1)²/4 = (n²−1)/12."
+      },
+      {
+        "q": 24,
+        "topic": "Trigonometry",
+        "question": "In a triangle ABC, if sides a=2, b=3 and sin A = 2/3, then angle B is:",
+        "options": {
+          "A": "30°",
+          "B": "60°",
+          "C": "45°",
+          "D": "90°"
+        },
+        "correct": "D",
+        "explanation": "By Sine Rule, sin B = 1, so B = 90°."
+      },
+      {
+        "q": 25,
+        "topic": "Statistics and Probability",
+        "question": "If P(A∩B)=1/2, P(Aᶜ∩Bᶜ)=1/2, and 2P(A)=P(B)=p, then the value of p is:",
+        "options": {
+          "A": "1/4",
+          "B": "1/2",
+          "C": "1/3",
+          "D": "2/3"
+        },
+        "correct": "D",
+        "explanation": "P(A∪B)=1/2. Using inclusion-exclusion with P(A)=p/2, P(B)=p, P(A∩B)=1/2: 1/2 = p/2+p−1/2 ⇒ p=2/3."
+      }
+    ],
+    "Chemistry": [
+      {
+        "q": 1,
+        "topic": "Solutions",
+        "question": "Passage (Q1–Q3): Consider a non-ideal binary liquid solution composed of component A and component B. The solution exhibits positive deviations from Raoult's law across the entire concentration range. Which of the following conditions correctly characterizes the molecular interactions and thermodynamic behavior of this binary mixture?",
+        "options": {
+          "A": "ΔHmix > 0 and A–B intermolecular forces are weaker than A–A and B–B forces",
+          "B": "ΔHmix < 0 and A–B intermolecular forces are stronger than A–A and B–B forces",
+          "C": "ΔVmix < 0 and total vapor pressure is lower than predicted by Raoult's law",
+          "D": "ΔSmix < 0 and the process of dissolution is non-spontaneous"
+        },
+        "correct": "A",
+        "explanation": "Positive deviation implies A–B attractive interactions are weaker than A–A and B–B interactions, resulting in higher vapor pressure, endothermic mixing (ΔHmix > 0), and volume expansion (ΔVmix > 0)."
+      },
+      {
+        "q": 2,
+        "topic": "Solutions",
+        "question": "What type of azeotrope is formed by this binary liquid mixture, and at what composition does it boil?",
+        "options": {
+          "A": "Maximum boiling azeotrope at the composition where total vapor pressure is minimum",
+          "B": "Minimum boiling azeotrope at the composition where total vapor pressure is maximum",
+          "C": "Ideal azeotrope boiling at a temperature strictly equal to the arithmetic mean of boiling points of pure components",
+          "D": "Zeotropic mixture that cannot form any constant boiling mixture at constant pressure"
+        },
+        "correct": "B",
+        "explanation": "Positive deviation solutions show a maximum vapor pressure, forming a minimum boiling azeotrope at that composition."
+      },
+      {
+        "q": 3,
+        "topic": "Solutions",
+        "question": "For an ethanol-water mixture (which shows positive deviation from Raoult's law), fractional distillation can yield at maximum ethanol of concentration:",
+        "options": {
+          "A": "100% absolute alcohol by simple fractionating columns",
+          "B": "50.0% by weight due to equal vapor pressures of pure components",
+          "C": "95.6% by mass because the liquid and vapor phases have identical composition at the azeotropic point",
+          "D": "0% because the mixture undergoes total thermal decomposition before reaching boiling point"
+        },
+        "correct": "C",
+        "explanation": "Ethanol-water forms a minimum boiling azeotrope at ~95.6% ethanol by mass (boiling at 351.15 K), preventing further separation by fractional distillation."
+      },
+      {
+        "q": 4,
+        "topic": "Atomic Structure",
+        "question": "What is the maximum number of electrons in a ground-state atom that can have the quantum numbers n=4 and l=1?",
+        "options": {
+          "A": "2",
+          "B": "10",
+          "C": "14",
+          "D": "6"
+        },
+        "correct": "D",
+        "explanation": "n=4, l=1 designates the 4p subshell with 3 orbitals, each holding 2 electrons, giving a maximum of 6 electrons."
+      },
+      {
+        "q": 5,
+        "topic": "Chemical Kinetics",
+        "question": "For a first-order chemical reaction A → Products, the time required for 75% completion is 60 minutes. What is the half-life (t1/2) of this reaction?",
+        "options": {
+          "A": "30 minutes",
+          "B": "15 minutes",
+          "C": "45 minutes",
+          "D": "20 minutes"
+        },
+        "correct": "A",
+        "explanation": "t75% corresponds to two half-lives, so 60 = 2×t1/2 ⇒ t1/2 = 30 minutes."
+      },
+      {
+        "q": 6,
+        "topic": "Solutions",
+        "question": "Which of the following aqueous salt solutions has the highest boiling point at 1 atm pressure, assuming complete ionization of all electrolytes?",
+        "options": {
+          "A": "0.10 M NaCl",
+          "B": "0.10 M Na2SO4",
+          "C": "0.10 M Al(NO3)3",
+          "D": "0.10 M Glucose"
+        },
+        "correct": "C",
+        "explanation": "Al(NO3)3 has i=4, giving the highest total particle concentration (0.40 M) and greatest boiling point elevation."
+      },
+      {
+        "q": 7,
+        "topic": "Redox Reactions and Electrochemistry",
+        "question": "Given the standard reduction potentials E°(Fe3+/Fe2+) = +0.77 V and E°(Fe2+/Fe) = −0.44 V, what is the standard reduction potential E°(Fe3+/Fe)?",
+        "options": {
+          "A": "+0.33 V",
+          "B": "−0.11 V",
+          "C": "−0.037 V",
+          "D": "+0.11 V"
+        },
+        "correct": "C",
+        "explanation": "Using ΔG° additivity: ΔG°1=−0.77F, ΔG°2=+0.88F, sum=+0.11F for 3-electron process, so E° = −0.11/3 ≈ −0.037 V."
+      },
+      {
+        "q": 8,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "In which of the following molecules or ions does the central atom possess sp3d hybridization with a see-saw molecular geometry?",
+        "options": {
+          "A": "XeF4",
+          "B": "ClF3",
+          "C": "SF4",
+          "D": "PCl5"
+        },
+        "correct": "C",
+        "explanation": "SF4 has 4 bond pairs and 1 lone pair, sp3d hybridization, with see-saw molecular shape."
+      },
+      {
+        "q": 9,
+        "topic": "Some Basic Principles of Organic Chemistry",
+        "question": "Which of the following compounds displays optical activity due to molecular asymmetry (chirality) despite not having any stereogenic carbon atom?",
+        "options": {
+          "A": "Penta-1,4-diene",
+          "B": "Penta-2,3-diene",
+          "C": "Buta-1,3-diene",
+          "D": "2-Methylbutane"
+        },
+        "correct": "B",
+        "explanation": "Penta-2,3-diene is a chiral allene due to perpendicular planes at the terminal sp2 carbons bearing different substituents."
+      },
+      {
+        "q": 10,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "When phenol is treated with chloroform and aqueous sodium hydroxide followed by acidification (Reimer-Tiemann reaction), the principal organic product formed is:",
+        "options": {
+          "A": "Benzoic acid",
+          "B": "Salicylaldehyde",
+          "C": "Salicylic acid",
+          "D": "Anisole"
+        },
+        "correct": "B",
+        "explanation": "The Reimer-Tiemann reaction forms salicylaldehyde via dichlorocarbene attack on phenoxide followed by hydrolysis."
+      },
+      {
+        "q": 11,
+        "topic": "Coordination Compounds",
+        "question": "According to Crystal Field Theory, what is the spin-only magnetic moment of the high-spin complex ion [Fe(H2O)6]2+?",
+        "options": {
+          "A": "4.90 BM",
+          "B": "2.83 BM",
+          "C": "3.87 BM",
+          "D": "5.92 BM"
+        },
+        "correct": "A",
+        "explanation": "Fe2+ is d6, high-spin configuration t2g4 eg2 gives 4 unpaired electrons; μ = √(4×6) ≈ 4.90 BM."
+      },
+      {
+        "q": 12,
+        "topic": "p-Block Elements (Group-13 to Group 18 Elements)",
+        "question": "Which of the following oxides of nitrogen is an acidic, paramagnetic gas with a brown color?",
+        "options": {
+          "A": "N2O",
+          "B": "NO",
+          "C": "N2O5",
+          "D": "NO2"
+        },
+        "correct": "D",
+        "explanation": "NO2 is a reddish-brown paramagnetic gas that dissolves in water to form nitrous and nitric acids."
+      },
+      {
+        "q": 13,
+        "topic": "Coordination Compounds",
+        "question": "The correct IUPAC name for the coordination complex [Co(NH3)5(Cl)]Cl2 is:",
+        "options": {
+          "A": "Pentaamminechloridocobalt(III) chloride",
+          "B": "Pentaamminechlorocobalt(II) chloride",
+          "C": "Chloridopentaamminecobalt(III) dichloride",
+          "D": "Pentaamminedichloridocobalt(III) chloride"
+        },
+        "correct": "A",
+        "explanation": "Cobalt oxidation state is +3; name is Pentaamminechloridocobalt(III) chloride."
+      },
+      {
+        "q": 14,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "What is the IUPAC name of the compound CH3–CH(OH)–CH2–CO–CH3?",
+        "options": {
+          "A": "2-Hydroxypentan-4-one",
+          "B": "4-Hydroxypentan-2-one",
+          "C": "4-Oxopentan-2-ol",
+          "D": "2-Oxopentan-4-ol"
+        },
+        "correct": "B",
+        "explanation": "The ketone group takes priority; numbering from the ketone end gives 4-hydroxypentan-2-one."
+      },
+      {
+        "q": 15,
+        "topic": "Biomolecules",
+        "question": "Which of the following aldoses yields an optically inactive (meso) aldaric acid upon oxidation with concentrated nitric acid (HNO3)?",
+        "options": {
+          "A": "D-Glucose",
+          "B": "D-Mannose",
+          "C": "D-Galactose",
+          "D": "D-Ribose-5-phosphate"
+        },
+        "correct": "C",
+        "explanation": "D-galactose oxidizes to galactaric (mucic) acid, a meso compound, hence optically inactive."
+      },
+      {
+        "q": 16,
+        "topic": "Chemical Thermodynamics",
+        "question": "An ideal gas expands isothermally and reversibly from a volume of 1.0 L to 10.0 L at 300 K. If 1 mole of gas is present, the entropy change of the system (ΔSsys) is: [Use R = 8.314 J K⁻¹ mol⁻¹ and ln 10 = 2.303]",
+        "options": {
+          "A": "19.15 J K⁻¹",
+          "B": "−19.15 J K⁻¹",
+          "C": "8.314 J K⁻¹",
+          "D": "Zero"
+        },
+        "correct": "A",
+        "explanation": "ΔSsys = nR ln(V2/V1) = 8.314×2.303 = +19.15 J K⁻¹."
+      },
+      {
+        "q": 17,
+        "topic": "Organic Compounds Containing Halogens",
+        "question": "Which halide undergoes SN1 hydrolysis at the fastest rate among the given choices?",
+        "options": {
+          "A": "Chlorobenzene",
+          "B": "1-Chlorobutane",
+          "C": "2-Chlorobutane",
+          "D": "2-Chloro-2-methylpropane"
+        },
+        "correct": "D",
+        "explanation": "tert-Butyl chloride forms the most stable 3° carbocation, giving the fastest SN1 rate."
+      },
+      {
+        "q": 18,
+        "topic": "Equilibrium",
+        "question": "What is the solubility product constant (Ksp) of a sparingly soluble salt MX2 if its molar solubility in pure water at 25°C is s = 1.0×10⁻⁴ mol L⁻¹?",
+        "options": {
+          "A": "1.0×10⁻⁸",
+          "B": "4.0×10⁻¹²",
+          "C": "2.0×10⁻¹²",
+          "D": "4.0×10⁻⁸"
+        },
+        "correct": "B",
+        "explanation": "Ksp = 4s³ = 4×(1.0×10⁻⁴)³ = 4.0×10⁻¹²."
+      },
+      {
+        "q": 19,
+        "topic": "p-Block Elements (Group-13 to Group 18 Elements)",
+        "question": "Which of the following halogen molecules possesses the lowest bond dissociation enthalpy?",
+        "options": {
+          "A": "Cl2",
+          "B": "Br2",
+          "C": "I2",
+          "D": "F2"
+        },
+        "correct": "C",
+        "explanation": "I2 has the lowest bond dissociation enthalpy (151.1 kJ/mol) due to large atomic size and poor orbital overlap."
+      },
+      {
+        "q": 20,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "An organic compound A (C3H6O) gives a positive 2,4-DNP test but does not reduce Fehling's solution or Tollen's reagent. Compound A on reaction with I2/NaOH gives a yellow precipitate of iodoform. Compound A is:",
+        "options": {
+          "A": "Propanal",
+          "B": "Prop-2-en-1-ol",
+          "C": "Methoxyethene",
+          "D": "Propanone"
+        },
+        "correct": "D",
+        "explanation": "Negative Fehling's/Tollen's rules out aldehyde; positive iodoform test confirms it is propanone (a methyl ketone)."
+      },
+      {
+        "q": 21,
+        "topic": "Equilibrium",
+        "question": "What is the pH of a 0.01 M solution of ammonium acetate (CH3COONH4) at 25°C? [Given pKa(CH3COOH)=4.76 and pKb(NH3)=4.75]",
+        "options": {
+          "A": "7.005",
+          "B": "4.755",
+          "C": "9.245",
+          "D": "2.380"
+        },
+        "correct": "A",
+        "explanation": "pH = 7 + (1/2)(pKa − pKb) = 7 + 0.005 = 7.005."
+      },
+      {
+        "q": 22,
+        "topic": "d- and f-Block Elements",
+        "question": "The oxidation state of chromium in the final orange product formed when potassium dichromate (K2Cr2O7) is dissolved in water and treated with concentrated sulfuric acid is:",
+        "options": {
+          "A": "+3",
+          "B": "+6",
+          "C": "+5",
+          "D": "+4"
+        },
+        "correct": "B",
+        "explanation": "In Cr2O7²⁻, oxidation state of Cr is +6, and it remains +6 under acidification."
+      },
+      {
+        "q": 23,
+        "topic": "Biomolecules",
+        "question": "Which of the following nitrogenous bases is present in RNA but absent in DNA?",
+        "options": {
+          "A": "Adenine",
+          "B": "Guanine",
+          "C": "Uracil",
+          "D": "Thymine"
+        },
+        "correct": "C",
+        "explanation": "RNA contains uracil instead of thymine, which is found in DNA."
+      },
+      {
+        "q": 24,
+        "topic": "Equilibrium",
+        "question": "For the reaction N2(g) + 3H2(g) ⇌ 2NH3(g), ΔH° = −92.4 kJ. According to Le Chatelier's principle, the equilibrium yield of ammonia (NH3) increases upon:",
+        "options": {
+          "A": "Increasing temperature at constant volume",
+          "B": "Decreasing total pressure at constant temperature",
+          "C": "Adding an inert gas at constant pressure",
+          "D": "Increasing total pressure at constant temperature"
+        },
+        "correct": "D",
+        "explanation": "Increasing pressure shifts equilibrium toward fewer gas moles (forward direction), increasing NH3 yield."
+      },
+      {
+        "q": 25,
+        "topic": "Coordination Compounds",
+        "question": "Which of the following coordination compounds exhibits linkage isomerism?",
+        "options": {
+          "A": "[Co(NH3)5(SO4)]Br",
+          "B": "[Cr(H2O)6]Cl3",
+          "C": "[Pt(NH3)2Cl2]",
+          "D": "[Co(NH3)5(NO2)]Cl2"
+        },
+        "correct": "D",
+        "explanation": "The ambidentate nitrite ligand (NO2⁻) can coordinate via N or O, giving rise to linkage isomers."
+      }
+    ],
+    "Physics": [
+      {
+        "q": 1,
+        "topic": "Work, Energy and Power",
+        "question": "Passage (Q1–Q3): A particle of mass m moves along the x-axis in a force field derived from the potential energy function U(x) = (1/2)αx² − (1/4)βx⁴, where α>0 and β>0 are positive constants. What is the position of stable equilibrium for the particle?",
+        "options": {
+          "A": "x = 0",
+          "B": "x = √(α/β)",
+          "C": "x = −√(α/β)",
+          "D": "x = ±√(2α/β)"
+        },
+        "correct": "A",
+        "explanation": "Equilibrium positions occur where F(x)=−dU/dx=0, giving x=0 and x=±√(α/β). At x=0, d²U/dx²=α>0, a local minimum, hence stable equilibrium."
+      },
+      {
+        "q": 2,
+        "topic": "Work, Energy and Power",
+        "question": "For the potential energy function U(x) = (1/2)αx² − (1/4)βx⁴, what is the height of the potential energy barrier that a particle starting at x=0 must overcome to escape to infinity?",
+        "options": {
+          "A": "α²/β",
+          "B": "α²/4β",
+          "C": "α²/2β",
+          "D": "3α²/4β"
+        },
+        "correct": "B",
+        "explanation": "The barrier peak occurs at x=±√(α/β); evaluating U there gives Umax=α²/4β, so ΔU=α²/4β relative to U(0)=0."
+      },
+      {
+        "q": 3,
+        "topic": "Oscillations and Waves",
+        "question": "If the particle executes small oscillations near x=0, what is its angular frequency of oscillation?",
+        "options": {
+          "A": "√(α/2m)",
+          "B": "√(2α/m)",
+          "C": "√(α/m)",
+          "D": "√(β/m)"
+        },
+        "correct": "C",
+        "explanation": "For small x, the restoring force reduces to F≈−αx, giving keff=α and ω=√(α/m)."
+      },
+      {
+        "q": 4,
+        "topic": "Units and Measurements",
+        "question": "If energy E, velocity v, and force F are chosen as fundamental physical quantities, what is the dimensional formula for mass density ρ?",
+        "options": {
+          "A": "[Ev⁻⁴F⁰]",
+          "B": "[Ev⁻²F¹]",
+          "C": "[E⁻¹v⁻⁴F²]",
+          "D": "[E⁻²v⁻²F³]"
+        },
+        "correct": "D",
+        "explanation": "Solving the dimensional equations for [ρ]=[E]^a[v]^b[F]^c gives a=−2, b=−2, c=3, so [ρ]=[E⁻²v⁻²F³]."
+      },
+      {
+        "q": 5,
+        "topic": "Kinematics",
+        "question": "A projectile is launched from ground level with an initial speed u at an angle θ above the horizontal (θ>45°). At what time t after launch is the velocity vector perpendicular to the initial velocity vector?",
+        "options": {
+          "A": "u/(g sin θ)",
+          "B": "u/(g cos θ)",
+          "C": "u sin θ/g",
+          "D": "u tan θ/g"
+        },
+        "correct": "A",
+        "explanation": "Setting u⃗·v⃗=0 gives u² = ugt sin θ, so t = u/(g sin θ)."
+      },
+      {
+        "q": 6,
+        "topic": "Laws of Motion",
+        "question": "A block of mass m rests on a flat horizontal floor with coefficient of static friction μ. A force F is applied to pull the block at an angle θ above the horizontal. What is the minimum magnitude of force F required to move the block?",
+        "options": {
+          "A": "μmg",
+          "B": "μmg/√(1+μ²)",
+          "C": "μmg/(1+μ)",
+          "D": "mg/√(1+μ²)"
+        },
+        "correct": "B",
+        "explanation": "Minimizing F=μmg/(cosθ+μsinθ) requires maximizing cosθ+μsinθ=√(1+μ²), giving Fmin=μmg/√(1+μ²)."
+      },
+      {
+        "q": 7,
+        "topic": "Rotational Motion",
+        "question": "A uniform solid sphere of mass M and radius R rolls without slipping down a fixed inclined plane inclined at an angle θ to the horizontal. The linear acceleration of the center of mass of the sphere is:",
+        "options": {
+          "A": "(3/5)g sin θ",
+          "B": "(2/5)g sin θ",
+          "C": "(5/7)g sin θ",
+          "D": "(2/7)g sin θ"
+        },
+        "correct": "C",
+        "explanation": "a = g sinθ/(1+Icm/MR²) = g sinθ/(1+2/5) = (5/7)g sinθ."
+      },
+      {
+        "q": 8,
+        "topic": "Gravitation",
+        "question": "Two point masses m and 2m are fixed at a distance r apart in free space. The gravitational potential at the position along the line joining them where the net gravitational field is zero is:",
+        "options": {
+          "A": "−(Gm/r)(3+√2)",
+          "B": "−(Gm/r)(1+2√2)",
+          "C": "−(Gm/r)(2+3√2)",
+          "D": "−(Gm/r)(3+2√2)"
+        },
+        "correct": "D",
+        "explanation": "Solving for the null point and computing potential gives V=−(Gm/r)(3+2√2)."
+      },
+      {
+        "q": 9,
+        "topic": "Thermodynamics",
+        "question": "An ideal monatomic gas undergoes a thermodynamic process obeying P=kV², where k is a constant and V is the volume. The molar heat capacity of the gas during this process is:",
+        "options": {
+          "A": "11R/6",
+          "B": "13R/6",
+          "C": "5R/2",
+          "D": "7R/3"
+        },
+        "correct": "A",
+        "explanation": "This is a polytropic process with n=−2. C=Cv+R/(1−n)=(3/2)R+R/3=11R/6."
+      },
+      {
+        "q": 10,
+        "topic": "Thermodynamics",
+        "question": "A Carnot engine operates between two heat reservoirs at temperatures TH=600 K and TC=300 K. If it absorbs 1200 J of heat per cycle from the hot reservoir, the work done by the engine per cycle is:",
+        "options": {
+          "A": "300 J",
+          "B": "600 J",
+          "C": "900 J",
+          "D": "400 J"
+        },
+        "correct": "B",
+        "explanation": "η=1−300/600=0.5. W=ηQH=0.5×1200=600 J."
+      },
+      {
+        "q": 11,
+        "topic": "Electrostatics",
+        "question": "An infinitely long thin straight wire carrying a uniform linear charge density λ is placed along the axis of a thin hollow conducting cylindrical shell of radius R. What is the electric field magnitude at a perpendicular distance r from the axis for r>R?",
+        "options": {
+          "A": "Zero",
+          "B": "λ/(4πε0r)",
+          "C": "λ/(2πε0r)",
+          "D": "λ/(2πε0R)"
+        },
+        "correct": "C",
+        "explanation": "By Gauss's Law with a cylindrical surface of radius r>R, E=λ/(2πε0r)."
+      },
+      {
+        "q": 12,
+        "topic": "Current Electricity",
+        "question": "In a balanced Wheatstone bridge, four resistance arms P, Q, R, S satisfy P/Q=R/S. If the galvanometer resistance is G and internal resistance of the battery is r, the total equivalent resistance across the battery terminals is:",
+        "options": {
+          "A": "(P+Q)(R+S)/(P+Q+R+S) + G",
+          "B": "(PR+QS)/(P+Q+R+S)",
+          "C": "(P+R)(Q+S)/(P+Q+R+S)",
+          "D": "(P+Q)(R+S)/(P+Q+R+S)"
+        },
+        "correct": "D",
+        "explanation": "With the bridge balanced, no current flows through the galvanometer; the two branches (P+Q) and (R+S) are in parallel, giving Req=(P+Q)(R+S)/(P+Q+R+S)."
+      },
+      {
+        "q": 13,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "A semicircular wire loop of radius R carrying a current I lies in the xy-plane with its straight edge along the x-axis. A uniform magnetic field B⃗=B0k̂ is applied. The total magnetic force acting on the loop is:",
+        "options": {
+          "A": "Zero",
+          "B": "2IRB0ĵ",
+          "C": "πIRB0ĵ",
+          "D": "2πIRB0î"
+        },
+        "correct": "A",
+        "explanation": "For any closed current loop in a uniform field, the net force is zero since ∮dl⃗=0."
+      },
+      {
+        "q": 14,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "A conducting rod of length L rotates with a constant angular velocity ω about a vertical axis passing through one of its ends in a uniform horizontal magnetic field B. What is the magnitude of the electromotive force (EMF) induced across the ends of the rod?",
+        "options": {
+          "A": "BωL²",
+          "B": "(1/2)BωL²",
+          "C": "(1/4)BωL²",
+          "D": "2BωL²"
+        },
+        "correct": "B",
+        "explanation": "Integrating dE=Bωx dx from 0 to L gives E=(1/2)BωL²."
+      },
+      {
+        "q": 15,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "A series LCR circuit contains an inductor L=100 mH, a capacitor C=10 µF, and a resistor R=10 Ω. What is the Quality factor (Q-factor) of this resonant circuit?",
+        "options": {
+          "A": "5",
+          "B": "8",
+          "C": "10",
+          "D": "20"
+        },
+        "correct": "C",
+        "explanation": "ω0=1/√(LC)=10³ rad/s. Q=ω0L/R=(10³×0.1)/10=10."
+      },
+      {
+        "q": 16,
+        "topic": "Optics",
+        "question": "A ray of light traveling inside a glass block (µg=1.5) strikes a flat glass-liquid interface. Total internal reflection occurs at the interface for angles of incidence θ≥45°. What is the refractive index µl of the liquid?",
+        "options": {
+          "A": "3√2/2",
+          "B": "3/4",
+          "C": "√2/3",
+          "D": "3/(2√2)"
+        },
+        "correct": "D",
+        "explanation": "sinθc=µl/µg. sin45°=µl/1.5 ⇒ µl=1.5/√2=3/(2√2)."
+      },
+      {
+        "q": 17,
+        "topic": "Optics",
+        "question": "In a Young's double-slit experiment using monochromatic light of wavelength λ, the fringe width observed on a screen is β. If the entire apparatus is immersed in a liquid of refractive index µ=1.33, the new fringe width β' becomes:",
+        "options": {
+          "A": "β/µ",
+          "B": "µβ",
+          "C": "β/µ²",
+          "D": "µ²β"
+        },
+        "correct": "A",
+        "explanation": "Wavelength decreases to λ/µ in the liquid, so β'=β/µ."
+      },
+      {
+        "q": 18,
+        "topic": "Dual Nature of Matter and Radiation",
+        "question": "When light of frequency ν is incident on a photosensitive metal surface, the maximum stopping potential is V1. When light of frequency 2ν is incident on the same surface, the stopping potential becomes V2. The threshold frequency ν0 of the metal is:",
+        "options": {
+          "A": "[(V2−V1)/(V2−2V1)]ν",
+          "B": "[(2V1−V2)/(V1−V2)]ν",
+          "C": "[(V2+V1)/(V2−V1)]ν",
+          "D": "(V1/V2)ν"
+        },
+        "correct": "B",
+        "explanation": "From Einstein's equation and taking ratios, ν0 = [(2V1−V2)/(V1−V2)]ν."
+      },
+      {
+        "q": 19,
+        "topic": "Atoms and Nuclei",
+        "question": "According to Bohr's model, the de Broglie wavelength λ of an electron in the n-th orbit of a hydrogen atom is proportional to:",
+        "options": {
+          "A": "n⁻¹",
+          "B": "n⁰",
+          "C": "n¹",
+          "D": "n²"
+        },
+        "correct": "C",
+        "explanation": "λ=2πr/n and r∝n², so λ∝n."
+      },
+      {
+        "q": 20,
+        "topic": "Atoms and Nuclei",
+        "question": "A radioactive sample has a half-life of T1/2=4 days. What fraction of the original active nuclei will remain undecayed after a duration of 16 days?",
+        "options": {
+          "A": "1/4",
+          "B": "1/8",
+          "C": "1/12",
+          "D": "1/16"
+        },
+        "correct": "D",
+        "explanation": "n=16/4=4 half-lives. Fraction remaining = (1/2)⁴ = 1/16."
+      },
+      {
+        "q": 21,
+        "topic": "Electronic Devices",
+        "question": "A Zener diode with breakdown voltage VZ=6 V is connected in series with a resistor R=200 Ω across a DC supply of Vin=10 V. If the load current is 10 mA, what is the current passing through the Zener diode?",
+        "options": {
+          "A": "10 mA",
+          "B": "15 mA",
+          "C": "20 mA",
+          "D": "5 mA"
+        },
+        "correct": "A",
+        "explanation": "VR=4V, IS=4/200=20 mA. IZ=IS−IL=20−10=10 mA."
+      },
+      {
+        "q": 22,
+        "topic": "Oscillations and Waves",
+        "question": "A uniform string of length L=2 m and total mass M=20 g is stretched under a tension of T=100 N. The velocity of transverse wave pulses traveling along this string is:",
+        "options": {
+          "A": "50 m/s",
+          "B": "100 m/s",
+          "C": "200 m/s",
+          "D": "10 m/s"
+        },
+        "correct": "B",
+        "explanation": "µ=0.01 kg/m. v=√(T/µ)=√(10⁴)=100 m/s."
+      },
+      {
+        "q": 23,
+        "topic": "Oscillations and Waves",
+        "question": "A vertical spring-mass system with spring constant k and block mass m has an oscillation period T when stationary on the ground. If the entire assembly is placed inside an elevator accelerating upward with constant acceleration a=g/2, the new period of small vertical oscillations is:",
+        "options": {
+          "A": "√(2/3)T",
+          "B": "√(3/2)T",
+          "C": "T",
+          "D": "√T/2"
+        },
+        "correct": "C",
+        "explanation": "The period T=2π√(m/k) is independent of geff; the period remains unchanged."
+      },
+      {
+        "q": 24,
+        "topic": "Properties of Solids and Liquids",
+        "question": "A small spherical lead shot of radius r falls under gravity through a viscous fluid of viscosity η and density ρl. If the density of lead is ρs, the terminal velocity vt reached by the sphere is proportional to:",
+        "options": {
+          "A": "r⁻¹",
+          "B": "r⁰",
+          "C": "r¹",
+          "D": "r²"
+        },
+        "correct": "D",
+        "explanation": "vt=2r²(ρs−ρl)g/9η, so vt∝r²."
+      },
+      {
+        "q": 25,
+        "topic": "Electrostatics",
+        "question": "An infinite network of identical capacitors, each of capacitance C, is constructed as a ladder network where each repeating unit consists of one series capacitor C and one parallel capacitor C. What is the equivalent capacitance Ceq across the input terminals of this infinite network?",
+        "options": {
+          "A": "√5 C",
+          "B": "(√5+1)C",
+          "C": "(√3−1)C/2",
+          "D": "(√5−1)C/2"
+        },
+        "correct": "D",
+        "explanation": "Solving the self-consistent equation Ceq²+CCeq−C²=0 gives Ceq=[(√5−1)/2]C."
+      }
+    ]
+  }
+}

@@ -1,0 +1,770 @@
+{
+  "paper_id": "JEE-ADVANCED-Paper5",
+  "title": "JEE Advanced Paper 5",
+  "exam": "JEE Advanced",
+  "year": 2026,
+  "subjects": {
+    "Mathematics": [
+      {
+        "q": 1,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Complex Numbers",
+        "question": "If z1 = 2 + 3i and z2 = 1 − i, then the value of |z1z2| is",
+        "options": {
+          "A": "√26",
+          "B": "√13",
+          "C": "√2",
+          "D": "26"
+        },
+        "correct": "A",
+        "explanation": "|z1|=√13, |z2|=√2. |z1z2|=|z1||z2|=√13·√2=√26."
+      },
+      {
+        "q": 2,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Quadratic Equations",
+        "question": "If the equations x² + ax + b = 0 and x² + bx + a = 0 (a ≠ b) have exactly one common root, then the value of a + b is",
+        "options": {
+          "A": "0",
+          "B": "−1",
+          "C": "1",
+          "D": "−2"
+        },
+        "correct": "B",
+        "explanation": "Subtracting equations gives (a-b)(α-1)=0, so α=1. Substituting: 1+a+b=0, so a+b=-1."
+      },
+      {
+        "q": 3,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Sequences and Series",
+        "question": "Let a1, a2, a3, ... be an arithmetic progression with common difference d ≠ 0. If a1, a2, a4 (in that order) form a geometric progression, then which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "a1 = d",
+          "B": "The common ratio of the geometric progression is 2",
+          "C": "a1 = 2d",
+          "D": "The common ratio of the geometric progression is 3"
+        },
+        "correct": "A,B",
+        "explanation": "a2²=a1a4 gives d²=a1d, so d=a1 (A correct, C false). Common ratio = a2/a1 = 2a1/a1 = 2 (B correct, D false)."
+      },
+      {
+        "q": 4,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Logarithms, Permutations and Combinations",
+        "question": "The number of ways in which the letters of the word 'APPLE' can be arranged so that the two P's are never together is",
+        "options": {
+          "A": "24",
+          "B": "48",
+          "C": "36",
+          "D": "60"
+        },
+        "correct": "C",
+        "explanation": "Total arrangements = 5!/2! = 60. Arrangements with P's together = 4! = 24. Never together = 60-24 = 36."
+      },
+      {
+        "q": 5,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Binomial Theorem",
+        "question": "In the binomial expansion of (1 + x)^10, which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "The coefficient of x⁴ is 210",
+          "B": "The coefficient of x⁵ is the largest among the coefficients of all terms",
+          "C": "The sum of all the binomial coefficients in the expansion is 1024",
+          "D": "The coefficient of x³ is equal to the coefficient of x⁸"
+        },
+        "correct": "A,B,C",
+        "explanation": "10C4=210 (A correct). 10C5=252 is the largest (B correct). Sum of coefficients=2^10=1024 (C correct). 10C3=120 ≠ 10C8=45 (D false)."
+      },
+      {
+        "q": 6,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Matrices and Determinants",
+        "question": "If A = [[1, 2], [3, 4]], then the determinant of adj(A) is",
+        "options": {
+          "A": "2",
+          "B": "4",
+          "C": "−4",
+          "D": "−2"
+        },
+        "correct": "D",
+        "explanation": "det(adjA)=(detA)^(n-1)=detA for n=2. detA=4-6=-2."
+      },
+      {
+        "q": 7,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Probability",
+        "question": "A fair six-faced die is rolled twice. Let A be the event that the sum of the two numbers obtained is 7, and B be the event that at least one of the two rolls shows a 4. Which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "P(A ∩ B) = 1/18",
+          "B": "P(A | B) = 2/11",
+          "C": "A and B are independent events",
+          "D": "P(A ∪ B) = 11/36"
+        },
+        "correct": "A,B",
+        "explanation": "P(A∩B)=2/36=1/18 (A correct). P(A|B)=(1/18)/(11/36)=2/11 (B correct). P(A)P(B)=11/216 ≠ P(A∩B)=12/216, not independent (C false). P(A∪B)=15/36=5/12, not 11/36 (D false)."
+      },
+      {
+        "q": 8,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Straight Lines (2D Analytical Geometry)",
+        "question": "The distance between the parallel lines 3x + 4y = 9 and 3x + 4y = 24 is",
+        "options": {
+          "A": "3",
+          "B": "5",
+          "C": "15",
+          "D": "1"
+        },
+        "correct": "A",
+        "explanation": "Distance = |24-9|/√(9+16) = 15/5 = 3."
+      },
+      {
+        "q": 9,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Circles",
+        "question": "Consider the circle x² + y² − 6x − 8y + 9 = 0. Which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "The centre of the circle is (3, 4)",
+          "B": "The radius of the circle is 4",
+          "C": "The circle passes through the origin",
+          "D": "The point (6, 8) lies inside the circle"
+        },
+        "correct": "A,B",
+        "explanation": "Centre=(3,4) (A correct), radius=√(9+16-9)=4 (B correct). Origin gives 9≠0, so circle doesn't pass through origin (C false). Distance of (6,8) from centre is 5 > radius 4, so it lies outside (D false)."
+      },
+      {
+        "q": 10,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Conic Sections (Parabola, Ellipse, Hyperbola)",
+        "question": "If the parabola y² = 4ax passes through the point (3, −6), then the length of its latus rectum is",
+        "options": {
+          "A": "6",
+          "B": "12",
+          "C": "24",
+          "D": "3"
+        },
+        "correct": "B",
+        "explanation": "36=12a, a=3. Latus rectum=4a=12."
+      },
+      {
+        "q": 11,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Conic Sections (Parabola, Ellipse, Hyperbola)",
+        "question": "For the ellipse x²/25 + y²/9 = 1, which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "The length of the major axis is 10",
+          "B": "The eccentricity of the ellipse is 4/5",
+          "C": "The foci of the ellipse are at (±4, 0)",
+          "D": "The length of the latus rectum is 9/5"
+        },
+        "correct": "A,B,C",
+        "explanation": "a=5,b=3, major axis=10 (A correct). c=4, e=4/5 (B correct). Foci=(±4,0) (C correct). Latus rectum=2b²/a=18/5, not 9/5 (D false)."
+      },
+      {
+        "q": 12,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Conic Sections (Parabola, Ellipse, Hyperbola)",
+        "question": "A hyperbola has its centre at the origin, transverse axis along the x-axis, and eccentricity √3. If it passes through the point (3√2, 2), then its equation is",
+        "options": {
+          "A": "x²/32 − y²/16 = 1",
+          "B": "x²/16 − y²/16 = 1",
+          "C": "x²/16 − y²/32 = 1",
+          "D": "x²/8 − y²/32 = 1"
+        },
+        "correct": "C",
+        "explanation": "b²=2a². Substituting point: 18/a²-2/(2a²)=1, giving a²=16, b²=32. Equation: x²/16-y²/32=1."
+      },
+      {
+        "q": 13,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Limits, Continuity and Differentiability",
+        "question": "Let f(x) = (x² − 4)/(x − 2) for x ≠ 2, and f(2) = k, where k is a real constant. Which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "limx→2 f(x) = 4",
+          "B": "f is continuous at x = 2 if k = 4",
+          "C": "f is discontinuous at x = 2 if k ≠ 4",
+          "D": "If k ≠ 4, the discontinuity of f at x = 2 is removable"
+        },
+        "correct": "A,B,C,D",
+        "explanation": "For x≠2, f(x)=x+2, so limit=4 (A correct). Continuity requires f(2)=4, i.e. k=4 (B correct); otherwise discontinuous (C correct). Since the limit exists (just doesn't match f(2)), it's a removable discontinuity (D correct)."
+      },
+      {
+        "q": 14,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Applications of Derivatives",
+        "question": "The function f(x) = x³ − 3x² + 3x + 7, for x ∈ ℝ, is",
+        "options": {
+          "A": "increasing on (−∞, 1) and decreasing on (1, ∞)",
+          "B": "decreasing on ℝ",
+          "C": "having a local maximum at x = 1",
+          "D": "strictly increasing on ℝ"
+        },
+        "correct": "D",
+        "explanation": "f'(x)=3(x-1)²≥0 everywhere, zero only at isolated point x=1, so f is strictly increasing on all of ℝ."
+      },
+      {
+        "q": 15,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Integral Calculus",
+        "question": "Let I = ∫ (x² + 1)/(x⁴ + 1) dx, for x > 0. Which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "Dividing numerator and denominator by x² and substituting t = x − 1/x reduces I to ∫ dt/(t² + 2)",
+          "B": "I = (1/√2) tan⁻¹[(x² − 1)/(√2 x)] + C",
+          "C": "I = (1/√2) tan⁻¹[(x² + 1)/(√2 x)] + C",
+          "D": "The derivative of the expression in option (B) with respect to x equals (x² + 1)/(x⁴ + 1)"
+        },
+        "correct": "A,B,D",
+        "explanation": "Substitution t=x-1/x reduces the integral to ∫dt/(t²+2) (A correct), integrating to (1/√2)tan⁻¹[(x²-1)/(√2x)]+C (B correct, C has wrong sign so false). Differentiating B's expression recovers the original integrand (D correct)."
+      },
+      {
+        "q": 16,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Integral Calculus",
+        "question": "The value of ∫0^(π/2) ln(sin x) dx − ∫0^(π/2) ln(cos x) dx is",
+        "options": {
+          "A": "0",
+          "B": "π ln 2",
+          "C": "−(π/2) ln 2",
+          "D": "(π/2) ln 2"
+        },
+        "correct": "A",
+        "explanation": "Using x→π/2-x substitution, J=K, so J-K=0."
+      },
+      {
+        "q": 17,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Differential Equations",
+        "question": "Consider the differential equation dy/dx + y = e⁻ˣ, with the initial condition y(0) = 1. Which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "The integrating factor of the differential equation is eˣ",
+          "B": "The general solution can be written as y·eˣ = x + C, where C is an arbitrary constant",
+          "C": "The particular solution satisfying y(0) = 1 is y = (x + 1)e⁻ˣ",
+          "D": "As x → ∞, y(x) → 0"
+        },
+        "correct": "A,B,C,D",
+        "explanation": "IF=eˣ (A correct). Integrating gives y·eˣ=x+C (B correct). Applying y(0)=1 gives C=1, so y=(x+1)e⁻ˣ (C correct). As x→∞, e⁻ˣ dominates and y→0 (D correct)."
+      },
+      {
+        "q": 18,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Vectors",
+        "question": "Let vectors a = 2i − j + 2k and b = i + 2j − 2k. Which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "a · b = −4",
+          "B": "|a × b| = √65",
+          "C": "The angle between a and b is acute",
+          "D": "a and b are perpendicular to each other"
+        },
+        "correct": "A,B",
+        "explanation": "a·b=2-2-4=-4 (A correct). a×b=-2i+6j+5k, |a×b|=√65 (B correct). cosθ=-4/9 <0, so angle is obtuse, not acute (C false). Since a·b≠0, vectors are not perpendicular (D false)."
+      }
+    ],
+    "Physics": [
+      {
+        "q": 1,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Kinematics",
+        "question": "At what angle of projection, measured from the horizontal, is the horizontal range of a projectile equal to four times its maximum height?",
+        "options": {
+          "A": "45°",
+          "B": "30°",
+          "C": "60°",
+          "D": "37°"
+        },
+        "correct": "A",
+        "explanation": "R = 4H gives sinθcosθ = sin²θ, so tanθ = 1, θ = 45°."
+      },
+      {
+        "q": 2,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Newton's Laws of Motion and Friction",
+        "question": "A block of mass 2 kg lies on a rough horizontal surface. The coefficient of friction between the block and the surface is 0.5. A force F is applied on the block at an angle of 53° above the horizontal, and this is just sufficient to make the block start moving. Find the value of F. (Take g = 10 m/s², sin53° = 0.8, cos53° = 0.6.)",
+        "options": {
+          "A": "8 N",
+          "B": "10 N",
+          "C": "12.5 N",
+          "D": "15 N"
+        },
+        "correct": "B",
+        "explanation": "F = μmg/(cos53°+μ sin53°) = (0.5×2×10)/(0.6+0.4) = 10 N."
+      },
+      {
+        "q": 3,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Newton's Laws of Motion and Friction",
+        "question": "A car travels on a horizontal circular road of radius R, which is banked at an angle θ to the horizontal. The coefficient of static friction between the tyres and the road surface is μ. Let v0 = √(gR tanθ) denote the speed at which the car can go around the curve on this banked road without relying on friction at all. Which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "The maximum speed at which the car can travel around the curve without slipping outward is greater than v0.",
+          "B": "The minimum speed below which the car tends to slip inward (toward the centre) is greater than v0.",
+          "C": "When the car travels at exactly speed v0, the road exerts no frictional force on it.",
+          "D": "If μ is less than tanθ, a car parked (at rest) on this banked road will remain stationary without sliding down."
+        },
+        "correct": "A,C",
+        "explanation": "vmax=√[gR(tanθ+μ)/(1−μtanθ)] > v0 (A correct). vmin=√[gR(tanθ−μ)/(1+μtanθ)] < v0, not greater (B false). At v0 no friction is needed by definition (C correct). A parked car needs μ≥tanθ to remain stationary; if μ<tanθ it slides down (D false)."
+      },
+      {
+        "q": 4,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Work, Energy and Power",
+        "question": "A particle of mass 2 kg, initially at rest at x = 0, moves along the x-axis under the action of a net force F(x) = (6 − 2x) N, where x is measured in metres. Find the speed of the particle when it reaches x = 3 m.",
+        "options": {
+          "A": "2 m/s",
+          "B": "2.5 m/s",
+          "C": "3 m/s",
+          "D": "3.5 m/s"
+        },
+        "correct": "C",
+        "explanation": "W = ∫0^3 (6-2x)dx = 9 J = (1/2)(2)v², giving v = 3 m/s."
+      },
+      {
+        "q": 5,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Work, Energy and Power",
+        "question": "A block A of mass 2 kg, moving with a speed of 6 m/s, collides elastically and head-on with a stationary block B of mass 4 kg on a frictionless horizontal surface. Which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "After the collision, block A moves with a speed of 2 m/s in the direction opposite to its initial velocity.",
+          "B": "After the collision, block B moves with a speed of 4 m/s in the same direction as A's initial velocity.",
+          "C": "The kinetic energy of block A increases as a result of the collision.",
+          "D": "The total momentum of the two-block system after the collision is greater than before the collision."
+        },
+        "correct": "A,B",
+        "explanation": "vA'=-2 m/s, vB'=4 m/s (A, B correct). A's KE drops from 36J to 4J (C false). Momentum is conserved, unchanged at 12 kg·m/s (D false)."
+      },
+      {
+        "q": 6,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "System of Particles and Rotational Motion",
+        "question": "A uniform solid sphere of mass M and radius R starts from rest and rolls without slipping down a fixed incline of angle θ, descending a vertical height h in the process. Which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "The friction force acting on the sphere does no net work on it during the rolling motion.",
+          "B": "The linear acceleration of the centre of mass of the sphere along the incline is (5/7)g sinθ.",
+          "C": "The speed of the sphere on reaching the bottom is √(2gh), the same as if it slid down the incline without friction and without rotating.",
+          "D": "If a uniform solid cylinder of the same mass and radius were released from rest at the same height on the same incline, the sphere would reach the bottom of the incline before the cylinder."
+        },
+        "correct": "A,B,D",
+        "explanation": "a = g sinθ/(1+2/5) = (5/7)g sinθ (B correct). Static friction does no work at the rolling contact point (A correct). v² = (10/7)gh < 2gh, so C is false. Cylinder's acceleration (2/3)g sinθ < sphere's (5/7)g sinθ, so sphere arrives first (D correct)."
+      },
+      {
+        "q": 7,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Gravitation",
+        "question": "A satellite revolves around the Earth in a circular orbit at a height equal to the Earth's radius R above the surface. If ve is the escape velocity from the Earth's surface, the orbital speed of the satellite is:",
+        "options": {
+          "A": "ve",
+          "B": "ve√2",
+          "C": "ve/√2",
+          "D": "ve/2"
+        },
+        "correct": "D",
+        "explanation": "r=2R, v=√(gR/2), ve=√(2gR). v/ve = 1/2, so v = ve/2."
+      },
+      {
+        "q": 8,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Simple Harmonic Motion and Oscillations",
+        "question": "A block of mass 0.5 kg is attached to one end of a spring of force constant 200 N/m and executes simple harmonic motion. Find its time period.",
+        "options": {
+          "A": "π/10 s",
+          "B": "π/5 s",
+          "C": "π/20 s",
+          "D": "π s"
+        },
+        "correct": "A",
+        "explanation": "T = 2π√(m/k) = 2π√(0.5/200) = π/10 s."
+      },
+      {
+        "q": 9,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Wave Motion and Sound",
+        "question": "A string of length 1 m, fixed at both ends, has waves travelling along it at a speed of 200 m/s. The string is set into vibration in its third harmonic mode. Which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "The frequency of vibration in this mode is 300 Hz.",
+          "B": "The wavelength of the standing wave in this mode is 2/3 m.",
+          "C": "This mode has exactly three nodes located strictly between the two fixed ends (not counting the ends themselves).",
+          "D": "If the tension in the string is doubled while its mass per unit length is kept unchanged, the frequency of this harmonic becomes 300√2 Hz."
+        },
+        "correct": "A,B,D",
+        "explanation": "f3=3(200)/2=300Hz (A correct), λ3=2/3 m (B correct). Nodes strictly between ends = n-1 = 2, not 3 (C false). Doubling tension scales v (and hence f) by √2, giving 300√2 Hz (D correct)."
+      },
+      {
+        "q": 10,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Wave Motion and Sound",
+        "question": "A source emitting sound of frequency 900 Hz moves directly towards a stationary observer with a speed of 34 m/s. Taking the speed of sound in air as 340 m/s, find the frequency of sound heard by the observer.",
+        "options": {
+          "A": "850 Hz",
+          "B": "1000 Hz",
+          "C": "950 Hz",
+          "D": "1100 Hz"
+        },
+        "correct": "B",
+        "explanation": "f' = 900×340/(340-34) = 900×(10/9) = 1000 Hz."
+      },
+      {
+        "q": 11,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Thermal Physics",
+        "question": "A fixed quantity of a monatomic ideal gas undergoes a cyclic process A→B→C→D→A on a P-V diagram: A(P1=1×10⁵ Pa, V1=2×10⁻³ m³) → B(P2=3×10⁵ Pa, V1) isochoric; B→C(P2, V2=5×10⁻³ m³) isobaric expansion; C→D(P1, V2) isochoric; D→A isobaric compression back to initial state. Which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "The net work done by the gas over one complete cycle is 600 J.",
+          "B": "The net change in the internal energy of the gas over one complete cycle is zero.",
+          "C": "The total heat absorbed by the gas over one complete cycle is 600 J.",
+          "D": "During the process A→B, the heat absorbed by the gas equals (5/2)(P2−P1)V1."
+        },
+        "correct": "A,B,C",
+        "explanation": "Rectangular cycle area W = (P2-P1)(V2-V1) = 600J (A correct). ΔU=0 over a cycle (B correct), so Q=W=600J (C correct). A→B is isochoric, using Cv=(3/2)R not (5/2)R, so D is false (correct coefficient is 3/2, giving 600J not 1000J)."
+      },
+      {
+        "q": 12,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Thermal Physics",
+        "question": "At a given common temperature, the ratio of the root-mean-square (rms) speed of hydrogen gas molecules (molar mass 2 g/mol) to that of oxygen gas molecules (molar mass 32 g/mol) is:",
+        "options": {
+          "A": "2:1",
+          "B": "8:1",
+          "C": "4:1",
+          "D": "16:1"
+        },
+        "correct": "C",
+        "explanation": "vH2/vO2 = √(MO2/MH2) = √16 = 4, giving 4:1."
+      },
+      {
+        "q": 13,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Electrostatics",
+        "question": "An electric dipole of dipole moment p is formed by two point charges +q and −q separated by a small distance. Consider two points, P on the axial line and Q on the equatorial line of the dipole, both located at the same distance r from the centre of the dipole, where r is much greater than the separation between the charges. Which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "The electric field at P has magnitude (1/4πε0)(2p/r³) and points along the direction of the dipole moment.",
+          "B": "The electric field at Q has magnitude (1/4πε0)(p/r³) and points opposite to the direction of the dipole moment.",
+          "C": "The magnitude of the electric field at P is half the magnitude of the electric field at Q.",
+          "D": "If this dipole is placed in a uniform external electric field with its dipole moment antiparallel to the field, it experiences maximum torque."
+        },
+        "correct": "A,B",
+        "explanation": "Eaxial=(1/4πε0)(2p/r³) along dipole moment (A correct); Eequatorial=(1/4πε0)(p/r³) opposite to dipole moment (B correct). Eaxial is twice Eequatorial, not half (C false). Torque τ=pEsinθ is zero at θ=180° (antiparallel), not maximum; max torque is at θ=90° (D false)."
+      },
+      {
+        "q": 14,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Capacitance",
+        "question": "Three capacitors of capacitance 2 μF, 3 μF and 4 μF are connected such that the 2 μF and 3 μF capacitors are in series with each other, and this series combination is connected in parallel with the 4 μF capacitor. Find the equivalent capacitance of the combination.",
+        "options": {
+          "A": "4.8 μF",
+          "B": "5 μF",
+          "C": "6 μF",
+          "D": "5.2 μF"
+        },
+        "correct": "D",
+        "explanation": "C12 = (2×3)/(2+3) = 1.2 μF. Ceq = 1.2 + 4 = 5.2 μF."
+      },
+      {
+        "q": 15,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Current Electricity",
+        "question": "In a circuit, two batteries — one of EMF 12 V with internal resistance 2 Ω, and another of EMF 8 V with internal resistance 2 Ω — are connected in parallel between two points A and B, with the positive terminals of both batteries connected towards A. A resistor of resistance 4 Ω is also connected directly between A and B, in parallel with both batteries. Which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "The potential difference between points A and B is 8 V.",
+          "B": "The current through the 4 Ω resistor is 2 A.",
+          "C": "The current supplied by the 8 V battery is 2 A.",
+          "D": "The current supplied by the 12 V battery is equal to the current flowing through the 4 Ω resistor."
+        },
+        "correct": "A,B,D",
+        "explanation": "Using Millman's theorem, VAB = (12/2+8/2)/(1/2+1/2+1/4) = 8V (A correct). IR = 8/4 = 2A (B correct). I(12V) = (12-8)/2 = 2A; I(8V) = (8-8)/2 = 0A (C false). The 12V battery's 2A equals the resistor current (D correct)."
+      },
+      {
+        "q": 16,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "Which of the following statement(s) about magnetic forces is/are correct?",
+        "options": {
+          "A": "A charged particle moving parallel to a uniform magnetic field experiences no magnetic force.",
+          "B": "The magnetic force on a moving charged particle is always perpendicular to its velocity, and hence it does no work on the particle.",
+          "C": "The magnetic force on a charged particle can change the direction of its velocity but cannot change its speed.",
+          "D": "A straight current-carrying conductor placed parallel to a uniform magnetic field experiences zero net magnetic force."
+        },
+        "correct": "A,B,C,D",
+        "explanation": "F=qv×B is zero when v∥B (A correct). F is always ⊥v, so it does no work (B correct), hence only direction changes, not speed (C correct). F=IL×B is zero when L∥B (D correct)."
+      },
+      {
+        "q": 17,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Electromagnetic Induction and AC Circuits",
+        "question": "A conducting rod of length 1 m slides with a constant velocity of 4 m/s along two parallel, frictionless, resistanceless rails separated by 1 m, in a region of uniform magnetic field of magnitude 0.5 T directed perpendicular to the plane of the rails. The rails are connected at one end by a resistor of resistance 2 Ω, completing the circuit. Which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "The magnitude of the EMF induced in the rod is 2 V.",
+          "B": "The current flowing through the 2 Ω resistor is 1 A.",
+          "C": "The magnitude of the force that must be applied to keep the rod moving at this constant velocity is 2 N.",
+          "D": "The rate at which the applied force does work on the rod is equal to the rate of heat dissipation in the resistor."
+        },
+        "correct": "A,B,D",
+        "explanation": "ε=BLv=2V (A correct). I=ε/R=1A (B correct). F=BIL=0.5N, not 2N (C false). Pagent=Fv=2W=PR=I²R=2W (D correct)."
+      },
+      {
+        "q": 18,
+        "type": "Questions 1-18 (Mixed MCQ/MSQ)",
+        "topic": "Modern Physics",
+        "question": "In the photoelectric effect, which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "The maximum kinetic energy of the emitted photoelectrons depends on the frequency of the incident light, not on its intensity.",
+          "B": "If the frequency of the incident light is below the threshold frequency for a given metal, no photoelectrons are emitted, no matter how intense the light is.",
+          "C": "For light with frequency above the threshold frequency, increasing the intensity of the incident light increases the number of photoelectrons emitted per second but does not change their maximum kinetic energy.",
+          "D": "The stopping potential for a given metal surface depends on the frequency of the incident light and is independent of the light's intensity."
+        },
+        "correct": "A,B,C,D",
+        "explanation": "All four are standard consequences of Einstein's photoelectric equation KEmax = hf - φ: KEmax depends on frequency, not intensity (A, C correct); below threshold frequency no emission occurs regardless of intensity (B correct); stopping potential depends only on frequency (D correct)."
+      }
+    ],
+    "Chemistry": [
+      {
+        "q": 1,
+        "type": "Questions 1-18 (Mixed Single Correct / Multiple Correct)",
+        "topic": "General Topics",
+        "question": "The number of moles of oxygen atoms present in 4.9 g of H2SO4 is:",
+        "options": {
+          "A": "0.2",
+          "B": "0.1",
+          "C": "0.4",
+          "D": "0.05"
+        },
+        "correct": "A",
+        "explanation": "Molar mass H2SO4=98 g/mol. Moles = 4.9/98 = 0.05 mol. O atoms per molecule = 4, so O moles = 0.05×4 = 0.2 mol."
+      },
+      {
+        "q": 2,
+        "type": "Questions 1-18 (Mixed Single Correct / Multiple Correct)",
+        "topic": "Classification of Elements and Periodicity in Properties",
+        "question": "Which of the following correctly represents the increasing order of atomic radius of Li, Na, K and Rb?",
+        "options": {
+          "A": "Rb < K < Na < Li",
+          "B": "Li < Na < K < Rb",
+          "C": "Na < Li < K < Rb",
+          "D": "K < Rb < Li < Na"
+        },
+        "correct": "B",
+        "explanation": "Atomic radius increases down Group 1 as new shells are added: Li < Na < K < Rb."
+      },
+      {
+        "q": 3,
+        "type": "Questions 1-18 (Mixed Single Correct / Multiple Correct)",
+        "topic": "Aldehydes and Ketones",
+        "question": "The IUPAC name of CH3-CH(CH3)-CH2-CHO is:",
+        "options": {
+          "A": "2-methylbutanal",
+          "B": "2-methylpropanal",
+          "C": "3-methylbutanal",
+          "D": "3-methylpentanal"
+        },
+        "correct": "C",
+        "explanation": "Numbering from the CHO carbon as C1 gives a 4-carbon chain with a methyl on C3: 3-methylbutanal."
+      },
+      {
+        "q": 4,
+        "type": "Questions 1-18 (Mixed Single Correct / Multiple Correct)",
+        "topic": "Chemical Thermodynamics",
+        "question": "For a certain reaction, ΔH = 30 kJ/mol and ΔS = 100 J K-1 mol-1, both assumed to be temperature-independent. The reaction becomes spontaneous:",
+        "options": {
+          "A": "above 400 K",
+          "B": "above 200 K",
+          "C": "below 300 K",
+          "D": "above 300 K"
+        },
+        "correct": "D",
+        "explanation": "T = ΔH/ΔS = 30000/100 = 300 K; ΔG<0 requires T>300K since both ΔH and ΔS are positive."
+      },
+      {
+        "q": 5,
+        "type": "Questions 1-18 (Mixed Single Correct / Multiple Correct)",
+        "topic": "Chemical and Ionic Equilibrium",
+        "question": "For the reaction N2(g) + 3H2(g) ⇌ 2NH3(g), Kc = 4 mol⁻² L² at a certain temperature. At equilibrium, [N2] = 1 mol/L and [H2] = 1 mol/L. The equilibrium concentration of NH3 (in mol/L) is:",
+        "options": {
+          "A": "2",
+          "B": "4",
+          "C": "1",
+          "D": "0.5"
+        },
+        "correct": "A",
+        "explanation": "Kc = [NH3]²/([N2][H2]³); 4 = [NH3]²/1, so [NH3]=2 mol/L."
+      },
+      {
+        "q": 6,
+        "type": "Questions 1-18 (Mixed Single Correct / Multiple Correct)",
+        "topic": "Coordination Compounds",
+        "question": "The number of ions produced when one mole of [Co(NH3)5Cl]Cl2 is completely dissolved in water is:",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "1"
+        },
+        "correct": "B",
+        "explanation": "The compound dissociates as [Co(NH3)5Cl]2+ + 2Cl-, giving 1+2 = 3 ions."
+      },
+      {
+        "q": 7,
+        "type": "Questions 1-18 (Mixed Single Correct / Multiple Correct)",
+        "topic": "p-Block Elements",
+        "question": "The correct order of thermal stability of the group 15 hydrides NH3, PH3, AsH3 and SbH3 is:",
+        "options": {
+          "A": "SbH3 > AsH3 > PH3 > NH3",
+          "B": "PH3 > NH3 > AsH3 > SbH3",
+          "C": "NH3 > PH3 > AsH3 > SbH3",
+          "D": "AsH3 > NH3 > PH3 > SbH3"
+        },
+        "correct": "C",
+        "explanation": "Bond dissociation enthalpy (and thermal stability) decreases down the group: NH3 > PH3 > AsH3 > SbH3."
+      },
+      {
+        "q": 8,
+        "type": "Questions 1-18 (Mixed Single Correct / Multiple Correct)",
+        "topic": "Aldehydes and Ketones",
+        "question": "Which of the following reagents can be used to distinguish between acetaldehyde and acetone?",
+        "options": {
+          "A": "2,4-Dinitrophenylhydrazine",
+          "B": "Sodium bisulphite (NaHSO3)",
+          "C": "Grignard reagent",
+          "D": "Tollens' reagent"
+        },
+        "correct": "D",
+        "explanation": "Tollens' reagent oxidizes aldehydes (silver mirror) but not ketones like acetone, distinguishing them; the other reagents react with both."
+      },
+      {
+        "q": 9,
+        "type": "Questions 1-18 (Mixed Single Correct / Multiple Correct)",
+        "topic": "Amines",
+        "question": "The correct order of increasing base strength of NH3, CH3NH2, (CH3)2NH and (CH3)3N in aqueous solution is:",
+        "options": {
+          "A": "NH3 < (CH3)3N < CH3NH2 < (CH3)2NH",
+          "B": "NH3 < CH3NH2 < (CH3)2NH < (CH3)3N",
+          "C": "(CH3)3N < NH3 < CH3NH2 < (CH3)2NH",
+          "D": "(CH3)2NH < CH3NH2 < (CH3)3N < NH3"
+        },
+        "correct": "A",
+        "explanation": "Considering +I effect, steric hindrance, and solvation: NH3 < (CH3)3N < CH3NH2 < (CH3)2NH."
+      },
+      {
+        "q": 10,
+        "type": "Questions 1-18 (Mixed Single Correct / Multiple Correct)",
+        "topic": "Electrochemistry",
+        "question": "For the cell reaction Zn(s) + Cu2+(aq) → Zn2+(aq) + Cu(s), E°cell = 1.10 V at 298 K. Using 2.303RT/F = 0.06 V, the value of log Kc for the reaction (n = 2) is approximately:",
+        "options": {
+          "A": "18.3",
+          "B": "36.7",
+          "C": "73.3",
+          "D": "1.10"
+        },
+        "correct": "B",
+        "explanation": "log Kc = nE°cell/0.06 = (2×1.10)/0.06 ≈ 36.7."
+      },
+      {
+        "q": 11,
+        "type": "Questions 1-18 (Mixed Single Correct / Multiple Correct)",
+        "topic": "Isolation of Metals",
+        "question": "In the Hall-Héroult process for the extraction of aluminium, cryolite (Na3AlF6) is added mainly to:",
+        "options": {
+          "A": "increase the melting point of alumina",
+          "B": "act as an oxidizing agent",
+          "C": "lower the melting point of the mixture and increase its electrical conductivity",
+          "D": "remove silica impurities from the ore"
+        },
+        "correct": "C",
+        "explanation": "Cryolite lowers the melting point of alumina and increases the conductivity of the molten mixture, making electrolysis economically feasible."
+      },
+      {
+        "q": 12,
+        "type": "Questions 1-18 (Mixed Single Correct / Multiple Correct)",
+        "topic": "Solid State",
+        "question": "For a body-centred cubic (bcc) unit cell, which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "The number of atoms per unit cell is 2",
+          "B": "The coordination number of each atom is 8",
+          "C": "The packing efficiency of the unit cell is approximately 74%",
+          "D": "The bcc arrangement represents a closest-packed structure"
+        },
+        "correct": "A,B",
+        "explanation": "bcc has 2 atoms/cell (8 corners×1/8 + 1 body center) and coordination number 8 (A, B correct). Packing efficiency is ~68%, not 74% (C false); bcc is not a closest-packed structure (D false)."
+      },
+      {
+        "q": 13,
+        "type": "Questions 1-18 (Mixed Single Correct / Multiple Correct)",
+        "topic": "Chemical Kinetics",
+        "question": "For a first-order reaction, which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "The half-life period is independent of the initial concentration of the reactant",
+          "B": "A plot of ln[A] versus time (t) gives a straight line with slope equal to -k",
+          "C": "The unit of the rate constant k is mol L-1 s-1",
+          "D": "The time required for 99% completion of the reaction is approximately equal to 4.606/k"
+        },
+        "correct": "A,B,D",
+        "explanation": "t1/2=0.693/k, independent of concentration (A correct). ln[A]=ln[A]0-kt is linear with slope -k (B correct). k for first order has units time⁻¹, not mol L⁻¹s⁻¹ (C false). t(99%) = 4.606/k (D correct)."
+      },
+      {
+        "q": 14,
+        "type": "Questions 1-18 (Mixed Single Correct / Multiple Correct)",
+        "topic": "d-Block Elements",
+        "question": "Which of the following statement(s) is/are correct regarding the transition elements?",
+        "options": {
+          "A": "Zn, Cd and Hg are considered typical transition elements as they have partially filled d-orbitals in their common oxidation states",
+          "B": "Transition metals exhibit variable oxidation states mainly due to the small energy difference between (n-1)d and ns orbitals",
+          "C": "Sc3+ is colourless because it has no electron in the d-orbital (d0 configuration)",
+          "D": "Cu2+ salts are colourless because copper has a completely filled d-orbital in the +2 oxidation state"
+        },
+        "correct": "B,C",
+        "explanation": "Zn, Cd, Hg have filled d10 and are not typical transition elements (A false). Small (n-1)d/ns energy gap allows variable oxidation states (B correct). Sc3+ is d0, colourless (C correct). Cu2+ is d9 (not filled) and is coloured; Cu+ (d10) is colourless (D false)."
+      },
+      {
+        "q": 15,
+        "type": "Questions 1-18 (Mixed Single Correct / Multiple Correct)",
+        "topic": "Alkyl Halides",
+        "question": "Which of the following statement(s) about SN1 and SN2 reactions is/are correct?",
+        "options": {
+          "A": "SN2 reactions proceed with inversion of configuration (Walden inversion)",
+          "B": "SN1 reactions proceed with racemization due to the formation of a planar carbocation intermediate",
+          "C": "Tertiary alkyl halides favour the SN2 mechanism over SN1",
+          "D": "The rate of an SN1 reaction depends only on the concentration of the alkyl halide and not on the nucleophile"
+        },
+        "correct": "A,B,D",
+        "explanation": "SN2 causes inversion (A correct). SN1 forms a planar carbocation leading to racemization (B correct). Tertiary halides favor SN1, not SN2 (C false). SN1 rate = k[RX], independent of nucleophile (D correct)."
+      },
+      {
+        "q": 16,
+        "type": "Questions 1-18 (Mixed Single Correct / Multiple Correct)",
+        "topic": "Biomolecules",
+        "question": "Which of the following statement(s) about glucose is/are correct?",
+        "options": {
+          "A": "Glucose reacts with hydroxylamine (NH2OH) to form an oxime, confirming the presence of a carbonyl group",
+          "B": "Glucose reacts with acetic anhydride to form a pentaacetate, confirming the presence of five hydroxyl (-OH) groups",
+          "C": "Glucose gives a positive Tollens' test, which confirms that glucose exists exclusively in the open-chain aldehyde form in aqueous solution",
+          "D": "The stable cyclic structure of glucose is a five-membered ring formed between the -OH at C4 and the aldehyde carbon (C1), known as the furanose form"
+        },
+        "correct": "A,B",
+        "explanation": "Oxime formation confirms a carbonyl group (A correct). Pentaacetate formation confirms 5 -OH groups (B correct). Glucose exists ~99% as cyclic hemiacetal, not exclusively open-chain (C false). The stable form is the 6-membered pyranose ring (C5-C1), not a 5-membered furanose (D false)."
+      },
+      {
+        "q": 17,
+        "type": "Questions 1-18 (Mixed Single Correct / Multiple Correct)",
+        "topic": "Chemical and Ionic Equilibrium",
+        "question": "A weak monoprotic acid HA has Ka = 1×10⁻⁵. For its 0.1 M aqueous solution (assume degree of dissociation α is small compared to 1), which of the following statement(s) is/are correct?",
+        "options": {
+          "A": "The degree of dissociation (α) is approximately 0.01 (1%)",
+          "B": "The pH of the solution is approximately 3",
+          "C": "The concentration of H+ ions is approximately 1×10⁻³ M",
+          "D": "On dilution of the solution, the degree of dissociation decreases"
+        },
+        "correct": "A,B,C",
+        "explanation": "α=√(Ka/C)=√(10⁻⁴)=0.01 (A correct). [H+]=Cα=10⁻³ M (C correct), pH=3 (B correct). By Ostwald's dilution law, α increases on dilution, not decreases (D false)."
+      },
+      {
+        "q": 18,
+        "type": "Questions 1-18 (Mixed Single Correct / Multiple Correct)",
+        "topic": "Principles of Qualitative Analysis",
+        "question": "Which of the following statement(s) is/are correct regarding qualitative analysis of inorganic and organic compounds?",
+        "options": {
+          "A": "Dilute H2SO4 is used to test for carbonate, sulphite and sulphide ions, which evolve CO2, SO2 and H2S gases respectively",
+          "B": "In the borax bead test, the colour of the bead in the oxidizing flame often differs from that in the reducing flame; for example, Cu2+ gives a blue bead in the oxidizing flame and a red/colourless bead in the reducing flame",
+          "C": "Group III cations (Fe3+, Al3+, Cr3+) are precipitated as hydroxides in the presence of NH4Cl and NH4OH, where NH4Cl suppresses the ionization of NH4OH by the common ion effect and controls the OH- concentration",
+          "D": "In Lassaigne's test, organically bound nitrogen, sulphur and halogens are converted into water-soluble sodium cyanide, sodium sulphide and sodium halide respectively, which are then tested with appropriate reagents"
+        },
+        "correct": "A,B,C,D",
+        "explanation": "All four statements correctly describe standard qualitative analysis tests and principles: gas evolution tests (A), borax bead test flame-dependence (B), common-ion effect in Group III precipitation (C), and Lassaigne's test conversions (D)."
+      }
+    ]
+  }
+}

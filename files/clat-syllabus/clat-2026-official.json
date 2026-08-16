@@ -1,0 +1,93 @@
+{
+  "exam": "CLAT UG",
+  "year": 2026,
+  "source_note": "Official CLAT UG 2026 syllabus topics from Consortium of NLUs / CLAT_EXAM/CLAT_2026_Syllabus.json",
+  "exam_pattern": {
+    "duration_minutes": 120,
+    "questions": 120,
+    "total_marks": 120,
+    "correct": 1,
+    "incorrect": -0.25,
+    "subjects": {
+      "English Language": 24,
+      "Current Affairs including General Knowledge": 30,
+      "Legal Reasoning": 30,
+      "Logical Reasoning": 24,
+      "Quantitative Techniques": 12
+    }
+  },
+  "subjects": {
+    "English Language": [
+      "Reading Comprehension",
+      "Main idea and central theme",
+      "Arguments and viewpoints",
+      "Inference and conclusions",
+      "Summarisation",
+      "Compare and contrast",
+      "Meaning of words and phrases in context",
+      "Vocabulary in context",
+      "Passage-based comprehension"
+    ],
+    "Current Affairs including General Knowledge": [
+      "National current affairs",
+      "International current affairs",
+      "Government policies and schemes",
+      "Important appointments",
+      "Awards and honours",
+      "Sports",
+      "Science and technology",
+      "Economy and business",
+      "Arts and culture",
+      "Important historical events",
+      "Major legal developments",
+      "Important national and international organisations"
+    ],
+    "Legal Reasoning": [
+      "Legal principles and rules",
+      "Application of principles to facts",
+      "Legal scenarios",
+      "Public policy",
+      "Moral and philosophical issues",
+      "Constitutional concepts",
+      "Rights and duties",
+      "Contemporary legal issues",
+      "Understanding legal arguments",
+      "Applying given rules to new situations"
+    ],
+    "Logical Reasoning": [
+      "Arguments",
+      "Premises and conclusions",
+      "Assumptions",
+      "Strengthening arguments",
+      "Weakening arguments",
+      "Inferences",
+      "Critical reasoning",
+      "Analogies",
+      "Relationships",
+      "Contradictions",
+      "Equivalence",
+      "Cause and effect",
+      "Evaluation of arguments",
+      "Identifying reasoning patterns"
+    ],
+    "Quantitative Techniques": [
+      "Number System",
+      "Ratios and Proportions",
+      "Percentages",
+      "Averages",
+      "Profit and Loss",
+      "Simple Interest",
+      "Compound Interest",
+      "Time and Work",
+      "Time, Speed and Distance",
+      "Basic Algebra",
+      "Mensuration",
+      "Basic Arithmetic",
+      "Data Interpretation",
+      "Tables",
+      "Graphs",
+      "Charts",
+      "Statistical estimation"
+    ]
+  }
+}

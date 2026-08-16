@@ -1,0 +1,1427 @@
+{
+  "paper_id": "IBPS-Paper1",
+  "title": "IBPS PO Prelims Paper 1",
+  "exam": "IBPS PO Prelims",
+  "year": 2026,
+  "subjects": {
+    "English Language": [
+      {
+        "q": 1,
+        "topic": "Main idea",
+        "question": "Which of the following best expresses the primary objective of the author in the passage?",
+        "options": {
+          "A": "To demand the immediate abolition of AI-driven credit scoring models in rural banks.",
+          "B": "To analyze the opportunities and challenges of digital banking and advocate for a balanced, inclusive framework.",
+          "C": "To prove that physical bank branches are superior to mobile banking applications.",
+          "D": "To criticize central monetary authorities for failing to invest in telecommunication networks.",
+          "E": "To argue that financial inclusion can only be achieved through complete deregulation."
+        },
+        "correct": "B",
+        "explanation": "The author discusses both the advantages (convenience, alternative credit metrics) and risks (digital divide, algorithmic bias) of digital banking, ultimately advocating for a balanced regulatory framework that combines technological innovation with inclusive policies. Thus, Option (B) accurately summarizes the primary objective.",
+        "passage": "The rapid digital transformation of the banking sector has fundamentally altered the delivery of financial services, bringing unprecedented convenience to consumers worldwide. However, this acceleration has simultaneously introduced complex challenges regarding cybersecurity, data privacy, and financial inclusion. As traditional brick-and-mortar branches increasingly yield to mobile banking applications and automated platforms, a critical divide has emerged between technologically adept populations and those who lack digital literacy or reliable internet infrastructure. This digital divide is particularly pronounced in rural and marginalized communities, where access to physical banking facilities was already historically constrained.\n\nTo address these systemic disparities, central monetary authorities and retail financial institutions have begun advocating for a hybrid banking model. This approach attempts to combine the efficiency of digital transactions with the personalized trust and accessibility of community-level physical touchpoints. For instance, localized banking correspondents equipped with biometric handheld terminals have proved effective in bridging the gap for rural account holders who require assistance navigating digital interfaces. Nevertheless, scaling such hybrid models requires substantial capital investment in secure telecommunication networks, robust fraud-detection protocols, and continuous financial literacy drives.\n\nFurthermore, the integration of artificial intelligence and machine-learning algorithms into credit scoring models presents both opportunities and potential hazards. Proponents contend that alternative data metrics—such as mobile wallet transaction histories and utility bill payment records—can enable financial institutions to extend credit to historically unbanked individuals who lack formal credit histories. Conversely, critics caution that opaque algorithmic models can inadvertently perpetuate systemic biases if the underlying training data reflects historic socio-economic inequalities. Without rigorous regulatory oversight and mandatory algorithmic transparency, automated credit assessment risks institutionalizing exclusion under the guise of technological neutrality.\n\nUltimately, achieving a resilient and equitable financial ecosystem requires a balanced regulatory framework that actively fosters technological innovation while safeguarding fundamental consumer rights and data privacy. Financial regulators must enforce stringent data protection standards without stifling the ongoing development of cost-effective digital solutions for rural populations. Moreover, commercial banks must recognize that sustainable financial inclusion is not merely a philanthropic gesture, but an economic imperative. Only by aligning technological advancement with inclusive policy imperatives can the modern banking sector fulfill its foundational role as an engine of equitable economic growth."
+      },
+      {
+        "q": 2,
+        "topic": "Main idea",
+        "question": "According to the passage, why is the digital divide particularly severe in rural and marginalized communities?",
+        "options": {
+          "A": "Rural account holders refuse to use biometric handheld terminals.",
+          "B": "Commercial banks have completely stopped operating in urban areas.",
+          "C": "Central monetary authorities prohibit retail institutions from opening rural branches.",
+          "D": "These communities face limitations in digital literacy and reliable internet infrastructure alongside historical constraints on physical banking access.",
+          "E": "Mobile wallet transaction histories are legally invalid in rural areas."
+        },
+        "correct": "D",
+        "explanation": "Paragraph 1 explicitly states that a critical divide has emerged due to a lack of digital literacy or reliable internet infrastructure, and that this divide is pronounced in rural/marginalized communities where physical banking access was already historically constrained. This directly aligns with Option (D).",
+        "passage": "The rapid digital transformation of the banking sector has fundamentally altered the delivery of financial services, bringing unprecedented convenience to consumers worldwide. However, this acceleration has simultaneously introduced complex challenges regarding cybersecurity, data privacy, and financial inclusion. As traditional brick-and-mortar branches increasingly yield to mobile banking applications and automated platforms, a critical divide has emerged between technologically adept populations and those who lack digital literacy or reliable internet infrastructure. This digital divide is particularly pronounced in rural and marginalized communities, where access to physical banking facilities was already historically constrained.\n\nTo address these systemic disparities, central monetary authorities and retail financial institutions have begun advocating for a hybrid banking model. This approach attempts to combine the efficiency of digital transactions with the personalized trust and accessibility of community-level physical touchpoints. For instance, localized banking correspondents equipped with biometric handheld terminals have proved effective in bridging the gap for rural account holders who require assistance navigating digital interfaces. Nevertheless, scaling such hybrid models requires substantial capital investment in secure telecommunication networks, robust fraud-detection protocols, and continuous financial literacy drives.\n\nFurthermore, the integration of artificial intelligence and machine-learning algorithms into credit scoring models presents both opportunities and potential hazards. Proponents contend that alternative data metrics—such as mobile wallet transaction histories and utility bill payment records—can enable financial institutions to extend credit to historically unbanked individuals who lack formal credit histories. Conversely, critics caution that opaque algorithmic models can inadvertently perpetuate systemic biases if the underlying training data reflects historic socio-economic inequalities. Without rigorous regulatory oversight and mandatory algorithmic transparency, automated credit assessment risks institutionalizing exclusion under the guise of technological neutrality.\n\nUltimately, achieving a resilient and equitable financial ecosystem requires a balanced regulatory framework that actively fosters technological innovation while safeguarding fundamental consumer rights and data privacy. Financial regulators must enforce stringent data protection standards without stifling the ongoing development of cost-effective digital solutions for rural populations. Moreover, commercial banks must recognize that sustainable financial inclusion is not merely a philanthropic gesture, but an economic imperative. Only by aligning technological advancement with inclusive policy imperatives can the modern banking sector fulfill its foundational role as an engine of equitable economic growth."
+      },
+      {
+        "q": 3,
+        "topic": "Reading Comprehension",
+        "question": "What potential risk associated with AI-driven credit scoring models is highlighted in the passage?",
+        "options": {
+          "A": "They may perpetuate systemic biases if trained on data reflecting historical socio-economic inequalities.",
+          "B": "They eliminate the need for telecommunication networks in rural areas.",
+          "C": "They prevent commercial banks from collecting utility bill payment records.",
+          "D": "They guarantee that unbanked individuals will default on loans.",
+          "E": "They force financial regulators to ban mobile wallet transaction histories."
+        },
+        "correct": "A",
+        "explanation": "Paragraph 3 cautions that opaque algorithmic models can inadvertently perpetuate systemic biases if the underlying training data reflects historic socio-economic inequalities. This directly supports Option (A).",
+        "passage": "The rapid digital transformation of the banking sector has fundamentally altered the delivery of financial services, bringing unprecedented convenience to consumers worldwide. However, this acceleration has simultaneously introduced complex challenges regarding cybersecurity, data privacy, and financial inclusion. As traditional brick-and-mortar branches increasingly yield to mobile banking applications and automated platforms, a critical divide has emerged between technologically adept populations and those who lack digital literacy or reliable internet infrastructure. This digital divide is particularly pronounced in rural and marginalized communities, where access to physical banking facilities was already historically constrained.\n\nTo address these systemic disparities, central monetary authorities and retail financial institutions have begun advocating for a hybrid banking model. This approach attempts to combine the efficiency of digital transactions with the personalized trust and accessibility of community-level physical touchpoints. For instance, localized banking correspondents equipped with biometric handheld terminals have proved effective in bridging the gap for rural account holders who require assistance navigating digital interfaces. Nevertheless, scaling such hybrid models requires substantial capital investment in secure telecommunication networks, robust fraud-detection protocols, and continuous financial literacy drives.\n\nFurthermore, the integration of artificial intelligence and machine-learning algorithms into credit scoring models presents both opportunities and potential hazards. Proponents contend that alternative data metrics—such as mobile wallet transaction histories and utility bill payment records—can enable financial institutions to extend credit to historically unbanked individuals who lack formal credit histories. Conversely, critics caution that opaque algorithmic models can inadvertently perpetuate systemic biases if the underlying training data reflects historic socio-economic inequalities. Without rigorous regulatory oversight and mandatory algorithmic transparency, automated credit assessment risks institutionalizing exclusion under the guise of technological neutrality.\n\nUltimately, achieving a resilient and equitable financial ecosystem requires a balanced regulatory framework that actively fosters technological innovation while safeguarding fundamental consumer rights and data privacy. Financial regulators must enforce stringent data protection standards without stifling the ongoing development of cost-effective digital solutions for rural populations. Moreover, commercial banks must recognize that sustainable financial inclusion is not merely a philanthropic gesture, but an economic imperative. Only by aligning technological advancement with inclusive policy imperatives can the modern banking sector fulfill its foundational role as an engine of equitable economic growth."
+      },
+      {
+        "q": 4,
+        "topic": "Reading Comprehension",
+        "question": "Which of the following measures is suggested in the passage to make the hybrid banking model successful?",
+        "options": {
+          "A": "Banning mobile banking applications in urban centers.",
+          "B": "Replacing all localized banking correspondents with automated telephone systems.",
+          "C": "Eliminating biometric verification protocols to speed up transactions.",
+          "D": "Restricting credit access exclusively to individuals with formal credit histories.",
+          "E": "Investing capital in secure telecommunication networks, fraud-detection protocols, and financial literacy programs."
+        },
+        "correct": "E",
+        "explanation": "Paragraph 2 explicitly mentions that scaling hybrid models requires \"substantial capital investment in secure telecommunication networks, robust fraud-detection protocols, and continuous financial literacy drives.\" Therefore, Option (E) is the correct answer.",
+        "passage": "The rapid digital transformation of the banking sector has fundamentally altered the delivery of financial services, bringing unprecedented convenience to consumers worldwide. However, this acceleration has simultaneously introduced complex challenges regarding cybersecurity, data privacy, and financial inclusion. As traditional brick-and-mortar branches increasingly yield to mobile banking applications and automated platforms, a critical divide has emerged between technologically adept populations and those who lack digital literacy or reliable internet infrastructure. This digital divide is particularly pronounced in rural and marginalized communities, where access to physical banking facilities was already historically constrained.\n\nTo address these systemic disparities, central monetary authorities and retail financial institutions have begun advocating for a hybrid banking model. This approach attempts to combine the efficiency of digital transactions with the personalized trust and accessibility of community-level physical touchpoints. For instance, localized banking correspondents equipped with biometric handheld terminals have proved effective in bridging the gap for rural account holders who require assistance navigating digital interfaces. Nevertheless, scaling such hybrid models requires substantial capital investment in secure telecommunication networks, robust fraud-detection protocols, and continuous financial literacy drives.\n\nFurthermore, the integration of artificial intelligence and machine-learning algorithms into credit scoring models presents both opportunities and potential hazards. Proponents contend that alternative data metrics—such as mobile wallet transaction histories and utility bill payment records—can enable financial institutions to extend credit to historically unbanked individuals who lack formal credit histories. Conversely, critics caution that opaque algorithmic models can inadvertently perpetuate systemic biases if the underlying training data reflects historic socio-economic inequalities. Without rigorous regulatory oversight and mandatory algorithmic transparency, automated credit assessment risks institutionalizing exclusion under the guise of technological neutrality.\n\nUltimately, achieving a resilient and equitable financial ecosystem requires a balanced regulatory framework that actively fosters technological innovation while safeguarding fundamental consumer rights and data privacy. Financial regulators must enforce stringent data protection standards without stifling the ongoing development of cost-effective digital solutions for rural populations. Moreover, commercial banks must recognize that sustainable financial inclusion is not merely a philanthropic gesture, but an economic imperative. Only by aligning technological advancement with inclusive policy imperatives can the modern banking sector fulfill its foundational role as an engine of equitable economic growth."
+      },
+      {
+        "q": 5,
+        "topic": "Inference",
+        "question": "Which of the following can be inferred from the passage regarding \"alternative data metrics\"?",
+        "options": {
+          "A": "They are less reliable than traditional brick-and-mortar branch evaluations.",
+          "B": "They are used exclusively by central monetary authorities to set interest rates.",
+          "C": "They allow unbanked individuals without formal credit histories to access formal credit.",
+          "D": "They increase physical infrastructure costs for rural banking correspondents.",
+          "E": "They are prohibited under global cybersecurity and data privacy regulations."
+        },
+        "correct": "C",
+        "explanation": "Paragraph 3 states that alternative data metrics (like mobile wallet transaction histories and utility bill records) enable financial institutions to extend credit to historically unbanked individuals lacking formal credit histories. This directly supports Option (C).",
+        "passage": "The rapid digital transformation of the banking sector has fundamentally altered the delivery of financial services, bringing unprecedented convenience to consumers worldwide. However, this acceleration has simultaneously introduced complex challenges regarding cybersecurity, data privacy, and financial inclusion. As traditional brick-and-mortar branches increasingly yield to mobile banking applications and automated platforms, a critical divide has emerged between technologically adept populations and those who lack digital literacy or reliable internet infrastructure. This digital divide is particularly pronounced in rural and marginalized communities, where access to physical banking facilities was already historically constrained.\n\nTo address these systemic disparities, central monetary authorities and retail financial institutions have begun advocating for a hybrid banking model. This approach attempts to combine the efficiency of digital transactions with the personalized trust and accessibility of community-level physical touchpoints. For instance, localized banking correspondents equipped with biometric handheld terminals have proved effective in bridging the gap for rural account holders who require assistance navigating digital interfaces. Nevertheless, scaling such hybrid models requires substantial capital investment in secure telecommunication networks, robust fraud-detection protocols, and continuous financial literacy drives.\n\nFurthermore, the integration of artificial intelligence and machine-learning algorithms into credit scoring models presents both opportunities and potential hazards. Proponents contend that alternative data metrics—such as mobile wallet transaction histories and utility bill payment records—can enable financial institutions to extend credit to historically unbanked individuals who lack formal credit histories. Conversely, critics caution that opaque algorithmic models can inadvertently perpetuate systemic biases if the underlying training data reflects historic socio-economic inequalities. Without rigorous regulatory oversight and mandatory algorithmic transparency, automated credit assessment risks institutionalizing exclusion under the guise of technological neutrality.\n\nUltimately, achieving a resilient and equitable financial ecosystem requires a balanced regulatory framework that actively fosters technological innovation while safeguarding fundamental consumer rights and data privacy. Financial regulators must enforce stringent data protection standards without stifling the ongoing development of cost-effective digital solutions for rural populations. Moreover, commercial banks must recognize that sustainable financial inclusion is not merely a philanthropic gesture, but an economic imperative. Only by aligning technological advancement with inclusive policy imperatives can the modern banking sector fulfill its foundational role as an engine of equitable economic growth."
+      },
+      {
+        "q": 6,
+        "topic": "Synonyms",
+        "question": "As used in Paragraph 1 of the passage, the word \"pronounced\" most nearly means:",
+        "options": {
+          "A": "Spoken aloud",
+          "B": "Noticeable",
+          "C": "Declared legally",
+          "D": "Deferred",
+          "E": "Suppressed"
+        },
+        "correct": "B",
+        "explanation": "In the context of Paragraph 1 (\"This digital divide is particularly pronounced in rural...\"), \"pronounced\" means conspicuous, prominent, or noticeable. Thus, Option (B) is the correct synonym.",
+        "passage": "The rapid digital transformation of the banking sector has fundamentally altered the delivery of financial services, bringing unprecedented convenience to consumers worldwide. However, this acceleration has simultaneously introduced complex challenges regarding cybersecurity, data privacy, and financial inclusion. As traditional brick-and-mortar branches increasingly yield to mobile banking applications and automated platforms, a critical divide has emerged between technologically adept populations and those who lack digital literacy or reliable internet infrastructure. This digital divide is particularly pronounced in rural and marginalized communities, where access to physical banking facilities was already historically constrained.\n\nTo address these systemic disparities, central monetary authorities and retail financial institutions have begun advocating for a hybrid banking model. This approach attempts to combine the efficiency of digital transactions with the personalized trust and accessibility of community-level physical touchpoints. For instance, localized banking correspondents equipped with biometric handheld terminals have proved effective in bridging the gap for rural account holders who require assistance navigating digital interfaces. Nevertheless, scaling such hybrid models requires substantial capital investment in secure telecommunication networks, robust fraud-detection protocols, and continuous financial literacy drives.\n\nFurthermore, the integration of artificial intelligence and machine-learning algorithms into credit scoring models presents both opportunities and potential hazards. Proponents contend that alternative data metrics—such as mobile wallet transaction histories and utility bill payment records—can enable financial institutions to extend credit to historically unbanked individuals who lack formal credit histories. Conversely, critics caution that opaque algorithmic models can inadvertently perpetuate systemic biases if the underlying training data reflects historic socio-economic inequalities. Without rigorous regulatory oversight and mandatory algorithmic transparency, automated credit assessment risks institutionalizing exclusion under the guise of technological neutrality.\n\nUltimately, achieving a resilient and equitable financial ecosystem requires a balanced regulatory framework that actively fosters technological innovation while safeguarding fundamental consumer rights and data privacy. Financial regulators must enforce stringent data protection standards without stifling the ongoing development of cost-effective digital solutions for rural populations. Moreover, commercial banks must recognize that sustainable financial inclusion is not merely a philanthropic gesture, but an economic imperative. Only by aligning technological advancement with inclusive policy imperatives can the modern banking sector fulfill its foundational role as an engine of equitable economic growth."
+      },
+      {
+        "q": 7,
+        "topic": "Tone",
+        "question": "Which of the following best describes the tone of the author in the final paragraph of the passage?",
+        "options": {
+          "A": "Cynical and dismissive",
+          "B": "Aggressive and polemical",
+          "C": "Sarcastic and indifferent",
+          "D": "Highly pessimistic and hopeless",
+          "E": "Constructive, balanced, and persuasive"
+        },
+        "correct": "E",
+        "explanation": "In the final paragraph, the author constructively outlines what is required for a resilient financial ecosystem, balancing innovation with consumer protection and persuading banks that inclusion is an economic imperative. Therefore, the tone is constructive, balanced, and persuasive (Option E).",
+        "passage": "The rapid digital transformation of the banking sector has fundamentally altered the delivery of financial services, bringing unprecedented convenience to consumers worldwide. However, this acceleration has simultaneously introduced complex challenges regarding cybersecurity, data privacy, and financial inclusion. As traditional brick-and-mortar branches increasingly yield to mobile banking applications and automated platforms, a critical divide has emerged between technologically adept populations and those who lack digital literacy or reliable internet infrastructure. This digital divide is particularly pronounced in rural and marginalized communities, where access to physical banking facilities was already historically constrained.\n\nTo address these systemic disparities, central monetary authorities and retail financial institutions have begun advocating for a hybrid banking model. This approach attempts to combine the efficiency of digital transactions with the personalized trust and accessibility of community-level physical touchpoints. For instance, localized banking correspondents equipped with biometric handheld terminals have proved effective in bridging the gap for rural account holders who require assistance navigating digital interfaces. Nevertheless, scaling such hybrid models requires substantial capital investment in secure telecommunication networks, robust fraud-detection protocols, and continuous financial literacy drives.\n\nFurthermore, the integration of artificial intelligence and machine-learning algorithms into credit scoring models presents both opportunities and potential hazards. Proponents contend that alternative data metrics—such as mobile wallet transaction histories and utility bill payment records—can enable financial institutions to extend credit to historically unbanked individuals who lack formal credit histories. Conversely, critics caution that opaque algorithmic models can inadvertently perpetuate systemic biases if the underlying training data reflects historic socio-economic inequalities. Without rigorous regulatory oversight and mandatory algorithmic transparency, automated credit assessment risks institutionalizing exclusion under the guise of technological neutrality.\n\nUltimately, achieving a resilient and equitable financial ecosystem requires a balanced regulatory framework that actively fosters technological innovation while safeguarding fundamental consumer rights and data privacy. Financial regulators must enforce stringent data protection standards without stifling the ongoing development of cost-effective digital solutions for rural populations. Moreover, commercial banks must recognize that sustainable financial inclusion is not merely a philanthropic gesture, but an economic imperative. Only by aligning technological advancement with inclusive policy imperatives can the modern banking sector fulfill its foundational role as an engine of equitable economic growth."
+      },
+      {
+        "q": 8,
+        "topic": "Main idea",
+        "question": "Which of the following statements is NOT TRUE according to the passage?",
+        "options": {
+          "A": "Commercial banks should view financial inclusion merely as a philanthropic activity rather than an economic imperative.",
+          "B": "Hybrid banking models combine digital transaction efficiency with localized physical touchpoints.",
+          "C": "Biometric handheld terminals help localized correspondents bridge the digital divide for rural users.",
+          "D": "Unchecked credit scoring algorithms risk institutionalizing exclusion under the guise of technological neutrality.",
+          "E": "Regulators must protect consumer data without stifling cost-effective digital solutions."
+        },
+        "correct": "A",
+        "explanation": "Paragraph 4 explicitly states that \"commercial banks must recognize that sustainable financial inclusion is not merely a philanthropic gesture, but an economic imperative.\" Statement (A) claims the opposite, making it NOT TRUE according to the passage.",
+        "passage": "The rapid digital transformation of the banking sector has fundamentally altered the delivery of financial services, bringing unprecedented convenience to consumers worldwide. However, this acceleration has simultaneously introduced complex challenges regarding cybersecurity, data privacy, and financial inclusion. As traditional brick-and-mortar branches increasingly yield to mobile banking applications and automated platforms, a critical divide has emerged between technologically adept populations and those who lack digital literacy or reliable internet infrastructure. This digital divide is particularly pronounced in rural and marginalized communities, where access to physical banking facilities was already historically constrained.\n\nTo address these systemic disparities, central monetary authorities and retail financial institutions have begun advocating for a hybrid banking model. This approach attempts to combine the efficiency of digital transactions with the personalized trust and accessibility of community-level physical touchpoints. For instance, localized banking correspondents equipped with biometric handheld terminals have proved effective in bridging the gap for rural account holders who require assistance navigating digital interfaces. Nevertheless, scaling such hybrid models requires substantial capital investment in secure telecommunication networks, robust fraud-detection protocols, and continuous financial literacy drives.\n\nFurthermore, the integration of artificial intelligence and machine-learning algorithms into credit scoring models presents both opportunities and potential hazards. Proponents contend that alternative data metrics—such as mobile wallet transaction histories and utility bill payment records—can enable financial institutions to extend credit to historically unbanked individuals who lack formal credit histories. Conversely, critics caution that opaque algorithmic models can inadvertently perpetuate systemic biases if the underlying training data reflects historic socio-economic inequalities. Without rigorous regulatory oversight and mandatory algorithmic transparency, automated credit assessment risks institutionalizing exclusion under the guise of technological neutrality.\n\nUltimately, achieving a resilient and equitable financial ecosystem requires a balanced regulatory framework that actively fosters technological innovation while safeguarding fundamental consumer rights and data privacy. Financial regulators must enforce stringent data protection standards without stifling the ongoing development of cost-effective digital solutions for rural populations. Moreover, commercial banks must recognize that sustainable financial inclusion is not merely a philanthropic gesture, but an economic imperative. Only by aligning technological advancement with inclusive policy imperatives can the modern banking sector fulfill its foundational role as an engine of equitable economic growth."
+      },
+      {
+        "q": 9,
+        "topic": "Fill in the blanks",
+        "question": "Select the most appropriate word for blank (9).",
+        "options": {
+          "A": "loosen",
+          "B": "relax",
+          "C": "tighten",
+          "D": "isolate",
+          "E": "abandon"
+        },
+        "correct": "C",
+        "explanation": "Raising benchmark interest rates to curb inflation corresponds to \"tightening\" monetary policy. Thus, Option (C) is correct.",
+        "passage": "The global economy is currently facing a period of heightened uncertainty, driven by inflationary pressures and geopolitical supply chain disruptions. Central banks across major economies have been forced to (9) monetary policy by raising benchmark interest rates to curb rising prices. While these measures are essential to prevent hyperinflation, they also run the risk of (10) economic growth and triggering a slowdown in capital investment. Financial analysts emphasize that monetary policy alone cannot resolve structural supply bottlenecks; fiscal policy interventions must also be (11) to support vulnerable households. Furthermore, commercial enterprises must adopt flexible risk management strategies to (12) the impact of volatile input costs. Ultimately, maintaining macroeconomic stability will depend on the (13) coordination between monetary authorities, governmental institutions, and private market participants."
+      },
+      {
+        "q": 10,
+        "topic": "Fill in the blanks",
+        "question": "Select the most appropriate word for blank (10).",
+        "options": {
+          "A": "accelerating",
+          "B": "boosting",
+          "C": "prioritizing",
+          "D": "stifling",
+          "E": "maximizing"
+        },
+        "correct": "D",
+        "explanation": "Raising interest rates carries the economic risk of dampening or \"stifling\" economic growth. Option (D) fits the negative context of \"slowdown\".",
+        "passage": "The global economy is currently facing a period of heightened uncertainty, driven by inflationary pressures and geopolitical supply chain disruptions. Central banks across major economies have been forced to (9) monetary policy by raising benchmark interest rates to curb rising prices. While these measures are essential to prevent hyperinflation, they also run the risk of (10) economic growth and triggering a slowdown in capital investment. Financial analysts emphasize that monetary policy alone cannot resolve structural supply bottlenecks; fiscal policy interventions must also be (11) to support vulnerable households. Furthermore, commercial enterprises must adopt flexible risk management strategies to (12) the impact of volatile input costs. Ultimately, maintaining macroeconomic stability will depend on the (13) coordination between monetary authorities, governmental institutions, and private market participants."
+      },
+      {
+        "q": 11,
+        "topic": "Fill in the blanks",
+        "question": "Select the most appropriate word for blank (11).",
+        "options": {
+          "A": "deployed",
+          "B": "rejected",
+          "C": "overlooked",
+          "D": "dismissed",
+          "E": "postponed"
+        },
+        "correct": "A",
+        "explanation": "Fiscal policy interventions must be implemented or \"deployed\" to support households. Option (A) is correct.",
+        "passage": "The global economy is currently facing a period of heightened uncertainty, driven by inflationary pressures and geopolitical supply chain disruptions. Central banks across major economies have been forced to (9) monetary policy by raising benchmark interest rates to curb rising prices. While these measures are essential to prevent hyperinflation, they also run the risk of (10) economic growth and triggering a slowdown in capital investment. Financial analysts emphasize that monetary policy alone cannot resolve structural supply bottlenecks; fiscal policy interventions must also be (11) to support vulnerable households. Furthermore, commercial enterprises must adopt flexible risk management strategies to (12) the impact of volatile input costs. Ultimately, maintaining macroeconomic stability will depend on the (13) coordination between monetary authorities, governmental institutions, and private market participants."
+      },
+      {
+        "q": 12,
+        "topic": "Fill in the blanks",
+        "question": "Select the most appropriate word for blank (12).",
+        "options": {
+          "A": "amplify",
+          "B": "exacerbate",
+          "C": "aggravate",
+          "D": "provoke",
+          "E": "mitigate"
+        },
+        "correct": "E",
+        "explanation": "Risk management strategies are designed to reduce or \"mitigate\" the adverse impact of volatile input costs. Option (E) is correct.",
+        "passage": "The global economy is currently facing a period of heightened uncertainty, driven by inflationary pressures and geopolitical supply chain disruptions. Central banks across major economies have been forced to (9) monetary policy by raising benchmark interest rates to curb rising prices. While these measures are essential to prevent hyperinflation, they also run the risk of (10) economic growth and triggering a slowdown in capital investment. Financial analysts emphasize that monetary policy alone cannot resolve structural supply bottlenecks; fiscal policy interventions must also be (11) to support vulnerable households. Furthermore, commercial enterprises must adopt flexible risk management strategies to (12) the impact of volatile input costs. Ultimately, maintaining macroeconomic stability will depend on the (13) coordination between monetary authorities, governmental institutions, and private market participants."
+      },
+      {
+        "q": 13,
+        "topic": "Fill in the blanks",
+        "question": "Select the most appropriate word for blank (13).",
+        "options": {
+          "A": "hostile",
+          "B": "seamless",
+          "C": "sporadic",
+          "D": "redundant",
+          "E": "negligent"
+        },
+        "correct": "B",
+        "explanation": "Macroeconomic stability depends on effective, smooth, or \"seamless\" coordination between institutions. Option (B) fits contextually.",
+        "passage": "The global economy is currently facing a period of heightened uncertainty, driven by inflationary pressures and geopolitical supply chain disruptions. Central banks across major economies have been forced to (9) monetary policy by raising benchmark interest rates to curb rising prices. While these measures are essential to prevent hyperinflation, they also run the risk of (10) economic growth and triggering a slowdown in capital investment. Financial analysts emphasize that monetary policy alone cannot resolve structural supply bottlenecks; fiscal policy interventions must also be (11) to support vulnerable households. Furthermore, commercial enterprises must adopt flexible risk management strategies to (12) the impact of volatile input costs. Ultimately, maintaining macroeconomic stability will depend on the (13) coordination between monetary authorities, governmental institutions, and private market participants."
+      },
+      {
+        "q": 14,
+        "topic": "Error detection",
+        "question": "Read the sentence to find the grammatical error:",
+        "options": {
+          "A": "Neither the managing director",
+          "B": "nor the senior board members",
+          "C": "was present at the annual general meeting",
+          "D": "when the new financial strategy was announced.",
+          "E": "No error"
+        },
+        "correct": "C",
+        "explanation": "When subjects are connected by \"neither... nor\", the verb agrees with the subject closer to it. \"The senior board members\" is plural, so it requires plural verb \"were present\" instead of \"was present\". Error is in part (C)."
+      },
+      {
+        "q": 15,
+        "topic": "Error detection",
+        "question": "Read the sentence to find the grammatical error:",
+        "options": {
+          "A": "No sooner the chief executive officer had",
+          "B": "finished his presentation on the merger",
+          "C": "than the institutional investors started",
+          "D": "asking critical questions regarding valuation.",
+          "E": "No error"
+        },
+        "correct": "A",
+        "explanation": "\"No sooner\" at the beginning of a sentence requires inversion of verb and subject (\"No sooner had the chief executive officer...\"). Part (A) lacks inversion, making it grammatically incorrect."
+      },
+      {
+        "q": 16,
+        "topic": "Error detection",
+        "question": "Read the sentence to find the grammatical error:",
+        "options": {
+          "A": "The committee has recommended",
+          "B": "that every employee should be",
+          "C": "given a fair opportunity",
+          "D": "to express their opinions during meetings.",
+          "E": "No error"
+        },
+        "correct": "E",
+        "explanation": "The sentence is grammatically sound in all parts. Collective noun verb agreement and singular distributive pronouns are properly structured. Hence, Option (E) (No error) is correct."
+      },
+      {
+        "q": 17,
+        "topic": "Error detection",
+        "question": "Read the sentence to find the grammatical error:",
+        "options": {
+          "A": "The financial auditing team discovered that",
+          "B": "the company has been suffering heavy losses",
+          "C": "for the last five years",
+          "D": "due to operational inefficiencies.",
+          "E": "No error"
+        },
+        "correct": "B",
+        "explanation": "Since the main reporting verb \"discovered\" is in past tense, sequence of tenses requires past perfect continuous (\"had been suffering\") rather than present perfect continuous (\"has been suffering\"). Error is in part (B)."
+      },
+      {
+        "q": 18,
+        "topic": "Error detection",
+        "question": "Read the sentence to find the grammatical error:",
+        "options": {
+          "A": "The newly appointed branch manager",
+          "B": "is superior to all other officers",
+          "C": "in terms of administrative experience",
+          "D": "but he is not capable to handle stress.",
+          "E": "No error"
+        },
+        "correct": "D",
+        "explanation": "The adjective \"capable\" is followed by the preposition \"of\" + gerund (\"capable of handling\"), not an infinitive (\"capable to handle\"). Therefore, part (D) contains the error."
+      },
+      {
+        "q": 19,
+        "topic": "Para jumbles",
+        "question": "Which of the following should be the FIRST sentence after rearrangement?",
+        "options": {
+          "A": "C",
+          "B": "E",
+          "C": "B",
+          "D": "D",
+          "E": "A"
+        },
+        "correct": "A",
+        "explanation": "Sentence (C) introduces the broad topic (digital financial innovation transforming the monetary landscape) and serves as the coherent opening sentence."
+      },
+      {
+        "q": 20,
+        "topic": "Para jumbles",
+        "question": "Which of the following should be the SECOND sentence after rearrangement?",
+        "options": {
+          "A": "C",
+          "B": "E",
+          "C": "B",
+          "D": "D",
+          "E": "F"
+        },
+        "correct": "B",
+        "explanation": "In the sequence C-E-B-D-A-F, sentence (E) narrows down the broad topic to specific innovations (digital payments and mobile wallets). Thus, (E) is the second sentence."
+      },
+      {
+        "q": 21,
+        "topic": "Para jumbles",
+        "question": "Which of the following should be the THIRD sentence after rearrangement?",
+        "options": {
+          "A": "E",
+          "B": "D",
+          "C": "B",
+          "D": "A",
+          "E": "F"
+        },
+        "correct": "C",
+        "explanation": "In the sequence C-E-B-D-A-F, sentence (B) follows sentence (E) by explaining what accelerated this cashless shift. Thus, (B) is the third sentence."
+      },
+      {
+        "q": 22,
+        "topic": "Para jumbles",
+        "question": "Which of the following should be the FIFTH sentence after rearrangement?",
+        "options": {
+          "A": "F",
+          "B": "D",
+          "C": "C",
+          "D": "B",
+          "E": "A"
+        },
+        "correct": "E",
+        "explanation": "In the sequence C-E-B-D-A-F, sentence (A) is fifth, describing central bank evaluation following the security concerns mentioned in sentence (D)."
+      },
+      {
+        "q": 23,
+        "topic": "Para jumbles",
+        "question": "Which of the following should be the SIXTH (LAST) sentence after rearrangement?",
+        "options": {
+          "A": "A",
+          "B": "B",
+          "C": "C",
+          "D": "F",
+          "E": "E"
+        },
+        "correct": "D",
+        "explanation": "In the sequence C-E-B-D-A-F, sentence (F) provides the concluding statement regarding regulatory frameworks and consumer trust."
+      },
+      {
+        "q": 24,
+        "topic": "Vocabulary in context",
+        "question": "Choose the option that best replaces the highlighted phrase in bold to make the sentence grammatically correct: \"The board of directors approved the merger proposal after having discussed the risk factors detailedly during the extraordinary meeting.\"",
+        "options": {
+          "A": "discussing the risk factors in details",
+          "B": "having discuss the risk factors detailed",
+          "C": "discussing the risk factors in detail",
+          "D": "discussed the risk factors detailedly",
+          "E": "No correction required"
+        },
+        "correct": "C",
+        "explanation": "\"In detail\" is the standard idiomatic expression. \"After discussing the risk factors in detail\" is concise, grammatically sound, and contextually appropriate."
+      },
+      {
+        "q": 25,
+        "topic": "Vocabulary in context",
+        "question": "Choose the option that best replaces the highlighted phrase in bold: \"If the government had implemented the fiscal reforms on time, the country would not have suffered such a severe currency devaluation.\"",
+        "options": {
+          "A": "has implemented the fiscal reforms on time",
+          "B": "implemented the fiscal reforms on time",
+          "C": "would implement the fiscal reforms on time",
+          "D": "No correction required",
+          "E": "was implementing the fiscal reforms on time"
+        },
+        "correct": "D",
+        "explanation": "The sentence correctly uses the third conditional rule (\"If + past perfect [had implemented] ... would not have + past participle [suffered]\"). Hence, \"No correction required\" (Option D) is correct."
+      },
+      {
+        "q": 26,
+        "topic": "Vocabulary in context",
+        "question": "Choose the option that best replaces the highlighted phrase in bold: \"The auditor pointed out that the company’s internal controls were inadequate to prevent financial discrepancies.\"",
+        "options": {
+          "A": "inadequately for preventing financial discrepancies",
+          "B": "inadequacy to preventing financial discrepancies",
+          "C": "inadequate for prevent financial discrepancies",
+          "D": "inadequately to prevent financial discrepancies",
+          "E": "No correction required"
+        },
+        "correct": "E",
+        "explanation": "The original phrase \"inadequate to prevent financial discrepancies\" uses correct adjective-infinitive construction. Thus, Option (E) (No correction required) is correct."
+      },
+      {
+        "q": 27,
+        "topic": "Word usage",
+        "question": "In the given sentence, four words are bolded: \"The economic (1) policy announced by the central bank aims to inflation (2) consumer confidence while controlling boost (3) in the market (4).\" Select the option that gives the correct sequence of swapped words.",
+        "options": {
+          "A": "1-3-2-4",
+          "B": "2-1-3-4",
+          "C": "1-2-4-3",
+          "D": "4-3-2-1",
+          "E": "No swapping required"
+        },
+        "correct": "A",
+        "explanation": "Swapping word (2) \"inflation\" and word (3) \"boost\" yields: \"aims to boost (3) consumer confidence while controlling inflation (2) in the market (4).\" Sequence is 1-3-2-4."
+      },
+      {
+        "q": 28,
+        "topic": "Word usage",
+        "question": "In the given sentence, four words are bolded: \"Financial institutions (1) must stricter (2) implement compliance (3) standards to prevent fraudulent activities (4).\" Select the option that gives the correct sequence of swapped words.",
+        "options": {
+          "A": "2-1-3-4",
+          "B": "1-3-2-4",
+          "C": "3-2-1-4",
+          "D": "4-2-3-1",
+          "E": "No swapping required"
+        },
+        "correct": "B",
+        "explanation": "Swapping word (2) \"stricter\" and word (3) \"compliance\" gives: \"must implement stricter (2) compliance (3) standards\". Sequence is 1-3-2-4."
+      },
+      {
+        "q": 29,
+        "topic": "Fill in the blanks",
+        "question": "Fill in the blank with the most suitable word: \"The committee requested additional time to review the financial statements before making a final __________ regarding the acquisition.\"",
+        "options": {
+          "A": "hesitation",
+          "B": "fluctuation",
+          "C": "recommendation",
+          "D": "friction",
+          "E": "omission"
+        },
+        "correct": "C",
+        "explanation": "A committee reviewing financial records makes a \"recommendation\" or decision regarding an acquisition. Option (C) fits contextually."
+      },
+      {
+        "q": 30,
+        "topic": "Fill in the blanks",
+        "question": "Fill in the blank with the most suitable word: \"Despite facing severe market competition, the tech startup managed to maintain a __________ growth rate throughout the fiscal year.\"",
+        "options": {
+          "A": "sluggish",
+          "B": "erratic",
+          "C": "volatile",
+          "D": "steady",
+          "E": "negligent"
+        },
+        "correct": "D",
+        "explanation": "\"Despite facing severe market competition\" sets up a contrast. Maintaining a \"steady\" growth rate despite competition fits logically. Option (D) is correct."
+      }
+    ],
+    "Quantitative Aptitude": [
+      {
+        "q": 1,
+        "topic": "Approximation",
+        "question": "What approximate value should come in place of question mark (?) in the following question?\n17.98 × 14.01 + 24.03 × 8.99 - 119.98 = ?",
+        "options": {
+          "A": "330",
+          "B": "348",
+          "C": "362",
+          "D": "320",
+          "E": "380"
+        },
+        "correct": "B",
+        "explanation": "Approximating the numbers to the nearest integers: 18 × 14 + 24 × 9 - 120 = ? => 252 + 216 - 120 = 468 - 120 = 348."
+      },
+      {
+        "q": 2,
+        "topic": "Approximation",
+        "question": "What approximate value should come in place of question mark (?) in the following question?\n(299.98 ÷ 14.99) × (19.98 ÷ 4.01) + 149.98 = ?",
+        "options": {
+          "A": "220",
+          "B": "230",
+          "C": "240",
+          "D": "250",
+          "E": "260"
+        },
+        "correct": "D",
+        "explanation": "Approximating the values to nearest whole numbers: (300 ÷ 15) × (20 ÷ 4) + 150 = ? => 20 × 5 + 150 = 100 + 150 = 250."
+      },
+      {
+        "q": 3,
+        "topic": "Approximation",
+        "question": "What approximate value should come in place of question mark (?) in the following question?\n√144.02 × 15.98 + 49.98% of 240.02 = ?",
+        "options": {
+          "A": "312",
+          "B": "296",
+          "C": "325",
+          "D": "280",
+          "E": "340"
+        },
+        "correct": "A",
+        "explanation": "Approximating the numbers: √144 × 16 + 50% of 240 = ? => 12 × 16 + 120 = 192 + 120 = 312."
+      },
+      {
+        "q": 4,
+        "topic": "Approximation",
+        "question": "What approximate value should come in place of question mark (?) in the following question?\n(3.99)^3 + (5.01)^3 - (2.98)^3 = ?",
+        "options": {
+          "A": "150",
+          "B": "172",
+          "C": "180",
+          "D": "192",
+          "E": "162"
+        },
+        "correct": "E",
+        "explanation": "Approximating the numbers: 4^3 + 5^3 - 3^3 = ? => 64 + 125 - 27 = 189 - 27 = 162."
+      },
+      {
+        "q": 5,
+        "topic": "Approximation",
+        "question": "What approximate value should come in place of question mark (?) in the following question?\n79.98% of 450.02 + 25.01% of 320.02 = ?",
+        "options": {
+          "A": "420",
+          "B": "430",
+          "C": "440",
+          "D": "450",
+          "E": "460"
+        },
+        "correct": "C",
+        "explanation": "Approximating the percentages and values: 80% of 450 + 25% of 320 = ? => 0.8 × 450 + 0.25 × 320 = 360 + 80 = 440."
+      },
+      {
+        "q": 6,
+        "topic": "Quadratic equations",
+        "question": "In the following question, two equations numbered I and II are given. You have to solve both the equations and answer the question.\nI. x^2 - 11x + 30 = 0\nII. y^2 - 15y + 56 = 0",
+        "options": {
+          "A": "x < y",
+          "B": "x > y",
+          "C": "x ≤ y",
+          "D": "x ≥ y",
+          "E": "x = y or relationship cannot be established"
+        },
+        "correct": "A",
+        "explanation": "Solving Equation I: x^2 - 11x + 30 = 0 => (x-5)(x-6) = 0 => x = 5, 6. Solving Equation II: y^2 - 15y + 56 = 0 => (y-7)(y-8) = 0 => y = 7, 8. Comparing: 5 < 7, 5 < 8, 6 < 7, 6 < 8. Thus, x < y."
+      },
+      {
+        "q": 7,
+        "topic": "Quadratic equations",
+        "question": "In the following question, two equations numbered I and II are given. You have to solve both the equations and answer the question.\nI. x^2 + 13x + 40 = 0\nII. y^2 + 7y + 12 = 0",
+        "options": {
+          "A": "x > y",
+          "B": "x ≥ y",
+          "C": "x ≤ y",
+          "D": "x = y or relationship cannot be established",
+          "E": "x < y"
+        },
+        "correct": "E",
+        "explanation": "Solving Equation I: x^2 + 13x + 40 = 0 => (x+5)(x+8) = 0 => x = -5, -8. Solving Equation II: y^2 + 7y + 12 = 0 => (y+3)(y+4) = 0 => y = -3, -4. Since all values of x are strictly less than all values of y, x < y."
+      },
+      {
+        "q": 8,
+        "topic": "Quadratic equations",
+        "question": "In the following question, two equations numbered I and II are given. You have to solve both the equations and answer the question.\nI. 2x^2 - 7x + 6 = 0\nII. 2y^2 - 9y + 10 = 0",
+        "options": {
+          "A": "x > y",
+          "B": "x ≤ y",
+          "C": "x < y",
+          "D": "x ≥ y",
+          "E": "x = y or relationship cannot be established"
+        },
+        "correct": "B",
+        "explanation": "Solving Equation I: 2x^2 - 7x + 6 = 0 => (2x-3)(x-2) = 0 => x = 1.5, 2. Solving Equation II: 2y^2 - 9y + 10 = 0 => (2y-5)(y-2) = 0 => y = 2.5, 2. Comparing all cases, x ≤ y."
+      },
+      {
+        "q": 9,
+        "topic": "Quadratic equations",
+        "question": "In the following question, two equations numbered I and II are given. You have to solve both the equations and answer the question.\nI. x^2 - 16 = 0\nII. y^2 - 8y + 16 = 0",
+        "options": {
+          "A": "x > y",
+          "B": "x ≥ y",
+          "C": "x ≤ y",
+          "D": "x < y",
+          "E": "x = y or relationship cannot be established"
+        },
+        "correct": "C",
+        "explanation": "Solving Equation I: x^2 = 16 => x = +4, -4. Solving Equation II: y^2 - 8y + 16 = 0 => (y-4)^2 = 0 => y = 4. When x = 4, x = y; when x = -4, x < y. Combining both, x ≤ y."
+      },
+      {
+        "q": 10,
+        "topic": "Quadratic equations",
+        "question": "In the following question, two equations numbered I and II are given. You have to solve both the equations and answer the question.\nI. x^2 - 3x - 10 = 0\nII. y^2 + 11y + 30 = 0",
+        "options": {
+          "A": "x < y",
+          "B": "x ≤ y",
+          "C": "x > y",
+          "D": "x ≥ y",
+          "E": "x = y or relationship cannot be established"
+        },
+        "correct": "D",
+        "explanation": "Solving Equation I: x^2 - 3x - 10 = 0 => (x-5)(x+2) = 0 => x = 5, -2. Solving Equation II: y^2 + 11y + 30 = 0 => (y+5)(y+6) = 0 => y = -5, -6. In all cases x > y. Thus, x ≥ y (specifically x > y)."
+      },
+      {
+        "q": 11,
+        "topic": "Number series",
+        "question": "Find the missing number in the following number series:\n12, 18, 36, 90, 270, ?",
+        "options": {
+          "A": "810",
+          "B": "900",
+          "C": "945",
+          "D": "960",
+          "E": "1080"
+        },
+        "correct": "C",
+        "explanation": "Pattern: 12×1.5=18, 18×2=36, 36×2.5=90, 90×3=270, 270×3.5=945. The missing number is 945."
+      },
+      {
+        "q": 12,
+        "topic": "Number series",
+        "question": "Find the missing number in the following number series:\n15, 23, 31, 39, 47, ?",
+        "options": {
+          "A": "55",
+          "B": "54",
+          "C": "56",
+          "D": "57",
+          "E": "58"
+        },
+        "correct": "A",
+        "explanation": "Pattern: 15+8=23, 23+8=31, 31+8=39, 39+8=47, 47+8=55. The missing number is 55."
+      },
+      {
+        "q": 13,
+        "topic": "Number series",
+        "question": "Find the missing number in the following number series:\n4, 11, 25, 53, 109, ?",
+        "options": {
+          "A": "215",
+          "B": "219",
+          "C": "220",
+          "D": "221",
+          "E": "225"
+        },
+        "correct": "D",
+        "explanation": "Pattern: 4×2+3=11, 11×2+3=25, 25×2+3=53, 53×2+3=109, 109×2+3=221. The missing number is 221."
+      },
+      {
+        "q": 14,
+        "topic": "Number series",
+        "question": "Find the missing number in the following number series:\n100, 99, 95, 86, 70, ?",
+        "options": {
+          "A": "41",
+          "B": "45",
+          "C": "48",
+          "D": "50",
+          "E": "52"
+        },
+        "correct": "B",
+        "explanation": "Pattern of difference: 100-1^2=99, 99-2^2=95, 95-3^2=86, 86-4^2=70, 70-5^2=45. The missing number is 45."
+      },
+      {
+        "q": 15,
+        "topic": "Number series",
+        "question": "Find the missing number in the following number series:\n7, 14, 42, 168, 840, ?",
+        "options": {
+          "A": "4200",
+          "B": "4800",
+          "C": "4960",
+          "D": "5200",
+          "E": "5040"
+        },
+        "correct": "E",
+        "explanation": "Pattern of multiplication: 7×2=14, 14×3=42, 42×4=168, 168×5=840, 840×6=5040. The missing number is 5040."
+      },
+      {
+        "q": 16,
+        "topic": "Percentage",
+        "question": "What is the total number of students studying Commerce?",
+        "options": {
+          "A": "80",
+          "B": "90",
+          "C": "92",
+          "D": "95",
+          "E": "96"
+        },
+        "correct": "E",
+        "explanation": "Total students = 500. Arts students = 40% of 500 = 200. Male:Female in Arts = 3:2 => Male Arts = 120, Female Arts = 80. Commerce students = 20% more than Female Arts = 80 + 16 = 96. Remaining (Science) = 500 - (200+96) = 204; Male Science = Female Science = 102. Total students studying Commerce = 96."
+      },
+      {
+        "q": 17,
+        "topic": "Bar graphs",
+        "question": "What is the total number of female students studying Arts and Science together?",
+        "options": {
+          "A": "170",
+          "B": "182",
+          "C": "190",
+          "D": "175",
+          "E": "180"
+        },
+        "correct": "B",
+        "explanation": "Female Arts students = 80. Female Science students = 102. Total = 80 + 102 = 182."
+      },
+      {
+        "q": 18,
+        "topic": "Percentage",
+        "question": "The total number of male students in Arts is what percentage of the total students studying Science?",
+        "options": {
+          "A": "52.5%",
+          "B": "55.2%",
+          "C": "56.8%",
+          "D": "58.82%",
+          "E": "62.4%"
+        },
+        "correct": "D",
+        "explanation": "Male Arts students = 120. Total Science students = 204. Required percentage = (120/204)×100 = (10/17)×100 ≈ 58.82%."
+      },
+      {
+        "q": 19,
+        "topic": "Bar graphs",
+        "question": "What is the difference between the total number of students studying Arts and the total number of students studying Science?",
+        "options": {
+          "A": "4",
+          "B": "6",
+          "C": "8",
+          "D": "10",
+          "E": "12"
+        },
+        "correct": "A",
+        "explanation": "Total Arts students = 200. Total Science students = 204. Difference = 204 - 200 = 4."
+      },
+      {
+        "q": 20,
+        "topic": "Ratio and proportion",
+        "question": "What is the ratio of male students studying Arts to female students studying Arts?",
+        "options": {
+          "A": "2:3",
+          "B": "4:3",
+          "C": "3:2",
+          "D": "5:3",
+          "E": "3:4"
+        },
+        "correct": "C",
+        "explanation": "Male Arts students = 120. Female Arts students = 80. Ratio = 120:80 = 3:2."
+      },
+      {
+        "q": 21,
+        "topic": "Percentage",
+        "question": "What was the production of Product A in 2022?",
+        "options": {
+          "A": "500 units",
+          "B": "480 units",
+          "C": "520 units",
+          "D": "450 units",
+          "E": "550 units"
+        },
+        "correct": "A",
+        "explanation": "2021: A=400, B=600. 2022: A = 400+25% of 400 = 500 units; B = 600-10% of 600 = 540 units. 2023: A = 500-10% of 500 = 450 units; B = 540+20% of 540 = 648 units. Production of Product A in 2022 = 500 units."
+      },
+      {
+        "q": 22,
+        "topic": "Bar graphs",
+        "question": "What was the total production of Product B across all three years?",
+        "options": {
+          "A": "1750 units",
+          "B": "1768 units",
+          "C": "1788 units",
+          "D": "1800 units",
+          "E": "1820 units"
+        },
+        "correct": "C",
+        "explanation": "Product B: 2021=600, 2022=540, 2023=648. Total = 600+540+648 = 1788 units."
+      },
+      {
+        "q": 23,
+        "topic": "Percentage",
+        "question": "What is the percentage increase/decrease in total production (A + B) from 2021 to 2023?",
+        "options": {
+          "A": "8.5%",
+          "B": "9.2%",
+          "C": "10.5%",
+          "D": "11.2%",
+          "E": "9.8%"
+        },
+        "correct": "E",
+        "explanation": "Total production 2021 = 400+600 = 1000 units. Total production 2023 = 450+648 = 1098 units. Increase = 98 units. Percentage increase = (98/1000)×100 = 9.8%."
+      },
+      {
+        "q": 24,
+        "topic": "Ratio and proportion",
+        "question": "What is the ratio of production of Product A in 2023 to production of Product B in 2022?",
+        "options": {
+          "A": "4:5",
+          "B": "9:10",
+          "C": "25:27",
+          "D": "5:6",
+          "E": "20:23"
+        },
+        "correct": "D",
+        "explanation": "Product A in 2023 = 450 units. Product B in 2022 = 540 units. Ratio = 450:540 = 5:6."
+      },
+      {
+        "q": 25,
+        "topic": "Average",
+        "question": "What is the average production of Product A per year over the three years?",
+        "options": {
+          "A": "440 units",
+          "B": "450 units",
+          "C": "460 units",
+          "D": "470 units",
+          "E": "480 units"
+        },
+        "correct": "B",
+        "explanation": "Product A production: 2021=400, 2022=500, 2023=450. Sum = 1350 units. Average = 1350/3 = 450 units."
+      },
+      {
+        "q": 26,
+        "topic": "Ratio and proportion",
+        "question": "The ratio of the present ages of A and B is 4:5. Six years hence, the ratio of their ages will be 5:6. What is the present age of A?",
+        "options": {
+          "A": "20 years",
+          "B": "24 years",
+          "C": "28 years",
+          "D": "30 years",
+          "E": "32 years"
+        },
+        "correct": "B",
+        "explanation": "Let present age of A = 4x and B = 5x. (4x+6)/(5x+6) = 5/6 => 6(4x+6) = 5(5x+6) => 24x+36 = 25x+30 => x = 6. Present age of A = 4×6 = 24 years."
+      },
+      {
+        "q": 27,
+        "topic": "Profit and loss",
+        "question": "A shopkeeper bought an article for Rs. 800 and marked it up by 40%. If he allowed a discount of 15% on the marked price, what is his profit percentage?",
+        "options": {
+          "A": "19%",
+          "B": "21%",
+          "C": "23%",
+          "D": "25%",
+          "E": "27%"
+        },
+        "correct": "A",
+        "explanation": "CP = Rs. 800. MP = 800+40% of 800 = Rs. 1120. Discount = 15% of 1120 = Rs. 168. SP = 1120-168 = Rs. 952. Profit = 952-800 = Rs. 152. Profit % = (152/800)×100 = 19%."
+      },
+      {
+        "q": 28,
+        "topic": "Simple and compound interest",
+        "question": "A sum of Rs. 5000 amounts to Rs. 6000 in 2 years at simple interest. What will be the compound interest on the same sum at the same rate for 2 years (compounded annually)?",
+        "options": {
+          "A": "Rs. 1000",
+          "B": "Rs. 1025",
+          "C": "Rs. 1040",
+          "D": "Rs. 1050",
+          "E": "Rs. 1080"
+        },
+        "correct": "D",
+        "explanation": "SI = 6000-5000 = Rs. 1000. SI = (P×R×T)/100 => 1000 = (5000×R×2)/100 => R = 10%. CI for 2 years at 10%: CI = 5000×[(1.1)^2 - 1] = 5000×0.21 = Rs. 1050."
+      },
+      {
+        "q": 29,
+        "topic": "Time and work",
+        "question": "A can complete a work in 12 days and B can complete the same work in 15 days. If they work together for 4 days, what fraction of the work is left?",
+        "options": {
+          "A": "1/5",
+          "B": "3/10",
+          "C": "2/5",
+          "D": "7/10",
+          "E": "1/2"
+        },
+        "correct": "C",
+        "explanation": "A's 1-day work = 1/12. B's 1-day work = 1/15. Combined = 1/12+1/15 = 9/60 = 3/20. Work done in 4 days = 4×3/20 = 3/5. Fraction remaining = 1-3/5 = 2/5."
+      },
+      {
+        "q": 30,
+        "topic": "Time, speed and distance",
+        "question": "A boat travels 24 km downstream in 2 hours and 16 km upstream in 4 hours. What is the speed of the stream?",
+        "options": {
+          "A": "2 km/h",
+          "B": "3 km/h",
+          "C": "5 km/h",
+          "D": "8 km/h",
+          "E": "4 km/h"
+        },
+        "correct": "E",
+        "explanation": "Downstream speed = 24/2 = 12 km/h. Upstream speed = 16/4 = 4 km/h. Speed of stream = (12-4)/2 = 4 km/h."
+      },
+      {
+        "q": 31,
+        "topic": "Profit and loss",
+        "question": "A and B start a business with investments of Rs. 20,000 and Rs. 30,000 respectively. After 6 months, C joins them with an investment of Rs. 40,000. What is the ratio of profit share of A, B, and C at the end of one year?",
+        "options": {
+          "A": "1:2:3",
+          "B": "2:3:4",
+          "C": "3:4:2",
+          "D": "2:3:3",
+          "E": "2:3:2"
+        },
+        "correct": "E",
+        "explanation": "Investment-time products: A = 20,000×12 = 2,40,000; B = 30,000×12 = 3,60,000; C = 40,000×6 = 2,40,000. Ratio = 2,40,000:3,60,000:2,40,000 = 2:3:2."
+      },
+      {
+        "q": 32,
+        "topic": "Mixture and allegation",
+        "question": "A container contains 60 liters of a mixture of milk and water in the ratio 3:2. How much water must be added to this mixture so that the ratio of milk and water becomes 1:1?",
+        "options": {
+          "A": "8 liters",
+          "B": "10 liters",
+          "C": "15 liters",
+          "D": "12 liters",
+          "E": "18 liters"
+        },
+        "correct": "D",
+        "explanation": "Total = 60 liters, milk:water = 3:2. Milk = 36 liters, water = 24 liters. Let x liters water added: 36/(24+x) = 1/1 => 24+x = 36 => x = 12 liters."
+      },
+      {
+        "q": 33,
+        "topic": "Area",
+        "question": "The perimeter of a rectangle is 56 cm and its length is 16 cm. What is the area of the rectangle?",
+        "options": {
+          "A": "180 cm2",
+          "B": "184 cm2",
+          "C": "192 cm2",
+          "D": "196 cm2",
+          "E": "200 cm2"
+        },
+        "correct": "C",
+        "explanation": "Perimeter = 2(L+B) = 56 cm; L = 16 cm => 2(16+B) = 56 => B = 12 cm. Area = 16×12 = 192 cm2."
+      },
+      {
+        "q": 34,
+        "topic": "Percentage",
+        "question": "A box contains 5 red balls and 4 blue balls. If 2 balls are drawn at random, what is the probability that both balls are red?",
+        "options": {
+          "A": "5/12",
+          "B": "5/18",
+          "C": "4/9",
+          "D": "2/9",
+          "E": "1/3"
+        },
+        "correct": "B",
+        "explanation": "Total balls = 9. Total outcomes = 9C2 = 36. Favorable outcomes (both red) = 5C2 = 10. Probability = 10/36 = 5/18."
+      },
+      {
+        "q": 35,
+        "topic": "Average",
+        "question": "The average weight of 8 persons increases by 2.5 kg when a new person comes in place of one of them weighing 65 kg. What is the weight of the new person?",
+        "options": {
+          "A": "85 kg",
+          "B": "80 kg",
+          "C": "78 kg",
+          "D": "82 kg",
+          "E": "88 kg"
+        },
+        "correct": "A",
+        "explanation": "Total increase in weight = 8×2.5 = 20 kg. Weight of new person = 65 + 20 = 85 kg."
+      }
+    ],
+    "Reasoning Ability": [
+      {
+        "q": 1,
+        "topic": "Circular seating",
+        "question": "Who sits to the immediate left of G?",
+        "options": {
+          "A": "E",
+          "B": "D",
+          "C": "B",
+          "D": "F",
+          "E": "C"
+        },
+        "correct": "B",
+        "explanation": "Arrangement derivation: Placing A facing center, B sits 3rd to the left of A. Two persons sit between B and H, placing H 3rd to the left of B. C sits 2nd to the right of H. D sits 3rd to the right of C. F is not an immediate neighbor of D or B, placing F and then E 2nd to the left of F. The remaining spot is occupied by G. The clockwise arrangement sequence starting from A is A, G, D, B, E, F, C, H. Since all face center, clockwise movement is left. To the immediate left of G is D."
+      },
+      {
+        "q": 2,
+        "topic": "Circular seating",
+        "question": "How many persons sit between A and E when counted from the right of A?",
+        "options": {
+          "A": "One",
+          "B": "Two",
+          "C": "Four",
+          "D": "Three",
+          "E": "None"
+        },
+        "correct": "D",
+        "explanation": "For persons facing the center, counting to the right of A corresponds to moving in the counter-clockwise direction. Starting from A and moving counter-clockwise (A → H → C → F → E), the persons sitting between A and E are H, C, and F. Therefore, exactly three persons sit between them."
+      },
+      {
+        "q": 3,
+        "topic": "Circular seating",
+        "question": "What is the position of F with respect to C?",
+        "options": {
+          "A": "Immediate left",
+          "B": "Immediate right",
+          "C": "Second to the right",
+          "D": "Second to the left",
+          "E": "Third to the right"
+        },
+        "correct": "A",
+        "explanation": "In the sequence A-G-D-B-E-F-C-H, F sits adjacent to C in clockwise direction. Since all persons face center, clockwise direction corresponds to the left. Thus, F sits to the immediate left of C."
+      },
+      {
+        "q": 4,
+        "topic": "Circular seating",
+        "question": "Which of the following statements is true regarding H?",
+        "options": {
+          "A": "H is an immediate neighbor of G",
+          "B": "H sits second to the left of A",
+          "C": "H sits to the immediate right of C",
+          "D": "None is true",
+          "E": "H sits opposite to B"
+        },
+        "correct": "E",
+        "explanation": "In an eight-person circular table, the person sitting 4 positions away is directly opposite. In the arrangement (A, G, D, B, E, F, C, H), B is exactly 4 steps away from H. Therefore, H sits opposite to B."
+      },
+      {
+        "q": 5,
+        "topic": "Circular seating",
+        "question": "Four of the following five are alike in a certain way and hence form a group. Which one does not belong to that group?",
+        "options": {
+          "A": "A-D",
+          "B": "B-F",
+          "C": "D-F",
+          "D": "E-C",
+          "E": "G-B"
+        },
+        "correct": "C",
+        "explanation": "In options A (A-D), B (B-F), D (E-C), and E (G-B), the second person sits second to the left of the first person. In option C (D-F), F sits third to the left of D. Therefore, C (D-F) does not belong to the group."
+      },
+      {
+        "q": 6,
+        "topic": "Syllogism",
+        "question": "Statements: P >= Q = R > S >= T; U < R <= V\nConclusions:\nI. V > T\nII. T > P",
+        "options": {
+          "A": "If only conclusion I follows",
+          "B": "If only conclusion II follows",
+          "C": "If either conclusion I or II follows",
+          "D": "If neither conclusion I nor II follows",
+          "E": "If both conclusions I and II follow"
+        },
+        "correct": "A",
+        "explanation": "Combining the statements: V >= R > S >= T gives V > T, so Conclusion I is definitely true. For Conclusion II: P >= Q = R > S >= T gives P > T, which contradicts T > P. Thus, Conclusion II does not follow. Only conclusion I follows."
+      },
+      {
+        "q": 7,
+        "topic": "Syllogism",
+        "question": "Statements: M < N <= O = P; Q >= O < R\nConclusions:\nI. Q > M\nII. R > N",
+        "options": {
+          "A": "If only conclusion I follows",
+          "B": "If only conclusion II follows",
+          "C": "If either conclusion I or II follows",
+          "D": "If neither conclusion I nor II follows",
+          "E": "If both conclusions I and II follow"
+        },
+        "correct": "E",
+        "explanation": "For I: Q >= O > N > M implies Q > M (True). For II: R > O >= N implies R > N (True). Therefore, both conclusions I and II follow."
+      },
+      {
+        "q": 8,
+        "topic": "Syllogism",
+        "question": "Statements: X >= Y > Z; W = Y < V\nConclusions:\nI. X >= W\nII. V > Z",
+        "options": {
+          "A": "If only conclusion I follows",
+          "B": "If both conclusions I and II follow",
+          "C": "If only conclusion II follows",
+          "D": "If either conclusion I or II follows",
+          "E": "If neither conclusion I nor II follows"
+        },
+        "correct": "B",
+        "explanation": "For I: X >= Y and W = Y implies X >= W (True). For II: V > Y and Y > Z implies V > Z (True). Thus, both conclusions I and II follow."
+      },
+      {
+        "q": 9,
+        "topic": "Syllogism",
+        "question": "Statements: E < F >= G = H < I\nConclusions:\nI. E > H\nII. E <= H",
+        "options": {
+          "A": "If only conclusion I follows",
+          "B": "If only conclusion II follows",
+          "C": "If either conclusion I or II follows",
+          "D": "If neither conclusion I nor II follows",
+          "E": "If both conclusions I and II follow"
+        },
+        "correct": "C",
+        "explanation": "Between E and H, the relation contains opposite sign directions (E < F >= G = H), so no definite relationship can be established. However, E must be either strictly greater than H or less than or equal to H. These two conclusions form a complementary pair, so either conclusion I or II follows."
+      },
+      {
+        "q": 10,
+        "topic": "Syllogism",
+        "question": "Statements: K > L >= M = N; N = O > P\nConclusions:\nI. K > P\nII. L >= O",
+        "options": {
+          "A": "If only conclusion I follows",
+          "B": "If only conclusion II follows",
+          "C": "If either conclusion I or II follows",
+          "D": "If both conclusions I and II follow",
+          "E": "If neither conclusion I nor II follows"
+        },
+        "correct": "D",
+        "explanation": "Combining: K > L >= M = N = O > P. For I: K > L >= M = N = O > P gives K > P (True). For II: L >= M = N = O gives L >= O (True). Thus, both conclusions I and II follow."
+      },
+      {
+        "q": 11,
+        "topic": "Linear seating",
+        "question": "Who lives on the top floor (Floor 7)?",
+        "options": {
+          "A": "T",
+          "B": "R",
+          "C": "P",
+          "D": "S",
+          "E": "Q"
+        },
+        "correct": "C",
+        "explanation": "P lives on an odd floor above floor 3 (Floor 5 or 7). If P is on Floor 5, 3 people between P and S puts S on Floor 1, which contradicts S not living on the lowermost floor. Thus P lives on Floor 7, and S lives on Floor 3. R lives immediately above U, so R and U take adjacent floors (R=6, U=5). One person between R(6) and Q puts Q on Floor 4. T lives above V, so T is on Floor 2 and V is on Floor 1. The floor arrangement from 7 to 1 is P, R, U, Q, S, T, V. P lives on Floor 7."
+      },
+      {
+        "q": 12,
+        "topic": "Linear seating",
+        "question": "How many persons live between R and T?",
+        "options": {
+          "A": "Three",
+          "B": "One",
+          "C": "Two",
+          "D": "Four",
+          "E": "None"
+        },
+        "correct": "A",
+        "explanation": "R lives on Floor 6 and T lives on Floor 2. The persons living between them are on Floors 5, 4, and 3 (U, Q, and S). Therefore, exactly three persons live between R and T."
+      },
+      {
+        "q": 13,
+        "topic": "Linear seating",
+        "question": "Who among the following lives on Floor 4?",
+        "options": {
+          "A": "U",
+          "B": "S",
+          "C": "T",
+          "D": "Q",
+          "E": "V"
+        },
+        "correct": "D",
+        "explanation": "According to the final arrangement (Floor 7: P, Floor 6: R, Floor 5: U, Floor 4: Q, Floor 3: S, Floor 2: T, Floor 1: V), Q lives on Floor 4."
+      },
+      {
+        "q": 14,
+        "topic": "Linear seating",
+        "question": "Which of the following pairs lives on adjacent floors?",
+        "options": {
+          "A": "P, U",
+          "B": "S, T",
+          "C": "R, Q",
+          "D": "Q, V",
+          "E": "P, S"
+        },
+        "correct": "B",
+        "explanation": "S lives on Floor 3 and T lives on Floor 2. Since 3 and 2 are consecutive floor numbers, S and T live on adjacent floors."
+      },
+      {
+        "q": 15,
+        "topic": "Linear seating",
+        "question": "Four of the following five are alike in a certain way based on their floor positions. Which one does not belong to the group?",
+        "options": {
+          "A": "P",
+          "B": "U",
+          "C": "S",
+          "D": "V",
+          "E": "R"
+        },
+        "correct": "E",
+        "explanation": "P (7), U (5), S (3), and V (1) all live on odd-numbered floors. R (6) lives on an even-numbered floor, so R does not belong to the group."
+      },
+      {
+        "q": 16,
+        "topic": "Syllogism",
+        "question": "Statements:\nSome apples are oranges.\nAll oranges are bananas.\nNo banana is a mango.\nConclusions:\nI. Some apples are bananas.\nII. No orange is a mango.",
+        "options": {
+          "A": "If only conclusion I follows",
+          "B": "If only conclusion II follows",
+          "C": "If either conclusion I or II follows",
+          "D": "If neither conclusion I nor II follows",
+          "E": "If both conclusions I and II follow"
+        },
+        "correct": "E",
+        "explanation": "Since all oranges are bananas and some apples are oranges, the portion of apples that are oranges must also be bananas. Thus Conclusion I follows. Since all oranges are inside bananas and no banana is a mango, no orange can be a mango. Thus Conclusion II follows. Both conclusions follow."
+      },
+      {
+        "q": 17,
+        "topic": "Syllogism",
+        "question": "Statements:\nAll chairs are tables.\nSome tables are desks.\nAll desks are couches.\nConclusions:\nI. Some chairs are desks.\nII. Some tables are couches.",
+        "options": {
+          "A": "If only conclusion I follows",
+          "B": "If only conclusion II follows",
+          "C": "If either conclusion I or II follows",
+          "D": "If neither conclusion I nor II follows",
+          "E": "If both conclusions I and II follow"
+        },
+        "correct": "B",
+        "explanation": "Chairs are inside tables, but there is no definite relation given between chairs and desks, so Conclusion I does not follow. Since some tables are desks and all desks are couches, the desk-portion of tables is definitely included in couches, so some tables are couches. Conclusion II follows."
+      },
+      {
+        "q": 18,
+        "topic": "Syllogism",
+        "question": "Statements:\nOnly a few books are pens.\nAll pens are pencils.\nNo pencil is an eraser.\nConclusions:\nI. All books can never be pencils.\nII. Some pens are erasers.",
+        "options": {
+          "A": "If only conclusion I follows",
+          "B": "If only conclusion II follows",
+          "C": "If either conclusion I or II follows",
+          "D": "If neither conclusion I nor II follows",
+          "E": "If both conclusions I and II follow"
+        },
+        "correct": "D",
+        "explanation": "Only a few books are pens means some books are pens and some books are not pens. All pens are pencils, but all books could potentially be pencils without violating any conditions. Thus Conclusion I does not follow. Since all pens are pencils and no pencil is an eraser, no pen can be an eraser. Thus Conclusion II does not follow. Neither conclusion follows."
+      },
+      {
+        "q": 19,
+        "topic": "Syllogism",
+        "question": "Statements:\nSome dogs are cats.\nAll cats are cows.\nNo cow is a goat.\nConclusions:\nI. No cat is a goat.\nII. Some dogs are cows.",
+        "options": {
+          "A": "If both conclusions I and II follow",
+          "B": "If only conclusion I follows",
+          "C": "If only conclusion II follows",
+          "D": "If either conclusion I or II follows",
+          "E": "If neither conclusion I nor II follows"
+        },
+        "correct": "A",
+        "explanation": "Since all cats are cows and no cow is a goat, no cat can be a goat. Conclusion I definitely follows. Since some dogs are cats and all cats are cows, those dogs that are cats must also be cows. Conclusion II definitely follows. Thus, both conclusions I and II follow."
+      },
+      {
+        "q": 20,
+        "topic": "Syllogism",
+        "question": "Statements:\nAll red are blue.\nAll blue are green.\nNo green is yellow.\nConclusions:\nI. No red is yellow.\nII. Some green are red.",
+        "options": {
+          "A": "If only conclusion I follows",
+          "B": "If only conclusion II follows",
+          "C": "If both conclusions I and II follow",
+          "D": "If either conclusion I or II follows",
+          "E": "If neither conclusion I nor II follows"
+        },
+        "correct": "C",
+        "explanation": "All red is inside blue and all blue is inside green, so all red is inside green. Since no green is yellow, no red can be yellow either (Conclusion I follows). Since all red are green, it follows directly that some green are red (Conclusion II follows). Both conclusions follow."
+      },
+      {
+        "q": 21,
+        "topic": "Circular seating",
+        "question": "How many total persons are sitting in the row?",
+        "options": {
+          "A": "11",
+          "B": "13",
+          "C": "15",
+          "D": "12",
+          "E": "14"
+        },
+        "correct": "A",
+        "explanation": "Let the positions from left to right be numbered. E sits immediately left of D, C sits 3rd to right of D, A sits 4th to left of B, F sits in middle of A and B, and 2 persons sit between B and C. Analyzing the constraints yields 11 positions in total: 3 persons to left of E (pos 1-3), E at pos 4, D at pos 5, A at pos 7, C at pos 8, F at pos 9, 2 persons between C and B, and B at pos 11 (extreme right end). Number of persons to left of E (3) equals persons to right of C (3). Thus total persons = 11."
+      },
+      {
+        "q": 22,
+        "topic": "Circular seating",
+        "question": "What is the position of F with respect to C?",
+        "options": {
+          "A": "Immediate left",
+          "B": "Second to the left",
+          "C": "Immediate right",
+          "D": "Second to the right",
+          "E": "Third to the right"
+        },
+        "correct": "C",
+        "explanation": "C is at position 8 and F is at position 9. Facing north, position 9 is immediately to the right of position 8. Thus F sits to the immediate right of C."
+      },
+      {
+        "q": 23,
+        "topic": "Circular seating",
+        "question": "How many persons sit between E and A?",
+        "options": {
+          "A": "One",
+          "B": "Three",
+          "C": "Four",
+          "D": "Five",
+          "E": "Two"
+        },
+        "correct": "E",
+        "explanation": "E is at position 4 and A is at position 7. The persons sitting between them are at positions 5 and 6. Therefore, exactly two persons sit between E and A."
+      },
+      {
+        "q": 24,
+        "topic": "Circular seating",
+        "question": "If X sits at the extreme left end, how many persons sit between X and D?",
+        "options": {
+          "A": "One",
+          "B": "Two",
+          "C": "Four",
+          "D": "Three",
+          "E": "None"
+        },
+        "correct": "D",
+        "explanation": "Extreme left end is position 1 (X = 1). D is at position 5. The persons sitting between position 1 and position 5 are at positions 2, 3, and 4. Thus, three persons sit between X and D."
+      },
+      {
+        "q": 25,
+        "topic": "Circular seating",
+        "question": "Which of the following statements is true?",
+        "options": {
+          "A": "A sits to the immediate right of C",
+          "B": "B sits at an extreme end of the row",
+          "C": "Only three persons sit to the left of D",
+          "D": "F sits second to the left of B",
+          "E": "None is true"
+        },
+        "correct": "B",
+        "explanation": "Since total persons in the row is 11 and B is placed at position 11, B sits at the extreme right end of the row. Therefore, Option B ('B sits at an extreme end of the row') is true."
+      },
+      {
+        "q": 26,
+        "topic": "Direction sense",
+        "question": "In which direction is Point U with respect to Point P?",
+        "options": {
+          "A": "North",
+          "B": "South",
+          "C": "North-West",
+          "D": "South-East",
+          "E": "South-West"
+        },
+        "correct": "B",
+        "explanation": "Taking Q as origin (0,0): P is at (-8, 0), R at (0, 5), S at (6, 5), T at (6, -5), and U at (6-14, -5) = (-8, -5). Since U and P share the same x-coordinate (-8) and U's y-coordinate (-5) is below P's (0), Point U is directly South of Point P."
+      },
+      {
+        "q": 27,
+        "topic": "Direction sense",
+        "question": "What is the shortest distance between Point P and Point U?",
+        "options": {
+          "A": "5m",
+          "B": "8m",
+          "C": "10m",
+          "D": "6m",
+          "E": "12m"
+        },
+        "correct": "A",
+        "explanation": "Distance between P(-8, 0) and U(-8, -5) is the vertical distance along the y-axis: 0-(-5) = 5 meters."
+      },
+      {
+        "q": 28,
+        "topic": "Direction sense",
+        "question": "In which direction is Point R with respect to Point T?",
+        "options": {
+          "A": "North-East",
+          "B": "South-West",
+          "C": "North",
+          "D": "North-West",
+          "E": "South"
+        },
+        "correct": "D",
+        "explanation": "R is at (0, 5) and T is at (6, -5). Relative to T(6, -5), R is to the west (0 < 6) and to the north (5 > -5). Thus, Point R is in the North-West direction relative to Point T."
+      },
+      {
+        "q": 29,
+        "topic": "Blood relations",
+        "question": "How is E related to D?",
+        "options": {
+          "A": "Father",
+          "B": "Uncle",
+          "C": "Grandfather",
+          "D": "Brother",
+          "E": "Father-in-law"
+        },
+        "correct": "C",
+        "explanation": "B is married to A and B is the father of D. C is mother-in-law of A, so C is mother of B. E is spouse of C, so E is father of B. Since E is father of B and B is father of D, E is the paternal grandfather of D."
+      },
+      {
+        "q": 30,
+        "topic": "Blood relations",
+        "question": "How is F related to G?",
+        "options": {
+          "A": "Mother",
+          "B": "Aunt",
+          "C": "Grandmother",
+          "D": "Niece",
+          "E": "Sister"
+        },
+        "correct": "E",
+        "explanation": "B and A are parents of D and F. G is the son of A (and B). Thus D, F, and G are siblings. Since F is female, F is the sister of G."
+      },
+      {
+        "q": 31,
+        "topic": "Blood relations",
+        "question": "How many male members are definitely there in the family?",
+        "options": {
+          "A": "Two",
+          "B": "Three",
+          "C": "Four",
+          "D": "Five",
+          "E": "Cannot be determined"
+        },
+        "correct": "E",
+        "explanation": "Known genders: C (female), E (male), B (male), A (female), F (female), G (male). The gender of D is not specified in the statements. Hence, the exact count of male members cannot be determined."
+      },
+      {
+        "q": 32,
+        "topic": "Coding-decoding",
+        "question": "In a certain code language, if each letter in 'MARKETER' is shifted forward by two positions in the English alphabetical order, how will 'MARKETER' be coded?",
+        "options": {
+          "A": "OCTGGVGT",
+          "B": "OCTNGVGT",
+          "C": "OCTNGVGU",
+          "D": "OCTMGVGT",
+          "E": "PBTLHWHU"
+        },
+        "correct": "D",
+        "explanation": "Shifting each letter of MARKETER forward by +2 in alphabetical order: M(+2)=O, A(+2)=C, R(+2)=T, K(+2)=M, E(+2)=G, T(+2)=V, E(+2)=G, R(+2)=T. Combining these yields OCTMGVGT, which corresponds to Option D."
+      },
+      {
+        "q": 33,
+        "topic": "Coding-decoding",
+        "question": "In a certain code language, 'SUNDAY' is written as 'TVOEBZ' (each letter shifted by 1 position forward). How is 'MOTHER' written in that code language?",
+        "options": {
+          "A": "NPUIGS",
+          "B": "NPVIES",
+          "C": "NPUIFS",
+          "D": "NPTIFS",
+          "E": "OQVJFS"
+        },
+        "correct": "C",
+        "explanation": "Shifting each letter of MOTHER forward by +1: M(+1)->N, O(+1)->P, T(+1)->U, H(+1)->I, E(+1)->F, R(+1)->S. The code is NPUIFS."
+      },
+      {
+        "q": 34,
+        "topic": "Direction sense",
+        "question": "How many such pairs of letters are there in the word 'PROBLEM', each of which has as many letters between them in the word as in the English alphabet (in both forward and backward directions)?",
+        "options": {
+          "A": "None",
+          "B": "Two",
+          "C": "One",
+          "D": "Three",
+          "E": "More than three"
+        },
+        "correct": "B",
+        "explanation": "Checking pairs in 'PROBLEM': Forward direction: (B, E) has 2 letters between them in word (L) and in alphabet (C, D). Backward direction: (M, R) has 4 letters between them in word (E, L, B, O) and in alphabet (N, O, P, Q). Total pairs = 2."
+      },
+      {
+        "q": 35,
+        "topic": "Alphanumeric series",
+        "question": "If it is possible to make only one meaningful English word with the 1st, 5th, 9th, and 10th letters of the word 'PARLIAMENT', which of the following will be the third letter of that word? If no such word can be made, give 'X' as the answer; if more than one such word can be made, give 'Y' as the answer.",
+        "options": {
+          "A": "N",
+          "B": "P",
+          "C": "I",
+          "D": "X",
+          "E": "Y"
+        },
+        "correct": "A",
+        "explanation": "The 1st, 5th, 9th, and 10th letters of PARLIAMENT are P, I, N, and T. The only standard meaningful English word that can be formed using these four letters is 'PINT'. The third letter of 'PINT' is N."
+      }
+    ]
+  }
+}

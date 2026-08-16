@@ -1,0 +1,1445 @@
+{
+  "paper_id": "IBPS-Paper2",
+  "title": "IBPS PO Prelims Paper 2",
+  "exam": "IBPS PO Prelims",
+  "year": 2026,
+  "subjects": {
+    "English Language": [
+      {
+        "q": 1,
+        "topic": "Main idea",
+        "question": "What is the central theme of the passage?",
+        "options": {
+          "A": "The rise of insurance premiums in the shipping industry.",
+          "B": "The benefits of localized manufacturing over intense globalization.",
+          "C": "The impact of climate change on global supply chains and the need for adaptation.",
+          "D": "The failure of environmental economists to accurately price carbon emissions.",
+          "E": "The technological advancements required to protect coastal ports."
+        },
+        "correct": "C",
+        "explanation": "The entire passage revolves around how climate change is disrupting agricultural and logistical supply chains globally and how businesses and governments must adapt to these challenges. Option C accurately captures this core message.",
+        "passage": "Global supply chains are increasingly vulnerable to the unpredictable effects of climate change. Recent studies emphasize that the agricultural sector, which forms the backbone of many developing economies, is at immediate risk. Extreme weather events, such as prolonged droughts and sudden, devastating floods, have drastically altered crop yields. This volatility not only affects local food security but also cascades through the international market, leading to price spikes and supply shortages. Furthermore, the infrastructure that supports global trade, including ports, railways, and storage facilities, was designed for a stable climate. The escalating frequency of hurricanes and rising sea levels threatens these critical nodes. For instance, coastal ports, essential for the export of grains and cereals, are facing unprecedented inundation risks.\n\nConsequently, businesses are being forced to rethink their operational strategies. The traditional 'just-in-time' inventory model, which minimizes storage costs but relies on seamless logistics, is proving fragile. Companies are now pivoting towards 'just-in-case' strategies, increasing their buffer stocks and diversifying their supplier base to mitigate potential disruptions. However, this transition is expensive and complex. It requires significant capital investment and a fundamental shift in corporate mindset. While some multinational corporations have the resources to adapt, smaller enterprises are often left exposed. Governments and international bodies are being called upon to provide targeted subsidies and infrastructure upgrades to protect these vulnerable entities.\n\nEnvironmental economists argue that the failure to price in climate risks has led to a misallocation of resources. If the true cost of carbon were reflected in shipping and production, localized manufacturing might experience a resurgence. This paradigm shift could potentially reverse decades of intense globalization. Moreover, the insurance industry is recalibrating its risk models. Premiums for agricultural and shipping insurance are soaring, placing an additional financial burden on producers and consumers alike. The interconnectedness of modern economies means that a crop failure in one hemisphere can trigger inflation in another, underscoring the urgent need for a cohesive, international strategy to build supply chain resilience. The long-term solution, unequivocally, lies in mitigating climate change itself through an aggressive reduction in greenhouse gas emissions. Until then, the global economy must brace for a period of protracted instability."
+      },
+      {
+        "q": 2,
+        "topic": "Main idea",
+        "question": "According to the passage, why is the 'just-in-time' inventory model proving fragile?",
+        "options": {
+          "A": "It relies on seamless logistics that are easily disrupted by extreme weather.",
+          "B": "It requires excessive capital investment that small enterprises cannot afford.",
+          "C": "It was designed specifically for the export of grains and cereals.",
+          "D": "It ignores the cost of soaring insurance premiums.",
+          "E": "It relies heavily on localized manufacturing which is declining."
+        },
+        "correct": "A",
+        "explanation": "The passage explicitly states that the 'just-in-time' model relies on seamless logistics, which is proving fragile because it cannot withstand the supply chain disruptions caused by extreme weather events and climate change.",
+        "passage": "Global supply chains are increasingly vulnerable to the unpredictable effects of climate change. Recent studies emphasize that the agricultural sector, which forms the backbone of many developing economies, is at immediate risk. Extreme weather events, such as prolonged droughts and sudden, devastating floods, have drastically altered crop yields. This volatility not only affects local food security but also cascades through the international market, leading to price spikes and supply shortages. Furthermore, the infrastructure that supports global trade, including ports, railways, and storage facilities, was designed for a stable climate. The escalating frequency of hurricanes and rising sea levels threatens these critical nodes. For instance, coastal ports, essential for the export of grains and cereals, are facing unprecedented inundation risks.\n\nConsequently, businesses are being forced to rethink their operational strategies. The traditional 'just-in-time' inventory model, which minimizes storage costs but relies on seamless logistics, is proving fragile. Companies are now pivoting towards 'just-in-case' strategies, increasing their buffer stocks and diversifying their supplier base to mitigate potential disruptions. However, this transition is expensive and complex. It requires significant capital investment and a fundamental shift in corporate mindset. While some multinational corporations have the resources to adapt, smaller enterprises are often left exposed. Governments and international bodies are being called upon to provide targeted subsidies and infrastructure upgrades to protect these vulnerable entities.\n\nEnvironmental economists argue that the failure to price in climate risks has led to a misallocation of resources. If the true cost of carbon were reflected in shipping and production, localized manufacturing might experience a resurgence. This paradigm shift could potentially reverse decades of intense globalization. Moreover, the insurance industry is recalibrating its risk models. Premiums for agricultural and shipping insurance are soaring, placing an additional financial burden on producers and consumers alike. The interconnectedness of modern economies means that a crop failure in one hemisphere can trigger inflation in another, underscoring the urgent need for a cohesive, international strategy to build supply chain resilience. The long-term solution, unequivocally, lies in mitigating climate change itself through an aggressive reduction in greenhouse gas emissions. Until then, the global economy must brace for a period of protracted instability."
+      },
+      {
+        "q": 3,
+        "topic": "Reading Comprehension",
+        "question": "Which of the following is cited as a reason for a potential resurgence in localized manufacturing?",
+        "options": {
+          "A": "The immediate reduction in global greenhouse gas emissions.",
+          "B": "The transition to 'just-in-case' inventory strategies by large corporations.",
+          "C": "The increasing frequency of devastating floods affecting agricultural yields.",
+          "D": "The reflection of the true cost of carbon in shipping and production.",
+          "E": "The international subsidies provided to smaller enterprises."
+        },
+        "correct": "D",
+        "explanation": "The author states that if the true cost of carbon were reflected in shipping and production, localized manufacturing might experience a resurgence, making Option D correct.",
+        "passage": "Global supply chains are increasingly vulnerable to the unpredictable effects of climate change. Recent studies emphasize that the agricultural sector, which forms the backbone of many developing economies, is at immediate risk. Extreme weather events, such as prolonged droughts and sudden, devastating floods, have drastically altered crop yields. This volatility not only affects local food security but also cascades through the international market, leading to price spikes and supply shortages. Furthermore, the infrastructure that supports global trade, including ports, railways, and storage facilities, was designed for a stable climate. The escalating frequency of hurricanes and rising sea levels threatens these critical nodes. For instance, coastal ports, essential for the export of grains and cereals, are facing unprecedented inundation risks.\n\nConsequently, businesses are being forced to rethink their operational strategies. The traditional 'just-in-time' inventory model, which minimizes storage costs but relies on seamless logistics, is proving fragile. Companies are now pivoting towards 'just-in-case' strategies, increasing their buffer stocks and diversifying their supplier base to mitigate potential disruptions. However, this transition is expensive and complex. It requires significant capital investment and a fundamental shift in corporate mindset. While some multinational corporations have the resources to adapt, smaller enterprises are often left exposed. Governments and international bodies are being called upon to provide targeted subsidies and infrastructure upgrades to protect these vulnerable entities.\n\nEnvironmental economists argue that the failure to price in climate risks has led to a misallocation of resources. If the true cost of carbon were reflected in shipping and production, localized manufacturing might experience a resurgence. This paradigm shift could potentially reverse decades of intense globalization. Moreover, the insurance industry is recalibrating its risk models. Premiums for agricultural and shipping insurance are soaring, placing an additional financial burden on producers and consumers alike. The interconnectedness of modern economies means that a crop failure in one hemisphere can trigger inflation in another, underscoring the urgent need for a cohesive, international strategy to build supply chain resilience. The long-term solution, unequivocally, lies in mitigating climate change itself through an aggressive reduction in greenhouse gas emissions. Until then, the global economy must brace for a period of protracted instability."
+      },
+      {
+        "q": 4,
+        "topic": "Synonyms",
+        "question": "Choose the word most similar in meaning to 'cascades' as used in the passage.",
+        "options": {
+          "A": "Halts",
+          "B": "Diminishes",
+          "C": "Isolates",
+          "D": "Restricts",
+          "E": "Spreads"
+        },
+        "correct": "E",
+        "explanation": "In context, the effects of volatility cascade through the international market, meaning they flow downward or spread from one level to another. 'Spreads' is the closest synonym.",
+        "passage": "Global supply chains are increasingly vulnerable to the unpredictable effects of climate change. Recent studies emphasize that the agricultural sector, which forms the backbone of many developing economies, is at immediate risk. Extreme weather events, such as prolonged droughts and sudden, devastating floods, have drastically altered crop yields. This volatility not only affects local food security but also cascades through the international market, leading to price spikes and supply shortages. Furthermore, the infrastructure that supports global trade, including ports, railways, and storage facilities, was designed for a stable climate. The escalating frequency of hurricanes and rising sea levels threatens these critical nodes. For instance, coastal ports, essential for the export of grains and cereals, are facing unprecedented inundation risks.\n\nConsequently, businesses are being forced to rethink their operational strategies. The traditional 'just-in-time' inventory model, which minimizes storage costs but relies on seamless logistics, is proving fragile. Companies are now pivoting towards 'just-in-case' strategies, increasing their buffer stocks and diversifying their supplier base to mitigate potential disruptions. However, this transition is expensive and complex. It requires significant capital investment and a fundamental shift in corporate mindset. While some multinational corporations have the resources to adapt, smaller enterprises are often left exposed. Governments and international bodies are being called upon to provide targeted subsidies and infrastructure upgrades to protect these vulnerable entities.\n\nEnvironmental economists argue that the failure to price in climate risks has led to a misallocation of resources. If the true cost of carbon were reflected in shipping and production, localized manufacturing might experience a resurgence. This paradigm shift could potentially reverse decades of intense globalization. Moreover, the insurance industry is recalibrating its risk models. Premiums for agricultural and shipping insurance are soaring, placing an additional financial burden on producers and consumers alike. The interconnectedness of modern economies means that a crop failure in one hemisphere can trigger inflation in another, underscoring the urgent need for a cohesive, international strategy to build supply chain resilience. The long-term solution, unequivocally, lies in mitigating climate change itself through an aggressive reduction in greenhouse gas emissions. Until then, the global economy must brace for a period of protracted instability."
+      },
+      {
+        "q": 5,
+        "topic": "Antonyms",
+        "question": "Choose the word most opposite in meaning to 'unprecedented' as used in the passage.",
+        "options": {
+          "A": "Bizarre",
+          "B": "Commonplace",
+          "C": "Extraordinary",
+          "D": "Formidable",
+          "E": "Severe"
+        },
+        "correct": "B",
+        "explanation": "'Unprecedented' means never done or known before. The opposite would be something ordinary, usual, or 'commonplace'.",
+        "passage": "Global supply chains are increasingly vulnerable to the unpredictable effects of climate change. Recent studies emphasize that the agricultural sector, which forms the backbone of many developing economies, is at immediate risk. Extreme weather events, such as prolonged droughts and sudden, devastating floods, have drastically altered crop yields. This volatility not only affects local food security but also cascades through the international market, leading to price spikes and supply shortages. Furthermore, the infrastructure that supports global trade, including ports, railways, and storage facilities, was designed for a stable climate. The escalating frequency of hurricanes and rising sea levels threatens these critical nodes. For instance, coastal ports, essential for the export of grains and cereals, are facing unprecedented inundation risks.\n\nConsequently, businesses are being forced to rethink their operational strategies. The traditional 'just-in-time' inventory model, which minimizes storage costs but relies on seamless logistics, is proving fragile. Companies are now pivoting towards 'just-in-case' strategies, increasing their buffer stocks and diversifying their supplier base to mitigate potential disruptions. However, this transition is expensive and complex. It requires significant capital investment and a fundamental shift in corporate mindset. While some multinational corporations have the resources to adapt, smaller enterprises are often left exposed. Governments and international bodies are being called upon to provide targeted subsidies and infrastructure upgrades to protect these vulnerable entities.\n\nEnvironmental economists argue that the failure to price in climate risks has led to a misallocation of resources. If the true cost of carbon were reflected in shipping and production, localized manufacturing might experience a resurgence. This paradigm shift could potentially reverse decades of intense globalization. Moreover, the insurance industry is recalibrating its risk models. Premiums for agricultural and shipping insurance are soaring, placing an additional financial burden on producers and consumers alike. The interconnectedness of modern economies means that a crop failure in one hemisphere can trigger inflation in another, underscoring the urgent need for a cohesive, international strategy to build supply chain resilience. The long-term solution, unequivocally, lies in mitigating climate change itself through an aggressive reduction in greenhouse gas emissions. Until then, the global economy must brace for a period of protracted instability."
+      },
+      {
+        "q": 6,
+        "topic": "Main idea",
+        "question": "Which of the following statements is TRUE according to the passage?",
+        "options": {
+          "A": "Small enterprises are easily adapting to climate risks without government support.",
+          "B": "Agricultural failures can lead to inflation in distant parts of the world.",
+          "C": "Coastal ports are entirely safe from the impacts of rising sea levels.",
+          "D": "The 'just-in-case' strategy is cheaper and simpler than previous models.",
+          "E": "The insurance industry has lowered premiums to help struggling farmers."
+        },
+        "correct": "B",
+        "explanation": "The passage states that a crop failure in one hemisphere can trigger inflation in another, confirming Option B. The other statements directly contradict the text.",
+        "passage": "Global supply chains are increasingly vulnerable to the unpredictable effects of climate change. Recent studies emphasize that the agricultural sector, which forms the backbone of many developing economies, is at immediate risk. Extreme weather events, such as prolonged droughts and sudden, devastating floods, have drastically altered crop yields. This volatility not only affects local food security but also cascades through the international market, leading to price spikes and supply shortages. Furthermore, the infrastructure that supports global trade, including ports, railways, and storage facilities, was designed for a stable climate. The escalating frequency of hurricanes and rising sea levels threatens these critical nodes. For instance, coastal ports, essential for the export of grains and cereals, are facing unprecedented inundation risks.\n\nConsequently, businesses are being forced to rethink their operational strategies. The traditional 'just-in-time' inventory model, which minimizes storage costs but relies on seamless logistics, is proving fragile. Companies are now pivoting towards 'just-in-case' strategies, increasing their buffer stocks and diversifying their supplier base to mitigate potential disruptions. However, this transition is expensive and complex. It requires significant capital investment and a fundamental shift in corporate mindset. While some multinational corporations have the resources to adapt, smaller enterprises are often left exposed. Governments and international bodies are being called upon to provide targeted subsidies and infrastructure upgrades to protect these vulnerable entities.\n\nEnvironmental economists argue that the failure to price in climate risks has led to a misallocation of resources. If the true cost of carbon were reflected in shipping and production, localized manufacturing might experience a resurgence. This paradigm shift could potentially reverse decades of intense globalization. Moreover, the insurance industry is recalibrating its risk models. Premiums for agricultural and shipping insurance are soaring, placing an additional financial burden on producers and consumers alike. The interconnectedness of modern economies means that a crop failure in one hemisphere can trigger inflation in another, underscoring the urgent need for a cohesive, international strategy to build supply chain resilience. The long-term solution, unequivocally, lies in mitigating climate change itself through an aggressive reduction in greenhouse gas emissions. Until then, the global economy must brace for a period of protracted instability."
+      },
+      {
+        "q": 7,
+        "topic": "Tone",
+        "question": "What is the author's tone towards the current global economic situation?",
+        "options": {
+          "A": "Optimistic",
+          "B": "Apathetic",
+          "C": "Satirical",
+          "D": "Apprehensive",
+          "E": "Nostalgic"
+        },
+        "correct": "D",
+        "explanation": "The author discusses risks, vulnerabilities, soaring premiums, and protracted instability, showing concern and anxiety about the future of global supply chains, making the tone 'apprehensive'.",
+        "passage": "Global supply chains are increasingly vulnerable to the unpredictable effects of climate change. Recent studies emphasize that the agricultural sector, which forms the backbone of many developing economies, is at immediate risk. Extreme weather events, such as prolonged droughts and sudden, devastating floods, have drastically altered crop yields. This volatility not only affects local food security but also cascades through the international market, leading to price spikes and supply shortages. Furthermore, the infrastructure that supports global trade, including ports, railways, and storage facilities, was designed for a stable climate. The escalating frequency of hurricanes and rising sea levels threatens these critical nodes. For instance, coastal ports, essential for the export of grains and cereals, are facing unprecedented inundation risks.\n\nConsequently, businesses are being forced to rethink their operational strategies. The traditional 'just-in-time' inventory model, which minimizes storage costs but relies on seamless logistics, is proving fragile. Companies are now pivoting towards 'just-in-case' strategies, increasing their buffer stocks and diversifying their supplier base to mitigate potential disruptions. However, this transition is expensive and complex. It requires significant capital investment and a fundamental shift in corporate mindset. While some multinational corporations have the resources to adapt, smaller enterprises are often left exposed. Governments and international bodies are being called upon to provide targeted subsidies and infrastructure upgrades to protect these vulnerable entities.\n\nEnvironmental economists argue that the failure to price in climate risks has led to a misallocation of resources. If the true cost of carbon were reflected in shipping and production, localized manufacturing might experience a resurgence. This paradigm shift could potentially reverse decades of intense globalization. Moreover, the insurance industry is recalibrating its risk models. Premiums for agricultural and shipping insurance are soaring, placing an additional financial burden on producers and consumers alike. The interconnectedness of modern economies means that a crop failure in one hemisphere can trigger inflation in another, underscoring the urgent need for a cohesive, international strategy to build supply chain resilience. The long-term solution, unequivocally, lies in mitigating climate change itself through an aggressive reduction in greenhouse gas emissions. Until then, the global economy must brace for a period of protracted instability."
+      },
+      {
+        "q": 8,
+        "topic": "Main idea",
+        "question": "What does the author suggest is the unequivocal long-term solution to the problems discussed?",
+        "options": {
+          "A": "Upgrading port infrastructures globally.",
+          "B": "Shifting entirely to a 'just-in-case' inventory model.",
+          "C": "Providing targeted subsidies to multinational corporations.",
+          "D": "Reversing decades of intense globalization.",
+          "E": "Aggressively reducing greenhouse gas emissions."
+        },
+        "correct": "E",
+        "explanation": "The passage explicitly states that the long-term solution, unequivocally, lies in mitigating climate change itself through an aggressive reduction in greenhouse gas emissions.",
+        "passage": "Global supply chains are increasingly vulnerable to the unpredictable effects of climate change. Recent studies emphasize that the agricultural sector, which forms the backbone of many developing economies, is at immediate risk. Extreme weather events, such as prolonged droughts and sudden, devastating floods, have drastically altered crop yields. This volatility not only affects local food security but also cascades through the international market, leading to price spikes and supply shortages. Furthermore, the infrastructure that supports global trade, including ports, railways, and storage facilities, was designed for a stable climate. The escalating frequency of hurricanes and rising sea levels threatens these critical nodes. For instance, coastal ports, essential for the export of grains and cereals, are facing unprecedented inundation risks.\n\nConsequently, businesses are being forced to rethink their operational strategies. The traditional 'just-in-time' inventory model, which minimizes storage costs but relies on seamless logistics, is proving fragile. Companies are now pivoting towards 'just-in-case' strategies, increasing their buffer stocks and diversifying their supplier base to mitigate potential disruptions. However, this transition is expensive and complex. It requires significant capital investment and a fundamental shift in corporate mindset. While some multinational corporations have the resources to adapt, smaller enterprises are often left exposed. Governments and international bodies are being called upon to provide targeted subsidies and infrastructure upgrades to protect these vulnerable entities.\n\nEnvironmental economists argue that the failure to price in climate risks has led to a misallocation of resources. If the true cost of carbon were reflected in shipping and production, localized manufacturing might experience a resurgence. This paradigm shift could potentially reverse decades of intense globalization. Moreover, the insurance industry is recalibrating its risk models. Premiums for agricultural and shipping insurance are soaring, placing an additional financial burden on producers and consumers alike. The interconnectedness of modern economies means that a crop failure in one hemisphere can trigger inflation in another, underscoring the urgent need for a cohesive, international strategy to build supply chain resilience. The long-term solution, unequivocally, lies in mitigating climate change itself through an aggressive reduction in greenhouse gas emissions. Until then, the global economy must brace for a period of protracted instability."
+      },
+      {
+        "q": 9,
+        "topic": "Inference",
+        "question": "(Advanced Inference) Based on the passage's discussion on the 'just-in-time' model and localized manufacturing, which of the following can be most reasonably inferred about the author's economic perspective?",
+        "options": {
+          "A": "The author believes globalization is an inherently flawed concept that should be permanently dismantled.",
+          "B": "The author implies that logistical efficiency has historically been prioritized over environmental and supply chain resilience.",
+          "C": "The author suggests that governments should penalize localized manufacturing to maintain international trade volumes.",
+          "D": "The author assumes that smaller enterprises will naturally adapt to 'just-in-case' models once insurance premiums stabilize.",
+          "E": "The author advocates for removing carbon pricing to help developing economies sustain their agricultural exports."
+        },
+        "correct": "B",
+        "explanation": "The passage states that the 'just-in-time' model minimizes costs but relies on seamless logistics, now proving fragile due to climate risks, and that failing to price in climate risks led to misallocation of resources. This strongly implies that the global economy previously prioritized maximum efficiency and cost-cutting over long-term resilience, making Option B correct.",
+        "passage": "Global supply chains are increasingly vulnerable to the unpredictable effects of climate change. Recent studies emphasize that the agricultural sector, which forms the backbone of many developing economies, is at immediate risk. Extreme weather events, such as prolonged droughts and sudden, devastating floods, have drastically altered crop yields. This volatility not only affects local food security but also cascades through the international market, leading to price spikes and supply shortages. Furthermore, the infrastructure that supports global trade, including ports, railways, and storage facilities, was designed for a stable climate. The escalating frequency of hurricanes and rising sea levels threatens these critical nodes. For instance, coastal ports, essential for the export of grains and cereals, are facing unprecedented inundation risks.\n\nConsequently, businesses are being forced to rethink their operational strategies. The traditional 'just-in-time' inventory model, which minimizes storage costs but relies on seamless logistics, is proving fragile. Companies are now pivoting towards 'just-in-case' strategies, increasing their buffer stocks and diversifying their supplier base to mitigate potential disruptions. However, this transition is expensive and complex. It requires significant capital investment and a fundamental shift in corporate mindset. While some multinational corporations have the resources to adapt, smaller enterprises are often left exposed. Governments and international bodies are being called upon to provide targeted subsidies and infrastructure upgrades to protect these vulnerable entities.\n\nEnvironmental economists argue that the failure to price in climate risks has led to a misallocation of resources. If the true cost of carbon were reflected in shipping and production, localized manufacturing might experience a resurgence. This paradigm shift could potentially reverse decades of intense globalization. Moreover, the insurance industry is recalibrating its risk models. Premiums for agricultural and shipping insurance are soaring, placing an additional financial burden on producers and consumers alike. The interconnectedness of modern economies means that a crop failure in one hemisphere can trigger inflation in another, underscoring the urgent need for a cohesive, international strategy to build supply chain resilience. The long-term solution, unequivocally, lies in mitigating climate change itself through an aggressive reduction in greenhouse gas emissions. Until then, the global economy must brace for a period of protracted instability."
+      },
+      {
+        "q": 10,
+        "topic": "Error detection",
+        "question": "A. The committee have / B. unanimously decided / C. to approve the / D. new infrastructure project. / E. No error",
+        "options": {
+          "A": "The committee have",
+          "B": "unanimously decided",
+          "C": "to approve the",
+          "D": "new infrastructure project.",
+          "E": "No error"
+        },
+        "correct": "A",
+        "explanation": "When a collective noun like 'committee' acts as a single, unified body, it takes a singular verb. The correct phrasing is 'The committee has'. The error lies in part A."
+      },
+      {
+        "q": 11,
+        "topic": "Error detection",
+        "question": "A. The company decided / B. to distribute the / C. profits between all / D. of its employees. / E. No error",
+        "options": {
+          "A": "The company decided",
+          "B": "to distribute the",
+          "C": "profits between all",
+          "D": "of its employees.",
+          "E": "No error"
+        },
+        "correct": "C",
+        "explanation": "The preposition 'between' is generally used for two distinct entities. When referring to more than two entities, 'among' should be used. Therefore, 'profits among all' is correct. The error is in part C."
+      },
+      {
+        "q": 12,
+        "topic": "Error detection",
+        "question": "A. The diligent student / B. completed her assignment / C. well before the / D. stipulated deadline. / E. No error",
+        "options": {
+          "A": "The diligent student",
+          "B": "completed her assignment",
+          "C": "well before the",
+          "D": "stipulated deadline.",
+          "E": "No error"
+        },
+        "correct": "E",
+        "explanation": "The sentence is grammatically sound. The subject-verb agreement is correct, and the prepositions and modifiers are used appropriately."
+      },
+      {
+        "q": 13,
+        "topic": "Vocabulary in context",
+        "question": "A. Scarcely had she / B. finished the exam / C. than the bell / D. began to ring. / E. No error",
+        "options": {
+          "A": "Scarcely had she",
+          "B": "finished the exam",
+          "C": "than the bell",
+          "D": "began to ring.",
+          "E": "No error"
+        },
+        "correct": "C",
+        "explanation": "The coordinating conjunction pair used with 'Scarcely' or 'Hardly' is 'when', not 'than'. The correct phrase is 'when the bell'. The error lies in part C."
+      },
+      {
+        "q": 14,
+        "topic": "Vocabulary in context",
+        "question": "A. It is high time / B. that we leave / C. for the airport to / D. catch our flight. / E. No error",
+        "options": {
+          "A": "It is high time",
+          "B": "that we leave",
+          "C": "for the airport to",
+          "D": "catch our flight.",
+          "E": "No error"
+        },
+        "correct": "B",
+        "explanation": "The phrase 'It is high time' is followed by a clause in the simple past tense when expressing that an action should have been done already. 'leave' should be replaced by 'left'. The error is in part B."
+      },
+      {
+        "q": 15,
+        "topic": "Error detection",
+        "question": "Read the following three statements. Which of the statements is/are grammatically CORRECT?\nI. Not only did the CEO announce a generous bonus, but she also approved the new flexible working hours policy.\nII. The number of cybersecurity breaches have increased significantly over the past two financial quarters.\nIII. Had the shipping company anticipated the severe hurricane, they would have reroute the cargo vessels immediately.",
+        "options": {
+          "A": "Only I",
+          "B": "Only II and III",
+          "C": "Only I and II",
+          "D": "Only III",
+          "E": "All I, II, and III"
+        },
+        "correct": "A",
+        "explanation": "Statement I is correct, properly using inversion ('Not only did...') with the correct correlative conjunction ('but...also'). Statement II is incorrect; 'The number of' must be followed by a singular verb ('has increased', not 'have increased'). Statement III is incorrect; the third conditional requires 'would have rerouted', not 'reroute'. Therefore, only Statement I is grammatically sound."
+      },
+      {
+        "q": 16,
+        "topic": "Fill in the blanks",
+        "question": "Choose the most appropriate word for blank (14).",
+        "options": {
+          "A": "ignored",
+          "B": "halted",
+          "C": "dismissed",
+          "D": "had",
+          "E": "withdrawn"
+        },
+        "correct": "D",
+        "explanation": "The sentence uses the present perfect tense 'has + past participle.' 'has had a profound impact' correctly expresses the ongoing effect of AI.",
+        "passage": "The rapid advancement of Artificial Intelligence has (14) a profound impact on various sectors. While many fear that automation will lead to widespread job (15), optimists argue that AI will create new opportunities. The key lies in upskilling the workforce to adapt to this (16) landscape. Educational institutions must revamp their curriculums to (17) that students are equipped with relevant digital skills. Furthermore, organizations should invest in continuous learning programs. Only through a collaborative effort can society (18) the true potential of AI while mitigating its (19) consequences."
+      },
+      {
+        "q": 17,
+        "topic": "Fill in the blanks",
+        "question": "Choose the most appropriate word for blank (15).",
+        "options": {
+          "A": "losses",
+          "B": "satisfaction",
+          "C": "creation",
+          "D": "security",
+          "E": "promotions"
+        },
+        "correct": "A",
+        "explanation": "The sentence contrasts optimism about new opportunities with a negative fear regarding automation; the common fear is job 'losses'.",
+        "passage": "The rapid advancement of Artificial Intelligence has (14) a profound impact on various sectors. While many fear that automation will lead to widespread job (15), optimists argue that AI will create new opportunities. The key lies in upskilling the workforce to adapt to this (16) landscape. Educational institutions must revamp their curriculums to (17) that students are equipped with relevant digital skills. Furthermore, organizations should invest in continuous learning programs. Only through a collaborative effort can society (18) the true potential of AI while mitigating its (19) consequences."
+      },
+      {
+        "q": 18,
+        "topic": "Fill in the blanks",
+        "question": "Choose the most appropriate word for blank (16).",
+        "options": {
+          "A": "evolving",
+          "B": "stagnant",
+          "C": "historical",
+          "D": "rigid",
+          "E": "obsolete"
+        },
+        "correct": "A",
+        "explanation": "The passage talks about adapting, implying the landscape is actively changing. 'Evolving' captures this dynamic state.",
+        "passage": "The rapid advancement of Artificial Intelligence has (14) a profound impact on various sectors. While many fear that automation will lead to widespread job (15), optimists argue that AI will create new opportunities. The key lies in upskilling the workforce to adapt to this (16) landscape. Educational institutions must revamp their curriculums to (17) that students are equipped with relevant digital skills. Furthermore, organizations should invest in continuous learning programs. Only through a collaborative effort can society (18) the true potential of AI while mitigating its (19) consequences."
+      },
+      {
+        "q": 19,
+        "topic": "Fill in the blanks",
+        "question": "Choose the most appropriate word for blank (17).",
+        "options": {
+          "A": "prevent",
+          "B": "deny",
+          "C": "reject",
+          "D": "complicate",
+          "E": "ensure"
+        },
+        "correct": "E",
+        "explanation": "Educational institutions need to make certain that students have the right skills; 'ensure' means to make certain something occurs.",
+        "passage": "The rapid advancement of Artificial Intelligence has (14) a profound impact on various sectors. While many fear that automation will lead to widespread job (15), optimists argue that AI will create new opportunities. The key lies in upskilling the workforce to adapt to this (16) landscape. Educational institutions must revamp their curriculums to (17) that students are equipped with relevant digital skills. Furthermore, organizations should invest in continuous learning programs. Only through a collaborative effort can society (18) the true potential of AI while mitigating its (19) consequences."
+      },
+      {
+        "q": 20,
+        "topic": "Fill in the blanks",
+        "question": "Choose the most appropriate word for blank (18).",
+        "options": {
+          "A": "destroy",
+          "B": "overlook",
+          "C": "harness",
+          "D": "conceal",
+          "E": "abandon"
+        },
+        "correct": "C",
+        "explanation": "Society wants to make use of AI's potential. 'Harness' means to control and make use of an abstract power, the most appropriate choice.",
+        "passage": "The rapid advancement of Artificial Intelligence has (14) a profound impact on various sectors. While many fear that automation will lead to widespread job (15), optimists argue that AI will create new opportunities. The key lies in upskilling the workforce to adapt to this (16) landscape. Educational institutions must revamp their curriculums to (17) that students are equipped with relevant digital skills. Furthermore, organizations should invest in continuous learning programs. Only through a collaborative effort can society (18) the true potential of AI while mitigating its (19) consequences."
+      },
+      {
+        "q": 21,
+        "topic": "Fill in the blanks",
+        "question": "Choose the most appropriate word for blank (19).",
+        "options": {
+          "A": "positive",
+          "B": "adverse",
+          "C": "beneficial",
+          "D": "favorable",
+          "E": "intended"
+        },
+        "correct": "B",
+        "explanation": "'Mitigating' means making something bad less severe, so the blank requires a negative word. 'Adverse' means harmful or unfavorable.",
+        "passage": "The rapid advancement of Artificial Intelligence has (14) a profound impact on various sectors. While many fear that automation will lead to widespread job (15), optimists argue that AI will create new opportunities. The key lies in upskilling the workforce to adapt to this (16) landscape. Educational institutions must revamp their curriculums to (17) that students are equipped with relevant digital skills. Furthermore, organizations should invest in continuous learning programs. Only through a collaborative effort can society (18) the true potential of AI while mitigating its (19) consequences."
+      },
+      {
+        "q": 22,
+        "topic": "Para jumbles",
+        "question": "Which of the following should be the FIRST sentence after rearrangement?",
+        "options": {
+          "A": "P",
+          "B": "Q",
+          "C": "R",
+          "D": "S",
+          "E": "T"
+        },
+        "correct": "D",
+        "explanation": "Sentence S introduces the overarching theme of the paragraph (transitioning to green energy), making it the perfect opening sentence."
+      },
+      {
+        "q": 23,
+        "topic": "Para jumbles",
+        "question": "Which of the following should be the SECOND sentence after rearrangement?",
+        "options": {
+          "A": "S",
+          "B": "Q",
+          "C": "P",
+          "D": "R",
+          "E": "T"
+        },
+        "correct": "D",
+        "explanation": "Sentence R naturally follows S by specifying a popular form of the green energy mentioned in the first sentence."
+      },
+      {
+        "q": 24,
+        "topic": "Para jumbles",
+        "question": "Which of the following should be the THIRD sentence after rearrangement?",
+        "options": {
+          "A": "Q",
+          "B": "P",
+          "C": "S",
+          "D": "T",
+          "E": "R"
+        },
+        "correct": "B",
+        "explanation": "Sentence P introduces the problem (initial cost) associated with the solar energy trend mentioned in R. The transition word 'However' signals this contrast."
+      },
+      {
+        "q": 25,
+        "topic": "Para jumbles",
+        "question": "Which of the following should be the FOURTH sentence after rearrangement?",
+        "options": {
+          "A": "Q",
+          "B": "R",
+          "C": "P",
+          "D": "T",
+          "E": "S"
+        },
+        "correct": "A",
+        "explanation": "Sentence Q presents the government's intervention (subsidies) as a direct response to the cost barrier introduced in P."
+      },
+      {
+        "q": 26,
+        "topic": "Para jumbles",
+        "question": "Which of the following should be the FIFTH (LAST) sentence after rearrangement?",
+        "options": {
+          "A": "R",
+          "B": "P",
+          "C": "T",
+          "D": "S",
+          "E": "Q"
+        },
+        "correct": "C",
+        "explanation": "Sentence T concludes the paragraph by explaining the intended outcome of the government subsidies mentioned in Q."
+      },
+      {
+        "q": 27,
+        "topic": "Fill in the blanks",
+        "question": "The CEO's ______ speech failed to ______ the anxieties of the employees facing layoffs.",
+        "options": {
+          "A": "passionate, aggravate",
+          "B": "eloquent, increase",
+          "C": "confusing, provoke",
+          "D": "brief, escalate",
+          "E": "vague, pacify"
+        },
+        "correct": "E",
+        "explanation": "The sentence implies the speech did not successfully calm the employees. A 'vague' speech would naturally fail to 'pacify' the anxieties of worried employees."
+      },
+      {
+        "q": 28,
+        "topic": "Fill in the blanks",
+        "question": "Despite the ______ evidence presented by the prosecution, the jury remained ______ about the defendant's guilt.",
+        "options": {
+          "A": "flimsy, convinced",
+          "B": "strong, certain",
+          "C": "compelling, skeptical",
+          "D": "weak, doubtful",
+          "E": "overwhelming, confident"
+        },
+        "correct": "C",
+        "explanation": "'Despite' indicates a contrast. 'Compelling' evidence would normally make a jury certain, so contrasting this with 'skeptical' fulfills the logical structure of the sentence."
+      },
+      {
+        "q": 29,
+        "topic": "Fill in the blanks",
+        "question": "The new software was designed to ______ the workflow, but it ultimately caused more ______.",
+        "options": {
+          "A": "complicate, efficiency",
+          "B": "hinder, progress",
+          "C": "expedite, harmony",
+          "D": "streamline, confusion",
+          "E": "disrupt, order"
+        },
+        "correct": "D",
+        "explanation": "The conjunction 'but' shows opposite intended and actual outcomes. Software is usually designed to 'streamline' workflow; the opposite outcome is 'confusion'."
+      },
+      {
+        "q": 30,
+        "topic": "Error detection",
+        "question": "Choose the sentence where the word \"APPRAISE\" is used correctly.",
+        "options": {
+          "A": "The manager will appraise the employee's performance at the end of the year.",
+          "B": "Please appraise him of the new developments in the project.",
+          "C": "The detective tried to appraise the suspect about his rights.",
+          "D": "She wrote a letter to appraise her mother of her safe arrival.",
+          "E": "The news anchor will appraise the audience regarding the weather."
+        },
+        "correct": "A",
+        "explanation": "'Appraise' means to assess the value or quality of something. Option A uses it correctly. Options B-E incorrectly use 'appraise' when the intended word is 'apprise' (to inform)."
+      }
+    ],
+    "Quantitative Aptitude": [
+      {
+        "q": 1,
+        "topic": "Time and work",
+        "question": "A can do a work in 12 days and B can do it in 15 days. They work together for 4 days and then A leaves. In how many days will B finish the remaining work?",
+        "options": {
+          "A": "5 days",
+          "B": "4 days",
+          "C": "8 days",
+          "D": "6 days",
+          "E": "7 days"
+        },
+        "correct": "D",
+        "explanation": "A's 1-day work = 1/12; B's 1-day work = 1/15. (A + B)'s 1-day work = 9/60 = 3/20. Work completed in 4 days = 12/20 = 3/5. Remaining work = 2/5. Time for B = (2/5) / (1/15) = 6 days."
+      },
+      {
+        "q": 2,
+        "topic": "Percentage",
+        "question": "The sum of Rs. 4000 is lent out in two parts, one at 8% SI and the other at 10% SI. If the annual interest is Rs. 352, find the sum lent at 8%.",
+        "options": {
+          "A": "Rs. 2000",
+          "B": "Rs. 2400",
+          "C": "Rs. 2200",
+          "D": "Rs. 1600",
+          "E": "Rs. 1800"
+        },
+        "correct": "B",
+        "explanation": "Let the sum at 8% be x. 8x/100 + (4000-x)*10/100 = 352. 8x + 40000 - 10x = 35200. -2x = -4800, x = 2400."
+      },
+      {
+        "q": 3,
+        "topic": "Profit and loss",
+        "question": "A trader marks his goods 40% above cost price and allows a discount of 25%. What is his profit percentage?",
+        "options": {
+          "A": "10%",
+          "B": "12%",
+          "C": "5%",
+          "D": "15%",
+          "E": "8%"
+        },
+        "correct": "C",
+        "explanation": "Let CP = 100. MP = 140. SP = 140 × 0.75 = 105. Profit = 105 - 100 = 5%."
+      },
+      {
+        "q": 4,
+        "topic": "Mixture and allegation",
+        "question": "A mixture of 40 liters of milk and water contains 10% water. How much water must be added to make 20% water in the new mixture?",
+        "options": {
+          "A": "4 liters",
+          "B": "5 liters",
+          "C": "6 liters",
+          "D": "8 liters",
+          "E": "10 liters"
+        },
+        "correct": "B",
+        "explanation": "Initial water = 4L; Milk = 36L. Let x liters of water be added. (4+x)/(40+x) = 1/5. 20+5x = 40+x. 4x = 20, x = 5L."
+      },
+      {
+        "q": 5,
+        "topic": "Time, speed and distance",
+        "question": "Two trains of lengths 150m and 200m are running in opposite directions at speeds of 60 km/hr and 48 km/hr respectively. In what time will they cross each other?",
+        "options": {
+          "A": "10 seconds",
+          "B": "15 seconds",
+          "C": "12.5 seconds",
+          "D": "11.66 seconds",
+          "E": "14 seconds"
+        },
+        "correct": "D",
+        "explanation": "Relative speed = 108 km/hr = 30 m/s. Total distance = 350m. Time = 350/30 = 11.66 seconds."
+      },
+      {
+        "q": 6,
+        "topic": "Simple and compound interest",
+        "question": "Find the compound interest on Rs. 8000 at 15% per annum for 2 years, compounded annually.",
+        "options": {
+          "A": "Rs. 2640",
+          "B": "Rs. 2500",
+          "C": "Rs. 2580",
+          "D": "Rs. 2400",
+          "E": "Rs. 2600"
+        },
+        "correct": "C",
+        "explanation": "CI = P[(1+R/100)^2 - 1] = 8000[(1.15)^2 - 1] = 8000 × 0.3225 = 2580."
+      },
+      {
+        "q": 7,
+        "topic": "Time, speed and distance",
+        "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6.5 hours. Find the speed of the boat in still water.",
+        "options": {
+          "A": "8 km/hr",
+          "B": "10 km/hr",
+          "C": "9 km/hr",
+          "D": "12 km/hr",
+          "E": "11 km/hr"
+        },
+        "correct": "B",
+        "explanation": "Let 1/U = x, 1/D = y. 24x+28y=6 and 30x+21y=6.5. Solving, x=1/6, y=1/14, so U=6, D=14. Boat speed = (14+6)/2 = 10 km/hr."
+      },
+      {
+        "q": 8,
+        "topic": "Ratio and proportion",
+        "question": "The ratio of present ages of A and B is 4:5. After 5 years, the ratio becomes 5:6. What is A's present age?",
+        "options": {
+          "A": "25 years",
+          "B": "20 years",
+          "C": "24 years",
+          "D": "16 years",
+          "E": "28 years"
+        },
+        "correct": "B",
+        "explanation": "Let ages be 4x, 5x. (4x+5)/(5x+5)=5/6. 24x+30=25x+25. x=5. A's age = 4×5 = 20 years."
+      },
+      {
+        "q": 9,
+        "topic": "Percentage",
+        "question": "In an election between two candidates, one got 55% of the total valid votes. 20% of the votes were invalid. If the total votes were 7500, what was the number of valid votes the other candidate got?",
+        "options": {
+          "A": "3100",
+          "B": "2700",
+          "C": "3000",
+          "D": "2900",
+          "E": "2800"
+        },
+        "correct": "B",
+        "explanation": "Valid votes = 80% of 7500 = 6000. Other candidate got 45% of 6000 = 2700."
+      },
+      {
+        "q": 10,
+        "topic": "Percentage",
+        "question": "A container contains 50 liters of milk. From this, 5 liters of milk is taken out and replaced with water. This process is repeated one more time. How much milk is left in the container?",
+        "options": {
+          "A": "40 liters",
+          "B": "41 liters",
+          "C": "40.5 liters",
+          "D": "39.5 liters",
+          "E": "None of these"
+        },
+        "correct": "C",
+        "explanation": "Final milk = 50 × (1 - 5/50)^2 = 50 × 0.81 = 40.5 liters."
+      },
+      {
+        "q": 11,
+        "topic": "Average",
+        "question": "The average of 5 consecutive odd numbers is 27. What is the product of the first and the last number?",
+        "options": {
+          "A": "705",
+          "B": "713",
+          "C": "715",
+          "D": "725",
+          "E": "720"
+        },
+        "correct": "B",
+        "explanation": "Numbers: 23,25,27,29,31. First × Last = 23 × 31 = 713."
+      },
+      {
+        "q": 12,
+        "topic": "Profit and loss",
+        "question": "P, Q and R start a business with investments of Rs. 12000, Rs. 15000 and Rs. 18000 respectively. After 6 months, P invests Rs. 3000 more and Q withdraws Rs. 3000. Find P's share in a total profit of Rs. 19500 after 1 year.",
+        "options": {
+          "A": "Rs. 6500",
+          "B": "Rs. 7000",
+          "C": "Rs. 5850",
+          "D": "Rs. 6000",
+          "E": "Rs. 6250"
+        },
+        "correct": "C",
+        "explanation": "Ratio P:Q:R = 162:162:216 = 3:3:4. Total = 10. P's share = (3/10) × 19500 = Rs. 5850."
+      },
+      {
+        "q": 13,
+        "topic": "Quadratic equations",
+        "question": "Find the roots of the quadratic equation: x² - 13x + 40 = 0",
+        "options": {
+          "A": "5, 8",
+          "B": "-4, -10",
+          "C": "-5, -8",
+          "D": "4, 10",
+          "E": "8, 10"
+        },
+        "correct": "A",
+        "explanation": "x² - 8x - 5x + 40 = 0 → (x-5)(x-8) = 0. Roots: x = 5, 8."
+      },
+      {
+        "q": 14,
+        "topic": "Area",
+        "question": "The perimeter of a rectangular field is 160 meters and the difference between its length and breadth is 20 meters. Find the area of the field.",
+        "options": {
+          "A": "1500 sq. m",
+          "B": "1200 sq. m",
+          "C": "1600 sq. m",
+          "D": "1800 sq. m",
+          "E": "1400 sq. m"
+        },
+        "correct": "A",
+        "explanation": "L+B=80, L-B=20. 2L=100, L=50, B=30. Area = 50×30 = 1500 sq. m."
+      },
+      {
+        "q": 15,
+        "topic": "Profit and loss",
+        "question": "A dishonest milkman sells milk at cost price but mixes water in it and earns 25% profit. Find the ratio of water and milk in the mixture.",
+        "options": {
+          "A": "1:4",
+          "B": "1:5",
+          "C": "1:3",
+          "D": "4:1",
+          "E": "3:4"
+        },
+        "correct": "A",
+        "explanation": "A 25% profit means for every 100 parts of milk, 25 parts of water added. Ratio water:milk = 25:100 = 1:4."
+      },
+      {
+        "q": 16,
+        "topic": "Time, speed and distance",
+        "question": "A 120m long train crosses a man standing on the platform in 12 seconds. Find the speed of the train in km/hr.",
+        "options": {
+          "A": "36 km/hr",
+          "B": "45 km/hr",
+          "C": "54 km/hr",
+          "D": "30 km/hr",
+          "E": "40 km/hr"
+        },
+        "correct": "A",
+        "explanation": "Speed = 120/12 = 10 m/s = 10×18/5 = 36 km/hr."
+      },
+      {
+        "q": 17,
+        "topic": "Percentage",
+        "question": "If A's salary is 20% less than B's salary, by how much percent is B's salary more than A's?",
+        "options": {
+          "A": "33.33%",
+          "B": "30%",
+          "C": "25%",
+          "D": "20%",
+          "E": "40%"
+        },
+        "correct": "C",
+        "explanation": "Let B=100, A=80. Difference=20. Percentage more = (20/80)×100 = 25%."
+      },
+      {
+        "q": 18,
+        "topic": "Percentage",
+        "question": "What value should come in place of question mark (?): 45% of 600 + ?% of 400 = 390",
+        "options": {
+          "A": "25",
+          "B": "40",
+          "C": "30",
+          "D": "35",
+          "E": "50"
+        },
+        "correct": "C",
+        "explanation": "0.45×600=270. 270+4x=390. 4x=120. x=30."
+      },
+      {
+        "q": 19,
+        "topic": "Average",
+        "question": "The average weight of a class of 30 students is 40 kg. If the teacher's weight is included, the average increases by 1 kg. Find the weight of the teacher.",
+        "options": {
+          "A": "71 kg",
+          "B": "72 kg",
+          "C": "69 kg",
+          "D": "70 kg",
+          "E": "75 kg"
+        },
+        "correct": "A",
+        "explanation": "Total weight of 30 students = 1200 kg. Total for 31 people = 31×41=1271 kg. Teacher's weight = 1271-1200 = 71 kg."
+      },
+      {
+        "q": 20,
+        "topic": "Time and work",
+        "question": "A pipe can fill a tank in 15 hours and another pipe can empty it in 20 hours. If both pipes are opened together, in how many hours will the tank be full?",
+        "options": {
+          "A": "40 hours",
+          "B": "75 hours",
+          "C": "50 hours",
+          "D": "60 hours",
+          "E": "45 hours"
+        },
+        "correct": "D",
+        "explanation": "Net part filled per hour = 1/15 - 1/20 = 1/60. Tank full in 60 hours."
+      },
+      {
+        "q": 21,
+        "topic": "Profit and loss",
+        "question": "Cost price of 15 articles is equal to the selling price of 12 articles. Find the profit percentage.",
+        "options": {
+          "A": "30%",
+          "B": "15%",
+          "C": "20%",
+          "D": "25%",
+          "E": "33.33%"
+        },
+        "correct": "D",
+        "explanation": "15 CP = 12 SP. SP/CP = 5/4. Profit% = (1/4)×100 = 25%."
+      },
+      {
+        "q": 22,
+        "topic": "Number series",
+        "question": "Find the odd one out in the series: 3, 5, 11, 29, 83, 247",
+        "options": {
+          "A": "83",
+          "B": "29",
+          "C": "247",
+          "D": "11",
+          "E": "5"
+        },
+        "correct": "C",
+        "explanation": "Differences: 2,6,18,54 (×3 pattern). Next difference should be 162, giving 83+162=245. So 247 is the odd one out."
+      },
+      {
+        "q": 23,
+        "topic": "Simple and compound interest",
+        "question": "A sum of money doubles itself in 8 years at simple interest. In how many years will it become 4 times itself at the same rate?",
+        "options": {
+          "A": "16 years",
+          "B": "24 years",
+          "C": "32 years",
+          "D": "20 years",
+          "E": "28 years"
+        },
+        "correct": "B",
+        "explanation": "Rate = 12.5%. To become 4P, interest required = 3P. Time = 300/12.5 = 24 years."
+      },
+      {
+        "q": 24,
+        "topic": "Percentage",
+        "question": "If x² - 7x + 12 = 0 and y² - 9y + 20 = 0, find the relation between x and y.",
+        "options": {
+          "A": "x ≥ y",
+          "B": "x > y",
+          "C": "x ≤ y",
+          "D": "x < y",
+          "E": "x = y or no relation"
+        },
+        "correct": "C",
+        "explanation": "x = 3,4. y = 4,5. Comparing all values: x ≤ y in every case."
+      },
+      {
+        "q": 25,
+        "topic": "Time, speed and distance",
+        "question": "A train passes a telegraph post in 8 seconds and a 264m long bridge in 20 seconds. What is the length of the train?",
+        "options": {
+          "A": "180 m",
+          "B": "200 m",
+          "C": "150 m",
+          "D": "176 m",
+          "E": "192 m"
+        },
+        "correct": "D",
+        "explanation": "L/8 = (L+264)/20. 20L = 8L+2112. 12L=2112, L=176m."
+      },
+      {
+        "q": 26,
+        "topic": "Percentage",
+        "question": "What is the probability of drawing a king or a heart from a well-shuffled deck of 52 cards?",
+        "options": {
+          "A": "3/13",
+          "B": "4/13",
+          "C": "1/4",
+          "D": "17/52",
+          "E": "5/13"
+        },
+        "correct": "B",
+        "explanation": "P(King or Heart) = (4+13-1)/52 = 16/52 = 4/13."
+      },
+      {
+        "q": 27,
+        "topic": "Profit and loss",
+        "question": "By selling 45 lemons for Rs. 40, a man loses 20%. How many should he sell for Rs. 24 to gain 20% in the transaction?",
+        "options": {
+          "A": "18",
+          "B": "16",
+          "C": "20",
+          "D": "22",
+          "E": "15"
+        },
+        "correct": "A",
+        "explanation": "CP of 45 lemons = 40/0.8 = Rs. 50. Target SP for 20% profit = 60. For Rs. 24, sell (45/60)×24 = 18 lemons."
+      },
+      {
+        "q": 28,
+        "topic": "Time and work",
+        "question": "If 15 men can reap a field in 28 days, in how many days will 10 men reap it?",
+        "options": {
+          "A": "45 days",
+          "B": "35 days",
+          "C": "40 days",
+          "D": "42 days",
+          "E": "50 days"
+        },
+        "correct": "D",
+        "explanation": "M1×D1 = M2×D2. 15×28=10×D2. D2=42 days."
+      },
+      {
+        "q": 29,
+        "topic": "Ratio and proportion",
+        "question": "Two numbers are respectively 20% and 50% more than a third number. The ratio of the two numbers is:",
+        "options": {
+          "A": "3:4",
+          "B": "5:6",
+          "C": "2:3",
+          "D": "4:5",
+          "E": "1:2"
+        },
+        "correct": "D",
+        "explanation": "Let third number=100. First=120, Second=150. Ratio = 120:150 = 4:5."
+      },
+      {
+        "q": 30,
+        "topic": "Number series",
+        "question": "Find the missing number in the series: 2, 6, 12, 20, 30, ?",
+        "options": {
+          "A": "44",
+          "B": "38",
+          "C": "40",
+          "D": "42",
+          "E": "46"
+        },
+        "correct": "D",
+        "explanation": "Series follows n²+n. Next term = 6²+6 = 42."
+      },
+      {
+        "q": 31,
+        "topic": "Profit and loss",
+        "question": "The marked price of an article is Rs. 1500. After allowing two successive discounts of 20% and 10%, what will be the selling price?",
+        "options": {
+          "A": "Rs. 1080",
+          "B": "Rs. 1100",
+          "C": "Rs. 1050",
+          "D": "Rs. 1150",
+          "E": "Rs. 1020"
+        },
+        "correct": "A",
+        "explanation": "SP = 1500 × 0.80 × 0.90 = Rs. 1080."
+      },
+      {
+        "q": 32,
+        "topic": "Area",
+        "question": "A cylindrical tank has a radius of 7 cm and a height of 10 cm. Find its curved surface area. (Take π = 22/7)",
+        "options": {
+          "A": "220 sq cm",
+          "B": "154 sq cm",
+          "C": "440 sq cm",
+          "D": "660 sq cm",
+          "E": "308 sq cm"
+        },
+        "correct": "C",
+        "explanation": "CSA = 2πrh = 2 × (22/7) × 7 × 10 = 440 sq cm."
+      },
+      {
+        "q": 33,
+        "topic": "Mixture and allegation",
+        "question": "In a mixture of 60 liters, the ratio of milk and water is 2:1. If this ratio is to be 1:2, then the quantity of water to be further added is:",
+        "options": {
+          "A": "60 liters",
+          "B": "50 liters",
+          "C": "70 liters",
+          "D": "40 liters",
+          "E": "80 liters"
+        },
+        "correct": "A",
+        "explanation": "Milk=40L, water=20L. 40/(20+x)=1/2. 80=20+x, x=60 liters."
+      },
+      {
+        "q": 34,
+        "topic": "Percentage",
+        "question": "Ravi's income is 25% more than that of Surya. What percent is Surya's income less than Ravi's?",
+        "options": {
+          "A": "16.66%",
+          "B": "20%",
+          "C": "15%",
+          "D": "25%",
+          "E": "30%"
+        },
+        "correct": "B",
+        "explanation": "Surya=100, Ravi=125. Difference=25. Percentage less = (25/125)×100 = 20%."
+      },
+      {
+        "q": 35,
+        "topic": "Time, speed and distance",
+        "question": "A man rows 15 km upstream and 21 km downstream taking 3 hours each time. The velocity of the current is:",
+        "options": {
+          "A": "1 km/hr",
+          "B": "2 km/hr",
+          "C": "3 km/hr",
+          "D": "1.5 km/hr",
+          "E": "2.5 km/hr"
+        },
+        "correct": "A",
+        "explanation": "Upstream speed=5 km/hr, Downstream=7 km/hr. Current velocity = (7-5)/2 = 1 km/hr."
+      }
+    ],
+    "Reasoning Ability": [
+      {
+        "q": 1,
+        "topic": "Circular seating",
+        "question": "Who sits to the immediate right of A?",
+        "options": {
+          "A": "H",
+          "B": "F",
+          "C": "B",
+          "D": "C",
+          "E": "G"
+        },
+        "correct": "C",
+        "explanation": "E is at the extreme right end (position 8), so A must be at position 4 (fourth to the left of E). With two persons between A and D, D is at position 1. Since F cannot neighbor A, F sits at position 2, putting B at position 5 (third to the right of F). C is immediately left of G, so they occupy positions 6 and 7. H fills position 3. Final order: D, F, H, A, B, C, G, E. The person to the immediate right of A is B.",
+        "passage": "Eight persons A, B, C, D, E, F, G, and H are sitting in a straight line facing North. A sits fourth to the left of E. E sits at one of the extreme ends of the line. Only two persons sit between A and D. B sits third to the right of F. F is not an immediate neighbor of A. C sits to the immediate left of G."
+      },
+      {
+        "q": 2,
+        "topic": "Linear seating",
+        "question": "How many persons sit between F and C?",
+        "options": {
+          "A": "None",
+          "B": "One",
+          "C": "Two",
+          "D": "Four",
+          "E": "Three"
+        },
+        "correct": "E",
+        "explanation": "In the sequence (D, F, H, A, B, C, G, E), F is at position 2 and C is at position 6. H, A, and B lie between them — three persons.",
+        "passage": "Eight persons A, B, C, D, E, F, G, and H are sitting in a straight line facing North. A sits fourth to the left of E. E sits at one of the extreme ends of the line. Only two persons sit between A and D. B sits third to the right of F. F is not an immediate neighbor of A. C sits to the immediate left of G."
+      },
+      {
+        "q": 3,
+        "topic": "Circular seating",
+        "question": "Who among the following sits at the extreme left end?",
+        "options": {
+          "A": "D",
+          "B": "F",
+          "C": "E",
+          "D": "H",
+          "E": "A"
+        },
+        "correct": "A",
+        "explanation": "In the arrangement (D, F, H, A, B, C, G, E), D occupies the first (extreme left) position.",
+        "passage": "Eight persons A, B, C, D, E, F, G, and H are sitting in a straight line facing North. A sits fourth to the left of E. E sits at one of the extreme ends of the line. Only two persons sit between A and D. B sits third to the right of F. F is not an immediate neighbor of A. C sits to the immediate left of G."
+      },
+      {
+        "q": 4,
+        "topic": "Circular seating",
+        "question": "What is the position of H with respect to B?",
+        "options": {
+          "A": "Immediate left",
+          "B": "Second to the left",
+          "C": "Third to the right",
+          "D": "Second to the right",
+          "E": "Immediate right"
+        },
+        "correct": "B",
+        "explanation": "H is at position 3, B is at position 5. H is second to the left of B.",
+        "passage": "Eight persons A, B, C, D, E, F, G, and H are sitting in a straight line facing North. A sits fourth to the left of E. E sits at one of the extreme ends of the line. Only two persons sit between A and D. B sits third to the right of F. F is not an immediate neighbor of A. C sits to the immediate left of G."
+      },
+      {
+        "q": 5,
+        "topic": "Circular seating",
+        "question": "Which of the following is true regarding G?",
+        "options": {
+          "A": "G sits at an extreme end",
+          "B": "G is an immediate neighbor of A",
+          "C": "Two persons sit between G and F",
+          "D": "G sits to the immediate left of E",
+          "E": "G sits immediate right of B"
+        },
+        "correct": "D",
+        "explanation": "G is at position 7 and E at position 8, so G sits exactly to the immediate left of E.",
+        "passage": "Eight persons A, B, C, D, E, F, G, and H are sitting in a straight line facing North. A sits fourth to the left of E. E sits at one of the extreme ends of the line. Only two persons sit between A and D. B sits third to the right of F. F is not an immediate neighbor of A. C sits to the immediate left of G."
+      },
+      {
+        "q": 6,
+        "topic": "Syllogism",
+        "question": "Statements: Only a few Rivers are Lakes. Some Lakes are Oceans. All Oceans are Seas.\nConclusions: I. Some Rivers being Seas is a possibility. II. All Lakes can never be Rivers.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Either conclusion I or II follows",
+          "D": "Neither conclusion I nor II follows",
+          "E": "Both conclusions I and II follow"
+        },
+        "correct": "A",
+        "explanation": "'Only a few Rivers are Lakes' means some Rivers are Lakes and some are definitively not. No negative relation exists between Rivers and Seas, so conclusion I is a valid possibility. For conclusion II, nothing prevents the entire Lake circle from fitting inside the River circle, so 'can never be' is false. Only conclusion I holds."
+      },
+      {
+        "q": 7,
+        "topic": "Syllogism",
+        "question": "Statements: All Cars are Buses. No Bus is a Truck. Some Trucks are Trains.\nConclusions: I. No Car is a Truck. II. Some Trains are not Buses.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Both conclusions I and II follow",
+          "D": "Neither conclusion I nor II follows",
+          "E": "Either conclusion I or II follows"
+        },
+        "correct": "C",
+        "explanation": "All Cars are within Buses; since no Bus is a Truck, a Car can never be a Truck (conclusion I valid). The portion of Trains overlapping Trucks can never be Buses due to the negative relation between Trucks and Buses (conclusion II valid). Both follow."
+      },
+      {
+        "q": 8,
+        "topic": "Syllogism",
+        "question": "Statements: Some Apples are Bananas. No Banana is a Cherry. All Cherries are Dates.\nConclusions: I. Some Apples are not Cherries. II. Some Dates are not Bananas.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Either conclusion I or II follows",
+          "D": "Neither conclusion I nor II follows",
+          "E": "Both conclusions I and II follow"
+        },
+        "correct": "E",
+        "explanation": "The intersecting portion of Apples and Bananas can never touch Cherries (conclusion I accurate). Since all Cherries are inside Dates, the Dates that are Cherries cannot be Bananas (conclusion II accurate). Both follow."
+      },
+      {
+        "q": 9,
+        "topic": "Syllogism",
+        "question": "Statements: Only a few Phones are Tablets. Only a few Tablets are Laptops. No Laptop is a Desktop.\nConclusions: I. All Phones being Tablets is a possibility. II. Some Laptops are Phones.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Either conclusion I or II follows",
+          "D": "Neither conclusion I nor II follows",
+          "E": "Both conclusions I and II follow"
+        },
+        "correct": "D",
+        "explanation": "'Only a few Phones are Tablets' means all Phones can never be Tablets, invalidating conclusion I. Conclusion II proposes a definite positive link not supported by the statements. Neither conclusion is valid."
+      },
+      {
+        "q": 10,
+        "topic": "Syllogism",
+        "question": "Statements: All Cats are Dogs. Some Dogs are Elephants. No Elephant is a Fox.\nConclusions: I. Some Cats are Elephants. II. Some Dogs are not Foxes.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Both conclusions I and II follow",
+          "C": "Only conclusion II follows",
+          "D": "Neither conclusion I nor II follows",
+          "E": "Either conclusion I or II follows"
+        },
+        "correct": "C",
+        "explanation": "No direct link exists between Cats and Elephants, invalidating conclusion I. The portion of Dogs overlapping Elephants cannot be Foxes (negative relation between Elephants and Foxes), so conclusion II is valid."
+      },
+      {
+        "q": 11,
+        "topic": "Syllogism",
+        "question": "Statement: P >= Q = R > S <= T < U.\nConclusions: I. P > S. II. Q < U.",
+        "options": {
+          "A": "Both conclusions I and II follow",
+          "B": "Only conclusion I follows",
+          "C": "Either conclusion I or II follows",
+          "D": "Neither conclusion I nor II follows",
+          "E": "Only conclusion II follows"
+        },
+        "correct": "B",
+        "explanation": "P >= Q = R > S simplifies directly to P > S (conclusion I valid). The path between Q and U includes opposing signs (> S <=), so no definite relationship can be established. Only conclusion I follows."
+      },
+      {
+        "q": 12,
+        "topic": "Syllogism",
+        "question": "Statement: A < B <= C = D >= E > F.\nConclusions: I. A < D. II. C > F.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Either conclusion I or II follows",
+          "D": "Both conclusions I and II follow",
+          "E": "Neither conclusion I nor II follows"
+        },
+        "correct": "D",
+        "explanation": "A < B <= C = D condenses to A < D (conclusion I). C = D >= E > F condenses to C > F (conclusion II). Both hold true."
+      },
+      {
+        "q": 13,
+        "topic": "Syllogism",
+        "question": "Statements: M = N >= O < P; O > Q = R.\nConclusions: I. M > R. II. P < Q.",
+        "options": {
+          "A": "Both conclusions I and II follow",
+          "B": "Only conclusion II follows",
+          "C": "Only conclusion I follows",
+          "D": "Neither conclusion I nor II follows",
+          "E": "Either conclusion I or II follows"
+        },
+        "correct": "C",
+        "explanation": "Merging gives M = N >= O > Q = R, so M > R is true (conclusion I). For conclusion II, merging gives P > O > Q, meaning P > Q, so the claim P < Q is false. Only conclusion I follows."
+      },
+      {
+        "q": 14,
+        "topic": "Syllogism",
+        "question": "Statement: X > Y >= Z = W <= V < U.\nConclusions: I. X > W. II. Z <= U.",
+        "options": {
+          "A": "Both conclusions I and II follow",
+          "B": "Only conclusion II follows",
+          "C": "Only conclusion I follows",
+          "D": "Neither conclusion I nor II follows",
+          "E": "Either conclusion I or II follows"
+        },
+        "correct": "A",
+        "explanation": "X > Y >= Z = W means X > W (conclusion I true). Z = W <= V < U establishes Z < U, which automatically satisfies Z <= U (conclusion II true). Both conclusions are valid."
+      },
+      {
+        "q": 15,
+        "topic": "Syllogism",
+        "question": "Statement: G <= H = I < J >= K = L.\nConclusions: I. G < J. II. I >= L.",
+        "options": {
+          "A": "Both conclusions I and II follow",
+          "B": "Only conclusion II follows",
+          "C": "Either conclusion I or II follows",
+          "D": "Neither conclusion I nor II follows",
+          "E": "Only conclusion I follows"
+        },
+        "correct": "E",
+        "explanation": "G <= H = I < J simplifies directly to G < J. The route from I to L involves opposing signs (< J >=), preventing any definite relation. Only conclusion I is valid."
+      },
+      {
+        "q": 16,
+        "topic": "Coding-decoding",
+        "question": "What is the code for 'bank' in the given code language?",
+        "options": {
+          "A": "mx",
+          "B": "pt",
+          "C": "zo",
+          "D": "nj",
+          "E": "kl"
+        },
+        "correct": "E",
+        "explanation": "'bank' is present in the first and third statements. 'kl' is the sole code shared between these two lines, assigning it to 'bank'.",
+        "passage": "In a certain code language, 'bank exams are tough' is written as 'mx pt kl zo', 'tough exams prepare well' is written as 'pt zo nj df', 'prepare for bank jobs' is written as 'nj kl rs tv', and 'well paid jobs are' is written as 'df rs mx yq'."
+      },
+      {
+        "q": 17,
+        "topic": "Coding-decoding",
+        "question": "Which of the following words is coded as 'yq'?",
+        "options": {
+          "A": "paid",
+          "B": "well",
+          "C": "jobs",
+          "D": "are",
+          "E": "for"
+        },
+        "correct": "A",
+        "explanation": "'yq' is exclusive to the fourth statement. Within it, 'well' is 'df', 'jobs' is 'rs', and 'are' is 'mx'. The remaining word 'paid' matches 'yq'.",
+        "passage": "In a certain code language, 'bank exams are tough' is written as 'mx pt kl zo', 'tough exams prepare well' is written as 'pt zo nj df', 'prepare for bank jobs' is written as 'nj kl rs tv', and 'well paid jobs are' is written as 'df rs mx yq'."
+      },
+      {
+        "q": 18,
+        "topic": "Coding-decoding",
+        "question": "What is the code for 'prepare well' in the given code language?",
+        "options": {
+          "A": "nj mx",
+          "B": "nj df",
+          "C": "kl df",
+          "D": "rs nj",
+          "E": "pt zo"
+        },
+        "correct": "B",
+        "explanation": "'prepare' appears in the second and third statements, linking to 'nj'. 'well' appears in the second and fourth statements, linking to 'df'. Combined: 'nj df'.",
+        "passage": "In a certain code language, 'bank exams are tough' is written as 'mx pt kl zo', 'tough exams prepare well' is written as 'pt zo nj df', 'prepare for bank jobs' is written as 'nj kl rs tv', and 'well paid jobs are' is written as 'df rs mx yq'."
+      },
+      {
+        "q": 19,
+        "topic": "Coding-decoding",
+        "question": "What could be the possible code for 'exams are paid'?",
+        "options": {
+          "A": "df mx yq",
+          "B": "zo kl pt",
+          "C": "pt df yq",
+          "D": "zo mx yq",
+          "E": "mx kl rs"
+        },
+        "correct": "D",
+        "explanation": "'exams' shares codes 'pt' or 'zo' with 'tough'. 'are' links to 'mx' and 'paid' links to 'yq'. A valid combination must include 'mx', 'yq', and one of the two codes for exams — Option D fits.",
+        "passage": "In a certain code language, 'bank exams are tough' is written as 'mx pt kl zo', 'tough exams prepare well' is written as 'pt zo nj df', 'prepare for bank jobs' is written as 'nj kl rs tv', and 'well paid jobs are' is written as 'df rs mx yq'."
+      },
+      {
+        "q": 20,
+        "topic": "Coding-decoding",
+        "question": "What is the code for 'jobs' in the given code language?",
+        "options": {
+          "A": "tv",
+          "B": "kl",
+          "C": "rs",
+          "D": "nj",
+          "E": "yq"
+        },
+        "correct": "C",
+        "explanation": "'jobs' is in the third and fourth statements. The only overlapping code is 'rs'.",
+        "passage": "In a certain code language, 'bank exams are tough' is written as 'mx pt kl zo', 'tough exams prepare well' is written as 'pt zo nj df', 'prepare for bank jobs' is written as 'nj kl rs tv', and 'well paid jobs are' is written as 'df rs mx yq'."
+      },
+      {
+        "q": 21,
+        "topic": "Blood relations",
+        "question": "How is S related to R?",
+        "options": {
+          "A": "Aunt",
+          "B": "Sister",
+          "C": "Grandmother",
+          "D": "Mother",
+          "E": "Wife"
+        },
+        "correct": "D",
+        "explanation": "P is the father and is married to S, making S the mother of P's children, which includes R.",
+        "passage": "A family consists of six members P, Q, R, S, T, and U. There are two married couples. P is the father of R and T, and P is married to S. U is the paternal grandfather of R. S is the mother-in-law of Q. R is the only son of P, and T is an unmarried female."
+      },
+      {
+        "q": 22,
+        "topic": "Blood relations",
+        "question": "Who among the following is the wife of R?",
+        "options": {
+          "A": "S",
+          "B": "Q",
+          "C": "T",
+          "D": "P",
+          "E": "Cannot be determined"
+        },
+        "correct": "B",
+        "explanation": "S is the mother-in-law of Q, meaning Q is married to one of S's children. Since T is unmarried, Q must be married to the only son, R. Q is the wife of R.",
+        "passage": "A family consists of six members P, Q, R, S, T, and U. There are two married couples. P is the father of R and T, and P is married to S. U is the paternal grandfather of R. S is the mother-in-law of Q. R is the only son of P, and T is an unmarried female."
+      },
+      {
+        "q": 23,
+        "topic": "Blood relations",
+        "question": "How many male members are there in the family?",
+        "options": {
+          "A": "Two",
+          "B": "Three",
+          "C": "Cannot be determined",
+          "D": "Four",
+          "E": "Five"
+        },
+        "correct": "B",
+        "explanation": "U (grandfather), P (father), and R (son) are male; S (mother), Q (wife), and T (daughter) are female. Three male members.",
+        "passage": "A family consists of six members P, Q, R, S, T, and U. There are two married couples. P is the father of R and T, and P is married to S. U is the paternal grandfather of R. S is the mother-in-law of Q. R is the only son of P, and T is an unmarried female."
+      },
+      {
+        "q": 24,
+        "topic": "Direction sense",
+        "question": "What is the direction of Point A with respect to Point E?",
+        "options": {
+          "A": "North",
+          "B": "East",
+          "C": "West",
+          "D": "North-West",
+          "E": "South"
+        },
+        "correct": "E",
+        "explanation": "With B at (0,0): A=(0,10), C=(15,0), D=(15,20), E=(0,20). Since A=(0,10) and E=(0,20), A is exactly South of E.",
+        "passage": "Point A is 10m North of Point B. Point C is 15m East of Point B. Point D is 20m North of Point C. Point E is 15m West of Point D."
+      },
+      {
+        "q": 25,
+        "topic": "Direction sense",
+        "question": "What is the shortest distance between Point A and Point C?",
+        "options": {
+          "A": "5√13 m",
+          "B": "10 m",
+          "C": "15 m",
+          "D": "25 m",
+          "E": "20 m"
+        },
+        "correct": "A",
+        "explanation": "A, B, and C form a right triangle. Distance² = 10² + 15² = 325. √325 = 5√13 m.",
+        "passage": "Point A is 10m North of Point B. Point C is 15m East of Point B. Point D is 20m North of Point C. Point E is 15m West of Point D."
+      },
+      {
+        "q": 26,
+        "topic": "Direction sense",
+        "question": "Point E is in which direction with respect to Point B?",
+        "options": {
+          "A": "South",
+          "B": "North-East",
+          "C": "North",
+          "D": "North-West",
+          "E": "South-West"
+        },
+        "correct": "C",
+        "explanation": "With B at (0,0) and E at (0,20), E lies directly on the positive Y-axis relative to B — North.",
+        "passage": "Point A is 10m North of Point B. Point C is 15m East of Point B. Point D is 20m North of Point C. Point E is 15m West of Point D."
+      },
+      {
+        "q": 27,
+        "topic": "Alphanumeric series",
+        "question": "Consider the word series: CAT DOG PEN MUG FLY. If all the words are arranged in alphabetical order from left to right, which word will be second from the right?",
+        "options": {
+          "A": "CAT",
+          "B": "DOG",
+          "C": "PEN",
+          "D": "FLY",
+          "E": "MUG"
+        },
+        "correct": "E",
+        "explanation": "Sorted: CAT, DOG, FLY, MUG, PEN. Second from the right is MUG."
+      },
+      {
+        "q": 28,
+        "topic": "Alphanumeric series",
+        "question": "Consider the word series: CAT DOG PEN MUG FLY. If the first and last letters of each word are interchanged, how many meaningful English words will be formed?",
+        "options": {
+          "A": "None",
+          "B": "Three",
+          "C": "One",
+          "D": "Two",
+          "E": "More than three"
+        },
+        "correct": "D",
+        "explanation": "Swapping gives TAC, GOD, NEP, GUM, YLF. 'GOD' and 'GUM' are valid English words — exactly two."
+      },
+      {
+        "q": 29,
+        "topic": "Direction sense",
+        "question": "Consider the word series: CAT DOG PEN MUG FLY. If each consonant is changed to the previous letter and each vowel is changed to the next letter in the English alphabetical series, how many words will have at least one vowel?",
+        "options": {
+          "A": "Two",
+          "B": "None",
+          "C": "One",
+          "D": "Three",
+          "E": "Four"
+        },
+        "correct": "A",
+        "explanation": "The changes give BBS, CPF, OFM, LVF, EKX. OFM and EKX contain vowels — exactly two words."
+      },
+      {
+        "q": 30,
+        "topic": "Alphanumeric series",
+        "question": "Consider the number series: 428 537 816 294 753. If 1 is subtracted from the middle digit of each number and then the numbers are arranged in descending order, which will be the third number from the left?",
+        "options": {
+          "A": "428",
+          "B": "537",
+          "C": "816",
+          "D": "294",
+          "E": "753"
+        },
+        "correct": "B",
+        "explanation": "Subtracting 1 from middle digits: 418, 527, 806, 284, 743. Sorted descending: 806, 743, 527, 418, 284. Third is 527, tracing back to original 537."
+      },
+      {
+        "q": 31,
+        "topic": "Coding-decoding",
+        "question": "What is the code for 'apple' in a certain code language?\nStatement I: In that code language, 'eat fresh apple' is coded as 'ja ka la'.\nStatement II: In that code language, 'fresh red apple' is coded as 'ka ma la'.",
+        "options": {
+          "A": "Data in Statement I alone is sufficient",
+          "B": "Data in Statement II alone is sufficient",
+          "C": "Data in either Statement I alone or Statement II alone is sufficient",
+          "D": "Data in both Statements I and II together are not sufficient",
+          "E": "Data in both Statements I and II together are necessary"
+        },
+        "correct": "D",
+        "explanation": "Both statements share two words ('fresh' and 'apple') and two codes ('ka' and 'la'). It remains impossible to assign a specific code exclusively to 'apple' — data insufficient even combined."
+      },
+      {
+        "q": 32,
+        "topic": "Order and ranking",
+        "question": "Among five friends A, B, C, D, and E, who is the tallest?\nStatement I: D is taller than A and C, but shorter than B. B is not the tallest.\nStatement II: E is taller than B. A is taller than C.",
+        "options": {
+          "A": "Data in Statement I alone is sufficient",
+          "B": "Data in Statement II alone is sufficient",
+          "C": "Data in either Statement I alone or Statement II alone is sufficient",
+          "D": "Data in both Statements I and II together are not sufficient",
+          "E": "Data in both Statements I and II together are necessary"
+        },
+        "correct": "A",
+        "explanation": "Statement I gives B > D > A/C, and since B is not tallest, the unplaced friend E must be tallest (E > B > D > A/C). Statement I alone is sufficient."
+      },
+      {
+        "q": 33,
+        "topic": "Scheduling",
+        "question": "On which day of the week did Rahul visit Chennai?\nStatement I: Rahul's mother correctly remembers that he visited Chennai after Tuesday but before Saturday.\nStatement II: Rahul's friend correctly remembers that he visited Chennai after Thursday but before Sunday.",
+        "options": {
+          "A": "Data in Statement I alone is sufficient",
+          "B": "Data in Statement II alone is sufficient",
+          "C": "Data in either Statement I alone or Statement II alone is sufficient",
+          "D": "Data in both Statements I and II together are not sufficient",
+          "E": "Data in both Statements I and II together are necessary"
+        },
+        "correct": "E",
+        "explanation": "Statement I narrows to Wednesday, Thursday, or Friday. Statement II narrows to Friday or Saturday. The single overlapping day is Friday, requiring both statements together."
+      },
+      {
+        "q": 34,
+        "topic": "Circular seating",
+        "question": "What is the position of X from the left end of a row of 20 students facing North?\nStatement I: Y is 10th from the right end. There are four students sitting between X and Y.\nStatement II: Z is 10th from the left end. X is sitting 3rd to the right of Z.",
+        "options": {
+          "A": "Data in Statement I alone is sufficient",
+          "B": "Data in Statement II alone is sufficient",
+          "C": "Data in either Statement I alone or Statement II alone is sufficient",
+          "D": "Data in both Statements I and II together are not sufficient",
+          "E": "Data in both Statements I and II together are necessary"
+        },
+        "correct": "B",
+        "explanation": "Statement II pinpoints Z at the 10th position from the left, placing X three spots to the right at position 13. Statement I gives multiple possibilities. Statement II alone is sufficient."
+      },
+      {
+        "q": 35,
+        "topic": "Direction sense",
+        "question": "What is the distance between Point A and Point B?\nStatement I: Point B is exactly midway between Point X and Point Y. Point A is 10m West of Point X and 20m West of Point Y.\nStatement II: Point Z is 8m South of Point A. Point B is 8m North of Point W. Point W is 15m East of Point Z.",
+        "options": {
+          "A": "Data in Statement I alone is sufficient",
+          "B": "Data in Statement II alone is sufficient",
+          "C": "Data in either Statement I alone or Statement II alone is sufficient",
+          "D": "Data in both Statements I and II together are not sufficient",
+          "E": "Data in both Statements I and II together are necessary"
+        },
+        "correct": "C",
+        "explanation": "Statement I: AX=10m, XY=10m, B midway on XY so XB=5m; AB = AX+XB = 15m. Statement II: rectangle with AZ=BW=8m, ZW=15m, so opposing side AB=15m. Either statement alone is sufficient."
+      }
+    ]
+  }
+}

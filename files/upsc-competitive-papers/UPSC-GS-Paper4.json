@@ -1,0 +1,1322 @@
+{
+  "paper_id": "UPSC-GS-Paper4",
+  "title": "UPSC Prelims GS Paper 4",
+  "exam": "UPSC Prelims GS",
+  "year": 2026,
+  "subjects": {
+    "History": [
+      {
+        "q": 1,
+        "topic": "Ancient India",
+        "question": "In the context of ancient Indian history, the term \"Vishti\" referred to which of the following?",
+        "options": {
+          "A": "A tax levied on agricultural produce during the Gupta period",
+          "B": "A system of forced labor extracted by the state or local authorities",
+          "C": "A specialized guild of merchant traders operating along maritime routes",
+          "D": "A land grant given exclusively to religious institutions"
+        },
+        "correct": "B",
+        "explanation": "During the Gupta and post-Gupta periods, Vishti referred to forced labor. Unlike regular taxes paid in cash or kind, local authorities or rulers could demand labor services from peasants and artisans for public works, military transport, or state projects without direct monetary compensation."
+      },
+      {
+        "q": 2,
+        "topic": "Indian National Movement",
+        "question": "With reference to the Indian freedom struggle, what was the primary objective of the Lucknow Pact of 1916?",
+        "options": {
+          "A": "To demand immediate complete independence (Purna Swaraj) from British rule",
+          "B": "To establish a common platform between the Indian National Congress and the Muslim League for constitutional reforms",
+          "C": "To mobilize peasantry across North India for a nation-wide Non-Cooperation Movement",
+          "D": "To boycott foreign goods and promote indigenous industries throughout Bengal"
+        },
+        "correct": "B",
+        "explanation": "The Lucknow Pact was an agreement signed between the Indian National Congress and the All-India Muslim League in December 1916. Its primary goal was to present a united front to the British government demanding self-governing responsibilities and constitutional reforms, while agreeing on separate electorates for Muslims in provincial legislative councils."
+      },
+      {
+        "q": 3,
+        "topic": "Medieval India",
+        "question": "Which of the following historical monuments incorporates the structural feature known as the \"double dome\" to ensure proportion between the interior ceiling and exterior height?",
+        "options": {
+          "A": "Qutub Minar",
+          "B": "Humayun's Tomb",
+          "C": "Adina Mosque",
+          "D": "Buland Darwaza"
+        },
+        "correct": "B",
+        "explanation": "Humayun's Tomb in Delhi is one of the earliest major examples of Mughal architecture to utilize a double dome structure. This architectural technique consists of an inner dome that keeps the interior space proportioned to human scale and an outer shell that provides impressive height and grandeur to the building's exterior profile."
+      },
+      {
+        "q": 4,
+        "topic": "Medieval India",
+        "question": "In the context of medieval Indian administration, the office of \"Mir Bakshi\" under the Mughal Empire was primarily responsible for:",
+        "options": {
+          "A": "Managing state treasury and revenue collection",
+          "B": "Head of the military department and supervisor of intelligence network",
+          "C": "Chief justice overseeing judicial trials and religious endowments",
+          "D": "Foreign affairs and diplomatic correspondence with neighboring empires"
+        },
+        "correct": "B",
+        "explanation": "Under Mughal administration, the Mir Bakshi was the head of the military department. Responsibilities included maintaining military records, managing the mansabdari system appointments, inspecting cavalry troops, and coordinating the state intelligence and news-reporting network (waqai-navis)."
+      },
+      {
+        "q": 5,
+        "topic": "Indian National Movement",
+        "question": "Which one of the following movements in colonial India was specifically launched in response to the announcement of the Partition of Bengal in 1905?",
+        "options": {
+          "A": "Civil Disobedience Movement",
+          "B": "Swadeshi Movement",
+          "C": "Home Rule Movement",
+          "D": "Quit India Movement"
+        },
+        "correct": "B",
+        "explanation": "The Swadeshi Movement was formally initiated following the partition of Bengal by Lord Curzon in 1905. The movement emphasized the boycott of foreign goods, promotion of indigenous products, self-reliance (Atmasakti), and national education."
+      },
+      {
+        "q": 6,
+        "topic": "Modern India",
+        "question": "During the Reign of Terror in revolutionary France, the Committee of Public Safety was led primarily by:",
+        "options": {
+          "A": "Jean-Paul Marat",
+          "B": "Maximilien Robespierre",
+          "C": "Georges Danton",
+          "D": "Louis XVI"
+        },
+        "correct": "B",
+        "explanation": "Maximilien Robespierre emerged as the dominant figure of the Committee of Public Safety during the Reign of Terror (1793-1794). The committee exercised dictatorial control over France to eliminate perceived internal and external enemies of the revolution."
+      },
+      {
+        "q": 7,
+        "topic": "Medieval India",
+        "question": "The Vijayanagara ruler Krishna Deva Raya authored the celebrated Telugu work titled:",
+        "options": {
+          "A": "Amuktamalyada",
+          "B": "Rayavachakamu",
+          "C": "Kavirajamarga",
+          "D": "Vikramarjunavijaya"
+        },
+        "correct": "A",
+        "explanation": "King Krishna Deva Raya of the Tuluva dynasty composed Amuktamalyada in Telugu. The work centers on the life of the Alvar saint Andal and discourses on political ethics, governance, and royal duties."
+      },
+      {
+        "q": 8,
+        "topic": "Modern India",
+        "question": "Which among the following reflects the primary motive behind the Charter Act of 1813 passed by the British Parliament?",
+        "options": {
+          "A": "End of the East India Company's monopoly on Indian trade, except for trade in tea and trade with China",
+          "B": "Transfer of political power over India directly to the British Crown",
+          "C": "Creation of the office of Governor-General of India",
+          "D": "Establishment of a Supreme Court in Calcutta"
+        },
+        "correct": "A",
+        "explanation": "The Charter Act of 1813 ended the commercial monopoly of the East India Company over trade with India, opening Indian trade to all British merchants. However, the Company retained its monopoly over trade in tea and trade with China for another twenty years."
+      },
+      {
+        "q": 9,
+        "topic": "Ancient India",
+        "question": "The term \"Sramana\" in ancient Indian religious tradition refers to:",
+        "options": {
+          "A": "Priests dedicated exclusively to performing Vedic sacrifices",
+          "B": "Ascetic and non-Vedic movements such as Buddhism, Jainism, and Ajivikism",
+          "C": "Village headmen in charge of revenue administration",
+          "D": "Court poets appointed by ancient Indian monarchs"
+        },
+        "correct": "B",
+        "explanation": "Sramana traditions were heterodox ascetic movements that arose in ancient India, parallel to or in opposition to the Vedic sacrificial tradition. Buddhism, Jainism, and Ajivikism belong to this tradition, emphasizing asceticism, meditation, and personal moral practice."
+      },
+      {
+        "q": 10,
+        "topic": "Ancient India",
+        "question": "In the history of Indian art and architecture, the Chaitya hall is distinctively identified as:",
+        "options": {
+          "A": "A residential monastery for Buddhist monks",
+          "B": "A prayer hall or shrine containing a stupa at one end",
+          "C": "A fortification structure around an ancient city",
+          "D": "A royal assembly room used for administrative courts"
+        },
+        "correct": "B",
+        "explanation": "In Buddhist architecture, a Chaitya hall is a shrine or prayer hall containing a stupa at the far end, often characterized by a vaulted roof and apsidal plan. Monasteries where monks lived are called Viharas."
+      },
+      {
+        "q": 11,
+        "topic": "Ancient India",
+        "question": "With reference to the Harappan Civilization, which of the following ancient ports functioned as a prominent maritime trade center with overseas regions such as Mesopotamia?",
+        "options": {
+          "A": "Kalibangan",
+          "B": "Lothal",
+          "C": "Banawali",
+          "D": "Burzahom"
+        },
+        "correct": "B",
+        "explanation": "Lothal, located in present-day Gujarat, contained a massive brick basin identified by archaeologists as a dockyard. It served as a vital port town connecting the Indus Valley civilization with coastal regions and Persian Gulf-Mesopotamian trade networks."
+      },
+      {
+        "q": 12,
+        "topic": "Indian National Movement",
+        "question": "The famous resolution on Fundamental Rights and Economic Programme was passed during which session of the Indian National Congress?",
+        "options": {
+          "A": "Lahore Session (1929)",
+          "B": "Karachi Session (1931)",
+          "C": "Belgaum Session (1924)",
+          "D": "Lucknow Session (1936)"
+        },
+        "correct": "B",
+        "explanation": "The Karachi Session of 1931, presided over by Sardar Vallabhbhai Patel, passed resolutions on Fundamental Rights and the National Economic Programme. The draft was primarily prepared by Jawaharlal Nehru."
+      },
+      {
+        "q": 13,
+        "topic": "Medieval India",
+        "question": "Which medieval school of Indian classical music was extensively enriched and popularized by Tansen in the court of Emperor Akbar?",
+        "options": {
+          "A": "Khayal",
+          "B": "Dhrupad",
+          "C": "Thumri",
+          "D": "Tappa"
+        },
+        "correct": "B",
+        "explanation": "Tansen was a legendary exponent of the Dhrupad genre of Hindustani classical music. His compositions and mastery elevated Dhrupad to the principal court music style during Akbar's reign."
+      },
+      {
+        "q": 14,
+        "topic": "Modern India",
+        "question": "Which ancient text is primarily recognized as a comprehensive treatise on statecraft, economic policy, and military strategy?",
+        "options": {
+          "A": "Manusmriti",
+          "B": "Arthashastra",
+          "C": "Mudrarakshasa",
+          "D": "Mahabhasya"
+        },
+        "correct": "B",
+        "explanation": "The Arthashastra, authored by Kautilya (Chanakya), is an ancient treatise detailing political diplomacy, state administration, economic systems, taxation, intelligence operations, and warfare strategies."
+      },
+      {
+        "q": 15,
+        "topic": "Modern India",
+        "question": "The Wood's Despatch of 1854 was primarily concerned with:",
+        "options": {
+          "A": "Army reorganization following the revolt of 1857",
+          "B": "Educational reforms across primary, secondary, and higher education",
+          "C": "Land revenue settlements in northern provinces",
+          "D": "Press censorship and regulatory laws"
+        },
+        "correct": "B",
+        "explanation": "Wood's Despatch of 1854, issued by Charles Wood, is often called the \"Magna Carta of English Education in India.\" It outlined a comprehensive scheme for education, establishing a hierarchy of schools, female education promotion, grant-in-aid systems, and founding universities in Calcutta, Bombay, and Madras."
+      }
+    ],
+    "Indian Polity and Governance": [
+      {
+        "q": 1,
+        "topic": "Rights issues",
+        "question": "Which of the following constitutional provisions empowers Parliament to form a new State or alter the boundaries, areas, or names of existing States?",
+        "options": {
+          "A": "Article 1",
+          "B": "Article 2",
+          "C": "Article 3",
+          "D": "Article 4"
+        },
+        "correct": "C",
+        "explanation": "Article 3 of the Constitution authorizes Parliament to form new states, alter areas, boundaries, or names of existing states by law passed by a simple majority."
+      },
+      {
+        "q": 2,
+        "topic": "Rights issues",
+        "question": "Under the Indian Constitution, the power to issue writs for the enforcement of Fundamental Rights is conferred upon:",
+        "options": {
+          "A": "Both the Supreme Court and the High Courts",
+          "B": "The Supreme Court exclusively",
+          "C": "High Courts only with prior sanction of the President",
+          "D": "Subordinate courts under the guidance of District Judges"
+        },
+        "correct": "A",
+        "explanation": "Under Article 32, the Supreme Court has the power to issue writs for the enforcement of Fundamental Rights. Under Article 226, High Courts also possess the power to issue writs for Fundamental Rights as well as other legal rights."
+      },
+      {
+        "q": 3,
+        "topic": "Rights issues",
+        "question": "Which body is responsible for recommending the principles governing the allocation of grants-in-aid to the revenue of the States out of the Consolidated Fund of India?",
+        "options": {
+          "A": "NITI Aayog",
+          "B": "Comptroller and Auditor General",
+          "C": "Public Accounts Committee",
+          "D": "Finance Commission"
+        },
+        "correct": "D",
+        "explanation": "Under Article 280, the Finance Commission makes recommendations to the President regarding the distribution of net tax proceeds between the Union and States, as well as principles governing grants-in-aid to States."
+      },
+      {
+        "q": 4,
+        "topic": "Rights issues",
+        "question": "The concept of \"Basic Structure\" of the Constitution was propounded by the Supreme Court of India in which landmark judgment?",
+        "options": {
+          "A": "Golaknath case",
+          "B": "Kesavananda Bharati case",
+          "C": "Minerva Mills case",
+          "D": "Maneka Gandhi case"
+        },
+        "correct": "B",
+        "explanation": "In Kesavananda Bharati v. State of Kerala (1973), the Supreme Court ruled that Parliament's constituent power to amend the Constitution under Article 368 does not enable it to alter or destroy the basic structure of the Constitution."
+      },
+      {
+        "q": 5,
+        "topic": "Constitution",
+        "question": "In the event of a tie during voting in the Lok Sabha, who exercises the casting vote?",
+        "options": {
+          "A": "Prime Minister",
+          "B": "President",
+          "C": "Speaker of the Lok Sabha",
+          "D": "Leader of the Opposition"
+        },
+        "correct": "C",
+        "explanation": "Under Article 100(1), the Speaker of the Lok Sabha does not vote in the first instance, but exercises a casting vote in the case of an equality of votes."
+      },
+      {
+        "q": 6,
+        "topic": "Political system",
+        "question": "Which Schedule of the Indian Constitution contains provisions regarding the disqualification of members on grounds of defection?",
+        "options": {
+          "A": "Tenth Schedule",
+          "B": "Ninth Schedule",
+          "C": "Eighth Schedule",
+          "D": "Seventh Schedule"
+        },
+        "correct": "A",
+        "explanation": "The Tenth Schedule, added by the 52nd Constitutional Amendment Act of 1985, sets out the grounds for disqualification of members of Parliament and State Legislatures on account of defection."
+      },
+      {
+        "q": 7,
+        "topic": "Political system",
+        "question": "The Ordinance-making power of the President of India under Article 123 is subject to which condition?",
+        "options": {
+          "A": "It can be exercised at any time regardless of Parliament's session",
+          "B": "It requires prior assent from the Chief Justice of India",
+          "C": "It has a life of two years unless revoked earlier",
+          "D": "It can be promulgated only when both Houses or either House of Parliament is not in session"
+        },
+        "correct": "D",
+        "explanation": "Under Article 123, the President can promulgate an ordinance only when either House of Parliament is not in session and the President is satisfied that circumstances exist which render it necessary to take immediate action."
+      },
+      {
+        "q": 8,
+        "topic": "Rights issues",
+        "question": "Which fundamental right under the Indian Constitution cannot be suspended even during a National Emergency declared under Article 352?",
+        "options": {
+          "A": "Freedom of Speech and Expression under Article 19",
+          "B": "Protection of life and personal liberty under Article 21",
+          "C": "Right to Equality under Article 14",
+          "D": "Right to Constitutional Remedies under Article 32"
+        },
+        "correct": "B",
+        "explanation": "Following the 44th Amendment Act of 1978, the rights guaranteed under Article 20 (protection in respect of conviction for offences) and Article 21 (protection of life and personal liberty) cannot be suspended during a National Emergency."
+      },
+      {
+        "q": 9,
+        "topic": "Political system",
+        "question": "The Comptroller and Auditor General of India submits audit reports relating to the accounts of the Union to:",
+        "options": {
+          "A": "Prime Minister",
+          "B": "Speaker of the Lok Sabha",
+          "C": "President of India",
+          "D": "Union Finance Minister"
+        },
+        "correct": "C",
+        "explanation": "Under Article 151(1), the Comptroller and Auditor General submits audit reports relating to the accounts of the Union to the President, who causes them to be laid before each House of Parliament."
+      },
+      {
+        "q": 10,
+        "topic": "Panchayati Raj",
+        "question": "Which of the following constitutional provisions was inserted to give constitutional status and protection to Panchayati Raj Institutions?",
+        "options": {
+          "A": "Part IX",
+          "B": "Part IXA",
+          "C": "Part IXB",
+          "D": "Part X"
+        },
+        "correct": "A",
+        "explanation": "The 73rd Constitutional Amendment Act of 1992 added Part IX titled \"The Panchayats\" to the Constitution, according constitutional status to Panchayati Raj Institutions."
+      },
+      {
+        "q": 11,
+        "topic": "Rights issues",
+        "question": "The doctrine of \"Pleasure\" regarding the tenure of office of persons serving the Union or a State is enshrined in which Article of the Constitution?",
+        "options": {
+          "A": "Article 308",
+          "B": "Article 309",
+          "C": "Article 310",
+          "D": "Article 311"
+        },
+        "correct": "C",
+        "explanation": "Article 310 of the Indian Constitution embodies the doctrine of pleasure, stating that every person who is a member of a defense service or of a civil service of the Union holds office during the pleasure of the President or the Governor."
+      },
+      {
+        "q": 12,
+        "topic": "Political system",
+        "question": "Under the Indian Constitution, money bills can be introduced:",
+        "options": {
+          "A": "In either House of Parliament",
+          "B": "Only in the Lok Sabha",
+          "C": "Only in the Rajya Sabha",
+          "D": "In a Joint Sitting of both Houses"
+        },
+        "correct": "B",
+        "explanation": "According to Article 109, a Money Bill can be introduced only in the Lok Sabha and only on the recommendation of the President."
+      },
+      {
+        "q": 13,
+        "topic": "Rights issues",
+        "question": "The Election Commission of India is a constitutional body established under which Article of the Constitution?",
+        "options": {
+          "A": "Article 324",
+          "B": "Article 315",
+          "C": "Article 280",
+          "D": "Article 338"
+        },
+        "correct": "A",
+        "explanation": "Article 324 provides for the superintendence, direction, and control of elections to Parliament, State Legislatures, and the offices of President and Vice-President by the Election Commission of India."
+      },
+      {
+        "q": 14,
+        "topic": "Political system",
+        "question": "Which type of majority is required in Parliament for passing a resolution to remove the Vice-President of India from office?",
+        "options": {
+          "A": "Simple majority in both Houses",
+          "B": "Absolute majority in Lok Sabha and simple majority in Rajya Sabha",
+          "C": "Effective majority in Rajya Sabha and simple majority in Lok Sabha",
+          "D": "Two-thirds majority present and voting in both Houses"
+        },
+        "correct": "C",
+        "explanation": "Under Article 67(b), the Vice-President may be removed from office by a resolution of the Rajya Sabha passed by a majority of all the then members (effective majority) and agreed to by the Lok Sabha (simple majority)."
+      },
+      {
+        "q": 15,
+        "topic": "Rights issues",
+        "question": "The Joint State Public Service Commission can be created through:",
+        "options": {
+          "A": "An executive order of the Ministry of Personnel",
+          "B": "A constitutional amendment",
+          "C": "A resolution passed by the Union Public Service Commission",
+          "D": "An Act of Parliament upon requests from the concerned state legislatures"
+        },
+        "correct": "D",
+        "explanation": "Under Article 315(2), a Joint State Public Service Commission (JSPSC) can be created by an Act of Parliament if the legislatures of two or more states pass resolutions to that effect. JSPSC is thus a statutory body, not a constitutional body."
+      }
+    ],
+    "Geography": [
+      {
+        "q": 1,
+        "topic": "Indian geography",
+        "question": "Which of the following mountain passes connects the Kashmir Valley with the Ladakh region and remains strategically vital for trans-Himalayan transport?",
+        "options": {
+          "A": "Nathu La",
+          "B": "Zoji La",
+          "C": "Shipki La",
+          "D": "Lipulekh"
+        },
+        "correct": "B",
+        "explanation": "Zoji La is a high mountain pass located on National Highway 1 between Srinagar and Leh. It forms the primary terrestrial link connecting the Kashmir Valley with the high-altitude desert region of Ladakh."
+      },
+      {
+        "q": 2,
+        "topic": "Physical geography",
+        "question": "Which ocean current is a cold current that flows along the western coast of South America, significantly influencing the aridity of the Atacama Desert?",
+        "options": {
+          "A": "Humboldt Current",
+          "B": "Kuroshio Current",
+          "C": "Agulhas Current",
+          "D": "Gulf Stream"
+        },
+        "correct": "A",
+        "explanation": "The Humboldt Current (also known as the Peru Current) is a cold-water ocean current that flows north along the western coast of South America. Its chilling effect stabilizes the atmosphere and suppresses precipitation, contributing directly to the hyper-arid climate of the Atacama Desert."
+      },
+      {
+        "q": 3,
+        "topic": "Physical geography",
+        "question": "In the context of physical geography, the term \"Karst topography\" is primarily associated with landscape features formed by the chemical weathering and dissolution of:",
+        "options": {
+          "A": "Basalt",
+          "B": "Granite",
+          "C": "Sandstone",
+          "D": "Limestone"
+        },
+        "correct": "D",
+        "explanation": "Karst topography develops in areas underlain by soluble rocks, predominantly limestone, dolomite, and gypsum. Acidic water dissolves the carbonate bedrock, creating distinctive surface and underground landforms such as sinkholes, caves, and stalactites."
+      },
+      {
+        "q": 4,
+        "topic": "Indian geography",
+        "question": "Which river in Peninsular India is commonly known as the \"Dakshin Ganga\" due to its great length and vast drainage basin?",
+        "options": {
+          "A": "Krishna",
+          "B": "Godavari",
+          "C": "Kaveri",
+          "D": "Mahanadi"
+        },
+        "correct": "B",
+        "explanation": "The Godavari is the largest peninsular river system in India, originating at Trimbakeshwar in Maharashtra. Due to its extent, length, and cultural prominence, it is frequently referred to as the Dakshin Ganga."
+      },
+      {
+        "q": 5,
+        "topic": "Indian geography",
+        "question": "Which strait separates the Malay Peninsula from the Indonesian island of Sumatra, serving as one of the busiest maritime trade chokepoints in the world?",
+        "options": {
+          "A": "Strait of Malacca",
+          "B": "Strait of Hormuz",
+          "C": "Sunda Strait",
+          "D": "Bab-el-Mandeb"
+        },
+        "correct": "A",
+        "explanation": "The Strait of Malacca is a narrow stretch of water between the Malay Peninsula and Sumatra. It acts as the main shipping channel between the Indian Ocean and the Pacific Ocean, linking major Asian economies."
+      },
+      {
+        "q": 6,
+        "topic": "Indian geography",
+        "question": "In soil geography, the type of soil formed under high temperature and high rainfall conditions, leading to intense leaching of silica, is known as:",
+        "options": {
+          "A": "Black soil",
+          "B": "Alluvial soil",
+          "C": "Laterite soil",
+          "D": "Arid soil"
+        },
+        "correct": "C",
+        "explanation": "Laterite soils develop in tropical regions experiencing high temperatures and heavy seasonal rainfall. The intense wet-dry cycles lead to heavy leaching (desilication), leaving behind soil rich in iron oxide and aluminum compounds."
+      },
+      {
+        "q": 7,
+        "topic": "Indian geography",
+        "question": "The \"Doldrums\" refers to a global belt of low atmospheric pressure characterized by calm winds near the:",
+        "options": {
+          "A": "Tropic of Cancer",
+          "B": "Tropic of Capricorn",
+          "C": "Equator",
+          "D": "Arctic Circle"
+        },
+        "correct": "C",
+        "explanation": "The Doldrums, or Intertropical Convergence Zone (ITCZ), is an equatorial region where trade winds from the Northern and Southern Hemispheres converge. Solar heating creates strong vertical updrafts, resulting in light variable surface winds and calm atmospheric conditions."
+      },
+      {
+        "q": 8,
+        "topic": "Indian geography",
+        "question": "Which of the following Indian states shares an international land border with three different countries (Nepal, Bhutan, and China)?",
+        "options": {
+          "A": "Arunachal Pradesh",
+          "B": "Sikkim",
+          "C": "West Bengal",
+          "D": "Uttarakhand"
+        },
+        "correct": "B",
+        "explanation": "Sikkim is bounded by Nepal to the west, Bhutan to the east, and the Tibet Autonomous Region of China to the north and northeast."
+      },
+      {
+        "q": 9,
+        "topic": "Indian geography",
+        "question": "Which geological boundary or line separates the distinct ecozones of Asia and Wallacea (Australasia), reflecting deep-water marine trenches that prevented faunal migration?",
+        "options": {
+          "A": "Wallace Line",
+          "B": "Durand Line",
+          "C": "Radcliff Line",
+          "D": "Curzon Line"
+        },
+        "correct": "A",
+        "explanation": "The Wallace Line is a faunal boundary drawn in 1859 by Alfred Russel Wallace. It delineates the transitional zone between Asian and Australian animal species through the Indonesian archipelago."
+      },
+      {
+        "q": 10,
+        "topic": "World geography",
+        "question": "Which river system forms the famous Majuli Island, recognized as one of the largest riverine islands in the world?",
+        "options": {
+          "A": "Ganges",
+          "B": "Indus",
+          "C": "Brahmaputra",
+          "D": "Meghna"
+        },
+        "correct": "C",
+        "explanation": "Majuli is a large river island situated in the Brahmaputra River in Assam. It is formed by the Brahmaputra and its tributaries constantly shifting course and depositing sediment."
+      },
+      {
+        "q": 11,
+        "topic": "Indian geography",
+        "question": "The Grand Canyon in the United States was formed primarily through long-term fluvial erosion carried out by which river?",
+        "options": {
+          "A": "Mississippi River",
+          "B": "Colorado River",
+          "C": "Missouri River",
+          "D": "Columbia River"
+        },
+        "correct": "B",
+        "explanation": "The Grand Canyon in Arizona was carved over millions of years by the Colorado River and its tributaries, revealing deep geological strata through tectonic uplift and hydraulic incision."
+      },
+      {
+        "q": 12,
+        "topic": "Economic geography",
+        "question": "Which lake in India is the largest brackish water coastal lagoon in Asia, renowned as a major wintering ground for migratory birds?",
+        "options": {
+          "A": "Vembanad Lake",
+          "B": "Pulicat Lake",
+          "C": "Chilika Lake",
+          "D": "Wular Lake"
+        },
+        "correct": "C",
+        "explanation": "Chilika Lake in Odisha is Asia's largest brackish water lagoon. Designated among India's first Ramsar Sites, it supports rich biodiversity and hosts thousands of migratory birds annually."
+      },
+      {
+        "q": 13,
+        "topic": "Indian geography",
+        "question": "The \"Roaring Forties\" and \"Furious Fifties\" are strong, prevailing westerly winds encountered in which region of the globe?",
+        "options": {
+          "A": "Northern Hemisphere high latitudes",
+          "B": "Equatorial low-pressure belt",
+          "C": "Southern Hemisphere ocean belt between 40 degrees and 60 degrees south latitude",
+          "D": "Subtropical high-pressure belts in both hemispheres"
+        },
+        "correct": "C",
+        "explanation": "The Roaring Forties, Furious Fifties, and Shrieking Sixties are strong prevailing westerly winds driven by air pressure gradients between the Subtropical High-Pressure Belt and the Subpolar Low-Pressure Belt. Because landmasses are scarce in the Southern Ocean between 40 and 60 degrees S, frictional resistance is minimal, allowing these winds to maintain continuous high speeds."
+      }
+    ],
+    "Economic and Social Development": [
+      {
+        "q": 1,
+        "topic": "Sustainable development",
+        "question": "In monetary policy, the interest rate at which the Reserve Bank of India absorbs liquidity from commercial banks on an overnight basis under the Liquidity Adjustment Facility (LAF) framework is known as the:",
+        "options": {
+          "A": "Bank Rate",
+          "B": "Reverse Repo Rate",
+          "C": "Marginal Standing Facility Rate",
+          "D": "Repo Rate"
+        },
+        "correct": "B",
+        "explanation": "The Reverse Repo Rate is the interest rate at which commercial banks deposit their surplus liquidity overnight with the Reserve Bank of India, allowing the central bank to absorb excess system liquidity."
+      },
+      {
+        "q": 2,
+        "topic": "Sustainable development",
+        "question": "Which of the following components is included in the measurement of Narrow Money (M1) in India's monetary aggregates?",
+        "options": {
+          "A": "Demand deposits with the banking system",
+          "B": "Time deposits with commercial banks",
+          "C": "Total deposits with Post Office Savings Banks",
+          "D": "Certificates of Deposit issued by financial institutions"
+        },
+        "correct": "A",
+        "explanation": "Narrow Money (M1) consists of currency with the public, demand deposits with the banking system, and 'other' deposits with the Reserve Bank of India. Time deposits are excluded from M1 and are part of Broad Money (M3)."
+      },
+      {
+        "q": 3,
+        "topic": "Poverty",
+        "question": "When a country experiences inflation along with stagnant economic growth and elevated unemployment levels, the economic phenomenon is best described as:",
+        "options": {
+          "A": "Hyperinflation",
+          "B": "Deflation",
+          "C": "Reflation",
+          "D": "Stagflation"
+        },
+        "correct": "D",
+        "explanation": "Stagflation is a condition characterized by high inflation rate, stagnant or slow economic growth, and high unemployment, presenting a dilemma for macroeconomic policy."
+      },
+      {
+        "q": 4,
+        "topic": "Sustainable development",
+        "question": "The \"Capital Adequacy Ratio\" (CAR), also known as CRAR, mandated for commercial banks under the Basel III framework is designed to measure a bank's capital relative to its:",
+        "options": {
+          "A": "Risk-weighted assets",
+          "B": "Total demand liabilities",
+          "C": "Total non-performing loans",
+          "D": "Net worth reserves"
+        },
+        "correct": "A",
+        "explanation": "Capital Adequacy Ratio (CAR) measures a bank's capital to its risk-weighted credit exposure (risk-weighted assets) to ensure the financial institution can absorb a reasonable amount of losses and meet statutory capital requirements."
+      },
+      {
+        "q": 5,
+        "topic": "Sustainable development",
+        "question": "Which indicator measures the overall change in consumer prices based on a representative basket of goods and services and serves as the primary benchmark for inflation targeting by the Reserve Bank of India?",
+        "options": {
+          "A": "Wholesale Price Index (WPI)",
+          "B": "Consumer Price Index (CPI - Combined)",
+          "C": "GDP Deflator",
+          "D": "Index of Industrial Production (IIP)"
+        },
+        "correct": "B",
+        "explanation": "Following the Urjit Patel Committee recommendations, the Reserve Bank of India formally adopted the Consumer Price Index (CPI - Combined) as its key anchor for monetary policy inflation targeting."
+      },
+      {
+        "q": 6,
+        "topic": "Sustainable development",
+        "question": "In public finance, \"Fiscal Deficit\" is defined as the difference between total government expenditure and:",
+        "options": {
+          "A": "Total revenue receipts plus capital receipts excluding borrowings",
+          "B": "Total tax revenue collected during the fiscal year",
+          "C": "Total capital receipts including market borrowings",
+          "D": "Revenue expenditure minus interest payments"
+        },
+        "correct": "A",
+        "explanation": "Fiscal Deficit represents the total borrowing requirements of the government and is calculated as the excess of total expenditure over total revenue receipts and non-debt creating capital receipts."
+      },
+      {
+        "q": 7,
+        "topic": "Demographics",
+        "question": "The \"Gini Coefficient\" is a statistical measure widely utilized in economic analysis to quantify:",
+        "options": {
+          "A": "Absolute poverty rates in rural sectors",
+          "B": "Inter-state fiscal devolution imbalances",
+          "C": "Income inequality or wealth distribution within a population",
+          "D": "Foreign exchange reserve adequacy"
+        },
+        "correct": "C",
+        "explanation": "The Gini Coefficient measures inequality in the distribution of income or wealth across a population, taking values between 0 (perfect equality) and 1 (perfect inequality)."
+      },
+      {
+        "q": 8,
+        "topic": "Sustainable development",
+        "question": "In India's balance of payments framework, which of the following transactions is classified under the \"Capital Account\"?",
+        "options": {
+          "A": "Export of software services",
+          "B": "Inward remittances from workers abroad",
+          "C": "Foreign Direct Investment (FDI) inflows",
+          "D": "Import of crude petroleum"
+        },
+        "correct": "C",
+        "explanation": "Foreign Direct Investment (FDI), Foreign Portfolio Investment (FPI), external commercial borrowings, and cross-border loans change domestic assets and liabilities, placing them in the Capital Account. Exports, imports, and remittances belong to the Current Account."
+      },
+      {
+        "q": 9,
+        "topic": "Sustainable development",
+        "question": "The term \"Special Drawing Rights\" (SDRs), often referred to as 'paper gold', represents an international reserve asset created by:",
+        "options": {
+          "A": "World Bank",
+          "B": "International Monetary Fund",
+          "C": "Asian Development Bank",
+          "D": "World Trade Organization"
+        },
+        "correct": "B",
+        "explanation": "Special Drawing Rights (SDRs) were created in 1969 by the International Monetary Fund (IMF) to supplement its member countries' official reserve assets. The value of an SDR is based on a basket of major currencies."
+      },
+      {
+        "q": 10,
+        "topic": "Sustainable development",
+        "question": "The \"Core Inflation\" metric differs from headline inflation because it specifically excludes price changes in items belonging to:",
+        "options": {
+          "A": "Food and Energy categories",
+          "B": "Capital equipment and machinery",
+          "C": "Consumer durable products",
+          "D": "Housing and urban services"
+        },
+        "correct": "A",
+        "explanation": "Core inflation reflects long-term price trends by excluding volatile components such as food and energy products from the inflation basket, providing a clearer view of underlying structural price pressures."
+      },
+      {
+        "q": 11,
+        "topic": "Sustainable development",
+        "question": "Which of the following indirect taxes was NOT subsumed into the Goods and Services Tax (GST) upon its implementation in India?",
+        "options": {
+          "A": "Service Tax",
+          "B": "Central Excise Duty on Petroleum Products",
+          "C": "Central Sales Tax",
+          "D": "State Value Added Tax (VAT) on consumer goods"
+        },
+        "correct": "B",
+        "explanation": "Five petroleum products (crude oil, high-speed diesel, motor spirit/petrol, natural gas, and aviation turbine fuel) along with alcohol for human consumption were kept outside the purview of GST, retaining existing Central Excise Duty and State VAT structures."
+      },
+      {
+        "q": 12,
+        "topic": "Sustainable development",
+        "question": "Under the Priority Sector Lending (PSL) norms laid down by the Reserve Bank of India, what is the mandatory target for PSL as a percentage of Adjusted Net Bank Credit (ANBC) for domestic commercial banks?",
+        "options": {
+          "A": "25%",
+          "B": "33%",
+          "C": "40%",
+          "D": "50%"
+        },
+        "correct": "C",
+        "explanation": "Domestic commercial banks (excluding Regional Rural Banks and Small Finance Banks) are mandated to allocate 40% of their Adjusted Net Bank Credit (ANBC) or Credit Equivalent Amount of Off-Balance Sheet Exposure, whichever is higher, to priority sectors."
+      },
+      {
+        "q": 13,
+        "topic": "Sustainable development",
+        "question": "Which of the following terms refers to the phenomenon where high government spending funded by borrowing drives up interest rates and subsequently reduces private sector investment?",
+        "options": {
+          "A": "Crowding-out effect",
+          "B": "Liquidity trap",
+          "C": "Demonstration effect",
+          "D": "Moral hazard"
+        },
+        "correct": "A",
+        "explanation": "The crowding-out effect occurs when aggressive government borrowing leads to rising interest rates and absorbs loanable funds from financial markets, reducing the capital available for private sector investment."
+      },
+      {
+        "q": 14,
+        "topic": "Demographics",
+        "question": "The \"Lorenz Curve\" in economic theory provides a graphical representation of the relationship between cumulative percentage of population and cumulative percentage of:",
+        "options": {
+          "A": "Income earned",
+          "B": "Unemployment duration",
+          "C": "Tax revenue paid",
+          "D": "Import expenditure"
+        },
+        "correct": "A",
+        "explanation": "The Lorenz Curve plots the cumulative percentage of population against the cumulative percentage of income received, illustrating the extent of income inequality within an economy."
+      },
+      {
+        "q": 15,
+        "topic": "Sustainable development",
+        "question": "Which regulatory authority in India oversees the functioning and development of commodity derivative markets following its merger with SEBI in 2015?",
+        "options": {
+          "A": "Reserve Bank of India (RBI)",
+          "B": "Securities and Exchange Board of India (SEBI)",
+          "C": "Insurance Regulatory and Development Authority (IRDAI)",
+          "D": "Forward Markets Commission (FMC)"
+        },
+        "correct": "B",
+        "explanation": "Following the repeal of the Forward Contracts (Regulation) Act and the merger of the Forward Markets Commission (FMC) with the Securities and Exchange Board of India (SEBI) in September 2015, SEBI became the unified regulator for commodity derivative markets in India."
+      }
+    ],
+    "Environment and Ecology": [
+      {
+        "q": 1,
+        "topic": "Environmental ecology",
+        "question": "The phenomenon of \"Eutrophication\" in aquatic ecosystems is primarily triggered by the excessive discharge of which nutrients into water bodies?",
+        "options": {
+          "A": "Calcium and Magnesium",
+          "B": "Nitrogen and Phosphorus",
+          "C": "Potassium and Sodium",
+          "D": "Iron and Sulphur"
+        },
+        "correct": "B",
+        "explanation": "Eutrophication occurs when water bodies receive excess nutrients, particularly nitrogen and phosphorus from agricultural runoff and sewage. This leads to rapid algal blooms, reduced light penetration, oxygen depletion (hypoxia), and degradation of aquatic life."
+      },
+      {
+        "q": 2,
+        "topic": "Climate change",
+        "question": "Which global multilateral treaty specifically aims to protect human health and the environment by phasing out the production and consumption of ozone-depleting substances?",
+        "options": {
+          "A": "Montreal Protocol",
+          "B": "Kyoto Protocol",
+          "C": "Basel Convention",
+          "D": "Minamata Convention"
+        },
+        "correct": "A",
+        "explanation": "The Montreal Protocol on Substances that Deplete the Ozone Layer (1987) is an international treaty designed to phase out the production and consumption of ozone-depleting substances such as chlorofluorocarbons (CFCs) and halons."
+      },
+      {
+        "q": 3,
+        "topic": "Biodiversity",
+        "question": "In ecological terminology, a species whose presence, absence, or abundance reflects a specific environmental condition or health of an ecosystem is called an:",
+        "options": {
+          "A": "Invasive species",
+          "B": "Foundation species",
+          "C": "Indicator species",
+          "D": "Dominant species"
+        },
+        "correct": "C",
+        "explanation": "An indicator species serves as a biological monitor because its sensitivity to environmental changes provides early warning signals regarding pollution levels, habitat fragmentation, or climate shifts in an ecosystem. Lichens, for example, serve as air quality indicators."
+      },
+      {
+        "q": 4,
+        "topic": "Biodiversity",
+        "question": "Under the Wildlife Protection Act, 1972 in India, which statutory body was established to prevent illegal trade in wildlife derivatives and enforce anti-poaching measures across state borders?",
+        "options": {
+          "A": "Animal Welfare Board of India",
+          "B": "National Tiger Conservation Authority",
+          "C": "Wildlife Crime Control Bureau",
+          "D": "Central Zoo Authority"
+        },
+        "correct": "C",
+        "explanation": "The Wildlife Crime Control Bureau (WCCB) is a statutory multidisciplinary body constituted under the Wildlife Protection Act, 1972. It collects intelligence, coordinates law enforcement agencies, and counters organized wildlife crime across international and inter-state borders."
+      },
+      {
+        "q": 5,
+        "topic": "Environmental issues",
+        "question": "The \"Nagoya Protocol\", adopted under the framework of the Convention on Biological Diversity (CBD), primarily deals with:",
+        "options": {
+          "A": "Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization",
+          "B": "Safe transfer and handling of Living Modified Organisms resulting from modern biotechnology",
+          "C": "Control of transboundary movements of hazardous wastes and their disposal",
+          "D": "Protection of wetlands of international importance as waterfowl habitats"
+        },
+        "correct": "A",
+        "explanation": "The Nagoya Protocol is a supplementary agreement to the Convention on Biological Diversity (CBD). It provides a transparent legal framework for Access and Benefit-Sharing (ABS) regarding genetic resources and associated traditional knowledge."
+      },
+      {
+        "q": 6,
+        "topic": "Environmental issues",
+        "question": "Which of the following processes describes the progressive buildup of a persistent, non-biodegradable pollutant within the tissues of an organism over its lifespan?",
+        "options": {
+          "A": "Biomagnification",
+          "B": "Bioaccumulation",
+          "C": "Bioremediation",
+          "D": "Biostimulation"
+        },
+        "correct": "B",
+        "explanation": "Bioaccumulation refers to the gradual accumulation of toxic chemical substances in an individual organism over time, as the rate of intake exceeds the rate of excretion or metabolic breakdown. Biomagnification refers to the increasing concentration of these toxins across successive trophic levels."
+      },
+      {
+        "q": 7,
+        "topic": "Biodiversity",
+        "question": "In terrestrial ecology, the transitional zone between two distinct biological communities or ecosystems, such as a forest and a grassland, is known as an:",
+        "options": {
+          "A": "Ecological Niche",
+          "B": "Ecotone",
+          "C": "Ecotype",
+          "D": "Ecocline"
+        },
+        "correct": "B",
+        "explanation": "An ecotone is a transition area between two adjacent biomes or ecological communities. Ecotones often harbor high biodiversity due to the \"edge effect\", containing species from both neighboring ecosystems along with specialized edge species."
+      },
+      {
+        "q": 8,
+        "topic": "Environmental issues",
+        "question": "Which statutory authority in India is mandated under the Environment (Protection) Act, 1986 to regulate groundwater development and management nationwide?",
+        "options": {
+          "A": "Central Ground Water Authority",
+          "B": "Central Pollution Control Board",
+          "C": "National Green Tribunal",
+          "D": "National Water Development Agency"
+        },
+        "correct": "A",
+        "explanation": "The Central Ground Water Authority (CGWA) was constituted under Section 3(3) of the Environment (Protection) Act, 1986, to regulate and control groundwater extraction, issuing permissions and guidelines across industrial and commercial sectors."
+      },
+      {
+        "q": 9,
+        "topic": "Biodiversity",
+        "question": "Which global initiative or standard was established by the IUCN to assess and categorize the extinction risk of biological species worldwide?",
+        "options": {
+          "A": "Green Climate Fund",
+          "B": "Red List of Threatened Species",
+          "C": "Living Planet Index",
+          "D": "World Heritage Convention"
+        },
+        "correct": "B",
+        "explanation": "The International Union for Conservation of Nature (IUCN) Red List of Threatened Species is the world's most comprehensive inventory of the global conservation status of plant, animal, and fungal species, categorizing them based on extinction risk."
+      },
+      {
+        "q": 10,
+        "topic": "Biodiversity",
+        "question": "The \"Bonn Convention\" is an international environmental treaty dedicated exclusively to the conservation of:",
+        "options": {
+          "A": "Migratory Species of Wild Animals",
+          "B": "Transboundary watercourses and international lakes",
+          "C": "Endangered plant species in arid zones",
+          "D": "Coral reef ecosystems under severe marine threat"
+        },
+        "correct": "A",
+        "explanation": "The Convention on the Conservation of Migratory Species of Wild Animals (CMS), commonly known as the Bonn Convention, aims to conserve terrestrial, aquatic, and avian migratory species throughout their range."
+      },
+      {
+        "q": 11,
+        "topic": "Environmental ecology",
+        "question": "In forest ecosystem dynamics, \"Primary Succession\" occurs in an area where:",
+        "options": {
+          "A": "Existing soil cover is completely undisturbed",
+          "B": "No organic soil or living organisms previously existed, such as bare rock or fresh lava flows",
+          "C": "A natural forest fire cleared existing vegetation but left topsoil intact",
+          "D": "Agricultural lands are abandoned to revert back to natural vegetation"
+        },
+        "correct": "B",
+        "explanation": "Primary succession begins on newly formed or exposed substrates lacking pre-existing organic soil or living organisms, such as cooled lava beds, retreating glaciers, or sand dunes. Secondary succession occurs where soil remains after a disturbance."
+      },
+      {
+        "q": 12,
+        "topic": "Climate change",
+        "question": "The \"Clean Development Mechanism\" (CDM) was introduced under which international climate agreement to allow industrialized nations to invest in emission-reduction projects in developing countries?",
+        "options": {
+          "A": "Paris Agreement",
+          "B": "Kyoto Protocol",
+          "C": "Copenhagen Accord",
+          "D": "Vienna Convention"
+        },
+        "correct": "B",
+        "explanation": "The Clean Development Mechanism (CDM) was defined under Article 12 of the 1997 Kyoto Protocol. It enabled developed countries with binding emission targets to meet their commitments by earning certified emission reduction (CER) credits through green projects in developing countries."
+      },
+      {
+        "q": 13,
+        "topic": "Climate change",
+        "question": "Which mechanism under the UNFCCC framework aims to incentivize developing nations to protect forests by reducing greenhouse gas emissions from deforestation and forest degradation?",
+        "options": {
+          "A": "Global Environment Facility (GEF)",
+          "B": "REDD+ Mechanism",
+          "C": "Adaptation Fund",
+          "D": "Special Climate Change Fund"
+        },
+        "correct": "B",
+        "explanation": "REDD+ (Reducing Emissions from Deforestation and forest Degradation) is a framework fostered under UNFCCC. It offers financial incentives to developing countries for sustainable forest management, conservation, and enhancement of forest carbon stocks."
+      },
+      {
+        "q": 14,
+        "topic": "Environmental issues",
+        "question": "In India, the \"CAMPA\" (Compensatory Afforestation Fund Management and Planning Authority) Act was enacted primarily to manage funds collected for:",
+        "options": {
+          "A": "Urban green zone restoration",
+          "B": "Afforestation projects compensating for forest land diverted to non-forest developmental uses",
+          "C": "Mangrove plantation schemes along coastal belts",
+          "D": "Subsidizing organic farming certification for marginal farmers"
+        },
+        "correct": "B",
+        "explanation": "The Compensatory Afforestation Fund Act, 2016 created statutory authorities at national and state levels (CAMPA) to manage funds deposited by user agencies when forest land is diverted for non-forest purposes (like mining or infrastructure) under the Forest (Conservation) Act."
+      },
+      {
+        "q": 15,
+        "topic": "Environmental issues",
+        "question": "Which of the following air pollutants reacts with moisture in the atmosphere to form nitric acid, contributing significantly to the phenomenon of acid rain?",
+        "options": {
+          "A": "Carbon monoxide",
+          "B": "Nitrogen dioxide",
+          "C": "Methane",
+          "D": "Lead particulates"
+        },
+        "correct": "B",
+        "explanation": "Nitrogen dioxide (NO2) and sulphur dioxide (SO2) emitted from fossil fuel combustion react with water vapor, oxygen, and atmospheric oxidants to form nitric acid (HNO3) and sulphuric acid (H2SO4), precipitating as acid rain."
+      }
+    ],
+    "General Science": [
+      {
+        "q": 1,
+        "topic": "Biology",
+        "question": "In the context of biotechnology and gene-editing research, the CRISPR-Cas9 tool relies on the Cas9 protein to function primarily as a:",
+        "options": {
+          "A": "Synthetic RNA messenger that transcribes genetic code",
+          "B": "Molecular pair of scissors that cuts double-stranded DNA at targeted sites",
+          "C": "Viral vector that transfers whole chromosomes into host cells",
+          "D": "Polymerase enzyme that seals broken single-stranded RNA bonds"
+        },
+        "correct": "B",
+        "explanation": "CRISPR-Cas9 is a gene-editing technology where the Cas9 enzyme acts as molecular scissors guided by a custom RNA strand to make precise double-stranded cuts in targeted DNA sequences, enabling gene modification."
+      },
+      {
+        "q": 2,
+        "topic": "Physics",
+        "question": "Which of the following forms of electromagnetic radiation possesses the shortest wavelength and highest photon energy in the electromagnetic spectrum?",
+        "options": {
+          "A": "Gamma rays",
+          "B": "Ultraviolet rays",
+          "C": "X-rays",
+          "D": "Microwaves"
+        },
+        "correct": "A",
+        "explanation": "Gamma rays have the highest frequencies, highest photon energies, and shortest wavelengths across the entire electromagnetic spectrum, typically produced by radioactive decay and nuclear reactions."
+      },
+      {
+        "q": 3,
+        "topic": "Science and technology basics",
+        "question": "In satellite communications, a satellite placed in a Geostationary Earth Orbit (GEO) completes one full revolution around Earth in approximately:",
+        "options": {
+          "A": "90 minutes",
+          "B": "12 hours",
+          "C": "24 hours",
+          "D": "48 hours"
+        },
+        "correct": "C",
+        "explanation": "A Geostationary Earth Orbit (GEO) is a circular orbit around 35,786 kilometers above Earth's equator. Satellites in GEO match Earth's rotational period of exactly 23 hours 56 minutes 4 seconds (one sidereal day), which is approximately 24 hours, remaining stationary relative to ground tracking stations."
+      },
+      {
+        "q": 4,
+        "topic": "Science and technology basics",
+        "question": "In quantum computing, which fundamental quantum mechanical principle allows quantum bits (qubits) to represent a combination of both 0 and 1 states simultaneously?",
+        "options": {
+          "A": "Quantum Entanglement",
+          "B": "Quantum Tunnelling",
+          "C": "Thermal Expansion",
+          "D": "Superposition"
+        },
+        "correct": "D",
+        "explanation": "Quantum superposition enables a qubit to exist in a linear combination of 0 and 1 computational states simultaneously, allowing quantum computers to process multiple possibilities in parallel."
+      },
+      {
+        "q": 5,
+        "topic": "Science and technology basics",
+        "question": "Which of the following atmospheric trace gases is quantified globally using Dobson Units (DU) to measure its total vertical column density?",
+        "options": {
+          "A": "Carbon dioxide",
+          "B": "Methane",
+          "C": "Ozone",
+          "D": "Nitrous oxide"
+        },
+        "correct": "C",
+        "explanation": "The Dobson Unit (DU) is the standard measurement unit used in atmospheric chemistry to express the concentration of stratospheric and total column atmospheric ozone."
+      },
+      {
+        "q": 6,
+        "topic": "Biology",
+        "question": "In modern medical technology, mRNA vaccines function in the human body primarily by instructing host cells to synthesize:",
+        "options": {
+          "A": "A harmless viral surface protein that triggers an adaptive immune response",
+          "B": "Live attenuated viral particles that replicate inside immune tissues",
+          "C": "Synthetic neutralizing monoclonal antibodies directly into blood plasma",
+          "D": "Bacterial toxins that selectively destroy target pathogens"
+        },
+        "correct": "A",
+        "explanation": "mRNA vaccines deliver genetic instructions into host cells, prompting them to synthesize a harmless viral antigen protein (such as a spike protein). The immune system recognizes this protein and produces antibodies and memory cells against it."
+      },
+      {
+        "q": 7,
+        "topic": "Physics",
+        "question": "In orbital mechanics, the term \"Lagrange Points\" refers to positions in space where gravitational forces and orbital motion balance to create:",
+        "options": {
+          "A": "A region of intense atmospheric friction",
+          "B": "A zone of extreme radiation that degrades solar collectors",
+          "C": "An artificial wormhole for faster-than-light spaceflight",
+          "D": "A stable gravitational equilibrium location for spacecraft to maintain position"
+        },
+        "correct": "D",
+        "explanation": "Lagrange points are equilibrium positions in a two-body orbital system where gravitational pulls and centripetal forces balance out. Points L4 and L5 are dynamically stable, while L1, L2, and L3 are quasi-stable (requiring minor station-keeping maneuvers), offering strategic equilibrium locations for space observatories."
+      },
+      {
+        "q": 8,
+        "topic": "Science and technology basics",
+        "question": "The operational principle of a Scramjet (Supersonic Combustion Ramjet) engine differs from conventional jet propulsion because it:",
+        "options": {
+          "A": "Carries liquid oxidizer tanks rather than drawing atmospheric oxygen",
+          "B": "Maintains supersonic airflow velocity throughout its internal combustion chamber",
+          "C": "Uses nuclear thermal reactors to heat propellant gases in a vacuum",
+          "D": "Relies exclusively on electrostatic ion acceleration for thrust"
+        },
+        "correct": "B",
+        "explanation": "A Scramjet is an air-breathing engine defined by maintaining supersonic airflow throughout its internal combustion chamber, unlike conventional ramjets which decelerate intake air to subsonic speeds before ignition. They typically operate at high hypersonic speeds."
+      },
+      {
+        "q": 9,
+        "topic": "Science and technology basics",
+        "question": "Optical fiber communication systems achieve high bandwidth and ultra-low signal attenuation over long distances by transmitting data via:",
+        "options": {
+          "A": "High-frequency radio signals prone to ionospheric scattering",
+          "B": "Electric current pulses conducted through heavy metal shielding",
+          "C": "Light pulses guided through glass strands using total internal reflection",
+          "D": "Magnetic induction waves propagating along co-axial wires"
+        },
+        "correct": "C",
+        "explanation": "Fiber optic cables transmit information as pulses of light guided down glass or plastic fibers via total internal reflection, offering high data transmission capacity, minimal signal loss, and complete immunity to electromagnetic interference."
+      },
+      {
+        "q": 10,
+        "topic": "Chemistry",
+        "question": "Nuclear Fusion, the fundamental energy source powering the Sun and stars, requires which condition for light atomic nuclei to fuse together?",
+        "options": {
+          "A": "Extremely high temperatures and pressures to overcome electrostatic repulsion",
+          "B": "Concentrations of heavy uranium isotopes at sub-zero temperatures",
+          "C": "Magnetic absorption fields operating under complete absolute zero vacuum",
+          "D": "Spontaneous neutron emissions triggered during alpha decay"
+        },
+        "correct": "A",
+        "explanation": "Nuclear fusion occurs when light atomic nuclei combine to form a heavier nucleus. Extremely high kinetic temperatures (millions of degrees) and intense pressures are necessary to overcome the repulsive electrostatic Coulomb forces between positively charged nuclei."
+      }
+    ],
+    "Current Affairs": [
+      {
+        "q": 1,
+        "topic": "International events",
+        "question": "The India-Middle East-Europe Economic Corridor (IMEC), announced on the sidelines of the G20 New Delhi Summit, is primarily designed as an infrastructure initiative aimed at:",
+        "options": {
+          "A": "Connecting India, the Arabian Gulf, and Europe to enhance trade, energy, and digital connectivity",
+          "B": "Establishing a trans-Pacific undersea fiber-optic cable network between Asia and South America",
+          "C": "Structuring a preferential trade agreement exclusively among South Asian regional economies",
+          "D": "Creating a maritime logistics corridor connecting West Africa directly with South America"
+        },
+        "correct": "A",
+        "explanation": "The India-Middle East-Europe Economic Corridor (IMEC) is a strategic infrastructure initiative consisting of railway lines, ship-to-rail transit networks, electricity cables, hydrogen pipelines, and high-speed data cables connecting India, the UAE, Saudi Arabia, Jordan, Israel, and European nations to bolster economic integration and supply chain resilience."
+      },
+      {
+        "q": 2,
+        "topic": "International events",
+        "question": "The \"Global Biofuels Alliance\" (GBA) was formally launched under the leadership of India during its G20 Presidency to achieve which key objective?",
+        "options": {
+          "A": "Phasing out biofuels across European transportation sectors by 2030",
+          "B": "Accelerating the global adoption, technical standardization, and international trade of sustainable biofuels",
+          "C": "Establishing a fixed regional price ceiling for palm oil exports among ASEAN nations",
+          "D": "Regulating polar research expeditions under the Antarctic Treaty System"
+        },
+        "correct": "B",
+        "explanation": "The Global Biofuels Alliance (GBA) brings together major biofuel producers and consumers (including India, the United States, and Brazil) to promote international trade in biofuels, facilitate technology transfer, establish global technical standards, and support sustainable biofuel deployment."
+      },
+      {
+        "q": 3,
+        "topic": "International events",
+        "question": "The \"Artemis Accords\", to which India became a signatory, represent an international framework established primarily for:",
+        "options": {
+          "A": "Regulating deep-sea seabed mineral exploration under UNCLOS auspices",
+          "B": "Establishing a multilateral defense alliance in the Indo-Pacific region",
+          "C": "Guiding civil space exploration and peaceful lunar and deep-space cooperation in the 21st century",
+          "D": "Harmonizing global tariffs on agricultural commodities"
+        },
+        "correct": "C",
+        "explanation": "Led by NASA in coordination with signatory nations, the Artemis Accords set out non-binding principles grounded in the 1967 Outer Space Treaty to guide civil space exploration, transparent data sharing, space debris mitigation, and peaceful operations on the Moon, Mars, and beyond."
+      },
+      {
+        "q": 4,
+        "topic": "International events",
+        "question": "The Square Kilometre Array Observatory (SKAO), an international mega-science project in which India is a full member state, is best described as:",
+        "options": {
+          "A": "A deep-sea oceanographic acoustic mapping network in the Atlantic",
+          "B": "A high-altitude solar observation satellite placed in low Earth orbit",
+          "C": "A particle accelerator facility constructed beneath the European Alps",
+          "D": "An international initiative constructing the world's largest radio telescope across South Africa and Australia"
+        },
+        "correct": "D",
+        "explanation": "The SKAO is an intergovernmental organization building the world's most sensitive radio telescope array split across low-frequency sites in Australia and mid-frequency sites in South Africa, enabling transformative research in radio astronomy, cosmic magnetism, and gravity tests."
+      },
+      {
+        "q": 5,
+        "topic": "Important developments",
+        "question": "The operationalization of the \"Loss and Damage Fund\" during the COP28 UNFCCC Climate Summit in Dubai was a landmark decision intended to:",
+        "options": {
+          "A": "Subsidize fossil fuel exploration projects in landlocked developing countries",
+          "B": "Fund military emergency logistics during international natural disasters",
+          "C": "Provide financial assistance to vulnerable developing nations suffering from severe climate change impacts",
+          "D": "Enforce carbon border adjustment taxes on industrial exports across G7 countries"
+        },
+        "correct": "C",
+        "explanation": "The Loss and Damage Fund was established under the UNFCCC framework to support developing countries that are particularly vulnerable to the adverse effects of climate change, assisting them in responding to economic and non-economic loss and damage caused by climate-related extreme events and slow-onset events."
+      },
+      {
+        "q": 6,
+        "topic": "Government initiatives",
+        "question": "India signed the landmark Trade and Economic Partnership Agreement (TEPA) with the European Free Trade Association (EFTA). Which group of countries constitutes EFTA?",
+        "options": {
+          "A": "Iceland, Liechtenstein, Norway, and Switzerland",
+          "B": "France, Germany, Italy, and Spain",
+          "C": "Denmark, Sweden, Finland, and Norway",
+          "D": "United Kingdom, Ireland, Netherlands, and Belgium"
+        },
+        "correct": "A",
+        "explanation": "EFTA (European Free Trade Association) is an intergovernmental organization comprising four non-EU European states: Iceland, Liechtenstein, Norway, and Switzerland. The India-EFTA TEPA aims to boost bilateral trade, foreign direct investment, and job creation."
+      },
+      {
+        "q": 7,
+        "topic": "Government initiatives",
+        "question": "Under the \"PM-Surya Ghar: Muft Bijli Yojana\" launched by the Government of India, the central scheme aims to promote clean energy by:",
+        "options": {
+          "A": "Installing off-grid wind turbines across tribal remote districts",
+          "B": "Providing subsidized solar rooftop installations to one crore households to deliver up to 300 units of free electricity monthly",
+          "C": "Establishing small modular nuclear power reactors in coastal industrial zones",
+          "D": "Distributing free energy-efficient LED streetlights to all municipal corporations"
+        },
+        "correct": "B",
+        "explanation": "PM-Surya Ghar: Muft Bijli Yojana provides central financial assistance (subsidies) to install rooftop solar systems for one crore households across India, enabling families to receive up to 300 units of free electricity per month and generate extra income by selling surplus power."
+      },
+      {
+        "q": 8,
+        "topic": "National events",
+        "question": "The Union Cabinet approved \"Mission Mausam\" to be implemented by the Ministry of Earth Sciences. The primary focus of this initiative is:",
+        "options": {
+          "A": "Mapping underground aquifers in drought-prone agricultural belts",
+          "B": "Monitoring deep-sea coral reef degradation in the Indian Ocean",
+          "C": "Developing solar-powered agricultural irrigation pumps across rural districts",
+          "D": "Enhancing India's weather forecast precision, climate modeling, and atmospheric observation capabilities"
+        },
+        "correct": "D",
+        "explanation": "Mission Mausam is an umbrella initiative led by the Ministry of Earth Sciences to significantly boost India's meteorological infrastructure, incorporating advanced radars, supercomputers, satellite systems, and AI/ML algorithms for highly accurate weather predictions, monsoon tracking, and climate hazard alerts."
+      },
+      {
+        "q": 9,
+        "topic": "Government initiatives",
+        "question": "The Government of India approved the BioE3 Policy. What does the acronym \"BioE3\" stand for in the context of this national policy?",
+        "options": {
+          "A": "Biotechnology for Economy, Environment and Employment",
+          "B": "Bio-energy for Empowerment, Ecology and Exports",
+          "C": "Bio-engineering for Education, Entrepreneurship and Enterprise",
+          "D": "Biological Enrichment for Ethics, Equity and Efficiency"
+        },
+        "correct": "A",
+        "explanation": "The BioE3 (Biotechnology for Economy, Environment and Employment) Policy, spearheaded by the Department of Biotechnology, focuses on fostering high-tech biomanufacturing, establishing bio-foundries, promoting circular bio-economies, and creating sustainable employment opportunities across green sectors."
+      },
+      {
+        "q": 10,
+        "topic": "National events",
+        "question": "The \"Unified Logistics Interface Platform\" (ULIP), launched under the National Logistics Policy, is designed to serve as:",
+        "options": {
+          "A": "A digital payment portal for international cross-border remittances",
+          "B": "A single-window digital gateway integrating logistics data across multiple government ministries and private operators",
+          "C": "An automated traffic signal management network for metropolitan cities",
+          "D": "A web portal for monitoring nationwide railway electrification projects"
+        },
+        "correct": "B",
+        "explanation": "ULIP integrates 34 digital systems across seven ministries (including Railways, Road Transport, Ports, Aviation, and Customs) onto a single platform. It provides real-time tracking, reduces documentation requirements, and streamlines cargo movement across India's logistics landscape."
+      },
+      {
+        "q": 11,
+        "topic": "International events",
+        "question": "The \"Bletchley Declaration\", signed by major global economies including India, represents a pioneering global consensus focused on:",
+        "options": {
+          "A": "Regulating international maritime navigation routes in the Red Sea",
+          "B": "Eliminating single-use plastics from global manufacturing supply chains",
+          "C": "Addressing frontier risks and fostering global cooperation on the safe development of Artificial Intelligence (AI)",
+          "D": "Establishing a global minimum corporate tax rate across OECD countries"
+        },
+        "correct": "C",
+        "explanation": "Signed at the AI Safety Summit at Bletchley Park, UK, the Bletchley Declaration resolved international consensus among 28 nations (including India, the US, UK, China, and EU) to collectively identify, assess, and mitigate frontier AI risks while encouraging human-centric, safe AI development."
+      },
+      {
+        "q": 12,
+        "topic": "Government initiatives",
+        "question": "The \"PM-DevINE\" scheme (Prime Minister's Development Initiative for North East Region) is a Central Sector Scheme funded fully by the Union Government to:",
+        "options": {
+          "A": "Fund infrastructure and social development projects tailored specifically for the North Eastern Region of India",
+          "B": "Provide financial debt relief for small and marginal farmers in drought-affected districts",
+          "C": "Upgrade railway stations across Tier-2 cities under public-private partnerships",
+          "D": "Promote indigenous handicraft exports from Western coastal states"
+        },
+        "correct": "A",
+        "explanation": "PM-DevINE is administered by the Ministry of Development of North Eastern Region (MDoNER). It funds infrastructure, supports social development initiatives, and creates livelihood opportunities for youth and women across the North Eastern states."
+      },
+      {
+        "q": 13,
+        "topic": "International events",
+        "question": "India ratified the \"Kigali Amendment\" to the Montreal Protocol. The primary obligation under this international agreement is to:",
+        "options": {
+          "A": "Ban the use of single-use plastics in commercial consumer packaging",
+          "B": "Reduce global carbon dioxide emissions by 50% relative to 2005 levels",
+          "C": "Regulate transboundary trade in hazardous industrial chemical waste",
+          "D": "Phase down the global production and consumption of hydrofluorocarbons (HFCs)"
+        },
+        "correct": "D",
+        "explanation": "The Kigali Amendment amends the Montreal Protocol to mandate a phased reduction in the manufacture and consumption of Hydrofluorocarbons (HFCs)-potent greenhouse gases commonly used in refrigeration and air conditioning-to prevent up to 0.5 degrees Celsius of global warming by 2100."
+      },
+      {
+        "q": 14,
+        "topic": "National events",
+        "question": "The \"IndUS-X\" (India-U.S. Defence Acceleration Ecosystem) mechanism was launched to strengthen bilateral relations primarily by:",
+        "options": {
+          "A": "Executing joint deep-space planetary exploration missions to Mars",
+          "B": "Fostering defense industrial innovation, joint research, and technology co-development between startups and defense industries of India and the United States",
+          "C": "Formulating a bilateral free trade agreement covering agricultural commodities",
+          "D": "Establishing a defense intelligence-sharing framework across Eastern Europe"
+        },
+        "correct": "B",
+        "explanation": "IndUS-X was launched under the Initiative on Critical and Emerging Technology (iCET) to build a robust defense innovation ecosystem connecting academic institutions, startups, venture capitalists, and defense industries of India and the U.S."
+      },
+      {
+        "q": 15,
+        "topic": "National events",
+        "question": "Under the Kunming-Montreal Global Biodiversity Framework (GBF), the headline \"30x30 Target\" mandates signatory countries to:",
+        "options": {
+          "A": "Reduce national industrial carbon emissions by 30% by 2030",
+          "B": "Increase national forest cover by 30% relative to 1990 baseline levels",
+          "C": "Effectively conserve and manage at least 30% of the world's terrestrial, inland water, coastal, and marine areas by 2030",
+          "D": "Direct 30% of national GDP allocations toward public renewable energy projects"
+        },
+        "correct": "C",
+        "explanation": "Target 3 of the Kunming-Montreal Global Biodiversity Framework (known as the 30x30 target) commits the global community to ensure that by 2030, at least 30% of terrestrial, inland water, coastal, and marine areas are effectively conserved through protected areas and other effective area-based conservation measures (OECMs)."
+      },
+      {
+        "q": 16,
+        "topic": "International events",
+        "question": "The \"Leadership Group for Industry Transition\" (LeadIT), co-founded by India and Sweden, aims to drive global climate action specifically by:",
+        "options": {
+          "A": "Steering heavy, energy-intensive industrial sectors (such as steel, cement, and chemicals) toward low-carbon transition pathways",
+          "B": "Establishing uniform international technical standards for semiconductor microchip production",
+          "C": "Promoting organic agricultural techniques across coastal developing nations",
+          "D": "Regulating carbon offset accounting under international civil aviation guidelines"
+        },
+        "correct": "A",
+        "explanation": "Launched at the UN Climate Action Summit by India and Sweden, LeadIT gathers countries and major industrial companies committed to achieving net-zero carbon emissions from heavy and hard-to-abate industrial sectors by 2050."
+      },
+      {
+        "q": 17,
+        "topic": "International events",
+        "question": "The \"International Big Cat Alliance\" (IBCA), initiated and spearheaded by India, is an international coalition aimed at conserving seven apex big cat species across:",
+        "options": {
+          "A": "Member states of the European Union exclusively",
+          "B": "Global range countries harboring natural habitats of big cat species",
+          "C": "SAARC member countries exclusively",
+          "D": "Sub-Arctic tundra biomes across North America"
+        },
+        "correct": "B",
+        "explanation": "Headquartered in India, the IBCA is a global coalition launched to protect seven big cats: Tiger, Lion, Leopard, Snow Leopard, Puma, Jaguar, and Cheetah. It focuses on capacity building, eco-tourism, research, and anti-poaching support across range countries."
+      }
+    ]
+  }
+}

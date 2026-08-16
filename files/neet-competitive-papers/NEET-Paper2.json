@@ -1,0 +1,2356 @@
+{
+  "paper_id": "NEET-Paper2",
+  "title": "NEET Paper 2",
+  "exam": "NEET",
+  "year": 2026,
+  "subjects": {
+    "Physics": [
+      {
+        "q": 1,
+        "topic": "Physics and Measurement",
+        "question": "The dimensions of magnetic permeability in free space (μ0) are:",
+        "options": {
+          "A": "[M L2 T-2 A-1]",
+          "B": "[M L T-2 A-2]",
+          "C": "[M L T-1 A-1]",
+          "D": "[M L2 T-1 A-2]"
+        },
+        "correct": "B",
+        "explanation": "According to the force per unit length between two parallel conductors, F/L = (μ0 / 2π) (I1 I2 / r). Rearranging gives μ0 = (2π r F) / (L I1 I2). The units are N/A2. Substituting dimensions of force [M L T-2] and current [A] yields [μ0] = [M L T -2 A-2]."
+      },
+      {
+        "q": 2,
+        "topic": "Work, Energy and Power",
+        "question": "A force F = (3 i + 4 j) N acts on a body and displaces it by s = (5 i + 2 j) m. The work done by the force is:",
+        "options": {
+          "A": "15 J",
+          "B": "23 J",
+          "C": "8 J",
+          "D": "22 J"
+        },
+        "correct": "B",
+        "explanation": "Work done is given by the scalar dot product of force and displacement vectors, W = F · s = (3 × 5) + (4 × 2) = 15 + 8 = 23 Joules."
+      },
+      {
+        "q": 3,
+        "topic": "Gravitation",
+        "question": "The escape velocity from the surface of the Earth is ve. If the radius of the Earth contracts to one-fourth of its present value while its mass remains constant, the new escape velocity will be:",
+        "options": {
+          "A": "ve / 2",
+          "B": "ve",
+          "C": "4 ve",
+          "D": "2 ve"
+        },
+        "correct": "D",
+        "explanation": "Escape velocity is given by ve = √(2 G M / R). If mass M remains constant and radius becomes R/4, the new escape velocity is ve' = √(2 G M / (R/4)) = 2 √(2 G M / R) = 2 ve."
+      },
+      {
+        "q": 4,
+        "topic": "Electrostatics",
+        "question": "Two point charges +q and -q are placed at a distance r apart in air. The electric potential at the midpoint of the line joining them is:",
+        "options": {
+          "A": "Zero",
+          "B": "2 k q / r",
+          "C": "4 k q / r",
+          "D": "k q / (2 r)"
+        },
+        "correct": "A",
+        "explanation": "Electric potential is a scalar quantity. At the midpoint, the distance from each charge is r/2. Total potential V = k q / (r/2) + k (-q) / (r/2) = 0."
+      },
+      {
+        "q": 5,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "A circular coil of radius 10 cm carrying a current of 2 A has 50 turns. The magnetic field at the center of the coil is:",
+        "options": {
+          "A": "4π × 10-4 T",
+          "B": "π × 10-4 T",
+          "C": "2π × 10-4 T",
+          "D": "8π × 10-4 T"
+        },
+        "correct": "C",
+        "explanation": "Magnetic field at the center of a circular coil is B = (μ0 N I) / (2 r). Substituting μ0 = 4π × 10-7 T m/A, N = 50, I = 2 A, and r = 0.1 m gives B = (4π × 10-7 × 50 × 2) / (2 × 0.1) = 2π × 10-4 T."
+      },
+      {
+        "q": 6,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "A magnetic needle of magnetic moment 6 × 10-2 A m2 is placed in a uniform magnetic field of 0.2 T at an angle of 30° with the field. The magnitude of torque acting on it is:",
+        "options": {
+          "A": "6 × 10-3 N m",
+          "B": "1.2 × 10-2 N m",
+          "C": "3 × 10-3 N m",
+          "D": "2.4 × 10-3 N m"
+        },
+        "correct": "A",
+        "explanation": "Torque is given by τ = M B sin(θ) = 6 × 10-2 × 0.2 × sin(30°) = 1.2 × 10-2 × 0.5 = 6 × 10-3 N m."
+      },
+      {
+        "q": 7,
+        "topic": "Optics",
+        "question": "A ray of light enters from air into glass of refractive index 1.5. If the speed of light in air is 3 × 108 m/s, the speed of light in glass is:",
+        "options": {
+          "A": "1.5 × 108 m/s",
+          "B": "4.5 × 108 m/s",
+          "C": "2 × 108 m/s",
+          "D": "2.5 × 108 m/s"
+        },
+        "correct": "C",
+        "explanation": "Refractive index μ = c / v. Therefore, speed of light in glass v = c / μ = (3 × 108) / 1.5 = 2 × 108 m/s."
+      },
+      {
+        "q": 8,
+        "topic": "Dual Nature of Matter and Radiation",
+        "question": "The work function of a metal is 2.14 eV. The threshold frequency for photoelectric emission from this metal is approximately:",
+        "options": {
+          "A": "2.14 × 1014 Hz",
+          "B": "3.20 × 1015 Hz",
+          "C": "5.16 × 1014 Hz",
+          "D": "6.63 × 1014 Hz"
+        },
+        "correct": "C",
+        "explanation": "Work function φ = h ν0. Converting φ to Joules: φ = 2.14 × 1.6 × 10-19 J = 3.424 × 10-19 J. Threshold frequency ν0 = φ / h = (3.424 × 10-19) / (6.63 × 10-34) = 5.16 × 1014 Hz."
+      },
+      {
+        "q": 9,
+        "topic": "Atoms and Nuclei",
+        "question": "Two nuclei have mass numbers in the ratio 1 : 8. The ratio of their nuclear radii is:",
+        "options": {
+          "A": "1 : 4",
+          "B": "1 : 2",
+          "C": "1 : 8",
+          "D": "1 : 16"
+        },
+        "correct": "B",
+        "explanation": "Nuclear radius R is given by R = R0 A1/3, where A is the mass number. R1 / R2 = (A1 / A2) 1/3 = (1 / 8)1/3 = 1 /"
+      },
+      {
+        "q": 10,
+        "topic": "Thermodynamics",
+        "question": "10. The efficiency of a Carnot engine working between temperatures 127°C and 27°C is:",
+        "options": {
+          "A": "25 percent",
+          "B": "50 percent",
+          "C": "75 percent",
+          "D": "20 percent"
+        },
+        "correct": "A",
+        "explanation": "Carnot efficiency η = 1 - (Tlower / Thigher). Converting to Kelvin: Tlower = 27 + 273 = 300 K, and Thigher = 127 + 273 = 400 K. Efficiency η = 1 - 300 / 400 = 0.25, or 25 percent."
+      },
+      {
+        "q": 11,
+        "topic": "Optics",
+        "question": "In a Young's double slit experiment, the fringe width is found to be 0.4 mm. If the whole apparatus is immersed in water of refractive index 4/3, the new fringe width will be:",
+        "options": {
+          "A": "0.4 mm",
+          "B": "0.53 mm",
+          "C": "0.2 mm",
+          "D": "0.3 mm"
+        },
+        "correct": "D",
+        "explanation": "Fringe width β is directly proportional to wavelength λ. When immersed in a medium of refractive index μ, wavelength becomes λ / μ, so new fringe width β' = β / μ = 0.4 / (4/3) = 0.3 mm."
+      },
+      {
+        "q": 12,
+        "topic": "Kinematics",
+        "question": "A projectile is thrown with an initial velocity of (6 i + 8 j) m/s. Taking g = 10 m/s2, the horizontal range of the projectile is:",
+        "options": {
+          "A": "9.6 m",
+          "B": "4.8 m",
+          "C": "12.8 m",
+          "D": "14.4 m"
+        },
+        "correct": "A",
+        "explanation": "Initial horizontal velocity ux = 6 m/s and vertical velocity uy = 8 m/s. Time of flight T = 2 uy / g = (2 × 8) / 10 = 1.6 s. Horizontal range R = ux × T = 6 × 1.6 = 9.6 m."
+      },
+      {
+        "q": 13,
+        "topic": "Kinematics",
+        "question": "A particle moves along a straight line such that its displacement x at time t is given by x = 2 t3 - 9 t2 + 12 t + 5. The velocity of the particle when its acceleration becomes zero is:",
+        "options": {
+          "A": "3 m/s",
+          "B": "-3 m/s",
+          "C": "0 m/s",
+          "D": "-1.5 m/s"
+        },
+        "correct": "D",
+        "explanation": "Velocity v = dx/dt = 6 t2 - 18 t + 12. Acceleration a = dv/dt = 12 t - 18. Setting acceleration to zero gives 12 t - 18 = 0, so t = 1.5 s. Substituting t = 1.5 into velocity equation: v = 6(1.5)2 - 18(1.5) + 12 = 13.5 - 27 + 12 = -1.5 m/s."
+      },
+      {
+        "q": 14,
+        "topic": "Laws of Motion",
+        "question": "A block of mass 5 kg is kept on a rough horizontal surface with coefficient of static friction 0.4. A horizontal force of 15 N is applied on the block. The force of friction acting on the block is:",
+        "options": {
+          "A": "20 N",
+          "B": "5 N",
+          "C": "15 N",
+          "D": "Zero"
+        },
+        "correct": "C",
+        "explanation": "Maximum static friction fmax = μs m g = 0.4 × 5 × 10 = 20 N. Since the applied force of 15 N is less than fmax, the block remains at rest and self-adjusting static friction balances the applied force exactly. Hence, friction force is 15 N."
+      },
+      {
+        "q": 15,
+        "topic": "Work, Energy and Power",
+        "question": "Two bodies of masses 1 kg and 4 kg possess equal kinetic energies. The ratio of the magnitudes of their linear momenta is:",
+        "options": {
+          "A": "1 : 4",
+          "B": "1 : 2",
+          "C": "2 : 1",
+          "D": "1 : 16"
+        },
+        "correct": "B",
+        "explanation": "Kinetic energy K and momentum p are related by p = √(2 m K). For two bodies with equal kinetic energy, p1 / p2 = √(m1 / m2) = √(1 / 4) = 1 / 2."
+      },
+      {
+        "q": 16,
+        "topic": "Rotational Motion",
+        "question": "A solid sphere of mass M and radius R rolls without slipping down an inclined plane of inclination θ. The acceleration of the sphere is:",
+        "options": {
+          "A": "g sin(θ)",
+          "B": "(3/5) g sin(θ)",
+          "C": "(5/7) g sin(θ)",
+          "D": "(2/5) g sin(θ)"
+        },
+        "correct": "C",
+        "explanation": "Acceleration of a rolling object down an incline is a = g sin(θ) / (1 + k2 / R2). For a solid sphere, k2 / R2 = 2/5. Thus, a = g sin(θ) / (1 + 2/5) = (5/7) g sin(θ)."
+      },
+      {
+        "q": 17,
+        "topic": "Gravitation",
+        "question": "A satellite is orbiting close to the surface of the Earth. Its orbital speed is approximately equal to:",
+        "options": {
+          "A": "11.2 km/s",
+          "B": "5.5 km/s",
+          "C": "7.9 km/s",
+          "D": "3.1 km/s"
+        },
+        "correct": "C",
+        "explanation": "Orbital speed near Earth's surface is vo = √(g R). Taking g = 9.8 m/s2 and R = 6400 km, vo = √(9.8 × 6.4 × 106) ≈ 7.92 km/s, which is approximately 7.9 km/s."
+      },
+      {
+        "q": 18,
+        "topic": "Properties of Solids and Liquids",
+        "question": "The Young's modulus of a wire of length L and radius r is Y. If the length is reduced to L/2 and radius to r/ 2, the Young's modulus of the wire will be:",
+        "options": {
+          "A": "Y / 2",
+          "B": "2 Y",
+          "C": "4 Y",
+          "D": "Y"
+        },
+        "correct": "D",
+        "explanation": "Young's modulus is a material property depending only on the material and temperature, independent of dimensions like length or radius. Thus, it remains Y."
+      },
+      {
+        "q": 19,
+        "topic": "Kinetic Theory of Gases",
+        "question": "The average kinetic energy of a gas molecule at temperature T is proportional to:",
+        "options": {
+          "A": "T1/2",
+          "B": "T2",
+          "C": "Independent of T",
+          "D": "T"
+        },
+        "correct": "D",
+        "explanation": "According to the kinetic theory of gases, average translational kinetic energy per molecule is E = (3/2) kB T, which is directly proportional to absolute temperature T."
+      },
+      {
+        "q": 20,
+        "topic": "Oscillations and Waves",
+        "question": "A particle executing Simple Harmonic Motion has a maximum velocity of 10 cm/s and maximum acceleration of 31.4 cm/s2. The time period of oscillation is:",
+        "options": {
+          "A": "1 s",
+          "B": "3.14 s",
+          "C": "2 s",
+          "D": "0.5 s"
+        },
+        "correct": "C",
+        "explanation": "Maximum velocity vmax = ω A = 10 cm/s. Maximum acceleration amax = ω2 A = 31.4 cm/s2. Dividing amax by vmax gives ω = 31.4 / 10 = 3.14 rad/s. Time period T = 2π / ω = 2 × 3.14 / 3.14 = 2 s."
+      },
+      {
+        "q": 21,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "The magnetic flux linked with a coil changes according to φ = 5 t2 + 3 t + 16 (in Weber). The magnitude of induced electromotive force in the coil at t = 2 s is:",
+        "options": {
+          "A": "13 V",
+          "B": "23 V",
+          "C": "16 V",
+          "D": "30 V"
+        },
+        "correct": "B",
+        "explanation": "According to Faraday's Law, induced emf magnitude e = dφ/dt. Differentiating φ gives dφ/dt = 10 t + 3. At t = 2 s, e = 10(2) + 3 = 23 V."
+      },
+      {
+        "q": 22,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "An alternating current is given by I = 10 sin(100π t) A. The root mean square value of current and its frequency are respectively:",
+        "options": {
+          "A": "10 A and 100 Hz",
+          "B": "10√2 A and 50 Hz",
+          "C": "5√2 A and 50 Hz",
+          "D": "5 A and 100 Hz"
+        },
+        "correct": "C",
+        "explanation": "Peak current I0 = 10 A, so Irms = I0 / √2 = 10 / √2 = 5√2 A. Angular frequency ω = 100π, so frequency f = ω / (2π) = 100π / (2π) = 50 Hz."
+      },
+      {
+        "q": 23,
+        "topic": "Rotational Motion",
+        "question": "The moment of inertia of a uniform circular disc of mass M and radius R about an axis passing through its center and perpendicular to its plane is I0. Its moment of inertia about a diameter is:",
+        "options": {
+          "A": "I0",
+          "B": "I0 / 2",
+          "C": "2 I0",
+          "D": "I0 / 4"
+        },
+        "correct": "B",
+        "explanation": "According to the perpendicular axis theorem for a planar lamina, Iz = Ix + Iy. By symmetry, Ix = Iy = Id. Therefore, I0 = 2 Id, which gives Id = I0 / 2."
+      },
+      {
+        "q": 24,
+        "topic": "Properties of Solids and Liquids",
+        "question": "An ideal fluid flows through a horizontal pipe of varying cross-section. At a point where the crosssectional area is A, the velocity of flow is v. At another point where area is A/2, the velocity of flow will be:",
+        "options": {
+          "A": "v / 2",
+          "B": "v",
+          "C": "2 v",
+          "D": "4 v"
+        },
+        "correct": "C",
+        "explanation": "By the equation of continuity for an incompressible fluid, A1 v1 = A2 v2. Here A v = (A/2) v2, which gives v2 = 2 v."
+      },
+      {
+        "q": 25,
+        "topic": "Thermodynamics",
+        "question": "A black body at a temperature of 227°C radiates heat at a rate of 20 W. When its temperature is raised to 727°C, the rate of heat radiation will be:",
+        "options": {
+          "A": "80 W",
+          "B": "160 W",
+          "C": "320 W",
+          "D": "640 W"
+        },
+        "correct": "C",
+        "explanation": "According to Stefan-Boltzmann law, rate of radiation E ∝ T4. T1 = 227 + 273 = 500 K, and T2 = 727 + 273 = 1000 K. The ratio E2 / E1 = (1000 / 500)4 = 24 = 16. E2 = 16 × 20 W = 320 W."
+      },
+      {
+        "q": 26,
+        "topic": "Thermodynamics",
+        "question": "An ideal gas undergoes a thermodynamic process in which work done by the gas is equal to the decrease in its internal energy. The process is:",
+        "options": {
+          "A": "Isothermal",
+          "B": "Isochoric",
+          "C": "Isobaric",
+          "D": "Adiabatic"
+        },
+        "correct": "D",
+        "explanation": "By the First Law of Thermodynamics, dQ = dU + dW. For an adiabatic process, heat transfer dQ = 0, which gives dW = -dU. This means work done by the gas equals the decrease in internal energy."
+      },
+      {
+        "q": 27,
+        "topic": "Oscillations and Waves",
+        "question": "Two progressive waves are represented by y1 = A sin(ω t - k x) and y2 = A cos(ω t - k x). The phase difference between the two waves is:",
+        "options": {
+          "A": "π / 2",
+          "B": "Zero",
+          "C": "π / 4",
+          "D": "π"
+        },
+        "correct": "A",
+        "explanation": "The second wave can be rewritten in sine form as y2 = A sin(ω t - k x + π / 2). Comparing phase terms reveals a phase difference of π / 2 radians."
+      },
+      {
+        "q": 28,
+        "topic": "Electrostatics",
+        "question": "A parallel plate capacitor with air between plates has a capacitance C. If a dielectric slab of dielectric constant K = 5 is inserted to fill the space between plates completely, the new capacitance becomes:",
+        "options": {
+          "A": "C / 5",
+          "B": "5 C",
+          "C": "C",
+          "D": "25 C"
+        },
+        "correct": "B",
+        "explanation": "Inserting a dielectric medium of dielectric constant K increases the capacitance by a factor of K. Thus, C' = K C = 5 C."
+      },
+      {
+        "q": 29,
+        "topic": "Current Electricity",
+        "question": "The electric resistance of a uniform metallic wire of length L and cross-sectional area A is R. If the wire is stretched uniformly to twice its original length, its new resistance becomes:",
+        "options": {
+          "A": "R",
+          "B": "4 R",
+          "C": "2 R",
+          "D": "8 R"
+        },
+        "correct": "B",
+        "explanation": "Volume V = A L remains constant. If length increases to 2 L, area decreases to A/2. New resistance R' = ρ (2 L) / (A / 2) = 4 (ρ L / A) = 4 R."
+      },
+      {
+        "q": 30,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "The angle of dip at a place where the horizontal component of Earth's magnetic field is equal to its vertical component is:",
+        "options": {
+          "A": "0°",
+          "B": "30°",
+          "C": "60°",
+          "D": "45°"
+        },
+        "correct": "D",
+        "explanation": "The angle of dip δ is given by tan(δ) = Bv / Bh. Since Bv = Bh, tan(δ) = 1, which means δ = 45°."
+      },
+      {
+        "q": 31,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "In a series LCR circuit, R = 10 Ω, XL = 20 Ω, and XC = 10 Ω. The phase angle between voltage and current is:",
+        "options": {
+          "A": "0°",
+          "B": "30°",
+          "C": "60°",
+          "D": "45°"
+        },
+        "correct": "D",
+        "explanation": "Phase angle φ is given by tan(φ) = (XL - XC) / R = (20 - 10) / 10 = 1. Therefore, φ = 45°."
+      },
+      {
+        "q": 32,
+        "topic": "Atoms and Nuclei",
+        "question": "Which of the following electromagnetic waves has the shortest wavelength?",
+        "options": {
+          "A": "Radiowaves",
+          "B": "Microwaves",
+          "C": "Ultraviolet rays",
+          "D": "Gamma rays"
+        },
+        "correct": "D",
+        "explanation": "Gamma rays have the highest frequency in the electromagnetic spectrum, and since wavelength is inversely proportional to frequency, gamma rays have the shortest wavelength."
+      },
+      {
+        "q": 33,
+        "topic": "Atoms and Nuclei",
+        "question": "In a hydrogen atom, the ratio of energy of electron in first orbit to that in third orbit is:",
+        "options": {
+          "A": "1 : 3",
+          "B": "3 : 1",
+          "C": "1 : 9",
+          "D": "9 : 1"
+        },
+        "correct": "D",
+        "explanation": "Energy of electron in nth orbit En ∝ -1 / n2. E1 / E3 = (1 / 12) / (1 / 32) = 9 / 1 = 9 : 1."
+      },
+      {
+        "q": 34,
+        "topic": "Current Electricity",
+        "question": "A wire of resistance 12 Ω is bent in the form of a circular ring. The equivalent resistance between two diametrically opposite points is:",
+        "options": {
+          "A": "3 Ω",
+          "B": "6 Ω",
+          "C": "12 Ω",
+          "D": "24 Ω"
+        },
+        "correct": "A",
+        "explanation": "Two diametrically opposite points divide the ring into two equal semi-circular halves. Each half has resistance 12 / 2 = 6 Ω. Connected in parallel, Req = (6 × 6) / (6 + 6) = 3 Ω."
+      },
+      {
+        "q": 35,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "A galvanometer of resistance 50 Ω gives full scale deflection for a current of 2 mA. To convert it into a voltmeter of range 0 to 10 V, the resistance to be connected in series is:",
+        "options": {
+          "A": "5000 Ω",
+          "B": "5050 Ω",
+          "C": "4950 Ω",
+          "D": "4900 Ω"
+        },
+        "correct": "C",
+        "explanation": "Series resistance required R = (V / Ig) - G. Here V = 10 V, Ig = 0.002 A, and G = 50 Ω. R = (10 / 0.002) - 50 = 5000 - 50 = 4950 Ω."
+      },
+      {
+        "q": 36,
+        "topic": "Optics",
+        "question": "A convex lens of focal length 20 cm is placed in contact with a concave lens of focal length 10 cm. The focal length of the combination is:",
+        "options": {
+          "A": "-20 cm",
+          "B": "+20 cm",
+          "C": "+10 cm",
+          "D": "-10 cm"
+        },
+        "correct": "A",
+        "explanation": "Power of combination P = P1 + P2 = (1 / f1) + (1 / f2). Here f1 = +0.2 m, f2 = -0.1 m. P = (1 / 0.2) + (1 / -0.1) = +5 - 10 = -5 D. Equivalent focal length f = 1 / P = 1 / (-5) = -0.2 m = -20 cm."
+      },
+      {
+        "q": 37,
+        "topic": "Optics",
+        "question": "Unpolarized light of intensity I0 is incident on a polarizer. The intensity of transmitted light is:",
+        "options": {
+          "A": "I0",
+          "B": "I0 / 4",
+          "C": "Zero",
+          "D": "I0 / 2"
+        },
+        "correct": "D",
+        "explanation": "According to Malus's Law, when completely unpolarized light passes through a linear polarizer, the transmitted intensity is half of the initial intensity, i.e., I0 / 2."
+      },
+      {
+        "q": 38,
+        "topic": "Dual Nature of Matter and Radiation",
+        "question": "An electron and an alpha particle have the same kinetic energy. The ratio of de Broglie wavelength of electron to that of alpha particle is:",
+        "options": {
+          "A": "Greater than 1",
+          "B": "Equal to 1",
+          "C": "Less than 1",
+          "D": "Zero"
+        },
+        "correct": "A",
+        "explanation": "de Broglie wavelength λ = h / √(2 m K). For equal kinetic energy K, λ is inversely proportional to √m. Since mass of electron is much smaller than mass of alpha particle (me < mα), the de Broglie wavelength of electron is much greater than that of alpha particle, so the ratio is greater than 1."
+      },
+      {
+        "q": 39,
+        "topic": "Atoms and Nuclei",
+        "question": "The total energy of an electron in the ground state of hydrogen atom is -13.6 eV. Its kinetic energy and potential energy in this state are respectively:",
+        "options": {
+          "A": "+13.6 eV and -27.2 eV",
+          "B": "-13.6 eV and +27.2 eV",
+          "C": "+13.6 eV and -13.6 eV",
+          "D": "+27.2 eV and -27.2 eV"
+        },
+        "correct": "A",
+        "explanation": "For an electron in a hydrogen atom, kinetic energy K = -(Total Energy) = +13.6 eV. Potential energy U = 2 × (Total Energy) = -27.2 eV."
+      },
+      {
+        "q": 40,
+        "topic": "Atoms and Nuclei",
+        "question": "The half-life of a radioactive substance is 20 minutes. The time taken for 75 percent of the sample to decay is:",
+        "options": {
+          "A": "20 minutes",
+          "B": "40 minutes",
+          "C": "60 minutes",
+          "D": "80 minutes"
+        },
+        "correct": "B",
+        "explanation": "Decay of 75 percent means 25 percent (or 1/4th) of the original substance remains. Fraction remaining N/N0 = (1/2)n, where n is number of half-lives. 1/4 = (1/2)2, so n = 2 half-lives. Total time t = 2 × 20 = 40 minutes."
+      },
+      {
+        "q": 41,
+        "topic": "Electronic Devices",
+        "question": "In an intrinsic semiconductor at absolute zero temperature, the conduction band has:",
+        "options": {
+          "A": "A large number of electrons",
+          "B": "Zero electrons",
+          "C": "A small number of electrons",
+          "D": "Equal number of holes and electrons"
+        },
+        "correct": "B",
+        "explanation": "At absolute zero temperature (0 K), electrons do not possess thermal energy to jump across the energy band gap into the conduction band. Thus, the conduction band is completely empty (zero electrons)."
+      },
+      {
+        "q": 42,
+        "topic": "Electronic Devices",
+        "question": "When a p-n junction diode is forward biased, the width of the depletion layer:",
+        "options": {
+          "A": "Increases",
+          "B": "Decreases",
+          "C": "Remains constant",
+          "D": "First increases then decreases"
+        },
+        "correct": "B",
+        "explanation": "In forward bias, the applied external electric field opposes the built-in barrier potential. This pushes majority charge carriers towards the junction, reducing the width of the depletion region."
+      },
+      {
+        "q": 43,
+        "topic": "Electronic Devices",
+        "question": "The output of a two-input NAND gate is LOW (0) only when:",
+        "options": {
+          "A": "Both inputs are HIGH (1)",
+          "B": "Both inputs are LOW (0)",
+          "C": "One input is HIGH (1) and the other is LOW (0)",
+          "D": "At least one input is LOW (0)"
+        },
+        "correct": "A",
+        "explanation": "A NAND gate is an AND gate followed by a NOT gate. The AND operation gives 1 only when both inputs are 1, so the NAND operation inverts this output to 0 only when both inputs are 1."
+      },
+      {
+        "q": 44,
+        "topic": "Thermodynamics",
+        "question": "A body cools from 80°C to 60°C in 10 minutes. If the surrounding temperature is 30°C, the time taken to cool from 60°C to 40°C is:",
+        "options": {
+          "A": "20 minutes",
+          "B": "10 minutes",
+          "C": "12 minutes",
+          "D": "15 minutes"
+        },
+        "correct": "A",
+        "explanation": "(80-60)/10 = K(70-30) ⇒ K = 1/20. Then (60-40)/t = (1/20)(50-30) ⇒ 20/t = 1 ⇒ t = 20 minutes."
+      },
+      {
+        "q": 45,
+        "topic": "Electronic Devices",
+        "question": "The fundamental frequency of a closed organ pipe of length L is f. If its length is doubled, its fundamental frequency becomes:",
+        "options": {
+          "A": "f / 4",
+          "B": "2 f",
+          "C": "4 f",
+          "D": "f / 2"
+        },
+        "correct": "D",
+        "explanation": "The fundamental frequency of a closed organ pipe is f = v / (4 L). If length is doubled (L' = 2 L), the new fundamental frequency f' = v / (4 × 2 L) = (1 / 2) (v / 4 L) = f / 2."
+      }
+    ],
+    "Chemistry": [
+      {
+        "q": 1,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "The number of moles of hydrogen molecules required to produce 20 moles of ammonia through Haber's process is:",
+        "options": {
+          "A": "10 moles",
+          "B": "20 moles",
+          "C": "30 moles",
+          "D": "40 moles"
+        },
+        "correct": "C",
+        "explanation": "According to the balanced chemical equation N2 + 3 H2 -> 2 NH3, 2 moles of NH3 require 3 moles of H2. Therefore, to produce 20 moles of NH3, the moles of H2 required = (3/2) * 20 = 30 moles."
+      },
+      {
+        "q": 2,
+        "topic": "Atomic Structure",
+        "question": "The radius of the second Bohr orbit for hydrogen atom is approximately:",
+        "options": {
+          "A": "0.529 Angstrom",
+          "B": "1.058 Angstrom",
+          "C": "2.116 Angstrom",
+          "D": "4.232 Angstrom"
+        },
+        "correct": "C",
+        "explanation": "Bohr radius formula is r_n = 0.529 * (n^2 / Z) Angstrom. For hydrogen (Z = 1) and second orbit (n = 2), r_2 = 0.529 * 4 = 2.116 Angstrom."
+      },
+      {
+        "q": 3,
+        "topic": "Biomolecules",
+        "question": "An ideal gas expands isothermally and reversibly from 1 L to 10 L at 300 K. The change in internal energy (delta U) for this process is:",
+        "options": {
+          "A": "Zero",
+          "B": "Positive",
+          "C": "Negative",
+          "D": "Depends on pressure"
+        },
+        "correct": "A",
+        "explanation": "For an ideal gas, internal energy depends solely on temperature. In an isothermal process, temperature remains constant (delta T = 0), so the change in internal energy delta U is zero."
+      },
+      {
+        "q": 4,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "For the reversible reaction N2(g) + 3 H2(g) <=> 2 NH3(g), the relationship between K_p and K_c is given by:",
+        "options": {
+          "A": "K_p = K_c (R T)^2",
+          "B": "K_p = K_c (R T)^-1",
+          "C": "K_p = K_c",
+          "D": "K_p = K_c (R T)^-2"
+        },
+        "correct": "D",
+        "explanation": "K_p and K_c are related by K_p = K_c (R T)^(delta n_g). Here, delta n_g = moles of gaseous products - moles of gaseous reactants = 2 - (1 + 3) = -2. Thus, K_p = K_c (R T)^-2."
+      },
+      {
+        "q": 5,
+        "topic": "Equilibrium",
+        "question": "The pH of a 0.01 M aqueous solution of sodium hydroxide (NaOH) at 25 degrees Celsius is:",
+        "options": {
+          "A": "12",
+          "B": "2",
+          "C": "10",
+          "D": "7"
+        },
+        "correct": "A",
+        "explanation": "NaOH is a strong base, fully dissociating into OH- ions. [OH-] = 0.01 M = 10^-2 M. Therefore, pOH = - log[OH-] = 2. Since pH + pOH = 14 at 25 degrees Celsius, pH = 14 - 2 = 12."
+      },
+      {
+        "q": 6,
+        "topic": "Redox Reactions and Electrochemistry",
+        "question": "The molar conductivity of a 0.1 M KCl solution is 138.9 S cm^2 mol^-1. The specific conductivity (k) of the solution in S cm^-1 is:",
+        "options": {
+          "A": "0.1389",
+          "B": "0.01389",
+          "C": "1.389",
+          "D": "13.89"
+        },
+        "correct": "B",
+        "explanation": "Molar conductivity Lambda_m = (1000 * k) / M. Rearranging gives specific conductivity k = (Lambda_m * M) / 1000 = (138.9 * 0.1) / 1000 = 0.01389 S cm^-1."
+      },
+      {
+        "q": 7,
+        "topic": "Chemical Kinetics",
+        "question": "A first-order reaction is 50 percent complete in 20 minutes. The time required for 75 percent completion of the reaction is:",
+        "options": {
+          "A": "30 minutes",
+          "B": "40 minutes",
+          "C": "60 minutes",
+          "D": "80 minutes"
+        },
+        "correct": "B",
+        "explanation": "For a first-order reaction, the time required for 75 percent completion is equal to 2 half-lives (t_75% = 2 * t_1/2). Since half-life t_1/2 = 20 minutes, t_75% = 2 * 20 = 40 minutes."
+      },
+      {
+        "q": 8,
+        "topic": "Biomolecules",
+        "question": "Which of the following aqueous solutions will have the highest boiling point?",
+        "options": {
+          "A": "0.1 M Glucose",
+          "B": "0.1 M NaCl",
+          "C": "0.1 M Urea",
+          "D": "0.1 M BaCl2"
+        },
+        "correct": "D",
+        "explanation": "Elevation in boiling point depends on the van't Hoff factor (i). BaCl2 dissociates into 3 ions (i = 3), NaCl gives 2 ions (i = 2), while Glucose and Urea are non-electrolytes (i = 1). Higher i means higher boiling point elevation, so 0.1 M BaCl2 has the highest boiling point."
+      },
+      {
+        "q": 9,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "The Henry's law constant for solubility of N2 gas in water at 298 K is 10^5 atm. The mole fraction of N2 in air is 0.8. The mole fraction of N2 dissolved in water under 5 atm total air pressure is:",
+        "options": {
+          "A": "4.0 * 10^-6",
+          "B": "5.0 * 10^-5",
+          "C": "4.0 * 10^-5",
+          "D": "2.0 * 10^-5"
+        },
+        "correct": "C",
+        "explanation": "Partial pressure of N2 = 0.8 * 5 atm = 4 atm. According to Henry's Law, P = K_H * x. Mole fraction x = P / K_H = 4 / 10^5 = 4.0 * 10^-5."
+      },
+      {
+        "q": 10,
+        "topic": "p-Block Elements",
+        "question": "The oxidation number of phosphorus in orthophosphoric acid (H3PO4) is:",
+        "options": {
+          "A": "+3",
+          "B": "+1",
+          "C": "+5",
+          "D": "-3"
+        },
+        "correct": "C",
+        "explanation": "In H3PO4, let the oxidation state of P be x. 3(+1) + x + 4(-2) = 0 => 3 + x - 8 = 0 => x = +5."
+      },
+      {
+        "q": 11,
+        "topic": "Atomic Structure",
+        "question": "The maximum number of electrons that can be accommodated in a subshell with azimuthal quantum number l = 3 is:",
+        "options": {
+          "A": "6",
+          "B": "10",
+          "C": "18",
+          "D": "14"
+        },
+        "correct": "D",
+        "explanation": "The maximum number of electrons in a subshell is given by 2(2l + 1). For l = 3 (f-subshell), maximum electrons = 2(2*3 + 1) = 2(7) = 14."
+      },
+      {
+        "q": 12,
+        "topic": "Chemical Kinetics",
+        "question": "If the rate constant of a reaction has the units mol L^-1 s^-1, the order of the reaction is:",
+        "options": {
+          "A": "Zero order",
+          "B": "First order",
+          "C": "Second order",
+          "D": "Third order"
+        },
+        "correct": "A",
+        "explanation": "Unit of rate constant k is (mol L^-1)^(1-n) s^-1, where n is order of reaction. For n = 0, units are mol L^-1 s^-1, which corresponds to zero-order kinetics."
+      },
+      {
+        "q": 13,
+        "topic": "Redox Reactions and Electrochemistry",
+        "question": "The charge in Coulombs required for the reduction of 1 mole of Al3+ ions to Al is:",
+        "options": {
+          "A": "96500 C",
+          "B": "193000 C",
+          "C": "386000 C",
+          "D": "289500 C"
+        },
+        "correct": "D",
+        "explanation": "The reduction equation is Al3+ + 3e- -> Al. 1 mole of Al3+ requires 3 moles of electrons = 3 Faraday = 3 * 96500 C = 289500 C."
+      },
+      {
+        "q": 14,
+        "topic": "Equilibrium",
+        "question": "Addition of an inert gas at constant volume to a system in equilibrium:",
+        "options": {
+          "A": "Shifts equilibrium toward products",
+          "B": "Has no effect on equilibrium state",
+          "C": "Shifts equilibrium toward reactants",
+          "D": "Increases total pressure and shifts position"
+        },
+        "correct": "B",
+        "explanation": "At constant volume, addition of an inert gas increases total pressure, but partial pressures and molar concentrations of reacting species remain unchanged. Thus, it has no effect on equilibrium."
+      },
+      {
+        "q": 15,
+        "topic": "Chemical Thermodynamics",
+        "question": "A reaction is spontaneous at all temperatures if:",
+        "options": {
+          "A": "delta H is negative and delta S is positive",
+          "B": "delta H is positive and delta S is positive",
+          "C": "delta H is negative and delta S is negative",
+          "D": "delta H is positive and delta S is negative"
+        },
+        "correct": "A",
+        "explanation": "Gibbs free energy change is delta G = delta H - T delta S. For spontaneity, delta G must be negative. If delta H < 0 and delta S > 0, delta G is strictly negative at all absolute temperatures."
+      },
+      {
+        "q": 16,
+        "topic": "p-Block Elements",
+        "question": "Which of the following oxide species is most amphoteric in nature?",
+        "options": {
+          "A": "Na2O",
+          "B": "Cl2O7",
+          "C": "SO3",
+          "D": "Al2O3"
+        },
+        "correct": "D",
+        "explanation": "Na2O is basic, Cl2O7 and SO3 are strongly acidic oxides. Al2O3 reacts with both acids and bases, making it amphoteric."
+      },
+      {
+        "q": 17,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "The shape and hybridization of XeF4 molecule are respectively:",
+        "options": {
+          "A": "Tetrahedral, sp3",
+          "B": "See-saw, sp3d",
+          "C": "Octahedral, sp3d2",
+          "D": "Square planar, sp3d2"
+        },
+        "correct": "D",
+        "explanation": "Xe has 8 valence electrons. In XeF4, Xe forms 4 single bonds with F and has 2 lone pairs. Steric number = 4 + 2 = 6, corresponding to sp3d2 hybridization. Two lone pairs occupy axial positions to minimize repulsion, yielding square planar geometry."
+      },
+      {
+        "q": 18,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "Which of the following diatomic species possesses the highest bond order?",
+        "options": {
+          "A": "O2",
+          "B": "O2-",
+          "C": "O2^2-",
+          "D": "O2+"
+        },
+        "correct": "D",
+        "explanation": "According to Molecular Orbital Theory, bond orders are: O2 = 2.0, O2+ = 2.5, O2- = 1.5, O2^2- = 1.0. Therefore, O2+ has the highest bond order of 2.5."
+      },
+      {
+        "q": 19,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "Which of the following nitrogen oxides is neutral in nature and paramagnetic?",
+        "options": {
+          "A": "NO",
+          "B": "N2O",
+          "C": "NO2",
+          "D": "N2O5"
+        },
+        "correct": "A",
+        "explanation": "Nitric oxide (NO) is neutral toward litmus and contains an odd number of valence electrons (11 electrons), making it paramagnetic."
+      },
+      {
+        "q": 20,
+        "topic": "d- and f-Block Elements",
+        "question": "The magnetic moment (spin-only value) of a divalent ion of an element with atomic number 25 in aqueous solution is:",
+        "options": {
+          "A": "5.92 BM",
+          "B": "3.87 BM",
+          "C": "4.90 BM",
+          "D": "2.84 BM"
+        },
+        "correct": "A",
+        "explanation": "Element with atomic number 25 is Mn. Electronic configuration of Mn is [Ar] 3d5 4s2. Mn2+ has [Ar] 3d5 configuration, with 5 unpaired electrons (n = 5). Spin-only magnetic moment = sqrt(n(n+2)) = sqrt(5*7) = sqrt(35) = 5.92 BM."
+      },
+      {
+        "q": 21,
+        "topic": "Some Basic Principles of Organic Chemistry",
+        "question": "The IUPAC name of the complex [Co(NH3)5(CO3)]Cl is:",
+        "options": {
+          "A": "Pentaamminecarbonatocobalt(II) chloride",
+          "B": "Pentaamminecarbonatocobalt(III) chloride",
+          "C": "Carbonatopentaamminecobalt(III) chloride",
+          "D": "Pentaamminechlorocobalt(III) carbonate"
+        },
+        "correct": "B",
+        "explanation": "Ligands are named alphabetically: ammine (NH3) before carbonato (CO3^2-). Oxidation state of Co = x + 0 + (-2) + (-1) = 0 => x = +3. Hence, the IUPAC name is Pentaamminecarbonatocobalt(III) chloride."
+      },
+      {
+        "q": 22,
+        "topic": "Coordination Compounds",
+        "question": "The complex ion [Fe(CN)6]^3- exhibits low spin due to strong field ligand CN-. The number of unpaired electrons in this complex is:",
+        "options": {
+          "A": "0",
+          "B": "2",
+          "C": "5",
+          "D": "1"
+        },
+        "correct": "D",
+        "explanation": "In [Fe(CN)6]^3-, Fe is in +3 oxidation state (3d5). CN- is a strong field ligand causing pairing of d-electrons in t2g orbital: t2g5 eg0. This leaves 1 unpaired electron."
+      },
+      {
+        "q": 23,
+        "topic": "p-Block Elements",
+        "question": "Borax on heating strongly forms a transparent glass-like bead composed of:",
+        "options": {
+          "A": "Na2B4O7 and B2O3",
+          "B": "B2O3 and NaBO2",
+          "C": "NaBO2 and NaPO3",
+          "D": "H3BO3 and NaBO2"
+        },
+        "correct": "B",
+        "explanation": "On heating, borax (Na2B4O7.10H2O) loses water of crystallization to form anhydrous Na2B4O7, which melts into a transparent glass bead consisting of sodium metaborate (NaBO2) and boric anhydride (B2O3)."
+      },
+      {
+        "q": 24,
+        "topic": "Classification of Elements and Periodicity in Properties",
+        "question": "Which of the following elements has the highest negative electron gain enthalpy?",
+        "options": {
+          "A": "Fluorine",
+          "B": "Chlorine",
+          "C": "Bromine",
+          "D": "Iodine"
+        },
+        "correct": "B",
+        "explanation": "Chlorine has a more negative electron gain enthalpy (-349 kJ/mol) than Fluorine (-328 kJ/mol) due to the small size of Fluorine, which leads to strong inter-electronic repulsions in its compact 2p subshell."
+      },
+      {
+        "q": 25,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "According to VSEPR theory, the molecule with a see-saw geometry is:",
+        "options": {
+          "A": "ClF3",
+          "B": "NH3",
+          "C": "SF4",
+          "D": "BF3"
+        },
+        "correct": "C",
+        "explanation": "SF4 has 4 bond pairs and 1 lone pair on sulfur (steric number = 5, sp3d hybridization). The single lone pair occupies an equatorial position, resulting in a see-saw molecular shape."
+      },
+      {
+        "q": 26,
+        "topic": "p-Block Elements",
+        "question": "The diborane molecule (B2H6) contains:",
+        "options": {
+          "A": "Four 3-center-2-electron bonds",
+          "B": "Six 2-center-2-electron bonds",
+          "C": "Two 2-center-2-electron bonds and four 3-center-2-electron bonds",
+          "D": "Two 3-center-2-electron bonds and four 2-center-2-electron bonds"
+        },
+        "correct": "D",
+        "explanation": "Diborane contains 4 terminal B-H bonds which are normal 2-center-2-electron bonds, and 2 bridging B-H-B bonds which are electron-deficient 3-center-2-electron (banana) bonds."
+      },
+      {
+        "q": 27,
+        "topic": "d- and f-Block Elements",
+        "question": "Lanthanoid contraction is primarily caused by:",
+        "options": {
+          "A": "Effective shielding of 4f electrons",
+          "B": "Increase in atomic size across series",
+          "C": "Imperfect shielding of 4f electrons",
+          "D": "Decrease in effective nuclear charge"
+        },
+        "correct": "C",
+        "explanation": "4f orbitals have a diffused shape and exert poor (imperfect) shielding effect on outer electrons. As nuclear charge increases across the series, outer electrons experience greater attraction, leading to lanthanoid contraction."
+      },
+      {
+        "q": 28,
+        "topic": "Coordination Compounds",
+        "question": "Which of the following ligands is an ambidentate ligand?",
+        "options": {
+          "A": "Nitrito (NO2-)",
+          "B": "Ethylenediamine",
+          "C": "Oxalate (C2O4^2-)",
+          "D": "Water (H2O)"
+        },
+        "correct": "A",
+        "explanation": "An ambidentate ligand can coordinate to a central metal ion through two different donor atoms. Nitrito ion can bind through Nitrogen (-NO2) or Oxygen (-ONO)."
+      },
+      {
+        "q": 29,
+        "topic": "p-Block Elements",
+        "question": "The oxoacid of phosphorus containing a P-P single bond is:",
+        "options": {
+          "A": "Hypophosphoric acid",
+          "B": "Pyrophosphoric acid",
+          "C": "Orthophosphoric acid",
+          "D": "Metaphosphoric acid"
+        },
+        "correct": "A",
+        "explanation": "Hypophosphoric acid (H4P2O6) contains a direct P-P bond, with phosphorus in the +4 oxidation state."
+      },
+      {
+        "q": 30,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "Which of the following species is diamagnetic in nature?",
+        "options": {
+          "A": "N2",
+          "B": "O2",
+          "C": "NO",
+          "D": "B2"
+        },
+        "correct": "A",
+        "explanation": "N2 has 14 valence electrons with all electrons fully paired in molecular orbitals, making it diamagnetic. O2, NO, and B2 possess unpaired electrons and are paramagnetic."
+      },
+      {
+        "q": 31,
+        "topic": "Some Basic Principles of Organic Chemistry",
+        "question": "Which of the following carbocations is the most stable?",
+        "options": {
+          "A": "tert-Butyl carbocation",
+          "B": "Methyl carbocation",
+          "C": "Ethyl carbocation",
+          "D": "Isopropyl carbocation"
+        },
+        "correct": "A",
+        "explanation": "tert-Butyl carbocation (CH3)3C+ has 9 alpha-hydrogens, enabling extensive hyperconjugation along with tertiary inductive stabilization (+I effect of 3 methyl groups), making it the most stable."
+      },
+      {
+        "q": 32,
+        "topic": "Hydrocarbons",
+        "question": "Ozonolysis of 2-methylbut-2-ene followed by reaction with Zn/H2O yields:",
+        "options": {
+          "A": "Propanal and Ethanal",
+          "B": "Propanone and Methanal",
+          "C": "Propanone and Ethanal",
+          "D": "Butanone and Methanal"
+        },
+        "correct": "C",
+        "explanation": "Structure of 2-methylbut-2-ene is (CH3)2C=CH-CH3. Cleaving the double bond via ozonolysis gives propanone (CH3-CO-CH3) and ethanal (CH3-CHO)."
+      },
+      {
+        "q": 33,
+        "topic": "Organic Compounds Containing Halogens",
+        "question": "The reaction of alkyl halide with aqueous KOH proceeds predominantly via SN2 mechanism when the alkyl group is:",
+        "options": {
+          "A": "Secondary",
+          "B": "Primary",
+          "C": "Tertiary",
+          "D": "Allylic"
+        },
+        "correct": "B",
+        "explanation": "SN2 mechanism is favored by minimal steric hindrance at the reaction center. Primary alkyl halides have the least steric crowding, allowing nucleophilic attack from the backside efficiently."
+      },
+      {
+        "q": 34,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "Phenol reacts with concentrated HNO3 in the presence of concentrated H2SO4 to yield predominantly:",
+        "options": {
+          "A": "o-Nitrophenol",
+          "B": "p-Nitrophenol",
+          "C": "Benzene",
+          "D": "Picric acid (2,4,6-trinitrophenol)"
+        },
+        "correct": "D",
+        "explanation": "Reaction of phenol with concentrated nitrating mixture causes extensive nitration at all ortho and para positions, yielding 2,4,6-trinitrophenol, commonly known as picric acid."
+      },
+      {
+        "q": 35,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "Which of the following compounds gives a positive iodoform test?",
+        "options": {
+          "A": "Methanol",
+          "B": "Propan-1-ol",
+          "C": "Ethanol",
+          "D": "Benzaldehyde"
+        },
+        "correct": "C",
+        "explanation": "Ethanol (CH3-CH2-OH) contains the CH3-CH(OH)- group which gets oxidized by I2/NaOH to CH3-CHO, giving a yellow precipitate of iodoform (CHI3)."
+      },
+      {
+        "q": 36,
+        "topic": "Organic Compounds Containing Nitrogen",
+        "question": "Primary aliphatic amines react with nitrous acid (HNO2) at 0-5 degrees Celsius to form:",
+        "options": {
+          "A": "Stable diazonium salts",
+          "B": "Alcohols with nitrogen gas evolution",
+          "C": "Nitroalkanes",
+          "D": "Alkyl nitrites"
+        },
+        "correct": "B",
+        "explanation": "Primary aliphatic diazonium salts are highly unstable and decompose immediately, yielding alcohols along with quantitative evolution of nitrogen gas."
+      },
+      {
+        "q": 37,
+        "topic": "Biomolecules",
+        "question": "Glucose reacts with hydroxylamine (NH2OH) to form an oxime. This reaction proves the presence of:",
+        "options": {
+          "A": "A primary alcoholic group",
+          "B": "A carbonyl group",
+          "C": "Five hydroxyl groups",
+          "D": "A straight chain of six carbon atoms"
+        },
+        "correct": "B",
+        "explanation": "Reaction of glucose with hydroxylamine yields glucose oxime, confirming the presence of a carbonyl group (>C=O)."
+      },
+      {
+        "q": 38,
+        "topic": "Some Basic Principles of Organic Chemistry",
+        "question": "Which of the following compounds shows geometrical isomerism?",
+        "options": {
+          "A": "Ethene",
+          "B": "But-2-ene",
+          "C": "Propene",
+          "D": "2-Methylpropene"
+        },
+        "correct": "B",
+        "explanation": "But-2-ene (CH3-CH=CH-CH3) has different groups attached to each doubly bonded carbon atom, allowing it to exist in cis- and trans- geometrical isomeric forms."
+      },
+      {
+        "q": 39,
+        "topic": "Hydrocarbons",
+        "question": "The major product obtained when propene reacts with HBr in the presence of peroxide is:",
+        "options": {
+          "A": "2-Bromopropane",
+          "B": "1,2-Dibromopropane",
+          "C": "1-Bromopropane",
+          "D": "Propane"
+        },
+        "correct": "C",
+        "explanation": "In the presence of organic peroxide, addition of HBr to an unsymmetrical alkene follows Kharasch (antiMarkovnikov) rule via free-radical mechanism, adding Br to the less substituted carbon to yield 1-bromopropane."
+      },
+      {
+        "q": 40,
+        "topic": "Organic Compounds Containing Halogens",
+        "question": "Reaction of chlorobenzene with methyl chloride in the presence of anhydrous AlCl3 gives a mixture of ochlorotoluene and p-chlorotoluene. This reaction is known as:",
+        "options": {
+          "A": "Friedel-Crafts alkylation",
+          "B": "Wurtz reaction",
+          "C": "Fittig reaction",
+          "D": "Reimer-Tiemann reaction"
+        },
+        "correct": "A",
+        "explanation": "Electrophilic substitution of an aromatic ring with an alkyl halide in the presence of a Lewis acid catalyst (anhydrous AlCl3) is called Friedel-Crafts alkylation."
+      },
+      {
+        "q": 41,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "Cannizzaro reaction is NOT given by:",
+        "options": {
+          "A": "Formaldehyde",
+          "B": "Benzaldehyde",
+          "C": "Acetaldehyde",
+          "D": "Trimethylacetaldehyde"
+        },
+        "correct": "C",
+        "explanation": "Cannizzaro reaction is shown by aldehydes that lack alpha-hydrogen atoms. Acetaldehyde (CH3-CHO) possesses 3 alpha-hydrogens and undergoes aldol condensation instead."
+      },
+      {
+        "q": 42,
+        "topic": "Organic Compounds Containing Nitrogen",
+        "question": "Hoffmann bromamide degradation reaction converts an amide into a primary amine containing:",
+        "options": {
+          "A": "One carbon atom more than amide",
+          "B": "Same number of carbon atoms",
+          "C": "One carbon atom less than amide",
+          "D": "Two carbon atoms less than amide"
+        },
+        "correct": "C",
+        "explanation": "In Hoffmann bromamide degradation (R-CO-NH2 + Br2 + 4 KOH -> R-NH2 + K2CO3 + 2 KBr + 2 H2O), the carbonyl carbon is lost as carbonate, producing a primary amine with one carbon atom less than the starting amide."
+      },
+      {
+        "q": 43,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "Lucas reagent used to distinguish primary, secondary, and tertiary alcohols is a mixture of:",
+        "options": {
+          "A": "Concentrated HNO3 and anhydrous ZnCl2",
+          "B": "Dilute HCl and hydrated ZnCl2",
+          "C": "Concentrated H2SO4 and Cu",
+          "D": "Concentrated HCl and anhydrous ZnCl2"
+        },
+        "correct": "D",
+        "explanation": "Lucas reagent is an equimolar solution of concentrated hydrochloric acid (HCl) and anhydrous zinc chloride (ZnCl2)."
+      },
+      {
+        "q": 44,
+        "topic": "Hydrocarbons",
+        "question": "The most stable conformation of n-butane is:",
+        "options": {
+          "A": "Eclipsed",
+          "B": "Anti-staggered",
+          "C": "Gauche",
+          "D": "Fully eclipsed"
+        },
+        "correct": "B",
+        "explanation": "In the anti-staggered conformation of n-butane, the two bulky methyl groups are at a dihedral angle of 180 degrees, minimizing steric hindrance and torsional strain, making it the most stable."
+      },
+      {
+        "q": 45,
+        "topic": "Biomolecules",
+        "question": "Which of the following amino acids is optically inactive?",
+        "options": {
+          "A": "Alanine",
+          "B": "Valine",
+          "C": "Leucine",
+          "D": "Glycine"
+        },
+        "correct": "D",
+        "explanation": "Glycine (H2N-CH2-COOH) lacks a chiral carbon atom because two hydrogens are attached to its alphacarbon, rendering it optically inactive."
+      }
+    ],
+    "Botany": [
+      {
+        "q": 1,
+        "topic": "Cell Structure and Function",
+        "question": "The site of synthesis of ribosomal RNA (rRNA) in a eukaryotic cell is:",
+        "options": {
+          "A": "Ribosome",
+          "B": "Lysosome",
+          "C": "Nucleolus",
+          "D": "Golgi apparatus"
+        },
+        "correct": "C",
+        "explanation": "The nucleolus is a dense region inside the nucleus responsible for transcribing and assembling ribosomal RNA (rRNA) with proteins to form ribosomal subunits."
+      },
+      {
+        "q": 2,
+        "topic": "Genetics and Evolution",
+        "question": "Which stage of meiotic prophase I is characterized by the appearance of recombination nodules?",
+        "options": {
+          "A": "Zygotene",
+          "B": "Diplotene",
+          "C": "Pachytene",
+          "D": "Diakinesis"
+        },
+        "correct": "C",
+        "explanation": "Recombination nodules appear during the pachytene stage of meiotic prophase I, where non-sister chromatids of homologous chromosomes undergo crossing over."
+      },
+      {
+        "q": 3,
+        "topic": "Plant Physiology",
+        "question": "The primary CO2 acceptor in C4 plants is:",
+        "options": {
+          "A": "Ribulose-1,5-bisphosphate (RuBP)",
+          "B": "Oxaloacetic acid (OAA)",
+          "C": "Phosphoglyceric acid (PGA)",
+          "D": "Phosphoenolpyruvate (PEP)"
+        },
+        "correct": "D",
+        "explanation": "In C4 plants, atmospheric CO2 is initially accepted by Phosphoenolpyruvate (PEP) in mesophyll cells, catalyzed by the enzyme PEP carboxylase."
+      },
+      {
+        "q": 4,
+        "topic": "Plant Physiology",
+        "question": "During non-cyclic photophosphorylation, the primary electron donor to Photosystem II (PS II) is:",
+        "options": {
+          "A": "NADPH",
+          "B": "Plastocyanin",
+          "C": "Water",
+          "D": "Ferredoxin"
+        },
+        "correct": "C",
+        "explanation": "Photolysis of water at the oxygen-evolving complex associated with Photosystem II supplies electrons continuously to replace those lost by reaction center P680."
+      },
+      {
+        "q": 5,
+        "topic": "Reproduction",
+        "question": "The functional megaspore in a typical angiosperm embryo sac develops into:",
+        "options": {
+          "A": "Ovule",
+          "B": "Endosperm",
+          "C": "Embryo sac",
+          "D": "Nucellus"
+        },
+        "correct": "C",
+        "explanation": "In monosporic development, the single functional megaspore undergoes three sequential mitotic divisions to form an 8-nucleate, 7-celled female gametophyte, known as the embryo sac."
+      },
+      {
+        "q": 6,
+        "topic": "Genetics and Evolution",
+        "question": "Which of the following nitrogenous bases is present exclusively in RNA and absent in DNA?",
+        "options": {
+          "A": "Thymine",
+          "B": "Uracil",
+          "C": "Cytosine",
+          "D": "Adenine"
+        },
+        "correct": "B",
+        "explanation": "RNA contains Uracil in place of Thymine. Adenine, Guanine, and Cytosine are present in both DNA and RNA molecules."
+      },
+      {
+        "q": 7,
+        "topic": "Genetics and Evolution",
+        "question": "In a dihybrid cross between two heterozygous plants (AaBb x AaBb), the phenotypic ratio among the offspring according to Mendelian genetics is:",
+        "options": {
+          "A": "9:3:3:1",
+          "B": "3:1",
+          "C": "1:2:1",
+          "D": "1:1:1:1"
+        },
+        "correct": "A",
+        "explanation": "The classic Mendelian phenotypic ratio resulting from a dihybrid cross involving two independently assorting heterozygous gene pairs is 9:3:3:1."
+      },
+      {
+        "q": 8,
+        "topic": "Ecology and Environment",
+        "question": "The functional role and physical position of a species within an ecosystem is termed as its:",
+        "options": {
+          "A": "Habitat",
+          "B": "Biome",
+          "C": "Ecological niche",
+          "D": "Ecotone"
+        },
+        "correct": "C",
+        "explanation": "An ecological niche encompasses all biotic and abiotic interactions, functional roles, and environmental conditions required by a species to survive and reproduce."
+      },
+      {
+        "q": 9,
+        "topic": "Structural Organisation in Animals and Plants",
+        "question": "Pneumatophores are specialized respiratory roots commonly found in plants growing in:",
+        "options": {
+          "A": "Mangrove swamps",
+          "B": "Desert sand dunes",
+          "C": "Freshwater lakes",
+          "D": "Alpine meadows"
+        },
+        "correct": "A",
+        "explanation": "Pneumatophores are negatively geotropic roots present in halophytes (like Rhizophora) growing in oxygendeficient saline mangrove swamps, facilitating gaseous exchange."
+      },
+      {
+        "q": 10,
+        "topic": "Plant Physiology",
+        "question": "The plant growth regulator primarily responsible for promoting apical dominance is:",
+        "options": {
+          "A": "Auxin",
+          "B": "Gibberellin",
+          "C": "Cytokinin",
+          "D": "Ethylene"
+        },
+        "correct": "A",
+        "explanation": "Auxin produced at the shoot apex inhibits the growth of lateral axillary buds, maintaining apical dominance in higher plants."
+      },
+      {
+        "q": 11,
+        "topic": "Genetics and Evolution",
+        "question": "During transcription in prokaryotes, the enzyme RNA polymerase binds to the promoter site with the help of:",
+        "options": {
+          "A": "Rho factor",
+          "B": "Core enzyme",
+          "C": "Topoisomerase",
+          "D": "Sigma factor"
+        },
+        "correct": "D",
+        "explanation": "The sigma factor subunit confers specificity to RNA polymerase core enzyme, enabling accurate binding to promoter regions to initiate prokaryotic transcription."
+      },
+      {
+        "q": 12,
+        "topic": "Reproduction",
+        "question": "Double fertilization in angiosperms involves the fusion of one male gamete with egg cell and the second male gamete with:",
+        "options": {
+          "A": "Synergids",
+          "B": "Secondary nucleus",
+          "C": "Antipodal cells",
+          "D": "Nucellar tissue"
+        },
+        "correct": "B",
+        "explanation": "In angiosperms, triple fusion occurs when one male gamete fuses with the diploid secondary nucleus (formed by fusion of two polar nuclei) to produce triploid primary endosperm nucleus."
+      },
+      {
+        "q": 13,
+        "topic": "Cell Structure and Function",
+        "question": "Which organelle is responsible for glycolipid and glycoprotein formation in plant cells?",
+        "options": {
+          "A": "Endoplasmic reticulum",
+          "B": "Mitochondria",
+          "C": "Golgi apparatus",
+          "D": "Peroxisome"
+        },
+        "correct": "C",
+        "explanation": "The Golgi apparatus modifies proteins and lipids synthesized in the ER, acting as the primary site for glycosylation to form glycoproteins and glycolipids."
+      },
+      {
+        "q": 14,
+        "topic": "Structural Organisation in Animals and Plants",
+        "question": "Vascular tissues comprising xylem and phloem are completely absent in:",
+        "options": {
+          "A": "Pteridophytes",
+          "B": "Gymnosperms",
+          "C": "Bryophytes",
+          "D": "Angiosperms"
+        },
+        "correct": "C",
+        "explanation": "Bryophytes are non-vascular land plants lacking specialized vascular tissues (xylem and phloem) for water and nutrient transport."
+      },
+      {
+        "q": 15,
+        "topic": "Ecology and Environment",
+        "question": "In an ecological pyramid of biomass in a deep aquatic ecosystem, the shape is generally:",
+        "options": {
+          "A": "Upright",
+          "B": "Inverted",
+          "C": "Spindle-shaped",
+          "D": "Horizontal"
+        },
+        "correct": "B",
+        "explanation": "In deep aquatic ecosystems, the standing crop biomass of producers (phytoplankton) at any given time is much less than that of consumers (zooplankton/fish), resulting in an inverted biomass pyramid."
+      },
+      {
+        "q": 16,
+        "topic": "Plant Physiology",
+        "question": "The opening and closing of stomata is primarily regulated by the movement of which ion into and out of guard cells?",
+        "options": {
+          "A": "Sodium ions",
+          "B": "Potassium ions",
+          "C": "Calcium ions",
+          "D": "Magnesium ions"
+        },
+        "correct": "B",
+        "explanation": "Influx of Potassium ions (K+) into guard cells decreases water potential, causing water entry and turgidity that opens stomata, while K+ efflux leads to stomatal closure."
+      },
+      {
+        "q": 17,
+        "topic": "Cell Structure and Function",
+        "question": "During cell division, spindle fibers attach to chromosomes at specialized protein structures called:",
+        "options": {
+          "A": "Centromere",
+          "B": "Kinetochore",
+          "C": "Chromocenter",
+          "D": "Telomere"
+        },
+        "correct": "B",
+        "explanation": "Kinetochores are disc-shaped protein complexes located on centromeres of chromosomes to which microtubule spindle fibers attach during mitosis and meiosis."
+      },
+      {
+        "q": 18,
+        "topic": "Genetics and Evolution",
+        "question": "The anticodon site present on t-RNA responsible for recognizing m-RNA codon during translation consists of how many nucleotides?",
+        "options": {
+          "A": "Three",
+          "B": "Two",
+          "C": "Four",
+          "D": "Five"
+        },
+        "correct": "A",
+        "explanation": "The anticodon loop of transfer RNA contains a triplet sequence of three unpaired nitrogenous bases that complementarily base-pair with codon triplets on mRNA."
+      },
+      {
+        "q": 19,
+        "topic": "Cell Structure and Function",
+        "question": "The final electron acceptor in mitochondrial electron transport chain during aerobic respiration is:",
+        "options": {
+          "A": "Cytochrome c",
+          "B": "Oxygen",
+          "C": "NAD+",
+          "D": "FAD"
+        },
+        "correct": "B",
+        "explanation": "Molecular oxygen acts as the ultimate terminal electron acceptor in aerobic respiration, combining with protons to form water at Complex IV (cytochrome c oxidase)."
+      },
+      {
+        "q": 20,
+        "topic": "Reproduction",
+        "question": "Transfer of pollen grains from the anther to the stigma of another flower on the same plant is termed as:",
+        "options": {
+          "A": "Autogamy",
+          "B": "Xenogamy",
+          "C": "Cleistogamy",
+          "D": "Geitonogamy"
+        },
+        "correct": "D",
+        "explanation": "Geitonogamy is functionally cross-pollination involving a pollinating agent, but genetically equivalent to autogamy as pollen comes from the same genetic plant individual."
+      },
+      {
+        "q": 21,
+        "topic": "Structural Organisation in Animals and Plants",
+        "question": "Casparian strips containing suberin depositions are characteristic features found in the cells of:",
+        "options": {
+          "A": "Endodermis",
+          "B": "Epidermis",
+          "C": "Exodermis",
+          "D": "Pericycle"
+        },
+        "correct": "A",
+        "explanation": "Endodermal root cells feature Casparian strips made of impermeable suberin on radial and tangential walls, forcing apoplastic water flow into symplastic pathways."
+      },
+      {
+        "q": 22,
+        "topic": "Ecology and Environment",
+        "question": "Which of the following ecosystems exhibits the highest net primary productivity per unit area?",
+        "options": {
+          "A": "Temperate deciduous forest",
+          "B": "Savanna grassland",
+          "C": "Desert ecosystem",
+          "D": "Tropical rain forest"
+        },
+        "correct": "D",
+        "explanation": "Tropical rain forests possess ideal climatic conditions—high temperature, abundant rainfall, and continuous sunlight—resulting in maximum net primary productivity per unit area."
+      },
+      {
+        "q": 23,
+        "topic": "Plant Physiology",
+        "question": "Which enzyme converts glucose to glucose-6-phosphate in the first step of glycolysis?",
+        "options": {
+          "A": "Phosphofructokinase",
+          "B": "Hexokinase",
+          "C": "Pyruvate kinase",
+          "D": "Enolase"
+        },
+        "correct": "B",
+        "explanation": "The phosphorylation of glucose to glucose-6-phosphate at the beginning of glycolysis is catalyzed by the enzyme hexokinase utilizing one ATP molecule."
+      },
+      {
+        "q": 24,
+        "topic": "Genetics and Evolution",
+        "question": "Which RNA molecule acts as a structural and catalytic component during peptide bond formation in ribosome?",
+        "options": {
+          "A": "m-RNA",
+          "B": "t-RNA",
+          "C": "sn-RNA",
+          "D": "23S r-RNA"
+        },
+        "correct": "D",
+        "explanation": "In prokaryotic ribosomes, 23S rRNA acts as a ribozyme (peptidyl transferase) catalyzing peptide bond synthesis during polypeptide translation."
+      },
+      {
+        "q": 25,
+        "topic": "Cell Structure and Function",
+        "question": "The fluid mosaic model of cell membrane was proposed by Singer and Nicolson in which year?",
+        "options": {
+          "A": "1950",
+          "B": "1965",
+          "C": "1984",
+          "D": "1972"
+        },
+        "correct": "D",
+        "explanation": "S.J. Singer and G.L. Nicolson proposed the widely accepted Fluid Mosaic Model of cell membrane structure in the year 1972."
+      },
+      {
+        "q": 26,
+        "topic": "Reproduction",
+        "question": "In gymnosperms, the endosperm tissue formed before fertilization is genetically:",
+        "options": {
+          "A": "Diploid",
+          "B": "Triploid",
+          "C": "Tetraploid",
+          "D": "Haploid"
+        },
+        "correct": "D",
+        "explanation": "In gymnosperms, endosperm represents the vegetative tissue of female gametophyte developed prior to fertilization, hence it is haploid (n)."
+      },
+      {
+        "q": 27,
+        "topic": "Plant Physiology",
+        "question": "The hormone responsible for promoting seed germination by breaking seed dormancy via amylase induction is:",
+        "options": {
+          "A": "Abscisic acid",
+          "B": "Ethylene",
+          "C": "Zeatin",
+          "D": "Gibberellin"
+        },
+        "correct": "D",
+        "explanation": "Gibberellins synthesize hydrolytic enzymes like alpha-amylase in aleurone layer during seed germination to break down stored starch reserves."
+      },
+      {
+        "q": 28,
+        "topic": "Reproduction",
+        "question": "Placentation in which ovules develop on the inner wall of the ovary or on peripheral part is termed as:",
+        "options": {
+          "A": "Parietal",
+          "B": "Marginal",
+          "C": "Axile",
+          "D": "Free central"
+        },
+        "correct": "A",
+        "explanation": "In parietal placentation (seen in Mustard and Argemone), ovules develop on the inner pericarp wall or peripheral boundaries of a unilocular ovary."
+      },
+      {
+        "q": 29,
+        "topic": "Ecology and Environment",
+        "question": "According to Allen's rule, mammals adapted to colder climates generally possess:",
+        "options": {
+          "A": "Shorter ears and shorter limbs",
+          "B": "Longer ears and longer limbs",
+          "C": "Larger body surface area",
+          "D": "Thinner layer of subcutaneous fat"
+        },
+        "correct": "A",
+        "explanation": "Allen's rule states that endothermic animals from colder regions tend to have shorter extremities (ears and limbs) to minimize heat loss to the environment."
+      },
+      {
+        "q": 30,
+        "topic": "Genetics and Evolution",
+        "question": "The termination codons that signal the end of translation on m-RNA sequence are:",
+        "options": {
+          "A": "UAA, UAG, UGA",
+          "B": "AUG, UAA, UAG",
+          "C": "UGA, UGG, UAA",
+          "D": "UAG, UGA, UCG"
+        },
+        "correct": "A",
+        "explanation": "UAA (ochre), UAG (amber), and UGA (opal) do not code for any amino acid and function as stop codons during polypeptide synthesis."
+      },
+      {
+        "q": 31,
+        "topic": "Genetics and Evolution",
+        "question": "Which enzyme unzips and unwinds the double-stranded DNA helix during DNA replication?",
+        "options": {
+          "A": "DNA Ligase",
+          "B": "DNA Helicase",
+          "C": "DNA Polymerase",
+          "D": "Primase"
+        },
+        "correct": "B",
+        "explanation": "DNA Helicase breaks hydrogen bonds between complementary nitrogenous bases, unwinding the double helix at replication fork."
+      },
+      {
+        "q": 32,
+        "topic": "Plant Physiology",
+        "question": "In Kranz anatomy of C4 plants, the large bundle sheath cells surrounding vascular bundles are characterized by:",
+        "options": {
+          "A": "Thick walls, no intercellular spaces, and numerous agranal chloroplasts",
+          "B": "Thick walls, no intercellular spaces, and large granal chloroplasts",
+          "C": "Thin walls, large intercellular spaces, and absence of chloroplasts",
+          "D": "Thin walls, abundant intercellular spaces, and small chloroplasts"
+        },
+        "correct": "A",
+        "explanation": "Bundle sheath cells in C4 leaves possess thick suberized gas-impermeable walls, lack intercellular spaces, and contain abundant agranal chloroplasts rich in RuBisCO."
+      },
+      {
+        "q": 33,
+        "topic": "Reproduction",
+        "question": "The plant body of Marchantia is thalloid and dioecious. Male reproductive structures called antheridiophores are borne on:",
+        "options": {
+          "A": "Gemma cups",
+          "B": "Male thallus",
+          "C": "Female thallus",
+          "D": "Sporophyte"
+        },
+        "correct": "B",
+        "explanation": "Marchantia is a dioecious liverwort where male thalli produce stalked antheridiophores bearing antheridia, while female thalli bear archegoniophores."
+      },
+      {
+        "q": 34,
+        "topic": "Reproduction",
+        "question": "Persistent nucellus remaining inside mature seeds of plants like black pepper and beet is known as:",
+        "options": {
+          "A": "Pericarp",
+          "B": "Caruncle",
+          "C": "Perisperm",
+          "D": "Aril"
+        },
+        "correct": "C",
+        "explanation": "Perisperm is the remnant persistent nutritive nucellar tissue surrounding the embryo sac in certain mature seeds like Piper nigrum and Beta vulgaris."
+      },
+      {
+        "q": 35,
+        "topic": "Ecology and Environment",
+        "question": "The process of decomposition where water-soluble inorganic nutrients go down into the soil horizon and get precipitated as unavailable salts is called:",
+        "options": {
+          "A": "Fragmentation",
+          "B": "Catabolism",
+          "C": "Leaching",
+          "D": "Humification"
+        },
+        "correct": "C",
+        "explanation": "Leaching is the downward movement of water-soluble organic and inorganic nutrients into deeper soil layers via percolating water."
+      },
+      {
+        "q": 36,
+        "topic": "Genetics and Evolution",
+        "question": "A plant with genotype TtAa produces how many genetically distinct types of gametes?",
+        "options": {
+          "A": "Two",
+          "B": "Eight",
+          "C": "Sixteen",
+          "D": "Four"
+        },
+        "correct": "D",
+        "explanation": "Number of gamete types is given by 2^n, where n is number of heterozygous gene pairs. For TtAa (n=2), 2^2 = 4 distinct gametes (TA, Ta, tA, ta) are formed."
+      },
+      {
+        "q": 37,
+        "topic": "Plant Physiology",
+        "question": "The gas hormone responsible for accelerating fruit ripening and promoting horizontal growth of seedlings is:",
+        "options": {
+          "A": "Auxin",
+          "B": "Cytokinin",
+          "C": "Ethylene",
+          "D": "Abscisic acid"
+        },
+        "correct": "C",
+        "explanation": "Ethylene is a gaseous plant hormone regulating fruit maturation, triple response in seedlings, abscission, and senescence."
+      },
+      {
+        "q": 38,
+        "topic": "Cell Structure and Function",
+        "question": "The division of cytoplasm following nuclear division during cell cycle is known as:",
+        "options": {
+          "A": "Karyokinesis",
+          "B": "Interkinesis",
+          "C": "Diakinesis",
+          "D": "Cytokinesis"
+        },
+        "correct": "D",
+        "explanation": "Cytokinesis represents the physical partitioning of cellular cytoplasm into two daughter cells following completion of nuclear division (karyokinesis)."
+      },
+      {
+        "q": 39,
+        "topic": "Ecology and Environment",
+        "question": "Which of the following international agreements was signed in 1987 to control the emission of ozonedepleting substances?",
+        "options": {
+          "A": "Kyoto Protocol",
+          "B": "Earth Summit",
+          "C": "Paris Agreement",
+          "D": "Montreal Protocol"
+        },
+        "correct": "D",
+        "explanation": "The Montreal Protocol on Substances that Deplete the Ozone Layer was signed in 1987 at Montreal, Canada, entering into force in 1989."
+      },
+      {
+        "q": 40,
+        "topic": "Diversity in the Living World",
+        "question": "In algae, food reserve stored in the form of floridean starch is characteristic of class:",
+        "options": {
+          "A": "Chlorophyceae",
+          "B": "Rhodophyceae",
+          "C": "Phaeophyceae",
+          "D": "Cyanophyceae"
+        },
+        "correct": "B",
+        "explanation": "Red algae (Rhodophyceae) store reserve food as floridean starch, which is structurally similar to amylopectin and glycogen."
+      },
+      {
+        "q": 41,
+        "topic": "Genetics and Evolution",
+        "question": "In Hershey-Chase experiment proving DNA as genetic material, bacteriophages were labeled with radioactive isotopes:",
+        "options": {
+          "A": "32P and 35S",
+          "B": "14C and 15N",
+          "C": "3H and 32P",
+          "D": "35S and 15N"
+        },
+        "correct": "A",
+        "explanation": "Hershey and Chase used Radioactive Phosphorus (32P) to label viral DNA and Radioactive Sulfur (35S) to label viral protein coats."
+      },
+      {
+        "q": 42,
+        "topic": "Plant Physiology",
+        "question": "Hydroponics refers to the technique of growing plants in:",
+        "options": {
+          "A": "Solid desert sand",
+          "B": "Peat moss medium",
+          "C": "Water without mineral salts",
+          "D": "Soil-free nutrient solution"
+        },
+        "correct": "D",
+        "explanation": "Hydroponics, demonstrated by Julius von Sachs in 1860, is the technique of cultivating plants in a complete soil-free, defined mineral nutrient solution."
+      },
+      {
+        "q": 43,
+        "topic": "Reproduction",
+        "question": "In flowering plants, wind-pollinated flowers (anemophilous) typically possess:",
+        "options": {
+          "A": "Large colorful petals and sweet nectar",
+          "B": "Heavy sticky pollen grains and deep nectaries",
+          "C": "Feathery stigmas and light non-sticky pollen grains",
+          "D": "Fragrant scent and compact inflorescence"
+        },
+        "correct": "C",
+        "explanation": "Anemophilous flowers feature exposed feathery stigmas to catch airborne pollen and produce light, nonsticky pollen grains in vast quantities."
+      },
+      {
+        "q": 44,
+        "topic": "Cell Structure and Function",
+        "question": "Middle lamella cementing adjacent plant cell walls together is composed predominantly of:",
+        "options": {
+          "A": "Hemicellulose",
+          "B": "Calcium pectate",
+          "C": "Suberin",
+          "D": "Lignin"
+        },
+        "correct": "B",
+        "explanation": "The middle lamella is an intercellular layer rich in calcium and magnesium pectates that glues neighboring plant cell walls together."
+      },
+      {
+        "q": 45,
+        "topic": "Ecology and Environment",
+        "question": "The gradual and fairly predictable change in the species composition of a given area over time is called:",
+        "options": {
+          "A": "Ecological succession",
+          "B": "Eutrophication",
+          "C": "Biomagnification",
+          "D": "Stratification"
+        },
+        "correct": "A",
+        "explanation": "Ecological succession is the orderly process by which ecosystem community structure and species composition change predictably over time toward a climax community."
+      }
+    ],
+    "Zoology": [
+      {
+        "q": 1,
+        "topic": "Diversity in the Living World",
+        "question": "Which of the following phyla is characterized by radial symmetry in adult forms but bilateral symmetry in larval stages?",
+        "options": {
+          "A": "Mollusca",
+          "B": "Echinodermata",
+          "C": "Arthropoda",
+          "D": "Annelida"
+        },
+        "correct": "B",
+        "explanation": "Echinoderms display secondary radial symmetry in adult forms, whereas their free-swimming larval forms possess bilateral symmetry."
+      },
+      {
+        "q": 2,
+        "topic": "Human Physiology",
+        "question": "Specialized cells called choanocytes or collar cells line the spongocoel and canals in members of phylum:",
+        "options": {
+          "A": "Coelenterata",
+          "B": "Ctenophora",
+          "C": "Platyhelminthes",
+          "D": "Porifera"
+        },
+        "correct": "D",
+        "explanation": "Choanocytes (collar cells) line the interior spongocoel and canal system of sponges (Porifera), maintaining water current for nutrition, respiration, and excretion."
+      },
+      {
+        "q": 3,
+        "topic": "Genetics and Evolution",
+        "question": "Which nitrogenous base is a purine derivative present in nucleic acids?",
+        "options": {
+          "A": "Adenine",
+          "B": "Cytosine",
+          "C": "Thymine",
+          "D": "Uracil"
+        },
+        "correct": "A",
+        "explanation": "Adenine and Guanine are double-ringed purine bases, whereas Cytosine, Thymine, and Uracil are singleringed pyrimidine bases."
+      },
+      {
+        "q": 4,
+        "topic": "Human Physiology",
+        "question": "The total volume of air accommodated in the lungs at the end of a forced inspiration is called:",
+        "options": {
+          "A": "Total Lung Capacity",
+          "B": "Vital Capacity",
+          "C": "Functional Residual Capacity",
+          "D": "Inspiratory Capacity"
+        },
+        "correct": "A",
+        "explanation": "Total Lung Capacity (TLC) is the maximum total volume of air present in lungs after forceful inspiration (TLC = VC + RV)."
+      },
+      {
+        "q": 5,
+        "topic": "Human Physiology",
+        "question": "During the human cardiac cycle, the duration of ventricular systole is approximately:",
+        "options": {
+          "A": "0.1 second",
+          "B": "0.4 second",
+          "C": "0.8 second",
+          "D": "0.3 second"
+        },
+        "correct": "D",
+        "explanation": "In a cardiac cycle lasting 0.8 seconds, atrial systole takes 0.1 s, ventricular systole takes 0.3 s, and joint diastole takes 0.4 s."
+      },
+      {
+        "q": 6,
+        "topic": "Human Physiology",
+        "question": "Which region of the human nephron is specialized for maximum obligatory reabsorption of water and essential electrolytes?",
+        "options": {
+          "A": "Descending limb of Loop of Henle",
+          "B": "Proximal Convoluted Tubule (PCT)",
+          "C": "Distal Convoluted Tubule (DCT)",
+          "D": "Collecting Duct"
+        },
+        "correct": "B",
+        "explanation": "Nearly 70-80 percent of electrolytes and water are reabsorbed in the Proximal Convoluted Tubule (PCT), lined by simple cuboidal brush border epithelium."
+      },
+      {
+        "q": 7,
+        "topic": "Human Physiology",
+        "question": "The functional contractile unit of a myofibril situated between two consecutive Z-lines is called:",
+        "options": {
+          "A": "Sarcomere",
+          "B": "Sarcolemma",
+          "C": "Sarcoplasm",
+          "D": "Fascia"
+        },
+        "correct": "A",
+        "explanation": "A sarcomere is the basic structural and functional unit of striated muscle contraction located between two adjacent Z-lines."
+      },
+      {
+        "q": 8,
+        "topic": "Human Physiology",
+        "question": "The middle layer of human cranial meninges that is thin and web-like in structure is:",
+        "options": {
+          "A": "Dura mater",
+          "B": "Pia mater",
+          "C": "Cornea",
+          "D": "Arachnoid mater"
+        },
+        "correct": "D",
+        "explanation": "Human cranial meninges consist of outer Dura mater, middle web-like Arachnoid mater, and inner vascular Pia mater."
+      },
+      {
+        "q": 9,
+        "topic": "Human Physiology",
+        "question": "Which endocrine gland secretes the peptide hormone calcitonin responsible for lowering blood calcium levels?",
+        "options": {
+          "A": "Parathyroid gland",
+          "B": "Thyroid gland",
+          "C": "Adrenal cortex",
+          "D": "Pancreas"
+        },
+        "correct": "B",
+        "explanation": "Thyrocalcitonin (TCT) is secreted by parafollicular C-cells of the thyroid gland to decrease elevated plasma calcium levels."
+      },
+      {
+        "q": 10,
+        "topic": "Reproduction",
+        "question": "The structural and functional unit between the developing fetus and maternal body for nutrient exchange is:",
+        "options": {
+          "A": "Umbilical cord",
+          "B": "Amnion",
+          "C": "Placenta",
+          "D": "Chorion"
+        },
+        "correct": "C",
+        "explanation": "The placenta acts as an intimate socio-vascular connection facilitating nutrient supply, gas exchange, and waste removal for the developing embryo."
+      },
+      {
+        "q": 11,
+        "topic": "Human Physiology",
+        "question": "The hormone surge that triggers ovulation and rupture of Graafian follicle in human females occurs around day:",
+        "options": {
+          "A": "14th day",
+          "B": "5th day",
+          "C": "21st day",
+          "D": "28th day"
+        },
+        "correct": "A",
+        "explanation": "Rapid secretion of Luteinizing Hormone (LH surge) reaches its peak mid-cycle (around 14th day), inducing rupture of mature Graafian follicle."
+      },
+      {
+        "q": 12,
+        "topic": "Reproduction",
+        "question": "Assisted Reproductive Technology (ART) involving transfer of an early embryo up to 8 blastomeres into Fallopian tube is:",
+        "options": {
+          "A": "ZIFT",
+          "B": "IUT",
+          "C": "GIFT",
+          "D": "ICSI"
+        },
+        "correct": "A",
+        "explanation": "Zygote Intra Fallopian Transfer (ZIFT) involves transferring zygote or early embryos up to 8 blastomeres into the Fallopian tube in vitro."
+      },
+      {
+        "q": 13,
+        "topic": "Genetics and Evolution",
+        "question": "Homologous organs like forelimbs of whales, bats, cheetah, and humans provide evidence for:",
+        "options": {
+          "A": "Convergent evolution",
+          "B": "Parallel evolution",
+          "C": "Divergent evolution",
+          "D": "Saltation"
+        },
+        "correct": "C",
+        "explanation": "Homologous structures share common anatomical origin but perform different functions, demonstrating divergent evolutionary adaptation."
+      },
+      {
+        "q": 14,
+        "topic": "Biology and Human Welfare",
+        "question": "Plasmodium falciparum causes malignant tertian malaria. The infective stage of Plasmodium that enters human body via mosquito bite is:",
+        "options": {
+          "A": "Trophozoite",
+          "B": "Sporozoite",
+          "C": "Gametocyte",
+          "D": "Merozoite"
+        },
+        "correct": "B",
+        "explanation": "Infective sporozoites stored in female Anopheles salivary glands are injected into the human bloodstream during a blood meal."
+      },
+      {
+        "q": 15,
+        "topic": "Biotechnology and its Applications",
+        "question": "The first human hormone produced commercially through recombinant DNA technology in 1978 was:",
+        "options": {
+          "A": "Growth hormone",
+          "B": "Thyroxine",
+          "C": "Estrogen",
+          "D": "Insulin"
+        },
+        "correct": "D",
+        "explanation": "Genentech produced recombinant human insulin (Humulin) using Escherichia coli by synthesizing separate A and B peptide chains."
+      },
+      {
+        "q": 16,
+        "topic": "Human Physiology",
+        "question": "Presence of a chitinous exoskeleton and jointed appendages is a characteristic hallmark of phylum:",
+        "options": {
+          "A": "Mollusca",
+          "B": "Arthropoda",
+          "C": "Annelida",
+          "D": "Aschelminthes"
+        },
+        "correct": "B",
+        "explanation": "Arthropoda is the largest animal phylum distinguished by jointed appendages and a tough, non-living chitinous exoskeleton shed via ecdysis."
+      },
+      {
+        "q": 17,
+        "topic": "Human Physiology",
+        "question": "The epithelial tissue lining the inner walls of blood vessels and air sacs of lungs is:",
+        "options": {
+          "A": "Simple squamous epithelium",
+          "B": "Simple cuboidal epithelium",
+          "C": "Simple columnar epithelium",
+          "D": "Pseudostratified epithelium"
+        },
+        "correct": "A",
+        "explanation": "Simple squamous epithelium forms a thin diffusion boundary suitable for gas and nutrient exchange in pulmonary alveoli and blood capillaries (endothelium)."
+      },
+      {
+        "q": 18,
+        "topic": "Human Physiology",
+        "question": "Which enzyme present in human pancreatic juice converts trypsinogen into active trypsin?",
+        "options": {
+          "A": "Enterokinase",
+          "B": "Pepsin",
+          "C": "Chymotrypsin",
+          "D": "Carboxypeptidase"
+        },
+        "correct": "A",
+        "explanation": "Enterokinase (enteropeptidase) secreted by intestinal mucosa activates inactive pancreatic trypsinogen into active trypsin."
+      },
+      {
+        "q": 19,
+        "topic": "Biology and Human Welfare",
+        "question": "The agranulocytes present in human blood that play a crucial role in cell-mediated and humoral immune responses are:",
+        "options": {
+          "A": "Lymphocytes",
+          "B": "Neutrophils",
+          "C": "Eosinophils",
+          "D": "Basophils"
+        },
+        "correct": "A",
+        "explanation": "Lymphocytes (B-cells and T-cells) are non-granular leucocytes responsible for humoral (antibody-mediated) and cell-mediated immunity."
+      },
+      {
+        "q": 20,
+        "topic": "Human Physiology",
+        "question": "Which hormone produced by the adrenal cortex regulates sodium and water balance in the human body?",
+        "options": {
+          "A": "Cortisol",
+          "B": "Adrenaline",
+          "C": "Aldosterone",
+          "D": "Melatonin"
+        },
+        "correct": "C",
+        "explanation": "Aldosterone (principal mineralocorticoid) acts on renal DCT and collecting duct to stimulate Na+ and water reabsorption."
+      },
+      {
+        "q": 21,
+        "topic": "Human Physiology",
+        "question": "In human testes, Leydig cells located in the interstitial spaces surrounding seminiferous tubules synthesize and secrete:",
+        "options": {
+          "A": "Androgens",
+          "B": "Estrogen",
+          "C": "Progesterone",
+          "D": "Inhibin"
+        },
+        "correct": "A",
+        "explanation": "Leydig cells (interstitial cells) produce testicular androgenic hormones, mainly testosterone, under the stimulation of LH."
+      },
+      {
+        "q": 22,
+        "topic": "Genetics and Evolution",
+        "question": "According to Hardy-Weinberg principle, allele frequencies in a population remain stable across generations provided there is no:",
+        "options": {
+          "A": "Random mating",
+          "B": "Large population size",
+          "C": "Gene flow or mutation",
+          "D": "Equal survival rate"
+        },
+        "correct": "C",
+        "explanation": "Hardy-Weinberg equilibrium is maintained in large, randomly mating populations in the absence of evolutionary factors like mutation, gene flow, genetic drift, or selection."
+      },
+      {
+        "q": 23,
+        "topic": "Biology and Human Welfare",
+        "question": "Antibodies present abundantly in human colostrum providing natural passive immunity to newborns belong to class:",
+        "options": {
+          "A": "IgG",
+          "B": "IgM",
+          "C": "IgA",
+          "D": "IgE"
+        },
+        "correct": "C",
+        "explanation": "Colostrum secreted by mammary glands during initial days of lactation contains abundant IgA antibodies that protect infant mucosal surfaces."
+      },
+      {
+        "q": 24,
+        "topic": "Biotechnology and its Applications",
+        "question": "Which restriction endonuclease isolated from Escherichia coli RY13 cuts DNA at 5'-GAATTC-3' recognition sequence?",
+        "options": {
+          "A": "HindIII",
+          "B": "BamHI",
+          "C": "PstI",
+          "D": "EcoRI"
+        },
+        "correct": "D",
+        "explanation": "EcoRI specifically recognizes the palindromic hexanucleotide sequence 5'-GAATTC-3' and cuts between G and A bases."
+      },
+      {
+        "q": 25,
+        "topic": "Human Physiology",
+        "question": "Flame cells or protonephridia serve as specialized excretory structures in members of phylum:",
+        "options": {
+          "A": "Platyhelminthes",
+          "B": "Aschelminthes",
+          "C": "Annelida",
+          "D": "Arthropoda"
+        },
+        "correct": "A",
+        "explanation": "Flatworms (Platyhelminthes) like Planaria and Taenia use specialized ciliated flame cells for osmoregulation and excretion."
+      },
+      {
+        "q": 26,
+        "topic": "Human Physiology",
+        "question": "The proteinaceous filament protein forming thick myofilaments in skeletal muscle cells is:",
+        "options": {
+          "A": "Actin",
+          "B": "Myosin",
+          "C": "Tropomyosin",
+          "D": "Troponin"
+        },
+        "correct": "B",
+        "explanation": "Myosin is a polymerized motor protein forming thick dark filaments, featuring globular heads with ATPase activity."
+      },
+      {
+        "q": 27,
+        "topic": "Human Physiology",
+        "question": "Under normal physiological conditions, every 100 mL of oxygenated blood delivers how much oxygen to tissue cells?",
+        "options": {
+          "A": "2 mL",
+          "B": "10 mL",
+          "C": "5 mL",
+          "D": "15 mL"
+        },
+        "correct": "C",
+        "explanation": "In a resting state, 100 mL of oxygenated systemic arterial blood carrying ~20 mL of O2 delivers approximately 5 mL of O2 to tissues."
+      },
+      {
+        "q": 28,
+        "topic": "Human Physiology",
+        "question": "The juxtaglomerular apparatus (JGA) releases which enzyme in response to a fall in glomerular blood pressure?",
+        "options": {
+          "A": "Rennet",
+          "B": "Renin",
+          "C": "Erythropoietin",
+          "D": "Angiotensinogen"
+        },
+        "correct": "B",
+        "explanation": "A decrease in GFR or blood pressure triggers JG cells to release Renin, activating the RAAS cascade to restore blood pressure."
+      },
+      {
+        "q": 29,
+        "topic": "Reproduction",
+        "question": "The part of human brain responsible for regulating respiration, cardiovascular reflexes, and gastric secretions is:",
+        "options": {
+          "A": "Cerebrum",
+          "B": "Cerebellum",
+          "C": "Medulla oblongata",
+          "D": "Hypothalamus"
+        },
+        "correct": "C",
+        "explanation": "The medulla oblongata located in the brainstem houses vital autonomic centers controlling heart rate, respiration, and gastrointestinal activity."
+      },
+      {
+        "q": 30,
+        "topic": "Reproduction",
+        "question": "Surgical sterilization procedure in human males involving cutting and tying of vas deferens is termed:",
+        "options": {
+          "A": "Tubectomy",
+          "B": "Hysterectomy",
+          "C": "Oophorectomy",
+          "D": "Vasectomy"
+        },
+        "correct": "D",
+        "explanation": "Vasectomy is a permanent male contraceptive surgical procedure where a small part of vas deferens is removed or tied up to block sperm transport."
+      },
+      {
+        "q": 31,
+        "topic": "Biology and Human Welfare",
+        "question": "Which type of immunity is acquired by injecting pre-formed antibodies or antitoxins during snake bites?",
+        "options": {
+          "A": "Active natural immunity",
+          "B": "Passive artificial immunity",
+          "C": "Active artificial immunity",
+          "D": "Passive natural immunity"
+        },
+        "correct": "B",
+        "explanation": "Administering antivenom containing ready-made antibodies provides immediate, short-term passive artificial protection against toxins."
+      },
+      {
+        "q": 32,
+        "topic": "Human Physiology",
+        "question": "A water vascular system with tube feet used for locomotion, capture of prey, and respiration is characteristic of:",
+        "options": {
+          "A": "Asterias (Starfish)",
+          "B": "Pila (Apple snail)",
+          "C": "Nereis (Sandworm)",
+          "D": "Adamsia (Sea anemone)"
+        },
+        "correct": "A",
+        "explanation": "Echinoderms like Asterias (Starfish) possess a unique hydraulic water vascular system derived from coelom for locomotion and feeding."
+      },
+      {
+        "q": 33,
+        "topic": "Cell Structure and Function",
+        "question": "Which non-protein organic cofactor is tightly bound to an apoenzyme to form a catalytically active holoenzyme?",
+        "options": {
+          "A": "Coenzyme",
+          "B": "Metal ion",
+          "C": "Isoenzyme",
+          "D": "Prosthetic group"
+        },
+        "correct": "D",
+        "explanation": "Prosthetic groups are non-protein organic cofactors that bind tightly and permanently to apoenzymes (e.g., heme in peroxidase)."
+      },
+      {
+        "q": 34,
+        "topic": "Human Physiology",
+        "question": "Which gastric mucosal cells secrete hydrochloric acid (HCl) and intrinsic factor required for vitamin B12 absorption?",
+        "options": {
+          "A": "Peptic cells",
+          "B": "Goblet cells",
+          "C": "Parietal or oxyntic cells",
+          "D": "Enteroendocrine cells"
+        },
+        "correct": "C",
+        "explanation": "Oxyntic (parietal) cells in gastric glands secrete HCl and Castle's intrinsic factor necessary for ileal absorption of Vitamin B12."
+      },
+      {
+        "q": 35,
+        "topic": "Human Physiology",
+        "question": "Joint present between atlas and axis vertebrae enabling head rotation is an example of:",
+        "options": {
+          "A": "Hinge joint",
+          "B": "Pivot joint",
+          "C": "Gliding joint",
+          "D": "Saddle joint"
+        },
+        "correct": "B",
+        "explanation": "The atlanto-axial joint between atlas (C1) and axis (C2) is a trochoid/pivot synovial joint allowing rotational movement."
+      },
+      {
+        "q": 36,
+        "topic": "Human Physiology",
+        "question": "Diabetes insipidus is caused by deficiency or hyposecretion of which hormone?",
+        "options": {
+          "A": "Insulin",
+          "B": "Glucagon",
+          "C": "Oxytocin",
+          "D": "Vasopressin (ADH)"
+        },
+        "correct": "D",
+        "explanation": "Deficiency of Anti-Diuretic Hormone (ADH/Vasopressin) impairs renal water reabsorption, causing excretion of large volumes of dilute urine (diabetes insipidus)."
+      },
+      {
+        "q": 37,
+        "topic": "Cell Structure and Function",
+        "question": "The cap-like vesicle structure covering the anterior portion of a human sperm head containing hydrolytic enzymes is:",
+        "options": {
+          "A": "Centriole",
+          "B": "Axoneme",
+          "C": "Acrosome",
+          "D": "Middle piece"
+        },
+        "correct": "C",
+        "explanation": "The acrosome derived from Golgi apparatus contains sperm lysins (hyaluronidase, acrosin) that penetrate ovum protective layers."
+      },
+      {
+        "q": 38,
+        "topic": "Human Physiology",
+        "question": "Which ancestral hominid species had a cranial capacity of approximately 900 cc and was the first to use fire?",
+        "options": {
+          "A": "Homo habilis",
+          "B": "Homo erectus",
+          "C": "Homo neanderthalensis",
+          "D": "Australopithecus"
+        },
+        "correct": "B",
+        "explanation": "Homo erectus fossils discovered in Java (1891) revealed a brain capacity of ~900 cc, erect posture, and evidence of controlled fire usage."
+      },
+      {
+        "q": 39,
+        "topic": "Biotechnology and its Applications",
+        "question": "Bollworms that infect cotton crops are controlled by Cry toxins encoded by genes isolated from:",
+        "options": {
+          "A": "Agrobacterium tumefaciens",
+          "B": "Thermus aquaticus",
+          "C": "Escherichia coli",
+          "D": "Bacillus thuringiensis"
+        },
+        "correct": "D",
+        "explanation": "Cry toxins (endotoxins) are crystalline insecticidal proteins encoded by cry genes extracted from soil bacterium Bacillus thuringiensis (Bt)."
+      },
+      {
+        "q": 40,
+        "topic": "Diversity in the Living World",
+        "question": "Which of the following chordates is jawless (Agnatha) and possesses a sucking circular mouth without jaws?",
+        "options": {
+          "A": "Scoliodon (Dogfish)",
+          "B": "Exocoetus (Flying fish)",
+          "C": "Petromyzon (Lamprey)",
+          "D": "Betta (Fighting fish)"
+        },
+        "correct": "C",
+        "explanation": "Petromyzon (lamprey) and Myxine (hagfish) belong to class Cyclostomata under superclass Agnatha, featuring jawless suctorial circular mouths."
+      },
+      {
+        "q": 41,
+        "topic": "Human Physiology",
+        "question": "The plasma protein that plays a paramount role in maintaining osmotic balance of blood is:",
+        "options": {
+          "A": "Fibrinogen",
+          "B": "Globulin",
+          "C": "Albumin",
+          "D": "Prothrombin"
+        },
+        "correct": "C",
+        "explanation": "Serum albumin synthesized by liver maintains blood colloid osmotic pressure (oncotic pressure), keeping fluid in vascular spaces."
+      },
+      {
+        "q": 42,
+        "topic": "Human Physiology",
+        "question": "Depolarization of a neuronal membrane during transmission of nerve impulse occurs due to rapid influx of:",
+        "options": {
+          "A": "Potassium ions",
+          "B": "Chloride ions",
+          "C": "Calcium ions",
+          "D": "Sodium ions"
+        },
+        "correct": "D",
+        "explanation": "Stimulation opens voltage-gated Na+ channels, allowing rapid influx of Na+ into axon cytoplasm, reversing polarity from negative to positive."
+      },
+      {
+        "q": 43,
+        "topic": "Biology and Human Welfare",
+        "question": "Wuchereria bancrofti and Wuchereria malayi cause filariasis by residing in human:",
+        "options": {
+          "A": "Lungs",
+          "B": "Lymphatic vessels",
+          "C": "Liver sinusoids",
+          "D": "Small intestine"
+        },
+        "correct": "B",
+        "explanation": "Filarial worms (Wuchereria) infect human lymphatic vessels of lower limbs and genital organs, causing chronic inflammatory swelling (elephantiasis)."
+      },
+      {
+        "q": 44,
+        "topic": "Reproduction",
+        "question": "Which non-medicated intra-uterine device (IUD) acts by creating a mild sterile inflammatory reaction in the uterus?",
+        "options": {
+          "A": "CuT",
+          "B": "LNG-20",
+          "C": "Progestasert",
+          "D": "Lippes loop"
+        },
+        "correct": "D",
+        "explanation": "Lippes loop is a plastic non-medicated double-S shaped IUD that attracts phagocytes, enhancing sperm phagocytosis inside uterus."
+      },
+      {
+        "q": 45,
+        "topic": "Genetics and Evolution",
+        "question": "The industrial melanism observed in peppered moths (Biston betularia) in England demonstrates:",
+        "options": {
+          "A": "Genetic drift",
+          "B": "Adaptive radiation",
+          "C": "Artificial selection",
+          "D": "Natural selection"
+        },
+        "correct": "D",
+        "explanation": "Industrial melanism in Biston betularia illustrates directional natural selection, where dark melanic forms survived better on soot-covered tree trunks post-industrialization."
+      }
+    ]
+  }
+}

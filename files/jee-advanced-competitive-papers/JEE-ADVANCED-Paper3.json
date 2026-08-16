@@ -1,0 +1,770 @@
+{
+  "paper_id": "JEE-ADVANCED-Paper3",
+  "title": "JEE Advanced Paper 3",
+  "exam": "JEE Advanced",
+  "year": 2026,
+  "subjects": {
+    "Mathematics": [
+      {
+        "q": 1,
+        "type": "MCQ",
+        "topic": "Integral Calculus",
+        "question": "Value of I = ∫0^(π/2) sin³x / (sin³x + cos³x) dx:",
+        "options": {
+          "A": "π/2",
+          "B": "π/6",
+          "C": "π/4",
+          "D": "π/3"
+        },
+        "correct": "C",
+        "explanation": "King's property gives 2I = ∫0^(π/2) 1 dx = π/2, so I = π/4."
+      },
+      {
+        "q": 2,
+        "type": "MCQ",
+        "topic": "Matrices and Determinants",
+        "question": "Let M = [[1,1,1],[0,1,1],[0,0,1]]. The top-right entry an of M^n is:",
+        "options": {
+          "A": "n(n+1)/2",
+          "B": "n²",
+          "C": "n(n-1)/2",
+          "D": "2^n - 1"
+        },
+        "correct": "A",
+        "explanation": "an = 1+2+···+n = n(n+1)/2."
+      },
+      {
+        "q": 3,
+        "type": "MCQ",
+        "topic": "Sets, Relations and Functions",
+        "question": "The number of real solutions to 2^x + 3^x + 4^x = 5^x is:",
+        "options": {
+          "A": "0",
+          "B": "2",
+          "C": "Infinitely many",
+          "D": "1"
+        },
+        "correct": "D",
+        "explanation": "Dividing by 5^x: (2/5)^x+(3/5)^x+(4/5)^x=1. The LHS is strictly decreasing in x, so there is a unique real root."
+      },
+      {
+        "q": 4,
+        "type": "MCQ",
+        "topic": "Integral Calculus",
+        "question": "The area bounded by y = x² and y = |x| is:",
+        "options": {
+          "A": "1/6",
+          "B": "1/3",
+          "C": "1/2",
+          "D": "2/3"
+        },
+        "correct": "B",
+        "explanation": "Area = 2∫0^1 (x-x²)dx = 2(1/2-1/3) = 1/3."
+      },
+      {
+        "q": 5,
+        "type": "MCQ",
+        "topic": "Binomial Theorem",
+        "question": "The coefficient of x⁷ in (1 - x - x² + x³)⁶ is:",
+        "options": {
+          "A": "144",
+          "B": "−108",
+          "C": "−144",
+          "D": "108"
+        },
+        "correct": "C",
+        "explanation": "(1-x-x²+x³)^6 = (1-x)^12(1+x)^6. Expanding and collecting the x^7 term gives −144."
+      },
+      {
+        "q": 6,
+        "type": "MCQ",
+        "topic": "Complex Numbers",
+        "question": "The maximum value of |z - 1 - i| given |z - 3 + 2i| ≤ 4 is:",
+        "options": {
+          "A": "4 + √13",
+          "B": "4 + √5",
+          "C": "4 + √17",
+          "D": "13"
+        },
+        "correct": "A",
+        "explanation": "Maximum distance = R + |z0-z1| = 4 + |(3-2i)-(1+i)| = 4 + √13."
+      },
+      {
+        "q": 7,
+        "type": "MCQ",
+        "topic": "Differential Equations",
+        "question": "The general solution of dy/dx + y·tan x = sec x is:",
+        "options": {
+          "A": "y cos x = x + C",
+          "B": "y = sin x + C cos x",
+          "C": "y sec x = tan x + C",
+          "D": "y = cos x + C sin x"
+        },
+        "correct": "B",
+        "explanation": "IF = sec x. y·sec x = tan x + C, i.e., y = sin x + C cos x."
+      },
+      {
+        "q": 8,
+        "type": "MCQ",
+        "topic": "Statistics",
+        "question": "The variance of the first n natural numbers is:",
+        "options": {
+          "A": "(n²+1)/12",
+          "B": "(n²-1)/6",
+          "C": "n(n+1)/12",
+          "D": "(n²-1)/12"
+        },
+        "correct": "D",
+        "explanation": "The variance of the first n natural numbers is σ² = (n²-1)/12."
+      },
+      {
+        "q": 9,
+        "type": "MCQ",
+        "topic": "Limits, Continuity and Differentiability",
+        "question": "The limit lim(x→0) [e^(x²) - cos x] / x² is:",
+        "options": {
+          "A": "3/2",
+          "B": "1/2",
+          "C": "1",
+          "D": "2"
+        },
+        "correct": "A",
+        "explanation": "Using expansions: (1+x²) - (1-x²/2) = 3x²/2, so the limit is 3/2."
+      },
+      {
+        "q": 10,
+        "type": "MCQ",
+        "topic": "Vectors",
+        "question": "The scalar triple product [a b c] for a = (1,1,1), b = (1,-1,1), c = (-2,3,1) is:",
+        "options": {
+          "A": "−4",
+          "B": "6",
+          "C": "−6",
+          "D": "4"
+        },
+        "correct": "C",
+        "explanation": "Determinant expansion of the three vectors' components gives −6."
+      },
+      {
+        "q": 11,
+        "type": "MCQ",
+        "topic": "Conic Sections (Parabola, Ellipse, Hyperbola)",
+        "question": "The focal distance of P(x1, y1) on the parabola y² = 4ax is:",
+        "options": {
+          "A": "x1 − a",
+          "B": "x1 + a",
+          "C": "y1 + a",
+          "D": "√(x1² + y1²)"
+        },
+        "correct": "B",
+        "explanation": "The focal distance equals the distance to the directrix x=-a, which is x1+a."
+      },
+      {
+        "q": 12,
+        "type": "MCQ",
+        "topic": "Logarithms, Permutations and Combinations",
+        "question": "The number of 4-digit numbers from {1, 2, 3, 4, 5, 6} (with repetition allowed) divisible by 4 is:",
+        "options": {
+          "A": "48",
+          "B": "60",
+          "C": "72",
+          "D": "96"
+        },
+        "correct": "D",
+        "explanation": "There are 8 valid last-two-digit pairs divisible by 4, and the first two digits can be arranged in P(6,2)=12 ways when repetition of the leading digits isn't restricted: 8×12=96."
+      },
+      {
+        "q": 13,
+        "type": "MCQ",
+        "topic": "Probability",
+        "question": "The minimum number of shots required with hit probability p = 1/3 per shot for the overall hit probability to exceed 0.99 is:",
+        "options": {
+          "A": "12",
+          "B": "8",
+          "C": "10",
+          "D": "11"
+        },
+        "correct": "A",
+        "explanation": "(2/3)^n < 0.01 ⇒ n > 11.35 ⇒ n_min = 12."
+      },
+      {
+        "q": 14,
+        "type": "MSQ",
+        "topic": "Limits, Continuity and Differentiability",
+        "question": "For f(x) = |x| + |x-1| + |x-2|, which statement(s) is/are correct?",
+        "options": {
+          "A": "Absolute minimum at x = 1.",
+          "B": "Minimum value is 3.",
+          "C": "Non-differentiable at 3 points.",
+          "D": "Strictly increasing on (0, ∞)."
+        },
+        "correct": "A,C",
+        "explanation": "The minimum value is 2 at x=1 (not 3), so B is incorrect. The function is non-differentiable at x=0, 1, 2 (three points), so C is correct. Since it's constant/non-monotonic in parts of (0,∞), D is incorrect."
+      },
+      {
+        "q": 15,
+        "type": "MSQ",
+        "topic": "Differential Equations",
+        "question": "A differentiable function satisfies f'(x) = f(x) with f(0) = 1. Which statement(s) is/are correct?",
+        "options": {
+          "A": "f(x) = e^x.",
+          "B": "f(x+y) = f(x)f(y).",
+          "C": "lim(x→−∞) f(x) = 1.",
+          "D": "Area bounded by f(x), x = 0, x = 1, y = 0 is e − 1."
+        },
+        "correct": "A,B,D",
+        "explanation": "f(x)=e^x satisfies both conditions, so A is correct. The exponential functional equation f(x+y)=f(x)f(y) holds (B correct). lim(x→−∞)e^x=0, not 1, so C is incorrect. Area = ∫0^1 e^x dx = e−1 (D correct)."
+      },
+      {
+        "q": 16,
+        "type": "MSQ",
+        "topic": "Conic Sections (Parabola, Ellipse, Hyperbola)",
+        "question": "For the ellipse x²/25 + y²/9 = 1, which statement(s) is/are correct?",
+        "options": {
+          "A": "Eccentricity is 3/5.",
+          "B": "Foci are (±4, 0).",
+          "C": "Latus rectum length is 18/5.",
+          "D": "Directrices are x = ±25/3."
+        },
+        "correct": "B,C",
+        "explanation": "a²=25, b²=9, so e=√(1-9/25)=4/5 (not 3/5, so A is incorrect). Foci=(±ae,0)=(±4,0) (B correct). Latus rectum=2b²/a=18/5 (C correct). Directrices x=±a/e=±25/4 (not ±25/3, so D is incorrect)."
+      },
+      {
+        "q": 17,
+        "type": "MSQ",
+        "topic": "Matrices and Determinants",
+        "question": "Commuting square matrices satisfy AB = BA. Which identity/identities is/are valid?",
+        "options": {
+          "A": "(A + B)² = A² + 2AB + B²",
+          "B": "(A − B)³ = A³ − B³",
+          "C": "(A − B)(A + B) = A² − B²",
+          "D": "A^k B^m = B^m A^k"
+        },
+        "correct": "A,C,D",
+        "explanation": "When AB=BA, the standard binomial-type identities (A+B)²=A²+2AB+B² and (A−B)(A+B)=A²−B² hold, as does the commuting power identity A^kB^m=B^mA^k. (A−B)³ expands to A³−3A²B+3AB²−B³, not A³−B³, so B is incorrect."
+      },
+      {
+        "q": 18,
+        "type": "MSQ",
+        "topic": "Applications of Derivatives",
+        "question": "For f(x) = sin x − x + x³/6, which statement(s) is/are correct?",
+        "options": {
+          "A": "f'(x) ≥ 0 for all x ∈ R.",
+          "B": "Strictly decreasing on R.",
+          "C": "f(x) < 0 for x > 0.",
+          "D": "f(x) > 0 for x > 0."
+        },
+        "correct": "A,D",
+        "explanation": "f'(x)=cos x − 1 + x²/2 ≥ 0 for all real x (A correct, so B is incorrect). Since f is monotonically non-decreasing from f(0)=0, f(x) > 0 for x > 0 (D correct, C incorrect)."
+      }
+    ],
+    "Physics": [
+      {
+        "q": 1,
+        "type": "MCQ",
+        "topic": "System of Particles and Rotational Motion",
+        "question": "A uniform solid sphere of mass m and radius R is projected horizontally with velocity v0 on a rough horizontal surface with coefficient of kinetic friction µ, without any initial rotation. The time t after which pure rolling starts and the total work done by friction during this transition are respectively given by:",
+        "options": {
+          "A": "t = 2v0/(5µg), W = -2/7 mv0^2",
+          "B": "t = v0/(7µg), W = -1/14 mv0^2",
+          "C": "t = 2v0/(7µg), W = -1/7 mv0^2",
+          "D": "t = 5v0/(7µg), W = -3/14 mv0^2"
+        },
+        "correct": "C",
+        "explanation": "Friction gives linear deceleration a=µg, so v(t)=v0-µgt. Torque τ=µmgR gives α=5µg/2R, so ω(t)=5µgt/2R. Pure rolling starts when v=Rω: v0-µgt=(5/2)µgt ⇒ t=2v0/(7µg). At this point v=5v0/7. Work done by friction W=Kf-Ki = (5/14)mv0^2 - (1/2)mv0^2 = -1/7 mv0^2."
+      },
+      {
+        "q": 2,
+        "type": "MCQ",
+        "topic": "Electrostatics",
+        "question": "A non-conducting solid sphere of radius R carries a non-uniform volume charge density given by ρ(r) = ρ0(1 - r/R) for r ≤ R. The magnitude of the electric field at a distance r = R/2 from the center is:",
+        "options": {
+          "A": "5ρ0R/(48ε0)",
+          "B": "5ρ0R/(24ε0)",
+          "C": "ρ0R/(12ε0)",
+          "D": "7ρ0R/(48ε0)"
+        },
+        "correct": "A",
+        "explanation": "By Gauss's law, qenc = 4πρ0(r^3/3 - r^4/4R), so E(r) = (ρ0/ε0)(r/3 - r^2/4R). At r=R/2, E = (ρ0R/ε0)(1/6 - 1/16) = 5ρ0R/(48ε0)."
+      },
+      {
+        "q": 3,
+        "type": "MCQ",
+        "topic": "Electromagnetic Induction and AC Circuits",
+        "question": "An RLC series circuit consists of a resistor R, an inductor L, and a capacitor C. Critical damping for which the circuit returns to equilibrium without oscillation is satisfied when R equals:",
+        "options": {
+          "A": "√(L/C)",
+          "B": "(1/2)√(L/C)",
+          "C": "4√(L/C)",
+          "D": "2√(L/C)"
+        },
+        "correct": "D",
+        "explanation": "The characteristic equation L(d²q/dt²)+R(dq/dt)+q/C=0 has roots λ=-R/2L±√((R/2L)²-1/LC). Critical damping requires the discriminant to vanish: (R/2L)²=1/LC, giving R=2√(L/C)."
+      },
+      {
+        "q": 4,
+        "type": "MCQ",
+        "topic": "Electromagnetic Induction and AC Circuits",
+        "question": "A flat circular coil of radius a having N turns is rotated with constant angular frequency ω about one of its diameters perpendicular to a uniform magnetic field B. If the electrical resistance is R, the average thermal power dissipated in the coil per rotation cycle is:",
+        "options": {
+          "A": "NBπa^2ω/(2R)",
+          "B": "N^2B^2π^2a^4ω^2/(2R)",
+          "C": "N^2B^2π^2a^4ω^2/(4R)",
+          "D": "N^2B^2π^2a^4ω^2/R"
+        },
+        "correct": "B",
+        "explanation": "Induced emf E(t)=NBπa^2ω sin(ωt). Instantaneous power P(t)=E(t)^2/R. Averaging with ⟨sin^2(ωt)⟩=1/2 gives Pavg = N^2B^2π^2a^4ω^2/(2R)."
+      },
+      {
+        "q": 5,
+        "type": "MCQ",
+        "topic": "Thermal Physics",
+        "question": "One mole of an ideal monoatomic gas undergoes a process P = kV. The molar heat capacity of the gas during this process is:",
+        "options": {
+          "A": "5/2 R",
+          "B": "3/2 R",
+          "C": "2R",
+          "D": "3R"
+        },
+        "correct": "C",
+        "explanation": "P=kV means PV^-1=k, so polytropic index n=-1. C=Cv+R/(1-n)=1.5R+R/(1-(-1))=1.5R+0.5R=2R."
+      },
+      {
+        "q": 6,
+        "type": "MCQ",
+        "topic": "Ray Optics",
+        "question": "A thin convex lens of focal length f = 20 cm is placed in front of a flat plane mirror at a distance of 10 cm. A point object is placed on the principal axis at 30 cm in front of the lens. The final position of the image formed by the system is at a distance from the mirror equal to:",
+        "options": {
+          "A": "30 cm in front of the mirror",
+          "B": "20 cm behind the mirror",
+          "C": "10 cm behind the mirror",
+          "D": "50 cm in front of the mirror"
+        },
+        "correct": "D",
+        "explanation": "First refraction: u1=-30, f=20 ⇒ v1=+60 cm, giving a virtual object 50 cm behind the mirror. Reflection forms a real image 50 cm in front of the mirror (40 cm left of lens). Second refraction: u2=-40, f=20 ⇒ v2=+40 cm left of lens, i.e., 50 cm in front of the mirror."
+      },
+      {
+        "q": 7,
+        "type": "MCQ",
+        "topic": "Modern Physics",
+        "question": "An electron in a hydrogen atom transitions from n = 3 to n = 1. Emitted photon strikes a metallic surface of work function φ = 2.3 eV. De Broglie wavelength of maximum velocity photoelectrons is:",
+        "options": {
+          "A": "0.39 nm",
+          "B": "0.12 nm",
+          "C": "0.24 nm",
+          "D": "0.62 nm"
+        },
+        "correct": "A",
+        "explanation": "Eγ = E3-E1 = -1.51-(-13.6) = 12.09 eV. Kmax = 12.09-2.3 = 9.79 eV. λ = h/√(2meKmax) ≈ 1.227/√9.79 nm ≈ 0.39 nm."
+      },
+      {
+        "q": 8,
+        "type": "MCQ",
+        "topic": "Wave Motion and Sound",
+        "question": "A sound source emitting frequency f0 = 500 Hz moves along a straight path with speed u = 50 m/s. An observer stands at perpendicular distance d = 40 m from the path. When the distance between source and observer is s = 50 m while approaching, the frequency heard is: (Speed of sound v = 330 m/s)",
+        "options": {
+          "A": "515 Hz",
+          "B": "550 Hz",
+          "C": "525 Hz",
+          "D": "535 Hz"
+        },
+        "correct": "B",
+        "explanation": "Distance along path x=√(50²-40²)=30 m, cosθ=30/50=0.6. Velocity component along line of sight u∥=50×0.6=30 m/s. f'=f0·v/(v-u∥)=500×330/300=550 Hz."
+      },
+      {
+        "q": 9,
+        "type": "MCQ",
+        "topic": "Mechanical Properties of Solids and Fluids",
+        "question": "A small solid spherical ball of mass m, radius r, and density ρ falls vertically through a viscous liquid of density σ (σ < ρ) and viscosity η. Terminal velocity vT is proportional to:",
+        "options": {
+          "A": "r(ρ-σ)/η",
+          "B": "r^2(ρ+σ)/η",
+          "C": "r(ρ-σ)/η^2",
+          "D": "r^2(ρ-σ)/η"
+        },
+        "correct": "D",
+        "explanation": "Balancing gravity, buoyancy, and Stokes' drag gives vT = (2/9)r^2(ρ-σ)g/η, so vT ∝ r^2(ρ-σ)/η."
+      },
+      {
+        "q": 10,
+        "type": "MCQ",
+        "topic": "Simple Harmonic Motion and Oscillations",
+        "question": "A uniform thin rod of mass M and length L is pivoted at its top end. A point mass m = M/2 is attached to the bottom tip. The angular frequency ω for small oscillations about the pivot is:",
+        "options": {
+          "A": "√(6g/5L)",
+          "B": "√(3g/2L)",
+          "C": "√(9g/7L)",
+          "D": "√(12g/7L)"
+        },
+        "correct": "A",
+        "explanation": "I = (1/3)ML^2 + (1/2)ML^2 = (5/6)ML^2. Restoring torque τ=-MgLθ. ω=√(MgL/(5/6 ML^2)) = √(6g/5L)."
+      },
+      {
+        "q": 11,
+        "type": "MCQ",
+        "topic": "Gravitation",
+        "question": "A satellite of mass m is transferred from a circular orbit of radius R to radius 2R around Earth (mass M). The energy supplied by the thrusters is:",
+        "options": {
+          "A": "GMm/(2R)",
+          "B": "GMm/(3R)",
+          "C": "GMm/(4R)",
+          "D": "GMm/(8R)"
+        },
+        "correct": "C",
+        "explanation": "Orbital mechanical energy E=-GMm/(2r). ΔE = -GMm/4R - (-GMm/2R) = GMm/4R."
+      },
+      {
+        "q": 12,
+        "type": "MCQ",
+        "topic": "Capacitance",
+        "question": "A parallel plate capacitor with area A and separation d is filled with two dielectric slabs of thickness d/2 with constants K1 = 2 and K2 = 4. The equivalent capacitance is:",
+        "options": {
+          "A": "(4/3)ε0A/d",
+          "B": "(8/3)ε0A/d",
+          "C": "2ε0A/d",
+          "D": "3ε0A/d"
+        },
+        "correct": "B",
+        "explanation": "C1=4ε0A/d, C2=8ε0A/d in series: 1/Ceq=1/C1+1/C2=3d/(8ε0A), so Ceq=(8/3)ε0A/d."
+      },
+      {
+        "q": 13,
+        "type": "MCQ",
+        "topic": "Units, Dimensions, Errors and Experimental Physics",
+        "question": "A screw gauge has pitch 1 mm and 100 circular divisions. When closed, the zero mark lies 3 divisions below the main scale reference line. When measuring a wire's diameter, the main scale reads 2 mm and the 45th division coincides. The true diameter is:",
+        "options": {
+          "A": "2.48 mm",
+          "B": "2.45 mm",
+          "C": "2.39 mm",
+          "D": "2.42 mm"
+        },
+        "correct": "D",
+        "explanation": "LC=0.01 mm. Positive zero error = +0.03 mm. Observed reading = 2.45 mm. True diameter = 2.45 - 0.03 = 2.42 mm."
+      },
+      {
+        "q": 14,
+        "type": "MSQ",
+        "topic": "Work, Energy and Power",
+        "question": "A block m1 = 2 kg moving at v0 = 6 m/s collides head-on with a stationary block m2 = 4 kg. Coefficient of restitution e = 0.5. Which statement(s) is/are correct?",
+        "options": {
+          "A": "Final velocity of mass m1 is 0 m/s.",
+          "B": "Final velocity of mass m2 is 3 m/s.",
+          "C": "Magnitude of impulse on m2 is 12 N·s.",
+          "D": "Fractional loss of kinetic energy is 0.25."
+        },
+        "correct": "A,B,C",
+        "explanation": "Momentum: v1+2v2=6. Restitution: v2-v1=3. Solving: v1=0, v2=3 m/s. Impulse on m2 = 4×3=12 N·s. Ki=36 J, Kf=18 J, fractional loss = 18/36 = 0.5 (not 0.25), so D is incorrect."
+      },
+      {
+        "q": 15,
+        "type": "MSQ",
+        "topic": "Electromagnetic Induction and AC Circuits",
+        "question": "A square conducting loop of side L, mass m, resistance R falls under gravity into a uniform field B = B0k̂ for y < 0. Which statement(s) is/are correct?",
+        "options": {
+          "A": "Induced current flows in counter-clockwise direction upon entering.",
+          "B": "Terminal velocity vT = mgR/(B0^2 L^2).",
+          "C": "Magnetic force opposes downward velocity.",
+          "D": "Heat dissipation rate at terminal velocity is mgvT."
+        },
+        "correct": "B,C,D",
+        "explanation": "Flux increases in +k̂, so by Lenz's law the induced current is clockwise (A is incorrect). Magnetic force Fm=B0²L²v/R acts upward, opposing motion (C correct). At terminal velocity Fm=mg gives vT=mgR/(B0²L²) (B correct). Heat rate P=I²R=mgvT (D correct)."
+      },
+      {
+        "q": 16,
+        "type": "MSQ",
+        "topic": "Wave Optics",
+        "question": "In YDSE (λ = 600 nm, d = 1 mm, D = 1 m), a glass plate (t = 6 µm, µ = 1.5) is placed before one slit. Which statement(s) is/are correct?",
+        "options": {
+          "A": "Central maximum shifts by 3 mm on screen.",
+          "B": "Additional optical path length is 3 µm.",
+          "C": "Fringe width remains unchanged at 0.6 mm.",
+          "D": "Shift corresponds to 10 fringe widths."
+        },
+        "correct": "A,B,C",
+        "explanation": "Optical path change Δx=(1.5-1)×6µm=3µm (B correct). Shift Δy=ΔxD/d=3mm (A correct). β=λD/d=0.6mm (C correct). Fringe shift N=3/0.6=5 (not 10), so D is incorrect."
+      },
+      {
+        "q": 17,
+        "type": "MSQ",
+        "topic": "Thermal Physics",
+        "question": "One mole of diatomic gas (γ = 1.4) undergoes cyclic process A→B→C→A: A→B isothermal expansion at T0, B→C isochoric cooling to T0/2, C→A adiabatic compression to T0. Which statement(s) is/are correct?",
+        "options": {
+          "A": "Work done during B→C is zero.",
+          "B": "Net change in internal energy over the cycle is zero.",
+          "C": "Work done during C→A is negative.",
+          "D": "Ratio VB/VA equals 2^1.5."
+        },
+        "correct": "A,B,C",
+        "explanation": "B→C is isochoric, so WBC=0 (A correct). Internal energy is a state function, so ΔU_cycle=0 (B correct). C→A is a compression, so W<0 (C correct). Adiabatic relation gives VB/VA=2^2.5 (not 2^1.5), so D is incorrect."
+      },
+      {
+        "q": 18,
+        "type": "MSQ",
+        "topic": "Modern Physics",
+        "question": "Radioactive isotopes X (λX = 2λ) and Y (λY = λ) have initial nuclei N0X = N0 and N0Y = 2N0. Which statement(s) is/are correct?",
+        "options": {
+          "A": "At t = 0, activity of X equals activity of Y.",
+          "B": "Active nuclei ratio NX(t)/NY(t) = (1/2)e^(-λt).",
+          "C": "Activities are equal at t = ln(2)/λ.",
+          "D": "Total activity decreases monotonically with time."
+        },
+        "correct": "A,B,D",
+        "explanation": "A0X=2λN0=A0Y (A correct). NX(t)/NY(t) = N0e^-2λt/(2N0e^-λt) = (1/2)e^-λt (B correct). AX(t)=2λN0e^-2λt and AY(t)=2λN0e^-λt are equal only at t=0, so C is incorrect. Total activity is a sum of decaying exponentials, always decreasing (D correct)."
+      }
+    ],
+    "Chemistry": [
+      {
+        "q": 1,
+        "type": "MCQ",
+        "topic": "Chemical and Ionic Equilibrium",
+        "question": "A buffer solution contains 0.1 M weak acid HA (Ka = 10^-5) and 0.1 M NaA. To 1 L of buffer, 0.01 mol NaOH is added. The change in pH is: (log 1.222 = 0.086)",
+        "options": {
+          "A": "−0.086",
+          "B": "+0.086",
+          "C": "+0.176",
+          "D": "+0.043"
+        },
+        "correct": "B",
+        "explanation": "Initial pH=5.0. After adding NaOH: nHA=0.09, nA-=0.11. New pH=5.0+log(0.11/0.09)=5.086, so ΔpH=+0.086."
+      },
+      {
+        "q": 2,
+        "type": "MCQ",
+        "topic": "Electrochemistry",
+        "question": "Standard potentials: E°(Cu2+/Cu) = +0.34 V, E°(Fe2+/Fe) = −0.44 V. The equilibrium constant Kc for Fe + Cu2+ ⇌ Fe2+ + Cu at 298 K is of order:",
+        "options": {
+          "A": "10^13",
+          "B": "10^38",
+          "C": "10^52",
+          "D": "10^26"
+        },
+        "correct": "D",
+        "explanation": "E°cell = 0.78 V. log Kc = 2×0.78/0.059 ≈ 26.44, so Kc ≈ 10^26."
+      },
+      {
+        "q": 3,
+        "type": "MCQ",
+        "topic": "Chemical Kinetics",
+        "question": "For the first-order reaction A(g) → 2B(g) + C(g), the initial pressure is P0 and total pressure at time t is Pt. The rate constant k is:",
+        "options": {
+          "A": "k = (1/t)ln(2P0/(3P0-Pt))",
+          "B": "k = (1/t)ln(P0/(3P0-Pt))",
+          "C": "k = (1/t)ln(2P0/(2P0-Pt))",
+          "D": "k = (1/t)ln(P0/(2P0-Pt))"
+        },
+        "correct": "A",
+        "explanation": "Pt=P0+2x, so x=(Pt-P0)/2. PA=(3P0-Pt)/2. k=(1/t)ln(2P0/(3P0-Pt))."
+      },
+      {
+        "q": 4,
+        "type": "MCQ",
+        "topic": "Coordination Compounds",
+        "question": "The complex exhibiting the maximum magnetic moment (spin-only) in aqueous medium is:",
+        "options": {
+          "A": "[Fe(CN)6]3−",
+          "B": "[Co(NH3)6]3+",
+          "C": "[Fe(H2O)6]3+",
+          "D": "[Ni(CN)4]2−"
+        },
+        "correct": "C",
+        "explanation": "[Fe(H2O)6]3+ has Fe3+ (d5) high-spin with 5 unpaired electrons (µs ≈ 5.92 BM), the maximum among the options."
+      },
+      {
+        "q": 5,
+        "type": "MCQ",
+        "topic": "Phenols",
+        "question": "The major product of phenol with CHCl3/NaOH followed by acidification is:",
+        "options": {
+          "A": "4-Hydroxybenzoic acid",
+          "B": "Salicylaldehyde",
+          "C": "Benzaldehyde",
+          "D": "Salicylic acid"
+        },
+        "correct": "B",
+        "explanation": "The Reimer-Tiemann reaction yields salicylaldehyde as the major product via a dichlorocarbene intermediate."
+      },
+      {
+        "q": 6,
+        "type": "MCQ",
+        "topic": "Amines",
+        "question": "The increasing order of basic strength of methyl-substituted amines in aqueous medium is:",
+        "options": {
+          "A": "(CH3)3N < CH3NH2 < (CH3)2NH",
+          "B": "(CH3)2NH < CH3NH2 < (CH3)3N",
+          "C": "CH3NH2 < (CH3)3N < (CH3)2NH",
+          "D": "(CH3)3N < (CH3)2NH < CH3NH2"
+        },
+        "correct": "A",
+        "explanation": "In water, the basicity order for methylamines is secondary > primary > tertiary: (CH3)3N < CH3NH2 < (CH3)2NH."
+      },
+      {
+        "q": 7,
+        "type": "MCQ",
+        "topic": "Electrochemistry",
+        "question": "Λm of 0.01 M CH3COOH is 16.5 S cm² mol−1. Λ°m = 390.0 S cm² mol−1. Ka is:",
+        "options": {
+          "A": "1.8×10^-4 M",
+          "B": "1.8×10^-6 M",
+          "C": "1.8×10^-5 M",
+          "D": "3.2×10^-5 M"
+        },
+        "correct": "C",
+        "explanation": "α = 16.5/390 = 0.0423. Ka = Cα² ≈ 1.8×10^-5 M."
+      },
+      {
+        "q": 8,
+        "type": "MCQ",
+        "topic": "p-Block Elements",
+        "question": "The oxoacid of phosphorus with a direct P−P bond and phosphorus in the +4 oxidation state is:",
+        "options": {
+          "A": "Pyrophosphoric acid",
+          "B": "Metaphosphoric acid",
+          "C": "Pyrophosphorous acid",
+          "D": "Hypophosphoric acid"
+        },
+        "correct": "D",
+        "explanation": "Hypophosphoric acid (H4P2O6) contains a P−P bond with phosphorus in the +4 oxidation state."
+      },
+      {
+        "q": 9,
+        "type": "MCQ",
+        "topic": "Isolation of Metals",
+        "question": "The role of zinc in the cyanide extraction of gold is:",
+        "options": {
+          "A": "Reducing agent to displace gold",
+          "B": "Oxidizing agent",
+          "C": "Complexing agent",
+          "D": "Neutralizing agent"
+        },
+        "correct": "A",
+        "explanation": "Zinc acts as a reducing agent to displace gold: 2[Au(CN)2]− + Zn → [Zn(CN)4]2− + 2Au."
+      },
+      {
+        "q": 10,
+        "type": "MCQ",
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "The molecule/ion that is diamagnetic with bond order 2.0 is:",
+        "options": {
+          "A": "O2",
+          "B": "C2",
+          "C": "B2",
+          "D": "N2+"
+        },
+        "correct": "B",
+        "explanation": "C2 (12 electrons) has bond order 2.0 with all electrons paired in π2p, making it diamagnetic."
+      },
+      {
+        "q": 11,
+        "type": "MCQ",
+        "topic": "Aldehydes and Ketones",
+        "question": "Compound X (C4H8O) gives a positive 2,4-DNP test, negative Tollens' test, and positive iodoform test. X is:",
+        "options": {
+          "A": "Butanal",
+          "B": "2-Methylpropanal",
+          "C": "Butan-2-one",
+          "D": "Cyclobutanol"
+        },
+        "correct": "C",
+        "explanation": "Butan-2-one is a methyl ketone (CH3-CO-CH2-CH3), which gives a positive iodoform test but not the Tollens' test (unlike aldehydes)."
+      },
+      {
+        "q": 12,
+        "type": "MCQ",
+        "topic": "Chemical Thermodynamics",
+        "question": "At 300 K, 1 mol ideal gas expands reversibly and isothermally from 10 L to 100 L. The entropy change of the surroundings is:",
+        "options": {
+          "A": "+19.14 J K−1",
+          "B": "0 J K−1",
+          "C": "−38.28 J K−1",
+          "D": "−19.14 J K−1"
+        },
+        "correct": "D",
+        "explanation": "For a reversible process, ΔSsurr = −ΔSsys = −R ln(10) = −19.14 J K−1."
+      },
+      {
+        "q": 13,
+        "type": "MCQ",
+        "topic": "Alkyl Halides",
+        "question": "The compound undergoing SN1 hydrolysis fastest is:",
+        "options": {
+          "A": "Chlorobenzene",
+          "B": "Benzyl chloride",
+          "C": "(Chloromethyl)benzene",
+          "D": "2-Chloro-2-phenylpropane"
+        },
+        "correct": "D",
+        "explanation": "2-Chloro-2-phenylpropane forms a stable tertiary benzylic carbocation Ph-C+(CH3)2, favoring SN1 hydrolysis."
+      },
+      {
+        "q": 14,
+        "type": "MSQ",
+        "topic": "s-Block Elements",
+        "question": "Which statement(s) is/are correct regarding alkali metal compounds?",
+        "options": {
+          "A": "Lithium shows diagonal relationship with magnesium.",
+          "B": "Sodium peroxide (Na2O2) is paramagnetic.",
+          "C": "Lithium carbonate decomposes more readily than sodium carbonate.",
+          "D": "Sodium is a stronger reducing agent than lithium in aqueous solution."
+        },
+        "correct": "A,C",
+        "explanation": "(A) True, due to similar ionic radii. (B) False, O2²− is diamagnetic. (C) True, Li+ polarizes CO3²− more strongly. (D) False, lithium is the strongest reducing agent in water due to its high hydration energy."
+      },
+      {
+        "q": 15,
+        "type": "MSQ",
+        "topic": "Electrochemistry",
+        "question": "For the cell reaction Zn + Cu2+ ⇌ Zn2+ + Cu, which expression(s) is/are correct?",
+        "options": {
+          "A": "Ecell = E°cell − (RT/2F)ln([Zn2+]/[Cu2+])",
+          "B": "ΔG° = −2FE°cell",
+          "C": "At equilibrium, E°cell = 0.",
+          "D": "Increasing [Cu2+] increases Ecell."
+        },
+        "correct": "A,B,D",
+        "explanation": "(A) Correct Nernst equation. (B) Correct standard free energy relation. (C) False — Ecell (not E°cell) is zero at equilibrium. (D) Correct, since increasing [Cu2+] reduces the reaction quotient Q, increasing Ecell."
+      },
+      {
+        "q": 16,
+        "type": "MSQ",
+        "topic": "Biomolecules",
+        "question": "Which statement(s) is/are correct regarding glucose?",
+        "options": {
+          "A": "D-Glucose and D-mannose are C-2 epimers.",
+          "B": "α-D-Glucose and β-D-Glucose are enantiomers.",
+          "C": "Glucose reacts with NH2OH to form an oxime.",
+          "D": "Prolonged heating with HI yields n-hexane."
+        },
+        "correct": "A,C,D",
+        "explanation": "(A) True. (B) False — they are anomers/diastereomers, not enantiomers. (C) True. (D) True, proving glucose's straight-chain structure."
+      },
+      {
+        "q": 17,
+        "type": "MSQ",
+        "topic": "Coordination Compounds",
+        "question": "Which statement(s) is/are correct regarding coordination compounds?",
+        "options": {
+          "A": "[Ni(CO)4] is tetrahedral and diamagnetic.",
+          "B": "Linkage isomerism is shown by NO2− complexes.",
+          "C": "Brown ring complex contains Fe+ and NO+.",
+          "D": "Δo for [Co(CN)6]3− is less than [Co(NH3)6]3+."
+        },
+        "correct": "A,B,C",
+        "explanation": "(A), (B), (C) are correct. (D) is false, since CN− is a stronger field ligand than NH3 and gives a larger Δo."
+      },
+      {
+        "q": 18,
+        "type": "MSQ",
+        "topic": "Classification of Elements and Periodicity in Properties",
+        "question": "Which option(s) correctly identify periodic trends?",
+        "options": {
+          "A": "First IE: B < Be < C < N < O",
+          "B": "Electron gain enthalpy magnitude: F < Cl",
+          "C": "Ionic radii: Mg2+ < Na+ < F− < O2−",
+          "D": "Electronegativity: Si < P < S < Cl"
+        },
+        "correct": "B,C,D",
+        "explanation": "(A) is false; the correct order is B < C < Be < O < N (O < N due to N's stable half-filled configuration). (B), (C), (D) are correct periodic trends."
+      }
+    ]
+  }
+}

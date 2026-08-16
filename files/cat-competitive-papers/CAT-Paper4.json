@@ -1,0 +1,936 @@
+{
+  "paper_id": "CAT-Paper4",
+  "title": "CAT Paper 4",
+  "exam": "CAT",
+  "year": 2026,
+  "subjects": {
+    "Verbal Ability and Reading Comprehension": [
+      {
+        "q": 1,
+        "topic": "Main idea",
+        "question": "Which of the following best captures the main theme of the passage?",
+        "options": {
+          "A": "Natural selection remains the primary driving force behind biochemical complexity, though genetic drift plays a minor supporting role.",
+          "B": "Constructive Neutral Evolution demonstrates that biological complexity can arise through stochastic, non-adaptive mechanisms rather than solely through natural selection.",
+          "C": "Gene duplication is the sole mechanism responsible for evolutionary adaptation in complex macromolecular structures.",
+          "D": "Epistemological approaches to functional genomics must reject all adaptationist explanations in favor of teleological narratives."
+        },
+        "correct": "B",
+        "explanation": "The passage focuses on presenting Constructive Neutral Evolution (CNE) as a challenge to the traditional selection-centric paradigm, explaining how complex biological structures can arise through nonadaptive, stochastic processes (like genetic drift and redundancy) rather than purely through natural selection. Option A contradicts the passage's emphasis on CNE destabilizing selection-centric hegemony. Option C wrongly claims gene duplication is the \"sole\" mechanism. Option D incorrectly suggests retaining teleological narratives, whereas CNE rejects them.",
+        "passage": "For decades, the standard paradigm in evolutionary biology positioned natural selection as the sole arbiter of phenotypic adaptation, reducing random genetic drift to a noise variable operating primarily in non-coding genomic wildernesses. However, recent empirical breakthroughs in molecular phylogenetics have destabilized this selection-centric hegemony. Constructive Neutral Evolution (CNE) posits that complex biochemical pathways and cellular machinery need not arise as optimal adaptations forged in the crucible of environmental pressure. Instead, they can emerge through a non-adaptive, stochastic ratchet mechanism involving neutral mutations and pre-existing phenotypic excess. Consider a bi-functional enzyme capable of carrying out a primary metabolic task alongside a weak, redundant secondary function. Under strict selectionism, the secondary function would only be preserved if it conferred an immediate fitness advantage. CNE, by contrast, demonstrates that if gene duplication occurs, neutral mutations can freely decay one copy's primary function while leaving the secondary intact, without penalizing the organism. Over generation cycles, what began as an accidental biochemical redundancy becomes structurally mandatory for organismic survival. The resulting cellular complexity is not an elegant monument to adaptive optimization, but rather a historical artifact—an accidental dependency frozen in time by genetic drift. This insight fundamentally alters our epistemological approach to functional genomics. When researchers observe intricate macromolecular structures, the immediate impulse has historically been to construct adaptive teleological narratives explaining why such complexity is \"better.\" CNE forces a methodological recalibration: complexity must be treated as the default outcome of neutral stochastic processes unless an explicit adaptive regime can be empirically demonstrated. Consequently, the architecture of life is less like a masterfully engineered machine and more like a bureaucratic apparatus, where layers of administrative redundancy become irreplaceable simply because the system adapted around their unprompted presence."
+      },
+      {
+        "q": 2,
+        "topic": "Inference",
+        "question": "According to the author, the metaphor of a \"bureaucratic apparatus\" suggests that macromolecular complexity is:",
+        "options": {
+          "A": "Meticulously designed to achieve maximum efficiency in metabolic processing.",
+          "B": "Unnecessary and inherently harmful to the organism's overall fitness.",
+          "C": "An accumulation of accidental redundancies that have become indispensable over time.",
+          "D": "A temporary evolutionary state that will eventually be streamlined by natural selection."
+        },
+        "correct": "C",
+        "explanation": "The author uses the metaphor of a bureaucratic apparatus to explain that layers of redundancy, originally unprompted or accidental, become structurally mandatory and irreplaceable over time. Option A describes an engineered machine (which the author contrasts with the bureaucracy). Option B incorrectly calls it inherently harmful (it is neutral/mandatory, not detrimental). Option D is an unsupported assumption.",
+        "passage": "For decades, the standard paradigm in evolutionary biology positioned natural selection as the sole arbiter of phenotypic adaptation, reducing random genetic drift to a noise variable operating primarily in non-coding genomic wildernesses. However, recent empirical breakthroughs in molecular phylogenetics have destabilized this selection-centric hegemony. Constructive Neutral Evolution (CNE) posits that complex biochemical pathways and cellular machinery need not arise as optimal adaptations forged in the crucible of environmental pressure. Instead, they can emerge through a non-adaptive, stochastic ratchet mechanism involving neutral mutations and pre-existing phenotypic excess. Consider a bi-functional enzyme capable of carrying out a primary metabolic task alongside a weak, redundant secondary function. Under strict selectionism, the secondary function would only be preserved if it conferred an immediate fitness advantage. CNE, by contrast, demonstrates that if gene duplication occurs, neutral mutations can freely decay one copy's primary function while leaving the secondary intact, without penalizing the organism. Over generation cycles, what began as an accidental biochemical redundancy becomes structurally mandatory for organismic survival. The resulting cellular complexity is not an elegant monument to adaptive optimization, but rather a historical artifact—an accidental dependency frozen in time by genetic drift. This insight fundamentally alters our epistemological approach to functional genomics. When researchers observe intricate macromolecular structures, the immediate impulse has historically been to construct adaptive teleological narratives explaining why such complexity is \"better.\" CNE forces a methodological recalibration: complexity must be treated as the default outcome of neutral stochastic processes unless an explicit adaptive regime can be empirically demonstrated. Consequently, the architecture of life is less like a masterfully engineered machine and more like a bureaucratic apparatus, where layers of administrative redundancy become irreplaceable simply because the system adapted around their unprompted presence."
+      },
+      {
+        "q": 3,
+        "topic": "Inference",
+        "question": "Based on the passage, how does Constructive Neutral Evolution (CNE) alter the researcher's default approach in functional genomics?",
+        "options": {
+          "A": "It obligates researchers to presume complexity stems from neutral processes unless an adaptive purpose is proved.",
+          "B": "It demands that researchers prioritize natural selection over genetic drift when studying noncoding DNA.",
+          "C": "It requires scientists to completely disregard molecular phylogenetics in favor of teleological models.",
+          "D": "It forces biologists to prove that gene duplication always results in immediate fitness enhancements."
+        },
+        "correct": "A",
+        "explanation": "Paragraph 3 explicitly states: \"CNE forces a methodological recalibration: complexity must be treated as the default outcome of neutral stochastic processes unless an explicit adaptive regime can be empirically demonstrated.\" Option B is opposite to CNE's premise. Option C directly contradicts the passage (CNE relies on molecular phylogenetics and rejects teleology). Option D misrepresents CNE, which argues duplication can occur without immediate fitness enhancements.",
+        "passage": "For decades, the standard paradigm in evolutionary biology positioned natural selection as the sole arbiter of phenotypic adaptation, reducing random genetic drift to a noise variable operating primarily in non-coding genomic wildernesses. However, recent empirical breakthroughs in molecular phylogenetics have destabilized this selection-centric hegemony. Constructive Neutral Evolution (CNE) posits that complex biochemical pathways and cellular machinery need not arise as optimal adaptations forged in the crucible of environmental pressure. Instead, they can emerge through a non-adaptive, stochastic ratchet mechanism involving neutral mutations and pre-existing phenotypic excess. Consider a bi-functional enzyme capable of carrying out a primary metabolic task alongside a weak, redundant secondary function. Under strict selectionism, the secondary function would only be preserved if it conferred an immediate fitness advantage. CNE, by contrast, demonstrates that if gene duplication occurs, neutral mutations can freely decay one copy's primary function while leaving the secondary intact, without penalizing the organism. Over generation cycles, what began as an accidental biochemical redundancy becomes structurally mandatory for organismic survival. The resulting cellular complexity is not an elegant monument to adaptive optimization, but rather a historical artifact—an accidental dependency frozen in time by genetic drift. This insight fundamentally alters our epistemological approach to functional genomics. When researchers observe intricate macromolecular structures, the immediate impulse has historically been to construct adaptive teleological narratives explaining why such complexity is \"better.\" CNE forces a methodological recalibration: complexity must be treated as the default outcome of neutral stochastic processes unless an explicit adaptive regime can be empirically demonstrated. Consequently, the architecture of life is less like a masterfully engineered machine and more like a bureaucratic apparatus, where layers of administrative redundancy become irreplaceable simply because the system adapted around their unprompted presence."
+      },
+      {
+        "q": 4,
+        "topic": "Purpose",
+        "question": "The author describes the evolution of a bi-functional enzyme primarily to illustrate that:",
+        "options": {
+          "A": "Secondary functions are always discarded unless natural selection immediately reinforces them.",
+          "B": "Redundant biological mechanisms can lock an organism into structural reliance through nonadaptive pathways.",
+          "C": "Gene duplication invariably leads to the total loss of metabolic efficiency in cellular machinery.",
+          "D": "Optimal adaptation is the ultimate destination of all neutral mutation ratchets."
+        },
+        "correct": "B",
+        "explanation": "Paragraph 2 uses the bi-functional enzyme to show how neutral mutations and gene duplication turn an accidental redundancy into something \"structurally mandatory for organismic survival\" via non-adaptive drift. Option A reflects strict selectionism, which CNE refutes. Option C exaggerates \"total loss of metabolic efficiency.\" Option D contradicts CNE, which argues that complexity is a historical artifact, not optimal adaptation. Passage 2 The philosophical discourse surrounding algorithmic justice often founders on a foundational category mistake: treating fairness as an intrinsic mathematical property of distribution rather than an ongoing socio-political negotiation. When computer scientists formulate \"fairness metrics\"—such as predictive parity, equalized odds, or demographic parity—they construct localized mathematical formalisms. Each formalism guarantees mathematical consistency within its bounded parameters. However, arrow-style impossibility theorems in social choice theory have repeatedly proved that these distinct mathematical definitions of fairness are mutually incompatible in heterogeneous populations. Optimizing for one mathematical metric inevitably degrades another. This technical impasse stems from a deeper epistemic blind spot. Algorithms do not merely evaluate pre-existing realities; they actively perform social sorting and re-encode systemic power asymmetries. By translating messy, historically contingent human phenomena into static numerical features, automated decision systems strip away context in pursuit of computational tractability. When an algorithm assesses creditworthiness or recidivism risk, it is not measuring an inherent personal trait; it is predicting how institutions historically characterized by structural bias will respond to an individual possessing specific demographic and socio-economic markers. To overcome this, normative theory must re-evaluate the ontological status of algorithmic outputs. Rather than seeking an elusive algorithmic purity—where a system is declared objectively \"unbiased\"—we must treat automated systems as political actors embedded in institutional ecologies. Fairness cannot be engineered into code as a static state; it must be proceduralized as a dynamic contestation. True algorithmic governance requires institutional mechanisms for contestability, transparency, and recourse, allowing impacted communities to continuously challenge the epistemic assumptions codified within the software.",
+        "passage": "For decades, the standard paradigm in evolutionary biology positioned natural selection as the sole arbiter of phenotypic adaptation, reducing random genetic drift to a noise variable operating primarily in non-coding genomic wildernesses. However, recent empirical breakthroughs in molecular phylogenetics have destabilized this selection-centric hegemony. Constructive Neutral Evolution (CNE) posits that complex biochemical pathways and cellular machinery need not arise as optimal adaptations forged in the crucible of environmental pressure. Instead, they can emerge through a non-adaptive, stochastic ratchet mechanism involving neutral mutations and pre-existing phenotypic excess. Consider a bi-functional enzyme capable of carrying out a primary metabolic task alongside a weak, redundant secondary function. Under strict selectionism, the secondary function would only be preserved if it conferred an immediate fitness advantage. CNE, by contrast, demonstrates that if gene duplication occurs, neutral mutations can freely decay one copy's primary function while leaving the secondary intact, without penalizing the organism. Over generation cycles, what began as an accidental biochemical redundancy becomes structurally mandatory for organismic survival. The resulting cellular complexity is not an elegant monument to adaptive optimization, but rather a historical artifact—an accidental dependency frozen in time by genetic drift. This insight fundamentally alters our epistemological approach to functional genomics. When researchers observe intricate macromolecular structures, the immediate impulse has historically been to construct adaptive teleological narratives explaining why such complexity is \"better.\" CNE forces a methodological recalibration: complexity must be treated as the default outcome of neutral stochastic processes unless an explicit adaptive regime can be empirically demonstrated. Consequently, the architecture of life is less like a masterfully engineered machine and more like a bureaucratic apparatus, where layers of administrative redundancy become irreplaceable simply because the system adapted around their unprompted presence."
+      },
+      {
+        "q": 5,
+        "topic": "Inference",
+        "question": "Which of the following best expresses the primary claim of the passage?",
+        "options": {
+          "A": "Algorithmic fairness can be fully realized if computer scientists adopt unified mathematical metrics across all applications.",
+          "B": "Automated systems are inherently flawless in measuring creditworthiness because they strip away subjective human context.",
+          "C": "True fairness in algorithmic systems requires treating them as political actors requiring dynamic socio-institutional contestation, rather than mere static mathematical formulas.",
+          "D": "Social choice theory proves that all algorithms are fundamentally incapable of making predictions in human societies."
+        },
+        "correct": "C",
+        "explanation": "The passage argues against treating fairness purely as a mathematical property, highlighting mathematical impossibilities and epistemic blind spots, and advocates for viewing algorithms as political actors embedded in institutional frameworks that require contestation. Option A contradicts the impossibility theorems mentioned in paragraph 1. Option B contradicts the author's critique of stripping away context. Option D overstates the claim; algorithms can predict, but their definitions of fairness are mathematically incompatible and context-blind.",
+        "passage": "The philosophical discourse surrounding algorithmic justice often founders on a foundational category mistake: treating fairness as an intrinsic mathematical property of distribution rather than an ongoing socio-political negotiation. When computer scientists formulate \"fairness metrics\"—such as predictive parity, equalized odds, or demographic parity—they construct localized mathematical formalisms. Each formalism guarantees mathematical consistency within its bounded parameters. However, arrow-style impossibility theorems in social choice theory have repeatedly proved that these distinct mathematical definitions of fairness are mutually incompatible in heterogeneous populations. Optimizing for one mathematical metric inevitably degrades another. This technical impasse stems from a deeper epistemic blind spot. Algorithms do not merely evaluate pre-existing realities; they actively perform social sorting and re-encode systemic power asymmetries. By translating messy, historically contingent human phenomena into static numerical features, automated decision systems strip away context in pursuit of computational tractability. When an algorithm assesses creditworthiness or recidivism risk, it is not measuring an inherent personal trait; it is predicting how institutions historically characterized by structural bias will respond to an individual possessing specific demographic and socio-economic markers. To overcome this, normative theory must re-evaluate the ontological status of algorithmic outputs. Rather than seeking an elusive algorithmic purity—where a system is declared objectively \"unbiased\"—we must treat automated systems as political actors embedded in institutional ecologies. Fairness cannot be engineered into code as a static state; it must be proceduralized as a dynamic contestation. True algorithmic governance requires institutional mechanisms for contestability, transparency, and recourse, allowing impacted communities to continuously challenge the epistemic assumptions codified within the software."
+      },
+      {
+        "q": 6,
+        "topic": "Purpose",
+        "question": "The author mentions \"arrow-style impossibility theorems\" in paragraph 1 primarily to demonstrate that:",
+        "options": {
+          "A": "Computer scientists have successfully resolved all mathematical discrepancies among fairness metrics.",
+          "B": "Universal algorithmic fairness is mathematically impossible because different fairness metrics conflict with one another.",
+          "C": "Demographic parity is the only mathematically sound definition of fairness in heterogeneous populations.",
+          "D": "Social choice theory is inapplicable to automated decision-making systems."
+        },
+        "correct": "B",
+        "explanation": "Paragraph 1 explicitly states that \"arrow-style impossibility theorems... have repeatedly proved that these distinct mathematical definitions of fairness are mutually incompatible in heterogeneous populations. Optimizing for one... degrades another.\" Option A is factually opposite to the text. Option C chooses one metric as supreme, which the passage does not support. Option D is incorrect as social choice theory is explicitly cited to explain algorithmic limitations.",
+        "passage": "The philosophical discourse surrounding algorithmic justice often founders on a foundational category mistake: treating fairness as an intrinsic mathematical property of distribution rather than an ongoing socio-political negotiation. When computer scientists formulate \"fairness metrics\"—such as predictive parity, equalized odds, or demographic parity—they construct localized mathematical formalisms. Each formalism guarantees mathematical consistency within its bounded parameters. However, arrow-style impossibility theorems in social choice theory have repeatedly proved that these distinct mathematical definitions of fairness are mutually incompatible in heterogeneous populations. Optimizing for one mathematical metric inevitably degrades another. This technical impasse stems from a deeper epistemic blind spot. Algorithms do not merely evaluate pre-existing realities; they actively perform social sorting and re-encode systemic power asymmetries. By translating messy, historically contingent human phenomena into static numerical features, automated decision systems strip away context in pursuit of computational tractability. When an algorithm assesses creditworthiness or recidivism risk, it is not measuring an inherent personal trait; it is predicting how institutions historically characterized by structural bias will respond to an individual possessing specific demographic and socio-economic markers. To overcome this, normative theory must re-evaluate the ontological status of algorithmic outputs. Rather than seeking an elusive algorithmic purity—where a system is declared objectively \"unbiased\"—we must treat automated systems as political actors embedded in institutional ecologies. Fairness cannot be engineered into code as a static state; it must be proceduralized as a dynamic contestation. True algorithmic governance requires institutional mechanisms for contestability, transparency, and recourse, allowing impacted communities to continuously challenge the epistemic assumptions codified within the software."
+      },
+      {
+        "q": 7,
+        "topic": "Inference",
+        "question": "According to paragraph 2, what critical mistake occurs when algorithms measure recidivism risk or creditworthiness?",
+        "options": {
+          "A": "They miscalculate numeric features due to inadequate computational processing power.",
+          "B": "They conflate historical institutional behavior and bias with intrinsic traits of individuals.",
+          "C": "They rely exclusively on subjective human narratives rather than static data.",
+          "D": "They fail to apply predictive parity across homogeneous demographic categories."
+        },
+        "correct": "B",
+        "explanation": "Paragraph 2 explains: \"When an algorithm assesses creditworthiness or recidivism risk, it is not measuring an inherent personal trait; it is predicting how institutions historically characterized by structural bias will respond...\" This directly matches Option B. Option A blames computing power, which is not mentioned. Option C is reversed (they strip away context/narrative). Option D misuses the technical terms from paragraph 1.",
+        "passage": "The philosophical discourse surrounding algorithmic justice often founders on a foundational category mistake: treating fairness as an intrinsic mathematical property of distribution rather than an ongoing socio-political negotiation. When computer scientists formulate \"fairness metrics\"—such as predictive parity, equalized odds, or demographic parity—they construct localized mathematical formalisms. Each formalism guarantees mathematical consistency within its bounded parameters. However, arrow-style impossibility theorems in social choice theory have repeatedly proved that these distinct mathematical definitions of fairness are mutually incompatible in heterogeneous populations. Optimizing for one mathematical metric inevitably degrades another. This technical impasse stems from a deeper epistemic blind spot. Algorithms do not merely evaluate pre-existing realities; they actively perform social sorting and re-encode systemic power asymmetries. By translating messy, historically contingent human phenomena into static numerical features, automated decision systems strip away context in pursuit of computational tractability. When an algorithm assesses creditworthiness or recidivism risk, it is not measuring an inherent personal trait; it is predicting how institutions historically characterized by structural bias will respond to an individual possessing specific demographic and socio-economic markers. To overcome this, normative theory must re-evaluate the ontological status of algorithmic outputs. Rather than seeking an elusive algorithmic purity—where a system is declared objectively \"unbiased\"—we must treat automated systems as political actors embedded in institutional ecologies. Fairness cannot be engineered into code as a static state; it must be proceduralized as a dynamic contestation. True algorithmic governance requires institutional mechanisms for contestability, transparency, and recourse, allowing impacted communities to continuously challenge the epistemic assumptions codified within the software."
+      },
+      {
+        "q": 8,
+        "topic": "Inference",
+        "question": "Which of the following initiatives would the author most likely support to improve algorithmic governance?",
+        "options": {
+          "A": "Eliminating public oversight and allowing software engineers to refine fairness metrics internally.",
+          "B": "Replacing human judicial systems entirely with standardized mathematical algorithms.",
+          "C": "Creating public avenues for affected groups to challenge, question, and appeal algorithmic decisions and their underlying premises.",
+          "D": "Standardizing demographic parity as the mandatory mathematical standard for all decision systems."
+        },
+        "correct": "C",
+        "explanation": "Paragraph 3 explicitly advocates for \"institutional mechanisms for contestability, transparency, and recourse, allowing impacted communities to continuously challenge the epistemic assumptions codified within the software.\" Option C directly reflects this conclusion. Option A contradicts transparency and contestability. Option B goes against the critique of pure algorithmic governance. Option D advocates a single metric, which paragraph 1 proves mathematically flawed and incompatible. Passage 3 In literary history, the transition from manuscript culture to print print-capitalism is often depicted as a sudden, democratizing rupture that instantly unified vernacular languages and forged national consciousness. However, this narrative oversimplifies a complex, centuries-long process of textual fluidification. Early modern print houses were not sterile factories of standardized uniformity; they were dynamic zones of orthographic experimentation and editorial instability. Early printers frequently modified texts based on regional paper supplies, local dialectal preferences of compositors, and the immediate financial imperative to avoid unsold inventory, resulting in wildly divergent editions of the same work published within months of each other. Furthermore, the shift from codex manuscripts to movable type did not extinguish oral traditions or private scribal publication, as linear historical models suggest. Rather, it initiated an era of media hybridization. Wealthy elites continued to circulate manuscript poetry as a mark of aristocratic exclusivity, viewing print as a vulgar, debased medium meant for the unrefined masses. Concurrently, popular print items like broadside ballads and chapbooks were specifically designed to be read aloud, sang in taverns, and memorized, thereby feeding back into the very oral culture print was supposedly destined to destroy. Recognizing print as an unstable, highly adaptive medium forces a re-evaluation of canonical stability. The \"definitive text\" sought by 19th-century philologists is largely an idealist fiction imposed retroactively on an era defined by textual pluriformity. The early modern print marketplace operated under a logic of iterative adaptation, where texts were constantly recycled, pirated, and re-paged. Understanding this historical reality allows contemporary scholars to draw striking parallels between early modern print culture and the fluid, hyper-textual ecosystem of the digital age.",
+        "passage": "The philosophical discourse surrounding algorithmic justice often founders on a foundational category mistake: treating fairness as an intrinsic mathematical property of distribution rather than an ongoing socio-political negotiation. When computer scientists formulate \"fairness metrics\"—such as predictive parity, equalized odds, or demographic parity—they construct localized mathematical formalisms. Each formalism guarantees mathematical consistency within its bounded parameters. However, arrow-style impossibility theorems in social choice theory have repeatedly proved that these distinct mathematical definitions of fairness are mutually incompatible in heterogeneous populations. Optimizing for one mathematical metric inevitably degrades another. This technical impasse stems from a deeper epistemic blind spot. Algorithms do not merely evaluate pre-existing realities; they actively perform social sorting and re-encode systemic power asymmetries. By translating messy, historically contingent human phenomena into static numerical features, automated decision systems strip away context in pursuit of computational tractability. When an algorithm assesses creditworthiness or recidivism risk, it is not measuring an inherent personal trait; it is predicting how institutions historically characterized by structural bias will respond to an individual possessing specific demographic and socio-economic markers. To overcome this, normative theory must re-evaluate the ontological status of algorithmic outputs. Rather than seeking an elusive algorithmic purity—where a system is declared objectively \"unbiased\"—we must treat automated systems as political actors embedded in institutional ecologies. Fairness cannot be engineered into code as a static state; it must be proceduralized as a dynamic contestation. True algorithmic governance requires institutional mechanisms for contestability, transparency, and recourse, allowing impacted communities to continuously challenge the epistemic assumptions codified within the software."
+      },
+      {
+        "q": 9,
+        "topic": "Purpose",
+        "question": "The primary purpose of the passage is to:",
+        "options": {
+          "A": "Demonstrate that early modern print culture immediately eliminated manuscript and oral traditions across Europe.",
+          "B": "Challenge the oversimplified view of the print revolution by highlighting the fluid, hybrid, and non-standardized nature of early print culture.",
+          "C": "Argue that 19th-century philologists were correct in establishing definitive canonical texts for early modern literature.",
+          "D": "Prove that digital media ecosystems share no commonalities with historic print mechanisms."
+        },
+        "correct": "B",
+        "explanation": "The passage argues against the oversimplified narrative of a sudden, unifying print rupture, showing that early print was unstable, non-standardized, and hybrid with oral/scribal modes. Option A contradicts the entire passage. Option C contradicts paragraph 3, which calls \"definitive text\" an idealist fiction. Option D contradicts the final sentence of paragraph 3, which highlights striking parallels to the digital age.",
+        "passage": "In literary history, the transition from manuscript culture to print print-capitalism is often depicted as a sudden, democratizing rupture that instantly unified vernacular languages and forged national consciousness. However, this narrative oversimplifies a complex, centuries-long process of textual fluidification. Early modern print houses were not sterile factories of standardized uniformity; they were dynamic zones of orthographic experimentation and editorial instability. Early printers frequently modified texts based on regional paper supplies, local dialectal preferences of compositors, and the immediate financial imperative to avoid unsold inventory, resulting in wildly divergent editions of the same work published within months of each other. Furthermore, the shift from codex manuscripts to movable type did not extinguish oral traditions or private scribal publication, as linear historical models suggest. Rather, it initiated an era of media hybridization. Wealthy elites continued to circulate manuscript poetry as a mark of aristocratic exclusivity, viewing print as a vulgar, debased medium meant for the unrefined masses. Concurrently, popular print items like broadside ballads and chapbooks were specifically designed to be read aloud, sang in taverns, and memorized, thereby feeding back into the very oral culture print was supposedly destined to destroy. Recognizing print as an unstable, highly adaptive medium forces a re-evaluation of canonical stability. The \"definitive text\" sought by 19th-century philologists is largely an idealist fiction imposed retroactively on an era defined by textual pluriformity. The early modern print marketplace operated under a logic of iterative adaptation, where texts were constantly recycled, pirated, and re-paged. Understanding this historical reality allows contemporary scholars to draw striking parallels between early modern print culture and the fluid, hyper-textual ecosystem of the digital age."
+      },
+      {
+        "q": 10,
+        "topic": "Inference",
+        "question": "Which of the following, if true, would most weaken the author's argument regarding media hybridization in Paragraph 2?",
+        "options": {
+          "A": "Aristocratic elites frequently commissioned print houses to produce private, highly customized leather-bound editions.",
+          "B": "Broadside ballads were primarily read silently in absolute solitude by isolated individual scholars.",
+          "C": "Historical records show that popular chapbooks were often memorized and recited in public gathering spaces.",
+          "D": "Early print houses employed compositors from diverse geographical backgrounds with distinct dialectal traits."
+        },
+        "correct": "B",
+        "explanation": "Paragraph 2 argues that print items like broadside ballads were designed to be read aloud and sung, feeding oral culture (media hybridization). If broadside ballads were actually read silently in solitude, it directly undermines the author's argument that early print actively interacted with and fed oral culture. Option A shows aristocrats using print, which doesn't refute hybridization. Option C supports the author's premise. Option D supports paragraph 1's point about regional variation.",
+        "passage": "In literary history, the transition from manuscript culture to print print-capitalism is often depicted as a sudden, democratizing rupture that instantly unified vernacular languages and forged national consciousness. However, this narrative oversimplifies a complex, centuries-long process of textual fluidification. Early modern print houses were not sterile factories of standardized uniformity; they were dynamic zones of orthographic experimentation and editorial instability. Early printers frequently modified texts based on regional paper supplies, local dialectal preferences of compositors, and the immediate financial imperative to avoid unsold inventory, resulting in wildly divergent editions of the same work published within months of each other. Furthermore, the shift from codex manuscripts to movable type did not extinguish oral traditions or private scribal publication, as linear historical models suggest. Rather, it initiated an era of media hybridization. Wealthy elites continued to circulate manuscript poetry as a mark of aristocratic exclusivity, viewing print as a vulgar, debased medium meant for the unrefined masses. Concurrently, popular print items like broadside ballads and chapbooks were specifically designed to be read aloud, sang in taverns, and memorized, thereby feeding back into the very oral culture print was supposedly destined to destroy. Recognizing print as an unstable, highly adaptive medium forces a re-evaluation of canonical stability. The \"definitive text\" sought by 19th-century philologists is largely an idealist fiction imposed retroactively on an era defined by textual pluriformity. The early modern print marketplace operated under a logic of iterative adaptation, where texts were constantly recycled, pirated, and re-paged. Understanding this historical reality allows contemporary scholars to draw striking parallels between early modern print culture and the fluid, hyper-textual ecosystem of the digital age."
+      },
+      {
+        "q": 11,
+        "topic": "Inference",
+        "question": "According to the passage, 19th-century philologists erred in their analysis of early modern texts by:",
+        "options": {
+          "A": "Assuming that early modern texts possessed an inherent canonical stability and singular definitive version.",
+          "B": "Refusing to analyze printed books and focusing exclusively on medieval manuscripts.",
+          "C": "Ignoring the influence of digital technology on historical textual transmission.",
+          "D": "Overemphasizing the role of local compositors and regional paper shortages in text production."
+        },
+        "correct": "A",
+        "explanation": "Paragraph 3 states: \"The 'definitive text' sought by 19th-century philologists is largely an idealist fiction imposed retroactively on an era defined by textual pluriformity.\" This directly aligns with Option A. Option B is unmentioned and inaccurate. Option C is anachronistic (digital technology didn't exist in the 19th century). Option D is what the author emphasizes, not the philologists.",
+        "passage": "In literary history, the transition from manuscript culture to print print-capitalism is often depicted as a sudden, democratizing rupture that instantly unified vernacular languages and forged national consciousness. However, this narrative oversimplifies a complex, centuries-long process of textual fluidification. Early modern print houses were not sterile factories of standardized uniformity; they were dynamic zones of orthographic experimentation and editorial instability. Early printers frequently modified texts based on regional paper supplies, local dialectal preferences of compositors, and the immediate financial imperative to avoid unsold inventory, resulting in wildly divergent editions of the same work published within months of each other. Furthermore, the shift from codex manuscripts to movable type did not extinguish oral traditions or private scribal publication, as linear historical models suggest. Rather, it initiated an era of media hybridization. Wealthy elites continued to circulate manuscript poetry as a mark of aristocratic exclusivity, viewing print as a vulgar, debased medium meant for the unrefined masses. Concurrently, popular print items like broadside ballads and chapbooks were specifically designed to be read aloud, sang in taverns, and memorized, thereby feeding back into the very oral culture print was supposedly destined to destroy. Recognizing print as an unstable, highly adaptive medium forces a re-evaluation of canonical stability. The \"definitive text\" sought by 19th-century philologists is largely an idealist fiction imposed retroactively on an era defined by textual pluriformity. The early modern print marketplace operated under a logic of iterative adaptation, where texts were constantly recycled, pirated, and re-paged. Understanding this historical reality allows contemporary scholars to draw striking parallels between early modern print culture and the fluid, hyper-textual ecosystem of the digital age."
+      },
+      {
+        "q": 12,
+        "topic": "Purpose",
+        "question": "The author describes early print houses as \"dynamic zones of orthographic experimentation\" (Paragraph 1) primarily to show that:",
+        "options": {
+          "A": "Printers prioritized linguistic standardized rules above commercial profit.",
+          "B": "Early printing processes resulted in textual variability rather than immediate standardized uniformity.",
+          "C": "Early modern compositors were entirely uneducated and incapable of maintaining printing presses.",
+          "D": "Vernacular languages were fully unified within the first few years of movable type technology."
+        },
+        "correct": "B",
+        "explanation": "Paragraph 1 explicitly contrasts \"sterile factories of standardized uniformity\" with \"dynamic zones of orthographic experimentation and editorial instability,\" explaining how variations in paper and compositor dialects caused divergent editions. Option A contradicts the profit motive mentioned. Option C is a derogative distortion not supported by text. Option D contradicts the author's refutation of immediate unification. Passage 4 The concept of \"deep time\"—the immense multi-billion-year geological timescale of Earth—is often celebrated as a humbling triumph of human intellect over provincial anthropocentrism. By realizing that human history occupies a mere fraction of a percentage point of planetary duration, thinkers from the Enlightenment onward argued that humanity would cultivate a profound ecological humility. Yet, an examination of contemporary Anthropocene discourse reveals a paradoxical inversion: rather than fostering modesty, the mastery of geological deep time has frequently been coopted to re-inflate human agency into a planetary force of geological proportions. This geo-prometheanism manifests most clearly in technocratic responses to climate change, such as global solar geoengineering and planetary-scale carbon capture. In these narratives, Earth history is conceptualized as a series of system-level \"glitches\" or catastrophic disruptions—such as the Great Oxidation Event or Permian mass extinctions—that were eventually stabilized by feedback mechanisms. Modern humanity is thus framed not as a temporary inhabitant of a vast world, but as the conscious intelligence capable of steering Earth's metabolic machinery. Deep time is transformed from a humbling abyss into an operational blueprint for terraforming our own planet. However, this managerial posture relies on a dangerous conceptual conflation between Earth's geological agency and human technological control. Geological systems operate through nonlinear, non-deterministic feedback loops across temporal scales that completely resist human political and technological planning. By reducing deep time to a control system problem, geo-prometheanism ignores the fundamental contingency of earth dynamics. True ecological attunement requires acknowledging that deep time is not a system to be engineered, but an irreducible temporal horizon within which human existence remains fragile, dependent, and fundamentally ungrounded.",
+        "passage": "In literary history, the transition from manuscript culture to print print-capitalism is often depicted as a sudden, democratizing rupture that instantly unified vernacular languages and forged national consciousness. However, this narrative oversimplifies a complex, centuries-long process of textual fluidification. Early modern print houses were not sterile factories of standardized uniformity; they were dynamic zones of orthographic experimentation and editorial instability. Early printers frequently modified texts based on regional paper supplies, local dialectal preferences of compositors, and the immediate financial imperative to avoid unsold inventory, resulting in wildly divergent editions of the same work published within months of each other. Furthermore, the shift from codex manuscripts to movable type did not extinguish oral traditions or private scribal publication, as linear historical models suggest. Rather, it initiated an era of media hybridization. Wealthy elites continued to circulate manuscript poetry as a mark of aristocratic exclusivity, viewing print as a vulgar, debased medium meant for the unrefined masses. Concurrently, popular print items like broadside ballads and chapbooks were specifically designed to be read aloud, sang in taverns, and memorized, thereby feeding back into the very oral culture print was supposedly destined to destroy. Recognizing print as an unstable, highly adaptive medium forces a re-evaluation of canonical stability. The \"definitive text\" sought by 19th-century philologists is largely an idealist fiction imposed retroactively on an era defined by textual pluriformity. The early modern print marketplace operated under a logic of iterative adaptation, where texts were constantly recycled, pirated, and re-paged. Understanding this historical reality allows contemporary scholars to draw striking parallels between early modern print culture and the fluid, hyper-textual ecosystem of the digital age."
+      },
+      {
+        "q": 13,
+        "topic": "Para Summary",
+        "question": "Which of the following best summarizes the main paradox highlighted by the author in the passage?",
+        "options": {
+          "A": "Understanding deep time was intended to instill ecological humility, but it has instead been used to justify technological dominance over Earth.",
+          "B": "Solar geoengineering is the only viable solution to climate change, yet human societies refuse to implement it due to fear of deep time.",
+          "C": "The Great Oxidation Event proved that biological organisms cannot alter planetary systems, contradicting modern geology.",
+          "D": "Human political systems operate across geological timescales, making long-term ecological planning effortless."
+        },
+        "correct": "A",
+        "explanation": "Paragraph 1 outlines the central paradox: deep time was expected to inspire humility, but Anthropocene discourse has inverted this to inflate human agency into planetary-scale geo-prometheanism/ dominance. Option B contradicts the author's critique of geoengineering. Option C misinterprets the Great Oxidation Event reference. Option D contradicts paragraph 3, which states human planning cannot match geological timescales.",
+        "passage": "The concept of \"deep time\"—the immense multi-billion-year geological timescale of Earth—is often celebrated as a humbling triumph of human intellect over provincial anthropocentrism. By realizing that human history occupies a mere fraction of a percentage point of planetary duration, thinkers from the Enlightenment onward argued that humanity would cultivate a profound ecological humility. Yet, an examination of contemporary Anthropocene discourse reveals a paradoxical inversion: rather than fostering modesty, the mastery of geological deep time has frequently been coopted to re-inflate human agency into a planetary force of geological proportions. This geo-prometheanism manifests most clearly in technocratic responses to climate change, such as global solar geoengineering and planetary-scale carbon capture. In these narratives, Earth history is conceptualized as a series of system-level \"glitches\" or catastrophic disruptions—such as the Great Oxidation Event or Permian mass extinctions—that were eventually stabilized by feedback mechanisms. Modern humanity is thus framed not as a temporary inhabitant of a vast world, but as the conscious intelligence capable of steering Earth's metabolic machinery. Deep time is transformed from a humbling abyss into an operational blueprint for terraforming our own planet. However, this managerial posture relies on a dangerous conceptual conflation between Earth's geological agency and human technological control. Geological systems operate through nonlinear, non-deterministic feedback loops across temporal scales that completely resist human political and technological planning. By reducing deep time to a control system problem, geo-prometheanism ignores the fundamental contingency of earth dynamics. True ecological attunement requires acknowledging that deep time is not a system to be engineered, but an irreducible temporal horizon within which human existence remains fragile, dependent, and fundamentally ungrounded."
+      },
+      {
+        "q": 14,
+        "topic": "Inference",
+        "question": "What does the term \"geo-prometheanism\" as used in the passage refer to?",
+        "options": {
+          "A": "A philosophy advocating complete human withdrawal from all interactions with nature.",
+          "B": "The belief that human technology can and should actively manage, steer, and re-engineer Earth's planetary systems.",
+          "C": "The scientific study of ancient mass extinction events through carbon isotope dating.",
+          "D": "A socio-political movement dedicated to preserving deep time geological formations from mining."
+        },
+        "correct": "B",
+        "explanation": "Paragraph 2 defines geo-prometheanism through examples like geoengineering and carbon capture, where humanity is framed as \"the conscious intelligence capable of steering Earth's metabolic machinery\" and using deep time as an \"operational blueprint for terraforming.\" Option B captures this accurately. Options A, C, and D misrepresent the term's explicit context in the passage.",
+        "passage": "The concept of \"deep time\"—the immense multi-billion-year geological timescale of Earth—is often celebrated as a humbling triumph of human intellect over provincial anthropocentrism. By realizing that human history occupies a mere fraction of a percentage point of planetary duration, thinkers from the Enlightenment onward argued that humanity would cultivate a profound ecological humility. Yet, an examination of contemporary Anthropocene discourse reveals a paradoxical inversion: rather than fostering modesty, the mastery of geological deep time has frequently been coopted to re-inflate human agency into a planetary force of geological proportions. This geo-prometheanism manifests most clearly in technocratic responses to climate change, such as global solar geoengineering and planetary-scale carbon capture. In these narratives, Earth history is conceptualized as a series of system-level \"glitches\" or catastrophic disruptions—such as the Great Oxidation Event or Permian mass extinctions—that were eventually stabilized by feedback mechanisms. Modern humanity is thus framed not as a temporary inhabitant of a vast world, but as the conscious intelligence capable of steering Earth's metabolic machinery. Deep time is transformed from a humbling abyss into an operational blueprint for terraforming our own planet. However, this managerial posture relies on a dangerous conceptual conflation between Earth's geological agency and human technological control. Geological systems operate through nonlinear, non-deterministic feedback loops across temporal scales that completely resist human political and technological planning. By reducing deep time to a control system problem, geo-prometheanism ignores the fundamental contingency of earth dynamics. True ecological attunement requires acknowledging that deep time is not a system to be engineered, but an irreducible temporal horizon within which human existence remains fragile, dependent, and fundamentally ungrounded."
+      },
+      {
+        "q": 15,
+        "topic": "Inference",
+        "question": "According to paragraph 3, why is the managerial approach to deep time flawed?",
+        "options": {
+          "A": "Because geological systems are entirely linear and easily predicted by supercomputers.",
+          "B": "Because human technology has already fully mastered climate feedback mechanisms.",
+          "C": "Because geological systems operate through nonlinear, unpredictable processes that resist human control mechanisms.",
+          "D": "Because political institutions have successfully integrated multi-million-year planning cycles into policy."
+        },
+        "correct": "C",
+        "explanation": "Paragraph 3 explains that geological systems operate through \"nonlinear, non-deterministic feedback loops across temporal scales that completely resist human political and technological planning.\" Option C accurately summarizes this. Option A asserts the opposite (linear vs. nonlinear). Option B contradicts the author's critique. Option D is factually opposite to the passage's point about human planning limits.",
+        "passage": "The concept of \"deep time\"—the immense multi-billion-year geological timescale of Earth—is often celebrated as a humbling triumph of human intellect over provincial anthropocentrism. By realizing that human history occupies a mere fraction of a percentage point of planetary duration, thinkers from the Enlightenment onward argued that humanity would cultivate a profound ecological humility. Yet, an examination of contemporary Anthropocene discourse reveals a paradoxical inversion: rather than fostering modesty, the mastery of geological deep time has frequently been coopted to re-inflate human agency into a planetary force of geological proportions. This geo-prometheanism manifests most clearly in technocratic responses to climate change, such as global solar geoengineering and planetary-scale carbon capture. In these narratives, Earth history is conceptualized as a series of system-level \"glitches\" or catastrophic disruptions—such as the Great Oxidation Event or Permian mass extinctions—that were eventually stabilized by feedback mechanisms. Modern humanity is thus framed not as a temporary inhabitant of a vast world, but as the conscious intelligence capable of steering Earth's metabolic machinery. Deep time is transformed from a humbling abyss into an operational blueprint for terraforming our own planet. However, this managerial posture relies on a dangerous conceptual conflation between Earth's geological agency and human technological control. Geological systems operate through nonlinear, non-deterministic feedback loops across temporal scales that completely resist human political and technological planning. By reducing deep time to a control system problem, geo-prometheanism ignores the fundamental contingency of earth dynamics. True ecological attunement requires acknowledging that deep time is not a system to be engineered, but an irreducible temporal horizon within which human existence remains fragile, dependent, and fundamentally ungrounded."
+      },
+      {
+        "q": 16,
+        "topic": "Tone",
+        "question": "The author's tone regarding planetary-scale technological solutions (like geoengineering) can best be described as:",
+        "options": {
+          "A": "Unreservedly enthusiastic and optimistic.",
+          "B": "Highly critical and skeptical.",
+          "C": "Completely indifferent and detached.",
+          "D": "Confused and self-contradictory."
+        },
+        "correct": "B",
+        "explanation": "The author calls this posture a \"dangerous conceptual conflation,\" warns against treating Earth as an operational control problem, and advocates for true ecological humility over technological hubris. This clearly demonstrates a critical and skeptical tone. Options A, C, and D mischaracterize the author's clear position. Verbal Ability (Standalone MCQs)",
+        "passage": "The concept of \"deep time\"—the immense multi-billion-year geological timescale of Earth—is often celebrated as a humbling triumph of human intellect over provincial anthropocentrism. By realizing that human history occupies a mere fraction of a percentage point of planetary duration, thinkers from the Enlightenment onward argued that humanity would cultivate a profound ecological humility. Yet, an examination of contemporary Anthropocene discourse reveals a paradoxical inversion: rather than fostering modesty, the mastery of geological deep time has frequently been coopted to re-inflate human agency into a planetary force of geological proportions. This geo-prometheanism manifests most clearly in technocratic responses to climate change, such as global solar geoengineering and planetary-scale carbon capture. In these narratives, Earth history is conceptualized as a series of system-level \"glitches\" or catastrophic disruptions—such as the Great Oxidation Event or Permian mass extinctions—that were eventually stabilized by feedback mechanisms. Modern humanity is thus framed not as a temporary inhabitant of a vast world, but as the conscious intelligence capable of steering Earth's metabolic machinery. Deep time is transformed from a humbling abyss into an operational blueprint for terraforming our own planet. However, this managerial posture relies on a dangerous conceptual conflation between Earth's geological agency and human technological control. Geological systems operate through nonlinear, non-deterministic feedback loops across temporal scales that completely resist human political and technological planning. By reducing deep time to a control system problem, geo-prometheanism ignores the fundamental contingency of earth dynamics. True ecological attunement requires acknowledging that deep time is not a system to be engineered, but an irreducible temporal horizon within which human existence remains fragile, dependent, and fundamentally ungrounded."
+      },
+      {
+        "q": 17,
+        "topic": "Para Jumbles",
+        "question": "Parajumble: The four sentences (labelled 1, 2, 3, 4) given below, when properly sequenced, form a coherent paragraph. Choose the correct order from the options. 1. This structural shift has compelled central banks to move beyond traditional monetary mechanisms like interest rate adjustments. 2. In response, monetary authorities are increasingly experimenting with digital currencies to maintain sovereign oversight of financial rails. 3. The rapid proliferation of decentralized financial networks has fragmented the traditional state monopoly over money creation. 4. As private crypto-assets gain institutional traction, capital flows bypass commercial banking intermediaries altogether.",
+        "options": {
+          "A": "3-4-1-2",
+          "B": "4-1-3-2",
+          "C": "3-1-4-2",
+          "D": "1-4-3-2"
+        },
+        "correct": "A",
+        "explanation": "Sentence 3 establishes the broad problem (decentralized networks fragmenting state monopoly over money). Sentence 4 elaborates on this mechanism (private crypto-assets bypassing banking intermediaries). Sentence 1 refers to \"This structural shift\" (the combination of 3 and 4) compelling central banks to look beyond interest rates. Sentence 2 provides the ultimate consequence/action taken \"In response\" (experimenting with central bank digital currencies). Thus, 3-4-1-2 forms a logically tight flow."
+      },
+      {
+        "q": 18,
+        "topic": "Para Jumbles",
+        "question": "Parajumble: The four sentences (labelled 1, 2, 3, 4) given below, when properly sequenced, form a coherent paragraph. Choose the correct order from the options. 1. The resultant phenomenon, known as cognitive offloading, reduces our reliance on internal working memory. 2. While this frees up mental bandwidth for higher-order reasoning, it simultaneously weakens longterm memory consolidation. 3. Modern navigation software continuously directs our spatial movement through real-time auditory and visual prompts. 4. Consequently, drivers who rely exclusively on GPS show reduced neural activity in the hippocampus during spatial retrieval tasks.",
+        "options": {
+          "A": "3-1-2-4",
+          "B": "1-3-2-4",
+          "C": "3-4-1-2",
+          "D": "2-1-3-4"
+        },
+        "correct": "A",
+        "explanation": "Sentence 3 introduces the specific context (modern navigation software directing spatial movement). Sentence 1 names the resulting process (\"This resultant phenomenon, known as cognitive offloading...\"). Sentence 2 explores the dual effect of this offloading (frees bandwidth but weakens long-term memory). Sentence 4 provides the specific empirical evidence/consequence (\"Consequently, drivers who rely exclusively on GPS show reduced neural activity...\"). Hence, 3-1-2-4 is the logical order."
+      },
+      {
+        "q": 19,
+        "topic": "Odd Sentence Out",
+        "question": "Odd One Out: Five sentences are given below. Four of them, when properly sequenced, form a coherent paragraph. Identify the sentence that DOES NOT fit into the logical structure. 1. Architectural conservationists often prioritize preserving the tangible material fabrics of historic structures. 2. However, intangible cultural heritage—such as artisanal craft techniques and community ritual uses—is equally vital to a site's authenticity. 3. When preservation efforts focus exclusively on physical stones and mortar, they risk turning living historical spaces into static museum pieces. 4. Modern urban renewal projects frequently utilize tax incentives to gentrify historical downtown commercial districts. 5. Sustainable heritage management must therefore integrate structural restoration with the continuous preservation of local community traditions.",
+        "options": {
+          "A": "Sentence 1",
+          "B": "Sentence 2",
+          "C": "Sentence 3",
+          "D": "Sentence 4"
+        },
+        "correct": "D",
+        "explanation": "Sentences 1, 2, 3, and 5 form a coherent paragraph discussing the debate in architectural conservation between physical preservation (tangible) and community practices (intangible). Sentence 4 shifts the focus completely to urban renewal, tax incentives, and gentrification, which is off-topic from the core discussion of heritage conservation methodology."
+      },
+      {
+        "q": 20,
+        "topic": "Odd Sentence Out",
+        "question": "Odd One Out: Five sentences are given below. Four of them, when properly sequenced, form a coherent paragraph. Identify the sentence that DOES NOT fit into the logical structure. 1. Quantum key distribution leverages the fundamental principles of quantum mechanics to secure communication channels. 2. Any unauthorized attempt by an eavesdropper to measure a quantum state irrevocably alters that state, exposing the intrusion. 3. This unique property guarantees unconditional security rooted in physical law rather than computational difficulty. 4. Traditional public-key cryptography relies on the assumption that factoring large prime numbers is computationally intractable. 5. Consequently, quantum encryption protocols offer a permanent defense against prospective threats from quantum supercomputers.",
+        "options": {
+          "A": "Sentence 1",
+          "B": "Sentence 4",
+          "C": "Sentence 3",
+          "D": "Sentence 5"
+        },
+        "correct": "B",
+        "explanation": "Sentences 1, 2, 3, and 5 build a focused paragraph about Quantum Key Distribution (QKD), how measurement alters quantum state, how this physical law provides unconditional security, and how it protects against quantum supercomputers. Sentence 4 introduces traditional public-key cryptography and prime factoring, which disrupts the tight explanatory thread focused on QKD mechanism."
+      },
+      {
+        "q": 21,
+        "topic": "Para Summary",
+        "question": "Paragraph Summary: Read the passage below and choose the option that best captures its core essence. For decades, deep-sea benthic ecosystems were assumed to be entirely reliant on organic detritus falling from sunlit surface waters—a sparse dietary regime known as \"marine snow.\" However, the discovery of hydrothermal vent communities powered by chemosynthetic bacteria shattered this biological dogma. These microbes oxidize hydrogen sulfide emitted from geothermal fissures, converting inorganic carbon into biomass without sunlight. This proved that complex life could flourish independently of solar energy, expanding our conceptual boundaries regarding habited zones on ice-covered moons like Europa and Enceladus.",
+        "options": {
+          "A": "Chemosynthetic bacteria at hydrothermal vents prove that deep-sea life relies on solar energy transmitted through geothermal vents.",
+          "B": "Hydrothermal vent ecosystems demonstrate that complex life can thrive without solar energy via bacterial chemosynthesis, expanding our parameters for extraterrestrial habitability.",
+          "C": "Marine snow remains the primary source of nutrients for benthic ecosystems despite the discovery of geothermal fissures on Europa.",
+          "D": "The discovery of deep-sea organic detritus proved that moons like Enceladus contain extensive chemosynthetic food webs."
+        },
+        "correct": "B",
+        "explanation": "The passage highlights two main points: (1) chemosynthetic life at hydrothermal vents thrives independently of sunlight, and (2) this broadens our understanding of potential life on icy moons. Option B captures both elements perfectly without distortion. Option A falsely claims reliance on solar energy. Option C contradicts the passage's main point about shattering that dogma. Option D misstates the role of detritus and makes overextended claims."
+      },
+      {
+        "q": 22,
+        "topic": "Para Summary",
+        "question": "Paragraph Summary: Read the passage below and choose the option that best captures its core essence. In behavioral economics, \"choice overload\" occurs when an excessive array of options paralyzes consumers, leading to decision fatigue, lower satisfaction, or total non-choice. While classical economic theory asserts that maximizing options inherently maximizes utility, empirical studies show that human cognitive architecture struggles to evaluate complex multi-attribute choices simultaneously. When presented with dozens of alternatives, consumers fall back on crude heuristics or defer decisions entirely, demonstrating that limiting choices can paradoxically enhance consumer welfare and transaction completion rates.",
+        "options": {
+          "A": "Classical economic theory accurately predicts that offering consumers more options leads to optimal satisfaction and utility.",
+          "B": "Choice overload paralyzes consumers due to cognitive limitations, demonstrating that restricting options can paradoxically improve decision-making and welfare.",
+          "C": "Consumers always avoid making decisions when presented with multi-attribute choices, regardless of option pool size.",
+          "D": "Behavioral economics proves that heuristics are inferior to classical economic models when evaluating consumer welfare."
+        },
+        "correct": "B",
+        "explanation": "The paragraph explains choice overload, contrasts it with classical theory, explains the cognitive limitation reason, and concludes that restricting choices can paradoxically increase welfare. Option B concisely captures all these essential points. Option A states the classical theory that the passage refutes. Option C uses an absolute (\"always avoid\"). Option D misrepresents the discussion on heuristics."
+      },
+      {
+        "q": 23,
+        "topic": "Inference",
+        "question": "Sentence Completion: Select the option that logically completes the passage. The philosophical critique of technological determinism argues that technology does not develop along an autonomous, self-generating trajectory independent of human values. Instead, technological artifacts are thoroughly inscribed with the political priorities, social biases, and economic interests of their creators. When we treat technological progress as an inevitable force of nature to which society must passively adapt, we obscure the human choices embedded within technical design. Consequently, resisting technological determinism requires us to ________.",
+        "options": {
+          "A": "accept that artificial intelligence will inevitably replace human political judgment.",
+          "B": "recognize technical systems as socio-political choices that can be critically evaluated and democratically reshaped.",
+          "C": "abandon all technological innovation in favor of pre-industrial agrarian lifestyles.",
+          "D": "allow market forces to dictate which technological artifacts survive in the public sphere."
+        },
+        "correct": "B",
+        "explanation": "The passage argues that technology is NOT autonomous or inevitable, but is shaped by political priorities and human choices. Therefore, \"resisting technological determinism requires us to\" recognize that technical systems are political choices that can be critically evaluated and reshaped. Option B logically completes this thought. Option A succumbs to determinism. Option C is an extreme luddite response not advocated by the text. Option D abdicates human agency to market forces, contradicting the call to resist determinism."
+      },
+      {
+        "q": 24,
+        "topic": "Inference",
+        "question": "Sentence Completion: Select the option that logically completes the passage. In linguistic anthropology, the Sapir-Whorf hypothesis proposes that the structure of a language influences its speakers' worldview and cognitive categorization. While extreme linguistic determinism—the claim that language strictly imprisons thought—has been largely discredited, soft linguistic relativity remains well-supported. Empirical studies show that speakers of languages with distinct color terms, spatial descriptors, or grammatical gender recall and perceive world phenomena differently. Thus, language does not act as a rigid cage, but rather ________.",
+        "options": {
+          "A": "serves as a complete bar to intercultural translation and mutual understanding.",
+          "B": "functions as a neutral, objective mirror that reflects reality without any cognitive bias.",
+          "C": "operates as a subtle spotlight that habitualizes attention toward specific aspects of experience.",
+          "D": "proves that human cognition is entirely independent of symbolic communication."
+        },
+        "correct": "C",
+        "explanation": "The contrast set up in the final sentence is between \"a rigid cage\" (extreme determinism) and \"soft linguistic relativity\" (language directing perception without imprisoning it). Option C (\"subtle spotlight that habitualizes attention\") fits the metaphor of soft relativity perfectly. Option A reflects extreme determinism. Option B denies any influence of language, contradicting relativity. Option D contradicts the premise that language influences cognition."
+      }
+    ],
+    "Data Interpretation and Logical Reasoning": [
+      {
+        "q": 1,
+        "topic": "Arrangements",
+        "question": "Who among the following executives belongs to the Strategy department?",
+        "options": {
+          "A": "Aaron",
+          "B": "Drake",
+          "C": "Ethan",
+          "D": "Gavin"
+        },
+        "correct": "B",
+        "explanation": "Carter (Finance) sits at position 1. Henry (Legal) sits 4th to the right of Carter at position 5. Aaron sits 3rd to the right of Carter at position 4. The executive from Tech is at position 8, adjacent to Foster (Operations) at position 7. Blake sits at position 2, Drake (Strategy) sits at position 3, Henry (Legal) sits at position 5, Gavin (Marketing) sits at position 6, Foster (Operations) sits at position 7, and Ethan (Tech) sits at position 8. Hence, Drake belongs to Strategy.",
+        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north in an auditorium. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit, though not necessarily in that order. Aaron sits third to the right of the executive from Finance. The executive from Tech sits at one of the extreme ends and is adjacent to Foster. Drake sits second to the left of Ethan, and neither of them is from Marketing or Legal. The executive from Strategy sits exactly between Henry and Blake. Gavin sits immediately to the left of the executive from Audit. Henry is from Legal and sits fourth to the right of Carter, who is from Finance. Foster is from Operations. Blake sits to the immediate left of Gavin."
+      },
+      {
+        "q": 2,
+        "topic": "Arrangements",
+        "question": "What is the position of Henry relative to Blake?",
+        "options": {
+          "A": "Third to the right",
+          "B": "Immediate right",
+          "C": "Second to the left",
+          "D": "Fourth to the right"
+        },
+        "correct": "A",
+        "explanation": "Blake sits at position 2 and Henry sits at position 5. Position 5 is three positions to the right of position 2 (third to the right).",
+        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north in an auditorium. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit, though not necessarily in that order. Aaron sits third to the right of the executive from Finance. The executive from Tech sits at one of the extreme ends and is adjacent to Foster. Drake sits second to the left of Ethan, and neither of them is from Marketing or Legal. The executive from Strategy sits exactly between Henry and Blake. Gavin sits immediately to the left of the executive from Audit. Henry is from Legal and sits fourth to the right of Carter, who is from Finance. Foster is from Operations. Blake sits to the immediate left of Gavin."
+      },
+      {
+        "q": 3,
+        "topic": "Arrangements",
+        "question": "Which department does Gavin belong to?",
+        "options": {
+          "A": "Audit",
+          "B": "HR",
+          "C": "Marketing",
+          "D": "Legal"
+        },
+        "correct": "C",
+        "explanation": "Gavin sits at position 6, directly to the left of Foster at position 7 (who belongs to Operations and sits adjacent to Audit at position 4, Aaron). The eight department assignments are uniquely mapped as: Carter (Finance), Blake (HR), Drake (Strategy), Aaron (Audit), Henry (Legal), Gavin (Marketing), Foster (Operations), and Ethan (Tech). Therefore, Gavin belongs to Marketing.",
+        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north in an auditorium. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit, though not necessarily in that order. Aaron sits third to the right of the executive from Finance. The executive from Tech sits at one of the extreme ends and is adjacent to Foster. Drake sits second to the left of Ethan, and neither of them is from Marketing or Legal. The executive from Strategy sits exactly between Henry and Blake. Gavin sits immediately to the left of the executive from Audit. Henry is from Legal and sits fourth to the right of Carter, who is from Finance. Foster is from Operations. Blake sits to the immediate left of Gavin."
+      },
+      {
+        "q": 4,
+        "topic": "Charts and Graphs",
+        "question": "Which pair of executives occupies the extreme ends of the seating row?",
+        "options": {
+          "A": "Carter and Foster",
+          "B": "Aaron and Ethan",
+          "C": "Blake and Ethan",
+          "D": "Carter and Ethan"
+        },
+        "correct": "D",
+        "explanation": "Position 1 on the far left is occupied by Carter (Finance), and position 8 on the far right is occupied by Ethan (Tech). Thus, Carter and Ethan occupy the extreme ends. PASSAGE FOR QUESTIONS 5 TO 8 Four analysts named Zenith, Yaris, Xander, and Walter evaluated four corporate projects named Alpha, Beta, Gamma, and Delta. Each analyst reviewed exactly two projects, and each project was reviewed by exactly two analysts. Every evaluation yielded a unique score from 10 to 80 in multiples of 10. No analyst gave the same score to both projects they reviewed. Zenith scored Alpha 20 points higher than Beta. Yaris scored Gamma 10 points lower than Delta. Xander gave his highest score of 70 to Beta. The total score received by project Gamma from both its reviewers was 40. Walter gave Delta a score of 50. Zenith did not review project Delta, and Xander did not review project Alpha. The sum of scores given by Walter across his two projects was 130.",
+        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north in an auditorium. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit, though not necessarily in that order. Aaron sits third to the right of the executive from Finance. The executive from Tech sits at one of the extreme ends and is adjacent to Foster. Drake sits second to the left of Ethan, and neither of them is from Marketing or Legal. The executive from Strategy sits exactly between Henry and Blake. Gavin sits immediately to the left of the executive from Audit. Henry is from Legal and sits fourth to the right of Carter, who is from Finance. Foster is from Operations. Blake sits to the immediate left of Gavin."
+      },
+      {
+        "q": 5,
+        "topic": "Logic Puzzles",
+        "question": "What score did Zenith give to project Alpha?",
+        "options": {
+          "A": "40",
+          "B": "50",
+          "C": "60",
+          "D": "70"
+        },
+        "correct": "C",
+        "explanation": "We derive the exact score for all 8 evaluations step-by-step: First, the 8 evaluations must use all 8 distinct multiples of 10 from 10 to 80, which are {10, 20, 30, 40, 50, 60, 70, 80}. Second, Xander reviewed Beta and Gamma, giving Beta a score of 70. Since 70 is Xander's highest score, Xander's score for Gamma must be strictly less than 70. Third, the total score for Gamma from its two reviewers (Xander and Yaris) is 40. Since all scores are positive multiples of 10, the only valid pair of scores that sums to 40 with Xander's score being less than 70 is Xander = 30 and Yaris = 10. Fourth, Yaris scored Gamma 10 points lower than Delta, so Yaris's score for Delta is 10 + 10 = 20. Fifth, Walter evaluated Delta and Alpha, giving Delta a score of 50. Since the sum of Walter's two scores is 130, Walter's score for Alpha is 130 - 50 = 80. Sixth, the 6 scores determined so far are {10, 20, 30, 50, 70, 80}. The remaining unused scores from the set are 40 and 60. Zenith reviewed Alpha and Beta, scoring Alpha 20 points higher than Beta. Assigning the remaining scores gives Zenith Beta = 40 and Zenith Alpha = 60. Therefore, Zenith gave Alpha a score of 60.",
+        "passage": "Four analysts named Zenith, Yaris, Xander, and Walter evaluated four corporate projects named Alpha, Beta, Gamma, and Delta. Each analyst reviewed exactly two projects, and each project was reviewed by exactly two analysts. Every evaluation yielded a unique score from 10 to 80 in multiples of 10. No analyst gave the same score to both projects they reviewed. Zenith scored Alpha 20 points higher than Beta. Yaris scored Gamma 10 points lower than Delta. Xander gave his highest score of 70 to Beta. The total score received by project Gamma from both its reviewers was 40. Walter gave Delta a score of 50. Zenith did not review project Delta, and Xander did not review project Alpha. The sum of scores given by Walter across his two projects was 130."
+      },
+      {
+        "q": 6,
+        "topic": "Logic Puzzles",
+        "question": "Which analyst gave the lowest individual score among all evaluations?",
+        "options": {
+          "A": "Walter",
+          "B": "Zenith",
+          "C": "Yaris",
+          "D": "Xander"
+        },
+        "correct": "C",
+        "explanation": "Yaris awarded a score of 10 to project Gamma, which is the lowest individual score awarded across all 8 evaluations in the complete score set.",
+        "passage": "Four analysts named Zenith, Yaris, Xander, and Walter evaluated four corporate projects named Alpha, Beta, Gamma, and Delta. Each analyst reviewed exactly two projects, and each project was reviewed by exactly two analysts. Every evaluation yielded a unique score from 10 to 80 in multiples of 10. No analyst gave the same score to both projects they reviewed. Zenith scored Alpha 20 points higher than Beta. Yaris scored Gamma 10 points lower than Delta. Xander gave his highest score of 70 to Beta. The total score received by project Gamma from both its reviewers was 40. Walter gave Delta a score of 50. Zenith did not review project Delta, and Xander did not review project Alpha. The sum of scores given by Walter across his two projects was 130."
+      },
+      {
+        "q": 7,
+        "topic": "Logic Puzzles",
+        "question": "What was the total combined score received by project Delta from both its reviewers?",
+        "options": {
+          "A": "60",
+          "B": "70",
+          "C": "80",
+          "D": "90"
+        },
+        "correct": "B",
+        "explanation": "Project Delta was evaluated by Yaris (scoring 20) and Walter (scoring 50). The combined total score for Delta is 20 + 50 = 70.",
+        "passage": "Four analysts named Zenith, Yaris, Xander, and Walter evaluated four corporate projects named Alpha, Beta, Gamma, and Delta. Each analyst reviewed exactly two projects, and each project was reviewed by exactly two analysts. Every evaluation yielded a unique score from 10 to 80 in multiples of 10. No analyst gave the same score to both projects they reviewed. Zenith scored Alpha 20 points higher than Beta. Yaris scored Gamma 10 points lower than Delta. Xander gave his highest score of 70 to Beta. The total score received by project Gamma from both its reviewers was 40. Walter gave Delta a score of 50. Zenith did not review project Delta, and Xander did not review project Alpha. The sum of scores given by Walter across his two projects was 130."
+      },
+      {
+        "q": 8,
+        "topic": "Logic Puzzles",
+        "question": "Which two projects were evaluated by Xander?",
+        "options": {
+          "A": "Alpha and Beta",
+          "B": "Beta and Gamma",
+          "C": "Gamma and Delta",
+          "D": "Alpha and Delta"
+        },
+        "correct": "B",
+        "explanation": "Xander evaluated Beta (scoring 70) and Gamma (scoring 30). Hence, Xander evaluated Beta and Gamma. PASSAGE FOR QUESTIONS 9 TO 12 Four suspects named Amber, Boris, Chloe, and Daniel were interviewed regarding a security breach. Exactly two of them are Knights who always tell the truth, and exactly two of them are Knaves who always lie. Each suspect made two statements. Amber said: \"Boris is a Knave\" and \"Daniel is a Knight.\" Boris said: \"Chloe is a Knight\" and \"Daniel is a Knave.\" Chloe said: \"Boris is a Knight\" and \"Amber is a Knave.\" Daniel said: \"Amber is a Knight\" and \"Chloe is a Knave.\"",
+        "passage": "Four analysts named Zenith, Yaris, Xander, and Walter evaluated four corporate projects named Alpha, Beta, Gamma, and Delta. Each analyst reviewed exactly two projects, and each project was reviewed by exactly two analysts. Every evaluation yielded a unique score from 10 to 80 in multiples of 10. No analyst gave the same score to both projects they reviewed. Zenith scored Alpha 20 points higher than Beta. Yaris scored Gamma 10 points lower than Delta. Xander gave his highest score of 70 to Beta. The total score received by project Gamma from both its reviewers was 40. Walter gave Delta a score of 50. Zenith did not review project Delta, and Xander did not review project Alpha. The sum of scores given by Walter across his two projects was 130."
+      },
+      {
+        "q": 9,
+        "topic": "Logic Puzzles",
+        "question": "Who among the suspects are the two Knights?",
+        "options": {
+          "A": "Amber and Daniel",
+          "B": "Boris and Chloe",
+          "C": "Amber and Chloe",
+          "D": "Boris and Daniel"
+        },
+        "correct": "A",
+        "explanation": "Testing the scenario where Amber and Daniel are Knights: Amber (Knight) states \"Boris is a Knave\" (True) and \"Daniel is a Knight\" (True). Daniel (Knight) states \"Amber is a Knight\" (True) and \"Chloe is a Knave\" (True). Boris (Knave) states \"Chloe is a Knight\" (False) and \"Daniel is a Knave\" (False). Chloe (Knave) states \"Boris is a Knight\" (False) and \"Amber is a Knave\" (False). Every statement made by the Knights is completely true, and every statement made by the Knaves is completely false. Thus, Amber and Daniel are consistently the two Knights.",
+        "passage": "Four suspects named Amber, Boris, Chloe, and Daniel were interviewed regarding a security breach. Exactly two of them are Knights who always tell the truth, and exactly two of them are Knaves who always lie. Each suspect made two statements. Amber said: \"Boris is a Knave\" and \"Daniel is a Knight.\" Boris said: \"Chloe is a Knight\" and \"Daniel is a Knave.\" Chloe said: \"Boris is a Knight\" and \"Amber is a Knave.\" Daniel said: \"Amber is a Knight\" and \"Chloe is a Knave.\""
+      },
+      {
+        "q": 10,
+        "topic": "Logic Puzzles",
+        "question": "If a fifth person, Evan, states that Amber and Boris have different truthful statuses, is Evan's statement true or false?",
+        "options": {
+          "A": "Definitely False",
+          "B": "Indetermined",
+          "C": "Partially True",
+          "D": "Definitely True"
+        },
+        "correct": "D",
+        "explanation": "Amber is a Knight (always tells the truth) and Boris is a Knave (always lies). Because one is a Knight and the other is a Knave, they have different truthful statuses. Therefore, Evan's statement is Definitely True.",
+        "passage": "Four suspects named Amber, Boris, Chloe, and Daniel were interviewed regarding a security breach. Exactly two of them are Knights who always tell the truth, and exactly two of them are Knaves who always lie. Each suspect made two statements. Amber said: \"Boris is a Knave\" and \"Daniel is a Knight.\" Boris said: \"Chloe is a Knight\" and \"Daniel is a Knave.\" Chloe said: \"Boris is a Knight\" and \"Amber is a Knave.\" Daniel said: \"Amber is a Knight\" and \"Chloe is a Knave.\""
+      },
+      {
+        "q": 11,
+        "topic": "Logic Puzzles",
+        "question": "Which of the following statements must be logically TRUE?",
+        "options": {
+          "A": "Boris and Chloe are both Knights",
+          "B": "Chloe is a Knave and Daniel is a Knight",
+          "C": "Amber and Boris are both Knaves",
+          "D": "Daniel is a Knave"
+        },
+        "correct": "B",
+        "explanation": "From the deduction, Chloe is a Knave and Daniel is a Knight. This directly corresponds to Option B and is logically true without any contradiction.",
+        "passage": "Four suspects named Amber, Boris, Chloe, and Daniel were interviewed regarding a security breach. Exactly two of them are Knights who always tell the truth, and exactly two of them are Knaves who always lie. Each suspect made two statements. Amber said: \"Boris is a Knave\" and \"Daniel is a Knight.\" Boris said: \"Chloe is a Knight\" and \"Daniel is a Knave.\" Chloe said: \"Boris is a Knight\" and \"Amber is a Knave.\" Daniel said: \"Amber is a Knight\" and \"Chloe is a Knave.\""
+      },
+      {
+        "q": 12,
+        "topic": "Logic Puzzles",
+        "question": "What is the total count of false individual statements made across all four suspects?",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5"
+        },
+        "correct": "C",
+        "explanation": "The two Knights (Amber and Daniel) make 2 true statements each, totaling 4 true statements. The two Knaves (Boris and Chloe) make 2 false statements each, totaling 4 false statements across all suspects. PASSAGE FOR QUESTIONS 13 TO 16 Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Physics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics.",
+        "passage": "Four suspects named Amber, Boris, Chloe, and Daniel were interviewed regarding a security breach. Exactly two of them are Knights who always tell the truth, and exactly two of them are Knaves who always lie. Each suspect made two statements. Amber said: \"Boris is a Knave\" and \"Daniel is a Knight.\" Boris said: \"Chloe is a Knight\" and \"Daniel is a Knave.\" Chloe said: \"Boris is a Knight\" and \"Amber is a Knave.\" Daniel said: \"Amber is a Knight\" and \"Chloe is a Knave.\""
+      },
+      {
+        "q": 13,
+        "topic": "Logic Puzzles",
+        "question": "Which subject does Paul teach?",
+        "options": {
+          "A": "Physics",
+          "B": "Mathematics",
+          "C": "Biology",
+          "D": "Chemistry"
+        },
+        "correct": "D",
+        "explanation": "Tina teaches Biology (Train). Sam teaches Mathematics (Scooter). Quentin travels by Bicycle and teaches Physics. Paul does not teach Economics or Physics, which leaves Chemistry for Paul. Rachel teaches Economics (Car). Thus, Paul teaches Chemistry.",
+        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Physics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
+      },
+      {
+        "q": 14,
+        "topic": "Logic Puzzles",
+        "question": "What mode of transport does Sam use to commute?",
+        "options": {
+          "A": "Bus",
+          "B": "Scooter",
+          "C": "Train",
+          "D": "Car"
+        },
+        "correct": "B",
+        "explanation": "Sam cannot use Bus or Train. Car is used by Rachel (Economics), and Bicycle is used by Quentin. The only remaining transport mode for Sam is Scooter.",
+        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Physics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
+      },
+      {
+        "q": 15,
+        "topic": "Logic Puzzles",
+        "question": "Who travels to the university by Car?",
+        "options": {
+          "A": "Quentin",
+          "B": "Rachel",
+          "C": "Paul",
+          "D": "Sam"
+        },
+        "correct": "B",
+        "explanation": "The Economics teacher travels by Car. Paul teaches Chemistry, Sam teaches Mathematics, Tina teaches Biology, and Quentin teaches Physics. Thus, Rachel teaches Economics and travels by Car.",
+        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Physics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
+      },
+      {
+        "q": 16,
+        "topic": "Games and Tournaments",
+        "question": "Which of the following combinations of Professor, Subject, and Transport is correct?",
+        "options": {
+          "A": "Quentin - Economics - Bicycle",
+          "B": "Paul - Physics - Bus",
+          "C": "Quentin - Physics - Bicycle",
+          "D": "Sam - Chemistry - Scooter"
+        },
+        "correct": "C",
+        "explanation": "Quentin travels by Bicycle and teaches Physics. Thus, the matching combination is Quentin - Physics - Bicycle. PASSAGE FOR QUESTIONS 17 TO 19 A freight distribution network consists of five hubs named Node A, Node B, Node C, Node D, and Node E. Cargo flows along directed routes between hubs. Cargo can be moved directly from Node A to Node B, from Node A to Node C, from Node B to Node D, from Node C to Node D, from Node C to Node E, and from Node D to Node E. The cost of shipping one container along each route is as follows: A to B costs 4 units, A to C costs 2 units, B to D costs 5 units, C to D costs 8 units, C to E costs 11 units, and D to E costs 3 units. A logistics manager must send containers from Node A to Node E.",
+        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Physics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
+      },
+      {
+        "q": 17,
+        "topic": "Logic Puzzles",
+        "question": "What is the minimum total cost to ship one container from Node A to Node E?",
+        "options": {
+          "A": "12 units",
+          "B": "13 units",
+          "C": "14 units",
+          "D": "15 units"
+        },
+        "correct": "A",
+        "explanation": "Evaluating paths: Path 1: A -> C -> E (cost 2 + 11 = 13). Path 2: A -> B -> D -> E (cost 4 + 5 + 3 = 12). Path 3: A -> C -> D -> E (cost 2 + 8 + 3 = 13). The minimum cost path is A -> B -> D -> E with a total cost of 12 units.",
+        "passage": "A freight distribution network consists of five hubs named Node A, Node B, Node C, Node D, and Node E. Cargo flows along directed routes between hubs. Cargo can be moved directly from Node A to Node B, from Node A to Node C, from Node B to Node D, from Node C to Node D, from Node C to Node E, and from Node D to Node E. The cost of shipping one container along each route is as follows: A to B costs 4 units, A to C costs 2 units, B to D costs 5 units, C to D costs 8 units, C to E costs 11 units, and D to E costs 3 units. A logistics manager must send containers from Node A to Node E."
+      },
+      {
+        "q": 18,
+        "topic": "Logic Puzzles",
+        "question": "How many distinct paths exist from Node A to Node E without visiting any hub more than once?",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "4",
+          "D": "3"
+        },
+        "correct": "D",
+        "explanation": "The distinct simple paths from Node A to Node E are: (1) A -> C -> E, (2) A -> C -> D -> E, and (3) A -> B -> D -> E. Hence, there are exactly 3 distinct paths.",
+        "passage": "A freight distribution network consists of five hubs named Node A, Node B, Node C, Node D, and Node E. Cargo flows along directed routes between hubs. Cargo can be moved directly from Node A to Node B, from Node A to Node C, from Node B to Node D, from Node C to Node D, from Node C to Node E, and from Node D to Node E. The cost of shipping one container along each route is as follows: A to B costs 4 units, A to C costs 2 units, B to D costs 5 units, C to D costs 8 units, C to E costs 11 units, and D to E costs 3 units. A logistics manager must send containers from Node A to Node E."
+      },
+      {
+        "q": 19,
+        "topic": "Distribution",
+        "question": "If the cost of route B to D increases by 3 units, what will be the new minimum cost from Node A to Node E?",
+        "options": {
+          "A": "12 units",
+          "B": "13 units",
+          "C": "14 units",
+          "D": "15 units"
+        },
+        "correct": "B",
+        "explanation": "If B to D cost increases from 5 to 8, Path A -> B -> D -> E cost becomes 4 + 8 + 3 = 15 units. Paths A -> C -> E and A -> C -> D -> E both offer the minimal cost of 13 units. PASSAGE FOR QUESTIONS 20 TO 22 A committee of four members is to be selected from a group of seven candidates: Kai, Leo, Mia, Nora, Omar, Pia, and Quinn. The selection must comply with the following conditions: Kai and Leo cannot both be selected together. If Mia is selected, then Omar must also be selected. Nora and Pia must either both be selected or neither selected. If Quinn is selected, then Leo must also be selected.",
+        "passage": "A freight distribution network consists of five hubs named Node A, Node B, Node C, Node D, and Node E. Cargo flows along directed routes between hubs. Cargo can be moved directly from Node A to Node B, from Node A to Node C, from Node B to Node D, from Node C to Node D, from Node C to Node E, and from Node D to Node E. The cost of shipping one container along each route is as follows: A to B costs 4 units, A to C costs 2 units, B to D costs 5 units, C to D costs 8 units, C to E costs 11 units, and D to E costs 3 units. A logistics manager must send containers from Node A to Node E."
+      },
+      {
+        "q": 20,
+        "topic": "Distribution",
+        "question": "If Mia is selected as one of the four members, which of the following candidates MUST also be selected?",
+        "options": {
+          "A": "Kai",
+          "B": "Leo",
+          "C": "Omar",
+          "D": "Quinn"
+        },
+        "correct": "C",
+        "explanation": "According to the second condition, \"If Mia is selected, then Omar must also be selected.\" Thus, Omar must be in the committee whenever Mia is chosen.",
+        "passage": "A committee of four members is to be selected from a group of seven candidates: Kai, Leo, Mia, Nora, Omar, Pia, and Quinn. The selection must comply with the following conditions: Kai and Leo cannot both be selected together. If Mia is selected, then Omar must also be selected. Nora and Pia must either both be selected or neither selected. If Quinn is selected, then Leo must also be selected."
+      },
+      {
+        "q": 21,
+        "topic": "Distribution",
+        "question": "If Quinn is selected for the committee, who among the following CANNOT be selected?",
+        "options": {
+          "A": "Leo",
+          "B": "Kai",
+          "C": "Nora",
+          "D": "Pia"
+        },
+        "correct": "B",
+        "explanation": "If Quinn is selected, then Leo must be selected. Since Kai and Leo cannot both be selected together, Kai cannot be in the committee if Leo is present. Thus, Kai cannot be selected.",
+        "passage": "A committee of four members is to be selected from a group of seven candidates: Kai, Leo, Mia, Nora, Omar, Pia, and Quinn. The selection must comply with the following conditions: Kai and Leo cannot both be selected together. If Mia is selected, then Omar must also be selected. Nora and Pia must either both be selected or neither selected. If Quinn is selected, then Leo must also be selected."
+      },
+      {
+        "q": 22,
+        "topic": "Logic Puzzles",
+        "question": "Which of the following represents a valid four-member committee that satisfies all conditions?",
+        "options": {
+          "A": "Kai, Leo, Nora, Pia",
+          "B": "Mia, Quinn, Leo, Kai",
+          "C": "Mia, Nora, Pia, Quinn",
+          "D": "Leo, Nora, Pia, Omar"
+        },
+        "correct": "D",
+        "explanation": "Option A contains both Kai and Leo (violates rule 1). Option B contains both Kai and Leo (violates rule 1). Option C contains Mia without Omar (violates rule 2). Option D (Leo, Nora, Pia, Omar) satisfies all conditions without any violations.",
+        "passage": "A committee of four members is to be selected from a group of seven candidates: Kai, Leo, Mia, Nora, Omar, Pia, and Quinn. The selection must comply with the following conditions: Kai and Leo cannot both be selected together. If Mia is selected, then Omar must also be selected. Nora and Pia must either both be selected or neither selected. If Quinn is selected, then Leo must also be selected."
+      }
+    ],
+    "Quantitative Ability": [
+      {
+        "q": 1,
+        "topic": "Mixtures and Allegation",
+        "question": "In a mixture of 120 liters of milk and water, the ratio of milk to water is 3:2. A certain amount of the mixture is withdrawn and replaced with an equal volume of pure water. If the ratio of milk to water in the final mixture becomes 9:11, what was the volume of the mixture that was withdrawn?",
+        "options": {
+          "A": "30 liters",
+          "B": "40 liters",
+          "C": "48 liters",
+          "D": "36 liters"
+        },
+        "correct": "A",
+        "explanation": "Initial volume of milk is 120 multiplied by (3/5) = 72 liters, giving an initial milk fraction of 3/5 = 0.60. When x liters of mixture is withdrawn and replaced with pure water, the total volume remains 120 liters, while the final fraction of milk becomes 9/(9+11) = 9/20 = 0.45. Using the replacement formula: Final milk fraction = Initial milk fraction multiplied by (1 - x/120). Substituting the values yields 0.45 = 0.60 multiplied by (1 - x/120). Dividing both sides by 0.60 gives 0.75 = 1 - x/120, which simplifies to x/120 = 0.25. Solving for x yields x = 120 multiplied by 0.25 = 30 liters. Thus, Option A is correct."
+      },
+      {
+        "q": 2,
+        "topic": "Time Speed and Distance",
+        "question": "Two trains, A and B, start simultaneously from stations X and Y, respectively, moving towards each other along parallel tracks. After crossing each other, train A takes 4 hours to reach station Y, while train B takes 9 hours to reach station X. If the speed of train A is 60 km/h, what is the speed of train B?",
+        "options": {
+          "A": "40 km/h",
+          "B": "45 km/h",
+          "C": "30 km/h",
+          "D": "50 km/h"
+        },
+        "correct": "A",
+        "explanation": "By the standard time and distance relation for two objects crossing each other, the ratio of their speeds Speed_A / Speed_B equals the square root of (Time_B / Time_A). Here, Time_A = 4 hours and Time_B = 9 hours. Therefore, Speed_A / Speed_B = square root of (9/4) = 3/2. Substituting Speed_A = 60 km/h into 60 / Speed_B = 3/2 gives Speed_B = (60 multiplied by 2) / 3 = 40 km/h. Thus, Option A is correct."
+      },
+      {
+        "q": 3,
+        "topic": "Equations",
+        "question": "If log to the base 2 of (x - 1) + log to the base 2 of (x + 3) = 5, what is the value of x?",
+        "options": {
+          "A": "3",
+          "B": "7",
+          "C": "5",
+          "D": "9"
+        },
+        "correct": "C",
+        "explanation": "Combining the logarithms using logarithmic identity log(a) + log(b) = log(ab) gives log to the base 2 of [(x - 1)(x + 3)] = 5. Converting from logarithmic form to exponential form yields (x - 1)(x + 3) = 2 raised to the power 5, which equals 32. Expanding the product gives x^2 + 2x - 3 = 32, so x^2 + 2x - 35 = 0. Factoring the quadratic equation gives (x + 7)(x - 5) = 0, which yields x = 5 or x = -7. Since the logarithm domain requires x - 1 > 0 and x + 3 > 0, x must be greater than 1. Thus, x = 5. Thus, Option C is correct."
+      },
+      {
+        "q": 4,
+        "topic": "Profit and Loss",
+        "question": "A merchant buys two items for a combined total cost of Rs. 1500. He sells the first item at a profit of 20 percent and the second item at a loss of 10 percent. If his overall transaction resulted in a net gain of Rs. 90, what was the cost price of the first item?",
+        "options": {
+          "A": "Rs. 700",
+          "B": "Rs. 900",
+          "C": "Rs. 750",
+          "D": "Rs. 800"
+        },
+        "correct": "D",
+        "explanation": "Let C1 be the cost price of the first item and C2 be the cost price of the second item. Given C1 + C2 = 1500. The profit on the first item is 0.20 multiplied by C1 and the loss on the second item is 0.10 multiplied by C2. The net profit equation is 0.20(C1) - 0.10(C2) = 90. Multiplying this equation by 10 gives 2(C1) - C2 = 900. Adding C1 + C2 = 1500 to 2(C1) - C2 = 900 yields 3(C1) = 2400, which gives C1 = 800. Therefore, the cost price of the first item is Rs. 800. Thus, Option D is correct."
+      },
+      {
+        "q": 5,
+        "topic": "Time and Work",
+        "question": "Sumit can complete a project in 20 days working alone, while Amit can complete the same project in 30 days working alone. They start working together, but Sumit leaves 5 days before the project is completed. How many total days were required to finish the project?",
+        "options": {
+          "A": "12 days",
+          "B": "14 days",
+          "C": "15 days",
+          "D": "16 days"
+        },
+        "correct": "C",
+        "explanation": "Let total work be 60 units (LCM of 20 and 30). Sumit's efficiency is 60 / 20 = 3 units per day, and Amit's efficiency is 60 / 30 = 2 units per day. Combined efficiency is 3 + 2 = 5 units per day. Let T be the total number of days to complete the project. Sumit worked for (T - 5) days and Amit worked for T days. The equation for total work is 3(T - 5) + 2(T) = 60. Simplifying gives 3T - 15 + 2T = 60, so 5T = 75, which gives T = 15 days. Thus, Option C is correct."
+      },
+      {
+        "q": 6,
+        "topic": "Inequalities",
+        "question": "How many integer values of x satisfy the absolute value inequality |2x - 7| <= 13?",
+        "options": {
+          "A": "12",
+          "B": "14",
+          "C": "13",
+          "D": "15"
+        },
+        "correct": "B",
+        "explanation": "The absolute value inequality |2x - 7| <= 13 expands to -13 <= 2x - 7 <= 13. Adding 7 to all parts gives -6 <= 2x <= 20. Dividing all parts by 2 yields -3 <= x <= 10. The integer values satisfying this range are -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. The total number of integers in this range is 10 - (-3) + 1 = 14 integers. Thus, Option B is correct."
+      },
+      {
+        "q": 7,
+        "topic": "Progressions",
+        "question": "The sum of the first n terms of an arithmetic progression is given by S_n = 3n^2 + 5n. What is the 10th term of this arithmetic progression?",
+        "options": {
+          "A": "62",
+          "B": "58",
+          "C": "60",
+          "D": "64"
+        },
+        "correct": "A",
+        "explanation": "The nth term of an arithmetic progression T_n is related to the sum of terms by T_n = S_n - S_(n-1). For the 10th term T_10 = S_10 - S_9. Calculating S_10 gives 3(10^2) + 5(10) = 300 + 50 = 350. Calculating S_9 gives 3(9^2) + 5(9) = 3(81) + 45 = 243 + 45 = 288. Therefore, T_10 = 350 - 288 = 62. Thus, Option A is correct."
+      },
+      {
+        "q": 8,
+        "topic": "Geometry",
+        "question": "In a triangle ABC, the lengths of sides AB, BC, and CA are 13 cm, 14 cm, and 15 cm, respectively. What is the length of the altitude drawn from vertex A to side BC?",
+        "options": {
+          "A": "11.2 cm",
+          "B": "12 cm",
+          "C": "10.8 cm",
+          "D": "12.5 cm"
+        },
+        "correct": "B",
+        "explanation": "Using Heron's formula to find the area of triangle ABC: Semi-perimeter s = (13 + 14 + 15) / 2 = 21 cm. Area = square root of [21(21 - 13)(21 - 14)(21 - 15)] = square root of [21 multiplied by 8 multiplied by 7 multiplied by 6] = square root of [7056] = 84 sq cm. Area is also given by (1/2) multiplied by base BC multiplied by altitude h_a. Thus, 84 = (1/2) multiplied by 14 multiplied by h_a, which gives 7(h_a) = 84, so h_a = 12 cm. Thus, Option B is correct."
+      },
+      {
+        "q": 9,
+        "topic": "Number Properties",
+        "question": "Find the total number of positive integral solutions (x, y) that satisfy the equation 3x + 5y = 120.",
+        "options": {
+          "A": "8",
+          "B": "7",
+          "C": "9",
+          "D": "6"
+        },
+        "correct": "B",
+        "explanation": "For positive integral solutions, x > 0 and y > 0. Expressing x in terms of y gives 3x = 120 - 5y, so x = (120 - 5y)/3 = 40 - (5y/3). For x to be an integer, y must be a multiple of 3. Since x > 0, 40 - (5y/3) > 0, which implies 5y/3 < 40, so y < 24. Positive multiples of 3 less than 24 are y = 3, 6, 9, 12, 15, 18, 21. Counting these values gives exactly 7 positive integral solutions. Thus, Option B is correct."
+      },
+      {
+        "q": 10,
+        "topic": "Equations",
+        "question": "A right circular cone of height 12 cm and base radius 5 cm is melted and recast into small solid spheres, each of radius 1 cm. What is the maximum number of such complete spheres that can be formed?",
+        "options": {
+          "A": "40",
+          "B": "50",
+          "C": "45",
+          "D": "75"
+        },
+        "correct": "D",
+        "explanation": "Volume of the cone = (1/3) multiplied by pi multiplied by r^2 multiplied by h = (1/3) multiplied by pi multiplied by (5^2) multiplied by 12 = 100 pi cubic cm. Volume of one sphere = (4/3) multiplied by pi multiplied by (1^3) = (4/3) pi cubic cm. Number of spheres = (Volume of cone) / (Volume of sphere) = (100 pi) / [(4/3) pi] = (100 multiplied by 3) / 4 = 75 spheres. Thus, Option D is correct."
+      },
+      {
+        "q": 11,
+        "topic": "Number Properties",
+        "question": "What is the remainder when 7 raised to the power 100 is divided by 25?",
+        "options": {
+          "A": "1",
+          "B": "7",
+          "C": "24",
+          "D": "18"
+        },
+        "correct": "A",
+        "explanation": "Using modular arithmetic: 7^1 = 7 (mod 25), 7^2 = 49 = -1 (mod 25). Therefore, 7^100 = (7^2)^50 = (-1)^50 = 1 (mod 25). Thus, the remainder when 7^100 is divided by 25 is 1. Thus, Option A is correct."
+      },
+      {
+        "q": 12,
+        "topic": "Equations",
+        "question": "The roots of the quadratic equation x^2 - 8x + k = 0 are real and distinct. If one root is three times the other root, what is the value of k?",
+        "options": {
+          "A": "16",
+          "B": "10",
+          "C": "12",
+          "D": "14"
+        },
+        "correct": "C",
+        "explanation": "Let the roots be r and 3r. The sum of roots is r + 3r = 4r. From the quadratic equation, sum of roots = -(-8)/1 = 8. Thus, 4r = 8, which gives r = 2. The product of roots is r multiplied by 3r = 3r^2. From the equation, product of roots = k/1 = k. Substituting r = 2 gives k = 3(2^2) = 3 multiplied by 4 = 12. Thus, Option C is correct."
+      },
+      {
+        "q": 13,
+        "topic": "Equations",
+        "question": "In how many distinct ways can the letters of the word EXCELLENCE be arranged such that all the E's always occur together?",
+        "options": {
+          "A": "3780",
+          "B": "1260",
+          "C": "7560",
+          "D": "2520"
+        },
+        "correct": "B",
+        "explanation": "The word EXCELLENCE has 10 letters: 4 E's, 2 C's, 2 L's, 1 X, and 1 N. Treat the 4 E's as a single group (EEEE). Now we need to arrange 7 units: (EEEE), C, C, L, L, X, N. Number of arrangements = 7! / (2! multiplied by 2!), because C appears 2 times and L appears 2 times. Calculating 7! = 5040. Dividing by (2 multiplied by 2 = 4) gives 5040 / 4 = 1260 ways. Thus, Option B is correct."
+      },
+      {
+        "q": 14,
+        "topic": "Averages",
+        "question": "The average score of a class of 30 students in a test is 65. If the highest and lowest scores are excluded, the average score of the remaining 28 students becomes 64. If the difference between the highest and lowest scores is 38, what is the highest score?",
+        "options": {
+          "A": "98",
+          "B": "95",
+          "C": "100",
+          "D": "92"
+        },
+        "correct": "A",
+        "explanation": "Total score of 30 students = 30 multiplied by 65 = 1950. Total score of remaining 28 students = 28 multiplied by 64 = 1792. Sum of highest score (H) and lowest score (L) = 1950 - 1792 = 158. We are given H - L = 38. Adding the two equations H + L = 158 and H - L = 38 yields 2H = 196, which gives H = 98. Thus, Option A is correct."
+      },
+      {
+        "q": 15,
+        "topic": "Interest",
+        "question": "A sum of money compounded annually at a certain interest rate grows to Rs. 4800 in 2 years and to Rs. 5760 in 3 years. What is the annual interest rate?",
+        "options": {
+          "A": "15 percent",
+          "B": "25 percent",
+          "C": "20 percent",
+          "D": "18 percent"
+        },
+        "correct": "C",
+        "explanation": "In compound interest, the amount at the end of the 3rd year is equal to the amount at the end of the 2nd year multiplied by (1 + R/100). Thus, 5760 = 4800 multiplied by (1 + R/100). Dividing 5760 by 4800 gives 1 + R/100 = 1.2. Subtracting 1 gives R/100 = 0.2, which yields R = 20 percent. Thus, Option C is correct."
+      },
+      {
+        "q": 16,
+        "topic": "Functions",
+        "question": "If f(x) = (x - 2)/(x + 2) for all real x not equal to -2, what is the value of f(f(x)) when x = 4?",
+        "options": {
+          "A": "-5/7",
+          "B": "1/5",
+          "C": "2/7",
+          "D": "-1/5"
+        },
+        "correct": "A",
+        "explanation": "First, evaluate f(4) by substituting x = 4 into f(x): f(4) = (4 - 2)/(4 + 2) = 2/6 = 1/3. Next, evaluate f(f(4)) = f(1/3) by substituting x = 1/3 into f(x): f(1/3) = (1/3 - 2)/(1/3 + 2) = (-5/3)/(7/3) = -5/7. Thus, f(f(4)) = -5/7, which corresponds to Option A."
+      },
+      {
+        "q": 17,
+        "topic": "Geometry",
+        "question": "What is the area of the region bounded by the graph of |x| + |y| = 4?",
+        "options": {
+          "A": "16 sq units",
+          "B": "64 sq units",
+          "C": "32 sq units",
+          "D": "24 sq units"
+        },
+        "correct": "C",
+        "explanation": "The equation |x| + |y| = 4 represents a square whose vertices are situated on the coordinate axes at (4, 0), (0, 4), (-4, 0), and (0, -4). The length of each side of this square is given by the distance between (4, 0) and (0, 4), which is square root of (4^2 + 4^2) = square root of (32) = 4 square root 2 units. The area of the square is (side)^2 = (4 square root 2)^2 = 32 sq units. Alternatively, the region consists of 4 right-angled triangles in the four quadrants, each with base 4 and height 4. Area = 4 multiplied by [(1/2) multiplied by 4 multiplied by 4] = 4 multiplied by 8 = 32 sq units. Thus, Option C is correct."
+      },
+      {
+        "q": 18,
+        "topic": "Time and Work",
+        "question": "Two pipes P and Q can fill a tank in 12 minutes and 18 minutes, respectively, while a waste pipe R can empty the full tank in 36 minutes. If all three pipes are opened simultaneously, how long will it take to fill the tank completely?",
+        "options": {
+          "A": "8 minutes",
+          "B": "9 minutes",
+          "C": "10 minutes",
+          "D": "7.5 minutes"
+        },
+        "correct": "B",
+        "explanation": "Let total capacity of the tank be 36 units (LCM of 12, 18, and 36). Efficiency of pipe P = 36 / 12 = +3 units/min. Efficiency of pipe Q = 36 / 18 = +2 units/min. Efficiency of pipe R = 36 / 36 = -1 unit/min. Combined net efficiency when all three pipes are open = +3 + 2 - 1 = +4 units/min. Total time required to fill the tank = 36 / 4 = 9 minutes. Thus, Option B is correct."
+      },
+      {
+        "q": 19,
+        "topic": "Ratio and Proportion",
+        "question": "A container initially holds 80 liters of pure wine. From this container, 8 liters of wine is replaced with water. This operation is performed one more time. What is the final quantity of pure wine remaining in the container?",
+        "options": {
+          "A": "64.8 liters",
+          "B": "65.2 liters",
+          "C": "63.6 liters",
+          "D": "64.0 liters"
+        },
+        "correct": "A",
+        "explanation": "The quantity of pure liquid remaining after n removal and replacement cycles is given by Q = Initial Volume multiplied by (1 - x/V)^n, where V = 80 liters, x = 8 liters, and n = 2. Calculating Q = 80 multiplied by (1 - 8/80)^2 = 80 multiplied by (0.9)^2 = 80 multiplied by 0.81 = 64.8 liters. Thus, Option A is correct."
+      },
+      {
+        "q": 20,
+        "topic": "Equations",
+        "question": "If log to the base 10 of 2 = a and log to the base 10 of 3 = b, what is the value of log to the base 10 of 1.5 in terms of a and b?",
+        "options": {
+          "A": "a - b",
+          "B": "b - a",
+          "C": "a + b",
+          "D": "1 - a - b"
+        },
+        "correct": "B",
+        "explanation": "Express 1.5 as the fraction 3/2. Using logarithmic properties, log to the base 10 of (3/2) = log to the base 10 of 3 - log to the base 10 of 2. Substituting the given values log to the base 10 of 3 = b and log to the base 10 of 2 = a yields b - a. Thus, Option B is correct."
+      },
+      {
+        "q": 21,
+        "topic": "Progressions",
+        "question": "How many terms are there in the geometric progression 3, 6, 12, 24, ..., 768?",
+        "options": {
+          "A": "8",
+          "B": "10",
+          "C": "9",
+          "D": "11"
+        },
+        "correct": "C",
+        "explanation": "In this geometric progression, the first term a = 3 and the common ratio r = 6 / 3 = 2. The nth term T_n is given by T_n = a multiplied by r^(n - 1). Setting T_n = 768 gives 3 multiplied by 2^(n - 1) = 768. Dividing both sides by 3 yields 2^(n - 1) = 256. Since 256 = 2^8, we have n - 1 = 8, which gives n = 9. Thus, Option C is correct."
+      },
+      {
+        "q": 22,
+        "topic": "Geometry",
+        "question": "A circle is inscribed in an equilateral triangle of side length 12 cm. What is the area of the circle?",
+        "options": {
+          "A": "16 pi sq cm",
+          "B": "12 pi sq cm",
+          "C": "36 pi sq cm",
+          "D": "24 pi sq cm"
+        },
+        "correct": "B",
+        "explanation": "The inradius r of an equilateral triangle with side length a is given by r = a / (2 multiplied by square root of 3). Substituting a = 12 cm gives r = 12 / (2 square root 3) = 6 / square root 3 = 2 square root 3 cm. The area of the inscribed circle = pi multiplied by r^2 = pi multiplied by (2 square root 3)^2 = pi multiplied by 12 = 12 pi sq cm. Thus, Option B is correct."
+      }
+    ]
+  }
+}

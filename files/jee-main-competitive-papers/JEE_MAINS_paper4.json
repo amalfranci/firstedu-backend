@@ -1,0 +1,1062 @@
+{
+  "paper_id": "JEE_MAINS_paper4",
+  "title": "JEE Main Paper 4 (Advanced-level Question Bank)",
+  "subjects": {
+    "Physics": [
+      {
+        "q": 1,
+        "global_q": 1,
+        "topic": "Kinematics",
+        "question": "A particle moves along a straight line such that its position x at time t is given by x = 2t^3 - 9t^2 + 12t + 5, where x is in meters and t is in seconds. What is the acceleration of the particle at the instant when its velocity becomes zero for the second time?",
+        "options": {
+          "A": "6 m/s^2",
+          "B": "-6 m/s^2",
+          "C": "12 m/s^2",
+          "D": "0 m/s^2"
+        },
+        "correct": "A",
+        "explanation": "Velocity v = dx/dt = 6t^2 - 18t + 12. Setting v = 0 gives 6(t-1)(t-2) = 0, so t = 1 s and t = 2 s (second time). Acceleration a = dv/dt = 12t - 18. At t = 2 s, a = 12(2) - 18 = 6 m/s^2."
+      },
+      {
+        "q": 2,
+        "global_q": 2,
+        "topic": "Kinematics",
+        "question": "A projectile is thrown from horizontal ground with an initial velocity of 50 m/s at an angle of 37 degrees above the horizontal. Taking g = 10 m/s^2, sin(37°) = 0.6, and cos(37°) = 0.8, what is the magnitude of the velocity of the projectile at a height of 35 m above the ground?",
+        "options": {
+          "A": "40 m/s",
+          "B": "30√2 m/s",
+          "C": "30 m/s",
+          "D": "10√18 m/s"
+        },
+        "correct": "B",
+        "explanation": "By energy conservation, v^2 = u^2 - 2gh = 50^2 - 2(10)(35) = 2500 - 700 = 1800. So v = √1800 = 30√2 m/s."
+      },
+      {
+        "q": 3,
+        "global_q": 3,
+        "topic": "Laws of Motion",
+        "question": "A block of mass 4 kg rests on a rough horizontal floor with μ_s = 0.5 and μ_k = 0.4. A horizontal force F = 16 N is applied to the block. Taking g = 10 m/s^2, what is the magnitude of the frictional force exerted by the floor on the block?",
+        "options": {
+          "A": "20 N",
+          "B": "12 N",
+          "C": "16 N",
+          "D": "24 N"
+        },
+        "correct": "C",
+        "explanation": "Maximum static friction f_s_max = μ_s m g = (0.5)(4)(10) = 20 N. Since F = 16 N < 20 N, the block stays at rest and static friction self-adjusts, so f = F = 16 N."
+      },
+      {
+        "q": 4,
+        "global_q": 4,
+        "topic": "Work, Energy and Power",
+        "question": "A force F = (3x^2 + 2x) N acts on a particle of mass 2 kg moving along the x-axis. What is the work done by this force as the particle moves from x = 1 m to x = 3 m?",
+        "options": {
+          "A": "34 J",
+          "B": "28 J",
+          "C": "40 J",
+          "D": "32 J"
+        },
+        "correct": "A",
+        "explanation": "W = ∫(3x^2 + 2x)dx from 1 to 3 = [x^3 + x^2] from 1 to 3 = (27+9) - (1+1) = 36 - 2 = 34 J."
+      },
+      {
+        "q": 5,
+        "global_q": 5,
+        "topic": "Rotational Motion",
+        "question": "A uniform solid sphere of mass M and radius R rotates about an axis through its center with angular speed ω. If its rotational kinetic energy equals the translational kinetic energy of a body of mass M moving with speed v, what is the ratio v / (Rω)?",
+        "options": {
+          "A": "√(2/5)",
+          "B": "1/√5",
+          "C": "√(3/5)",
+          "D": "2/5"
+        },
+        "correct": "A",
+        "explanation": "I = (2/5)MR^2, so E_rot = (1/5)MR^2ω^2. Equating to (1/2)Mv^2 gives v^2/(R^2ω^2) = 2/5, so v/(Rω) = √(2/5)."
+      },
+      {
+        "q": 6,
+        "global_q": 6,
+        "topic": "Gravitation",
+        "question": "The acceleration due to gravity at a height h above Earth's surface equals its value at a depth d below the surface. If h is much smaller than Earth's radius R, what is the relation between d and h?",
+        "options": {
+          "A": "d = h",
+          "B": "d = 2h",
+          "C": "d = h/2",
+          "D": "d = 4h"
+        },
+        "correct": "B",
+        "explanation": "g_h = g(1 - 2h/R) and g_d = g(1 - d/R). Equating gives 2h/R = d/R, so d = 2h."
+      },
+      {
+        "q": 7,
+        "global_q": 7,
+        "topic": "Properties of Solids and Liquids",
+        "question": "A wire of length L and cross-sectional area A is made of a material of Young's modulus Y. If the wire is stretched by a length x within its elastic limit, what is the elastic potential energy stored per unit volume of the wire?",
+        "options": {
+          "A": "(1/2)Y(x/L)^2",
+          "B": "Y(x/L)^2",
+          "C": "(1/2)Y(x/L)",
+          "D": "(1/2)Y^2(x/L)"
+        },
+        "correct": "A",
+        "explanation": "Energy density u = (1/2) × stress × strain = (1/2)Y(strain)^2 = (1/2)Y(x/L)^2."
+      },
+      {
+        "q": 8,
+        "global_q": 8,
+        "topic": "Properties of Solids and Liquids",
+        "question": "Water flows through a horizontal pipe of non-uniform cross-section. At point P where the area is 10 cm^2, velocity is 2 m/s and pressure is 2000 Pa. What is the pressure at point Q where the area is 5 cm^2? (Density of water = 1000 kg/m^3)",
+        "options": {
+          "A": "1000 Pa",
+          "B": "500 Pa",
+          "C": "-4000 Pa",
+          "D": "-1000 Pa"
+        },
+        "correct": "D",
+        "explanation": "By continuity, A1v1 = A2v2 gives v2 = 4 m/s. By Bernoulli, 2000 + (1/2)(1000)(2^2) = P2 + (1/2)(1000)(4^2), so P2 = 4000 - 8000 = -1000 Pa."
+      },
+      {
+        "q": 9,
+        "global_q": 9,
+        "topic": "Thermodynamics",
+        "question": "An ideal gas undergoes an isothermal expansion at temperature T during which its volume doubles. If the same gas undergoes an adiabatic expansion from the same initial state until its volume doubles, how does the magnitude of work done in the isothermal process W_iso compare with the work done in the adiabatic process W_adia?",
+        "options": {
+          "A": "W_iso > W_adia",
+          "B": "W_iso < W_adia",
+          "C": "W_iso = W_adia",
+          "D": "Depends on atomicity of the gas"
+        },
+        "correct": "A",
+        "explanation": "The isothermal P-V curve lies above the adiabatic curve (slope of adiabatic is steeper since γ > 1), so the area under the isothermal curve (work done) is larger: W_iso > W_adia."
+      },
+      {
+        "q": 10,
+        "global_q": 10,
+        "topic": "Thermodynamics",
+        "question": "A heat engine operates between two thermal reservoirs at 600 K and 300 K. In each cycle, it absorbs 1200 J of heat from the hot reservoir and rejects 800 J to the cold reservoir. What is the ratio of the actual thermal efficiency of this engine to the maximum possible (Carnot) efficiency between the same two temperatures?",
+        "options": {
+          "A": "2/3",
+          "B": "1/2",
+          "C": "3/4",
+          "D": "1/3"
+        },
+        "correct": "A",
+        "explanation": "η_actual = (1200-800)/1200 = 1/3. η_Carnot = 1 - 300/600 = 1/2. Ratio = (1/3)/(1/2) = 2/3."
+      },
+      {
+        "q": 11,
+        "global_q": 11,
+        "topic": "Oscillations and Waves",
+        "question": "A simple pendulum of length L executes SHM with time period T. If the length is increased by 21 percent, by what percentage does its time period increase?",
+        "options": {
+          "A": "10 percent",
+          "B": "21 percent",
+          "C": "10.5 percent",
+          "D": "5 percent"
+        },
+        "correct": "A",
+        "explanation": "T ∝ √L. New T2 = √1.21 × T1 = 1.1T1, so the period increases by 10 percent."
+      },
+      {
+        "q": 12,
+        "global_q": 12,
+        "topic": "Electrostatics",
+        "question": "Two point charges +q and -4q are fixed at a distance d apart on a straight line. At what distance from +q on the line joining the two charges is the net electric potential zero?",
+        "options": {
+          "A": "d/5 inside and d/3 outside",
+          "B": "d/3 inside and d/5 outside",
+          "C": "d/4 inside and d/2 outside",
+          "D": "d/3 inside and d/2 outside"
+        },
+        "correct": "A",
+        "explanation": "Between the charges: kq/x = k4q/(d-x) gives x = d/5. Outside, closer to +q: kq/x = k4q/(d+x) gives x = d/3."
+      },
+      {
+        "q": 13,
+        "global_q": 13,
+        "topic": "Electrostatics",
+        "question": "A parallel plate capacitor with plate area A and separation d is charged to potential difference V by a battery and then disconnected. A dielectric slab of dielectric constant K = 4 and thickness d is inserted to fill the space. What is the work done by the electrostatic force during insertion of the slab?",
+        "options": {
+          "A": "(3/8)C0V^2",
+          "B": "(1/2)C0V^2",
+          "C": "(3/4)C0V^2",
+          "D": "(1/4)C0V^2"
+        },
+        "correct": "A",
+        "explanation": "U_i = (1/2)C0V^2 with Q constant. New C = 4C0, so U_f = (1/4)U_i. W = U_i - U_f = (3/4)U_i = (3/8)C0V^2."
+      },
+      {
+        "q": 14,
+        "global_q": 14,
+        "topic": "Current Electricity",
+        "question": "In a meter bridge experiment, a balance point is obtained at 40 cm from the left end with resistance R in the left gap and S in the right gap. When a 30 ohm resistor is connected in parallel with S, the new balance point shifts to 50 cm. What is the value of R?",
+        "options": {
+          "A": "5 ohms",
+          "B": "10 ohms",
+          "C": "15 ohms",
+          "D": "20 ohms"
+        },
+        "correct": "B",
+        "explanation": "R/S = 40/60 gives S = 1.5R. New balance: R/S_eq = 50/50 = 1, so S_eq = R, where S_eq = 30S/(S+30). Solving 30(1.5R)/(1.5R+30) = R gives R = 10 ohms."
+      },
+      {
+        "q": 15,
+        "global_q": 15,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "A long straight wire carries a current of 10 A. An electron moves with speed 2×10^6 m/s parallel to the wire at a distance of 10 cm from it, opposite to the current direction. What is the magnitude of the magnetic force on the electron? (μ0 = 4π×10^-7 T·m/A, e = 1.6×10^-19 C)",
+        "options": {
+          "A": "6.4×10^-18 N",
+          "B": "3.2×10^-18 N",
+          "C": "1.6×10^-18 N",
+          "D": "6.4×10^-19 N"
+        },
+        "correct": "A",
+        "explanation": "B = μ0I/(2πr) = 2×10^-5 T. Force F = evB = (1.6×10^-19)(2×10^6)(2×10^-5) = 6.4×10^-18 N."
+      },
+      {
+        "q": 16,
+        "global_q": 16,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "A circular coil of radius 10 cm and 100 turns carries a current of 0.5 A. It is placed in a uniform magnetic field of 0.2 T such that the plane of the coil makes an angle of 30 degrees with the field. What is the magnitude of the torque on the coil?",
+        "options": {
+          "A": "0.157 N·m",
+          "B": "0.272 N·m",
+          "C": "0.314 N·m",
+          "D": "0.078 N·m"
+        },
+        "correct": "B",
+        "explanation": "M = NIA = 100(0.5)(π×0.1^2) = 1.5708 A·m^2. Angle between M and B = 60°. τ = MBsin60° = (1.5708)(0.2)(0.866) ≈ 0.272 N·m."
+      },
+      {
+        "q": 17,
+        "global_q": 17,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "A conducting square loop of side 20 cm and resistance 2 ohms enters a uniform magnetic field B = 0.5 T perpendicular to the plane of the loop with constant speed v = 5 m/s. What is the magnitude of the induced current while entering the field?",
+        "options": {
+          "A": "0.5 A",
+          "B": "0.25 A",
+          "C": "1.0 A",
+          "D": "0.1 A"
+        },
+        "correct": "B",
+        "explanation": "EMF = BLv = (0.5)(0.2)(5) = 0.5 V. I = E/R = 0.5/2 = 0.25 A."
+      },
+      {
+        "q": 18,
+        "global_q": 18,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "In a series LCR circuit connected to an AC source of V = 220 V and f = 50 Hz, R = 30 ohms, X_L = 80 ohms, and X_C = 40 ohms. What is the average power dissipated in the circuit?",
+        "options": {
+          "A": "484 W",
+          "B": "580.8 W",
+          "C": "968 W",
+          "D": "242 W"
+        },
+        "correct": "B",
+        "explanation": "Z = √[30^2 + (80-40)^2] = 50 Ω. I_rms = 220/50 = 4.4 A. P = I_rms^2 R = (4.4)^2(30) = 580.8 W."
+      },
+      {
+        "q": 19,
+        "global_q": 19,
+        "topic": "Electromagnetic Waves",
+        "question": "An electromagnetic wave in vacuum has electric field E_y = 60 sin(2×10^8 t - kx) V/m. What is the average energy density of the wave? (ε0 = 8.85×10^-12 F/m)",
+        "options": {
+          "A": "1.59×10^-8 J/m^3",
+          "B": "3.19×10^-8 J/m^3",
+          "C": "7.97×10^-9 J/m^3",
+          "D": "6.37×10^-8 J/m^3"
+        },
+        "correct": "A",
+        "explanation": "u_avg = (1/2)ε0E0^2 = (1/2)(8.85×10^-12)(60^2) ≈ 1.593×10^-8 J/m^3."
+      },
+      {
+        "q": 20,
+        "global_q": 20,
+        "topic": "Optics",
+        "question": "A biconvex lens made of glass of refractive index 1.5 has radii of curvature of magnitude 20 cm for both surfaces. What is the focal length of the lens when completely immersed in a liquid of refractive index 1.25?",
+        "options": {
+          "A": "20 cm",
+          "B": "40 cm",
+          "C": "50 cm",
+          "D": "30 cm"
+        },
+        "correct": "C",
+        "explanation": "1/R1 - 1/R2 = 1/10 cm^-1. μ_rel = 1.5/1.25 = 1.2. 1/f = (1.2-1)(1/10) = 0.02 cm^-1, so f = 50 cm."
+      },
+      {
+        "q": 21,
+        "global_q": 21,
+        "topic": "Optics",
+        "question": "In a Young's double-slit experiment using monochromatic light of wavelength 600 nm, the slit separation is 1 mm and the screen is 1 m away. What is the distance between the central bright fringe and the third dark fringe on the screen?",
+        "options": {
+          "A": "1.8 mm",
+          "B": "1.2 mm",
+          "C": "1.5 mm",
+          "D": "2.1 mm"
+        },
+        "correct": "C",
+        "explanation": "β = λD/d = (600×10^-9)(1)/(10^-3) = 0.6 mm. y3 = (3-0.5)β = 2.5(0.6) = 1.5 mm."
+      },
+      {
+        "q": 22,
+        "global_q": 22,
+        "topic": "Dual Nature of Matter and Radiation",
+        "question": "Light of frequency 8×10^14 Hz is incident on a metal surface with work function 2.0 eV. What is the maximum kinetic energy of the emitted photoelectrons? (h = 6.63×10^-34 J·s, 1 eV = 1.6×10^-19 J)",
+        "options": {
+          "A": "3.315 eV",
+          "B": "2.315 eV",
+          "C": "1.315 eV",
+          "D": "0.315 eV"
+        },
+        "correct": "C",
+        "explanation": "E = hν = (6.63×10^-34)(8×10^14)/(1.6×10^-19) = 3.315 eV. K_max = 3.315 - 2.0 = 1.315 eV."
+      },
+      {
+        "q": 23,
+        "global_q": 23,
+        "topic": "Atoms and Nuclei",
+        "question": "In a hydrogen atom, an electron makes a transition from n = 3 to n = 1. What is the wavelength of the emitted photon? (R = 1.097×10^7 m^-1)",
+        "options": {
+          "A": "121.6 nm",
+          "B": "97.2 nm",
+          "C": "656.3 nm",
+          "D": "102.5 nm"
+        },
+        "correct": "D",
+        "explanation": "1/λ = R(1/1^2 - 1/3^2) = (8/9)R = 0.9751×10^7 m^-1, giving λ = 102.5 nm."
+      },
+      {
+        "q": 24,
+        "global_q": 24,
+        "topic": "Atoms and Nuclei",
+        "question": "A radioactive nucleus has a half-life of 20 minutes. What fraction of the initial sample remains undecayed after a total time of 80 minutes?",
+        "options": {
+          "A": "1/8",
+          "B": "1/32",
+          "C": "1/4",
+          "D": "1/16"
+        },
+        "correct": "D",
+        "explanation": "Number of half-lives = 80/20 = 4. Remaining fraction = (1/2)^4 = 1/16."
+      },
+      {
+        "q": 25,
+        "global_q": 25,
+        "topic": "Electronic Devices",
+        "question": "In a p-n junction diode, the depletion layer width is 0.5 micrometers with an intrinsic potential barrier of 0.6 V across it. What is the magnitude of the average electric field in the depletion region?",
+        "options": {
+          "A": "6.0×10^5 V/m",
+          "B": "3.0×10^5 V/m",
+          "C": "2.4×10^6 V/m",
+          "D": "1.2×10^6 V/m"
+        },
+        "correct": "D",
+        "explanation": "E = V/d = 0.6/(0.5×10^-6) = 1.2×10^6 V/m."
+      }
+    ],
+    "Chemistry": [
+      {
+        "q": 1,
+        "global_q": 26,
+        "topic": "Atomic Structure",
+        "question": "What is the maximum number of electrons in an atom that can have quantum numbers n = 4 and m_l = -1?",
+        "options": {
+          "A": "6",
+          "B": "2",
+          "C": "10",
+          "D": "4"
+        },
+        "correct": "A",
+        "explanation": "For n=4, l can be 0,1,2,3 (4s,4p,4d,4f). m_l = -1 exists in orbitals with l≥1, i.e., 4p, 4d, and 4f — one orbital each, holding 2 electrons each: 3×2 = 6."
+      },
+      {
+        "q": 2,
+        "global_q": 27,
+        "topic": "Classification of Elements and Periodicity in Properties",
+        "question": "What is the correct order of increasing first ionization enthalpy for the elements N, O, F, and Ne?",
+        "options": {
+          "A": "N < O < F < Ne",
+          "B": "O < N < F < Ne",
+          "C": "O < F < N < Ne",
+          "D": "N < F < O < Ne"
+        },
+        "correct": "B",
+        "explanation": "N has a stable half-filled 2p3 configuration, giving it higher IE than O. Order: O < N < F < Ne."
+      },
+      {
+        "q": 3,
+        "global_q": 28,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "According to Molecular Orbital Theory, which of the following species is diamagnetic and has a bond order of 2?",
+        "options": {
+          "A": "O2",
+          "B": "N2",
+          "C": "C2",
+          "D": "B2"
+        },
+        "correct": "C",
+        "explanation": "C2 configuration: σ1s²σ*1s²σ2s²σ*2s²π2px²=π2py², all electrons paired (diamagnetic). Bond order = (8-4)/2 = 2."
+      },
+      {
+        "q": 4,
+        "global_q": 29,
+        "topic": "Chemical Thermodynamics",
+        "question": "What is the change in internal energy ΔU when 2 moles of an ideal gas expand reversibly and isothermally at 300 K from 10 L to 100 L? (R = 8.314 J mol^-1 K^-1)",
+        "options": {
+          "A": "-11.48 kJ",
+          "B": "+11.48 kJ",
+          "C": "-5.74 kJ",
+          "D": "0 J"
+        },
+        "correct": "D",
+        "explanation": "For an ideal gas, internal energy depends only on temperature. Since ΔT = 0 (isothermal), ΔU = 0 J."
+      },
+      {
+        "q": 5,
+        "global_q": 30,
+        "topic": "Equilibrium",
+        "question": "For the reaction N2(g) + 3H2(g) ⇌ 2NH3(g), the equilibrium constant Kc is 0.5 M^-2 at 400 K. What is the value of Kp at 400 K in atm^-2? (R = 0.0821 L atm mol^-1 K^-1)",
+        "options": {
+          "A": "4.64×10^-4",
+          "B": "0.50",
+          "C": "5.37×10^-2",
+          "D": "1.08×10^3"
+        },
+        "correct": "A",
+        "explanation": "Δn = 2-4 = -2. RT = 0.0821×400 = 32.84. Kp = 0.5×(32.84)^-2 ≈ 4.64×10^-4 atm^-2."
+      },
+      {
+        "q": 6,
+        "global_q": 31,
+        "topic": "Equilibrium",
+        "question": "What is the pH of a buffer solution prepared by mixing 50 mL of 0.2 M acetic acid with 50 mL of 0.2 M sodium acetate? (pKa of acetic acid = 4.76)",
+        "options": {
+          "A": "5.06",
+          "B": "4.76",
+          "C": "4.46",
+          "D": "7.00"
+        },
+        "correct": "B",
+        "explanation": "Equal moles of salt and acid give [Salt]/[Acid] = 1, so pH = pKa = 4.76."
+      },
+      {
+        "q": 7,
+        "global_q": 32,
+        "topic": "d- and f-Block Elements",
+        "question": "What is the oxidation state of Chromium in potassium dichromate K2Cr2O7?",
+        "options": {
+          "A": "+3",
+          "B": "+7",
+          "C": "+6",
+          "D": "+4"
+        },
+        "correct": "C",
+        "explanation": "2(+1) + 2x + 7(-2) = 0 gives 2x = 12, so x = +6."
+      },
+      {
+        "q": 8,
+        "global_q": 33,
+        "topic": "Redox Reactions and Electrochemistry",
+        "question": "What is the molar conductivity at infinite dilution of acetic acid CH3COOH if the molar conductivities at infinite dilution of HCl, NaCl, and CH3COONa are 426, 126, and 91 S cm^2 mol^-1, respectively?",
+        "options": {
+          "A": "523 S cm^2 mol^-1",
+          "B": "209 S cm^2 mol^-1",
+          "C": "426 S cm^2 mol^-1",
+          "D": "391 S cm^2 mol^-1"
+        },
+        "correct": "D",
+        "explanation": "By Kohlrausch's law, Λ(CH3COOH) = Λ(CH3COONa) + Λ(HCl) - Λ(NaCl) = 91 + 426 - 126 = 391 S cm^2 mol^-1."
+      },
+      {
+        "q": 9,
+        "global_q": 34,
+        "topic": "Chemical Kinetics",
+        "question": "For a first-order chemical reaction, the rate constant is 6.93×10^-3 min^-1. What time is required for 75 percent completion of the reaction?",
+        "options": {
+          "A": "200 min",
+          "B": "100 min",
+          "C": "300 min",
+          "D": "150 min"
+        },
+        "correct": "A",
+        "explanation": "t1/2 = 0.693/k = 100 min. 75% completion takes 2 half-lives = 200 min."
+      },
+      {
+        "q": 10,
+        "global_q": 35,
+        "topic": "Solutions",
+        "question": "What is the freezing point of a 0.1 m aqueous solution of glucose C6H12O6? (Kf for water = 1.86 K kg mol^-1)",
+        "options": {
+          "A": "+0.186°C",
+          "B": "-0.186°C",
+          "C": "-0.372°C",
+          "D": "0.000°C"
+        },
+        "correct": "B",
+        "explanation": "ΔTf = i×Kf×m = 1×1.86×0.1 = 0.186 K. Freezing point = 0 - 0.186 = -0.186°C."
+      },
+      {
+        "q": 11,
+        "global_q": 36,
+        "topic": "p-Block Elements (Group-13 to Group 18 Elements)",
+        "question": "Among the following hydrides of group 16 elements, which one exhibits the highest boiling point?",
+        "options": {
+          "A": "H2Te",
+          "B": "H2S",
+          "C": "H2O",
+          "D": "H2Se"
+        },
+        "correct": "C",
+        "explanation": "H2O has an abnormally high boiling point due to extensive hydrogen bonding, exceeding the trend seen in H2S < H2Se < H2Te."
+      },
+      {
+        "q": 12,
+        "global_q": 37,
+        "topic": "Coordination Compounds",
+        "question": "What is the spin-only magnetic moment of a high-spin octahedral complex ion of manganese [Mn(H2O)6]^2+ in Bohr Magnetons?",
+        "options": {
+          "A": "4.90 BM",
+          "B": "3.87 BM",
+          "C": "1.73 BM",
+          "D": "5.92 BM"
+        },
+        "correct": "D",
+        "explanation": "Mn^2+ is 3d^5, high-spin with 5 unpaired electrons (weak field ligand H2O). μ = √[5(5+2)] = √35 = 5.92 BM."
+      },
+      {
+        "q": 13,
+        "global_q": 38,
+        "topic": "d- and f-Block Elements",
+        "question": "Which of the following transition metal ions exhibits the maximum number of unpaired electrons in its 3d subshell?",
+        "options": {
+          "A": "Fe^3+",
+          "B": "Cr^3+",
+          "C": "Mn^3+",
+          "D": "Co^2+"
+        },
+        "correct": "A",
+        "explanation": "Cr^3+ is 3d^3 (3 unpaired), Mn^3+ is 3d^4 (4 unpaired), Fe^3+ is 3d^5 (5 unpaired), Co^2+ is 3d^7 (3 unpaired). Fe^3+ has the maximum (5)."
+      },
+      {
+        "q": 14,
+        "global_q": 39,
+        "topic": "Coordination Compounds",
+        "question": "What is the IUPAC name of the coordination compound [Co(NH3)5(CO3)]Cl?",
+        "options": {
+          "A": "Carbonatopentaamminecobalt(III) chloride",
+          "B": "Pentaamminecarbonatocobalt(III) chloride",
+          "C": "Pentaamminecarbonatocobalt(II) chloride",
+          "D": "Pentaamminecobalt(III) carbonate chloride"
+        },
+        "correct": "B",
+        "explanation": "Ligands are named alphabetically (ammine before carbonato). Co is +3 since carbonate is -2 and chloride is -1 (x-2-1=+1... balancing to 0 charge overall gives x=+3). Name: Pentaamminecarbonatocobalt(III) chloride."
+      },
+      {
+        "q": 15,
+        "global_q": 40,
+        "topic": "Organic Compounds Containing Halogens",
+        "question": "Which of the following organic compounds will undergo SN1 reaction at the fastest rate?",
+        "options": {
+          "A": "Isopropyl bromide",
+          "B": "Ethyl bromide",
+          "C": "tert-Butyl bromide",
+          "D": "Methyl bromide"
+        },
+        "correct": "C",
+        "explanation": "SN1 rate depends on carbocation stability (tertiary > secondary > primary > methyl). tert-Butyl bromide forms the most stable tertiary carbocation."
+      },
+      {
+        "q": 16,
+        "global_q": 41,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "What is the major organic product formed when phenol is treated with chloroform and aqueous sodium hydroxide followed by acidification?",
+        "options": {
+          "A": "Salicylaldehyde",
+          "B": "Salicylic acid",
+          "C": "Benzoic acid",
+          "D": "Anisole"
+        },
+        "correct": "A",
+        "explanation": "This is the Reimer-Tiemann reaction; dichlorocarbene introduces a -CHO group ortho to -OH, giving salicylaldehyde."
+      },
+      {
+        "q": 17,
+        "global_q": 42,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "Which of the following functional groups gives a positive silver mirror test with Tollens' reagent?",
+        "options": {
+          "A": "Ketones",
+          "B": "Esters",
+          "C": "Ethers",
+          "D": "Aldehydes"
+        },
+        "correct": "D",
+        "explanation": "Tollens' reagent oxidizes aldehydes to carboxylate ions while Ag+ is reduced to metallic silver, forming a silver mirror."
+      },
+      {
+        "q": 18,
+        "global_q": 43,
+        "topic": "Organic Compounds Containing Nitrogen",
+        "question": "What is the major product formed when aniline is treated with nitrous acid HNO2 (from NaNO2 and HCl) at 0-5°C?",
+        "options": {
+          "A": "Phenol",
+          "B": "Benzenediazonium chloride",
+          "C": "Nitrobenzene",
+          "D": "Chlorobenzene"
+        },
+        "correct": "B",
+        "explanation": "Primary aromatic amines undergo diazotization at ice-cold temperatures to form aromatic diazonium salts; aniline gives benzenediazonium chloride."
+      },
+      {
+        "q": 19,
+        "global_q": 44,
+        "topic": "Biomolecules",
+        "question": "Which of the following disaccharides is a non-reducing sugar that does not reduce Fehling's solution or Tollens' reagent?",
+        "options": {
+          "A": "Lactose",
+          "B": "Maltose",
+          "C": "Sucrose",
+          "D": "Cellobiose"
+        },
+        "correct": "C",
+        "explanation": "In sucrose, both anomeric carbons are involved in the glycosidic linkage, leaving no free reducing group, making it non-reducing."
+      },
+      {
+        "q": 20,
+        "global_q": 45,
+        "topic": "Organic Compounds Containing Nitrogen",
+        "question": "What is the correct order of basic strength in aqueous solution for methyl-substituted amines?",
+        "options": {
+          "A": "(CH3)3N > (CH3)2NH > CH3NH2 > NH3",
+          "B": "CH3NH2 > (CH3)2NH > (CH3)3N > NH3",
+          "C": "(CH3)2NH > (CH3)3N > CH3NH2 > NH3",
+          "D": "(CH3)2NH > CH3NH2 > (CH3)3N > NH3"
+        },
+        "correct": "D",
+        "explanation": "Considering inductive effect, hydration, and steric hindrance in water, the order is secondary > primary > tertiary > ammonia: (CH3)2NH > CH3NH2 > (CH3)3N > NH3."
+      },
+      {
+        "q": 21,
+        "global_q": 46,
+        "topic": "Hydrocarbons",
+        "question": "According to Markovnikov's rule, what is the major organic product formed by the addition of HBr to propene in the absence of peroxides?",
+        "options": {
+          "A": "1-Bromopropane",
+          "B": "2-Bromopropane",
+          "C": "1,2-Dibromopropane",
+          "D": "Propyl alcohol"
+        },
+        "correct": "B",
+        "explanation": "Protonation forms the more stable secondary carbocation, and Br- attack gives 2-bromopropane as the major product."
+      },
+      {
+        "q": 22,
+        "global_q": 47,
+        "topic": "Hydrocarbons",
+        "question": "What is the major product formed when ethyl benzene is oxidized with hot alkaline potassium permanganate KMnO4 followed by acidification?",
+        "options": {
+          "A": "Acetophenone",
+          "B": "Benzaldehyde",
+          "C": "Benzoic acid",
+          "D": "Phthalic acid"
+        },
+        "correct": "C",
+        "explanation": "Alkylbenzenes with a benzylic hydrogen are oxidized by hot alkaline KMnO4 to give benzoic acid upon acidification, regardless of side-chain length."
+      },
+      {
+        "q": 23,
+        "global_q": 48,
+        "topic": "Some Basic Principles of Organic Chemistry",
+        "question": "Which of the following compounds contains a chiral carbon atom and exhibits optical isomerism?",
+        "options": {
+          "A": "2-Bromobutane",
+          "B": "Propan-2-ol",
+          "C": "Propanoic acid",
+          "D": "1-Bromopropane"
+        },
+        "correct": "A",
+        "explanation": "In 2-bromobutane, C-2 is bonded to four different groups (-H, -Br, -CH3, -CH2CH3), making it a chiral center."
+      },
+      {
+        "q": 24,
+        "global_q": 49,
+        "topic": "d- and f-Block Elements",
+        "question": "In the extraction of aluminum by the Hall-Heroult process, purified alumina Al2O3 is dissolved in molten cryolite Na3AlF6 and fluorspar CaF2. What is the primary purpose of adding cryolite and fluorspar?",
+        "options": {
+          "A": "To prevent oxidation of aluminum",
+          "B": "To act as a reducing agent",
+          "C": "To lower the melting point and increase electrical conductivity",
+          "D": "To remove iron impurities"
+        },
+        "correct": "C",
+        "explanation": "Cryolite and fluorspar lower the very high melting point of alumina (~2323 K) to about 1140 K and increase electrical conductivity, making electrolysis economical."
+      },
+      {
+        "q": 25,
+        "global_q": 50,
+        "topic": "p-Block Elements (Group-13 to Group 18 Elements)",
+        "question": "Which of the following gas pollutants is primarily responsible for the depletion of the stratospheric ozone layer via radical chain reactions?",
+        "options": {
+          "A": "Sulfur dioxide",
+          "B": "Chlorofluorocarbons",
+          "C": "Carbon dioxide",
+          "D": "Methane"
+        },
+        "correct": "B",
+        "explanation": "CFCs release chlorine radicals in the stratosphere under UV radiation, which catalytically break down ozone into oxygen."
+      }
+    ],
+    "Mathematics": [
+      {
+        "q": 1,
+        "global_q": 51,
+        "topic": "Limit, Continuity and Differentiability",
+        "question": "Let f(x) = (x-1)(x-2)(x-3). What is the total number of real roots of the equation f'(x) = 0?",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "1",
+          "D": "0"
+        },
+        "correct": "A",
+        "explanation": "By Rolle's theorem, f'(x)=0 has a root in (1,2) and one in (2,3). Since f'(x) is quadratic (degree 2), it has exactly 2 real roots."
+      },
+      {
+        "q": 2,
+        "global_q": 52,
+        "topic": "Limit, Continuity and Differentiability",
+        "question": "What is the value of the limit as x approaches 0 of [sin(3x) - 3sin(x)] / x^3?",
+        "options": {
+          "A": "-3",
+          "B": "-4",
+          "C": "4",
+          "D": "0"
+        },
+        "correct": "B",
+        "explanation": "sin(3x) = 3sin(x) - 4sin^3(x), so the numerator is -4sin^3(x). The limit becomes -4×(sin x/x)^3 → -4×1 = -4."
+      },
+      {
+        "q": 3,
+        "global_q": 53,
+        "topic": "Complex Numbers and Quadratic Equations",
+        "question": "If α and β are the roots of x^2 - 6x + 2 = 0, what is the value of α^4 + β^4?",
+        "options": {
+          "A": "1152",
+          "B": "1088",
+          "C": "1144",
+          "D": "1200"
+        },
+        "correct": "C",
+        "explanation": "α+β=6, αβ=2. α²+β²=36-4=32. α^4+β^4=(32)^2-2(2)^2=1024-8=1144."
+      },
+      {
+        "q": 4,
+        "global_q": 54,
+        "topic": "Sequence and Series",
+        "question": "What is the sum of the infinite series 1 + 2/3 + 3/9 + 4/27 + 5/81 + ...?",
+        "options": {
+          "A": "4/3",
+          "B": "3/2",
+          "C": "2",
+          "D": "9/4"
+        },
+        "correct": "D",
+        "explanation": "This is an AGP with r=1/3. Using S-(1/3)S, (2/3)S = 1+1/3+1/9+...= 3/2, so S = 9/4."
+      },
+      {
+        "q": 5,
+        "global_q": 55,
+        "topic": "Integral Calculus",
+        "question": "What is the value of the definite integral from x=0 to π/2 of [√(sin x) / (√(sin x) + √(cos x))] dx?",
+        "options": {
+          "A": "π/4",
+          "B": "π/2",
+          "C": "π/8",
+          "D": "0"
+        },
+        "correct": "A",
+        "explanation": "Using King's property, 2I = ∫1 dx from 0 to π/2 = π/2, so I = π/4."
+      },
+      {
+        "q": 6,
+        "global_q": 56,
+        "topic": "Integral Calculus",
+        "question": "What is the area of the region bounded by the parabola y = x^2 and the straight line y = 2x?",
+        "options": {
+          "A": "2/3",
+          "B": "4/3",
+          "C": "1/3",
+          "D": "5/3"
+        },
+        "correct": "B",
+        "explanation": "Intersections at x=0,2. Area = ∫(2x-x^2)dx from 0 to 2 = [x^2-x^3/3] = 4-8/3 = 4/3."
+      },
+      {
+        "q": 7,
+        "global_q": 57,
+        "topic": "Differential Equations",
+        "question": "What is the general solution of the differential equation dy/dx + y·tan(x) = sec(x)?",
+        "options": {
+          "A": "y·sec(x) = sec(x) + C",
+          "B": "y·cos(x) = sin(x) + C",
+          "C": "y·sec(x) = tan(x) + C",
+          "D": "y·tan(x) = sec(x) + C"
+        },
+        "correct": "C",
+        "explanation": "IF = e^∫tan(x)dx = sec(x). d/dx[y·sec(x)] = sec^2(x). Integrating: y·sec(x) = tan(x) + C."
+      },
+      {
+        "q": 8,
+        "global_q": 58,
+        "topic": "Vector Algebra",
+        "question": "If vector a = 2i + 3j - k and vector b = i - j + 2k, what is the magnitude of the cross product a × b?",
+        "options": {
+          "A": "√70",
+          "B": "√65",
+          "C": "√83",
+          "D": "√75"
+        },
+        "correct": "D",
+        "explanation": "a×b = 5i - 5j - 5k (computed via determinant). Magnitude = √(25+25+25) = √75."
+      },
+      {
+        "q": 9,
+        "global_q": 59,
+        "topic": "Three Dimensional Geometry",
+        "question": "What is the shortest distance between the two parallel lines (x-1)/2=(y-2)/3=(z-3)/4 and (x-2)/2=(y-4)/3=(z-5)/4?",
+        "options": {
+          "A": "√(3/29)",
+          "B": "√(5/29)",
+          "C": "√(6/29)",
+          "D": "√(2/29)"
+        },
+        "correct": "B",
+        "explanation": "(a2-a1)×b = 2i-k, magnitude √5. |b|=√29. Distance = √5/√29 = √(5/29)."
+      },
+      {
+        "q": 10,
+        "global_q": 60,
+        "topic": "Three Dimensional Geometry",
+        "question": "What is the acute angle between the two plane vectors with direction cosines proportional to (1,1,0) and (0,1,1)?",
+        "options": {
+          "A": "π/3",
+          "B": "π/4",
+          "C": "π/6",
+          "D": "π/2"
+        },
+        "correct": "A",
+        "explanation": "v1·v2=1, |v1|=|v2|=√2. cosθ = 1/2, so θ = π/3."
+      },
+      {
+        "q": 11,
+        "global_q": 61,
+        "topic": "Binomial Theorem and its Simple Applications",
+        "question": "What is the coefficient of x^7 in the expansion of (1 - 2x + x^2)^5?",
+        "options": {
+          "A": "-120",
+          "B": "-210",
+          "C": "120",
+          "D": "210"
+        },
+        "correct": "A",
+        "explanation": "(1-2x+x^2)^5 = (1-x)^10. General term = (-1)^r(10Cr)x^r. For r=7, coefficient = -(10C3) = -120."
+      },
+      {
+        "q": 12,
+        "global_q": 62,
+        "topic": "Matrices and Determinants",
+        "question": "If A is a square matrix of order 3 such that |A| = 4, what is the value of |adj(A)|?",
+        "options": {
+          "A": "4",
+          "B": "8",
+          "C": "16",
+          "D": "64"
+        },
+        "correct": "C",
+        "explanation": "|adj(A)| = |A|^(n-1) = 4^2 = 16 for n=3."
+      },
+      {
+        "q": 13,
+        "global_q": 63,
+        "topic": "Permutations and Combinations",
+        "question": "How many distinct 4-digit numbers with no repeated digits can be formed using the digits 1,2,3,4,5,6?",
+        "options": {
+          "A": "720",
+          "B": "120",
+          "C": "240",
+          "D": "360"
+        },
+        "correct": "D",
+        "explanation": "Number of ways = 6P4 = 6!/2! = 360."
+      },
+      {
+        "q": 14,
+        "global_q": 64,
+        "topic": "Statistics and Probability",
+        "question": "Two fair six-sided dice are rolled simultaneously. What is the conditional probability that the sum is 8, given that the sum is an even number?",
+        "options": {
+          "A": "5/36",
+          "B": "1/3",
+          "C": "5/18",
+          "D": "5/12"
+        },
+        "correct": "C",
+        "explanation": "Even sum outcomes = 18. Sum=8 outcomes = 5 (all even). P = 5/18."
+      },
+      {
+        "q": 15,
+        "global_q": 65,
+        "topic": "Trigonometry",
+        "question": "What is the value of tan(75°) + cot(75°)?",
+        "options": {
+          "A": "2",
+          "B": "2√3",
+          "C": "4",
+          "D": "4√3"
+        },
+        "correct": "C",
+        "explanation": "tan(75°)=2+√3, cot(75°)=2-√3. Sum = 4. (Also, tan x+cot x = 2/sin(2x) = 2/(1/2) = 4.)"
+      },
+      {
+        "q": 16,
+        "global_q": 66,
+        "topic": "Trigonometry",
+        "question": "What is the principal value of sin^-1(sin(2π/3))?",
+        "options": {
+          "A": "π/3",
+          "B": "2π/3",
+          "C": "-π/3",
+          "D": "4π/3"
+        },
+        "correct": "A",
+        "explanation": "sin(2π/3) = sin(π/3), and π/3 lies within [-π/2, π/2], so sin^-1(sin(2π/3)) = π/3."
+      },
+      {
+        "q": 17,
+        "global_q": 67,
+        "topic": "Co-ordinate Geometry",
+        "question": "What is the radius of the circle x^2 + y^2 - 4x + 6y - 12 = 0?",
+        "options": {
+          "A": "25",
+          "B": "√17",
+          "C": "7",
+          "D": "5"
+        },
+        "correct": "D",
+        "explanation": "g=-2, f=3, c=-12. r=√(g^2+f^2-c) = √(4+9+12) = √25 = 5."
+      },
+      {
+        "q": 18,
+        "global_q": 68,
+        "topic": "Co-ordinate Geometry",
+        "question": "What is the length of the latus rectum of the hyperbola x^2/16 - y^2/9 = 1?",
+        "options": {
+          "A": "9/2",
+          "B": "9/4",
+          "C": "8/3",
+          "D": "32/3"
+        },
+        "correct": "A",
+        "explanation": "a=4, b^2=9. Latus rectum = 2b^2/a = 18/4 = 9/2."
+      },
+      {
+        "q": 19,
+        "global_q": 69,
+        "topic": "Co-ordinate Geometry",
+        "question": "What is the eccentricity of the ellipse 9x^2 + 25y^2 = 225?",
+        "options": {
+          "A": "3/5",
+          "B": "4/5",
+          "C": "16/25",
+          "D": "9/25"
+        },
+        "correct": "B",
+        "explanation": "x^2/25+y^2/9=1, a=5,b=3. e=√(1-9/25)=√(16/25)=4/5."
+      },
+      {
+        "q": 20,
+        "global_q": 70,
+        "topic": "Complex Numbers and Quadratic Equations",
+        "question": "If z = 1 + i√3 is a complex number, what is its modulus and principal argument?",
+        "options": {
+          "A": "Modulus = 4, Argument = π/3",
+          "B": "Modulus = 2, Argument = π/6",
+          "C": "Modulus = √2, Argument = π/3",
+          "D": "Modulus = 2, Argument = π/3"
+        },
+        "correct": "D",
+        "explanation": "|z|=√(1+3)=2. arg = tan^-1(√3/1)=π/3 (first quadrant)."
+      },
+      {
+        "q": 21,
+        "global_q": 71,
+        "topic": "Limit, Continuity and Differentiability",
+        "question": "What is the derivative of f(x) = x^x with respect to x for x > 0?",
+        "options": {
+          "A": "x^(x-1)",
+          "B": "x^x·ln x",
+          "C": "x·x^(x-1)",
+          "D": "x^x(1 + ln x)"
+        },
+        "correct": "D",
+        "explanation": "ln y = x ln x. Differentiating: (1/y)dy/dx = 1+ln x, so dy/dx = x^x(1+ln x)."
+      },
+      {
+        "q": 22,
+        "global_q": 72,
+        "topic": "Integral Calculus",
+        "question": "What is the value of the integral of [e^x(1+x) / cos^2(xe^x)] dx?",
+        "options": {
+          "A": "cot(xe^x) + C",
+          "B": "sec(xe^x) + C",
+          "C": "tan(xe^x) + C",
+          "D": "ln|cos(xe^x)| + C"
+        },
+        "correct": "C",
+        "explanation": "Substitute t=xe^x, dt=e^x(1+x)dx. Integral becomes ∫sec^2(t)dt = tan(t)+C = tan(xe^x)+C."
+      },
+      {
+        "q": 23,
+        "global_q": 73,
+        "topic": "Three Dimensional Geometry",
+        "question": "What is the distance between the two parallel planes 2x - y + 2z = 4 and 4x - 2y + 4z = 17?",
+        "options": {
+          "A": "9/2",
+          "B": "3/4",
+          "C": "3/2",
+          "D": "5/2"
+        },
+        "correct": "C",
+        "explanation": "Second plane: 2x-y+2z=17/2. D=|17/2-4|/√9 = (9/2)/3 = 3/2."
+      },
+      {
+        "q": 24,
+        "global_q": 74,
+        "topic": "Vector Algebra",
+        "question": "If the vectors a = i+2j+3k, b = -i+j+k, and c = 3i+λj+5k are coplanar, what is the value of λ?",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5"
+        },
+        "correct": "B",
+        "explanation": "Setting the scalar triple product to zero: 1(5-λ)-2(-5-3)+3(-λ-3)=0 gives 12-4λ=0, so λ=3."
+      },
+      {
+        "q": 25,
+        "global_q": 75,
+        "topic": "Sequence and Series",
+        "question": "What is the value of the limit as n approaches infinity of [(1^2+2^2+3^2+...+n^2)/n^3]?",
+        "options": {
+          "A": "1/2",
+          "B": "1/6",
+          "C": "1/3",
+          "D": "1"
+        },
+        "correct": "C",
+        "explanation": "Sum = n(n+1)(2n+1)/6. Dividing by n^3 and taking n→∞ gives (1)(2)/6 = 1/3."
+      }
+    ]
+  }
+}

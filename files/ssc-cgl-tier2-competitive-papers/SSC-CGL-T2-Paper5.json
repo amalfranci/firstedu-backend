@@ -1,0 +1,1968 @@
+{
+  "paper_id": "SSC-CGL-T2-Paper5",
+  "title": "SSC CGL Tier 2 Paper 5",
+  "exam": "SSC CGL Tier 2",
+  "year": 2026,
+  "subjects": {
+    "Mathematical Abilities": [
+      {
+        "q": 1,
+        "topic": "Trigonometry",
+        "question": "A dishonest dealer marks up his goods by 20% and offers a discount of 10%. He uses a faulty balance that reads 1000 grams for 800 grams while selling, and reads 1000 grams for 1200 grams while buying. What is his net profit percentage?",
+        "options": {
+          "A": "66%",
+          "B": "62%",
+          "C": "54%",
+          "D": "58%"
+        },
+        "correct": "B",
+        "explanation": "Cost of 1200 g of goods = Rs. 1000, so CP of 1 g = 5/6. While buying, the dealer effectively gets 1200 g for the price of 1000 g, so his real cost for 800 g of goods = 800 × 5/6 = 2000/3. Marked price for 1000 g = Rs. 1200. He sells only 800 g while claiming it is 1000 g, so Selling Price = 1200 × 0.9 = Rs. 1080. Profit = 1080 − 2000/3 = 1240/3. Profit % = (1240/3) ÷ (2000/3) × 100 = 62%."
+      },
+      {
+        "q": 2,
+        "topic": "Trigonometry",
+        "question": "In an equilateral triangle ABC of side 12 cm, a circle is inscribed touching its sides. Another smaller circle is inscribed such that it touches the first circle and the sides AB and AC. What is the radius of the smaller circle?",
+        "options": {
+          "A": "2 cm",
+          "B": "2√3 / 3 cm",
+          "C": "4√3 / 3 cm",
+          "D": "√3 cm"
+        },
+        "correct": "B",
+        "explanation": "The inradius R of an equilateral triangle of side a is R = a / (2√3). Here R = 12 / (2√3) = 2√3 cm. The smaller circle tucked into the corner at A, tangent to both AB and AC and to the incircle, has radius r = R / 3. Therefore r = 2√3 / 3 cm."
+      },
+      {
+        "q": 3,
+        "topic": "Trigonometry",
+        "question": "If x + y + z = 1, x² + y² + z² = 2, and x³ + y³ + z³ = 3, what is the value of x⁴ + y⁴ + z⁴?",
+        "options": {
+          "A": "25 / 6",
+          "B": "17 / 6",
+          "C": "13 / 3",
+          "D": "23 / 6"
+        },
+        "correct": "A",
+        "explanation": "xy + yz + zx = [(x+y+z)² − (x²+y²+z²)] / 2 = (1 − 2)/2 = −1/2. Using x³+y³+z³ − 3xyz = (x+y+z)(x²+y²+z² − (xy+yz+zx)): 3 − 3xyz = 1 × (2 − (−1/2)) = 2.5, so xyz = 1/6. Also (xy+yz+zx)² = x²y²+y²z²+z²x² + 2xyz(x+y+z), so 1/4 = (x²y²+y²z²+z²x²) + 2(1/6)(1), giving x²y²+y²z²+z²x² = 1/4 − 1/3 = −1/12. Finally x⁴+y⁴+z⁴ = (x²+y²+z²)² − 2(x²y²+y²z²+z²x²) = 4 − 2(−1/12) = 4 + 1/6 = 25/6."
+      },
+      {
+        "q": 4,
+        "topic": "Number Systems",
+        "question": "A, B, and C can do a piece of work in 10, 12, and 15 days respectively. They begin working together. A leaves 5 days before the work is completed and B leaves 3 days before the completion of the work. How many days did it take to complete the work?",
+        "options": {
+          "A": "6 days",
+          "B": "9 days",
+          "C": "7 days",
+          "D": "8 days"
+        },
+        "correct": "C",
+        "explanation": "Total work = LCM(10, 12, 15) = 60 units. Efficiencies: A = 6, B = 5, C = 4 units/day. Let the total time be t days. A works for (t−5) days, B for (t−3) days, C for all t days. So 6(t−5) + 5(t−3) + 4t = 60 → 15t − 45 = 60 → t = 7 days."
+      },
+      {
+        "q": 5,
+        "topic": "Mixture and allegation",
+        "question": "A container has 80 litres of a mixture of milk and water in the ratio 7:3. If 16 litres of this mixture is taken out and replaced with 16 litres of pure milk, what will be the new ratio of milk to water in the container?",
+        "options": {
+          "A": "17:8",
+          "B": "13:5",
+          "C": "21:4",
+          "D": "19:6"
+        },
+        "correct": "D",
+        "explanation": "Initially, milk = 56 L, water = 24 L. The 16 L removed contains milk and water in the same 7:3 ratio, i.e. 11.2 L milk and 4.8 L water. Remaining milk = 44.8 L, remaining water = 19.2 L. Adding 16 L of pure milk gives new milk = 60.8 L, water stays 19.2 L. Ratio = 60.8 : 19.2 = 19 : 6."
+      },
+      {
+        "q": 6,
+        "topic": "Trigonometry",
+        "question": "Two identical circles intersect each other such that each passes through the centre of the other. If the radius of the circles is 10 cm, what is the area of the intersecting region?",
+        "options": {
+          "A": "100(2π/3 − √3/2) cm²",
+          "B": "50(2π/3 − √3/2) cm²",
+          "C": "50(4π/3 − √3) cm²",
+          "D": "100(π/3 − √3/4) cm²"
+        },
+        "correct": "A",
+        "explanation": "The common region consists of two identical circular segments. The common chord subtends an angle of 120° at each centre. Area of one sector = (120/360)πr² = πr²/3. Area of the corresponding triangle = (1/2)r² sin120° = r²√3/4. Area of one segment = r²(π/3 − √3/4). Total intersecting area = 2 × r²(π/3 − √3/4) = r²(2π/3 − √3/2). With r = 10, area = 100(2π/3 − √3/2) cm²."
+      },
+      {
+        "q": 7,
+        "topic": "Compound interest",
+        "question": "The difference between the simple and compound interest on a certain sum of money at 5% per annum for 3 years is Rs. 122. Find the principal sum.",
+        "options": {
+          "A": "Rs. 18000",
+          "B": "Rs. 15000",
+          "C": "Rs. 14000",
+          "D": "Rs. 16000"
+        },
+        "correct": "D",
+        "explanation": "For 3 years, Difference = P(R/100)²(3 + R/100). Here 122 = P(1/20)²(3 + 1/20) = P × (1/400) × (61/20) = 61P/8000. So P = 122 × 8000 / 61 = 16000."
+      },
+      {
+        "q": 8,
+        "topic": "Time and distance",
+        "question": "In a race of 1000 metres, A beats B by 100 metres, and in a race of 400 metres, B beats C by 40 metres. By how many metres does A beat C in a race of 500 metres?",
+        "options": {
+          "A": "95 metres",
+          "B": "90 metres",
+          "C": "85 metres",
+          "D": "100 metres"
+        },
+        "correct": "A",
+        "explanation": "Speed ratio A:B = 1000:900 = 10:9. Speed ratio B:C = 400:360 = 10:9. Combined ratio A:B:C = 100:90:81. When A runs 500 m, C covers 500 × (81/100) = 405 m. So A beats C by 500 − 405 = 95 metres."
+      },
+      {
+        "q": 9,
+        "topic": "Algebra",
+        "question": "A boat goes 30 km upstream and 44 km downstream in 10 hours. It can also go 40 km upstream and 55 km downstream in 13 hours. What is the speed of the boat in still water?",
+        "options": {
+          "A": "6 km/h",
+          "B": "12 km/h",
+          "C": "8 km/h",
+          "D": "10 km/h"
+        },
+        "correct": "C",
+        "explanation": "Let 1/U = x and 1/D = y, where U and D are the upstream and downstream speeds. Then 30x + 44y = 10 and 40x + 55y = 13. Multiplying the first equation by 4 and the second by 3: 120x + 176y = 40 and 120x + 165y = 39. Subtracting gives 11y = 1, so y = 1/11 and D = 11. Substituting back: 30x + 4 = 10, so x = 1/5 and U = 5. Speed of boat in still water = (U + D)/2 = (5 + 11)/2 = 8 km/h."
+      },
+      {
+        "q": 10,
+        "topic": "Percentage",
+        "question": "If x = √5 + √3 and y = √5 − √3, find the value of x⁴ − y⁴.",
+        "options": {
+          "A": "64√15",
+          "B": "480√15",
+          "C": "240√15",
+          "D": "120√15"
+        },
+        "correct": "A",
+        "explanation": "x⁴ − y⁴ = (x² + y²)(x² − y²). Here x² = 8 + 2√15 and y² = 8 − 2√15, so x² + y² = 16 and x² − y² = 4√15. Therefore x⁴ − y⁴ = 16 × 4√15 = 64√15."
+      },
+      {
+        "q": 11,
+        "topic": "Trigonometry",
+        "question": "A spherical balloon of radius r subtends an angle α at the eye of an observer, while the angle of elevation of its centre is β. What is the height of the centre of the balloon?",
+        "options": {
+          "A": "r cos β sec(α/2)",
+          "B": "r sin β cosec(α/2)",
+          "C": "r cos β cosec(α/2)",
+          "D": "r sin β sec(α/2)"
+        },
+        "correct": "B",
+        "explanation": "Let d be the distance from the observer's eye to the centre of the balloon. In the right triangle formed by the eye, the centre, and the point of tangency of the line of sight, sin(α/2) = r/d, so d = r cosec(α/2). The height h of the centre above the eye level is h = d sin β. Therefore h = r sin β cosec(α/2)."
+      },
+      {
+        "q": 12,
+        "topic": "Averages",
+        "question": "The average score of students in a class is 70. The average score of the top 15 students is 85, and that of the bottom 10 students is 50. If the average of the remaining students is 69, how many students are there in the class?",
+        "options": {
+          "A": "45",
+          "B": "40",
+          "C": "60",
+          "D": "50"
+        },
+        "correct": "D",
+        "explanation": "Let the remaining students number n. Top 15 sum = 1275, bottom 10 sum = 500, remaining sum = 69n. Total students = 25 + n and total sum = 70(25 + n). So 1275 + 500 + 69n = 70(25+n) → 1775 + 69n = 1750 + 70n → n = 25. Total students = 25 + 25 = 50."
+      },
+      {
+        "q": 13,
+        "topic": "Ratio and proportion",
+        "question": "Two regular polygons are such that the ratio between their number of sides is 1:2 and the ratio of measures of their interior angles is 3:4. What is the number of sides of each polygon?",
+        "options": {
+          "A": "6 and 12",
+          "B": "3 and 6",
+          "C": "4 and 8",
+          "D": "5 and 10"
+        },
+        "correct": "D",
+        "explanation": "Interior angle of an n-sided regular polygon = (n−2) × 180° / n. For sides n and 2n, the ratio of interior angles is [(n−2)/n] : [(2n−2)/2n] = (n−2) : (n−1), set equal to 3:4 → 4(n−2) = 3(n−1) → 4n − 8 = 3n − 3 → n = 5. So the polygons have 5 and 10 sides."
+      },
+      {
+        "q": 14,
+        "topic": "Profit and loss",
+        "question": "A trader buys goods at a 20% discount on the marked price. If he wants to make a profit of 25% after allowing a discount of 20% on a new marked price, by what percent should his new marked price be greater than the original marked price?",
+        "options": {
+          "A": "20%",
+          "B": "30%",
+          "C": "25%",
+          "D": "15%"
+        },
+        "correct": "C",
+        "explanation": "Let the original marked price = 100, so CP = 80. Desired profit = 25% of 80 = 20, so target SP = 100. Let the new marked price be M. After a 20% discount, SP = 0.8M = 100, giving M = 125. This is 25% greater than the original marked price of 100."
+      },
+      {
+        "q": 15,
+        "topic": "Trigonometry",
+        "question": "If x = 11, find the value of x⁵ − 12x⁴ + 12x³ − 12x² + 12x − 1.",
+        "options": {
+          "A": "-1",
+          "B": "12",
+          "C": "10",
+          "D": "11"
+        },
+        "correct": "C",
+        "explanation": "Rewrite 12 as (x+1) since x = 11: the expression becomes x⁵ − (x+1)x⁴ + (x+1)x³ − (x+1)x² + (x+1)x − 1. Expanding and cancelling terms: x⁵ − x⁵ − x⁴ + x⁴ + x³ − x³ − x² + x² + x − 1 = x − 1 = 11 − 1 = 10."
+      },
+      {
+        "q": 16,
+        "topic": "Trigonometry",
+        "question": "If sin θ + sin² θ = 1, find the value of cos¹² θ + 3cos¹⁰ θ + 3cos⁸ θ + cos⁶ θ − 1.",
+        "options": {
+          "A": "2",
+          "B": "-1",
+          "C": "1",
+          "D": "0"
+        },
+        "correct": "D",
+        "explanation": "From sin θ + sin² θ = 1, we get cos² θ = sin θ. The given expression is (cos⁴θ + cos²θ)³ − 1. Substituting cos²θ = sin θ gives (sin²θ + sinθ)³ − 1. Since sinθ + sin²θ = 1, this equals 1³ − 1 = 0."
+      },
+      {
+        "q": 17,
+        "topic": "Mensuration",
+        "question": "A solid cylinder has a total surface area of 462 cm². Its curved surface area is one-third of its total surface area. Find the volume of the cylinder. (Take π = 22/7)",
+        "options": {
+          "A": "539 cm³",
+          "B": "588 cm³",
+          "C": "616 cm³",
+          "D": "462 cm³"
+        },
+        "correct": "A",
+        "explanation": "CSA = 462/3 = 154 cm². TSA − CSA = 2πr² = 462 − 154 = 308, so πr² = 154 → (22/7)r² = 154 → r² = 49 → r = 7. From 2πrh = 154: 2 × (22/7) × 7 × h = 154 → 44h = 154 → h = 3.5. Volume = πr²h = 154 × 3.5 = 539 cm³."
+      },
+      {
+        "q": 18,
+        "topic": "Ratio and proportion",
+        "question": "A sum is distributed among A, B, C, and D in such a way that the ratio of the shares of A and B is 2:3, B and C is 4:5, and C and D is 6:7. If A's share is Rs. 960, what is the total sum?",
+        "options": {
+          "A": "Rs. 6800",
+          "B": "Rs. 6300",
+          "C": "Rs. 7200",
+          "D": "Rs. 6940"
+        },
+        "correct": "B",
+        "explanation": "A:B = 2:3 = 8:12. B:C = 4:5 = 12:15. So A:B:C = 8:12:15. Now C:D = 6:7, and C = 15 in the combined ratio, so scale C:D to 15:17.5, giving A:B:C:D = 8:12:15:17.5, or in whole numbers 16:24:30:35. A's share = 16x = 960 → x = 60. Total parts = 16+24+30+35 = 105. Total sum = 105 × 60 = Rs. 6300."
+      },
+      {
+        "q": 19,
+        "topic": "Time and work",
+        "question": "A cistern has 3 pipes A, B, and C. A and B can fill it in 3 hours and 4 hours respectively, while C can empty the completely filled cistern in 1 hour. If the pipes are opened in order at 3 pm, 4 pm, and 5 pm respectively, at what time will the cistern be empty?",
+        "options": {
+          "A": "7:45 pm",
+          "B": "6:15 pm",
+          "C": "8:10 pm",
+          "D": "7:12 pm"
+        },
+        "correct": "D",
+        "explanation": "Take total capacity = 12 units (LCM of 3, 4, 1). Efficiencies: A = +4, B = +3, C = −12 units/hour. From 3 pm to 4 pm, only A runs: filled = 4 units. From 4 pm to 5 pm, A and B run: filled = 4 + (4+3) = 11 units. After 5 pm, all three run together: net efficiency = 4+3−12 = −5 units/hour. Time to empty the remaining 11 units = 11/5 hours = 2 hours 12 minutes. So the cistern empties at 5 pm + 2h12m = 7:12 pm."
+      },
+      {
+        "q": 20,
+        "topic": "Trigonometry",
+        "question": "In a right-angled triangle ABC, right-angled at B, AB = 6 cm and BC = 8 cm. AD and CE are the medians drawn to sides BC and AB respectively. Find the value of AD² + CE².",
+        "options": {
+          "A": "125",
+          "B": "100",
+          "C": "150",
+          "D": "175"
+        },
+        "correct": "A",
+        "explanation": "Since D is the midpoint of BC, AD² = AB² + BD² = 6² + 4² = 36 + 16 = 52. Since E is the midpoint of AB, CE² = BC² + BE² = 8² + 3² = 64 + 9 = 73. Therefore AD² + CE² = 52 + 73 = 125. (This matches the general identity AD² + CE² = (5/4)AC², since AC² = 36+64=100 and (5/4)×100=125.)"
+      },
+      {
+        "q": 21,
+        "topic": "Trigonometry",
+        "question": "What is the remainder when 32³² is divided by 7?",
+        "options": {
+          "A": "1",
+          "B": "6",
+          "C": "4",
+          "D": "2"
+        },
+        "correct": "D",
+        "explanation": "32 ≡ 4 (mod 7), so we need 4³² (mod 7). Since 4³ = 64 ≡ 1 (mod 7), write 32 = 3×10 + 2, so 4³² = (4³)¹⁰ × 4² ≡ 1¹⁰ × 16 ≡ 16 ≡ 2 (mod 7)."
+      },
+      {
+        "q": 22,
+        "topic": "Percentage",
+        "question": "A bag contains 5 red, 4 green, and 3 black balls. If three balls are drawn at random, what is the probability that exactly two are of the same colour?",
+        "options": {
+          "A": "23/44",
+          "B": "29/44",
+          "C": "27/44",
+          "D": "31/44"
+        },
+        "correct": "B",
+        "explanation": "Total ways = ¹²C₃ = 220. Ways all 3 same colour = ⁵C₃ + ⁴C₃ + ³C₃ = 10 + 4 + 1 = 15. Ways all 3 different colours = 5×4×3 = 60. Ways exactly two of the same colour = 220 − 15 − 60 = 145. Probability = 145/220 = 29/44."
+      },
+      {
+        "q": 23,
+        "topic": "Trigonometry",
+        "question": "A and B start a joint business. A invests Rs. 16,000 for 8 months and B invests Rs. 12,000 for 12 months. Out of a total profit of Rs. 17,000, A claims a 10% allowance for managing the business. What is B's total share?",
+        "options": {
+          "A": "Rs. 7500",
+          "B": "Rs. 8100",
+          "C": "Rs. 8500",
+          "D": "Rs. 8000"
+        },
+        "correct": "B",
+        "explanation": "Management allowance = 10% of 17000 = Rs. 1700. Remaining profit to be divided = Rs. 15300. A's effective investment = 16000×8 = 128000; B's = 12000×12 = 144000. Ratio A:B = 128:144 = 8:9, total parts = 17. B's share of the remaining profit = (9/17) × 15300 = Rs. 8100."
+      },
+      {
+        "q": 24,
+        "topic": "Mensuration",
+        "question": "The base of a right prism is a regular hexagon of side 4 cm. If the height of the prism is 10 cm, find its volume.",
+        "options": {
+          "A": "180√3 cm³",
+          "B": "360√3 cm³",
+          "C": "240√3 cm³",
+          "D": "120√3 cm³"
+        },
+        "correct": "C",
+        "explanation": "Area of a regular hexagon of side a = 6 × (√3/4) × a² = 6 × (√3/4) × 16 = 24√3 cm². Volume = base area × height = 24√3 × 10 = 240√3 cm³."
+      },
+      {
+        "q": 25,
+        "topic": "Time and distance",
+        "question": "Two stations A and B are 110 km apart on a straight line. One train starts from A at 7 a.m. and travels towards B at 20 km/h. Another train starts from B at 8 a.m. and travels towards A at a speed of 25 km/h. At what time will they meet?",
+        "options": {
+          "A": "9:30 a.m.",
+          "B": "10:00 a.m.",
+          "C": "10:30 a.m.",
+          "D": "11:00 a.m."
+        },
+        "correct": "B",
+        "explanation": "By 8 a.m., the train from A has already covered 20 km, leaving 90 km between the trains. Their relative speed (moving towards each other) = 20 + 25 = 45 km/h. Time to meet = 90/45 = 2 hours after 8 a.m., i.e. at 10:00 a.m."
+      },
+      {
+        "q": 26,
+        "topic": "Trigonometry",
+        "question": "A trader mixes 26 kg of rice at Rs. 20 per kg with 30 kg of rice of another variety at Rs. 36 per kg and sells the mixture at Rs. 30 per kg. His profit percent is:",
+        "options": {
+          "A": "8%",
+          "B": "10%",
+          "C": "5%",
+          "D": "12%"
+        },
+        "correct": "C",
+        "explanation": "Total cost price = (26×20) + (30×36) = 520 + 1080 = Rs. 1600. Total selling price = (26+30) × 30 = Rs. 1680. Profit = 1680 − 1600 = Rs. 80. Profit % = (80/1600) × 100 = 5%."
+      },
+      {
+        "q": 27,
+        "topic": "Trigonometry",
+        "question": "Find the minimum value of 9 cos² θ + 16 sec² θ.",
+        "options": {
+          "A": "24",
+          "B": "25",
+          "C": "12",
+          "D": "16"
+        },
+        "correct": "B",
+        "explanation": "Let f(θ) = 9cos²θ + 16sec²θ. Since cos²θ ranges only over (0, 1], the AM-GM bound of 24 (achieved when 9cos²θ = 16sec²θ, requiring cos⁴θ = 16/9, impossible) cannot actually be attained. As sec²θ ≥ 1 with equality at θ = 0, and f is increasing in sec²θ over the valid range, the minimum occurs at cos θ = 1: f = 9(1) + 16(1) = 25."
+      },
+      {
+        "q": 28,
+        "topic": "Algebra",
+        "question": "If a + b + c = 0 (where a, b, c ≠ 0), what is the value of (a³ + b³ + c³) / (abc)?",
+        "options": {
+          "A": "-3",
+          "B": "3",
+          "C": "0",
+          "D": "1"
+        },
+        "correct": "B",
+        "explanation": "Whenever a + b + c = 0, the algebraic identity a³ + b³ + c³ − 3abc = (a+b+c)(a²+b²+c²−ab−bc−ca) gives a³+b³+c³ = 3abc. Substituting, (a³+b³+c³)/(abc) = 3abc/abc = 3."
+      },
+      {
+        "q": 29,
+        "topic": "Trigonometry",
+        "question": "The angle of elevation of a cloud from a point h metres above a lake is α and the angle of depression of its reflection in the lake is β. The height of the cloud is:",
+        "options": {
+          "A": "h(tan α + tan β) / (tan α − tan β)",
+          "B": "h(tan β + tan α) / (tan β − tan α)",
+          "C": "h tan β / (tan β − tan α)",
+          "D": "h(tan β − tan α) / (tan β + tan α)"
+        },
+        "correct": "B",
+        "explanation": "Using the standard trigonometric derivation (setting up equations for the cloud's height H above the lake and its reflection at depth H below the lake surface, both measured from a point h above the lake), the height of the cloud above the lake works out to H = h(tan β + tan α) / (tan β − tan α)."
+      },
+      {
+        "q": 30,
+        "topic": "Algebra",
+        "question": "A number when divided successively by 4 and 5 leaves remainders 1 and 4 respectively. When it is successively divided by 5 and 4, what will be the respective remainders?",
+        "options": {
+          "A": "4, 1",
+          "B": "2, 3",
+          "C": "1, 2",
+          "D": "3, 2"
+        },
+        "correct": "B",
+        "explanation": "Let the number be N. N = 4x + 1, and x = 5y + 4, so N = 4(5y+4) + 1 = 20y + 17. Taking y = 0, N = 17. Now divide 17 successively by 5 and then 4: 17 ÷ 5 gives quotient 3, remainder 2; then 3 ÷ 4 gives quotient 0, remainder 3. So the respective remainders are 2, 3."
+      }
+    ],
+    "Reasoning and General Intelligence": [
+      {
+        "q": 1,
+        "topic": "Coding and Decoding",
+        "question": "In a certain code language, 'P @ Q' means 'P is the father of Q', 'P # Q' means 'P is the mother of Q', and 'P $ Q' means 'P is the brother of Q'. How is A related to E in the expression 'A @ B # C $ D # E'?",
+        "options": {
+          "A": "Maternal grandfather",
+          "B": "Paternal grandfather",
+          "C": "Maternal uncle",
+          "D": "Maternal great-grandfather"
+        },
+        "correct": "D",
+        "explanation": "B is the mother of C. C is the brother of D, so C and D are siblings and B is their mother. D is the mother of E. A is the father of B. So A is the father of E's maternal grandmother (B), making A the maternal great-grandfather of E."
+      },
+      {
+        "q": 2,
+        "topic": "Logical Reasoning",
+        "question": "Statements: Only a few papers are books. No book is a pen. All pens are pencils.\nConclusions: I. Some papers are not pens. II. All books being pencils is a possibility.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Neither conclusion follows",
+          "C": "Both conclusions I and II follow",
+          "D": "Only conclusion II follows"
+        },
+        "correct": "C",
+        "explanation": "'Only a few papers are books' means some papers are books (and some are not). Since no book is a pen, the papers that are books cannot be pens, so 'Some papers are not pens' follows validly. Since the statements never say books cannot be pencils, and all pens (which exclude books) are pencils, it remains logically possible for all books to also be pencils, so possibility II holds. Both conclusions follow."
+      },
+      {
+        "q": 3,
+        "topic": "Series",
+        "question": "What number will replace the question mark in the series? 2, 10, 30, 68, 130, ?",
+        "options": {
+          "A": "228",
+          "B": "216",
+          "C": "210",
+          "D": "222"
+        },
+        "correct": "D",
+        "explanation": "The pattern follows the rule n³ + n. 1³+1=2, 2³+2=10, 3³+3=30, 4³+4=68, 5³+5=130. The next term is 6³+6 = 216+6 = 222."
+      },
+      {
+        "q": 4,
+        "topic": "Logical Reasoning",
+        "question": "Eight executives A, B, C, D, E, F, G, and H are sitting around a circular table facing the centre. A sits third to the right of F. C sits second to the left of A. B and E are immediate neighbours of each other, but neither is an immediate neighbour of A or F. D sits second to the right of H. Who sits opposite A?",
+        "options": {
+          "A": "G",
+          "B": "C",
+          "C": "D",
+          "D": "H"
+        },
+        "correct": "A",
+        "explanation": "Placing F and A three seats apart (A third to the right of F), then C two seats to the left of A fixes three positions. B and E, seated together but not adjacent to A or F, along with H and D (D second to the right of H) occupy four more seats, leaving exactly one seat for G — directly opposite A."
+      },
+      {
+        "q": 5,
+        "topic": "Logical Reasoning",
+        "question": "A mathematical operator '$' means 'divide', '@' means 'multiply', '#' means 'minus', and '%' means 'plus'. Evaluate the expression: 180 $ 12 @ 5 % 40 # 15.",
+        "options": {
+          "A": "115",
+          "B": "100",
+          "C": "105",
+          "D": "95"
+        },
+        "correct": "B",
+        "explanation": "Substituting the symbols: 180 ÷ 12 × 5 + 40 − 15. Following BODMAS: 180÷12 = 15; 15×5 = 75; 75+40 = 115; 115−15 = 100."
+      },
+      {
+        "q": 6,
+        "topic": "Coding and Decoding",
+        "question": "If in a certain code 'MACHINE' is written as '19-7-9-14-15-20-11', how will 'DANGER' be coded?",
+        "options": {
+          "A": "10-7-21-13-11-24",
+          "B": "10-7-20-13-11-24",
+          "C": "11-7-20-13-11-24",
+          "D": "10-7-20-14-11-24"
+        },
+        "correct": "B",
+        "explanation": "Each letter is coded as its positional value in the alphabet plus 6: M(13)+6=19, A(1)+6=7, C(3)+6=9, H(8)+6=14, I(9)+6=15, N(14)+6=20, E(5)+6=11 — matching the given code. Applying the same rule to DANGER: D(4)+6=10, A(1)+6=7, N(14)+6=20, G(7)+6=13, E(5)+6=11, R(18)+6=24. Code: 10-7-20-13-11-24."
+      },
+      {
+        "q": 7,
+        "topic": "Classification",
+        "question": "Three of the following four number pairs are alike in that the second number is obtained by squaring the first number and adding 1. Find the pair that does NOT follow this rule.",
+        "options": {
+          "A": "19-362",
+          "B": "17-290",
+          "C": "23-530",
+          "D": "13-172"
+        },
+        "correct": "D",
+        "explanation": "Check each pair against the rule x → x²+1: 19²+1 = 362 (matches); 17²+1 = 290 (matches); 23²+1 = 530 (matches); but 13²+1 = 170, not 172. So 13-172 is the odd one out."
+      },
+      {
+        "q": 8,
+        "topic": "Logical Reasoning",
+        "question": "A clock is set correctly at 8 a.m. The clock gains 10 minutes in 24 hours. What will be the true time when the clock indicates 1 p.m. on the following day?",
+        "options": {
+          "A": "12:48 p.m.",
+          "B": "12:50 p.m.",
+          "C": "12:52 p.m.",
+          "D": "12:55 p.m."
+        },
+        "correct": "A",
+        "explanation": "From 8 a.m. to 1 p.m. the next day is 29 hours of clock (false) time. In 24 true hours, the faulty clock shows 24 hours 10 minutes = 145/6 hours. So 145/6 false hours correspond to 24 true hours. For 29 false hours, true time elapsed = 29 × (24 × 6/145) = 29 × 144/145 = 28.8 hours = 28 hours 48 minutes. 8 a.m. + 28 hours 48 minutes = 12:48 p.m."
+      },
+      {
+        "q": 9,
+        "topic": "Logical Reasoning",
+        "question": "In a class of 40 students, A is 10th from the top and B is 15th from the bottom. C is exactly between them in rank. What is C's rank from the top?",
+        "options": {
+          "A": "19th",
+          "B": "17th",
+          "C": "20th",
+          "D": "18th"
+        },
+        "correct": "D",
+        "explanation": "A's rank from top = 10. B's rank from bottom = 15, so B's rank from top = 40 − 15 + 1 = 26. The students strictly between A and B (ranks 11 to 25) number 15. C, exactly midway between A and B, has rank = (10 + 26)/2 = 18th from the top."
+      },
+      {
+        "q": 10,
+        "topic": "Logical Reasoning",
+        "question": "Statement: 'Due to macroeconomic headwinds, Company X has laid off 15% of its workforce to optimize operational costs.'\nConclusions: I. Company X's revenue declined significantly this year. II. The laid-off employees were primarily underperformers.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Neither conclusion I nor II follows",
+          "C": "Both conclusions I and II follow",
+          "D": "Only conclusion II follows"
+        },
+        "correct": "B",
+        "explanation": "Macroeconomic headwinds do not necessarily mean revenue has already declined — the layoff could be a pre-emptive cost-cutting measure. The statement also gives no basis for judging the performance of the laid-off employees. Neither conclusion follows logically from the statement alone."
+      },
+      {
+        "q": 11,
+        "topic": "Spatial Reasoning",
+        "question": "Direction sense: P started walking towards North. After walking 15 m, he turns left and walks 10 m. He then turns left and walks 15 m. Finally, he turns right and walks 5 m. How far and in which direction is he from the starting point?",
+        "options": {
+          "A": "15 m West",
+          "B": "15 m East",
+          "C": "10 m East",
+          "D": "10 m West"
+        },
+        "correct": "A",
+        "explanation": "P walks 15 m North to (0, 15). He turns left (now facing West) and walks 10 m to (−10, 15). He turns left again (now facing South) and walks 15 m to (−10, 0). He turns right (now facing West) and walks 5 m to (−15, 0). His net displacement from the origin (0,0) is 15 m due West."
+      },
+      {
+        "q": 12,
+        "topic": "Logical Reasoning",
+        "question": "In a row of 50 students facing North, A is 14th from the left end and B is 21st from the right end. C sits exactly midway between A and B. What is C's position from the left end?",
+        "options": {
+          "A": "20th",
+          "B": "23rd",
+          "C": "21st",
+          "D": "22nd"
+        },
+        "correct": "D",
+        "explanation": "A is 14th from the left. B is 21st from the right, i.e. B's position from the left = 50 − 21 + 1 = 30th. The students between A and B (positions 15 to 29) number 15. C, exactly midway, is 8 positions to the right of A: 14 + 8 = 22nd from the left."
+      },
+      {
+        "q": 13,
+        "topic": "Non-Verbal Reasoning",
+        "question": "A rectangular paper is folded in half vertically, then in half horizontally, and then diagonally, giving a folded triangular stack of 8 layers. A hole is punched once through the entire folded stack. When the paper is fully unfolded, how many holes will appear?",
+        "options": {
+          "A": "2",
+          "B": "8",
+          "C": "4",
+          "D": "16"
+        },
+        "correct": "B",
+        "explanation": "Folding vertically doubles the layers to 2, folding horizontally doubles it again to 4, and the diagonal fold doubles it once more to 8 layers. Punching a single hole through all 8 layers creates 8 separate holes when the paper is completely unfolded."
+      },
+      {
+        "q": 14,
+        "topic": "Logical Reasoning",
+        "question": "How many triangles are there in a standard 5-pointed star (pentagram)?",
+        "options": {
+          "A": "12",
+          "B": "10",
+          "C": "15",
+          "D": "8"
+        },
+        "correct": "B",
+        "explanation": "A standard pentagram is formed by 5 small isosceles 'point' triangles at its tips, plus 5 larger triangles each spanning two points and the intersecting lines between them. Counting only these two natural sets of triangles gives 5 + 5 = 10 triangles."
+      },
+      {
+        "q": 15,
+        "topic": "Series",
+        "question": "Choose the term that will replace the question mark in the series: C4X, F9U, I16R, ?",
+        "options": {
+          "A": "L25P",
+          "B": "L27O",
+          "C": "L25O",
+          "D": "K25O"
+        },
+        "correct": "C",
+        "explanation": "First letters advance by 3: C, F, I, L. The numbers are consecutive perfect squares: 2²=4, 3²=9, 4²=16, 5²=25. The last letters regress by 3: X, U, R, O. Combining these gives the missing term L25O."
+      },
+      {
+        "q": 16,
+        "topic": "Logical Reasoning",
+        "question": "X introduces Y saying, 'He is the husband of the only granddaughter of my paternal grandfather.' Assuming X is male and has no cousins, how is Y related to X?",
+        "options": {
+          "A": "Son-in-law",
+          "B": "Brother-in-law",
+          "C": "Uncle",
+          "D": "Brother"
+        },
+        "correct": "B",
+        "explanation": "Since X has no cousins, every grandchild of X's paternal grandfather belongs to X's own immediate family. The 'only granddaughter' of that grandfather must therefore be X's sister. Y, the husband of X's sister, is X's brother-in-law."
+      },
+      {
+        "q": 17,
+        "topic": "Logical Reasoning",
+        "question": "If 23 * 16 = 184 and 35 * 12 = 210, what is the value of 41 * 14?",
+        "options": {
+          "A": "275",
+          "B": "294",
+          "C": "287",
+          "D": "280"
+        },
+        "correct": "C",
+        "explanation": "The pattern is (First number × Second number) ÷ 2. Check: (23×16)/2 = 368/2 = 184; (35×12)/2 = 420/2 = 210. Applying the same rule: (41×14)/2 = 574/2 = 287."
+      },
+      {
+        "q": 18,
+        "topic": "Classification",
+        "question": "Find the odd one out among the following pairs of numbers: 14-49, 16-64, 20-100, 24-121.",
+        "options": {
+          "A": "16-64",
+          "B": "20-100",
+          "C": "24-121",
+          "D": "14-49"
+        },
+        "correct": "C",
+        "explanation": "The relation is n : (n/2)². For 14: (7)² = 49 ✓. For 16: (8)² = 64 ✓. For 20: (10)² = 100 ✓. For 24: (12)² = 144, not 121, so 24-121 breaks the pattern."
+      },
+      {
+        "q": 19,
+        "topic": "Logical Reasoning",
+        "question": "Which of the following Venn diagrams best represents the relationship between: Doctors, Men, and Fathers?",
+        "options": {
+          "A": "Three non-intersecting circles.",
+          "B": "A circle inside another circle, both intersecting a third circle.",
+          "C": "Three intersecting circles.",
+          "D": "Two disjoint circles intersecting a third circle."
+        },
+        "correct": "B",
+        "explanation": "All Fathers are Men, so the Fathers circle sits entirely inside the Men circle. Doctors can be men, fathers, or women, so the Doctors circle overlaps both the Men circle and, within it, the Fathers circle, without being fully contained in either."
+      },
+      {
+        "q": 20,
+        "topic": "Logical Reasoning",
+        "question": "Statements: All laptops are computers. Some computers are tablets. No tablet is a smartphone.\nConclusions: I. Some laptops are tablets. II. No smartphone is a computer.",
+        "options": {
+          "A": "Neither I nor II follows",
+          "B": "Only I follows",
+          "C": "Both I and II follow",
+          "D": "Only II follows"
+        },
+        "correct": "A",
+        "explanation": "Laptops are entirely inside computers, and tablets only partially overlap computers — there is no guarantee that overlap includes any laptops, so conclusion I does not necessarily follow. Smartphones are excluded only from tablets, not from computers in general, so conclusion II also does not follow. Neither conclusion follows."
+      },
+      {
+        "q": 21,
+        "topic": "Logical Reasoning",
+        "question": "Data Sufficiency: What is the two-digit number?\nI. The sum of the digits is 8.\nII. The difference between the number and the number formed by reversing its digits is 18.",
+        "options": {
+          "A": "Only statement I is sufficient",
+          "B": "Only statement II is sufficient",
+          "C": "Both statements together are sufficient",
+          "D": "Neither statement I nor II is sufficient"
+        },
+        "correct": "D",
+        "explanation": "From statement II: for a number with digits x (tens) and y (units), the difference is 9(x−y) = ±18, so x−y = 2 or y−x = 2. Combined with statement I (x+y=8): if x−y=2, then x=5, y=3, giving 53; if y−x=2, then y=5, x=3, giving 35. Both 53 and 35 satisfy both statements together, so even combined, the data is insufficient to determine a unique number."
+      },
+      {
+        "q": 22,
+        "topic": "Coding and Decoding",
+        "question": "In a certain code, '786' means 'study very hard', '958' means 'hard work pays', and '645' means 'study and work'. Which digit stands for 'very'?",
+        "options": {
+          "A": "9",
+          "B": "6",
+          "C": "8",
+          "D": "7"
+        },
+        "correct": "D",
+        "explanation": "'786' and '958' share the word 'hard' and the digit '8', so hard = 8. '786' and '645' share the word 'study' and the digit '6', so study = 6. In '786', the remaining digit 7 must therefore stand for 'very'."
+      },
+      {
+        "q": 23,
+        "topic": "Logical Reasoning",
+        "question": "Select the related word: Amnesia : Memory :: Insomnia : ?",
+        "options": {
+          "A": "Sleep",
+          "B": "Hunger",
+          "C": "Speech",
+          "D": "Sight"
+        },
+        "correct": "A",
+        "explanation": "Amnesia is the loss or impairment of memory. On the same pattern, Insomnia is the inability to sleep, so the related word is 'Sleep'."
+      },
+      {
+        "q": 24,
+        "topic": "Logical Reasoning",
+        "question": "In an examination, Rahul got the 11th rank and he was 47th from the bottom among those who passed. 3 students could not appear for the exam and 1 failed. What is the total number of students in the class?",
+        "options": {
+          "A": "62",
+          "B": "59",
+          "C": "60",
+          "D": "61"
+        },
+        "correct": "D",
+        "explanation": "Total students who passed = (rank from top) + (rank from bottom) − 1 = 11 + 47 − 1 = 57. Total students in the class = passed + absentees + failed = 57 + 3 + 1 = 61."
+      },
+      {
+        "q": 25,
+        "topic": "Logical Reasoning",
+        "question": "Six people A, B, C, D, E, F are sitting in a row facing north. B is at the left end. C is to the immediate left of D. E is a neighbour of both A and B. F is second to the left of D. Who sits at the right end?",
+        "options": {
+          "A": "D",
+          "B": "A",
+          "C": "C",
+          "D": "F"
+        },
+        "correct": "A",
+        "explanation": "Since F is second to the left of D and C is immediately to the left of D, the block F _ C D occupies three consecutive seats with F, C, D in that order. Since B is fixed at the left end (seat 1) and E must be next to B, E is at seat 2; E must also be next to A, so A is at seat 3. This leaves seats 4, 5, 6 for F, C, D respectively. The final order is B, E, A, F, C, D — so D sits at the right end."
+      },
+      {
+        "q": 26,
+        "topic": "Classification",
+        "question": "A die is thrown three times and its three different positions are given. Number 1 is opposite to 6, 2 is opposite to 5, 3 is opposite to 4. What will be the sum of the numbers on the bottom faces if the top faces show 4, 1, and 2 respectively?",
+        "options": {
+          "A": "12",
+          "B": "14",
+          "C": "15",
+          "D": "11"
+        },
+        "correct": "B",
+        "explanation": "The top faces shown are 4, 1, and 2. Their respective opposite (bottom) faces are 3, 6, and 5. The sum of the bottom faces = 3 + 6 + 5 = 14."
+      },
+      {
+        "q": 27,
+        "topic": "Logical Reasoning",
+        "question": "Select the word which cannot be formed using the letters of the word 'COMPREHENSION'.",
+        "options": {
+          "A": "COMPRISE",
+          "B": "ONION",
+          "C": "PENSION",
+          "D": "PRONOUN"
+        },
+        "correct": "D",
+        "explanation": "The word 'COMPREHENSION' contains no letter 'U'. Since 'PRONOUN' requires a 'U', it cannot be formed from the given letters."
+      },
+      {
+        "q": 28,
+        "topic": "Logical Reasoning",
+        "question": "Find the missing number in the matrix pattern: Row 1: 3, 4, 25. Row 2: 5, 2, 29. Row 3: 7, 3, ?",
+        "options": {
+          "A": "64",
+          "B": "49",
+          "C": "58",
+          "D": "52"
+        },
+        "correct": "C",
+        "explanation": "The pattern is (First number)² + (Second number)² = Third number. Check: 3²+4² = 9+16 = 25; 5²+2² = 25+4 = 29. Applying the same rule to row 3: 7²+3² = 49+9 = 58."
+      },
+      {
+        "q": 29,
+        "topic": "Logical Reasoning",
+        "question": "A clock strikes once at 1 o'clock, twice at 2 o'clock, thrice at 3 o'clock, and so on. How many times will it strike in 24 hours?",
+        "options": {
+          "A": "156",
+          "B": "144",
+          "C": "240",
+          "D": "78"
+        },
+        "correct": "A",
+        "explanation": "In 12 hours, the total number of strikes = 1+2+3+...+12 = 12×13/2 = 78. Over 24 hours (two full 12-hour cycles), the clock strikes 78 × 2 = 156 times."
+      },
+      {
+        "q": 30,
+        "topic": "Logical Reasoning",
+        "question": "Arrange the following words in a logical sequence: 1. Yarn, 2. Plant, 3. Shirt, 4. Cotton, 5. Cloth.",
+        "options": {
+          "A": "2, 4, 1, 5, 3",
+          "B": "2, 1, 4, 5, 3",
+          "C": "4, 2, 1, 5, 3",
+          "D": "2, 4, 5, 1, 3"
+        },
+        "correct": "A",
+        "explanation": "The logical progression of manufacturing a shirt is: a cotton Plant (2) produces raw Cotton (4), which is spun into Yarn (1), woven into Cloth (5), and finally stitched into a Shirt (3)."
+      }
+    ],
+    "English Language and Comprehension": [
+      {
+        "q": 1,
+        "topic": "Reading Comprehension",
+        "question": "RC Passage 1: The macroeconomic landscape is currently navigating a precarious transition, shifting from an era of quantitative easing to a tightened monetary regime aimed at combating persistent inflation. Central banks face a delicate balancing act: aggressively hiking policy rates to anchor inflation expectations, while avoiding plunging the economy into a deep recession — a scenario often referred to as a 'hard landing'. The Phillips curve, which traditionally posited an inverse relationship between inflation and unemployment, appears distorted by supply-side shocks and shifting labor market demographics. Furthermore, the persistent inversion of the yield curve historically presages economic contraction. Policymakers must also navigate the fiscal dominance trap, where high sovereign debt levels restrict the efficacy of monetary interventions.\n\nQuestion: According to the passage, what constitutes a 'hard landing' in the current macroeconomic context?",
+        "options": {
+          "A": "A scenario where inflation expectations remain unanchored.",
+          "B": "The inability of central banks to influence employment rates.",
+          "C": "A prolonged period of quantitative easing.",
+          "D": "Aggressive rate hikes leading to a deep economic recession."
+        },
+        "correct": "D",
+        "explanation": "A 'hard landing' is described in the passage as the risk of central banks plunging the economy into a deep recession while combating inflation through rate hikes."
+      },
+      {
+        "q": 2,
+        "topic": "Reading Comprehension",
+        "question": "RC Passage 1: The macroeconomic landscape is currently navigating a precarious transition, shifting from an era of quantitative easing to a tightened monetary regime aimed at combating persistent inflation. Central banks face a delicate balancing act: aggressively hiking policy rates to anchor inflation expectations, while avoiding plunging the economy into a deep recession — a scenario often referred to as a 'hard landing'. The Phillips curve, which traditionally posited an inverse relationship between inflation and unemployment, appears distorted by supply-side shocks and shifting labor market demographics. Furthermore, the persistent inversion of the yield curve historically presages economic contraction. Policymakers must also navigate the fiscal dominance trap, where high sovereign debt levels restrict the efficacy of monetary interventions.\n\nQuestion: Why is the traditional interpretation of the Phillips curve currently considered distorted?",
+        "options": {
+          "A": "Because inflation and unemployment are no longer inverse in any capacity.",
+          "B": "Because sovereign debt levels have reached unprecedented highs.",
+          "C": "Due to supply-side shocks and shifting labor market demographics.",
+          "D": "Due to the persistent inversion of the yield curve."
+        },
+        "correct": "C",
+        "explanation": "The passage explicitly attributes the distortion of the Phillips curve to supply-side shocks and shifting labour market demographics."
+      },
+      {
+        "q": 3,
+        "topic": "Reading Comprehension",
+        "question": "RC Passage 1: The macroeconomic landscape is currently navigating a precarious transition, shifting from an era of quantitative easing to a tightened monetary regime aimed at combating persistent inflation. Central banks face a delicate balancing act: aggressively hiking policy rates to anchor inflation expectations, while avoiding plunging the economy into a deep recession — a scenario often referred to as a 'hard landing'. The Phillips curve, which traditionally posited an inverse relationship between inflation and unemployment, appears distorted by supply-side shocks and shifting labor market demographics. Furthermore, the persistent inversion of the yield curve historically presages economic contraction. Policymakers must also navigate the fiscal dominance trap, where high sovereign debt levels restrict the efficacy of monetary interventions.\n\nQuestion: What does a persistent inversion of the yield curve historically signify according to the author?",
+        "options": {
+          "A": "A reduction in sovereign debt levels.",
+          "B": "An effective containment of inflation expectations.",
+          "C": "An impending economic contraction.",
+          "D": "A successful transition from quantitative easing."
+        },
+        "correct": "C",
+        "explanation": "The passage states that a persistent inversion of the yield curve historically presages (foreshadows) an economic contraction."
+      },
+      {
+        "q": 4,
+        "topic": "Reading Comprehension",
+        "question": "RC Passage 1: The macroeconomic landscape is currently navigating a precarious transition, shifting from an era of quantitative easing to a tightened monetary regime aimed at combating persistent inflation. Central banks face a delicate balancing act: aggressively hiking policy rates to anchor inflation expectations, while avoiding plunging the economy into a deep recession — a scenario often referred to as a 'hard landing'. The Phillips curve, which traditionally posited an inverse relationship between inflation and unemployment, appears distorted by supply-side shocks and shifting labor market demographics. Furthermore, the persistent inversion of the yield curve historically presages economic contraction. Policymakers must also navigate the fiscal dominance trap, where high sovereign debt levels restrict the efficacy of monetary interventions.\n\nQuestion: Which of the following is closest in meaning to the word 'presages' as used in the passage?",
+        "options": {
+          "A": "Exacerbates",
+          "B": "Contradicts",
+          "C": "Foreshadows",
+          "D": "Mitigates"
+        },
+        "correct": "C",
+        "explanation": "'Presages' means to be a sign or warning that something is going to happen, which aligns closely with 'foreshadows'."
+      },
+      {
+        "q": 5,
+        "topic": "Reading Comprehension",
+        "question": "RC Passage 1: The macroeconomic landscape is currently navigating a precarious transition, shifting from an era of quantitative easing to a tightened monetary regime aimed at combating persistent inflation. Central banks face a delicate balancing act: aggressively hiking policy rates to anchor inflation expectations, while avoiding plunging the economy into a deep recession — a scenario often referred to as a 'hard landing'. The Phillips curve, which traditionally posited an inverse relationship between inflation and unemployment, appears distorted by supply-side shocks and shifting labor market demographics. Furthermore, the persistent inversion of the yield curve historically presages economic contraction. Policymakers must also navigate the fiscal dominance trap, where high sovereign debt levels restrict the efficacy of monetary interventions.\n\nQuestion: What restricts the efficacy of monetary interventions in a 'fiscal dominance trap'?",
+        "options": {
+          "A": "High sovereign debt levels.",
+          "B": "Aggressive policy rate hikes.",
+          "C": "Distorted supply-side shocks.",
+          "D": "A tightened monetary regime."
+        },
+        "correct": "A",
+        "explanation": "The passage notes that in a fiscal dominance trap, high sovereign debt levels restrict the effectiveness of monetary interventions."
+      },
+      {
+        "q": 6,
+        "topic": "Reading Comprehension",
+        "question": "RC Passage 2: The rapid deployment of Generative AI has ignited profound ethical debates, transcending mere technological disruption to challenge the very nature of human creativity and intellectual property. When algorithms are trained on vast, uncredited corpora of human-generated art and literature, the resulting outputs blur the line between synthesis and plagiarism. Critics argue that this paradigm commodifies human ingenuity, reducing nuanced artistic expression to statistical probabilities. Conversely, proponents view these tools as democratizing creation, lowering the barrier to entry for non-experts. The legal frameworks governing copyright are woefully anachronistic, struggling to define authorship when the 'creator' is a neural network. This ontological crisis requires not just legal remediation, but a philosophical consensus on the intrinsic value of the human creative process.\n\nQuestion: What is the primary concern critics have regarding Generative AI trained on human-generated corpora?",
+        "options": {
+          "A": "It blurs the line between synthesis and plagiarism, commodifying human ingenuity.",
+          "B": "It makes artistic expression too difficult for non-experts to understand.",
+          "C": "It completely replaces the need for human authors and artists.",
+          "D": "It violates anachronistic copyright laws intentionally."
+        },
+        "correct": "A",
+        "explanation": "Critics' central concern, as stated in the passage, is that such AI blurs the line between synthesis and plagiarism and reduces artistic expression to statistical probabilities, commodifying human ingenuity."
+      },
+      {
+        "q": 7,
+        "topic": "Reading Comprehension",
+        "question": "RC Passage 2: The rapid deployment of Generative AI has ignited profound ethical debates, transcending mere technological disruption to challenge the very nature of human creativity and intellectual property. When algorithms are trained on vast, uncredited corpora of human-generated art and literature, the resulting outputs blur the line between synthesis and plagiarism. Critics argue that this paradigm commodifies human ingenuity, reducing nuanced artistic expression to statistical probabilities. Conversely, proponents view these tools as democratizing creation, lowering the barrier to entry for non-experts. The legal frameworks governing copyright are woefully anachronistic, struggling to define authorship when the 'creator' is a neural network. This ontological crisis requires not just legal remediation, but a philosophical consensus on the intrinsic value of the human creative process.\n\nQuestion: How do proponents of Generative AI view its impact on the creative field?",
+        "options": {
+          "A": "As a mechanism to increase the monetary value of human art.",
+          "B": "As a means to legally bypass restrictive copyright frameworks.",
+          "C": "As a purely statistical approach to artistic expression.",
+          "D": "As a tool that democratizes creation and lowers barriers for non-experts."
+        },
+        "correct": "D",
+        "explanation": "The passage states that proponents view these tools as democratising creation and lowering the barrier to entry for non-experts."
+      },
+      {
+        "q": 8,
+        "topic": "Reading Comprehension",
+        "question": "RC Passage 2: The rapid deployment of Generative AI has ignited profound ethical debates, transcending mere technological disruption to challenge the very nature of human creativity and intellectual property. When algorithms are trained on vast, uncredited corpora of human-generated art and literature, the resulting outputs blur the line between synthesis and plagiarism. Critics argue that this paradigm commodifies human ingenuity, reducing nuanced artistic expression to statistical probabilities. Conversely, proponents view these tools as democratizing creation, lowering the barrier to entry for non-experts. The legal frameworks governing copyright are woefully anachronistic, struggling to define authorship when the 'creator' is a neural network. This ontological crisis requires not just legal remediation, but a philosophical consensus on the intrinsic value of the human creative process.\n\nQuestion: Why does the author describe the current legal frameworks as 'anachronistic'?",
+        "options": {
+          "A": "Because they were created exclusively by critics of artificial intelligence.",
+          "B": "Because they deliberately ignore the rights of AI algorithms.",
+          "C": "Because they offer too much protection to statistical probabilities.",
+          "D": "Because they are outdated and struggle to define authorship involving neural networks."
+        },
+        "correct": "D",
+        "explanation": "'Anachronistic' means outdated or belonging to an earlier period. The passage notes that the legal frameworks struggle to define authorship when the 'creator' is a neural network."
+      },
+      {
+        "q": 9,
+        "topic": "Reading Comprehension",
+        "question": "RC Passage 2: The rapid deployment of Generative AI has ignited profound ethical debates, transcending mere technological disruption to challenge the very nature of human creativity and intellectual property. When algorithms are trained on vast, uncredited corpora of human-generated art and literature, the resulting outputs blur the line between synthesis and plagiarism. Critics argue that this paradigm commodifies human ingenuity, reducing nuanced artistic expression to statistical probabilities. Conversely, proponents view these tools as democratizing creation, lowering the barrier to entry for non-experts. The legal frameworks governing copyright are woefully anachronistic, struggling to define authorship when the 'creator' is a neural network. This ontological crisis requires not just legal remediation, but a philosophical consensus on the intrinsic value of the human creative process.\n\nQuestion: What is the author's ultimate conclusion regarding the crisis created by Generative AI?",
+        "options": {
+          "A": "It is a temporary issue that will resolve as algorithms improve.",
+          "B": "It can only be solved by halting the development of neural networks.",
+          "C": "It requires a complete rejection of democratized artistic tools.",
+          "D": "It requires both legal updates and a philosophical consensus on human creativity."
+        },
+        "correct": "D",
+        "explanation": "The passage concludes that the crisis requires not just legal remediation but also a philosophical consensus on the intrinsic value of the human creative process."
+      },
+      {
+        "q": 10,
+        "topic": "Reading Comprehension",
+        "question": "RC Passage 2: The rapid deployment of Generative AI has ignited profound ethical debates, transcending mere technological disruption to challenge the very nature of human creativity and intellectual property. When algorithms are trained on vast, uncredited corpora of human-generated art and literature, the resulting outputs blur the line between synthesis and plagiarism. Critics argue that this paradigm commodifies human ingenuity, reducing nuanced artistic expression to statistical probabilities. Conversely, proponents view these tools as democratizing creation, lowering the barrier to entry for non-experts. The legal frameworks governing copyright are woefully anachronistic, struggling to define authorship when the 'creator' is a neural network. This ontological crisis requires not just legal remediation, but a philosophical consensus on the intrinsic value of the human creative process.\n\nQuestion: Which word from the passage means 'a standard, perspective, or set of ideas'?",
+        "options": {
+          "A": "Paradigm",
+          "B": "Synthesis",
+          "C": "Corpora",
+          "D": "Remediation"
+        },
+        "correct": "A",
+        "explanation": "A 'paradigm' refers to a typical pattern, model, or set of ideas — the passage uses the term in describing how critics view the commodification of creativity."
+      },
+      {
+        "q": 11,
+        "topic": "Cloze Test",
+        "question": "Cloze Test: The political landscape of the nation was characterized by extreme polarization and (11) ___. The leader's speeches, filled with (12) ___ rhetoric, only served to deepen the societal fissures rather than heal them. Despite the diplomatic efforts of a few moderates, the majority remained (13) ___, refusing to compromise on even minor policy details. This relentless obstinacy inevitably led to legislative (14) ___, paralyzing the government's ability to respond to a looming economic crisis. Ultimately, the citizenry grew disillusioned, viewing the political elite as hopelessly self-serving and entirely (15) ___ to the struggles of the working class.\n\nSelect the appropriate word for blank (11).",
+        "options": {
+          "A": "egalitarianism",
+          "B": "partisanship",
+          "C": "magnanimity",
+          "D": "cohesion"
+        },
+        "correct": "B",
+        "explanation": "The context requires a negative word denoting division, paired with 'extreme polarization'. 'Partisanship' (excessive bias toward one's own group or cause) fits the sense correctly."
+      },
+      {
+        "q": 12,
+        "topic": "Cloze Test",
+        "question": "Cloze Test: The political landscape of the nation was characterized by extreme polarization and (11) ___. The leader's speeches, filled with (12) ___ rhetoric, only served to deepen the societal fissures rather than heal them. Despite the diplomatic efforts of a few moderates, the majority remained (13) ___, refusing to compromise on even minor policy details. This relentless obstinacy inevitably led to legislative (14) ___, paralyzing the government's ability to respond to a looming economic crisis. Ultimately, the citizenry grew disillusioned, viewing the political elite as hopelessly self-serving and entirely (15) ___ to the struggles of the working class.\n\nSelect the appropriate word for blank (12).",
+        "options": {
+          "A": "soporific",
+          "B": "conciliatory",
+          "C": "incendiary",
+          "D": "insipid"
+        },
+        "correct": "C",
+        "explanation": "Since the speeches deepened divisions rather than healing them, the blank needs a word meaning inflammatory or conflict-provoking — 'incendiary' fits best."
+      },
+      {
+        "q": 13,
+        "topic": "Cloze Test",
+        "question": "Cloze Test: The political landscape of the nation was characterized by extreme polarization and (11) ___. The leader's speeches, filled with (12) ___ rhetoric, only served to deepen the societal fissures rather than heal them. Despite the diplomatic efforts of a few moderates, the majority remained (13) ___, refusing to compromise on even minor policy details. This relentless obstinacy inevitably led to legislative (14) ___, paralyzing the government's ability to respond to a looming economic crisis. Ultimately, the citizenry grew disillusioned, viewing the political elite as hopelessly self-serving and entirely (15) ___ to the struggles of the working class.\n\nSelect the appropriate word for blank (13).",
+        "options": {
+          "A": "pliant",
+          "B": "obsequious",
+          "C": "intransigent",
+          "D": "amenable"
+        },
+        "correct": "C",
+        "explanation": "The sentence describes a refusal to compromise, which is precisely the meaning of 'intransigent' (unwilling to change one's views)."
+      },
+      {
+        "q": 14,
+        "topic": "Cloze Test",
+        "question": "Cloze Test: The political landscape of the nation was characterized by extreme polarization and (11) ___. The leader's speeches, filled with (12) ___ rhetoric, only served to deepen the societal fissures rather than heal them. Despite the diplomatic efforts of a few moderates, the majority remained (13) ___, refusing to compromise on even minor policy details. This relentless obstinacy inevitably led to legislative (14) ___, paralyzing the government's ability to respond to a looming economic crisis. Ultimately, the citizenry grew disillusioned, viewing the political elite as hopelessly self-serving and entirely (15) ___ to the struggles of the working class.\n\nSelect the appropriate word for blank (14).",
+        "options": {
+          "A": "expedition",
+          "B": "synergy",
+          "C": "fecundity",
+          "D": "gridlock"
+        },
+        "correct": "D",
+        "explanation": "Refusal to compromise paralyzing the government describes legislative 'gridlock' — a situation where no progress can be made."
+      },
+      {
+        "q": 15,
+        "topic": "Cloze Test",
+        "question": "Cloze Test: The political landscape of the nation was characterized by extreme polarization and (11) ___. The leader's speeches, filled with (12) ___ rhetoric, only served to deepen the societal fissures rather than heal them. Despite the diplomatic efforts of a few moderates, the majority remained (13) ___, refusing to compromise on even minor policy details. This relentless obstinacy inevitably led to legislative (14) ___, paralyzing the government's ability to respond to a looming economic crisis. Ultimately, the citizenry grew disillusioned, viewing the political elite as hopelessly self-serving and entirely (15) ___ to the struggles of the working class.\n\nSelect the appropriate word for blank (15).",
+        "options": {
+          "A": "beholden",
+          "B": "sympathetic",
+          "C": "indifferent",
+          "D": "cognizant"
+        },
+        "correct": "C",
+        "explanation": "The citizens viewed the elite as ignoring their struggles, so the blank requires a word meaning unconcerned — 'indifferent' fits correctly."
+      },
+      {
+        "q": 16,
+        "topic": "Sentence Arrangement",
+        "question": "Para Jumble:\nP. Notwithstanding this immense potential, nuclear fusion has remained frustratingly elusive due to extreme engineering challenges.\nQ. Nuclear fusion involves replicating the processes that power the sun, theoretically providing boundless clean energy.\nR. Current reactors must achieve temperatures exceeding 100 million degrees Celsius, requiring advanced magnetic confinement.\nS. Consequently, despite decades of research, a commercially viable fusion power plant is still considered decades away.",
+        "options": {
+          "A": "Q R P S",
+          "B": "Q P R S",
+          "C": "P Q R S",
+          "D": "R S P Q"
+        },
+        "correct": "B",
+        "explanation": "Q introduces the topic of nuclear fusion and its potential. P contrasts this potential with the engineering challenges ('Notwithstanding this...'). R specifies the extreme technical challenge (100 million degrees). S provides the concluding consequence ('Consequently...'). The correct order is Q P R S."
+      },
+      {
+        "q": 17,
+        "topic": "Sentence Arrangement",
+        "question": "Para Jumble:\nP. The phenomenon of quantum entanglement suggests that particles can instantaneously affect one another regardless of distance.\nQ. This apparent violation of the speed of light baffled early physicists, including Albert Einstein, who famously called it 'spooky action at a distance.'\nR. However, modern experiments have repeatedly validated entanglement, proving it is a fundamental feature of reality.\nS. Today, this once-controversial property forms the cornerstone of emerging quantum cryptography systems.",
+        "options": {
+          "A": "P Q R S",
+          "B": "Q P R S",
+          "C": "P R Q S",
+          "D": "S R Q P"
+        },
+        "correct": "A",
+        "explanation": "P defines the phenomenon of entanglement. Q explains the historical reaction (Einstein's scepticism). R describes the modern validation ('However...'). S details its current application ('Today...'). The correct order is P Q R S."
+      },
+      {
+        "q": 18,
+        "topic": "Sentence Arrangement",
+        "question": "Para Jumble:\nP. Antibiotic resistance is rapidly emerging as one of the most critical public health threats of the modern era.\nQ. This crisis is largely driven by the systemic overuse and misuse of antibiotics in both human medicine and agriculture.\nR. As a result, previously treatable infections are becoming increasingly lethal, placing a massive burden on global healthcare systems.\nS. To avert a post-antibiotic era, governments must strictly regulate prescription practices and incentivize the development of novel drugs.",
+        "options": {
+          "A": "Q P R S",
+          "B": "P Q R S",
+          "C": "P R Q S",
+          "D": "R S Q P"
+        },
+        "correct": "B",
+        "explanation": "P introduces the threat of antibiotic resistance. Q explains its root cause (overuse and misuse). R explains the resulting consequence (lethal infections). S proposes the necessary solution ('To avert...'). The correct order is P Q R S."
+      },
+      {
+        "q": 19,
+        "topic": "Sentence Arrangement",
+        "question": "Para Jumble:\nP. Epigenetics studies how environmental factors and behaviors can alter the way our genes work without changing the underlying DNA sequence.\nQ. For example, severe trauma or poor diet can attach chemical tags to genes, effectively turning them 'on' or 'off'.\nR. Interestingly, research indicates that these epigenetic modifications can sometimes be inherited by subsequent generations.\nS. This challenges the traditional Darwinian view of evolution, suggesting our lived experiences might directly shape our descendants' biology.",
+        "options": {
+          "A": "P Q R S",
+          "B": "S R Q P",
+          "C": "Q P R S",
+          "D": "P R Q S"
+        },
+        "correct": "A",
+        "explanation": "P defines epigenetics. Q gives a concrete example. R introduces the surprising finding about inheritance. S concludes with the broader implication for evolutionary theory. The correct order is P Q R S."
+      },
+      {
+        "q": 20,
+        "topic": "Sentence Arrangement",
+        "question": "Para Jumble:\nP. Historically, fiat currencies were backed by physical commodities, ensuring an intrinsic baseline value.\nQ. However, the abandonment of the gold standard decoupled money from tangible assets, relying entirely on sovereign trust.\nR. This transition allowed central banks greater flexibility to manage economic crises through aggressive monetary expansion.\nS. Critics warn, however, that unchecked money printing inevitably leads to hyperinflation, eroding the purchasing power of the working class.",
+        "options": {
+          "A": "P Q R S",
+          "B": "Q P R S",
+          "C": "R S P Q",
+          "D": "P R Q S"
+        },
+        "correct": "A",
+        "explanation": "P establishes the historical context of commodity-backed currency. Q explains the shift away from the gold standard. R details the immediate benefit of this shift. S presents the contrasting risk (hyperinflation). The correct order is P Q R S."
+      },
+      {
+        "q": 21,
+        "topic": "Voice and Narration",
+        "question": "Active/Passive: It is time to ring the bell.",
+        "options": {
+          "A": "It is time the bell rings.",
+          "B": "It is being time to ring the bell.",
+          "C": "It is time that the bell is ringing.",
+          "D": "It is time for the bell to be rung."
+        },
+        "correct": "D",
+        "explanation": "The passive voice structure for 'It is time to + V1 + Object' is 'It is time for + Object + to be + V3'. Hence, 'It is time for the bell to be rung.'"
+      },
+      {
+        "q": 22,
+        "topic": "Voice and Narration",
+        "question": "Active/Passive: The committee is looking into the matter.",
+        "options": {
+          "A": "The matter was being looked into by the committee.",
+          "B": "The matter is being looked into by the committee.",
+          "C": "The matter is being looked by the committee.",
+          "D": "The matter has been looked into by the committee."
+        },
+        "correct": "B",
+        "explanation": "The present continuous passive requires 'is being + V3'. The preposition 'into' (part of the phrasal verb 'look into') must be retained in the passive construction."
+      },
+      {
+        "q": 23,
+        "topic": "Voice and Narration",
+        "question": "Active/Passive: One must endure what one cannot cure.",
+        "options": {
+          "A": "What could not be cured must be endured.",
+          "B": "What cannot be cured must have been endured.",
+          "C": "What one cannot cure must endured.",
+          "D": "What cannot be cured must be endured."
+        },
+        "correct": "D",
+        "explanation": "In passive voice, the generic subject 'one' is dropped. 'Cannot cure' becomes 'cannot be cured', and 'must endure' becomes 'must be endured', giving: 'What cannot be cured must be endured.'"
+      },
+      {
+        "q": 24,
+        "topic": "Grammar",
+        "question": "Direct/Indirect: He said to me, 'May you live long and prosper!'",
+        "options": {
+          "A": "He prayed that I might live long and prosper.",
+          "B": "He wished that he might live long and prosper.",
+          "C": "He said that I may live long and prosper.",
+          "D": "He asked me to live long and prosper."
+        },
+        "correct": "A",
+        "explanation": "For optative sentences expressing a wish or blessing, 'said to' changes to 'prayed' (or 'wished'), the pronoun 'you' changes to 'I' (referring to the listener), and 'may' changes to 'might'."
+      },
+      {
+        "q": 25,
+        "topic": "Voice and Narration",
+        "question": "Direct/Indirect: 'Let us go for a walk in the moonlight,' she said.",
+        "options": {
+          "A": "She suggested to go for a walk in the moonlight.",
+          "B": "She ordered to go for a walk in the moonlight.",
+          "C": "She proposed that they should go for a walk in the moonlight.",
+          "D": "She asked that we should go for a walk."
+        },
+        "correct": "C",
+        "explanation": "'Let us' indicating a proposal changes to 'proposed/suggested that they/we should...' in indirect speech, giving option C. Option A is grammatically incorrect because 'suggest' cannot be followed by a to-infinitive ('suggested to go' is a common error; it should be 'suggested going' or 'suggested that... should go'). Option B misuses 'ordered', which implies a command, not a proposal. Option D incorrectly keeps 'we' instead of shifting the pronoun to 'they' and uses 'asked', which does not fit a proposal. Only option C is a fully correct and unambiguous transformation."
+      },
+      {
+        "q": 26,
+        "topic": "Grammar",
+        "question": "Direct/Indirect: The commander said to the soldiers, 'Stand at ease.'",
+        "options": {
+          "A": "The commander told the soldiers that they stand at ease.",
+          "B": "The commander commanded the soldiers to stand at ease.",
+          "C": "The commander ordered the soldiers that stand at ease.",
+          "D": "The commander requested the soldiers to stand at ease."
+        },
+        "correct": "B",
+        "explanation": "An authoritative command changes 'said to' to 'commanded' or 'ordered', followed by the infinitive form: 'to stand at ease.'"
+      },
+      {
+        "q": 27,
+        "topic": "Voice and Narration",
+        "question": "Direct/Indirect: He said, 'What a beautiful painting it is!'",
+        "options": {
+          "A": "He wondered that it was a beautiful painting.",
+          "B": "He exclaimed with admiration that it was a very beautiful painting.",
+          "C": "He exclaimed with sorrow that it was a beautiful painting.",
+          "D": "He exclaimed that what a beautiful painting it is."
+        },
+        "correct": "B",
+        "explanation": "Exclamatory sentences beginning with 'What a...' change to 'exclaimed with joy/admiration that it was a very...' in indirect speech, with the tense shifting to the past."
+      },
+      {
+        "q": 28,
+        "topic": "Grammar",
+        "question": "Error Spotting: The jury (A) / are divided (B) / in their opinions. (C) / No error (D)",
+        "options": {
+          "A": "are divided",
+          "B": "No error",
+          "C": "in their opinions.",
+          "D": "The jury"
+        },
+        "correct": "B",
+        "explanation": "Collective nouns take a plural verb when the members are acting or thinking individually, as is the case here since the jury is divided in its opinions. 'Are divided' is therefore correct, and the sentence has no error."
+      },
+      {
+        "q": 29,
+        "topic": "Grammar",
+        "question": "Error Spotting: Scarcely had the minister started his speech (A) / than the crowd began (B) / to protest loudly. (C) / No error (D)",
+        "options": {
+          "A": "Scarcely had the minister started his speech",
+          "B": "than the crowd began",
+          "C": "to protest loudly.",
+          "D": "No error"
+        },
+        "correct": "B",
+        "explanation": "The correct correlative conjunction to use with 'Scarcely' (or 'Hardly') is 'when', not 'than'. 'Than' is reserved for use with 'No sooner'. Part (B) should read 'when the crowd began'."
+      },
+      {
+        "q": 30,
+        "topic": "Grammar",
+        "question": "Error Spotting: If I was knowing (A) / about the heavy traffic, (B) / I would have left earlier. (C) / No error (D)",
+        "options": {
+          "A": "about the heavy traffic,",
+          "B": "I would have left earlier.",
+          "C": "No error",
+          "D": "If I was knowing"
+        },
+        "correct": "D",
+        "explanation": "'Know' is a stative verb and is not normally used in the continuous '-ing' form. Additionally, for a third conditional sentence, the correct structure requires 'If I had known...'. Part (A)/'If I was knowing' is therefore the error."
+      },
+      {
+        "q": 31,
+        "topic": "Grammar",
+        "question": "Error Spotting: Every one of the new employees (A) / have to undergo (B) / a strict security clearance. (C) / No error (D)",
+        "options": {
+          "A": "have to undergo",
+          "B": "Every one of the new employees",
+          "C": "No error",
+          "D": "a strict security clearance."
+        },
+        "correct": "A",
+        "explanation": "The subject 'Every one' is singular and must take a singular verb form. 'Have to' should be corrected to 'has to'."
+      },
+      {
+        "q": 32,
+        "topic": "Grammar",
+        "question": "Error Spotting: Neither the principal (A) / nor the teachers (B) / was present at the event. (C) / No error (D)",
+        "options": {
+          "A": "Neither the principal",
+          "B": "nor the teachers",
+          "C": "was present at the event.",
+          "D": "No error"
+        },
+        "correct": "C",
+        "explanation": "By the rule of proximity, when subjects joined by 'neither...nor' differ in number, the verb agrees with the nearer subject. Since 'teachers' (plural) is closer to the verb, 'was' should be 'were'."
+      },
+      {
+        "q": 33,
+        "topic": "Vocabulary",
+        "question": "Vocabulary: Synonym Pair — The central bank's decision to *curtail* the money supply led to a significant *contraction* in consumer spending. Choose the best synonym pair for the emphasized words.",
+        "options": {
+          "A": "restrict, decline",
+          "B": "obfuscate, rise",
+          "C": "manipulate, stability",
+          "D": "expand, surge"
+        },
+        "correct": "A",
+        "explanation": "To 'curtail' means to restrict or reduce, and a 'contraction' in spending means a decline. 'Restrict, decline' is therefore the correct synonym pair."
+      },
+      {
+        "q": 34,
+        "topic": "Vocabulary",
+        "question": "Sentence Improvement: The politician attempted to *beat around the bush* when asked about the embezzlement scandal. Choose the correct one-word substitute for the underlined phrase.",
+        "options": {
+          "A": "elucidate",
+          "B": "pontificate",
+          "C": "extrapolate",
+          "D": "prevaricate"
+        },
+        "correct": "D",
+        "explanation": "'Beat around the bush' means to avoid speaking directly or truthfully about something. 'Prevaricate' means to speak evasively, making it the correct one-word substitute."
+      },
+      {
+        "q": 35,
+        "topic": "Grammar",
+        "question": "Sentence Improvement: Despite his best efforts, he could not *put up with* the toxic work environment any longer. Select the correct alternative for the underlined phrase, or choose 'No replacement required'.",
+        "options": {
+          "A": "put in with",
+          "B": "put out with",
+          "C": "No replacement required",
+          "D": "put down with"
+        },
+        "correct": "C",
+        "explanation": "The phrasal verb 'put up with' correctly means to tolerate or endure something unpleasant. The sentence is already grammatically and contextually correct, so no replacement is required."
+      },
+      {
+        "q": 36,
+        "topic": "Grammar",
+        "question": "Sentence Improvement: The newly appointed CEO is known for being a *martinet*, demanding absolute obedience from his subordinates. Choose the closest meaning of the underlined word.",
+        "options": {
+          "A": "strict disciplinarian",
+          "B": "visionary leader",
+          "C": "lenient supervisor",
+          "D": "corrupt official"
+        },
+        "correct": "A",
+        "explanation": "A 'martinet' is a strict disciplinarian, particularly one who demands rigid adherence to rules, matching 'strict disciplinarian'."
+      },
+      {
+        "q": 37,
+        "topic": "Grammar",
+        "question": "Sentence Improvement: *Being a rainy day*, we decided to stay indoors and cancel the picnic. Select the correct alternative for the underlined phrase.",
+        "options": {
+          "A": "It being a rainy day",
+          "B": "No replacement required",
+          "C": "As it being a rainy day",
+          "D": "Being that a rainy day"
+        },
+        "correct": "A",
+        "explanation": "A participle phrase must have a clear subject of reference. 'Being a rainy day' incorrectly implies 'we' were a rainy day; the correct construction requires an explicit subject: 'It being a rainy day...'."
+      },
+      {
+        "q": 38,
+        "topic": "Vocabulary",
+        "question": "Idiom: To haul over the coals",
+        "options": {
+          "A": "To praise someone falsely",
+          "B": "To scold or reprimand severely",
+          "C": "To extract a confession using torture",
+          "D": "To force someone to do physical labor"
+        },
+        "correct": "B",
+        "explanation": "The idiom 'to haul over the coals' means to reprimand or scold someone severely for a mistake."
+      },
+      {
+        "q": 39,
+        "topic": "Vocabulary",
+        "question": "Idiom: A damp squib",
+        "options": {
+          "A": "A minor injury that prevents participation",
+          "B": "A poorly planned financial investment",
+          "C": "A sudden unexpected downpour of rain",
+          "D": "An event that is disappointing because it is not as exciting as expected"
+        },
+        "correct": "D",
+        "explanation": "A 'damp squib' refers to something that fails to live up to expectations, turning out far less impressive or exciting than anticipated."
+      },
+      {
+        "q": 40,
+        "topic": "Vocabulary",
+        "question": "Idiom: To throw down the gauntlet",
+        "options": {
+          "A": "To accidentally reveal a secret",
+          "B": "To issue a formal challenge",
+          "C": "To surrender unconditionally",
+          "D": "To resign from a difficult job"
+        },
+        "correct": "B",
+        "explanation": "Historically, throwing down an armored glove (gauntlet) was a formal challenge to a duel. Today, the idiom means to issue a challenge."
+      },
+      {
+        "q": 41,
+        "topic": "Vocabulary",
+        "question": "One Word Substitution: The practice of taking someone else's work or ideas and passing them off as one's own.",
+        "options": {
+          "A": "Nepotism",
+          "B": "Plagiarism",
+          "C": "Espionage",
+          "D": "Sycophancy"
+        },
+        "correct": "B",
+        "explanation": "'Plagiarism' is the act of copying another person's intellectual work and presenting it as one's own. Nepotism means favouring relatives, sycophancy means excessive flattery, and espionage means spying."
+      },
+      {
+        "q": 42,
+        "topic": "Vocabulary",
+        "question": "One Word Substitution: A person who shows a great lack of intelligence and is easily deceived.",
+        "options": {
+          "A": "Fastidious",
+          "B": "Gullible",
+          "C": "Astute",
+          "D": "Cynical"
+        },
+        "correct": "B",
+        "explanation": "A 'gullible' person is easily persuaded to believe something, often to their own disadvantage. Astute means sharp-witted, fastidious means very attentive to detail, and cynical means distrustful."
+      },
+      {
+        "q": 43,
+        "topic": "Vocabulary",
+        "question": "One Word Substitution: A government run by the worst or least qualified citizens.",
+        "options": {
+          "A": "Theocracy",
+          "B": "Oligarchy",
+          "C": "Gerontocracy",
+          "D": "Kakistocracy"
+        },
+        "correct": "D",
+        "explanation": "Derived from the Greek 'kakistos' (worst), a 'kakistocracy' is a system of government run by the worst, least qualified, or most unscrupulous citizens."
+      },
+      {
+        "q": 44,
+        "topic": "Vocabulary",
+        "question": "One Word Substitution: An unconventional style of living, often associated with artists and writers.",
+        "options": {
+          "A": "Ascetic",
+          "B": "Stoic",
+          "C": "Bohemian",
+          "D": "Philistine"
+        },
+        "correct": "C",
+        "explanation": "A 'Bohemian' refers to a person, typically an artist or writer, who lives in an unconventional way, free from regard for conventional rules and practices."
+      },
+      {
+        "q": 45,
+        "topic": "Vocabulary",
+        "question": "One Word Substitution: A place where birds are kept in captivity.",
+        "options": {
+          "A": "Aviary",
+          "B": "Apiary",
+          "C": "Aquarium",
+          "D": "Sanctuary"
+        },
+        "correct": "A",
+        "explanation": "An 'aviary' is a large enclosure or cage for keeping birds in captivity. An apiary houses bees, an aquarium houses fish or aquatic life, and a sanctuary is a general protected habitat for wildlife."
+      }
+    ],
+    "General Awareness": [
+      {
+        "q": 1,
+        "topic": "Economic Scene",
+        "question": "Consider the following statements regarding the Monetary Policy Committee (MPC) of India:\n1. It is a 6-member statutory body constituted under the RBI Act, 1934.\n2. The Governor of RBI acts as its ex-officio chairperson.\nWhich of the statements given above is/are correct?",
+        "options": {
+          "A": "Both 1 and 2",
+          "B": "Neither 1 nor 2",
+          "C": "Only 2",
+          "D": "Only 1"
+        },
+        "correct": "A",
+        "explanation": "The MPC is a six-member statutory committee (three from the RBI, three appointed by the Government) constituted under the RBI Act, 1934. The RBI Governor is its ex-officio chairperson and holds a casting vote in the event of a tie. Both statements are correct."
+      },
+      {
+        "q": 2,
+        "topic": "Current Affairs",
+        "question": "The 'Phillips Curve', a fundamental concept in macroeconomics, originally demonstrated an inverse relationship between which two economic variables?",
+        "options": {
+          "A": "Inflation and Unemployment",
+          "B": "Economic Growth and Income Inequality",
+          "C": "Tax Rates and Government Revenue",
+          "D": "Interest Rates and Bond Prices"
+        },
+        "correct": "A",
+        "explanation": "The Phillips curve, developed by economist A. W. Phillips, illustrates a stable, inverse relationship between the rate of inflation and the rate of unemployment."
+      },
+      {
+        "q": 3,
+        "topic": "General Polity",
+        "question": "Under Article 356 of the Indian Constitution, what is the maximum permissible duration for the imposition of President's Rule in a State, assuming parliamentary approval is extended continuously?",
+        "options": {
+          "A": "5 years",
+          "B": "3 years",
+          "C": "6 months",
+          "D": "1 year"
+        },
+        "correct": "B",
+        "explanation": "President's Rule can be extended up to a maximum of 3 years with parliamentary approval renewed every 6 months. Any extension beyond 1 year additionally requires certification by the Election Commission that elections cannot be held in the State."
+      },
+      {
+        "q": 4,
+        "topic": "Current Affairs",
+        "question": "The historical Treaty of Yandabo, signed in 1826, marked the conclusion of which major conflict?",
+        "options": {
+          "A": "Second Anglo-Maratha War",
+          "B": "First Anglo-Burmese War",
+          "C": "First Anglo-Afghan War",
+          "D": "First Anglo-Sikh War"
+        },
+        "correct": "B",
+        "explanation": "The Treaty of Yandabo ended the First Anglo-Burmese War (1824–1826). Under its terms, the Burmese king ceded Assam, Manipur, Arakan, and Tenasserim to the British."
+      },
+      {
+        "q": 5,
+        "topic": "Current Affairs",
+        "question": "Which of the following ocean currents is a cold current that flows northward along the western coast of southern Africa?",
+        "options": {
+          "A": "Benguela Current",
+          "B": "Canary Current",
+          "C": "Agulhas Current",
+          "D": "Humboldt Current"
+        },
+        "correct": "A",
+        "explanation": "The Benguela Current is a broad, cold, northward-flowing current forming the eastern edge of the South Atlantic gyre, flowing along the west coast of South Africa and Namibia. The Agulhas Current is warm, the Canary Current is in the North Atlantic, and the Humboldt Current is off South America."
+      },
+      {
+        "q": 6,
+        "topic": "Current Affairs",
+        "question": "The 'Madden-Julian Oscillation (MJO)' is a major fluctuation in tropical weather on weekly to monthly timescales. How does an active MJO phase approaching the Indian Ocean typically impact the Indian Summer Monsoon?",
+        "options": {
+          "A": "It reverses the direction of the trade winds.",
+          "B": "It significantly enhances monsoon rainfall activity.",
+          "C": "It causes immediate drought conditions across Central India.",
+          "D": "It suppresses the formation of tropical cyclones in the Bay of Bengal."
+        },
+        "correct": "B",
+        "explanation": "When the active (convective) phase of the MJO moves into the Indian Ocean during the monsoon season, it generally strengthens convection and enhances monsoon rainfall over the Indian subcontinent."
+      },
+      {
+        "q": 7,
+        "topic": "General Polity",
+        "question": "In the context of the Indian Parliament, what is the quorum required to constitute a meeting of either House of Parliament?",
+        "options": {
+          "A": "One-fifth of the total number of members of the House.",
+          "B": "A minimum of 100 members present.",
+          "C": "Fifty percent of the ruling party members.",
+          "D": "One-tenth of the total number of members of the House."
+        },
+        "correct": "D",
+        "explanation": "Article 100 of the Constitution provides that the quorum to constitute a meeting of either House of Parliament shall be one-tenth of the total number of members of that House."
+      },
+      {
+        "q": 8,
+        "topic": "Current Affairs",
+        "question": "Which of the following statements about the 'Anti-Defection Law' (Tenth Schedule) is incorrect?",
+        "options": {
+          "A": "The law applies to nominated members without any time constraints regarding party affiliation.",
+          "B": "It was inserted into the Constitution by the 52nd Amendment Act of 1985.",
+          "C": "The presiding officer's decision on defection is subject to judicial review.",
+          "D": "A member incurs disqualification if they voluntarily give up membership of their political party."
+        },
+        "correct": "A",
+        "explanation": "The law does carry a time constraint for nominated members: a nominated member may join a political party within six months of taking their seat without being disqualified, but joining after six months attracts disqualification. So the first statement, which claims there is no time constraint, is incorrect."
+      },
+      {
+        "q": 9,
+        "topic": "Current Affairs",
+        "question": "The 1929 Lahore Session of the Indian National Congress is historically significant primarily because it:",
+        "options": {
+          "A": "Launched the Non-Cooperation Movement.",
+          "B": "Endorsed the Gandhi-Irwin Pact.",
+          "C": "Adopted the resolution for 'Purna Swaraj' (Complete Independence).",
+          "D": "Resulted in the historic split between Moderates and Extremists."
+        },
+        "correct": "C",
+        "explanation": "Presided over by Jawaharlal Nehru, the 1929 Lahore session adopted the resolution demanding 'Purna Swaraj' (complete independence) and declared 26 January 1930 as Independence Day."
+      },
+      {
+        "q": 10,
+        "topic": "Scientific Research",
+        "question": "In biology, what is the primary function of 'mRNA' (messenger RNA) during the process of protein synthesis?",
+        "options": {
+          "A": "It carries genetic instructions from DNA in the nucleus to the ribosomes.",
+          "B": "It binds to foreign pathogens to neutralize viral infections.",
+          "C": "It directly catalyzes the formation of peptide bonds between amino acids.",
+          "D": "It permanently stores the genetic code inside the cell membrane."
+        },
+        "correct": "A",
+        "explanation": "mRNA is a single-stranded RNA molecule transcribed from DNA that carries genetic coding information from the nucleus to the ribosomes, where it is translated into a specific sequence of amino acids to form a protein."
+      },
+      {
+        "q": 11,
+        "topic": "Current Affairs",
+        "question": "Which specific physical phenomenon is responsible for the splitting of white light into its constituent seven colors when passing through a glass prism?",
+        "options": {
+          "A": "Total Internal Reflection",
+          "B": "Interference",
+          "C": "Diffraction",
+          "D": "Dispersion"
+        },
+        "correct": "D",
+        "explanation": "Dispersion occurs because the refractive index of a medium — and hence the degree of bending — varies with the wavelength of light. As white light passes through a prism, its constituent colours refract by different amounts and separate into a spectrum."
+      },
+      {
+        "q": 12,
+        "topic": "Current Affairs",
+        "question": "The 'Base Year' used for the current Consumer Price Index (CPI) series released by the Government of India is:",
+        "options": {
+          "A": "2024",
+          "B": "2012",
+          "C": "2015",
+          "D": "2011-12"
+        },
+        "correct": "A",
+        "explanation": "The Ministry of Statistics and Programme Implementation (MoSPI) introduced the revised CPI series with base year 2024=100, first released in February 2026, replacing the earlier 2012 base year. The revision updates the item basket and expenditure weights using data from the Household Consumption Expenditure Survey (HCES) 2023-24 to better reflect current consumption patterns."
+      },
+      {
+        "q": 13,
+        "topic": "Current Affairs",
+        "question": "Which of the following indices is NOT published by the World Economic Forum (WEF)?",
+        "options": {
+          "A": "World Economic Outlook",
+          "B": "Global Competitiveness Index",
+          "C": "Global Gender Gap Report",
+          "D": "Global Risk Report"
+        },
+        "correct": "A",
+        "explanation": "The 'World Economic Outlook' is a flagship report published by the International Monetary Fund (IMF), not the World Economic Forum."
+      },
+      {
+        "q": 14,
+        "topic": "Current Affairs",
+        "question": "The 'Global South' is a geopolitical term predominantly used to refer to countries located in:",
+        "options": {
+          "A": "Nations belonging to the Antarctic treaty system.",
+          "B": "Developing regions across Africa, Latin America, Asia, and Oceania.",
+          "C": "Advanced economies in the southern hemisphere like Australia and New Zealand.",
+          "D": "The southern hemisphere exclusively, excluding any northern hemisphere nations."
+        },
+        "correct": "B",
+        "explanation": "'Global South' broadly refers to developing, newly industrialised, or less-developed nations, primarily located across Africa, Latin America, Asia, and Oceania, regardless of strict geographic hemisphere boundaries."
+      },
+      {
+        "q": 15,
+        "topic": "General Polity",
+        "question": "Which article of the Indian Constitution empowers the Supreme Court to grant 'Special Leave to Appeal' against any judgment passed by any court or tribunal in the territory of India?",
+        "options": {
+          "A": "Article 226",
+          "B": "Article 143",
+          "C": "Article 136",
+          "D": "Article 32"
+        },
+        "correct": "C",
+        "explanation": "Article 136 confers wide discretionary power on the Supreme Court to grant special leave to appeal from any judgment, decree, or order passed by any court or tribunal in India, except those constituted under laws relating to the armed forces."
+      },
+      {
+        "q": 16,
+        "topic": "Current Affairs",
+        "question": "The 'Ramsar Convention', an international treaty signed in 1971, is dedicated to the conservation and sustainable use of which specific ecosystem?",
+        "options": {
+          "A": "High-altitude Glaciers",
+          "B": "Tropical Rainforests",
+          "C": "Wetlands",
+          "D": "Coral Reefs"
+        },
+        "correct": "C",
+        "explanation": "The Ramsar Convention on Wetlands of International Importance is an international treaty for the conservation and sustainable use of wetlands, named after the Iranian city of Ramsar, where it was signed in 1971."
+      },
+      {
+        "q": 17,
+        "topic": "Current Affairs",
+        "question": "Which of the following chemical processes best defines 'Saponification'?",
+        "options": {
+          "A": "The slow oxidation of iron in the presence of moisture.",
+          "B": "The catalytic conversion of atmospheric nitrogen into ammonia.",
+          "C": "The alkaline hydrolysis of fats or oils to produce soap and glycerol.",
+          "D": "The thermal decomposition of organic matter in the absence of oxygen."
+        },
+        "correct": "C",
+        "explanation": "Saponification is the chemical reaction in which an ester (a fat or oil) is heated with an alkali, such as sodium hydroxide, to produce soap and glycerol (an alcohol)."
+      },
+      {
+        "q": 18,
+        "topic": "Current Affairs",
+        "question": "What was the primary objective of the 'Cripps Mission' sent to India in 1942?",
+        "options": {
+          "A": "To secure full Indian cooperation and support for the British war effort in World War II.",
+          "B": "To immediately partition the Indian subcontinent into India and Pakistan.",
+          "C": "To draft the final Constitution for an independent India.",
+          "D": "To brutally suppress the ongoing Quit India Movement."
+        },
+        "correct": "A",
+        "explanation": "Headed by Sir Stafford Cripps, the mission aimed to secure Indian political support for the British war effort by offering Dominion status and the promise of a constituent assembly after the war."
+      },
+      {
+        "q": 19,
+        "topic": "Economic Scene",
+        "question": "In the context of the Indian economy, what does 'Fiscal Drag' (or Bracket Creep) refer to?",
+        "options": {
+          "A": "The inability of the government to reduce unviable public subsidies.",
+          "B": "The sudden withdrawal of foreign institutional investments during an economic crisis.",
+          "C": "A deliberate policy to slow down economic growth to control hyperinflation.",
+          "D": "Inflation pushing income into higher tax brackets, resulting in increased tax revenues without explicit rate hikes."
+        },
+        "correct": "D",
+        "explanation": "Bracket creep, or fiscal drag, occurs in a progressive tax system when inflation raises nominal wages and pushes taxpayers into higher tax brackets, automatically increasing government tax revenue without any change in tax law."
+      },
+      {
+        "q": 20,
+        "topic": "Culture",
+        "question": "Which classical dance form of India traces its roots to the ancient text 'Natya Shastra' and is characterized by the intricate 'Tribhanga' posture?",
+        "options": {
+          "A": "Manipuri",
+          "B": "Sattriya",
+          "C": "Odissi",
+          "D": "Kathakali"
+        },
+        "correct": "C",
+        "explanation": "Odissi, originating in Odisha, is distinctively characterized by the 'Tribhanga' (three-bend) posture, which isolates movement of the head, chest, and pelvis. It has deep historical roots linked to temple sculpture and the Natya Shastra."
+      },
+      {
+        "q": 21,
+        "topic": "Economic Scene",
+        "question": "Which of the following is a direct consequence of a 'Liquidity Trap' in an economy?",
+        "options": {
+          "A": "Monetary policy becomes ineffective as consumers hoard cash despite near-zero interest rates.",
+          "B": "Foreign exchange reserves are rapidly depleted to defend currency pegs.",
+          "C": "Hyperinflation occurs due to excessive government money printing.",
+          "D": "Commercial banks aggressively lend money due to high interest margins."
+        },
+        "correct": "A",
+        "explanation": "A liquidity trap is a situation where interest rates are very low and people prefer to hoard cash rather than invest or spend it, rendering expansionary monetary policy — such as further lowering interest rates — largely ineffective."
+      },
+      {
+        "q": 22,
+        "topic": "Economic Scene",
+        "question": "The 'Kessler Syndrome' is a theoretical scenario most closely associated with which domain?",
+        "options": {
+          "A": "The sudden collapse of global oceanic conveyor belt currents due to glacial melt.",
+          "B": "A runaway greenhouse effect causing boiling oceans on terrestrial planets.",
+          "C": "Space debris causing an uncontrollable cascade of satellite collisions in low Earth orbit.",
+          "D": "The rapid, unpredictable mutation of zoonotic viruses transferring to humans."
+        },
+        "correct": "C",
+        "explanation": "Proposed by NASA scientist Donald Kessler, the Kessler Syndrome describes a scenario in which the density of objects in low Earth orbit becomes high enough that collisions between objects trigger a runaway cascade, threatening future space activity."
+      },
+      {
+        "q": 23,
+        "topic": "Culture",
+        "question": "The 'Ghoomar' dance, traditionally performed by women wearing flowing dresses called 'ghagharas', is a famous folk dance of which Indian state?",
+        "options": {
+          "A": "Gujarat",
+          "B": "Punjab",
+          "C": "Haryana",
+          "D": "Rajasthan"
+        },
+        "correct": "D",
+        "explanation": "Ghoomar is a traditional folk dance of Rajasthan, originally performed by the Bhil tribe to worship Goddess Saraswati and later adopted widely across Rajasthani communities."
+      },
+      {
+        "q": 24,
+        "topic": "Scientific Research",
+        "question": "Who among the following scientists was awarded the Nobel Prize in Physics for the discovery of the photoelectric effect?",
+        "options": {
+          "A": "Werner Heisenberg",
+          "B": "Niels Bohr",
+          "C": "Albert Einstein",
+          "D": "Max Planck"
+        },
+        "correct": "C",
+        "explanation": "Albert Einstein was awarded the 1921 Nobel Prize in Physics 'for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect.'"
+      },
+      {
+        "q": 25,
+        "topic": "General Polity",
+        "question": "The 'Sengol', placed in the new Parliament building of India, originates from the historical traditions of which ancient dynasty?",
+        "options": {
+          "A": "Chola Dynasty",
+          "B": "Pallava Dynasty",
+          "C": "Gupta Dynasty",
+          "D": "Maurya Dynasty"
+        },
+        "correct": "A",
+        "explanation": "The Sengol is a historic sceptre that derives from the traditional coronation ceremonies of the Chola Dynasty, symbolising the transfer of power and the ruler's responsibility to govern justly (dharma)."
+      }
+    ],
+    "Computer Knowledge": [
+      {
+        "q": 1,
+        "topic": "Computer Basics",
+        "question": "In the OSI network model, which layer is responsible for translating data formats, data encryption, and data compression?",
+        "options": {
+          "A": "Transport Layer",
+          "B": "Presentation Layer",
+          "C": "Application Layer",
+          "D": "Session Layer"
+        },
+        "correct": "B",
+        "explanation": "The Presentation Layer (Layer 6) handles data translation and formatting, encryption/decryption, and compression, ensuring that data sent by the application layer is readable by the destination system."
+      },
+      {
+        "q": 2,
+        "topic": "Software",
+        "question": "Which of the following best describes the 'Convoy Effect' in operating system CPU scheduling?",
+        "options": {
+          "A": "High-priority tasks are continuously preempted by system interrupts.",
+          "B": "Short processes are severely delayed waiting for a long, CPU-bound process to finish under FCFS scheduling.",
+          "C": "Memory pages are constantly swapped in and out of the disk, grinding the system to a halt.",
+          "D": "A deadlock occurs because multiple processes are holding resources requested by each other."
+        },
+        "correct": "B",
+        "explanation": "The Convoy Effect occurs in First-Come, First-Served (FCFS) scheduling when a long, CPU-intensive process occupies the CPU, forcing many shorter processes to wait behind it, reducing overall system throughput."
+      },
+      {
+        "q": 3,
+        "topic": "Internet and Networking",
+        "question": "In an IPv4 network, if a subnet mask is defined as 255.255.255.240 (/28), how many usable host IP addresses are available within each subnet?",
+        "options": {
+          "A": "32",
+          "B": "16",
+          "C": "14",
+          "D": "30"
+        },
+        "correct": "C",
+        "explanation": "A /28 subnet mask leaves 32 − 28 = 4 bits for host addressing, giving 2⁴ = 16 total addresses. Subtracting the network address and the broadcast address leaves 16 − 2 = 14 usable host addresses."
+      },
+      {
+        "q": 4,
+        "topic": "Cyber Security",
+        "question": "What is the primary function of a 'Salt' in cryptographic hashing of passwords?",
+        "options": {
+          "A": "It authenticates the user by sending a one-time passcode to their mobile device.",
+          "B": "It defends against pre-computed rainbow table and dictionary attacks by adding random data to the password before hashing.",
+          "C": "It compresses the password to save storage space in the database.",
+          "D": "It encrypts the password symmetrically so the administrator can decrypt it later."
+        },
+        "correct": "B",
+        "explanation": "A cryptographic salt is random data added to a password before it is hashed. It ensures that identical passwords produce different hash outputs, neutralising pre-computed rainbow table attacks."
+      },
+      {
+        "q": 5,
+        "topic": "Office Applications",
+        "question": "Which advanced Microsoft Excel array formula correctly calculates the number of unique (distinct) values in the range A1:A10?",
+        "options": {
+          "A": "{=COUNTUNIQUE(A1:A10)}",
+          "B": "{=COUNT(UNIQUE(A1:A10))}",
+          "C": "{=SUM(1/COUNTIF(A1:A10, A1:A10))}",
+          "D": "{=SUM(MATCH(A1:A10, A1:A10, 0))}"
+        },
+        "correct": "C",
+        "explanation": "The classic array formula {=SUM(1/COUNTIF(A1:A10, A1:A10))} counts distinct values correctly. If a value appears 3 times, COUNTIF returns 3 for each occurrence, and 1/3 + 1/3 + 1/3 = 1, so each unique item is counted exactly once."
+      },
+      {
+        "q": 6,
+        "topic": "Cyber Security",
+        "question": "What type of malicious software is characterized by its ability to constantly change its underlying code to avoid signature-based detection by antivirus programs?",
+        "options": {
+          "A": "Rootkit",
+          "B": "Logic Bomb",
+          "C": "Keylogger",
+          "D": "Polymorphic Virus"
+        },
+        "correct": "D",
+        "explanation": "Polymorphic malware encrypts its payload and alters its decryption routine (signature) each time it infects a new file, making it very difficult for traditional signature-based antivirus scanners to detect."
+      },
+      {
+        "q": 7,
+        "topic": "Computer Basics",
+        "question": "In database management systems (DBMS), the 'ACID' properties guarantee reliable transaction processing. What does the 'I' in ACID stand for?",
+        "options": {
+          "A": "Isolation",
+          "B": "Iteration",
+          "C": "Idempotence",
+          "D": "Integrity"
+        },
+        "correct": "A",
+        "explanation": "ACID stands for Atomicity, Consistency, Isolation, and Durability. Isolation ensures that concurrently executing transactions leave the database in the same state as if they had executed sequentially, one after another."
+      },
+      {
+        "q": 8,
+        "topic": "Cyber Security",
+        "question": "Which cyber attack exploits the mathematical probability that two different inputs will produce the exact same cryptographic hash output?",
+        "options": {
+          "A": "Cross-Site Scripting (XSS)",
+          "B": "SQL Injection",
+          "C": "Man-in-the-Middle Attack",
+          "D": "Birthday Attack"
+        },
+        "correct": "D",
+        "explanation": "The Birthday Attack, named after the birthday paradox, exploits probability theory to find hash collisions much faster than a brute-force search would suggest."
+      },
+      {
+        "q": 9,
+        "topic": "Software",
+        "question": "In the Windows Registry, which root key contains information about the hardware profile, startup processes, and software settings specific to the local machine?",
+        "options": {
+          "A": "HKEY_USERS (HKU)",
+          "B": "HKEY_LOCAL_MACHINE (HKLM)",
+          "C": "HKEY_CLASSES_ROOT (HKCR)",
+          "D": "HKEY_CURRENT_USER (HKCU)"
+        },
+        "correct": "B",
+        "explanation": "HKEY_LOCAL_MACHINE (HKLM) stores settings specific to the local computer that apply to all users, including hardware drivers, boot configuration, and system-wide software settings."
+      },
+      {
+        "q": 10,
+        "topic": "Internet and Networking",
+        "question": "Which protocol resolves an IP address to a physical MAC (Media Access Control) address on a local area network?",
+        "options": {
+          "A": "DHCP",
+          "B": "ICMP",
+          "C": "DNS",
+          "D": "ARP"
+        },
+        "correct": "D",
+        "explanation": "The Address Resolution Protocol (ARP) maps a known IPv4 address to its corresponding MAC address on a local network segment, allowing data frames to be delivered to the correct hardware device."
+      },
+      {
+        "q": 11,
+        "topic": "Software",
+        "question": "What does the Linux command 'chmod 755 filename' do?",
+        "options": {
+          "A": "It gives all users full read, write, and execute permissions.",
+          "B": "It restricts the file so only the root administrator can access it.",
+          "C": "It gives the owner read, write, and execute permissions, while group and others get read and execute permissions.",
+          "D": "It changes the owner of the file to user ID 755."
+        },
+        "correct": "C",
+        "explanation": "In Unix-like permission notation, 7 (4+2+1) grants Read/Write/Execute, and 5 (4+1) grants Read/Execute. The three digits correspond to Owner, Group, and Others respectively — so the owner gets full permissions (7) while the group and others get read/execute permissions (5)."
+      },
+      {
+        "q": 12,
+        "topic": "Computer Basics",
+        "question": "Which specific hardware component is required to connect a computer to a local network, serving as the physical interface?",
+        "options": {
+          "A": "Solid State Drive (SSD)",
+          "B": "Motherboard Chipset",
+          "C": "Network Interface Card (NIC)",
+          "D": "VGA Port"
+        },
+        "correct": "C",
+        "explanation": "A Network Interface Card (NIC), often integrated into the motherboard, provides the physical connection point — such as an RJ45 Ethernet port or a Wi-Fi antenna — that links a computer to a network."
+      },
+      {
+        "q": 13,
+        "topic": "Office Applications",
+        "question": "In Microsoft Word, what does pressing the shortcut key combination 'Ctrl + Shift + C' followed by 'Ctrl + Shift + V' accomplish?",
+        "options": {
+          "A": "It creates a hyperlink and opens the target webpage.",
+          "B": "It copies the formatting of selected text and pastes that formatting onto another selection.",
+          "C": "It opens the clipboard history panel to paste multiple items.",
+          "D": "It changes the selected text to uppercase and then to lowercase."
+        },
+        "correct": "B",
+        "explanation": "Ctrl + Shift + C copies only the formatting of selected text (the Format Painter shortcut), and Ctrl + Shift + V applies that exact formatting to another selection without changing the underlying text."
+      },
+      {
+        "q": 14,
+        "topic": "Computer Basics",
+        "question": "Which type of memory management scheme entirely eliminates external fragmentation by dividing physical memory into fixed-size blocks?",
+        "options": {
+          "A": "Segmentation",
+          "B": "Virtual Swapping",
+          "C": "Paging",
+          "D": "Contiguous Allocation"
+        },
+        "correct": "C",
+        "explanation": "Paging divides logical memory into fixed-size blocks called 'pages' and physical memory into identically-sized 'frames'. Since any page can be placed into any available frame, external fragmentation is completely eliminated."
+      },
+      {
+        "q": 15,
+        "topic": "Cyber Security",
+        "question": "What is 'Spear Phishing' in the context of network security?",
+        "options": {
+          "A": "A widespread email spam campaign sent to millions of random addresses.",
+          "B": "A technique used to bypass firewalls by masking IP addresses.",
+          "C": "A physical attack on server hardware using electromagnetic pulses.",
+          "D": "A highly targeted phishing attack aimed at specific individuals or organizations using personalized information."
+        },
+        "correct": "D",
+        "explanation": "Unlike regular phishing, which casts a wide net, 'Spear Phishing' uses detailed, researched information about a specific target — such as a CEO or a particular employee — to make the fraudulent communication highly convincing."
+      },
+      {
+        "q": 16,
+        "topic": "Computer Basics",
+        "question": "Which HTML5 tag is strictly used to define navigation links within a webpage?",
+        "options": {
+          "A": "<section>",
+          "B": "<aside>",
+          "C": "<nav>",
+          "D": "<header>"
+        },
+        "correct": "C",
+        "explanation": "The <nav> element is a semantic HTML5 tag used to define a section of navigation links, typically containing a website's primary navigational menu."
+      },
+      {
+        "q": 17,
+        "topic": "Computer Basics",
+        "question": "What is the primary difference between an SSD (Solid State Drive) and an HDD (Hard Disk Drive)?",
+        "options": {
+          "A": "SSDs are volatile memory that lose data when powered off, while HDDs are non-volatile.",
+          "B": "SSDs process graphics data, whereas HDDs process central computational logic.",
+          "C": "SSDs use NAND flash memory to store data without moving parts, whereas HDDs use spinning magnetic platters.",
+          "D": "SSDs connect exclusively via USB, whereas HDDs use SATA connections."
+        },
+        "correct": "C",
+        "explanation": "SSDs have no moving mechanical parts and store data using NAND flash memory, making them significantly faster and more durable than HDDs, which read and write data via a mechanical arm moving over spinning magnetic platters."
+      },
+      {
+        "q": 18,
+        "topic": "Cyber Security",
+        "question": "Which keyboard shortcut is used in Windows to instantly lock the computer screen or switch users?",
+        "options": {
+          "A": "Alt + Shift + L",
+          "B": "Ctrl + Alt + L",
+          "C": "Windows Key + D",
+          "D": "Windows Key + L"
+        },
+        "correct": "D",
+        "explanation": "Pressing Windows Key + L immediately locks the operating system session, requiring a password or PIN to re-enter — a fundamental desktop security practice."
+      },
+      {
+        "q": 19,
+        "topic": "Internet and Networking",
+        "question": "In cloud computing, what does the service model 'SaaS' stand for?",
+        "options": {
+          "A": "System as a Service",
+          "B": "Security as a Service",
+          "C": "Storage as a Service",
+          "D": "Software as a Service"
+        },
+        "correct": "D",
+        "explanation": "SaaS stands for Software as a Service, a cloud computing model in which users access centrally-hosted software applications over the internet (e.g., Google Workspace, Microsoft 365) rather than installing them locally."
+      },
+      {
+        "q": 20,
+        "topic": "Software",
+        "question": "What is the function of the 'Traceroute' (or tracert) utility in computer networking?",
+        "options": {
+          "A": "It scans a network to find open ports and software vulnerabilities.",
+          "B": "It permanently clears the DNS cache on a local machine.",
+          "C": "It tracks and displays the path that a packet takes from a source to a destination, listing all the routers it passes through.",
+          "D": "It encrypts the IP address of the user to prevent tracking by internet service providers."
+        },
+        "correct": "C",
+        "explanation": "Traceroute (tracert on Windows) is a diagnostic utility that displays the hop-by-hop route taken by packets across an IP network and measures the transit delay at each hop."
+      }
+    ]
+  }
+}

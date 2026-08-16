@@ -1,0 +1,1437 @@
+{
+  "paper_id": "IBPS-Paper3",
+  "title": "IBPS PO Prelims Paper 3",
+  "exam": "IBPS PO Prelims",
+  "year": 2026,
+  "subjects": {
+    "English Language": [
+      {
+        "q": 1,
+        "topic": "Main idea",
+        "question": "According to the passage, how does a CBDC primarily differ from decentralized cryptocurrencies?",
+        "options": {
+          "A": "It is issued and regulated directly by a central bank and is not highly volatile.",
+          "B": "It operates exclusively on permissionless blockchains without government oversight.",
+          "C": "It relies entirely on commercial banks to issue and control its overall supply.",
+          "D": "It is designed to replace traditional fiat currency with a highly volatile asset.",
+          "E": "It completely eliminates the need for any technological infrastructure or cybersecurity."
+        },
+        "correct": "A",
+        "explanation": "The first paragraph explicitly states that unlike decentralized cryptocurrencies (which are highly volatile and operate on permissionless blockchains), a CBDC is a digital form of a country's fiat currency issued and regulated directly by the central bank. Therefore, Option A is correct.",
+        "passage": "The global financial ecosystem is on the cusp of a major transformation with the imminent introduction of Central Bank Digital Currencies (CBDCs). Unlike decentralized cryptocurrencies, which operate on permissionless blockchains and are highly volatile, a CBDC is a digital form of a country's fiat currency, issued and regulated directly by the central bank. The primary motivation behind this innovation is to foster financial inclusion, reduce the costs of cross-border transactions, and counteract the rising influence of private digital currencies that threaten sovereign monetary policy. By providing a direct digital link between the central bank and the citizen, CBDCs bypass traditional commercial banks, which could fundamentally alter the banking sector's landscape.\n\nWhile the benefits are significant, the transition is fraught with macroeconomic risks. Commercial banks rely heavily on retail deposits to issue loans. If citizens transfer a substantial portion of their savings into central bank digital wallets, commercial banks may face a severe liquidity crisis, forcing them to raise interest rates on loans or restrict credit availability. This phenomenon, known as bank disintermediation, could slow down economic growth and reduce corporate investments. Furthermore, a CBDC system requires immense technological infrastructure to ensure cybersecurity and data privacy. The centralization of transaction data gives the state unprecedented visibility into the financial behaviors of its citizens, raising valid concerns about state surveillance and the erosion of financial anonymity.\n\nTo mitigate these risks, many central banks are exploring a 'two-tiered' CBDC model. In this framework, the central bank issues the digital currency, but commercial banks and payment service providers manage the customer-facing distribution and digital wallets. This hybrid approach aims to preserve the essential role of commercial banks in credit creation while upgrading the efficiency of the payment settlement system. As pilot programs launch across various nations, regulatory bodies must carefully balance technological modernization with macroeconomic stability. The successful deployment of CBDCs will ultimately depend on building a resilient regulatory architecture that protects consumer privacy while preventing systemic disruptions to the traditional credit cycle."
+      },
+      {
+        "q": 2,
+        "topic": "Reading Comprehension",
+        "question": "What is the primary cause of 'bank disintermediation' as described in the passage?",
+        "options": {
+          "A": "Commercial banks upgrading their payment settlement systems to compete with the central bank.",
+          "B": "Citizens transferring a substantial portion of their savings into central bank digital wallets instead of commercial banks.",
+          "C": "The central bank refusing to issue digital currencies to retail consumers.",
+          "D": "Corporate investments slowing down due to a lack of innovative digital infrastructure.",
+          "E": "The state gaining unprecedented visibility into the financial behaviors of its citizens."
+        },
+        "correct": "B",
+        "explanation": "The second paragraph explains that if citizens transfer savings into central bank digital wallets, commercial banks lose retail deposits, leading to a liquidity crisis. This specific phenomenon is referred to as \"bank disintermediation.\"",
+        "passage": "The global financial ecosystem is on the cusp of a major transformation with the imminent introduction of Central Bank Digital Currencies (CBDCs). Unlike decentralized cryptocurrencies, which operate on permissionless blockchains and are highly volatile, a CBDC is a digital form of a country's fiat currency, issued and regulated directly by the central bank. The primary motivation behind this innovation is to foster financial inclusion, reduce the costs of cross-border transactions, and counteract the rising influence of private digital currencies that threaten sovereign monetary policy. By providing a direct digital link between the central bank and the citizen, CBDCs bypass traditional commercial banks, which could fundamentally alter the banking sector's landscape.\n\nWhile the benefits are significant, the transition is fraught with macroeconomic risks. Commercial banks rely heavily on retail deposits to issue loans. If citizens transfer a substantial portion of their savings into central bank digital wallets, commercial banks may face a severe liquidity crisis, forcing them to raise interest rates on loans or restrict credit availability. This phenomenon, known as bank disintermediation, could slow down economic growth and reduce corporate investments. Furthermore, a CBDC system requires immense technological infrastructure to ensure cybersecurity and data privacy. The centralization of transaction data gives the state unprecedented visibility into the financial behaviors of its citizens, raising valid concerns about state surveillance and the erosion of financial anonymity.\n\nTo mitigate these risks, many central banks are exploring a 'two-tiered' CBDC model. In this framework, the central bank issues the digital currency, but commercial banks and payment service providers manage the customer-facing distribution and digital wallets. This hybrid approach aims to preserve the essential role of commercial banks in credit creation while upgrading the efficiency of the payment settlement system. As pilot programs launch across various nations, regulatory bodies must carefully balance technological modernization with macroeconomic stability. The successful deployment of CBDCs will ultimately depend on building a resilient regulatory architecture that protects consumer privacy while preventing systemic disruptions to the traditional credit cycle."
+      },
+      {
+        "q": 3,
+        "topic": "Reading Comprehension",
+        "question": "Which of the following is an intended benefit of the 'two-tiered' CBDC model?",
+        "options": {
+          "A": "It eliminates the need for commercial banks entirely.",
+          "B": "It gives the central bank absolute control over customer-facing distribution.",
+          "C": "It preserves the essential credit creation role of commercial banks while improving payment efficiency.",
+          "D": "It allows decentralized cryptocurrencies to integrate seamlessly with fiat currency.",
+          "E": "It prevents citizens from making any cross-border transactions using digital wallets."
+        },
+        "correct": "C",
+        "explanation": "The final paragraph mentions that the two-tiered model aims to \"preserve the essential role of commercial banks in credit creation while upgrading the efficiency of the payment settlement system.\" This makes Option C the correct choice.",
+        "passage": "The global financial ecosystem is on the cusp of a major transformation with the imminent introduction of Central Bank Digital Currencies (CBDCs). Unlike decentralized cryptocurrencies, which operate on permissionless blockchains and are highly volatile, a CBDC is a digital form of a country's fiat currency, issued and regulated directly by the central bank. The primary motivation behind this innovation is to foster financial inclusion, reduce the costs of cross-border transactions, and counteract the rising influence of private digital currencies that threaten sovereign monetary policy. By providing a direct digital link between the central bank and the citizen, CBDCs bypass traditional commercial banks, which could fundamentally alter the banking sector's landscape.\n\nWhile the benefits are significant, the transition is fraught with macroeconomic risks. Commercial banks rely heavily on retail deposits to issue loans. If citizens transfer a substantial portion of their savings into central bank digital wallets, commercial banks may face a severe liquidity crisis, forcing them to raise interest rates on loans or restrict credit availability. This phenomenon, known as bank disintermediation, could slow down economic growth and reduce corporate investments. Furthermore, a CBDC system requires immense technological infrastructure to ensure cybersecurity and data privacy. The centralization of transaction data gives the state unprecedented visibility into the financial behaviors of its citizens, raising valid concerns about state surveillance and the erosion of financial anonymity.\n\nTo mitigate these risks, many central banks are exploring a 'two-tiered' CBDC model. In this framework, the central bank issues the digital currency, but commercial banks and payment service providers manage the customer-facing distribution and digital wallets. This hybrid approach aims to preserve the essential role of commercial banks in credit creation while upgrading the efficiency of the payment settlement system. As pilot programs launch across various nations, regulatory bodies must carefully balance technological modernization with macroeconomic stability. The successful deployment of CBDCs will ultimately depend on building a resilient regulatory architecture that protects consumer privacy while preventing systemic disruptions to the traditional credit cycle."
+      },
+      {
+        "q": 4,
+        "topic": "Reading Comprehension",
+        "question": "What specific concern is raised regarding the centralization of transaction data in a CBDC system?",
+        "options": {
+          "A": "It will make cross-border transactions prohibitively expensive.",
+          "B": "It will prevent central banks from tracking macroeconomic trends.",
+          "C": "It limits the central bank's ability to issue adequate physical cash.",
+          "D": "It raises valid concerns about state surveillance and the erosion of financial anonymity.",
+          "E": "It causes immediate hyperinflation by bypassing the commercial banking sector."
+        },
+        "correct": "D",
+        "explanation": "The passage clearly states in the second paragraph that the centralization of transaction data gives the state unprecedented visibility into citizens' financial behaviors, \"raising valid concerns about state surveillance and the erosion of financial anonymity.\"",
+        "passage": "The global financial ecosystem is on the cusp of a major transformation with the imminent introduction of Central Bank Digital Currencies (CBDCs). Unlike decentralized cryptocurrencies, which operate on permissionless blockchains and are highly volatile, a CBDC is a digital form of a country's fiat currency, issued and regulated directly by the central bank. The primary motivation behind this innovation is to foster financial inclusion, reduce the costs of cross-border transactions, and counteract the rising influence of private digital currencies that threaten sovereign monetary policy. By providing a direct digital link between the central bank and the citizen, CBDCs bypass traditional commercial banks, which could fundamentally alter the banking sector's landscape.\n\nWhile the benefits are significant, the transition is fraught with macroeconomic risks. Commercial banks rely heavily on retail deposits to issue loans. If citizens transfer a substantial portion of their savings into central bank digital wallets, commercial banks may face a severe liquidity crisis, forcing them to raise interest rates on loans or restrict credit availability. This phenomenon, known as bank disintermediation, could slow down economic growth and reduce corporate investments. Furthermore, a CBDC system requires immense technological infrastructure to ensure cybersecurity and data privacy. The centralization of transaction data gives the state unprecedented visibility into the financial behaviors of its citizens, raising valid concerns about state surveillance and the erosion of financial anonymity.\n\nTo mitigate these risks, many central banks are exploring a 'two-tiered' CBDC model. In this framework, the central bank issues the digital currency, but commercial banks and payment service providers manage the customer-facing distribution and digital wallets. This hybrid approach aims to preserve the essential role of commercial banks in credit creation while upgrading the efficiency of the payment settlement system. As pilot programs launch across various nations, regulatory bodies must carefully balance technological modernization with macroeconomic stability. The successful deployment of CBDCs will ultimately depend on building a resilient regulatory architecture that protects consumer privacy while preventing systemic disruptions to the traditional credit cycle."
+      },
+      {
+        "q": 5,
+        "topic": "Synonyms",
+        "question": "Which of the following is most similar in meaning to the word \"imminent\" as used in the passage?",
+        "options": {
+          "A": "Distant",
+          "B": "Unlikely",
+          "C": "Questionable",
+          "D": "Avoidable",
+          "E": "Impending"
+        },
+        "correct": "E",
+        "explanation": "The word \"imminent\" refers to something that is about to happen very soon. \"Impending\" shares this exact meaning, making Option E the correct synonym.",
+        "passage": "The global financial ecosystem is on the cusp of a major transformation with the imminent introduction of Central Bank Digital Currencies (CBDCs). Unlike decentralized cryptocurrencies, which operate on permissionless blockchains and are highly volatile, a CBDC is a digital form of a country's fiat currency, issued and regulated directly by the central bank. The primary motivation behind this innovation is to foster financial inclusion, reduce the costs of cross-border transactions, and counteract the rising influence of private digital currencies that threaten sovereign monetary policy. By providing a direct digital link between the central bank and the citizen, CBDCs bypass traditional commercial banks, which could fundamentally alter the banking sector's landscape.\n\nWhile the benefits are significant, the transition is fraught with macroeconomic risks. Commercial banks rely heavily on retail deposits to issue loans. If citizens transfer a substantial portion of their savings into central bank digital wallets, commercial banks may face a severe liquidity crisis, forcing them to raise interest rates on loans or restrict credit availability. This phenomenon, known as bank disintermediation, could slow down economic growth and reduce corporate investments. Furthermore, a CBDC system requires immense technological infrastructure to ensure cybersecurity and data privacy. The centralization of transaction data gives the state unprecedented visibility into the financial behaviors of its citizens, raising valid concerns about state surveillance and the erosion of financial anonymity.\n\nTo mitigate these risks, many central banks are exploring a 'two-tiered' CBDC model. In this framework, the central bank issues the digital currency, but commercial banks and payment service providers manage the customer-facing distribution and digital wallets. This hybrid approach aims to preserve the essential role of commercial banks in credit creation while upgrading the efficiency of the payment settlement system. As pilot programs launch across various nations, regulatory bodies must carefully balance technological modernization with macroeconomic stability. The successful deployment of CBDCs will ultimately depend on building a resilient regulatory architecture that protects consumer privacy while preventing systemic disruptions to the traditional credit cycle."
+      },
+      {
+        "q": 6,
+        "topic": "Antonyms",
+        "question": "Which of the following is most opposite in meaning to the word \"resilient\" as used in the passage?",
+        "options": {
+          "A": "Vulnerable",
+          "B": "Robust",
+          "C": "Flexible",
+          "D": "Tenacious",
+          "E": "Enduring"
+        },
+        "correct": "A",
+        "explanation": "\"Resilient\" means capable of withstanding shock, damage, or difficult conditions without failing. The opposite is \"vulnerable,\" which means susceptible to physical or emotional attack or harm. Option A is the correct antonym.",
+        "passage": "The global financial ecosystem is on the cusp of a major transformation with the imminent introduction of Central Bank Digital Currencies (CBDCs). Unlike decentralized cryptocurrencies, which operate on permissionless blockchains and are highly volatile, a CBDC is a digital form of a country's fiat currency, issued and regulated directly by the central bank. The primary motivation behind this innovation is to foster financial inclusion, reduce the costs of cross-border transactions, and counteract the rising influence of private digital currencies that threaten sovereign monetary policy. By providing a direct digital link between the central bank and the citizen, CBDCs bypass traditional commercial banks, which could fundamentally alter the banking sector's landscape.\n\nWhile the benefits are significant, the transition is fraught with macroeconomic risks. Commercial banks rely heavily on retail deposits to issue loans. If citizens transfer a substantial portion of their savings into central bank digital wallets, commercial banks may face a severe liquidity crisis, forcing them to raise interest rates on loans or restrict credit availability. This phenomenon, known as bank disintermediation, could slow down economic growth and reduce corporate investments. Furthermore, a CBDC system requires immense technological infrastructure to ensure cybersecurity and data privacy. The centralization of transaction data gives the state unprecedented visibility into the financial behaviors of its citizens, raising valid concerns about state surveillance and the erosion of financial anonymity.\n\nTo mitigate these risks, many central banks are exploring a 'two-tiered' CBDC model. In this framework, the central bank issues the digital currency, but commercial banks and payment service providers manage the customer-facing distribution and digital wallets. This hybrid approach aims to preserve the essential role of commercial banks in credit creation while upgrading the efficiency of the payment settlement system. As pilot programs launch across various nations, regulatory bodies must carefully balance technological modernization with macroeconomic stability. The successful deployment of CBDCs will ultimately depend on building a resilient regulatory architecture that protects consumer privacy while preventing systemic disruptions to the traditional credit cycle."
+      },
+      {
+        "q": 7,
+        "topic": "Reading Comprehension",
+        "question": "Based on the passage, why might commercial banks be forced to raise interest rates on loans?",
+        "options": {
+          "A": "Because the central bank mandates higher interest rates for all digital transactions.",
+          "B": "Because a severe liquidity crisis could arise from a drop in retail deposits.",
+          "C": "Because commercial banks want to encourage citizens to use central bank digital wallets.",
+          "D": "Because cross-border transactions become significantly cheaper.",
+          "E": "Because decentralized cryptocurrencies are highly volatile."
+        },
+        "correct": "B",
+        "explanation": "According to the second paragraph, if citizens transfer their savings to central bank digital wallets, commercial banks lose retail deposits. This causes a \"severe liquidity crisis, forcing them to raise interest rates on loans or restrict credit availability.\"",
+        "passage": "The global financial ecosystem is on the cusp of a major transformation with the imminent introduction of Central Bank Digital Currencies (CBDCs). Unlike decentralized cryptocurrencies, which operate on permissionless blockchains and are highly volatile, a CBDC is a digital form of a country's fiat currency, issued and regulated directly by the central bank. The primary motivation behind this innovation is to foster financial inclusion, reduce the costs of cross-border transactions, and counteract the rising influence of private digital currencies that threaten sovereign monetary policy. By providing a direct digital link between the central bank and the citizen, CBDCs bypass traditional commercial banks, which could fundamentally alter the banking sector's landscape.\n\nWhile the benefits are significant, the transition is fraught with macroeconomic risks. Commercial banks rely heavily on retail deposits to issue loans. If citizens transfer a substantial portion of their savings into central bank digital wallets, commercial banks may face a severe liquidity crisis, forcing them to raise interest rates on loans or restrict credit availability. This phenomenon, known as bank disintermediation, could slow down economic growth and reduce corporate investments. Furthermore, a CBDC system requires immense technological infrastructure to ensure cybersecurity and data privacy. The centralization of transaction data gives the state unprecedented visibility into the financial behaviors of its citizens, raising valid concerns about state surveillance and the erosion of financial anonymity.\n\nTo mitigate these risks, many central banks are exploring a 'two-tiered' CBDC model. In this framework, the central bank issues the digital currency, but commercial banks and payment service providers manage the customer-facing distribution and digital wallets. This hybrid approach aims to preserve the essential role of commercial banks in credit creation while upgrading the efficiency of the payment settlement system. As pilot programs launch across various nations, regulatory bodies must carefully balance technological modernization with macroeconomic stability. The successful deployment of CBDCs will ultimately depend on building a resilient regulatory architecture that protects consumer privacy while preventing systemic disruptions to the traditional credit cycle."
+      },
+      {
+        "q": 8,
+        "topic": "Main idea",
+        "question": "Which of the following best captures the main idea of the passage?",
+        "options": {
+          "A": "The elimination of commercial banks is necessary to fully realize the potential of digital fiat currencies.",
+          "B": "State surveillance is the primary motivation behind the introduction of Central Bank Digital Currencies globally.",
+          "C": "The introduction of CBDCs offers significant benefits but requires careful regulation to prevent banking disruptions and privacy issues.",
+          "D": "Decentralized cryptocurrencies are superior to CBDCs because they offer absolute financial anonymity.",
+          "E": "The two-tiered CBDC model is fundamentally flawed and will inevitably cause a severe global liquidity crisis."
+        },
+        "correct": "C",
+        "explanation": "The passage outlines the benefits of CBDCs (financial inclusion, cheaper transactions), the risks (bank disintermediation, privacy erosion), and the proposed solution (two-tiered model, resilient regulation). Option C accurately summarizes this balanced perspective.",
+        "passage": "The global financial ecosystem is on the cusp of a major transformation with the imminent introduction of Central Bank Digital Currencies (CBDCs). Unlike decentralized cryptocurrencies, which operate on permissionless blockchains and are highly volatile, a CBDC is a digital form of a country's fiat currency, issued and regulated directly by the central bank. The primary motivation behind this innovation is to foster financial inclusion, reduce the costs of cross-border transactions, and counteract the rising influence of private digital currencies that threaten sovereign monetary policy. By providing a direct digital link between the central bank and the citizen, CBDCs bypass traditional commercial banks, which could fundamentally alter the banking sector's landscape.\n\nWhile the benefits are significant, the transition is fraught with macroeconomic risks. Commercial banks rely heavily on retail deposits to issue loans. If citizens transfer a substantial portion of their savings into central bank digital wallets, commercial banks may face a severe liquidity crisis, forcing them to raise interest rates on loans or restrict credit availability. This phenomenon, known as bank disintermediation, could slow down economic growth and reduce corporate investments. Furthermore, a CBDC system requires immense technological infrastructure to ensure cybersecurity and data privacy. The centralization of transaction data gives the state unprecedented visibility into the financial behaviors of its citizens, raising valid concerns about state surveillance and the erosion of financial anonymity.\n\nTo mitigate these risks, many central banks are exploring a 'two-tiered' CBDC model. In this framework, the central bank issues the digital currency, but commercial banks and payment service providers manage the customer-facing distribution and digital wallets. This hybrid approach aims to preserve the essential role of commercial banks in credit creation while upgrading the efficiency of the payment settlement system. As pilot programs launch across various nations, regulatory bodies must carefully balance technological modernization with macroeconomic stability. The successful deployment of CBDCs will ultimately depend on building a resilient regulatory architecture that protects consumer privacy while preventing systemic disruptions to the traditional credit cycle."
+      },
+      {
+        "q": 9,
+        "topic": "Fill in the blanks",
+        "question": "Find the appropriate word for blank (9).",
+        "options": {
+          "A": "transform",
+          "B": "amount",
+          "C": "direct",
+          "D": "lead",
+          "E": "attribute"
+        },
+        "correct": "D",
+        "explanation": "The sentence discusses the consequence of chronic stress. Stress can \"lead to\" severe burnout. The preposition \"to\" makes \"lead\" the only grammatically and contextually sound choice.",
+        "passage": "Modern organizations are increasingly realizing that employee well-being is not just a perk, but a strategic imperative. In high-pressure environments, chronic stress can (9) severe burnout, significantly reducing overall productivity. To combat this, human resource departments are implementing policies that (10) a healthier work-life balance. Providing flexible working hours and mandatory mental health days has proven to be an effective (11). However, policy changes alone are insufficient if the underlying corporate culture remains toxic. Leadership must actively (12) an atmosphere of psychological safety, where employees feel comfortable voicing their concerns without fear of retribution. Only when empathy is integrated into the core values can an organization truly (13) in today's competitive market."
+      },
+      {
+        "q": 10,
+        "topic": "Fill in the blanks",
+        "question": "Find the appropriate word for blank (10).",
+        "options": {
+          "A": "decline",
+          "B": "hinder",
+          "C": "forbid",
+          "D": "conceal",
+          "E": "promote"
+        },
+        "correct": "E",
+        "explanation": "The context is about HR departments taking positive actions. They would implement policies that encourage or \"promote\" a healthier work-life balance. The other options express negative or unrelated actions.",
+        "passage": "Modern organizations are increasingly realizing that employee well-being is not just a perk, but a strategic imperative. In high-pressure environments, chronic stress can (9) severe burnout, significantly reducing overall productivity. To combat this, human resource departments are implementing policies that (10) a healthier work-life balance. Providing flexible working hours and mandatory mental health days has proven to be an effective (11). However, policy changes alone are insufficient if the underlying corporate culture remains toxic. Leadership must actively (12) an atmosphere of psychological safety, where employees feel comfortable voicing their concerns without fear of retribution. Only when empathy is integrated into the core values can an organization truly (13) in today's competitive market."
+      },
+      {
+        "q": 11,
+        "topic": "Tone",
+        "question": "Find the appropriate word for blank (11).",
+        "options": {
+          "A": "strategy",
+          "B": "hindrance",
+          "C": "anomaly",
+          "D": "illusion",
+          "E": "defect"
+        },
+        "correct": "A",
+        "explanation": "Providing flexible hours and mental health days are deliberate plans of action. In this context, they represent an effective \"strategy.\" The other options carry negative connotations that do not fit the supportive tone.",
+        "passage": "Modern organizations are increasingly realizing that employee well-being is not just a perk, but a strategic imperative. In high-pressure environments, chronic stress can (9) severe burnout, significantly reducing overall productivity. To combat this, human resource departments are implementing policies that (10) a healthier work-life balance. Providing flexible working hours and mandatory mental health days has proven to be an effective (11). However, policy changes alone are insufficient if the underlying corporate culture remains toxic. Leadership must actively (12) an atmosphere of psychological safety, where employees feel comfortable voicing their concerns without fear of retribution. Only when empathy is integrated into the core values can an organization truly (13) in today's competitive market."
+      },
+      {
+        "q": 12,
+        "topic": "Fill in the blanks",
+        "question": "Find the appropriate word for blank (12).",
+        "options": {
+          "A": "destroy",
+          "B": "cultivate",
+          "C": "suppress",
+          "D": "neglect",
+          "E": "ignore"
+        },
+        "correct": "B",
+        "explanation": "The passage suggests leadership must take an active, positive role in building psychological safety. To \"cultivate\" means to foster or develop, which perfectly fits the requirement of actively building a safe atmosphere.",
+        "passage": "Modern organizations are increasingly realizing that employee well-being is not just a perk, but a strategic imperative. In high-pressure environments, chronic stress can (9) severe burnout, significantly reducing overall productivity. To combat this, human resource departments are implementing policies that (10) a healthier work-life balance. Providing flexible working hours and mandatory mental health days has proven to be an effective (11). However, policy changes alone are insufficient if the underlying corporate culture remains toxic. Leadership must actively (12) an atmosphere of psychological safety, where employees feel comfortable voicing their concerns without fear of retribution. Only when empathy is integrated into the core values can an organization truly (13) in today's competitive market."
+      },
+      {
+        "q": 13,
+        "topic": "Fill in the blanks",
+        "question": "Find the appropriate word for blank (13).",
+        "options": {
+          "A": "collapse",
+          "B": "surrender",
+          "C": "thrive",
+          "D": "stagnate",
+          "E": "falter"
+        },
+        "correct": "C",
+        "explanation": "The concluding sentence emphasizes the ultimate positive outcome of integrating empathy. An organization will \"thrive\" (prosper/succeed) in a competitive market if it adopts these values. Options A, B, D, and E are negative outcomes.",
+        "passage": "Modern organizations are increasingly realizing that employee well-being is not just a perk, but a strategic imperative. In high-pressure environments, chronic stress can (9) severe burnout, significantly reducing overall productivity. To combat this, human resource departments are implementing policies that (10) a healthier work-life balance. Providing flexible working hours and mandatory mental health days has proven to be an effective (11). However, policy changes alone are insufficient if the underlying corporate culture remains toxic. Leadership must actively (12) an atmosphere of psychological safety, where employees feel comfortable voicing their concerns without fear of retribution. Only when empathy is integrated into the core values can an organization truly (13) in today's competitive market."
+      },
+      {
+        "q": 14,
+        "topic": "Vocabulary in context",
+        "question": "The central bank has (A) / recently announced a series of (B) / new financial regulations (C) / which is expected to boost the economy. (D) / No error (E)",
+        "options": {
+          "A": "The central bank has",
+          "B": "recently announced a series of",
+          "C": "new financial regulations",
+          "D": "which is expected to boost the economy.",
+          "E": "No error"
+        },
+        "correct": "D",
+        "explanation": "The error lies in part (D). The relative pronoun \"which\" refers to the plural noun \"regulations\". Therefore, the plural verb \"are\" should be used instead of the singular verb \"is\". The correct phrase is \"which are expected to boost the economy.\""
+      },
+      {
+        "q": 15,
+        "topic": "Error detection",
+        "question": "Despite the heavy rainfall (A) / and the severe flooding in the region, (B) / the rescue team managed to reach (C) / the stranded villagers in time. (D) / No error (E)",
+        "options": {
+          "A": "Despite the heavy rainfall",
+          "B": "and the severe flooding in the region,",
+          "C": "the rescue team managed to reach",
+          "D": "the stranded villagers in time.",
+          "E": "No error"
+        },
+        "correct": "E",
+        "explanation": "The sentence is grammatically correct. \"Despite\" is correctly used without \"of\", the subject-verb agreement is accurate, and the tense remains consistent throughout the sentence. Thus, there is no error."
+      },
+      {
+        "q": 16,
+        "topic": "Tone",
+        "question": "Scarcely the minister had (A) / finished his lengthy speech (B) / when the angry crowd began (C) / to throw stones at the podium. (D) / No error (E)",
+        "options": {
+          "A": "Scarcely the minister had",
+          "B": "finished his lengthy speech",
+          "C": "when the angry crowd began",
+          "D": "to throw stones at the podium.",
+          "E": "No error"
+        },
+        "correct": "A",
+        "explanation": "The error is in part (A). When a sentence begins with a negative adverb like \"Scarcely,\" the rule of inversion applies, meaning the auxiliary verb must precede the subject. It should be \"Scarcely had the minister\"."
+      },
+      {
+        "q": 17,
+        "topic": "Error detection",
+        "question": "The implementation of (A) / these strict environmental policies have (B) / caused significant discontent among (C) / the major industrial manufacturers. (D) / No error (E)",
+        "options": {
+          "A": "The implementation of",
+          "B": "these strict environmental policies have",
+          "C": "caused significant discontent among",
+          "D": "the major industrial manufacturers.",
+          "E": "No error"
+        },
+        "correct": "B",
+        "explanation": "The error lies in part (B). The main subject of the sentence is \"The implementation\", which is a singular noun. Therefore, the singular verb \"has\" should be used instead of the plural verb \"have\". It should read \"...environmental policies has\"."
+      },
+      {
+        "q": 18,
+        "topic": "Error detection",
+        "question": "The ambitious software developer (A) / was extremely disappointed when (B) / he was debarred to participate (C) / in the international coding hackathon. (D) / No error (E)",
+        "options": {
+          "A": "The ambitious software developer",
+          "B": "was extremely disappointed when",
+          "C": "he was debarred to participate",
+          "D": "in the international coding hackathon.",
+          "E": "No error"
+        },
+        "correct": "C",
+        "explanation": "The error lies in part (C). The verb \"debar\" is always followed by the preposition \"from\" and a gerund (verb+ing). It should be \"he was debarred from participating\" instead of \"debarred to participate\"."
+      },
+      {
+        "q": 19,
+        "topic": "Para jumbles",
+        "question": "Rearrange the following parts to form a meaningful sentence.\nP: to implement structural reforms\nQ: the government has promised\nR: the long-term stability of the economy\nS: in order to ensure",
+        "options": {
+          "A": "P Q R S",
+          "B": "S R P Q",
+          "C": "Q S P R",
+          "D": "Q P S R",
+          "E": "R S Q P"
+        },
+        "correct": "D",
+        "explanation": "The subject and main verb begin with Q (\"the government has promised\"). This is followed by what they promised, P (\"to implement structural reforms\"). Next is the reason for the reforms, S (\"in order to ensure\"). Finally, the object of ensuring is R (\"the long-term stability of the economy\"). The correct sequence is Q P S R."
+      },
+      {
+        "q": 20,
+        "topic": "Vocabulary in context",
+        "question": "Rearrange the following parts to form a meaningful sentence.\nP: surrounding the deployment of artificial intelligence\nQ: ongoing ethical debates\nR: there are still numerous unresolved issues and\nS: despite the rapid technological advancements",
+        "options": {
+          "A": "P Q R S",
+          "B": "Q R S P",
+          "C": "R S Q P",
+          "D": "S Q P R",
+          "E": "S R Q P"
+        },
+        "correct": "E",
+        "explanation": "The sentence sets up a contrast. It begins with the dependent clause S (\"Despite the rapid technological advancements\"). This is logically followed by the main clause starting with R (\"there are still numerous unresolved issues and\"). The conjunction \"and\" connects to Q (\"ongoing ethical debates\"). The phrase concludes with P (\"surrounding the deployment of artificial intelligence\"), which modifies the debates and issues. Thus, S R Q P is correct."
+      },
+      {
+        "q": 21,
+        "topic": "Vocabulary in context",
+        "question": "Rearrange the following parts to form a meaningful sentence.\nP: significantly altered the natural habitats\nQ: industrial pollution has\nR: causing an alarming decline in local biodiversity\nS: of various endangered marine species",
+        "options": {
+          "A": "Q P S R",
+          "B": "P Q R S",
+          "C": "Q S P R",
+          "D": "S R Q P",
+          "E": "R P S Q"
+        },
+        "correct": "A",
+        "explanation": "The sentence starts with the subject and auxiliary verb Q (\"Industrial pollution has\"). This is followed by the main verb phrase P (\"significantly altered the natural habitats\"). S specifies whose habitats (\"of various endangered marine species\"). R provides the consequence of this alteration (\"causing an alarming decline in local biodiversity\"). The correct sequence is Q P S R."
+      },
+      {
+        "q": 22,
+        "topic": "Vocabulary in context",
+        "question": "Rearrange the following parts to form a meaningful sentence.\nP: the company managed to achieve\nQ: its highest quarterly profit to date\nR: due to a sudden surge in global demand\nS: overcoming severe supply chain disruptions",
+        "options": {
+          "A": "P Q R S",
+          "B": "S P Q R",
+          "C": "R S P Q",
+          "D": "Q R P S",
+          "E": "S R Q P"
+        },
+        "correct": "B",
+        "explanation": "The sentence begins with a participial phrase indicating a hurdle overcome, S (\"Overcoming severe supply chain disruptions\"). Then comes the main subject and verb, P (\"the company managed to achieve\"). What did they achieve? Q (\"its highest quarterly profit to date\"). Why did they achieve it? R (\"due to a sudden surge in global demand\"). Thus, S P Q R is the correct sequence."
+      },
+      {
+        "q": 23,
+        "topic": "Vocabulary in context",
+        "question": "The manager asked the employee to look down upon the documents before the meeting.",
+        "options": {
+          "A": "look up to",
+          "B": "look out for",
+          "C": "look over",
+          "D": "look into",
+          "E": "No replacement required"
+        },
+        "correct": "C",
+        "explanation": "The phrase \"look down upon\" means to treat someone with disdain or view them as inferior, which makes no sense here. The manager wants the employee to review or examine the documents. The correct phrasal verb for reviewing or examining is \"look over\"."
+      },
+      {
+        "q": 24,
+        "topic": "Vocabulary in context",
+        "question": "The new cybersecurity regulations has been implemented to protect user data.",
+        "options": {
+          "A": "have being implemented",
+          "B": "has being implemented",
+          "C": "is been implemented",
+          "D": "have been implemented",
+          "E": "No replacement required"
+        },
+        "correct": "D",
+        "explanation": "The subject of the sentence is \"regulations,\" which is plural. Therefore, the plural auxiliary verb \"have\" must be used instead of the singular \"has\". The correct passive present perfect construction is \"have been implemented\"."
+      },
+      {
+        "q": 25,
+        "topic": "Vocabulary in context",
+        "question": "The committee decided to postpone the vote, as there was insufficient evidence to make a decision.",
+        "options": {
+          "A": "as there were",
+          "B": "because there has",
+          "C": "since there were",
+          "D": "for there are",
+          "E": "No replacement required"
+        },
+        "correct": "E",
+        "explanation": "The highlighted phrase is grammatically correct. \"Evidence\" is an uncountable noun, so it correctly takes the singular verb \"was\". The usage of \"as\" to indicate reason is also appropriate here. No replacement is needed."
+      },
+      {
+        "q": 26,
+        "topic": "Vocabulary in context",
+        "question": "If he would have worked harder, he would have secured a promotion this year.",
+        "options": {
+          "A": "had worked",
+          "B": "has worked",
+          "C": "worked",
+          "D": "have worked",
+          "E": "No replacement required"
+        },
+        "correct": "A",
+        "explanation": "This is a Type 3 conditional sentence representing an unreal past condition. The correct structure requires the past perfect tense (\"had + past participle\") in the 'if' clause and \"would have + past participle\" in the main clause. Therefore, \"would have worked\" should be replaced with \"had worked\"."
+      },
+      {
+        "q": 27,
+        "topic": "Fill in the blanks",
+        "question": "The CEO's speech was so ______ that it managed to ______ the entire workforce during the crisis.",
+        "options": {
+          "A": "monotonous, inspire",
+          "B": "compelling, motivate",
+          "C": "tedious, discourage",
+          "D": "inspiring, demoralize",
+          "E": "cryptic, uplift"
+        },
+        "correct": "B",
+        "explanation": "The context implies that the speech had a significant positive impact on the workforce during a difficult time. \"Compelling\" (evoking interest/attention) and \"motivate\" pair perfectly to convey a positive and uplifting scenario. Other options contain contradictory pairs (e.g., monotonous/inspire, inspiring/demoralize) or negative meanings."
+      },
+      {
+        "q": 28,
+        "topic": "Fill in the blanks",
+        "question": "Despite the ______ evidence presented by the prosecution, the jury decided to ______ the defendant due to a technicality.",
+        "options": {
+          "A": "weak, convict",
+          "B": "overwhelming, condemn",
+          "C": "irrefutable, acquit",
+          "D": "fabricated, exonerate",
+          "E": "scant, pardon"
+        },
+        "correct": "C",
+        "explanation": "The word \"Despite\" indicates a contrast between the nature of the evidence and the jury's decision. If the evidence was \"irrefutable\" (impossible to deny), one would expect a conviction. The contrast is that the jury decided to \"acquit\" (free from a criminal charge) due to a technicality. This makes Option C the best fit."
+      },
+      {
+        "q": 29,
+        "topic": "Error detection",
+        "question": "The sudden ______ in international oil prices has led to a corresponding ______ in the cost of domestic transportation.",
+        "options": {
+          "A": "drop, increase",
+          "B": "stability, surge",
+          "C": "fluctuation, drop",
+          "D": "spike, rise",
+          "E": "surge, decline"
+        },
+        "correct": "D",
+        "explanation": "Oil prices directly impact transportation costs in a proportional manner. If oil prices go up, transportation costs go up. \"Spike\" (a sudden increase) and \"rise\" accurately reflect this direct positive correlation. Options A and E imply an incorrect inverse relationship."
+      },
+      {
+        "q": 30,
+        "topic": "Fill in the blanks",
+        "question": "The researcher was commended for her ______ approach, which ensured that no minor detail was ______ during the experiment.",
+        "options": {
+          "A": "careless, noticed",
+          "B": "hasty, analyzed",
+          "C": "negligent, overlooked",
+          "D": "orthodox, recorded",
+          "E": "meticulous, ignored"
+        },
+        "correct": "E",
+        "explanation": "Being commended indicates praise for a positive trait. A \"meticulous\" (showing great attention to detail) approach is praiseworthy. Because she was meticulous, it ensured that no minor detail was missed or \"ignored\". Option E perfectly aligns with the logical flow of the sentence."
+      }
+    ],
+    "Quantitative Aptitude": [
+      {
+        "q": 1,
+        "topic": "Percentage",
+        "question": "What is the total number of units sold across all three products combined?",
+        "options": {
+          "A": "12,120",
+          "B": "11,800",
+          "C": "12,500",
+          "D": "13,100",
+          "E": "11,500"
+        },
+        "correct": "A",
+        "explanation": "Let Product Y production be 10k. Then Product X = 15k. Product Z = 1.20 * 10k = 12k. Total production = 15k + 10k + 12k = 37k = 14,800. Therefore, k = 400. Production: Product X = 6,000 units, Product Y = 4,000 units, Product Z = 4,800 units. Units sold: Product X = 80 percent of 6,000 = 4,800; Product Y = 75 percent of 4,000 = 3,000; Product Z = 90 percent of 4,800 = 4,320. Total units sold = 4,800 + 3,000 + 4,320 = 12,120 units.",
+        "passage": "A manufacturing plant produces three distinct products: Product X, Product Y, and Product Z. In the year 2023, the total combined production of all three products was exactly 14,800 units. The ratio of the number of units of Product X produced to Product Y produced was 3 to 2. The production of Product Z was exactly 20 percent more than the production of Product Y. Following production, the units were sent to the market for distribution. Out of the total units of Product X produced, 80 percent were successfully sold. Out of the total units of Product Y produced, 75 percent were successfully sold. Out of the total units of Product Z produced, 90 percent were successfully sold. The remaining unsold units were transferred to the company warehouse for storage."
+      },
+      {
+        "q": 2,
+        "topic": "Ratio and proportion",
+        "question": "What is the ratio of unsold units of Product X to unsold units of Product Z?",
+        "options": {
+          "A": "3 : 1",
+          "B": "5 : 2",
+          "C": "4 : 3",
+          "D": "2 : 1",
+          "E": "5 : 3"
+        },
+        "correct": "B",
+        "explanation": "Unsold units of Product X = 6,000 - 4,800 = 1,200 units. Unsold units of Product Z = 4,800 - 4,320 = 480 units. The ratio of unsold units of Product X to Product Z is 1,200 : 480 = 120 : 48 = 5 : 2.",
+        "passage": "A manufacturing plant produces three distinct products: Product X, Product Y, and Product Z. In the year 2023, the total combined production of all three products was exactly 14,800 units. The ratio of the number of units of Product X produced to Product Y produced was 3 to 2. The production of Product Z was exactly 20 percent more than the production of Product Y. Following production, the units were sent to the market for distribution. Out of the total units of Product X produced, 80 percent were successfully sold. Out of the total units of Product Y produced, 75 percent were successfully sold. Out of the total units of Product Z produced, 90 percent were successfully sold. The remaining unsold units were transferred to the company warehouse for storage."
+      },
+      {
+        "q": 3,
+        "topic": "Percentage",
+        "question": "The number of units sold of Product Y is what percentage of the total production of Product Z?",
+        "options": {
+          "A": "55.5 percent",
+          "B": "60.0 percent",
+          "C": "62.5 percent",
+          "D": "65.0 percent",
+          "E": "67.5 percent"
+        },
+        "correct": "C",
+        "explanation": "Units sold of Product Y = 3,000 units. Total production of Product Z = 4,800 units. Required percentage = (3,000 / 4,800) * 100 = (5 / 8) * 100 = 62.5 percent.",
+        "passage": "A manufacturing plant produces three distinct products: Product X, Product Y, and Product Z. In the year 2023, the total combined production of all three products was exactly 14,800 units. The ratio of the number of units of Product X produced to Product Y produced was 3 to 2. The production of Product Z was exactly 20 percent more than the production of Product Y. Following production, the units were sent to the market for distribution. Out of the total units of Product X produced, 80 percent were successfully sold. Out of the total units of Product Y produced, 75 percent were successfully sold. Out of the total units of Product Z produced, 90 percent were successfully sold. The remaining unsold units were transferred to the company warehouse for storage."
+      },
+      {
+        "q": 4,
+        "topic": "Caselets",
+        "question": "What is the total number of unsold units of Product X and Product Y combined?",
+        "options": {
+          "A": "1,800",
+          "B": "2,000",
+          "C": "2,100",
+          "D": "2,200",
+          "E": "2,400"
+        },
+        "correct": "D",
+        "explanation": "Unsold units of Product X = 6,000 - 4,800 = 1,200 units. Unsold units of Product Y = 4,000 - 3,000 = 1,000 units. Combined unsold units of Product X and Product Y = 1,200 + 1,000 = 2,200 units.",
+        "passage": "A manufacturing plant produces three distinct products: Product X, Product Y, and Product Z. In the year 2023, the total combined production of all three products was exactly 14,800 units. The ratio of the number of units of Product X produced to Product Y produced was 3 to 2. The production of Product Z was exactly 20 percent more than the production of Product Y. Following production, the units were sent to the market for distribution. Out of the total units of Product X produced, 80 percent were successfully sold. Out of the total units of Product Y produced, 75 percent were successfully sold. Out of the total units of Product Z produced, 90 percent were successfully sold. The remaining unsold units were transferred to the company warehouse for storage."
+      },
+      {
+        "q": 5,
+        "topic": "Caselets",
+        "question": "If the selling price per unit of Product Z is Rs. 60, what is the total revenue generated strictly from the sale of Product Z?",
+        "options": {
+          "A": "Rs. 2,40,000",
+          "B": "Rs. 2,48,000",
+          "C": "Rs. 2,52,000",
+          "D": "Rs. 2,56,000",
+          "E": "Rs. 2,59,200"
+        },
+        "correct": "E",
+        "explanation": "Total units of Product Z sold = 4,320 units. Selling price per unit = Rs. 60. Total revenue from Product Z = 4,320 * 60 = Rs. 2,59,200.",
+        "passage": "A manufacturing plant produces three distinct products: Product X, Product Y, and Product Z. In the year 2023, the total combined production of all three products was exactly 14,800 units. The ratio of the number of units of Product X produced to Product Y produced was 3 to 2. The production of Product Z was exactly 20 percent more than the production of Product Y. Following production, the units were sent to the market for distribution. Out of the total units of Product X produced, 80 percent were successfully sold. Out of the total units of Product Y produced, 75 percent were successfully sold. Out of the total units of Product Z produced, 90 percent were successfully sold. The remaining unsold units were transferred to the company warehouse for storage."
+      },
+      {
+        "q": 6,
+        "topic": "Percentage",
+        "question": "What is the total number of English language books across all three subjects combined?",
+        "options": {
+          "A": "635",
+          "B": "615",
+          "C": "645",
+          "D": "625",
+          "E": "655"
+        },
+        "correct": "A",
+        "explanation": "Let Physics books = P. Chemistry = 1.5 P. Mathematics = 1.5 P - 100. Total = P + 1.5 P + 1.5 P - 100 = 4P - 100 = 1,100. 4P = 1,200 => P = 300. Physics books = 300; Chemistry books = 450; Mathematics books = 350. English books: Physics = 40 percent of 300 = 120; Chemistry = 60 percent of 450 = 270; Mathematics = 70 percent of 350 = 245. Total English books = 120 + 270 + 245 = 635.",
+        "passage": "A central library houses books categorized into three subjects: Physics, Chemistry, and Mathematics. The total number of books in the library is exactly 1,100. The number of Chemistry books is 50 percent more than the number of Physics books. The number of Mathematics books is 100 less than the number of Chemistry books. Furthermore, the books in each subject are available in two languages: English and Hindi. Among the Physics books, 40 percent are in English and the remaining are in Hindi. Among the Chemistry books, 60 percent are in English and the remaining are in Hindi. Among the Mathematics books, 70 percent are in English and the remaining are in Hindi."
+      },
+      {
+        "q": 7,
+        "topic": "Caselets",
+        "question": "What is the difference between the total number of Chemistry books and the total number of Physics books in the library?",
+        "options": {
+          "A": "120",
+          "B": "150",
+          "C": "180",
+          "D": "100",
+          "E": "200"
+        },
+        "correct": "B",
+        "explanation": "Total Chemistry books = 450. Total Physics books = 300. Difference = 450 - 300 = 150 books.",
+        "passage": "A central library houses books categorized into three subjects: Physics, Chemistry, and Mathematics. The total number of books in the library is exactly 1,100. The number of Chemistry books is 50 percent more than the number of Physics books. The number of Mathematics books is 100 less than the number of Chemistry books. Furthermore, the books in each subject are available in two languages: English and Hindi. Among the Physics books, 40 percent are in English and the remaining are in Hindi. Among the Chemistry books, 60 percent are in English and the remaining are in Hindi. Among the Mathematics books, 70 percent are in English and the remaining are in Hindi."
+      },
+      {
+        "q": 8,
+        "topic": "Ratio and proportion",
+        "question": "What is the ratio of Hindi books in Physics to Hindi books in Mathematics?",
+        "options": {
+          "A": "5 : 3",
+          "B": "10 : 7",
+          "C": "12 : 7",
+          "D": "4 : 3",
+          "E": "9 : 5"
+        },
+        "correct": "C",
+        "explanation": "Hindi books in Physics = 300 - 120 = 180. Hindi books in Mathematics = 350 - 245 = 105. Ratio = 180 : 105 = 12 : 7.",
+        "passage": "A central library houses books categorized into three subjects: Physics, Chemistry, and Mathematics. The total number of books in the library is exactly 1,100. The number of Chemistry books is 50 percent more than the number of Physics books. The number of Mathematics books is 100 less than the number of Chemistry books. Furthermore, the books in each subject are available in two languages: English and Hindi. Among the Physics books, 40 percent are in English and the remaining are in Hindi. Among the Chemistry books, 60 percent are in English and the remaining are in Hindi. Among the Mathematics books, 70 percent are in English and the remaining are in Hindi."
+      },
+      {
+        "q": 9,
+        "topic": "Percentage",
+        "question": "The number of English books in Chemistry is what percentage of the total number of Chemistry books?",
+        "options": {
+          "A": "50 percent",
+          "B": "52 percent",
+          "C": "55 percent",
+          "D": "60 percent",
+          "E": "65 percent"
+        },
+        "correct": "D",
+        "explanation": "English books in Chemistry = 270. Total Chemistry books = 450. Percentage = (270 / 450) * 100 = 60 percent.",
+        "passage": "A central library houses books categorized into three subjects: Physics, Chemistry, and Mathematics. The total number of books in the library is exactly 1,100. The number of Chemistry books is 50 percent more than the number of Physics books. The number of Mathematics books is 100 less than the number of Chemistry books. Furthermore, the books in each subject are available in two languages: English and Hindi. Among the Physics books, 40 percent are in English and the remaining are in Hindi. Among the Chemistry books, 60 percent are in English and the remaining are in Hindi. Among the Mathematics books, 70 percent are in English and the remaining are in Hindi."
+      },
+      {
+        "q": 10,
+        "topic": "Average",
+        "question": "What is the average number of Hindi language books per subject in the library?",
+        "options": {
+          "A": "140",
+          "B": "145",
+          "C": "148",
+          "D": "150",
+          "E": "155"
+        },
+        "correct": "E",
+        "explanation": "Hindi books in Physics = 180; Chemistry = 450 - 270 = 180; Mathematics = 350 - 245 = 105. Total Hindi books = 180 + 180 + 105 = 465. Average number of Hindi books per subject = 465 / 3 = 155.",
+        "passage": "A central library houses books categorized into three subjects: Physics, Chemistry, and Mathematics. The total number of books in the library is exactly 1,100. The number of Chemistry books is 50 percent more than the number of Physics books. The number of Mathematics books is 100 less than the number of Chemistry books. Furthermore, the books in each subject are available in two languages: English and Hindi. Among the Physics books, 40 percent are in English and the remaining are in Hindi. Among the Chemistry books, 60 percent are in English and the remaining are in Hindi. Among the Mathematics books, 70 percent are in English and the remaining are in Hindi."
+      },
+      {
+        "q": 11,
+        "topic": "Approximation",
+        "question": "What approximate value should come in place of the question mark (?) in the following equation?\n39.98% of 450.02 + 225.05 / 14.98 = ?",
+        "options": {
+          "A": "195",
+          "B": "185",
+          "C": "205",
+          "D": "210",
+          "E": "175"
+        },
+        "correct": "A",
+        "explanation": "Approximating values: 39.98% approx 40%, 450.02 approx 450, 225.05 approx 225, 14.98 approx 15. Equation becomes: 40% of 450 + (225 / 15) = 180 + 15 = 195."
+      },
+      {
+        "q": 12,
+        "topic": "Approximation",
+        "question": "What approximate value should come in place of the question mark (?) in the following equation?\nsqrt(624.99) * 11.98 - 179.95 = ?",
+        "options": {
+          "A": "110",
+          "B": "120",
+          "C": "130",
+          "D": "140",
+          "E": "150"
+        },
+        "correct": "B",
+        "explanation": "Approximating values: sqrt(624.99) approx sqrt(625) = 25, 11.98 approx 12, 179.95 approx 180. Equation becomes: 25 * 12 - 180 = 300 - 180 = 120."
+      },
+      {
+        "q": 13,
+        "topic": "Approximation",
+        "question": "What approximate value should come in place of the question mark (?) in the following equation?\n(17.99)^2 + (11.98)^2 - (13.02)^2 = ?",
+        "options": {
+          "A": "279",
+          "B": "289",
+          "C": "299",
+          "D": "309",
+          "E": "319"
+        },
+        "correct": "C",
+        "explanation": "Approximating values: 17.99 approx 18, 11.98 approx 12, 13.02 approx 13. Equation becomes: 18^2 + 12^2 - 13^2 = 324 + 144 - 169 = 468 - 169 = 299."
+      },
+      {
+        "q": 14,
+        "topic": "Approximation",
+        "question": "What approximate value should come in place of the question mark (?) in the following equation?\n520.02 / 12.99 * 4.01 + 80.05 = ?",
+        "options": {
+          "A": "210",
+          "B": "220",
+          "C": "230",
+          "D": "240",
+          "E": "250"
+        },
+        "correct": "D",
+        "explanation": "Approximating values: 520.02 approx 520, 12.99 approx 13, 4.01 approx 4, 80.05 approx 80. Equation becomes: (520 / 13) * 4 + 80 = 40 * 4 + 80 = 160 + 80 = 240."
+      },
+      {
+        "q": 15,
+        "topic": "Approximation",
+        "question": "What approximate value should come in place of the question mark (?) in the following equation?\n24.98% of 640.05 + 49.95% of 240.02 = ?",
+        "options": {
+          "A": "240",
+          "B": "250",
+          "C": "260",
+          "D": "270",
+          "E": "280"
+        },
+        "correct": "E",
+        "explanation": "Approximating values: 24.98% approx 25%, 640.05 approx 640, 49.95% approx 50%, 240.02 approx 240. Equation becomes: 25% of 640 + 50% of 240 = 160 + 120 = 280."
+      },
+      {
+        "q": 16,
+        "topic": "Quadratic equations",
+        "question": "Equation I: x^2 - 11x + 28 = 0\nEquation II: y^2 - 5y + 6 = 0",
+        "options": {
+          "A": "x > y",
+          "B": "x < y",
+          "C": "x >= y",
+          "D": "x <= y",
+          "E": "x = y or relation cannot be established"
+        },
+        "correct": "A",
+        "explanation": "Solving Equation I: x^2 - 11x + 28 = 0 => (x - 4)(x - 7) = 0 => x = 4, 7. Solving Equation II: y^2 - 5y + 6 = 0 => (y - 2)(y - 3) = 0 => y = 2, 3. Comparing roots: 4 > 2, 3 and 7 > 2, 3. Hence, x > y."
+      },
+      {
+        "q": 17,
+        "topic": "Quadratic equations",
+        "question": "Equation I: x^2 - 7x + 12 = 0\nEquation II: y^2 - 11y + 30 = 0",
+        "options": {
+          "A": "x > y",
+          "B": "x < y",
+          "C": "x >= y",
+          "D": "x <= y",
+          "E": "x = y or relation cannot be established"
+        },
+        "correct": "B",
+        "explanation": "Solving Equation I: x^2 - 7x + 12 = 0 => (x - 3)(x - 4) = 0 => x = 3, 4. Solving Equation II: y^2 - 11y + 30 = 0 => (y - 5)(y - 6) = 0 => y = 5, 6. Comparing roots: 3 < 5, 6 and 4 < 5, 6. Hence, x < y."
+      },
+      {
+        "q": 18,
+        "topic": "Quadratic equations",
+        "question": "Equation I: x^2 - 9x + 20 = 0\nEquation II: y^2 - 7y + 12 = 0",
+        "options": {
+          "A": "x > y",
+          "B": "x < y",
+          "C": "x >= y",
+          "D": "x <= y",
+          "E": "x = y or relation cannot be established"
+        },
+        "correct": "C",
+        "explanation": "Solving Equation I: x^2 - 9x + 20 = 0 => (x - 4)(x - 5) = 0 => x = 4, 5. Solving Equation II: y^2 - 7y + 12 = 0 => (y - 3)(y - 4) = 0 => y = 3, 4. Comparing roots: 4 = 4 and 4 > 3; 5 > 3 and 5 > 4. Hence, x >= y."
+      },
+      {
+        "q": 19,
+        "topic": "Quadratic equations",
+        "question": "Equation I: x^2 - 6x + 8 = 0\nEquation II: y^2 - 10y + 24 = 0",
+        "options": {
+          "A": "x > y",
+          "B": "x < y",
+          "C": "x >= y",
+          "D": "x <= y",
+          "E": "x = y or relation cannot be established"
+        },
+        "correct": "D",
+        "explanation": "Solving Equation I: x^2 - 6x + 8 = 0 => (x - 2)(x - 4) = 0 => x = 2, 4. Solving Equation II: y^2 - 10y + 24 = 0 => (y - 4)(y - 6) = 0 => y = 4, 6. Comparing roots: 2 < 4, 6; 4 = 4 and 4 < 6. Hence, x <= y."
+      },
+      {
+        "q": 20,
+        "topic": "Quadratic equations",
+        "question": "Equation I: x^2 - 5x + 6 = 0\nEquation II: y^2 - 6y + 8 = 0",
+        "options": {
+          "A": "x > y",
+          "B": "x < y",
+          "C": "x >= y",
+          "D": "x <= y",
+          "E": "x = y or relation cannot be established"
+        },
+        "correct": "E",
+        "explanation": "Solving Equation I: x^2 - 5x + 6 = 0 => (x - 2)(x - 3) = 0 => x = 2, 3. Solving Equation II: y^2 - 6y + 8 = 0 => (y - 2)(y - 4) = 0 => y = 2, 4. Comparing roots: for x = 2, y = 2 (equal) and y = 4 (x < y); for x = 3, y = 2 (x > y). Since x is both less than and greater than y, relation cannot be established."
+      },
+      {
+        "q": 21,
+        "topic": "Number series",
+        "question": "What should come in place of the question mark (?) in the following number series?\n12, 13, 25, 38, 63, ?",
+        "options": {
+          "A": "101",
+          "B": "98",
+          "C": "105",
+          "D": "108",
+          "E": "95"
+        },
+        "correct": "A",
+        "explanation": "The pattern is the sum of the two preceding terms: 12 + 13 = 25; 13 + 25 = 38; 25 + 38 = 63; 38 + 63 = 101. Hence, the missing number is 101."
+      },
+      {
+        "q": 22,
+        "topic": "Number series",
+        "question": "What should come in place of the question mark (?) in the following number series?\n5, 11, 23, 47, 95, ?",
+        "options": {
+          "A": "189",
+          "B": "191",
+          "C": "193",
+          "D": "195",
+          "E": "187"
+        },
+        "correct": "B",
+        "explanation": "The pattern is (* 2 + 1): 5 * 2 + 1 = 11; 11 * 2 + 1 = 23; 23 * 2 + 1 = 47; 47 * 2 + 1 = 95; 95 * 2 + 1 = 191. Hence, the missing number is 191."
+      },
+      {
+        "q": 23,
+        "topic": "Number series",
+        "question": "What should come in place of the question mark (?) in the following number series?\n4, 9, 20, 43, 90, ?",
+        "options": {
+          "A": "181",
+          "B": "183",
+          "C": "185",
+          "D": "187",
+          "E": "189"
+        },
+        "correct": "C",
+        "explanation": "The pattern is (* 2 + 1, * 2 + 2, * 2 + 3, * 2 + 4, * 2 + 5): 4 * 2 + 1 = 9; 9 * 2 + 2 = 20; 20 * 2 + 3 = 43; 43 * 2 + 4 = 90; 90 * 2 + 5 = 185. Hence, the missing number is 185."
+      },
+      {
+        "q": 24,
+        "topic": "Number series",
+        "question": "What should come in place of the question mark (?) in the following number series?\n100, 99, 91, 64, 0, ?",
+        "options": {
+          "A": "-100",
+          "B": "-110",
+          "C": "-120",
+          "D": "-125",
+          "E": "-130"
+        },
+        "correct": "D",
+        "explanation": "The pattern is subtracting cubes of consecutive integers (1^3, 2^3, 3^3, 4^3, 5^3): 100 - 1^3 = 99; 99 - 2^3 = 91; 91 - 3^3 = 64; 64 - 4^3 = 0; 0 - 5^3 = -125. Hence, the missing number is -125."
+      },
+      {
+        "q": 25,
+        "topic": "Number series",
+        "question": "What should come in place of the question mark (?) in the following number series?\n14, 28, 84, 336, 1680, ?",
+        "options": {
+          "A": "8,400",
+          "B": "9,200",
+          "C": "9,600",
+          "D": "10,000",
+          "E": "10,080"
+        },
+        "correct": "E",
+        "explanation": "The pattern is multiplying by consecutive integers (* 2, * 3, * 4, * 5, * 6): 14 * 2 = 28; 28 * 3 = 84; 84 * 4 = 336; 336 * 5 = 1680; 1680 * 6 = 10,080. Hence, the missing number is 10,080."
+      },
+      {
+        "q": 26,
+        "topic": "Profit and loss",
+        "question": "A shopkeeper marks an article 40 percent above its cost price and offers a discount of 15 percent on the marked price. If he makes a total profit of Rs. 380, what is the cost price of the article?",
+        "options": {
+          "A": "Rs. 2,000",
+          "B": "Rs. 2,200",
+          "C": "Rs. 2,400",
+          "D": "Rs. 2,500",
+          "E": "Rs. 1,800"
+        },
+        "correct": "A",
+        "explanation": "Let the cost price (CP) = 100x. Marked Price (MP) = 140x. Selling Price (SP) = 85 percent of 140x = 119x. Profit = SP - CP = 119x - 100x = 19x. Given 19x = 380 => x = 20. Cost price = 100 * 20 = Rs. 2,000."
+      },
+      {
+        "q": 27,
+        "topic": "Simple and compound interest",
+        "question": "The simple interest on a sum of money for 2 years at 10 percent per annum is Rs. 1,200. What will be the compound interest on the same principal sum at the same interest rate and for the same duration, compounded annually?",
+        "options": {
+          "A": "Rs. 1,240",
+          "B": "Rs. 1,260",
+          "C": "Rs. 1,280",
+          "D": "Rs. 1,300",
+          "E": "Rs. 1,320"
+        },
+        "correct": "B",
+        "explanation": "Simple Interest (SI) = (P * R * T) / 100 => 1200 = (P * 10 * 2) / 100 => P = Rs. 6,000. Compound Interest (CI) for 2 years at 10 percent = P * [(1 + R/100)^T - 1] = 6000 * [(1.1)^2 - 1] = 6000 * 0.21 = Rs. 1,260."
+      },
+      {
+        "q": 28,
+        "topic": "HCF and LCM",
+        "question": "Person A can complete a piece of work in 15 days, and Person B can complete the same work in 30 days. They start working together, but Person A leaves the work 3 days before its completion. In how many total days was the entire work completed?",
+        "options": {
+          "A": "10 days",
+          "B": "11 days",
+          "C": "12 days",
+          "D": "13 days",
+          "E": "14 days"
+        },
+        "correct": "C",
+        "explanation": "Let total work = 30 units (LCM of 15 and 30). Rate of A = 2 units/day, Rate of B = 1 unit/day. Let total days = T. Person A worked for (T - 3) days and Person B worked for T days. Work equation: 2*(T - 3) + 1*T = 30 => 2T - 6 + T = 30 => 3T = 36 => T = 12 days."
+      },
+      {
+        "q": 29,
+        "topic": "Time, speed and distance",
+        "question": "A motorboat can travel 36 km downstream in 3 hours and 24 km upstream in 4 hours. What is the speed of the motorboat in still water?",
+        "options": {
+          "A": "6 km/h",
+          "B": "7 km/h",
+          "C": "8 km/h",
+          "D": "9 km/h",
+          "E": "10 km/h"
+        },
+        "correct": "D",
+        "explanation": "Downstream speed (D) = 36 / 3 = 12 km/h. Upstream speed (U) = 24 / 4 = 6 km/h. Speed of boat in still water = (D + U) / 2 = (12 + 6) / 2 = 9 km/h."
+      },
+      {
+        "q": 30,
+        "topic": "Ratio and proportion",
+        "question": "The ratio of the present ages of Person A and Person B is 4 : 5. Six years hence, the ratio of their ages will become 5 : 6. What is the present age of Person A?",
+        "options": {
+          "A": "18 years",
+          "B": "20 years",
+          "C": "21 years",
+          "D": "22 years",
+          "E": "24 years"
+        },
+        "correct": "E",
+        "explanation": "Let present age of A = 4x and B = 5x. Six years hence: (4x + 6) / (5x + 6) = 5 / 6 => 24x + 36 = 25x + 30 => x = 6. Present age of A = 4 * 6 = 24 years."
+      },
+      {
+        "q": 31,
+        "topic": "Mixture and allegation",
+        "question": "A vessel contains 80 liters of a mixture of milk and water in the ratio 7 : 1. How many liters of pure water must be added to this mixture so that the resulting ratio of milk to water becomes 5 : 1?",
+        "options": {
+          "A": "4 liters",
+          "B": "6 liters",
+          "C": "8 liters",
+          "D": "5 liters",
+          "E": "10 liters"
+        },
+        "correct": "A",
+        "explanation": "Quantity of Milk = 80 * (7 / 8) = 70 liters. Quantity of Water = 80 - 70 = 10 liters. Let x liters of water be added. New ratio: 70 / (10 + x) = 5 / 1 => 50 + 5x = 70 => 5x = 20 => x = 4 liters."
+      },
+      {
+        "q": 32,
+        "topic": "Profit and loss",
+        "question": "Partner A and Partner B enter into a business partnership with initial investments of Rs. 4,000 and Rs. 6,000 respectively. After 4 months, Partner A increases his investment by 50 percent while Partner B withdraws Rs. 1,000. At the end of one year, the total profit earned is Rs. 14,200. What is Partner A's share in the total profit?",
+        "options": {
+          "A": "Rs. 6,800",
+          "B": "Rs. 7,100",
+          "C": "Rs. 7,200",
+          "D": "Rs. 7,400",
+          "E": "Rs. 7,500"
+        },
+        "correct": "B",
+        "explanation": "Partner A's investment equivalent = (4000 * 4) + (6000 * 8) = 16000 + 48000 = 64,000. Partner B's investment equivalent = (6000 * 4) + (5000 * 8) = 24000 + 40000 = 64,000. Profit sharing ratio A : B = 64000 : 64000 = 1 : 1. Partner A's share = 14200 / 2 = Rs. 7,100."
+      },
+      {
+        "q": 33,
+        "topic": "Percentage",
+        "question": "A bag contains 5 red balls, 4 green balls, and 3 blue balls. If two balls are drawn at random one after another without replacement, what is the probability that both drawn balls are of the same color?",
+        "options": {
+          "A": "17 / 66",
+          "B": "18 / 66",
+          "C": "19 / 66",
+          "D": "20 / 66",
+          "E": "21 / 66"
+        },
+        "correct": "C",
+        "explanation": "Total balls = 12. Total ways to draw 2 balls = C(12, 2) = (12 * 11) / 2 = 66. Favorable outcomes for same color: 2 Red = C(5, 2) = 10; 2 Green = C(4, 2) = 6; 2 Blue = C(3, 2) = 3. Total favorable outcomes = 10 + 6 + 3 = 19. Probability = 19 / 66."
+      },
+      {
+        "q": 34,
+        "topic": "Area",
+        "question": "The length of a rectangle is 4 cm more than its breadth. If the perimeter of the rectangle is 48 cm, what is the total area of the rectangle?",
+        "options": {
+          "A": "120 sq. cm",
+          "B": "128 sq. cm",
+          "C": "132 sq. cm",
+          "D": "140 sq. cm",
+          "E": "144 sq. cm"
+        },
+        "correct": "D",
+        "explanation": "Let breadth = B, length L = B + 4. Perimeter = 2(L + B) = 48 => L + B = 24 => (B + 4) + B = 24 => 2B = 20 => B = 10 cm. Length L = 14 cm. Area = L * B = 14 * 10 = 140 sq. cm."
+      },
+      {
+        "q": 35,
+        "topic": "Average",
+        "question": "The average weight of 8 members in a sports team increases by 2.5 kg when one of the members who weighs 56 kg is replaced by a new member. What is the weight of the new member?",
+        "options": {
+          "A": "70 kg",
+          "B": "72 kg",
+          "C": "74 kg",
+          "D": "75 kg",
+          "E": "76 kg"
+        },
+        "correct": "E",
+        "explanation": "Increase in total weight = Number of members * Increase in average = 8 * 2.5 = 20 kg. Weight of new member = Weight of replaced member + Increase in total weight = 56 + 20 = 76 kg."
+      }
+    ],
+    "Reasoning Ability": [
+      {
+        "q": 1,
+        "topic": "Circular seating",
+        "question": "Who sits third to the left of Q?",
+        "options": {
+          "A": "S",
+          "B": "P",
+          "C": "T",
+          "D": "V",
+          "E": "U"
+        },
+        "correct": "A",
+        "explanation": "Based on the given conditions, the circular arrangement (clockwise) is T, S, P, W, V, U, Q, R. Q is sitting between U and R. The person third to the left of Q is S."
+      },
+      {
+        "q": 2,
+        "topic": "Circular seating",
+        "question": "Who sits second to the right of V?",
+        "options": {
+          "A": "R",
+          "B": "Q",
+          "C": "U",
+          "D": "S",
+          "E": "W"
+        },
+        "correct": "B",
+        "explanation": "In the derived seating arrangement (T, S, P, W, V, U, Q, R), V is positioned between W and U. The person second to the right of V (moving counter-clockwise as they face the center) is Q."
+      },
+      {
+        "q": 3,
+        "topic": "Circular seating",
+        "question": "How many people sit between T and W when counted from the right of T?",
+        "options": {
+          "A": "None",
+          "B": "One",
+          "C": "Two",
+          "D": "Three",
+          "E": "Four"
+        },
+        "correct": "C",
+        "explanation": "Counting from the right of T (counter-clockwise), the people sitting between T and W are S and P. Thus, exactly two people sit between them."
+      },
+      {
+        "q": 4,
+        "topic": "Circular seating",
+        "question": "Who sits opposite to U?",
+        "options": {
+          "A": "P",
+          "B": "R",
+          "C": "T",
+          "D": "S",
+          "E": "V"
+        },
+        "correct": "D",
+        "explanation": "In a circular arrangement of 8 people, the person opposite to U (who is between V and Q) is S (who is between T and P)."
+      },
+      {
+        "q": 5,
+        "topic": "Circular seating",
+        "question": "What is the position of R with respect to S?",
+        "options": {
+          "A": "Third to the right",
+          "B": "Second to the right",
+          "C": "Immediate left",
+          "D": "Fourth to the right",
+          "E": "Second to the left"
+        },
+        "correct": "E",
+        "explanation": "S is seated between T and P. R is seated between Q and T. Counting to the left of S (clockwise), we find T, and then R. Therefore, R sits second to the left of S."
+      },
+      {
+        "q": 6,
+        "topic": "Floor puzzles",
+        "question": "Who lives on floor number 5?",
+        "options": {
+          "A": "H",
+          "B": "E",
+          "C": "D",
+          "D": "B",
+          "E": "C"
+        },
+        "correct": "A",
+        "explanation": "Following the conditions: A lives on floor 8. Three people between A and B means B lives on floor 4. C lives immediately below B, so C is on floor 3. Two people between C and D means D lives on floor 6. E lives on an odd-numbered floor above D, so E lives on floor 7. F lives immediately above G, leaving floors 2 and 1 for F and G respectively. The only remaining person is H, who must occupy floor 5."
+      },
+      {
+        "q": 7,
+        "topic": "Floor puzzles",
+        "question": "How many people live between E and C?",
+        "options": {
+          "A": "One",
+          "B": "Three",
+          "C": "Two",
+          "D": "Four",
+          "E": "None"
+        },
+        "correct": "B",
+        "explanation": "E lives on floor 7 and C lives on floor 3. The people living between them are on floors 6, 5, and 4 (D, H, and B). Hence, there are three people living between E and C."
+      },
+      {
+        "q": 8,
+        "topic": "Floor puzzles",
+        "question": "Who lives immediately above A?",
+        "options": {
+          "A": "E",
+          "B": "D",
+          "C": "No one",
+          "D": "H",
+          "E": "F"
+        },
+        "correct": "C",
+        "explanation": "A lives on the topmost floor, which is floor number 8. Therefore, there is no one living above A."
+      },
+      {
+        "q": 9,
+        "topic": "Floor puzzles",
+        "question": "Four of the following five are alike in a certain way and hence form a group. Which one does not belong to the group?",
+        "options": {
+          "A": "A",
+          "B": "D",
+          "C": "B",
+          "D": "E",
+          "E": "F"
+        },
+        "correct": "D",
+        "explanation": "A lives on floor 8, D lives on floor 6, B lives on floor 4, and F lives on floor 2. All of these are even-numbered floors. E lives on floor 7, which is an odd-numbered floor. Thus, E does not belong to the group."
+      },
+      {
+        "q": 10,
+        "topic": "Floor puzzles",
+        "question": "Which of the following statements is true based on the given arrangement?",
+        "options": {
+          "A": "B lives on floor 6",
+          "B": "C lives on floor 4",
+          "C": "D lives immediately below F",
+          "D": "G lives on floor 3",
+          "E": "A lives immediately above E"
+        },
+        "correct": "E",
+        "explanation": "From the arrangement (Floor 8 to 1: A, E, D, H, B, C, F, G), A lives on floor 8 and E lives on floor 7. This makes the statement \"A lives immediately above E\" perfectly true. The rest of the statements are false."
+      },
+      {
+        "q": 11,
+        "topic": "Circular seating",
+        "question": "Who sits at the extreme right end of the row?",
+        "options": {
+          "A": "O",
+          "B": "S",
+          "C": "N",
+          "D": "P",
+          "E": "M"
+        },
+        "correct": "A",
+        "explanation": "M sits 3rd from the left. 2 people between M and S puts S at the 6th position from the left. N cannot be next to M (positions 2 and 4), so N is at position 5. O is second to the right of N, placing O at the 7th position (extreme right). R is immediately left of Q, which must take positions 1 and 2. P takes the remaining position 4. The arrangement from left to right is R, Q, M, P, N, S, O. Thus, O is at the extreme right end."
+      },
+      {
+        "q": 12,
+        "topic": "Circular seating",
+        "question": "Who sits second to the left of P?",
+        "options": {
+          "A": "M",
+          "B": "Q",
+          "C": "R",
+          "D": "S",
+          "E": "N"
+        },
+        "correct": "B",
+        "explanation": "Based on the linear arrangement (R, Q, M, P, N, S, O), P is at the 4th position. The person sitting second to the left of P is Q."
+      },
+      {
+        "q": 13,
+        "topic": "Circular seating",
+        "question": "How many people sit between R and N?",
+        "options": {
+          "A": "One",
+          "B": "Two",
+          "C": "Three",
+          "D": "Four",
+          "E": "None"
+        },
+        "correct": "C",
+        "explanation": "R is at the 1st position from the left, and N is at the 5th position. The people sitting between them are Q, M, and P. Hence, exactly three people sit between R and N."
+      },
+      {
+        "q": 14,
+        "topic": "Circular seating",
+        "question": "Who sits exactly in the middle of the row?",
+        "options": {
+          "A": "M",
+          "B": "N",
+          "C": "Q",
+          "D": "P",
+          "E": "S"
+        },
+        "correct": "D",
+        "explanation": "The row contains 7 people, so the exact middle is the 4th position. Following the arrangement R, Q, M, P, N, S, O, the person at the 4th position is P."
+      },
+      {
+        "q": 15,
+        "topic": "Circular seating",
+        "question": "What is the position of S with respect to M?",
+        "options": {
+          "A": "Second to the left",
+          "B": "Immediate right",
+          "C": "Second to the right",
+          "D": "Fourth to the right",
+          "E": "Third to the right"
+        },
+        "correct": "E",
+        "explanation": "In the derived sequence (R, Q, M, P, N, S, O), M is at the 3rd position and S is at the 6th position. Counting to the right from M, we get P (first), N (second), and S (third). S sits third to the right of M."
+      },
+      {
+        "q": 16,
+        "topic": "Scheduling",
+        "question": "Who attends the seminar on Wednesday?",
+        "options": {
+          "A": "M",
+          "B": "L",
+          "C": "K",
+          "D": "J",
+          "E": "N"
+        },
+        "correct": "A",
+        "explanation": "K is on Thursday. Two people between K and P puts P on Sunday. One person between P and J puts J on Friday. L is immediately before M, and they cannot be on Mon, Sat, or Sun. The only consecutive weekdays available before Thursday are Tuesday and Wednesday. So, L is on Tuesday and M is on Wednesday. The remaining slots are Monday and Saturday for N and O. Since N attends before O, N is on Monday and O is on Saturday. Therefore, M attends on Wednesday."
+      },
+      {
+        "q": 17,
+        "topic": "Scheduling",
+        "question": "On which day does O attend the seminar?",
+        "options": {
+          "A": "Friday",
+          "B": "Saturday",
+          "C": "Sunday",
+          "D": "Monday",
+          "E": "Tuesday"
+        },
+        "correct": "B",
+        "explanation": "Based on the schedule derived (Mon: N, Tue: L, Wed: M, Thu: K, Fri: J, Sat: O, Sun: P), O attends the seminar on Saturday."
+      },
+      {
+        "q": 18,
+        "topic": "Scheduling",
+        "question": "How many people attend the seminar between N and K?",
+        "options": {
+          "A": "None",
+          "B": "One",
+          "C": "Two",
+          "D": "Three",
+          "E": "Four"
+        },
+        "correct": "C",
+        "explanation": "N attends the seminar on Monday and K attends on Thursday. The days between them are Tuesday and Wednesday, where L and M attend. Thus, two people attend between them."
+      },
+      {
+        "q": 19,
+        "topic": "Scheduling",
+        "question": "Who attends the seminar immediately after J?",
+        "options": {
+          "A": "P",
+          "B": "K",
+          "C": "M",
+          "D": "O",
+          "E": "L"
+        },
+        "correct": "D",
+        "explanation": "J attends the seminar on Friday. The day immediately after Friday is Saturday, on which O attends the seminar."
+      },
+      {
+        "q": 20,
+        "topic": "Scheduling",
+        "question": "Which of the following statements is definitely true regarding the seminar schedule?",
+        "options": {
+          "A": "L attends on Monday",
+          "B": "J attends on Wednesday",
+          "C": "N attends immediately before P",
+          "D": "M attends on Friday",
+          "E": "P attends on Sunday"
+        },
+        "correct": "E",
+        "explanation": "Reviewing the complete schedule (Mon-N, Tue-L, Wed-M, Thu-K, Fri-J, Sat-O, Sun-P), the only statement that is factually correct is that P attends the seminar on Sunday."
+      },
+      {
+        "q": 21,
+        "topic": "Syllogism",
+        "question": "Statements:\nOnly a few Cars are Buses.\nAll Buses are Trains.\nNo Train is a Bike.\n\nConclusions:\nI. Some Cars are not Bikes.\nII. Some Trains are Cars.",
+        "options": {
+          "A": "Both conclusion I and II follow",
+          "B": "Only conclusion I follows",
+          "C": "Neither conclusion I nor II follows",
+          "D": "Only conclusion II follows",
+          "E": "Either conclusion I or II follows"
+        },
+        "correct": "A",
+        "explanation": "\"Only a few Cars are Buses\" implies Some Cars are Buses and Some Cars are not Buses. Since All Buses are Trains, the intersection of Cars and Buses also belongs to Trains, so Some Trains are Cars (Conclusion II follows). Because No Train is a Bike, the part of Cars that overlaps with Trains (the Buses) cannot be Bikes. Thus, Some Cars are not Bikes (Conclusion I follows). Both conclusions are valid."
+      },
+      {
+        "q": 22,
+        "topic": "Syllogism",
+        "question": "Statements:\nSome Apples are Oranges.\nAll Oranges are Bananas.\nNo Banana is a Grapes.\n\nConclusions:\nI. Some Apples are Bananas.\nII. All Apples can never be Grapes.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Both conclusion I and II follow",
+          "C": "Only conclusion II follows",
+          "D": "Neither conclusion I nor II follows",
+          "E": "Either conclusion I or II follows"
+        },
+        "correct": "B",
+        "explanation": "All Oranges are Bananas, and Some Apples are Oranges. Therefore, the Apples that are Oranges must also be Bananas (Conclusion I follows). Since No Banana is a Grapes, and some Apples are Bananas, that specific portion of Apples cannot ever be Grapes. Hence, All Apples can never be Grapes (Conclusion II follows). Both conclusions logically follow."
+      },
+      {
+        "q": 23,
+        "topic": "Syllogism",
+        "question": "Statements:\nOnly a few Pens are Pencils.\nNo Pencil is an Eraser.\nAll Erasers are Markers.\n\nConclusions:\nI. Some Pens are not Pencils.\nII. Some Markers are not Pencils.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Both conclusion I and II follow",
+          "D": "Neither conclusion I nor II follows",
+          "E": "Either conclusion I or II follows"
+        },
+        "correct": "C",
+        "explanation": "\"Only a few Pens are Pencils\" establishes that Some Pens are Pencils AND Some Pens are not Pencils. Thus, Conclusion I follows immediately. All Erasers are Markers, meaning Erasers are a subset of Markers. Since No Pencil is an Eraser, the Markers that are Erasers can never be Pencils. Thus, Some Markers are not Pencils (Conclusion II follows). Both are true."
+      },
+      {
+        "q": 24,
+        "topic": "Syllogism",
+        "question": "Statements:\nAll Books are Copies.\nSome Copies are Pages.\nNo Page is a Cover.\n\nConclusions:\nI. Some Books are Pages.\nII. No Book is a Page.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Both conclusion I and II follow",
+          "D": "Either conclusion I or II follows",
+          "E": "Neither conclusion I nor II follows"
+        },
+        "correct": "D",
+        "explanation": "There is no direct relation given between Books and Pages; they may or may not overlap. Thus, individually, neither conclusion definitely follows. However, the two conclusions \"Some Books are Pages\" and \"No Book is a Page\" form a complementary pair for the \"Either-Or\" condition. Therefore, either conclusion I or conclusion II will always be true."
+      },
+      {
+        "q": 25,
+        "topic": "Syllogism",
+        "question": "Statement:\nP > Q ≥ R = S < T ≤ U\n\nConclusions:\nI. P > S\nII. R < U",
+        "options": {
+          "A": "Only conclusion I is true",
+          "B": "Only conclusion II is true",
+          "C": "Either conclusion I or II is true",
+          "D": "Neither conclusion I nor II is true",
+          "E": "Both conclusion I and II are true"
+        },
+        "correct": "E",
+        "explanation": "Analyzing Conclusion I: The path from P to S is P > Q ≥ R = S. The highest priority sign is >, so P > S is true. Analyzing Conclusion II: The path from R to U is R = S < T ≤ U. The highest priority sign is <, so R < U is true. Both conclusions are true."
+      },
+      {
+        "q": 26,
+        "topic": "Syllogism",
+        "question": "Statement:\nA ≤ B < C = D > E ≥ F\n\nConclusions:\nI. A < D\nII. C > F",
+        "options": {
+          "A": "Both conclusions I and II are true",
+          "B": "Only conclusion I is true",
+          "C": "Only conclusion II is true",
+          "D": "Neither conclusion I nor II is true",
+          "E": "Either conclusion I or II is true"
+        },
+        "correct": "A",
+        "explanation": "From A to D: A ≤ B < C = D. The prevailing sign is <, hence A < D is true. From C to F: C = D > E ≥ F. The prevailing sign is >, hence C > F is true. Both conclusions are valid."
+      },
+      {
+        "q": 27,
+        "topic": "Syllogism",
+        "question": "Statement:\nM = N ≥ O > P < Q\n\nConclusions:\nI. M > P\nII. N > Q",
+        "options": {
+          "A": "Both conclusions I and II are true",
+          "B": "Only conclusion I is true",
+          "C": "Only conclusion II is true",
+          "D": "Neither conclusion I nor II is true",
+          "E": "Either conclusion I or II is true"
+        },
+        "correct": "B",
+        "explanation": "From M to P: M = N ≥ O > P. The prevailing sign is >, so M > P is true. From N to Q: N ≥ O > P < Q. There are opposite signs (> and <) between N and Q, meaning no direct relationship can be established. Thus, II is false. Only conclusion I is true."
+      },
+      {
+        "q": 28,
+        "topic": "Syllogism",
+        "question": "Statement:\nG < H ≤ I = J < K\n\nConclusions:\nI. G < J\nII. H < K",
+        "options": {
+          "A": "Only conclusion I is true",
+          "B": "Only conclusion II is true",
+          "C": "Both conclusions I and II are true",
+          "D": "Neither conclusion I nor II is true",
+          "E": "Either conclusion I or II is true"
+        },
+        "correct": "C",
+        "explanation": "Looking at G to J: G < H ≤ I = J. The prevailing symbol is <, so G < J is true. Looking at H to K: H ≤ I = J < K. The prevailing symbol is <, making H < K true. Both conclusions are true."
+      },
+      {
+        "q": 29,
+        "topic": "Blood relations",
+        "question": "How is G related to C?",
+        "options": {
+          "A": "Mother",
+          "B": "Aunt",
+          "C": "Paternal Grandmother",
+          "D": "Maternal Grandmother",
+          "E": "Sister"
+        },
+        "correct": "D",
+        "explanation": "D is the mother of C. E is the brother of D. F is the father of E (and therefore the father of D). G is the wife of F (and thus the mother of D). Since G is the mother of C's mother, G is the maternal grandmother of C."
+      },
+      {
+        "q": 30,
+        "topic": "Blood relations",
+        "question": "How is E related to B?",
+        "options": {
+          "A": "Father",
+          "B": "Brother",
+          "C": "Cousin",
+          "D": "Grandfather",
+          "E": "Maternal Uncle"
+        },
+        "correct": "E",
+        "explanation": "B and C are siblings, and D is their mother. E is the brother of D. The brother of one's mother is their maternal uncle. Therefore, E is the maternal uncle of B."
+      },
+      {
+        "q": 31,
+        "topic": "Blood relations",
+        "question": "If B is a male, how is B related to F?",
+        "options": {
+          "A": "Grandson",
+          "B": "Granddaughter",
+          "C": "Son",
+          "D": "Nephew",
+          "E": "Brother-in-law"
+        },
+        "correct": "A",
+        "explanation": "D is the daughter of F, and B is the son (since B is male) of D. Thus, B is the son of F's daughter, which makes B the grandson of F."
+      },
+      {
+        "q": 32,
+        "topic": "Direction sense",
+        "question": "What is the distance between Point A and Point E?",
+        "options": {
+          "A": "5m",
+          "B": "10m",
+          "C": "15m",
+          "D": "20m",
+          "E": "25m"
+        },
+        "correct": "B",
+        "explanation": "Let Point B be at coordinate (0, 0). Point A is at (0, 10). Point C is at (15, 0). Point D is at (15, 20). Point E is 15m West of D, placing it at (0, 20). The distance between A(0, 10) and E(0, 20) is exactly 10m vertically."
+      },
+      {
+        "q": 33,
+        "topic": "Direction sense",
+        "question": "In which direction is Point D with respect to Point A?",
+        "options": {
+          "A": "North",
+          "B": "East",
+          "C": "North-East",
+          "D": "South-West",
+          "E": "North-West"
+        },
+        "correct": "C",
+        "explanation": "Based on the coordinates, Point A is at (0, 10) and Point D is at (15, 20). Point D is further North (20 > 10) and further East (15 > 0) compared to Point A. Thus, D is North-East of A."
+      },
+      {
+        "q": 34,
+        "topic": "Direction sense",
+        "question": "What is the shortest distance between Point B and Point D?",
+        "options": {
+          "A": "15m",
+          "B": "20m",
+          "C": "30m",
+          "D": "25m",
+          "E": "35m"
+        },
+        "correct": "D",
+        "explanation": "Point B is at (0, 0) and Point D is at (15, 20). Using the Pythagorean theorem to find the shortest distance (hypotenuse): Distance = √(15² + 20²) = √(225 + 400) = √(625) = 25m."
+      },
+      {
+        "q": 35,
+        "topic": "Alphanumeric series",
+        "question": "If it is possible to make only one meaningful English word from the 1st, 3rd, 5th, and 8th letters of the word \"CREATION\", using each letter only once, what will be the second letter of that word? If no such word can be made, mark 'X' as your answer. If more than one such word can be made, mark 'Y' as your answer.",
+        "options": {
+          "A": "C",
+          "B": "T",
+          "C": "N",
+          "D": "X",
+          "E": "E"
+        },
+        "correct": "E",
+        "explanation": "The letters from \"CREATION\" are: 1st - C, 3rd - E, 5th - T, 8th - N. The letters available are C, E, T, and N. The only meaningful English word that can be formed using these four letters is \"CENT\". The second letter of the word \"CENT\" is E."
+      }
+    ]
+  }
+}

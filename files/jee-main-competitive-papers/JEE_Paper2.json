@@ -1,0 +1,1062 @@
+{
+  "paper_id": "JEE-MAINS-Paper2",
+  "title": "JEE Main Paper 2",
+  "subjects": {
+    "Physics": [
+      {
+        "q": 1,
+        "section": "A",
+        "topic": "Kinematics",
+        "question": "A particle moves along the x-axis such that its position at any time t is given by x(t) = t^3 - 3t^2 + 4t. The minimum velocity of the particle during its motion is:",
+        "options": {
+          "A": "0 m/s",
+          "B": "1 m/s",
+          "C": "2 m/s",
+          "D": "4 m/s"
+        },
+        "correct": "B",
+        "explanation": "v(t)=3t²−6t+4. Setting dv/dt=0 gives t=1s. v_min=3(1)−6(1)+4=1 m/s."
+      },
+      {
+        "q": 2,
+        "section": "A",
+        "topic": "Laws of Motion",
+        "question": "A block of mass 10 kg is placed on a rough horizontal surface with a coefficient of static friction equal to 0.5. If a horizontal force of 40 N is applied to the block, the acceleration of the block will be: (Take g=10 m/s^2)",
+        "options": {
+          "A": "4 m/s^2",
+          "B": "2 m/s^2",
+          "C": "0 m/s^2",
+          "D": "5 m/s^2"
+        },
+        "correct": "C",
+        "explanation": "f_max=0.5×10×10=50N. Since applied force (40N) < f_max, the block does not move; acceleration=0."
+      },
+      {
+        "q": 3,
+        "section": "A",
+        "topic": "Laws of Motion",
+        "question": "A projectile of mass m is fired with an initial velocity u at an angle theta with the horizontal. The magnitude of the change in momentum from the point of projection to the highest point of its trajectory is:",
+        "options": {
+          "A": "m*u*sin(theta)",
+          "B": "m*u*cos(theta)",
+          "C": "m*u",
+          "D": "Zero"
+        },
+        "correct": "A",
+        "explanation": "At the highest point, only the vertical momentum component vanishes; change in momentum magnitude = m*u*sin(theta)."
+      },
+      {
+        "q": 4,
+        "section": "A",
+        "topic": "Rotational Motion",
+        "question": "A uniform solid sphere of mass M and radius R is rolling without slipping on a horizontal surface with a linear center-of-mass velocity v. The total kinetic energy of the sphere is:",
+        "options": {
+          "A": "(1/2)Mv^2",
+          "B": "(3/4)Mv^2",
+          "C": "(5/7)Mv^2",
+          "D": "(7/10)Mv^2"
+        },
+        "correct": "D",
+        "explanation": "K_total = (1/2)Mv² + (1/2)(2/5 MR²)(v/R)² = (7/10)Mv²."
+      },
+      {
+        "q": 5,
+        "section": "A",
+        "topic": "Gravitation",
+        "question": "A satellite of mass m is in a circular orbit around the Earth at a height R above the Earth's surface (where R is the radius of the Earth). The minimum additional energy required to allow the satellite to completely escape Earth's gravitational field is:",
+        "options": {
+          "A": "GMm/(4R)",
+          "B": "GMm/(2R)",
+          "C": "GMm/R",
+          "D": "GMm/(8R)"
+        },
+        "correct": "A",
+        "explanation": "Orbital radius r=2R. E_initial=−GMm/(4R). Additional energy = 0−(−GMm/4R) = GMm/4R."
+      },
+      {
+        "q": 6,
+        "section": "A",
+        "topic": "Properties of Solids and Liquids",
+        "question": "A uniform steel wire of length L and cross-sectional area A is suspended vertically. When a mass M is attached to its lower end, the wire undergoes an elongation l. The elastic potential energy stored in the stretched wire is:",
+        "options": {
+          "A": "M*g*l",
+          "B": "(1/2)*M*g*l",
+          "C": "2*M*g*l",
+          "D": "(1/4)*M*g*l"
+        },
+        "correct": "B",
+        "explanation": "U=(1/2)×Force×Elongation=(1/2)Mgl."
+      },
+      {
+        "q": 7,
+        "section": "A",
+        "topic": "Properties of Solids and Liquids",
+        "question": "Two capillary tubes made of the same material and having radii r and 2r are dipped vertically in the same liquid. The ratio of the heights to which the liquid rises in the first and second tubes is:",
+        "options": {
+          "A": "1:2",
+          "B": "2:1",
+          "C": "1:4",
+          "D": "4:1"
+        },
+        "correct": "B",
+        "explanation": "By Jurin's law, h∝1/r, so h1/h2 = r2/r1 = 2r/r = 2:1."
+      },
+      {
+        "q": 8,
+        "section": "A",
+        "topic": "Thermodynamics",
+        "question": "An ideal gas undergoes a complete cyclic process. If the net heat supplied to the gas during the entire cycle is 500 J, the net work done by the gas is:",
+        "options": {
+          "A": "0 J",
+          "B": "250 J",
+          "C": "500 J",
+          "D": "-500 J"
+        },
+        "correct": "C",
+        "explanation": "For a cyclic process ΔU=0, so net work = net heat supplied = 500 J."
+      },
+      {
+        "q": 9,
+        "section": "A",
+        "topic": "Kinetic Theory of Gases",
+        "question": "The root mean square (RMS) speed of the molecules of an ideal gas at 300 K is v. At what absolute temperature will the RMS speed of the molecules become 2v?",
+        "options": {
+          "A": "600 K",
+          "B": "900 K",
+          "C": "1200 K",
+          "D": "2400 K"
+        },
+        "correct": "C",
+        "explanation": "v_rms∝√T. Doubling v_rms requires T to increase 4×: 4×300=1200 K."
+      },
+      {
+        "q": 10,
+        "section": "A",
+        "topic": "Oscillations and Waves",
+        "question": "A simple pendulum has a time period T in air. It is then completely immersed in a non-viscous liquid of density rho_L. If the density of the pendulum bob is rho_B=4*rho_L, the new time period of the pendulum is:",
+        "options": {
+          "A": "T",
+          "B": "sqrt(4/3)*T",
+          "C": "(sqrt(3)/2)*T",
+          "D": "2*T"
+        },
+        "correct": "B",
+        "explanation": "g'=g(1−1/4)=3g/4. T'=2π√(L/g')=√(4/3)T."
+      },
+      {
+        "q": 11,
+        "section": "A",
+        "topic": "Oscillations and Waves",
+        "question": "A closed organ pipe of length L resonates in its fundamental mode. What is the wavelength of the standing sound wave produced in the pipe?",
+        "options": {
+          "A": "L/4",
+          "B": "L/2",
+          "C": "L",
+          "D": "4L"
+        },
+        "correct": "D",
+        "explanation": "For a closed pipe fundamental mode, L=λ/4, so λ=4L."
+      },
+      {
+        "q": 12,
+        "section": "A",
+        "topic": "Electrostatics",
+        "question": "Two point charges +q and -q are separated by a small distance 2a, forming an electric dipole. The magnitude of the electric field at a point on the equatorial line at a distance r (where r>>a) from the center of the dipole is proportional to:",
+        "options": {
+          "A": "1/r",
+          "B": "1/r^2",
+          "C": "1/r^3",
+          "D": "1/r^4"
+        },
+        "correct": "C",
+        "explanation": "E=p/(4πε0(r²+a²)^(3/2)); for r>>a, E∝1/r³."
+      },
+      {
+        "q": 13,
+        "section": "A",
+        "topic": "Electrostatics",
+        "question": "A parallel plate capacitor is charged to a potential difference V and then disconnected from the battery. If the distance between the capacitor plates is subsequently doubled, the new potential difference across the plates becomes:",
+        "options": {
+          "A": "V/2",
+          "B": "V",
+          "C": "2V",
+          "D": "4V"
+        },
+        "correct": "C",
+        "explanation": "Q remains constant; C halves when d doubles, so V'=Q/C'=2V."
+      },
+      {
+        "q": 14,
+        "section": "A",
+        "topic": "Current Electricity",
+        "question": "In a meter bridge experiment, a null point is obtained at 40 cm from the left end when two unknown resistances P and Q are placed in the left and right gaps, respectively. When a 10 ohm resistance is connected in series with P, the null point shifts to 50 cm. The initial values of P and Q are:",
+        "options": {
+          "A": "20 ohm, 30 ohm",
+          "B": "10 ohm, 15 ohm",
+          "C": "15 ohm, 25 ohm",
+          "D": "24 ohm, 36 ohm"
+        },
+        "correct": "A",
+        "explanation": "P/Q=2/3 initially; (P+10)/Q=1 after adding 10Ω. Solving gives P=20Ω, Q=30Ω."
+      },
+      {
+        "q": 15,
+        "section": "A",
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "A charged particle moving with a constant velocity v enters a region of uniform magnetic field B. If the velocity vector makes an angle of 30 degrees with the direction of the magnetic field, the trajectory of the particle will be a:",
+        "options": {
+          "A": "Circle",
+          "B": "Straight line",
+          "C": "Parabola",
+          "D": "Helix"
+        },
+        "correct": "D",
+        "explanation": "The parallel component causes linear motion and perpendicular component causes circular motion, combining into a helical path."
+      },
+      {
+        "q": 16,
+        "section": "A",
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "The magnetic flux linked with a closed coil changes from 1 Wb to 5 Wb in a time interval of 0.2 s. The magnitude of the average induced electromotive force (EMF) in the coil is:",
+        "options": {
+          "A": "20 V",
+          "B": "10 V",
+          "C": "5 V",
+          "D": "25 V"
+        },
+        "correct": "A",
+        "explanation": "|e|=Δφ/Δt=4/0.2=20 V."
+      },
+      {
+        "q": 17,
+        "section": "A",
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "A series LCR circuit connected to an AC source has a resonant frequency f_0. If the inductance is increased to four times its original value and the capacitance is decreased to one-fourth of its original value, the new resonant frequency will be:",
+        "options": {
+          "A": "f_0/4",
+          "B": "f_0/2",
+          "C": "2*f_0",
+          "D": "f_0"
+        },
+        "correct": "D",
+        "explanation": "L'C'=4L×C/4=LC unchanged, so f_0 remains the same."
+      },
+      {
+        "q": 18,
+        "section": "A",
+        "topic": "Optics",
+        "question": "An equiconvex glass lens with a refractive index of 1.5 has a focal length of 20 cm in air. If this lens is completely immersed in a transparent liquid having a refractive index of 1.33 (approx 4/3), its new focal length will be:",
+        "options": {
+          "A": "20 cm",
+          "B": "40 cm",
+          "C": "80 cm",
+          "D": "60 cm"
+        },
+        "correct": "C",
+        "explanation": "Using relative refractive index 1.125, the new focal length works out to f'=80 cm."
+      },
+      {
+        "q": 19,
+        "section": "A",
+        "topic": "Optics",
+        "question": "In a Young's double slit experiment, coherent light of wavelength 500 nm is used. The slit separation is 1 mm, and the screen is placed 1 m away from the slits. The fringe width of the resulting interference pattern is:",
+        "options": {
+          "A": "0.5 mm",
+          "B": "0.25 mm",
+          "C": "1.0 mm",
+          "D": "2.0 mm"
+        },
+        "correct": "A",
+        "explanation": "β=λD/d=(500×10⁻⁹×1)/(10⁻³)=0.5 mm."
+      },
+      {
+        "q": 20,
+        "section": "A",
+        "topic": "Dual Nature of Matter and Radiation",
+        "question": "Monochromatic light of wavelength 400 nm is incident on a photosensitive metal surface having a work function of 2.0 eV. The maximum kinetic energy of the emitted photoelectrons is approximately: (Take hc=1240 eV nm)",
+        "options": {
+          "A": "1.1 eV",
+          "B": "2.0 eV",
+          "C": "3.1 eV",
+          "D": "5.1 eV"
+        },
+        "correct": "A",
+        "explanation": "E=1240/400=3.1 eV. K_max=3.1−2.0=1.1 eV."
+      },
+      {
+        "q": 21,
+        "section": "B",
+        "topic": "Work, Energy and Power",
+        "question": "A body of mass 2 kg moving with a certain velocity makes a perfectly elastic head-on collision with a second stationary body. After the collision, the first body continues to move in the same direction with one-fourth of its initial speed. The mass of the second body (in kg) is:",
+        "options": {
+          "A": "1.0 kg",
+          "B": "1.2 kg",
+          "C": "1.5 kg",
+          "D": "2.5 kg"
+        },
+        "correct": "B",
+        "explanation": "1/4=(2−m2)/(2+m2) solving gives m2=1.2 kg."
+      },
+      {
+        "q": 22,
+        "section": "B",
+        "topic": "Electrostatics",
+        "question": "An isolated parallel plate capacitor with air between its plates has a capacitance of 8 pF. If the entire space between the plates is completely filled with a dielectric material having a dielectric constant K=3, the new capacitance (in pF) will be:",
+        "options": {
+          "A": "12 pF",
+          "B": "16 pF",
+          "C": "32 pF",
+          "D": "24 pF"
+        },
+        "correct": "D",
+        "explanation": "C_new=K×C_old=3×8=24 pF."
+      },
+      {
+        "q": 23,
+        "section": "B",
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "An alternating sinusoidal voltage V=200*sin(100t) volts is applied across a pure inductor having an inductance of 2 H. The peak value of the alternating current flowing in the circuit (in amperes) is:",
+        "options": {
+          "A": "0.5 A",
+          "B": "1.0 A",
+          "C": "2.0 A",
+          "D": "4.0 A"
+        },
+        "correct": "B",
+        "explanation": "X_L=ωL=200Ω. I0=V0/X_L=200/200=1.0 A."
+      },
+      {
+        "q": 24,
+        "section": "B",
+        "topic": "Atoms and Nuclei",
+        "question": "In a sample of radioactive material, it is observed that 7/8th of the initial number of active nuclei have decayed in a period of 10 days. The half-life of this radioactive substance (in days) is:",
+        "options": {
+          "A": "2.0 days",
+          "B": "5.0 days",
+          "C": "7.5 days",
+          "D": "3.33 days"
+        },
+        "correct": "D",
+        "explanation": "1/8 remains after n half-lives, (1/2)^n=1/8 ⇒ n=3. Half-life=10/3=3.33 days."
+      },
+      {
+        "q": 25,
+        "section": "B",
+        "topic": "Dual Nature of Matter and Radiation",
+        "question": "An electron is accelerated from rest through a potential difference of 100 V. Its corresponding de Broglie wavelength (in nanometers) is approximately:",
+        "options": {
+          "A": "1.23 nm",
+          "B": "0.246 nm",
+          "C": "0.369 nm",
+          "D": "0.123 nm"
+        },
+        "correct": "D",
+        "explanation": "λ=1.227/√V nm = 1.227/10 = 0.123 nm."
+      }
+    ],
+    "Chemistry": [
+      {
+        "q": 1,
+        "section": "A",
+        "topic": "Atomic Structure",
+        "question": "Which of the following atomic orbitals possesses exactly two radial nodes and one angular node?",
+        "options": {
+          "A": "4p",
+          "B": "3p",
+          "C": "4d",
+          "D": "3d"
+        },
+        "correct": "A",
+        "explanation": "One angular node ⇒ l=1 (p orbital). Two radial nodes ⇒ n−l−1=2 ⇒ n=4. Orbital is 4p."
+      },
+      {
+        "q": 2,
+        "section": "A",
+        "topic": "Chemical Thermodynamics",
+        "question": "For an ideal gas expanding isothermally and reversibly at 300 K from 1 L to 10 L, the magnitude of work done by 1 mole of the gas is approximately: (R=8.314 J/K mol)",
+        "options": {
+          "A": "5744 J",
+          "B": "2303 J",
+          "C": "11488 J",
+          "D": "8314 J"
+        },
+        "correct": "A",
+        "explanation": "W=−2.303nRT log(V2/V1) = −5744 J; magnitude is 5744 J."
+      },
+      {
+        "q": 3,
+        "section": "A",
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "According to Molecular Orbital Theory, which of the following homonuclear diatomic molecules is diamagnetic and has a bond order of 3?",
+        "options": {
+          "A": "N2",
+          "B": "O2",
+          "C": "NO",
+          "D": "C2"
+        },
+        "correct": "A",
+        "explanation": "N2 has all electrons paired (diamagnetic) with bond order (10−4)/2=3."
+      },
+      {
+        "q": 4,
+        "section": "A",
+        "topic": "Solutions",
+        "question": "Which of the following 0.1 M aqueous solutions will exhibit the lowest freezing point?",
+        "options": {
+          "A": "Urea",
+          "B": "Sodium chloride",
+          "C": "Barium chloride",
+          "D": "Aluminium chloride"
+        },
+        "correct": "D",
+        "explanation": "AlCl3 dissociates into 4 ions (i=4), giving the maximum freezing point depression."
+      },
+      {
+        "q": 5,
+        "section": "A",
+        "topic": "Redox Reactions and Electrochemistry",
+        "question": "The standard reduction potentials of four metals A, B, C, and D are -0.76 V, +0.34 V, -2.37 V, and +0.80 V respectively. The strongest reducing agent among them is:",
+        "options": {
+          "A": "Metal A",
+          "B": "Metal B",
+          "C": "Metal C",
+          "D": "Metal D"
+        },
+        "correct": "C",
+        "explanation": "Metal C has the most negative potential (-2.37V), making it the strongest reducing agent."
+      },
+      {
+        "q": 6,
+        "section": "A",
+        "topic": "Chemical Kinetics",
+        "question": "A first-order reaction is 75 percent complete in 32 minutes. The half-life period of the reaction is:",
+        "options": {
+          "A": "16 minutes",
+          "B": "8 minutes",
+          "C": "24 minutes",
+          "D": "32 minutes"
+        },
+        "correct": "A",
+        "explanation": "t75%=2×t1/2=32min ⇒ t1/2=16 minutes."
+      },
+      {
+        "q": 7,
+        "section": "A",
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "The shape and hybridization of the XeF4 molecule according to VSEPR theory are respectively:",
+        "options": {
+          "A": "Octahedral and sp3d2",
+          "B": "Tetrahedral and sp3",
+          "C": "Square planar and sp3d2",
+          "D": "Trigonal bipyramidal and sp3d"
+        },
+        "correct": "C",
+        "explanation": "XeF4 has 4 bond pairs and 2 lone pairs, sp3d2 hybridization, square planar shape."
+      },
+      {
+        "q": 8,
+        "section": "A",
+        "topic": "Classification of Elements and Periodicity in Properties",
+        "question": "The correct increasing order of first ionization enthalpy for the elements N, O, and F is:",
+        "options": {
+          "A": "O < N < F",
+          "B": "N < O < F",
+          "C": "O < F < N",
+          "D": "F < N < O"
+        },
+        "correct": "A",
+        "explanation": "N has a stable half-filled configuration, giving it higher IE than O, so order is O<N<F."
+      },
+      {
+        "q": 9,
+        "section": "A",
+        "topic": "Coordination Compounds",
+        "question": "Which of the following complex ions is paramagnetic with two unpaired electrons?",
+        "options": {
+          "A": "[Ni(CN)4]2-",
+          "B": "[Fe(CN)6]4-",
+          "C": "[NiCl4]2-",
+          "D": "[Co(NH3)6]3+"
+        },
+        "correct": "C",
+        "explanation": "[NiCl4]2- has sp3 hybridization with 2 unpaired electrons (weak field Cl- ligand)."
+      },
+      {
+        "q": 10,
+        "section": "A",
+        "topic": "Some Basic Principles of Organic Chemistry",
+        "question": "Among the following carbocations, the one possessing the maximum thermodynamic stability is:",
+        "options": {
+          "A": "Methyl carbocation",
+          "B": "Ethyl carbocation",
+          "C": "Isopropyl carbocation",
+          "D": "tert-Butyl carbocation"
+        },
+        "correct": "D",
+        "explanation": "tert-Butyl carbocation has maximum hyperconjugation and inductive stabilization."
+      },
+      {
+        "q": 11,
+        "section": "A",
+        "topic": "Hydrocarbons",
+        "question": "Ozonolysis of an alkene followed by reductive workup with Zn and water produces two moles of acetaldehyde. The starting alkene is:",
+        "options": {
+          "A": "Propene",
+          "B": "1-Butene",
+          "C": "2-Butene",
+          "D": "2-Methylpropene"
+        },
+        "correct": "C",
+        "explanation": "Joining two acetaldehyde molecules at the carbonyl carbon gives 2-butene."
+      },
+      {
+        "q": 12,
+        "section": "A",
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "The reaction of sodium ethoxide with methyl iodide to yield ethyl methyl ether proceeds via an SN2 mechanism. This synthetic method is known as:",
+        "options": {
+          "A": "Wurtz reaction",
+          "B": "Finkelstein reaction",
+          "C": "Kolbe reaction",
+          "D": "Williamson ether synthesis"
+        },
+        "correct": "D",
+        "explanation": "This nucleophilic substitution reaction forming an ether is the Williamson ether synthesis."
+      },
+      {
+        "q": 13,
+        "section": "A",
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "Phenol on treatment with chloroform and aqueous sodium hydroxide followed by acidification gives salicylaldehyde as the major product. This organic transformation is known as:",
+        "options": {
+          "A": "Reimer-Tiemann reaction",
+          "B": "Kolbe-Schmitt reaction",
+          "C": "Cannizzaro reaction",
+          "D": "Friedel-Crafts reaction"
+        },
+        "correct": "A",
+        "explanation": "Introduction of a formyl group ortho to the phenolic OH via chloroform/NaOH is the Reimer-Tiemann reaction."
+      },
+      {
+        "q": 14,
+        "section": "A",
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "Which of the following organic carbonyl compounds does not reduce Tollens reagent to give a silver mirror?",
+        "options": {
+          "A": "Formaldehyde",
+          "B": "Acetaldehyde",
+          "C": "Benzaldehyde",
+          "D": "Acetone"
+        },
+        "correct": "D",
+        "explanation": "Tollens test is specific to aldehydes; ketones like acetone give a negative test."
+      },
+      {
+        "q": 15,
+        "section": "A",
+        "topic": "Organic Compounds Containing Nitrogen",
+        "question": "Benzenesulfonyl chloride reacts with a primary amine to form a sulfonamide that is soluble in aqueous alkali. This chemical reagent is commonly designated as:",
+        "options": {
+          "A": "Lucas reagent",
+          "B": "Tollen reagent",
+          "C": "Fehling reagent",
+          "D": "Hinsberg reagent"
+        },
+        "correct": "D",
+        "explanation": "Benzenesulfonyl chloride is Hinsberg's reagent, used to distinguish primary, secondary, and tertiary amines."
+      },
+      {
+        "q": 16,
+        "section": "A",
+        "topic": "Biomolecules",
+        "question": "Glucose on prolonged heating with concentrated hydroiodic acid in the presence of red phosphorus yields:",
+        "options": {
+          "A": "Gluconic acid",
+          "B": "Saccharic acid",
+          "C": "n-Hexane",
+          "D": "n-Hexanol"
+        },
+        "correct": "C",
+        "explanation": "Complete reduction of all C-O bonds converts glucose's six-carbon backbone into n-hexane."
+      },
+      {
+        "q": 17,
+        "section": "A",
+        "topic": "d- and f-Block Elements",
+        "question": "The oxidation state of chromium in potassium dichromate (K2Cr2O7) is:",
+        "options": {
+          "A": "+3",
+          "B": "+4",
+          "C": "+5",
+          "D": "+6"
+        },
+        "correct": "D",
+        "explanation": "Charge balance: 2(+1)+2x+7(-2)=0 gives x=+6."
+      },
+      {
+        "q": 18,
+        "section": "A",
+        "topic": "d- and f-Block Elements",
+        "question": "Which of the following transition metal cations is colorless in aqueous solution due to the complete absence of d-d electronic transitions?",
+        "options": {
+          "A": "Ti3+",
+          "B": "V3+",
+          "C": "Sc3+",
+          "D": "Fe3+"
+        },
+        "correct": "C",
+        "explanation": "Sc3+ has [Ar]3d0 configuration; with no d electrons, no d-d transition occurs, so it is colorless."
+      },
+      {
+        "q": 19,
+        "section": "A",
+        "topic": "Equilibrium",
+        "question": "For the gaseous synthesis reaction N2 + 3 H2 <=> 2 NH3, the mathematical relationship between equilibrium constants Kp and Kc at temperature T is:",
+        "options": {
+          "A": "Kp = Kc (RT)^2",
+          "B": "Kp = Kc (RT)^(-2)",
+          "C": "Kp = Kc (RT)^(-1)",
+          "D": "Kp = Kc (RT)"
+        },
+        "correct": "B",
+        "explanation": "Δng=2−4=−2, so Kp=Kc(RT)^(-2)."
+      },
+      {
+        "q": 20,
+        "section": "A",
+        "topic": "Coordination Compounds",
+        "question": "Optical isomerism is exhibited by which of the following coordination entities?",
+        "options": {
+          "A": "[Co(NH3)6]3+",
+          "B": "[Co(en)3]3+",
+          "C": "[Co(NH3)4Cl2]+ (trans-isomer)",
+          "D": "[Ni(CN)4]2-"
+        },
+        "correct": "B",
+        "explanation": "[Co(en)3]3+ lacks any symmetry element and exists as non-superimposable d and l enantiomers."
+      },
+      {
+        "q": 21,
+        "section": "B",
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "The mass of methane gas required to produce 22 g of carbon dioxide gas upon complete combustion in excess oxygen is:",
+        "options": {
+          "A": "16 g",
+          "B": "8 g",
+          "C": "32 g",
+          "D": "44 g"
+        },
+        "correct": "B",
+        "explanation": "22g CO2 = 0.5 mol. 1 mol CH4 gives 1 mol CO2, so 0.5 mol CH4 = 8 g required."
+      },
+      {
+        "q": 22,
+        "section": "B",
+        "topic": "Chemical Kinetics",
+        "question": "A first-order reaction has a rate constant of 2.303 x 10^(-3) s^(-1). The time required for the concentration of reactant to drop from 0.1 M to 0.01 M is:",
+        "options": {
+          "A": "100 s",
+          "B": "1000 s",
+          "C": "500 s",
+          "D": "2303 s"
+        },
+        "correct": "B",
+        "explanation": "t=(2.303/k)log([A]0/[A])=1000 s."
+      },
+      {
+        "q": 23,
+        "section": "B",
+        "topic": "Solutions",
+        "question": "The elevation in boiling point of a 0.2 molal aqueous solution of a non-volatile non-electrolyte solute is 0.104 K. The molal elevation constant (Kb) of water is:",
+        "options": {
+          "A": "0.208 K kg mol^(-1)",
+          "B": "0.520 K kg mol^(-1)",
+          "C": "1.040 K kg mol^(-1)",
+          "D": "2.080 K kg mol^(-1)"
+        },
+        "correct": "B",
+        "explanation": "Kb=ΔTb/m=0.104/0.2=0.520 K kg mol⁻¹."
+      },
+      {
+        "q": 24,
+        "section": "B",
+        "topic": "Redox Reactions and Electrochemistry",
+        "question": "The standard EMF of an electrochemical cell involving a two-electron transfer process is 0.295 V at 298 K. The equilibrium constant (Kc) for the cell reaction is approximately:",
+        "options": {
+          "A": "10^5",
+          "B": "10^10",
+          "C": "10^8",
+          "D": "10^12"
+        },
+        "correct": "B",
+        "explanation": "log Kc = nE°/0.0591 = 10, so Kc=10^10."
+      },
+      {
+        "q": 25,
+        "section": "B",
+        "topic": "Chemical Kinetics",
+        "question": "For a chemical reaction, the rate constant doubles when the temperature is raised from 300 K to 310 K. The activation energy (Ea) of the reaction is approximately: (R=8.314 J/K mol, ln 2=0.693)",
+        "options": {
+          "A": "26.8 kJ/mol",
+          "B": "107.2 kJ/mol",
+          "C": "214.4 kJ/mol",
+          "D": "53.6 kJ/mol"
+        },
+        "correct": "D",
+        "explanation": "Using Arrhenius equation, Ea=0.693×8.314×9300≈53.6 kJ/mol."
+      }
+    ],
+    "Mathematics": [
+      {
+        "q": 1,
+        "section": "A",
+        "topic": "Complex Numbers and Quadratic Equations",
+        "question": "Let z1 and z2 be two complex numbers satisfying |z1|=2 and |z2-3-4i|=1. The maximum possible value of |z1-z2| is:",
+        "options": {
+          "A": "6",
+          "B": "8",
+          "C": "7",
+          "D": "9"
+        },
+        "correct": "B",
+        "explanation": "Center of z2's locus is 5 units from origin, so max|z2|=6. Max|z1-z2|=2+6=8."
+      },
+      {
+        "q": 2,
+        "section": "A",
+        "topic": "Trigonometry",
+        "question": "The sum of all values of x in the interval [0, 2pi] satisfying the trigonometric equation sin(x)+sin(2x)+sin(3x)=0 is:",
+        "options": {
+          "A": "5 pi",
+          "B": "6 pi",
+          "C": "8 pi",
+          "D": "7 pi"
+        },
+        "correct": "D",
+        "explanation": "Factoring gives sin(2x)(2cos(x)+1)=0. Summing all distinct solutions in [0,2π] gives 7π."
+      },
+      {
+        "q": 3,
+        "section": "A",
+        "topic": "Sequence and Series",
+        "question": "Let alpha and beta be the roots of x^2-x-1=0. If P_n=alpha^n+beta^n for n>=1, then the sum P_1+P_2+P_3+P_4+P_5 is equal to:",
+        "options": {
+          "A": "22",
+          "B": "24",
+          "C": "26",
+          "D": "28"
+        },
+        "correct": "C",
+        "explanation": "Using recurrence P_n=P_(n-1)+P_(n-2): P1=1,P2=3,P3=4,P4=7,P5=11. Sum=26."
+      },
+      {
+        "q": 4,
+        "section": "A",
+        "topic": "Binomial Theorem and its Simple Applications",
+        "question": "The coefficient of x^11 in the expansion of (1+x^2)^4*(1+x^3)^7*(1+x^4)^12 is:",
+        "options": {
+          "A": "1113",
+          "B": "1050",
+          "C": "980",
+          "D": "1210"
+        },
+        "correct": "A",
+        "explanation": "Summing valid (a,b,c) tuples satisfying 2a+3b+4c=11 gives total coefficient 1113."
+      },
+      {
+        "q": 5,
+        "section": "A",
+        "topic": "Sequence and Series",
+        "question": "The sum of the infinite series 1/(1*2*3)+1/(2*3*4)+1/(3*4*5)+... is equal to:",
+        "options": {
+          "A": "1/2",
+          "B": "1/3",
+          "C": "1/6",
+          "D": "1/4"
+        },
+        "correct": "D",
+        "explanation": "Telescoping series sums to (1/2)(1/(1*2))=1/4."
+      },
+      {
+        "q": 6,
+        "section": "A",
+        "topic": "Limit, Continuity and Differentiability",
+        "question": "Let f(x)=lim_{n->infinity}(x^(2n)-1)/(x^(2n)+1). The number of points in R where f(x) is discontinuous is:",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "0",
+          "D": "3"
+        },
+        "correct": "B",
+        "explanation": "f(x) has jump discontinuities at x=1 and x=-1, giving 2 points."
+      },
+      {
+        "q": 7,
+        "section": "A",
+        "topic": "Limit, Continuity and Differentiability",
+        "question": "The minimum distance from the point (0, 5) to the curve y=x^2 is equal to:",
+        "options": {
+          "A": "sqrt(17)/2",
+          "B": "5/2",
+          "C": "sqrt(21)/2",
+          "D": "sqrt(19)/2"
+        },
+        "correct": "D",
+        "explanation": "Minimizing D²=t²-9t+25 (t=x²) at t=9/2 gives D_min=sqrt(19)/2."
+      },
+      {
+        "q": 8,
+        "section": "A",
+        "topic": "Integral Calculus",
+        "question": "The value of the definite integral from 0 to 100 pi of sqrt((1-cos(2x))/2) dx is equal to:",
+        "options": {
+          "A": "100",
+          "B": "100 pi",
+          "C": "200",
+          "D": "0"
+        },
+        "correct": "C",
+        "explanation": "Integrand simplifies to |sin(x)|. Over 100π periods, integral = 100×2 = 200."
+      },
+      {
+        "q": 9,
+        "section": "A",
+        "topic": "Integral Calculus",
+        "question": "The area of the region bounded by the curve y=|x^2-1| and the horizontal line y=3 is:",
+        "options": {
+          "A": "8",
+          "B": "16/3",
+          "C": "32/3",
+          "D": "12"
+        },
+        "correct": "A",
+        "explanation": "Computing the symmetric area between curve and line gives total Area=8."
+      },
+      {
+        "q": 10,
+        "section": "A",
+        "topic": "Differential Equations",
+        "question": "The particular solution of the differential equation dy/dx=y/x+tan(y/x) with initial condition y(1)=pi/2 is:",
+        "options": {
+          "A": "cos(y/x) = x",
+          "B": "sin(y/x) = x",
+          "C": "sin(y/x) = x^2",
+          "D": "tan(y/x) = x"
+        },
+        "correct": "B",
+        "explanation": "Substituting y=vx and integrating gives sin(y/x)=cx; using y(1)=π/2 gives c=1, so sin(y/x)=x."
+      },
+      {
+        "q": 11,
+        "section": "A",
+        "topic": "Co-ordinate Geometry",
+        "question": "If the line 3x+4y-k=0 is a tangent to the circle x^2+y^2-6x-8y=0, then the positive value of k is:",
+        "options": {
+          "A": "25",
+          "B": "35",
+          "C": "50",
+          "D": "60"
+        },
+        "correct": "C",
+        "explanation": "Center (3,4), radius 5. Setting distance from center to line equal to 5 gives k=50."
+      },
+      {
+        "q": 12,
+        "section": "A",
+        "topic": "Co-ordinate Geometry",
+        "question": "The focal distance of a point P on the parabola y^2=12x is equal to 7. The abscissa of point P is:",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "5",
+          "D": "4"
+        },
+        "correct": "D",
+        "explanation": "a=3. Focal distance = x+a = 7, so x=4."
+      },
+      {
+        "q": 13,
+        "section": "A",
+        "topic": "Vector Algebra",
+        "question": "If vector a=i+j+k, vector b=i-j+k, and vector c=i+2j-k, then the magnitude of vector a x (vector b x vector c) is:",
+        "options": {
+          "A": "sqrt(26)",
+          "B": "sqrt(24)",
+          "C": "5",
+          "D": "sqrt(30)"
+        },
+        "correct": "A",
+        "explanation": "b×c=-i+2j+3k; a×(b×c)=i-4j+3k; magnitude=sqrt(1+16+9)=sqrt(26)."
+      },
+      {
+        "q": 14,
+        "section": "A",
+        "topic": "Three Dimensional Geometry",
+        "question": "The foot of the perpendicular drawn from the point P(1,2,3) to the line (x-6)/3=(y-7)/2=(z-7)/(-2) is:",
+        "options": {
+          "A": "(6,7,7)",
+          "B": "(3,5,9)",
+          "C": "(0,3,11)",
+          "D": "(3,4,8)"
+        },
+        "correct": "B",
+        "explanation": "Solving for perpendicularity gives lambda=-1, yielding foot (3,5,9)."
+      },
+      {
+        "q": 15,
+        "section": "A",
+        "topic": "Trigonometry",
+        "question": "The sum of all real values of x satisfying tan^-1(2x)+tan^-1(3x)=pi/4 is:",
+        "options": {
+          "A": "-1",
+          "B": "-5/6",
+          "C": "5/6",
+          "D": "1/6"
+        },
+        "correct": "D",
+        "explanation": "6x²+5x-1=0 gives x=1/6 or x=-1 (extraneous). Sum of valid solutions = 1/6."
+      },
+      {
+        "q": 16,
+        "section": "A",
+        "topic": "Statistics and Probability",
+        "question": "The mean and variance of 7 observations are 8 and 16 respectively. If five of the observations are 2, 4, 10, 12, 14, then the product of the remaining two observations is:",
+        "options": {
+          "A": "40",
+          "B": "45",
+          "C": "48",
+          "D": "52"
+        },
+        "correct": "C",
+        "explanation": "x+y=14 and x²+y²=100, giving 2xy=96, so xy=48."
+      },
+      {
+        "q": 17,
+        "section": "A",
+        "topic": "Statistics and Probability",
+        "question": "Bag A contains 3 white and 2 black balls, and Bag B contains 2 white and 4 black balls. One ball is transferred from Bag A to Bag B, and then a ball is drawn from Bag B. If the ball drawn from Bag B is white, the probability that the transferred ball was white is:",
+        "options": {
+          "A": "9/13",
+          "B": "4/13",
+          "C": "3/7",
+          "D": "5/13"
+        },
+        "correct": "A",
+        "explanation": "Using Bayes' theorem, P(W1|E)=(9/35)/(13/35)=9/13."
+      },
+      {
+        "q": 18,
+        "section": "A",
+        "topic": "Sets, Relations and Functions",
+        "question": "Let f: R -> R be defined by f(x)=(x^2-1)/(x^2+1). The range of f(x) is:",
+        "options": {
+          "A": "(-1, 1)",
+          "B": "[-1, 1)",
+          "C": "[-1, 1]",
+          "D": "(0, 1)"
+        },
+        "correct": "B",
+        "explanation": "f(x)=1-2/(x²+1), giving range [-1,1)."
+      },
+      {
+        "q": 19,
+        "section": "A",
+        "topic": "Matrices and Determinants",
+        "question": "Let A be a 3x3 non-singular matrix such that A*A^T=A^T*A and matrix B=A^(-1)*A^T. Then B*B^T is equal to:",
+        "options": {
+          "A": "A",
+          "B": "A^T",
+          "C": "I",
+          "D": "B"
+        },
+        "correct": "C",
+        "explanation": "Simplifying using the given commuting property yields B*B^T = I."
+      },
+      {
+        "q": 20,
+        "section": "A",
+        "topic": "Permutations and Combinations",
+        "question": "The total number of 4-digit numbers formed using the digits 1,2,3,4,5,6 without repetition that are divisible by 4 is:",
+        "options": {
+          "A": "72",
+          "B": "84",
+          "C": "120",
+          "D": "96"
+        },
+        "correct": "D",
+        "explanation": "8 valid 2-digit endings × 12 arrangements for remaining digits = 96."
+      },
+      {
+        "q": 21,
+        "section": "B",
+        "topic": "Limit, Continuity and Differentiability",
+        "question": "The value of lim_{x->0}[e^(x^2)-cos(x)-(3/2)x^2]/x^4 is equal to:",
+        "options": {
+          "A": "11/24",
+          "B": "1/2",
+          "C": "5/12",
+          "D": "7/24"
+        },
+        "correct": "A",
+        "explanation": "Using series expansions, the numerator simplifies to (11/24)x⁴, giving the limit 11/24."
+      },
+      {
+        "q": 22,
+        "section": "B",
+        "topic": "Three Dimensional Geometry",
+        "question": "If the shortest distance between the lines (x-1)/2=(y-2)/3=(z-3)/4 and (x-2)/3=(y-4)/4=(z-5)/5 is d, then the value of 6d^2 is equal to:",
+        "options": {
+          "A": "0",
+          "B": "1",
+          "C": "2",
+          "D": "3"
+        },
+        "correct": "B",
+        "explanation": "d=1/sqrt(6), d²=1/6, so 6d²=1."
+      },
+      {
+        "q": 23,
+        "section": "B",
+        "topic": "Binomial Theorem and its Simple Applications",
+        "question": "The total number of distinct terms in the algebraic expansion of (x+y+z+w)^10 is:",
+        "options": {
+          "A": "220",
+          "B": "120",
+          "C": "286",
+          "D": "364"
+        },
+        "correct": "C",
+        "explanation": "Number of distinct terms = C(13,3) = 286."
+      },
+      {
+        "q": 24,
+        "section": "B",
+        "topic": "Integral Calculus",
+        "question": "The value of the definite integral from -pi/2 to pi/2 of [x^2 cos(x)]/[1+e^x] dx is equal to:",
+        "options": {
+          "A": "(pi^2-4)/2",
+          "B": "(pi^2-4)/4",
+          "C": "pi^2/4",
+          "D": "(pi^2-8)/4"
+        },
+        "correct": "D",
+        "explanation": "Using the even-function property, I=∫0^(π/2) x²cos(x)dx = (π²-8)/4."
+      },
+      {
+        "q": 25,
+        "section": "B",
+        "topic": "Integral Calculus",
+        "question": "The area of the region bounded by the curves y=|x-1| and y=3-|x| is equal to:",
+        "options": {
+          "A": "4",
+          "B": "6",
+          "C": "5",
+          "D": "3"
+        },
+        "correct": "A",
+        "explanation": "Splitting the integral over [-1,2] and summing gives total Area=4."
+      }
+    ]
+  }
+}

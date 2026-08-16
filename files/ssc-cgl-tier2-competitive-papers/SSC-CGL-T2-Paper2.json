@@ -1,0 +1,1968 @@
+{
+  "paper_id": "SSC-CGL-T2-Paper2",
+  "title": "SSC CGL Tier 2 Paper 2",
+  "exam": "SSC CGL Tier 2",
+  "year": 2026,
+  "subjects": {
+    "Mathematical Abilities": [
+      {
+        "q": 1,
+        "topic": "Trigonometry",
+        "question": "A, B, and C started a business with capitals in the ratio 2 : 3 : 5. At the end of 6 months, A adds half of his initial capital, B withdraws one-third of his capital, and C doubles his capital. If the total annual profit is 54,000, what is C's share of the profit?",
+        "options": {
+          "A": "32,400",
+          "B": "28,500",
+          "C": "30,000",
+          "D": "27,000"
+        },
+        "correct": "A",
+        "explanation": "Effective capital products for 12 months: A = (2*6) + (3*6) = 30. B = (3*6) + (2*6) = 30. C = (5*6) + (10*6) = 90. Ratio = 30:30:90 = 1:1:3. C's share = (3/5) * 54000 = 32,400."
+      },
+      {
+        "q": 2,
+        "topic": "Algebra",
+        "question": "A vessel contains a mixture of milk and water initially in the ratio 5 : 3. If 16 liters of the mixture is replaced by 16 liters of pure milk, the ratio of milk to water becomes 3 : 1. What was the initial quantity of mixture in the vessel?",
+        "options": {
+          "A": "64 liters",
+          "B": "48 liters",
+          "C": "80 liters",
+          "D": "96 liters"
+        },
+        "correct": "B",
+        "explanation": "Initial milk = 5x, water = 3x, total = 8x. When 16 liters are removed, milk removed = 10, water removed = 6. Remaining milk = 5x - 10, water = 3x - 6. Adding 16 liters pure milk: Milk becomes 5x + 6. Water remains 3x - 6. Given ratio (5x + 6) / (3x - 6) = 3 / 1. Solving: 5x + 6 = 9x - 18 -> 4x = 24 -> x = 6. Total initial mixture = 8 * 6 = 48 liters."
+      },
+      {
+        "q": 3,
+        "topic": "Trigonometry",
+        "question": "If 5 sin(theta) + 12 cos(theta) = 13, then what is the value of tan(theta)?",
+        "options": {
+          "A": "12/5",
+          "B": "5/12",
+          "C": "5/13",
+          "D": "12/13"
+        },
+        "correct": "B",
+        "explanation": "Given 5 sin(theta) + 12 cos(theta) = 13. Divide both sides by 13: (5/13)sin(theta) + (12/13)cos(theta) = 1. Let 5/13 = cos(alpha) and 12/13 = sin(alpha). Then cos(theta - alpha) = 1, which implies theta = alpha. Therefore, tan(theta) = 5/12."
+      },
+      {
+        "q": 4,
+        "topic": "Trigonometry",
+        "question": "If a and b are positive real numbers such that a^2 + b^2 = 25 and ab = 12, what is the value of a + b?",
+        "options": {
+          "A": "5",
+          "B": "7",
+          "C": "8",
+          "D": "10"
+        },
+        "correct": "B",
+        "explanation": "We know that (a+b)^2 = a^2 + b^2 + 2ab. Substituting the given values, (a+b)^2 = 25 + 2(12) = 25 + 24 = 49. Since a and b are positive real numbers, taking the positive square root gives a + b = 7."
+      },
+      {
+        "q": 5,
+        "topic": "Trigonometry",
+        "question": "In a circle, a chord of length 8 cm is at a perpendicular distance of 3 cm from the center. What is the radius of the circle?",
+        "options": {
+          "A": "4 cm",
+          "B": "5 cm",
+          "C": "6 cm",
+          "D": "7 cm"
+        },
+        "correct": "B",
+        "explanation": "The perpendicular from the center of a circle to a chord bisects the chord. So, half the chord length is 4 cm. Using the right-angled triangle formed by the radius, half-chord, and the distance from the center, radius squared equals 3 squared plus 4 squared, which is 9 + 16 = 25. Therefore, the radius is 5 cm."
+      },
+      {
+        "q": 6,
+        "topic": "Percentage",
+        "question": "What is the remainder when 7^99 is divided by 24?",
+        "options": {
+          "A": "1",
+          "B": "7",
+          "C": "17",
+          "D": "23"
+        },
+        "correct": "B",
+        "explanation": "Notice that 7^2 = 49 = 2(24) + 1, so 7^2 is congruent to 1 modulo 24. Thus, 7^99 = 7^(2*49) * 7 = (7^2)^49 * 7 = (1)^49 * 7 = 7 modulo 24. The remainder is 7."
+      },
+      {
+        "q": 7,
+        "topic": "Trigonometry",
+        "question": "Two pipes A and B can fill a tank in 15 hours and 20 hours respectively. When a third pipe C (an outlet) is also opened along with A and B, the tank is filled in 10 hours. How many hours will pipe C alone take to empty the full tank?",
+        "options": {
+          "A": "12 hours",
+          "B": "15 hours",
+          "C": "20 hours",
+          "D": "60 hours"
+        },
+        "correct": "D",
+        "explanation": "LCM of 15, 20, and 10 is 60 units. Efficiency of A = 4 units/hour, B = 3 units/hour. Combined efficiency of (A + B + C) = 60 / 10 = 6 units/hour. Since A + B = 7 units/hour, the efficiency of C is 7 - 6 = 1 unit/hour (emptying). Therefore, pipe C alone will empty the 60-unit tank in 60 hours."
+      },
+      {
+        "q": 8,
+        "topic": "Algebra",
+        "question": "If x + 1/x = 3, what is the value of x^5 + 1/x^5?",
+        "options": {
+          "A": "110",
+          "B": "115",
+          "C": "123",
+          "D": "130"
+        },
+        "correct": "C",
+        "explanation": "We can find x^2 + 1/x^2 = 3^2 - 2 = 7, and x^3 + 1/x^3 = 3^3 - 3(3) = 18. Then (x^2 + 1/x^2)(x^3 + 1/x^3) = x^5 + 1/x^5 + x + 1/x. So 7 * 18 = (x^5 + 1/x^5) + 3. Hence, x^5 + 1/x^5 = 126 - 3 = 123."
+      },
+      {
+        "q": 9,
+        "topic": "Trigonometry",
+        "question": "A person sells an article at a profit of 10%. Had he bought it for 20% less and sold it for 10 more, he would have made a profit of 40%. What is the original cost price?",
+        "options": {
+          "A": "400",
+          "B": "600",
+          "C": "450",
+          "D": "500"
+        },
+        "correct": "D",
+        "explanation": "Let initial CP be 100x. Initial SP = 110x. New CP = 80x. New SP = 80x * 1.4 = 112x. Difference in SP = 112x - 110x = 2x. Given 2x = 10, so x = 5. Original CP = 100 * 5 = 500."
+      },
+      {
+        "q": 10,
+        "topic": "Compound interest",
+        "question": "The difference between compound interest and simple interest on a certain sum of money at 10% per annum for 3 years is 930. What is the principal sum?",
+        "options": {
+          "A": "25,000",
+          "B": "30,000",
+          "C": "28,000",
+          "D": "32,000"
+        },
+        "correct": "B",
+        "explanation": "The formula for the difference between CI and SI for 3 years is D = P * (R^2 * (300 + R)) / 100^3. Here D = 930, R = 10. So 930 = P * (100 * 310) / 1,000,000 = P * 31 / 1000. Therefore, P = (930 * 1000) / 31 = 30,000."
+      },
+      {
+        "q": 11,
+        "topic": "Trigonometry",
+        "question": "A man covers a certain distance at some speed. If he increases his speed by 15 km/h, he takes 40 minutes less. If he reduces his speed by 12 km/h, he takes 40 minutes more. What is the actual distance?",
+        "options": {
+          "A": "160 km",
+          "B": "240 km",
+          "C": "180 km",
+          "D": "300 km"
+        },
+        "correct": "B",
+        "explanation": "Let original speed be S and distance be D. Using formula D = (S * (S + 15) / 15) * (40/60) and D = (S * (S - 12) / 12) * (40/60). Equating both: (S + 15) / 15 = (S - 12) / 12 -> 4(S + 15) = 5(S - 12) -> S = 120 km/h. Substituting S = 120 into first equation: D = (120 * 135 / 15) * (2/3) = 240 km."
+      },
+      {
+        "q": 12,
+        "topic": "Trigonometry",
+        "question": "In a class of 50 students, the overall average score is 72. The average score of boys is 70 and that of girls is 75. How many boys are there in the class?",
+        "options": {
+          "A": "20",
+          "B": "30",
+          "C": "25",
+          "D": "40"
+        },
+        "correct": "B",
+        "explanation": "Using alligation between boys' average (70) and girls' average (75) with overall average (72): Ratio of boys to girls = (75 - 72) / (72 - 70) = 3 / 2. Number of boys = (3 / 5) * 50 = 30."
+      },
+      {
+        "q": 13,
+        "topic": "Geometry",
+        "question": "In triangle ABC, AD is a median and G is its centroid. If AG = 6 cm, what is the length of AD?",
+        "options": {
+          "A": "9 cm",
+          "B": "12 cm",
+          "C": "8 cm",
+          "D": "10 cm"
+        },
+        "correct": "A",
+        "explanation": "The centroid divides the median in the ratio 2 : 1 from the vertex to the midpoint of the side. Thus, AG : GD = 2 : 1. Given AG = 6 cm, GD = 3 cm. Therefore, the total length AD = AG + GD = 6 + 3 = 9 cm."
+      },
+      {
+        "q": 14,
+        "topic": "Mensuration",
+        "question": "A solid metallic sphere of radius 6 cm is melted and recast into a right circular cone of height 24 cm. What is the radius of the base of the cone?",
+        "options": {
+          "A": "6 cm",
+          "B": "4 cm",
+          "C": "3 cm",
+          "D": "8 cm"
+        },
+        "correct": "A",
+        "explanation": "Volume of sphere = (4/3) * pi * 6^3 = 288 * pi. Volume of cone = (1/3) * pi * r^2 * 24 = 8 * pi * r^2. Equating volumes: 8 * pi * r^2 = 288 * pi -> r^2 = 36 -> r = 6 cm."
+      },
+      {
+        "q": 15,
+        "topic": "Trigonometry",
+        "question": "What is the value of (sin^6(theta) + cos^6(theta) - 1) / (sin^4(theta) + cos^4(theta) - 1)?",
+        "options": {
+          "A": "1/2",
+          "B": "2/3",
+          "C": "3/2",
+          "D": "3/4"
+        },
+        "correct": "C",
+        "explanation": "We know sin^6 + cos^6 = 1 - 3sin^2*cos^2, and sin^4 + cos^4 = 1 - 2sin^2*cos^2. Substituting these into the expression: (1 - 3sin^2*cos^2 - 1) / (1 - 2sin^2*cos^2 - 1) = (-3sin^2*cos^2) / (-2sin^2*cos^2) = 3/2."
+      },
+      {
+        "q": 16,
+        "topic": "Statistics and Data",
+        "question": "For a moderately skewed distribution, if the arithmetic mean is 25 and the median is 27, what is the mode?",
+        "options": {
+          "A": "28",
+          "B": "29",
+          "C": "30",
+          "D": "31"
+        },
+        "correct": "D",
+        "explanation": "The empirical relationship between mean, median, and mode is: Mode = 3 * Median - 2 * Mean. Substituting the given values: Mode = 3(27) - 2(25) = 81 - 50 = 31."
+      },
+      {
+        "q": 17,
+        "topic": "Time and distance",
+        "question": "A boat can go 30 km upstream and 44 km downstream in 10 hours. Also, it can go 40 km upstream and 55 km downstream in 13 hours. What is the speed of the stream?",
+        "options": {
+          "A": "2 km/h",
+          "B": "4 km/h",
+          "C": "5 km/h",
+          "D": "3 km/h"
+        },
+        "correct": "D",
+        "explanation": "Let upstream speed be U and downstream speed be D. 30/U + 44/D = 10 and 40/U + 55/D = 13. Solving this system gives upstream speed U = 5 km/h and downstream speed D = 11 km/h. Speed of stream = (11 - 5) / 2 = 3 km/h."
+      },
+      {
+        "q": 18,
+        "topic": "Percentage",
+        "question": "The population of a town increased by 10% in the first year, by 20% in the second year, and decreased by 25% in the third year. If the present population is 19,800, what was the population 3 years ago?",
+        "options": {
+          "A": "20,000",
+          "B": "18,000",
+          "C": "22,000",
+          "D": "24,000"
+        },
+        "correct": "A",
+        "explanation": "Let initial population be P. P * (110/100) * (120/100) * (75/100) = 19,800 -> P * (99 / 100) = 19,800. Therefore, P = (19,800 * 100) / 99 = 20,000."
+      },
+      {
+        "q": 19,
+        "topic": "Ratio and proportion",
+        "question": "Two numbers are in the ratio 3 : 5. If 9 is subtracted from each, the new numbers are in the ratio 12 : 23. What is the smaller number?",
+        "options": {
+          "A": "33",
+          "B": "44",
+          "C": "55",
+          "D": "66"
+        },
+        "correct": "A",
+        "explanation": "Let the numbers be 3x and 5x. According to the question, (3x - 9) / (5x - 9) = 12 / 23. Cross-multiplying: 23(3x - 9) = 12(5x - 9) -> 9x = 99 -> x = 11. The smaller number is 3x = 3 * 11 = 33."
+      },
+      {
+        "q": 20,
+        "topic": "Compound interest",
+        "question": "A sum of money invested at compound interest amounts to 2,420 in 2 years and 2,662 in 3 years. What is the rate of interest per annum?",
+        "options": {
+          "A": "8%",
+          "B": "12%",
+          "C": "10%",
+          "D": "15%"
+        },
+        "correct": "C",
+        "explanation": "Interest for 1 year on 2,420 = 2,662 - 2,420 = 242. The rate of interest is (242 / 2420) * 100 = 10% per annum."
+      },
+      {
+        "q": 21,
+        "topic": "Averages",
+        "question": "The average of 9 consecutive numbers is 21. What is the product of the smallest and largest of these numbers?",
+        "options": {
+          "A": "396",
+          "B": "420",
+          "C": "425",
+          "D": "440"
+        },
+        "correct": "C",
+        "explanation": "The 5th number in 9 consecutive numbers is the average, which is 21. Thus, the numbers range from 17 to 25. The smallest number is 17 and the largest is 25. Their product is 17 * 25 = 425."
+      },
+      {
+        "q": 22,
+        "topic": "Algebra",
+        "question": "If x + y + z = 10 and xy + yz + zx = 25, what is the value of x^2 + y^2 + z^2?",
+        "options": {
+          "A": "40",
+          "B": "45",
+          "C": "50",
+          "D": "60"
+        },
+        "correct": "C",
+        "explanation": "We know that (x + y + z)^2 = x^2 + y^2 + z^2 + 2(xy + yz + zx). Substituting the given values: 10^2 = x^2 + y^2 + z^2 + 50. Therefore, x^2 + y^2 + z^2 = 50."
+      },
+      {
+        "q": 23,
+        "topic": "Mensuration",
+        "question": "The radii of two cylinders are in the ratio 3 : 2 and their heights are in the ratio 5 : 3. What is the ratio of their volumes?",
+        "options": {
+          "A": "9 : 4",
+          "B": "15 : 8",
+          "C": "27 : 10",
+          "D": "45 : 12"
+        },
+        "correct": "D",
+        "explanation": "Volume of a cylinder is given by V = pi * r^2 * h. Ratio of volumes = (r1^2 * h1) / (r2^2 * h2) = (3^2 * 5) / (2^2 * 3) = 45 / 12."
+      },
+      {
+        "q": 24,
+        "topic": "Number Systems",
+        "question": "A and B together can do a piece of work in 12 days, B and C together in 15 days, and C and A together in 20 days. In how many days can C alone complete the work?",
+        "options": {
+          "A": "40 days",
+          "B": "50 days",
+          "C": "60 days",
+          "D": "120 days"
+        },
+        "correct": "C",
+        "explanation": "LCM of 12, 15, and 20 is 60 units. Combined efficiencies: A + B = 5, B + C = 4, C + A = 3. Adding all three gives 2(A + B + C) = 12, so A + B + C = 6 units/day. Efficiency of C = 6 - 5 = 1 unit/day. Time taken by C alone = 60 / 1 = 60 days."
+      },
+      {
+        "q": 25,
+        "topic": "Trigonometry",
+        "question": "From a point P, 26 cm away from the center of a circle, the length of the tangent PT to the circle is 24 cm. What is the radius of the circle?",
+        "options": {
+          "A": "7 cm",
+          "B": "8 cm",
+          "C": "12 cm",
+          "D": "10 cm"
+        },
+        "correct": "D",
+        "explanation": "The radius drawn to the point of contact is perpendicular to the tangent. Thus, in the right-angled triangle OTP, OP is the hypotenuse (26 cm), PT is the base (24 cm), and OT is the radius. OT^2 = 26^2 - 24^2 = 676 - 576 = 100. Therefore, radius = 10 cm."
+      },
+      {
+        "q": 26,
+        "topic": "Trigonometry",
+        "question": "A, B, and C invest in a business. The remaining profit after 20% goes to charity is distributed among A, B, and C in the ratio 3 : 3 : 2. If A's share is 12,000, what is the total profit?",
+        "options": {
+          "A": "32,000",
+          "B": "36,000",
+          "C": "45,000",
+          "D": "40,000"
+        },
+        "correct": "D",
+        "explanation": "Let total profit be P. Profit after charity = 0.8P. A's share = (3 / 8) * 0.8P = 12,000 -> 0.3P = 12,000 -> P = 40,000."
+      },
+      {
+        "q": 27,
+        "topic": "Trigonometry",
+        "question": "In what ratio must water be mixed with milk costing 32 per liter so that the mixture can be sold at 28 per liter at a profit of 25%?",
+        "options": {
+          "A": "1 : 4",
+          "B": "2 : 5",
+          "C": "3 : 7",
+          "D": "1 : 3"
+        },
+        "correct": "C",
+        "explanation": "Selling price of mixture = 28 per liter at 25% profit. Cost price of 1 liter of mixture = 28 / 1.25 = 22.4 per liter. Cost of water = 0, cost of milk = 32. Using alligation: (32 - 22.4) : (22.4 - 0) = 9.6 : 22.4 = 3 : 7."
+      },
+      {
+        "q": 28,
+        "topic": "Trigonometry",
+        "question": "A shopkeeper marks an article 50% above its cost price and allows a discount of 20%. What is his overall profit percentage?",
+        "options": {
+          "A": "20%",
+          "B": "25%",
+          "C": "30%",
+          "D": "15%"
+        },
+        "correct": "A",
+        "explanation": "Let CP = 100. Marked Price = 150. Discount = 20% on 150 = 30. Selling Price = 150 - 30 = 120. Profit percentage = (120 - 100) / 100 * 100 = 20%."
+      },
+      {
+        "q": 29,
+        "topic": "Trigonometry",
+        "question": "Two trains of equal lengths take 10 seconds and 15 seconds respectively to cross a telegraph post. If they are moving in opposite directions, how long will they take to cross each other?",
+        "options": {
+          "A": "12 seconds",
+          "B": "10 seconds",
+          "C": "14 seconds",
+          "D": "16 seconds"
+        },
+        "correct": "A",
+        "explanation": "Let length of each train be L. Speed of first train = L / 10, speed of second train = L / 15. Relative speed = L / 10 + L / 15 = L / 6. Total distance = 2L. Time taken = (2L) / (L / 6) = 12 seconds."
+      },
+      {
+        "q": 30,
+        "topic": "Trigonometry",
+        "question": "The angle of elevation of the top of a tower from a point is 30 degrees. On walking 50 meters towards the tower, the angle of elevation becomes 60 degrees. What is the height of the tower?",
+        "options": {
+          "A": "25 * sqrt(3) meters",
+          "B": "50 * sqrt(3) meters",
+          "C": "50 / sqrt(3) meters",
+          "D": "25 / sqrt(3) meters"
+        },
+        "correct": "A",
+        "explanation": "Let height of tower be H and initial distance be x. tan(30) = H / (x + 50) = 1 / sqrt(3), so x + 50 = H * sqrt(3). Also, tan(60) = H / x = sqrt(3), so x = H / sqrt(3). Substituting x: 50 = H * (2 / sqrt(3)). Therefore, H = 25 * sqrt(3) meters."
+      }
+    ],
+    "Reasoning and General Intelligence": [
+      {
+        "q": 1,
+        "topic": "Coding and Decoding",
+        "question": "In a certain code language, 'STRIKE' is written as 'TSIREK'. How is 'FORTUNE' written in that code language?",
+        "options": {
+          "A": "OFTRENU",
+          "B": "OFUTRNE",
+          "C": "FOTRNUE",
+          "D": "OFRTENU"
+        },
+        "correct": "A",
+        "explanation": "The word is split into 2-letter pairs and each pair is reversed in position (ST->TS, RI->IR, KE->EK). Applying this pairing rule to FORTUNE (FO->OF, RT->TR, UN->NU, E remains E) gives OFTRENU."
+      },
+      {
+        "q": 2,
+        "topic": "Series",
+        "question": "Find the missing number in the given number series: 3, 8, 18, 35, 61, ?",
+        "options": {
+          "A": "95",
+          "B": "98",
+          "C": "101",
+          "D": "104"
+        },
+        "correct": "B",
+        "explanation": "The differences between consecutive terms are 5, 10, 17, 26. The differences of these differences are 5, 7, 9 (increasing by 2). The next second-level difference is 11, making the next first-level difference 26 + 11 = 37. Adding 37 to 61 gives 98."
+      },
+      {
+        "q": 3,
+        "topic": "Logical Reasoning",
+        "question": "Statements: All pens are books. Some books are pencils. No pencil is an eraser. Conclusions: I. Some pens are not erasers. II. Some books are not erasers.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Neither conclusion follows",
+          "C": "Both conclusions I and II follow",
+          "D": "Only conclusion II follows"
+        },
+        "correct": "D",
+        "explanation": "Since no pencil is an eraser and some books are pencils, those particular books are definitely not erasers (Conclusion II follows). However, we do not know that those specific books contain pens. Therefore, Conclusion I does not necessarily follow."
+      },
+      {
+        "q": 4,
+        "topic": "Logical Reasoning",
+        "question": "If A + B means A is the father of B, A - B means A is the wife of B, A * B means A is the brother of B, and A / B means A is the daughter of B, which of the following expressions indicates that P is the paternal grandfather of S?",
+        "options": {
+          "A": "P + R * Q / S",
+          "B": "P * R + Q / S",
+          "C": "P / R + Q * S",
+          "D": "P + R + Q * S"
+        },
+        "correct": "D",
+        "explanation": "In expression P + R + Q * S: P + R means P is the father of R; R + Q means R is the father of Q (making P the paternal grandfather of Q); and Q * S means Q is the brother of S. Thus, P is the paternal grandfather of S."
+      },
+      {
+        "q": 5,
+        "topic": "Spatial Reasoning",
+        "question": "One morning after sunrise, Rohan and Sohan were standing facing each other such that Rohan's shadow fell exactly to his right. Which direction was Sohan facing?",
+        "options": {
+          "A": "North",
+          "B": "South",
+          "C": "East",
+          "D": "West"
+        },
+        "correct": "A",
+        "explanation": "In the morning, the sun is in the East, so shadows fall towards the West. Rohan's shadow fell to his right, which means Rohan was facing South. Since Rohan and Sohan were standing facing each other, Sohan must be facing North."
+      },
+      {
+        "q": 6,
+        "topic": "Coding and Decoding",
+        "question": "If BOOK is coded as 43, and PEN is coded as 35, how is MAP coded in that code language?",
+        "options": {
+          "A": "28",
+          "B": "30",
+          "C": "32",
+          "D": "34"
+        },
+        "correct": "B",
+        "explanation": "The code is calculated by taking the sum of the alphabetical positions of the letters. For MAP: M(13) + A(1) + P(16) = 30."
+      },
+      {
+        "q": 7,
+        "topic": "Logical Reasoning",
+        "question": "Five persons P, Q, R, S, and T are sitting in a straight row facing North. R is sitting exactly in the middle. S is sitting immediately to the right of R. P is at the extreme left end, and Q is the immediate neighbor of P. Who is sitting at the extreme right end?",
+        "options": {
+          "A": "P",
+          "B": "Q",
+          "C": "T",
+          "D": "S"
+        },
+        "correct": "C",
+        "explanation": "R is at position 3 (middle). P is at extreme left (position 1), and Q is immediate neighbor (position 2). S is immediately to the right of R (position 4). The remaining person T must occupy position 5, which is the extreme right end."
+      },
+      {
+        "q": 8,
+        "topic": "Logical Reasoning",
+        "question": "If '+' means '-', '-' means '*', '*' means '/', and '/' means '+', what is the value of the expression: 40 * 10 / 5 - 3 + 7?",
+        "options": {
+          "A": "15",
+          "B": "18",
+          "C": "12",
+          "D": "20"
+        },
+        "correct": "C",
+        "explanation": "Substituting symbols: 40 / 10 + 5 * 3 - 7. Evaluating using BODMAS: 40 / 10 = 4; 5 * 3 = 15. Expression becomes 4 + 15 - 7 = 12."
+      },
+      {
+        "q": 9,
+        "topic": "Logical Reasoning",
+        "question": "Statement: 'The municipal corporation has decided to install solar-powered street lights across all major highways to reduce electricity costs.' Assumptions: I. Solar-powered street lights are sufficient to illuminate major highways effectively. II. Conventional street lighting involves electricity costs. Which of the assumptions is implicit?",
+        "options": {
+          "A": "Both I and II are implicit",
+          "B": "Only assumption I is implicit",
+          "C": "Only assumption II is implicit",
+          "D": "Neither I nor II is implicit"
+        },
+        "correct": "A",
+        "explanation": "Assumption I is implicit because an organization would not decide to install a new lighting system unless it effectively fulfills illumination requirements. Assumption II is also implicit because the stated objective is to reduce electricity costs, presupposing that conventional lighting involves electricity costs."
+      },
+      {
+        "q": 10,
+        "topic": "Logical Reasoning",
+        "question": "Find the missing number in the given grid: Row 1: 7, 5, 74; Row 2: 9, 3, 90; Row 3: 8, 6, ?",
+        "options": {
+          "A": "92",
+          "B": "100",
+          "C": "104",
+          "D": "108"
+        },
+        "correct": "B",
+        "explanation": "The logic in each row is the sum of the squares of the two numbers. Row 1: 7^2 + 5^2 = 49 + 25 = 74. Row 2: 9^2 + 3^2 = 81 + 9 = 90. Row 3: 8^2 + 6^2 = 64 + 36 = 100."
+      },
+      {
+        "q": 11,
+        "topic": "Logical Reasoning",
+        "question": "Who is the tallest among five friends A, B, C, D, and E? Statements: I. A is taller than B and D, but shorter than C. II. E is taller than C. Which statement(s) is/are sufficient?",
+        "options": {
+          "A": "Only statement I is sufficient",
+          "B": "Only statement II is sufficient",
+          "C": "Both statements I and II together are necessary",
+          "D": "Neither statement is sufficient"
+        },
+        "correct": "C",
+        "explanation": "From statement I, C > A > B & D. From statement II, E > C. Combining both statements gives the complete height order: E > C > A > (B, D). Thus, both statements together are necessary to determine that E is the tallest."
+      },
+      {
+        "q": 12,
+        "topic": "Logical Reasoning",
+        "question": "If the Republic Day of India (26th January) in a certain leap year fell on a Saturday, what day of the week was Independence Day (15th August) of the same year?",
+        "options": {
+          "A": "Thursday",
+          "B": "Saturday",
+          "C": "Sunday",
+          "D": "Friday"
+        },
+        "correct": "D",
+        "explanation": "The actual date difference from 26th January to 15th August in a leap year is 202 days. Calculating the remainder: 202 modulo 7 = 6 odd days. Adding 6 days to Saturday gives Friday."
+      },
+      {
+        "q": 13,
+        "topic": "Logical Reasoning",
+        "question": "Statements: Some markers are pens. All pens are brushes. No brush is a scale. Conclusions: I. Some markers are not scales. II. Some brushes are not scales.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Both conclusions I and II follow",
+          "D": "Neither conclusion follows"
+        },
+        "correct": "C",
+        "explanation": "Since some markers are pens and all pens are brushes, those markers which are pens are brushes, and since no brush is a scale, those markers cannot be scales (Conclusion I follows). Furthermore, since all pens are brushes and no brush is a scale, those brushes which are pens are definitely not scales, meaning some brushes are not scales (Conclusion II follows)."
+      },
+      {
+        "q": 14,
+        "topic": "Logical Reasoning",
+        "question": "In a village, 65% of the population read newspaper A, 40% read newspaper B, and 20% read both. What percentage of the population does not read either newspaper?",
+        "options": {
+          "A": "10%",
+          "B": "15%",
+          "C": "20%",
+          "D": "25%"
+        },
+        "correct": "B",
+        "explanation": "Total reading at least one paper = A + B - Both = 65% + 40% - 20% = 85%. Therefore, the percentage of the population that does not read either newspaper is 100% - 85% = 15%."
+      },
+      {
+        "q": 15,
+        "topic": "Logical Reasoning",
+        "question": "Statement: 'Should all major manufacturing industries in urban residential zones be relocated to the outskirts of the city?' Arguments: I. Yes, it will significantly reduce urban air pollution and traffic congestion. II. No, it may cause significant short-term employment and logistical difficulties for workers. Which argument is strong?",
+        "options": {
+          "A": "Only argument I is strong",
+          "B": "Only argument II is strong",
+          "C": "Both arguments I and II are strong",
+          "D": "Neither argument is strong"
+        },
+        "correct": "C",
+        "explanation": "Argument I is strong because environmental health and traffic management are primary policy benefits of zoning. Argument II is also strong because potential short-term employment and logistical difficulties for workers are realistic economic consequences. Thus, both arguments are strong."
+      },
+      {
+        "q": 16,
+        "topic": "Coding and Decoding",
+        "question": "In a coded language, 'GLOBAL' is written as 'FKNAZK'. How is 'PLANET' written in that code language?",
+        "options": {
+          "A": "OKZODS",
+          "B": "OJZMDS",
+          "C": "OKZNES",
+          "D": "OKZMDS"
+        },
+        "correct": "D",
+        "explanation": "Each letter in the word is shifted backward by 1 position in the alphabet (G->F, L->K, O->N, B->A, A->Z, L->K). Applying this exact -1 shift to PLANET gives OKZMDS."
+      },
+      {
+        "q": 17,
+        "topic": "Series",
+        "question": "Find the missing number in the series: 2, 9, 28, 65, 126, ?",
+        "options": {
+          "A": "217",
+          "B": "215",
+          "C": "224",
+          "D": "210"
+        },
+        "correct": "A",
+        "explanation": "The series follows the formula n^3 + 1 for n = 1, 2, 3, 4, 5, 6. For n = 6: 6^3 + 1 = 216 + 1 = 217."
+      },
+      {
+        "q": 18,
+        "topic": "Classification",
+        "question": "Choose the odd one out from the given alternatives:",
+        "options": {
+          "A": "Mercury",
+          "B": "Moon",
+          "C": "Venus",
+          "D": "Mars"
+        },
+        "correct": "B",
+        "explanation": "Mercury, Venus, and Mars are planets in our solar system. The Moon is a natural satellite. Thus, Moon is the odd one out."
+      },
+      {
+        "q": 19,
+        "topic": "Logical Reasoning",
+        "question": "Statements: Some cats are dogs. All dogs are animals. Conclusions: I. Some cats are animals. II. All animals are dogs.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Both follow",
+          "D": "Neither follows"
+        },
+        "correct": "A",
+        "explanation": "From 'Some cats are dogs' and 'All dogs are animals', it logically follows that some cats are animals (Conclusion I). However, we cannot conclude that all animals are dogs, as there may be animals that are not dogs. Therefore, only conclusion I follows."
+      },
+      {
+        "q": 20,
+        "topic": "Logical Reasoning",
+        "question": "Arrange the following words in a logical and meaningful order: 1. Member 2. Family 3. Community 4. Society 5. Country",
+        "options": {
+          "A": "1, 2, 4, 3, 5",
+          "B": "1, 3, 2, 4, 5",
+          "C": "1, 2, 3, 4, 5",
+          "D": "2, 1, 3, 4, 5"
+        },
+        "correct": "C",
+        "explanation": "The logical order from individual to broadest group is: Member (1) -> Family (2) -> Community (3) -> Society (4) -> Country (5). Thus, the correct sequence is 1, 2, 3, 4, 5."
+      },
+      {
+        "q": 21,
+        "topic": "Logical Reasoning",
+        "question": "Arrange the following stages of recruitment in a logical and meaningful order: 1. Application 2. Selection 3. Advertisement 4. Interview 5. Appointment",
+        "options": {
+          "A": "3, 1, 2, 4, 5",
+          "B": "3, 1, 4, 2, 5",
+          "C": "3, 4, 1, 2, 5",
+          "D": "1, 3, 4, 2, 5"
+        },
+        "correct": "B",
+        "explanation": "The logical order of the recruitment process is: First, release an Advertisement (3); second, submit an Application (1); third, attend the Interview (4); fourth, undergo Selection (2); and finally, receive the Appointment (5). Thus, the correct order is 3, 1, 4, 2, 5."
+      },
+      {
+        "q": 22,
+        "topic": "Logical Reasoning",
+        "question": "A is the daughter of B. B is the mother of C. C is the brother of D. How is D related to A if D is female?",
+        "options": {
+          "A": "Sister",
+          "B": "Mother",
+          "C": "Aunt",
+          "D": "Cousin"
+        },
+        "correct": "A",
+        "explanation": "A is the daughter of B and C is the son of B, so A and C are siblings. C is the brother of D, and D is female. Therefore, D is the sister of A."
+      },
+      {
+        "q": 23,
+        "topic": "Logical Reasoning",
+        "question": "In a row of boys, Amit is 10th from the left and Rohit is 15th from the right. When they interchange their positions, Amit becomes 27th from the left. How many total boys are there in the row?",
+        "options": {
+          "A": "39",
+          "B": "41",
+          "C": "43",
+          "D": "45"
+        },
+        "correct": "B",
+        "explanation": "After interchanging, Amit's new position from the left is 27, and his position from the right is Rohit's original position, which is 15th from the right. Total number of persons = (Position from left + Position from right) - 1 = 27 + 15 - 1 = 41."
+      },
+      {
+        "q": 24,
+        "topic": "Logical Reasoning",
+        "question": "Find the missing letter in the given sequence: D, G, J, M, P, ?",
+        "options": {
+          "A": "R",
+          "B": "T",
+          "C": "U",
+          "D": "S"
+        },
+        "correct": "D",
+        "explanation": "Each letter advances by 3 positions in the alphabet (D + 3 = G, G + 3 = J, J + 3 = M, M + 3 = P). Following P by +3 positions gives S."
+      },
+      {
+        "q": 25,
+        "topic": "Logical Reasoning",
+        "question": "Statement: 'There has been a sharp increase in cyber fraud cases targeting elderly citizens who are unfamiliar with digital banking security.' Courses of Action: I. Banks should launch special awareness workshops and simplified security guides for senior citizens. II. The government should immediately ban digital banking for senior citizens.",
+        "options": {
+          "A": "Only II follows",
+          "B": "Both I and II follow",
+          "C": "Neither follows",
+          "D": "Only I follows"
+        },
+        "correct": "D",
+        "explanation": "Course of action I is logical and constructive, addressing the root cause through education and support. Course of action II is extreme and counterproductive. Thus, only course of action I follows."
+      },
+      {
+        "q": 26,
+        "topic": "Logical Reasoning",
+        "question": "Five persons E, F, G, H, and I are standing in a straight queue facing North. F is standing immediately behind E. G is standing in front of I, who is immediately behind H. If F is standing between E and G, who is standing at the extreme front of the queue?",
+        "options": {
+          "A": "E",
+          "B": "F",
+          "C": "G",
+          "D": "H"
+        },
+        "correct": "A",
+        "explanation": "F is immediately behind E (E -> F). G is in front of I, who is immediately behind H (H -> I -> G). Since F is between E and G, the queue order from front to back is E, F, G, H, I. Therefore, E is standing at the extreme front of the queue."
+      },
+      {
+        "q": 27,
+        "topic": "Logical Reasoning",
+        "question": "Statement: 'Financial literacy is essential for modern citizens to avoid debt traps and manage personal wealth effectively.' Conclusions: I. People without financial literacy invariably fall into debt traps. II. Managing personal wealth requires knowledge of financial principles.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Both conclusions follow",
+          "D": "Neither follows"
+        },
+        "correct": "B",
+        "explanation": "Conclusion I uses absolute phrasing ('invariably'), which goes beyond the scope of the statement. Conclusion II logically follows as it directly reflects the core premise that managing wealth effectively requires financial literacy."
+      },
+      {
+        "q": 28,
+        "topic": "Coding and Decoding",
+        "question": "In a certain code, 'ROAD' is written as 'URDG'. How is 'SWIM' written in that code?",
+        "options": {
+          "A": "VYLJ",
+          "B": "UZLP",
+          "C": "VZLP",
+          "D": "WZLP"
+        },
+        "correct": "C",
+        "explanation": "Each letter in the word is shifted forward by 3 positions in the alphabet (R->U, O->R, A->D, D->G). Applying this +3 shift to SWIM: S->V, W->Z, I->L, M->P. Thus, SWIM becomes VZLP."
+      },
+      {
+        "q": 29,
+        "topic": "Logical Reasoning",
+        "question": "A father is 7 times as old as his son. After 6 years, the father will be 4 times as old as his son. What is the father's present age?",
+        "options": {
+          "A": "35 years",
+          "B": "38 years",
+          "C": "40 years",
+          "D": "42 years"
+        },
+        "correct": "D",
+        "explanation": "Let son's age be S, so father's present age is 7S. After 6 years: 7S + 6 = 4(S + 6) => 7S + 6 = 4S + 24 => 3S = 18 => S = 6. Therefore, father's present age = 7 * 6 = 42 years."
+      },
+      {
+        "q": 30,
+        "topic": "Series",
+        "question": "Find the missing number in the series: 5, 10, 20, 35, 55, ?",
+        "options": {
+          "A": "80",
+          "B": "75",
+          "C": "85",
+          "D": "90"
+        },
+        "correct": "A",
+        "explanation": "The differences between consecutive terms form an arithmetic sequence: 5, 10, 15, 20. The next difference is 25. Adding 25 to 55 gives 55 + 25 = 80."
+      }
+    ],
+    "English Language and Comprehension": [
+      {
+        "q": 1,
+        "topic": "Grammar",
+        "question": "Identify the segment in the sentence which contains a grammatical error: Neither the teacher nor the students was present in the classroom when the inspection took place.",
+        "options": {
+          "A": "was present in the classroom",
+          "B": "when the inspection took place",
+          "C": "Neither the teacher nor",
+          "D": "the students"
+        },
+        "correct": "A",
+        "explanation": "When two subjects are joined by 'neither... nor', the verb agrees with the subject closer to it. Here, 'students' is plural, so the verb should be plural ('were') instead of 'was'."
+      },
+      {
+        "q": 2,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option to substitute the underlined segment in the given sentence: If I was you, I would certainly accept this lucrative job offer.",
+        "options": {
+          "A": "If I am you",
+          "B": "If I have been you",
+          "C": "If I were you",
+          "D": "If I will be you"
+        },
+        "correct": "C",
+        "explanation": "In conditional sentences expressing an unreal or hypothetical situation in the present, the subjunctive mood 'were' is used with all subjects, regardless of person or number. Therefore, 'If I were you' is grammatically correct."
+      },
+      {
+        "q": 3,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate synonym of the given word: EPHEMERAL",
+        "options": {
+          "A": "Permanent",
+          "B": "Eternal",
+          "C": "Transient",
+          "D": "Prolonged"
+        },
+        "correct": "C",
+        "explanation": "'Ephemeral' means lasting for a very short time. 'Transient' shares this meaning of short duration, whereas permanent, eternal, and prolonged convey the opposite."
+      },
+      {
+        "q": 4,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate antonym of the given word: GREGARIOUS",
+        "options": {
+          "A": "Sociable",
+          "B": "Affable",
+          "C": "Reserved",
+          "D": "Extroverted"
+        },
+        "correct": "C",
+        "explanation": "'Gregarious' means fond of company, outgoing, and sociable. The exact antonym among the choices is 'reserved', which describes someone who keeps to themselves."
+      },
+      {
+        "q": 5,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate meaning of the given idiom: To burn the candle at both ends",
+        "options": {
+          "A": "To overwork oneself by working from early morning till late at night",
+          "B": "To waste money on unnecessary luxuries",
+          "C": "To create trouble for oneself intentionally",
+          "D": "To destroy evidence completely"
+        },
+        "correct": "A",
+        "explanation": "The idiom 'to burn the candle at both ends' means to exhaust oneself by doing too much, working excessive hours, or overextending physical and mental energy."
+      },
+      {
+        "q": 6,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate one-word substitute for the given group of words: A person who knows a lot about and enjoys fine food and drink",
+        "options": {
+          "A": "Ascetic",
+          "B": "Connoisseur",
+          "C": "Pedant",
+          "D": "Misanthrope"
+        },
+        "correct": "B",
+        "explanation": "A 'connoisseur' is an expert judge in matters of taste, especially fine food and art. An ascetic practices severe self-discipline, a pedant is overly concerned with minor details, and a misanthrope dislikes humankind."
+      },
+      {
+        "q": 7,
+        "topic": "Voice and Narration",
+        "question": "Select the correct active form of the given sentence: The lost child was being searched for by the police officers.",
+        "options": {
+          "A": "The police officers are searching for the lost child.",
+          "B": "The police officers searched the lost child.",
+          "C": "The police officers were searching for the lost child.",
+          "D": "The police officers have searched for the lost child."
+        },
+        "correct": "C",
+        "explanation": "The passive sentence 'was being searched for' is in the past continuous tense. The corresponding active voice requires 'were searching for' matching the plural subject 'police officers'."
+      },
+      {
+        "q": 8,
+        "topic": "Grammar",
+        "question": "Select the correct indirect form of the given sentence: He said to me, 'Where are you going during the summer vacation?'",
+        "options": {
+          "A": "He asked me where I am going during the summer vacation.",
+          "B": "He told me where were you going during the summer vacation.",
+          "C": "He asked me that where was I going during the summer vacation.",
+          "D": "He asked me where I was going during the summer vacation."
+        },
+        "correct": "D",
+        "explanation": "In direct WH-questions, the reporting verb 'said to' changes to 'asked', the question word remains, and the tense shifts from present continuous ('are going') to past continuous ('was going') with declarative word order ('I was going')."
+      },
+      {
+        "q": 9,
+        "topic": "Spelling",
+        "question": "Select the word with the correct spelling among the given alternatives:",
+        "options": {
+          "A": "Accommodation",
+          "B": "Acomodation",
+          "C": "Accomodation",
+          "D": "Acommodetion"
+        },
+        "correct": "A",
+        "explanation": "The correct spelling is 'Accommodation', featuring double 'c' and double 'm'."
+      },
+      {
+        "q": 10,
+        "topic": "Fillers",
+        "question": "Select the most appropriate option to fill in the blank: Despite his immense wealth, he lived a life of extreme _______ and avoided all forms of luxury.",
+        "options": {
+          "A": "extravagance",
+          "B": "austerity",
+          "C": "opulence",
+          "D": "indulgence"
+        },
+        "correct": "B",
+        "explanation": "The sentence requires a noun following 'a life of extreme'. 'Austerity' means sternness or severity of lifestyle, fitting the context of avoiding luxury."
+      },
+      {
+        "q": 11,
+        "topic": "Grammar",
+        "question": "Identify the segment in the sentence which contains a grammatical error: One of the most important factors of success in life are maintaining a positive attitude.",
+        "options": {
+          "A": "One of the most important factors",
+          "B": "of success in life",
+          "C": "are maintaining a positive attitude",
+          "D": "No error"
+        },
+        "correct": "C",
+        "explanation": "The subject of the sentence is 'One' (from 'One of the...'), which is singular. Therefore, the verb must be singular ('is') instead of 'are'."
+      },
+      {
+        "q": 12,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option to substitute the underlined segment: Scarcely had she stepped outside the house when a heavy downpour began.",
+        "options": {
+          "A": "Scarcely she had stepped",
+          "B": "Scarcely did she stepped",
+          "C": "Scarcely had stepped she",
+          "D": "No improvement required"
+        },
+        "correct": "D",
+        "explanation": "The sentence structure using 'Scarcely had... when' requires inversion (auxiliary verb 'had' before the subject 'she'), which is correctly structured in the original sentence."
+      },
+      {
+        "q": 13,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate synonym of the given word: METICULOUS",
+        "options": {
+          "A": "Scrupulous",
+          "B": "Careless",
+          "C": "Negligent",
+          "D": "Hasty"
+        },
+        "correct": "A",
+        "explanation": "'Meticulous' means showing great attention to detail; very careful and precise. 'Scrupulous' is a direct synonym, while the others are antonyms."
+      },
+      {
+        "q": 14,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate antonym of the given word: BENEVOLENT",
+        "options": {
+          "A": "Altruistic",
+          "B": "Malevolent",
+          "C": "Generous",
+          "D": "Kindhearted"
+        },
+        "correct": "B",
+        "explanation": "'Benevolent' means well-meaning and kindly. Its exact antonym is 'malevolent', meaning wishing evil or harm to others."
+      },
+      {
+        "q": 15,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate meaning of the given idiom: To hit the nail on the head",
+        "options": {
+          "A": "To do something with extreme violence",
+          "B": "To make a big mistake",
+          "C": "To describe exactly what is causing a situation or problem",
+          "D": "To fail in an ambitious venture"
+        },
+        "correct": "C",
+        "explanation": "To 'hit the nail on the head' means to find or state the exact truth or exact answer to a problem."
+      },
+      {
+        "q": 16,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate one-word substitute: The habit of always admiring oneself or excessive self-love",
+        "options": {
+          "A": "Altruism",
+          "B": "Egotism",
+          "C": "Philanthropy",
+          "D": "Narcissism"
+        },
+        "correct": "D",
+        "explanation": "'Narcissism' refers to excessive interest in or admiration of oneself and one's physical appearance. Egotism is selfishness, while altruism and philanthropy involve selfless concern for others."
+      },
+      {
+        "q": 17,
+        "topic": "Voice and Narration",
+        "question": "Select the correct passive form of the given sentence: The committee will announce the election results tomorrow.",
+        "options": {
+          "A": "The election results will be announced by the committee tomorrow.",
+          "B": "The election results are announced by the committee tomorrow.",
+          "C": "The election results would be announced by the committee tomorrow.",
+          "D": "The election results will have been announced by the committee tomorrow."
+        },
+        "correct": "A",
+        "explanation": "In active future tense ('will announce'), the passive form becomes 'will be' + past participle ('will be announced')."
+      },
+      {
+        "q": 18,
+        "topic": "Grammar",
+        "question": "Select the correct direct form of the given sentence: She exclaimed with sorrow that it was a very tragic accident.",
+        "options": {
+          "A": "She said, 'What a tragic accident it is!'",
+          "B": "She exclaimed, 'Alas! It is a very tragic accident.'",
+          "C": "She said, 'It is a tragic accident.'",
+          "D": "She said, 'How tragic accident it was!'"
+        },
+        "correct": "B",
+        "explanation": "The exclamation 'Alas!' expresses sorrow or grief, making the direct speech equivalent feature 'Alas!' with the appropriate reporting verb 'exclaimed'."
+      },
+      {
+        "q": 19,
+        "topic": "Spelling",
+        "question": "Select the word with the correct spelling among the given alternatives:",
+        "options": {
+          "A": "Milenium",
+          "B": "Millenium",
+          "C": "Millennium",
+          "D": "Millenniam"
+        },
+        "correct": "C",
+        "explanation": "The correct spelling is 'Millennium', with double 'l' and double 'n'."
+      },
+      {
+        "q": 20,
+        "topic": "Fillers",
+        "question": "Select the most appropriate option to fill in the blank: The manager refused to _______ the new marketing strategy presented by the consultants.",
+        "options": {
+          "A": "except",
+          "B": "admit",
+          "C": "concede",
+          "D": "endorse"
+        },
+        "correct": "D",
+        "explanation": "To 'endorse' means to give approval or support to a plan or proposal. 'Except' is a preposition/conjunction, making 'endorse' the correct verb fit."
+      },
+      {
+        "q": 21,
+        "topic": "Grammar",
+        "question": "Identify the segment in the sentence which contains a grammatical error: Neither of the two candidates who were interviewed are eligible for the post.",
+        "options": {
+          "A": "are eligible for the post",
+          "B": "Neither of the",
+          "C": "two candidates who",
+          "D": "were interviewed"
+        },
+        "correct": "A",
+        "explanation": "The phrase 'Neither of' takes a singular verb. Therefore, 'are' must be replaced by 'is'."
+      },
+      {
+        "q": 22,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option to substitute the underlined segment: She has been working in this organization since five years.",
+        "options": {
+          "A": "from five years",
+          "B": "for five years",
+          "C": "during five years",
+          "D": "by five years"
+        },
+        "correct": "B",
+        "explanation": "For a period of time (duration such as 'five years'), the preposition 'for' is used, whereas 'since' is used for a point in time (e.g., since 2018)."
+      },
+      {
+        "q": 23,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate synonym of the given word: CANDID",
+        "options": {
+          "A": "Evasive",
+          "B": "Deceitful",
+          "C": "Frank",
+          "D": "Secretive"
+        },
+        "correct": "C",
+        "explanation": "'Candid' means truthful and straightforward; frank. 'Frank' is its direct synonym."
+      },
+      {
+        "q": 24,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate antonym of the given word: OBSTINATE",
+        "options": {
+          "A": "Stubborn",
+          "B": "Tenacious",
+          "C": "Headstrong",
+          "D": "Compliant"
+        },
+        "correct": "D",
+        "explanation": "'Obstinate' means stubbornly refusing to change one's opinion or chosen course of action. Its antonym is 'compliant', meaning willing to agree or yield."
+      },
+      {
+        "q": 25,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate meaning of the given idiom: To spill the beans",
+        "options": {
+          "A": "To reveal a secret unintentionally or prematurely",
+          "B": "To create a mess while cooking",
+          "C": "To waste resources on trifles",
+          "D": "To confess a crime to the police"
+        },
+        "correct": "A",
+        "explanation": "To 'spill the beans' is an idiom meaning to disclose a secret, often inadvertently."
+      },
+      {
+        "q": 26,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate one-word substitute: A remedy for all diseases or difficulties",
+        "options": {
+          "A": "Placebo",
+          "B": "Panacea",
+          "C": "Antidote",
+          "D": "Cureall"
+        },
+        "correct": "B",
+        "explanation": "A 'panacea' is a universal remedy for all diseases or problems."
+      },
+      {
+        "q": 27,
+        "topic": "Voice and Narration",
+        "question": "Select the correct passive form of the given sentence: Why did you not inform me about the meeting?",
+        "options": {
+          "A": "Why was I not informed by you about the meeting?",
+          "B": "Why were you not informed about the meeting?",
+          "C": "Why was I not informed about the meeting?",
+          "D": "Why had I not been informed by you about the meeting?"
+        },
+        "correct": "C",
+        "explanation": "In the simple past interrogative tense ('did you not inform'), the passive structure uses 'was/were' + subject + 'not informed'. For subject 'I', it becomes 'Why was I not informed'."
+      },
+      {
+        "q": 28,
+        "topic": "Voice and Narration",
+        "question": "Select the correct indirect form of the given sentence: The teacher ordered the students, 'Do not make a noise in the hallway.'",
+        "options": {
+          "A": "The teacher told the students that do not make a noise in the hallway.",
+          "B": "The teacher ordered the students that they should not make a noise.",
+          "C": "The teacher requested the students not to make a noise in the hallway.",
+          "D": "The teacher forbade the students to make a noise in the hallway."
+        },
+        "correct": "D",
+        "explanation": "An imperative negative command ('Do not make') can be expressed in indirect speech using 'forbade' followed by the infinitive 'to make a noise', effectively incorporating the negation."
+      },
+      {
+        "q": 29,
+        "topic": "Spelling",
+        "question": "Select the word with the correct spelling among the given alternatives:",
+        "options": {
+          "A": "Lieutenant",
+          "B": "Leutenant",
+          "C": "Lieutnant",
+          "D": "Luitenant"
+        },
+        "correct": "A",
+        "explanation": "The correct spelling is 'Lieutenant'."
+      },
+      {
+        "q": 30,
+        "topic": "Fillers",
+        "question": "Select the most appropriate option to fill in the blank: The arduous journey across the rugged mountains proved to _______ the endurance of the climbers.",
+        "options": {
+          "A": "tax",
+          "B": "test",
+          "C": "text",
+          "D": "tast"
+        },
+        "correct": "B",
+        "explanation": "To 'test' the endurance of someone means to evaluate or challenge their limits. In this context, 'test' is the accurate verb."
+      },
+      {
+        "q": 31,
+        "topic": "Grammar",
+        "question": "Identify the segment in the sentence which contains a grammatical error: Scarcely had she entered the office when the telephone rang continuously.",
+        "options": {
+          "A": "Scarcely had she entered",
+          "B": "the office when",
+          "C": "the telephone rang continuously",
+          "D": "No error"
+        },
+        "correct": "D",
+        "explanation": "The construction 'Scarcely had... when' is grammatically correct. Therefore, there is no error."
+      },
+      {
+        "q": 32,
+        "topic": "Grammar",
+        "question": "Identify the segment in the sentence which contains a grammatical error: Scarcely had she entered the office than the telephone rang continuously.",
+        "options": {
+          "A": "Scarcely had she entered",
+          "B": "the office than",
+          "C": "the telephone rang continuously",
+          "D": "No error"
+        },
+        "correct": "B",
+        "explanation": "The correlative conjunction for 'Scarcely had' is 'when', not 'than'. Therefore, 'than' is incorrect."
+      },
+      {
+        "q": 33,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option to substitute the underlined segment: He is too intelligent that he cannot be easily fooled.",
+        "options": {
+          "A": "very intelligent that",
+          "B": "so intelligent as",
+          "C": "too intelligent so",
+          "D": "so intelligent that"
+        },
+        "correct": "D",
+        "explanation": "The correct correlative conjunction structure for indicating cause and result with a negative clause is 'so... that' ('so intelligent that he cannot...')."
+      },
+      {
+        "q": 34,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate synonym of the given word: PRUDENT",
+        "options": {
+          "A": "Judicious",
+          "B": "Rash",
+          "C": "Foolish",
+          "D": "Imprudent"
+        },
+        "correct": "A",
+        "explanation": "'Prudent' means acting with or showing care for the future; wise or judicious. 'Judicious' is a direct synonym."
+      },
+      {
+        "q": 35,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate antonym of the given word: EQUANIMITY",
+        "options": {
+          "A": "Composure",
+          "B": "Agitation",
+          "C": "Serenity",
+          "D": "Tranquility"
+        },
+        "correct": "B",
+        "explanation": "'Equanimity' means mental calmness and composure, especially in a difficult situation. Its antonym is 'agitation' or excitability."
+      },
+      {
+        "q": 36,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate meaning of the given idiom: To cut corners",
+        "options": {
+          "A": "To take a shorter route while driving",
+          "B": "To do something perfunctorily to save time or money",
+          "C": "To build sharp edges on a sculpture",
+          "D": "To reduce employee salaries significantly"
+        },
+        "correct": "B",
+        "explanation": "To 'cut corners' means to perform a task superficially or save money/effort by omitting steps or using cheaper methods."
+      },
+      {
+        "q": 37,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate one-word substitute: A list of books available in a library or publishing house",
+        "options": {
+          "A": "Directory",
+          "B": "Lexicon",
+          "C": "Bibliography",
+          "D": "Catalogue"
+        },
+        "correct": "D",
+        "explanation": "A 'catalogue' is a complete list of items, such as books in a library. A bibliography is a list of source books written on a subject."
+      },
+      {
+        "q": 38,
+        "topic": "Voice and Narration",
+        "question": "Select the correct active form of the given sentence: Let the door be shut immediately.",
+        "options": {
+          "A": "Shut the door immediately.",
+          "B": "You are requested to shut the door.",
+          "C": "Shutting the door is done immediately.",
+          "D": "The door must shut immediately."
+        },
+        "correct": "A",
+        "explanation": "An imperative passive sentence starting with 'Let... be shut' corresponds to the active imperative command 'Shut the door immediately'."
+      },
+      {
+        "q": 39,
+        "topic": "Grammar",
+        "question": "Select the correct indirect form of the given sentence: He said to me, 'Bravo! You have performed brilliantly in the exam.'",
+        "options": {
+          "A": "He told me that I have performed brilliantly.",
+          "B": "He applauded me, saying that I had performed brilliantly in the exam.",
+          "C": "He exclaimed with joy that you performed brilliantly.",
+          "D": "He praised me that I performed brilliantly."
+        },
+        "correct": "B",
+        "explanation": "When 'Bravo!' is used in direct speech, it indicates applause or praise. The indirect conversion correctly uses 'applauded me, saying that...' with tense shift ('had performed')."
+      },
+      {
+        "q": 40,
+        "topic": "Spelling",
+        "question": "Select the word with the correct spelling among the given alternatives:",
+        "options": {
+          "A": "Reciept",
+          "B": "Recepet",
+          "C": "Receipt",
+          "D": "Reseipt"
+        },
+        "correct": "C",
+        "explanation": "The correct spelling follows the 'i before e except after c' rule: 'Receipt'."
+      },
+      {
+        "q": 41,
+        "topic": "Fillers",
+        "question": "Select the most appropriate option to fill in the blank: The witness gave a _______ account of the accident, leaving no doubt about how it occurred.",
+        "options": {
+          "A": "vague",
+          "B": "superficial",
+          "C": "fragmentary",
+          "D": "lucid"
+        },
+        "correct": "D",
+        "explanation": "'Lucid' means expressed clearly; easy to understand. Since the account left no doubt, 'lucid' is the appropriate word."
+      },
+      {
+        "q": 42,
+        "topic": "Grammar",
+        "question": "Identify the segment in the sentence which contains a grammatical error: Neither of the plans proposed at the meeting were found feasible by the board.",
+        "options": {
+          "A": "were found feasible by the board",
+          "B": "Neither of the",
+          "C": "plans proposed at",
+          "D": "the meeting"
+        },
+        "correct": "A",
+        "explanation": "As noted previously, 'Neither of' is singular, so the verb must be 'was found' instead of 'were found'."
+      },
+      {
+        "q": 43,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate synonym of the given word: AUDACIOUS",
+        "options": {
+          "A": "Timid",
+          "B": "Cowardly",
+          "C": "Daring",
+          "D": "Cautious"
+        },
+        "correct": "C",
+        "explanation": "'Audacious' means showing a willingness to take surprisingly bold risks; daring or fearless."
+      },
+      {
+        "q": 44,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate antonym of the given word: MITIGATE",
+        "options": {
+          "A": "Alleviate",
+          "B": "Relieve",
+          "C": "Assuage",
+          "D": "Aggravate"
+        },
+        "correct": "D",
+        "explanation": "'Mitigate' means to make less severe, serious, or painful. Its antonym is 'aggravate', meaning to make a problem or condition worse."
+      },
+      {
+        "q": 45,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate meaning of the given idiom: To keep a stiff upper lip",
+        "options": {
+          "A": "To remain resolute and stoic in the face of adversity",
+          "B": "To speak arrogantly to subordinates",
+          "C": "To keep quiet when questioned",
+          "D": "To smile continuously without reason"
+        },
+        "correct": "A",
+        "explanation": "To 'keep a stiff upper lip' means to maintain self-control and hide one's feelings during difficult or trying times."
+      }
+    ],
+    "General Awareness": [
+      {
+        "q": 1,
+        "topic": "General Polity",
+        "question": "Which of the following provisions regarding the Directive Principles of State Policy (DPSP) enshrined in Part IV of the Indian Constitution is correctly described?",
+        "options": {
+          "A": "They are justiciable in nature before the Supreme Court of India.",
+          "B": "They are fundamental in the governance of the country and are non-justiciable.",
+          "C": "They can be amended only by a special majority of Parliament along with state ratification.",
+          "D": "They override Fundamental Rights in case of any direct conflict."
+        },
+        "correct": "B",
+        "explanation": "According to Article 37 of the Indian Constitution, the Directive Principles of State Policy are non-justiciable (cannot be enforced in any court), but they are fundamental in the governance of the country, obligating the state to apply them in making laws."
+      },
+      {
+        "q": 2,
+        "topic": "General Polity",
+        "question": "Which article of the Indian Constitution provides for the establishment of the Finance Commission of India?",
+        "options": {
+          "A": "Article 275",
+          "B": "Article 280",
+          "C": "Article 324",
+          "D": "Article 356"
+        },
+        "correct": "B",
+        "explanation": "Article 280 of the Constitution of India provides for the constitution of a Finance Commission by the President at the expiration of every fifth year or earlier if considered necessary."
+      },
+      {
+        "q": 3,
+        "topic": "General Polity",
+        "question": "In the Indian federal system, residual powers (matters not enumerated in the Union, State, or Concurrent lists) are vested in which authority?",
+        "options": {
+          "A": "State Legislatures",
+          "B": "Supreme Court of India",
+          "C": "Union Parliament",
+          "D": "NITI Aayog"
+        },
+        "correct": "C",
+        "explanation": "According to Article 248 of the Indian Constitution, the Union Parliament has exclusive power to make any law with respect to any matter not enumerated in the Concurrent List or State List (residual powers)."
+      },
+      {
+        "q": 4,
+        "topic": "Current Affairs",
+        "question": "Which Five-Year Plan in India had the primary objective of 'Growth with Social Justice and Equity'?",
+        "options": {
+          "A": "Fourth Five-Year Plan",
+          "B": "Sixth Five-Year Plan",
+          "C": "Eighth Five-Year Plan",
+          "D": "Ninth Five-Year Plan"
+        },
+        "correct": "D",
+        "explanation": "The Ninth Five-Year Plan (1997-2002) focused heavily on 'Growth with Social Justice and Equity', recognizing the need for distributive justice alongside economic growth."
+      },
+      {
+        "q": 5,
+        "topic": "Current Affairs",
+        "question": "What is the SI unit of electrical conductance?",
+        "options": {
+          "A": "Coulomb",
+          "B": "Ohm",
+          "C": "Siemens",
+          "D": "Volt"
+        },
+        "correct": "C",
+        "explanation": "The SI unit of electrical conductance is the siemens (symbol: S). Conductance is a measure of how easily electricity can flow through a material (the reciprocal of resistance), and one siemens is equivalent to one inverse ohm (ohm^-1)."
+      },
+      {
+        "q": 6,
+        "topic": "Economic Scene",
+        "question": "In the context of the Indian economy, which of the following measures constitutes an expansionary fiscal policy during an economic slowdown?",
+        "options": {
+          "A": "Increasing corporate tax rates and reducing government capital expenditure",
+          "B": "Increasing government spending on infrastructure and reducing direct taxes",
+          "C": "Raising the cash reserve ratio (CRR) and statutory liquidity ratio (SLR)",
+          "D": "Selling government securities aggressively through open market operations"
+        },
+        "correct": "B",
+        "explanation": "An expansionary fiscal policy involves increasing government expenditure and/or reducing taxes to stimulate economic activity and aggregate demand during a downturn."
+      },
+      {
+        "q": 7,
+        "topic": "Culture",
+        "question": "Kathakali is a classical dance-drama form originating from which Indian state?",
+        "options": {
+          "A": "Tamil Nadu",
+          "B": "Andhra Pradesh",
+          "C": "Kerala",
+          "D": "Karnataka"
+        },
+        "correct": "C",
+        "explanation": "Kathakali is a major form of classical Indian dance originating from the southern state of Kerala, renowned for its elaborate colorful makeup, costumes, and face masks."
+      },
+      {
+        "q": 8,
+        "topic": "Current Affairs",
+        "question": "Who was the Viceroy of India when the Partition of Bengal was announced in the year 1905?",
+        "options": {
+          "A": "Lord Lytton",
+          "B": "Lord Ripon",
+          "C": "Lord Minto",
+          "D": "Lord Curzon"
+        },
+        "correct": "D",
+        "explanation": "Lord Curzon served as the Viceroy of India from 1899 to 1905 and announced the partition of Bengal on July 20, 1905, which officially took effect on October 16, 1905."
+      },
+      {
+        "q": 9,
+        "topic": "Geography",
+        "question": "Which of the following initiatives represents India's international commitment towards achieving net-zero carbon emissions by 2070?",
+        "options": {
+          "A": "Panchamrit action plan announced at COP26",
+          "B": "National Solar Mission launched under NAPCC",
+          "C": "Green Grids Initiative - One Sun One World One Grid",
+          "D": "National Hydrogen Energy Mission framework"
+        },
+        "correct": "A",
+        "explanation": "At the COP26 climate summit in Glasgow, India announced the 'Panchamrit' (five nectar elements), which includes achieving net-zero emissions by 2070 alongside ambitious renewable energy targets."
+      },
+      {
+        "q": 10,
+        "topic": "General Polity",
+        "question": "The concept of 'Single Citizenship' in the Indian Constitution is borrowed from the constitution of which country?",
+        "options": {
+          "A": "USA",
+          "B": "Britain",
+          "C": "Canada",
+          "D": "Australia"
+        },
+        "correct": "B",
+        "explanation": "India has a federal system but provides for single citizenship, a concept borrowed from the British parliamentary system to promote national unity and integrity."
+      },
+      {
+        "q": 11,
+        "topic": "Economic Scene",
+        "question": "What does 'Repo Rate' stand for in the monetary policy of the Reserve Bank of India?",
+        "options": {
+          "A": "Rate at which commercial banks lend to the RBI",
+          "B": "Rate at which long-term government bonds are issued",
+          "C": "Rate at which the RBI lends short-term money to commercial banks",
+          "D": "Rate of interest charged on retail savings accounts"
+        },
+        "correct": "C",
+        "explanation": "Repo rate (Repurchase Rate) is the rate at which the central bank (RBI) lends money to commercial banks in the event of any shortfall of funds, usually against government securities."
+      },
+      {
+        "q": 12,
+        "topic": "Current Affairs",
+        "question": "Which of the following is commonly known as 'Artificial Silk'?",
+        "options": {
+          "A": "Nylon",
+          "B": "Polyester",
+          "C": "Acrylic",
+          "D": "Rayon"
+        },
+        "correct": "D",
+        "explanation": "Rayon is a regenerated cellulose fiber made from natural sources of cellulose and is widely known as artificial silk because it has a texture and shine similar to silk at a lower cost."
+      },
+      {
+        "q": 13,
+        "topic": "Current Affairs",
+        "question": "The Doctrine of Lapse, implemented extensively by Lord Dalhousie to annex princely states, was primarily based on which criterion?",
+        "options": {
+          "A": "Failure of a ruler to adopt a legal male heir without the explicit prior consent of the British East India Company",
+          "B": "Severe financial bankruptcy and misgovernance of the territory",
+          "C": "Direct military aggression following a breach of a subsidiary alliance treaty",
+          "D": "Voluntary abdication of the throne by the ruling monarch due to popular uprisings"
+        },
+        "correct": "A",
+        "explanation": "The Doctrine of Lapse dictated that any princely state under the direct influence of the British East India Company would automatically 'lapse' or be annexed if the ruler died without a direct male natural heir, and adoptions required prior British approval."
+      },
+      {
+        "q": 14,
+        "topic": "Current Affairs",
+        "question": "Which protocol or agreement is primarily associated with the protection of the ozone layer?",
+        "options": {
+          "A": "Kyoto Protocol",
+          "B": "Montreal Protocol",
+          "C": "Paris Agreement",
+          "D": "Nagoya Protocol"
+        },
+        "correct": "B",
+        "explanation": "The Montreal Protocol on Substances that Deplete the Ozone Layer is a landmark international treaty designed to phase out the production and consumption of ozone-depleting substances."
+      },
+      {
+        "q": 15,
+        "topic": "Current Affairs",
+        "question": "The prestigious Dhyan Chand Khel Ratna Award is India's highest honor given for achievements in which field?",
+        "options": {
+          "A": "Literature",
+          "B": "Scientific Research",
+          "C": "Sports and Games",
+          "D": "Classical Music"
+        },
+        "correct": "C",
+        "explanation": "The Major Dhyan Chand Khel Ratna Award is the highest sporting honor in India, awarded annually by the Ministry of Youth Affairs and Sports for spectacular and most outstanding performance in the field of sports."
+      },
+      {
+        "q": 16,
+        "topic": "General Polity",
+        "question": "Which constitutional amendment act lowered the voting age in India from 21 years to 18 years?",
+        "options": {
+          "A": "42nd Amendment Act",
+          "B": "44th Amendment Act",
+          "C": "73rd Amendment Act",
+          "D": "61st Amendment Act"
+        },
+        "correct": "D",
+        "explanation": "The 61st Constitutional Amendment Act of 1988 lowered the voting age of elections to the Lok Sabha and Legislative Assemblies of States from 21 years to 18 years."
+      },
+      {
+        "q": 17,
+        "topic": "Current Affairs",
+        "question": "Which strait separates Asia from North America?",
+        "options": {
+          "A": "Bering Strait",
+          "B": "Malacca Strait",
+          "C": "Palk Strait",
+          "D": "Gibraltar Strait"
+        },
+        "correct": "A",
+        "explanation": "The Bering Strait connects the Pacific and Arctic oceans and separates the continents of Asia and North America at their closest point."
+      },
+      {
+        "q": 18,
+        "topic": "Economic Scene",
+        "question": "In the context of space exploration and satellite technology, what is the primary objective of India's Aditya-L1 mission?",
+        "options": {
+          "A": "To land a robotic rover on the lunar south pole",
+          "B": "To study the Sun's photosphere, chromosphere, and corona from the Lagrange point 1",
+          "C": "To establish a permanent human space station in low Earth orbit",
+          "D": "To map subsurface water ice on Mars and its moons"
+        },
+        "correct": "B",
+        "explanation": "Aditya-L1 is India's first solar space observatory mission designed to study the Sun's outermost layers (corona, chromosphere, and photosphere) from a halo orbit around the Sun-Earth L1 point."
+      },
+      {
+        "q": 19,
+        "topic": "Current Affairs",
+        "question": "The famous rock-cut temples of Ellora, including the Kailasa Temple, were built under the patronage of which dynasty?",
+        "options": {
+          "A": "Chola Dynasty",
+          "B": "Pallava Dynasty",
+          "C": "Rashtrakuta Dynasty",
+          "D": "Chalukya Dynasty"
+        },
+        "correct": "C",
+        "explanation": "The magnificent rock-cut Kailasa Temple (Cave 16) at Ellora was built during the reign of the Rashtrakuta king Krishna I in the 8th century CE."
+      },
+      {
+        "q": 20,
+        "topic": "Current Affairs",
+        "question": "What is the primary function of the Securities and Exchange Board of India (SEBI)?",
+        "options": {
+          "A": "Regulating agricultural commodity prices",
+          "B": "Fixing repo and reverse repo rates",
+          "C": "Issuing currency notes in India",
+          "D": "Regulating the securities market and protecting investor interests"
+        },
+        "correct": "D",
+        "explanation": "SEBI is the statutory regulatory body established to protect the interests of investors in securities and to promote the development of, and to regulate, the securities market in India."
+      },
+      {
+        "q": 21,
+        "topic": "Current Affairs",
+        "question": "Why do stars twinkle at night?",
+        "options": {
+          "A": "Atmospheric refraction of starlight",
+          "B": "Reflection of light from planetary surfaces",
+          "C": "Interference of light waves in space",
+          "D": "Continuous emission of light flares from stars"
+        },
+        "correct": "A",
+        "explanation": "Stars twinkle due to atmospheric refraction. Starlight passing through various layers of the Earth's varying temperature and density atmosphere bends differently, causing the apparent position and brightness of the star to fluctuate."
+      },
+      {
+        "q": 22,
+        "topic": "Current Affairs",
+        "question": "Which of the following layers of the Earth's atmosphere contains the ozone layer?",
+        "options": {
+          "A": "Troposphere",
+          "B": "Stratosphere",
+          "C": "Mesosphere",
+          "D": "Thermosphere"
+        },
+        "correct": "B",
+        "explanation": "The stratosphere contains the ozone layer, which absorbs the majority of the sun's ultraviolet radiation, protecting life on Earth."
+      },
+      {
+        "q": 23,
+        "topic": "General Polity",
+        "question": "In which year was the Indian National Congress (INC) founded?",
+        "options": {
+          "A": "1875",
+          "B": "1880",
+          "C": "1885",
+          "D": "1905"
+        },
+        "correct": "C",
+        "explanation": "The Indian National Congress was founded in December 1885 in Bombay, with Womesh Chandra Bonnerjee as its first president."
+      },
+      {
+        "q": 24,
+        "topic": "General Polity",
+        "question": "Who acts as the Chairman of the Rajya Sabha in the Parliament of India?",
+        "options": {
+          "A": "Prime Minister of India",
+          "B": "Speaker of Lok Sabha",
+          "C": "President of India",
+          "D": "Vice-President of India"
+        },
+        "correct": "D",
+        "explanation": "The Vice-President of India is the ex-officio Chairman of the Rajya Sabha, presiding over its sessions and proceedings."
+      },
+      {
+        "q": 25,
+        "topic": "Current Affairs",
+        "question": "Which of the following international economic groupings officially admitted several new nations, including Egypt, Ethiopia, Iran, and the United Arab Emirates, as full members in 2024?",
+        "options": {
+          "A": "BRICS",
+          "B": "G7",
+          "C": "OECD",
+          "D": "APEC"
+        },
+        "correct": "A",
+        "explanation": "BRICS expanded significantly with several nations joining as full members in 2024, marking a major geopolitical and economic shift in multilateral trade and international relations."
+      }
+    ],
+    "Computer Knowledge": [
+      {
+        "q": 1,
+        "topic": "Computer Basics",
+        "question": "Which component of the computer processor is responsible for performing arithmetic and logical operations?",
+        "options": {
+          "A": "Arithmetic Logic Unit",
+          "B": "Control Unit",
+          "C": "Registers",
+          "D": "Cache Memory"
+        },
+        "correct": "A",
+        "explanation": "The Arithmetic Logic Unit (ALU) is a core component of the CPU that performs arithmetic operations (such as addition and subtraction) and logic operations (such as comparisons)."
+      },
+      {
+        "q": 2,
+        "topic": "Software",
+        "question": "Which of the following is an example of an open-source operating system distribution?",
+        "options": {
+          "A": "Microsoft Windows",
+          "B": "macOS",
+          "C": "Ubuntu",
+          "D": "iOS"
+        },
+        "correct": "C",
+        "explanation": "Ubuntu is a popular open-source Linux distribution operating system widely used across desktops, servers, and cloud environments."
+      },
+      {
+        "q": 3,
+        "topic": "Computer Basics",
+        "question": "What does the acronym 'URL' stand for in the context of web browsing?",
+        "options": {
+          "A": "Universal Record Locator",
+          "B": "Unified Retrieval Link",
+          "C": "Uniform Resource Language",
+          "D": "Uniform Resource Locator"
+        },
+        "correct": "D",
+        "explanation": "URL stands for Uniform Resource Locator, which is the address of a unique resource on the World Wide Web."
+      },
+      {
+        "q": 4,
+        "topic": "Computer Basics",
+        "question": "Which type of computer memory is volatile, meaning it loses all its data when the power is turned off?",
+        "options": {
+          "A": "Random Access Memory",
+          "B": "Read-Only Memory",
+          "C": "Hard Disk Drive",
+          "D": "Solid State Drive"
+        },
+        "correct": "A",
+        "explanation": "Random Access Memory (RAM) is volatile primary memory used by the computer to store working data and machine code currently in use."
+      },
+      {
+        "q": 5,
+        "topic": "Internet and Networking",
+        "question": "In a relational database, what does SQL stand for?",
+        "options": {
+          "A": "System Query Language",
+          "B": "Structured Query Language",
+          "C": "Simple Question Language",
+          "D": "Sequential Query Logic"
+        },
+        "correct": "B",
+        "explanation": "SQL stands for Structured Query Language, a standard programming language specifically designed for managing and querying data in relational database management systems."
+      },
+      {
+        "q": 6,
+        "topic": "Internet and Networking",
+        "question": "Which protocol is primarily used to send emails across the internet from a client to a server or between servers?",
+        "options": {
+          "A": "POP3",
+          "B": "IMAP",
+          "C": "SMTP",
+          "D": "HTTP"
+        },
+        "correct": "C",
+        "explanation": "SMTP (Simple Mail Transfer Protocol) is the standard communication protocol used for transmitting electronic mail over the internet."
+      },
+      {
+        "q": 7,
+        "topic": "Cyber Security",
+        "question": "What is the primary function of a software firewall in a computer network?",
+        "options": {
+          "A": "To increase internet browsing speed",
+          "B": "To compress large files for storage",
+          "C": "To protect against hardware overheating",
+          "D": "To monitor and filter incoming and outgoing network traffic based on security rules"
+        },
+        "correct": "D",
+        "explanation": "A firewall acts as a digital barrier between a trusted internal network and untrusted external networks, monitoring and filtering traffic to prevent unauthorized access."
+      },
+      {
+        "q": 8,
+        "topic": "Computer Basics",
+        "question": "Which file format is commonly used to distribute documents while preserving their formatting across different platforms?",
+        "options": {
+          "A": "PDF",
+          "B": "HTML",
+          "C": "CSV",
+          "D": "TXT"
+        },
+        "correct": "A",
+        "explanation": "PDF (Portable Document Format) developed by Adobe ensures that document layout, fonts, and graphics remain intact regardless of the software or hardware platform used to view it."
+      },
+      {
+        "q": 9,
+        "topic": "Digital Basics",
+        "question": "Which storage device uses magnetic storage technology to rapidly read and write data on spinning platters?",
+        "options": {
+          "A": "Cache memory",
+          "B": "Hard Disk Drive",
+          "C": "Compact Disc",
+          "D": "USB Flash Drive"
+        },
+        "correct": "B",
+        "explanation": "A Hard Disk Drive (HDD) uses magnetic storage to store and retrieve digital information using rotating magnetic platters."
+      },
+      {
+        "q": 10,
+        "topic": "Digital Basics",
+        "question": "How many bits long is an IPv4 address?",
+        "options": {
+          "A": "16 bits",
+          "B": "32 bits",
+          "C": "64 bits",
+          "D": "128 bits"
+        },
+        "correct": "B",
+        "explanation": "An IPv4 address is 32 bits long, typically written in dotted-decimal notation (e.g., 192.168.1.1)."
+      },
+      {
+        "q": 11,
+        "topic": "Internet and Networking",
+        "question": "What does 'HTTPS' stand for in web addresses?",
+        "options": {
+          "A": "Hypertext Transfer Protocol Standard",
+          "B": "Hyperlink Transfer Text Protocol System",
+          "C": "Hyper Text Transfer Protocol Secure",
+          "D": "Hypertext Transfer Protocol Secure"
+        },
+        "correct": "D",
+        "explanation": "HTTPS stands for Hypertext Transfer Protocol Secure, indicating that communication over the network is encrypted using SSL/TLS for enhanced security."
+      },
+      {
+        "q": 12,
+        "topic": "Computer Basics",
+        "question": "Which of the following storage units is the largest?",
+        "options": {
+          "A": "Terabyte",
+          "B": "Gigabyte",
+          "C": "Megabyte",
+          "D": "Kilobyte"
+        },
+        "correct": "A",
+        "explanation": "In computer data storage, the hierarchy from smallest to largest is Kilobyte, Megabyte, Gigabyte, Terabyte (1 Terabyte = 1024 Gigabytes)."
+      },
+      {
+        "q": 13,
+        "topic": "Cyber Security",
+        "question": "What type of malware disguises itself as legitimate software to trick users into installing it?",
+        "options": {
+          "A": "Computer Worm",
+          "B": "Trojan Horse",
+          "C": "Adware",
+          "D": "Ransomware"
+        },
+        "correct": "B",
+        "explanation": "A Trojan Horse is a malicious program that misleads users of its true intent by appearing as useful or legitimate software, subsequently granting unauthorized access."
+      },
+      {
+        "q": 14,
+        "topic": "Computer Basics",
+        "question": "Which high-speed memory stores frequently accessed data closer to the CPU to reduce average data-access time?",
+        "options": {
+          "A": "Spool",
+          "B": "Kernel",
+          "C": "Cache",
+          "D": "Buffer"
+        },
+        "correct": "C",
+        "explanation": "Cache memory is a small, extremely fast type of volatile computer memory that provides high-speed data access to a CPU and stores frequently used computer programs, applications and data."
+      },
+      {
+        "q": 15,
+        "topic": "Internet and Networking",
+        "question": "Which of the following is NOT a web browser?",
+        "options": {
+          "A": "Google Chrome",
+          "B": "Mozilla Firefox",
+          "C": "Safari",
+          "D": "Microsoft Windows"
+        },
+        "correct": "D",
+        "explanation": "Microsoft Windows is an operating system, whereas Google Chrome, Mozilla Firefox, and Safari are web browsers used to access the internet."
+      },
+      {
+        "q": 16,
+        "topic": "Digital Basics",
+        "question": "What is the base of the binary number system used in computers?",
+        "options": {
+          "A": "Base 2",
+          "B": "Base 8",
+          "C": "Base 10",
+          "D": "Base 16"
+        },
+        "correct": "A",
+        "explanation": "The binary number system is a base-2 number system that uses only two digits: 0 and 1, forming the fundamental building block of all digital computing."
+      },
+      {
+        "q": 17,
+        "topic": "Computer Basics",
+        "question": "In which network topology is every device connected to a central hub or switch?",
+        "options": {
+          "A": "Bus topology",
+          "B": "Star topology",
+          "C": "Ring topology",
+          "D": "Mesh topology"
+        },
+        "correct": "B",
+        "explanation": "In a star topology, all nodes/devices in the network are connected directly to a central hub or switch, making it easy to add devices and isolate faults."
+      },
+      {
+        "q": 18,
+        "topic": "Digital Basics",
+        "question": "What is the primary purpose of data compression software?",
+        "options": {
+          "A": "To encrypt files for secure transmission",
+          "B": "To detect and remove computer viruses",
+          "C": "To reduce the file size for easier storage and transmission",
+          "D": "To convert source code into machine code"
+        },
+        "correct": "C",
+        "explanation": "Data compression reduces the number of bits needed to represent data, decreasing file size to save storage space and speed up network transfer times."
+      },
+      {
+        "q": 19,
+        "topic": "Office Applications",
+        "question": "In spreadsheet applications like MS Excel, what symbol must precede every formula or function?",
+        "options": {
+          "A": "$",
+          "B": "#",
+          "C": "&",
+          "D": "="
+        },
+        "correct": "D",
+        "explanation": "In spreadsheet software, an equals sign (=) is required at the beginning of a cell entry to indicate that the characters following it constitute a formula or function."
+      },
+      {
+        "q": 20,
+        "topic": "Computer Basics",
+        "question": "Which technology was used as the primary electronic component in First Generation computers?",
+        "options": {
+          "A": "Vacuum tubes",
+          "B": "Transistors",
+          "C": "Integrated Circuits",
+          "D": "Microprocessors"
+        },
+        "correct": "A",
+        "explanation": "First generation computers (roughly 1940s to 1950s) relied heavily on vacuum tubes for circuitry and magnetic drums for memory."
+      }
+    ]
+  }
+}

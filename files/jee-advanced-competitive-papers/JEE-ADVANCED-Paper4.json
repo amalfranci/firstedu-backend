@@ -1,0 +1,770 @@
+{
+  "paper_id": "JEE-ADVANCED-Paper4",
+  "title": "JEE Advanced Paper 4",
+  "exam": "JEE Advanced",
+  "year": 2026,
+  "subjects": {
+    "Mathematics": [
+      {
+        "q": 1,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Integral Calculus",
+        "question": "Let f : R → R be a differentiable function satisfying f(x + y) = f(x)f(y) for all x, y ∈ R and f(0) ≠ 0. If f'(0) = 2, then the value of ∫ (f(x)/(1+f(x))) dx is:",
+        "options": {
+          "A": "x + (1/2)ln(1+f(x)) + C",
+          "B": "x - (1/2)ln(1+f(x)) + C",
+          "C": "(1/2)ln(1+f(x)) + C",
+          "D": "ln(1+f(x)) + C"
+        },
+        "correct": "C",
+        "explanation": "f(x)=e^(2x). Substituting t=1+e^(2x) gives the integral (1/2)ln(1+e^(2x))+C = (1/2)ln(1+f(x))+C."
+      },
+      {
+        "q": 2,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Complex Numbers",
+        "question": "If z is a complex number satisfying |z-1| + |z+1| ≤ 4, then the maximum value of |z-i| is:",
+        "options": {
+          "A": "√5",
+          "B": "3",
+          "C": "√7",
+          "D": "4"
+        },
+        "correct": "A",
+        "explanation": "The region is inside/on an ellipse with foci (±1,0), a=2, b=√3. Max distance from (0,1) occurs at vertex (-2,0): √(4+1)=√5."
+      },
+      {
+        "q": 3,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Trigonometry",
+        "question": "The number of solutions of the equation sin(x) = x/10 in the interval [-2π, 2π] is:",
+        "options": {
+          "A": "5",
+          "B": "7",
+          "C": "9",
+          "D": "11"
+        },
+        "correct": "B",
+        "explanation": "x=0 gives 1 solution; 3 more solutions in (0,2π] and by symmetry 3 in [-2π,0); total = 7."
+      },
+      {
+        "q": 4,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Matrices and Determinants",
+        "question": "Let A be a 3×3 matrix such that det(A) = 3. If det(adj(adj(3A))) = 3^k, then the value of k is:",
+        "options": {
+          "A": "12",
+          "B": "18",
+          "C": "24",
+          "D": "16"
+        },
+        "correct": "D",
+        "explanation": "det(3A) = 3³×3 = 3⁴. det(adj(adj(B))) = (det B)^((n-1)²) = (det B)^4 for n=3. (3⁴)^4 = 3^16, so k=16."
+      },
+      {
+        "q": 5,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Binomial Theorem",
+        "question": "The coefficient of x⁴ in the expansion of (1 + x + x² + x³)³ is:",
+        "options": {
+          "A": "15",
+          "B": "20",
+          "C": "35",
+          "D": "56"
+        },
+        "correct": "A",
+        "explanation": "(1+x+x²+x³)³ = (1-x⁴)³(1-x)⁻³. Coefficient of x⁴ from (1-x)⁻³ is C(6,4)=15, multiplied by constant term 1 of (1-x⁴)³, giving 15."
+      },
+      {
+        "q": 6,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Integral Calculus",
+        "question": "The area of the region bounded by the curves y = x² and y = |x| is:",
+        "options": {
+          "A": "1/2",
+          "B": "1/3",
+          "C": "2/3",
+          "D": "5/6"
+        },
+        "correct": "B",
+        "explanation": "Area = 2∫0^1 (x-x²)dx = 2(1/2-1/3) = 1/3."
+      },
+      {
+        "q": 7,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Probability",
+        "question": "Three numbers are chosen at random without replacement from the first 10 natural numbers. The probability that the minimum of the chosen numbers is 3 is:",
+        "options": {
+          "A": "1/5",
+          "B": "7/120",
+          "C": "7/40",
+          "D": "3/20"
+        },
+        "correct": "C",
+        "explanation": "Total ways = C(10,3)=120. Favorable = C(7,2)=21 (choosing 2 numbers greater than 3). Probability = 21/120 = 7/40."
+      },
+      {
+        "q": 8,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Limits, Continuity and Differentiability",
+        "question": "The value of the limit lim(x→0) ((sin(x)-x)/x³) is:",
+        "options": {
+          "A": "-1/2",
+          "B": "-1/3",
+          "C": "-1/24",
+          "D": "-1/6"
+        },
+        "correct": "D",
+        "explanation": "sin(x)=x-x³/6+..., so (sin(x)-x)/x³ → -1/6."
+      },
+      {
+        "q": 9,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Vectors",
+        "question": "Let a, b, c be three unit vectors such that a + b + c = 0. The value of a·b + b·c + c·a is:",
+        "options": {
+          "A": "-3/2",
+          "B": "-1",
+          "C": "0",
+          "D": "3/2"
+        },
+        "correct": "A",
+        "explanation": "|a+b+c|²=0 gives 3+2(a·b+b·c+c·a)=0, so the sum equals -3/2."
+      },
+      {
+        "q": 10,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Circles",
+        "question": "The number of tangents that can be drawn from the point (2, 3) to the circle x² + y² - 4x - 6y - 3 = 0 is:",
+        "options": {
+          "A": "2",
+          "B": "0",
+          "C": "1",
+          "D": "Infinite"
+        },
+        "correct": "B",
+        "explanation": "S = 4+9-8-18-3 = -16 < 0, meaning the point is inside the circle, so no real tangents exist."
+      },
+      {
+        "q": 11,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Sets, Relations and Functions",
+        "question": "The domain of the function f(x) = sin⁻¹((2x-1)/2) + ln(x-1) is:",
+        "options": {
+          "A": "[1/2, 3/2]",
+          "B": "[0, 2]",
+          "C": "(1, 3/2]",
+          "D": "(1, 2)"
+        },
+        "correct": "C",
+        "explanation": "sin⁻¹ requires -1/2 ≤ x ≤ 3/2. ln(x-1) requires x>1. Intersection: (1, 3/2]."
+      },
+      {
+        "q": 12,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Matrices and Determinants",
+        "question": "If ω is a complex cube root of unity, then the value of the determinant of matrix M where Mij = ω^(i+j) (for i, j ∈ {1, 2, 3}) is:",
+        "options": {
+          "A": "1",
+          "B": "ω",
+          "C": "3ω",
+          "D": "0"
+        },
+        "correct": "D",
+        "explanation": "Summing columns gives 1+ω+ω²=0 in every first-column entry, making the determinant 0."
+      },
+      {
+        "q": 13,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Sequences and Series",
+        "question": "The sum of the series 1/(1·2) + 1/(2·3) + 1/(3·4) + ... up to n terms is:",
+        "options": {
+          "A": "1/(n+1)",
+          "B": "(n-1)/n",
+          "C": "1/n",
+          "D": "n/(n+1)"
+        },
+        "correct": "D",
+        "explanation": "Tr = 1/r - 1/(r+1) telescopes to 1 - 1/(n+1) = n/(n+1)."
+      },
+      {
+        "q": 14,
+        "type": "Section 2: Multiple Select Type Questions (MSQ)",
+        "topic": "Limits, Continuity and Differentiability",
+        "question": "Which of the following functions are continuous everywhere on R?",
+        "options": {
+          "A": "f(x) = |x|",
+          "B": "g(x) = x sin(1/x) for x ≠ 0 and g(0) = 0",
+          "C": "h(x) = 1/(x²+1)",
+          "D": "k(x) = sgn(x)"
+        },
+        "correct": "A,B,C",
+        "explanation": "|x|, x sin(1/x) (by squeeze theorem), and 1/(x²+1) are continuous everywhere; sgn(x) has a jump discontinuity at 0."
+      },
+      {
+        "q": 15,
+        "type": "Section 2: Multiple Select Type Questions (MSQ)",
+        "topic": "Probability",
+        "question": "Let A and B be two events such that P(A) = 0.4, P(B) = 0.5, and P(A ∪ B) = 0.7. Which of the following statements are correct?",
+        "options": {
+          "A": "P(A ∩ B) = 0.2",
+          "B": "A and B are independent events.",
+          "C": "P(A/B) = 0.4",
+          "D": "A and B are mutually exclusive events."
+        },
+        "correct": "A,B,C",
+        "explanation": "P(A∩B)=0.4+0.5-0.7=0.2 = P(A)P(B), so independent; P(A/B)=P(A)=0.4. Since P(A∩B)≠0, they are not mutually exclusive (D false)."
+      },
+      {
+        "q": 16,
+        "type": "Section 2: Multiple Select Type Questions (MSQ)",
+        "topic": "Differential Equations",
+        "question": "Which of the following differential equations are linear?",
+        "options": {
+          "A": "dy/dx + y tan(x) = sec(x)",
+          "B": "d²y/dx² + y(dy/dx) = x²",
+          "C": "x(d²y/dx²) + (dy/dx) + y = 0",
+          "D": "(dy/dx)² + 4y = 0"
+        },
+        "correct": "A,C",
+        "explanation": "(A) and (C) are linear in y and its derivatives. (B) has a product term y(dy/dx) and (D) has a squared derivative, making them nonlinear."
+      },
+      {
+        "q": 17,
+        "type": "Section 2: Multiple Select Type Questions (MSQ)",
+        "topic": "Three-Dimensional Geometry",
+        "question": "Which of the following points lie on the line passing through (1, -2, 3) and parallel to the vector 2î - 3ĵ + 6k̂?",
+        "options": {
+          "A": "(3, -5, 9)",
+          "B": "(-1, 1, -3)",
+          "C": "(5, -8, 15)",
+          "D": "(0, 0, 0)"
+        },
+        "correct": "A,B,C",
+        "explanation": "Parametric form x=1+2λ, y=-2-3λ, z=3+6λ satisfies (A) at λ=1, (B) at λ=-1, (C) at λ=2. (D) does not satisfy for any consistent λ."
+      },
+      {
+        "q": 18,
+        "type": "Section 2: Multiple Select Type Questions (MSQ)",
+        "topic": "Vectors",
+        "question": "Which of the following properties hold for any two non-zero vectors a and b?",
+        "options": {
+          "A": "|a×b|² + (|a·b|)² = |a|²|b|²",
+          "B": "a×b = b×a",
+          "C": "|a+b| ≤ |a|+|b|",
+          "D": "(a×b)·a = 0"
+        },
+        "correct": "A,C,D",
+        "explanation": "Lagrange's identity (A), the triangle inequality (C), and orthogonality of a×b to a (D) hold generally. Cross product is anti-commutative (a×b = -b×a), so B is false."
+      }
+    ],
+    "Physics": [
+      {
+        "q": 1,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "System of Particles and Rotational Motion",
+        "question": "A uniform rod of mass M and length L is hinged at one end and is free to rotate in a vertical plane. It is released from rest from the horizontal position. When the rod passes through the vertical downward position, a particle of mass m moving horizontally with velocity v strikes the free end of the rod elastically. Immediately after the collision, the rod comes to instantaneous rest. The ratio M/m is:",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "6"
+        },
+        "correct": "B",
+        "explanation": "PE lost by rod = Mg(L/2) = (1/2)(ML²/3)ω², giving ω=√(3g/L), so speed of free end V=√(3gL). Applying conservation of angular momentum about the hinge and the elastic (energy-conserving) collision condition, with the rod coming to rest, gives M/m = 3."
+      },
+      {
+        "q": 2,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "System of Particles and Rotational Motion",
+        "question": "Two identical small balls each of mass m are connected by a light inextensible string of length l and placed on a smooth horizontal table. An impulse J is imparted to one of the balls in a direction perpendicular to the string. The tension in the string immediately after the impulse is given by:",
+        "options": {
+          "A": "J²/(ml)",
+          "B": "2J²/(3ml)",
+          "C": "J²/(2ml)",
+          "D": "3J²/(4ml)"
+        },
+        "correct": "C",
+        "explanation": "v0=J/m, system rotates about center of mass with ω=v0/l. T = μω²(l/2) with μ=m/2. Substituting ω=J/(ml) gives T = J²/(2ml)."
+      },
+      {
+        "q": 3,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Thermal Physics",
+        "question": "An ideal gas undergoes a polytropic process given by PV^α = constant. If the molar heat capacity of the gas during this process is C = R/2, and the ratio of specific heats is γ = 5/3, then the value of α is:",
+        "options": {
+          "A": "2",
+          "B": "5/2",
+          "C": "3/2",
+          "D": "4/3"
+        },
+        "correct": "A",
+        "explanation": "Cv = R/(γ-1) = 3R/2. C = Cv + R/(1-α). R/2 = 3R/2 + R/(1-α) gives 1-α = -1, so α = 2."
+      },
+      {
+        "q": 4,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Capacitance",
+        "question": "A parallel plate capacitor with plate area A and separation d is filled with a dielectric whose dielectric constant varies linearly from K1 at one plate to K2 at the other plate along the distance x. The equivalent capacitance of the system is:",
+        "options": {
+          "A": "(ε0 A/d) ln(K2/K1)",
+          "B": "(ε0 A(K2-K1))/(d ln(K2/K1))",
+          "C": "(ε0 A(K1+K2))/(2d)",
+          "D": "(2ε0 A)/(d(K1+K2))"
+        },
+        "correct": "B",
+        "explanation": "K(x)=K1+((K2-K1)/d)x. Integrating dC=ε0K(x)A/dx in series gives 1/C=(d/(ε0A(K2-K1)))ln(K2/K1), so C=(ε0A(K2-K1))/(d ln(K2/K1))."
+      },
+      {
+        "q": 5,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Electromagnetic Induction and AC Circuits",
+        "question": "A uniform magnetic field B exists in a region of space. A circular loop of radius r and resistance R is placed with its plane perpendicular to the magnetic field. If the magnetic field changes with time at a constant rate dB/dt = k, the total heat generated in the loop during a time interval τ is:",
+        "options": {
+          "A": "(π²r⁴k²τ)/R",
+          "B": "(πr⁴k²τ)/(2R)",
+          "C": "(π²r²k²τ)/R",
+          "D": "(2π²r⁴k²τ)/R"
+        },
+        "correct": "A",
+        "explanation": "e=πr²k, I=πr²k/R. H=I²Rτ = (πr²k/R)²Rτ = (π²r⁴k²τ)/R."
+      },
+      {
+        "q": 6,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Wave Optics",
+        "question": "In a Young's double slit experiment performed with monochromatic light of wavelength λ, the intensity at a point on the screen where the path difference is λ/3 is I. What is the maximum intensity I0 on the screen?",
+        "options": {
+          "A": "2I",
+          "B": "3I",
+          "C": "4I",
+          "D": "6I"
+        },
+        "correct": "C",
+        "explanation": "φ = 2π/3. I = I0 cos²(π/3) = I0/4, so I0 = 4I."
+      },
+      {
+        "q": 7,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Modern Physics",
+        "question": "A radioactive nucleus A decays into a stable nucleus B with a decay constant λA. Nucleus B is also radioactive and decays into a stable nucleus C with decay constant λB. Initially, at t = 0, there are only N0 nuclei of A. The maximum number of nuclei of B present at any subsequent time is given by:",
+        "options": {
+          "A": "N0(λA/λB)^(λB/(λA-λB))",
+          "B": "N0(λA/λB)^(λA/(λB-λA))",
+          "C": "N0(λB/λA)^(λA/(λB-λA))",
+          "D": "N0(λB/λA)^(λB/(λA-λB))"
+        },
+        "correct": "B",
+        "explanation": "NB(t) = (λAN0/(λB-λA))(e^(-λAt)-e^(-λBt)). Setting derivative to zero gives tmax; substituting back yields max NB = N0(λA/λB)^(λA/(λB-λA))."
+      },
+      {
+        "q": 8,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Modern Physics",
+        "question": "A particle of mass m moves in a one-dimensional potential well given by V(x) = (1/2)mω²x² + (b/3)x³, where b is a small positive parameter such that perturbation theory can be applied. The first-order correction to the ground state energy is:",
+        "options": {
+          "A": "Zero",
+          "B": "(b²ℏ)/(4m²ω³)",
+          "C": "(bℏ)/(2mω)",
+          "D": "(b²ℏ²)/(mω²)"
+        },
+        "correct": "A",
+        "explanation": "The perturbation is odd in x (x³), and the unperturbed ground-state wavefunction is even, so the expectation value (first-order correction) is identically zero."
+      },
+      {
+        "q": 9,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Thermal Physics",
+        "question": "An ideal monoatomic gas undergoes a cyclic process 1 → 2 → 3 → 1. Processes 1 → 2 and 3 → 1 are isothermal (at temperature TH) and isochoric respectively, while 2 → 3 is an isobaric compression to the minimum temperature TC. The efficiency of this cycle is:",
+        "options": {
+          "A": "1 - (TC/TH)",
+          "B": "1 - ((3/2)(TH-TC))/(TH ln(TH/TC))",
+          "C": "(TH-TC)/(TH+TC)",
+          "D": "1 - TC/(TH-TC)"
+        },
+        "correct": "B",
+        "explanation": "Qin = RTH ln(TH/TC) (isothermal). Qout = (3/2)R(TH-TC) (isochoric). η = 1 - Qout/Qin = 1 - ((3/2)(TH-TC))/(TH ln(TH/TC))."
+      },
+      {
+        "q": 10,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Ray Optics",
+        "question": "A small coin is placed at the bottom of a beaker filled with water (refractive index n = 4/3) up to a depth H. A thin convex lens of focal length f is placed at a height h above the water surface, with the lens axis vertical and passing through the coin. Looking from directly above, a real image of the coin is formed exactly at the water surface. The height h of the lens above the water surface satisfies:",
+        "options": {
+          "A": "h = f",
+          "B": "h = f + 3H/4",
+          "C": "h = f - H/4",
+          "D": "h = f + H/3"
+        },
+        "correct": "D",
+        "explanation": "Apparent depth of coin = 3H/4. Setting up the lens equation with object distance (h+3H/4) and image distance h and solving h(h+3H/4)=3Hf/4 yields the positive root h = f + H/3."
+      },
+      {
+        "q": 11,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Current Electricity",
+        "question": "A uniform long wire of resistance R is bent into a circle of radius r. A battery of emf E and internal resistance r0 is connected between two points on the circle separated by an angular distance θ (0 < θ < 2π). The power dissipated in the external circular circuit is maximum when θ equals:",
+        "options": {
+          "A": "π radians",
+          "B": "π/2 radians",
+          "C": "2π/3 radians",
+          "D": "π/3 radians"
+        },
+        "correct": "A",
+        "explanation": "Req = (θ(2π-θ)/4π²)R is maximized when θ(2π-θ) is maximized, which occurs at θ = π."
+      },
+      {
+        "q": 12,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Gravitation",
+        "question": "A satellite of mass m is orbiting the earth (mass M) in an elliptical orbit. At the perigee, its distance from the center of the earth is rp and its speed is vp. Which of the following expressions correctly represents the total mechanical energy of the satellite?",
+        "options": {
+          "A": "-(GMm)/(rp+ra)",
+          "B": "-(2GMm)/(rp+ra)",
+          "C": "(1/2)mvp² - (GMm)/rp",
+          "D": "-(GMm)/(2rp)"
+        },
+        "correct": "C",
+        "explanation": "Total mechanical energy at any point equals KE + PE at that point: E = (1/2)mvp² - GMm/rp."
+      },
+      {
+        "q": 13,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Simple Harmonic Motion and Oscillations",
+        "question": "A block of mass m is attached to a vertical spring of spring constant k. The block is released from rest with the spring in its natural unstretched length. The maximum downward displacement of the block from its initial release point is:",
+        "options": {
+          "A": "mg/k",
+          "B": "2mg/k",
+          "C": "mg/2k",
+          "D": "4mg/k"
+        },
+        "correct": "B",
+        "explanation": "By energy conservation, mg*ymax = (1/2)k*ymax². Solving gives ymax = 2mg/k."
+      },
+      {
+        "q": 14,
+        "type": "Section 2: Multiple Select Type Questions (MSQ)",
+        "topic": "System of Particles and Rotational Motion",
+        "question": "A uniform solid cylinder of mass M and radius R rolls without slipping on a rough horizontal surface. A horizontal force F is applied to the center of mass of the cylinder. Which of the following statements are correct?",
+        "options": {
+          "A": "The acceleration of the center of mass of the cylinder is 2F/(3M).",
+          "B": "The friction force acting on the cylinder is F/3 in the backward direction.",
+          "C": "The minimum coefficient of static friction required for pure rolling is F/(3Mg).",
+          "D": "The work done by friction on the cylinder is zero."
+        },
+        "correct": "A,B,C,D",
+        "explanation": "F-f=Ma, fR=(1/2)MR²(a/R). Solving gives a=2F/(3M), f=F/3 backward (A,B correct). For pure rolling μs≥F/(3Mg) (C correct). Contact point has zero velocity, so friction does no work (D correct)."
+      },
+      {
+        "q": 15,
+        "type": "Section 2: Multiple Select Type Questions (MSQ)",
+        "topic": "Electromagnetic Waves",
+        "question": "An electromagnetic wave propagating in vacuum has an electric field vector given by E = E0 sin(kz - ωt) î. Which of the following statements are correct?",
+        "options": {
+          "A": "The magnetic field vector is given by B = (E0/c) sin(kz - ωt) ĵ.",
+          "B": "The average energy density of the electric field is equal to the average energy density of the magnetic field.",
+          "C": "The Poynting vector representing energy flux is directed along the +z axis.",
+          "D": "The momentum delivered by the wave to a completely absorbing surface is independent of the frequency of the wave."
+        },
+        "correct": "A,B,C,D",
+        "explanation": "For E along î propagating along +z, B must be along ĵ so E×B is along +z (A, C correct). Average E and B energy densities are equal (B correct). Momentum p=U/c depends only on absorbed energy, not frequency (D correct)."
+      },
+      {
+        "q": 16,
+        "type": "Section 2: Multiple Select Type Questions (MSQ)",
+        "topic": "Modern Physics",
+        "question": "Which of the following phenomena demonstrate the wave nature of matter or particles?",
+        "options": {
+          "A": "Davisson-Germer experiment",
+          "B": "Compton scattering",
+          "C": "Thomson's cathode ray diffraction experiment",
+          "D": "Photoelectric effect"
+        },
+        "correct": "A,C",
+        "explanation": "Davisson-Germer and G.P. Thomson's diffraction experiments confirmed the wave nature of electrons (matter waves). Compton scattering and the photoelectric effect demonstrate the particle nature of radiation, not matter waves."
+      },
+      {
+        "q": 17,
+        "type": "Section 2: Multiple Select Type Questions (MSQ)",
+        "topic": "Electromagnetic Induction and AC Circuits",
+        "question": "A closed-loop circuit consists of a resistor of resistance R, an inductor of inductance L, and an ideal battery of emf E connected in series with a switch S. At t = 0, the switch is closed. Which of the following statements are correct?",
+        "options": {
+          "A": "The initial current in the circuit at t = 0 is zero.",
+          "B": "The rate of growth of current is maximum at t = 0.",
+          "C": "The final steady-state current in the circuit is E/R.",
+          "D": "During the transient growth of current from zero to its steady state in the circuit, exactly half of the total energy supplied by the battery is dissipated as heat in the resistor and half is stored in the magnetic field of the inductor."
+        },
+        "correct": "A,B,C,D",
+        "explanation": "Initial current is zero due to back emf (A correct). dI/dt = (E/L)e^(-Rt/L), maximal at t=0 (B correct). Steady state current is E/R (C correct). Total energy supplied is E²/R, half stored in inductor and half dissipated as heat (D correct)."
+      },
+      {
+        "q": 18,
+        "type": "Section 2: Multiple Select Type Questions (MSQ)",
+        "topic": "Thermal Physics",
+        "question": "An ideal gas undergoes a specified quasistatic thermodynamic process defined by the temperature-dependent molar heat capacity relation C = Cv + aT, where Cv is the constant-volume molar heat capacity and a is a positive constant. Which of the following statements are correct regarding this process?",
+        "options": {
+          "A": "The heat supplied to the gas for a finite temperature change from T1 to T2 depends quadratically on the temperature limits.",
+          "B": "The entropy change of the gas when its temperature changes from T1 to T2 is given by ΔS = Cv ln(T2/T1) + a(T2-T1).",
+          "C": "The work done by the gas during a temperature change from T1 to T2 is equal to (a/2)(T2²-T1²) assuming the internal energy satisfies dU = Cv dT.",
+          "D": "The process is polytropic with a constant polytropic index α."
+        },
+        "correct": "A,B,C",
+        "explanation": "Q = Cv(T2-T1) + (a/2)(T2²-T1²) — quadratic in T (A correct). ΔS = Cv ln(T2/T1) + a(T2-T1) (B correct). dW = aT dT integrates to W=(a/2)(T2²-T1²) (C correct). Since C varies with T, the polytropic index is not constant (D false)."
+      }
+    ],
+    "Chemistry": [
+      {
+        "q": 1,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Aldehydes and Ketones",
+        "question": "An organic compound C5H10O forms a crystalline phenylhydrazone and gives negative Tollens' and Fehling's tests. On severe oxidation with hot alkaline potassium permanganate, it yields a mixture of acetic acid and propionic acid. The compound is:",
+        "options": {
+          "A": "2-pentanone",
+          "B": "3-pentanone",
+          "C": "2-methyl-2-butanone",
+          "D": "3-methyl-2-butanone"
+        },
+        "correct": "B",
+        "explanation": "Negative Tollens'/Fehling's indicates a ketone. Oxidative cleavage yielding acetic acid (2C) and propionic acid (3C) matches the symmetrical ketone pentan-3-one."
+      },
+      {
+        "q": 2,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Coordination Compounds",
+        "question": "A dilute aqueous solution of a coordination compound [Co(NH3)5(SO4)]Br is mixed with excess silver nitrate solution and excess barium chloride solution respectively. The number of moles of precipitates formed per mole of the coordination compound are, respectively:",
+        "options": {
+          "A": "1 mole of AgBr and 0 mole of BaSO4",
+          "B": "1 mole of AgBr and 1 mole of BaSO4",
+          "C": "0 mole of AgBr and 1 mole of BaSO4",
+          "D": "2 moles of AgBr and 1 mole of BaSO4"
+        },
+        "correct": "A",
+        "explanation": "The compound ionizes to give [Co(NH3)5(SO4)]+ and Br-. Only Br- is outside the coordination sphere and precipitates as AgBr; sulfate is coordinated and does not precipitate with BaCl2."
+      },
+      {
+        "q": 3,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Chemical Kinetics",
+        "question": "For a reaction occurring in one step, the activation energy is 50 kJ/mol. If the temperature is increased from 300 K to 310 K, the rate constant of the reaction approximately increases by a factor of: (Given R = 8.314 J K-1 mol-1)",
+        "options": {
+          "A": "1.5",
+          "B": "2.5",
+          "C": "2.0",
+          "D": "3.0"
+        },
+        "correct": "C",
+        "explanation": "Using the Arrhenius equation, log(k2/k1) = (Ea/2.303R)[(T2-T1)/(T1T2)] ≈ 0.286, giving k2/k1 ≈ 2.0."
+      },
+      {
+        "q": 4,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "Among the following species, the one with the highest bond order and diamagnetic behavior is:",
+        "options": {
+          "A": "O2+",
+          "B": "NO",
+          "C": "O2^2-",
+          "D": "CN-"
+        },
+        "correct": "D",
+        "explanation": "CN- (14e-) has bond order 3.0 and all electrons paired (diamagnetic). O2+ and NO have bond order 2.5 (paramagnetic); O2^2- has bond order 1.0."
+      },
+      {
+        "q": 5,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "States of Matter: Gases and Liquids",
+        "question": "A gaseous mixture containing He and CH4 is allowed to effuse through a fine pinhole. If the ratio of the mole fraction of helium to methane in the container is 4:1, the ratio of the rate of effusion of helium to that of methane (rHe/rCH4) is:",
+        "options": {
+          "A": "1:1",
+          "B": "8:1",
+          "C": "4:1",
+          "D": "2:1"
+        },
+        "correct": "B",
+        "explanation": "rHe/rCH4 = (xHe/xCH4)√(MCH4/MHe) = (4/1)√(16/4) = 4×2 = 8, giving 8:1."
+      },
+      {
+        "q": 6,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Alkanes",
+        "question": "The correct order of boiling points for isomeric pentanes (n-pentane, isopentane, neopentane) is:",
+        "options": {
+          "A": "n-pentane > isopentane > neopentane",
+          "B": "neopentane > isopentane > n-pentane",
+          "C": "isopentane > n-pentane > neopentane",
+          "D": "n-pentane > neopentane > isopentane"
+        },
+        "correct": "A",
+        "explanation": "Straight-chain n-pentane has stronger van der Waals forces due to larger surface area; branching (isopentane, then spherical neopentane) reduces boiling point."
+      },
+      {
+        "q": 7,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Chemical and Ionic Equilibrium",
+        "question": "An aqueous solution of a weak monoprotic acid HA has a concentration of 0.1 M and a pH of 3.0. The ionization constant (Ka) of the acid is:",
+        "options": {
+          "A": "1.0×10⁻³",
+          "B": "1.0×10⁻⁴",
+          "C": "1.0×10⁻⁵",
+          "D": "1.0×10⁻⁶"
+        },
+        "correct": "C",
+        "explanation": "[H+]=10⁻³ M. Ka = [H+]²/C = (10⁻³)²/0.1 = 10⁻⁵."
+      },
+      {
+        "q": 8,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Electrochemistry",
+        "question": "The correct statement regarding electrolytic conduction is:",
+        "options": {
+          "A": "Molar conductivity increases with an increase in concentration for weak electrolytes.",
+          "B": "Specific conductivity increases upon dilution of both strong and weak electrolytes.",
+          "C": "Ionic mobility of ions decreases with an increase in temperature.",
+          "D": "Equivalent conductivity of a strong electrolyte decreases linearly with the square root of concentration."
+        },
+        "correct": "D",
+        "explanation": "By the Debye-Huckel-Onsager equation, Λ = Λ0 − b√C decreases linearly with √C for strong electrolytes."
+      },
+      {
+        "q": 9,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Coordination Compounds",
+        "question": "Which of the following coordination complexes is optically active and exists as enantiomers?",
+        "options": {
+          "A": "[Co(NH3)6]3+",
+          "B": "[Cr(ox)3]3-",
+          "C": "[PtCl4]2-",
+          "D": "trans-[Co(en)2Cl2]+"
+        },
+        "correct": "B",
+        "explanation": "[Cr(ox)3]3- is a chiral octahedral complex lacking symmetry elements, existing as enantiomers. The other options have symmetry and are optically inactive."
+      },
+      {
+        "q": 10,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "d-Block Elements",
+        "question": "In the context of the transition elements, which of the following statements is correct regarding their catalytic properties?",
+        "options": {
+          "A": "Transition metals act as good catalysts because of their ability to adopt multiple oxidation states and form coordination complexes.",
+          "B": "Transition metals have completely filled d-orbitals which facilitate strong adsorption of reactant molecules.",
+          "C": "Transition metal catalysts are ineffective in heterogeneous catalytic reactions.",
+          "D": "The catalytic activity of transition metals decreases due to the formation of unstable intermediate compounds."
+        },
+        "correct": "A",
+        "explanation": "Variable oxidation states and vacant d-orbitals allow transition metals to adsorb reactants and form intermediate complexes, giving high catalytic activity."
+      },
+      {
+        "q": 11,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Classification of Elements and Periodicity in Properties",
+        "question": "The correct order of first ionization enthalpy values among the elements N, O, F, and Ne is:",
+        "options": {
+          "A": "F < O < N < Ne",
+          "B": "N < O < F < Ne",
+          "C": "O < N < F < Ne",
+          "D": "Ne < F < O < N"
+        },
+        "correct": "C",
+        "explanation": "The half-filled 2p³ configuration gives nitrogen extra stability, making its IE higher than oxygen's. Overall order: O < N < F < Ne."
+      },
+      {
+        "q": 12,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Alkyl Halides",
+        "question": "Which of the following alkyl halides undergoes hydrolysis most rapidly via the SN1 mechanism?",
+        "options": {
+          "A": "CH3CH2CH2Cl",
+          "B": "CH3CH(Cl)CH2CH3",
+          "C": "CH3CH2Cl",
+          "D": "(CH3)3CCl"
+        },
+        "correct": "D",
+        "explanation": "Tertiary halides form the most stable carbocation, favoring the SN1 mechanism most strongly."
+      },
+      {
+        "q": 13,
+        "type": "Section 1: Single Correct Type Questions",
+        "topic": "Electrochemistry",
+        "question": "During the electrolysis of an aqueous solution of copper sulfate (CuSO4) using platinum electrodes, the products obtained at the cathode and anode respectively are:",
+        "options": {
+          "A": "Copper metal at cathode and oxygen gas at anode",
+          "B": "Hydrogen gas at cathode and sulfur dioxide gas at anode",
+          "C": "Copper metal at cathode and chlorine gas at anode",
+          "D": "Hydrogen gas at cathode and oxygen gas at anode"
+        },
+        "correct": "A",
+        "explanation": "Cu2+ is reduced to Cu metal at the cathode; water is oxidized to O2 at the anode."
+      },
+      {
+        "q": 14,
+        "type": "Section 2: Multiple Select Type Questions (MSQ)",
+        "topic": "p-Block Elements",
+        "question": "Which of the following statements are correct regarding the properties of p-block elements and their compounds?",
+        "options": {
+          "A": "The stability of lower oxidation states increases down the group in heavier p-block elements due to the inert pair effect.",
+          "B": "Orthophosphoric acid (H3PO4) is a tribasic acid and acts as a strong reducing agent.",
+          "C": "Borazine, also known as inorganic benzene, is isoelectronic and structurally analogous to benzene.",
+          "D": "Silicon dioxide (SiO2) dissolves readily in hydrofluoric acid (HF) to form fluorosilicic acid."
+        },
+        "correct": "A,C,D",
+        "explanation": "Inert pair effect stabilizes lower oxidation states down the group (A correct). H3PO4 is tribasic but not a strong reducing agent (B false, since P is already +5). Borazine is analogous to benzene (C correct). SiO2 dissolves in HF to form fluorosilicic acid (D correct)."
+      },
+      {
+        "q": 15,
+        "type": "Section 2: Multiple Select Type Questions (MSQ)",
+        "topic": "Phenols",
+        "question": "Which of the following reactions will yield phenol as the major product?",
+        "options": {
+          "A": "Acid-catalyzed hydration of propene.",
+          "B": "Oxidation of cumene followed by acid cleavage with dilute sulfuric acid.",
+          "C": "Hydrolysis of benzenediazonium chloride with warm water.",
+          "D": "Direct reaction of chlorobenzene with aqueous NaOH at room temperature."
+        },
+        "correct": "B,C",
+        "explanation": "Cumene process and diazonium salt hydrolysis both yield phenol. Propene hydration gives isopropanol, not phenol. Chlorobenzene requires harsh conditions (high temp/pressure), not room temperature with aqueous NaOH."
+      },
+      {
+        "q": 16,
+        "type": "Section 2: Multiple Select Type Questions (MSQ)",
+        "topic": "Solutions",
+        "question": "Which of the following aqueous solutions will exhibit a freezing point depression greater than that of a 0.1 molal aqueous solution of urea, assuming complete dissociation of electrolytes?",
+        "options": {
+          "A": "0.1 molal glucose solution",
+          "B": "0.1 molal NaCl solution",
+          "C": "0.1 molal BaCl2 solution",
+          "D": "0.1 molal K4[Fe(CN)6] solution"
+        },
+        "correct": "B,C,D",
+        "explanation": "Electrolytes with i>1 (NaCl i=2, BaCl2 i=3, K4[Fe(CN)6] i=5) give greater depression than urea (i=1); glucose also has i=1, same as urea, so not greater."
+      },
+      {
+        "q": 17,
+        "type": "Section 2: Multiple Select Type Questions (MSQ)",
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "Which of the following molecules or ions are planar in geometry?",
+        "options": {
+          "A": "NH3",
+          "B": "BF3",
+          "C": "PCl5",
+          "D": "XeF4"
+        },
+        "correct": "B,D",
+        "explanation": "BF3 is trigonal planar and XeF4 is square planar. NH3 is pyramidal and PCl5 is trigonal bipyramidal (non-planar)."
+      },
+      {
+        "q": 18,
+        "type": "Section 2: Multiple Select Type Questions (MSQ)",
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "Which of the following statements regarding chemical bonding and molecular orbital theory are correct?",
+        "options": {
+          "A": "Both covalent and ionic bonds are directional in nature.",
+          "B": "A sigma bond is stronger than a pi bond because of greater extent of overlapping.",
+          "C": "The bond order of a molecule can be fractional.",
+          "D": "The dipole moment of trans-1,2-dichloroethene is zero due to vector cancellation of bond moments."
+        },
+        "correct": "B,C,D",
+        "explanation": "Ionic bonds are non-directional (A false). Sigma bonds have greater overlap and are stronger than pi bonds (B correct). MO theory allows fractional bond orders (C correct). Trans-1,2-dichloroethene has zero net dipole due to symmetry (D correct)."
+      }
+    ]
+  }
+}

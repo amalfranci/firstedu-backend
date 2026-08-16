@@ -1,0 +1,896 @@
+{
+  "paper_id": "GMAT-Paper5",
+  "title": "GMAT Paper 5",
+  "exam": "GMAT",
+  "year": 2026,
+  "subjects": {
+    "Quantitative Reasoning": [
+      {
+        "q": 1,
+        "topic": "Weighted average",
+        "question": "If x and y are positive integers and x^2 - y^2 is an even integer, which of the following must be true?",
+        "options": {
+          "A": "x - y is odd",
+          "B": "x and y are both even",
+          "C": "x + y is even",
+          "D": "x and y are both odd"
+        },
+        "correct": "C",
+        "explanation": "For x^2 - y^2 to be even, x^2 and y^2 must have the same parity, meaning x and y must share the same parity. If x and y are both even or both odd, their sum x + y must be even. Hence, option (C) is correct."
+      },
+      {
+        "q": 2,
+        "topic": "Weighted average",
+        "question": "A merchant mixes two types of tea, Type A costing $4 per pound and Type B costing $7 per pound. If the resulting mixture is sold at $6 per pound for a 20% profit, what is the ratio of the weight of Type A to Type B in the mixture?",
+        "options": {
+          "A": "1 : 1",
+          "B": "3 : 2",
+          "C": "2 : 1",
+          "D": "1 : 2"
+        },
+        "correct": "C",
+        "explanation": "The combined cost price of the mixture is $6 / 1.20 = $5 per pound. Applying alligation with costs 4, 7, and mean 5 yields a weight ratio of (7 - 5) to (5 - 4), which is 2 : 1. Hence, option (C) is correct."
+      },
+      {
+        "q": 3,
+        "topic": "Linear inequalities",
+        "question": "If a and b are non-zero real numbers such that a < b and ab < 0, which of the following expressions must yield a negative value?",
+        "options": {
+          "A": "b - a",
+          "B": "a^2 * b",
+          "C": "a / b^2",
+          "D": "a + b"
+        },
+        "correct": "C",
+        "explanation": "Since ab < 0, a and b have opposite signs. Given a < b, a must be negative and b must be positive. Thus, a / b^2 is a negative number divided by a positive number, yielding a strictly negative result. Hence, option (C) is correct."
+      },
+      {
+        "q": 4,
+        "topic": "Weighted average",
+        "question": "A freight train travels from Station P to Station Q at an average speed of 40 miles per hour and returns along the same route at 60 miles per hour. If the total round trip took exactly 5 hours, what is the one-way distance between Station P and Station Q?",
+        "options": {
+          "A": "240 miles",
+          "B": "120 miles",
+          "C": "100 miles",
+          "D": "150 miles"
+        },
+        "correct": "B",
+        "explanation": "The average speed over equal distances is given by the harmonic mean: (2 * 40 * 60) / (40 + 60) = 48 mph. In 5 hours, the round trip covers 48 * 5 = 240 miles, meaning the one-way distance is 120 miles. Hence, option (B) is correct."
+      },
+      {
+        "q": 5,
+        "topic": "Exponents",
+        "question": "If k is a positive integer, what is the units digit of the expression 3^(4k+2) + 7^(4k+1)?",
+        "options": {
+          "A": "6",
+          "B": "8",
+          "C": "4",
+          "D": "0"
+        },
+        "correct": "A",
+        "explanation": "The units digits of powers of 3 and 7 cycle every 4 steps. For 3^(4k+2), the units digit is 3^2 = 9. For 7^(4k+1), the units digit is 7^1 = 7. Their sum is 9 + 7 = 16, giving a units digit of 6. Hence, option (A) is correct."
+      },
+      {
+        "q": 6,
+        "topic": "Integers",
+        "question": "A manufacturer can produce item X at a cost of $25 per unit and item Y at $35 per unit. The company has a budget of exactly $1,000 to produce a combination of both items. If the manufacturer must produce at least one of each item, what is the maximum number of items that can be produced?",
+        "options": {
+          "A": "38",
+          "B": "40",
+          "C": "39",
+          "D": "37"
+        },
+        "correct": "A",
+        "explanation": "Dividing the budget equation 25X + 35Y = 1000 by 5 yields 5X + 7Y = 200. To maximize total units, we maximize the cheaper item X by setting the smallest valid positive integer for Y, which is 5. This gives 5X + 35 = 200, so X = 33, yielding a maximum total of 33 + 5 = 38 items. Hence, option (A) is correct."
+      },
+      {
+        "q": 7,
+        "topic": "Linear inequalities",
+        "question": "The lengths of two sides of a triangle are 5 and 12. If the length of the third side is an integer, what is the maximum possible perimeter of the triangle?",
+        "options": {
+          "A": "35",
+          "B": "34",
+          "C": "32",
+          "D": "33"
+        },
+        "correct": "D",
+        "explanation": "By the triangle inequality theorem, the third side must be less than 5 + 12 = 17 and greater than 12 - 5 = 7. The largest integer is 16, making the maximum perimeter 5 + 12 + 16 = 33. Hence, option (D) is correct."
+      },
+      {
+        "q": 8,
+        "topic": "Arithmetic reasoning",
+        "question": "A jar contains 6 red marbles and 4 blue marbles. If two marbles are drawn at random without replacement, what is the probability that exactly one of the drawn marbles is red?",
+        "options": {
+          "A": "1 / 2",
+          "B": "8 / 15",
+          "C": "3 / 5",
+          "D": "7 / 15"
+        },
+        "correct": "B",
+        "explanation": "The probability of drawing Red then Blue is (6/10) * (4/9) = 24/90, and Blue then Red is (4/10) * (6/9) = 24/90. Summing these mutually exclusive scenarios gives 48/90 = 8/15. Hence, option (B) is correct."
+      },
+      {
+        "q": 9,
+        "topic": "Quadratic equations",
+        "question": "If x^2 - px + q = 0 has roots that are positive prime numbers, and p = 12, what is the value of q?",
+        "options": {
+          "A": "20",
+          "B": "11",
+          "C": "32",
+          "D": "35"
+        },
+        "correct": "D",
+        "explanation": "By Vieta's formulas, the sum of the roots equals p = 12. The only pair of positive prime numbers summing to 12 is 5 and 7. The constant term q is their product, 5 * 7 = 35. Hence, option (D) is correct."
+      },
+      {
+        "q": 10,
+        "topic": "Arithmetic reasoning",
+        "question": "In a group of 80 students, 50 are enrolled in Finance and 40 are enrolled in Marketing. What is the minimum possible number of students enrolled in both courses?",
+        "options": {
+          "A": "10",
+          "B": "30",
+          "C": "20",
+          "D": "0"
+        },
+        "correct": "A",
+        "explanation": "Using the principle of inclusion-exclusion assuming no student is outside both courses: 50 + 40 - Both = 80, which yields a minimum overlap of 10 students. Hence, option (A) is correct."
+      },
+      {
+        "q": 11,
+        "topic": "Factors and multiples",
+        "question": "For any integer n > 1, the expression (n^3 - n) must be divisible by which of the following largest integers?",
+        "options": {
+          "A": "8",
+          "B": "6",
+          "C": "24",
+          "D": "12"
+        },
+        "correct": "B",
+        "explanation": "Factoring the expression gives (n - 1)n(n + 1), which represents the product of three consecutive integers. This product is always divisible by both 2 and 3, and thus by 6. Hence, option (B) is correct."
+      },
+      {
+        "q": 12,
+        "topic": "Basic functions",
+        "question": "If f(x) = (x + 1) / (x - 1) for all real x except 1, what is the algebraic evaluation of f(f(x))?",
+        "options": {
+          "A": "1 / x",
+          "B": "x^2",
+          "C": "x",
+          "D": "-x"
+        },
+        "correct": "C",
+        "explanation": "Substituting f(x) into itself yields [((x + 1)/(x - 1)) + 1] / [((x + 1)/(x - 1)) - 1] = [2x / (x - 1)] / [2 / (x - 1)] = x, demonstrating that f(x) is its own inverse. Hence, option (C) is correct."
+      },
+      {
+        "q": 13,
+        "topic": "Percentages",
+        "question": "A company reduced its workforce by 20% in 2023. In 2024, it plans to increase its workforce to return exactly to the original pre-reduction level. By what percentage must the 2024 workforce increase from the 2023 level to achieve this?",
+        "options": {
+          "A": "20%",
+          "B": "15%",
+          "C": "25%",
+          "D": "30%"
+        },
+        "correct": "C",
+        "explanation": "Setting baseline pre-reduction workforce to 100, a 20% reduction leaves 80 employees. Returning to 100 requires hiring 20 new employees relative to the 2023 base of 80, giving an increase of 20 / 80 = 25%. Hence, option (C) is correct."
+      },
+      {
+        "q": 14,
+        "topic": "Distance-time problems",
+        "question": "What is the shortest geometric distance from the origin (0,0) to the line defined by the equation 3x + 4y = 25?",
+        "options": {
+          "A": "5",
+          "B": "4",
+          "C": "3",
+          "D": "25 / 7"
+        },
+        "correct": "A",
+        "explanation": "Using the perpendicular distance formula from a point to a line |C| / sqrt(A^2 + B^2): |-25| / sqrt(3^2 + 4^2) = 25 / 5 = 5. Hence, option (A) is correct."
+      },
+      {
+        "q": 15,
+        "topic": "Weighted average",
+        "question": "The average (arithmetic mean) of 6 distinct positive integers is 20. What is the maximum possible value for the largest of these integers?",
+        "options": {
+          "A": "100",
+          "B": "105",
+          "C": "120",
+          "D": "114"
+        },
+        "correct": "B",
+        "explanation": "The sum of the 6 integers is 6 * 20 = 120. To maximize the largest integer, the other 5 distinct positive integers must be minimized as 1, 2, 3, 4, and 5 (summing to 15). The maximum value is 120 - 15 = 105. Hence, option (B) is correct."
+      },
+      {
+        "q": 16,
+        "topic": "Odd and even numbers",
+        "question": "A 4-digit passcode is created using the digits 0 through 9. If the first digit cannot be 0, and the entire passcode must form an even number, how many such valid passcodes can be formed allowing digit repetition?",
+        "options": {
+          "A": "3600",
+          "B": "4500",
+          "C": "5000",
+          "D": "4050"
+        },
+        "correct": "B",
+        "explanation": "The last digit has 5 choices (0, 2, 4, 6, 8), the first digit has 9 choices (1-9), and the middle two digits have 10 choices each. By the fundamental counting principle: 9 * 10 * 10 * 5 = 4,500. Hence, option (B) is correct."
+      },
+      {
+        "q": 17,
+        "topic": "Profit and loss",
+        "question": "An independent publisher prints books at a fixed cost of $1,200 plus a variable cost of $4 per book. If the publisher sells each book to retailers for $12, what is the minimum number of books that must be sold to generate a net profit of exactly $800?",
+        "options": {
+          "A": "250",
+          "B": "200",
+          "C": "300",
+          "D": "150"
+        },
+        "correct": "A",
+        "explanation": "The contribution margin per book is $12 - $4 = $8. To cover $1,200 in fixed costs and achieve an $800 profit, the required contribution margin is $2,000, yielding 2,000 / 8 = 250 books. Hence, option (A) is correct."
+      },
+      {
+        "q": 18,
+        "topic": "Linear inequalities",
+        "question": "For how many real values of x does the absolute value equation |2x - 5| = x + 1 hold true?",
+        "options": {
+          "A": "0",
+          "B": "1",
+          "C": "3",
+          "D": "2"
+        },
+        "correct": "D",
+        "explanation": "Solving Case 1 (2x - 5 = x + 1) gives x = 6. Solving Case 2 (2x - 5 = -(x + 1)) gives x = 4/3. Both solutions satisfy the non-negativity constraint x + 1 >= 0, confirming 2 valid solutions. Hence, option (D) is correct."
+      },
+      {
+        "q": 19,
+        "topic": "Arithmetic reasoning",
+        "question": "A cylindrical tank with a radius of 5 meters is filled with water to a depth of 4 meters. If an additional 50 pi cubic meters of water is poured into the tank, what will be the new depth of the water?",
+        "options": {
+          "A": "6 meters",
+          "B": "5 meters",
+          "C": "7 meters",
+          "D": "8 meters"
+        },
+        "correct": "A",
+        "explanation": "The base area is pi * 5^2 = 25 pi square meters. The added depth is volume divided by base area: (50 pi) / (25 pi) = 2 meters. Adding this to the initial 4 meters gives a final depth of 6 meters. Hence, option (A) is correct."
+      },
+      {
+        "q": 20,
+        "topic": "Distance-time problems",
+        "question": "Train A leaves Station X at 1:00 PM traveling at 60 mph. Train B leaves Station X at 2:30 PM on a parallel track, traveling in the same direction at 80 mph. At what exact time will Train B catch up to Train A?",
+        "options": {
+          "A": "6:30 PM",
+          "B": "7:30 PM",
+          "C": "8:00 PM",
+          "D": "7:00 PM"
+        },
+        "correct": "D",
+        "explanation": "By 2:30 PM, Train A has built a lead of 1.5 hours * 60 mph = 90 miles. At a relative catching speed of 80 - 60 = 20 mph, Train B takes 90 / 20 = 4.5 hours to catch up, arriving at 7:00 PM. Hence, option (D) is correct."
+      },
+      {
+        "q": 21,
+        "topic": "Weighted average",
+        "question": "The sum of the first 11 terms of an arithmetic progression is exactly equal to the sum of the first 19 terms of the same progression. What is the sum of the first 30 terms of this progression?",
+        "options": {
+          "A": "30",
+          "B": "-30",
+          "C": "Cannot be determined",
+          "D": "0"
+        },
+        "correct": "D",
+        "explanation": "Equating S_11 and S_19 yields 11/2(2a + 10d) = 19/2(2a + 18d), which simplifies algebraically to 2a + 29d = 0. The sum of the first 30 terms is 30/2(2a + 29d) = 15 * 0 = 0. Hence, option (D) is correct."
+      }
+    ],
+    "Verbal Reasoning": [
+      {
+        "q": 1,
+        "topic": "Purpose",
+        "question": "Which of the following best states the primary purpose of the passage?",
+        "options": {
+          "A": "To argue that automatic enrollment should be replaced by automatic escalation in all retirement plans",
+          "B": "To prove that inertia is the sole cause of low retirement plan participation among employees",
+          "C": "To examine competing perspectives on the effectiveness of automatic enrollment as a tool for improving retirement savings",
+          "D": "To describe the history of retirement savings legislation in the workplace"
+        },
+        "correct": "C",
+        "explanation": "The passage presents the proponents' view that default enrollment counteracts inertia, the critics' view that it entrenches low contribution rates, and a proposed compromise along with its limitations. This balanced presentation of viewpoints matches option (C). Option (A) is too narrow and one-sided, since the passage does not advocate for escalation as the definitive solution. Option (B) overstates the passage's claim, since inertia is discussed as one factor among several rather than the sole cause. Option (D) is not supported, as no legislative history is discussed.",
+        "passage": "When organizations automatically enroll employees in retirement savings plans rather than requiring them to actively opt in, participation rates rise dramatically, often from under half of eligible employees to more than ninety percent. Proponents of this practice, sometimes called a \"nudge,\" argue that default enrollment corrects for a behavioral bias: many employees intend to save but fail to complete the paperwork required to opt in, a lapse attributable to inertia rather than to a considered decision against saving. By reversing the default, employers convert inertia into an ally of long-term financial security rather than an obstacle to it.\n\nCritics counter that the impressive participation figures obscure a less encouraging reality. Automatic enrollment typically sets a low default contribution rate, often three percent of salary, and because the same inertia that once prevented employees from opting in now discourages them from adjusting that rate upward, many workers who would have chosen a higher contribution under an opt-in system end up saving less than they would have otherwise. A minority of employees, moreover, treat the default rate as an implicit recommendation from their employer about how much they ought to save, further entrenching an inadequate contribution level.\n\nSome economists have proposed a compromise: automatic escalation, in which the default contribution rate rises by a fixed percentage each year unless the employee opts out of the increase. Early results suggest that escalation programs raise average contribution rates without meaningfully increasing opt-out rates, since the small annual increments are easier for inertia-prone employees to accept than a single large jump would be. Still, skeptics note that these results come almost entirely from a handful of large firms that adopted escalation early, and it remains unclear whether smaller employers, whose employees may have less stable incomes, would see comparable results.",
+        "type": "Reading Comprehension"
+      },
+      {
+        "q": 2,
+        "topic": "Inference",
+        "question": "It can be inferred from the passage that critics of automatic enrollment believe which of the following about employees' default contribution rate behavior?",
+        "options": {
+          "A": "Employees interpret the default rate as a signal of an appropriate savings amount, not just a placeholder",
+          "B": "Employees choose the default rate because it maximizes tax benefits",
+          "C": "Employees actively calculate the optimal contribution rate before defaulting into a plan",
+          "D": "Employees opt out of automatic enrollment at higher rates than they would under an opt-in system"
+        },
+        "correct": "A",
+        "explanation": "The passage states that some employees treat the default rate as an implicit recommendation from their employer about how much they ought to save, which directly supports option (A). Option (B) introduces a reason (tax benefits) never mentioned in the passage. Option (C) contradicts the critics' point, since the whole objection is that employees do not actively reconsider the default rate. Option (D) is unsupported and, in fact, contrary to the passage's claim that participation rates rise sharply under automatic enrollment.",
+        "passage": "When organizations automatically enroll employees in retirement savings plans rather than requiring them to actively opt in, participation rates rise dramatically, often from under half of eligible employees to more than ninety percent. Proponents of this practice, sometimes called a \"nudge,\" argue that default enrollment corrects for a behavioral bias: many employees intend to save but fail to complete the paperwork required to opt in, a lapse attributable to inertia rather than to a considered decision against saving. By reversing the default, employers convert inertia into an ally of long-term financial security rather than an obstacle to it.\n\nCritics counter that the impressive participation figures obscure a less encouraging reality. Automatic enrollment typically sets a low default contribution rate, often three percent of salary, and because the same inertia that once prevented employees from opting in now discourages them from adjusting that rate upward, many workers who would have chosen a higher contribution under an opt-in system end up saving less than they would have otherwise. A minority of employees, moreover, treat the default rate as an implicit recommendation from their employer about how much they ought to save, further entrenching an inadequate contribution level.\n\nSome economists have proposed a compromise: automatic escalation, in which the default contribution rate rises by a fixed percentage each year unless the employee opts out of the increase. Early results suggest that escalation programs raise average contribution rates without meaningfully increasing opt-out rates, since the small annual increments are easier for inertia-prone employees to accept than a single large jump would be. Still, skeptics note that these results come almost entirely from a handful of large firms that adopted escalation early, and it remains unclear whether smaller employers, whose employees may have less stable incomes, would see comparable results.",
+        "type": "Reading Comprehension"
+      },
+      {
+        "q": 3,
+        "topic": "Identify flaws",
+        "question": "The final paragraph of the passage functions primarily to",
+        "options": {
+          "A": "refute the critics' argument by showing that automatic enrollment has no drawbacks",
+          "B": "summarize the entire passage's argument",
+          "C": "present a historical account of how escalation programs were developed",
+          "D": "introduce a proposed solution to a problem raised earlier in the passage and note a limitation of the evidence supporting it"
+        },
+        "correct": "D",
+        "explanation": "The final paragraph introduces automatic escalation as a proposed compromise to the problem of low default contribution rates discussed in paragraph two, and then notes that the supporting evidence comes mainly from large firms, leaving its generalizability uncertain. This matches option (D). Option (A) is incorrect because the paragraph does not claim automatic enrollment is flawless. Option (B) is too broad, since the paragraph focuses specifically on escalation rather than summarizing the whole passage. Option (C) is not supported, as no historical development is traced.",
+        "passage": "When organizations automatically enroll employees in retirement savings plans rather than requiring them to actively opt in, participation rates rise dramatically, often from under half of eligible employees to more than ninety percent. Proponents of this practice, sometimes called a \"nudge,\" argue that default enrollment corrects for a behavioral bias: many employees intend to save but fail to complete the paperwork required to opt in, a lapse attributable to inertia rather than to a considered decision against saving. By reversing the default, employers convert inertia into an ally of long-term financial security rather than an obstacle to it.\n\nCritics counter that the impressive participation figures obscure a less encouraging reality. Automatic enrollment typically sets a low default contribution rate, often three percent of salary, and because the same inertia that once prevented employees from opting in now discourages them from adjusting that rate upward, many workers who would have chosen a higher contribution under an opt-in system end up saving less than they would have otherwise. A minority of employees, moreover, treat the default rate as an implicit recommendation from their employer about how much they ought to save, further entrenching an inadequate contribution level.\n\nSome economists have proposed a compromise: automatic escalation, in which the default contribution rate rises by a fixed percentage each year unless the employee opts out of the increase. Early results suggest that escalation programs raise average contribution rates without meaningfully increasing opt-out rates, since the small annual increments are easier for inertia-prone employees to accept than a single large jump would be. Still, skeptics note that these results come almost entirely from a handful of large firms that adopted escalation early, and it remains unclear whether smaller employers, whose employees may have less stable incomes, would see comparable results.",
+        "type": "Reading Comprehension"
+      },
+      {
+        "q": 4,
+        "topic": "Strengthen an argument",
+        "question": "Which of the following, if true, would most weaken the skeptics' claim that escalation results may not generalize to smaller employers?",
+        "options": {
+          "A": "Large firms that adopted escalation programs also offered higher matching contributions",
+          "B": "A recent study of escalation programs at several small firms with volatile employee incomes found opt-out rates similar to those at large firms",
+          "C": "Smaller employers historically have had lower retirement plan participation rates",
+          "D": "Employees at smaller firms are more likely to distrust employer-designed benefit programs"
+        },
+        "correct": "B",
+        "explanation": "The skeptics' concern is specifically that escalation results might not hold at smaller firms with less stable employee incomes. Direct evidence that small firms with volatile incomes show similar opt-out rates to large firms, as in option (B), directly undercuts that concern. Option (A) would actually support the skeptics by pointing to a difference between large and small firms. Option (C) is irrelevant to escalation opt-out behavior specifically. Option (D) would strengthen, not weaken, the skeptics' concern.",
+        "passage": "When organizations automatically enroll employees in retirement savings plans rather than requiring them to actively opt in, participation rates rise dramatically, often from under half of eligible employees to more than ninety percent. Proponents of this practice, sometimes called a \"nudge,\" argue that default enrollment corrects for a behavioral bias: many employees intend to save but fail to complete the paperwork required to opt in, a lapse attributable to inertia rather than to a considered decision against saving. By reversing the default, employers convert inertia into an ally of long-term financial security rather than an obstacle to it.\n\nCritics counter that the impressive participation figures obscure a less encouraging reality. Automatic enrollment typically sets a low default contribution rate, often three percent of salary, and because the same inertia that once prevented employees from opting in now discourages them from adjusting that rate upward, many workers who would have chosen a higher contribution under an opt-in system end up saving less than they would have otherwise. A minority of employees, moreover, treat the default rate as an implicit recommendation from their employer about how much they ought to save, further entrenching an inadequate contribution level.\n\nSome economists have proposed a compromise: automatic escalation, in which the default contribution rate rises by a fixed percentage each year unless the employee opts out of the increase. Early results suggest that escalation programs raise average contribution rates without meaningfully increasing opt-out rates, since the small annual increments are easier for inertia-prone employees to accept than a single large jump would be. Still, skeptics note that these results come almost entirely from a handful of large firms that adopted escalation early, and it remains unclear whether smaller employers, whose employees may have less stable incomes, would see comparable results.",
+        "type": "Reading Comprehension"
+      },
+      {
+        "q": 5,
+        "topic": "Organization of ideas",
+        "question": "Which of the following best describes the organization of the passage?",
+        "options": {
+          "A": "A phenomenon is described, then a controversial response to it is presented along with objections and a rebuttal",
+          "B": "A historical timeline of coral reef degradation is traced from its origins to the present",
+          "C": "Two competing theories about the cause of coral bleaching are compared and one is proven correct",
+          "D": "A scientific consensus is presented and then dismissed as outdated"
+        },
+        "correct": "A",
+        "explanation": "The passage first explains coral bleaching, then presents assisted evolution as a controversial response, followed by opponents' objections and proponents' rebuttal, matching option (A). Option (B) is incorrect since no chronological history is traced. Option (C) is incorrect because the passage does not present competing theories about the cause of bleaching; the cause described (thermal stress) is not disputed. Option (D) mischaracterizes the passage, which never dismisses a consensus as outdated.",
+        "passage": "Reef-building corals derive most of their energy from photosynthetic algae called zooxanthellae, which live within coral tissue in a mutualistic relationship: the coral provides shelter and access to sunlight, and the algae supply the coral with organic nutrients. When ocean temperatures rise even slightly above a coral's typical tolerance range, this partnership breaks down. Stressed corals expel their algae, exposing the white calcium carbonate skeleton beneath the translucent tissue, a phenomenon known as coral bleaching. Bleached corals are not dead, but they are starved of their primary energy source, and prolonged bleaching events frequently result in coral mortality.\n\nSome marine biologists have turned to a controversial strategy known as assisted evolution, which encompasses several techniques for accelerating the development of heat-tolerant coral populations. One approach involves selectively breeding corals that have survived previous bleaching events, on the assumption that survival indicates a heritable tolerance for thermal stress. Another approach involves inoculating corals with strains of zooxanthellae collected from unusually warm waters, in the hope that these heat-adapted algae will confer greater resilience on their coral hosts.\n\nOpponents of assisted evolution argue that the strategy diverts attention and funding from the more urgent task of reducing greenhouse gas emissions, the underlying cause of ocean warming. They also warn that introducing selectively bred corals or non-native algal strains into wild reef systems could have unintended ecological consequences, such as reducing the genetic diversity that allows reef ecosystems to adapt to a range of future conditions. Proponents respond that emissions reductions, even if achieved, would take decades to lower ocean temperatures meaningfully, and that reefs may not survive long enough for such reductions to matter unless interventions buy them additional time.",
+        "type": "Reading Comprehension"
+      },
+      {
+        "q": 6,
+        "topic": "Inference",
+        "question": "It can be inferred that proponents of assisted evolution believe which of the following about reducing greenhouse gas emissions?",
+        "options": {
+          "A": "Emissions reductions are unnecessary once assisted evolution techniques are implemented",
+          "B": "Emissions reductions would immediately reverse existing coral bleaching",
+          "C": "Emissions reductions are less important than genetic diversity in reef ecosystems",
+          "D": "Emissions reductions alone are unlikely to help reefs quickly enough to prevent further loss"
+        },
+        "correct": "D",
+        "explanation": "The passage states that proponents respond that emissions reductions would take decades to lower ocean temperatures meaningfully, and that reefs may not survive that long without intervention, which supports option (D). Option (A) overstates the proponents' position, since they do not claim emissions reductions are unnecessary, only insufficient on their own within the relevant timeframe. Option (B) contradicts the passage, which describes emissions reductions as slow-acting. Option (C) is not addressed by the proponents' argument as described.",
+        "passage": "Reef-building corals derive most of their energy from photosynthetic algae called zooxanthellae, which live within coral tissue in a mutualistic relationship: the coral provides shelter and access to sunlight, and the algae supply the coral with organic nutrients. When ocean temperatures rise even slightly above a coral's typical tolerance range, this partnership breaks down. Stressed corals expel their algae, exposing the white calcium carbonate skeleton beneath the translucent tissue, a phenomenon known as coral bleaching. Bleached corals are not dead, but they are starved of their primary energy source, and prolonged bleaching events frequently result in coral mortality.\n\nSome marine biologists have turned to a controversial strategy known as assisted evolution, which encompasses several techniques for accelerating the development of heat-tolerant coral populations. One approach involves selectively breeding corals that have survived previous bleaching events, on the assumption that survival indicates a heritable tolerance for thermal stress. Another approach involves inoculating corals with strains of zooxanthellae collected from unusually warm waters, in the hope that these heat-adapted algae will confer greater resilience on their coral hosts.\n\nOpponents of assisted evolution argue that the strategy diverts attention and funding from the more urgent task of reducing greenhouse gas emissions, the underlying cause of ocean warming. They also warn that introducing selectively bred corals or non-native algal strains into wild reef systems could have unintended ecological consequences, such as reducing the genetic diversity that allows reef ecosystems to adapt to a range of future conditions. Proponents respond that emissions reductions, even if achieved, would take decades to lower ocean temperatures meaningfully, and that reefs may not survive long enough for such reductions to matter unless interventions buy them additional time.",
+        "type": "Reading Comprehension"
+      },
+      {
+        "q": 7,
+        "topic": "Supporting idea",
+        "question": "According to the passage, coral bleaching occurs when",
+        "options": {
+          "A": "corals are physically damaged by ocean acidification",
+          "B": "selectively bred corals outcompete wild corals for nutrients",
+          "C": "corals expel their symbiotic algae in response to thermal stress, losing their primary energy source",
+          "D": "zooxanthellae die from lack of sunlight penetrating deeper waters"
+        },
+        "correct": "C",
+        "explanation": "The passage explicitly states that stressed corals expel their algae when ocean temperatures rise above their tolerance range, exposing the skeleton beneath and leaving the coral starved of its primary energy source, which is option (C). Option (A) describes acidification, a different process not mentioned in the passage. Option (B) refers to assisted evolution, not the cause of bleaching. Option (D) misattributes the cause to sunlight penetration rather than thermal stress.",
+        "passage": "Reef-building corals derive most of their energy from photosynthetic algae called zooxanthellae, which live within coral tissue in a mutualistic relationship: the coral provides shelter and access to sunlight, and the algae supply the coral with organic nutrients. When ocean temperatures rise even slightly above a coral's typical tolerance range, this partnership breaks down. Stressed corals expel their algae, exposing the white calcium carbonate skeleton beneath the translucent tissue, a phenomenon known as coral bleaching. Bleached corals are not dead, but they are starved of their primary energy source, and prolonged bleaching events frequently result in coral mortality.\n\nSome marine biologists have turned to a controversial strategy known as assisted evolution, which encompasses several techniques for accelerating the development of heat-tolerant coral populations. One approach involves selectively breeding corals that have survived previous bleaching events, on the assumption that survival indicates a heritable tolerance for thermal stress. Another approach involves inoculating corals with strains of zooxanthellae collected from unusually warm waters, in the hope that these heat-adapted algae will confer greater resilience on their coral hosts.\n\nOpponents of assisted evolution argue that the strategy diverts attention and funding from the more urgent task of reducing greenhouse gas emissions, the underlying cause of ocean warming. They also warn that introducing selectively bred corals or non-native algal strains into wild reef systems could have unintended ecological consequences, such as reducing the genetic diversity that allows reef ecosystems to adapt to a range of future conditions. Proponents respond that emissions reductions, even if achieved, would take decades to lower ocean temperatures meaningfully, and that reefs may not survive long enough for such reductions to matter unless interventions buy them additional time.",
+        "type": "Reading Comprehension"
+      },
+      {
+        "q": 8,
+        "topic": "Strengthen an argument",
+        "question": "Which of the following, if true, would most strengthen the opponents' concern about introducing non-native algal strains into wild reef systems?",
+        "options": {
+          "A": "Heat-adapted zooxanthellae strains have been shown in laboratory settings to survive higher temperatures than native strains",
+          "B": "A reef system that received non-native, heat-tolerant zooxanthellae later showed reduced resistance to a coral disease outbreak, a resistance previously provided by native algal genetic diversity",
+          "C": "Assisted evolution techniques are currently used in only a small number of experimental reef sites worldwide",
+          "D": "Selective breeding programs are more expensive to implement than algal inoculation programs"
+        },
+        "correct": "B",
+        "explanation": "The opponents specifically warn that introducing non-native algal strains could reduce the genetic diversity that helps reefs adapt, with unintended ecological consequences. A concrete case in which reduced native genetic diversity led to reduced disease resistance after non-native algae were introduced, as in option (B), directly confirms this concern. Option (A) merely supports the rationale for using heat-adapted strains, which would support proponents, not opponents. Option (C) does not bear on the ecological risk itself. Option (D) concerns cost, not ecological consequences.",
+        "passage": "Reef-building corals derive most of their energy from photosynthetic algae called zooxanthellae, which live within coral tissue in a mutualistic relationship: the coral provides shelter and access to sunlight, and the algae supply the coral with organic nutrients. When ocean temperatures rise even slightly above a coral's typical tolerance range, this partnership breaks down. Stressed corals expel their algae, exposing the white calcium carbonate skeleton beneath the translucent tissue, a phenomenon known as coral bleaching. Bleached corals are not dead, but they are starved of their primary energy source, and prolonged bleaching events frequently result in coral mortality.\n\nSome marine biologists have turned to a controversial strategy known as assisted evolution, which encompasses several techniques for accelerating the development of heat-tolerant coral populations. One approach involves selectively breeding corals that have survived previous bleaching events, on the assumption that survival indicates a heritable tolerance for thermal stress. Another approach involves inoculating corals with strains of zooxanthellae collected from unusually warm waters, in the hope that these heat-adapted algae will confer greater resilience on their coral hosts.\n\nOpponents of assisted evolution argue that the strategy diverts attention and funding from the more urgent task of reducing greenhouse gas emissions, the underlying cause of ocean warming. They also warn that introducing selectively bred corals or non-native algal strains into wild reef systems could have unintended ecological consequences, such as reducing the genetic diversity that allows reef ecosystems to adapt to a range of future conditions. Proponents respond that emissions reductions, even if achieved, would take decades to lower ocean temperatures meaningfully, and that reefs may not survive long enough for such reductions to matter unless interventions buy them additional time.",
+        "type": "Reading Comprehension"
+      },
+      {
+        "q": 9,
+        "topic": "Main idea",
+        "question": "Which of the following best states the main idea of the passage?",
+        "options": {
+          "A": "Oral traditions are more reliable than written records in all historical contexts",
+          "B": "The Moroccan invasion of the Songhai Empire was not a significant historical event",
+          "C": "Archaeological evidence has replaced oral tradition as the primary source for African history",
+          "D": "Reassessing the reliability of oral traditions has enabled historians to identify factors, such as shifting trade routes, that documentary evidence alone had understated"
+        },
+        "correct": "D",
+        "explanation": "The passage traces how historians' reassessment of oral tradition led to a fuller understanding of the trans-Saharan trade network's decline, revealing the role of shifting trade routes that documentary chronicles alone had understated, matching option (D). Option (A) is too absolute, since the passage explicitly notes oral traditions still require scrutiny. Option (B) is not asserted; the passage only says the invasion was not the sole cause. Option (C) misstates the passage's point, which is that oral tradition is used alongside, not in place of, archaeological evidence.",
+        "passage": "For much of the twentieth century, historians researching societies that left few written records relied almost exclusively on archaeological evidence and on written accounts produced by outside observers, such as travelers or colonial administrators. Oral traditions, transmitted across generations through storytelling, genealogies, and praise poetry, were frequently dismissed as unreliable, on the grounds that details are inevitably altered, exaggerated, or lost as stories pass from one narrator to the next.\n\nBeginning in the 1960s, a number of historians began to challenge this dismissal, arguing that oral traditions in many societies were preserved through formalized transmission practices, including designated custodians trained specifically to memorize and recite historical narratives with minimal alteration. These historians contended that, when cross-checked against archaeological and documentary evidence, oral accounts frequently proved accurate regarding the sequence and approximate timing of major events, even when individual details had shifted over time.\n\nThis reassessment proved particularly consequential for the study of the trans-Saharan trade network, whose decline in the sixteenth century had previously been attributed almost entirely to the Moroccan invasion of the Songhai Empire in 1591, an event well documented in Arabic-language chronicles. Oral traditions collected from communities along former trade routes, however, consistently emphasized a different factor: a gradual shift in trade routes toward Atlantic coastal ports, a shift driven by the growing presence of European maritime traders. Subsequent archaeological surveys of trade goods found at inland sites lent support to this account, revealing a decline in trans-Saharan trade volume that began decades before the Moroccan invasion.\n\nThis is not to say that oral traditions require no critical scrutiny; historians must still account for the possibility that a formalized tradition reflects the interests of the community or institution that preserved it. But the trans-Saharan case illustrates that oral traditions, used alongside other forms of evidence, can reveal historical processes that documentary sources alone tend to obscure.",
+        "type": "Reading Comprehension"
+      },
+      {
+        "q": 10,
+        "topic": "Supporting idea",
+        "question": "According to the passage, archaeological surveys of trade goods at inland sites supported which claim?",
+        "options": {
+          "A": "A decline in trans-Saharan trade volume began before the Moroccan invasion, consistent with oral accounts of a gradual shift to Atlantic routes",
+          "B": "The Moroccan invasion of 1591 was the sole cause of the network's decline",
+          "C": "Arabic-language chronicles significantly overstated the network's trade volume",
+          "D": "European maritime traders had no measurable effect on inland trade routes"
+        },
+        "correct": "A",
+        "explanation": "The passage states directly that archaeological surveys revealed a decline in trans-Saharan trade volume beginning decades before the Moroccan invasion, lending support to the oral accounts of a gradual shift toward Atlantic routes, which is option (A). Option (B) is the view the passage revises, not what the archaeological evidence supports. Option (C) is not discussed in the passage. Option (D) contradicts the passage, which credits European maritime traders with driving the shift.",
+        "passage": "For much of the twentieth century, historians researching societies that left few written records relied almost exclusively on archaeological evidence and on written accounts produced by outside observers, such as travelers or colonial administrators. Oral traditions, transmitted across generations through storytelling, genealogies, and praise poetry, were frequently dismissed as unreliable, on the grounds that details are inevitably altered, exaggerated, or lost as stories pass from one narrator to the next.\n\nBeginning in the 1960s, a number of historians began to challenge this dismissal, arguing that oral traditions in many societies were preserved through formalized transmission practices, including designated custodians trained specifically to memorize and recite historical narratives with minimal alteration. These historians contended that, when cross-checked against archaeological and documentary evidence, oral accounts frequently proved accurate regarding the sequence and approximate timing of major events, even when individual details had shifted over time.\n\nThis reassessment proved particularly consequential for the study of the trans-Saharan trade network, whose decline in the sixteenth century had previously been attributed almost entirely to the Moroccan invasion of the Songhai Empire in 1591, an event well documented in Arabic-language chronicles. Oral traditions collected from communities along former trade routes, however, consistently emphasized a different factor: a gradual shift in trade routes toward Atlantic coastal ports, a shift driven by the growing presence of European maritime traders. Subsequent archaeological surveys of trade goods found at inland sites lent support to this account, revealing a decline in trans-Saharan trade volume that began decades before the Moroccan invasion.\n\nThis is not to say that oral traditions require no critical scrutiny; historians must still account for the possibility that a formalized tradition reflects the interests of the community or institution that preserved it. But the trans-Saharan case illustrates that oral traditions, used alongside other forms of evidence, can reveal historical processes that documentary sources alone tend to obscure.",
+        "type": "Reading Comprehension"
+      },
+      {
+        "q": 11,
+        "topic": "Inference",
+        "question": "It can be inferred that historians who challenged the dismissal of oral tradition in the 1960s believed which of the following?",
+        "options": {
+          "A": "Oral traditions are inherently more accurate than any archaeological evidence",
+          "B": "Formalized transmission practices, such as trained custodians, could preserve the sequence and timing of historical events with reasonable accuracy",
+          "C": "Written records produced by outside observers were entirely fabricated",
+          "D": "Genealogies and praise poetry are the only reliable forms of oral tradition"
+        },
+        "correct": "B",
+        "explanation": "The passage states that these historians argued oral traditions were preserved through formalized transmission practices and that such accounts frequently proved accurate about the sequence and timing of events, supporting option (B). Option (A) overstates their position into an absolute claim not made in the passage. Option (C) is unsupported; the passage never claims outside written accounts were fabricated. Option (D) incorrectly narrows the reliable forms of oral tradition to only two specific types mentioned earlier as examples, not as an exhaustive or exclusive list.",
+        "passage": "For much of the twentieth century, historians researching societies that left few written records relied almost exclusively on archaeological evidence and on written accounts produced by outside observers, such as travelers or colonial administrators. Oral traditions, transmitted across generations through storytelling, genealogies, and praise poetry, were frequently dismissed as unreliable, on the grounds that details are inevitably altered, exaggerated, or lost as stories pass from one narrator to the next.\n\nBeginning in the 1960s, a number of historians began to challenge this dismissal, arguing that oral traditions in many societies were preserved through formalized transmission practices, including designated custodians trained specifically to memorize and recite historical narratives with minimal alteration. These historians contended that, when cross-checked against archaeological and documentary evidence, oral accounts frequently proved accurate regarding the sequence and approximate timing of major events, even when individual details had shifted over time.\n\nThis reassessment proved particularly consequential for the study of the trans-Saharan trade network, whose decline in the sixteenth century had previously been attributed almost entirely to the Moroccan invasion of the Songhai Empire in 1591, an event well documented in Arabic-language chronicles. Oral traditions collected from communities along former trade routes, however, consistently emphasized a different factor: a gradual shift in trade routes toward Atlantic coastal ports, a shift driven by the growing presence of European maritime traders. Subsequent archaeological surveys of trade goods found at inland sites lent support to this account, revealing a decline in trans-Saharan trade volume that began decades before the Moroccan invasion.\n\nThis is not to say that oral traditions require no critical scrutiny; historians must still account for the possibility that a formalized tradition reflects the interests of the community or institution that preserved it. But the trans-Saharan case illustrates that oral traditions, used alongside other forms of evidence, can reveal historical processes that documentary sources alone tend to obscure.",
+        "type": "Reading Comprehension"
+      },
+      {
+        "q": 12,
+        "topic": "Purpose",
+        "question": "The final paragraph of the passage serves mainly to",
+        "options": {
+          "A": "dismiss the reassessment of oral tradition described earlier in the passage",
+          "B": "provide additional evidence supporting the trans-Saharan trade example",
+          "C": "introduce a new historical case unrelated to the trans-Saharan trade network",
+          "D": "qualify the passage's overall argument by acknowledging a limitation of oral tradition as evidence"
+        },
+        "correct": "D",
+        "explanation": "The final paragraph acknowledges that oral traditions still require critical scrutiny because a formalized tradition might reflect the interests of the group that preserved it, which qualifies the passage's broader argument in favor of oral tradition's usefulness, matching option (D). Option (A) is too strong, since the paragraph does not dismiss the reassessment but rather tempers it. Option (B) is incorrect because the paragraph adds a caveat rather than further evidence for the trans-Saharan case. Option (C) is incorrect, as no new historical case is introduced.",
+        "passage": "For much of the twentieth century, historians researching societies that left few written records relied almost exclusively on archaeological evidence and on written accounts produced by outside observers, such as travelers or colonial administrators. Oral traditions, transmitted across generations through storytelling, genealogies, and praise poetry, were frequently dismissed as unreliable, on the grounds that details are inevitably altered, exaggerated, or lost as stories pass from one narrator to the next.\n\nBeginning in the 1960s, a number of historians began to challenge this dismissal, arguing that oral traditions in many societies were preserved through formalized transmission practices, including designated custodians trained specifically to memorize and recite historical narratives with minimal alteration. These historians contended that, when cross-checked against archaeological and documentary evidence, oral accounts frequently proved accurate regarding the sequence and approximate timing of major events, even when individual details had shifted over time.\n\nThis reassessment proved particularly consequential for the study of the trans-Saharan trade network, whose decline in the sixteenth century had previously been attributed almost entirely to the Moroccan invasion of the Songhai Empire in 1591, an event well documented in Arabic-language chronicles. Oral traditions collected from communities along former trade routes, however, consistently emphasized a different factor: a gradual shift in trade routes toward Atlantic coastal ports, a shift driven by the growing presence of European maritime traders. Subsequent archaeological surveys of trade goods found at inland sites lent support to this account, revealing a decline in trans-Saharan trade volume that began decades before the Moroccan invasion.\n\nThis is not to say that oral traditions require no critical scrutiny; historians must still account for the possibility that a formalized tradition reflects the interests of the community or institution that preserved it. But the trans-Saharan case illustrates that oral traditions, used alongside other forms of evidence, can reveal historical processes that documentary sources alone tend to obscure.",
+        "type": "Reading Comprehension"
+      },
+      {
+        "q": 13,
+        "topic": "Weaken an argument",
+        "question": "A city council reports that after installing red-light cameras at fifty intersections, accidents at those intersections fell by 30 percent over the following year. The council concludes that the cameras caused the reduction in accidents. Which of the following, if true, most weakens the council's conclusion?",
+        "options": {
+          "A": "The city removed several aging traffic signals unrelated to the camera intersections during the same year",
+          "B": "The camera program cost less to implement than a comparable program of adding traffic officers would have cost",
+          "C": "During the same year, the city lowered speed limits citywide, and accidents fell by a comparable 30 percent at intersections without cameras as well",
+          "D": "Several drivers surveyed said they were unaware that the cameras had been installed"
+        },
+        "correct": "C",
+        "explanation": "If accidents fell by a similar percentage at intersections without cameras during the same period, a citywide factor such as the lower speed limits, rather than the cameras themselves, is a more plausible explanation for the decline. This directly undermines the causal claim, making (C) correct. Option (A) concerns unrelated intersections and does not address the camera intersections' results. Option (B) is about cost, not causation. Option (D) is largely irrelevant, since driver awareness of the cameras is not central to whether the cameras caused the reduction."
+      },
+      {
+        "q": 14,
+        "topic": "Identify assumptions",
+        "question": "A nutrition company argues: 'Our new snack bar contains twice the protein of the leading competitor bar, so athletes who switch to our bar will build muscle more effectively than they would eating the competitor's bar.' Which of the following is an assumption required by this argument?",
+        "options": {
+          "A": "Protein content is the primary factor determining how effectively athletes build muscle from a snack bar, holding other nutritional factors relatively constant",
+          "B": "The company's snack bar costs less than the leading competitor's bar",
+          "C": "Athletes prefer the taste of the new snack bar over the competitor's bar",
+          "D": "The competitor's bar has been on the market longer than the new snack bar"
+        },
+        "correct": "A",
+        "explanation": "The argument concludes that higher protein content will translate into more effective muscle building. For this conclusion to follow, the argument must assume that protein content is indeed the key driver of muscle-building effectiveness among the bar's nutritional properties, which is option (A). If this assumption were false, more protein might not meaningfully affect muscle building. Options (B), (C), and (D) concern price, taste, and market history, none of which the argument's conclusion about muscle-building effectiveness depends on."
+      },
+      {
+        "q": 15,
+        "topic": "Inference",
+        "question": "Sales of umbrellas in Rivertown increased by 40 percent last year, even though the city received less rainfall last year than in any of the previous ten years. Which of the following, if true, most helps resolve the apparent discrepancy?",
+        "options": {
+          "A": "Rivertown's population grew by 5 percent last year",
+          "B": "A new city ordinance required all outdoor food vendors, whose numbers doubled last year, to provide umbrellas over their stalls to protect food from sun exposure",
+          "C": "A nearby city experienced significantly more rainfall than usual last year",
+          "D": "Umbrella retailers in Rivertown ran more advertising campaigns last year than in previous years"
+        },
+        "correct": "B",
+        "explanation": "The puzzle is why umbrella sales rose sharply despite unusually low rainfall. Option (B) identifies a rainfall-independent source of new demand: a doubling in the number of food vendors required by ordinance to use umbrellas for sun protection, which plausibly accounts for a large jump in sales unrelated to rain. Option (A) is far too small an effect (5 percent population growth) to explain a 40 percent sales increase. Option (C) concerns a different city and does not explain Rivertown's sales. Option (D) could contribute modestly but does not explain why demand specifically rose despite less rain as directly as option (B) does."
+      },
+      {
+        "q": 16,
+        "topic": "Identify assumptions",
+        "question": "Every winner of the city's annual painting competition over the past decade has used oil paints rather than acrylics. Therefore, artists who want to win the competition should switch to oil paints. Which of the following identifies a flaw in this reasoning?",
+        "options": {
+          "A": "It fails to consider that oil paints are more expensive than acrylics",
+          "B": "It assumes that all past winners used the same brand of oil paint",
+          "C": "It presumes that the competition will continue to be held annually",
+          "D": "It takes a pattern observed among past winners as evidence of a causal relationship between medium choice and winning, without ruling out other explanations for their success"
+        },
+        "correct": "D",
+        "explanation": "The argument moves from a correlation (winners used oil paints) to a causal recommendation (switch to oil paints to win), without considering that the winners' skill, technique, or subject matter, rather than the choice of medium, might explain their success. This is the flaw described in option (D). Option (A) raises a cost consideration irrelevant to the logical flaw. Option (B) introduces an assumption about brand that the argument never relies on. Option (C) is not a flaw in the causal reasoning being critiqued."
+      },
+      {
+        "q": 17,
+        "topic": "Strengthen an argument",
+        "question": "A researcher claims that the decline in a species of songbird in Forest Reserve X over the past twenty years is primarily due to habitat loss from logging, rather than to increased predation by a recently introduced predator species. Which of the following, if true, would most strengthen this claim?",
+        "options": {
+          "A": "Songbird populations declined at a similar rate in a nearby, ecologically similar reserve where logging occurred but the predator species was never introduced",
+          "B": "The introduced predator species is known to prey on several other bird species in the region",
+          "C": "Logging in Forest Reserve X has decreased over the past five years",
+          "D": "The songbird species nests primarily in tree cavities found in mature trees"
+        },
+        "correct": "A",
+        "explanation": "If a comparable decline occurred in a similar reserve that experienced logging but never had the predator introduced, this isolates logging as a sufficient cause of decline independent of predation, strengthening the researcher's claim. This matches option (A). Option (B) would instead support the alternative explanation involving predation. Option (C) does not address the historical cause of the decline over the past twenty years. Option (D) provides background on nesting habits but does not directly compare the effects of logging and predation."
+      },
+      {
+        "q": 18,
+        "topic": "Inference",
+        "question": "All employees who complete the advanced certification receive a salary increase. No employee in the marketing department has received a salary increase this year. Some employees in the marketing department attempted the advanced certification exam this year. Which of the following must be true?",
+        "options": {
+          "A": "All employees who attempted the certification exam this year passed it",
+          "B": "No employee in the company received a salary increase this year",
+          "C": "None of the marketing department employees who attempted the certification exam this year passed it",
+          "D": "The marketing department has more employees than any other department"
+        },
+        "correct": "C",
+        "explanation": "Since completing the certification guarantees a salary increase, and no marketing department employee received a salary increase this year, it must be true that no marketing department employee who attempted the exam this year actually passed and completed it; otherwise, that employee would have received a raise, contradicting the given information. This makes option (C) the only statement that must be true. Option (A) is not supported and is inconsistent with (C). Option (B) overgeneralizes beyond the marketing department. Option (D) introduces information not given in the passage."
+      },
+      {
+        "q": 19,
+        "topic": "Inference",
+        "question": "A software company plans to reduce its customer support staff by half, reasoning that a new AI chatbot can resolve the majority of customer inquiries without human involvement, thereby maintaining service quality while cutting costs. Which of the following would be most useful to know in order to evaluate this plan?",
+        "options": {
+          "A": "How much did the company spend developing the chatbot?",
+          "B": "What proportion of current customer inquiries are complex enough that the chatbot would be unlikely to resolve them satisfactorily?",
+          "C": "Which competitor companies have already implemented similar chatbots?",
+          "D": "How long has the company been in the customer support business?"
+        },
+        "correct": "B",
+        "explanation": "The plan's success depends on whether the chatbot can maintain service quality after the staff reduction. Knowing what proportion of inquiries are too complex for the chatbot to handle well, as in option (B), directly bears on whether cutting staff in half would leave enough human capacity to handle the inquiries the chatbot cannot resolve, and thus whether service quality would truly be maintained. Option (A) concerns sunk development cost, not future service quality. Option (C) is about competitors, not this company's own service outcomes. Option (D) is not relevant to evaluating the plan's likely effect on service quality."
+      },
+      {
+        "q": 20,
+        "topic": "Inference",
+        "question": "Some critics argue that requiring students to wear uniforms reduces bullying by eliminating clothing-based social distinctions. However, schools that adopted uniform policies report bullying rates similar to those at schools without such policies, suggesting that clothing is not a major driver of bullying in the first place. The argument proceeds by",
+        "options": {
+          "A": "providing an example that supports the critics' claim",
+          "B": "appealing to the authority of school administrators",
+          "C": "redefining the term 'bullying' to exclude clothing-related incidents",
+          "D": "citing comparative data to challenge the causal claim made by the critics"
+        },
+        "correct": "D",
+        "explanation": "The argument responds to the critics' causal claim about uniforms and bullying by citing comparative bullying rates between schools with and without uniform policies, using this data to challenge the claim that clothing-based distinctions are a major driver of bullying. This matches option (D). Option (A) is the opposite of what the argument does, since the data challenges rather than supports the critics. Option (B) is not used, as no appeal to authority appears. Option (C) is not used either, since the term 'bullying' is not redefined."
+      },
+      {
+        "q": 21,
+        "topic": "Weaken an argument",
+        "question": "A pharmaceutical company's new drug for lowering blood pressure showed, in clinical trials, greater effectiveness than the leading existing drug. The company concludes that its new drug should replace the existing drug as the standard treatment recommended to patients. Which of the following, if true, would most weaken the company's conclusion?",
+        "options": {
+          "A": "The clinical trials measuring the new drug's effectiveness did not track long-term side effects, and post-trial reports indicate a higher rate of serious side effects among patients taking the new drug",
+          "B": "The new drug is patented, while the existing drug is available in generic form",
+          "C": "The new drug was tested in more clinical trial sites than the existing drug originally was",
+          "D": "Some patients found the new drug's dosing schedule more convenient than that of the existing drug"
+        },
+        "correct": "A",
+        "explanation": "The company's conclusion assumes that greater effectiveness alone justifies replacing the standard treatment. Evidence that the new drug carries a higher rate of serious side effects not captured in the original trials, as in option (A), introduces a significant safety concern that undermines the recommendation to make it the standard treatment. Option (B) concerns cost and availability, not the appropriateness of recommending the drug. Option (C) actually supports the reliability of the new drug's trial results rather than weakening the conclusion. Option (D) concerns convenience, a minor factor that does not offset the conclusion's basis in effectiveness."
+      },
+      {
+        "q": 22,
+        "topic": "Identify assumptions",
+        "question": "A city plans to reduce traffic congestion downtown by building a new light-rail line, arguing that commuters who currently drive will switch to the train once it becomes available. Which of the following is an assumption underlying this plan?",
+        "options": {
+          "A": "The light-rail line will be completed on schedule",
+          "B": "Ticket prices for the light-rail line will be lower than current parking fees downtown",
+          "C": "A sufficient number of current downtown drivers will find the light-rail line more convenient or appealing than driving, once it is available",
+          "D": "No new residents will move downtown after the light-rail line opens"
+        },
+        "correct": "C",
+        "explanation": "For the plan to succeed in reducing congestion, enough current drivers must actually be willing to switch from driving to taking the train, which requires that they find the light-rail line sufficiently convenient or appealing compared with driving. This is the assumption in option (C). Option (A) concerns the construction timeline, not whether commuters will switch once it opens. Option (B) specifies a particular reason for switching that is not required by the argument, which only needs commuters to switch for any reason. Option (D) is not necessary for the plan to succeed, since the argument concerns existing drivers switching, not the absence of new residents."
+      },
+      {
+        "q": 23,
+        "topic": "Inference",
+        "question": "If a company's quarterly earnings exceed analyst expectations, its stock price typically rises the following day. TechCorp's most recent quarterly earnings exceeded analyst expectations. Which of the following conclusions is most strongly supported by the statements above?",
+        "options": {
+          "A": "TechCorp's stock price will exceed all previous highs",
+          "B": "TechCorp's stock price is likely to have risen on the day following the earnings report",
+          "C": "Analysts underestimated TechCorp's true earnings potential",
+          "D": "TechCorp's earnings will continue to exceed expectations in future quarters"
+        },
+        "correct": "B",
+        "explanation": "Given the general pattern that stock prices typically rise the day after earnings exceed expectations, and that TechCorp's earnings did exceed expectations, the most directly supported conclusion is that TechCorp's stock price likely rose the following day, as in option (B). Option (A) makes an unsupported claim about all-time highs. Option (C) draws an unsupported inference about analysts' broader estimation accuracy. Option (D) makes an unsupported prediction about future quarters, which the statements do not address."
+      }
+    ],
+    "Data Insights": [
+      {
+        "q": 1,
+        "topic": "Data Sufficiency",
+        "question": "A company's total revenue for the year equaled the sum of revenue from Product A and revenue from Product B. What was the company's total revenue for the year?\n\n(1) Revenue from Product A was 2.4 million dollars more than revenue from Product B.\n(2) Revenue from Product B was 60 percent of revenue from Product A.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "C",
+        "explanation": "Let A and B represent the revenues from Product A and Product B. Statement 1 gives A = B + 2.4 million, a single equation with two unknowns, so the total A + B cannot be determined alone; for example, B could be 1 million or 5 million, giving different totals. Statement 2 gives B = 0.6A, which alone also has two unknowns and no fixed total, since A could take any value. Combining both statements: A = B + 2.4 and B = 0.6A, substituting gives A = 0.6A + 2.4, so 0.4A = 2.4, A = 6 million, and B = 3.6 million, so the total is 9.6 million, a unique value. Both statements together are sufficient, but neither alone is sufficient, which corresponds to answer choice (C).",
+        "type": "data_sufficiency"
+      },
+      {
+        "q": 2,
+        "topic": "Data Sufficiency",
+        "question": "A jar contains only red and blue marbles. What is the probability that a marble selected at random from the jar is red?\n\n(1) The jar contains 15 red marbles and 25 marbles in total.\n(2) The number of blue marbles is 10 more than the number of red marbles.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "A",
+        "explanation": "Statement 1 alone gives the exact count of red marbles and the total count, so the probability is 15/25 = 0.6, a fixed value, making statement 1 sufficient alone. Statement 2 alone establishes only a relationship, blue = red + 10, without fixing the actual number of red marbles; for example, if red = 5, blue = 15, and the probability is 5/20 = 0.25, while if red = 15, blue = 25, and the probability is 15/40 = 0.375, so the probability is not fixed and statement 2 alone is not sufficient. Since statement 1 alone is sufficient but statement 2 alone is not, the correct answer is choice (A).",
+        "type": "data_sufficiency"
+      },
+      {
+        "q": 3,
+        "topic": "Data Sufficiency",
+        "question": "A survey asked participants to rate a new product on a scale from 1 to 5. What was the average (arithmetic mean) rating given by the participants who rated the product?\n\n(1) 40 percent of the participants gave the product a rating of 4 or 5.\n(2) The most frequently given rating was 3.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "E",
+        "explanation": "Statement 1 alone specifies only the proportion of participants who rated the product 4 or 5, without specifying how the remaining 60 percent of ratings were distributed among 1, 2, and 3, so the exact mean cannot be calculated. Statement 2 alone specifies only which rating occurred most often, which constrains the distribution's mode but not its mean, since many different rating distributions could share the same mode. Combining both statements still leaves the exact distribution of ratings unknown; many different sets of ratings could satisfy both conditions while producing different means. Because the statements together remain insufficient to pin down a single value for the mean, the correct answer is choice (E).",
+        "type": "data_sufficiency"
+      },
+      {
+        "q": 4,
+        "topic": "Data Sufficiency",
+        "question": "A rectangular garden has a length that is twice its width. What is the area of the garden, in square meters?\n\n(1) The perimeter of the garden is 60 meters.\n(2) The diagonal of the garden is 10 times the square root of 5 meters.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "D",
+        "explanation": "Let the width be w and the length be 2w. Statement 1 alone gives the perimeter as 2(2w + w) = 6w = 60, so w = 10 and length = 20, giving an area of 200 square meters, a unique value, so statement 1 alone is sufficient. Statement 2 alone gives the diagonal, so by the Pythagorean theorem, (2w)^2 + w^2 = 5w^2 equals the diagonal squared, which is (10 times the square root of 5)^2 = 500, so w^2 = 100 and w = 10, again yielding length = 20 and area = 200 square meters, so statement 2 alone is also sufficient. Since each statement alone is sufficient to determine a unique area, the correct answer is choice (D).",
+        "type": "data_sufficiency"
+      },
+      {
+        "q": 5,
+        "topic": "Data Sufficiency",
+        "question": "Is the integer n divisible by 6?\n\n(1) n is divisible by 3.\n(2) n is divisible by 12.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "B",
+        "explanation": "Statement 1 alone establishes that n is divisible by 3, but divisibility by 3 does not guarantee divisibility by 6, since n must also be even; for example, n = 9 is divisible by 3 but not by 6, while n = 6 is divisible by both, so statement 1 alone is not sufficient. Statement 2 alone establishes that n is divisible by 12, and since 12 is itself a multiple of 6 (12 = 6 times 2), any integer divisible by 12 must also be divisible by 6, so statement 2 alone is sufficient to answer the question with a definite yes. Since statement 2 alone is sufficient but statement 1 alone is not, the correct answer is choice (B).",
+        "type": "data_sufficiency"
+      },
+      {
+        "q": 6,
+        "topic": "Data Sufficiency",
+        "question": "A store sold only pens and pencils last month, and each pen sold for the same price while each pencil sold for the same price. How many pens did the store sell last month?\n\n(1) The store sold a total of 500 pens and pencils combined last month.\n(2) The store's total revenue from pens and pencils last month was 650 dollars, with pens priced at 2 dollars each and pencils priced at 1 dollar each.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "C",
+        "explanation": "Let P be the number of pens sold and Q be the number of pencils sold. Statement 1 alone gives P + Q = 500, a single equation with two unknowns, so P cannot be uniquely determined. Statement 2 alone gives 2P + Q = 650, again a single equation with two unknowns, so P alone cannot be determined either. Combining both statements gives a system of two equations: P + Q = 500 and 2P + Q = 650; subtracting the first from the second gives P = 150, a unique value. Both statements together are sufficient, but neither alone is sufficient, so the correct answer is choice (C).",
+        "type": "data_sufficiency"
+      },
+      {
+        "q": 7,
+        "topic": "Table Analysis",
+        "question": "Which model generated the highest total revenue (units sold multiplied by average price) last quarter?",
+        "options": {
+          "A": "Model P",
+          "B": "Model T",
+          "C": "Model Q",
+          "D": "Model S"
+        },
+        "correct": "B",
+        "explanation": "Calculating total revenue for each model: Model P = 12,000 times 450 = 5,400,000 dollars; Model Q = 18,500 times 320 = 5,920,000 dollars; Model R = 9,200 times 610 = 5,612,000 dollars; Model S = 21,000 times 275 = 5,775,000 dollars; Model T = 15,800 times 390 = 6,162,000 dollars. Model T has the highest total revenue at 6,162,000 dollars, so the correct answer is (B).",
+        "type": "table_analysis"
+      },
+      {
+        "q": 8,
+        "topic": "Table Analysis",
+        "question": "Which model had the second-lowest average price per unit among the five models?",
+        "options": {
+          "A": "Model S",
+          "B": "Model P",
+          "C": "Model R",
+          "D": "Model Q"
+        },
+        "correct": "D",
+        "explanation": "Ranking the average prices from lowest to highest: Model S at 275 dollars, Model Q at 320 dollars, Model T at 390 dollars, Model P at 450 dollars, and Model R at 610 dollars. The lowest average price belongs to Model S, and the second-lowest belongs to Model Q, so the correct answer is (D).",
+        "type": "table_analysis"
+      },
+      {
+        "q": 9,
+        "topic": "Table Analysis",
+        "question": "Which two models, when their unit sales are combined, come closest to a total of 30,000 units without exceeding 30,000 units?",
+        "options": {
+          "A": "Model P and Model T",
+          "B": "Model Q and Model R",
+          "C": "Model R and Model T",
+          "D": "Model P and Model R"
+        },
+        "correct": "A",
+        "explanation": "Combining unit sales for each pair: Model P and Model T give 12,000 + 15,800 = 27,800 units; Model Q and Model R give 18,500 + 9,200 = 27,700 units; Model R and Model T give 9,200 + 15,800 = 25,000 units; Model P and Model R give 12,000 + 9,200 = 21,200 units. Among the pairs that do not exceed 30,000, the combination of Model P and Model T, at 27,800 units, is the closest to 30,000, so the correct answer is (A).",
+        "type": "table_analysis"
+      },
+      {
+        "q": 10,
+        "topic": "Table Analysis",
+        "question": "Which model's total revenue last quarter was closest to 5,700,000 dollars?",
+        "options": {
+          "A": "Model P",
+          "B": "Model R",
+          "C": "Model S",
+          "D": "Model Q"
+        },
+        "correct": "C",
+        "explanation": "Using the total revenue figures calculated from units sold multiplied by average price, Model P's revenue of 5,400,000 dollars differs from 5,700,000 by 300,000; Model R's revenue of 5,612,000 dollars differs by 88,000; Model S's revenue of 5,775,000 dollars differs by 75,000; and Model Q's revenue of 5,920,000 dollars differs by 220,000. Model S has the smallest difference from 5,700,000 dollars, so the correct answer is (C).",
+        "type": "table_analysis"
+      },
+      {
+        "q": 11,
+        "topic": "Graphics Interpretation",
+        "question": "Between which two consecutive months did active users increase by the greatest amount?",
+        "options": {
+          "A": "January to February",
+          "B": "February to March",
+          "C": "May to June",
+          "D": "April to May"
+        },
+        "correct": "C",
+        "explanation": "Calculating the change between each pair of consecutive months: January to February increased by 25 thousand; February to March increased by 45 thousand; March to April decreased by 12 thousand; April to May increased by 42 thousand; and May to June increased by 65 thousand. The largest increase, 65 thousand users, occurred from May to June, so the correct answer is (C).",
+        "type": "graphics_interpretation"
+      },
+      {
+        "q": 12,
+        "topic": "Graphics Interpretation",
+        "question": "In which month did the number of active users decrease compared with the previous month?",
+        "options": {
+          "A": "April",
+          "B": "February",
+          "C": "May",
+          "D": "June"
+        },
+        "correct": "A",
+        "explanation": "Comparing each month with the one before it, active users rose every month except April, when the count fell from 310 thousand in March to 298 thousand, a decrease of 12 thousand. Every other month listed showed an increase over the prior month, so the correct answer is (A).",
+        "type": "graphics_interpretation"
+      },
+      {
+        "q": 13,
+        "topic": "Graphics Interpretation",
+        "question": "What was the approximate percentage increase in active users from January to June?",
+        "options": {
+          "A": "45 percent",
+          "B": "55 percent",
+          "C": "60 percent",
+          "D": "69 percent"
+        },
+        "correct": "D",
+        "explanation": "The increase from January to June is 405 thousand minus 240 thousand, which equals 165 thousand. The percentage increase is 165 divided by 240, which equals approximately 0.6875, or about 69 percent. This is closest to option (D); none of the other listed percentages are close to the actual calculated value.",
+        "type": "graphics_interpretation"
+      },
+      {
+        "q": 14,
+        "topic": "Graphics Interpretation",
+        "question": "What was the average (arithmetic mean) number of active users, in thousands, over the six months?",
+        "options": {
+          "A": "298 thousand",
+          "B": "309.7 thousand (approximately)",
+          "C": "340 thousand",
+          "D": "265 thousand"
+        },
+        "correct": "B",
+        "explanation": "Summing the six monthly figures: 240 + 265 + 310 + 298 + 340 + 405 = 1,858 thousand. Dividing by six months gives an average of approximately 309.7 thousand active users, matching option (B). The other options each correspond to a single month's figure rather than the six-month average.",
+        "type": "graphics_interpretation"
+      },
+      {
+        "q": 15,
+        "topic": "Multi-Source Reasoning",
+        "question": "Based on Source 1, approximately how much would the company save per day in reshipment costs if the defect rate were reduced from 2 percent to 0.5 percent, assuming order volume remains at 1,200 orders per day?",
+        "options": {
+          "A": "108 dollars",
+          "B": "432 dollars",
+          "C": "324 dollars",
+          "D": "216 dollars"
+        },
+        "correct": "C",
+        "explanation": "At a 2 percent defect rate, the number of defective orders per day is 1,200 times 0.02 = 24 orders, costing 24 times 18 = 432 dollars per day in reshipment expenses. At a 0.5 percent defect rate, the number of defective orders per day is 1,200 times 0.005 = 6 orders, costing 6 times 18 = 108 dollars per day. The daily savings is 432 minus 108, which equals 324 dollars, matching option (C).",
+        "type": "multi_source_reasoning"
+      },
+      {
+        "q": 16,
+        "topic": "Multi-Source Reasoning",
+        "question": "Based on both sources, is the 45,000 dollar cost of the automated sorting system within the finance department's approved budget for warehouse process improvements?",
+        "options": {
+          "A": "Yes, because the approved budget of 50,000 dollars exceeds the system's 45,000 dollar cost, and none of the budget has yet been spent",
+          "B": "No, because the system's cost exceeds the approved budget",
+          "C": "It cannot be determined without knowing the reshipment savings",
+          "D": "No, because the budget has already been partially spent on other improvements"
+        },
+        "correct": "A",
+        "explanation": "Source 2 states that the approved budget for warehouse process improvements is 50,000 dollars and that none of it has yet been spent. Source 1 states that the sorting system would cost 45,000 dollars, which is less than the full 50,000 dollar budget. Since the entire budget remains available and the system's cost does not exceed it, the system's cost is within budget, matching option (A). Options (B) and (D) contradict the information given, and option (C) is incorrect since the budget comparison does not require knowing the reshipment savings.",
+        "type": "multi_source_reasoning"
+      },
+      {
+        "q": 17,
+        "topic": "Multi-Source Reasoning",
+        "question": "According to Source 2, approximately how much net profit would the warehouse lose during the one-month installation period as a result of operating at 90 percent of its current daily order volume, if the current daily volume is 1,200 orders and the month is treated as 30 days?",
+        "options": {
+          "A": "6,480 dollars",
+          "B": "10,800 dollars",
+          "C": "18,000 dollars",
+          "D": "21,600 dollars"
+        },
+        "correct": "D",
+        "explanation": "At 90 percent of the current daily volume of 1,200 orders, the warehouse would process 1,080 orders per day during installation, a reduction of 120 orders per day. Over 30 days, this amounts to 120 times 30 = 3,600 fewer orders processed. Since Source 2 states that each order processed generates 6 dollars in net profit, and reduced volume directly reduces profit for that month, the lost profit is 3,600 times 6, which equals 21,600 dollars, matching option (D).",
+        "type": "multi_source_reasoning"
+      },
+      {
+        "q": 18,
+        "topic": "Two-Part Analysis",
+        "question": "A company's total marketing budget for the year is 500,000 dollars, split entirely between digital advertising and print advertising. The amount spent on digital advertising must be at least 50,000 dollars more than twice the amount spent on print advertising. Select all of the following amounts that could be the amount spent on print advertising.",
+        "options": {
+          "A": "100,000 dollars",
+          "B": "225,000 dollars",
+          "C": "150,000 dollars",
+          "D": "175,000 dollars"
+        },
+        "correct": "A",
+        "explanation": "Let P be the amount spent on print advertising and D = 500,000 minus P be the amount spent on digital advertising; the condition requires D to be at least 2P + 50,000. For P = 100,000 dollars: D = 400,000, and 2(100,000) + 50,000 = 250,000, and since 400,000 is at least 250,000, this value is valid. For P = 150,000 dollars: D = 350,000, and 2(150,000) + 50,000 = 350,000, and since 350,000 is at least 350,000, this value is valid. For P = 175,000 dollars: D = 325,000, and 2(175,000) + 50,000 = 400,000, and since 325,000 is less than 400,000, this value is not valid. For P = 225,000 dollars: D = 275,000, and 2(225,000) + 50,000 = 500,000, and since 275,000 is less than 500,000, this value is not valid. Therefore, the correct selections are (A) and (C).",
+        "type": "two_part_analysis"
+      },
+      {
+        "q": 19,
+        "topic": "Two-Part Analysis",
+        "question": "A company plans to hire a number of new employees such that the number is a multiple of 6, is greater than 20, and is less than 50. Select all of the following values that could be the number of new employees the company hires.",
+        "options": {
+          "A": "18",
+          "B": "24",
+          "C": "35",
+          "D": "42"
+        },
+        "correct": "B",
+        "explanation": "The number of new employees must satisfy three conditions simultaneously: it must be a multiple of 6, greater than 20, and less than 50. The multiples of 6 in that range are 24, 30, 36, 42, and 48. Checking the options: 18 is a multiple of 6 but is not greater than 20, so it is not valid; 24 is a multiple of 6 and satisfies 20 less than 24 less than 50, so it is valid; 35 is not a multiple of 6, so it is not valid; 42 is a multiple of 6 and satisfies 20 less than 42 less than 50, so it is valid. Therefore, the correct selections are (B) and (D).",
+        "type": "two_part_analysis"
+      },
+      {
+        "q": 20,
+        "topic": "Two-Part Analysis",
+        "question": "A rectangular banner has a perimeter of 40 feet. The length must be at least twice the width, and both dimensions must be whole numbers of feet. Select all of the following length-and-width pairs that satisfy both conditions.",
+        "options": {
+          "A": "Length = 14 feet, width = 6 feet",
+          "B": "Length = 12 feet, width = 8 feet",
+          "C": "Length = 11 feet, width = 9 feet",
+          "D": "Length = 15 feet, width = 5 feet"
+        },
+        "correct": "A",
+        "explanation": "Since the perimeter is 40 feet, the length and width must satisfy length + width = 20, and the length must also be at least twice the width. For length = 14 and width = 6: the sum is 20, and 14 is at least 2 times 6 = 12, so this pair is valid. For length = 12 and width = 8: the sum is 20, but 12 is not at least 2 times 8 = 16, so this pair is not valid. For length = 11 and width = 9: the sum is 20, but 11 is not at least 2 times 9 = 18, so this pair is not valid. For length = 15 and width = 5: the sum is 20, and 15 is at least 2 times 5 = 10, so this pair is valid. Therefore, the correct selections are (A) and (D).",
+        "type": "two_part_analysis"
+      }
+    ]
+  }
+}

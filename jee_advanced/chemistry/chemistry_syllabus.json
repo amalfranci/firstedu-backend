@@ -1,0 +1,360 @@
+{
+  "subject": "Chemistry",
+  "exam": "JEE Advanced 2026",
+  "source_note": "Extracted from official JEE Advanced 2026 syllabus PDF (same as 2025): https://jeeadv.ac.in/documents/jee-advanced-2026-syllabus.pdf",
+  "topics": [
+    {
+      "topic_id": "C01",
+      "chapter": "General Topics",
+      "class_level": "11",
+      "branch": "Physical Chemistry",
+      "subtopics": [
+        "Concept of atoms and molecules; Dalton's atomic theory",
+        "Mole concept; chemical formulae; balanced chemical equations",
+        "Stoichiometric calculations based on chemical equations"
+      ]
+    },
+    {
+      "topic_id": "C02",
+      "chapter": "States of Matter: Gases and Liquids",
+      "class_level": "11",
+      "branch": "Physical Chemistry",
+      "subtopics": [
+        "Gas laws, ideal gas equation, kinetic theory of gases",
+        "Deviation from ideality, van der Waals equation",
+        "Critical temperature, Boyle temperature, liquefaction",
+        "Graham's law of effusion and diffusion"
+      ]
+    },
+    {
+      "topic_id": "C03",
+      "chapter": "Atomic Structure",
+      "class_level": "11",
+      "branch": "Physical Chemistry",
+      "subtopics": [
+        "Bohr model of hydrogen-like atoms",
+        "Quantum numbers, orbitals, Aufbau, Pauli, Hund",
+        "Hydrogen-like spectra and comparison of He+, Li2+"
+      ]
+    },
+    {
+      "topic_id": "C04",
+      "chapter": "Chemical Bonding and Molecular Structure",
+      "class_level": "11",
+      "branch": "Physical Chemistry",
+      "subtopics": [
+        "Ionic and covalent bonding, VSEPR, hybridisation",
+        "Molecular orbital theory, bond order, magnetic behaviour",
+        "Molecular geometry and planarity"
+      ]
+    },
+    {
+      "topic_id": "C05",
+      "chapter": "Chemical Thermodynamics",
+      "class_level": "11",
+      "branch": "Physical Chemistry",
+      "subtopics": [
+        "First law: work, heat, internal energy, enthalpy",
+        "Second law: entropy, Gibbs energy, spontaneity",
+        "Reversible cycles and state functions"
+      ]
+    },
+    {
+      "topic_id": "C06",
+      "chapter": "Chemical and Ionic Equilibrium",
+      "class_level": "11",
+      "branch": "Physical Chemistry",
+      "subtopics": [
+        "Law of mass action, Kc, Kp, Le Chatelier's principle",
+        "Ionic equilibrium: Ka, Kb, pH, buffer solutions",
+        "Solubility product and common-ion effect"
+      ]
+    },
+    {
+      "topic_id": "C07",
+      "chapter": "Electrochemistry",
+      "class_level": "12",
+      "branch": "Physical Chemistry",
+      "subtopics": [
+        "Galvanic and electrolytic cells, Nernst equation",
+        "Standard electrode potentials, Kc from E°cell",
+        "Conductance, molar conductivity, Kohlrausch's law",
+        "Electrolysis and Faraday's laws"
+      ]
+    },
+    {
+      "topic_id": "C08",
+      "chapter": "Chemical Kinetics",
+      "class_level": "12",
+      "branch": "Physical Chemistry",
+      "subtopics": [
+        "Rate law, order, molecularity, half-life",
+        "First-order and parallel reactions",
+        "Arrhenius equation and activation energy"
+      ]
+    },
+    {
+      "topic_id": "C09",
+      "chapter": "Solid State",
+      "class_level": "12",
+      "branch": "Physical Chemistry",
+      "subtopics": [
+        "Unit cells: sc, bcc, fcc; packing and density",
+        "Point defects including Schottky and Frenkel"
+      ]
+    },
+    {
+      "topic_id": "C10",
+      "chapter": "Solutions",
+      "class_level": "12",
+      "branch": "Physical Chemistry",
+      "subtopics": [
+        "Raoult's law and deviations from ideality",
+        "Colligative properties and van't Hoff factor"
+      ]
+    },
+    {
+      "topic_id": "C11",
+      "chapter": "Surface Chemistry",
+      "class_level": "12",
+      "branch": "Physical Chemistry",
+      "subtopics": [
+        "Adsorption: physisorption and chemisorption",
+        "Langmuir adsorption isotherm"
+      ]
+    },
+    {
+      "topic_id": "C12",
+      "chapter": "Classification of Elements and Periodicity in Properties",
+      "class_level": "11",
+      "branch": "Inorganic Chemistry",
+      "subtopics": [
+        "Modern periodic table and electronic configurations",
+        "Periodic trends: radius, ionisation enthalpy, electronegativity"
+      ]
+    },
+    {
+      "topic_id": "C13",
+      "chapter": "Hydrogen",
+      "class_level": "11",
+      "branch": "Inorganic Chemistry",
+      "subtopics": [
+        "Position of hydrogen, isotopes, hydrides"
+      ]
+    },
+    {
+      "topic_id": "C14",
+      "chapter": "s-Block Elements",
+      "class_level": "11",
+      "branch": "Inorganic Chemistry",
+      "subtopics": [
+        "Group 1 and Group 2 elements: properties and compounds"
+      ]
+    },
+    {
+      "topic_id": "C15",
+      "chapter": "p-Block Elements",
+      "class_level": "11-12",
+      "branch": "Inorganic Chemistry",
+      "subtopics": [
+        "Groups 13 to 18: oxides, hydrides, oxoacids, interhalogens",
+        "Boron compounds including diborane and borazine"
+      ]
+    },
+    {
+      "topic_id": "C16",
+      "chapter": "d-Block Elements",
+      "class_level": "12",
+      "branch": "Inorganic Chemistry",
+      "subtopics": [
+        "Transition elements: variable oxidation states, catalytic behaviour"
+      ]
+    },
+    {
+      "topic_id": "C17",
+      "chapter": "f-Block Elements",
+      "class_level": "12",
+      "branch": "Inorganic Chemistry",
+      "subtopics": [
+        "Lanthanoids and actinoids: oxidation states and contraction"
+      ]
+    },
+    {
+      "topic_id": "C18",
+      "chapter": "Coordination Compounds",
+      "class_level": "12",
+      "branch": "Inorganic Chemistry",
+      "subtopics": [
+        "Werner's theory, IUPAC names, isomerism, optical activity",
+        "VBT and CFT, CFSE, magnetic moment"
+      ]
+    },
+    {
+      "topic_id": "C19",
+      "chapter": "Isolation of Metals",
+      "class_level": "12",
+      "branch": "Inorganic Chemistry",
+      "subtopics": [
+        "Principles of extraction: leaching, cyanide process, Hall–Héroult"
+      ]
+    },
+    {
+      "topic_id": "C20",
+      "chapter": "Principles of Qualitative Analysis",
+      "class_level": "12",
+      "branch": "Inorganic Chemistry",
+      "subtopics": [
+        "Detection of common cations and anions",
+        "Characteristic tests used in inorganic and organic analysis"
+      ]
+    },
+    {
+      "topic_id": "C21",
+      "chapter": "Basic Principles of Organic Chemistry",
+      "class_level": "11",
+      "branch": "Organic Chemistry",
+      "subtopics": [
+        "Hybridisation, inductive/resonance/hyperconjugation effects",
+        "Isomerism including optical and geometrical isomerism",
+        "Reactive intermediates: carbocations, carbanions, free radicals"
+      ]
+    },
+    {
+      "topic_id": "C22",
+      "chapter": "Alkanes",
+      "class_level": "11",
+      "branch": "Organic Chemistry",
+      "subtopics": [
+        "Preparation, properties and reactions of alkanes",
+        "Physical properties of isomeric alkanes"
+      ]
+    },
+    {
+      "topic_id": "C23",
+      "chapter": "Alkenes and Alkynes",
+      "class_level": "11",
+      "branch": "Organic Chemistry",
+      "subtopics": [
+        "Preparation, addition reactions, ozonolysis",
+        "Hydration of alkynes and tautomerism"
+      ]
+    },
+    {
+      "topic_id": "C24",
+      "chapter": "Benzene",
+      "class_level": "11",
+      "branch": "Organic Chemistry",
+      "subtopics": [
+        "Aromaticity and electrophilic aromatic substitution"
+      ]
+    },
+    {
+      "topic_id": "C25",
+      "chapter": "Phenols",
+      "class_level": "12",
+      "branch": "Organic Chemistry",
+      "subtopics": [
+        "Preparation, acidity and characteristic reactions of phenols"
+      ]
+    },
+    {
+      "topic_id": "C26",
+      "chapter": "Alkyl Halides",
+      "class_level": "12",
+      "branch": "Organic Chemistry",
+      "subtopics": [
+        "SN1, SN2 and elimination reactions of alkyl halides"
+      ]
+    },
+    {
+      "topic_id": "C27",
+      "chapter": "Alcohols",
+      "class_level": "12",
+      "branch": "Organic Chemistry",
+      "subtopics": [
+        "Preparation, properties and reactions of alcohols"
+      ]
+    },
+    {
+      "topic_id": "C28",
+      "chapter": "Ethers",
+      "class_level": "12",
+      "branch": "Organic Chemistry",
+      "subtopics": [
+        "Preparation and reactions of ethers"
+      ]
+    },
+    {
+      "topic_id": "C29",
+      "chapter": "Aldehydes and Ketones",
+      "class_level": "12",
+      "branch": "Organic Chemistry",
+      "subtopics": [
+        "Nucleophilic addition, aldol, Cannizzaro, iodoform, Tollens/Fehling"
+      ]
+    },
+    {
+      "topic_id": "C30",
+      "chapter": "Carboxylic Acids",
+      "class_level": "12",
+      "branch": "Organic Chemistry",
+      "subtopics": [
+        "Preparation, acidity and reactions of carboxylic acids"
+      ]
+    },
+    {
+      "topic_id": "C31",
+      "chapter": "Amines",
+      "class_level": "12",
+      "branch": "Organic Chemistry",
+      "subtopics": [
+        "Basicity of amines, electrophilic substitution of aniline"
+      ]
+    },
+    {
+      "topic_id": "C32",
+      "chapter": "Haloarenes",
+      "class_level": "12",
+      "branch": "Organic Chemistry",
+      "subtopics": [
+        "Nucleophilic aromatic substitution of haloarenes"
+      ]
+    },
+    {
+      "topic_id": "C33",
+      "chapter": "Biomolecules",
+      "class_level": "12",
+      "branch": "Organic Chemistry",
+      "subtopics": [
+        "Carbohydrates, amino acids, peptides and nucleic acids"
+      ]
+    },
+    {
+      "topic_id": "C34",
+      "chapter": "Polymers",
+      "class_level": "12",
+      "branch": "Organic Chemistry",
+      "subtopics": [
+        "Addition and condensation polymers; important commercial polymers"
+      ]
+    },
+    {
+      "topic_id": "C35",
+      "chapter": "Chemistry in Everyday Life",
+      "class_level": "12",
+      "branch": "Organic Chemistry",
+      "subtopics": [
+        "Drugs, detergents and important everyday chemicals"
+      ]
+    },
+    {
+      "topic_id": "C36",
+      "chapter": "Practical Organic Chemistry",
+      "class_level": "12",
+      "branch": "Organic Chemistry",
+      "subtopics": [
+        "Detection of elements and functional groups; organic analysis"
+      ]
+    }
+  ]
+}

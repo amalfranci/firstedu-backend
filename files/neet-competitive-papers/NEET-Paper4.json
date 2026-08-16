@@ -1,0 +1,2356 @@
+{
+  "paper_id": "NEET-Paper4",
+  "title": "NEET Paper 4",
+  "exam": "NEET",
+  "year": 2026,
+  "subjects": {
+    "Physics": [
+      {
+        "q": 1,
+        "topic": "Physics and Measurement",
+        "question": "Dimensional formula of magnetic flux is?",
+        "options": {
+          "A": "[M L² T⁻² A⁻²]",
+          "B": "[M L² T⁻² A⁻¹]",
+          "C": "[M L³ T⁻² A⁻¹]",
+          "D": "[M L² T⁻¹ A⁻¹]"
+        },
+        "correct": "B",
+        "explanation": "Magnetic flux is defined as the dot product of magnetic field and area. Its dimensional formula is derived from magnetic field and area, yielding [M L² T⁻² A⁻¹]."
+      },
+      {
+        "q": 2,
+        "topic": "Kinematics",
+        "question": "A body starts from rest and moves with uniform acceleration. The ratio of the distance covered in the nth second to the distance covered in n seconds is?",
+        "options": {
+          "A": "2/n² - 1/n",
+          "B": "1/n - 2/n²",
+          "C": "2/n - 1/n²",
+          "D": "2/n + 1/n²"
+        },
+        "correct": "C",
+        "explanation": "The distance covered in the nth second is a(2n-1)/2 since initial velocity is zero. The distance covered in n seconds is an²/2. Taking the ratio gives (2n-1)/n² which simplifies to 2/n - 1/n²."
+      },
+      {
+        "q": 3,
+        "topic": "Electronic Devices",
+        "question": "A block of mass M is pulled along a horizontal frictionless surface by a rope of mass m. If a force P is applied at the free end of the rope, the force exerted by the rope on the block is?",
+        "options": {
+          "A": "PM / (M + m)",
+          "B": "Pm / (M + m)",
+          "C": "P(M + m) / M",
+          "D": "P(M + m) / m"
+        },
+        "correct": "A",
+        "explanation": "The acceleration of the entire system (block + rope) is a = P / (M + m). The force exerted by the rope on the block provides this acceleration to mass M, giving F = Ma = PM / (M + m)."
+      },
+      {
+        "q": 4,
+        "topic": "Work, Energy and Power",
+        "question": "A particle of mass m is moving in a circular path of constant radius r such that its centripetal acceleration is varying with time t as k² r t², where k is a constant. The power delivered to the particle by the forces acting on it is?",
+        "options": {
+          "A": "m k² r² t²",
+          "B": "m k² r t²",
+          "C": "m k r² t",
+          "D": "m k² r² t"
+        },
+        "correct": "D",
+        "explanation": "Centripetal acceleration is v² / r = k² r t², which gives velocity v = k r t. Tangential acceleration is dv/dt = k r. The tangential force is F = m k r. Power is force times velocity: P = (m k r)(k r t) = m k² r² t."
+      },
+      {
+        "q": 5,
+        "topic": "Rotational Motion",
+        "question": "The moment of inertia of a circular disc about an axis passing through its centre and perpendicular to its plane is (1/2) M R². Its radius of gyration is?",
+        "options": {
+          "A": "R / 4",
+          "B": "R / 2",
+          "C": "R / √2",
+          "D": "R"
+        },
+        "correct": "C",
+        "explanation": "The radius of gyration K is found by equating the given moment of inertia to M K². Therefore, M K² = (1/2) M R² which yields K = R / √2."
+      },
+      {
+        "q": 6,
+        "topic": "Gravitation",
+        "question": "The escape velocity of a body of 1 kg mass on a planet is 100 m/s. Gravitational potential energy of the body at the planet's surface is?",
+        "options": {
+          "A": "-1000 J",
+          "B": "-5000 J",
+          "C": "-10000 J",
+          "D": "5000 J"
+        },
+        "correct": "B",
+        "explanation": "The escape velocity v_e = √(2GM/R) = 100 so 2GM/R = 10000 implying GM/R = 5000. Gravitational potential energy is U = -GMm/R. Substituting the values gives U = -5000 × 1 = -5000 J."
+      },
+      {
+        "q": 7,
+        "topic": "Properties of Solids and Liquids",
+        "question": "The Young's modulus of a perfectly rigid body is?",
+        "options": {
+          "A": "Zero",
+          "B": "Unity",
+          "C": "100",
+          "D": "Infinity"
+        },
+        "correct": "D",
+        "explanation": "A perfectly rigid body does not undergo any strain under the application of an external force. Because the strain is zero, the Young's modulus (Stress/Strain) mathematically approaches infinity."
+      },
+      {
+        "q": 8,
+        "topic": "Properties of Solids and Liquids",
+        "question": "The equation of continuity in fluid mechanics is based directly on the principle of conservation of?",
+        "options": {
+          "A": "Mass",
+          "B": "Momentum",
+          "C": "Energy",
+          "D": "Pressure"
+        },
+        "correct": "A",
+        "explanation": "The equation of continuity states that for an incompressible fluid flowing through a tube of varying cross-section, the mass of fluid entering per second equals the mass leaving per second, which affirms the conservation of mass."
+      },
+      {
+        "q": 9,
+        "topic": "Kinetic Theory of Gases",
+        "question": "The temperature of a gas is raised from 27 degrees Celsius to 927 degrees Celsius. The root mean square speed of its molecules?",
+        "options": {
+          "A": "Remains the same",
+          "B": "Gets halved",
+          "C": "Gets doubled",
+          "D": "Gets quadrupled"
+        },
+        "correct": "C",
+        "explanation": "The initial absolute temperature is 300 K and the final temperature is 1200 K. Since root mean square speed is directly proportional to the square root of absolute temperature, the speed changes by a factor of √(1200/300) = 2."
+      },
+      {
+        "q": 10,
+        "topic": "Thermodynamics",
+        "question": "In an adiabatic process, the thermodynamic quantity which inherently remains constant is?",
+        "options": {
+          "A": "Temperature",
+          "B": "Heat",
+          "C": "Pressure",
+          "D": "Volume"
+        },
+        "correct": "B",
+        "explanation": "An adiabatic process is strictly defined as a thermodynamic change in which there is no heat exchange between the system and its surroundings, keeping the total thermal energy (heat) constant."
+      },
+      {
+        "q": 11,
+        "topic": "Oscillations and Waves",
+        "question": "The phase difference between the velocity and acceleration of a particle executing simple harmonic motion is?",
+        "options": {
+          "A": "Zero",
+          "B": "π",
+          "C": "π / 4",
+          "D": "π / 2"
+        },
+        "correct": "D",
+        "explanation": "In simple harmonic motion, displacement follows a sine function, velocity follows a cosine function, and acceleration follows a negative sine function. The phase shift between cosine and negative sine is exactly π/2."
+      },
+      {
+        "q": 12,
+        "topic": "Kinetic Theory of Gases",
+        "question": "The speed of sound in oxygen at a certain temperature is v. The speed of sound in nitrogen at the exact same temperature is? (Assume both gases behave ideally).",
+        "options": {
+          "A": "v √(32/28)",
+          "B": "v √(28/32)",
+          "C": "v (32/28)",
+          "D": "v (28/32)"
+        },
+        "correct": "A",
+        "explanation": "The speed of sound in an ideal gas is inversely proportional to the square root of its molar mass. The molar mass of oxygen is 32 and nitrogen is 28. The required ratio v_N2 / v_O2 equals √(32/28)."
+      },
+      {
+        "q": 13,
+        "topic": "Electrostatics",
+        "question": "The electric field inside a uniformly charged thin spherical shell is?",
+        "options": {
+          "A": "Proportional to the distance from the centre",
+          "B": "Inversely proportional to the distance",
+          "C": "Zero",
+          "D": "Constant but non-zero"
+        },
+        "correct": "C",
+        "explanation": "According to Gauss's law, the net charge enclosed by any spherical Gaussian surface drawn entirely inside a charged spherical shell is zero, resulting in a zero electric field at all interior points."
+      },
+      {
+        "q": 14,
+        "topic": "Electrostatics",
+        "question": "Three capacitors, each of capacity 4 microfarads, are to be connected in such a way that the effective capacitance is 6 microfarads. This can be achieved by?",
+        "options": {
+          "A": "Connecting all of them in series",
+          "B": "Connecting two in series and one in parallel",
+          "C": "Connecting two in parallel and one in series",
+          "D": "Connecting all of them in parallel"
+        },
+        "correct": "B",
+        "explanation": "Connecting two 4 microfarad capacitors in series provides an equivalent capacitance of 2 microfarads. Connecting this 2 microfarad combination in parallel with the third 4 microfarad capacitor yields 2 + 4 = 6 microfarads."
+      },
+      {
+        "q": 15,
+        "topic": "Current Electricity",
+        "question": "Kirchhoff's first and second laws of electrical circuits are respectively fundamental consequences of the conservation of?",
+        "options": {
+          "A": "Charge and energy",
+          "B": "Energy and charge",
+          "C": "Momentum and energy",
+          "D": "Mass and charge"
+        },
+        "correct": "A",
+        "explanation": "Kirchhoff's current law (the first law) is based on the conservation of charge at a circuit junction. Kirchhoff's voltage law (the second law) is based on the conservation of energy within a closed loop."
+      },
+      {
+        "q": 16,
+        "topic": "Electromagnetic Waves",
+        "question": "An electromagnetic wave is propagating along the positive x-axis. Which of the following represents the possible directions of the electric and magnetic fields respectively?",
+        "options": {
+          "A": "x-axis and y-axis",
+          "B": "y-axis and x-axis",
+          "C": "x-axis and z-axis",
+          "D": "y-axis and z-axis"
+        },
+        "correct": "D",
+        "explanation": "In an electromagnetic wave, the electric field vector, magnetic field vector, and the direction of wave propagation are mutually perpendicular. For x-axis propagation, the fields must oscillate along the y and z axes."
+      },
+      {
+        "q": 17,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "The angle of dip measured accurately at the magnetic equator of the Earth is?",
+        "options": {
+          "A": "90 degrees",
+          "B": "45 degrees",
+          "C": "0 degrees",
+          "D": "60 degrees"
+        },
+        "correct": "C",
+        "explanation": "At the magnetic equator, the Earth's magnetic field lines are completely horizontal and run parallel to the Earth's surface. Consequently, the vertical component is zero, making the angle of dip exactly zero degrees."
+      },
+      {
+        "q": 18,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "Lenz's law in electromagnetic induction is a direct consequence of the universal law of conservation of?",
+        "options": {
+          "A": "Charge",
+          "B": "Energy",
+          "C": "Mass",
+          "D": "Momentum"
+        },
+        "correct": "B",
+        "explanation": "Lenz's law states that the direction of an induced current opposes the change in magnetic flux causing it. Overcoming this opposition requires mechanical work, which converts into electrical energy, thereby conserving total energy."
+      },
+      {
+        "q": 19,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "In a purely inductive AC circuit, the phase relationship between the alternating current and the applied voltage is that the current?",
+        "options": {
+          "A": "Lags behind voltage by π / 2",
+          "B": "Leads voltage by π / 2",
+          "C": "Is in phase with voltage",
+          "D": "Lags behind voltage by π"
+        },
+        "correct": "A",
+        "explanation": "In an AC circuit containing only a pure inductor, the induced back electromotive force continuously opposes changes in the current. This opposition causes the alternating current to lag behind the applied voltage by 90 degrees or π/2 radians."
+      },
+      {
+        "q": 20,
+        "topic": "Atoms and Nuclei",
+        "question": "Which of the following continuous regions of the electromagnetic spectrum exhibits the longest wavelength?",
+        "options": {
+          "A": "X-rays",
+          "B": "Ultraviolet rays",
+          "C": "Infrared rays",
+          "D": "Radio waves"
+        },
+        "correct": "D",
+        "explanation": "Within the electromagnetic spectrum, radio waves possess the lowest frequencies and consequently the longest wavelengths. Conversely, gamma rays and X-rays occupy the extremely short wavelength end of the spectrum."
+      },
+      {
+        "q": 21,
+        "topic": "Optics",
+        "question": "When monochromatic light travels from one transparent optical medium to another, the specific wave property which remains completely unchanged is its?",
+        "options": {
+          "A": "Velocity",
+          "B": "Wavelength",
+          "C": "Frequency",
+          "D": "Amplitude"
+        },
+        "correct": "C",
+        "explanation": "Frequency is a fundamental characteristic of the source generating the wave and remains strictly constant across different media. Velocity and wavelength alter proportionally in response to the changing optical density of the media."
+      },
+      {
+        "q": 22,
+        "topic": "Electronic Devices",
+        "question": "In Young's double slit interference experiment, if the distance between the two slits is halved and the distance between the slits and the viewing screen is doubled, the fringe width becomes?",
+        "options": {
+          "A": "4 times",
+          "B": "2 times",
+          "C": "Half",
+          "D": "One-fourth"
+        },
+        "correct": "A",
+        "explanation": "The formula for fringe width is W = λ D / d. When the screen distance D is increased to 2D and the slit separation d is reduced to d/2, the new fringe width evaluates to W' = λ (2D) / (d/2) = 4W."
+      },
+      {
+        "q": 23,
+        "topic": "Dual Nature of Matter and Radiation",
+        "question": "According to Einstein's photoelectric equation, the maximum kinetic energy of photoelectrons emitted by a photosensitive metal primarily depends upon the?",
+        "options": {
+          "A": "Intensity of incident light",
+          "B": "Frequency of incident light",
+          "C": "Time of illumination",
+          "D": "Angle of incidence"
+        },
+        "correct": "B",
+        "explanation": "Einstein's photoelectric equation relates maximum kinetic energy to the frequency of incident light above the threshold frequency."
+      },
+      {
+        "q": 24,
+        "topic": "Atoms and Nuclei",
+        "question": "In a standard hydrogen atom, the total energy of an electron in the first Bohr orbit is -13.6 eV. The energy of the electron residing in the second Bohr orbit is?",
+        "options": {
+          "A": "-27.2 eV",
+          "B": "-6.8 eV",
+          "C": "-13.6 eV",
+          "D": "-3.4 eV"
+        },
+        "correct": "D",
+        "explanation": "The energy level of an electron in the nth Bohr orbit is determined by the relation E_n = -13.6 / n² eV. Substituting n = 2 for the second orbit yields E₂ = -13.6 / 4 = -3.4 eV."
+      },
+      {
+        "q": 25,
+        "topic": "Atoms and Nuclei",
+        "question": "The characteristic half-life of a particular radioactive substance is exactly 30 days. What is the time taken for 3/4th of its original mass to disintegrate?",
+        "options": {
+          "A": "30 days",
+          "B": "45 days",
+          "C": "60 days",
+          "D": "90 days"
+        },
+        "correct": "C",
+        "explanation": "If 3/4th of the substance has disintegrated, exactly 1/4th of the original mass remains. The remaining fraction corresponds to (1/2)², signifying that 2 half-lives have elapsed. The total time is 2 × 30 = 60 days."
+      },
+      {
+        "q": 26,
+        "topic": "Electronic Devices",
+        "question": "In a properly doped p-type semiconductor, the majority charge carriers responsible for electrical conduction are?",
+        "options": {
+          "A": "Electrons",
+          "B": "Holes",
+          "C": "Neutrons",
+          "D": "Protons"
+        },
+        "correct": "B",
+        "explanation": "A p-type semiconductor is created by doping intrinsic silicon or germanium with trivalent impurity atoms. This doping introduces a severe deficiency of electrons in the covalent bonds, creating holes which act as the dominant majority charge carriers."
+      },
+      {
+        "q": 27,
+        "topic": "Physics and Measurement",
+        "question": "A light year is widely utilized by astronomers as a standard unit of?",
+        "options": {
+          "A": "Distance",
+          "B": "Time",
+          "C": "Speed",
+          "D": "Luminosity"
+        },
+        "correct": "A",
+        "explanation": "Despite containing the word \"year\", a light year is defined strictly as the total distance that light travels through a vacuum in one Earth year. It is exclusively a measurement unit for vast astronomical distances."
+      },
+      {
+        "q": 28,
+        "topic": "Kinematics",
+        "question": "In kinematics, calculating the mathematical area directly beneath a given velocity-time graph yields which specific physical quantity?",
+        "options": {
+          "A": "Acceleration",
+          "B": "Velocity",
+          "C": "Force",
+          "D": "Displacement"
+        },
+        "correct": "D",
+        "explanation": "Integrating velocity with respect to time mathematically produces displacement. Graphically, this means determining the total area under the velocity-time curve gives the net displacement of the moving object over that time interval."
+      },
+      {
+        "q": 29,
+        "topic": "Laws of Motion",
+        "question": "Newton's third law of motion, which pairs action and reaction forces, leads directly to the fundamental law of conservation of?",
+        "options": {
+          "A": "Energy",
+          "B": "Momentum",
+          "C": "Angular momentum",
+          "D": "Mass"
+        },
+        "correct": "B",
+        "explanation": "Because interacting bodies exert equal and opposite forces on one another for identical durations, the impulses exchanged are perfectly balanced. This equal impulse exchange ensures that the net change in linear momentum of an isolated system remains exactly zero."
+      },
+      {
+        "q": 30,
+        "topic": "Work, Energy and Power",
+        "question": "When a conservative internal force does positive work on a physical body, the potential energy of that body?",
+        "options": {
+          "A": "Increases",
+          "B": "Remains constant",
+          "C": "Decreases",
+          "D": "Becomes zero"
+        },
+        "correct": "C",
+        "explanation": "The fundamental change in potential energy is defined mathematically as the negative of the work done by conservative forces. Therefore, if the conservative work done is positive, the potential energy change must be negative, signifying a decrease."
+      },
+      {
+        "q": 31,
+        "topic": "Rotational Motion",
+        "question": "The angular momentum of a rotating particle is mathematically defined in vector notation as the cross product of its?",
+        "options": {
+          "A": "Linear momentum and radius vector",
+          "B": "Force and radius vector",
+          "C": "Mass and velocity",
+          "D": "Position vector and linear momentum"
+        },
+        "correct": "D",
+        "explanation": "By standard convention in rotational mechanics, the angular momentum vector L of a particle with respect to a designated origin is the cross product of its position vector r and its linear momentum vector p, giving L = r × p."
+      },
+      {
+        "q": 32,
+        "topic": "Gravitation",
+        "question": "Due to the Earth's specific shape and rotation, the value of acceleration due to gravity on the Earth's surface achieves its maximum magnitude at the?",
+        "options": {
+          "A": "Poles",
+          "B": "Equator",
+          "C": "Centre of earth",
+          "D": "Mid-latitudes"
+        },
+        "correct": "A",
+        "explanation": "The Earth is geometrically an oblate spheroid, meaning its surface is slightly closer to the center at the geographic poles than at the equator. Since gravitational acceleration is inversely proportional to the square of the radial distance, it peaks at the poles."
+      },
+      {
+        "q": 33,
+        "topic": "Properties of Solids and Liquids",
+        "question": "Hooke's law, when applied strictly within a material's elastic limit, essentially defines which fundamental mechanical property?",
+        "options": {
+          "A": "Stress",
+          "B": "Modulus of elasticity",
+          "C": "Strain",
+          "D": "Elastic limit"
+        },
+        "correct": "B",
+        "explanation": "Hooke's law establishes that the induced stress in an elastic material is directly proportional to the corresponding strain. The constant of proportionality in this linear relationship represents the material's modulus of elasticity."
+      },
+      {
+        "q": 34,
+        "topic": "Properties of Solids and Liquids",
+        "question": "The highly regular spherical shape assumed by a small liquid drop is naturally occurring primarily due to the influence of?",
+        "options": {
+          "A": "Viscosity",
+          "B": "Gravity",
+          "C": "Surface tension",
+          "D": "Buoyancy"
+        },
+        "correct": "C",
+        "explanation": "Surface tension is a cohesive force that acts continuously to minimize the exposed surface area of a given liquid volume. Because a sphere possesses the minimum possible surface area for a specific volume, isolated liquid drops naturally pull into a spherical shape."
+      },
+      {
+        "q": 35,
+        "topic": "Electronic Devices",
+        "question": "The specific mode of heat transfer in which the physical particles of the medium actually migrate from one location to another to distribute thermal energy is called?",
+        "options": {
+          "A": "Conduction",
+          "B": "Radiation",
+          "C": "Reflection",
+          "D": "Convection"
+        },
+        "correct": "D",
+        "explanation": "Convection is a heat transfer mechanism unique to fluids (liquids and gases). It relies on the macroscopic bulk movement of warmer, less dense fluid portions rising and displacing cooler, denser portions, physically transporting heat energy across regions."
+      },
+      {
+        "q": 36,
+        "topic": "Thermodynamics",
+        "question": "In theoretical physics, the first law of thermodynamics is widely recognized as a specialized application of the universal?",
+        "options": {
+          "A": "Law of conservation of energy",
+          "B": "Charles's law",
+          "C": "Law of conservation of mass",
+          "D": "Boyle's law"
+        },
+        "correct": "A",
+        "explanation": "The first law of thermodynamics dictates that any heat energy supplied to a closed system must equal the sum of the increase in internal energy and the external work performed, which is a direct mathematical statement of energy conservation."
+      },
+      {
+        "q": 37,
+        "topic": "Oscillations and Waves",
+        "question": "The ideal time period of oscillation for a swinging simple pendulum is completely independent of its?",
+        "options": {
+          "A": "Length",
+          "B": "Mass of the bob",
+          "C": "Acceleration due to gravity",
+          "D": "Latitude of observation"
+        },
+        "correct": "B",
+        "explanation": "The standard time period equation for a simple pendulum undergoing small oscillations is T = 2π√(L/g). This formula dictates that the period depends entirely on string length and local gravity, remaining completely unaffected by the bob's mass."
+      },
+      {
+        "q": 38,
+        "topic": "Electromagnetic Waves",
+        "question": "The Doppler effect, which accounts for the apparent shift in frequency due to relative motion between a source and an observer, is applicable for?",
+        "options": {
+          "A": "Sound waves only",
+          "B": "Light waves only",
+          "C": "Both sound and light waves",
+          "D": "Neither sound nor light waves"
+        },
+        "correct": "C",
+        "explanation": "The Doppler effect is a universal wave phenomenon. It governs frequency shifts in mechanical waves, such as sound waves causing pitch changes, as well as in electromagnetic waves, such as light waves causing red-shifts in astronomy."
+      },
+      {
+        "q": 39,
+        "topic": "Physics and Measurement",
+        "question": "What is the correct SI unit for the physical constant known as the electric permittivity of free space (ε₀)?",
+        "options": {
+          "A": "C / N·m",
+          "B": "N·m² / C²",
+          "C": "C² / N·m",
+          "D": "C² / N·m²"
+        },
+        "correct": "D",
+        "explanation": "Based on Coulomb's law of electrostatics, force is given by F = (1 / 4πε₀) (q₁q₂ / r²). Rearranging the terms to solve algebraically for ε₀ yields the dimensional units of C² / (N·m²)."
+      },
+      {
+        "q": 40,
+        "topic": "Current Electricity",
+        "question": "The specific resistance, commonly known as resistivity, of a uniformly drawn metallic wire depends strictly upon?",
+        "options": {
+          "A": "Its material",
+          "B": "Its length",
+          "C": "Its cross-sectional area",
+          "D": "Its mass"
+        },
+        "correct": "A",
+        "explanation": "Resistivity is an intrinsic property characterizing a specific substance and its temperature. Unlike absolute electrical resistance, resistivity remains entirely unaffected by geometric dimensions such as the wire's length, mass, or cross-sectional area."
+      },
+      {
+        "q": 41,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "The Biot-Savart law, which calculates the magnetic field generated by a steady current, is correctly represented in standard vector notation as?",
+        "options": {
+          "A": "dB = (μ₀ / 4π) (Idl × r) / r²",
+          "B": "dB = (μ₀ / 4π) (Idl × r) / r³",
+          "C": "dB = (μ₀ / 4π) (Idl · r) / r³",
+          "D": "dB = (μ₀ / 4π) (Idl · r) / r²"
+        },
+        "correct": "B",
+        "explanation": "The differential magnetic field vector dB is strictly proportional to dl × r̂ / r². When substituting the unit vector with r / |r|, the denominator mathematically adjusts to r³, finalizing the formula as (μ₀/4π) (Idl × r) / r³."
+      },
+      {
+        "q": 42,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "The massive iron core of a standard electrical transformer is heavily laminated during manufacturing primarily to minimize?",
+        "options": {
+          "A": "Copper loss",
+          "B": "Flux leakage",
+          "C": "Eddy current loss",
+          "D": "Hysteresis loss"
+        },
+        "correct": "C",
+        "explanation": "Lamination involves slicing the solid conductive core into extremely thin sheets separated by a highly resistive insulating varnish. This structural modification severely restricts the formation of circulating eddy currents, drastically reducing unwanted internal heat loss."
+      },
+      {
+        "q": 43,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "In an alternating current series LCR circuit operating exactly at its resonant frequency, the power factor evaluates to?",
+        "options": {
+          "A": "Zero",
+          "B": "0.5",
+          "C": "0.707",
+          "D": "1"
+        },
+        "correct": "D",
+        "explanation": "At resonance, the inductive reactance completely cancels the capacitive reactance, leaving the circuit purely resistive in nature. Consequently, the phase angle between voltage and current becomes zero degrees, and the power factor, cos(0), equals exactly 1."
+      },
+      {
+        "q": 44,
+        "topic": "Optics",
+        "question": "The critical resolving power of an astronomical telescope, which dictates its ability to separate closely spaced distant stars, can be effectively increased by?",
+        "options": {
+          "A": "Decreasing the diameter of the objective lens",
+          "B": "Increasing the wavelength of incoming light",
+          "C": "Decreasing the focal length of the objective lens",
+          "D": "Increasing the diameter of the objective lens"
+        },
+        "correct": "D",
+        "explanation": "The theoretical resolving power of a telescope is determined by the ratio D / (1.22λ). Therefore, maximizing the aperture diameter (D) of the primary objective lens directly and proportionally enhances the telescope's resolving capabilities."
+      },
+      {
+        "q": 45,
+        "topic": "Electronic Devices",
+        "question": "A heavily doped Zener diode, when appropriately biased in an electronic circuit, is primarily designed and utilized as a?",
+        "options": {
+          "A": "Voltage regulator",
+          "B": "Signal amplifier",
+          "C": "High-frequency oscillator",
+          "D": "Full-wave rectifier"
+        },
+        "correct": "A",
+        "explanation": "A Zener diode exhibits a distinct, highly stable breakdown voltage characteristic when operated in reverse bias. This unique behavior guarantees a constant voltage output despite input fluctuations, making it ideal as a voltage regulator."
+      }
+    ],
+    "Chemistry": [
+      {
+        "q": 1,
+        "topic": "Atomic Structure",
+        "question": "The number of radial nodes and angular nodes for a 4d orbital are respectively:",
+        "options": {
+          "A": "2 and 2",
+          "B": "1 and 3",
+          "C": "1 and 2",
+          "D": "2 and 1"
+        },
+        "correct": "C",
+        "explanation": "Radial nodes = n - l - 1. For 4d, n=4, l=2. Radial nodes = 4 - 2 - 1 = 1. Angular nodes = l = 2."
+      },
+      {
+        "q": 2,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "Which of the following molecules has a zero dipole moment?",
+        "options": {
+          "A": "BF3",
+          "B": "SO2",
+          "C": "H2O",
+          "D": "NH3"
+        },
+        "correct": "A",
+        "explanation": "BF3 has a trigonal planar geometry. The bond dipoles cancel out due to the symmetrical arrangement, resulting in a net dipole moment of zero."
+      },
+      {
+        "q": 3,
+        "topic": "Chemical Thermodynamics",
+        "question": "Assertion (A): For an isolated system, ΔS > 0 for a spontaneous process. Reason (R): The entropy of an isolated system increases in a spontaneous process because no heat exchange occurs with the surroundings.",
+        "options": {
+          "A": "A is false but R is true",
+          "B": "A is true but R is false",
+          "C": "Both A and R are true and R is the correct explanation of A",
+          "D": "Both A and R are true but R is NOT the correct explanation of A"
+        },
+        "correct": "C",
+        "explanation": "For an isolated system, q = 0. According to the second law, for a spontaneous process, ΔS_total must be positive. Since ΔS_surr = 0, ΔS_system must be greater than zero."
+      },
+      {
+        "q": 4,
+        "topic": "Equilibrium",
+        "question": "The solubility of AgCl (Ksp = 1.0 × 10-10) in 0.1 M NaCl solution is:",
+        "options": {
+          "A": "1.0 × 10-11 M",
+          "B": "1.0 × 10-9 M",
+          "C": "1.0 × 10-5 M",
+          "D": "1.0 × 10-10 M"
+        },
+        "correct": "B",
+        "explanation": "Due to the common ion effect from 0.1 M NaCl, [Cl-] = 0.1 M. Ksp = [Ag+][Cl-]. 10-10 = (s)(0.1). Therefore, s = 10-9 M."
+      },
+      {
+        "q": 5,
+        "topic": "Solutions",
+        "question": "Which of the following aqueous solutions will have the highest boiling point? (Assume complete dissociation)",
+        "options": {
+          "A": "0.1 M FeCl3",
+          "B": "0.1 M NaCl",
+          "C": "0.1 M BaCl2",
+          "D": "0.1 M Glucose"
+        },
+        "correct": "A",
+        "explanation": "Elevation in boiling point is proportional to the van't Hoff factor (i). FeCl3 (i=4) produces the most particles, leading to the highest boiling point."
+      },
+      {
+        "q": 6,
+        "topic": "Solutions",
+        "question": "Isotonic solutions are defined as solutions having the same:",
+        "options": {
+          "A": "Osmotic pressure",
+          "B": "Vapor pressure",
+          "C": "Freezing point",
+          "D": "Boiling point"
+        },
+        "correct": "A",
+        "explanation": "Isotonic solutions have identical osmotic pressures across a semipermeable membrane, resulting in no net movement of solvent."
+      },
+      {
+        "q": 7,
+        "topic": "Redox Reactions and Electrochemistry",
+        "question": "The standard reduction potential of the Standard Hydrogen Electrode (SHE) is assigned a value of:",
+        "options": {
+          "A": "0.1 V",
+          "B": "-1.0 V",
+          "C": "0.0 V",
+          "D": "1.0 V"
+        },
+        "correct": "C",
+        "explanation": "By convention, the standard reduction potential of the Standard Hydrogen Electrode is assigned a value of exactly 0.00 V."
+      },
+      {
+        "q": 8,
+        "topic": "Chemical Kinetics",
+        "question": "The unit of the rate constant for a first-order reaction is:",
+        "options": {
+          "A": "mol L-1 s-1",
+          "B": "L2 mol-2 s-1",
+          "C": "L mol-1 s-1",
+          "D": "s-1"
+        },
+        "correct": "D",
+        "explanation": "For a first-order reaction, Rate = k[A]. Thus, k = (mol L-1 s-1) / (mol L-1) = s-1."
+      },
+      {
+        "q": 9,
+        "topic": "Chemical Kinetics",
+        "question": "Statement I: For a reaction with zero activation energy, the rate constant is independent of temperature. Statement II: According to the Arrhenius equation, if Ea = 0, then k = A.",
+        "options": {
+          "A": "Both Statement I and Statement II are incorrect",
+          "B": "Statement I is correct but Statement II is incorrect",
+          "C": "Statement I is incorrect but Statement II is correct",
+          "D": "Both Statement I and Statement II are correct"
+        },
+        "correct": "D",
+        "explanation": "k = A * e-Ea/RT. If Ea = 0, e0 = 1, so k = A. Since A is a constant, k is independent of temperature."
+      },
+      {
+        "q": 10,
+        "topic": "d- and f-Block Elements",
+        "question": "Which of the following transition metal ions has the highest spin-only magnetic moment?",
+        "options": {
+          "A": "Mn2+",
+          "B": "Fe2+",
+          "C": "V3+",
+          "D": "Cu2+"
+        },
+        "correct": "A",
+        "explanation": "Mn2+ (3d5) has 5 unpaired electrons, the maximum for this series, giving a magnetic moment of ~5.92 BM."
+      },
+      {
+        "q": 11,
+        "topic": "p-Block Elements",
+        "question": "Which of the following oxoacids of phosphorus contains a direct P-P bond?",
+        "options": {
+          "A": "Phosphoric acid (H3PO4)",
+          "B": "Phosphorous acid (H3PO3)",
+          "C": "Pyrophosphoric acid (H4P2O7)",
+          "D": "Hypophosphoric acid (H4P2O6)"
+        },
+        "correct": "D",
+        "explanation": "Hypophosphoric acid has the structural connectivity of (HO)2(O)P-P(O)(OH)2, containing a direct P-P bond."
+      },
+      {
+        "q": 12,
+        "topic": "d- and f-Block Elements",
+        "question": "The highest oxidation state exhibited by a transition element is:",
+        "options": {
+          "A": "+9",
+          "B": "+8",
+          "C": "+6",
+          "D": "+7"
+        },
+        "correct": "B",
+        "explanation": "The highest known oxidation state is +8, exhibited by Osmium (in OsO4) and Ruthenium (in RuO4)."
+      },
+      {
+        "q": 13,
+        "topic": "Coordination Compounds",
+        "question": "The oxidation number of cobalt in the complex ion [Co(NH3)6]3+ is:",
+        "options": {
+          "A": "+4",
+          "B": "+3",
+          "C": "+2",
+          "D": "+6"
+        },
+        "correct": "B",
+        "explanation": "Ammonia (NH3) is a neutral ligand (charge = 0). Therefore, x + 6(0) = +3, giving Cobalt an oxidation state of +3."
+      },
+      {
+        "q": 14,
+        "topic": "Organic Compounds Containing Halogens",
+        "question": "The SN2 reaction of an optically active alkyl halide is always accompanied by:",
+        "options": {
+          "A": "Retention of configuration",
+          "B": "Inversion of configuration",
+          "C": "Racemization",
+          "D": "Complete loss of optical activity"
+        },
+        "correct": "B",
+        "explanation": "In an SN2 mechanism, the nucleophile executes a backside attack, leading to a Walden inversion of stereochemical configuration."
+      },
+      {
+        "q": 15,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "Phenol, when heated with zinc dust, primarily yields:",
+        "options": {
+          "A": "Cyclohexanol",
+          "B": "Benzoic acid",
+          "C": "Toluene",
+          "D": "Benzene"
+        },
+        "correct": "D",
+        "explanation": "Zinc dust acts as a reducing agent, extracting oxygen to form zinc oxide (ZnO) and reducing the phenol ring to benzene."
+      },
+      {
+        "q": 16,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "The reaction of acetaldehyde with Tollens' reagent produces a silver mirror due to the formation of:",
+        "options": {
+          "A": "Silver acetate",
+          "B": "Acetic acid",
+          "C": "Ethanol",
+          "D": "Silver metal"
+        },
+        "correct": "D",
+        "explanation": "Tollens' reagent contains the [Ag(NH3)2]+ complex. Acetaldehyde reduces the Ag+ ion to elemental silver (Ag metal)."
+      },
+      {
+        "q": 17,
+        "topic": "Organic Compounds Containing Nitrogen",
+        "question": "Hinsberg's reagent, used to distinguish between primary, secondary, and tertiary amines, is chemically known as:",
+        "options": {
+          "A": "Benzenesulfonyl chloride",
+          "B": "Benzoyl chloride",
+          "C": "Acetyl chloride",
+          "D": "p-Toluenesulfonyl chloride"
+        },
+        "correct": "A",
+        "explanation": "Hinsberg's reagent is benzenesulfonyl chloride. It forms distinct products with 1° and 2° amines, allowing for their separation."
+      },
+      {
+        "q": 18,
+        "topic": "Biomolecules",
+        "question": "Which of the following carbohydrates is a non-reducing sugar?",
+        "options": {
+          "A": "Sucrose",
+          "B": "Fructose",
+          "C": "Maltose",
+          "D": "Glucose"
+        },
+        "correct": "A",
+        "explanation": "In sucrose, the anomeric carbons of both glucose and fructose are linked together. Since no free aldehyde or ketone group is available, it is non-reducing."
+      },
+      {
+        "q": 19,
+        "topic": "Coordination Compounds",
+        "question": "The Crystal Field Stabilization Energy (CFSE) for a d6 octahedral high-spin complex is:",
+        "options": {
+          "A": "-2.4 Δo",
+          "B": "-1.2 Δo",
+          "C": "-0.4 Δo",
+          "D": "-0.6 Δo"
+        },
+        "correct": "C",
+        "explanation": "Configuration is t2g4 eg2. CFSE = [4(-0.4) + 2(+0.6)]Δo = -0.4 Δo."
+      },
+      {
+        "q": 20,
+        "topic": "Some Basic Principles of Organic Chemistry",
+        "question": "Assertion (A): Carbocation stability follows the order 3° > 2° > 1°. Reason (R): Alkyl groups exert an electron-withdrawing inductive effect (-I effect).",
+        "options": {
+          "A": "Both A and R are true and R explains A",
+          "B": "Both A and R are true but R does not explain A",
+          "C": "A is false but R is true",
+          "D": "A is true but R is false"
+        },
+        "correct": "D",
+        "explanation": "Tertiary carbocations are most stable. However, the reason is false because alkyl groups exert an electron-DONATING inductive effect (+I effect)."
+      },
+      {
+        "q": 21,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "The number of moles of water present in 180 grams of water is:",
+        "options": {
+          "A": "10",
+          "B": "18",
+          "C": "1",
+          "D": "5"
+        },
+        "correct": "A",
+        "explanation": "Moles = Mass / Molar mass = 180 / 18 = 10 moles."
+      },
+      {
+        "q": 22,
+        "topic": "Atomic Structure",
+        "question": "The maximum number of electrons that can be accommodated in a subshell with an angular momentum quantum number l = 2 is:",
+        "options": {
+          "A": "2",
+          "B": "6",
+          "C": "10",
+          "D": "14"
+        },
+        "correct": "C",
+        "explanation": "l = 2 represents a 'd' subshell. Max electrons = 2(2l + 1) = 2(4 + 1) = 10."
+      },
+      {
+        "q": 23,
+        "topic": "Classification of Elements and Periodicity in Properties",
+        "question": "Which element has the highest electronegativity in the periodic table?",
+        "options": {
+          "A": "Oxygen",
+          "B": "Fluorine",
+          "C": "Chlorine",
+          "D": "Nitrogen"
+        },
+        "correct": "B",
+        "explanation": "Fluorine has a high effective nuclear charge without excessive electron shielding, making it the most electronegative element."
+      },
+      {
+        "q": 24,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "According to VSEPR theory, the shape of the SF6 molecule is:",
+        "options": {
+          "A": "Trigonal bipyramidal",
+          "B": "Tetrahedral",
+          "C": "Octahedral",
+          "D": "Square planar"
+        },
+        "correct": "C",
+        "explanation": "SF6 has 6 bonding pairs and zero lone pairs. This steric number of 6 leads to an octahedral geometry."
+      },
+      {
+        "q": 25,
+        "topic": "Chemical Thermodynamics",
+        "question": "An exothermic reaction is characterized by:",
+        "options": {
+          "A": "Positive enthalpy change",
+          "B": "Negative enthalpy change",
+          "C": "Infinite enthalpy change",
+          "D": "Zero enthalpy change"
+        },
+        "correct": "B",
+        "explanation": "The system releases heat to the surroundings. Thus, ΔH < 0."
+      },
+      {
+        "q": 26,
+        "topic": "Equilibrium",
+        "question": "The pH of a 0.01 M HCl solution is:",
+        "options": {
+          "A": "2",
+          "B": "14",
+          "C": "1",
+          "D": "10"
+        },
+        "correct": "A",
+        "explanation": "[H+] = 0.01 M = 10-2 M. pH = -log[H+] = 2."
+      },
+      {
+        "q": 27,
+        "topic": "Redox Reactions and Electrochemistry",
+        "question": "In the redox reaction Zn + Cu2+ → Zn2+ + Cu, which species is undergoing oxidation?",
+        "options": {
+          "A": "Zn2+",
+          "B": "Zn",
+          "C": "Cu2+",
+          "D": "Cu"
+        },
+        "correct": "B",
+        "explanation": "Zinc goes from an oxidation state of 0 to +2 (Zn2+), losing two electrons in the process (oxidation)."
+      },
+      {
+        "q": 28,
+        "topic": "Organic Compounds Containing Nitrogen",
+        "question": "Which of the following amines is most basic in aqueous solution?",
+        "options": {
+          "A": "Aniline",
+          "B": "Trimethylamine",
+          "C": "Dimethylamine",
+          "D": "Methylamine"
+        },
+        "correct": "C",
+        "explanation": "In aqueous solution, methylamines basicity order is 2° > 1° > 3° > NH3. Dimethylamine (2°) is the strongest."
+      },
+      {
+        "q": 29,
+        "topic": "p-Block Elements",
+        "question": "Which of the following noble gases does not have an ns2np6 valence electron configuration?",
+        "options": {
+          "A": "Argon",
+          "B": "Neon",
+          "C": "Krypton",
+          "D": "Helium"
+        },
+        "correct": "D",
+        "explanation": "Helium's full configuration is 1s2. It lacks a p-subshell entirely."
+      },
+      {
+        "q": 30,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "The IUPAC name of the compound CH3-CH2-CHO is:",
+        "options": {
+          "A": "Propanone",
+          "B": "Propanol",
+          "C": "Propanal",
+          "D": "Butanal"
+        },
+        "correct": "C",
+        "explanation": "The three-carbon parent chain gives 'propan-'. The aldehyde functional group (-CHO) takes the suffix '-al'."
+      },
+      {
+        "q": 31,
+        "topic": "Hydrocarbons",
+        "question": "The addition of HBr to propene in the presence of an organic peroxide yields:",
+        "options": {
+          "A": "2-Bromopropane",
+          "B": "Bromobenzene",
+          "C": "Propane",
+          "D": "1-Bromopropane"
+        },
+        "correct": "D",
+        "explanation": "Peroxides trigger a free radical mechanism resulting in the anti-Markovnikov product (1-bromopropane)."
+      },
+      {
+        "q": 32,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "The Reimer-Tiemann reaction of phenol with chloroform in the presence of aqueous NaOH produces:",
+        "options": {
+          "A": "Salicylic acid",
+          "B": "Benzoic acid",
+          "C": "Salicylaldehyde",
+          "D": "p-Benzoquinone"
+        },
+        "correct": "C",
+        "explanation": "The Reimer-Tiemann reaction introduces a formyl group at the ortho position, yielding salicylaldehyde."
+      },
+      {
+        "q": 33,
+        "topic": "Redox Reactions and Electrochemistry",
+        "question": "Statement I: Molar conductivity of a strong electrolyte increases with dilution. Statement II: The increase is due to a dramatic increase in the degree of dissociation.",
+        "options": {
+          "A": "Statement I is correct but Statement II is incorrect",
+          "B": "Both Statement I and Statement II are incorrect",
+          "C": "Both Statement I and Statement II are correct",
+          "D": "Statement I is incorrect but Statement II is correct"
+        },
+        "correct": "A",
+        "explanation": "Statement II is false because strong electrolytes are fully dissociated. The increase is due to decreased interionic attractions."
+      },
+      {
+        "q": 34,
+        "topic": "Biomolecules",
+        "question": "If an aqueous solution of glucose freezes at -0.186 °C, what is the molality of the solution? (Kf for water = 1.86 K kg mol-1)",
+        "options": {
+          "A": "10.0 m",
+          "B": "0.01 m",
+          "C": "0.1 m",
+          "D": "1.0 m"
+        },
+        "correct": "C",
+        "explanation": "ΔTf = Kf * m. 0.186 = 1.86 * m. Therefore, m = 0.1 molal."
+      },
+      {
+        "q": 35,
+        "topic": "Redox Reactions and Electrochemistry",
+        "question": "The SI unit of molar conductivity is:",
+        "options": {
+          "A": "S m2 mol",
+          "B": "S m2 mol-1",
+          "C": "S m-2 mol-1",
+          "D": "S m mol-1"
+        },
+        "correct": "B",
+        "explanation": "Molar conductivity (Λm) standard SI unit is Siemens square meters per mole (S m2 mol-1)."
+      },
+      {
+        "q": 36,
+        "topic": "Chemical Kinetics",
+        "question": "The half-life of a first-order chemical reaction is:",
+        "options": {
+          "A": "Dependent on initial concentration",
+          "B": "Inversely proportional to initial concentration",
+          "C": "Proportional to initial concentration",
+          "D": "Independent of initial concentration"
+        },
+        "correct": "D",
+        "explanation": "For a first-order reaction, t1/2 = 0.693 / k, which is independent of initial concentration."
+      },
+      {
+        "q": 37,
+        "topic": "Atomic Structure",
+        "question": "Assertion (A): The first ionization energy of Nitrogen is greater than that of Oxygen. Reason (R): Nitrogen has a stable exactly half-filled p-orbital configuration.",
+        "options": {
+          "A": "Both A and R are true but R does not explain A",
+          "B": "A is true but R is false",
+          "C": "A is false but R is true",
+          "D": "Both A and R are true and R explains A"
+        },
+        "correct": "D",
+        "explanation": "Nitrogen's exactly half-filled 2p3 configuration provides extra exchange energy stability."
+      },
+      {
+        "q": 38,
+        "topic": "Coordination Compounds",
+        "question": "EDTA is a commonly used ligand in coordination chemistry. It is classified as a:",
+        "options": {
+          "A": "Bidentate ligand",
+          "B": "Monodentate ligand",
+          "C": "Tridentate ligand",
+          "D": "Hexadentate ligand"
+        },
+        "correct": "D",
+        "explanation": "EDTA has six donor atoms (two nitrogens and four oxygens)."
+      },
+      {
+        "q": 39,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "Chloroform undergoes slow oxidation by air in the presence of light to form a highly poisonous gas known as:",
+        "options": {
+          "A": "Mustard gas",
+          "B": "Phosgene",
+          "C": "Chlorine dioxide",
+          "D": "Tear gas"
+        },
+        "correct": "B",
+        "explanation": "Chloroform oxidizes to carbonyl chloride (COCl2), commonly known as phosgene."
+      },
+      {
+        "q": 40,
+        "topic": "Some Basic Principles of Organic Chemistry",
+        "question": "The weakest acid among the following compounds is:",
+        "options": {
+          "A": "Phenol",
+          "B": "Ethanol",
+          "C": "p-Nitrophenol",
+          "D": "o-Nitrophenol"
+        },
+        "correct": "B",
+        "explanation": "The ethoxide ion from ethanol lacks resonance stabilization, unlike phenoxide ions, making ethanol the weakest acid."
+      },
+      {
+        "q": 41,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "Which of the following compounds will not undergo the Cannizzaro reaction?",
+        "options": {
+          "A": "Acetaldehyde",
+          "B": "Formaldehyde",
+          "C": "Benzaldehyde",
+          "D": "Trimethylacetaldehyde"
+        },
+        "correct": "A",
+        "explanation": "The Cannizzaro reaction requires aldehydes without alpha-hydrogen atoms. Acetaldehyde has three alpha-hydrogens."
+      },
+      {
+        "q": 42,
+        "topic": "Organic Compounds Containing Nitrogen",
+        "question": "The hybridization of the central nitrogen atom in a primary aliphatic amine is:",
+        "options": {
+          "A": "sp3d",
+          "B": "sp",
+          "C": "sp2",
+          "D": "sp3"
+        },
+        "correct": "D",
+        "explanation": "The nitrogen forms three sigma bonds and holds one lone pair (4 domains), leading to sp3 hybridization."
+      },
+      {
+        "q": 43,
+        "topic": "Biomolecules",
+        "question": "The purine bases naturally present in DNA molecules are:",
+        "options": {
+          "A": "Uracil and Thymine",
+          "B": "Adenine and Cytosine",
+          "C": "Adenine and Guanine",
+          "D": "Cytosine and Thymine"
+        },
+        "correct": "C",
+        "explanation": "Adenine and Guanine are the double-ring purines found in DNA and RNA."
+      },
+      {
+        "q": 44,
+        "topic": "d- and f-Block Elements",
+        "question": "Zirconium (Zr) and Hafnium (Hf) have nearly identical atomic radii. This is primarily due to:",
+        "options": {
+          "A": "Lanthanoid contraction",
+          "B": "Similar electronegativity",
+          "C": "Actinoid contraction",
+          "D": "Diagonal relationship"
+        },
+        "correct": "A",
+        "explanation": "The filling of 4f orbitals causes imperfect shielding and lanthanoid contraction, making 4d and 5d radii similar."
+      },
+      {
+        "q": 45,
+        "topic": "Biomolecules",
+        "question": "The linkage that holds two amino acid units together in a protein chain is called a:",
+        "options": {
+          "A": "Glycosidic linkage",
+          "B": "Peptide linkage",
+          "C": "Ester linkage",
+          "D": "Phosphodiester linkage"
+        },
+        "correct": "B",
+        "explanation": "Amino acids condense to form an amide bond, specifically called a peptide linkage."
+      }
+    ],
+    "Botany": [
+      {
+        "q": 1,
+        "topic": "Cell Structure and Function",
+        "question": "DNA replication in bacteria occurs",
+        "options": {
+          "A": "Within nucleolus",
+          "B": "Prior to fission",
+          "C": "Just before transcription",
+          "D": "During S phase"
+        },
+        "correct": "B",
+        "explanation": "In bacteria, DNA replication occurs in the cytoplasm prior to fission. Bacteria do not have a distinct S phase or nucleolus like eukaryotes."
+      },
+      {
+        "q": 2,
+        "topic": "Plant Physiology",
+        "question": "The water potential of pure water at standard temperature is",
+        "options": {
+          "A": "Less than zero",
+          "B": "Zero",
+          "C": "More than zero but less than one",
+          "D": "More than one"
+        },
+        "correct": "B",
+        "explanation": "By convention, the water potential of pure water at standard temperatures and under no pressure is taken to be zero. Any addition of solute lowers the water potential."
+      },
+      {
+        "q": 3,
+        "topic": "Plant Physiology",
+        "question": "In Kranz anatomy, the bundle sheath cells have",
+        "options": {
+          "A": "Thin walls, many intercellular spaces and no chloroplasts",
+          "B": "Thin walls, no intercellular spaces and several chloroplasts",
+          "C": "Thick walls, many intercellular spaces and few chloroplasts",
+          "D": "Thick walls, no intercellular spaces and large number of chloroplasts"
+        },
+        "correct": "D",
+        "explanation": "In Kranz anatomy of C4 plants, bundle sheath cells are characterized by having thick walls impervious to gaseous exchange, no intercellular spaces, and a large number of chloroplasts."
+      },
+      {
+        "q": 4,
+        "topic": "Genetics and Evolution",
+        "question": "The term 'linkage' was coined by",
+        "options": {
+          "A": "T.H. Morgan",
+          "B": "G. Mendel",
+          "C": "W. Sutton",
+          "D": "T. Boveri"
+        },
+        "correct": "A",
+        "explanation": "Thomas Hunt Morgan coined the term linkage to describe the physical association of genes on the same chromosome."
+      },
+      {
+        "q": 5,
+        "topic": "Reproduction",
+        "question": "The coconut water from tender coconut represents",
+        "options": {
+          "A": "Free nuclear proembryo",
+          "B": "Endocarp",
+          "C": "Free nuclear endosperm",
+          "D": "Fleshy mesocarp"
+        },
+        "correct": "C",
+        "explanation": "Coconut water is the free nuclear endosperm, which is made of thousands of nuclei, while the surrounding white kernel is the cellular endosperm."
+      },
+      {
+        "q": 6,
+        "topic": "Structural Organisation in Animals and Plants",
+        "question": "Which of the following is made up of dead cells?",
+        "options": {
+          "A": "Phellem",
+          "B": "Xylem parenchyma",
+          "C": "Collenchyma",
+          "D": "Phloem"
+        },
+        "correct": "A",
+        "explanation": "Phellem, or cork, consists of dead cells at maturity. Their walls are highly thickened with suberin, making them impervious to water and gases."
+      },
+      {
+        "q": 7,
+        "topic": "Cell Structure and Function",
+        "question": "The stage during which separation of the paired homologous chromosomes begins is",
+        "options": {
+          "A": "Pachytene",
+          "B": "Diakinesis",
+          "C": "Diplotene",
+          "D": "Zygotene"
+        },
+        "correct": "C",
+        "explanation": "During the diplotene stage of prophase I in meiosis, the synaptonemal complex dissolves, and homologous chromosomes begin to separate, except at the chiasmata."
+      },
+      {
+        "q": 8,
+        "topic": "Ecology and Environment",
+        "question": "Which of the following statements is incorrect regarding the phosphorus cycle?",
+        "options": {
+          "A": "It is a sedimentary cycle",
+          "B": "Phosphates are the major form of reservoir",
+          "C": "There is a respiratory release of phosphorus into the atmosphere",
+          "D": "Herbivores obtain phosphorus from plants"
+        },
+        "correct": "C",
+        "explanation": "Unlike the carbon cycle, there is no respiratory release of phosphorus into the atmosphere. The phosphorus cycle is purely a sedimentary cycle."
+      },
+      {
+        "q": 9,
+        "topic": "Diversity in the Living World",
+        "question": "Which of the following is a completely root parasite?",
+        "options": {
+          "A": "Cuscuta",
+          "B": "Rafflesia",
+          "C": "Viscum",
+          "D": "Loranthus"
+        },
+        "correct": "B",
+        "explanation": "Rafflesia is a total root parasite. Cuscuta is a total stem parasite. Viscum and Loranthus are partial stem parasites."
+      },
+      {
+        "q": 10,
+        "topic": "Ecology and Environment",
+        "question": "Which one of the following is not a gaseous biogeochemical cycle in the ecosystem?",
+        "options": {
+          "A": "Phosphorus cycle",
+          "B": "Oxygen cycle",
+          "C": "Nitrogen cycle",
+          "D": "Carbon cycle"
+        },
+        "correct": "A",
+        "explanation": "The phosphorus cycle is a sedimentary biogeochemical cycle, whereas oxygen, nitrogen, and carbon cycles are gaseous cycles with their main reservoir in the atmosphere."
+      },
+      {
+        "q": 11,
+        "topic": "Plant Physiology",
+        "question": "The first stable product of the Calvin cycle is",
+        "options": {
+          "A": "Oxaloacetic acid (OAA)",
+          "B": "Phosphoenol pyruvate (PEP)",
+          "C": "Ribulose 1,5-bisphosphate",
+          "D": "3-phosphoglyceric acid (3-PGA)"
+        },
+        "correct": "D",
+        "explanation": "In the C3 cycle, the first stable product formed after carbon fixation is a 3-carbon compound called 3-phosphoglyceric acid (3-PGA)."
+      },
+      {
+        "q": 12,
+        "topic": "Genetics and Evolution",
+        "question": "Which element is essential for the splitting of water during photosynthesis?",
+        "options": {
+          "A": "Manganese",
+          "B": "Magnesium",
+          "C": "Potassium",
+          "D": "Zinc"
+        },
+        "correct": "A",
+        "explanation": "Manganese plays a crucial role in the photolysis of water during the light reaction of photosynthesis, leading to the evolution of oxygen."
+      },
+      {
+        "q": 13,
+        "topic": "Diversity in the Living World",
+        "question": "Mycorrhiza is an example of",
+        "options": {
+          "A": "Commensalism",
+          "B": "Amensalism",
+          "C": "Parasitism",
+          "D": "Mutualism"
+        },
+        "correct": "D",
+        "explanation": "Mycorrhiza represents a mutualistic symbiotic association between a fungus and the roots of higher plants. Both organisms benefit from this association."
+      },
+      {
+        "q": 14,
+        "topic": "Plant Physiology",
+        "question": "The primary CO2 acceptor in C4 plants is",
+        "options": {
+          "A": "Ribulose 1,5-bisphosphate (RuBP)",
+          "B": "Oxaloacetic acid (OAA)",
+          "C": "Phosphoenol pyruvate (PEP)",
+          "D": "Malic acid"
+        },
+        "correct": "C",
+        "explanation": "In C4 plants, the primary CO2 acceptor is a 3-carbon molecule, Phosphoenol pyruvate (PEP), found in mesophyll cells."
+      },
+      {
+        "q": 15,
+        "topic": "Plant Physiology",
+        "question": "Apical dominance in plants is mainly caused by which phytohormone?",
+        "options": {
+          "A": "Gibberellin",
+          "B": "Auxin",
+          "C": "Cytokinin",
+          "D": "Abscisic acid"
+        },
+        "correct": "B",
+        "explanation": "Auxins, primarily synthesized in the shoot apices, inhibit the growth of lateral buds, a phenomenon known as apical dominance."
+      },
+      {
+        "q": 16,
+        "topic": "Genetics and Evolution",
+        "question": "Incomplete dominance is classically observed in the flower color of",
+        "options": {
+          "A": "Pisum sativum",
+          "B": "Lathyrus odoratus",
+          "C": "Mirabilis jalapa",
+          "D": "Hibiscus rosa-sinensis"
+        },
+        "correct": "C",
+        "explanation": "Mirabilis jalapa (Four o'clock plant) shows incomplete dominance, where a cross between red and white flowers produces pink offspring."
+      },
+      {
+        "q": 17,
+        "topic": "Genetics and Evolution",
+        "question": "The number of linkage groups in a typical pea plant (Pisum sativum) is",
+        "options": {
+          "A": "14",
+          "B": "4",
+          "C": "7",
+          "D": "21"
+        },
+        "correct": "C",
+        "explanation": "The number of linkage groups in an organism is equal to its haploid number of chromosomes. For a pea plant, 2n=14, so n=7 linkage groups."
+      },
+      {
+        "q": 18,
+        "topic": "Reproduction",
+        "question": "The exine of a pollen grain is primarily composed of",
+        "options": {
+          "A": "Pectocellulose",
+          "B": "Lignin",
+          "C": "Suberin",
+          "D": "Sporopollenin"
+        },
+        "correct": "D",
+        "explanation": "The hard outer layer of a pollen grain, the exine, is made of sporopollenin, one of the most resistant organic materials known."
+      },
+      {
+        "q": 19,
+        "topic": "Reproduction",
+        "question": "The ploidy level of synergids in a typical angiosperm embryo sac is",
+        "options": {
+          "A": "Diploid (2n)",
+          "B": "Triploid (3n)",
+          "C": "Polyploid",
+          "D": "Haploid (n)"
+        },
+        "correct": "D",
+        "explanation": "Synergids are part of the egg apparatus in the female gametophyte (embryo sac) and are haploid cells."
+      },
+      {
+        "q": 20,
+        "topic": "Reproduction",
+        "question": "The endosperm in gymnosperms is functionally",
+        "options": {
+          "A": "Diploid (2n)",
+          "B": "Triploid (3n)",
+          "C": "Haploid (n)",
+          "D": "Tetraploid (4n)"
+        },
+        "correct": "C",
+        "explanation": "In gymnosperms, the endosperm represents the female gametophyte and is formed before fertilization, making it a haploid structure."
+      },
+      {
+        "q": 21,
+        "topic": "Genetics and Evolution",
+        "question": "A mature male gametophyte in angiosperms consists of",
+        "options": {
+          "A": "One male gamete and two vegetative cells",
+          "B": "Two male gametes and one vegetative cell",
+          "C": "One male gamete and one vegetative cell",
+          "D": "Three male gametes"
+        },
+        "correct": "B",
+        "explanation": "In a mature (3-celled stage) pollen grain, the generative cell divides to form two male gametes, accompanying the single vegetative cell."
+      },
+      {
+        "q": 22,
+        "topic": "Reproduction",
+        "question": "The phenomenon of double fertilization is a characteristic feature of",
+        "options": {
+          "A": "Gymnosperms",
+          "B": "Pteridophytes",
+          "C": "Angiosperms",
+          "D": "Bryophytes"
+        },
+        "correct": "C",
+        "explanation": "Double fertilization, which involves syngamy and triple fusion, is unique to angiosperms."
+      },
+      {
+        "q": 23,
+        "topic": "Reproduction",
+        "question": "A typical angiosperm embryo sac at maturity is",
+        "options": {
+          "A": "7-nucleate and 8-celled",
+          "B": "8-nucleate and 7-celled",
+          "C": "8-nucleate and 8-celled",
+          "D": "7-nucleate and 7-celled"
+        },
+        "correct": "B",
+        "explanation": "A typical mature embryo sac contains 3 antipodal cells, 2 synergids, 1 egg cell, and 1 large central cell (with 2 polar nuclei), making it 7-celled and 8-nucleate."
+      },
+      {
+        "q": 24,
+        "topic": "Reproduction",
+        "question": "The primary function of the tapetum in an anther is to",
+        "options": {
+          "A": "Help in anther dehiscence",
+          "B": "Produce sporopollenin only",
+          "C": "Nourish the developing pollen grains",
+          "D": "Perform meiosis"
+        },
+        "correct": "C",
+        "explanation": "The tapetum is the innermost wall layer of the microsporangium, and it provides nourishment to the developing pollen grains (microspores)."
+      },
+      {
+        "q": 25,
+        "topic": "Genetics and Evolution",
+        "question": "Down's syndrome in humans is caused by",
+        "options": {
+          "A": "Monosomy of X chromosome",
+          "B": "Trisomy of chromosome 18",
+          "C": "Trisomy of chromosome 21",
+          "D": "XXY genotype"
+        },
+        "correct": "C",
+        "explanation": "Down's syndrome is an aneuploid genetic disorder caused by the presence of an extra copy of chromosome 21 (Trisomy 21)."
+      },
+      {
+        "q": 26,
+        "topic": "Biotechnology and its Applications",
+        "question": "DNA fragments separated on an agarose gel can be visualized by staining with",
+        "options": {
+          "A": "Bromophenol blue",
+          "B": "Coomassie brilliant blue",
+          "C": "Acetocarmine",
+          "D": "Ethidium bromide"
+        },
+        "correct": "D",
+        "explanation": "DNA fragments can be seen under UV light after staining with ethidium bromide, which intercalates into DNA and fluoresces brightly."
+      },
+      {
+        "q": 27,
+        "topic": "Biotechnology and its Applications",
+        "question": "Restriction endonucleases function by",
+        "options": {
+          "A": "Cutting DNA at specific recognition sequences",
+          "B": "Joining two DNA strands",
+          "C": "Synthesizing new DNA strands",
+          "D": "Removing nucleotides from the ends of DNA"
+        },
+        "correct": "A",
+        "explanation": "Restriction endonucleases act as 'molecular scissors' that recognize specific palindromic sequences in DNA and cleave both strands at those sites."
+      },
+      {
+        "q": 28,
+        "topic": "Biotechnology and its Applications",
+        "question": "Bt cotton varieties are genetically modified to be resistant to",
+        "options": {
+          "A": "Nematodes",
+          "B": "Insects (Bollworms)",
+          "C": "Fungal pathogens",
+          "D": "Herbicides"
+        },
+        "correct": "B",
+        "explanation": "Bt cotton expresses the Cry proteins (encoded by cry genes from Bacillus thuringiensis) which are specifically toxic to insect pests like bollworms."
+      },
+      {
+        "q": 29,
+        "topic": "Biotechnology and its Applications",
+        "question": "Plasmids are best described as",
+        "options": {
+          "A": "Linear DNA molecules found in viruses",
+          "B": "Extra-chromosomal, self-replicating circular DNA",
+          "C": "RNA molecules with catalytic properties",
+          "D": "Main genomic DNA of bacteria"
+        },
+        "correct": "B",
+        "explanation": "Plasmids are small, circular, double-stranded, self-replicating, extra-chromosomal DNA molecules found naturally in bacteria."
+      },
+      {
+        "q": 30,
+        "topic": "Biotechnology and its Applications",
+        "question": "Polymerase Chain Reaction (PCR) heavily relies on an enzyme known as",
+        "options": {
+          "A": "DNA ligase",
+          "B": "RNA polymerase",
+          "C": "Endonuclease",
+          "D": "Taq polymerase"
+        },
+        "correct": "D",
+        "explanation": "PCR requires Taq polymerase, a thermostable DNA polymerase isolated from the bacterium Thermus aquaticus, to withstand the high denaturation temperatures."
+      },
+      {
+        "q": 31,
+        "topic": "Diversity in the Living World",
+        "question": "Roquefort cheese acquires its specific flavor due to the ripening action of a",
+        "options": {
+          "A": "Bacterium",
+          "B": "Virus",
+          "C": "Protozoan",
+          "D": "Fungus"
+        },
+        "correct": "D",
+        "explanation": "Roquefort cheese is ripened by fungi of the genus Penicillium (specifically Penicillium roqueforti), which gives it a distinct flavor."
+      },
+      {
+        "q": 32,
+        "topic": "Biology and Human Welfare",
+        "question": "Statins, commercially used as blood cholesterol-lowering agents, are produced by",
+        "options": {
+          "A": "Bacteria (Streptococcus)",
+          "B": "Fungi (Trichoderma polysporum)",
+          "C": "Cyanobacteria",
+          "D": "Yeast (Monascus purpureus)"
+        },
+        "correct": "D",
+        "explanation": "Statins are produced by the yeast Monascus purpureus and act by competitively inhibiting the enzyme responsible for cholesterol synthesis."
+      },
+      {
+        "q": 33,
+        "topic": "Ecology and Environment",
+        "question": "In an aquatic food chain, the maximum biomagnification of DDT would be expected in",
+        "options": {
+          "A": "Phytoplankton",
+          "B": "Zooplankton",
+          "C": "Small fish",
+          "D": "Fish-eating birds"
+        },
+        "correct": "D",
+        "explanation": "Biomagnification refers to the increase in concentration of a toxicant at successive trophic levels. The highest level is found in the apex predators, such as fish-eating birds."
+      },
+      {
+        "q": 34,
+        "topic": "Ecology and Environment",
+        "question": "Which of the following is classified as a secondary air pollutant?",
+        "options": {
+          "A": "Ozone (O3)",
+          "B": "Carbon monoxide (CO)",
+          "C": "Sulfur dioxide (SO2)",
+          "D": "Nitric oxide (NO)"
+        },
+        "correct": "A",
+        "explanation": "Secondary pollutants are not emitted directly but form in the atmosphere through chemical reactions. Ozone is formed by interactions between nitrogen oxides and VOCs in sunlight."
+      },
+      {
+        "q": 35,
+        "topic": "Ecology and Environment",
+        "question": "The Montreal Protocol, signed in 1987, was primarily aimed at",
+        "options": {
+          "A": "Reducing greenhouse gas emissions",
+          "B": "Preventing illegal trade of endangered species",
+          "C": "Controlling the emission of ozone-depleting substances",
+          "D": "Conserving wetland ecosystems"
+        },
+        "correct": "C",
+        "explanation": "The Montreal Protocol is a global agreement to protect the stratospheric ozone layer by phasing out the production and consumption of ozone-depleting substances (ODS)."
+      },
+      {
+        "q": 36,
+        "topic": "Ecology and Environment",
+        "question": "The term 'ecosystem' was first coined by",
+        "options": {
+          "A": "A.G. Tansley",
+          "B": "E. Haeckel",
+          "C": "E. Warming",
+          "D": "Odum"
+        },
+        "correct": "A",
+        "explanation": "The term 'ecosystem' was coined by Sir Arthur G. Tansley in 1935 to describe the interacting system made up of living organisms and their non-living environment."
+      },
+      {
+        "q": 37,
+        "topic": "Ecology and Environment",
+        "question": "In any functional ecosystem, the pyramid of energy is always",
+        "options": {
+          "A": "Inverted",
+          "B": "Spindle-shaped",
+          "C": "Variable depending on the season",
+          "D": "Upright"
+        },
+        "correct": "D",
+        "explanation": "The pyramid of energy is always upright because energy is lost as heat at each step (10% law) when it flows from one trophic level to the next."
+      },
+      {
+        "q": 38,
+        "topic": "Ecology and Environment",
+        "question": "The pioneer species in a primary succession taking place on bare rocks are usually",
+        "options": {
+          "A": "Lichens",
+          "B": "Mosses",
+          "C": "Ferns",
+          "D": "Annual grasses"
+        },
+        "correct": "A",
+        "explanation": "Lichens are able to secrete acids that dissolve rock, helping in soil formation and thus acting as the pioneer species in xerarch succession on bare rocks."
+      },
+      {
+        "q": 39,
+        "topic": "Ecology and Environment",
+        "question": "Which of the following is an example of in-situ conservation?",
+        "options": {
+          "A": "National Park",
+          "B": "Botanical Garden",
+          "C": "Zoological Park",
+          "D": "Seed Bank"
+        },
+        "correct": "A",
+        "explanation": "In-situ conservation involves protecting endangered species in their natural habitats. National parks, sanctuaries, and biosphere reserves are examples."
+      },
+      {
+        "q": 40,
+        "topic": "Plant Physiology",
+        "question": "The site of perception for light and dark durations (photoperiodism) in plants is the",
+        "options": {
+          "A": "Shoot apex",
+          "B": "Leaves",
+          "C": "Roots",
+          "D": "Floral buds"
+        },
+        "correct": "B",
+        "explanation": "The leaves perceive the photoperiod (light and dark cycles) and subsequently produce a florigen signal that moves to the shoot apices to induce flowering."
+      },
+      {
+        "q": 41,
+        "topic": "Plant Physiology",
+        "question": "Which gaseous plant hormone is primarily responsible for the ripening of climacteric fruits?",
+        "options": {
+          "A": "Auxin",
+          "B": "Ethylene",
+          "C": "Gibberellic acid",
+          "D": "Zeatin"
+        },
+        "correct": "B",
+        "explanation": "Ethylene is a gaseous phytohormone that promotes senescence and fruit ripening, particularly in climacteric fruits like tomatoes and apples."
+      },
+      {
+        "q": 42,
+        "topic": "Structural Organisation in Animals and Plants",
+        "question": "The morphology and number of chromosomes can be studied most clearly during which stage of cell division?",
+        "options": {
+          "A": "Prophase",
+          "B": "Metaphase",
+          "C": "Anaphase",
+          "D": "Telophase"
+        },
+        "correct": "B",
+        "explanation": "During metaphase, chromosomes are maximally condensed and align at the equator, making it the best stage to study their morphology and count them."
+      },
+      {
+        "q": 43,
+        "topic": "Genetics and Evolution",
+        "question": "Crossing over between non-sister chromatids of homologous chromosomes occurs during",
+        "options": {
+          "A": "Pachytene",
+          "B": "Leptotene",
+          "C": "Zygotene",
+          "D": "Diplotene"
+        },
+        "correct": "A",
+        "explanation": "Crossing over, which is the exchange of genetic material between non-sister chromatids, is a characteristic feature of the pachytene stage of prophase I."
+      },
+      {
+        "q": 44,
+        "topic": "Cell Structure and Function",
+        "question": "Polyribosomes (or polysomes) represent",
+        "options": {
+          "A": "Several ribosomes attached to a single mRNA strand",
+          "B": "Multiple mRNAs attached to a single ribosome",
+          "C": "Aggregation of rRNA molecules in the nucleolus",
+          "D": "A complex of proteins and DNA in the nucleus"
+        },
+        "correct": "A",
+        "explanation": "A polyribosome is a complex of an mRNA molecule and two or more ribosomes that act to translate mRNA instructions into polypeptides simultaneously."
+      },
+      {
+        "q": 45,
+        "topic": "Genetics and Evolution",
+        "question": "The phenomenon where a single gene exhibits multiple phenotypic expressions is known as",
+        "options": {
+          "A": "Polygenic inheritance",
+          "B": "Codominance",
+          "C": "Multiple allelism",
+          "D": "Pleiotropy"
+        },
+        "correct": "D",
+        "explanation": "Pleiotropy occurs when one single gene controls multiple, distinct phenotypic traits (e.g., Phenylketonuria in humans or starch grain size in pea seeds)."
+      }
+    ],
+    "Zoology": [
+      {
+        "q": 1,
+        "topic": "Diversity in the Living World",
+        "question": "Which feature distinguishes cartilaginous fishes from bony fishes?",
+        "options": {
+          "A": "Presence of a terminal mouth and cycloid scales",
+          "B": "Internal fertilization and a homocercal tail",
+          "C": "External fertilization and presence of a swim bladder",
+          "D": "Presence of placoid scales and absence of an operculum"
+        },
+        "correct": "D",
+        "explanation": "Chondrichthyes have placoid scales and lack an operculum. Osteichthyes possess cycloid or ctenoid scales and an operculum covering the gills."
+      },
+      {
+        "q": 2,
+        "topic": "Structural Organisation in Animals and Plants",
+        "question": "In female cockroaches, the brood pouch is formed by which of the following abdominal segments?",
+        "options": {
+          "A": "7th, 8th, and 9th sterna",
+          "B": "8th, 9th, and 10th sterna",
+          "C": "7th, 8th, and 9th terga",
+          "D": "9th and 10th terga"
+        },
+        "correct": "A",
+        "explanation": "The 7th sternum is boat-shaped and, together with the 8th and 9th sterna, forms the brood or genital pouch in female cockroaches."
+      },
+      {
+        "q": 3,
+        "topic": "Human Physiology",
+        "question": "Which type of connective tissue attaches skeletal muscle to bone?",
+        "options": {
+          "A": "Loose areolar connective tissue",
+          "B": "Specialized cartilaginous tissue",
+          "C": "Dense irregular connective tissue",
+          "D": "Dense regular connective tissue"
+        },
+        "correct": "D",
+        "explanation": "Tendons, which attach skeletal muscles to bones, are examples of dense regular connective tissue where collagen fibers are arranged in parallel bundles."
+      },
+      {
+        "q": 4,
+        "topic": "Cell Structure and Function",
+        "question": "A competitive inhibitor affects enzyme kinetics by:",
+        "options": {
+          "A": "Increasing Km while Vmax remains unchanged",
+          "B": "Decreasing Km while Vmax remains unchanged",
+          "C": "Decreasing Vmax while Km remains unchanged",
+          "D": "Increasing both Km and Vmax simultaneously"
+        },
+        "correct": "A",
+        "explanation": "Competitive inhibitors bind reversibly to the active site. This increases the apparent Km because more substrate is needed to achieve the same rate, but Vmax remains achievable at high substrate concentrations."
+      },
+      {
+        "q": 5,
+        "topic": "Genetics and Evolution",
+        "question": "Which specific bonds link the nitrogenous base to the pentose sugar in a nucleic acid?",
+        "options": {
+          "A": "Phosphodiester bonds",
+          "B": "Hydrogen bonds",
+          "C": "Peptide bonds",
+          "D": "N-glycosidic bonds"
+        },
+        "correct": "D",
+        "explanation": "A nitrogenous base is linked to the pentose sugar through an N-glycosidic linkage to form a nucleoside."
+      },
+      {
+        "q": 6,
+        "topic": "Human Physiology",
+        "question": "Assertion (A): The Bohr effect facilitates oxygen offloading in active skeletal muscles. Reason (R): High partial pressure of carbon dioxide decreases the affinity of hemoglobin for oxygen.",
+        "options": {
+          "A": "A is false but R is true",
+          "B": "Both A and R are true but R is not the correct explanation of A",
+          "C": "Both A and R are true and R is the correct explanation of A",
+          "D": "A is true but R is false"
+        },
+        "correct": "C",
+        "explanation": "High pCO2 and elevated H+ concentration in metabolically active tissues shift the oxygen dissociation curve to the right, favoring the release of oxygen."
+      },
+      {
+        "q": 7,
+        "topic": "Human Physiology",
+        "question": "The volume of air that remains in the lungs after a forcible expiration is called:",
+        "options": {
+          "A": "Vital capacity",
+          "B": "Expiratory reserve volume",
+          "C": "Functional residual capacity",
+          "D": "Residual volume"
+        },
+        "correct": "D",
+        "explanation": "Residual volume (RV) is the air remaining in the lungs after a forcible expiration, averaging 1100 mL to 1200 mL."
+      },
+      {
+        "q": 8,
+        "topic": "Reproduction",
+        "question": "Erythroblastosis fetalis can occur if a pregnant mother and her fetus have which of the following Rh blood group combinations?",
+        "options": {
+          "A": "Both mother and fetus are Rh-negative",
+          "B": "Mother is Rh-negative and fetus is Rh-positive",
+          "C": "Mother is Rh-positive and fetus is Rh-negative",
+          "D": "Both mother and fetus are Rh-positive"
+        },
+        "correct": "B",
+        "explanation": "If an Rh-negative mother carries an Rh-positive fetus, maternal antibodies generated during the first pregnancy can destroy fetal RBCs in subsequent Rh-positive pregnancies."
+      },
+      {
+        "q": 9,
+        "topic": "Human Physiology",
+        "question": "In a standard electrocardiogram (ECG), the T-wave represents:",
+        "options": {
+          "A": "Ventricular depolarization",
+          "B": "Atrial repolarization",
+          "C": "Ventricular repolarization",
+          "D": "Atrial depolarization"
+        },
+        "correct": "C",
+        "explanation": "The T-wave represents the return of the ventricles from excited to normal state (repolarization). The end of the T-wave marks the end of ventricular systole."
+      },
+      {
+        "q": 10,
+        "topic": "Human Physiology",
+        "question": "Statement I: The descending limb of the loop of Henle is permeable to water but impermeable to electrolytes. Statement II: The ascending limb allows the transport of electrolytes actively or passively.",
+        "options": {
+          "A": "Statement I is correct but Statement II is incorrect",
+          "B": "Both Statement I and Statement II are correct",
+          "C": "Both Statement I and Statement II are incorrect",
+          "D": "Statement I is incorrect but Statement II is correct"
+        },
+        "correct": "B",
+        "explanation": "NCERT confirms the descending limb concentrates the filtrate by allowing water efflux, while the ascending limb dilutes it by electrolyte efflux."
+      },
+      {
+        "q": 11,
+        "topic": "Human Physiology",
+        "question": "Which hormone acts on the collecting duct to increase water reabsorption and prevent diuresis?",
+        "options": {
+          "A": "Vasopressin",
+          "B": "Renin",
+          "C": "Atrial Natriuretic Factor",
+          "D": "Aldosterone"
+        },
+        "correct": "A",
+        "explanation": "Vasopressin, or Antidiuretic Hormone (ADH), increases water permeability in the distal convoluted tubule and collecting duct, reducing urine volume."
+      },
+      {
+        "q": 12,
+        "topic": "Human Physiology",
+        "question": "During muscle contraction, calcium ions bind to which specific regulatory protein?",
+        "options": {
+          "A": "Troponin",
+          "B": "Tropomyosin",
+          "C": "Actin",
+          "D": "Myosin"
+        },
+        "correct": "A",
+        "explanation": "Calcium ions released from the sarcoplasmic reticulum bind to the TnC subunit of troponin, unmasking the myosin-binding sites on actin."
+      },
+      {
+        "q": 13,
+        "topic": "Human Physiology",
+        "question": "The joint between the carpal and metacarpal of the human thumb is an example of a:",
+        "options": {
+          "A": "Saddle joint",
+          "B": "Hinge joint",
+          "C": "Pivot joint",
+          "D": "Gliding joint"
+        },
+        "correct": "A",
+        "explanation": "Synovial joints provide varied movements. The joint between the carpal and metacarpal of the thumb is classified as a saddle joint."
+      },
+      {
+        "q": 14,
+        "topic": "Human Physiology",
+        "question": "A patient exhibits cold intolerance, weight gain, and lethargy. Blood tests show elevated TSH and low thyroxine levels. The most likely diagnosis is:",
+        "options": {
+          "A": "Hyperparathyroidism",
+          "B": "Hypothyroidism",
+          "C": "Hyperthyroidism",
+          "D": "Addison's disease"
+        },
+        "correct": "B",
+        "explanation": "Low thyroxine removes negative feedback on the pituitary, leading to elevated TSH. These symptoms are characteristic of hypothyroidism."
+      },
+      {
+        "q": 15,
+        "topic": "Human Physiology",
+        "question": "Which structure connects the hypothalamus to the anterior pituitary gland?",
+        "options": {
+          "A": "Infundibular stalk directly secreting hormones",
+          "B": "Direct neural axons",
+          "C": "Corpus callosum",
+          "D": "Hypophyseal portal system"
+        },
+        "correct": "D",
+        "explanation": "Hypothalamic hormones reach the anterior pituitary through a portal circulatory system, whereas the posterior pituitary is under direct neural regulation."
+      },
+      {
+        "q": 16,
+        "topic": "Reproduction",
+        "question": "Assertion (A): The SA node is called the pacemaker of the heart. Reason (R): It can generate the maximum number of action potentials without any external stimuli.",
+        "options": {
+          "A": "Both A and R are true and R is the correct explanation of A",
+          "B": "A is true but R is false",
+          "C": "A is false but R is true",
+          "D": "Both A and R are true but R is not the correct explanation of A"
+        },
+        "correct": "A",
+        "explanation": "The SA node initiates and maintains the rhythmic contractile activity of the heart because of its highest intrinsic rate of auto-depolarization."
+      },
+      {
+        "q": 17,
+        "topic": "Human Physiology",
+        "question": "The organ of Corti, responsible for hearing, is located on the:",
+        "options": {
+          "A": "Tectorial membrane",
+          "B": "Tympanic membrane",
+          "C": "Basilar membrane",
+          "D": "Reissner's membrane"
+        },
+        "correct": "C",
+        "explanation": "The organ of Corti is located on the basilar membrane and contains hair cells that act as auditory receptors."
+      },
+      {
+        "q": 18,
+        "topic": "Human Physiology",
+        "question": "Which hormone triggers ovulation by causing the rupture of the Graafian follicle?",
+        "options": {
+          "A": "Follicle Stimulating Hormone (FSH)",
+          "B": "Luteinizing Hormone (LH)",
+          "C": "Estrogen",
+          "D": "Progesterone"
+        },
+        "correct": "B",
+        "explanation": "A rapid surge in LH during the mid-cycle induces the rupture of the Graafian follicle and the subsequent release of the ovum."
+      },
+      {
+        "q": 19,
+        "topic": "Reproduction",
+        "question": "The correct sequence of spermatogenesis stages is:",
+        "options": {
+          "A": "Spermatogonia → Secondary spermatocytes → Primary spermatocytes → Spermatids → Spermatozoa",
+          "B": "Spermatogonia → Spermatids → Primary spermatocytes → Secondary spermatocytes → Spermatozoa",
+          "C": "Spermatogonia → Primary spermatocytes → Secondary spermatocytes → Spermatids → Spermatozoa",
+          "D": "Primary spermatocytes → Spermatogonia → Secondary spermatocytes → Spermatozoa → Spermatids"
+        },
+        "correct": "C",
+        "explanation": "Spermatogonia undergo mitosis to form primary spermatocytes. These undergo meiosis I to form secondary spermatocytes, then meiosis II to form spermatids, which differentiate into spermatozoa."
+      },
+      {
+        "q": 20,
+        "topic": "Reproduction",
+        "question": "Human chorionic gonadotropin (hCG) is exclusively secreted by the:",
+        "options": {
+          "A": "Anterior pituitary",
+          "B": "Placenta",
+          "C": "Ovary",
+          "D": "Corpus luteum"
+        },
+        "correct": "B",
+        "explanation": "The placenta acts as an endocrine tissue and produces hCG, human placental lactogen (hPL), estrogens, and progestogens to maintain pregnancy."
+      },
+      {
+        "q": 21,
+        "topic": "Reproduction",
+        "question": "Which contraceptive method prevents ovulation by maintaining high levels of synthetic estrogen and progesterone?",
+        "options": {
+          "A": "Condoms",
+          "B": "Copper-releasing IUDs",
+          "C": "Tubectomy",
+          "D": "Oral contraceptive pills"
+        },
+        "correct": "D",
+        "explanation": "Oral pills contain progestogens or progestogen-estrogen combinations. They inhibit ovulation and implantation, and alter cervical mucus to retard sperm entry."
+      },
+      {
+        "q": 22,
+        "topic": "Genetics and Evolution",
+        "question": "Amniocentesis is legally banned in India primarily to prevent:",
+        "options": {
+          "A": "Viral infections in the fetus",
+          "B": "Maternal mortality during extraction",
+          "C": "Female foeticide",
+          "D": "Genetic disorders like Down syndrome"
+        },
+        "correct": "C",
+        "explanation": "Amniocentesis determines the sex of the fetus based on chromosomal patterns. Its misuse for sex determination has led to a statutory ban to prevent female foeticide."
+      },
+      {
+        "q": 23,
+        "topic": "Reproduction",
+        "question": "According to the Medical Termination of Pregnancy (Amendment) Act, 2021, a pregnancy can be terminated up to 24 weeks for:",
+        "options": {
+          "A": "Any woman requesting it without medical justification",
+          "B": "Minor females without guardian consent",
+          "C": "Cases strictly involving fetal death in utero only",
+          "D": "Specific categories of women, including survivors of rape"
+        },
+        "correct": "D",
+        "explanation": "The MTP Amendment Act allows termination up to 24 weeks for special categories of women such as rape survivors and vulnerable women, provided two registered medical practitioners give their opinion."
+      },
+      {
+        "q": 24,
+        "topic": "Genetics and Evolution",
+        "question": "In a population under Hardy-Weinberg equilibrium, the frequency of the dominant allele is 0.7. What is the frequency of the heterozygous genotype?",
+        "options": {
+          "A": "0.42",
+          "B": "0.21",
+          "C": "0.09",
+          "D": "0.49"
+        },
+        "correct": "A",
+        "explanation": "If p = 0.7, then q = 0.3. The frequency of the heterozygous genotype is 2pq = 2 × 0.7 × 0.3 = 0.42."
+      },
+      {
+        "q": 25,
+        "topic": "Genetics and Evolution",
+        "question": "Statement I: Thorns of Bougainvillea and tendrils of Cucurbita are homologous organs. Statement II: Homologous organs indicate convergent evolution.",
+        "options": {
+          "A": "Both Statement I and Statement II are incorrect",
+          "B": "Both Statement I and Statement II are correct",
+          "C": "Statement I is correct but Statement II is incorrect",
+          "D": "Statement I is incorrect but Statement II is correct"
+        },
+        "correct": "C",
+        "explanation": "Thorns and tendrils both arise from axillary buds, demonstrating homology. However, homology indicates divergent evolution, not convergent evolution."
+      },
+      {
+        "q": 26,
+        "topic": "Genetics and Evolution",
+        "question": "The Miller-Urey experiment demonstrated the abiotic synthesis of amino acids using a mixture of:",
+        "options": {
+          "A": "Methane, oxygen, carbon dioxide, and water vapor",
+          "B": "Carbon monoxide, ammonia, oxygen, and hydrogen",
+          "C": "Methane, ammonia, hydrogen, and water vapor",
+          "D": "Ammonia, oxygen, nitrogen, and water vapor"
+        },
+        "correct": "C",
+        "explanation": "Miller and Urey recreated early Earth conditions using reducing gases (CH4, NH3, H2, and H2O vapor) subjected to an electric discharge, completely excluding free oxygen."
+      },
+      {
+        "q": 27,
+        "topic": "Biology and Human Welfare",
+        "question": "Which stage of Plasmodium is injected into humans through the bite of an infected female Anopheles mosquito?",
+        "options": {
+          "A": "Sporozoite",
+          "B": "Gametocyte",
+          "C": "Trophozoite",
+          "D": "Merozoite"
+        },
+        "correct": "A",
+        "explanation": "The sporozoite is the infective stage for humans. It is stored in the salivary glands of the mosquito and transferred during a bite."
+      },
+      {
+        "q": 28,
+        "topic": "Biology and Human Welfare",
+        "question": "Which class of immunoglobulins is abundantly present in colostrum and provides passive immunity to the newborn?",
+        "options": {
+          "A": "IgG",
+          "B": "IgA",
+          "C": "IgE",
+          "D": "IgM"
+        },
+        "correct": "B",
+        "explanation": "Colostrum, the yellowish fluid produced during the initial days of lactation, is rich in IgA antibodies, offering crucial protection to the infant."
+      },
+      {
+        "q": 29,
+        "topic": "Biology and Human Welfare",
+        "question": "HIV primarily targets and decreases the population of which specific immune cells?",
+        "options": {
+          "A": "Cytotoxic T-lymphocytes",
+          "B": "Neutrophils",
+          "C": "B-lymphocytes",
+          "D": "Helper T-lymphocytes"
+        },
+        "correct": "D",
+        "explanation": "HIV binds to CD4 receptors and enters Helper T-cells, replicating and destroying them. This progressive loss leads to immunodeficiency."
+      },
+      {
+        "q": 30,
+        "topic": "Biology and Human Welfare",
+        "question": "Rheumatoid arthritis is categorized as an autoimmune disease because:",
+        "options": {
+          "A": "It is caused by chronic wear and tear of articular cartilage",
+          "B": "The immune system attacks self-antigens in the synovial joints",
+          "C": "It involves the deposition of uric acid crystals in the joints",
+          "D": "It results from a viral infection of the synovial fluid"
+        },
+        "correct": "B",
+        "explanation": "In autoimmune diseases like rheumatoid arthritis, the body loses the ability to distinguish self from non-self, launching an immune attack against its own tissues."
+      },
+      {
+        "q": 31,
+        "topic": "Biotechnology and its Applications",
+        "question": "Restriction endonucleases function by:",
+        "options": {
+          "A": "Joining blunt ends of DNA fragments together",
+          "B": "Cleaving the phosphodiester bonds at specific palindromic sequences",
+          "C": "Adding complementary nucleotides during DNA replication",
+          "D": "Removing nucleotides strictly from the ends of the DNA strand"
+        },
+        "correct": "B",
+        "explanation": "Restriction enzymes scan DNA for specific recognition sequences (palindromes) and make precise cuts in the sugar-phosphate backbone."
+      },
+      {
+        "q": 32,
+        "topic": "Biotechnology and its Applications",
+        "question": "The correct sequence of steps in a Polymerase Chain Reaction (PCR) is:",
+        "options": {
+          "A": "Annealing → Denaturation → Extension",
+          "B": "Extension → Annealing → Denaturation",
+          "C": "Denaturation → Extension → Annealing",
+          "D": "Denaturation → Annealing → Extension"
+        },
+        "correct": "D",
+        "explanation": "PCR begins with heat denaturation of DNA, followed by annealing of specific primers at a lower temperature, and finally extension using Taq polymerase."
+      },
+      {
+        "q": 33,
+        "topic": "Biotechnology and its Applications",
+        "question": "In gel electrophoresis, DNA fragments separate based on their:",
+        "options": {
+          "A": "Size, with larger fragments moving farther towards the anode",
+          "B": "Charge, with positively charged fragments moving towards the cathode",
+          "C": "Size, with smaller fragments moving farther towards the anode",
+          "D": "Density, with denser fragments remaining near the wells"
+        },
+        "correct": "C",
+        "explanation": "DNA is negatively charged and moves towards the anode. The agarose gel matrix acts as a sieve, allowing smaller fragments to migrate faster and farther."
+      },
+      {
+        "q": 34,
+        "topic": "Biotechnology and its Applications",
+        "question": "RNA interference (RNAi) involves the silencing of a specific mRNA due to:",
+        "options": {
+          "A": "A complementary double-stranded RNA molecule preventing translation",
+          "B": "Inhibition of RNA polymerase during transcription",
+          "C": "A competitive protein binding to the ribosome",
+          "D": "Endonuclease degradation of the promoter sequence"
+        },
+        "correct": "A",
+        "explanation": "RNAi uses double-stranded RNA complementary to a target mRNA. It binds to the mRNA and prevents translation, effectively silencing the gene."
+      },
+      {
+        "q": 35,
+        "topic": "Biotechnology and its Applications",
+        "question": "Bacillus thuringiensis produces a protein that is toxic to specific insects. Why does this toxin not kill the bacterium itself?",
+        "options": {
+          "A": "It exists as an inactive protoxin requiring an alkaline pH for activation",
+          "B": "It is rapidly secreted out of the bacterial cell via active transport",
+          "C": "It remains sequestered inside the bacterial nucleus",
+          "D": "The bacterium possesses specific antitoxin enzymes"
+        },
+        "correct": "A",
+        "explanation": "The Bt toxin is produced as an inactive protoxin. Ingested by the insect, the alkaline pH of its midgut solubilizes the crystals, converting it into an active toxin."
+      },
+      {
+        "q": 36,
+        "topic": "Biotechnology and its Applications",
+        "question": "The first clinical gene therapy was given in 1990 to a four-year-old girl to treat:",
+        "options": {
+          "A": "Insulin-dependent diabetes mellitus",
+          "B": "Cystic fibrosis",
+          "C": "Severe combined immunodeficiency (SCID) caused by a viral infection",
+          "D": "Adenosine deaminase (ADA) deficiency"
+        },
+        "correct": "D",
+        "explanation": "ADA deficiency causes severe immunodeficiency. Gene therapy was applied by transfecting her lymphocytes with a functional ADA cDNA using a retroviral vector."
+      },
+      {
+        "q": 37,
+        "topic": "Biotechnology and its Applications",
+        "question": "Assertion (A): Transgenic animals are widely used to test the safety of vaccines before human trials. Reason (R): They can be genetically engineered to carry human disease-causing genes for targeted drug testing.",
+        "options": {
+          "A": "A is false but R is true",
+          "B": "A is true but R is false",
+          "C": "Both A and R are true and R is the correct explanation of A",
+          "D": "Both A and R are true but R is not the correct explanation of A"
+        },
+        "correct": "C",
+        "explanation": "Transgenic mice are developed to mimic human diseases and immune responses, making them optimal models for testing vaccine safety and drug efficacy."
+      },
+      {
+        "q": 38,
+        "topic": "Genetics and Evolution",
+        "question": "A mutation in the gene coding for the beta chain of hemoglobin changes glutamic acid to valine. What is the physiological consequence?",
+        "options": {
+          "A": "RBCs lose their nucleus prematurely, leading to severe anemia",
+          "B": "Hemoglobin permanently binds carbon monoxide, causing tissue hypoxia",
+          "C": "RBCs become sickle-shaped under low oxygen tension, reducing transport capacity",
+          "D": "Iron binding to the heme group is permanently blocked"
+        },
+        "correct": "C",
+        "explanation": "Sickle cell anemia involves a point mutation causing hemoglobin polymerization under low oxygen tension, changing the biconcave RBC into a sickle shape."
+      },
+      {
+        "q": 39,
+        "topic": "Genetics and Evolution",
+        "question": "Excessive use of antibiotics has led to the emergence of resistant bacterial strains. This phenomenon exemplifies:",
+        "options": {
+          "A": "Convergent evolution driven by random mutations",
+          "B": "Disruptive selection driven by natural climate change",
+          "C": "Stabilizing selection due to genetic drift",
+          "D": "Directional selection driven by anthropogenic action"
+        },
+        "correct": "D",
+        "explanation": "Antibiotic use creates selective pressure. Bacteria with pre-existing resistance mutations survive and multiply, shifting the population mean in one direction."
+      },
+      {
+        "q": 40,
+        "topic": "Biology and Human Welfare",
+        "question": "Statement I: An autoimmune response occurs when memory cells fail to identify foreign pathogens. Statement II: Allergy is an exaggerated immune response to certain environmental antigens, mediated by IgE.",
+        "options": {
+          "A": "Both Statement I and Statement II are correct",
+          "B": "Statement I is correct but Statement II is incorrect",
+          "C": "Both Statement I and Statement II are incorrect",
+          "D": "Statement I is incorrect but Statement II is correct"
+        },
+        "correct": "D",
+        "explanation": "Autoimmunity involves attacking self-cells, not failing to identify pathogens. Statement II correctly defines allergy and the role of IgE antibodies."
+      },
+      {
+        "q": 41,
+        "topic": "Human Physiology",
+        "question": "Which sequence correctly traces the movement of a nerve impulse in a reflex arc?",
+        "options": {
+          "A": "Receptor → Efferent neuron → Interneuron in spinal cord → Afferent neuron → Effector",
+          "B": "Receptor → Afferent neuron → Interneuron in spinal cord → Efferent neuron → Effector",
+          "C": "Effector → Afferent neuron → Motor cortex → Efferent neuron → Receptor",
+          "D": "Receptor → Afferent neuron → Medulla oblongata → Efferent neuron → Effector"
+        },
+        "correct": "B",
+        "explanation": "A reflex arc bypasses conscious brain processing. The sensory (afferent) neuron carries the signal to the spinal cord, linking to a motor (efferent) neuron via an interneuron."
+      },
+      {
+        "q": 42,
+        "topic": "Human Physiology",
+        "question": "A person produces concentrated urine even when drinking moderate water. A defect in which mechanism could explain this?",
+        "options": {
+          "A": "Hypersecretion of ADH from the posterior pituitary",
+          "B": "Failure of the juxtaglomerular apparatus to produce renin",
+          "C": "Inability of the proximal convoluted tubule to reabsorb glucose",
+          "D": "Excessive production of Atrial Natriuretic Factor (ANF)"
+        },
+        "correct": "A",
+        "explanation": "ADH facilitates water reabsorption from distal tubules. Hypersecretion continuously reabsorbs water, leading to concentrated urine despite adequate hydration."
+      },
+      {
+        "q": 43,
+        "topic": "Cell Structure and Function",
+        "question": "Which cellular component differentiates rough endoplasmic reticulum (RER) from smooth endoplasmic reticulum (SER)?",
+        "options": {
+          "A": "Location of RER outside the cell membrane",
+          "B": "Presence of a double lipid bilayer in RER",
+          "C": "Presence of ribosomes on the cytoplasmic surface of RER",
+          "D": "Integration of specific glycolipids exclusively in SER"
+        },
+        "correct": "C",
+        "explanation": "Ribosomes attached to the outer surface give RER its rough appearance and its primary role in protein synthesis, distinguishing it from lipid-synthesizing SER."
+      },
+      {
+        "q": 44,
+        "topic": "Human Physiology",
+        "question": "During the resting state of a neural membrane, if the Na+/K+ pump is blocked by a toxin, the immediate result will be:",
+        "options": {
+          "A": "Immediate initiation of continuous action potentials",
+          "B": "Gradual loss of the resting membrane potential",
+          "C": "Permanent hyperpolarization of the neuronal membrane",
+          "D": "An increase in intracellular potassium concentration"
+        },
+        "correct": "B",
+        "explanation": "The Na+/K+ pump actively maintains the concentration gradients (3 Na+ out, 2 K+ in). Blocking it causes ions to leak down their gradients, destroying the resting potential."
+      },
+      {
+        "q": 45,
+        "topic": "Human Physiology",
+        "question": "Assertion (A): The SA node triggers atrial systole. Reason (R): The SA node sends an action potential directly to the Purkinje fibers to initiate ventricular contraction.",
+        "options": {
+          "A": "Both A and R are true and R is the correct explanation of A",
+          "B": "A is true but R is false",
+          "C": "Both A and R are true but R is not the correct explanation of A",
+          "D": "A is false but R is true"
+        },
+        "correct": "B",
+        "explanation": "The SA node initiates atrial systole. However, the action potential reaches the Purkinje fibers via the AV node and Bundle of His, not directly."
+      }
+    ]
+  }
+}

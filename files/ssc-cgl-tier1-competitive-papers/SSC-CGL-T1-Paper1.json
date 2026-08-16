@@ -1,0 +1,1316 @@
+{
+  "paper_id": "SSC-CGL-T1-Paper1",
+  "title": "SSC CGL Tier 1 Paper 1",
+  "exam": "SSC CGL Tier 1",
+  "year": 2026,
+  "subjects": {
+    "General Intelligence and Reasoning": [
+      {
+        "q": 1,
+        "topic": "Analogy",
+        "question": "Select the option that is related to the third letter-cluster in the same way as the second letter-cluster is related to the first letter-cluster.\nBEAK : FISO :: GLOW : ?",
+        "options": {
+          "A": "KPTA",
+          "B": "KPSC",
+          "C": "KPSA",
+          "D": "KQUA"
+        },
+        "correct": "C",
+        "explanation": "The pattern follows position shifts: B (+4) = F, E (+4) = I, A (+4) = E, K (+4) = O. Applying the same +4 shift to GLOW: G(+4)=K, L(+4)=P, O(+4)=S, W(+4)=A (23+4=27=A). Thus, GLOW becomes KPSA."
+      },
+      {
+        "q": 2,
+        "topic": "Classification",
+        "question": "Three of the following four number-pairs are alike in a certain manner and one is different. Select the number-pair that is different.",
+        "options": {
+          "A": "14 : 200",
+          "B": "12 : 156",
+          "C": "18 : 342",
+          "D": "16 : 272"
+        },
+        "correct": "A",
+        "explanation": "The pattern for options B, C, and D is n : n² + n. (B) 12²+12=156, (C) 18²+18=342, (D) 16²+16=272. For (A), 14²+14=210 ≠ 200, so (A) is the odd one out."
+      },
+      {
+        "q": 3,
+        "topic": "Numerical and Symbolic Operations",
+        "question": "Select the correct combination of mathematical signs to sequentially replace the * signs and balance the given equation:\n42 * 7 * 5 * 10 * 3 = 23",
+        "options": {
+          "A": "÷, ×, +, -",
+          "B": "+, ÷, -, ×",
+          "C": "×, ÷, -, +",
+          "D": "÷, ×, -, +"
+        },
+        "correct": "D",
+        "explanation": "Replacing * with ÷, ×, -, + sequentially: 42÷7×5-10+3 = 6×5-10+3 = 30-10+3 = 23. Left Side equals Right Side."
+      },
+      {
+        "q": 4,
+        "topic": "Coding and Decoding",
+        "question": "In a certain code language, 'PLANT' is written as 'QMBOU' and 'TOY' is written as 'UPZ'. How will 'FLOWER' be written in that code language?",
+        "options": {
+          "A": "GMNXFS",
+          "B": "GMPXFS",
+          "C": "GLPXER",
+          "D": "GMPXFT"
+        },
+        "correct": "B",
+        "explanation": "Each letter is shifted forward by +1 position: F(+1)=G, L(+1)=M, O(+1)=P, W(+1)=X, E(+1)=F, R(+1)=S. So FLOWER is coded as GMPXFS."
+      },
+      {
+        "q": 5,
+        "topic": "Relationship Concepts",
+        "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. Master 2. Manual 3. Margin 4. Market 5. Machine",
+        "options": {
+          "A": "5, 2, 3, 1, 4",
+          "B": "5, 3, 2, 4, 1",
+          "C": "5, 2, 3, 4, 1",
+          "D": "2, 5, 3, 4, 1"
+        },
+        "correct": "C",
+        "explanation": "Alphabetical order: Machine(5), Manual(2), Margin(3), Market(4), Master(1) → sequence 5,2,3,4,1."
+      },
+      {
+        "q": 6,
+        "topic": "Series",
+        "question": "Select the number from among the given options that can replace the question mark (?) in the following series.\n13, 17, 26, 42, 67, ?",
+        "options": {
+          "A": "103",
+          "B": "101",
+          "C": "98",
+          "D": "105"
+        },
+        "correct": "A",
+        "explanation": "Differences are squares: 4(2²), 9(3²), 16(4²), 25(5²). Next difference is 6²=36. 67+36=103."
+      },
+      {
+        "q": 7,
+        "topic": "Problem Solving",
+        "question": "Statements: All apples are fruits. Some fruits are sweet.\nConclusions: I. Some apples are sweet. II. No sweet is a fruit.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Both conclusions I and II follow",
+          "D": "Neither conclusion I nor II follows"
+        },
+        "correct": "D",
+        "explanation": "The middle term 'fruits' is not distributed in either premise, so no definite relation exists between apples and sweet (Conclusion I fails). Conclusion II contradicts the premise, so it also fails."
+      },
+      {
+        "q": 8,
+        "topic": "Problem Solving",
+        "question": "Pointing to a man, a woman said, 'His mother is the only daughter of my mother.' How is the woman related to the man?",
+        "options": {
+          "A": "Sister",
+          "B": "Mother",
+          "C": "Daughter",
+          "D": "Grandmother"
+        },
+        "correct": "B",
+        "explanation": "'The only daughter of my mother' refers to the woman herself. Since 'his mother' equals the woman speaking, she is the man's mother."
+      },
+      {
+        "q": 9,
+        "topic": "Series",
+        "question": "Select the term that will replace the question mark (?) in the following series.\nAMB, COD, EQF, GSH, ?",
+        "options": {
+          "A": "ITJ",
+          "B": "IVJ",
+          "C": "IUJ",
+          "D": "HUJ"
+        },
+        "correct": "C",
+        "explanation": "First letters: A,C,E,G,I (+2). Second letters: M,O,Q,S,U (+2). Third letters: B,D,F,H,J (+2). Combined: IUJ."
+      },
+      {
+        "q": 10,
+        "topic": "Analogy",
+        "question": "Select the option that is related to the third number in the same way as the second number is related to the first number.\n7 : 340 :: 9 : ?",
+        "options": {
+          "A": "726",
+          "B": "729",
+          "C": "728",
+          "D": "730"
+        },
+        "correct": "A",
+        "explanation": "Pattern is n³-3. For 7: 343-3=340. For 9: 729-3=726."
+      },
+      {
+        "q": 11,
+        "topic": "Classification",
+        "question": "Four letter-clusters have been given, out of which three are alike in a certain way and one is different. Select the letter-cluster that is different.",
+        "options": {
+          "A": "PRTV",
+          "B": "LNPR",
+          "C": "CEGI",
+          "D": "HJKL"
+        },
+        "correct": "D",
+        "explanation": "Options A, B, C follow a constant +2 difference between letters, while D has increments +2, +1, +1, making it the odd one out."
+      },
+      {
+        "q": 12,
+        "topic": "Problem Solving",
+        "question": "If A denotes '+', B denotes '-', C denotes '×', and D denotes '÷', then what is the value of the following expression?\n25 C 4 A 18 D 3 B 10",
+        "options": {
+          "A": "94",
+          "B": "96",
+          "C": "98",
+          "D": "102"
+        },
+        "correct": "B",
+        "explanation": "25×4+18÷3-10 = 100+6-10 = 96 (using BODMAS)."
+      },
+      {
+        "q": 13,
+        "topic": "Problem Solving",
+        "question": "In a class of 45 students, Rohan is ranked 15th from the top. What is his rank from the bottom?",
+        "options": {
+          "A": "30th",
+          "B": "32nd",
+          "C": "31st",
+          "D": "29th"
+        },
+        "correct": "C",
+        "explanation": "Rank from bottom = Total - Rank from top + 1 = 45-15+1 = 31st."
+      },
+      {
+        "q": 14,
+        "topic": "Analogy",
+        "question": "Select the set in which the numbers are related in the same way as are the numbers of the following set.\n(8, 15, 23)",
+        "options": {
+          "A": "(6, 9, 18)",
+          "B": "(5, 10, 18)",
+          "C": "(7, 14, 25)",
+          "D": "(9, 13, 22)"
+        },
+        "correct": "D",
+        "explanation": "Third number = sum of first two: 8+15=23. Similarly, 9+13=22."
+      },
+      {
+        "q": 15,
+        "topic": "Problem Solving",
+        "question": "If 'A + B' means 'A is the brother of B', 'A - B' means 'A is the sister of B', and 'A × B' means 'A is the father of B', which of the following means 'P is the uncle of Q'?",
+        "options": {
+          "A": "P + R × Q",
+          "B": "P - R × Q",
+          "C": "P × R + Q",
+          "D": "P + R - Q"
+        },
+        "correct": "A",
+        "explanation": "'P + R' means P is brother of R; 'R × Q' means R is father of Q. So P is the paternal uncle of Q."
+      },
+      {
+        "q": 16,
+        "topic": "Series",
+        "question": "Select the term that will replace the question mark (?) in the following series.\n2, 6, 12, 20, 30, 42, ?",
+        "options": {
+          "A": "54",
+          "B": "56",
+          "C": "58",
+          "D": "60"
+        },
+        "correct": "B",
+        "explanation": "Pattern is n²+n: 1²+1=2 ... 6²+6=42. Next: 7²+7=56."
+      },
+      {
+        "q": 17,
+        "topic": "Coding and Decoding",
+        "question": "In a certain code language, 'STATION' is coded as 'URCVKPI'. How will 'HOSPITAL' be coded in that language?",
+        "options": {
+          "A": "JQUFKVCN",
+          "B": "JQTRKVCN",
+          "C": "JQURKVBN",
+          "D": "JQURKVCN"
+        },
+        "correct": "D",
+        "explanation": "Each letter is shifted forward by +2 positions: H→J, O→Q, S→U, P→R, I→K, T→V, A→C, L→N. Result: JQURKVCN."
+      },
+      {
+        "q": 18,
+        "topic": "Problem Solving",
+        "question": "Statements: Some pens are pencils. All pencils are erasers.\nConclusions: I. Some erasers are pens. II. Some pencils are pens.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Both conclusions I and II follow",
+          "D": "Neither conclusion I nor II follows"
+        },
+        "correct": "C",
+        "explanation": "'Some pens are pencils' + 'All pencils are erasers' gives 'Some pens are erasers' → converts to 'Some erasers are pens' (I follows). 'Some pens are pencils' converts directly to 'Some pencils are pens' (II follows)."
+      },
+      {
+        "q": 19,
+        "topic": "Problem Solving",
+        "question": "A man walks 5 km towards North, turns right and walks 3 km, then turns right again and walks 5 km. How far is he from his starting point?",
+        "options": {
+          "A": "5 km",
+          "B": "3 km",
+          "C": "8 km",
+          "D": "2 km"
+        },
+        "correct": "B",
+        "explanation": "From (0,0): North 5km to (0,5); East 3km to (3,5); South 5km to (3,0). Final distance from start = 3 km."
+      },
+      {
+        "q": 20,
+        "topic": "Series",
+        "question": "Which number will replace the question mark (?) in the following series?\n4, 9, 20, 43, 90, ?",
+        "options": {
+          "A": "185",
+          "B": "180",
+          "C": "182",
+          "D": "188"
+        },
+        "correct": "A",
+        "explanation": "Pattern: ×2+1, ×2+2, ×2+3, ×2+4 ... 4×2+1=9, 9×2+2=20, 20×2+3=43, 43×2+4=90, 90×2+5=185."
+      },
+      {
+        "q": 21,
+        "topic": "Classification",
+        "question": "Four words have been given, out of which three are alike in a certain way and one is different. Select the odd word.",
+        "options": {
+          "A": "Lizard",
+          "B": "Snake",
+          "C": "Crocodile",
+          "D": "Frog"
+        },
+        "correct": "D",
+        "explanation": "Lizard, Snake, and Crocodile are reptiles; Frog is an amphibian, so it is the odd one out."
+      },
+      {
+        "q": 22,
+        "topic": "Problem Solving",
+        "question": "Arrange the following words in a logical and meaningful order.\n1. Country 2. Village 3. State 4. District 5. Continent",
+        "options": {
+          "A": "2, 4, 3, 5, 1",
+          "B": "2, 3, 4, 1, 5",
+          "C": "2, 4, 3, 1, 5",
+          "D": "1, 3, 4, 2, 5"
+        },
+        "correct": "C",
+        "explanation": "Ascending order by size: Village, District, State, Country, Continent → 2,4,3,1,5."
+      },
+      {
+        "q": 23,
+        "topic": "Analogy",
+        "question": "Select the option that is related to the third term in the same way as the second term is related to the first term.\nThermometer : Temperature :: Hygrometer : ?",
+        "options": {
+          "A": "Humidity",
+          "B": "Pressure",
+          "C": "Current",
+          "D": "Density"
+        },
+        "correct": "A",
+        "explanation": "A Thermometer measures Temperature; similarly, a Hygrometer measures Humidity."
+      },
+      {
+        "q": 24,
+        "topic": "Coding and Decoding",
+        "question": "In a code language, 'GARDEN' is written as '71184514' and 'BLOOM' is written as '212151513'. What is the code for 'RANK'?",
+        "options": {
+          "A": "1811410",
+          "B": "1811411",
+          "C": "1811412",
+          "D": "1821411"
+        },
+        "correct": "B",
+        "explanation": "Code is concatenation of alphabet positions: R=18, A=1, N=14, K=11 → 1811411."
+      },
+      {
+        "q": 25,
+        "topic": "Series",
+        "question": "Select the letter that will replace the question mark (?) in the following series.\nB, E, H, K, N, ?",
+        "options": {
+          "A": "P",
+          "B": "O",
+          "C": "R",
+          "D": "Q"
+        },
+        "correct": "D",
+        "explanation": "Letters advance by +3: B(2)→E(5)→H(8)→K(11)→N(14)→Q(17)."
+      }
+    ],
+    "General Awareness": [
+      {
+        "q": 1,
+        "topic": "General Polity",
+        "question": "Which article of the Indian Constitution provides for the establishment of the Finance Commission of India?",
+        "options": {
+          "A": "Article 260",
+          "B": "Article 300A",
+          "C": "Article 280",
+          "D": "Article 324"
+        },
+        "correct": "C",
+        "explanation": "Article 280 provides for the establishment of a Finance Commission by the President every five years to recommend distribution of tax revenues between Union and States."
+      },
+      {
+        "q": 2,
+        "topic": "Current Affairs",
+        "question": "Who among the following founded the Asiatic Society of Bengal in 1784?",
+        "options": {
+          "A": "Sir William Jones",
+          "B": "Raja Ram Mohan Roy",
+          "C": "Warren Hastings",
+          "D": "James Prinsep"
+        },
+        "correct": "A",
+        "explanation": "Sir William Jones founded the Asiatic Society of Bengal on January 15, 1784, in Kolkata."
+      },
+      {
+        "q": 3,
+        "topic": "Current Affairs",
+        "question": "What is the SI unit of electric potential difference?",
+        "options": {
+          "A": "Ampere",
+          "B": "Ohm",
+          "C": "Joule",
+          "D": "Volt"
+        },
+        "correct": "D",
+        "explanation": "The SI unit of electric potential difference is the Volt, named after Alessandro Volta."
+      },
+      {
+        "q": 4,
+        "topic": "Culture",
+        "question": "Which Indian classical dance form originated in the state of Kerala?",
+        "options": {
+          "A": "Bharatanatyam",
+          "B": "Kathakali",
+          "C": "Kuchipudi",
+          "D": "Sattriya"
+        },
+        "correct": "B",
+        "explanation": "Kathakali originated in Kerala during the 17th century."
+      },
+      {
+        "q": 5,
+        "topic": "Geography",
+        "question": "Which river is popularly known as the 'Dakshin Ganga' due to its length and extent in Peninsular India?",
+        "options": {
+          "A": "Krishna",
+          "B": "Kaveri",
+          "C": "Godavari",
+          "D": "Narmada"
+        },
+        "correct": "C",
+        "explanation": "The Godavari is the largest river system in Peninsular India and is called the 'Dakshin Ganga'."
+      },
+      {
+        "q": 6,
+        "topic": "General Polity",
+        "question": "Which fundamental right was omitted from the list of Fundamental Rights by the 44th Constitutional Amendment Act, 1978?",
+        "options": {
+          "A": "Right to Property",
+          "B": "Right to Freedom of Religion",
+          "C": "Right to Constitutional Remedies",
+          "D": "Right to Equality"
+        },
+        "correct": "A",
+        "explanation": "The Right to Property (Article 31) was omitted by the 44th Amendment and made a legal right under Article 300A."
+      },
+      {
+        "q": 7,
+        "topic": "History",
+        "question": "During the reign of which Mughal emperor was the Taj Mahal constructed at Agra?",
+        "options": {
+          "A": "Akbar",
+          "B": "Jahangir",
+          "C": "Aurangzeb",
+          "D": "Shah Jahan"
+        },
+        "correct": "D",
+        "explanation": "The Taj Mahal was commissioned by Shah Jahan in memory of his wife Mumtaz Mahal."
+      },
+      {
+        "q": 8,
+        "topic": "Current Affairs",
+        "question": "Which element present in green leaves of plants is the central atom of the chlorophyll molecule?",
+        "options": {
+          "A": "Calcium",
+          "B": "Magnesium",
+          "C": "Iron",
+          "D": "Potassium"
+        },
+        "correct": "B",
+        "explanation": "Magnesium is the central metal ion in the porphyrin ring of chlorophyll."
+      },
+      {
+        "q": 9,
+        "topic": "Current Affairs",
+        "question": "Which atmospheric layer contains the highest concentration of ozone and absorbs harmful ultraviolet rays from the Sun?",
+        "options": {
+          "A": "Troposphere",
+          "B": "Mesosphere",
+          "C": "Stratosphere",
+          "D": "Thermosphere"
+        },
+        "correct": "C",
+        "explanation": "The Stratosphere contains the ozone layer, which absorbs UV radiation."
+      },
+      {
+        "q": 10,
+        "topic": "Current Affairs",
+        "question": "Which enzyme present in human saliva breaks down complex starches into simpler sugars like maltose?",
+        "options": {
+          "A": "Salivary Amylase",
+          "B": "Pepsin",
+          "C": "Trypsin",
+          "D": "Lipase"
+        },
+        "correct": "A",
+        "explanation": "Salivary amylase (ptyalin) breaks starch down into maltose."
+      },
+      {
+        "q": 11,
+        "topic": "Current Affairs",
+        "question": "Who served as the first Governor-General of independent India?",
+        "options": {
+          "A": "C. Rajagopalachari",
+          "B": "Dr. Rajendra Prasad",
+          "C": "Jawaharlal Nehru",
+          "D": "Lord Mountbatten"
+        },
+        "correct": "D",
+        "explanation": "Lord Mountbatten served as first Governor-General from Aug 15, 1947 to June 21, 1948."
+      },
+      {
+        "q": 12,
+        "topic": "Current Affairs",
+        "question": "In economics, Giffen goods are special types of inferior goods for which demand increases when:",
+        "options": {
+          "A": "income increases",
+          "B": "price increases",
+          "C": "price decreases",
+          "D": "supply increases"
+        },
+        "correct": "B",
+        "explanation": "A Giffen good's demand increases when its price increases, violating the Law of Demand."
+      },
+      {
+        "q": 13,
+        "topic": "Current Affairs",
+        "question": "Which pass is located on the Manali–Leh route near Manali and connects the Kullu Valley with the Lahaul-Spiti region?",
+        "options": {
+          "A": "Nathu La Pass",
+          "B": "Shipki La Pass",
+          "C": "Rohtang Pass",
+          "D": "Zoji La Pass"
+        },
+        "correct": "C",
+        "explanation": "Rohtang Pass connects the Kullu Valley with the Lahaul-Spiti Valleys."
+      },
+      {
+        "q": 14,
+        "topic": "Current Affairs",
+        "question": "Which chemical compound is commonly known as 'Plaster of Paris'?",
+        "options": {
+          "A": "Calcium Carbonate",
+          "B": "Calcium Sulfate Dihydrate",
+          "C": "Calcium Hydroxide",
+          "D": "Calcium Sulfate Hemihydrate"
+        },
+        "correct": "D",
+        "explanation": "Plaster of Paris (CaSO4·1/2H2O) is obtained by heating gypsum at 373 K."
+      },
+      {
+        "q": 15,
+        "topic": "Current Affairs",
+        "question": "Who was the ruler of Delhi Sultanate when the famous Moroccan traveler Ibn Battuta visited India?",
+        "options": {
+          "A": "Muhammad bin Tughluq",
+          "B": "Alauddin Khalji",
+          "C": "Iltutmish",
+          "D": "Firoz Shah Tughluq"
+        },
+        "correct": "A",
+        "explanation": "Ibn Battuta visited India during the reign of Muhammad bin Tughluq, who appointed him Qazi of Delhi."
+      },
+      {
+        "q": 16,
+        "topic": "General Polity",
+        "question": "Which schedule of the Indian Constitution contains provisions regarding the disqualification of members on grounds of defection?",
+        "options": {
+          "A": "Eighth Schedule",
+          "B": "Tenth Schedule",
+          "C": "Ninth Schedule",
+          "D": "Eleventh Schedule"
+        },
+        "correct": "B",
+        "explanation": "The Tenth Schedule contains the Anti-Defection Law, added by the 52nd Amendment Act, 1985."
+      },
+      {
+        "q": 17,
+        "topic": "Current Affairs",
+        "question": "What is the process of transformation of a solid directly into a gas without passing through the liquid state called?",
+        "options": {
+          "A": "Condensation",
+          "B": "Evaporation",
+          "C": "Deposition",
+          "D": "Sublimation"
+        },
+        "correct": "D",
+        "explanation": "Sublimation is the direct solid-to-gas phase transition, e.g., camphor and dry ice."
+      },
+      {
+        "q": 18,
+        "topic": "History",
+        "question": "The famous Sun Temple at Konark, Odisha, was built in the 13th century by which king of the Eastern Ganga Dynasty?",
+        "options": {
+          "A": "Anantavarman Chodaganga",
+          "B": "Bhanudeva I",
+          "C": "Narasimhadeva I",
+          "D": "Rajaraja III"
+        },
+        "correct": "C",
+        "explanation": "King Narasimhadeva I built the Konark Sun Temple around 1250 AD."
+      },
+      {
+        "q": 19,
+        "topic": "Current Affairs",
+        "question": "Which term describes the maximum speed that a falling body can attain through a fluid medium when resistive drag force equals gravitational force?",
+        "options": {
+          "A": "Critical velocity",
+          "B": "Terminal velocity",
+          "C": "Escape velocity",
+          "D": "Orbital velocity"
+        },
+        "correct": "B",
+        "explanation": "Terminal velocity is the constant maximum velocity when drag equals gravity, giving zero net acceleration."
+      },
+      {
+        "q": 20,
+        "topic": "Current Affairs",
+        "question": "Which country won the inaugural ICC Men's T20 World Cup held in South Africa in 2007?",
+        "options": {
+          "A": "India",
+          "B": "Pakistan",
+          "C": "Australia",
+          "D": "West Indies"
+        },
+        "correct": "A",
+        "explanation": "India won the inaugural T20 World Cup in 2007, defeating Pakistan in the final under MS Dhoni's captaincy."
+      },
+      {
+        "q": 21,
+        "topic": "Current Affairs",
+        "question": "Which Indian state has the longest coastline among all Indian maritime states?",
+        "options": {
+          "A": "Tamil Nadu",
+          "B": "Andhra Pradesh",
+          "C": "Maharashtra",
+          "D": "Gujarat"
+        },
+        "correct": "D",
+        "explanation": "Gujarat has the longest coastline, along the Kathiawar peninsula, Gulf of Kutch, and Gulf of Khambhat."
+      },
+      {
+        "q": 22,
+        "topic": "Geography",
+        "question": "Which instrument is used to measure humidity or water vapor content in air or soil?",
+        "options": {
+          "A": "Anemometer",
+          "B": "Barometer",
+          "C": "Hygrometer",
+          "D": "Pyrometer"
+        },
+        "correct": "C",
+        "explanation": "A Hygrometer measures moisture content or relative humidity of the atmosphere."
+      },
+      {
+        "q": 23,
+        "topic": "History",
+        "question": "Who wrote the famous ancient Indian political and economic treatise titled 'Arthashastra'?",
+        "options": {
+          "A": "Chanakya",
+          "B": "Kalidasa",
+          "C": "Banabhatta",
+          "D": "Harisena"
+        },
+        "correct": "A",
+        "explanation": "Chanakya (Kautilya), prime minister to Chandragupta Maurya, authored the Arthashastra."
+      },
+      {
+        "q": 24,
+        "topic": "Economic Scene",
+        "question": "The Reserve Bank of India (RBI) was established on April 1, 1935 under which act?",
+        "options": {
+          "A": "Banking Regulation Act, 1949",
+          "B": "Reserve Bank of India Act, 1934",
+          "C": "Indian Companies Act, 1913",
+          "D": "Government of India Act, 1935"
+        },
+        "correct": "B",
+        "explanation": "RBI was established under the RBI Act, 1934, based on the Hilton Young Commission's recommendations."
+      },
+      {
+        "q": 25,
+        "topic": "Scientific Research",
+        "question": "Which acid is present in ant bites that causes irritation and a stinging sensation on the skin?",
+        "options": {
+          "A": "Acetic acid",
+          "B": "Tartaric acid",
+          "C": "Oxalic acid",
+          "D": "Formic acid"
+        },
+        "correct": "D",
+        "explanation": "Formic acid (HCOOH) causes the stinging sensation from ant bites."
+      }
+    ],
+    "Quantitative Aptitude": [
+      {
+        "q": 1,
+        "topic": "Algebra",
+        "question": "If x + 1/x = 5, find the value of (x⁴ + 1/x²) / (x² - 3x + 1).",
+        "options": {
+          "A": "22",
+          "B": "55",
+          "C": "110",
+          "D": "25"
+        },
+        "correct": "B",
+        "explanation": "x²-5x+1=0 gives x²+1=5x. Dividing numerator by x: x³+1/x³ = (x+1/x)³-3(x+1/x) = 125-15 = 110. Dividing denominator by x: (x+1/x)-3 = 2. Result = 110/2 = 55."
+      },
+      {
+        "q": 2,
+        "topic": "Interest",
+        "question": "A sum of ₹12,000 is invested at 10% per annum compound interest, compounded half-yearly. What will be the compound interest earned at the end of 1.5 years?",
+        "options": {
+          "A": "₹1,891.50",
+          "B": "₹1,800.00",
+          "C": "₹1,910.00",
+          "D": "₹1,890.00"
+        },
+        "correct": "A",
+        "explanation": "Half-yearly rate=5%, n=3. A=12000×(1.05)³=13891.50. CI=13891.50-12000=1891.50."
+      },
+      {
+        "q": 3,
+        "topic": "Geometry",
+        "question": "In triangle ABC, the internal bisector of angle A meets side BC at point D. If AB = 12 cm, AC = 15 cm, and BC = 18 cm, find the length of segment BD.",
+        "options": {
+          "A": "10 cm",
+          "B": "6 cm",
+          "C": "9 cm",
+          "D": "8 cm"
+        },
+        "correct": "D",
+        "explanation": "By Angle Bisector Theorem, BD/DC = AB/AC = 12/15 = 4/5. BD = (4/9)×18 = 8 cm."
+      },
+      {
+        "q": 4,
+        "topic": "Trigonometry",
+        "question": "A trader marks his goods 40% above the cost price and allows two successive discounts of 15% and 10% on the marked price. What is his net gain percentage?",
+        "options": {
+          "A": "5.5%",
+          "B": "8.0%",
+          "C": "7.1%",
+          "D": "6.2%"
+        },
+        "correct": "C",
+        "explanation": "CP=100, MP=140. After 15% discount: 119. After 10% discount: 107.10. Gain=7.10 → 7.1%."
+      },
+      {
+        "q": 5,
+        "topic": "Trigonometry",
+        "question": "If 5 sin²θ + 3 cos²θ = 4 and 0° < θ < 90°, what is the value of (tan θ + sec θ)?",
+        "options": {
+          "A": "1 + √3",
+          "B": "1 + √2",
+          "C": "√2 - 1",
+          "D": "2 + √2"
+        },
+        "correct": "B",
+        "explanation": "5sin²θ+3(1-sin²θ)=4 → sin²θ=1/2 → θ=45°. tan45°+sec45° = 1+√2."
+      },
+      {
+        "q": 6,
+        "topic": "Trigonometry",
+        "question": "A train running at a uniform speed of 72 km/h crosses a 250 m long platform in 27 seconds. How much time will it take to cross a signal post?",
+        "options": {
+          "A": "12.5 seconds",
+          "B": "15.0 seconds",
+          "C": "16.5 seconds",
+          "D": "14.5 seconds"
+        },
+        "correct": "D",
+        "explanation": "Speed=20 m/s. Distance in 27s=540m. Train length=540-250=290m. Time to cross post=290/20=14.5s."
+      },
+      {
+        "q": 7,
+        "topic": "Percentages",
+        "question": "A can complete a piece of work in 20 days and B can complete the same work in 30 days. If they work on alternate days starting with A on the first day, in how many days will the work be completed?",
+        "options": {
+          "A": "24 days",
+          "B": "25 days",
+          "C": "22 days",
+          "D": "20 days"
+        },
+        "correct": "A",
+        "explanation": "Total work=60 units. A=3/day, B=2/day. 2-day cycle=5 units. 60/5=12 cycles → 24 days."
+      },
+      {
+        "q": 8,
+        "topic": "Algebra",
+        "question": "If the 8-digit number 78x51y68 is completely divisible by 88, what is the value of (3x + y) for the largest possible value of y?",
+        "options": {
+          "A": "15",
+          "B": "21",
+          "C": "24",
+          "D": "12"
+        },
+        "correct": "C",
+        "explanation": "For divisibility by 8, largest y=9 (968/8=121). For divisibility by 11, x=5. So 3x+y=15+9=24."
+      },
+      {
+        "q": 9,
+        "topic": "Mensuration",
+        "question": "A metallic solid sphere of radius 6 cm is melted and recast into a solid right circular cylinder of height 8 cm. What is the base radius of the cylinder?",
+        "options": {
+          "A": "4 cm",
+          "B": "6 cm",
+          "C": "8 cm",
+          "D": "5 cm"
+        },
+        "correct": "B",
+        "explanation": "(4/3)π(6)³ = π r²(8) → 288 = 8r² → r²=36 → r=6 cm."
+      },
+      {
+        "q": 10,
+        "topic": "Ratio and proportion",
+        "question": "The ratio of the monthly incomes of A and B is 4 : 5 and the ratio of their monthly expenditures is 3 : 4. If A and B save ₹3,000 and ₹2,000 per month respectively, what is the monthly income of A?",
+        "options": {
+          "A": "₹24,000",
+          "B": "₹18,000",
+          "C": "₹20,000",
+          "D": "₹30,000"
+        },
+        "correct": "A",
+        "explanation": "(4x-3000)/(5x-2000)=3/4 → x=6000. Income of A=4x=₹24,000."
+      },
+      {
+        "q": 11,
+        "topic": "Averages",
+        "question": "The average weight of a group of 24 students is 45 kg. If the weight of the teacher is included, the average weight increases by 1 kg. What is the weight of the teacher?",
+        "options": {
+          "A": "68 kg",
+          "B": "72 kg",
+          "C": "75 kg",
+          "D": "70 kg"
+        },
+        "correct": "D",
+        "explanation": "Total weight of students=1080kg. New total (25 persons, avg 46)=1150kg. Teacher's weight=1150-1080=70kg."
+      },
+      {
+        "q": 12,
+        "topic": "Percentages",
+        "question": "In an election between two candidates, 10% of voters did not cast their vote and 10% of polled votes were declared invalid. The winning candidate received 54% of valid votes and won by 1,620 votes. Find the total number of enrolled voters.",
+        "options": {
+          "A": "20,000",
+          "B": "22,500",
+          "C": "25,000",
+          "D": "30,000"
+        },
+        "correct": "C",
+        "explanation": "Valid votes=0.81N. Margin=8% of valid votes=1620 → 0.0648N=1620 → N=25,000."
+      },
+      {
+        "q": 13,
+        "topic": "Mixture and allegation",
+        "question": "A vessel contains 80 liters of pure milk. From this vessel, 8 liters of milk is removed and replaced with water. This operation is performed once more. How many liters of pure milk are left in the vessel?",
+        "options": {
+          "A": "64.8 liters",
+          "B": "65.2 liters",
+          "C": "62.4 liters",
+          "D": "66.0 liters"
+        },
+        "correct": "A",
+        "explanation": "Remaining milk=80×(9/10)²=80×0.81=64.8 liters."
+      },
+      {
+        "q": 14,
+        "topic": "Percentages",
+        "question": "Simplify the expression: √[(0.0064)/(0.0004)] + (3.6/0.09).",
+        "options": {
+          "A": "36",
+          "B": "42",
+          "C": "40",
+          "D": "44"
+        },
+        "correct": "D",
+        "explanation": "√(0.0064/0.0004)=√16=4. 3.6/0.09=40. Total=4+40=44."
+      },
+      {
+        "q": 15,
+        "topic": "Time and distance",
+        "question": "A boat travels 24 km downstream and 16 km upstream in 6 hours. It can also travel 36 km downstream and 12 km upstream in 6 hours. What is the speed of the boat in still water?",
+        "options": {
+          "A": "8 km/h",
+          "B": "10 km/h",
+          "C": "6 km/h",
+          "D": "9 km/h"
+        },
+        "correct": "A",
+        "explanation": "Solving 24/d+16/u=6 and 36/d+12/u=6 gives d=12, u=4. Still water speed=(12+4)/2=8 km/h."
+      },
+      {
+        "q": 16,
+        "topic": "Trigonometry",
+        "question": "Two circles with radii 9 cm and 4 cm touch each other externally. What is the length of their direct common tangent?",
+        "options": {
+          "A": "10 cm",
+          "B": "12 cm",
+          "C": "13 cm",
+          "D": "15 cm"
+        },
+        "correct": "B",
+        "explanation": "Length=2√(r1×r2)=2√36=12 cm."
+      },
+      {
+        "q": 17,
+        "topic": "Trigonometry",
+        "question": "From the top of a 60 m high tower, the angles of depression of the top and bottom of a tall building are observed to be 30° and 60° respectively. Find the height of the building.",
+        "options": {
+          "A": "30 m",
+          "B": "20 m",
+          "C": "40 m",
+          "D": "45 m"
+        },
+        "correct": "C",
+        "explanation": "d=20√3m. (60-h)/d=tan30° → 60-h=20 → h=40 m."
+      },
+      {
+        "q": 18,
+        "topic": "Profit and loss",
+        "question": "A, B, and C enter into a partnership. A invests ₹20,000 for 12 months, B invests ₹25,000 for 8 months, and C invests ₹30,000 for 6 months. If the total profit at the end of the year is ₹62,000, what is C's share?",
+        "options": {
+          "A": "₹24,000",
+          "B": "₹20,000",
+          "C": "₹16,000",
+          "D": "₹18,000"
+        },
+        "correct": "D",
+        "explanation": "Ratio=240000:200000:180000=12:10:9. C's share=(9/31)×62000=₹18,000."
+      },
+      {
+        "q": 19,
+        "topic": "Trigonometry",
+        "question": "A rectangular garden is 40 m long and 30 m wide. A path of uniform width 2.5 m is constructed outside around the garden. What is the total area of the path?",
+        "options": {
+          "A": "350 m²",
+          "B": "400 m²",
+          "C": "375 m²",
+          "D": "325 m²"
+        },
+        "correct": "C",
+        "explanation": "Outer area=45×35=1575. Garden area=1200. Path area=1575-1200=375 m²."
+      },
+      {
+        "q": 20,
+        "topic": "Interest",
+        "question": "A principal amount at simple interest doubles itself in 8 years. In how many years will it become 4 times of itself at the same rate of interest?",
+        "options": {
+          "A": "16 years",
+          "B": "24 years",
+          "C": "32 years",
+          "D": "20 years"
+        },
+        "correct": "B",
+        "explanation": "SI/year=P/8. To become 4P, required SI=3P. Time=3P/(P/8)=24 years."
+      },
+      {
+        "q": 21,
+        "topic": "Percentages",
+        "question": "If a + b + c = 6 and ab + bc + ca = 11, what is the value of a³ + b³ + c³ - 3abc?",
+        "options": {
+          "A": "24",
+          "B": "36",
+          "C": "18",
+          "D": "12"
+        },
+        "correct": "C",
+        "explanation": "a³+b³+c³-3abc=(a+b+c)[(a+b+c)²-3(ab+bc+ca)]=6×[36-33]=18."
+      },
+      {
+        "q": 22,
+        "topic": "Trigonometry",
+        "question": "A dishonest dealer claims to sell his goods at cost price, but uses a false weight of 800 grams for a 1 kg weight. What is his net profit percentage?",
+        "options": {
+          "A": "20%",
+          "B": "22.5%",
+          "C": "18%",
+          "D": "25%"
+        },
+        "correct": "D",
+        "explanation": "Profit%=[(1000-800)/800]×100=25%."
+      },
+      {
+        "q": 23,
+        "topic": "Trigonometry",
+        "question": "Pipe A can fill a tank in 12 hours and Pipe B can fill it in 15 hours. A third pipe C can empty the full tank in 20 hours. If all three pipes are opened together, in how many hours will the tank be completely filled?",
+        "options": {
+          "A": "10 hours",
+          "B": "12 hours",
+          "C": "8 hours",
+          "D": "15 hours"
+        },
+        "correct": "A",
+        "explanation": "Total=60 units. A=+5, B=+4, C=-3. Combined=6 units/h. Time=60/6=10 hours."
+      },
+      {
+        "q": 24,
+        "topic": "Number Systems",
+        "question": "The HCF and LCM of two positive integers are 12 and 240 respectively. If one of the numbers is 60, what is the value of the second number?",
+        "options": {
+          "A": "36",
+          "B": "48",
+          "C": "52",
+          "D": "72"
+        },
+        "correct": "B",
+        "explanation": "Product of numbers=HCF×LCM. Second number=(12×240)/60=48."
+      },
+      {
+        "q": 25,
+        "topic": "Averages",
+        "question": "What is the average of the first 15 positive multiples of 8?",
+        "options": {
+          "A": "60",
+          "B": "68",
+          "C": "72",
+          "D": "64"
+        },
+        "correct": "D",
+        "explanation": "AP from 8 to 120. Average=(8+120)/2=64."
+      }
+    ],
+    "English Comprehension": [
+      {
+        "q": 1,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate synonym of the given word: METICULOUS",
+        "options": {
+          "A": "Careless",
+          "B": "Painstaking",
+          "C": "Hasty",
+          "D": "Lenient"
+        },
+        "correct": "B",
+        "explanation": "'Meticulous' means extremely careful and precise; 'Painstaking' is a direct synonym."
+      },
+      {
+        "q": 2,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate antonym of the given word: EPHEMERAL",
+        "options": {
+          "A": "Perpetual",
+          "B": "Transient",
+          "C": "Fleeting",
+          "D": "Evanescent"
+        },
+        "correct": "A",
+        "explanation": "'Ephemeral' means lasting a short time; 'Perpetual' (never ending) is its antonym. B, C, D are synonyms."
+      },
+      {
+        "q": 3,
+        "topic": "Grammar",
+        "question": "Select the option that expresses the given sentence in passive voice:\nThe chef prepared a sumptuous meal for the diplomats.",
+        "options": {
+          "A": "A sumptuous meal was prepared by the chef for the diplomats.",
+          "B": "A sumptuous meal is prepared by the chef for the diplomats.",
+          "C": "A sumptuous meal had been prepared by the chef for the diplomats.",
+          "D": "A sumptuous meal was being prepared by the chef for the diplomats."
+        },
+        "correct": "A",
+        "explanation": "Simple Past active ('prepared') → passive 'was/were + V3 + by + agent'."
+      },
+      {
+        "q": 4,
+        "topic": "Grammar",
+        "question": "Select the option that expresses the given sentence in reported speech:\nShe said to me, \"Where have you kept my research notes?\"",
+        "options": {
+          "A": "She told me where I had kept her research notes.",
+          "B": "She asked me where I keep her research notes.",
+          "C": "She asked me where I had kept her research notes.",
+          "D": "She asked me where had I kept her research notes."
+        },
+        "correct": "C",
+        "explanation": "'said to'→'asked'; Present Perfect→Past Perfect; subject-verb inversion removed."
+      },
+      {
+        "q": 5,
+        "topic": "Fillers",
+        "question": "Select the most appropriate option to fill in the blank:\nThe new environmental policies are expected to ________ significant positive changes in urban air quality.",
+        "options": {
+          "A": "bring off",
+          "B": "bring up",
+          "C": "bring out",
+          "D": "bring about"
+        },
+        "correct": "D",
+        "explanation": "'Bring about' means to cause something to happen."
+      },
+      {
+        "q": 6,
+        "topic": "Vocabulary",
+        "question": "Select the option that can be used as a one-word substitute for the given group of words:\nA person who looks at the bright side of things",
+        "options": {
+          "A": "Pessimist",
+          "B": "Altruist",
+          "C": "Fatalist",
+          "D": "Optimist"
+        },
+        "correct": "D",
+        "explanation": "An 'Optimist' is hopeful and confident about the future."
+      },
+      {
+        "q": 7,
+        "topic": "Grammar",
+        "question": "Identify the segment in the sentence which contains a grammatical error:\nNeither the senior manager nor his subordinates was present at the annual emergency briefing yesterday.",
+        "options": {
+          "A": "Neither the senior manager",
+          "B": "nor his subordinates",
+          "C": "was present at the",
+          "D": "annual emergency briefing yesterday."
+        },
+        "correct": "C",
+        "explanation": "With 'neither...nor', verb agrees with the nearer subject ('subordinates', plural), so it should be 'were present'."
+      },
+      {
+        "q": 8,
+        "topic": "Spelling",
+        "question": "Select the incorrectly spelt word:",
+        "options": {
+          "A": "Acquaintance",
+          "B": "Bureaucracy",
+          "C": "Perseverance",
+          "D": "Mischievious"
+        },
+        "correct": "D",
+        "explanation": "Correct spelling is 'Mischievous' (without extra 'i' after 'v')."
+      },
+      {
+        "q": 9,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate meaning of the given idiom: To bite the bullet",
+        "options": {
+          "A": "To act recklessly in times of danger",
+          "B": "To face a difficult situation with courage",
+          "C": "To force someone into an unfair agreement",
+          "D": "To avoid taking responsibility for a mistake"
+        },
+        "correct": "B",
+        "explanation": "'To bite the bullet' means to face a difficult situation with courage rather than delaying it."
+      },
+      {
+        "q": 10,
+        "topic": "Sentence Arrangement",
+        "question": "Select the option that rearranges the following sentences in a logical order to form a coherent paragraph:\nP. This shift has led to an unprecedented increase in digital transactions across rural sectors.\nQ. Over the past decade, financial inclusion initiatives have expanded rapidly across the country.\nR. Consequently, small business owners are now able to access credit facilities more efficiently.\nS. Government backbones and mobile banking networks have served as key drivers of this transformation.",
+        "options": {
+          "A": "QPSR",
+          "B": "SQPR",
+          "C": "PRQS",
+          "D": "QSPR"
+        },
+        "correct": "D",
+        "explanation": "Q introduces the theme, S explains the driver, P describes the effect, R gives the ultimate consequence: QSPR."
+      },
+      {
+        "q": 11,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate synonym of the given word: CANDID",
+        "options": {
+          "A": "Deceitful",
+          "B": "Frank",
+          "C": "Evasive",
+          "D": "Guarded"
+        },
+        "correct": "B",
+        "explanation": "'Candid' means truthful and straightforward; 'Frank' is an exact synonym."
+      },
+      {
+        "q": 12,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate antonym of the given word: AUTONOMY",
+        "options": {
+          "A": "Freedom",
+          "B": "Sovereignty",
+          "C": "Dependence",
+          "D": "Liberty"
+        },
+        "correct": "C",
+        "explanation": "'Autonomy' means independence; 'Dependence' is its antonym."
+      },
+      {
+        "q": 13,
+        "topic": "Grammar",
+        "question": "Identify the segment in the sentence which contains a grammatical error:\nHardly had the keynote speaker finished his address when the audience stood up and applauded enthusiastically.",
+        "options": {
+          "A": "Hardly had the keynote speaker",
+          "B": "finished his address when",
+          "C": "the audience stood up",
+          "D": "No error"
+        },
+        "correct": "D",
+        "explanation": "The sentence correctly follows the 'Hardly had...when' inversion structure."
+      },
+      {
+        "q": 14,
+        "topic": "Vocabulary",
+        "question": "Select the option that can be used as a one-word substitute for the given group of words:\nAn official pardon for people who have been convicted of political offenses",
+        "options": {
+          "A": "Asylum",
+          "B": "Embezzlement",
+          "C": "Amnesty",
+          "D": "Absolution"
+        },
+        "correct": "C",
+        "explanation": "'Amnesty' is an official pardon for those convicted of political offenses."
+      },
+      {
+        "q": 15,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate meaning of the given idiom: To spill the beans",
+        "options": {
+          "A": "To waste valuable resources carelessly",
+          "B": "To reveal a secret prematurely",
+          "C": "To cause an uncomfortable misunderstanding",
+          "D": "To complete a tedious job quickly"
+        },
+        "correct": "B",
+        "explanation": "'To spill the beans' means to reveal secret information before the intended time."
+      },
+      {
+        "q": 16,
+        "topic": "Spelling",
+        "question": "Select the correctly spelt word:",
+        "options": {
+          "A": "Accommodation",
+          "B": "Acommodation",
+          "C": "Accomodation",
+          "D": "Acomodation"
+        },
+        "correct": "A",
+        "explanation": "Correct spelling contains double 'c' and double 'm'."
+      },
+      {
+        "q": 17,
+        "topic": "Fillers",
+        "question": "Select the most appropriate option to fill in the blank:\nDespite facing severe criticism from all quarters, the Minister remained ________ in his decision to implement the reform.",
+        "options": {
+          "A": "vacillating",
+          "B": "resolute",
+          "C": "dubious",
+          "D": "yielding"
+        },
+        "correct": "B",
+        "explanation": "'Resolute' means determined and unwavering, fitting the context of standing firm despite criticism."
+      },
+      {
+        "q": 18,
+        "topic": "Grammar",
+        "question": "Identify the segment in the sentence which contains a grammatical error:\nThe committee have submitted its detailed evaluation report on the proposed infrastructure project.",
+        "options": {
+          "A": "The committee",
+          "B": "on the proposed infrastructure project.",
+          "C": "have submitted",
+          "D": "its detailed evaluation report"
+        },
+        "correct": "C",
+        "explanation": "'Committee' is used as a singular entity here (indicated by 'its'), so it requires 'has submitted'."
+      },
+      {
+        "q": 19,
+        "topic": "Grammar",
+        "question": "Select the option that expresses the given sentence in active voice:\nThe historic monument was damaged by severe weather conditions during the monsoon.",
+        "options": {
+          "A": "Severe weather conditions damaged the historic monument during the monsoon.",
+          "B": "Severe weather conditions damage the historic monument during the monsoon.",
+          "C": "Severe weather conditions had damaged the historic monument during the monsoon.",
+          "D": "Severe weather conditions were damaging the historic monument during the monsoon."
+        },
+        "correct": "A",
+        "explanation": "Passive 'was damaged' (Simple Past) converts to active 'damaged' with the agent as subject."
+      },
+      {
+        "q": 20,
+        "topic": "Sentence Arrangement",
+        "question": "Select the option that rearranges the following sentences in a logical order to form a coherent paragraph:\nP. Artificial Intelligence is transforming modern medical diagnostics at a rapid pace.\nQ. Consequently, early detection rates for critical conditions have improved significantly.\nR. Specialized algorithms can now analyze complex radiological scans within seconds.\nS. This speed allows doctors to formulate effective treatment plans without delay.",
+        "options": {
+          "A": "PRSQ",
+          "B": "PQRS",
+          "C": "RPSQ",
+          "D": "QPSR"
+        },
+        "correct": "A",
+        "explanation": "P introduces the topic, R gives an example, S highlights the benefit, Q gives the outcome: PRSQ."
+      },
+      {
+        "q": 21,
+        "topic": "Reading Comprehension",
+        "question": "Read the passage and answer the question that follows:\n\nPassage: Urban forests play a vital role in enhancing the quality of life in modern cities. Beyond their aesthetic appeal, urban trees mitigate the heat island effect by providing canopy shade and cooling the air through evapotranspiration. Furthermore, urban vegetation intercepts stormwater runoff, reducing the strain on municipal drainage systems during heavy rainfalls. However, city trees face significant stressors, including soil compaction, limited root space, and air pollution, which can compromise their longevity. Sustainable urban planning must prioritize proper tree species selection and ongoing maintenance to ensure these green assets thrive.\n\nQuestion: According to the passage, how do urban trees help reduce the heat island effect?",
+        "options": {
+          "A": "By expanding municipal drainage systems",
+          "B": "By reducing soil compaction in root spaces",
+          "C": "By intercepting heavy stormwater runoff",
+          "D": "By providing canopy shade and through evapotranspiration"
+        },
+        "correct": "D",
+        "explanation": "The passage states urban trees mitigate the heat island effect via canopy shade and evapotranspiration cooling."
+      },
+      {
+        "q": 22,
+        "topic": "Reading Comprehension",
+        "question": "Based on the passage, which of the following is NOT mentioned as a stressor facing city trees?",
+        "options": {
+          "A": "Soil compaction",
+          "B": "Excessive evapotranspiration",
+          "C": "Limited root space",
+          "D": "Air pollution"
+        },
+        "correct": "B",
+        "explanation": "The passage lists soil compaction, limited root space, and air pollution as stressors; evapotranspiration is a cooling mechanism, not a stressor."
+      },
+      {
+        "q": 23,
+        "topic": "Reading Comprehension",
+        "question": "What is the primary function of urban vegetation regarding heavy rainfalls, according to the passage?",
+        "options": {
+          "A": "It intercepts stormwater runoff to ease pressure on drainage systems.",
+          "B": "It filters pollutants directly out of groundwater.",
+          "C": "It increases soil compaction to prevent urban flooding.",
+          "D": "It cools stormwater before it enters municipal pipes."
+        },
+        "correct": "A",
+        "explanation": "The passage states urban vegetation intercepts stormwater runoff, reducing strain on municipal drainage systems."
+      },
+      {
+        "q": 24,
+        "topic": "Reading Comprehension",
+        "question": "What is the main conclusion of the passage regarding sustainable urban planning?",
+        "options": {
+          "A": "Cities should eliminate municipal drainage systems in favor of trees.",
+          "B": "Trees should only be planted for their visual and aesthetic appeal.",
+          "C": "Proper species selection and ongoing maintenance are essential for urban trees to thrive.",
+          "D": "Urban trees can survive long-term without regular maintenance."
+        },
+        "correct": "C",
+        "explanation": "The concluding sentence emphasizes prioritizing species selection and maintenance for urban trees to thrive."
+      },
+      {
+        "q": 25,
+        "topic": "Reading Comprehension",
+        "question": "Select the word from the passage that means 'to make less severe or serious':",
+        "options": {
+          "A": "Compromise",
+          "B": "Prioritize",
+          "C": "Intercept",
+          "D": "Mitigate"
+        },
+        "correct": "D",
+        "explanation": "'Mitigate' means to make something less severe, harmful, or serious."
+      }
+    ]
+  }
+}

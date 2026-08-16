@@ -1,0 +1,966 @@
+{
+  "paper_id": "GMAT-Paper1",
+  "title": "GMAT Paper 1",
+  "exam": "GMAT",
+  "year": 2026,
+  "subjects": {
+    "Quantitative Reasoning": [
+      {
+        "q": 1,
+        "topic": "Factors and multiples",
+        "question": "If x and y are positive integers such that 3x + 7y = 100, what is the maximum possible value of x + y?",
+        "options": {
+          "A": "32",
+          "B": "30",
+          "C": "28",
+          "D": "34",
+          "E": "26"
+        },
+        "correct": "A",
+        "explanation": "Rearranging gives x = 33 - 2y + (1-y)/3, requiring (1-y) divisible by 3, i.e. y ≡ 1 (mod 3). With y = 1+3k, x = 31-7k, so x+y = 32-4k, which decreases as k increases. Maximum occurs at k=0 (y=1, x=31), giving x+y = 32."
+      },
+      {
+        "q": 2,
+        "topic": "Combined work",
+        "question": "Machine A produces widgets at a constant rate of 120 widgets per hour, and Machine B produces widgets at a constant rate of 180 widgets per hour. If Machine A starts working alone at 8:00 AM and Machine B joins Machine A at 9:00 AM, at what time will a total of 720 widgets be produced?",
+        "options": {
+          "A": "10:30 AM",
+          "B": "11:00 AM",
+          "C": "11:30 AM",
+          "D": "12:00 PM",
+          "E": "12:30 PM"
+        },
+        "correct": "B",
+        "explanation": "A alone from 8-9 AM produces 120 widgets. Remaining = 600. Combined rate from 9 AM = 300/hr. Time = 600/300 = 2 hours. 9 AM + 2 hours = 11:00 AM."
+      },
+      {
+        "q": 3,
+        "topic": "Factors and multiples",
+        "question": "What is the sum of all positive integers less than 100 that are divisible by 3 but not by 5?",
+        "options": {
+          "A": "1335",
+          "B": "1485",
+          "C": "1350",
+          "D": "1665",
+          "E": "1215"
+        },
+        "correct": "C",
+        "explanation": "Sum of multiples of 3 below 100 (3 to 99, 33 terms) = 1683. Sum of multiples of 15 below 100 (15 to 90, 6 terms) = 315. 1683 - 315 = 1350."
+      },
+      {
+        "q": 4,
+        "topic": "Profit and loss",
+        "question": "A retailer purchased an item at a discount of 20 percent off the wholesale price and then sold it for 15 percent more than the wholesale price. What was the retailer's profit as a percentage of the price the retailer paid for the item?",
+        "options": {
+          "A": "35 percent",
+          "B": "37.5 percent",
+          "C": "40 percent",
+          "D": "43.75 percent",
+          "E": "45 percent"
+        },
+        "correct": "D",
+        "explanation": "Wholesale=100. Cost=80. Selling price=115. Profit=35. Profit% of cost = 35/80×100 = 43.75%."
+      },
+      {
+        "q": 5,
+        "topic": "Arithmetic reasoning",
+        "question": "In a group of 120 students, 70 study French, 50 study Spanish, and 20 study neither French nor Spanish. How many students study both French and Spanish?",
+        "options": {
+          "A": "10",
+          "B": "12",
+          "C": "15",
+          "D": "18",
+          "E": "20"
+        },
+        "correct": "E",
+        "explanation": "At least one = 120-20=100. 100=70+50-Both → Both=20."
+      },
+      {
+        "q": 6,
+        "topic": "Weighted average",
+        "question": "If standard deviation of a set of numbers is s, what is the standard deviation of the set obtained by multiplying each number in the original set by 3 and then subtracting 5 from each result?",
+        "options": {
+          "A": "3s",
+          "B": "3s - 5",
+          "C": "9s",
+          "D": "9s - 5",
+          "E": "s"
+        },
+        "correct": "A",
+        "explanation": "Multiplying by a constant k scales SD by k; subtracting a constant doesn't change SD. New SD = 3s."
+      },
+      {
+        "q": 7,
+        "topic": "Weighted average",
+        "question": "The average (arithmetic mean) of 5 numbers is 18. If one of the numbers is removed, the average of the remaining 4 numbers becomes 20. What is the value of the number that was removed?",
+        "options": {
+          "A": "8",
+          "B": "10",
+          "C": "12",
+          "D": "14",
+          "E": "16"
+        },
+        "correct": "B",
+        "explanation": "Original sum=90. New sum=80. Removed number = 90-80 = 10."
+      },
+      {
+        "q": 8,
+        "topic": "Exponents",
+        "question": "If 2^(2x + 1) - 5 * 2^x + 2 = 0, what is the product of all real values of x that satisfy the equation?",
+        "options": {
+          "A": "1",
+          "B": "1/2",
+          "C": "-1",
+          "D": "-2",
+          "E": "0"
+        },
+        "correct": "C",
+        "explanation": "Let u=2^x: 2u²-5u+2=0 → (2u-1)(u-2)=0 → u=1/2 or 2 → x=-1 or 1. Product = -1."
+      },
+      {
+        "q": 9,
+        "topic": "Arithmetic reasoning",
+        "question": "A committee of 3 people is to be chosen from a group of 4 men and 4 women. What is the probability that the committee contains at least 2 women?",
+        "options": {
+          "A": "3/7",
+          "B": "4/7",
+          "C": "3/8",
+          "D": "1/2",
+          "E": "5/8"
+        },
+        "correct": "D",
+        "explanation": "Total ways C(8,3)=56. Favorable: 2W1M=C(4,2)C(4,1)=24; 3W=C(4,3)=4. Total=28. Probability=28/56=1/2."
+      },
+      {
+        "q": 10,
+        "topic": "Exponents",
+        "question": "What is the remainder when 7^84 is divided by 100?",
+        "options": {
+          "A": "7",
+          "B": "43",
+          "C": "49",
+          "D": "21",
+          "E": "1"
+        },
+        "correct": "E",
+        "explanation": "7^4 ≡ 1 (mod 100). 7^84 = (7^4)^21 ≡ 1^21 = 1 (mod 100)."
+      },
+      {
+        "q": 11,
+        "topic": "Average speed",
+        "question": "A car travels from City P to City Q at an average speed of 40 miles per hour and returns from City Q to City P along the same route at an average speed of 60 miles per hour. What is the average speed of the car for the entire round trip?",
+        "options": {
+          "A": "48 miles per hour",
+          "B": "50 miles per hour",
+          "C": "52 miles per hour",
+          "D": "54 miles per hour",
+          "E": "56 miles per hour"
+        },
+        "correct": "A",
+        "explanation": "Average speed = 2×40×60/(40+60) = 4800/100 = 48 mph."
+      },
+      {
+        "q": 12,
+        "topic": "Prime numbers",
+        "question": "If a and b are positive integers such that the greatest common divisor of a and b is 6, and the least common multiple of a and b is 120, how many possible ordered pairs (a, b) exist?",
+        "options": {
+          "A": "2",
+          "B": "4",
+          "C": "6",
+          "D": "8",
+          "E": "12"
+        },
+        "correct": "B",
+        "explanation": "a=6m, b=6n with gcd(m,n)=1 and mn=20. Co-prime pairs: (1,20),(20,1),(4,5),(5,4) — 4 ordered pairs."
+      },
+      {
+        "q": 13,
+        "topic": "Percentages",
+        "question": "In a class, 60 percent of the students are female and the rest are male. If 40 percent of the female students and 70 percent of the male students pass an examination, what percentage of the total class passes the examination?",
+        "options": {
+          "A": "48 percent",
+          "B": "50 percent",
+          "C": "52 percent",
+          "D": "54 percent",
+          "E": "56 percent"
+        },
+        "correct": "C",
+        "explanation": "Total=100: Females=60, Males=40. Females pass=24, Males pass=28. Total pass=52, i.e. 52%."
+      },
+      {
+        "q": 14,
+        "topic": "Weighted average",
+        "question": "The sum of the first n terms of a sequence is given by S_n = 3n^2 + 2n for all positive integers n. What is the 10th term of this sequence?",
+        "options": {
+          "A": "320",
+          "B": "270",
+          "C": "62",
+          "D": "59",
+          "E": "56"
+        },
+        "correct": "D",
+        "explanation": "S10=320, S9=261. a10=S10-S9=59."
+      },
+      {
+        "q": 15,
+        "topic": "Simple interest",
+        "question": "An investor invested a total of $10,000 in two accounts. Account P pays simple interest at a rate of 6 percent per year, and Account Q pays simple interest at a rate of 8 percent per year. If the total interest earned from both accounts combined after one year was $720, how much money was invested in Account P?",
+        "options": {
+          "A": "$2,500",
+          "B": "$3,000",
+          "C": "$3,500",
+          "D": "$3,800",
+          "E": "$4,000"
+        },
+        "correct": "E",
+        "explanation": "0.06x+0.08(10000-x)=720 → -0.02x=-80 → x=4000."
+      },
+      {
+        "q": 16,
+        "topic": "Exponents",
+        "question": "How many distinct 4-digit positive integers can be formed using the digits 1, 2, 3, 4, 5, and 6 such that no digit is repeated and the integer is divisible by 5?",
+        "options": {
+          "A": "60",
+          "B": "120",
+          "C": "180",
+          "D": "240",
+          "E": "360"
+        },
+        "correct": "A",
+        "explanation": "Units digit must be 5 (only option). Remaining 3 positions from {1,2,3,4,6}: P(5,3)=60. Total=60."
+      },
+      {
+        "q": 17,
+        "topic": "Ratios",
+        "question": "The ratio of the number of men to the number of women in a club was 3 to 2. After 3 men left and 2 women joined the club, the ratio of men to women became 6 to 5. How many total members were originally in the club?",
+        "options": {
+          "A": "30",
+          "B": "45",
+          "C": "60",
+          "D": "75",
+          "E": "90"
+        },
+        "correct": "B",
+        "explanation": "(3x-3)/(2x+2)=6/5 → 15x-15=12x+12 → 3x=27 → x=9. Original total=5x=45."
+      },
+      {
+        "q": 18,
+        "topic": "Quadratic equations",
+        "question": "If x is a real number such that x^2 - 5x + 1 = 0, what is the value of x^3 + 1 / x^3?",
+        "options": {
+          "A": "100",
+          "B": "105",
+          "C": "110",
+          "D": "120",
+          "E": "125"
+        },
+        "correct": "C",
+        "explanation": "x+1/x=5. (x+1/x)^3 = x^3+1/x^3+3(x+1/x). 125 = x^3+1/x^3+15 → x^3+1/x^3=110."
+      },
+      {
+        "q": 19,
+        "topic": "Fractions",
+        "question": "What is the sum of the series 1 + 1/2 + 1/4 + 1/8 + ... up to infinity?",
+        "options": {
+          "A": "3/2",
+          "B": "5/3",
+          "C": "7/4",
+          "D": "2",
+          "E": "5/2"
+        },
+        "correct": "D",
+        "explanation": "S = a/(1-r) = 1/(1-1/2) = 2."
+      },
+      {
+        "q": 20,
+        "topic": "Quadratic equations",
+        "question": "If the roots of the equation x^2 - kx + 12 = 0 are integers, how many possible integer values can k take?",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5",
+          "E": "6"
+        },
+        "correct": "E",
+        "explanation": "Integer factor pairs of 12 (same sign): (1,12),(-1,-12),(2,6),(-2,-6),(3,4),(-3,-4) give k=13,-13,8,-8,7,-7 — 6 distinct values."
+      },
+      {
+        "q": 21,
+        "topic": "Arithmetic reasoning",
+        "question": "A right circular cone has a base radius of 6 cm and a height of 8 cm. What is the total surface area of the cone in square centimeters?",
+        "options": {
+          "A": "96 pi",
+          "B": "60 pi",
+          "C": "84 pi",
+          "D": "108 pi",
+          "E": "120 pi"
+        },
+        "correct": "A",
+        "explanation": "Slant height=√(36+64)=10. TSA=πr(r+l)=π×6×16=96π sq cm."
+      }
+    ],
+    "Verbal Reasoning": [
+      {
+        "q": 1,
+        "topic": "Purpose",
+        "question": "The primary purpose of the passage is to:",
+        "options": {
+          "A": "explain a limitation of a traditional product strategy and present an alternative approach based on user engagement dynamics.",
+          "B": "argue that enterprise software companies should eliminate all user verification steps to maximize initial conversion metrics.",
+          "C": "demonstrate that high retention rates in SaaS applications depend exclusively on competitive pricing models.",
+          "D": "criticize product managers for prioritizing feature discovery over initial registration speed.",
+          "E": "compare the technical architectures of various multi-step identity verification systems used in SaaS platforms."
+        },
+        "correct": "A",
+        "explanation": "The passage presents standard doctrine (reducing friction), its limitation (lower 90-day retention), and 'optimized friction' as an alternative. Option A captures this structure; the others contradict or misdirect.",
+        "passage": "In digital software platforms, product managers frequently face a friction-conversion trade-off during user onboarding. Standard product design doctrine dictates that reducing initial setup friction—such as eliminating multi-step identity verification or mandatory profile configurations—dramatically accelerates immediate user registration rates. However, recent behavioral analytics across enterprise software-as-a-service (SaaS) applications reveal a counterintuitive long-term dynamic: users who experience frictionless onboarding exhibit significantly lower 90-day retention rates and lifetime value compared to users who undergo structured, high-friction onboarding sequences.\n\nThis anomaly can be attributed to the psychological mechanism of cognitive investment. When users complete meaningful setup tasks during onboarding—such as customizing workflow dashboards or establishing team integration protocols—they form an early mental model of the software's functional utility. This initial investment creates a psychological switching cost and increases feature discovery. Conversely, users who bypass these configuration steps frequently experience a 'utility vacuum' post-registration; although successfully onboarded, they lack an immediate operational framework, leading to rapid account abandonment when novel tasks arise.\n\nConsequently, progressive SaaS companies are abandoning pure friction elimination in favor of 'optimized friction.' This strategic approach deliberately introduces targeted setup hurdles designed to induce active user engagement while carefully pruning arbitrary administrative barriers. By treating onboarding as an educational value-exchange rather than a mere acquisition funnel, organizations can align initial conversion metrics with sustainable, long-term customer activation.",
+        "type": "passage_1"
+      },
+      {
+        "q": 2,
+        "topic": "Inference",
+        "question": "It can be inferred from the passage that a user who completes a structured setup sequence during onboarding is more likely to:",
+        "options": {
+          "A": "experience a complete utility vacuum immediately following account registration.",
+          "B": "perceive a higher psychological cost if they were to switch to a competing software platform later.",
+          "C": "abandon their account within the first 90 days due to administrative fatigue.",
+          "D": "demand the total removal of all customizable workflow dashboards from the interface.",
+          "E": "struggle with feature discovery when confronted with novel operational tasks."
+        },
+        "correct": "B",
+        "explanation": "Paragraph 2 states that completing setup tasks creates a psychological switching cost, supporting Option B; the other outcomes describe frictionless-onboarding users instead.",
+        "passage": "In digital software platforms, product managers frequently face a friction-conversion trade-off during user onboarding. Standard product design doctrine dictates that reducing initial setup friction—such as eliminating multi-step identity verification or mandatory profile configurations—dramatically accelerates immediate user registration rates. However, recent behavioral analytics across enterprise software-as-a-service (SaaS) applications reveal a counterintuitive long-term dynamic: users who experience frictionless onboarding exhibit significantly lower 90-day retention rates and lifetime value compared to users who undergo structured, high-friction onboarding sequences.\n\nThis anomaly can be attributed to the psychological mechanism of cognitive investment. When users complete meaningful setup tasks during onboarding—such as customizing workflow dashboards or establishing team integration protocols—they form an early mental model of the software's functional utility. This initial investment creates a psychological switching cost and increases feature discovery. Conversely, users who bypass these configuration steps frequently experience a 'utility vacuum' post-registration; although successfully onboarded, they lack an immediate operational framework, leading to rapid account abandonment when novel tasks arise.\n\nConsequently, progressive SaaS companies are abandoning pure friction elimination in favor of 'optimized friction.' This strategic approach deliberately introduces targeted setup hurdles designed to induce active user engagement while carefully pruning arbitrary administrative barriers. By treating onboarding as an educational value-exchange rather than a mere acquisition funnel, organizations can align initial conversion metrics with sustainable, long-term customer activation.",
+        "type": "passage_1"
+      },
+      {
+        "q": 3,
+        "topic": "Supporting idea",
+        "question": "According to the passage, which of the following best describes the concept of 'utility vacuum'?",
+        "options": {
+          "A": "A technical bug in identity verification software that prevents users from registering.",
+          "B": "A state in which enterprise SaaS applications automatically delete inactive user profiles.",
+          "C": "A condition where users lack an operational framework to utilize the software effectively after registering without setup tasks.",
+          "D": "A strategic decision by product teams to eliminate all customization features from user dashboards.",
+          "E": "A psychological barrier that prevents enterprise clients from investing in SaaS platforms."
+        },
+        "correct": "C",
+        "explanation": "Paragraph 2 directly defines the utility vacuum as users lacking an operational framework post-registration, matching Option C.",
+        "passage": "In digital software platforms, product managers frequently face a friction-conversion trade-off during user onboarding. Standard product design doctrine dictates that reducing initial setup friction—such as eliminating multi-step identity verification or mandatory profile configurations—dramatically accelerates immediate user registration rates. However, recent behavioral analytics across enterprise software-as-a-service (SaaS) applications reveal a counterintuitive long-term dynamic: users who experience frictionless onboarding exhibit significantly lower 90-day retention rates and lifetime value compared to users who undergo structured, high-friction onboarding sequences.\n\nThis anomaly can be attributed to the psychological mechanism of cognitive investment. When users complete meaningful setup tasks during onboarding—such as customizing workflow dashboards or establishing team integration protocols—they form an early mental model of the software's functional utility. This initial investment creates a psychological switching cost and increases feature discovery. Conversely, users who bypass these configuration steps frequently experience a 'utility vacuum' post-registration; although successfully onboarded, they lack an immediate operational framework, leading to rapid account abandonment when novel tasks arise.\n\nConsequently, progressive SaaS companies are abandoning pure friction elimination in favor of 'optimized friction.' This strategic approach deliberately introduces targeted setup hurdles designed to induce active user engagement while carefully pruning arbitrary administrative barriers. By treating onboarding as an educational value-exchange rather than a mere acquisition funnel, organizations can align initial conversion metrics with sustainable, long-term customer activation.",
+        "type": "passage_1"
+      },
+      {
+        "q": 4,
+        "topic": "Purpose",
+        "question": "The author mentions 'customizing workflow dashboards or establishing team integration protocols' primarily in order to:",
+        "options": {
+          "A": "highlight administrative barriers that product teams should immediately prune from onboarding.",
+          "B": "prove that identity verification is the single most critical factor in driving user retention.",
+          "C": "contrast enterprise software design with consumer mobile application development.",
+          "D": "illustrate meaningful setup tasks that foster cognitive investment and user retention.",
+          "E": "refute the claim that long-term customer activation depends on feature discovery."
+        },
+        "correct": "D",
+        "explanation": "These examples follow the mention of cognitive investment and illustrate meaningful setup tasks that build mental models and boost retention.",
+        "passage": "In digital software platforms, product managers frequently face a friction-conversion trade-off during user onboarding. Standard product design doctrine dictates that reducing initial setup friction—such as eliminating multi-step identity verification or mandatory profile configurations—dramatically accelerates immediate user registration rates. However, recent behavioral analytics across enterprise software-as-a-service (SaaS) applications reveal a counterintuitive long-term dynamic: users who experience frictionless onboarding exhibit significantly lower 90-day retention rates and lifetime value compared to users who undergo structured, high-friction onboarding sequences.\n\nThis anomaly can be attributed to the psychological mechanism of cognitive investment. When users complete meaningful setup tasks during onboarding—such as customizing workflow dashboards or establishing team integration protocols—they form an early mental model of the software's functional utility. This initial investment creates a psychological switching cost and increases feature discovery. Conversely, users who bypass these configuration steps frequently experience a 'utility vacuum' post-registration; although successfully onboarded, they lack an immediate operational framework, leading to rapid account abandonment when novel tasks arise.\n\nConsequently, progressive SaaS companies are abandoning pure friction elimination in favor of 'optimized friction.' This strategic approach deliberately introduces targeted setup hurdles designed to induce active user engagement while carefully pruning arbitrary administrative barriers. By treating onboarding as an educational value-exchange rather than a mere acquisition funnel, organizations can align initial conversion metrics with sustainable, long-term customer activation.",
+        "type": "passage_1"
+      },
+      {
+        "q": 5,
+        "topic": "Main idea",
+        "question": "Which of the following best expresses the primary objective of the author in writing the passage?",
+        "options": {
+          "A": "To advocate for the complete removal of AI-assisted image analysis tools from hospital radiology departments.",
+          "B": "To demonstrate that traditional economic theories regarding medical malpractice liability are entirely flawless.",
+          "C": "To explain why AI integration has eliminated the need for human oversight in diagnostic imaging.",
+          "D": "To compare the financial profitability of private radiology practices with public hospital networks.",
+          "E": "To analyze an unexpected economic outcome resulting from AI adoption in radiology and suggest a potential policy remedy."
+        },
+        "correct": "E",
+        "explanation": "The passage outlines a paradox, explains its drivers, and concludes with a policy remedy (reimbursement reform), matching Option E.",
+        "passage": "In modern health economics, the rapid adoption of artificial intelligence in diagnostic radiology has ignited a debate regarding physician productivity and care quality. Traditional economic models predicted that integrating AI-assisted image analysis would create a pure substitution effect, automating routine diagnostic scans and thereby reducing overall healthcare expenditure. However, recent empirical data from hospital networks reveals a complex paradox: while AI integration significantly reduces the time required to read individual diagnostic scans, overall healthcare expenditure and total procedure volume per patient have actually increased.\n\nThis economic phenomenon is driven by two distinct mechanisms: diagnostic expansion and defensive medicine. First, AI algorithms possess superior sensitivity in detecting micro-anomalies that human radiologists routinely overlook as clinically benign. Consequently, AI flags a broader spectrum of subtle physiological variations, triggering secondary diagnostic procedures, specialized consultations, and follow-up imaging. Second, because medical malpractice liability standards remain centered on human oversight, physicians frequently order supplementary tests to confirm AI-generated secondary findings, attempting to mitigate legal exposure.\n\nRather than replacing human radiologists, AI technology has reshaped radiology into an iterative, multi-stage diagnostic process. While this shift enhances early detection capabilities for rare conditions, it also risks inflating systemic costs through low-value clinical interventions. Health economists emphasize that mitigating these inflationary pressures requires updating medical reimbursement frameworks to reward diagnostic precision and clinical outcome quality rather than procedure volume.",
+        "type": "passage_2"
+      },
+      {
+        "q": 6,
+        "topic": "Inference",
+        "question": "Based on the passage, the author implies that traditional economic models failed to accurately predict the impact of AI in radiology because they:",
+        "options": {
+          "A": "assumed AI would simply replace human labor without altering the overall volume or pathway of clinical diagnostic care.",
+          "B": "overestimated the technical ability of AI algorithms to detect micro-anomalies in diagnostic scans.",
+          "C": "underestimated the degree to which health insurance companies would subsidize AI software purchases.",
+          "D": "assumed that human radiologists would refuse to adopt new software technologies in clinical practice.",
+          "E": "ignored the fact that AI-assisted scans take significantly longer to complete than manual scans."
+        },
+        "correct": "A",
+        "explanation": "Traditional models predicted a pure substitution effect, but AI actually altered diagnostic pathways and volume, supporting Option A.",
+        "passage": "In modern health economics, the rapid adoption of artificial intelligence in diagnostic radiology has ignited a debate regarding physician productivity and care quality. Traditional economic models predicted that integrating AI-assisted image analysis would create a pure substitution effect, automating routine diagnostic scans and thereby reducing overall healthcare expenditure. However, recent empirical data from hospital networks reveals a complex paradox: while AI integration significantly reduces the time required to read individual diagnostic scans, overall healthcare expenditure and total procedure volume per patient have actually increased.\n\nThis economic phenomenon is driven by two distinct mechanisms: diagnostic expansion and defensive medicine. First, AI algorithms possess superior sensitivity in detecting micro-anomalies that human radiologists routinely overlook as clinically benign. Consequently, AI flags a broader spectrum of subtle physiological variations, triggering secondary diagnostic procedures, specialized consultations, and follow-up imaging. Second, because medical malpractice liability standards remain centered on human oversight, physicians frequently order supplementary tests to confirm AI-generated secondary findings, attempting to mitigate legal exposure.\n\nRather than replacing human radiologists, AI technology has reshaped radiology into an iterative, multi-stage diagnostic process. While this shift enhances early detection capabilities for rare conditions, it also risks inflating systemic costs through low-value clinical interventions. Health economists emphasize that mitigating these inflationary pressures requires updating medical reimbursement frameworks to reward diagnostic precision and clinical outcome quality rather than procedure volume.",
+        "type": "passage_2"
+      },
+      {
+        "q": 7,
+        "topic": "Inference",
+        "question": "The passage mentions 'defensive medicine' in paragraph 2 primarily to explain how:",
+        "options": {
+          "A": "human radiologists can completely eliminate medical malpractice liability by trusting AI outputs.",
+          "B": "legal concerns prompt physicians to order additional confirmatory procedures when AI flags secondary findings.",
+          "C": "AI algorithms protect hospitals from cyber-attacks and electronic health record breaches.",
+          "D": "reimbursement frameworks encourage health economists to prioritize procedure volume over care quality.",
+          "E": "routine diagnostic scans are replaced by low-cost automated testing kits."
+        },
+        "correct": "B",
+        "explanation": "The passage defines defensive medicine as physicians ordering supplementary tests to mitigate legal exposure when AI flags findings, matching Option B.",
+        "passage": "In modern health economics, the rapid adoption of artificial intelligence in diagnostic radiology has ignited a debate regarding physician productivity and care quality. Traditional economic models predicted that integrating AI-assisted image analysis would create a pure substitution effect, automating routine diagnostic scans and thereby reducing overall healthcare expenditure. However, recent empirical data from hospital networks reveals a complex paradox: while AI integration significantly reduces the time required to read individual diagnostic scans, overall healthcare expenditure and total procedure volume per patient have actually increased.\n\nThis economic phenomenon is driven by two distinct mechanisms: diagnostic expansion and defensive medicine. First, AI algorithms possess superior sensitivity in detecting micro-anomalies that human radiologists routinely overlook as clinically benign. Consequently, AI flags a broader spectrum of subtle physiological variations, triggering secondary diagnostic procedures, specialized consultations, and follow-up imaging. Second, because medical malpractice liability standards remain centered on human oversight, physicians frequently order supplementary tests to confirm AI-generated secondary findings, attempting to mitigate legal exposure.\n\nRather than replacing human radiologists, AI technology has reshaped radiology into an iterative, multi-stage diagnostic process. While this shift enhances early detection capabilities for rare conditions, it also risks inflating systemic costs through low-value clinical interventions. Health economists emphasize that mitigating these inflationary pressures requires updating medical reimbursement frameworks to reward diagnostic precision and clinical outcome quality rather than procedure volume.",
+        "type": "passage_2"
+      },
+      {
+        "q": 8,
+        "topic": "Supporting idea",
+        "question": "Which of the following, if true, would most strongly support the health economists' recommendation mentioned in the final sentence?",
+        "options": {
+          "A": "Hospitals that switch to procedure-volume reimbursement models experience a sharp decline in overall patient satisfaction ratings.",
+          "B": "AI algorithms trained on larger datasets exhibit lower sensitivity to micro-anomalies in routine chest X-rays.",
+          "C": "Healthcare networks that implement value-based outcome reimbursement see a significant reduction in unnecessary follow-up procedures without compromising diagnostic accuracy.",
+          "D": "Medical malpractice lawsuits against radiologists have doubled in frequency following the introduction of automated scan readers.",
+          "E": "Traditional diagnostic scanning equipment requires higher maintenance expenditure than AI software subscriptions."
+        },
+        "correct": "C",
+        "explanation": "This directly shows that value-based reimbursement reduces unnecessary procedures without harming accuracy, empirically supporting the economists' recommendation.",
+        "passage": "In modern health economics, the rapid adoption of artificial intelligence in diagnostic radiology has ignited a debate regarding physician productivity and care quality. Traditional economic models predicted that integrating AI-assisted image analysis would create a pure substitution effect, automating routine diagnostic scans and thereby reducing overall healthcare expenditure. However, recent empirical data from hospital networks reveals a complex paradox: while AI integration significantly reduces the time required to read individual diagnostic scans, overall healthcare expenditure and total procedure volume per patient have actually increased.\n\nThis economic phenomenon is driven by two distinct mechanisms: diagnostic expansion and defensive medicine. First, AI algorithms possess superior sensitivity in detecting micro-anomalies that human radiologists routinely overlook as clinically benign. Consequently, AI flags a broader spectrum of subtle physiological variations, triggering secondary diagnostic procedures, specialized consultations, and follow-up imaging. Second, because medical malpractice liability standards remain centered on human oversight, physicians frequently order supplementary tests to confirm AI-generated secondary findings, attempting to mitigate legal exposure.\n\nRather than replacing human radiologists, AI technology has reshaped radiology into an iterative, multi-stage diagnostic process. While this shift enhances early detection capabilities for rare conditions, it also risks inflating systemic costs through low-value clinical interventions. Health economists emphasize that mitigating these inflationary pressures requires updating medical reimbursement frameworks to reward diagnostic precision and clinical outcome quality rather than procedure volume.",
+        "type": "passage_2"
+      },
+      {
+        "q": 9,
+        "topic": "Main idea",
+        "question": "Which of the following best summarizes the primary focus of the passage?",
+        "options": {
+          "A": "A technical comparison proving that centralized command architectures are superior to decentralized mesh networks.",
+          "B": "A history of energy efficiency standards in electric vehicle manufacturing and battery replacement schedules.",
+          "C": "An argument advocating for the total removal of localized collision avoidance software in autonomous fleets.",
+          "D": "An overview of a shift in autonomous fleet coordination, including its benefits, a key trade-off, and an emerging technical solution.",
+          "E": "A mathematical proof demonstrating that exponential latency scaling cannot be solved in autonomous vehicle routing."
+        },
+        "correct": "D",
+        "explanation": "The passage traces the shift from centralized to decentralized architectures, their benefits, the emergent congestion trade-off, and hybrid consensus algorithms as a solution — matching Option D.",
+        "passage": "In autonomous fleet logistics, operational management has shifted from centralized command-and-control architectures to decentralized, agent-based coordination protocols. In centralized systems, a master server continuously processes telemetry data from all autonomous vehicles to calculate global route optimizations. While theoretically optimal for energy efficiency, centralized architectures suffer from critical vulnerabilities: processing latency scales exponentially as fleet size expands, and a single server outage can paralyze the entire logistics network.\n\nDecentralized coordination models, drawing from biological swarm intelligence, eliminate the central master server. Instead, each autonomous vehicle operates as an independent node, executing localized decision-making algorithms to negotiate right-of-way, spatial density, and charging schedules via peer-to-peer mesh networks. If a vehicle encounters an unexpected obstacle or system malfunction, nearby nodes dynamically recalculate their trajectories without waiting for instructions from a central authority. This distributed logic ensures high fault tolerance and near-zero latency scaling.\n\nHowever, decentralization introduces a subtle trade-off known as the 'emergent congestion problem.' Because individual autonomous nodes optimize routes based strictly on immediate, localized sensor data rather than global network visibility, localized decisions can inadvertently cause collective traffic bottlenecks downstream. Software engineers are currently addressing this bottleneck by implementing hybrid consensus algorithms—frameworks where nodes maintain localized autonomy for immediate collision avoidance while periodically exchanging compressed macro-level route summaries across cluster hubs.",
+        "type": "passage_3"
+      },
+      {
+        "q": 10,
+        "topic": "Supporting idea",
+        "question": "According to the passage, a major disadvantage of purely centralized fleet management architectures is that:",
+        "options": {
+          "A": "autonomous vehicles cannot share telemetry data with master servers.",
+          "B": "individual nodes exhibit localized emergency collision avoidance capabilities.",
+          "C": "emergent congestion problems are entirely eliminated across all logistics routes.",
+          "D": "cluster hubs prevent dynamic trajectory recalculations during routine operation.",
+          "E": "system processing delays scale exponentially as the total number of vehicles in the fleet increases."
+        },
+        "correct": "E",
+        "explanation": "Paragraph 1 explicitly states processing latency scales exponentially as fleet size expands, matching Option E.",
+        "passage": "In autonomous fleet logistics, operational management has shifted from centralized command-and-control architectures to decentralized, agent-based coordination protocols. In centralized systems, a master server continuously processes telemetry data from all autonomous vehicles to calculate global route optimizations. While theoretically optimal for energy efficiency, centralized architectures suffer from critical vulnerabilities: processing latency scales exponentially as fleet size expands, and a single server outage can paralyze the entire logistics network.\n\nDecentralized coordination models, drawing from biological swarm intelligence, eliminate the central master server. Instead, each autonomous vehicle operates as an independent node, executing localized decision-making algorithms to negotiate right-of-way, spatial density, and charging schedules via peer-to-peer mesh networks. If a vehicle encounters an unexpected obstacle or system malfunction, nearby nodes dynamically recalculate their trajectories without waiting for instructions from a central authority. This distributed logic ensures high fault tolerance and near-zero latency scaling.\n\nHowever, decentralization introduces a subtle trade-off known as the 'emergent congestion problem.' Because individual autonomous nodes optimize routes based strictly on immediate, localized sensor data rather than global network visibility, localized decisions can inadvertently cause collective traffic bottlenecks downstream. Software engineers are currently addressing this bottleneck by implementing hybrid consensus algorithms—frameworks where nodes maintain localized autonomy for immediate collision avoidance while periodically exchanging compressed macro-level route summaries across cluster hubs.",
+        "type": "passage_3"
+      },
+      {
+        "q": 11,
+        "topic": "Inference",
+        "question": "It can be inferred from the passage that the 'emergent congestion problem' occurs primarily because autonomous nodes in decentralized systems:",
+        "options": {
+          "A": "make routing decisions based on local information without possessing real-time visibility into overall network traffic patterns.",
+          "B": "rely on centralized master servers to calculate localized collision avoidance maneuvers.",
+          "C": "fail to execute localized decision-making algorithms when encountering obstacles.",
+          "D": "transmit uncompressed macro-level route summaries across peer-to-peer networks continuously.",
+          "E": "experience single-point server outages that halt trajectory recalculations."
+        },
+        "correct": "A",
+        "explanation": "Paragraph 3 attributes emergent congestion to nodes optimizing based on local sensor data without global network visibility, matching Option A.",
+        "passage": "In autonomous fleet logistics, operational management has shifted from centralized command-and-control architectures to decentralized, agent-based coordination protocols. In centralized systems, a master server continuously processes telemetry data from all autonomous vehicles to calculate global route optimizations. While theoretically optimal for energy efficiency, centralized architectures suffer from critical vulnerabilities: processing latency scales exponentially as fleet size expands, and a single server outage can paralyze the entire logistics network.\n\nDecentralized coordination models, drawing from biological swarm intelligence, eliminate the central master server. Instead, each autonomous vehicle operates as an independent node, executing localized decision-making algorithms to negotiate right-of-way, spatial density, and charging schedules via peer-to-peer mesh networks. If a vehicle encounters an unexpected obstacle or system malfunction, nearby nodes dynamically recalculate their trajectories without waiting for instructions from a central authority. This distributed logic ensures high fault tolerance and near-zero latency scaling.\n\nHowever, decentralization introduces a subtle trade-off known as the 'emergent congestion problem.' Because individual autonomous nodes optimize routes based strictly on immediate, localized sensor data rather than global network visibility, localized decisions can inadvertently cause collective traffic bottlenecks downstream. Software engineers are currently addressing this bottleneck by implementing hybrid consensus algorithms—frameworks where nodes maintain localized autonomy for immediate collision avoidance while periodically exchanging compressed macro-level route summaries across cluster hubs.",
+        "type": "passage_3"
+      },
+      {
+        "q": 12,
+        "topic": "Inference",
+        "question": "The author describes hybrid consensus algorithms as a mechanism in which autonomous vehicles:",
+        "options": {
+          "A": "abandon peer-to-peer communication entirely in favor of static satellite telemetry.",
+          "B": "retain localized operational independence while sharing broader route summaries to optimize macro-level traffic.",
+          "C": "delegate immediate collision avoidance choices to a centralized master server hub.",
+          "D": "require human operator intervention whenever localized traffic bottlenecks emerge.",
+          "E": "increase processing latency exponentially to achieve total network energy efficiency."
+        },
+        "correct": "B",
+        "explanation": "Hybrid consensus algorithms are defined as maintaining localized autonomy while periodically exchanging compressed macro-level route summaries, matching Option B.",
+        "passage": "In autonomous fleet logistics, operational management has shifted from centralized command-and-control architectures to decentralized, agent-based coordination protocols. In centralized systems, a master server continuously processes telemetry data from all autonomous vehicles to calculate global route optimizations. While theoretically optimal for energy efficiency, centralized architectures suffer from critical vulnerabilities: processing latency scales exponentially as fleet size expands, and a single server outage can paralyze the entire logistics network.\n\nDecentralized coordination models, drawing from biological swarm intelligence, eliminate the central master server. Instead, each autonomous vehicle operates as an independent node, executing localized decision-making algorithms to negotiate right-of-way, spatial density, and charging schedules via peer-to-peer mesh networks. If a vehicle encounters an unexpected obstacle or system malfunction, nearby nodes dynamically recalculate their trajectories without waiting for instructions from a central authority. This distributed logic ensures high fault tolerance and near-zero latency scaling.\n\nHowever, decentralization introduces a subtle trade-off known as the 'emergent congestion problem.' Because individual autonomous nodes optimize routes based strictly on immediate, localized sensor data rather than global network visibility, localized decisions can inadvertently cause collective traffic bottlenecks downstream. Software engineers are currently addressing this bottleneck by implementing hybrid consensus algorithms—frameworks where nodes maintain localized autonomy for immediate collision avoidance while periodically exchanging compressed macro-level route summaries across cluster hubs.",
+        "type": "passage_3"
+      },
+      {
+        "q": 13,
+        "topic": "Organization of ideas",
+        "question": "Based on the passage, the relationship between centralized and decentralized architectures in autonomous fleet logistics can best be described as:",
+        "options": {
+          "A": "a historical progression where centralized systems completely solved traffic congestion before decentralized systems were introduced.",
+          "B": "a situation where decentralized systems are less resilient to node hardware failures than centralized systems.",
+          "C": "a trade-off between global optimization with high vulnerability versus localized fault tolerance with potential macro-level inefficiencies.",
+          "D": "an identical technical approach utilizing the same master server infrastructure.",
+          "E": "a technological compromise where centralized master servers perform localized collision avoidance."
+        },
+        "correct": "C",
+        "explanation": "Centralized systems offer global optimization but are vulnerable; decentralized systems offer fault tolerance but risk macro-level inefficiency — Option C synthesizes this trade-off.",
+        "passage": "In autonomous fleet logistics, operational management has shifted from centralized command-and-control architectures to decentralized, agent-based coordination protocols. In centralized systems, a master server continuously processes telemetry data from all autonomous vehicles to calculate global route optimizations. While theoretically optimal for energy efficiency, centralized architectures suffer from critical vulnerabilities: processing latency scales exponentially as fleet size expands, and a single server outage can paralyze the entire logistics network.\n\nDecentralized coordination models, drawing from biological swarm intelligence, eliminate the central master server. Instead, each autonomous vehicle operates as an independent node, executing localized decision-making algorithms to negotiate right-of-way, spatial density, and charging schedules via peer-to-peer mesh networks. If a vehicle encounters an unexpected obstacle or system malfunction, nearby nodes dynamically recalculate their trajectories without waiting for instructions from a central authority. This distributed logic ensures high fault tolerance and near-zero latency scaling.\n\nHowever, decentralization introduces a subtle trade-off known as the 'emergent congestion problem.' Because individual autonomous nodes optimize routes based strictly on immediate, localized sensor data rather than global network visibility, localized decisions can inadvertently cause collective traffic bottlenecks downstream. Software engineers are currently addressing this bottleneck by implementing hybrid consensus algorithms—frameworks where nodes maintain localized autonomy for immediate collision avoidance while periodically exchanging compressed macro-level route summaries across cluster hubs.",
+        "type": "passage_3"
+      },
+      {
+        "q": 14,
+        "topic": "Inference",
+        "question": "A national chain of fitness centers recently implemented a policy offering a 20 percent discount on annual membership renewals to members who complete at least twelve workout sessions per month. Management reasoned that this policy would increase overall annual revenue by boosting long-term member retention. However, three months after the policy's implementation, total revenue from annual membership renewals decreased significantly compared to the same period last year. Which of the following, if true, most helps to explain the unexpected decrease in renewal revenue?",
+        "options": {
+          "A": "The fitness center chain spent ten percent more on digital advertising during the past three months than it did during the same period last year.",
+          "B": "Several competing fitness chains in major metropolitan areas raised their monthly membership rates during the past quarter.",
+          "C": "Members who attend fewer than four workout sessions per month rarely renew their annual memberships regardless of discount incentives.",
+          "D": "Nearly all members who qualified for the discount were dedicated fitness enthusiasts who would have renewed their annual memberships at full price.",
+          "E": "The cost of maintaining specialized exercise equipment across the fitness centers increased slightly over the past three months."
+        },
+        "correct": "D",
+        "explanation": "If members who qualified for the discount were already going to renew at full price, the chain simply gave away a discount without gaining new renewals, explaining the revenue drop.",
+        "type": "critical_reasoning"
+      },
+      {
+        "q": 15,
+        "topic": "Supporting idea",
+        "question": "A city transit authority plans to replace its existing fleet of diesel buses with electric buses. City officials argue that this transition will significantly lower the city's overall carbon emissions over the next five years. Which of the following, if true, most strongly supports the city officials' argument?",
+        "options": {
+          "A": "Electric buses require less frequent mechanical brake maintenance than traditional diesel buses.",
+          "B": "The upfront purchase price of an electric bus is currently thirty percent higher than that of a comparable diesel bus.",
+          "C": "Most public transit passengers report a preference for the quieter cabin environment of electric buses.",
+          "D": "Surrounding suburban municipalities have announced plans to expand their regional diesel train commuter networks.",
+          "E": "The local electricity grid that will charge the new buses derives over eighty percent of its power from zero-emission hydroelectric and solar facilities."
+        },
+        "correct": "E",
+        "explanation": "If the charging grid relies on fossil fuels, emissions might not decrease; Option E confirms the grid is largely zero-emission, strongly supporting the officials' argument.",
+        "type": "critical_reasoning"
+      },
+      {
+        "q": 16,
+        "topic": "Identify assumptions",
+        "question": "Commercial airlines recently introduced automated self-service baggage drop kiosks at major airport hubs. Airline executives claimed that this initiative would reduce average passenger check-in wait times by forty percent because automated processing takes less time per passenger than manual counter check-in. The executives' argument depends on which of the following assumptions?",
+        "options": {
+          "A": "Passengers using the self-service kiosks will not experience frequent technical errors or confusion that requires assistance from airport staff.",
+          "B": "The airline will eliminate all traditional manual check-in counters at major airport hubs within the next year.",
+          "C": "Passengers carrying oversized or overweight luggage are prohibited from using automated self-service kiosks.",
+          "D": "Competing commercial airlines have already successfully deployed automated baggage kiosks at regional airports.",
+          "E": "Average passenger check-in wait times at non-hub airports are currently shorter than those at major hub airports."
+        },
+        "correct": "A",
+        "explanation": "If kiosk use is slowed by frequent technical errors requiring staff help, the speed advantage disappears; the argument depends on this not happening (negation test confirms Option A).",
+        "type": "critical_reasoning"
+      },
+      {
+        "q": 17,
+        "topic": "Inference",
+        "question": "A agricultural study noted that farms utilizing drip irrigation systems use forty percent less water per acre than farms utilizing traditional flood irrigation. The lead researcher concluded that if all regional farms adopt drip irrigation, the total agricultural water consumption in the region will decrease by forty percent. Which of the following would be most useful to evaluate the researcher's conclusion?",
+        "options": {
+          "A": "Whether drip irrigation equipment is manufactured locally or imported from foreign suppliers.",
+          "B": "Whether farmers who adopt drip irrigation plan to expand their total cultivated acreage using the saved water.",
+          "C": "Whether crop yields per acre under flood irrigation vary significantly depending on seasonal rainfall patterns.",
+          "D": "Whether regional municipal water rates for residential consumers have increased over the past decade.",
+          "E": "Whether neighboring agricultural regions have implemented government subsidies for water conservation technology."
+        },
+        "correct": "B",
+        "explanation": "If farmers expand cultivated acreage using the saved water, total consumption may not fall by 40% (Jevons paradox); Option B is critical to evaluating the conclusion.",
+        "type": "critical_reasoning"
+      },
+      {
+        "q": 18,
+        "topic": "Purpose",
+        "question": "Corporate leadership at a technology company recently mandated that all software engineers return to the physical office three days per week. The CEO argued that physical proximity fosters spontaneous collaboration, which is essential for developing innovative product features. However, several senior engineering managers object, claiming that forced office attendance increases daily commuting stress and significantly reduces overall software development productivity. In the argument given, the two boldface portions play which of the following roles?",
+        "options": {
+          "A": "The first is a premise used to support the CEO's main conclusion; the second is that main conclusion.",
+          "B": "The first is the CEO's main conclusion; the second is a consideration offered to support that conclusion.",
+          "C": "The first is an intermediate claim offered in support of a policy decision; the second is a counter-claim used to challenge that policy decision.",
+          "D": "The first is a factual observation that contradicts the CEO's argument; the second is the senior managers' main conclusion.",
+          "E": "The first and the second are competing evidence offered in support of the exact same policy recommendation."
+        },
+        "correct": "C",
+        "explanation": "The first boldface supports the CEO's policy; the second is a counter-claim from managers challenging it, matching Option C.",
+        "type": "critical_reasoning"
+      },
+      {
+        "q": 19,
+        "topic": "Inference",
+        "question": "Over the past five years, a coastal municipality recorded a thirty percent increase in residential building permits issued for beachfront properties. During the exact same five-year period, municipal records indicate that total annual expenditure on public beach erosion control and sand replenishment projects increased by over fifty percent. If the statements above are true, which of the following must also be true on the basis of them?",
+        "options": {
+          "A": "The construction of beachfront residential properties directly causes severe coastal beach erosion.",
+          "B": "Municipal tax revenues collected from beachfront property owners exceeded the total expenditure on sand replenishment projects.",
+          "C": "Property values for beachfront residential real estate decreased significantly over the past five years.",
+          "D": "Five years ago, the municipality issued fewer residential building permits for beachfront properties than it did in the most recent year.",
+          "E": "The municipality will ban all future residential construction on beachfront properties within the next five years."
+        },
+        "correct": "D",
+        "explanation": "A 30% increase over five years necessarily means more permits were issued recently than five years ago; this must be true, unlike the other unsupported claims.",
+        "type": "critical_reasoning"
+      },
+      {
+        "q": 20,
+        "topic": "Inference",
+        "question": "A pharmaceutical company developed a new oral medication designed to lower blood pressure. In clinical trials, patients taking the new medication experienced a statistically significant reduction in blood pressure compared to those taking a placebo. Surprisingly, however, patients taking the new medication reported a higher rate of overall cardiovascular events during the twelve-month trial period than did patients in the placebo group. Which of the following, if true, most helps to resolve the apparent paradox described above?",
+        "options": {
+          "A": "The placebo used in the clinical trials was composed of an inert sugar pill that had no physiological effects.",
+          "B": "The cost of producing the new oral medication is higher than the production cost of existing blood pressure treatments.",
+          "C": "Most patients in both the treatment group and the placebo group maintained regular exercise routines during the trial.",
+          "D": "The clinical trial was conducted across fifteen different medical research hospitals in three countries.",
+          "E": "The new medication causes severe sudden heart rate fluctuations as a side effect, which can trigger acute cardiovascular events despite lower average blood pressure."
+        },
+        "correct": "E",
+        "explanation": "Option E identifies an independent side effect (heart rate fluctuations) that explains how cardiovascular events rose despite lower blood pressure, resolving the paradox.",
+        "type": "critical_reasoning"
+      },
+      {
+        "q": 21,
+        "topic": "Identify flaws",
+        "question": "A university administrator noted that students who participate in extracurricular student organizations have a higher average grade point average (GPA) upon graduation than students who do not participate in any student organizations. The administrator concluded that joining student organizations causes students to perform better academically. The reasoning in the administrator's argument is flawed because it:",
+        "options": {
+          "A": "fails to consider that the observed correlation may be due to reverse causation or pre-existing student traits, such as higher motivation.",
+          "B": "assumes that all student organizations require members to maintain a minimum GPA to remain active.",
+          "C": "relies on a sample of students that is too small to be statistically representative of the university population.",
+          "D": "confuses a necessity for academic success with a sufficient condition for graduation.",
+          "E": "uses emotional language rather than empirical evidence to support its main conclusion."
+        },
+        "correct": "A",
+        "explanation": "The argument commits a correlation-to-causation fallacy, ignoring that a third factor like motivation could explain both joining organizations and higher GPA, matching Option A.",
+        "type": "critical_reasoning"
+      },
+      {
+        "q": 22,
+        "topic": "Inference",
+        "question": "A retail grocery chain recently introduced digital price tags across all its stores. Management expected this technology to increase profit margins by allowing dynamic pricing—raising prices during peak shopping hours. However, six months after implementation, overall profit margins across all stores decreased. Which of the following, if true, most helps to explain the decrease in profit margins?",
+        "options": {
+          "A": "Digital price tags require less manual labor to update than traditional paper price tags.",
+          "B": "Price-sensitive shoppers noticed higher prices during peak hours and shifted their purchases to competing grocery stores or off-peak hours.",
+          "C": "The grocery chain spent funds on training store employees how to operate the digital price tag software.",
+          "D": "Several luxury item suppliers raised their wholesale prices to the grocery chain during the past six months.",
+          "E": "The energy consumption of digital price tags is negligible compared to store lighting and refrigeration."
+        },
+        "correct": "B",
+        "explanation": "Shoppers switching to competitors or off-peak buying due to peak-hour price hikes directly explains the drop in profit margins, matching Option B.",
+        "type": "critical_reasoning"
+      },
+      {
+        "q": 23,
+        "topic": "Evaluate an argument",
+        "question": "A city council proposed building a dedicated elevated bus lane along a congested major thoroughfare. Opponents argue that reducing car lanes from three to two will drastically increase commuter traffic congestion for automobiles. Proponents respond that the elevated bus lane will encourage many current drivers to switch to rapid bus transit, thereby reducing total automobile volume on the road. Which of the following, if true, most strongly supports the proponents' response?",
+        "options": {
+          "A": "Elevated bus lanes cost more to construct per mile than ground-level light rail lines.",
+          "B": "Automobile traffic congestion along the thoroughfare is currently worse during the morning rush hour than during the evening rush hour.",
+          "C": "Surveys show that over sixty percent of daily automobile commuters on the thoroughfare cite unpredictable traffic delays as their main frustration and would switch to rapid bus transit if travel times were guaranteed.",
+          "D": "Surrounding residential neighborhoods have voiced concerns regarding construction noise during the building phase of the elevated bus lane.",
+          "E": "Municipal parking fees in the city center have remained unchanged for the past three years."
+        },
+        "correct": "C",
+        "explanation": "Direct survey evidence that a majority of commuters would switch to guaranteed-time bus transit strongly supports the proponents' claim that automobile volume will drop.",
+        "type": "critical_reasoning"
+      }
+    ],
+    "Data Insights": [
+      {
+        "q": 1,
+        "topic": "Multi-Source Reasoning",
+        "question": "What was the excess payout attributed to duplicate inventory billing in the North branch?",
+        "options": {
+          "A": "3.68 lakhs",
+          "B": "5.52 lakhs",
+          "C": "8.05 lakhs",
+          "D": "9.20 lakhs",
+          "E": "13.80 lakhs"
+        },
+        "correct": "A",
+        "explanation": "North branch = 40% of 23 lakhs = 9.2 lakhs. Duplicate inventory billing = 40% of 9.2 = 3.68 lakhs.",
+        "type": "scenario_1_pharmacy_network_audit"
+      },
+      {
+        "q": 2,
+        "topic": "Multi-Source Reasoning",
+        "question": "What is the absolute difference in the total excess payout between the East branch and the South branch?",
+        "options": {
+          "A": "1.15 lakhs",
+          "B": "2.30 lakhs",
+          "C": "3.45 lakhs",
+          "D": "4.60 lakhs",
+          "E": "8.05 lakhs"
+        },
+        "correct": "B",
+        "explanation": "South = 25% of 23 = 5.75 lakhs. East = 35% of 23 = 8.05 lakhs. Difference = 8.05 - 5.75 = 2.30 lakhs.",
+        "type": "scenario_1_pharmacy_network_audit"
+      },
+      {
+        "q": 3,
+        "topic": "Multi-Source Reasoning",
+        "question": "If the total excess payout for the period April 2025 through March 2026 had been reduced by exactly five lakhs uniformly across all branches proportional to their current share, what would have been the revised excess payout for the East branch?",
+        "options": {
+          "A": "4.50 lakhs",
+          "B": "5.25 lakhs",
+          "C": "6.30 lakhs",
+          "D": "7.00 lakhs",
+          "E": "8.05 lakhs"
+        },
+        "correct": "C",
+        "explanation": "New total = 23 - 5 = 18 lakhs. East retains 35% share: 0.35 × 18 = 6.30 lakhs.",
+        "type": "scenario_1_pharmacy_network_audit"
+      },
+      {
+        "q": 4,
+        "topic": "Data Sufficiency",
+        "question": "For the ITL Unified Staffing ecosystem, a dedicated server processes AI resume parsing batches. Is the total number of resumes processed in a single 24-hour day greater than 5000?\n\n(1) The server processes resumes at a constant rate of 250 resumes per hour for exactly 24 hours.\n(2) The server processes exactly 1500 resumes every 6 hours.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "D",
+        "explanation": "Statement (1): 250×24=6000>5000, sufficient. Statement (2): 1500×4 (four 6-hr blocks)=6000>5000, sufficient. Each statement alone is sufficient.",
+        "type": "data_sufficiency_set_1"
+      },
+      {
+        "q": 5,
+        "topic": "Data Sufficiency",
+        "question": "In the LXN political election campaign management ERP system, role-based access control strictly divides all users into either Admins or Managers. What is the ratio of Admins to Managers?\n\n(1) The total number of users in the system is strictly less than 100.\n(2) The number of Admins is a prime number.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "E",
+        "explanation": "Neither statement gives concrete counts for both groups; even combined, multiple ratios remain possible (e.g., 2:50 or 7:10). Not sufficient.",
+        "type": "data_sufficiency_set_1"
+      },
+      {
+        "q": 6,
+        "topic": "Data Sufficiency",
+        "question": "For the Flexi Versa 1 C-PaaS ecosystem, the monthly subscription revenue is calculated as the number of active users multiplied by the subscription fee per user. Did the monthly subscription revenue increase from May to June?\n\n(1) From May to June, the number of active users increased by 20 percent and the subscription fee per user remained constant.\n(2) In June, the subscription fee per user was exactly fifty dollars.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "A",
+        "explanation": "Statement (1): users up 20%, fee constant, so revenue up 20% — definitively 'Yes', sufficient. Statement (2) gives only June's fee with no comparison to May — not sufficient.",
+        "type": "data_sufficiency_set_1"
+      },
+      {
+        "q": 7,
+        "topic": "Data Sufficiency",
+        "question": "At Sagar Hospitals, patients are assigned to one of two wards: General or Specialized. Is the number of patients in the Specialized ward strictly greater than 100?\n\n(1) The total number of patients currently admitted in the hospital is greater than 150.\n(2) The number of patients in the Specialized ward is exactly fifty percent more than 80.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "B",
+        "explanation": "Statement (1) gives no ward breakdown, not sufficient. Statement (2): 80+40=120>100, definitively 'Yes', sufficient alone.",
+        "type": "data_sufficiency_set_1"
+      },
+      {
+        "q": 8,
+        "topic": "Multi-Source Reasoning",
+        "question": "How many investors hold shares in both The Maroon Estate and The Gold Manor simultaneously?",
+        "options": {
+          "A": "40",
+          "B": "80",
+          "C": "100",
+          "D": "120",
+          "E": "140"
+        },
+        "correct": "C",
+        "explanation": "At least one property = 400-40=360. Maroon=240, Gold=220. 360=240+220-Both → Both=100.",
+        "type": "scenario_2_real_estate_investment_portfolios"
+      },
+      {
+        "q": 9,
+        "topic": "Multi-Source Reasoning",
+        "question": "What is the ratio of investors who hold shares exclusively in The Maroon Estate to those who hold shares exclusively in The Gold Manor?",
+        "options": {
+          "A": "5 to 4",
+          "B": "6 to 5",
+          "C": "3 to 2",
+          "D": "7 to 6",
+          "E": "4 to 3"
+        },
+        "correct": "D",
+        "explanation": "Exclusive Maroon = 240-100=140. Exclusive Gold = 220-100=120. Ratio = 140:120 = 7:6.",
+        "type": "scenario_2_real_estate_investment_portfolios"
+      },
+      {
+        "q": 10,
+        "topic": "Multi-Source Reasoning",
+        "question": "If twenty investors who currently hold shares in both properties sell their shares in The Gold Manor but retain their shares in The Maroon Estate, how many investors will then hold shares exclusively in The Maroon Estate?",
+        "options": {
+          "A": "100",
+          "B": "120",
+          "C": "140",
+          "D": "150",
+          "E": "160"
+        },
+        "correct": "E",
+        "explanation": "20 investors move from 'Both' to 'Exclusive Maroon': 140+20=160.",
+        "type": "scenario_2_real_estate_investment_portfolios"
+      },
+      {
+        "q": 11,
+        "topic": "Multi-Source Reasoning",
+        "question": "What is the total battery unit consumption per hour for all drones currently operating in the Intercept state combined?",
+        "options": {
+          "A": "300 units",
+          "B": "350 units",
+          "C": "400 units",
+          "D": "450 units",
+          "E": "500 units"
+        },
+        "correct": "A",
+        "explanation": "Intercept drones = 30% of 200 = 60. Consumption = 60×5 = 300 units/hour.",
+        "type": "scenario_3_autonomous_drone_defense_fleet"
+      },
+      {
+        "q": 12,
+        "topic": "Multi-Source Reasoning",
+        "question": "What is the absolute difference between the number of drones assigned to the Patrol state and the number of drones assigned to the Recharge state?",
+        "options": {
+          "A": "30",
+          "B": "40",
+          "C": "50",
+          "D": "60",
+          "E": "70"
+        },
+        "correct": "B",
+        "explanation": "Patrol=45% of 200=90. Recharge=25% of 200=50 (remainder after 45%+30%). Difference=90-50=40.",
+        "type": "scenario_3_autonomous_drone_defense_fleet"
+      },
+      {
+        "q": 13,
+        "topic": "Multi-Source Reasoning",
+        "question": "If emergency protocols trigger twenty drones to be reassigned from the Patrol state directly to the Intercept state, what will be the new total battery consumption per hour for the entire fleet?",
+        "options": {
+          "A": "420 units",
+          "B": "480 units",
+          "C": "540 units",
+          "D": "600 units",
+          "E": "660 units"
+        },
+        "correct": "C",
+        "explanation": "Original: Patrol 90×2=180, Intercept 60×5=300, total=480. Moving 20: removes 40 (Patrol), adds 100 (Intercept), net +60. New total=480+60=540 units/hr.",
+        "type": "scenario_3_autonomous_drone_defense_fleet"
+      },
+      {
+        "q": 14,
+        "topic": "Data Sufficiency",
+        "question": "In the LXN ERP system, stringent security compliance requires users to reset their passwords every X days, where X is an integer. Is X strictly greater than 60?\n\n(1) X is a prime number strictly between 61 and 71.\n(2) X is an odd integer strictly between 62 and 66.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "D",
+        "explanation": "Statement (1): only prime in (61,71) is 67>60, sufficient. Statement (2): possible values 63, 65, both >60, sufficient. Each statement alone is sufficient.",
+        "type": "data_sufficiency_set_2"
+      },
+      {
+        "q": 15,
+        "topic": "Data Sufficiency",
+        "question": "The Flexi Versa 1 platform charges corporate clients a one-time setup fee plus a fixed monthly subscription fee. What is the exact amount of the one-time setup fee in dollars?\n\n(1) The total cost for 6 months of service, including the setup fee, is exactly twelve hundred dollars.\n(2) The fixed monthly subscription fee is strictly less than two hundred dollars.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "E",
+        "explanation": "Statement (1): S+6M=1200, one equation two unknowns, not sufficient. Statement (2): M<200, no concrete value, not sufficient. Together: multiple (S,M) pairs remain valid (e.g., M=100,S=600 or M=150,S=300) — not sufficient.",
+        "type": "data_sufficiency_set_2"
+      },
+      {
+        "q": 16,
+        "topic": "Data Sufficiency",
+        "question": "The ITL Unified Staffing platform evaluates potential applicants on an automated score ranging from 1 to 100. Did applicant Y achieve a score strictly above 85?\n\n(1) Applicant Y's score is a multiple of 11 that is strictly between 80 and 95.\n(2) Applicant Y's score is an even number.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "A",
+        "explanation": "Statement (1): only multiple of 11 in (80,95) is 88>85, definitively 'Yes', sufficient. Statement (2) alone doesn't confirm above 85, not sufficient.",
+        "type": "data_sufficiency_set_2"
+      },
+      {
+        "q": 17,
+        "topic": "Data Sufficiency",
+        "question": "Medical administrators at Sagar Hospitals track the average recovery time of patients admitted to the orthopedics ward. Is the average recovery time for the current cohort of patients exactly 14 days?\n\n(1) The average recovery time for the cohort is between 10 and 20 days.\n(2) The total cumulative recovery time for the 10 patients in the cohort is exactly 140 days.",
+        "options": {
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
+        },
+        "correct": "B",
+        "explanation": "Statement (1) gives only a range, not sufficient. Statement (2): average = 140/10 = 14 days exactly, definitively 'Yes', sufficient alone.",
+        "type": "data_sufficiency_set_2"
+      },
+      {
+        "q": 18,
+        "topic": "Multi-Source Reasoning",
+        "question": "What is the flat base design fee charged by the agency for the wedding cards?",
+        "options": {
+          "A": "100 rupees",
+          "B": "200 rupees",
+          "C": "300 rupees",
+          "D": "400 rupees",
+          "E": "500 rupees"
+        },
+        "correct": "C",
+        "explanation": "B+50W=800 and B+80W=1100. Subtracting: 30W=300, W=10. B=800-500=300 rupees.",
+        "type": "scenario_4_translation_agency_pricing"
+      },
+      {
+        "q": 19,
+        "topic": "Multi-Source Reasoning",
+        "question": "How much would the agency charge in total for a premium wedding card containing exactly one hundred and twenty words?",
+        "options": {
+          "A": "1200 rupees",
+          "B": "1300 rupees",
+          "C": "1400 rupees",
+          "D": "1500 rupees",
+          "E": "1600 rupees"
+        },
+        "correct": "D",
+        "explanation": "Total = B+120W = 300+1200 = 1500 rupees.",
+        "type": "scenario_4_translation_agency_pricing"
+      },
+      {
+        "q": 20,
+        "topic": "Multi-Source Reasoning",
+        "question": "If a seasonal discount reduced the per-word translation fee by exactly twenty percent while leaving the base design fee unchanged, what would be the new total cost for an extended card containing eighty words?",
+        "options": {
+          "A": "820 rupees",
+          "B": "860 rupees",
+          "C": "880 rupees",
+          "D": "900 rupees",
+          "E": "940 rupees"
+        },
+        "correct": "E",
+        "explanation": "New per-word fee = 10×0.8 = 8. Total = 300+80×8 = 300+640 = 940 rupees.",
+        "type": "scenario_4_translation_agency_pricing"
+      }
+    ]
+  }
+}

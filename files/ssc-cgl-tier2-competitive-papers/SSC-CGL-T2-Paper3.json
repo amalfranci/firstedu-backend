@@ -1,0 +1,1968 @@
+{
+  "paper_id": "SSC-CGL-T2-Paper3",
+  "title": "SSC CGL Tier 2 Paper 3",
+  "exam": "SSC CGL Tier 2",
+  "year": 2026,
+  "subjects": {
+    "Mathematical Abilities": [
+      {
+        "q": 1,
+        "topic": "Trigonometry",
+        "question": "If the price of sugar increases by 25%, by what percentage must a household decrease its consumption so that the expenditure remains unchanged?",
+        "options": {
+          "A": "15%",
+          "B": "20%",
+          "C": "25%",
+          "D": "30%"
+        },
+        "correct": "B",
+        "explanation": "Percentage reduction in consumption = (r / (100 + r)) * 100 = (25 / 125) * 100 = 20%. Alternatively, since expenditure is constant, consumption is inversely proportional to price, dropping from 5 to 4 (a 20% drop)."
+      },
+      {
+        "q": 2,
+        "topic": "Compound interest",
+        "question": "A sum of money placed at compound interest doubles itself in 4 years. In how many years will it amount to 16 times itself?",
+        "options": {
+          "A": "12 years",
+          "B": "14 years",
+          "C": "16 years",
+          "D": "20 years"
+        },
+        "correct": "C",
+        "explanation": "If a sum becomes 2 times in 4 years, it will become 2^k times in 4 * k years. We need 16 times, which is 2^4. Therefore, time = 4 * 4 = 16 years."
+      },
+      {
+        "q": 3,
+        "topic": "Number Systems",
+        "question": "The HCF of two numbers is 8 and their LCM is 48. If one number is 24, find the other number.",
+        "options": {
+          "A": "12",
+          "B": "16",
+          "C": "18",
+          "D": "32"
+        },
+        "correct": "B",
+        "explanation": "The product of two numbers equals the product of their HCF and LCM. Let the other number be y. Then 24 * y = 8 * 48, which gives y = (8 * 48) / 24 = 16."
+      },
+      {
+        "q": 4,
+        "topic": "Averages",
+        "question": "The average weight of 30 students in a class is 50 kg. If the weight of the teacher is included, the average weight increases by 1 kg. Find the weight of the teacher.",
+        "options": {
+          "A": "75 kg",
+          "B": "79 kg",
+          "C": "80 kg",
+          "D": "81 kg"
+        },
+        "correct": "D",
+        "explanation": "Total weight of 30 students = 30 * 50 = 1500 kg. When the teacher is included, total persons = 31, and the new average is 51 kg. Total weight = 31 * 51 = 1581 kg. The weight of the teacher is 1581 - 1500 = 81 kg."
+      },
+      {
+        "q": 5,
+        "topic": "Trigonometry",
+        "question": "If A is 40% less than B, then B is what percentage more than A?",
+        "options": {
+          "A": "40%",
+          "B": "50%",
+          "C": "60%",
+          "D": "66.67%"
+        },
+        "correct": "D",
+        "explanation": "Let B = 100. Since A is 40% less than B, A = 60. The percentage by which B is more than A is ((B - A) / A) * 100 = ((100 - 60) / 60) * 100 = (40 / 60) * 100 = 66.67%."
+      },
+      {
+        "q": 6,
+        "topic": "Trigonometry",
+        "question": "A shopkeeper allows a 20% discount on the marked price of an article and still makes a profit of 20%. If the cost price of the article is 500, find its marked price.",
+        "options": {
+          "A": "650",
+          "B": "700",
+          "C": "750",
+          "D": "800"
+        },
+        "correct": "C",
+        "explanation": "Since the cost price is 500 and the profit is 20%, the selling price is 500 * 1.20 = 600. With a 20% discount, selling price is 80% of the marked price (MP). Thus, 0.80 * MP = 600, giving MP = 600 / 0.80 = 750."
+      },
+      {
+        "q": 7,
+        "topic": "Time and work",
+        "question": "A can complete a piece of work in 12 days and B in 18 days. They worked together for 4 days, after which A left. How long will B take to complete the remaining work?",
+        "options": {
+          "A": "6 days",
+          "B": "7 days",
+          "C": "7.5 days",
+          "D": "8 days"
+        },
+        "correct": "D",
+        "explanation": "Let total work be 36 units (LCM of 12 and 18). A's 1-day work = 3 units, B's 1-day work = 2 units. Together for 4 days, they complete 4 * (3 + 2) = 20 units. Remaining work = 36 - 20 = 16 units. B alone takes 16 / 2 = 8 days to finish the remaining work."
+      },
+      {
+        "q": 8,
+        "topic": "Trigonometry",
+        "question": "A, B and C invest in a business in the ratio 3 : 5 : 7. The duration of their investments is in the ratio 2 : 3 : 4. If the total annual profit is 14,700, find the share of B.",
+        "options": {
+          "A": "3,600",
+          "B": "4,200",
+          "C": "4,500",
+          "D": "5,400"
+        },
+        "correct": "C",
+        "explanation": "The profit ratio is the product of investment and time: (3*2) : (5*3) : (7*4) = 6 : 15 : 28. Sum of ratio parts = 6 + 15 + 28 = 49 parts. 1 part = 14700 / 49 = 300. B's share is 15 parts, which equals 15 * 300 = 4,500."
+      },
+      {
+        "q": 9,
+        "topic": "Trigonometry",
+        "question": "In a triangle ABC, AB = 12 cm, AC = 16 cm, and the length of the median AD to side BC is 10 cm. Find the length of side BC.",
+        "options": {
+          "A": "15 cm",
+          "B": "18 cm",
+          "C": "20 cm",
+          "D": "24 cm"
+        },
+        "correct": "C",
+        "explanation": "Applying Apollonius's theorem: AB^2 + AC^2 = 2 * (AD^2 + BD^2). Substituting values: 12^2 + 16^2 = 2 * (10^2 + BD^2) -> 144 + 256 = 2 * (100 + BD^2) -> 400 = 200 + 2 * BD^2 -> BD = 10 cm. Since AD is a median, BC = 2 * BD = 20 cm."
+      },
+      {
+        "q": 10,
+        "topic": "Mixture and allegation",
+        "question": "A vessel contains 200 litres of pure milk. 20 litres of milk is withdrawn and replaced with water. This process is repeated a second time. What is the final quantity of milk left in the vessel?",
+        "options": {
+          "A": "162 litres",
+          "B": "160 litres",
+          "C": "158 litres",
+          "D": "150 litres"
+        },
+        "correct": "A",
+        "explanation": "Remaining pure quantity formula: Final = Initial * (1 - withdrawal/total)^n. Here Initial = 200, withdrawal = 20, total = 200, n = 2. Remaining milk = 200 * (1 - 20/200)^2 = 200 * (9/10)^2 = 200 * 0.81 = 162 litres."
+      },
+      {
+        "q": 11,
+        "topic": "Mensuration",
+        "question": "The radius of a circular garden is increased by 50%. What is the percentage increase in its area?",
+        "options": {
+          "A": "50%",
+          "B": "100%",
+          "C": "120%",
+          "D": "125%"
+        },
+        "correct": "D",
+        "explanation": "Area of a circle is proportional to r^2. If radius increases by 50% (factor of 1.5), area scales by (1.5)^2 = 2.25. Percentage increase = (2.25 - 1) * 100 = 125%."
+      },
+      {
+        "q": 12,
+        "topic": "Trigonometry",
+        "question": "A man travels a certain distance at 30 km/h and returns at 45 km/h. If the total time taken for the round trip is 5 hours, find the one-way distance.",
+        "options": {
+          "A": "90 km",
+          "B": "100 km",
+          "C": "120 km",
+          "D": "135 km"
+        },
+        "correct": "A",
+        "explanation": "Average speed for equal distances = (2 * S1 * S2) / (S1 + S2) = (2 * 30 * 45) / 75 = 36 km/h. Total distance = 36 * 5 = 180 km. One-way distance = 180 / 2 = 90 km."
+      },
+      {
+        "q": 13,
+        "topic": "Mensuration",
+        "question": "Find the area of the region bounded by the coordinate axes and the line 3x + 4y = 12.",
+        "options": {
+          "A": "3 sq units",
+          "B": "4 sq units",
+          "C": "6 sq units",
+          "D": "12 sq units"
+        },
+        "correct": "C",
+        "explanation": "Intercepts: setting y = 0 gives x = 4; setting x = 0 gives y = 3. The region forms a right-angled triangle with legs 4 and 3. Area = 0.5 * 4 * 3 = 6 square units."
+      },
+      {
+        "q": 14,
+        "topic": "Trigonometry",
+        "question": "An article is sold at a 20% profit. If both the cost price and selling price are increased by 100, the profit becomes 25%. Find the original cost price of the article.",
+        "options": {
+          "A": "400",
+          "B": "500",
+          "C": "600",
+          "D": "800"
+        },
+        "correct": "B",
+        "explanation": "Let initial CP = 100x, SP = 120x. New CP = 100x + 100, new SP = 120x + 100. Profit is 25%, so 120x + 100 = 1.25 * (100x + 100) = 125x + 125 -> 5x = 25 -> x = 5. Original CP = 100 * 5 = 500."
+      },
+      {
+        "q": 15,
+        "topic": "Ratio and proportion",
+        "question": "Two numbers are in the ratio 3 : 5. If 9 is subtracted from each, the new numbers are in the ratio 12 : 23. Find the smaller original number.",
+        "options": {
+          "A": "33",
+          "B": "44",
+          "C": "55",
+          "D": "66"
+        },
+        "correct": "A",
+        "explanation": "Let numbers be 3x and 5x. Equation: (3x - 9) / (5x - 9) = 12 / 23 -> 69x - 207 = 60x - 108 -> 9x = 99 -> x = 11. Smaller number = 3 * 11 = 33."
+      },
+      {
+        "q": 16,
+        "topic": "Trigonometry",
+        "question": "A shopkeeper marks an article 50% above its cost price and allows a successive discount of 20% and 10%. What is his net profit percentage?",
+        "options": {
+          "A": "6%",
+          "B": "8%",
+          "C": "10%",
+          "D": "12%"
+        },
+        "correct": "B",
+        "explanation": "Let CP = 100. Marked price = 150. First discount of 20% brings price to 150 * 0.8 = 120. Second discount of 10% brings selling price to 120 * 0.9 = 108. Net profit = 8%."
+      },
+      {
+        "q": 17,
+        "topic": "Algebra",
+        "question": "The ratio of present ages of A and B is 5 : 7. After 6 years, their ages will be in the ratio 3 : 4. Find the present age of A.",
+        "options": {
+          "A": "20 years",
+          "B": "25 years",
+          "C": "30 years",
+          "D": "35 years"
+        },
+        "correct": "C",
+        "explanation": "Let present ages be 5x and 7x. After 6 years: (5x + 6) / (7x + 6) = 3 / 4 -> 4(5x + 6) = 3(7x + 6) -> 20x + 24 = 21x + 18 -> x = 6. Present age of A = 5 * 6 = 30 years."
+      },
+      {
+        "q": 18,
+        "topic": "Percentage",
+        "question": "What is the units digit of the sum 1! + 2! + 3! + 4! + ... + 99!?",
+        "options": {
+          "A": "1",
+          "B": "3",
+          "C": "7",
+          "D": "9"
+        },
+        "correct": "B",
+        "explanation": "Consider the units digits of factorials: 1! = 1, 2! = 2, 3! = 6, 4! = 24 (units digit 4). For all factorials from 5! onwards, the units digit is always 0 because they contain both 2 and 5 as factors. Therefore, we only need to sum the units digits of the first 4 factorials: 1 + 2 + 6 + 4 = 13. The units digit of 13 is 3."
+      },
+      {
+        "q": 19,
+        "topic": "Trigonometry",
+        "question": "In a circle, two parallel chords of lengths 16 cm and 12 cm are on the same side of the centre. If the distance between them is 2 cm, find the radius of the circle.",
+        "options": {
+          "A": "8 cm",
+          "B": "9 cm",
+          "C": "10 cm",
+          "D": "12 cm"
+        },
+        "correct": "C",
+        "explanation": "Half-chords are 8 cm and 6 cm. Let distance of closer chord from centre be x. Using Pythagoras: r^2 = 6^2 + (x + 2)^2 and r^2 = 8^2 + x^2 -> 36 + x^2 + 4x + 4 = 64 + x^2 -> 4x = 24 -> x = 6 cm. Thus r^2 = 8^2 + 6^2 = 100 -> r = 10 cm."
+      },
+      {
+        "q": 20,
+        "topic": "Trigonometry",
+        "question": "Two pipes A and B can fill an empty tank in 12 hours and 15 hours respectively. A third pipe C can empty the full tank in 20 hours. If all three pipes are opened simultaneously, in how much time will the tank be filled?",
+        "options": {
+          "A": "8 hours",
+          "B": "10 hours",
+          "C": "12 hours",
+          "D": "15 hours"
+        },
+        "correct": "B",
+        "explanation": "Let capacity be 60 units. Work rates: A = 5, B = 4, C = -3. Net rate = 5 + 4 - 3 = 6 units/hour. Time taken = 60 / 6 = 10 hours."
+      },
+      {
+        "q": 21,
+        "topic": "Trigonometry",
+        "question": "If 5 sin θ - 12 cos θ = 0, find the value of (sin θ + cos θ) / (sin θ - cos θ).",
+        "options": {
+          "A": "11/7",
+          "B": "13/7",
+          "C": "15/7",
+          "D": "17/7"
+        },
+        "correct": "D",
+        "explanation": "From 5 sin θ = 12 cos θ, tan θ = 12/5. Dividing numerator and denominator by cos θ gives (tan θ + 1) / (tan θ - 1) = (12/5 + 1) / (12/5 - 1) = (17/5) / (7/5) = 17/7."
+      },
+      {
+        "q": 22,
+        "topic": "Compound interest",
+        "question": "A sum of 10,000 is invested at 20% per annum compound interest, compounded half-yearly. What will be the amount at the end of 1 year?",
+        "options": {
+          "A": "11,880",
+          "B": "12,000",
+          "C": "12,100",
+          "D": "12,250"
+        },
+        "correct": "C",
+        "explanation": "Rate per half-year = 20%/2 = 10%. Time = 2 half-years. Amount = 10000 * (1 + 10/100)^2 = 10000 * 1.21 = 12,100."
+      },
+      {
+        "q": 23,
+        "topic": "Trigonometry",
+        "question": "Two trains start simultaneously from stations X and Y towards each other and take 4 hours and 9 hours respectively to reach their destinations after meeting each other. Find the ratio of the speed of the first train to that of the second train.",
+        "options": {
+          "A": "2 : 3",
+          "B": "3 : 2",
+          "C": "4 : 9",
+          "D": "9 : 4"
+        },
+        "correct": "B",
+        "explanation": "Speed1 / Speed2 = sqrt(t2 / t1) = sqrt(9 / 4) = 3 / 2, which is 3 : 2."
+      },
+      {
+        "q": 24,
+        "topic": "Percentage",
+        "question": "What is the units digit of the expression (7^95) * (3^58)?",
+        "options": {
+          "A": "1",
+          "B": "3",
+          "C": "7",
+          "D": "9"
+        },
+        "correct": "A",
+        "explanation": "Cycles of 4. For 7^95, 95 mod 4 = 3, units digit is 3. For 3^58, 58 mod 4 = 2, units digit is 9. Product of units digits = 3 * 9 = 27, giving units digit 1."
+      },
+      {
+        "q": 25,
+        "topic": "Trigonometry",
+        "question": "If x = 7 + 4sqrt(3), what is the value of sqrt(x) + 1/sqrt(x)?",
+        "options": {
+          "A": "3",
+          "B": "4",
+          "C": "5",
+          "D": "6"
+        },
+        "correct": "B",
+        "explanation": "Since x = 7 + 4sqrt(3) = (2 + sqrt(3))^2, sqrt(x) = 2 + sqrt(3). Its reciprocal is 2 - sqrt(3). Sum = (2 + sqrt(3)) + (2 - sqrt(3)) = 4."
+      },
+      {
+        "q": 26,
+        "topic": "Trigonometry",
+        "question": "Find the remainder when (17^1999 + 18^1999) is divided by 35.",
+        "options": {
+          "A": "0",
+          "B": "7",
+          "C": "17",
+          "D": "18"
+        },
+        "correct": "A",
+        "explanation": "By algebraic identity, a^n + b^n is divisible by a + b when n is odd. Here n = 1999 is odd, and a + b = 17 + 18 = 35. Since the sum is exactly divisible by 35, remainder is 0."
+      },
+      {
+        "q": 27,
+        "topic": "Trigonometry",
+        "question": "If sin θ + cos θ = p and sec θ + cosec θ = q, what is the value of q * (p^2 - 1) in terms of p?",
+        "options": {
+          "A": "2",
+          "B": "2p",
+          "C": "p",
+          "D": "4p"
+        },
+        "correct": "B",
+        "explanation": "p = sin θ + cos θ -> p^2 - 1 = 2 sin θ cos θ. Also q = (sin θ + cos θ) / (sin θ cos θ) = p / (sin θ cos θ). Substituting sin θ cos θ gives q = 2p / (p^2 - 1), leading to q * (p^2 - 1) = 2p."
+      },
+      {
+        "q": 28,
+        "topic": "Percentage",
+        "question": "A and B together can complete a work in 8 days. B and C together can complete it in 12 days. All three together can finish it in 6 days. In how many days can A and C together finish the work?",
+        "options": {
+          "A": "8 days",
+          "B": "9 days",
+          "C": "10 days",
+          "D": "12 days"
+        },
+        "correct": "A",
+        "explanation": "Let work be 24 units. Rates: A+B = 3, B+C = 2, A+B+C = 4. A's rate = 4 - 2 = 2. C's rate = 4 - 3 = 1. A+C combined rate = 3 units/day. Time = 24 / 3 = 8 days."
+      },
+      {
+        "q": 29,
+        "topic": "Mensuration",
+        "question": "A solid metallic cylinder of radius 6 cm and height 24 cm is melted and recast into small spherical balls of radius 1 cm each. Find the number of spherical balls produced.",
+        "options": {
+          "A": "216",
+          "B": "324",
+          "C": "432",
+          "D": "648"
+        },
+        "correct": "D",
+        "explanation": "Volume of cylinder = pi * 6^2 * 24 = 864pi. Volume of one spherical ball = (4/3) * pi * 1^3 = (4/3)pi. Number of balls = 864pi / ((4/3)pi) = 864 * (3/4) = 648."
+      },
+      {
+        "q": 30,
+        "topic": "Trigonometry",
+        "question": "If cos^2 θ - sin^2 θ = tan^2 phi, where θ and phi are acute angles, what is the expression for cos^2 phi in terms of θ?",
+        "options": {
+          "A": "1 / (2 sin^2 θ)",
+          "B": "1 / (2 cos^2 θ)",
+          "C": "2 cos^2 θ",
+          "D": "sin^2 θ"
+        },
+        "correct": "B",
+        "explanation": "Given cos^2 θ - sin^2 θ = tan^2 phi. We know sec^2 phi = 1 + tan^2 phi = 1 + cos^2 θ - sin^2 θ. Using the identity 1 - sin^2 θ = cos^2 θ, we get sec^2 phi = cos^2 θ + cos^2 θ = 2 cos^2 θ. Taking the reciprocal gives cos^2 phi = 1 / (2 cos^2 θ)."
+      }
+    ],
+    "Reasoning and General Intelligence": [
+      {
+        "q": 1,
+        "topic": "Coding and Decoding",
+        "question": "In a certain code language, FLOWER is coded as EKNVDQ. How is GARDEN coded in that same language?",
+        "options": {
+          "A": "FZQCEM",
+          "B": "FZQBEM",
+          "C": "FZSBEN",
+          "D": "FYQCEM"
+        },
+        "correct": "A",
+        "explanation": "Each letter in the word is shifted backward by 1 position alphabetically (F-1=E, L-1=K, O-1=N, W-1=V, E-1=D, R-1=Q). Applying this uniform -1 shift to GARDEN: G-1=F, A-1=Z, R-1=Q, D-1=C, E-1=D, N-1=M, which produces FZQCEM."
+      },
+      {
+        "q": 2,
+        "topic": "Logical Reasoning",
+        "question": "Statements: All pens are books. Some books are pencils. No pencil is an eraser. Conclusions: I. Some pens are pencils. II. Some books are not erasers.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Both follow",
+          "C": "Only conclusion II follows",
+          "D": "Neither follows"
+        },
+        "correct": "C",
+        "explanation": "'Some books are pencils' combined with 'No pencil is an eraser' directly entails that the portion of books which are pencils cannot be erasers, meaning 'Some books are not erasers' (Conclusion II) definitely follows. Conclusion I ('Some pens are pencils') is not necessarily true as there is no direct intersection given between pens and pencils. Thus, only conclusion II follows."
+      },
+      {
+        "q": 3,
+        "topic": "Series",
+        "question": "Find the missing number in the series: 5, 11, 24, 51, 106, ?",
+        "options": {
+          "A": "217",
+          "B": "219",
+          "C": "221",
+          "D": "223"
+        },
+        "correct": "A",
+        "explanation": "Analyzing the pattern of multipliers and increments: 5 * 2 + 1 = 11; 11 * 2 + 2 = 24; 24 * 2 + 3 = 51; 51 * 2 + 4 = 106. Following this exact pattern, the next term is 106 * 2 + 5 = 217."
+      },
+      {
+        "q": 4,
+        "topic": "Logical Reasoning",
+        "question": "Pointing to a photograph of a lady, Rohan said, She is the daughter of the only son of my paternal grandfathers wife. How is the lady in the photograph related to Rohan?",
+        "options": {
+          "A": "Mother",
+          "B": "Aunt",
+          "C": "Niece",
+          "D": "Sister"
+        },
+        "correct": "D",
+        "explanation": "'My paternal grandfather's wife' is Rohan's paternal grandmother. 'The only son of Rohan's paternal grandmother' is Rohan's father. 'The daughter of Rohan's father' is Rohan's sister. Therefore, the lady is Rohan's sister."
+      },
+      {
+        "q": 5,
+        "topic": "Logical Reasoning",
+        "question": "A person walks 9 km towards North, turns right and walks 12 km. What is the shortest distance between the starting point and the final position?",
+        "options": {
+          "A": "10 km",
+          "B": "15 km",
+          "C": "18 km",
+          "D": "20 km"
+        },
+        "correct": "B",
+        "explanation": "The path traces two perpendicular legs of a right-angled triangle, where the base is 12 km and the perpendicular height is 9 km. By Pythagoras theorem, the shortest distance is sqrt(9^2 + 12^2) = sqrt(81 + 144) = sqrt(225) = 15 km."
+      },
+      {
+        "q": 6,
+        "topic": "Coding and Decoding",
+        "question": "If BOOK is coded as 43 and PEN is coded as 35, how is PENCIL coded in that same system?",
+        "options": {
+          "A": "59",
+          "B": "61",
+          "C": "63",
+          "D": "65"
+        },
+        "correct": "A",
+        "explanation": "The code is obtained by summing the alphabetical position numbers of each letter. For BOOK: 2 + 15 + 15 + 11 = 43. For PEN: 16 + 5 + 14 = 35. Applying this to PENCIL: P(16) + E(5) + N(14) + C(3) + I(9) + L(12) = 59."
+      },
+      {
+        "q": 7,
+        "topic": "Logical Reasoning",
+        "question": "Find the missing number in the given grid where Row 1 is 7, 5, 35; Row 2 is 9, 4, 36; and Row 3 is 8, ?, 48.",
+        "options": {
+          "A": "4",
+          "B": "5",
+          "C": "8",
+          "D": "6"
+        },
+        "correct": "D",
+        "explanation": "Analyzing the relationship in each row: Row 1 has 7 * 5 = 35. Row 2 has 9 * 4 = 36. Following this multiplicative pattern for Row 3: 8 * ? = 48, which gives ? = 48 / 8 = 6."
+      },
+      {
+        "q": 8,
+        "topic": "Logical Reasoning",
+        "question": "Identify the relationship category that best represents: Mammals, Cows, and Crows.",
+        "options": {
+          "A": "All three are completely independent",
+          "B": "Two are in subset relation, one is completely separate",
+          "C": "All three are concentric subsets",
+          "D": "Two overlap partially while one is independent"
+        },
+        "correct": "B",
+        "explanation": "Cows belong entirely to the category of Mammals (subset relation). Crows are birds, which are entirely separate from Mammals. Therefore, the structure consists of one circle entirely inside another circle, with a third circle completely separate."
+      },
+      {
+        "q": 9,
+        "topic": "Spatial Reasoning",
+        "question": "A solid cube of side 4 cm is painted red on all its faces and then cut into smaller cubes of side 1 cm each. How many smaller cubes have exactly two faces painted?",
+        "options": {
+          "A": "24",
+          "B": "32",
+          "C": "48",
+          "D": "64"
+        },
+        "correct": "A",
+        "explanation": "Cubes with exactly two faces painted are located on the edges of the main cube, excluding corners. For a cube of n = 4, the number of two-face painted cubes per edge is (n - 2) = 4 - 2 = 2. Since a cube has 12 edges, the total is 12 * 2 = 24."
+      },
+      {
+        "q": 10,
+        "topic": "Logical Reasoning",
+        "question": "What angle is formed between the hour hand and the minute hand of a clock at 4 : 20 PM?",
+        "options": {
+          "A": "0 degrees",
+          "B": "5 degrees",
+          "C": "10 degrees",
+          "D": "15 degrees"
+        },
+        "correct": "C",
+        "explanation": "The formula for the angle between hands is |30H - 5.5M|, where H = 4 and M = 20. Angle = |30(4) - 5.5(20)| = |120 - 110| = 10 degrees."
+      },
+      {
+        "q": 11,
+        "topic": "Series",
+        "question": "Find the next term in the series: AZ1, BY2, CX3, DW4, ?",
+        "options": {
+          "A": "EU5",
+          "B": "EV5",
+          "C": "FU5",
+          "D": "FV5"
+        },
+        "correct": "B",
+        "explanation": "The first letter advances by +1 (A -> B -> C -> D -> E). The second letter moves backward by -1 from Z (Z -> Y -> X -> W -> V). The number increases sequentially by +1 (1 -> 2 -> 3 -> 4 -> 5). Combining these gives EV5."
+      },
+      {
+        "q": 12,
+        "topic": "Logical Reasoning",
+        "question": "Statements: Economic growth requires a stable political environment. Country X has achieved a stable political environment. Conclusions: I. Country X has achieved high economic growth. II. A stable political environment is sufficient for economic growth.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Neither conclusion I nor II follows",
+          "D": "Both conclusions follow"
+        },
+        "correct": "C",
+        "explanation": "The statement specifies stability as a requirement (necessity), not a guarantee (sufficiency). Having stability does not automatically guarantee high economic growth, nor does it imply it is the only sufficient condition. Thus, neither conclusion follows."
+      },
+      {
+        "q": 13,
+        "topic": "Logical Reasoning",
+        "question": "Five persons P, Q, R, S and T are sitting in a straight line facing North. R is sitting at an extreme end. S is sitting third to the left of R. Q is immediately to the left of T. Who is sitting exactly in the middle of the row?",
+        "options": {
+          "A": "P",
+          "B": "Q",
+          "C": "S",
+          "D": "T"
+        },
+        "correct": "B",
+        "explanation": "R must be at position 5 because S is third to the left of R (positions: 5 - 3 = 2, so S is at position 2). Since Q is immediately left of T, they occupy adjacent slots 3 and 4 respectively. P occupies the remaining position 1. The arrangement from left to right is P, S, Q, T, R. Therefore, the middle position (3) is occupied by Q."
+      },
+      {
+        "q": 14,
+        "topic": "Coding and Decoding",
+        "question": "If 'white' is called 'blue', 'blue' is called 'red', 'red' is called 'yellow', 'yellow' is called 'green', 'green' is called 'black', what is the color of clear sky?",
+        "options": {
+          "A": "Red",
+          "B": "Blue",
+          "C": "Yellow",
+          "D": "Green"
+        },
+        "correct": "A",
+        "explanation": "The natural color of a clear sky is blue. According to the substitution code provided, 'blue' is called 'red'. Therefore, the color of a clear sky is coded as red."
+      },
+      {
+        "q": 15,
+        "topic": "Logical Reasoning",
+        "question": "Six persons P, Q, R, S, T and U are sitting around a circular table facing the centre. P is to the immediate right of T. U is to the immediate left of T. R is sitting opposite to P. S is to the immediate left of R. Who is to the immediate right of R?",
+        "options": {
+          "A": "T",
+          "B": "P",
+          "C": "Q",
+          "D": "S"
+        },
+        "correct": "B",
+        "explanation": "When persons sit around a circular table facing the centre, counter-clockwise movement represents the immediate right and clockwise movement represents the immediate left. Facing the centre: P is counter-clockwise (immediate right) of T; U is clockwise (immediate left) of T. R sits directly opposite to P. S is clockwise (immediate left) of R. Moving counter-clockwise (to the immediate right) from R leads directly to P."
+      },
+      {
+        "q": 16,
+        "topic": "Series",
+        "question": "Complete the letter series with matching blanks: a b _ d e a _ c d e a b c _ e a b c d _",
+        "options": {
+          "A": "cbae",
+          "B": "cabe",
+          "C": "bcae",
+          "D": "cbea"
+        },
+        "correct": "A",
+        "explanation": "The repeating sequence pattern is blocks of 5 letters: a b c d e. Filling the missing blanks step-by-step: position 3 needs 'c', position 7 needs 'b', position 13 needs 'a', and position 19 needs 'e', exactly matching option A (c, b, a, e)."
+      },
+      {
+        "q": 17,
+        "topic": "Logical Reasoning",
+        "question": "Statements: Some stones are rocks. All rocks are mountains. No mountain is a hill. Conclusions: I. No stone is a hill. II. Some mountains are stones.",
+        "options": {
+          "A": "Only conclusion II follows",
+          "B": "Only conclusion I follows",
+          "C": "Both follow",
+          "D": "Neither follows"
+        },
+        "correct": "A",
+        "explanation": "Some stones are rocks, and all rocks are mountains. Therefore, some stones are mountains, so conclusion II follows. Since no mountain is a hill, those particular stones that are mountains are not hills. However, this does not establish that no stone is a hill, so conclusion I does not follow."
+      },
+      {
+        "q": 18,
+        "topic": "Logical Reasoning",
+        "question": "If January 1, 2024 was a Monday, what day of the week was January 1, 2025?",
+        "options": {
+          "A": "Tuesday",
+          "B": "Thursday",
+          "C": "Friday",
+          "D": "Wednesday"
+        },
+        "correct": "D",
+        "explanation": "The year 2024 is a leap year containing 366 days, which has 366 mod 7 = 2 odd days. Adding 2 odd days to Monday (January 1, 2024): Monday + 2 days = Wednesday (January 1, 2025)."
+      },
+      {
+        "q": 19,
+        "topic": "Logical Reasoning",
+        "question": "If '>' denotes '+', '<' denotes '-', '+' denotes '*', '-' denotes '/', evaluate the expression: (16 + 4) - 2 > 10 < 5",
+        "options": {
+          "A": "33",
+          "B": "35",
+          "C": "37",
+          "D": "41"
+        },
+        "correct": "C",
+        "explanation": "Substituting symbols according to the rules: '+' becomes '*', '-' becomes '/', '>' becomes '+', '<' becomes '-'. The expression transforms into: (16 * 4) / 2 + 10 - 5. Solving step-by-step using BODMAS: Inside parentheses, 16 * 4 = 64; then division, 64 / 2 = 32; then addition and subtraction, 32 + 10 - 5 = 42 - 5 = 37."
+      },
+      {
+        "q": 20,
+        "topic": "Logical Reasoning",
+        "question": "Select the related word from the given alternatives: Architecture : Building :: Sculptor : ?",
+        "options": {
+          "A": "Stone",
+          "B": "Statue",
+          "C": "Chisel",
+          "D": "Museum"
+        },
+        "correct": "B",
+        "explanation": "Architecture is the art of designing and building structures. Similarly, a sculptor creates a statue. The relationship is Creator : Creation."
+      },
+      {
+        "q": 21,
+        "topic": "Logical Reasoning",
+        "question": "In a row of students, Rahul is 15th from the left end and 18th from the right end. How many students are there in the row?",
+        "options": {
+          "A": "32",
+          "B": "33",
+          "C": "34",
+          "D": "35"
+        },
+        "correct": "A",
+        "explanation": "Total students = (Position from left + Position from right) - 1 = 15 + 18 - 1 = 33 - 1 = 32 students."
+      },
+      {
+        "q": 22,
+        "topic": "Logical Reasoning",
+        "question": "Statement: A major bridge in the city has developed deep cracks due to heavy rains, posing a serious threat to commuters. Course of Action: I. The traffic on the bridge should be immediately suspended. II. Expert engineers should be rushed to inspect and repair the bridge.",
+        "options": {
+          "A": "Only course I follows",
+          "B": "Only course II follows",
+          "C": "Neither follows",
+          "D": "Both I and II follow"
+        },
+        "correct": "D",
+        "explanation": "Immediate safety requires suspending traffic to prevent accidents (Course I follows). Simultaneously, expert repair and inspection are necessary to resolve the crisis (Course II follows). Both courses of action are logical and necessary."
+      },
+      {
+        "q": 23,
+        "topic": "Coding and Decoding",
+        "question": "In a code language, ROAD is coded as URDG. How is SWAN coded in that same language?",
+        "options": {
+          "A": "VZDP",
+          "B": "VZDQ",
+          "C": "VZEQ",
+          "D": "VYDQ"
+        },
+        "correct": "B",
+        "explanation": "Each letter in the word is shifted forward by 3 positions alphabetically (R+3=U, O+3=R, A+3=D, D+3=G). Applying this uniform +3 shift to SWAN: S+3=V, W+3=Z, A+3=D, N+3=Q, producing VZDQ."
+      },
+      {
+        "q": 24,
+        "topic": "Logical Reasoning",
+        "question": "Statements: All pens are markers. All markers are brushes. Some brushes are paints. Conclusions: I. All pens are brushes. II. Some paints are markers.",
+        "options": {
+          "A": "Only conclusion II follows",
+          "B": "Both follow",
+          "C": "Only conclusion I follows",
+          "D": "Neither follows"
+        },
+        "correct": "C",
+        "explanation": "Since all pens are markers and all markers are brushes, all pens are definitely brushes (Conclusion I follows). For Conclusion II ('Some paints are markers'), while some brushes are paints, there is no necessary given intersection between paints and markers. Thus, only conclusion I follows."
+      },
+      {
+        "q": 25,
+        "topic": "Logical Reasoning",
+        "question": "Find the missing character in the sequence: A4, D9, G16, J25, ?",
+        "options": {
+          "A": "M36",
+          "B": "L36",
+          "C": "M32",
+          "D": "N36"
+        },
+        "correct": "A",
+        "explanation": "Alphabetical sequence advances by +3 each time (A, D, G, J, M). The number sequence represents consecutive squares: 2^2=4, 3^2=9, 4^2=16, 5^2=25, followed by 6^2=36. Combining them yields M36."
+      },
+      {
+        "q": 26,
+        "topic": "Logical Reasoning",
+        "question": "Select the related number pair: 6 : 222 :: 7 : ?",
+        "options": {
+          "A": "336",
+          "B": "350",
+          "C": "364",
+          "D": "392"
+        },
+        "correct": "B",
+        "explanation": "The relation is based on the formula n^3 + n. For 6: 6^3 + 6 = 216 + 6 = 222. Applying the same logic to 7: 7^3 + 7 = 343 + 7 = 350."
+      },
+      {
+        "q": 27,
+        "topic": "Logical Reasoning",
+        "question": "In a group of students, 40 play cricket, 30 play football, and 15 play both. How many students play at least one of the two games?",
+        "options": {
+          "A": "45",
+          "B": "50",
+          "C": "52",
+          "D": "55"
+        },
+        "correct": "D",
+        "explanation": "Using inclusion-exclusion principle: Total = Cricket + Football - Both = 40 + 30 - 15 = 55 students."
+      },
+      {
+        "q": 28,
+        "topic": "Logical Reasoning",
+        "question": "Which word cannot be formed using the letters of the word ENVIRONMENT?",
+        "options": {
+          "A": "RENTER",
+          "B": "MENTOR",
+          "C": "ROUTE",
+          "D": "TENT"
+        },
+        "correct": "A",
+        "explanation": "Checking available letters in ENVIRONMENT (E, N, V, I, R, O, N, M, E, N, T): 'RENTER' requires two R's, but ENVIRONMENT contains only one 'R'. Therefore, RENTER cannot be formed, whereas MENTOR, ROUTE, and TENT can all be formed from the available letter pool."
+      },
+      {
+        "q": 29,
+        "topic": "Logical Reasoning",
+        "question": "A person walks 3 km East, turns right and walks 4 km South, then turns right and walks 6 km West. What is the shortest distance from the starting point?",
+        "options": {
+          "A": "5 km",
+          "B": "6 km",
+          "C": "7 km",
+          "D": "8 km"
+        },
+        "correct": "A",
+        "explanation": "Starting at (0,0). Walks 3 km East to (3,0). Turns right (South) and walks 4 km to (3,-4). Turns right (West) and walks 6 km to (3 - 6, -4) = (-3,-4). Net displacement from origin is 3 km West and 4 km South. Straight-line distance is sqrt((-3)^2 + (-4)^2) = sqrt(9 + 16) = 5 km."
+      },
+      {
+        "q": 30,
+        "topic": "Series",
+        "question": "Find the missing number in the number series: 2, 6, 12, 20, 30, 42, ?",
+        "options": {
+          "A": "52",
+          "B": "56",
+          "C": "60",
+          "D": "64"
+        },
+        "correct": "B",
+        "explanation": "Examining differences between consecutive terms: 6-2=4, 12-6=6, 20-12=8, 30-20=10, 42-30=12. Differences increase by 2 sequentially. Following this, the next difference is 14. Adding 14 to 42 gives 42 + 14 = 56."
+      }
+    ],
+    "English Language and Comprehension": [
+      {
+        "q": 1,
+        "topic": "Reading Comprehension",
+        "question": "What does the author imply about retailers' attitude toward the psychological cost of excessive choice?",
+        "options": {
+          "A": "They are aware of it but remain unconcerned since it does not hurt sales",
+          "B": "They believe it strengthens long-term customer loyalty",
+          "C": "They are unaware of it and are actively working to reduce it",
+          "D": "They actively commission research to understand and eliminate it"
+        },
+        "correct": "A",
+        "explanation": "The passage's closing line states that retailers 'remain largely indifferent to this psychological cost' because a crowded shelf 'rarely dampens overall sales figures.' This shows retailers are aware of the cost but unbothered by it, since their revenue is unaffected."
+      },
+      {
+        "q": 2,
+        "topic": "Reading Comprehension",
+        "question": "The phrase 'tyranny of freedom' as used in the passage suggests that:",
+        "options": {
+          "A": "Consumers secretly wish to have fewer legal rights",
+          "B": "Retailers deliberately restrict freedom to manipulate consumers",
+          "C": "Freedom of choice is inherently oppressive and should be abolished entirely",
+          "D": "Excessive choice, though framed as beneficial, can become a psychological burden"
+        },
+        "correct": "D",
+        "explanation": "The passage uses this phrase to capture the paradox that autonomy, generally regarded as an unqualified good, can 'curdle into a source of anxiety' when there are too many options to process efficiently. This reflects the idea that excessive choice becomes a burden, not a literal call to abolish freedom or a claim about legal rights or deliberate manipulation."
+      },
+      {
+        "q": 3,
+        "topic": "Reading Comprehension",
+        "question": "Which of the following best describes the overall tone of the passage?",
+        "options": {
+          "A": "Sarcastic and dismissive of academic research",
+          "B": "Analytical, with a mildly critical undertone toward retailers",
+          "C": "Enthusiastic and celebratory of consumer choice",
+          "D": "Purely neutral and descriptive, without any evaluative judgement"
+        },
+        "correct": "B",
+        "explanation": "The author presents research findings analytically but also uses phrases such as 'wryly termed,' 'an uncomfortable truth,' and notes that retailers 'remain largely indifferent' to consumers' psychological wellbeing. This combination of reasoned analysis with an implicit critique of retailers' indifference reflects a mildly critical tone, ruling out a purely neutral or celebratory reading."
+      },
+      {
+        "q": 4,
+        "topic": "Reading Comprehension",
+        "question": "According to the passage, what often happens to consumers when confronted with too many nearly identical options?",
+        "options": {
+          "A": "They immediately file complaints with the retailer",
+          "B": "They consistently select the cheapest option available",
+          "C": "They experience indecision, or doubt their choice even after purchasing",
+          "D": "They leave the marketplace permanently and switch to online shopping"
+        },
+        "correct": "C",
+        "explanation": "The passage states that consumers 'frequently retreat into indecision, deferring the purchase altogether, or make a selection only to be nagged afterward by the suspicion that a superior option lay unexamined.' This directly supports the idea of indecision and post-purchase doubt; the passage makes no mention of price-based decisions, complaints, or a permanent shift to online shopping."
+      },
+      {
+        "q": 5,
+        "topic": "Reading Comprehension",
+        "question": "The word 'curdle' as used in the passage most nearly means:",
+        "options": {
+          "A": "To increase steadily in value or importance",
+          "B": "To turn into something unpleasant or spoiled",
+          "C": "To dissolve completely without a trace",
+          "D": "To remain stable and unaffected by circumstances"
+        },
+        "correct": "B",
+        "explanation": "The passage uses 'curdle' metaphorically to describe how autonomy, ordinarily seen as a good, 'can curdle into a source of anxiety' when it becomes unmanageable. Just as milk curdles into something spoiled, autonomy is described here as turning into something unpleasant."
+      },
+      {
+        "q": 6,
+        "topic": "Grammar",
+        "question": "Select the most appropriate word to fill blank (6).",
+        "options": {
+          "A": "assert",
+          "B": "imply",
+          "C": "infer",
+          "D": "presume"
+        },
+        "correct": "B",
+        "explanation": "'Imply' means to suggest something indirectly without stating it outright, which matches the clause 'without ever saying so directly.' 'Infer' is the reverse process (drawing a conclusion from evidence, done by a listener, not a speaker), while 'assert' and 'presume' both suggest a direct or unfounded claim rather than an indirect suggestion."
+      },
+      {
+        "q": 7,
+        "topic": "Grammar",
+        "question": "Select the most appropriate word to fill blank (7).",
+        "options": {
+          "A": "imply",
+          "B": "presume",
+          "C": "assume",
+          "D": "infer"
+        },
+        "correct": "D",
+        "explanation": "'Infer' means to deduce something from evidence, which fits perfectly with 'from his tone' — listeners are drawing a conclusion based on available evidence. 'Imply' is used by the speaker, not the listener, while 'assume' and 'presume' suggest accepting something without needing evidence, which contradicts 'from his tone.'"
+      },
+      {
+        "q": 8,
+        "topic": "Grammar",
+        "question": "Select the most appropriate word to fill blank (8).",
+        "options": {
+          "A": "affect",
+          "B": "affecting",
+          "C": "effect",
+          "D": "affected"
+        },
+        "correct": "C",
+        "explanation": "The blank requires a noun following 'an immediate ___ on,' and 'effect' is the noun form meaning 'a result or influence.' 'Affect' is primarily a verb (to influence), while 'affected' and 'affecting' are verb forms that cannot grammatically follow the article 'an' and adjective 'immediate' in this position."
+      },
+      {
+        "q": 9,
+        "topic": "Grammar",
+        "question": "Select the most appropriate word to fill blank (9).",
+        "options": {
+          "A": "uninterested",
+          "B": "disinterested",
+          "C": "interested",
+          "D": "engaged"
+        },
+        "correct": "A",
+        "explanation": "'Uninterested' means not caring or showing no interest, which fits the senator's refusal to respond to criticism. 'Disinterested' is a commonly confused word that actually means impartial or unbiased, not indifferent, and does not fit here. 'Interested' and 'engaged' convey the opposite meaning and are clearly incorrect."
+      },
+      {
+        "q": 10,
+        "topic": "Reading Comprehension",
+        "question": "Select the most appropriate word to fill blank (10).",
+        "options": {
+          "A": "characteristic",
+          "B": "uncharacteristic",
+          "C": "characterless",
+          "D": "charismatic"
+        },
+        "correct": "B",
+        "explanation": "The passage notes that the silence 'was unusual for a politician normally so quick to defend himself,' so the silence must be described as 'uncharacteristic' (not typical of him). 'Characteristic' means the opposite (typical), while 'charismatic' and 'characterless' are unrelated in meaning to the context."
+      },
+      {
+        "q": 11,
+        "topic": "Grammar",
+        "question": "Read the sentence divided into four parts. Identify the part that contains an error. A large number of students / has failed to submit / their assignments / within the given deadline.",
+        "options": {
+          "A": "A large number of students",
+          "B": "has failed to submit",
+          "C": "their assignments",
+          "D": "within the given deadline."
+        },
+        "correct": "B",
+        "explanation": "Part B contains the error. The structure 'A number of + plural noun' means 'many' and always takes a plural verb; hence it should be 'have failed', not 'has failed'. This is the reverse of the rule for 'The number of + noun', which takes a singular verb."
+      },
+      {
+        "q": 12,
+        "topic": "Grammar",
+        "question": "Read the sentence divided into four parts. Identify the part that contains an error. The safety officer insisted, in view of recent accidents, / that every worker on the factory floor / wears the prescribed protective gear / before entering the premises.",
+        "options": {
+          "A": "The safety officer insisted, in view of recent accidents,",
+          "B": "that every worker on the factory floor",
+          "C": "wears the prescribed protective gear",
+          "D": "before entering the premises."
+        },
+        "correct": "C",
+        "explanation": "Part C contains the error. After verbs expressing demand or insistence such as 'insisted that', the subjunctive mood requires the base form of the verb regardless of the subject; hence it should be 'wear', not 'wears'."
+      },
+      {
+        "q": 13,
+        "topic": "Grammar",
+        "question": "Read the sentence divided into four parts. Identify the part that contains an error. The board of directors, in its official statement, / claimed to be accountable to the losses / incurred by the company / during the previous financial year.",
+        "options": {
+          "A": "The board of directors, in its official statement,",
+          "B": "claimed to be accountable to the losses",
+          "C": "incurred by the company",
+          "D": "during the previous financial year."
+        },
+        "correct": "B",
+        "explanation": "Part B contains the error. The correct preposition after 'accountable' when referring to something one is responsible for is 'for', not 'to'; the phrase should read 'accountable for the losses'."
+      },
+      {
+        "q": 14,
+        "topic": "Voice and Narration",
+        "question": "Read the sentence divided into four parts. Identify the part that contains an error. Having informed about the change in schedule late, / several employees were unable to attend / the mandatory training session / organised by the human resources department.",
+        "options": {
+          "A": "Having informed about the change in schedule late,",
+          "B": "several employees were unable to attend",
+          "C": "the mandatory training session",
+          "D": "organised by the human resources department."
+        },
+        "correct": "A",
+        "explanation": "Part A contains the error. Since the employees did not inform themselves but were informed by someone else, the passive participle 'Having been informed' is required. 'Having informed' incorrectly implies that the employees performed the action of informing."
+      },
+      {
+        "q": 15,
+        "topic": "Grammar",
+        "question": "Read the sentence divided into four parts. Identify the part that contains an error. The new regulations, which come into effect next month, / require all vehicle owners / to renew their registration / or face a heavy fines.",
+        "options": {
+          "A": "The new regulations, which come into effect next month,",
+          "B": "require all vehicle owners",
+          "C": "to renew their registration",
+          "D": "or face a heavy fines."
+        },
+        "correct": "D",
+        "explanation": "Part D contains the error. The indefinite article 'a' cannot be used with the plural noun 'fines'; the sentence should read either 'a heavy fine' (singular) or 'heavy fines' (plural, without the article 'a')."
+      },
+      {
+        "q": 16,
+        "topic": "Grammar",
+        "question": "Improve the underlined part of the sentence: If she had worked harder in her youth, she 'is' a successful entrepreneur today.",
+        "options": {
+          "A": "would have been",
+          "B": "No improvement",
+          "C": "will be",
+          "D": "would be"
+        },
+        "correct": "D",
+        "explanation": "This is a mixed conditional: an unreal past condition ('had worked') combined with a present result. Such sentences require 'would + base verb' in the main clause, so 'would be' is correct. 'Would have been' would incorrectly refer to a past result, not a present one."
+      },
+      {
+        "q": 17,
+        "topic": "Grammar",
+        "question": "Improve the underlined part of the sentence: Not only 'she was late' but she also forgot the documents.",
+        "options": {
+          "A": "was she late",
+          "B": "had she late",
+          "C": "she was being late",
+          "D": "No improvement"
+        },
+        "correct": "A",
+        "explanation": "When a negative or restrictive adverbial such as 'Not only' begins a sentence, the subject and auxiliary verb must be inverted. Hence, the correct form is 'was she late', not 'she was late'."
+      },
+      {
+        "q": 18,
+        "topic": "Grammar",
+        "question": "Improve the underlined part of the sentence: I wish I 'am' more patient with my juniors.",
+        "options": {
+          "A": "No improvement",
+          "B": "will be",
+          "C": "were",
+          "D": "was"
+        },
+        "correct": "C",
+        "explanation": "After 'wish', when expressing a present unreal or hypothetical situation, the subjunctive form 'were' is used for all subjects (including 'I'), not 'am' or 'was'. Hence, 'I wish I were more patient' is correct."
+      },
+      {
+        "q": 19,
+        "topic": "Grammar",
+        "question": "Improve the underlined part of the sentence: 'Rarely does one come across' a musician as gifted as her.",
+        "options": {
+          "A": "does one comes across",
+          "B": "No improvement",
+          "C": "one does come across",
+          "D": "did one come across"
+        },
+        "correct": "B",
+        "explanation": "The sentence correctly inverts the subject and auxiliary verb after the negative adverbial 'Rarely' placed at the beginning of the sentence ('Rarely does one come across...'), which is the standard construction. The sentence requires no improvement."
+      },
+      {
+        "q": 20,
+        "topic": "Vocabulary",
+        "question": "Choose the correct synonym of the word: PERFIDIOUS",
+        "options": {
+          "A": "Cunning",
+          "B": "Ruthless",
+          "C": "Ambitious",
+          "D": "Treacherous"
+        },
+        "correct": "D",
+        "explanation": "'Perfidious' means deceitful and disloyal, betraying trust, which matches 'Treacherous'. 'Cunning' refers to cleverness or slyness without necessarily implying betrayal, 'Ambitious' refers to a strong desire for success, and 'Ruthless' refers to having no pity, none of which precisely capture the sense of betrayal in 'perfidious'."
+      },
+      {
+        "q": 21,
+        "topic": "Vocabulary",
+        "question": "Choose the correct synonym of the word: INDIGENT",
+        "options": {
+          "A": "Modest",
+          "B": "Impoverished",
+          "C": "Miserly",
+          "D": "Frugal"
+        },
+        "correct": "B",
+        "explanation": "'Indigent' means extremely poor or needy, which matches 'Impoverished'. 'Miserly' describes someone unwilling to spend money even though they may have it, 'Frugal' means economical in spending, and 'Modest' means humble — none of these specifically denote poverty."
+      },
+      {
+        "q": 22,
+        "topic": "Vocabulary",
+        "question": "Choose the correct synonym of the word: VOLUBLE",
+        "options": {
+          "A": "Terse",
+          "B": "Reticent",
+          "C": "Talkative",
+          "D": "Eloquent"
+        },
+        "correct": "C",
+        "explanation": "'Voluble' means talking fluently, readily, and at length, which matches 'Talkative'. 'Eloquent' emphasises persuasive and fluent speech rather than sheer quantity of talk, while 'Reticent' and 'Terse' are close to opposite in meaning, describing reserved or brief speech."
+      },
+      {
+        "q": 23,
+        "topic": "Vocabulary",
+        "question": "Choose the correct synonym of the word: OBDURATE",
+        "options": {
+          "A": "Hesitant",
+          "B": "Indecisive",
+          "C": "Reluctant",
+          "D": "Inflexible"
+        },
+        "correct": "D",
+        "explanation": "'Obdurate' means stubbornly refusing to change one's opinion or course of action, which matches 'Inflexible'. 'Reluctant' implies unwillingness without necessarily implying stubbornness, while 'Indecisive' and 'Hesitant' describe an inability to decide, which is nearly the opposite of the firm resolve implied by 'obdurate'."
+      },
+      {
+        "q": 24,
+        "topic": "Vocabulary",
+        "question": "Choose the correct antonym of the word: MAGNANIMOUS",
+        "options": {
+          "A": "Gracious",
+          "B": "Benevolent",
+          "C": "Petty",
+          "D": "Generous"
+        },
+        "correct": "C",
+        "explanation": "'Magnanimous' means generous and forgiving, especially towards a rival or a less powerful person. Its opposite is 'Petty', meaning small-minded or overly concerned with trivial matters. 'Generous', 'Benevolent', and 'Gracious' are all synonyms of 'magnanimous', not antonyms, making them tempting but incorrect choices."
+      },
+      {
+        "q": 25,
+        "topic": "Vocabulary",
+        "question": "Choose the correct antonym of the word: TACITURN",
+        "options": {
+          "A": "Withdrawn",
+          "B": "Reticent",
+          "C": "Loquacious",
+          "D": "Reserved"
+        },
+        "correct": "C",
+        "explanation": "'Taciturn' describes a person who is reserved and says very little. Its opposite is 'Loquacious', meaning excessively talkative. 'Reticent', 'Reserved', and 'Withdrawn' are all synonyms of 'taciturn' rather than antonyms, making them close but incorrect distractors."
+      },
+      {
+        "q": 26,
+        "topic": "Vocabulary",
+        "question": "Choose the correct antonym of the word: PARSIMONIOUS",
+        "options": {
+          "A": "Thrifty",
+          "B": "Profligate",
+          "C": "Frugal",
+          "D": "Prudent"
+        },
+        "correct": "B",
+        "explanation": "'Parsimonious' means extremely unwilling to spend money, or stingy. Its opposite is 'Profligate', meaning recklessly wasteful or extravagant. 'Frugal', 'Thrifty', and 'Prudent' all describe careful, economical spending habits similar to 'parsimonious', making them synonym-based distractors rather than correct antonyms."
+      },
+      {
+        "q": 27,
+        "topic": "Vocabulary",
+        "question": "Choose the correct antonym of the word: VINDICTIVE",
+        "options": {
+          "A": "Spiteful",
+          "B": "Resentful",
+          "C": "Vengeful",
+          "D": "Forgiving"
+        },
+        "correct": "D",
+        "explanation": "'Vindictive' describes a strong desire for revenge. Its opposite is 'Forgiving', meaning willing to pardon and let go of a grievance. 'Spiteful', 'Resentful', and 'Vengeful' are all synonyms describing similar negative, revenge-oriented attitudes, making them close but incorrect distractors."
+      },
+      {
+        "q": 28,
+        "topic": "Vocabulary",
+        "question": "Select the one word that best substitutes the given phrase: A statement that is seemingly contradictory but may nonetheless be true",
+        "options": {
+          "A": "Paradox",
+          "B": "Anomaly",
+          "C": "Dilemma",
+          "D": "Irony"
+        },
+        "correct": "A",
+        "explanation": "A 'Paradox' is precisely a statement that appears self-contradictory or absurd but may express an underlying truth. An 'Anomaly' is something that deviates from the norm, 'Irony' involves a contrast between expectation and reality (often for humorous or emphatic effect), and a 'Dilemma' is a situation requiring a difficult choice — none of these precisely describe a self-contradictory statement."
+      },
+      {
+        "q": 29,
+        "topic": "Vocabulary",
+        "question": "Select the one word that best substitutes the given phrase: A person who can speak exactly two languages",
+        "options": {
+          "A": "Multilingual",
+          "B": "Linguist",
+          "C": "Bilingual",
+          "D": "Polyglot"
+        },
+        "correct": "C",
+        "explanation": "'Bilingual' specifically refers to a person who can speak two languages. 'Multilingual' and 'Polyglot' both refer to someone who speaks several (more than two) languages, and a 'Linguist' is someone who studies language scientifically, not necessarily someone who speaks multiple languages fluently."
+      },
+      {
+        "q": 30,
+        "topic": "Vocabulary",
+        "question": "Select the one word that best substitutes the given phrase: One who deserts his religious faith, cause, or political party",
+        "options": {
+          "A": "Apostate",
+          "B": "Defector",
+          "C": "Deserter",
+          "D": "Renegade"
+        },
+        "correct": "D",
+        "explanation": "A 'Renegade' is a person who deserts and betrays an organisation, cause, religious faith, or set of principles, matching the phrase precisely. 'Apostate' is limited specifically to abandoning a religious faith, 'Defector' typically refers to abandoning one's country or political allegiance for another, and 'Deserter' typically refers to abandoning military duty — none covers the full scope of the phrase as precisely as 'Renegade'."
+      },
+      {
+        "q": 31,
+        "topic": "Vocabulary",
+        "question": "Select the one word that best substitutes the given phrase: A government controlled by the wealthy",
+        "options": {
+          "A": "Aristocracy",
+          "B": "Plutocracy",
+          "C": "Kleptocracy",
+          "D": "Oligarchy"
+        },
+        "correct": "B",
+        "explanation": "'Plutocracy' refers specifically to a government controlled by the wealthy. 'Oligarchy' refers to rule by a small group, not necessarily the rich; 'Aristocracy' refers to rule by a hereditary privileged class; and 'Kleptocracy' refers to rule by corrupt leaders who steal from the state — none of these specifically denotes rule by the wealthy."
+      },
+      {
+        "q": 32,
+        "topic": "Vocabulary",
+        "question": "Choose the correct meaning of the idiom: 'A Pyrrhic victory'",
+        "options": {
+          "A": "A victory achieved at such great cost that it is nearly equivalent to defeat",
+          "B": "An unexpected and effortless victory",
+          "C": "A victory achieved through deception or trickery",
+          "D": "A victory celebrated with excessive festivity"
+        },
+        "correct": "A",
+        "explanation": "'A Pyrrhic victory' refers to a victory won at such a devastating cost to the victor that it carries the same significance as a defeat, named after King Pyrrhus, whose army suffered irreplaceable losses despite winning battles against Rome."
+      },
+      {
+        "q": 33,
+        "topic": "Vocabulary",
+        "question": "Choose the correct meaning of the idiom: 'To cut the Gordian knot'",
+        "options": {
+          "A": "To solve an extremely complex problem through a bold, decisive action",
+          "B": "To avoid making a difficult decision indefinitely",
+          "C": "To deliberately create unnecessary complications in a task",
+          "D": "To negotiate a peaceful settlement between two rival parties"
+        },
+        "correct": "A",
+        "explanation": "'To cut the Gordian knot' means to solve a seemingly intractable problem through a swift, decisive, and often unconventional action, referring to the legend in which Alexander the Great sliced through an impossibly complex knot rather than untangling it."
+      },
+      {
+        "q": 34,
+        "topic": "Vocabulary",
+        "question": "Choose the correct meaning of the idiom: 'A Sisyphean task'",
+        "options": {
+          "A": "A task assigned specifically as a form of punishment",
+          "B": "A task that can be completed quickly and effortlessly",
+          "C": "A task that requires immense physical strength to complete",
+          "D": "A task that is laborious, repetitive, and ultimately futile"
+        },
+        "correct": "D",
+        "explanation": "'A Sisyphean task' describes a task that is endless and ultimately futile, drawn from the Greek myth of Sisyphus, who was condemned to eternally push a boulder up a hill only for it to roll back down each time."
+      },
+      {
+        "q": 35,
+        "topic": "Voice and Narration",
+        "question": "Choose the correct passive voice of the sentence: 'The manager should have completed the report by now.'",
+        "options": {
+          "A": "The report should be completed by the manager by now.",
+          "B": "The report should have been completed by the manager by now.",
+          "C": "The report should have completed by the manager by now.",
+          "D": "The report has been should completed by the manager by now."
+        },
+        "correct": "B",
+        "explanation": "The active sentence uses a modal perfect construction ('should have completed'), so the passive voice must follow the structure 'modal + have been + past participle': 'should have been completed'. The other options either change the tense or use an incorrect word order."
+      },
+      {
+        "q": 36,
+        "topic": "Voice and Narration",
+        "question": "Choose the correct passive (causative) form of the sentence: 'She had the workers paint the house.'",
+        "options": {
+          "A": "The house was had painted by the workers.",
+          "B": "The house had been paint by the workers.",
+          "C": "She had painted the house by the workers.",
+          "D": "She had the house painted by the workers."
+        },
+        "correct": "D",
+        "explanation": "This is a causative construction ('have + object + base verb'), and its passive equivalent follows the pattern 'have + object + past participle': 'She had the house painted by the workers.' The other options misplace the auxiliary or use an incorrect verb form."
+      },
+      {
+        "q": 37,
+        "topic": "Voice and Narration",
+        "question": "Choose the correct passive voice of the sentence: 'People believe that he has solved the puzzle.'",
+        "options": {
+          "A": "He is believed to solved the puzzle.",
+          "B": "He was believed to have solve the puzzle.",
+          "C": "He is believing to have solved the puzzle.",
+          "D": "He is believed to have solved the puzzle."
+        },
+        "correct": "D",
+        "explanation": "When a reporting verb like 'believe' takes a that-clause in the present perfect, its passive equivalent uses the structure 'is believed to have + past participle': 'He is believed to have solved the puzzle.' The remaining options contain incorrect verb forms."
+      },
+      {
+        "q": 38,
+        "topic": "Voice and Narration",
+        "question": "Choose the correct indirect speech of the sentence: The officer said to the soldiers, 'March forward immediately!'",
+        "options": {
+          "A": "The officer told the soldiers marching forward immediately.",
+          "B": "The officer ordered that the soldiers march forward immediately then.",
+          "C": "The officer ordered the soldiers to march forward immediately.",
+          "D": "The officer said the soldiers to march forward immediately."
+        },
+        "correct": "C",
+        "explanation": "An imperative sentence in direct speech is converted into indirect speech using a suitable reporting verb such as 'ordered' followed by the infinitive form: 'ordered the soldiers to march forward immediately.' The other options use incorrect grammatical structures."
+      },
+      {
+        "q": 39,
+        "topic": "Voice and Narration",
+        "question": "Choose the correct indirect speech of the sentence: He exclaimed, 'What a wonderful performance this is!'",
+        "options": {
+          "A": "He exclaimed that it was a wonderful performance.",
+          "B": "He exclaimed that what a wonderful performance that was.",
+          "C": "He exclaimed what a wonderful performance it was.",
+          "D": "He exclaimed that it is a wonderful performance."
+        },
+        "correct": "A",
+        "explanation": "An exclamatory sentence is converted into indirect speech by removing the exclamatory structure ('What a...') and expressing it as a plain statement, while also shifting the tense backward since the reporting verb is in the past tense: 'He exclaimed that it was a wonderful performance.'"
+      },
+      {
+        "q": 40,
+        "topic": "Voice and Narration",
+        "question": "Choose the correct indirect speech of the sentence: She asked him, 'Could you please help me with this problem?'",
+        "options": {
+          "A": "She asked him that could he help her with that problem.",
+          "B": "She asked him if he could help her with this problem.",
+          "C": "She requested that he could help her with this problem.",
+          "D": "She requested him to help her with that problem."
+        },
+        "correct": "D",
+        "explanation": "A polite request phrased with 'Could you please...' is conventionally converted into indirect speech using 'requested' followed by the infinitive: 'requested him to help her with that problem.' The demonstrative 'this' also shifts to 'that' since the reporting is done at a later time or place."
+      },
+      {
+        "q": 41,
+        "topic": "Grammar",
+        "question": "Arrange the sentences P, Q, R, S in the correct sequence to form a meaningful paragraph. P: This idea, though elegant, contradicts several long-established principles of thermodynamics. Q: A researcher recently proposed a novel model to explain an anomaly in stellar formation. R: Only further experimentation will determine whether the model can be reconciled with established physics. S: Colleagues remain divided, with some praising its originality and others dismissing it outright.",
+        "options": {
+          "A": "QPSR",
+          "B": "QPRS",
+          "C": "QSPR",
+          "D": "PQSR"
+        },
+        "correct": "A",
+        "explanation": "The paragraph logically begins with Q, introducing the new model. P follows, pointing out that the model contradicts established thermodynamic principles. S then describes the divided reaction among colleagues, a natural response to the contradiction raised in P. R concludes by noting that further experimentation alone can resolve the dispute. Hence, the correct order is QPSR."
+      },
+      {
+        "q": 42,
+        "topic": "Grammar",
+        "question": "Arrange the sentences P, Q, R, S in the correct sequence to form a meaningful paragraph. P: Its migratory route, spanning nearly fifteen thousand kilometres, remains only partially mapped by scientists. Q: The Arctic tern is renowned for undertaking the longest migration of any known animal. R: Tracking devices attached to a small sample of birds have begun to fill in these gaps. S: Each year, the bird travels from its breeding grounds in the Arctic to wintering areas near Antarctica.",
+        "options": {
+          "A": "QSPR",
+          "B": "QSRP",
+          "C": "SQPR",
+          "D": "QPSR"
+        },
+        "correct": "A",
+        "explanation": "The paragraph begins with Q, introducing the Arctic tern's remarkable migration. S follows, describing the annual journey in detail. P then notes that despite this knowledge, the exact route remains only partially mapped. R concludes by explaining how tracking devices are now helping to fill these gaps. Hence, the correct order is QSPR."
+      },
+      {
+        "q": 43,
+        "topic": "Grammar",
+        "question": "Arrange the sentences P, Q, R, S in the correct sequence to form a meaningful paragraph. P: Their argument rested on newly uncovered manuscripts that had lain unnoticed in a provincial archive for decades. Q: Historians have long debated the precise cause of the empire's sudden collapse. R: Whether this reinterpretation will gain wider acceptance remains to be seen. S: A team of scholars recently challenged the prevailing theory, attributing the collapse instead to internal political strife.",
+        "options": {
+          "A": "QPSR",
+          "B": "SPQR",
+          "C": "QSPR",
+          "D": "SQPR"
+        },
+        "correct": "C",
+        "explanation": "The paragraph begins with Q, establishing the long-standing historical debate. S follows, introducing the scholars who challenged the prevailing theory. P then explains the basis of their new argument — the newly uncovered manuscripts. R concludes by noting that wider acceptance of this reinterpretation is still uncertain. Hence, the correct order is QSPR."
+      },
+      {
+        "q": 44,
+        "topic": "Spelling",
+        "question": "Choose the correctly spelt word.",
+        "options": {
+          "A": "Liaison",
+          "B": "Concensus",
+          "C": "Priviledge",
+          "D": "Occassion"
+        },
+        "correct": "A",
+        "explanation": "'Liaison' is spelt correctly. The other options are misspelt: the correct forms are 'Consensus', 'Occasion', and 'Privilege'."
+      },
+      {
+        "q": 45,
+        "topic": "Fillers",
+        "question": "Select the most appropriate word to fill in the blank: The board's decision to proceed without consulting stakeholders, despite the obvious risks, was widely seen as an act of sheer _____.",
+        "options": {
+          "A": "confidence",
+          "B": "impudence",
+          "C": "audacity",
+          "D": "arrogance"
+        },
+        "correct": "C",
+        "explanation": "'Audacity' specifically denotes a bold willingness to take risks or disregard conventional caution, which fits the emphasis on 'despite the obvious risks.' 'Impudence' implies disrespect toward a person rather than risk-taking, 'arrogance' refers to an exaggerated sense of self-importance rather than risk-taking behaviour, and 'confidence' lacks the negative, reckless connotation implied by the context."
+      }
+    ],
+    "General Awareness": [
+      {
+        "q": 1,
+        "topic": "Geography",
+        "question": "Which river is regarded as the longest river flowing within Indian territory (by course length)?",
+        "options": {
+          "A": "Yamuna",
+          "B": "Godavari",
+          "C": "Brahmaputra",
+          "D": "Ganga"
+        },
+        "correct": "D",
+        "explanation": "The Ganga covers about 2,525 km within India from Gangotri to the Bay of Bengal, making it the longest river flowing entirely within the country."
+      },
+      {
+        "q": 2,
+        "topic": "Current Affairs",
+        "question": "What is the SI unit of electric current?",
+        "options": {
+          "A": "Volt",
+          "B": "Ampere",
+          "C": "Ohm",
+          "D": "Watt"
+        },
+        "correct": "B",
+        "explanation": "The Ampere (A) is the SI unit of electric current. Volt measures potential difference, Ohm measures resistance, and Watt measures power."
+      },
+      {
+        "q": 3,
+        "topic": "Economic Scene",
+        "question": "Vitamin C is chemically known by which name?",
+        "options": {
+          "A": "Ascorbic acid",
+          "B": "Retinol",
+          "C": "Calciferol",
+          "D": "Tocopherol"
+        },
+        "correct": "A",
+        "explanation": "Vitamin C is chemically ascorbic acid, a water-soluble vitamin essential for immunity and collagen synthesis; its deficiency causes scurvy."
+      },
+      {
+        "q": 4,
+        "topic": "Current Affairs",
+        "question": "The headquarters of the United Nations Organisation is located in which city?",
+        "options": {
+          "A": "Geneva",
+          "B": "Paris",
+          "C": "New York",
+          "D": "Washington D.C."
+        },
+        "correct": "C",
+        "explanation": "The UN headquarters is in New York City. Geneva hosts several UN agencies but not the main headquarters."
+      },
+      {
+        "q": 5,
+        "topic": "Current Affairs",
+        "question": "Who is the author of the book 'The Discovery of India'?",
+        "options": {
+          "A": "Mahatma Gandhi",
+          "B": "Rabindranath Tagore",
+          "C": "Jawaharlal Nehru",
+          "D": "B.R. Ambedkar"
+        },
+        "correct": "C",
+        "explanation": "Jawaharlal Nehru wrote 'The Discovery of India' during his imprisonment at Ahmednagar Fort; it was published in 1946."
+      },
+      {
+        "q": 6,
+        "topic": "General Polity",
+        "question": "Consider the following statements regarding Fundamental Rights under the Indian Constitution: 1. Article 14 guarantees equality before law and equal protection of laws. 2. The Right to Property is currently a Fundamental Right under Part III. 3. Article 21 guarantees protection of life and personal liberty. Which of the statements given above is/are correct?",
+        "options": {
+          "A": "1 and 3 only",
+          "B": "1, 2 and 3",
+          "C": "2 and 3 only",
+          "D": "1 only"
+        },
+        "correct": "A",
+        "explanation": "Statements 1 and 3 are correct. The Right to Property was removed from Part III by the 44th Constitutional Amendment (1978) and now exists only as a legal right under Article 300A, so statement 2 is incorrect."
+      },
+      {
+        "q": 7,
+        "topic": "Current Affairs",
+        "question": "Which of the following best distinguishes the Consumer Price Index (CPI) from the Wholesale Price Index (WPI) in India?",
+        "options": {
+          "A": "CPI is released by the RBI while WPI is released by the NSO",
+          "B": "WPI includes services while CPI does not",
+          "C": "CPI measures retail prices of a consumer basket while WPI measures wholesale prices and excludes services",
+          "D": "Both indices track an identical basket of goods with the same base year"
+        },
+        "correct": "C",
+        "explanation": "CPI, compiled by the NSO, reflects retail prices actually paid by consumers for a defined basket including services, while WPI tracks prices at the wholesale/producer level and excludes services."
+      },
+      {
+        "q": 8,
+        "topic": "Economic Scene",
+        "question": "As of the RBI's Monetary Policy Committee review in August 2026, at what level was the policy repo rate held?",
+        "options": {
+          "A": "5.50%",
+          "B": "6.50%",
+          "C": "5.25%",
+          "D": "4.75%"
+        },
+        "correct": "C",
+        "explanation": "The MPC, chaired by Governor Sanjay Malhotra, kept the repo rate unchanged at 5.25% at its August 3-5, 2026 meeting, holding rates steady for a fourth consecutive review after cutting from 5.5% to 5.25% in December 2025."
+      },
+      {
+        "q": 9,
+        "topic": "Current Affairs",
+        "question": "Who is the current Chief Justice of India (as of 2026)?",
+        "options": {
+          "A": "D.Y. Chandrachud",
+          "B": "B.R. Gavai",
+          "C": "Surya Kant",
+          "D": "Sanjiv Khanna"
+        },
+        "correct": "C",
+        "explanation": "Justice Surya Kant took oath as the 53rd Chief Justice of India on 24 November 2025, succeeding Justice B.R. Gavai."
+      },
+      {
+        "q": 10,
+        "topic": "Economic Scene",
+        "question": "Who is the current Governor of the Reserve Bank of India?",
+        "options": {
+          "A": "Shaktikanta Das",
+          "B": "Urjit Patel",
+          "C": "Sanjay Malhotra",
+          "D": "Raghuram Rajan"
+        },
+        "correct": "C",
+        "explanation": "Sanjay Malhotra, a 1990-batch IAS officer and former Revenue Secretary, took charge as the 26th Governor of the RBI on 11 December 2024, succeeding Shaktikanta Das."
+      },
+      {
+        "q": 11,
+        "topic": "Current Affairs",
+        "question": "The southwest monsoon over India is primarily caused by which of the following mechanisms?",
+        "options": {
+          "A": "Differential heating of land and sea, creating a low-pressure zone over the Indian landmass in summer",
+          "B": "Presence of the jet stream over southern India throughout the year",
+          "C": "Cyclonic activity originating exclusively in the Arabian Sea",
+          "D": "The tilt of the Earth's axis acting alone, without any pressure difference"
+        },
+        "correct": "A",
+        "explanation": "The southwest monsoon results mainly from differential heating of land and ocean in summer, which creates a low-pressure zone over northwest India that draws in moist winds from the Indian Ocean."
+      },
+      {
+        "q": 12,
+        "topic": "Current Affairs",
+        "question": "Arrange the following freedom movements in the correct chronological order of their launch: 1. Non-Cooperation Movement, 2. Civil Disobedience Movement, 3. Quit India Movement.",
+        "options": {
+          "A": "1, 2, 3",
+          "B": "2, 1, 3",
+          "C": "3, 2, 1",
+          "D": "1, 3, 2"
+        },
+        "correct": "A",
+        "explanation": "The correct chronological order is: Non-Cooperation Movement (1920), Civil Disobedience Movement (1930), and Quit India Movement (1942)."
+      },
+      {
+        "q": 13,
+        "topic": "Economic Scene",
+        "question": "In the context of the Union Budget, the term 'Fiscal Deficit' refers to:",
+        "options": {
+          "A": "Total revenue minus total expenditure",
+          "B": "Total expenditure minus total receipts excluding borrowings",
+          "C": "The difference between capital expenditure and revenue expenditure",
+          "D": "Total borrowings of the government from the RBI only"
+        },
+        "correct": "B",
+        "explanation": "Fiscal deficit is the excess of total expenditure over total receipts excluding borrowings; it represents the total borrowing requirement of the government in a financial year."
+      },
+      {
+        "q": 14,
+        "topic": "Current Affairs",
+        "question": "A concave mirror forms a real, inverted image that is larger than the object. Where must the object be placed?",
+        "options": {
+          "A": "Beyond the centre of curvature",
+          "B": "At the centre of curvature",
+          "C": "Between the pole and the focus",
+          "D": "Between the focus and the centre of curvature"
+        },
+        "correct": "D",
+        "explanation": "When an object is placed between the focus (F) and the centre of curvature (C) of a concave mirror, the image formed is real, inverted, and magnified (larger than the object), located beyond C."
+      },
+      {
+        "q": 15,
+        "topic": "General Polity",
+        "question": "Consider the following statements regarding the Comptroller and Auditor General (CAG) of India: 1. The CAG is appointed by the President of India. 2. The CAG audits the accounts of both the Union and State Governments. 3. The CAG can be removed only through a process similar to the removal of a Supreme Court judge. Which of the statements given above is/are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "1, 2 and 3",
+          "C": "2 and 3 only",
+          "D": "1 only"
+        },
+        "correct": "B",
+        "explanation": "All three statements are correct. The CAG is appointed by the President under Article 148, audits accounts of both the Union and States, and can be removed only on grounds and in the manner applicable to a Supreme Court judge, ensuring independence."
+      },
+      {
+        "q": 16,
+        "topic": "Current Affairs",
+        "question": "The 2025 Nobel Prize in Economic Sciences was awarded to Joel Mokyr, Philippe Aghion and Peter Howitt primarily for their work explaining which concept?",
+        "options": {
+          "A": "Behavioural economics and nudge theory",
+          "B": "Innovation-driven economic growth",
+          "C": "Auction theory",
+          "D": "Development economics and poverty alleviation"
+        },
+        "correct": "B",
+        "explanation": "The Royal Swedish Academy of Sciences awarded the 2025 prize for explaining innovation-driven economic growth — Mokyr for identifying prerequisites for sustained technological progress, and Aghion and Howitt for the theory of growth through 'creative destruction'."
+      },
+      {
+        "q": 17,
+        "topic": "Geography",
+        "question": "Which pair of Indian mountain ranges is a classic example of 'Block Mountains' formed as a result of faulting?",
+        "options": {
+          "A": "Himalayas and Aravalli",
+          "B": "Vindhya and Satpura",
+          "C": "Western Ghats and Eastern Ghats",
+          "D": "Nilgiri and Anamalai"
+        },
+        "correct": "B",
+        "explanation": "The Vindhya and Satpura ranges, flanking the Narmada rift valley, are formed by block faulting and are the standard textbook example of Block Mountains in Indian physiography."
+      },
+      {
+        "q": 18,
+        "topic": "Current Affairs",
+        "question": "Baking soda (sodium bicarbonate) is commonly used as an antacid because it:",
+        "options": {
+          "A": "Is a strong acid that neutralises excess base in the stomach",
+          "B": "Is a mild base that neutralises excess hydrochloric acid in the stomach",
+          "C": "Raises stomach pH to a strongly alkaline level, aiding digestion",
+          "D": "Reacts with water to form a strong acid"
+        },
+        "correct": "B",
+        "explanation": "Sodium bicarbonate is a mild base. It reacts with and neutralises excess hydrochloric acid secreted in the stomach, relieving acidity, without making the stomach strongly alkaline."
+      },
+      {
+        "q": 19,
+        "topic": "Current Affairs",
+        "question": "The 2026 Winter Olympic Games were hosted by which country?",
+        "options": {
+          "A": "Japan",
+          "B": "France",
+          "C": "Italy",
+          "D": "South Korea"
+        },
+        "correct": "C",
+        "explanation": "The 2026 Winter Olympics (Milano Cortina 2026) were hosted by Italy, jointly by the cities of Milan and Cortina d'Ampezzo."
+      },
+      {
+        "q": 20,
+        "topic": "General Polity",
+        "question": "Consider the following statements regarding Emergency provisions in the Indian Constitution: 1. National Emergency under Article 352 has so far been proclaimed three times in India. 2. During a Financial Emergency under Article 360, the salaries of judges of the Supreme Court and High Courts can be reduced. 3. A Proclamation of President's Rule under Article 356 must be approved by Parliament within two months of issue. Which of the statements given above is/are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1, 2 and 3",
+          "D": "1 and 3 only"
+        },
+        "correct": "C",
+        "explanation": "All three statements are correct. National Emergency has been proclaimed three times — 1962, 1971 and 1975. Under Article 360(4)(b), salaries of judges and other government servants can be reduced during a Financial Emergency. Under Article 356, President's Rule requires Parliamentary approval within two months."
+      },
+      {
+        "q": 21,
+        "topic": "Economic Scene",
+        "question": "Consider the following statements about the Cash Reserve Ratio (CRR) and Statutory Liquidity Ratio (SLR): 1. CRR is the portion of a bank's deposits that must be kept with the RBI in cash form. 2. SLR can be maintained in the form of cash, gold, or approved government securities. 3. An increase in CRR reduces the lending capacity of banks. Which of the statements given above is/are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "1, 2 and 3",
+          "C": "2 and 3 only",
+          "D": "1 only"
+        },
+        "correct": "B",
+        "explanation": "All three statements are correct. CRR must be maintained with the RBI in cash; SLR can be held as cash, gold, or approved securities; and raising CRR withdraws liquidity from banks, reducing their capacity to lend."
+      },
+      {
+        "q": 22,
+        "topic": "Current Affairs",
+        "question": "Arrange the following events in the correct chronological order: 1. Formation of the All India Muslim League, 2. Partition of Bengal, 3. Government of India Act, 1919, 4. Simon Commission.",
+        "options": {
+          "A": "2, 1, 3, 4",
+          "B": "1, 2, 3, 4",
+          "C": "2, 1, 4, 3",
+          "D": "4, 2, 1, 3"
+        },
+        "correct": "A",
+        "explanation": "The correct order is: Partition of Bengal (1905), formation of the Muslim League (1906), Government of India Act (1919), and the Simon Commission (1927)."
+      },
+      {
+        "q": 23,
+        "topic": "Geography",
+        "question": "Consider the following statements comparing Himalayan and Peninsular rivers of India: 1. Himalayan rivers are perennial, as they are fed by both rainfall and melting snow. 2. Peninsular rivers flow through deep gorges over a youthful topography throughout their course. 3. Himalayan rivers exhibit meandering and shifting of channels in the plains due to heavy alluvial deposition. Which of the statements given above is/are correct?",
+        "options": {
+          "A": "1 and 3 only",
+          "B": "1, 2 and 3",
+          "C": "2 and 3 only",
+          "D": "2 only"
+        },
+        "correct": "A",
+        "explanation": "Statements 1 and 3 are correct — Himalayan rivers are snow-fed and perennial, and they meander extensively in the plains due to heavy silt deposition. Statement 2 is incorrect: Peninsular rivers are mostly rain-fed, flow over a mature, stable topography, and are not characterised by youthful gorges throughout their course."
+      },
+      {
+        "q": 24,
+        "topic": "Current Affairs",
+        "question": "Consider the following statements regarding the Modern Periodic Table: 1. Elements are arranged in order of increasing atomic number. 2. Elements in the same group have the same number of valence electrons. 3. Atomic radius generally increases across a period from left to right. Which of the statements given above is/are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "1, 2 and 3",
+          "C": "2 and 3 only",
+          "D": "1 only"
+        },
+        "correct": "A",
+        "explanation": "Statements 1 and 2 are correct. Statement 3 is incorrect — atomic radius generally decreases across a period from left to right due to increasing nuclear charge pulling electrons closer."
+      },
+      {
+        "q": 25,
+        "topic": "Economic Scene",
+        "question": "Consider the following statements: 1. Sanjay Malhotra took charge as the 26th Governor of the RBI in December 2024. 2. Dr. Saibal Chattopadhyay was appointed Chairperson of the National Statistical Commission in 2026. 3. Justice Surya Kant is the 53rd Chief Justice of India. Which of the statements given above is/are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1, 2 and 3",
+          "D": "1 only"
+        },
+        "correct": "C",
+        "explanation": "All three statements are correct and reflect recent (2024-2026) appointments: Sanjay Malhotra as 26th RBI Governor (Dec 2024), Dr. Saibal Chattopadhyay as NSC Chairperson (2026), and Justice Surya Kant as the 53rd CJI (Nov 2025)."
+      }
+    ],
+    "Computer Knowledge": [
+      {
+        "q": 1,
+        "topic": "Computer Basics",
+        "question": "Which of the following is an example of an input device?",
+        "options": {
+          "A": "Scanner",
+          "B": "Monitor",
+          "C": "Printer",
+          "D": "Speaker"
+        },
+        "correct": "A",
+        "explanation": "A scanner captures data and feeds it into the computer, making it an input device. Monitor, printer and speaker are output devices."
+      },
+      {
+        "q": 2,
+        "topic": "Computer Basics",
+        "question": "Which component of a computer is often called its 'brain', as it performs most of the processing?",
+        "options": {
+          "A": "RAM",
+          "B": "CPU",
+          "C": "Hard Disk",
+          "D": "Motherboard"
+        },
+        "correct": "B",
+        "explanation": "The Central Processing Unit (CPU) carries out instructions and performs arithmetic, logical and control operations, and is therefore called the brain of the computer."
+      },
+      {
+        "q": 3,
+        "topic": "Office Applications",
+        "question": "What is the default file extension of a Microsoft PowerPoint presentation from PowerPoint 2007 onwards?",
+        "options": {
+          "A": ".pptx",
+          "B": ".ppt",
+          "C": ".pdf",
+          "D": ".docx"
+        },
+        "correct": "A",
+        "explanation": "From PowerPoint 2007 onwards, the default XML-based format is .pptx. The older .ppt format was used in PowerPoint 97-2003."
+      },
+      {
+        "q": 4,
+        "topic": "Computer Basics",
+        "question": "Which type of computer memory is volatile, meaning its contents are erased when power is switched off?",
+        "options": {
+          "A": "ROM",
+          "B": "RAM",
+          "C": "Hard Disk",
+          "D": "SSD"
+        },
+        "correct": "B",
+        "explanation": "RAM (Random Access Memory) is volatile — its contents are lost when power is turned off, unlike ROM, hard disks and SSDs, which are non-volatile."
+      },
+      {
+        "q": 5,
+        "topic": "Computer Basics",
+        "question": "Who is widely regarded as the 'Father of the Computer' for designing the Analytical Engine?",
+        "options": {
+          "A": "Charles Babbage",
+          "B": "Alan Turing",
+          "C": "John von Neumann",
+          "D": "Bill Gates"
+        },
+        "correct": "A",
+        "explanation": "Charles Babbage conceptualised and designed the Analytical Engine in the 19th century, an early mechanical general-purpose computer, earning him the title 'Father of the Computer'."
+      },
+      {
+        "q": 6,
+        "topic": "Computer Basics",
+        "question": "Cell A1 in a worksheet contains a student's marks. Which formula correctly returns \"Pass\" if the marks are 40 or more, and \"Fail\" otherwise?",
+        "options": {
+          "A": "=IF(A1>=40,\"Pass\",\"Fail\")",
+          "B": "=SUMIF(A1>=40,\"Pass\",\"Fail\")",
+          "C": "=COUNTIF(A1,\">=40\",\"Pass\")",
+          "D": "=IF(A1,\"Pass\",\">=40\",\"Fail\")"
+        },
+        "correct": "A",
+        "explanation": "The IF() function tests a logical condition and returns one value if true and another if false — =IF(A1>=40,\"Pass\",\"Fail\") is the correct construction. SUMIF and COUNTIF are used for conditional aggregation, not conditional text output."
+      },
+      {
+        "q": 7,
+        "topic": "Computer Basics",
+        "question": "Which of the following best differentiates TCP from UDP?",
+        "options": {
+          "A": "TCP is connectionless and faster; UDP is connection-oriented and reliable",
+          "B": "TCP establishes a connection and ensures reliable, ordered delivery; UDP is connectionless and does not guarantee delivery",
+          "C": "Both TCP and UDP guarantee reliable delivery and differ only in port numbering",
+          "D": "UDP is used only for email while TCP is used only for web browsing"
+        },
+        "correct": "B",
+        "explanation": "TCP (Transmission Control Protocol) is connection-oriented and ensures reliable, ordered delivery of data through acknowledgements and retransmission. UDP (User Datagram Protocol) is connectionless and faster but does not guarantee delivery, making it suitable for streaming and gaming."
+      },
+      {
+        "q": 8,
+        "topic": "Cyber Security",
+        "question": "An employee receives an email that appears to be from their bank, asking them to click a link and enter their net-banking password to 'verify' their account. This is an example of:",
+        "options": {
+          "A": "A worm attack",
+          "B": "Phishing",
+          "C": "A firewall breach",
+          "D": "Spyware installation"
+        },
+        "correct": "B",
+        "explanation": "Phishing involves fraudulent communication, often via email, that impersonates a trusted entity to trick users into revealing sensitive information such as passwords or card details."
+      },
+      {
+        "q": 9,
+        "topic": "Office Applications",
+        "question": "Which feature in MS Word allows a user to view and manage insertions, deletions and formatting changes made by different reviewers of a document?",
+        "options": {
+          "A": "Mail Merge",
+          "B": "Track Changes",
+          "C": "Slide Master",
+          "D": "Page Break"
+        },
+        "correct": "B",
+        "explanation": "Track Changes records edits made by reviewers (insertions, deletions, formatting) so they can be reviewed, accepted or rejected. Mail Merge and Slide Master serve different purposes, and Page Break is a formatting element."
+      },
+      {
+        "q": 10,
+        "topic": "Internet and Networking",
+        "question": "The primary difference between HTTP and HTTPS is that HTTPS:",
+        "options": {
+          "A": "Uses a different set of request methods not available in HTTP",
+          "B": "Encrypts data transmitted between the browser and server using SSL/TLS",
+          "C": "Works only within a local area network",
+          "D": "Does not require a domain name to function"
+        },
+        "correct": "B",
+        "explanation": "HTTPS is HTTP layered with SSL/TLS encryption, which secures data exchanged between a browser and a server, protecting it from interception — unlike plain HTTP, which transmits data unencrypted."
+      },
+      {
+        "q": 11,
+        "topic": "Office Applications",
+        "question": "In MS Excel, the formula in cell C1 is =$A$1+B1. If this formula is copied to cell C2, what happens to the two references?",
+        "options": {
+          "A": "Both A1 and B1 change to A2 and B2",
+          "B": "A1 remains fixed (absolute), while B1 changes to B2",
+          "C": "A1 changes to A2, while B1 remains fixed",
+          "D": "Neither reference changes"
+        },
+        "correct": "B",
+        "explanation": "The dollar signs in $A$1 make it an absolute reference, which does not change when copied. B1, being a relative reference, adjusts to B2 when the formula is copied one row down."
+      },
+      {
+        "q": 12,
+        "topic": "Computer Basics",
+        "question": "Which generation of computers introduced the use of microprocessors?",
+        "options": {
+          "A": "Second generation",
+          "B": "Third generation",
+          "C": "Fourth generation",
+          "D": "Fifth generation"
+        },
+        "correct": "C",
+        "explanation": "Fourth-generation computers (from the early 1970s) introduced microprocessors, which integrated the entire CPU onto a single silicon chip, greatly reducing size and cost."
+      },
+      {
+        "q": 13,
+        "topic": "Software",
+        "question": "Which of the following statements correctly explains the relationship between a Terabyte (TB) and a Gigabyte (GB)?",
+        "options": {
+          "A": "1 TB = 1000 GB under the SI decimal convention, while 1 TiB = 1024 GiB under the binary convention",
+          "B": "1 TB always equals 1024 GB, regardless of the convention used",
+          "C": "1 TB = 100 GB under all international standards",
+          "D": "TB and GB are unrelated units with no fixed numerical relationship"
+        },
+        "correct": "A",
+        "explanation": "Under the SI decimal system, 1 TB = 1000 GB (used by storage manufacturers). Under the binary convention used by some operating systems, 1 TiB = 1024 GiB. The two conventions are often conflated in everyday usage, but only option (A) states the relationship precisely."
+      },
+      {
+        "q": 14,
+        "topic": "Internet and Networking",
+        "question": "A company wants to deploy a server operating system that allows it to freely view, modify and redistribute the source code without paying licensing fees. Which type of OS should it choose?",
+        "options": {
+          "A": "A proprietary OS like Windows Server",
+          "B": "An open-source OS like Linux",
+          "C": "A firmware-based OS only",
+          "D": "A real-time OS only"
+        },
+        "correct": "B",
+        "explanation": "Open-source operating systems such as Linux provide freely accessible source code that can be viewed, modified and redistributed, unlike proprietary systems such as Windows, which are licensed and closed-source."
+      },
+      {
+        "q": 15,
+        "topic": "Computer Basics",
+        "question": "A banking app requires a user to scan their fingerprint before allowing them to log in. This process is an example of:",
+        "options": {
+          "A": "Encryption",
+          "B": "Authentication",
+          "C": "Firewall protection",
+          "D": "Data compression"
+        },
+        "correct": "B",
+        "explanation": "Authentication is the process of verifying a user's identity — here through a biometric fingerprint scan — before granting access to a system or account."
+      },
+      {
+        "q": 16,
+        "topic": "Internet and Networking",
+        "question": "A small office needs a single device that connects its internal computers into one local network and also connects that network to the internet, forwarding data between the two using IP addresses. Which device best fits this requirement?",
+        "options": {
+          "A": "Hub",
+          "B": "Switch",
+          "C": "Router",
+          "D": "Repeater"
+        },
+        "correct": "C",
+        "explanation": "A router connects distinct networks (such as a LAN and the internet) and forwards data packets between them based on IP addresses, unlike a hub or switch, which operate within a single local network."
+      },
+      {
+        "q": 17,
+        "topic": "Internet and Networking",
+        "question": "Consider the following statements about email protocols: 1. SMTP is used to send email from a client to a mail server. 2. POP3 downloads email to a local device and typically removes it from the server. 3. IMAP allows synchronisation of email across multiple devices while keeping messages stored on the server. Which of the statements given above is/are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1, 2 and 3",
+          "D": "1 only"
+        },
+        "correct": "C",
+        "explanation": "All three statements are correct. SMTP handles outgoing mail; POP3 typically downloads and removes messages from the server; IMAP keeps messages on the server and synchronises them across multiple devices."
+      },
+      {
+        "q": 18,
+        "topic": "Computer Basics",
+        "question": "In a worksheet, cell B2 contains a student's marks, and cell C2 should display \"Pass\" if the marks are 40 or above, otherwise \"Fail\". This formula in C2 needs to be copied down to C10 for the rest of the class, with each row checking its own marks cell. Which formula construction in C2 is most appropriate before copying down?",
+        "options": {
+          "A": "=IF(B2>=40,\"Pass\",\"Fail\"), using a relative reference to B2",
+          "B": "=IF($B$2>=40,\"Pass\",\"Fail\"), keeping B2 absolute",
+          "C": "=IF(B$2>=40,\"Pass\",\"Fail\"), keeping only the row fixed",
+          "D": "=IF(A2>=40,\"Pass\",\"Fail\"), referring to column A instead"
+        },
+        "correct": "A",
+        "explanation": "Since each row must check its own marks cell (B2, B3, B4, ...), the reference to B2 should remain relative so it automatically adjusts to B3, B4, and so on when copied down. Making B2 absolute would incorrectly force every row to check the same cell, B2."
+      },
+      {
+        "q": 19,
+        "topic": "Computer Basics",
+        "question": "A user's computer begins running slowly, and files start duplicating themselves and spreading automatically to other computers on the same network, without the user opening any file or attachment. This behaviour is most characteristic of:",
+        "options": {
+          "A": "A Trojan horse, which disguises itself as legitimate software",
+          "B": "A worm, which self-replicates and spreads across networks independently",
+          "C": "Spyware, which secretly monitors user activity",
+          "D": "A firewall malfunction"
+        },
+        "correct": "B",
+        "explanation": "A worm is a standalone malicious program that self-replicates and spreads across a network on its own, without needing to attach to a host file or requiring the user to open anything — distinguishing it from a Trojan horse, which relies on disguise, and spyware, which focuses on covert monitoring."
+      },
+      {
+        "q": 20,
+        "topic": "Digital Basics",
+        "question": "Consider the following statements regarding IPv4 and IPv6: 1. IPv4 addresses are 32-bit, while IPv6 addresses are 128-bit. 2. IPv6 was developed mainly because the pool of available IPv4 addresses was becoming exhausted. 3. IPv4 addresses are typically written in dotted-decimal notation, while IPv6 addresses are written in hexadecimal segments separated by colons. Which of the statements given above is/are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1, 2 and 3",
+          "D": "1 only"
+        },
+        "correct": "C",
+        "explanation": "All three statements are correct. IPv4 uses 32-bit addressing (e.g., 192.168.1.1) while IPv6 uses 128-bit addressing (e.g., 2001:0db8::1). IPv6 was developed primarily to overcome the exhaustion of the finite IPv4 address space."
+      }
+    ]
+  }
+}

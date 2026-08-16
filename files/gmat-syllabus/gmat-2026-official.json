@@ -1,0 +1,71 @@
+{
+  "exam": "GMAT Focus Edition",
+  "year": 2026,
+  "source_note": "Official GMAT Focus syllabus from GMAT EXAM/GMAT_2026_Syllabus.json (GMAC).",
+  "exam_pattern": {
+    "duration_minutes": 135,
+    "questions": 64,
+    "score_range": "205-805",
+    "negative_marking": false,
+    "subjects": {
+      "Quantitative Reasoning": 21,
+      "Verbal Reasoning": 23,
+      "Data Insights": 20
+    }
+  },
+  "subjects": {
+    "Quantitative Reasoning": [
+      "Integers",
+      "Factors and multiples",
+      "Odd and even numbers",
+      "Prime numbers",
+      "Fractions",
+      "Decimals",
+      "Percentages",
+      "Percentage change",
+      "Ratios",
+      "Proportions",
+      "Exponents",
+      "Roots",
+      "Linear equations",
+      "Quadratic equations",
+      "Simultaneous equations",
+      "Linear inequalities",
+      "Basic functions",
+      "Work rate",
+      "Combined work",
+      "Average speed",
+      "Distance-time problems",
+      "Profit and loss",
+      "Simple interest",
+      "Compound interest",
+      "Weighted average",
+      "Mixtures",
+      "Arithmetic reasoning"
+    ],
+    "Verbal Reasoning": [
+      "Main idea",
+      "Supporting idea",
+      "Inference",
+      "Application",
+      "Organization of ideas",
+      "Tone",
+      "Purpose",
+      "Identify conclusion",
+      "Identify assumptions",
+      "Strengthen an argument",
+      "Weaken an argument",
+      "Evaluate an argument",
+      "Draw conclusions",
+      "Identify flaws",
+      "Complete an argument"
+    ],
+    "Data Insights": [
+      "Data Sufficiency",
+      "Multi-Source Reasoning",
+      "Table Analysis",
+      "Graphics Interpretation",
+      "Two-Part Analysis"
+    ]
+  }
+}

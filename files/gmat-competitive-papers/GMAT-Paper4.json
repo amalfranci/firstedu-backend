@@ -1,0 +1,945 @@
+{
+  "paper_id": "GMAT-Paper4",
+  "title": "GMAT Paper 4",
+  "exam": "GMAT",
+  "year": 2026,
+  "subjects": {
+    "Quantitative Reasoning": [
+      {
+        "q": 1,
+        "topic": "Exponents",
+        "question": "If x is a positive integer such that the remainder when 3 raised to the power 4x + 2 is divided by 10 is r, what is the value of r?",
+        "options": {
+          "A": "7",
+          "B": "3",
+          "C": "1",
+          "D": "9",
+          "E": "5"
+        },
+        "correct": "D",
+        "explanation": "The units digit of powers of 3 cycles every 4: 3, 9, 7, 1. An exponent of form 4x+2 leaves remainder 2 mod 4, matching 3^2, which ends in 9. So r = 9."
+      },
+      {
+        "q": 2,
+        "topic": "Combined work",
+        "question": "Machine P produces widgets at a constant rate of 120 widgets per hour, and Machine Q produces widgets at a constant rate of 180 widgets per hour. If both machines work together simultaneously to produce a total order of 900 widgets, how many minutes will it take to complete the order?",
+        "options": {
+          "A": "120 minutes",
+          "B": "180 minutes",
+          "C": "200 minutes",
+          "D": "150 minutes",
+          "E": "240 minutes"
+        },
+        "correct": "B",
+        "explanation": "Combined rate = 120+180 = 300 widgets/hr. Time = 900/300 = 3 hours = 180 minutes."
+      },
+      {
+        "q": 3,
+        "topic": "Profit and loss",
+        "question": "A merchant purchased a shipment of items and sold 60 percent of them at a profit of 25 percent, and sold the remaining 40 percent of the items at a loss of 10 percent. What was the merchant's overall percentage profit on the entire shipment?",
+        "options": {
+          "A": "15 percent",
+          "B": "12.5 percent",
+          "C": "11 percent",
+          "D": "10 percent",
+          "E": "8.5 percent"
+        },
+        "correct": "C",
+        "explanation": "With cost $100 (100 items at $1 each): 60 items at 25% profit = $75 revenue; 40 items at 10% loss = $36 revenue. Total revenue = $111. Profit = $11 on $100 cost = 11%."
+      },
+      {
+        "q": 4,
+        "topic": "Mixtures",
+        "question": "A container initially holds a mixture of 80 liters of solution containing alcohol and water in the ratio 3:1. If 20 liters of this mixture is removed and replaced with 20 liters of pure water, what is the ratio of alcohol to water in the resulting mixture?",
+        "options": {
+          "A": "3:2",
+          "B": "9:7",
+          "C": "2:1",
+          "D": "9:11",
+          "E": "4:3"
+        },
+        "correct": "B",
+        "explanation": "Initial alcohol = 60L, water = 20L. Removing 20L removes 15L alcohol, leaving 45L alcohol. Adding 20L water gives water = 20-5+20 = 35L. Ratio = 45:35 = 9:7."
+      },
+      {
+        "q": 5,
+        "topic": "Arithmetic reasoning",
+        "question": "In a group of 120 students, 70 students study Mathematics, 60 students study Physics, and 20 students study neither subject. How many students in the group study both Mathematics and Physics?",
+        "options": {
+          "A": "10",
+          "B": "20",
+          "C": "30",
+          "D": "40",
+          "E": "50"
+        },
+        "correct": "C",
+        "explanation": "Students studying at least one = 120-20=100. 100 = 70+60-Both => Both = 30."
+      },
+      {
+        "q": 6,
+        "topic": "Linear inequalities",
+        "question": "What is the sum of all integer solutions of the absolute value inequality |2x - 5| <= 9?",
+        "options": {
+          "A": "25",
+          "B": "20",
+          "C": "18",
+          "D": "22",
+          "E": "15"
+        },
+        "correct": "A",
+        "explanation": "-9 <= 2x-5 <= 9 => -4 <= 2x <= 14 => -2 <= x <= 7. Integers -2 to 7 sum to 25."
+      },
+      {
+        "q": 7,
+        "topic": "Distance-time problems",
+        "question": "Two trains, train X and train Y, start at the same time from Station A and Station B, respectively, traveling towards each other along a straight parallel track. Train X travels at a constant speed of 60 miles per hour, and train Y travels at a constant speed of 90 miles per hour. If the distance between Station A and Station B is 300 miles, how many miles from Station A will the two trains meet?",
+        "options": {
+          "A": "100 miles",
+          "B": "150 miles",
+          "C": "180 miles",
+          "D": "120 miles",
+          "E": "160 miles"
+        },
+        "correct": "D",
+        "explanation": "Relative speed = 150 mph. Time to meet = 300/150 = 2 hours. Train X covers 60*2 = 120 miles."
+      },
+      {
+        "q": 8,
+        "topic": "Exponents",
+        "question": "If n is an integer such that n^2 is divisible by 72, which of the following MUST be a factor of n?",
+        "options": {
+          "A": "12",
+          "B": "18",
+          "C": "24",
+          "D": "36",
+          "E": "8"
+        },
+        "correct": "A",
+        "explanation": "72 = 2^3 * 3^2. For n^2 divisible by 72, n must include at least 2^2 * 3^1 = 12, so 12 must be a factor of n."
+      },
+      {
+        "q": 9,
+        "topic": "Percentages",
+        "question": "An investment of $8,000 is deposited into an account that pays an annual interest rate of 10 percent compounded semi-annually. What is the total value of the investment at the end of 1.5 years?",
+        "options": {
+          "A": "$9,200",
+          "B": "$9,261",
+          "C": "$9,282",
+          "D": "$9,300",
+          "E": "$9,350"
+        },
+        "correct": "B",
+        "explanation": "Semi-annual rate = 5%, 3 periods. 8000*(1.05)^3 = 8000*1.157625 = $9,261."
+      },
+      {
+        "q": 10,
+        "topic": "Arithmetic reasoning",
+        "question": "In how many distinct ways can a committee of 4 people be chosen from a group of 6 men and 4 women if the committee must include at least 2 women?",
+        "options": {
+          "A": "90",
+          "B": "105",
+          "C": "120",
+          "D": "135",
+          "E": "115"
+        },
+        "correct": "E",
+        "explanation": "Case 2W2M: C(4,2)*C(6,2)=6*15=90. Case 3W1M: C(4,3)*C(6,1)=4*6=24. Case 4W0M: C(4,4)*C(6,0)=1. Total = 90+24+1=115."
+      },
+      {
+        "q": 11,
+        "topic": "Weighted average",
+        "question": "The average (arithmetic mean) of a set of 8 numbers is 24. If two numbers, 12 and 30, are removed from the set, what is the average of the remaining 6 numbers?",
+        "options": {
+          "A": "23",
+          "B": "24",
+          "C": "25",
+          "D": "26",
+          "E": "27"
+        },
+        "correct": "C",
+        "explanation": "Original sum = 192. Removed sum = 42. New sum = 150. New average = 150/6 = 25."
+      },
+      {
+        "q": 12,
+        "topic": "Exponents",
+        "question": "What is the units digit of 7 raised to the power 83?",
+        "options": {
+          "A": "1",
+          "B": "3",
+          "C": "7",
+          "D": "9",
+          "E": "5"
+        },
+        "correct": "B",
+        "explanation": "Units digits of 7^n cycle every 4: 7,9,3,1. 83 mod 4 = 3, matching 7^3 = ...3."
+      },
+      {
+        "q": 13,
+        "topic": "Basic functions",
+        "question": "If function f(x) = (x + 5) / (x - 3) for all real numbers x except x = 3, for what value of k does f(k) = k?",
+        "options": {
+          "A": "-1 or 2",
+          "B": "-2 or 1",
+          "C": "1 or -5",
+          "D": "2 or -3",
+          "E": "-1 or 5"
+        },
+        "correct": "E",
+        "explanation": "(k+5)/(k-3) = k => k+5 = k^2-3k => k^2-4k-5=0 => (k-5)(k+1)=0 => k=5 or k=-1."
+      },
+      {
+        "q": 14,
+        "topic": "Odd and even numbers",
+        "question": "If a fair six-sided die is rolled 3 times, what is the probability that at least one roll results in an even number?",
+        "options": {
+          "A": "1/8",
+          "B": "1/2",
+          "C": "3/4",
+          "D": "7/8",
+          "E": "5/6"
+        },
+        "correct": "D",
+        "explanation": "P(all odd) = (1/2)^3 = 1/8. P(at least one even) = 1 - 1/8 = 7/8."
+      },
+      {
+        "q": 15,
+        "topic": "Profit and loss",
+        "question": "A retailer buys a sofa at a wholesale price and marks up the price by 40 percent above cost. During a clearance sale, the retailer offers a 20 percent discount off the marked price. What is the retailer's net percentage profit on the cost of the sofa?",
+        "options": {
+          "A": "20 percent",
+          "B": "16 percent",
+          "C": "12 percent",
+          "D": "15 percent",
+          "E": "18 percent"
+        },
+        "correct": "C",
+        "explanation": "Cost=$100, marked=$140. 20% discount = $28 off, final price=$112. Profit=$12 on $100 = 12%."
+      },
+      {
+        "q": 16,
+        "topic": "Factors and multiples",
+        "question": "If x and y are positive integers such that 3x + 4y = 48, how many distinct ordered pairs (x, y) satisfy this equation?",
+        "options": {
+          "A": "4",
+          "B": "5",
+          "C": "3",
+          "D": "6",
+          "E": "2"
+        },
+        "correct": "C",
+        "explanation": "x must be a positive multiple of 4 less than 16: x=4,8,12, giving y=9,6,3 respectively. 3 valid pairs."
+      },
+      {
+        "q": 17,
+        "topic": "Combined work",
+        "question": "A tank is filled by Pipe A in 6 hours and by Pipe B in 8 hours. Pipe C can empty the full tank in 12 hours. If all three pipes are opened simultaneously when the tank is empty, how many hours will it take to fill the tank completely?",
+        "options": {
+          "A": "4 hours",
+          "B": "4.8 hours",
+          "C": "5 hours",
+          "D": "5.2 hours",
+          "E": "6 hours"
+        },
+        "correct": "B",
+        "explanation": "Using 24 units capacity: A=+4/hr, B=+3/hr, C=-2/hr. Net = +5/hr. Time = 24/5 = 4.8 hours."
+      },
+      {
+        "q": 18,
+        "topic": "Fractions",
+        "question": "What is the value of 0.333... + 0.222... expressed as a simplified fraction in lowest terms?",
+        "options": {
+          "A": "5/11",
+          "B": "1/2",
+          "C": "4/9",
+          "D": "3/5",
+          "E": "5/9"
+        },
+        "correct": "E",
+        "explanation": "0.333...=3/9, 0.222...=2/9. Sum = 5/9, already in lowest terms."
+      },
+      {
+        "q": 19,
+        "topic": "Exponents",
+        "question": "If (x + 1/x) = 4, what is the value of (x^3 + 1/x^3)?",
+        "options": {
+          "A": "64",
+          "B": "56",
+          "C": "48",
+          "D": "52",
+          "E": "60"
+        },
+        "correct": "D",
+        "explanation": "(x+1/x)^3 = (x^3+1/x^3) + 3(x+1/x). 4^3 = (x^3+1/x^3) + 12 => 64-12=52."
+      },
+      {
+        "q": 20,
+        "topic": "Exponents",
+        "question": "If 2^x = 3^y = 6^z for non-zero real numbers x, y, and z, which of the following equations correctly expresses z in terms of x and y?",
+        "options": {
+          "A": "z = xy / (x + y)",
+          "B": "z = x + y",
+          "C": "z = 2xy / (x + y)",
+          "D": "z = (x + y) / (xy)",
+          "E": "z = sqrt(xy)"
+        },
+        "correct": "A",
+        "explanation": "Letting 2^x=3^y=6^z=k, since 2*3=6, 1/x + 1/y = 1/z, giving z = xy/(x+y)."
+      },
+      {
+        "q": 21,
+        "topic": "Weighted average",
+        "question": "A sum of money doubles itself in 5 years under simple interest at a constant annual rate. In how many years will the same sum of money become 4 times its original amount at the same interest rate?",
+        "options": {
+          "A": "10 years",
+          "B": "20 years",
+          "C": "12 years",
+          "D": "16 years",
+          "E": "15 years"
+        },
+        "correct": "E",
+        "explanation": "Doubling means interest = P in 5 years. Becoming 4x means interest = 3P, which takes 3*5=15 years."
+      }
+    ],
+    "Verbal Reasoning": [
+      {
+        "q": 1,
+        "topic": "Strengthen an argument",
+        "question": "Analysts observed that software development firms that instituted mandatory continuous peer code review saw a 35 percent reduction in post-release software bugs compared to firms that relied solely on automated testing protocols. The analysts concluded that peer code review is directly responsible for reducing software defects. Which of the following, if true, most strongly supports the analysts' conclusion?",
+        "options": {
+          "A": "Firms using mandatory peer code review also invest more heavily in employee training programs than firms relying on automated testing.",
+          "B": "Automated testing protocols are generally less expensive to implement than mandatory peer code review systems.",
+          "C": "In firms that adopted peer code review without altering their automated testing protocols, bug rates dropped significantly only after the reviews began.",
+          "D": "Software engineers at firms with peer code review report higher job satisfaction than engineers at other firms.",
+          "E": "Most post-release bugs are caused by logical errors in design rather than simple syntax errors."
+        },
+        "correct": "C",
+        "explanation": "This shows a direct chronological correlation—bug rates dropped only after peer review began while automated testing stayed constant—eliminating alternative explanations and strengthening the causal link.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 2,
+        "topic": "Identify assumptions",
+        "question": "A municipal city council plan to decrease traffic congestion in the downtown core involves charging a $10 daily congestion toll for any private vehicle entering the district during peak business hours. The council predicts that this toll will encourage commuters to use public transit, thereby reducing downtown traffic volume by at least 20 percent. Which of the following, if true, casts the most significant doubt on the council's prediction?",
+        "options": {
+          "A": "Commercial delivery trucks will be exempt from paying the daily congestion toll.",
+          "B": "Similar congestion tolls implemented in international cities resulted in an increase in bicycle commuting.",
+          "C": "Surrounding suburban municipalities have expressed concern that parking near transit stations will become overcrowded.",
+          "D": "Most downtown commuters earn high incomes and consider the $10 toll a minor expense compared to the convenience of driving.",
+          "E": "The city transit system currently operates at maximum capacity during peak business hours and cannot accommodate additional passengers."
+        },
+        "correct": "D",
+        "explanation": "This undermines the assumption that the toll will change driver behavior, since high-income commuters are indifferent to the fee and will keep driving.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 3,
+        "topic": "Identify assumptions",
+        "question": "A pharmaceutical company recently developed a synthetic compound that inhibits a specific enzyme required for viral replication in laboratory cell cultures. Researchers argue that this compound will prove effective in treating human patients suffering from the viral infection. Which of the following is an assumption required by the researchers' argument?",
+        "options": {
+          "A": "The synthetic compound can be administered to humans at dosage levels that inhibit the enzyme without causing toxic side effects.",
+          "B": "No existing medications are currently capable of inhibiting viral replication in human cell cultures.",
+          "C": "The cost of producing the synthetic compound in commercial quantities will be lower than the cost of developing natural remedies.",
+          "D": "Viral replication in human patients relies on different physiological mechanisms than viral replication in laboratory cell cultures.",
+          "E": "The enzyme targeted by the compound is the only enzyme involved in the replication cycle of the virus."
+        },
+        "correct": "A",
+        "explanation": "For the compound to be an effective human treatment, it must be safe at therapeutically active doses; if the necessary dose were toxic, the argument collapses.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 4,
+        "topic": "Purpose",
+        "question": "Which of the following best states the primary purpose of the passage?",
+        "options": {
+          "A": "To advocate for a complete rejection of technological innovations in favor of traditional artisanal workshop models.",
+          "B": "To contrast traditional agrarian production techniques with mechanized factory systems in Western Europe.",
+          "C": "To challenge a dominant historical perspective by presenting revisionist evidence regarding the influence of institutional and social factors on industrialization.",
+          "D": "To describe the specific mechanical operations of steam engines and standardized manufacturing processes in nineteenth-century France.",
+          "E": "To argue that financial credit networks were the sole determinant of economic transformation during the Industrial Revolution."
+        },
+        "correct": "C",
+        "explanation": "The passage introduces technological determinism as the dominant view and then presents revisionist evidence showing institutional and social factors mattered, challenging that dominant perspective.",
+        "passage": "Historical analysis of nineteenth-century industrialization in Western Europe has long been dominated by the technological determinist perspective, which posits that mechanized production techniques were the primary driver of structural economic transformation. According to this framework, the invention of steam engines, mechanized looms, and standardized manufacturing processes dictated the rapid concentration of labor within urban factories, fundamentally altering social hierarchies and labor relations across industrializing nations. Proponents argue that technological innovation possessed an internal logic that inevitably compelled traditional agrarian societies to adopt industrial modes of organization. However, recent revisionist scholarship challenges this mechanistic interpretation by examining the critical role played by institutional structures, regulatory frameworks, and social conventions in shaping the pace and character of economic change. Revisionist historians demonstrate that the adoption of industrial technology was neither uniform nor modernizing in isolation. In regions such as Southern France and the Swiss Cantons, small-scale artisan workshops utilized flexible specialization to remain competitive alongside centralized factories for decades. These workshops relied on regional credit networks, customary apprenticeship systems, and localized municipal regulations that protected specialized craft knowledge. Rather than succumbing immediately to factory competition, artisan networks adapted by integrating selective technological modifications that enhanced output without sacrificing organizational autonomy. Furthermore, these regional workshop systems catered effectively to volatile luxury markets that mass-production factories were ill-equipped to serve. This historical evidence suggests that technological advancement operates within a complex matrix of social choices rather than acting as an autonomous external force. Consequently, economic historians must evaluate institutional responsiveness and social resistance alongside technical specifications to fully comprehend the historical trajectory of industrial capitalism."
+      },
+      {
+        "q": 5,
+        "topic": "Inference",
+        "question": "The passage suggests that revisionist historians would most likely agree with which of the following statements regarding nineteenth-century artisan workshops in Western Europe?",
+        "options": {
+          "A": "They were forced to adopt centralized factory structures to avoid financial insolvency.",
+          "B": "They failed to adopt modern technological modifications because of municipal regulatory prohibitions.",
+          "C": "They were incapable of producing specialized goods that could compete with standardized factory outputs.",
+          "D": "They operated entirely independently of broader regional economic networks.",
+          "E": "Their economic viability was supported in part by regional credit structures and localized regulations."
+        },
+        "correct": "E",
+        "explanation": "The passage explicitly states artisan workshops relied on regional credit networks, apprenticeship systems, and local regulations to remain competitive."
+      },
+      {
+        "q": 6,
+        "topic": "Organization of ideas",
+        "question": "According to the passage, proponents of technological determinism view the relationship between technological innovation and social organization as one in which:",
+        "options": {
+          "A": "social conventions dictate which technological inventions are developed.",
+          "B": "technological advancement inevitably forces social and economic structures to reorganize.",
+          "C": "institutional regulations limit the industrial adoption of mechanized techniques.",
+          "D": "artisan workshops dictate the development of centralized factory machinery.",
+          "E": "economic changes occur independently of technical developments."
+        },
+        "correct": "B",
+        "explanation": "Technological determinism holds that mechanized production possessed an internal logic that inevitably compelled societies to reorganize industrially."
+      },
+      {
+        "q": 7,
+        "topic": "Inference",
+        "question": "A city health department reported that pediatric asthma admissions dropped by 15 percent in neighborhoods adjacent to a major municipal park following a urban tree-planting initiative. The department concluded that planting additional trees directly improved neighborhood air quality, thereby reducing pediatric asthma episodes. Which of the following would be most useful to establish in order to evaluate the validity of the department's conclusion?",
+        "options": {
+          "A": "Whether pediatric asthma admission rates also declined in similar city neighborhoods that received no additional trees during the same period.",
+          "B": "Whether the municipal park contained public recreational facilities used by neighborhood residents.",
+          "C": "Whether the cost of planting trees was subsidized by private corporate sponsors.",
+          "D": "Whether adult asthma admission rates in the city remained constant during the preceding decade.",
+          "E": "Whether neighborhood residents supported the initial tree-planting initiative."
+        },
+        "correct": "A",
+        "explanation": "A control-group comparison is needed: if admissions also dropped in neighborhoods without new trees, an outside factor likely caused the decline, invalidating the conclusion.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 8,
+        "topic": "Inference",
+        "question": "Over the past five years, every commercial airline that increased seat density on domestic routes experienced a rise in average passenger complaints per flight. During the same period, airlines that maintained or reduced seat density reported no increase in passenger complaints per flight. Furthermore, customer survey data indicates that seat comfort is rated as the most important factor in passenger satisfaction on domestic flights lasting under three hours. If the statements above are true, which of the following must also be true on the basis of them?",
+        "options": {
+          "A": "Increasing seat density on commercial domestic flights causes passengers to experience greater flight delays.",
+          "B": "Airline passenger complaint rates on flights lasting over three hours are unaffected by changes in seat density.",
+          "C": "Customer surveys accurately reflect the primary drivers of all airline passenger complaints.",
+          "D": "Every commercial airline that experienced a rise in passenger complaints per flight over the past five years had increased its seat density.",
+          "E": "No commercial airline that maintained or reduced seat density experienced a rise in average passenger complaints per flight over the past five years."
+        },
+        "correct": "E",
+        "explanation": "This directly restates the given premise that airlines maintaining or reducing seat density reported no increase in complaints.",
+        "type": "Critical Reasoning / Must Be True"
+      },
+      {
+        "q": 9,
+        "topic": "Purpose",
+        "question": "Economists regularly advise governments to privatize state-owned utilities to increase operational efficiency. However, in major urban areas, privatized water distribution networks frequently result in increased consumer tariffs without corresponding service improvements. State utilities operate under public service mandates that restrict profit margins, whereas private operators prioritize shareholder returns. Therefore, municipal governments should avoid fully privatizing essential water infrastructure. In the argument given, the two boldfaced portions play which of the following roles? (Boldface 1: \"Economists regularly advise governments to privatize state-owned utilities to increase operational efficiency\"; Boldface 2: \"State utilities operate under public service mandates that restrict profit margins, whereas private operators prioritize shareholder returns\")",
+        "options": {
+          "A": "The first is a general recommendation that the argument endorses; the second is a premise that contradicts the main conclusion.",
+          "B": "The first is a position that the argument opposes; the second is a factual premise used to support the argument's main conclusion.",
+          "C": "The first is a claim used to support an economic theory; the second is the argument's main conclusion.",
+          "D": "The first is a counterexample to the author's primary thesis; the second is an assumption that has been shown to be false.",
+          "E": "The first is the main conclusion of the argument; the second is an intermediate conclusion that supports the main conclusion."
+        },
+        "correct": "B",
+        "explanation": "The first boldface is a standard recommendation the author rejects for water utilities; the second is an explanatory premise supporting the author's conclusion against full privatization.",
+        "type": "Boldface / Argument Structure"
+      },
+      {
+        "q": 10,
+        "topic": "Supporting idea",
+        "question": "According to the passage, asymmetric interdependence in plant-pollinator networks contributes to community stability by:",
+        "options": {
+          "A": "ensuring that specialized plants interact exclusively with specialized pollinators.",
+          "B": "eliminating competition among generalist pollinators for floral resources.",
+          "C": "allowing generalist pollinators to fulfill pollination needs if specialized pollinator populations drop.",
+          "D": "preventing generalist pollinators from crossing landscape gaps in fragmented habitats.",
+          "E": "encouraging angiosperms to reduce nectar production during environmental stressors."
+        },
+        "correct": "C",
+        "explanation": "The passage states that if specialized pollinators decline, generalist pollinators step in to maintain pollination services for the affected plants.",
+        "passage": "Plant-pollinator interactions have long been cited as classic examples of mutualism, wherein both species derive evolutionary benefits from their ecological relationship. Angiosperms offer nutrient-rich nectar to attract specialized insects, which in turn transport pollen between individual flowers, facilitating cross-fertilization and genetic diversity across plant populations. Early evolutionary models assumed that these mutualistic networks evolved toward high specialization, with single plant species relying exclusively on single pollinator species. However, contemporary ecological field studies reveal that most plant-pollinator networks exhibit a high degree of generalism and asymmetric interdependence. In typical terrestrial ecosystems, generalist pollinators interact with diverse plant species, while specialized plants frequently rely on generalist animal vectors. This asymmetric structure imparts significant stability to ecological communities. If a specialized pollinator population declines due to environmental stressors, generalist pollinators step in to maintain pollination services for the affected plant species. Conversely, generalist pollinators maintain nutritional security by shifting foraging targets when specific floral resources become scarce. Despite this structural resilience, anthropogenic habitat fragmentation threatens plant-pollinator networks by disrupting spatial continuity. When forest contiguous tracts are divided into isolated fragments, specialized plants with low population densities face severe reproductive isolation. While generalist pollinators can navigate small landscape gaps, they often avoid crossing extensive agricultural clearings, leading to reduced pollen transfer between remnant floral patches. Furthermore, the loss of contiguous foraging corridors impairs the energetic efficiency of mobile insect vectors. Consequently, habitat restoration strategies must prioritize the creation of continuous habitat corridors rather than merely preserving disconnected reserves. Maintaining structural landscape connectivity ensures that generalist pollinators continue to sustain genetic exchange across fragmented plant populations, safeguarding overall ecosystem functioning against accelerating global change."
+      },
+      {
+        "q": 11,
+        "topic": "Inference",
+        "question": "It can be inferred from the passage that early evolutionary models of plant-pollinator interactions were:",
+        "options": {
+          "A": "overly focused on generalist species while neglecting asymmetric interdependence.",
+          "B": "inaccurate in predicting that mutualistic networks would evolve exclusively toward strict species-to-species specialization.",
+          "C": "correct in asserting that habitat fragmentation enhances the reproductive success of specialized angiosperms.",
+          "D": "instrumental in guiding modern habitat corridor creation in agricultural landscapes.",
+          "E": "focused primarily on the foraging habits of specialized animal vectors in contiguous forests."
+        },
+        "correct": "B",
+        "explanation": "Early models assumed strict one-to-one specialization, but modern field studies reveal widespread generalism, showing the early models were inaccurate."
+      },
+      {
+        "q": 12,
+        "topic": "Tone",
+        "question": "Which of the following best describes the author's attitude toward the creation of continuous habitat corridors?",
+        "options": {
+          "A": "Strongly supportive, because corridors preserve functional connectivity needed for generalist pollinators to maintain genetic exchange.",
+          "B": "Neutral, because the benefits of corridors are balanced by the high economic cost of converting agricultural land.",
+          "C": "Skeptical, because generalist pollinators naturally avoid navigating landscape gaps regardless of corridor presence.",
+          "D": "Critical, because corridors encourage specialized plants to rely exclusively on single pollinator species.",
+          "E": "Ambivalent, because field studies have produced conflicting evidence regarding corridor efficacy."
+        },
+        "correct": "A",
+        "explanation": "The author concludes restoration strategies must prioritize continuous habitat corridors to sustain genetic exchange, demonstrating strong support."
+      },
+      {
+        "q": 13,
+        "topic": "Identify assumptions",
+        "question": "Which of the following best outlines the organization of the passage?",
+        "options": {
+          "A": "A traditional scientific hypothesis is described, empirical evidence supporting it is provided, and a practical application is outlined.",
+          "B": "A biological phenomenon is defined, two competing restoration theories are compared, and a synthesis of both theories is proposed.",
+          "C": "An environmental problem is stated, historical attempts to solve it are criticized, and an alternative economic model is presented.",
+          "D": "An ecological concept is introduced, an earlier assumption is contrasted with modern findings, a threat is explained, and a specific conservation strategy is recommended.",
+          "E": "A evolutionary model is analyzed, its mathematical foundations are challenged, and new laboratory findings are presented."
+        },
+        "correct": "D",
+        "explanation": "The passage introduces mutualism, contrasts early specialization assumptions with modern generalism findings, explains fragmentation as a threat, and recommends habitat corridors."
+      },
+      {
+        "q": 14,
+        "topic": "Inference",
+        "question": "In Country X, government subsidies for solar panel installations were increased by 50 percent last year. Consequently, the total number of residential solar installations doubled nationwide. However, during the same year, total municipal electricity consumption from the primary fossil-fuel grid also increased significantly. Which of the following, if true, most helps to resolve the apparent paradox described above?",
+        "options": {
+          "A": "The average cost of manufacturing solar panels decreased slightly over the past twelve months.",
+          "B": "Most residential solar panel owners continue to remain connected to the municipal electrical grid as a backup power source.",
+          "C": "Government subsidies for wind energy installations were reduced during the same period.",
+          "D": "Rapid industrial expansion and a severe heat wave caused energy demand among commercial and industrial sectors to surge dramatically.",
+          "E": "Solar panel efficiency ratings improved due to recent advances in photovoltaic cell technology."
+        },
+        "correct": "D",
+        "explanation": "A separate sector (commercial/industrial) saw a demand surge due to growth and weather, explaining the overall grid consumption increase despite residential solar gains.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 15,
+        "topic": "Identify flaws",
+        "question": "A university administrator noted that students who participate in university-sponsored intramural sports have higher average grade point averages (GPAs) than students who do not participate in intramural sports. The administrator concluded that participating in intramural sports improves students' academic performance. The administrator's reasoning is most vulnerable to criticism on the grounds that it:",
+        "options": {
+          "A": "relies on a sample of students that is unrepresentative of the national university population.",
+          "B": "assumes that academic performance is measured exclusively through grade point averages.",
+          "C": "fails to consider that students with naturally higher academic motivation may be more likely to participate in intramural sports.",
+          "D": "ignores the financial costs associated with maintaining intramural athletic facilities.",
+          "E": "presumes that intramural sports require the same physical exertion as varsity athletic programs."
+        },
+        "correct": "C",
+        "explanation": "This identifies a confounding variable: motivated students may naturally both perform well academically and choose to play sports, so the argument mistakes correlation for causation.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 16,
+        "topic": "Complete an argument",
+        "question": "Consumer research indicates that organic food products are purchased primarily by health-conscious consumers who are willing to pay a premium price. Last year, a major supermarket chain reduced the retail prices of its organic produce line by 20 percent. Despite this price reduction and an increase in total units sold, the supermarket's total gross revenue from organic produce sales declined. This outcome indicates that __________. Which of the following most logically completes the passage?",
+        "options": {
+          "A": "the percentage increase in the number of organic units sold was less than 25 percent.",
+          "B": "health-conscious consumers stopped buying non-organic food products altogether.",
+          "C": "the quality of the organic produce deteriorated following the price reduction.",
+          "D": "non-organic produce sales generated higher profit margins than organic produce sales.",
+          "E": "competing supermarket chains reduced their organic produce prices by more than 20 percent."
+        },
+        "correct": "A",
+        "explanation": "Since Revenue = Price x Quantity, a 20% price cut requires at least a 25% quantity increase to maintain revenue; since revenue declined, the quantity increase must have been less than 25%.",
+        "type": "Critical Reasoning / Complete the Passage"
+      },
+      {
+        "q": 17,
+        "topic": "Main idea",
+        "question": "Which of the following best summarizes the main idea of the passage?",
+        "options": {
+          "A": "Principal-agent theory has been entirely disproved by modern financial accounting models.",
+          "B": "Executive equity compensation, while intended to align managerial and shareholder interests, can create perverse incentives unless structured with long-term restrictions.",
+          "C": "Share buybacks and option repricing are the most effective strategies for maximizing long-term corporate shareholder value.",
+          "D": "Institutional investors recommend eliminating all stock options in favor of fixed cash salaries for corporate executives.",
+          "E": "Short-term accounting metrics are superior to stock price valuations when evaluating executive performance."
+        },
+        "correct": "B",
+        "explanation": "The passage explains equity compensation's original purpose, how short-term options create perverse incentives, and reforms (clawbacks, longer vesting) to fix this — matching option B.",
+        "passage": "For decades, corporate governance literature advocated for executive compensation packages heavily weighted toward equity-based incentives, such as stock options and restricted stock units. The underlying theoretical foundation, rooted in principal-agent theory, posited that granting corporate executives an ownership stake in the firm aligns their financial interests with those of shareholders. Under this framework, equity compensation encourages managers to pursue long-term value creation rather than short-term accounting metrics or risk-averse capital allocation. However, empirical studies examining corporate performance throughout the early twenty-first century have cast doubt on the universality of this governance model. Researchers discovered that unconstrained equity compensation often generates unintended perverse incentives, particularly when executive options vest over short time horizons. Instead of fostering sustained corporate innovation, short-term stock option grants frequently incentivize chief executives to engage in financial engineering, such as debt-financed share buybacks and aggressive revenue recognition. These tactics artificially inflate share prices in the immediate term, allowing executives to exercise options at peak valuations before underlying structural weaknesses manifest. Furthermore, when corporate performance declines, executives holding underwater options frequently lobby compensation committees for option repricing or replacement grants, effectively insulating themselves from downside market risk while retaining full upside exposure. Such asymmetrical risk structures undermine the fundamental premise of executive accountability. To mitigate these agency costs, institutional investors increasingly demand reform of executive pay structures. Contemporary governance proposals advocate for extended vesting schedules, mandatory holding periods post-vesting, and clawback provisions that retrieve incentive pay if financial results are subsequently restated due to accounting irregularities. By linking executive remuneration to long-term performance metrics that extend beyond standard equity vesting windows, organizations can realign managerial incentives with genuine, durable value creation."
+      },
+      {
+        "q": 18,
+        "topic": "Supporting idea",
+        "question": "According to the passage, short-term stock option grants can lead chief executives to engage in which of the following activities?",
+        "options": {
+          "A": "Converting restricted stock units into fixed cash salaries.",
+          "B": "Refusing to reprice underwater options when corporate performance declines.",
+          "C": "Pursuing long-term research and development at the expense of current stock prices.",
+          "D": "Executing debt-financed share buybacks to artificially boost share prices in the near term.",
+          "E": "Extending vesting schedules to align pay with future operational goals."
+        },
+        "correct": "D",
+        "explanation": "The passage states short-term options incentivize executives toward financial engineering such as debt-financed share buybacks and aggressive revenue recognition."
+      },
+      {
+        "q": 19,
+        "topic": "Inference",
+        "question": "The passage implies that option repricing when stock values decline affects the risk exposure of corporate executives by:",
+        "options": {
+          "A": "increasing their personal exposure to downside market risk.",
+          "B": "forcing them to hold restricted stock units until structural weaknesses are resolved.",
+          "C": "aligning their financial interests directly with those of long-term retail shareholders.",
+          "D": "eliminating their motivation to pursue short-term share price inflation.",
+          "E": "shielding them from downside risk while preserving their ability to profit from future stock increases."
+        },
+        "correct": "E",
+        "explanation": "The passage states repricing insulates executives from downside risk while retaining full upside exposure."
+      },
+      {
+        "q": 20,
+        "topic": "Purpose",
+        "question": "According to the passage, governance proposals advocate for \"clawback provisions\" primarily in order to:",
+        "options": {
+          "A": "automatically reprice options whenever market indices experience a major downturn.",
+          "B": "encourage executives to focus exclusively on immediate quarterly accounting metrics.",
+          "C": "eliminate institutional investor oversight from corporate compensation decisions.",
+          "D": "prevent corporate boards from granting restricted stock units to senior officers.",
+          "E": "retrieve incentive compensation if financial results are later found to involve accounting irregularities."
+        },
+        "correct": "E",
+        "explanation": "The passage states clawback provisions retrieve incentive pay if financial results are subsequently restated due to accounting irregularities."
+      },
+      {
+        "q": 21,
+        "topic": "Strengthen an argument",
+        "question": "Archaeologists excavating an ancient coastal settlement discovered large deposits of specialized ceramic vessels containing residue of processed olive oil, dating to 1200 BCE. Because olive trees were not native to the immediate local region, researchers concluded that the settlement actively engaged in maritime trade with Mediterranean islands where olive cultivation was widespread. Which of the following, if true, most strengthens the researchers' conclusion?",
+        "options": {
+          "A": "Chemical analysis indicates the clay used to make the ceramic vessels originated from geological deposits on a Mediterranean island known for olive production.",
+          "B": "Similar ceramic vessels have been discovered at inland archaeological sites located hundreds of miles from the coast.",
+          "C": "Processing olive oil requires specialized pressing equipment that was also discovered at the coastal settlement.",
+          "D": "Other coastal settlements in the region relied primarily on fishing and animal husbandry for food production.",
+          "E": "The climate of the coastal settlement was suitable for growing grapevines and cereal grains."
+        },
+        "correct": "A",
+        "explanation": "Proving the vessels themselves came from island clay sources provides physical proof of trade across the sea, strongly reinforcing the maritime trade hypothesis.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 22,
+        "topic": "Inference",
+        "question": "A commercial bank introduced an artificial intelligence algorithm to evaluate home mortgage applications. The bank claimed the algorithm would eliminate subjective human bias and increase mortgage approval rates for historically underserved minority applicants. However, six months after implementation, the approval rate for minority applicants remained unchanged, while overall application volume increased. Which of the following, if true, most helps explain why the algorithm failed to increase minority mortgage approval rates?",
+        "options": {
+          "A": "Bank loan officers received training on how to interpret the AI algorithm's recommendations.",
+          "B": "The total number of non-minority mortgage applicants increased at a slower rate than minority applicants.",
+          "C": "Several competing commercial banks adopted similar AI lending software during the same six-month period.",
+          "D": "The algorithm's credit scoring model was trained on decades of historical lending data that reflected past systemic bias against minority applicants.",
+          "E": "The algorithm processed mortgage applications in significantly less time than human loan officers required."
+        },
+        "correct": "D",
+        "explanation": "The AI was trained on historically biased data, causing it to replicate the same biased approval patterns as past human loan officers.",
+        "type": "Critical Reasoning"
+      },
+      {
+        "q": 23,
+        "topic": "Evaluate an argument",
+        "question": "Wildlife conservationists plan to reintroduce a native predator, the Eurasian lynx, into a national park to control the overpopulated deer species that is overgrazing young saplings. Conservationists argue that reducing deer numbers will allow forest regeneration. Local livestock farmers oppose the plan, claiming the lynx will severely reduce sheep populations in surrounding pastures. Which of the following would be most useful to investigate in order to evaluate the validity of the farmers' claim?",
+        "options": {
+          "A": "Whether deer populations in surrounding areas outside the national park are also increasing.",
+          "B": "Whether the national park attracts significant numbers of eco-tourists during peak summer months.",
+          "C": "Whether lynx in comparable European environments where deer are abundant prey primarily on deer rather than domestic livestock.",
+          "D": "Whether other native predator species were historically present in the national park prior to the twentieth century.",
+          "E": "Whether sheep farmers currently utilize guard dogs or electric fencing to protect their flocks."
+        },
+        "correct": "C",
+        "explanation": "Investigating lynx prey preferences in comparable environments reveals whether lynx prefer deer when available, directly testing the validity of the farmers' fear.",
+        "type": "Critical Reasoning"
+      }
+    ],
+    "Data Insights": [
+      {
+        "q": 1,
+        "topic": "Data Sufficiency",
+        "question": "If x and y are positive integers, is the product xy divisible by 12?\n\n(1) The integer x is divisible by 6 and y is divisible by 4.\n(2) The sum x + y is divisible by 12.",
+        "options": {
+          "A": "Statement 1 alone is sufficient, but statement 2 alone is not sufficient.",
+          "B": "Statement 2 alone is sufficient, but statement 1 alone is not sufficient.",
+          "C": "Both statements together are sufficient, but neither statement alone is sufficient.",
+          "D": "Each statement alone is sufficient.",
+          "E": "Statements 1 and 2 together are not sufficient."
+        },
+        "correct": "A",
+        "explanation": "If x=6a and y=4b, xy=24ab=12(2ab), always divisible by 12 (sufficient). Statement 2: x=6,y=6 gives xy=36 (divisible), but x=1,y=11 gives sum 12 (divisible) yet xy=11 (not divisible) — insufficient.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 2,
+        "topic": "Data Sufficiency",
+        "question": "What is the value of 2m + 3n?\n\n(1) m + 2n = 14\n(2) 3m + n = 16",
+        "options": {
+          "A": "Statement 1 alone is sufficient, but statement 2 alone is not sufficient.",
+          "B": "Statement 2 alone is sufficient, but statement 1 alone is not sufficient.",
+          "C": "Both statements together are sufficient, but neither statement alone is sufficient.",
+          "D": "Each statement alone is sufficient.",
+          "E": "Statements 1 and 2 together are not sufficient."
+        },
+        "correct": "C",
+        "explanation": "Each statement alone leaves two unknowns (insufficient). Together: 3*(stmt1) - stmt2 gives 5n=26, n=5.2, m=3.6, so 2m+3n=22.8 is uniquely determined.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 3,
+        "topic": "Data Sufficiency",
+        "question": "A set consists of five distinct positive integers a, b, c, d, and e listed in increasing order. Is the median of the set greater than 15?\n\n(1) The average (arithmetic mean) of the set is 18.\n(2) The smallest integer a is 14 and the range of the set is 8.",
+        "options": {
+          "A": "Statement 1 alone is sufficient, but statement 2 alone is not sufficient.",
+          "B": "Statement 2 alone is sufficient, but statement 1 alone is not sufficient.",
+          "C": "Both statements together are sufficient, but neither statement alone is sufficient.",
+          "D": "Each statement alone is sufficient.",
+          "E": "Statements 1 and 2 together are not sufficient."
+        },
+        "correct": "B",
+        "explanation": "Statement 1 (mean 18) allows median c to be low (e.g. {1,2,3,4,80}, c=3) or high (insufficient). Statement 2: a=14, e=22, and since values are distinct integers strictly between, minimizing c still forces c >= 16, so median > 15 (sufficient).",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 4,
+        "topic": "Two-Part Analysis",
+        "question": "A logistics warehouse processes two types of orders: Standard orders and Express orders. A worker working alone at a constant rate can process 12 Standard orders per hour or 8 Express orders per hour. If a team of workers spent a total of 12 worker-hours and processed a combined total of 120 orders, working at these constant rates, how many Standard orders and Express orders were processed by the team?",
+        "options": {
+          "A": "Standard orders = 48, Express orders = 72",
+          "B": "Standard orders = 60, Express orders = 60",
+          "C": "Standard orders = 80, Express orders = 40",
+          "D": "Standard orders = 72, Express orders = 48",
+          "E": "Standard orders = 90, Express orders = 30"
+        },
+        "correct": "D",
+        "explanation": "S+E=12 worker-hours; 12S+8E=120. Solving gives S=6, E=6 worker-hours, so Standard orders=12*6=72, Express orders=8*6=48.",
+        "type": "Two-Part Analysis"
+      },
+      {
+        "q": 5,
+        "topic": "Multi-Source Reasoning",
+        "question": "Based on the information provided in Sources 1 and 2, what was the total operating expense incurred by the North American facility in the previous fiscal year?",
+        "options": {
+          "A": "$100 million",
+          "B": "$120 million",
+          "C": "$140 million",
+          "D": "$150 million",
+          "E": "$160 million"
+        },
+        "correct": "E",
+        "explanation": "North America accounted for 40% of total operating expenses ($400 million). 0.40 * 400 = $160 million.",
+        "type": "Multi-Source Reasoning"
+      },
+      {
+        "q": 6,
+        "topic": "Multi-Source Reasoning",
+        "question": "Which regional facility meets the criterion for mandatory operational restructuring set forth in the Strategic Planning Guidelines in Source 1?",
+        "options": {
+          "A": "North America only",
+          "B": "East Asia only",
+          "C": "Western Europe only",
+          "D": "Both North America and Western Europe",
+          "E": "None of the facilities"
+        },
+        "correct": "A",
+        "explanation": "Corporate average = $400M/2M units = $200/unit; threshold = $220/unit. North America: 700,000 units, $160M expenses = $228.57/unit (exceeds threshold). East Asia: $175/unit. Western Europe: $200/unit. Only North America exceeds the threshold.",
+        "type": "Multi-Source Reasoning"
+      },
+      {
+        "q": 7,
+        "topic": "Multi-Source Reasoning",
+        "question": "Based on the financial and operational data in Sources 1 and 2, what was the total labor cost incurred by the East Asian facility in the previous fiscal year?",
+        "options": {
+          "A": "$28 million",
+          "B": "$35 million",
+          "C": "$36 million",
+          "D": "$40 million",
+          "E": "$42 million"
+        },
+        "correct": "E",
+        "explanation": "East Asia operating expenses = 35% of $400M = $140M. Labor = 30% of $140M = $42 million.",
+        "type": "Multi-Source Reasoning"
+      },
+      {
+        "q": 8,
+        "topic": "Data Sufficiency",
+        "question": "In a retail store, the price of a winter jacket was reduced during a promotional sale. What was the percentage discount offered on the winter jacket?\n\n(1) The discounted price of the jacket was $120.\n(2) The discount amount was equal to 25 percent of the original retail price.",
+        "options": {
+          "A": "Statement 1 alone is sufficient, but statement 2 alone is not sufficient.",
+          "B": "Statement 2 alone is sufficient, but statement 1 alone is not sufficient.",
+          "C": "Both statements together are sufficient, but neither statement alone is sufficient.",
+          "D": "Each statement alone is sufficient.",
+          "E": "Statements 1 and 2 together are not sufficient."
+        },
+        "correct": "B",
+        "explanation": "Statement 1 alone gives no original price or discount amount (insufficient). Statement 2 directly states the discount is 25% of original price, answering the question directly.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 9,
+        "topic": "Table Analysis",
+        "question": "A healthcare analytics company tracked patient satisfaction survey scores across four medical clinics: Clinic Alpha, Clinic Beta, Clinic Gamma, and Clinic Delta. In Quarter 1, Clinic Alpha scored 80 points, Clinic Beta scored 85 points, Clinic Gamma scored 70 points, and Clinic Delta scored 90 points. In Quarter 2, Clinic Alpha increased its score by 10 percent relative to Quarter 1, Clinic Beta decreased its score by 5 percent relative to Quarter 1, Clinic Gamma increased its score by 30 percent relative to Quarter 1, and Clinic Delta score decreased by 5 percent relative to Quarter 1. Which clinic achieved the highest patient satisfaction score in Quarter 2?",
+        "options": {
+          "A": "Clinic Alpha",
+          "B": "Clinic Beta",
+          "C": "Clinic Gamma",
+          "D": "Clinic Delta",
+          "E": "Clinic Alpha and Clinic Gamma tied"
+        },
+        "correct": "C",
+        "explanation": "Q2 scores: Alpha=88, Beta=80.75, Gamma=91, Delta=85.5. Clinic Gamma has the highest score.",
+        "type": "Table Analysis / Percent Change"
+      },
+      {
+        "q": 10,
+        "topic": "Two-Part Analysis",
+        "question": "An investment portfolio manager allocates a total capital of $100,000 between two financial instruments: High-Yield Bonds earning an annual interest rate of 8 percent and Treasury Bills earning an annual interest rate of 3 percent. If the portfolio manager seeks to achieve a total annual interest return of $6,000 across the entire portfolio, what is the required dollar allocation to High-Yield Bonds and Treasury Bills?",
+        "options": {
+          "A": "High-Yield Bonds = $50,000, Treasury Bills = $50,000",
+          "B": "High-Yield Bonds = $60,000, Treasury Bills = $40,000",
+          "C": "High-Yield Bonds = $40,000, Treasury Bills = $60,000",
+          "D": "High-Yield Bonds = $70,000, Treasury Bills = $30,000",
+          "E": "High-Yield Bonds = $65,000, Treasury Bills = $35,000"
+        },
+        "correct": "B",
+        "explanation": "H+T=100,000; 0.08H+0.03T=6,000. Solving gives H=$60,000, T=$40,000. Verified: 8% of 60,000=$4,800 + 3% of 40,000=$1,200 = $6,000.",
+        "type": "Two-Part Analysis"
+      },
+      {
+        "q": 11,
+        "topic": "Data Sufficiency",
+        "question": "In a corporate department of 50 employees, how many employees possess both a Project Management certification and a Data Analytics certification?\n\n(1) Exactly 30 employees possess a Project Management certification and 25 employees possess a Data Analytics certification, while 10 employees possess neither certification.\n(2) Exactly 15 employees possess a Project Management certification but not a Data Analytics certification, 10 employees possess a Data Analytics certification but not a Project Management certification, and 10 employees possess neither certification.",
+        "options": {
+          "A": "Statement 1 alone is sufficient, but statement 2 alone is not sufficient.",
+          "B": "Statement 2 alone is sufficient, but statement 1 alone is not sufficient.",
+          "C": "Both statements together are sufficient, but neither statement alone is sufficient.",
+          "D": "Each statement alone is sufficient.",
+          "E": "Statements 1 and 2 together are not sufficient."
+        },
+        "correct": "D",
+        "explanation": "Statement 1: 50=30+25-Both+10 => Both=15 (sufficient). Statement 2: 50=15+10+Both+10 => Both=15 (sufficient). Each statement alone works.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 12,
+        "topic": "Data Sufficiency",
+        "question": "A renewable energy manufacturer produced solar panels across three quarters. In Quarter 1, the manufacturer produced 10,000 panels at a production cost of $100 per panel. In Quarter 2, production volume increased by 20 percent compared to Quarter 1, while production cost per panel decreased by 10 percent compared to Quarter 1. In Quarter 3, production volume decreased by 10 percent compared to Quarter 2, while production cost per panel increased by 5 percent compared to Quarter 2. What was the total expenditure on solar panel production in Quarter 3?",
+        "options": {
+          "A": "$972,000",
+          "B": "$1,000,000",
+          "C": "$1,020,600",
+          "D": "$1,080,000",
+          "E": "$1,134,000"
+        },
+        "correct": "C",
+        "explanation": "Q2: 12,000 panels at $90/panel. Q3: 10,800 panels at $94.50/panel. Total = 10,800 * 94.50 = $1,020,600.",
+        "type": "Multi-step Percent/Quantity Problem"
+      },
+      {
+        "q": 13,
+        "topic": "Data Sufficiency",
+        "question": "If a and b are real numbers, is a > b?\n\n(1) a^2 > b^2\n(2) 1/a < 1/b",
+        "options": {
+          "A": "Statement 1 alone is sufficient, but statement 2 alone is not sufficient.",
+          "B": "Statement 2 alone is sufficient, but statement 1 alone is not sufficient.",
+          "C": "Both statements together are sufficient, but neither statement alone is sufficient.",
+          "D": "Each statement alone is sufficient.",
+          "E": "Statements 1 and 2 together are not sufficient."
+        },
+        "correct": "E",
+        "explanation": "Testing a=-3,b=2 and a=3,b=2 shows both statements can hold true while a<b in one case and a>b in the other, both individually and combined — insufficient.",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 14,
+        "topic": "Data Sufficiency",
+        "question": "A technology holding company owns two subsidiary firms: Sub Alpha and Sub Beta. In Year 1, Sub Alpha generated $200 million in revenue and Sub Beta generated $300 million in revenue. In Year 2, Sub Alpha revenue increased by 15 percent relative to Year 1, and the holding company's combined total revenue across both subsidiaries increased by 10 percent relative to Year 1. What was the percentage change in Sub Beta revenue in Year 2 relative to Year 1?",
+        "options": {
+          "A": "+5.0 percent",
+          "B": "+6.0 percent",
+          "C": "+6.67 percent",
+          "D": "+7.5 percent",
+          "E": "+8.33 percent"
+        },
+        "correct": "C",
+        "explanation": "Year 2 Sub Alpha = $230M. Year 2 combined total = $550M. Sub Beta Year 2 = 550-230 = $320M. Change = 20/300 = +6.67%.",
+        "type": "Percent Change / Algebra"
+      },
+      {
+        "q": 15,
+        "topic": "Multi-Source Reasoning",
+        "question": "Based on the data in Sources 1 and 2, what was the net additional profit per hectare generated by Formulation Alpha compared to the untreated baseline control plot?",
+        "options": {
+          "A": "$100",
+          "B": "$120",
+          "C": "$150",
+          "D": "$200",
+          "E": "$300"
+        },
+        "correct": "A",
+        "explanation": "Additional yield = 1.2 tons/hectare. Value = 1.2*$250 = $300. Cost = $200. Net profit = 300-200 = $100.",
+        "type": "Multi-Source Reasoning"
+      },
+      {
+        "q": 16,
+        "topic": "Multi-Source Reasoning",
+        "question": "Which formulation generated the highest net additional profit per hectare according to the financial definitions in Source 2?",
+        "options": {
+          "A": "Formulation Alpha",
+          "B": "Formulation Beta",
+          "C": "Formulation Gamma",
+          "D": "Formulation Alpha and Formulation Beta tied",
+          "E": "Formulation Beta and Formulation Gamma tied"
+        },
+        "correct": "B",
+        "explanation": "Net profits: Alpha=$100/ha, Beta=$120/ha, Gamma=$50/ha. Formulation Beta is highest.",
+        "type": "Multi-Source Reasoning"
+      },
+      {
+        "q": 17,
+        "topic": "Multi-Source Reasoning",
+        "question": "Based on the plot dimensions in Source 1 and wheat price in Source 2, what was the total gross revenue generated from the wheat harvested from a single 10-hectare plot treated with Formulation Gamma?",
+        "options": {
+          "A": "$10,000",
+          "B": "$12,000",
+          "C": "$13,000",
+          "D": "$14,000",
+          "E": "$15,000"
+        },
+        "correct": "D",
+        "explanation": "Total yield = 5.6*10 = 56 metric tons. Revenue = 56*$250 = $14,000.",
+        "type": "Multi-Source Reasoning"
+      },
+      {
+        "q": 18,
+        "topic": "Data Sufficiency",
+        "question": "In a company, what is the ratio of the number of male managers to the number of female managers?\n\n(1) Male managers constitute 60 percent of the total manager workforce in the company.\n(2) The total number of managers in the company is 150.",
+        "options": {
+          "A": "Statement 1 alone is sufficient, but statement 2 alone is not sufficient.",
+          "B": "Statement 2 alone is sufficient, but statement 1 alone is not sufficient.",
+          "C": "Both statements together are sufficient, but neither statement alone is sufficient.",
+          "D": "Each statement alone is sufficient.",
+          "E": "Statements 1 and 2 together are not sufficient."
+        },
+        "correct": "A",
+        "explanation": "Statement 1 gives 60:40 = 3:2, directly answering the ratio question (sufficient). Statement 2 gives only the total, no gender breakdown (insufficient).",
+        "type": "Data Sufficiency"
+      },
+      {
+        "q": 19,
+        "topic": "Data Sufficiency",
+        "question": "A quality control department selects 2 components at random without replacement from a batch containing 8 functional components and 2 defective components. What is the probability that both selected components are functional?",
+        "options": {
+          "A": "12/25",
+          "B": "16/25",
+          "C": "3/5",
+          "D": "7/10",
+          "E": "28/45"
+        },
+        "correct": "E",
+        "explanation": "P = (8/10) * (7/9) = 56/90 = 28/45.",
+        "type": "Probability"
+      },
+      {
+        "q": 20,
+        "topic": "Two-Part Analysis",
+        "question": "A publishing house sells two editions of a textbook: Hardcover and Paperback. The production cost of a Hardcover edition is $20 and its selling price is $50. The production cost of a Paperback edition is $10 and its selling price is $25. If the publishing house sells a total of 1,000 textbooks and achieves a total gross profit of $27,000, how many Hardcover editions and how many Paperback editions were sold?",
+        "options": {
+          "A": "Hardcover editions = 500, Paperback editions = 500",
+          "B": "Hardcover editions = 600, Paperback editions = 400",
+          "C": "Hardcover editions = 700, Paperback editions = 300",
+          "D": "Hardcover editions = 800, Paperback editions = 200",
+          "E": "Hardcover editions = 750, Paperback editions = 250"
+        },
+        "correct": "D",
+        "explanation": "Profit/Hardcover=$30, Profit/Paperback=$15. H+P=1000; 30H+15P=27,000. Solving gives H=800, P=200. Verified: 800*30+200*15=24,000+3,000=$27,000.",
+        "type": "Two-Part Analysis"
+      }
+    ]
+  }
+}

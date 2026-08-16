@@ -1,0 +1,1316 @@
+{
+  "paper_id": "SSC-CGL-T1-Paper3",
+  "title": "SSC CGL Tier 1 Paper 3",
+  "exam": "SSC CGL Tier 1",
+  "year": 2026,
+  "subjects": {
+    "General Intelligence and Reasoning": [
+      {
+        "q": 1,
+        "topic": "Analogy",
+        "question": "Select the option related to the third number in the same way as the second to the first. 14 : 196 :: 18 : ?",
+        "options": {
+          "A": "324",
+          "B": "342",
+          "C": "360",
+          "D": "306"
+        },
+        "correct": "A",
+        "explanation": "14 squared is 196. Similarly, 18 squared is 324."
+      },
+      {
+        "q": 2,
+        "topic": "Coding and Decoding",
+        "question": "If in a certain code language, PENCIL is coded as QFODJM where each letter is shifted forward by one position, how is MARKER coded in that code language?",
+        "options": {
+          "A": "NBSLFS",
+          "B": "NBSLER",
+          "C": "MBSLFS",
+          "D": "NBSLGR"
+        },
+        "correct": "A",
+        "explanation": "Each letter is shifted forward by 1 position in alphabetical order, yielding NBSLFS."
+      },
+      {
+        "q": 3,
+        "topic": "Analogy",
+        "question": "Select the set in which numbers are related in the same way as the set: (12, 18, 27)",
+        "options": {
+          "A": "16, 24, 36",
+          "B": "10, 15, 20",
+          "C": "20, 30, 40",
+          "D": "8, 12, 16"
+        },
+        "correct": "A",
+        "explanation": "The ratio of numbers in the given set is 4:6:9 (dividing by 3). Option A (16, 24, 36) simplifies to 4:6:9 by dividing by 4."
+      },
+      {
+        "q": 4,
+        "topic": "Classification",
+        "question": "Find the odd one out from the given options based on prime and composite classifications.",
+        "options": {
+          "A": "121",
+          "B": "144",
+          "C": "169",
+          "D": "197"
+        },
+        "correct": "D",
+        "explanation": "121, 144, and 169 are perfect squares (11, 12, 13 squared), whereas 197 is a prime number."
+      },
+      {
+        "q": 5,
+        "topic": "Problem Solving",
+        "question": "Pointing to a photograph of a woman, a man said, Her mother's husband's sister is my aunt. How is the man related to the woman?",
+        "options": {
+          "A": "Brother",
+          "B": "Cousin",
+          "C": "Uncle",
+          "D": "Father"
+        },
+        "correct": "A",
+        "explanation": "The woman's mother's husband is her father, his sister is her paternal aunt. Since this aunt is also the man's aunt, the man and woman are siblings."
+      },
+      {
+        "q": 6,
+        "topic": "Problem Solving",
+        "question": "If plus means minus, minus means plus, multiply means divide, divide means multiply, find the value of 36 divided by 4 multiplied by 6 plus 3 minus 2.",
+        "options": {
+          "A": "23",
+          "B": "25",
+          "C": "19",
+          "D": "21"
+        },
+        "correct": "A",
+        "explanation": "Substituting symbols: 36 * 4 / 6 - 3 + 2 = 24 - 3 + 2 = 23."
+      },
+      {
+        "q": 7,
+        "topic": "Relationship Concepts",
+        "question": "Arrange the following words in a logical dictionary order: 1. Scarcity 2. Scatter 3. Schedule 4. Scheme 5. Science",
+        "options": {
+          "A": "1-2-3-4-5",
+          "B": "2-1-3-4-5",
+          "C": "1-3-2-4-5",
+          "D": "2-3-1-4-5"
+        },
+        "correct": "A",
+        "explanation": "Alphabetical order of prefixes: Scarcity, Scatter, Schedule, Scheme, Science (1-2-3-4-5)."
+      },
+      {
+        "q": 8,
+        "topic": "Series",
+        "question": "Find the missing number in the complex alternating series: 3, 7, 15, 31, 63, ?",
+        "options": {
+          "A": "127",
+          "B": "125",
+          "C": "131",
+          "D": "119"
+        },
+        "correct": "A",
+        "explanation": "Each term is multiplied by 2 and increased by 1: (3*2+1=7, 7*2+1=15, etc.). Next is 63*2+1 = 127."
+      },
+      {
+        "q": 9,
+        "topic": "Problem Solving",
+        "question": "If a non-leap year starts on a Monday, what day of the week will it end on?",
+        "options": {
+          "A": "Monday",
+          "B": "Tuesday",
+          "C": "Sunday",
+          "D": "Wednesday"
+        },
+        "correct": "A",
+        "explanation": "A non-leap year has 365 days, which is 52 weeks and 1 odd day. Thus, it ends on the same day it starts, Monday."
+      },
+      {
+        "q": 10,
+        "topic": "Problem Solving",
+        "question": "Statement: All politicians are honest. Some honest people are leaders. Conclusions: I. Some politicians are leaders. II. Some leaders are honest.",
+        "options": {
+          "A": "Only Conclusion II follows",
+          "B": "Only Conclusion I follows",
+          "C": "Both follow",
+          "D": "Neither follows"
+        },
+        "correct": "A",
+        "explanation": "Conclusion I does not necessarily follow as there is no direct intersection forced between politicians and leaders. Conclusion II follows directly from 'Some honest people are leaders'."
+      },
+      {
+        "q": 11,
+        "topic": "Problem Solving",
+        "question": "Select the related word from the given alternatives: Radius is to Circle as Side is to ?",
+        "options": {
+          "A": "Square",
+          "B": "Triangle",
+          "C": "Polygon",
+          "D": "Diagonal"
+        },
+        "correct": "A",
+        "explanation": "A radius defines a circle in terms of distance from center, just as a side defines a square or regular polygon."
+      },
+      {
+        "q": 12,
+        "topic": "Coding and Decoding",
+        "question": "If in a certain code language, FLOWER is written as EKNVDQ, how is TERMINAL written in that code language?",
+        "options": {
+          "A": "SDQLHMZK",
+          "B": "SDQHLMZK",
+          "C": "SDQKHMZK",
+          "D": "TDQLHMZK"
+        },
+        "correct": "A",
+        "explanation": "Each letter is shifted backward by 1 position (F-1=E, L-1=K, etc.). Applying this to TERMINAL yields SDQLHMZK."
+      },
+      {
+        "q": 13,
+        "topic": "Classification",
+        "question": "Find the odd one out from the given alphanumeric clusters: ACF, HJK, MOQ, UWZ",
+        "options": {
+          "A": "HJK",
+          "B": "ACF",
+          "C": "MOQ",
+          "D": "UWZ"
+        },
+        "correct": "A",
+        "explanation": "In HJK, letters are consecutive without gaps (H, I, J, K), whereas ACF, MOQ, and UWZ maintain distinct skipping patterns between consecutive characters."
+      },
+      {
+        "q": 14,
+        "topic": "Problem Solving",
+        "question": "A clock shows 4 o'clock. What is the angle between the hour hand and the minute hand?",
+        "options": {
+          "A": "120 degrees",
+          "B": "90 degrees",
+          "C": "150 degrees",
+          "D": "100 degrees"
+        },
+        "correct": "A",
+        "explanation": "Each hour mark represents 30 degrees (360/12). At 4 o'clock, the angle is 4 * 30 = 120 degrees."
+      },
+      {
+        "q": 15,
+        "topic": "Problem Solving",
+        "question": "Statement: Should higher education in India be completely privatized? Arguments: I. Yes, privatization will improve infrastructure and reduce government fiscal burden. No, it will make quality education unaffordable for economically weaker sections.",
+        "options": {
+          "A": "Only Argument II is strong",
+          "B": "Only Argument I is strong",
+          "C": "Both are strong",
+          "D": "Neither is strong"
+        },
+        "correct": "A",
+        "explanation": "Argument II highlights a major socioeconomic equity concern regarding access, making it strong in public policy context."
+      },
+      {
+        "q": 16,
+        "topic": "Series",
+        "question": "Find the missing term in the advanced letter series: AB, DEF, HIJK, ?",
+        "options": {
+          "A": "MNOPQ",
+          "B": "LMNOP",
+          "C": "NOPQR",
+          "D": "LMNO"
+        },
+        "correct": "B",
+        "explanation": "Series increases in length by 1 letter each time: 2 letters (AB), 3 letters (DEF), 4 letters (HIJK), followed by 5 consecutive letters starting from L, which is LMNOP."
+      },
+      {
+        "q": 17,
+        "topic": "Problem Solving",
+        "question": "In a row of persons facing north, P is 15th from the left end and Q is 20th from the right end. If they interchange their positions, P becomes 25th from the left end. What is the total number of persons in the row?",
+        "options": {
+          "A": "44",
+          "B": "45",
+          "C": "43",
+          "D": "46"
+        },
+        "correct": "A",
+        "explanation": "After interchanging, P's new position from left is 25, and Q's original position from right was 20. Total persons = (New left position + Original right position) - 1 = 25 + 20 - 1 = 44."
+      },
+      {
+        "q": 18,
+        "topic": "Problem Solving",
+        "question": "If a person walks 4 km towards West, turns South and walks 3 km, then turns East and walks 8 km, how far is he from the starting point?",
+        "options": {
+          "A": "5 km",
+          "B": "6 km",
+          "C": "7 km",
+          "D": "4 km"
+        },
+        "correct": "A",
+        "explanation": "Net horizontal displacement = 8 - 4 = 4 km East. Vertical displacement = 3 km South. Distance = square root of (4 squared + 3 squared) = 5 km."
+      },
+      {
+        "q": 19,
+        "topic": "Problem Solving",
+        "question": "Identify the next number in the fibonacci-style sequence: 2, 3, 5, 8, 13, ?",
+        "options": {
+          "A": "21",
+          "B": "20",
+          "C": "22",
+          "D": "25"
+        },
+        "correct": "A",
+        "explanation": "Each number is the sum of the two preceding ones: 8 + 13 = 21."
+      },
+      {
+        "q": 20,
+        "topic": "Problem Solving",
+        "question": "A container contains 3 red, 4 blue, and 5 green marbles. What is the minimum number of marbles to be drawn blindly to ensure at least one blue marble is obtained?",
+        "options": {
+          "A": "9",
+          "B": "8",
+          "C": "10",
+          "D": "7"
+        },
+        "correct": "A",
+        "explanation": "Worst-case scenario involves drawing all non-blue marbles first (3 red + 5 green = 8 marbles). Drawing one more ensures a blue marble, so 8 + 1 = 9."
+      },
+      {
+        "q": 21,
+        "topic": "Problem Solving",
+        "question": "Find the value of the logical expression where triangle means plus, square means minus, circle means multiply: (5 circle 4) triangle (10 square 2).",
+        "options": {
+          "A": "28",
+          "B": "26",
+          "C": "30",
+          "D": "24"
+        },
+        "correct": "A",
+        "explanation": "(5 * 4) + (10 - 2) = 20 + 8 = 28."
+      },
+      {
+        "q": 22,
+        "topic": "Problem Solving",
+        "question": "If the seventh day of a month is three days earlier than Friday, what day will be the nineteenth day of the month?",
+        "options": {
+          "A": "Sunday",
+          "B": "Monday",
+          "C": "Tuesday",
+          "D": "Wednesday"
+        },
+        "correct": "A",
+        "explanation": "Three days earlier than Friday is Tuesday (7th is Tuesday). 19th is 12 days after the 7th, which adds 5 odd days to Tuesday, resulting in Sunday."
+      },
+      {
+        "q": 23,
+        "topic": "Classification",
+        "question": "Find the odd one out among the following words based on semantic clustering.",
+        "options": {
+          "A": "Physics",
+          "B": "Chemistry",
+          "C": "Biology",
+          "D": "Philosophy"
+        },
+        "correct": "D",
+        "explanation": "Physics, Chemistry, and Biology are empirical natural sciences, whereas Philosophy is a humanities/arts discipline."
+      },
+      {
+        "q": 24,
+        "topic": "Series",
+        "question": "Complete the alphabetical coding series: AZY, CXW, EVU, ?",
+        "options": {
+          "A": "GTS",
+          "B": "FST",
+          "C": "GTR",
+          "D": "FUR"
+        },
+        "correct": "A",
+        "explanation": "First letters increase by +2 (A, C, E, G). Middle letters decrease by -2 (Z, X, V, T). Third letters decrease by -2 (Y, W, U, S), yielding GTS."
+      },
+      {
+        "q": 25,
+        "topic": "Problem Solving",
+        "question": "Select the option that reflects the correct hierarchical relationship from smallest to largest.",
+        "options": {
+          "A": "Earth, Planet, Solar System, Universe",
+          "B": "Planet, Earth, Solar System, Universe",
+          "C": "Earth, Solar System, Planet, Universe",
+          "D": "Universe, Solar System, Planet, Earth"
+        },
+        "correct": "A",
+        "explanation": "Earth is a specific planet, planets belong to a solar system, and solar systems are contained within the universe."
+      }
+    ],
+    "General Awareness": [
+      {
+        "q": 1,
+        "topic": "History",
+        "question": "Consider the following statements regarding the Indian National Movement: 1. The Lucknow Pact of 1916 paved the way for Hindu-Muslim unity in political action. 2. The Home Rule Movement was spearheaded by Annie Besant and Bal Gangadhar Tilak. Which of the statements given above is/are correct?",
+        "options": {
+          "A": "Both 1 and 2",
+          "B": "Only 1",
+          "C": "Only 2",
+          "D": "Neither 1 nor 2"
+        },
+        "correct": "A",
+        "explanation": "Both statements are correct. The Lucknow Pact united Congress and the Muslim League, and Home Rule leagues were successfully led by Tilak and Besant."
+      },
+      {
+        "q": 2,
+        "topic": "General Polity",
+        "question": "Which of the following constitutional writs provides a remedy for a person detained unlawfully by public authorities?",
+        "options": {
+          "A": "Habeas Corpus",
+          "B": "Mandamus",
+          "C": "Quo-Warranto",
+          "D": "Certiorari"
+        },
+        "correct": "A",
+        "explanation": "Habeas Corpus literally means 'to have the body of', protecting individuals against illegal detention."
+      },
+      {
+        "q": 3,
+        "topic": "Current Affairs",
+        "question": "Which atmospheric layer experiences a decrease in temperature with increasing altitude and contains approximately 85 percent of the atmospheric mass?",
+        "options": {
+          "A": "Troposphere",
+          "B": "Stratosphere",
+          "C": "Mesosphere",
+          "D": "Thermosphere"
+        },
+        "correct": "A",
+        "explanation": "The troposphere is the lowest layer where temperature drops with height and holds the vast majority of atmospheric mass and water vapor."
+      },
+      {
+        "q": 4,
+        "topic": "Current Affairs",
+        "question": "The phenomenon of light bending around the corners of an obstacle or aperture is known as:",
+        "options": {
+          "A": "Interference",
+          "B": "Diffraction",
+          "C": "Polarization",
+          "D": "Total Internal Reflection"
+        },
+        "correct": "B",
+        "explanation": "Diffraction describes the bending of waves around obstacles and openings relative to their wavelength."
+      },
+      {
+        "q": 5,
+        "topic": "General Polity",
+        "question": "Which Article of the Indian Constitution guarantees the right to constitutional remedies by moving the Supreme Court?",
+        "options": {
+          "A": "Article 32",
+          "B": "Article 226",
+          "C": "Article 21",
+          "D": "Article 19"
+        },
+        "correct": "A",
+        "explanation": "Article 32 gives the right to move the Supreme Court for the enforcement of fundamental rights, described by Dr. B.R. Ambedkar as the heart and soul of the Constitution."
+      },
+      {
+        "q": 6,
+        "topic": "Current Affairs",
+        "question": "The recommendations of the Sarkaria Commission established in 1983 pertained primarily to which of the following areas?",
+        "options": {
+          "A": "Centre-State relations",
+          "B": "Electoral reforms",
+          "C": "Judicial restructuring",
+          "D": "Financial inclusion policies"
+        },
+        "correct": "A",
+        "explanation": "The Sarkaria Commission was set up to examine and review the working of CentreState relations in India."
+      },
+      {
+        "q": 7,
+        "topic": "Current Affairs",
+        "question": "During whose viceroyalty was the Ilbert Bill controversy sparked, leading to intense racial friction?",
+        "options": {
+          "A": "Lord Ripon",
+          "B": "Lord Lytton",
+          "C": "Lord Curzon",
+          "D": "Lord Minto"
+        },
+        "correct": "A",
+        "explanation": "Lord Ripon's administration introduced the Ilbert Bill in 1883, which sought to allow Indian judges to try European offenders."
+      },
+      {
+        "q": 8,
+        "topic": "Geography",
+        "question": "Which of the following soil types in India is most suitable for the cultivation of cotton due to its high moisture retention capacity?",
+        "options": {
+          "A": "Laterite soil",
+          "B": "Red soil",
+          "C": "Black cotton soil",
+          "D": "Alluvial soil"
+        },
+        "correct": "C",
+        "explanation": "Black soils (Regur soils) are clayey, highly fertile, and retain moisture efficiently, making them ideal for cotton farming."
+      },
+      {
+        "q": 9,
+        "topic": "History",
+        "question": "The magnificent Sun Temple at Konark, Odisha, was constructed under the patronage of which Ganga dynasty ruler?",
+        "options": {
+          "A": "Narasimhadeva I",
+          "B": "Anantavarman",
+          "C": "Rajaraja II",
+          "D": "Kapilendra Deva"
+        },
+        "correct": "A",
+        "explanation": "The 13th-century Konark Sun Temple was built by King Narasimhadeva I of the Eastern Ganga dynasty."
+      },
+      {
+        "q": 10,
+        "topic": "Geography",
+        "question": "Which of the following river systems forms the largest delta in the world?",
+        "options": {
+          "A": "Amazon river system",
+          "B": "Ganga-Brahmaputra river system",
+          "C": "Mississippi river system",
+          "D": "Nile river system"
+        },
+        "correct": "B",
+        "explanation": "The Ganga-Brahmaputra system forms the massive Sunderbans delta, the largest and most fertile delta globally."
+      },
+      {
+        "q": 11,
+        "topic": "Current Affairs",
+        "question": "What role does graphite play when incorporated into nuclear reactor cores?",
+        "options": {
+          "A": "Neutron moderator",
+          "B": "Control rod absorber",
+          "C": "Fuel enrichment agent",
+          "D": "Radioactive coolant"
+        },
+        "correct": "A",
+        "explanation": "Graphite is extensively used as a neutron moderator to slow down fast neutrons so they can sustain nuclear fission chain reactions."
+      },
+      {
+        "q": 12,
+        "topic": "Geography",
+        "question": "Which plateau is known as the mineral storehouse of India due to its rich concentration of metallic minerals and coal?",
+        "options": {
+          "A": "Malwa Plateau",
+          "B": "Chota Nagpur Plateau",
+          "C": "Deccan Plateau",
+          "D": "Meghalaya Plateau"
+        },
+        "correct": "B",
+        "explanation": "The Chota Nagpur Plateau is exceptionally rich in coal, iron ore, mica, and bauxite, earning it the title of mineral heartland of India."
+      },
+      {
+        "q": 13,
+        "topic": "General Polity",
+        "question": "The inclusion of Fundamental Duties in Part IV-A of the Indian Constitution was based on the recommendation of which committee?",
+        "options": {
+          "A": "Swaran Singh Committee",
+          "B": "Verma Committee",
+          "C": "Sarkaria Commission",
+          "D": "Punchhi Commission"
+        },
+        "correct": "A",
+        "explanation": "The Swaran Singh Committee (1976) recommended the incorporation of Fundamental Duties via the 42nd Constitutional Amendment."
+      },
+      {
+        "q": 14,
+        "topic": "Current Affairs",
+        "question": "Which enzyme is responsible for the coagulation of milk in the stomach of infants?",
+        "options": {
+          "A": "Renin",
+          "B": "Pepsin",
+          "C": "Trypsin",
+          "D": "Lipase"
+        },
+        "correct": "A",
+        "explanation": "Renin (chymosin) is a specialized proteolytic enzyme synthesized in infant stomachs to curdle milk, slowing its passage for maximum nutrient absorption."
+      },
+      {
+        "q": 15,
+        "topic": "History",
+        "question": "Who was the founder of the Maurya Empire after overthrowing the Nanda dynasty?",
+        "options": {
+          "A": "Chandragupta Maurya",
+          "B": "Bindusara",
+          "C": "Ashoka",
+          "D": "Mahapadma Nanda"
+        },
+        "correct": "A",
+        "explanation": "Chandragupta Maurya, with Chanakya's counsel, defeated Dhanananda of the Nanda dynasty and established the Maurya Empire in 321 BCE."
+      },
+      {
+        "q": 16,
+        "topic": "General Polity",
+        "question": "Which of the following taxes is exclusively assigned to the States under the Indian constitutional division of powers?",
+        "options": {
+          "A": "Corporation tax",
+          "B": "Taxes on agricultural income",
+          "C": "Customs duties",
+          "D": "Service tax on inter-state trade"
+        },
+        "correct": "B",
+        "explanation": "Taxes on agricultural income fall under the State List (List II) of the Seventh Schedule of the Constitution."
+      },
+      {
+        "q": 17,
+        "topic": "Current Affairs",
+        "question": "The Second Five-Year Plan in India, which laid heavy stress on rapid industrialization, was based on which economic model?",
+        "options": {
+          "A": "Mahalanobis model",
+          "B": "Harrod-Domar model",
+          "C": "Bombay Plan",
+          "D": "Gandhian economic model"
+        },
+        "correct": "A",
+        "explanation": "The Second Plan was formulated on the P.C. Mahalanobis model, prioritizing capitalgoods industries and heavy manufacturing."
+      },
+      {
+        "q": 18,
+        "topic": "Current Affairs",
+        "question": "Which of the following physical quantities has dimensions matching impulse?",
+        "options": {
+          "A": "Momentum",
+          "B": "Work",
+          "C": "Pressure",
+          "D": "Power"
+        },
+        "correct": "A",
+        "explanation": "Impulse (Force * time) equals change in linear momentum, sharing identical dimensional formulas (MLT^-1)."
+      },
+      {
+        "q": 19,
+        "topic": "Current Affairs",
+        "question": "What is the chemical formula and common name of bleaching powder used in sanitation?",
+        "options": {
+          "A": "Calcium oxychloride (CaOCl2)",
+          "B": "Calcium carbonate (CaCO3)",
+          "C": "Sodium hypochlorite (NaClO)",
+          "D": "Calcium hydroxide (Ca(OH)2)"
+        },
+        "correct": "A",
+        "explanation": "Bleaching powder is chemically calcium oxychloride, represented by the formula CaOCl2."
+      },
+      {
+        "q": 20,
+        "topic": "Current Affairs",
+        "question": "Who authored the nationalist newspaper 'Kesari' in vernacular Marathi to mobilize public opinion against British rule?",
+        "options": {
+          "A": "Bal Gangadhar Tilak",
+          "B": "Gopal Krishna Gokhale",
+          "C": "B. R. Ambedkar",
+          "D": "Jyotirao Phule"
+        },
+        "correct": "A",
+        "explanation": "Lokmanya Tilak founded and edited the fiery nationalist newspapers 'Kesari' and 'Mahratta'."
+      },
+      {
+        "q": 21,
+        "topic": "Current Affairs",
+        "question": "Which institution releases the global 'Human Development Index' (HDI) report annually?",
+        "options": {
+          "A": "United Nations Development Programme (UNDP)",
+          "B": "World Bank",
+          "C": "World Economic Forum",
+          "D": "International Monetary Fund"
+        },
+        "correct": "A",
+        "explanation": "The UNDP publishes the Human Development Report, featuring the HDI based on health, education, and standard of living."
+      },
+      {
+        "q": 22,
+        "topic": "Current Affairs",
+        "question": "During the light-dependent reactions of photosynthesis, photolysis of water molecules yields which of the following vital byproducts?",
+        "options": {
+          "A": "Oxygen gas",
+          "B": "Carbon dioxide",
+          "C": "Glucose",
+          "D": "Methane"
+        },
+        "correct": "A",
+        "explanation": "Water splitting (photolysis) releases oxygen gas into the atmosphere along with protons and electrons."
+      },
+      {
+        "q": 23,
+        "topic": "General Polity",
+        "question": "Under Article 280 of the Indian Constitution, who possesses the power to constitute the Finance Commission every five years?",
+        "options": {
+          "A": "President of India",
+          "B": "Prime Minister",
+          "C": "Parliament",
+          "D": "Union Finance Minister"
+        },
+        "correct": "A",
+        "explanation": "The President of India is constitutionally empowered to constitute a Finance Commission every fifth year or earlier."
+      },
+      {
+        "q": 24,
+        "topic": "Current Affairs",
+        "question": "The famous rock-cut edicts of Emperor Ashoka are predominantly written in which ancient scripts?",
+        "options": {
+          "A": "Brahmi and Kharosthi",
+          "B": "Sanskrit and Prakrit",
+          "C": "Tamil-Brahmi and Greek",
+          "D": "Devanagari and Pali"
+        },
+        "correct": "A",
+        "explanation": "Ashoka's edicts were written mainly in Brahmi and Kharosthi scripts, utilizing Prakrit, Greek, and Aramaic languages."
+      },
+      {
+        "q": 25,
+        "topic": "Current Affairs",
+        "question": "Which tropical disease is caused by infection with filarial nematode worms transmitted by mosquito vectors?",
+        "options": {
+          "A": "Elephantiasis (Lymphatic filariasis)",
+          "B": "Malaria",
+          "C": "Dengue fever",
+          "D": "Japanese Encephalitis"
+        },
+        "correct": "A",
+        "explanation": "Lymphatic filariasis (elephantiasis) is caused by thread-like parasitic filarial worms transmitted by Culex or other mosquitoes."
+      }
+    ],
+    "Quantitative Aptitude": [
+      {
+        "q": 1,
+        "topic": "Trigonometry",
+        "question": "A shopkeeper marks an article 40 percent above its cost price and offers two successive discounts of 10 percent and 15 percent respectively. What is his overall profit percentage?",
+        "options": {
+          "A": "7.1 percent profit",
+          "B": "7.4 percent profit",
+          "C": "6.2 percent profit",
+          "D": "8.0 percent profit"
+        },
+        "correct": "A",
+        "explanation": "Let CP = 100. Marked Price = 140. After 10 percent discount, price is 126. After another 15 percent discount, SP = 126 * 0.85 = 107.1. Profit = 7.1 percent."
+      },
+      {
+        "q": 2,
+        "topic": "Interest",
+        "question": "A sum of money invested at compound interest amounts to 2400 rupees in 3 years and 3000 rupees in 4 years. What is the annual rate of interest?",
+        "options": {
+          "A": "25 percent",
+          "B": "20 percent",
+          "C": "15 percent",
+          "D": "12.5 percent"
+        },
+        "correct": "A",
+        "explanation": "Interest for 1 year on 2400 is 3000 - 2400 = 600. Rate = (600 / 2400) * 100 = 25 percent."
+      },
+      {
+        "q": 3,
+        "topic": "Trigonometry",
+        "question": "Two trains start at the same time from stations A and B towards each other at speed rates of 50 km/h and 60 km/h respectively. When they meet, it is found that one train has traveled 120 km more than the other. What is the distance between A and B?",
+        "options": {
+          "A": "1320 km",
+          "B": "1200 km",
+          "C": "1440 km",
+          "D": "1100 km"
+        },
+        "correct": "A",
+        "explanation": "Speed ratio = 50:60 = 5:6. Difference in distance parts = 1 unit = 120 km. Total distance = 11 units * 120 = 1320 km."
+      },
+      {
+        "q": 4,
+        "topic": "Mixture and allegation",
+        "question": "A container contains 40 liters of milk. From this container, 4 liters of milk is taken out and replaced with water. This process is repeated two more times. What is the final quantity of milk left in the container?",
+        "options": {
+          "A": "29.16 liters",
+          "B": "32.40 liters",
+          "C": "28.50 liters",
+          "D": "30.24 liters"
+        },
+        "correct": "A",
+        "explanation": "Remaining milk = Initial * (1 - replacement/total)^n = 40 * (1 - 4/40)^3 = 40 * (0.9)^3 = 40 * 0.729 = 29.16 liters."
+      },
+      {
+        "q": 5,
+        "topic": "Algebra",
+        "question": "If x + (1/x) = 5, what is the value of (x cubed + 1 / x cubed)?",
+        "options": {
+          "A": "110",
+          "B": "125",
+          "C": "140",
+          "D": "115"
+        },
+        "correct": "A",
+        "explanation": "Formula: k cubed - 3k = 5 cubed - 3(5) = 125 - 15 = 110."
+      },
+      {
+        "q": 6,
+        "topic": "Time and distance",
+        "question": "A man rows a boat 24 km downstream and 16 km upstream in 4 hours each time. What is the speed of the current?",
+        "options": {
+          "A": "1 km/h",
+          "B": "1.5 km/h",
+          "C": "2 km/h",
+          "D": "0.5 km/h"
+        },
+        "correct": "A",
+        "explanation": "Downstream speed = 24/4 = 6 km/h. Upstream speed = 16/4 = 4 km/h. Current speed = (6 - 4) / 2 = 1 km/h."
+      },
+      {
+        "q": 7,
+        "topic": "Number Systems",
+        "question": "What is the HCF of two numbers whose LCM is 180 and product is 2160?",
+        "options": {
+          "A": "12",
+          "B": "10",
+          "C": "15",
+          "D": "18"
+        },
+        "correct": "A",
+        "explanation": "Product of numbers = HCF * LCM. 2160 = HCF * 180, so HCF = 2160 / 180 = 12."
+      },
+      {
+        "q": 8,
+        "topic": "Ratio and proportion",
+        "question": "The ratio of two numbers is 3:4 and their sum is 84. What is the larger number?",
+        "options": {
+          "A": "48",
+          "B": "42",
+          "C": "36",
+          "D": "54"
+        },
+        "correct": "A",
+        "explanation": "Let numbers be 3x and 4x. 7x = 84, x = 12. Larger number = 4 * 12 = 48."
+      },
+      {
+        "q": 9,
+        "topic": "Mensuration",
+        "question": "The curved surface area of a right circular cylinder is 1056 square cm and its height is 16 cm. What is the radius of the base?",
+        "options": {
+          "A": "10.5 cm",
+          "B": "14 cm",
+          "C": "12.5 cm",
+          "D": "15 cm"
+        },
+        "correct": "A",
+        "explanation": "CSA = 2 * pi * r * h = 1056. 2 * (22/7) * r * 16 = 1056, solving gives r = 10.5 cm."
+      },
+      {
+        "q": 10,
+        "topic": "Trigonometry",
+        "question": "If a sum of money doubles itself in 8 years at simple interest, in how many times will it become 4 times itself at the same rate?",
+        "options": {
+          "A": "24 years",
+          "B": "20 years",
+          "C": "16 years",
+          "D": "30 years"
+        },
+        "correct": "A",
+        "explanation": "To become 4 times, interest required is 3 times principal. Since 1x interest takes 8 years, 3x interest takes 8 * 3 = 24 years."
+      },
+      {
+        "q": 11,
+        "topic": "Percentages",
+        "question": "Simplify: 50 minus 20 divided by 5 multiplied by 2 plus 10.",
+        "options": {
+          "A": "52",
+          "B": "50",
+          "C": "38",
+          "D": "46"
+        },
+        "correct": "A",
+        "explanation": "BODMAS: 20/5 = 4; 4*2 = 8; 50 - 8 = 42; 42 + 10 = 52."
+      },
+      {
+        "q": 12,
+        "topic": "Percentages",
+        "question": "What is the square root of 1764?",
+        "options": {
+          "A": "42",
+          "B": "38",
+          "C": "44",
+          "D": "46"
+        },
+        "correct": "A",
+        "explanation": "42 * 42 equals 1764."
+      },
+      {
+        "q": 13,
+        "topic": "Mixture and allegation",
+        "question": "A vessel contains 60 liters of milk and water in the ratio 2:1. How much water must be added to make the ratio 1:2?",
+        "options": {
+          "A": "60 liters",
+          "B": "40 liters",
+          "C": "50 liters",
+          "D": "30 liters"
+        },
+        "correct": "A",
+        "explanation": "Initial milk = 40L, water = 20L. Let x liters of water be added. (40)/(20 + x) = 1/2 => 80 = 20 + x => x = 60 liters."
+      },
+      {
+        "q": 14,
+        "topic": "Trigonometry",
+        "question": "The perimeter of a rectangular field is 160 meters and its length is 50 meters. What is its breadth?",
+        "options": {
+          "A": "30 meters",
+          "B": "20 meters",
+          "C": "40 meters",
+          "D": "25 meters"
+        },
+        "correct": "A",
+        "explanation": "160 = 2(50 + breadth), so 50 + breadth = 80, breadth = 30 meters."
+      },
+      {
+        "q": 15,
+        "topic": "Ratio and proportion",
+        "question": "If A:B = 2:3 and B:C = 4:5, what is the ratio of A:C?",
+        "options": {
+          "A": "8:15",
+          "B": "2:5",
+          "C": "3:5",
+          "D": "8:13"
+        },
+        "correct": "A",
+        "explanation": "A/C = (2/3) * (4/5) = 8/15."
+      },
+      {
+        "q": 16,
+        "topic": "Number Systems",
+        "question": "What is the LCM of 12, 15, and 20?",
+        "options": {
+          "A": "60",
+          "B": "45",
+          "C": "90",
+          "D": "120"
+        },
+        "correct": "A",
+        "explanation": "The least common multiple of 12, 15, and 20 is 60."
+      },
+      {
+        "q": 17,
+        "topic": "Trigonometry",
+        "question": "A man sells an article for 540 rupees at a loss of 10 percent. What was the cost price?",
+        "options": {
+          "A": "600 rupees",
+          "B": "580 rupees",
+          "C": "620 rupees",
+          "D": "650 rupees"
+        },
+        "correct": "A",
+        "explanation": "Cost price = 540 / 0.9 = 600 rupees."
+      },
+      {
+        "q": 18,
+        "topic": "Interest",
+        "question": "Find the simple interest on 5000 rupees at 8 percent per annum for 3 years.",
+        "options": {
+          "A": "1200 rupees",
+          "B": "1000 rupees",
+          "C": "1500 rupees",
+          "D": "1800 rupees"
+        },
+        "correct": "A",
+        "explanation": "Simple interest = (5000 * 8 * 3) / 100 = 1200 rupees."
+      },
+      {
+        "q": 19,
+        "topic": "Averages",
+        "question": "The average of 5 numbers is 27. If one number is excluded, the average becomes 25. What is the excluded number?",
+        "options": {
+          "A": "35",
+          "B": "30",
+          "C": "40",
+          "D": "45"
+        },
+        "correct": "A",
+        "explanation": "Sum of 5 numbers = 135. Sum of 4 numbers = 100. Excluded number = 135 - 100 = 35."
+      },
+      {
+        "q": 20,
+        "topic": "Mensuration",
+        "question": "What is the volume of a cube whose edge is 6 cm?",
+        "options": {
+          "A": "216 cubic cm",
+          "B": "125 cubic cm",
+          "C": "343 cubic cm",
+          "D": "512 cubic cm"
+        },
+        "correct": "A",
+        "explanation": "Volume = edge cubed = 6 * 6 * 6 = 216 cubic centimeters."
+      },
+      {
+        "q": 21,
+        "topic": "Percentages",
+        "question": "If 8x minus 3 equals 5x plus 12, what is the value of x?",
+        "options": {
+          "A": "5",
+          "B": "4",
+          "C": "3",
+          "D": "6"
+        },
+        "correct": "A",
+        "explanation": "8x - 5x = 12 + 3 => 3x = 15 => x = 5."
+      },
+      {
+        "q": 22,
+        "topic": "Percentages",
+        "question": "What is 35 percent of 400?",
+        "options": {
+          "A": "140",
+          "B": "120",
+          "C": "160",
+          "D": "180"
+        },
+        "correct": "A",
+        "explanation": "0.35 * 400 = 140."
+      },
+      {
+        "q": 23,
+        "topic": "Trigonometry",
+        "question": "Two pipes can fill a tank separately in 10 hours and 15 hours. How long will they take together?",
+        "options": {
+          "A": "6 hours",
+          "B": "5 hours",
+          "C": "7 hours",
+          "D": "8 hours"
+        },
+        "correct": "A",
+        "explanation": "Combined rate = 1/10 + 1/15 = 5/30 = 1/6. Time = 6 hours."
+      },
+      {
+        "q": 24,
+        "topic": "Percentages",
+        "question": "What is the value of 15 squared minus 10 squared?",
+        "options": {
+          "A": "125",
+          "B": "100",
+          "C": "150",
+          "D": "175"
+        },
+        "correct": "A",
+        "explanation": "(15 - 10) * (15 + 10) = 5 * 25 = 125."
+      },
+      {
+        "q": 25,
+        "topic": "Mensuration",
+        "question": "If the radius of a sphere is doubled, by what factor does its surface area increase?",
+        "options": {
+          "A": "4 times",
+          "B": "2 times",
+          "C": "8 times",
+          "D": "16 times"
+        },
+        "correct": "A",
+        "explanation": "Surface area is proportional to radius squared, so doubling radius multiplies area by 4."
+      }
+    ],
+    "English Comprehension": [
+      {
+        "q": 1,
+        "topic": "Grammar",
+        "question": "Choose the word most nearly opposite in meaning to: BENEVOLENT",
+        "options": {
+          "A": "Malevolent",
+          "B": "Generous",
+          "C": "Kind",
+          "D": "Friendly"
+        },
+        "correct": "A",
+        "explanation": "Benevolent means kind; malevolent means having a wish to do evil."
+      },
+      {
+        "q": 2,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate synonym for: ABUNDANT",
+        "options": {
+          "A": "Plentiful",
+          "B": "Scarce",
+          "C": "Meager",
+          "D": "Deficient"
+        },
+        "correct": "A",
+        "explanation": "Abundant means existing in large quantities; plentiful is a synonym."
+      },
+      {
+        "q": 3,
+        "topic": "Grammar",
+        "question": "Identify the segment with grammatical error: 'Hardly had I stepped out of the house than it started raining heavily.'",
+        "options": {
+          "A": "than it started",
+          "B": "Hardly had I",
+          "C": "stepped out",
+          "D": "no error"
+        },
+        "correct": "A",
+        "explanation": "Hardly must be followed by 'when', not 'than'."
+      },
+      {
+        "q": 4,
+        "topic": "Fillers",
+        "question": "Fill in the blank with appropriate preposition: 'He is proficient _______ mathematics and physics.'",
+        "options": {
+          "A": "in",
+          "B": "at",
+          "C": "with",
+          "D": "on"
+        },
+        "correct": "A",
+        "explanation": "Proficient is standardly followed by the preposition 'in'."
+      },
+      {
+        "q": 5,
+        "topic": "Vocabulary",
+        "question": "Choose the alternative that best substitutes the idiom: 'To beat around the bush'",
+        "options": {
+          "A": "To avoid speaking directly about a topic",
+          "B": "To search in the forest",
+          "C": "To hit a target accurately",
+          "D": "To create unnecessary noise"
+        },
+        "correct": "A",
+        "explanation": "Beating around the bush means avoiding the main topic or speaking evasively."
+      },
+      {
+        "q": 6,
+        "topic": "Spelling",
+        "question": "Select the correctly spelt word among the given options.",
+        "options": {
+          "A": "Accommodation",
+          "B": "Accomodation",
+          "C": "Acomodation",
+          "D": "Accommordation"
+        },
+        "correct": "A",
+        "explanation": "Accommodation is correctly spelt with double 'c' and double 'm'."
+      },
+      {
+        "q": 7,
+        "topic": "Vocabulary",
+        "question": "Choose the one-word substitution for: 'An unconquerable person or thing that cannot be defeated'",
+        "options": {
+          "A": "Invincible",
+          "B": "Inevitable",
+          "C": "Infallible",
+          "D": "Indelible"
+        },
+        "correct": "A",
+        "explanation": "Invincible means too powerful to be defeated or conquered."
+      },
+      {
+        "q": 8,
+        "topic": "Fillers",
+        "question": "Fill in the blank with correct conditional verb form: 'If she had studied diligently, she _______ the competitive examination.'",
+        "options": {
+          "A": "would have cleared",
+          "B": "will clear",
+          "C": "would clear",
+          "D": "cleared"
+        },
+        "correct": "A",
+        "explanation": "Third conditional structure requires 'would have' plus past participle in the main clause."
+      },
+      {
+        "q": 9,
+        "topic": "Grammar",
+        "question": "Identify the sentence with correct active-passive conversion of: 'They are building a new bridge across the river.'",
+        "options": {
+          "A": "A new bridge is being built across the river.",
+          "B": "A new bridge was built across the river.",
+          "C": "A new bridge has been built across the river.",
+          "D": "A new bridge is built across the river."
+        },
+        "correct": "A",
+        "explanation": "Present continuous active 'are building' converts to 'is being built'."
+      },
+      {
+        "q": 10,
+        "topic": "Vocabulary",
+        "question": "Choose the synonym of the given word: CANDID",
+        "options": {
+          "A": "Frank",
+          "B": "Secretive",
+          "C": "Deceitful",
+          "D": "Vague"
+        },
+        "correct": "A",
+        "explanation": "Candid means truthful and straightforward; frank is a direct synonym."
+      },
+      {
+        "q": 11,
+        "topic": "Vocabulary",
+        "question": "Select the antonym of the given word: ANCIENT",
+        "options": {
+          "A": "Modern",
+          "B": "Antique",
+          "C": "Old",
+          "D": "Primitive"
+        },
+        "correct": "A",
+        "explanation": "Ancient means of the distant past; modern is its antonym."
+      },
+      {
+        "q": 12,
+        "topic": "Grammar",
+        "question": "Choose the correct indirect speech form: She said, 'I finished reading the novel yesterday.'",
+        "options": {
+          "A": "She said that she had finished reading the novel the previous day.",
+          "B": "She said that she finished reading the novel yesterday.",
+          "C": "She told that she has finished reading the novel the previous day.",
+          "D": "She said that she had finished reading the novel yesterday."
+        },
+        "correct": "A",
+        "explanation": "Simple past changes to past perfect, and yesterday changes to the previous day."
+      },
+      {
+        "q": 13,
+        "topic": "Vocabulary",
+        "question": "Identify the one-word substitution for: 'A speech made without prior preparation'",
+        "options": {
+          "A": "Extempore",
+          "B": "Epitaph",
+          "C": "Epilogue",
+          "D": "Euphemism"
+        },
+        "correct": "A",
+        "explanation": "An extempore speech is spoken or performed without any prior preparation."
+      },
+      {
+        "q": 14,
+        "topic": "Sentence Arrangement",
+        "question": "Rearrange the jumbled sentence parts into a meaningful order: 1. leadership 2. effective 3. success 4. brings",
+        "options": {
+          "A": "2-1-4-3",
+          "B": "1-2-3-4",
+          "C": "4-3-2-1",
+          "D": "3-2-1-4"
+        },
+        "correct": "A",
+        "explanation": "Order forms: Effective leadership brings success (2-1-4-3)."
+      },
+      {
+        "q": 15,
+        "topic": "Fillers",
+        "question": "Fill in the blank with the appropriate article: 'Honesty is _______ best policy for long-term success.'",
+        "options": {
+          "A": "the",
+          "B": "a",
+          "C": "an",
+          "D": "no article"
+        },
+        "correct": "A",
+        "explanation": "Superlatives like 'best' take the definite article 'the'."
+      },
+      {
+        "q": 16,
+        "topic": "Vocabulary",
+        "question": "Select the meaning of the idiom: 'To add fuel to the fire'",
+        "options": {
+          "A": "To worsen a bad situation",
+          "B": "To cook food faster",
+          "C": "To provide warmth",
+          "D": "To start a campfire"
+        },
+        "correct": "A",
+        "explanation": "Adding fuel to the fire means making a bad situation even worse."
+      },
+      {
+        "q": 17,
+        "topic": "Spelling",
+        "question": "Choose the correctly spelt word among the options.",
+        "options": {
+          "A": "Millennium",
+          "B": "Milenium",
+          "C": "Milennium",
+          "D": "Millenium"
+        },
+        "correct": "A",
+        "explanation": "Millennium is correctly spelled with double 'l' and double 'n'."
+      },
+      {
+        "q": 18,
+        "topic": "Vocabulary",
+        "question": "Fill in the blank with correct word: 'Prevention is better _______ cure.'",
+        "options": {
+          "A": "than",
+          "B": "then",
+          "C": "to",
+          "D": "over"
+        },
+        "correct": "A",
+        "explanation": "The standard idiom/proverb uses 'better than'."
+      },
+      {
+        "q": 19,
+        "topic": "Vocabulary",
+        "question": "Select the antonym for: PROSPERITY",
+        "options": {
+          "A": "Adversity",
+          "B": "Affluence",
+          "C": "Wealth",
+          "D": "Success"
+        },
+        "correct": "A",
+        "explanation": "Prosperity means wealth and success, while adversity means hardship and difficulty."
+      },
+      {
+        "q": 20,
+        "topic": "Grammar",
+        "question": "Choose the correct option: 'Each of the participants _______ given a certificate.'",
+        "options": {
+          "A": "was",
+          "B": "were",
+          "C": "have",
+          "D": "are"
+        },
+        "correct": "A",
+        "explanation": "The pronoun 'each' is singular, taking the singular verb 'was'."
+      },
+      {
+        "q": 21,
+        "topic": "Reading Comprehension",
+        "question": "Read the passage below and answer the question that follows: 'Education is the most powerful weapon which you can use to change the world. It acts as the cornerstone of personal emancipation and societal progress, empowering individuals to break cycles of poverty and challenge systemic inequalities.' According to the passage, what is described as the cornerstone of personal emancipation?",
+        "options": {
+          "A": "Education",
+          "B": "Poverty alleviation",
+          "C": "Systemic equality",
+          "D": "Financial wealth"
+        },
+        "correct": "A",
+        "explanation": "The passage explicitly states that education acts as the cornerstone of personal emancipation and societal progress."
+      },
+      {
+        "q": 22,
+        "topic": "Reading Comprehension",
+        "question": "Based on the passage above, what primary effect does education have on individuals according to the text?",
+        "options": {
+          "A": "It empowers them to break cycles of poverty and challenge inequalities.",
+          "B": "It guarantees immediate financial wealth.",
+          "C": "It eliminates all societal institutions.",
+          "D": "It replaces government policies."
+        },
+        "correct": "A",
+        "explanation": "The passage notes that education empowers individuals to break cycles of poverty and challenge systemic inequalities."
+      },
+      {
+        "q": 23,
+        "topic": "Reading Comprehension",
+        "question": "Choose the synonym of the word 'emancipation' as used in the context of the passage.",
+        "options": {
+          "A": "Liberation",
+          "B": "Restriction",
+          "C": "Captivity",
+          "D": "Stagnation"
+        },
+        "correct": "A",
+        "explanation": "Emancipation means the fact or process of being set free from legal, social, or political restrictions; liberation is a direct synonym."
+      },
+      {
+        "q": 24,
+        "topic": "Reading Comprehension",
+        "question": "Select the most appropriate title for the short passage provided above.",
+        "options": {
+          "A": "The Transformative Power of Education",
+          "B": "The Economics of Poverty",
+          "C": "Systemic Inequalities in Society",
+          "D": "Modern Political Systems"
+        },
+        "correct": "A",
+        "explanation": "The entire passage centers upon how education transforms the world and empowers individuals, making option A the most fitting title."
+      },
+      {
+        "q": 25,
+        "topic": "Vocabulary",
+        "question": "Choose the antonym for the word 'inequalities' in the context of societal progress.",
+        "options": {
+          "A": "Equality",
+          "B": "Disparity",
+          "C": "Imbalance",
+          "D": "Diversity"
+        },
+        "correct": "A",
+        "explanation": "Inequalities denote disparities or unevenness, whereas equality represents uniformity, fairness, and parity."
+      }
+    ]
+  }
+}

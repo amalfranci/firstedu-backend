@@ -1,0 +1,1316 @@
+{
+  "paper_id": "SSC-CGL-T1-Paper4",
+  "title": "SSC CGL Tier 1 Paper 4",
+  "exam": "SSC CGL Tier 1",
+  "year": 2026,
+  "subjects": {
+    "General Intelligence and Reasoning": [
+      {
+        "q": 1,
+        "topic": "Problem Solving",
+        "question": "MNOP : QRST :: BCDE : ?",
+        "options": {
+          "A": "FGHI",
+          "B": "EFGH",
+          "C": "GHIJ",
+          "D": "HIJK"
+        },
+        "correct": "B",
+        "explanation": "Each letter in the first group is shifted forward consecutively by +4 positions (M+4=Q, N+4=R, etc.). Applying the same +4 shift to BCDE gives EFGH."
+      },
+      {
+        "q": 2,
+        "topic": "Classification",
+        "question": "Find the odd one out from the given numbers based on mathematical properties.",
+        "options": {
+          "A": "63",
+          "B": "143",
+          "C": "255",
+          "D": "360"
+        },
+        "correct": "D",
+        "explanation": "63 (8²-1), 143 (12²-1), and 255 (16²-1) all follow the standard form n² - 1. 360 does not conform to this expression."
+      },
+      {
+        "q": 3,
+        "topic": "Series",
+        "question": "Complete the given number series: 6, 11, 21, 36, 56, ?",
+        "options": {
+          "A": "78",
+          "B": "81",
+          "C": "84",
+          "D": "86"
+        },
+        "correct": "B",
+        "explanation": "The differences between terms are +5, +10, +15, +20 (increasing by 5 each time). The next difference is +25, so 56 + 25 = 81."
+      },
+      {
+        "q": 4,
+        "topic": "Coding and Decoding",
+        "question": "If in a certain code, 'WORK' is coded as '4-12-9-16', how is 'MIND' coded in the same language?",
+        "options": {
+          "A": "14-9-13-4",
+          "B": "14-18-13-23",
+          "C": "13-9-14-4",
+          "D": "12-18-14-23"
+        },
+        "correct": "B",
+        "explanation": "Each letter is coded by its backward alphabetical position (Z=1, Y=2... A=26, or 27 minus forward position). W=4, O=12, R=9, K=16. Applying this reverse position rule to MIND (M=14, I=18, N=13, D=23) gives 14-18-13-23."
+      },
+      {
+        "q": 5,
+        "topic": "Relationship Concepts",
+        "question": "A family has six members A, B, C, D, E, and F. B is the son of C, but C is not the mother of B. A and C are a married couple. E is the brother of C. D is the daughter of A. F is the brother of B. Who is the mother of B?",
+        "options": {
+          "A": "A",
+          "B": "D",
+          "C": "Cannot be determined",
+          "D": "F"
+        },
+        "correct": "A",
+        "explanation": "Since A and C are a married couple and C is the father of B (not the mother), A must be the mother of B."
+      },
+      {
+        "q": 6,
+        "topic": "Problem Solving",
+        "question": "If '-' stands for division, '+' stands for multiplication, '÷' stands for subtraction, and '×' stands for addition, find the value of: [ (16 ÷ 4) + 2 ] - 1 × 2",
+        "options": {
+          "A": "22",
+          "B": "24",
+          "C": "26",
+          "D": "28"
+        },
+        "correct": "C",
+        "explanation": "Replacing symbols according to the rule gives: [ (16 - 4) × 2 ] ÷ 1 + 2 = [ 12 × 2 ] ÷ 1 + 2 = 24 + 2 = 26."
+      },
+      {
+        "q": 7,
+        "topic": "Coding and Decoding",
+        "question": "In a certain code language, 'ROSE' is written as '6821' and 'CHAIR' is written as '73456'. What will be the code for 'SEARCH'?",
+        "options": {
+          "A": "214673",
+          "B": "214763",
+          "C": "216473",
+          "D": "241673"
+        },
+        "correct": "A",
+        "explanation": "Using direct letter substitution from the given words: S=2, E=1, A=4, R=6, C=7, H=3. Thus, SEARCH is coded as 214673."
+      },
+      {
+        "q": 8,
+        "topic": "Series",
+        "question": "Find the missing number in the complex series: 4, 9, 19, 39, 79, ?",
+        "options": {
+          "A": "149",
+          "B": "155",
+          "C": "159",
+          "D": "163"
+        },
+        "correct": "C",
+        "explanation": "Each term is multiplied by 2 and increased by 1 (4*2+1=9, 9*2+1=19, 19*2+1=39, 39*2+1=79). Next term is 79*2 + 1 = 159."
+      },
+      {
+        "q": 9,
+        "topic": "Relationship Concepts",
+        "question": "Arrange the following words in logical dictionary order and identify the third word: 1. Distribute, 2. Distinct, 3. Distance, 4. Disturb, 5. Display",
+        "options": {
+          "A": "Distance",
+          "B": "Distinct",
+          "C": "Distribute",
+          "D": "Disturb"
+        },
+        "correct": "B",
+        "explanation": "Alphabetical order: 1. Display, 2. Distance, 3. Distinct, 4. Distribute, 5. Disturb. The third word is Distinct."
+      },
+      {
+        "q": 10,
+        "topic": "Series",
+        "question": "Complete the alphanumeric series: J2Z, L4X, N6V, P8T, ?",
+        "options": {
+          "A": "R10R",
+          "B": "R10S",
+          "C": "S10R",
+          "D": "Q10R"
+        },
+        "correct": "A",
+        "explanation": "First letters increase by +2 (J, L, N, P, R). Numbers increase by +2 (2, 4, 6, 8, 10). Last letters decrease by -2 (Z, X, V, T, R). Thus, R10R."
+      },
+      {
+        "q": 11,
+        "topic": "Problem Solving",
+        "question": "If HOTEL = 60 and BORING = 65, then HOTEL + BORING = ?",
+        "options": {
+          "A": "115",
+          "B": "120",
+          "C": "125",
+          "D": "130"
+        },
+        "correct": "C",
+        "explanation": "HOTEL sum of positions = 8+15+20+5+12 = 60. BORING sum of positions = 2+15+18+9+14+7 = 65. Total HOTEL + BORING = 60 + 65 = 125."
+      },
+      {
+        "q": 12,
+        "topic": "Problem Solving",
+        "question": "If the second half of the English alphabet is written in reverse order, which letter will be 7th to the right of the 14th letter from the left end?",
+        "options": {
+          "A": "W",
+          "B": "X",
+          "C": "Y",
+          "D": "S"
+        },
+        "correct": "D",
+        "explanation": "When the second half (N-Z) is written in reverse (Z-N), the 14th letter from the left is Z. Moving 7 positions to the right within the reversed segment yields S."
+      },
+      {
+        "q": 13,
+        "topic": "Classification",
+        "question": "Three different positions of a standard die are shown by the following triples of adjacent faces: (1, 2, 3), (3, 4, 5), and (5, 6, 1). Which number is opposite to face 3?",
+        "options": {
+          "A": "2",
+          "B": "4",
+          "C": "6",
+          "D": "Cannot be determined"
+        },
+        "correct": "C",
+        "explanation": "Comparing views: Face 3 shares adjacent faces 1, 2, 4, 5 across the represented rolls. The remaining unrepresented number opposite 3 is 6."
+      },
+      {
+        "q": 14,
+        "topic": "Problem Solving",
+        "question": "Statements: All markers are pens. All pens are pencils. Some pencils are erasers. No eraser is a book. Conclusions: I. Some markers are erasers. II. Some pens are not books.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Both follow",
+          "D": "Neither follows"
+        },
+        "correct": "D",
+        "explanation": "Markers and erasers have no definite overlap. Furthermore, while pencils that are erasers cannot be books, we cannot establish that those specific pencils are pens. Thus, neither conclusion necessarily follows."
+      },
+      {
+        "q": 15,
+        "topic": "Problem Solving",
+        "question": "A man walks 8 km towards South, turns to his left and walks 6 km, then turns to his right and walks 5 km, and finally turns to his right and walks 6 km. How far is he from the starting point?",
+        "options": {
+          "A": "11 km",
+          "B": "13 km",
+          "C": "15 km",
+          "D": "19 km"
+        },
+        "correct": "B",
+        "explanation": "Vertical displacement = 8 km South + 5 km South = 13 km South. Horizontal displacement = 6 km East - 6 km West = 0. Total distance from start = 13 km."
+      },
+      {
+        "q": 16,
+        "topic": "Series",
+        "question": "Complete the letter series: AZ, CX, EV, GT, ?",
+        "options": {
+          "A": "IR",
+          "B": "IS",
+          "C": "HS",
+          "D": "JR"
+        },
+        "correct": "A",
+        "explanation": "First letters increase by +2 (A, C, E, G, I). Second letters decrease by -2 (Z, X, V, T, R). Thus, IR."
+      },
+      {
+        "q": 17,
+        "topic": "Problem Solving",
+        "question": "In a survey of 100 students, 40 read Physics, 50 read Chemistry, and 50 read Mathematics. 15 read both Physics and Chemistry, 20 read Chemistry and Mathematics, 15 read Physics and Mathematics, and 5 read all three. How many students read none of the three subjects?",
+        "options": {
+          "A": "5",
+          "B": "10",
+          "C": "15",
+          "D": "20"
+        },
+        "correct": "A",
+        "explanation": "Using inclusion-exclusion: Total = 40 + 50 + 50 - (15 + 20 + 15) + 5 = 140 - 50 + 5 = 95 students read at least one subject. Students reading none = 100 - 95 = 5."
+      },
+      {
+        "q": 18,
+        "topic": "Problem Solving",
+        "question": "If 15th August of a leap year is a Thursday, what day of the week will 15th August be in the immediately following year?",
+        "options": {
+          "A": "Friday",
+          "B": "Saturday",
+          "C": "Sunday",
+          "D": "Monday"
+        },
+        "correct": "B",
+        "explanation": "Since the starting year is a leap year, the period from 15th Aug of the leap year to 15th Aug of the next year includes the leap day (February 29th), contributing 2 odd days. Thursday + 2 days = Saturday."
+      },
+      {
+        "q": 19,
+        "topic": "Problem Solving",
+        "question": "Find the odd number pair out based on advanced mathematical operations:",
+        "options": {
+          "A": "17 : 289",
+          "B": "19 : 361",
+          "C": "23 : 529",
+          "D": "29 : 843"
+        },
+        "correct": "D",
+        "explanation": "17² = 289, 19² = 361, 23² = 529. However, 29² is 841, not 843."
+      },
+      {
+        "q": 20,
+        "topic": "Problem Solving",
+        "question": "In a row of students standing facing North, Rahul is 15th from the left end and Rohit is 18th from the right end. If they interchange their positions, Rahul becomes 25th from the left. How many students are there in the row?",
+        "options": {
+          "A": "40",
+          "B": "41",
+          "C": "42",
+          "D": "43"
+        },
+        "correct": "C",
+        "explanation": "After interchanging, Rahul's new position from the left is 25th, and he occupies the spot previously held by Rohit (18th from the right). Total students = (Rahul's new left position) + (Rohit's original right position) - 1 = 25 + 18 - 1 = 42."
+      },
+      {
+        "q": 21,
+        "topic": "Problem Solving",
+        "question": "Doctor : Diagnosis :: Judge : ?",
+        "options": {
+          "A": "Court",
+          "B": "Lawyer",
+          "C": "Verdict",
+          "D": "Punishment"
+        },
+        "correct": "C",
+        "explanation": "A doctor performs a diagnosis to identify an illness and determine treatment, whereas a judge delivers a verdict to resolve a legal case."
+      },
+      {
+        "q": 22,
+        "topic": "Problem Solving",
+        "question": "Statements: All cats are animals. All dogs are animals. Conclusions: I. All cats are dogs. II. Some animals are cats.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Both follow",
+          "D": "Neither follows"
+        },
+        "correct": "D",
+        "explanation": "From the universal statements, no direct relationship between cats and dogs can be established (Conclusion I does not follow), and universal affirmative statements do not guarantee the existential import required to prove that some cats actually exist (Conclusion II does not necessarily follow). Thus, neither follows."
+      },
+      {
+        "q": 23,
+        "topic": "Series",
+        "question": "Complete the number series: 3, 7, 15, 31, 63, ?",
+        "options": {
+          "A": "121",
+          "B": "125",
+          "C": "127",
+          "D": "131"
+        },
+        "correct": "C",
+        "explanation": "Each term is multiplied by 2 and then increased by 1 (or differences are powers of 2: +4, +8, +16, +32). The next addition is +64, so 63 + 64 = 127."
+      },
+      {
+        "q": 24,
+        "topic": "Problem Solving",
+        "question": "In a test, Arun scored higher than Sunil but lower than Sanjay. Anil scored higher than Sanjay but lower than Manoj, who scored the highest. Who scored the lowest among all?",
+        "options": {
+          "A": "Arun",
+          "B": "Sunil",
+          "C": "Sanjay",
+          "D": "Anil"
+        },
+        "correct": "B",
+        "explanation": "Ordering from highest to lowest: Manoj > Anil > Sanjay > Arun > Sunil. Therefore, Sunil scored the lowest."
+      },
+      {
+        "q": 25,
+        "topic": "Coding and Decoding",
+        "question": "If 'GATE' is coded as '7-1-20-5' and 'DOOR' is coded as '4-15-15-18', how is 'WINDOW' coded?",
+        "options": {
+          "A": "23-9-14-4-15-23",
+          "B": "23-9-13-4-15-23",
+          "C": "23-9-14-5-15-23",
+          "D": "23-8-14-4-15-23"
+        },
+        "correct": "A",
+        "explanation": "Each letter is directly mapped to its alphabetical position (G=7, A=1, T=20, E=5). For WINDOW: W=23, I=9, N=14, D=4, O=15, W=23, giving 23-9-14-4-15-23."
+      }
+    ],
+    "General Awareness": [
+      {
+        "q": 1,
+        "topic": "General Polity",
+        "question": "Which article of the Indian Constitution provides for the establishment of the Finance Commission?",
+        "options": {
+          "A": "Article 280",
+          "B": "Article 324",
+          "C": "Article 356",
+          "D": "Article 360"
+        },
+        "correct": "A",
+        "explanation": "Article 280 of the Indian Constitution provides for the constitution of a Finance Commission by the President every five years."
+      },
+      {
+        "q": 2,
+        "topic": "History",
+        "question": "Which of the following was a direct consequence of the Battle of Buxar (1764) rather than the Battle of Plassey?",
+        "options": {
+          "A": "The British East India Company secured the Diwani rights of Bengal, Bihar, and Orissa",
+          "B": "Mir Jafar was installed as the Nawab of Bengal by Robert Clive",
+          "C": "The French East India Company was completely expelled from Bengal",
+          "D": "The Company gained sole monopoly over the textile trade in Bengal"
+        },
+        "correct": "A",
+        "explanation": "The Battle of Buxar led to the Treaty of Allahabad (1765), through which the Mughal Emperor granted the Diwani (revenue administration rights) of Bengal, Bihar, and Orissa to the British East India Company."
+      },
+      {
+        "q": 3,
+        "topic": "Current Affairs",
+        "question": "Consider the following characteristics: high temperature, high humidity, annual rainfall above 100 cm, and requirement of standing water during growth. Which major Indian crop does this describe?",
+        "options": {
+          "A": "Wheat",
+          "B": "Paddy",
+          "C": "Barley",
+          "D": "Chickpea"
+        },
+        "correct": "B",
+        "explanation": "Paddy (rice) is a kharif crop that requires high temperatures, high humidity, and abundant water with standing water fields during its primary growth period."
+      },
+      {
+        "q": 4,
+        "topic": "Culture",
+        "question": "Sonal Mansingh is a renowned classical dancer associated with which of the following dance forms?",
+        "options": {
+          "A": "Kathakali and Manipuri",
+          "B": "Kathak and Kuchipudi",
+          "C": "Mohiniyattam and Sattriya",
+          "D": "Bharatanatyam and Odissi"
+        },
+        "correct": "D",
+        "explanation": "Sonal Mansingh is an eminent Indian classical dancer who is accomplished in both Bharatanatyam and Odissi."
+      },
+      {
+        "q": 5,
+        "topic": "Current Affairs",
+        "question": "Which atmospheric layer experiences an increase in temperature with altitude due to the absorption of solar ultraviolet radiation by ozone molecules?",
+        "options": {
+          "A": "Stratosphere",
+          "B": "Troposphere",
+          "C": "Mesosphere",
+          "D": "Thermosphere"
+        },
+        "correct": "A",
+        "explanation": "Unlike the troposphere where temperature decreases with height, the stratosphere's temperature increases with altitude because ozone molecules absorb high-energy UV radiation from the sun."
+      },
+      {
+        "q": 6,
+        "topic": "History",
+        "question": "Who among the following Mughal Emperors shifted the emphasis from illustrated manuscripts to album painting and portraiture?",
+        "options": {
+          "A": "Akbar",
+          "B": "Shah Jahan",
+          "C": "Jahangir",
+          "D": "Aurangzeb"
+        },
+        "correct": "C",
+        "explanation": "During the reign of Jahangir, Mughal painting reached its zenith, with a distinct focus on realistic portraiture and individual albums rather than large epic manuscripts."
+      },
+      {
+        "q": 7,
+        "topic": "Current Affairs",
+        "question": "When sodium carbonate undergoes recrystallization, it yields washing soda. What is the precise chemical nature and water of crystallization associated with it?",
+        "options": {
+          "A": "Sodium carbonate monohydrate with 1 molecule of water",
+          "B": "Sodium carbonate decahydrate with 10 molecules of water",
+          "C": "Sodium bicarbonate dihydrate with 2 molecules of water",
+          "D": "Sodium hydroxide heptahydrate with 7 molecules of water"
+        },
+        "correct": "B",
+        "explanation": "Washing soda is sodium carbonate decahydrate, containing 10 molecules of water of crystallization (Na2CO3.10H2O), which imparts its crystalline structure."
+      },
+      {
+        "q": 8,
+        "topic": "Current Affairs",
+        "question": "The 'Doldrums' is a low-pressure area located around which region?",
+        "options": {
+          "A": "Tropic of Cancer",
+          "B": "Arctic Circle",
+          "C": "Tropic of Capricorn",
+          "D": "Equator"
+        },
+        "correct": "D",
+        "explanation": "The doldrums, or equatorial low-pressure belt, is situated near the equator where the northeast and southeast trade winds converge."
+      },
+      {
+        "q": 9,
+        "topic": "Current Affairs",
+        "question": "Which five-year plan in India focused heavily on 'Garibi Hatao' (Removal of Poverty) and economic self-reliance?",
+        "options": {
+          "A": "Fifth Five-Year Plan",
+          "B": "Fourth Five-Year Plan",
+          "C": "Sixth Five-Year Plan",
+          "D": "Second Five-Year Plan"
+        },
+        "correct": "A",
+        "explanation": "The Fifth Five-Year Plan (1974-1978) emphasized employment, poverty alleviation (Garibi Hatao), and justice."
+      },
+      {
+        "q": 10,
+        "topic": "Current Affairs",
+        "question": "Kalhana's 'Rajatarangini' is considered a landmark in Indian historiography primarily because:",
+        "options": {
+          "A": "It is the earliest surviving epic poem written in chaste Vedic Sanskrit",
+          "B": "It critically evaluates historical sources, inscriptions, and chronicles rather than relying solely on mythology",
+          "C": "It exclusively documents the economic policies and tax structures of ancient South India",
+          "D": "It serves as the official administrative gazette of the Maurya Empire"
+        },
+        "correct": "B",
+        "explanation": "Rajatarangini is celebrated as a pioneering historical work because Kalhana utilized contemporary inscriptions, coins, local traditions, and historical records to construct a chronological account."
+      },
+      {
+        "q": 11,
+        "topic": "Scientific Research",
+        "question": "A patient presents with neurological disorders, muscle wasting, and impaired carbohydrate metabolism resulting from a dietary coenzyme deficiency. This is most likely caused by the lack of:",
+        "options": {
+          "A": "Ascorbic acid",
+          "B": "Thiamine",
+          "C": "Cholecalciferol",
+          "D": "Niacin"
+        },
+        "correct": "B",
+        "explanation": "Thiamine (Vitamin B1) acts as an essential coenzyme in carbohydrate metabolism (such as in pyruvate dehydrogenase). Its deficiency impairs cellular energy production, leading to beriberi and neurological symptoms."
+      },
+      {
+        "q": 12,
+        "topic": "Geography",
+        "question": "Which river originates from the Trimbakeshwar in Nashik district of Maharashtra?",
+        "options": {
+          "A": "Mahanadi",
+          "B": "Narmada",
+          "C": "Krishna",
+          "D": "Godavari"
+        },
+        "correct": "D",
+        "explanation": "The Godavari River, the second-longest river in India after the Ganga, originates near Trimbak in Nashik, Maharashtra."
+      },
+      {
+        "q": 13,
+        "topic": "General Polity",
+        "question": "Which constitutional amendment lowered the voting age in India from 21 years to 18 years?",
+        "options": {
+          "A": "61st Amendment Act",
+          "B": "42nd Amendment Act",
+          "C": "44th Amendment Act",
+          "D": "73rd Amendment Act"
+        },
+        "correct": "A",
+        "explanation": "The 61st Constitutional Amendment Act of 1988 reduced the voting age for elections to the Lok Sabha and State Legislative Assemblies from 21 to 18 years."
+      },
+      {
+        "q": 14,
+        "topic": "History",
+        "question": "The famous rock-cut temple of Kailash at Ellora was built by which dynasty?",
+        "options": {
+          "A": "Chola Dynasty",
+          "B": "Pallava Dynasty",
+          "C": "Rashtrakuta Dynasty",
+          "D": "Gupta Dynasty"
+        },
+        "correct": "C",
+        "explanation": "The monolithic Kailash Temple (Cave 16) at Ellora was constructed by the Rashtrakuta king Krishna I in the 8th century."
+      },
+      {
+        "q": 15,
+        "topic": "Current Affairs",
+        "question": "According to Ohm's law, if the potential difference across a metallic conductor is doubled while keeping its physical dimensions and temperature constant, what happens to its electrical resistance?",
+        "options": {
+          "A": "It gets halved",
+          "B": "It remains constant",
+          "C": "It gets doubled",
+          "D": "It quadruples"
+        },
+        "correct": "B",
+        "explanation": "Electrical resistance is an intrinsic property of a conductor dependent on its material, length, cross-sectional area, and temperature, not on the applied voltage or current."
+      },
+      {
+        "q": 16,
+        "topic": "Geography",
+        "question": "Which of the following mountain passes connects Srinagar with Leh?",
+        "options": {
+          "A": "Rohtang Pass",
+          "B": "Nathu La",
+          "C": "Lipulekh Pass",
+          "D": "Zoji La"
+        },
+        "correct": "D",
+        "explanation": "Zoji La is a high mountain pass in Ladakh, located on the Srinagar-Leh national highway in the Western Himalayan mountain range."
+      },
+      {
+        "q": 17,
+        "topic": "Economic Scene",
+        "question": "The Reserve Bank of India (RBI) was established on the recommendation of which commission?",
+        "options": {
+          "A": "Hilton Young Commission",
+          "B": "Simon Commission",
+          "C": "Hunter Commission",
+          "D": "Butler Commission"
+        },
+        "correct": "A",
+        "explanation": "The Reserve Bank of India was established on April 1, 1935, in accordance with the recommendations of the Royal Commission on Indian Currency and Finance, also known as the Hilton Young Commission."
+      },
+      {
+        "q": 18,
+        "topic": "History",
+        "question": "The foundation of the Maurya Empire by Chandragupta Maurya was primarily facilitated by which of the following historical factors?",
+        "options": {
+          "A": "The political vacuum and instability in northwestern India following Alexander's campaigns, combined with Chanakya's strategy to overthrow the Nanda dynasty in Magadha",
+          "B": "A sudden naval invasion and alliance with Greek satraps against southern kingdoms",
+          "C": "The complete economic collapse of the Mauryan trade guilds and merchant unions",
+          "D": "The voluntary abdication of power by the last ruler of the Haryanka dynasty"
+        },
+        "correct": "A",
+        "explanation": "Chandragupta Maurya's rise was enabled by capitalizing on the political instability in northwestern India after Alexander's invasion and successfully overthrowing the Nanda rule in Magadha with the strategic guidance of Chanakya."
+      },
+      {
+        "q": 19,
+        "topic": "Scientific Research",
+        "question": "Mitochondria are termed the powerhouse of the cell because they are the primary site for which cellular process?",
+        "options": {
+          "A": "Protein synthesis via translation of mRNA transcripts",
+          "B": "Aerobic respiration and ATP synthesis through oxidative phosphorylation",
+          "C": "Intracellular digestion and recycling of cellular debris",
+          "D": "Lipid synthesis and detoxification of xenobiotic compounds"
+        },
+        "correct": "B",
+        "explanation": "Mitochondria house the enzymes of the Krebs cycle and the electron transport chain, carrying out oxidative phosphorylation to produce ATP, the cellular energy currency."
+      },
+      {
+        "q": 20,
+        "topic": "Culture",
+        "question": "The festival of Onam in Kerala is traditionally celebrated to commemorate the legendary return of which mythical figure?",
+        "options": {
+          "A": "Parasurama",
+          "B": "King Mahabali",
+          "C": "Chera King Senguttuvan",
+          "D": "Agastya Muni"
+        },
+        "correct": "B",
+        "explanation": "Onam celebrates the annual homecoming of the benevolent Asura King Mahabali, during whose reign Kerala is believed to have experienced a golden age of equality and prosperity."
+      },
+      {
+        "q": 21,
+        "topic": "Current Affairs",
+        "question": "Which writ is issued by a higher court to a lower court or tribunal to prevent it from exceeding its jurisdiction?",
+        "options": {
+          "A": "Prohibition",
+          "B": "Habeas Corpus",
+          "C": "Quo-Warranto",
+          "D": "Mandamus"
+        },
+        "correct": "A",
+        "explanation": "The writ of Prohibition is issued by a higher court to a lower court or quasi-judicial body to prevent them from exceeding their jurisdiction or usurping a jurisdiction they do not possess."
+      },
+      {
+        "q": 22,
+        "topic": "Current Affairs",
+        "question": "Which Sultan of Delhi introduced the system of token currency using bronze and copper coins instead of silver?",
+        "options": {
+          "A": "Alauddin Khalji",
+          "B": "Ghiyas-ud-din Tughlaq",
+          "C": "Muhammad bin Tughlaq",
+          "D": "Ibrahim Lodi"
+        },
+        "correct": "C",
+        "explanation": "Muhammad bin Tughlaq introduced token currency in 1329-1330, issuing bronze and copper coins with face value equal to silver coins."
+      },
+      {
+        "q": 23,
+        "topic": "Scientific Research",
+        "question": "Which planet in our solar system has an atmosphere primarily composed of carbon dioxide with thick clouds of sulfuric acid, resulting in a runaway greenhouse effect?",
+        "options": {
+          "A": "Mars",
+          "B": "Venus",
+          "C": "Mercury",
+          "D": "Jupiter"
+        },
+        "correct": "B",
+        "explanation": "Venus has a dense atmosphere consisting mainly of carbon dioxide and clouds of sulfuric acid, creating an intense runaway greenhouse effect that makes it the hottest planet in the solar system."
+      },
+      {
+        "q": 24,
+        "topic": "Economic Scene",
+        "question": "What does 'Fiscal Deficit' signify in government budget terminology?",
+        "options": {
+          "A": "Total expenditure minus total tax revenue",
+          "B": "Revenue expenditure minus revenue receipts",
+          "C": "Borrowings excluding interest payments",
+          "D": "Total expenditure minus total receipts excluding borrowings"
+        },
+        "correct": "D",
+        "explanation": "Fiscal deficit is the excess of total government expenditure over total receipts (excluding borrowings), indicating the total borrowing requirements of the government."
+      },
+      {
+        "q": 25,
+        "topic": "Current Affairs",
+        "question": "When the first Commonwealth Games were inaugurated in 1930 in Hamilton, Canada, under what official name were they held?",
+        "options": {
+          "A": "The British Empire Games",
+          "B": "The Imperial Athletic Meet",
+          "C": "The Commonwealth Unity Olympiad",
+          "D": "The Dominion Sports Festival"
+        },
+        "correct": "A",
+        "explanation": "Initiated in 1930, the modern Commonwealth Games originally debuted under the title of the 'British Empire Games' before evolving through several title changes."
+      }
+    ],
+    "Quantitative Aptitude": [
+      {
+        "q": 1,
+        "topic": "Trigonometry",
+        "question": "If the cost price of 12 articles is equal to the selling price of 9 articles, what is the profit percentage?",
+        "options": {
+          "A": "33.33%",
+          "B": "25%",
+          "C": "20%",
+          "D": "40%"
+        },
+        "correct": "A",
+        "explanation": "Let the cost price of 1 article be Rs. 1. Cost price of 12 articles = Rs. 12. Selling price of 9 articles = Rs. 12. Profit = 12 - 9 = 3. Profit percentage = (3 / 9) * 100 = 33.33%."
+      },
+      {
+        "q": 2,
+        "topic": "Interest",
+        "question": "What is the compound interest on a sum of Rs. 10,000 for 2 years at 10% per annum compounded annually?",
+        "options": {
+          "A": "Rs. 2,000",
+          "B": "Rs. 2,050",
+          "C": "Rs. 2,150",
+          "D": "Rs. 2,100"
+        },
+        "correct": "D",
+        "explanation": "Amount = P * (1 + R / 100)^n = 10000 * (1.1)^2 = Rs. 12,100. Compound Interest = 12100 - 10000 = Rs. 2,100."
+      },
+      {
+        "q": 3,
+        "topic": "Percentages",
+        "question": "If A : B = 3 : 4 and B : C = 8 : 9, then what is A : C?",
+        "options": {
+          "A": "1 : 2",
+          "B": "2 : 3",
+          "C": "3 : 4",
+          "D": "4 : 5"
+        },
+        "correct": "B",
+        "explanation": "A : B = 6 : 8 and B : C = 8 : 9. Thus A : B : C = 6 : 8 : 9, so A : C = 6 : 9 = 2 : 3."
+      },
+      {
+        "q": 4,
+        "topic": "Averages",
+        "question": "The average of five numbers is 27. If one number is excluded, the average becomes 25. What is the excluded number?",
+        "options": {
+          "A": "30",
+          "B": "32",
+          "C": "34",
+          "D": "35"
+        },
+        "correct": "D",
+        "explanation": "Sum of 5 numbers = 5 * 27 = 135. Sum of remaining 4 numbers = 4 * 25 = 100. Excluded number = 135 - 100 = 35."
+      },
+      {
+        "q": 5,
+        "topic": "Time and distance",
+        "question": "A train running at a speed of 60 km/h crosses a pole in 9 seconds. What is the length of the train in meters?",
+        "options": {
+          "A": "150 meters",
+          "B": "120 meters",
+          "C": "100 meters",
+          "D": "180 meters"
+        },
+        "correct": "A",
+        "explanation": "Speed in m/s = 60 * (5 / 18) = 50 / 3 m/s. Length = Speed * Time = (50 / 3) * 9 = 150 meters."
+      },
+      {
+        "q": 6,
+        "topic": "Algebra",
+        "question": "If x + (1 / x) = 5, what is the value of x^2 + (1 / x^2)?",
+        "options": {
+          "A": "21",
+          "B": "25",
+          "C": "27",
+          "D": "23"
+        },
+        "correct": "D",
+        "explanation": "Squaring both sides of x + (1 / x) = 5 gives x^2 + (1 / x^2) + 2 = 25, so x^2 + (1 / x^2) = 23."
+      },
+      {
+        "q": 7,
+        "topic": "Trigonometry",
+        "question": "A person sells an article at a profit of 20%. If he had bought it at 10% less and sold it for Rs. 12 less, he would have gained 25%. What is the cost price of the article?",
+        "options": {
+          "A": "Rs. 150",
+          "B": "Rs. 160",
+          "C": "Rs. 180",
+          "D": "Rs. 200"
+        },
+        "correct": "B",
+        "explanation": "Let CP be 100x. Initial SP = 120x. New CP = 90x. New SP = 90x * 1.25 = 112.5x. Difference = 120x - 112.5x = 7.5x = 12, giving x = 1.6. CP = 160."
+      },
+      {
+        "q": 8,
+        "topic": "Trigonometry",
+        "question": "Pipes A and B can fill an empty tank in 12 hours and 15 hours respectively, while pipe C can empty the full tank in 20 hours. If all three pipes are opened together, in how many hours will the tank be filled?",
+        "options": {
+          "A": "8 hours",
+          "B": "9 hours",
+          "C": "12 hours",
+          "D": "10 hours"
+        },
+        "correct": "D",
+        "explanation": "Total work = 60 units. Efficiencies: A = 5, B = 4, C = -3. Net efficiency = 6 units/hr. Time = 60 / 6 = 10 hours."
+      },
+      {
+        "q": 9,
+        "topic": "Interest",
+        "question": "A sum of money becomes 3 times itself in 5 years at simple interest. In how many years will it become 5 times itself at the same rate?",
+        "options": {
+          "A": "10 years",
+          "B": "12 years",
+          "C": "15 years",
+          "D": "20 years"
+        },
+        "correct": "A",
+        "explanation": "Interest earned is 2P in 5 years. To become 5 times, interest must be 4P, which takes 5 * (4 / 2) = 10 years."
+      },
+      {
+        "q": 10,
+        "topic": "Interest",
+        "question": "The difference between compound interest and simple interest on a certain sum of money for 2 years at 5% per annum is Rs. 25. What is the principal sum?",
+        "options": {
+          "A": "Rs. 8,000",
+          "B": "Rs. 9,000",
+          "C": "Rs. 10,000",
+          "D": "Rs. 12,000"
+        },
+        "correct": "C",
+        "explanation": "For 2 years, CI - SI = P * (R / 100)^2. Therefore, 25 = P * (5 / 100)^2, giving P = Rs. 10,000."
+      },
+      {
+        "q": 11,
+        "topic": "Profit and loss",
+        "question": "The marked price of an article is Rs. 800. A shopkeeper allows two successive discounts of 10% and x% respectively. If the selling price is Rs. 612, what is the value of x?",
+        "options": {
+          "A": "12%",
+          "B": "15%",
+          "C": "18%",
+          "D": "20%"
+        },
+        "correct": "B",
+        "explanation": "Price after first discount = 720. 720 * (1 - x / 100) = 612 => 1 - x / 100 = 612 / 720 = 0.85, so x = 15%."
+      },
+      {
+        "q": 12,
+        "topic": "Trigonometry",
+        "question": "A man covers a certain distance at 40 km/h and returns at 60 km/h. What is his average speed for the entire journey?",
+        "options": {
+          "A": "48 km/h",
+          "B": "50 km/h",
+          "C": "45 km/h",
+          "D": "52 km/h"
+        },
+        "correct": "A",
+        "explanation": "Average speed = (2 * 40 * 60) / (40 + 60) = 4800 / 100 = 48 km/h."
+      },
+      {
+        "q": 13,
+        "topic": "Trigonometry",
+        "question": "If sin(theta) + cos(theta) = sqrt(2) * cos(theta), what is the value of tan(theta)?",
+        "options": {
+          "A": "sqrt(2) + 1",
+          "B": "1",
+          "C": "sqrt(2) - 1",
+          "D": "0"
+        },
+        "correct": "C",
+        "explanation": "Dividing by cos(theta) gives tan(theta) + 1 = sqrt(2), so tan(theta) = sqrt(2) - 1."
+      },
+      {
+        "q": 14,
+        "topic": "Algebra",
+        "question": "The ratio of copper and zinc in an alloy is 9 : 4. If 24 kg of zinc is added to the alloy, the new ratio of copper to zinc becomes 3 : 2. What was the initial weight of the alloy?",
+        "options": {
+          "A": "182 kg",
+          "B": "169 kg",
+          "C": "195 kg",
+          "D": "156 kg"
+        },
+        "correct": "D",
+        "explanation": "Let copper = 9x, zinc = 4x. 9x / (4x + 24) = 3 / 2 => 18x = 12x + 72 => x = 12. Initial weight = 13 * 12 = 156 kg."
+      },
+      {
+        "q": 15,
+        "topic": "Mensuration",
+        "question": "The perimeter of a rhombus is 40 cm and one of its diagonals is 12 cm. What is the area of the rhombus?",
+        "options": {
+          "A": "84 cm^2",
+          "B": "96 cm^2",
+          "C": "120 cm^2",
+          "D": "144 cm^2"
+        },
+        "correct": "B",
+        "explanation": "Side = 40 / 4 = 10 cm. Half diagonal = 6 cm. Other half diagonal = sqrt(10^2 - 6^2) = 8 cm. Full diagonal = 16 cm. Area = 0.5 * 12 * 16 = 96 cm^2."
+      },
+      {
+        "q": 16,
+        "topic": "Averages",
+        "question": "A batsman scores 87 runs in his 12th innings and thus increases his average by 2 runs. What is his average after the 12th innings?",
+        "options": {
+          "A": "63",
+          "B": "67",
+          "C": "65",
+          "D": "69"
+        },
+        "correct": "C",
+        "explanation": "Let average after 12th innings be A. Sum of 12 innings = 12A. Sum of 11 innings = 11(A - 2). 12A - 11(A - 2) = 87 => A + 22 = 87 => A = 65."
+      },
+      {
+        "q": 17,
+        "topic": "Algebra",
+        "question": "If x^2 - 3x + 1 = 0, what is the value of x^3 + (1 / x^3)?",
+        "options": {
+          "A": "18",
+          "B": "24",
+          "C": "27",
+          "D": "36"
+        },
+        "correct": "A",
+        "explanation": "Dividing by x gives x + (1 / x) = 3. Then x^3 + (1 / x^3) = 3^3 - 3(3) = 18."
+      },
+      {
+        "q": 18,
+        "topic": "Trigonometry",
+        "question": "Two concentric circles have radii 15 cm and 9 cm. What is the length of the chord of the larger circle that is tangent to the smaller circle?",
+        "options": {
+          "A": "20 cm",
+          "B": "24 cm",
+          "C": "30 cm",
+          "D": "18 cm"
+        },
+        "correct": "B",
+        "explanation": "Half chord = sqrt(15^2 - 9^2) = 12 cm. Total chord length = 2 * 12 = 24 cm."
+      },
+      {
+        "q": 19,
+        "topic": "Geometry",
+        "question": "In a triangle ABC, AB = AC and angle BAC = 40 degrees. What is the measure of angle ABC?",
+        "options": {
+          "A": "50 degrees",
+          "B": "60 degrees",
+          "C": "65 degrees",
+          "D": "70 degrees"
+        },
+        "correct": "D",
+        "explanation": "Angle ABC = angle ACB = (180 - 40) / 2 = 70 degrees."
+      },
+      {
+        "q": 20,
+        "topic": "Algebra",
+        "question": "If x = (sqrt(5) + 1) / (sqrt(5) - 1) and y = (sqrt(5) - 1) / (sqrt(5) + 1), what is the value of x^2 + xy + y^2?",
+        "options": {
+          "A": "12",
+          "B": "13",
+          "C": "8",
+          "D": "15"
+        },
+        "correct": "C",
+        "explanation": "x * y = 1, x + y = 3. x^2 + y^2 = (x+y)^2 - 2xy = 7. Thus x^2 + xy + y^2 = 7 + 1 = 8."
+      },
+      {
+        "q": 21,
+        "topic": "Trigonometry",
+        "question": "If a + b + c = 6, a^2 + b^2 + c^2 = 14, and a^3 + b^3 + c^3 = 36, what is the value of abc?",
+        "options": {
+          "A": "6",
+          "B": "4",
+          "C": "3",
+          "D": "8"
+        },
+        "correct": "A",
+        "explanation": "(a+b+c)^2 = a^2+b^2+c^2 + 2(ab+bc+ca) => 36 = 14 + 2(sum) => sum = 11. Using a^3+b^3+c^3 - 3abc = (a+b+c)(a^2+b^2+c^2 - sum) => 36 - 3abc = 6*(14 - 11) = 18 => 3abc = 18 => abc = 6."
+      },
+      {
+        "q": 22,
+        "topic": "Trigonometry",
+        "question": "If sec(theta) - tan(theta) = p, what is the value of cosec(theta)?",
+        "options": {
+          "A": "(p^2 - 1) / (p^2 + 1)",
+          "B": "2p / (p^2 + 1)",
+          "C": "(p^2 + 1) / (p^2 - 1)",
+          "D": "(p^2 + 1) / (2p)"
+        },
+        "correct": "C",
+        "explanation": "sec(theta) + tan(theta) = 1/p. Adding gives 2sec(theta) = (p^2+1)/p => cos(theta) = 2p/(p^2+1). Then sin(theta) = (p^2-1)/(p^2+1), so cosec(theta) = (p^2+1)/(p^2-1)."
+      },
+      {
+        "q": 23,
+        "topic": "Percentages",
+        "question": "The interior angles of a polygon are in arithmetic progression. If the smallest angle is 120 degrees and the common difference is 5 degrees, how many sides does the polygon have?",
+        "options": {
+          "A": "10",
+          "B": "16",
+          "C": "Both 9 and 16",
+          "D": "9"
+        },
+        "correct": "C",
+        "explanation": "Sum of interior angles = (n-2)*180 = (n/2)*[2a + (n-1)d] with a=120, d=5. Solving yields 5n^2 - 125n + 720 = 0 => (n-9)(n-16) = 0, so n can be 9 or 16."
+      },
+      {
+        "q": 24,
+        "topic": "Mensuration",
+        "question": "A solid metallic sphere of radius 6 cm is melted and recast into a right circular cone of height 24 cm. What is the radius of the base of the cone?",
+        "options": {
+          "A": "4 cm",
+          "B": "5 cm",
+          "C": "4.5 cm",
+          "D": "6 cm"
+        },
+        "correct": "D",
+        "explanation": "Volume of sphere = (4/3) * pi * 6^3 = 288 * pi. Volume of cone = (1/3) * pi * r^2 * 24 = 8 * pi * r^2. Equating volumes: 8 * pi * r^2 = 288 * pi => r^2 = 36 => r = 6 cm."
+      },
+      {
+        "q": 25,
+        "topic": "Number Systems",
+        "question": "Let x be the greatest 4-digit number which when divided by 15, 25, 40, and 75 leaves remainders 11, 21, 36, and 71 respectively. What is the sum of the digits of x?",
+        "options": {
+          "A": "25",
+          "B": "27",
+          "C": "24",
+          "D": "29"
+        },
+        "correct": "D",
+        "explanation": "LCM of 15, 25, 40, 75 is 600. The common difference between divisor and remainder is 4. Greatest 4-digit number multiple of 600 is 9600. Number x = 9600 - 4 = 9596. Sum of digits = 9 + 5 + 9 + 6 = 29."
+      }
+    ],
+    "English Comprehension": [
+      {
+        "q": 1,
+        "topic": "Grammar",
+        "question": "Choose the word that best fills the blank in context: 'Despite facing relentless setbacks, her ______ determination eventually led her to break the world record.'",
+        "options": {
+          "A": "tenacious",
+          "B": "fickle",
+          "C": "cursory",
+          "D": "sporadic"
+        },
+        "correct": "A",
+        "explanation": "Tenacious means persistent and unwavering, which fits the context of overcoming relentless setbacks to break a record."
+      },
+      {
+        "q": 2,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option to substitute the underlined segment: 'It is high time the government takes stringent measures against environmental pollution.'",
+        "options": {
+          "A": "will take stringent measures",
+          "B": "took stringent measures",
+          "C": "had taken stringent measures",
+          "D": "has taken stringent measures"
+        },
+        "correct": "B",
+        "explanation": "The expression 'It is high time' / 'It is time' must be followed by a clause in the simple past tense to express a present or urgent hypothetical action."
+      },
+      {
+        "q": 3,
+        "topic": "Grammar",
+        "question": "Select the word for: 'A person who is indifferent to pleasure or pain, and unaffected by joy or grief'",
+        "options": {
+          "A": "Epicure",
+          "B": "Stoic",
+          "C": "Fanatic",
+          "D": "Cynic"
+        },
+        "correct": "B",
+        "explanation": "A stoic is someone who can endure pain or hardship without showing their feelings or complaining, remaining indifferent to pleasure or pain."
+      },
+      {
+        "q": 4,
+        "topic": "Grammar",
+        "question": "Identify the segment in the sentence which contains a grammatical error: 'Neither of the contestants were able to give a satisfactory answer.'",
+        "options": {
+          "A": "satisfactory answer",
+          "B": "able to give a",
+          "C": "Neither of the contestants",
+          "D": "were able to"
+        },
+        "correct": "D",
+        "explanation": "The pronoun 'Neither' is singular and takes a singular verb. Therefore, 'was able to' should replace 'were able to'."
+      },
+      {
+        "q": 5,
+        "topic": "Fillers",
+        "question": "Fill in the blank with the most appropriate word: 'She has been working on this project ______ three months.'",
+        "options": {
+          "A": "for",
+          "B": "since",
+          "C": "from",
+          "D": "during"
+        },
+        "correct": "A",
+        "explanation": "The preposition 'for' is used with a period or duration of time (three months), whereas 'since' is used for a specific point in time."
+      },
+      {
+        "q": 6,
+        "topic": "Grammar",
+        "question": "Identify the segment in the sentence which contains a grammatical error: 'Scarcely had the minister stepped out of his car than the crowd started protesting.'",
+        "options": {
+          "A": "Scarcely had the minister",
+          "B": "stepped out of his car",
+          "C": "than the crowd",
+          "D": "started protesting"
+        },
+        "correct": "C",
+        "explanation": "The correlative conjunction 'Scarcely / Hardly' must always be followed by 'when' or 'before', never by 'than'. Therefore, 'than' must be corrected to 'when'."
+      },
+      {
+        "q": 7,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option to substitute the underlined segment: 'Hardly had I stepped out of the house when it started raining heavily.'",
+        "options": {
+          "A": "than it started raining heavily",
+          "B": "when it started raining heavily",
+          "C": "then it started raining heavily",
+          "D": "as it started raining heavily"
+        },
+        "correct": "B",
+        "explanation": "The correlative conjunction 'Hardly / Scarcely' is strictly followed by 'when' or 'before', whereas 'No sooner' is followed by 'than'."
+      },
+      {
+        "q": 8,
+        "topic": "Grammar",
+        "question": "Select the correct passive form of the given sentence: 'The manager gave the employees clear instructions regarding the new policy.'",
+        "options": {
+          "A": "The employees are given clear instructions regarding the new policy by the manager.",
+          "B": "Clear instructions were given to the manager by the employees regarding the new policy.",
+          "C": "The employees have been given clear instructions regarding the new policy.",
+          "D": "The employees were given clear instructions regarding the new policy by the manager."
+        },
+        "correct": "D",
+        "explanation": "The active sentence is in the simple past tense ('gave'), so the passive structure must use 'were given' with the proper object shift."
+      },
+      {
+        "q": 9,
+        "topic": "Grammar",
+        "question": "Select the correct indirect form of the given sentence: He said to me, 'Where are you going for your summer vacation?'",
+        "options": {
+          "A": "He asked me where I was going for my summer vacation.",
+          "B": "He asked me where were you going for my summer vacation.",
+          "C": "He told me that where I am going for my summer vacation.",
+          "D": "He asked me where am I going for my summer vacation."
+        },
+        "correct": "A",
+        "explanation": "In indirect speech for Wh-questions, the reporting verb 'said to' becomes 'asked', the question order shifts to a statement order ('I was going'), and pronouns change accordingly."
+      },
+      {
+        "q": 10,
+        "topic": "Grammar",
+        "question": "Choose the word most opposite in meaning to the given word: METICULOUS",
+        "options": {
+          "A": "Diligent",
+          "B": "Scrupulous",
+          "C": "Careless",
+          "D": "Punctual"
+        },
+        "correct": "C",
+        "explanation": "Meticulous means showing great attention to detail; very careful and precise. The exact opposite is careless or sloppy."
+      },
+      {
+        "q": 11,
+        "topic": "Fillers",
+        "question": "Fill in the blank with the appropriate phrasal verb: 'Due to the economic downturn, the company decided to ______ its expansion plans.'",
+        "options": {
+          "A": "wind down",
+          "B": "scale back",
+          "C": "break off",
+          "D": "fall through"
+        },
+        "correct": "B",
+        "explanation": "To 'scale back' means to reduce the scope, size, or extent of something (such as expansion plans), making it the precise and natural fit."
+      },
+      {
+        "q": 12,
+        "topic": "Grammar",
+        "question": "Select the word for: 'An event that causes great sudden damage or distress'",
+        "options": {
+          "A": "Miracle",
+          "B": "Blessing",
+          "C": "Prosperity",
+          "D": "Catastrophe"
+        },
+        "correct": "D",
+        "explanation": "A catastrophe is an event causing great and often sudden damage or suffering; a disaster."
+      },
+      {
+        "q": 13,
+        "topic": "Grammar",
+        "question": "Find the part of the sentence that contains an error: 'Each of the suspected men were arrested by the local police yesterday.'",
+        "options": {
+          "A": "were arrested by",
+          "B": "Each of the suspected men",
+          "C": "the local police",
+          "D": "yesterday"
+        },
+        "correct": "A",
+        "explanation": "Similar to 'neither', 'Each' is singular and requires a singular verb. 'were arrested' must be corrected to 'was arrested'."
+      },
+      {
+        "q": 14,
+        "topic": "Fillers",
+        "question": "Fill in the blank with the most appropriate option: 'Despite his immense wealth, he leads a very ______ life, avoiding all luxuries.'",
+        "options": {
+          "A": "lavish",
+          "B": "extravagant",
+          "C": "austere",
+          "D": "opulent"
+        },
+        "correct": "C",
+        "explanation": "An austere life is characterized by severe simplicity, lack of comfort, or luxury, which fits the context of avoiding luxuries."
+      },
+      {
+        "q": 15,
+        "topic": "Sentence Arrangement",
+        "question": "Rearrange the following parts to form a meaningful sentence: P. in shaping the future of global economies Q. artificial intelligence and automation R. are playing a transformative role S. across various industrial sectors. Choose the correct sequence:",
+        "options": {
+          "A": "PRSQ",
+          "B": "QRSP",
+          "C": "QSRP",
+          "D": "PSQR"
+        },
+        "correct": "B",
+        "explanation": "Starting with subject Q ('artificial intelligence and automation'), followed by verb R ('are playing a transformative role'), then S ('across various industrial sectors'), and concluding with P ('in shaping the future of global economies'). Thus, QRSP."
+      },
+      {
+        "q": 16,
+        "topic": "Spelling",
+        "question": "Select the correctly spelt word among the options:",
+        "options": {
+          "A": "Leutinent",
+          "B": "Leutenant",
+          "C": "Lieutenent",
+          "D": "Lieutenant"
+        },
+        "correct": "D",
+        "explanation": "The correct spelling is 'Lieutenant', meaning a deputy or officer ranking below a captain."
+      },
+      {
+        "q": 17,
+        "topic": "Grammar",
+        "question": "Choose the word most similar in meaning to: PRUDENT",
+        "options": {
+          "A": "Wise",
+          "B": "Reckless",
+          "C": "Rash",
+          "D": "Foolish"
+        },
+        "correct": "A",
+        "explanation": "Prudent means acting with or showing care and thought for the future; wise or judicious."
+      },
+      {
+        "q": 18,
+        "topic": "Vocabulary",
+        "question": "Select the appropriate meaning of: 'To cut corners'",
+        "options": {
+          "A": "To travel by the shortest route",
+          "B": "To build a sharp edge on an object",
+          "C": "To do something perfunctorily to save time or money",
+          "D": "To decorate the borders of a room"
+        },
+        "correct": "C",
+        "explanation": "To 'cut corners' means to perform tasks cursorily or poorly in order to save time or money."
+      },
+      {
+        "q": 19,
+        "topic": "Grammar",
+        "question": "Select the correct active form of the given sentence: 'The stray dog was being chased by the young boys through the alley.'",
+        "options": {
+          "A": "The young boys chased the stray dog through the alley.",
+          "B": "The young boys were chasing the stray dog through the alley.",
+          "C": "The young boys have chased the stray dog through the alley.",
+          "D": "The stray dog chased the young boys through the alley."
+        },
+        "correct": "B",
+        "explanation": "The passive verb phrase 'was being chased' (past continuous) corresponds to the active past continuous form 'were chasing'."
+      },
+      {
+        "q": 20,
+        "topic": "Grammar",
+        "question": "Identify the segment with a grammatical error: 'No sooner did the train arrived at the station than the passengers rushed towards it.'",
+        "options": {
+          "A": "than the passengers",
+          "B": "rushed towards it",
+          "C": "at the station",
+          "D": "No sooner did the train arrived"
+        },
+        "correct": "D",
+        "explanation": "After the auxiliary verb 'did', the base form of the verb must be used. Therefore, 'did the train arrive' is correct instead of 'did the train arrived'."
+      },
+      {
+        "q": 21,
+        "topic": "Grammar",
+        "question": "Choose the word that best fits the sentence: 'The politician's speech was full of ______ rhetoric, promising miracles while offering no practical solutions.'",
+        "options": {
+          "A": "grandiose",
+          "B": "pragmatic",
+          "C": "succinct",
+          "D": "lucid"
+        },
+        "correct": "A",
+        "explanation": "Grandiose rhetoric refers to extravagant, pompous, or overly ambitious language designed to impress, fitting the context of empty promises."
+      },
+      {
+        "q": 22,
+        "topic": "Vocabulary",
+        "question": "Select the exact meaning of the idiom: 'Pyrrhic victory'",
+        "options": {
+          "A": "A decisive and glorious triumph in battle",
+          "B": "A victory achieved through honest and fair means",
+          "C": "A victory that inflicts such a devastating toll on the victor that it is equivalent to defeat",
+          "D": "An unexpected win after trailing for a long time"
+        },
+        "correct": "C",
+        "explanation": "A Pyrrhic victory is a win that comes at such a great cost that it creates heavy losses for the winner, making it scarcely better than losing."
+      },
+      {
+        "q": 23,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option to substitute the underlined segment: 'Had I realized the gravity of the situation, I intervene earlier to prevent the disaster.'",
+        "options": {
+          "A": "I would intervene earlier to prevent the disaster",
+          "B": "I would have intervened earlier to prevent the disaster",
+          "C": "I will intervene earlier to prevent the disaster",
+          "D": "I had intervened earlier to prevent the disaster"
+        },
+        "correct": "B",
+        "explanation": "In third conditional sentences expressing past hypothetical situations ('Had I realized...'), the main clause must use the structure 'would have + past participle' ('would have intervened')."
+      },
+      {
+        "q": 24,
+        "topic": "Vocabulary",
+        "question": "Choose the word most opposite in meaning to: EPHEMERAL",
+        "options": {
+          "A": "Fleeting",
+          "B": "Transient",
+          "C": "Evanescent",
+          "D": "Permanent"
+        },
+        "correct": "D",
+        "explanation": "Ephemeral means lasting for a very short time; fleeting or transient. Its exact antonym is permanent or enduring."
+      },
+      {
+        "q": 25,
+        "topic": "Grammar",
+        "question": "Arrange the sentences to form a coherent paragraph: P. This invisible web connects billions of devices worldwide. Q. The modern digital ecosystem operates on complex data networks. R. Consequently, cybersecurity has become paramount for maintaining global stability. S. As reliance on these networks grows, vulnerabilities are increasingly exploited by malicious actors. Choose the correct sequence:",
+        "options": {
+          "A": "PRSQ",
+          "B": "RSPQ",
+          "C": "QPSR",
+          "D": "SQPR"
+        },
+        "correct": "C",
+        "explanation": "Opening with Q introduces the digital ecosystem. P elaborates on the 'invisible web'. S notes vulnerabilities emerging from this reliance. R concludes with the consequence (cybersecurity). Thus, QPSR."
+      }
+    ]
+  }
+}

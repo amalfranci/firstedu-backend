@@ -1,0 +1,1968 @@
+{
+  "paper_id": "SSC-CGL-T2-Paper4",
+  "title": "SSC CGL Tier 2 Paper 4",
+  "exam": "SSC CGL Tier 2",
+  "year": 2026,
+  "subjects": {
+    "Mathematical Abilities": [
+      {
+        "q": 1,
+        "topic": "Trigonometry",
+        "question": "Find the remainder when (2100 + 3100) is divided by 7.",
+        "options": {
+          "A": "5",
+          "B": "6",
+          "C": "4",
+          "D": "3"
+        },
+        "correct": "B",
+        "explanation": "Powers of 2 mod 7 cycle as 2, 4, 1 (period 3). Since 100 = 3(33) + 1, 2100≡ 21 = 2 (mod 7). Powers of 3 mod 7 cycle as 3, 2, 6, 4, 5, 1 (period 6). Since 100 = 6(16) + 4, 3100≡ 34 = 81 ≡ 4 (mod 7). Adding the two remainders: 2 + 4 = 6. Hence the remainder is 6."
+      },
+      {
+        "q": 2,
+        "topic": "Percentage",
+        "question": "Simplify: (sqrt5 + sqrt3) / (sqrt5 - sqrt3) + (sqrt5 - sqrt3) / (sqrt5 + sqrt3)",
+        "options": {
+          "A": "6",
+          "B": "sqrt15",
+          "C": "8",
+          "D": "4"
+        },
+        "correct": "C",
+        "explanation": "Taking the common denominator (sqrt5 - sqrt3)(sqrt5 + sqrt3) = 5 - 3 = 2, the numerator becomes (sqrt5+sqrt3)2 + (sqrt5-sqrt3)2 = (5+3+2sqrt15) + (5+3-2sqrt15) = 16. So the expression equals 16/2 = 8."
+      },
+      {
+        "q": 3,
+        "topic": "Trigonometry",
+        "question": "If x2 - 5x + 1 = 0, find the value of x3 + 1/x3.",
+        "options": {
+          "A": "110",
+          "B": "125",
+          "C": "140",
+          "D": "100"
+        },
+        "correct": "A",
+        "explanation": "Dividing the equation by x (x ≠ 0): x - 5 + 1/x = 0, so x + 1/x = 5. This is a hidden step the problem does not state directly. Using the identity x3 + 1/x3 = (x + 1/x)3 - 3(x + 1/x), substitute x + 1/x = 5: 53 - 3(5) = 125 - 15 = 110."
+      },
+      {
+        "q": 4,
+        "topic": "Trigonometry",
+        "question": "If alpha and beta are the roots of the equation 2x2 - 7x + 3 = 0, find the value of alpha3 + beta3.",
+        "options": {
+          "A": "24.5",
+          "B": "27.125",
+          "C": "29.75",
+          "D": "25"
+        },
+        "correct": "B",
+        "explanation": "For 2x2 - 7x + 3 = 0, sum of roots alpha + beta = 7/2 and product alpha × beta = 3/2. Using the identity alpha3 + beta3 = (alpha+beta)3 - 3(alpha×beta)(alpha+beta): (7/2)3 - 3(3/2)(7/2) = 343/8 - 63/4 = 343/8 - 126/8 = 217/8 = 27.125."
+      },
+      {
+        "q": 5,
+        "topic": "Trigonometry",
+        "question": "In triangle PQR, PQ = 6 cm, PR = 8 cm and QR = 10 cm. Find the length of the median drawn from vertex P to side QR.",
+        "options": {
+          "A": "7 cm",
+          "B": "6 cm",
+          "C": "8 cm",
+          "D": "5 cm"
+        },
+        "correct": "D",
+        "explanation": "Since PQ2 + PR2 = 36 + 64 = 100 = QR2, triangle PQR is right-angled at P (this must be recognised, not applied via a direct formula). In a right triangle, the median drawn from the right-angle vertex to the hypotenuse equals half the hypotenuse. So the median PM = QR/2 = 10/2 = 5 cm."
+      },
+      {
+        "q": 6,
+        "topic": "Trigonometry",
+        "question": "Two circles of radii 8 cm and 3 cm have their centres at some distance d apart. If the length of their direct common tangent is 12 cm, find d.",
+        "options": {
+          "A": "12 cm",
+          "B": "14 cm",
+          "C": "13 cm",
+          "D": "15 cm"
+        },
+        "correct": "C",
+        "explanation": "Length of direct common tangent = sqrt(d2 - (r1 - r2)2). Here this must be rearranged rather than applied directly: 122 = d2 - (8-3)2, so 144 = d2 - 25, giving d2 = 169, so d = 13 cm."
+      },
+      {
+        "q": 7,
+        "topic": "Trigonometry",
+        "question": "If tan(theta) + cot(theta) = 8/3, where theta is an acute angle, find the value of sin(theta) + cos(theta).",
+        "options": {
+          "A": "7/4",
+          "B": "sqrt7",
+          "C": "2/sqrt7",
+          "D": "sqrt7 / 2"
+        },
+        "correct": "D",
+        "explanation": "tan(theta) + cot(theta) = 1 / [sin(theta) x cos(theta)] (using sin2 + cos2 = 1). So sin(theta) x cos(theta) = 3/8. Now (sin(theta) + cos(theta))2 = 1 + 2 x sin(theta) x cos(theta) = 1 + 3/4 = 7/4. Taking the positive square root (theta is acute): sin(theta) + cos(theta) = sqrt7 / 2."
+      },
+      {
+        "q": 8,
+        "topic": "Trigonometry",
+        "question": "The angles of elevation of the top of a tower from two points on the same side of the tower, at distances 36 m and 64 m from its base and lying in the same straight line as the base, are complementary. Find the height of the tower.",
+        "options": {
+          "A": "40 m",
+          "B": "44 m",
+          "C": "48 m",
+          "D": "50 m"
+        },
+        "correct": "C",
+        "explanation": "If the angles of elevation from the two points are theta and (90 - theta), then tan(theta) = h/36 and tan(90-theta) = cot(theta) = h/64. Multiplying: tan(theta) x cot(theta) = h2/(36 x 64). Since tan(theta) x cot(theta) = 1, h2 = 2304, so h = 48 m."
+      },
+      {
+        "q": 9,
+        "topic": "Mensuration",
+        "question": "A solid sphere of radius 6 cm is melted and recast into a solid cone whose height is equal to the radius of the sphere. Find the radius of the base of the cone.",
+        "options": {
+          "A": "10 cm",
+          "B": "12 cm",
+          "C": "8 cm",
+          "D": "14 cm"
+        },
+        "correct": "B",
+        "explanation": "Volume is conserved on recasting. Volume of sphere = (4/3) x pi x 63 = 288 pi. Cone height = 6 cm (given as equal to the sphere's radius, a condition that must be read carefully). Volume of cone = (1/3) x pi x r2 x 6 = 2 pi r2. Equating: 2 pi r2 = 288 pi, so r2 = 144, r = 12 cm."
+      },
+      {
+        "q": 10,
+        "topic": "Trigonometry",
+        "question": "A cone of height 21 cm and base radius 9 cm is cut by a plane parallel to its base, so that the smaller (top) cone formed has base radius 3 cm. Find the volume of the frustum left behind. (Use pi = 22/7)",
+        "options": {
+          "A": "1650 cubic cm",
+          "B": "1600 cubic cm",
+          "C": "1500 cubic cm",
+          "D": "1716 cubic cm"
+        },
+        "correct": "D",
+        "explanation": "The smaller cone is similar to the original cone, so the ratio of heights equals the ratio of radii: height(small)/21 = 3/9, giving height(small) = 7 cm. So the frustum's height = 21 - 7 = 14 cm (not used directly, since we compute by subtracting cone volumes instead). Volume of frustum = Volume of full cone - Volume of small cone = (1/3)pi(92)(21) - (1/3)pi(32)(7) = (1/3)pi[1701 - 63] = (1/3)pi(1638) = 546 pi. With pi = 22/7: 546 x 22/7 = 78 x 22 = 1716 cubic cm."
+      },
+      {
+        "q": 11,
+        "topic": "Trigonometry",
+        "question": "A can complete a piece of work in 12 days and B can complete it in 18 days. They work together for 6 days, after which A leaves and C joins B. B and C together complete the remaining work in 2 days. In how many days can C alone complete the entire work?",
+        "options": {
+          "A": "30 days",
+          "B": "36 days",
+          "C": "32 days",
+          "D": "40 days"
+        },
+        "correct": "B",
+        "explanation": "Combined one-day work of A and B = 1/12 + 1/18 = 5/36. In 6 days they complete 6 x 5/36 = 5/6 of the work, leaving 1/6. B and C together finish this 1/6 in 2 days, so (B+C)'s one-day work = 1/12. Since B's one-day work = 1/18, C's one-day work = 1/12 - 1/18 = 1/36. So C alone takes 36 days."
+      },
+      {
+        "q": 12,
+        "topic": "Trigonometry",
+        "question": "Two trains of lengths 130 m and 110 m run on parallel tracks in opposite directions. The speed of the first train is 12 m/s more than that of the second. If they cross each other completely in 8 seconds, find the speed of the second train in km/hr.",
+        "options": {
+          "A": "36 km/hr",
+          "B": "28.8 km/hr",
+          "C": "32.4 km/hr",
+          "D": "30.6 km/hr"
+        },
+        "correct": "C",
+        "explanation": "Let the second train's speed be v m/s; the first train's speed is (v+12) m/s. Relative speed (opposite directions) = sum of speeds = total distance / time = (130+110)/8 = 30 m/s. So v + (v+12) = 30, giving 2v = 18, v = 9 m/s = 9 x 18/5 = 32.4 km/hr."
+      },
+      {
+        "q": 13,
+        "topic": "Trigonometry",
+        "question": "A boat covers a certain distance downstream in 3 hours and returns upstream over the same distance in 4 hours. If the speed of the stream is 3 km/hr, find the speed of the boat in still water.",
+        "options": {
+          "A": "18 km/hr",
+          "B": "21 km/hr",
+          "C": "24 km/hr",
+          "D": "15 km/hr"
+        },
+        "correct": "B",
+        "explanation": "Let the boat's speed in still water be b km/hr. Downstream speed = b+3, upstream speed = b-3. Since the distance covered is the same in both cases (a condition that must be inferred, not directly given as a number): 3(b+3) = 4(b-3). Solving: 3b+9 = 4b-12, so b = 21 km/hr."
+      },
+      {
+        "q": 14,
+        "topic": "Percentage",
+        "question": "The marked price of an article is first reduced by 20%, then the reduced price is increased by 25%. After this, a flat service charge of Rs. 50 is added, making the final price Rs. 800. Find the original marked price of the article.",
+        "options": {
+          "A": "700",
+          "B": "750",
+          "C": "800",
+          "D": "650"
+        },
+        "correct": "B",
+        "explanation": "A 20% reduction followed by a 25% increase gives a net multiplying factor of 0.8 x 1.25 = 1 exactly, so the price before the flat charge equals the original marked price (this offsetting relationship must be recognised, not just calculated). So Marked Price + 50 = 800, giving Marked Price = Rs. 750."
+      },
+      {
+        "q": 15,
+        "topic": "Trigonometry",
+        "question": "A shopkeeper allows two successive discounts of 10% and 20% on the marked price of an item whose cost price is Rs. 6000. If he still makes a profit of 20%, find the marked price of the item.",
+        "options": {
+          "A": "9500",
+          "B": "10500",
+          "C": "10000",
+          "D": "9000"
+        },
+        "correct": "C",
+        "explanation": "Selling price = cost price + 20% profit = 6000 x 1.2 = Rs. 7200. Also, Selling Price = Marked Price x 0.9 x 0.8 = 0.72 x Marked Price. Equating: 0.72 x MP = 7200, so MP = Rs. 10000."
+      },
+      {
+        "q": 16,
+        "topic": "Trigonometry",
+        "question": "The difference between the compound interest and simple interest on a certain sum for 2 years at 20% per annum (compounded annually) is Rs. 800. Find the sum.",
+        "options": {
+          "A": "16000",
+          "B": "20000",
+          "C": "25000",
+          "D": "18000"
+        },
+        "correct": "B",
+        "explanation": "For 2 years, CI - SI = P(r/100)2, a standard identity that must be recalled rather than computed by finding CI and SI separately. Here P(20/100)2 = 800, so P(0.04) = 800, giving P = Rs. 20000."
+      },
+      {
+        "q": 17,
+        "topic": "Trigonometry",
+        "question": "If a : b = 3 : 4, b : c = 5 : 6, and a + b + c = 118, find the value of c.",
+        "options": {
+          "A": "40",
+          "B": "48",
+          "C": "44",
+          "D": "36"
+        },
+        "correct": "B",
+        "explanation": "Making b common: a:b = 3:4 = 15:20 and b:c = 5:6 = 20:24 (LCM of 4 and 5 is 20). So a:b:c = 15:20:24, totalling 59 parts. Since a+b+c = 118, each part = 118/59 = 2. Hence c = 24 x 2 = 48."
+      },
+      {
+        "q": 18,
+        "topic": "Ratio and proportion",
+        "question": "In a class, the average weight of the boys is 55 kg and that of the girls is 48 kg. If the average weight of the whole class of 50 students is 50.8 kg, find the number of boys in the class.",
+        "options": {
+          "A": "25",
+          "B": "20",
+          "C": "30",
+          "D": "15"
+        },
+        "correct": "B",
+        "explanation": "By alligation, boys : girls = (overall - girls' avg) : (boys' avg - overall) = (50.8-48) : (55-50.8) = 2.8 : 4.2 = 2 : 3. This 2:3 ratio out of 5 total parts corresponds to 50 students, so each part = 10 students. Number of boys = 2 x 10 = 20."
+      },
+      {
+        "q": 19,
+        "topic": "Mixture and allegation",
+        "question": "A vessel contains 40 litres of a mixture of milk and water in the ratio 3 : 1. 8 litres of this mixture is drawn out and replaced with pure water. Find the new ratio of milk to water in the vessel.",
+        "options": {
+          "A": "2 : 1",
+          "B": "5 : 3",
+          "C": "3 : 2",
+          "D": "4 : 3"
+        },
+        "correct": "C",
+        "explanation": "Initially milk = 30 L, water = 10 L. Removing 8 L of mixture (in the same 3:1 ratio) removes 6 L milk and 2 L water, leaving milk = 24 L, water = 8 L. Adding 8 L pure water raises water to 16 L while milk stays at 24 L. New ratio = 24 : 16 = 3 : 2."
+      },
+      {
+        "q": 20,
+        "topic": "Trigonometry",
+        "question": "A and B started a business with capitals of Rs. 5000 and Rs. 6000 respectively. After 4 months, A withdrew Rs. 1000 (reducing his capital to Rs. 4000) and B added Rs. 2000 to his capital (raising it to Rs. 8000). If the total profit at the end of the year was Rs. 7000, find A's share of the profit.",
+        "options": {
+          "A": "2800",
+          "B": "2400",
+          "C": "2600",
+          "D": "3000"
+        },
+        "correct": "C",
+        "explanation": "A's capital x time = 5000(4) + 4000(8) = 20000 + 32000 = 52000. B's capital x time = 6000(4) + 8000(8) = 24000 + 64000 = 88000. Total = 140000. A's share = 7000 x (52000/140000) = 7000 x 13/35 = Rs. 2600."
+      },
+      {
+        "q": 21,
+        "topic": "Statistics and Data",
+        "question": "The mean of 15 numbers is 30. Two of the numbers, whose values are not stated, are removed and replaced by 35 and 50. If the new mean of the 15 numbers becomes 32, find the sum of the two numbers that were removed.",
+        "options": {
+          "A": "50",
+          "B": "55",
+          "C": "60",
+          "D": "45"
+        },
+        "correct": "B",
+        "explanation": "Original sum = 15 x 30 = 450. Let S be the sum of the two removed numbers. New sum = 450 - S + (35+50) = 535 - S. New mean = 32 means new sum = 15 x 32 = 480. So 535 - S = 480, giving S = 55."
+      },
+      {
+        "q": 22,
+        "topic": "Percentage",
+        "question": "Three fair dice are thrown together. Find the probability that the sum of the numbers appearing on them is either 15 or 16.",
+        "options": {
+          "A": "5/108",
+          "B": "1/12",
+          "C": "2/27",
+          "D": "7/108"
+        },
+        "correct": "C",
+        "explanation": "Total outcomes = 63 = 216. By symmetry, the number of ways to get sum s equals the number of ways to get sum (21-s). Ways for sum 15 equal ways for sum 6, which is 10. Ways for sum 16 equal ways for sum 5: the ordered triples are permutations of (1,1,3) and (1,2,2), giving 3+3 = 6 ways. Total favourable outcomes = 10 + 6 = 16. Probability = 16/216 = 2/27."
+      },
+      {
+        "q": 23,
+        "topic": "Mensuration",
+        "question": "The points A(1, 1), B(4, 5) and C(k, 1) form a triangle whose area is 10 square units. Find the positive value of k.",
+        "options": {
+          "A": "4",
+          "B": "6",
+          "C": "8",
+          "D": "5"
+        },
+        "correct": "B",
+        "explanation": "Area = (1/2)|x1(y2-y3) + x2(y3-y1) + x3(y1-y2)| = (1/2)|1(5-1) + 4(1-1) + k(1-5)| = (1/2)|4 - 4k| = 2|1-k|. Setting this equal to 10: |1-k| = 5, so k = 6 or k = -4. Taking the positive value, k = 6."
+      },
+      {
+        "q": 24,
+        "topic": "Trigonometry",
+        "question": "If (x - 2) is a factor of the polynomial x3 - 6x2 + 11x - a, find the remainder when this same polynomial (using the value of a found) is divided by (x - 3).",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "0",
+          "D": "-2"
+        },
+        "correct": "C",
+        "explanation": "Since (x-2) is a factor, by the Factor Theorem f(2) = 0: 8 - 24 + 22 - a = 0, giving a = 6. So f(x) = x3 - 6x2 + 11x - 6. By the Remainder Theorem, the remainder on division by (x-3) is f(3) = 27 - 54 + 33 - 6 = 0."
+      },
+      {
+        "q": 25,
+        "topic": "Statistics and Data",
+        "question": "Find the smallest number which, when divided by 5, 6, 7 and 8, leaves remainders 3, 4, 5 and 6 respectively.",
+        "options": {
+          "A": "843",
+          "B": "836",
+          "C": "838",
+          "D": "840"
+        },
+        "correct": "C",
+        "explanation": "Notice the hidden pattern: in every case, (divisor - remainder) = 2 (5-3=2, 6-4=2, 7-5=2, 8-6=2). This means the required number is 2 less than a common multiple of 5, 6, 7 and 8. LCM(5,6,7,8) = 840. So the required number = 840 - 2 = 838."
+      },
+      {
+        "q": 26,
+        "topic": "Trigonometry",
+        "question": "If the maximum value of the expression (2k)sin(theta) + 5cos(theta) is 13, find the positive value of k.",
+        "options": {
+          "A": "5",
+          "B": "7",
+          "C": "4",
+          "D": "6"
+        },
+        "correct": "D",
+        "explanation": "The maximum value of a sin(theta) + b cos(theta) is sqrt(a2 + b2). Here this formula must be applied in reverse: sqrt((2k)2 + 52) = 13, so 4k2 + 25 = 169, giving 4k2 = 144, k2 = 36, so k = 6."
+      },
+      {
+        "q": 27,
+        "topic": "Mensuration",
+        "question": "A regular hexagon and an equilateral triangle have the same perimeter. If the side of the equilateral triangle is 12 cm, find the ratio of the area of the hexagon to the area of the triangle.",
+        "options": {
+          "A": "2 : 1",
+          "B": "5 : 3",
+          "C": "3 : 2",
+          "D": "4 : 3"
+        },
+        "correct": "C",
+        "explanation": "Perimeter of the triangle = 3 x 12 = 36 cm, so the hexagon's side = 36/6 = 6 cm (a condition that must be worked out, not read directly). Area of triangle = (sqrt3/4)(122) = 36sqrt3. Area of hexagon = (3sqrt3/2)(62) = 54sqrt3. Ratio of hexagon's area to triangle's area = 54sqrt3 : 36sqrt3 = 3 : 2."
+      },
+      {
+        "q": 28,
+        "topic": "Percentage",
+        "question": "The sum of the interior angles of a regular polygon is 2160 degrees. Find the number of diagonals of this polygon.",
+        "options": {
+          "A": "70",
+          "B": "77",
+          "C": "84",
+          "D": "66"
+        },
+        "correct": "B",
+        "explanation": "Sum of interior angles = (n-2) x 180. So (n-2) x 180 = 2160, giving n - 2 = 12, so n = 14. Number of diagonals = n(n-3)/2 = 14(11)/2 = 77."
+      },
+      {
+        "q": 29,
+        "topic": "Algebra",
+        "question": "A two-digit number is such that the product of its digits is 24. When 18 is added to the number, the digits interchange their places. Find the number.",
+        "options": {
+          "A": "68",
+          "B": "42",
+          "C": "64",
+          "D": "46"
+        },
+        "correct": "D",
+        "explanation": "Let the digits be x (tens) and y (units), so xy = 24 and the number is 10x + y. Adding 18 interchanges the digits: 10x + y + 18 = 10y + x, giving 9x - 9y = -18, i.e. y = x + 2. Substituting into xy = 24: x(x+2) = 24, so x2 + 2x - 24 = 0, giving x = 4 (taking the positive root) and y = 6. The number is 46."
+      },
+      {
+        "q": 30,
+        "topic": "Algebra",
+        "question": "If one root of the equation x2 - (k+3)x + 3k = 0 is four times the other, find the product of all possible values of k.",
+        "options": {
+          "A": "12",
+          "B": "9",
+          "C": "18",
+          "D": "6"
+        },
+        "correct": "B",
+        "explanation": "Let the roots be a and 4a. Sum: 5a = k+3, so a = (k+3)/5. Product: 4a2 = 3k. Substituting: 4[(k+3)/5]2 = 3k, so 4(k+3)2 = 75k, giving 4k2 + 24k + 36 = 75k, i.e. 4k2 - 51k + 36 = 0. This is now a quadratic in k itself. By Vieta's formulas, the product of its roots (the two possible values of k) is 36/4 = 9."
+      }
+    ],
+    "Reasoning and General Intelligence": [
+      {
+        "q": 1,
+        "topic": "Coding and Decoding",
+        "question": "If in a certain code language, FRIEND is written as HUMJTK, how will CANDLE be written in the same code language?",
+        "options": {
+          "A": "EDQIRL",
+          "B": "FDRIRL",
+          "C": "EDRIRL",
+          "D": "EDRIRM"
+        },
+        "correct": "C",
+        "explanation": "Compare FRIEND with its code HUMJTK letter by letter using alphabet positions: F(6)->H(8), R(18)->U(21), I(9)->M(13), E(5)->J(10), N(14)->T(20), D(4)->K(11). The difference at each position increases by 1: +2, +3, +4, +5, +6, +7. Applying the same increasing-shift pattern to CANDLE: C(3)+2=5=E, A(1)+3=4=D, N(14)+4=18=R, D(4)+5=9=I, L(12)+6=18=R, E(5)+7=12=L. This gives the code EDRIRL."
+      },
+      {
+        "q": 2,
+        "topic": "Logical Reasoning",
+        "question": "P is the brother of Q. R is the mother of P. S is the father of Q. T is the sister of S. How is T related to R?",
+        "options": {
+          "A": "Mother-in-law",
+          "B": "Sister-in-law",
+          "C": "Aunt",
+          "D": "Sister"
+        },
+        "correct": "B",
+        "explanation": "Since P is the brother of Q, P and Q are siblings and therefore share the same parents. As R is the mother of P, R is also the mother of Q. As S is the father of Q, S is also the father of P, which means R and S are husband and wife. T is the sister of S, i.e., T is the sister of R's husband. A husband's sister is called a sister-in-law. Hence, T is the sister-in-law of R."
+      },
+      {
+        "q": 3,
+        "topic": "Spatial Reasoning",
+        "question": "Rohit walks 8 km towards North. He then turns right and walks 6 km. He then turns right again and walks 8 km. He then turns left and walks 4 km. How far and in which direction is he from his starting point?",
+        "options": {
+          "A": "10 km, North",
+          "B": "12 km, East",
+          "C": "14 km, South-East",
+          "D": "10 km, East"
+        },
+        "correct": "D",
+        "explanation": "Taking the starting point as origin (0,0) with North as the positive Y-axis: Walking 8 km North reaches (0,8). Turning right (now facing East) and walking 6 km reaches (6,8). Turning right again (now facing South) and walking 8 km reaches (6,0). Turning left (now facing East) and walking 4 km reaches (10,0). The final position (10,0) is 10 km due East of the starting point (0,0)."
+      },
+      {
+        "q": 4,
+        "topic": "Series",
+        "question": "Study the number series and find the missing term: 2, 5, 12, 27, 58, ?",
+        "options": {
+          "A": "115",
+          "B": "121",
+          "C": "118",
+          "D": "125"
+        },
+        "correct": "B",
+        "explanation": "Each term follows the rule: next term = 2 x (current term) + n, where n is the position of the current term in the series (starting from 1). 2x2+1=5, 2x5+2=12, 2x12+3=27, 2x27+4=58, 2x58+5=121. Hence, the missing term is 121."
+      },
+      {
+        "q": 5,
+        "topic": "Series",
+        "question": "Find the missing term in the series: 3, 8, 4, 16, 5, 32, 6, ?",
+        "options": {
+          "A": "64",
+          "B": "60",
+          "C": "56",
+          "D": "66"
+        },
+        "correct": "A",
+        "explanation": "This series is formed by combining two separate series placed alternately. The terms at odd positions (1st, 3rd, 5th, 7th) are 3, 4, 5, 6 - increasing by 1 each time. The terms at even positions (2nd, 4th, 6th) are 8, 16, 32 - each obtained by doubling the previous even-position term. The missing term is at the 8th position (an even position), so it continues the doubling pattern: 32 x 2 = 64."
+      },
+      {
+        "q": 6,
+        "topic": "Logical Reasoning",
+        "question": "Statements: All pens are pencils. Some pencils are erasers. No eraser is a sharpener. Conclusions: I. Some pens are erasers. II. No pen is a sharpener. III. Some pencils are not sharpeners. Which of the conclusions logically follow(s)?",
+        "options": {
+          "A": "Only I follows",
+          "B": "Only II follows",
+          "C": "Only III follows",
+          "D": "None follows"
+        },
+        "correct": "C",
+        "explanation": "Conclusion I does not follow because the given statements do not establish any overlap between pens and erasers specifically; 'some pencils are erasers' need not include the pens among those pencils. Conclusion II does not follow because only erasers (a portion of pencils) are stated to be disjoint from sharpeners; nothing prevents some pens (which are pencils) from being sharpeners. Conclusion III follows validly: since some pencils are erasers, and no eraser is a sharpener, those particular pencils cannot be sharpeners, so 'some pencils are not sharpeners' is a valid conclusion (a particular affirmative combined with a universal negative gives a valid particular negative)."
+      },
+      {
+        "q": 7,
+        "topic": "Spatial Reasoning",
+        "question": "Six friends R, S, T, P, Q and U sit around a circular table facing the centre. R, S and T sit consecutively in the clockwise direction, in that order. P sits second in the anticlockwise direction from R. Q sits immediately next to P in the clockwise direction. U is not adjacent to R. Who sits immediately next to P in the anticlockwise direction?",
+        "options": {
+          "A": "T",
+          "B": "S",
+          "C": "R",
+          "D": "U"
+        },
+        "correct": "D",
+        "explanation": "Fix R, S, T consecutively clockwise: say R at position 1, S at position 2, T at position 3. P is second in the anticlockwise direction from R(1): one step anticlockwise is position 6, two steps anticlockwise is position 5, so P is at position 5. Q is immediately next to P in the clockwise direction, so Q is at position 6. The only position left, position 4, is taken by U. Check: U (position 4) is not adjacent to R (position 1) since R's neighbours are positions 2 and 6 - this condition is satisfied. P is at position 5; its clockwise neighbour is Q (position 6) and its anticlockwise neighbour is position 4, which is U. Hence, U sits immediately next to P in the anticlockwise direction."
+      },
+      {
+        "q": 8,
+        "topic": "Logical Reasoning",
+        "question": "If '+' means '÷', '-' means '×', '×' means '-', and '÷' means '+', find the value of: 12 × 4 ÷ 2 + 6 - 3 = ?",
+        "options": {
+          "A": "8",
+          "B": "9",
+          "C": "7",
+          "D": "10"
+        },
+        "correct": "B",
+        "explanation": "First replace each symbol with its actual meaning: '×' becomes '-', '÷' becomes '+', '+' becomes '÷', '-' becomes '×'. The expression 12 × 4 ÷ 2 + 6 - 3 becomes 12 - 4 + 2 ÷ 6 × 3. Applying BODMAS: 2 ÷ 6 × 3 = (2/6) × 3 = 1. Then 12 - 4 + 1 = 9."
+      },
+      {
+        "q": 9,
+        "topic": "Series",
+        "question": "Find the missing term in the series: B2D, D6F, F12H, H20J, ?",
+        "options": {
+          "A": "J28L",
+          "B": "H30J",
+          "C": "J30L",
+          "D": "J30K"
+        },
+        "correct": "C",
+        "explanation": "The first and third letters of each term skip one letter and advance by 2 positions each time: B-D, D-F, F-H, H-J, so the next pair is J-L. The middle numbers are 2, 6, 12, 20; the differences between consecutive numbers are 4, 6, 8, which themselves increase by 2, so the next difference is 10, giving 20+10=30. Combining both patterns, the missing term is J30L."
+      },
+      {
+        "q": 10,
+        "topic": "Logical Reasoning",
+        "question": "In a class of 40 students, Rohan's rank is 14th from the top in Mathematics. There are 6 students between Rohan and Simran in the merit list, and Simran's rank is behind Rohan's. What is Simran's rank from the bottom?",
+        "options": {
+          "A": "20th",
+          "B": "19th",
+          "C": "21st",
+          "D": "18th"
+        },
+        "correct": "A",
+        "explanation": "Rohan's rank from the top = 14. Since there are 6 students between Rohan and Simran, and Simran is behind Rohan, Simran's rank from the top = 14 + 6 + 1 = 21. With 40 students in total, Simran's rank from the bottom = 40 - 21 + 1 = 20."
+      },
+      {
+        "q": 11,
+        "topic": "Logical Reasoning",
+        "question": "The present ages of A and B are in the ratio 5:7. After 6 years, their ages will be in the ratio 3:4. What is B's present age?",
+        "options": {
+          "A": "35 years",
+          "B": "40 years",
+          "C": "45 years",
+          "D": "42 years"
+        },
+        "correct": "D",
+        "explanation": "Let the present ages of A and B be 5x and 7x respectively. After 6 years: (5x+6)/(7x+6) = 3/4. Cross-multiplying: 4(5x+6) = 3(7x+6), which gives 20x+24 = 21x+18, so x = 6. B's present age = 7x = 7x6 = 42 years. (Check: after 6 years, ages become 36 and 48, whose ratio 36:48 simplifies to 3:4, confirming the answer.)"
+      },
+      {
+        "q": 12,
+        "topic": "Classification",
+        "question": "Find the odd one out: 121, 144, 169, 200, 225",
+        "options": {
+          "A": "121",
+          "B": "200",
+          "C": "169",
+          "D": "144"
+        },
+        "correct": "B",
+        "explanation": "121, 144, 169 and 225 are perfect squares of 11, 12, 13 and 15 respectively. 200 is not a perfect square (14^2 = 196, not 200). Hence, 200 is the odd one out as all the others are perfect squares while 200 is not."
+      },
+      {
+        "q": 13,
+        "topic": "Classification",
+        "question": "Statement: If it rains, the match will be cancelled. It did not rain. Which of the following can be validly concluded from the given statement?",
+        "options": {
+          "A": "It cannot be conclusively said whether the match was cancelled or not",
+          "B": "The match was definitely not cancelled",
+          "C": "The match was definitely cancelled",
+          "D": "It rained heavily before the match"
+        },
+        "correct": "A",
+        "explanation": "The given statement only establishes a one-way condition: rain leads to cancellation. It does not state that cancellation happens only because of rain. Therefore, the fact that it did not rain gives no valid information about whether the match was cancelled, since it could have been cancelled for an entirely different reason, or not cancelled at all. Concluding that the match 'definitely was' or 'definitely was not' cancelled is a logical fallacy (denying the antecedent). The only logically valid conclusion is that the outcome cannot be determined from the given information."
+      },
+      {
+        "q": 14,
+        "topic": "Coding and Decoding",
+        "question": "In a certain code, COMPUTER is written as SFUVQNPD. How will PRINTER be written in the same code?",
+        "options": {
+          "A": "SFUOJSP",
+          "B": "TFUOJSQ",
+          "C": "SFUOJSQ",
+          "D": "SFUOJRQ"
+        },
+        "correct": "C",
+        "explanation": "The rule is: reverse the spelling of the word, then shift every letter one position forward in the alphabet. COMPUTER reversed is R-E-T-U-P-M-O-C; shifting each letter forward by one gives S-F-U-V-Q-N-P-D, i.e., SFUVQNPD, which matches. Applying the same rule to PRINTER: reversed, it is R-E-T-N-I-R-P; shifting each letter forward by one gives S-F-U-O-J-S-Q, i.e., SFUOJSQ."
+      },
+      {
+        "q": 15,
+        "topic": "Series",
+        "question": "Find the missing term in the series: 6, 11, 21, 38, 64, ?",
+        "options": {
+          "A": "98",
+          "B": "101",
+          "C": "104",
+          "D": "99"
+        },
+        "correct": "B",
+        "explanation": "The differences between consecutive terms are: 11-6=5, 21-11=10, 38-21=17, 64-38=26, giving the difference series 5, 10, 17, 26. The differences of these differences (second-order differences) are 10-5=5, 17-10=7, 26-17=9, which increase by 2 each time. So the next second-order difference is 9+2=11, making the next first-order difference 26+11=37. Therefore, the missing term = 64+37 = 101."
+      },
+      {
+        "q": 16,
+        "topic": "Logical Reasoning",
+        "question": "A is the son of B. C is the mother of D. B and D are siblings. E is the father of B. How is E related to C?",
+        "options": {
+          "A": "Father",
+          "B": "Brother",
+          "C": "Son",
+          "D": "Husband"
+        },
+        "correct": "D",
+        "explanation": "Since B and D are siblings, they share the same parents. E is the father of B, so E is also the father of D. C is the mother of D. Since E and C are both parents of D, E is the husband of C."
+      },
+      {
+        "q": 17,
+        "topic": "Spatial Reasoning",
+        "question": "Neha starts from her house and walks 15 m towards East. She then turns left and walks 8 m. She again turns left and walks 15 m. How far is she from her starting point, and in which direction?",
+        "options": {
+          "A": "8 m, North",
+          "B": "15 m, North",
+          "C": "17 m, North-East",
+          "D": "8 m, South"
+        },
+        "correct": "A",
+        "explanation": "Taking the start as (0,0), facing East initially: walking 15 m East reaches (15,0). Turning left (now facing North) and walking 8 m reaches (15,8). Turning left again (now facing West) and walking 15 m reaches (0,8). The final position (0,8) is 8 m due North of the starting point."
+      },
+      {
+        "q": 18,
+        "topic": "Logical Reasoning",
+        "question": "Seven people O, K, J, L, M, N and P are sitting in a straight line facing North, not necessarily in the same order. O sits at one of the extreme ends of the row. K sits immediately to the right of O. J sits immediately between K and L. Only two people sit between L and O. M sits immediately to the right of L. N sits immediately to the right of M. Who sits at the extreme right end of the row?",
+        "options": {
+          "A": "N",
+          "B": "M",
+          "C": "P",
+          "D": "O"
+        },
+        "correct": "C",
+        "explanation": "Since K must sit immediately to the right of O, O cannot be at the extreme right end (as there would be no seat for K), so O is at the extreme left end. Let O=1, so K=2. J sits immediately between K and L, meaning the order is K-J-L, so J=3 and L=4. Check: only two people (K and J) sit between L(4) and O(1) - satisfied. M sits immediately to the right of L(4), so M=5. N sits immediately to the right of M(5), so N=6. The only person and position left is P at position 7, the extreme right end. Hence, P sits at the extreme right end."
+      },
+      {
+        "q": 19,
+        "topic": "Logical Reasoning",
+        "question": "Select the number that follows the same logic as the given pair: 15 : 9 :: 24 : ?",
+        "options": {
+          "A": "16",
+          "B": "15",
+          "C": "20",
+          "D": "18"
+        },
+        "correct": "D",
+        "explanation": "The logic connecting the pair is a two-step rule: square the first number, then add the digits of the result. Check: 15^2 = 225, and 2+2+5 = 9, which matches the given pair. Applying the same logic to 24: 24^2 = 576, and 5+7+6 = 18."
+      },
+      {
+        "q": 20,
+        "topic": "Logical Reasoning",
+        "question": "Statements: All doctors are scientists. No scientist is a politician. Some politicians are writers. Conclusions: I. No doctor is a politician. II. Some writers are not scientists. III. Some scientists are writers. Which of the conclusions logically follow(s)?",
+        "options": {
+          "A": "Only I follows",
+          "B": "Both I and II follow",
+          "C": "Only III follows",
+          "D": "All follow"
+        },
+        "correct": "B",
+        "explanation": "Conclusion I follows validly: since all doctors are scientists, and no scientist is a politician, it follows that no doctor can be a politician. Conclusion II also follows: some politicians are writers, and since no scientist is a politician, those particular writers (who are politicians) cannot be scientists; therefore, some writers are not scientists. Conclusion III does not follow, as no statement establishes any positive overlap between scientists and writers. Hence, both conclusions I and II follow."
+      },
+      {
+        "q": 21,
+        "topic": "Classification",
+        "question": "Find the odd one out: AEI, BFJ, CGK, DGL, EIM",
+        "options": {
+          "A": "BFJ",
+          "B": "CGK",
+          "C": "DGL",
+          "D": "EIM"
+        },
+        "correct": "C",
+        "explanation": "In each valid group, the three letters are spaced 4 positions apart in the alphabet: A-E-I, B-F-J, C-G-K, E-I-M all follow this rule (each letter + 4 = next letter). In DGL, however, D+4 = H, not G, so the correct group should have been D-H-L. Hence, DGL breaks the pattern and is the odd one out."
+      },
+      {
+        "q": 22,
+        "topic": "Logical Reasoning",
+        "question": "If '+' means '×', '×' means '÷', '÷' means '-', and '-' means '+', find the value of: 20 - 4 + 6 ÷ 10 × 5 = ?",
+        "options": {
+          "A": "42",
+          "B": "40",
+          "C": "44",
+          "D": "38"
+        },
+        "correct": "A",
+        "explanation": "First replace each symbol with its actual meaning: '-' becomes '+', '+' becomes '×', '÷' becomes '-', '×' becomes '÷'. The expression 20 - 4 + 6 ÷ 10 × 5 becomes 20 + 4 × 6 - 10 ÷ 5. Applying BODMAS: 4 × 6 = 24, and 10 ÷ 5 = 2. Then 20 + 24 - 2 = 42."
+      },
+      {
+        "q": 23,
+        "topic": "Coding and Decoding",
+        "question": "In a certain code language, 'ROSE IS RED' is coded as '927 618 951' and 'RED LOTUS BLOOMS' is coded as '951 246 837'. What is the code for 'RED' in this language?",
+        "options": {
+          "A": "927",
+          "B": "951",
+          "C": "618",
+          "D": "246"
+        },
+        "correct": "B",
+        "explanation": "The word 'RED' is common to both coded sentences. In the first sentence, 'ROSE IS RED' corresponds to '927 618 951', so RED (the third word) corresponds to 951 (the third code). In the second sentence, 'RED LOTUS BLOOMS' corresponds to '951 246 837', so RED (the first word) corresponds to 951 (the first code). Both sentences consistently give the same code, 951, for RED."
+      },
+      {
+        "q": 24,
+        "topic": "Logical Reasoning",
+        "question": "Pointing to a man, a woman said, 'His mother is the only daughter-in-law of my mother.' How is the man related to the woman?",
+        "options": {
+          "A": "Son",
+          "B": "Brother",
+          "C": "Cousin",
+          "D": "Nephew"
+        },
+        "correct": "D",
+        "explanation": "The woman's mother's only daughter-in-law is the wife of the woman's mother's only son, i.e., the wife of the woman's brother, which makes her the woman's sister-in-law (bhabhi). This person is stated to be the man's mother. So the man's mother is the woman's brother's wife, which means the man is the son of the woman's brother, i.e., the woman's nephew."
+      },
+      {
+        "q": 25,
+        "topic": "Logical Reasoning",
+        "question": "A man starts from point X and walks 12 m towards North to reach point Y. From Y, he walks 5 m towards East to reach point Z. From Z, he walks 10 m towards South to reach point W. From W, he walks 3 m towards East to reach point V. From V, he walks 4 m towards North to reach point U. What is the shortest distance between X and U?",
+        "options": {
+          "A": "10 m",
+          "B": "12 m",
+          "C": "8 m",
+          "D": "14 m"
+        },
+        "correct": "A",
+        "explanation": "Taking X as (0,0), with North as positive Y-axis and East as positive X-axis: Y = (0,12) after walking 12 m North. Z = (5,12) after walking 5 m East. W = (5,2) after walking 10 m South. V = (8,2) after walking 3 m East. U = (8,6) after walking 4 m North. The shortest distance between X(0,0) and U(8,6) is found using the Pythagorean theorem: sqrt(8^2 + 6^2) = sqrt(64+36) = sqrt(100) = 10 m."
+      },
+      {
+        "q": 26,
+        "topic": "Classification",
+        "question": "Five friends P, Q, R, S and T have different amounts of money. T has more money than R. R has more money than P. R also has more money than Q. P has more money than S. S has more money than Q. Who has the third-highest amount of money?",
+        "options": {
+          "A": "R",
+          "B": "S",
+          "C": "P",
+          "D": "T"
+        },
+        "correct": "C",
+        "explanation": "From the given conditions: T > R, R > P, R > Q, P > S, and S > Q. Combining T > R > P > S > Q gives a complete and consistent ranking of all five people from highest to lowest: T (1st), R (2nd), P (3rd), S (4th), Q (5th). The condition R > Q is automatically satisfied by this chain and serves only to confirm it. Hence, P has the third-highest amount of money."
+      },
+      {
+        "q": 27,
+        "topic": "Logical Reasoning",
+        "question": "Statement: The government has announced a new scholarship scheme for meritorious students from economically weaker sections to pursue higher education. Assumptions: I. Some economically weaker students may not be able to pursue higher education without financial support. II. All meritorious students belong to economically weaker sections. Which assumption(s) is/are implicit in the statement?",
+        "options": {
+          "A": "Only II is implicit",
+          "B": "Both I and II are implicit",
+          "C": "Neither I nor II is implicit",
+          "D": "Only I is implicit"
+        },
+        "correct": "D",
+        "explanation": "Assumption I is implicit because a scholarship scheme aimed at helping weaker-section students pursue higher education only makes sense if it is taken for granted that some of these students would otherwise be unable to afford or continue such education without financial support. Assumption II is not implicit because the statement targets meritorious students specifically from economically weaker sections; it does not imply that every meritorious student belongs to that category. Hence, only assumption I is implicit."
+      },
+      {
+        "q": 28,
+        "topic": "Coding and Decoding",
+        "question": "What is the code for 'BOOK' in a certain code language? Statement I: In that code language, 'READ BOOK NOW' is written as 'ta ki lo'. Statement II: In that code language, 'BOOK IS GOOD' is written as 'ki po ro'. Which of the statements is/are sufficient to answer the question?",
+        "options": {
+          "A": "Statement I alone is sufficient",
+          "B": "Both statements I and II together are necessary",
+          "C": "Statement II alone is sufficient",
+          "D": "Either statement alone is sufficient"
+        },
+        "correct": "B",
+        "explanation": "Statement I alone only tells us that the three codes 'ta, ki, lo' correspond to the three words 'READ, BOOK, NOW' in some order, without indicating which code belongs to which word, so BOOK's code cannot be determined. Statement II alone similarly only tells us that 'ki, po, ro' correspond to 'BOOK, IS, GOOD' in some order, again without a fixed match. However, combining both statements, the word BOOK is common to both sentences, and the only code common to both coded sets {ta, ki, lo} and {ki, po, ro} is 'ki'. Hence, BOOK = ki, but this can be found only by using both statements together."
+      },
+      {
+        "q": 29,
+        "topic": "Series",
+        "question": "Find the missing number in the series: 6, 9, 15, 27, 51, ?",
+        "options": {
+          "A": "96",
+          "B": "97",
+          "C": "99",
+          "D": "101"
+        },
+        "correct": "C",
+        "explanation": "The differences between consecutive terms are: 9-6=3, 15-9=6, 27-15=12, 51-27=24, which form the pattern 3, 6, 12, 24 - each difference double the previous one. So the next difference = 24x2 = 48. Therefore, the missing term = 51+48 = 99. (This can also be verified using the rule: next term = 2 x current term - 3, which holds consistently throughout the series.)"
+      },
+      {
+        "q": 30,
+        "topic": "Coding and Decoding",
+        "question": "In a certain code, the code number of a word is obtained by this rule: (sum of the alphabetical positions of all its letters) minus (the number of letters in the word). Using this rule, MADRAS is coded as 50. What is the code for DELHI using the same rule?",
+        "options": {
+          "A": "33",
+          "B": "35",
+          "C": "31",
+          "D": "36"
+        },
+        "correct": "A",
+        "explanation": "For MADRAS: sum of alphabetical positions = M(13)+A(1)+D(4)+R(18)+A(1)+S(19) = 56. Number of letters = 6. Code = 56-6 = 50, which matches the given code. Applying the same rule to DELHI: sum of positions = D(4)+E(5)+L(12)+H(8)+I(9) = 38. Number of letters = 5. Code = 38-5 = 33."
+      }
+    ],
+    "English Language and Comprehension": [
+      {
+        "q": 1,
+        "topic": "Vocabulary",
+        "question": "Choose the synonym of 'HONEST'.",
+        "options": {
+          "A": "Sincere",
+          "B": "Deceptive",
+          "C": "Dishonest",
+          "D": "Corrupt"
+        },
+        "correct": "A",
+        "explanation": "'Sincere' is closest in meaning to 'honest', denoting truthfulness and integrity."
+      },
+      {
+        "q": 2,
+        "topic": "Vocabulary",
+        "question": "Choose the antonym of 'BRAVE'.",
+        "options": {
+          "A": "Courageous",
+          "B": "Bold",
+          "C": "Cowardly",
+          "D": "Fearless"
+        },
+        "correct": "C",
+        "explanation": "'Cowardly' is the opposite of 'brave'; the other options are synonyms of brave."
+      },
+      {
+        "q": 3,
+        "topic": "Grammar",
+        "question": "Each of the students ____ present in the class.",
+        "options": {
+          "A": "was",
+          "B": "were",
+          "C": "are",
+          "D": "have"
+        },
+        "correct": "A",
+        "explanation": "'Each' is a singular indefinite pronoun and always takes a singular verb, regardless of the plural noun that follows it."
+      },
+      {
+        "q": 4,
+        "topic": "Grammar",
+        "question": "She is ____ university student.",
+        "options": {
+          "A": "a",
+          "B": "an",
+          "C": "the",
+          "D": "no article needed"
+        },
+        "correct": "A",
+        "explanation": "'University' begins with a consonant sound (/j/ as in 'you'), so the article 'a' is used, not 'an', which is reserved for vowel sounds."
+      },
+      {
+        "q": 5,
+        "topic": "Vocabulary",
+        "question": "To spill the beans means to ____.",
+        "options": {
+          "A": "cook food",
+          "B": "reveal a secret",
+          "C": "waste money",
+          "D": "clean the floor"
+        },
+        "correct": "B",
+        "explanation": "'Spill the beans' is a common idiom meaning to reveal secret or confidential information."
+      },
+      {
+        "q": 6,
+        "topic": "Spelling",
+        "question": "Choose the correct spelling.",
+        "options": {
+          "A": "Recieve",
+          "B": "Receive",
+          "C": "Receeve",
+          "D": "Receve"
+        },
+        "correct": "B",
+        "explanation": "'Receive' follows the rule 'i before e except after c' — here the letter before -eive is 'c', so 'ei' is used, giving 'Receive'."
+      },
+      {
+        "q": 7,
+        "topic": "Grammar",
+        "question": "A person who studies birds is called a/an ____.",
+        "options": {
+          "A": "Botanist",
+          "B": "Zoologist",
+          "C": "Ornithologist",
+          "D": "Entomologist"
+        },
+        "correct": "C",
+        "explanation": "An 'Ornithologist' specifically studies birds. A Zoologist studies animals in general, a Botanist studies plants, and an Entomologist studies insects."
+      },
+      {
+        "q": 8,
+        "topic": "Voice and Narration",
+        "question": "Change the voice: 'The teacher teaches the students.'",
+        "options": {
+          "A": "The students are taught by the teacher.",
+          "B": "The students were taught by the teacher.",
+          "C": "The students have been taught by the teacher.",
+          "D": "The students taught the teacher."
+        },
+        "correct": "A",
+        "explanation": "The original sentence is in the simple present tense, so its passive form uses 'am/is/are + past participle': 'The students are taught by the teacher.'"
+      },
+      {
+        "q": 9,
+        "topic": "Grammar",
+        "question": "He is good ____ mathematics.",
+        "options": {
+          "A": "in",
+          "B": "at",
+          "C": "on",
+          "D": "with"
+        },
+        "correct": "B",
+        "explanation": "The fixed preposition used with 'good' to indicate skill in a subject is 'at' — 'good at mathematics'."
+      },
+      {
+        "q": 10,
+        "topic": "Grammar",
+        "question": "Neither the manager nor the employees ____ aware of the new policy.",
+        "options": {
+          "A": "was",
+          "B": "were",
+          "C": "is",
+          "D": "has been"
+        },
+        "correct": "B",
+        "explanation": "In 'neither...nor' constructions, the verb agrees with the subject nearer to it. Since 'employees' (plural) is the nearer subject, the plural verb 'were' is correct."
+      },
+      {
+        "q": 11,
+        "topic": "Grammar",
+        "question": "She is one of the most dedicated employees who ____ ever worked in this department.",
+        "options": {
+          "A": "has",
+          "B": "have",
+          "C": "had",
+          "D": "is"
+        },
+        "correct": "B",
+        "explanation": "The relative pronoun 'who' refers back to 'employees' (plural), not to 'she', so the plural verb 'have' is required."
+      },
+      {
+        "q": 12,
+        "topic": "Grammar",
+        "question": "The jury ____ divided in their opinion on the verdict.",
+        "options": {
+          "A": "was",
+          "B": "were",
+          "C": "is",
+          "D": "has"
+        },
+        "correct": "B",
+        "explanation": "'Jury' is a collective noun. When its members are acting or thinking as separate individuals — as shown by 'divided in their opinion' — it takes a plural verb, 'were'."
+      },
+      {
+        "q": 13,
+        "topic": "Grammar",
+        "question": "If she ____ harder, she would pass the examination.",
+        "options": {
+          "A": "studies",
+          "B": "studied",
+          "C": "had studied",
+          "D": "will study"
+        },
+        "correct": "B",
+        "explanation": "This is a Second Conditional (hypothetical present/future), which uses the simple past in the if-clause ('studied') and 'would + base verb' in the main clause."
+      },
+      {
+        "q": 14,
+        "topic": "Grammar",
+        "question": "Choose the option that correctly improves the sentence: 'The manager asked the team to complete the report, submitting it on time, and to double check the figures.'",
+        "options": {
+          "A": "to complete the report, to submit it on time, and to double check the figures",
+          "B": "completing the report, submitting it on time, and double checking the figures",
+          "C": "complete the report, submit it on time, and double check the figures",
+          "D": "No correction required"
+        },
+        "correct": "A",
+        "explanation": "The three coordinated actions must be grammatically parallel. Since the sentence begins with the infinitive 'to complete', the other two actions must also be infinitives: 'to submit' and 'to double check'."
+      },
+      {
+        "q": 15,
+        "topic": "Grammar",
+        "question": "Identify the correctly constructed sentence.",
+        "options": {
+          "A": "By the time he arrived, the meeting had already started.",
+          "B": "By the time he arrived, the meeting has already started.",
+          "C": "By the time he arrived, the meeting already started.",
+          "D": "By the time he arrives, the meeting had already started."
+        },
+        "correct": "A",
+        "explanation": "When one past action (the meeting starting) is completed before another past action (his arrival), the earlier action takes the past perfect tense: 'had already started'."
+      },
+      {
+        "q": 16,
+        "topic": "Grammar",
+        "question": "The board gave a candid assessment of the company's financial position.",
+        "options": {
+          "A": "Evasive",
+          "B": "Frank",
+          "C": "Elaborate",
+          "D": "Diplomatic"
+        },
+        "correct": "B",
+        "explanation": "In this context, 'candid' means open and straightforward, which is closest in meaning to 'Frank'. 'Evasive' and 'Diplomatic' suggest the opposite — avoiding directness."
+      },
+      {
+        "q": 17,
+        "topic": "Grammar",
+        "question": "The negotiations reached an impasse after both sides refused to compromise. 'Impasse' most nearly means:",
+        "options": {
+          "A": "A quick resolution",
+          "B": "A deadlock",
+          "C": "A friendly agreement",
+          "D": "A minor disagreement"
+        },
+        "correct": "B",
+        "explanation": "An 'impasse' is a situation in which no progress is possible — a deadlock — which fits the context of both sides refusing to compromise."
+      },
+      {
+        "q": 18,
+        "topic": "Grammar",
+        "question": "Her lucid explanation helped the students understand the complex theorem easily. 'Lucid' most nearly means:",
+        "options": {
+          "A": "Confusing",
+          "B": "Clear",
+          "C": "Lengthy",
+          "D": "Technical"
+        },
+        "correct": "B",
+        "explanation": "'Lucid' means easy to understand or clearly expressed, consistent with the explanation helping students grasp a complex theorem."
+      },
+      {
+        "q": 19,
+        "topic": "Grammar",
+        "question": "The company's profits showed a marked improvement over the previous quarter. Here, 'marked' means:",
+        "options": {
+          "A": "Labelled",
+          "B": "Noticeable",
+          "C": "Written",
+          "D": "Small"
+        },
+        "correct": "B",
+        "explanation": "In this context, 'marked' means clearly noticeable or significant, not 'labelled' or 'written', which are unrelated senses of the word."
+      },
+      {
+        "q": 20,
+        "topic": "Grammar",
+        "question": "Despite his usually reticent nature, he spoke passionately at the meeting. 'Reticent' most nearly means:",
+        "options": {
+          "A": "Talkative",
+          "B": "Reserved",
+          "C": "Aggressive",
+          "D": "Confident"
+        },
+        "correct": "B",
+        "explanation": "'Reticent' means reserved or reluctant to speak openly, which explains why speaking 'passionately' was unusual for him ('despite')."
+      },
+      {
+        "q": 21,
+        "topic": "Grammar",
+        "question": "Improve the sentence: 'Neither of the two options are acceptable to the committee.'",
+        "options": {
+          "A": "Neither of the two options is acceptable to the committee.",
+          "B": "Neither of the two options were acceptable to the committee.",
+          "C": "Neither of the two option is acceptable to the committee.",
+          "D": "No improvement required"
+        },
+        "correct": "A",
+        "explanation": "'Neither' (meaning 'not either') is singular and always takes a singular verb, so 'is acceptable' is correct, not 'are acceptable'."
+      },
+      {
+        "q": 22,
+        "topic": "Grammar",
+        "question": "Improve the sentence: 'The report, along with the supporting documents, were submitted yesterday.'",
+        "options": {
+          "A": "were submitted yesterday (no change)",
+          "B": "was submitted yesterday",
+          "C": "have been submitted yesterday",
+          "D": "are submitted yesterday"
+        },
+        "correct": "B",
+        "explanation": "The subject of the sentence is the singular 'report'; the phrase 'along with the supporting documents' is a parenthetical addition and does not change the verb's number, so the singular 'was submitted' is correct."
+      },
+      {
+        "q": 23,
+        "topic": "Grammar",
+        "question": "Improve the sentence: 'She is more taller than her sister.'",
+        "options": {
+          "A": "more taller",
+          "B": "taller",
+          "C": "most taller",
+          "D": "much more tall"
+        },
+        "correct": "B",
+        "explanation": "'Taller' is already a comparative form; adding 'more' before it creates a double comparative, which is incorrect. The correct form is simply 'taller'."
+      },
+      {
+        "q": 24,
+        "topic": "Grammar",
+        "question": "Improve the sentence: 'Being a rainy day, he took his umbrella.'",
+        "options": {
+          "A": "Being a rainy day (no change)",
+          "B": "It being a rainy day",
+          "C": "Because being a rainy day",
+          "D": "As it being rainy day"
+        },
+        "correct": "B",
+        "explanation": "The participial phrase 'Being a rainy day' has no logical subject of its own (a dangling modifier), since 'he' did not 'be a rainy day'. Inserting 'It' gives the phrase its own subject: 'It being a rainy day, he took his umbrella.'"
+      },
+      {
+        "q": 25,
+        "topic": "Reading Comprehension",
+        "question": "What is the central idea of the passage above?",
+        "options": {
+          "A": "Gig work should be banned outright",
+          "B": "The gig economy involves an unresolved tension between flexibility and worker security",
+          "C": "Freelancers always prefer autonomy over stability",
+          "D": "Governments have already resolved the gig economy debate"
+        },
+        "correct": "B",
+        "explanation": "The passage as a whole discusses the competing pulls of flexibility and security in gig work, and notes the debate remains unsettled — best captured by option (B)."
+      },
+      {
+        "q": 26,
+        "topic": "Reading Comprehension",
+        "question": "According to the passage, what do studies show about gig workers' preferences?",
+        "options": {
+          "A": "Nearly all gig workers reject stable employment entirely",
+          "B": "Most gig workers value autonomy but would prefer stable employment if available",
+          "C": "Gig workers are indifferent to job security",
+          "D": "Gig workers uniformly oppose platform-based work"
+        },
+        "correct": "B",
+        "explanation": "The passage states that while a significant fraction of gig workers value autonomy, 'a majority would nonetheless prefer stable employment if it were available' — matching option (B)."
+      },
+      {
+        "q": 27,
+        "topic": "Reading Comprehension",
+        "question": "Read the cloze passage above and choose the most appropriate word for blank (1).",
+        "options": {
+          "A": "accelerated",
+          "B": "hampered",
+          "C": "celebrated",
+          "D": "ignored"
+        },
+        "correct": "B",
+        "explanation": "The sentence describes growth being held back by a shortage of skilled labour; 'hampered', meaning hindered or obstructed, fits this context."
+      },
+      {
+        "q": 28,
+        "topic": "Reading Comprehension",
+        "question": "Choose the most appropriate word for blank (2) in the cloze passage above.",
+        "options": {
+          "A": "trivial",
+          "B": "delicate",
+          "C": "irrelevant",
+          "D": "simple"
+        },
+        "correct": "B",
+        "explanation": "The sentence describes a difficult balancing act — expanding training quickly without lowering quality — which is best described as a 'delicate' task requiring careful handling."
+      },
+      {
+        "q": 29,
+        "topic": "Voice and Narration",
+        "question": "Change the voice: 'You must complete the assignment by tomorrow.'",
+        "options": {
+          "A": "The assignment must be completed by tomorrow.",
+          "B": "The assignment must completed by tomorrow.",
+          "C": "The assignment must be complete by tomorrow.",
+          "D": "The assignment must have completed by tomorrow."
+        },
+        "correct": "A",
+        "explanation": "For modal verbs, the passive form is 'modal + be + past participle': 'must be completed'."
+      },
+      {
+        "q": 30,
+        "topic": "Voice and Narration",
+        "question": "Change the voice: 'Did she write the report?'",
+        "options": {
+          "A": "Was the report written by her?",
+          "B": "Is the report written by her?",
+          "C": "Has the report been written by her?",
+          "D": "Was the report writing by her?"
+        },
+        "correct": "A",
+        "explanation": "For an interrogative sentence in the simple past, the passive form is 'Was/Were + subject + past participle': 'Was the report written by her?'"
+      },
+      {
+        "q": 31,
+        "topic": "Voice and Narration",
+        "question": "Change into indirect speech: He asked, 'Where do you live?'",
+        "options": {
+          "A": "He asked where I lived.",
+          "B": "He asked where did I live.",
+          "C": "He asked where I live.",
+          "D": "He asked where I had lived."
+        },
+        "correct": "A",
+        "explanation": "In indirect questions, the interrogative word order changes to statement order ('where I lived', not 'where did I live'), and the present tense 'do live' shifts back to the past tense 'lived'."
+      },
+      {
+        "q": 32,
+        "topic": "Grammar",
+        "question": "To redress the balance means to ____.",
+        "options": {
+          "A": "upset an arrangement",
+          "B": "restore fairness or equality",
+          "C": "ignore a problem",
+          "D": "start over completely"
+        },
+        "correct": "B",
+        "explanation": "'Redress the balance' means to correct an unfair or unequal situation and restore fairness."
+      },
+      {
+        "q": 33,
+        "topic": "Grammar",
+        "question": "A blessing in disguise refers to ____.",
+        "options": {
+          "A": "something that appears bad but turns out beneficial",
+          "B": "a hidden threat",
+          "C": "an obvious advantage",
+          "D": "a religious ceremony"
+        },
+        "correct": "A",
+        "explanation": "'A blessing in disguise' describes something that initially seems unfortunate but eventually results in a good outcome."
+      },
+      {
+        "q": 34,
+        "topic": "Grammar",
+        "question": "A person who is unable to pay their debts is called ____.",
+        "options": {
+          "A": "Bankrupt",
+          "B": "Miser",
+          "C": "Philanthropist",
+          "D": "Creditor"
+        },
+        "correct": "A",
+        "explanation": "'Bankrupt' refers to a person or entity legally declared unable to pay outstanding debts."
+      },
+      {
+        "q": 35,
+        "topic": "Grammar",
+        "question": "A statement that cannot be understood is ____.",
+        "options": {
+          "A": "Legible",
+          "B": "Unintelligible",
+          "C": "Audible",
+          "D": "Credible"
+        },
+        "correct": "B",
+        "explanation": "'Unintelligible' means impossible to understand, which precisely matches the definition given."
+      },
+      {
+        "q": 36,
+        "topic": "Spelling",
+        "question": "Choose the correct spelling.",
+        "options": {
+          "A": "Occassion",
+          "B": "Ocasion",
+          "C": "Occasion",
+          "D": "Occasoin"
+        },
+        "correct": "C",
+        "explanation": "'Occasion' has a double 'c' and a single 's' — the correct spelling is 'Occasion'."
+      },
+      {
+        "q": 37,
+        "topic": "Grammar",
+        "question": "If she had taken the job offer last year, she ____ far more experienced now.",
+        "options": {
+          "A": "would have been",
+          "B": "would be",
+          "C": "will be",
+          "D": "had been"
+        },
+        "correct": "B",
+        "explanation": "This is a mixed conditional: a past hypothetical condition ('had taken') combined with a present-time result ('now'), which requires 'would + base verb' — 'would be' — rather than 'would have been', which would describe a past result."
+      },
+      {
+        "q": 38,
+        "topic": "Grammar",
+        "question": "Rarely ____ such unanimous support for a controversial policy.",
+        "options": {
+          "A": "we witness",
+          "B": "do we witness",
+          "C": "we do witness",
+          "D": "did we witnessed"
+        },
+        "correct": "B",
+        "explanation": "When a negative adverb like 'rarely' begins a sentence, subject-auxiliary inversion is required: auxiliary + subject + base verb — 'do we witness'. The other options either fail to invert or misuse the auxiliary."
+      },
+      {
+        "q": 39,
+        "topic": "Grammar",
+        "question": "The minister's equivocal statement left reporters uncertain about the government's actual position. 'Equivocal' most nearly means:",
+        "options": {
+          "A": "Ambiguous",
+          "B": "Enthusiastic",
+          "C": "Definitive",
+          "D": "Aggressive"
+        },
+        "correct": "A",
+        "explanation": "'Equivocal' means open to more than one interpretation, i.e., ambiguous — consistent with reporters being left 'uncertain' about the actual position."
+      },
+      {
+        "q": 40,
+        "topic": "Grammar",
+        "question": "Despite mounting evidence against him, the official remained obdurate and refused to change his stance. 'Obdurate' most nearly means:",
+        "options": {
+          "A": "Flexible",
+          "B": "Stubborn",
+          "C": "Apologetic",
+          "D": "Indifferent"
+        },
+        "correct": "B",
+        "explanation": "'Obdurate' means stubbornly refusing to change one's opinion, which matches the official refusing to change his stance despite evidence."
+      },
+      {
+        "q": 41,
+        "topic": "Reading Comprehension",
+        "question": "Which of the following best describes the author's tone in the gig-economy passage (before Q25)?",
+        "options": {
+          "A": "Strongly dismissive of the gig economy",
+          "B": "Enthusiastically promotional of gig work",
+          "C": "Balanced and analytical, presenting competing perspectives",
+          "D": "Sarcastic and mocking toward policymakers"
+        },
+        "correct": "C",
+        "explanation": "The passage presents both proponents' and critics' views without endorsing either side outright, and closes by noting the debate is 'far from settled' — indicating a balanced, analytical tone."
+      },
+      {
+        "q": 42,
+        "topic": "Reading Comprehension",
+        "question": "Which of the following can be reasonably inferred from the gig-economy passage (before Q25)?",
+        "options": {
+          "A": "Portable benefits schemes have already been implemented successfully worldwide",
+          "B": "The disagreement between flexibility and security is unlikely to be resolved through a single simple policy fix",
+          "C": "All policymakers agree that regulation would destroy the gig economy",
+          "D": "Gig workers do not value flexibility at all"
+        },
+        "correct": "B",
+        "explanation": "The passage describes policymakers as divided, with proposals like portable benefits on one side and warnings against regulation on the other, and calls the debate ongoing — implying no simple resolution is imminent, as stated in option (B). Options (A), (C) and (D) overstate or contradict the passage."
+      },
+      {
+        "q": 43,
+        "topic": "Reading Comprehension",
+        "question": "Choose the most appropriate word for blank (3) in the cloze passage (before Q27).",
+        "options": {
+          "A": "overfunded",
+          "B": "prioritised uniformly",
+          "C": "underfunded",
+          "D": "irrelevant to policy"
+        },
+        "correct": "C",
+        "explanation": "The sentence contrasts nations that 'persisted' with training investment against those that 'did not', implying that such investment is typically neglected due to its long gestation period — best captured by 'underfunded'."
+      },
+      {
+        "q": 44,
+        "topic": "Voice and Narration",
+        "question": "Choose the correct passive form: 'They should have completed the project by now.'",
+        "options": {
+          "A": "The project should have been completed by now.",
+          "B": "The project should be completed by now.",
+          "C": "The project should have completed by now.",
+          "D": "The project should having been completed by now."
+        },
+        "correct": "A",
+        "explanation": "For the modal perfect 'should have + past participle', the passive form is 'should have been + past participle': 'The project should have been completed by now.'"
+      },
+      {
+        "q": 45,
+        "topic": "Grammar",
+        "question": "Identify the sentence that contains a grammatical error.",
+        "options": {
+          "A": "Having reviewed the proposal carefully, the committee approved the budget.",
+          "B": "Having completed the assignment, the final report was submitted by the researcher.",
+          "C": "Having finished dinner, the family watched a movie together.",
+          "D": "Having arrived early, she found a good seat."
+        },
+        "correct": "B",
+        "explanation": "In option (B), the participial phrase 'Having completed the assignment' has no logical subject: grammatically it attaches to 'the final report', but it was the researcher, not the report, who completed the assignment. This is a dangling modifier. The other sentences correctly attach the participial phrase to the person performing the action."
+      }
+    ],
+    "General Awareness": [
+      {
+        "q": 1,
+        "topic": "General Polity",
+        "question": "Consider the following statements about Fundamental Rights and Directive Principles of State Policy (DPSP): 1. Fundamental Rights are justiciable, while DPSP are non-justiciable. 2. The Right to Property was a Fundamental Right until the 44th Constitutional Amendment. 3. The DPSP are borrowed mainly from the Constitution of Ireland. Which of the statements given above is/are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1, 2 and 3",
+          "D": "1 and 3 only"
+        },
+        "correct": "C",
+        "explanation": "All three statements are correct. Fundamental Rights (Part III) are enforceable in courts, while DPSP (Part IV) are not justiciable. The 44th Amendment Act, 1978 removed the Right to Property from the list of Fundamental Rights and made it a legal right under Article 300A. The concept of DPSP was borrowed from the Irish Constitution."
+      },
+      {
+        "q": 2,
+        "topic": "General Polity",
+        "question": "Which of the following statements correctly distinguishes Article 32 from Article 226 of the Constitution of India?",
+        "options": {
+          "A": "Article 32 empowers only the Supreme Court to issue writs for enforcement of Fundamental Rights, while Article 226 empowers High Courts to issue writs for Fundamental Rights as well as for any other purpose",
+          "B": "Article 32 empowers High Courts to issue writs, while Article 226 empowers the Supreme Court to issue writs",
+          "C": "Both Article 32 and Article 226 can be invoked only for the enforcement of Fundamental Rights",
+          "D": "Article 226 is itself a Fundamental Right, while Article 32 is not"
+        },
+        "correct": "A",
+        "explanation": "Article 32 gives the Supreme Court power to issue writs specifically for enforcement of Fundamental Rights, and is itself regarded as a Fundamental Right (described by Dr. B.R. Ambedkar as the 'heart and soul' of the Constitution). Article 226 gives High Courts a wider writ jurisdiction, covering both Fundamental Rights and 'any other purpose'."
+      },
+      {
+        "q": 3,
+        "topic": "General Polity",
+        "question": "Consider the following statements regarding the National Emergency under Article 352 of the Constitution: 1. It can be proclaimed on the grounds of war, external aggression or armed rebellion. 2. The term 'armed rebellion' replaced the earlier term 'internal disturbance' after the 44th Amendment. 3. A proclamation of National Emergency must be approved by both Houses of Parliament within one month of its issue. Which of the statements given above is/are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "1 and 3 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "correct": "D",
+        "explanation": "All three statements are correct. Article 352 originally allowed proclamation on grounds of war, external aggression or 'internal disturbance'; the 44th Amendment Act, 1978 replaced 'internal disturbance' with 'armed rebellion' to prevent misuse. The same amendment also reduced the period for parliamentary approval of the proclamation from two months to one month."
+      },
+      {
+        "q": 4,
+        "topic": "General Polity",
+        "question": "Which Article of the Constitution of India provides for the constitution of a Finance Commission?",
+        "options": {
+          "A": "Article 270",
+          "B": "Article 280",
+          "C": "Article 275",
+          "D": "Article 282"
+        },
+        "correct": "B",
+        "explanation": "Article 280 provides for the constitution of a Finance Commission by the President every five years (or earlier), mainly to recommend the distribution of net proceeds of taxes between the Centre and the States."
+      },
+      {
+        "q": 5,
+        "topic": "Current Affairs",
+        "question": "Which of the following statements about the Consumer Price Index (CPI) and Wholesale Price Index (WPI) in India is correct?",
+        "options": {
+          "A": "WPI includes services in its basket, while CPI does not",
+          "B": "CPI is released by the Ministry of Commerce and Industry, while WPI is released by the National Statistical Office",
+          "C": "WPI does not include taxes and does not directly capture retail prices, while CPI reflects retail prices actually paid by consumers",
+          "D": "Both CPI and WPI use the same base year and the same basket of goods and services"
+        },
+        "correct": "C",
+        "explanation": "WPI measures prices at the wholesale/producer level, excludes services and taxes, and is released by the Ministry of Commerce and Industry. CPI measures retail prices actually paid by consumers, includes services, and is released by the National Statistical Office (Ministry of Statistics and Programme Implementation). The two indices use different base years and baskets."
+      },
+      {
+        "q": 6,
+        "topic": "Economic Scene",
+        "question": "In the context of RBI's monetary policy tools, which of the following statements is correct?",
+        "options": {
+          "A": "Repo rate is the rate at which the RBI borrows funds from commercial banks",
+          "B": "CRR refers to the percentage of a bank's deposits that must be kept as liquid assets such as cash, gold or approved government securities",
+          "C": "The Statutory Liquidity Ratio (SLR) is maintained by banks with the RBI purely in the form of cash reserves",
+          "D": "An increase in the repo rate makes borrowing costlier for commercial banks, which can help in controlling inflation"
+        },
+        "correct": "D",
+        "explanation": "Repo rate is the rate at which the RBI lends to commercial banks (not borrows). Cash Reserve Ratio (CRR) is the percentage of a bank's net demand and time liabilities that must be kept as cash reserve with the RBI, not as liquid assets like gold or securities (that describes SLR). SLR is maintained by banks themselves in liquid assets such as cash, gold and approved securities, not necessarily as cash reserves with the RBI. Raising the repo rate raises the cost of funds for banks, which is transmitted as costlier credit and helps in containing inflation."
+      },
+      {
+        "q": 7,
+        "topic": "Current Affairs",
+        "question": "Fiscal deficit of the government is defined as:",
+        "options": {
+          "A": "Total revenue minus total expenditure",
+          "B": "Total expenditure minus total receipts excluding borrowings",
+          "C": "Revenue expenditure minus revenue receipts",
+          "D": "Total borrowings of the private sector"
+        },
+        "correct": "B",
+        "explanation": "Fiscal deficit is the difference between the government's total expenditure and its total receipts excluding borrowings. It indicates the total amount the government needs to borrow during a financial year."
+      },
+      {
+        "q": 8,
+        "topic": "Economic Scene",
+        "question": "Which one of the following is an example of a direct tax in India?",
+        "options": {
+          "A": "Income Tax",
+          "B": "Goods and Services Tax (GST)",
+          "C": "Customs Duty",
+          "D": "Excise Duty"
+        },
+        "correct": "A",
+        "explanation": "A direct tax is levied directly on a person or entity, and its burden cannot be shifted to someone else, e.g., Income Tax and Corporate Tax. GST, Customs Duty and Excise Duty are indirect taxes, where the burden can be passed on to the final consumer."
+      },
+      {
+        "q": 9,
+        "topic": "Current Affairs",
+        "question": "Arrange the following events in chronological order: 1. Formation of the Indian National Congress 2. Partition of Bengal 3. Poona Pact 4. Government of India Act, 1935",
+        "options": {
+          "A": "2-1-3-4",
+          "B": "4-1-2-3",
+          "C": "1-2-3-4",
+          "D": "1-4-2-3"
+        },
+        "correct": "C",
+        "explanation": "The Indian National Congress was formed in 1885, the Partition of Bengal took place in 1905, the Poona Pact was signed in 1932, and the Government of India Act was passed in 1935. Hence, the correct chronological order is 1885-1905-1932-1935, i.e., 1-2-3-4."
+      },
+      {
+        "q": 10,
+        "topic": "Current Affairs",
+        "question": "Which Governor-General of India introduced the policy of 'Doctrine of Lapse' for annexation of princely states?",
+        "options": {
+          "A": "Lord Curzon",
+          "B": "Lord Canning",
+          "C": "Lord William Bentinck",
+          "D": "Lord Dalhousie"
+        },
+        "correct": "D",
+        "explanation": "Lord Dalhousie (Governor-General from 1848 to 1856) introduced the Doctrine of Lapse, under which any princely state without a natural male heir would be annexed by the British East India Company."
+      },
+      {
+        "q": 11,
+        "topic": "History",
+        "question": "Consider the following statements regarding the Non-Cooperation Movement (1920-22): 1. It was launched by Mahatma Gandhi against the backdrop of the Jallianwala Bagh massacre and the Khilafat issue. 2. It was called off following the Chauri Chaura incident. 3. It involved the boycott of foreign goods, government schools and colleges, and government-conferred titles. Which of the statements given above is/are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "1, 2 and 3",
+          "C": "2 and 3 only",
+          "D": "1 and 3 only"
+        },
+        "correct": "B",
+        "explanation": "All three statements are correct. The Non-Cooperation Movement was launched in 1920 in the backdrop of grievances including the Jallianwala Bagh massacre and the Khilafat issue. It was withdrawn by Gandhi after the violent Chauri Chaura incident of February 1922, and it involved the boycott of foreign goods, educational institutions, courts and government titles."
+      },
+      {
+        "q": 12,
+        "topic": "Current Affairs",
+        "question": "The southwest monsoon in India retreats first from which part of the country?",
+        "options": {
+          "A": "Kerala",
+          "B": "Tamil Nadu coast",
+          "C": "North-western India (Rajasthan and Punjab)",
+          "D": "West Bengal"
+        },
+        "correct": "C",
+        "explanation": "The withdrawal of the southwest monsoon begins in early September from north-western India (Rajasthan and Punjab) and progressively retreats southward, withdrawing last from Kerala by early December."
+      },
+      {
+        "q": 13,
+        "topic": "Geography",
+        "question": "The river Brahmaputra originates from:",
+        "options": {
+          "A": "The Chemayungdung glacier of the Kailash range, near Mansarovar lake in Tibet",
+          "B": "Nepal Himalayas",
+          "C": "Western Ghats",
+          "D": "Uttarakhand Himalayas"
+        },
+        "correct": "A",
+        "explanation": "The Brahmaputra originates from the Chemayungdung glacier of the Kailash range, near Mansarovar lake in southwestern Tibet, where it is known as the Yarlung Tsangpo. It enters India through Arunachal Pradesh, where it is known as the Siang/Dihang before being called the Brahmaputra in Assam."
+      },
+      {
+        "q": 14,
+        "topic": "Current Affairs",
+        "question": "Which type of soil, formed from the weathering of Deccan trap lava, is most suitable for cotton cultivation?",
+        "options": {
+          "A": "Alluvial soil",
+          "B": "Laterite soil",
+          "C": "Red soil",
+          "D": "Black soil (Regur soil)"
+        },
+        "correct": "D",
+        "explanation": "Black soil, also called Regur soil, is formed from the weathering of Deccan trap (basaltic) lava. It has high moisture-retention capacity and is particularly suitable for cotton cultivation; it is found mainly in Maharashtra, Madhya Pradesh and Gujarat."
+      },
+      {
+        "q": 15,
+        "topic": "Current Affairs",
+        "question": "A fuse wire used in household electrical circuits works on the principle that it:",
+        "options": {
+          "A": "Has very high resistance and heats up quickly to break the circuit under normal current",
+          "B": "Has a low melting point and melts due to the heating effect of current when the current exceeds a safe limit",
+          "C": "Converts electrical energy into magnetic energy to stop current flow",
+          "D": "Progressively increases its resistance to gradually reduce current flow"
+        },
+        "correct": "B",
+        "explanation": "A fuse wire is made of an alloy with a low melting point. When current exceeds a safe limit, the heating effect of the current (I²R heating) melts the wire, breaking the circuit and protecting the appliance from damage."
+      },
+      {
+        "q": 16,
+        "topic": "Current Affairs",
+        "question": "A solution that turns red litmus paper blue is:",
+        "options": {
+          "A": "Acidic",
+          "B": "Neutral",
+          "C": "Basic",
+          "D": "Amphoteric only"
+        },
+        "correct": "C",
+        "explanation": "Basic (alkaline) solutions turn red litmus paper blue, while acidic solutions turn blue litmus paper red. Neutral solutions do not change the colour of litmus paper."
+      },
+      {
+        "q": 17,
+        "topic": "Current Affairs",
+        "question": "Which of the following diseases, unlike the other three which are caused by viruses, is caused by a bacterium?",
+        "options": {
+          "A": "Tuberculosis",
+          "B": "Influenza",
+          "C": "Chickenpox",
+          "D": "Measles"
+        },
+        "correct": "A",
+        "explanation": "Tuberculosis is caused by the bacterium Mycobacterium tuberculosis. Influenza, chickenpox and measles are all caused by viruses."
+      },
+      {
+        "q": 18,
+        "topic": "Current Affairs",
+        "question": "In humans, colour blindness is an X-linked recessive trait. A colour-blind man marries a woman who is homozygous normal for colour vision. What is the probability that their sons will be colour blind?",
+        "options": {
+          "A": "25%",
+          "B": "50%",
+          "C": "100%",
+          "D": "0%"
+        },
+        "correct": "D",
+        "explanation": "Since colour blindness is X-linked recessive, the father's genotype is X(cb)Y and the mother's is X(N)X(N). Sons receive the Y chromosome from their father and one X chromosome from their mother, which always carries the normal allele. Hence all sons will have genotype X(N)Y and none will be colour blind; all daughters will be carriers (X(cb)X(N)) but phenotypically normal."
+      },
+      {
+        "q": 19,
+        "topic": "Current Affairs",
+        "question": "As of August 2026, who is serving as the Chief Justice of India?",
+        "options": {
+          "A": "B.R. Gavai",
+          "B": "Surya Kant",
+          "C": "Sanjiv Khanna",
+          "D": "D.Y. Chandrachud"
+        },
+        "correct": "B",
+        "explanation": "Justice Surya Kant took oath as the 53rd Chief Justice of India on 24 November 2025, succeeding Justice B.R. Gavai, and continues to hold office as of August 2026."
+      },
+      {
+        "q": 20,
+        "topic": "Current Affairs",
+        "question": "Sanjay Malhotra, who currently serves as the Governor of the Reserve Bank of India, is the:",
+        "options": {
+          "A": "24th Governor of RBI",
+          "B": "25th Governor of RBI",
+          "C": "26th Governor of RBI",
+          "D": "27th Governor of RBI"
+        },
+        "correct": "C",
+        "explanation": "Sanjay Malhotra took charge as the 26th Governor of the Reserve Bank of India in December 2024, succeeding Shaktikanta Das, and continues to hold the post as of August 2026."
+      },
+      {
+        "q": 21,
+        "topic": "Current Affairs",
+        "question": "Consider the following statements regarding recent appointments in India's higher defence organisation in 2026: 1. Lt Gen Dhiraj Seth was appointed Chief of the Army Staff, succeeding General Upendra Dwivedi. 2. General N.S. Raja Subramani was appointed Chief of Defence Staff, succeeding General Anil Chauhan. Which of the statements given above is/are correct?",
+        "options": {
+          "A": "Both 1 and 2",
+          "B": "1 only",
+          "C": "2 only",
+          "D": "Neither 1 nor 2"
+        },
+        "correct": "A",
+        "explanation": "Both statements are correct. Lt Gen Dhiraj Seth, who had earlier taken over as Vice Chief of the Army Staff, was appointed as Chief of the Army Staff in 2026, succeeding General Upendra Dwivedi. Separately, General N.S. Raja Subramani was appointed as the 3rd Chief of Defence Staff in May 2026, succeeding General Anil Chauhan."
+      },
+      {
+        "q": 22,
+        "topic": "General Polity",
+        "question": "The PM-KISAN (Pradhan Mantri Kisan Samman Nidhi) scheme currently provides direct income support to:",
+        "options": {
+          "A": "Small and marginal farmer families only",
+          "B": "Urban unemployed youth",
+          "C": "Industrial workers",
+          "D": "All eligible landholding farmer families, subject to certain government-specified exclusions"
+        },
+        "correct": "D",
+        "explanation": "PM-KISAN provides direct income support of Rs 6,000 per year, paid in three equal instalments, to all eligible landholding farmer families with cultivable land recorded in their names, subject to exclusions such as institutional landholders, income-tax payers, holders of constitutional posts, and certain government employees/pensioners. The scheme is not restricted only to small and marginal farmers."
+      },
+      {
+        "q": 23,
+        "topic": "General Polity",
+        "question": "Consider the following statements about the Comptroller and Auditor General (CAG) of India: 1. The CAG is appointed by the President and can be removed only in a manner similar to the removal of a Supreme Court judge. 2. The CAG's reports relating to the accounts of the Union are submitted to the President, who causes them to be laid before Parliament. 3. The salary of the CAG is charged on the Consolidated Fund of India. Which of the statements given above is/are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "1, 2 and 3",
+          "C": "2 and 3 only",
+          "D": "1 and 3 only"
+        },
+        "correct": "B",
+        "explanation": "All three statements are correct. Under Article 148, the CAG is appointed by the President and can be removed only through the same process as a Supreme Court judge. Under Article 151, CAG reports on Union accounts are submitted to the President, who lays them before Parliament. Under Article 148(3), the CAG's salary and conditions of service are charged on the Consolidated Fund of India."
+      },
+      {
+        "q": 24,
+        "topic": "Current Affairs",
+        "question": "The headquarters of the New Development Bank (NDB), established by the BRICS nations, is located in:",
+        "options": {
+          "A": "Beijing",
+          "B": "New Delhi",
+          "C": "Shanghai",
+          "D": "Moscow"
+        },
+        "correct": "C",
+        "explanation": "The New Development Bank, established by the BRICS countries (Brazil, Russia, India, China and South Africa), has its headquarters in Shanghai, China."
+      },
+      {
+        "q": 25,
+        "topic": "Current Affairs",
+        "question": "The Arjuna Award (Lifetime), introduced by the Government of India in 2024 in place of the earlier Dhyan Chand Award, is given for:",
+        "options": {
+          "A": "Lifetime contribution to sports development, honouring a sportsperson's contribution through performance and continued promotion of sports even after retirement",
+          "B": "Outstanding performance in a single edition of the Olympic Games",
+          "C": "Lifetime contribution to sports development specifically through coaching",
+          "D": "Best sports journalism and commentary"
+        },
+        "correct": "A",
+        "explanation": "In October 2024, the Ministry of Youth Affairs and Sports rationalised the National Sports Awards and replaced the Dhyan Chand Award for Lifetime Achievement with the Arjuna Award (Lifetime), given to honour sportspersons who have contributed through their performance and continue to promote sports after retirement. It is distinct from the Major Dhyan Chand Khel Ratna Award (for the most outstanding performance over the preceding four years) and the Dronacharya Award (for excellence in coaching)."
+      }
+    ],
+    "Computer Knowledge": [
+      {
+        "q": 1,
+        "topic": "Computer Basics",
+        "question": "Which of the following statements correctly differentiates TCP from UDP?",
+        "options": {
+          "A": "Both TCP and UDP guarantee reliable delivery of data, differing only in transmission speed",
+          "B": "UDP is connection-oriented and reliable, while TCP is connectionless and faster",
+          "C": "TCP is connection-oriented and ensures reliable, ordered delivery of data, while UDP is connectionless and does not guarantee delivery",
+          "D": "UDP is generally used for file transfer because it guarantees error-free delivery, while TCP is used only for streaming"
+        },
+        "correct": "C",
+        "explanation": "TCP (Transmission Control Protocol) is connection-oriented and provides reliable, ordered and error-checked delivery of data. UDP (User Datagram Protocol) is connectionless, faster, and does not guarantee delivery, ordering or error correction, which is why it is preferred for applications like live streaming where speed matters more than guaranteed delivery."
+      },
+      {
+        "q": 2,
+        "topic": "Internet and Networking",
+        "question": "A system administrator needs to configure a mail client to send outgoing emails. Which protocol, along with its commonly associated port, should primarily be configured for this purpose?",
+        "options": {
+          "A": "POP3, port 110",
+          "B": "IMAP, port 143",
+          "C": "FTP, port 21",
+          "D": "SMTP, port 587 (commonly also port 25)"
+        },
+        "correct": "D",
+        "explanation": "SMTP (Simple Mail Transfer Protocol) is used for sending/relaying outgoing email, commonly over port 25 or the submission port 587. POP3 and IMAP are used to retrieve/receive email from a mail server, while FTP is used for transferring files, not email."
+      },
+      {
+        "q": 3,
+        "topic": "Internet and Networking",
+        "question": "Which of the following statements about IPv4 and IPv6 addressing is correct?",
+        "options": {
+          "A": "IPv6 was developed mainly to overcome the address exhaustion problem of IPv4 by using a 128-bit address format",
+          "B": "IPv4 uses a 128-bit address format, while IPv6 uses a 32-bit address format",
+          "C": "IPv4 addresses are conventionally written in hexadecimal notation separated by colons",
+          "D": "IPv6 is completely incompatible with IPv4 and the two cannot coexist on the same network under any transition mechanism"
+        },
+        "correct": "A",
+        "explanation": "IPv4 uses a 32-bit address (providing about 4.3 billion unique addresses), which proved insufficient for the growing number of internet-connected devices. IPv6 uses a 128-bit address, written in hexadecimal separated by colons, and was developed mainly to resolve this address exhaustion. Transition mechanisms such as dual-stack and tunnelling allow IPv4 and IPv6 networks to coexist."
+      },
+      {
+        "q": 4,
+        "topic": "Internet and Networking",
+        "question": "A network engineer wants to connect a LAN to the Internet, forward data packets based on IP addresses, and determine the best path for the data to travel. Which networking device is most suitable for this purpose?",
+        "options": {
+          "A": "Hub",
+          "B": "Router",
+          "C": "Switch",
+          "D": "Repeater"
+        },
+        "correct": "B",
+        "explanation": "A router connects different networks, forwards data packets based on IP addresses, and determines the optimal path for data using routing tables. A hub broadcasts data to all connected devices without addressing, a switch forwards data within a LAN based on MAC addresses, and a repeater simply regenerates a weakened signal."
+      },
+      {
+        "q": 5,
+        "topic": "Office Applications",
+        "question": "In MS Excel, a teacher wants to count how many students scored 40 or more marks in the range B2:B50. Which formula should be used?",
+        "options": {
+          "A": "=SUM(B2:B50,\">=40\")",
+          "B": "=COUNT(B2:B50,\">=40\")",
+          "C": "=IF(B2:B50>=40)",
+          "D": "=COUNTIF(B2:B50,\">=40\")"
+        },
+        "correct": "D",
+        "explanation": "COUNTIF() counts the number of cells within a range that meet a specified condition. SUM() adds values and does not accept a condition in this way, COUNT() only counts numeric cells and does not support a condition argument, and the IF() syntax shown is invalid for this purpose."
+      },
+      {
+        "q": 6,
+        "topic": "Office Applications",
+        "question": "In Excel, the formula in cell B2 is =A2*$C$1. If this formula is copied from cell B2 to cell B3, what will the formula in B3 become?",
+        "options": {
+          "A": "=A2*$C$2",
+          "B": "=A2*$C$1",
+          "C": "=A3*$C$1",
+          "D": "=A3*$C$2"
+        },
+        "correct": "C",
+        "explanation": "A2 is a relative reference, so it automatically adjusts to A3 when the formula is copied down one row. $C$1 is an absolute reference (both column and row locked with '$'), so it remains unchanged as $C$1 regardless of where the formula is copied."
+      },
+      {
+        "q": 7,
+        "topic": "Office Applications",
+        "question": "Which Excel function is used to calculate the arithmetic mean of a range of numeric values?",
+        "options": {
+          "A": "=AVERAGE()",
+          "B": "=SUM()",
+          "C": "=MODE()",
+          "D": "=MEDIAN()"
+        },
+        "correct": "A",
+        "explanation": "The AVERAGE() function calculates the arithmetic mean of the numbers in a specified range. SUM() adds values, MODE() returns the most frequently occurring value, and MEDIAN() returns the middle value of a data set."
+      },
+      {
+        "q": 8,
+        "topic": "Office Applications",
+        "question": "An office wants to send a personalised invitation letter to 200 different recipients using the same letter template, with each recipient's name and address inserted automatically. Which MS Word feature should be used for this?",
+        "options": {
+          "A": "Track Changes",
+          "B": "Mail Merge",
+          "C": "Find and Replace",
+          "D": "Comments"
+        },
+        "correct": "B",
+        "explanation": "Mail Merge combines a main document (the letter template) with a data source (such as a list of names and addresses) to automatically generate personalised copies of the document for each recipient. Track Changes records edits made during review, Find and Replace searches for and replaces specific text, and Comments are used to add review notes."
+      },
+      {
+        "q": 9,
+        "topic": "Office Applications",
+        "question": "Which of the following statements about MS PowerPoint is correct?",
+        "options": {
+          "A": "Slide Master controls the visual effect that occurs when moving from one slide to the next, while Transition maintains consistent formatting across all slides",
+          "B": "Animation and Transition refer to the same feature and can only be applied to text objects",
+          "C": "Slide Master can be edited only while the presentation is running in Slide Show view",
+          "D": "Slide Master allows consistent formatting, placeholders and design to be applied across all slides, while Transition controls the visual effect when moving from one slide to the next"
+        },
+        "correct": "D",
+        "explanation": "Slide Master defines the consistent formatting, placeholders, fonts and design elements applied across all slides in a presentation. Transition controls the visual effect that occurs when moving from one slide to the next, while Animation (a separate feature) controls effects applied to individual objects within a slide."
+      },
+      {
+        "q": 10,
+        "topic": "Cyber Security",
+        "question": "Rohan receives an email that appears to be from his bank, urging him to click a link and immediately enter his net-banking password to avoid account suspension. This is an example of:",
+        "options": {
+          "A": "A phishing attack",
+          "B": "A firewall alert",
+          "C": "A DDoS attack",
+          "D": "A routine software patch update"
+        },
+        "correct": "A",
+        "explanation": "Phishing is a fraudulent attempt, typically via deceptive emails or messages, to trick users into revealing sensitive information such as passwords, often by creating a false sense of urgency and linking to fake websites resembling legitimate ones."
+      },
+      {
+        "q": 11,
+        "topic": "Computer Basics",
+        "question": "A malicious program silently encrypts all the files on a user's computer and then demands payment in cryptocurrency to restore access to the data. This is best described as:",
+        "options": {
+          "A": "A computer worm, since it spreads automatically across a network without user action",
+          "B": "A Trojan horse, since it disguises itself as legitimate software",
+          "C": "Ransomware, since it encrypts or locks a victim's data and demands payment for restoring access",
+          "D": "Spyware, since it secretly monitors and records user activity"
+        },
+        "correct": "C",
+        "explanation": "Ransomware is malicious software that encrypts or otherwise locks a victim's files and demands a ransom payment for restoring access. This distinguishes it from a worm (which self-replicates and spreads across networks), a Trojan (which disguises itself as legitimate software but does not self-replicate), and spyware (which covertly monitors user activity without necessarily locking data)."
+      },
+      {
+        "q": 12,
+        "topic": "Cyber Security",
+        "question": "The primary function of a firewall in a computer network is to:",
+        "options": {
+          "A": "Increase internet browsing speed",
+          "B": "Monitor and control incoming and outgoing network traffic based on defined security rules",
+          "C": "Permanently delete computer viruses from a system",
+          "D": "Compress data files for storage"
+        },
+        "correct": "B",
+        "explanation": "A firewall monitors and controls incoming and outgoing network traffic based on predetermined security rules, acting as a barrier between a trusted internal network and untrusted external networks such as the Internet."
+      },
+      {
+        "q": 13,
+        "topic": "Office Applications",
+        "question": "Which of the following is a primary function of an Operating System?",
+        "options": {
+          "A": "Compiling high-level programming languages only",
+          "B": "Designing web pages",
+          "C": "Creating spreadsheets and documents",
+          "D": "Managing computer hardware resources and providing a platform for application software to run"
+        },
+        "correct": "D",
+        "explanation": "An Operating System manages a computer's hardware resources (such as the CPU, memory and storage) and provides an environment/platform on which application software can run. Compiling code, designing web pages and creating spreadsheets are tasks performed by specific application software, not core functions of the OS itself."
+      },
+      {
+        "q": 14,
+        "topic": "Software",
+        "question": "When a computer's RAM is insufficient to hold all data required by currently active programs, the operating system uses a portion of the hard disk to temporarily hold data that would normally reside in RAM. This technique is known as:",
+        "options": {
+          "A": "Virtual memory",
+          "B": "Cache memory",
+          "C": "Register memory",
+          "D": "Read-Only Memory"
+        },
+        "correct": "A",
+        "explanation": "Virtual memory is a memory management technique in which the operating system uses disk space (such as a swap or page file) as an extension of RAM, managed through paging. Cache memory is a small, faster memory located between the CPU and RAM; registers are ultra-fast storage locations within the CPU itself; and ROM is non-volatile memory used mainly to store firmware, none of which involve using disk space to extend RAM."
+      },
+      {
+        "q": 15,
+        "topic": "Computer Basics",
+        "question": "Which of the following statements correctly distinguishes RAM from ROM?",
+        "options": {
+          "A": "RAM is non-volatile and retains data without power, while ROM is volatile and loses data when power is switched off",
+          "B": "RAM is volatile memory used for temporarily storing data and instructions currently in use, while ROM is non-volatile memory mainly used to store firmware or boot instructions",
+          "C": "Both RAM and ROM are secondary storage devices used for permanent data storage",
+          "D": "ROM can be read from and written to as frequently as RAM during normal computer operation"
+        },
+        "correct": "B",
+        "explanation": "RAM (Random Access Memory) is volatile memory that temporarily holds data and instructions the CPU is currently using, and loses its contents when power is switched off. ROM (Read-Only Memory) is non-volatile memory mainly used to store firmware or boot instructions, and is not designed to be rewritten as frequently as RAM."
+      },
+      {
+        "q": 16,
+        "topic": "Software",
+        "question": "A computer system with a single CPU is able to run multiple programs by rapidly switching the CPU's attention between them, giving the appearance that the programs are running simultaneously. This capability is best described as:",
+        "options": {
+          "A": "Multiprocessing, since multiple physical processors handle the multiple programs at the same time",
+          "B": "Multithreading, since a single program executes multiple threads at the same time",
+          "C": "Multitasking, since the operating system switches the CPU rapidly between processes to create the appearance of simultaneous execution",
+          "D": "This is possible only on dual-core or multi-core processors, and not on a single-CPU system"
+        },
+        "correct": "C",
+        "explanation": "Multitasking is the operating system's ability to execute multiple processes by rapidly switching the CPU's attention among them, creating the illusion of simultaneous execution even on a single-CPU system. This is different from multiprocessing (multiple physical processors working at the same time) and multithreading (multiple threads running concurrently within a single program)."
+      },
+      {
+        "q": 17,
+        "topic": "Internet and Networking",
+        "question": "When you type a website's domain name (e.g., www.example.com) into a browser, the system that translates this domain name into its corresponding numerical IP address is called:",
+        "options": {
+          "A": "DHCP",
+          "B": "FTP",
+          "C": "HTTP",
+          "D": "DNS"
+        },
+        "correct": "D",
+        "explanation": "The Domain Name System (DNS) translates human-readable domain names into their corresponding numerical IP addresses. DHCP assigns IP addresses to devices on a network, FTP is used for transferring files, and HTTP is the protocol used for transferring web page content, not for name resolution."
+      },
+      {
+        "q": 18,
+        "topic": "Internet and Networking",
+        "question": "The 'S' in HTTPS indicates that the communication between a web browser and a website is:",
+        "options": {
+          "A": "Faster than a standard HTTP connection",
+          "B": "Secured using encryption (TLS - Transport Layer Security)",
+          "C": "Stored permanently on the web server",
+          "D": "Shared publicly with all other users of that website"
+        },
+        "correct": "B",
+        "explanation": "HTTPS (Hypertext Transfer Protocol Secure) uses TLS (Transport Layer Security), the modern successor to the now-deprecated SSL protocol, to encrypt the data exchanged between a browser and a website, protecting it from interception or tampering."
+      },
+      {
+        "q": 19,
+        "topic": "Computer Basics",
+        "question": "Which generation of computers is characterised by the use of Integrated Circuits (ICs) in place of individual transistors?",
+        "options": {
+          "A": "Third generation",
+          "B": "First generation",
+          "C": "Second generation",
+          "D": "Fourth generation"
+        },
+        "correct": "A",
+        "explanation": "First-generation computers used vacuum tubes, second-generation computers used transistors, third-generation computers used Integrated Circuits (ICs), and fourth-generation computers introduced microprocessors."
+      },
+      {
+        "q": 20,
+        "topic": "Internet and Networking",
+        "question": "A company wants to access computing resources such as servers, storage and software over the Internet on a pay-as-you-use basis, without maintaining its own physical IT infrastructure. This is an example of:",
+        "options": {
+          "A": "Grid Computing only",
+          "B": "Local Area Networking",
+          "C": "Cloud Computing",
+          "D": "Peer-to-Peer file sharing"
+        },
+        "correct": "C",
+        "explanation": "Cloud Computing allows organisations to access computing resources such as servers, storage and software over the Internet on a pay-as-you-use basis, without needing to own or maintain the underlying physical infrastructure."
+      }
+    ]
+  }
+}

@@ -1,0 +1,1325 @@
+{
+  "paper_id": "SSC-CGL-T1-Paper2",
+  "title": "SSC CGL Tier 1 Paper 2",
+  "exam": "SSC CGL Tier 1",
+  "year": 2026,
+  "subjects": {
+    "General Intelligence and Reasoning": [
+      {
+        "q": 1,
+        "topic": "Classification",
+        "question": "Three of the following four numbers are alike in a certain way and one is different. Find the odd one out.",
+        "options": {
+          "A": "121",
+          "B": "289",
+          "C": "361",
+          "D": "324"
+        },
+        "correct": "D",
+        "explanation": "Numbers 121, 289, and 361 are squares of prime numbers (11, 17, and 19 respectively). On the other hand, 324 is the square of an even composite number (18). Thus, option D is correct."
+      },
+      {
+        "q": 2,
+        "topic": "Coding and Decoding",
+        "question": "If in a certain code language, EXAM is coded as '10-48-2-26', how will TEST be coded in that language?",
+        "options": {
+          "A": "40-10-38-40",
+          "B": "20-5-19-20",
+          "C": "40-20-19-40",
+          "D": "38-10-36-38"
+        },
+        "correct": "A",
+        "explanation": "Each letter's alphabetical position is multiplied by 2. For EXAM: E(5x2=10), X(24x2=48), A(1x2=2), M(13x2=26) -> 10-48-2-26. Applying the same rule to TEST: T(20x2=40), E(5x2=10), S(19x2=38), T(20x2=40) -> 40-10-38-40. Thus, option A is correct."
+      },
+      {
+        "q": 3,
+        "topic": "Series",
+        "question": "Find the missing term in the given letter-number series: AZ5, CX10, EV20, GT40, ?",
+        "options": {
+          "A": "IR60",
+          "B": "IR80",
+          "C": "IS80",
+          "D": "HR80"
+        },
+        "correct": "B",
+        "explanation": "First letters advance by +2 (A, C, E, G -> I). Second letters recede by -2 (Z, X, V, T -> R). Numbers are multiplied by 2 (5, 10, 20, 40 -> 80). Combining these gives IR80. Thus, option B is correct."
+      },
+      {
+        "q": 4,
+        "topic": "Analogy",
+        "question": "Select the option that is related to the third number in the same way as the second number is related to the first number: 56:30 :: 138:?",
+        "options": {
+          "A": "24",
+          "B": "28",
+          "C": "32",
+          "D": "36"
+        },
+        "correct": "A",
+        "explanation": "The relationship is that the second number is the product of the digits of the first number. For 56: 5 x 6 = 30. Applying this to 138: 1 x 3 x 8 = 24. Thus, option A is correct."
+      },
+      {
+        "q": 5,
+        "topic": "Series",
+        "question": "A number series is given with one term missing. Choose the correct alternative: 7, 15, 31, 63, 127, ?",
+        "options": {
+          "A": "251",
+          "B": "253",
+          "C": "255",
+          "D": "257"
+        },
+        "correct": "C",
+        "explanation": "Each term is multiplied by 2 and 1 is added (7x2+1 = 15, 15x2+1 = 31, 31x2+1 = 63, 63x2+1 = 127). Following this multiplicative pattern / recurrence pattern, 127 x 2 + 1 = 255. Thus, option C is correct."
+      },
+      {
+        "q": 6,
+        "topic": "Problem Solving",
+        "question": "If '+' means 'x', '-' means '+', 'x' means '/', and '/' means '-', find the value of the expression: 54 / 6 - 18 + 2 x 3",
+        "options": {
+          "A": "56",
+          "B": "60",
+          "C": "64",
+          "D": "68"
+        },
+        "correct": "B",
+        "explanation": "Replacing symbols according to the given rules: '/' becomes '-', '-' becomes '+', '+' becomes 'x', 'x' becomes '/'. The expression becomes: 54 - 6 + 18 x 2 / 3. Following BODMAS: first 18 x 2 = 36; then 36 / 3 = 12. The expression simplifies to 54 - 6 + 12 = 48 + 12 = 60. Thus, option B is correct."
+      },
+      {
+        "q": 7,
+        "topic": "Problem Solving",
+        "question": "A statement is followed by two arguments numbered I and II. Decide which of the arguments is strong.\nStatement: Should all luxury hotels in the country be banned?\nArguments: I. Yes, they are centers of illegal activities and waste precious resources. II. No, they generate massive employment and boost international tourism revenue.",
+        "options": {
+          "A": "Only argument I is strong",
+          "B": "Only argument II is strong",
+          "C": "Both I and II are strong",
+          "D": "Neither I nor II is strong"
+        },
+        "correct": "B",
+        "explanation": "Argument I is weak because it is based on a sweeping generalization that lacks empirical backing across all luxury establishments. Argument II is strong as it directly points to vital economic benefits such as employment generation and foreign exchange earnings. Thus, option B is correct."
+      },
+      {
+        "q": 8,
+        "topic": "Analogy",
+        "question": "Select the option in which the numbers are related in the same way as are the numbers of the given set: (7, 15, 31)",
+        "options": {
+          "A": "(5, 11, 23)",
+          "B": "(6, 13, 28)",
+          "C": "(8, 18, 36)",
+          "D": "(9, 19, 40)"
+        },
+        "correct": "A",
+        "explanation": "In the given set (7, 15, 31), the pattern is multiplying by 2 and adding 1 (7x2+1 = 15, 15x2+1 = 31). Checking option A (5, 11, 23): 5x2+1 = 11, 11x2+1 = 23, which follows the exact same rule. Thus, option A is correct."
+      },
+      {
+        "q": 9,
+        "topic": "Coding and Decoding",
+        "question": "If 'PUNJAB' is written as 'QVOKBC', how is 'HARYANA' written in that code language?",
+        "options": {
+          "A": "IBSZBOB",
+          "B": "IBQZBOA",
+          "C": "IARZBOB",
+          "D": "IBSZBOA"
+        },
+        "correct": "A",
+        "explanation": "Each letter in the word is shifted forward by 1 position in the alphabet: P+1=Q, U+1=V, N+1=O, J+1=K, A+1=B, B+1=C. Applying the same +1 shift to HARYANA: H->I, A->B, R->S, Y->Z, A->B, N->O, A->B resulting in IBSZBOB. Thus, option A is correct."
+      },
+      {
+        "q": 10,
+        "topic": "Problem Solving",
+        "question": "Select the correct alternative to indicate the arrangement of the following words in a logical and meaningful order: 1. Diagnosis 2. Doctor 3. Sickness 4. Recovery 5. Medicine",
+        "options": {
+          "A": "3, 2, 1, 5, 4",
+          "B": "2, 3, 1, 5, 4",
+          "C": "3, 1, 2, 5, 4",
+          "D": "2, 1, 3, 5, 4"
+        },
+        "correct": "A",
+        "explanation": "The logical sequence of events in a medical context is: First a person falls sick (3), visits a doctor (2), the doctor performs a diagnosis (1), prescribes medicine (5), which leads to recovery (4). Thus, the correct order is 3, 2, 1, 5, 4."
+      },
+      {
+        "q": 11,
+        "topic": "Coding and Decoding",
+        "question": "In a code language, 'MILD' is coded as '12-8-11-3'. How will 'GATE' be coded in that code language?",
+        "options": {
+          "A": "F-Z-S-D",
+          "B": "6-25-19-4",
+          "C": "5-26-18-3",
+          "D": "6-26-19-4"
+        },
+        "correct": "D",
+        "explanation": "Each letter's alphabetical position is decreased by 1: M(13)->12, I(9)->8, L(12)->11, D(4)->3. Applying this -1 rule to GATE: G(7)->6, A(1)->26 (wrapping around Z), T(20)->19, E(5)->4. This gives 6-26-19-4, which corresponds to option D."
+      },
+      {
+        "q": 12,
+        "topic": "Problem Solving",
+        "question": "Find the missing number in the given number matrix:\n7, 4, 33\n8, 5, 46\n9, 6, ?",
+        "options": {
+          "A": "55",
+          "B": "58",
+          "C": "61",
+          "D": "65"
+        },
+        "correct": "C",
+        "explanation": "In each row, the third number is obtained by multiplying the first two numbers and adding the second number (e.g., 7 x 4 + 5 = 33; 8 x 5 + 6 = 46; 9 x 6 + 7 = 61). Thus, option C is correct."
+      },
+      {
+        "q": 13,
+        "topic": "Problem Solving",
+        "question": "A person starts from point X, walks 8 m towards West, turns right and walks 6 m, turns right and walks 12 m, and finally turns right and walks 6 m. How far and in which direction is he from point X?",
+        "options": {
+          "A": "4 m, East",
+          "B": "4 m, West",
+          "C": "6 m, North",
+          "D": "2 m, East"
+        },
+        "correct": "A",
+        "explanation": "Taking point X as origin (0,0): Walks 8m West (-8,0), turns right (North) and walks 6m (-8,6), turns right (East) and walks 12m (4,6), turns right (South) and walks 6m (4,0). The final position is 4 meters East of point X. Thus, option A is correct."
+      },
+      {
+        "q": 14,
+        "topic": "Problem Solving",
+        "question": "When the midpoints of the three sides of a triangle are joined together, the original triangle is partitioned into four smaller congruent triangles. What is the total count of triangles in the resulting geometric configuration, including the original triangle?",
+        "options": {
+          "A": "4",
+          "B": "5",
+          "C": "9",
+          "D": "10"
+        },
+        "correct": "B",
+        "explanation": "Joining the midpoints of the three sides forms 4 smaller congruent inner triangles, which together with the 1 original outer triangle yield a total count of 4 + 1 = 5 triangles. Thus, option B is correct."
+      },
+      {
+        "q": 15,
+        "topic": "Venn Diagrams",
+        "question": "Which Venn diagram best represents the relationship among: Mammals, Cows, and Crows?",
+        "options": {
+          "A": "Three concentric circles",
+          "B": "Two disjoint circles inside a larger enclosing circle",
+          "C": "One circle enclosing another, with a third completely separate circle",
+          "D": "Three mutually intersecting circles"
+        },
+        "correct": "C",
+        "explanation": "Cows are entirely a subset of Mammals (one circle inside another), while Crows are birds, which are entirely separate from mammals (represented by a completely disjoint third circle). Thus, option C is correct."
+      },
+      {
+        "q": 16,
+        "topic": "Problem Solving",
+        "question": "A cube painted red on all faces is cut into 64 smaller identical cubes. How many small cubes have exactly two faces painted?",
+        "options": {
+          "A": "8",
+          "B": "16",
+          "C": "24",
+          "D": "32"
+        },
+        "correct": "C",
+        "explanation": "For a cube cut into 64 smaller cubes, n = 4. Cubes with exactly two faces painted lie on the edges of the main cube, excluding corners. Each of the 12 edges contains (n - 2) such cubes. Thus, 12 x (4 - 2) = 24 cubes. Thus, option C is correct."
+      },
+      {
+        "q": 17,
+        "topic": "Numerical and Symbolic Operations",
+        "question": "Select the correct combination of mathematical signs to sequentially replace the '*' signs and balance the given equation: 24 * 3 * 6 * 10 * 2",
+        "options": {
+          "A": "/, x, =, -",
+          "B": "x, /, -, =",
+          "C": "x, /, =, +",
+          "D": "+, -, x, ="
+        },
+        "correct": "C",
+        "explanation": "Testing option C (x, /, =, +) on 24 * 3 * 6 * 10 * 2: 24 x 3 / 6 = 10 + 2. Calculating left side: 24 x 3 = 72; 72 / 6 = 12. Calculating right side: 10 + 2 = 12. Both sides balance perfectly. Thus, option C is correct."
+      },
+      {
+        "q": 18,
+        "topic": "Problem Solving",
+        "question": "Statements: 1. All pens are books. 2. Some books are pencils.\nConclusions: I. Some pens are pencils. II. Some pens are not pencils.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Either I or II follows",
+          "D": "Neither I nor II follows"
+        },
+        "correct": "D",
+        "explanation": "From the statements, pens are inside books, and pencils intersect books. Pens and pencils may or may not overlap. Since no definitive certainty is established for either conclusion independently, neither conclusion follows definitively. Thus, option D is correct."
+      },
+      {
+        "q": 19,
+        "topic": "Problem Solving",
+        "question": "Pointing to a photograph, a man said, 'She is the daughter of my grandfather's only son.' How is the person in the photograph related to the man?",
+        "options": {
+          "A": "Mother",
+          "B": "Sister",
+          "C": "Aunt",
+          "D": "Wife"
+        },
+        "correct": "B",
+        "explanation": "My grandfather's only son is the man's father. The daughter of the man's father is his sister. Thus, option B is correct."
+      },
+      {
+        "q": 20,
+        "topic": "Problem Solving",
+        "question": "In a row of persons facing north, Manish is 15th from the left end and Suresh is 19th from the right end. If they interchange their positions, Manish becomes 27th from the left end. How many persons are there between Manish and Suresh in their original positions?",
+        "options": {
+          "A": "7",
+          "B": "9",
+          "C": "10",
+          "D": "11"
+        },
+        "correct": "D",
+        "explanation": "After interchanging, Manish's new position from the left is 27, and his original position was 15. The number of persons between them is given by (New Position - Old Position - 1) = 27 - 15 - 1 = 11 persons. Thus, option D is correct."
+      },
+      {
+        "q": 21,
+        "topic": "Problem Solving",
+        "question": "A square paper sheet is folded twice along its medians to form a smaller square, a circular punch is made strictly inside the folded area, and the sheet is then unfolded. Select the option that correctly represents the unfolded paper pattern.",
+        "options": {
+          "A": "A sheet with a single hole in the middle",
+          "B": "A sheet with two holes along the horizontal crease",
+          "C": "A sheet with four symmetric holes distributed across the four quadrants",
+          "D": "A sheet with eight holes across the corners"
+        },
+        "correct": "C",
+        "explanation": "When a square paper is folded twice along its medians and a punch is made strictly within the interior of the folded quadrant, unfolding it across both vertical and horizontal folding axes results in four symmetric holes distributed evenly across the four quadrants. Thus, option C is correct."
+      },
+      {
+        "q": 22,
+        "topic": "Analogy",
+        "question": "Select the option that logically completes the following coding analogy: If BOOK is coded as 43, what is the code for PEN?",
+        "options": {
+          "A": "32",
+          "B": "35",
+          "C": "38",
+          "D": "40"
+        },
+        "correct": "B",
+        "explanation": "Summing the alphabetical positions of BOOK: B(2) + O(15) + O(15) + K(11) = 43. Applying this to PEN: P(16) + E(5) + N(14) = 35. Thus, option B is correct."
+      },
+      {
+        "q": 23,
+        "topic": "Series",
+        "question": "Find the missing number in the advanced cubic series: 7, 26, 63, 124, 215, ?",
+        "options": {
+          "A": "336",
+          "B": "342",
+          "C": "348",
+          "D": "354"
+        },
+        "correct": "B",
+        "explanation": "The series follows the precise cubic formula n cubed - 1 for integers n = 2, 3, 4, 5, 6 (2 cubed - 1 = 7, 3 cubed - 1 = 26, 4 cubed - 1 = 63, 5 cubed - 1 = 124, 6 cubed - 1 = 215). Continuing this for n = 7 gives 7 cubed - 1 = 343 - 1 = 342. Thus, option B is correct."
+      },
+      {
+        "q": 24,
+        "topic": "Problem Solving",
+        "question": "Select the correct set of numbers that is similar to the set (9, 28, 65):",
+        "options": {
+          "A": "(2, 9, 28)",
+          "B": "(3, 10, 29)",
+          "C": "(7, 26, 63)",
+          "D": "(28, 65, 126)"
+        },
+        "correct": "D",
+        "explanation": "In the given set (9, 28, 65), the numbers follow the rule n cubed + 1 for n = 2, 3, 4 (2 cubed + 1 = 9, 3 cubed + 1 = 28, 4 cubed + 1 = 65). Checking option D (28, 65, 126): 3 cubed + 1 = 28, 4 cubed + 1 = 65, 5 cubed + 1 = 126, which perfectly follows the exact same rule for consecutive integers n = 3, 4, 5. Thus, option D is correct."
+      },
+      {
+        "q": 25,
+        "topic": "Classification",
+        "question": "A cube is colored red on opposite faces, green on another pair of opposite faces, and blue on the remaining pair. It is then cut into 125 smaller cubes of equal size. How many small cubes have at least two different colors on their faces?",
+        "options": {
+          "A": "36",
+          "B": "44",
+          "C": "48",
+          "D": "56"
+        },
+        "correct": "B",
+        "explanation": "For a 5x5x5 cube (n = 5), cubes with at least two colors are the corner cubes and edge cubes (excluding corners). There are 8 corners (each having 3 colors) and 12 edges, each having (n - 2) = 3 inner edge cubes (12 x 3 = 36 cubes with 2 colors). Total = 8 + 36 = 44 cubes. Thus, option B is correct."
+      }
+    ],
+    "General Awareness": [
+      {
+        "q": 1,
+        "topic": "General Polity",
+        "question": "Consider the following statements regarding the writ jurisdiction of the Supreme Court and High Courts in India:\n1. The Supreme Court can issue writs only for the enforcement of Fundamental Rights under Article 32.\n2. The High Courts can issue writs not only for Fundamental Rights but also for any other purpose under Article 226.\n3. The writ of Quo-Warranto can be sought by any private individual regardless of whether their personal rights have been infringed.\nWhich of the statements given above are correct?",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1, 2 and 3",
+          "D": "1 and 3 only"
+        },
+        "correct": "C",
+        "explanation": "All three statements are legally accurate. Under Article 32, the Supreme Court's writ jurisdiction is confined strictly to the enforcement of Fundamental Rights, whereas Article 226 empowers High Courts to issue writs for Fundamental Rights as well as 'for any other purpose' (such as statutory rights). Furthermore, Quo-Warranto is an exception to the strict rule of locus standi, permitting any public-spirited citizen to question the legality of a person holding a public office. Thus, option C is correct."
+      },
+      {
+        "q": 2,
+        "topic": "Current Affairs",
+        "question": "During the Indian National Movement, which specific Viceroy was associated with the passing of the Vernacular Press Act of 1878 and the Arms Act, both of which drew severe nationalist backlash?",
+        "options": {
+          "A": "Lord Lytton",
+          "B": "Lord Ripon",
+          "C": "Lord Curzon",
+          "D": "Lord Dufferin"
+        },
+        "correct": "A",
+        "explanation": "Lord Lytton served as Viceroy from 1876 to 1880. His reactionary policies, including the Vernacular Press Act and the Arms Act of 1878, alongside the costly Second Anglo-Afghan War and the suppression of import duties on Lancashire cotton, catalyzed intense political awakening and nationalism in India. Thus, option A is correct."
+      },
+      {
+        "q": 3,
+        "topic": "Current Affairs",
+        "question": "Regarding the atmospheric layers and temperature profiles, which of the following statements is most accurate?",
+        "options": {
+          "A": "Temperature increases steadily with height across all layers from the Earth's surface to the thermosphere.",
+          "B": "The mesosphere is characterized by a steady increase in temperature due to direct solar radiation absorption.",
+          "C": "The troposphere experiences a temperature drop because it is heated directly by incoming solar radiation.",
+          "D": "The stratosphere exhibits a temperature inversion because ultraviolet solar radiation is absorbed by ozone molecules."
+        },
+        "correct": "D",
+        "explanation": "In the stratosphere, temperature increases with altitude (temperature inversion) because ozone absorbs high-energy UV radiation from the sun. The troposphere is heated from below by terrestrial radiation from Earth's surface, causing temperature to decrease with height. Thus, option D is correct."
+      },
+      {
+        "q": 4,
+        "topic": "Economic Scene",
+        "question": "Which of the following fiscal measures is typically adopted by a government to combat severe demand-pull inflation in an economy?",
+        "options": {
+          "A": "Reducing the statutory liquidity ratio and cutting repo rates",
+          "B": "Increasing direct tax rates while simultaneously curtailing non-developmental public expenditure",
+          "C": "Expanding credit availability through targeted subsidies",
+          "D": "Devaluing the domestic currency to boost export demand"
+        },
+        "correct": "B",
+        "explanation": "To curb demand-pull inflation, contractionary fiscal policy is required. Raising direct taxes reduces disposable income, and reducing public expenditure cools aggregate demand in the economy. Thus, option B is correct."
+      },
+      {
+        "q": 5,
+        "topic": "General Polity",
+        "question": "Who formally appoints the Chief Election Commissioner of India under the constitutional framework of Article 324?",
+        "options": {
+          "A": "The Prime Minister upon parliamentary consensus",
+          "B": "The Collegium consisting of the Chief Justice and senior judges",
+          "C": "The President of India",
+          "D": "A joint parliamentary committee vote"
+        },
+        "correct": "C",
+        "explanation": "The Chief Election Commissioner is formally appointed by the President of India under Article 324, subject to the procedure prescribed by Parliament. Under the 2023 Act, the appointment is made by the President on the recommendation of the Selection Committee. Thus, option C is correct."
+      },
+      {
+        "q": 6,
+        "topic": "Current Affairs",
+        "question": "With reference to the implementation and focus of India's early Five-Year Plans, which statement correctly differentiates the First and Second plans?",
+        "options": {
+          "A": "The First Plan prioritized agriculture and irrigation to tackle post-partition food shortages, whereas the Second Plan focused on heavy industrialization under the Mahalanobis strategy.",
+          "B": "The First Plan focused on atomic energy development, whereas the Second Plan focused entirely on land reforms.",
+          "C": "The First Plan was based on the Gadgil strategy of decentralized farming, whereas the Second Plan nationalized all commercial banks.",
+          "D": "Both plans allocated over 60 percent of public outlay exclusively to heavy machinery and defense production."
+        },
+        "correct": "A",
+        "explanation": "The First Five-Year Plan (1951-56) addressed agrarian crises and food deficits, while the Second Plan (1956-61) shifted focus toward rapid industrialization and heavy capital goods industries. Thus, option A is correct."
+      },
+      {
+        "q": 7,
+        "topic": "Geography",
+        "question": "Analyze the drainage characteristics of the Peninsular river system in India. Which of the following rivers flows through a rift valley and discharges into the Arabian Sea?",
+        "options": {
+          "A": "Godavari",
+          "B": "Mahanadi",
+          "C": "Cauvery",
+          "D": "Narmada"
+        },
+        "correct": "D",
+        "explanation": "The Narmada flows westward in a structural rift valley situated specifically between the Vindhya Range to the north and the Satpura Range to the south, discharging its waters into the Gulf of Khambhat (Arabian Sea). Thus, option D is correct."
+      },
+      {
+        "q": 8,
+        "topic": "Economic Scene",
+        "question": "Which of the following micronutrients or vitamins plays a crucial role as a coenzyme in collagen synthesis and acts as a potent biological antioxidant protecting cells from oxidative stress?",
+        "options": {
+          "A": "Vitamin A",
+          "B": "Vitamin C",
+          "C": "Vitamin D",
+          "D": "Vitamin K"
+        },
+        "correct": "B",
+        "explanation": "Vitamin C (ascorbic acid) is essential for the hydroxylation of proline and lysine in collagen synthesis, and it serves as a powerful water-soluble antioxidant. Thus, option B is correct."
+      },
+      {
+        "q": 9,
+        "topic": "History",
+        "question": "The magnificent rock-cut architecture of the Kailash Temple at Ellora was commissioned and executed under the patronage of which ruling dynasty?",
+        "options": {
+          "A": "Pallava dynasty",
+          "B": "Chola dynasty",
+          "C": "Rashtrakuta dynasty",
+          "D": "Western Ganga dynasty"
+        },
+        "correct": "C",
+        "explanation": "The monolithic rock-cut Kailash Temple (Cave 16) at Ellora was built during the 8th century by the Rashtrakuta king Krishna I, showcasing exquisite Dravidian rock-cut architecture. Thus, option C is correct."
+      },
+      {
+        "q": 10,
+        "topic": "Economic Scene",
+        "question": "In the context of central banking operations, when the Reserve Bank of India (RBI) acts as the 'lender of last resort', what precise institutional safety net does it provide?",
+        "options": {
+          "A": "It extends emergency liquidity and short-term financial accommodation to solvent commercial banks facing sudden, acute cash withdrawals to prevent systemic collapse.",
+          "B": "It guarantees all corporate bonds issued by non-banking financial companies.",
+          "C": "It bails out insolvent commercial enterprises by acquiring their equity shares directly.",
+          "D": "It directly covers retail consumer deposits up to unlimited statutory limits."
+        },
+        "correct": "A",
+        "explanation": "The lender of last resort function involves providing emergency credit to commercial banks that are solvent but experiencing temporary, severe liquidity crises, averting panics. Thus, option A is correct."
+      },
+      {
+        "q": 11,
+        "topic": "Current Affairs",
+        "question": "A body is thrown vertically upwards with a given initial velocity. At its highest point of vertical ascent, which of the following statements regarding its kinematics and dynamics is correct?",
+        "options": {
+          "A": "Both velocity and acceleration are zero.",
+          "B": "Velocity is maximum and acceleration is zero.",
+          "C": "Velocity is zero and acceleration changes direction.",
+          "D": "Velocity is zero while acceleration remains constant and directed downwards."
+        },
+        "correct": "D",
+        "explanation": "At the peak of its trajectory, the instantaneous velocity of the body becomes zero before it reverses direction. However, the acceleration due to gravity remains constant at approximately 9.8 m/s squared acting downwards throughout the flight. Thus, option D is correct."
+      },
+      {
+        "q": 12,
+        "topic": "Current Affairs",
+        "question": "Which prominent moderate nationalist leader founded the Servants of India Society in 1905 to train dedicated national missionaries for social service and political reform?",
+        "options": {
+          "A": "Dadabhai Naoroji",
+          "B": "Gopal Krishna Gokhale",
+          "C": "Surendranath Banerjee",
+          "D": "M. G. Ranade"
+        },
+        "correct": "B",
+        "explanation": "Gopal Krishna Gokhale founded the Servants of India Society in Pune in 1905 to promote social upliftment, education, and civic reform through dedicated public service. Thus, option B is correct."
+      },
+      {
+        "q": 13,
+        "topic": "General Polity",
+        "question": "Which constitutional amendment introduced the Goods and Services Tax (GST) regime in India, restructuring the indirect taxation framework?",
+        "options": {
+          "A": "91st Amendment Act",
+          "B": "99th Amendment Act",
+          "C": "101st Amendment Act",
+          "D": "103rd Amendment Act"
+        },
+        "correct": "C",
+        "explanation": "The 101st Constitutional Amendment Act, 2016, introduced the GST, empowering both the Centre and States to levy and collect indirect taxes on supply of goods and services. Thus, option C is correct."
+      },
+      {
+        "q": 14,
+        "topic": "Current Affairs",
+        "question": "Among common structural metals, which metal exhibits the highest thermal and electrical conductivity under standard conditions?",
+        "options": {
+          "A": "Aluminum",
+          "B": "Copper",
+          "C": "Gold",
+          "D": "Silver"
+        },
+        "correct": "D",
+        "explanation": "Silver has the highest electrical and thermal conductivity of all known metals due to the unique behavior of its outer valence electrons, though copper is widely used due to economic factors. Thus, option D is correct."
+      },
+      {
+        "q": 15,
+        "topic": "Geography",
+        "question": "Which physiographic division of India is structurally considered one of the most stable landmasses, formed by ancient metamorphic and igneous rock formations?",
+        "options": {
+          "A": "The Peninsular Plateau",
+          "B": "The Northern Plains",
+          "C": "The Coastal Plains",
+          "D": "The Himalayan Mountain Belt"
+        },
+        "correct": "A",
+        "explanation": "The Peninsular Plateau is part of the ancient Gondwana landmass, making it a stable geological shield composed of old crystalline, igneous, and metamorphic rocks. Thus, option A is correct."
+      },
+      {
+        "q": 16,
+        "topic": "Current Affairs",
+        "question": "Under recent technological initiatives in India's space program, what is the primary objective designated for the 'NISAR' mission developed jointly by ISRO and NASA?",
+        "options": {
+          "A": "Manned lunar surface exploration and sample return",
+          "B": "High-resolution global Earth observation using advanced dual-frequency synthetic aperture radar",
+          "C": "Establishing interplanetary communication relays near Mars",
+          "D": "Solar corona monitoring and space weather forecasting"
+        },
+        "correct": "B",
+        "explanation": "NISAR (NASA-ISRO Synthetic Aperture Radar) is a landmark joint earth observation mission designed to measure changes in Earth's ecosystems, ice sheets, and natural hazards using advanced radar imaging. Thus, option B is correct."
+      },
+      {
+        "q": 17,
+        "topic": "Economic Scene",
+        "question": "In national income accounting, what macroeconomic adjustment distinguishes Gross National Product (GNP) from Gross Domestic Product (GDP)?",
+        "options": {
+          "A": "Subtraction of indirect business taxes and depreciation",
+          "B": "Addition of net public transfer payments",
+          "C": "Addition of Net Factor Income from Abroad (NFIA)",
+          "D": "Exclusion of government capital expenditure"
+        },
+        "correct": "C",
+        "explanation": "GDP measures total production within domestic borders, whereas GNP adds Net Factor Income from Abroad (income earned by domestic residents overseas minus income earned by foreigners domestically). Thus, option C is correct."
+      },
+      {
+        "q": 18,
+        "topic": "Scientific Research",
+        "question": "Which plant hormone is principally implicated in mediating stomatal closure during periods of severe water stress and inducing seed dormancy?",
+        "options": {
+          "A": "Auxin",
+          "B": "Cytokinin",
+          "C": "Gibberellin",
+          "D": "Abscisic Acid"
+        },
+        "correct": "D",
+        "explanation": "Abscisic Acid acts as a major plant stress hormone, signaling stomatal closure to conserve water during drought conditions and maintaining seed dormancy. Thus, option D is correct."
+      },
+      {
+        "q": 19,
+        "topic": "History",
+        "question": "Which Act transferred the governance of India directly from the East India Company to the British Crown following the suppression of the 1857 Revolt?",
+        "options": {
+          "A": "Government of India Act 1858",
+          "B": "Indian Councils Act 1861",
+          "C": "Queen Victoria's Proclamation Act",
+          "D": "Regulating Act 1873"
+        },
+        "correct": "A",
+        "explanation": "The Government of India Act 1858 liquidated the East India Company's rule in India, transferred administrative control directly to the British Crown, and created the office of Secretary of State for India. Thus, option A is correct."
+      },
+      {
+        "q": 20,
+        "topic": "Economic Scene",
+        "question": "Which of the following monetary policy instruments is used directly by the Reserve Bank of India to manage government securities and regulate system-wide liquidity through open market operations?",
+        "options": {
+          "A": "Enacting statutory minimum corporate tax surcharges",
+          "B": "Purchase and sale of government securities in the secondary market",
+          "C": "Direct fixation of minimum support prices for agricultural commodities",
+          "D": "Adjustment of personal income tax slabs"
+        },
+        "correct": "B",
+        "explanation": "Open Market Operations involve the direct buying and selling of government securities by the central bank to adjust the liquidity conditions in the commercial banking system. Thus, option B is correct."
+      },
+      {
+        "q": 21,
+        "topic": "General Polity",
+        "question": "Under the constitutional framework of Indian Polity, which specific body or authority is mandated to recommend the distribution of tax revenues between the Union and the States?",
+        "options": {
+          "A": "NITI Aayog",
+          "B": "The Reserve Bank of India",
+          "C": "The Finance Commission of India",
+          "D": "The Public Accounts Committee"
+        },
+        "correct": "C",
+        "explanation": "Constituted under Article 280 of the Constitution, the Finance Commission is a constitutional body that recommends principles governing the vertical and horizontal sharing of tax proceeds between the Centre and States. Thus, option C is correct."
+      },
+      {
+        "q": 22,
+        "topic": "Current Affairs",
+        "question": "Under recent economic policy frameworks, which flagship central sector scheme continues to drive digital public infrastructure and financial inclusion through JAM trinity integration?",
+        "options": {
+          "A": "Pradhan Mantri Jan Dhan Yojana",
+          "B": "National Infrastructure Pipeline",
+          "C": "Make in India Initiative",
+          "D": "Production Linked Incentive Scheme"
+        },
+        "correct": "A",
+        "explanation": "Pradhan Mantri Jan Dhan Yojana remains the foundational anchor for India's digital public infrastructure, facilitating direct benefit transfers and unprecedented financial inclusion. Thus, option A is correct."
+      },
+      {
+        "q": 23,
+        "topic": "Scientific Research",
+        "question": "What electrochemical transformation occurs at the anode during the operation of a standard galvanic or electrolytic cell?",
+        "options": {
+          "A": "Oxidation, involving the loss of electrons.",
+          "B": "Reduction, involving the gain of electrons.",
+          "C": "Neutralization of protons without electron transfer.",
+          "D": "Protonation of solvent molecules."
+        },
+        "correct": "A",
+        "explanation": "By definition in electrochemistry, the anode is always the electrode where oxidation (loss of electrons) takes place, regardless of whether the cell is galvanic or electrolytic. Thus, option A is correct."
+      },
+      {
+        "q": 24,
+        "topic": "Current Affairs",
+        "question": "Under recent international scientific recognitions, which prestigious global award honors pioneering breakthroughs in sustainable agricultural development, biological nitrogen fixation, and food security?",
+        "options": {
+          "A": "Abel Prize",
+          "B": "World Food Prize",
+          "C": "Pritzker Architecture Prize",
+          "D": "Turing Award"
+        },
+        "correct": "B",
+        "explanation": "The World Food Prize is the foremost international award recognizing individuals who have advanced human development by improving the quality, quantity, or availability of food in the world. Thus, option B is correct."
+      },
+      {
+        "q": 25,
+        "topic": "Current Affairs",
+        "question": "Which global financial organization publishes the flagship 'Global Financial Stability Report' alongside the 'World Economic Outlook'?",
+        "options": {
+          "A": "World Bank Group",
+          "B": "Asian Infrastructure Investment Bank",
+          "C": "International Monetary Fund (IMF)",
+          "D": "Bank for International Settlements"
+        },
+        "correct": "C",
+        "explanation": "The IMF publishes two major biannual analytical reports that guide global economic policy: the World Economic Outlook and the Global Financial Stability Report. Thus, option C is correct."
+      }
+    ],
+    "Quantitative Aptitude": [
+      {
+        "q": 1,
+        "topic": "Trigonometry",
+        "question": "If x + 1/x = 4, then the value of x cubed + 1/x cubed is:",
+        "options": {
+          "A": "48",
+          "B": "52",
+          "C": "64",
+          "D": "76"
+        },
+        "correct": "B",
+        "explanation": "Using the algebraic formula k cubed - 3k where k = 4, we get 4 cubed - 3(4) = 64 - 12 = 52. Thus, option B is correct."
+      },
+      {
+        "q": 2,
+        "topic": "Trigonometry",
+        "question": "An article is marked at Rs. 800. A shopkeeper allows a discount of 25% and still makes a profit of 20%. The cost price of the article is:",
+        "options": {
+          "A": "Rs. 480",
+          "B": "Rs. 540",
+          "C": "Rs. 560",
+          "D": "Rs. 500"
+        },
+        "correct": "D",
+        "explanation": "Selling price = 75% of 800 = Rs. 600. Since profit is 20%, Cost Price = 600 / 1.20 = Rs. 500. Thus, option D is correct."
+      },
+      {
+        "q": 3,
+        "topic": "Interest",
+        "question": "A sum of money invested at compound interest amounts to Rs. 2,400 in 2 years and Rs. 2,880 in 3 years. The rate of interest per annum is:",
+        "options": {
+          "A": "20%",
+          "B": "15%",
+          "C": "18%",
+          "D": "25%"
+        },
+        "correct": "A",
+        "explanation": "Interest for 1 year on Rs. 2,400 = 2,880 - 2,400 = Rs. 480. Rate = (480 / 2400) * 100 = 20%. Thus, option A is correct."
+      },
+      {
+        "q": 4,
+        "topic": "Averages",
+        "question": "The average of 9 numbers is 50. If the average of the first 5 numbers is 54 and that of the last 5 numbers is 46, then the fifth number is:",
+        "options": {
+          "A": "48",
+          "B": "52",
+          "C": "50",
+          "D": "54"
+        },
+        "correct": "C",
+        "explanation": "Sum of 9 numbers = 9 x 50 = 450. Sum of first 5 numbers = 5 x 54 = 270. Sum of last 5 numbers = 5 x 46 = 230. Fifth number = (270 + 230) - 450 = 500 - 450 = 50. Thus, option C is correct."
+      },
+      {
+        "q": 5,
+        "topic": "Trigonometry",
+        "question": "A pipe can fill a tank in 15 hours, and another pipe can empty it in 12 hours. If both pipes are opened simultaneously when the tank is completely full, the time taken to empty the tank is:",
+        "options": {
+          "A": "45 hours",
+          "B": "60 hours",
+          "C": "50 hours",
+          "D": "75 hours"
+        },
+        "correct": "B",
+        "explanation": "Let total capacity be 60 units. Filling rate = +4 units/hour, Emptying rate = -5 units/hour. Net rate = 4 - 5 = -1 unit/hour. Time taken to empty = 60 / 1 = 60 hours. Thus, option B is correct."
+      },
+      {
+        "q": 6,
+        "topic": "Trigonometry",
+        "question": "The speed of a boat in still water is 15 km/h and the speed of the current is 3 km/h. The distance traveled downstream in 36 minutes is:",
+        "options": {
+          "A": "10.8 km",
+          "B": "9.2 km",
+          "C": "11.4 km",
+          "D": "12.0 km"
+        },
+        "correct": "A",
+        "explanation": "Downstream speed = 15 + 3 = 18 km/h. Distance = Speed x Time = 18 x (36 / 60) = 18 x 0.6 = 10.8 km. Thus, option A is correct."
+      },
+      {
+        "q": 7,
+        "topic": "Interest",
+        "question": "If the simple interest on a certain sum for 3 years at 12% per annum is Rs. 6,750, then the compound interest on the same sum at the same rate for 2 years compounded annually is:",
+        "options": {
+          "A": "Rs. 4,824",
+          "B": "Rs. 4,624",
+          "C": "Rs. 4,500",
+          "D": "Rs. 4,770"
+        },
+        "correct": "D",
+        "explanation": "Principal = (6750 x 100) / (3 x 12) = Rs. 18,750. For 2 years at 12% compound interest, CI = 18750 * ((1.12)^2 - 1) = 18750 * 0.2544 = Rs. 4,770. Thus, option D is correct."
+      },
+      {
+        "q": 8,
+        "topic": "Trigonometry",
+        "question": "A shopkeeper marks his goods 40% above the cost price and allows a discount of 25%. His profit percentage is:",
+        "options": {
+          "A": "8%",
+          "B": "10%",
+          "C": "5%",
+          "D": "12%"
+        },
+        "correct": "C",
+        "explanation": "Let cost price be 100. Marked price = 140. Selling price = 75% of 140 = 105. Profit percentage = 5%. Thus, option C is correct."
+      },
+      {
+        "q": 9,
+        "topic": "Algebra",
+        "question": "If a number 672x19 is divisible by 9, what is the minimum value of x?",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4"
+        },
+        "correct": "B",
+        "explanation": "Sum of digits = 6 + 7 + 2 + x + 1 + 9 = 25 + x. For divisibility by 9, the sum must be a multiple of 9, so 25 + x = 27 implies x = 2. Thus, option B is correct."
+      },
+      {
+        "q": 10,
+        "topic": "Algebra",
+        "question": "The ratio of two numbers is 4: 5. If 4 is added to the first and 3 is subtracted from the second, the ratio becomes 1: 1. The original numbers are:",
+        "options": {
+          "A": "28, 35",
+          "B": "24, 30",
+          "C": "32, 40",
+          "D": "36, 45"
+        },
+        "correct": "A",
+        "explanation": "Let numbers be 4x and 5x. (4x + 4) / (5x - 3) = 1 / 1 gives x = 7. Numbers are 28 and 35. Thus, option A is correct."
+      },
+      {
+        "q": 11,
+        "topic": "Mensuration",
+        "question": "The area of an equilateral triangle is 36 root 3 square centimeters. Its perimeter is:",
+        "options": {
+          "A": "24 cm",
+          "B": "30 cm",
+          "C": "36 cm",
+          "D": "42 cm"
+        },
+        "correct": "C",
+        "explanation": "Area of an equilateral triangle is given by (root(3) / 4) * a^2 = 36 * root(3), where a is the side length. Canceling root(3) from both sides gives a^2 / 4 = 36, which implies a^2 = 144, so a = 12 cm. The perimeter of an equilateral triangle is 3a = 3 * 12 = 36 cm. Thus, option C is correct."
+      },
+      {
+        "q": 12,
+        "topic": "Trigonometry",
+        "question": "A train running at 54 km/h takes 30 seconds to cross a platform. If the length of the train is 200 meters, then the length of the platform is:",
+        "options": {
+          "A": "200 m",
+          "B": "225 m",
+          "C": "275 m",
+          "D": "250 m"
+        },
+        "correct": "D",
+        "explanation": "Speed = 15 m/s. Total distance = 15 x 30 = 450 meters. Length of platform = 450 - 200 = 250 meters. Thus, option D is correct."
+      },
+      {
+        "q": 13,
+        "topic": "Trigonometry",
+        "question": "The length of a rectangular park is 20 meters more than its breadth. If the perimeter of the park is 160 meters, find its area in square meters.",
+        "options": {
+          "A": "1200",
+          "B": "1400",
+          "C": "1500",
+          "D": "1600"
+        },
+        "correct": "C",
+        "explanation": "Let breadth be b. Length l = b + 20. Perimeter = 2(l + b) = 160, so l + b = 80. Substituting l gives b + 20 + b = 80, which yields breadth = 30 m and length = 50 m. Area = length x breadth = 50 x 30 = 1500 sq. m. Thus, option C is correct."
+      },
+      {
+        "q": 14,
+        "topic": "Averages",
+        "question": "The average weight of 40 students in a class is 50 kg. When 5 new students join, the average weight increases by 1 kg. The average weight of the 5 new students is:",
+        "options": {
+          "A": "59 kg",
+          "B": "56 kg",
+          "C": "60 kg",
+          "D": "62 kg"
+        },
+        "correct": "A",
+        "explanation": "Total weight of 40 students = 2000 kg. Total weight of 45 students = 2295 kg. Weight of 5 new students = 295 kg. Average = 295 / 5 = 59 kg. Thus, option A is correct."
+      },
+      {
+        "q": 15,
+        "topic": "Trigonometry",
+        "question": "A man covers a certain distance at 40 km/h and returns at 60 km/h. His average speed for the whole journey is:",
+        "options": {
+          "A": "50 km/h",
+          "B": "52 km/h",
+          "C": "48 km/h",
+          "D": "54 km/h"
+        },
+        "correct": "C",
+        "explanation": "Average speed = (2 x 40 x 60) / (40 + 60) = 4800 / 100 = 48 km/h. Thus, option C is correct."
+      },
+      {
+        "q": 16,
+        "topic": "Trigonometry",
+        "question": "If sin(theta) = 3/5, where theta is an acute angle, then the value of (sec(theta) + tan(theta)) is:",
+        "options": {
+          "A": "1",
+          "B": "3",
+          "C": "4",
+          "D": "2"
+        },
+        "correct": "D",
+        "explanation": "Given sin(theta) = 3/5 with theta as an acute angle, cos(theta) = root(1 - (3/5)^2) = 4/5. Consequently, sec(theta) = 5/4 and tan(theta) = 3/4. Therefore, sec(theta) + tan(theta) = 5/4 + 3/4 = 8/4 = 2. Thus, option D is correct."
+      },
+      {
+        "q": 17,
+        "topic": "Interest",
+        "question": "A sum of money becomes 4 times of itself in 15 years at simple interest. In how many years will it become 7 times of itself?",
+        "options": {
+          "A": "25 years",
+          "B": "30 years",
+          "C": "35 years",
+          "D": "40 years"
+        },
+        "correct": "B",
+        "explanation": "Interest earned for 3P is 15 years, so P takes 5 years. For 7 times, interest needed is 6P, taking 30 years. Thus, option B is correct."
+      },
+      {
+        "q": 18,
+        "topic": "Percentages",
+        "question": "Each interior angle of a regular polygon is 5 times its exterior angle. The number of sides of the polygon is:",
+        "options": {
+          "A": "12",
+          "B": "10",
+          "C": "14",
+          "D": "16"
+        },
+        "correct": "A",
+        "explanation": "Exterior angle = 30 degrees. Number of sides = 360 / 30 = 12. Thus, option A is correct."
+      },
+      {
+        "q": 19,
+        "topic": "Trigonometry",
+        "question": "A shopkeeper sells an article at a profit of 20%. If he had bought it at 10% less and sold it for Rs. 12 less, he would have gained 25%. The initial cost price of the article is:",
+        "options": {
+          "A": "Rs. 150",
+          "B": "Rs. 200",
+          "C": "Rs. 160",
+          "D": "Rs. 240"
+        },
+        "correct": "C",
+        "explanation": "Initial cost price = 100x and initial selling price = 120x. If bought at 10% less, new cost price = 90x. A profit of 25% on this new cost price gives a new selling price of 1.25 * 90x = 112.5x. The difference between initial and new selling prices is 120x - 112.5x = 7.5x. Given that this difference is Rs. 12, solving 7.5x = 12 gives x = 1.6. Thus, the initial cost price is 100 * 1.6 = Rs. 160. Thus, option C is correct."
+      },
+      {
+        "q": 20,
+        "topic": "Algebra",
+        "question": "If x + y + z = 10 and xy + yz + zx = 31, then the value of x cubed + y cubed + z cubed - 3xyz is:",
+        "options": {
+          "A": "65",
+          "B": "75",
+          "C": "80",
+          "D": "70"
+        },
+        "correct": "D",
+        "explanation": "Formula: (x + y + z) * ((x + y + z) squared - 3(xy + yz + zx)) = 10 * (100 - 93) = 70. Thus, option D is correct."
+      },
+      {
+        "q": 21,
+        "topic": "Mixture and allegation",
+        "question": "A vessel contains a mixture of milk and water in the ratio 7: 5. When 9 liters of mixture is drawn off and replaced with water, the ratio becomes 7: 9. The initial quantity of milk in the vessel was:",
+        "options": {
+          "A": "21 liters",
+          "B": "28 liters",
+          "C": "35 liters",
+          "D": "42 liters"
+        },
+        "correct": "A",
+        "explanation": "Solving the mixture equation gives x = 3, so initial milk = 7 x 3 = 21 liters. Thus, option A is correct."
+      },
+      {
+        "q": 22,
+        "topic": "Ratio and proportion",
+        "question": "What is the total number of employees working in the IT department?",
+        "options": {
+          "A": "330",
+          "B": "350",
+          "C": "370",
+          "D": "400"
+        },
+        "correct": "C",
+        "explanation": "Total employees = 1,200. Operations = 40% of 1200 = 480. Marketing = 350. IT = 1200 - (480 + 350) = 1200 - 830 = 370. Thus, option C is correct."
+      },
+      {
+        "q": 23,
+        "topic": "Ratio and proportion",
+        "question": "What is the number of female employees in the Operations department?",
+        "options": {
+          "A": "160",
+          "B": "180",
+          "C": "192",
+          "D": "210"
+        },
+        "correct": "C",
+        "explanation": "Operations has 480 employees, with male to female ratio 3:2. Female employees = (2 / 5) x 480 = 2 x 96 = 192. Thus, option C is correct."
+      },
+      {
+        "q": 24,
+        "topic": "Percentages",
+        "question": "What is the number of male employees in the IT department?",
+        "options": {
+          "A": "200",
+          "B": "210",
+          "C": "222",
+          "D": "240"
+        },
+        "correct": "C",
+        "explanation": "Total IT employees = 370. Female percentage in IT is 40%, so female employees = 40% of 370 = 148. Male employees = 370 - 148 = 222. Thus, option C is correct."
+      },
+      {
+        "q": 25,
+        "topic": "Ratio and proportion",
+        "question": "If 20 percent of Marketing employees are female, what is the total number of female employees across all three departments combined?",
+        "options": {
+          "A": "390",
+          "B": "410",
+          "C": "430",
+          "D": "450"
+        },
+        "correct": "B",
+        "explanation": "Operations females = 192. IT females = 148. Marketing females = 20% of 350 = 70. Total females = 192 + 148 + 70 = 410. Thus, option B is correct."
+      }
+    ],
+    "English Comprehension": [
+      {
+        "q": 1,
+        "topic": "Grammar",
+        "question": "Identify the advanced grammatical error in the given sentence:\nSeldom had the seasoned diplomat encountered such a complex geopolitical dilemma that defied all conventional diplomatic protocols.",
+        "options": {
+          "A": "Seldom had the seasoned diplomat",
+          "B": "encountered such a complex",
+          "C": "geopolitical dilemma that defied",
+          "D": "No error"
+        },
+        "correct": "D",
+        "explanation": "The sentence correctly uses subject-verb inversion ('had the seasoned diplomat') following the negative introductory adverb 'Seldom', and the relative pronoun/conjunction structure is fully accurate. Thus, option D is correct."
+      },
+      {
+        "q": 2,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option to improve the underlined segment:\nShe is more taller than any other student in her graduating batch.",
+        "options": {
+          "A": "taller than any other",
+          "B": "more tall than any",
+          "C": "tallest than all",
+          "D": "taller then any other"
+        },
+        "correct": "A",
+        "explanation": "Double comparatives like 'more taller' are incorrect. The correct form is 'taller than any other'. Thus, option A is correct."
+      },
+      {
+        "q": 3,
+        "topic": "Grammar",
+        "question": "Select the correct passive form of the sentence:\nThe committee discussed the crucial policy matter thoroughly.",
+        "options": {
+          "A": "The crucial policy matter is discussed thoroughly by the committee.",
+          "B": "The crucial policy matter was discussed thoroughly by the committee.",
+          "C": "The crucial policy matter had been discussed thoroughly by the committee.",
+          "D": "The crucial policy matter is being discussed thoroughly by the committee."
+        },
+        "correct": "B",
+        "explanation": "The active sentence is in Simple Past tense ('discussed'), so its passive form requires 'was/were + past participle'. Thus, option B is correct."
+      },
+      {
+        "q": 4,
+        "topic": "Grammar",
+        "question": "Select the correct indirect speech form of the sentence:\nShe said to him, 'Where are you planning to travel this summer?'",
+        "options": {
+          "A": "She asked him where he is planning to travel that summer.",
+          "B": "She asked him that where he was planning to travel this summer.",
+          "C": "She asked him where he was planning to travel that summer.",
+          "D": "She told him where were you planning to travel this summer."
+        },
+        "correct": "C",
+        "explanation": "In indirect speech of a WH-question, the reporting verb becomes 'asked', the interrogative structure changes to assertive ('he was planning'), and 'this' changes to 'that'. Thus, option C is correct."
+      },
+      {
+        "q": 5,
+        "topic": "Vocabulary",
+        "question": "Select the advanced one-word substitution for:\nA person who is excessively concerned with minor details, rules, or academic learning.",
+        "options": {
+          "A": "Pedant",
+          "B": "Dilettante",
+          "C": "Charlatan",
+          "D": "Iconoclast"
+        },
+        "correct": "A",
+        "explanation": "A pedant is someone excessively concerned with minor academic details and formal rules. Thus, option A is correct."
+      },
+      {
+        "q": 6,
+        "topic": "Vocabulary",
+        "question": "Select the most appropriate meaning of the advanced idiom:\nTo rest on one's laurels",
+        "options": {
+          "A": "To sleep peacefully after hard labor",
+          "B": "To be complacent and rely entirely on past achievements",
+          "C": "To decorate an office with botanical foliage",
+          "D": "To retire permanently from public service"
+        },
+        "correct": "B",
+        "explanation": "The idiom 'to rest on one's laurels' means to be satisfied with past success and stop working hard. Thus, option B is correct."
+      },
+      {
+        "q": 7,
+        "topic": "Vocabulary",
+        "question": "Select the synonym of the advanced vocabulary word:\nPESSIMISTIC",
+        "options": {
+          "A": "Sanguine",
+          "B": "Credulous",
+          "C": "Fastidious",
+          "D": "Defeatist"
+        },
+        "correct": "D",
+        "explanation": "Defeatist and pessimistic share the core meaning of expecting failure. Thus, option D is correct."
+      },
+      {
+        "q": 8,
+        "topic": "Vocabulary",
+        "question": "Select the antonym of the advanced vocabulary word:\nOBSTINATE",
+        "options": {
+          "A": "Stubborn",
+          "B": "Tenacious",
+          "C": "Yielding",
+          "D": "Adamant"
+        },
+        "correct": "C",
+        "explanation": "Obstinate means refusing to change opinion; yielding (compliant) is its direct antonym. Thus, option C is correct."
+      },
+      {
+        "q": 9,
+        "topic": "Spelling",
+        "question": "Identify the word with the correct spelling among the options:",
+        "options": {
+          "A": "Questionnaire",
+          "B": "Questionaire",
+          "C": "Questionnair",
+          "D": "Questioner"
+        },
+        "correct": "A",
+        "explanation": "'Questionnaire' is the correct spelling. Thus, option A is correct."
+      },
+      {
+        "q": 10,
+        "topic": "Grammar",
+        "question": "Spot the error in the given sentence:\nHardly had I stepped out of the railway station than it began to pour heavily.",
+        "options": {
+          "A": "Hardly had I",
+          "B": "stepped out of",
+          "C": "the railway station",
+          "D": "than it began to pour heavily."
+        },
+        "correct": "D",
+        "explanation": "The correlative conjunction for 'Hardly' is 'when', not 'than'. Therefore, 'than' should be replaced by 'when'. Thus, option D is correct."
+      },
+      {
+        "q": 11,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option to improve the underlined segment:\nOne of my colleagues have submitted their resignation letter yesterday.",
+        "options": {
+          "A": "submitted",
+          "B": "have submitted",
+          "C": "had submitted",
+          "D": "were submitting"
+        },
+        "correct": "A",
+        "explanation": "Due to the definite past time marker 'yesterday', standard English requires the simple past tense 'submitted' instead of present perfect forms. Thus, option A is correct."
+      },
+      {
+        "q": 12,
+        "topic": "Vocabulary",
+        "question": "Select the synonym of the given word:\nEPHEMERAL",
+        "options": {
+          "A": "Permanent",
+          "B": "Eternal",
+          "C": "Transient",
+          "D": "Perpetual"
+        },
+        "correct": "C",
+        "explanation": "Ephemeral means lasting for a very short time; transient is a direct synonym. Thus, option C is correct."
+      },
+      {
+        "q": 13,
+        "topic": "Vocabulary",
+        "question": "Select the antonym of the given word:\nBENEVOLENT",
+        "options": {
+          "A": "Kind",
+          "B": "Malevolent",
+          "C": "Generous",
+          "D": "Altruistic"
+        },
+        "correct": "B",
+        "explanation": "Benevolent means well-meaning and kindly; malevolent (wishing evil) is its antonym. Thus, option B is correct."
+      },
+      {
+        "q": 14,
+        "topic": "Vocabulary",
+        "question": "Select the one-word substitution for:\nA person who leads an unconventional lifestyle, often associated with artists and writers.",
+        "options": {
+          "A": "Bourgeois",
+          "B": "Ascetic",
+          "C": "Hermit",
+          "D": "Bohemian"
+        },
+        "correct": "D",
+        "explanation": "A bohemian is a person who leads an unconventional lifestyle, often associated with the arts. Thus, option D is correct."
+      },
+      {
+        "q": 15,
+        "topic": "Vocabulary",
+        "question": "Select the meaning of the given idiom:\nTo burn the midnight oil",
+        "options": {
+          "A": "To cause a major fire at night",
+          "B": "To waste petroleum resources",
+          "C": "To travel after sunset",
+          "D": "To work or study late into the night"
+        },
+        "correct": "D",
+        "explanation": "The idiom means to work or study late into the night. Thus, option D is correct."
+      },
+      {
+        "q": 16,
+        "topic": "Grammar",
+        "question": "Identify the sentence with correct grammar and structure:",
+        "options": {
+          "A": "Each of the participating athletes were given a medal.",
+          "B": "Every boy and every girl was present at the seminar.",
+          "C": "Neither of the two options are acceptable.",
+          "D": "Ten miles are a long distance to walk."
+        },
+        "correct": "B",
+        "explanation": "When two singular subjects are connected by 'and' preceded by 'every', the verb is singular ('was present'). Thus, option B is correct."
+      },
+      {
+        "q": 17,
+        "topic": "Reading Comprehension",
+        "question": "According to the passage, what has democratized access to learning?",
+        "options": {
+          "A": "Physical libraries",
+          "B": "The internet",
+          "C": "Traditional printing",
+          "D": "Academic institutions"
+        },
+        "correct": "B",
+        "explanation": "The passage explicitly states that the internet has democratized access to learning. Thus, option B is correct.",
+        "passage": "The digital revolution has transformed how society consumes information. While physical books and libraries were once the sole custodians of knowledge, the internet has democratized access to learning. However, this shift has also introduced challenges, such as information overload and the spread of unverified data. Critical thinking has therefore become an essential skill in the modern information ecosystem, enabling individuals to discern credible sources from digital noise."
+      },
+      {
+        "q": 18,
+        "topic": "Reading Comprehension",
+        "question": "What is identified as a challenge brought by the digital shift?",
+        "options": {
+          "A": "Decline in literacy rates",
+          "B": "High cost of digital devices",
+          "C": "Complete loss of printed books",
+          "D": "Information overload and unverified data"
+        },
+        "correct": "D",
+        "explanation": "The passage mentions challenges such as information overload and the spread of unverified data. Thus, option D is correct.",
+        "passage": "The digital revolution has transformed how society consumes information. While physical books and libraries were once the sole custodians of knowledge, the internet has democratized access to learning. However, this shift has also introduced challenges, such as information overload and the spread of unverified data. Critical thinking has therefore become an essential skill in the modern information ecosystem, enabling individuals to discern credible sources from digital noise."
+      },
+      {
+        "q": 19,
+        "topic": "Grammar",
+        "question": "Which skill has become essential in the modern information ecosystem according to the author?",
+        "options": {
+          "A": "Critical thinking",
+          "B": "Speed reading",
+          "C": "Computer programming",
+          "D": "Data collection"
+        },
+        "correct": "A",
+        "explanation": "The text states that critical thinking has become an essential skill to discern credible sources. Thus, option A is correct.",
+        "passage": "The digital revolution has transformed how society consumes information. While physical books and libraries were once the sole custodians of knowledge, the internet has democratized access to learning. However, this shift has also introduced challenges, such as information overload and the spread of unverified data. Critical thinking has therefore become an essential skill in the modern information ecosystem, enabling individuals to discern credible sources from digital noise."
+      },
+      {
+        "q": 20,
+        "topic": "Reading Comprehension",
+        "question": "What can be inferred about the impact of the digital revolution on human knowledge from the passage?",
+        "options": {
+          "A": "It has eliminated all errors in published information.",
+          "B": "It has centralized knowledge exclusively in physical libraries.",
+          "C": "It has broadened knowledge accessibility while simultaneously complicating its verification.",
+          "D": "It has completely replaced the need for critical thinking skills."
+        },
+        "correct": "C",
+        "explanation": "From the text, we infer that while the internet democratized access (broadened accessibility), it introduced information overload and unverified data (complicating verification). Thus, option C is correct.",
+        "passage": "The digital revolution has transformed how society consumes information. While physical books and libraries were once the sole custodians of knowledge, the internet has democratized access to learning. However, this shift has also introduced challenges, such as information overload and the spread of unverified data. Critical thinking has therefore become an essential skill in the modern information ecosystem, enabling individuals to discern credible sources from digital noise."
+      },
+      {
+        "q": 21,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option for blank 5.",
+        "options": {
+          "A": "expanded",
+          "B": "threatened",
+          "C": "enriched",
+          "D": "preserved"
+        },
+        "correct": "B",
+        "explanation": "Freshwater resources are increasingly 'threatened' by pollution and climate change. Thus, option B is correct.",
+        "passage": "Water is essential for life on Earth. However, freshwater resources are increasingly (5) due to pollution and climate change. Protecting our water bodies requires (6) efforts from governments and citizens alike. Simple habits like fixing leaks and (7) water usage can make a significant difference. Furthermore, industries must adopt cleaner production methods to (8) toxic waste runoff. Ensuring water security for future generations is a (9) responsibility."
+      },
+      {
+        "q": 22,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option for blank 6.",
+        "options": {
+          "A": "concerted",
+          "B": "negligent",
+          "C": "isolated",
+          "D": "casual"
+        },
+        "correct": "A",
+        "explanation": "'Concerted efforts' means joint or coordinated efforts, which fits the context. Thus, option A is correct.",
+        "passage": "Water is essential for life on Earth. However, freshwater resources are increasingly (5) due to pollution and climate change. Protecting our water bodies requires (6) efforts from governments and citizens alike. Simple habits like fixing leaks and (7) water usage can make a significant difference. Furthermore, industries must adopt cleaner production methods to (8) toxic waste runoff. Ensuring water security for future generations is a (9) responsibility."
+      },
+      {
+        "q": 23,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option for blank 7.",
+        "options": {
+          "A": "wasting",
+          "B": "ignoring",
+          "C": "optimizing",
+          "D": "increasing"
+        },
+        "correct": "C",
+        "explanation": "Optimizing water usage helps in conservation alongside fixing leaks. Thus, option C is correct.",
+        "passage": "Water is essential for life on Earth. However, freshwater resources are increasingly (5) due to pollution and climate change. Protecting our water bodies requires (6) efforts from governments and citizens alike. Simple habits like fixing leaks and (7) water usage can make a significant difference. Furthermore, industries must adopt cleaner production methods to (8) toxic waste runoff. Ensuring water security for future generations is a (9) responsibility."
+      },
+      {
+        "q": 24,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option for blank 8.",
+        "options": {
+          "A": "generate",
+          "B": "encourage",
+          "C": "amplify",
+          "D": "minimize"
+        },
+        "correct": "D",
+        "explanation": "Industries must adopt cleaner production methods to 'minimize' toxic waste runoff. Thus, option D is correct.",
+        "passage": "Water is essential for life on Earth. However, freshwater resources are increasingly (5) due to pollution and climate change. Protecting our water bodies requires (6) efforts from governments and citizens alike. Simple habits like fixing leaks and (7) water usage can make a significant difference. Furthermore, industries must adopt cleaner production methods to (8) toxic waste runoff. Ensuring water security for future generations is a (9) responsibility."
+      },
+      {
+        "q": 25,
+        "topic": "Grammar",
+        "question": "Select the most appropriate option for blank 9.",
+        "options": {
+          "A": "trivial",
+          "B": "collective",
+          "C": "personal",
+          "D": "secondary"
+        },
+        "correct": "B",
+        "explanation": "Ensuring water security is a 'collective' responsibility. Thus, option B is correct.",
+        "passage": "Water is essential for life on Earth. However, freshwater resources are increasingly (5) due to pollution and climate change. Protecting our water bodies requires (6) efforts from governments and citizens alike. Simple habits like fixing leaks and (7) water usage can make a significant difference. Furthermore, industries must adopt cleaner production methods to (8) toxic waste runoff. Ensuring water security for future generations is a (9) responsibility."
+      }
+    ]
+  }
+}

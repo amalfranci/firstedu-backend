@@ -1,0 +1,2356 @@
+{
+  "paper_id": "NEET-Paper3",
+  "title": "NEET Paper 3",
+  "exam": "NEET",
+  "year": 2026,
+  "subjects": {
+    "Physics": [
+      {
+        "q": 1,
+        "topic": "Kinematics",
+        "question": "A particle moves along a straight line with an acceleration given by a = 6t - 4, where t is in seconds. If its initial velocity at t = 0 is 3 m/s, the displacement of the particle between t = 0 and t = 2 seconds is:",
+        "options": {
+          "A": "8 m",
+          "B": "10 m",
+          "C": "4 m",
+          "D": "6 m"
+        },
+        "correct": "D",
+        "explanation": "Integrating acceleration yields velocity v(t) = 3t^2 - 4t + 3. Integrating velocity gives displacement s(t) = t^3 - 2t^2 + 3t. Evaluating at t = 2 gives s(2) = 6 m. Therefore, option (D) is correct."
+      },
+      {
+        "q": 2,
+        "topic": "Rotational Motion",
+        "question": "A solid cylinder of mass 4 kg and radius 0.2 m is rolling without slipping on a horizontal surface with a translational speed of 5 m/s. The total kinetic energy of the cylinder is:",
+        "options": {
+          "A": "125 J",
+          "B": "75 J",
+          "C": "50 J",
+          "D": "100 J"
+        },
+        "correct": "B",
+        "explanation": "Total kinetic energy K = (1/2)mv^2 + (1/2)Iω^2. For a solid cylinder, I = (1/2)mr^2 and ω = v/r, so K = (3/4)mv^2 = (3/4) * 4 * 25 = 75 J. Therefore, option (B) is correct."
+      },
+      {
+        "q": 3,
+        "topic": "Work, Energy and Power",
+        "question": "A force F = (4x^3 - 3x^2 + 2) N acts on a particle, displacing it along the x-axis from x = 0 to x = 2 m. The work done by this force is:",
+        "options": {
+          "A": "14 J",
+          "B": "18 J",
+          "C": "12 J",
+          "D": "6 J"
+        },
+        "correct": "C",
+        "explanation": "Work done W = ∫0 2 (4x^3 - 3x^2 + 2) dx = [x^4 - x^3 + 2x] from 0 to 2 = (16 - 8 + 4) = 12 J. Therefore, option (C) is correct."
+      },
+      {
+        "q": 4,
+        "topic": "Gravitation",
+        "question": "A satellite of mass 200 kg is orbiting the Earth in a circular orbit at a height equal to the Earth's radius R. Taking the Earth's mass as M and radius as R, the minimum extra energy required to allow the satellite to escape completely from Earth's gravitational field is:",
+        "options": {
+          "A": "GMm / (2R)",
+          "B": "3GMm / (4R)",
+          "C": "GMm / (4R)",
+          "D": "GMm / R"
+        },
+        "correct": "C",
+        "explanation": "Orbit radius r = 2R. Total mechanical energy in orbit E = -GMm / (4R). Escape energy required ΔE = 0 - (-GMm / 4R) = GMm / (4R). Therefore, option (C) is correct."
+      },
+      {
+        "q": 5,
+        "topic": "Physics and Measurement",
+        "question": "The dimensional formula for Planck's constant h is:",
+        "options": {
+          "A": "[M L^2 T^-1]",
+          "B": "[M L^2 T^-2]",
+          "C": "[M^-1 L^2 T^-1]",
+          "D": "[M L T^-1]"
+        },
+        "correct": "A",
+        "explanation": "From E = hν, h = E / ν. Dimensions of energy E = [ML^2T^-2] and frequency ν = [T^-1], so h = [ML^2T^-1]. Therefore, option (A) is correct."
+      },
+      {
+        "q": 6,
+        "topic": "Rotational Motion",
+        "question": "Two point masses of 1 kg and 2 kg are placed on the x-axis at x = 0 and x = 3 m respectively. Where should a third mass of 3 kg be placed on the x-axis so that the center of mass of the system lies at x = 2 m?",
+        "options": {
+          "A": "1.5 m",
+          "B": "1 m",
+          "C": "2.5 m",
+          "D": "2 m"
+        },
+        "correct": "D",
+        "explanation": "Using X_cm = (∑ m_i x_i) / (∑ m_i) = 2 => (1(0) + 2(3) + 3*x)/6 = 2 => 6 + 3x = 12 => 3x = 6 => x = 2 m. Therefore, option (D) is correct."
+      },
+      {
+        "q": 7,
+        "topic": "Work, Energy and Power",
+        "question": "A ball of mass 0.5 kg moving with a speed of 10 m/s collides head-on with another stationary ball of mass 1.5 kg. If the collision is perfectly inelastic, the loss of kinetic energy during the collision is:",
+        "options": {
+          "A": "25.0 J",
+          "B": "18.75 J",
+          "C": "37.5 J",
+          "D": "12.5 J"
+        },
+        "correct": "B",
+        "explanation": "By conservation of momentum, final velocity v = 2.5 m/s. Initial KE = 25 J, final KE = 6.25 J. Loss in KE = 25 - 6.25 = 18.75 J. Therefore, option (B) is correct."
+      },
+      {
+        "q": 8,
+        "topic": "Oscillations and Waves",
+        "question": "A particle executes simple harmonic motion with an amplitude A and angular frequency ω. At what displacement from the mean position is its kinetic energy equal to three times its potential energy?",
+        "options": {
+          "A": "A / 2",
+          "B": "A / √2",
+          "C": "√3 A / 2",
+          "D": "A / 4"
+        },
+        "correct": "A",
+        "explanation": "Equating K = 3U gives (1/2)mω^2(A^2 - x^2) = 3*(1/2)mω^2 x^2 => A^2 - x^2 = 3x^2 => 4x^2 = A^2 => x = A / 2. Therefore, option (A) is correct."
+      },
+      {
+        "q": 9,
+        "topic": "Work, Energy and Power",
+        "question": "An ideal monoatomic gas undergoes an isobaric expansion from volume V to 3V at a constant pressure P. The ratio of work done by the gas to the heat supplied to the gas is:",
+        "options": {
+          "A": "3 / 5",
+          "B": "2 / 5",
+          "C": "1 / 3",
+          "D": "2 / 3"
+        },
+        "correct": "B",
+        "explanation": "Work done W = P(3V - V) = 2PV. Heat supplied Q = n C_p ΔT = 5PV. Ratio W/Q = 2/5. Therefore, option (B) is correct."
+      },
+      {
+        "q": 10,
+        "topic": "Kinematics",
+        "question": "A car travels the first half of a total distance with a speed of 20 m/s and the second half with a speed of 30 m/s. The average speed of the car for the entire journey is:",
+        "options": {
+          "A": "25 m/s",
+          "B": "28 m/s",
+          "C": "24 m/s",
+          "D": "22 m/s"
+        },
+        "correct": "C",
+        "explanation": "Average speed for equal distances = 2v1v2 / (v1 + v2) = (2 * 20 * 30) / (20 + 30) = 1200 / 50 = 24 m/s. Therefore, option (C) is correct."
+      },
+      {
+        "q": 11,
+        "topic": "Properties of Solids and Liquids",
+        "question": "Water flows through a horizontal pipe whose internal diameter is 4 cm at one end and 2 cm at the other end. If the speed of water at the wider section is 2 m/s, the speed of water at the narrower section is:",
+        "options": {
+          "A": "2 m/s",
+          "B": "16 m/s",
+          "C": "4 m/s",
+          "D": "8 m/s"
+        },
+        "correct": "D",
+        "explanation": "By equation of continuity A1v1 = A2v2 => (4)^2 * 2 = (2)^2 * v2 => 16 * 2 = 4 * v2 => v2 = 8 m/s. Therefore, option (D) is correct."
+      },
+      {
+        "q": 12,
+        "topic": "Optics",
+        "question": "In a Young's double slit experiment, the intensity at a point on the screen where the path difference is λ/4 is K, where K is some constant. The maximum intensity on the screen is:",
+        "options": {
+          "A": "4K",
+          "B": "K / 2",
+          "C": "2K",
+          "D": "3K"
+        },
+        "correct": "C",
+        "explanation": "Path difference λ/4 corresponds to phase difference π/2. Using I = I_0 cos^2(φ/2) gives I = I_0(1/2) = K => I_0 = 2K. Therefore, option (C) is correct."
+      },
+      {
+        "q": 13,
+        "topic": "Current Electricity",
+        "question": "In a potentiometer experiment, the balancing length for a cell of emf 1.5 V is found to be 300 cm. If the cell is replaced by another cell, the balancing length shifts to 400 cm. The emf of the second cell is:",
+        "options": {
+          "A": "2.5 V",
+          "B": "1.2 V",
+          "C": "1.8 V",
+          "D": "2.0 V"
+        },
+        "correct": "D",
+        "explanation": "By potentiometer principle E1 / E2 = l1 / l2 => 1.5 / E2 = 300 / 400 => E2 = 2.0 V. Therefore, option (D) is correct."
+      },
+      {
+        "q": 14,
+        "topic": "Electronic Devices",
+        "question": "A wire of resistance 20 ohms is stretched uniformly until its length is doubled. The new resistance of the wire becomes:",
+        "options": {
+          "A": "10 ohms",
+          "B": "40 ohms",
+          "C": "160 ohms",
+          "D": "80 ohms"
+        },
+        "correct": "D",
+        "explanation": "Stretching a wire to n times its length increases resistance by n^2. Here n = 2, so R' = 4 * 20 = 80 ohms. Therefore, option (D) is correct."
+      },
+      {
+        "q": 15,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "A metallic square loop of side L and resistance R is moved at a constant velocity v into a uniform magnetic field B directed perpendicular to the plane of the loop. The maximum electrical power dissipated during the entry of the loop into the field is:",
+        "options": {
+          "A": "B^2 L^2 v^2 / (2R)",
+          "B": "B L v / R",
+          "C": "2 B^2 L^2 v^2 / R",
+          "D": "B^2 L^2 v^2 / R"
+        },
+        "correct": "D",
+        "explanation": "Motional emf E = BLv, and maximum power dissipated P = E^2 / R = B^2 L^2 v^2 / R. Therefore, option (D) is correct."
+      },
+      {
+        "q": 16,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "An LCR series circuit with inductance L = 0.5 H, capacitance C = 10 microfarads, and resistance R = 10 ohms is connected to an ac source. The resonant frequency of the circuit is approximately:",
+        "options": {
+          "A": "100 Hz",
+          "B": "141 Hz",
+          "C": "71 Hz",
+          "D": "50 Hz"
+        },
+        "correct": "C",
+        "explanation": "Resonant frequency f_0 = 1 / (2π√(LC)) calculates to approximately 71 Hz. Therefore, option (C) is correct."
+      },
+      {
+        "q": 17,
+        "topic": "Optics",
+        "question": "A ray of light strikes a glass slab of refractive index √2 at an angle of incidence of 45 degrees. The angle of refraction inside the glass slab is:",
+        "options": {
+          "A": "45 degrees",
+          "B": "30 degrees",
+          "C": "60 degrees",
+          "D": "15 degrees"
+        },
+        "correct": "B",
+        "explanation": "By Snell's law (sin i / sin r = n) with i = 45 and n = √2, sin r = 1/2, giving r = 30 degrees. Therefore, option (B) is correct."
+      },
+      {
+        "q": 18,
+        "topic": "Dual Nature of Matter and Radiation",
+        "question": "Light of wavelength 400 nm is incident on a photosensitive metal surface of work function 2.0 eV. The maximum kinetic energy of emitted photoelectrons is: (Take hc = 1240 eV-nm)",
+        "options": {
+          "A": "1.1 eV",
+          "B": "2.0 eV",
+          "C": "3.1 eV",
+          "D": "0.5 eV"
+        },
+        "correct": "A",
+        "explanation": "Incident photon energy E = 1240 / 400 = 3.1 eV. Maximum kinetic energy K_max = E - φ = 3.1 - 2.0 = 1.1 eV. Therefore, option (A) is correct."
+      },
+      {
+        "q": 19,
+        "topic": "Atoms and Nuclei",
+        "question": "The binding energy per nucleon of a lithium nucleus (Li-7) having mass 7.016 u is: (Given mass of proton = 1.0078 u, mass of neutron = 1.0087 u)",
+        "options": {
+          "A": "5.6 MeV/nucleon",
+          "B": "8.8 MeV/nucleon",
+          "C": "3.2 MeV/nucleon",
+          "D": "7.5 MeV/nucleon"
+        },
+        "correct": "A",
+        "explanation": "Mass defect Δm = 0.0422 u, yielding a total binding energy of ~39.3 MeV, which is ~5.6 MeV per nucleon. Therefore, option (A) is correct."
+      },
+      {
+        "q": 20,
+        "topic": "Electronic Devices",
+        "question": "In a reverse-biased p-n junction diode, the current flowing through the circuit is primarily due to:",
+        "options": {
+          "A": "Diffusion of majority charge carriers",
+          "B": "Drift of minority charge carriers",
+          "C": "High forward voltage breakdown",
+          "D": "Thermal generation of covalent bonds"
+        },
+        "correct": "B",
+        "explanation": "In reverse bias, minority charge carriers are swept across the depletion region by the electric field, constituting a drift current. Therefore, option (B) is correct."
+      },
+      {
+        "q": 21,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "A proton enters a uniform magnetic field of 0.2 T with a velocity of 3 * 10^5 m/s at right angles to the field. The magnetic force acting on the proton is: (Charge of proton = 1.6 * 10^-19 C)",
+        "options": {
+          "A": "9.6 * 10^-15 N",
+          "B": "3.2 * 10^-15 N",
+          "C": "4.8 * 10^-15 N",
+          "D": "1.92 * 10^-14 N"
+        },
+        "correct": "A",
+        "explanation": "Magnetic force F = qvB sin(90) = (1.6 * 10^-19) * (3 * 10^5) * 0.2 = 9.6 * 10^-15 N. Therefore, option (A) is correct."
+      },
+      {
+        "q": 22,
+        "topic": "Oscillations and Waves",
+        "question": "A source of sound emitting a frequency of 500 Hz moves towards a stationary observer with a velocity of 30 m/ s. If the speed of sound in air is 330 m/s, the apparent frequency heard by the observer is:",
+        "options": {
+          "A": "550 Hz",
+          "B": "450 Hz",
+          "C": "500 Hz",
+          "D": "600 Hz"
+        },
+        "correct": "A",
+        "explanation": "Applying the Doppler effect formula for an approaching source gives f' = 500 * (330 / (330 - 30)) = 550 Hz. Therefore, option (A) is correct."
+      },
+      {
+        "q": 23,
+        "topic": "Electronic Devices",
+        "question": "Two identical rods of metal are welded end to end, and a temperature difference is maintained across the ends. If the combined length is doubled while keeping cross-section unchanged, the rate of heat conduction through the composite rod becomes:",
+        "options": {
+          "A": "Equal to the original rate",
+          "B": "Four times the original rate",
+          "C": "Double the original rate",
+          "D": "Half of the original rate"
+        },
+        "correct": "D",
+        "explanation": "Thermal resistance is proportional to length, so doubling length doubles resistance and halves heat conduction rate. Therefore, option (D) is correct."
+      },
+      {
+        "q": 24,
+        "topic": "Electrostatics",
+        "question": "Three point charges +q, +q, and -q are placed at the vertices of an equilateral triangle of side a. The total electrostatic potential energy of the system is:",
+        "options": {
+          "A": "-3(q^2) / (4 π ε0 a)",
+          "B": "0",
+          "C": "-(q^2) / (4 π ε0 a)",
+          "D": "(q^2) / (4 π ε0 a)"
+        },
+        "correct": "C",
+        "explanation": "Summing pairwise electrostatic potentials yields U = -(q^2) / (4πε0a). Therefore, option (C) is correct."
+      },
+      {
+        "q": 25,
+        "topic": "Physics and Measurement",
+        "question": "In an experiment to determine the acceleration due to gravity using a simple pendulum, the percentage errors in measurement of length l and time period T are 1% and 2% respectively. The maximum percentage error in the calculated value of g is:",
+        "options": {
+          "A": "3%",
+          "B": "5%",
+          "C": "4%",
+          "D": "7%"
+        },
+        "correct": "B",
+        "explanation": "Max fractional error Δg/g = Δl/l + 2(ΔT/T) = 1% + 2(2%) = 5%. Therefore, option (B) is correct."
+      },
+      {
+        "q": 26,
+        "topic": "Current Electricity",
+        "question": "A cell of emf 2.0 V and internal resistance 0.5 ohms is connected across an external resistor of 4.5 ohms. The terminal potential difference across the cell is:",
+        "options": {
+          "A": "1.6 V",
+          "B": "1.8 V",
+          "C": "2.0 V",
+          "D": "1.5 V"
+        },
+        "correct": "B",
+        "explanation": "Circuit current I = 2.0 / 5.0 = 0.4 A. Terminal voltage V = E - Ir = 2.0 - 0.2 = 1.8 V. Therefore, option (B) is correct."
+      },
+      {
+        "q": 27,
+        "topic": "Laws of Motion",
+        "question": "A block of mass 5 kg rests on a rough horizontal plane with coefficient of static friction 0.4. The minimum horizontal force required to just start moving the block is: (Take g = 10 m/s^2)",
+        "options": {
+          "A": "25 N",
+          "B": "50 N",
+          "C": "20 N",
+          "D": "10 N"
+        },
+        "correct": "C",
+        "explanation": "Minimum force to initiate motion equals maximum static friction f_s = μ_s mg = 0.4 * 50 = 20 N. Therefore, option (C) is correct."
+      },
+      {
+        "q": 28,
+        "topic": "Rotational Motion",
+        "question": "A uniform rod of mass 3 kg and length 2 m is pivoted at one end and allowed to rotate in a vertical plane from rest in horizontal position. The initial angular acceleration of the rod just after release is: (Take g = 10 m/s^2)",
+        "options": {
+          "A": "7.5 rad/s^2",
+          "B": "5.0 rad/s^2",
+          "C": "10.0 rad/s^2",
+          "D": "15.0 rad/s^2"
+        },
+        "correct": "A",
+        "explanation": "Angular acceleration α = τ / I = [mg(L/2)] / [mL^2/3] = 30 / 4 = 7.5 rad/s^2. Therefore, option (A) is correct."
+      },
+      {
+        "q": 29,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "A circular coil of 100 turns has a radius of 10 cm and carries a current of 0.5 A. The magnetic field at the center of the coil is:",
+        "options": {
+          "A": "1.57 * 10^-4 T",
+          "B": "3.14 * 10^-4 T",
+          "C": "1.26 * 10^-3 T",
+          "D": "6.28 * 10^-4 T"
+        },
+        "correct": "B",
+        "explanation": "Using B = μ_0 N I / (2r) gives B = 3.14 * 10^-4 T. Therefore, option (B) is correct."
+      },
+      {
+        "q": 30,
+        "topic": "Electronic Devices",
+        "question": "A metal wire of length 2 m and cross-sectional area 1 mm^2 is pulled by a force of 20 N. If the elongation produced in the wire is 0.4 mm, the Young's modulus of the wire material is:",
+        "options": {
+          "A": "1.0 * 10^11 N/m^2",
+          "B": "0.5 * 10^11 N/m^2",
+          "C": "2.0 * 10^11 N/m^2",
+          "D": "4.0 * 10^11 N/m^2"
+        },
+        "correct": "A",
+        "explanation": "Young's modulus Y = (F / A) / (Δl / l) = 1.0 * 10^11 N/m^2. Therefore, option (A) is correct."
+      },
+      {
+        "q": 31,
+        "topic": "Optics",
+        "question": "An equilateral prism has a refractive index of √2. The angle of minimum deviation for this prism is:",
+        "options": {
+          "A": "45 degrees",
+          "B": "30 degrees",
+          "C": "60 degrees",
+          "D": "15 degrees"
+        },
+        "correct": "B",
+        "explanation": "Applying n = sin((A + D_m)/2) / sin(A/2) with A = 60 and n = √2 yields D_m = 30 degrees. Therefore, option (B) is correct."
+      },
+      {
+        "q": 32,
+        "topic": "Optics",
+        "question": "In Young's double slit experiment, constructive interference (bright fringe) occurs at a point on the screen where the path difference between the two interfering light waves is an integral multiple of:",
+        "options": {
+          "A": "Half-wavelength (λ/2)",
+          "B": "Quarter-wavelength",
+          "C": "Zero only",
+          "D": "Wavelength (λ)"
+        },
+        "correct": "D",
+        "explanation": "Constructive interference condition requires path difference to be an integral multiple of λ. Therefore, option (D) is correct."
+      },
+      {
+        "q": 33,
+        "topic": "Dual Nature of Matter and Radiation",
+        "question": "An alpha particle and a proton are accelerated through the same potential difference V. The ratio of their de Broglie wavelengths (λ_α : λ_p) is:",
+        "options": {
+          "A": "1 : 4",
+          "B": "1 : √2",
+          "C": "1 : 2",
+          "D": "1 : 2√2"
+        },
+        "correct": "D",
+        "explanation": "Using λ = h / √(2mqV) yields a ratio of 1 : 2√2. Therefore, option (D) is correct."
+      },
+      {
+        "q": 34,
+        "topic": "Electrostatics",
+        "question": "A point charge q is placed at the center of a cube of side length a. The electric flux passing through any one face of the cube is:",
+        "options": {
+          "A": "q / (4 π ε0)",
+          "B": "q / (ε0)",
+          "C": "q / (6 ε0)",
+          "D": "q / (3 ε0)"
+        },
+        "correct": "C",
+        "explanation": "By Gauss's law total flux is q/ε0, so flux per face is q / (6ε0). Therefore, option (C) is correct."
+      },
+      {
+        "q": 35,
+        "topic": "Thermodynamics",
+        "question": "In an isothermal process, an ideal gas expands and does 200 J of work on its surroundings. The amount of heat absorbed by the gas during this process is:",
+        "options": {
+          "A": "200 J",
+          "B": "400 J",
+          "C": "-200 J",
+          "D": "0 J"
+        },
+        "correct": "A",
+        "explanation": "For isothermal expansion, ΔU = 0, so heat absorbed equals work done (200 J). Therefore, option (A) is correct."
+      },
+      {
+        "q": 36,
+        "topic": "Oscillations and Waves",
+        "question": "A simple pendulum of length L has a time period T. If its length is increased by 300%, its new time period becomes:",
+        "options": {
+          "A": "1.73 T",
+          "B": "4T",
+          "C": "2T",
+          "D": "3T"
+        },
+        "correct": "C",
+        "explanation": "New length L' = 4L, doubling the time period T since T ∝ √L. Therefore, option (C) is correct."
+      },
+      {
+        "q": 37,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "An alternating voltage V = 200 sin(100t) volts is applied across a series combination of a 30 ohm resistance and a 40 ohm inductive reactance. The peak current in the circuit is:",
+        "options": {
+          "A": "4 A",
+          "B": "5 A",
+          "C": "3.33 A",
+          "D": "2.82 A"
+        },
+        "correct": "A",
+        "explanation": "Impedance Z = 50 ohms, so peak current I_0 = 200 / 50 = 4 A. Therefore, option (A) is correct."
+      },
+      {
+        "q": 38,
+        "topic": "Physics and Measurement",
+        "question": "Which of the physical quantities has the same dimensions as impulse?",
+        "options": {
+          "A": "Work",
+          "B": "Surface tension",
+          "C": "Pressure",
+          "D": "Momentum"
+        },
+        "correct": "D",
+        "explanation": "Impulse and linear momentum share the exact same dimensional formula [MLT^-1]. Therefore, option (D) is correct."
+      },
+      {
+        "q": 39,
+        "topic": "Electronic Devices",
+        "question": "A projectile is thrown with an initial velocity v at an angle θ with the horizontal. The maximum height reached by the projectile is doubled if:",
+        "options": {
+          "A": "The initial velocity is doubled while keeping angle constant",
+          "B": "The angle of projection is doubled while keeping speed constant",
+          "C": "The initial velocity is increased by a factor of √2 while keeping angle constant",
+          "D": "The mass of the projectile is doubled"
+        },
+        "correct": "C",
+        "explanation": "Maximum height H ∝ v^2, so increasing velocity by √2 doubles H. Therefore, option (C) is correct."
+      },
+      {
+        "q": 40,
+        "topic": "Kinematics",
+        "question": "Two rain drops of radii r and 2r fall through air with terminal velocities v_1 and v_2 respectively. Assuming laminar flow and identical density, the ratio of their terminal velocities (v_1 : v_2) is:",
+        "options": {
+          "A": "1 : 2",
+          "B": "2 : 1",
+          "C": "1 : 8",
+          "D": "1 : 4"
+        },
+        "correct": "D",
+        "explanation": "Terminal velocity v_t ∝ r^2, giving a ratio of (1/2)^2 = 1 : 4. Therefore, option (D) is correct."
+      },
+      {
+        "q": 41,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "At a certain place, the horizontal component of Earth's magnetic field is equal to the vertical component. The angle of dip at this place is:",
+        "options": {
+          "A": "45 degrees",
+          "B": "90 degrees",
+          "C": "60 degrees",
+          "D": "0 degrees"
+        },
+        "correct": "A",
+        "explanation": "tan δ = B_v / B_h = 1 => δ = 45 degrees. Therefore, option (A) is correct."
+      },
+      {
+        "q": 42,
+        "topic": "Gravitation",
+        "question": "The escape velocity of a body from the surface of the Earth is 11.2 km/s. If a body is projected with twice this escape velocity, its speed far away from the Earth will be: (Assume negligible gravitational influence of other celestial bodies)",
+        "options": {
+          "A": "11.2 km/s",
+          "B": "11.2 √3 km/s",
+          "C": "22.4 km/s",
+          "D": "33.6 km/s"
+        },
+        "correct": "B",
+        "explanation": "Energy conservation yields final speed v_f = v_e √3 = 11.2 √3 km/s. Therefore, option (B) is correct."
+      },
+      {
+        "q": 43,
+        "topic": "Current Electricity",
+        "question": "A Wheatstone bridge is most sensitive when all four arms of the bridge have resistances of:",
+        "options": {
+          "A": "Very high values",
+          "B": "Very low values",
+          "C": "The same order of magnitude",
+          "D": "Zero resistance"
+        },
+        "correct": "C",
+        "explanation": "Sensitivity is optimized when all four arm resistances are of the same order of magnitude. Therefore, option (C) is correct."
+      },
+      {
+        "q": 44,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "In an LCR series circuit, the phase angle between voltage and current is 60 degrees. If the resistance of the circuit is 50 ohms, the total impedance of the circuit is:",
+        "options": {
+          "A": "50 √3 ohms",
+          "B": "100 ohms",
+          "C": "200 ohms",
+          "D": "25 ohms"
+        },
+        "correct": "B",
+        "explanation": "Z = R / cos(φ) = 50 / cos(60) = 100 ohms. Therefore, option (B) is correct."
+      },
+      {
+        "q": 45,
+        "topic": "Optics",
+        "question": "A ray of light passes through three media of refractive indices n_1, n_2, and n_3 separated by parallel boundaries. If the emergent ray into the third medium is parallel to the incident ray, the condition is:",
+        "options": {
+          "A": "n_1 = n_3",
+          "B": "n_1 * n_3 = n_2^2",
+          "C": "n_2 = (n_1 + n_3) / 2",
+          "D": "n_1 = n_2 = n_3"
+        },
+        "correct": "A",
+        "explanation": "Parallel boundaries ensure n_1 sin i_1 = n_3 sin i_3, so parallel rays require n_1 = n_3. Therefore, option (A) is correct."
+      }
+    ],
+    "Chemistry": [
+      {
+        "q": 1,
+        "topic": "d- and f-Block Elements",
+        "question": "A sample of hydrogen atoms in their ground state absorbs photons of 97.2 nm. How many different spectral lines will be observed in the Paschen series during the de-excitation of these atoms?",
+        "options": {
+          "A": "3",
+          "B": "6",
+          "C": "1",
+          "D": "2"
+        },
+        "correct": "C",
+        "explanation": "A 97.2 nm photon corresponds to excitation to n=4. During de-excitation, the Paschen series involves transitions falling to n=3. Only one such transition exists (4 to 3)."
+      },
+      {
+        "q": 2,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "Match the following molecules with their geometry and polarity. Which pairing is completely accurate?",
+        "options": {
+          "A": "SF4: Seesaw, Polar",
+          "B": "XeF4: Tetrahedral, Non-polar",
+          "C": "ClF3: Trigonal planar, Polar",
+          "D": "PCl5: Square pyramidal, Non-polar"
+        },
+        "correct": "A",
+        "explanation": "SF4 has 4 bond pairs and 1 lone pair (sp3d), creating an asymmetric, polar seesaw shape. XeF4 is square planar, ClF3 is T-shaped, and PCl5 is trigonal bipyramidal."
+      },
+      {
+        "q": 3,
+        "topic": "Chemical Thermodynamics",
+        "question": "Read the statements regarding equilibrium.",
+        "options": {
+          "A": "Statement I is correct, Statement II is incorrect.",
+          "B": "Both statements are incorrect.",
+          "C": "Statement I is incorrect, Statement II is correct.",
+          "D": "Both statements are correct."
+        },
+        "correct": "D",
+        "explanation": "Increasing temperature shifts an exothermic reaction backward, lowering K. Since delta G standard = -RT ln K, a smaller K results in a more positive standard free energy change."
+      },
+      {
+        "q": 4,
+        "topic": "p-Block Elements",
+        "question": "When Caro's acid (H2SO5) undergoes controlled hydrolysis, it yields sulfuric acid and hydrogen peroxide. What is the true oxidation state of sulfur in Caro's acid?",
+        "options": {
+          "A": "+4",
+          "B": "+6",
+          "C": "+8",
+          "D": "-2"
+        },
+        "correct": "B",
+        "explanation": "H2SO5 contains a peroxide linkage (O-O) where two oxygens have a -1 state. The calculation is x + 3(-2) + 2(-1) = 0, giving S a +6 oxidation state."
+      },
+      {
+        "q": 5,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "Based on Molecular Orbital Theory, which of the following diatomic species has the highest bond order and is simultaneously paramagnetic?",
+        "options": {
+          "A": "N2",
+          "B": "O2-",
+          "C": "O2+",
+          "D": "O2(2-)"
+        },
+        "correct": "C",
+        "explanation": "O2+ has 15 electrons, yielding a bond order of 2.5 and one unpaired electron in its pi* antibonding orbital, making it paramagnetic. N2 has a bond order of 3 but is diamagnetic."
+      },
+      {
+        "q": 6,
+        "topic": "Equilibrium",
+        "question": "Calculate the exact pH of a 1.0 x 10^-8 M HCl aqueous solution at 298 K, taking the selfionization of water into account.",
+        "options": {
+          "A": "6.98",
+          "B": "7.02",
+          "C": "8.00",
+          "D": "6.00"
+        },
+        "correct": "A",
+        "explanation": "The total H+ concentration is (10^-8 + H+ from water). Solving the quadratic equation yields [H+] ≈ 1.05 x 10^-7 M. Thus, the pH is slightly less than 7 (approx 6.98)."
+      },
+      {
+        "q": 7,
+        "topic": "Some Basic Principles of Organic Chemistry",
+        "question": "Which of the following coordination complexes simultaneously exhibits linkage, ionization, and optical isomerism?",
+        "options": {
+          "A": "[Co(en)3]Cl3",
+          "B": "[Co(en)2(NO2)Cl]SCN",
+          "C": "[Pt(NH3)4]Cl2",
+          "D": "[Co(NH3)5Cl]Br"
+        },
+        "correct": "B",
+        "explanation": "[Co(en)2(NO2)Cl]SCN exhibits optical isomerism (cis-form is chiral), linkage isomerism (NO2-/ONO- or SCN-/NCS-), and ionization isomerism (exchanging SCN- and Cl-)."
+      },
+      {
+        "q": 8,
+        "topic": "Hydrocarbons",
+        "question": "Toluene reacts with excess Cl2 in the presence of sunlight to form product X. When X is heated with aqueous NaOH at 373 K, the final major product Y is formed. Identify Y.",
+        "options": {
+          "A": "Benzaldehyde",
+          "B": "Benzyl alcohol",
+          "C": "o-cresol",
+          "D": "Benzoic acid"
+        },
+        "correct": "D",
+        "explanation": "Excess Cl2/hv converts toluene's methyl group fully to a trichloromethyl group (X = benzotrichloride). Hydrolysis of benzotrichloride yields benzoic acid."
+      },
+      {
+        "q": 9,
+        "topic": "Biomolecules",
+        "question": "Given below are two statements:",
+        "options": {
+          "A": "Both A and R are true, and R is the correct explanation of A.",
+          "B": "Both A and R are true, but R is not the correct explanation of A.",
+          "C": "A is true, but R is false.",
+          "D": "A is false, but R is true."
+        },
+        "correct": "A",
+        "explanation": "Being water-soluble, Vitamin C cannot be stored in the body (unlike fat-soluble vitamins A, D, E, K), necessitating constant dietary intake."
+      },
+      {
+        "q": 10,
+        "topic": "Some Basic Principles of Organic Chemistry",
+        "question": "What is the correct IUPAC name of the complex [Pt(NH3)4Cl2][PtCl4]?",
+        "options": {
+          "A": "Tetraamminedichloridoplatinate(IV) tetrachloridoplatinum(II)",
+          "B": "Tetraamminedichloridoplatinum(II) tetrachloridoplatinate(IV)",
+          "C": "Tetraamminedichloridoplatinum(IV) tetrachloridoplatinate(II)",
+          "D": "Tetraamminechloridoplatinum(IV) chloridoplatinate(II)"
+        },
+        "correct": "C",
+        "explanation": "The cation is named first. Platinum is in the +4 state in the cation to balance the +2 state of the [PtCl4] (2-) anion, ensuring the overall coordination compound is neutral."
+      },
+      {
+        "q": 11,
+        "topic": "Principles Related to Practical Chemistry",
+        "question": "Novolac on heating with formaldehyde forms the cross-linked polymer Bakelite. Structurally, Novolac is a linear condensation polymer of:",
+        "options": {
+          "A": "Melamine and formaldehyde",
+          "B": "Phenol and formaldehyde",
+          "C": "Urea and formaldehyde",
+          "D": "Adipic acid and hexamethylenediamine"
+        },
+        "correct": "B",
+        "explanation": "Novolac is the initial linear low-molecular-weight condensation product of phenol and formaldehyde, which can be further cross-linked to form Bakelite."
+      },
+      {
+        "q": 12,
+        "topic": "Equilibrium",
+        "question": "Given below are two statements:",
+        "options": {
+          "A": "Both A and R are true.",
+          "B": "Both A and R are false.",
+          "C": "A is false, but R is true.",
+          "D": "A is true, but R is false."
+        },
+        "correct": "D",
+        "explanation": "Fluoroacetic acid is a stronger acid (lower pKa) due to the strong electron-withdrawing -I effect of fluorine, not a +I effect."
+      },
+      {
+        "q": 13,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "In a cubic close-packed (ccp) structure, atoms of A occupy lattice points, atoms of B occupy all octahedral voids, and atoms of C occupy exactly half of the tetrahedral voids. What is the empirical formula of the compound?",
+        "options": {
+          "A": "ABC",
+          "B": "AB2C",
+          "C": "A2BC",
+          "D": "ABC2"
+        },
+        "correct": "A",
+        "explanation": "In ccp, effective atoms of A = 4. Octahedral voids = 4 (B = 4). Tetrahedral voids = 8, so half = 4 (C = 4). The ratio A:B:C is 4:4:4, simplifying to ABC."
+      },
+      {
+        "q": 14,
+        "topic": "Redox Reactions and Electrochemistry",
+        "question": "The standard reduction potentials are E°(X2+/X) = -0.76 V, E°(Y2+/Y) = +0.34 V, and E°(Z2+/Z) = -2.37 V. Which of the following reactions is thermodynamically spontaneous under standard conditions?",
+        "options": {
+          "A": "Y + X2+ -> Y2+ + X",
+          "B": "Z2+ + X -> Z + X2+",
+          "C": "Y + Z2+ -> Y2+ + Z",
+          "D": "Z + Y2+ -> Z2+ + Y"
+        },
+        "correct": "D",
+        "explanation": "A spontaneous reaction requires a positive standard cell potential. Z is the strongest reducing agent (most negative E°) and will spontaneously reduce Y2+ to Y."
+      },
+      {
+        "q": 15,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "Among the following isomers of C4H10O, which one reacts the fastest with Lucas reagent via an SN1 mechanism to produce immediate turbidity?",
+        "options": {
+          "A": "1-Butanol",
+          "B": "2-Butanol",
+          "C": "2-Methyl-2-propanol",
+          "D": "2-Methyl-1-propanol"
+        },
+        "correct": "C",
+        "explanation": "Lucas reagent acts fastest on tertiary alcohols (2-methyl-2-propanol) because the reaction proceeds via the highly stable tertiary carbocation intermediate."
+      },
+      {
+        "q": 16,
+        "topic": "Chemical Kinetics",
+        "question": "For a first-order chemical reaction, the time required for 99.9% completion is approximately how many times its half-life (t1/2)?",
+        "options": {
+          "A": "3.3",
+          "B": "10",
+          "C": "6.6",
+          "D": "9.9"
+        },
+        "correct": "B",
+        "explanation": "t = (2.303/k) * log(100/0.1) = (2.303/k) * log(10^3) = 3 * (2.303/k). Since t1/2 = 0.693/k = (2.303 * log 2)/ k, t99.9% is exactly 10 times t1/2."
+      },
+      {
+        "q": 17,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "Read the statements regarding Henry's Law.",
+        "options": {
+          "A": "Both statements are correct.",
+          "B": "Both statements are incorrect.",
+          "C": "Statement I is correct, Statement II is incorrect.",
+          "D": "Statement I is incorrect, Statement II is correct."
+        },
+        "correct": "A",
+        "explanation": "p = KH * x. For a constant partial pressure, higher KH means a smaller mole fraction (x), indicating lower solubility. Solubility of gases drops at higher temperatures, meaning KH increases."
+      },
+      {
+        "q": 18,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "Which of the following aldehydes will NOT undergo the Cannizzaro reaction when treated with concentrated alkali?",
+        "options": {
+          "A": "Formaldehyde",
+          "B": "Benzaldehyde",
+          "C": "Acetaldehyde",
+          "D": "Trimethylacetaldehyde"
+        },
+        "correct": "C",
+        "explanation": "The Cannizzaro reaction is restricted to aldehydes lacking alpha-hydrogens. Acetaldehyde has three alpha-hydrogens and instead undergoes the aldol condensation."
+      },
+      {
+        "q": 19,
+        "topic": "Hydrocarbons",
+        "question": "Which of the following organic cations exhibits the highest thermodynamic stability?",
+        "options": {
+          "A": "Methyl carbocation",
+          "B": "Vinyl carbocation",
+          "C": "Phenyl carbocation",
+          "D": "Tropylium cation"
+        },
+        "correct": "D",
+        "explanation": "The tropylium cation (C7H7+) is highly stable because it forms a planar, fully conjugated ring system with 6 pi electrons, strictly obeying Huckel's rule for aromaticity."
+      },
+      {
+        "q": 20,
+        "topic": "d- and f-Block Elements",
+        "question": "Why does Manganese exhibit the maximum number of oxidation states (+2 to +7) in the 3d transition series?",
+        "options": {
+          "A": "High atomic number",
+          "B": "Maximum number of unpaired electrons in 3d and 4s subshells",
+          "C": "Unusually high electronegativity",
+          "D": "Smallest atomic radius in the series"
+        },
+        "correct": "B",
+        "explanation": "Mn has the valence configuration 3d5 4s2. It can involve all seven valence electrons in bonding, leading to the widest range of variable oxidation states."
+      },
+      {
+        "q": 21,
+        "topic": "Organic Compounds Containing Nitrogen",
+        "question": "When nitrobenzene is reduced using Zinc dust and ammonium chloride (Zn/NH4Cl) in a neutral medium, the major organic product is:",
+        "options": {
+          "A": "N-Phenylhydroxylamine",
+          "B": "Aniline",
+          "C": "Azobenzene",
+          "D": "Nitrosobenzene"
+        },
+        "correct": "A",
+        "explanation": "Reduction of nitrobenzene in a strictly neutral medium uniquely arrests the reduction process at the hydroxylamine stage, forming N-phenylhydroxylamine."
+      },
+      {
+        "q": 22,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "Given below are two statements:",
+        "options": {
+          "A": "Both A and R are true, and R is the correct explanation.",
+          "B": "Both A and R are true, but R is not the correct explanation.",
+          "C": "A is true, but R is false.",
+          "D": "A is false, but R is true."
+        },
+        "correct": "C",
+        "explanation": "Neopentane has a lower boiling point because it is highly branched. Branching makes the molecule more spherical, decreasing the surface area and weakening van der Waals forces."
+      },
+      {
+        "q": 23,
+        "topic": "Biomolecules",
+        "question": "Which of the following naturally occurring alpha-amino acids is optically inactive?",
+        "options": {
+          "A": "Alanine",
+          "B": "Valine",
+          "C": "Serine",
+          "D": "Glycine"
+        },
+        "correct": "D",
+        "explanation": "Glycine (H2N-CH2-COOH) has two hydrogen atoms attached to its alpha-carbon. Lacking four distinct groups, it does not have a chiral center and is optically inactive."
+      },
+      {
+        "q": 24,
+        "topic": "Solutions",
+        "question": "Calculate the exact molality of a 20% (w/w) aqueous solution of sodium hydroxide (NaOH). (Molar mass of NaOH = 40 g/mol).",
+        "options": {
+          "A": "5.55 m",
+          "B": "6.25 m",
+          "C": "4.00 m",
+          "D": "2.50 m"
+        },
+        "correct": "B",
+        "explanation": "20% w/w means 20g NaOH is dissolved in 80g water. Moles of NaOH = 20/40 = 0.5 mol. Molality = moles of solute / kg of solvent = 0.5 / 0.080 kg = 6.25 m."
+      },
+      {
+        "q": 25,
+        "topic": "Biomolecules",
+        "question": "Meso-tartaric acid is optically inactive strictly due to:",
+        "options": {
+          "A": "Internal compensation",
+          "B": "External compensation",
+          "C": "Absence of chiral centers",
+          "D": "Enantiomeric excess"
+        },
+        "correct": "A",
+        "explanation": "Meso compounds possess chiral centers but contain a plane of symmetry. The optical rotation of the upper half cancels the lower half, a phenomenon called internal compensation."
+      },
+      {
+        "q": 26,
+        "topic": "Classification of Elements and Periodicity in Properties",
+        "question": "Which of the following sequences represents the correct increasing order of ionic radii for isoelectronic species?",
+        "options": {
+          "A": "N3- < O2- < F-",
+          "B": "Mg2+ < Na+ < F-",
+          "C": "Na+ < Mg2+ < Al3+",
+          "D": "O2- < N3- < C4-"
+        },
+        "correct": "B",
+        "explanation": "Among isoelectronic ions (all having 10 electrons here), the ionic radius strictly decreases as the nuclear charge (atomic number) increases. Thus, Mg2+ (12 protons) is the smallest."
+      },
+      {
+        "q": 27,
+        "topic": "Equilibrium",
+        "question": "The enthalpy of neutralization of a weak acid HA with a strong base NaOH is experimentally found to be -50.0 kJ/mol. Assuming standard neutralization enthalpy is -57.1 kJ/mol, what is the enthalpy of dissociation of HA?",
+        "options": {
+          "A": "57.1 kJ",
+          "B": "-7.1 kJ",
+          "C": "50.0 kJ",
+          "D": "+7.1 kJ"
+        },
+        "correct": "D",
+        "explanation": "The observed enthalpy is less exothermic because energy is consumed to completely dissociate the weak acid. Dissociation energy = -50.0 - (-57.1) = +7.1 kJ/mol."
+      },
+      {
+        "q": 28,
+        "topic": "p-Block Elements",
+        "question": "When metallic Copper (Cu) is treated with dilute nitric acid (HNO3), which specific gas is predominantly evolved?",
+        "options": {
+          "A": "Hydrogen",
+          "B": "Oxygen",
+          "C": "Nitric oxide (NO)",
+          "D": "Nitrogen dioxide (NO2)"
+        },
+        "correct": "C",
+        "explanation": "Copper sits below hydrogen in the reactivity series and does not liberate H2 from acids. With dilute HNO3, it reduces nitrate to nitric oxide (NO). With conc. HNO3, it yields NO2."
+      },
+      {
+        "q": 29,
+        "topic": "Atomic Structure",
+        "question": "For an electron located in the 5d orbital, calculate the exact number of radial and angular nodes.",
+        "options": {
+          "A": "2 radial and 2 angular",
+          "B": "3 radial and 1 angular",
+          "C": "2 radial and 3 angular",
+          "D": "1 radial and 2 angular"
+        },
+        "correct": "A",
+        "explanation": "For a 5d orbital, n=5 and l=2. Angular nodes = l = 2. Radial nodes = n - l - 1 = 5 - 2 - 1 = 2."
+      },
+      {
+        "q": 30,
+        "topic": "Coordination Compounds",
+        "question": "How many distinct geometrical isomers are possible for the square planar complex [Pt(NH3)2Cl2]?",
+        "options": {
+          "A": "0",
+          "B": "1",
+          "C": "2",
+          "D": "3"
+        },
+        "correct": "C",
+        "explanation": "The complex of type Ma2b2 exists as two geometrical isomers: the cis-isomer (same ligands on the same side, famously known as cisplatin) and the trans-isomer."
+      },
+      {
+        "q": 31,
+        "topic": "Principles Related to Practical Chemistry",
+        "question": "The base-catalyzed hydrolysis of esters yielding a carboxylate salt and an alcohol is technically termed:",
+        "options": {
+          "A": "Esterification",
+          "B": "Hydration",
+          "C": "Decarboxylation",
+          "D": "Saponification"
+        },
+        "correct": "D",
+        "explanation": "The alkaline hydrolysis of esters is universally referred to as saponification, as this is the fundamental chemical reaction utilized in soap manufacturing."
+      },
+      {
+        "q": 32,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "In the stratosphere, which specific free radical primarily acts as the chain-propagating catalyst in the continuous destruction of the ozone layer?",
+        "options": {
+          "A": "Hydroxyl radical",
+          "B": "Chlorine free radical",
+          "C": "Methyl radical",
+          "D": "Fluorine free radical"
+        },
+        "correct": "B",
+        "explanation": "UV light cleaves CFCs to produce highly reactive chlorine free radicals. A single chlorine radical can catalytically destroy up to 100,000 ozone molecules."
+      },
+      {
+        "q": 33,
+        "topic": "Principles Related to Practical Chemistry",
+        "question": "Among the following hydrocarbons, which one will exhibit the highest rate of catalytic hydrogenation?",
+        "options": {
+          "A": "Ethyne",
+          "B": "Ethene",
+          "C": "Propene",
+          "D": "2-Butene"
+        },
+        "correct": "A",
+        "explanation": "Alkynes generally undergo catalytic hydrogenation at a faster rate than alkenes because their linear geometry allows them to adsorb more easily and tightly onto the solid catalyst surface."
+      },
+      {
+        "q": 34,
+        "topic": "Principles Related to Practical Chemistry",
+        "question": "For which of the following physical transformations is the change in entropy strictly negative ( Delta S < 0)?",
+        "options": {
+          "A": "Sublimation of dry ice",
+          "B": "Dissolution of sugar in water",
+          "C": "Adsorption of a gas onto a solid surface",
+          "D": "Evaporation of water"
+        },
+        "correct": "C",
+        "explanation": "Adsorption restricts the random translational movement of gas molecules by trapping them on a solid surface, drastically lowering their degrees of freedom and thereby decreasing entropy."
+      },
+      {
+        "q": 35,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "The shape-selective zeolite catalyst ZSM-5 is highly significant in the petrochemical industry because it directly converts:",
+        "options": {
+          "A": "Methanol to ethene",
+          "B": "Aliphatic alcohols directly to gasoline",
+          "C": "Benzene to toluene",
+          "D": "Carbon monoxide to carbon dioxide"
+        },
+        "correct": "B",
+        "explanation": "ZSM-5 dehydrates alcohols to yield a complex mixture of synthetic hydrocarbons, directly converting them into high-octane gasoline (petrol)."
+      },
+      {
+        "q": 36,
+        "topic": "Biomolecules",
+        "question": "Alpha-D-glucose and Beta-D-glucose vary only in the spatial arrangement of the hydroxyl group at C-1. They are biologically termed:",
+        "options": {
+          "A": "Enantiomers",
+          "B": "Epimers",
+          "C": "Geometrical isomers",
+          "D": "Anomers"
+        },
+        "correct": "D",
+        "explanation": "Diastereomers that differ in stereochemical configuration strictly at the newly formed acetal/hemiacetal carbon (C-1 in glucose) upon ring closure are specifically called anomers."
+      },
+      {
+        "q": 37,
+        "topic": "Chemical Kinetics",
+        "question": "For a pure zero-order reaction, the half-life (t1/2) is mathematically:",
+        "options": {
+          "A": "Directly proportional to the initial concentration of the reactant",
+          "B": "Completely independent of the initial concentration",
+          "C": "Inversely proportional to the initial concentration",
+          "D": "Proportional to the square of the initial concentration"
+        },
+        "correct": "A",
+        "explanation": "For a zero-order reaction, the integrated rate equation gives t1/2 = [R0]/(2k). Thus, the halflife scales directly with the initial reactant concentration."
+      },
+      {
+        "q": 38,
+        "topic": "d- and f-Block Elements",
+        "question": "Which of the following transition metal ions is both diamagnetic and completely colorless in an aqueous solution?",
+        "options": {
+          "A": "Cu(II)",
+          "B": "Cr(III)",
+          "C": "V(III)",
+          "D": "Zn(II)"
+        },
+        "correct": "D",
+        "explanation": "Zinc(II) has a fully paired 3d10 electronic configuration. Because it lacks any unpaired electrons, it is diamagnetic and cannot undergo d-d electron transitions, rendering it colorless."
+      },
+      {
+        "q": 39,
+        "topic": "Atomic Structure",
+        "question": "According to the quantum mechanical model, which of the following sets of quantum numbers is physically impossible for an electron?",
+        "options": {
+          "A": "n=3, l=2, m=-2",
+          "B": "n=4, l=0, m=0",
+          "C": "n=2, l=2, m=0",
+          "D": "n=5, l=3, m=1"
+        },
+        "correct": "C",
+        "explanation": "The azimuthal quantum number (l) must strictly be less than the principal quantum number (n). For n=2, the maximum allowed value for l is 1 (the 2p orbital). Therefore, n=2, l=2 is impossible."
+      },
+      {
+        "q": 40,
+        "topic": "Principles Related to Practical Chemistry",
+        "question": "The thermosetting polymer Bakelite is formed by the extensive cross-linking of linear Novolac chains. This curing process requires the addition of:",
+        "options": {
+          "A": "Phenol",
+          "B": "Formaldehyde",
+          "C": "Melamine",
+          "D": "Urea"
+        },
+        "correct": "B",
+        "explanation": "Heating Novolac with additional formaldehyde supplies the necessary -CH2- bridges that cross-link the separate linear polymer chains into the highly rigid, infusible 3D network of Bakelite."
+      },
+      {
+        "q": 41,
+        "topic": "p-Block Elements",
+        "question": "Analyzing the Ellingham diagram, under what condition can a specific metal theoretically reduce the oxide of another metal?",
+        "options": {
+          "A": "When its Delta G standard curve sits below that of the other metal's oxide",
+          "B": "When its Delta G standard curve sits above that of the other metal's oxide",
+          "C": "When both curves intersect precisely at absolute zero",
+          "D": "When both metals exhibit a positive Delta G standard"
+        },
+        "correct": "A",
+        "explanation": "A metal with a lower standard free energy of formation (Delta G standard) for its oxide is vastly more stable and possesses a higher affinity for oxygen, allowing it to reduce oxides located above it on the diagram."
+      },
+      {
+        "q": 42,
+        "topic": "Principles Related to Practical Chemistry",
+        "question": "Which of the following is a prominent example of a biodegradable step-growth polymer?",
+        "options": {
+          "A": "Polyvinyl Chloride (PVC)",
+          "B": "Teflon (PTFE)",
+          "C": "Nylon-2-Nylon-6",
+          "D": "Polyethylene Terephthalate (PET)"
+        },
+        "correct": "C",
+        "explanation": "Nylon-2-Nylon-6 is an alternating copolymer of glycine and aminocaproic acid. It is biologically degradable, unlike conventional polyamides and addition polymers."
+      },
+      {
+        "q": 43,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "Based on their molecular structures, what is the precise basicity of orthophosphorous acid (H3PO3) and hypophosphorous acid (H3PO2) respectively?",
+        "options": {
+          "A": "3 and 2",
+          "B": "2 and 1",
+          "C": "1 and 2",
+          "D": "3 and 1"
+        },
+        "correct": "B",
+        "explanation": "Basicity correlates exactly with the number of P-OH bonds. H3PO3 has two P-OH bonds (dibasic), while H3PO2 possesses only one P-OH bond (monobasic). P-H protons are non-ionizable."
+      },
+      {
+        "q": 44,
+        "topic": "Organic Compounds Containing Nitrogen",
+        "question": "The Gabriel phthalimide synthesis is heavily preferred in organic chemistry primarily for the pure preparation of:",
+        "options": {
+          "A": "Aromatic primary amines",
+          "B": "Secondary amines",
+          "C": "Tertiary amines",
+          "D": "Aliphatic primary amines"
+        },
+        "correct": "D",
+        "explanation": "This synthesis strictly yields aliphatic primary amines. Secondary/tertiary amines cannot form due to steric blocking, and aromatic primary amines cannot be made as aryl halides do not undergo the necessary nucleophilic substitution."
+      },
+      {
+        "q": 45,
+        "topic": "p-Block Elements",
+        "question": "Predict the exact molecular shape of Xenon difluoride (XeF2) using VSEPR theory.",
+        "options": {
+          "A": "Linear",
+          "B": "Bent",
+          "C": "T-shaped",
+          "D": "Trigonal planar"
+        },
+        "correct": "A",
+        "explanation": "XeF2 has 2 bond pairs and 3 lone pairs around the central Xenon atom (sp3d hybridization). To strictly minimize extreme lone pair-lone pair repulsions, the three lone pairs occupy the equatorial positions, forcing the molecule into a linear shape."
+      }
+    ],
+    "Botany": [
+      {
+        "q": 1,
+        "topic": "Plant Physiology",
+        "question": "Read the following statements regarding the light reactions of photosynthesis:",
+        "options": {
+          "A": "Statement I is correct, Statement II is incorrect.",
+          "B": "Both statements are incorrect.",
+          "C": "Both statements are correct.",
+          "D": "Statement I is incorrect, Statement II is correct."
+        },
+        "correct": "C",
+        "explanation": "Stroma lamellae possess only PSI, preventing the non-cyclic flow of electrons, which relies on PSII. Furthermore, lacking NADP reductase, they can only generate ATP cyclically."
+      },
+      {
+        "q": 2,
+        "topic": "Cell Structure and Function",
+        "question": "Which of the following organelles is explicitly excluded from the eukaryotic endomembrane system, and why?",
+        "options": {
+          "A": "Peroxisome; because its functions are not coordinated with the system",
+          "B": "Golgi apparatus; because it lacks structural transport vesicles",
+          "C": "Endoplasmic reticulum; because it lacks autonomous DNA",
+          "D": "Lysosome; because it acts entirely independently of the Golgi"
+        },
+        "correct": "A",
+        "explanation": "The endomembrane system includes the ER, Golgi, lysosomes, and vacuoles because their functions are highly coordinated. Peroxisomes, mitochondria, and chloroplasts function independently."
+      },
+      {
+        "q": 3,
+        "topic": "Reproduction",
+        "question": "In the double fertilization event typical of Angiosperms, what is the exact ploidy level of the Primary Endosperm Nucleus (PEN) and a Synergid cell, respectively?",
+        "options": {
+          "A": "2n, n",
+          "B": "n, 2n",
+          "C": "3n, 2n",
+          "D": "3n, n"
+        },
+        "correct": "D",
+        "explanation": "The PEN forms from the triple fusion of one male gamete (n) and two polar nuclei (n + n), yielding a triploid (3n) status. Synergids are normal haploid (n) cells of the embryo sac."
+      },
+      {
+        "q": 4,
+        "topic": "Plant Physiology",
+        "question": "For the complete synthesis of one single molecule of sucrose in a C3 plant, calculate the exact total requirement of ATP and NADPH.",
+        "options": {
+          "A": "18 ATP and 12 NADPH",
+          "B": "36 ATP and 24 NADPH",
+          "C": "30 ATP and 12 NADPH",
+          "D": "12 ATP and 12 NADPH"
+        },
+        "correct": "B",
+        "explanation": "Fixing one CO2 in the Calvin cycle demands 3 ATP and 2 NADPH. A sucrose molecule (C12H22O11) requires 12 CO2 molecules. Thus, 12 x 3 = 36 ATP and 12 x 2 = 24 NADPH are required."
+      },
+      {
+        "q": 5,
+        "topic": "Plant Physiology",
+        "question": "Given below are two statements:",
+        "options": {
+          "A": "Both A and R are true, but R is not the correct explanation of A.",
+          "B": "A is true, but R is false.",
+          "C": "Both A and R are true, and R is the correct explanation of A.",
+          "D": "Both A and R are false."
+        },
+        "correct": "C",
+        "explanation": "Auxin produced in the apical meristem travels downward, chemically inhibiting lateral bud growth (apical dominance). Removing the apex eliminates this auxin, allowing lateral branching."
+      },
+      {
+        "q": 6,
+        "topic": "Genetics and Evolution",
+        "question": "During the complex stages of meiotic Prophase I, the physical appearance of the recombination nodule occurs specifically during:",
+        "options": {
+          "A": "Pachytene",
+          "B": "Zygotene",
+          "C": "Diplotene",
+          "D": "Diakinesis"
+        },
+        "correct": "A",
+        "explanation": "Recombination nodules, which are large protein assemblies that mediate the actual crossing over of non-sister chromatids, are exclusively formed during the pachytene sub-stage."
+      },
+      {
+        "q": 7,
+        "topic": "Biology and Human Welfare",
+        "question": "The aquatic fern Azolla is heavily utilized as a highly effective biological fertilizer in rice paddies primarily because it harbors a symbiotic relationship with:",
+        "options": {
+          "A": "Mycorrhiza",
+          "B": "Anabaena",
+          "C": "Rhizobium",
+          "D": "Frankia"
+        },
+        "correct": "B",
+        "explanation": "Azolla contains the specialized nitrogen-fixing cyanobacterium Anabaena azollae inside its leaf cavities, providing a constant natural influx of nitrogen compounds to the crop."
+      },
+      {
+        "q": 8,
+        "topic": "Reproduction",
+        "question": "In members of the Brassicaceae (Mustard) and Papaveraceae (Argemone) families, the ovules develop strictly on the inner wall of the ovary. This specific placentation is termed:",
+        "options": {
+          "A": "Axile",
+          "B": "Marginal",
+          "C": "Free central",
+          "D": "Parietal"
+        },
+        "correct": "D",
+        "explanation": "Parietal placentation features ovules attached to the inner peripheral wall of a unilocular ovary, which may appear bilocular due to the development of a false septum (replum)."
+      },
+      {
+        "q": 9,
+        "topic": "Plant Physiology",
+        "question": "Which of the following is a classic example of a free-living, anaerobic, nitrogen-fixing bacterium found in soil?",
+        "options": {
+          "A": "Rhodospirillum",
+          "B": "Azotobacter",
+          "C": "Nostoc",
+          "D": "Rhizobium"
+        },
+        "correct": "A",
+        "explanation": "Rhodospirillum is unique as it is a free-living anaerobic nitrogen fixer. In contrast, Azotobacter and Beijerinckia are strictly aerobic free-living fixers."
+      },
+      {
+        "q": 10,
+        "topic": "Plant Physiology",
+        "question": "In the highly specialized C4 photosynthetic pathway, the enzymatic decarboxylation of malic acid occurs explicitly within the:",
+        "options": {
+          "A": "Mesophyll cytoplasm",
+          "B": "Mesophyll chloroplast",
+          "C": "Bundle sheath chloroplast",
+          "D": "Bundle sheath cytoplasm"
+        },
+        "correct": "C",
+        "explanation": "Malic acid, generated in the mesophyll cells, is transported into the tightly packed bundle sheath chloroplasts where it is enzymatically decarboxylated to release pure CO2 directly to RuBisCO."
+      },
+      {
+        "q": 11,
+        "topic": "Structural Organisation in Animals and Plants",
+        "question": "The Casparian strips found exclusively in the root endodermis function as a highly selective biological water barrier because they are heavily impregnated with:",
+        "options": {
+          "A": "Lignin",
+          "B": "Suberin",
+          "C": "Pectin",
+          "D": "Chitin"
+        },
+        "correct": "B",
+        "explanation": "Suberin is a highly hydrophobic, waxy biopolymer that blocks apoplastic movement of water and dissolved ions, forcing them across selectively permeable cell membranes."
+      },
+      {
+        "q": 12,
+        "topic": "Genetics and Evolution",
+        "question": "In the functional dynamics of the bacterial lac operon, the synthesized repressor protein physically blocks transcription by binding directly to the:",
+        "options": {
+          "A": "Promoter region",
+          "B": "Structural gene",
+          "C": "Inducer molecule",
+          "D": "Operator region"
+        },
+        "correct": "D",
+        "explanation": "The active repressor tightly binds to the operator sequence, sterically hindering RNA polymerase from binding to the adjacent promoter and advancing into the structural genes."
+      },
+      {
+        "q": 13,
+        "topic": "Diversity in the Living World",
+        "question": "Which of the following strictly follows the universal rules of the International Code of Botanical Nomenclature (ICBN)?",
+        "options": {
+          "A": "The generic name always begins with a capital letter.",
+          "B": "Scientific names must be printed in heavy bold.",
+          "C": "The citing author's name is universally italicized.",
+          "D": "Tautonyms (identical genus and species) are widely accepted in plant taxonomy."
+        },
+        "correct": "A",
+        "explanation": "ICBN rules dictate that genus names are capitalized, species names are lowercase, the text must be italicized (not bold), tautonyms are entirely forbidden in plants, and author citations are standard Roman text."
+      },
+      {
+        "q": 14,
+        "topic": "Cell Structure and Function",
+        "question": "The specialized metabolic and transport functions of the mature sieve tube elements in angiosperms are directly governed by the:",
+        "options": {
+          "A": "Sieve tube's own nucleus",
+          "B": "Phloem parenchyma",
+          "C": "Phloem fibers",
+          "D": "Nucleus of companion cells"
+        },
+        "correct": "D",
+        "explanation": "Mature sieve tube elements fundamentally lack a nucleus to clear space for sap flow. They are physically connected via plasmodesmata to companion cells, whose nuclei direct both cells' activities."
+      },
+      {
+        "q": 15,
+        "topic": "Genetics and Evolution",
+        "question": "The genetic code is scientifically characterized as being \"degenerate\" precisely because:",
+        "options": {
+          "A": "A single highly specific codon codes for multiple amino acids.",
+          "B": "It fundamentally changes its reading frame.",
+          "C": "Several distinct amino acids are encoded by more than one unique codon.",
+          "D": "It completely lacks defined stop signals."
+        },
+        "correct": "C",
+        "explanation": "Degeneracy (redundancy) implies that while a single codon specifies only one amino acid, one specific amino acid can be encoded by several different synonymous codons."
+      },
+      {
+        "q": 16,
+        "topic": "Cell Structure and Function",
+        "question": "Identify the exact phase of the eukaryotic cell cycle where the absolute amount of DNA is 4C, while the chromosome count remains 2n.",
+        "options": {
+          "A": "G1 phase",
+          "B": "G2 phase",
+          "C": "Anaphase I",
+          "D": "Telophase II"
+        },
+        "correct": "B",
+        "explanation": "During the S phase, DNA strictly doubles from 2C to 4C, but the chromatids remain attached at the centromere. Thus, in the subsequent G2 phase, the chromosome count remains diploid (2n)."
+      },
+      {
+        "q": 17,
+        "topic": "Diversity in the Living World",
+        "question": "In a well-established mycorrhizal symbiotic association, the fungal partner provides critical survival benefits to the plant root primarily through:",
+        "options": {
+          "A": "Enhanced phosphorus absorption",
+          "B": "Direct nitrogen fixation",
+          "C": "Assisting in leaf photosynthesis",
+          "D": "Regulating internal sugar transport"
+        },
+        "correct": "A",
+        "explanation": "The extensive hyphal network of the fungus massively increases the root's absorptive surface area, specializing heavily in scavenging severely immobile elements like phosphorus from the soil."
+      },
+      {
+        "q": 18,
+        "topic": "Reproduction",
+        "question": "Describe the chronological development and exact ploidy level of the endosperm found uniquely in gymnosperm seeds.",
+        "options": {
+          "A": "Post-fertilization development, 3n",
+          "B": "Post-fertilization development, 2n",
+          "C": "Pre-fertilization development, n",
+          "D": "Pre-fertilization development, 3n"
+        },
+        "correct": "C",
+        "explanation": "In gymnosperms, the endosperm represents the direct vegetative tissue of the haploid female gametophyte. It develops long before fertilization occurs, making it strictly haploid (n)."
+      },
+      {
+        "q": 19,
+        "topic": "Plant Physiology",
+        "question": "During periods of intense environmental water stress, which specific phytohormone actively induces the rapid closure of stomata?",
+        "options": {
+          "A": "Indole-3-acetic acid (IAA)",
+          "B": "Gibberellic acid (GA3)",
+          "C": "Kinetin",
+          "D": "Abscisic acid (ABA)"
+        },
+        "correct": "D",
+        "explanation": "ABA acts as the primary plant stress hormone. It alters the exact osmotic balance within guard cells by heavily promoting potassium ion efflux, leading to rapid stomatal closure to conserve water."
+      },
+      {
+        "q": 20,
+        "topic": "Cell Structure and Function",
+        "question": "Structurally, sucrose behaves as a non-reducing sugar because the two constitutive monosaccharides are tightly linked through an:",
+        "options": {
+          "A": "alpha-1,4-glycosidic bond",
+          "B": "alpha-1,beta-2-glycosidic bond",
+          "C": "beta-1,4-glycosidic bond",
+          "D": "alpha-1,6-glycosidic bond"
+        },
+        "correct": "B",
+        "explanation": "Sucrose links the entirely free aldehyde group (C1) of alpha-glucose tightly to the free ketone group (C2) of beta-fructose. With both reducing groups locked in the bond, it cannot reduce metallic reagents."
+      },
+      {
+        "q": 21,
+        "topic": "Plant Physiology",
+        "question": "According to Mitchell's highly respected chemiosmotic hypothesis, the breakdown of the proton gradient directly releases energy used to:",
+        "options": {
+          "A": "Induce a necessary conformational change in the F1 particle of ATP synthase",
+          "B": "Power the active pumping of protons back into the thylakoid lumen",
+          "C": "Catalyze the photolytic splitting of water",
+          "D": "Reduce the primary acceptor NADP"
+        },
+        "correct": "A",
+        "explanation": "As protons flow rapidly down their gradient through the transmembrane CF0 channel, the released energy forces a structural conformational rotation in the CF1 head, strictly coupling ADP and Pi to form ATP."
+      },
+      {
+        "q": 22,
+        "topic": "Biotechnology and its Applications",
+        "question": "In standard RNA interference (RNAi) pathways, the highly specific cellular silencing mechanism is initiated fundamentally by the presence of:",
+        "options": {
+          "A": "Single-stranded DNA (ssDNA)",
+          "B": "Single-stranded RNA (ssRNA)",
+          "C": "Double-stranded RNA (dsRNA)",
+          "D": "Foreign viral proteins"
+        },
+        "correct": "C",
+        "explanation": "RNAi universally relies upon introducing a complementary dsRNA molecule. The cell's DICER machinery cleaves this dsRNA, leading to RISC binding and total degradation of the targeted mRNA."
+      },
+      {
+        "q": 23,
+        "topic": "Biotechnology and its Applications",
+        "question": "In recombinant DNA technology, specialized restriction endonucleases are strictly employed to recognize and cut:",
+        "options": {
+          "A": "Short, highly specific single-stranded sequences",
+          "B": "Highly methylated bacterial DNA regions",
+          "C": "Non-coding Ribosomal RNA",
+          "D": "Specific palindromic nucleotide sequences"
+        },
+        "correct": "D",
+        "explanation": "Restriction enzymes precisely scan the DNA length to find unique palindromic base sequences (which read identically forwards on one strand and backwards on the complementary strand) to execute their cuts."
+      },
+      {
+        "q": 24,
+        "topic": "Diversity in the Living World",
+        "question": "Floridean starch, the primary storage carbohydrate found natively in Rhodophyceae (Red algae), is structurally highly homologous to:",
+        "options": {
+          "A": "Cellulose",
+          "B": "Amylopectin and glycogen",
+          "C": "Laminarin",
+          "D": "Mannitol"
+        },
+        "correct": "B",
+        "explanation": "Floridean starch is a highly branched alpha-glucan polymer. Its extensive branching pattern makes it chemically and physically very similar to both terrestrial amylopectin and mammalian glycogen."
+      },
+      {
+        "q": 25,
+        "topic": "Biotechnology and its Applications",
+        "question": "During Polymerase Chain Reaction (PCR), the incredibly vital enzyme Taq polymerase is widely utilized primarily because it:",
+        "options": {
+          "A": "Is highly thermostable and resists denaturation",
+          "B": "Can synthesize DNA entirely without a starting primer",
+          "C": "Continuously synthesizes RNA copies instead of DNA",
+          "D": "Possesses a high error rate for forced mutagenesis"
+        },
+        "correct": "A",
+        "explanation": "Isolated from the extremophile bacterium Thermus aquaticus, Taq polymerase withstands the extreme 94°C denaturation cycles required to physically separate DNA strands during PCR."
+      },
+      {
+        "q": 26,
+        "topic": "Plant Physiology",
+        "question": "In modern plant tissue culture, carefully adjusting the ratio of phytohormones determines tissue fate. A high cytokinin to auxin ratio specifically induces:",
+        "options": {
+          "A": "Extensive root differentiation",
+          "B": "Rapid shoot bud regeneration",
+          "C": "Undifferentiated callus formation",
+          "D": "Somatic embryogenesis"
+        },
+        "correct": "B",
+        "explanation": "Cytokinins strictly promote shoot morphogenesis, whereas auxins heavily favor root formation. Consequently, raising the cytokinin/auxin ratio triggers the callus to generate new shoots."
+      },
+      {
+        "q": 27,
+        "topic": "Reproduction",
+        "question": "Which specific micronutrient is scientifically recognized as absolutely essential for the physical germination of pollen tubes down the stigma?",
+        "options": {
+          "A": "Zinc",
+          "B": "Iron",
+          "C": "Molybdenum",
+          "D": "Boron"
+        },
+        "correct": "D",
+        "explanation": "Boron plays a multi-faceted but crucial role exclusively in maintaining cell membrane integrity, heavily regulating carbohydrate transport, and directly enabling pollen germination and elongation."
+      },
+      {
+        "q": 28,
+        "topic": "Reproduction",
+        "question": "In the distinct anatomical diagram of a fully developed angiosperm ovule, the exact physical junction where the main body of the ovule fuses with the funicle (stalk) is termed the:",
+        "options": {
+          "A": "Micropyle",
+          "B": "Chalaza",
+          "C": "Hilum",
+          "D": "Raphe"
+        },
+        "correct": "C",
+        "explanation": "The funicle is the structural stalk attaching the ovule to the placenta. The exact attachment scar left on the seed coat after detachment is known scientifically as the hilum."
+      },
+      {
+        "q": 29,
+        "topic": "Structural Organisation in Animals and Plants",
+        "question": "Which of the following correctly pairs the common fruit Mango (Mangifera indica) with its designated taxonomic Order?",
+        "options": {
+          "A": "Sapindales",
+          "B": "Poales",
+          "C": "Polymoniales",
+          "D": "Dicotyledonae"
+        },
+        "correct": "A",
+        "explanation": "Mango formally belongs to the Genus Mangifera, Family Anacardiaceae, Class Dicotyledonae, and Order Sapindales. Poales includes wheat."
+      },
+      {
+        "q": 30,
+        "topic": "Cell Structure and Function",
+        "question": "The critical meiotic event known as disjunction, where fully paired homologous chromosomes physically separate and migrate to opposing poles, occurs strictly during:",
+        "options": {
+          "A": "Anaphase II",
+          "B": "Metaphase",
+          "C": "Anaphase I",
+          "D": "Telophase I"
+        },
+        "correct": "C",
+        "explanation": "During Anaphase I, intact homologous chromosomes strictly separate (reducing ploidy from 2n to n). The distinct splitting of sister chromatids at the centromere occurs later, strictly during Anaphase II."
+      },
+      {
+        "q": 31,
+        "topic": "Ecology and Environment",
+        "question": "In the complex biological nitrogen cycle, the chemoautotrophic bacterium Nitrosomonas is strictly responsible for converting:",
+        "options": {
+          "A": "Nitrate into atmospheric N2",
+          "B": "Nitrite completely into nitrate",
+          "C": "Atmospheric N2 into ammonia",
+          "D": "Ammonia into toxic nitrite"
+        },
+        "correct": "D",
+        "explanation": "Nitrification is a rigorous two-step oxidation. Nitrosomonas heavily oxidizes ammonia directly to nitrite, which is subsequently oxidized to usable nitrate by Nitrobacter."
+      },
+      {
+        "q": 32,
+        "topic": "Biotechnology and its Applications",
+        "question": "Identify the perfectly correct chronological sequence of thermal cycles executed during a standard Polymerase Chain Reaction (PCR).",
+        "options": {
+          "A": "Annealing, Extension, Denaturation",
+          "B": "Denaturation, Annealing, Extension",
+          "C": "Extension, Denaturation, Annealing",
+          "D": "Denaturation, Extension, Annealing"
+        },
+        "correct": "B",
+        "explanation": "PCR strictly involves: 1) Thermal denaturation of double strands (94°C), 2) Annealing of highly specific primers (50-65°C), and 3) Extension of new strands by Taq polymerase (72°C)."
+      },
+      {
+        "q": 33,
+        "topic": "Diversity in the Living World",
+        "question": "The notoriously invasive aquatic plant Zingiber officinale (Ginger) naturally and aggressively propagates its vegetative clones horizontally via specialized underground stems called:",
+        "options": {
+          "A": "Rhizomes",
+          "B": "Tubers",
+          "C": "Offsets",
+          "D": "Bulbs"
+        },
+        "correct": "A",
+        "explanation": "Ginger develops distinct, fleshy, horizontally growing subterranean stems perfectly possessing nodes, internodes, and scaly leaves. These structures are biologically classified as rhizomes."
+      },
+      {
+        "q": 34,
+        "topic": "Cell Structure and Function",
+        "question": "Inside actively respiring mitochondria, the inner boundary membrane forms heavily complex convolutions to vastly increase surface area. These specific infoldings are medically termed:",
+        "options": {
+          "A": "Thylakoids",
+          "B": "Cisternae",
+          "C": "Cristae",
+          "D": "Grana"
+        },
+        "correct": "C",
+        "explanation": "The cristae massively expand the inner mitochondrial surface area to accommodate the extensive thousands of Electron Transport Chain (ETC) complexes heavily required for maximum ATP production."
+      },
+      {
+        "q": 35,
+        "topic": "Ecology and Environment",
+        "question": "Among all complex ecological pyramids analyzing energy, numbers, or biomass across ecosystems, which pyramid type remains universally and structurally upright?",
+        "options": {
+          "A": "Inverted",
+          "B": "Pyramid of Energy",
+          "C": "Spindle-shaped",
+          "D": "Variable"
+        },
+        "correct": "B",
+        "explanation": "Because of the strict constraints of the 10% law of thermodynamics, energy inevitably diminishes as it transfers to higher trophic levels, guaranteeing the energy pyramid can never ever be inverted."
+      },
+      {
+        "q": 36,
+        "topic": "Genetics and Evolution",
+        "question": "During eukaryotic mRNA translation, which of the following distinctly acts as a coding triplet rather than an absolute chain-termination (stop) codon?",
+        "options": {
+          "A": "UAA",
+          "B": "UAG",
+          "C": "UGA",
+          "D": "UGG"
+        },
+        "correct": "D",
+        "explanation": "UAA (Ochre), UAG (Amber), and UGA (Opal) are universally recognized nonsense stop codons. UGG, however, is highly functional and exclusively encodes the amino acid Tryptophan."
+      },
+      {
+        "q": 37,
+        "topic": "Plant Physiology",
+        "question": "Calculate the exact Respiratory Quotient (RQ) representing the complete aerobic oxidation of a common fat like tripalmitin.",
+        "options": {
+          "A": "Approximately 0.7",
+          "B": "Exactly 0.9",
+          "C": "Exactly 1.0",
+          "D": "Greater than 1.0"
+        },
+        "correct": "A",
+        "explanation": "Fats contain proportionally far less oxygen relative to heavily reduced carbon chains than carbohydrates. Therefore, they require significantly more incoming O2 to oxidize, yielding an RQ strictly below 1 (approx 0.7)."
+      },
+      {
+        "q": 38,
+        "topic": "Biotechnology and its Applications",
+        "question": "Genetically engineered 'Bt Cotton' carries inserted genes fundamentally providing robust agricultural resistance specifically against:",
+        "options": {
+          "A": "Microscopic nematodes",
+          "B": "Pathogenic fungi",
+          "C": "Mosaic viruses",
+          "D": "Insect pests (like bollworms)"
+        },
+        "correct": "D",
+        "explanation": "Bt cotton incorporates distinct heavily specialized cry genes (like cryIAc and cryIIAb) isolated strictly from Bacillus thuringiensis, which produce crystalline endotoxins highly lethal specifically to lepidopteran insects."
+      },
+      {
+        "q": 39,
+        "topic": "Structural Organisation in Animals and Plants",
+        "question": "In the extensive secondary growth of dicot stems, the three distinct protective layers consisting of the phellogen, phellem, and phelloderm are collectively and botanically termed the:",
+        "options": {
+          "A": "Complete Bark",
+          "B": "Cork layer",
+          "C": "Periderm",
+          "D": "Central Stele"
+        },
+        "correct": "C",
+        "explanation": "The newly formed lateral meristem (cork cambium/phellogen) rapidly cuts off cork (phellem) externally and secondary cortex (phelloderm) internally. The composite of these three layers constitutes the robust periderm."
+      },
+      {
+        "q": 40,
+        "topic": "Ecology and Environment",
+        "question": "In complex ecological bio-monitoring, lichens are uniquely celebrated as unparalleled natural indicators precisely because they refuse to grow in areas with elevated levels of:",
+        "options": {
+          "A": "Completely unpolluted air",
+          "B": "Sulfur dioxide (SO2) pollution",
+          "C": "Elevated atmospheric CO2",
+          "D": "Extreme high altitude frost"
+        },
+        "correct": "B",
+        "explanation": "Lichens heavily absorb water and minerals directly from the atmosphere. They are extraordinarily highly sensitive to specific industrial SO2 pollution, rapidly dying off in polluted urban corridors."
+      },
+      {
+        "q": 41,
+        "topic": "Genetics and Evolution",
+        "question": "When a distinctly continuous biological trait, such as human skin pigmentation, is tightly controlled by the additive effect of three or more separate genes, the phenomenon is formally known as:",
+        "options": {
+          "A": "Polygenic inheritance",
+          "B": "Standard pleiotropy",
+          "C": "Complete epistasis",
+          "D": "Mendelian dominance"
+        },
+        "correct": "A",
+        "explanation": "Unlike simple Mendelian traits offering clear discrete outcomes, traits like skin color exist tightly on a continuous spectrum, heavily regulated by the cumulative quantitative input of multiple genes (polygenic)."
+      },
+      {
+        "q": 42,
+        "topic": "Genetics and Evolution",
+        "question": "Following the first vital mitotic division in a mature angiosperm pollen grain, the smaller, distinct generative cell will undergo one final division exclusively to physically form:",
+        "options": {
+          "A": "The vegetative tube cell",
+          "B": "The guiding tube nucleus",
+          "C": "Two functional male gametes",
+          "D": "A haploid microspore tetrad"
+        },
+        "correct": "C",
+        "explanation": "To successfully execute double fertilization, the actively migrating generative cell must undergo an independent mitotic division within the pollen tube to yield exactly two distinct, viable haploid male gametes."
+      },
+      {
+        "q": 43,
+        "topic": "Diversity in the Living World",
+        "question": "Which of the following exactly represents a biologically correct and perfectly sequential ascending order in the standard taxonomic hierarchy?",
+        "options": {
+          "A": "Species < Family < Genus",
+          "B": "Species < Genus < Family < Order",
+          "C": "Order < Class < Family",
+          "D": "Division < Class < Order"
+        },
+        "correct": "B",
+        "explanation": "The strictest ascending taxonomic ladder proceeds clearly from smallest specificity to broadest classification: Species -> Genus -> Family -> Order -> Class -> Phylum/Division -> Kingdom."
+      },
+      {
+        "q": 44,
+        "topic": "Cell Structure and Function",
+        "question": "While robust plant cell walls heavily utilize cellulose, the fundamental primary structural polysaccharide actively reinforcing fungal cell walls uniquely lacks:",
+        "options": {
+          "A": "Nitrogen integration",
+          "B": "Complete polysaccharides",
+          "C": "Distinct N-acetylglucosamine polymers",
+          "D": "A protective Peptidoglycan lattice"
+        },
+        "correct": "D",
+        "explanation": "Fungal cell walls are heavily composed of robust chitin (a complex polymer of N-acetylglucosamine). Conversely, peptidoglycan (murein) is exclusively restricted strictly to forming the cell walls of Eubacteria."
+      },
+      {
+        "q": 45,
+        "topic": "Genetics and Evolution",
+        "question": "In the highly complex transcription machinery of eukaryotic cells, RNA polymerase III is strictly and exclusively responsible for the precise synthesis of:",
+        "options": {
+          "A": "tRNA, 5S rRNA, and snRNA",
+          "B": "Precursor mRNA",
+          "C": "Distinct 28S, 18S, and 5.8S rRNA",
+          "D": "Heterogeneous nuclear RNA (hnRNA)"
+        },
+        "correct": "A",
+        "explanation": "Eukaryotes split duties: RNA Pol I synthesizes bulk rRNAs, RNA Pol II handles mRNA precursors (hnRNA), and RNA Pol III focuses explicitly on small, heavily specialized RNAs like tRNA and 5S rRNA."
+      }
+    ],
+    "Zoology": [
+      {
+        "q": 1,
+        "topic": "Human Physiology",
+        "question": "A patient arrives at the emergency department showing severe muscular tetany, low blood calcium levels, and hyper-reflexia. Laboratory assays confirm diminished parathyroid hormone (PTH) production due to accidental surgical removal of the parathyroid glands. Which of the following secondary physiological alterations would you distinctly expect?",
+        "options": {
+          "A": "Decreased active renal reabsorption of calcium ions and impaired bone resorption",
+          "B": "Increased calcitonin secretion to compensate for PTH loss",
+          "C": "Elevated plasma phosphate levels coupled with increased intestinal calcium absorption",
+          "D": "Metabolic alkalosis due to excessive renal hydrogen ion retention"
+        },
+        "correct": "A",
+        "explanation": "Surgical removal of the parathyroid glands causes hypoparathyroidism, leading to a precipitous drop in blood calcium (hypocalcemia). PTH normally stimulates renal calcium reabsorption and bone resorption; its absence impairs both processes."
+      },
+      {
+        "q": 2,
+        "topic": "Reproduction",
+        "question": "During an intensive cardiovascular stress test, a healthy athlete's end-diastolic volume (EDV) is measured at 130 mL and end-systolic volume (ESV) is 50 mL at a heart rate of 150 beats per minute. What is the approximate cardiac output (CO) under these conditions?",
+        "options": {
+          "A": "12.0 L/min",
+          "B": "7.5 L/min",
+          "C": "10.5 L/min",
+          "D": "15.0 L/min"
+        },
+        "correct": "A",
+        "explanation": "Cardiac Output (CO) = Stroke Volume (SV) * Heart Rate (HR). SV = EDV - ESV = 130 mL - 50 mL = 80 mL = 0.08 L. CO = 0.08 L * 150 bpm = 12.0 L/min."
+      },
+      {
+        "q": 3,
+        "topic": "Genetics and Evolution",
+        "question": "In a genetic pedigree analysis tracking an X-linked recessive lethal disorder, a carrier female marries a normal male. What proportion of their surviving live-born female offspring are expected to be heterozygous carriers?",
+        "options": {
+          "A": "1/3",
+          "B": "2/3",
+          "C": "1/4",
+          "D": "1/2"
+        },
+        "correct": "D",
+        "explanation": "For an X-linked recessive lethal allele, affected hemizygous males (XlY) do not survive. A carrier female (XLXl) crossed with a normal male (XLY) produces surviving daughters who are either homozygous normal (1/2) or heterozygous carriers (1/2)."
+      },
+      {
+        "q": 4,
+        "topic": "Human Physiology",
+        "question": "A mutant strain of mice presents with extreme skeletal muscle fatigue due to a functional defect in the sarcoplasmic reticulum membrane proteins responsible for re-sequestering calcium ions following contraction. Which specific transport protein is most likely mutated?",
+        "options": {
+          "A": "Ryanodine receptor channel (RyR1)",
+          "B": "L-type voltage-gated calcium channel (Dihydropyridine receptor)",
+          "C": "Sodium-calcium exchanger (NCX)",
+          "D": "SERCA pump (Sarco/Endoplasmic Reticulum Calcium ATPase)"
+        },
+        "correct": "D",
+        "explanation": "The SERCA (Sarco/Endoplasmic Reticulum Calcium ATPase) pump actively re-sequesters cytoplasmic calcium into the SR during relaxation. Defects here prolong contraction and cause fatigue."
+      },
+      {
+        "q": 5,
+        "topic": "Human Physiology",
+        "question": "Consider a normal adult human breathing at rest with a tidal volume of 500 mL, a respiratory frequency of 12 breaths per minute, and an anatomical dead space volume of 150 mL. What is their total alveolar ventilation rate per minute?",
+        "options": {
+          "A": "6.0 L/min",
+          "B": "3.6 L/min",
+          "C": "4.2 L/min",
+          "D": "5.0 L/min"
+        },
+        "correct": "C",
+        "explanation": "Alveolar Ventilation = (Tidal Volume - Dead Space) * Respiratory Rate = (500 mL - 150 mL) * 12 breaths/min = 350 mL * 12 = 4200 mL/min = 4.2 L/min."
+      },
+      {
+        "q": 6,
+        "topic": "Genetics and Evolution",
+        "question": "A molecular biology researcher is analyzing a segment of double-stranded DNA extracted from a newly discovered deep-sea hydrothermal vent organism. If 22% of the nitrogenous bases are Cytosine, what is the exact percentage of Adenine bases in this DNA molecule?",
+        "options": {
+          "A": "22%",
+          "B": "56%",
+          "C": "28%",
+          "D": "44%"
+        },
+        "correct": "C",
+        "explanation": "By Chargaff's rules, %A = %T and %G = %C. If Cytosine = 22%, Guanine = 22%. Total G+C = 44%. Therefore, A+T = 56%, meaning Adenine = 56% / 2 = 28%."
+      },
+      {
+        "q": 7,
+        "topic": "Reproduction",
+        "question": "During embryonic cleavage divisions in mammals, the blastomeres undergo compaction during the transition from an 8-cell stage to form a tightly adherent cluster called a morula. Which specific transmembrane cell-adhesion proteins are primarily responsible for mediating compaction?",
+        "options": {
+          "A": "Connexins",
+          "B": "E-cadherins",
+          "C": "Integrins",
+          "D": "Selectins"
+        },
+        "correct": "B",
+        "explanation": "Compaction during early mammalian cleavage is mediated by the upregulation and accumulation of calcium-dependent cell-adhesion glycoproteins known as E-cadherins."
+      },
+      {
+        "q": 8,
+        "topic": "Biology and Human Welfare",
+        "question": "A patient with chronic obstructive pulmonary disease (COPD) develops chronic alveolar hypoventilation, leading to an abnormal accumulation of carbon dioxide in arterial blood. How does the renal homeostatic mechanism primarily compensate for this respiratory acidosis?",
+        "options": {
+          "A": "Decreased synthesis and excretion of ammonium ions by proximal tubule cells",
+          "B": "Increased tubular secretion of hydrogen ions and enhanced reabsorption of bicarbonate ions",
+          "C": "Enhanced renal excretion of filtered bicarbonate ions via apical anion exchangers",
+          "D": "Increased reabsorption of chloride ions in exchange for active potassium secretion"
+        },
+        "correct": "B",
+        "explanation": "Chronic respiratory acidosis (due to CO2 retention) is compensated by renal mechanisms: proximal tubule cells increase hydrogen ion secretion and reabsorb more bicarbonate to buffer blood pH."
+      },
+      {
+        "q": 9,
+        "topic": "Biology and Human Welfare",
+        "question": "In a population of diploid organisms in Hardy-Weinberg equilibrium, the frequency of a rare autosomal recessive disease-causing allele is 0.02. What is the predicted frequency of heterozygous carriers in the population?",
+        "options": {
+          "A": "0.0004",
+          "B": "0.0392",
+          "C": "0.0196",
+          "D": "0.0400"
+        },
+        "correct": "B",
+        "explanation": "In Hardy-Weinberg equilibrium, allele frequency p + q = 1, where q = 0.02. The frequency of heterozygotes is 2pq = 2 * (0.98) * (0.02) = 0.0392."
+      },
+      {
+        "q": 10,
+        "topic": "Genetics and Evolution",
+        "question": "During the elongation phase of polypeptide translation in eukaryotes, which specific ribosomal site does the newly charged aminoacyl-tRNA initially bind to after leaving the elongation factor complex?",
+        "options": {
+          "A": "P-site (Peptidyl site)",
+          "B": "E-site (Exit site)",
+          "C": "T-site (Translocation site)",
+          "D": "A-site (Aminoacyl site)"
+        },
+        "correct": "D",
+        "explanation": "During ribosomal translation elongation, charged aminoacyl-tRNAs first enter the A-site, where their anticodon pairs with the mRNA codon before peptide bond formation."
+      },
+      {
+        "q": 11,
+        "topic": "Human Physiology",
+        "question": "A researcher injects a radioactively labeled lipid-soluble hormone into the bloodstream of a mammalian model. Where would you primarily anticipate locating the specific intracellular receptor targets for this hormone?",
+        "options": {
+          "A": "Embedded within the outer lipid bilayer of the plasma membrane",
+          "B": "Freely floating in the extracellular interstitial fluid",
+          "C": "Inside the cytoplasm or bound directly to nuclear chromatin",
+          "D": "Inside lysosomes prior to receptor-mediated degradation"
+        },
+        "correct": "C",
+        "explanation": "Lipid-soluble (steroid or thyroid) hormones diffuse freely across plasma membranes and bind to intracellular receptors located in the cytoplasm or directly inside the nucleus."
+      },
+      {
+        "q": 12,
+        "topic": "Human Physiology",
+        "question": "An individual undergoes a complete blockage of the common bile duct due to a gallstone. Which of the following clinical findings and biochemical changes would you uniquely expect to observe?",
+        "options": {
+          "A": "Unconjugated hyperbilirubinemia with dark amber-colored concentrated urine",
+          "B": "Absence of urobilinogen coupled with complete cessation of pancreatic lipase secretion",
+          "C": "Severe metabolic alkalosis due to unneutralized hydrochloric acid entering the ileum",
+          "D": "Elevated conjugated serum bilirubin, clay-colored pale stools, and steatorrhea"
+        },
+        "correct": "D",
+        "explanation": "Blockage of the common bile duct prevents bilirubin excretion (leading to elevated conjugated bilirubin and dark urine/clay stools) and blocks bile salts needed for fat emulsification, causing steatorrhea."
+      },
+      {
+        "q": 13,
+        "topic": "Human Physiology",
+        "question": "In a classical experiment, a neurobiologist applies an extracellular neurotoxin that selectively blocks voltage-gated potassium (K+) channels on an axon membrane while leaving sodium channels intact. How does this toxin alter the shape of an elicited action potential?",
+        "options": {
+          "A": "It completely abolishes the rapid rising depolarization phase of the action potential",
+          "B": "It hyperpolarizes the resting membrane potential past -90 mV immediately at stimulus onset",
+          "C": "It severely prolongs the repolarization phase, causing a marked delayed return to resting potential",
+          "D": "It induces continuous spontaneous repetitive firing without requiring any threshold stimulus"
+        },
+        "correct": "C",
+        "explanation": "Blocking voltage-gated K+ channels prevents the normal rapid repolarization phase of the action potential, significantly broadening and prolonging the duration of the spike."
+      },
+      {
+        "q": 14,
+        "topic": "Reproduction",
+        "question": "During human spermatogenesis, a primary spermatocyte undergoes normal meiosis I. What is the exact physical composition of chromosomes and DNA content in each resulting secondary spermatocyte immediately following completion of meiosis I?",
+        "options": {
+          "A": "23 single-stranded unreplicated chromosomes and 1C absolute DNA content",
+          "B": "46 replicated chromosomes with 4C DNA content identical to the primary spermatocyte",
+          "C": "23 replicated chromosomes (each containing 2 sister chromatids) and 2C absolute DNA content",
+          "D": "46 single-stranded unreplicated chromosomes with 2C DNA content"
+        },
+        "correct": "C",
+        "explanation": "Meiosis I separates homologous chromosomes. Each secondary spermatocyte receives 23 replicated chromosomes (each with 2 sister chromatids), representing 2C absolute DNA content."
+      },
+      {
+        "q": 15,
+        "topic": "Biology and Human Welfare",
+        "question": "In the humoral immune response, clonal selection and somatic hypermutation of Blymphocytes to drastically improve antibody affinity occur primarily within which anatomical microenvironment?",
+        "options": {
+          "A": "Germinal centers of secondary lymphoid follicles",
+          "B": "Red pulp regions of the spleen",
+          "C": "Cortical thymic nurse cell clusters",
+          "D": "Perivascular spaces of the bone marrow sinusoids"
+        },
+        "correct": "A",
+        "explanation": "Clonal selection and affinity maturation (somatic hypermutation) of B-cells occur within the specialized germinal centers of secondary lymphoid follicles."
+      },
+      {
+        "q": 16,
+        "topic": "Cell Structure and Function",
+        "question": "A competitive inhibitor of the enzyme succinate dehydrogenase is added to a mitochondrial preparation. How will this modifier impact the standard Michaelis-Menten kinetic parameters (Km and Vmax) of the enzyme?",
+        "options": {
+          "A": "Apparent Km decreases while Vmax decreases proportionately",
+          "B": "Km remains unchanged while Vmax drops significantly",
+          "C": "Apparent Km increases while Vmax remains entirely unchanged",
+          "D": "Both apparent Km and Vmax decrease simultaneously to zero"
+        },
+        "correct": "C",
+        "explanation": "Competitive inhibitors bind reversibly to the enzyme's active site, increasing the apparent Km while leaving Vmax completely unaffected because high substrate concentrations outcompete the inhibitor."
+      },
+      {
+        "q": 17,
+        "topic": "Reproduction",
+        "question": "Which of the following embryonic tissue layers gives rise to the adrenal medulla, the sensory ganglia of cranial nerves, and the melanocytes of the epidermis?",
+        "options": {
+          "A": "Endodermal gut tube lining epithelium",
+          "B": "Neural crest cells derived from ectoderm",
+          "C": "Paraxial mesoderm somite sclerotomes",
+          "D": "Visceral lateral plate mesoderm"
+        },
+        "correct": "B",
+        "explanation": "Neural crest cells are a distinct population of multipotent ectodermal cells that delaminate during neurulation to form the peripheral nervous system, pigment cells, and parts of the skull."
+      },
+      {
+        "q": 18,
+        "topic": "Biology and Human Welfare",
+        "question": "A patient presents with extreme lethargy, low blood pressure, high plasma potassium (hyperkalemia), and low blood sodium (hyponatremia). This clinical presentation is classic for Addison's disease, caused by the destruction of the adrenal cortex. Which specific cortical zone and hormone deficiency underlie these electrolyte disturbances?",
+        "options": {
+          "A": "Zona glomerulosa; deficiency of aldosterone",
+          "B": "Zona fasciculata; deficiency of cortisol",
+          "C": "Zona reticularis; deficiency of dehydroepiandrosterone",
+          "D": "Medulla; deficiency of norepinephrine"
+        },
+        "correct": "A",
+        "explanation": "Addison's disease involves destruction of the adrenal cortex, specifically the zona glomerulosa, resulting in a deficiency of mineralocorticoids like aldosterone, leading to severe hyponatremia and hyperkalemia."
+      },
+      {
+        "q": 19,
+        "topic": "Human Physiology",
+        "question": "During the refractory period of a cardiac muscle fiber, the plateau phase of the action potential is maintained primarily by a balanced inward and outward flux of which ions?",
+        "options": {
+          "A": "Inward calcium (Ca2+) flux balancing outward potassium (K+) efflux",
+          "B": "Inward sodium (Na+) flux balancing outward chloride (Cl-) efflux",
+          "C": "Inward potassium (K+) flux balancing outward calcium (Ca2+) efflux",
+          "D": "Inward hydrogen (H+) flux balancing outward bicarbonate (HCO3-) efflux"
+        },
+        "correct": "A",
+        "explanation": "The plateau phase of cardiac muscle action potentials is maintained by a prolonged inward calcium current through L-type channels balancing outward potassium efflux."
+      },
+      {
+        "q": 20,
+        "topic": "Genetics and Evolution",
+        "question": "In fruit flies (Drosophila melanogaster), sex determination relies on the ratio of X chromosomes to sets of autosomes (X:A ratio). What phenotype is predicted for an individual fly possessing an X:A ratio of 0.5 under normal diploid conditions?",
+        "options": {
+          "A": "Normal fertile female",
+          "B": "Intersex sterile fly",
+          "C": "Metamale (hyper-male) sterile",
+          "D": "Normal fertile male"
+        },
+        "correct": "D",
+        "explanation": "In Drosophila, sex is determined by the X:A ratio. An X:A ratio of 0.5 (e.g., XY with two sets of autosomes) results in a normal, fertile male."
+      },
+      {
+        "q": 21,
+        "topic": "Human Physiology",
+        "question": "During prolonged strenuous exercise, skeletal muscle cells shift toward anaerobic glycolysis, producing substantial lactic acid. How does the human body primarily manage and clear this accumulated lactate to prevent systemic lactic acidosis?",
+        "options": {
+          "A": "Transport via the bloodstream to the liver, where it is converted back to glucose via the Cori cycle",
+          "B": "Direct oxidation into carbon dioxide and water inside red blood cells via the pentose phosphate pathway",
+          "C": "Excretion directly through specialized sweat glands in the dermal skin layer",
+          "D": "Conversion into urea within skeletal muscle mitochondria via the ornithine-urea cycle"
+        },
+        "correct": "A",
+        "explanation": "Lactic acid produced during anaerobic exercise is transported via blood to the liver, where it is resynthesized into glucose via the Cori cycle."
+      },
+      {
+        "q": 22,
+        "topic": "Genetics and Evolution",
+        "question": "A mutation in the gene encoding the cystic fibrosis transmembrane conductance regulator (CFTR) impairs chloride ion transport across epithelial cell membranes. Why does this molecular defect lead to the production of thick, viscous mucus in the respiratory airways?",
+        "options": {
+          "A": "Excessive active transport of sodium into mucus cells draws massive amounts of intracellular water out",
+          "B": "Upregulation of ciliary beat frequency evaporates water faster than secretory glands can replenish it",
+          "C": "Precipitation of calcium phosphate crystals binds mucin glycoproteins into rigid solid matrices",
+          "D": "Reduced chloride secretion draws less water into the extracellular mucus layer via osmosis, causing dehydration of secretions"
+        },
+        "correct": "D",
+        "explanation": "Defective CFTR chloride channels reduce Cl- secretion into airway lumens, failing to draw water outward via osmosis. This dehydrates the mucus, making it thick and viscous."
+      },
+      {
+        "q": 23,
+        "topic": "Human Physiology",
+        "question": "Which of the following describes the mechanism of action of polypeptide hormones like insulin upon binding to their target cell surface receptors?",
+        "options": {
+          "A": "Direct diffusion across the lipid bilayer to bind cytoplasmic receptor proteins",
+          "B": "Activation of intrinsic tyrosine kinase activity leading to intracellular phosphorylation cascades",
+          "C": "Opening of ligand-gated chloride ion channels to hyperpolarize the cell membrane",
+          "D": "Activation of intracellular guanylyl cyclase to directly synthesize cyclic GMP"
+        },
+        "correct": "B",
+        "explanation": "Polypeptide hormones bind cell surface receptors possessing intrinsic tyrosine kinase activity, triggering downstream phosphorylation cascades."
+      },
+      {
+        "q": 24,
+        "topic": "Cell Structure and Function",
+        "question": "During mammalian fertilization, the block to polyspermy that permanently alters the zona pellucida to prevent subsequent sperm binding (the zona reaction) is triggered directly by exocytosis of which cellular structures?",
+        "options": {
+          "A": "Cortical granules residing beneath the oocyte plasma membrane",
+          "B": "Acrosomal vesicles located at the sperm head apex",
+          "C": "First polar body remnants attached to the perivitelline space",
+          "D": "Mitochondrial aggregates clustered around the oocyte spindle apparatus"
+        },
+        "correct": "A",
+        "explanation": "The zona reaction is triggered by the exocytosis of cortical granules beneath the oocyte plasma membrane, modifying the zona pellucida to prevent polyspermy."
+      },
+      {
+        "q": 25,
+        "topic": "Human Physiology",
+        "question": "In the context of the human nephron, where does the maximum percentage of filtered water and essential solutes (glucose, amino acids) undergo obligate reabsorption under normal physiological conditions?",
+        "options": {
+          "A": "Descending limb of the loop of Henle",
+          "B": "Proximal Convoluted Tubule (PCT)",
+          "C": "Distal Convoluted Tubule (DCT)",
+          "D": "Medullary collecting duct system"
+        },
+        "correct": "B",
+        "explanation": "The proximal convoluted tubule (PCT) is responsible for the obligate reabsorption of ~65-70% of filtered water, sodium, and virtually all glucose and amino acids."
+      },
+      {
+        "q": 26,
+        "topic": "Human Physiology",
+        "question": "A pharmacological agent is administered that specifically blocks the reuptake of serotonin and norepinephrine into presynaptic nerve terminals in the central nervous system. This drug functions primarily as a:",
+        "options": {
+          "A": "Neuromodulator reuptake inhibitor acting as an antidepressant",
+          "B": "Competitive antagonist blocking postsynaptic ionotropic acetylcholine receptors",
+          "C": "Direct agonist mimicking inhibitory gamma-aminobutyric acid (GABA) action",
+          "D": "Irreversible inhibitor of monoamine oxidase enzyme degradation pathways"
+        },
+        "correct": "A",
+        "explanation": "Drugs blocking the reuptake of monoamine neurotransmitters (serotonin, norepinephrine) prolong their synaptic presence and serve clinically as antidepressants."
+      },
+      {
+        "q": 27,
+        "topic": "Genetics and Evolution",
+        "question": "An evolutionary biologist is studying a stable population of birds on an isolated oceanic island. If stabilizing selection is actively operating on a quantitative morphological trait such as body weight, what effect does this have on the population phenotype over generations?",
+        "options": {
+          "A": "It splits the population into two distinct phenotypic extremes, eliminating intermediate forms",
+          "B": "It narrows the phenotypic variance by favoring intermediate phenotypes and selecting against extreme tails",
+          "C": "It shifts the mean phenotypic value unidirectionally toward a new environmental optimum",
+          "D": "It increases overall genetic polymorphism without altering morphological variance proportions"
+        },
+        "correct": "B",
+        "explanation": "Stabilizing selection favors intermediate phenotypes while selecting against extremes, thereby reducing phenotypic variance over generations without altering mean values."
+      },
+      {
+        "q": 28,
+        "topic": "Reproduction",
+        "question": "During early vertebrate embryonic development, the process of neurulation involves the folding of the neural plate to form the neural tube. Which major morphogenetic signaling molecule family plays a master role in inducing neural plate formation from ectoderm by inhibiting bone morphogenetic proteins (BMPs)?",
+        "options": {
+          "A": "Fibroblast Growth Factor (FGF) receptor ligands",
+          "B": "Wnt/beta-catenin pathway transcriptional activators",
+          "C": "Noggin, Chordin, and Follistatin antagonists",
+          "D": "Retinoic acid degrading cytochrome P450 enzymes"
+        },
+        "correct": "C",
+        "explanation": "Noggin, Chordin, and Follistatin are secreted antagonists that bind and neutralize bone morphogenetic proteins (BMPs), thereby inducing ectoderm to form the neural plate."
+      },
+      {
+        "q": 29,
+        "topic": "Human Physiology",
+        "question": "In the mammalian eye, visual transduction by rod photoreceptor cells in the dark involves high cytosolic levels of cyclic GMP (cGMP) maintaining open sodium channels. What happens to intracellular cGMP levels and membrane potential when a photon of light strikes rhodopsin?",
+        "options": {
+          "A": "Light inhibits transducin, causing accumulation of cGMP, channel opening, and membrane depolarization",
+          "B": "Light activates phosphodiesterase, which hydrolyzes cGMP, leading to channel closure and membrane hyperpolarization",
+          "C": "Light stimulates guanylyl cyclase directly, opening potassium channels and generating an action potential",
+          "D": "Light triggers calcium influx, which destroys retinaldehyde and depolarizes the synaptic terminal"
+        },
+        "correct": "B",
+        "explanation": "Light activates rhodopsin, which stimulates transducin to activate phosphodiesterase. PDE hydrolyzes cGMP, closing cGMP-gated Na+ channels and hyperpolarizing the photoreceptor."
+      },
+      {
+        "q": 30,
+        "topic": "Biotechnology and its Applications",
+        "question": "A researcher clones a human gene into an expression plasmid and introduces it into bacteria. To ensure proper eukaryotic mRNA processing—specifically the removal of non-coding introns prior to translation—what specific template must the researcher initially clone?",
+        "options": {
+          "A": "Genomic DNA containing all native exons and non-coding introns intact",
+          "B": "Synthetic oligonucleotides assembled manually based on predicted amino acid sequences",
+          "C": "Ribosomal RNA transcripts extracted directly from human hepatic tissue polysomes",
+          "D": "Complementary DNA (cDNA) synthesized from mature spliced mRNA via reverse transcriptase"
+        },
+        "correct": "D",
+        "explanation": "To express eukaryotic genes in bacteria (which lack splicing machinery), researchers must clone cDNA synthesized from spliced mature mRNA via reverse transcriptase."
+      },
+      {
+        "q": 31,
+        "topic": "Reproduction",
+        "question": "Which of the following anatomical features or physiological adaptations is uniquely characteristic of class Aves (birds) compared to mammalian counterparts?",
+        "options": {
+          "A": "Presence of a pneumatic bone system connected to air sacs and a synech-structured lung ventilation system",
+          "B": "A four-chambered heart possessing a completely left-sided systemic aortic arch",
+          "C": "Red blood cells that are permanently nucleated and biconcave in shape",
+          "D": "Excretion of nitrogenous waste primarily as highly soluble liquid urea via a urinary bladder"
+        },
+        "correct": "A",
+        "explanation": "Aves (birds) possess pneumatic (hollow) bones connected to air sacs and a unidirectional flow-through lung ventilation system, setting them apart from mammals."
+      },
+      {
+        "q": 32,
+        "topic": "Genetics and Evolution",
+        "question": "In molecular genetics, the Ames test is a widely accepted biological assay used to determine the mutagenic potential of chemical compounds. What specific organism and metabolic marker are utilized in this standard assay?",
+        "options": {
+          "A": "Prototrophic strains of Escherichia coli resistant to ampicillin antibiotics",
+          "B": "Virulent bacteriophage lambda mutants carrying amber stop codons",
+          "C": "Chemolithotrophic bacteria capable of reducing atmospheric nitrogen gas",
+          "D": "Auxotrophic mutant strains of Salmonella typhimurium unable to synthesize histidine"
+        },
+        "correct": "D",
+        "explanation": "The Ames test uses histidine-requiring auxotrophic mutant strains of Salmonella typhimurium to evaluate the mutagenic and carcinogenic potential of chemical agents."
+      },
+      {
+        "q": 33,
+        "topic": "Reproduction",
+        "question": "During the menstrual cycle, if fertilization does not occur, the corpus luteum undergoes structural and functional regression into a fibrous scar known as the corpus albicans. What primary physiological trigger initiates this luteolysis?",
+        "options": {
+          "A": "A massive secondary surge of follicle-stimulating hormone (FSH) from the anterior pituitary",
+          "B": "Direct inhibition of progesterone synthesis by rising circulating levels of human chorionic gonadotropin",
+          "C": "Withdrawal of luteotropic hormonal support combined with local apoptotic signaling pathways",
+          "D": "Complete ossification of the ovarian stromal connective tissue matrix"
+        },
+        "correct": "C",
+        "explanation": "Luteolysis (regression of the corpus luteum) is triggered by the withdrawal of trophic hormonal support and activation of intra-ovarian apoptotic signaling cascades."
+      },
+      {
+        "q": 34,
+        "topic": "Genetics and Evolution",
+        "question": "Which of the following describes the functional role of the enzyme aminoacyl-tRNA synthetase during protein synthesis?",
+        "options": {
+          "A": "It links adjacent amino acids together by catalyzing peptide bond formation in the peptidyl transferase center",
+          "B": "It proofreads the mRNA transcript during transcription to excise mismatched ribonucleotides",
+          "C": "It attaches the correct specific amino acid to its corresponding cognate tRNA molecule using ATP energy",
+          "D": "It unwinds the DNA double helix ahead of the advancing RNA polymerase transcription bubble"
+        },
+        "correct": "C",
+        "explanation": "Aminoacyl-tRNA synthetase is the specific enzyme responsible for attaching the correct amino acid to its cognate tRNA using energy from ATP."
+      },
+      {
+        "q": 35,
+        "topic": "Ecology and Environment",
+        "question": "An ecological study calculates the net primary productivity (NPP) of a temperate forest ecosystem to be 2500 kcal/m2/year, while plant respiration is 1500 kcal/m2/year. What is the Gross Primary Productivity (GPP) of this ecosystem?",
+        "options": {
+          "A": "4000 kcal/m²/year",
+          "B": "1000 kcal/m²/year",
+          "C": "2500 kcal/m²/year",
+          "D": "3750 kcal/m²/year"
+        },
+        "correct": "A",
+        "explanation": "Gross Primary Productivity (GPP) = Net Primary Productivity (NPP) + Respiration (R) = 2500 + 1500 = 4000 kcal/m²/year."
+      },
+      {
+        "q": 36,
+        "topic": "Human Physiology",
+        "question": "During an action potential in a mammalian neuron, the absolute refractory period—during which no new action potential can be fired regardless of stimulus strength—is caused primarily by:",
+        "options": {
+          "A": "Prolonged hyperpolarization due to slow closure of voltage-gated potassium channels",
+          "B": "Complete depletion of intracellular ATP stores within the axoplasm",
+          "C": "Inactivation gates of voltage-gated sodium (Na+) channels being closed",
+          "D": "Upregulation of electrogenic sodium-potassium ATPase pump activity"
+        },
+        "correct": "C",
+        "explanation": "The absolute refractory period is caused by the inactivation gates of voltage-gated sodium channels being physically closed during and immediately following depolarization."
+      },
+      {
+        "q": 37,
+        "topic": "Genetics and Evolution",
+        "question": "In genetic linkage mapping, two gene loci located on the same chromosome show a recombination frequency of 18%. What is the distance between these two loci in map units (centiMorgans)?",
+        "options": {
+          "A": "36 cM",
+          "B": "9 cM",
+          "C": "18 cM",
+          "D": "1.8 cM"
+        },
+        "correct": "C",
+        "explanation": "In genetic mapping, 1% recombination frequency corresponds exactly to 1 map unit or 1 centiMorgan (cM). Thus, 18% recombination = 18 cM."
+      },
+      {
+        "q": 38,
+        "topic": "Human Physiology",
+        "question": "Which of the following structural components of the mammalian inner ear is directly responsible for transducing sound vibrations into electrochemical nerve impulses?",
+        "options": {
+          "A": "Macula of the utricle and saccule within the vestibule",
+          "B": "Crista ampullaris located in the semicircular canal ampullae",
+          "C": "Tympanic membrane stretched across the external auditory meatus",
+          "D": "Organ of Corti resting on the basilar membrane within the cochlear duct"
+        },
+        "correct": "D",
+        "explanation": "The Organ of Corti, containing mechanosensitive hair cells resting on the basilar membrane within the cochlear duct, is the primary organ of sound hearing/transduction."
+      },
+      {
+        "q": 39,
+        "topic": "Biology and Human Welfare",
+        "question": "A patient with severe combined immunodeficiency (SCID) lacks both T-cell and B-cell mediated immunity due to a genetic mutation affecting lymphocyte development. Which fundamental cellular pathway is most frequently defective in the most common X-linked form of SCID?",
+        "options": {
+          "A": "Adenosine deaminase (ADA) purine salvage metabolic degradation",
+          "B": "Common gamma chain subunit shared by multiple interleukin receptors (IL-2R)",
+          "C": "RAG-1 and RAG-2 V(D)J recombination endonuclease enzymes",
+          "D": "MHC Class II antigen presentation transcriptional co-activators"
+        },
+        "correct": "B",
+        "explanation": "X-linked SCID is most commonly caused by mutations in the gene encoding the common gamma chain shared by receptors for multiple interleukins essential for lymphocyte development."
+      },
+      {
+        "q": 40,
+        "topic": "Genetics and Evolution",
+        "question": "In evolutionary developmental biology (Evo-Devo), mutations in Hox genes often lead to dramatic morphological changes, such as the development of legs in place of antennae in Drosophila. This phenomenon of one body part being replaced by another due to developmental gene misexpression is known as:",
+        "options": {
+          "A": "Allometry",
+          "B": "Adaptive radiation",
+          "C": "Paedomorphosis",
+          "D": "Homeosis"
+        },
+        "correct": "D",
+        "explanation": "Homeosis is the developmental transformation of one body part into another due to misexpression or mutation of master regulatory genes such as Hox genes."
+      },
+      {
+        "q": 41,
+        "topic": "Cell Structure and Function",
+        "question": "During the process of oxidative phosphorylation within the inner mitochondrial membrane, electrons are transferred sequentially through respiratory complexes. Which complex does NOT directly pump protons from the matrix into the intermembrane space?",
+        "options": {
+          "A": "Complex I (NADH dehydrogenase)",
+          "B": "Complex III (Cytochrome bc1 complex)",
+          "C": "Complex IV (Cytochrome c oxidase)",
+          "D": "Complex II (Succinate dehydrogenase)"
+        },
+        "correct": "D",
+        "explanation": "Complex II (Succinate dehydrogenase) of the mitochondrial electron transport chain does not pump protons across the inner mitochondrial membrane; only Complexes I, III, and IV do."
+      },
+      {
+        "q": 42,
+        "topic": "Genetics and Evolution",
+        "question": "A couple has three children, all of whom are boys. What is the exact mathematical probability that their next (fourth) child will also be a boy?",
+        "options": {
+          "A": "1/2",
+          "B": "1/4",
+          "C": "1/8",
+          "D": "1/16"
+        },
+        "correct": "A",
+        "explanation": "Each fertilization and embryonic gender determination event is an independent Bernoulli trial with a 50% (1/2) chance for a boy, regardless of previous sibling sexes."
+      },
+      {
+        "q": 43,
+        "topic": "Ecology and Environment",
+        "question": "Which of the following best defines 'competitive exclusion principle' (Gause's Law) in community ecology?",
+        "options": {
+          "A": "Two competing species can stably coexist if one specializes on micro-habitats",
+          "B": "Two species competing for the exact same limiting resources cannot coexist indefinitely in the same niche",
+          "C": "Predation intensity increases monotonically with prey population density",
+          "D": "Species richness is highest at intermediate levels of ecological disturbance"
+        },
+        "correct": "B",
+        "explanation": "Gause's Competitive Exclusion Principle states that two species competing for the exact same limiting resources cannot coexist indefinitely in the same ecological niche."
+      },
+      {
+        "q": 44,
+        "topic": "Human Physiology",
+        "question": "During skeletal muscle excitation-contraction coupling, the action potential propagates down the T-tubules and causes a conformational change that opens calcium release channels located on the:",
+        "options": {
+          "A": "Sarcolemma surface membrane near neuromuscular junctions",
+          "B": "Sarcoplasmic reticulum terminal cisternae membrane",
+          "C": "Inner mitochondrial membrane close to myofibrils",
+          "D": "Nuclear envelope surrounding the muscle fiber nuclei"
+        },
+        "correct": "B",
+        "explanation": "T-tubule depolarization triggers a conformational shift in voltage-sensitive dihydropyridine receptors that mechanically opens ryanodine receptor calcium channels on the sarcoplasmic reticulum."
+      },
+      {
+        "q": 45,
+        "topic": "Human Physiology",
+        "question": "In human blood gas transport, the Bohr effect describes how an increase in blood CO2 partial pressure and hydrogen ion concentration (lower pH):",
+        "options": {
+          "A": "Reduces hemoglobin's affinity for oxygen, shifting the oxygen-hemoglobin dissociation curve to the right",
+          "B": "Enhances hemoglobin's affinity for oxygen, promoting greater oxygen loading in peripheral tissues",
+          "C": "Increases the solubility of carbon dioxide gas directly within plasma lipid fractions",
+          "D": "Triggers the precipitation of methemoglobin within erythrocyte cytoplasm"
+        },
+        "correct": "A",
+        "explanation": "The Bohr effect states that elevated CO2 and H+ concentrations lower hemoglobin's oxygen affinity, shifting the dissociation curve to the right to facilitate tissue oxygen unloading."
+      }
+    ]
+  }
+}

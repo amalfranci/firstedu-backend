@@ -1,0 +1,1062 @@
+{
+  "paper_id": "JEE_MAINS_paper3",
+  "title": "JEE Main Paper 3 (Advanced-level Question Bank)",
+  "subjects": {
+    "Physics": [
+      {
+        "q": 1,
+        "global_q": 1,
+        "topic": "Kinematics",
+        "question": "A particle of mass m moves in a straight line with deceleration proportional to its velocity v, given by a=-kv, where k is a positive constant. If its initial velocity is v0, what is the total distance traveled by the particle before coming to rest?",
+        "options": {
+          "A": "v0/k",
+          "B": "v0/(2k)",
+          "C": "k v0",
+          "D": "v0^2/(2k)"
+        },
+        "correct": "A",
+        "explanation": "a=v(dv/dx)=-kv. Canceling v and integrating from v0 to 0 gives S=v0/k."
+      },
+      {
+        "q": 2,
+        "global_q": 2,
+        "topic": "Laws of Motion",
+        "question": "A block of mass m is placed on a smooth inclined plane of angle theta. The incline is given a horizontal acceleration 'a' to the right so that the block remains stationary relative to the incline. The magnitude of horizontal acceleration 'a' is:",
+        "options": {
+          "A": "g sin theta",
+          "B": "g tan theta",
+          "C": "g cos theta",
+          "D": "g cot theta"
+        },
+        "correct": "B",
+        "explanation": "Balancing pseudo-force components along the incline: mg sinθ = ma cosθ ⇒ a = g tanθ."
+      },
+      {
+        "q": 3,
+        "global_q": 3,
+        "topic": "Gravitation",
+        "question": "A body is projected vertically upwards from the surface of the Earth with a speed equal to half the escape velocity. The maximum height reached by the body above the Earth's surface (where R is the radius of the Earth) is:",
+        "options": {
+          "A": "R/2",
+          "B": "R/4",
+          "C": "R/3",
+          "D": "R/5"
+        },
+        "correct": "C",
+        "explanation": "Using energy conservation with v=ve/2, solving gives h=R/3."
+      },
+      {
+        "q": 4,
+        "global_q": 4,
+        "topic": "Rotational Motion",
+        "question": "A uniform rod of length L and mass M is pivoted at one end and held horizontal. When released from rest, its angular acceleration at the instant of release is:",
+        "options": {
+          "A": "3g/L",
+          "B": "2g/(3L)",
+          "C": "g/L",
+          "D": "3g/(2L)"
+        },
+        "correct": "D",
+        "explanation": "τ=Mg(L/2), I=(1/3)ML². α=τ/I=3g/(2L)."
+      },
+      {
+        "q": 5,
+        "global_q": 5,
+        "topic": "Thermodynamics",
+        "question": "A Carnot heat engine operates between temperatures T1=400 K and T2=300 K. It absorbs 1200 J of heat from the high-temperature reservoir per cycle. The amount of work done per cycle is:",
+        "options": {
+          "A": "300 J",
+          "B": "200 J",
+          "C": "400 J",
+          "D": "900 J"
+        },
+        "correct": "A",
+        "explanation": "η=1-300/400=0.25. W=0.25×1200=300 J."
+      },
+      {
+        "q": 6,
+        "global_q": 6,
+        "topic": "Oscillations and Waves",
+        "question": "Two simple harmonic motions along the same line are represented by y1=4 sin(ωt+π/6) and y2=3 cos(ωt). The phase difference between y1 and y2 is:",
+        "options": {
+          "A": "π/6",
+          "B": "π/3",
+          "C": "2π/3",
+          "D": "π/2"
+        },
+        "correct": "B",
+        "explanation": "Expressing y2=3sin(ωt+π/2), phase difference = π/2-π/6 = π/3."
+      },
+      {
+        "q": 7,
+        "global_q": 7,
+        "topic": "Electrostatics",
+        "question": "Two point charges +q and -q are placed at a distance 2a apart. The electric potential at a point on the perpendicular bisector at a distance r from the midpoint is:",
+        "options": {
+          "A": "kq/r",
+          "B": "2kq/r",
+          "C": "zero",
+          "D": "kq/(r^2+a^2)"
+        },
+        "correct": "C",
+        "explanation": "Both charges are equidistant, so the potentials cancel, giving net potential zero."
+      },
+      {
+        "q": 8,
+        "global_q": 8,
+        "topic": "Electrostatics",
+        "question": "A parallel plate capacitor of area A and plate separation d is filled with two slabs of dielectric constants K1=2 and K2=4, each of thickness d/2. The effective capacitance of the system (where C0=ε0A/d) is:",
+        "options": {
+          "A": "2 C0",
+          "B": "4 C0",
+          "C": "3 C0",
+          "D": "8/3 C0"
+        },
+        "correct": "D",
+        "explanation": "Series combination of C1=4C0 and C2=8C0 gives Ceq=8C0/3."
+      },
+      {
+        "q": 9,
+        "global_q": 9,
+        "topic": "Current Electricity",
+        "question": "In a Wheatstone bridge network, four resistors with resistances R1=10 Ω, R2=20 Ω, R3=30 Ω, and R4=60 Ω are connected in a cyclic order. A galvanometric branch of resistance 15 Ω is connected across opposite nodes. The equivalent resistance across the battery terminals connected to the remaining two nodes is:",
+        "options": {
+          "A": "22.5 Ω",
+          "B": "18.0 Ω",
+          "C": "20.0 Ω",
+          "D": "15.0 Ω"
+        },
+        "correct": "A",
+        "explanation": "Bridge is balanced (R1/R2=R3/R4), so galvanometer branch carries no current. Parallel combination of 30Ω and 90Ω gives 22.5Ω."
+      },
+      {
+        "q": 10,
+        "global_q": 10,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "A charged particle of charge q and mass m enters a uniform magnetic field B with velocity v perpendicular to B. The time period of revolution is independent of:",
+        "options": {
+          "A": "mass m",
+          "B": "velocity v",
+          "C": "magnetic field B",
+          "D": "charge q"
+        },
+        "correct": "B",
+        "explanation": "T=2πm/(qB), which does not depend on velocity v."
+      },
+      {
+        "q": 11,
+        "global_q": 11,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "A magnetic dipole of magnetic moment M is placed in a uniform magnetic field B aligned along the field. The work done in rotating it by 180° is:",
+        "options": {
+          "A": "MB",
+          "B": "zero",
+          "C": "2 MB",
+          "D": "-MB"
+        },
+        "correct": "C",
+        "explanation": "W=ΔU=MB-(-MB)=2MB."
+      },
+      {
+        "q": 12,
+        "global_q": 12,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "An inductor with self-inductance L=4 H and resistance R=8 Ω is connected to a 12 V DC source at t=0. The time taken for the current to reach 50% of its steady-state value and the energy stored in the inductor at that instant are respectively (ln 2 ≈ 0.693):",
+        "options": {
+          "A": "0.500 s and 1.125 J",
+          "B": "0.347 s and 0.5625 J",
+          "C": "0.693 s and 2.25 J",
+          "D": "0.347 s and 1.125 J"
+        },
+        "correct": "D",
+        "explanation": "t=(L/R)ln2=0.347s. I=0.75A at that instant, energy=(1/2)LI²=1.125 J."
+      },
+      {
+        "q": 13,
+        "global_q": 13,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "In a series LCR AC circuit, R=30 Ω, X_L=80 Ω, and X_C=40 Ω. The impedance of the circuit is:",
+        "options": {
+          "A": "50 Ω",
+          "B": "70 Ω",
+          "C": "110 Ω",
+          "D": "30 Ω"
+        },
+        "correct": "A",
+        "explanation": "Z=√(30²+40²)=50Ω."
+      },
+      {
+        "q": 14,
+        "global_q": 14,
+        "topic": "Electromagnetic Waves",
+        "question": "An electromagnetic wave traveling in vacuum has an electric field vector given by E=E0 sin(kz-ωt) î. The direction of propagation and magnetic field B vector are along:",
+        "options": {
+          "A": "+z axis and -y axis",
+          "B": "+z axis and +y axis",
+          "C": "-z axis and +y axis",
+          "D": "+z axis and +x axis"
+        },
+        "correct": "B",
+        "explanation": "Propagation is along +z; since î×ĵ=k̂, B must be along +y."
+      },
+      {
+        "q": 15,
+        "global_q": 15,
+        "topic": "Optics",
+        "question": "A convex lens of focal length 20 cm forms a real image of an object at a distance of 60 cm from the lens. The object distance from the lens is:",
+        "options": {
+          "A": "-15 cm",
+          "B": "-40 cm",
+          "C": "-30 cm",
+          "D": "-60 cm"
+        },
+        "correct": "C",
+        "explanation": "Using 1/f=1/v-1/u with f=20, v=60: u=-30 cm."
+      },
+      {
+        "q": 16,
+        "global_q": 16,
+        "topic": "Optics",
+        "question": "In Young's double slit experiment, if the separation between slits is halved and distance between slits and screen is doubled, the fringe width becomes:",
+        "options": {
+          "A": "Unchanged",
+          "B": "Two times",
+          "C": "Eight times",
+          "D": "Four times"
+        },
+        "correct": "D",
+        "explanation": "β'=λ(2D)/(d/2)=4β."
+      },
+      {
+        "q": 17,
+        "global_q": 17,
+        "topic": "Dual Nature of Matter and Radiation",
+        "question": "Monochromatic light of wavelength 300 nm falls on a photo-emissive surface having work function 2.5 eV. The stopping potential required to cut off the photocurrent is (take hc=1240 eV nm):",
+        "options": {
+          "A": "1.63 V",
+          "B": "4.13 V",
+          "C": "2.50 V",
+          "D": "1.85 V"
+        },
+        "correct": "A",
+        "explanation": "E=1240/300=4.133 eV. K_max=4.133-2.5=1.633 eV ≈1.63 V stopping potential."
+      },
+      {
+        "q": 18,
+        "global_q": 18,
+        "topic": "Dual Nature of Matter and Radiation",
+        "question": "The de Broglie wavelength of an electron accelerated from rest through a potential difference of V volts is given by:",
+        "options": {
+          "A": "1.227/√V Å",
+          "B": "12.27/√V Å",
+          "C": "122.7/√V Å",
+          "D": "0.1227/√V Å"
+        },
+        "correct": "B",
+        "explanation": "λ=h/√(2meV)≈12.27/√V Å."
+      },
+      {
+        "q": 19,
+        "global_q": 19,
+        "topic": "Atoms and Nuclei",
+        "question": "In a hydrogen atom, the ratio of the radius of the third orbit to that of the second orbit is:",
+        "options": {
+          "A": "3:2",
+          "B": "4:9",
+          "C": "9:4",
+          "D": "2:3"
+        },
+        "correct": "C",
+        "explanation": "r_n∝n², so r3/r2=9/4."
+      },
+      {
+        "q": 20,
+        "global_q": 20,
+        "topic": "Atoms and Nuclei",
+        "question": "A nuclear reactor powered by U-235 produces thermal energy at a rate of 300 MW. If each fission event releases 200 MeV of energy, the mass of U-235 consumed per day is approximately (take 1 MeV=1.6×10⁻¹³ J, molar mass of U-235=235 g/mol, Avogadro's number NA=6.02×10²³ mol⁻¹):",
+        "options": {
+          "A": "73.5 g",
+          "B": "147 g",
+          "C": "588 g",
+          "D": "294 g"
+        },
+        "correct": "D",
+        "explanation": "Calculating fissions/day and converting to moles and mass gives approximately 294 g."
+      },
+      {
+        "q": 21,
+        "global_q": 21,
+        "topic": "Electronic Devices",
+        "question": "A silicon p-n junction diode has a depletion width of 1.0 µm and a built-in potential barrier of 0.7 V under zero bias. When a reverse bias voltage of 5.7 V is applied across the diode, the new depletion width and maximum electric field in the depletion region become respectively:",
+        "options": {
+          "A": "3.0 µm and 4.27×10⁶ V/m",
+          "B": "2.0 µm and 2.0×10⁶ V/m",
+          "C": "3.0 µm and 2.13×10⁶ V/m",
+          "D": "1.5 µm and 3.0×10⁶ V/m"
+        },
+        "correct": "A",
+        "explanation": "W'=1.0µm×√(6.4/0.7)=3.0µm. E_max=2(6.4)/(3.0×10⁻⁶)=4.27×10⁶ V/m."
+      },
+      {
+        "q": 22,
+        "global_q": 22,
+        "topic": "Electronic Devices",
+        "question": "A digital safety system uses three inputs A, B, and C to trigger an alarm Y. The alarm activates (Y=1) if and only if input A is active AND at least one of inputs B or C is active. The simplified Boolean expression for Y and its equivalent implementation using universal NAND gates only require respectively:",
+        "options": {
+          "A": "Y=A+B·C and 3 NAND gates",
+          "B": "Y=A·(B+C) and 4 NAND gates",
+          "C": "Y=A·B·C and 2 NAND gates",
+          "D": "Y=A+B+C and 5 NAND gates"
+        },
+        "correct": "B",
+        "explanation": "Y=A·(B+C)=A·B+A·C, implemented using 4 standard 2-input NAND gates."
+      },
+      {
+        "q": 23,
+        "global_q": 23,
+        "topic": "Units and Measurements",
+        "question": "Expressing Planck length L_P in terms of fundamental constants: Speed of light c, Universal gravitational constant G, and Planck's constant h, the correct functional relation is:",
+        "options": {
+          "A": "hG/c²",
+          "B": "√(hc/G)",
+          "C": "√(hG/c³)",
+          "D": "√(Gc³/h)"
+        },
+        "correct": "C",
+        "explanation": "Dimensional analysis gives L_P=√(hG/c³)."
+      },
+      {
+        "q": 24,
+        "global_q": 24,
+        "topic": "Units and Measurements",
+        "question": "The percentage errors in measurement of mass and speed are 2% and 3% respectively. The maximum percentage error in the estimation of kinetic energy is:",
+        "options": {
+          "A": "5%",
+          "B": "12%",
+          "C": "11%",
+          "D": "8%"
+        },
+        "correct": "D",
+        "explanation": "%error in K = %error in m + 2×%error in v = 2%+6%=8%."
+      },
+      {
+        "q": 25,
+        "global_q": 25,
+        "topic": "Oscillations and Waves",
+        "question": "A tuning fork of frequency f0=500 Hz moves towards a wall at a speed of 2 m/s while an observer stands stationary behind the tuning fork. Taking the speed of sound in air as 340 m/s, the beat frequency heard by the observer due to direct and reflected sound waves is approximately:",
+        "options": {
+          "A": "5.9 Hz",
+          "B": "2.9 Hz",
+          "C": "11.8 Hz",
+          "D": "0.0 Hz"
+        },
+        "correct": "A",
+        "explanation": "f_direct≈497.08 Hz, f_reflected≈502.96 Hz. Beat frequency ≈5.9 Hz."
+      }
+    ],
+    "Chemistry": [
+      {
+        "q": 1,
+        "global_q": 26,
+        "topic": "Atomic Structure",
+        "question": "For a hydrogen-like atom, an orbital has 2 radial nodes and 1 angular node. The orbital designation and the total number of nodal surfaces are respectively:",
+        "options": {
+          "A": "4d and 3",
+          "B": "4p and 3",
+          "C": "3p and 2",
+          "D": "4f and 4"
+        },
+        "correct": "B",
+        "explanation": "l=1 (p orbital), n-l-1=2 gives n=4, so orbital is 4p; total nodes = 2+1 = 3."
+      },
+      {
+        "q": 2,
+        "global_q": 27,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "Which of the following stereoisomers possesses a permanent non-zero net dipole moment (μ≠0) despite having polar bonds in symmetrical spatial orientations?",
+        "options": {
+          "A": "trans-1,2-dichloroethene",
+          "B": "1,4-dichlorobenzene",
+          "C": "cis-1,2-dichloroethene",
+          "D": "boron trifluoride"
+        },
+        "correct": "C",
+        "explanation": "In cis-1,2-dichloroethene, the bond dipoles do not cancel, giving a net dipole moment."
+      },
+      {
+        "q": 3,
+        "global_q": 28,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "According to Molecular Orbital Theory, the spin-only magnetic moment of oxygen molecule (O2) in its ground state is approximately (in Bohr Magnetons, BM):",
+        "options": {
+          "A": "1.73 BM",
+          "B": "0 BM",
+          "C": "3.87 BM",
+          "D": "2.83 BM"
+        },
+        "correct": "D",
+        "explanation": "O2 has 2 unpaired electrons; μ=√(2×4)=√8≈2.83 BM."
+      },
+      {
+        "q": 4,
+        "global_q": 29,
+        "topic": "Chemical Thermodynamics",
+        "question": "For an ideal gas undergoing an isothermal reversible expansion, which of the following thermodynamic relations is correct?",
+        "options": {
+          "A": "ΔU=0, q=-W",
+          "B": "ΔU>0, q=W",
+          "C": "ΔH≠0, q=0",
+          "D": "ΔU=0, q=0"
+        },
+        "correct": "A",
+        "explanation": "For isothermal process of ideal gas, ΔU=0, so q=-W."
+      },
+      {
+        "q": 5,
+        "global_q": 30,
+        "topic": "Equilibrium",
+        "question": "The pH of a 1.0×10⁻⁸ M aqueous solution of HCl at 25°C is approximately equal to:",
+        "options": {
+          "A": "8.00",
+          "B": "6.98",
+          "C": "7.00",
+          "D": "6.00"
+        },
+        "correct": "B",
+        "explanation": "Accounting for water autoionization, total [H+]≈1.05×10⁻⁷ M, giving pH≈6.98."
+      },
+      {
+        "q": 6,
+        "global_q": 31,
+        "topic": "Chemical Kinetics",
+        "question": "For a chemical reaction A+B→Products, doubling [A] while keeping [B] constant quadruples the rate. Doubling both [A] and [B] increases the rate by a factor of 8. The overall order of the reaction is:",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4"
+        },
+        "correct": "C",
+        "explanation": "m=2 (from [A] doubling), n=1 (from combined doubling); overall order = m+n = 3."
+      },
+      {
+        "q": 7,
+        "global_q": 32,
+        "topic": "Redox Reactions and Electrochemistry",
+        "question": "In an acidic medium, 20 mL of 0.1 M K2Cr2O7 solution completely oxidizes 30 mL of an Fe2+ solution. The molarity of the Fe2+ solution is:",
+        "options": {
+          "A": "0.1 M",
+          "B": "0.2 M",
+          "C": "0.3 M",
+          "D": "0.4 M"
+        },
+        "correct": "D",
+        "explanation": "Using equivalents with n-factor 6 for Cr2O7²⁻ and 1 for Fe2+: (0.1×6)×20=(M2)×30, giving M2=0.4 M."
+      },
+      {
+        "q": 8,
+        "global_q": 33,
+        "topic": "Redox Reactions and Electrochemistry",
+        "question": "At 298 K, the limiting molar conductivities Λ°m for NaCl, HCl, and CH3COONa are 126.4, 426.1, and 91.0 S cm² mol⁻¹ respectively. The limiting molar conductivity Λ°m of CH3COOH is:",
+        "options": {
+          "A": "390.7 S cm² mol⁻¹",
+          "B": "543.5 S cm² mol⁻¹",
+          "C": "208.7 S cm² mol⁻¹",
+          "D": "300.2 S cm² mol⁻¹"
+        },
+        "correct": "A",
+        "explanation": "By Kohlrausch's law: Λ°(CH3COOH)=91.0+426.1-126.4=390.7 S cm² mol⁻¹."
+      },
+      {
+        "q": 9,
+        "global_q": 34,
+        "topic": "p-Block Elements (Group-13 to Group 18 Elements)",
+        "question": "The correct order of increasing acidic strength of halogen hydrides is:",
+        "options": {
+          "A": "HI < HBr < HCl < HF",
+          "B": "HF < HCl < HBr < HI",
+          "C": "HCl < HF < HBr < HI",
+          "D": "HF < HBr < HCl < HI"
+        },
+        "correct": "B",
+        "explanation": "Bond dissociation enthalpy decreases down the group, so acidic strength increases: HF<HCl<HBr<HI."
+      },
+      {
+        "q": 10,
+        "global_q": 35,
+        "topic": "p-Block Elements (Group-13 to Group 18 Elements)",
+        "question": "When copper turnings are treated with hot concentrated sulfuric acid, a choking gas 'X' is liberated. When gas 'X' is passed through an acidified potassium dichromate paper, the paper turns green due to the formation of compound 'Y'. The gas 'X', compound 'Y', and the oxidation state of chromium in 'Y' are respectively:",
+        "options": {
+          "A": "SO3, Cr2(SO4)3 and +3",
+          "B": "SO2, Cr2(SO4)3 and +3",
+          "C": "H2S, CrSO4 and +2",
+          "D": "SO2, CrO3 and +6"
+        },
+        "correct": "B",
+        "explanation": "Gas X is SO2, which reduces dichromate to green Cr2(SO4)3 with chromium in +3 oxidation state."
+      },
+      {
+        "q": 11,
+        "global_q": 36,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "The correct IUPAC name of the compound HO-CH2-CH(CH3)-CH2-COOH is:",
+        "options": {
+          "A": "1-hydroxy-3-methylbutan-4-oic acid",
+          "B": "2-methyl-4-hydroxybutanoic acid",
+          "C": "3-methyl-4-hydroxybutanal",
+          "D": "4-hydroxy-3-methylbutanoic acid"
+        },
+        "correct": "D",
+        "explanation": "Numbering from the carboxyl carbon, the compound is named 4-hydroxy-3-methylbutanoic acid."
+      },
+      {
+        "q": 12,
+        "global_q": 37,
+        "topic": "Organic Compounds Containing Halogens",
+        "question": "An SN2 reaction at an asymmetric carbon atom in an optically active compound always leads to:",
+        "options": {
+          "A": "Inversion of configuration",
+          "B": "Complete racemization",
+          "C": "Retention of configuration",
+          "D": "Equimolar mixture of enantiomers"
+        },
+        "correct": "A",
+        "explanation": "SN2 backside attack results in complete inversion of stereochemical configuration (Walden inversion)."
+      },
+      {
+        "q": 13,
+        "global_q": 38,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "A student is given three unlabeled liquids: Acetaldehyde, Acetone, and Benzaldehyde. Which set of sequential chemical tests will uniquely identify each compound?",
+        "options": {
+          "A": "Iodoform test followed by Fehling's test",
+          "B": "Tollens' test followed by Iodoform test",
+          "C": "2,4-DNP test followed by NaHCO3 test",
+          "D": "Lucas test followed by Victor Meyer test"
+        },
+        "correct": "B",
+        "explanation": "Tollens' test differentiates aldehydes from ketones; Iodoform test then differentiates methyl-carbonyl compounds from benzaldehyde."
+      },
+      {
+        "q": 14,
+        "global_q": 39,
+        "topic": "Hydrocarbons",
+        "question": "Ozonolysis of 2-methylbut-2-ene followed by reduction with Zn/H2O yields:",
+        "options": {
+          "A": "Propanone and Methanal",
+          "B": "Ethanal and Methanal",
+          "C": "Propanone and Ethanal",
+          "D": "Butanone and Methanal"
+        },
+        "correct": "C",
+        "explanation": "Cleavage of (CH3)2C=CH-CH3 gives propanone and ethanal."
+      },
+      {
+        "q": 15,
+        "global_q": 40,
+        "topic": "Some Basic Principles of Organic Chemistry",
+        "question": "Among the following species: Cyclopropenyl cation (I), Cyclobutadiene (II), Cyclopentadienyl anion (III), and Cyclooctatetraene (IV), the species that is antiaromatic is:",
+        "options": {
+          "A": "I",
+          "B": "IV",
+          "C": "III",
+          "D": "II"
+        },
+        "correct": "D",
+        "explanation": "Cyclobutadiene has 4π electrons, fitting Huckel's 4n rule, making it antiaromatic."
+      },
+      {
+        "q": 16,
+        "global_q": 41,
+        "topic": "Some Basic Principles of Organic Chemistry",
+        "question": "A step-growth polymerization of hexamethylenediamine and adipic acid is carried out with an exact 1:1 molar ratio. If the extent of reaction (fraction of functional groups reacted) is p=0.99, the average degree of polymerization (Pn) according to Carothers equation is:",
+        "options": {
+          "A": "100",
+          "B": "50",
+          "C": "200",
+          "D": "99"
+        },
+        "correct": "A",
+        "explanation": "Pn=1/(1-p)=1/0.01=100."
+      },
+      {
+        "q": 17,
+        "global_q": 42,
+        "topic": "Biomolecules",
+        "question": "Alanine has pKa1=2.34 (for -COOH) and pKa2=9.69 (for -NH3+). The isoelectric point (pI) at which Alanine exists predominantly as a zwitterion with net zero charge is:",
+        "options": {
+          "A": "7.00",
+          "B": "6.02",
+          "C": "5.00",
+          "D": "12.03"
+        },
+        "correct": "B",
+        "explanation": "pI=(pKa1+pKa2)/2=(2.34+9.69)/2≈6.02."
+      },
+      {
+        "q": 18,
+        "global_q": 43,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "An element with atomic mass 60 g/mol crystallizes in a face-centered cubic (fcc) lattice with edge length a=400 pm. Taking Avogadro's number NA=6.0×10²³ mol⁻¹, the density of the crystal is:",
+        "options": {
+          "A": "3.12 g/cm³",
+          "B": "1.56 g/cm³",
+          "C": "6.25 g/cm³",
+          "D": "4.50 g/cm³"
+        },
+        "correct": "C",
+        "explanation": "ρ=(Z×M)/(NA×a³)=(4×60)/(6.0×10²³×6.4×10⁻²³)=6.25 g/cm³."
+      },
+      {
+        "q": 19,
+        "global_q": 44,
+        "topic": "Solutions",
+        "question": "A mixture of ethanol and acetone displays a positive deviation from Raoult's law across all compositions. This non-ideal thermodynamic behavior occurs primarily because:",
+        "options": {
+          "A": "Acetone molecules form strong hydrogen bonds with ethanol molecules",
+          "B": "The total volume contracts upon mixing (ΔVmix < 0)",
+          "C": "The mixing process is exothermic with a decrease in enthalpy (ΔHmix < 0)",
+          "D": "Ethanol-acetone intermolecular attractive forces are weaker than pure component hydrogen bonding"
+        },
+        "correct": "D",
+        "explanation": "Weaker A-B interactions compared to pure component hydrogen bonding lead to positive deviation."
+      },
+      {
+        "q": 20,
+        "global_q": 45,
+        "topic": "Redox Reactions and Electrochemistry",
+        "question": "The standard reduction potential of three metals A, B, and C are +0.5 V, -3.0 V, and -1.2 V respectively. The reducing power of these metals follows the order:",
+        "options": {
+          "A": "B > C > A",
+          "B": "A > C > B",
+          "C": "C > B > A",
+          "D": "A > B > C"
+        },
+        "correct": "A",
+        "explanation": "Lower reduction potential means stronger reducing agent: B(-3.0)>C(-1.2)>A(+0.5)."
+      },
+      {
+        "q": 21,
+        "global_q": 46,
+        "topic": "Coordination Compounds",
+        "question": "The crystal field stabilization energy (CFSE) of a high-spin octahedral complex with d⁶ electron configuration in terms of crystal field splitting parameter Δo is:",
+        "options": {
+          "A": "-0.6 Δo",
+          "B": "-0.4 Δo",
+          "C": "-2.4 Δo",
+          "D": "-1.2 Δo"
+        },
+        "correct": "B",
+        "explanation": "For t2g⁴eg², CFSE=[-0.4(4)+0.6(2)]Δo=-0.4Δo."
+      },
+      {
+        "q": 22,
+        "global_q": 47,
+        "topic": "Coordination Compounds",
+        "question": "The coordination number and oxidation state of cobalt in [Co(en)3]3+ are respectively:",
+        "options": {
+          "A": "6 and +2",
+          "B": "3 and +3",
+          "C": "6 and +3",
+          "D": "4 and +3"
+        },
+        "correct": "C",
+        "explanation": "Three bidentate 'en' ligands give coordination number 6; oxidation state of Co equals overall charge +3."
+      },
+      {
+        "q": 23,
+        "global_q": 48,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "During the Reimer-Tiemann reaction of phenol with chloroform and aqueous sodium hydroxide, the primary electrophile attacking the phenoxide ring is:",
+        "options": {
+          "A": "Phenoxide radical",
+          "B": "Trichloromethyl anion (:CCl3⁻)",
+          "C": "Formyl cation (CHO⁺)",
+          "D": "Dichlorocarbene (:CCl2)"
+        },
+        "correct": "D",
+        "explanation": "Dichlorocarbene, generated from chloroform and base, is the electrophile attacking the phenoxide ring."
+      },
+      {
+        "q": 24,
+        "global_q": 49,
+        "topic": "Biomolecules",
+        "question": "Sucrose on hydrolysis by dilute acid gives an equimolar mixture of D-glucose (+52.5°) and D-fructose (-92.4°). The specific optical rotation of the resulting inverted sugar mixture is:",
+        "options": {
+          "A": "-19.95°",
+          "B": "+39.90°",
+          "C": "-39.90°",
+          "D": "+19.95°"
+        },
+        "correct": "A",
+        "explanation": "[α]D = (+52.5°-92.4°)/2 = -19.95°."
+      },
+      {
+        "q": 25,
+        "global_q": 50,
+        "topic": "Equilibrium",
+        "question": "A buffer solution is prepared by mixing 0.1 M CH3COOH (pKa=4.74) and 0.1 M CH3COONa in 1:1 volume ratio. If 0.01 mole of gaseous HCl is added to 1 L of this buffer, the resulting pH is:",
+        "options": {
+          "A": "4.74",
+          "B": "4.65",
+          "C": "4.83",
+          "D": "5.00"
+        },
+        "correct": "B",
+        "explanation": "Using Henderson-Hasselbalch equation with adjusted moles: pH=4.74+log(0.09/0.11)≈4.65."
+      }
+    ],
+    "Mathematics": [
+      {
+        "q": 1,
+        "global_q": 51,
+        "topic": "Sets, Relations and Functions",
+        "question": "In a survey of 100 students, 60 study Mathematics, 45 study Physics, and 35 study Chemistry. 20 study both Math and Physics, 15 study both Physics and Chem, and 15 study both Math and Chem. If 10 students study all three, the number of students who study NONE of these three subjects is:",
+        "options": {
+          "A": "0",
+          "B": "15",
+          "C": "10",
+          "D": "5"
+        },
+        "correct": "C",
+        "explanation": "By inclusion-exclusion, n(M∪P∪C)=60+45+35-20-15-15+10=90. None = 100-90=10."
+      },
+      {
+        "q": 2,
+        "global_q": 52,
+        "topic": "Sets, Relations and Functions",
+        "question": "The complete domain of definition for the real-valued function f(x)=√[log0.5(x²-5x+7)] is:",
+        "options": {
+          "A": "[1, 4]",
+          "B": "(2, 3)",
+          "C": "(-∞, 2] ∪ [3, ∞)",
+          "D": "[2, 3]"
+        },
+        "correct": "D",
+        "explanation": "Requiring log0.5(x²-5x+7)≥0 gives x²-5x+6≤0, so x∈[2,3]; the argument is always positive."
+      },
+      {
+        "q": 3,
+        "global_q": 53,
+        "topic": "Complex Numbers and Quadratic Equations",
+        "question": "If 1, ω, ω² are the complex cube roots of unity, then the value of (1+ω-ω²)⁷ is:",
+        "options": {
+          "A": "-128 ω²",
+          "B": "128 ω²",
+          "C": "-128",
+          "D": "128"
+        },
+        "correct": "A",
+        "explanation": "Using 1+ω=-ω², expression becomes (-2ω²)⁷=-128ω¹⁴=-128ω²."
+      },
+      {
+        "q": 4,
+        "global_q": 54,
+        "topic": "Sequence and Series",
+        "question": "The sum to infinity of the arithmetico-geometric progression S=1+2/3+3/9+4/27+... is:",
+        "options": {
+          "A": "3/2",
+          "B": "9/4",
+          "C": "2",
+          "D": "4/3"
+        },
+        "correct": "B",
+        "explanation": "Using the AGP sum formula, S=3/2+3/4=9/4."
+      },
+      {
+        "q": 5,
+        "global_q": 55,
+        "topic": "Permutations and Combinations",
+        "question": "The number of ways in which 5 boys and 5 girls can sit in a row such that no two girls sit together is:",
+        "options": {
+          "A": "5! × 5!",
+          "B": "6! × 6!",
+          "C": "5! × 6!",
+          "D": "10!/(5! 5!)"
+        },
+        "correct": "C",
+        "explanation": "Seat boys in 5! ways, then place girls in 6 gaps: 6P5=6!/1!=6!×5!/... total = 5!×6!."
+      },
+      {
+        "q": 6,
+        "global_q": 56,
+        "topic": "Binomial Theorem and its Simple Applications",
+        "question": "The term independent of x in the expansion of (x+1/x)^10 is:",
+        "options": {
+          "A": "210",
+          "B": "45",
+          "C": "120",
+          "D": "252"
+        },
+        "correct": "D",
+        "explanation": "Setting exponent 10-2r=0 gives r=5. Term = 10C5=252."
+      },
+      {
+        "q": 7,
+        "global_q": 57,
+        "topic": "Matrices and Determinants",
+        "question": "The system of linear equations x+y+z=6, x+2y+3z=10, x+2y+λz=μ has a unique solution if:",
+        "options": {
+          "A": "λ ≠ 3",
+          "B": "λ = 3 and μ = 10",
+          "C": "λ = 3 and μ ≠ 10",
+          "D": "λ = 2"
+        },
+        "correct": "A",
+        "explanation": "Determinant Δ=λ-3. Unique solution requires Δ≠0, so λ≠3."
+      },
+      {
+        "q": 8,
+        "global_q": 58,
+        "topic": "Matrices and Determinants",
+        "question": "If A=[[1,2],[3,4]], then according to the Cayley-Hamilton theorem, A²-5A is equal to:",
+        "options": {
+          "A": "I",
+          "B": "2 I",
+          "C": "3 I",
+          "D": "-2 I"
+        },
+        "correct": "B",
+        "explanation": "Characteristic equation: λ²-5λ-2=0. By Cayley-Hamilton, A²-5A-2I=0, so A²-5A=2I."
+      },
+      {
+        "q": 9,
+        "global_q": 59,
+        "topic": "Limit, Continuity and Differentiability",
+        "question": "The value of the limit lim_{x→0}[(e^x-1-x)/(x sin x)] is:",
+        "options": {
+          "A": "0",
+          "B": "1",
+          "C": "1/2",
+          "D": "2"
+        },
+        "correct": "C",
+        "explanation": "Applying L'Hopital's rule twice gives the limit e^x/2 → 1/2."
+      },
+      {
+        "q": 10,
+        "global_q": 60,
+        "topic": "Limit, Continuity and Differentiability",
+        "question": "If f(x)=|x-2|, then at x=2, f(x) is:",
+        "options": {
+          "A": "Continuous and differentiable",
+          "B": "Neither continuous nor differentiable",
+          "C": "Discontinuous but differentiable",
+          "D": "Continuous but not differentiable"
+        },
+        "correct": "D",
+        "explanation": "f(x) is continuous at x=2 but LHD≠RHD, so not differentiable there."
+      },
+      {
+        "q": 11,
+        "global_q": 61,
+        "topic": "Limit, Continuity and Differentiability",
+        "question": "If x=a cos³(t) and y=a sin³(t), the value of dy/dx at t=π/4 is:",
+        "options": {
+          "A": "-1",
+          "B": "1",
+          "C": "0",
+          "D": "1/2"
+        },
+        "correct": "A",
+        "explanation": "dy/dx=-tan(t). At t=π/4, dy/dx=-1."
+      },
+      {
+        "q": 12,
+        "global_q": 62,
+        "topic": "Limit, Continuity and Differentiability",
+        "question": "The equation of the normal to the curve y=x³-3x+2 at the point where x=2 is:",
+        "options": {
+          "A": "9x + y - 38 = 0",
+          "B": "x + 9y - 38 = 0",
+          "C": "x - 9y + 34 = 0",
+          "D": "9x - y - 14 = 0"
+        },
+        "correct": "B",
+        "explanation": "At (2,4), tangent slope=9, normal slope=-1/9, giving x+9y-38=0."
+      },
+      {
+        "q": 13,
+        "global_q": 63,
+        "topic": "Integral Calculus",
+        "question": "The indefinite integral ∫ e^x (1/x - 1/x²) dx is equal to:",
+        "options": {
+          "A": "-e^x/x + C",
+          "B": "e^x/x² + C",
+          "C": "e^x/x + C",
+          "D": "x e^x + C"
+        },
+        "correct": "C",
+        "explanation": "Using ∫e^x[f(x)+f'(x)]dx=e^x f(x)+C with f(x)=1/x, the result is e^x/x+C."
+      },
+      {
+        "q": 14,
+        "global_q": 64,
+        "topic": "Integral Calculus",
+        "question": "The value of the definite integral I=∫0^π (x sin x)/(1+cos² x) dx is:",
+        "options": {
+          "A": "π/2",
+          "B": "0",
+          "C": "1",
+          "D": "π²/4"
+        },
+        "correct": "D",
+        "explanation": "Using King's property and substitution u=cos x, I=π²/4."
+      },
+      {
+        "q": 15,
+        "global_q": 65,
+        "topic": "Integral Calculus",
+        "question": "The area enclosed between the parabola y²=4x and the line x=1 is:",
+        "options": {
+          "A": "8/3",
+          "B": "4/3",
+          "C": "16/3",
+          "D": "2"
+        },
+        "correct": "A",
+        "explanation": "Area=2∫0¹ 2√x dx = 8/3 square units."
+      },
+      {
+        "q": 16,
+        "global_q": 66,
+        "topic": "Differential Equations",
+        "question": "The order and degree of the differential equation d²y/dx² + [1+(dy/dx)²]^(3/2)=0 are respectively:",
+        "options": {
+          "A": "2 and 3",
+          "B": "2 and 2",
+          "C": "2 and 1",
+          "D": "1 and 2"
+        },
+        "correct": "B",
+        "explanation": "Squaring to remove the fractional power gives order 2, degree 2."
+      },
+      {
+        "q": 17,
+        "global_q": 67,
+        "topic": "Three Dimensional Geometry",
+        "question": "The perpendicular distance between the two parallel planes 2x-y+2z=4 and 4x-2y+4z=17 is:",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "3/2",
+          "D": "5/2"
+        },
+        "correct": "C",
+        "explanation": "Normalizing second plane to 2x-y+2z=8.5, distance=|8.5-4|/3=1.5=3/2."
+      },
+      {
+        "q": 18,
+        "global_q": 68,
+        "topic": "Vector Algebra",
+        "question": "The volume of a parallelepiped formed by three coterminous vector edges a=î+ĵ, b=ĵ+k̂, and c=k̂+î is:",
+        "options": {
+          "A": "1",
+          "B": "3",
+          "C": "4",
+          "D": "2"
+        },
+        "correct": "D",
+        "explanation": "Scalar triple product determinant evaluates to 2 cubic units."
+      },
+      {
+        "q": 19,
+        "global_q": 69,
+        "topic": "Three Dimensional Geometry",
+        "question": "If two lines with direction ratios (1,-2,3) and (k,1,2) are perpendicular, then k is equal to:",
+        "options": {
+          "A": "-4",
+          "B": "4",
+          "C": "-8",
+          "D": "8"
+        },
+        "correct": "A",
+        "explanation": "Dot product k-2+6=0 gives k=-4."
+      },
+      {
+        "q": 20,
+        "global_q": 70,
+        "topic": "Statistics and Probability",
+        "question": "Two fair dice are rolled together. Given that the sum of the numbers appearing on the two dice is an even number, the conditional probability that the sum is equal to 8 is:",
+        "options": {
+          "A": "1/6",
+          "B": "5/18",
+          "C": "7/36",
+          "D": "1/9"
+        },
+        "correct": "B",
+        "explanation": "5 outcomes give sum 8 out of 18 even-sum outcomes: probability=5/18."
+      },
+      {
+        "q": 21,
+        "global_q": 71,
+        "topic": "Statistics and Probability",
+        "question": "If P(A)=0.4, P(B)=0.8 and P(B|A)=0.6, then P(A∩B) is equal to:",
+        "options": {
+          "A": "0.48",
+          "B": "0.32",
+          "C": "0.24",
+          "D": "0.50"
+        },
+        "correct": "C",
+        "explanation": "P(A∩B)=P(B|A)×P(A)=0.6×0.4=0.24."
+      },
+      {
+        "q": 22,
+        "global_q": 72,
+        "topic": "Trigonometry",
+        "question": "If x=tan⁻¹(1/2) and y=tan⁻¹(1/3), then the value of cos(2x+y) is equal to:",
+        "options": {
+          "A": "3/5",
+          "B": "1/√2",
+          "C": "1/2",
+          "D": "1/√10"
+        },
+        "correct": "D",
+        "explanation": "cos(2x)=3/5, sin(2x)=4/5, cos y=3/√10, sin y=1/√10. cos(2x+y)=1/√10."
+      },
+      {
+        "q": 23,
+        "global_q": 73,
+        "topic": "Trigonometry",
+        "question": "If tan θ=3/4 and θ lies in third quadrant, then value of cos θ is:",
+        "options": {
+          "A": "-4/5",
+          "B": "4/5",
+          "C": "-3/5",
+          "D": "3/5"
+        },
+        "correct": "A",
+        "explanation": "sec θ=-5/4 in the third quadrant, so cos θ=-4/5."
+      },
+      {
+        "q": 24,
+        "global_q": 74,
+        "topic": "Co-ordinate Geometry",
+        "question": "The locus of a point which moves such that its distance from point (a, 0) is equal to its distance from y-axis is:",
+        "options": {
+          "A": "x² = 2ay - a²",
+          "B": "y² = 2ax - a²",
+          "C": "y² = 4ax",
+          "D": "x² + y² = a²"
+        },
+        "correct": "B",
+        "explanation": "Equating distances and simplifying gives y²=2ax-a²."
+      },
+      {
+        "q": 25,
+        "global_q": 75,
+        "topic": "Co-ordinate Geometry",
+        "question": "The eccentricity of the hyperbola x²/16 - y²/9 = 1 is:",
+        "options": {
+          "A": "5/3",
+          "B": "4/3",
+          "C": "5/4",
+          "D": "25/16"
+        },
+        "correct": "C",
+        "explanation": "e=√(1+b²/a²)=√(1+9/16)=5/4."
+      }
+    ]
+  }
+}

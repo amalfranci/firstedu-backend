@@ -1,0 +1,1319 @@
+{
+  "paper_id": "UPSC-GS-Paper5",
+  "title": "UPSC Prelims GS Paper 5",
+  "exam": "UPSC Prelims GS",
+  "year": 2026,
+  "subjects": {
+    "History": [
+      {
+        "q": 1,
+        "topic": "Ancient India",
+        "question": "Who among the following ancient Indian rulers performed the Ashvamedha sacrifice to commemorate his overthrow of the Mauryan rule and establishment of a new ruling dynasty?",
+        "options": {
+          "A": "Pushyamitra Shunga",
+          "B": "Kharavela",
+          "C": "Gautamiputra Satakarni",
+          "D": "Kanishka"
+        },
+        "correct": "A",
+        "explanation": "Pushyamitra Shunga established the Shunga dynasty after overthrowing Brihadratha, the last Mauryan emperor, in 185 BCE. According to Sanskrit texts and inscriptions, Pushyamitra performed two Ashvamedha (horse) sacrifices to celebrate his royal authority and revival of Vedic rituals."
+      },
+      {
+        "q": 2,
+        "topic": "Ancient India",
+        "question": "Which Harappan site is particularly famous for possessing a sophisticated water management system comprising giant stone-cut reservoirs and elaborate stormwater drains?",
+        "options": {
+          "A": "Mohenjo-daro",
+          "B": "Dholavira",
+          "C": "Kalibangan",
+          "D": "Banawali"
+        },
+        "correct": "B",
+        "explanation": "Dholavira, located in the Rann of Kutch in Gujarat, is renowned for its advanced hydraulic engineering. Excavations revealed a network of sixteen large reservoirs cut into rock, designed to collect and store freshwater from seasonal rivulets."
+      },
+      {
+        "q": 3,
+        "topic": "Medieval India",
+        "question": "The medieval Bhakti philosopher Ramanuja propounded which philosophical school of thought advocating qualified non-dualism?",
+        "options": {
+          "A": "Advaita Vedanta",
+          "B": "Dvaita Vedanta",
+          "C": "Vishishtadvaita",
+          "D": "Shuddhadvaita"
+        },
+        "correct": "C",
+        "explanation": "Ramanuja (11th-12th century CE) propounded Vishishtadvaita (qualified non-dualism). He posited that Brahman is the supreme non-dual reality, but individual souls (Jiva) and the material world (Jagat) exist as distinct attributes or body of Brahman."
+      },
+      {
+        "q": 4,
+        "topic": "Modern India",
+        "question": "The Vernacular Press Act of 1878, intended to curtail the freedom of the Indian-language press, was enacted under the Viceroyalty of:",
+        "options": {
+          "A": "Lord Curzon",
+          "B": "Lord Ripon",
+          "C": "Lord Dufferin",
+          "D": "Lord Lytton"
+        },
+        "correct": "D",
+        "explanation": "The Vernacular Press Act was passed in 1878 during the administration of Viceroy Lord Lytton. The law targeted Indian language newspapers that criticized imperial policies, empowering district magistrates to confiscate printing presses without trial. It was repealed in 1882 by Lord Ripon."
+      },
+      {
+        "q": 5,
+        "topic": "Modern India",
+        "question": "The Permanent Settlement system of land revenue was introduced in Bengal, Bihar, and Orissa in 1793 by GovernorGeneral:",
+        "options": {
+          "A": "Lord Cornwallis",
+          "B": "Warren Hastings",
+          "C": "Lord Wellesley",
+          "D": "Lord William Bentinck"
+        },
+        "correct": "A",
+        "explanation": "Lord Cornwallis introduced the Permanent Settlement in 1793. Under this revenue system, local Zamindars were recognized as permanent landowners, fixed with a perpetual land revenue assessment payable to the East India Company."
+      },
+      {
+        "q": 6,
+        "topic": "Ancient India",
+        "question": "Which Major Rock Edict of Emperor Ashoka provides a direct personal account of his remorse over the devastation of the Kalinga War and his subsequent adoption of Dhamma?",
+        "options": {
+          "A": "Major Rock Edict V",
+          "B": "Major Rock Edict XIII",
+          "C": "Major Rock Edict VIII",
+          "D": "Major Rock Edict I"
+        },
+        "correct": "B",
+        "explanation": "Major Rock Edict XIII is the largest of Ashoka's rock edicts. It records the conquest of Kalinga, expressing Ashoka's profound grief over the loss of life and declaring his decision to emphasize Dhammavijaya (conquest through Dhamma) instead of Digvijaya (military conquest)."
+      },
+      {
+        "q": 7,
+        "topic": "Ancient India",
+        "question": "In the administrative setup of the Gupta Empire, the official designated as \"Sandhivigrahika\" held charge of:",
+        "options": {
+          "A": "Chief royal treasury and mint",
+          "B": "Commander-in-chief of infant army units",
+          "C": "Minister for foreign affairs and peace/war agreements",
+          "D": "Head of police department and intelligence"
+        },
+        "correct": "C",
+        "explanation": "Under the Guptas, the Sandhivigrahika was the minister responsible for foreign affairs, treaties, and diplomatic relations with foreign courts and vassal kingdoms. Harisena, court poet of Samudragupta, held this title."
+      },
+      {
+        "q": 8,
+        "topic": "Indian National Movement",
+        "question": "Following his resignation from the Presidency of the Indian National Congress in 1939, Subhash Chandra Bose formed which political faction?",
+        "options": {
+          "A": "Congress Socialist Party",
+          "B": "Swaraj Party",
+          "C": "Independence for India League",
+          "D": "All India Forward Bloc"
+        },
+        "correct": "D",
+        "explanation": "After resigning as INC President following differences with Mahatma Gandhi at the Tripura Session in 1939, Subhash Chandra Bose founded the All India Forward Bloc within the Congress to unite radical left-wing nationalist elements."
+      },
+      {
+        "q": 9,
+        "topic": "Medieval India",
+        "question": "Which classical Indian dance form was introduced in the 15th century CE by the Vaishnava saint Srimanta Sankardeva as a medium for propagating Bhakti in Assam?",
+        "options": {
+          "A": "Sattriya",
+          "B": "Kathakali",
+          "C": "Manipuri",
+          "D": "Odissi"
+        },
+        "correct": "A",
+        "explanation": "Sattriya is a classical dance form created by Srimanta Sankardeva in the 15th century as part of the NeoVaishnavite movement in Assam. It was nurtured in Sattras (monasteries) as a sacred dance-drama."
+      },
+      {
+        "q": 10,
+        "topic": "Modern India",
+        "question": "The \"Subsidiary Alliance\" system, used extensively to expand British territorial influence over Indian princely states, was introduced by Governor-General:",
+        "options": {
+          "A": "Lord Dalhousie",
+          "B": "Lord Wellesley",
+          "C": "Lord Hastings",
+          "D": "Lord Auckland"
+        },
+        "correct": "B",
+        "explanation": "Lord Wellesley (Governor-General from 1798 to 1805) perfected the Subsidiary Alliance system. Under it, allied Indian rulers paid for a British military force stationed in their territory and ceded control over foreign affairs to the British East India Company."
+      },
+      {
+        "q": 11,
+        "topic": "Medieval India",
+        "question": "The monumental Mughal administrative chronicle titled \"Ain-i-Akbari\" was authored by:",
+        "options": {
+          "A": "Badauni",
+          "B": "Faizi",
+          "C": "Abu'l-Fazl",
+          "D": "Nizamuddin Ahmad"
+        },
+        "correct": "C",
+        "explanation": "Abu'l-Fazl, the grand vizier and court historian of Emperor Akbar, wrote Akbarnama. The third volume of this work, titled Ain-i-Akbari, details Mughal governance, army structure, tax revenue systems, and geographic statistics."
+      },
+      {
+        "q": 12,
+        "topic": "Medieval India",
+        "question": "In the decisive Battle of Buxar fought in 1764, the forces of the British East India Company were commanded by:",
+        "options": {
+          "A": "Robert Clive",
+          "B": "Warren Hastings",
+          "C": "Eyre Coote",
+          "D": "Hector Munro"
+        },
+        "correct": "D",
+        "explanation": "The Battle of Buxar (October 22, 1764) was led on the British side by Major Hector Munro, who defeated the combined army of Mir Qasim (Nawab of Bengal), Shuja-ud-Daula (Nawab of Awadh), and Mughal Emperor Shah Alam II."
+      },
+      {
+        "q": 13,
+        "topic": "Modern India",
+        "question": "The \"Ilbert Bill Controversy\" of 1883 arose primarily because the bill proposed to:",
+        "options": {
+          "A": "Allow Indian magistrates in rural areas to try European subjects in criminal cases",
+          "B": "Impose heavy import duties on Lancashire textile goods entering India",
+          "C": "Disarm the civilian population by making gun licenses mandatory",
+          "D": "Restrict entry of Indian candidates into the Indian Civil Service examinations"
+        },
+        "correct": "A",
+        "explanation": "Drafted during Lord Ripon's viceroyalty, the Ilbert Bill sought to remove racial discrimination in the judicial system by giving senior Indian magistrates authority to preside over criminal trials involving British and European citizens, sparking fierce opposition from European residents in India."
+      },
+      {
+        "q": 14,
+        "topic": "Modern India",
+        "question": "The mural paintings in the Ajanta Caves primarily depict stories and legends from which sacred literature?",
+        "options": {
+          "A": "Upanishads",
+          "B": "Jataka tales",
+          "C": "Bhagavata Purana",
+          "D": "Panchatantra"
+        },
+        "correct": "B",
+        "explanation": "The rock-cut cave paintings at Ajanta (Maharashtra), dating from the 2nd century BCE to 6th century CE, depict scenes from the life of the Buddha and stories from the Jataka tales (narratives of the Buddha's previous births)."
+      },
+      {
+        "q": 15,
+        "topic": "Indian National Movement",
+        "question": "Mahatma Gandhi's first civil disobedience movement in India, the Champaran Satyagraha of 1917, was directed against the oppressions of the:",
+        "options": {
+          "A": "Salt monopoly system",
+          "B": "Ryotwari revenue enhancements",
+          "C": "Tinkathia system enforced by European Indigo planters",
+          "D": "Rowlatt Act restrictions"
+        },
+        "correct": "C",
+        "explanation": "In Champaran (Bihar), peasant farmers were compelled under the Tinkathia system to cultivate indigo on 3/20th of their landholdings for European planters. Invited by Rajkumar Shukla, Gandhi led a successful protest securing relief for the cultivators."
+      },
+      {
+        "q": 16,
+        "topic": "Ancient India",
+        "question": "Who among the following ancient Indian rulers performed the Ashvamedha sacrifice to commemorate his overthrow of the Mauryan rule and establishment of a new ruling dynasty?",
+        "options": {
+          "A": "Pushyamitra Shunga",
+          "B": "Kharavela",
+          "C": "Gautamiputra Satakarni",
+          "D": "Kanishka"
+        },
+        "correct": "A",
+        "explanation": "Pushyamitra Shunga established the Shunga dynasty after overthrowing Brihadratha, the last Mauryan emperor, in 185 BCE. According to Sanskrit texts and inscriptions, Pushyamitra performed two Ashvamedha (horse) sacrifices to celebrate his royal authority and revival of Vedic rituals."
+      },
+      {
+        "q": 17,
+        "topic": "Ancient India",
+        "question": "Which Harappan site is particularly famous for possessing a sophisticated water management system comprising giant stone-cut reservoirs and elaborate stormwater drains?",
+        "options": {
+          "A": "Mohenjo-daro",
+          "B": "Dholavira",
+          "C": "Kalibangan",
+          "D": "Banawali"
+        },
+        "correct": "B",
+        "explanation": "Dholavira, located in the Rann of Kutch in Gujarat, is renowned for its advanced hydraulic engineering. Excavations revealed a network of sixteen large reservoirs cut into rock, designed to collect and store freshwater from seasonal rivulets."
+      },
+      {
+        "q": 18,
+        "topic": "Medieval India",
+        "question": "The medieval Bhakti philosopher Ramanuja propounded which philosophical school of thought advocating qualified non-dualism?",
+        "options": {
+          "A": "Advaita Vedanta",
+          "B": "Dvaita Vedanta",
+          "C": "Vishishtadvaita",
+          "D": "Shuddhadvaita"
+        },
+        "correct": "C",
+        "explanation": "Ramanuja (11th-12th century CE) propounded Vishishtadvaita (qualified non-dualism). He posited that Brahman is the supreme non-dual reality, but individual souls (Jiva) and the material world (Jagat) exist as distinct attributes or body of Brahman."
+      },
+      {
+        "q": 19,
+        "topic": "Modern India",
+        "question": "The Vernacular Press Act of 1878, intended to curtail the freedom of the Indian-language press, was enacted under the Viceroyalty of:",
+        "options": {
+          "A": "Lord Curzon",
+          "B": "Lord Ripon",
+          "C": "Lord Dufferin",
+          "D": "Lord Lytton"
+        },
+        "correct": "D",
+        "explanation": "The Vernacular Press Act was passed in 1878 during the administration of Viceroy Lord Lytton. The law targeted Indian language newspapers that criticized imperial policies, empowering district magistrates to confiscate printing presses without trial. It was repealed in 1882 by Lord Ripon."
+      },
+      {
+        "q": 20,
+        "topic": "Modern India",
+        "question": "The Permanent Settlement system of land revenue was introduced in Bengal, Bihar, and Orissa in 1793 by GovernorGeneral:",
+        "options": {
+          "A": "Lord Cornwallis",
+          "B": "Warren Hastings",
+          "C": "Lord Wellesley",
+          "D": "Lord William Bentinck"
+        },
+        "correct": "A",
+        "explanation": "Lord Cornwallis introduced the Permanent Settlement in 1793. Under this revenue system, local Zamindars were recognized as permanent landowners, fixed with a perpetual land revenue assessment payable to the East India Company."
+      },
+      {
+        "q": 21,
+        "topic": "Ancient India",
+        "question": "Which Major Rock Edict of Emperor Ashoka provides a direct personal account of his remorse over the devastation of the Kalinga War and his subsequent adoption of Dhamma?",
+        "options": {
+          "A": "Major Rock Edict V",
+          "B": "Major Rock Edict XIII",
+          "C": "Major Rock Edict VIII",
+          "D": "Major Rock Edict I"
+        },
+        "correct": "B",
+        "explanation": "Major Rock Edict XIII is the largest of Ashoka's rock edicts. It records the conquest of Kalinga, expressing Ashoka's profound grief over the loss of life and declaring his decision to emphasize Dhammavijaya (conquest through Dhamma) instead of Digvijaya (military conquest)."
+      },
+      {
+        "q": 22,
+        "topic": "Ancient India",
+        "question": "In the administrative setup of the Gupta Empire, the official designated as \"Sandhivigrahika\" held charge of:",
+        "options": {
+          "A": "Chief royal treasury and mint",
+          "B": "Commander-in-chief of infant army units",
+          "C": "Minister for foreign affairs and peace/war agreements",
+          "D": "Head of police department and intelligence"
+        },
+        "correct": "C",
+        "explanation": "Under the Guptas, the Sandhivigrahika was the minister responsible for foreign affairs, treaties, and diplomatic relations with foreign courts and vassal kingdoms. Harisena, court poet of Samudragupta, held this title."
+      },
+      {
+        "q": 23,
+        "topic": "Indian National Movement",
+        "question": "Following his resignation from the Presidency of the Indian National Congress in 1939, Subhash Chandra Bose formed which political faction?",
+        "options": {
+          "A": "Congress Socialist Party",
+          "B": "Swaraj Party",
+          "C": "Independence for India League",
+          "D": "All India Forward Bloc"
+        },
+        "correct": "D",
+        "explanation": "After resigning as INC President following differences with Mahatma Gandhi at the Tripura Session in 1939, Subhash Chandra Bose founded the All India Forward Bloc within the Congress to unite radical left-wing nationalist elements."
+      },
+      {
+        "q": 24,
+        "topic": "Medieval India",
+        "question": "Which classical Indian dance form was introduced in the 15th century CE by the Vaishnava saint Srimanta Sankardeva as a medium for propagating Bhakti in Assam?",
+        "options": {
+          "A": "Sattriya",
+          "B": "Kathakali",
+          "C": "Manipuri",
+          "D": "Odissi"
+        },
+        "correct": "A",
+        "explanation": "Sattriya is a classical dance form created by Srimanta Sankardeva in the 15th century as part of the NeoVaishnavite movement in Assam. It was nurtured in Sattras (monasteries) as a sacred dance-drama."
+      },
+      {
+        "q": 25,
+        "topic": "Modern India",
+        "question": "The \"Subsidiary Alliance\" system, used extensively to expand British territorial influence over Indian princely states, was introduced by Governor-General:",
+        "options": {
+          "A": "Lord Dalhousie",
+          "B": "Lord Wellesley",
+          "C": "Lord Hastings",
+          "D": "Lord Auckland"
+        },
+        "correct": "B",
+        "explanation": "Lord Wellesley (Governor-General from 1798 to 1805) perfected the Subsidiary Alliance system. Under it, allied Indian rulers paid for a British military force stationed in their territory and ceded control over foreign affairs to the British East India Company."
+      },
+      {
+        "q": 26,
+        "topic": "Medieval India",
+        "question": "The monumental Mughal administrative chronicle titled \"Ain-i-Akbari\" was authored by:",
+        "options": {
+          "A": "Badauni",
+          "B": "Faizi",
+          "C": "Abu'l-Fazl",
+          "D": "Nizamuddin Ahmad"
+        },
+        "correct": "C",
+        "explanation": "Abu'l-Fazl, the grand vizier and court historian of Emperor Akbar, wrote Akbarnama. The third volume of this work, titled Ain-i-Akbari, details Mughal governance, army structure, tax revenue systems, and geographic statistics."
+      },
+      {
+        "q": 27,
+        "topic": "Medieval India",
+        "question": "In the decisive Battle of Buxar fought in 1764, the forces of the British East India Company were commanded by:",
+        "options": {
+          "A": "Robert Clive",
+          "B": "Warren Hastings",
+          "C": "Eyre Coote",
+          "D": "Hector Munro"
+        },
+        "correct": "D",
+        "explanation": "The Battle of Buxar (October 22, 1764) was led on the British side by Major Hector Munro, who defeated the combined army of Mir Qasim (Nawab of Bengal), Shuja-ud-Daula (Nawab of Awadh), and Mughal Emperor Shah Alam II."
+      },
+      {
+        "q": 28,
+        "topic": "Modern India",
+        "question": "The \"Ilbert Bill Controversy\" of 1883 arose primarily because the bill proposed to:",
+        "options": {
+          "A": "Allow Indian magistrates in rural areas to try European subjects in criminal cases",
+          "B": "Impose heavy import duties on Lancashire textile goods entering India",
+          "C": "Disarm the civilian population by making gun licenses mandatory",
+          "D": "Restrict entry of Indian candidates into the Indian Civil Service examinations"
+        },
+        "correct": "A",
+        "explanation": "Drafted during Lord Ripon's viceroyalty, the Ilbert Bill sought to remove racial discrimination in the judicial system by giving senior Indian magistrates authority to preside over criminal trials involving British and European citizens, sparking fierce opposition from European residents in India."
+      },
+      {
+        "q": 29,
+        "topic": "Modern India",
+        "question": "The mural paintings in the Ajanta Caves primarily depict stories and legends from which sacred literature?",
+        "options": {
+          "A": "Upanishads",
+          "B": "Jataka tales",
+          "C": "Bhagavata Purana",
+          "D": "Panchatantra"
+        },
+        "correct": "B",
+        "explanation": "The rock-cut cave paintings at Ajanta (Maharashtra), dating from the 2nd century BCE to 6th century CE, depict scenes from the life of the Buddha and stories from the Jataka tales (narratives of the Buddha's previous births)."
+      },
+      {
+        "q": 30,
+        "topic": "Indian National Movement",
+        "question": "Mahatma Gandhi's first civil disobedience movement in India, the Champaran Satyagraha of 1917, was directed against the oppressions of the:",
+        "options": {
+          "A": "Salt monopoly system",
+          "B": "Ryotwari revenue enhancements",
+          "C": "Tinkathia system enforced by European Indigo planters",
+          "D": "Rowlatt Act restrictions"
+        },
+        "correct": "C",
+        "explanation": "In Champaran (Bihar), peasant farmers were compelled under the Tinkathia system to cultivate indigo on 3/20th of their landholdings for European planters. Invited by Rajkumar Shukla, Gandhi led a successful protest securing relief for the cultivators."
+      }
+    ],
+    "Indian Polity and Governance": [
+      {
+        "q": 1,
+        "topic": "Constitution",
+        "question": "If any question arises whether a Bill is a \"Money Bill\" or not, whose decision under Article 110 of the Indian Constitution is final?",
+        "options": {
+          "A": "President of India",
+          "B": "Chairman of the Rajya Sabha",
+          "C": "Union Finance Minister",
+          "D": "Speaker of the Lok Sabha"
+        },
+        "correct": "D",
+        "explanation": "Article 110(3) states that if any question arises whether a Bill is a Money Bill or not, the decision of the Speaker of the Lok Sabha shall be final. The Speaker endorses the bill with a certificate when transmitting it to the Rajya Sabha."
+      },
+      {
+        "q": 2,
+        "topic": "Rights issues",
+        "question": "In which landmark nine-judge bench judgment did the Supreme Court of India unanimously declare the Right to Privacy as an intrinsic part of the Right to Life and Personal Liberty under Article 21?",
+        "options": {
+          "A": "Justice K.S. Puttaswamy v. Union of India",
+          "B": "Navtej Singh Johar v. Union of India",
+          "C": "Shayara Bano v. Union of India",
+          "D": "Shreya Singhal v. Union of India"
+        },
+        "correct": "A",
+        "explanation": "In Justice K.S. Puttaswamy (Retd.) v. Union of India (2017), a nine-judge Constitution Bench unanimously affirmed that the Right to Privacy is a Fundamental Right protected under Part III of the Constitution, primarily under Article 21."
+      },
+      {
+        "q": 3,
+        "topic": "Constitution",
+        "question": "Under the Tenth Schedule of the Indian Constitution, the authority to decide questions regarding the disqualification of a member of a House on the ground of defection rests with:",
+        "options": {
+          "A": "President of India",
+          "B": "Presiding Officer of the respective House (Speaker or Chairman)",
+          "C": "Election Commission of India",
+          "D": "Supreme Court of India"
+        },
+        "correct": "B",
+        "explanation": "According to Paragraph 6 of the Tenth Schedule, any question regarding disqualification arising out of defection is referred to and decided by the Chairman or Speaker of that House. In Kihoto Hollohan (1992), the SC held that this decision is subject to judicial review."
+      },
+      {
+        "q": 4,
+        "topic": "Rights issues",
+        "question": "A Proclamation of President's Rule under Article 356 must be approved by both Houses of Parliament within what maximum timeframe from the date of its issue?",
+        "options": {
+          "A": "One month",
+          "B": "Six weeks",
+          "C": "Two months",
+          "D": "Six months"
+        },
+        "correct": "C",
+        "explanation": "Under Article 356(3), a presidential proclamation imposing President's Rule in a State must be approved by simple majority resolutions in both Houses of Parliament within two months from its date of issuance."
+      },
+      {
+        "q": 5,
+        "topic": "Constitution",
+        "question": "Under the Seventh Schedule of the Indian Constitution, which of the following subjects falls explicitly under the State List?",
+        "options": {
+          "A": "Defense and Armed Forces",
+          "B": "Banking and Currency",
+          "C": "Interstate Trade and Commerce",
+          "D": "Public Health and Sanitation"
+        },
+        "correct": "D",
+        "explanation": "Public health, sanitation, hospitals, dispensaries, police, and agriculture are subjects enumerated under List II (State List) of the Seventh Schedule, giving state legislatures primary legislative competence over them."
+      },
+      {
+        "q": 6,
+        "topic": "Political system",
+        "question": "The Comptroller and Auditor General (CAG) of India is appointed by the President by warrant under his hand and seal pursuant to which Article of the Constitution?",
+        "options": {
+          "A": "Article 148",
+          "B": "Article 124",
+          "C": "Article 280",
+          "D": "Article 315"
+        },
+        "correct": "A",
+        "explanation": "Article 148 provides for the independent office of the CAG of India. The CAG is appointed by the President and can be removed from office only in like manner and on the like grounds as a Judge of the Supreme Court."
+      },
+      {
+        "q": 7,
+        "topic": "Political system",
+        "question": "The Public Accounts Committee (PAC) of the Indian Parliament consists of 22 members. What is the composition of this committee across the two Houses?",
+        "options": {
+          "A": "12 from Lok Sabha and 10 from Rajya Sabha",
+          "B": "15 from Lok Sabha and 7 from Rajya Sabha",
+          "C": "18 from Lok Sabha and 4 from Rajya Sabha",
+          "D": "20 from Lok Sabha and 2 from Rajya Sabha"
+        },
+        "correct": "B",
+        "explanation": "The Public Accounts Committee comprises 22 members—15 elected from the Lok Sabha and 7 from the Rajya Sabha according to proportional representation. By convention established in 1967, its chairman is appointed by the Speaker from the Opposition."
+      },
+      {
+        "q": 8,
+        "topic": "Rights issues",
+        "question": "Which Constitutional Amendment Act made free and compulsory education for children between six and fourteen years of age a Fundamental Right under Article 21A?",
+        "options": {
+          "A": "44th Constitutional Amendment Act",
+          "B": "73rd Constitutional Amendment Act",
+          "C": "86th Constitutional Amendment Act",
+          "D": "91st Constitutional Amendment Act"
+        },
+        "correct": "C",
+        "explanation": "The 86th Constitutional Amendment Act of 2002 inserted Article 21A into Part III, declaring education a Fundamental Right for children aged 6–14 years, and added Article 51A(k) as a Fundamental Duty for parents."
+      },
+      {
+        "q": 9,
+        "topic": "Rights issues",
+        "question": "In which of the following legislative matters does the Indian Constitution NOT provide for a Joint Sitting of both Houses of Parliament under Article 108?",
+        "options": {
+          "A": "Ordinary Legislative Bills",
+          "B": "Financial Bills Type I",
+          "C": "Financial Bills Type II",
+          "D": "Constitutional Amendment Bills under Article 368"
+        },
+        "correct": "D",
+        "explanation": "Under Article 108, a Joint Sitting can be convened for Ordinary Bills and Financial Bills (Type I & II) in case of a deadlock between both Houses. However, no joint sitting is permissible for Money Bills (Article 110) or Constitutional Amendment Bills under Article 368, which must be passed by each House separately."
+      },
+      {
+        "q": 10,
+        "topic": "Constitution",
+        "question": "The National Human Rights Commission (NHRC) in India is categorized as a:",
+        "options": {
+          "A": "Statutory body created by an Act of Parliament",
+          "B": "Constitutional body explicitly mentioned in Part III",
+          "C": "Non-statutory advisory body set up via Cabinet Resolution",
+          "D": "Judicial tribunal empowered to enforce penal convictions"
+        },
+        "correct": "A",
+        "explanation": "The National Human Rights Commission (NHRC) is a statutory body created under the Protection of Human Rights Act, 1993, to inquire into human rights violations and make recommendations to public authorities."
+      },
+      {
+        "q": 11,
+        "topic": "Constitution",
+        "question": "According to Article 75(3) of the Indian Constitution, the Council of Ministers is collectively responsible to:",
+        "options": {
+          "A": "President of India",
+          "B": "Lok Sabha",
+          "C": "Both Houses of Parliament jointly",
+          "D": "Prime Minister"
+        },
+        "correct": "B",
+        "explanation": "Article 75(3) specifies that the Council of Ministers shall be collectively responsible to the House of the People (Lok Sabha). This implies that if a motion of no-confidence is passed in the Lok Sabha, the entire ministry must resign."
+      },
+      {
+        "q": 12,
+        "topic": "Rights issues",
+        "question": "Which Article of the Constitution empowers the Rajya Sabha to pass a resolution authorizing Parliament to make laws with respect to a matter in the State List in national interest?",
+        "options": {
+          "A": "Article 248",
+          "B": "Article 250",
+          "C": "Article 249",
+          "D": "Article 312"
+        },
+        "correct": "C",
+        "explanation": "Under Article 249, if the Rajya Sabha passes a resolution supported by not less than two-thirds of members present and voting declaring a State List subject to be of national importance, Parliament gains power to legislate on that subject for one year."
+      },
+      {
+        "q": 13,
+        "topic": "Constitution",
+        "question": "The exact sequence of words describing India in the Preamble as amended by the 42nd Constitutional Amendment Act of 1976 is:",
+        "options": {
+          "A": "Sovereign Democratic Republic Socialist Secular",
+          "B": "Sovereign Secular Socialist Democratic Republic",
+          "C": "Sovereign Socialist Democratic Secular Republic",
+          "D": "Sovereign Socialist Secular Democratic Republic"
+        },
+        "correct": "D",
+        "explanation": "The Preamble proclaims India to be a \"Sovereign Socialist Secular Democratic Republic\". The words \"Socialist\", \"Secular\", and \"Integrity\" were added to the Preamble by the 42nd Constitutional Amendment Act, 1976."
+      },
+      {
+        "q": 14,
+        "topic": "Rights issues",
+        "question": "Under the Comptroller and Auditor-General's (Duties, Powers and Conditions of Service) Act, 1971, the CAG holds office for a term of:",
+        "options": {
+          "A": "6 years or until the age of 65 years, whichever is earlier",
+          "B": "5 years or until the age of 62 years, whichever is earlier",
+          "C": "6 years or until the age of 70 years, whichever is earlier",
+          "D": "4 years with no age limit specified"
+        },
+        "correct": "A",
+        "explanation": "The CAG holds office for a tenure of six years or up to 65 years of age, whichever occurs first. The CAG can resign at any time by writing to the President or be removed through parliamentary impeachment."
+      },
+      {
+        "q": 15,
+        "topic": "Panchayati Raj",
+        "question": "Which Part was added to the Constitution of India by the 74th Constitutional Amendment Act of 1992 to grant constitutional status to Urban Local Bodies?",
+        "options": {
+          "A": "Part IX",
+          "B": "Part IXA",
+          "C": "Part IXB",
+          "D": "Part XIVA"
+        },
+        "correct": "B",
+        "explanation": "The 74th Constitutional Amendment Act added Part IXA titled \"The Municipalities\" along with the Twelfth Schedule, containing 18 functional items for urban local self-governments."
+      },
+      {
+        "q": 16,
+        "topic": "Constitution",
+        "question": "If any question arises whether a Bill is a \"Money Bill\" or not, whose decision under Article 110 of the Indian Constitution is final?",
+        "options": {
+          "A": "President of India",
+          "B": "Chairman of the Rajya Sabha",
+          "C": "Union Finance Minister",
+          "D": "Speaker of the Lok Sabha"
+        },
+        "correct": "D",
+        "explanation": "Article 110(3) states that if any question arises whether a Bill is a Money Bill or not, the decision of the Speaker of the Lok Sabha shall be final. The Speaker endorses the bill with a certificate when transmitting it to the Rajya Sabha."
+      },
+      {
+        "q": 17,
+        "topic": "Rights issues",
+        "question": "In which landmark nine-judge bench judgment did the Supreme Court of India unanimously declare the Right to Privacy as an intrinsic part of the Right to Life and Personal Liberty under Article 21?",
+        "options": {
+          "A": "Justice K.S. Puttaswamy v. Union of India",
+          "B": "Navtej Singh Johar v. Union of India",
+          "C": "Shayara Bano v. Union of India",
+          "D": "Shreya Singhal v. Union of India"
+        },
+        "correct": "A",
+        "explanation": "In Justice K.S. Puttaswamy (Retd.) v. Union of India (2017), a nine-judge Constitution Bench unanimously affirmed that the Right to Privacy is a Fundamental Right protected under Part III of the Constitution, primarily under Article 21."
+      },
+      {
+        "q": 18,
+        "topic": "Constitution",
+        "question": "Under the Tenth Schedule of the Indian Constitution, the authority to decide questions regarding the disqualification of a member of a House on the ground of defection rests with:",
+        "options": {
+          "A": "President of India",
+          "B": "Presiding Officer of the respective House (Speaker or Chairman)",
+          "C": "Election Commission of India",
+          "D": "Supreme Court of India"
+        },
+        "correct": "B",
+        "explanation": "According to Paragraph 6 of the Tenth Schedule, any question regarding disqualification arising out of defection is referred to and decided by the Chairman or Speaker of that House. In Kihoto Hollohan (1992), the SC held that this decision is subject to judicial review."
+      },
+      {
+        "q": 19,
+        "topic": "Rights issues",
+        "question": "A Proclamation of President's Rule under Article 356 must be approved by both Houses of Parliament within what maximum timeframe from the date of its issue?",
+        "options": {
+          "A": "One month",
+          "B": "Six weeks",
+          "C": "Two months",
+          "D": "Six months"
+        },
+        "correct": "C",
+        "explanation": "Under Article 356(3), a presidential proclamation imposing President's Rule in a State must be approved by simple majority resolutions in both Houses of Parliament within two months from its date of issuance."
+      },
+      {
+        "q": 20,
+        "topic": "Constitution",
+        "question": "Under the Seventh Schedule of the Indian Constitution, which of the following subjects falls explicitly under the State List?",
+        "options": {
+          "A": "Defense and Armed Forces",
+          "B": "Banking and Currency",
+          "C": "Interstate Trade and Commerce",
+          "D": "Public Health and Sanitation"
+        },
+        "correct": "D",
+        "explanation": "Public health, sanitation, hospitals, dispensaries, police, and agriculture are subjects enumerated under List II (State List) of the Seventh Schedule, giving state legislatures primary legislative competence over them."
+      },
+      {
+        "q": 21,
+        "topic": "Political system",
+        "question": "The Comptroller and Auditor General (CAG) of India is appointed by the President by warrant under his hand and seal pursuant to which Article of the Constitution?",
+        "options": {
+          "A": "Article 148",
+          "B": "Article 124",
+          "C": "Article 280",
+          "D": "Article 315"
+        },
+        "correct": "A",
+        "explanation": "Article 148 provides for the independent office of the CAG of India. The CAG is appointed by the President and can be removed from office only in like manner and on the like grounds as a Judge of the Supreme Court."
+      },
+      {
+        "q": 22,
+        "topic": "Political system",
+        "question": "The Public Accounts Committee (PAC) of the Indian Parliament consists of 22 members. What is the composition of this committee across the two Houses?",
+        "options": {
+          "A": "12 from Lok Sabha and 10 from Rajya Sabha",
+          "B": "15 from Lok Sabha and 7 from Rajya Sabha",
+          "C": "18 from Lok Sabha and 4 from Rajya Sabha",
+          "D": "20 from Lok Sabha and 2 from Rajya Sabha"
+        },
+        "correct": "B",
+        "explanation": "The Public Accounts Committee comprises 22 members—15 elected from the Lok Sabha and 7 from the Rajya Sabha according to proportional representation. By convention established in 1967, its chairman is appointed by the Speaker from the Opposition."
+      },
+      {
+        "q": 23,
+        "topic": "Rights issues",
+        "question": "Which Constitutional Amendment Act made free and compulsory education for children between six and fourteen years of age a Fundamental Right under Article 21A?",
+        "options": {
+          "A": "44th Constitutional Amendment Act",
+          "B": "73rd Constitutional Amendment Act",
+          "C": "86th Constitutional Amendment Act",
+          "D": "91st Constitutional Amendment Act"
+        },
+        "correct": "C",
+        "explanation": "The 86th Constitutional Amendment Act of 2002 inserted Article 21A into Part III, declaring education a Fundamental Right for children aged 6–14 years, and added Article 51A(k) as a Fundamental Duty for parents."
+      },
+      {
+        "q": 24,
+        "topic": "Rights issues",
+        "question": "In which of the following legislative matters does the Indian Constitution NOT provide for a Joint Sitting of both Houses of Parliament under Article 108?",
+        "options": {
+          "A": "Ordinary Legislative Bills",
+          "B": "Financial Bills Type I",
+          "C": "Financial Bills Type II",
+          "D": "Constitutional Amendment Bills under Article 368"
+        },
+        "correct": "D",
+        "explanation": "Under Article 108, a Joint Sitting can be convened for Ordinary Bills and Financial Bills (Type I & II) in case of a deadlock between both Houses. However, no joint sitting is permissible for Money Bills (Article 110) or Constitutional Amendment Bills under Article 368, which must be passed by each House separately."
+      },
+      {
+        "q": 25,
+        "topic": "Constitution",
+        "question": "The National Human Rights Commission (NHRC) in India is categorized as a:",
+        "options": {
+          "A": "Statutory body created by an Act of Parliament",
+          "B": "Constitutional body explicitly mentioned in Part III",
+          "C": "Non-statutory advisory body set up via Cabinet Resolution",
+          "D": "Judicial tribunal empowered to enforce penal convictions"
+        },
+        "correct": "A",
+        "explanation": "The National Human Rights Commission (NHRC) is a statutory body created under the Protection of Human Rights Act, 1993, to inquire into human rights violations and make recommendations to public authorities."
+      },
+      {
+        "q": 26,
+        "topic": "Constitution",
+        "question": "According to Article 75(3) of the Indian Constitution, the Council of Ministers is collectively responsible to:",
+        "options": {
+          "A": "President of India",
+          "B": "Lok Sabha",
+          "C": "Both Houses of Parliament jointly",
+          "D": "Prime Minister"
+        },
+        "correct": "B",
+        "explanation": "Article 75(3) specifies that the Council of Ministers shall be collectively responsible to the House of the People (Lok Sabha). This implies that if a motion of no-confidence is passed in the Lok Sabha, the entire ministry must resign."
+      },
+      {
+        "q": 27,
+        "topic": "Rights issues",
+        "question": "Which Article of the Constitution empowers the Rajya Sabha to pass a resolution authorizing Parliament to make laws with respect to a matter in the State List in national interest?",
+        "options": {
+          "A": "Article 248",
+          "B": "Article 250",
+          "C": "Article 249",
+          "D": "Article 312"
+        },
+        "correct": "C",
+        "explanation": "Under Article 249, if the Rajya Sabha passes a resolution supported by not less than two-thirds of members present and voting declaring a State List subject to be of national importance, Parliament gains power to legislate on that subject for one year."
+      },
+      {
+        "q": 28,
+        "topic": "Constitution",
+        "question": "The exact sequence of words describing India in the Preamble as amended by the 42nd Constitutional Amendment Act of 1976 is:",
+        "options": {
+          "A": "Sovereign Democratic Republic Socialist Secular",
+          "B": "Sovereign Secular Socialist Democratic Republic",
+          "C": "Sovereign Socialist Democratic Secular Republic",
+          "D": "Sovereign Socialist Secular Democratic Republic"
+        },
+        "correct": "D",
+        "explanation": "The Preamble proclaims India to be a \"Sovereign Socialist Secular Democratic Republic\". The words \"Socialist\", \"Secular\", and \"Integrity\" were added to the Preamble by the 42nd Constitutional Amendment Act, 1976."
+      },
+      {
+        "q": 29,
+        "topic": "Rights issues",
+        "question": "Under the Comptroller and Auditor-General's (Duties, Powers and Conditions of Service) Act, 1971, the CAG holds office for a term of:",
+        "options": {
+          "A": "6 years or until the age of 65 years, whichever is earlier",
+          "B": "5 years or until the age of 62 years, whichever is earlier",
+          "C": "6 years or until the age of 70 years, whichever is earlier",
+          "D": "4 years with no age limit specified"
+        },
+        "correct": "A",
+        "explanation": "The CAG holds office for a tenure of six years or up to 65 years of age, whichever occurs first. The CAG can resign at any time by writing to the President or be removed through parliamentary impeachment."
+      },
+      {
+        "q": 30,
+        "topic": "Panchayati Raj",
+        "question": "Which Part was added to the Constitution of India by the 74th Constitutional Amendment Act of 1992 to grant constitutional status to Urban Local Bodies?",
+        "options": {
+          "A": "Part IX",
+          "B": "Part IXA",
+          "C": "Part IXB",
+          "D": "Part XIVA"
+        },
+        "correct": "B",
+        "explanation": "The 74th Constitutional Amendment Act added Part IXA titled \"The Municipalities\" along with the Twelfth Schedule, containing 18 functional items for urban local self-governments."
+      }
+    ],
+    "Geography": [
+      {
+        "q": 1,
+        "topic": "Indian geography",
+        "question": "Which maritime channel geographically separates the Andaman Islands group from the Nicobar Islands group in the Bay of Bengal?",
+        "options": {
+          "A": "Eight Degree Channel",
+          "B": "Nine Degree Channel",
+          "C": "Ten Degree Channel",
+          "D": "Duncan Passage"
+        },
+        "correct": "C",
+        "explanation": "The Ten Degree Channel is a water body 150 km wide running along the 10° N parallel line. It separates Little Andaman to the north from Car Nicobar to the south in the Union Territory of Andaman and Nicobar Islands."
+      },
+      {
+        "q": 2,
+        "topic": "Indian geography",
+        "question": "The western slopes of the Western Ghats receive substantially heavier rainfall during the Southwest Monsoon than the eastern slopes primarily due to:",
+        "options": {
+          "A": "Thermal convection currents generated over coastal plains",
+          "B": "Cyclonic depressions originating in the Arabian Sea",
+          "C": "Tropical jet stream subsidence",
+          "D": "Orographic lifting of moisture-laden winds against the mountain barrier"
+        },
+        "correct": "D",
+        "explanation": "Moisture-bearing Arabian Sea branch winds hit the continuous Western Ghats range, forcing the air upward (orographic uplift). The windward western slopes receive high precipitation, while the eastern slopes fall in the rainshadow area."
+      },
+      {
+        "q": 3,
+        "topic": "World geography",
+        "question": "The Suez Canal is a vital artificial sea-level waterway that connects which two major bodies of water?",
+        "options": {
+          "A": "Mediterranean Sea and Red Sea",
+          "B": "Black Sea and Mediterranean Sea",
+          "C": "Persian Gulf and Arabian Sea",
+          "D": "Red Sea and Gulf of Aden"
+        },
+        "correct": "A",
+        "explanation": "Opened in 1869 across the Isthmus of Suez in Egypt, the Suez Canal connects the Mediterranean Sea to the Red Sea, creating a direct maritime route between Europe and South/East Asia without circumnavigating Africa."
+      },
+      {
+        "q": 4,
+        "topic": "Indian geography",
+        "question": "Black soils (Regur soils) covering the Deccan Trap lava plateau are particularly well-suited for cotton cultivation due to their ability to:",
+        "options": {
+          "A": "Percolate water rapidly preventing soil saturation",
+          "B": "Retain moisture for long durations and develop deep cracks when dry",
+          "C": "Provide high nitrogen content naturally without organic manures",
+          "D": "Resist wind erosion in hyper-arid desert zones"
+        },
+        "correct": "B",
+        "explanation": "Black soils, derived from basaltic volcanic rock, are clayey and argillaceous. They expand and become sticky when wet, and shrink developing deep fissures when dry (\"self-ploughing\"), retaining moisture for long periods."
+      },
+      {
+        "q": 5,
+        "topic": "Physical geography",
+        "question": "The \"Ring of Fire\" refers to a major oceanic basin belt characterized by frequent earthquakes and active volcanism located along the perimeter of the:",
+        "options": {
+          "A": "Atlantic Ocean",
+          "B": "Indian Ocean",
+          "C": "Pacific Ocean",
+          "D": "Arctic Ocean"
+        },
+        "correct": "C",
+        "explanation": "The Pacific Ring of Fire is a 40,000 km horseshoe-shaped zone around the edges of the Pacific Ocean plate. Subduction zones and tectonic plate boundaries cause roughly 90% of the world's earthquakes and contain over 75% of active volcanoes."
+      },
+      {
+        "q": 6,
+        "topic": "Physical geography",
+        "question": "In which atmospheric layer does virtually all weather phenomena, including cloud formation, rainfall, and convection, take place?",
+        "options": {
+          "A": "Stratosphere",
+          "B": "Mesosphere",
+          "C": "Thermosphere",
+          "D": "Troposphere"
+        },
+        "correct": "D",
+        "explanation": "The Troposphere is the lowest layer of Earth's atmosphere, extending from the surface to about 8 km at the poles and 18 km at the equator. It contains nearly 80% of atmospheric mass and almost all water vapor, supporting weather dynamics."
+      },
+      {
+        "q": 7,
+        "topic": "Indian geography",
+        "question": "Which of the following west-flowing rivers in Peninsular India flows through a rift valley between the Vindhya and Satpura mountain ranges?",
+        "options": {
+          "A": "Narmada",
+          "B": "Luni",
+          "C": "Sabarmati",
+          "D": "Mahi"
+        },
+        "correct": "A",
+        "explanation": "The Narmada originates on the Amarkantak plateau and flows westward through a linear fault-trough rift valley bounded by the Vindhyan range to the north and the Satpura range to the south, draining into the Arabian Sea via the Gulf of Khambhat."
+      },
+      {
+        "q": 8,
+        "topic": "World geography",
+        "question": "The Isthmus of Panama forms a narrow land bridge connecting which two continental landmasses?",
+        "options": {
+          "A": "Asia and Europe",
+          "B": "North America and South America",
+          "C": "Africa and Eurasia",
+          "D": "Australia and Antarctica"
+        },
+        "correct": "B",
+        "explanation": "The Isthmus of Panama is a narrow strip of land separating the Caribbean Sea (Atlantic Ocean) from the Pacific Ocean, forming the geographical link between the continents of North America and South America."
+      },
+      {
+        "q": 9,
+        "topic": "Indian geography",
+        "question": "The Standard Meridian of India, used to calculate Indian Standard Time (IST) at GMT+5:30, passes near Mirzapur/ Prayagraj along longitude:",
+        "options": {
+          "A": "68°7' E",
+          "B": "72°30' E",
+          "C": "82°30' E",
+          "D": "97°25' E"
+        },
+        "correct": "C",
+        "explanation": "Longitude 82°30' E is adopted as the Standard Meridian of India. It passes through Uttar Pradesh, Madhya Pradesh, Chhattisgarh, Odisha, and Andhra Pradesh, establishing IST 5 hours and 30 minutes ahead of UTC."
+      },
+      {
+        "q": 10,
+        "topic": "World geography",
+        "question": "Which lake located in Siberia, Russia, holds the distinction of being the deepest and largest freshwater lake by volume in the world?",
+        "options": {
+          "A": "Lake Superior",
+          "B": "Lake Victoria",
+          "C": "Caspian Sea",
+          "D": "Lake Baikal"
+        },
+        "correct": "D",
+        "explanation": "Lake Baikal in southern Siberia is a continental rift lake. Reaching a maximum depth of 1,642 meters, it contains roughly 22-23% of the world's unfrozen surface freshwater, making it both the deepest and most voluminous freshwater lake."
+      },
+      {
+        "q": 11,
+        "topic": "Economic geography",
+        "question": "The Coriolis force, caused by Earth's planetary rotation, deflects moving air masses to the right in the Northern Hemisphere and reaches its maximum intensity at the:",
+        "options": {
+          "A": "Poles",
+          "B": "Equator",
+          "C": "Tropics of Cancer and Capricorn",
+          "D": "Subtropical High-Pressure Belts"
+        },
+        "correct": "A",
+        "explanation": "The Coriolis effect is directly proportional to the sine of latitude. Consequently, the Coriolis force is zero at the Equator and reaches its maximum strength at the North and South Poles."
+      },
+      {
+        "q": 12,
+        "topic": "World geography",
+        "question": "Loktak Lake, famous for its floating vegetation masses known as \"Phumdis\" and housing Keibul Lamjao National Park, is situated in which Indian state?",
+        "options": {
+          "A": "Assam",
+          "B": "Manipur",
+          "C": "Meghalaya",
+          "D": "Nagaland"
+        },
+        "correct": "B",
+        "explanation": "Loktak Lake in Manipur is the largest freshwater lake in Northeast India. Keibul Lamjao National Park located on its southern shore is the world's only floating national park, home to the endangered Sangai deer (brow-antlered deer)."
+      },
+      {
+        "q": 13,
+        "topic": "Indian geography",
+        "question": "Which narrow maritime strait connects the Red Sea to the Gulf of Aden and the Indian Ocean, serving as a critical global oil shipment chokepoint?",
+        "options": {
+          "A": "Strait of Hormuz",
+          "B": "Bosphorus Strait",
+          "C": "Bab-el-Mandeb Strait",
+          "D": "Cook Strait"
+        },
+        "correct": "C",
+        "explanation": "The Bab-el-Mandeb Strait lies between Yemen on the Arabian Peninsula and Djibouti/Eritrea in the Horn of Africa. It connects the Red Sea to the Gulf of Aden and Arabian Sea, acting as a gateway to the Suez Canal."
+      },
+      {
+        "q": 14,
+        "topic": "Indian geography",
+        "question": "Which maritime channel geographically separates the Andaman Islands group from the Nicobar Islands group in the Bay of Bengal?",
+        "options": {
+          "A": "Eight Degree Channel",
+          "B": "Nine Degree Channel",
+          "C": "Ten Degree Channel",
+          "D": "Duncan Passage"
+        },
+        "correct": "C",
+        "explanation": "The Ten Degree Channel is a water body 150 km wide running along the 10° N parallel line. It separates Little Andaman to the north from Car Nicobar to the south in the Union Territory of Andaman and Nicobar Islands."
+      },
+      {
+        "q": 15,
+        "topic": "Indian geography",
+        "question": "The western slopes of the Western Ghats receive substantially heavier rainfall during the Southwest Monsoon than the eastern slopes primarily due to:",
+        "options": {
+          "A": "Thermal convection currents generated over coastal plains",
+          "B": "Cyclonic depressions originating in the Arabian Sea",
+          "C": "Tropical jet stream subsidence",
+          "D": "Orographic lifting of moisture-laden winds against the mountain barrier"
+        },
+        "correct": "D",
+        "explanation": "Moisture-bearing Arabian Sea branch winds hit the continuous Western Ghats range, forcing the air upward (orographic uplift). The windward western slopes receive high precipitation, while the eastern slopes fall in the rainshadow area."
+      },
+      {
+        "q": 16,
+        "topic": "World geography",
+        "question": "The Suez Canal is a vital artificial sea-level waterway that connects which two major bodies of water?",
+        "options": {
+          "A": "Mediterranean Sea and Red Sea",
+          "B": "Black Sea and Mediterranean Sea",
+          "C": "Persian Gulf and Arabian Sea",
+          "D": "Red Sea and Gulf of Aden"
+        },
+        "correct": "A",
+        "explanation": "Opened in 1869 across the Isthmus of Suez in Egypt, the Suez Canal connects the Mediterranean Sea to the Red Sea, creating a direct maritime route between Europe and South/East Asia without circumnavigating Africa."
+      },
+      {
+        "q": 17,
+        "topic": "Indian geography",
+        "question": "Black soils (Regur soils) covering the Deccan Trap lava plateau are particularly well-suited for cotton cultivation due to their ability to:",
+        "options": {
+          "A": "Percolate water rapidly preventing soil saturation",
+          "B": "Retain moisture for long durations and develop deep cracks when dry",
+          "C": "Provide high nitrogen content naturally without organic manures",
+          "D": "Resist wind erosion in hyper-arid desert zones"
+        },
+        "correct": "B",
+        "explanation": "Black soils, derived from basaltic volcanic rock, are clayey and argillaceous. They expand and become sticky when wet, and shrink developing deep fissures when dry (\"self-ploughing\"), retaining moisture for long periods."
+      },
+      {
+        "q": 18,
+        "topic": "Physical geography",
+        "question": "The \"Ring of Fire\" refers to a major oceanic basin belt characterized by frequent earthquakes and active volcanism located along the perimeter of the:",
+        "options": {
+          "A": "Atlantic Ocean",
+          "B": "Indian Ocean",
+          "C": "Pacific Ocean",
+          "D": "Arctic Ocean"
+        },
+        "correct": "C",
+        "explanation": "The Pacific Ring of Fire is a 40,000 km horseshoe-shaped zone around the edges of the Pacific Ocean plate. Subduction zones and tectonic plate boundaries cause roughly 90% of the world's earthquakes and contain over 75% of active volcanoes."
+      },
+      {
+        "q": 19,
+        "topic": "Physical geography",
+        "question": "In which atmospheric layer does virtually all weather phenomena, including cloud formation, rainfall, and convection, take place?",
+        "options": {
+          "A": "Stratosphere",
+          "B": "Mesosphere",
+          "C": "Thermosphere",
+          "D": "Troposphere"
+        },
+        "correct": "D",
+        "explanation": "The Troposphere is the lowest layer of Earth's atmosphere, extending from the surface to about 8 km at the poles and 18 km at the equator. It contains nearly 80% of atmospheric mass and almost all water vapor, supporting weather dynamics."
+      },
+      {
+        "q": 20,
+        "topic": "Indian geography",
+        "question": "Which of the following west-flowing rivers in Peninsular India flows through a rift valley between the Vindhya and Satpura mountain ranges?",
+        "options": {
+          "A": "Narmada",
+          "B": "Luni",
+          "C": "Sabarmati",
+          "D": "Mahi"
+        },
+        "correct": "A",
+        "explanation": "The Narmada originates on the Amarkantak plateau and flows westward through a linear fault-trough rift valley bounded by the Vindhyan range to the north and the Satpura range to the south, draining into the Arabian Sea via the Gulf of Khambhat."
+      },
+      {
+        "q": 21,
+        "topic": "World geography",
+        "question": "The Isthmus of Panama forms a narrow land bridge connecting which two continental landmasses?",
+        "options": {
+          "A": "Asia and Europe",
+          "B": "North America and South America",
+          "C": "Africa and Eurasia",
+          "D": "Australia and Antarctica"
+        },
+        "correct": "B",
+        "explanation": "The Isthmus of Panama is a narrow strip of land separating the Caribbean Sea (Atlantic Ocean) from the Pacific Ocean, forming the geographical link between the continents of North America and South America."
+      },
+      {
+        "q": 22,
+        "topic": "Indian geography",
+        "question": "The Standard Meridian of India, used to calculate Indian Standard Time (IST) at GMT+5:30, passes near Mirzapur/ Prayagraj along longitude:",
+        "options": {
+          "A": "68°7' E",
+          "B": "72°30' E",
+          "C": "82°30' E",
+          "D": "97°25' E"
+        },
+        "correct": "C",
+        "explanation": "Longitude 82°30' E is adopted as the Standard Meridian of India. It passes through Uttar Pradesh, Madhya Pradesh, Chhattisgarh, Odisha, and Andhra Pradesh, establishing IST 5 hours and 30 minutes ahead of UTC."
+      },
+      {
+        "q": 23,
+        "topic": "World geography",
+        "question": "Which lake located in Siberia, Russia, holds the distinction of being the deepest and largest freshwater lake by volume in the world?",
+        "options": {
+          "A": "Lake Superior",
+          "B": "Lake Victoria",
+          "C": "Caspian Sea",
+          "D": "Lake Baikal"
+        },
+        "correct": "D",
+        "explanation": "Lake Baikal in southern Siberia is a continental rift lake. Reaching a maximum depth of 1,642 meters, it contains roughly 22-23% of the world's unfrozen surface freshwater, making it both the deepest and most voluminous freshwater lake."
+      },
+      {
+        "q": 24,
+        "topic": "Economic geography",
+        "question": "The Coriolis force, caused by Earth's planetary rotation, deflects moving air masses to the right in the Northern Hemisphere and reaches its maximum intensity at the:",
+        "options": {
+          "A": "Poles",
+          "B": "Equator",
+          "C": "Tropics of Cancer and Capricorn",
+          "D": "Subtropical High-Pressure Belts"
+        },
+        "correct": "A",
+        "explanation": "The Coriolis effect is directly proportional to the sine of latitude. Consequently, the Coriolis force is zero at the Equator and reaches its maximum strength at the North and South Poles."
+      },
+      {
+        "q": 25,
+        "topic": "World geography",
+        "question": "Loktak Lake, famous for its floating vegetation masses known as \"Phumdis\" and housing Keibul Lamjao National Park, is situated in which Indian state?",
+        "options": {
+          "A": "Assam",
+          "B": "Manipur",
+          "C": "Meghalaya",
+          "D": "Nagaland"
+        },
+        "correct": "B",
+        "explanation": "Loktak Lake in Manipur is the largest freshwater lake in Northeast India. Keibul Lamjao National Park located on its southern shore is the world's only floating national park, home to the endangered Sangai deer (brow-antlered deer)."
+      },
+      {
+        "q": 26,
+        "topic": "Indian geography",
+        "question": "Which narrow maritime strait connects the Red Sea to the Gulf of Aden and the Indian Ocean, serving as a critical global oil shipment chokepoint?",
+        "options": {
+          "A": "Strait of Hormuz",
+          "B": "Bosphorus Strait",
+          "C": "Bab-el-Mandeb Strait",
+          "D": "Cook Strait"
+        },
+        "correct": "C",
+        "explanation": "The Bab-el-Mandeb Strait lies between Yemen on the Arabian Peninsula and Djibouti/Eritrea in the Horn of Africa. It connects the Red Sea to the Gulf of Aden and Arabian Sea, acting as a gateway to the Suez Canal."
+      }
+    ],
+    "Economic and Social Development": [
+      {
+        "q": 1,
+        "topic": "Sustainable development",
+        "question": "Open Market Operations (OMOs) conducted by the Reserve Bank of India involve the purchase and sale of which financial instruments in the open market?",
+        "options": {
+          "A": "Commercial paper issued by private corporations",
+          "B": "Foreign currency exchange reserves",
+          "C": "Shares of listed public sector enterprises",
+          "D": "Government Securities (G-Secs)"
+        },
+        "correct": "D",
+        "explanation": "Open Market Operations (OMOs) are quantitative monetary policy tools where RBI buys or sells Government Securities to inject or absorb rupee liquidity in the banking system, thereby regulating interest rates and money supply."
+      },
+      {
+        "q": 2,
+        "topic": "Sustainable development",
+        "question": "Statutory Liquidity Ratio (SLR) mandates commercial banks in India to maintain a specified percentage of their Net Demand and Time Liabilities (NDTL) in the form of:",
+        "options": {
+          "A": "Liquid assets like cash, gold, and approved government securities",
+          "B": "Deposits exclusively held in current accounts with the Reserve Bank of India",
+          "C": "Foreign currency assets deposited with international central banks",
+          "D": "Equity investments in infrastructure development banks"
+        },
+        "correct": "A",
+        "explanation": "Under Section 24 of the Banking Regulation Act, 1949, commercial banks must maintain a minimum percentage of NDTL in liquid assets such as cash, gold, or unencumbered approved G-Secs before extending credit to borrowers."
+      },
+      {
+        "q": 3,
+        "topic": "Sustainable development",
+        "question": "The \"GDP Deflator\" is a comprehensive measure of price inflation calculated as the ratio of:",
+        "options": {
+          "A": "Real GDP to Nominal GDP multiplied by 100",
+          "B": "Nominal GDP to Real GDP multiplied by 100",
+          "C": "Consumer Price Index to Wholesale Price Index",
+          "D": "Gross National Product to Net National Product"
+        },
+        "correct": "B",
+        "explanation": "The GDP Deflator measures the overall level of prices of all domestically produced final goods and services. Formula: GDP Deflator = (Nominal GDP / Real GDP) x 100. Unlike CPI or WPI, it reflects changes in the entire economy."
+      },
+      {
+        "q": 4,
+        "topic": "Poverty",
+        "question": "In macroeconomic theory, the \"Phillips Curve\" traditionally illustrates an inverse empirical relationship between:",
+        "options": {
+          "A": "Tax rates and total government revenue",
+          "B": "Foreign exchange rates and trade balance",
+          "C": "Inflation rate and unemployment rate",
+          "D": "Interest rates and money supply growth"
+        },
+        "correct": "C",
+        "explanation": "Formulated by A.W. Phillips, the short-run Phillips Curve demonstrates an inverse relationship between inflation and unemployment, suggesting that policies reducing unemployment tend to generate higher inflation and vice versa."
+      },
+      {
+        "q": 5,
+        "topic": "Sustainable development",
+        "question": "In India's Balance of Payments (BoP) accounting, which of the following is recorded as a component of the \"Current Account\"?",
+        "options": {
+          "A": "Foreign Direct Investment (FDI)",
+          "B": "External Commercial Borrowings (ECB)",
+          "C": "Foreign Portfolio Investment (FPI)",
+          "D": "Net Invisibles including services, transfers, and income"
+        },
+        "correct": "D",
+        "explanation": "The Current Account records visible trade (exports/imports of merchandise) and invisible trade (services like IT/tourism, primary income like dividends, and secondary transfers like worker remittances). FDI, FPI, and external borrowings are recorded in the Financial/Capital Account of the Balance of Payments."
+      },
+      {
+        "q": 6,
+        "topic": "Sustainable development",
+        "question": "The \"Marginal Cost of Funds based Lending Rate\" (MCLR) framework was introduced by the Reserve Bank of India to improve the:",
+        "options": {
+          "A": "Transmission of monetary policy repo rate changes to commercial bank lending rates",
+          "B": "Yield returns on long-term government sovereign bonds",
+          "C": "Capital adequacy reserves of non-banking financial companies",
+          "D": "Foreign direct investment inflows into domestic commercial banks"
+        },
+        "correct": "A",
+        "explanation": "RBI introduced MCLR in April 2016 (replacing the Base Rate system) to ensure that policy rate cuts (Repo Rate) determined by the central bank are transmitted efficiently and transparently to retail and corporate bank borrowers."
+      },
+      {
+        "q": 7,
+        "topic": "Sustainable development",
+        "question": "Under the Foreign Exchange Management Act (FEMA), 1999, the authority mandated to hold, manage, and administer India's foreign exchange reserves is the:",
+        "options": {
+          "A": "Ministry of Commerce and Industry",
+          "B": "Reserve Bank of India",
+          "C": "Securities and Exchange Board of India",
+          "D": "State Bank of India"
+        },
+        "correct": "B",
+        "explanation": "The Reserve Bank of India acts as the custodian of India's foreign exchange reserves (foreign currency assets, gold, SDRs, and reserve tranche position with IMF) under statutory provisions of the RBI Act, 1934 and FEMA, 1999."
+      },
+      {
+        "q": 8,
+        "topic": "Sustainable development",
+        "question": "The Department of Investment and Public Asset Management (DIPAM), which manages government equity disinvestments in Central Public Sector Enterprises, operates under the:",
+        "options": {
+          "A": "Ministry of Corporate Affairs",
+          "B": "Ministry of Heavy Industries",
+          "C": "Ministry of Finance",
+          "D": "NITI Aayog"
+        },
+        "correct": "C",
+        "explanation": "DIPAM is one of the six departments under the Ministry of Finance. It is responsible for managing government investments in public sector undertakings, public asset monetization, and strategic/minority disinvestments."
+      },
+      {
+        "q": 9,
+        "topic": "Sustainable development",
+        "question": "In government budgetary accounting, \"Primary Deficit\" is calculated by subtracting which item from the Fiscal Deficit?",
+        "options": {
+          "A": "Capital expenditure",
+          "B": "Subsidies on essential food and fertilizers",
+          "C": "Grants-in-aid given to state governments",
+          "D": "Interest payments on past accumulated debts"
+        },
+        "correct": "D",
+        "explanation": "Primary Deficit measures current fiscal imbalance excluding interest obligations arising from historical borrowings. Formula: Primary Deficit = Fiscal Deficit - Interest Payments."
+      },
+      {
+        "q": 10,
+        "topic": "Sustainable development",
+        "question": "Treasury Bills (T-Bills) issued by the Government of India are short-term money market debt instruments issued in three specific maturity tenors, which are:",
+        "options": {
+          "A": "91 days, 182 days, and 364 days",
+          "B": "30 days, 60 days, and 90 days",
+          "C": "14 days, 28 days, and 56 days",
+          "D": "100 days, 200 days, and 300 days"
+        },
+        "correct": "A",
+        "explanation": "Treasury Bills are zero-coupon short-term government debt obligations issued at a discount and redeemed at face value. The Government of India currently issues T-Bills in three tenors: 91 days, 182 days, and 364 days."
+      },
+      {
+        "q": 11,
+        "topic": "Sustainable development",
+        "question": "Under prudential asset classification norms of the RBI, a bank loan or advance account is classified as a Non-Performing Asset (NPA) if interest or principal installment remains overdue for a period exceeding:",
+        "options": {
+          "A": "30 days",
+          "B": "90 days",
+          "C": "180 days",
+          "D": "365 days"
+        },
+        "correct": "B",
+        "explanation": "An asset (loan or advance) becomes non-performing when it ceases to generate income for the bank. Specifically, a term loan is classified as an NPA if interest/principal remains overdue for more than 90 days."
+      },
+      {
+        "q": 12,
+        "topic": "Sustainable development",
+        "question": "Under SEBI (Alternative Investment Funds) Regulations, 2012, venture capital funds and social venture funds are classified under which category of AIFs?",
+        "options": {
+          "A": "Category III AIF",
+          "B": "Category II AIF",
+          "C": "Category I AIF",
+          "D": "Category IV AIF"
+        },
+        "correct": "C",
+        "explanation": "Category I AIFs invest in start-ups, early-stage ventures, social ventures, SME sectors, and infrastructure which the government or regulators consider economically desirable. Category II includes private equity/debt funds, while Category III includes hedge funds."
+      },
+      {
+        "q": 13,
+        "topic": "Sustainable development",
+        "question": "The \"Tax-to-GDP Ratio\" of an economy represents the total tax revenue collected by the government expressed as a percentage of GDP. A low Tax-to-GDP ratio generally implies:",
+        "options": {
+          "A": "High tax compliance across informal business sectors",
+          "B": "Robust fiscal space available for public capital expenditure",
+          "C": "Minimal dependence of the state on public market debt",
+          "D": "A narrow tax base and presence of a large informal economy"
+        },
+        "correct": "D",
+        "explanation": "A low Tax-to-GDP ratio indicates that the government extracts a small portion of national economic output in taxes, often stemming from a large unorganized/informal sector, tax exemptions, and low direct tax net coverage."
+      },
+      {
+        "q": 14,
+        "topic": "Poverty",
+        "question": "The Wholesale Price Index (WPI) in India, which tracks inflation at the producer and bulk transaction stage, is published on a monthly basis by the:",
+        "options": {
+          "A": "Office of the Economic Adviser, Ministry of Commerce and Industry",
+          "B": "National Statistical Office (NSO), Ministry of Statistics and Programme Implementation",
+          "C": "Department of Economic Affairs, Ministry of Finance",
+          "D": "Reserve Bank of India"
+        },
+        "correct": "A",
+        "explanation": "The Wholesale Price Index (base year 2011-12) is compiled and released monthly by the Office of the Economic Adviser, functioning under the Department for Promotion of Industry and Internal Trade (DPIIT), Ministry of Commerce and Industry."
+      }
+    ],
+    "Environment and Ecology": [],
+    "General Science": [],
+    "Current Affairs": []
+  }
+}

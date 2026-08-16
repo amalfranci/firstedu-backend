@@ -1,0 +1,2356 @@
+{
+  "paper_id": "NEET-Paper1",
+  "title": "NEET Paper 1",
+  "exam": "NEET",
+  "year": 2026,
+  "subjects": {
+    "Physics": [
+      {
+        "q": 1,
+        "topic": "Kinematics",
+        "question": "A particle moves along a straight line such that its displacement s at any time t is given by s = t^3 - 6t^2 + 9t + 15. The velocity of the particle when its acceleration becomes zero is:",
+        "options": {
+          "A": "-9 m/s",
+          "B": "-3 m/s",
+          "C": "9 m/s",
+          "D": "3 m/s"
+        },
+        "correct": "B",
+        "explanation": "Velocity v = ds/dt = 3t^2 - 12t + 9. Acceleration a = dv/dt = 6t - 12. Setting acceleration to zero gives 6t - 12 = 0 => t = 2 s. Substituting t = 2 into velocity gives v = 3(2)^2 - 12(2) + 9 = -3 m/s. Correct option is (B)."
+      },
+      {
+        "q": 2,
+        "topic": "Physics and Measurement",
+        "question": "The dimensional formula for gravitational constant G is:",
+        "options": {
+          "A": "[M^-2 L^3 T^-2]",
+          "B": "[M^-1 L^3 T^-2]",
+          "C": "[M L^2 T^-2]",
+          "D": "[M^-1 L^2 T^-2]"
+        },
+        "correct": "B",
+        "explanation": "From Newton's law of gravitation, F = G m1 m2 / r^2, so G = F r^2 / (m1 m2). Substituting dimensions: [MLT^-2] [L^2] / [M^2] = [M^-1 L^3 T^-2]. Correct option is (B)."
+      },
+      {
+        "q": 3,
+        "topic": "Laws of Motion",
+        "question": "A bullet of mass 20 g moving with a speed of 500 m/s hits a wooden block of mass 1 kg and gets embedded in it. The final speed of the combined system is:",
+        "options": {
+          "A": "10 m/s",
+          "B": "5 m/s",
+          "C": "2.5 m/s",
+          "D": "9.8 m/s"
+        },
+        "correct": "D",
+        "explanation": "By conservation of linear momentum: m1 v1 = (m1 + m2) v. Given m1 = 0.02 kg, v1 = 500 m/s, m2 = 1 kg. 0.02 * 500 = (0.02 + 1) * v => 10 = 1.02 * v => v = 10 / 1.02 ≈ 9.8 m/s. Correct option is (D)."
+      },
+      {
+        "q": 4,
+        "topic": "Work, Energy and Power",
+        "question": "Two bodies of masses m and 4m are moving with equal kinetic energies. The ratio of their linear momenta is:",
+        "options": {
+          "A": "1 : 2",
+          "B": "2 : 1",
+          "C": "4 : 1",
+          "D": "1 : 4"
+        },
+        "correct": "A",
+        "explanation": "Momentum p is related to kinetic energy K by p = sqrt(2mK). For equal kinetic energies, p1 / p2 = sqrt(m1 / m2) = sqrt(m / 4m) = 1 / 2 = 1 : 2. Correct option is (A)."
+      },
+      {
+        "q": 5,
+        "topic": "Work, Energy and Power",
+        "question": "A body of mass 2 kg is dropped from a height of 20 m. The kinetic energy of the body just before striking the ground is: (Take g = 10 m/s^2)",
+        "options": {
+          "A": "200 J",
+          "B": "800 J",
+          "C": "400 J",
+          "D": "100 J"
+        },
+        "correct": "C",
+        "explanation": "By conservation of mechanical energy, potential energy lost equals kinetic energy gained: K = mgh = 2 * 10 * 20 = 400 J. Correct option is (C)."
+      },
+      {
+        "q": 6,
+        "topic": "Rotational Motion",
+        "question": "The moment of inertia of a uniform circular disc of mass M and radius R about an axis passing through its center and perpendicular to its plane is:",
+        "options": {
+          "A": "(1/2) MR^2",
+          "B": "(2/3) MR^2",
+          "C": "(1/4) MR^2",
+          "D": "MR^2"
+        },
+        "correct": "A",
+        "explanation": "The standard formula for the moment of inertia of a uniform circular disc about its central transverse axis is I = (1/2) MR^2. Correct option is (A)."
+      },
+      {
+        "q": 7,
+        "topic": "Electrostatics",
+        "question": "An electric dipole of dipole moment P is placed in a uniform electric field E. The maximum torque experienced by the dipole is:",
+        "options": {
+          "A": "2 PE",
+          "B": "PE / 2",
+          "C": "PE",
+          "D": "Zero"
+        },
+        "correct": "C",
+        "explanation": "Torque acting on an electric dipole in a uniform electric field is given by τ = P * E * sin(θ). The maximum torque occurs when θ = 90 degrees, so τmax = PE. Correct option is (C)."
+      },
+      {
+        "q": 8,
+        "topic": "Electrostatics",
+        "question": "Two charges +q and -q are separated by a distance 2l. The electric field at a point on the equatorial line at a distance r from the center (r >> l) is proportional to:",
+        "options": {
+          "A": "r^-2",
+          "B": "r^-1",
+          "C": "r^-3",
+          "D": "r^-4"
+        },
+        "correct": "C",
+        "explanation": "The electric field of a dipole on its equatorial line for r >> l is given by E = 1/(4πε0) * (P / r^3), which is inversely proportional to r^3. Correct option is (C)."
+      },
+      {
+        "q": 9,
+        "topic": "Electrostatics",
+        "question": "The equivalent capacitance of two capacitors of capacitances C1 and C2 connected in series is:",
+        "options": {
+          "A": "(C1 + C2) / (C1 C2)",
+          "B": "(C1 C2) / (C1 + C2)",
+          "C": "C1 C2 / (C1 - C2)",
+          "D": "C1 + C2"
+        },
+        "correct": "B",
+        "explanation": "For capacitors connected in series, the reciprocal of equivalent capacitance is the sum of reciprocals of individual capacitances: 1/Ceq = 1/C1 + 1/C2 => Ceq = (C1 C2) / (C1 + C2). Correct option is (B)."
+      },
+      {
+        "q": 10,
+        "topic": "Current Electricity",
+        "question": "Kirchhoff's first law (junction rule) and second law (loop rule) are based on the conservation of:",
+        "options": {
+          "A": "Charge and energy respectively",
+          "B": "Charge and momentum respectively",
+          "C": "Momentum and energy respectively",
+          "D": "Energy and charge respectively"
+        },
+        "correct": "A",
+        "explanation": "Kirchhoff's current law (junction rule) is based on the conservation of electric charge, while Kirchhoff's voltage law (loop rule) is based on the conservation of energy. Correct option is (A)."
+      },
+      {
+        "q": 11,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "A proton and an alpha particle enter a uniform magnetic field perpendicularly with the same kinetic energy. The ratio of the radii of their circular paths (r_p : r_α) is:",
+        "options": {
+          "A": "1 : 2",
+          "B": "1 : 4",
+          "C": "1 : 1",
+          "D": "2 : 1"
+        },
+        "correct": "C",
+        "explanation": "The radius of a charged particle in a magnetic field is given by r = sqrt(2mK) / (qB). Here m_α = 4m_p and q_α = 2q_p. Substituting these gives r_p / r_α = sqrt(m_p / 4m_p) * (2e / e) = (1/2) * 2 = 1 : 1. Correct option is (C)."
+      },
+      {
+        "q": 12,
+        "topic": "Electronic Devices",
+        "question": "The magnetic susceptibility of a diamagnetic substance is:",
+        "options": {
+          "A": "Small and negative",
+          "B": "Zero",
+          "C": "Large and positive",
+          "D": "Small and positive"
+        },
+        "correct": "A",
+        "explanation": "Diamagnetic substances are weakly repelled by magnets and have a small, negative magnetic susceptibility. Correct option is (A)."
+      },
+      {
+        "q": 13,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "The phenomenon of electromagnetic induction was discovered by:",
+        "options": {
+          "A": "Ampere",
+          "B": "Maxwell",
+          "C": "Oersted",
+          "D": "Faraday"
+        },
+        "correct": "D",
+        "explanation": "Faraday discovered electromagnetic induction through his experiments showing that a changing magnetic flux induces an emf in a circuit. Correct option is (D)."
+      },
+      {
+        "q": 14,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "In an LCR series circuit resonant at frequency f_0, if the resistance R is decreased, the quality factor (Q-factor) of the circuit:",
+        "options": {
+          "A": "Decreases",
+          "B": "Becomes zero",
+          "C": "Increases",
+          "D": "Remains constant"
+        },
+        "correct": "C",
+        "explanation": "The quality factor of an LCR circuit is given by Q = (1/R) * sqrt(L/C). Decreasing R increases the Qfactor. Correct option is (C)."
+      },
+      {
+        "q": 15,
+        "topic": "Atoms and Nuclei",
+        "question": "Which of the following electromagnetic waves has the shortest wavelength?",
+        "options": {
+          "A": "Gamma rays",
+          "B": "Ultraviolet rays",
+          "C": "Microwaves",
+          "D": "Infrared rays"
+        },
+        "correct": "A",
+        "explanation": "In the electromagnetic spectrum, gamma rays have the highest frequency and shortest wavelength. Correct option is (A)."
+      },
+      {
+        "q": 16,
+        "topic": "Optics",
+        "question": "When light travels from a rarer medium to a denser medium, which of the following quantities changes?",
+        "options": {
+          "A": "Frequency",
+          "B": "Color",
+          "C": "Wavelength and speed",
+          "D": "Phase"
+        },
+        "correct": "C",
+        "explanation": "When light enters a denser medium, its speed and wavelength decrease, while frequency and color remain unchanged. Correct option is (C)."
+      },
+      {
+        "q": 17,
+        "topic": "Optics",
+        "question": "In Young's double slit experiment, the fringe width is beta. If the entire apparatus is immersed in water (refractive index 4/3), the new fringe width becomes:",
+        "options": {
+          "A": "(9/16) beta",
+          "B": "(4/3) beta",
+          "C": "(3/4) beta",
+          "D": "beta"
+        },
+        "correct": "C",
+        "explanation": "Fringe width β = λD / d. When immersed in a medium of refractive index n, wavelength becomes λ' = λ / n. Thus, new fringe width β' = β / n = (3/4)β. Correct option is (C)."
+      },
+      {
+        "q": 18,
+        "topic": "Dual Nature of Matter and Radiation",
+        "question": "The threshold frequency for a certain metal is v_0. When light of frequency 2v_0 is incident on the metal, the maximum velocity of emitted photoelectrons is v_1. When frequency is increased to 5v_0, the maximum velocity is v_2. The ratio v_1 : v_2 is:",
+        "options": {
+          "A": "2 : 1",
+          "B": "1 : 4",
+          "C": "1 : sqrt(2)",
+          "D": "1 : 2"
+        },
+        "correct": "D",
+        "explanation": "By Einstein's photoelectric equation, (1/2)m v_1^2 = h(2v_0 - v_0) = hv_0, and (1/2)m v_2^2 = h(5v_0 - v_0) = 4hv_0. Taking the ratio gives (v_1 / v_2)^2 = 1/4 => v_1 / v_2 = 1 / 2. Correct option is (D)."
+      },
+      {
+        "q": 19,
+        "topic": "Atoms and Nuclei",
+        "question": "According to Bohr's model of hydrogen atom, the radius of the nth orbit is proportional to:",
+        "options": {
+          "A": "n",
+          "B": "1/n",
+          "C": "n^3",
+          "D": "n^2"
+        },
+        "correct": "D",
+        "explanation": "The radius of the nth orbit in Bohr's hydrogen atom is given by r_n = (epsilon_0 h^2 n^2) / (π m e^2 Z), which shows that r_n is proportional to n^2. Correct option is (D)."
+      },
+      {
+        "q": 20,
+        "topic": "Atoms and Nuclei",
+        "question": "During a radioactive decay, an unstable nucleus emits a beta-plus particle (positron). In this process, the atomic number Z and mass number A change as:",
+        "options": {
+          "A": "Z increases by 1, A remains unchanged",
+          "B": "Z decreases by 1, A increases by 1",
+          "C": "Z decreases by 1, A remains unchanged",
+          "D": "Z decreases by 1, A decreases by 4"
+        },
+        "correct": "C",
+        "explanation": "In beta-plus decay, a proton is converted into a neutron, a positron, and a neutrino. Thus, atomic number Z decreases by 1 while mass number A remains unchanged. Correct option is (C)."
+      },
+      {
+        "q": 21,
+        "topic": "Electronic Devices",
+        "question": "In a pure semiconductor at absolute zero temperature, the valence band is:",
+        "options": {
+          "A": "Completely empty",
+          "B": "Completely filled",
+          "C": "Partially filled",
+          "D": "Having free electrons"
+        },
+        "correct": "B",
+        "explanation": "At absolute zero temperature (0 K), a pure semiconductor acts as an ideal insulator where the valence band is completely filled and the conduction band is completely empty. Correct option is (B)."
+      },
+      {
+        "q": 22,
+        "topic": "Electronic Devices",
+        "question": "The Boolean expression for a NAND gate is:",
+        "options": {
+          "A": "Y = A + B",
+          "B": "Y = NOT(A OR B)",
+          "C": "NOT(A AND B)",
+          "D": "Y = A AND B"
+        },
+        "correct": "C",
+        "explanation": "A NAND gate is a combination of an AND gate followed by a NOT gate. Its Boolean expression is Y = NOT(A AND B), written as Y = A.B bar. Correct option is (C)."
+      },
+      {
+        "q": 23,
+        "topic": "Electronic Devices",
+        "question": "The root mean square speed of oxygen molecules at a certain temperature is v. If the temperature is doubled and oxygen gas dissociates into atomic oxygen, the new root mean square speed becomes:",
+        "options": {
+          "A": "v",
+          "B": "2v",
+          "C": "√2 v",
+          "D": "4v"
+        },
+        "correct": "B",
+        "explanation": "Root mean square speed is v = sqrt(3RT / M). When temperature is doubled (2T) and oxygen dissociates into atoms (M becomes M/2), the new rms speed is v' = sqrt(3 R (2T) / (M/2)) = sqrt(4 * 3RT/M) = 2v. Correct option is (B)."
+      },
+      {
+        "q": 24,
+        "topic": "Thermodynamics",
+        "question": "The efficiency of a Carnot engine operating between temperatures 500 K and 300 K is:",
+        "options": {
+          "A": "20%",
+          "B": "40%",
+          "C": "50%",
+          "D": "30%"
+        },
+        "correct": "B",
+        "explanation": "Carnot efficiency η = 1 - (T_2 / T_1) = 1 - (300 / 500) = 1 - 0.6 = 0.4 or 40%. Correct option is (B)."
+      },
+      {
+        "q": 25,
+        "topic": "Work, Energy and Power",
+        "question": "The pressure P of an ideal gas is related to its average kinetic energy per unit volume E by the relation:",
+        "options": {
+          "A": "P = (1/3) E",
+          "B": "P = E",
+          "C": "P = (2/3) E",
+          "D": "P = (3/2) E"
+        },
+        "correct": "C",
+        "explanation": "Pressure of an ideal gas is P = (1/3) ρ c^2 = (2/3) * [(1/2) ρ c^2] = (2/3) * E, where E is the kinetic energy per unit volume. Correct option is (C)."
+      },
+      {
+        "q": 26,
+        "topic": "Oscillations and Waves",
+        "question": "For a simple harmonic oscillator, the total mechanical energy is proportional to:",
+        "options": {
+          "A": "Frequency squared",
+          "B": "Square root of amplitude",
+          "C": "Amplitude",
+          "D": "Square of amplitude"
+        },
+        "correct": "D",
+        "explanation": "The total energy of a simple harmonic oscillator is given by E = (1/2) m ω^2 A^2, which is directly proportional to the square of the amplitude A. Correct option is (D)."
+      },
+      {
+        "q": 27,
+        "topic": "Kinematics",
+        "question": "The velocity of sound in an ideal gas is directly proportional to:",
+        "options": {
+          "A": "Square root of absolute temperature",
+          "B": "Absolute temperature",
+          "C": "Density",
+          "D": "Pressure"
+        },
+        "correct": "A",
+        "explanation": "The velocity of sound in a gas is given by v = sqrt(γRT / M), which shows that speed is directly proportional to the square root of the absolute temperature T. Correct option is (A)."
+      },
+      {
+        "q": 28,
+        "topic": "Properties of Solids and Liquids",
+        "question": "The excess pressure inside a spherical soap bubble of radius R and surface tension T is given by:",
+        "options": {
+          "A": "3T / R",
+          "B": "4T / R",
+          "C": "2T / R",
+          "D": "T / R"
+        },
+        "correct": "B",
+        "explanation": "A soap bubble has two free surfaces (inner and outer). Therefore, the excess pressure inside a soap bubble is P = 4T / R. Correct option is (B)."
+      },
+      {
+        "q": 29,
+        "topic": "Properties of Solids and Liquids",
+        "question": "Stokes' law gives the viscous drag force F acting on a small sphere of radius r moving with velocity v in a fluid of viscosity η as:",
+        "options": {
+          "A": "F = 6 π η r^2 v",
+          "B": "F = 6 π η r v",
+          "C": "F = 4 π η r v",
+          "D": "F = π η r v"
+        },
+        "correct": "B",
+        "explanation": "Stokes' law states that the viscous drag force on a spherical body is F = 6 π η r v. Correct option is (B)."
+      },
+      {
+        "q": 30,
+        "topic": "Thermodynamics",
+        "question": "The latent heat of vaporization of a substance is the amount of heat required to change:",
+        "options": {
+          "A": "Unit mass of solid directly to gas",
+          "B": "Unit mass of solid to liquid at melting point",
+          "C": "Temperature of liquid by 1 degree Celsius",
+          "D": "Unit mass of liquid to vapor at boiling point"
+        },
+        "correct": "D",
+        "explanation": "Latent heat of vaporization is defined as the heat energy needed to convert a unit mass of liquid into gas at its boiling point without change in temperature. Correct option is (D)."
+      },
+      {
+        "q": 31,
+        "topic": "Oscillations and Waves",
+        "question": "When a progressive wave travels from one medium to another, which of the following properties does not change?",
+        "options": {
+          "A": "Amplitude",
+          "B": "Speed",
+          "C": "Wavelength",
+          "D": "Frequency"
+        },
+        "correct": "D",
+        "explanation": "Frequency is a characteristic of the wave source and remains unchanged when a wave passes from one medium into another. Correct option is (D)."
+      },
+      {
+        "q": 32,
+        "topic": "Oscillations and Waves",
+        "question": "The fundamental frequency of a closed organ pipe of length L is:",
+        "options": {
+          "A": "2v / L",
+          "B": "v / L",
+          "C": "v / (2L)",
+          "D": "v / (4L)"
+        },
+        "correct": "D",
+        "explanation": "A closed organ pipe has a node at the closed end and an antinode at the open end, giving a fundamental wavelength λ = 4L. Thus, fundamental frequency is f = v / (4L). Correct option is (D)."
+      },
+      {
+        "q": 33,
+        "topic": "Oscillations and Waves",
+        "question": "Two simple harmonic motions of same frequency and amplitude are acting at right angles with a phase difference of pi/2 radians. The resultant path is:",
+        "options": {
+          "A": "A straight line",
+          "B": "An ellipse",
+          "C": "A parabola",
+          "D": "A circle"
+        },
+        "correct": "D",
+        "explanation": "When two perpendicular SHMs of equal amplitude and frequency have a phase difference of π/2 radians (90 degrees), the resulting path is a circle. Correct option is (D)."
+      },
+      {
+        "q": 34,
+        "topic": "Gravitation",
+        "question": "The orbital velocity of a satellite very close to the surface of the Earth of radius R is given by:",
+        "options": {
+          "A": "sqrt(g R)",
+          "B": "g R",
+          "C": "2 g R",
+          "D": "sqrt(2 g R)"
+        },
+        "correct": "A",
+        "explanation": "Orbital velocity v_o = sqrt(GM / R). Since GM = g R^2, v_o = sqrt(g R). Correct option is (A)."
+      },
+      {
+        "q": 35,
+        "topic": "Properties of Solids and Liquids",
+        "question": "The stress-strain graph for a metal wire follows Hooke's law up to:",
+        "options": {
+          "A": "Ultimate tensile strength",
+          "B": "Yield point",
+          "C": "Proportional limit",
+          "D": "Breaking point"
+        },
+        "correct": "C",
+        "explanation": "Hooke's law (stress is directly proportional to strain) holds true up to the proportional limit of the material. Correct option is (C)."
+      },
+      {
+        "q": 36,
+        "topic": "Properties of Solids and Liquids",
+        "question": "The work done in blowing a soap bubble of radius R with surface tension T is proportional to:",
+        "options": {
+          "A": "R^2",
+          "B": "R^3",
+          "C": "R",
+          "D": "R^1/2"
+        },
+        "correct": "A",
+        "explanation": "Work done in blowing a soap bubble is equal to surface tension multiplied by the change in surface area (accounting for two surfaces): W = T * 2 * (4 π R^2), which is proportional to R^2. Correct option is (A)."
+      },
+      {
+        "q": 37,
+        "topic": "Properties of Solids and Liquids",
+        "question": "A spherical drop of water has radius R. If it splits into 8 identical droplets, the work done in the process is: (T is surface tension)",
+        "options": {
+          "A": "π R^2 T",
+          "B": "2 π R^2 T",
+          "C": "8 π R^2 T",
+          "D": "4 π R^2 T"
+        },
+        "correct": "D",
+        "explanation": "Volume conservation gives r = R / 2. Initial surface area = 4 π R^2. Final surface area of 8 droplets = 8 * 4 π (R/2)^2 = 2 * 4 π R^2 = 8 π R^2. Increase in surface area = 4 π R^2. Work done W = T * ΔA = 4 π R^2 T. Correct option is (D)."
+      },
+      {
+        "q": 38,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "The angle of dip at the magnetic equator of the Earth is:",
+        "options": {
+          "A": "0 degrees",
+          "B": "45 degrees",
+          "C": "180 degrees",
+          "D": "90 degrees"
+        },
+        "correct": "A",
+        "explanation": "At the magnetic equator, the magnetic lines of force are parallel to the Earth's surface, making the angle of dip equal to 0 degrees. Correct option is (A)."
+      },
+      {
+        "q": 39,
+        "topic": "Magnetic Effects of Current and Magnetism",
+        "question": "The self-inductance of a coil depends upon:",
+        "options": {
+          "A": "Geometry of the coil and core material",
+          "B": "Current flowing through it",
+          "C": "Induced emf",
+          "D": "Rate of change of current"
+        },
+        "correct": "A",
+        "explanation": "Self-inductance depends strictly on geometrical factors such as number of turns, area, length, and the magnetic permeability of the core material. Correct option is (A)."
+      },
+      {
+        "q": 40,
+        "topic": "Electromagnetic Induction and Alternating Currents",
+        "question": "In an ac circuit containing only a pure inductor, the alternating current lags behind the alternating voltage by a phase angle of:",
+        "options": {
+          "A": "π / 4 radians",
+          "B": "π / 2 radians",
+          "C": "π radians",
+          "D": "0 radians"
+        },
+        "correct": "B",
+        "explanation": "In a pure inductive circuit, current lags behind voltage by a phase angle of π/2 radians (90 degrees). Correct option is (B)."
+      },
+      {
+        "q": 41,
+        "topic": "Optics",
+        "question": "The focal length of a convex lens is f in air. When it is immersed in water (refractive index 4/3), its focal length becomes (refractive index of glass = 3/2):",
+        "options": {
+          "A": "f / 2",
+          "B": "4f",
+          "C": "2f",
+          "D": "3f"
+        },
+        "correct": "B",
+        "explanation": "Using lens maker's formula: (1/f_air) = (n_g - 1)(1/R_1 - 1/R_2) = (1/2)(...); (1/f_water) = ((n_g / n_w) - 1) (1/R_1 - 1/R_2) = ((3/2 / 4/3) - 1)(...) = (9/8 - 1)(...) = (1/8)(...). Thus f_water / f_air = 4 => f_water = 4f. Correct option is (B)."
+      },
+      {
+        "q": 42,
+        "topic": "Work, Energy and Power",
+        "question": "The resolving power of a microscope can be increased by:",
+        "options": {
+          "A": "Decreasing the numerical aperture",
+          "B": "Decreasing the wavelength of light",
+          "C": "Increasing the focal length of objective",
+          "D": "Increasing the wavelength of light"
+        },
+        "correct": "B",
+        "explanation": "Resolving power of a microscope is given by RP = (2 n sin θ) / λ. Decreasing the wavelength λ increases the resolving power. Correct option is (B)."
+      },
+      {
+        "q": 43,
+        "topic": "Dual Nature of Matter and Radiation",
+        "question": "The de Broglie wavelength of an electron accelerated through a potential difference of V volts is approximately given by (λ in Angstroms):",
+        "options": {
+          "A": "12.27 / sqrt(V)",
+          "B": "sqrt(12.27 / V)",
+          "C": "12.27 / V^2",
+          "D": "12.27 / V"
+        },
+        "correct": "A",
+        "explanation": "The de Broglie wavelength of an electron is λ = 12.27 / sqrt(V) Angstroms. Correct option is (A)."
+      },
+      {
+        "q": 44,
+        "topic": "Atoms and Nuclei",
+        "question": "Binding energy per nucleon reaches a maximum around mass number A equal to:",
+        "options": {
+          "A": "56",
+          "B": "2",
+          "C": "20",
+          "D": "120"
+        },
+        "correct": "A",
+        "explanation": "The binding energy per nucleon curve peaks around mass number A = 56 (iron region), making nuclei in this range most stable. Correct option is (A)."
+      },
+      {
+        "q": 45,
+        "topic": "Electronic Devices",
+        "question": "In a forward biased p-n junction diode, the depletion layer width:",
+        "options": {
+          "A": "Becomes infinite",
+          "B": "Increases",
+          "C": "Remains unaffected",
+          "D": "Decreases"
+        },
+        "correct": "D",
+        "explanation": "When a p-n junction is forward biased, the applied voltage opposes the barrier potential, thereby narrowing the depletion layer and reducing its width. Correct option is (D)."
+      }
+    ],
+    "Chemistry": [
+      {
+        "q": 1,
+        "topic": "Biomolecules",
+        "question": "Which of the following vitamins is water-soluble?",
+        "options": {
+          "A": "Vitamin A",
+          "B": "Vitamin D",
+          "C": "Vitamin E",
+          "D": "Vitamin C"
+        },
+        "correct": "D",
+        "explanation": "Water-soluble vitamins include the B-group vitamins and Vitamin C, whereas vitamins A, D, E, and K are fat-soluble. Correct option is (D)."
+      },
+      {
+        "q": 2,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "The number of moles of water in 1 Litre of water is approximately:",
+        "options": {
+          "A": "5.55 moles",
+          "B": "55.5 moles",
+          "C": "100 moles",
+          "D": "18 moles"
+        },
+        "correct": "B",
+        "explanation": "Density of water is 1 kg/L = 1000 g/L. Moles of water = 1000 g / 18 g/mol = 55.55 mol. Correct option is (B)."
+      },
+      {
+        "q": 3,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "Which of the following expressions represents the correct relationship between pressure and density of an ideal gas at constant temperature?",
+        "options": {
+          "A": "P = d^2 * constant",
+          "B": "P^2 / d = constant",
+          "C": "P * d = constant",
+          "D": "P / d = constant"
+        },
+        "correct": "D",
+        "explanation": "From ideal gas equation P = (dRT)/M, at constant temperature T, P/d = RT/M = constant. Correct option is (D)."
+      },
+      {
+        "q": 4,
+        "topic": "Hydrocarbons",
+        "question": "The hybridization of carbon atoms in acetylene (ethyne) is:",
+        "options": {
+          "A": "sp",
+          "B": "sp^2",
+          "C": "sp^3",
+          "D": "sp^3d"
+        },
+        "correct": "A",
+        "explanation": "Ethyne (C2H2) contains a triple bond between two carbon atoms, meaning each carbon is bonded to two atoms with zero lone pairs, corresponding to sp hybridization. Correct option is (A)."
+      },
+      {
+        "q": 5,
+        "topic": "Classification of Elements and Periodicity in Properties",
+        "question": "Which of the following elements has the highest electron gain enthalpy with negative sign (maximum electron affinity)?",
+        "options": {
+          "A": "Chlorine",
+          "B": "Fluorine",
+          "C": "Iodine",
+          "D": "Bromine"
+        },
+        "correct": "A",
+        "explanation": "Chlorine has the highest negative electron gain enthalpy among all elements due to small size repulsion in fluorine. Correct option is (A)."
+      },
+      {
+        "q": 6,
+        "topic": "Some Basic Principles of Organic Chemistry",
+        "question": "The IUPAC name of the complex [Co(NH3)4(H2O)Cl]Cl2 is:",
+        "options": {
+          "A": "Tetraammineaquachlorocobalt(III) chloride",
+          "B": "Tetraamminenitritocobalt(III) chloride",
+          "C": "Tetraamminediaquacobalt(III) chloride",
+          "D": "Tetraamminedichlorocobalt(III) chloride"
+        },
+        "correct": "A",
+        "explanation": "The coordination entity contains four ammonia molecules, one water molecule, and one chloride ion as ligands, named alphabetically as tetraammineaquachlorocobalt(III), followed by the counter anion chloride. Correct option is (A)."
+      },
+      {
+        "q": 7,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "Which of the following gas laws states that the volume of a given mass of gas is directly proportional to absolute temperature at constant pressure?",
+        "options": {
+          "A": "Gay-Lussac's law",
+          "B": "Avogadro's law",
+          "C": "Charles's law",
+          "D": "Boyle's law"
+        },
+        "correct": "C",
+        "explanation": "Charles's law states that V is proportional to T at constant pressure. Correct option is (C)."
+      },
+      {
+        "q": 8,
+        "topic": "d- and f-Block Elements",
+        "question": "The oxidation state of chromium in potassium dichromate (K2Cr2O7) is:",
+        "options": {
+          "A": "+7",
+          "B": "+2",
+          "C": "+6",
+          "D": "+3"
+        },
+        "correct": "C",
+        "explanation": "Let oxidation state of Cr be x. 2(+1) + 2(x) + 7(-2) = 0 => 2 + 2x - 14 = 0 => 2x = 12 => x = +6. Correct option is (C)."
+      },
+      {
+        "q": 9,
+        "topic": "Principles Related to Practical Chemistry",
+        "question": "Which of the following polymers is biodegradable?",
+        "options": {
+          "A": "PHBV",
+          "B": "Buna-S",
+          "C": "Nylon-6,6",
+          "D": "Dacron"
+        },
+        "correct": "A",
+        "explanation": "PHBV (Polyhydroxybutyrate-co-valerate) is a biodegradable copolymer. Correct option is (A)."
+      },
+      {
+        "q": 10,
+        "topic": "Chemical Kinetics",
+        "question": "The rate constant of a first-order reaction has the unit:",
+        "options": {
+          "A": "L mol^-1 s^-1",
+          "B": "s^-1",
+          "C": "mol^2 L^-2 s^-1",
+          "D": "mol L^-1 s^-1"
+        },
+        "correct": "B",
+        "explanation": "For a first-order reaction, rate = k[A], so units of k are s^-1. Correct option is (B)."
+      },
+      {
+        "q": 11,
+        "topic": "p-Block Elements",
+        "question": "Which of the following is a Lewis acid?",
+        "options": {
+          "A": "BF3",
+          "B": "OH^-",
+          "C": "NH3",
+          "D": "H2O"
+        },
+        "correct": "A",
+        "explanation": "BF3 has an incomplete octet on boron, making it an electron pair acceptor (Lewis acid). Correct option is (A)."
+      },
+      {
+        "q": 12,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "The functional group present in carboxylic acids is:",
+        "options": {
+          "A": "-CHO",
+          "B": "-COOH",
+          "C": "-CO-",
+          "D": "-OH"
+        },
+        "correct": "B",
+        "explanation": "Carboxylic acids contain the carboxyl functional group -COOH. Correct option is (B)."
+      },
+      {
+        "q": 13,
+        "topic": "Atomic Structure",
+        "question": "Which of the following quantum numbers determines the orientation of an orbital in space?",
+        "options": {
+          "A": "Spin quantum number",
+          "B": "Principal quantum number",
+          "C": "Azimuthal quantum number",
+          "D": "Magnetic quantum number"
+        },
+        "correct": "D",
+        "explanation": "The magnetic quantum number (m) specifies the orientation of orbitals in space. Correct option is (D)."
+      },
+      {
+        "q": 14,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "The geometry of methane (CH4) molecule is:",
+        "options": {
+          "A": "Trigonal planar",
+          "B": "Octahedral",
+          "C": "Linear",
+          "D": "Tetrahedral"
+        },
+        "correct": "D",
+        "explanation": "Methane has sp^3 hybridization with four bond pairs, resulting in a tetrahedral geometry. Correct option is (D)."
+      },
+      {
+        "q": 15,
+        "topic": "Principles Related to Practical Chemistry",
+        "question": "Which of the following is an example of a thermosetting polymer?",
+        "options": {
+          "A": "Polythene",
+          "B": "Bakelite",
+          "C": "Buna-N",
+          "D": "PVC"
+        },
+        "correct": "B",
+        "explanation": "Bakelite is a cross-linked thermosetting polymer. Correct option is (B)."
+      },
+      {
+        "q": 16,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "The normality of a 0.5 M H2SO4 solution is:",
+        "options": {
+          "A": "0.5 N",
+          "B": "0.25 N",
+          "C": "2.0 N",
+          "D": "1.0 N"
+        },
+        "correct": "D",
+        "explanation": "Normality = Molarity * n-factor. For H2SO4, n-factor is 2, so Normality = 0.5 * 2 = 1.0 N. Correct option is (D)."
+      },
+      {
+        "q": 17,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "Which of the following compounds will give a positive iodoform test?",
+        "options": {
+          "A": "Ethanol",
+          "B": "Phenol",
+          "C": "Propan-1-ol",
+          "D": "Methanol"
+        },
+        "correct": "A",
+        "explanation": "Ethanol contains the CH3-CH(OH)- group, which responds positively to the iodoform test. Correct option is (A)."
+      },
+      {
+        "q": 18,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "The enolic form of acetone contains:",
+        "options": {
+          "A": "10 sigma bonds and 1 pi bond",
+          "B": "9 sigma bonds and 1 pi bond",
+          "C": "9 sigma bonds and 2 pi bonds",
+          "D": "8 sigma bonds and 2 pi bonds"
+        },
+        "correct": "B",
+        "explanation": "Enolic form of acetone is CH2=C(OH)CH3, which has 9 sigma and 1 pi bond. Correct option is (B)."
+      },
+      {
+        "q": 19,
+        "topic": "p-Block Elements",
+        "question": "Which of the following elements belongs to the halogen family?",
+        "options": {
+          "A": "Nitrogen",
+          "B": "Iodine",
+          "C": "Sulphur",
+          "D": "Oxygen"
+        },
+        "correct": "B",
+        "explanation": "Iodine is a member of group 17 (halogens). Correct option is (B)."
+      },
+      {
+        "q": 20,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "The IUPAC name of CH3-CH(OH)-CH3 is:",
+        "options": {
+          "A": "Propan-2-ol",
+          "B": "Propan-2-one",
+          "C": "Propan-1-ol",
+          "D": "Propanal"
+        },
+        "correct": "A",
+        "explanation": "The 3-carbon alcohol with hydroxyl group at carbon 2 is propan-2-ol. Correct option is (A)."
+      },
+      {
+        "q": 21,
+        "topic": "Solutions",
+        "question": "Which of the following solutions exhibits maximum boiling point elevation?",
+        "options": {
+          "A": "0.1 M Glucose",
+          "B": "0.1 M Sucrose",
+          "C": "0.1 M NaCl",
+          "D": "0.1 M Urea"
+        },
+        "correct": "C",
+        "explanation": "NaCl dissociates into 2 ions, giving the highest van't Hoff factor and largest boiling point elevation among options. Correct option is (C)."
+      },
+      {
+        "q": 22,
+        "topic": "p-Block Elements",
+        "question": "The reddish-brown gas evolved when concentrated nitric acid reacts with copper is:",
+        "options": {
+          "A": "NO2",
+          "B": "N2O5",
+          "C": "N2O",
+          "D": "NO"
+        },
+        "correct": "A",
+        "explanation": "Reaction of copper with conc. HNO3 produces nitrogen dioxide gas, which is reddish-brown. Correct option is (A)."
+      },
+      {
+        "q": 23,
+        "topic": "p-Block Elements",
+        "question": "Which of the following is an amphoteric oxide?",
+        "options": {
+          "A": "Na2O",
+          "B": "CO2",
+          "C": "Al2O3",
+          "D": "SO2"
+        },
+        "correct": "C",
+        "explanation": "Aluminum oxide (Al2O3) reacts with both acids and bases, making it amphoteric. Correct option is (C)."
+      },
+      {
+        "q": 24,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "The process of conversion of an alkyl halide into an alcohol via aqueous NaOH is an example of:",
+        "options": {
+          "A": "Substitution reaction",
+          "B": "Elimination reaction",
+          "C": "Addition reaction",
+          "D": "Rearrangement reaction"
+        },
+        "correct": "A",
+        "explanation": "Hydrolysis of alkyl halides is a nucleophilic substitution reaction. Correct option is (A)."
+      },
+      {
+        "q": 25,
+        "topic": "Solutions",
+        "question": "Which of the following is a colligative property?",
+        "options": {
+          "A": "Viscosity",
+          "B": "Osmotic pressure",
+          "C": "Refractive index",
+          "D": "Surface tension"
+        },
+        "correct": "B",
+        "explanation": "Osmotic pressure is a colligative property depending on solute particle concentration. Correct option is (B)."
+      },
+      {
+        "q": 26,
+        "topic": "Hydrocarbons",
+        "question": "The most stable conformation of cyclohexane is:",
+        "options": {
+          "A": "Boat conformation",
+          "B": "Twist-boat conformation",
+          "C": "Half-chair conformation",
+          "D": "Chair conformation"
+        },
+        "correct": "D",
+        "explanation": "Chair conformation has minimum angle and torsional strain, making it the most stable. Correct option is (D)."
+      },
+      {
+        "q": 27,
+        "topic": "d- and f-Block Elements",
+        "question": "Which of the following metals is extracted by carbon reduction of its oxide?",
+        "options": {
+          "A": "Magnesium",
+          "B": "Aluminum",
+          "C": "Sodium",
+          "D": "Zinc"
+        },
+        "correct": "D",
+        "explanation": "Zinc is moderately reactive and extracted by smelting its oxide with carbon. Correct option is (D)."
+      },
+      {
+        "q": 28,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "The bond order of oxygen molecule (O2) according to molecular orbital theory is:",
+        "options": {
+          "A": "3",
+          "B": "2",
+          "C": "1",
+          "D": "2.5"
+        },
+        "correct": "B",
+        "explanation": "O2 has 16 electrons; bond order = (10 - 6)/2 = 2. Correct option is (B)."
+      },
+      {
+        "q": 29,
+        "topic": "Principles Related to Practical Chemistry",
+        "question": "Which of the following gases is responsible for global warming to the maximum extent?",
+        "options": {
+          "A": "Nitrous oxide",
+          "B": "Water vapour",
+          "C": "Carbon dioxide",
+          "D": "Methane"
+        },
+        "correct": "C",
+        "explanation": "Carbon dioxide contributes the maximum to global warming among greenhouse gases. Correct option is (C)."
+      },
+      {
+        "q": 30,
+        "topic": "Hydrocarbons",
+        "question": "The catalyst used in the hydrogenation of alkenes is typically:",
+        "options": {
+          "A": "Copper",
+          "B": "Nickel",
+          "C": "Manganese",
+          "D": "Iron"
+        },
+        "correct": "B",
+        "explanation": "Finely divided nickel, palladium, or platinum are used as catalysts for hydrogenation. Correct option is (B)."
+      },
+      {
+        "q": 31,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "Which of the following species has a zero dipole moment?",
+        "options": {
+          "A": "BF3",
+          "B": "H2O",
+          "C": "NH3",
+          "D": "CHCl3"
+        },
+        "correct": "A",
+        "explanation": "BF3 has a symmetrical trigonal planar geometry where bond dipoles cancel out. Correct option is (A)."
+      },
+      {
+        "q": 32,
+        "topic": "Hydrocarbons",
+        "question": "The number of sigma and pi bonds in an acetylene molecule (C2H2) are:",
+        "options": {
+          "A": "2 sigma and 3 pi bonds",
+          "B": "3 sigma and 1 pi bond",
+          "C": "4 sigma and 1 pi bond",
+          "D": "3 sigma and 2 pi bonds"
+        },
+        "correct": "D",
+        "explanation": "Ethyne has 1 C-C sigma bond, 2 C-H sigma bonds, and 2 pi bonds. Correct option is (D)."
+      },
+      {
+        "q": 33,
+        "topic": "Principles Related to Practical Chemistry",
+        "question": "Which of the following is an example of a condensation polymer?",
+        "options": {
+          "A": "Buna-S",
+          "B": "Nylon-6,6",
+          "C": "Neoprene",
+          "D": "Polythene"
+        },
+        "correct": "B",
+        "explanation": "Nylon-6,6 is formed by condensation polymerization of hexamethylenediamine and adipic acid. Correct option is (B)."
+      },
+      {
+        "q": 34,
+        "topic": "Equilibrium",
+        "question": "The pH of a 10^-8 M HCl aqueous solution is approximately:",
+        "options": {
+          "A": "Slightly less than 7",
+          "B": "8.0",
+          "C": "7.0",
+          "D": "6.0"
+        },
+        "correct": "A",
+        "explanation": "Due to contribution from water autoionization, the pH of very dilute acid 10^-8 M HCl is slightly acidic, i.e., slightly less than 7. Correct option is (A)."
+      },
+      {
+        "q": 35,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "Which of the following compounds does not undergo Cannizzaro reaction?",
+        "options": {
+          "A": "2,2-Dimethylpropanal",
+          "B": "Benzaldehyde",
+          "C": "Formaldehyde",
+          "D": "Acetaldehyde"
+        },
+        "correct": "D",
+        "explanation": "Acetaldehyde possesses alpha-hydrogen atoms, so it undergoes aldol condensation instead of Cannizzaro reaction. Correct option is (D)."
+      },
+      {
+        "q": 36,
+        "topic": "d- and f-Block Elements",
+        "question": "The electronic configuration of transition element with atomic number 24 (Chromium) is:",
+        "options": {
+          "A": "[Ar] 3d^3 4s^3",
+          "B": "[Ar] 3d^4 4s^2",
+          "C": "[Ar] 3d^5 4s^1",
+          "D": "[Ar] 3d^6 4s^0"
+        },
+        "correct": "C",
+        "explanation": "Chromium exhibits half-filled stability with configuration [Ar] 3d^5 4s^1. Correct option is (C)."
+      },
+      {
+        "q": 37,
+        "topic": "Principles Related to Practical Chemistry",
+        "question": "Which of the following represents soap?",
+        "options": {
+          "A": "Magnesium oleate",
+          "B": "Calcium stearate",
+          "C": "Sodium stearate",
+          "D": "Sodium palmitate"
+        },
+        "correct": "C",
+        "explanation": "Soaps are sodium or potassium salts of long-chain fatty acids like sodium stearate. Correct option is (C)."
+      },
+      {
+        "q": 38,
+        "topic": "Redox Reactions and Electrochemistry",
+        "question": "The standard electrode potential of standard hydrogen electrode is arbitrarily fixed at:",
+        "options": {
+          "A": "0.00 V",
+          "B": "-1.00 V",
+          "C": "+1.00 V",
+          "D": "+1.42 V"
+        },
+        "correct": "A",
+        "explanation": "Standard hydrogen electrode potential is defined as exactly zero volts. Correct option is (A)."
+      },
+      {
+        "q": 39,
+        "topic": "Biomolecules",
+        "question": "Which of the following vitamins deficiency causes scurvy?",
+        "options": {
+          "A": "Vitamin A",
+          "B": "Vitamin D",
+          "C": "Vitamin C",
+          "D": "Vitamin B1"
+        },
+        "correct": "C",
+        "explanation": "Scurvy is caused by a deficiency of Vitamin C (ascorbic acid). Correct option is (C)."
+      },
+      {
+        "q": 40,
+        "topic": "Chemical Bonding and Molecular Structure",
+        "question": "The hybridization of sulfur in SF6 is:",
+        "options": {
+          "A": "sp^3d",
+          "B": "sp^3",
+          "C": "sp^3d^3",
+          "D": "sp^3d^2"
+        },
+        "correct": "D",
+        "explanation": "Sulfur in SF6 forms 6 single bonds with no lone pairs, corresponding to sp^3d^2 hybridization. Correct option is (D)."
+      },
+      {
+        "q": 41,
+        "topic": "Organic Compounds Containing Nitrogen",
+        "question": "Which of the following is a primary amine?",
+        "options": {
+          "A": "Tetramethylammonium chloride",
+          "B": "Ethylamine",
+          "C": "Triethylamine",
+          "D": "Diethylamine"
+        },
+        "correct": "B",
+        "explanation": "Ethylamine (CH3CH2NH2) has one alkyl group attached to nitrogen, making it a primary amine. Correct option is (B)."
+      },
+      {
+        "q": 42,
+        "topic": "Organic Compounds Containing Oxygen",
+        "question": "The IUPAC name of acetone is:",
+        "options": {
+          "A": "Propan-2-ol",
+          "B": "Propanal",
+          "C": "Propan-2-one",
+          "D": "Propan-1-one"
+        },
+        "correct": "C",
+        "explanation": "Acetone has 3 carbons with a carbonyl group at carbon 2, named propan-2-one. Correct option is (C)."
+      },
+      {
+        "q": 43,
+        "topic": "d- and f-Block Elements",
+        "question": "Which of the following elements shows maximum oxidation state of +7?",
+        "options": {
+          "A": "Iron",
+          "B": "Chromium",
+          "C": "Manganese",
+          "D": "Cobalt"
+        },
+        "correct": "C",
+        "explanation": "Manganese exhibits oxidation states from +2 up to +7 in compounds like KMnO4. Correct option is (C)."
+      },
+      {
+        "q": 44,
+        "topic": "p-Block Elements",
+        "question": "The catalyst used in contact process for manufacture of sulfuric acid is:",
+        "options": {
+          "A": "Fe",
+          "B": "Pt (older/general)",
+          "C": "MnO2",
+          "D": "V2O5"
+        },
+        "correct": "D",
+        "explanation": "Vanadium pentoxide (V2O5) is the standard catalyst used in the Contact process. Correct option is (D)."
+      },
+      {
+        "q": 45,
+        "topic": "Some Basic Concepts in Chemistry",
+        "question": "Which of the following statements is correct regarding order and molecularity of a reaction?",
+        "options": {
+          "A": "Order and molecularity are always the same.",
+          "B": "Order is a theoretical quantity, molecularity is experimental.",
+          "C": "Order can be fractional, but molecularity cannot be fractional.",
+          "D": "Molecularity can be zero, but order cannot be zero."
+        },
+        "correct": "C",
+        "explanation": "Order is an experimental quantity that can be fractional or zero, whereas molecularity is a theoretical count of colliding species and must be a positive integer. Correct option is (C)."
+      }
+    ],
+    "Botany": [
+      {
+        "q": 1,
+        "topic": "Reproduction",
+        "question": "Which of the following cell organelles is responsible for the formation of acrosome in sperm?",
+        "options": {
+          "A": "Golgi apparatus",
+          "B": "Lysosome",
+          "C": "Ribosome",
+          "D": "Endoplasmic reticulum"
+        },
+        "correct": "A",
+        "explanation": "The Golgi apparatus plays a major role in the formation of the acrosome of sperms during spermatogenesis. Correct option is (A)."
+      },
+      {
+        "q": 2,
+        "topic": "Structural Organisation in Animals and Plants",
+        "question": "The Casparian strip of endodermis is composed of a waxy material known as:",
+        "options": {
+          "A": "Suberin",
+          "B": "Pectin",
+          "C": "Cutin",
+          "D": "Lignin"
+        },
+        "correct": "A",
+        "explanation": "The tangential and radial walls of the endodermal cells have a deposition of water-impermeable waxy material called suberin, forming the Casparian strip. Correct option is (A)."
+      },
+      {
+        "q": 3,
+        "topic": "Plant Physiology",
+        "question": "In C4 plants, the primary carbon dioxide acceptor is:",
+        "options": {
+          "A": "PGA",
+          "B": "Ribulose bisphosphate (RuBP)",
+          "C": "Oxaloacetic acid (OAA)",
+          "D": "Phosphoenolpyruvate (PEP)"
+        },
+        "correct": "D",
+        "explanation": "In C4 pathway, the primary CO2 acceptor is a 3-carbon molecule, phosphoenolpyruvate (PEP), located in the mesophyll cells. Correct option is (D)."
+      },
+      {
+        "q": 4,
+        "topic": "Cell Structure and Function",
+        "question": "Which of the following stages of meiosis involves the dissolution of the synaptonemal complex and tendency of homologous chromosomes to separate?",
+        "options": {
+          "A": "Zygotene",
+          "B": "Pachytene",
+          "C": "Leptotene",
+          "D": "Diplotene"
+        },
+        "correct": "D",
+        "explanation": "During diplotene, the synaptonemal complex dissolves and the recombined homologous chromosomes tend to separate from each other except at the sites of crossovers (chiasmata). Correct option is (D)."
+      },
+      {
+        "q": 5,
+        "topic": "Reproduction",
+        "question": "The microsporangium in angiosperms is generally surrounded by four wall layers. Which of the following is the innermost wall layer that nourishes the developing pollen grains?",
+        "options": {
+          "A": "Endothecium",
+          "B": "Epidermis",
+          "C": "Tapetum",
+          "D": "Middle layers"
+        },
+        "correct": "C",
+        "explanation": "The tapetum is the innermost wall layer of the microsporangium, providing nourishment to the developing pollen grains. Correct option is (C)."
+      },
+      {
+        "q": 6,
+        "topic": "Plant Physiology",
+        "question": "Which of the following plant growth regulators is a gaseous hormone that promotes fruit ripening?",
+        "options": {
+          "A": "Abscisic acid",
+          "B": "Gibberellin",
+          "C": "Ethylene",
+          "D": "Cytokinin"
+        },
+        "correct": "C",
+        "explanation": "Ethylene is a simple gaseous plant hormone that stimulates senescence and ripening of fruits. Correct option is (C)."
+      },
+      {
+        "q": 7,
+        "topic": "Plant Physiology",
+        "question": "Water potential of a pure water solution at standard temperature and pressure is equal to:",
+        "options": {
+          "A": "Negative value",
+          "B": "Zero",
+          "C": "One",
+          "D": "Positive value"
+        },
+        "correct": "B",
+        "explanation": "By convention, the water potential of pure water at standard temperatures, under no external pressure, is taken to be zero. Correct option is (B)."
+      },
+      {
+        "q": 8,
+        "topic": "Plant Physiology",
+        "question": "Which of the following is a free-living nitrogen-fixing aerobic bacterium found in soil?",
+        "options": {
+          "A": "Anabaena",
+          "B": "Azotobacter",
+          "C": "Frankia",
+          "D": "Rhizobium"
+        },
+        "correct": "B",
+        "explanation": "Azotobacter and Beijerinckia are free-living aerobic nitrogen-fixing bacteria, whereas Rhizobium is symbiotic. Correct option is (B)."
+      },
+      {
+        "q": 9,
+        "topic": "Genetics and Evolution",
+        "question": "The functional unit of inheritance in living organisms is:",
+        "options": {
+          "A": "Chromosome",
+          "B": "Gene",
+          "C": "Genome",
+          "D": "Nucleotide"
+        },
+        "correct": "B",
+        "explanation": "A gene is defined as the functional unit of heredity and DNA inheritance. Correct option is (B)."
+      },
+      {
+        "q": 10,
+        "topic": "Cell Structure and Function",
+        "question": "In which phase of the cell cycle does DNA replication take place?",
+        "options": {
+          "A": "G1 phase",
+          "B": "M phase",
+          "C": "G2 phase",
+          "D": "S phase"
+        },
+        "correct": "D",
+        "explanation": "DNA replication and chromosome duplication occur strictly during the S phase (Synthesis phase) of interphase. Correct option is (D)."
+      },
+      {
+        "q": 11,
+        "topic": "Reproduction",
+        "question": "Which of the following algae contains chlorophyll a and chlorophyll c as major photosynthetic pigments, along with fucoxanthin?",
+        "options": {
+          "A": "Chlorophyceae (Green algae)",
+          "B": "Cyanobacteria",
+          "C": "Phaeophyceae (Brown algae)",
+          "D": "Rhodophyceae (Red algae)"
+        },
+        "correct": "C",
+        "explanation": "Brown algae (Phaeophyceae) possess chlorophyll a, c, and carotenoids/fucoxanthin which impart brown coloration. Correct option is (C)."
+      },
+      {
+        "q": 12,
+        "topic": "Genetics and Evolution",
+        "question": "The phenomenon where a single gene exhibits multiple phenotypic expressions is called:",
+        "options": {
+          "A": "Epistasis",
+          "B": "Codominance",
+          "C": "Polygenic inheritance",
+          "D": "Pleiotropy"
+        },
+        "correct": "D",
+        "explanation": "Pleiotropy occurs when a single gene influences multiple unrelated phenotypic traits. Correct option is (D)."
+      },
+      {
+        "q": 13,
+        "topic": "Reproduction",
+        "question": "Double fertilization is a unique event characteristic of:",
+        "options": {
+          "A": "Pteridophytes",
+          "B": "Bryophytes",
+          "C": "Angiosperms",
+          "D": "Gymnosperms"
+        },
+        "correct": "C",
+        "explanation": "Double fertilization involving syngamy and triple fusion is an exclusive feature of flowering plants (angiosperms). Correct option is (C)."
+      },
+      {
+        "q": 14,
+        "topic": "Plant Physiology",
+        "question": "Which of the following micronutrients is essential for the photolysis of water during photosynthesis?",
+        "options": {
+          "A": "Zinc",
+          "B": "Molybdenum",
+          "C": "Manganese",
+          "D": "Magnesium"
+        },
+        "correct": "C",
+        "explanation": "Manganese, along with chlorine and calcium, plays a vital role in the oxygen-evolving complex and water splitting during light reactions. Correct option is (C)."
+      },
+      {
+        "q": 15,
+        "topic": "Genetics and Evolution",
+        "question": "A tall pea plant crossed with a dwarf pea plant yielded 50% tall and 50% dwarf offspring in the test cross. This indicates that the tall parent plant was:",
+        "options": {
+          "A": "Heterozygous",
+          "B": "Homozygous recessive",
+          "C": "Homozygous dominant",
+          "D": "Hemizygous"
+        },
+        "correct": "A",
+        "explanation": "A 1:1 phenotypic ratio in a test cross indicates that the dominant parent is heterozygous. Correct option is (A)."
+      },
+      {
+        "q": 16,
+        "topic": "Biotechnology and its Applications",
+        "question": "The restriction enzyme EcoRI isolated from Escherichia coli cuts DNA by recognizing which specific palindromic sequence?",
+        "options": {
+          "A": "5'-GAATCC-3'",
+          "B": "5'-GGCC-3'",
+          "C": "5'-GAATTC-3'",
+          "D": "5'-AAGCTT-3'"
+        },
+        "correct": "C",
+        "explanation": "EcoRI specifically recognizes the palindromic sequence 5'-GAATTC-3' and cuts between G and A. Correct option is (C)."
+      },
+      {
+        "q": 17,
+        "topic": "Diversity in the Living World",
+        "question": "Which of the following gymnosperms resembles a palm?",
+        "options": {
+          "A": "Cedrus",
+          "B": "Cycas",
+          "C": "Pinus",
+          "D": "Ginkgo"
+        },
+        "correct": "B",
+        "explanation": "Cycas is a gymnosperm with palm-like unbranched stems and pinnate leaves. Correct option is (B)."
+      },
+      {
+        "q": 18,
+        "topic": "Reproduction",
+        "question": "The transfer of pollen grains from the anther to the stigma of another flower of the same plant is technically called:",
+        "options": {
+          "A": "Geitonogamy",
+          "B": "Cleistogamy",
+          "C": "Xenogamy",
+          "D": "Autogamy"
+        },
+        "correct": "A",
+        "explanation": "Geitonogamy is functionally cross-pollination involving a pollinating agent, but genetically similar to autogamy as it occurs on the same plant. Correct option is (A)."
+      },
+      {
+        "q": 19,
+        "topic": "Plant Physiology",
+        "question": "During glycolysis, the conversion of 1,3-bisphosphoglycerate to 3-phosphoglycerate is accompanied by the formation of:",
+        "options": {
+          "A": "ATP",
+          "B": "NADH",
+          "C": "CO2",
+          "D": "FADH2"
+        },
+        "correct": "A",
+        "explanation": "This step is a substrate-level phosphorylation where high-energy phosphate is transferred to ADP to form ATP. Correct option is (A)."
+      },
+      {
+        "q": 20,
+        "topic": "Plant Physiology",
+        "question": "Which of the following is considered the primary precursor for the biosynthesis of indole-3-acetic acid (IAA) in plants?",
+        "options": {
+          "A": "Tyrosine",
+          "B": "Phenylalanine",
+          "C": "Methionine",
+          "D": "Tryptophan"
+        },
+        "correct": "D",
+        "explanation": "Tryptophan is the primary amino acid precursor for natural auxin (IAA) biosynthesis in plants. Correct option is (D)."
+      },
+      {
+        "q": 21,
+        "topic": "Genetics and Evolution",
+        "question": "The genetic material of tobacco mosaic virus (TMV) is:",
+        "options": {
+          "A": "Single-stranded RNA",
+          "B": "Single-stranded DNA",
+          "C": "Double-stranded RNA",
+          "D": "Double-stranded DNA"
+        },
+        "correct": "A",
+        "explanation": "TMV is a well-known plant virus containing a single-stranded RNA genome encapsulated in a protein coat. Correct option is (A)."
+      },
+      {
+        "q": 22,
+        "topic": "Genetics and Evolution",
+        "question": "In lac operon model, the i gene codes for which of the following proteins?",
+        "options": {
+          "A": "Beta-galactosidase",
+          "B": "Transacetylase",
+          "C": "Permease",
+          "D": "Repressor protein"
+        },
+        "correct": "D",
+        "explanation": "The regulatory gene 'i' codes for the repressor protein that binds to the operator region. Correct option is (D)."
+      },
+      {
+        "q": 23,
+        "topic": "Structural Organisation in Animals and Plants",
+        "question": "Which of the following tissues provides maximum mechanical support to young dicotyledonous stems and petioles?",
+        "options": {
+          "A": "Sclerenchyma",
+          "B": "Collenchyma",
+          "C": "Xylem vessels",
+          "D": "Parenchyma"
+        },
+        "correct": "B",
+        "explanation": "Collenchyma provides mechanical support and elasticity to growing organs like young stems and petioles. Correct option is (B)."
+      },
+      {
+        "q": 24,
+        "topic": "Diversity in the Living World",
+        "question": "The taxonomic category 'Family' comes in between which of the following taxonomic ranks?",
+        "options": {
+          "A": "Order and Genus",
+          "B": "Species and Genus",
+          "C": "Kingdom and Division",
+          "D": "Class and Order"
+        },
+        "correct": "A",
+        "explanation": "In the hierarchical classification, family is placed between order and genus. Correct option is (A)."
+      },
+      {
+        "q": 25,
+        "topic": "Genetics and Evolution",
+        "question": "Which of the following enzymes is responsible for joining Okazaki fragments on the lagging strand during DNA replication?",
+        "options": {
+          "A": "RNA primase",
+          "B": "DNA ligase",
+          "C": "DNA polymerase I",
+          "D": "Helicase"
+        },
+        "correct": "B",
+        "explanation": "DNA ligase catalyses the formation of phosphodiester bonds to join Okazaki fragments into a continuous strand. Correct option is (B)."
+      },
+      {
+        "q": 26,
+        "topic": "Plant Physiology",
+        "question": "The site of aerobic respiration and ATP synthesis in eukaryotic plant cells is:",
+        "options": {
+          "A": "Mitochondria",
+          "B": "Ribosome",
+          "C": "Peroxisome",
+          "D": "Chloroplast"
+        },
+        "correct": "A",
+        "explanation": "Mitochondria are the primary sites for cellular respiration, Krebs cycle, and oxidative phosphorylation yielding ATP. Correct option is (A)."
+      },
+      {
+        "q": 27,
+        "topic": "Diversity in the Living World",
+        "question": "Which of the following algae is commonly used as a protein-rich food supplement by space travellers?",
+        "options": {
+          "A": "Chlamydomonas",
+          "B": "Spirulina",
+          "C": "Ulothrix",
+          "D": "Volvox"
+        },
+        "correct": "B",
+        "explanation": "Spirulina (a blue-green alga/cyanobacterium) and Chlorella are rich in proteins and used as space food supplements. Correct option is (B)."
+      },
+      {
+        "q": 28,
+        "topic": "Plant Physiology",
+        "question": "The phenomenon of apical dominance in plants is primarily regulated by which hormone?",
+        "options": {
+          "A": "Cytokinin",
+          "B": "Ethylene",
+          "C": "Auxin",
+          "D": "Gibberellin"
+        },
+        "correct": "C",
+        "explanation": "Auxin synthesized in the shoot apex inhibits the growth of lateral axillary buds, causing apical dominance. Correct option is (C)."
+      },
+      {
+        "q": 29,
+        "topic": "Reproduction",
+        "question": "Which of the following is an example of an endospermic (albuminous) seed?",
+        "options": {
+          "A": "Gram",
+          "B": "Castor",
+          "C": "Pea",
+          "D": "Bean"
+        },
+        "correct": "B",
+        "explanation": "Castor, wheat, maize, and sunflower are endospermic seeds where endosperm is retained in mature seeds. Correct option is (B)."
+      },
+      {
+        "q": 30,
+        "topic": "Cell Structure and Function",
+        "question": "The structure that connects two adjacent plant cells and allows cytoplasmic streaming and transport of molecules is:",
+        "options": {
+          "A": "Middle lamella",
+          "B": "Desmosome",
+          "C": "Tight junction",
+          "D": "Plasmodesmata"
+        },
+        "correct": "D",
+        "explanation": "Plasmodesmata are microscopic cytoplasmic channels passing through cell walls of plant cells. Correct option is (D)."
+      },
+      {
+        "q": 31,
+        "topic": "Genetics and Evolution",
+        "question": "Which of the following codons serves as both the initiation codon and codes for methionine?",
+        "options": {
+          "A": "AUG",
+          "B": "UGA",
+          "C": "UAG",
+          "D": "UAA"
+        },
+        "correct": "A",
+        "explanation": "AUG acts as the start codon for protein synthesis in eukaryotes and prokaryotes and specifies amino acid methionine. Correct option is (A)."
+      },
+      {
+        "q": 32,
+        "topic": "Cell Structure and Function",
+        "question": "The pressure exerted by the protoplast against the plant cell wall due to osmotic uptake of water is called:",
+        "options": {
+          "A": "Diffusion pressure deficit",
+          "B": "Osmotic pressure",
+          "C": "Wall pressure",
+          "D": "Turgor pressure"
+        },
+        "correct": "D",
+        "explanation": "Turgor pressure is the hydrostatic pressure developed inside the cell pressing outward against the cell wall. Correct option is (D)."
+      },
+      {
+        "q": 33,
+        "topic": "Plant Physiology",
+        "question": "Which of the following is a symptom of mineral deficiency of nitrogen, potassium, and magnesium in plants?",
+        "options": {
+          "A": "Delay in flowering",
+          "B": "Inhibition of cell division",
+          "C": "Chlorosis (yellowing of leaves)",
+          "D": "Necrosis of young leaves"
+        },
+        "correct": "C",
+        "explanation": "Deficiency of mobile elements like N, K, and Mg leads to breakdown of chlorophyll, causing chlorosis in older leaves. Correct option is (C)."
+      },
+      {
+        "q": 34,
+        "topic": "Reproduction",
+        "question": "In a typical flower, the female reproductive organ consisting of stigma, style, and ovary is known as:",
+        "options": {
+          "A": "Calyx",
+          "B": "Stamen",
+          "C": "Pistil (Carpel)",
+          "D": "Corolla"
+        },
+        "correct": "C",
+        "explanation": "The carpel or pistil represents the female reproductive whorl of a flower. Correct option is (C)."
+      },
+      {
+        "q": 35,
+        "topic": "Genetics and Evolution",
+        "question": "Which of the following organisms shows heterosporous nature, a key evolutionary precursor to seed habit?",
+        "options": {
+          "A": "Selaginella",
+          "B": "Marchantia",
+          "C": "Funaria",
+          "D": "Dryopteris"
+        },
+        "correct": "A",
+        "explanation": "Selaginella and Salvinia produce two kinds of spores (macro and microspores), exhibiting heterospory. Correct option is (A)."
+      },
+      {
+        "q": 36,
+        "topic": "Plant Physiology",
+        "question": "The conversion of glucose to glucose-6-phosphate in the first step of glycolysis is catalysed by:",
+        "options": {
+          "A": "Aldolase",
+          "B": "Pyruvate kinase",
+          "C": "Hexokinase",
+          "D": "Phosphofructokinase"
+        },
+        "correct": "C",
+        "explanation": "Hexokinase catalyses the phosphorylation of glucose using ATP to yield glucose-6-phosphate. Correct option is (C)."
+      },
+      {
+        "q": 37,
+        "topic": "Cell Structure and Function",
+        "question": "Which of the following cellular structures lacks a membrane boundary?",
+        "options": {
+          "A": "Vacuole",
+          "B": "Lysosome",
+          "C": "Ribosome",
+          "D": "Nucleus"
+        },
+        "correct": "C",
+        "explanation": "Ribosomes are non-membranous ribonucleoprotein particles found in both prokaryotes and eukaryotes. Correct option is (C)."
+      },
+      {
+        "q": 38,
+        "topic": "Reproduction",
+        "question": "The dark reaction of photosynthesis (Calvin cycle) takes place in which part of the chloroplast?",
+        "options": {
+          "A": "Grana membrane",
+          "B": "Outer membrane",
+          "C": "Thylakoid lumen",
+          "D": "Stroma"
+        },
+        "correct": "D",
+        "explanation": "The enzymatic reactions of the Calvin cycle occur in the fluid stroma of the chloroplast. Correct option is (D)."
+      },
+      {
+        "q": 39,
+        "topic": "Biology and Human Welfare",
+        "question": "Which of the following pairs represents a standard example of co-dominance in human blood groups?",
+        "options": {
+          "A": "i i alleles",
+          "B": "IA IB alleles",
+          "C": "IB i alleles",
+          "D": "IA IA alleles"
+        },
+        "correct": "B",
+        "explanation": "Individuals with IA and IB alleles express both surface antigens equally, demonstrating co-dominance. Correct option is (B)."
+      },
+      {
+        "q": 40,
+        "topic": "Plant Physiology",
+        "question": "The root nodules in leguminous plants for nitrogen fixation are formed by symbiotic interaction with:",
+        "options": {
+          "A": "Pseudomonas",
+          "B": "Azotobacter",
+          "C": "Clostridium",
+          "D": "Rhizobium"
+        },
+        "correct": "D",
+        "explanation": "Rhizobium bacteria form root nodules on legume roots for symbiotic nitrogen fixation. Correct option is (D)."
+      },
+      {
+        "q": 41,
+        "topic": "Diversity in the Living World",
+        "question": "Which of the following statements about plant nomenclature and ICBN is correct?",
+        "options": {
+          "A": "The first word in a biological name represents the specific epithet.",
+          "B": "Name of the author appears after the specific epithet in upper case.",
+          "C": "Both generic and specific epithets start with capital letters.",
+          "D": "Scientific names are printed in italics when typed to indicate their Latin origin."
+        },
+        "correct": "D",
+        "explanation": "According to binomial nomenclature rules, scientific names are printed in italics to show Latin derivation, and generic names begin with capital letters while specific epithets begin with small letters. Correct option is (D)."
+      },
+      {
+        "q": 42,
+        "topic": "Biotechnology and its Applications",
+        "question": "The process of RNA interference (RNAi) involves silencing of a specific mRNA using:",
+        "options": {
+          "A": "Double-stranded RNA (dsRNA)",
+          "B": "Single-stranded DNA",
+          "C": "Ribosomal RNA (rRNA)",
+          "D": "Transfer RNA (tRNA)"
+        },
+        "correct": "A",
+        "explanation": "RNAi utilizes complementary dsRNA molecules to silence target gene expression via mRNA degradation. Correct option is (A)."
+      },
+      {
+        "q": 43,
+        "topic": "Structural Organisation in Animals and Plants",
+        "question": "Which of the following botanical features is characteristic of monocotyledonous stems?",
+        "options": {
+          "A": "Concentric ring arrangement of vascular bundles",
+          "B": "Scattered vascular bundles without cambium",
+          "C": "Presence of well-defined pith and cortex",
+          "D": "Open vascular bundles with secondary growth"
+        },
+        "correct": "B",
+        "explanation": "Monocot stems possess scattered, closed (without cambium) vascular bundles throughout the ground tissue. Correct option is (B)."
+      },
+      {
+        "q": 44,
+        "topic": "Plant Physiology",
+        "question": "The enzyme RuBisCO can act as both carboxylase and oxygenase. The oxygenase activity leads to:",
+        "options": {
+          "A": "Kreb's cycle",
+          "B": "Photorespiration (C2 cycle)",
+          "C": "Fermentation",
+          "D": "Glycolysis"
+        },
+        "correct": "B",
+        "explanation": "High oxygen and low carbon dioxide concentrations cause RuBisCO to bind O2, initiating photorespiration. Correct option is (B)."
+      },
+      {
+        "q": 45,
+        "topic": "Plant Physiology",
+        "question": "Which of the following plant hormones delays leaf senescence and promotes nutrient mobilization?",
+        "options": {
+          "A": "Cytokinin",
+          "B": "Ethylene",
+          "C": "Auxin",
+          "D": "Abscisic acid"
+        },
+        "correct": "A",
+        "explanation": "Cytokinins delay leaf senescence by promoting nutrient mobilization and preventing chlorophyll degradation. Correct option is (A)."
+      }
+    ],
+    "Zoology": [
+      {
+        "q": 1,
+        "topic": "Human Physiology",
+        "question": "A patient is diagnosed with severe chronic dehydration and hypotension. Which of the following physiological feedback mechanisms will be activated to restore blood volume and pressure?",
+        "options": {
+          "A": "Decreased secretion of ADH with increased urine output",
+          "B": "Inhibition of the renin-angiotensin-aldosterone system",
+          "C": "Increased secretion of renin by JG cells leading to enhanced aldosterone and water reabsorption",
+          "D": "Massive atrial secretion of ANF to promote sodium excretion"
+        },
+        "correct": "C",
+        "explanation": "Low blood pressure and volume stimulate juxtaglomerular (JG) cells to release renin, activating the RAAS cascade to reabsorb sodium and water, thus elevating blood pressure. Correct option is (C)."
+      },
+      {
+        "q": 2,
+        "topic": "Human Physiology",
+        "question": "The type of joint present between the atlas and axis vertebrae is:",
+        "options": {
+          "A": "Hinge joint",
+          "B": "Saddle joint",
+          "C": "Gliding joint",
+          "D": "Pivot joint"
+        },
+        "correct": "D",
+        "explanation": "The joint between the atlas and axis is a pivot joint, which allows rotational movement (such as shaking the head 'no'). Correct option is (D)."
+      },
+      {
+        "q": 3,
+        "topic": "Biology and Human Welfare",
+        "question": "During an HIV infection, why does the progressive destruction of CD4+ T-lymphocytes result in severe immunodeficiency?",
+        "options": {
+          "A": "Because CD4+ T cells coordinate both cellular immunity and activate B cells for humoral immunity",
+          "B": "Because CD4+ cells are responsible for blood clotting",
+          "C": "Because CD4+ cells directly phagocytose all blood pathogens",
+          "D": "Because CD4+ cells produce antibodies themselves"
+        },
+        "correct": "A",
+        "explanation": "Helper T-lymphocytes (CD4+ T cells) act as master regulators of the adaptive immune system, driving both cytotoxic T cell activation and B cell antibody production. Correct option is (A)."
+      },
+      {
+        "q": 4,
+        "topic": "Human Physiology",
+        "question": "In systemic capillaries, chloride shift (Hamburger phenomenon) occurs primarily to:",
+        "options": {
+          "A": "Facilitate oxygen binding to hemoglobin in tissues",
+          "B": "Maintain electrical neutrality of red blood cells as bicarbonate ions diffuse out into the plasma",
+          "C": "Decrease plasma pH to prevent alkalosis",
+          "D": "Promote direct conversion of carbon dioxide into urea"
+        },
+        "correct": "B",
+        "explanation": "As HCO3- ions are pumped out of RBCs into the plasma during CO2 transport, chloride ions (Cl-) move into the RBCs to maintain electrochemical equilibrium across the membrane. Correct option is (B)."
+      },
+      {
+        "q": 5,
+        "topic": "Reproduction",
+        "question": "Which of the following extraembryonic membranes in human embryos is directly involved in the formation of the placenta?",
+        "options": {
+          "A": "Yolk sac",
+          "B": "Chorion",
+          "C": "Amnion",
+          "D": "Allantois"
+        },
+        "correct": "B",
+        "explanation": "The chorion develops finger-like projections called chorionic villi that interdigitate with uterine tissue to form the structural and functional unit of the placenta. Correct option is (B)."
+      },
+      {
+        "q": 6,
+        "topic": "Human Physiology",
+        "question": "During intense muscle contraction, if ATP becomes completely depleted within the sarcoplasm, what immediate mechanical state will the muscle fibers enter?",
+        "options": {
+          "A": "Rigors mortis / state of permanent contraction due to inability of myosin heads to detach from actin",
+          "B": "Immediate complete relaxation and flaccidity",
+          "C": "Rapid uncontrolled elongation of the sarcomere",
+          "D": "Spontaneous asynchronous twitching without neural stimulus"
+        },
+        "correct": "A",
+        "explanation": "ATP binding to myosin heads is mandatory for detachment of cross-bridges from actin. Without ATP, myosin remains tightly bound to actin, causing rigor/contraction lock. Correct option is (A)."
+      },
+      {
+        "q": 7,
+        "topic": "Reproduction",
+        "question": "Which of the following contraceptive methods is a permanent sterilization procedure in human females?",
+        "options": {
+          "A": "Tubectomy",
+          "B": "Vasectomy",
+          "C": "Cu-T",
+          "D": "Oral contraceptive pills"
+        },
+        "correct": "A",
+        "explanation": "Tubectomy is a surgical sterilization method in females where a small part of both fallopian tubes is cut or tied. Correct option is (A)."
+      },
+      {
+        "q": 8,
+        "topic": "Human Physiology",
+        "question": "A chemical pneumotaxic center located in the pons region of the brain can moderate the functions of the respiratory rhythm center by:",
+        "options": {
+          "A": "Stimulating prolonged deep inhalation cycles",
+          "B": "Directly monitoring arterial blood oxygen levels",
+          "C": "Reducing the duration of inspiration and thereby altering respiratory rate",
+          "D": "Completely halting breathing during resting states"
+        },
+        "correct": "C",
+        "explanation": "The pneumotaxic center can moderate the respiratory rhythm center by shortening inspiration, thereby changing breathing frequency. Correct option is (C)."
+      },
+      {
+        "q": 9,
+        "topic": "Biology and Human Welfare",
+        "question": "Which of the following blood cells acts as a phagocytic cell that engulfs foreign particles and pathogens in tissues?",
+        "options": {
+          "A": "Thrombocytes",
+          "B": "Erythrocytes",
+          "C": "Basophils",
+          "D": "Macrophages and Monocytes"
+        },
+        "correct": "D",
+        "explanation": "Monocytes transform into macrophages upon entering tissues and function as major phagocytic scavenger cells. Correct option is (D)."
+      },
+      {
+        "q": 10,
+        "topic": "Human Physiology",
+        "question": "The structural and functional unit of striated muscle is known as:",
+        "options": {
+          "A": "Sarcoplasm",
+          "B": "Sarcolemma",
+          "C": "Sarcomere",
+          "D": "Myofibril"
+        },
+        "correct": "C",
+        "explanation": "The portion of a myofibril between two successive Z-lines is called a sarcomere, which is the basic functional contractile unit. Correct option is (C)."
+      },
+      {
+        "q": 11,
+        "topic": "Human Physiology",
+        "question": "Myasthenia gravis leads to progressive skeletal muscle fatigue because:",
+        "options": {
+          "A": "Calcium ions fail to release from the sarcoplasmic reticulum",
+          "B": "Motor neurons degenerate and stop transmitting action potentials",
+          "C": "Acetylcholine esterase activity drops to zero",
+          "D": "Autoantibodies block and destroy acetylcholine receptors on the motor end plate"
+        },
+        "correct": "D",
+        "explanation": "Myasthenia gravis is caused by autoantibodies directed against postsynaptic acetylcholine receptors, impairing neuromuscular transmission. Correct option is (D)."
+      },
+      {
+        "q": 12,
+        "topic": "Human Physiology",
+        "question": "If fertilization fails to occur, the regression of the corpus luteum causes menstruation primarily because:",
+        "options": {
+          "A": "Oxytocin triggers immediate smooth muscle contraction",
+          "B": "Surge in luteinizing hormone destroys the uterine wall",
+          "C": "Placental lactogen secretion drops sharply",
+          "D": "Withdrawal of progesterone and estrogen levels removes endometrial maintenance"
+        },
+        "correct": "D",
+        "explanation": "The corpus luteum secretes progesterone and estrogen, keeping the endometrium intact. Its degeneration causes hormone withdrawal, shedding the lining. Correct option is (D)."
+      },
+      {
+        "q": 13,
+        "topic": "Diversity in the Living World",
+        "question": "Which of the following organisms exhibits radial symmetry in its adult stage and bilateral symmetry in its larval stage?",
+        "options": {
+          "A": "Arthropods",
+          "B": "Annelids",
+          "C": "Molluscs",
+          "D": "Echinoderms (Starfish)"
+        },
+        "correct": "D",
+        "explanation": "Echinoderms are characterized by bilateral symmetry in their free-swimming larvae and secondary radial symmetry in adults. Correct option is (D)."
+      },
+      {
+        "q": 14,
+        "topic": "Genetics and Evolution",
+        "question": "Uricotelism is predominantly observed in desert reptiles, birds, and insects as an evolutionary adaptation to:",
+        "options": {
+          "A": "Enhance buoyancy in aquatic habitats",
+          "B": "Maximize urea solubility in concentrated urine",
+          "C": "Minimize water loss through excretion of insoluble semisolid waste",
+          "D": "Eliminate nitrogenous waste without expending metabolic energy"
+        },
+        "correct": "C",
+        "explanation": "Uric acid excretion requires very little water, making it ideal for terrestrial organisms facing water scarcity. Correct option is (C)."
+      },
+      {
+        "q": 15,
+        "topic": "Human Physiology",
+        "question": "Which of the following parts of the human brain controls body temperature, urge for eating, and drinking?",
+        "options": {
+          "A": "Hypothalamus",
+          "B": "Cerebrum",
+          "C": "Thalamus",
+          "D": "Medulla oblongata"
+        },
+        "correct": "A",
+        "explanation": "The hypothalamus contains centers that regulate body temperature, hunger, thirst, and emotional drives. Correct option is (A)."
+      },
+      {
+        "q": 16,
+        "topic": "Human Physiology",
+        "question": "Which of the following hormone combinations acts in an antagonistic manner regarding blood calcium levels?",
+        "options": {
+          "A": "Cortisol and Aldosterone",
+          "B": "Calcitonin and Parathormone",
+          "C": "Oxytocin and Vasopressin",
+          "D": "Insulin and Glucagon"
+        },
+        "correct": "B",
+        "explanation": "Calcitonin lowers blood calcium levels, whereas Parathormone (PTH) raises blood calcium levels, acting antagonistically. Correct option is (B)."
+      },
+      {
+        "q": 17,
+        "topic": "Genetics and Evolution",
+        "question": "The process of formation of mature female gamete (ovum) from the primary oocyte is called:",
+        "options": {
+          "A": "Fertilization",
+          "B": "Oogenesis",
+          "C": "Gametogenesis",
+          "D": "Spermatogenesis"
+        },
+        "correct": "B",
+        "explanation": "Oogenesis is the process of development and maturation of female gametes in the ovary. Correct option is (B)."
+      },
+      {
+        "q": 18,
+        "topic": "Reproduction",
+        "question": "Which of the following is a non-medicated intrauterine device (IUD) used for contraception?",
+        "options": {
+          "A": "Multiload 375",
+          "B": "Copper-T",
+          "C": "LNG-20",
+          "D": "Lippes loop"
+        },
+        "correct": "D",
+        "explanation": "Lippes loop is a non-medicated plastic IUD, whereas Copper-T and LNG-20 release copper ions or hormones. Correct option is (D)."
+      },
+      {
+        "q": 19,
+        "topic": "Human Physiology",
+        "question": "The volume of air remaining in the lungs after a forcible expiration is known as:",
+        "options": {
+          "A": "Expiratory reserve volume",
+          "B": "Tidal volume",
+          "C": "Residual volume",
+          "D": "Vital capacity"
+        },
+        "correct": "C",
+        "explanation": "Residual volume is the volume of air that remains in the lungs even after a maximum forceful expiration. Correct option is (C)."
+      },
+      {
+        "q": 20,
+        "topic": "Biology and Human Welfare",
+        "question": "Which of the following antibodies can cross the placental barrier from mother to foetus to confer natural passive immunity?",
+        "options": {
+          "A": "IgG",
+          "B": "IgE",
+          "C": "IgA",
+          "D": "IgM"
+        },
+        "correct": "A",
+        "explanation": "IgG is the smallest antibody isotype that can readily cross the placenta to provide passive immunity to the developing foetus. Correct option is (A)."
+      },
+      {
+        "q": 21,
+        "topic": "Human Physiology",
+        "question": "A sudden fall in systemic blood pressure triggers the juxtaglomerular apparatus to release renin. The downstream physiological outcome of this response is:",
+        "options": {
+          "A": "Vasoconstriction of blood vessels and increased sodium reabsorption by aldosterone",
+          "B": "Increased excretion of sodium and water in urine",
+          "C": "Massive vasodilation of renal afferent arterioles",
+          "D": "Direct inhibition of the distal convoluted tubule water channels"
+        },
+        "correct": "A",
+        "explanation": "Renin converts angiotensinogen to angiotensin I, producing angiotensin II (a potent vasoconstrictor) and stimulating aldosterone release to raise blood pressure. Correct option is (A)."
+      },
+      {
+        "q": 22,
+        "topic": "Human Physiology",
+        "question": "Which of the following phyla is characterized by the presence of a water vascular system and tube feet?",
+        "options": {
+          "A": "Mollusca",
+          "B": "Annelida",
+          "C": "Arthropoda",
+          "D": "Echinodermata"
+        },
+        "correct": "D",
+        "explanation": "Echinoderms possess a characteristic water vascular system used for locomotion, capture of food, and respiration. Correct option is (D)."
+      },
+      {
+        "q": 23,
+        "topic": "Human Physiology",
+        "question": "During a standard human electrocardiogram (ECG), the QRS complex represents:",
+        "options": {
+          "A": "Depolarisation of the ventricles",
+          "B": "Repolarisation of the ventricles",
+          "C": "Depolarisation of the atria",
+          "D": "Repolarisation of the atria"
+        },
+        "correct": "A",
+        "explanation": "The QRS complex represents the electrical depolarization of the ventricles, which initiates ventricular contraction. Correct option is (A)."
+      },
+      {
+        "q": 24,
+        "topic": "Human Physiology",
+        "question": "Which of the following cells in human testis secrete androgen hormones under the influence of luteinizing hormone?",
+        "options": {
+          "A": "Germ cells",
+          "B": "Spermatogonia",
+          "C": "Sertoli cells",
+          "D": "Leydig cells (Interstitial cells)"
+        },
+        "correct": "D",
+        "explanation": "Leydig cells located in the interstitial spaces between seminiferous tubules synthesize and secrete androgens (testosterone) under LH stimulation. Correct option is (D)."
+      },
+      {
+        "q": 25,
+        "topic": "Human Physiology",
+        "question": "The structural and functional unit of the human kidney is the:",
+        "options": {
+          "A": "Nephron",
+          "B": "Renal pyramid",
+          "C": "Ureter",
+          "D": "Neuron"
+        },
+        "correct": "A",
+        "explanation": "Each kidney contains over a million functional units called nephrons, responsible for filtration and urine formation. Correct option is (A)."
+      },
+      {
+        "q": 26,
+        "topic": "Biology and Human Welfare",
+        "question": "Which of the following diseases is characterized by inflammation of joints due to accumulation of uric acid crystals?",
+        "options": {
+          "A": "Osteoarthritis",
+          "B": "Gout",
+          "C": "Osteoporosis",
+          "D": "Rheumatoid arthritis"
+        },
+        "correct": "B",
+        "explanation": "Gout is a type of inflammatory arthritis caused by the deposition of uric acid crystals in the joints. Correct option is (B)."
+      },
+      {
+        "q": 27,
+        "topic": "Reproduction",
+        "question": "Which of the following extraembryonic layers surrounds the embryo and provides a fluid-filled protective environment?",
+        "options": {
+          "A": "Allantois",
+          "B": "Chorion",
+          "C": "Yolk sac",
+          "D": "Amnion"
+        },
+        "correct": "D",
+        "explanation": "The amniotic cavity contains amniotic fluid that cushions the embryo against mechanical shock. Correct option is (D)."
+      },
+      {
+        "q": 28,
+        "topic": "Human Physiology",
+        "question": "The maximum volume of air a person can breathe in after a forced expiration is termed:",
+        "options": {
+          "A": "Vital capacity",
+          "B": "Tidal volume",
+          "C": "Total lung capacity",
+          "D": "Functional residual capacity"
+        },
+        "correct": "A",
+        "explanation": "Vital capacity is the maximum amount of air a person can expel from the lungs after a maximum inhalation (VC = ERV + TV + IRV). Correct option is (A)."
+      },
+      {
+        "q": 29,
+        "topic": "Human Physiology",
+        "question": "Which of the following cranial nerves controls movements of the eyeball and pupillary reflex?",
+        "options": {
+          "A": "Optic nerve",
+          "B": "Trigeminal nerve",
+          "C": "Oculomotor nerve",
+          "D": "Olfactory nerve"
+        },
+        "correct": "C",
+        "explanation": "The 3rd cranial nerve (oculomotor) controls most of the eye muscles, including lens accommodation and pupillary constriction. Correct option is (C)."
+      },
+      {
+        "q": 30,
+        "topic": "Human Physiology",
+        "question": "In the mechanism of hormone action, peptide hormones typically bind to:",
+        "options": {
+          "A": "Nuclear receptors",
+          "B": "Cytoplasmic receptors",
+          "C": "Membrane-bound receptors",
+          "D": "Intracellular receptors"
+        },
+        "correct": "C",
+        "explanation": "Water-soluble peptide hormones cannot cross cell membranes and thus bind to specific receptors located on the cell surface membrane. Correct option is (C)."
+      },
+      {
+        "q": 31,
+        "topic": "Biotechnology and its Applications",
+        "question": "Which of the following is a common vector used in gene cloning to transfer foreign DNA into bacterial cells?",
+        "options": {
+          "A": "Bacteriophage only",
+          "B": "Retrovirus only",
+          "C": "Plasmid",
+          "D": "Cosmid only"
+        },
+        "correct": "C",
+        "explanation": "Plasmids are extrachromosomal circular DNA molecules widely used as cloning vectors in biotechnology. Correct option is (C)."
+      },
+      {
+        "q": 32,
+        "topic": "Diversity in the Living World",
+        "question": "The taxonomic phylum that includes animals with a soft, unsegmented body usually protected by a calcareous shell is:",
+        "options": {
+          "A": "Mollusca",
+          "B": "Arthropoda",
+          "C": "Annelida",
+          "D": "Echinodermata"
+        },
+        "correct": "A",
+        "explanation": "Molluscs are soft-bodied invertebrate animals, typically possessing a mantle and a calcareous shell. Correct option is (A)."
+      },
+      {
+        "q": 33,
+        "topic": "Reproduction",
+        "question": "Which of the following structures in human males acts as a temporary storage chamber and site of functional maturation of sperms?",
+        "options": {
+          "A": "Seminal vesicle",
+          "B": "Vas deferens",
+          "C": "Epididymis",
+          "D": "Prostate gland"
+        },
+        "correct": "C",
+        "explanation": "Sperms produced in the testes are stored and undergo physiological maturation within the epididymis. Correct option is (C)."
+      },
+      {
+        "q": 34,
+        "topic": "Genetics and Evolution",
+        "question": "Which of the following evolutionary evidences is provided by the presence of homologous organs?",
+        "options": {
+          "A": "Analogous evolution",
+          "B": "Parallel evolution",
+          "C": "Divergent evolution",
+          "D": "Convergent evolution"
+        },
+        "correct": "C",
+        "explanation": "Homologous organs share a common anatomical origin but perform different functions, providing clear evidence of divergent evolution. Correct option is (C)."
+      },
+      {
+        "q": 35,
+        "topic": "Biology and Human Welfare",
+        "question": "The chemical substance released by mast cells during inflammatory and allergic reactions is:",
+        "options": {
+          "A": "Histamine",
+          "B": "Heparin",
+          "C": "Bradykinin",
+          "D": "Serotonin"
+        },
+        "correct": "A",
+        "explanation": "Mast cells release histamine and serotonin during allergic and inflammatory responses, causing vasodilation and itching. Correct option is (A)."
+      },
+      {
+        "q": 36,
+        "topic": "Human Physiology",
+        "question": "Which of the following cells form the myelin sheath around axons in the peripheral nervous system (PNS)?",
+        "options": {
+          "A": "Astrocytes",
+          "B": "Schwann cells",
+          "C": "Oligodendrocytes",
+          "D": "Microglia"
+        },
+        "correct": "B",
+        "explanation": "Schwann cells myelinate axons in the peripheral nervous system, while oligodendrocytes perform this function in the central nervous system. Correct option is (B)."
+      },
+      {
+        "q": 37,
+        "topic": "Reproduction",
+        "question": "The second heart sound ('dub') is produced due to the closure of which heart valves?",
+        "options": {
+          "A": "Atrioventricular valves",
+          "B": "Bicuspid valve",
+          "C": "Tricuspid valve",
+          "D": "Semilunar valves"
+        },
+        "correct": "D",
+        "explanation": "The 'dub' sound is produced at the end of ventricular systole due to the sudden closure of the aortic and pulmonary semilunar valves. Correct option is (D)."
+      },
+      {
+        "q": 38,
+        "topic": "Biology and Human Welfare",
+        "question": "Which of the following techniques is utilized for the early detection of HIV infection or cancer using antigenantibody interactions?",
+        "options": {
+          "A": "PCR",
+          "B": "Southern blotting",
+          "C": "Electrophoresis",
+          "D": "ELISA"
+        },
+        "correct": "D",
+        "explanation": "ELISA (Enzyme-Linked Immunosorbent Assay) relies on antibody-antigen reactions for sensitive detection of pathogens and diseases. Correct option is (D)."
+      },
+      {
+        "q": 39,
+        "topic": "Human Physiology",
+        "question": "The fluid portion of blood remaining after the removal of clotting factors (fibrinogen) is called:",
+        "options": {
+          "A": "Plasma",
+          "B": "Serum",
+          "C": "Lymph",
+          "D": "Interstitium"
+        },
+        "correct": "B",
+        "explanation": "Serum is blood plasma minus fibrinogen and other coagulation factors that are consumed during clot formation. Correct option is (B)."
+      },
+      {
+        "q": 40,
+        "topic": "Diversity in the Living World",
+        "question": "Which of the following animal phyla exhibits cellular grade of body organization with a porous body wall?",
+        "options": {
+          "A": "Ctenophora",
+          "B": "Platyhelminthes",
+          "C": "Porifera",
+          "D": "Cnidaria"
+        },
+        "correct": "C",
+        "explanation": "Sponges (phylum Porifera) possess a cellular grade of organization with numerous pores (ostia) through water currents flow. Correct option is (C)."
+      },
+      {
+        "q": 41,
+        "topic": "Human Physiology",
+        "question": "The hormone responsible for milk ejection from the mammary glands during suckling is:",
+        "options": {
+          "A": "Progesterone",
+          "B": "Oxytocin",
+          "C": "Estrogen",
+          "D": "Prolactin"
+        },
+        "correct": "B",
+        "explanation": "Prolactin stimulates milk synthesis, whereas oxytocin stimulates milk ejection from the alveoli of mammary glands. Correct option is (B)."
+      },
+      {
+        "q": 42,
+        "topic": "Reproduction",
+        "question": "Which of the following contraceptive methods prevents ovulation by suppressing gonadotropin release through synthetic hormones?",
+        "options": {
+          "A": "Vasectomy",
+          "B": "Oral contraceptive pills",
+          "C": "Diaphragm",
+          "D": "Tubectomy"
+        },
+        "correct": "B",
+        "explanation": "Oral pills containing synthetic progesterone or estrogen-progesterone combinations inhibit ovulation and implantation. Correct option is (B)."
+      },
+      {
+        "q": 43,
+        "topic": "Human Physiology",
+        "question": "The pigment responsible for oxygen storage in skeletal muscle tissue is:",
+        "options": {
+          "A": "Hemoglobin",
+          "B": "Myoglobin",
+          "C": "Cytochrome",
+          "D": "Hemocyanin"
+        },
+        "correct": "B",
+        "explanation": "Myoglobin is an iron- and oxygen-binding protein found in muscle tissue that provides stored oxygen for metabolic demands. Correct option is (B)."
+      },
+      {
+        "q": 44,
+        "topic": "Genetics and Evolution",
+        "question": "Which of the following disorders is caused by a chromosomal abnormality involving an extra copy of chromosome 21 (trisomy 21)?",
+        "options": {
+          "A": "Klinefelter's syndrome",
+          "B": "Down's syndrome",
+          "C": "Phenylketonuria",
+          "D": "Turner's syndrome"
+        },
+        "correct": "B",
+        "explanation": "Down's syndrome is caused by the presence of an extra chromosome 21, resulting in characteristic physical and intellectual features. Correct option is (B)."
+      },
+      {
+        "q": 45,
+        "topic": "Reproduction",
+        "question": "The part of the human eye where photoreceptor cells (rods and cones) are densely packed and sharpest vision occurs is:",
+        "options": {
+          "A": "Fovea centralis",
+          "B": "Cornea",
+          "C": "Pupil",
+          "D": "Blind spot"
+        },
+        "correct": "A",
+        "explanation": "The fovea is a small central pit in the retina packed exclusively with cone cells, responsible for highacuity daylight vision. Correct option is (A)."
+      }
+    ]
+  }
+}
