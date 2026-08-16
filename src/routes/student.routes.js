@@ -186,6 +186,25 @@ import {
 } from "../controllers/studentOlympiad.controller.js";
 
 import { getCompetitiveTestsForStudent } from "../controllers/competitiveTest.controller.js";
+import {
+  listJeeMainPapersStudent,
+  getJeeMainPaperStudent,
+  getJeeMainGeneratorSummary,
+  generateJeeMainQuestionSet,
+  generateJeeAdvancedQuestionSet,
+  generateNeetQuestionSet,
+  generateClatQuestionSet,
+  generateIbpsQuestionSet,
+  generateGmatQuestionSet,
+  generateSscCglTier1QuestionSet,
+  generateSscCglTier2QuestionSet,
+  generateUpscQuestionSet,
+  generateCatQuestionSet,
+} from "../controllers/jeeMainCompetitivePaper.controller.js";
+import {
+  listJeeExamSyllabus,
+  getJeeExamSyllabusByExam,
+} from "../controllers/jeeExamSyllabus.controller.js";
 import { getSchoolTestsForStudent } from "../controllers/schoolTest.controller.js";
 import { getSkillTestsForStudent } from "../controllers/skillTest.controller.js";
 
@@ -297,6 +316,24 @@ router.post("/categories/:categoryId/confirm-payment", verifyJWT, confirmCategor
 router.get("/categories/:categoryId/access", verifyJWT, checkCategoryAccess);
 router.get("/my-category-purchases", verifyJWT, getMyCategoryPurchases);
 router.get("/competitive-tests", verifyJWT, getCompetitiveTestsForStudent);
+router.get("/competitive/jee-main/papers", verifyJWT, listJeeMainPapersStudent);
+router.get("/competitive/jee-main/papers/:id", verifyJWT, getJeeMainPaperStudent);
+router.get("/competitive/jee-main/generator/summary", getJeeMainGeneratorSummary);
+router.post("/competitive/jee-main/generator/set", generateJeeMainQuestionSet);
+router.post(
+  "/competitive/jee-advanced/generator/set",
+  generateJeeAdvancedQuestionSet
+);
+router.post("/competitive/neet/generator/set", generateNeetQuestionSet);
+router.post("/competitive/clat/generator/set", generateClatQuestionSet);
+router.post("/competitive/ibps/generator/set", generateIbpsQuestionSet);
+router.post("/competitive/gmat/generator/set", generateGmatQuestionSet);
+router.post("/competitive/ssc-cgl-tier1/generator/set", generateSscCglTier1QuestionSet);
+router.post("/competitive/ssc-cgl-tier2/generator/set", generateSscCglTier2QuestionSet);
+router.post("/competitive/upsc/generator/set", generateUpscQuestionSet);
+router.post("/competitive/cat/generator/set", generateCatQuestionSet);
+router.get("/competitive/jee-syllabus", verifyJWT, listJeeExamSyllabus);
+router.get("/competitive/jee-syllabus/:examType", verifyJWT, getJeeExamSyllabusByExam);
 router.get("/school-tests", verifyJWT, getSchoolTestsForStudent);
 router.get("/skill-tests", verifyJWT, getSkillTestsForStudent);
 

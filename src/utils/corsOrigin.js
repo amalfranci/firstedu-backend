@@ -9,6 +9,7 @@ const DEFAULT_ORIGINS = [
   "http://localhost:3000",
   "http://localhost:5174",
   "http://localhost:5173",
+  "http://localhost:5175",
 ];
 
 /** www and non-www variants of the same host (e.g. iscorre.com ↔ www.iscorre.com). */

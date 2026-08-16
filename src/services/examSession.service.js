@@ -510,6 +510,7 @@ export const startExamSession = async (testId, studentId, options = {}) => {
     questionBank:
       "name sections useSectionWiseQuestions useSectionWiseDifficulty",
     aiQuestionBank: "name overallDifficulty categories useSectionWise sections",
+    jeeMainPaper: "title subjects durationMinutes totalQuestions",
   });
   if (!test) {
     throw new ApiError(404, "Test not found");
@@ -529,7 +530,12 @@ export const startExamSession = async (testId, studentId, options = {}) => {
     throw new ApiError(400, "Question bank has no questions");
   }
 
-  const questionModel = bankType === "ai" ? "AiQuestion" : "Question";
+  const questionModel =
+    bankType === "ai"
+      ? "AiQuestion"
+      : bankType === "jee_main_db"
+        ? "JeeMainCompetitiveQuestion"
+        : "Question";
 
   // Check if student can access paid test (bypass if it's a challenge room).
   if (test.price > 0 && test.applicableFor !== "everyday_challenge" && !challengeId) {
@@ -735,6 +741,7 @@ export const getExamInstructions = async (testId, studentId, options = {}) => {
     questionBank:
       "name sections useSectionWiseQuestions useSectionWiseDifficulty overallDifficulty categories",
     aiQuestionBank: "name overallDifficulty categories useSectionWise sections",
+    jeeMainPaper: "title subjects durationMinutes totalQuestions",
   });
   if (!test) {
     throw new ApiError(404, "Test not found");
@@ -1309,10 +1316,13 @@ export const getExamSession = async (sessionId, studentId) => {
         const firstDifficulty =
           sectionQuestions.find((q) => q?.question?.difficulty)?.question?.difficulty ||
           "medium";
+        const subjectName =
+          sectionQuestions.find((q) => q?.question?.subject)?.question?.subject ||
+          `Section ${String.fromCharCode(65 + Number(index))}`;
         return {
           index,
           id: index + 1,
-          name: `Section ${String.fromCharCode(65 + Number(index))}`,
+          name: subjectName,
           count: sectionQuestions.length,
           difficulty: firstDifficulty,
         };

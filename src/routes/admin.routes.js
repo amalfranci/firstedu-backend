@@ -241,11 +241,12 @@ import {
 
 
 import {
-  generateQuestions,
-  generateQuestionBankSuggestions,
-  getQuestionBankGenerationJobStatus,
-  getQuestionBankBackgroundValidation,
-  getPipelineEventsStatus,
+  // RAG / AI question generation — commented out; JEE Main now fetches stored papers from DB.
+  // generateQuestions,
+  // generateQuestionBankSuggestions,
+  // getQuestionBankGenerationJobStatus,
+  // getQuestionBankBackgroundValidation,
+  // getPipelineEventsStatus,
   generateImageQuestion,
   generateImageQuestionOpenAI,
   generateQuestionImage,
@@ -253,12 +254,20 @@ import {
   listGeminiImageModels,
   listGeminiTextModels,
   listClaudeTextModels,
-  saveGeneratedQuestions,
-  validateQuestionTopicRelevance,
-  planQuestionBankTopics,
-  logConfirmedQuestions,
-  applyAnswerCorrection,
+  // saveGeneratedQuestions,
+  // validateQuestionTopicRelevance,
+  // planQuestionBankTopics,
+  // logConfirmedQuestions,
+  // applyAnswerCorrection,
 } from '../controllers/aiQuestion.controller.js';
+import {
+  listJeeMainPapersAdmin,
+  getJeeMainPaperAdmin,
+} from '../controllers/jeeMainCompetitivePaper.controller.js';
+import {
+  listJeeExamSyllabus,
+  getJeeExamSyllabusByExam,
+} from '../controllers/jeeExamSyllabus.controller.js';
 
 import {
   getCleanupStatusController,
@@ -723,23 +732,28 @@ router.patch('/success-stories/:id/status', verifyJWT, updateStoryStatus);
 router.delete('/success-stories/:id', verifyJWT, deleteSuccessStory);
 
 
-/* ==================== AI QUESTION GENERATION ==================== */
+/* ==================== JEE MAIN COMPETITIVE PAPERS (DB FETCH) ==================== */
+router.get('/competitive/jee-main/papers', verifyJWT, listJeeMainPapersAdmin);
+router.get('/competitive/jee-main/papers/:id', verifyJWT, getJeeMainPaperAdmin);
+router.get('/competitive/jee-syllabus', verifyJWT, listJeeExamSyllabus);
+router.get('/competitive/jee-syllabus/:examType', verifyJWT, getJeeExamSyllabusByExam);
 
-// Generate questions using Gemini 2.5 Flash
+/* ==================== AI QUESTION GENERATION ==================== */
+/* RAG + AI generation APIs are commented out. JEE Main papers are served
+   from the dedicated JeeMainCompetitivePaper / JeeMainCompetitiveQuestion tables.
+
 router.post(
   '/ai/generate-questions',
   verifyJWT,
   generateQuestions
 );
 
-// Question bank: plan topics/syllabus (no generation) — step 1 of the split flow
 router.post(
   '/ai/plan-question-topics',
   verifyJWT,
   planQuestionBankTopics
 );
 
-// Question bank: single / multiple / true-false suggestions (Gemini)
 router.post(
   '/ai/generate-question-bank-suggestions',
   verifyJWT,
@@ -763,6 +777,7 @@ router.get(
   verifyJWT,
   getPipelineEventsStatus
 );
+*/
 
 router.post(
   '/ai/generate-image-question',
@@ -806,6 +821,7 @@ router.post(
   generateQuestionImageOpenAI
 );
 
+/*
 router.post(
   '/ai/validate-question-topic-relevance',
   verifyJWT,
@@ -824,12 +840,12 @@ router.post(
   applyAnswerCorrection
 );
 
-// Save generated questions to Question Bank
 router.post(
   '/ai/save-generated-questions',
   verifyJWT,
   saveGeneratedQuestions
 );
+*/
 
 
 // ==================== PRESS ANNOUNCEMENTS ====================

@@ -44,7 +44,7 @@ const examSessionSchema = new mongoose.Schema(
         },
         questionModel: {
           type: String,
-          enum: ["Question", "AiQuestion"],
+          enum: ["Question", "AiQuestion", "JeeMainCompetitiveQuestion"],
           default: "Question",
         },
         answer: mongoose.Schema.Types.Mixed, // Can be string, array, boolean

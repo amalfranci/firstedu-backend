@@ -26,9 +26,14 @@ const testSchema = new mongoose.Schema(
       ref: "AiQuestionBank",
       default: null,
     },
+    jeeMainPaper: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "JeeMainCompetitivePaper",
+      default: null,
+    },
     paperSource: {
       type: String,
-      enum: ["manual", "ai"],
+      enum: ["manual", "ai", "jee_main_db"],
       default: "manual",
     },
     categoryId: {
@@ -109,17 +114,22 @@ const testSchema = new mongoose.Schema(
 testSchema.index({ title: 1, createdBy: 1 });
 testSchema.index({ questionBank: 1 });
 testSchema.index({ aiQuestionBank: 1 });
+testSchema.index({ jeeMainPaper: 1 });
 
 testSchema.pre("validate", function validateBankLink(next) {
   const hasManual = !!this.questionBank;
   const hasAi = !!this.aiQuestionBank;
-  if (hasManual && hasAi) {
-    return next(new Error("Test cannot link both manual and AI question banks"));
+  const hasJeeMain = !!this.jeeMainPaper;
+  const sourceCount = [hasManual, hasAi, hasJeeMain].filter(Boolean).length;
+  if (sourceCount > 1) {
+    return next(
+      new Error("Test cannot link more than one question source")
+    );
   }
-  if (!hasManual && !hasAi) {
+  if (sourceCount === 0) {
     return next(new Error("Test must link a question bank"));
   }
-  this.paperSource = hasAi ? "ai" : "manual";
+  this.paperSource = hasAi ? "ai" : hasJeeMain ? "jee_main_db" : "manual";
   next();
 });
 

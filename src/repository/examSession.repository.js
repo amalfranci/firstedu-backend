@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 import ExamSession from "../models/ExamSession.js";
 import Test from "../models/Test.js";
 import Question from "../models/Question.js";
+import "../models/JeeMainCompetitiveQuestion.js";
 import TestPurchase from "../models/TestPurchase.js";
 import { ApiError } from "../utils/ApiError.js";
 
@@ -130,6 +131,9 @@ const findTestById = async (id, populateOptions = {}) => {
     }
     if (populateOptions.aiQuestionBank) {
       query = query.populate("aiQuestionBank", populateOptions.aiQuestionBank);
+    }
+    if (populateOptions.jeeMainPaper) {
+      query = query.populate("jeeMainPaper", populateOptions.jeeMainPaper);
     }
     return await query;
   } catch (error) {
