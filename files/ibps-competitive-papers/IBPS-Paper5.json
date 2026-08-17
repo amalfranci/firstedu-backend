@@ -120,15 +120,15 @@
       {
         "q": 9,
         "topic": "Error detection",
-        "question": "(A) Several economic analysts predicted that / (B) inflation rates would stabilize / (C) across all developing sectors lately. / (D) No error",
+        "question": "(A) The committee has been reviewing the proposal / (B) since three months / (C) without reaching a final decision. / (D) No error",
         "options": {
           "A": "A",
           "B": "B",
           "C": "C",
           "D": "D"
         },
-        "correct": "C",
-        "explanation": "The word 'lately' is typically used with the present perfect tense, whereas the sentence uses 'predicted' (past tense). Thus, part C contains the grammatical error."
+        "correct": "B",
+        "explanation": "The preposition 'since' is used with a specific point of time, whereas 'three months' denotes a duration. Therefore, 'since three months' should be replaced with 'for three months'. Part B contains the error."
       },
       {
         "q": 10,
@@ -336,7 +336,8 @@
           "D": "A"
         },
         "correct": "A",
-        "explanation": "Sentence (D) introduces the broad topic of electronic payment gateways revolutionizing commercial retail trade, making it the ideal opening sentence. (Correct sequence: D - B - C - A - E)."
+        "explanation": "Sentence (D) introduces the broad topic of electronic payment gateways revolutionizing commercial retail trade, making it the ideal opening sentence. (Correct sequence: D - B - C - A - E).",
+        "passage": "Arrange the following sentences to form a coherent paragraph:\n(A) Furthermore, digital literacy programs must be expanded so users can recognize phishing attempts and fraudulent messages.\n(B) As economies transition toward cashless ecosystems, cybersecurity assumes paramount importance.\n(C) Governments and regulators must therefore collaborate to establish legal frameworks that address cyber fraud and protect consumers.\n(D) Electronic payment gateways have revolutionized commercial retail trade by making transactions faster and more convenient.\n(E) Without such comprehensive protective measures, the growing dependence on digital payments could expose consumers and businesses to serious financial risks."
       },
       {
         "q": 26,
@@ -349,7 +350,8 @@
           "D": "E"
         },
         "correct": "B",
-        "explanation": "Sentence (B) logically follows (D) by highlighting that as economies transition toward cashless ecosystems, cybersecurity assumes paramount importance."
+        "explanation": "Sentence (B) logically follows (D) by highlighting that as economies transition toward cashless ecosystems, cybersecurity assumes paramount importance.",
+        "passage": "Arrange the following sentences to form a coherent paragraph:\n(A) Furthermore, digital literacy programs must be expanded so users can recognize phishing attempts and fraudulent messages.\n(B) As economies transition toward cashless ecosystems, cybersecurity assumes paramount importance.\n(C) Governments and regulators must therefore collaborate to establish legal frameworks that address cyber fraud and protect consumers.\n(D) Electronic payment gateways have revolutionized commercial retail trade by making transactions faster and more convenient.\n(E) Without such comprehensive protective measures, the growing dependence on digital payments could expose consumers and businesses to serious financial risks."
       },
       {
         "q": 27,
@@ -362,7 +364,8 @@
           "D": "E"
         },
         "correct": "A",
-        "explanation": "Sentence (C) follows (B) by explaining how governments and regulators collaborate to establish legal frameworks against cyber fraud in response to these security needs."
+        "explanation": "Sentence (C) follows (B) by explaining how governments and regulators collaborate to establish legal frameworks against cyber fraud in response to these security needs.",
+        "passage": "Arrange the following sentences to form a coherent paragraph:\n(A) Furthermore, digital literacy programs must be expanded so users can recognize phishing attempts and fraudulent messages.\n(B) As economies transition toward cashless ecosystems, cybersecurity assumes paramount importance.\n(C) Governments and regulators must therefore collaborate to establish legal frameworks that address cyber fraud and protect consumers.\n(D) Electronic payment gateways have revolutionized commercial retail trade by making transactions faster and more convenient.\n(E) Without such comprehensive protective measures, the growing dependence on digital payments could expose consumers and businesses to serious financial risks."
       },
       {
         "q": 28,
@@ -375,7 +378,8 @@
           "D": "D"
         },
         "correct": "B",
-        "explanation": "Sentence (A) introduces an additional supportive measure ('Furthermore, digital literacy programs must be expanded...')."
+        "explanation": "Sentence (A) introduces an additional supportive measure ('Furthermore, digital literacy programs must be expanded...').",
+        "passage": "Arrange the following sentences to form a coherent paragraph:\n(A) Furthermore, digital literacy programs must be expanded so users can recognize phishing attempts and fraudulent messages.\n(B) As economies transition toward cashless ecosystems, cybersecurity assumes paramount importance.\n(C) Governments and regulators must therefore collaborate to establish legal frameworks that address cyber fraud and protect consumers.\n(D) Electronic payment gateways have revolutionized commercial retail trade by making transactions faster and more convenient.\n(E) Without such comprehensive protective measures, the growing dependence on digital payments could expose consumers and businesses to serious financial risks."
       },
       {
         "q": 29,
@@ -388,7 +392,8 @@
           "D": "C"
         },
         "correct": "A",
-        "explanation": "Sentence (E) concludes the paragraph by stating the consequence ('Without such comprehensive protective measures...')."
+        "explanation": "Sentence (E) concludes the paragraph by stating the consequence ('Without such comprehensive protective measures...').",
+        "passage": "Arrange the following sentences to form a coherent paragraph:\n(A) Furthermore, digital literacy programs must be expanded so users can recognize phishing attempts and fraudulent messages.\n(B) As economies transition toward cashless ecosystems, cybersecurity assumes paramount importance.\n(C) Governments and regulators must therefore collaborate to establish legal frameworks that address cyber fraud and protect consumers.\n(D) Electronic payment gateways have revolutionized commercial retail trade by making transactions faster and more convenient.\n(E) Without such comprehensive protective measures, the growing dependence on digital payments could expose consumers and businesses to serious financial risks."
       },
       {
         "q": 30,
@@ -401,14 +406,15 @@
           "D": "A-B-C-D-E"
         },
         "correct": "B",
-        "explanation": "The correct logical sequence is D-B-C-A-E, establishing the progression from electronic payments growth to cybersecurity, regulatory action, digital literacy, and final concluding warning."
+        "explanation": "The correct logical sequence is D-B-C-A-E, establishing the progression from electronic payments growth to cybersecurity, regulatory action, digital literacy, and final concluding warning.",
+        "passage": "Arrange the following sentences to form a coherent paragraph:\n(A) Furthermore, digital literacy programs must be expanded so users can recognize phishing attempts and fraudulent messages.\n(B) As economies transition toward cashless ecosystems, cybersecurity assumes paramount importance.\n(C) Governments and regulators must therefore collaborate to establish legal frameworks that address cyber fraud and protect consumers.\n(D) Electronic payment gateways have revolutionized commercial retail trade by making transactions faster and more convenient.\n(E) Without such comprehensive protective measures, the growing dependence on digital payments could expose consumers and businesses to serious financial risks."
       }
     ],
     "Quantitative Aptitude": [
       {
         "q": 1,
         "topic": "Percentage",
-        "question": "What is the total number of vehicles sold by EcoDrive Corp across all three zones combined?",
+        "question": "Based on the following vehicle-sales data, what is the total number of vehicles sold by EcoDrive Corp across all three zones combined?",
         "options": {
           "A": "35,000",
           "B": "40,000",
@@ -416,12 +422,39 @@
           "D": "50,000"
         },
         "correct": "D",
-        "explanation": "Total sales = 500,000 units. Apex = 30% (150,000), Bluebell = 25% (125,000), Crimson = 20% (100,000), Delta = 15% (75,000). Total percentage accounted for = 90%. EcoDrive Corp has 10%, which equals 0.10 * 500,000 = 50,000 units."
+        "explanation": "Total sales = 500,000 units. Apex = 30% (150,000), Bluebell = 25% (125,000), Crimson = 20% (100,000), Delta = 15% (75,000). Total percentage accounted for = 90%. EcoDrive Corp has 10%, which equals 0.10 * 500,000 = 50,000 units.",
+        "data": {
+          "total_vehicle_sales_all_companies": "500,000 units",
+          "overall_company_share": {
+            "Apex Motors": "30%",
+            "Bluebell Motors": "25%",
+            "Crimson Motors": "20%",
+            "Delta Motors": "15%",
+            "EcoDrive Corp": "10%"
+          },
+          "zone_totals": {
+            "North": "200,000 units",
+            "South": "180,000 units",
+            "West": "120,000 units"
+          },
+          "north_zone_sales": {
+            "Apex Motors": "60,000 units",
+            "Bluebell Motors": "50,000 units",
+            "Crimson Motors": "40,000 units",
+            "Delta Motors": "30,000 units",
+            "EcoDrive Corp": "20,000 units"
+          },
+          "average_selling_price": {
+            "Apex Motors": "Rs. 800,000 per vehicle",
+            "EcoDrive Corp": "Rs. 950,000 per vehicle"
+          },
+          "EcoDrive_net_profit_margin": "20%"
+        }
       },
       {
         "q": 2,
         "topic": "Volume",
-        "question": "What is the total number of vehicles sold in the West Zone across all five companies combined?",
+        "question": "Based on the following vehicle-sales data, what is the total number of vehicles sold in the West Zone across all five companies combined?",
         "options": {
           "A": "100,000",
           "B": "120,000",
@@ -429,12 +462,39 @@
           "D": "150,000"
         },
         "correct": "B",
-        "explanation": "North Zone = 200,000 units, South Zone = 180,000 units. Total aggregate volume = 500,000 units. West Zone = 500,000 - (200,000 + 180,000) = 120,000 units."
+        "explanation": "North Zone = 200,000 units, South Zone = 180,000 units. Total aggregate volume = 500,000 units. West Zone = 500,000 - (200,000 + 180,000) = 120,000 units.",
+        "data": {
+          "total_vehicle_sales_all_companies": "500,000 units",
+          "overall_company_share": {
+            "Apex Motors": "30%",
+            "Bluebell Motors": "25%",
+            "Crimson Motors": "20%",
+            "Delta Motors": "15%",
+            "EcoDrive Corp": "10%"
+          },
+          "zone_totals": {
+            "North": "200,000 units",
+            "South": "180,000 units",
+            "West": "120,000 units"
+          },
+          "north_zone_sales": {
+            "Apex Motors": "60,000 units",
+            "Bluebell Motors": "50,000 units",
+            "Crimson Motors": "40,000 units",
+            "Delta Motors": "30,000 units",
+            "EcoDrive Corp": "20,000 units"
+          },
+          "average_selling_price": {
+            "Apex Motors": "Rs. 800,000 per vehicle",
+            "EcoDrive Corp": "Rs. 950,000 per vehicle"
+          },
+          "EcoDrive_net_profit_margin": "20%"
+        }
       },
       {
         "q": 3,
         "topic": "Bar graphs",
-        "question": "How many units did EcoDrive Corp sell in the North Zone?",
+        "question": "Based on the following vehicle-sales data, how many units did EcoDrive Corp sell in the North Zone?",
         "options": {
           "A": "10,000",
           "B": "15,000",
@@ -442,12 +502,39 @@
           "D": "25,000"
         },
         "correct": "C",
-        "explanation": "Total North Zone sales = 200,000 units. Apex = 60,000, Bluebell = 50,000, Crimson = 40,000, Delta = 30,000. Sum = 180,000 units. EcoDrive sold 200,000 - 180,000 = 20,000 units in the North Zone."
+        "explanation": "Total North Zone sales = 200,000 units. Apex = 60,000, Bluebell = 50,000, Crimson = 40,000, Delta = 30,000. Sum = 180,000 units. EcoDrive sold 200,000 - 180,000 = 20,000 units in the North Zone.",
+        "data": {
+          "total_vehicle_sales_all_companies": "500,000 units",
+          "overall_company_share": {
+            "Apex Motors": "30%",
+            "Bluebell Motors": "25%",
+            "Crimson Motors": "20%",
+            "Delta Motors": "15%",
+            "EcoDrive Corp": "10%"
+          },
+          "zone_totals": {
+            "North": "200,000 units",
+            "South": "180,000 units",
+            "West": "120,000 units"
+          },
+          "north_zone_sales": {
+            "Apex Motors": "60,000 units",
+            "Bluebell Motors": "50,000 units",
+            "Crimson Motors": "40,000 units",
+            "Delta Motors": "30,000 units",
+            "EcoDrive Corp": "20,000 units"
+          },
+          "average_selling_price": {
+            "Apex Motors": "Rs. 800,000 per vehicle",
+            "EcoDrive Corp": "Rs. 950,000 per vehicle"
+          },
+          "EcoDrive_net_profit_margin": "20%"
+        }
       },
       {
         "q": 4,
         "topic": "Average",
-        "question": "What is the total gross revenue generated by Apex Motors from its total vehicle sales across all zones?",
+        "question": "Based on the following vehicle-sales data, what is the total gross revenue generated by Apex Motors from its total vehicle sales across all zones?",
         "options": {
           "A": "Rs. 10,000 crore",
           "B": "Rs. 11,250 crore",
@@ -455,12 +542,39 @@
           "D": "Rs. 13,500 crore"
         },
         "correct": "C",
-        "explanation": "Apex Motors total sales = 150,000 units. Average selling price = Rs. 800,000. Total revenue = 150,000 * 800,000 = 120,000,000,000 rupees = Rs. 12,000 crore."
+        "explanation": "Apex Motors total sales = 150,000 units. Average selling price = Rs. 800,000. Total revenue = 150,000 * 800,000 = 120,000,000,000 rupees = Rs. 12,000 crore.",
+        "data": {
+          "total_vehicle_sales_all_companies": "500,000 units",
+          "overall_company_share": {
+            "Apex Motors": "30%",
+            "Bluebell Motors": "25%",
+            "Crimson Motors": "20%",
+            "Delta Motors": "15%",
+            "EcoDrive Corp": "10%"
+          },
+          "zone_totals": {
+            "North": "200,000 units",
+            "South": "180,000 units",
+            "West": "120,000 units"
+          },
+          "north_zone_sales": {
+            "Apex Motors": "60,000 units",
+            "Bluebell Motors": "50,000 units",
+            "Crimson Motors": "40,000 units",
+            "Delta Motors": "30,000 units",
+            "EcoDrive Corp": "20,000 units"
+          },
+          "average_selling_price": {
+            "Apex Motors": "Rs. 800,000 per vehicle",
+            "EcoDrive Corp": "Rs. 950,000 per vehicle"
+          },
+          "EcoDrive_net_profit_margin": "20%"
+        }
       },
       {
         "q": 5,
         "topic": "Profit and loss",
-        "question": "What is the total net profit earned by EcoDrive Corp from its total vehicle sales?",
+        "question": "Based on the following vehicle-sales data, what is the total net profit earned by EcoDrive Corp from its total vehicle sales?",
         "options": {
           "A": "Rs. 950 crore",
           "B": "Rs. 1,050 crore",
@@ -468,7 +582,34 @@
           "D": "Rs. 1,250 crore"
         },
         "correct": "A",
-        "explanation": "EcoDrive total sales = 50,000 units. Average selling price = Rs. 950,000. Total revenue = Rs. 4,750 crore. Net profit margin = 20%. Net profit = 0.20 * 4,750 crore = Rs. 950 crore."
+        "explanation": "EcoDrive total sales = 50,000 units. Average selling price = Rs. 950,000. Total revenue = Rs. 4,750 crore. Net profit margin = 20%. Net profit = 0.20 * 4,750 crore = Rs. 950 crore.",
+        "data": {
+          "total_vehicle_sales_all_companies": "500,000 units",
+          "overall_company_share": {
+            "Apex Motors": "30%",
+            "Bluebell Motors": "25%",
+            "Crimson Motors": "20%",
+            "Delta Motors": "15%",
+            "EcoDrive Corp": "10%"
+          },
+          "zone_totals": {
+            "North": "200,000 units",
+            "South": "180,000 units",
+            "West": "120,000 units"
+          },
+          "north_zone_sales": {
+            "Apex Motors": "60,000 units",
+            "Bluebell Motors": "50,000 units",
+            "Crimson Motors": "40,000 units",
+            "Delta Motors": "30,000 units",
+            "EcoDrive Corp": "20,000 units"
+          },
+          "average_selling_price": {
+            "Apex Motors": "Rs. 800,000 per vehicle",
+            "EcoDrive Corp": "Rs. 950,000 per vehicle"
+          },
+          "EcoDrive_net_profit_margin": "20%"
+        }
       },
       {
         "q": 6,
@@ -772,7 +913,7 @@
       {
         "q": 29,
         "topic": "Time, speed and distance",
-        "question": "A boat can travel 24 km downstream and 16 km upstream in 6 hours. It can also travel 36 km downstream and 24 km upstream in 9 hours. What is the speed of the stream in km/hr?",
+        "question": "A boat can travel 24 km downstream and 16 km upstream in 6 hours. It can also travel 18 km downstream and 18 km upstream in 6 hours. What is the speed of the stream in km/hr?",
         "options": {
           "A": "2 km/hr",
           "B": "3 km/hr",
@@ -780,7 +921,7 @@
           "D": "5 km/hr"
         },
         "correct": "C",
-        "explanation": "Let downstream speed = D, upstream speed = U. 24/D + 16/U = 6 and 36/D + 24/U = 9. Solving these equations yields D = 12 km/hr and U = 4 km/hr. Speed of the stream = (D-U)/2 = (12-4)/2 = 4 km/hr."
+        "explanation": "Let downstream speed = D and upstream speed = U. Then 24/D + 16/U = 6 and 18/D + 18/U = 6. Solving the two independent equations gives D = 12 km/hr and U = 4 km/hr. Therefore, speed of the stream = (D - U)/2 = (12 - 4)/2 = 4 km/hr."
       },
       {
         "q": 30,
@@ -864,7 +1005,7 @@
     "Reasoning Ability": [
       {
         "q": 1,
-        "topic": "Circular seating",
+        "topic": "Linear seating",
         "question": "Eight persons P, Q, R, S, T, U, V, and W are sitting in a straight row facing north. Only two persons sit between R and V. R sits at one of the extreme ends. S sits second to the left of V. Only three persons sit between S and Q. T sits immediate right of Q. U sits third to the left of P. Who sits at the extreme right end?",
         "options": {
           "A": "T",
@@ -873,8 +1014,8 @@
           "D": "P",
           "E": "Q"
         },
-        "correct": "A",
-        "explanation": "Arrangement from left to right: R, W, V, U, S, P, Q, T. T sits at the extreme right end."
+        "correct": "D",
+        "explanation": "The unique arrangement from left to right is R, S, W, V, U, Q, T, P. Therefore, P sits at the extreme right end."
       },
       {
         "q": 2,
@@ -907,7 +1048,7 @@
       {
         "q": 4,
         "topic": "Scheduling",
-        "question": "Seven persons A, B, C, D, E, F, and G attend seminars on seven different days of the same week starting from Monday to Sunday. E attends on Wednesday. Only two persons attend between E and F. A attends immediately before G. G attends after F. B attends before D. C attends on Tuesday. Who attends the seminar on Monday?",
+        "question": "Seven persons A, B, C, D, E, F, and G attend seminars on seven different days of the same week starting from Monday to Sunday. E attends on Wednesday. Only two persons attend between E and F. A attends immediately before G. G attends before F. B attends before D. C attends on Tuesday. Who attends the seminar on Monday?",
         "options": {
           "A": "E",
           "B": "C",
@@ -916,21 +1057,21 @@
           "E": "F"
         },
         "correct": "D",
-        "explanation": "Step-by-step deduction: C is on Tuesday and E is on Wednesday. With only two persons between E (Wednesday) and F, F must be on Saturday. Since A attends immediately before G and both are after F, A is on Thursday and G is on Friday. This leaves Sunday for D and Monday for B, yielding a uniquely determined schedule."
+        "explanation": "C is on Tuesday and E is on Wednesday. With only two persons between E (Wednesday) and F, F must be on Saturday. Since G attends before F and A attends immediately before G, A is on Thursday and G is on Friday. B and D occupy Monday and Sunday respectively because B is before D. Therefore, B attends on Monday."
       },
       {
         "q": 5,
-        "topic": "Circular seating",
+        "topic": "Linear seating",
         "question": "Certain number of persons are sitting in a linear row facing north. M sits fourth to the left of N. Only two persons sit between M and O. P sits immediate right of O. Q sits fourth to the right of P. How many minimum persons are seated in the row?",
         "options": {
-          "A": "10",
-          "B": "13",
-          "C": "12",
-          "D": "9",
-          "E": "11"
+          "A": "8",
+          "B": "10",
+          "C": "11",
+          "D": "12",
+          "E": "13"
         },
-        "correct": "E",
-        "explanation": "Positional derivation step-by-step: 1) Let M be at position 4. 2) Since M sits fourth to the left of N, N is at position 8. 3) With two persons between M (4) and O, O is placed at position 1. 4) P is immediate right of O, placing P at position 2. 5) Q is fourth to the right of P, placing Q at position 6. The total span ranges from position 1 to position 11, giving a minimum of 11 persons."
+        "correct": "A",
+        "explanation": "Let M be at position 4. Since M is fourth to the left of N, N is at position 8. With two persons between M and O, O can be at position 1. P is immediately right of O, so P is at position 2. Q is fourth to the right of P, so Q is at position 6. Thus the occupied positions span from 1 to 8, so the minimum number of persons is 8."
       },
       {
         "q": 6,
@@ -943,8 +1084,8 @@
           "D": "M",
           "E": "L"
         },
-        "correct": "A",
-        "explanation": "Arranging them clockwise: L, N, P, O, M, Q. O sits immediate left of P."
+        "correct": "B",
+        "explanation": "For persons facing the centre, left is clockwise and right is anticlockwise. One valid clockwise arrangement is L, Q, M, O, P, N. Here M is second to the left of L, Q is immediately right of M, and N sits between P and L. N is immediately left of P. Therefore, option B is correct."
       },
       {
         "q": 7,
@@ -957,8 +1098,8 @@
           "D": "Z",
           "E": "Cannot be determined"
         },
-        "correct": "B",
-        "explanation": "Floor 4: W, Floor 3: Z, Floor 2: Y, Floor 1: X. W lives on the topmost floor."
+        "correct": "C",
+        "explanation": "Z must be on floor 2 because it is on an even-numbered floor and W is immediately above Z. Hence W is on floor 3. The remaining floors 1 and 4 are occupied by X and Y, and since X is below Y, X is on floor 1 and Y is on floor 4. Therefore, Y lives on the topmost floor."
       },
       {
         "q": 8,
@@ -1027,8 +1168,8 @@
           "D": "Neither conclusion I nor II follows",
           "E": "Only conclusion I follows"
         },
-        "correct": "E",
-        "explanation": "All apples are mangoes and all mangoes are grapes, so all apples are grapes making 'Some apples are grapes' true. II does not necessarily follow."
+        "correct": "D",
+        "explanation": "All apples are mangoes and all mangoes are grapes, so all apples are grapes. However, the statements do not establish that any apples exist, so 'Some apples are grapes' does not necessarily follow. Likewise, 'Some mangoes are oranges' does not follow from 'Some grapes are oranges'. Therefore, neither conclusion I nor II follows."
       },
       {
         "q": 13,
@@ -1229,7 +1370,7 @@
       {
         "q": 27,
         "topic": "Blood relations",
-        "question": "A is the father of B. C is the daughter of B. D is the brother of C. E is the spouse of A. Who is the grandmother of D?",
+        "question": "A is the father of B. C is the daughter of B. D is the brother of C. E is the wife of A. Who is the grandmother of D?",
         "options": {
           "A": "A",
           "B": "B",
@@ -1238,7 +1379,7 @@
           "E": "Cannot be determined"
         },
         "correct": "D",
-        "explanation": "E is the wife of A, and A is the grandfather of D. Hence, E is the grandmother of D."
+        "explanation": "A is the grandfather of D because A is the father of B and B is the parent of D. E is the wife of A, so E is the grandmother of D. Therefore, option D is correct."
       },
       {
         "q": 28,
@@ -1294,7 +1435,7 @@
           "E": "More than three"
         },
         "correct": "D",
-        "explanation": "The pairs are (E, I), (I, L), and (R, T). There are 3 such pairs."
+        "explanation": "The valid pairs are (T, R), (I, L), and (N, L). In each pair, the number of letters between the two letters in the word TERMINAL is the same as the number of letters between them in the English alphabet. Thus, there are 3 such pairs."
       },
       {
         "q": 32,
@@ -1349,8 +1490,8 @@
           "D": "One",
           "E": "More than three"
         },
-        "correct": "D",
-        "explanation": "Checking the sequence: Symbol followed by Number followed by Letter. We find % 3 T satisfies this condition. Only one such combination exists."
+        "correct": "E",
+        "explanation": "The numbers immediately preceded by a symbol and immediately followed by a letter are 9 (preceded by $ and followed by E), 3 (preceded by % and followed by T), 8 (preceded by # and followed by A), 2 (preceded by @ and followed by K), and 1 (preceded by & and followed by P). Thus, there are 5 such numbers, which is more than three. Option E is correct."
       }
     ]
   }

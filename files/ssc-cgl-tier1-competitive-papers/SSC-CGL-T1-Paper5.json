@@ -62,13 +62,13 @@
         "topic": "Problem Solving",
         "question": "Statements: 1. All titaniums are metals. 2. No metal is a liquid. 3. All liquids are solutions. Conclusions: I. No titanium is a liquid. II. Some solutions are liquids. III. No solution is a metal.",
         "options": {
-          "A": "Only conclusions I and II follow",
-          "B": "Only conclusions I and III follow",
+          "A": "Only conclusion I follows",
+          "B": "Only conclusions I and II follow",
           "C": "Only conclusions II and III follow",
           "D": "All conclusions follow"
         },
         "correct": "A",
-        "explanation": "• Conclusion I: Since all titaniums are inside metals and no metal can overlap with liquid, no titanium can be a liquid. (Follows) • Conclusion II: All liquids are solutions, which directly implies that some solutions are liquids. (Follows) • Conclusion III: Solutions that are outside the liquid circle can potentially intersect with metals, so 'No solution is a metal' is not definitely true. (Does not follow)."
+        "explanation": "• Conclusion I: Since all titaniums are metals and no metal is a liquid, no titanium can be a liquid. (Follows) • Conclusion II: All liquids are solutions, but this does not establish that any liquids exist. Therefore, the existence of some solutions that are liquids cannot be concluded. (Does not follow) • Conclusion III: The statements do not establish that no solution is a metal; a solution outside the liquid class could potentially be a metal. (Does not follow). Therefore, only conclusion I follows."
       },
       {
         "q": 6,
@@ -179,26 +179,26 @@
         "topic": "Problem Solving",
         "question": "Statements: 1. All shirts are skirts. 2. No skirt is a dress. 3. All dresses are garments. Conclusions: I. No shirt is a dress. II. Some garments are dresses. III. Some skirts are shirts.",
         "options": {
-          "A": "Only conclusions I and II follow",
+          "A": "Only conclusion I follows",
           "B": "All conclusions follow",
           "C": "Only conclusions II and III follow",
           "D": "Only conclusions I and III follow"
         },
-        "correct": "B",
-        "explanation": "• Conclusion I: All shirts are inside skirts, and no skirt is a dress. Thus, no shirt can be a dress. (Follows) • Conclusion II: All dresses are garments, which directly implies that some garments are dresses. (Follows) • Conclusion III: All shirts are skirts implies that some skirts are shirts. (Follows)."
+        "correct": "A",
+        "explanation": "• Conclusion I: All shirts are skirts, and no skirt is a dress. Therefore, no shirt can be a dress. (Follows) • Conclusion II: All dresses are garments, but the statements do not establish that any dresses exist. Therefore, some garments are dresses cannot be concluded. (Does not follow) • Conclusion III: All shirts are skirts, but the statements do not establish that any shirts exist. Therefore, some skirts are shirts cannot be concluded. (Does not follow). Therefore, only conclusion I follows."
       },
       {
         "q": 15,
         "topic": "Problem Solving",
         "question": "Eight persons A, B, C, D, E, F, G, and H are sitting around a circular table facing towards the center. A sits third to the left of F. D sits second to the right of A. E sits immediate left of D. B sits third to the right of E. C sits second to the left of H. G is not an immediate neighbor of F. Who sits opposite to B?",
         "options": {
-          "A": "• E = Pos 7 (immediate left of",
-          "B": "",
-          "C": "A",
-          "D": "• B = Pos 2 (3rd to right of E) • H = Pos 5, C = Pos 3 (C is 2nd to left of H) • G = Pos 4 (remaining position, not adjacent to F) Opposite to Position 2 ("
+          "A": "A",
+          "B": "C",
+          "C": "D",
+          "D": "H"
         },
-        "correct": "C",
-        "explanation": "Map positions 1 to 8 clockwise, setting F at Position 1: • F = Pos 1 • A = Pos 6 (3rd to left of F) • D = Pos 8 (2nd to right of A) • E = Pos 7 (immediate left of D) • B = Pos 2 (3rd to right of E) • H = Pos 5, C = Pos 3 (C is 2nd to left of H) • G = Pos 4 (remaining position, not adjacent to F) Opposite to Position 2 (B) is Position 6, which is A."
+        "correct": "A",
+        "explanation": "Map positions 1 to 8 clockwise, setting F at Position 1: • F = Pos 1 • A = Pos 6 (3rd to left of F) • D = Pos 8 (2nd to right of A) • E = Pos 7 (immediate left of D) • B = Pos 2 (3rd to right of E) • H = Pos 5, C = Pos 3 (C is 2nd to left of H) • G = Pos 4 (remaining position, not adjacent to F). Opposite to Position 2 (B) is Position 6, which is A. Therefore, the correct answer is A."
       },
       {
         "q": 16,
@@ -538,7 +538,7 @@
           "D": "Sixth Five Year Plan"
         },
         "correct": "C",
-        "explanation": "The Fifth Five Year Plan (1974-1978) focused on poverty alleviation ('Garibi Hatao') and attainment of selfreliance."
+        "explanation": "The Fifth Five Year Plan (1974–1979) focused on poverty alleviation ('Garibi Hatao') and attainment of self-reliance. The plan was terminated early in 1978."
       },
       {
         "q": 17,
@@ -641,8 +641,8 @@
           "C": "543",
           "D": "552"
         },
-        "correct": "D",
-        "explanation": "The maximum constitutional strength of the Lok Sabha is 552 members (530 representing States, 20 representing Union Territories, and 2 nominated Anglo-Indians, though Anglo-Indian nomination was ended by the 104th Amendment Act)."
+        "correct": "B",
+        "explanation": "Under Article 81 of the Constitution, the Lok Sabha can have a maximum of 550 members: up to 530 representatives from the States and up to 20 representatives from the Union Territories. The former provision for nominating two Anglo-Indian members ceased to have effect after the 104th Constitutional Amendment Act, 2020."
       },
       {
         "q": 25,
@@ -703,10 +703,10 @@
         "topic": "Trigonometry",
         "question": "If tan A + sec A = 3, where A is an acute angle, then what is the value of sin A?",
         "options": {
-          "A": "",
+          "A": "3 / 5",
           "B": "4 / 3",
           "C": "5 / 4",
-          "D": "4 / 5 Correct Option: D Explanation: Given sec A + tan A = 3. We know that sec^2 A - tan^2 A = 1 ⇒ (sec A - tan"
+          "D": "4 / 5"
         },
         "correct": "D",
         "explanation": "Given sec A + tan A = 3. We know that sec^2 A - tan^2 A = 1 ⇒ (sec A - tan A)(sec A + tan A) = 1. Therefore, sec A - tan A = 1 / 3. Adding the two equations: 2 sec A = 3 + 1 / 3 = 10 / 3 ⇒ sec A = 5 / 3. Subtracting the two equations: 2 tan A = 3 - 1 / 3 = 8 / 3 ⇒ tan A = 4 / 3. Since sin A = tan A / sec A = (4 / 3) / (5 / 3) = 4 / 5."
@@ -742,10 +742,10 @@
         "topic": "Number Systems",
         "question": "A and B working together can complete a work in 12 days. B and C working together can complete it in 15 days, while C and A can complete it in 20 days. In how many days can A alone complete the work?",
         "options": {
-          "A": "= 60 / 20 = 3 units/day. Sum of efficiencies: 2(A + B +",
-          "B": "= 60 / 12 = 5 units/day. Efficiency of (B +",
-          "C": "",
-          "D": "40 days Correct Option: C Explanation: Let total work = LCM(12, 15, 20) = 60 units. Efficiency of (A +"
+          "A": "20 days",
+          "B": "25 days",
+          "C": "30 days",
+          "D": "40 days"
         },
         "correct": "C",
         "explanation": "Let total work = LCM(12, 15, 20) = 60 units. Efficiency of (A + B) = 60 / 12 = 5 units/day. Efficiency of (B + C) = 60 / 15 = 4 units/day. Efficiency of (C + A) = 60 / 20 = 3 units/day. Sum of efficiencies: 2(A + B + C) = 5 + 4 + 3 = 12 units/day. Efficiency of (A + B + C) = 6 units/day. Efficiency of A = Efficiency of (A + B + C) - Efficiency of (B + C) = 6 - 4 = 2 units/day. Time taken by A alone = Total work / Efficiency of A = 60 / 2 = 30 days."

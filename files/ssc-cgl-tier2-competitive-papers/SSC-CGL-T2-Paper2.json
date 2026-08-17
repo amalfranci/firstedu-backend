@@ -190,7 +190,7 @@
       {
         "q": 15,
         "topic": "Trigonometry",
-        "question": "What is the value of (sin^6(theta) + cos^6(theta) - 1) / (sin^4(theta) + cos^4(theta) - 1)?",
+        "question": "For values of theta for which the expression is defined, what is the value of (sin^6(theta) + cos^6(theta) - 1) / (sin^4(theta) + cos^4(theta) - 1)?",
         "options": {
           "A": "1/2",
           "B": "2/3",
@@ -198,7 +198,7 @@
           "D": "3/4"
         },
         "correct": "C",
-        "explanation": "We know sin^6 + cos^6 = 1 - 3sin^2*cos^2, and sin^4 + cos^4 = 1 - 2sin^2*cos^2. Substituting these into the expression: (1 - 3sin^2*cos^2 - 1) / (1 - 2sin^2*cos^2 - 1) = (-3sin^2*cos^2) / (-2sin^2*cos^2) = 3/2."
+        "explanation": "For values of theta for which the expression is defined, sin^6(theta) + cos^6(theta) = 1 - 3sin^2(theta)cos^2(theta), and sin^4(theta) + cos^4(theta) = 1 - 2sin^2(theta)cos^2(theta). Substituting these into the expression gives (1 - 3sin^2(theta)cos^2(theta) - 1) / (1 - 2sin^2(theta)cos^2(theta) - 1) = (-3sin^2(theta)cos^2(theta)) / (-2sin^2(theta)cos^2(theta)) = 3/2. Therefore, the correct answer is C."
       },
       {
         "q": 16,
@@ -402,13 +402,13 @@
         "topic": "Coding and Decoding",
         "question": "In a certain code language, 'STRIKE' is written as 'TSIREK'. How is 'FORTUNE' written in that code language?",
         "options": {
-          "A": "OFTRENU",
+          "A": "OFTRNUE",
           "B": "OFUTRNE",
           "C": "FOTRNUE",
           "D": "OFRTENU"
         },
         "correct": "A",
-        "explanation": "The word is split into 2-letter pairs and each pair is reversed in position (ST->TS, RI->IR, KE->EK). Applying this pairing rule to FORTUNE (FO->OF, RT->TR, UN->NU, E remains E) gives OFTRENU."
+        "explanation": "The word is split into 2-letter pairs and each pair is reversed in position (ST->TS, RI->IR, KE->EK). Applying this pairing rule to FORTUNE (FO->OF, RT->TR, UN->NU, E remains E) gives OFTRNUE. Therefore, the correct answer is A."
       },
       {
         "q": 2,

@@ -407,11 +407,11 @@
         "options": {
           "A": "The net work done by the gas over one complete cycle is 600 J.",
           "B": "The net change in the internal energy of the gas over one complete cycle is zero.",
-          "C": "The total heat absorbed by the gas over one complete cycle is 600 J.",
+          "C": "The total heat absorbed by the gas over one complete cycle is 2850 J.",
           "D": "During the process A→B, the heat absorbed by the gas equals (5/2)(P2−P1)V1."
         },
         "correct": "A,B,C",
-        "explanation": "Rectangular cycle area W = (P2-P1)(V2-V1) = 600J (A correct). ΔU=0 over a cycle (B correct), so Q=W=600J (C correct). A→B is isochoric, using Cv=(3/2)R not (5/2)R, so D is false (correct coefficient is 3/2, giving 600J not 1000J)."
+        "explanation": "The cycle is clockwise, so the net work done by the gas is the area of the rectangle: W_net=(P2−P1)(V2−V1)=(3×10^5−1×10^5)(5×10^−3−2×10^−3)=600 J, so A is correct. Since the gas returns to its initial state after one complete cycle, the net change in internal energy is ΔU=0, so B is correct. For A→B, the process is isochoric, hence Q_AB=C_vΔT=(3/2)(P2−P1)V1=600 J. For B→C, the process is isobaric, hence Q_BC=C_pΔT=(5/2)P2(V2−V1)=2250 J. Both are heat-absorbing processes, so the total heat absorbed is Q_abs=600+2250=2850 J. Therefore C is correct. Statement D is false because A→B is isochoric and uses C_v=(3/2)R, not (5/2)R."
       },
       {
         "q": 12,

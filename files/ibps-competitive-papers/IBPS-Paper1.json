@@ -282,7 +282,8 @@
           "E": "A"
         },
         "correct": "A",
-        "explanation": "Sentence (C) introduces the broad topic (digital financial innovation transforming the monetary landscape) and serves as the coherent opening sentence."
+        "explanation": "The correct opening sentence is (C), which introduces the broad topic of digital financial services and their transformation of everyday transactions.",
+        "set_data": "Arrange the following six sentences (A-F) to form a coherent paragraph:\nA. Consequently, central banks and regulators are evaluating measures to strengthen digital-payment security without discouraging innovation.\nB. This shift has been accelerated by widespread smartphone adoption and improvements in internet connectivity.\nC. The rapid expansion of digital financial services has begun to reshape the way consumers and institutions conduct everyday transactions.\nD. Yet the increasing volume of online transactions has also exposed financial institutions to greater cybersecurity and fraud risks.\nE. Among the most visible changes are the growing use of digital payments and mobile wallets, which have reduced dependence on cash.\nF. A balanced regulatory framework, supported by stronger safeguards and consumer awareness, is therefore essential for sustaining trust in the digital financial system."
       },
       {
         "q": 20,
@@ -296,7 +297,8 @@
           "E": "F"
         },
         "correct": "B",
-        "explanation": "In the sequence C-E-B-D-A-F, sentence (E) narrows down the broad topic to specific innovations (digital payments and mobile wallets). Thus, (E) is the second sentence."
+        "explanation": "Sentence (E) logically follows (C) by giving the most visible examples of the transformation, namely digital payments and mobile wallets.",
+        "set_data": "Arrange the following six sentences (A-F) to form a coherent paragraph:\nA. Consequently, central banks and regulators are evaluating measures to strengthen digital-payment security without discouraging innovation.\nB. This shift has been accelerated by widespread smartphone adoption and improvements in internet connectivity.\nC. The rapid expansion of digital financial services has begun to reshape the way consumers and institutions conduct everyday transactions.\nD. Yet the increasing volume of online transactions has also exposed financial institutions to greater cybersecurity and fraud risks.\nE. Among the most visible changes are the growing use of digital payments and mobile wallets, which have reduced dependence on cash.\nF. A balanced regulatory framework, supported by stronger safeguards and consumer awareness, is therefore essential for sustaining trust in the digital financial system."
       },
       {
         "q": 21,
@@ -310,7 +312,8 @@
           "E": "F"
         },
         "correct": "C",
-        "explanation": "In the sequence C-E-B-D-A-F, sentence (B) follows sentence (E) by explaining what accelerated this cashless shift. Thus, (B) is the third sentence."
+        "explanation": "Sentence (B) follows (E) by explaining what accelerated the shift toward digital payments: smartphone adoption and improved internet connectivity.",
+        "set_data": "Arrange the following six sentences (A-F) to form a coherent paragraph:\nA. Consequently, central banks and regulators are evaluating measures to strengthen digital-payment security without discouraging innovation.\nB. This shift has been accelerated by widespread smartphone adoption and improvements in internet connectivity.\nC. The rapid expansion of digital financial services has begun to reshape the way consumers and institutions conduct everyday transactions.\nD. Yet the increasing volume of online transactions has also exposed financial institutions to greater cybersecurity and fraud risks.\nE. Among the most visible changes are the growing use of digital payments and mobile wallets, which have reduced dependence on cash.\nF. A balanced regulatory framework, supported by stronger safeguards and consumer awareness, is therefore essential for sustaining trust in the digital financial system."
       },
       {
         "q": 22,
@@ -324,7 +327,8 @@
           "E": "A"
         },
         "correct": "E",
-        "explanation": "In the sequence C-E-B-D-A-F, sentence (A) is fifth, describing central bank evaluation following the security concerns mentioned in sentence (D)."
+        "explanation": "Sentence (A) follows the cybersecurity concerns in (D) by describing the regulatory response being considered by central banks and regulators.",
+        "set_data": "Arrange the following six sentences (A-F) to form a coherent paragraph:\nA. Consequently, central banks and regulators are evaluating measures to strengthen digital-payment security without discouraging innovation.\nB. This shift has been accelerated by widespread smartphone adoption and improvements in internet connectivity.\nC. The rapid expansion of digital financial services has begun to reshape the way consumers and institutions conduct everyday transactions.\nD. Yet the increasing volume of online transactions has also exposed financial institutions to greater cybersecurity and fraud risks.\nE. Among the most visible changes are the growing use of digital payments and mobile wallets, which have reduced dependence on cash.\nF. A balanced regulatory framework, supported by stronger safeguards and consumer awareness, is therefore essential for sustaining trust in the digital financial system."
       },
       {
         "q": 23,
@@ -338,7 +342,8 @@
           "E": "E"
         },
         "correct": "D",
-        "explanation": "In the sequence C-E-B-D-A-F, sentence (F) provides the concluding statement regarding regulatory frameworks and consumer trust."
+        "explanation": "Sentence (F) concludes the paragraph by stating the broader requirement for a balanced regulatory framework, stronger safeguards, and consumer awareness.",
+        "set_data": "Arrange the following six sentences (A-F) to form a coherent paragraph:\nA. Consequently, central banks and regulators are evaluating measures to strengthen digital-payment security without discouraging innovation.\nB. This shift has been accelerated by widespread smartphone adoption and improvements in internet connectivity.\nC. The rapid expansion of digital financial services has begun to reshape the way consumers and institutions conduct everyday transactions.\nD. Yet the increasing volume of online transactions has also exposed financial institutions to greater cybersecurity and fraud risks.\nE. Among the most visible changes are the growing use of digital payments and mobile wallets, which have reduced dependence on cash.\nF. A balanced regulatory framework, supported by stronger safeguards and consumer awareness, is therefore essential for sustaining trust in the digital financial system."
       },
       {
         "q": 24,
@@ -662,7 +667,21 @@
           "E": "96"
         },
         "correct": "E",
-        "explanation": "Total students = 500. Arts students = 40% of 500 = 200. Male:Female in Arts = 3:2 => Male Arts = 120, Female Arts = 80. Commerce students = 20% more than Female Arts = 80 + 16 = 96. Remaining (Science) = 500 - (200+96) = 204; Male Science = Female Science = 102. Total students studying Commerce = 96."
+        "explanation": "Total students = 500. Arts students = 40% of 500 = 200. Male:Female in Arts = 3:2 => Male Arts = 120, Female Arts = 80. Commerce students = 20% more than Female Arts = 80 + 16 = 96. Remaining (Science) = 500 - (200+96) = 204; Male Science = Female Science = 102. Total students studying Commerce = 96.",
+        "set_data": {
+          "total_students": 500,
+          "Arts": {
+            "percentage_of_total": "40%",
+            "male_female_ratio": "3:2"
+          },
+          "Commerce": {
+            "number_of_students": "20% more than the number of female Arts students"
+          },
+          "Science": {
+            "number_of_students": "Remaining students after Arts and Commerce",
+            "male_female_ratio": "1:1"
+          }
+        }
       },
       {
         "q": 17,
@@ -676,7 +695,21 @@
           "E": "180"
         },
         "correct": "B",
-        "explanation": "Female Arts students = 80. Female Science students = 102. Total = 80 + 102 = 182."
+        "explanation": "Female Arts students = 80. Female Science students = 102. Total = 80 + 102 = 182.",
+        "set_data": {
+          "total_students": 500,
+          "Arts": {
+            "percentage_of_total": "40%",
+            "male_female_ratio": "3:2"
+          },
+          "Commerce": {
+            "number_of_students": "20% more than the number of female Arts students"
+          },
+          "Science": {
+            "number_of_students": "Remaining students after Arts and Commerce",
+            "male_female_ratio": "1:1"
+          }
+        }
       },
       {
         "q": 18,
@@ -690,7 +723,21 @@
           "E": "62.4%"
         },
         "correct": "D",
-        "explanation": "Male Arts students = 120. Total Science students = 204. Required percentage = (120/204)×100 = (10/17)×100 ≈ 58.82%."
+        "explanation": "Male Arts students = 120. Total Science students = 204. Required percentage = (120/204)×100 = (10/17)×100 ≈ 58.82%.",
+        "set_data": {
+          "total_students": 500,
+          "Arts": {
+            "percentage_of_total": "40%",
+            "male_female_ratio": "3:2"
+          },
+          "Commerce": {
+            "number_of_students": "20% more than the number of female Arts students"
+          },
+          "Science": {
+            "number_of_students": "Remaining students after Arts and Commerce",
+            "male_female_ratio": "1:1"
+          }
+        }
       },
       {
         "q": 19,
@@ -704,7 +751,21 @@
           "E": "12"
         },
         "correct": "A",
-        "explanation": "Total Arts students = 200. Total Science students = 204. Difference = 204 - 200 = 4."
+        "explanation": "Total Arts students = 200. Total Science students = 204. Difference = 204 - 200 = 4.",
+        "set_data": {
+          "total_students": 500,
+          "Arts": {
+            "percentage_of_total": "40%",
+            "male_female_ratio": "3:2"
+          },
+          "Commerce": {
+            "number_of_students": "20% more than the number of female Arts students"
+          },
+          "Science": {
+            "number_of_students": "Remaining students after Arts and Commerce",
+            "male_female_ratio": "1:1"
+          }
+        }
       },
       {
         "q": 20,
@@ -718,7 +779,21 @@
           "E": "3:4"
         },
         "correct": "C",
-        "explanation": "Male Arts students = 120. Female Arts students = 80. Ratio = 120:80 = 3:2."
+        "explanation": "Male Arts students = 120. Female Arts students = 80. Ratio = 120:80 = 3:2.",
+        "set_data": {
+          "total_students": 500,
+          "Arts": {
+            "percentage_of_total": "40%",
+            "male_female_ratio": "3:2"
+          },
+          "Commerce": {
+            "number_of_students": "20% more than the number of female Arts students"
+          },
+          "Science": {
+            "number_of_students": "Remaining students after Arts and Commerce",
+            "male_female_ratio": "1:1"
+          }
+        }
       },
       {
         "q": 21,
@@ -732,7 +807,24 @@
           "E": "550 units"
         },
         "correct": "A",
-        "explanation": "2021: A=400, B=600. 2022: A = 400+25% of 400 = 500 units; B = 600-10% of 600 = 540 units. 2023: A = 500-10% of 500 = 450 units; B = 540+20% of 540 = 648 units. Production of Product A in 2022 = 500 units."
+        "explanation": "2021: A=400, B=600. 2022: A = 400+25% of 400 = 500 units; B = 600-10% of 600 = 540 units. 2023: A = 500-10% of 500 = 450 units; B = 540+20% of 540 = 648 units. Production of Product A in 2022 = 500 units.",
+        "set_data": {
+          "base_year": 2021,
+          "2021": {
+            "Product A": 400,
+            "Product B": 600
+          },
+          "changes": {
+            "2022": {
+              "Product A": "increases by 25% from 2021",
+              "Product B": "decreases by 10% from 2021"
+            },
+            "2023": {
+              "Product A": "decreases by 10% from 2022",
+              "Product B": "increases by 20% from 2022"
+            }
+          }
+        }
       },
       {
         "q": 22,
@@ -746,7 +838,24 @@
           "E": "1820 units"
         },
         "correct": "C",
-        "explanation": "Product B: 2021=600, 2022=540, 2023=648. Total = 600+540+648 = 1788 units."
+        "explanation": "Product B: 2021=600, 2022=540, 2023=648. Total = 600+540+648 = 1788 units.",
+        "set_data": {
+          "base_year": 2021,
+          "2021": {
+            "Product A": 400,
+            "Product B": 600
+          },
+          "changes": {
+            "2022": {
+              "Product A": "increases by 25% from 2021",
+              "Product B": "decreases by 10% from 2021"
+            },
+            "2023": {
+              "Product A": "decreases by 10% from 2022",
+              "Product B": "increases by 20% from 2022"
+            }
+          }
+        }
       },
       {
         "q": 23,
@@ -760,7 +869,24 @@
           "E": "9.8%"
         },
         "correct": "E",
-        "explanation": "Total production 2021 = 400+600 = 1000 units. Total production 2023 = 450+648 = 1098 units. Increase = 98 units. Percentage increase = (98/1000)×100 = 9.8%."
+        "explanation": "Total production 2021 = 400+600 = 1000 units. Total production 2023 = 450+648 = 1098 units. Increase = 98 units. Percentage increase = (98/1000)×100 = 9.8%.",
+        "set_data": {
+          "base_year": 2021,
+          "2021": {
+            "Product A": 400,
+            "Product B": 600
+          },
+          "changes": {
+            "2022": {
+              "Product A": "increases by 25% from 2021",
+              "Product B": "decreases by 10% from 2021"
+            },
+            "2023": {
+              "Product A": "decreases by 10% from 2022",
+              "Product B": "increases by 20% from 2022"
+            }
+          }
+        }
       },
       {
         "q": 24,
@@ -774,7 +900,24 @@
           "E": "20:23"
         },
         "correct": "D",
-        "explanation": "Product A in 2023 = 450 units. Product B in 2022 = 540 units. Ratio = 450:540 = 5:6."
+        "explanation": "Product A in 2023 = 450 units. Product B in 2022 = 540 units. Ratio = 450:540 = 5:6.",
+        "set_data": {
+          "base_year": 2021,
+          "2021": {
+            "Product A": 400,
+            "Product B": 600
+          },
+          "changes": {
+            "2022": {
+              "Product A": "increases by 25% from 2021",
+              "Product B": "decreases by 10% from 2021"
+            },
+            "2023": {
+              "Product A": "decreases by 10% from 2022",
+              "Product B": "increases by 20% from 2022"
+            }
+          }
+        }
       },
       {
         "q": 25,
@@ -788,7 +931,24 @@
           "E": "480 units"
         },
         "correct": "B",
-        "explanation": "Product A production: 2021=400, 2022=500, 2023=450. Sum = 1350 units. Average = 1350/3 = 450 units."
+        "explanation": "Product A production: 2021=400, 2022=500, 2023=450. Sum = 1350 units. Average = 1350/3 = 450 units.",
+        "set_data": {
+          "base_year": 2021,
+          "2021": {
+            "Product A": 400,
+            "Product B": 600
+          },
+          "changes": {
+            "2022": {
+              "Product A": "increases by 25% from 2021",
+              "Product B": "decreases by 10% from 2021"
+            },
+            "2023": {
+              "Product A": "decreases by 10% from 2022",
+              "Product B": "increases by 20% from 2022"
+            }
+          }
+        }
       },
       {
         "q": 26,
@@ -944,7 +1104,29 @@
           "E": "C"
         },
         "correct": "B",
-        "explanation": "Arrangement derivation: Placing A facing center, B sits 3rd to the left of A. Two persons sit between B and H, placing H 3rd to the left of B. C sits 2nd to the right of H. D sits 3rd to the right of C. F is not an immediate neighbor of D or B, placing F and then E 2nd to the left of F. The remaining spot is occupied by G. The clockwise arrangement sequence starting from A is A, G, D, B, E, F, C, H. Since all face center, clockwise movement is left. To the immediate left of G is D."
+        "explanation": "Arrangement derivation: Placing A facing center, B sits 3rd to the left of A. Two persons sit between B and H, placing H 3rd to the left of B. C sits 2nd to the right of H. D sits 3rd to the right of C. F is not an immediate neighbor of D or B, placing F and then E 2nd to the left of F. The remaining spot is occupied by G. The clockwise arrangement sequence starting from A is A, G, D, B, E, F, C, H. Since all face center, clockwise movement is left. To the immediate left of G is D.",
+        "set_data": {
+          "arrangement_type": "Eight persons A, B, C, D, E, F, G and H sit around a circular table facing the centre.",
+          "clues": [
+            "B sits third to the left of A.",
+            "Two persons sit between B and H.",
+            "C sits second to the right of H.",
+            "D sits third to the right of C.",
+            "F is not an immediate neighbour of D or B.",
+            "E sits second to the left of F.",
+            "The remaining position is occupied by G."
+          ],
+          "derived_clockwise_order_from_A": [
+            "A",
+            "G",
+            "D",
+            "B",
+            "E",
+            "F",
+            "C",
+            "H"
+          ]
+        }
       },
       {
         "q": 2,
@@ -958,7 +1140,29 @@
           "E": "None"
         },
         "correct": "D",
-        "explanation": "For persons facing the center, counting to the right of A corresponds to moving in the counter-clockwise direction. Starting from A and moving counter-clockwise (A → H → C → F → E), the persons sitting between A and E are H, C, and F. Therefore, exactly three persons sit between them."
+        "explanation": "For persons facing the center, counting to the right of A corresponds to moving in the counter-clockwise direction. Starting from A and moving counter-clockwise (A → H → C → F → E), the persons sitting between A and E are H, C, and F. Therefore, exactly three persons sit between them.",
+        "set_data": {
+          "arrangement_type": "Eight persons A, B, C, D, E, F, G and H sit around a circular table facing the centre.",
+          "clues": [
+            "B sits third to the left of A.",
+            "Two persons sit between B and H.",
+            "C sits second to the right of H.",
+            "D sits third to the right of C.",
+            "F is not an immediate neighbour of D or B.",
+            "E sits second to the left of F.",
+            "The remaining position is occupied by G."
+          ],
+          "derived_clockwise_order_from_A": [
+            "A",
+            "G",
+            "D",
+            "B",
+            "E",
+            "F",
+            "C",
+            "H"
+          ]
+        }
       },
       {
         "q": 3,
@@ -971,8 +1175,30 @@
           "D": "Second to the left",
           "E": "Third to the right"
         },
-        "correct": "A",
-        "explanation": "In the sequence A-G-D-B-E-F-C-H, F sits adjacent to C in clockwise direction. Since all persons face center, clockwise direction corresponds to the left. Thus, F sits to the immediate left of C."
+        "correct": "B",
+        "explanation": "In the clockwise arrangement A-G-D-B-E-F-C-H, F is immediately clockwise from C. For persons facing the centre, clockwise direction is the immediate right. Therefore, F sits to the immediate right of C.",
+        "set_data": {
+          "arrangement_type": "Eight persons A, B, C, D, E, F, G and H sit around a circular table facing the centre.",
+          "clues": [
+            "B sits third to the left of A.",
+            "Two persons sit between B and H.",
+            "C sits second to the right of H.",
+            "D sits third to the right of C.",
+            "F is not an immediate neighbour of D or B.",
+            "E sits second to the left of F.",
+            "The remaining position is occupied by G."
+          ],
+          "derived_clockwise_order_from_A": [
+            "A",
+            "G",
+            "D",
+            "B",
+            "E",
+            "F",
+            "C",
+            "H"
+          ]
+        }
       },
       {
         "q": 4,
@@ -986,7 +1212,29 @@
           "E": "H sits opposite to B"
         },
         "correct": "E",
-        "explanation": "In an eight-person circular table, the person sitting 4 positions away is directly opposite. In the arrangement (A, G, D, B, E, F, C, H), B is exactly 4 steps away from H. Therefore, H sits opposite to B."
+        "explanation": "In an eight-person circular table, the person sitting 4 positions away is directly opposite. In the arrangement (A, G, D, B, E, F, C, H), B is exactly 4 steps away from H. Therefore, H sits opposite to B.",
+        "set_data": {
+          "arrangement_type": "Eight persons A, B, C, D, E, F, G and H sit around a circular table facing the centre.",
+          "clues": [
+            "B sits third to the left of A.",
+            "Two persons sit between B and H.",
+            "C sits second to the right of H.",
+            "D sits third to the right of C.",
+            "F is not an immediate neighbour of D or B.",
+            "E sits second to the left of F.",
+            "The remaining position is occupied by G."
+          ],
+          "derived_clockwise_order_from_A": [
+            "A",
+            "G",
+            "D",
+            "B",
+            "E",
+            "F",
+            "C",
+            "H"
+          ]
+        }
       },
       {
         "q": 5,
@@ -1000,7 +1248,29 @@
           "E": "G-B"
         },
         "correct": "C",
-        "explanation": "In options A (A-D), B (B-F), D (E-C), and E (G-B), the second person sits second to the left of the first person. In option C (D-F), F sits third to the left of D. Therefore, C (D-F) does not belong to the group."
+        "explanation": "In options A (A-D), B (B-F), D (E-C), and E (G-B), the second person sits second to the left of the first person. In option C (D-F), F sits third to the left of D. Therefore, C (D-F) does not belong to the group.",
+        "set_data": {
+          "arrangement_type": "Eight persons A, B, C, D, E, F, G and H sit around a circular table facing the centre.",
+          "clues": [
+            "B sits third to the left of A.",
+            "Two persons sit between B and H.",
+            "C sits second to the right of H.",
+            "D sits third to the right of C.",
+            "F is not an immediate neighbour of D or B.",
+            "E sits second to the left of F.",
+            "The remaining position is occupied by G."
+          ],
+          "derived_clockwise_order_from_A": [
+            "A",
+            "G",
+            "D",
+            "B",
+            "E",
+            "F",
+            "C",
+            "H"
+          ]
+        }
       },
       {
         "q": 6,
@@ -1084,7 +1354,28 @@
           "E": "Q"
         },
         "correct": "C",
-        "explanation": "P lives on an odd floor above floor 3 (Floor 5 or 7). If P is on Floor 5, 3 people between P and S puts S on Floor 1, which contradicts S not living on the lowermost floor. Thus P lives on Floor 7, and S lives on Floor 3. R lives immediately above U, so R and U take adjacent floors (R=6, U=5). One person between R(6) and Q puts Q on Floor 4. T lives above V, so T is on Floor 2 and V is on Floor 1. The floor arrangement from 7 to 1 is P, R, U, Q, S, T, V. P lives on Floor 7."
+        "explanation": "P lives on an odd floor above floor 3 (Floor 5 or 7). If P is on Floor 5, 3 people between P and S puts S on Floor 1, which contradicts S not living on the lowermost floor. Thus P lives on Floor 7, and S lives on Floor 3. R lives immediately above U, so R and U take adjacent floors (R=6, U=5). One person between R(6) and Q puts Q on Floor 4. T lives above V, so T is on Floor 2 and V is on Floor 1. The floor arrangement from 7 to 1 is P, R, U, Q, S, T, V. P lives on Floor 7.",
+        "set_data": {
+          "arrangement_type": "Seven persons P, Q, R, S, T, U and V live on different floors of a seven-storey building, with Floor 1 the lowermost and Floor 7 the topmost.",
+          "clues": [
+            "P lives on an odd-numbered floor above Floor 3.",
+            "There are three persons between P and S.",
+            "S does not live on Floor 1.",
+            "R lives immediately above U.",
+            "There is one person between R and Q.",
+            "R lives above Floor 4.",
+            "T lives above V."
+          ],
+          "derived_arrangement": {
+            "Floor 7": "P",
+            "Floor 6": "R",
+            "Floor 5": "U",
+            "Floor 4": "Q",
+            "Floor 3": "S",
+            "Floor 2": "T",
+            "Floor 1": "V"
+          }
+        }
       },
       {
         "q": 12,
@@ -1098,7 +1389,28 @@
           "E": "None"
         },
         "correct": "A",
-        "explanation": "R lives on Floor 6 and T lives on Floor 2. The persons living between them are on Floors 5, 4, and 3 (U, Q, and S). Therefore, exactly three persons live between R and T."
+        "explanation": "R lives on Floor 6 and T lives on Floor 2. The persons living between them are on Floors 5, 4, and 3 (U, Q, and S). Therefore, exactly three persons live between R and T.",
+        "set_data": {
+          "arrangement_type": "Seven persons P, Q, R, S, T, U and V live on different floors of a seven-storey building, with Floor 1 the lowermost and Floor 7 the topmost.",
+          "clues": [
+            "P lives on an odd-numbered floor above Floor 3.",
+            "There are three persons between P and S.",
+            "S does not live on Floor 1.",
+            "R lives immediately above U.",
+            "There is one person between R and Q.",
+            "R lives above Floor 4.",
+            "T lives above V."
+          ],
+          "derived_arrangement": {
+            "Floor 7": "P",
+            "Floor 6": "R",
+            "Floor 5": "U",
+            "Floor 4": "Q",
+            "Floor 3": "S",
+            "Floor 2": "T",
+            "Floor 1": "V"
+          }
+        }
       },
       {
         "q": 13,
@@ -1112,7 +1424,28 @@
           "E": "V"
         },
         "correct": "D",
-        "explanation": "According to the final arrangement (Floor 7: P, Floor 6: R, Floor 5: U, Floor 4: Q, Floor 3: S, Floor 2: T, Floor 1: V), Q lives on Floor 4."
+        "explanation": "According to the final arrangement (Floor 7: P, Floor 6: R, Floor 5: U, Floor 4: Q, Floor 3: S, Floor 2: T, Floor 1: V), Q lives on Floor 4.",
+        "set_data": {
+          "arrangement_type": "Seven persons P, Q, R, S, T, U and V live on different floors of a seven-storey building, with Floor 1 the lowermost and Floor 7 the topmost.",
+          "clues": [
+            "P lives on an odd-numbered floor above Floor 3.",
+            "There are three persons between P and S.",
+            "S does not live on Floor 1.",
+            "R lives immediately above U.",
+            "There is one person between R and Q.",
+            "R lives above Floor 4.",
+            "T lives above V."
+          ],
+          "derived_arrangement": {
+            "Floor 7": "P",
+            "Floor 6": "R",
+            "Floor 5": "U",
+            "Floor 4": "Q",
+            "Floor 3": "S",
+            "Floor 2": "T",
+            "Floor 1": "V"
+          }
+        }
       },
       {
         "q": 14,
@@ -1126,7 +1459,28 @@
           "E": "P, S"
         },
         "correct": "B",
-        "explanation": "S lives on Floor 3 and T lives on Floor 2. Since 3 and 2 are consecutive floor numbers, S and T live on adjacent floors."
+        "explanation": "S lives on Floor 3 and T lives on Floor 2. Since 3 and 2 are consecutive floor numbers, S and T live on adjacent floors.",
+        "set_data": {
+          "arrangement_type": "Seven persons P, Q, R, S, T, U and V live on different floors of a seven-storey building, with Floor 1 the lowermost and Floor 7 the topmost.",
+          "clues": [
+            "P lives on an odd-numbered floor above Floor 3.",
+            "There are three persons between P and S.",
+            "S does not live on Floor 1.",
+            "R lives immediately above U.",
+            "There is one person between R and Q.",
+            "R lives above Floor 4.",
+            "T lives above V."
+          ],
+          "derived_arrangement": {
+            "Floor 7": "P",
+            "Floor 6": "R",
+            "Floor 5": "U",
+            "Floor 4": "Q",
+            "Floor 3": "S",
+            "Floor 2": "T",
+            "Floor 1": "V"
+          }
+        }
       },
       {
         "q": 15,
@@ -1140,7 +1494,28 @@
           "E": "R"
         },
         "correct": "E",
-        "explanation": "P (7), U (5), S (3), and V (1) all live on odd-numbered floors. R (6) lives on an even-numbered floor, so R does not belong to the group."
+        "explanation": "P (7), U (5), S (3), and V (1) all live on odd-numbered floors. R (6) lives on an even-numbered floor, so R does not belong to the group.",
+        "set_data": {
+          "arrangement_type": "Seven persons P, Q, R, S, T, U and V live on different floors of a seven-storey building, with Floor 1 the lowermost and Floor 7 the topmost.",
+          "clues": [
+            "P lives on an odd-numbered floor above Floor 3.",
+            "There are three persons between P and S.",
+            "S does not live on Floor 1.",
+            "R lives immediately above U.",
+            "There is one person between R and Q.",
+            "R lives above Floor 4.",
+            "T lives above V."
+          ],
+          "derived_arrangement": {
+            "Floor 7": "P",
+            "Floor 6": "R",
+            "Floor 5": "U",
+            "Floor 4": "Q",
+            "Floor 3": "S",
+            "Floor 2": "T",
+            "Floor 1": "V"
+          }
+        }
       },
       {
         "q": 16,
@@ -1209,12 +1584,12 @@
           "D": "If either conclusion I or II follows",
           "E": "If neither conclusion I nor II follows"
         },
-        "correct": "C",
-        "explanation": "All red is inside blue and all blue is inside green, so all red is inside green. Since no green is yellow, no red can be yellow either (Conclusion I follows). Since all red are green, it follows directly that some green are red (Conclusion II follows). Both conclusions follow."
+        "correct": "A",
+        "explanation": "All red are blue and all blue are green, so all red are green. Since no green is yellow, no red can be yellow; therefore Conclusion I follows. Conclusion II does not follow because the statements do not establish that any red exists. Hence, only Conclusion I follows."
       },
       {
         "q": 21,
-        "topic": "Circular seating",
+        "topic": "Linear seating",
         "question": "How many total persons are sitting in the row?",
         "options": {
           "A": "11",
@@ -1224,11 +1599,31 @@
           "E": "14"
         },
         "correct": "A",
-        "explanation": "Let the positions from left to right be numbered. E sits immediately left of D, C sits 3rd to right of D, A sits 4th to left of B, F sits in middle of A and B, and 2 persons sit between B and C. Analyzing the constraints yields 11 positions in total: 3 persons to left of E (pos 1-3), E at pos 4, D at pos 5, A at pos 7, C at pos 8, F at pos 9, 2 persons between C and B, and B at pos 11 (extreme right end). Number of persons to left of E (3) equals persons to right of C (3). Thus total persons = 11."
+        "explanation": "Let the positions from left to right be numbered. E sits immediately left of D, C sits 3rd to right of D, A sits 4th to left of B, F sits in middle of A and B, and 2 persons sit between B and C. Analyzing the constraints yields 11 positions in total: 3 persons to left of E (pos 1-3), E at pos 4, D at pos 5, A at pos 7, C at pos 8, F at pos 9, 2 persons between C and B, and B at pos 11 (extreme right end). Number of persons to left of E (3) equals persons to right of C (3). Thus total persons = 11.",
+        "set_data": {
+          "arrangement_type": "Persons sit in a single row facing north. The total number of positions is to be determined.",
+          "clues": [
+            "E sits immediately to the left of D.",
+            "C sits third to the right of D.",
+            "A sits fourth to the left of B.",
+            "F sits exactly midway between A and B.",
+            "There are two persons between B and C.",
+            "There are three persons to the left of E.",
+            "B sits at the extreme right end of the row."
+          ],
+          "derived_positions": {
+            "E": 4,
+            "D": 5,
+            "A": 7,
+            "C": 8,
+            "F": 9,
+            "B": 11
+          }
+        }
       },
       {
         "q": 22,
-        "topic": "Circular seating",
+        "topic": "Linear seating",
         "question": "What is the position of F with respect to C?",
         "options": {
           "A": "Immediate left",
@@ -1238,11 +1633,31 @@
           "E": "Third to the right"
         },
         "correct": "C",
-        "explanation": "C is at position 8 and F is at position 9. Facing north, position 9 is immediately to the right of position 8. Thus F sits to the immediate right of C."
+        "explanation": "C is at position 8 and F is at position 9. Facing north, position 9 is immediately to the right of position 8. Thus F sits to the immediate right of C.",
+        "set_data": {
+          "arrangement_type": "Persons sit in a single row facing north. The total number of positions is to be determined.",
+          "clues": [
+            "E sits immediately to the left of D.",
+            "C sits third to the right of D.",
+            "A sits fourth to the left of B.",
+            "F sits exactly midway between A and B.",
+            "There are two persons between B and C.",
+            "There are three persons to the left of E.",
+            "B sits at the extreme right end of the row."
+          ],
+          "derived_positions": {
+            "E": 4,
+            "D": 5,
+            "A": 7,
+            "C": 8,
+            "F": 9,
+            "B": 11
+          }
+        }
       },
       {
         "q": 23,
-        "topic": "Circular seating",
+        "topic": "Linear seating",
         "question": "How many persons sit between E and A?",
         "options": {
           "A": "One",
@@ -1252,11 +1667,31 @@
           "E": "Two"
         },
         "correct": "E",
-        "explanation": "E is at position 4 and A is at position 7. The persons sitting between them are at positions 5 and 6. Therefore, exactly two persons sit between E and A."
+        "explanation": "E is at position 4 and A is at position 7. The persons sitting between them are at positions 5 and 6. Therefore, exactly two persons sit between E and A.",
+        "set_data": {
+          "arrangement_type": "Persons sit in a single row facing north. The total number of positions is to be determined.",
+          "clues": [
+            "E sits immediately to the left of D.",
+            "C sits third to the right of D.",
+            "A sits fourth to the left of B.",
+            "F sits exactly midway between A and B.",
+            "There are two persons between B and C.",
+            "There are three persons to the left of E.",
+            "B sits at the extreme right end of the row."
+          ],
+          "derived_positions": {
+            "E": 4,
+            "D": 5,
+            "A": 7,
+            "C": 8,
+            "F": 9,
+            "B": 11
+          }
+        }
       },
       {
         "q": 24,
-        "topic": "Circular seating",
+        "topic": "Linear seating",
         "question": "If X sits at the extreme left end, how many persons sit between X and D?",
         "options": {
           "A": "One",
@@ -1266,11 +1701,31 @@
           "E": "None"
         },
         "correct": "D",
-        "explanation": "Extreme left end is position 1 (X = 1). D is at position 5. The persons sitting between position 1 and position 5 are at positions 2, 3, and 4. Thus, three persons sit between X and D."
+        "explanation": "Extreme left end is position 1 (X = 1). D is at position 5. The persons sitting between position 1 and position 5 are at positions 2, 3, and 4. Thus, three persons sit between X and D.",
+        "set_data": {
+          "arrangement_type": "Persons sit in a single row facing north. The total number of positions is to be determined.",
+          "clues": [
+            "E sits immediately to the left of D.",
+            "C sits third to the right of D.",
+            "A sits fourth to the left of B.",
+            "F sits exactly midway between A and B.",
+            "There are two persons between B and C.",
+            "There are three persons to the left of E.",
+            "B sits at the extreme right end of the row."
+          ],
+          "derived_positions": {
+            "E": 4,
+            "D": 5,
+            "A": 7,
+            "C": 8,
+            "F": 9,
+            "B": 11
+          }
+        }
       },
       {
         "q": 25,
-        "topic": "Circular seating",
+        "topic": "Linear seating",
         "question": "Which of the following statements is true?",
         "options": {
           "A": "A sits to the immediate right of C",
@@ -1280,7 +1735,27 @@
           "E": "None is true"
         },
         "correct": "B",
-        "explanation": "Since total persons in the row is 11 and B is placed at position 11, B sits at the extreme right end of the row. Therefore, Option B ('B sits at an extreme end of the row') is true."
+        "explanation": "Since total persons in the row is 11 and B is placed at position 11, B sits at the extreme right end of the row. Therefore, Option B ('B sits at an extreme end of the row') is true.",
+        "set_data": {
+          "arrangement_type": "Persons sit in a single row facing north. The total number of positions is to be determined.",
+          "clues": [
+            "E sits immediately to the left of D.",
+            "C sits third to the right of D.",
+            "A sits fourth to the left of B.",
+            "F sits exactly midway between A and B.",
+            "There are two persons between B and C.",
+            "There are three persons to the left of E.",
+            "B sits at the extreme right end of the row."
+          ],
+          "derived_positions": {
+            "E": 4,
+            "D": 5,
+            "A": 7,
+            "C": 8,
+            "F": 9,
+            "B": 11
+          }
+        }
       },
       {
         "q": 26,
@@ -1294,7 +1769,25 @@
           "E": "South-West"
         },
         "correct": "B",
-        "explanation": "Taking Q as origin (0,0): P is at (-8, 0), R at (0, 5), S at (6, 5), T at (6, -5), and U at (6-14, -5) = (-8, -5). Since U and P share the same x-coordinate (-8) and U's y-coordinate (-5) is below P's (0), Point U is directly South of Point P."
+        "explanation": "Taking Q as origin (0,0): P is at (-8, 0), R at (0, 5), S at (6, 5), T at (6, -5), and U at (6-14, -5) = (-8, -5). Since U and P share the same x-coordinate (-8) and U's y-coordinate (-5) is below P's (0), Point U is directly South of Point P.",
+        "set_data": {
+          "starting_point": "Q",
+          "movement_statements": [
+            "P is 8 m west of Q.",
+            "R is 5 m north of Q.",
+            "S is 6 m east of R.",
+            "T is 10 m south of S.",
+            "U is 14 m west of T."
+          ],
+          "derived_coordinates": {
+            "Q": "(0, 0)",
+            "P": "(-8, 0)",
+            "R": "(0, 5)",
+            "S": "(6, 5)",
+            "T": "(6, -5)",
+            "U": "(-8, -5)"
+          }
+        }
       },
       {
         "q": 27,
@@ -1308,7 +1801,25 @@
           "E": "12m"
         },
         "correct": "A",
-        "explanation": "Distance between P(-8, 0) and U(-8, -5) is the vertical distance along the y-axis: 0-(-5) = 5 meters."
+        "explanation": "Distance between P(-8, 0) and U(-8, -5) is the vertical distance along the y-axis: 0-(-5) = 5 meters.",
+        "set_data": {
+          "starting_point": "Q",
+          "movement_statements": [
+            "P is 8 m west of Q.",
+            "R is 5 m north of Q.",
+            "S is 6 m east of R.",
+            "T is 10 m south of S.",
+            "U is 14 m west of T."
+          ],
+          "derived_coordinates": {
+            "Q": "(0, 0)",
+            "P": "(-8, 0)",
+            "R": "(0, 5)",
+            "S": "(6, 5)",
+            "T": "(6, -5)",
+            "U": "(-8, -5)"
+          }
+        }
       },
       {
         "q": 28,
@@ -1322,7 +1833,25 @@
           "E": "South"
         },
         "correct": "D",
-        "explanation": "R is at (0, 5) and T is at (6, -5). Relative to T(6, -5), R is to the west (0 < 6) and to the north (5 > -5). Thus, Point R is in the North-West direction relative to Point T."
+        "explanation": "R is at (0, 5) and T is at (6, -5). Relative to T(6, -5), R is to the west (0 < 6) and to the north (5 > -5). Thus, Point R is in the North-West direction relative to Point T.",
+        "set_data": {
+          "starting_point": "Q",
+          "movement_statements": [
+            "P is 8 m west of Q.",
+            "R is 5 m north of Q.",
+            "S is 6 m east of R.",
+            "T is 10 m south of S.",
+            "U is 14 m west of T."
+          ],
+          "derived_coordinates": {
+            "Q": "(0, 0)",
+            "P": "(-8, 0)",
+            "R": "(0, 5)",
+            "S": "(6, 5)",
+            "T": "(6, -5)",
+            "U": "(-8, -5)"
+          }
+        }
       },
       {
         "q": 29,
@@ -1336,7 +1865,19 @@
           "E": "Father-in-law"
         },
         "correct": "C",
-        "explanation": "B is married to A and B is the father of D. C is mother-in-law of A, so C is mother of B. E is spouse of C, so E is father of B. Since E is father of B and B is father of D, E is the paternal grandfather of D."
+        "explanation": "B is married to A and B is the father of D. C is mother-in-law of A, so C is mother of B. E is spouse of C, so E is father of B. Since E is father of B and B is father of D, E is the paternal grandfather of D.",
+        "set_data": {
+          "family_statements": [
+            "A is married to B.",
+            "B is the father of D.",
+            "C is the mother of B and the mother-in-law of A.",
+            "E is the spouse of C.",
+            "A and B are the parents of D and F.",
+            "G is the son of A and B.",
+            "F is female.",
+            "C is female, E is male, B is male, A is female and G is male. The gender of D is not specified."
+          ]
+        }
       },
       {
         "q": 30,
@@ -1350,7 +1891,19 @@
           "E": "Sister"
         },
         "correct": "E",
-        "explanation": "B and A are parents of D and F. G is the son of A (and B). Thus D, F, and G are siblings. Since F is female, F is the sister of G."
+        "explanation": "B and A are parents of D and F. G is the son of A (and B). Thus D, F, and G are siblings. Since F is female, F is the sister of G.",
+        "set_data": {
+          "family_statements": [
+            "A is married to B.",
+            "B is the father of D.",
+            "C is the mother of B and the mother-in-law of A.",
+            "E is the spouse of C.",
+            "A and B are the parents of D and F.",
+            "G is the son of A and B.",
+            "F is female.",
+            "C is female, E is male, B is male, A is female and G is male. The gender of D is not specified."
+          ]
+        }
       },
       {
         "q": 31,
@@ -1364,7 +1917,19 @@
           "E": "Cannot be determined"
         },
         "correct": "E",
-        "explanation": "Known genders: C (female), E (male), B (male), A (female), F (female), G (male). The gender of D is not specified in the statements. Hence, the exact count of male members cannot be determined."
+        "explanation": "Known genders: C (female), E (male), B (male), A (female), F (female), G (male). The gender of D is not specified in the statements. Hence, the exact count of male members cannot be determined.",
+        "set_data": {
+          "family_statements": [
+            "A is married to B.",
+            "B is the father of D.",
+            "C is the mother of B and the mother-in-law of A.",
+            "E is the spouse of C.",
+            "A and B are the parents of D and F.",
+            "G is the son of A and B.",
+            "F is female.",
+            "C is female, E is male, B is male, A is female and G is male. The gender of D is not specified."
+          ]
+        }
       },
       {
         "q": 32,
@@ -1406,7 +1971,7 @@
           "E": "More than three"
         },
         "correct": "B",
-        "explanation": "Checking pairs in 'PROBLEM': Forward direction: (B, E) has 2 letters between them in word (L) and in alphabet (C, D). Backward direction: (M, R) has 4 letters between them in word (E, L, B, O) and in alphabet (N, O, P, Q). Total pairs = 2."
+        "explanation": "Checking all pairs in PROBLEM: P-L has 3 letters between them in the word (R, O, B) and 3 letters between them in the alphabet (M, N, O), so it qualifies. R-M has 4 letters between them in the word (O, B, L, E) and 4 letters between them in the alphabet (S, T, U, V), so it also qualifies. No other pair qualifies. Therefore, the total number of such pairs is 2, corresponding to Option (B)."
       },
       {
         "q": 35,

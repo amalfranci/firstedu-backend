@@ -939,11 +939,11 @@
         "options": {
           "A": "(p^2 - 1) / (p^2 + 1)",
           "B": "2p / (p^2 + 1)",
-          "C": "(p^2 + 1) / (p^2 - 1)",
+          "C": "(p^2 + 1) / (1 - p^2)",
           "D": "(p^2 + 1) / (2p)"
         },
         "correct": "C",
-        "explanation": "sec(theta) + tan(theta) = 1/p. Adding gives 2sec(theta) = (p^2+1)/p => cos(theta) = 2p/(p^2+1). Then sin(theta) = (p^2-1)/(p^2+1), so cosec(theta) = (p^2+1)/(p^2-1)."
+        "explanation": "Using (sec(theta) - tan(theta))(sec(theta) + tan(theta)) = 1, we get sec(theta) + tan(theta) = 1/p. Adding the two equations, 2sec(theta) = p + 1/p = (p^2 + 1)/p, so cos(theta) = 2p/(p^2 + 1). Also, tan(theta) = (1/p - p)/2 = (1 - p^2)/(2p). Hence sin(theta) = tan(theta)cos(theta) = (1 - p^2)/(p^2 + 1). Therefore, cosec(theta) = (p^2 + 1)/(1 - p^2)."
       },
       {
         "q": 23,

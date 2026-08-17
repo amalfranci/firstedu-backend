@@ -25,13 +25,13 @@
         "topic": "Complex Numbers",
         "question": "If z is a complex number satisfying |z-1| + |z+1| ≤ 4, then the maximum value of |z-i| is:",
         "options": {
-          "A": "√5",
+          "A": "1 + √3",
           "B": "3",
           "C": "√7",
           "D": "4"
         },
         "correct": "A",
-        "explanation": "The region is inside/on an ellipse with foci (±1,0), a=2, b=√3. Max distance from (0,1) occurs at vertex (-2,0): √(4+1)=√5."
+        "explanation": "The region |z−1|+|z+1|≤4 is the filled ellipse x²/4 + y²/3 ≤ 1. For the point (0,1), the maximum distance to a point of the ellipse occurs at the lower vertex (0,−√3). Hence the maximum distance is 1+√3. Therefore option A is correct."
       },
       {
         "q": 3,
@@ -39,13 +39,13 @@
         "topic": "Trigonometry",
         "question": "The number of solutions of the equation sin(x) = x/10 in the interval [-2π, 2π] is:",
         "options": {
-          "A": "5",
-          "B": "7",
-          "C": "9",
-          "D": "11"
+          "A": "3",
+          "B": "5",
+          "C": "7",
+          "D": "9"
         },
-        "correct": "B",
-        "explanation": "x=0 gives 1 solution; 3 more solutions in (0,2π] and by symmetry 3 in [-2π,0); total = 7."
+        "correct": "A",
+        "explanation": "For x in (0,2π], the equation sin x = x/10 can have a nonzero solution only where sin x is positive, i.e. in (0,π). The function sin x−x/10 is positive for sufficiently small positive x and negative at x=π, so there is exactly one nonzero positive solution. By odd symmetry there is exactly one nonzero negative solution, together with x=0. Hence the total number of solutions is 3. Therefore option A is correct."
       },
       {
         "q": 4,
@@ -263,15 +263,15 @@
         "q": 1,
         "type": "Section 1: Single Correct Type Questions",
         "topic": "System of Particles and Rotational Motion",
-        "question": "A uniform rod of mass M and length L is hinged at one end and is free to rotate in a vertical plane. It is released from rest from the horizontal position. When the rod passes through the vertical downward position, a particle of mass m moving horizontally with velocity v strikes the free end of the rod elastically. Immediately after the collision, the rod comes to instantaneous rest. The ratio M/m is:",
+        "question": "A uniform rod of mass M and length L is hinged at one end and is free to rotate in a vertical plane. It is released from rest from the horizontal position. When the rod reaches the vertically downward position, its free end has speed V. A particle of mass m moving horizontally in the same direction as the free end with speed V/6 strikes the free end elastically. Immediately after the collision, the rod comes to instantaneous rest. The ratio M/m is:",
         "options": {
-          "A": "2",
-          "B": "3",
-          "C": "4",
-          "D": "6"
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4"
         },
         "correct": "B",
-        "explanation": "PE lost by rod = Mg(L/2) = (1/2)(ML²/3)ω², giving ω=√(3g/L), so speed of free end V=√(3gL). Applying conservation of angular momentum about the hinge and the elastic (energy-conserving) collision condition, with the rod coming to rest, gives M/m = 3."
+        "explanation": "At the bottom, energy conservation for the rod gives MgL/2 = (1/2)(ML²/3)ω², so V=ωL=√(3gL). Let v=V/6 be the particle speed before collision and v' its speed after. Angular momentum about the hinge is conserved during the impulsive collision: mvL + (ML²/3)(V/L) = mv'L. Hence v'−v = MV/(3m). Since the collision is elastic, kinetic energy is also conserved. With v=V/6, these equations give M/m=2. Therefore option B is correct."
       },
       {
         "q": 2,
@@ -349,13 +349,13 @@
         "topic": "Modern Physics",
         "question": "A radioactive nucleus A decays into a stable nucleus B with a decay constant λA. Nucleus B is also radioactive and decays into a stable nucleus C with decay constant λB. Initially, at t = 0, there are only N0 nuclei of A. The maximum number of nuclei of B present at any subsequent time is given by:",
         "options": {
-          "A": "N0(λA/λB)^(λB/(λA-λB))",
-          "B": "N0(λA/λB)^(λA/(λB-λA))",
-          "C": "N0(λB/λA)^(λA/(λB-λA))",
-          "D": "N0(λB/λA)^(λB/(λA-λB))"
+          "A": "N0(λA/λB)^(λB/(λB−λA))",
+          "B": "N0(λA/λB)^(λA/(λB−λA))",
+          "C": "N0(λB/λA)^(λA/(λB−λA))",
+          "D": "N0(λB/λA)^(λB/(λB−λA))"
         },
-        "correct": "B",
-        "explanation": "NB(t) = (λAN0/(λB-λA))(e^(-λAt)-e^(-λBt)). Setting derivative to zero gives tmax; substituting back yields max NB = N0(λA/λB)^(λA/(λB-λA))."
+        "correct": "A",
+        "explanation": "The daughter population is NB(t) = [λA N0/(λB−λA)](e^(−λAt)−e^(−λBt)). At the maximum, dNB/dt=0, giving e^((λB−λA)t)=λB/λA and tmax=ln(λB/λA)/(λB−λA). Substitution gives NB,max = N0(λA/λB)^(λB/(λB−λA)). Therefore option A is correct."
       },
       {
         "q": 8,
@@ -377,27 +377,27 @@
         "topic": "Thermal Physics",
         "question": "An ideal monoatomic gas undergoes a cyclic process 1 → 2 → 3 → 1. Processes 1 → 2 and 3 → 1 are isothermal (at temperature TH) and isochoric respectively, while 2 → 3 is an isobaric compression to the minimum temperature TC. The efficiency of this cycle is:",
         "options": {
-          "A": "1 - (TC/TH)",
-          "B": "1 - ((3/2)(TH-TC))/(TH ln(TH/TC))",
-          "C": "(TH-TC)/(TH+TC)",
-          "D": "1 - TC/(TH-TC)"
+          "A": "1 − (TC/TH)",
+          "B": "1 − [(5/2)(TH−TC)]/[TH ln(TH/TC)]",
+          "C": "(TH−TC)/(TH+TC)",
+          "D": "1 − TC/(TH−TC)"
         },
         "correct": "B",
-        "explanation": "Qin = RTH ln(TH/TC) (isothermal). Qout = (3/2)R(TH-TC) (isochoric). η = 1 - Qout/Qin = 1 - ((3/2)(TH-TC))/(TH ln(TH/TC))."
+        "explanation": "For the isothermal expansion 1→2 at TH, Qin = R TH ln(V2/V1). Since 2→3 is isobaric and the temperatures change from TH to TC, V2/V3 = TH/TC. The process 3→1 is isochoric, so V3=V1 and therefore V2/V1=TH/TC. Hence Qin = R TH ln(TH/TC). For the isobaric compression 2→3 of a monatomic ideal gas, the heat rejected has magnitude Qout = Cp(TH−TC) = (5/2)R(TH−TC). Therefore η = 1−Qout/Qin = 1−[(5/2)(TH−TC)]/[TH ln(TH/TC)]. Thus option B is correct."
       },
       {
         "q": 10,
         "type": "Section 1: Single Correct Type Questions",
         "topic": "Ray Optics",
-        "question": "A small coin is placed at the bottom of a beaker filled with water (refractive index n = 4/3) up to a depth H. A thin convex lens of focal length f is placed at a height h above the water surface, with the lens axis vertical and passing through the coin. Looking from directly above, a real image of the coin is formed exactly at the water surface. The height h of the lens above the water surface satisfies:",
+        "question": "A small coin is placed at the bottom of a beaker filled with water (refractive index n=4/3) to a depth H. Looking normally from air, the apparent depth of the coin below the water surface is:",
         "options": {
-          "A": "h = f",
-          "B": "h = f + 3H/4",
-          "C": "h = f - H/4",
-          "D": "h = f + H/3"
+          "A": "H/2",
+          "B": "2H/3",
+          "C": "3H/4",
+          "D": "4H/3"
         },
-        "correct": "D",
-        "explanation": "Apparent depth of coin = 3H/4. Setting up the lens equation with object distance (h+3H/4) and image distance h and solving h(h+3H/4)=3Hf/4 yields the positive root h = f + H/3."
+        "correct": "C",
+        "explanation": "For normal viewing from air into water, the apparent depth is real depth divided by refractive index. Therefore h_app = H/(4/3) = 3H/4. Hence option C is correct."
       },
       {
         "q": 11,
@@ -524,8 +524,8 @@
           "C": "2-methyl-2-butanone",
           "D": "3-methyl-2-butanone"
         },
-        "correct": "B",
-        "explanation": "Negative Tollens'/Fehling's indicates a ketone. Oxidative cleavage yielding acetic acid (2C) and propionic acid (3C) matches the symmetrical ketone pentan-3-one."
+        "correct": "A",
+        "explanation": "Negative Tollens' and Fehling's tests indicate that the compound is a ketone. On vigorous oxidative cleavage, 2-pentanone, CH3COCH2CH2CH3, gives acetic acid (2 carbons) and propionic acid (3 carbons). 3-pentanone would instead give two molecules of propionic acid. Therefore the compound is 2-pentanone, option A."
       },
       {
         "q": 2,

@@ -1,3 +1,4 @@
+
 {
   "paper_id": "CAT-Paper1",
   "title": "CAT Paper 1",
@@ -8,7 +9,7 @@
       {
         "q": 1,
         "topic": "Inference",
-        "question": "The four sentences given below, when properly ordered, form a coherent paragraph. Choose the correct option that represents the most logical order.",
+        "question": "The four sentences given below, when properly ordered, form a coherent paragraph. Choose the correct option that represents the most logical order.\n\n1. This presumption of static stability prevented economists from anticipating how credit default swaps could propagate systemic risk across global markets.\n2. Classical financial models traditionally operated on the assumption that market mechanisms naturally seek equilibrium following external shocks.\n3. By treating financial networks as self-correcting systems, these models ignored the compounding feedback loops inherent in complex interbank lending.\n4. Consequently, when liquidity dried up in 2008, the regulatory frameworks built on these models proved catastrophically inadequate.",
         "options": {
           "A": "2-3-1-4",
           "B": "2-1-3-4",
@@ -21,7 +22,7 @@
       {
         "q": 2,
         "topic": "Inference",
-        "question": "The four sentences given below, when properly ordered, form a coherent paragraph. Choose the correct option that represents the most logical order.",
+        "question": "The four sentences given below, when properly ordered, form a coherent paragraph. Choose the correct option that represents the most logical order.\n\n1. Modern quantum computing leverages this phenomenon through superposition, allowing qubits to exist in multiple states simultaneously.\n2. Classical bits can process information only in binary states of zeroes or ones, severely restricting parallel computational throughput.\n3. This exponential expansion of processing capability fundamentally transforms fields like cryptography and molecular modeling.\n4. As a result, a quantum processor can evaluate vast combinatorial possibilities in a fraction of the time required by supercomputers.",
         "options": {
           "A": "1-2-4-3",
           "B": "2-1-4-3",
@@ -60,7 +61,7 @@
       {
         "q": 5,
         "topic": "Odd Sentence Out",
-        "question": "Five sentences are given below. Four of them can be arranged to form a coherent paragraph. Identify the sentence that DOES NOT fit into the logical context.",
+        "question": "Five sentences are given below. Four of them can be arranged to form a coherent paragraph. Identify the sentence that DOES NOT fit into the logical context.\n\n1. Linguistic relativity proposes that the structure of a language can influence how its speakers perceive and categorize the world.\n2. Languages differ considerably in the grammatical distinctions and vocabulary they make available to their speakers.\n3. Research on bilingual children, however, has shown that using two languages can improve certain aspects of executive functioning.\n4. Such differences can make some concepts more salient to speakers of one language than to speakers of another.\n5. Consequently, language may shape habitual patterns of attention without determining thought in an absolute manner.",
         "options": {
           "A": "Sentence 1",
           "B": "Sentence 2",
@@ -68,12 +69,12 @@
           "D": "Sentence 4"
         },
         "correct": "C",
-        "explanation": "Sentences 1, 2, 4, and 5 form a tight paragraph about linguistic relativity (how language structure/vocabulary shapes cognition and perception). Sentence 3 focuses on the cognitive benefits of bilingualism in children (executive functioning), which is a distinct topic from linguistic relativity shaping worldview. Therefore, Sentence 3 (Option C) is the odd one out."
+        "explanation": "Sentences 1, 2, 4, and 5 form a coherent paragraph about linguistic relativity: Sentence 1 introduces the idea, Sentence 2 explains why languages can differ, Sentence 4 gives the perceptual consequence, and Sentence 5 states the qualified conclusion. Sentence 3 shifts to the cognitive benefits of bilingualism, which is a related but distinct topic. Therefore, Sentence 3 (Option C) is the odd sentence out."
       },
       {
         "q": 6,
         "topic": "Odd Sentence Out",
-        "question": "Five sentences are given below. Four of them can be arranged to form a coherent paragraph. Identify the sentence that DOES NOT fit into the logical context.",
+        "question": "Five sentences are given below. Four of them can be arranged to form a coherent paragraph. Identify the sentence that DOES NOT fit into the logical context.\n\n1. Historical manuscripts are particularly vulnerable to deterioration because their organic materials respond strongly to environmental conditions.\n2. High humidity can accelerate chemical and biological deterioration, while repeated fluctuations can cause paper and parchment to expand and contract.\n3. Prolonged exposure to ultraviolet radiation can also break down pigments and weaken the fibres of manuscripts.\n4. Digital archiving, by contrast, allows scholars to access manuscript collections remotely without handling the physical originals.\n5. Conservation laboratories therefore use controlled temperature, humidity, and light levels to slow these forms of physical degradation.",
         "options": {
           "A": "Sentence 2",
           "B": "Sentence 3",
@@ -81,7 +82,7 @@
           "D": "Sentence 5"
         },
         "correct": "C",
-        "explanation": "Sentences 1, 2, 3, and 5 form a cohesive paragraph focused on physical manuscript preservation and environmental degradation mechanisms (humidity, UV light, climate chambers). Sentence 4 shifts the focus to digital archiving and accessibility, which diverges from the theme of physical preservation techniques. Thus, Sentence 4 (Option C) is the odd one out."
+        "explanation": "Sentences 1, 2, 3, and 5 form a coherent paragraph about the physical deterioration and preservation of manuscripts. Sentence 1 introduces environmental vulnerability, Sentences 2 and 3 describe specific damage mechanisms, and Sentence 5 explains the conservation response. Sentence 4 shifts to digital archiving and remote access rather than physical preservation. Therefore, Sentence 4 (Option C) is the odd sentence out."
       },
       {
         "q": 7,
@@ -94,7 +95,7 @@
           "D": "Position [4]"
         },
         "correct": "D",
-        "explanation": "The inserted sentence explains what happens \"Without these micro-level adjustments\" (accumulating structural fatigue leading to catastrophic failure). Position [4] fits perfectly after [3], which describes how continuous exposure to sub-threshold vibrations compromises integrity over time. Placing the sentence at [4] provides the necessary consequence of failing to make micro-adjustments before [4] concludes with real-time monitoring sensors."
+        "explanation": "The inserted sentence refers to the 'micro-level adjustments' made by the dampening systems and explains the consequence of not making those adjustments: structural fatigue accumulates and can eventually cause catastrophic failure. It follows Sentence 3, which introduces the accumulation of damage from continuous vibrations, and therefore occupies Position [4]. Sentence 4 then naturally continues with the role of automated sensors in monitoring such structural shifts. Hence, Option D is correct."
       },
       {
         "q": 8,
@@ -346,8 +347,8 @@
           "D": "Gavin"
         },
         "correct": "B",
-        "explanation": "Carter (Finance) sits at position 1. Henry (Legal) sits 4th to the right of Carter at position 5. Aaron sits 3rd to the right of Carter at position 4. The executive from Tech is at position 8, adjacent to Foster (Operations) at position 7. Blake sits at position 2, Drake (Strategy) sits at position 3, Henry (Legal) sits at position 5, Gavin (Marketing) sits at position 6, Foster (Operations) sits at position 7, and Ethan (Tech) sits at position 8. Hence, Drake belongs to Strategy.",
-        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north in an auditorium. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit, though not necessarily in that order. Aaron sits third to the right of the executive from Finance. The executive from Tech sits at one of the extreme ends and is adjacent to Foster. Drake sits second to the left of Ethan, and neither of them is from Marketing or Legal. The executive from Strategy sits exactly between Henry and Blake. Gavin sits immediately to the left of the executive from Audit. Henry is from Legal and sits fourth to the right of Carter, who is from Finance. Foster is from Operations. Blake sits to the immediate left of Gavin."
+        "explanation": "Carter is at position 1, so Aaron is at position 4 and Henry, four places to the right of Carter, is at position 5. Ethan is at the rightmost end (position 8), so Drake, who is second to the left of Ethan, is at position 6. Since Strategy is immediately to the right of Henry, Drake at position 6 is from Strategy. Hence, Option B is correct.",
+        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit. Aaron sits third to the right of Carter. Carter is from Finance. Henry is from Legal and sits fourth to the right of Carter. The executive from Tech sits at the rightmost end and is adjacent to Foster, who is from Operations. Drake sits second to the left of Ethan. The executive from Strategy sits immediately to the right of Henry. Gavin sits immediately to the left of the executive from Audit. Blake sits immediately to the left of Gavin."
       },
       {
         "q": 2,
@@ -360,8 +361,8 @@
           "D": "Fourth to the right"
         },
         "correct": "C",
-        "explanation": "Blake sits at position 2 and Henry sits at position 5. Position 5 is three positions to the right of position 2 (third to the right).",
-        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north in an auditorium. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit, though not necessarily in that order. Aaron sits third to the right of the executive from Finance. The executive from Tech sits at one of the extreme ends and is adjacent to Foster. Drake sits second to the left of Ethan, and neither of them is from Marketing or Legal. The executive from Strategy sits exactly between Henry and Blake. Gavin sits immediately to the left of the executive from Audit. Henry is from Legal and sits fourth to the right of Carter, who is from Finance. Foster is from Operations. Blake sits to the immediate left of Gavin."
+        "explanation": "The valid seating order is Carter, Blake, Gavin, Aaron, Henry, Drake, Foster, Ethan. Henry is at position 5 and Blake at position 2, so Henry is third to the right of Blake. Hence, Option C is correct.",
+        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit. Aaron sits third to the right of Carter. Carter is from Finance. Henry is from Legal and sits fourth to the right of Carter. The executive from Tech sits at the rightmost end and is adjacent to Foster, who is from Operations. Drake sits second to the left of Ethan. The executive from Strategy sits immediately to the right of Henry. Gavin sits immediately to the left of the executive from Audit. Blake sits immediately to the left of Gavin."
       },
       {
         "q": 3,
@@ -374,12 +375,12 @@
           "D": "Legal"
         },
         "correct": "C",
-        "explanation": "Gavin sits at position 6, directly to the left of Foster at position 7 (who belongs to Operations and sits adjacent to Audit at position 4, Aaron). The eight department assignments are uniquely mapped as: Carter (Finance), Blake (HR), Drake (Strategy), Aaron (Audit), Henry (Legal), Gavin (Marketing), Foster (Operations), and Ethan (Tech). Therefore, Gavin belongs to Marketing.",
-        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north in an auditorium. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit, though not necessarily in that order. Aaron sits third to the right of the executive from Finance. The executive from Tech sits at one of the extreme ends and is adjacent to Foster. Drake sits second to the left of Ethan, and neither of them is from Marketing or Legal. The executive from Strategy sits exactly between Henry and Blake. Gavin sits immediately to the left of the executive from Audit. Henry is from Legal and sits fourth to the right of Carter, who is from Finance. Foster is from Operations. Blake sits to the immediate left of Gavin."
+        "explanation": "The department assignments are Carter-Finance, Henry-Legal, Foster-Operations, Ethan-Tech, Drake-Strategy, Aaron-Audit, Blake-HR, leaving Marketing for Gavin. Hence, Option C is correct.",
+        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit. Aaron sits third to the right of Carter. Carter is from Finance. Henry is from Legal and sits fourth to the right of Carter. The executive from Tech sits at the rightmost end and is adjacent to Foster, who is from Operations. Drake sits second to the left of Ethan. The executive from Strategy sits immediately to the right of Henry. Gavin sits immediately to the left of the executive from Audit. Blake sits immediately to the left of Gavin."
       },
       {
         "q": 4,
-        "topic": "Charts and Graphs",
+        "topic": "Arrangements",
         "question": "Which pair of executives occupies the extreme ends of the seating row?",
         "options": {
           "A": "Carter and Foster",
@@ -388,22 +389,22 @@
           "D": "Carter and Ethan"
         },
         "correct": "D",
-        "explanation": "Position 1 on the far left is occupied by Carter (Finance), and position 8 on the far right is occupied by Ethan (Tech). Thus, Carter and Ethan occupy the extreme ends.",
-        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north in an auditorium. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit, though not necessarily in that order. Aaron sits third to the right of the executive from Finance. The executive from Tech sits at one of the extreme ends and is adjacent to Foster. Drake sits second to the left of Ethan, and neither of them is from Marketing or Legal. The executive from Strategy sits exactly between Henry and Blake. Gavin sits immediately to the left of the executive from Audit. Henry is from Legal and sits fourth to the right of Carter, who is from Finance. Foster is from Operations. Blake sits to the immediate left of Gavin."
+        "explanation": "Carter occupies position 1 and Ethan occupies position 8. Therefore, Carter and Ethan occupy the two extreme ends. Hence, Option D is correct.",
+        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit. Aaron sits third to the right of Carter. Carter is from Finance. Henry is from Legal and sits fourth to the right of Carter. The executive from Tech sits at the rightmost end and is adjacent to Foster, who is from Operations. Drake sits second to the left of Ethan. The executive from Strategy sits immediately to the right of Henry. Gavin sits immediately to the left of the executive from Audit. Blake sits immediately to the left of Gavin."
       },
       {
         "q": 5,
         "topic": "Games and Tournaments",
         "question": "What score did Zenith give to project Alpha?",
         "options": {
-          "A": "40",
-          "B": "50",
-          "C": "60",
-          "D": "70"
+          "A": "60",
+          "B": "70",
+          "C": "50",
+          "D": "80"
         },
-        "correct": "C",
-        "explanation": "Each analyst reviews two projects, and 8 scores are assigned (all unique values between 10 and 80 in multiples of 10, meaning the scores are 10, 20, 30, 40, 50, 60, 70, and 80). Since Zenith reviewed Alpha and Beta with Alpha = Beta + 20, Xander reviewed Beta (70) and Gamma (40), Yaris reviewed Gamma (70) and Delta (80) with sum = 150, and Walter reviewed Delta (50) and Alpha (100 is not in range, so Walter scored Alpha 10 or 30 or 60). Matching all unique score allocations cleanly: Zenith scored Beta 40 and Alpha 60. This satisfies the constraint that Zenith's score for Alpha is 20 points higher than Beta while staying strictly within the allowed 10–80 range. Thus, Zenith gave Alpha a score of 60.",
-        "passage": "Four analysts named Zenith, Yaris, Xander, and Walter evaluated four corporate projects named Alpha, Beta, Gamma, and Delta. Each analyst reviewed exactly two projects, and each project was reviewed by exactly two analysts. Every evaluation yielded a unique score from 10 to 80 in multiples of 10. No analyst gave the same score to both projects they reviewed. Zenith scored Alpha 20 points higher than Beta. Yaris scored Gamma 10 points lower than Delta. Xander gave his highest score of 70 to Beta. The total score received by project Gamma from both its reviewers was 110. Walter gave Delta a score of 50. Zenith did not review project Delta, and Xander did not review project Alpha. The sum of scores given by Yaris across his two projects was equal to the sum of scores given by Walter across his two projects."
+        "correct": "B",
+        "explanation": "Zenith gave Beta a score of 50. Since Zenith scored Alpha 20 points higher than Beta, Alpha received 50 + 20 = 70. Hence, Option B is correct.",
+        "passage": "Four analysts named Zenith, Yaris, Xander, and Walter evaluated four projects named Alpha, Beta, Gamma, and Delta. Each analyst reviewed exactly two projects, and each project was reviewed by exactly two analysts. Every evaluation yielded a unique score from 10 to 80 in multiples of 10, and no analyst gave the same score to both projects reviewed. Zenith reviewed Alpha and Beta and scored Alpha 20 points higher than Beta. Yaris reviewed Gamma and Delta and scored Gamma 10 points lower than Delta. Xander reviewed Beta and Gamma and gave Gamma his highest score of 80. Walter reviewed Alpha and Delta and gave Delta a score of 10. Zenith gave Beta a score of 50. The total score received by Gamma from its two reviewers was 110."
       },
       {
         "q": 6,
@@ -416,22 +417,22 @@
           "D": "Xander"
         },
         "correct": "A",
-        "explanation": "Walter awarded the lowest single score (10) across all project evaluations in the unique distribution set.",
-        "passage": "Four analysts named Zenith, Yaris, Xander, and Walter evaluated four corporate projects named Alpha, Beta, Gamma, and Delta. Each analyst reviewed exactly two projects, and each project was reviewed by exactly two analysts. Every evaluation yielded a unique score from 10 to 80 in multiples of 10. No analyst gave the same score to both projects they reviewed. Zenith scored Alpha 20 points higher than Beta. Yaris scored Gamma 10 points lower than Delta. Xander gave his highest score of 70 to Beta. The total score received by project Gamma from both its reviewers was 110. Walter gave Delta a score of 50. Zenith did not review project Delta, and Xander did not review project Alpha. The sum of scores given by Yaris across his two projects was equal to the sum of scores given by Walter across his two projects."
+        "explanation": "Walter gave Delta a score of 10. All other scores in the valid assignment are 20, 30, 40, 50, 60, 70, and 80. Therefore, Walter gave the lowest individual score. Hence, Option A is correct.",
+        "passage": "Four analysts named Zenith, Yaris, Xander, and Walter evaluated four projects named Alpha, Beta, Gamma, and Delta. Each analyst reviewed exactly two projects, and each project was reviewed by exactly two analysts. Every evaluation yielded a unique score from 10 to 80 in multiples of 10, and no analyst gave the same score to both projects reviewed. Zenith reviewed Alpha and Beta and scored Alpha 20 points higher than Beta. Yaris reviewed Gamma and Delta and scored Gamma 10 points lower than Delta. Xander reviewed Beta and Gamma and gave Gamma his highest score of 80. Walter reviewed Alpha and Delta and gave Delta a score of 10. Zenith gave Beta a score of 50. The total score received by Gamma from its two reviewers was 110."
       },
       {
         "q": 7,
         "topic": "Logic Puzzles",
         "question": "What was the total combined score received by project Delta from both its reviewers?",
         "options": {
-          "A": "110",
-          "B": "120",
-          "C": "125",
-          "D": "130"
+          "A": "40",
+          "B": "50",
+          "C": "60",
+          "D": "70"
         },
-        "correct": "D",
-        "explanation": "Project Delta was evaluated by Yaris (80) and Walter (50). The combined score for Delta is 80 + 50 = 130.",
-        "passage": "Four analysts named Zenith, Yaris, Xander, and Walter evaluated four corporate projects named Alpha, Beta, Gamma, and Delta. Each analyst reviewed exactly two projects, and each project was reviewed by exactly two analysts. Every evaluation yielded a unique score from 10 to 80 in multiples of 10. No analyst gave the same score to both projects they reviewed. Zenith scored Alpha 20 points higher than Beta. Yaris scored Gamma 10 points lower than Delta. Xander gave his highest score of 70 to Beta. The total score received by project Gamma from both its reviewers was 110. Walter gave Delta a score of 50. Zenith did not review project Delta, and Xander did not review project Alpha. The sum of scores given by Yaris across his two projects was equal to the sum of scores given by Walter across his two projects."
+        "correct": "B",
+        "explanation": "Yaris reviewed Delta and, because Yaris's Gamma score is 10 lower than Delta's, the valid assignment gives Yaris 40 for Delta. Walter gave Delta 10. Therefore, Delta's total score is 40 + 10 = 50. Hence, Option B is correct.",
+        "passage": "Four analysts named Zenith, Yaris, Xander, and Walter evaluated four projects named Alpha, Beta, Gamma, and Delta. Each analyst reviewed exactly two projects, and each project was reviewed by exactly two analysts. Every evaluation yielded a unique score from 10 to 80 in multiples of 10, and no analyst gave the same score to both projects reviewed. Zenith reviewed Alpha and Beta and scored Alpha 20 points higher than Beta. Yaris reviewed Gamma and Delta and scored Gamma 10 points lower than Delta. Xander reviewed Beta and Gamma and gave Gamma his highest score of 80. Walter reviewed Alpha and Delta and gave Delta a score of 10. Zenith gave Beta a score of 50. The total score received by Gamma from its two reviewers was 110."
       },
       {
         "q": 8,
@@ -444,8 +445,8 @@
           "D": "Alpha and Delta"
         },
         "correct": "B",
-        "explanation": "Xander evaluated Beta (scoring 70) and Gamma (scoring 40). Hence, Xander evaluated Beta and Gamma.",
-        "passage": "Four analysts named Zenith, Yaris, Xander, and Walter evaluated four corporate projects named Alpha, Beta, Gamma, and Delta. Each analyst reviewed exactly two projects, and each project was reviewed by exactly two analysts. Every evaluation yielded a unique score from 10 to 80 in multiples of 10. No analyst gave the same score to both projects they reviewed. Zenith scored Alpha 20 points higher than Beta. Yaris scored Gamma 10 points lower than Delta. Xander gave his highest score of 70 to Beta. The total score received by project Gamma from both its reviewers was 110. Walter gave Delta a score of 50. Zenith did not review project Delta, and Xander did not review project Alpha. The sum of scores given by Yaris across his two projects was equal to the sum of scores given by Walter across his two projects."
+        "explanation": "The set explicitly states that Xander reviewed Beta and Gamma. Therefore, the correct combination is Beta and Gamma, which is Option B.",
+        "passage": "Four analysts named Zenith, Yaris, Xander, and Walter evaluated four projects named Alpha, Beta, Gamma, and Delta. Each analyst reviewed exactly two projects, and each project was reviewed by exactly two analysts. Every evaluation yielded a unique score from 10 to 80 in multiples of 10, and no analyst gave the same score to both projects reviewed. Zenith reviewed Alpha and Beta and scored Alpha 20 points higher than Beta. Yaris reviewed Gamma and Delta and scored Gamma 10 points lower than Delta. Xander reviewed Beta and Gamma and gave Gamma his highest score of 80. Walter reviewed Alpha and Delta and gave Delta a score of 10. Zenith gave Beta a score of 50. The total score received by Gamma from its two reviewers was 110."
       },
       {
         "q": 9,
@@ -514,8 +515,8 @@
           "D": "Chemistry"
         },
         "correct": "D",
-        "explanation": "Tina teaches Biology (Train). Sam teaches Mathematics (Scooter). Quentin travels by Bicycle and teaches Physics. Paul does not teach Economics or Physics, which leaves Chemistry for Paul. Rachel teaches Economics (Car). Thus, Paul teaches Chemistry.",
-        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Physics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
+        "explanation": "Tina teaches Biology and travels by Train. Sam teaches Mathematics. Quentin travels by Bicycle and cannot teach Economics or Biology, so Quentin must teach Physics. Paul cannot teach Economics or Physics; with Biology and Mathematics already assigned, Paul must teach Chemistry. Rachel therefore teaches Economics and travels by Car. Hence, Paul teaches Chemistry, so Option D is correct.",
+        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Economics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
       },
       {
         "q": 14,
@@ -528,8 +529,8 @@
           "D": "Car"
         },
         "correct": "B",
-        "explanation": "Sam cannot use Bus or Train. Car is used by Rachel (Economics), and Bicycle is used by Quentin. The only remaining transport mode for Sam is Scooter.",
-        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Physics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
+        "explanation": "Sam cannot use Bus or Train. Tina uses Train and Quentin uses Bicycle. Rachel teaches Economics and therefore uses Car. The only remaining transport mode for Sam is Scooter. Therefore, Option B is correct.",
+        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Economics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
       },
       {
         "q": 15,
@@ -542,8 +543,8 @@
           "D": "Sam"
         },
         "correct": "A",
-        "explanation": "The Economics teacher travels by Car. Paul teaches Chemistry, Sam teaches Mathematics, Tina teaches Biology, and Quentin teaches Physics. Thus, Rachel teaches Economics and travels by Car.",
-        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Physics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
+        "explanation": "The Economics teacher travels by Car. From the subject assignments, Rachel teaches Economics. Therefore, Rachel travels to the university by Car, which is Option A.",
+        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Economics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
       },
       {
         "q": 16,
@@ -556,8 +557,8 @@
           "D": "Sam - Chemistry - Scooter"
         },
         "correct": "C",
-        "explanation": "Quentin travels by Bicycle and teaches Physics. Thus, the matching combination is Quentin - Physics - Bicycle.",
-        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Physics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
+        "explanation": "Quentin travels by Bicycle and cannot teach Economics or Biology. Since Tina teaches Biology and Sam teaches Mathematics, Quentin must teach Physics. Therefore, the correct Professor–Subject–Transport combination is Quentin - Physics - Bicycle, which is Option C.",
+        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Economics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
       },
       {
         "q": 17,
@@ -934,3 +935,4 @@
     ]
   }
 }
+

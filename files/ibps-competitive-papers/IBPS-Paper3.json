@@ -202,17 +202,17 @@
       },
       {
         "q": 14,
-        "topic": "Vocabulary in context",
-        "question": "The central bank has (A) / recently announced a series of (B) / new financial regulations (C) / which is expected to boost the economy. (D) / No error (E)",
+        "topic": "Error detection",
+        "question": "The committee, along with its advisors, (A) / have approved the proposal (B) / after reviewing the financial implications (C) / of the new policy. (D) / No error (E)",
         "options": {
-          "A": "The central bank has",
-          "B": "recently announced a series of",
-          "C": "new financial regulations",
-          "D": "which is expected to boost the economy.",
+          "A": "The committee, along with its advisors,",
+          "B": "have approved the proposal",
+          "C": "after reviewing the financial implications",
+          "D": "of the new policy.",
           "E": "No error"
         },
-        "correct": "D",
-        "explanation": "The error lies in part (D). The relative pronoun \"which\" refers to the plural noun \"regulations\". Therefore, the plural verb \"are\" should be used instead of the singular verb \"is\". The correct phrase is \"which are expected to boost the economy.\""
+        "correct": "B",
+        "explanation": "The error lies in part (B). The main subject is \"The committee\", which is singular. The phrase \"along with its advisors\" does not change the number of the main subject. Therefore, the singular verb \"has\" should be used instead of \"have\". The correct phrase is \"has approved the proposal.\""
       },
       {
         "q": 15,
@@ -1084,7 +1084,7 @@
       },
       {
         "q": 11,
-        "topic": "Circular seating",
+        "topic": "Linear seating",
         "question": "Who sits at the extreme right end of the row?",
         "options": {
           "A": "O",
@@ -1098,7 +1098,7 @@
       },
       {
         "q": 12,
-        "topic": "Circular seating",
+        "topic": "Linear seating",
         "question": "Who sits second to the left of P?",
         "options": {
           "A": "M",
@@ -1112,7 +1112,7 @@
       },
       {
         "q": 13,
-        "topic": "Circular seating",
+        "topic": "Linear seating",
         "question": "How many people sit between R and N?",
         "options": {
           "A": "One",
@@ -1126,7 +1126,7 @@
       },
       {
         "q": 14,
-        "topic": "Circular seating",
+        "topic": "Linear seating",
         "question": "Who sits exactly in the middle of the row?",
         "options": {
           "A": "M",
@@ -1140,7 +1140,7 @@
       },
       {
         "q": 15,
-        "topic": "Circular seating",
+        "topic": "Linear seating",
         "question": "What is the position of S with respect to M?",
         "options": {
           "A": "Second to the left",
@@ -1247,8 +1247,8 @@
           "D": "Neither conclusion I nor II follows",
           "E": "Either conclusion I or II follows"
         },
-        "correct": "B",
-        "explanation": "All Oranges are Bananas, and Some Apples are Oranges. Therefore, the Apples that are Oranges must also be Bananas (Conclusion I follows). Since No Banana is a Grapes, and some Apples are Bananas, that specific portion of Apples cannot ever be Grapes. Hence, All Apples can never be Grapes (Conclusion II follows). Both conclusions logically follow."
+        "correct": "A",
+        "explanation": "Some Apples are Oranges, and all Oranges are Bananas. Therefore, the Apples that are Oranges are also Bananas. Since no Banana is a Grapes, those Apples cannot be Grapes. Thus, Some Apples are Bananas (Conclusion I follows). However, this does not establish that all Apples are not Grapes, because the statements do not provide information about Apples that are not Oranges. Therefore, Conclusion II does not follow. Hence, only Conclusion I follows."
       },
       {
         "q": 23,
@@ -1261,8 +1261,8 @@
           "D": "Neither conclusion I nor II follows",
           "E": "Either conclusion I or II follows"
         },
-        "correct": "C",
-        "explanation": "\"Only a few Pens are Pencils\" establishes that Some Pens are Pencils AND Some Pens are not Pencils. Thus, Conclusion I follows immediately. All Erasers are Markers, meaning Erasers are a subset of Markers. Since No Pencil is an Eraser, the Markers that are Erasers can never be Pencils. Thus, Some Markers are not Pencils (Conclusion II follows). Both are true."
+        "correct": "A",
+        "explanation": "\"Only a few Pens are Pencils\" establishes that some Pens are not Pencils, so Conclusion I follows. From \"No Pencil is an Eraser\" and \"All Erasers are Markers\", we can infer that any Eraser, if present, would be a Marker that is not a Pencil. However, the statements do not establish that any Erasers exist. Therefore, the existence of some Markers that are not Pencils cannot be concluded. Hence, only Conclusion I follows."
       },
       {
         "q": 24,

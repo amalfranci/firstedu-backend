@@ -39,79 +39,83 @@
         "question": "Which of the following best summarizes the main thesis of the passage?",
         "options": {
           "A": "The expansion of digital connectivity has successfully created a global village of mutual understanding.",
-          "B": "Prioritizing engagement velocity over verification on digital platforms fractures shared reality and undermines constructive public discourse.",
+          "B": "Digital platforms can intensify social fragmentation by rewarding emotionally charged engagement and insulating users from dissent, weakening constructive public discourse.",
           "C": "Online platforms can easily restore social trust by hiring more human content moderators.",
           "D": "Technological algorithms are entirely neutral tools whose societal impacts depend solely on user behavior."
         },
         "correct": "B",
-        "explanation": "The central argument is that prioritizing engagement over truth fractures shared reality and damages public discourse. Therefore, option (B) is correct.",
+        "explanation": "The passage argues that engagement-driven recommendation systems can create insulated groups, turn disagreement into tribal conflict, and weaken constructive public debate. Therefore, option (B) best captures the thesis.",
         "passage": "When print culture first expanded across Europe, traditional elites worried that the proliferation of cheap books would fracture shared cultural standards. Centuries later, the digital revolution has renewed this anxiety with vastly greater intensity. Today, online platforms connect billions of users, yet instead of creating a global village of mutual understanding, they frequently engender isolated digital tribes. Part of this phenomenon stems from how recommendation engines operate. To keep users engaged, platforms naturally surface content that triggers strong emotional responses, particularly indignation and moral outrage. Over time, individuals find themselves surrounded by viewpoints that reinforce their preexisting beliefs, gradually eroding their capacity to engage with dissenting arguments. Crucially, this architecture changes the nature of public debate itself. In a traditional public square, disagreement is friction-filled but often constrained by shared community norms. In digital spaces, however, disagreement is frequently gamified; dissenters are cast not as citizens with competing ideas, but as existential threats. When political discourse becomes an extension of tribal warfare, compromise ceases to be a virtue and is instead branded as betrayal. Rebuilding a functioning public sphere requires looking beyond simple content moderation. It demands reimagining digital spaces so that they encourage deliberative friction rather than frictionless echo chambers."
       },
       {
         "q": 4,
         "topic": "Inference",
-        "question": "What can be inferred about the author's view on solving the current epistemic crisis?",
+        "question": "What can be inferred about the author's preferred approach to improving digital public debate?",
         "options": {
-          "A": "It requires a fundamental redesign of digital incentives alongside improved critical media literacy",
-          "B": "It depends exclusively on government-enforced truth monopolies",
-          "C": "It will happen automatically as younger generations adapt to technology",
-          "D": "It can be fully achieved by banning social media applications entirely"
+          "A": "It requires redesigning digital spaces so that they encourage meaningful disagreement rather than insulated echo chambers.",
+          "B": "It depends exclusively on government-enforced truth monopolies.",
+          "C": "It will happen automatically as younger generations adapt to technology.",
+          "D": "It can be fully achieved by banning social media applications entirely."
         },
         "correct": "A",
-        "explanation": "The author explicitly states that fixing the crisis requires more than fact-checking, demanding a systemic redesign of digital incentives and media literacy. Therefore, option (A) is correct.",
+        "explanation": "The author concludes that rebuilding the public sphere requires reimagining digital spaces to encourage deliberative friction instead of frictionless echo chambers. Therefore, option (A) is correct.",
         "passage": "When print culture first expanded across Europe, traditional elites worried that the proliferation of cheap books would fracture shared cultural standards. Centuries later, the digital revolution has renewed this anxiety with vastly greater intensity. Today, online platforms connect billions of users, yet instead of creating a global village of mutual understanding, they frequently engender isolated digital tribes. Part of this phenomenon stems from how recommendation engines operate. To keep users engaged, platforms naturally surface content that triggers strong emotional responses, particularly indignation and moral outrage. Over time, individuals find themselves surrounded by viewpoints that reinforce their preexisting beliefs, gradually eroding their capacity to engage with dissenting arguments. Crucially, this architecture changes the nature of public debate itself. In a traditional public square, disagreement is friction-filled but often constrained by shared community norms. In digital spaces, however, disagreement is frequently gamified; dissenters are cast not as citizens with competing ideas, but as existential threats. When political discourse becomes an extension of tribal warfare, compromise ceases to be a virtue and is instead branded as betrayal. Rebuilding a functioning public sphere requires looking beyond simple content moderation. It demands reimagining digital spaces so that they encourage deliberative friction rather than frictionless echo chambers."
       },
       {
         "q": 5,
         "topic": "Inference",
-        "question": "According to the passage, recommendation engines contribute to the formation of digital tribes primarily by:",
+        "question": "Why does the author begin by referring to anxieties surrounding the expansion of print culture?",
         "options": {
-          "A": "Surfacing content that provokes strong emotional reactions and keeps users engaged",
-          "B": "Forcing users to pay subscription fees to access political news",
-          "C": "Restricting internet access in rural and developing communities",
-          "D": "Deliberately censoring academic research and verified journalism"
+          "A": "To show that fears about technological change producing cultural fragmentation predate the digital era.",
+          "B": "To argue that printed books caused more political conflict than digital platforms.",
+          "C": "To prove that traditional elites successfully prevented the spread of cheap books.",
+          "D": "To establish that print culture and digital culture have identical social effects."
         },
         "correct": "A",
-        "explanation": "The author explains that recommendation engines naturally promote content triggering strong emotional responses to keep users engaged, leading to isolated groups. Therefore, option (A) is correct."
+        "explanation": "The opening comparison establishes that concern about new communication technologies fragmenting shared cultural standards is not unique to the digital age. Therefore, option (A) is correct.",
+        "passage": "When print culture first expanded across Europe, traditional elites worried that the proliferation of cheap books would fracture shared cultural standards. Centuries later, the digital revolution has renewed this anxiety with vastly greater intensity. Today, online platforms connect billions of users, yet instead of creating a global village of mutual understanding, they frequently engender isolated digital tribes. Part of this phenomenon stems from how recommendation engines operate. To keep users engaged, platforms naturally surface content that triggers strong emotional responses, particularly indignation and moral outrage. Over time, individuals find themselves surrounded by viewpoints that reinforce their preexisting beliefs, gradually eroding their capacity to engage with dissenting arguments. Crucially, this architecture changes the nature of public debate itself. In a traditional public square, disagreement is friction-filled but often constrained by shared community norms. In digital spaces, however, disagreement is frequently gamified; dissenters are cast not as citizens with competing ideas, but as existential threats. When political discourse becomes an extension of tribal warfare, compromise ceases to be a virtue and is instead branded as betrayal. Rebuilding a functioning public sphere requires looking beyond simple content moderation. It demands reimagining digital spaces so that they encourage deliberative friction rather than frictionless echo chambers."
       },
       {
         "q": 6,
         "topic": "Inference",
-        "question": "The author argues that modern digital discourse resembles tribal warfare because:",
+        "question": "In the final sentence, 'deliberative friction' most nearly refers to:",
         "options": {
-          "A": "Government regulators have mandated strict partisan alignments online",
-          "B": "Political opponents are framed as existential threats rather than citizens with differing views",
-          "C": "Citizens have completely stopped participating in offline civic organizations",
-          "D": "Traditional newspapers no longer report on legislative elections"
+          "A": "Reducing all disagreement so that online discussions remain harmonious.",
+          "B": "Encouraging substantive engagement with differing viewpoints rather than insulating users from disagreement.",
+          "C": "Increasing the speed at which controversial content is circulated.",
+          "D": "Replacing online political discussion with traditional print media."
         },
         "correct": "B",
-        "explanation": "The passage notes that in digital spaces, dissenters are cast as existential threats rather than fellow citizens, fueling tribal hostility. Therefore, option (B) is correct."
+        "explanation": "The phrase is contrasted with 'frictionless echo chambers', so it refers to retaining meaningful disagreement and engagement with opposing viewpoints. Therefore, option (B) is correct.",
+        "passage": "When print culture first expanded across Europe, traditional elites worried that the proliferation of cheap books would fracture shared cultural standards. Centuries later, the digital revolution has renewed this anxiety with vastly greater intensity. Today, online platforms connect billions of users, yet instead of creating a global village of mutual understanding, they frequently engender isolated digital tribes. Part of this phenomenon stems from how recommendation engines operate. To keep users engaged, platforms naturally surface content that triggers strong emotional responses, particularly indignation and moral outrage. Over time, individuals find themselves surrounded by viewpoints that reinforce their preexisting beliefs, gradually eroding their capacity to engage with dissenting arguments. Crucially, this architecture changes the nature of public debate itself. In a traditional public square, disagreement is friction-filled but often constrained by shared community norms. In digital spaces, however, disagreement is frequently gamified; dissenters are cast not as citizens with competing ideas, but as existential threats. When political discourse becomes an extension of tribal warfare, compromise ceases to be a virtue and is instead branded as betrayal. Rebuilding a functioning public sphere requires looking beyond simple content moderation. It demands reimagining digital spaces so that they encourage deliberative friction rather than frictionless echo chambers."
       },
       {
         "q": 7,
-        "topic": "Para Summary",
-        "question": "Which of the following best summarizes the main thesis of the passage?",
+        "topic": "Inference",
+        "question": "Which assumption about digital connectivity does the passage most clearly challenge?",
         "options": {
-          "A": "The expansion of digital connectivity has successfully created a global village of mutual understanding.",
-          "B": "Prioritizing engagement velocity over verification on digital platforms fractures shared reality and undermines constructive public discourse.",
-          "C": "Online platforms can easily restore social trust by hiring more human content moderators.",
-          "D": "Technological algorithms are entirely neutral tools whose societal impacts depend solely on user behavior."
+          "A": "Digital platforms can connect very large numbers of people.",
+          "B": "Users sometimes encounter politically controversial material online.",
+          "C": "Recommendation systems can influence what users see.",
+          "D": "Greater connectivity by itself will necessarily produce greater mutual understanding."
         },
-        "correct": "B",
-        "explanation": "The central argument is that prioritizing engagement over truth fractures shared reality and damages public discourse. Therefore, option (B) is correct."
+        "correct": "D",
+        "explanation": "The passage explicitly contrasts billions of connected users with the emergence of isolated digital tribes, challenging the assumption that connectivity automatically produces mutual understanding. Therefore, option (D) is correct.",
+        "passage": "When print culture first expanded across Europe, traditional elites worried that the proliferation of cheap books would fracture shared cultural standards. Centuries later, the digital revolution has renewed this anxiety with vastly greater intensity. Today, online platforms connect billions of users, yet instead of creating a global village of mutual understanding, they frequently engender isolated digital tribes. Part of this phenomenon stems from how recommendation engines operate. To keep users engaged, platforms naturally surface content that triggers strong emotional responses, particularly indignation and moral outrage. Over time, individuals find themselves surrounded by viewpoints that reinforce their preexisting beliefs, gradually eroding their capacity to engage with dissenting arguments. Crucially, this architecture changes the nature of public debate itself. In a traditional public square, disagreement is friction-filled but often constrained by shared community norms. In digital spaces, however, disagreement is frequently gamified; dissenters are cast not as citizens with competing ideas, but as existential threats. When political discourse becomes an extension of tribal warfare, compromise ceases to be a virtue and is instead branded as betrayal. Rebuilding a functioning public sphere requires looking beyond simple content moderation. It demands reimagining digital spaces so that they encourage deliberative friction rather than frictionless echo chambers."
       },
       {
         "q": 8,
-        "topic": "Inference",
-        "question": "What can be inferred about the author's view on solving the current epistemic crisis?",
+        "topic": "Application",
+        "question": "Which of the following platform changes would be most consistent with the author's recommendation?",
         "options": {
-          "A": "It requires a fundamental redesign of digital incentives alongside improved critical media literacy",
-          "B": "It depends exclusively on government-enforced truth monopolies",
-          "C": "It will happen automatically as younger generations adapt to technology",
-          "D": "It can be fully achieved by banning social media applications entirely"
+          "A": "Increasing the promotion of content that generates the strongest outrage.",
+          "B": "Personalizing feeds so that users encounter only views matching their existing beliefs.",
+          "C": "Designing recommendation systems to expose users to reasoned disagreement and reduce incentives for outrage-driven engagement.",
+          "D": "Removing all political discussion from digital platforms."
         },
-        "correct": "A",
-        "explanation": "The author explicitly states that fixing the crisis requires more than fact-checking, demanding a systemic redesign of digital incentives and media literacy. Therefore, option (A) is correct."
+        "correct": "C",
+        "explanation": "The author calls for digital spaces that encourage deliberative friction rather than echo chambers. Option (C) directly reflects that recommendation.",
+        "passage": "When print culture first expanded across Europe, traditional elites worried that the proliferation of cheap books would fracture shared cultural standards. Centuries later, the digital revolution has renewed this anxiety with vastly greater intensity. Today, online platforms connect billions of users, yet instead of creating a global village of mutual understanding, they frequently engender isolated digital tribes. Part of this phenomenon stems from how recommendation engines operate. To keep users engaged, platforms naturally surface content that triggers strong emotional responses, particularly indignation and moral outrage. Over time, individuals find themselves surrounded by viewpoints that reinforce their preexisting beliefs, gradually eroding their capacity to engage with dissenting arguments. Crucially, this architecture changes the nature of public debate itself. In a traditional public square, disagreement is friction-filled but often constrained by shared community norms. In digital spaces, however, disagreement is frequently gamified; dissenters are cast not as citizens with competing ideas, but as existential threats. When political discourse becomes an extension of tribal warfare, compromise ceases to be a virtue and is instead branded as betrayal. Rebuilding a functioning public sphere requires looking beyond simple content moderation. It demands reimagining digital spaces so that they encourage deliberative friction rather than frictionless echo chambers."
       },
       {
         "q": 9,
@@ -124,7 +128,7 @@
           "D": "Reducing warehousing costs and eliminating locked-up capital in inventory"
         },
         "correct": "D",
-        "explanation": "The text states that JIT was pioneered to minimize warehousing expenses and reduce capital lock-up. Therefore, option (D) is correct.",
+        "explanation": "The passage describes JIT as part of a strategy that left almost no inventory cushion, which improved efficiency but made supply chains more vulnerable to shocks. Option (D) captures the standard purpose of such inventory minimization, while the passage's broader point is that this efficiency came at the cost of resilience.",
         "passage": "For decades, corporate strategy was dominated by a singular obsession: ruthless optimization. Driven by the gospel of efficiency, manufacturing firms outsourced production across oceans and adopted Just-In-Time inventory systems, ensuring that components arrived at assembly plants with zero cushion for error. This model unlocked extraordinary short-term profitability and kept consumer prices remarkably stable. Yet, it treated unpredictability as an engineering error rather than an inherent feature of global commerce. Executives built supply chains that resembled polished glass instruments—immensely precise and efficient under calm conditions, but catastrophically brittle when struck by unexpected shocks. When pandemics, trade disputes, and regional conflicts disrupted critical shipping lanes, the hidden costs of this hyper-optimization became glaringly apparent. Factories stood idle not because demand vanished, but because a single missing microchip or gasket brought entire production lines to a halt. In response, boardrooms are finally waking up to the reality that resilience is more valuable than bare-bones efficiency. Companies are slowly re-shoring production, stockpiling critical materials, and building redundant supplier networks. While this pivot will inevitably lead to higher prices at the checkout counter, it is an essential insurance policy against a volatile world."
       },
       {
@@ -152,7 +156,7 @@
           "D": "Suing foreign governments for failing to maintain maritime security"
         },
         "correct": "A",
-        "explanation": "The passage notes that corporations are pivoting by re-shoring manufacturing, building inventory reserves, and diversifying vendors. Therefore, option (A) is correct.",
+        "explanation": "The passage says companies are re-shoring production, stockpiling critical materials, and building redundant supplier networks. Option (A) captures the first two responses.",
         "passage": "For decades, corporate strategy was dominated by a singular obsession: ruthless optimization. Driven by the gospel of efficiency, manufacturing firms outsourced production across oceans and adopted Just-In-Time inventory systems, ensuring that components arrived at assembly plants with zero cushion for error. This model unlocked extraordinary short-term profitability and kept consumer prices remarkably stable. Yet, it treated unpredictability as an engineering error rather than an inherent feature of global commerce. Executives built supply chains that resembled polished glass instruments—immensely precise and efficient under calm conditions, but catastrophically brittle when struck by unexpected shocks. When pandemics, trade disputes, and regional conflicts disrupted critical shipping lanes, the hidden costs of this hyper-optimization became glaringly apparent. Factories stood idle not because demand vanished, but because a single missing microchip or gasket brought entire production lines to a halt. In response, boardrooms are finally waking up to the reality that resilience is more valuable than bare-bones efficiency. Companies are slowly re-shoring production, stockpiling critical materials, and building redundant supplier networks. While this pivot will inevitably lead to higher prices at the checkout counter, it is an essential insurance policy against a volatile world."
       },
       {
@@ -172,54 +176,58 @@
       {
         "q": 13,
         "topic": "Inference",
-        "question": "Just-In-Time (JIT) manufacturing systems were originally designed with the primary aim of:",
+        "question": "What does the phrase 'treated unpredictability as an engineering error' imply about the earlier supply-chain model?",
         "options": {
-          "A": "Maximizing employment opportunities in local manufacturing sectors",
-          "B": "Ensuring complete self-sufficiency for national economies",
-          "C": "Completely eliminating the need for international cargo shipping",
-          "D": "Reducing warehousing costs and eliminating locked-up capital in inventory"
+          "A": "It deliberately ignored the role of technology in manufacturing.",
+          "B": "It assumed uncertainty could be designed away rather than treated as an inherent feature of commerce.",
+          "C": "It prioritized employee welfare over financial performance.",
+          "D": "It rejected all forms of quantitative optimization."
         },
-        "correct": "D",
-        "explanation": "The text states that JIT was pioneered to minimize warehousing expenses and reduce capital lock-up. Therefore, option (D) is correct."
+        "correct": "B",
+        "explanation": "The author criticizes the earlier model for treating uncertainty as something that should not exist rather than as an unavoidable feature of global commerce. Therefore, (B) is correct.",
+        "passage": "For decades, corporate strategy was dominated by a singular obsession: ruthless optimization. Driven by the gospel of efficiency, manufacturing firms outsourced production across oceans and adopted Just-In-Time inventory systems, ensuring that components arrived at assembly plants with zero cushion for error. This model unlocked extraordinary short-term profitability and kept consumer prices remarkably stable. Yet, it treated unpredictability as an engineering error rather than an inherent feature of global commerce. Executives built supply chains that resembled polished glass instruments—immensely precise and efficient under calm conditions, but catastrophically brittle when struck by unexpected shocks. When pandemics, trade disputes, and regional conflicts disrupted critical shipping lanes, the hidden costs of this hyper-optimization became glaringly apparent. Factories stood idle not because demand vanished, but because a single missing microchip or gasket brought entire production lines to a halt. In response, boardrooms are finally waking up to the reality that resilience is more valuable than bare-bones efficiency. Companies are slowly re-shoring production, stockpiling critical materials, and building redundant supplier networks. While this pivot will inevitably lead to higher prices at the checkout counter, it is an essential insurance policy against a volatile world."
       },
       {
         "q": 14,
         "topic": "Inference",
-        "question": "The author compares hyper-optimized supply chains to 'polished glass instruments' to emphasize:",
+        "question": "Which trade-off does the author explicitly associate with the shift toward resilient supply chains?",
         "options": {
-          "A": "Their extreme transparency and accountability to consumers",
-          "B": "Their fragile aesthetic beauty and artistic value",
-          "C": "Their complete reliance on glass and silicon components",
-          "D": "Their extreme precision under normal conditions contrasted with their brittleness under shock"
+          "A": "Higher operating and consumer costs in exchange for greater protection against disruption.",
+          "B": "Lower production costs in exchange for greater dependence on single suppliers.",
+          "C": "Lower consumer prices in exchange for reduced inventory.",
+          "D": "Higher short-term profits in exchange for greater exposure to shocks."
         },
-        "correct": "D",
-        "explanation": "The comparison highlights that while precise and efficient in calm conditions, they break easily under stress ('brittle and vulnerable'). Therefore, option (D) is correct."
+        "correct": "A",
+        "explanation": "The passage explicitly states that the resilience pivot will lead to higher prices but functions as insurance against a volatile world. Therefore, (A) is correct.",
+        "passage": "For decades, corporate strategy was dominated by a singular obsession: ruthless optimization. Driven by the gospel of efficiency, manufacturing firms outsourced production across oceans and adopted Just-In-Time inventory systems, ensuring that components arrived at assembly plants with zero cushion for error. This model unlocked extraordinary short-term profitability and kept consumer prices remarkably stable. Yet, it treated unpredictability as an engineering error rather than an inherent feature of global commerce. Executives built supply chains that resembled polished glass instruments—immensely precise and efficient under calm conditions, but catastrophically brittle when struck by unexpected shocks. When pandemics, trade disputes, and regional conflicts disrupted critical shipping lanes, the hidden costs of this hyper-optimization became glaringly apparent. Factories stood idle not because demand vanished, but because a single missing microchip or gasket brought entire production lines to a halt. In response, boardrooms are finally waking up to the reality that resilience is more valuable than bare-bones efficiency. Companies are slowly re-shoring production, stockpiling critical materials, and building redundant supplier networks. While this pivot will inevitably lead to higher prices at the checkout counter, it is an essential insurance policy against a volatile world."
       },
       {
         "q": 15,
-        "topic": "Inference",
-        "question": "According to the passage, corporations are currently responding to supply chain vulnerabilities by:",
+        "topic": "Purpose",
+        "question": "Why does the author mention a missing microchip or gasket bringing an entire production line to a halt?",
         "options": {
-          "A": "Re-shoring production capacity and building strategic inventory reserves",
-          "B": "Abandoning international trade altogether in favor of local barter economies",
-          "C": "Refusing to sell products to consumers in developing nations",
-          "D": "Suing foreign governments for failing to maintain maritime security"
+          "A": "To show that microchips are more valuable than other industrial components.",
+          "B": "To argue that factories should stop using automated equipment.",
+          "C": "To illustrate how a seemingly small disruption can cripple a highly optimized system.",
+          "D": "To prove that global trade disputes are caused mainly by component shortages."
         },
-        "correct": "A",
-        "explanation": "The passage notes that corporations are pivoting by re-shoring manufacturing, building inventory reserves, and diversifying vendors. Therefore, option (A) is correct."
+        "correct": "C",
+        "explanation": "The example demonstrates the brittleness of a tightly optimized system: one missing component can halt the entire production line. Therefore, (C) is correct.",
+        "passage": "For decades, corporate strategy was dominated by a singular obsession: ruthless optimization. Driven by the gospel of efficiency, manufacturing firms outsourced production across oceans and adopted Just-In-Time inventory systems, ensuring that components arrived at assembly plants with zero cushion for error. This model unlocked extraordinary short-term profitability and kept consumer prices remarkably stable. Yet, it treated unpredictability as an engineering error rather than an inherent feature of global commerce. Executives built supply chains that resembled polished glass instruments—immensely precise and efficient under calm conditions, but catastrophically brittle when struck by unexpected shocks. When pandemics, trade disputes, and regional conflicts disrupted critical shipping lanes, the hidden costs of this hyper-optimization became glaringly apparent. Factories stood idle not because demand vanished, but because a single missing microchip or gasket brought entire production lines to a halt. In response, boardrooms are finally waking up to the reality that resilience is more valuable than bare-bones efficiency. Companies are slowly re-shoring production, stockpiling critical materials, and building redundant supplier networks. While this pivot will inevitably lead to higher prices at the checkout counter, it is an essential insurance policy against a volatile world."
       },
       {
         "q": 16,
-        "topic": "Tone",
-        "question": "The author's attitude toward the ongoing shift from efficiency to resilience can best be described as:",
+        "topic": "Inference",
+        "question": "Which conclusion would the author most likely support?",
         "options": {
-          "A": "Complete indifference, arguing that supply chains fix themselves",
-          "B": "Pragmatic acceptance, recognizing that resilience is an inevitable cost of navigating a volatile world",
-          "C": "Uncritical optimism, predicting that prices will drop immediately",
-          "D": "Deep alarm, warning that reshoring will cause total economic collapse"
+          "A": "Efficiency should always be maximized even when it increases vulnerability to shocks.",
+          "B": "Resilience requires accepting some redundancy and inefficiency as a form of insurance.",
+          "C": "International trade should be eliminated completely.",
+          "D": "Higher consumer prices are proof that resilience strategies have failed."
         },
         "correct": "B",
-        "explanation": "The author notes the transition will introduce higher costs but accepts it as an inescapable insurance premium against fragility. Therefore, option (B) is correct."
+        "explanation": "The author explicitly argues that resilience is more valuable than bare-bones efficiency and describes redundancy and stockpiling as insurance against volatility. Therefore, (B) is correct.",
+        "passage": "For decades, corporate strategy was dominated by a singular obsession: ruthless optimization. Driven by the gospel of efficiency, manufacturing firms outsourced production across oceans and adopted Just-In-Time inventory systems, ensuring that components arrived at assembly plants with zero cushion for error. This model unlocked extraordinary short-term profitability and kept consumer prices remarkably stable. Yet, it treated unpredictability as an engineering error rather than an inherent feature of global commerce. Executives built supply chains that resembled polished glass instruments—immensely precise and efficient under calm conditions, but catastrophically brittle when struck by unexpected shocks. When pandemics, trade disputes, and regional conflicts disrupted critical shipping lanes, the hidden costs of this hyper-optimization became glaringly apparent. Factories stood idle not because demand vanished, but because a single missing microchip or gasket brought entire production lines to a halt. In response, boardrooms are finally waking up to the reality that resilience is more valuable than bare-bones efficiency. Companies are slowly re-shoring production, stockpiling critical materials, and building redundant supplier networks. While this pivot will inevitably lead to higher prices at the checkout counter, it is an essential insurance policy against a volatile world."
       },
       {
         "q": 17,
@@ -280,70 +288,74 @@
       {
         "q": 21,
         "topic": "Inference",
-        "question": "The traditional Kantian perspective on moral assessment asserts that:",
+        "question": "What paradox does the example of the two drivers reveal?",
         "options": {
-          "A": "An agent's moral worth should depend solely on factors within their control, independent of external outcomes",
-          "B": "Moral blame must be calculated strictly based on the financial damage caused by an action",
-          "C": "Intentions are completely irrelevant when evaluating human behavior",
-          "D": "Chance and luck are the primary determinants of human character"
+          "A": "People who perform the same risky act can receive different moral judgments because their outcomes differ.",
+          "B": "Drivers are usually judged only by their intentions and never by consequences.",
+          "C": "Legal systems always ignore the consequences of reckless behavior.",
+          "D": "Moral responsibility disappears whenever an outcome is accidental."
         },
         "correct": "A",
-        "explanation": "The text states that Kantian ethics maintains that moral worth is immune to external contingencies and depends on factors within control. Therefore, option (A) is correct."
+        "explanation": "The two drivers engage in identical reckless conduct, yet the one whose actions produce harm receives much greater blame. This demonstrates the influence of moral luck.",
+        "passage": "Our legal codes and everyday moral intuitions rest on a comforting assumption: that people should only be held accountable for outcomes they can control. If two drivers engage in identical reckless behavior—speeding through a red light while intoxicated—we expect them to face identical moral blame. Yet, reality often disrupts this tidy symmetry. Suppose Driver A strikes a pedestrian who unexpectedly steps off the curb, resulting in tragedy, while Driver B arrives home safely simply because the street happened to be empty. Society judges Driver A as a criminal guilty of manslaughter, while Driver B receives a minor traffic ticket for reckless driving. This phenomenon, known in philosophy as 'moral luck,' exposes a deep fracture in our ethical framework. We cling to the principle that luck should not determine moral worth, yet our actual reactions are heavily consequentialist. We look at the outcome rather than the intent alone. This tension suggests that human morality is far more exposed to sheer chance than we care to admit. Accepting moral luck forces us to abandon the comforting fiction that we are entirely masters of our own moral destiny, leaving us to navigate a world where outcomes frequently overshadow intentions."
       },
       {
         "q": 22,
-        "topic": "Purpose",
-        "question": "The author introduces the scenario of the two reckless drivers primarily to highlight:",
+        "topic": "Inference",
+        "question": "Why does the author describe the belief that we are 'entirely masters of our own moral destiny' as a comforting fiction?",
         "options": {
-          "A": "The glaring contradiction between the control principle and our actual consequentialist judgments",
-          "B": "The urgent need to increase traffic fines for speeding motorists",
-          "C": "The legal superiority of civil law over criminal prosecution",
-          "D": "The mathematical impossibility of predicting pedestrian movement"
+          "A": "Because people consciously fabricate legal evidence to avoid responsibility.",
+          "B": "Because moral rules are designed mainly to make people feel guilty.",
+          "C": "Because the belief in complete control is psychologically reassuring even though outcomes can be shaped by chance.",
+          "D": "Because human beings have no capacity to make intentional choices."
         },
-        "correct": "A",
-        "explanation": "The driver example illustrates the tension between our belief in the control principle and our actual outcome-based judgments. Therefore, option (A) is correct."
+        "correct": "C",
+        "explanation": "The passage argues that chance can alter outcomes and therefore moral judgments, making complete control an attractive but unrealistic assumption. Hence, (C) is correct.",
+        "passage": "Our legal codes and everyday moral intuitions rest on a comforting assumption: that people should only be held accountable for outcomes they can control. If two drivers engage in identical reckless behavior—speeding through a red light while intoxicated—we expect them to face identical moral blame. Yet, reality often disrupts this tidy symmetry. Suppose Driver A strikes a pedestrian who unexpectedly steps off the curb, resulting in tragedy, while Driver B arrives home safely simply because the street happened to be empty. Society judges Driver A as a criminal guilty of manslaughter, while Driver B receives a minor traffic ticket for reckless driving. This phenomenon, known in philosophy as 'moral luck,' exposes a deep fracture in our ethical framework. We cling to the principle that luck should not determine moral worth, yet our actual reactions are heavily consequentialist. We look at the outcome rather than the intent alone. This tension suggests that human morality is far more exposed to sheer chance than we care to admit. Accepting moral luck forces us to abandon the comforting fiction that we are entirely masters of our own moral destiny, leaving us to navigate a world where outcomes frequently overshadow intentions."
       },
       {
         "q": 23,
         "topic": "Inference",
-        "question": "The concept of 'moral luck' implies that:",
+        "question": "Which of the following would the author most likely agree with?",
         "options": {
-          "A": "Legal systems have successfully eliminated all forms of chance from trials",
-          "B": "People can easily control every consequence of their daily actions",
-          "C": "Intention is the only factor considered in modern jurisprudence",
-          "D": "Human moral life is inevitably exposed to unpredictable external contingencies"
+          "A": "Moral evaluation can be completely separated from consequences.",
+          "B": "Human moral judgments are often influenced by outcomes even when intentions and conduct are similar.",
+          "C": "Chance has no meaningful role in judgments of responsibility.",
+          "D": "The control principle has already been fully abandoned by modern societies."
         },
-        "correct": "D",
-        "explanation": "The passage concludes that moral life is inherently exposed to chance, undermining absolute control. Therefore, option (D) is correct."
+        "correct": "B",
+        "explanation": "The passage emphasizes that people often judge outcomes rather than intent alone, even when the underlying conduct is identical. Therefore, (B) is correct.",
+        "passage": "Our legal codes and everyday moral intuitions rest on a comforting assumption: that people should only be held accountable for outcomes they can control. If two drivers engage in identical reckless behavior—speeding through a red light while intoxicated—we expect them to face identical moral blame. Yet, reality often disrupts this tidy symmetry. Suppose Driver A strikes a pedestrian who unexpectedly steps off the curb, resulting in tragedy, while Driver B arrives home safely simply because the street happened to be empty. Society judges Driver A as a criminal guilty of manslaughter, while Driver B receives a minor traffic ticket for reckless driving. This phenomenon, known in philosophy as 'moral luck,' exposes a deep fracture in our ethical framework. We cling to the principle that luck should not determine moral worth, yet our actual reactions are heavily consequentialist. We look at the outcome rather than the intent alone. This tension suggests that human morality is far more exposed to sheer chance than we care to admit. Accepting moral luck forces us to abandon the comforting fiction that we are entirely masters of our own moral destiny, leaving us to navigate a world where outcomes frequently overshadow intentions."
       },
       {
         "q": 24,
-        "topic": "Inference",
-        "question": "In the context of the passage, the 'control principle' refers to:",
+        "topic": "Purpose",
+        "question": "What is the primary function of Driver B in the passage?",
         "options": {
-          "A": "The psychological ability to suppress emotional outbursts in public",
-          "B": "The rule that drivers must maintain physical command over their automobiles",
-          "C": "The government's authority to regulate dangerous commercial activities",
-          "D": "The intuition that individuals should only be held morally accountable for things they can control"
+          "A": "To demonstrate that reckless driving is harmless when no one is injured.",
+          "B": "To show that criminal penalties are always unfair.",
+          "C": "To prove that intentions are irrelevant to moral assessment.",
+          "D": "To provide a contrast showing how luck can produce different consequences from identical conduct."
         },
         "correct": "D",
-        "explanation": "The author defines the control principle as the intuition that people can only be morally blamed for what they control. Therefore, option (D) is correct."
+        "explanation": "Driver B performs the same reckless act as Driver A but avoids a tragic outcome by chance. This contrast is central to the author's explanation of moral luck. Therefore, (D) is correct.",
+        "passage": "Our legal codes and everyday moral intuitions rest on a comforting assumption: that people should only be held accountable for outcomes they can control. If two drivers engage in identical reckless behavior—speeding through a red light while intoxicated—we expect them to face identical moral blame. Yet, reality often disrupts this tidy symmetry. Suppose Driver A strikes a pedestrian who unexpectedly steps off the curb, resulting in tragedy, while Driver B arrives home safely simply because the street happened to be empty. Society judges Driver A as a criminal guilty of manslaughter, while Driver B receives a minor traffic ticket for reckless driving. This phenomenon, known in philosophy as 'moral luck,' exposes a deep fracture in our ethical framework. We cling to the principle that luck should not determine moral worth, yet our actual reactions are heavily consequentialist. We look at the outcome rather than the intent alone. This tension suggests that human morality is far more exposed to sheer chance than we care to admit. Accepting moral luck forces us to abandon the comforting fiction that we are entirely masters of our own moral destiny, leaving us to navigate a world where outcomes frequently overshadow intentions."
       }
     ],
     "Data Interpretation and Logical Reasoning": [
       {
         "q": 1,
         "topic": "Scheduling",
-        "question": "Which company won the Music event?",
+        "question": "Which event was held on Monday?",
         "options": {
-          "A": "Alpha",
-          "B": "Delta",
-          "C": "Gamma",
-          "D": "Epsilon"
+          "A": "Drama",
+          "B": "Quiz",
+          "C": "Dance",
+          "D": "Music"
         },
-        "correct": "C",
-        "explanation": "Tracing the schedule: Quiz is Tuesday (won by Beta), Drama is Wednesday, and Dance is Thursday (won by Delta, two days after Quiz). Monday is Music (won by Gamma). Therefore, option (C) holds.",
-        "passage": "Five multinational companies—Alpha, Beta, Gamma, Delta, and Epsilon—organized a corporate cultural festival featuring five distinct competitive events: Quiz, Debate, Drama, Dance, and Music. The events were held sequentially from Monday to Friday (one event per day). Each event was won by a different company. Additional clues regarding the schedule and winners are as follows: 1. The Quiz was held on a day immediately preceding the day of the Drama. 2. Beta won the Quiz, but its event was neither held on Monday nor on Friday. 3. Delta won the Dance competition, which was held exactly two days after the Quiz. 4. Gamma did not win the Drama or the Music event, and Epsilon won an event held earlier in the week than Gamma's event. 5. The Debate was not held on Wednesday, and Alpha did not win the Quiz or the Dance."
+        "correct": "D",
+        "explanation": "The Quiz cannot be Monday or Friday. Since Dance is exactly two days after Quiz and Debate is Friday, the only feasible sequence is Quiz on Tuesday, Drama on Wednesday, Dance on Thursday, leaving Music on Monday. Therefore, (D) is correct.",
+        "passage": "Five multinational companies—Alpha, Beta, Gamma, Delta, and Epsilon—organized a corporate cultural festival featuring five distinct competitive events: Quiz, Debate, Drama, Dance, and Music. The events were held sequentially from Monday to Friday, one event per day, and each event was won by a different company. The clues are: 1. The Quiz was held immediately before the Drama. 2. Beta won the Quiz, and the Quiz was neither on Monday nor Friday. 3. Delta won the Dance competition, which was held exactly two days after the Quiz. 4. Gamma did not win the Drama or Music. 5. The Debate was held on Friday. 6. Epsilon won the Drama."
       },
       {
         "q": 2,
@@ -356,12 +368,12 @@
           "D": "Tuesday"
         },
         "correct": "B",
-        "explanation": "Since Quiz is on Tuesday, Drama takes place immediately after on Wednesday. This points directly to option (B).",
-        "passage": "Five multinational companies—Alpha, Beta, Gamma, Delta, and Epsilon—organized a corporate cultural festival featuring five distinct competitive events: Quiz, Debate, Drama, Dance, and Music. The events were held sequentially from Monday to Friday (one event per day). Each event was won by a different company. Additional clues regarding the schedule and winners are as follows: 1. The Quiz was held on a day immediately preceding the day of the Drama. 2. Beta won the Quiz, but its event was neither held on Monday nor on Friday. 3. Delta won the Dance competition, which was held exactly two days after the Quiz. 4. Gamma did not win the Drama or the Music event, and Epsilon won an event held earlier in the week than Gamma's event. 5. The Debate was not held on Wednesday, and Alpha did not win the Quiz or the Dance."
+        "explanation": "The Quiz is immediately before Drama, and the only feasible Quiz day is Tuesday. Hence Drama is on Wednesday, so (B) is correct.",
+        "passage": "Five multinational companies—Alpha, Beta, Gamma, Delta, and Epsilon—organized a corporate cultural festival featuring five distinct competitive events: Quiz, Debate, Drama, Dance, and Music. The events were held sequentially from Monday to Friday, one event per day, and each event was won by a different company. The clues are: 1. The Quiz was held immediately before the Drama. 2. Beta won the Quiz, and the Quiz was neither on Monday nor Friday. 3. Delta won the Dance competition, which was held exactly two days after the Quiz. 4. Gamma did not win the Drama or Music. 5. The Debate was held on Friday. 6. Epsilon won the Drama."
       },
       {
         "q": 3,
-        "topic": "Logic Puzzles",
+        "topic": "Scheduling",
         "question": "Who won the Quiz competition?",
         "options": {
           "A": "Beta",
@@ -370,8 +382,8 @@
           "D": "Gamma"
         },
         "correct": "A",
-        "explanation": "Clue 2 explicitly states that Beta won the Quiz competition. This points directly to option (A).",
-        "passage": "Five multinational companies—Alpha, Beta, Gamma, Delta, and Epsilon—organized a corporate cultural festival featuring five distinct competitive events: Quiz, Debate, Drama, Dance, and Music. The events were held sequentially from Monday to Friday (one event per day). Each event was won by a different company. Additional clues regarding the schedule and winners are as follows: 1. The Quiz was held on a day immediately preceding the day of the Drama. 2. Beta won the Quiz, but its event was neither held on Monday nor on Friday. 3. Delta won the Dance competition, which was held exactly two days after the Quiz. 4. Gamma did not win the Drama or the Music event, and Epsilon won an event held earlier in the week than Gamma's event. 5. The Debate was not held on Wednesday, and Alpha did not win the Quiz or the Dance."
+        "explanation": "Clue 2 explicitly states that Beta won the Quiz. Therefore, (A) is correct.",
+        "passage": "Five multinational companies—Alpha, Beta, Gamma, Delta, and Epsilon—organized a corporate cultural festival featuring five distinct competitive events: Quiz, Debate, Drama, Dance, and Music. The events were held sequentially from Monday to Friday, one event per day, and each event was won by a different company. The clues are: 1. The Quiz was held immediately before the Drama. 2. Beta won the Quiz, and the Quiz was neither on Monday nor Friday. 3. Delta won the Dance competition, which was held exactly two days after the Quiz. 4. Gamma did not win the Drama or Music. 5. The Debate was held on Friday. 6. Epsilon won the Drama."
       },
       {
         "q": 4,
@@ -384,39 +396,25 @@
           "D": "Quiz"
         },
         "correct": "C",
-        "explanation": "With Monday (Music), Tuesday (Quiz), Wednesday (Drama), and Thursday (Dance) accounted for, Friday hosted the Debate. This points directly to option (C).",
-        "passage": "Five multinational companies—Alpha, Beta, Gamma, Delta, and Epsilon—organized a corporate cultural festival featuring five distinct competitive events: Quiz, Debate, Drama, Dance, and Music. The events were held sequentially from Monday to Friday (one event per day). Each event was won by a different company. Additional clues regarding the schedule and winners are as follows: 1. The Quiz was held on a day immediately preceding the day of the Drama. 2. Beta won the Quiz, but its event was neither held on Monday nor on Friday. 3. Delta won the Dance competition, which was held exactly two days after the Quiz. 4. Gamma did not win the Drama or the Music event, and Epsilon won an event held earlier in the week than Gamma's event. 5. The Debate was not held on Wednesday, and Alpha did not win the Quiz or the Dance."
+        "explanation": "Clue 5 explicitly places the Debate on Friday. Therefore, (C) is correct.",
+        "passage": "Five multinational companies—Alpha, Beta, Gamma, Delta, and Epsilon—organized a corporate cultural festival featuring five distinct competitive events: Quiz, Debate, Drama, Dance, and Music. The events were held sequentially from Monday to Friday, one event per day, and each event was won by a different company. The clues are: 1. The Quiz was held immediately before the Drama. 2. Beta won the Quiz, and the Quiz was neither on Monday nor Friday. 3. Delta won the Dance competition, which was held exactly two days after the Quiz. 4. Gamma did not win the Drama or Music. 5. The Debate was held on Friday. 6. Epsilon won the Drama."
       },
       {
         "q": 5,
         "topic": "Scheduling",
         "question": "Which company won the Debate event?",
         "options": {
-          "A": "Beta",
+          "A": "Alpha",
           "B": "Gamma",
           "C": "Epsilon",
-          "D": "Alpha"
+          "D": "Delta"
         },
-        "correct": "D",
-        "explanation": "Alpha did not win Quiz or Dance, and the remaining available win for Friday's Debate goes to Alpha. This points directly to option (D).",
-        "passage": "Five multinational companies—Alpha, Beta, Gamma, Delta, and Epsilon—organized a corporate cultural festival featuring five distinct competitive events: Quiz, Debate, Drama, Dance, and Music. The events were held sequentially from Monday to Friday (one event per day). Each event was won by a different company. Additional clues regarding the schedule and winners are as follows: 1. The Quiz was held on a day immediately preceding the day of the Drama. 2. Beta won the Quiz, but its event was neither held on Monday nor on Friday. 3. Delta won the Dance competition, which was held exactly two days after the Quiz. 4. Gamma did not win the Drama or the Music event, and Epsilon won an event held earlier in the week than Gamma's event. 5. The Debate was not held on Wednesday, and Alpha did not win the Quiz or the Dance."
+        "correct": "B",
+        "explanation": "Epsilon wins Drama and Beta wins Quiz; Delta wins Dance. Gamma cannot win Drama or Music, so Gamma must win the remaining Debate. Therefore, (B) is correct.",
+        "passage": "Five multinational companies—Alpha, Beta, Gamma, Delta, and Epsilon—organized a corporate cultural festival featuring five distinct competitive events: Quiz, Debate, Drama, Dance, and Music. The events were held sequentially from Monday to Friday, one event per day, and each event was won by a different company. The clues are: 1. The Quiz was held immediately before the Drama. 2. Beta won the Quiz, and the Quiz was neither on Monday nor Friday. 3. Delta won the Dance competition, which was held exactly two days after the Quiz. 4. Gamma did not win the Drama or Music. 5. The Debate was held on Friday. 6. Epsilon won the Drama."
       },
       {
         "q": 6,
-        "topic": "Scheduling",
-        "question": "Which event was held on Monday?",
-        "options": {
-          "A": "Drama",
-          "B": "Quiz",
-          "C": "Dance",
-          "D": "Music"
-        },
-        "correct": "D",
-        "explanation": "Monday was the opening day of the festival, hosting the Music event won by Gamma. Therefore, option (D) holds.",
-        "passage": "Five multinational companies—Alpha, Beta, Gamma, Delta, and Epsilon—organized a corporate cultural festival featuring five distinct competitive events: Quiz, Debate, Drama, Dance, and Music. The events were held sequentially from Monday to Friday (one event per day). Each event was won by a different company. Additional clues regarding the schedule and winners are as follows: 1. The Quiz was held on a day immediately preceding the day of the Drama. 2. Beta won the Quiz, but its event was neither held on Monday nor on Friday. 3. Delta won the Dance competition, which was held exactly two days after the Quiz. 4. Gamma did not win the Drama or the Music event, and Epsilon won an event held earlier in the week than Gamma's event. 5. The Debate was not held on Wednesday, and Alpha did not win the Quiz or the Dance."
-      },
-      {
-        "q": 7,
         "topic": "Scheduling",
         "question": "Which company won the Music event?",
         "options": {
@@ -425,101 +423,121 @@
           "C": "Gamma",
           "D": "Epsilon"
         },
+        "correct": "A",
+        "explanation": "Beta wins Quiz, Epsilon wins Drama, Delta wins Dance, and Gamma must win Debate. The remaining company, Alpha, wins Music. Therefore, (A) is correct.",
+        "passage": "Five multinational companies—Alpha, Beta, Gamma, Delta, and Epsilon—organized a corporate cultural festival featuring five distinct competitive events: Quiz, Debate, Drama, Dance, and Music. The events were held sequentially from Monday to Friday, one event per day, and each event was won by a different company. The clues are: 1. The Quiz was held immediately before the Drama. 2. Beta won the Quiz, and the Quiz was neither on Monday nor Friday. 3. Delta won the Dance competition, which was held exactly two days after the Quiz. 4. Gamma did not win the Drama or Music. 5. The Debate was held on Friday. 6. Epsilon won the Drama."
+      },
+      {
+        "q": 7,
+        "topic": "Scheduling",
+        "question": "Which company won the Drama event?",
+        "options": {
+          "A": "Alpha",
+          "B": "Beta",
+          "C": "Epsilon",
+          "D": "Gamma"
+        },
         "correct": "C",
-        "explanation": "Tracing the schedule: Quiz is Tuesday (won by Beta), Drama is Wednesday, and Dance is Thursday (won by Delta, two days after Quiz). Monday is Music (won by Gamma). Therefore, option (C) holds."
+        "explanation": "Clue 6 states that Epsilon won the Drama. Therefore, (C) is correct.",
+        "passage": "Five multinational companies—Alpha, Beta, Gamma, Delta, and Epsilon—organized a corporate cultural festival featuring five distinct competitive events: Quiz, Debate, Drama, Dance, and Music. The events were held sequentially from Monday to Friday, one event per day, and each event was won by a different company. The clues are: 1. The Quiz was held immediately before the Drama. 2. Beta won the Quiz, and the Quiz was neither on Monday nor Friday. 3. Delta won the Dance competition, which was held exactly two days after the Quiz. 4. Gamma did not win the Drama or Music. 5. The Debate was held on Friday. 6. Epsilon won the Drama."
       },
       {
         "q": 8,
         "topic": "Scheduling",
-        "question": "On which day was the Drama event held?",
+        "question": "Which event was won by Delta?",
         "options": {
-          "A": "Thursday",
-          "B": "Wednesday",
-          "C": "Monday",
-          "D": "Tuesday"
+          "A": "Quiz",
+          "B": "Drama",
+          "C": "Music",
+          "D": "Dance"
         },
-        "correct": "B",
-        "explanation": "Since Quiz is on Tuesday, Drama takes place immediately after on Wednesday. This points directly to option (B)."
+        "correct": "D",
+        "explanation": "Clue 3 states that Delta won the Dance competition. Therefore, (D) is correct.",
+        "passage": "Five multinational companies—Alpha, Beta, Gamma, Delta, and Epsilon—organized a corporate cultural festival featuring five distinct competitive events: Quiz, Debate, Drama, Dance, and Music. The events were held sequentially from Monday to Friday, one event per day, and each event was won by a different company. The clues are: 1. The Quiz was held immediately before the Drama. 2. Beta won the Quiz, and the Quiz was neither on Monday nor Friday. 3. Delta won the Dance competition, which was held exactly two days after the Quiz. 4. Gamma did not win the Drama or Music. 5. The Debate was held on Friday. 6. Epsilon won the Drama."
       },
       {
         "q": 9,
-        "topic": "Logic Puzzles",
-        "question": "Who won the Quiz competition?",
+        "topic": "Scheduling",
+        "question": "Which company won the event held on Wednesday?",
         "options": {
-          "A": "Beta",
+          "A": "Alpha",
           "B": "Epsilon",
-          "C": "Alpha",
-          "D": "Gamma"
+          "C": "Gamma",
+          "D": "Delta"
         },
-        "correct": "A",
-        "explanation": "Clue 2 explicitly states that Beta won the Quiz competition. This points directly to option (A)."
+        "correct": "B",
+        "explanation": "Wednesday is the Drama day, and Epsilon won Drama. Therefore, (B) is correct.",
+        "passage": "Five multinational companies—Alpha, Beta, Gamma, Delta, and Epsilon—organized a corporate cultural festival featuring five distinct competitive events: Quiz, Debate, Drama, Dance, and Music. The events were held sequentially from Monday to Friday, one event per day, and each event was won by a different company. The clues are: 1. The Quiz was held immediately before the Drama. 2. Beta won the Quiz, and the Quiz was neither on Monday nor Friday. 3. Delta won the Dance competition, which was held exactly two days after the Quiz. 4. Gamma did not win the Drama or Music. 5. The Debate was held on Friday. 6. Epsilon won the Drama."
       },
       {
         "q": 10,
         "topic": "Scheduling",
-        "question": "Which event took place on Friday?",
+        "question": "Which company won the event held on Thursday?",
         "options": {
-          "A": "Music",
-          "B": "Drama",
-          "C": "Debate",
-          "D": "Quiz"
+          "A": "Alpha",
+          "B": "Beta",
+          "C": "Delta",
+          "D": "Epsilon"
         },
         "correct": "C",
-        "explanation": "With Monday (Music), Tuesday (Quiz), Wednesday (Drama), and Thursday (Dance) accounted for, Friday hosted the Debate. This points directly to option (C)."
+        "explanation": "Thursday is the Dance day, and Delta won Dance. Therefore, (C) is correct.",
+        "passage": "Five multinational companies—Alpha, Beta, Gamma, Delta, and Epsilon—organized a corporate cultural festival featuring five distinct competitive events: Quiz, Debate, Drama, Dance, and Music. The events were held sequentially from Monday to Friday, one event per day, and each event was won by a different company. The clues are: 1. The Quiz was held immediately before the Drama. 2. Beta won the Quiz, and the Quiz was neither on Monday nor Friday. 3. Delta won the Dance competition, which was held exactly two days after the Quiz. 4. Gamma did not win the Drama or Music. 5. The Debate was held on Friday. 6. Epsilon won the Drama."
       },
       {
         "q": 11,
         "topic": "Scheduling",
-        "question": "Which company won the Debate event?",
+        "question": "Which day was the Dance competition held?",
         "options": {
-          "A": "Beta",
-          "B": "Gamma",
-          "C": "Epsilon",
-          "D": "Alpha"
+          "A": "Monday",
+          "B": "Tuesday",
+          "C": "Wednesday",
+          "D": "Thursday"
         },
         "correct": "D",
-        "explanation": "Alpha did not win Quiz or Dance, and the remaining available win for Friday's Debate goes to Alpha. This points directly to option (D)."
+        "explanation": "The Quiz is on Tuesday and Dance is exactly two days after the Quiz. Therefore, Dance is on Thursday, so (D) is correct.",
+        "passage": "Five multinational companies—Alpha, Beta, Gamma, Delta, and Epsilon—organized a corporate cultural festival featuring five distinct competitive events: Quiz, Debate, Drama, Dance, and Music. The events were held sequentially from Monday to Friday, one event per day, and each event was won by a different company. The clues are: 1. The Quiz was held immediately before the Drama. 2. Beta won the Quiz, and the Quiz was neither on Monday nor Friday. 3. Delta won the Dance competition, which was held exactly two days after the Quiz. 4. Gamma did not win the Drama or Music. 5. The Debate was held on Friday. 6. Epsilon won the Drama."
       },
       {
         "q": 12,
         "topic": "Scheduling",
-        "question": "Which event was held on Monday?",
+        "question": "Which event was held immediately before the Dance competition?",
         "options": {
-          "A": "Drama",
+          "A": "Music",
           "B": "Quiz",
-          "C": "Dance",
-          "D": "Music"
+          "C": "Drama",
+          "D": "Debate"
         },
-        "correct": "D",
-        "explanation": "Monday was the opening day of the festival, hosting the Music event won by Gamma. Therefore, option (D) holds."
+        "correct": "C",
+        "explanation": "Dance is on Thursday, so the event immediately before it, on Wednesday, was Drama. Therefore, (C) is correct.",
+        "passage": "Five multinational companies—Alpha, Beta, Gamma, Delta, and Epsilon—organized a corporate cultural festival featuring five distinct competitive events: Quiz, Debate, Drama, Dance, and Music. The events were held sequentially from Monday to Friday, one event per day, and each event was won by a different company. The clues are: 1. The Quiz was held immediately before the Drama. 2. Beta won the Quiz, and the Quiz was neither on Monday nor Friday. 3. Delta won the Dance competition, which was held exactly two days after the Quiz. 4. Gamma did not win the Drama or Music. 5. The Debate was held on Friday. 6. Epsilon won the Drama."
       },
       {
         "q": 13,
         "topic": "Arrangements",
-        "question": "Which discipline does executive F specialize in?",
+        "question": "Which discipline does scholar F specialize in?",
         "options": {
-          "A": "Chemistry",
+          "A": "Biology",
           "B": "Physics",
           "C": "Astronomy",
-          "D": "Biology"
+          "D": "Chemistry"
         },
-        "correct": "C",
-        "explanation": "Circular mapping of the researchers positions A to F allocates Astronomy to F. Therefore, option (C) holds.",
-        "passage": "Six research scholars—A, B, C, D, E, and F—are seated around a circular table facing the center, while each specializes in a distinct scientific discipline: Physics, Chemistry, Biology, Mathematics, Geology, and Astronomy (not necessarily in that order). The following multi-step conditions govern their seating arrangement: 1. The specialist in Mathematics is seated to the immediate right of A, who specializes in Geology. 2. B is seated diametrically opposite to the Mathematics specialist. 3. C specializes in Physics and is seated immediately to the left of D. 4. E is not adjacent to A, and the Astronomy specialist is seated immediately to the right of E. 5. F is neither the Mathematics nor the Chemistry specialist."
+        "correct": "A",
+        "explanation": "Taking A as a reference point and applying the right/left convention, the unique seating is A-F-B-E-C-D clockwise. The discipline assignment is A-Geology, B-Astronomy, C-Physics, D-Mathematics, E-Chemistry, F-Biology. Therefore, F specializes in Biology, so (A) is correct.",
+        "passage": "Six research scholars—A, B, C, D, E, and F—are seated around a circular table facing the center. Each specializes in one distinct discipline: Physics, Chemistry, Biology, Mathematics, Geology, and Astronomy. For people facing the center, right means counter-clockwise and left means clockwise. The clues are: 1. A specializes in Geology, and the Mathematics specialist is seated immediately to A's right. 2. B is seated diametrically opposite the Mathematics specialist. 3. C specializes in Physics and is seated immediately to the left of D. 4. E is not adjacent to A, and the Astronomy specialist is seated immediately to E's right. 5. F is neither the Mathematics nor the Chemistry specialist."
       },
       {
         "q": 14,
         "topic": "Arrangements",
-        "question": "Who is seated diametrically opposite to C (Physics)?",
+        "question": "Who is seated diametrically opposite C (Physics)?",
         "options": {
           "A": "A",
           "B": "F",
           "C": "E",
           "D": "B"
         },
-        "correct": "A",
-        "explanation": "C (Physics) is seated opposite scholar A (Geology) across the circular table. Thus, option (A) is correct.",
-        "passage": "Six research scholars—A, B, C, D, E, and F—are seated around a circular table facing the center, while each specializes in a distinct scientific discipline: Physics, Chemistry, Biology, Mathematics, Geology, and Astronomy (not necessarily in that order). The following multi-step conditions govern their seating arrangement: 1. The specialist in Mathematics is seated to the immediate right of A, who specializes in Geology. 2. B is seated diametrically opposite to the Mathematics specialist. 3. C specializes in Physics and is seated immediately to the left of D. 4. E is not adjacent to A, and the Astronomy specialist is seated immediately to the right of E. 5. F is neither the Mathematics nor the Chemistry specialist."
+        "correct": "B",
+        "explanation": "The unique clockwise seating is A-F-B-E-C-D. C is at the position opposite F. Therefore, (B) is correct.",
+        "passage": "Six research scholars—A, B, C, D, E, and F—are seated around a circular table facing the center. Each specializes in one distinct discipline: Physics, Chemistry, Biology, Mathematics, Geology, and Astronomy. For people facing the center, right means counter-clockwise and left means clockwise. The clues are: 1. A specializes in Geology, and the Mathematics specialist is seated immediately to A's right. 2. B is seated diametrically opposite the Mathematics specialist. 3. C specializes in Physics and is seated immediately to the left of D. 4. E is not adjacent to A, and the Astronomy specialist is seated immediately to E's right. 5. F is neither the Mathematics nor the Chemistry specialist."
       },
       {
         "q": 15,
@@ -532,8 +550,8 @@
           "D": "D"
         },
         "correct": "B",
-        "explanation": "Scholar E holds the Chemistry specialization, positioned strategically between Astronomy and Geology. Thus, option (B) is correct.",
-        "passage": "Six research scholars—A, B, C, D, E, and F—are seated around a circular table facing the center, while each specializes in a distinct scientific discipline: Physics, Chemistry, Biology, Mathematics, Geology, and Astronomy (not necessarily in that order). The following multi-step conditions govern their seating arrangement: 1. The specialist in Mathematics is seated to the immediate right of A, who specializes in Geology. 2. B is seated diametrically opposite to the Mathematics specialist. 3. C specializes in Physics and is seated immediately to the left of D. 4. E is not adjacent to A, and the Astronomy specialist is seated immediately to the right of E. 5. F is neither the Mathematics nor the Chemistry specialist."
+        "explanation": "The unique discipline assignment gives E as Chemistry. Therefore, (B) is correct.",
+        "passage": "Six research scholars—A, B, C, D, E, and F—are seated around a circular table facing the center. Each specializes in one distinct discipline: Physics, Chemistry, Biology, Mathematics, Geology, and Astronomy. For people facing the center, right means counter-clockwise and left means clockwise. The clues are: 1. A specializes in Geology, and the Mathematics specialist is seated immediately to A's right. 2. B is seated diametrically opposite the Mathematics specialist. 3. C specializes in Physics and is seated immediately to the left of D. 4. E is not adjacent to A, and the Astronomy specialist is seated immediately to E's right. 5. F is neither the Mathematics nor the Chemistry specialist."
       },
       {
         "q": 16,
@@ -545,23 +563,23 @@
           "C": "F",
           "D": "D"
         },
-        "correct": "D",
-        "explanation": "Scholar D is seated to the immediate left of B in the circular arrangement. Consequently, option (D) is the right choice.",
-        "passage": "Six research scholars—A, B, C, D, E, and F—are seated around a circular table facing the center, while each specializes in a distinct scientific discipline: Physics, Chemistry, Biology, Mathematics, Geology, and Astronomy (not necessarily in that order). The following multi-step conditions govern their seating arrangement: 1. The specialist in Mathematics is seated to the immediate right of A, who specializes in Geology. 2. B is seated diametrically opposite to the Mathematics specialist. 3. C specializes in Physics and is seated immediately to the left of D. 4. E is not adjacent to A, and the Astronomy specialist is seated immediately to the right of E. 5. F is neither the Mathematics nor the Chemistry specialist."
+        "correct": "B",
+        "explanation": "With clockwise order A-F-B-E-C-D and left defined as clockwise for people facing the center, the person immediately left of B is E. Therefore, (B) is correct.",
+        "passage": "Six research scholars—A, B, C, D, E, and F—are seated around a circular table facing the center. Each specializes in one distinct discipline: Physics, Chemistry, Biology, Mathematics, Geology, and Astronomy. For people facing the center, right means counter-clockwise and left means clockwise. The clues are: 1. A specializes in Geology, and the Mathematics specialist is seated immediately to A's right. 2. B is seated diametrically opposite the Mathematics specialist. 3. C specializes in Physics and is seated immediately to the left of D. 4. E is not adjacent to A, and the Astronomy specialist is seated immediately to E's right. 5. F is neither the Mathematics nor the Chemistry specialist."
       },
       {
         "q": 17,
         "topic": "Arrangements",
-        "question": "What is the specialization of the scholar seated to the immediate right of F?",
+        "question": "What is the specialization of the scholar seated immediately to the right of F?",
         "options": {
           "A": "Biology",
           "B": "Mathematics",
           "C": "Geology",
           "D": "Physics"
         },
-        "correct": "A",
-        "explanation": "The scholar immediately to the right of F (Astronomy) is the specialist in Biology. Thus, option (A) is correct.",
-        "passage": "Six research scholars—A, B, C, D, E, and F—are seated around a circular table facing the center, while each specializes in a distinct scientific discipline: Physics, Chemistry, Biology, Mathematics, Geology, and Astronomy (not necessarily in that order). The following multi-step conditions govern their seating arrangement: 1. The specialist in Mathematics is seated to the immediate right of A, who specializes in Geology. 2. B is seated diametrically opposite to the Mathematics specialist. 3. C specializes in Physics and is seated immediately to the left of D. 4. E is not adjacent to A, and the Astronomy specialist is seated immediately to the right of E. 5. F is neither the Mathematics nor the Chemistry specialist."
+        "correct": "C",
+        "explanation": "F is at position 2 in the clockwise order A-F-B-E-C-D. Its immediate right is A, and A specializes in Geology. Therefore, (C) is correct.",
+        "passage": "Six research scholars—A, B, C, D, E, and F—are seated around a circular table facing the center. Each specializes in one distinct discipline: Physics, Chemistry, Biology, Mathematics, Geology, and Astronomy. For people facing the center, right means counter-clockwise and left means clockwise. The clues are: 1. A specializes in Geology, and the Mathematics specialist is seated immediately to A's right. 2. B is seated diametrically opposite the Mathematics specialist. 3. C specializes in Physics and is seated immediately to the left of D. 4. E is not adjacent to A, and the Astronomy specialist is seated immediately to E's right. 5. F is neither the Mathematics nor the Chemistry specialist."
       },
       {
         "q": 18,
@@ -571,70 +589,74 @@
           "A": "E and F",
           "B": "A and D",
           "C": "B and E",
-          "D": "A and B"
+          "D": "D and E"
         },
-        "correct": "B",
-        "explanation": "Scholar C (Physics) is flanked by A (Geology) and D. Thus, option (B) is correct.",
-        "passage": "Six research scholars—A, B, C, D, E, and F—are seated around a circular table facing the center, while each specializes in a distinct scientific discipline: Physics, Chemistry, Biology, Mathematics, Geology, and Astronomy (not necessarily in that order). The following multi-step conditions govern their seating arrangement: 1. The specialist in Mathematics is seated to the immediate right of A, who specializes in Geology. 2. B is seated diametrically opposite to the Mathematics specialist. 3. C specializes in Physics and is seated immediately to the left of D. 4. E is not adjacent to A, and the Astronomy specialist is seated immediately to the right of E. 5. F is neither the Mathematics nor the Chemistry specialist."
+        "correct": "D",
+        "explanation": "In the unique order A-F-B-E-C-D, C is adjacent to E and D. Therefore, (D) is correct.",
+        "passage": "Six research scholars—A, B, C, D, E, and F—are seated around a circular table facing the center. Each specializes in one distinct discipline: Physics, Chemistry, Biology, Mathematics, Geology, and Astronomy. For people facing the center, right means counter-clockwise and left means clockwise. The clues are: 1. A specializes in Geology, and the Mathematics specialist is seated immediately to A's right. 2. B is seated diametrically opposite the Mathematics specialist. 3. C specializes in Physics and is seated immediately to the left of D. 4. E is not adjacent to A, and the Astronomy specialist is seated immediately to E's right. 5. F is neither the Mathematics nor the Chemistry specialist."
       },
       {
         "q": 19,
         "topic": "Arrangements",
-        "question": "Which discipline does executive F specialize in?",
+        "question": "Who specializes in Mathematics?",
         "options": {
-          "A": "Chemistry",
-          "B": "Physics",
-          "C": "Astronomy",
-          "D": "Biology"
+          "A": "B",
+          "B": "C",
+          "C": "D",
+          "D": "E"
         },
         "correct": "C",
-        "explanation": "Circular mapping of the researchers positions A to F allocates Astronomy to F. Therefore, option (C) holds."
+        "explanation": "The Mathematics specialist sits immediately to A's right. In the unique clockwise order A-F-B-E-C-D, A's right is D. Therefore, (C) is correct.",
+        "passage": "Six research scholars—A, B, C, D, E, and F—are seated around a circular table facing the center. Each specializes in one distinct discipline: Physics, Chemistry, Biology, Mathematics, Geology, and Astronomy. For people facing the center, right means counter-clockwise and left means clockwise. The clues are: 1. A specializes in Geology, and the Mathematics specialist is seated immediately to A's right. 2. B is seated diametrically opposite the Mathematics specialist. 3. C specializes in Physics and is seated immediately to the left of D. 4. E is not adjacent to A, and the Astronomy specialist is seated immediately to E's right. 5. F is neither the Mathematics nor the Chemistry specialist."
       },
       {
         "q": 20,
         "topic": "Arrangements",
-        "question": "Who is seated diametrically opposite to C (Physics)?",
+        "question": "Who specializes in Astronomy?",
         "options": {
           "A": "A",
-          "B": "F",
-          "C": "E",
-          "D": "B"
+          "B": "B",
+          "C": "D",
+          "D": "F"
         },
-        "correct": "A",
-        "explanation": "C (Physics) is seated opposite scholar A (Geology) across the circular table. Thus, option (A) is correct."
+        "correct": "B",
+        "explanation": "The Astronomy specialist is immediately to E's right. In the unique order, E's right is B. Therefore, (B) is correct.",
+        "passage": "Six research scholars—A, B, C, D, E, and F—are seated around a circular table facing the center. Each specializes in one distinct discipline: Physics, Chemistry, Biology, Mathematics, Geology, and Astronomy. For people facing the center, right means counter-clockwise and left means clockwise. The clues are: 1. A specializes in Geology, and the Mathematics specialist is seated immediately to A's right. 2. B is seated diametrically opposite the Mathematics specialist. 3. C specializes in Physics and is seated immediately to the left of D. 4. E is not adjacent to A, and the Astronomy specialist is seated immediately to E's right. 5. F is neither the Mathematics nor the Chemistry specialist."
       },
       {
         "q": 21,
-        "topic": "Logic Puzzles",
-        "question": "Which scholar specializes in Chemistry?",
+        "topic": "Arrangements",
+        "question": "Who is seated diametrically opposite E?",
         "options": {
-          "A": "F",
-          "B": "E",
-          "C": "B",
-          "D": "D"
+          "A": "A",
+          "B": "B",
+          "C": "C",
+          "D": "F"
         },
-        "correct": "B",
-        "explanation": "Scholar E holds the Chemistry specialization, positioned strategically between Astronomy and Geology. Thus, option (B) is correct."
+        "correct": "A",
+        "explanation": "In the clockwise order A-F-B-E-C-D, E is opposite A. Therefore, (A) is correct.",
+        "passage": "Six research scholars—A, B, C, D, E, and F—are seated around a circular table facing the center. Each specializes in one distinct discipline: Physics, Chemistry, Biology, Mathematics, Geology, and Astronomy. For people facing the center, right means counter-clockwise and left means clockwise. The clues are: 1. A specializes in Geology, and the Mathematics specialist is seated immediately to A's right. 2. B is seated diametrically opposite the Mathematics specialist. 3. C specializes in Physics and is seated immediately to the left of D. 4. E is not adjacent to A, and the Astronomy specialist is seated immediately to E's right. 5. F is neither the Mathematics nor the Chemistry specialist."
       },
       {
         "q": 22,
         "topic": "Arrangements",
-        "question": "Who is seated immediately to the left of B?",
+        "question": "Who is seated immediately to the right of D?",
         "options": {
-          "A": "C",
-          "B": "E",
-          "C": "F",
-          "D": "D"
+          "A": "A",
+          "B": "B",
+          "C": "C",
+          "D": "E"
         },
-        "correct": "D",
-        "explanation": "Scholar D is seated to the immediate left of B in the circular arrangement. Consequently, option (D) is the right choice."
+        "correct": "C",
+        "explanation": "For people facing the center, right is counter-clockwise. In A-F-B-E-C-D, the person immediately right of D is C. Therefore, (C) is correct.",
+        "passage": "Six research scholars—A, B, C, D, E, and F—are seated around a circular table facing the center. Each specializes in one distinct discipline: Physics, Chemistry, Biology, Mathematics, Geology, and Astronomy. For people facing the center, right means counter-clockwise and left means clockwise. The clues are: 1. A specializes in Geology, and the Mathematics specialist is seated immediately to A's right. 2. B is seated diametrically opposite the Mathematics specialist. 3. C specializes in Physics and is seated immediately to the left of D. 4. E is not adjacent to A, and the Astronomy specialist is seated immediately to E's right. 5. F is neither the Mathematics nor the Chemistry specialist."
       }
     ],
     "Quantitative Ability": [
       {
         "q": 1,
         "topic": "Functions",
-        "question": "Let f(x) be a function defined for all positive real numbers such that f(xy) = f(x) + f(y) and f(2) = log_2(3). If f(x) = 6, what is the value of x?",
+        "question": "Let f(x) be a continuous function defined for all positive real numbers such that f(xy) = f(x) + f(y), and f(2) = 3. If f(x) = 18, what is the value of x?",
         "options": {
           "A": "256",
           "B": "64",
@@ -642,7 +664,7 @@
           "D": "32"
         },
         "correct": "B",
-        "explanation": "From the functional equation f(xy) = f(x) + f(y), the function behaves logarithmically. Given f(2) = log_2(3), evaluating the equation for f(x) = 6 yields x = 64. Hence, option (B) is correct."
+        "explanation": "The continuous solutions of f(xy)=f(x)+f(y) on positive reals have the form f(x)=k log_2(x). Since f(2)=3, we get f(x)=3 log_2(x). Setting f(x)=18 gives log_2(x)=6, so x=64. Hence, (B) is correct."
       },
       {
         "q": 2,
@@ -662,26 +684,26 @@
         "topic": "Equations",
         "question": "A committee of 5 members is to be formed out of 6 men and 4 women such that it contains at least two women and includes a specific man who refuses to serve if a particular woman is included. In how many ways can this committee be formed?",
         "options": {
-          "A": "116",
+          "A": "140",
           "B": "132",
           "C": "108",
           "D": "96"
         },
         "correct": "A",
-        "explanation": "Analyzing cases based on the number of women (2, 3, or 4) while incorporating the conditional exclusion restriction yields exactly 116 valid committee formations. Hence, option (A) is correct."
+        "explanation": "There are C(4,2)C(6,3)=120 committees with exactly 2 women, C(4,3)C(6,2)=60 with exactly 3 women, and C(4,4)C(6,1)=6 with exactly 4 women, for 186 in total. Invalid committees contain both the specific man and the specific woman. After including those two people, the remaining 3 members are chosen from the other 8, and at least one of those 3 must be a woman: C(8,3)-C(5,3)=46. Thus the number of valid committees is 186-46=140. Hence, option (A) is correct."
       },
       {
         "q": 4,
         "topic": "Ratio and Proportion",
         "question": "A container holds 500 ml of a chemical solution of acid and water in the ratio 4 : 1. First, 100 ml of the solution is drawn out and replaced with pure water. Then, 125 ml of the new solution is drawn out and replaced with pure acid. What is the final ratio of acid to water in the container?",
         "options": {
-          "A": "11 : 9",
+          "A": "73 : 27",
           "B": "7 : 5",
           "C": "3 : 2",
           "D": "4 : 3"
         },
         "correct": "A",
-        "explanation": "Tracking the exact quantities of acid and water step-by-step through the extractions and replacements gives a final ratio of 11 parts acid to 9 parts water. Hence, option (A) is correct."
+        "explanation": "Initially the 500 ml mixture contains 400 ml acid and 100 ml water. Removing 100 ml removes 80 ml acid and 20 ml water, leaving 320 ml acid and 80 ml water. Adding 100 ml water gives 320 ml acid and 180 ml water. Removing 125 ml removes 80 ml acid and 45 ml water, leaving 240 ml acid and 135 ml water. Adding 125 ml pure acid gives 365 ml acid and 135 ml water. Thus the final ratio is 365:135 = 73:27. Hence, (A) is correct."
       },
       {
         "q": 5,
@@ -732,8 +754,8 @@
           "C": "300 seconds",
           "D": "325 seconds"
         },
-        "correct": "D",
-        "explanation": "Analyzing relative speeds and distance intervals across successive meetings up to the fifth encounter accounts for the speed interchange at the third meeting, totaling 325 seconds. Hence, option (D) is correct."
+        "correct": "C",
+        "explanation": "They move in opposite directions, so their relative speed is 8+12=20 m/s. Each meeting therefore occurs every 1200/20=60 seconds. The third meeting is at 180 seconds. After they interchange speeds, their relative speed remains 20 m/s, so the fourth and fifth meetings occur at 240 and 300 seconds respectively. Hence, (C) is correct."
       },
       {
         "q": 9,
@@ -751,15 +773,15 @@
       {
         "q": 10,
         "topic": "Number Properties",
-        "question": "For how many integer values of x does the expression y = |x - 2| + |x - 5| - |x - 8| yield a value less than 5?",
+        "question": "For how many integer values of x in the interval -5 <= x <= 6 does the expression y = |x - 2| + |x - 5| - |x - 8| yield a value less than 5?",
         "options": {
-          "A": "13",
-          "B": "11",
-          "C": "9",
-          "D": "7"
+          "A": "9",
+          "B": "10",
+          "C": "11",
+          "D": "12"
         },
-        "correct": "C",
-        "explanation": "Evaluating the function across the critical points x = 2, 5, and 8 defines the piecewise linear bounds where y < 5, holding true across exactly 9 integer values of x. Hence, option (C) is correct."
+        "correct": "D",
+        "explanation": "For x<=2, y=-x-1, which is less than 5 for every integer x in the interval -5 to 2. For 2<=x<=5, y=x-5, which is also less than 5 throughout the interval. For 5<=x<=6, y=3x-15, giving y=0 at x=5 and y=3 at x=6, both less than 5. Thus every integer from -5 through 6 satisfies the condition. There are 12 such integers, so option (D) is correct."
       },
       {
         "q": 11,
@@ -808,10 +830,10 @@
           "A": "2 : 1 : 4",
           "B": "3 : 4 : 8",
           "C": "1 : 2 : 5",
-          "D": "2 : 3 : 10"
+          "D": "4 : 6 : 11"
         },
         "correct": "D",
-        "explanation": "Applying weighted alligation across the three concentrations while enforcing the 2 : 3 sub-ratio for the first two solutions yields the mixing ratio 2 : 3 : 10. Hence, option (D) is correct."
+        "explanation": "Let the quantities of the 20%, 35%, and 50% solutions be 2k, 3k, and x respectively. The 40% concentration condition gives 0.20(2k)+0.35(3k)+0.50x = 0.40(5k+x). This simplifies to x=5.5k. Thus the ratio is 2:3:5.5 = 4:6:11. Hence, (D) is correct."
       },
       {
         "q": 15,
@@ -823,8 +845,8 @@
           "C": "17 / 19",
           "D": "5 / 8"
         },
-        "correct": "C",
-        "explanation": "The product is odd only if all three chosen numbers are odd. The probability of choosing three odd numbers from 10 odd and 10 even numbers is 2/19, making the probability of an even product 1 - 2/19 = 17/19. Hence, option (C) is correct."
+        "correct": "B",
+        "explanation": "Because the three numbers are chosen independently, the probability that all three are odd is (10/20)^3 = 1/8. Therefore the probability that their product is even is 1-1/8=7/8. Hence, option (B) is correct."
       },
       {
         "q": 16,
@@ -833,11 +855,11 @@
         "options": {
           "A": "7 hours",
           "B": "6 hours",
-          "C": "5 hours",
+          "C": "4 hours",
           "D": "8 hours"
         },
-        "correct": "B",
-        "explanation": "Calculating net work rates per hour over the initial 4 hours with C open and the subsequent filling phase without C shows it takes an additional 6 hours. Hence, option (B) is correct."
+        "correct": "C",
+        "explanation": "In the first 4 hours, the net filling rate is 1/12+1/16-1/24 = 5/48, so 4 hours fills 5/12 of the cistern. The remaining 7/12 is filled by A and B at rate 1/12+1/16=7/48. Thus the additional time is (7/12)/(7/48)=4 hours. Hence, (C) is correct."
       },
       {
         "q": 17,
@@ -894,15 +916,15 @@
       {
         "q": 21,
         "topic": "Progressions",
-        "question": "If the p-th, q-th, and r-th terms of an arithmetic progression are in geometric progression, what is the ratio of (q - r) to (r - p)?",
+        "question": "The 3rd, 5th, and 9th terms of an arithmetic progression are in geometric progression. If the common difference is 2, what is the first term?",
         "options": {
-          "A": "p / q",
-          "B": "(p - q) / (q - r)",
-          "C": "1",
-          "D": "q / p"
+          "A": "-12",
+          "B": "-8",
+          "C": "-10",
+          "D": "-6"
         },
         "correct": "A",
-        "explanation": "Expressing AP terms in terms of first term and common difference and applying the geometric progression condition simplifies the ratio to p / q. Hence, option (A) is correct."
+        "explanation": "Let the first term be a and the common difference be 2. The 3rd, 5th, and 9th terms are a+4, a+8, and a+16. Since they are in GP, (a+8)^2=(a+4)(a+16). Expanding gives a^2+16a+64=a^2+20a+64, so a=-12. Hence, (A) is correct."
       },
       {
         "q": 22,

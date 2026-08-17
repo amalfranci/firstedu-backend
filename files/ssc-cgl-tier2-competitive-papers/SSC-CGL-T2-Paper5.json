@@ -8,7 +8,7 @@
       {
         "q": 1,
         "topic": "Trigonometry",
-        "question": "A dishonest dealer marks up his goods by 20% and offers a discount of 10%. He uses a faulty balance that reads 1000 grams for 800 grams while selling, and reads 1000 grams for 1200 grams while buying. What is his net profit percentage?",
+        "question": "A dishonest dealer buys goods at a price of Rs. 1000 per 1000 g shown by his faulty balance, which actually gives him 1200 g. He marks the price by 20% and allows a discount of 10%. While selling, his balance shows 1000 g when it actually gives only 800 g. What is his net profit percentage?",
         "options": {
           "A": "66%",
           "B": "62%",
@@ -16,7 +16,7 @@
           "D": "58%"
         },
         "correct": "B",
-        "explanation": "Cost of 1200 g of goods = Rs. 1000, so CP of 1 g = 5/6. While buying, the dealer effectively gets 1200 g for the price of 1000 g, so his real cost for 800 g of goods = 800 × 5/6 = 2000/3. Marked price for 1000 g = Rs. 1200. He sells only 800 g while claiming it is 1000 g, so Selling Price = 1200 × 0.9 = Rs. 1080. Profit = 1080 − 2000/3 = 1240/3. Profit % = (1240/3) ÷ (2000/3) × 100 = 62%."
+        "explanation": "The dealer pays Rs. 1000 for an actual 1200 g, so his cost per gram is 1000/1200 = 5/6. Therefore, the actual cost of the 800 g he gives to a customer is 800 × 5/6 = Rs. 2000/3. For the 1000 g shown by his balance, the marked price is Rs. 1000 × 1.20 = Rs. 1200. After a 10% discount, the selling price charged is Rs. 1200 × 0.90 = Rs. 1080. Profit = 1080 − 2000/3 = 1240/3. Profit % = [(1240/3) ÷ (2000/3)] × 100 = 62%."
       },
       {
         "q": 2,
@@ -77,7 +77,7 @@
         "options": {
           "A": "100(2π/3 − √3/2) cm²",
           "B": "50(2π/3 − √3/2) cm²",
-          "C": "50(4π/3 − √3) cm²",
+          "C": "75(2π/3 − √3/2) cm²",
           "D": "100(π/3 − √3/4) cm²"
         },
         "correct": "A",
@@ -595,7 +595,7 @@
       {
         "q": 16,
         "topic": "Logical Reasoning",
-        "question": "X introduces Y saying, 'He is the husband of the only granddaughter of my paternal grandfather.' Assuming X is male and has no cousins, how is Y related to X?",
+        "question": "X introduces Y saying, 'He is the husband of the only granddaughter of my paternal grandfather.' X is male, unmarried, has no children, and has no cousins. How is Y related to X?",
         "options": {
           "A": "Son-in-law",
           "B": "Brother-in-law",
@@ -603,7 +603,7 @@
           "D": "Brother"
         },
         "correct": "B",
-        "explanation": "Since X has no cousins, every grandchild of X's paternal grandfather belongs to X's own immediate family. The 'only granddaughter' of that grandfather must therefore be X's sister. Y, the husband of X's sister, is X's brother-in-law."
+        "explanation": "Because X is male and has no children or cousins, the only granddaughter of X's paternal grandfather must be X's sister. Y is the husband of X's sister, so Y is X's brother-in-law."
       },
       {
         "q": 17,

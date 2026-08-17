@@ -859,7 +859,10 @@
           "C": "150,000 dollars",
           "D": "175,000 dollars"
         },
-        "correct": "A",
+        "correct": [
+          "A",
+          "C"
+        ],
         "explanation": "Let P be the amount spent on print advertising and D = 500,000 minus P be the amount spent on digital advertising; the condition requires D to be at least 2P + 50,000. For P = 100,000 dollars: D = 400,000, and 2(100,000) + 50,000 = 250,000, and since 400,000 is at least 250,000, this value is valid. For P = 150,000 dollars: D = 350,000, and 2(150,000) + 50,000 = 350,000, and since 350,000 is at least 350,000, this value is valid. For P = 175,000 dollars: D = 325,000, and 2(175,000) + 50,000 = 400,000, and since 325,000 is less than 400,000, this value is not valid. For P = 225,000 dollars: D = 275,000, and 2(225,000) + 50,000 = 500,000, and since 275,000 is less than 500,000, this value is not valid. Therefore, the correct selections are (A) and (C).",
         "type": "two_part_analysis"
       },
@@ -873,7 +876,10 @@
           "C": "35",
           "D": "42"
         },
-        "correct": "B",
+        "correct": [
+          "B",
+          "D"
+        ],
         "explanation": "The number of new employees must satisfy three conditions simultaneously: it must be a multiple of 6, greater than 20, and less than 50. The multiples of 6 in that range are 24, 30, 36, 42, and 48. Checking the options: 18 is a multiple of 6 but is not greater than 20, so it is not valid; 24 is a multiple of 6 and satisfies 20 less than 24 less than 50, so it is valid; 35 is not a multiple of 6, so it is not valid; 42 is a multiple of 6 and satisfies 20 less than 42 less than 50, so it is valid. Therefore, the correct selections are (B) and (D).",
         "type": "two_part_analysis"
       },
@@ -887,7 +893,10 @@
           "C": "Length = 11 feet, width = 9 feet",
           "D": "Length = 15 feet, width = 5 feet"
         },
-        "correct": "A",
+        "correct": [
+          "A",
+          "D"
+        ],
         "explanation": "Since the perimeter is 40 feet, the length and width must satisfy length + width = 20, and the length must also be at least twice the width. For length = 14 and width = 6: the sum is 20, and 14 is at least 2 times 6 = 12, so this pair is valid. For length = 12 and width = 8: the sum is 20, but 12 is not at least 2 times 8 = 16, so this pair is not valid. For length = 11 and width = 9: the sum is 20, but 11 is not at least 2 times 9 = 18, so this pair is not valid. For length = 15 and width = 5: the sum is 20, and 15 is at least 2 times 5 = 10, so this pair is valid. Therefore, the correct selections are (A) and (D).",
         "type": "two_part_analysis"
       }

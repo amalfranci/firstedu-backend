@@ -164,15 +164,15 @@
       {
         "q": 13,
         "topic": "Classification",
-        "question": "Find the odd one out from the given alphanumeric clusters: ACF, HJK, MOQ, UWZ",
+        "question": "Find the odd one out from the following alphanumeric clusters based on the pattern of gaps between consecutive letters: ACF, HJK, MOQ, PRT.",
         "options": {
           "A": "HJK",
           "B": "ACF",
           "C": "MOQ",
-          "D": "UWZ"
+          "D": "PRT"
         },
         "correct": "A",
-        "explanation": "In HJK, letters are consecutive without gaps (H, I, J, K), whereas ACF, MOQ, and UWZ maintain distinct skipping patterns between consecutive characters."
+        "explanation": "HJK is the odd one out because the gaps between consecutive letters are H to J = +2 and J to K = +1. In ACF, the gaps are +2 and +3; in MOQ, they are +2 and +2; and in PRT, they are +2 and +2. Therefore, HJK is the unique pattern."
       },
       {
         "q": 14,
@@ -506,13 +506,13 @@
         "topic": "Current Affairs",
         "question": "Which enzyme is responsible for the coagulation of milk in the stomach of infants?",
         "options": {
-          "A": "Renin",
+          "A": "Rennin (chymosin)",
           "B": "Pepsin",
           "C": "Trypsin",
           "D": "Lipase"
         },
         "correct": "A",
-        "explanation": "Renin (chymosin) is a specialized proteolytic enzyme synthesized in infant stomachs to curdle milk, slowing its passage for maximum nutrient absorption."
+        "explanation": "Rennin (chymosin) is an enzyme that coagulates or curdles milk in the stomach of infants, helping slow its passage for digestion."
       },
       {
         "q": 15,

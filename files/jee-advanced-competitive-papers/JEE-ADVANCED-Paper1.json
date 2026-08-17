@@ -333,15 +333,15 @@
         "q": 6,
         "type": "MCQ",
         "topic": "Electromagnetic Induction and AC Circuits",
-        "question": "A long straight wire carries a current I and is placed along the z-axis. A circular loop of radius a is placed in the xy-plane with its center at coordinates (d, 0, 0) where d > a. The mutual inductance between the straight wire and the circular loop is:",
+        "question": "A long straight wire carries a current I and is placed along the x-axis. A circular loop of radius a lies in the xy-plane with its center at (0,d,0), where d > a. The mutual inductance between the straight wire and the circular loop is:",
         "options": {
           "A": "mu0·a / (2π)",
           "B": "(mu0/(2π))(d - √(d^2 - a^2))",
           "C": "mu0·d / (2π)",
-          "D": "(mu0/π)(d - √(d^2 - a^2))"
+          "D": "(mu0/π)(d - √(d^2-a^2))"
         },
         "correct": "D",
-        "explanation": "Integrating B(r)=mu0I/(2πr) over the loop area (chord length 2√(a^2-(x-d)^2)) yields mutual inductance M = (mu0/π)(d - √(d^2-a^2))."
+        "explanation": "With the wire along the x-axis, the magnetic field at points of the loop is perpendicular to the xy-plane, so it contributes flux through the loop. Integrating B(r)=mu0 I/(2πr) over the circular area gives the flux Phi = (mu0 I/π)(d - √(d^2-a^2)). Hence the mutual inductance M = Phi/I = (mu0/π)(d - √(d^2-a^2)), so option D is correct."
       },
       {
         "q": 7,
@@ -524,8 +524,8 @@
           "C": "+0.22 V",
           "D": "+0.59 V"
         },
-        "correct": "A",
-        "explanation": "With [OH-]=2[Cu2+], 4[Cu2+]^3=1.0×10^-19 gives [Cu2+]≈2.9×10^-7 M. Substituting into the Nernst equation 0.0295=E°-0.0295·log(1/2.9×10^-7) gives E°≈+0.34 V."
+        "correct": "C",
+        "explanation": "For saturated Cu(OH)2, let [Cu2+] = s. Then [OH−] = 2s and Ksp = s(2s)^2 = 4s^3 = 1.0×10^−19, giving s ≈ 2.92×10^−7 M. For the Cu2+/Cu half-cell, E = E° − (0.059/2) log(1/[Cu2+]). With the measured cell potential 0.0295 V and the standard hydrogen electrode, this gives E° ≈ +0.22 V. Therefore option C is correct."
       },
       {
         "q": 2,
@@ -713,7 +713,7 @@
         "q": 15,
         "type": "MSQ",
         "topic": "Amines",
-        "question": "Aniline undergoes electrophilic aromatic substitution. However, direct nitration using a HNO3/H2SO4 mixture yields a significant amount of m-nitroaniline. Which chemical strategies can be employed to exclusively synthesize p-nitroaniline from aniline?",
+        "question": "Aniline undergoes electrophilic aromatic substitution. Direct nitration using a HNO3/H2SO4 mixture yields a significant amount of meta-nitroaniline. Which chemical strategy can be employed to obtain p-nitroaniline as the major product?",
         "options": {
           "A": "Protect the amino group by acetylation with acetic anhydride before nitration, then hydrolyze.",
           "B": "Conduct the nitration in strongly basic conditions to prevent protonation of the amine.",
@@ -721,7 +721,7 @@
           "D": "React aniline with sulfanilic acid to block the meta position, nitrate, and then desulfonate."
         },
         "correct": "A",
-        "explanation": "Acetylation lowers nitrogen's reactivity, preventing protonation while remaining an ortho/para director (para favored sterically), followed by hydrolysis. Basic nitration conditions (B) are impractical since nitrating mixtures are inherently acidic; C and D are synthetic dead-ends."
+        "explanation": "Protecting the amino group by acetylation converts −NH2 to −NHCOCH3, which remains an ortho/para director while reducing the tendency of the nitrogen to be protonated in the strongly acidic nitrating mixture. Nitration therefore gives p-nitroacetanilide as the major isomer because the para position is less sterically hindered; hydrolysis then gives p-nitroaniline. Thus option A is the appropriate strategy."
       },
       {
         "q": 16,

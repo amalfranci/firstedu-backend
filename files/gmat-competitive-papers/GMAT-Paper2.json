@@ -647,11 +647,11 @@
         "options": {
           "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
           "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
-          "C": "EACH statement ALONE is sufficient.",
-          "D": "Statements (1) and (2) TOGETHER are NOT sufficient.",
-          "E": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient."
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
         },
-        "correct": "E",
+        "correct": "C",
         "explanation": "1: x could be 5 or -5. 2: x>0. Together: x must be 5. Both needed.",
         "type": "Data Sufficiency"
       },
@@ -660,13 +660,13 @@
         "topic": "Data Sufficiency",
         "question": "Is triangle ABC a right triangle?\n\n(1) The lengths of the sides are in the ratio 3:4:5.\n(2) The area of the triangle is 6.",
         "options": {
-          "A": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
-          "B": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
           "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
           "D": "EACH statement ALONE is sufficient.",
           "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
         },
-        "correct": "B",
+        "correct": "A",
         "explanation": "1: 3:4:5 satisfies Pythagorean theorem, so it is a right triangle. 2: Infinite triangles have area 6. Stat 1 alone is sufficient.",
         "type": "Data Sufficiency"
       },
@@ -677,11 +677,11 @@
         "options": {
           "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
           "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
-          "C": "EACH statement ALONE is sufficient.",
-          "D": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
           "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
         },
-        "correct": "D",
+        "correct": "C",
         "explanation": "Need total time. 1 gives first half time. 2 gives second half time. Together give total time (2 hrs). Both needed.",
         "type": "Data Sufficiency"
       },
@@ -705,13 +705,13 @@
         "topic": "Data Sufficiency",
         "question": "If n is an integer, is n even?\n\n(1) n + 1 is an odd integer.\n(2) n/2 is an integer.",
         "options": {
-          "A": "EACH statement ALONE is sufficient.",
-          "B": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
-          "C": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
-          "D": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
           "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
         },
-        "correct": "A",
+        "correct": "D",
         "explanation": "1: n+1 odd => n even. 2: n/2 integer => n is even. Each alone is sufficient.",
         "type": "Data Sufficiency"
       },
@@ -735,13 +735,13 @@
         "topic": "Data Sufficiency",
         "question": "Is x > y?\n\n(1) x = y + 2\n(2) x/y = 2",
         "options": {
-          "A": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
-          "B": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
-          "C": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
           "D": "EACH statement ALONE is sufficient.",
           "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
         },
-        "correct": "C",
+        "correct": "A",
         "explanation": "1: x-y = 2 => x > y. 2: if y is negative, x < y. Stat 1 alone sufficient.",
         "type": "Data Sufficiency"
       },
@@ -750,13 +750,13 @@
         "topic": "Data Sufficiency",
         "question": "What is the median of a set of 5 distinct integers?\n\n(1) The average (arithmetic mean) is 10.\n(2) The sum of the numbers is 50.",
         "options": {
-          "A": "Statements (1) and (2) TOGETHER are NOT sufficient.",
-          "B": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
-          "C": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
-          "D": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
-          "E": "EACH statement ALONE is sufficient."
+          "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
         },
-        "correct": "A",
+        "correct": "E",
         "explanation": "1 and 2 give the exact same information (sum=50). Neither tells us the individual values or median. Not sufficient together.",
         "type": "Data Sufficiency"
       },
@@ -781,12 +781,12 @@
         "question": "Is integer p a prime number?\n\n(1) p is odd.\n(2) p > 2 and p has exactly two distinct positive factors.",
         "options": {
           "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
-          "B": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
-          "C": "EACH statement ALONE is sufficient.",
-          "D": "Statements (1) and (2) TOGETHER are NOT sufficient.",
-          "E": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient."
+          "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+          "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "D": "EACH statement ALONE is sufficient.",
+          "E": "Statements (1) and (2) TOGETHER are NOT sufficient."
         },
-        "correct": "E",
+        "correct": "B",
         "explanation": "1: Many odd numbers aren't prime. 2: Definition of a prime number. Stat 2 alone sufficient.",
         "type": "Data Sufficiency"
       },

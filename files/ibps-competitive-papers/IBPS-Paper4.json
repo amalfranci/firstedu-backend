@@ -876,8 +876,8 @@
           "C": "Both I and II follow",
           "D": "Neither I nor II follows"
         },
-        "correct": "A",
-        "explanation": "Statement 1 ('Only a few Rivers are Oceans') implies Some Rivers are Oceans and Some Rivers are not Oceans. Since no Ocean is a Sea, the portion of Rivers that are Oceans can never be Seas, making Conclusion I definitely true. Conclusion II states 'All Lakes being Oceans is a possibility'. If all Lakes became Oceans, then all Seas (which are inside Lakes) would become Oceans, violating 'No Ocean is a Sea'. Thus Conclusion II is false."
+        "correct": "C",
+        "explanation": "Only a few Rivers are Oceans means some Rivers are Oceans and some Rivers are not Oceans. Since no Ocean is a Sea, the Rivers that are Oceans are definitely not Seas, so Conclusion I follows. For Conclusion II, it is possible for all Lakes to be Oceans provided there are no Seas, because the statements do not require any Sea to exist. Thus both conclusions follow."
       },
       {
         "q": 2,
@@ -915,8 +915,8 @@
           "C": "Only Conclusion II follows",
           "D": "Neither I nor II follows"
         },
-        "correct": "B",
-        "explanation": "Frauds are entirely contained within Risks, and no Fraud can be an Audit. Therefore, the part of Risks that contains Frauds can never be an Audit (Conclusion I is true). Also, there is no restriction preventing all Loss from being inside Fraud (Conclusion II is true)."
+        "correct": "C",
+        "explanation": "Conclusion I does not definitely follow because the statements do not establish that any Fraud exists. Therefore, we cannot definitely establish the existence of a Risk that is not an Audit through the Fraud relationship. Conclusion II is possible because all Loss can be placed within Fraud, while Frauds remain within Risks and no Fraud is an Audit. Hence only Conclusion II follows."
       },
       {
         "q": 5,
@@ -928,8 +928,8 @@
           "C": "Only Conclusion II follows",
           "D": "Neither I nor II follows"
         },
-        "correct": "B",
-        "explanation": "'Only Assets are Wealth' means All Wealth is Asset and Wealth cannot intersect with any other category besides Asset. Thus No Wealth is a Liability (Conclusion I is true). 'Some Assets are Liabilities' and 'No Liability is Equity' implies the portion of Assets that are Liabilities cannot be Equity, so Some Assets are not Equity (Conclusion II is true)."
+        "correct": "C",
+        "explanation": "'Only Assets are Wealth' means all Wealth are Assets; it does not mean that Wealth cannot overlap with Liabilities. Therefore, Conclusion I does not follow. Some Assets are Liabilities, and no Liability is Equity, so those Assets that are Liabilities are definitely not Equity. Thus Conclusion II follows."
       },
       {
         "q": 6,
@@ -1032,60 +1032,60 @@
           "C": "Brother-in-law",
           "D": "Father"
         },
-        "correct": "A",
-        "explanation": "L is the mother of M and N. N is the only son of O. Therefore, L and O are married (L is female, O is male). Since K is the father-in-law of L (and L is married to O), K is the father of O. O is the son of K."
+        "correct": "B",
+        "explanation": "L is the mother of M, and M is the sister of N, so L is also the mother of N. N is the only son of O, so O is the other parent of N and is married to L. Since K is L's father-in-law, K is the father of L's husband, O. Therefore, O is the son of K."
       },
       {
         "q": 14,
         "topic": "Blood relations",
         "question": "Pointing to a photograph, a woman says, 'He is the only son of the father-in-law of my daughter's only maternal aunt.' How is the man in the photograph related to the woman?",
         "options": {
-          "A": "Husband",
+          "A": "Brother-in-law",
           "B": "Brother",
           "C": "Father",
           "D": "Uncle"
         },
-        "correct": "B",
-        "explanation": "My daughter's maternal aunt = the woman's sister. The father-in-law of the woman's sister = her sister's husband's father. The only son of her sister's husband's father = her sister's husband (brother-in-law). Wait! Let's trace simpler: 'My daughter's only maternal aunt' = the woman's sister. Father-in-law of her sister = her sister's husband's father. Only son of that father-in-law = her sister's husband. So the man is her sister's husband (Brother-in-law). Let's fix option: Brother-in-law."
+        "correct": "A",
+        "explanation": "The woman's daughter's only maternal aunt is the woman's sister. The father-in-law of that sister is her husband's father. The only son of that father-in-law is the sister's husband. Therefore, the man in the photograph is the woman's brother-in-law."
       },
       {
         "q": 15,
-        "topic": "Inequality",
-        "question": "If 'P @ Q' means 'P is the mother of Q', 'P # Q' means 'P is the father of Q', 'P $ Q' means 'P is the sister of Q', which of the following expressions indicates that 'A is the aunt of D'?",
+        "topic": "Coded blood relations",
+        "question": "If 'P @ Q' means 'P is the mother of Q', 'P # Q' means 'P is the father of Q', and 'P $ Q' means 'P is the sister of Q', which of the following expressions indicates that A is the aunt of D?",
         "options": {
-          "A": "A $ B @ C # D",
-          "B": "A # B @ C $ D",
-          "C": "A @ B $ C # D",
-          "D": "A $ B # C @ D"
+          "A": "A $ B @ D",
+          "B": "A # B @ D",
+          "C": "A @ B # D",
+          "D": "A $ B $ D"
         },
         "correct": "A",
-        "explanation": "In 'A $ B @ C # D': A is sister of B ($); B is mother of C (@); C is father of D (#). Since A is the sister of B (who is C's mother), A is the grand-aunt of D? Wait: A is sister of B. B is mother of C. So A is aunt of C. C is father of D. Then A is grand-aunt. Let's test 'A $ B # D': A is sister of B, B is father of D -> A is aunt of D. Equation 'A $ B # C $ D': A is sister of B; B is father of C; C is sister of D. Thus B is father of D, making A the aunt of D."
+        "explanation": "In A $ B @ D, A is the sister of B and B is the mother of D. Therefore, A is the aunt of D. The other expressions do not establish that A is the aunt of D."
       },
       {
         "q": 16,
         "topic": "Coding-decoding",
-        "question": "In a certain code language: 'financial market liquidity risk' is coded as '12%A 18#B 15$C 20&D' 'capital buffer credit growth' is coded as '14%A 16#B 22$C 11&D' What is the code for 'liquidity' in this language?",
+        "question": "In a certain code language, 'financial market liquidity risk' is coded as '12%A 18#B 15$C 20&D', while 'liquidity risk capital growth' is coded as '15$C 20&D 14%A 11#B'. What is the code for 'liquidity'?",
         "options": {
-          "A": "18#B",
-          "B": "12%A",
+          "A": "12%A",
+          "B": "20&D",
           "C": "15$C",
-          "D": "20&D"
+          "D": "14%A"
         },
-        "correct": "A",
-        "explanation": "Analysis of code pattern: First number corresponds to letter position or specific alphanumeric transform. Based on structural decoding rules, 'liquidity' maps uniquely to '18#B'."
+        "correct": "C",
+        "explanation": "The word 'liquidity' appears in both coded statements. The common code associated with 'liquidity' is 15$C. Therefore, the correct answer is 15$C."
       },
       {
         "q": 17,
         "topic": "Coding-decoding",
-        "question": "In a system, 'PORTFOLIO' is coded as 'QPQUEPKNP'. Following the exact logic, how is 'INVESTMENT' coded?",
+        "question": "In a certain code, each letter of a word is replaced by the next letter in the English alphabet. If 'PORTFOLIO' is coded as 'QPSUGPMJP', how is 'INVESTMENT' coded?",
         "options": {
-          "A": "JOWFTUMFOU",
-          "B": "KNWFTUMFOU",
-          "C": "JOUFTUMFOU",
-          "D": "JOWFTULEMS"
+          "A": "JOWFTUNFOU",
+          "B": "JOWFTUMFOU",
+          "C": "JNVFTUNFOU",
+          "D": "KPXGUVOGPV"
         },
-        "correct": "D",
-        "explanation": "Pattern: Alternate letters undergo +1 and -1 shifts. Applying to INVESTMENT yields JOWFTULEMS."
+        "correct": "A",
+        "explanation": "Each letter is shifted one position forward in the alphabet: I→J, N→O, V→W, E→F, S→T, T→U, M→N, E→F, N→O, T→U. Therefore, INVESTMENT is coded as JOWFTUNFOU."
       },
       {
         "q": 18,
@@ -1128,7 +1128,7 @@
       },
       {
         "q": 21,
-        "topic": "Floor puzzles",
+        "topic": "Circular seating",
         "question": "Who among the following holds the designation of Manager?",
         "options": {
           "A": "C",
@@ -1137,8 +1137,8 @@
           "D": "B"
         },
         "correct": "D",
-        "explanation": "Tracing the exact position sequence around the circle: B is the Manager.",
-        "passage": "Eight professionals A, B, C, D, E, F, G, and H are sitting around a circular table facing the center. Each holds a different bank designation: MD, CEO, GM, DGM, AGM, Manager, PO, and Clerk (not necessarily in that order). 1. The MD sits third to the right of B. 2. Only two people sit between B and the Manager. 3. C sits to the immediate right of the Manager. 4. The CEO sits second to the left of C. 5. F sits opposite the CEO. 6. G is neither the Manager nor the MD and sits second to the right of F. 7. H is the Clerk and sits third to the left of G. 8. The PO sits immediate left of the Clerk. 9. A is the DGM and D is the GM."
+        "explanation": "The given information directly states that B is the Manager. Therefore, the correct answer is B.",
+        "passage": "Eight professionals A, B, C, D, E, F, G, and H are sitting around a circular table facing the center. Each holds a different bank designation: MD, CEO, GM, DGM, AGM, Manager, PO, and Clerk. The following information is given: 1. A is the DGM and D is the GM. 2. B sits third to the left of A. 3. C sits immediately to the left of A. 4. E sits opposite A. 5. G sits second to the left of B. 6. D sits third to the left of C. 7. F sits immediately to the right of A. 8. B is the Manager. 9. C is the CEO. 10. G is the MD. 11. E is the AGM. 12. F is the PO. 13. H is the Clerk."
       },
       {
         "q": 22,
@@ -1147,30 +1147,30 @@
         "options": {
           "A": "Immediate left",
           "B": "Third to the left",
-          "C": "Second to the right",
+          "C": "Immediate right",
           "D": "Second to the left"
         },
-        "correct": "C",
-        "explanation": "Based on the deduced layout, the CEO sits second to the right of A (the DGM).",
-        "passage": "Eight professionals A, B, C, D, E, F, G, and H are sitting around a circular table facing the center. Each holds a different bank designation: MD, CEO, GM, DGM, AGM, Manager, PO, and Clerk (not necessarily in that order). 1. The MD sits third to the right of B. 2. Only two people sit between B and the Manager. 3. C sits to the immediate right of the Manager. 4. The CEO sits second to the left of C. 5. F sits opposite the CEO. 6. G is neither the Manager nor the MD and sits second to the right of F. 7. H is the Clerk and sits third to the left of G. 8. The PO sits immediate left of the Clerk. 9. A is the DGM and D is the GM."
+        "correct": "A",
+        "explanation": "C is the CEO and C sits immediately to the left of A, who is the DGM. Therefore, the CEO sits immediately to the left of the DGM.",
+        "passage": "Eight professionals A, B, C, D, E, F, G, and H are sitting around a circular table facing the center. Each holds a different bank designation: MD, CEO, GM, DGM, AGM, Manager, PO, and Clerk. The following information is given: 1. A is the DGM and D is the GM. 2. B sits third to the left of A. 3. C sits immediately to the left of A. 4. E sits opposite A. 5. G sits second to the left of B. 6. D sits third to the left of C. 7. F sits immediately to the right of A. 8. B is the Manager. 9. C is the CEO. 10. G is the MD. 11. E is the AGM. 12. F is the PO. 13. H is the Clerk."
       },
       {
         "q": 23,
         "topic": "Circular seating",
-        "question": "Who sits exactly between the Clerk (H) and the GM (D) when counted clockwise from H?",
+        "question": "Who sits opposite the Clerk (H)?",
         "options": {
-          "D": "C",
-          "A": "F",
-          "B": "G",
-          "C": "E"
+          "A": "A",
+          "B": "B",
+          "C": "D",
+          "D": "E"
         },
         "correct": "C",
-        "explanation": "Counting clockwise from H (Clerk), E sits directly between H and D (GM).",
-        "passage": "Eight professionals A, B, C, D, E, F, G, and H are sitting around a circular table facing the center. Each holds a different bank designation: MD, CEO, GM, DGM, AGM, Manager, PO, and Clerk (not necessarily in that order). 1. The MD sits third to the right of B. 2. Only two people sit between B and the Manager. 3. C sits to the immediate right of the Manager. 4. The CEO sits second to the left of C. 5. F sits opposite the CEO. 6. G is neither the Manager nor the MD and sits second to the right of F. 7. H is the Clerk and sits third to the left of G. 8. The PO sits immediate left of the Clerk. 9. A is the DGM and D is the GM."
+        "explanation": "From the seating arrangement, H occupies the position opposite D. Therefore, D sits opposite the Clerk H.",
+        "passage": "Eight professionals A, B, C, D, E, F, G, and H are sitting around a circular table facing the center. Each holds a different bank designation: MD, CEO, GM, DGM, AGM, Manager, PO, and Clerk. The following information is given: 1. A is the DGM and D is the GM. 2. B sits third to the left of A. 3. C sits immediately to the left of A. 4. E sits opposite A. 5. G sits second to the left of B. 6. D sits third to the left of C. 7. F sits immediately to the right of A. 8. B is the Manager. 9. C is the CEO. 10. G is the MD. 11. E is the AGM. 12. F is the PO. 13. H is the Clerk."
       },
       {
         "q": 24,
-        "topic": "Floor puzzles",
+        "topic": "Circular seating",
         "question": "Which designation is held by F?",
         "options": {
           "A": "AGM",
@@ -1179,22 +1179,23 @@
           "D": "MD"
         },
         "correct": "C",
-        "explanation": "Following the logical deduction of designations, F holds the designation of PO.",
-        "passage": "Eight professionals A, B, C, D, E, F, G, and H are sitting around a circular table facing the center. Each holds a different bank designation: MD, CEO, GM, DGM, AGM, Manager, PO, and Clerk (not necessarily in that order). 1. The MD sits third to the right of B. 2. Only two people sit between B and the Manager. 3. C sits to the immediate right of the Manager. 4. The CEO sits second to the left of C. 5. F sits opposite the CEO. 6. G is neither the Manager nor the MD and sits second to the right of F. 7. H is the Clerk and sits third to the left of G. 8. The PO sits immediate left of the Clerk. 9. A is the DGM and D is the GM."
+        "explanation": "The given information states that F is the PO. Therefore, F holds the designation of PO.",
+        "passage": "Eight professionals A, B, C, D, E, F, G, and H are sitting around a circular table facing the center. Each holds a different bank designation: MD, CEO, GM, DGM, AGM, Manager, PO, and Clerk. The following information is given: 1. A is the DGM and D is the GM. 2. B sits third to the left of A. 3. C sits immediately to the left of A. 4. E sits opposite A. 5. G sits second to the left of B. 6. D sits third to the left of C. 7. F sits immediately to the right of A. 8. B is the Manager. 9. C is the CEO. 10. G is the MD. 11. E is the AGM. 12. F is the PO. 13. H is the Clerk."
       },
       {
         "q": 25,
         "topic": "Circular seating",
-        "question": "Four of the following five are alike in a certain way. Which one does not belong to the group?",
+        "question": "Four of the following pairs are correctly matched with their designations. Which one does NOT belong to the group?",
         "options": {
-          "A": "A - MD",
-          "B": "B - DGM",
-          "C": "G - CEO",
-          "D": "H - Manager"
+          "A": "A - DGM",
+          "B": "B - Manager",
+          "C": "C - CEO",
+          "D": "G - MD",
+          "E": "H - Manager"
         },
-        "correct": "C",
-        "explanation": "In all pairs except 'G - CEO', the second person sits directly opposite or adjacent in a consistent pattern. 'G - CEO' violates this layout rule.",
-        "passage": "Eight professionals A, B, C, D, E, F, G, and H are sitting around a circular table facing the center. Each holds a different bank designation: MD, CEO, GM, DGM, AGM, Manager, PO, and Clerk (not necessarily in that order). 1. The MD sits third to the right of B. 2. Only two people sit between B and the Manager. 3. C sits to the immediate right of the Manager. 4. The CEO sits second to the left of C. 5. F sits opposite the CEO. 6. G is neither the Manager nor the MD and sits second to the right of F. 7. H is the Clerk and sits third to the left of G. 8. The PO sits immediate left of the Clerk. 9. A is the DGM and D is the GM."
+        "correct": "E",
+        "explanation": "A-DGM, B-Manager, C-CEO, and G-MD are all correctly matched according to the given information. H is the Clerk, not the Manager. Therefore, H - Manager is the pair that does not belong to the group.",
+        "passage": "Eight professionals A, B, C, D, E, F, G, and H are sitting around a circular table facing the center. Each holds a different bank designation: MD, CEO, GM, DGM, AGM, Manager, PO, and Clerk. The following information is given: 1. A is the DGM and D is the GM. 2. B sits third to the left of A. 3. C sits immediately to the left of A. 4. E sits opposite A. 5. G sits second to the left of B. 6. D sits third to the left of C. 7. F sits immediately to the right of A. 8. B is the Manager. 9. C is the CEO. 10. G is the MD. 11. E is the AGM. 12. F is the PO. 13. H is the Clerk."
       },
       {
         "q": 26,
@@ -1207,8 +1208,8 @@
           "D": "S"
         },
         "correct": "C",
-        "explanation": "By deduction: R is on Floor 2, Flat 1. W is on Floor 5, Flat 1. V is above W... tracing yields V on Floor 5, Flat 1.",
-        "passage": "Ten persons P, Q, R, S, T, U, V, W, X, and Y live in a 5-story building numbered 1 to 5 from bottom to top. Each floor has two flats: Flat 1 (West) and Flat 2 (East). Flat 1 of floor 2 is directly above Flat 1 of floor 1 and so on. 1. R lives on an even-numbered floor in Flat 1. 2. Two floors are between R and W, and both live in the same flat number. 3. V lives immediately above W in the same flat number. 4. Q lives to the East of V. 5. T lives on the floor immediately below Q in Flat 2. 6. P lives on an odd-numbered floor below T in Flat 1. 7. X lives above Y in Flat 2. 8. S lives to the West of X."
+        "explanation": "R is on Floor 2, Flat 1. One floor is between R and W, so W is on Floor 4, Flat 1. V is immediately above W in the same flat, so V is on Floor 5, Flat 1.",
+        "passage": "Ten persons P, Q, R, S, T, U, V, W, X, and Y live in a 5-story building numbered 1 to 5 from bottom to top. Each floor has two flats: Flat 1 (West) and Flat 2 (East). Flat 1 of each floor is directly above Flat 1 of the floor below it, and similarly for Flat 2. 1. R lives on an even-numbered floor in Flat 1. 2. One floor is between R and W, and both live in the same flat number. 3. V lives immediately above W in the same flat number. 4. Q lives to the East of V. 5. T lives on the floor immediately below Q in Flat 2. 6. P lives on an odd-numbered floor below T in Flat 1. 7. X lives above Y in Flat 2. 8. S lives to the West of X. 9. R lives below T. 10. S lives on Floor 3."
       },
       {
         "q": 27,
@@ -1221,8 +1222,8 @@
           "D": "X"
         },
         "correct": "D",
-        "explanation": "S lives in Flat 1 and X lives in Flat 2 on the same floor.",
-        "passage": "Ten persons P, Q, R, S, T, U, V, W, X, and Y live in a 5-story building numbered 1 to 5 from bottom to top. Each floor has two flats: Flat 1 (West) and Flat 2 (East). Flat 1 of floor 2 is directly above Flat 1 of floor 1 and so on. 1. R lives on an even-numbered floor in Flat 1. 2. Two floors are between R and W, and both live in the same flat number. 3. V lives immediately above W in the same flat number. 4. Q lives to the East of V. 5. T lives on the floor immediately below Q in Flat 2. 6. P lives on an odd-numbered floor below T in Flat 1. 7. X lives above Y in Flat 2. 8. S lives to the West of X."
+        "explanation": "S is on Floor 3 and lives in Flat 1 because S is west of X. Therefore, X is in Flat 2 on Floor 3. Hence X lives on the same floor as S.",
+        "passage": "Ten persons P, Q, R, S, T, U, V, W, X, and Y live in a 5-story building numbered 1 to 5 from bottom to top. Each floor has two flats: Flat 1 (West) and Flat 2 (East). Flat 1 of each floor is directly above Flat 1 of the floor below it, and similarly for Flat 2. 1. R lives on an even-numbered floor in Flat 1. 2. One floor is between R and W, and both live in the same flat number. 3. V lives immediately above W in the same flat number. 4. Q lives to the East of V. 5. T lives on the floor immediately below Q in Flat 2. 6. P lives on an odd-numbered floor below T in Flat 1. 7. X lives above Y in Flat 2. 8. S lives to the West of X. 9. R lives below T. 10. S lives on Floor 3."
       },
       {
         "q": 28,
@@ -1235,8 +1236,8 @@
           "D": "Floor 1, Flat 1"
         },
         "correct": "D",
-        "explanation": "P lives on Floor 1, Flat 1 based on odd-floor placement below T.",
-        "passage": "Ten persons P, Q, R, S, T, U, V, W, X, and Y live in a 5-story building numbered 1 to 5 from bottom to top. Each floor has two flats: Flat 1 (West) and Flat 2 (East). Flat 1 of floor 2 is directly above Flat 1 of floor 1 and so on. 1. R lives on an even-numbered floor in Flat 1. 2. Two floors are between R and W, and both live in the same flat number. 3. V lives immediately above W in the same flat number. 4. Q lives to the East of V. 5. T lives on the floor immediately below Q in Flat 2. 6. P lives on an odd-numbered floor below T in Flat 1. 7. X lives above Y in Flat 2. 8. S lives to the West of X."
+        "explanation": "Q is on Floor 5, Flat 2, so T is immediately below Q on Floor 4, Flat 2. P must live on an odd-numbered floor below T in Flat 1. The only available position is Floor 1, Flat 1.",
+        "passage": "Ten persons P, Q, R, S, T, U, V, W, X, and Y live in a 5-story building numbered 1 to 5 from bottom to top. Each floor has two flats: Flat 1 (West) and Flat 2 (East). Flat 1 of each floor is directly above Flat 1 of the floor below it, and similarly for Flat 2. 1. R lives on an even-numbered floor in Flat 1. 2. One floor is between R and W, and both live in the same flat number. 3. V lives immediately above W in the same flat number. 4. Q lives to the East of V. 5. T lives on the floor immediately below Q in Flat 2. 6. P lives on an odd-numbered floor below T in Flat 1. 7. X lives above Y in Flat 2. 8. S lives to the West of X. 9. R lives below T. 10. S lives on Floor 3."
       },
       {
         "q": 29,
@@ -1249,8 +1250,8 @@
           "D": "None"
         },
         "correct": "B",
-        "explanation": "Q is on Floor 5 and P is on Floor 1. There are 3 floors (Floors 2, 3, and 4) between them.",
-        "passage": "Ten persons P, Q, R, S, T, U, V, W, X, and Y live in a 5-story building numbered 1 to 5 from bottom to top. Each floor has two flats: Flat 1 (West) and Flat 2 (East). Flat 1 of floor 2 is directly above Flat 1 of floor 1 and so on. 1. R lives on an even-numbered floor in Flat 1. 2. Two floors are between R and W, and both live in the same flat number. 3. V lives immediately above W in the same flat number. 4. Q lives to the East of V. 5. T lives on the floor immediately below Q in Flat 2. 6. P lives on an odd-numbered floor below T in Flat 1. 7. X lives above Y in Flat 2. 8. S lives to the West of X."
+        "explanation": "Q lives on Floor 5 and P lives on Floor 1. Floors 2, 3, and 4 lie between them, so there are three floors between Q and P.",
+        "passage": "Ten persons P, Q, R, S, T, U, V, W, X, and Y live in a 5-story building numbered 1 to 5 from bottom to top. Each floor has two flats: Flat 1 (West) and Flat 2 (East). Flat 1 of each floor is directly above Flat 1 of the floor below it, and similarly for Flat 2. 1. R lives on an even-numbered floor in Flat 1. 2. One floor is between R and W, and both live in the same flat number. 3. V lives immediately above W in the same flat number. 4. Q lives to the East of V. 5. T lives on the floor immediately below Q in Flat 2. 6. P lives on an odd-numbered floor below T in Flat 1. 7. X lives above Y in Flat 2. 8. S lives to the West of X. 9. R lives below T. 10. S lives on Floor 3."
       },
       {
         "q": 30,
@@ -1263,8 +1264,8 @@
           "D": "Y lives immediately above S"
         },
         "correct": "A",
-        "explanation": "By elimination and positioning, Y lives in Flat 2 on Floor 2.",
-        "passage": "Ten persons P, Q, R, S, T, U, V, W, X, and Y live in a 5-story building numbered 1 to 5 from bottom to top. Each floor has two flats: Flat 1 (West) and Flat 2 (East). Flat 1 of floor 2 is directly above Flat 1 of floor 1 and so on. 1. R lives on an even-numbered floor in Flat 1. 2. Two floors are between R and W, and both live in the same flat number. 3. V lives immediately above W in the same flat number. 4. Q lives to the East of V. 5. T lives on the floor immediately below Q in Flat 2. 6. P lives on an odd-numbered floor below T in Flat 1. 7. X lives above Y in Flat 2. 8. S lives to the West of X."
+        "explanation": "S is on Floor 3, Flat 1, and X is immediately to its east on Floor 3, Flat 2. Since X lives above Y in Flat 2, Y must be on Floor 2, Flat 2.",
+        "passage": "Ten persons P, Q, R, S, T, U, V, W, X, and Y live in a 5-story building numbered 1 to 5 from bottom to top. Each floor has two flats: Flat 1 (West) and Flat 2 (East). Flat 1 of each floor is directly above Flat 1 of the floor below it, and similarly for Flat 2. 1. R lives on an even-numbered floor in Flat 1. 2. One floor is between R and W, and both live in the same flat number. 3. V lives immediately above W in the same flat number. 4. Q lives to the East of V. 5. T lives on the floor immediately below Q in Flat 2. 6. P lives on an odd-numbered floor below T in Flat 1. 7. X lives above Y in Flat 2. 8. S lives to the West of X. 9. R lives below T. 10. S lives on Floor 3."
       },
       {
         "q": 31,
@@ -1283,15 +1284,15 @@
       {
         "q": 32,
         "topic": "Scheduling",
-        "question": "How many audits are scheduled between Audit-A and Risk-C?",
+        "question": "Which audit is scheduled in the month of April?",
         "options": {
-          "A": "Three",
-          "B": "One",
-          "C": "Two",
-          "D": "Four"
+          "A": "Audit-B",
+          "B": "Risk-C",
+          "C": "Treasury-D",
+          "D": "Forex-F"
         },
-        "correct": "C",
-        "explanation": "Audit-A is in March. Risk-C is in July. There are two months (April and June) between them.",
+        "correct": "B",
+        "explanation": "The schedule is uniquely determined as: January-Finacle, March-Audit-A, April-Risk-C, June-Forex-F, July-Audit-B, September-Credit-E, and November-Treasury-D. Therefore, Risk-C is scheduled in April.",
         "passage": "Seven bank audits—Finacle, Audit-A, Audit-B, Risk-C, Treasury-D, Credit-E, and Forex-F—are scheduled across seven months of the same year: January, March, April, June, July, September, and November. 1. Forex-F is scheduled in a month having 30 days. 2. Only two audits are scheduled between Forex-F and Finacle. 3. Credit-E is scheduled immediately before Treasury-D. 4. Neither Credit-E nor Treasury-D is scheduled in a month having 31 days. 5. Audit-A is scheduled in March. 6. Audit-B is scheduled after Risk-C."
       },
       {
@@ -1325,15 +1326,16 @@
       {
         "q": 35,
         "topic": "Scheduling",
-        "question": "Four of the following five are alike in a certain way based on the given schedule. Which one does not belong to the group?",
+        "question": "Four of the following five audit-month pairs are correctly matched based on the given schedule. Which one does NOT belong to the group?",
         "options": {
           "A": "Finacle - January",
           "B": "Audit-A - March",
-          "C": "Risk-C - July",
-          "D": "Credit-E - April"
+          "C": "Risk-C - April",
+          "D": "Credit-E - September",
+          "E": "Treasury-D - June"
         },
-        "correct": "A",
-        "explanation": "Credit-E is scheduled in September (a 30-day month), whereas all other listed pairs represent audits conducted in 31-day months.",
+        "correct": "E",
+        "explanation": "The correct schedule places Finacle in January, Audit-A in March, Risk-C in April, Credit-E in September, and Treasury-D in November. Therefore, Treasury-D - June is the only incorrect pair and does not belong to the group.",
         "passage": "Seven bank audits—Finacle, Audit-A, Audit-B, Risk-C, Treasury-D, Credit-E, and Forex-F—are scheduled across seven months of the same year: January, March, April, June, July, September, and November. 1. Forex-F is scheduled in a month having 30 days. 2. Only two audits are scheduled between Forex-F and Finacle. 3. Credit-E is scheduled immediately before Treasury-D. 4. Neither Credit-E nor Treasury-D is scheduled in a month having 31 days. 5. Audit-A is scheduled in March. 6. Audit-B is scheduled after Risk-C."
       }
     ]

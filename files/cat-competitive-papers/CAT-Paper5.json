@@ -34,7 +34,7 @@
       {
         "q": 3,
         "topic": "Odd Sentence Out",
-        "question": "Five sentences are given below, related to a single topic. Four of them form a coherent paragraph. Identify the odd sentence that does not fit the context.\nSentence 1: The James Webb Space Telescope uses infrared imaging to peer through cosmic dust clouds.\nSentence 2: By analyzing these ancient light signatures, astronomers can study the formation of the universe's earliest galaxies.\nSentence 3: String theory proposes that the fundamental ingredients of the universe are one-dimensional vibrating strings.\nSentence 4: This unprecedented optical resolution allows scientists to observe stellar nurseries that were previously hidden.",
+        "question": "Four sentences are given below, related to a single topic. Four of them form a coherent paragraph. Identify the odd sentence that does not fit the context.\nSentence 1: The James Webb Space Telescope uses infrared imaging to peer through cosmic dust clouds.\nSentence 2: By analyzing these ancient light signatures, astronomers can study the formation of the universe's earliest galaxies.\nSentence 3: String theory proposes that the fundamental ingredients of the universe are one-dimensional vibrating strings.\nSentence 4: This unprecedented optical resolution allows scientists to observe stellar nurseries that were previously hidden.",
         "options": {
           "A": "Sentence 1",
           "B": "Sentence 2",
@@ -47,7 +47,7 @@
       {
         "q": 4,
         "topic": "Odd Sentence Out",
-        "question": "Five sentences are given below, related to a single topic. Four of them form a coherent paragraph. Identify the odd sentence that does not fit the context.\nSentence 1: In classical conditioning, a neutral stimulus is paired with an unconditioned stimulus to elicit a learned response.\nSentence 2: Operant conditioning, conversely, relies on rewards and punishments to shape voluntary behavior over time.\nSentence 3: Cognitive behavioral therapy focuses on identifying and changing negative thought patterns to treat depression.\nSentence 4: Both classical and operant frameworks formed the bedrock of early 20th-century behaviorism, which largely ignored internal mental states.",
+        "question": "Four sentences are given below, related to a single topic. Four of them form a coherent paragraph. Identify the odd sentence that does not fit the context.\nSentence 1: In classical conditioning, a neutral stimulus is paired with an unconditioned stimulus to elicit a learned response.\nSentence 2: Operant conditioning, conversely, relies on rewards and punishments to shape voluntary behavior over time.\nSentence 3: Cognitive behavioral therapy focuses on identifying and changing negative thought patterns to treat depression.\nSentence 4: Both classical and operant frameworks formed the bedrock of early 20th-century behaviorism, which largely ignored internal mental states.",
         "options": {
           "A": "Sentence 1",
           "B": "Sentence 2",
@@ -481,7 +481,7 @@
       {
         "q": 12,
         "topic": "Distribution",
-        "question": "How many investors invested exclusively in The Obsidian Penthouse and no other properties?",
+        "question": "How many investors invested exclusively in The Obsidian Penthouse and no other properties?\nThe 220 investors who invested in exactly one property are equally distributed among the four properties.",
         "options": {
           "A": "Forty",
           "B": "Forty-five",

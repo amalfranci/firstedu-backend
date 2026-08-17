@@ -337,7 +337,7 @@
     "Data Interpretation and Logical Reasoning": [
       {
         "q": 1,
-        "topic": "Arrangements",
+        "topic": "Logic Puzzles",
         "question": "Who among the following executives belongs to the Strategy department?",
         "options": {
           "A": "Aaron",
@@ -346,12 +346,12 @@
           "D": "Gavin"
         },
         "correct": "B",
-        "explanation": "Carter (Finance) sits at position 1. Henry (Legal) sits 4th to the right of Carter at position 5. Aaron sits 3rd to the right of Carter at position 4. The executive from Tech is at position 8, adjacent to Foster (Operations) at position 7. Blake sits at position 2, Drake (Strategy) sits at position 3, Henry (Legal) sits at position 5, Gavin (Marketing) sits at position 6, Foster (Operations) sits at position 7, and Ethan (Tech) sits at position 8. Hence, Drake belongs to Strategy.",
-        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north in an auditorium. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit, though not necessarily in that order. Aaron sits third to the right of the executive from Finance. The executive from Tech sits at one of the extreme ends and is adjacent to Foster. Drake sits second to the left of Ethan, and neither of them is from Marketing or Legal. The executive from Strategy sits exactly between Henry and Blake. Gavin sits immediately to the left of the executive from Audit. Henry is from Legal and sits fourth to the right of Carter, who is from Finance. Foster is from Operations. Blake sits to the immediate left of Gavin."
+        "explanation": "Carter is at position 1, so Aaron is at position 4 and Henry at position 5. Ethan is at position 8, Foster immediately to his left at position 7, and Drake immediately to Ethan's left at position 6. The passage states that Drake is from Strategy. Therefore, option B is correct.",
+        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north. Each belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit. The following conditions apply: Carter is from Finance and sits at the far left end. Henry is from Legal and sits fourth to the right of Carter. Aaron sits third to the right of Carter. Ethan is from Tech and sits at the far right end. Foster is from Operations and sits immediately to the left of Ethan. Drake sits immediately to the left of Ethan and is from Strategy. Blake sits immediately to the left of Gavin. Aaron is from Audit and Blake is from HR."
       },
       {
         "q": 2,
-        "topic": "Arrangements",
+        "topic": "Logic Puzzles",
         "question": "What is the position of Henry relative to Blake?",
         "options": {
           "A": "Third to the right",
@@ -360,12 +360,12 @@
           "D": "Fourth to the right"
         },
         "correct": "A",
-        "explanation": "Blake sits at position 2 and Henry sits at position 5. Position 5 is three positions to the right of position 2 (third to the right).",
-        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north in an auditorium. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit, though not necessarily in that order. Aaron sits third to the right of the executive from Finance. The executive from Tech sits at one of the extreme ends and is adjacent to Foster. Drake sits second to the left of Ethan, and neither of them is from Marketing or Legal. The executive from Strategy sits exactly between Henry and Blake. Gavin sits immediately to the left of the executive from Audit. Henry is from Legal and sits fourth to the right of Carter, who is from Finance. Foster is from Operations. Blake sits to the immediate left of Gavin."
+        "explanation": "The fixed positions are Carter 1, Aaron 4, Henry 5, Drake 6, Foster 7, and Ethan 8. Blake and Gavin must therefore occupy positions 2 and 3, respectively, because Blake sits immediately to the left of Gavin. Thus Henry at position 5 is third to the right of Blake at position 2. Therefore, option A is correct.",
+        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north. Each belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit. The following conditions apply: Carter is from Finance and sits at the far left end. Henry is from Legal and sits fourth to the right of Carter. Aaron sits third to the right of Carter. Ethan is from Tech and sits at the far right end. Foster is from Operations and sits immediately to the left of Ethan. Drake sits immediately to the left of Ethan and is from Strategy. Blake sits immediately to the left of Gavin. Aaron is from Audit and Blake is from HR."
       },
       {
         "q": 3,
-        "topic": "Arrangements",
+        "topic": "Logic Puzzles",
         "question": "Which department does Gavin belong to?",
         "options": {
           "A": "Audit",
@@ -374,12 +374,12 @@
           "D": "Legal"
         },
         "correct": "C",
-        "explanation": "Gavin sits at position 6, directly to the left of Foster at position 7 (who belongs to Operations and sits adjacent to Audit at position 4, Aaron). The eight department assignments are uniquely mapped as: Carter (Finance), Blake (HR), Drake (Strategy), Aaron (Audit), Henry (Legal), Gavin (Marketing), Foster (Operations), and Ethan (Tech). Therefore, Gavin belongs to Marketing.",
-        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north in an auditorium. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit, though not necessarily in that order. Aaron sits third to the right of the executive from Finance. The executive from Tech sits at one of the extreme ends and is adjacent to Foster. Drake sits second to the left of Ethan, and neither of them is from Marketing or Legal. The executive from Strategy sits exactly between Henry and Blake. Gavin sits immediately to the left of the executive from Audit. Henry is from Legal and sits fourth to the right of Carter, who is from Finance. Foster is from Operations. Blake sits to the immediate left of Gavin."
+        "explanation": "Aaron is from Audit, Blake is from HR, Carter is from Finance, Drake is from Strategy, Ethan is from Tech, Foster is from Operations, and Henry is from Legal. Since every department is unique, the only department left for Gavin is Marketing. Therefore, option C is correct.",
+        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north. Each belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit. The following conditions apply: Carter is from Finance and sits at the far left end. Henry is from Legal and sits fourth to the right of Carter. Aaron sits third to the right of Carter. Ethan is from Tech and sits at the far right end. Foster is from Operations and sits immediately to the left of Ethan. Drake sits immediately to the left of Ethan and is from Strategy. Blake sits immediately to the left of Gavin. Aaron is from Audit and Blake is from HR."
       },
       {
         "q": 4,
-        "topic": "Charts and Graphs",
+        "topic": "Logic Puzzles",
         "question": "Which pair of executives occupies the extreme ends of the seating row?",
         "options": {
           "A": "Carter and Foster",
@@ -388,8 +388,8 @@
           "D": "Carter and Ethan"
         },
         "correct": "D",
-        "explanation": "Position 1 on the far left is occupied by Carter (Finance), and position 8 on the far right is occupied by Ethan (Tech). Thus, Carter and Ethan occupy the extreme ends. PASSAGE FOR QUESTIONS 5 TO 8 Four analysts named Zenith, Yaris, Xander, and Walter evaluated four corporate projects named Alpha, Beta, Gamma, and Delta. Each analyst reviewed exactly two projects, and each project was reviewed by exactly two analysts. Every evaluation yielded a unique score from 10 to 80 in multiples of 10. No analyst gave the same score to both projects they reviewed. Zenith scored Alpha 20 points higher than Beta. Yaris scored Gamma 10 points lower than Delta. Xander gave his highest score of 70 to Beta. The total score received by project Gamma from both its reviewers was 40. Walter gave Delta a score of 50. Zenith did not review project Delta, and Xander did not review project Alpha. The sum of scores given by Walter across his two projects was 130.",
-        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north in an auditorium. Each executive belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit, though not necessarily in that order. Aaron sits third to the right of the executive from Finance. The executive from Tech sits at one of the extreme ends and is adjacent to Foster. Drake sits second to the left of Ethan, and neither of them is from Marketing or Legal. The executive from Strategy sits exactly between Henry and Blake. Gavin sits immediately to the left of the executive from Audit. Henry is from Legal and sits fourth to the right of Carter, who is from Finance. Foster is from Operations. Blake sits to the immediate left of Gavin."
+        "explanation": "Carter is explicitly at the far left end, while Ethan is explicitly at the far right end. Therefore, the extreme ends are occupied by Carter and Ethan, so option D is correct.",
+        "passage": "Eight executives named Aaron, Blake, Carter, Drake, Ethan, Foster, Gavin, and Henry sit in a straight line facing north. Each belongs to a unique department among Marketing, Finance, Operations, HR, Legal, Tech, Strategy, and Audit. The following conditions apply: Carter is from Finance and sits at the far left end. Henry is from Legal and sits fourth to the right of Carter. Aaron sits third to the right of Carter. Ethan is from Tech and sits at the far right end. Foster is from Operations and sits immediately to the left of Ethan. Drake sits immediately to the left of Ethan and is from Strategy. Blake sits immediately to the left of Gavin. Aaron is from Audit and Blake is from HR."
       },
       {
         "q": 5,
@@ -458,8 +458,8 @@
           "D": "Boris and Daniel"
         },
         "correct": "A",
-        "explanation": "Testing the scenario where Amber and Daniel are Knights: Amber (Knight) states \"Boris is a Knave\" (True) and \"Daniel is a Knight\" (True). Daniel (Knight) states \"Amber is a Knight\" (True) and \"Chloe is a Knave\" (True). Boris (Knave) states \"Chloe is a Knight\" (False) and \"Daniel is a Knave\" (False). Chloe (Knave) states \"Boris is a Knight\" (False) and \"Amber is a Knave\" (False). Every statement made by the Knights is completely true, and every statement made by the Knaves is completely false. Thus, Amber and Daniel are consistently the two Knights.",
-        "passage": "Four suspects named Amber, Boris, Chloe, and Daniel were interviewed regarding a security breach. Exactly two of them are Knights who always tell the truth, and exactly two of them are Knaves who always lie. Each suspect made two statements. Amber said: \"Boris is a Knave\" and \"Daniel is a Knight.\" Boris said: \"Chloe is a Knight\" and \"Daniel is a Knave.\" Chloe said: \"Boris is a Knight\" and \"Amber is a Knave.\" Daniel said: \"Amber is a Knight\" and \"Chloe is a Knave.\""
+        "explanation": "The additional clue establishes that Amber is a Knight. Amber's two statements are therefore true, so Boris is a Knave and Daniel is a Knight. Daniel's statements are then also true, which makes Chloe a Knave. Thus the unique solution is Amber and Daniel as Knights, with Boris and Chloe as Knaves. Therefore, option A is correct.",
+        "passage": "Four suspects named Amber, Boris, Chloe, and Daniel were interviewed regarding a security breach. Exactly two are Knights who always tell the truth and exactly two are Knaves who always lie. Amber said: 'Boris is a Knave' and 'Daniel is a Knight.' Boris said: 'Chloe is a Knight' and 'Daniel is a Knave.' Chloe said: 'Boris is a Knight' and 'Amber is a Knave.' Daniel said: 'Amber is a Knight' and 'Chloe is a Knave.' In addition, the investigators established that Amber is a Knight."
       },
       {
         "q": 10,
@@ -486,8 +486,8 @@
           "D": "Daniel is a Knave"
         },
         "correct": "B",
-        "explanation": "From the deduction, Chloe is a Knave and Daniel is a Knight. This directly corresponds to Option B and is logically true without any contradiction.",
-        "passage": "Four suspects named Amber, Boris, Chloe, and Daniel were interviewed regarding a security breach. Exactly two of them are Knights who always tell the truth, and exactly two of them are Knaves who always lie. Each suspect made two statements. Amber said: \"Boris is a Knave\" and \"Daniel is a Knight.\" Boris said: \"Chloe is a Knight\" and \"Daniel is a Knave.\" Chloe said: \"Boris is a Knight\" and \"Amber is a Knave.\" Daniel said: \"Amber is a Knight\" and \"Chloe is a Knave.\""
+        "explanation": "The unique solution is Amber and Daniel as Knights, while Boris and Chloe are Knaves. Therefore, Chloe is a Knave and Daniel is a Knight, making option B correct.",
+        "passage": "Four suspects named Amber, Boris, Chloe, and Daniel were interviewed regarding a security breach. Exactly two are Knights who always tell the truth and exactly two are Knaves who always lie. Amber said: 'Boris is a Knave' and 'Daniel is a Knight.' Boris said: 'Chloe is a Knight' and 'Daniel is a Knave.' Chloe said: 'Boris is a Knight' and 'Amber is a Knave.' Daniel said: 'Amber is a Knight' and 'Chloe is a Knave.' In addition, the investigators established that Amber is a Knight."
       },
       {
         "q": 12,
@@ -514,8 +514,8 @@
           "D": "Chemistry"
         },
         "correct": "D",
-        "explanation": "Tina teaches Biology (Train). Sam teaches Mathematics (Scooter). Quentin travels by Bicycle and teaches Physics. Paul does not teach Economics or Physics, which leaves Chemistry for Paul. Rachel teaches Economics (Car). Thus, Paul teaches Chemistry.",
-        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Physics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
+        "explanation": "Tina teaches Biology and Sam teaches Mathematics. Paul cannot teach Economics or Physics, so Paul must teach Chemistry. Quentin cannot teach Economics or Biology, and Chemistry is already taken by Paul, so Quentin must teach Physics. The remaining subject, Economics, belongs to Rachel. Therefore, Paul teaches Chemistry, so option D is correct.",
+        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Economics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
       },
       {
         "q": 14,
@@ -528,8 +528,8 @@
           "D": "Car"
         },
         "correct": "B",
-        "explanation": "Sam cannot use Bus or Train. Car is used by Rachel (Economics), and Bicycle is used by Quentin. The only remaining transport mode for Sam is Scooter.",
-        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Physics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
+        "explanation": "Tina uses Train and Quentin uses Bicycle. Economics is assigned to Rachel, who therefore uses Car. Sam cannot use Bus or Train, so after Car, Train, and Bicycle are assigned, Sam must use Scooter. Therefore, option B is correct.",
+        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Economics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
       },
       {
         "q": 15,
@@ -542,12 +542,12 @@
           "D": "Sam"
         },
         "correct": "B",
-        "explanation": "The Economics teacher travels by Car. Paul teaches Chemistry, Sam teaches Mathematics, Tina teaches Biology, and Quentin teaches Physics. Thus, Rachel teaches Economics and travels by Car.",
-        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Physics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
+        "explanation": "Paul cannot teach Economics or Physics, so Paul teaches Chemistry. Sam teaches Mathematics and Tina teaches Biology. Quentin cannot teach Economics or Biology, so Quentin teaches Physics. Therefore, Economics is taught by Rachel, who travels by Car. Option B is correct.",
+        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Economics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
       },
       {
         "q": 16,
-        "topic": "Games and Tournaments",
+        "topic": "Logic Puzzles",
         "question": "Which of the following combinations of Professor, Subject, and Transport is correct?",
         "options": {
           "A": "Quentin - Economics - Bicycle",
@@ -556,8 +556,8 @@
           "D": "Sam - Chemistry - Scooter"
         },
         "correct": "C",
-        "explanation": "Quentin travels by Bicycle and teaches Physics. Thus, the matching combination is Quentin - Physics - Bicycle. PASSAGE FOR QUESTIONS 17 TO 19 A freight distribution network consists of five hubs named Node A, Node B, Node C, Node D, and Node E. Cargo flows along directed routes between hubs. Cargo can be moved directly from Node A to Node B, from Node A to Node C, from Node B to Node D, from Node C to Node D, from Node C to Node E, and from Node D to Node E. The cost of shipping one container along each route is as follows: A to B costs 4 units, A to C costs 2 units, B to D costs 5 units, C to D costs 8 units, C to E costs 11 units, and D to E costs 3 units. A logistics manager must send containers from Node A to Node E.",
-        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Physics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
+        "explanation": "The unique subject assignment is Paul–Chemistry, Quentin–Physics, Rachel–Economics, Sam–Mathematics, and Tina–Biology. The transport assignment is Rachel–Car, Quentin–Bicycle, Tina–Train, Sam–Scooter, and Paul–Bus. Thus Quentin–Physics–Bicycle is the only listed correct combination, so option C is correct.",
+        "passage": "Five professors named Paul, Quentin, Rachel, Sam, and Tina teach five distinct subjects: Physics, Chemistry, Mathematics, Biology, and Economics. Each professor travels to the university using a unique mode of transport: Bus, Car, Train, Bicycle, and Scooter. The professor who teaches Economics travels by Car. Sam teaches Mathematics and does not travel by Bus or Train. Quentin travels by Bicycle and does not teach Economics or Biology. Tina teaches Biology and travels by Train. Paul does not teach Economics or Physics."
       },
       {
         "q": 17,

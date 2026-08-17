@@ -1048,8 +1048,8 @@
           "D": "Neither conclusion I nor II follows",
           "E": "Both conclusions I and II follow"
         },
-        "correct": "E",
-        "explanation": "The intersecting portion of Apples and Bananas can never touch Cherries (conclusion I accurate). Since all Cherries are inside Dates, the Dates that are Cherries cannot be Bananas (conclusion II accurate). Both follow."
+        "correct": "A",
+        "explanation": "Some Apples are Bananas, and no Banana is a Cherry. Therefore, those Apples that are Bananas are not Cherries, so conclusion I follows. However, 'All Cherries are Dates' does not establish the existence of any Cherries or Dates. Hence, conclusion II does not necessarily follow. Therefore, only conclusion I follows."
       },
       {
         "q": 9,

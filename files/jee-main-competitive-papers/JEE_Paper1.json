@@ -65,8 +65,8 @@
           "C": "−√3 ln 3",
           "D": "ln 3"
         },
-        "correct": "B",
-        "explanation": "Let 3ˣ = tan θ. Then f(x) = 2 tan⁻¹(3ˣ). Differentiating: f'(x) = (2·3ˣ ln 3)/(1+9ˣ). At x=1/2, 3^(1/2)=√3, so f'(1/2) = (2√3 ln 3)/4 = (√3/2) ln 3."
+        "correct": "C",
+        "explanation": "Let t = 3^x. Then f(x) = sin⁻¹(2t/(1+t²)). At x = 1/2, t = √3 and 2t/(1+t²) = √3/2. Because the principal value of sin⁻¹ lies in [−π/2, π/2], near x = 1/2 we have f(x) = π − 2tan⁻¹(3^x), not 2tan⁻¹(3^x). Therefore f'(x) = −(2·3^x ln 3)/(1+9^x). At x = 1/2, f'(1/2) = −(2√3 ln 3)/4 = −(√3/2) ln 3. Hence the correct option is C."
       },
       {
         "q": 6,

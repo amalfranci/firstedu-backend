@@ -351,7 +351,7 @@
       {
         "q": 2,
         "topic": "Scheduling",
-        "question": "An intra-city courier service operates four vans—V1, V2, V3, and V4—delivering packages across four zones—North, South, East, and West. Each van delivers in a unique zone and makes deliveries on exactly one of four days: Monday, Tuesday, Wednesday, or Thursday. V1 delivers in the East zone on Monday. V2 makes its deliveries on Thursday in the West zone. V3 delivers in the South zone on a day exactly two days after the day V4 makes its deliveries. V4 delivers in the North zone.",
+        "question": "Which of the following must be true?",
         "options": {
           "A": "V3 delivers in the South zone on Wednesday.",
           "B": "V4 delivers in the North zone on Tuesday.",
@@ -359,20 +359,22 @@
           "D": "V1 delivers in the East zone on Tuesday."
         },
         "correct": "B",
-        "explanation": "V1 is East on Monday and V2 is West on Thursday. Since V3 delivers in South exactly two days after V4, and V4 delivers in North on Tuesday, V3 delivers on Thursday. However, Thursday is occupied by V2, forcing V4 to deliver on Tuesday while V3 delivers on Thursday, making V4 deliver in the North zone on Tuesday the consistent configuration under zone allocation constraints."
+        "explanation": "V3 is exactly two days after V4. V4 cannot be Monday by the final clue, and it cannot be Wednesday or Thursday because there would be no valid day two days later. Hence V4 must be Tuesday, making V3 Thursday. Therefore, option (B) is correct.",
+        "passage": "An intra-city courier service operates four vans—V1, V2, V3, and V4—delivering packages across four zones—North, South, East, and West. Each van delivers in a unique zone and makes deliveries on exactly one of four days: Monday, Tuesday, Wednesday, or Thursday. V1 delivers in the East zone on Monday. V2 makes its deliveries on Thursday in the West zone. V3 delivers in the South zone on a day exactly two days after the day V4 makes its deliveries. V4 delivers in the North zone. V4 does not make deliveries on Monday."
       },
       {
         "q": 3,
         "topic": "Arrangements",
-        "question": "Six friends—Ajay, Bina, Chetan, Diya, Elango, and Farhan—are seated around a circular table facing the center, engaged in a discussion. Ajay is seated second to the right of Bina. Chetan is not adjacent to either Ajay or Bina. Farhan is seated to the immediate left of Elango. Diya is seated between Ajay and Chetan.",
+        "question": "Who is seated opposite to Bina?",
         "options": {
-          "A": "Farhan is seated opposite to Bina.",
-          "B": "Chetan is seated second to the left of Farhan.",
-          "C": "Elango is seated between Bina and Farhan.",
-          "D": "Ajay is seated opposite to Elango."
+          "A": "Chetan",
+          "B": "Diya",
+          "C": "Elango",
+          "D": "Farhan"
         },
-        "correct": "C",
-        "explanation": "Placing Bina at position 1, Ajay occupies position 3. Diya is between Ajay and Chetan, placing Chetan at position 5 since Chetan cannot be adjacent to Bina or Ajay. Filling the remaining slots for Farhan and Elango such that Farhan is to the immediate left of Elango places Elango at position 2, directly between Bina and Farhan."
+        "correct": "D",
+        "explanation": "Fix Bina at one position. Since Ajay is second to Bina's right, Ajay is two positions counter-clockwise from Bina. Chetan is immediately to Bina's left, Diya is immediately to Chetan's left, and Farhan is immediately to Ajay's right. The remaining position is Elango. Thus Farhan is three positions from Bina and is directly opposite Bina. Therefore, option (D) is correct.",
+        "passage": "Six friends—Ajay, Bina, Chetan, Diya, Elango, and Farhan—are seated around a circular table facing the center. For this question, right means the immediate counter-clockwise position and left means the immediate clockwise position. Ajay is seated second to the right of Bina. Chetan is seated immediately to the left of Bina. Diya is seated immediately to the left of Chetan. Farhan is seated immediately to the right of Ajay. The remaining seat is occupied by Elango."
       },
       {
         "q": 4,
@@ -419,12 +421,13 @@
         "question": "Five academic journals—J1, J2, J3, J4, and J5—published research papers in distinct months from January to May. J1 published its papers two months before J3. J2 published its papers in a month immediately following the month of J4. J5 published its papers in March. J4 did not publish in January.",
         "options": {
           "A": "J1 published in February.",
-          "B": "J2 published in April.",
+          "B": "J2 published in May.",
           "C": "J3 published in May.",
           "D": "J4 published in February."
         },
         "correct": "B",
-        "explanation": "J5 is fixed in March. J1 is published two months before J3, meaning J1 is February and J3 is April. The remaining months are January and May. Since J2 is published immediately after J4, and J4 did not publish in January, the only consistent placement leaves J4 in January and J2 in... note: the source explanation for this question contains internal inconsistencies in the original document; the stated correct answer is J2 published in April."
+        "explanation": "Since J5 is in March and J1 is two months before J3, the only possible pair for J1 and J3 is February and April. The remaining months are January and May for J2 and J4. Since J2 is four months after J4, J4 must be January and J2 must be May. The condition that J4 is not in May is also satisfied. Therefore, option (B) is correct.",
+        "passage": "Five academic journals—J1, J2, J3, J4, and J5—published research papers in distinct months from January to May. J1 published its papers two months before J3. J2 published its papers four months after J4. J5 published its papers in March. J4 did not publish in May."
       },
       {
         "q": 8,
@@ -476,7 +479,8 @@
           "D": "Karan finished 4th."
         },
         "correct": "B",
-        "explanation": "Omkar is 3rd and Pankaj is 6th. The remaining positions are 1st, 2nd, 4th, and 5th. Manish is immediately behind Naveen, meaning they occupy consecutive positions: either (1st, 2nd) or (4th, 5th). If Naveen and Manish occupied 1st and 2nd, Karan and Lalit would occupy 4th and 5th. Since Karan finished ahead of Lalit, Karan would be 4th and Lalit 5th. Conversely, if Naveen and Manish occupied 4th and 5th, Karan and Lalit would occupy 1st and 2nd (Karan 1st, Lalit 2nd). However, testing the relative position constraints across the sprint results in Lalit uniquely finishing 5th."
+        "explanation": "Naveen is 1st, so Manish is immediately behind him in 2nd. Omkar is 3rd and Pankaj is 6th, leaving 4th and 5th for Karan and Lalit. Since Karan finished ahead of Lalit, Karan is 4th and Lalit is 5th. Therefore, option (B) is correct.",
+        "passage": "Six athletes—Karan, Lalit, Manish, Naveen, Omkar, and Pankaj—competed in a 100-meter sprint, finishing from 1st to 6th with no ties. Karan finished ahead of Lalit. Manish finished immediately behind Naveen. Omkar finished 3rd. Pankaj finished last (6th). Naveen finished 1st."
       },
       {
         "q": 12,
@@ -546,15 +550,15 @@
       {
         "q": 17,
         "topic": "Logic Puzzles",
-        "question": "Five candidates—A, B, C, D, and E—participated in a debate and secured distinct ranks from 1st to 5th. Candidate A finished ahead of Candidate B. Candidate C finished behind Candidate D. Candidate B finished ahead of Candidate C. Candidate E finished 4th.",
+        "question": "Which candidate must finish 5th?",
         "options": {
-          "A": "Candidate A finished 1st.",
-          "B": "Candidate C finished 3rd.",
-          "C": "Candidate D finished 2nd.",
-          "D": "Candidate B finished 3rd."
+          "A": "Candidate A finished 5th.",
+          "B": "Candidate B finished 5th.",
+          "C": "Candidate C finished 5th.",
+          "D": "Candidate D finished 5th."
         },
-        "correct": "D",
-        "explanation": "Combining the inequality chains yields A > B > C and D > C. We are given that Candidate E finished exactly 4th. This leaves ranks 1st, 2nd, 3rd, and 5th for A, B, C, and D. Since A > B > C, C must occupy a rank behind both A and B. With E at 4th, the only positions remaining for A, B, and C that preserve the strict order A > B > C while satisfying D > C are A at 1st or 2nd, B at 3rd, and C at 5th (with D taking the remaining available slot). Thus, Candidate B uniquely finishes in 3rd position."
+        "correct": "C",
+        "explanation": "A finishes ahead of B, and B finishes ahead of C, so C must finish behind both A and B. E is already 4th, so C cannot be 4th or earlier while leaving positions for A and B in the required order. D also finishes ahead of C. Therefore C must finish 5th. Hence, option (C) is correct."
       },
       {
         "q": 18,
@@ -572,15 +576,15 @@
       {
         "q": 19,
         "topic": "Scheduling",
-        "question": "Four colleagues—P, Q, R, and S—work in four different shifts: Morning, Afternoon, Evening, and Night, one colleague per shift. P does not work in the Morning or Night shift. Q works in a shift chronologically preceding the shift in which R works. S works in the Night shift.",
+        "question": "Which colleague must work in the Morning shift?",
         "options": {
-          "A": "P works in the Afternoon shift.",
-          "B": "Q works in the Morning shift.",
-          "C": "R works in the Evening shift.",
-          "D": "P works in the Evening shift."
+          "A": "P",
+          "B": "Q",
+          "C": "R",
+          "D": "S"
         },
-        "correct": "D",
-        "explanation": "S is Night. P is Afternoon or Evening. Q precedes R. Testing chronological shift assignments results in P working in the Evening shift."
+        "correct": "B",
+        "explanation": "S works at Night, while P can work only in Afternoon or Evening. Therefore Morning must be occupied by either Q or R. Since Q must work earlier than R, Q cannot be later than R; the only feasible assignments are Q-Morning, R-Evening with P-Afternoon, or Q-Morning, R-Afternoon with P-Evening. Thus Q must work in the Morning shift. Therefore, option (B) is correct."
       },
       {
         "q": 20,
@@ -598,15 +602,15 @@
       {
         "q": 21,
         "topic": "Logic Puzzles",
-        "question": "Five tech firms—Alpha, Beta, Gamma, Delta, and Epsilon—were ranked from 1st to 5th in a innovation index. Alpha is ranked higher than Beta. Gamma is ranked lower than Delta. Beta is ranked higher than Gamma. Epsilon is ranked 3rd.",
+        "question": "Which firm must be ranked 5th?",
         "options": {
-          "A": "Alpha is ranked 1st.",
-          "B": "Gamma is ranked 4th.",
-          "C": "Delta is ranked 2nd.",
-          "D": "Beta is ranked 2nd."
+          "A": "Alpha",
+          "B": "Gamma",
+          "C": "Delta",
+          "D": "Beta"
         },
         "correct": "B",
-        "explanation": "With Alpha > Beta > Gamma and Epsilon at 3rd, evaluating the remaining ranks 1, 2, 4, 5 shows that Gamma is ranked 4th."
+        "explanation": "Alpha is ranked higher than Beta, and Beta is ranked higher than Gamma, so Gamma must be below both Alpha and Beta. Delta is also ranked higher than Gamma. With Epsilon fixed at 3rd, there are only ranks 1, 2, 4, and 5 for the other four firms. Gamma cannot be 1st, 2nd, 3rd, or 4th while leaving two higher-ranked firms Alpha and Beta and a higher-ranked Delta, so Gamma must be 5th. Therefore, option (B) is correct."
       },
       {
         "q": 22,

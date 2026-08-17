@@ -943,7 +943,8 @@
           "D": "400"
         },
         "correct": "C",
-        "explanation": "Total employees = 1,200. Operations = 40% of 1200 = 480. Marketing = 350. IT = 1200 - (480 + 350) = 1200 - 830 = 370. Thus, option C is correct."
+        "explanation": "Total employees = 1,200. Operations = 40% of 1200 = 480. Marketing = 350. IT = 1200 - (480 + 350) = 1200 - 830 = 370. Thus, option C is correct.",
+        "passage": "The total number of employees in a company is 1,200. Of these, 40% work in Operations and 350 work in Marketing. The remaining employees work in IT. In Operations, the male to female ratio is 3:2. In IT, 40% of the employees are female. Based on this information, answer Questions 22–25."
       },
       {
         "q": 23,
@@ -956,7 +957,8 @@
           "D": "210"
         },
         "correct": "C",
-        "explanation": "Operations has 480 employees, with male to female ratio 3:2. Female employees = (2 / 5) x 480 = 2 x 96 = 192. Thus, option C is correct."
+        "explanation": "Operations has 480 employees, with male to female ratio 3:2. Female employees = (2 / 5) x 480 = 2 x 96 = 192. Thus, option C is correct.",
+        "passage": "The total number of employees in a company is 1,200. Of these, 40% work in Operations and 350 work in Marketing. The remaining employees work in IT. In Operations, the male to female ratio is 3:2. In IT, 40% of the employees are female. Based on this information, answer Questions 22–25."
       },
       {
         "q": 24,
@@ -969,7 +971,8 @@
           "D": "240"
         },
         "correct": "C",
-        "explanation": "Total IT employees = 370. Female percentage in IT is 40%, so female employees = 40% of 370 = 148. Male employees = 370 - 148 = 222. Thus, option C is correct."
+        "explanation": "Total IT employees = 370. Female percentage in IT is 40%, so female employees = 40% of 370 = 148. Male employees = 370 - 148 = 222. Thus, option C is correct.",
+        "passage": "The total number of employees in a company is 1,200. Of these, 40% work in Operations and 350 work in Marketing. The remaining employees work in IT. In Operations, the male to female ratio is 3:2. In IT, 40% of the employees are female. Based on this information, answer Questions 22–25."
       },
       {
         "q": 25,
@@ -982,7 +985,8 @@
           "D": "450"
         },
         "correct": "B",
-        "explanation": "Operations females = 192. IT females = 148. Marketing females = 20% of 350 = 70. Total females = 192 + 148 + 70 = 410. Thus, option B is correct."
+        "explanation": "Operations females = 192. IT females = 148. Marketing females = 20% of 350 = 70. Total females = 192 + 148 + 70 = 410. Thus, option B is correct.",
+        "passage": "The total number of employees in a company is 1,200. Of these, 40% work in Operations and 350 work in Marketing. The remaining employees work in IT. In Operations, the male to female ratio is 3:2. In IT, 40% of the employees are female. Based on this information, answer Questions 22–25."
       }
     ],
     "English Comprehension": [

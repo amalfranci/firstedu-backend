@@ -597,13 +597,13 @@
         "topic": "Series",
         "question": "Complete the letter series with matching blanks: a b _ d e a _ c d e a b c _ e a b c d _",
         "options": {
-          "A": "cbae",
+          "A": "cbde",
           "B": "cabe",
           "C": "bcae",
           "D": "cbea"
         },
         "correct": "A",
-        "explanation": "The repeating sequence pattern is blocks of 5 letters: a b c d e. Filling the missing blanks step-by-step: position 3 needs 'c', position 7 needs 'b', position 13 needs 'a', and position 19 needs 'e', exactly matching option A (c, b, a, e)."
+        "explanation": "The sequence consists of repeating blocks of five letters: a, b, c, d, e. Therefore, the first blank is c, the second blank is b, the third blank is d, and the fourth blank is e. The required sequence is c, b, d, e, which matches option A."
       },
       {
         "q": 17,
@@ -800,7 +800,9 @@
           "D": "They actively commission research to understand and eliminate it"
         },
         "correct": "A",
-        "explanation": "The passage's closing line states that retailers 'remain largely indifferent to this psychological cost' because a crowded shelf 'rarely dampens overall sales figures.' This shows retailers are aware of the cost but unbothered by it, since their revenue is unaffected."
+        "explanation": "The passage's closing line states that retailers 'remain largely indifferent to this psychological cost' because a crowded shelf 'rarely dampens overall sales figures.' This shows retailers are aware of the cost but unbothered by it, since their revenue is unaffected.",
+        "passage_id": "RC_01",
+        "passage": "Modern retailing often presents consumers with an extraordinary range of choices. At first glance, such abundance appears to be an unquestionable benefit: greater freedom should allow people to find precisely what suits their needs. Yet psychological research on choice suggests that freedom can become burdensome when the number of alternatives grows too large, particularly when many of the options are nearly identical. Faced with a crowded shelf, consumers may struggle to determine which product is best. They frequently retreat into indecision, deferring the purchase altogether, or make a selection only to be nagged afterward by the suspicion that a superior option lay unexamined. This phenomenon has sometimes been wryly termed the 'tyranny of freedom': autonomy, normally regarded as an unqualified good, can curdle into a source of anxiety when decision-making becomes overwhelming. The uncomfortable truth is that the commercial consequences are not always as severe as the psychological ones. A crowded shelf may leave consumers mentally exhausted without necessarily reducing the retailer's overall revenue. Retailers therefore remain largely indifferent to this psychological cost because an abundance of products rarely dampens overall sales figures. The research does not suggest that freedom of choice should be abolished; rather, it highlights the need to recognise that more options do not always produce better decisions or happier consumers."
       },
       {
         "q": 2,
@@ -813,7 +815,8 @@
           "D": "Excessive choice, though framed as beneficial, can become a psychological burden"
         },
         "correct": "D",
-        "explanation": "The passage uses this phrase to capture the paradox that autonomy, generally regarded as an unqualified good, can 'curdle into a source of anxiety' when there are too many options to process efficiently. This reflects the idea that excessive choice becomes a burden, not a literal call to abolish freedom or a claim about legal rights or deliberate manipulation."
+        "explanation": "The passage uses this phrase to capture the paradox that autonomy, generally regarded as an unqualified good, can 'curdle into a source of anxiety' when there are too many options to process efficiently. This reflects the idea that excessive choice becomes a burden, not a literal call to abolish freedom or a claim about legal rights or deliberate manipulation.",
+        "passage_id": "RC_01"
       },
       {
         "q": 3,
@@ -826,7 +829,8 @@
           "D": "Purely neutral and descriptive, without any evaluative judgement"
         },
         "correct": "B",
-        "explanation": "The author presents research findings analytically but also uses phrases such as 'wryly termed,' 'an uncomfortable truth,' and notes that retailers 'remain largely indifferent' to consumers' psychological wellbeing. This combination of reasoned analysis with an implicit critique of retailers' indifference reflects a mildly critical tone, ruling out a purely neutral or celebratory reading."
+        "explanation": "The author presents research findings analytically but also uses phrases such as 'wryly termed,' 'an uncomfortable truth,' and notes that retailers 'remain largely indifferent' to consumers' psychological wellbeing. This combination of reasoned analysis with an implicit critique of retailers' indifference reflects a mildly critical tone, ruling out a purely neutral or celebratory reading.",
+        "passage_id": "RC_01"
       },
       {
         "q": 4,
@@ -839,7 +843,8 @@
           "D": "They leave the marketplace permanently and switch to online shopping"
         },
         "correct": "C",
-        "explanation": "The passage states that consumers 'frequently retreat into indecision, deferring the purchase altogether, or make a selection only to be nagged afterward by the suspicion that a superior option lay unexamined.' This directly supports the idea of indecision and post-purchase doubt; the passage makes no mention of price-based decisions, complaints, or a permanent shift to online shopping."
+        "explanation": "The passage states that consumers 'frequently retreat into indecision, deferring the purchase altogether, or make a selection only to be nagged afterward by the suspicion that a superior option lay unexamined.' This directly supports the idea of indecision and post-purchase doubt; the passage makes no mention of price-based decisions, complaints, or a permanent shift to online shopping.",
+        "passage_id": "RC_01"
       },
       {
         "q": 5,
@@ -852,7 +857,8 @@
           "D": "To remain stable and unaffected by circumstances"
         },
         "correct": "B",
-        "explanation": "The passage uses 'curdle' metaphorically to describe how autonomy, ordinarily seen as a good, 'can curdle into a source of anxiety' when it becomes unmanageable. Just as milk curdles into something spoiled, autonomy is described here as turning into something unpleasant."
+        "explanation": "The passage uses 'curdle' metaphorically to describe how autonomy, ordinarily seen as a good, 'can curdle into a source of anxiety' when it becomes unmanageable. Just as milk curdles into something spoiled, autonomy is described here as turning into something unpleasant.",
+        "passage_id": "RC_01"
       },
       {
         "q": 6,
@@ -865,7 +871,9 @@
           "D": "presume"
         },
         "correct": "B",
-        "explanation": "'Imply' means to suggest something indirectly without stating it outright, which matches the clause 'without ever saying so directly.' 'Infer' is the reverse process (drawing a conclusion from evidence, done by a listener, not a speaker), while 'assert' and 'presume' both suggest a direct or unfounded claim rather than an indirect suggestion."
+        "explanation": "'Imply' means to suggest something indirectly without stating it outright, which matches the clause 'without ever saying so directly.' 'Infer' is the reverse process (drawing a conclusion from evidence, done by a listener, not a speaker), while 'assert' and 'presume' both suggest a direct or unfounded claim rather than an indirect suggestion.",
+        "passage_id": "CLOZE_01",
+        "passage": "During the press conference, the senator did not directly state that he disagreed with the criticism, but his remarks seemed to imply that he found it unfair, without ever saying so directly. Listeners could infer his position from his tone and the emphasis he placed on the issue. His response had an immediate effect on public discussion, although he appeared uninterested in engaging with the criticism itself. Such silence was uncharacteristic of a politician normally so quick to defend himself."
       },
       {
         "q": 7,
@@ -878,7 +886,8 @@
           "D": "infer"
         },
         "correct": "D",
-        "explanation": "'Infer' means to deduce something from evidence, which fits perfectly with 'from his tone' — listeners are drawing a conclusion based on available evidence. 'Imply' is used by the speaker, not the listener, while 'assume' and 'presume' suggest accepting something without needing evidence, which contradicts 'from his tone.'"
+        "explanation": "'Infer' means to deduce something from evidence, which fits perfectly with 'from his tone' — listeners are drawing a conclusion based on available evidence. 'Imply' is used by the speaker, not the listener, while 'assume' and 'presume' suggest accepting something without needing evidence, which contradicts 'from his tone.'",
+        "passage_id": "CLOZE_01"
       },
       {
         "q": 8,
@@ -891,7 +900,8 @@
           "D": "affected"
         },
         "correct": "C",
-        "explanation": "The blank requires a noun following 'an immediate ___ on,' and 'effect' is the noun form meaning 'a result or influence.' 'Affect' is primarily a verb (to influence), while 'affected' and 'affecting' are verb forms that cannot grammatically follow the article 'an' and adjective 'immediate' in this position."
+        "explanation": "The blank requires a noun following 'an immediate ___ on,' and 'effect' is the noun form meaning 'a result or influence.' 'Affect' is primarily a verb (to influence), while 'affected' and 'affecting' are verb forms that cannot grammatically follow the article 'an' and adjective 'immediate' in this position.",
+        "passage_id": "CLOZE_01"
       },
       {
         "q": 9,
@@ -904,7 +914,8 @@
           "D": "engaged"
         },
         "correct": "A",
-        "explanation": "'Uninterested' means not caring or showing no interest, which fits the senator's refusal to respond to criticism. 'Disinterested' is a commonly confused word that actually means impartial or unbiased, not indifferent, and does not fit here. 'Interested' and 'engaged' convey the opposite meaning and are clearly incorrect."
+        "explanation": "'Uninterested' means not caring or showing no interest, which fits the senator's refusal to respond to criticism. 'Disinterested' is a commonly confused word that actually means impartial or unbiased, not indifferent, and does not fit here. 'Interested' and 'engaged' convey the opposite meaning and are clearly incorrect.",
+        "passage_id": "CLOZE_01"
       },
       {
         "q": 10,
@@ -917,7 +928,8 @@
           "D": "charismatic"
         },
         "correct": "B",
-        "explanation": "The passage notes that the silence 'was unusual for a politician normally so quick to defend himself,' so the silence must be described as 'uncharacteristic' (not typical of him). 'Characteristic' means the opposite (typical), while 'charismatic' and 'characterless' are unrelated in meaning to the context."
+        "explanation": "The passage notes that the silence 'was unusual for a politician normally so quick to defend himself,' so the silence must be described as 'uncharacteristic' (not typical of him). 'Characteristic' means the opposite (typical), while 'charismatic' and 'characterless' are unrelated in meaning to the context.",
+        "passage_id": "CLOZE_01"
       },
       {
         "q": 11,
@@ -1302,12 +1314,12 @@
         "question": "Choose the correct indirect speech of the sentence: She asked him, 'Could you please help me with this problem?'",
         "options": {
           "A": "She asked him that could he help her with that problem.",
-          "B": "She asked him if he could help her with this problem.",
+          "B": "She asked him that he could help her with this problem.",
           "C": "She requested that he could help her with this problem.",
           "D": "She requested him to help her with that problem."
         },
         "correct": "D",
-        "explanation": "A polite request phrased with 'Could you please...' is conventionally converted into indirect speech using 'requested' followed by the infinitive: 'requested him to help her with that problem.' The demonstrative 'this' also shifts to 'that' since the reporting is done at a later time or place."
+        "explanation": "A polite request phrased with 'Could you please...' is conventionally reported using 'requested + object + to-infinitive': 'She requested him to help her with that problem.' The other options are grammatically incorrect for this reported request. Therefore, option D is the only acceptable answer."
       },
       {
         "q": 41,
