@@ -1,4 +1,5 @@
 import { ApiError } from "../utils/ApiError.js";
+import { generateUniqueCompetitivePaper } from "../utils/uniquePaperPicker.js";
 import GmatCompetitiveQuestion from "../models/GmatCompetitiveQuestion.js";
 
 const FULL_SET_COUNTS = {
@@ -68,59 +69,25 @@ const possibleSetsFromCounts = (counts) =>
     )
   );
 
-export const generateGmatQuestionSet = async (excludeQuestionIds = []) => {
-  const excluded = new Set((excludeQuestionIds || []).map((id) => String(id)));
-  const all = await GmatCompetitiveQuestion.find({ isActive: true }).lean();
-  if (!all.length) {
-    throw new ApiError(400, "No GMAT questions are stored in the database.");
-  }
-
-  let unused = all.filter((q) => !excluded.has(String(q._id)));
-  let groups = groupBySubject(unused);
-  let remainingSets = possibleSetsFromCounts(countBySubject(groups));
-
-  if (remainingSets < 1) {
-    unused = all;
-    groups = groupBySubject(unused);
-    remainingSets = possibleSetsFromCounts(countBySubject(groups));
-  }
-
-  if (remainingSets < 1) {
-    throw new ApiError(
-      400,
-      "Not enough GMAT questions to build a full paper (21 Quant + 23 Verbal + 20 Data Insights)."
-    );
-  }
-
-  const picked = [];
-  SUBJECT_ORDER.forEach((subject) => {
-    shuffle(groups[subject])
-      .slice(0, FULL_SET_COUNTS[subject])
-      .forEach((question, index) => {
-        picked.push({
-          ...mapQuestion(question),
-          subject,
-          displayNumber: picked.length + 1,
-          subjectNumber: index + 1,
-        });
-      });
-  });
-
-  return {
-    exam: "GMAT",
+export const generateGmatQuestionSet = async (
+  excludeQuestionIds = [],
+  options = {}
+) =>
+  generateUniqueCompetitivePaper({
+    loadQuestions: () => GmatCompetitiveQuestion.find({ isActive: true }).lean(),
     examType: "gmat",
-    title: "GMAT Combined Paper",
+    examLabel: "GMAT",
+    counts: FULL_SET_COUNTS,
     durationMinutes: 135,
-    totalQuestions: picked.length,
-    totalMarks: picked.reduce((sum, q) => sum + (q.marks || 1), 0),
-    pattern: FULL_SET_COUNTS,
-    sections: SUBJECT_ORDER.map((subject) => ({
-      subject,
-      count: FULL_SET_COUNTS[subject],
-      questions: picked.filter((q) => q.subject === subject),
-    })),
-    questions: picked,
-  };
-};
+    marksPerQuestion: 1,
+    negativeMarks: 0,
+    normalizeSubject,
+    excludeQuestionIds,
+    subject: options.subject,
+    count: options.count,
+    typeCounts: options.typeCounts,
+    allowedTypes: options.allowedTypes,
+    mapQuestion,
+  });
 
 export default { generateGmatQuestionSet };

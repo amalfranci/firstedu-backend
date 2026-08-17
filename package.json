@@ -23,7 +23,8 @@
     "seed:ssc-cgl-tier1": "node scripts/seed-ssc-cgl-tier1-competitive-papers.mjs",
     "seed:ssc-cgl-tier2": "node scripts/seed-ssc-cgl-tier2-competitive-papers.mjs",
     "seed:upsc": "node scripts/seed-upsc-competitive-papers.mjs",
-    "seed:cat": "node scripts/seed-cat-competitive-papers.mjs"
+    "seed:cat": "node scripts/seed-cat-competitive-papers.mjs",
+    "seed:exam-desk-users": "node scripts/seed-exam-desk-users.mjs"
   },
   "keywords": [],
   "author": "",

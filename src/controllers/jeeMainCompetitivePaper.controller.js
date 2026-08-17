@@ -69,6 +69,25 @@ const parseExcludeIds = (value) => {
   return [];
 };
 
+const parseGenerateOptions = (body = {}) => {
+  const count = Number.parseInt(body.count, 10);
+  const typeCounts = body.typeCounts && typeof body.typeCounts === "object"
+    ? {
+        single: Number(body.typeCounts.single) || 0,
+        multiple: Number(body.typeCounts.multiple) || 0,
+        trueFalse: Number(body.typeCounts.trueFalse) || 0,
+      }
+    : null;
+  return {
+    subject: body.subject ? String(body.subject).trim() : null,
+    count: Number.isFinite(count) && count > 0 ? count : null,
+    typeCounts,
+    allowedTypes: Array.isArray(body.allowedTypes)
+      ? body.allowedTypes.map(String)
+      : null,
+  };
+};
+
 export const getJeeMainGeneratorSummary = asyncHandler(async (req, res) => {
   const excludeQuestionIds = parseExcludeIds(
     req.query.excludeQuestionIds || req.body?.excludeQuestionIds
@@ -82,90 +101,94 @@ export const getJeeMainGeneratorSummary = asyncHandler(async (req, res) => {
 });
 
 export const generateJeeMainQuestionSet = asyncHandler(async (req, res) => {
-  const excludeQuestionIds = parseExcludeIds(req.body?.excludeQuestionIds);
   const paper = await jeeMainCompetitivePaperService.generateJeeMainQuestionSet(
-    excludeQuestionIds
+    parseExcludeIds(req.body?.excludeQuestionIds),
+    parseGenerateOptions(req.body)
   );
   return res
     .status(200)
-    .json(ApiResponse.success(paper, "JEE Main combined paper generated"));
+    .json(ApiResponse.success(paper, "New question paper generated"));
 });
 
 export const generateJeeAdvancedQuestionSet = asyncHandler(async (req, res) => {
-  const excludeQuestionIds = parseExcludeIds(req.body?.excludeQuestionIds);
   const paper =
     await jeeAdvancedCompetitivePaperService.generateJeeAdvancedQuestionSet(
-      excludeQuestionIds
+      parseExcludeIds(req.body?.excludeQuestionIds),
+      parseGenerateOptions(req.body)
     );
   return res
     .status(200)
-    .json(ApiResponse.success(paper, "JEE Advanced combined paper generated"));
+    .json(ApiResponse.success(paper, "New question paper generated"));
 });
 
 export const generateNeetQuestionSet = asyncHandler(async (req, res) => {
-  const excludeQuestionIds = parseExcludeIds(req.body?.excludeQuestionIds);
   const paper = await neetCompetitivePaperService.generateNeetQuestionSet(
-    excludeQuestionIds
+    parseExcludeIds(req.body?.excludeQuestionIds),
+    parseGenerateOptions(req.body)
   );
   return res
     .status(200)
-    .json(ApiResponse.success(paper, "NEET combined paper generated"));
+    .json(ApiResponse.success(paper, "New question paper generated"));
 });
 
 export const generateClatQuestionSet = asyncHandler(async (req, res) => {
-  const excludeQuestionIds = parseExcludeIds(req.body?.excludeQuestionIds);
   const paper = await clatCompetitivePaperService.generateClatQuestionSet(
-    excludeQuestionIds
+    parseExcludeIds(req.body?.excludeQuestionIds),
+    parseGenerateOptions(req.body)
   );
   return res
     .status(200)
-    .json(ApiResponse.success(paper, "CLAT combined paper generated"));
+    .json(ApiResponse.success(paper, "New question paper generated"));
 });
 
 export const generateIbpsQuestionSet = asyncHandler(async (req, res) => {
-  const excludeQuestionIds = parseExcludeIds(req.body?.excludeQuestionIds);
   const paper = await ibpsCompetitivePaperService.generateIbpsQuestionSet(
-    excludeQuestionIds
+    parseExcludeIds(req.body?.excludeQuestionIds),
+    parseGenerateOptions(req.body)
   );
   return res
     .status(200)
-    .json(ApiResponse.success(paper, "IBPS combined paper generated"));
+    .json(ApiResponse.success(paper, "New question paper generated"));
 });
 
 export const generateGmatQuestionSet = asyncHandler(async (req, res) => {
-  const excludeQuestionIds = parseExcludeIds(req.body?.excludeQuestionIds);
   const paper = await gmatCompetitivePaperService.generateGmatQuestionSet(
-    excludeQuestionIds
+    parseExcludeIds(req.body?.excludeQuestionIds),
+    parseGenerateOptions(req.body)
   );
   return res
     .status(200)
-    .json(ApiResponse.success(paper, "GMAT combined paper generated"));
+    .json(ApiResponse.success(paper, "New question paper generated"));
 });
 
 export const generateSscCglTier1QuestionSet = asyncHandler(async (req, res) => {
   const paper = await sscCglTier1CompetitivePaperService.generateSscCglTier1QuestionSet(
-    parseExcludeIds(req.body?.excludeQuestionIds)
+    parseExcludeIds(req.body?.excludeQuestionIds),
+    parseGenerateOptions(req.body)
   );
-  return res.status(200).json(ApiResponse.success(paper, "SSC CGL Tier 1 paper generated"));
+  return res.status(200).json(ApiResponse.success(paper, "New question paper generated"));
 });
 
 export const generateSscCglTier2QuestionSet = asyncHandler(async (req, res) => {
   const paper = await sscCglTier2CompetitivePaperService.generateSscCglTier2QuestionSet(
-    parseExcludeIds(req.body?.excludeQuestionIds)
+    parseExcludeIds(req.body?.excludeQuestionIds),
+    parseGenerateOptions(req.body)
   );
-  return res.status(200).json(ApiResponse.success(paper, "SSC CGL Tier 2 paper generated"));
+  return res.status(200).json(ApiResponse.success(paper, "New question paper generated"));
 });
 
 export const generateUpscQuestionSet = asyncHandler(async (req, res) => {
   const paper = await upscCompetitivePaperService.generateUpscQuestionSet(
-    parseExcludeIds(req.body?.excludeQuestionIds)
+    parseExcludeIds(req.body?.excludeQuestionIds),
+    parseGenerateOptions(req.body)
   );
-  return res.status(200).json(ApiResponse.success(paper, "UPSC GS paper generated"));
+  return res.status(200).json(ApiResponse.success(paper, "New question paper generated"));
 });
 
 export const generateCatQuestionSet = asyncHandler(async (req, res) => {
   const paper = await catCompetitivePaperService.generateCatQuestionSet(
-    parseExcludeIds(req.body?.excludeQuestionIds)
+    parseExcludeIds(req.body?.excludeQuestionIds),
+    parseGenerateOptions(req.body)
   );
-  return res.status(200).json(ApiResponse.success(paper, "CAT paper generated"));
+  return res.status(200).json(ApiResponse.success(paper, "New question paper generated"));
 });

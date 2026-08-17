@@ -1,4 +1,5 @@
 import { ApiError } from "../utils/ApiError.js";
+import { generateUniqueCompetitivePaper } from "../utils/uniquePaperPicker.js";
 import ClatCompetitiveQuestion from "../models/ClatCompetitiveQuestion.js";
 
 const FULL_SET_COUNTS = {
@@ -74,59 +75,25 @@ const possibleSetsFromCounts = (counts) =>
     )
   );
 
-export const generateClatQuestionSet = async (excludeQuestionIds = []) => {
-  const excluded = new Set((excludeQuestionIds || []).map((id) => String(id)));
-  const all = await ClatCompetitiveQuestion.find({ isActive: true }).lean();
-  if (!all.length) {
-    throw new ApiError(400, "No CLAT questions are stored in the database.");
-  }
-
-  let unused = all.filter((q) => !excluded.has(String(q._id)));
-  let groups = groupBySubject(unused);
-  let remainingSets = possibleSetsFromCounts(countBySubject(groups));
-
-  if (remainingSets < 1) {
-    unused = all;
-    groups = groupBySubject(unused);
-    remainingSets = possibleSetsFromCounts(countBySubject(groups));
-  }
-
-  if (remainingSets < 1) {
-    throw new ApiError(
-      400,
-      "Not enough CLAT questions to build a full paper (24 English + 30 GK + 30 Legal + 24 Logical + 12 Quant)."
-    );
-  }
-
-  const picked = [];
-  SUBJECT_ORDER.forEach((subject) => {
-    shuffle(groups[subject])
-      .slice(0, FULL_SET_COUNTS[subject])
-      .forEach((question, index) => {
-        picked.push({
-          ...mapQuestion(question),
-          subject,
-          displayNumber: picked.length + 1,
-          subjectNumber: index + 1,
-        });
-      });
-  });
-
-  return {
-    exam: "CLAT",
+export const generateClatQuestionSet = async (
+  excludeQuestionIds = [],
+  options = {}
+) =>
+  generateUniqueCompetitivePaper({
+    loadQuestions: () => ClatCompetitiveQuestion.find({ isActive: true }).lean(),
     examType: "clat",
-    title: "CLAT Combined Paper",
+    examLabel: "CLAT",
+    counts: FULL_SET_COUNTS,
     durationMinutes: 120,
-    totalQuestions: picked.length,
-    totalMarks: picked.reduce((sum, q) => sum + (q.marks || 1), 0),
-    pattern: FULL_SET_COUNTS,
-    sections: SUBJECT_ORDER.map((subject) => ({
-      subject,
-      count: FULL_SET_COUNTS[subject],
-      questions: picked.filter((q) => q.subject === subject),
-    })),
-    questions: picked,
-  };
-};
+    marksPerQuestion: 1,
+    negativeMarks: 0.25,
+    normalizeSubject,
+    excludeQuestionIds,
+    subject: options.subject,
+    count: options.count,
+    typeCounts: options.typeCounts,
+    allowedTypes: options.allowedTypes,
+    mapQuestion,
+  });
 
 export default { generateClatQuestionSet };

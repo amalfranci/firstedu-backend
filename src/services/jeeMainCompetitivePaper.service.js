@@ -2,6 +2,7 @@ import Test from "../models/Test.js";
 import Category from "../models/Category.js";
 import ExamSession from "../models/ExamSession.js";
 import { ApiError } from "../utils/ApiError.js";
+import { generateUniqueCompetitivePaper } from "../utils/uniquePaperPicker.js";
 import jeeMainCompetitivePaperRepository from "../repository/jeeMainCompetitivePaper.repository.js";
 
 const SUBJECT_SECTION_INDEX = {
@@ -321,72 +322,27 @@ export const getJeeMainGeneratorSummary = async (excludeQuestionIds = []) => {
   };
 };
 
-export const generateJeeMainQuestionSet = async (excludeQuestionIds = []) => {
-  const excluded = new Set((excludeQuestionIds || []).map((id) => String(id)));
-  const all = await jeeMainCompetitivePaperRepository.getAllActiveQuestions();
-  if (!all.length) {
-    throw new ApiError(400, "No JEE Main questions are stored in the database.");
-  }
-  let unused = all.filter((q) => !excluded.has(String(q._id)));
-  let groups = groupBySubject(unused);
-  let remainingBySubject = countBySubject(groups);
-  let remainingSets = possibleSetsFromCounts(remainingBySubject);
-
-  if (remainingSets < 1) {
-    unused = all;
-    groups = groupBySubject(unused);
-    remainingBySubject = countBySubject(groups);
-    remainingSets = possibleSetsFromCounts(remainingBySubject);
-  }
-
-  if (remainingSets < 1) {
-    throw new ApiError(
-      400,
-      "Not enough questions to build a full JEE Main paper (25 Maths + 25 Physics + 25 Chemistry)."
-    );
-  }
-
-  const picked = [];
-  SUBJECT_ORDER.forEach((subject) => {
-    const selected = shuffle(groups[subject]).slice(0, FULL_SET_COUNTS[subject]);
-    selected.forEach((question, index) => {
-      picked.push({
-        ...mapQuestionForApi(question, { includeAnswers: true }),
-        subject,
-        displayNumber: picked.length + 1,
-        subjectNumber: index + 1,
-      });
-    });
-  });
-
-  const usedQuestionIds = [
-    ...excluded,
-    ...picked.map((q) => String(q.questionId)),
-  ];
-  const leftover = unused.filter(
-    (q) => !picked.some((p) => String(p.questionId) === String(q._id))
-  );
-  const leftoverCounts = countBySubject(groupBySubject(leftover));
-
-  return {
-    exam: "JEE Main",
+export const generateJeeMainQuestionSet = async (
+  excludeQuestionIds = [],
+  options = {}
+) =>
+  generateUniqueCompetitivePaper({
+    loadQuestions: () => jeeMainCompetitivePaperRepository.getAllActiveQuestions(),
     examType: "jee_main",
-    title: "JEE Main Combined Paper",
+    examLabel: "JEE Main",
+    counts: FULL_SET_COUNTS,
     durationMinutes: 180,
-    totalQuestions: picked.length,
-    totalMarks: picked.reduce((sum, q) => sum + (q.marks || 4), 0),
-    pattern: FULL_SET_COUNTS,
-    sections: SUBJECT_ORDER.map((subject) => ({
-      subject,
-      count: FULL_SET_COUNTS[subject],
-      questions: picked.filter((q) => q.subject === subject),
-    })),
-    questions: picked,
-    usedQuestionIds,
-    remainingSets: possibleSetsFromCounts(leftoverCounts),
-    remainingBySubject: leftoverCounts,
-  };
-};
+    marksPerQuestion: 4,
+    negativeMarks: 1,
+    normalizeSubject,
+    excludeQuestionIds,
+    subject: options.subject,
+    count: options.count,
+    typeCounts: options.typeCounts,
+    allowedTypes: options.allowedTypes,
+    mapQuestion: (question) =>
+      mapQuestionForApi(question, { includeAnswers: true }),
+  });
 
 export default {
   listJeeMainPapers,

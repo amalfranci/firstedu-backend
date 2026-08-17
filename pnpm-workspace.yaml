@@ -1,0 +1,7 @@
+allowBuilds:
+  '@firebase/util': false
+  '@google/genai': false
+  bcrypt: false
+  ffmpeg-static: false
+  protobufjs: false
+  unrs-resolver: false

@@ -24,6 +24,8 @@ import SscCglTier2CompetitivePaper from '../models/SscCglTier2CompetitivePaper.j
 import UpscCompetitivePaper from '../models/UpscCompetitivePaper.js';
 import CatCompetitivePaper from '../models/CatCompetitivePaper.js';
 import JeeExamSyllabus from '../models/JeeExamSyllabus.js';
+import ExamDeskUser from '../models/ExamDeskUser.js';
+import { seedExamDeskUsers } from '../utils/seedExamDeskUsers.js';
 // Ensure models are registered at startup (required for StudentSession collection)
 import '../models/StudentSession.js';
 import '../models/JeeMainCompetitiveQuestion.js';
@@ -107,6 +109,12 @@ const connectDB = async () => {
     const existingCat = await CatCompetitivePaper.countDocuments();
     if (existingCat === 0) await seedCatCompetitivePapers({ replace: true });
     else console.log(`ℹ️ CAT papers already seeded (${existingCat}). Skipping.`);
+    const existingDeskUsers = await ExamDeskUser.countDocuments();
+    if (existingDeskUsers === 0) {
+      await seedExamDeskUsers({ replace: true });
+    } else {
+      console.log(`ℹ️ Exam desk users already seeded (${existingDeskUsers}). Skipping.`);
+    }
 
   } catch (error) {
     console.error('MongoDB connection failed:', error);

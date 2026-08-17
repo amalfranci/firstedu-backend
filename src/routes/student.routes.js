@@ -236,6 +236,7 @@ import {
   saveDraft as saveLiveEssayDraft,
 } from "../controllers/liveCompetition.controller.js";
 import { getActiveCategories } from "../controllers/liveCompetitionCategory.controller.js";
+import { loginExamDeskUser } from "../controllers/examDeskAuth.controller.js";
 
 import {
   createQnA,
@@ -332,6 +333,7 @@ router.post("/competitive/ssc-cgl-tier1/generator/set", generateSscCglTier1Quest
 router.post("/competitive/ssc-cgl-tier2/generator/set", generateSscCglTier2QuestionSet);
 router.post("/competitive/upsc/generator/set", generateUpscQuestionSet);
 router.post("/competitive/cat/generator/set", generateCatQuestionSet);
+router.post("/exam-desk/login", loginExamDeskUser);
 router.get("/competitive/jee-syllabus", verifyJWT, listJeeExamSyllabus);
 router.get("/competitive/jee-syllabus/:examType", verifyJWT, getJeeExamSyllabusByExam);
 router.get("/school-tests", verifyJWT, getSchoolTestsForStudent);

@@ -3,6 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import mongoose from "mongoose";
 import { ApiError } from "./ApiError.js";
+import { generateUniqueCompetitivePaper } from "./uniquePaperPicker.js";
 
 const optionSchema = new mongoose.Schema(
   {
@@ -268,81 +269,43 @@ export const createCompetitiveGenerator = ({
   negativeMarks,
   normalizeSubject,
 }) => {
-  const SUBJECT_ORDER = Object.keys(counts);
-  const groupBySubject = (questions = []) => {
-    const groups = Object.fromEntries(SUBJECT_ORDER.map((s) => [s, []]));
-    questions.forEach((q) => {
-      const subject = normalizeSubject(q.subject);
-      if (groups[subject]) groups[subject].push(q);
-    });
-    return groups;
-  };
-  const countBySubject = (groups) =>
-    Object.fromEntries(SUBJECT_ORDER.map((s) => [s, groups[s]?.length || 0]));
-  const possibleSets = (c) =>
-    Math.min(...SUBJECT_ORDER.map((s) => Math.floor((c[s] || 0) / counts[s])));
-
-  return async (excludeQuestionIds = []) => {
-    const excluded = new Set((excludeQuestionIds || []).map((id) => String(id)));
-    const all = await Question.find({ isActive: true }).lean();
-    if (!all.length) {
-      throw new ApiError(400, `No ${examLabel} questions are stored in the database.`);
-    }
-    let unused = all.filter((q) => !excluded.has(String(q._id)));
-    let groups = groupBySubject(unused);
-    let remaining = possibleSets(countBySubject(groups));
-    if (remaining < 1) {
-      unused = all;
-      groups = groupBySubject(unused);
-      remaining = possibleSets(countBySubject(groups));
-    }
-    if (remaining < 1) {
-      throw new ApiError(400, `Not enough ${examLabel} questions to build a full paper.`);
-    }
-    const picked = [];
-    SUBJECT_ORDER.forEach((subject) => {
-      shuffle(groups[subject])
-        .slice(0, counts[subject])
-        .forEach((question, index) => {
-          picked.push({
-            _id: question._id,
-            questionId: question._id,
-            paper: question.paper,
-            paperKey: question.paperKey,
-            subject,
-            topic: question.topic || "",
-            passage: question.passage || "",
-            questionNumber: question.questionNumber,
-            questionText: question.questionText,
-            questionType: question.questionType || "single",
-            options: (question.options || []).map((opt) => ({
-              _id: opt._id,
-              key: opt.key || null,
-              text: opt.text,
-            })),
-            explanation: question.explanation || "",
-            correctAnswer: question.correctAnswer,
-            marks: question.marks ?? marksPerQuestion,
-            negativeMarks: question.negativeMarks ?? negativeMarks,
-            displayNumber: picked.length + 1,
-            subjectNumber: index + 1,
-          });
-        });
-    });
-    return {
-      exam: examLabel,
+  return async (excludeQuestionIds = [], options = {}) =>
+    generateUniqueCompetitivePaper({
+      loadQuestions: () => Question.find({ isActive: true }).lean(),
       examType,
-      title: `${examLabel} Combined Paper`,
+      examLabel,
+      counts,
       durationMinutes,
-      totalQuestions: picked.length,
-      totalMarks: picked.reduce((sum, q) => sum + (q.marks || marksPerQuestion), 0),
-      pattern: counts,
-      sections: SUBJECT_ORDER.map((subject) => ({
-        subject,
-        count: counts[subject],
-        questions: picked.filter((q) => q.subject === subject),
-      })),
-      questions: picked,
-    };
-  };
+      marksPerQuestion,
+      negativeMarks,
+      normalizeSubject,
+      excludeQuestionIds,
+      subject: options.subject,
+      count: options.count,
+      typeCounts: options.typeCounts,
+      allowedTypes: options.allowedTypes,
+      mapQuestion: (question) => ({
+        _id: question._id,
+        questionId: question._id,
+        paper: question.paper,
+        paperKey: question.paperKey,
+        subject: question.subject,
+        topic: question.topic || "",
+        passage: question.passage || "",
+        questionNumber: question.questionNumber,
+        questionText: question.questionText,
+        questionType: question.questionType || "single",
+        options: (question.options || []).map((opt) => ({
+          _id: opt._id,
+          key: opt.key || null,
+          text: opt.text,
+          isCorrect: Boolean(opt.isCorrect),
+        })),
+        explanation: question.explanation || "",
+        correctAnswer: question.correctAnswer,
+        marks: question.marks ?? marksPerQuestion,
+        negativeMarks: question.negativeMarks ?? negativeMarks,
+        difficulty: question.difficulty || "medium",
+      }),
+    });
 };
