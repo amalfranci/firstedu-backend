@@ -5,12 +5,6 @@ import razorpayOrderIntentRepository from "../repository/razorpayOrderIntent.rep
 import { verifyPaymentSignature } from "../utils/razorpayUtils.js";
 
 /**
- * TEMP (testing): students start with / keep this balance.
- * Remove this constant and the student top-up branch below to restore real recharge flow.
- */
-const TEMP_STUDENT_DEFAULT_MONETARY_BALANCE = 500;
-
-/**
  * Get or create wallet for a user
  */
 export const getOrCreateWallet = async (userId, userType = "User") => {
@@ -20,20 +14,8 @@ export const getOrCreateWallet = async (userId, userType = "User") => {
     wallet = await walletRepository.createWallet({
       user: userId,
       userType,
-      monetaryBalance:
-        userType === "User" ? TEMP_STUDENT_DEFAULT_MONETARY_BALANCE : 0,
+      monetaryBalance: 0,
       rewardPoints: 0,
-    });
-    return wallet;
-  }
-
-  // TEMP: keep existing student wallets topped to default for testing
-  if (
-    userType === "User" &&
-    Number(wallet.monetaryBalance || 0) < TEMP_STUDENT_DEFAULT_MONETARY_BALANCE
-  ) {
-    wallet = await walletRepository.updateWallet(wallet._id, {
-      monetaryBalance: TEMP_STUDENT_DEFAULT_MONETARY_BALANCE,
     });
   }
 
