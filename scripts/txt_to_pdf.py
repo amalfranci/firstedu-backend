@@ -2,9 +2,9 @@
 """
 txt_to_pdf.py — Convert exam-question .txt files into a formatted PDF.
 
-Expects each input .txt file to contain questions in this format
-(the "[difficulty]" tag is optional):
+Supports TWO input formats automatically:
 
+FORMAT 1 — generator/spec format (original):
     Question 1 [medium]
     Type: single
     Stem: What is the capital of France?
@@ -15,21 +15,27 @@ Expects each input .txt file to contain questions in this format
     Correct: C
     Explanation: Paris has been the capital of France since ...
 
-Everything after a line starting with "Raw JSON" or a line of "===="
-is ignored, so you can feed it the full raw generator output (including
-the trailing JSON dump) without cleaning it up first.
+FORMAT 2 — confirmed-questions log format:
+    --- Question 1 ---
+    <stem text on the next line(s) until options appear>
 
-Each input file becomes its own section in the output PDF, titled using
-the first line of the file (or the filename if that fails).
+    A) Berlin
+    B) Madrid
+    C) Paris
+    D) Rome
+
+    Correct: C
+    Explanation: Paris has been the capital of France since ...
+
+Both formats support single / multiple / true_false question types.
+For "multiple" (2 correct answers) use a comma-separated key: "Correct: A, C"
 
 USAGE
 -----
     python txt_to_pdf.py chemistry.txt physics.txt maths.txt \
         -o exam_paper.pdf -t "JEE Advanced — Full Sample Paper"
 
-    python txt_to_pdf.py gs_paper1.txt -o upsc.pdf -t "UPSC Prelims Paper I"
-
-Requires: reportlab   (pip install reportlab --break-system-packages)
+Requires: reportlab   (pip install reportlab)
 """
 
 import argparse
@@ -52,95 +58,180 @@ LETTERS = ["A", "B", "C", "D", "E", "F"]
 LETTER_TO_IDX = {L: i for i, L in enumerate(LETTERS)}
 
 # ---------------------------------------------------------------------------
-# Unicode font registration (so symbols like √ π α → ⇌ Σ ∫ render correctly)
+# Font registration
 # ---------------------------------------------------------------------------
 
 def register_fonts():
     candidates = [
         ("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
          "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"),
-        ("C:/Windows/Fonts/arial.ttf", "C:/Windows/Fonts/arialbd.ttf"),
-        ("C:/Windows/Fonts/segoeui.ttf", "C:/Windows/Fonts/segoeuib.ttf"),
+        ("C:/Windows/Fonts/arial.ttf",    "C:/Windows/Fonts/arialbd.ttf"),
+        ("C:/Windows/Fonts/segoeui.ttf",  "C:/Windows/Fonts/segoeuib.ttf"),
     ]
     for regular, bold in candidates:
         if Path(regular).exists() and Path(bold).exists():
             pdfmetrics.registerFont(TTFont("Body", regular))
             pdfmetrics.registerFont(TTFont("Body-Bold", bold))
             return "Body", "Body-Bold"
-    # Fallback to built-in fonts (no exotic unicode support, but always works)
     return "Helvetica", "Helvetica-Bold"
 
 
 BASE_FONT, BOLD_FONT = register_fonts()
 
+TYPE_LABELS = {
+    "single":    "Single Correct",
+    "multiple":  "Multiple Correct",
+    "true_false":"True / False",
+    "connected": "Passage-Based",
+}
+
 # ---------------------------------------------------------------------------
-# Parsing
+# Format detection & parsing
 # ---------------------------------------------------------------------------
 
-QUESTION_SPLIT_RE = re.compile(r'\n(?=Question\s+\d+\b)')
-STEM_RE = re.compile(r'Stem:\s*(.+?)\n\s*A\.', re.S)
-OPTION_RE = re.compile(r'^\s*([A-F])\.\s*(.+)$', re.M)
-CORRECT_RE = re.compile(r'Correct:\s*([A-F])')
-EXPLANATION_RE = re.compile(r'Explanation:\s*(.+)$', re.S)
-DIFFICULTY_RE = re.compile(r'Question\s+\d+\s*\[(\w+)\]')
+def detect_format(text):
+    """Return 'log' if the file uses --- Question N --- style, else 'spec'."""
+    if re.search(r'---\s*Question\s+\d+\s*---', text):
+        return 'log'
+    return 'spec'
 
 
-def strip_trailing_junk(text: str) -> str:
-    """Cut off anything after a 'Raw JSON' marker or a long '====' divider
-    that follows the last real question, so we don't try to parse JSON."""
-    cut_points = []
-    m = re.search(r'\n\s*Raw JSON', text)
+def strip_trailing_junk(text):
+    cut = []
+    m = re.search(r'\nRaw JSON', text)
     if m:
-        cut_points.append(m.start())
-    # A line of 20+ '=' characters that appears after at least one "Question"
-    for m in re.finditer(r'\n=+\s*\n', text):
+        cut.append(m.start())
+    for m in re.finditer(r'\n={20,}', text):
         if re.search(r'Question\s+\d+', text[:m.start()]):
-            cut_points.append(m.start())
+            cut.append(m.start())
             break
-    if cut_points:
-        text = text[:min(cut_points)]
-    return text
+    return text[:min(cut)] if cut else text
 
 
-def parse_questions(text: str):
+def _make_question(stem, options, correct_letters, explanation, qtype=None):
+    """Build the canonical question dict shared by both parsers."""
+    correct_indexes = [LETTER_TO_IDX[l] for l in correct_letters if l in LETTER_TO_IDX]
+    if not correct_indexes:
+        return None
+    if qtype is None:
+        if len(correct_indexes) > 1:
+            qtype = "multiple"
+        elif len(options) == 2:
+            qtype = "true_false"
+        else:
+            qtype = "single"
+    if qtype not in TYPE_LABELS:
+        qtype = "single"
+    return {
+        "q":         escape(stem),
+        "options":   [escape(o) for o in options],
+        "correct":   correct_indexes,
+        "exp":       escape(explanation),
+        "type":      qtype,
+    }
+
+
+# ---- FORMAT 1: spec format (Question N [diff] / Stem: / A. B. C.) ----------
+
+_SPEC_SPLIT    = re.compile(r'\n(?=Question\s+\d+\b)')
+_SPEC_STEM     = re.compile(r'Stem:\s*(.+?)\n\s*[A-F]\.', re.S)
+_SPEC_OPTION   = re.compile(r'^\s*([A-F])\.\s*(.+)$', re.M)
+_SPEC_CORRECT  = re.compile(r'Correct:\s*([A-F](?:\s*,\s*[A-F])*)')
+_SPEC_EXP      = re.compile(r'Explanation:\s*(.+)$', re.S)
+_SPEC_TYPE     = re.compile(r'Type:\s*(\S+)')
+
+
+def parse_spec(text):
     text = strip_trailing_junk(text)
-    blocks = QUESTION_SPLIT_RE.split(text.strip())
     questions = []
-    for block in blocks:
+    for block in _SPEC_SPLIT.split(text.strip()):
         if not re.match(r'Question\s+\d+\b', block):
             continue
-        stem_m = STEM_RE.search(block)
-        correct_m = CORRECT_RE.search(block)
+        stem_m    = _SPEC_STEM.search(block)
+        correct_m = _SPEC_CORRECT.search(block)
         if not stem_m or not correct_m:
-            continue  # skip malformed / incomplete blocks
-        stem = stem_m.group(1).strip()
-        options = [opt.strip() for _, opt in OPTION_RE.findall(block)]
-        correct_idx = LETTER_TO_IDX[correct_m.group(1)]
-        exp_m = EXPLANATION_RE.search(block)
-        explanation = exp_m.group(1).strip() if exp_m else ""
-        diff_m = DIFFICULTY_RE.search(block)
-        difficulty = diff_m.group(1) if diff_m else None
-        questions.append({
-            "q": escape(stem),
-            "options": [escape(o) for o in options],
-            "correct": correct_idx,
-            "exp": escape(explanation),
-            "difficulty": difficulty,
-        })
+            continue
+        stem    = stem_m.group(1).strip()
+        options = [o.strip() for _, o in _SPEC_OPTION.findall(block)]
+        letters = [l.strip() for l in correct_m.group(1).split(',')]
+        exp_m   = _SPEC_EXP.search(block)
+        exp     = exp_m.group(1).strip() if exp_m else ""
+        type_m  = _SPEC_TYPE.search(block)
+        qtype   = type_m.group(1).strip().lower() if type_m else None
+        q = _make_question(stem, options, letters, exp, qtype)
+        if q:
+            questions.append(q)
     return questions
 
 
-def derive_section_title(file_path: Path, raw_text: str) -> str:
-    first_line = raw_text.strip().splitlines()[0].strip() if raw_text.strip() else ""
-    # If the file starts directly with a question (no descriptive header line),
-    # fall back to the filename instead of using the question text as a title.
-    looks_like_question = bool(re.match(r'Question\s+\d+\b', first_line))
-    if first_line and len(first_line) < 120 and not looks_like_question:
-        # e.g. "JEE Mains Full Paper — Chemistry" -> "Chemistry"
-        parts = re.split(r'\s+—\s+|\s+-\s+', first_line)
-        if len(parts) > 1:
-            return parts[-1].strip()
-        return first_line
+# ---- FORMAT 2: log format (--- Question N --- / A) B) C) D) style) ---------
+
+_LOG_SPLIT   = re.compile(r'(?=--- Question\s+\d+\s*---)')
+_LOG_OPTION  = re.compile(r'^\s*([A-F])\)\s*(.+)$', re.M)
+_LOG_CORRECT = re.compile(r'Correct:\s*([A-F](?:\s*,\s*[A-F])*)')
+_LOG_EXP     = re.compile(r'Explanation:\s*(.+)$', re.S)
+
+
+def parse_log(text):
+    text = strip_trailing_junk(text)
+    questions = []
+    for block in _LOG_SPLIT.split(text):
+        if not re.match(r'--- Question\s+\d+', block):
+            continue
+        # Strip the "--- Question N ---" header line
+        body = re.sub(r'^---\s*Question\s+\d+\s*---\s*\n?', '', block).strip()
+
+        correct_m = _LOG_CORRECT.search(body)
+        if not correct_m:
+            continue
+
+        # Options: everything matching "A) ..." lines
+        options_found = _LOG_OPTION.findall(body)
+        if not options_found:
+            continue
+        options = [o.strip() for _, o in options_found]
+
+        # Stem: everything before the first option line
+        first_opt_pos = re.search(r'^\s*[A-F]\)', body, re.M)
+        stem = body[:first_opt_pos.start()].strip() if first_opt_pos else body.strip()
+
+        letters = [l.strip() for l in correct_m.group(1).split(',')]
+        exp_m   = _LOG_EXP.search(body)
+        exp     = exp_m.group(1).strip() if exp_m else ""
+        # Trim the duplicate "Therefore, the correct answer is X." tail added by the pipeline
+        exp = re.sub(r'(\. Therefore, the correct answer is [^.]+\.)\s*\1\s*$', r'\1', exp).strip()
+
+        q = _make_question(stem, options, letters, exp)
+        if q:
+            questions.append(q)
+    return questions
+
+
+def parse_questions(text):
+    fmt = detect_format(text)
+    return parse_log(text) if fmt == 'log' else parse_spec(text)
+
+
+def derive_section_title(file_path, raw_text):
+    # Try "Section: SubjectName (N)" line first — most specific
+    m = re.search(r'^Section:\s*(.+?)(?:\s*\(\d+\))?\s*$', raw_text, re.M)
+    if m:
+        return m.group(1).strip()
+    # Try "Topic: ..." line (log format)
+    m = re.search(r'^Topic:\s*(.+)$', raw_text, re.M)
+    if m:
+        # "Competitive › Engineering › JEE Mains › Physics 15-07-26" -> "Physics"
+        parts = re.split(r'\s*[›>|]\s*', m.group(1).strip())
+        last = parts[-1].strip() if parts else m.group(1).strip()
+        # Strip trailing date/timestamp like "15-07-26" or "15-06-26"
+        last = re.sub(r'\s+\d{2}-\d{2}-\d{2,4}\s*$', '', last).strip()
+        return last if last else m.group(1).strip()
+    # Try first non-empty, non-separator line
+    for line in raw_text.strip().splitlines():
+        line = line.strip()
+        if line and not re.match(r'^[=\-*]+$', line) and not re.match(r'Question\s+\d+', line):
+            parts = re.split(r'\s+[—-]\s+', line)
+            return parts[-1].strip() if len(parts) > 1 else line
     return file_path.stem.replace("_", " ").title()
 
 
@@ -179,6 +270,11 @@ def build_styles():
     s["explanation"] = ParagraphStyle('Explanation', fontSize=10, fontName=BASE_FONT,
                                        leading=14, textColor=colors.HexColor("#444444"),
                                        leftIndent=6, spaceAfter=2)
+    s["passage"] = ParagraphStyle('Passage', fontSize=10.5, fontName=BASE_FONT, leading=15,
+                                   textColor=colors.HexColor("#333333"), spaceAfter=0)
+    s["question_bold"] = ParagraphStyle('QuestionBold', fontSize=11, fontName=BOLD_FONT,
+                                         leading=15, spaceAfter=8,
+                                         textColor=colors.HexColor("#1a1a2e"))
     return s
 
 
@@ -194,17 +290,99 @@ def build_section_header(title, styles):
     return t
 
 
+def _split_passage_and_question(stem_text):
+    """
+    For CLAT-style stems: split the passage paragraph(s) from the final
+    question sentence. The question sentence is the last sentence that
+    ends with '?' or starts with a known interrogative/directive keyword.
+    Returns (passage_text, question_text). If no split is found, returns
+    ("", stem_text) so the whole thing renders as a plain question.
+    """
+    # Decode HTML entities back for splitting logic
+    raw = stem_text.replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>').replace('&#39;', "'").replace('&quot;', '"')
+
+    # Split into sentences on '. ' or '? ' boundaries, keeping delimiters
+    sentences = re.split(r'(?<=[.?!])\s+', raw.strip())
+    if len(sentences) < 2:
+        return "", stem_text
+
+    # The question sentence is the last sentence that ends with '?'
+    # or starts with a directive phrase
+    DIRECTIVES = re.compile(
+        r'^(which\b|what\b|how\b|why\b|determine\b|identify\b|analyze\b|'
+        r'analyse\b|calculate\b|select\b|choose\b|find\b|state\b|'
+        r'as used\b|based on\b|according to\b)',
+        re.I
+    )
+
+    # Walk backwards to find the question sentence
+    split_at = None
+    for i in range(len(sentences) - 1, 0, -1):
+        s = sentences[i].strip()
+        if s.endswith('?') or DIRECTIVES.match(s):
+            split_at = i
+            break
+
+    if split_at is None:
+        # Last sentence is always the question as fallback
+        split_at = len(sentences) - 1
+
+    passage = ' '.join(sentences[:split_at]).strip()
+    question = ' '.join(sentences[split_at:]).strip()
+
+    # Re-escape for XML/reportlab
+    return escape(passage), escape(question)
+
+
 def build_question_block(idx, item, styles):
-    story = [Paragraph(f"Q{idx}.", styles["qnum"]),
-             Paragraph(item["q"], styles["question"])]
+    qtype = item.get("type", "single")
+    correct_set = set(item["correct"])
+    type_label = TYPE_LABELS.get(qtype, "Single Correct")
+    stem = item["q"]
+
+    # Detect if this looks like a passage-based question (long stem with
+    # multiple sentences — characteristic of CLAT / reading comprehension)
+    passage, question_sentence = _split_passage_and_question(stem)
+    is_passage = bool(passage) and len(passage) > 120
+
+    story = [
+        Paragraph(
+            f"Q{idx}.&nbsp;&nbsp;<font size=8.5 color='#777777'>[{type_label}]</font>",
+            styles["qnum"]
+        ),
+    ]
+
+    if is_passage:
+        # Passage in a shaded box
+        passage_table = Table(
+            [[Paragraph(passage, styles["passage"])]],
+            colWidths=[17 * cm]
+        )
+        passage_table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (-1, -1), colors.HexColor("#f5f5f0")),
+            ('BOX',        (0, 0), (-1, -1), 0.8, colors.HexColor("#bbbbaa")),
+            ('LEFTPADDING',  (0, 0), (-1, -1), 10),
+            ('RIGHTPADDING', (0, 0), (-1, -1), 10),
+            ('TOPPADDING',   (0, 0), (-1, -1), 8),
+            ('BOTTOMPADDING',(0, 0), (-1, -1), 8),
+        ]))
+        story.append(passage_table)
+        story.append(Spacer(1, 6))
+        story.append(Paragraph(question_sentence, styles["question_bold"]))
+    else:
+        story.append(Paragraph(stem, styles["question"]))
+
     for i, opt in enumerate(item["options"]):
         label = LETTERS[i]
         text = f"({label})&nbsp;&nbsp;{opt}"
-        if i == item["correct"]:
+        if i in correct_set:
             story.append(Paragraph(text + "&nbsp;&nbsp;&#10003;", styles["option_correct"]))
         else:
             story.append(Paragraph(text, styles["option"]))
-    story.append(Paragraph(f"Correct Answer: ({LETTERS[item['correct']]})", styles["answer"]))
+
+    correct_labels = ", ".join(f"({LETTERS[i]})" for i in sorted(correct_set))
+    answer_word = "Correct Answers" if len(correct_set) > 1 else "Correct Answer"
+    story.append(Paragraph(f"{answer_word}: {correct_labels}", styles["answer"]))
     if item["exp"]:
         story.append(Paragraph("Explanation:", styles["expl_label"]))
         story.append(Paragraph(item["exp"], styles["explanation"]))
@@ -215,8 +393,18 @@ def build_question_block(idx, item, styles):
 
 
 # ---------------------------------------------------------------------------
-# Main build
+# PDF assembly
 # ---------------------------------------------------------------------------
+
+def section_type_summary(qs):
+    counts = {}
+    for item in qs:
+        t = item.get("type", "single")
+        counts[t] = counts.get(t, 0) + 1
+    order = ["single", "multiple", "true_false", "connected"]
+    parts = [f"{TYPE_LABELS[t]} ({counts[t]})" for t in order if counts.get(t)]
+    return ", ".join(parts) if parts else "Single Correct"
+
 
 def build_pdf(sections, output_path, title, subtitle):
     styles = build_styles()
@@ -226,17 +414,29 @@ def build_pdf(sections, output_path, title, subtitle):
     story = [Paragraph(escape(title), styles["title"])]
     if subtitle:
         story.append(Paragraph(escape(subtitle), styles["subtitle"]))
-    story.append(Paragraph("Single Correct Answer MCQs &bull; With Explanations",
-                            styles["subtitle"]))
+
+    all_types = {item.get("type", "single") for _, qs in sections for item in qs}
+    if all_types <= {"single"}:
+        type_line = "Single Correct Answer MCQs &bull; With Explanations"
+    else:
+        type_line = "Single, Multiple &amp; True/False MCQs &bull; With Explanations"
+    story.append(Paragraph(type_line, styles["subtitle"]))
     story.append(Spacer(1, 16))
+
+    type_cell_style = ParagraphStyle('TypeCell', fontSize=9, fontName=BASE_FONT,
+                                      leading=11.5, textColor=colors.HexColor("#333333"))
 
     total_q = sum(len(qs) for _, qs in sections)
     summary_data = [["Section", "No. of Questions", "Question Type"]]
     for name, qs in sections:
-        summary_data.append([name, str(len(qs)), "Single Correct MCQ"])
+        summary_data.append([
+            name,
+            str(len(qs)),
+            Paragraph(escape(section_type_summary(qs)), type_cell_style),
+        ])
     summary_data.append(["Total", str(total_q), ""])
 
-    summary_table = Table(summary_data, colWidths=[7 * cm, 5 * cm, 5 * cm])
+    summary_table = Table(summary_data, colWidths=[5.5 * cm, 3.5 * cm, 8 * cm])
     summary_table.setStyle(TableStyle([
         ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor("#1a1a2e")),
         ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
@@ -245,7 +445,8 @@ def build_pdf(sections, output_path, title, subtitle):
         ('FONTNAME', (0, -1), (-1, -1), BOLD_FONT),
         ('BACKGROUND', (0, -1), (-1, -1), colors.HexColor("#f0f0f5")),
         ('GRID', (0, 0), (-1, -1), 0.5, colors.HexColor("#cccccc")),
-        ('ALIGN', (1, 0), (-1, -1), 'CENTER'),
+        ('ALIGN', (1, 0), (1, -1), 'CENTER'),
+        ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
         ('TOPPADDING', (0, 0), (-1, -1), 6),
         ('BOTTOMPADDING', (0, 0), (-1, -1), 6),
         ('FONTSIZE', (0, 0), (-1, -1), 10.5),
@@ -260,12 +461,15 @@ def build_pdf(sections, output_path, title, subtitle):
             story.extend(build_question_block(i, item, styles))
         story.append(PageBreak())
 
-    # Drop trailing page break flowable if present (avoids a blank last page)
     if story and isinstance(story[-1], PageBreak):
         story.pop()
 
     doc.build(story)
 
+
+# ---------------------------------------------------------------------------
+# CLI
+# ---------------------------------------------------------------------------
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__,
@@ -277,7 +481,7 @@ def main():
     parser.add_argument("-t", "--title", type=str, default="Sample Question Paper",
                          help="Main title printed at the top of the PDF")
     parser.add_argument("-s", "--subtitle", type=str, default=None,
-                         help="Optional subtitle line (defaults to section names joined by bullets)")
+                         help="Optional subtitle line")
     args = parser.parse_args()
 
     sections = []
@@ -286,13 +490,13 @@ def main():
             print(f"Warning: {path} not found, skipping.", file=sys.stderr)
             continue
         raw_text = path.read_text(encoding="utf-8")
-        title = derive_section_title(path, raw_text)
+        sec_title = derive_section_title(path, raw_text)
         qs = parse_questions(raw_text)
         if not qs:
             print(f"Warning: no questions parsed from {path}, skipping.", file=sys.stderr)
             continue
-        sections.append((title, qs))
-        print(f"Parsed {len(qs)} questions from {path.name} -> section '{title}'")
+        sections.append((sec_title, qs))
+        print(f"Parsed {len(qs)} questions from {path.name} -> section '{sec_title}'")
 
     if not sections:
         print("No questions parsed from any input file. Nothing to build.", file=sys.stderr)

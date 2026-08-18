@@ -28,6 +28,20 @@ const startServer = async () => {
   try {
     await connectDB();
 
+    // Generation runs in-process; a restart kills active work. Fail stale jobs
+    // so the admin UI does not hang polling forever after nodemon reloads.
+    try {
+      const { failOrphanedGenerationJobs } = await import(
+        './services/questionBankGenerationJobStore.js'
+      );
+      failOrphanedGenerationJobs();
+    } catch (err) {
+      console.warn(
+        '[ai-qb] orphan job cleanup skipped:',
+        err?.message || err
+      );
+    }
+
     const server = http.createServer(app);
 
     // Setup Socket.io

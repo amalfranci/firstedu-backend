@@ -12,9 +12,13 @@ import {
     normalizeQuestionTier,
 } from "./difficultyMix.service.js";
 
+// Veteran gate aligned to the audit rubric's own "clearly meets tier" line (80,
+// see buildDifficultySelfAuditPrompt). A higher bar (was 85) rejected questions
+// the rubric itself rates as fully tier-compliant — dropping good hard items on
+// single-shot LLM scoring noise (±5-10) and forcing needless regens.
 export const DIFFICULTY_SELF_AUDIT_MIN_SCORE = Number(
     process.env.AI_QB_DIFFICULTY_SELF_AUDIT_MIN ||
-        (isVeteranDifficultyEnabled() ? 85 : 75)
+        (isVeteranDifficultyEnabled() ? 80 : 75)
 );
 
 /** Skeletons are rougher than built MCQs — use a lower bar; finalize uses DIFFICULTY_SELF_AUDIT_MIN_SCORE. */
@@ -41,6 +45,11 @@ export const isDifficultySelfAuditEnabled = () => {
 /**
  * Exam-native JEE/NEET: trust generation prompts + code mandates — skip LLM difficulty scoring.
  * Set AI_QB_DIFFICULTY_SELF_AUDIT=1 to force audit; =0 to disable globally.
+ *
+ * Difficulty LLM audits were the main latency source on JEE full-paper Physics
+ * (extra call per attempt + reject loops that burned 6 attempts/chunk). Correctness
+ * gates (solve-steps vs marked answer) remain on; force AI_QB_DIFFICULTY_SELF_AUDIT=1
+ * if you need the old strict difficulty filter.
  */
 export const shouldSkipLlmDifficultySelfAudit = (difficultyResolution) => {
     const flag = process.env.AI_QB_DIFFICULTY_SELF_AUDIT;
@@ -73,6 +82,16 @@ const formatQuestionForAudit = (q, index) => {
     }
     if (q._conceptSlot || q.conceptSlot) {
         lines.push(`Archetype: ${q._conceptSlot || q.conceptSlot}`);
+    }
+    const kind = String(q._questionKind || q.questionKind || "").toLowerCase();
+    if (kind === "theory") {
+        lines.push(
+            "Question kind: **THEORY** (conceptual — score on concept depth and close distractors, NOT computation, numeric givens, or solve-step count)"
+        );
+    } else if (kind === "direct") {
+        lines.push(
+            "Question kind: **DIRECT** (single-formula numerical by design — a clean 1–2 step solve is correct; do NOT penalize for lacking multi-step depth or concept fusion)"
+        );
     }
     return lines.join("\n");
 };
@@ -117,6 +136,10 @@ ${rubricsBlock}
 6. **Below 50** = BANNED pattern for that tier
 
 Penalize: meta draft text ("adjusting", "re-evaluating"), formula-only stems when tier requires fusion, duplicate template logic.
+
+**Theory items:** questions marked **Question kind: THEORY** are conceptual by design — do NOT penalize them for lacking numeric givens, calculation, or solve steps. Score their difficulty on concept depth, subtlety of distractors, and reasoning required.
+
+**Direct items:** questions marked **Question kind: DIRECT** are direct single-formula/single-concept numericals by design — a clean 1–2 step solve is correct. Do NOT penalize them for lacking multi-step depth or concept fusion; they are the routine items of a real paper.
 
 **Questions:**
 ${blocks}
@@ -256,10 +279,16 @@ export const applySkeletonDifficultySelfAuditGate = async (
         };
     }
 
+    const kindBySlot = ctx.kindBySlot || {};
     const asAuditItems = list.map((sk, i) => ({
         questionText: String(sk.stem || sk.questionStem || sk.questionText || "").trim(),
         _solveSteps: sk.solveSteps || sk._solveSteps || [],
         _conceptSlot: sk.conceptSlot,
+        _questionKind:
+            ctx.kindSlots?.[i] ||
+            sk.questionKind ||
+            kindBySlot[String(sk.conceptSlot || "").trim()] ||
+            "calculative",
         difficultyTier:
             ctx.tierSlots?.[i] ||
             sk.difficultyTier ||

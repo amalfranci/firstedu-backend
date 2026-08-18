@@ -4,6 +4,7 @@ import AiQuestion from "../models/AiQuestion.js";
 import aiQuestionBankRepository from "../repository/aiQuestionBank.repository.js";
 import categoryRepository from "../repository/category.repository.js";
 import { assertAiBankNotInUse } from "../utils/aiBankUsageGuard.js";
+import { logConfirmedQuestionsToFile } from "./confirmedQuestionsLogger.service.js";
 
 const getSectionIndexByCount = (sectionConfigs = [], questionIndex = 0) => {
   let cursor = 0;
@@ -119,6 +120,51 @@ const validateQuestionInput = (q, i) => {
   validateQuestionOptions(q.questionType, q.options);
   if (!String(q.explanation || "").trim()) {
     throw new ApiError(400, `Question ${i + 1}: explanation is required`);
+  }
+};
+
+/**
+ * Best-effort: mirror a saved bank's questions to temp/confirmed-questions/*.txt
+ * (same human-readable format as the AI-suggestion "log to file" action), so
+ * every saved paper has a response .txt regardless of which UI path built it.
+ * Never throws — logging must not break a successful save.
+ */
+const logSavedBankQuestions = async ({
+  topic,
+  bankName,
+  useSectionWise,
+  sections,
+  questions,
+}) => {
+  if (!topic || !Array.isArray(questions) || !questions.length) return;
+  // Connected questions carry the passage under `paragraph`; the logger reads `passage`.
+  const normalize = (q) =>
+    q?.questionType === "connected"
+      ? { ...q, passage: q.passage ?? q.paragraph ?? "" }
+      : q;
+
+  if (useSectionWise && Array.isArray(sections) && sections.length) {
+    const bySection = new Map();
+    questions.forEach((q, i) => {
+      const idx = getSectionIndexByCount(sections, i);
+      if (!bySection.has(idx)) bySection.set(idx, []);
+      bySection.get(idx).push(normalize(q));
+    });
+    for (const [idx, qs] of bySection) {
+      await logConfirmedQuestionsToFile({
+        topic,
+        bankName,
+        sectionName: idx != null ? sections[idx]?.name || "" : "",
+        sectionIndex: idx,
+        questions: qs,
+      });
+    }
+  } else {
+    await logConfirmedQuestionsToFile({
+      topic,
+      bankName,
+      questions: questions.map(normalize),
+    });
   }
 };
 
@@ -318,6 +364,22 @@ export const createAiQuestionBankWithQuestions = async (data, createdBy) => {
     }
 
     await session.commitTransaction();
+
+    // Best-effort confirmed-questions .txt log — never blocks/reverts the save.
+    try {
+      await logSavedBankQuestions({
+        topic: String(data.generationTopic || bankName || "").trim(),
+        bankName,
+        useSectionWise,
+        sections,
+        questions: questionsInput,
+      });
+    } catch (logErr) {
+      console.error(
+        "[confirmed-questions] failed to log saved bank:",
+        logErr?.message
+      );
+    }
 
     const populatedBank = await aiQuestionBankRepository.findById(bank._id);
     return {

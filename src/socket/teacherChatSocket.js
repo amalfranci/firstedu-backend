@@ -554,32 +554,40 @@ export const setupTeacherChatSocket = (io) => {
           };
         }
         const sentAtDate = sentAt ? new Date(sentAt) : new Date();
+        const senderName = user.name || user.email || user.phone;
         const messagePayload = {
           sessionId: sid,
           text: cleanText,
           attachment: uploadedAttachment,
           from: user.role,
           senderId: userId,
-          senderName: user.name || user.email || user.phone,
+          senderName,
           sentAt: sentAtDate.toISOString(),
           clientId,
         };
 
-        const saved = await teacherChatMessageRepository.create({
-          session: session._id,
-          student: session.student._id ?? session.student,
-          teacher: session.teacher._id ?? session.teacher,
-          from: user.role,
-          senderId: userId,
-          senderName: messagePayload.senderName,
-          text: cleanText,
-          attachment: uploadedAttachment,
-          sentAt: sentAtDate,
-          clientId: clientId || null,
-        });
-        messagePayload._id = saved._id.toString();
-
+        // Keep socket path low-latency: persistence should not block real-time delivery.
         ns.to(`session:${sid}`).emit("chat_message", messagePayload);
+
+        teacherChatMessageRepository
+          .create({
+            session: session._id,
+            student: session.student._id ?? session.student,
+            teacher: session.teacher._id ?? session.teacher,
+            from: user.role,
+            senderId: userId,
+            senderName,
+            text: cleanText,
+            attachment: uploadedAttachment,
+            sentAt: sentAtDate,
+            clientId: clientId || null,
+          })
+          .catch((err) => {
+            console.error("Chat message persistence error:", err);
+            socket.emit("chat_error", {
+              message: "Message delivered but failed to save to chat history.",
+            });
+          });
       } catch (err) {
         socket.emit("chat_error", {
           message: err.message || "Failed to send message",

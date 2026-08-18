@@ -219,16 +219,6 @@ const PHYSICS_CONCEPT_FUSION_BLUEPRINTS = {
         stemHint:
             "A rod hinged at one end is struck by a bullet at its free end — find angular velocity immediately after inelastic impact.",
     },
-    relativistic_collision_momentum_energy: {
-        pattern:
-            "Relativistic collision — conserve four-momentum and energy with invariant mass.",
-        required:
-            "FUSE (A) relativistic energy-momentum AND (B) collision geometry or threshold energy.",
-        banned: "Classical ½mv² only; bare E = mc² plug-in.",
-        conceptFusion: "special relativity + collision kinematics",
-        stemHint:
-            "A photon collides with a stationary electron — find Compton wavelength shift and recoil electron energy.",
-    },
 };
 
 const CHEMISTRY_HARD_BLUEPRINTS = {
@@ -565,12 +555,35 @@ export const allocateRankedConceptSlots = (
         return slots;
     }
 
-    let pool = getSubjectArchetypePool("chemistry", { preferPeak: usePeak });
     const sid = String(subjectId || "").toLowerCase();
+    const isStemSubject =
+        sid === "physics" || /physics/.test(sid) ||
+        sid === "mathematics" || /math/.test(sid) ||
+        sid === "chemistry" || /chem/.test(sid) ||
+        examProfile === "jee_main" || examProfile === "jee_advanced" ||
+        examProfile === "neet";
+
+    if (!isStemSubject) {
+        // No hand-curated archetype catalog exists for non-STEM domains
+        // (law/GK/reasoning/etc.) — this is a last-resort path (the AI-first
+        // planner in conceptArchetypePlanner.service.js is tried first), so
+        // return generic numbered slots instead of silently defaulting to
+        // chemistry archetypes for an unrelated subject.
+        return Array.from({ length: n }, (_, i) => `concept_slot_${offset + i + 1}`);
+    }
+
+    // Subject must be pinned to its own pool whenever it's explicitly known —
+    // the mixed PCM pool below is only for a genuinely unset subject (e.g. a
+    // full-paper JEE bank spanning all three). Previously "chemistry" fell
+    // through to the mixed branch below (it only matched physics/math),
+    // silently pulling in Physics/Maths archetypes for a Chemistry-only bank.
+    let pool = getSubjectArchetypePool("chemistry", { preferPeak: usePeak });
     if (sid === "physics" || /physics/.test(sid)) {
         pool = getSubjectArchetypePool("physics", { preferPeak: usePeak });
     } else if (sid === "mathematics" || /math/.test(sid)) {
         pool = getSubjectArchetypePool("mathematics", { preferPeak: usePeak });
+    } else if (sid === "chemistry" || /chem/.test(sid)) {
+        pool = getSubjectArchetypePool("chemistry", { preferPeak: usePeak });
     } else if (examProfile === "jee_main" || examProfile === "jee_advanced") {
         pool = [
             ...getSubjectArchetypePool("chemistry", { preferPeak: usePeak }),
@@ -625,10 +638,11 @@ Each new skeleton must use its **assigned slot archetype** and a **fresh setup**
 };
 
 export const getSubjectLabelForArchetypes = (subjectId = "") => {
-    const key = normalizeSubjectPoolKey(subjectId);
-    if (key === "physics") return "Physics";
-    if (key === "mathematics") return "Mathematics";
-    return "Chemistry";
+    const sid = String(subjectId || "").trim();
+    if (/physics/i.test(sid)) return "Physics";
+    if (/math/i.test(sid)) return "Mathematics";
+    if (/chem/i.test(sid)) return "Chemistry";
+    return sid || "the subject";
 };
 
 /** Tells the LLM each slot is a peak archetype — choose hard pattern, not easy template. */
@@ -758,6 +772,26 @@ export const buildBatchArchetypeGuidanceBlock = ({
         const slotTitle = plan?.label
             ? `${slot} (${plan.label})`
             : slot;
+        const kind = plan?.questionKind || "multi_concept";
+        if (kind === "theory") {
+            // Theory slot: conceptual/assertion-reason — hard via concept depth and
+            // close distractors, NOT numeric givens or solve-step count.
+            return `**Slot ${n} [${tier}] — ${slotTitle} · THEORY (conceptual, no computation):**
+- Pattern: ${bp?.pattern || "Assertion–reason / statement-correctness item probing deep understanding."}
+- Required: ${bp?.required || "Discriminate close concepts; correctness hinges on understanding, not a formula."}
+${bp?.conceptFusion ? `- **Concept fusion:** ${bp.conceptFusion}` : ""}
+- Banned: ${bp?.banned || "Any numeric given or single-formula solve; trivially-true restatement."}
+- **No numeric givens, no solveSteps requirement** — difficulty comes from subtle distractors and concept depth.${bp?.stemHint ? `\n- Stem shape: ${bp.stemHint}` : ""}`;
+        }
+        if (kind === "direct") {
+            // Direct slot: one clean single-formula / single-concept numerical MCQ.
+            // A single-step solve is CORRECT here — do NOT force multi-step fusion.
+            return `**Slot ${n} [${tier}] — ${slotTitle} · DIRECT (single-formula numerical):**
+- Pattern: ${bp?.pattern || "Direct application of one formula/concept — a clean ~1–2 step numerical MCQ."}
+- Required: ${bp?.required || "One formula/concept, clear numeric answer among the options; state units."}
+- Banned: ${bp?.banned || "Multi-concept fusion, ≥3-step derivations, or contrived linked setups."}
+- **One direct solve is fine** — do NOT force ≥3 solve steps or concept fusion; keep it a genuine (not trick) single-step item.${bp?.stemHint ? `\n- Stem shape: ${bp.stemHint}` : ""}`;
+        }
         if (!bp) {
             return `**Slot ${n} [${tier}] — ${slotTitle}${proneTag}:** Multi-condition stem, ≥4 solve steps, no formula drill.`;
         }
@@ -770,6 +804,10 @@ ${redirect ? `- **Choose HARD (not easy):** ${redirect.hard}\n- **Reject easy te
 ${bp.stemHint ? `- Stem shape: ${bp.stemHint}` : ""}`;
     });
 
+    const kindOf = (slot) => planBySlot.get(slot)?.questionKind || "multi_concept";
+    const hasTheorySlot = conceptSlots.some((slot) => kindOf(slot) === "theory");
+    const hasDirectSlot = conceptSlots.some((slot) => kindOf(slot) === "direct");
+
     const examLabel =
         examProfile === "jee_advanced" ? "JEE Advanced" : "JEE Main shift-paper";
 
@@ -778,13 +816,31 @@ ${bp.stemHint ? `- Stem shape: ${bp.stemHint}` : ""}`;
         : "Blueprints below use the subject archetype catalog — follow each slot exactly.";
 
     return `
-**AUTHORING BLUEPRINT — one hard ${examLabel} question per slot (${steeringNote}):**
+**AUTHORING BLUEPRINT — one ${examLabel} question per slot, matching each slot's kind (${steeringNote}):**
 ${blocks.join("\n\n")}
 
-**Universal hard-tier rules (every slot):**
+**Rules for MULTI_CONCEPT slots (default / peak-hard):**
 - Stem: 3–4 sentences, ≥2 numerical givens with units, **≥2 linked concepts**, constraint before the ask.
 - solveSteps: **≥3** solving steps, **≥4** substantive derivation lines; no direct substitution; last sentence = finalAnswer.display.
-- Never write chapter-test / NCERT drill / single-formula plug-ins.`;
+- Never write chapter-test / NCERT drill / single-formula plug-ins.${
+        hasDirectSlot
+            ? `
+
+**Rules for DIRECT slots (marked "DIRECT" above):**
+- A **single formula/concept applied in ~1–2 steps is CORRECT** — do NOT force ≥3 solve steps or concept fusion.
+- Still a real numerical MCQ: state units, compute the answer, and make it appear among the options.
+- Keep it genuine (not a trick); these are the routine items that make up the bulk of a real paper.`
+            : ""
+    }${
+        hasTheorySlot
+            ? `
+
+**Rules for THEORY slots (marked "THEORY" above):**
+- Do **not** force numeric givens or a solveSteps count — a theory item may have none.
+- Difficulty must come from **conceptual depth and close, plausible distractors** (assertion–reason, statement analysis, mechanism/definition discrimination).
+- Reject anything that is a single trivially-true fact restated as the answer.`
+            : ""
+    }`;
 };
 
 export const buildJeeHardStemAuthoringBlock = (examProfile = "jee_main") => {

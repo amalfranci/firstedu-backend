@@ -1,6 +1,7 @@
 /**
  * Hard-tier question mandate — generation prompts + deterministic validation.
- * Every hard question must be multi-concept, multi-step, non plug-in.
+ * Hard difficulty applies within each question kind (theory / direct / multi_concept);
+ * only multi_concept slots must be multi-concept + multi-step + non plug-in.
  */
 
 import { normalizeQuestionTier } from "./difficultyMix.service.js";
@@ -10,6 +11,32 @@ import { getArchetypeBlueprint } from "./conceptArchetypeGuidance.service.js";
 export const HARD_MIN_CONCEPTS = 2;
 export const HARD_MIN_SOLVE_STEPS = 3;
 export const HARD_MIN_SOLUTION_LINES = 4;
+
+/** Non-STEM (UPSC/CLAT/CAT/GK/law/etc.) hard tier has no concept-cluster
+ * catalog to check against — the only generic proxy for real elimination
+ * depth is having more than one reasoning step. */
+export const NON_STEM_HARD_MIN_SOLVE_STEPS = 2;
+
+/** Same STEM detector the solve-first routing gate used to gate on, now
+ * relocated here to decide mandate *rigor* (concept clusters vs. generic
+ * reasoning-depth checks) rather than whether solve-first runs at all. */
+export const isStemProfile = (examProfile = "", subject = "") => {
+    const profile = String(examProfile || "").toLowerCase();
+    const hay = `${profile} ${String(subject || "").toLowerCase()}`;
+    // Biology (NEET Botany / Zoology, life sciences) is NOT computational STEM:
+    // its hard tier is conceptual depth / multi-statement NCERT analysis, not
+    // numeric concept-fusion. Route it to the conceptual (non-numeric) path so
+    // it is not held to the physics-style concept-cluster + numeric mandate.
+    if (/\b(botany|zoology|biology|biological|life\s*science)\b/.test(hay)) {
+        return false;
+    }
+    if (profile === "jee_main" || profile === "jee_advanced" || profile === "neet") {
+        return true;
+    }
+    return /\bchem|physics|math|mathematics|engineering|jee|iit|pcm|nta\b/i.test(
+        hay
+    );
+};
 
 export const VETERAN_HARD_MIN_CONCEPTS = 2;
 export const VETERAN_HARD_MIN_SOLVE_STEPS = 4;
@@ -300,14 +327,19 @@ export const detectDirectSubstitution = (stem = "", solveSteps = []) => {
  */
 export const validateHardQuestionMandate = (
     q,
-    { assignedTier = "hard", examCalibrated = false } = {}
+    {
+        assignedTier = "hard",
+        examCalibrated = false,
+        examProfile = "",
+        subject = "",
+        questionKind = "",
+    } = {}
 ) => {
     const tier = normalizeQuestionTier(assignedTier) || "medium";
     const isHard = tier === "hard" || examCalibrated;
     if (!isHard) return { ok: true, issues: [] };
 
     const stem = String(q.questionText || q.stem || "").trim();
-    const conceptSlot = q.conceptSlot || q._conceptSlot || "";
     let solveSteps = q.solveSteps || q._solveSteps || [];
     if (!solveSteps.length && q.explanation) {
         solveSteps = String(q.explanation)
@@ -316,6 +348,49 @@ export const validateHardQuestionMandate = (
             .map((s) => s.trim())
             .filter((s) => s.length > 12);
     }
+
+    // Theory (conceptual) slots are hard via concept depth and close distractors, not
+    // computation — the numeric-given / solve-step / direct-substitution gates do not
+    // apply. Require only that it is not a single trivially-restated fact.
+    const kind = String(
+        questionKind || q._questionKind || q.questionKind || ""
+    ).toLowerCase();
+    if (kind === "theory") {
+        const stepCount = Array.isArray(solveSteps) ? solveSteps.length : 0;
+        const issues = [];
+        if (stepCount > 0 && stepCount < NON_STEM_HARD_MIN_SOLVE_STEPS) {
+            issues.push(
+                `Hard theory question needs ≥${NON_STEM_HARD_MIN_SOLVE_STEPS} reasoning/elimination steps, not a single fact restated as the answer (found ${stepCount}).`
+            );
+        }
+        return { ok: issues.length === 0, issues };
+    }
+
+    // Direct slots are meant to be single-formula / single-step numericals — the
+    // peak-hard gates (numeric-given count, ≥3 solve steps, no direct substitution)
+    // do NOT apply. Correctness is still enforced separately by the numeric-verify
+    // and correctness audits, which are kind-agnostic.
+    if (kind === "direct") {
+        return { ok: true, issues: [] };
+    }
+
+    if (!isStemProfile(examProfile, subject)) {
+        // No hand-curated concept-cluster catalog exists for non-STEM
+        // domains (law/GK/reasoning/etc.) — fabricating one isn't something
+        // to do without real domain review. The only generic proxy for real
+        // elimination/synthesis depth is having more than one solve step;
+        // a single restated fact (the UPSC 0/40 failure mode) fails this.
+        const stepCount = Array.isArray(solveSteps) ? solveSteps.length : 0;
+        const issues = [];
+        if (stepCount > 0 && stepCount < NON_STEM_HARD_MIN_SOLVE_STEPS) {
+            issues.push(
+                `Hard question needs ≥${NON_STEM_HARD_MIN_SOLVE_STEPS} reasoning/elimination steps, not a single fact restated as the answer (found ${stepCount}).`
+            );
+        }
+        return { ok: issues.length === 0, issues };
+    }
+
+    const conceptSlot = q.conceptSlot || q._conceptSlot || "";
     const issues = [];
     const floors = getHardMandateFloors({ examCalibrated });
 
@@ -374,7 +449,7 @@ export const validateHardQuestionMandate = (
 export const validateHardSkeletonMandate = (
     skeleton,
     assignedTier = "hard",
-    { examCalibrated = false } = {}
+    { examCalibrated = false, examProfile = "", subject = "", questionKind = "" } = {}
 ) => {
     return validateHardQuestionMandate(
         {
@@ -385,6 +460,13 @@ export const validateHardSkeletonMandate = (
         {
             assignedTier,
             examCalibrated: examCalibrated || assignedTier === "hard",
+            examProfile,
+            subject,
+            questionKind:
+                questionKind ||
+                skeleton.questionKind ||
+                skeleton._questionKind ||
+                "",
         }
     );
 };
@@ -430,15 +512,39 @@ export const buildHardQuestionMandateBlock = ({
  * Explicit codegen checklist — mirrors deterministic skeleton validators.
  * Placed in solve-first prompts so the model ships compliant skeletons on first pass.
  */
+const SKELETON_EXAM_LABELS = {
+    jee_advanced: "JEE Advanced",
+    jee_main: "JEE Main shift-paper",
+    neet: "NEET",
+    cat: "CAT",
+    board: "board exam",
+    competitive: "competitive exam",
+};
+
 export const buildSkeletonGenerationComplianceBlock = ({
     examProfile = "jee_main",
     examCalibrated = false,
+    subject = "",
 } = {}) => {
     const floors = getHardMandateFloors({ examCalibrated });
+    // Was hardcoded to "JEE Main shift-paper" for EVERY profile except jee_advanced, so a
+    // CAT / UPSC / board skeleton was repaired against a JEE brief.
     const examLabel =
-        examProfile === "jee_advanced" ? "JEE Advanced" : "JEE Main shift-paper";
+        SKELETON_EXAM_LABELS[String(examProfile || "").toLowerCase()] ||
+        "competitive exam";
 
-    const conceptVocabHint = `
+    // The vocabulary list below is physics-specific. Injecting it into a non-STEM bank
+    // (CAT DILR, UPSC, CLAT) instructed the model to build stems out of "incline, pulley,
+    // emf, capacitor" — which is how JEE physics questions ended up inside a CAT
+    // Data-Interpretation bank during repair. Only emit it for STEM profiles.
+    const wantsPhysicsVocab = isStemProfile(examProfile, subject);
+
+    const conceptVocabHint = !wantsPhysicsVocab
+        ? `
+**Two-concept stem requirement:** the stem must combine **≥2 ideas from THIS bank's own
+syllabus** (the topic/subject named above). Do NOT import vocabulary or scenarios from a
+different subject to satisfy this — an off-syllabus stem is a failure, not a fix.`
+        : `
 **Two-concept stem vocabulary (use words from ≥2 areas in the stem):**
 - Mechanics/dynamics: incline, pulley, friction, collision, momentum
 - Energy/work: kinetic, potential, conservation, work done, power
@@ -521,6 +627,35 @@ ${buildSkeletonGenerationComplianceBlock({ examProfile, examCalibrated: true })}
 - solveSteps that disagree with \`finalAnswer\``;
 };
 
+/**
+ * Feed prior-attempt difficulty-audit rejection reasons back into the next
+ * generation attempt so the model targets the SPECIFIC weakness the auditor
+ * named, instead of blindly resampling the same instructions and getting the
+ * same reject rate again.
+ */
+export const buildDifficultyRegenFeedbackBlock = (rejections = []) => {
+    const rows = (Array.isArray(rejections) ? rejections : [])
+        .filter((r) => r && Number.isFinite(Number(r.difficultyScore)))
+        .slice(0, 8);
+    if (!rows.length) return "";
+
+    const lines = rows
+        .map((r, i) => {
+            const label = r.conceptSlot ? ` [${r.conceptSlot}]` : "";
+            const reason =
+                String(r.reason || "").trim() || "too easy for assigned tier";
+            return `${i + 1}.${label} scored ${r.difficultyScore}/100 — ${reason}`;
+        })
+        .join("\n");
+
+    return `
+**PRIOR ATTEMPT REJECTED BY DIFFICULTY AUDIT — FIX THESE SPECIFIC WEAKNESSES:**
+The last batch was scored below the required difficulty bar. Do not just resubmit similar skeletons — address the NAMED weakness in each reason below:
+${lines}
+
+For this attempt: if a reason says "only 1 concept fused" → explicitly link ≥2 syllabus ideas in the stem. If it says "no derivation depth" / "too few solve steps" → add substantive intermediate solveSteps that build toward the answer. If it says "single-formula plug-in" → restructure so no step is a direct one-shot substitution. Treat each reason as a literal defect to correct, not generic feedback.`;
+};
+
 /** Map mandate failures to audit issues for difficulty scoring. */
 export const detectHardMandateIssues = (q, ctx = {}) => {
     const tier =
@@ -529,6 +664,10 @@ export const detectHardMandateIssues = (q, ctx = {}) => {
     const { ok, issues } = validateHardQuestionMandate(q, {
         assignedTier: tier,
         examCalibrated: ctx.examCalibrated,
+        examProfile: ctx.examProfile,
+        subject: ctx.subject,
+        questionKind:
+            ctx.questionKind || q._questionKind || q.questionKind || "",
     });
     if (ok) return [];
 
@@ -545,7 +684,9 @@ export default {
     buildHardQuestionMandateBlock,
     buildSkeletonGenerationComplianceBlock,
     buildVeteranExamNativeGenerationBlock,
+    buildDifficultyRegenFeedbackBlock,
     isExamNativeVeteranGeneration,
+    isStemProfile,
     validateHardQuestionMandate,
     validateHardSkeletonMandate,
     detectHardMandateIssues,

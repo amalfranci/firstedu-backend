@@ -1,0 +1,145 @@
+AI QUESTION-BANK EVALUATION FLOW — SUMMARY
+============================================
+
+Project: firstedu-backend
+Feature: "Evaluate with AI" for generated question banks
+
+(See AI_QUESTION_BANK_GENERATION_EVALUATION_FLOW.txt in this folder for the
+full pipeline map. This file is a condensed summary of how difficulty, topic
+relevance, and other criteria are scored.)
+
+
+WHERE IT HAPPENS
+----------------
+Route:        POST /admin/ai/validate-question-topic-relevance
+Controller:   firstedu-backend/src/controllers/aiQuestion.controller.js
+              -> validateQuestionTopicRelevance
+Orchestrator: firstedu-backend/src/services/aiQuestion.service.js (~line 5260-5460)
+Prompts/math: firstedu-backend/src/services/topicRelevanceValidation.service.js
+
+
+THE PIPELINE (per validation request)
+--------------------------------------
+1. Deterministic correctness audit          - code only, no LLM
+2. Deterministic difficulty pre-audit       - code only, no LLM
+   (firstedu-backend/src/services/difficultyPreAudit.service.js)
+3. Three parallel LLM calls (Promise.all):
+   a. Topic relevance prompt
+   b. Correctness + style audit prompt
+   c. JEE authenticity/difficulty audit prompt (JEE Main/Advanced banks only)
+
+
+SCORING CRITERIA
+----------------
+
+1) TOPIC RELEVANCE (0-100, "medium strictness")
+   90-100  Strong  - almost all questions directly test the topic
+   75-89   Good    - mostly on-topic; minor drift or one weak item
+   60-74   Moderate- mixed; several tangential or too-broad items
+   40-59   Weak    - partial overlap only
+   0-39    Poor / off-topic
+
+2) CORRECTNESS / STYLE
+   LLM independently re-solves each question and classifies issues into:
+   factual | style | diversity | authenticity | difficulty
+   Returns: correctnessScore, styleScore, confirmedIssues[], suspectedIssues[]
+
+3) DIFFICULTY (difficultyMatchScore)
+   Blended from two sources:
+     - LLM difficultyScore (JEE authenticity audit; scored per assigned tier)
+     - Deterministic rule-based difficulty check
+   Formula:
+     core = llm_difficultyScore * 0.4 + deterministicDifficultyScore * 0.6
+     difficultyMatchScore = round(core * 0.8 + difficultyIssuesPenaltyScore * 0.2)
+   (Falls back to deterministic-only or issue-penalty-only if LLM score absent.)
+
+4) OTHER DIMENSIONS
+   - authenticity        - exam-pattern realism, distractor craft (JEE audit)
+   - diversity            - duplicate / near-duplicate detection across batch
+   - explanationQuality   - explanation supports the marked answer
+   - patternComplianceScore - deterministic check that requested question-type
+                              mix (single/multiple/passage counts) was honored
+                              (competitiveExamPlan.service.js)
+
+
+COMBINING / WEIGHTING SCORES
+-----------------------------
+Non-JEE banks:
+   overall = topicRelevance * 0.42 + correctness * 0.58
+
+JEE banks (authenticity score present):
+   overall = topicRelevance * 0.22 + correctness * 0.45 + authenticity * 0.33
+
+If style score present instead of authenticity:
+   overall = topicRelevance * 0.30 + correctness * 0.50 + style * 0.20
+
+If explanationQuality present, final blend:
+   overall = blended * 0.88 + explanationQuality * 0.12
+
+Per-issue penalties (critical/major/minor points), e.g.:
+   factual:    14 / 9 / 3
+   difficulty: 10 / 6 / 3
+
+OVERALL SCORE CAPS (applied after blending, regardless of weighted result):
+   - Answer not among the options           -> capped at 62
+   - >=1 critical factual issue              -> capped at 82
+   - >=2 critical factual issues             -> capped at 70
+   - >=3 critical factual issues             -> capped at 58
+   - >=3 major + >=1 critical issue          -> capped at 60
+   - style/authenticity < 45                 -> capped at 72
+   - explanationQuality < 55                 -> capped at 76
+   - difficultyMatchScore < 60               -> capped at 85
+   - difficultyMatchScore < 40               -> capped at 75
+
+THRESHOLDS
+----------
+   TOPIC_RELEVANCE_PASS_SCORE      = 80  (minimum to avoid regeneration)
+   REGEN_TARGET_SCORE              = 85  (bar a regenerated question must clear)
+   INITIAL_GEN_DIFFICULTY_TARGET   = 92  (generation-time target, env-overridable)
+   DIFFICULTY_MATCH_CAP_THRESHOLDS = { MID: 60, LOW: 40 }
+
+VERDICT BANDS
+-------------
+   >= 90  "strong"
+   >= 70  "moderate"
+   >= 50  "weak"
+   else   "off-topic"
+
+Below the pass score (80), or with confirmed correctness/style/difficulty
+issues, the system emits regenerationInstructions; the frontend can trigger a
+targeted regeneration (generateIntent: "evaluation_regen") that replaces only
+the failed question numbers, which must then clear REGEN_TARGET_SCORE (85) on
+re-review.
+
+
+AI MODEL / PROVIDER
+--------------------
+Selectable per request via `evaluationProvider`: "gemini" or default "openai".
+
+OpenAI path:
+   - Uses callOpenAIChatForJson() with response_format: json_object
+   - Default chat model: gpt-4o-mini (env OPENAI_CHAT_MODEL)
+   - Correctness/authenticity audit calls override to: gpt-4o
+     (env OPENAI_CORRECTNESS_AUDIT_MODEL)
+   - Topic-relevance call uses the default model (gpt-4o-mini), no override
+
+Gemini path:
+   - Uses callGeminiChatForJson(), model via resolveGeminiTextModel() /
+     env GEMINI_TEXT_MODEL
+
+There is also a Claude/Anthropic call path (callClaudeChatForJson) used
+elsewhere in generation, and OPENAI_QB_GENERATION_MODEL controls the
+separate question-generation model (not evaluation).
+
+
+FILE MAP
+--------
+Pipeline documentation            firstedu-backend/docs/AI_QUESTION_BANK_GENERATION_EVALUATION_FLOW.txt
+Validate orchestrator + LLM calls firstedu-backend/src/services/aiQuestion.service.js (~5260-5460, ~4462-4890)
+Prompts + scoring/weights/caps    firstedu-backend/src/services/topicRelevanceValidation.service.js
+Deterministic difficulty pre-audit firstedu-backend/src/services/difficultyPreAudit.service.js
+LLM difficulty self-audit (gen-time gate) firstedu-backend/src/services/difficultySelfAudit.service.js
+Deterministic correctness pre-audit firstedu-backend/src/services/correctnessPreAudit.service.js
+Pattern/question-type compliance  firstedu-backend/src/services/competitiveExamPlan.service.js
+Controller / route                firstedu-backend/src/controllers/aiQuestion.controller.js, firstedu-backend/src/routes/admin.routes.js
+Frontend trigger / UI             -firstedu-frontend/src/features/admin/question-bank/components/AiSuggestionModal.jsx, aiSuggestion.utils.js

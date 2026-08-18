@@ -210,6 +210,11 @@ import {
   deleteAiQuestionBank,
   updateAiQuestion,
 } from "../controllers/aiQuestionBank.controller.js";
+import {
+  getAiBankDraft,
+  saveAiBankDraft,
+  deleteAiBankDraft,
+} from "../controllers/aiBankDraft.controller.js";
 
 import {
   getAllSupport,
@@ -250,8 +255,16 @@ import {
   listClaudeTextModels,
   saveGeneratedQuestions,
   validateQuestionTopicRelevance,
+  planQuestionBankTopics,
   logConfirmedQuestions,
+  applyAnswerCorrection,
 } from '../controllers/aiQuestion.controller.js';
+
+import {
+  getCleanupStatusController,
+  runCleanupNowController,
+  forceCleanupController,
+} from '../controllers/adminCleanup.controller.js';
 
 import {
   createPressAnnouncement,
@@ -469,6 +482,12 @@ router.get(
 );
 router.delete("/ai-question-banks/:id", verifyJWT, deleteAiQuestionBank);
 router.put("/ai-questions/:id", verifyJWT, updateAiQuestion);
+
+// AI Powered Test create-flow draft (one per user; autosaved so work survives
+// refresh / tab close and can be resumed). Stored in its own collection.
+router.get("/ai-bank-draft", verifyJWT, getAiBankDraft);
+router.put("/ai-bank-draft", verifyJWT, saveAiBankDraft);
+router.delete("/ai-bank-draft", verifyJWT, deleteAiBankDraft);
 
 // Question Bank Management Routes (individual questions - create, list all, get, update, delete)
 router.post("/questions", verifyJWT, uploadAnyImages, createQuestion);
@@ -709,6 +728,13 @@ router.post(
   generateQuestions
 );
 
+// Question bank: plan topics/syllabus (no generation) — step 1 of the split flow
+router.post(
+  '/ai/plan-question-topics',
+  verifyJWT,
+  planQuestionBankTopics
+);
+
 // Question bank: single / multiple / true-false suggestions (Gemini)
 router.post(
   '/ai/generate-question-bank-suggestions',
@@ -786,6 +812,12 @@ router.post(
   '/ai/log-confirmed-questions',
   verifyJWT,
   logConfirmedQuestions
+);
+
+router.post(
+  '/ai/apply-answer-correction',
+  verifyJWT,
+  applyAnswerCorrection
 );
 
 // Save generated questions to Question Bank
@@ -965,6 +997,28 @@ router.get(
   verifyJWT,
   verifyAdmin,
   downloadAdminCallRecording
+);
+
+// ==================== CLEANUP & MAINTENANCE ====================
+router.get(
+  '/cleanup/status',
+  verifyJWT,
+  verifyAdmin,
+  getCleanupStatusController
+);
+
+router.post(
+  '/cleanup/run',
+  verifyJWT,
+  verifyAdmin,
+  runCleanupNowController
+);
+
+router.post(
+  '/cleanup/force',
+  verifyJWT,
+  verifyAdmin,
+  forceCleanupController
 );
 
 export default router;

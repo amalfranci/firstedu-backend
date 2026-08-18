@@ -17,6 +17,7 @@ import {
     countSelectableFromPlan,
     normalizeInferredPlan,
     MAX_API_ITEMS_PER_REQUEST,
+    MAX_TOTAL_API_ITEMS,
 } from "./aiQuestionCountInference.service.js";
 import { parseCategoryScope, resolveGenerationSubject } from "./subjectDetection.js";
 
@@ -473,7 +474,7 @@ export const suggestDefaultSubjectMix = suggestMinimalSubjectFallback;
 export const normalizeCompetitiveExamPlan = (
     raw = {},
     {
-        maxApiItems = MAX_API_ITEMS_PER_REQUEST,
+        maxApiItems = MAX_TOTAL_API_ITEMS,
         maxSelectableSlots = 10,
         topic = "",
         bankName = "",
@@ -538,6 +539,10 @@ export const normalizeCompetitiveExamPlan = (
         subjects = rescaleSubjectCounts(subjects, selectableTarget);
     }
 
+    // Passage length is DECIDED BY THE PLANNING AI from the exam's authentic RC
+    // format (not hardcoded). Sanitize to a clean "min–max" (or single) word count.
+    const passageWordTarget = sanitizePassageWordTarget(raw.passageWordTarget);
+
     const rationale = String(raw.rationale || typePlan.rationale || "").trim();
     const bankDiff = normalizeBankDifficulty(raw.bankDifficulty || bankDifficulty);
     const difficultyMix = allocateDifficultyMix(selectableTarget, bankDiff);
@@ -567,7 +572,26 @@ export const normalizeCompetitiveExamPlan = (
             rationale ||
             `Planned ${selectableTarget} question(s) across ${subjects.map((s) => s.label).join(", ")}.`,
         selectableTotal: selectableTarget,
+        passageWordTarget,
     };
+};
+
+/** Normalize an AI-provided passage word target to a clean "min–max" (or single number), or null. */
+const sanitizePassageWordTarget = (raw) => {
+    const s = String(raw ?? "").trim();
+    if (!s) return null;
+    const range = s.match(/(\d{2,4})\s*(?:[-–—]|to)\s*(\d{2,4})/);
+    if (range) {
+        const lo = Number(range[1]);
+        const hi = Number(range[2]);
+        if (lo > 0 && hi >= lo && hi <= 2000) return `${lo}–${hi}`;
+    }
+    const single = s.match(/\d{2,4}/);
+    if (single) {
+        const n = Number(single[0]);
+        if (n > 0 && n <= 2000) return String(n);
+    }
+    return null;
 };
 
 export const buildCompetitiveExamPlanPrompt = ({
@@ -577,7 +601,7 @@ export const buildCompetitiveExamPlanPrompt = ({
     sectionName = "",
     subject = "",
     categoryPaths = [],
-    maxApiItems = MAX_API_ITEMS_PER_REQUEST,
+    maxApiItems = MAX_TOTAL_API_ITEMS,
     maxSelectableSlots = 10,
 } = {}) => {
     const slotTarget = Math.max(
@@ -653,6 +677,8 @@ ${syllabusCoverageBlock}
    - **JEE Main:** Mostly \`single\` (~70–85%); optional \`multipleCount\` (~10%); \`passageCount\` for paragraph sets; note in rationale that ~30% of singles simulate Section B numerics (four numeric options, still \`single\`).
    - **Section name "Section B" or "Numerical":** plan all items as \`single\` with numerical-as-MCQ style in rationale.
 
+8. **Decide passage length** (only when \`passageCount\` > 0): set \`passageWordTarget\` to the authentic per-passage word count a REAL paper of this exam/section uses — a "min-max" range (e.g. reading-comprehension exams like CLAT, CAT VARC, UPSC CSAT, and IBPS/SBI banking RC use long multi-paragraph passages; JEE/NEET numeric context blocks are short). Base it on the actual exam's format, not a generic default. Omit if there are no passages.
+
 **Count rules:**
 - API items = singleCount + multipleCount + passageCount (each passage = 1 API item)
 - selectable total = singleCount + multipleCount + passageCount × passageSingleCount ≤ ${slotTarget}
@@ -681,6 +707,7 @@ Return ONLY valid JSON:
     "passageSingleCount": 2,
     "passageMultipleCount": 0,
     "passageTrueFalseCount": 0,
+    "passageWordTarget": "450-550",
     "rationale": "One sentence: exam type, format mix, and subject split"
   }
 }`;
@@ -698,9 +725,13 @@ export const buildCompetitiveExamPlanGenerationBlock = (plan) => {
         countSelectableFromPlan(plan) ??
         plan.subjects.reduce((a, s) => a + s.count, 0);
 
+    const passageLenNote =
+        (plan.passageCount || 0) > 0 && plan.passageWordTarget
+            ? ` — each passage **${plan.passageWordTarget} words** (exam-authentic length; do NOT write short)`
+            : "";
     const formatNote =
         (plan.passageCount || 0) > 0
-            ? `- Format: ${plan.singleCount || 0} single + ${plan.multipleCount || 0} multi-correct + ${plan.passageCount} passage(s) × ${plan.passageSingleCount || 0} sub(s)${plan.passageMultipleCount ? ` + ${plan.passageMultipleCount} multi sub/passage` : ""}`
+            ? `- Format: ${plan.singleCount || 0} single + ${plan.multipleCount || 0} multi-correct + ${plan.passageCount} passage(s) × ${plan.passageSingleCount || 0} sub(s)${plan.passageMultipleCount ? ` + ${plan.passageMultipleCount} multi sub/passage` : ""}${passageLenNote}`
             : plan.multipleCount > 0
               ? `- Format: ${plan.singleCount || 0} single + ${plan.multipleCount} multi-correct`
               : `- Format: ${plan.singleCount || total} standalone single-choice MCQ(s)`;

@@ -267,6 +267,7 @@ const runQuestionBankGenerationJob = async (req, value) => {
                 deferValidation,
                 generationMode: value.generationMode || "default",
                 workflowLogKey: value.workflowLogKey?.trim() || "",
+                presetSteering: value.presetSteering || null,
             })
     );
 
@@ -320,6 +321,7 @@ const runQuestionBankGenerationJob = async (req, value) => {
             examProfile: questions.difficultyResolution?.examProfile,
             targetedRegeneration: questions.targetedRegeneration || null,
             pipelineSummary: questions.pipelineSummary || null,
+            ragMeta: questions.ragMeta || null,
             validationDeferred: !!backgroundValidation,
             backgroundValidation,
         },
@@ -330,6 +332,100 @@ const runQuestionBankGenerationJob = async (req, value) => {
 
     return responseBody;
 };
+
+/**
+ * Plan the topic/syllabus list for a bank WITHOUT generating questions.
+ * Returns included/excluded topics + steering (echoed back on generate as
+ * presetSteering). Supports reviewer-guided re-planning via planningFeedback /
+ * adminExcludeTopics.
+ * @route POST /api/admin/ai/plan-question-topics
+ */
+export const planQuestionBankTopics = asyncHandler(async (req, res) => {
+    const { error, value } =
+        aiQuestionValidator.planQuestionBankTopics.validate(req.body);
+
+    if (error) {
+        throw new ApiError(
+            400,
+            'Validation Error',
+            error.details.map((x) => x.message)
+        );
+    }
+
+    const difficulty = String(value.difficulty || 'medium').toLowerCase();
+    const passageCount =
+        value.passageCount > 0 ? value.passageCount : value.connectedCount || 0;
+
+    const countsMissing = isQuestionBankCountsMissing({
+        singleCount: value.singleCount,
+        multipleCount: value.multipleCount,
+        trueFalseCount: value.trueFalseCount,
+        passageCount,
+        connectedCount: value.connectedCount || 0,
+        passageSingleCount: value.passageSingleCount || 0,
+        passageMultipleCount: value.passageMultipleCount || 0,
+        passageTrueFalseCount: value.passageTrueFalseCount || 0,
+    });
+
+    let competitiveExamPlan = value.competitiveExamPlan || null;
+    let singleCount = value.singleCount || 0;
+    let multipleCount = value.multipleCount || 0;
+    let trueFalseCount = value.trueFalseCount || 0;
+    let resolvedPassageCount = passageCount;
+    let passageSingleCount = value.passageSingleCount || 0;
+    let passageMultipleCount = value.passageMultipleCount || 0;
+    let passageTrueFalseCount = value.passageTrueFalseCount || 0;
+
+    if (countsMissing && value.inferCountsIfMissing && !competitiveExamPlan) {
+        const planResult = await aiQuestionService.inferCompetitiveExamPlan({
+            topic: value.topic,
+            bankName: value.bankName || value.topic,
+            difficulty,
+            sectionName: value.sectionName || '',
+            subject: value.subject || '',
+            categoryPaths: value.categoryPaths || [],
+            maxSelectableSlots: value.maxSelectableSlots || 0,
+        });
+        competitiveExamPlan = planResult.plan;
+        singleCount = planResult.plan.singleCount;
+        multipleCount = planResult.plan.multipleCount;
+        trueFalseCount = planResult.plan.trueFalseCount;
+        resolvedPassageCount = planResult.plan.passageCount;
+        passageSingleCount = planResult.plan.passageSingleCount;
+        passageMultipleCount = planResult.plan.passageMultipleCount;
+        passageTrueFalseCount = planResult.plan.passageTrueFalseCount;
+    }
+
+    const result = await aiQuestionService.planQuestionBankTopics({
+        topic: value.topic,
+        bankName: value.bankName || value.topic,
+        difficulty,
+        singleCount,
+        multipleCount,
+        trueFalseCount,
+        connectedCount: resolvedPassageCount,
+        passageCount: resolvedPassageCount,
+        passageSingleCount,
+        passageMultipleCount,
+        passageTrueFalseCount,
+        categoryPaths: value.categoryPaths || [],
+        sectionName: value.sectionName || '',
+        subject: value.subject || '',
+        maxSelectableSlots: value.maxSelectableSlots || 0,
+        competitiveExamPlan,
+        generationProvider: value.generationProvider || 'gemini',
+        planningFeedback: value.planningFeedback || '',
+        adminExcludeTopics: value.adminExcludeTopics || [],
+        excludeArchetypes: value.excludeArchetypes || [],
+    });
+
+    return res.status(200).json(
+        ApiResponse.success(
+            { ...result, competitiveExamPlan },
+            'Question topics planned successfully'
+        )
+    );
+});
 
 /**
  * Poll question-bank generation started by generateQuestionBankSuggestions.
@@ -731,18 +827,71 @@ export const logConfirmedQuestions = asyncHandler(async (req, res) => {
     );
 });
 
+/**
+ * Apply deep answer correction to an existing question bank.
+ * Performs independent re-solve and fixes high-confidence disagreements.
+ * @route POST /api/admin/ai/apply-answer-correction
+ */
+export const applyAnswerCorrection = asyncHandler(async (req, res) => {
+    const { topic, bankName, questions, evaluationProvider } = req.body;
+
+    if (!Array.isArray(questions) || questions.length === 0) {
+        throw new ApiError(400, 'Validation Error', ['questions array is required and must not be empty']);
+    }
+
+    if (questions.length > 500) {
+        throw new ApiError(400, 'Validation Error', ['Maximum 500 questions per request']);
+    }
+
+    try {
+        const result = await runWithPipelineTrace(
+            req,
+            topic || bankName || 'unknown',
+            { intent: 'answer_correction', questionCount: questions.length },
+            async () => {
+                return await aiQuestionService.applyAnswerCorrectionToQuestionBank({
+                    topic: topic || bankName || '',
+                    bankName: bankName || topic || '',
+                    questions,
+                    evaluationProvider: evaluationProvider || 'openai',
+                });
+            }
+        );
+
+        return res.status(200).json(
+            ApiResponse.success(
+                {
+                    questions: result.questions,
+                    checkedCount: result.checkedCount,
+                    disagreementCount: result.disagreementCount,
+                    fixedCount: result.fixedCount,
+                    skippedCount: result.skippedCount || 0,
+                    report: result.report,
+                },
+                `Answer correction complete: ${result.fixedCount} fixed, ${result.checkedCount} checked`
+            )
+        );
+    } catch (error) {
+        console.error('[answer-correction]', error.message);
+        throw error;
+    }
+});
+
 export default {
     generateQuestions,
     generateQuestionBankSuggestions,
+    getQuestionBankGenerationJobStatus,
     getQuestionBankBackgroundValidation,
     getPipelineEventsStatus,
     generateImageQuestion,
     generateImageQuestionOpenAI,
     generateQuestionImage,
-  listGeminiImageModels,
-  listGeminiTextModels,
-  generateQuestionImageOpenAI,
+    listGeminiImageModels,
+    listGeminiTextModels,
+    generateQuestionImageOpenAI,
     saveGeneratedQuestions,
     validateQuestionTopicRelevance,
+    planQuestionBankTopics,
     logConfirmedQuestions,
+    applyAnswerCorrection,
 };

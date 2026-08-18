@@ -4,7 +4,20 @@ import { buildExamCountStyleHint } from "./examPromptContext.service.js";
 import { parseCategoryScope } from "./subjectDetection.js";
 import { countSelectableSlots } from "./difficultyMix.service.js";
 
+/** Max API items in a single LLM generation CALL (chunk ceiling). */
 export const MAX_API_ITEMS_PER_REQUEST = 30;
+
+/**
+ * Max TOTAL API items for one "generate" request. The requested total is split
+ * into chunks of ≤ MAX_API_ITEMS_PER_REQUEST and generated across multiple LLM
+ * calls, so the total is NOT limited to a single call's size. Previously the
+ * per-call ceiling (30) was wrongly reused as the total clamp, capping a 45-slot
+ * request at 30 — this decouples them. Configurable via AI_QB_MAX_TOTAL_API_ITEMS.
+ */
+export const MAX_TOTAL_API_ITEMS = Math.max(
+    MAX_API_ITEMS_PER_REQUEST,
+    Math.min(300, Math.max(1, Number(process.env.AI_QB_MAX_TOTAL_API_ITEMS ?? 100)))
+);
 
 /** Max API items per LLM generation call (mirrors frontend `splitAiSuggestionCountsIntoChunks`). */
 export const QB_GENERATION_CHUNK_SIZE = Math.min(
@@ -46,21 +59,15 @@ export const splitQuestionBankCountsIntoChunks = (
 ) => {
     const size = Math.max(1, Math.min(MAX_API_ITEMS_PER_REQUEST, chunkSize));
     const normalized = {
-        singleCount: clampInt(counts.singleCount, 0, MAX_API_ITEMS_PER_REQUEST),
-        multipleCount: clampInt(
-            counts.multipleCount,
-            0,
-            MAX_API_ITEMS_PER_REQUEST
-        ),
-        trueFalseCount: clampInt(
-            counts.trueFalseCount,
-            0,
-            MAX_API_ITEMS_PER_REQUEST
-        ),
+        // Totals are clamped to the TOTAL ceiling, not the per-call one — the
+        // loop below splits them into chunks of `size` (≤ per-call ceiling).
+        singleCount: clampInt(counts.singleCount, 0, MAX_TOTAL_API_ITEMS),
+        multipleCount: clampInt(counts.multipleCount, 0, MAX_TOTAL_API_ITEMS),
+        trueFalseCount: clampInt(counts.trueFalseCount, 0, MAX_TOTAL_API_ITEMS),
         passageCount: clampInt(
             counts.passageCount ?? counts.connectedCount,
             0,
-            MAX_API_ITEMS_PER_REQUEST
+            MAX_TOTAL_API_ITEMS
         ),
         passageSingleCount: clampInt(
             counts.passageSingleCount,
@@ -218,7 +225,7 @@ export const getCountInferenceContext = ({
         categoryPaths,
     });
     const catSection = detectCatSection({ topic, bankName, sectionName, categoryPaths });
-    const maxApiItems = MAX_API_ITEMS_PER_REQUEST;
+    const maxApiItems = MAX_TOTAL_API_ITEMS;
     const slotTarget = Math.max(
         1,
         Math.min(

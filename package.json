@@ -5,7 +5,12 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:score-gap": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/score-gap-investigation.test.js --testTimeout=900000",
+    "test:non-stem": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/non-stem-path-validation.test.js --testTimeout=900000",
+    "test:fallback": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/provider-fallback.test.js --testTimeout=900000",
+    "test:multiple": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/multiple-correct-validation.test.js --testTimeout=900000",
+    "test:all-blockers": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/*.test.js --testTimeout=900000",
     "dev": "nodemon src/server.js",
     "start": "nodemon src/server.js"
   },
@@ -42,6 +47,7 @@
     "socket.io-client": "^4.8.1"
   },
   "devDependencies": {
+    "jest": "^30.4.2",
     "nodemon": "^3.1.10"
   }
 }

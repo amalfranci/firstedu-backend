@@ -1396,7 +1396,7 @@ export const buildCorrectnessAuditPrompt = ({
     const profileNote =
         examProfile === "cat"
             ? `
-**CAT / aptitude context:** Work-rate, TSD, and percentage questions often mention intermediate values in the stem — do NOT flag as style issues when the marked answer is consistent. Only flag factual errors when explanation and marked answer clearly disagree. Percentage options (e.g. "25%") matching a rate in the stem are normal trap distractors, not defects.`
+**CAT / aptitude context:** Work-rate, TSD, and percentage questions often mention intermediate values in the stem — do NOT flag as style issues when the marked answer is consistent. Percentage options (e.g. "25%") matching a rate in the stem are normal trap distractors, not defects. This leniency applies to **distractor craft and intermediate values only** — it does not relax protocol steps 5–6: a self-contradictory derivation or an ignored stem constraint is still a confirmed factual defect here, even when the marked option is right.`
             : examProfile === "jee_main" || examProfile === "jee_advanced"
               ? `
 **JEE context:** Flag numerics not among options, duplicate options, and explanation/answer mismatches strictly.`
@@ -1417,14 +1417,23 @@ ${questionBlocks}
 2. Compare your answer to the **marked correct answer**.
 3. If an **explanation** exists: verify it reaches the same conclusion as step 1.
 4. For numerical questions: verify the final value appears among the options and matches the marked answer.
+5. **Derivation self-consistency** — read the explanation as a chain of claims and check it never asserts something and then its opposite. Typical signatures:
+   · A relation stated one way then reversed ("16 beats 1, 15 beats 2 …" followed by "1 beats 16, 2 beats 15 …").
+   · A value derived, then silently replaced by a different one with no correction step.
+   · A step that concedes the result is inconsistent ("this implies an overlap", "this contradicts …") and then proceeds anyway.
+   · An empty or contentless step (e.g. a step that is just "." or a fragment).
+6. **Stem-constraint compliance** — every condition stated in the stem must actually be used and satisfied. If the stem fixes a quantity ("exactly 10 students between A and B") and the explanation computes something different (17) and carries on regardless, that is a confirmed defect — either the stem or the reasoning is wrong.
+7. **Functional-form / qualitative-conclusion consistency** — numbers matching isn't enough; check that the marked option's FORM follows from the derivation shown: the sign and exponent of a proportionality (e.g. a derivation showing T ∝ A⁻¹ but the marked option states T ∝ A¹), the direction of an inequality or trend (increasing vs decreasing, will-slip vs will-not-slip), and any named physical/logical condition asserted mid-derivation (e.g. "required friction is less than the maximum available, so it will NOT slip" — the marked option must not then claim slipping occurs). A numerically-labeled option can still be a confirmed factual defect if its qualitative claim contradicts the derivation's own stated conclusion.
+
+**A contradiction is a defect even when the marked option is correct.** The explanation is what the student reads; a derivation that contradicts itself, ignores a stated constraint, or reaches the right answer by invalid reasoning must be flagged as **factual** (severity "major"). Do NOT excuse it under "informal wording" — that exemption covers phrasing only, never broken logic.
 
 **Issue confidence — use ONLY two levels:**
 - **confirmed** — You are confident the marked answer is wrong, OR the explanation derives a different value than marked, OR the explanation's result is not among any option, OR the explanation explicitly contradicts itself. You must be able to state your independent answer or the conflicting values.
 - **suspected** — Possible error but ambiguous (rounding, notation, alternate valid method). **Do not penalize score for suspected items.**
 
 **DO NOT flag as confirmed (common false positives):**
-- Your independent derivation **agrees** with the marked answer
-- Explanation wording is informal but the math/logic reaches the marked answer
+- Your independent derivation **agrees** with the marked answer **and** the explanation's reasoning is internally consistent
+- Explanation **wording/phrasing** is informal or terse while the logic is sound and unbroken (this covers style of expression only — it does NOT cover a derivation that contradicts itself, skips a stated constraint, or contains an empty step; flag those per protocol steps 5–6)
 - Minor rounding (e.g. 16.67 vs 16.7, sqrt(34) ≈ 5.83)
 - Two equal sides in a triangle → isosceles is correct
 - sin²θ + cos²θ = 1 identity applications that yield the marked value
@@ -1434,7 +1443,7 @@ ${questionBlocks}
 
 | Category | What belongs here | Examples |
 |----------|-------------------|----------|
-| **factual** | Wrong answer key, math errors, explanation ≠ marked answer | Derives 6 M but options show 0.32 M; value not in options; identical option text |
+| **factual** | Wrong answer key, math errors, explanation ≠ marked answer, **self-contradictory derivation**, **stem constraint ignored**, empty/contentless step, **wrong functional form/sign/exponent or contradicted qualitative conclusion** | Derives 6 M but options show 0.32 M; value not in options; identical option text; "16 beats 1" then "1 beats 16"; stem says exactly 10 between A and B but explanation computes 17 and continues; derivation shows T ∝ A⁻¹ but marked option states T ∝ A; derivation concludes required friction < max available (no slipping) but marked option says the object slips |
 | **style** | Explanation quality, formatting, draft wording (answer may still be correct) | Short/brief explanation; options vary in number formatting; vague hand-waving |
 | **diversity** | Duplicate or near-duplicate questions in the batch | Same stem as Q5; repeats the same problem logic |
 | **authenticity** | Non-exam templates, weak distractor craft, pattern mismatch | Repetitive formula template; coaching-style stem |

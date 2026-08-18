@@ -47,6 +47,13 @@ export const detectExamProfile = ({
     if (/\bupsc\b|civil services prelim|\bcsat\b|\bgs paper\b/i.test(haystack)) {
         return "upsc";
     }
+    if (
+        /\bibps\b|\bsbi\b|\brbi\b|\bbank(?:ing)?\s*(?:po|clerk|exam|so)\b|\brrb\b|\bnabard\b|\bbank\s*probationary\b/i.test(
+            haystack
+        )
+    ) {
+        return "banking";
+    }
     if (/\bjee\s*adv(?:anced)?\b|iit\s*-?\s*jee\s*adv/i.test(haystack)) {
         return "jee_advanced";
     }

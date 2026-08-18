@@ -25,6 +25,10 @@ export const buildSkeletonRepairPrompt = ({
     difficultyReason = "",
     difficultyScore = null,
     buildError = "",
+    topic = "",
+    bankName = "",
+    subject = "",
+    questionKind = "",
 } = {}) => {
     const issues = [
         ...mandateIssues,
@@ -34,12 +38,26 @@ export const buildSkeletonRepairPrompt = ({
         buildError ? `Build error: ${buildError}` : "",
     ].filter(Boolean);
 
+    const kindRule =
+        questionKind === "theory"
+            ? "\n**Question kind: THEORY** — conceptual/assertion-reason. Do NOT add numeric givens or a solve-step count; depth comes from concept discrimination."
+            : questionKind === "direct"
+              ? "\n**Question kind: DIRECT** — a single-formula/single-concept numerical. Do NOT fuse concepts or force ≥3 solve steps."
+              : "";
+
     return `You are **repairing** one exam MCQ skeleton that failed automated quality gates. **Fix the draft** — deepen for veteran examinees; do not replace with an easier template.
 
+**Topic / syllabus:** ${topic || bankName || "(not set)"}
+**Subject:** ${subject || "(infer from the topic above — do NOT drift to another subject)"}
 **Assigned conceptSlot:** ${assignedConceptSlot || skeleton.conceptSlot || "unknown"}
-**Exam profile:** ${examProfile}
+**Exam profile:** ${examProfile}${kindRule}
 
-${buildSkeletonGenerationComplianceBlock({ examProfile, examCalibrated })}
+**STAY IN SCOPE (critical):** the repaired question must remain on the **same topic, same
+subject and same exam** as above. A repaired item that drifts into another subject (e.g.
+writing a Physics numerical for a CAT Data-Interpretation slot) is worse than the original
+defect — it is silently off-syllabus for this bank. Keep the syllabus focus of the draft.
+
+${buildSkeletonGenerationComplianceBlock({ examProfile, examCalibrated, subject })}
 ${buildSolveFirstSkeletonCorrectnessBlock({ examCalibrated })}
 
 **Defects to fix (address every line):**
@@ -87,11 +105,16 @@ export const repairSkeleton = async (
         difficultyReason = "",
         difficultyScore = null,
         buildError = "",
+        topic = "",
+        bankName = "",
+        subject = "",
+        questionKind = "",
     },
     { callLlm }
 ) => {
     if (!skeleton || typeof callLlm !== "function") return null;
 
+    const resolvedKind = questionKind || skeleton.questionKind || "";
     const prompt = buildSkeletonRepairPrompt({
         skeleton,
         assignedConceptSlot,
@@ -101,12 +124,19 @@ export const repairSkeleton = async (
         difficultyReason,
         difficultyScore,
         buildError,
+        topic,
+        bankName,
+        subject,
+        questionKind: resolvedKind,
     });
 
     try {
         const raw = await callLlm(prompt);
         const fixed = parseRepairedSkeleton(raw);
         if (!fixed) return null;
+        // Carry the planned question kind across the repair — without this the repaired
+        // skeleton loses _questionKind and is treated as multi_concept downstream.
+        if (resolvedKind && !fixed.questionKind) fixed.questionKind = resolvedKind;
 
         const mandate = validateHardSkeletonMandate(fixed, assignedTier, {
             examCalibrated: examCalibrated || assignedTier === "hard",

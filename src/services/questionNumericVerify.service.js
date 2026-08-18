@@ -19,14 +19,50 @@ const H = 6.626e-34;
 const E_MASS = 9.1e-31;
 
 export const parseNumber = (text) => {
-    const s = String(text || "")
-        .replace(/×|x/gi, "e")
-        .replace(/10\s*[⁻−-]?\s*(\d+)/g, (_, e) => `e-${e}`)
+    // Convert superscript digits and minus to ASCII
+    const superscriptMap = { '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', '⁵': '5', '⁶': '6', '⁷': '7', '⁸': '8', '⁹': '9', '⁻': '-', '−': '-' };
+    let s = String(text || "").replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹⁻−]/g, m => superscriptMap[m]);
+
+    // Handle scientific notation: × 10^N, × 10N, x 10^-N, x 10-N → e+N / e-N.
+    // The optional \^? is required for CARET notation ("× 10^8") — the single most
+    // common form LLMs actually emit — which this regex previously did not match at
+    // all (it only matched an optional "-" directly after "10", nothing else), so
+    // "1.6737 × 10^8" silently parsed as 1.6737, dropping the exponent entirely.
+    s = s.replace(/[×x]\s*10\s*\^?\s*(-?)\s*(\d+)/gi, (_, sign, exp) => {
+        // Use the minus sign if present, otherwise positive exponent
+        const op = sign === '-' ? '-' : '+';
+        return `e${op}${exp}`;
+    });
+
+    s = s
         .replace(/,/g, "")
         .trim();
-    const m = s.match(/-?\d+(?:\.\d+)?(?:e[+-]?\d+)?/i);
-    return m ? Number(m[0]) : NaN;
+    // Match numeric values with optional whitespace around the 'e' in exponent notation
+    const m = s.match(/-?\d+(?:\.\d+)?(?:\s*e[+-]?\d+)?/i);
+    return m ? Number(m[0].replace(/\s/g, '')) : NaN;
 };
+
+/**
+ * Distinguish true numeric options (numbers with optional units)
+ * from text containing digits (e.g., "Team 3", "1st place").
+ *
+ * Returns true for: "123", "123.45", "123 J", "1.5 kW", "0.005 mol/L"
+ * Returns false for: "Team 1", "1st place", "pH 3", "Year 2023"
+ */
+export const isNumericAnswer = (option) => {
+    const text = String(option || "").trim();
+    if (!text) return false;
+
+    // Match: number with optional unit, but not text containing a digit
+    // Pattern: -?\d+(\.\d+)? optionally followed by space + unit
+    const numericPattern = /^-?(\d+(?:\.\d+)?|\d+\/\d+)(?:\s+[a-zA-Z°\/·\-]+)?$/;
+    return numericPattern.test(text);
+};
+
+/**
+ * Inverse of isNumericAnswer — text options that are not numeric.
+ */
+export const isTextAnswer = (option) => !isNumericAnswer(option);
 
 /** Extract first N numeric literals from stem (with optional unit suffix). */
 const extractNumbers = (stem, limit = 12) => {
@@ -506,24 +542,55 @@ function buildVerifyOptionsFromSkeleton(skeleton) {
     return [display, ...distractors].slice(0, 4);
 }
 
+/** Comprehensive unit whitelist (for reference only; units are no longer filtered). */
+const UNIT_WHITELIST = new Set([
+    // SI base units
+    "s", "m", "kg", "A", "K", "mol", "cd",
+    // SI derived units
+    "N", "J", "W", "Pa", "Hz", "C", "V", "Ω", "F", "H",
+    // Concentration & molarity
+    "M", "mol/L", "mol/kg", "ppm", "ppb", "g/L", "mg/L",
+    // Energy
+    "J", "kJ", "eV", "cal", "kcal", "kJ/mol", "kcal/mol",
+    // Power (including prefixed variants)
+    "W", "kW", "MW", "mW",
+    // Other common units
+    "min", "nm", "Å", "°C", "°F", "atm", "bar", "L", "mL",
+    // Specific chemistry units
+    "J/mol·K", "kJ/mol·K", "cm³", "cm³/mol", "g/mol",
+    // Time
+    "s", "ms", "μs", "ns", "min", "h",
+    // Distance
+    "m", "cm", "mm", "μm", "nm", "Å", "pm",
+    // Composed units (velocity, acceleration, etc.)
+    "m/s", "cm/s", "km/h", "kg/m³", "g/cm³", "K/s", "J/K",
+]);
+
 export const formatValueForOption = (value, unit = "") => {
     if (value == null) return "";
     if (typeof value === "string") return value;
+
     const u = String(unit || "").trim();
-    if (u === "min") return `${Math.round(value)} min`;
-    if (u === "M") return `${value.toFixed(2)} M`;
-    if (u === "mol/kg") return `${value.toFixed(2)} mol/kg`;
-    if (u === "kJ/mol") return `${value.toFixed(1)} kJ/mol`;
-    if (u === "nm") return `${value.toFixed(2)} nm`;
-    if (u === "J/mol·K") return `${value.toFixed(1)} J/mol·K`;
-    if (u === "W") return `${Math.round(value * 1000) / 1000} W`;
-    if (Number.isFinite(value)) {
-        if (Math.abs(value) >= 100 || Number.isInteger(value)) {
-            return String(Math.round(value * 100) / 100);
-        }
-        return value.toFixed(2);
+
+    // Preserve any unit passed in — don't filter by whitelist.
+    // Whitelist exists for documentation; actual unit preservation happens here.
+    const formatted = formatNumericValue(value);
+
+    if (!u) return formatted;
+    return `${formatted} ${u}`;
+};
+
+/** Format numeric value with appropriate precision. */
+const formatNumericValue = (value) => {
+    if (!Number.isFinite(value)) return String(value);
+
+    // Special handling for specific numeric values by convention
+    // These could be expanded based on domain-specific formatting rules
+    if (Math.abs(value) >= 100 || Number.isInteger(value)) {
+        return String(Math.round(value * 100) / 100);
     }
-    return String(value);
+
+    return value.toFixed(2);
 };
 
 const stripExplanationMetaTail = (explanation = "") => {
