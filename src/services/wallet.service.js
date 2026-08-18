@@ -5,7 +5,7 @@ import razorpayOrderIntentRepository from "../repository/razorpayOrderIntent.rep
 import { verifyPaymentSignature } from "../utils/razorpayUtils.js";
 
 
-const TEMP_STUDENT_DEFAULT_MONETARY_BALANCE = 2000;
+const TEMP_STUDENT_DEFAULT_MONETARY_BALANCE = 500;
 
 /**
  * Get or create wallet for a user
