@@ -26,7 +26,7 @@ const createCarearJob = Joi.object({
   category: Joi.string().valid("iscorre", "general").required().messages({
     "string.empty": "Category is required.",
     "any.required": "Category is required.",
-    "any.only": "Category must be one of: iscorre, general.",
+    "any.only": "Category must be one of: TestLadr, general.",
   }),
 
   // Optional fields
@@ -77,7 +77,7 @@ const updateCarearJob = Joi.object({
   type: Joi.string().trim().allow("").optional(),
 
   category: Joi.string().valid("iscorre", "general").optional().messages({
-    "any.only": "Category must be one of: iscorre, general.",
+    "any.only": "Category must be one of: TestLadr, general.",
   }),
 
   skills: Joi.array().items(Joi.string().trim()).optional(),
