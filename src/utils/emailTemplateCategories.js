@@ -15,11 +15,11 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
         label: "Welcome Email",
         description: "Sent after successful signup.",
         requiredVariables: ["name"],
-        defaultSubject: "Welcome to Iscorre, {{name}}!",
+        defaultSubject: "Welcome to TestLard, {{name}}!",
         defaultContent: `
           <div style="font-family: 'Inter', Helvetica, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
             <div style="background-color: #f8fafc; padding: 24px; text-align: center; border-bottom: 1px solid #e2e8f0;">
-              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">Iscorre</h1>
+              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">TestLard</h1>
             </div>
             <div style="padding: 32px 24px;">
               <h2 style="color: #0f172a; font-size: 20px; font-weight: 600; margin-top: 0;">Hello {{name}},</h2>
@@ -30,7 +30,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
               </div>
             </div>
             <div style="background-color: #f1f5f9; padding: 20px; text-align: center; border-top: 1px solid #e2e8f0;">
-              <p style="color: #64748b; font-size: 13px; margin: 0;">Happy Learning,<br/><strong>The Iscorre Team</strong></p>
+              <p style="color: #64748b; font-size: 13px; margin: 0;">Happy Learning,<br/><strong>The TestLard Team</strong></p>
             </div>
           </div>
         `,
@@ -40,11 +40,11 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
         label: "Email Verification",
         description: "Sent when user must verify email address.",
         requiredVariables: ["name", "link"],
-        defaultSubject: "Verify your Iscorre email address",
+        defaultSubject: "Verify your TestLard email address",
         defaultContent: `
           <div style="font-family: 'Inter', Helvetica, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
             <div style="background-color: #f8fafc; padding: 24px; text-align: center; border-bottom: 1px solid #e2e8f0;">
-              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">Iscorre</h1>
+              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">TestLard</h1>
             </div>
             <div style="padding: 32px 24px;">
               <h2 style="color: #0f172a; font-size: 20px; font-weight: 600; margin-top: 0;">Hello {{name}},</h2>
@@ -77,7 +77,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
         defaultContent: `
           <div style="font-family: 'Inter', Helvetica, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
             <div style="background-color: #f8fafc; padding: 24px; text-align: center; border-bottom: 1px solid #e2e8f0;">
-              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">Iscorre</h1>
+              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">TestLard</h1>
             </div>
             <div style="padding: 32px 24px;">
               <h2 style="color: #0f172a; font-size: 20px; font-weight: 600; margin-top: 0;">Hello {{name}},</h2>
@@ -98,11 +98,11 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
         label: "Login OTP",
         description: "OTP for login verification / MFA style login.",
         requiredVariables: ["name", "otp"],
-        defaultSubject: "Your Iscorre login OTP",
+        defaultSubject: "Your TestLard login OTP",
         defaultContent: `
           <div style="font-family: 'Inter', Helvetica, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
             <div style="background-color: #f8fafc; padding: 24px; text-align: center; border-bottom: 1px solid #e2e8f0;">
-              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">Iscorre</h1>
+              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">TestLard</h1>
             </div>
             <div style="padding: 32px 24px;">
               <h2 style="color: #0f172a; font-size: 20px; font-weight: 600; margin-top: 0;">Hello {{name}},</h2>
@@ -136,7 +136,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
         defaultContent: `
           <div style="font-family: 'Inter', Helvetica, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
             <div style="background-color: #f8fafc; padding: 24px; text-align: center; border-bottom: 1px solid #e2e8f0;">
-              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">Iscorre</h1>
+              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">TestLard</h1>
             </div>
             <div style="padding: 32px 24px;">
               <h2 style="color: #0f172a; font-size: 20px; font-weight: 600; margin-top: 0;">Purchase Successful!</h2>
@@ -161,7 +161,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
               <p style="color: #475569; font-size: 15px;">You can access your course materials from your dashboard.</p>
             </div>
             <div style="background-color: #f1f5f9; padding: 20px; text-align: center; border-top: 1px solid #e2e8f0;">
-              <p style="color: #64748b; font-size: 13px; margin: 0;">Happy Learning,<br/><strong>The Iscorre Team</strong></p>
+              <p style="color: #64748b; font-size: 13px; margin: 0;">Happy Learning,<br/><strong>The TestLard Team</strong></p>
             </div>
           </div>
         `,
@@ -175,7 +175,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
         defaultContent: `
           <div style="font-family: 'Inter', Helvetica, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
             <div style="background-color: #f8fafc; padding: 24px; text-align: center; border-bottom: 1px solid #e2e8f0;">
-              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">Iscorre</h1>
+              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">TestLard</h1>
             </div>
             <div style="padding: 32px 24px;">
               <h2 style="color: #0f172a; font-size: 20px; font-weight: 600; margin-top: 0;">Test Bundle Unlocked!</h2>
@@ -200,7 +200,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
               <p style="color: #475569; font-size: 15px;">All the best for your preparations!</p>
             </div>
             <div style="background-color: #f1f5f9; padding: 20px; text-align: center; border-top: 1px solid #e2e8f0;">
-              <p style="color: #64748b; font-size: 13px; margin: 0;"><strong>The Iscorre Team</strong></p>
+              <p style="color: #64748b; font-size: 13px; margin: 0;"><strong>The TestLard Team</strong></p>
             </div>
           </div>
         `,
@@ -215,7 +215,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
         defaultContent: `
           <div style="font-family: 'Inter', Helvetica, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
             <div style="background-color: #f8fafc; padding: 24px; text-align: center; border-bottom: 1px solid #e2e8f0;">
-              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">Iscorre</h1>
+              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">TestLard</h1>
             </div>
             <div style="padding: 32px 24px;">
               <h2 style="color: #0f172a; font-size: 20px; font-weight: 600; margin-top: 0;">You're in the Tournament!</h2>
@@ -240,7 +240,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
               <p style="color: #475569; font-size: 15px;">See you at the event!</p>
             </div>
             <div style="background-color: #f1f5f9; padding: 20px; text-align: center; border-top: 1px solid #e2e8f0;">
-              <p style="color: #64748b; font-size: 13px; margin: 0;"><strong>The Iscorre Team</strong></p>
+              <p style="color: #64748b; font-size: 13px; margin: 0;"><strong>The TestLard Team</strong></p>
             </div>
           </div>
         `,
@@ -254,7 +254,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
         defaultContent: `
           <div style="font-family: 'Inter', Helvetica, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
             <div style="background-color: #f8fafc; padding: 24px; text-align: center; border-bottom: 1px solid #e2e8f0;">
-              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">Iscorre</h1>
+              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">TestLard</h1>
             </div>
             <div style="padding: 32px 24px;">
               <h2 style="color: #0f172a; font-size: 20px; font-weight: 600; margin-top: 0;">Workshop Registration Confirmed!</h2>
@@ -278,7 +278,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
               </div>
             </div>
             <div style="background-color: #f1f5f9; padding: 20px; text-align: center; border-top: 1px solid #e2e8f0;">
-              <p style="color: #64748b; font-size: 13px; margin: 0;"><strong>The Iscorre Team</strong></p>
+              <p style="color: #64748b; font-size: 13px; margin: 0;"><strong>The TestLard Team</strong></p>
             </div>
           </div>
         `,
@@ -301,7 +301,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
         defaultContent: `
           <div style="font-family: 'Inter', Helvetica, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
             <div style="background-color: #f8fafc; padding: 24px; text-align: center; border-bottom: 1px solid #e2e8f0;">
-              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">Iscorre</h1>
+              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">TestLard</h1>
             </div>
             <div style="padding: 32px 24px;">
               <h2 style="color: #0f172a; font-size: 20px; font-weight: 600; margin-top: 0;">We've received your request!</h2>
@@ -324,7 +324,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
               </div>
             </div>
             <div style="background-color: #f1f5f9; padding: 20px; text-align: center; border-top: 1px solid #e2e8f0;">
-              <p style="color: #64748b; font-size: 13px; margin: 0;">Iscorre Customer Support System</p>
+              <p style="color: #64748b; font-size: 13px; margin: 0;">TestLard Customer Support System</p>
             </div>
           </div>
         `,
@@ -338,7 +338,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
         defaultContent: `
           <div style="font-family: 'Inter', Helvetica, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
             <div style="background-color: #f8fafc; padding: 24px; text-align: center; border-bottom: 1px solid #e2e8f0;">
-              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">Iscorre</h1>
+              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">TestLard</h1>
             </div>
             <div style="padding: 32px 24px;">
               <p style="color: #475569; font-size: 14px; float: right; margin: 0; background-color: #f1f5f9; padding: 4px 8px; border-radius: 4px;">#{{ticketNumber}}</p>
@@ -351,7 +351,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
               <p style="color: #475569; font-size: 14px;">Please login to your dashboard to continue the conversation or mark it as resolved.</p>
             </div>
             <div style="background-color: #f1f5f9; padding: 20px; text-align: center; border-top: 1px solid #e2e8f0;">
-              <p style="color: #64748b; font-size: 13px; margin: 0;">Iscorre Customer Support System</p>
+              <p style="color: #64748b; font-size: 13px; margin: 0;">TestLard Customer Support System</p>
             </div>
           </div>
         `,
@@ -374,7 +374,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
         defaultContent: `
           <div style="font-family: 'Inter', Helvetica, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
             <div style="background-color: #f8fafc; padding: 24px; text-align: center; border-bottom: 1px solid #e2e8f0;">
-              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">Iscorre</h1>
+              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">TestLard</h1>
             </div>
             <div style="padding: 32px 24px;">
               <h2 style="color: #0f172a; font-size: 20px; font-weight: 600; margin-top: 0;">Interview Scheduled</h2>
@@ -394,7 +394,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
               <p style="color: #475569; font-size: 15px;">We look forward to speaking with you!</p>
             </div>
             <div style="background-color: #f1f5f9; padding: 20px; text-align: center; border-top: 1px solid #e2e8f0;">
-              <p style="color: #64748b; font-size: 13px; margin: 0;">Iscorre Teacher Connect</p>
+              <p style="color: #64748b; font-size: 13px; margin: 0;">TestLard Teacher Connect</p>
             </div>
           </div>
         `,
@@ -408,7 +408,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
         defaultContent: `
           <div style="font-family: 'Inter', Helvetica, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
             <div style="background-color: #f8fafc; padding: 24px; text-align: center; border-bottom: 1px solid #e2e8f0;">
-              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">Iscorre</h1>
+              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">TestLard</h1>
             </div>
             <div style="padding: 32px 24px;">
               <h2 style="color: #0f172a; font-size: 20px; font-weight: 600; margin-top: 0;">Welcome to the Team!</h2>
@@ -423,7 +423,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
               <p style="color: #475569; font-size: 14px; font-style: italic;">For security reasons, please ensure you change your password immediately upon your first login.</p>
             </div>
             <div style="background-color: #f1f5f9; padding: 20px; text-align: center; border-top: 1px solid #e2e8f0;">
-              <p style="color: #64748b; font-size: 13px; margin: 0;">Iscorre Teacher Connect</p>
+              <p style="color: #64748b; font-size: 13px; margin: 0;">TestLard Teacher Connect</p>
             </div>
           </div>
         `,
@@ -437,7 +437,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
         defaultContent: `
           <div style="font-family: 'Inter', Helvetica, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
             <div style="background-color: #f8fafc; padding: 24px; text-align: center; border-bottom: 1px solid #e2e8f0;">
-              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">Iscorre</h1>
+              <h1 style="color: #2563eb; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">TestLard</h1>
             </div>
             <div style="padding: 32px 24px;">
               <h2 style="color: #0f172a; font-size: 20px; font-weight: 600; margin-top: 0;">Congratulations!</h2>
@@ -445,7 +445,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
               <p style="color: #475569; font-size: 16px; line-height: 1.6;">You will receive your portal login details and next steps in a separate communication soon.</p>
             </div>
             <div style="background-color: #f1f5f9; padding: 20px; text-align: center; border-top: 1px solid #e2e8f0;">
-              <p style="color: #64748b; font-size: 13px; margin: 0;">Iscorre Teacher Connect</p>
+              <p style="color: #64748b; font-size: 13px; margin: 0;">TestLard Teacher Connect</p>
             </div>
           </div>
         `,
@@ -459,7 +459,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
         defaultContent: `
           <div style="font-family: 'Inter', Helvetica, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
             <div style="background-color: #f8fafc; padding: 24px; text-align: center; border-bottom: 1px solid #e2e8f0;">
-              <h1 style="color: #64748b; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">Iscorre</h1>
+              <h1 style="color: #64748b; margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">TestLard</h1>
             </div>
             <div style="padding: 32px 24px;">
               <h2 style="color: #0f172a; font-size: 20px; font-weight: 600; margin-top: 0;">Application Update</h2>
@@ -469,7 +469,7 @@ export const EMAIL_TEMPLATE_CATEGORIES = [
               <p style="color: #475569; font-size: 16px; line-height: 1.6;">We encourage you to apply for future openings that match your skill set.</p>
             </div>
             <div style="background-color: #f1f5f9; padding: 20px; text-align: center; border-top: 1px solid #e2e8f0;">
-              <p style="color: #64748b; font-size: 13px; margin: 0;">Iscorre Teacher Connect</p>
+              <p style="color: #64748b; font-size: 13px; margin: 0;">TestLard Teacher Connect</p>
             </div>
           </div>
         `,
