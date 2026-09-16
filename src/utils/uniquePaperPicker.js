@@ -22,6 +22,36 @@ export const shuffle = (items = []) => {
 export const questionId = (question) =>
   String(question?._id || question?.questionId || "");
 
+export const contentKey = (question) => {
+  const text = String(question?.questionText || question?.question || "")
+    .toLowerCase()
+    .replace(/\s+/g, " ")
+    .trim();
+  const passage = String(question?.passage || "")
+    .toLowerCase()
+    .replace(/\s+/g, " ")
+    .trim();
+  return `${passage}||${text}`;
+};
+
+export const dedupeQuestions = (questions = [], blocked = new Set()) => {
+  const seen = new Set(blocked);
+  const unique = [];
+  for (const question of questions) {
+    const id = questionId(question);
+    const key = contentKey(question);
+    const idToken = id ? `id:${id}` : "";
+    const textToken = key.replace(/\|/g, "") ? `text:${key}` : "";
+    if ((idToken && seen.has(idToken)) || (textToken && seen.has(textToken))) {
+      continue;
+    }
+    if (idToken) seen.add(idToken);
+    if (textToken) seen.add(textToken);
+    unique.push(question);
+  }
+  return unique;
+};
+
 export const inferQuestionType = (question) => {
   const raw = String(question?.questionType || question?.type || "").toLowerCase();
   if (raw.includes("true") || raw === "tf") return "true_false";
@@ -77,7 +107,7 @@ const buildUnits = (pool) => {
   }
   for (const [key, questions] of passages.entries()) {
     units.push({
-      id: `passage:${key.slice(0, 40)}`,
+      id: `passage:${key}`,
       questions,
       topic: topicKey(questions[0]),
       difficulty: difficultyKey(questions[0]),
@@ -85,6 +115,49 @@ const buildUnits = (pool) => {
     });
   }
   return units;
+};
+
+const questionsFromUnits = (units = []) =>
+  units.flatMap(unit => unit.questions || []);
+
+const fillQuestionsToNeed = (units, need) => {
+  const exact = pickExactUnits(units, need);
+  if (exact) return questionsFromUnits(exact);
+
+  const greedy = takeRoundRobin(units, need);
+  const picked = questionsFromUnits(greedy);
+  if (picked.length >= need) return picked.slice(0, need);
+
+  const used = new Set(greedy.map(unit => unit.id));
+  const leftover = shuffle(units.filter(unit => !used.has(unit.id)));
+  for (const unit of leftover) {
+    for (const question of unit.questions) {
+      if (picked.length >= need) break;
+      picked.push(question);
+    }
+    if (picked.length >= need) break;
+  }
+  return picked.length >= need ? picked.slice(0, need) : null;
+};
+
+const pickExactUnits = (units, need) => {
+  const want = Math.max(0, Number(need) || 0);
+  if (!want) return [];
+  const ordered = shuffle(units);
+  const best = new Map([[0, []]]);
+  for (let i = 0; i < ordered.length; i += 1) {
+    const size = ordered[i].size;
+    const snapshot = [...best.entries()];
+    for (const [sum, idxs] of snapshot) {
+      const next = sum + size;
+      if (next > want || best.has(next)) continue;
+      best.set(next, [...idxs, i]);
+      if (next === want) {
+        return best.get(want).map(index => ordered[index]);
+      }
+    }
+  }
+  return best.has(want) ? best.get(want).map(index => ordered[index]) : null;
 };
 
 const takeRoundRobin = (units, need) => {
@@ -170,7 +243,7 @@ export const pickQuestionsForSubject = (pool = [], need = 0, options = {}) => {
   const want = Math.max(0, Number(need) || 0);
   if (want <= 0) return [];
 
-  let eligible = [...pool];
+  let eligible = dedupeQuestions(pool, options.blocked || new Set());
   if (options.allowedTypes?.length) {
     eligible = eligible.filter((question) =>
       options.allowedTypes.includes(inferQuestionType(question))
@@ -200,7 +273,9 @@ export const pickQuestionsForSubject = (pool = [], need = 0, options = {}) => {
       if (!slice || slice.length < count) return null;
       picked.push(...slice);
     }
-    return shuffleKeepPassages(picked);
+    const unique = dedupeQuestions(picked);
+    if (unique.length < picked.length) return null;
+    return shuffleKeepPassages(unique);
   }
 
   if (eligible.length < want) return null;
@@ -209,19 +284,10 @@ export const pickQuestionsForSubject = (pool = [], need = 0, options = {}) => {
   const total = units.reduce((sum, unit) => sum + unit.size, 0);
   if (total < want) return null;
 
-  let selected = takeRoundRobin(units, want);
-  selected = rebalanceDifficulty(selected, want);
-
-  const questions = [];
-  for (const unit of selected) {
-    if (questions.length >= want) break;
-    if (questions.length + unit.size <= want) {
-      questions.push(...unit.questions);
-    }
-  }
-
-  if (questions.length < want) return null;
-  return shuffleKeepPassages(questions.slice(0, want));
+  const questions = fillQuestionsToNeed(units, want);
+  const unique = dedupeQuestions(questions || []);
+  if (unique.length < want) return null;
+  return shuffleKeepPassages(unique.slice(0, want));
 };
 
 const shuffleKeepPassages = (questions = []) => {
@@ -273,7 +339,19 @@ export const generateUniqueCompetitivePaper = async ({
   }
 
   const excluded = new Set((excludeQuestionIds || []).map(String));
-  const unused = all.filter((question) => !excluded.has(String(question._id)));
+  const blocked = new Set();
+  for (const question of all) {
+    if (!excluded.has(String(question._id))) continue;
+    const id = questionId(question);
+    const key = contentKey(question);
+    if (id) blocked.add(`id:${id}`);
+    if (key.replace(/\|/g, "")) blocked.add(`text:${key}`);
+  }
+
+  const unused = dedupeQuestions(
+    all.filter((question) => !excluded.has(String(question._id))),
+    blocked
+  );
 
   const groups = Object.fromEntries(subjectOrder.map((name) => [name, []]));
   unused.forEach((question) => {
@@ -311,16 +389,22 @@ export const generateUniqueCompetitivePaper = async ({
   }
 
   const picked = [];
+  const alreadyUsed = new Set(blocked);
   for (const [name, need] of Object.entries(targets)) {
     const selected = pickQuestionsForSubject(groups[name] || [], need, {
       allowedTypes,
       typeCounts: requestedSubject ? typeCounts : null,
+      blocked: alreadyUsed,
     });
     if (!selected || selected.length < need) {
       throw uniquePaperLimitError();
     }
     selected.forEach((question, index) => {
       const mapped = mapQuestion(question);
+      const id = questionId(mapped);
+      const key = contentKey(mapped);
+      if (id) alreadyUsed.add(`id:${id}`);
+      if (key.replace(/\|/g, "")) alreadyUsed.add(`text:${key}`);
       picked.push({
         ...mapped,
         subject: name,
@@ -328,6 +412,11 @@ export const generateUniqueCompetitivePaper = async ({
         subjectNumber: index + 1,
       });
     });
+  }
+
+  const uniquePicked = dedupeQuestions(picked);
+  if (uniquePicked.length !== picked.length) {
+    throw uniquePaperLimitError();
   }
 
   const leftoverBySubject = {};

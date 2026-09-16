@@ -91,7 +91,7 @@
           "A": "B",
           "B": "E",
           "C": "A",
-          "D": ""
+          "D": "F"
         },
         "correct": "C",
         "explanation": "Determine row positions 1 (left) through 7 (right): • Position 1 = G (extreme left). • Position 4 = C (3rd to right of G). • Position 7 = E (2 people between C and E). • Position 5 = B (2nd to left of E). • Positions 2 and 3 = F and D respectively (F immediate left of D). • Position 6 = A (remaining position). Seating layout: G - F - D - C - B - A - E. D is at Position 3; third to the right of D is Position 6, which is occupied by A."
