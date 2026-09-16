@@ -54,7 +54,11 @@ export const detectExamProfile = ({
     ) {
         return "banking";
     }
-    if (/\bjee\s*adv(?:anced)?\b|iit\s*-?\s*jee\s*adv/i.test(haystack)) {
+    if (
+        /\bjee\s*advanc(?:e|ed)?\b|\bjee\s*adv\b|iit\s*-?\s*jee\s*advanc(?:e|ed)?\b/i.test(
+            haystack
+        )
+    ) {
         return "jee_advanced";
     }
     if (/\bneet\b|\baipmt\b|\bmedical\s*entrance\b/i.test(haystack)) {

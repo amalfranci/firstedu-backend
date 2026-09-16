@@ -137,7 +137,7 @@ export const seedJeeExamSyllabus = async () => {
     const doc = {
       examType: "jee_advanced",
       examLabel: "JEE Advanced",
-      paper: "Paper 1 + Paper 2",
+      paper: "Both papers (Paper 1 & Paper 2)",
       subject: "Mathematics",
       year: 2026,
       source: maths.source_note || "jee_advanced/maths_syllabus.json",
@@ -159,7 +159,7 @@ export const seedJeeExamSyllabus = async () => {
     const doc = {
       examType: "jee_advanced",
       examLabel: "JEE Advanced",
-      paper: "Paper 1 + Paper 2",
+      paper: "Both papers (Paper 1 & Paper 2)",
       subject: "Physics",
       year: 2026,
       source: physics.source_note || "jee_advanced/physics/physics_syllabus.json",
@@ -181,7 +181,7 @@ export const seedJeeExamSyllabus = async () => {
     const doc = {
       examType: "jee_advanced",
       examLabel: "JEE Advanced",
-      paper: "Paper 1 + Paper 2",
+      paper: "Both papers (Paper 1 & Paper 2)",
       subject: "Chemistry",
       year: 2026,
       source: chemistry.source_note || "jee_advanced/chemistry/chemistry_syllabus.json",

@@ -14,6 +14,7 @@
 import { readFileSync, existsSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import { getExamSyllabusPackTopics } from "./examSyllabusPack.service.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_ROOT = join(__dirname, "..", "..", "jee_advanced", "physics");
@@ -27,6 +28,8 @@ const PATHS = {
 };
 
 const cache = new Map();
+/** When set, overrides file scoring from ExamSyllabusPack (Mongo). */
+let dbScoringByTopicId = null;
 
 const loadJson = (key) => {
     if (cache.has(key)) return cache.get(key);
@@ -77,6 +80,32 @@ export const loadJeeAdvancedPhysicsNcert = () => loadJson("ncert");
 export const loadJeeAdvancedPhysicsScoring = () => loadJson("scoring");
 export const loadJeeAdvancedPhysicsQuotas = () => loadJson("quotas");
 
+/**
+ * Prefer Mongo ExamSyllabusPack scoring when seeded.
+ * Call after mongoose.connect (scripts / API startup).
+ */
+export const hydrateJeeAdvancedPhysicsScoringFromDb = async () => {
+    try {
+        const topics = await getExamSyllabusPackTopics({
+            examType: "jee_advanced",
+            subject: "Physics",
+        });
+        if (!topics.length) {
+            dbScoringByTopicId = null;
+            return false;
+        }
+        dbScoringByTopicId = new Map(
+            topics
+                .filter((t) => t.topicId && t.scoring)
+                .map((t) => [String(t.topicId), t.scoring])
+        );
+        return dbScoringByTopicId.size > 0;
+    } catch {
+        dbScoringByTopicId = null;
+        return false;
+    }
+};
+
 /** All Advanced physics topics: { topicId, chapter, classLevel, subtopics, scoring, ncert, quotas } */
 export const getJeeAdvancedPhysicsTopics = () => {
     const syllabus = loadJson("syllabus");
@@ -92,9 +121,16 @@ export const getJeeAdvancedPhysicsTopics = () => {
             chapter: String(t.chapter || "").trim(),
             classLevel: String(t.class_level || "").trim(),
             subtopics: Array.isArray(t.subtopics) ? t.subtopics : [],
-            scoring: scoring?.topics?.[id] || null,
+            scoring:
+                (dbScoringByTopicId && dbScoringByTopicId.get(id)) ||
+                scoring?.topics?.[id] ||
+                null,
             ncert: ncert?.topics?.[id] || null,
             quotas: quotas?.topics?.[id] || null,
+            scoringSource:
+                dbScoringByTopicId && dbScoringByTopicId.has(id)
+                    ? "exam_syllabus_pack"
+                    : "file",
         };
     });
 };
@@ -273,7 +309,7 @@ export const inferJeeAdvancedPhysicsTopicsFromSlots = (slots = []) => {
 
 /**
  * Default paper-section mix for one subject one paper (from pattern file).
- * Returns { single, multi, integer, match, total }.
+ * Returns { single, multi, integer, match, paragraph, total, ...meta }.
  */
 export const getAdvancedPhysicsPaperTypeCounts = ({
     paper = 1,
@@ -283,24 +319,38 @@ export const getAdvancedPhysicsPaperTypeCounts = ({
     const key = Number(paper) === 2 ? "Paper_2" : "Paper_1";
     const sec = pattern?.structure_per_subject_per_paper?.[key];
     if (!sec) {
+        const isP2 = Number(paper) === 2;
         return {
             single: Math.max(1, Math.round(4 * scale)),
-            multi: Math.max(0, Math.round(3 * scale)),
+            multi: Math.max(0, Math.round((isP2 ? 4 : 3) * scale)),
             integer: Math.max(0, Math.round(6 * scale)),
-            match: Math.max(0, Math.round(4 * scale)),
-            total: Math.max(1, Math.round(17 * scale)),
+            match: Math.max(0, Math.round((isP2 ? 0 : 3) * scale)),
+            paragraph: Math.max(0, Math.round((isP2 ? 4 : 0) * scale)),
+            total: Math.max(1, Math.round((isP2 ? 18 : 16) * scale)),
+            questionsPerSubject: isP2 ? 18 : 16,
+            paperTotalQuestions: isP2 ? 54 : 48,
+            totalMarks: 180,
         };
     }
-    const single = Math.round((sec.section_1_single_correct?.questions || 4) * scale);
-    const multi = Math.round((sec.section_2_multi_correct?.questions || 3) * scale);
-    const integer = Math.round((sec.section_3_numerical?.questions || 6) * scale);
-    const match = Math.round((sec.section_4_match_list?.questions || 4) * scale);
+    const single = Math.round((sec.section_1_single_correct?.questions || 0) * scale);
+    const multi = Math.round((sec.section_2_multi_correct?.questions || 0) * scale);
+    const integer = Math.round((sec.section_3_numerical?.questions || 0) * scale);
+    const match = Math.round((sec.section_4_match_list?.questions || 0) * scale);
+    const paragraph = Math.round((sec.section_5_paragraph?.questions || 0) * scale);
     return {
         single,
         multi,
         integer,
         match,
-        total: single + multi + integer + match,
+        paragraph,
+        total: single + multi + integer + match + paragraph,
+        questionsPerSubject: Number(sec.questions_per_subject || 0) || undefined,
+        paperTotalQuestions: Number(sec.total_questions || 0) || undefined,
+        totalMarks: Number(sec.total_marks || 0) || undefined,
+        startTime: sec.start_time || undefined,
+        endTime: sec.end_time || undefined,
+        session: sec.session || undefined,
+        formats: Array.isArray(sec.formats) ? sec.formats : undefined,
     };
 };
 

@@ -268,7 +268,6 @@ import {
   listJeeExamSyllabus,
   getJeeExamSyllabusByExam,
 } from '../controllers/jeeExamSyllabus.controller.js';
-
 import {
   getCleanupStatusController,
   runCleanupNowController,
@@ -737,6 +736,10 @@ router.get('/competitive/jee-main/papers', verifyJWT, listJeeMainPapersAdmin);
 router.get('/competitive/jee-main/papers/:id', verifyJWT, getJeeMainPaperAdmin);
 router.get('/competitive/jee-syllabus', verifyJWT, listJeeExamSyllabus);
 router.get('/competitive/jee-syllabus/:examType', verifyJWT, getJeeExamSyllabusByExam);
+
+/* ==================== AI POWERED TEST ====================
+   The whole flow (exam topics, blueprint, topic plan, generation, review)
+   lives in routes/aiPoweredTest.routes.js, mounted at /admin/ai-powered-test. */
 
 /* ==================== AI QUESTION GENERATION ==================== */
 /* RAG + AI generation APIs are commented out. JEE Main papers are served

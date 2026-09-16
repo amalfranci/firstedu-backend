@@ -201,6 +201,7 @@ const {
     getAdvancedPaperTypeCounts,
     loadJeeAdvancedPattern,
     inferJeeAdvancedTopicsFromSlots,
+    hydrateJeeAdvancedMathsScoringFromDb,
 } = await import("../src/services/jeeAdvancedMaths.service.js");
 
 // ---------------------------------------------------------------------------
@@ -428,10 +429,18 @@ async function main() {
     ]);
     phaseStep("0", "Opening mongoose connection…");
     await connectMongo();
+    const hydrated = await hydrateJeeAdvancedMathsScoringFromDb();
+    phaseStep(
+        "0",
+        hydrated
+            ? "Scoring hydrated from ExamSyllabusPack (Mongo)"
+            : "Scoring from file pack (Mongo pack missing — run seed-exam-syllabus-pack)"
+    );
     phaseEnd("0", "ok", {
         topics: allTopics.length,
         targetTopics: TARGET_TOPICS.length,
         dataOk: true,
+        scoringSource: hydrated ? "exam_syllabus_pack" : "file",
     });
 
     let questions = [];

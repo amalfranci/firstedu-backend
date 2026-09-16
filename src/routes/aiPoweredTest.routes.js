@@ -1,0 +1,65 @@
+import { Router } from "express";
+
+import { verifyJWT } from "../middleware/auth.middleware.js";
+import { attachAiPoweredTestExamContext } from "../middleware/aiPoweredTestExamContext.middleware.js";
+import { listAiPoweredTestExamTopics } from "../controllers/aiPoweredTestExamTopics.controller.js";
+import { getAiPoweredTestExamBlueprintController } from "../controllers/aiPoweredTestExamBlueprint.controller.js";
+import {
+  planQuestionBankTopics,
+  generateQuestionBankSuggestions,
+  getQuestionBankGenerationJobStatus,
+  getQuestionBankBackgroundValidation,
+  getPipelineEventsStatus,
+  validateQuestionTopicRelevance,
+  applyAnswerCorrection,
+  logConfirmedQuestions,
+} from "../controllers/aiQuestion.controller.js";
+
+/**
+ * AI Powered Test — one router for the admin bank-building flow, in the order
+ * the screen uses it:
+ *
+ *   exam & subject  → GET  /exam-blueprint, GET /exam-topics
+ *   plan chapters   → POST /topic-plan
+ *   generate        → POST /questions        (async job)
+ *                     GET  /questions/jobs/:jobId
+ *                     GET  /questions/jobs/:jobId/validation
+ *                     GET  /pipeline-events/:workflowLogKey
+ *   review          → POST /topic-relevance
+ *                     POST /answer-correction
+ *   add to bank     → POST /confirmed-questions
+ *
+ * Mounted at /admin/ai-powered-test. Every write route runs through
+ * attachAiPoweredTestExamContext so the selected paper — not the client —
+ * decides difficulty and which question formats are in play.
+ */
+const router = Router();
+
+router.use(verifyJWT);
+
+router.get("/exam-topics", listAiPoweredTestExamTopics);
+router.get("/exam-blueprint", getAiPoweredTestExamBlueprintController);
+
+router.post("/topic-plan", attachAiPoweredTestExamContext, planQuestionBankTopics);
+
+router.post(
+  "/questions",
+  attachAiPoweredTestExamContext,
+  generateQuestionBankSuggestions
+);
+router.get("/questions/jobs/:jobId", getQuestionBankGenerationJobStatus);
+router.get(
+  "/questions/jobs/:jobId/validation",
+  getQuestionBankBackgroundValidation
+);
+router.get("/pipeline-events/:workflowLogKey", getPipelineEventsStatus);
+
+router.post(
+  "/topic-relevance",
+  attachAiPoweredTestExamContext,
+  validateQuestionTopicRelevance
+);
+router.post("/answer-correction", applyAnswerCorrection);
+router.post("/confirmed-questions", logConfirmedQuestions);
+
+export default router;

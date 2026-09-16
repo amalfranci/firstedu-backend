@@ -1,46 +1,114 @@
 {
   "exam": "JEE Advanced",
-  "data_provenance": "Verified against JEE Advanced 2025 official pattern (IIT Kanpur) via Careers360 + esaral + PW reporting, Aug 2026",
-  "important_caveat": "IIT organizer changes exact section counts EVERY year. Do not hardcode these numbers into a generator without a per-year override.",
+  "year": 2026,
+  "cycle": "JEE Advanced 2026",
+  "data_provenance": "Official 2026 two-paper structure: both papers mandatory same day; Paper 1 morning / Paper 2 afternoon. Section counts within each subject aligned to published totals (16/subject Paper 1, 18/subject Paper 2).",
+  "important_caveat": "IIT organizer can change exact section counts every year. Prefer seeded ExamPaperPattern documents when present; this file is the seed source of truth for 2026.",
+  "exam_day": {
+    "date": "2026-05-17",
+    "date_label": "17 May 2026",
+    "mandatory_both_papers": true,
+    "note": "Candidates must appear in both Paper 1 and Paper 2 on the same day to qualify."
+  },
+  "subjects": ["Physics", "Chemistry", "Mathematics"],
   "structure_per_subject_per_paper": {
     "Paper_1": {
-      "section_1_single_correct":   {"questions": 4, "options": 4},
-      "section_2_multi_correct":    {"questions": 3, "options": 4},
-      "section_3_numerical":        {"questions": 6, "options": 0},
-      "section_4_match_list":       {"questions": 4, "options": 4},
-      "subject_total_paper_1": 17
+      "paper_number": 1,
+      "label": "Paper 1",
+      "session": "morning",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "duration_minutes": 180,
+      "total_marks": 180,
+      "questions_per_subject": 16,
+      "total_questions": 48,
+      "overall_difficulty": "Moderate (Mathematics typically toughest)",
+      "section_1_single_correct": { "questions": 4, "options": 4, "type": "single" },
+      "section_2_multi_correct": { "questions": 3, "options": 4, "type": "multi" },
+      "section_3_numerical": { "questions": 6, "options": 0, "type": "integer" },
+      "section_4_match_list": { "questions": 3, "options": 4, "type": "match" },
+      "section_5_paragraph": { "questions": 0, "options": 4, "type": "paragraph" },
+      "subject_total_paper_1": 16,
+      "formats": ["Single Correct", "Multi-Correct", "Numerical", "Match the Column"]
     },
     "Paper_2": {
-      "section_1_single_correct":   {"questions": 4, "options": 4},
-      "section_2_multi_correct":    {"questions": 3, "options": 4},
-      "section_3_numerical":        {"questions": 6, "options": 0},
-      "section_4_match_list":       {"questions": 4, "options": 4},
-      "subject_total_paper_2": 17
+      "paper_number": 2,
+      "label": "Paper 2",
+      "session": "afternoon",
+      "start_time": "14:30",
+      "end_time": "17:30",
+      "duration_minutes": 180,
+      "total_marks": 180,
+      "questions_per_subject": 18,
+      "total_questions": 54,
+      "overall_difficulty": "Moderate to Challenging (Physics typically toughest)",
+      "section_1_single_correct": { "questions": 4, "options": 4, "type": "single" },
+      "section_2_multi_correct": { "questions": 4, "options": 4, "type": "multi" },
+      "section_3_numerical": { "questions": 6, "options": 0, "type": "integer" },
+      "section_4_match_list": { "questions": 0, "options": 4, "type": "match" },
+      "section_5_paragraph": { "questions": 4, "options": 4, "type": "paragraph" },
+      "subject_total_paper_2": 18,
+      "formats": ["Single Correct", "Multi-Correct", "Numerical", "Comprehension/Paragraph"]
     }
   },
   "combined_both_papers_per_subject": {
     "single": 8,
-    "multi": 6,
+    "multi": 7,
     "integer": 12,
-    "match": 8,
+    "match": 3,
+    "paragraph": 4,
     "total": 34
   },
   "all_subjects_table": {
-    "Physics":     {"single": 8, "multi": 6, "integer": 12, "match": 8, "total": 34},
-    "Chemistry":   {"single": 8, "multi": 6, "integer": 12, "match": 8, "total": 34},
-    "Mathematics": {"single": 8, "multi": 6, "integer": 12, "match": 8, "total": 34}
+    "Physics": { "paper1": 16, "paper2": 18, "total": 34 },
+    "Chemistry": { "paper1": 16, "paper2": 18, "total": 34 },
+    "Mathematics": { "paper1": 16, "paper2": 18, "total": 34 }
   },
   "grand_total_across_subjects": {
-    "single": 24,
-    "multi": 18,
-    "integer": 36,
-    "match": 24,
-    "total": 102
+    "paper1": 48,
+    "paper2": 54,
+    "both_papers": 102,
+    "marks_paper1": 180,
+    "marks_paper2": 180,
+    "marks_both": 360
   },
   "option_count_rule": {
     "single": 4,
     "multi": 4,
     "integer": 0,
-    "match": "4 answer options (A-D), each representing a full matching arrangement; underlying List-I has 4 entries, List-II may have 4-5 entries"
-  }
+    "match": "4 answer options (A-D), each a full matching arrangement",
+    "paragraph": "Comprehension / paragraph-linked MCQs (typically 4 options each)"
+  },
+  "quick_comparison": [
+    {
+      "feature": "Exam Time",
+      "paper1": "9:00 AM to 12:00 PM (3 Hours)",
+      "paper2": "2:30 PM to 5:30 PM (3 Hours)"
+    },
+    {
+      "feature": "Total Marks",
+      "paper1": "180 Marks",
+      "paper2": "180 Marks"
+    },
+    {
+      "feature": "Number of Questions",
+      "paper1": "48 Questions (16 per subject)",
+      "paper2": "54 Questions (18 per subject)"
+    },
+    {
+      "feature": "Core Subjects",
+      "paper1": "Physics, Chemistry, Mathematics",
+      "paper2": "Physics, Chemistry, Mathematics"
+    },
+    {
+      "feature": "Question Formats",
+      "paper1": "Single Correct, Multi-Correct, Numerical, Match the Column",
+      "paper2": "Single Correct, Multi-Correct, Numerical, Comprehension/Paragraph"
+    },
+    {
+      "feature": "Overall Difficulty",
+      "paper1": "Moderate (Maths was toughest)",
+      "paper2": "Moderate to Challenging (Physics was toughest)"
+    }
+  ]
 }

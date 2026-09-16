@@ -4,6 +4,8 @@ import dotenv from 'dotenv';
 import { seedAdmin } from '../utils/seedAdmin.js';
 import { seedJeeMainCompetitivePapers } from '../utils/seedJeeMainCompetitivePapers.js';
 import { seedJeeExamSyllabus } from '../utils/seedJeeExamSyllabus.js';
+import { seedExamSyllabusPack } from '../utils/seedExamSyllabusPack.js';
+import { seedExamPaperPattern } from '../utils/seedExamPaperPattern.js';
 import { seedJeeAdvancedCompetitivePapers } from '../utils/seedJeeAdvancedCompetitivePapers.js';
 import { seedNeetCompetitivePapers } from '../utils/seedNeetCompetitivePapers.js';
 import { seedClatCompetitivePapers } from '../utils/seedClatCompetitivePapers.js';
@@ -24,6 +26,8 @@ import SscCglTier2CompetitivePaper from '../models/SscCglTier2CompetitivePaper.j
 import UpscCompetitivePaper from '../models/UpscCompetitivePaper.js';
 import CatCompetitivePaper from '../models/CatCompetitivePaper.js';
 import JeeExamSyllabus from '../models/JeeExamSyllabus.js';
+import ExamSyllabusPack from '../models/ExamSyllabusPack.js';
+import ExamPaperPattern from '../models/ExamPaperPattern.js';
 import ExamDeskUser from '../models/ExamDeskUser.js';
 import { seedExamDeskUsers } from '../utils/seedExamDeskUsers.js';
 // Ensure models are registered at startup (required for StudentSession collection)
@@ -66,6 +70,22 @@ const connectDB = async () => {
       await seedJeeExamSyllabus();
     } else {
       console.log(`ℹ️ JEE syllabus already seeded (${existingSyllabus}). Skipping.`);
+    }
+    const existingSyllabusPacks = await ExamSyllabusPack.countDocuments();
+    if (existingSyllabusPacks === 0) {
+      await seedExamSyllabusPack();
+    } else {
+      console.log(
+        `ℹ️ Exam syllabus packs already seeded (${existingSyllabusPacks}). Skipping.`
+      );
+    }
+    const existingPaperPatterns = await ExamPaperPattern.countDocuments();
+    if (existingPaperPatterns === 0) {
+      await seedExamPaperPattern();
+    } else {
+      console.log(
+        `ℹ️ Exam paper patterns already seeded (${existingPaperPatterns}). Skipping.`
+      );
     }
     const existingAdvanced = await JeeAdvancedCompetitivePaper.countDocuments();
     if (existingAdvanced === 0) {

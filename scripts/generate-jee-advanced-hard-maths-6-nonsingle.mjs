@@ -338,6 +338,7 @@ const {
     buildJeeAdvancedHardArchetypePlanBlock,
     buildJeeAdvancedDesignQualityBlock,
     inferJeeAdvancedTopicsFromSlots,
+    hydrateJeeAdvancedMathsScoringFromDb,
 } = await import("../src/services/jeeAdvancedMaths.service.js");
 const {
     callOpenAIReasoningJson,
@@ -2084,10 +2085,18 @@ async function main() {
         "Connect Mongo for archetype history",
     ]);
     await connectMongo();
+    const hydrated = await hydrateJeeAdvancedMathsScoringFromDb();
+    phaseStep(
+        "0",
+        hydrated
+            ? "Scoring hydrated from ExamSyllabusPack (Mongo)"
+            : "Scoring from file pack (Mongo pack missing)"
+    );
     phaseEnd("0", "ok", {
         topics: allTopics.length,
         high: highTopics.length,
         dataOk: true,
+        scoringSource: hydrated ? "exam_syllabus_pack" : "file",
     });
 
     let planResult = null;

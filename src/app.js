@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import studentRoutes from "./routes/student.routes.js";
 import landingPageRoutes from "./routes/landingPage.routes.js";
 import adminRoutes from "./routes/admin.routes.js";
+import aiPoweredTestRoutes from "./routes/aiPoweredTest.routes.js";
 import teacherRoutes from "./routes/teacher.routes.js";
 import webhooksRoutes from "./routes/webhooks.routes.js";
 import ApiError from "./utils/ApiError.js";
@@ -43,6 +44,7 @@ app.use(express.json({ limit: process.env.JSON_BODY_LIMIT || "2mb" }));
 
 // Routes
 app.use("/user", studentRoutes);
+app.use("/admin/ai-powered-test", aiPoweredTestRoutes);
 app.use("/admin", adminRoutes);
 app.use("/teacher", teacherRoutes);
 app.use("/landing-page", landingPageRoutes);

@@ -29,6 +29,7 @@ import {
     getGenerationJob,
 } from '../services/questionBankGenerationJobStore.js';
 import { getPipelineEvents } from '../utils/pipelineEventStore.js';
+import { lockCountsToPaperFormats } from '../services/aiPoweredTestExamBlueprint.service.js';
 
 /**
  * Generate questions using AI
@@ -165,15 +166,19 @@ const runQuestionBankGenerationJob = async (req, value) => {
             maxSelectableSlots: value.maxSelectableSlots || 0,
         });
 
-        competitiveExamPlan = planResult.plan;
-        inferredCounts = planResult.plan;
-        singleCount = planResult.plan.singleCount;
-        multipleCount = planResult.plan.multipleCount;
-        trueFalseCount = planResult.plan.trueFalseCount;
-        resolvedPassageCount = planResult.plan.passageCount;
-        passageSingleCount = planResult.plan.passageSingleCount;
-        passageMultipleCount = planResult.plan.passageMultipleCount;
-        passageTrueFalseCount = planResult.plan.passageTrueFalseCount;
+        const planCounts = lockCountsToPaperFormats(
+            planResult.plan,
+            req.aiPoweredTestBlueprint
+        );
+        competitiveExamPlan = { ...planResult.plan, ...planCounts };
+        inferredCounts = competitiveExamPlan;
+        singleCount = planCounts.singleCount;
+        multipleCount = planCounts.multipleCount;
+        trueFalseCount = planCounts.trueFalseCount;
+        resolvedPassageCount = planCounts.passageCount;
+        passageSingleCount = planCounts.passageSingleCount;
+        passageMultipleCount = planCounts.passageMultipleCount;
+        passageTrueFalseCount = planCounts.passageTrueFalseCount;
 
         const guessedSelectable = countSelectableFromPlan(planResult.plan);
         const subjectSummary = (planResult.plan.subjects || [])
@@ -386,14 +391,18 @@ export const planQuestionBankTopics = asyncHandler(async (req, res) => {
             categoryPaths: value.categoryPaths || [],
             maxSelectableSlots: value.maxSelectableSlots || 0,
         });
-        competitiveExamPlan = planResult.plan;
-        singleCount = planResult.plan.singleCount;
-        multipleCount = planResult.plan.multipleCount;
-        trueFalseCount = planResult.plan.trueFalseCount;
-        resolvedPassageCount = planResult.plan.passageCount;
-        passageSingleCount = planResult.plan.passageSingleCount;
-        passageMultipleCount = planResult.plan.passageMultipleCount;
-        passageTrueFalseCount = planResult.plan.passageTrueFalseCount;
+        const planCounts = lockCountsToPaperFormats(
+            planResult.plan,
+            req.aiPoweredTestBlueprint
+        );
+        competitiveExamPlan = { ...planResult.plan, ...planCounts };
+        singleCount = planCounts.singleCount;
+        multipleCount = planCounts.multipleCount;
+        trueFalseCount = planCounts.trueFalseCount;
+        resolvedPassageCount = planCounts.passageCount;
+        passageSingleCount = planCounts.passageSingleCount;
+        passageMultipleCount = planCounts.passageMultipleCount;
+        passageTrueFalseCount = planCounts.passageTrueFalseCount;
     }
 
     const result = await aiQuestionService.planQuestionBankTopics({
