@@ -1,15 +1,15 @@
 import { admin as firebaseAdmin } from "../config/firebase.js";
 
-const DEFAULT_WEB_PUSH_LINK = "https://app.iscorre.com/student/notifications";
-const DEFAULT_WEB_PUSH_ICON = "https://app.iscorre.com/vite.svg";
+const DEFAULT_WEB_PUSH_LINK = "https://admin.testladr.com/student/notifications";
+const DEFAULT_WEB_PUSH_ICON = "https://admin.testladr.com/vite.svg";
 
-const getWebPushLink = (data = {}) => {
+const getWebPushLink = (data = {}) => { 
   const explicitLink = data.url || data.link || data.clickUrl || data.click_action;
   if (explicitLink) return String(explicitLink);
 
   const audience = data.audience;
   if (audience === 'teacher') {
-    return process.env.TEACHER_APP_URL || 'https://app.iscorre.com/teacher/dashboard';
+    return process.env.TEACHER_APP_URL || 'https://admin.testladr.com/teacher/dashboard';
   }
 
   const configuredLink =

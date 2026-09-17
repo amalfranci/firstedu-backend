@@ -9,6 +9,10 @@ const DEFAULT_ORIGINS = [
   "http://localhost:3000",
   "http://localhost:5174",
   "http://localhost:5173",
+  "https://testladr.com",
+  "https://www.testladr.com",
+  "https://admin.testladr.com",
+  "https://www.admin.testladr.com",
 ];
 
 /** www and non-www variants of the same host (e.g. iscorre.com ↔ www.iscorre.com). */

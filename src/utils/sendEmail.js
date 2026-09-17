@@ -324,7 +324,7 @@ export const sendTeacherApprovalWithCredentialsEmail = async ({
       throw new ApiError(500, `SMTP configuration incomplete. Missing: ${missingVars.join(", ")}`);
     }
 
-    const loginLink = `${process.env.FRONTEND_URL || 'https://app.iscorre.com'}/teacher/login`;
+    const loginLink = `${process.env.FRONTEND_URL || 'https://admin.testladr.com'}/teacher/login`;
 
     const info = await sendEmailWithTemplate({
       to: toEmail,
