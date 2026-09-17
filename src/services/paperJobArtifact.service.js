@@ -299,6 +299,9 @@ export const persistQuestionRecord = async (jobId, item = {}) => {
           chapter: item.chapter || "",
           questionType: item.type || item.questionType || "single",
           stage: item.stage || "queued",
+          attempt: Number(item.attempt) || 1,
+          answerKey: item.answerKey ?? item.locked?.correctAnswer ?? null,
+          conceptSlot: item.conceptSlot || item.raw?._conceptSlot || "",
           failureReason: item.failureReason || "",
           failureDetail: item.failureDetail || null,
           questionText: String(

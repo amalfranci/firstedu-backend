@@ -19,7 +19,7 @@ const schema = new mongoose.Schema(
     status: {
       type: String,
       enum: ["pending", "running", "completed", "failed"],
-      default: "running",
+      default: "pending",
       index: true,
     },
     phase: { type: String, default: "queued" },
@@ -28,6 +28,8 @@ const schema = new mongoose.Schema(
     errorDetail: { type: mongoose.Schema.Types.Mixed, default: null },
     resumable: { type: Boolean, default: false },
     resumeCount: { type: Number, default: 0 },
+    runner: { type: String, default: "worker" },
+    workerId: { type: String, default: "" },
     logDir: { type: String, default: "" },
     config: { type: mongoose.Schema.Types.Mixed, default: {} },
     plan: { type: mongoose.Schema.Types.Mixed, default: null },

@@ -1,11 +1,13 @@
 /**
  * JEE Advanced paper-generation pipeline used by /admin/ai-powered-test/*.
  *
- * Stages:
- *   1. Plan slots — backend weighted allocator picks N chapters from the seed pool
- *   2. GENERATE  — Gemini picks one hard archetype inside each allocated chapter, then writes
- *   3. VERIFY    — GPT-5.6 Luna (high reasoning): solve, check options, validate key → LOCK
- *   4. EXPAND    — Gemini rewrite explanation with LOCKED KEY (must not change the key)
+ * Stages (per question):
+ *   queued → generating → generated → validating → verified → expanding → expanded
+ *   (drops / failures → dropped | failed)
+ *
+ * Job execution:
+ *   API enqueues (pending) → paper-job-worker claims → generate → Luna → expand
+ *   Set PAPER_JOB_RUNNER=inline to keep the old in-process setImmediate path.
  */
 
 import { inspect } from "util";
@@ -36,6 +38,12 @@ import {
   updateGenerationJob,
   getGenerationJob,
 } from "./questionBankGenerationJobStore.js";
+import {
+  enqueuePaperJob,
+  requeuePaperJob,
+  isInlinePaperRunner,
+  PAPER_JOB_RUNNER,
+} from "./paperJobQueue.service.js";
 import {
   appendPaperLog,
   bindPaperJob,
@@ -371,9 +379,9 @@ const getVerifyTimeoutMs = () =>
     Math.min(
       300_000,
       Number(
-        process.env.OPENAI_VERIFY_TIMEOUT_MS ||
+          process.env.OPENAI_VERIFY_TIMEOUT_MS ||
           process.env.OPENAI_SOLVER_TIMEOUT_MS ||
-          180_000
+          120_000
       )
     )
   );
@@ -568,7 +576,7 @@ const cardBullets = (arr = [], n = 4, width = 80) =>
     .filter((x) => x.length > 3);
 
 /** One compact card per assigned slot. Do not also dump full NCERT essays. */
-const buildWriterTopicCards = (slots = [], count) => {
+const buildWriterTopicCards = (slots = [], count, type = "single") => {
   const batch = (slots || []).slice(0, count);
   if (!batch.length) {
     return "Generate distinct hard Advanced items from the assigned topics.";
@@ -596,10 +604,36 @@ const buildWriterTopicCards = (slots = [], count) => {
       const formulas = cardBullets(ncert.formulas || [], 4, 70);
       const methods = cardBullets(ncert.methods || [], 2, 90);
       const outOfScope = cardBullets(ncert.out_of_scope || [], 2, 80);
+      const lockedConcept =
+        String(s.conceptSlot || s.hardArchetype || "").trim() || null;
       const lines = [
         `${s.topicId || "?"} ${s.chapter || s.topicId || "topic"}`,
-        `Assigned chapter (backend). Choose exactly ONE Preferred hard concept slot. Set conceptSlot to a short slug of that choice.`,
+        `question_type=${type} · difficulty=${s.difficulty || "hard"} · chapter_lock=${s.chapter_lock !== false} · concept_lock=${Boolean(s.concept_lock || lockedConcept)}`,
+        lockedConcept
+          ? `Assigned chapter + concept (backend lock). Primary concept family: ${lockedConcept}. Stay inside this chapter.`
+          : `Assigned chapter (backend). Choose exactly ONE Preferred hard concept slot. Set conceptSlot to a short slug of that choice.`,
       ];
+      if (type === "match") {
+        lines.push(
+          `MATCH LOCK: listI must have exactly ${s.list1_count || 4} items.`,
+          `Every List-I item must belong to the assigned chapter as its PRIMARY concept.`,
+          `No List-I item may have another chapter as its primary concept.`,
+          `At least 3 of 4 List-I items must directly test the assigned concept family${lockedConcept ? ` (${lockedConcept})` : ""}.`,
+          `List-II may be mixed tools/results, but matching must still be chapter-faithful.`
+        );
+      } else if (type === "multiple") {
+        lines.push(
+          `MULTI-CORRECT: prefer concepts with several independent true/false conditions.`
+        );
+      } else if (type === "integer") {
+        lines.push(
+          `INTEGER: prefer computational / non-routine numeric results (unique integer).`
+        );
+      } else {
+        lines.push(
+          `SINGLE: prefer concepts suitable for a non-obvious multi-step derivation.`
+        );
+      }
       if (allowed.length) lines.push(`Allowed:\n${allowed.join("\n")}`);
       if (preferred.length) lines.push(`Preferred:\n${preferred.join("\n")}`);
       else {
@@ -965,10 +999,69 @@ export const planPipelineSlots = (config = {}) => {
   }
 
   const slots = { single: [], multiple: [], integer: [], match: [] };
+  const usedTopicKeys = new Set();
+  const scoreTopicForType = (topic, type) => {
+    const archetypes = topic?.hardArchetypes || topic?.ncert?.hard_archetypes || [];
+    const n = archetypes.length;
+    if (type === "match") return n * 3 + (n >= 3 ? 10 : 0);
+    if (type === "multiple") return n * 2 + 2;
+    if (type === "integer") return 5 + Math.min(n, 3);
+    return 4 + Math.min(n, 4);
+  };
+  const pickPreferredConcept = (topic, type) => {
+    const archetypes = topic?.hardArchetypes || topic?.ncert?.hard_archetypes || [];
+    if (!archetypes.length) return "";
+    // Prefer first archetype; for match prefer longer multi-subproblem families.
+    if (type === "match") {
+      const ranked = [...archetypes].sort(
+        (a, b) => String(b).length - String(a).length
+      );
+      return String(ranked[0] || "").trim();
+    }
+    return String(archetypes[0] || "").trim();
+  };
+  const takeBestTopic = (subject, type, index) => {
+    const pool = (allocated[subject]?.length
+      ? allocated[subject]
+      : pools[subject]?.length
+        ? pools[subject]
+        : topicPool
+    ).filter(Boolean);
+    let best = null;
+    let bestScore = -Infinity;
+    for (const topic of pool) {
+      const key = `${subject}:${topic.topicId}`;
+      if (usedTopicKeys.has(key) && pool.some((t) => !usedTopicKeys.has(`${subject}:${t.topicId}`))) {
+        continue;
+      }
+      const score = scoreTopicForType(topic, type);
+      if (score > bestScore) {
+        bestScore = score;
+        best = topic;
+      }
+    }
+    if (!best) {
+      return pickTopic(subject, index);
+    }
+    usedTopicKeys.add(`${subject}:${best.topicId}`);
+    return best;
+  };
+
   seats.forEach((seat, i) => {
     const type = typeQueue[i] || "single";
-    const topic = pickTopic(seat.subject, seat.index);
-    slots[type].push({ ...topic, subject: seat.subject });
+    const topic = takeBestTopic(seat.subject, type, seat.index);
+    const preferred = pickPreferredConcept(topic, type);
+    slots[type].push({
+      ...topic,
+      subject: seat.subject,
+      questionType: type,
+      difficulty: "hard",
+      conceptSlot: preferred,
+      hardArchetype: preferred || topic.hardArchetype || "",
+      chapter_lock: true,
+      concept_lock: Boolean(preferred),
+      list1_count: type === "match" ? 4 : undefined,
+    });
   });
 
   const leftoverPool = subjects.flatMap((s) => leftovers[s] || []);
@@ -1005,7 +1098,7 @@ const generateBatch = async ({
   if (count <= 0) return [];
   const batchSlots = (slots || []).slice(0, count);
   const subj = normalizeSubject(subject || batchSlots[0]?.subject);
-  const topicCards = buildWriterTopicCards(batchSlots, count);
+  const topicCards = buildWriterTopicCards(batchSlots, count, type);
   const label = writerLabel(subj);
   const typeLine =
     type === "multiple"
@@ -1013,7 +1106,7 @@ const generateBatch = async ({
       : type === "integer"
         ? `Generate exactly ${count} HARD INTEGER / NUMERICAL questions. Answer is an integer. NO options.`
         : type === "match"
-          ? `Generate exactly ${count} HARD MATCH THE FOLLOWING questions.`
+          ? `Generate exactly ${count} HARD MATCH THE FOLLOWING questions with exactly 4 List-I items, all chapter-locked.`
           : `Generate exactly ${count} HARD SINGLE-CORRECT MCQs. Exactly one of A–D is correct.`;
   const schema =
     type === "multiple"
@@ -1021,13 +1114,25 @@ const generateBatch = async ({
       : type === "integer"
         ? `{"questions":[{"questionType":"integer","conceptSlot":"string","chapter":"string","questionText":"string","finalAnswer":42,"answerDisplay":"42","insightOneLiner":"string","difficultySelfScore":85}]}`
         : type === "match"
-          ? `{"questions":[{"questionType":"match","conceptSlot":"string","chapter":"string","questionText":"string","listI":["...","...","...","..."],"listII":["...","...","...","..."],"options":["1-P, 2-Q, 3-R, 4-S","1-Q, 2-P, 3-S, 4-R","1-P, 2-R, 3-Q, 4-S","1-S, 2-Q, 3-P, 4-R"],"correctAnswer":"A","insightOneLiner":"string","difficultySelfScore":85}]}`
+          ? `{"questions":[{"questionType":"match","conceptSlot":"string","chapter":"string","questionText":"string","listI":["...","...","...","..."],"listII":["...","...","...","..."],"options":["1-P, 2-Q, 3-R, 4-S","1-Q, 2-P, 3-S, 4-R","1-P, 2-R, 3-Q, 4-S","1-S, 2-Q, 3-P, 4-R"],"correctAnswer":"A","insightOneLiner":"string","difficultySelfScore":85,"listIChapterIds":["same","same","same","same"]}]}`
           : `{"questions":[{"questionType":"single","conceptSlot":"string","chapter":"string","questionText":"string","options":["A","B","C","D"],"correctLetters":["A"],"insightOneLiner":"string","difficultySelfScore":85}]}`;
+
+  const matchLockBlock =
+    type === "match"
+      ? `
+**MATCH CHAPTER/CONCEPT LOCK (mandatory)**
+- chapter_lock=true, concept_lock=true, list1_count=4.
+- Every List-I item MUST have the assigned chapter as its primary concept.
+- At least 3 of 4 List-I items must directly test the assigned concept family.
+- Do NOT drift into unrelated chapters (e.g. Conic Sections inside Applications of Derivatives).
+- If you cannot build 4 chapter-faithful List-I items, still stay inside the chapter — never borrow another chapter's core idea.
+`
+      : "";
 
   const prompt = `You are a senior JEE Advanced ${label} question setter.
 ${typeLine}
 Exactly 4 options unless integer. Use each assigned chapter exactly. Valid LaTeX/JSON. No explanations or solveSteps.
-
+${matchLockBlock}
 **JEE ADVANCED HARDNESS LOCK**
 - High-difficulty JEE Advanced only; never routine JEE Main drills.
 - Require a non-obvious first step or insight.
@@ -1035,7 +1140,7 @@ Exactly 4 options unless integer. Use each assigned chapter exactly. Valid LaTeX
 - difficultySelfScore target 78–88; never below 70.
 - Avoid unnecessary calculation length.
 - Do not rely on obscure/unlisted concepts; respect out-of-scope.
-- Stay inside the assigned chapter. Choose ONE Preferred hard concept slot for that chapter; set conceptSlot to a short slug of that choice.
+- Stay inside the assigned chapter. If a conceptSlot is provided in TOPIC CONTEXT, use it; otherwise choose ONE Preferred hard concept slot and set conceptSlot to a short slug of that choice.
 - Respect all banned templates.
 - Questions must be independently solvable and verifiable.
 - Avoid near-duplicate structure across questions.
@@ -1085,18 +1190,22 @@ ${schema}`;
       const insight = String(q.insightOneLiner || "").trim();
       const placeholder = insight || String(q.explanation || "").trim();
       const rawSlot = String(q.conceptSlot || "").trim();
+      const lockedSlot = String(slot.conceptSlot || slot.hardArchetype || "").trim();
       const chosenSlot = slugSlot(
         slot.topicId,
-        rawSlot || (slot.hardArchetypes || [])[0] || slot.chapter,
+        lockedSlot || rawSlot || (slot.hardArchetypes || [])[0] || slot.chapter,
         i
       );
       const slotMeta = {
         _conceptSlot: chosenSlot,
-        _chapter: q.chapter || slot.chapter || "",
+        _chapter: slot.chapter || q.chapter || "",
         _topicId: slot.topicId || "",
         _subject: slot.subject || subj,
-        _hardArchetype: chosenSlot || slot.hardArchetype || "",
+        _hardArchetype: lockedSlot || chosenSlot || slot.hardArchetype || "",
         _insight: insight,
+        _assignedDifficulty: slot.difficulty || "hard",
+        _chapterLock: slot.chapter_lock !== false,
+        _conceptLock: Boolean(slot.concept_lock || lockedSlot),
       };
       if (type === "integer") {
         return sanitizeQuestion({
@@ -1235,19 +1344,27 @@ const buildLunaVerifyPrompt = (q, type, opts, proposed) => {
     .join("\n");
 
   return `You are a JEE Advanced verification examiner. Use deep independent reasoning.
-Do NOT judge by "looks correct". PASS only if the question and the proposed key are mathematically correct.
+Do NOT judge by "looks correct". PASS only if ALL gates below are true.
+
+Assigned chapter: ${q._chapter || q.chapter || "(unknown)"}
+Assigned concept family: ${q._conceptSlot || q._hardArchetype || "(unknown)"}
+Assigned difficulty: ${q._assignedDifficulty || q.difficultyTier || "hard"}
+Item type: ${typeLabel}
 
 Follow these steps IN ORDER:
-1. Solve the question independently from first principles. Ignore any claimed answer until step 7.
+1. Solve the question independently from first principles. Ignore any claimed answer until step 8.
 2. Derive the result fully.
 3. Check all assumptions and constraints (domain, limiting cases, units, approximations, uniqueness).
 4. Check EVERY option TRUE/FALSE. For integer items, sanity-check the numeric value against the stem.
 5. Recalculate the final answer from scratch.
 6. Detect ambiguity or multiple valid answers. If the item is ambiguous or ill-posed, FAIL.
-7. Only now compare your derived answer with the PROPOSED KEY.
-8. Return PASS only if the question is well-posed AND your derived answer matches the proposed key AND you are mathematically certain.
-
-Item type: ${typeLabel}
+7. Syllabus / paper-quality gates (REQUIRED):
+   - chapter_match: primary content belongs to the assigned chapter (for MATCH: ≥3 of 4 List-I items must be that chapter; no List-I item may have another chapter as primary).
+   - concept_match: content tests the assigned concept family (for MATCH: ≥3 of 4 List-I items).
+   - difficulty_match: truly hard JEE Advanced (not routine Main drill).
+   - format_valid: stem/options/lists structurally valid for the item type.
+8. Only now compare your derived answer with the PROPOSED KEY.
+9. Return PASS only if mathematical_correct AND proposed_key_match AND chapter_match AND concept_match AND difficulty_match AND format_valid AND not ambiguous.
 
 STEM:
 ${q.questionText}
@@ -1257,7 +1374,7 @@ ${optionBlock}
 PROPOSED KEY (compare only AFTER you independently derived the answer): ${proposed}
 
 Return ONLY JSON:
-{"verdict":"PASS"|"FAIL","derived_answer":${derivedShape},"proposed_key_match":true|false,"option_verdicts":{"A":"true","B":"false","C":"true","D":"false"},"ambiguous":false,"fail_reasons":[],"confidence":0.0,"brief_steps":["..."]}`;
+{"verdict":"PASS"|"FAIL","mathematical_correct":true|false,"derived_answer":${derivedShape},"proposed_key_match":true|false,"chapter_match":true|false,"concept_match":true|false,"difficulty_match":true|false,"format_valid":true|false,"ambiguous":false,"fail_reasons":[],"confidence":0.0,"brief_steps":["..."],"option_verdicts":{"A":"true","B":"false","C":"true","D":"false"}}`;
 };
 
 const shuffleCopy = (arr = []) => {
@@ -1295,6 +1412,20 @@ const dualDrop = (payload = {}) => {
   pipelineLog("VERIFY_DROP", payload);
 };
 
+const isVerifyTimeoutError = (err) =>
+  err?.code === "ECONNABORTED" ||
+  err?.code === "ETIMEDOUT" ||
+  /timeout|ECONNABORTED|ETIMEDOUT/i.test(String(err?.message || err || ""));
+
+const getVerifyTimeoutRetries = () =>
+  Math.max(0, Math.min(3, Number(process.env.JEE_ADV_VERIFY_TIMEOUT_RETRIES || 0)));
+
+const truthyGate = (v, { defaultIfMissing = false } = {}) => {
+  if (v === true) return true;
+  if (v === false) return false;
+  return defaultIfMissing;
+};
+
 const dualLockQuestion = async (q) => {
   const type = String(q._advancedType || q.questionType || "").toLowerCase();
   const opts = (q.options || []).map((o, i) =>
@@ -1308,6 +1439,7 @@ const dualLockQuestion = async (q) => {
     model,
     reasoningEffort: effort,
     conceptSlot: q._conceptSlot,
+    chapter: q._chapter,
     subject: q._subject,
     proposedKey: proposed,
     stemChars: String(q.questionText || "").length,
@@ -1320,19 +1452,53 @@ const dualLockQuestion = async (q) => {
     return null;
   }
 
+  const verifyPrompt = buildLunaVerifyPrompt(q, type, opts, proposed);
+  // Same-request retries are opt-in; default 0 — prefer seat replacement on timeout.
+  const maxAttempts = 1 + getVerifyTimeoutRetries();
   let parsed;
-  try {
-    const raw = await callVerifyJson(
-      buildLunaVerifyPrompt(q, type, opts, proposed)
-    );
-    parsed = parseJsonLoose(raw);
-  } catch (err) {
+  let lastErr;
+  for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+    try {
+      const raw = await callVerifyJson(verifyPrompt);
+      parsed = parseJsonLoose(raw);
+      lastErr = null;
+      break;
+    } catch (err) {
+      lastErr = err;
+      const canRetry =
+        isVerifyTimeoutError(err) && attempt < maxAttempts;
+      if (canRetry) {
+        const backoffMs = Math.min(5000, 1000 * attempt);
+        pipelineLog("OPENAI_VERIFY_RETRY", {
+          type,
+          model,
+          attempt,
+          nextAttempt: attempt + 1,
+          maxAttempts,
+          backoffMs,
+          reason: err?.message || String(err),
+        });
+        await sleep(backoffMs);
+        continue;
+      }
+      dualDrop({
+        type,
+        reason: isVerifyTimeoutError(err)
+          ? "luna_verify_timeout"
+          : "luna_verify_error",
+        error: err?.message || String(err),
+        attempts: attempt,
+      });
+      throw err;
+    }
+  }
+  if (!parsed) {
     dualDrop({
       type,
       reason: "luna_verify_error",
-      error: err?.message || String(err),
+      error: lastErr?.message || "empty_verify_response",
     });
-    throw err;
+    throw lastErr || new Error("empty_verify_response");
   }
 
   const derived = derivedKeyOf(parsed, type);
@@ -1344,32 +1510,71 @@ const dualLockQuestion = async (q) => {
   const ambiguous = parsed?.ambiguous === true;
   const keysOk = keysMatch(type, derived, proposed);
   const confOk = conf == null || conf >= VERIFY_CONF_FLOOR;
+  // New models return explicit gates; older responses without them still allow math-only pass
+  // unless PAPER_LUNA_REQUIRE_SYLLABUS_GATES=1 (default on).
+  const requireSyllabusGates =
+    String(process.env.PAPER_LUNA_REQUIRE_SYLLABUS_GATES || "1") !== "0";
+  const mathOk = truthyGate(parsed?.mathematical_correct, {
+    defaultIfMissing: true,
+  });
+  const chapterOk = truthyGate(parsed?.chapter_match, {
+    defaultIfMissing: !requireSyllabusGates,
+  });
+  const conceptOk = truthyGate(parsed?.concept_match, {
+    defaultIfMissing: !requireSyllabusGates,
+  });
+  const difficultyOk = truthyGate(parsed?.difficulty_match, {
+    defaultIfMissing: !requireSyllabusGates,
+  });
+  const formatOk = truthyGate(parsed?.format_valid, {
+    defaultIfMissing: true,
+  });
   const pass =
     verdict === "PASS" &&
     matchFlag &&
     keysOk &&
     !ambiguous &&
     confOk &&
-    derived != null;
+    derived != null &&
+    mathOk &&
+    chapterOk &&
+    conceptOk &&
+    difficultyOk &&
+    formatOk;
 
   if (!pass) {
     dualDrop({
       type,
       reason: ambiguous
         ? "ambiguous"
-        : verdict !== "PASS"
-          ? "luna_fail"
-          : !keysOk || !matchFlag
-            ? "key_mismatch"
-            : !confOk
-              ? "low_confidence"
-              : "luna_verify_fail",
+        : !chapterOk
+          ? "chapter_mismatch"
+          : !conceptOk
+            ? "concept_mismatch"
+            : !difficultyOk
+              ? "difficulty_mismatch"
+              : !formatOk
+                ? "format_invalid"
+                : !mathOk
+                  ? "math_incorrect"
+                  : verdict !== "PASS"
+                    ? "luna_fail"
+                    : !keysOk || !matchFlag
+                      ? "key_mismatch"
+                      : !confOk
+                        ? "low_confidence"
+                        : "luna_verify_fail",
       verdict,
       derived,
       proposed,
       matchFlag,
       ambiguous,
       confidence: conf,
+      mathematical_correct: mathOk,
+      chapter_match: chapterOk,
+      concept_match: conceptOk,
+      difficulty_match: difficultyOk,
+      format_valid: formatOk,
       failReasons: parsed?.fail_reasons || [],
     });
     return null;
@@ -1389,6 +1594,11 @@ const dualLockQuestion = async (q) => {
     _solverConfidence: conf,
     _verifyBriefSteps: parsed?.brief_steps || [],
     _optionVerdicts: parsed?.option_verdicts || null,
+    _mathematicalCorrect: mathOk,
+    _chapterMatch: chapterOk,
+    _conceptMatch: conceptOk,
+    _difficultyMatch: difficultyOk,
+    _formatValid: formatOk,
   };
 
   if (type === "integer") {
@@ -1575,7 +1785,11 @@ const toUiQuestion = (q, config = {}) => {
 };
 
 const usableQuestion = (item) =>
-  item?.locked && (item.stage === "locked" || item.stage === "expanded");
+  item?.locked &&
+  (item.stage === "locked" ||
+    item.stage === "verified" ||
+    item.stage === "expanded" ||
+    item.stage === "ready_to_confirm");
 
 const itemType = (item) =>
   String(item?.type || item?.locked?._advancedType || item?.raw?._advancedType || "single");
@@ -1584,6 +1798,7 @@ const checkpointItem = async (item) => {
   const ctx = getQuestionContext();
   if (ctx?.calls) item.tokenCalls = [...ctx.calls];
   item.tokenTotals = summarizeCalls(item.tokenCalls || []).byModel;
+  item.attempt = Number(item.attempt) || 1;
   saveQuestionSnapshot(currentJobId, item);
   await persistQuestionRecord(currentJobId, item);
   pipelineLog(
@@ -1593,6 +1808,7 @@ const checkpointItem = async (item) => {
     {
       seq: item.seq,
       stage: item.stage,
+      attempt: item.attempt,
       subject: item.subject,
       topicId: item.topicId,
       chapter: item.chapter,
@@ -1608,7 +1824,7 @@ const checkpointItem = async (item) => {
 };
 
 const failItem = async (item, reason, detail = null) => {
-  item.stage = /drop|disagree|luna_fail|key_mismatch|ambiguous|low_confidence|missing_proposed|luna_verify/i.test(
+  item.stage = /drop|disagree|luna_fail|key_mismatch|ambiguous|low_confidence|missing_proposed|luna_verify|chapter_mismatch|concept_mismatch|difficulty_mismatch|format_invalid|math_incorrect/i.test(
     String(reason || "")
   )
     ? "dropped"
@@ -1621,29 +1837,43 @@ const failItem = async (item, reason, detail = null) => {
 
 const lockAndExpandItem = async (item) => {
   lastDualDrop = null;
+  item.stage = "validating";
+  await checkpointItem(item);
   let locked = null;
   try {
     locked = await dualLockQuestion(item.raw);
   } catch (err) {
-    return failItem(item, "luna_verify_error", err?.message || String(err));
+    return failItem(
+      item,
+      isVerifyTimeoutError(err) ? "luna_verify_timeout" : "luna_verify_error",
+      err?.message || String(err)
+    );
   }
   if (!locked) {
     const reason = lastDualDrop?.reason || "luna_verify_fail";
     return failItem(item, reason, lastDualDrop);
   }
-  item.stage = "locked";
+  // verified = answer-locked by Luna; "locked" kept as alias for older consumers
+  item.stage = "verified";
   item.locked = locked;
+  item.answerKey = locked.correctAnswer ?? locked.answerDisplay ?? null;
   await checkpointItem(item);
 
+  item.stage = "expanding";
+  await checkpointItem(item);
   try {
     const expanded = await expandExplanation(locked);
     item.locked = expanded;
     item.stage =
       expanded?._explanationExpanded || explanationLooksComplete(expanded)
         ? "expanded"
-        : "locked";
+        : "verified";
+    if (item.stage === "expanded") {
+      item.stage = "ready_to_confirm";
+    }
   } catch (err) {
     item.expandError = err?.message || String(err);
+    item.stage = "verified";
     pipelineLog("QUESTION_EXPAND_FAILED", {
       seq: item.seq,
       reason: item.expandError,
@@ -1653,7 +1883,7 @@ const lockAndExpandItem = async (item) => {
   return item;
 };
 
-const processOneSlot = async ({ type, slot, exclude, seq }) => {
+const processOneSlot = async ({ type, slot, exclude, seq, attempt = 1 }) => {
   const subject = normalizeSubject(slot.subject);
   const item = {
     seq,
@@ -1661,7 +1891,9 @@ const processOneSlot = async ({ type, slot, exclude, seq }) => {
     subject,
     topicId: slot.topicId || "",
     chapter: slot.chapter || "",
+    conceptSlot: slot.conceptSlot || slot.hardArchetype || "",
     stage: "queued",
+    attempt,
   };
   return runQuestionContext(item, async () => {
     pipelineLog("QUESTION_START", {
@@ -1670,7 +1902,11 @@ const processOneSlot = async ({ type, slot, exclude, seq }) => {
       subject,
       topicId: item.topicId,
       chapter: item.chapter,
+      conceptSlot: item.conceptSlot,
+      attempt,
     });
+    item.stage = "generating";
+    await checkpointItem(item);
     let generated = null;
     try {
       const part = await generateBatch({
@@ -1706,19 +1942,30 @@ const resumeIncompleteItem = async (item) => {
       topicId: item.topicId,
       type: item.type,
     });
-    if (item.stage === "generated" && item.raw) {
+    if (
+      (item.stage === "generated" || item.stage === "validating") &&
+      item.raw
+    ) {
       return lockAndExpandItem(item);
     }
-    if (item.stage === "locked" && item.locked) {
+    if (
+      (item.stage === "locked" ||
+        item.stage === "verified" ||
+        item.stage === "expanding") &&
+      item.locked
+    ) {
+      item.stage = "expanding";
+      await checkpointItem(item);
       try {
         const expanded = await expandExplanation(item.locked);
         item.locked = expanded;
         item.stage =
           expanded?._explanationExpanded || explanationLooksComplete(expanded)
-            ? "expanded"
-            : "locked";
+            ? "ready_to_confirm"
+            : "verified";
       } catch (err) {
         item.expandError = err?.message || String(err);
+        item.stage = "verified";
       }
       await checkpointItem(item);
       return item;
@@ -1765,7 +2012,13 @@ const fillType = async ({
       exclude.push(String(existing.locked?.questionText || "").slice(0, 180));
       continue;
     }
-    if (existing.stage === "generated" || existing.stage === "locked") {
+    if (
+      existing.stage === "generated" ||
+      existing.stage === "validating" ||
+      existing.stage === "locked" ||
+      existing.stage === "verified" ||
+      existing.stage === "expanding"
+    ) {
       const updated = await resumeIncompleteItem(existing);
       items.push(updated);
       if (usableQuestion(updated)) {
@@ -1789,59 +2042,98 @@ const fillType = async ({
   }
 
   const maxAttempts = Math.max(need * Number(process.env.JEE_ADV_FILL_ROUNDS || 4), need);
+  const concurrency = Math.max(
+    1,
+    Math.min(4, Number(process.env.JEE_ADV_QUESTION_CONCURRENCY || 2))
+  );
   let attempt = 0;
   const usedKeys = new Set(
     kept.map((q) => `${q._subject || ""}:${q._topicId || ""}`)
   );
+
   while (kept.length < need && attempt < maxAttempts) {
-    const { slot, unusedCursor: nextCursor } = nextSlot(
-      pool,
-      unused,
-      unusedCursor,
-      attempt
-    );
-    unusedCursor = nextCursor;
-    const slotKey = `${slot.subject || ""}:${slot.topicId || ""}`;
-    const hasAlt = [...pool, ...unused].some(
-      (s) => s?.topicId && !usedKeys.has(`${s.subject || ""}:${s.topicId}`)
-    );
-    if (slot.topicId && usedKeys.has(slotKey) && hasAlt) {
+    const wave = [];
+    while (
+      wave.length < concurrency &&
+      kept.length + wave.length < need &&
+      attempt < maxAttempts
+    ) {
+      const { slot, unusedCursor: nextCursor } = nextSlot(
+        pool,
+        unused,
+        unusedCursor,
+        attempt
+      );
+      unusedCursor = nextCursor;
+      const slotKey = `${slot.subject || ""}:${slot.topicId || ""}`;
+      const hasAlt = [...pool, ...unused].some(
+        (s) => s?.topicId && !usedKeys.has(`${s.subject || ""}:${s.topicId}`)
+      );
+      if (slot.topicId && usedKeys.has(slotKey) && hasAlt) {
+        attempt += 1;
+        continue;
+      }
+      wave.push({
+        slot,
+        seqNum: seq,
+        attemptIndex: attempt + 1,
+      });
+      seq += 1;
       attempt += 1;
-      continue;
     }
+    if (!wave.length) break;
+
     onProgress?.({
       phase: "generate",
-      message: `${type} Q${kept.length + 1}/${need} · ${slot.topicId || type}`,
+      message: `${type} generating ${wave.length} seat(s) · concurrency=${concurrency}`,
     });
-    const item = await processOneSlot({
-      type,
-      slot,
-      exclude,
-      seq,
-    });
-    seq += 1;
-    items.push(item);
-    if (usableQuestion(item)) {
-      kept.push(item.locked);
-      usedKeys.add(`${item.subject || ""}:${item.topicId || ""}`);
-      exclude.push(String(item.locked?.questionText || "").slice(0, 180));
-      onProgress?.({
-        phase: "locked",
-        message: `${type} locked ${kept.length}/${need} (${item.topicId})`,
-        questions: kept.map((q) => toUiQuestion(q, config)),
-        items,
-        failures,
-      });
-    } else {
-      failures.push(item);
-      onProgress?.({
-        phase: "failed-item",
-        message: `${type} failed: ${item.failureReason || "unknown"}`,
-        items,
-        failures,
-      });
+
+    const waveResults =
+      wave.length === 1
+        ? [
+            await processOneSlot({
+              type,
+              slot: wave[0].slot,
+              exclude,
+              seq: wave[0].seqNum,
+              attempt: wave[0].attemptIndex,
+            }),
+          ]
+        : await Promise.all(
+            wave.map((w) =>
+              processOneSlot({
+                type,
+                slot: w.slot,
+                exclude: [...exclude],
+                seq: w.seqNum,
+                attempt: w.attemptIndex,
+              })
+            )
+          );
+
+    for (const item of waveResults) {
+      items.push(item);
+      if (usableQuestion(item)) {
+        kept.push(item.locked);
+        usedKeys.add(`${item.subject || ""}:${item.topicId || ""}`);
+        exclude.push(String(item.locked?.questionText || "").slice(0, 180));
+        onProgress?.({
+          phase: "locked",
+          message: `${type} locked ${kept.length}/${need} (${item.topicId})`,
+          questions: kept.map((q) => toUiQuestion(q, config)),
+          items,
+          failures,
+        });
+      } else {
+        failures.push(item);
+        onProgress?.({
+          phase: "failed-item",
+          message: `${type} failed: ${item.failureReason || "unknown"}`,
+          items,
+          failures,
+        });
+      }
     }
-    attempt += 1;
   }
   return { kept, items, failures, seq };
 };
@@ -2140,8 +2432,10 @@ export const startAdvancedPaperJob = (config = {}) => {
   bindPaperJob(jobId);
   pipelineLog("JOB_START", {
     jobId,
+    runner: PAPER_JOB_RUNNER,
     config,
     env: {
+      PAPER_JOB_RUNNER,
       GEMINI_HARD_TEXT_MODEL: process.env.GEMINI_HARD_TEXT_MODEL || null,
       GEMINI_REQUEST_TIMEOUT_MS: process.env.GEMINI_REQUEST_TIMEOUT_MS || null,
       JEE_ADV_GEMINI_TIMEOUT_MS: process.env.JEE_ADV_GEMINI_TIMEOUT_MS || null,
@@ -2149,33 +2443,58 @@ export const startAdvancedPaperJob = (config = {}) => {
       OPENAI_VERIFY_MODEL: getVerifyModel(),
       OPENAI_VERIFY_REASONING_EFFORT: getVerifyEffort(),
       OPENAI_VERIFY_TIMEOUT_MS: getVerifyTimeoutMs(),
+      JEE_ADV_VERIFY_TIMEOUT_RETRIES: getVerifyTimeoutRetries(),
+      JEE_ADV_QUESTION_CONCURRENCY: Number(
+        process.env.JEE_ADV_QUESTION_CONCURRENCY || 2
+      ),
       hasGeminiKey: Boolean(process.env.GEMINI_API_KEY),
       hasOpenAiKey: Boolean(process.env.OPENAI_API_KEY),
     },
   });
-  createGenerationJob(jobId, {
-    status: "running",
-    phase: "queued",
-    pipeline: "jee_advanced_luna_verify",
-    config,
-    questions: [],
-    items: [],
-    failures: [],
-    logDir: `temp/paper-jobs/${jobId}`,
-    message: "Queued JEE Advanced generate → Luna verify → expand",
-  });
-  persistJobRecord(jobId, {
-    status: "running",
-    phase: "queued",
-    message: "Queued JEE Advanced generate → Luna verify → expand",
-    config,
-  }).catch(() => {});
-  setImmediate(() => {
-    runJobLoop(jobId, config, { resume: false }).catch((err) => {
-      pipelineLog("JOB_LOOP_CRASH", { error: err });
+
+  if (isInlinePaperRunner()) {
+    createGenerationJob(jobId, {
+      status: "running",
+      phase: "queued",
+      pipeline: "jee_advanced_luna_verify",
+      runner: "inline",
+      config,
+      questions: [],
+      items: [],
+      failures: [],
+      logDir: `temp/paper-jobs/${jobId}`,
+      message: "Queued JEE Advanced generate → Luna verify → expand (inline)",
     });
-  });
+    persistJobRecord(jobId, {
+      status: "running",
+      phase: "queued",
+      message: "Queued JEE Advanced generate → Luna verify → expand (inline)",
+      config,
+      runner: "inline",
+    }).catch(() => {});
+    setImmediate(() => {
+      runJobLoop(jobId, config, { resume: false }).catch((err) => {
+        pipelineLog("JOB_LOOP_CRASH", { error: err });
+      });
+    });
+  } else {
+    enqueuePaperJob(jobId, config);
+  }
   return getGenerationJob(jobId);
+};
+
+/**
+ * Worker entrypoint — claim already happened; run the pipeline loop.
+ */
+export const executePaperJob = async (jobId, config = {}, { resume = false } = {}) => {
+  const job = getGenerationJob(jobId);
+  const cfg = config?.typeCounts || config?.totalQuestions ? config : job?.config || {};
+  const shouldResume =
+    resume ||
+    Boolean(job?.resumable) ||
+    Boolean(job?.items?.length) ||
+    Boolean(job?.plan?.slots);
+  return runJobLoop(jobId, cfg, { resume: shouldResume });
 };
 
 export const resumeAdvancedPaperJob = (jobId) => {
@@ -2186,32 +2505,45 @@ export const resumeAdvancedPaperJob = (jobId) => {
   const status = String(job.status || "").toLowerCase();
   if (status === "completed") return job;
   if (status === "running" && runningJobs.has(jobId)) return job;
+
   pipelineLog("JOB_RESUME", {
     jobId,
+    runner: PAPER_JOB_RUNNER,
     kept: job.questions?.length || 0,
     items: job.items?.length || 0,
     failures: job.failures?.length || 0,
   });
-  updateGenerationJob(jobId, {
-    status: "running",
-    phase: "resume",
-    message: "Resuming from saved questions (tokens already spent are kept)",
-    error: "",
-    resumeCount: (Number(job.resumeCount) || 0) + 1,
-    resumable: false,
-  });
-  persistJobRecord(jobId, {
-    status: "running",
-    phase: "resume",
-    message: "Resuming from saved questions",
-    resumeCount: (Number(job.resumeCount) || 0) + 1,
-    resumable: false,
-  }).catch(() => {});
-  setImmediate(() => {
-    runJobLoop(jobId, job.config || {}, { resume: true }).catch((err) => {
-      pipelineLog("JOB_LOOP_CRASH", { error: err });
+
+  if (isInlinePaperRunner()) {
+    updateGenerationJob(jobId, {
+      status: "running",
+      phase: "resume",
+      runner: "inline",
+      message: "Resuming from saved questions (tokens already spent are kept)",
+      error: "",
+      resumeCount: (Number(job.resumeCount) || 0) + 1,
+      resumable: false,
     });
-  });
+    persistJobRecord(jobId, {
+      status: "running",
+      phase: "resume",
+      message: "Resuming from saved questions",
+      resumeCount: (Number(job.resumeCount) || 0) + 1,
+      resumable: false,
+      runner: "inline",
+    }).catch(() => {});
+    setImmediate(() => {
+      runJobLoop(jobId, job.config || {}, { resume: true }).catch((err) => {
+        pipelineLog("JOB_LOOP_CRASH", { error: err });
+      });
+    });
+  } else {
+    requeuePaperJob(jobId, {
+      resumeCount: (Number(job.resumeCount) || 0) + 1,
+      resumable: true,
+      message: "Re-queued resume for paper worker",
+    });
+  }
   return getGenerationJob(jobId);
 };
 
@@ -2223,4 +2555,5 @@ export default {
   runAdvancedPaperPipeline,
   startAdvancedPaperJob,
   resumeAdvancedPaperJob,
+  executePaperJob,
 };

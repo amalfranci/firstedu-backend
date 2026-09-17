@@ -140,13 +140,102 @@ export const getGenerationJob = (jobId) => {
 };
 
 /**
+ * List jobs from disk (shared across API + worker processes).
+ * @param {{ status?: string|string[], pipeline?: string }} [filter]
+ */
+export const listGenerationJobs = (filter = {}) => {
+    pruneExpiredJobs();
+    const statuses = filter.status
+        ? new Set(
+              (Array.isArray(filter.status) ? filter.status : [filter.status]).map(
+                  (s) => String(s).toLowerCase()
+              )
+          )
+        : null;
+    const pipeline = filter.pipeline ? String(filter.pipeline) : null;
+    const out = [];
+    try {
+        ensureJobDir();
+        for (const file of fs.readdirSync(JOB_DIR)) {
+            if (!file.endsWith(".json")) continue;
+            let job;
+            try {
+                job = JSON.parse(
+                    fs.readFileSync(path.join(JOB_DIR, file), "utf8")
+                );
+            } catch {
+                continue;
+            }
+            if (!job?.jobId) continue;
+            if (statuses && !statuses.has(String(job.status || "").toLowerCase())) {
+                continue;
+            }
+            if (pipeline && String(job.pipeline || "") !== pipeline) continue;
+            jobs.set(job.jobId, job);
+            out.push(job);
+        }
+    } catch {
+        // ignore
+    }
+    out.sort((a, b) => (a.createdAt || 0) - (b.createdAt || 0));
+    return out;
+};
+
+/**
+ * Atomically claim a pending job for a worker (exclusive lock file + status check).
+ */
+export const claimGenerationJob = (jobId, workerId) => {
+    const existing = getGenerationJob(jobId);
+    if (!existing) return null;
+    const status = String(existing.status || "").toLowerCase();
+    if (status !== "pending" && status !== "queued") return null;
+
+    const lockPath = `${jobFilePath(jobId)}.claim`;
+    try {
+        fs.writeFileSync(lockPath, String(workerId || "worker"), { flag: "wx" });
+    } catch {
+        return null;
+    }
+    try {
+        const again = getGenerationJob(jobId);
+        const st = String(again?.status || "").toLowerCase();
+        if (st !== "pending" && st !== "queued") return null;
+        return updateGenerationJob(jobId, {
+            status: "running",
+            phase: "claimed",
+            claimedBy: workerId,
+            workerId,
+            claimedAt: Date.now(),
+            message: `Claimed by worker ${workerId}`,
+            error: "",
+            resumable: Boolean(again?.resumable) || Boolean(again?.items?.length),
+        });
+    } finally {
+        try {
+            fs.unlinkSync(lockPath);
+        } catch {
+            // ignore
+        }
+    }
+};
+
+/**
  * Nodemon / process restarts kill in-flight generation. Jobs left on disk as
  * pending/running can never complete — mark them failed so the UI stops polling
  * forever and shows a clear error instead of a Network Error.
+ *
+ * @param {string} [reason]
+ * @param {{ onlyRunners?: string[] }} [opts] — when set, only fail jobs whose
+ *   `runner` is in this list. API should pass `['inline']` so worker-queued
+ *   paper jobs survive API restarts.
  */
 export const failOrphanedGenerationJobs = (
-    reason = "Server restarted during generation. Resume to continue from locked questions — already spent tokens are kept."
+    reason = "Server restarted during generation. Resume to continue from locked questions — already spent tokens are kept.",
+    opts = {}
 ) => {
+    const onlyRunners = opts.onlyRunners
+        ? new Set(opts.onlyRunners.map((r) => String(r).toLowerCase()))
+        : null;
     let failed = 0;
     try {
         ensureJobDir();
@@ -161,6 +250,10 @@ export const failOrphanedGenerationJobs = (
             }
             const status = String(job?.status || "").toLowerCase();
             if (status !== "pending" && status !== "running" && status !== "queued") {
+                continue;
+            }
+            const runner = String(job?.runner || "inline").toLowerCase();
+            if (onlyRunners && !onlyRunners.has(runner)) {
                 continue;
             }
             const updated = {
@@ -189,9 +282,61 @@ export const failOrphanedGenerationJobs = (
     return failed;
 };
 
+/**
+ * After a paper-worker restart, put interrupted worker jobs back to pending
+ * so they can be claimed again (resume path keeps checkpoints).
+ */
+export const requeueOrphanedWorkerJobs = () => {
+    let requeued = 0;
+    try {
+        ensureJobDir();
+        for (const file of fs.readdirSync(JOB_DIR)) {
+            if (!file.endsWith(".json")) continue;
+            let job;
+            try {
+                job = JSON.parse(
+                    fs.readFileSync(path.join(JOB_DIR, file), "utf8")
+                );
+            } catch {
+                continue;
+            }
+            const status = String(job?.status || "").toLowerCase();
+            const runner = String(job?.runner || "").toLowerCase();
+            if (runner !== "worker") continue;
+            if (status !== "running") continue;
+            const updated = {
+                ...job,
+                status: "pending",
+                phase: "queued",
+                claimedBy: null,
+                claimedAt: null,
+                message: "Re-queued after worker restart (resume from checkpoints)",
+                resumable: true,
+                updatedAt: Date.now(),
+            };
+            if (job?.jobId) {
+                jobs.set(job.jobId, updated);
+                writeJobToDisk(updated);
+                requeued += 1;
+            }
+        }
+    } catch {
+        // non-fatal
+    }
+    if (requeued > 0) {
+        console.warn(
+            `[paper-worker] re-queued ${requeued} interrupted paper job(s)`
+        );
+    }
+    return requeued;
+};
+
 export default {
     createGenerationJob,
     updateGenerationJob,
     getGenerationJob,
+    listGenerationJobs,
+    claimGenerationJob,
     failOrphanedGenerationJobs,
+    requeueOrphanedWorkerJobs,
 };

@@ -28,13 +28,16 @@ const startServer = async () => {
   try {
     await connectDB();
 
-    // Generation runs in-process; a restart kills active work. Fail stale jobs
-    // so the admin UI does not hang polling forever after nodemon reloads.
+    // Generation for paper jobs runs in a dedicated worker by default.
+    // Only fail in-process (inline) jobs on API restart — worker jobs stay pending.
     try {
       const { failOrphanedGenerationJobs } = await import(
         './services/questionBankGenerationJobStore.js'
       );
-      failOrphanedGenerationJobs();
+      failOrphanedGenerationJobs(
+        'API server restarted during in-process generation. Resume to continue from locked questions — already spent tokens are kept.',
+        { onlyRunners: ['inline'] }
+      );
     } catch (err) {
       console.warn(
         '[ai-qb] orphan job cleanup skipped:',

@@ -13,6 +13,7 @@
     "test:all-blockers": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/*.test.js --testTimeout=900000",
     "dev": "nodemon src/server.js",
     "start": "nodemon src/server.js",
+    "worker:paper": "node scripts/paper-job-worker.mjs",
     "seed:jee-main": "node scripts/seed-jee-main-competitive-papers.mjs",
     "seed:jee-syllabus": "node scripts/seed-jee-exam-syllabus.mjs",
     "seed:jee-advanced": "node scripts/seed-jee-advanced-competitive-papers.mjs",
