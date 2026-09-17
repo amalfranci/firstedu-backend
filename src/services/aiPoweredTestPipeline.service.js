@@ -4,8 +4,8 @@
  * Stages:
  *   1. Plan slots — backend weighted allocator picks N chapters from the seed pool
  *   2. GENERATE  — Gemini picks one hard archetype inside each allocated chapter, then writes
- *   3. DUAL-LOCK — A = o4-mini, B = o3-mini / Gemini (stem+options only)
- *   4. EXPAND    — Gemini rewrite explanation with LOCKED KEY
+ *   3. VERIFY    — GPT-5.6 Luna (high reasoning): solve, check options, validate key → LOCK
+ *   4. EXPAND    — Gemini rewrite explanation with LOCKED KEY (must not change the key)
  */
 
 import { inspect } from "util";
@@ -47,6 +47,7 @@ import {
   recordModelUsage,
   runQuestionContext,
   saveQuestionSnapshot,
+  saveGeneratedPaperDraft,
   summarizeCalls,
 } from "./paperJobArtifact.service.js";
 
@@ -338,99 +339,143 @@ const callGeminiJson = async (prompt, { kind = "generate" } = {}) => {
   throw lastErr;
 };
 
-let openaiCircuitOpen = false;
+const getVerifyModel = () =>
+  String(
+    process.env.OPENAI_VERIFY_MODEL ||
+      process.env.OPENAI_SOLVER_MODEL ||
+      "gpt-5.6-luna"
+  ).trim() || "gpt-5.6-luna";
 
-const callSolverJson = async (model, prompt) => {
+const getVerifyEffort = () => {
+  const effort = String(
+    process.env.OPENAI_VERIFY_REASONING_EFFORT || "high"
+  )
+    .trim()
+    .toLowerCase();
+  if (
+    effort === "none" ||
+    effort === "low" ||
+    effort === "medium" ||
+    effort === "high" ||
+    effort === "xhigh" ||
+    effort === "max"
+  ) {
+    return effort;
+  }
+  return "high";
+};
+
+const getVerifyTimeoutMs = () =>
+  Math.max(
+    30_000,
+    Math.min(
+      300_000,
+      Number(
+        process.env.OPENAI_VERIFY_TIMEOUT_MS ||
+          process.env.OPENAI_SOLVER_TIMEOUT_MS ||
+          180_000
+      )
+    )
+  );
+
+const getVerifyMaxTokens = () =>
+  Math.max(
+    4000,
+    Number(
+      process.env.OPENAI_VERIFY_MAX_TOKENS ||
+        process.env.OPENAI_SOLVER_MAX_TOKENS ||
+        16000
+    )
+  );
+
+const VERIFY_CONF_FLOOR = Number(process.env.JEE_ADV_VERIFY_CONF || 0.9);
+
+/** Single-model verify: GPT-5.6 Luna only. No o4/o3 chain, no Gemini solver fallback. */
+const callVerifyJson = async (prompt) => {
   const apiKey = process.env.OPENAI_API_KEY;
-  const timeoutMs = Number(process.env.OPENAI_SOLVER_TIMEOUT_MS || 120_000);
-  if (apiKey && !openaiCircuitOpen && model !== "gemini") {
+  const model = getVerifyModel();
+  const timeoutMs = getVerifyTimeoutMs();
+  const reasoningEffort = getVerifyEffort();
+  const maxCompletionTokens = getVerifyMaxTokens();
+  if (!apiKey) {
+    throw new Error("missing_OPENAI_API_KEY");
+  }
+  lastCallContext = {
+    provider: "openai",
+    model,
+    timeoutMs,
+    reasoningEffort,
+    ...logPromptPayload(prompt),
+  };
+  pipelineLog("OPENAI_VERIFY_REQUEST", {
+    model,
+    timeoutMs,
+    reasoningEffort,
+    maxCompletionTokens,
+    jsonMode: true,
+    ...logPromptPayload(prompt),
+  });
+  const startedAt = Date.now();
+  try {
+    const packed = await callOpenAIReasoningJson({
+      apiKey,
+      prompt,
+      model,
+      reasoningEffort,
+      callWithRetries: async (fn) => fn(),
+      toError: (e) => e,
+      timeoutMs,
+      withUsage: true,
+      disableFallback: true,
+      maxCompletionTokens,
+      developerHint:
+        "Return ONLY valid JSON. No markdown fences. Complete independent solve, option check, recalculation, and key comparison before answering. PASS only if the question and key are mathematically correct.",
+    });
+    const text = packed?.text ?? packed;
+    const usage = {
+      provider: "openai",
+      model: packed?.model || model,
+      kind: "verify",
+      promptTokens: Number(packed?.usage?.promptTokens) || 0,
+      completionTokens: Number(packed?.usage?.completionTokens) || 0,
+      totalTokens: Number(packed?.usage?.totalTokens) || 0,
+      reasoningTokens: Number(packed?.usage?.reasoningTokens) || 0,
+    };
+    recordModelUsage(currentJobId, usage);
+    pipelineLog("OPENAI_VERIFY_RESPONSE", {
+      model: packed?.model || model,
+      elapsedMs: Date.now() - startedAt,
+      timeoutMs,
+      reasoningEffort,
+      responseChars: String(text || "").length,
+      responsePreview: String(text || "").slice(0, 600),
+      tokens: usage,
+    });
+    return text;
+  } catch (err) {
+    const status = err?.response?.status;
+    const elapsedMs = Date.now() - startedAt;
     lastCallContext = {
       provider: "openai",
       model,
       timeoutMs,
-      circuitOpen: openaiCircuitOpen,
+      elapsedMs,
+      status,
+      reasoningEffort,
       ...logPromptPayload(prompt),
     };
-    pipelineLog("OPENAI_SOLVER_REQUEST", {
+    pipelineLog("OPENAI_VERIFY_ERROR", {
       model,
       timeoutMs,
-      reasoningEffort: "medium",
-      jsonMode: true,
+      elapsedMs,
+      status,
+      reasoningEffort,
+      error: err,
+      axiosData: err?.response?.data || null,
       ...logPromptPayload(prompt),
     });
-    const startedAt = Date.now();
-    try {
-      const packed = await callOpenAIReasoningJson({
-        apiKey,
-        prompt,
-        model,
-        reasoningEffort: "medium",
-        callWithRetries: async (fn) => fn(),
-        toError: (e) => e,
-        timeoutMs,
-        withUsage: true,
-      });
-      const text = packed?.text ?? packed;
-      const usage = {
-        provider: "openai",
-        model: packed?.model || model,
-        kind: "solver",
-        promptTokens: Number(packed?.usage?.promptTokens) || 0,
-        completionTokens: Number(packed?.usage?.completionTokens) || 0,
-        totalTokens: Number(packed?.usage?.totalTokens) || 0,
-        reasoningTokens: Number(packed?.usage?.reasoningTokens) || 0,
-      };
-      recordModelUsage(currentJobId, usage);
-      pipelineLog("OPENAI_SOLVER_RESPONSE", {
-        model: packed?.model || model,
-        elapsedMs: Date.now() - startedAt,
-        timeoutMs,
-        responseChars: String(text || "").length,
-        responsePreview: String(text || "").slice(0, 600),
-        tokens: usage,
-      });
-      return text;
-    } catch (err) {
-      const status = err?.response?.status;
-      const msg = String(err?.message || err || "");
-      const elapsedMs = Date.now() - startedAt;
-      lastCallContext = {
-        provider: "openai",
-        model,
-        timeoutMs,
-        elapsedMs,
-        status,
-        ...logPromptPayload(prompt),
-      };
-      pipelineLog("OPENAI_SOLVER_ERROR", {
-        model,
-        timeoutMs,
-        elapsedMs,
-        status,
-        openaiCircuitWillOpen: status === 429 || /429|rate.?limit/i.test(msg),
-        error: err,
-        axiosData: err?.response?.data || null,
-        ...logPromptPayload(prompt),
-      });
-      if (status === 429 || /429|rate.?limit/i.test(msg)) openaiCircuitOpen = true;
-    }
-  } else {
-    pipelineLog("OPENAI_SOLVER_SKIP", {
-      model,
-      hasApiKey: Boolean(apiKey),
-      openaiCircuitOpen,
-      reason: !apiKey
-        ? "missing_OPENAI_API_KEY"
-        : openaiCircuitOpen
-          ? "openai_circuit_open"
-          : model === "gemini"
-            ? "forced_gemini"
-            : "skip",
-    });
+    throw err;
   }
-  return callGeminiJson(`${prompt}\n\nReturn ONLY valid compact JSON.`, {
-    kind: "solver",
-  });
 };
 
 const normalizeSubject = (raw) => {
@@ -631,7 +676,16 @@ const stampTrust = (q) => {
   let needsReview = true;
   let guaranteed = false;
 
-  if (/dual\(/i.test(mode) && q._doubleSolverAgree) {
+  if (
+    (/luna|gpt-5\.6/i.test(mode) || q._verifyPass) &&
+    q._proposedKeyMatch
+  ) {
+    grade = "production_luna";
+    badge = "LUNA-VERIFY";
+    productionReady = true;
+    needsReview = highRisk && Number(q._solverConfidence) < 0.95;
+    guaranteed = true;
+  } else if (/dual\(/i.test(mode) && q._doubleSolverAgree) {
     grade = "production_dual";
     badge = "DUAL-OPENAI";
     productionReady = true;
@@ -731,7 +785,7 @@ export const planPipelineSlots = (config = {}) => {
     typeCounts.integer +
     typeCounts.match;
   const requestedTotal = Math.max(0, Number(config.totalQuestions) || 0);
-  // Keep generate / dual-lock / expand on one agreed count.
+  // Keep generate / Luna verify / expand on one agreed count.
   if (requestedTotal > 0 && typeSum !== requestedTotal) {
     if (typeSum <= 0) {
       typeCounts = { single: requestedTotal, multiple: 0, integer: 0, match: 0 };
@@ -1095,60 +1149,109 @@ ${schema}`;
   return mapped;
 };
 
-const dualCall = async (prompt, { generatorKey = null } = {}) => {
-  const primary = String(process.env.OPENAI_SOLVER_MODEL || "o4-mini").trim();
-  const secondary = String(
-    process.env.OPENAI_SOLVER_MODEL_B || process.env.JEE_ADV_VERIFY_MODEL_B || "o3-mini"
-  ).trim();
-  const aRaw = await callSolverJson(openaiCircuitOpen ? "gemini" : primary, prompt);
-  const a = parseJsonLoose(aRaw);
-  let b = a;
-  let mode = openaiCircuitOpen ? "A-gemini" : `A(${primary})`;
-  let ranB = false;
-  try {
-    const bRaw = await callSolverJson(
-      openaiCircuitOpen ? "gemini" : secondary,
-      prompt
-    );
-    b = parseJsonLoose(bRaw);
-    ranB = true;
-    mode = openaiCircuitOpen
-      ? "A+gemini-B"
-      : `dual(${primary}+${secondary})`;
-  } catch {
-    mode = `${mode}+B-failed`;
-  }
-  return { a, b, mode, ranB, generatorKey };
-};
-
 const solverConfidence = (obj) => {
   const n = Number(obj?.confidence);
   return Number.isFinite(n) ? n : null;
 };
 
-const lockConfidence = (dual) => {
-  const a = solverConfidence(dual?.a);
-  const b = solverConfidence(dual?.b);
-  if (a == null && b == null) return null;
-  if (a == null) return b;
-  if (b == null) return a;
-  return Math.min(a, b);
+const proposedKeyOf = (q, type) => {
+  if (type === "integer") {
+    const n = Number(q.correctAnswer ?? q.finalAnswer);
+    return Number.isFinite(n) ? n : null;
+  }
+  if (type === "match") {
+    const letter = String(q.correctAnswer || "")
+      .trim()
+      .toUpperCase()
+      .match(/[A-D]/);
+    return letter ? letter[0] : null;
+  }
+  return normalizeMultiLetters(q.correctAnswer ?? q.correctLetters);
 };
 
-const CONF_FLOOR = Number(process.env.JEE_ADV_RECOMPUTE_CONF || 0.9);
-
-/** Third Gemini solve only on weak locks. True dual(o4+o3) + high confidence skips. */
-const needsThirdSolve = (q) => {
-  const mode = String(q._lockMode || "");
-  if (!q._doubleSolverAgree) return true;
-  if (!q._ranB) return true;
-  if (/A-only|A\+generator|generator/i.test(mode) && !/dual\(/i.test(mode)) {
-    return true;
+const derivedKeyOf = (obj, type) => {
+  if (!obj || typeof obj !== "object") return null;
+  if (type === "integer") {
+    const n = Number(
+      obj.derived_answer ?? obj.final_answer ?? obj.value ?? obj.answer
+    );
+    return Number.isFinite(n) ? n : null;
   }
-  if (/A\+gemini-B/i.test(mode)) return true;
-  const conf = Number(q._solverConfidence);
-  if (!Number.isFinite(conf) || conf < CONF_FLOOR) return true;
-  return false;
+  if (type === "match") {
+    const letter = String(
+      obj.derived_answer ?? obj.final_answer ?? obj.answer ?? ""
+    )
+      .trim()
+      .toUpperCase()
+      .match(/[A-D]/);
+    return letter ? letter[0] : null;
+  }
+  return normalizeMultiLetters(
+    obj.derived_answer ?? obj.correct_letters ?? obj.final_answer ?? obj.answer
+  );
+};
+
+const keysMatch = (type, derived, proposed) => {
+  if (derived == null || proposed == null) return false;
+  if (type === "integer") {
+    return Math.abs(Number(derived) - Number(proposed)) < 1e-6;
+  }
+  return String(derived) === String(proposed);
+};
+
+const buildLunaVerifyPrompt = (q, type, opts, proposed) => {
+  const typeLabel =
+    type === "multiple"
+      ? "MULTI-CORRECT MCQ (one or more options may be correct)"
+      : type === "integer"
+        ? "INTEGER / NUMERICAL answer"
+        : type === "match"
+          ? "MATCH THE FOLLOWING"
+          : "SINGLE-CORRECT MCQ (exactly one option is correct)";
+  const derivedShape =
+    type === "integer"
+      ? "<number>"
+      : type === "multiple"
+        ? '["A","C"]'
+        : '"A"';
+  const optionBlock = opts.length ? `OPTIONS:\n${opts.join("\n")}` : "";
+  const listBlock = [
+    q.listI?.length
+      ? `List-I:\n${q.listI.map((x, i) => `${i + 1}. ${x}`).join("\n")}`
+      : "",
+    q.listII?.length
+      ? `List-II:\n${q.listII
+          .map((x, i) => `${String.fromCharCode(80 + i)}. ${x}`)
+          .join("\n")}`
+      : "",
+  ]
+    .filter(Boolean)
+    .join("\n");
+
+  return `You are a JEE Advanced verification examiner. Use deep independent reasoning.
+Do NOT judge by "looks correct". PASS only if the question and the proposed key are mathematically correct.
+
+Follow these steps IN ORDER:
+1. Solve the question independently from first principles. Ignore any claimed answer until step 7.
+2. Derive the result fully.
+3. Check all assumptions and constraints (domain, limiting cases, units, approximations, uniqueness).
+4. Check EVERY option TRUE/FALSE. For integer items, sanity-check the numeric value against the stem.
+5. Recalculate the final answer from scratch.
+6. Detect ambiguity or multiple valid answers. If the item is ambiguous or ill-posed, FAIL.
+7. Only now compare your derived answer with the PROPOSED KEY.
+8. Return PASS only if the question is well-posed AND your derived answer matches the proposed key AND you are mathematically certain.
+
+Item type: ${typeLabel}
+
+STEM:
+${q.questionText}
+${listBlock}
+${optionBlock}
+
+PROPOSED KEY (compare only AFTER you independently derived the answer): ${proposed}
+
+Return ONLY JSON:
+{"verdict":"PASS"|"FAIL","derived_answer":${derivedShape},"proposed_key_match":true|false,"option_verdicts":{"A":"true","B":"false","C":"true","D":"false"},"ambiguous":false,"fail_reasons":[],"confidence":0.0,"brief_steps":["..."]}`;
 };
 
 const shuffleCopy = (arr = []) => {
@@ -1172,14 +1275,6 @@ const explanationLooksComplete = (q) => {
   return hasInsight && (hasDerivation || hasSteps) && notPlaceholder;
 };
 
-/** Accept only independent A+B agreement. Never ship A+generator as locked. */
-const pickLockedKey = ({ aKey, bKey, dualMode }) => {
-  if (aKey != null && bKey != null && String(aKey) === String(bKey)) {
-    return { key: aKey, mode: dualMode, agree: true };
-  }
-  return { key: null, mode: dualMode, agree: false };
-};
-
 const SCORE_FLOOR = Number(process.env.JEE_ADV_SCORE_FLOOR || 70);
 
 const passesHardnessScore = (q) => {
@@ -1188,88 +1283,10 @@ const passesHardnessScore = (q) => {
   return score >= SCORE_FLOOR;
 };
 
-const recomputeIntegerIndependent = async (q) => {
-  const stem = String(q.questionText || "");
-  const locked = Number(q.correctAnswer ?? q.finalAnswer);
-  if (!Number.isFinite(locked)) return q;
-  const prompt = `Independent JEE Advanced solver. Solve ONLY this integer problem from scratch.
-Return ONLY JSON: {"final_answer": <number>, "confidence": 0.0-1.0, "brief_steps": ["..."]}
-Do not see any claimed answer. STEM:
-${stem}`;
-  try {
-    const raw = await callSolverJson("gemini", prompt);
-    const obj = parseJsonLoose(raw);
-    const v = Number(obj?.final_answer ?? obj?.value ?? obj?.answer);
-    if (!Number.isFinite(v)) return { ...q, _recomputeOk: false };
-    if (Math.abs(v - locked) < 1e-6) {
-      return stampTrust({
-        ...q,
-        _recomputeOk: true,
-        _recomputeValue: v,
-        _lockMode: `${q._lockMode}+recompute`,
-        _answerCorrectnessGuaranteed: true,
-      });
-    }
-    return {
-      ...q,
-      _recomputeOk: false,
-      _recomputeValue: v,
-      _recomputeMismatch: true,
-      _answerCorrectnessGuaranteed: false,
-    };
-  } catch {
-    return { ...q, _recomputeOk: false, _needsReview: true };
-  }
-};
-
-/** Independent multi/single letter-set recompute — mismatch drops the item. */
-const recomputeMultiIndependent = async (q) => {
-  const stem = String(q.questionText || "");
-  const opts = (q.options || []).map((o, i) =>
-    `${String.fromCharCode(65 + i)}. ${typeof o === "string" ? o : o?.text || o}`
-  );
-  const locked = normalizeMultiLetters(q.correctAnswer);
-  if (!locked) return q;
-  const type = String(q._advancedType || q.questionType || "").toLowerCase();
-  const prompt = `Independent JEE Advanced ${
-    type === "multiple" ? "multi-correct" : "single-correct"
-  } solver. Judge EVERY option TRUE/FALSE from scratch.
-Return ONLY JSON: {"correct_letters": ["A","C"], "confidence": 0.0-1.0}
-STEM:
-${stem}
-OPTIONS:
-${opts.join("\n")}`;
-  try {
-    const raw = await callSolverJson("gemini", prompt);
-    const obj = parseJsonLoose(raw);
-    const got = normalizeMultiLetters(
-      obj?.correct_letters ?? obj?.final_answer ?? obj?.answer
-    );
-    if (got && got === locked) {
-      return stampTrust({
-        ...q,
-        _recomputeOk: true,
-        _recomputeValue: got,
-        _lockMode: `${q._lockMode}+recompute`,
-        _answerCorrectnessGuaranteed: true,
-      });
-    }
-    return {
-      ...q,
-      _recomputeOk: false,
-      _recomputeValue: got,
-      _recomputeMismatch: true,
-      _answerCorrectnessGuaranteed: false,
-    };
-  } catch {
-    return { ...q, _recomputeOk: false, _needsReview: true };
-  }
-};
-
 let lastDualDrop = null;
 const dualDrop = (payload = {}) => {
   lastDualDrop = payload;
-  pipelineLog("DUAL_DROP", payload);
+  pipelineLog("VERIFY_DROP", payload);
 };
 
 const dualLockQuestion = async (q) => {
@@ -1277,202 +1294,114 @@ const dualLockQuestion = async (q) => {
   const opts = (q.options || []).map((o, i) =>
     `${String.fromCharCode(65 + i)}. ${typeof o === "string" ? o : o?.text || o}`
   );
-  pipelineLog("DUAL_LOCK_ITEM", {
+  const proposed = proposedKeyOf(q, type);
+  const model = getVerifyModel();
+  const effort = getVerifyEffort();
+  pipelineLog("LUNA_VERIFY_ITEM", {
     type,
+    model,
+    reasoningEffort: effort,
     conceptSlot: q._conceptSlot,
     subject: q._subject,
-    generatorKey: q.correctAnswer,
+    proposedKey: proposed,
     stemChars: String(q.questionText || "").length,
     stemPreview: String(q.questionText || "").slice(0, 240),
     optionCount: opts.length,
   });
 
-  if (type === "integer") {
-    const prompt = `You are an independent JEE Advanced solver.
-Solve the following INTEGER / NUMERICAL answer question.
-Return ONLY JSON:
-{"final_answer": <integer or exact numeric>, "confidence": 0.0-1.0, "brief_steps": ["step"]}
-
-STEM:
-${q.questionText}`;
-    const dual = await dualCall(prompt, { generatorKey: q.correctAnswer });
-    const num = (obj) => Number(obj?.final_answer ?? obj?.value ?? obj?.answer);
-    const a = num(dual.a);
-    const b = num(dual.b);
-    const gen = Number(q.correctAnswer ?? q.finalAnswer);
-    const numAgree = (x, y) =>
-      Number.isFinite(x) && Number.isFinite(y) && Math.abs(x - y) < 1e-6;
-    let key = null;
-    let mode = dual.mode;
-    // Quality lock: only independent A+B agreement — never A+generator.
-    if (numAgree(a, b)) key = a;
-    if (key == null) {
-      dualDrop({
-        type: "integer",
-        reason: "a_b_disagree",
-        a,
-        b,
-        gen,
-        mode: dual.mode,
-      });
-      return null;
-    }
-    let locked = stampTrust({
-      ...q,
-      correctAnswer: key,
-      finalAnswer: key,
-      answerDisplay: String(key),
-      _dualA: a,
-      _dualB: b,
-      _doubleSolverAgree: true,
-      _stageAAnswerLocked: true,
-      _lockMode: mode,
-      _ranB: dual.ranB,
-      _solverConfidence: lockConfidence(dual),
-    });
-    // Always third-pass recompute integers (script quality bar).
-    pipelineLog("RECOMPUTE", {
-      type: "integer",
-      mode: locked._lockMode,
-      confidence: locked._solverConfidence,
-      ranB: dual.ranB,
-    });
-    locked = await recomputeIntegerIndependent(locked);
-    if (locked._recomputeMismatch) {
-      dualDrop({
-        type: "integer",
-        reason: "recompute_mismatch",
-        locked: key,
-        recomputed: locked._recomputeValue,
-      });
-      return null;
-    }
-    return locked;
+  if (proposed == null || proposed === "") {
+    dualDrop({ type, reason: "missing_proposed_key" });
+    return null;
   }
 
-  if (type === "match") {
-    const prompt = `You are an independent JEE Advanced solver.
-Solve this MATCH THE FOLLOWING. Pick the correct option letter (A/B/C/D).
-Return ONLY JSON:
-{"final_answer": "A"|"B"|"C"|"D", "confidence": 0.0-1.0, "brief_steps": ["..."]}
-
-STEM:
-${q.questionText}
-List-I:
-${(q.listI || []).map((x, i) => `${i + 1}. ${x}`).join("\n")}
-List-II:
-${(q.listII || []).map((x, i) => `${String.fromCharCode(80 + i)}. ${x}`).join("\n")}
-Options:
-${opts.join("\n")}`;
-    const dual = await dualCall(prompt, { generatorKey: q.correctAnswer });
-    const letter = (obj) =>
-      String(obj?.final_answer || obj?.answer || "")
-        .trim()
-        .toUpperCase()
-        .slice(0, 1);
-    const a = letter(dual.a);
-    const b = letter(dual.b);
-    const gen = String(q.correctAnswer || "").trim().toUpperCase().slice(0, 1);
-    const picked = pickLockedKey({
-      aKey: /^[A-D]$/.test(a) ? a : null,
-      bKey: /^[A-D]$/.test(b) ? b : null,
-      dualMode: dual.mode,
-    });
-    if (!picked.agree) {
-      dualDrop({
-        type: "match",
-        reason: "a_b_disagree",
-        a,
-        b,
-        gen,
-        mode: dual.mode,
-      });
-      return null;
-    }
-    return stampTrust({
-      ...q,
-      correctAnswer: picked.key,
-      correctIndex: picked.key.charCodeAt(0) - 65,
-      _dualA: a,
-      _dualB: b,
-      _doubleSolverAgree: a === b,
-      _stageAAnswerLocked: true,
-      _lockMode: picked.mode,
-      _ranB: dual.ranB,
-      _solverConfidence: lockConfidence(dual),
-    });
-  }
-
-  const prompt = `You are an independent JEE Advanced solver.
-This is a ${type === "multiple" ? "MULTI-CORRECT" : "SINGLE-CORRECT"} MCQ${
-    type === "multiple" ? ": one or more options may be correct." : ": exactly one option is correct."
-  }
-Solve from scratch and list EVERY correct option letter.
-Return ONLY JSON:
-{"correct_letters": ["A","C"], "confidence": 0.0-1.0, "brief_steps": ["step"]}
-
-STEM:
-${q.questionText}
-
-OPTIONS:
-${opts.join("\n")}`;
-  const dual = await dualCall(prompt, { generatorKey: q.correctAnswer });
-  const keyOf = (obj) =>
-    normalizeMultiLetters(obj?.correct_letters ?? obj?.final_answer ?? obj?.answer);
-  const a = keyOf(dual.a);
-  const b = keyOf(dual.b);
-  const gen = normalizeMultiLetters(q.correctAnswer);
-  const picked = pickLockedKey({
-    aKey: a,
-    bKey: b,
-    dualMode: dual.mode,
-  });
-  if (!picked.agree) {
+  let parsed;
+  try {
+    const raw = await callVerifyJson(
+      buildLunaVerifyPrompt(q, type, opts, proposed)
+    );
+    parsed = parseJsonLoose(raw);
+  } catch (err) {
     dualDrop({
       type,
-      reason: "a_b_disagree",
-      a,
-      b,
-      gen,
-      mode: dual.mode,
+      reason: "luna_verify_error",
+      error: err?.message || String(err),
+    });
+    throw err;
+  }
+
+  const derived = derivedKeyOf(parsed, type);
+  const verdict = String(parsed?.verdict || "")
+    .trim()
+    .toUpperCase();
+  const conf = solverConfidence(parsed);
+  const matchFlag = parsed?.proposed_key_match === true;
+  const ambiguous = parsed?.ambiguous === true;
+  const keysOk = keysMatch(type, derived, proposed);
+  const confOk = conf == null || conf >= VERIFY_CONF_FLOOR;
+  const pass =
+    verdict === "PASS" &&
+    matchFlag &&
+    keysOk &&
+    !ambiguous &&
+    confOk &&
+    derived != null;
+
+  if (!pass) {
+    dualDrop({
+      type,
+      reason: ambiguous
+        ? "ambiguous"
+        : verdict !== "PASS"
+          ? "luna_fail"
+          : !keysOk || !matchFlag
+            ? "key_mismatch"
+            : !confOk
+              ? "low_confidence"
+              : "luna_verify_fail",
+      verdict,
+      derived,
+      proposed,
+      matchFlag,
+      ambiguous,
+      confidence: conf,
+      failReasons: parsed?.fail_reasons || [],
     });
     return null;
   }
-  const indices = lettersToCorrectIndices(picked.key);
-  let locked = stampTrust({
+
+  const lockMode = `luna(${model}:${effort})`;
+  const base = {
     ...q,
-    correctAnswer: picked.key,
+    _dualA: derived,
+    _dualB: derived,
+    _doubleSolverAgree: true,
+    _stageAAnswerLocked: true,
+    _lockMode: lockMode,
+    _ranB: false,
+    _verifyPass: true,
+    _proposedKeyMatch: true,
+    _solverConfidence: conf,
+    _verifyBriefSteps: parsed?.brief_steps || [],
+    _optionVerdicts: parsed?.option_verdicts || null,
+  };
+
+  if (type === "integer") {
+    return stampTrust({
+      ...base,
+      correctAnswer: derived,
+      finalAnswer: derived,
+      answerDisplay: String(derived),
+    });
+  }
+
+  const letters = String(derived);
+  const indices = lettersToCorrectIndices(letters);
+  return stampTrust({
+    ...base,
+    correctAnswer: letters,
     correctIndices: indices,
     correctIndex: indices[0] ?? 0,
-    _dualA: a,
-    _dualB: b,
-    _doubleSolverAgree: Boolean(a && b && a === b),
-    _stageAAnswerLocked: true,
-    _lockMode: picked.mode,
-    _ranB: dual.ranB,
-    _solverConfidence: lockConfidence(dual),
   });
-  // Mandatory third-pass for multi (script quality); single only when weak/cross-provider.
-  const forceMultiRecompute = type === "multiple";
-  if (forceMultiRecompute || needsThirdSolve(locked)) {
-    pipelineLog("RECOMPUTE", {
-      type,
-      mode: locked._lockMode,
-      confidence: locked._solverConfidence,
-      ranB: dual.ranB,
-    });
-    locked = await recomputeMultiIndependent(locked);
-    if (locked._recomputeMismatch) {
-      dualDrop({
-        type,
-        reason: "recompute_mismatch",
-        locked: picked.key,
-        recomputed: locked._recomputeValue,
-      });
-      return null;
-    }
-  }
-  return locked;
 };
 
 const expandExplanation = async (q) => {
@@ -1506,6 +1435,7 @@ const expandExplanation = async (q) => {
 
   const prompt = `You are writing an official-style JEE Advanced solution (IIT coaching quality).
 The answer key is ALREADY LOCKED — NEVER change the final answer.
+If a derivation would imply a different key, rewrite so it supports the locked key. Do not output a different answer.
 LOCKED KEY: ${lockedKey}
 ${typeRules}
 
@@ -1539,6 +1469,10 @@ Return ONLY JSON:
       _insight: insight || q._insight,
       _solveSteps: Array.isArray(parsed?.solveSteps) ? parsed.solveSteps : q._solveSteps,
       _explanationExpanded: true,
+      correctAnswer: q.correctAnswer,
+      finalAnswer: q.finalAnswer ?? q.correctAnswer,
+      correctIndex: q.correctIndex,
+      correctIndices: q.correctIndices,
     };
   } catch {
     return q;
@@ -1561,7 +1495,11 @@ export const dualLockPipelineQuestions = async (questions = []) => {
     try {
       const locked = await dualLockQuestion(q);
       if (locked) kept.push(locked);
-      else dropped.push({ reason: "dual_disagree", questionText: q.questionText });
+      else
+        dropped.push({
+          reason: lastDualDrop?.reason || "luna_verify_fail",
+          questionText: q.questionText,
+        });
     } catch (err) {
       dropped.push({ reason: err?.message || "lock_error", questionText: q.questionText });
     }
@@ -1664,7 +1602,11 @@ const checkpointItem = async (item) => {
 };
 
 const failItem = async (item, reason, detail = null) => {
-  item.stage = reason === "dual_lock_drop" ? "dropped" : "failed";
+  item.stage = /drop|disagree|luna_fail|key_mismatch|ambiguous|low_confidence|missing_proposed|luna_verify/i.test(
+    String(reason || "")
+  )
+    ? "dropped"
+    : "failed";
   item.failureReason = reason;
   item.failureDetail = detail;
   await checkpointItem(item);
@@ -1677,10 +1619,10 @@ const lockAndExpandItem = async (item) => {
   try {
     locked = await dualLockQuestion(item.raw);
   } catch (err) {
-    return failItem(item, "dual_lock_error", err?.message || String(err));
+    return failItem(item, "luna_verify_error", err?.message || String(err));
   }
   if (!locked) {
-    const reason = lastDualDrop?.reason || "dual_lock_drop";
+    const reason = lastDualDrop?.reason || "luna_verify_fail";
     return failItem(item, reason, lastDualDrop);
   }
   item.stage = "locked";
@@ -2075,6 +2017,14 @@ const applyJobProgress = (jobId, evt) => {
   patch.tokenUsage = readTokenSummary(jobId)?.byModel || {};
   patch.logDir = `temp/paper-jobs/${jobId}`;
   updateGenerationJob(jobId, patch);
+  if (evt.questions) {
+    saveGeneratedPaperDraft(jobId, evt.questions, {
+      status: "temporary",
+      phase: evt.phase,
+      message: evt.message,
+      counts: evt.counts || {},
+    });
+  }
   persistJobRecord(jobId, {
     status: "running",
     phase: evt.phase,
@@ -2130,6 +2080,12 @@ const runJobLoop = async (jobId, config, { resume = false } = {}) => {
       plan: result.plan,
       resumable: false,
     });
+    saveGeneratedPaperDraft(jobId, result.questions, {
+      status: "ready_to_confirm",
+      phase: "done",
+      message: `Done — ${result.counts.total} locked questions`,
+      counts: result.counts,
+    });
   } catch (err) {
     const errorDetail = serializeError(err);
     const payload = err?.pipeline || lastCallContext;
@@ -2184,12 +2140,9 @@ export const startAdvancedPaperJob = (config = {}) => {
       GEMINI_REQUEST_TIMEOUT_MS: process.env.GEMINI_REQUEST_TIMEOUT_MS || null,
       JEE_ADV_GEMINI_TIMEOUT_MS: process.env.JEE_ADV_GEMINI_TIMEOUT_MS || null,
       pipelineGeminiTimeoutMs: getGeminiTimeoutMs("generate"),
-      OPENAI_SOLVER_MODEL: process.env.OPENAI_SOLVER_MODEL || "o4-mini",
-      OPENAI_SOLVER_MODEL_B:
-        process.env.OPENAI_SOLVER_MODEL_B ||
-        process.env.JEE_ADV_VERIFY_MODEL_B ||
-        "o3-mini",
-      OPENAI_SOLVER_TIMEOUT_MS: process.env.OPENAI_SOLVER_TIMEOUT_MS || null,
+      OPENAI_VERIFY_MODEL: getVerifyModel(),
+      OPENAI_VERIFY_REASONING_EFFORT: getVerifyEffort(),
+      OPENAI_VERIFY_TIMEOUT_MS: getVerifyTimeoutMs(),
       hasGeminiKey: Boolean(process.env.GEMINI_API_KEY),
       hasOpenAiKey: Boolean(process.env.OPENAI_API_KEY),
     },
@@ -2197,18 +2150,18 @@ export const startAdvancedPaperJob = (config = {}) => {
   createGenerationJob(jobId, {
     status: "running",
     phase: "queued",
-    pipeline: "jee_advanced_dual_lock",
+    pipeline: "jee_advanced_luna_verify",
     config,
     questions: [],
     items: [],
     failures: [],
     logDir: `temp/paper-jobs/${jobId}`,
-    message: "Queued JEE Advanced generate → dual-lock → expand",
+    message: "Queued JEE Advanced generate → Luna verify → expand",
   });
   persistJobRecord(jobId, {
     status: "running",
     phase: "queued",
-    message: "Queued JEE Advanced generate → dual-lock → expand",
+    message: "Queued JEE Advanced generate → Luna verify → expand",
     config,
   }).catch(() => {});
   setImmediate(() => {

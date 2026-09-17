@@ -3,6 +3,7 @@
  *   temp/paper-jobs/{jobId}/pipeline.jsonl   — every event
  *   temp/paper-jobs/{jobId}/questions/*.json — stage snapshots
  *   temp/paper-jobs/{jobId}/tokens.json      — running token totals
+ *   temp/paper-jobs/{jobId}/generated-paper.json — rolling Q+A+explanation draft
  *   MongoDB ai_paper_generation_jobs / ai_paper_generation_questions
  */
 
@@ -190,6 +191,20 @@ export const saveQuestionSnapshot = (jobId, item = {}) => {
     jobId,
     ...item,
     tokenTotals: summarizeCalls(item.tokenCalls || []).total,
+  });
+};
+
+/** Rolling full-paper draft. Temporary until the user confirms/saves the bank. */
+export const saveGeneratedPaperDraft = (jobId, questions = [], extra = {}) => {
+  if (!jobId) return;
+  bindPaperJob(jobId);
+  writeJson(join(jobDir(jobId), "generated-paper.json"), {
+    ts: new Date().toISOString(),
+    jobId,
+    status: extra.status || "temporary",
+    count: Array.isArray(questions) ? questions.length : 0,
+    questions: questions || [],
+    ...extra,
   });
 };
 

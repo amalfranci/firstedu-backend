@@ -56,7 +56,7 @@ export const generateExamQuestions = asyncHandler(async (req, res) => {
 
 /**
  * POST /admin/ai-powered-test/questions/dual-lock
- * Dual-lock A (o4-mini) + B (o3-mini / Gemini) on raw questions.
+ * GPT-5.6 Luna deep verify (solve + option check + key check) on raw questions.
  */
 export const dualLockExamQuestions = asyncHandler(async (req, res) => {
   const questions = req.body?.questions;
@@ -66,7 +66,7 @@ export const dualLockExamQuestions = asyncHandler(async (req, res) => {
   const result = await dualLockPipelineQuestions(questions);
   return res
     .status(200)
-    .json(ApiResponse.success(result, "Dual-lock complete"));
+    .json(ApiResponse.success(result, "Luna verify complete"));
 });
 
 /**
@@ -86,7 +86,7 @@ export const expandExamQuestions = asyncHandler(async (req, res) => {
 
 /**
  * POST /admin/ai-powered-test/questions
- * Start full pipeline job: plan → generate → dual-lock → expand.
+ * Start full pipeline job: plan → generate → Luna verify → expand.
  */
 export const startExamQuestionJob = asyncHandler(async (req, res) => {
   const config = { ...(req.body?.config || req.body || {}) };

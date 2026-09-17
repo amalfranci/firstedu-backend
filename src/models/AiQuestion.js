@@ -32,7 +32,7 @@ const aiQuestionSchema = new mongoose.Schema(
     imageUrl: { type: String, trim: true, default: null },
     questionType: {
       type: String,
-      enum: ["single", "multiple", "true_false", "connected"],
+      enum: ["single", "multiple", "true_false", "connected", "integer"],
       default: "single",
     },
     options: [optionSchema],

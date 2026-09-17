@@ -118,6 +118,14 @@ const validateQuestionInput = (q, i) => {
   }
 
   validateQuestionOptions(q.questionType, q.options);
+  if (q.questionType === "integer") {
+    if (q.correctAnswer === undefined || q.correctAnswer === null || String(q.correctAnswer).trim() === "") {
+      throw new ApiError(
+        400,
+        `Question ${i + 1}: numerical questions require a correct answer`
+      );
+    }
+  }
   if (!String(q.explanation || "").trim()) {
     throw new ApiError(400, `Question ${i + 1}: explanation is required`);
   }

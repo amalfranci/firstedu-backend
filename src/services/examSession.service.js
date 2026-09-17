@@ -1991,6 +1991,16 @@ const checkAnswerCorrectness = (question, studentAnswer) => {
     case "true_false":
       return String(resolvedStudent).toLowerCase() === String(resolvedCorrect).toLowerCase();
 
+    case "integer": {
+      const studentRaw = String(studentAnswer ?? "").trim();
+      const correctRaw = String(correctAnswer ?? "").trim();
+      if (!studentRaw || !correctRaw) return false;
+      if (studentRaw === correctRaw) return true;
+      const studentNum = Number(studentRaw);
+      const correctNum = Number(correctRaw);
+      return Number.isFinite(studentNum) && Number.isFinite(correctNum) && studentNum === correctNum;
+    }
+
     default:
       return false;
   }

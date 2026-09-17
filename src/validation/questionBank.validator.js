@@ -69,7 +69,7 @@ const questionItemSchema = Joi.object({
     otherwise: Joi.string().required().trim(),
   }),
   questionType: Joi.string()
-    .valid("single", "multiple", "true_false", "connected")
+    .valid("single", "multiple", "true_false", "connected", "integer")
     .default("single"),
   /** Long reading text for `connected` (required unless legacy `passage` is sent). */
   paragraph: Joi.string().trim().allow("").optional(),
@@ -77,27 +77,45 @@ const questionItemSchema = Joi.object({
   title: Joi.string().trim().allow("").optional(),
   imageUrl: Joi.array().items(Joi.string().trim().uri().allow(null, "")).optional(),
   options: Joi.when("questionType", {
-    is: Joi.string().valid("single", "multiple"),
-    then: Joi.array().items(optionSchema).min(2).required(),
-    otherwise: Joi.when("questionType", {
-      is: "true_false",
-      then: Joi.array().items(optionSchema).length(2).optional(),
-      otherwise: Joi.optional(),
-    }),
+    switch: [
+      {
+        is: Joi.string().valid("single", "multiple"),
+        then: Joi.array().items(optionSchema).min(2).required(),
+      },
+      {
+        is: "true_false",
+        then: Joi.array().items(optionSchema).length(2).optional(),
+      },
+      {
+        is: "integer",
+        then: Joi.array().items(optionSchema).optional(),
+      },
+    ],
+    otherwise: Joi.optional(),
   }),
   correctAnswer: Joi.when("questionType", {
-    is: "single",
-    then: Joi.alternatives().try(Joi.string(), Joi.number()).required(),
-    otherwise: Joi.when("questionType", {
-      is: "multiple",
-      then: Joi.array()
-        .items(Joi.alternatives().try(Joi.string(), Joi.number()))
-        .min(1)
-        .required(),
-      is: "true_false",
-      then: Joi.boolean().required(),
-      otherwise: Joi.optional().allow(null),
-    }),
+    switch: [
+      {
+        is: "single",
+        then: Joi.alternatives().try(Joi.string(), Joi.number()).required(),
+      },
+      {
+        is: "integer",
+        then: Joi.alternatives().try(Joi.string(), Joi.number()).required(),
+      },
+      {
+        is: "multiple",
+        then: Joi.array()
+          .items(Joi.alternatives().try(Joi.string(), Joi.number()))
+          .min(1)
+          .required(),
+      },
+      {
+        is: "true_false",
+        then: Joi.boolean().required(),
+      },
+    ],
+    otherwise: Joi.optional().allow(null),
   }),
   explanation: Joi.string().when("questionType", {
     is: "connected",

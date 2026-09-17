@@ -30,7 +30,7 @@
       "priority": "high",
       "cluster": "mechanics",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "P04": {
       "weight": 0.55,
@@ -79,7 +79,7 @@
       "priority": "high",
       "cluster": "thermal",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "P11": {
       "weight": 0.84,
@@ -114,7 +114,7 @@
       "priority": "high",
       "cluster": "electro",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "P16": {
       "weight": 0.3,
@@ -142,7 +142,7 @@
       "priority": "high",
       "cluster": "modern",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "M01": {
       "weight": 0.5,
@@ -156,7 +156,7 @@
       "priority": "high",
       "cluster": "algebra",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "M03": {
       "weight": 0.5,
@@ -198,7 +198,7 @@
       "priority": "high",
       "cluster": "probability",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "M09": {
       "weight": 0.32,
@@ -233,7 +233,7 @@
       "priority": "high",
       "cluster": "geometry",
       "hardSlotCount": 6,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "M14": {
       "weight": 0.8,
@@ -254,7 +254,7 @@
       "priority": "high",
       "cluster": "calculus",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "M17": {
       "weight": 0.86,

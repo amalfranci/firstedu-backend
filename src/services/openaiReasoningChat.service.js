@@ -18,8 +18,8 @@ const OPENAI_CHAT_URL = "https://api.openai.com/v1/chat/completions";
 
 /**
  * Solver timeout. Default is fail-fast (45s) for short Main/UI calls.
- * Hard JEE Advanced multi-concept dual-lock legitimately needs 2–3 min on
- * o4-mini/o3-mini — scripts set OPENAI_SOLVER_TIMEOUT_MS accordingly.
+ * Hard JEE Advanced Luna verify can take 1–3 min at high reasoning_effort.
+ * Paper pipeline sets OPENAI_VERIFY_TIMEOUT_MS (falls back to OPENAI_SOLVER_TIMEOUT_MS).
  * Cap 300s so a stuck call cannot hang forever.
  */
 export const getOpenAISolverTimeoutMs = () =>
@@ -31,12 +31,23 @@ export const getOpenAISolverTimeoutMs = () =>
         )
     );
 
+const ALLOWED_REASONING_EFFORT = new Set([
+    "none",
+    "low",
+    "medium",
+    "high",
+    "xhigh",
+    "max",
+]);
+
 export const buildOpenAIChatBody = ({
     model,
     prompt,
     temperature = 0.2,
     reasoningEffort,
     jsonMode = false,
+    maxCompletionTokens,
+    developerHint,
 }) => {
     const reasoning = isOpenAIReasoningModel(model);
     const effort = String(reasoningEffort || "medium").toLowerCase();
@@ -44,16 +55,20 @@ export const buildOpenAIChatBody = ({
 
     if (reasoning) {
         body.max_completion_tokens = Number(
-            process.env.OPENAI_SOLVER_MAX_TOKENS || 8000
+            maxCompletionTokens ||
+                process.env.OPENAI_SOLVER_MAX_TOKENS ||
+                8000
         );
-        if (effort === "low" || effort === "medium" || effort === "high") {
+        if (ALLOWED_REASONING_EFFORT.has(effort)) {
             body.reasoning_effort = effort;
         }
-        const developerHint = jsonMode
-            ? "Return ONLY valid JSON. No markdown fences, no commentary. Do not re-evaluate or self-correct mid-answer."
-            : "Follow the user instructions exactly. Be concise.";
+        const hint =
+            developerHint ||
+            (jsonMode
+                ? "Return ONLY valid JSON. No markdown fences, no commentary. Do not re-evaluate or self-correct mid-answer."
+                : "Follow the user instructions exactly. Be concise.");
         body.messages = [
-            { role: "developer", content: developerHint },
+            { role: "developer", content: hint },
             { role: "user", content: String(prompt || "") },
         ];
     } else {
@@ -114,15 +129,19 @@ export const callOpenAIReasoningJson = async ({
     toError,
     timeoutMs,
     withUsage = false,
+    disableFallback = false,
+    maxCompletionTokens,
+    developerHint,
 }) => {
     if (!apiKey) {
         throw new ApiError(500, "OpenAI API key is not configured (OPENAI_API_KEY)");
     }
     const effort = String(reasoningEffort || "medium").toLowerCase();
-    const primary = String(model || "o4-mini").trim();
-    const tryModels = isOpenAIReasoningModel(primary)
-        ? resolveSolverFallbackChain(primary)
-        : [primary];
+    const primary = String(model || "gpt-5.6-luna").trim();
+    const tryModels =
+        disableFallback || !isOpenAIReasoningModel(primary)
+            ? [primary]
+            : resolveSolverFallbackChain(primary);
     const timeout = timeoutMs || getOpenAISolverTimeoutMs();
 
     let lastError = null;
@@ -134,6 +153,8 @@ export const callOpenAIReasoningJson = async ({
                 temperature: 0,
                 reasoningEffort: effort,
                 jsonMode: true,
+                maxCompletionTokens,
+                developerHint,
             });
             const response = await callWithRetries(() =>
                 postChat(apiKey, body, timeout)
@@ -167,7 +188,9 @@ export const callOpenAIReasoningJson = async ({
                     const fallbackBody = {
                         model: candidate,
                         max_completion_tokens: Number(
-                            process.env.OPENAI_SOLVER_MAX_TOKENS || 8000
+                            maxCompletionTokens ||
+                                process.env.OPENAI_SOLVER_MAX_TOKENS ||
+                                8000
                         ),
                         messages: [
                             {
@@ -178,9 +201,8 @@ export const callOpenAIReasoningJson = async ({
                     };
                     if (
                         isOpenAIReasoningModel(candidate) &&
-                        (effort === "low" ||
-                            effort === "medium" ||
-                            effort === "high")
+                        ALLOWED_REASONING_EFFORT.has(effort) &&
+                        effort !== "none"
                     ) {
                         fallbackBody.reasoning_effort = effort;
                     } else if (!isOpenAIReasoningModel(candidate)) {
@@ -204,6 +226,7 @@ export const callOpenAIReasoningJson = async ({
                         model: candidate,
                         prompt,
                         jsonMode: true,
+                        maxCompletionTokens,
                     });
                     delete noEffort.reasoning_effort;
                     const response = await callWithRetries(() =>
