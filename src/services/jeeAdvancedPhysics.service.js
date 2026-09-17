@@ -573,12 +573,12 @@ const topicNcertSection = (t, { compact = false } = {}) => {
     }
     if (d.hard_archetypes?.length) {
         parts.push(
-            `**HARD ARCHETYPES (prefer as main ask):**\n${bullets(d.hard_archetypes)}`
+            `**HARD ARCHETYPES (prefer as main ask):**\n${bullets(d.hard_archetypes, compact ? 3 : 0)}`
         );
     }
     if (d.banned_easy_templates?.length) {
         parts.push(
-            `**BANNED EASY TEMPLATES (never main ask for Advanced hard):**\n${bullets(d.banned_easy_templates)}`
+            `**BANNED EASY TEMPLATES (never main ask for Advanced hard):**\n${bullets(d.banned_easy_templates, compact ? 3 : 0)}`
         );
     }
     return parts.join("\n");
@@ -630,6 +630,8 @@ export const buildJeeAdvancedPhysicsNcertWriterBlock = ({
     examProfile = "",
     topics = [],
     slots = [],
+    compact = false,
+    includeDesignQuality = true,
 } = {}) => {
     if (!isAdvancedProfile(examProfile)) return "";
     if (subject && !isPhysicsSubject(subject)) return "";
@@ -641,26 +643,32 @@ export const buildJeeAdvancedPhysicsNcertWriterBlock = ({
     if (!matched.length && slots?.length) {
         matched = inferJeeAdvancedPhysicsTopicsFromSlots(slots);
     }
-    if (!matched.length) {
+    if (!matched.length && !compact && !topics?.length) {
         // Fallback: high-relevance pack so writer still has hard guidance
         matched = getHighRelevanceAdvancedPhysicsTopics().slice(0, 6);
     }
     if (!matched.length) return "";
 
-    return `
-**JEE ADVANCED NCERT/TOPIC CONTEXT — AUTHORITATIVE (file-backed, not model memory):**
-${loadJson("ncert")?.schema_note || ""}
-Rules (priority order):
+    const design =
+        includeDesignQuality
+            ? `\n${buildJeeAdvancedPhysicsDesignQualityBlock({ examProfile: "jee_advanced", subject })}\n`
+            : "";
+    const rules = compact
+        ? `Use listed concepts/formulas only. Do not require OUT OF SCOPE. Prefer hard archetypes; never use banned easy templates as the main ask.`
+        : `Rules (priority order):
 1. Every question MUST be solvable with listed concepts/formulas/methods only.
 2. Techniques under OUT OF SCOPE must NOT be required.
 3. Prefer HARD ARCHETYPES; never use BANNED EASY TEMPLATES as the main ask.
 4. Advanced depth = multi-condition stem + ≥2 technique fusion + non-telegraphed setup — not Main-level one-liners.
 5. Build distractors from listed traps.
-6. Design quality: hidden insight first; explanations must fully derive (see DESIGN QUALITY block).
+6. Design quality: hidden insight first; explanations must fully derive (see DESIGN QUALITY block).`;
 
-${buildJeeAdvancedPhysicsDesignQualityBlock({ examProfile: "jee_advanced", subject })}
-
-${matched.map((t) => topicNcertSection(t)).join("\n\n")}
+    return `
+**JEE ADVANCED NCERT/TOPIC CONTEXT — AUTHORITATIVE (file-backed, not model memory):**
+${compact ? "" : loadJson("ncert")?.schema_note || ""}
+${rules}
+${design}
+${matched.map((t) => topicNcertSection(t, { compact })).join("\n\n")}
 `;
 };
 

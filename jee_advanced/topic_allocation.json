@@ -1,0 +1,533 @@
+{
+  "version": 1,
+  "note": "Update weights/priority/lastUsedPaper here without code changes. Allocator never calls Gemini.",
+  "weights": {
+    "historical": 1,
+    "priorityHigh": 0.25,
+    "priorityMedium": 0.1,
+    "hardSlot": 0.04,
+    "freshness": 0.15,
+    "recentUsed": 0.35,
+    "sameCluster": 0.22
+  },
+  "topics": {
+    "P01": {
+      "weight": 0.28,
+      "priority": "low",
+      "cluster": "mechanics",
+      "hardSlotCount": 3,
+      "lastUsedPaper": null
+    },
+    "P02": {
+      "weight": 0.55,
+      "priority": "medium",
+      "cluster": "mechanics",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "P03": {
+      "weight": 0.8,
+      "priority": "high",
+      "cluster": "mechanics",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "P04": {
+      "weight": 0.55,
+      "priority": "medium",
+      "cluster": "mechanics",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "P05": {
+      "weight": 0.88,
+      "priority": "high",
+      "cluster": "mechanics",
+      "hardSlotCount": 6,
+      "lastUsedPaper": 1
+    },
+    "P06": {
+      "weight": 0.52,
+      "priority": "medium",
+      "cluster": "mechanics",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "P07": {
+      "weight": 0.5,
+      "priority": "medium",
+      "cluster": "mechanics",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "P08": {
+      "weight": 0.48,
+      "priority": "medium",
+      "cluster": "fluids",
+      "hardSlotCount": 3,
+      "lastUsedPaper": null
+    },
+    "P09": {
+      "weight": 0.5,
+      "priority": "medium",
+      "cluster": "waves",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "P10": {
+      "weight": 0.78,
+      "priority": "high",
+      "cluster": "thermal",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "P11": {
+      "weight": 0.84,
+      "priority": "high",
+      "cluster": "electro",
+      "hardSlotCount": 5,
+      "lastUsedPaper": 1
+    },
+    "P12": {
+      "weight": 0.8,
+      "priority": "high",
+      "cluster": "electro",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "P13": {
+      "weight": 0.82,
+      "priority": "high",
+      "cluster": "electro",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "P14": {
+      "weight": 0.8,
+      "priority": "high",
+      "cluster": "electro",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "P15": {
+      "weight": 0.83,
+      "priority": "high",
+      "cluster": "electro",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "P16": {
+      "weight": 0.3,
+      "priority": "low",
+      "cluster": "optics",
+      "hardSlotCount": 3,
+      "lastUsedPaper": null
+    },
+    "P17": {
+      "weight": 0.76,
+      "priority": "high",
+      "cluster": "optics",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "P18": {
+      "weight": 0.55,
+      "priority": "medium",
+      "cluster": "optics",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "P19": {
+      "weight": 0.8,
+      "priority": "high",
+      "cluster": "modern",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "M01": {
+      "weight": 0.5,
+      "priority": "medium",
+      "cluster": "algebra",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "M02": {
+      "weight": 0.84,
+      "priority": "high",
+      "cluster": "algebra",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "M03": {
+      "weight": 0.5,
+      "priority": "medium",
+      "cluster": "algebra",
+      "hardSlotCount": 3,
+      "lastUsedPaper": null
+    },
+    "M04": {
+      "weight": 0.52,
+      "priority": "medium",
+      "cluster": "algebra",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "M05": {
+      "weight": 0.82,
+      "priority": "high",
+      "cluster": "algebra",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "M06": {
+      "weight": 0.5,
+      "priority": "medium",
+      "cluster": "algebra",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "M07": {
+      "weight": 0.86,
+      "priority": "high",
+      "cluster": "algebra",
+      "hardSlotCount": 6,
+      "lastUsedPaper": 1
+    },
+    "M08": {
+      "weight": 0.84,
+      "priority": "high",
+      "cluster": "probability",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "M09": {
+      "weight": 0.32,
+      "priority": "low",
+      "cluster": "probability",
+      "hardSlotCount": 3,
+      "lastUsedPaper": null
+    },
+    "M10": {
+      "weight": 0.52,
+      "priority": "medium",
+      "cluster": "trig",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "M11": {
+      "weight": 0.5,
+      "priority": "medium",
+      "cluster": "trig",
+      "hardSlotCount": 3,
+      "lastUsedPaper": null
+    },
+    "M12": {
+      "weight": 0.5,
+      "priority": "medium",
+      "cluster": "trig",
+      "hardSlotCount": 3,
+      "lastUsedPaper": null
+    },
+    "M13": {
+      "weight": 0.85,
+      "priority": "high",
+      "cluster": "geometry",
+      "hardSlotCount": 6,
+      "lastUsedPaper": null
+    },
+    "M14": {
+      "weight": 0.8,
+      "priority": "high",
+      "cluster": "geometry",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "M15": {
+      "weight": 0.55,
+      "priority": "medium",
+      "cluster": "calculus",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "M16": {
+      "weight": 0.84,
+      "priority": "high",
+      "cluster": "calculus",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "M17": {
+      "weight": 0.86,
+      "priority": "high",
+      "cluster": "calculus",
+      "hardSlotCount": 6,
+      "lastUsedPaper": 1
+    },
+    "M18": {
+      "weight": 0.8,
+      "priority": "high",
+      "cluster": "calculus",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "M19": {
+      "weight": 0.82,
+      "priority": "high",
+      "cluster": "geometry",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "C01": {
+      "weight": 0.28,
+      "priority": "low",
+      "cluster": "physical",
+      "hardSlotCount": 3,
+      "lastUsedPaper": null
+    },
+    "C02": {
+      "weight": 0.5,
+      "priority": "medium",
+      "cluster": "physical",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "C03": {
+      "weight": 0.55,
+      "priority": "medium",
+      "cluster": "physical",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "C04": {
+      "weight": 0.84,
+      "priority": "high",
+      "cluster": "physical",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "C05": {
+      "weight": 0.86,
+      "priority": "high",
+      "cluster": "physical",
+      "hardSlotCount": 6,
+      "lastUsedPaper": null
+    },
+    "C06": {
+      "weight": 0.88,
+      "priority": "high",
+      "cluster": "physical",
+      "hardSlotCount": 6,
+      "lastUsedPaper": 1
+    },
+    "C07": {
+      "weight": 0.84,
+      "priority": "high",
+      "cluster": "physical",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "C08": {
+      "weight": 0.8,
+      "priority": "high",
+      "cluster": "physical",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "C09": {
+      "weight": 0.32,
+      "priority": "low",
+      "cluster": "physical",
+      "hardSlotCount": 3,
+      "lastUsedPaper": null
+    },
+    "C10": {
+      "weight": 0.55,
+      "priority": "medium",
+      "cluster": "physical",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "C11": {
+      "weight": 0.28,
+      "priority": "low",
+      "cluster": "physical",
+      "hardSlotCount": 3,
+      "lastUsedPaper": null
+    },
+    "C12": {
+      "weight": 0.45,
+      "priority": "medium",
+      "cluster": "inorganic",
+      "hardSlotCount": 3,
+      "lastUsedPaper": null
+    },
+    "C13": {
+      "weight": 0.28,
+      "priority": "low",
+      "cluster": "inorganic",
+      "hardSlotCount": 2,
+      "lastUsedPaper": null
+    },
+    "C14": {
+      "weight": 0.42,
+      "priority": "medium",
+      "cluster": "inorganic",
+      "hardSlotCount": 3,
+      "lastUsedPaper": null
+    },
+    "C15": {
+      "weight": 0.82,
+      "priority": "high",
+      "cluster": "inorganic",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "C16": {
+      "weight": 0.76,
+      "priority": "high",
+      "cluster": "inorganic",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "C17": {
+      "weight": 0.3,
+      "priority": "low",
+      "cluster": "inorganic",
+      "hardSlotCount": 2,
+      "lastUsedPaper": null
+    },
+    "C18": {
+      "weight": 0.88,
+      "priority": "high",
+      "cluster": "inorganic",
+      "hardSlotCount": 6,
+      "lastUsedPaper": 1
+    },
+    "C19": {
+      "weight": 0.28,
+      "priority": "low",
+      "cluster": "inorganic",
+      "hardSlotCount": 2,
+      "lastUsedPaper": null
+    },
+    "C20": {
+      "weight": 0.55,
+      "priority": "medium",
+      "cluster": "inorganic",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "C21": {
+      "weight": 0.88,
+      "priority": "high",
+      "cluster": "organic",
+      "hardSlotCount": 6,
+      "lastUsedPaper": null
+    },
+    "C22": {
+      "weight": 0.42,
+      "priority": "medium",
+      "cluster": "organic",
+      "hardSlotCount": 3,
+      "lastUsedPaper": null
+    },
+    "C23": {
+      "weight": 0.55,
+      "priority": "medium",
+      "cluster": "organic",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "C24": {
+      "weight": 0.52,
+      "priority": "medium",
+      "cluster": "organic",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "C25": {
+      "weight": 0.5,
+      "priority": "medium",
+      "cluster": "organic",
+      "hardSlotCount": 3,
+      "lastUsedPaper": null
+    },
+    "C26": {
+      "weight": 0.55,
+      "priority": "medium",
+      "cluster": "organic",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "C27": {
+      "weight": 0.48,
+      "priority": "medium",
+      "cluster": "organic",
+      "hardSlotCount": 3,
+      "lastUsedPaper": null
+    },
+    "C28": {
+      "weight": 0.32,
+      "priority": "low",
+      "cluster": "organic",
+      "hardSlotCount": 2,
+      "lastUsedPaper": null
+    },
+    "C29": {
+      "weight": 0.84,
+      "priority": "high",
+      "cluster": "organic",
+      "hardSlotCount": 5,
+      "lastUsedPaper": null
+    },
+    "C30": {
+      "weight": 0.76,
+      "priority": "high",
+      "cluster": "organic",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "C31": {
+      "weight": 0.72,
+      "priority": "high",
+      "cluster": "organic",
+      "hardSlotCount": 4,
+      "lastUsedPaper": null
+    },
+    "C32": {
+      "weight": 0.42,
+      "priority": "medium",
+      "cluster": "organic",
+      "hardSlotCount": 3,
+      "lastUsedPaper": null
+    },
+    "C33": {
+      "weight": 0.5,
+      "priority": "medium",
+      "cluster": "organic",
+      "hardSlotCount": 3,
+      "lastUsedPaper": null
+    },
+    "C34": {
+      "weight": 0.28,
+      "priority": "low",
+      "cluster": "organic",
+      "hardSlotCount": 2,
+      "lastUsedPaper": null
+    },
+    "C35": {
+      "weight": 0.22,
+      "priority": "low",
+      "cluster": "organic",
+      "hardSlotCount": 2,
+      "lastUsedPaper": null
+    },
+    "C36": {
+      "weight": 0.48,
+      "priority": "medium",
+      "cluster": "organic",
+      "hardSlotCount": 3,
+      "lastUsedPaper": null
+    }
+  }
+}

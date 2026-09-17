@@ -80,6 +80,28 @@ const postChat = async (apiKey, body, timeout) =>
         timeout,
     });
 
+export const extractOpenAIChatUsage = (response) => {
+    const u = response?.data?.usage || {};
+    const details = u.completion_tokens_details || {};
+    return {
+        promptTokens: Number(u.prompt_tokens) || 0,
+        completionTokens: Number(u.completion_tokens) || 0,
+        totalTokens: Number(u.total_tokens) || 0,
+        reasoningTokens: Number(details.reasoning_tokens) || 0,
+    };
+};
+
+const packJsonResult = (text, response, usedModel, { withUsage } = {}) => {
+    if (withUsage) {
+        return {
+            text,
+            usage: extractOpenAIChatUsage(response),
+            model: usedModel,
+        };
+    }
+    return text;
+};
+
 /**
  * JSON-mode chat with o-series-safe params + reasoning-model fallback chain.
  */
@@ -91,6 +113,7 @@ export const callOpenAIReasoningJson = async ({
     callWithRetries,
     toError,
     timeoutMs,
+    withUsage = false,
 }) => {
     if (!apiKey) {
         throw new ApiError(500, "OpenAI API key is not configured (OPENAI_API_KEY)");
@@ -127,7 +150,7 @@ export const callOpenAIReasoningJson = async ({
                     timeoutMs: timeout,
                 });
             }
-            return text;
+            return packJsonResult(text, response, candidate, { withUsage });
         } catch (error) {
             lastError = error;
             const msg = String(
@@ -169,7 +192,7 @@ export const callOpenAIReasoningJson = async ({
                         postChat(apiKey, fallbackBody, timeout)
                     );
                     const text = extractOpenAIChatText(response);
-                    if (text) return text;
+                    if (text) return packJsonResult(text, response, candidate, { withUsage });
                 } catch (err2) {
                     lastError = err2;
                 }
@@ -187,7 +210,7 @@ export const callOpenAIReasoningJson = async ({
                         postChat(apiKey, noEffort, timeout)
                     );
                     const text = extractOpenAIChatText(response);
-                    if (text) return text;
+                    if (text) return packJsonResult(text, response, candidate, { withUsage });
                 } catch (err3) {
                     lastError = err3;
                 }

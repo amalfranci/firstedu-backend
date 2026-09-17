@@ -4,6 +4,9 @@ import path from "path";
 const JOB_TTL_MS = Number(
     process.env.AI_QB_GENERATION_JOB_TTL_MS || 30 * 60 * 1000
 );
+const JOB_KEEP_DONE_MS = Number(
+    process.env.AI_QB_GENERATION_JOB_KEEP_MS || 7 * 24 * 60 * 60 * 1000
+);
 const JOB_DIR = path.join(
     process.cwd(),
     "temp",
@@ -57,10 +60,22 @@ const deleteJobFromDisk = (jobId) => {
     }
 };
 
+const isActiveStatus = (status) => {
+    const s = String(status || "").toLowerCase();
+    return s === "pending" || s === "running" || s === "queued";
+};
+
+const jobAgeMs = (job) => Date.now() - (job.updatedAt || job.createdAt || 0);
+
+const shouldPruneJob = (job) => {
+    if (!job) return false;
+    if (isActiveStatus(job.status)) return jobAgeMs(job) > JOB_TTL_MS;
+    return jobAgeMs(job) > JOB_KEEP_DONE_MS;
+};
+
 const pruneExpiredJobs = () => {
-    const now = Date.now();
     for (const [id, job] of jobs.entries()) {
-        if (now - (job.updatedAt || job.createdAt) > JOB_TTL_MS) {
+        if (shouldPruneJob(job)) {
             jobs.delete(id);
             deleteJobFromDisk(id);
         }
@@ -73,7 +88,7 @@ const pruneExpiredJobs = () => {
             const filePath = path.join(JOB_DIR, file);
             const raw = fs.readFileSync(filePath, "utf8");
             const job = JSON.parse(raw);
-            if (now - (job.updatedAt || job.createdAt) > JOB_TTL_MS) {
+            if (shouldPruneJob(job)) {
                 fs.unlinkSync(filePath);
             }
         }
@@ -130,7 +145,7 @@ export const getGenerationJob = (jobId) => {
  * forever and shows a clear error instead of a Network Error.
  */
 export const failOrphanedGenerationJobs = (
-    reason = "Server restarted during generation. Tap Retry — questions already shown were kept."
+    reason = "Server restarted during generation. Resume to continue from locked questions — already spent tokens are kept."
 ) => {
     let failed = 0;
     try {
@@ -153,6 +168,8 @@ export const failOrphanedGenerationJobs = (
                 status: "failed",
                 phase: "error",
                 error: reason,
+                resumable: true,
+                message: reason,
                 updatedAt: Date.now(),
             };
             if (job?.jobId) {
