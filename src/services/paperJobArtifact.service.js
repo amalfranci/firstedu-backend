@@ -37,9 +37,62 @@ const writeJson = (filePath, data) => {
   }
 };
 
+/** Strip AI/provider secrets before writing logs or console output. */
+const SECRET_STRING_RE =
+  /\b(sk-[A-Za-z0-9_-]{10,}|AIza[0-9A-Za-z_-]{20,}|Bearer\s+[A-Za-z0-9._\-+=\/]{8,})\b/gi;
+
+const SENSITIVE_KEY_RE =
+  /^(authorization|api[_-]?key|x-api-key|x-goog-api-key|openai[_-]?api[_-]?key|gemini[_-]?api[_-]?key|access[_-]?token|secret|password)$/i;
+
+const redactString = (value) =>
+  String(value || "").replace(SECRET_STRING_RE, "[REDACTED]");
+
+export const sanitizeForLog = (value, seen = new WeakSet()) => {
+  if (value == null) return value;
+  if (typeof value === "string") return redactString(value);
+  if (typeof value === "number" || typeof value === "boolean") return value;
+  if (typeof value === "bigint") return String(value);
+  if (value instanceof Error) {
+    return sanitizeForLog(
+      {
+        name: value.name,
+        message: value.message,
+        code: value.code,
+        status: value.response?.status ?? value.status,
+        stack: value.stack,
+      },
+      seen
+    );
+  }
+  if (typeof value !== "object") return String(value);
+  if (seen.has(value)) return "[Circular]";
+  seen.add(value);
+  if (Array.isArray(value)) {
+    return value.map((item) => sanitizeForLog(item, seen));
+  }
+  const out = {};
+  for (const [key, child] of Object.entries(value)) {
+    if (SENSITIVE_KEY_RE.test(key)) {
+      out[key] = "[REDACTED]";
+      continue;
+    }
+    // Axios request config often embeds Authorization headers.
+    if (key === "config" || key === "request" || key === "headers") {
+      out[key] = sanitizeForLog(child, seen);
+      continue;
+    }
+    out[key] = sanitizeForLog(child, seen);
+  }
+  return out;
+};
+
 const appendJsonl = (filePath, row) => {
   try {
-    appendFileSync(filePath, `${JSON.stringify(row)}\n`, "utf8");
+    appendFileSync(
+      filePath,
+      `${JSON.stringify(sanitizeForLog(row))}\n`,
+      "utf8"
+    );
   } catch {
     // non-fatal
   }
@@ -165,12 +218,12 @@ export const readTokenSummary = (jobId) => {
 export const appendPaperLog = (jobId, event, payload = {}) => {
   if (!jobId) return;
   bindPaperJob(jobId);
-  const row = {
+  const row = sanitizeForLog({
     ts: new Date().toISOString(),
     jobId,
     event,
     ...payload,
-  };
+  });
   appendJsonl(join(jobDir(jobId), "pipeline.jsonl"), row);
   const line = `[paper-job ${jobId}] ${event}${
     payload.reason ? ` — ${payload.reason}` : ""

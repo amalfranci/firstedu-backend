@@ -5,6 +5,13 @@ dist
 !.env.example
 !.env.*.example
 package-lock.json
+# Never commit secrets / live provider credentials
+**/credentials*.json
+**/*secret*
+**/*apikey*
+# Local AI run artifacts (may embed request headers in error dumps)
 temp/ai-api-logs/
 temp/confirmed-questions/
 temp/
+**/pipeline.jsonl
+temp/paper-jobs/**/pipeline.jsonl

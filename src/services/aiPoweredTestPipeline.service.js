@@ -470,7 +470,13 @@ const callVerifyJson = async (prompt) => {
       elapsedMs,
       status,
       reasoningEffort,
-      error: err,
+      // Never log raw AxiosError — config.headers can contain API keys.
+      error: {
+        name: err?.name,
+        message: err?.message,
+        code: err?.code,
+        status,
+      },
       axiosData: err?.response?.data || null,
       ...logPromptPayload(prompt),
     });
