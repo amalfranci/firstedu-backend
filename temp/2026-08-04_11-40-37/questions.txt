@@ -1,0 +1,112 @@
+Q1. type=multiple · M13 Conic Sections (Parabola, Ellipse, Hyperbola) · trust=PROVISIONAL · NEEDS_REVIEW
+Slot: conic_tangent_locus · lockMode=A+generator
+Let $P$ be the parabola $y^2 = 4x$ with focus $F$. Let $AB$ be a variable focal chord of $P$. Let $C$ be the point of intersection of the tangents to $P$ at $A$ and $B$, and let $D$ be the point of intersection of the normals to $P$ at $A$ and $B$. Let $S$ be the circle described with $AB$ as diameter. Which of the following statements is/are correct?
+
+  A. A) The locus of $D$ is a parabola with vertex at $(3,0)$ and length of latus rectum equal to $1$.
+  B. B) The circle $S$ always touches the line $x = -1$ at the point $C$.
+  C. C) The point $D$ always lies on the circle $S$, and the tangent to $S$ at $D$ is parallel to the directrix of $P$.
+  D. D) If the length of the focal chord $AB$ is $8$, then the area of the triangle $FCD$ is $4\sqrt{2}$.
+Correct: A,B,C  [DUAL-LOCK]
+Explanation: **Insight:** The properties of a focal chord of a parabola can be elegantly analyzed using parametric coordinates. By expressing the points of contact, tangent intersections, and normal intersections in terms of a single parameter $t$ satisfying $t_1 t_2 = -1$, we can systematically determine the geometric loci and relationships.\n\n**Core Derivation:**\nLet the parabola be $P: y^2 = 4x$ with focus $F(1,0)$. Let $A(t^2, 2t)$ and $B\left(\frac{1}{t^2}, -\frac{2}{t}\right)$ be the endpoints of the variable focal chord $AB$, where $t_1 = t$ and $t_2 = -\frac{1}{t}$ so that $t_1 t_2 = -1$.\n\n1. **Intersection of Tangents ($C$):**\nUsing the intersection formula for tangents at $t_1$ and $t_2$:\n$$C = (t_1 t_2, t_1 + t_2) = \left(-1, t - \frac{1}{t}\right)$$\n\n2. **Intersection of Normals ($D
+
+Q2. type=multiple · M07 Matrices and Determinants · trust=PROVISIONAL-HIGH-RISK · NEEDS_REVIEW
+Slot: matrix_system_parameter · lockMode=A+generator
+Let $A$ be a $3 \times 3$ real symmetric matrix satisfying $A^3 - 2A^2 + A = 0$, and let $I$ be the $3 \times 3$ identity matrix. Suppose the trace of $A$ is $2$. Let $B = I + A$. Which of the following statements is/are correct?
+
+  A. A) The determinant of $B^n$ is $4^n$ for any positive integer $n$.
+  B. B) The matrix $B$ is invertible, and $B^{-1} = I - \frac{1}{2} A$.
+  C. C) If $A = \frac{1}{3} \begin{pmatrix} 2 & -1 & -1 \\ -1 & 2 & -1 \\ -1 & -1 & 2 \end{pmatrix}$, then the system of equations $(I - A)\mathbf{x} = \mathbf{u}$ is consistent if and only if $u_1 = u_2 = u_3$, where $\mathbf{u} = [u_1, u_2, u_3]^T$.
+  D. D) The adjoint of $B$, denoted by $\text{adj}(B)$, is equal to $2I - 4A$.
+Correct: A,B,C  [DUAL-LOCK]
+Explanation: **Insight:** Since $A$ is a real symmetric matrix, the Spectral Theorem guarantees it is orthogonally diagonalizable, meaning its minimal polynomial must have distinct linear factors. This allows us to simplify the relation $A^3 - 2A^2 + A = 0$ to $A^2 = A$, from which the eigenvalues, inverse, and adjoint of $B = I + A$ can be directly computed.
+
+**Derivation:**
+By the Spectral Theorem, the real symmetric matrix $A$ is diagonalizable. The given matrix equation is:
+$$A^3 - 2A^2 + A = 0 \implies A(A-I)^2 = 0$$
+Since $A$ is diagonalizable, its minimal polynomial cannot have repeated roots. Thus, the minimal polynomial of $A$ must divide $x(x-1)$, which yields:
+$$A^2 - A = 0 \implies A^2 = A$$
+Consequently, the only possible eigenvalues of $A$ are $0$ and $1$. Let the eigenvalues of $A$ be $\
+
+Q3. type=multiple · M08 Probability · trust=PROVISIONAL · NEEDS_REVIEW
+Slot: bayes_recursion_game · lockMode=A+generator
+Two players, $P_1$ and $P_2$, play a game using an urn. Initially, a fair coin is tossed to choose one of two urns, $U_1$ or $U_2$, with equal probability. Urn $U_1$ initially contains $1$ red ball and $1$ blue ball, while Urn $U_2$ initially contains $2$ red balls and $1$ blue ball. The players take turns drawing a ball at random from the chosen urn, starting with $P_1$. If a player draws a blue ball, that player wins the game immediately. If a player draws a red ball, the ball is returned to the urn, $1$ additional red ball is added to the urn, and the turn passes to the other player. Which of the following statements is/are correct?
+
+  A. A) The probability that $P_1$ wins the game given that Urn $U_1$ was chosen is $\ln 2$.
+  B. B) The overall probability that $P_1$ wins the game is $1 - \frac{1}{2}\ln 2$.
+  C. C) Given that $P_1$ won the game, the probability that Urn $U_1$ was chosen is $\frac{\ln 2}{2 - \ln 2}$.
+  D. D) Given that the game ended on Turn 2, the probability that Urn $U_1$ was chosen is $\frac{3}{5}$.
+Correct: A,B,C  [DUAL-LOCK]
+Explanation: **Insight:** The game's progression is modeled as a sequence of dependent trials where the number of red balls increases by one after each unsuccessful draw. By expressing the probability of the game ending on any given turn as a telescoping product, we can sum the infinite series for odd turns to find the winning probabilities for each urn.\n\n### **Core Derivation:**\nLet $U_1$ and $U_2$ denote the events that Urn 1 and Urn 2 are chosen, respectively, with $P(U_1) = P(U_2) = \frac{1}{2}$.\n\n#### **Case 1: Urn $U_1$ is chosen**\nInitially, $U_1$ contains $1$ Red and $1$ Blue ball (total $2$ balls).\n- On Turn 1, $P_1$ wins if a Blue ball is drawn: $P(\text{ends on Turn 1} | U_1) = \frac{1}{2}$.\n- If Red is drawn (prob $\frac{1}{2}$), the urn now has $2$ Red and $1$ Blue ball (total $3$)
+
+Q4. type=integer · M13 Conic Sections (Parabola, Ellipse, Hyperbola) · trust=PROVISIONAL+RECOMPUTE · NEEDS_REVIEW
+Slot: conic_tangent_locus · lockMode=A+generator+recompute
+Let $P$ be the parabola $y^2 = 8x$ and $H$ be the hyperbola $\frac{x^2}{4} - \frac{y^2}{12} = 1$. A variable tangent to the parabola $P$ intersects the hyperbola $H$ at two distinct points $A$ and $B$. If the tangents to the hyperbola $H$ at $A$ and $B$ intersect at a point $R(x_0, y_0)$, then the locus of $R$ is a curve $C$. Let $W$ be the point on the curve $C$ with positive ordinate such that the normal to $C$ at $W$ is parallel to the line $3x - y + 5 = 0$. If $S$ is the focus of the curve $C$, find the distance $SW$.
+
+(no options — integer/numerical)
+Correct: 45  [DUAL-LOCK]
+Explanation: **Insight:** The chord of contact of tangents from $R(x_0, y_0)$ to the hyperbola $H$ is a tangent to the parabola $P$, which yields the equation of the locus $C$. The focal distance of any point on a parabola is then computed using its geometric definition relative to the directrix.
+
+**Setup:**
+Let $R(x_0, y_0)$ be the point of intersection of the tangents to the hyperbola $H: \frac{x^2}{4} - \frac{y^2}{12} = 1$ at $A$ and $B$. The equation of the chord of contact $AB$ is:
+$$\frac{x x_0}{4} - \frac{y y_0}{12} = 1$$
+This line is tangent to the parabola $P: y^2 = 8x$. The equation of a tangent to $y^2 = 8x$ with slope $m$ is:
+$$y = mx + \frac{2}{m} \implies m^2 x - m y + 2 = 0$$
+
+**Locus Derivation:**
+Comparing the coefficients of the two equations:
+$$\frac{m^2}{\frac{x_0}{4}} = \frac{-m}{-
+
+Q5. type=integer · M07 Matrices and Determinants · trust=PROVISIONAL+RECOMPUTE · NEEDS_REVIEW
+Slot: matrix_system_parameter · lockMode=A+generator+recompute
+Let $a, b, c$ be the distinct real roots of the cubic equation $t^3 - 9t^2 + 24t - 18 = 0$. Consider the system of linear equations in $x, y, z$:
+\begin{align*}
+ax + by + cz &= a^2 \\
+bx + cy + az &= b^2 \\
+cx + ay + bz &= c^2
+\end{align*}
+If $(x_0, y_0, z_0)$ is the unique solution to this system, find the value of $9x_0$.
+
+(no options — integer/numerical)
+Correct: 47  [DUAL-LOCK]
+Explanation: **Insight:** By summing the equations directly and after multiplying them by $a, b, c$ respectively, we can express the system in terms of symmetric polynomials of the roots $a, b, c$ without solving for the individual variables.
+
+**Setup:**
+From the cubic equation $t^3 - 9t^2 + 24t - 18 = 0$, Vieta's formulas give:
+1) $a+b+c = 9$
+2) $ab+bc+ca = 24$
+3) $abc = 18$
+
+We compute the power sums:
+$$a^2+b^2+c^2 = (a+b+c)^2 - 2(ab+bc+ca) = 9^2 - 2(24) = 33$$
+Using the algebraic identity $a^3+b^3+c^3 - 3abc = (a+b+c)(a^2+b^2+c^2 - ab-bc-ca)$:
+$$a^3+b^3+c^3 = 3(18) + 9(33 - 24) = 54 + 81 = 135$$
+
+**Derivation:**
+Summing the three given equations:
+$$(a+b+c)x_0 + (a+b+c)y_0 + (a+b+c)z_0 = a^2+b^2+c^2$$
+$$9(x_0+y_0+z_0) = 33 \implies y_0+z_0 = \frac{33}{9} - x_0$$
+
+Next, multiplying the first, second, 
+
+Q6. type=match · M13 Conic Sections (Parabola, Ellipse, Hyperbola) · trust=A+GEMINI-B · NEEDS_REVIEW
+Slot: conic_tangent_locus · lockMode=A+gemini-B
+Let $P$ be a parabola, $E$ be an ellipse, and $H$ be a hyperbola. Match the geometric properties and loci described in List-I with their corresponding values in List-II.
+
+List-I:
+  1. Let $P$ be the parabola $y^2 = 16x$ with focus $S$. A variable tangent to $P$ at $T$ meets the tangent at the vertex at $Y$. If the locus of the circumcentre of $\triangle STY$ is the curve $C_1$, then the minimum distance from the point $(6, 0)$ to $C_1$ is
+  2. Let $E$ be the ellipse $\frac{x^2}{16} + \frac{y^2}{4} = 1$. Let $C_2$ be the locus of the foot of the perpendicular drawn from the focus $F(2\sqrt{3}, 0)$ to any variable tangent of $E$. If the minimum distance from the point $(3, 4)$ to $C_2$ is $d_2$, then $d_2$ is
+  3. Let $H$ be the hyperbola $\frac{x^2}{16} - \frac{y^2}{7} = 1$. Let $C_3$ be the locus of the point of intersection of perpendicular tangents to $H$. If the minimum distance from the point $(5, 12)$ to $C_3$ is $d_3$, then $d_3$ is
+  4. Let $P$ be the parabola $y^2 = 8x$. Let $C_4$ be the locus of the point of intersection of two tangents to $P$ which are inclined to each other at an angle of $45^\circ$. The distance between the foci of the conic $C_4$ is
+List-II:
+  P. 1
+  Q. 4
+  R. 10
+  S. 16
+  T. 8
+
+  A. 1-Q, 2-P, 3-R, 4-S
+  B. 1-P, 2-Q, 3-S, 4-R
+  C. 1-Q, 2-R, 3-P, 4-S
+  D. 1-S, 2-P, 3-R, 4-Q
+Correct: A  [DUAL-LOCK]
+Explanation: **Insight:**\nThe geometric properties of conics, such as the auxiliary circle, director circle, and angle between tangents, simplify the determination of loci, reducing distance calculations to standard geometric formulas.\n\n**1. Locus $C_1$ for Parabola $y^2 = 16x$:**\nThe focus is $S(4,0)$. A variable tangent at $T(4t^2, 8t)$ is given by $ty = x + 4t^2$.\nThis tangent meets the tangent at the vertex ($x = 0$) at $Y(0, 4t)$.\nThe slope of $SY$ is $m_1 = \frac{4t - 0}{0 - 4} = -t$, and the slope of the tangent $TY$ is $m_2 = \frac{1}{t}$.\nSince $m_1 m_2 = -1$, $\angle SYT = 90^\circ$.\nThus, $\triangle STY$ is a right-angled triangle with hypotenuse $ST$.\nThe circumcentre of $\triangle STY$ is the midpoint of $ST$:\n$$x = \frac{4t^2 + 4}{2} = 2t^2 + 2, \quad y = \frac{8t + 0}{2} = 4t$$

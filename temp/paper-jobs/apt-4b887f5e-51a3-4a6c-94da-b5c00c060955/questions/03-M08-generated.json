@@ -1,0 +1,46 @@
+{
+  "ts": "2026-09-17T05:34:04.290Z",
+  "jobId": "apt-4b887f5e-51a3-4a6c-94da-b5c00c060955",
+  "seq": 3,
+  "type": "integer",
+  "subject": "Mathematics",
+  "topicId": "M08",
+  "chapter": "Probability",
+  "stage": "generated",
+  "raw": {
+    "questionType": "integer",
+    "questionText": "An urn initially contains 2 red balls and 2 blue balls. In each step, a ball is drawn at random from the urn. If a red ball is drawn, it is removed and replaced by a blue ball. If a blue ball is drawn, it is removed and replaced by a red ball. This process is repeated until all 4 balls in the urn are of the same color. If the expected number of steps required for the process to terminate is $E$, find the value of $E$.",
+    "options": [],
+    "correctAnswer": 8,
+    "explanation": "Set up a system of linear equations for the expected number of steps from each state using the law of total expectation and exploit symmetry.",
+    "_solveSteps": [],
+    "_conceptSlot": "model_recursion",
+    "_chapter": "Probability",
+    "_topicId": "M08",
+    "_subject": "Mathematics",
+    "_hardArchetype": "model_recursion",
+    "_insight": "Set up a system of linear equations for the expected number of steps from each state using the law of total expectation and exploit symmetry.",
+    "_advancedType": "integer",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 80
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 692,
+      "completionTokens": 222,
+      "totalTokens": 6556,
+      "reasoningTokens": 5642
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 692,
+    "completionTokens": 222,
+    "totalTokens": 6556,
+    "reasoningTokens": 5642,
+    "calls": 1
+  }
+}

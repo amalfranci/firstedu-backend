@@ -1,0 +1,127 @@
+{
+  "ts": "2026-09-16T10:49:37.509Z",
+  "jobId": "apt-e7cbe4d6-f8a9-45c2-8151-eae67c4cb406",
+  "seq": 2,
+  "type": "multiple",
+  "subject": "Chemistry",
+  "topicId": "C06",
+  "chapter": "Chemical and Ionic Equilibrium",
+  "stage": "locked",
+  "raw": {
+    "questionType": "multiple",
+    "questionText": "Sufficient amounts of solid $NH_4HS$ and solid $H_2NCOONH_4$ are introduced into an evacuated vessel of constant volume at a certain temperature $T$. The following simultaneous equilibria are established: $NH_4HS(s) \\rightleftharpoons NH_3(g) + H_2S(g)$ with $K_{p1} = 6\\text{ atm}^2$, and $H_2NCOONH_4(s) \\rightleftharpoons 2NH_3(g) + CO_2(g)$ with $K_{p2} = 20\\text{ atm}^3$. Identify the correct statement(s) regarding this system at equilibrium:",
+    "options": [
+      "The equilibrium partial pressure of $NH_3(g)$ is $4\\text{ atm}$.",
+      "The total pressure of the gaseous mixture at equilibrium is $6.75\\text{ atm}$.",
+      "If the volume of the container is doubled at constant temperature $T$ such that both solids remain in excess, the mole fraction of $CO_2(g)$ in the gas phase increases.",
+      "The ratio of the moles of $NH_4HS(s)$ consumed to the moles of $H_2NCOONH_4(s)$ consumed to reach equilibrium is $6 : 5$."
+    ],
+    "correctIndices": [
+      0,
+      1,
+      3
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A,B,D",
+    "explanation": "Using the stoichiometric relation $P_{NH_3} = P_{H_2S} + 2P_{CO_2}$ along with the $K_p$ expressions yields a cubic equation in $P_{NH_3}$ with a clean integer root, while recognizing that as long as both solids remain, the equilibrium state is independent of volume.",
+    "_solveSteps": [],
+    "_conceptSlot": "simultaneous_equilibria",
+    "_chapter": "Chemical and Ionic Equilibrium",
+    "_topicId": "C06",
+    "_subject": "Chemistry",
+    "_hardArchetype": "simultaneous_equilibria",
+    "_insight": "Using the stoichiometric relation $P_{NH_3} = P_{H_2S} + 2P_{CO_2}$ along with the $K_p$ expressions yields a cubic equation in $P_{NH_3}$ with a clean integer root, while recognizing that as long as both solids remain, the equilibrium state is independent of volume.",
+    "_advancedType": "multiple",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 84
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 410,
+      "completionTokens": 475,
+      "totalTokens": 5442,
+      "reasoningTokens": 4557
+    },
+    {
+      "provider": "openai",
+      "model": "o3-mini",
+      "kind": "solver",
+      "promptTokens": 393,
+      "completionTokens": 2377,
+      "totalTokens": 2770,
+      "reasoningTokens": 2048
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "solver",
+      "promptTokens": 375,
+      "completionTokens": 376,
+      "totalTokens": 2459,
+      "reasoningTokens": 1708
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "solver",
+      "promptTokens": 345,
+      "completionTokens": 38,
+      "totalTokens": 2007,
+      "reasoningTokens": 1624
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 1523,
+    "completionTokens": 3266,
+    "totalTokens": 12678,
+    "reasoningTokens": 9937,
+    "calls": 4
+  },
+  "locked": {
+    "questionType": "multiple",
+    "questionText": "Sufficient amounts of solid $NH_4HS$ and solid $H_2NCOONH_4$ are introduced into an evacuated vessel of constant volume at a certain temperature $T$. The following simultaneous equilibria are established: $NH_4HS(s) \\rightleftharpoons NH_3(g) + H_2S(g)$ with $K_{p1} = 6\\text{ atm}^2$, and $H_2NCOONH_4(s) \\rightleftharpoons 2NH_3(g) + CO_2(g)$ with $K_{p2} = 20\\text{ atm}^3$. Identify the correct statement(s) regarding this system at equilibrium:",
+    "options": [
+      "The equilibrium partial pressure of $NH_3(g)$ is $4\\text{ atm}$.",
+      "The total pressure of the gaseous mixture at equilibrium is $6.75\\text{ atm}$.",
+      "If the volume of the container is doubled at constant temperature $T$ such that both solids remain in excess, the mole fraction of $CO_2(g)$ in the gas phase increases.",
+      "The ratio of the moles of $NH_4HS(s)$ consumed to the moles of $H_2NCOONH_4(s)$ consumed to reach equilibrium is $6 : 5$."
+    ],
+    "correctIndices": [
+      0,
+      1,
+      3
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A,B,D",
+    "explanation": "Using the stoichiometric relation $P_{NH_3} = P_{H_2S} + 2P_{CO_2}$ along with the $K_p$ expressions yields a cubic equation in $P_{NH_3}$ with a clean integer root, while recognizing that as long as both solids remain, the equilibrium state is independent of volume.",
+    "_solveSteps": [],
+    "_conceptSlot": "simultaneous_equilibria",
+    "_chapter": "Chemical and Ionic Equilibrium",
+    "_topicId": "C06",
+    "_subject": "Chemistry",
+    "_hardArchetype": "simultaneous_equilibria",
+    "_insight": "Using the stoichiometric relation $P_{NH_3} = P_{H_2S} + 2P_{CO_2}$ along with the $K_p$ expressions yields a cubic equation in $P_{NH_3}$ with a clean integer root, while recognizing that as long as both solids remain, the equilibrium state is independent of volume.",
+    "_advancedType": "multiple",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 84,
+    "_dualA": "A,B,D",
+    "_dualB": "A,B,D",
+    "_doubleSolverAgree": true,
+    "_stageAAnswerLocked": true,
+    "_lockMode": "dual(o4-mini+o3-mini)+recompute",
+    "_ranB": true,
+    "_solverConfidence": 0.95,
+    "_trustBadge": "DUAL-OPENAI",
+    "_trustGrade": "production_dual",
+    "_productionReady": true,
+    "_needsReview": false,
+    "_answerCorrectnessGuaranteed": true,
+    "_recomputeOk": true,
+    "_recomputeValue": "A,B,D"
+  }
+}

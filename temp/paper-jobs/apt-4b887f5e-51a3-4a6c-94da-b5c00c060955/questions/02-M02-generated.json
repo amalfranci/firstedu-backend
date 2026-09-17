@@ -1,0 +1,58 @@
+{
+  "ts": "2026-09-17T05:30:42.528Z",
+  "jobId": "apt-4b887f5e-51a3-4a6c-94da-b5c00c060955",
+  "seq": 2,
+  "type": "multiple",
+  "subject": "Mathematics",
+  "topicId": "M02",
+  "chapter": "Complex Numbers",
+  "stage": "generated",
+  "raw": {
+    "questionType": "multiple",
+    "questionText": "Let $z$ be a complex number satisfying the equation $|z - 3| = 2|z - 3i|$. Let $S$ denote the locus of $z$ in the Argand plane. Which of the following statements is/are correct?",
+    "options": [
+      "The locus $S$ is a circle with center $-1+4i$ and radius $2\\sqrt{2}$.",
+      "For any $z$ on the locus $S$ (with $z \\neq 1+6i$), the real part of $\\frac{z + 3 - 2i}{z - 1 - 6i}$ is equal to $0$.",
+      "The minimum value of $|z|^2$ for $z \\in S$ is $25 - 4\\sqrt{34}$.",
+      "The maximum value of $|z - (1+i)|$ for $z \\in S$ is $\\sqrt{13} + 2\\sqrt{2}$."
+    ],
+    "correctIndices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A,B,C,D",
+    "explanation": "The Apollonius circle locus has center $-1+4i$ and radius $2\\sqrt{2}$, with $-3+2i$ and $1+6i$ acting as diametrically opposite points, which immediately yields the perpendicularity and distance relations.",
+    "_solveSteps": [],
+    "_conceptSlot": "apollonius_locus_properties",
+    "_chapter": "Complex Numbers",
+    "_topicId": "M02",
+    "_subject": "Mathematics",
+    "_hardArchetype": "apollonius_locus_properties",
+    "_insight": "The Apollonius circle locus has center $-1+4i$ and radius $2\\sqrt{2}$, with $-3+2i$ and $1+6i$ acting as diametrically opposite points, which immediately yields the perpendicularity and distance relations.",
+    "_advancedType": "multiple",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 82
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 660,
+      "completionTokens": 388,
+      "totalTokens": 5930,
+      "reasoningTokens": 4882
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 660,
+    "completionTokens": 388,
+    "totalTokens": 5930,
+    "reasoningTokens": 4882,
+    "calls": 1
+  }
+}

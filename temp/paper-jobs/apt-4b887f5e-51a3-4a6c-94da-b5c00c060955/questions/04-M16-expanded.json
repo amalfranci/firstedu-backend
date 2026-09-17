@@ -1,0 +1,155 @@
+{
+  "ts": "2026-09-17T05:36:50.717Z",
+  "jobId": "apt-4b887f5e-51a3-4a6c-94da-b5c00c060955",
+  "seq": 4,
+  "type": "match",
+  "subject": "Mathematics",
+  "topicId": "M16",
+  "chapter": "Applications of Derivatives",
+  "stage": "expanded",
+  "raw": {
+    "questionType": "match",
+    "questionText": "Match the properties/values in List I with the corresponding values in List II.",
+    "listI": [
+      "Let $f: [0, 1] \\to \\mathbb{R}$ be a twice differentiable function with $f(0) = f(1) = 0$ and $\\min_{x \\in [0,1]} f(x) = -1$. The minimum possible value of $\\max_{x \\in [0,1]} f''(x)$ is",
+      "The number of real roots of the equation $f(f(x)) = 0$, where $f(x) = x^3 - 3x$, is",
+      "Let $P$ be a point on the parabola $y^2 = 4x$. The square of the minimum distance from the point $(6, 0)$ to $P$ is",
+      "Let $f(x)$ be a real polynomial of degree 4 satisfying $f(1) = f(-1)$, $f''(0) = -16$, and having critical points at $x = 0$ and $x = 2$. If the local maximum value of $f(x)$ is 8 and the local minimum value is $L$, then the value of $8 - L$ is"
+    ],
+    "listII": [
+      "8",
+      "9",
+      "16",
+      "20"
+    ],
+    "options": [
+      "1-P, 2-Q, 3-S, 4-R",
+      "1-Q, 2-P, 3-R, 4-S",
+      "1-P, 2-R, 3-Q, 4-S",
+      "1-S, 2-Q, 3-P, 4-R"
+    ],
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "Uses Taylor's theorem/MVT bounds for the second derivative, composition of functions for root counting, distance minimization on a parabola, and integration of critical point relations for polynomial reconstruction.",
+    "_solveSteps": [],
+    "_conceptSlot": "proving_inequality_rolle",
+    "_chapter": "Applications of Derivatives",
+    "_topicId": "M16",
+    "_subject": "Mathematics",
+    "_hardArchetype": "proving_inequality_rolle",
+    "_insight": "Uses Taylor's theorem/MVT bounds for the second derivative, composition of functions for root counting, distance minimization on a parabola, and integration of critical point relations for polynomial reconstruction.",
+    "_advancedType": "match",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 84
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 831,
+      "completionTokens": 541,
+      "totalTokens": 7606,
+      "reasoningTokens": 6234
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-5.6-luna",
+      "kind": "verify",
+      "promptTokens": 694,
+      "completionTokens": 1836,
+      "totalTokens": 2530,
+      "reasoningTokens": 1536
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "expand",
+      "promptTokens": 564,
+      "completionTokens": 2107,
+      "totalTokens": 4663,
+      "reasoningTokens": 1992
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 2089,
+    "completionTokens": 4484,
+    "totalTokens": 14799,
+    "reasoningTokens": 9762,
+    "calls": 3
+  },
+  "locked": {
+    "questionType": "match",
+    "questionText": "Match the properties/values in List I with the corresponding values in List II.",
+    "listI": [
+      "Let $f: [0, 1] \\to \\mathbb{R}$ be a twice differentiable function with $f(0) = f(1) = 0$ and $\\min_{x \\in [0,1]} f(x) = -1$. The minimum possible value of $\\max_{x \\in [0,1]} f''(x)$ is",
+      "The number of real roots of the equation $f(f(x)) = 0$, where $f(x) = x^3 - 3x$, is",
+      "Let $P$ be a point on the parabola $y^2 = 4x$. The square of the minimum distance from the point $(6, 0)$ to $P$ is",
+      "Let $f(x)$ be a real polynomial of degree 4 satisfying $f(1) = f(-1)$, $f''(0) = -16$, and having critical points at $x = 0$ and $x = 2$. If the local maximum value of $f(x)$ is 8 and the local minimum value is $L$, then the value of $8 - L$ is"
+    ],
+    "listII": [
+      "8",
+      "9",
+      "16",
+      "20"
+    ],
+    "options": [
+      "1-P, 2-Q, 3-S, 4-R",
+      "1-Q, 2-P, 3-R, 4-S",
+      "1-P, 2-R, 3-Q, 4-S",
+      "1-S, 2-Q, 3-P, 4-R"
+    ],
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "**Insight:** By analyzing each item in List-I individually, we find that: (1) Taylor's theorem on the interval $[0, 1]$ yields a minimum bound of 8 for the maximum of $f''(x)$; (2) the nested equation $f(f(x)) = 0$ decomposes into three equations, each having 3 real roots, giving 9 roots in total; (3) minimizing the distance squared from $(6,0)$ to a point on $y^2 = 4x$ yields a minimum value of 20; (4) determining the coefficients of the polynomial $f(x)$ gives $f(x) = x^4 - 8x^2 + 8$, which has a local minimum of $L = -8$, leading to $8 - L = 16$. This perfectly matches Option A.\n\nFull solution starting with Insight:\n\n**Step 1: Analyzing Item 1**\nLet $f: [0, 1] \\to \\mathbb{R}$ be a twice differentiable function with $f(0) = f(1) = 0$ and $\\min_{x \\in [0,1]} f(x) = -1$.\nLet $c \\in (0, 1)$ be the point where $f(c) = -1$. Since $c$ is a local minimum, we have $f'(c) = 0$.\nUsing Taylor's expansion about $x = c$:\n- For $x = 0$: $f(0) = f(c) + f'(c)(0-c) + \\frac{f''(\\xi_1)}{2}(0-c)^2 \\implies 0 = -1 + \\frac{f''(\\xi_1)}{2}c^2 \\implies f''(\\xi_1) = \\frac{2}{c^2}$ for some $\\xi_1 \\in (0, c)$.\n- For $x = 1$: $f(1) = f(c) + f'(c)(1-c) + \\frac{f''(\\xi_2)}{2}(1-c)^2 \\implies 0 = -1 + \\frac{f''(\\xi_2)}{2}(1-c)^2 \\implies f''(\\xi_2) = \\frac{2}{(1-c)^2}$ for some $\\xi_2 \\in (c, 1)$.\n\nThus, the maximum value of $f''(x)$ on $[0, 1]$ must satisfy:\n$$\\max_{x \\in [0,1]} f''(x) \\ge \\max \\left\\{ \\frac{2}{c^2}, \\frac{2}{(1-c)^2} \\right\\}$$\nTo minimize this maximum, we set $c = \\frac{1}{2}$, which gives:\n$$\\max_{x \\in [0,1]} f''(x) \\ge 8$$\nThus, the minimum possible value of $\\max_{x \\in [0,1]} f''(x)$ is $8$. This matches **P**.\n\n**Step 2: Analyzing Item 2**\nWe are given $f(x) = x^3 - 3x$. The equation $f(f(x)) = 0$ implies $f(x)$ must be a root of $f(t) = 0$.\nThe roots of $f(t) = t^3 - 3t = 0$ are $t = 0, \\sqrt{3}, -\\sqrt{3}$.\nThus, we need to find the number of real roots of:\n1. $f(x) = 0$\n2. $f(x) = \\sqrt{3}$\n3. $f(x) = -\\sqrt{3}$\n\nAnalyzing the function $f(x) = x^3 - 3x$, we have $f'(x) = 3(x^2 - 1)$. The local maximum is at $x = -1$ with value $f(-1) = 2$, and the local minimum is at $x = 1$ with value $f(1) = -2$.\nSince $0, \\sqrt{3}, -\\sqrt{3}$ all lie strictly within the interval of the local extrema $[-2, 2]$ (as $\\sqrt{3} \\approx 1.732$), each of the three equations $f(x) = k$ (for $k \\in \\{0, \\sqrt{3}, -\\sqrt{3}\\}$) has exactly 3 distinct real roots.\nTherefore, the total number of real roots is $3 + 3 + 3 = 9$. This matches **Q**.\n\n**Step 3: Analyzing Item 3**\nLet $P(t^2, 2t)$ be a point on the parabola $y^2 = 4x$. The square of the distance from $(6, 0)$ to $P$ is:\n$$D^2 = (t^2 - 6)^2 + (2t - 0)^2 = t^4 - 12t^2 + 36 + 4t^2 = t^4 - 8t^2 + 36$$\nLetting $u = t^2 \\ge 0$, we minimize $g(u) = u^2 - 8u + 36$.\nThe minimum of this quadratic occurs at $u = 4$, and the minimum value is:\n$$g(4) = 16 - 32 + 36 = 20$$\nThus, the square of the minimum distance is $20$. This matches **S**.\n\n**Step 4: Analyzing Item 4**\nLet $f(x) = ax^4 + bx^3 + cx^2 + dx + e$.\n- Since $f(1) = f(-1)$, we have $a + b + c + d + e = a - b + c - d + e \\implies b + d = 0$.\n- Since $x = 0$ is a critical point, $f'(0) = 0 \\implies d = 0$, which also gives $b = 0$.\nThus, $f(x) = ax^4 + cx^2 + e$ and $f'(x) = 4ax^3 + 2cx = 2x(2ax^2 + c)$.\n- Since $x = 2$ is a critical point, $f'(2) = 0 \\implies 8a + c = 0 \\implies c = -8a$.\n- We are given $f''(0) = -16$. Since $f''(x) = 12ax^2 + 2c$, we have $2c = -16 \\implies c = -8$.\n- From $c = -8a$, we find $a = 1$.\nThus, $f(x) = x^4 - 8x^2 + e$.\n- The local maximum occurs at $x = 0$ with value $f(0) = e = 8$.\nSo, the polynomial is $f(x) = x^4 - 8x^2 + 8$.\n- The local minimum occurs at $x = \\pm 2$ with value:\n$$L = f(\\pm 2) = 16 - 32 + 8 = -8$$\nWe need the value of $8 - L = 8 - (-8) = 16$. This matches **R**.\n\n**Conclusion:**\nCombining the matches:\n1 $\\to$ P, 2 $\\to$ Q, 3 $\\to$ S, 4 $\\to$ R.\nThis corresponds to Option A.",
+    "_solveSteps": [
+      "For Item 1, apply Taylor's theorem at the minimum point $c \\in (0, 1)$ to show that $\\max f''(x) \\ge \\max \\{2/c^2, 2/(1-c)^2\\}$, which is minimized at $c = 1/2$ giving a minimum value of 8 (Match: P).",
+      "For Item 2, find the roots of $f(t) = 0$ to be $0, \\pm\\sqrt{3}$. Since the local extrema of $f(x) = x^3 - 3x$ are $\\pm 2$, each equation $f(x) = 0, \\sqrt{3}, -\\sqrt{3}$ has 3 real roots, giving 9 roots in total (Match: Q).",
+      "For Item 3, write the distance squared from $(6,0)$ to $(t^2, 2t)$ as $t^4 - 8t^2 + 36$. Minimize this quadratic in $t^2$ to find the minimum value is 20 (Match: S).",
+      "For Item 4, use the given conditions to determine the polynomial $f(x) = x^4 - 8x^2 + 8$. Find the local minimum value $L = f(\\pm 2) = -8$, which gives $8 - L = 16$ (Match: R).",
+      "Assemble the matches to get 1-P, 2-Q, 3-S, 4-R, which corresponds to Option A."
+    ],
+    "_conceptSlot": "proving_inequality_rolle",
+    "_chapter": "Applications of Derivatives",
+    "_topicId": "M16",
+    "_subject": "Mathematics",
+    "_hardArchetype": "proving_inequality_rolle",
+    "_insight": "By analyzing each item in List-I individually, we find that: (1) Taylor's theorem on the interval $[0, 1]$ yields a minimum bound of 8 for the maximum of $f''(x)$; (2) the nested equation $f(f(x)) = 0$ decomposes into three equations, each having 3 real roots, giving 9 roots in total; (3) minimizing the distance squared from $(6,0)$ to a point on $y^2 = 4x$ yields a minimum value of 20; (4) determining the coefficients of the polynomial $f(x)$ gives $f(x) = x^4 - 8x^2 + 8$, which has a local minimum of $L = -8$, leading to $8 - L = 16$. This perfectly matches Option A.",
+    "_advancedType": "match",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 84,
+    "_dualA": "A",
+    "_dualB": "A",
+    "_doubleSolverAgree": true,
+    "_stageAAnswerLocked": true,
+    "_lockMode": "luna(gpt-5.6-luna:high)",
+    "_ranB": false,
+    "_verifyPass": true,
+    "_proposedKeyMatch": true,
+    "_solverConfidence": 1,
+    "_verifyBriefSteps": [
+      "1: If M=max f'' and f(c)=-1, concavity of f(x)-Mx^2/2 gives M>=2/[c(1-c)]>=8; equality is attained by f=4x^2-4x, so 1-P.",
+      "2: f(t)=0 has t=0,±sqrt(3), and each target lies strictly between the cubic's extrema ±2, giving 3 preimages each; total 9, so 2-Q.",
+      "3: Parametrize P=(t^2,2t); distance squared is (t^2-6)^2+4t^2=(t^2-4)^2+20, so 3-S.",
+      "4: Writing f'=a x(x-2)(x-r), f(1)=f(-1) gives r=-2; f''(0)=-16 gives a=4. Thus f=x^4-8x^2+C, with maximum 8 and minimum -8, so 8-L=16 and 4-R."
+    ],
+    "_optionVerdicts": {
+      "A": "true",
+      "B": "false",
+      "C": "false",
+      "D": "false"
+    },
+    "correctIndices": [
+      0
+    ],
+    "_trustBadge": "LUNA-VERIFY",
+    "_trustGrade": "production_luna",
+    "_productionReady": true,
+    "_needsReview": false,
+    "_answerCorrectnessGuaranteed": true,
+    "_explanationExpanded": true,
+    "finalAnswer": "A"
+  }
+}

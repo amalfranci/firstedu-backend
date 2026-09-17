@@ -1,0 +1,64 @@
+{
+  "ts": "2026-09-17T06:56:46.972Z",
+  "jobId": "apt-41954457-4dec-4a3c-9289-404d560acdde",
+  "seq": 5,
+  "type": "match",
+  "subject": "Physics",
+  "topicId": "P10",
+  "chapter": "Thermal Physics",
+  "stage": "generated",
+  "raw": {
+    "questionType": "match",
+    "questionText": "An ideal monoatomic gas ($C_V = \\frac{3}{2}R$) undergoes various thermodynamic processes. Match the processes described in List I with their corresponding molar heat capacities in List II.",
+    "listI": [
+      "1. A process defined by the relation $T V^2 = \\text{constant}$",
+      "2. A process defined by the relation $P^2 V = \\text{constant}$",
+      "3. A process defined by the relation $T^2 P^{-1} = \\text{constant}$",
+      "4. A process in which the work done by the gas during any infinitesimal step is related to the change in its internal energy by $dW = -2 dU$"
+    ],
+    "listII": [
+      "P. $C = \\frac{1}{2}R$",
+      "Q. $C = R$",
+      "R. $C = \\frac{7}{2}R$",
+      "S. $C = -\\frac{3}{2}R$"
+    ],
+    "options": [
+      "1-Q, 2-R, 3-P, 4-S",
+      "1-R, 2-P, 3-Q, 4-S",
+      "1-Q, 2-P, 3-R, 4-S",
+      "1-P, 2-R, 3-S, 4-Q"
+    ],
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "By converting non-standard process equations into the standard polytropic form $PV^n = \\text{constant}$, we can directly compute the molar heat capacity using $C = C_V + \\frac{R}{1-n}$.",
+    "_solveSteps": [],
+    "_conceptSlot": "polytropic_molar_heat",
+    "_chapter": "Thermal Physics",
+    "_topicId": "P10",
+    "_subject": "Physics",
+    "_hardArchetype": "polytropic_molar_heat",
+    "_insight": "By converting non-standard process equations into the standard polytropic form $PV^n = \\text{constant}$, we can directly compute the molar heat capacity using $C = C_V + \\frac{R}{1-n}$.",
+    "_advancedType": "match",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 82
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 816,
+      "completionTokens": 467,
+      "totalTokens": 4020,
+      "reasoningTokens": 2737
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 816,
+    "completionTokens": 467,
+    "totalTokens": 4020,
+    "reasoningTokens": 2737,
+    "calls": 1
+  }
+}

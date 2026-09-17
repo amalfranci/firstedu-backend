@@ -1,0 +1,177 @@
+{
+  "ts": "2026-09-17T05:36:51.293Z",
+  "jobId": "apt-4b887f5e-51a3-4a6c-94da-b5c00c060955",
+  "status": "ready_to_confirm",
+  "count": 4,
+  "questions": [
+    {
+      "questionType": "single",
+      "text": "Let $P$ be the parabola $y^2 = 4x$ with focus $F$. Let $E$ be the ellipse $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ ($a > 1$) which is confocal with $P$ (sharing the focus $F$). A common tangent $L$ to $P$ and $E$ with positive slope touches $P$ at $A$ and $E$ at $B$. If the eccentricity of $E$ is $\\frac{1}{2}$, then which of the following is correct?",
+      "questionText": "Let $P$ be the parabola $y^2 = 4x$ with focus $F$. Let $E$ be the ellipse $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ ($a > 1$) which is confocal with $P$ (sharing the focus $F$). A common tangent $L$ to $P$ and $E$ with positive slope touches $P$ at $A$ and $E$ at $B$. If the eccentricity of $E$ is $\\frac{1}{2}$, then which of the following is correct?",
+      "options": [
+        "A) The area of $\\triangle FAB$ is $\\frac{25}{4}$",
+        "B) The length of the segment $AB$ is $5$",
+        "C) The slope of the common tangent $L$ is $\\frac{\\sqrt{3}}{2}$",
+        "D) The point $B$ lies on the line $x + 2y = 1$"
+      ],
+      "correctAnswer": "A",
+      "correctIndex": 0,
+      "correctIndices": [
+        0
+      ],
+      "multipleCorrectIndexes": [],
+      "explanation": "**Insight:** By using the confocal property, we determine the equation of the ellipse. Finding the common tangent with positive slope gives the slope $m = 1/2$, from which the points of contact $A$ on the parabola and $B$ on the ellipse are uniquely determined. Finally, the area of $\\triangle FAB$ is calculated using the coordinate geometry formula.\n\nTo find the correct option, we first determine the equations of the parabola $P$ and the ellipse $E$.\n\n**Step 1: Identify the focus and the equation of the ellipse**\nThe parabola is given by $P: y^2 = 4x$. Its focus is $F(1, 0)$.\nSince the ellipse $E: \\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ is confocal with $P$, its focus is also $F(1, 0)$.\nThus, $ae = 1$.\nGiven the eccentricity $e = \\frac{1}{2}$, we have:\n$$a \\left(\\frac{1}{2}\\right) = 1 \\implies a = 2$$\nUsing the relation $b^2 = a^2(1 - e^2)$:\n$$b^2 = 4\\left(1 - \\frac{1}{4}\\right) = 3$$\nSo, the equation of the ellipse $E$ is:\n$$\\frac{x^2}{4} + \\frac{y^2}{3} = 1$$\n\n**Step 2: Find the common tangent $L$**\nLet the slope of the common tangent $L$ be $m > 0$.\nAny tangent to the parabola $y^2 = 4x$ is of the form:\n$$y = mx + \\frac{1}{m}$$\nAny tangent to the ellipse $\\frac{x^2}{4} + \\frac{y^2}{3} = 1$ is of the form:\n$$y = mx \\pm \\sqrt{4m^2 + 3}$$\nFor these to represent the same line, we must have:\n$$\\frac{1}{m} = \\sqrt{4m^2 + 3} \\implies \\frac{1}{m^2} = 4m^2 + 3$$\n$$4m^4 + 3m^2 - 1 = 0 \\implies (4m^2 - 1)(m^2 + 1) = 0$$\nSince $m > 0$, we get $m^2 = \\frac{1}{4} \\implies m = \\frac{1}{2}$.\n\n**Step 3: Find the points of contact $A$ and $B$**\n- For the parabola $P$, the point of contact $A$ is given by:\n$$A\\left(\\frac{1}{m^2}, \\frac{2}{m}\\right) = A(4, 4)$$\n- For the ellipse $E$, the point of contact $B(x_1, y_1)$ is given by:\n$$x_1 = -\\frac{a^2 m}{c}, \\quad y_1 = \\frac{b^2}{c}$$\nwhere $c = \\frac{1}{m} = 2$. Thus:\n$$x_1 = -\\frac{4 \\cdot (1/2)}{2} = -1, \\quad y_1 = \\frac{3}{2} \\implies B\\left(-1, \\frac{3}{2}\\right)$$\n\n**Step 4: Calculate the area of $\\triangle FAB$**\nThe coordinates of the vertices are $F(1, 0)$, $A(4, 4)$, and $B\\left(-1, \\frac{3}{2}\right)$.\n$$\\text{Area}(\\triangle FAB) = \\frac{1}{2} \\left| x_F(y_A - y_B) + x_A(y_B - y_F) + x_B(y_F - y_A) \\right|$$\n$$\\text{Area}(\\triangle FAB) = \\frac{1}{2} \\left| 1\\left(4 - \\frac{3}{2}\\right) + 4\\left(\\frac{3}{2} - 0\\right) + (-1)(0 - 4) \\right|$$\n$$\\text{Area}(\\triangle FAB) = \\frac{1}{2} \\left| \\frac{5}{2} + 6 + 4 \\right| = \\frac{1}{2} \\left( \\frac{25}{2} \\right) = \\frac{25}{4}$$\n\nThus, the area of $\\triangle FAB$ is indeed $\\frac{25}{4}$, which corresponds to option A.",
+      "marks": 4,
+      "negativeMarks": 1,
+      "difficulty": "Hard",
+      "_conceptSlot": "common_tangent_conics",
+      "_chapter": "Conic Sections",
+      "_topicId": "M13",
+      "_subject": "Mathematics",
+      "_advancedType": "single",
+      "_lockMode": "luna(gpt-5.6-luna:high)",
+      "_trustBadge": "LUNA-VERIFY",
+      "_trustGrade": "production_luna",
+      "_productionReady": true,
+      "_needsReview": false,
+      "_doubleSolverAgree": true,
+      "_explanationExpanded": true,
+      "_insight": "By using the confocal property, we determine the equation of the ellipse. Finding the common tangent with positive slope gives the slope $m = 1/2$, from which the points of contact $A$ on the parabola and $B$ on the ellipse are uniquely determined. Finally, the area of $\\triangle FAB$ is calculated using the coordinate geometry formula.",
+      "difficultyTier": "hard",
+      "_questionKind": "multi_concept"
+    },
+    {
+      "questionType": "multiple",
+      "text": "Let $z$ be a complex number satisfying the equation $|z - 3| = 2|z - 3i|$. Let $S$ denote the locus of $z$ in the Argand plane. Which of the following statements is/are correct?",
+      "questionText": "Let $z$ be a complex number satisfying the equation $|z - 3| = 2|z - 3i|$. Let $S$ denote the locus of $z$ in the Argand plane. Which of the following statements is/are correct?",
+      "options": [
+        "A) The locus $S$ is a circle with center $-1+4i$ and radius $2\\sqrt{2}$.",
+        "B) For any $z$ on the locus $S$ (with $z \\neq 1+6i$), the real part of $\\frac{z + 3 - 2i}{z - 1 - 6i}$ is equal to $0$.",
+        "C) The minimum value of $|z|^2$ for $z \\in S$ is $25 - 4\\sqrt{34}$.",
+        "D) The maximum value of $|z - (1+i)|$ for $z \\in S$ is $\\sqrt{13} + 2\\sqrt{2}$."
+      ],
+      "correctAnswer": "A,B,C,D",
+      "correctIndex": 0,
+      "correctIndices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "multipleCorrectIndexes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "**Insight:** By substituting $z = x + iy$ into the given equation $|z - 3| = 2|z - 3i|$, we can simplify it to find that the locus $S$ is a circle. From the standard equation of this circle, we can determine its center, radius, and analyze the geometric properties required to evaluate each option.\n\nBy substituting $z = x + iy$ into the given equation $|z - 3| = 2|z - 3i|$, we can simplify it to find that the locus $S$ is a circle. From the standard equation of this circle, we can determine its center, radius, and analyze the geometric properties required to evaluate each option.\n\n**Core Derivation:**\nLet $z = x + iy$. The given equation is:\n$$|z - 3| = 2|z - 3i|$$\nSquaring both sides:\n$$|z - 3|^2 = 4|z - 3i|^2$$\n$$(x-3)^2 + y^2 = 4(x^2 + (y-3)^2)$$\n$$x^2 - 6x + 9 + y^2 = 4(x^2 + y^2 - 6y + 9)$$\n$$x^2 + y^2 - 6x + 9 = 4x^2 + 4y^2 - 24y + 36$$\n$$3x^2 + 3y^2 + 6x - 24y + 27 = 0$$\nDividing by $3$:\n$$x^2 + y^2 + 2x - 8y + 9 = 0$$\nThis is the equation of a circle with:\n- Center $C = (-1, 4)$, which corresponds to the complex number $-1 + 4i$.\n- Radius $R = \\sqrt{(-1)^2 + 4^2 - 9} = \\sqrt{1 + 16 - 9} = \\sqrt{8} = 2\\sqrt{2}$.\n\n**Judging Option A:**\nThe locus $S$ is indeed a circle with center $-1+4i$ and radius $2\\sqrt{2}$. Thus, Option A is **TRUE**.\n\n**Judging Option B:**\nLet $z_1 = -3 + 2i$ and $z_2 = 1 + 6i$. \nThe midpoint of $z_1$ and $z_2$ is $\\frac{-3+2i + 1+6i}{2} = -1+4i$, which is the center $C$ of the circle.\nThe distance from $C$ to $z_2$ is $|(1+6i) - (-1+4i)| = |2+2i| = \\sqrt{8} = 2\\sqrt{2} = R$.\nThus, $z_1$ and $z_2$ are diametrically opposite points on the circle $S$.\nFor any point $z$ on the circle (with $z \\neq z_2$), the angle subtended by the diameter $z_1 z_2$ at $z$ is $\\frac{\\pi}{2}$.\nTherefore, the vector $z - z_1$ is perpendicular to $z - z_2$, which means $\\frac{z - z_1}{z - z_2}$ is purely imaginary.\nThus, $\\text{Re}\\left(\\frac{z + 3 - 2i}{z - 1 - 6i}\\right) = 0$. Thus, Option B is **TRUE**.\n\n**Judging Option C:**\nThe distance from the origin $O(0,0)$ to the center $C(-1, 4)$ is $OC = \\sqrt{(-1)^2 + 4^2} = \\sqrt{17}$.\nThe minimum distance from the origin to any point $z$ on the circle is:\n$$|z|_{\\min} = OC - R = \\sqrt{17} - 2\\sqrt{2}$$\nThus, the minimum value of $|z|^2$ is:\n$$|z|_{\\min}^2 = (\\sqrt{17} - 2\\sqrt{2})^2 = 17 + 8 - 4\\sqrt{34} = 25 - 4\\sqrt{34}$$\nThus, Option C is **TRUE**.\n\n**Judging Option D:**\nLet $P$ be the point representing $1+i$. The distance from $P$ to the center $C(-1, 4)$ is:\n$$PC = |(-1+4i) - (1+i)| = |-2 + 3i| = \\sqrt{(-2)^2 + 3^2} = \\sqrt{13}$$\nThe maximum distance from $P$ to any point $z$ on the circle is:\n$$|z - (1+i)|_{\\max} = PC + R = \\sqrt{13} + 2\\sqrt{2}$$\nThus, Option D is **TRUE**.\n\nTherefore correct option(s): A,B,C,D",
+      "marks": 4,
+      "negativeMarks": 1,
+      "difficulty": "Hard",
+      "_conceptSlot": "apollonius_locus_properties",
+      "_chapter": "Complex Numbers",
+      "_topicId": "M02",
+      "_subject": "Mathematics",
+      "_advancedType": "multiple",
+      "_lockMode": "luna(gpt-5.6-luna:high)",
+      "_trustBadge": "LUNA-VERIFY",
+      "_trustGrade": "production_luna",
+      "_productionReady": true,
+      "_needsReview": false,
+      "_doubleSolverAgree": true,
+      "_explanationExpanded": true,
+      "_insight": "By substituting $z = x + iy$ into the given equation $|z - 3| = 2|z - 3i|$, we can simplify it to find that the locus $S$ is a circle. From the standard equation of this circle, we can determine its center, radius, and analyze the geometric properties required to evaluate each option.",
+      "difficultyTier": "hard",
+      "_questionKind": "multi_concept"
+    },
+    {
+      "questionType": "single",
+      "text": "An urn initially contains 2 red balls and 2 blue balls. In each step, a ball is drawn at random from the urn. If a red ball is drawn, it is removed and replaced by a blue ball. If a blue ball is drawn, it is removed and replaced by a red ball. This process is repeated until all 4 balls in the urn are of the same color. If the expected number of steps required for the process to terminate is $E$, find the value of $E$.",
+      "questionText": "An urn initially contains 2 red balls and 2 blue balls. In each step, a ball is drawn at random from the urn. If a red ball is drawn, it is removed and replaced by a blue ball. If a blue ball is drawn, it is removed and replaced by a red ball. This process is repeated until all 4 balls in the urn are of the same color. If the expected number of steps required for the process to terminate is $E$, find the value of $E$.",
+      "options": [
+        "8"
+      ],
+      "correctAnswer": 8,
+      "correctIndex": 0,
+      "correctIndices": [],
+      "multipleCorrectIndexes": [],
+      "explanation": "**Insight:** Model the process as a Markov chain where the state is the number of red balls in the urn. Set up a system of linear equations for the expected number of steps to absorption, utilizing symmetry to simplify the calculations.\n\nLet the state of the urn be represented by the number of red balls, $k \\in \\{0, 1, 2, 3, 4\\}$. The process terminates when the urn contains either 0 red balls (all blue) or 4 red balls (all red). Thus, states 0 and 4 are absorbing states, meaning $E_0 = E_4 = 0$. Let $E_k$ denote the expected number of steps to reach termination starting from state $k$. We wish to find $E = E_2$. By analyzing the transition probabilities from each state: From state 1, a red ball is drawn with probability $\\frac{1}{4}$ (transitioning to state 0) and a blue ball with probability $\\frac{3}{4}$ (transitioning to state 2). This gives the equation: $E_1 = 1 + \\frac{1}{4}E_0 + \\frac{3}{4}E_2 = 1 + \\frac{3}{4}E_2$. From state 2, a red ball is drawn with probability $\\frac{2}{4}$ (transitioning to state 1) and a blue ball with probability $\\frac{2}{4}$ (transitioning to state 3). This gives: $E_2 = 1 + \\frac{1}{2}E_1 + \\frac{1}{2}E_3$. By symmetry of the colors, the expected steps from state 1 and state 3 are equal, so $E_1 = E_3$. Substituting this into the equation for $E_2$ yields $E_2 = 1 + E_1$. Substituting $E_1 = 1 + \\frac{3}{4}E_2$ into this equation gives $E_2 = 1 + \\left(1 + \\frac{3}{4}E_2\\right) = 2 + \\frac{3}{4}E_2$. Solving for $E_2$ gives $\\frac{1}{4}E_2 = 2$, which simplifies to $E_2 = 8$. Thus, the expected number of steps is 8. FINAL_ANSWER: 8",
+      "marks": 4,
+      "negativeMarks": 1,
+      "difficulty": "Hard",
+      "_conceptSlot": "model_recursion",
+      "_chapter": "Probability",
+      "_topicId": "M08",
+      "_subject": "Mathematics",
+      "_advancedType": "integer",
+      "_lockMode": "luna(gpt-5.6-luna:high)",
+      "_trustBadge": "LUNA-VERIFY",
+      "_trustGrade": "production_luna",
+      "_productionReady": true,
+      "_needsReview": false,
+      "_doubleSolverAgree": true,
+      "_explanationExpanded": true,
+      "_insight": "Model the process as a Markov chain where the state is the number of red balls in the urn. Set up a system of linear equations for the expected number of steps to absorption, utilizing symmetry to simplify the calculations.",
+      "difficultyTier": "hard",
+      "_questionKind": "multi_concept"
+    },
+    {
+      "questionType": "single",
+      "text": "Match the properties/values in List I with the corresponding values in List II.",
+      "questionText": "Match the properties/values in List I with the corresponding values in List II.",
+      "options": [
+        "A) 1-P, 2-Q, 3-S, 4-R",
+        "B) 1-Q, 2-P, 3-R, 4-S",
+        "C) 1-P, 2-R, 3-Q, 4-S",
+        "D) 1-S, 2-Q, 3-P, 4-R"
+      ],
+      "correctAnswer": "A",
+      "correctIndex": 0,
+      "correctIndices": [
+        0
+      ],
+      "multipleCorrectIndexes": [],
+      "explanation": "**Insight:** By analyzing each item in List-I individually, we find that: (1) Taylor's theorem on the interval $[0, 1]$ yields a minimum bound of 8 for the maximum of $f''(x)$; (2) the nested equation $f(f(x)) = 0$ decomposes into three equations, each having 3 real roots, giving 9 roots in total; (3) minimizing the distance squared from $(6,0)$ to a point on $y^2 = 4x$ yields a minimum value of 20; (4) determining the coefficients of the polynomial $f(x)$ gives $f(x) = x^4 - 8x^2 + 8$, which has a local minimum of $L = -8$, leading to $8 - L = 16$. This perfectly matches Option A.\n\nFull solution starting with Insight:\n\n**Step 1: Analyzing Item 1**\nLet $f: [0, 1] \\to \\mathbb{R}$ be a twice differentiable function with $f(0) = f(1) = 0$ and $\\min_{x \\in [0,1]} f(x) = -1$.\nLet $c \\in (0, 1)$ be the point where $f(c) = -1$. Since $c$ is a local minimum, we have $f'(c) = 0$.\nUsing Taylor's expansion about $x = c$:\n- For $x = 0$: $f(0) = f(c) + f'(c)(0-c) + \\frac{f''(\\xi_1)}{2}(0-c)^2 \\implies 0 = -1 + \\frac{f''(\\xi_1)}{2}c^2 \\implies f''(\\xi_1) = \\frac{2}{c^2}$ for some $\\xi_1 \\in (0, c)$.\n- For $x = 1$: $f(1) = f(c) + f'(c)(1-c) + \\frac{f''(\\xi_2)}{2}(1-c)^2 \\implies 0 = -1 + \\frac{f''(\\xi_2)}{2}(1-c)^2 \\implies f''(\\xi_2) = \\frac{2}{(1-c)^2}$ for some $\\xi_2 \\in (c, 1)$.\n\nThus, the maximum value of $f''(x)$ on $[0, 1]$ must satisfy:\n$$\\max_{x \\in [0,1]} f''(x) \\ge \\max \\left\\{ \\frac{2}{c^2}, \\frac{2}{(1-c)^2} \\right\\}$$\nTo minimize this maximum, we set $c = \\frac{1}{2}$, which gives:\n$$\\max_{x \\in [0,1]} f''(x) \\ge 8$$\nThus, the minimum possible value of $\\max_{x \\in [0,1]} f''(x)$ is $8$. This matches **P**.\n\n**Step 2: Analyzing Item 2**\nWe are given $f(x) = x^3 - 3x$. The equation $f(f(x)) = 0$ implies $f(x)$ must be a root of $f(t) = 0$.\nThe roots of $f(t) = t^3 - 3t = 0$ are $t = 0, \\sqrt{3}, -\\sqrt{3}$.\nThus, we need to find the number of real roots of:\n1. $f(x) = 0$\n2. $f(x) = \\sqrt{3}$\n3. $f(x) = -\\sqrt{3}$\n\nAnalyzing the function $f(x) = x^3 - 3x$, we have $f'(x) = 3(x^2 - 1)$. The local maximum is at $x = -1$ with value $f(-1) = 2$, and the local minimum is at $x = 1$ with value $f(1) = -2$.\nSince $0, \\sqrt{3}, -\\sqrt{3}$ all lie strictly within the interval of the local extrema $[-2, 2]$ (as $\\sqrt{3} \\approx 1.732$), each of the three equations $f(x) = k$ (for $k \\in \\{0, \\sqrt{3}, -\\sqrt{3}\\}$) has exactly 3 distinct real roots.\nTherefore, the total number of real roots is $3 + 3 + 3 = 9$. This matches **Q**.\n\n**Step 3: Analyzing Item 3**\nLet $P(t^2, 2t)$ be a point on the parabola $y^2 = 4x$. The square of the distance from $(6, 0)$ to $P$ is:\n$$D^2 = (t^2 - 6)^2 + (2t - 0)^2 = t^4 - 12t^2 + 36 + 4t^2 = t^4 - 8t^2 + 36$$\nLetting $u = t^2 \\ge 0$, we minimize $g(u) = u^2 - 8u + 36$.\nThe minimum of this quadratic occurs at $u = 4$, and the minimum value is:\n$$g(4) = 16 - 32 + 36 = 20$$\nThus, the square of the minimum distance is $20$. This matches **S**.\n\n**Step 4: Analyzing Item 4**\nLet $f(x) = ax^4 + bx^3 + cx^2 + dx + e$.\n- Since $f(1) = f(-1)$, we have $a + b + c + d + e = a - b + c - d + e \\implies b + d = 0$.\n- Since $x = 0$ is a critical point, $f'(0) = 0 \\implies d = 0$, which also gives $b = 0$.\nThus, $f(x) = ax^4 + cx^2 + e$ and $f'(x) = 4ax^3 + 2cx = 2x(2ax^2 + c)$.\n- Since $x = 2$ is a critical point, $f'(2) = 0 \\implies 8a + c = 0 \\implies c = -8a$.\n- We are given $f''(0) = -16$. Since $f''(x) = 12ax^2 + 2c$, we have $2c = -16 \\implies c = -8$.\n- From $c = -8a$, we find $a = 1$.\nThus, $f(x) = x^4 - 8x^2 + e$.\n- The local maximum occurs at $x = 0$ with value $f(0) = e = 8$.\nSo, the polynomial is $f(x) = x^4 - 8x^2 + 8$.\n- The local minimum occurs at $x = \\pm 2$ with value:\n$$L = f(\\pm 2) = 16 - 32 + 8 = -8$$\nWe need the value of $8 - L = 8 - (-8) = 16$. This matches **R**.\n\n**Conclusion:**\nCombining the matches:\n1 $\\to$ P, 2 $\\to$ Q, 3 $\\to$ S, 4 $\\to$ R.\nThis corresponds to Option A.",
+      "marks": 4,
+      "negativeMarks": 1,
+      "difficulty": "Hard",
+      "_conceptSlot": "proving_inequality_rolle",
+      "_chapter": "Applications of Derivatives",
+      "_topicId": "M16",
+      "_subject": "Mathematics",
+      "_advancedType": "match",
+      "_lockMode": "luna(gpt-5.6-luna:high)",
+      "_trustBadge": "LUNA-VERIFY",
+      "_trustGrade": "production_luna",
+      "_productionReady": true,
+      "_needsReview": false,
+      "_doubleSolverAgree": true,
+      "_explanationExpanded": true,
+      "_insight": "By analyzing each item in List-I individually, we find that: (1) Taylor's theorem on the interval $[0, 1]$ yields a minimum bound of 8 for the maximum of $f''(x)$; (2) the nested equation $f(f(x)) = 0$ decomposes into three equations, each having 3 real roots, giving 9 roots in total; (3) minimizing the distance squared from $(6,0)$ to a point on $y^2 = 4x$ yields a minimum value of 20; (4) determining the coefficients of the polynomial $f(x)$ gives $f(x) = x^4 - 8x^2 + 8$, which has a local minimum of $L = -8$, leading to $8 - L = 16$. This perfectly matches Option A.",
+      "listI": [
+        "Let $f: [0, 1] \\to \\mathbb{R}$ be a twice differentiable function with $f(0) = f(1) = 0$ and $\\min_{x \\in [0,1]} f(x) = -1$. The minimum possible value of $\\max_{x \\in [0,1]} f''(x)$ is",
+        "The number of real roots of the equation $f(f(x)) = 0$, where $f(x) = x^3 - 3x$, is",
+        "Let $P$ be a point on the parabola $y^2 = 4x$. The square of the minimum distance from the point $(6, 0)$ to $P$ is",
+        "Let $f(x)$ be a real polynomial of degree 4 satisfying $f(1) = f(-1)$, $f''(0) = -16$, and having critical points at $x = 0$ and $x = 2$. If the local maximum value of $f(x)$ is 8 and the local minimum value is $L$, then the value of $8 - L$ is"
+      ],
+      "listII": [
+        "8",
+        "9",
+        "16",
+        "20"
+      ],
+      "difficultyTier": "hard",
+      "_questionKind": "multi_concept"
+    }
+  ],
+  "phase": "done",
+  "message": "Done — 4 locked questions",
+  "counts": {
+    "single": 1,
+    "multiple": 1,
+    "integer": 1,
+    "match": 1,
+    "total": 4,
+    "expected": 4
+  }
+}

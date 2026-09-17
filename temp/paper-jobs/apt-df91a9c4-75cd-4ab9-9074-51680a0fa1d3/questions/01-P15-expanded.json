@@ -1,0 +1,140 @@
+{
+  "ts": "2026-09-17T06:34:07.038Z",
+  "jobId": "apt-df91a9c4-75cd-4ab9-9074-51680a0fa1d3",
+  "seq": 1,
+  "type": "single",
+  "subject": "Physics",
+  "topicId": "P15",
+  "chapter": "Electromagnetic Induction and AC Circuits",
+  "stage": "expanded",
+  "raw": {
+    "questionType": "single",
+    "questionText": "A conducting rod of mass $m$ and length $\\ell$ can slide without friction on two long, horizontal, parallel conducting rails. The rails are connected at one end through a series combination of a resistor $R$ and an initially uncharged capacitor $C$. A uniform vertical magnetic field $B$ is present throughout the region, perpendicular to the plane of the rails. At $t = 0$, the rod is projected with an initial velocity $v_0$ along the rails away from the capacitor-resistor connection. Neglecting the self-inductance of the loop and the electrical resistance of the rails and the rod, find the total heat energy $H$ dissipated in the resistor during the entire subsequent motion of the rod.",
+    "options": [
+      "$\\frac{m v_0^2 B^2 \\ell^2 C}{2(m + B^2 \\ell^2 C)}$",
+      "$\\frac{m^2 v_0^2}{2(m + B^2 \\ell^2 C)}$",
+      "$\\frac{m v_0^2 B^2 \\ell^2 C}{m + B^2 \\ell^2 C}$",
+      "$\\frac{m v_0^2 (B^2 \\ell^2 C)^2}{2(m + B^2 \\ell^2 C)^2}$"
+    ],
+    "correctIndices": [
+      0
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A",
+    "explanation": "By integrating the equation of motion, we relate the change in velocity to the charge on the capacitor, allowing us to find the final state and use energy conservation to obtain the heat loss without solving the differential equation.",
+    "_solveSteps": [],
+    "_conceptSlot": "sliding_rails_capacitor",
+    "_chapter": "Electromagnetic Induction and AC Circuits",
+    "_topicId": "P15",
+    "_subject": "Physics",
+    "_hardArchetype": "sliding_rails_capacitor",
+    "_insight": "By integrating the equation of motion, we relate the change in velocity to the charge on the capacitor, allowing us to find the final state and use energy conservation to obtain the heat loss without solving the differential equation.",
+    "_advancedType": "single",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 82
+  },
+  "tryNo": 2,
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 557,
+      "completionTokens": 398,
+      "totalTokens": 6704,
+      "reasoningTokens": 5749
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 557,
+      "completionTokens": 434,
+      "totalTokens": 5126,
+      "reasoningTokens": 4135
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-5.6-luna",
+      "kind": "verify",
+      "promptTokens": 804,
+      "completionTokens": 875,
+      "totalTokens": 1679,
+      "reasoningTokens": 799
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "expand",
+      "promptTokens": 456,
+      "completionTokens": 1343,
+      "totalTokens": 3652,
+      "reasoningTokens": 1853
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 2374,
+    "completionTokens": 3050,
+    "totalTokens": 17161,
+    "reasoningTokens": 12536,
+    "calls": 4
+  },
+  "locked": {
+    "questionType": "single",
+    "questionText": "A conducting rod of mass $m$ and length $\\ell$ can slide without friction on two long, horizontal, parallel conducting rails. The rails are connected at one end through a series combination of a resistor $R$ and an initially uncharged capacitor $C$. A uniform vertical magnetic field $B$ is present throughout the region, perpendicular to the plane of the rails. At $t = 0$, the rod is projected with an initial velocity $v_0$ along the rails away from the capacitor-resistor connection. Neglecting the self-inductance of the loop and the electrical resistance of the rails and the rod, find the total heat energy $H$ dissipated in the resistor during the entire subsequent motion of the rod.",
+    "options": [
+      "$\\frac{m v_0^2 B^2 \\ell^2 C}{2(m + B^2 \\ell^2 C)}$",
+      "$\\frac{m^2 v_0^2}{2(m + B^2 \\ell^2 C)}$",
+      "$\\frac{m v_0^2 B^2 \\ell^2 C}{m + B^2 \\ell^2 C}$",
+      "$\\frac{m v_0^2 (B^2 \\ell^2 C)^2}{2(m + B^2 \\ell^2 C)^2}$"
+    ],
+    "correctIndices": [
+      0
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A",
+    "explanation": "**Insight:** By integrating the equation of motion of the rod, we can relate its velocity directly to the charge on the capacitor. At $t \\to \\infty$, the current decays to zero, establishing a steady-state final velocity and charge. The total heat dissipated in the resistor is the difference between the initial kinetic energy and the final total energy (kinetic + electrostatic) of the system.\n\nInsight: The electromagnetic force on the rod is proportional to the current, which is the rate of flow of charge into the capacitor. Integrating this force over time gives a direct conservation-like relation between the rod's momentum and the capacitor's charge. Once the current ceases, the system reaches a steady state. The total heat dissipated in the resistor is found by calculating the loss in the total energy of the system.\n\nLet $v(t)$ be the velocity of the rod and $q(t)$ be the charge on the capacitor at any time $t$. The induced electromotive force (emf) in the rod is given by:\n$\\mathcal{E} = B \\ell v$\n\nThe loop equation for the series $R-C$ circuit is:\n$B \\ell v - \\frac{q}{C} - i R = 0$\n\nwhere $i = \\frac{dq}{dt}$ is the current in the circuit. The magnetic force acting on the rod is:\n$F = -B i \\ell$\n\nApplying Newton's second law to the rod:\n$m \\frac{dv}{dt} = -B i \\ell = -B \\ell \\frac{dq}{dt}$\n\nIntegrating both sides from $t = 0$ (where $v = v_0$ and $q = 0$) to any time $t$:\n$m(v - v_0) = -B \\ell q \\implies q = \\frac{m(v_0 - v)}{B \\ell}$\n\nAs $t \\to \\infty$, the current $i \\to 0$, and the rod reaches a constant final velocity $v_f$ with a final charge $q_f$ on the capacitor. From the loop equation with $i = 0$:\n$B \\ell v_f - \\frac{q_f}{C} = 0 \\implies q_f = B \\ell C v_f$\n\nEquating the two expressions for $q_f$:\n$\\frac{m(v_0 - v_f)}{B \\ell} = B \\ell C v_f \\implies m(v_0 - v_f) = B^2 \\ell^2 C v_f$\n\nSolving for $v_f$:\n$v_f = \\frac{m v_0}{m + B^2 \\ell^2 C}$\n\nThe initial energy of the system is purely kinetic:\n$E_i = \\frac{1}{2} m v_0^2$\n\nThe final energy of the system is the sum of the final kinetic energy of the rod and the electrostatic energy stored in the capacitor:\n$E_f = \\frac{1}{2} m v_f^2 + \\frac{1}{2} \\frac{q_f^2}{C} = \\frac{1}{2} m v_f^2 + \\frac{1}{2} B^2 \\ell^2 C v_f^2 = \\frac{1}{2} (m + B^2 \\ell^2 C) v_f^2$\n\nSubstituting the expression for $v_f$:\n$E_f = \\frac{1}{2} (m + B^2 \\ell^2 C) \\left( \\frac{m v_0}{m + B^2 \\ell^2 C} \\right)^2 = \\frac{m^2 v_0^2}{2(m + B^2 \\ell^2 C)}$\n\nThe total heat energy $H$ dissipated in the resistor is the difference between the initial and final energies:\n$H = E_i - E_f = \\frac{1}{2} m v_0^2 - \\frac{m^2 v_0^2}{2(m + B^2 \\ell^2 C)}$\n$H = \\frac{1}{2} m v_0^2 \\left( 1 - \\frac{m}{m + B^2 \\ell^2 C} \\right) = \\frac{m v_0^2 B^2 \\ell^2 C}{2(m + B^2 \\ell^2 C)}$\n\nThis matches Option A.",
+    "_solveSteps": [
+      "Write the equation of motion for the rod: $m \\frac{dv}{dt} = -B i \\ell$.",
+      "Integrate the equation of motion to express the charge on the capacitor as a function of velocity: $q(t) = \\frac{m(v_0 - v)}{B \\ell}$.",
+      "Set $i = 0$ at $t \\to \\infty$ in the loop equation to find the relation between final velocity $v_f$ and final charge $q_f$: $q_f = B \\ell C v_f$.",
+      "Combine the two relations to solve for the final velocity: $v_f = \\frac{m v_0}{m + B^2 \\ell^2 C}$.",
+      "Calculate the initial energy $E_i = \\frac{1}{2} m v_0^2$ and the final energy $E_f = \\frac{1}{2} (m + B^2 \\ell^2 C) v_f^2 = \\frac{m^2 v_0^2}{2(m + B^2 \\ell^2 C)}$.",
+      "Determine the total heat dissipated as $H = E_i - E_f = \\frac{m v_0^2 B^2 \\ell^2 C}{2(m + B^2 \\ell^2 C)}$."
+    ],
+    "_conceptSlot": "sliding_rails_capacitor",
+    "_chapter": "Electromagnetic Induction and AC Circuits",
+    "_topicId": "P15",
+    "_subject": "Physics",
+    "_hardArchetype": "sliding_rails_capacitor",
+    "_insight": "By integrating the equation of motion of the rod, we can relate its velocity directly to the charge on the capacitor. At $t \\to \\infty$, the current decays to zero, establishing a steady-state final velocity and charge. The total heat dissipated in the resistor is the difference between the initial kinetic energy and the final total energy (kinetic + electrostatic) of the system.",
+    "_advancedType": "single",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 82,
+    "_dualA": "A",
+    "_dualB": "A",
+    "_doubleSolverAgree": true,
+    "_stageAAnswerLocked": true,
+    "_lockMode": "luna(gpt-5.6-luna:high)",
+    "_ranB": false,
+    "_verifyPass": true,
+    "_proposedKeyMatch": true,
+    "_solverConfidence": 0.98,
+    "_mathematicalCorrect": true,
+    "_chapterMatch": true,
+    "_conceptMatch": true,
+    "_difficultyMatch": true,
+    "_formatValid": true,
+    "_verifyBriefSteps": [],
+    "_optionVerdicts": null,
+    "_trustBadge": "LUNA-VERIFY",
+    "_trustGrade": "production_luna",
+    "_productionReady": true,
+    "_needsReview": false,
+    "_answerCorrectnessGuaranteed": true,
+    "_explanationExpanded": true,
+    "finalAnswer": "A"
+  }
+}

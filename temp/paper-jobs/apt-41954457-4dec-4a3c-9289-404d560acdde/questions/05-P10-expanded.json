@@ -1,0 +1,157 @@
+{
+  "ts": "2026-09-17T06:58:07.769Z",
+  "jobId": "apt-41954457-4dec-4a3c-9289-404d560acdde",
+  "seq": 5,
+  "type": "match",
+  "subject": "Physics",
+  "topicId": "P10",
+  "chapter": "Thermal Physics",
+  "stage": "expanded",
+  "raw": {
+    "questionType": "match",
+    "questionText": "An ideal monoatomic gas ($C_V = \\frac{3}{2}R$) undergoes various thermodynamic processes. Match the processes described in List I with their corresponding molar heat capacities in List II.",
+    "listI": [
+      "1. A process defined by the relation $T V^2 = \\text{constant}$",
+      "2. A process defined by the relation $P^2 V = \\text{constant}$",
+      "3. A process defined by the relation $T^2 P^{-1} = \\text{constant}$",
+      "4. A process in which the work done by the gas during any infinitesimal step is related to the change in its internal energy by $dW = -2 dU$"
+    ],
+    "listII": [
+      "P. $C = \\frac{1}{2}R$",
+      "Q. $C = R$",
+      "R. $C = \\frac{7}{2}R$",
+      "S. $C = -\\frac{3}{2}R$"
+    ],
+    "options": [
+      "1-Q, 2-R, 3-P, 4-S",
+      "1-R, 2-P, 3-Q, 4-S",
+      "1-Q, 2-P, 3-R, 4-S",
+      "1-P, 2-R, 3-S, 4-Q"
+    ],
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "By converting non-standard process equations into the standard polytropic form $PV^n = \\text{constant}$, we can directly compute the molar heat capacity using $C = C_V + \\frac{R}{1-n}$.",
+    "_solveSteps": [],
+    "_conceptSlot": "polytropic_molar_heat",
+    "_chapter": "Thermal Physics",
+    "_topicId": "P10",
+    "_subject": "Physics",
+    "_hardArchetype": "polytropic_molar_heat",
+    "_insight": "By converting non-standard process equations into the standard polytropic form $PV^n = \\text{constant}$, we can directly compute the molar heat capacity using $C = C_V + \\frac{R}{1-n}$.",
+    "_advancedType": "match",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 82
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 816,
+      "completionTokens": 467,
+      "totalTokens": 4020,
+      "reasoningTokens": 2737
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-5.6-luna",
+      "kind": "verify",
+      "promptTokens": 623,
+      "completionTokens": 1232,
+      "totalTokens": 1855,
+      "reasoningTokens": 1007
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "expand",
+      "promptTokens": 488,
+      "completionTokens": 731,
+      "totalTokens": 2107,
+      "reasoningTokens": 888
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 1927,
+    "completionTokens": 2430,
+    "totalTokens": 7982,
+    "reasoningTokens": 4632,
+    "calls": 3
+  },
+  "locked": {
+    "questionType": "match",
+    "questionText": "An ideal monoatomic gas ($C_V = \\frac{3}{2}R$) undergoes various thermodynamic processes. Match the processes described in List I with their corresponding molar heat capacities in List II.",
+    "listI": [
+      "1. A process defined by the relation $T V^2 = \\text{constant}$",
+      "2. A process defined by the relation $P^2 V = \\text{constant}$",
+      "3. A process defined by the relation $T^2 P^{-1} = \\text{constant}$",
+      "4. A process in which the work done by the gas during any infinitesimal step is related to the change in its internal energy by $dW = -2 dU$"
+    ],
+    "listII": [
+      "P. $C = \\frac{1}{2}R$",
+      "Q. $C = R$",
+      "R. $C = \\frac{7}{2}R$",
+      "S. $C = -\\frac{3}{2}R$"
+    ],
+    "options": [
+      "1-Q, 2-R, 3-P, 4-S",
+      "1-R, 2-P, 3-Q, 4-S",
+      "1-Q, 2-P, 3-R, 4-S",
+      "1-P, 2-R, 3-S, 4-Q"
+    ],
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "**Insight:** For any polytropic process of an ideal gas defined by $P V^x = \\text{constant}$, the molar heat capacity is given by $C = C_V + \\frac{R}{1-x}$. For a monoatomic gas, $C_V = \\frac{3}{2}R$. Using this relation along with the First Law of Thermodynamics ($dQ = dU + dW$), we can determine the molar heat capacity for each process.\n\nTo find the molar heat capacity $C$ for each process, we express the given relation in the standard polytropic form $P V^x = \\text{constant}$ and apply the formula $C = C_V + \\frac{R}{1-x}$, where $C_V = \\frac{3}{2}R$ for a monoatomic gas. For the last process, we directly use the First Law of Thermodynamics.",
+    "_solveSteps": [
+      "**For Process 1:** The relation is given as $T V^2 = \\text{constant}$. Since $T \\propto PV$ for an ideal gas, we can substitute $T$ to get $(PV) V^2 = \\text{constant} \\implies P V^3 = \\text{constant}$. Comparing this with $P V^x = \\text{constant}$, we get $x = 3$. Thus, the molar heat capacity is $C = C_V + \\frac{R}{1-3} = \\frac{3}{2}R - \\frac{1}{2}R = R$. This matches with **Q**.",
+      "**For Process 2:** The relation is $P^2 V = \\text{constant}$. Taking the square root on both sides gives $P V^{1/2} = \\text{constant}$. Here, $x = \\frac{1}{2}$. The molar heat capacity is $C = C_V + \\frac{R}{1 - 1/2} = \\frac{3}{2}R + 2R = \\frac{7}{2}R$. This matches with **R**.",
+      "**For Process 3:** The relation is $T^2 P^{-1} = \\text{constant}$. Substituting $T \\propto PV$, we get $(PV)^2 P^{-1} = \\text{constant} \\implies P V^2 = \\text{constant}$. Here, $x = 2$. The molar heat capacity is $C = C_V + \\frac{R}{1-2} = \\frac{3}{2}R - R = \\frac{1}{2}R$. This matches with **P**.",
+      "**For Process 4:** The work done is related to the change in internal energy by $dW = -2 dU$. From the First Law of Thermodynamics, $dQ = dU + dW = dU - 2 dU = -dU$. Since $dQ = n C dT$ and $dU = n C_V dT$, we have $n C dT = -n C_V dT \\implies C = -C_V = -\\frac{3}{2}R$. This matches with **S**.",
+      "Combining all the matches, we get: 1-Q, 2-R, 3-P, 4-S. This corresponds to Option A."
+    ],
+    "_conceptSlot": "polytropic_molar_heat",
+    "_chapter": "Thermal Physics",
+    "_topicId": "P10",
+    "_subject": "Physics",
+    "_hardArchetype": "polytropic_molar_heat",
+    "_insight": "For any polytropic process of an ideal gas defined by $P V^x = \\text{constant}$, the molar heat capacity is given by $C = C_V + \\frac{R}{1-x}$. For a monoatomic gas, $C_V = \\frac{3}{2}R$. Using this relation along with the First Law of Thermodynamics ($dQ = dU + dW$), we can determine the molar heat capacity for each process.",
+    "_advancedType": "match",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 82,
+    "_dualA": "A",
+    "_dualB": "A",
+    "_doubleSolverAgree": true,
+    "_stageAAnswerLocked": true,
+    "_lockMode": "luna(gpt-5.6-luna:high)",
+    "_ranB": false,
+    "_verifyPass": true,
+    "_proposedKeyMatch": true,
+    "_solverConfidence": 0.99,
+    "_verifyBriefSteps": [
+      "Use dQ=dU+dW with dU=(3/2)R dT and dW=P dV.",
+      "For TV^2=constant, dV/V=-(1/2)dT/T, so C=R.",
+      "For P^2V=constant, dV/V=2dT/T, so C=(7/2)R.",
+      "For T^2/P=constant, dV/V=-dT/T, so C=(1/2)R.",
+      "For dW=-2dU, dQ=-dU, so C=-(3/2)R.",
+      "Therefore the matching is 1-Q, 2-R, 3-P, 4-S, which is option A."
+    ],
+    "_optionVerdicts": {
+      "A": "true",
+      "B": "false",
+      "C": "false",
+      "D": "false"
+    },
+    "correctIndices": [
+      0
+    ],
+    "_trustBadge": "LUNA-VERIFY",
+    "_trustGrade": "production_luna",
+    "_productionReady": true,
+    "_needsReview": false,
+    "_answerCorrectnessGuaranteed": true,
+    "_explanationExpanded": true,
+    "finalAnswer": "A"
+  }
+}

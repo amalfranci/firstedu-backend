@@ -1,0 +1,64 @@
+{
+  "ts": "2026-09-17T05:35:18.669Z",
+  "jobId": "apt-4b887f5e-51a3-4a6c-94da-b5c00c060955",
+  "seq": 4,
+  "type": "match",
+  "subject": "Mathematics",
+  "topicId": "M16",
+  "chapter": "Applications of Derivatives",
+  "stage": "generated",
+  "raw": {
+    "questionType": "match",
+    "questionText": "Match the properties/values in List I with the corresponding values in List II.",
+    "listI": [
+      "Let $f: [0, 1] \\to \\mathbb{R}$ be a twice differentiable function with $f(0) = f(1) = 0$ and $\\min_{x \\in [0,1]} f(x) = -1$. The minimum possible value of $\\max_{x \\in [0,1]} f''(x)$ is",
+      "The number of real roots of the equation $f(f(x)) = 0$, where $f(x) = x^3 - 3x$, is",
+      "Let $P$ be a point on the parabola $y^2 = 4x$. The square of the minimum distance from the point $(6, 0)$ to $P$ is",
+      "Let $f(x)$ be a real polynomial of degree 4 satisfying $f(1) = f(-1)$, $f''(0) = -16$, and having critical points at $x = 0$ and $x = 2$. If the local maximum value of $f(x)$ is 8 and the local minimum value is $L$, then the value of $8 - L$ is"
+    ],
+    "listII": [
+      "8",
+      "9",
+      "16",
+      "20"
+    ],
+    "options": [
+      "1-P, 2-Q, 3-S, 4-R",
+      "1-Q, 2-P, 3-R, 4-S",
+      "1-P, 2-R, 3-Q, 4-S",
+      "1-S, 2-Q, 3-P, 4-R"
+    ],
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "Uses Taylor's theorem/MVT bounds for the second derivative, composition of functions for root counting, distance minimization on a parabola, and integration of critical point relations for polynomial reconstruction.",
+    "_solveSteps": [],
+    "_conceptSlot": "proving_inequality_rolle",
+    "_chapter": "Applications of Derivatives",
+    "_topicId": "M16",
+    "_subject": "Mathematics",
+    "_hardArchetype": "proving_inequality_rolle",
+    "_insight": "Uses Taylor's theorem/MVT bounds for the second derivative, composition of functions for root counting, distance minimization on a parabola, and integration of critical point relations for polynomial reconstruction.",
+    "_advancedType": "match",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 84
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 831,
+      "completionTokens": 541,
+      "totalTokens": 7606,
+      "reasoningTokens": 6234
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 831,
+    "completionTokens": 541,
+    "totalTokens": 7606,
+    "reasoningTokens": 6234,
+    "calls": 1
+  }
+}

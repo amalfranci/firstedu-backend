@@ -1,0 +1,59 @@
+[2026-08-04T11:22:49.233Z] (+0.0s) ══════════════════════════════════════════════════════════════════════════════
+[2026-08-04T11:22:49.233Z] (+0.0s) PHASE 0 START — Mongo + Advanced data pack
+[2026-08-04T11:22:49.233Z] (+0.0s) ══════════════════════════════════════════════════════════════════════════════
+[2026-08-04T11:22:49.233Z] (+0.0s)   · Load jee_advanced/ syllabus + NCERT hard context + scoring
+[2026-08-04T11:22:49.233Z] (+0.0s)   · Connect Mongo for archetype history
+[2026-08-04T11:22:49.968Z] (+0.7s) PHASE 0 END — ✓ OK (0.7s)
+[2026-08-04T11:22:49.969Z] (+0.7s) ══════════════════════════════════════════════════════════════════════════════
+[2026-08-04T11:22:49.969Z] (+0.7s) PHASE 1 START — Plan HIGH Advanced multi_concept slots
+[2026-08-04T11:22:49.969Z] (+0.7s) ══════════════════════════════════════════════════════════════════════════════
+[2026-08-04T11:22:49.969Z] (+0.7s)   · Plan 6 hard slots inside HIGH-relevance chapters
+[2026-08-04T11:22:49.969Z] (+0.7s)   · Exclude 9 lower-relevance topics
+[2026-08-04T11:22:58.805Z] (+9.6s)   →   Slot 1: M02 Complex Numbers
+[2026-08-04T11:22:58.808Z] (+9.6s)   →   Slot 2: M07 Matrices and Determinants
+[2026-08-04T11:22:58.813Z] (+9.6s)   →   Slot 3: M08 Probability
+[2026-08-04T11:22:58.817Z] (+9.6s)   →   Slot 4: M13 Conic Sections (Parabola, Ellipse, Hyperbola)
+[2026-08-04T11:22:58.820Z] (+9.6s)   →   Slot 5: M17 Integral Calculus
+[2026-08-04T11:22:58.823Z] (+9.6s)   →   Slot 6: M14 Three-Dimensional Geometry
+[2026-08-04T11:22:58.823Z] (+9.6s) PHASE 1 END — ✓ OK (8.9s)
+[2026-08-04T11:22:58.823Z] (+9.6s) ══════════════════════════════════════════════════════════════════════════════
+[2026-08-04T11:22:58.823Z] (+9.6s) PHASE 2+3 START — Generate non-single types + selective lock + fill
+[2026-08-04T11:22:58.823Z] (+9.6s) ══════════════════════════════════════════════════════════════════════════════
+[2026-08-04T11:22:58.823Z] (+9.6s)   · Hard generation (quality bar kept) → A always, B on risk
+[2026-08-04T11:22:58.823Z] (+9.6s)   · Trust grades + integer recompute on weak locks
+[2026-08-04T11:22:58.823Z] (+9.6s)   · NO single-correct items accepted
+[2026-08-04T11:22:58.823Z] (+9.6s)   · Fill rounds max 4
+[2026-08-04T11:22:58.823Z] (+9.6s)   →   Fill 1/4: need multi=3 integer=2 match=1 (have 0/6)
+[2026-08-04T11:25:08.268Z] (+139.0s)   →   multi attempt 1 failed: Could not parse JSON: Bad escaped character in JSON at position 840 @ {
+  "questions": [
+    {
+      "questionType": "multiple",
+      "conceptSlot": …
+[2026-08-04T11:27:18.106Z] (+268.9s)   →   multi: raw=3 → dual lock (stop early when section full)…
+[2026-08-04T11:27:18.108Z] (+268.9s)   →   multi dual-lock: Let $P$ be the parabola $y^2 = 4x$ with focus $F$. Let $AB$ be a varia…
+[2026-08-04T11:28:28.108Z] (+338.9s)   →   multi LOCKED key=A,B,C mode=A+generator trust=PROVISIONAL
+[2026-08-04T11:28:28.109Z] (+338.9s)   →   multi dual-lock: Let $A$ be a $3 \times 3$ real symmetric matrix satisfying $A^3 - 2A^2…
+[2026-08-04T11:28:38.599Z] (+349.4s)   →   multi LOCKED key=A,B,C mode=A+generator trust=PROVISIONAL-HIGH-RISK
+[2026-08-04T11:28:38.599Z] (+349.4s)   →   multi dual-lock: Two players, $P_1$ and $P_2$, play a game using an urn. Initially, a f…
+[2026-08-04T11:28:53.436Z] (+364.2s)   →   multi LOCKED key=A,B,C mode=A+generator trust=PROVISIONAL
+[2026-08-04T11:28:53.438Z] (+364.2s)   →   multi: locked kept +3 (multi total 3/3)
+[2026-08-04T11:30:02.863Z] (+433.6s)   →   integer: raw=2 → dual lock need=2…
+[2026-08-04T11:31:17.574Z] (+508.3s)   →   integer LOCKED 45 mode=A+generator trust=PROVISIONAL+RECOMPUTE
+[2026-08-04T11:32:32.911Z] (+583.7s)   →   integer LOCKED 47 mode=A+generator trust=PROVISIONAL+RECOMPUTE
+[2026-08-04T11:32:32.912Z] (+583.7s)   →   integer: kept +2 (integer total 2/2)
+[2026-08-04T11:33:35.815Z] (+646.6s)   →   match: raw=1 → dual lock need=1…
+[2026-08-04T11:33:55.045Z] (+665.8s)   →   match LOCKED A mode=A+gemini-B trust=A+GEMINI-B
+[2026-08-04T11:33:55.046Z] (+665.8s)   →   match: kept +1 (match total 1/1)
+[2026-08-04T11:33:55.046Z] (+665.8s)   →   After fill 1: multi=3/3 integer=2/2 match=1/1 total=6/6
+[2026-08-04T11:33:55.047Z] (+665.8s) PHASE 2+3 END — ✓ OK (656.2s)
+[2026-08-04T11:33:55.047Z] (+665.8s) ══════════════════════════════════════════════════════════════════════════════
+[2026-08-04T11:33:55.047Z] (+665.8s) PHASE 4 START — Insight-first solutions (locked finals only)
+[2026-08-04T11:33:55.047Z] (+665.8s) ══════════════════════════════════════════════════════════════════════════════
+[2026-08-04T11:33:55.047Z] (+665.8s)   · 6 kept items — expand explanations without changing keys
+[2026-08-04T11:33:55.047Z] (+665.8s)   →   Expand Q1/6 [multiple] trust=PROVISIONAL
+[2026-08-04T11:35:17.163Z] (+747.9s)   →   Expand Q2/6 [multiple] trust=PROVISIONAL-HIGH-RISK
+[2026-08-04T11:36:34.452Z] (+825.2s)   →   Expand Q3/6 [multiple] trust=PROVISIONAL
+[2026-08-04T11:37:42.568Z] (+893.3s)   →   Expand Q4/6 [integer] trust=PROVISIONAL+RECOMPUTE
+[2026-08-04T11:37:58.318Z] (+909.1s)   →   Expand Q5/6 [integer] trust=PROVISIONAL+RECOMPUTE
+[2026-08-04T11:40:19.262Z] (+1050.0s)   →   Expand Q6/6 [match] trust=A+GEMINI-B
+[2026-08-04T11:40:36.778Z] (+1067.5s) PHASE 4 END — ✓ OK (401.7s)

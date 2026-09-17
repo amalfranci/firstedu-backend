@@ -1,0 +1,139 @@
+{
+  "ts": "2026-09-17T06:53:16.317Z",
+  "jobId": "apt-41954457-4dec-4a3c-9289-404d560acdde",
+  "seq": 3,
+  "type": "multiple",
+  "subject": "Physics",
+  "topicId": "P03",
+  "chapter": "Newton's Laws of Motion and Friction",
+  "stage": "expanded",
+  "raw": {
+    "questionType": "multiple",
+    "questionText": "A block $A$ of mass $m_1 = 2\\text{ kg}$ is placed on a smooth horizontal surface. Block $A$ has a vertical guide slot in which a block $C$ of mass $m_3 = 1\\text{ kg}$ can slide freely without friction, meaning block $C$ can only move vertically relative to block $A$. Another block $B$ of mass $m_2 = 1\\text{ kg}$ is placed on the flat horizontal top surface of block $A$. The coefficients of static and kinetic friction between block $A$ and block $B$ are $\\mu_s = 0.3$ and $\\mu_k = 0.2$, respectively. A light, inextensible string connects block $B$ to block $C$ over a light, frictionless pulley fixed at the top-right corner of block $A$. The system is released from rest with the horizontal segment of the string taut. Take $g = 10\\text{ m/s}^2$. Which of the following statements is/are correct?",
+    "options": [
+      "The acceleration of block $A$ is $\\frac{8}{7}\\text{ m/s}^2$ towards the left.",
+      "The tension in the string is $\\frac{38}{7}\\text{ N}$.",
+      "The horizontal force exerted by block $A$ on block $C$ is $\\frac{8}{7}\\text{ N}$.",
+      "The acceleration of block $B$ relative to the ground is $\\frac{32}{7}\\text{ m/s}^2$ towards the right."
+    ],
+    "correctIndices": [
+      0,
+      1,
+      2
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A,B,C",
+    "explanation": "By analyzing the horizontal center-of-mass constraint and the relative motion of the blocks, we determine that slipping must occur, allowing us to solve the coupled equations of motion.",
+    "_solveSteps": [],
+    "_conceptSlot": "multi_block_systems",
+    "_chapter": "Newton's Laws of Motion and Friction",
+    "_topicId": "P03",
+    "_subject": "Physics",
+    "_hardArchetype": "multi_block_systems",
+    "_insight": "By analyzing the horizontal center-of-mass constraint and the relative motion of the blocks, we determine that slipping must occur, allowing us to solve the coupled equations of motion.",
+    "_advancedType": "multiple",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 85
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 617,
+      "completionTokens": 508,
+      "totalTokens": 9486,
+      "reasoningTokens": 8361
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-5.6-luna",
+      "kind": "verify",
+      "promptTokens": 683,
+      "completionTokens": 2237,
+      "totalTokens": 2920,
+      "reasoningTokens": 1930
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "expand",
+      "promptTokens": 557,
+      "completionTokens": 1726,
+      "totalTokens": 6181,
+      "reasoningTokens": 3898
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 1857,
+    "completionTokens": 4471,
+    "totalTokens": 18587,
+    "reasoningTokens": 14189,
+    "calls": 3
+  },
+  "locked": {
+    "questionType": "multiple",
+    "questionText": "A block $A$ of mass $m_1 = 2\\text{ kg}$ is placed on a smooth horizontal surface. Block $A$ has a vertical guide slot in which a block $C$ of mass $m_3 = 1\\text{ kg}$ can slide freely without friction, meaning block $C$ can only move vertically relative to block $A$. Another block $B$ of mass $m_2 = 1\\text{ kg}$ is placed on the flat horizontal top surface of block $A$. The coefficients of static and kinetic friction between block $A$ and block $B$ are $\\mu_s = 0.3$ and $\\mu_k = 0.2$, respectively. A light, inextensible string connects block $B$ to block $C$ over a light, frictionless pulley fixed at the top-right corner of block $A$. The system is released from rest with the horizontal segment of the string taut. Take $g = 10\\text{ m/s}^2$. Which of the following statements is/are correct?",
+    "options": [
+      "The acceleration of block $A$ is $\\frac{8}{7}\\text{ m/s}^2$ towards the left.",
+      "The tension in the string is $\\frac{38}{7}\\text{ N}$.",
+      "The horizontal force exerted by block $A$ on block $C$ is $\\frac{8}{7}\\text{ N}$.",
+      "The acceleration of block $B$ relative to the ground is $\\frac{32}{7}\\text{ m/s}^2$ towards the right."
+    ],
+    "correctIndices": [
+      0,
+      1,
+      2
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A,B,C",
+    "explanation": "**Insight:** By analyzing the maximum static friction between block $A$ and block $B$, we find that slipping must occur because the tension required to keep the system from slipping exceeds the maximum static friction force ($f_{s,\\max} = 3\\text{ N}$). Thus, kinetic friction $f_k = \\mu_k m_2 g = 2\\text{ N}$ acts between the blocks. We then set up the equations of motion for each block to find their accelerations and the tension in the string.\n\n### Insight\nFirst, we check if slipping occurs between block $A$ and block $B$. The maximum static friction force is $f_{s,\\max} = \\mu_s m_2 g = 0.3 \\times 1 \\times 10 = 3\\text{ N}$. If no slipping occurred, the horizontal acceleration of the system would be zero, requiring a friction force of $10\\text{ N}$ to balance the tension, which exceeds $f_{s,\\max}$. Thus, slipping occurs, and kinetic friction $f_k = \\mu_k m_2 g = 0.2 \\times 1 \\times 10 = 2\\text{ N}$ acts between $A$ and $B$.\n\n### Shared Core Derivation\nLet $a_A$ be the horizontal acceleration of block $A$ towards the left. Since block $C$ is constrained to move in the vertical slot of block $A$, its horizontal acceleration is also $a_A$ towards the left.\n\nLet $a_r$ be the acceleration of block $B$ relative to block $A$ towards the right. Since the string is inextensible, block $C$ must accelerate downwards relative to block $A$ with the same acceleration $a_r$.\n\nThus, the acceleration of block $B$ relative to the ground is:\n$$a_B = a_r - a_A \\text{ (towards the right)}$$\n\nNow, let us write the equations of motion for each block:\n\n1) **For block $B$ (horizontally):**\n$$T - f_k = m_2 a_B \\implies T - 2 = 1 \\cdot (a_r - a_A) \\implies T - 2 = a_r - a_A \\quad \\text{--- (Eq. 1)}$$\n\n2) **For block $C$ (vertically):**\n$$m_3 g - T = m_3 a_r \\implies 10 - T = 1 \\cdot a_r \\implies T = 10 - a_r \\quad \\text{--- (Eq. 2)}$$\n\nCombining Eq. 1 and Eq. 2:\n$$10 - a_r - 2 = a_r - a_A \\implies 2a_r - a_A = 8 \\implies a_r = \\frac{8 + a_A}{2} \\quad \\text{--- (Eq. 3)}$$\n\n3) **For block $A$ (horizontally):**\nThe horizontal forces acting on block $A$ are:\n- Tension $T$ towards the left (from the pulley fixed to $A$).\n- Kinetic friction $f_k = 2\\text{ N}$ towards the right (by Newton's third law).\n- Normal force $N_{AC}$ from block $C$ towards the right.\n\nSince block $C$ accelerates horizontally to the left with $a_A$, the normal force exerted by $A$ on $C$ is $N_{AC} = m_3 a_A$. By Newton's third law, $C$ exerts an equal and opposite force $N_{AC}$ on $A$ towards the right.\n\nThus, the horizontal equation of motion for block $A$ is:\n$$T - f_k - N_{AC} = m_1 a_A$$\n$$T - 2 - m_3 a_A = m_1 a_A \\implies T - 2 = (m_1 + m_3) a_A$$\n\nSubstituting $m_1 = 2\\text{ kg}$ and $m_3 = 1\\text{ kg}$:\n$$T - 2 = 3 a_A \\quad \\text{--- (Eq. 4)}$$\n\nFrom Eq. 1 and Eq. 4, we get:\n$$a_r - a_A = 3 a_A \\implies a_r = 4 a_A$$\n\nSubstituting $a_r = 4 a_A$ into Eq. 3:\n$$4 a_A = \\frac{8 + a_A}{2} \\implies 8 a_A = 8 + a_A \\implies 7 a_A = 8 \\implies a_A = \\frac{8}{7}\\text{ m/s}^2$$\n\n### Judging Each Option\n- **Option A**: The acceleration of block $A$ is $a_A = \\frac{8}{7}\\text{ m/s}^2$ towards the left. This is **TRUE**.\n- **Option B**: The tension in the string is $T = 2 + 3 a_A = 2 + 3\\left(\\frac{8}{7}\\right) = \\frac{38}{7}\\text{ N}$. This is **TRUE**.\n- **Option C**: The horizontal force exerted by block $A$ on block $C$ is $N_{AC} = m_3 a_A = 1 \\cdot \\frac{8}{7} = \\frac{8}{7}\\text{ N}$. This is **TRUE**.\n- **Option D**: The acceleration of block $B$ relative to the ground is $a_B = a_r - a_A = \\frac{32}{7} - \\frac{8}{7} = \\frac{24}{7}\\text{ m/s}^2$ towards the right. The value $\\frac{32}{7}\\text{ m/s}^2$ is the acceleration of $B$ relative to $A$, not relative to the ground. This is **FALSE**.\n\nTherefore correct option(s): A,B,C",
+    "_solveSteps": [
+      "Identify that slipping occurs between block $A$ and block $B$ because the required static friction force to prevent slipping exceeds the maximum static friction limit of $3\\text{ N}$.",
+      "Set up the equations of motion for block $B$ horizontally: $T - f_k = m_2 (a_r - a_A)$, where $a_r$ is the relative acceleration of $B$ with respect to $A$, and $a_A$ is the acceleration of $A$ to the left.",
+      "Set up the equation of motion for block $C$ vertically: $m_3 g - T = m_3 a_r$.",
+      "Set up the horizontal equation of motion for block $A$: $T - f_k - N_{AC} = m_1 a_A$, where $N_{AC} = m_3 a_A$ is the normal contact force between $A$ and $C$.",
+      "Solve the system of equations to find $a_A = \\frac{8}{7}\\text{ m/s}^2$, $T = \\frac{38}{7}\\text{ N}$, $N_{AC} = \\frac{8}{7}\\text{ N}$, and the acceleration of $B$ relative to the ground $a_B = a_r - a_A = \\frac{24}{7}\\text{ m/s}^2$."
+    ],
+    "_conceptSlot": "multi_block_systems",
+    "_chapter": "Newton's Laws of Motion and Friction",
+    "_topicId": "P03",
+    "_subject": "Physics",
+    "_hardArchetype": "multi_block_systems",
+    "_insight": "By analyzing the maximum static friction between block $A$ and block $B$, we find that slipping must occur because the tension required to keep the system from slipping exceeds the maximum static friction force ($f_{s,\\max} = 3\\text{ N}$). Thus, kinetic friction $f_k = \\mu_k m_2 g = 2\\text{ N}$ acts between the blocks. We then set up the equations of motion for each block to find their accelerations and the tension in the string.",
+    "_advancedType": "multiple",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 85,
+    "_dualA": "A,B,C",
+    "_dualB": "A,B,C",
+    "_doubleSolverAgree": true,
+    "_stageAAnswerLocked": true,
+    "_lockMode": "luna(gpt-5.6-luna:high)",
+    "_ranB": false,
+    "_verifyPass": true,
+    "_proposedKeyMatch": true,
+    "_solverConfidence": 0.99,
+    "_verifyBriefSteps": [
+      "The horizontal center-of-mass condition gives 3a_A+a_B=0, since block C has the same horizontal acceleration as A.",
+      "The string constraint gives a_B-a_A=-a_{C,y}. For block C, a_{C,y}=T-10, hence T=10+4a_A.",
+      "If A and B were static relative, the required friction would be 10 N, exceeding the maximum static friction 0.3(10)=3 N; therefore they slip.",
+      "Kinetic friction is 0.2(10)=2 N, acting left on B. Using a_B=T-2 and 3a_A+a_B=0 gives a_A=-8/7 m/s^2 and a_B=24/7 m/s^2.",
+      "Then T=38/7 N. The horizontal force on C has magnitude m_3|a_A|=8/7 N, directed left. The relative acceleration of B with respect to A is 32/7 m/s^2, not B's ground acceleration."
+    ],
+    "_optionVerdicts": {
+      "A": "true",
+      "B": "true",
+      "C": "true",
+      "D": "false"
+    },
+    "_trustBadge": "LUNA-VERIFY",
+    "_trustGrade": "production_luna",
+    "_productionReady": true,
+    "_needsReview": false,
+    "_answerCorrectnessGuaranteed": true,
+    "_explanationExpanded": true,
+    "finalAnswer": "A,B,C"
+  }
+}

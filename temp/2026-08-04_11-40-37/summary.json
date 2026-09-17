@@ -1,0 +1,155 @@
+{
+  "exam": "JEE Advanced",
+  "subject": "Mathematics",
+  "mode": "non_single_only",
+  "skipSingle": true,
+  "requested": {
+    "total": 6,
+    "multi": 3,
+    "integer": 2,
+    "match": 1
+  },
+  "produced": {
+    "total": 6,
+    "multi": 3,
+    "integer": 2,
+    "match": 1,
+    "dualLocked": 6,
+    "productionReady": 0,
+    "needsReview": 6,
+    "insightExpanded": 6
+  },
+  "trustGrades": [
+    {
+      "q": 1,
+      "type": "multiple",
+      "badge": "PROVISIONAL",
+      "grade": "provisional",
+      "mode": "A+generator",
+      "productionReady": false,
+      "needsReview": true,
+      "recomputeOk": null
+    },
+    {
+      "q": 2,
+      "type": "multiple",
+      "badge": "PROVISIONAL-HIGH-RISK",
+      "grade": "provisional",
+      "mode": "A+generator",
+      "productionReady": false,
+      "needsReview": true,
+      "recomputeOk": null
+    },
+    {
+      "q": 3,
+      "type": "multiple",
+      "badge": "PROVISIONAL",
+      "grade": "provisional",
+      "mode": "A+generator",
+      "productionReady": false,
+      "needsReview": true,
+      "recomputeOk": null
+    },
+    {
+      "q": 4,
+      "type": "integer",
+      "badge": "PROVISIONAL+RECOMPUTE",
+      "grade": "provisional_recomputed",
+      "mode": "A+generator+recompute",
+      "productionReady": false,
+      "needsReview": true,
+      "recomputeOk": true
+    },
+    {
+      "q": 5,
+      "type": "integer",
+      "badge": "PROVISIONAL+RECOMPUTE",
+      "grade": "provisional_recomputed",
+      "mode": "A+generator+recompute",
+      "productionReady": false,
+      "needsReview": true,
+      "recomputeOk": true
+    },
+    {
+      "q": 6,
+      "type": "match",
+      "badge": "A+GEMINI-B",
+      "grade": "cross_provider",
+      "mode": "A+gemini-B",
+      "productionReady": false,
+      "needsReview": true,
+      "recomputeOk": null
+    }
+  ],
+  "stages": [
+    "0_mongo_advanced_pack",
+    "1_plan_high_relevance_slots",
+    "2_generate_multi_integer_match",
+    "3_selective_lock_trust_grades",
+    "4_fill_until_count",
+    "5_insight_first_solutions_locked_only",
+    "6_save_artifacts"
+  ],
+  "hardBar": {
+    "skeletonMin": 70,
+    "forceMultiConcept": true,
+    "dualMode": "selective",
+    "diversityHint": true,
+    "insightFirstExplanations": true,
+    "integerRecompute": true
+  },
+  "models": {
+    "writer": "gemini-3.5-flash",
+    "solverA": "o4-mini",
+    "solverB": "o3-mini",
+    "dualMode": "selective",
+    "primarySolver": "o4-mini"
+  },
+  "topics": [
+    {
+      "topicId": "M02",
+      "chapter": "Complex Numbers"
+    },
+    {
+      "topicId": "M05",
+      "chapter": "Logarithms, Permutations and Combinations"
+    },
+    {
+      "topicId": "M07",
+      "chapter": "Matrices and Determinants"
+    },
+    {
+      "topicId": "M08",
+      "chapter": "Probability"
+    },
+    {
+      "topicId": "M13",
+      "chapter": "Conic Sections (Parabola, Ellipse, Hyperbola)"
+    },
+    {
+      "topicId": "M14",
+      "chapter": "Three-Dimensional Geometry"
+    },
+    {
+      "topicId": "M16",
+      "chapter": "Applications of Derivatives"
+    },
+    {
+      "topicId": "M17",
+      "chapter": "Integral Calculus"
+    },
+    {
+      "topicId": "M18",
+      "chapter": "Differential Equations"
+    },
+    {
+      "topicId": "M19",
+      "chapter": "Vectors"
+    }
+  ],
+  "dataRoot": "jee_advanced/",
+  "failed": false,
+  "failError": null,
+  "elapsedMs": 1068567,
+  "outDir": "C:\\Users\\Lenova\\Downloads\\ISCORE\\firstedu-backend\\temp\\jee-advanced-hard-6-nonsingle-maths\\2026-08-04_11-40-37"
+}

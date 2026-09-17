@@ -1,0 +1,140 @@
+{
+  "ts": "2026-09-17T05:33:13.067Z",
+  "jobId": "apt-4b887f5e-51a3-4a6c-94da-b5c00c060955",
+  "seq": 2,
+  "type": "multiple",
+  "subject": "Mathematics",
+  "topicId": "M02",
+  "chapter": "Complex Numbers",
+  "stage": "expanded",
+  "raw": {
+    "questionType": "multiple",
+    "questionText": "Let $z$ be a complex number satisfying the equation $|z - 3| = 2|z - 3i|$. Let $S$ denote the locus of $z$ in the Argand plane. Which of the following statements is/are correct?",
+    "options": [
+      "The locus $S$ is a circle with center $-1+4i$ and radius $2\\sqrt{2}$.",
+      "For any $z$ on the locus $S$ (with $z \\neq 1+6i$), the real part of $\\frac{z + 3 - 2i}{z - 1 - 6i}$ is equal to $0$.",
+      "The minimum value of $|z|^2$ for $z \\in S$ is $25 - 4\\sqrt{34}$.",
+      "The maximum value of $|z - (1+i)|$ for $z \\in S$ is $\\sqrt{13} + 2\\sqrt{2}$."
+    ],
+    "correctIndices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A,B,C,D",
+    "explanation": "The Apollonius circle locus has center $-1+4i$ and radius $2\\sqrt{2}$, with $-3+2i$ and $1+6i$ acting as diametrically opposite points, which immediately yields the perpendicularity and distance relations.",
+    "_solveSteps": [],
+    "_conceptSlot": "apollonius_locus_properties",
+    "_chapter": "Complex Numbers",
+    "_topicId": "M02",
+    "_subject": "Mathematics",
+    "_hardArchetype": "apollonius_locus_properties",
+    "_insight": "The Apollonius circle locus has center $-1+4i$ and radius $2\\sqrt{2}$, with $-3+2i$ and $1+6i$ acting as diametrically opposite points, which immediately yields the perpendicularity and distance relations.",
+    "_advancedType": "multiple",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 82
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 660,
+      "completionTokens": 388,
+      "totalTokens": 5930,
+      "reasoningTokens": 4882
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-5.6-luna",
+      "kind": "verify",
+      "promptTokens": 560,
+      "completionTokens": 720,
+      "totalTokens": 1280,
+      "reasoningTokens": 503
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "expand",
+      "promptTokens": 429,
+      "completionTokens": 1488,
+      "totalTokens": 6707,
+      "reasoningTokens": 4790
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 1649,
+    "completionTokens": 2596,
+    "totalTokens": 13917,
+    "reasoningTokens": 10175,
+    "calls": 3
+  },
+  "locked": {
+    "questionType": "multiple",
+    "questionText": "Let $z$ be a complex number satisfying the equation $|z - 3| = 2|z - 3i|$. Let $S$ denote the locus of $z$ in the Argand plane. Which of the following statements is/are correct?",
+    "options": [
+      "The locus $S$ is a circle with center $-1+4i$ and radius $2\\sqrt{2}$.",
+      "For any $z$ on the locus $S$ (with $z \\neq 1+6i$), the real part of $\\frac{z + 3 - 2i}{z - 1 - 6i}$ is equal to $0$.",
+      "The minimum value of $|z|^2$ for $z \\in S$ is $25 - 4\\sqrt{34}$.",
+      "The maximum value of $|z - (1+i)|$ for $z \\in S$ is $\\sqrt{13} + 2\\sqrt{2}$."
+    ],
+    "correctIndices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A,B,C,D",
+    "explanation": "**Insight:** By substituting $z = x + iy$ into the given equation $|z - 3| = 2|z - 3i|$, we can simplify it to find that the locus $S$ is a circle. From the standard equation of this circle, we can determine its center, radius, and analyze the geometric properties required to evaluate each option.\n\nBy substituting $z = x + iy$ into the given equation $|z - 3| = 2|z - 3i|$, we can simplify it to find that the locus $S$ is a circle. From the standard equation of this circle, we can determine its center, radius, and analyze the geometric properties required to evaluate each option.\n\n**Core Derivation:**\nLet $z = x + iy$. The given equation is:\n$$|z - 3| = 2|z - 3i|$$\nSquaring both sides:\n$$|z - 3|^2 = 4|z - 3i|^2$$\n$$(x-3)^2 + y^2 = 4(x^2 + (y-3)^2)$$\n$$x^2 - 6x + 9 + y^2 = 4(x^2 + y^2 - 6y + 9)$$\n$$x^2 + y^2 - 6x + 9 = 4x^2 + 4y^2 - 24y + 36$$\n$$3x^2 + 3y^2 + 6x - 24y + 27 = 0$$\nDividing by $3$:\n$$x^2 + y^2 + 2x - 8y + 9 = 0$$\nThis is the equation of a circle with:\n- Center $C = (-1, 4)$, which corresponds to the complex number $-1 + 4i$.\n- Radius $R = \\sqrt{(-1)^2 + 4^2 - 9} = \\sqrt{1 + 16 - 9} = \\sqrt{8} = 2\\sqrt{2}$.\n\n**Judging Option A:**\nThe locus $S$ is indeed a circle with center $-1+4i$ and radius $2\\sqrt{2}$. Thus, Option A is **TRUE**.\n\n**Judging Option B:**\nLet $z_1 = -3 + 2i$ and $z_2 = 1 + 6i$. \nThe midpoint of $z_1$ and $z_2$ is $\\frac{-3+2i + 1+6i}{2} = -1+4i$, which is the center $C$ of the circle.\nThe distance from $C$ to $z_2$ is $|(1+6i) - (-1+4i)| = |2+2i| = \\sqrt{8} = 2\\sqrt{2} = R$.\nThus, $z_1$ and $z_2$ are diametrically opposite points on the circle $S$.\nFor any point $z$ on the circle (with $z \\neq z_2$), the angle subtended by the diameter $z_1 z_2$ at $z$ is $\\frac{\\pi}{2}$.\nTherefore, the vector $z - z_1$ is perpendicular to $z - z_2$, which means $\\frac{z - z_1}{z - z_2}$ is purely imaginary.\nThus, $\\text{Re}\\left(\\frac{z + 3 - 2i}{z - 1 - 6i}\\right) = 0$. Thus, Option B is **TRUE**.\n\n**Judging Option C:**\nThe distance from the origin $O(0,0)$ to the center $C(-1, 4)$ is $OC = \\sqrt{(-1)^2 + 4^2} = \\sqrt{17}$.\nThe minimum distance from the origin to any point $z$ on the circle is:\n$$|z|_{\\min} = OC - R = \\sqrt{17} - 2\\sqrt{2}$$\nThus, the minimum value of $|z|^2$ is:\n$$|z|_{\\min}^2 = (\\sqrt{17} - 2\\sqrt{2})^2 = 17 + 8 - 4\\sqrt{34} = 25 - 4\\sqrt{34}$$\nThus, Option C is **TRUE**.\n\n**Judging Option D:**\nLet $P$ be the point representing $1+i$. The distance from $P$ to the center $C(-1, 4)$ is:\n$$PC = |(-1+4i) - (1+i)| = |-2 + 3i| = \\sqrt{(-2)^2 + 3^2} = \\sqrt{13}$$\nThe maximum distance from $P$ to any point $z$ on the circle is:\n$$|z - (1+i)|_{\\max} = PC + R = \\sqrt{13} + 2\\sqrt{2}$$\nThus, Option D is **TRUE**.\n\nTherefore correct option(s): A,B,C,D",
+    "_solveSteps": [
+      "Substitute $z = x + iy$ into the given equation $|z - 3| = 2|z - 3i|$ and square both sides to obtain the equation of the circle: $x^2 + y^2 + 2x - 8y + 9 = 0$.",
+      "Identify the center of the circle as $C(-1, 4)$ (or $-1+4i$) and the radius as $R = 2\\sqrt{2}$, which proves Option A is correct.",
+      "Show that $z_1 = -3+2i$ and $z_2 = 1+6i$ are diametrically opposite points on the circle, which implies that the angle subtended at any point $z$ on the circle is $\\frac{\\pi}{2}$, making the real part of $\\frac{z - z_1}{z - z_2}$ equal to $0$. This proves Option B is correct.",
+      "Calculate the minimum distance from the origin to the circle as $OC - R = \\sqrt{17} - 2\\sqrt{2}$, and square it to get $25 - 4\\sqrt{34}$, proving Option C is correct.",
+      "Calculate the maximum distance from $1+i$ to the circle as $PC + R = \\sqrt{13} + 2\\sqrt{2}$, proving Option D is correct."
+    ],
+    "_conceptSlot": "apollonius_locus_properties",
+    "_chapter": "Complex Numbers",
+    "_topicId": "M02",
+    "_subject": "Mathematics",
+    "_hardArchetype": "apollonius_locus_properties",
+    "_insight": "By substituting $z = x + iy$ into the given equation $|z - 3| = 2|z - 3i|$, we can simplify it to find that the locus $S$ is a circle. From the standard equation of this circle, we can determine its center, radius, and analyze the geometric properties required to evaluate each option.",
+    "_advancedType": "multiple",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 82,
+    "_dualA": "A,B,C,D",
+    "_dualB": "A,B,C,D",
+    "_doubleSolverAgree": true,
+    "_stageAAnswerLocked": true,
+    "_lockMode": "luna(gpt-5.6-luna:high)",
+    "_ranB": false,
+    "_verifyPass": true,
+    "_proposedKeyMatch": true,
+    "_solverConfidence": 1,
+    "_verifyBriefSteps": [
+      "Writing z=x+iy gives (x+1)^2+(y-4)^2=8, so S has center (-1,4) and radius 2sqrt(2).",
+      "For B, Re[(z+3-2i)/(z-1-6i)] has numerator x^2+y^2+2x-8y+9, which vanishes on S; the excluded point is the denominator zero.",
+      "The minimum of |z|^2 is (sqrt(17)-2sqrt(2))^2=25-4sqrt(34).",
+      "The maximum distance from (1,1) to S is sqrt(13)+2sqrt(2)."
+    ],
+    "_optionVerdicts": {
+      "A": "true",
+      "B": "true",
+      "C": "true",
+      "D": "true"
+    },
+    "_trustBadge": "LUNA-VERIFY",
+    "_trustGrade": "production_luna",
+    "_productionReady": true,
+    "_needsReview": false,
+    "_answerCorrectnessGuaranteed": true,
+    "_explanationExpanded": true,
+    "finalAnswer": "A,B,C,D"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "ts": "2026-09-16T10:43:13.498Z",
+  "jobId": "apt-e7cbe4d6-f8a9-45c2-8151-eae67c4cb406",
+  "seq": 1,
+  "type": "single",
+  "subject": "Physics",
+  "topicId": "P05",
+  "chapter": "System of Particles and Rotational Motion",
+  "stage": "generated",
+  "raw": {
+    "questionType": "single",
+    "questionText": "A uniform solid cylinder of mass $m$, radius $R$, and height $H$ is placed with its flat circular base on a rough horizontal turntable. The center of the base is at a distance $d$ from the vertical axis of rotation of the turntable, where $d \\\\gg R$. The coefficient of static friction between the cylinder and the turntable is $\\\\mu$. The turntable starts from rest at $t=0$ and rotates with a constant angular acceleration $\\\\alpha$. If $\\\\mu > \\\\frac{2R}{H}$ and $\\\\alpha < \\\\frac{2gR}{dH}$, the angular velocity $\\\\omega$ of the turntable at the instant the cylinder is on the verge of toppling is:",
+    "options": [
+      "$\\\\omega = \\\\left[ \\\\left(\\\\frac{2gR}{dH}\\\\right)^2 - \\\\alpha^2 \\\\right]^{1/4}$",
+      "$\\\\omega = \\\\left[ \\\\left(\\\\frac{\\\\mu g}{d}\\\\right)^2 - \\\\alpha^2 \\\\right]^{1/4}$",
+      "$\\\\omega = \\\\left[ \\\\frac{2gR}{dH} - \\\\alpha \\\\right]^{1/2}$",
+      "$\\\\omega = \\\\left[ \\\\left(\\\\frac{gR}{dH}\\\\right)^2 - \\\\alpha^2 \\\\right]^{1/4}$"
+    ],
+    "correctIndices": [
+      0
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A",
+    "explanation": "In the co-rotating frame, the net horizontal pseudo-force is the vector sum of the perpendicular centrifugal and Euler forces, which must overcome the restoring torque of gravity for toppling to occur.",
+    "_solveSteps": [],
+    "_conceptSlot": "rigid_body_toppling",
+    "_chapter": "System of Particles and Rotational Motion",
+    "_topicId": "P05",
+    "_subject": "Physics",
+    "_hardArchetype": "rigid_body_toppling",
+    "_insight": "In the co-rotating frame, the net horizontal pseudo-force is the vector sum of the perpendicular centrifugal and Euler forces, which must overcome the restoring torque of gravity for toppling to occur.",
+    "_advancedType": "single",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 85
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 555,
+      "completionTokens": 462,
+      "totalTokens": 12958,
+      "reasoningTokens": 11941
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 555,
+    "completionTokens": 462,
+    "totalTokens": 12958,
+    "reasoningTokens": 11941,
+    "calls": 1
+  }
+}

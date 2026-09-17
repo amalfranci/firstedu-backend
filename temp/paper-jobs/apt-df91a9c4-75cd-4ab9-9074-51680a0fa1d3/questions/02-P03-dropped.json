@@ -1,0 +1,95 @@
+{
+  "ts": "2026-09-17T06:40:24.688Z",
+  "jobId": "apt-df91a9c4-75cd-4ab9-9074-51680a0fa1d3",
+  "seq": 2,
+  "type": "multiple",
+  "subject": "Physics",
+  "topicId": "P03",
+  "chapter": "Newton's Laws of Motion and Friction",
+  "stage": "dropped",
+  "raw": {
+    "questionType": "multiple",
+    "questionText": "A wedge of inclination angle $\\theta = 45^\\circ$ is accelerated horizontally to the left with a constant acceleration $a$. A block of mass $m = \\sqrt{2}\\text{ kg}$ is placed on the inclined surface of the wedge. The coefficients of static and kinetic friction between the block and the wedge are $\\mu_s = 0.5$ and $\\mu_k = 0.4$, respectively. Take $g = 10\\text{ m/s}^2$. Which of the following statements is/are correct?",
+    "options": [
+      "If $a = 2\\text{ m/s}^2$, the friction force acting on the block is $4.8\\text{ N}$ and its acceleration relative to the wedge is $1.6\\sqrt{2}\\text{ m/s}^2$.",
+      "If $a = 5\\text{ m/s}^2$, the friction force acting on the block is $5\\text{ N}$ directed downwards along the incline.",
+      "If $a = 20\\text{ m/s}^2$, the friction force acting on the block is $10\\text{ N}$ directed downwards along the incline.",
+      "If $a = 40\\text{ m/s}^2$, the friction force acting on the block is $20\\text{ N}$ and its acceleration relative to the wedge is $5\\sqrt{2}\\text{ m/s}^2$."
+    ],
+    "correctIndices": [
+      0,
+      2,
+      3
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A,C,D",
+    "explanation": "Analyze the transition from static to kinetic friction by finding the range of acceleration for which the block remains stationary in the non-inertial frame of the wedge.",
+    "_solveSteps": [],
+    "_conceptSlot": "inertial_wedge_friction",
+    "_chapter": "Newton's Laws of Motion and Friction",
+    "_topicId": "P03",
+    "_subject": "Physics",
+    "_hardArchetype": "inertial_wedge_friction",
+    "_insight": "Analyze the transition from static to kinetic friction by finding the range of acceleration for which the block remains stationary in the non-inertial frame of the wedge.",
+    "_advancedType": "multiple",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 84
+  },
+  "tryNo": 2,
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 593,
+      "completionTokens": 438,
+      "totalTokens": 10872,
+      "reasoningTokens": 9841
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 593,
+      "completionTokens": 471,
+      "totalTokens": 6834,
+      "reasoningTokens": 5770
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-5.6-luna",
+      "kind": "verify",
+      "promptTokens": 823,
+      "completionTokens": 4248,
+      "totalTokens": 5071,
+      "reasoningTokens": 4096
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 2009,
+    "completionTokens": 5157,
+    "totalTokens": 22777,
+    "reasoningTokens": 19707,
+    "calls": 3
+  },
+  "failureReason": "ambiguous",
+  "failureDetail": {
+    "type": "multiple",
+    "reason": "ambiguous",
+    "verdict": "FAIL",
+    "derived": "A,C,D",
+    "proposed": "A,C,D",
+    "matchFlag": true,
+    "ambiguous": true,
+    "mathematical_correct": true,
+    "chapter_match": true,
+    "concept_match": true,
+    "difficulty_match": true,
+    "format_valid": true,
+    "confidence": 0.98,
+    "failReasons": [
+      "The incline orientation is unspecified; the key A,C,D applies only if the surface rises to the right, while the opposite orientation gives different normal force, friction, and motion regimes."
+    ]
+  }
+}

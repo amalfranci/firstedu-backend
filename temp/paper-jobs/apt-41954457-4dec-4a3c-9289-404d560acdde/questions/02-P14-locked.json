@@ -1,0 +1,117 @@
+{
+  "ts": "2026-09-17T06:48:50.787Z",
+  "jobId": "apt-41954457-4dec-4a3c-9289-404d560acdde",
+  "seq": 2,
+  "type": "single",
+  "subject": "Physics",
+  "topicId": "P14",
+  "chapter": "Magnetic Effects of Current and Magnetism",
+  "stage": "locked",
+  "raw": {
+    "questionType": "single",
+    "questionText": "A particle of mass $m$ and charge $q > 0$ is projected from the origin $(0,0,0)$ at $t=0$ with an initial velocity $\\vec{v}_0 = 3 v_0 \\hat{i}$ in a region containing a uniform electric field $\\vec{E} = E_0 \\hat{j}$ and a uniform magnetic field $\\vec{B} = B_0 \\hat{k}$, where $v_0 = \\frac{E_0}{B_0}$. The trajectory of the particle lies entirely in the $xy$-plane. The radius of curvature of the particle's path at the point where its $y$-coordinate reaches its minimum value is:",
+    "options": [
+      "$\\frac{m E_0}{2 q B_0^2}$",
+      "$\\frac{m E_0}{q B_0^2}$",
+      "$\\frac{2 m E_0}{q B_0^2}$",
+      "$\\frac{9 m E_0}{2 q B_0^2}$"
+    ],
+    "correctIndices": [
+      0
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A",
+    "explanation": "By decomposing the motion into a uniform drift velocity $v_0\\hat{i}$ and a circular motion of radius $2v_0/\\omega$, we find the velocity and acceleration at the lowest point to be perpendicular, yielding the radius of curvature directly.",
+    "_solveSteps": [],
+    "_conceptSlot": "charged_particle_fields",
+    "_chapter": "Magnetic Effects of Current and Magnetism",
+    "_topicId": "P14",
+    "_subject": "Physics",
+    "_hardArchetype": "charged_particle_fields",
+    "_insight": "By decomposing the motion into a uniform drift velocity $v_0\\hat{i}$ and a circular motion of radius $2v_0/\\omega$, we find the velocity and acceleration at the lowest point to be perpendicular, yielding the radius of curvature directly.",
+    "_advancedType": "single",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 82
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 585,
+      "completionTokens": 402,
+      "totalTokens": 9669,
+      "reasoningTokens": 8682
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-5.6-luna",
+      "kind": "verify",
+      "promptTokens": 568,
+      "completionTokens": 1096,
+      "totalTokens": 1664,
+      "reasoningTokens": 865
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 1153,
+    "completionTokens": 1498,
+    "totalTokens": 11333,
+    "reasoningTokens": 9547,
+    "calls": 2
+  },
+  "locked": {
+    "questionType": "single",
+    "questionText": "A particle of mass $m$ and charge $q > 0$ is projected from the origin $(0,0,0)$ at $t=0$ with an initial velocity $\\vec{v}_0 = 3 v_0 \\hat{i}$ in a region containing a uniform electric field $\\vec{E} = E_0 \\hat{j}$ and a uniform magnetic field $\\vec{B} = B_0 \\hat{k}$, where $v_0 = \\frac{E_0}{B_0}$. The trajectory of the particle lies entirely in the $xy$-plane. The radius of curvature of the particle's path at the point where its $y$-coordinate reaches its minimum value is:",
+    "options": [
+      "$\\frac{m E_0}{2 q B_0^2}$",
+      "$\\frac{m E_0}{q B_0^2}$",
+      "$\\frac{2 m E_0}{q B_0^2}$",
+      "$\\frac{9 m E_0}{2 q B_0^2}$"
+    ],
+    "correctIndices": [
+      0
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A",
+    "explanation": "By decomposing the motion into a uniform drift velocity $v_0\\hat{i}$ and a circular motion of radius $2v_0/\\omega$, we find the velocity and acceleration at the lowest point to be perpendicular, yielding the radius of curvature directly.",
+    "_solveSteps": [],
+    "_conceptSlot": "charged_particle_fields",
+    "_chapter": "Magnetic Effects of Current and Magnetism",
+    "_topicId": "P14",
+    "_subject": "Physics",
+    "_hardArchetype": "charged_particle_fields",
+    "_insight": "By decomposing the motion into a uniform drift velocity $v_0\\hat{i}$ and a circular motion of radius $2v_0/\\omega$, we find the velocity and acceleration at the lowest point to be perpendicular, yielding the radius of curvature directly.",
+    "_advancedType": "single",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 82,
+    "_dualA": "A",
+    "_dualB": "A",
+    "_doubleSolverAgree": true,
+    "_stageAAnswerLocked": true,
+    "_lockMode": "luna(gpt-5.6-luna:high)",
+    "_ranB": false,
+    "_verifyPass": true,
+    "_proposedKeyMatch": true,
+    "_solverConfidence": 0.99,
+    "_verifyBriefSteps": [
+      "Using m dv/dt = q(E + v × B), with omega = qB0/m and u = E0/B0, the velocity components are vx = u + 2u cos(omega t) and vy = -2u sin(omega t).",
+      "The minimum y-coordinate occurs when cos(omega t) = -1, where vx = -u and vy = 0.",
+      "At this point the acceleration is perpendicular to the velocity and has magnitude a = (q/m)(E0 - B0 vx) = 2qE0/m.",
+      "Thus the curvature radius is rho = vx^2/a = u^2/(2qE0/m) = mE0/(2qB0^2), corresponding to option A."
+    ],
+    "_optionVerdicts": {
+      "A": "true",
+      "B": "false",
+      "C": "false",
+      "D": "false"
+    },
+    "_trustBadge": "LUNA-VERIFY",
+    "_trustGrade": "production_luna",
+    "_productionReady": true,
+    "_needsReview": false,
+    "_answerCorrectnessGuaranteed": true
+  }
+}

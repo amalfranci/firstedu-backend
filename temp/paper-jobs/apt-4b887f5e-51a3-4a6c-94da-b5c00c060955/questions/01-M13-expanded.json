@@ -1,0 +1,134 @@
+{
+  "ts": "2026-09-17T05:29:50.837Z",
+  "jobId": "apt-4b887f5e-51a3-4a6c-94da-b5c00c060955",
+  "seq": 1,
+  "type": "single",
+  "subject": "Mathematics",
+  "topicId": "M13",
+  "chapter": "Conic Sections (Parabola, Ellipse, Hyperbola)",
+  "stage": "expanded",
+  "raw": {
+    "questionType": "single",
+    "questionText": "Let $P$ be the parabola $y^2 = 4x$ with focus $F$. Let $E$ be the ellipse $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ ($a > 1$) which is confocal with $P$ (sharing the focus $F$). A common tangent $L$ to $P$ and $E$ with positive slope touches $P$ at $A$ and $E$ at $B$. If the eccentricity of $E$ is $\\frac{1}{2}$, then which of the following is correct?",
+    "options": [
+      "The area of $\\triangle FAB$ is $\\frac{25}{4}$",
+      "The length of the segment $AB$ is $5$",
+      "The slope of the common tangent $L$ is $\\frac{\\sqrt{3}}{2}$",
+      "The point $B$ lies on the line $x + 2y = 1$"
+    ],
+    "correctIndices": [
+      0
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A",
+    "explanation": "The confocal condition $ae = 1$ yields the ellipse equation, and finding the common tangent reveals a right-angled triangle $\\triangle FAB$ at the focus $F$.",
+    "_solveSteps": [],
+    "_conceptSlot": "common_tangent_conics",
+    "_chapter": "Conic Sections",
+    "_topicId": "M13",
+    "_subject": "Mathematics",
+    "_hardArchetype": "common_tangent_conics",
+    "_insight": "The confocal condition $ae = 1$ yields the ellipse equation, and finding the common tangent reveals a right-angled triangle $\\triangle FAB$ at the focus $F$.",
+    "_advancedType": "single",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 85
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 594,
+      "completionTokens": 358,
+      "totalTokens": 11737,
+      "reasoningTokens": 10785
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-5.6-luna",
+      "kind": "verify",
+      "promptTokens": 552,
+      "completionTokens": 1223,
+      "totalTokens": 1775,
+      "reasoningTokens": 957
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "expand",
+      "promptTokens": 383,
+      "completionTokens": 1327,
+      "totalTokens": 3641,
+      "reasoningTokens": 1931
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 1529,
+    "completionTokens": 2908,
+    "totalTokens": 17153,
+    "reasoningTokens": 13673,
+    "calls": 3
+  },
+  "locked": {
+    "questionType": "single",
+    "questionText": "Let $P$ be the parabola $y^2 = 4x$ with focus $F$. Let $E$ be the ellipse $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ ($a > 1$) which is confocal with $P$ (sharing the focus $F$). A common tangent $L$ to $P$ and $E$ with positive slope touches $P$ at $A$ and $E$ at $B$. If the eccentricity of $E$ is $\\frac{1}{2}$, then which of the following is correct?",
+    "options": [
+      "The area of $\\triangle FAB$ is $\\frac{25}{4}$",
+      "The length of the segment $AB$ is $5$",
+      "The slope of the common tangent $L$ is $\\frac{\\sqrt{3}}{2}$",
+      "The point $B$ lies on the line $x + 2y = 1$"
+    ],
+    "correctIndices": [
+      0
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A",
+    "explanation": "**Insight:** By using the confocal property, we determine the equation of the ellipse. Finding the common tangent with positive slope gives the slope $m = 1/2$, from which the points of contact $A$ on the parabola and $B$ on the ellipse are uniquely determined. Finally, the area of $\\triangle FAB$ is calculated using the coordinate geometry formula.\n\nTo find the correct option, we first determine the equations of the parabola $P$ and the ellipse $E$.\n\n**Step 1: Identify the focus and the equation of the ellipse**\nThe parabola is given by $P: y^2 = 4x$. Its focus is $F(1, 0)$.\nSince the ellipse $E: \\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ is confocal with $P$, its focus is also $F(1, 0)$.\nThus, $ae = 1$.\nGiven the eccentricity $e = \\frac{1}{2}$, we have:\n$$a \\left(\\frac{1}{2}\\right) = 1 \\implies a = 2$$\nUsing the relation $b^2 = a^2(1 - e^2)$:\n$$b^2 = 4\\left(1 - \\frac{1}{4}\\right) = 3$$\nSo, the equation of the ellipse $E$ is:\n$$\\frac{x^2}{4} + \\frac{y^2}{3} = 1$$\n\n**Step 2: Find the common tangent $L$**\nLet the slope of the common tangent $L$ be $m > 0$.\nAny tangent to the parabola $y^2 = 4x$ is of the form:\n$$y = mx + \\frac{1}{m}$$\nAny tangent to the ellipse $\\frac{x^2}{4} + \\frac{y^2}{3} = 1$ is of the form:\n$$y = mx \\pm \\sqrt{4m^2 + 3}$$\nFor these to represent the same line, we must have:\n$$\\frac{1}{m} = \\sqrt{4m^2 + 3} \\implies \\frac{1}{m^2} = 4m^2 + 3$$\n$$4m^4 + 3m^2 - 1 = 0 \\implies (4m^2 - 1)(m^2 + 1) = 0$$\nSince $m > 0$, we get $m^2 = \\frac{1}{4} \\implies m = \\frac{1}{2}$.\n\n**Step 3: Find the points of contact $A$ and $B$**\n- For the parabola $P$, the point of contact $A$ is given by:\n$$A\\left(\\frac{1}{m^2}, \\frac{2}{m}\\right) = A(4, 4)$$\n- For the ellipse $E$, the point of contact $B(x_1, y_1)$ is given by:\n$$x_1 = -\\frac{a^2 m}{c}, \\quad y_1 = \\frac{b^2}{c}$$\nwhere $c = \\frac{1}{m} = 2$. Thus:\n$$x_1 = -\\frac{4 \\cdot (1/2)}{2} = -1, \\quad y_1 = \\frac{3}{2} \\implies B\\left(-1, \\frac{3}{2}\\right)$$\n\n**Step 4: Calculate the area of $\\triangle FAB$**\nThe coordinates of the vertices are $F(1, 0)$, $A(4, 4)$, and $B\\left(-1, \\frac{3}{2}\right)$.\n$$\\text{Area}(\\triangle FAB) = \\frac{1}{2} \\left| x_F(y_A - y_B) + x_A(y_B - y_F) + x_B(y_F - y_A) \\right|$$\n$$\\text{Area}(\\triangle FAB) = \\frac{1}{2} \\left| 1\\left(4 - \\frac{3}{2}\\right) + 4\\left(\\frac{3}{2} - 0\\right) + (-1)(0 - 4) \\right|$$\n$$\\text{Area}(\\triangle FAB) = \\frac{1}{2} \\left| \\frac{5}{2} + 6 + 4 \\right| = \\frac{1}{2} \\left( \\frac{25}{2} \\right) = \\frac{25}{4}$$\n\nThus, the area of $\\triangle FAB$ is indeed $\\frac{25}{4}$, which corresponds to option A.",
+    "_solveSteps": [
+      "Determine the focus of the parabola $P: y^2 = 4x$ as $F(1, 0)$.",
+      "Use the confocal condition $ae = 1$ with $e = 1/2$ to find $a = 2$ and $b^2 = 3$ for the ellipse $E$.",
+      "Equate the tangent conditions for the parabola ($c = 1/m$) and the ellipse ($c = \\sqrt{4m^2 + 3}$) to find the slope $m = 1/2$.",
+      "Find the point of contact $A$ on the parabola as $A(4, 4)$ and $B$ on the ellipse as $B(-1, 3/2)$.",
+      "Calculate the area of $\\triangle FAB$ using the coordinates of $F(1, 0)$, $A(4, 4)$, and $B(-1, 3/2)$ to get $\\frac{25}{4}$."
+    ],
+    "_conceptSlot": "common_tangent_conics",
+    "_chapter": "Conic Sections",
+    "_topicId": "M13",
+    "_subject": "Mathematics",
+    "_hardArchetype": "common_tangent_conics",
+    "_insight": "By using the confocal property, we determine the equation of the ellipse. Finding the common tangent with positive slope gives the slope $m = 1/2$, from which the points of contact $A$ on the parabola and $B$ on the ellipse are uniquely determined. Finally, the area of $\\triangle FAB$ is calculated using the coordinate geometry formula.",
+    "_advancedType": "single",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 85,
+    "_dualA": "A",
+    "_dualB": "A",
+    "_doubleSolverAgree": true,
+    "_stageAAnswerLocked": true,
+    "_lockMode": "luna(gpt-5.6-luna:high)",
+    "_ranB": false,
+    "_verifyPass": true,
+    "_proposedKeyMatch": true,
+    "_solverConfidence": 0.99,
+    "_verifyBriefSteps": [
+      "The parabola y^2=4x has focus F=(1,0). Confocality and eccentricity 1/2 give ellipse focal distance c=1, hence a=2 and b^2=3.",
+      "A parabola tangent at parameter t>0 is ty=x+t^2, or y=x/t+t. Tangency to the ellipse requires t^2=4/t^2+3, giving t=2.",
+      "Thus the common tangent is y=x/2+2, touching the parabola at A=(4,4) and the ellipse at B=(-1,3/2).",
+      "The area of triangle FAB is (1/2)|det((3,4),(-2,3/2))|=25/4, while AB=5sqrt(5)/2, the slope is 1/2, and x_B+2y_B=2. Therefore only A is correct."
+    ],
+    "_optionVerdicts": {
+      "A": "true",
+      "B": "false",
+      "C": "false",
+      "D": "false"
+    },
+    "_trustBadge": "LUNA-VERIFY",
+    "_trustGrade": "production_luna",
+    "_productionReady": true,
+    "_needsReview": false,
+    "_answerCorrectnessGuaranteed": true,
+    "_explanationExpanded": true,
+    "finalAnswer": "A"
+  }
+}

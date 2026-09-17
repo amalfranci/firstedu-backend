@@ -1,0 +1,117 @@
+{
+  "ts": "2026-09-17T05:29:36.873Z",
+  "jobId": "apt-4b887f5e-51a3-4a6c-94da-b5c00c060955",
+  "seq": 1,
+  "type": "single",
+  "subject": "Mathematics",
+  "topicId": "M13",
+  "chapter": "Conic Sections (Parabola, Ellipse, Hyperbola)",
+  "stage": "locked",
+  "raw": {
+    "questionType": "single",
+    "questionText": "Let $P$ be the parabola $y^2 = 4x$ with focus $F$. Let $E$ be the ellipse $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ ($a > 1$) which is confocal with $P$ (sharing the focus $F$). A common tangent $L$ to $P$ and $E$ with positive slope touches $P$ at $A$ and $E$ at $B$. If the eccentricity of $E$ is $\\frac{1}{2}$, then which of the following is correct?",
+    "options": [
+      "The area of $\\triangle FAB$ is $\\frac{25}{4}$",
+      "The length of the segment $AB$ is $5$",
+      "The slope of the common tangent $L$ is $\\frac{\\sqrt{3}}{2}$",
+      "The point $B$ lies on the line $x + 2y = 1$"
+    ],
+    "correctIndices": [
+      0
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A",
+    "explanation": "The confocal condition $ae = 1$ yields the ellipse equation, and finding the common tangent reveals a right-angled triangle $\\triangle FAB$ at the focus $F$.",
+    "_solveSteps": [],
+    "_conceptSlot": "common_tangent_conics",
+    "_chapter": "Conic Sections",
+    "_topicId": "M13",
+    "_subject": "Mathematics",
+    "_hardArchetype": "common_tangent_conics",
+    "_insight": "The confocal condition $ae = 1$ yields the ellipse equation, and finding the common tangent reveals a right-angled triangle $\\triangle FAB$ at the focus $F$.",
+    "_advancedType": "single",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 85
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 594,
+      "completionTokens": 358,
+      "totalTokens": 11737,
+      "reasoningTokens": 10785
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-5.6-luna",
+      "kind": "verify",
+      "promptTokens": 552,
+      "completionTokens": 1223,
+      "totalTokens": 1775,
+      "reasoningTokens": 957
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 1146,
+    "completionTokens": 1581,
+    "totalTokens": 13512,
+    "reasoningTokens": 11742,
+    "calls": 2
+  },
+  "locked": {
+    "questionType": "single",
+    "questionText": "Let $P$ be the parabola $y^2 = 4x$ with focus $F$. Let $E$ be the ellipse $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ ($a > 1$) which is confocal with $P$ (sharing the focus $F$). A common tangent $L$ to $P$ and $E$ with positive slope touches $P$ at $A$ and $E$ at $B$. If the eccentricity of $E$ is $\\frac{1}{2}$, then which of the following is correct?",
+    "options": [
+      "The area of $\\triangle FAB$ is $\\frac{25}{4}$",
+      "The length of the segment $AB$ is $5$",
+      "The slope of the common tangent $L$ is $\\frac{\\sqrt{3}}{2}$",
+      "The point $B$ lies on the line $x + 2y = 1$"
+    ],
+    "correctIndices": [
+      0
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A",
+    "explanation": "The confocal condition $ae = 1$ yields the ellipse equation, and finding the common tangent reveals a right-angled triangle $\\triangle FAB$ at the focus $F$.",
+    "_solveSteps": [],
+    "_conceptSlot": "common_tangent_conics",
+    "_chapter": "Conic Sections",
+    "_topicId": "M13",
+    "_subject": "Mathematics",
+    "_hardArchetype": "common_tangent_conics",
+    "_insight": "The confocal condition $ae = 1$ yields the ellipse equation, and finding the common tangent reveals a right-angled triangle $\\triangle FAB$ at the focus $F$.",
+    "_advancedType": "single",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 85,
+    "_dualA": "A",
+    "_dualB": "A",
+    "_doubleSolverAgree": true,
+    "_stageAAnswerLocked": true,
+    "_lockMode": "luna(gpt-5.6-luna:high)",
+    "_ranB": false,
+    "_verifyPass": true,
+    "_proposedKeyMatch": true,
+    "_solverConfidence": 0.99,
+    "_verifyBriefSteps": [
+      "The parabola y^2=4x has focus F=(1,0). Confocality and eccentricity 1/2 give ellipse focal distance c=1, hence a=2 and b^2=3.",
+      "A parabola tangent at parameter t>0 is ty=x+t^2, or y=x/t+t. Tangency to the ellipse requires t^2=4/t^2+3, giving t=2.",
+      "Thus the common tangent is y=x/2+2, touching the parabola at A=(4,4) and the ellipse at B=(-1,3/2).",
+      "The area of triangle FAB is (1/2)|det((3,4),(-2,3/2))|=25/4, while AB=5sqrt(5)/2, the slope is 1/2, and x_B+2y_B=2. Therefore only A is correct."
+    ],
+    "_optionVerdicts": {
+      "A": "true",
+      "B": "false",
+      "C": "false",
+      "D": "false"
+    },
+    "_trustBadge": "LUNA-VERIFY",
+    "_trustGrade": "production_luna",
+    "_productionReady": true,
+    "_needsReview": false,
+    "_answerCorrectnessGuaranteed": true
+  }
+}

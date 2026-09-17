@@ -1,0 +1,123 @@
+{
+  "ts": "2026-09-17T05:30:51.759Z",
+  "jobId": "apt-4b887f5e-51a3-4a6c-94da-b5c00c060955",
+  "seq": 2,
+  "type": "multiple",
+  "subject": "Mathematics",
+  "topicId": "M02",
+  "chapter": "Complex Numbers",
+  "stage": "locked",
+  "raw": {
+    "questionType": "multiple",
+    "questionText": "Let $z$ be a complex number satisfying the equation $|z - 3| = 2|z - 3i|$. Let $S$ denote the locus of $z$ in the Argand plane. Which of the following statements is/are correct?",
+    "options": [
+      "The locus $S$ is a circle with center $-1+4i$ and radius $2\\sqrt{2}$.",
+      "For any $z$ on the locus $S$ (with $z \\neq 1+6i$), the real part of $\\frac{z + 3 - 2i}{z - 1 - 6i}$ is equal to $0$.",
+      "The minimum value of $|z|^2$ for $z \\in S$ is $25 - 4\\sqrt{34}$.",
+      "The maximum value of $|z - (1+i)|$ for $z \\in S$ is $\\sqrt{13} + 2\\sqrt{2}$."
+    ],
+    "correctIndices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A,B,C,D",
+    "explanation": "The Apollonius circle locus has center $-1+4i$ and radius $2\\sqrt{2}$, with $-3+2i$ and $1+6i$ acting as diametrically opposite points, which immediately yields the perpendicularity and distance relations.",
+    "_solveSteps": [],
+    "_conceptSlot": "apollonius_locus_properties",
+    "_chapter": "Complex Numbers",
+    "_topicId": "M02",
+    "_subject": "Mathematics",
+    "_hardArchetype": "apollonius_locus_properties",
+    "_insight": "The Apollonius circle locus has center $-1+4i$ and radius $2\\sqrt{2}$, with $-3+2i$ and $1+6i$ acting as diametrically opposite points, which immediately yields the perpendicularity and distance relations.",
+    "_advancedType": "multiple",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 82
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 660,
+      "completionTokens": 388,
+      "totalTokens": 5930,
+      "reasoningTokens": 4882
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-5.6-luna",
+      "kind": "verify",
+      "promptTokens": 560,
+      "completionTokens": 720,
+      "totalTokens": 1280,
+      "reasoningTokens": 503
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 1220,
+    "completionTokens": 1108,
+    "totalTokens": 7210,
+    "reasoningTokens": 5385,
+    "calls": 2
+  },
+  "locked": {
+    "questionType": "multiple",
+    "questionText": "Let $z$ be a complex number satisfying the equation $|z - 3| = 2|z - 3i|$. Let $S$ denote the locus of $z$ in the Argand plane. Which of the following statements is/are correct?",
+    "options": [
+      "The locus $S$ is a circle with center $-1+4i$ and radius $2\\sqrt{2}$.",
+      "For any $z$ on the locus $S$ (with $z \\neq 1+6i$), the real part of $\\frac{z + 3 - 2i}{z - 1 - 6i}$ is equal to $0$.",
+      "The minimum value of $|z|^2$ for $z \\in S$ is $25 - 4\\sqrt{34}$.",
+      "The maximum value of $|z - (1+i)|$ for $z \\in S$ is $\\sqrt{13} + 2\\sqrt{2}$."
+    ],
+    "correctIndices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A,B,C,D",
+    "explanation": "The Apollonius circle locus has center $-1+4i$ and radius $2\\sqrt{2}$, with $-3+2i$ and $1+6i$ acting as diametrically opposite points, which immediately yields the perpendicularity and distance relations.",
+    "_solveSteps": [],
+    "_conceptSlot": "apollonius_locus_properties",
+    "_chapter": "Complex Numbers",
+    "_topicId": "M02",
+    "_subject": "Mathematics",
+    "_hardArchetype": "apollonius_locus_properties",
+    "_insight": "The Apollonius circle locus has center $-1+4i$ and radius $2\\sqrt{2}$, with $-3+2i$ and $1+6i$ acting as diametrically opposite points, which immediately yields the perpendicularity and distance relations.",
+    "_advancedType": "multiple",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 82,
+    "_dualA": "A,B,C,D",
+    "_dualB": "A,B,C,D",
+    "_doubleSolverAgree": true,
+    "_stageAAnswerLocked": true,
+    "_lockMode": "luna(gpt-5.6-luna:high)",
+    "_ranB": false,
+    "_verifyPass": true,
+    "_proposedKeyMatch": true,
+    "_solverConfidence": 1,
+    "_verifyBriefSteps": [
+      "Writing z=x+iy gives (x+1)^2+(y-4)^2=8, so S has center (-1,4) and radius 2sqrt(2).",
+      "For B, Re[(z+3-2i)/(z-1-6i)] has numerator x^2+y^2+2x-8y+9, which vanishes on S; the excluded point is the denominator zero.",
+      "The minimum of |z|^2 is (sqrt(17)-2sqrt(2))^2=25-4sqrt(34).",
+      "The maximum distance from (1,1) to S is sqrt(13)+2sqrt(2)."
+    ],
+    "_optionVerdicts": {
+      "A": "true",
+      "B": "true",
+      "C": "true",
+      "D": "true"
+    },
+    "_trustBadge": "LUNA-VERIFY",
+    "_trustGrade": "production_luna",
+    "_productionReady": true,
+    "_needsReview": false,
+    "_answerCorrectnessGuaranteed": true
+  }
+}

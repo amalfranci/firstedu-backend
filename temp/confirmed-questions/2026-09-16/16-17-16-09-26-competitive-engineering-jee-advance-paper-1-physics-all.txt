@@ -1,0 +1,16 @@
+========================================================================
+Topic: Competitive › Engineering › JEE Advance Paper 1 › Physics
+========================================================================
+
+--- Question 1 ---
+A uniform solid cylinder of mass $m$, radius $R$, and height $H$ is placed with its flat circular base on a rough horizontal turntable. The center of the base is at a distance $d$ from the vertical axis of rotation of the turntable, where $d \\gg R$. The coefficient of static friction between the cylinder and the turntable is $\\mu$. The turntable starts from rest at $t=0$ and rotates with a constant angular acceleration $\\alpha$. If $\\mu > \\frac{2R}{H}$ and $\\alpha < \\frac{2gR}{dH}$, the angular velocity $\\omega$ of the turntable at the instant the cylinder is on the verge of toppling is:
+
+A) $\\omega = \\left[ \\left(\\frac{2gR}{dH}\\right)^2 - \\alpha^2 \\right]^{1/4}$
+B) $\\omega = \\left[ \\left(\\frac{\\mu g}{d}\\right)^2 - \\alpha^2 \\right]^{1/4}$
+C) $\\omega = \\left[ \\frac{2gR}{dH} - \\alpha \\right]^{1/2}$
+D) $\\omega = \\left[ \\left(\\frac{gR}{dH}\\right)^2 - \\alpha^2 \\right]^{1/4}$
+
+Correct: A
+Explanation: **Insight:** In the accelerating frame of the cylinder, the net horizontal pseudo force acts at the center of mass (height $H/2$) with magnitude $m a = m d \sqrt{\omega^4 + \alpha^2}$. Toppling occurs when the destabilizing torque of this pseudo force about the edge of the base exceeds the restoring torque of gravity ($mgR$). The condition $\mu > \frac{2R}{H}$ ensures that toppling occurs before sliding.
+
+To find the angular velocity $\omega$ at the instant of toppling, we analyze the forces in the non-inertial frame of the cylinder. Since $d \gg R$, the cylinder can be treated as a rigid body whose center of mass (CM) is at a distance $d$ from the axis of rotation, located at a height of $H/2$ from the base. In this rotating frame, the cylinder experiences a radial acceleration $a_r = \omega^2 d$ and a tangential acceleration $a_t = \alpha d$. The net acceleration of the CM is $a = \sqrt{a_r^2 + a_t^2} = d \sqrt{\omega^4 + \alpha^2}$, which gives rise to a net pseudo force $F_p = m d \sqrt{\omega^4 + \alpha^2}$ acting horizontally at the CM. At the verge of toppling, the normal force shifts to the extreme edge of the base. Balancing the torque about this tipping point yields the relation for $\omega$. The given condition $\mu > \frac{2R}{H}$ guarantees that the threshold for toppling is reached before the threshold for sliding, and $\alpha < \frac{2gR}{dH}$ ensures that the cylinder does not topple immediately at $t=0$.

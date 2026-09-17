@@ -1,0 +1,55 @@
+{
+  "ts": "2026-09-17T06:44:30.261Z",
+  "jobId": "apt-41954457-4dec-4a3c-9289-404d560acdde",
+  "seq": 1,
+  "type": "single",
+  "subject": "Physics",
+  "topicId": "P15",
+  "chapter": "Electromagnetic Induction and AC Circuits",
+  "stage": "generated",
+  "raw": {
+    "questionType": "single",
+    "questionText": "A conducting rod of mass $m$ and length $L$ can slide without friction on two long, horizontal, parallel conducting rails. The rails are connected at one end through a series combination of a resistor $R$ and a capacitor $C$. A uniform vertical magnetic field $B$ is present throughout the region. At $t = 0$, the rod is at rest and a constant horizontal force $F$ starts acting on the rod along the length of the rails, pulling it away from the connected end. For very large times $t \\to \\infty$, the velocity of the rod $v(t)$ behaves asymptotically as $v(t) \\approx a t + u$, where $a$ is the asymptotic acceleration and $u$ is a constant velocity offset. Defining $M = m + C B^2 L^2$, which of the following options correctly represents $a$ and $u$?",
+    "options": [
+      "$a = \\frac{F}{M}, \\quad u = \\frac{F R B^2 L^2 C^2}{M^2}$",
+      "$a = \\frac{F}{M}, \\quad u = \\frac{F R C}{M}$",
+      "$a = \\frac{F}{m}, \\quad u = \\frac{F R B^2 L^2 C^2}{m^2}$",
+      "$a = \\frac{F}{M}, \\quad u = 0$"
+    ],
+    "correctIndices": [
+      0
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A",
+    "explanation": "By setting up the coupled differential equations for the rod's motion and the capacitor's charging, we obtain a first-order linear ODE for the current, whose integration yields the asymptotic velocity relation.",
+    "_solveSteps": [],
+    "_conceptSlot": "sliding_rails_additional",
+    "_chapter": "Electromagnetic Induction and AC Circuits",
+    "_topicId": "P15",
+    "_subject": "Physics",
+    "_hardArchetype": "sliding_rails_additional",
+    "_insight": "By setting up the coupled differential equations for the rod's motion and the capacitor's charging, we obtain a first-order linear ODE for the current, whose integration yields the asymptotic velocity relation.",
+    "_advancedType": "single",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 85
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 557,
+      "completionTokens": 445,
+      "totalTokens": 7574,
+      "reasoningTokens": 6572
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 557,
+    "completionTokens": 445,
+    "totalTokens": 7574,
+    "reasoningTokens": 6572,
+    "calls": 1
+  }
+}

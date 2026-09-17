@@ -1,0 +1,102 @@
+{
+  "ts": "2026-09-17T06:54:20.120Z",
+  "jobId": "apt-41954457-4dec-4a3c-9289-404d560acdde",
+  "seq": 4,
+  "type": "integer",
+  "subject": "Physics",
+  "topicId": "P19",
+  "chapter": "Modern Physics",
+  "stage": "locked",
+  "raw": {
+    "questionType": "integer",
+    "questionText": "When monochromatic light of wavelength $\\lambda_1 = 310\\text{ nm}$ is incident on a photosensitive metallic surface, the minimum de Broglie wavelength of the emitted photoelectrons is $\\lambda_{dB1}$. When the wavelength of the incident light is changed to $\\lambda_2 = 620\\text{ nm}$, the minimum de Broglie wavelength of the emitted photoelectrons becomes $\\lambda_{dB2} = 3\\lambda_{dB1}$. Now, monochromatic light of wavelength $\\lambda_3 = 248\\text{ nm}$ is incident on the same metallic surface, and the minimum de Broglie wavelength of the emitted photoelectrons is $\\lambda_{dB3}$. When a retarding potential of $V$ volts is applied, the minimum de Broglie wavelength of the escaping photoelectrons increases to $\\sqrt{13}\\lambda_{dB3}$. Find the value of $V$. (Take $hc = 1240\\text{ eV}\\cdot\\text{nm}$)",
+    "options": [],
+    "correctAnswer": 3,
+    "explanation": "Relate the minimum de Broglie wavelength to maximum kinetic energy, solve for the work function using the ratio of wavelengths, and then apply the retarding potential energy shift to find the required voltage.",
+    "_solveSteps": [],
+    "_conceptSlot": "photoelectric_broglie_wavelength",
+    "_chapter": "Modern Physics",
+    "_topicId": "P19",
+    "_subject": "Physics",
+    "_hardArchetype": "photoelectric_broglie_wavelength",
+    "_insight": "Relate the minimum de Broglie wavelength to maximum kinetic energy, solve for the work function using the ratio of wavelengths, and then apply the retarding potential energy shift to find the required voltage.",
+    "_advancedType": "integer",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 84
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 695,
+      "completionTokens": 353,
+      "totalTokens": 10050,
+      "reasoningTokens": 9002
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-5.6-luna",
+      "kind": "verify",
+      "promptTokens": 557,
+      "completionTokens": 1254,
+      "totalTokens": 1811,
+      "reasoningTokens": 1023
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 1252,
+    "completionTokens": 1607,
+    "totalTokens": 11861,
+    "reasoningTokens": 10025,
+    "calls": 2
+  },
+  "locked": {
+    "questionType": "integer",
+    "questionText": "When monochromatic light of wavelength $\\lambda_1 = 310\\text{ nm}$ is incident on a photosensitive metallic surface, the minimum de Broglie wavelength of the emitted photoelectrons is $\\lambda_{dB1}$. When the wavelength of the incident light is changed to $\\lambda_2 = 620\\text{ nm}$, the minimum de Broglie wavelength of the emitted photoelectrons becomes $\\lambda_{dB2} = 3\\lambda_{dB1}$. Now, monochromatic light of wavelength $\\lambda_3 = 248\\text{ nm}$ is incident on the same metallic surface, and the minimum de Broglie wavelength of the emitted photoelectrons is $\\lambda_{dB3}$. When a retarding potential of $V$ volts is applied, the minimum de Broglie wavelength of the escaping photoelectrons increases to $\\sqrt{13}\\lambda_{dB3}$. Find the value of $V$. (Take $hc = 1240\\text{ eV}\\cdot\\text{nm}$)",
+    "options": [],
+    "correctAnswer": 3,
+    "explanation": "Relate the minimum de Broglie wavelength to maximum kinetic energy, solve for the work function using the ratio of wavelengths, and then apply the retarding potential energy shift to find the required voltage.",
+    "_solveSteps": [],
+    "_conceptSlot": "photoelectric_broglie_wavelength",
+    "_chapter": "Modern Physics",
+    "_topicId": "P19",
+    "_subject": "Physics",
+    "_hardArchetype": "photoelectric_broglie_wavelength",
+    "_insight": "Relate the minimum de Broglie wavelength to maximum kinetic energy, solve for the work function using the ratio of wavelengths, and then apply the retarding potential energy shift to find the required voltage.",
+    "_advancedType": "integer",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 84,
+    "_dualA": 3,
+    "_dualB": 3,
+    "_doubleSolverAgree": true,
+    "_stageAAnswerLocked": true,
+    "_lockMode": "luna(gpt-5.6-luna:high)",
+    "_ranB": false,
+    "_verifyPass": true,
+    "_proposedKeyMatch": true,
+    "_solverConfidence": 0.99,
+    "_verifyBriefSteps": [
+      "Using K_max=hc/lambda-phi and lambda_dB,min proportional to 1/sqrt(K_max), lambda_dB2=3lambda_dB1 gives K1=9K2.",
+      "Photon energies are 4 eV and 2 eV, so 4-phi=9(2-phi), yielding phi=1.75 eV.",
+      "For lambda3=248 nm, K3=5-1.75=3.25 eV.",
+      "With retarding potential, lambda'_dB/lambda_dB3=sqrt(K3/(K3-eV))=sqrt(13), so eV=(12/13)(3.25 eV)=3 eV.",
+      "Therefore V=3 V, matching the proposed key."
+    ],
+    "_optionVerdicts": {
+      "A": "false",
+      "B": "false",
+      "C": "false",
+      "D": "false"
+    },
+    "finalAnswer": 3,
+    "answerDisplay": "3",
+    "_trustBadge": "LUNA-VERIFY",
+    "_trustGrade": "production_luna",
+    "_productionReady": true,
+    "_needsReview": false,
+    "_answerCorrectnessGuaranteed": true
+  }
+}

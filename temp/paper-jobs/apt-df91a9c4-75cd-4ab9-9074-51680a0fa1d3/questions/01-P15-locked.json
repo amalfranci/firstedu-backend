@@ -1,0 +1,122 @@
+{
+  "ts": "2026-09-17T06:31:56.528Z",
+  "jobId": "apt-df91a9c4-75cd-4ab9-9074-51680a0fa1d3",
+  "seq": 1,
+  "type": "single",
+  "subject": "Physics",
+  "topicId": "P15",
+  "chapter": "Electromagnetic Induction and AC Circuits",
+  "stage": "locked",
+  "raw": {
+    "questionType": "single",
+    "questionText": "A conducting rod of mass $m$ and length $\\ell$ can slide without friction on two long, horizontal, parallel conducting rails. The rails are connected at one end through a series combination of a resistor $R$ and an initially uncharged capacitor $C$. A uniform vertical magnetic field $B$ is present throughout the region, perpendicular to the plane of the rails. At $t = 0$, the rod is projected with an initial velocity $v_0$ along the rails away from the capacitor-resistor connection. Neglecting the self-inductance of the loop and the electrical resistance of the rails and the rod, find the total heat energy $H$ dissipated in the resistor during the entire subsequent motion of the rod.",
+    "options": [
+      "$\\frac{m v_0^2 B^2 \\ell^2 C}{2(m + B^2 \\ell^2 C)}$",
+      "$\\frac{m^2 v_0^2}{2(m + B^2 \\ell^2 C)}$",
+      "$\\frac{m v_0^2 B^2 \\ell^2 C}{m + B^2 \\ell^2 C}$",
+      "$\\frac{m v_0^2 (B^2 \\ell^2 C)^2}{2(m + B^2 \\ell^2 C)^2}$"
+    ],
+    "correctIndices": [
+      0
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A",
+    "explanation": "By integrating the equation of motion, we relate the change in velocity to the charge on the capacitor, allowing us to find the final state and use energy conservation to obtain the heat loss without solving the differential equation.",
+    "_solveSteps": [],
+    "_conceptSlot": "sliding_rails_capacitor",
+    "_chapter": "Electromagnetic Induction and AC Circuits",
+    "_topicId": "P15",
+    "_subject": "Physics",
+    "_hardArchetype": "sliding_rails_capacitor",
+    "_insight": "By integrating the equation of motion, we relate the change in velocity to the charge on the capacitor, allowing us to find the final state and use energy conservation to obtain the heat loss without solving the differential equation.",
+    "_advancedType": "single",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 82
+  },
+  "tryNo": 2,
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 557,
+      "completionTokens": 398,
+      "totalTokens": 6704,
+      "reasoningTokens": 5749
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 557,
+      "completionTokens": 434,
+      "totalTokens": 5126,
+      "reasoningTokens": 4135
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-5.6-luna",
+      "kind": "verify",
+      "promptTokens": 804,
+      "completionTokens": 875,
+      "totalTokens": 1679,
+      "reasoningTokens": 799
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 1918,
+    "completionTokens": 1707,
+    "totalTokens": 13509,
+    "reasoningTokens": 10683,
+    "calls": 3
+  },
+  "locked": {
+    "questionType": "single",
+    "questionText": "A conducting rod of mass $m$ and length $\\ell$ can slide without friction on two long, horizontal, parallel conducting rails. The rails are connected at one end through a series combination of a resistor $R$ and an initially uncharged capacitor $C$. A uniform vertical magnetic field $B$ is present throughout the region, perpendicular to the plane of the rails. At $t = 0$, the rod is projected with an initial velocity $v_0$ along the rails away from the capacitor-resistor connection. Neglecting the self-inductance of the loop and the electrical resistance of the rails and the rod, find the total heat energy $H$ dissipated in the resistor during the entire subsequent motion of the rod.",
+    "options": [
+      "$\\frac{m v_0^2 B^2 \\ell^2 C}{2(m + B^2 \\ell^2 C)}$",
+      "$\\frac{m^2 v_0^2}{2(m + B^2 \\ell^2 C)}$",
+      "$\\frac{m v_0^2 B^2 \\ell^2 C}{m + B^2 \\ell^2 C}$",
+      "$\\frac{m v_0^2 (B^2 \\ell^2 C)^2}{2(m + B^2 \\ell^2 C)^2}$"
+    ],
+    "correctIndices": [
+      0
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A",
+    "explanation": "By integrating the equation of motion, we relate the change in velocity to the charge on the capacitor, allowing us to find the final state and use energy conservation to obtain the heat loss without solving the differential equation.",
+    "_solveSteps": [],
+    "_conceptSlot": "sliding_rails_capacitor",
+    "_chapter": "Electromagnetic Induction and AC Circuits",
+    "_topicId": "P15",
+    "_subject": "Physics",
+    "_hardArchetype": "sliding_rails_capacitor",
+    "_insight": "By integrating the equation of motion, we relate the change in velocity to the charge on the capacitor, allowing us to find the final state and use energy conservation to obtain the heat loss without solving the differential equation.",
+    "_advancedType": "single",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 82,
+    "_dualA": "A",
+    "_dualB": "A",
+    "_doubleSolverAgree": true,
+    "_stageAAnswerLocked": true,
+    "_lockMode": "luna(gpt-5.6-luna:high)",
+    "_ranB": false,
+    "_verifyPass": true,
+    "_proposedKeyMatch": true,
+    "_solverConfidence": 0.98,
+    "_mathematicalCorrect": true,
+    "_chapterMatch": true,
+    "_conceptMatch": true,
+    "_difficultyMatch": true,
+    "_formatValid": true,
+    "_verifyBriefSteps": [],
+    "_optionVerdicts": null,
+    "_trustBadge": "LUNA-VERIFY",
+    "_trustGrade": "production_luna",
+    "_productionReady": true,
+    "_needsReview": false,
+    "_answerCorrectnessGuaranteed": true
+  }
+}

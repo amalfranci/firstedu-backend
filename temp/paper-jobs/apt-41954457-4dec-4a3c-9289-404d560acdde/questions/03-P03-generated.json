@@ -1,0 +1,57 @@
+{
+  "ts": "2026-09-17T06:51:01.346Z",
+  "jobId": "apt-41954457-4dec-4a3c-9289-404d560acdde",
+  "seq": 3,
+  "type": "multiple",
+  "subject": "Physics",
+  "topicId": "P03",
+  "chapter": "Newton's Laws of Motion and Friction",
+  "stage": "generated",
+  "raw": {
+    "questionType": "multiple",
+    "questionText": "A block $A$ of mass $m_1 = 2\\text{ kg}$ is placed on a smooth horizontal surface. Block $A$ has a vertical guide slot in which a block $C$ of mass $m_3 = 1\\text{ kg}$ can slide freely without friction, meaning block $C$ can only move vertically relative to block $A$. Another block $B$ of mass $m_2 = 1\\text{ kg}$ is placed on the flat horizontal top surface of block $A$. The coefficients of static and kinetic friction between block $A$ and block $B$ are $\\mu_s = 0.3$ and $\\mu_k = 0.2$, respectively. A light, inextensible string connects block $B$ to block $C$ over a light, frictionless pulley fixed at the top-right corner of block $A$. The system is released from rest with the horizontal segment of the string taut. Take $g = 10\\text{ m/s}^2$. Which of the following statements is/are correct?",
+    "options": [
+      "The acceleration of block $A$ is $\\frac{8}{7}\\text{ m/s}^2$ towards the left.",
+      "The tension in the string is $\\frac{38}{7}\\text{ N}$.",
+      "The horizontal force exerted by block $A$ on block $C$ is $\\frac{8}{7}\\text{ N}$.",
+      "The acceleration of block $B$ relative to the ground is $\\frac{32}{7}\\text{ m/s}^2$ towards the right."
+    ],
+    "correctIndices": [
+      0,
+      1,
+      2
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A,B,C",
+    "explanation": "By analyzing the horizontal center-of-mass constraint and the relative motion of the blocks, we determine that slipping must occur, allowing us to solve the coupled equations of motion.",
+    "_solveSteps": [],
+    "_conceptSlot": "multi_block_systems",
+    "_chapter": "Newton's Laws of Motion and Friction",
+    "_topicId": "P03",
+    "_subject": "Physics",
+    "_hardArchetype": "multi_block_systems",
+    "_insight": "By analyzing the horizontal center-of-mass constraint and the relative motion of the blocks, we determine that slipping must occur, allowing us to solve the coupled equations of motion.",
+    "_advancedType": "multiple",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 85
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 617,
+      "completionTokens": 508,
+      "totalTokens": 9486,
+      "reasoningTokens": 8361
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 617,
+    "completionTokens": 508,
+    "totalTokens": 9486,
+    "reasoningTokens": 8361,
+    "calls": 1
+  }
+}

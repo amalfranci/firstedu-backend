@@ -1,0 +1,55 @@
+{
+  "ts": "2026-09-17T05:29:21.466Z",
+  "jobId": "apt-4b887f5e-51a3-4a6c-94da-b5c00c060955",
+  "seq": 1,
+  "type": "single",
+  "subject": "Mathematics",
+  "topicId": "M13",
+  "chapter": "Conic Sections (Parabola, Ellipse, Hyperbola)",
+  "stage": "generated",
+  "raw": {
+    "questionType": "single",
+    "questionText": "Let $P$ be the parabola $y^2 = 4x$ with focus $F$. Let $E$ be the ellipse $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ ($a > 1$) which is confocal with $P$ (sharing the focus $F$). A common tangent $L$ to $P$ and $E$ with positive slope touches $P$ at $A$ and $E$ at $B$. If the eccentricity of $E$ is $\\frac{1}{2}$, then which of the following is correct?",
+    "options": [
+      "The area of $\\triangle FAB$ is $\\frac{25}{4}$",
+      "The length of the segment $AB$ is $5$",
+      "The slope of the common tangent $L$ is $\\frac{\\sqrt{3}}{2}$",
+      "The point $B$ lies on the line $x + 2y = 1$"
+    ],
+    "correctIndices": [
+      0
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A",
+    "explanation": "The confocal condition $ae = 1$ yields the ellipse equation, and finding the common tangent reveals a right-angled triangle $\\triangle FAB$ at the focus $F$.",
+    "_solveSteps": [],
+    "_conceptSlot": "common_tangent_conics",
+    "_chapter": "Conic Sections",
+    "_topicId": "M13",
+    "_subject": "Mathematics",
+    "_hardArchetype": "common_tangent_conics",
+    "_insight": "The confocal condition $ae = 1$ yields the ellipse equation, and finding the common tangent reveals a right-angled triangle $\\triangle FAB$ at the focus $F$.",
+    "_advancedType": "single",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 85
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 594,
+      "completionTokens": 358,
+      "totalTokens": 11737,
+      "reasoningTokens": 10785
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 594,
+    "completionTokens": 358,
+    "totalTokens": 11737,
+    "reasoningTokens": 10785,
+    "calls": 1
+  }
+}

@@ -1,0 +1,460 @@
+{
+  "includedTopics": [
+    {
+      "conceptSlot": "complex_locus_geometry",
+      "label": "Complex Locus and Geometric Transformation",
+      "description": "Given a complex number z satisfying |z-a| = k|z-b|, find the locus and then determine the maximum area of a triangle formed by z and two fixed points on the locus under a rotation transformation.",
+      "questionKind": "multi_concept",
+      "difficulty": "hard",
+      "blooms": "Analyze",
+      "estimatedTime": 4.5,
+      "type": "single"
+    },
+    {
+      "conceptSlot": "matrix_system_parameter",
+      "label": "Parametric System of Equations",
+      "description": "A system of three linear equations in three variables contains two parameters; determine the values of these parameters for which the system has infinitely many solutions, then find the specific solution that minimizes a quadratic form.",
+      "questionKind": "multi_concept",
+      "difficulty": "hard",
+      "blooms": "Analyze",
+      "estimatedTime": 4.5,
+      "type": "single"
+    },
+    {
+      "conceptSlot": "bayes_recursion_game",
+      "label": "Conditional Probability in Recursive Games",
+      "description": "Two players play a game involving drawing balls from multiple urns with changing compositions; calculate the conditional probability of a specific outcome given the game terminates at a specific step.",
+      "questionKind": "multi_concept",
+      "difficulty": "hard",
+      "blooms": "Analyze",
+      "estimatedTime": 4.5,
+      "type": "single"
+    },
+    {
+      "conceptSlot": "conic_tangent_locus",
+      "label": "Tangent Properties and Locus of Orthocenter",
+      "description": "Find the locus of the orthocenter of a triangle formed by three points on a hyperbola, where two of the points are fixed and the third is variable such that the tangent at that point satisfies a specific slope condition.",
+      "questionKind": "multi_concept",
+      "difficulty": "hard",
+      "blooms": "Analyze",
+      "estimatedTime": 4.5,
+      "type": "single"
+    },
+    {
+      "conceptSlot": "integral_leibniz_substitution",
+      "label": "Function Defined by Integral",
+      "description": "Given a function f(x) defined as an integral with variable limits, find the extrema of f(x) by applying the Leibniz rule and solving the resulting transcendental equation.",
+      "questionKind": "multi_concept",
+      "difficulty": "hard",
+      "blooms": "Analyze",
+      "estimatedTime": 4.5,
+      "type": "single"
+    },
+    {
+      "conceptSlot": "vector_3d_shortest_dist",
+      "label": "Skew Lines and Volume Optimization",
+      "description": "Find the shortest distance between two skew lines defined by vector equations, then use this distance as the height of a parallelepiped to find the volume given a constraint on the base vectors.",
+      "questionKind": "multi_concept",
+      "difficulty": "hard",
+      "blooms": "Analyze",
+      "estimatedTime": 4.5,
+      "type": "single"
+    }
+  ],
+  "excludedTopics": [
+    "M01 Sets, Relations and Functions",
+    "M03 Quadratic Equations",
+    "M04 Sequences and Series",
+    "M06 Binomial Theorem",
+    "M09 Statistics",
+    "M10 Trigonometry",
+    "M11 Straight Lines (2D Analytical Geometry)",
+    "M12 Circles",
+    "M15 Limits, Continuity and Differentiability"
+  ],
+  "kindRatio": {
+    "theory": 0,
+    "direct": 0,
+    "multi_concept": 6,
+    "label": "0 theory · 0 direct · 6 multi-concept"
+  },
+  "blueprints": [
+    {
+      "topic": "Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: Complex Numbers, Logarithms, Permutations and Combinations, Matrices and Determinants, Probability, Conic Sections (Parabola, Ellipse, Hyperbola), Three-Dimensional Geometry, Applications of Derivatives, Integral Calculus, Differential Equations, Vectors",
+      "concept": "Complex Locus and Geometric Transformation",
+      "conceptSlot": "complex_locus_geometry",
+      "difficulty": "hard",
+      "type": "single",
+      "estimatedTime": 4.5,
+      "blooms": "Analyze",
+      "questionKind": "multi_concept",
+      "label": "Complex Locus and Geometric Transformation",
+      "blueprint": {
+        "pattern": "Given a complex number z satisfying |z-a| = k|z-b|, find the locus and then determine the maximum area of a triangle formed by z and two fixed points on the locus under a rotation transformation.",
+        "required": "Must involve conversion to Cartesian coordinates and optimization of area using the geometric properties of the resulting circle.",
+        "banned": "Simple identification of the locus without the subsequent optimization step.",
+        "stemHint": "If |z-1| = 2|z+i|, find the maximum area of the triangle formed by z, the origin, and the point 1+i."
+      },
+      "index": 0
+    },
+    {
+      "topic": "Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: Complex Numbers, Logarithms, Permutations and Combinations, Matrices and Determinants, Probability, Conic Sections (Parabola, Ellipse, Hyperbola), Three-Dimensional Geometry, Applications of Derivatives, Integral Calculus, Differential Equations, Vectors",
+      "concept": "Parametric System of Equations",
+      "conceptSlot": "matrix_system_parameter",
+      "difficulty": "hard",
+      "type": "single",
+      "estimatedTime": 4.5,
+      "blooms": "Analyze",
+      "questionKind": "multi_concept",
+      "label": "Parametric System of Equations",
+      "blueprint": {
+        "pattern": "A system of three linear equations in three variables contains two parameters; determine the values of these parameters for which the system has infinitely many solutions, then find the specific solution that minimizes a quadratic form.",
+        "required": "Must use rank-nullity or determinant properties to find parameter constraints, followed by a constrained optimization.",
+        "banned": "Direct Cramer's rule application for a unique solution.",
+        "stemHint": "For the system x+y+z=2, x+2y+3z=5, x+3y+λz=μ, find λ and μ such that the system is consistent and x^2+y^2+z^2 is minimized."
+      },
+      "index": 1
+    },
+    {
+      "topic": "Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: Complex Numbers, Logarithms, Permutations and Combinations, Matrices and Determinants, Probability, Conic Sections (Parabola, Ellipse, Hyperbola), Three-Dimensional Geometry, Applications of Derivatives, Integral Calculus, Differential Equations, Vectors",
+      "concept": "Conditional Probability in Recursive Games",
+      "conceptSlot": "bayes_recursion_game",
+      "difficulty": "hard",
+      "type": "single",
+      "estimatedTime": 4.5,
+      "blooms": "Analyze",
+      "questionKind": "multi_concept",
+      "label": "Conditional Probability in Recursive Games",
+      "blueprint": {
+        "pattern": "Two players play a game involving drawing balls from multiple urns with changing compositions; calculate the conditional probability of a specific outcome given the game terminates at a specific step.",
+        "required": "Must use total probability theorem combined with a recursive relation for the state space.",
+        "banned": "Simple urn problems with fixed probabilities and no termination condition.",
+        "stemHint": "Urn A has 2 red, 3 white; Urn B has 3 red, 2 white. A coin is tossed to pick an urn. If a white ball is drawn, it is replaced by a red ball. Find the probability the third draw is white given the first two were red."
+      },
+      "index": 2
+    },
+    {
+      "topic": "Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: Complex Numbers, Logarithms, Permutations and Combinations, Matrices and Determinants, Probability, Conic Sections (Parabola, Ellipse, Hyperbola), Three-Dimensional Geometry, Applications of Derivatives, Integral Calculus, Differential Equations, Vectors",
+      "concept": "Tangent Properties and Locus of Orthocenter",
+      "conceptSlot": "conic_tangent_locus",
+      "difficulty": "hard",
+      "type": "single",
+      "estimatedTime": 4.5,
+      "blooms": "Analyze",
+      "questionKind": "multi_concept",
+      "label": "Tangent Properties and Locus of Orthocenter",
+      "blueprint": {
+        "pattern": "Find the locus of the orthocenter of a triangle formed by three points on a hyperbola, where two of the points are fixed and the third is variable such that the tangent at that point satisfies a specific slope condition.",
+        "required": "Must link the parametric coordinates of the hyperbola with the geometric definition of the orthocenter.",
+        "banned": "Standard tangent-at-a-point calculation without the locus requirement.",
+        "stemHint": "Let P, Q be fixed points on xy=c^2. If R is a variable point on the hyperbola such that the tangent at R is parallel to PQ, find the locus of the orthocenter of triangle PQR."
+      },
+      "index": 3
+    },
+    {
+      "topic": "Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: Complex Numbers, Logarithms, Permutations and Combinations, Matrices and Determinants, Probability, Conic Sections (Parabola, Ellipse, Hyperbola), Three-Dimensional Geometry, Applications of Derivatives, Integral Calculus, Differential Equations, Vectors",
+      "concept": "Function Defined by Integral",
+      "conceptSlot": "integral_leibniz_substitution",
+      "difficulty": "hard",
+      "type": "single",
+      "estimatedTime": 4.5,
+      "blooms": "Analyze",
+      "questionKind": "multi_concept",
+      "label": "Function Defined by Integral",
+      "blueprint": {
+        "pattern": "Given a function f(x) defined as an integral with variable limits, find the extrema of f(x) by applying the Leibniz rule and solving the resulting transcendental equation.",
+        "required": "Must involve a non-trivial substitution to simplify the integrand before differentiation.",
+        "banned": "Direct integration of polynomials or simple trigonometric functions.",
+        "stemHint": "Let f(x) = integral from x to x^2 of (ln(t)/(1+t)) dt. Find the value of x in (1, infinity) where f'(x) = 0."
+      },
+      "index": 4
+    },
+    {
+      "topic": "Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: Complex Numbers, Logarithms, Permutations and Combinations, Matrices and Determinants, Probability, Conic Sections (Parabola, Ellipse, Hyperbola), Three-Dimensional Geometry, Applications of Derivatives, Integral Calculus, Differential Equations, Vectors",
+      "concept": "Skew Lines and Volume Optimization",
+      "conceptSlot": "vector_3d_shortest_dist",
+      "difficulty": "hard",
+      "type": "single",
+      "estimatedTime": 4.5,
+      "blooms": "Analyze",
+      "questionKind": "multi_concept",
+      "label": "Skew Lines and Volume Optimization",
+      "blueprint": {
+        "pattern": "Find the shortest distance between two skew lines defined by vector equations, then use this distance as the height of a parallelepiped to find the volume given a constraint on the base vectors.",
+        "required": "Must involve the scalar triple product and the projection of the common perpendicular vector.",
+        "banned": "Simple calculation of shortest distance between two lines given in Cartesian form.",
+        "stemHint": "Lines L1: r = a + t(b) and L2: r = c + s(d). If the shortest distance is h, find the volume of the parallelepiped formed by vectors b, d, and (a-c)."
+      },
+      "index": 5
+    }
+  ],
+  "examDistribution": {
+    "totalSlots": 6,
+    "subjects": {
+      "General": 6
+    },
+    "difficulty": {
+      "Easy": 0,
+      "Medium": 0,
+      "Hard": 6
+    },
+    "mix": {
+      "easy": 0,
+      "medium": 0,
+      "hard": 6,
+      "bankDifficulty": "hard",
+      "ratioLabel": "0:0:10"
+    }
+  },
+  "steering": {
+    "conceptSlots": [
+      "complex_locus_geometry",
+      "matrix_system_parameter",
+      "bayes_recursion_game",
+      "conic_tangent_locus",
+      "integral_leibniz_substitution",
+      "vector_3d_shortest_dist"
+    ],
+    "slotPlans": [
+      {
+        "conceptSlot": "complex_locus_geometry",
+        "label": "Complex Locus and Geometric Transformation",
+        "questionKind": "multi_concept",
+        "difficulty": "hard",
+        "type": "single",
+        "estimatedTime": 4.5,
+        "blooms": "Analyze",
+        "topic": "Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: Complex Numbers, Logarithms, Permutations and Combinations, Matrices and Determinants, Probability, Conic Sections (Parabola, Ellipse, Hyperbola), Three-Dimensional Geometry, Applications of Derivatives, Integral Calculus, Differential Equations, Vectors",
+        "blueprint": {
+          "pattern": "Given a complex number z satisfying |z-a| = k|z-b|, find the locus and then determine the maximum area of a triangle formed by z and two fixed points on the locus under a rotation transformation.",
+          "required": "Must involve conversion to Cartesian coordinates and optimization of area using the geometric properties of the resulting circle.",
+          "banned": "Simple identification of the locus without the subsequent optimization step.",
+          "stemHint": "If |z-1| = 2|z+i|, find the maximum area of the triangle formed by z, the origin, and the point 1+i."
+        }
+      },
+      {
+        "conceptSlot": "matrix_system_parameter",
+        "label": "Parametric System of Equations",
+        "questionKind": "multi_concept",
+        "difficulty": "hard",
+        "type": "single",
+        "estimatedTime": 4.5,
+        "blooms": "Analyze",
+        "topic": "Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: Complex Numbers, Logarithms, Permutations and Combinations, Matrices and Determinants, Probability, Conic Sections (Parabola, Ellipse, Hyperbola), Three-Dimensional Geometry, Applications of Derivatives, Integral Calculus, Differential Equations, Vectors",
+        "blueprint": {
+          "pattern": "A system of three linear equations in three variables contains two parameters; determine the values of these parameters for which the system has infinitely many solutions, then find the specific solution that minimizes a quadratic form.",
+          "required": "Must use rank-nullity or determinant properties to find parameter constraints, followed by a constrained optimization.",
+          "banned": "Direct Cramer's rule application for a unique solution.",
+          "stemHint": "For the system x+y+z=2, x+2y+3z=5, x+3y+λz=μ, find λ and μ such that the system is consistent and x^2+y^2+z^2 is minimized."
+        }
+      },
+      {
+        "conceptSlot": "bayes_recursion_game",
+        "label": "Conditional Probability in Recursive Games",
+        "questionKind": "multi_concept",
+        "difficulty": "hard",
+        "type": "single",
+        "estimatedTime": 4.5,
+        "blooms": "Analyze",
+        "topic": "Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: Complex Numbers, Logarithms, Permutations and Combinations, Matrices and Determinants, Probability, Conic Sections (Parabola, Ellipse, Hyperbola), Three-Dimensional Geometry, Applications of Derivatives, Integral Calculus, Differential Equations, Vectors",
+        "blueprint": {
+          "pattern": "Two players play a game involving drawing balls from multiple urns with changing compositions; calculate the conditional probability of a specific outcome given the game terminates at a specific step.",
+          "required": "Must use total probability theorem combined with a recursive relation for the state space.",
+          "banned": "Simple urn problems with fixed probabilities and no termination condition.",
+          "stemHint": "Urn A has 2 red, 3 white; Urn B has 3 red, 2 white. A coin is tossed to pick an urn. If a white ball is drawn, it is replaced by a red ball. Find the probability the third draw is white given the first two were red."
+        }
+      },
+      {
+        "conceptSlot": "conic_tangent_locus",
+        "label": "Tangent Properties and Locus of Orthocenter",
+        "questionKind": "multi_concept",
+        "difficulty": "hard",
+        "type": "single",
+        "estimatedTime": 4.5,
+        "blooms": "Analyze",
+        "topic": "Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: Complex Numbers, Logarithms, Permutations and Combinations, Matrices and Determinants, Probability, Conic Sections (Parabola, Ellipse, Hyperbola), Three-Dimensional Geometry, Applications of Derivatives, Integral Calculus, Differential Equations, Vectors",
+        "blueprint": {
+          "pattern": "Find the locus of the orthocenter of a triangle formed by three points on a hyperbola, where two of the points are fixed and the third is variable such that the tangent at that point satisfies a specific slope condition.",
+          "required": "Must link the parametric coordinates of the hyperbola with the geometric definition of the orthocenter.",
+          "banned": "Standard tangent-at-a-point calculation without the locus requirement.",
+          "stemHint": "Let P, Q be fixed points on xy=c^2. If R is a variable point on the hyperbola such that the tangent at R is parallel to PQ, find the locus of the orthocenter of triangle PQR."
+        }
+      },
+      {
+        "conceptSlot": "integral_leibniz_substitution",
+        "label": "Function Defined by Integral",
+        "questionKind": "multi_concept",
+        "difficulty": "hard",
+        "type": "single",
+        "estimatedTime": 4.5,
+        "blooms": "Analyze",
+        "topic": "Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: Complex Numbers, Logarithms, Permutations and Combinations, Matrices and Determinants, Probability, Conic Sections (Parabola, Ellipse, Hyperbola), Three-Dimensional Geometry, Applications of Derivatives, Integral Calculus, Differential Equations, Vectors",
+        "blueprint": {
+          "pattern": "Given a function f(x) defined as an integral with variable limits, find the extrema of f(x) by applying the Leibniz rule and solving the resulting transcendental equation.",
+          "required": "Must involve a non-trivial substitution to simplify the integrand before differentiation.",
+          "banned": "Direct integration of polynomials or simple trigonometric functions.",
+          "stemHint": "Let f(x) = integral from x to x^2 of (ln(t)/(1+t)) dt. Find the value of x in (1, infinity) where f'(x) = 0."
+        }
+      },
+      {
+        "conceptSlot": "vector_3d_shortest_dist",
+        "label": "Skew Lines and Volume Optimization",
+        "questionKind": "multi_concept",
+        "difficulty": "hard",
+        "type": "single",
+        "estimatedTime": 4.5,
+        "blooms": "Analyze",
+        "topic": "Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: Complex Numbers, Logarithms, Permutations and Combinations, Matrices and Determinants, Probability, Conic Sections (Parabola, Ellipse, Hyperbola), Three-Dimensional Geometry, Applications of Derivatives, Integral Calculus, Differential Equations, Vectors",
+        "blueprint": {
+          "pattern": "Find the shortest distance between two skew lines defined by vector equations, then use this distance as the height of a parallelepiped to find the volume given a constraint on the base vectors.",
+          "required": "Must involve the scalar triple product and the projection of the common perpendicular vector.",
+          "banned": "Simple calculation of shortest distance between two lines given in Cartesian form.",
+          "stemHint": "Lines L1: r = a + t(b) and L2: r = c + s(d). If the shortest distance is h, find the volume of the parallelepiped formed by vectors b, d, and (a-c)."
+        }
+      }
+    ],
+    "blueprints": [
+      {
+        "topic": "Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: Complex Numbers, Logarithms, Permutations and Combinations, Matrices and Determinants, Probability, Conic Sections (Parabola, Ellipse, Hyperbola), Three-Dimensional Geometry, Applications of Derivatives, Integral Calculus, Differential Equations, Vectors",
+        "concept": "Complex Locus and Geometric Transformation",
+        "conceptSlot": "complex_locus_geometry",
+        "difficulty": "hard",
+        "type": "single",
+        "estimatedTime": 4.5,
+        "blooms": "Analyze",
+        "questionKind": "multi_concept",
+        "label": "Complex Locus and Geometric Transformation",
+        "blueprint": {
+          "pattern": "Given a complex number z satisfying |z-a| = k|z-b|, find the locus and then determine the maximum area of a triangle formed by z and two fixed points on the locus under a rotation transformation.",
+          "required": "Must involve conversion to Cartesian coordinates and optimization of area using the geometric properties of the resulting circle.",
+          "banned": "Simple identification of the locus without the subsequent optimization step.",
+          "stemHint": "If |z-1| = 2|z+i|, find the maximum area of the triangle formed by z, the origin, and the point 1+i."
+        },
+        "index": 0
+      },
+      {
+        "topic": "Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: Complex Numbers, Logarithms, Permutations and Combinations, Matrices and Determinants, Probability, Conic Sections (Parabola, Ellipse, Hyperbola), Three-Dimensional Geometry, Applications of Derivatives, Integral Calculus, Differential Equations, Vectors",
+        "concept": "Parametric System of Equations",
+        "conceptSlot": "matrix_system_parameter",
+        "difficulty": "hard",
+        "type": "single",
+        "estimatedTime": 4.5,
+        "blooms": "Analyze",
+        "questionKind": "multi_concept",
+        "label": "Parametric System of Equations",
+        "blueprint": {
+          "pattern": "A system of three linear equations in three variables contains two parameters; determine the values of these parameters for which the system has infinitely many solutions, then find the specific solution that minimizes a quadratic form.",
+          "required": "Must use rank-nullity or determinant properties to find parameter constraints, followed by a constrained optimization.",
+          "banned": "Direct Cramer's rule application for a unique solution.",
+          "stemHint": "For the system x+y+z=2, x+2y+3z=5, x+3y+λz=μ, find λ and μ such that the system is consistent and x^2+y^2+z^2 is minimized."
+        },
+        "index": 1
+      },
+      {
+        "topic": "Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: Complex Numbers, Logarithms, Permutations and Combinations, Matrices and Determinants, Probability, Conic Sections (Parabola, Ellipse, Hyperbola), Three-Dimensional Geometry, Applications of Derivatives, Integral Calculus, Differential Equations, Vectors",
+        "concept": "Conditional Probability in Recursive Games",
+        "conceptSlot": "bayes_recursion_game",
+        "difficulty": "hard",
+        "type": "single",
+        "estimatedTime": 4.5,
+        "blooms": "Analyze",
+        "questionKind": "multi_concept",
+        "label": "Conditional Probability in Recursive Games",
+        "blueprint": {
+          "pattern": "Two players play a game involving drawing balls from multiple urns with changing compositions; calculate the conditional probability of a specific outcome given the game terminates at a specific step.",
+          "required": "Must use total probability theorem combined with a recursive relation for the state space.",
+          "banned": "Simple urn problems with fixed probabilities and no termination condition.",
+          "stemHint": "Urn A has 2 red, 3 white; Urn B has 3 red, 2 white. A coin is tossed to pick an urn. If a white ball is drawn, it is replaced by a red ball. Find the probability the third draw is white given the first two were red."
+        },
+        "index": 2
+      },
+      {
+        "topic": "Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: Complex Numbers, Logarithms, Permutations and Combinations, Matrices and Determinants, Probability, Conic Sections (Parabola, Ellipse, Hyperbola), Three-Dimensional Geometry, Applications of Derivatives, Integral Calculus, Differential Equations, Vectors",
+        "concept": "Tangent Properties and Locus of Orthocenter",
+        "conceptSlot": "conic_tangent_locus",
+        "difficulty": "hard",
+        "type": "single",
+        "estimatedTime": 4.5,
+        "blooms": "Analyze",
+        "questionKind": "multi_concept",
+        "label": "Tangent Properties and Locus of Orthocenter",
+        "blueprint": {
+          "pattern": "Find the locus of the orthocenter of a triangle formed by three points on a hyperbola, where two of the points are fixed and the third is variable such that the tangent at that point satisfies a specific slope condition.",
+          "required": "Must link the parametric coordinates of the hyperbola with the geometric definition of the orthocenter.",
+          "banned": "Standard tangent-at-a-point calculation without the locus requirement.",
+          "stemHint": "Let P, Q be fixed points on xy=c^2. If R is a variable point on the hyperbola such that the tangent at R is parallel to PQ, find the locus of the orthocenter of triangle PQR."
+        },
+        "index": 3
+      },
+      {
+        "topic": "Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: Complex Numbers, Logarithms, Permutations and Combinations, Matrices and Determinants, Probability, Conic Sections (Parabola, Ellipse, Hyperbola), Three-Dimensional Geometry, Applications of Derivatives, Integral Calculus, Differential Equations, Vectors",
+        "concept": "Function Defined by Integral",
+        "conceptSlot": "integral_leibniz_substitution",
+        "difficulty": "hard",
+        "type": "single",
+        "estimatedTime": 4.5,
+        "blooms": "Analyze",
+        "questionKind": "multi_concept",
+        "label": "Function Defined by Integral",
+        "blueprint": {
+          "pattern": "Given a function f(x) defined as an integral with variable limits, find the extrema of f(x) by applying the Leibniz rule and solving the resulting transcendental equation.",
+          "required": "Must involve a non-trivial substitution to simplify the integrand before differentiation.",
+          "banned": "Direct integration of polynomials or simple trigonometric functions.",
+          "stemHint": "Let f(x) = integral from x to x^2 of (ln(t)/(1+t)) dt. Find the value of x in (1, infinity) where f'(x) = 0."
+        },
+        "index": 4
+      },
+      {
+        "topic": "Competitive › Engineering › JEE Advanced › Mathematics · Hard non-single (multi/integer/match) HIGH topics: Complex Numbers, Logarithms, Permutations and Combinations, Matrices and Determinants, Probability, Conic Sections (Parabola, Ellipse, Hyperbola), Three-Dimensional Geometry, Applications of Derivatives, Integral Calculus, Differential Equations, Vectors",
+        "concept": "Skew Lines and Volume Optimization",
+        "conceptSlot": "vector_3d_shortest_dist",
+        "difficulty": "hard",
+        "type": "single",
+        "estimatedTime": 4.5,
+        "blooms": "Analyze",
+        "questionKind": "multi_concept",
+        "label": "Skew Lines and Volume Optimization",
+        "blueprint": {
+          "pattern": "Find the shortest distance between two skew lines defined by vector equations, then use this distance as the height of a parallelepiped to find the volume given a constraint on the base vectors.",
+          "required": "Must involve the scalar triple product and the projection of the common perpendicular vector.",
+          "banned": "Simple calculation of shortest distance between two lines given in Cartesian form.",
+          "stemHint": "Lines L1: r = a + t(b) and L2: r = c + s(d). If the shortest distance is h, find the volume of the parallelepiped formed by vectors b, d, and (a-c)."
+        },
+        "index": 5
+      }
+    ],
+    "source": "ai"
+  },
+  "meta": {
+    "subject": "Mathematics",
+    "subjectId": "mathematics",
+    "difficulty": "hard",
+    "examCalibrated": true,
+    "examProfile": "jee_advanced",
+    "slotCount": 6,
+    "kindRatio": {
+      "theory": 0,
+      "direct": 0,
+      "multi_concept": 6,
+      "label": "0 theory · 0 direct · 6 multi-concept"
+    },
+    "examDistribution": {
+      "totalSlots": 6,
+      "subjects": {
+        "General": 6
+      },
+      "difficulty": {
+        "Easy": 0,
+        "Medium": 0,
+        "Hard": 6
+      },
+      "mix": {
+        "easy": 0,
+        "medium": 0,
+        "hard": 6,
+        "bankDifficulty": "hard",
+        "ratioLabel": "0:0:10"
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "ts": "2026-09-17T06:54:03.966Z",
+  "jobId": "apt-41954457-4dec-4a3c-9289-404d560acdde",
+  "seq": 4,
+  "type": "integer",
+  "subject": "Physics",
+  "topicId": "P19",
+  "chapter": "Modern Physics",
+  "stage": "generated",
+  "raw": {
+    "questionType": "integer",
+    "questionText": "When monochromatic light of wavelength $\\lambda_1 = 310\\text{ nm}$ is incident on a photosensitive metallic surface, the minimum de Broglie wavelength of the emitted photoelectrons is $\\lambda_{dB1}$. When the wavelength of the incident light is changed to $\\lambda_2 = 620\\text{ nm}$, the minimum de Broglie wavelength of the emitted photoelectrons becomes $\\lambda_{dB2} = 3\\lambda_{dB1}$. Now, monochromatic light of wavelength $\\lambda_3 = 248\\text{ nm}$ is incident on the same metallic surface, and the minimum de Broglie wavelength of the emitted photoelectrons is $\\lambda_{dB3}$. When a retarding potential of $V$ volts is applied, the minimum de Broglie wavelength of the escaping photoelectrons increases to $\\sqrt{13}\\lambda_{dB3}$. Find the value of $V$. (Take $hc = 1240\\text{ eV}\\cdot\\text{nm}$)",
+    "options": [],
+    "correctAnswer": 3,
+    "explanation": "Relate the minimum de Broglie wavelength to maximum kinetic energy, solve for the work function using the ratio of wavelengths, and then apply the retarding potential energy shift to find the required voltage.",
+    "_solveSteps": [],
+    "_conceptSlot": "photoelectric_broglie_wavelength",
+    "_chapter": "Modern Physics",
+    "_topicId": "P19",
+    "_subject": "Physics",
+    "_hardArchetype": "photoelectric_broglie_wavelength",
+    "_insight": "Relate the minimum de Broglie wavelength to maximum kinetic energy, solve for the work function using the ratio of wavelengths, and then apply the retarding potential energy shift to find the required voltage.",
+    "_advancedType": "integer",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 84
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 695,
+      "completionTokens": 353,
+      "totalTokens": 10050,
+      "reasoningTokens": 9002
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 695,
+    "completionTokens": 353,
+    "totalTokens": 10050,
+    "reasoningTokens": 9002,
+    "calls": 1
+  }
+}

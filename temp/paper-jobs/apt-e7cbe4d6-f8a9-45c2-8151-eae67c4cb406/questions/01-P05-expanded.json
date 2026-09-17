@@ -1,0 +1,130 @@
+{
+  "ts": "2026-09-16T10:44:46.368Z",
+  "jobId": "apt-e7cbe4d6-f8a9-45c2-8151-eae67c4cb406",
+  "seq": 1,
+  "type": "single",
+  "subject": "Physics",
+  "topicId": "P05",
+  "chapter": "System of Particles and Rotational Motion",
+  "stage": "expanded",
+  "raw": {
+    "questionType": "single",
+    "questionText": "A uniform solid cylinder of mass $m$, radius $R$, and height $H$ is placed with its flat circular base on a rough horizontal turntable. The center of the base is at a distance $d$ from the vertical axis of rotation of the turntable, where $d \\\\gg R$. The coefficient of static friction between the cylinder and the turntable is $\\\\mu$. The turntable starts from rest at $t=0$ and rotates with a constant angular acceleration $\\\\alpha$. If $\\\\mu > \\\\frac{2R}{H}$ and $\\\\alpha < \\\\frac{2gR}{dH}$, the angular velocity $\\\\omega$ of the turntable at the instant the cylinder is on the verge of toppling is:",
+    "options": [
+      "$\\\\omega = \\\\left[ \\\\left(\\\\frac{2gR}{dH}\\\\right)^2 - \\\\alpha^2 \\\\right]^{1/4}$",
+      "$\\\\omega = \\\\left[ \\\\left(\\\\frac{\\\\mu g}{d}\\\\right)^2 - \\\\alpha^2 \\\\right]^{1/4}$",
+      "$\\\\omega = \\\\left[ \\\\frac{2gR}{dH} - \\\\alpha \\\\right]^{1/2}$",
+      "$\\\\omega = \\\\left[ \\\\left(\\\\frac{gR}{dH}\\\\right)^2 - \\\\alpha^2 \\\\right]^{1/4}$"
+    ],
+    "correctIndices": [
+      0
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A",
+    "explanation": "In the co-rotating frame, the net horizontal pseudo-force is the vector sum of the perpendicular centrifugal and Euler forces, which must overcome the restoring torque of gravity for toppling to occur.",
+    "_solveSteps": [],
+    "_conceptSlot": "rigid_body_toppling",
+    "_chapter": "System of Particles and Rotational Motion",
+    "_topicId": "P05",
+    "_subject": "Physics",
+    "_hardArchetype": "rigid_body_toppling",
+    "_insight": "In the co-rotating frame, the net horizontal pseudo-force is the vector sum of the perpendicular centrifugal and Euler forces, which must overcome the restoring torque of gravity for toppling to occur.",
+    "_advancedType": "single",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 85
+  },
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 555,
+      "completionTokens": 462,
+      "totalTokens": 12958,
+      "reasoningTokens": 11941
+    },
+    {
+      "provider": "openai",
+      "model": "o3-mini",
+      "kind": "solver",
+      "promptTokens": 408,
+      "completionTokens": 2483,
+      "totalTokens": 2891,
+      "reasoningTokens": 2240
+    },
+    {
+      "provider": "openai",
+      "model": "o3-mini",
+      "kind": "solver",
+      "promptTokens": 408,
+      "completionTokens": 1719,
+      "totalTokens": 2127,
+      "reasoningTokens": 1536
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "expand",
+      "promptTokens": 434,
+      "completionTokens": 769,
+      "totalTokens": 3099,
+      "reasoningTokens": 1896
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 1805,
+    "completionTokens": 5433,
+    "totalTokens": 21075,
+    "reasoningTokens": 17613,
+    "calls": 4
+  },
+  "locked": {
+    "questionType": "single",
+    "questionText": "A uniform solid cylinder of mass $m$, radius $R$, and height $H$ is placed with its flat circular base on a rough horizontal turntable. The center of the base is at a distance $d$ from the vertical axis of rotation of the turntable, where $d \\\\gg R$. The coefficient of static friction between the cylinder and the turntable is $\\\\mu$. The turntable starts from rest at $t=0$ and rotates with a constant angular acceleration $\\\\alpha$. If $\\\\mu > \\\\frac{2R}{H}$ and $\\\\alpha < \\\\frac{2gR}{dH}$, the angular velocity $\\\\omega$ of the turntable at the instant the cylinder is on the verge of toppling is:",
+    "options": [
+      "$\\\\omega = \\\\left[ \\\\left(\\\\frac{2gR}{dH}\\\\right)^2 - \\\\alpha^2 \\\\right]^{1/4}$",
+      "$\\\\omega = \\\\left[ \\\\left(\\\\frac{\\\\mu g}{d}\\\\right)^2 - \\\\alpha^2 \\\\right]^{1/4}$",
+      "$\\\\omega = \\\\left[ \\\\frac{2gR}{dH} - \\\\alpha \\\\right]^{1/2}$",
+      "$\\\\omega = \\\\left[ \\\\left(\\\\frac{gR}{dH}\\\\right)^2 - \\\\alpha^2 \\\\right]^{1/4}$"
+    ],
+    "correctIndices": [
+      0
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A",
+    "explanation": "**Insight:** In the accelerating frame of the cylinder, the net horizontal pseudo force acts at the center of mass (height $H/2$) with magnitude $m a = m d \\sqrt{\\omega^4 + \\alpha^2}$. Toppling occurs when the destabilizing torque of this pseudo force about the edge of the base exceeds the restoring torque of gravity ($mgR$). The condition $\\mu > \\frac{2R}{H}$ ensures that toppling occurs before sliding.\n\nTo find the angular velocity $\\omega$ at the instant of toppling, we analyze the forces in the non-inertial frame of the cylinder. Since $d \\gg R$, the cylinder can be treated as a rigid body whose center of mass (CM) is at a distance $d$ from the axis of rotation, located at a height of $H/2$ from the base. In this rotating frame, the cylinder experiences a radial acceleration $a_r = \\omega^2 d$ and a tangential acceleration $a_t = \\alpha d$. The net acceleration of the CM is $a = \\sqrt{a_r^2 + a_t^2} = d \\sqrt{\\omega^4 + \\alpha^2}$, which gives rise to a net pseudo force $F_p = m d \\sqrt{\\omega^4 + \\alpha^2}$ acting horizontally at the CM. At the verge of toppling, the normal force shifts to the extreme edge of the base. Balancing the torque about this tipping point yields the relation for $\\omega$. The given condition $\\mu > \\frac{2R}{H}$ guarantees that the threshold for toppling is reached before the threshold for sliding, and $\\alpha < \\frac{2gR}{dH}$ ensures that the cylinder does not topple immediately at $t=0$.",
+    "_solveSteps": [
+      "Identify the components of acceleration of the center of mass of the cylinder: radial acceleration $a_r = \\omega^2 d$ and tangential acceleration $a_t = \\alpha d$.",
+      "Calculate the net acceleration of the center of mass: $a = \\sqrt{a_r^2 + a_t^2} = d \\sqrt{\\omega^4 + \\alpha^2}$.",
+      "Determine the pseudo force acting at the center of mass (at height $H/2$): $F_p = m a = m d \\sqrt{\\omega^4 + \\alpha^2}$.",
+      "Set up the torque balance equation about the tipping point on the edge of the base: the destabilizing torque is $\\tau_{\\text{pseudo}} = F_p \\left(\\frac{H}{2}\\right)$ and the restoring torque is $\\tau_{\\text{gravity}} = m g R$.",
+      "Equate the torques at the verge of toppling: $m d \\sqrt{\\omega^4 + \\alpha^2} \\left(\\frac{H}{2}\\right) = m g R$.",
+      "Simplify the equation to solve for $\\omega$: $\\sqrt{\\omega^4 + \\alpha^2} = \\frac{2gR}{dH} \\implies \\omega^4 + \\alpha^2 = \\left(\\frac{2gR}{dH}\\right)^2 \\implies \\omega = \\left[ \\left(\\frac{2gR}{dH}\\right)^2 - \\alpha^2 \\right]^{1/4}$.",
+      "Conclude that the correct option is A."
+    ],
+    "_conceptSlot": "rigid_body_toppling",
+    "_chapter": "System of Particles and Rotational Motion",
+    "_topicId": "P05",
+    "_subject": "Physics",
+    "_hardArchetype": "rigid_body_toppling",
+    "_insight": "In the accelerating frame of the cylinder, the net horizontal pseudo force acts at the center of mass (height $H/2$) with magnitude $m a = m d \\sqrt{\\omega^4 + \\alpha^2}$. Toppling occurs when the destabilizing torque of this pseudo force about the edge of the base exceeds the restoring torque of gravity ($mgR$). The condition $\\mu > \\frac{2R}{H}$ ensures that toppling occurs before sliding.",
+    "_advancedType": "single",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 85,
+    "_dualA": "A",
+    "_dualB": "A",
+    "_doubleSolverAgree": true,
+    "_stageAAnswerLocked": true,
+    "_lockMode": "dual(o4-mini+o3-mini)",
+    "_ranB": true,
+    "_solverConfidence": 0.95,
+    "_trustBadge": "DUAL-OPENAI",
+    "_trustGrade": "production_dual",
+    "_productionReady": true,
+    "_needsReview": false,
+    "_answerCorrectnessGuaranteed": true,
+    "_explanationExpanded": true
+  }
+}

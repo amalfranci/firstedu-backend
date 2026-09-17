@@ -1,0 +1,67 @@
+{
+  "ts": "2026-09-17T06:38:22.775Z",
+  "jobId": "apt-df91a9c4-75cd-4ab9-9074-51680a0fa1d3",
+  "seq": 2,
+  "type": "multiple",
+  "subject": "Physics",
+  "topicId": "P03",
+  "chapter": "Newton's Laws of Motion and Friction",
+  "stage": "generated",
+  "raw": {
+    "questionType": "multiple",
+    "questionText": "A wedge of inclination angle $\\theta = 45^\\circ$ is accelerated horizontally to the left with a constant acceleration $a$. A block of mass $m = \\sqrt{2}\\text{ kg}$ is placed on the inclined surface of the wedge. The coefficients of static and kinetic friction between the block and the wedge are $\\mu_s = 0.5$ and $\\mu_k = 0.4$, respectively. Take $g = 10\\text{ m/s}^2$. Which of the following statements is/are correct?",
+    "options": [
+      "If $a = 2\\text{ m/s}^2$, the friction force acting on the block is $4.8\\text{ N}$ and its acceleration relative to the wedge is $1.6\\sqrt{2}\\text{ m/s}^2$.",
+      "If $a = 5\\text{ m/s}^2$, the friction force acting on the block is $5\\text{ N}$ directed downwards along the incline.",
+      "If $a = 20\\text{ m/s}^2$, the friction force acting on the block is $10\\text{ N}$ directed downwards along the incline.",
+      "If $a = 40\\text{ m/s}^2$, the friction force acting on the block is $20\\text{ N}$ and its acceleration relative to the wedge is $5\\sqrt{2}\\text{ m/s}^2$."
+    ],
+    "correctIndices": [
+      0,
+      2,
+      3
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "A,C,D",
+    "explanation": "Analyze the transition from static to kinetic friction by finding the range of acceleration for which the block remains stationary in the non-inertial frame of the wedge.",
+    "_solveSteps": [],
+    "_conceptSlot": "inertial_wedge_friction",
+    "_chapter": "Newton's Laws of Motion and Friction",
+    "_topicId": "P03",
+    "_subject": "Physics",
+    "_hardArchetype": "inertial_wedge_friction",
+    "_insight": "Analyze the transition from static to kinetic friction by finding the range of acceleration for which the block remains stationary in the non-inertial frame of the wedge.",
+    "_advancedType": "multiple",
+    "difficultyTier": "hard",
+    "_questionKind": "multi_concept",
+    "_generatorDifficultySelfScore": 84
+  },
+  "tryNo": 2,
+  "tokenCalls": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 593,
+      "completionTokens": 438,
+      "totalTokens": 10872,
+      "reasoningTokens": 9841
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "kind": "generate",
+      "promptTokens": 593,
+      "completionTokens": 471,
+      "totalTokens": 6834,
+      "reasoningTokens": 5770
+    }
+  ],
+  "tokenTotals": {
+    "promptTokens": 1186,
+    "completionTokens": 909,
+    "totalTokens": 17706,
+    "reasoningTokens": 15611,
+    "calls": 2
+  }
+}
