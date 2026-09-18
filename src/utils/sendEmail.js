@@ -100,7 +100,7 @@ export const sendOTPEmail = async (email, otp, name) => {
           <p style="color: #999; font-size: 12px;">If you did not request this, please ignore this email.</p>
         </div>
       `,
-      from: `"Iscorre Security" <${process.env.SMTP_CONNECT_EMAIL || process.env.SMTP_EMAIL}>`,
+      from: `"TestLard Security" <${process.env.SMTP_CONNECT_EMAIL || process.env.SMTP_EMAIL}>`,
     });
     console.log(`✅ Email sent successfully to ${email}. Message ID: ${info.messageId}`);
     return info;
@@ -125,7 +125,7 @@ export const sendEmailWithTemplate = async ({
   variables = {},
   defaultSubject,
   defaultHtml,
-  from = `"Iscorre" <${process.env.SMTP_CONNECT_EMAIL || process.env.SMTP_EMAIL}>`,
+  from = `"TestLard" <${process.env.SMTP_CONNECT_EMAIL || process.env.SMTP_EMAIL}>`,
   attachments = [],
 }) => {
   if (!email) throw new ApiError(400, 'Email address is required');
@@ -173,7 +173,7 @@ export const sendContactUsEmail = async ({ name, phone, email, message }) => {
     }
 
     const mailOptions = {
-      from: `"Iscorre Support" <${process.env.SMTP_SUPPORT_EMAIL || process.env.SMTP_EMAIL}>`,
+      from: `"TestLard Support" <${process.env.SMTP_SUPPORT_EMAIL || process.env.SMTP_EMAIL}>`,
       to: adminEmail,
       replyTo: email,
       subject: `Contact Us: ${name}`,
@@ -186,7 +186,7 @@ export const sendContactUsEmail = async ({ name, phone, email, message }) => {
             <tr><td style="padding: 8px 0; border-bottom: 1px solid #eee;"><strong>Phone</strong></td><td style="padding: 8px 0; border-bottom: 1px solid #eee;">${phone || '—'}</td></tr>
             <tr><td style="padding: 8px 0; vertical-align: top;"><strong>Message</strong></td><td style="padding: 8px 0;">${message.replace(/\n/g, '<br>')}</td></tr>
           </table>
-          <p style="color: #999; font-size: 12px; margin-top: 20px;">Sent from Iscorre Contact Us form.</p>
+          <p style="color: #999; font-size: 12px; margin-top: 20px;">Sent from TestLard Contact Us form.</p>
         </div>
       `,
     };
@@ -246,10 +246,10 @@ export const sendInterviewScheduledEmail = async ({
             <tr><td style="padding: 8px 0; border-bottom: 1px solid #eee;"><strong>Platform</strong></td><td style="padding: 8px 0; border-bottom: 1px solid #eee;">${interviewProvider || "—"}</td></tr>
             <tr><td style="padding: 8px 0;"><strong>Join Link</strong></td><td style="padding: 8px 0;">${providerLink ? `<a href="${providerLink}">${providerLink}</a>` : "—"}</td></tr>
           </table>
-          <p style="color: #999; font-size: 12px; margin-top: 20px;">Iscorre Teacher Connect</p>
+          <p style="color: #999; font-size: 12px; margin-top: 20px;">TestLard Teacher Connect</p>
         </div>
       `,
-      from: `"Iscorre Teacher Connect" <${process.env.SMTP_CONNECT_EMAIL || process.env.SMTP_EMAIL}>`,
+      from: `"TestLard Teacher Connect" <${process.env.SMTP_CONNECT_EMAIL || process.env.SMTP_EMAIL}>`,
     });
     console.log(`✅ Interview scheduled email sent to ${toEmail}. Message ID: ${info.messageId}`);
     return info;
@@ -291,10 +291,10 @@ export const sendTeacherApprovalConfirmationEmail = async ({
           <h2 style="color: #333;">Hello ${teacherName || "Candidate"},</h2>
           <p style="color: #666;">Congratulations! You have been selected for ${jobTitle ? `<strong>${jobTitle}</strong>` : "the teacher position"}.</p>
           <p style="color: #666;">You will receive your login credentials separately. Please check your email or contact the admin if you have any questions.</p>
-          <p style="color: #999; font-size: 12px; margin-top: 20px;">Iscorre Teacher Connect</p>
+          <p style="color: #999; font-size: 12px; margin-top: 20px;">TestLard Teacher Connect</p>
         </div>
       `,
-      from: `"Iscorre Teacher Connect" <${process.env.SMTP_EMAIL}>`,
+      from: `"TestLard Teacher Connect" <${process.env.SMTP_EMAIL}>`,
     });
     console.log(`✅ Teacher approval confirmation email sent to ${toEmail}. Message ID: ${info.messageId}`);
     return info;
@@ -324,7 +324,7 @@ export const sendTeacherApprovalWithCredentialsEmail = async ({
       throw new ApiError(500, `SMTP configuration incomplete. Missing: ${missingVars.join(", ")}`);
     }
 
-    const loginLink = `${process.env.FRONTEND_URL || 'https://app.iscorre.com'}/teacher/login`;
+    const loginLink = `${process.env.FRONTEND_URL || 'https://admin.testladr.com'}/teacher/login`;
 
     const info = await sendEmailWithTemplate({
       to: toEmail,
@@ -349,10 +349,10 @@ export const sendTeacherApprovalWithCredentialsEmail = async ({
             <a href="${loginLink}" style="display: inline-block; background-color: #4F46E5; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Login to Teacher Portal</a>
           </p>
           <p style="color: #666; margin-top: 15px;">Please change your password after first login.</p>
-          <p style="color: #999; font-size: 12px; margin-top: 20px;">Iscorre Teacher Connect</p>
+          <p style="color: #999; font-size: 12px; margin-top: 20px;">TestLard Teacher Connect</p>
         </div>
       `,
-      from: `"Iscorre Teacher Connect" <${process.env.SMTP_CONNECT_EMAIL || process.env.SMTP_EMAIL}>`,
+      from: `"TestLard Teacher Connect" <${process.env.SMTP_CONNECT_EMAIL || process.env.SMTP_EMAIL}>`,
       attachments,
     });
     console.log(`✅ Teacher approval email sent to ${toEmail}. Message ID: ${info.messageId}`);
@@ -391,10 +391,10 @@ export const sendTeacherRejectionEmail = async ({ toEmail, teacherName, jobTitle
           <h2 style="color: #333;">Hello ${teacherName || "Candidate"},</h2>
           <p style="color: #666;">Thank you for your interest. After careful consideration, we have decided not to move forward with your application for ${jobTitle ? `<strong>${jobTitle}</strong>` : "this position"}.</p>
           <p style="color: #666;">We encourage you to apply for other openings in the future.</p>
-          <p style="color: #999; font-size: 12px; margin-top: 20px;">Iscorre Teacher Connect</p>
+          <p style="color: #999; font-size: 12px; margin-top: 20px;">TestLard Teacher Connect</p>
         </div>
       `,
-      from: `"Iscorre Teacher Connect" <${process.env.SMTP_CONNECT_EMAIL || process.env.SMTP_EMAIL}>`,
+      from: `"TestLard Teacher Connect" <${process.env.SMTP_CONNECT_EMAIL || process.env.SMTP_EMAIL}>`,
     });
     console.log(`✅ Teacher rejection email sent to ${toEmail}. Message ID: ${info.messageId}`);
     return info;
@@ -432,7 +432,7 @@ export const sendCourseEnrollmentEmail = async (email, name, courseTitle, amount
       to: email,
       category: "enrolment",
       slug: "course_enrollment",
-      from: `"Iscorre" <${process.env.SMTP_NOREPLY_EMAIL || process.env.SMTP_EMAIL}>`,
+      from: `"TestLard" <${process.env.SMTP_NOREPLY_EMAIL || process.env.SMTP_EMAIL}>`,
       variables: {
         name: name || "Student",
         courseTitle: courseTitle || "Course",
@@ -456,7 +456,7 @@ export const sendTestBundlePurchaseEmail = async (email, name, bundleName, amoun
       to: email,
       category: "enrolment",
       slug: "test_bundle_purchase",
-      from: `"Iscorre" <${process.env.SMTP_NOREPLY_EMAIL || process.env.SMTP_EMAIL}>`,
+      from: `"TestLard" <${process.env.SMTP_NOREPLY_EMAIL || process.env.SMTP_EMAIL}>`,
       variables: {
         name: name || "Student",
         bundleName: bundleName || "Bundle",
@@ -483,7 +483,7 @@ export const sendEventRegistrationEmail = async (eventType, email, name, eventTi
       to: email,
       category: "enrolment",
       slug,
-      from: `"Iscorre" <${process.env.SMTP_NOREPLY_EMAIL || process.env.SMTP_EMAIL}>`,
+      from: `"TestLard" <${process.env.SMTP_NOREPLY_EMAIL || process.env.SMTP_EMAIL}>`,
       variables: {
         name: name || "Student",
         eventTitle: eventTitle || "Event",
@@ -565,7 +565,7 @@ export const sendEventStartReminderEmail = async ({ email, name, eventName, even
       to: email,
       category: "event_notifications",
       slug: `${eventType}_start_reminder`,
-      from: `"Iscorre Events" <${process.env.SMTP_NOREPLY_EMAIL || process.env.SMTP_EMAIL}>`,
+      from: `"TestLard Events" <${process.env.SMTP_NOREPLY_EMAIL || process.env.SMTP_EMAIL}>`,
       variables: {
         name: name || "Student",
         eventName: eventName || eventLabel,
@@ -599,7 +599,7 @@ export const sendEventStartReminderEmail = async ({ email, name, eventName, even
             <p style="color: #888; font-size: 13px; margin-top: 24px;">Open the app now and get ready. The exam window opens soon!</p>
           </div>
           <div style="background: #f5f5f5; padding: 16px 24px; text-align: center;">
-            <p style="color: #aaa; font-size: 12px; margin: 0;">Iscorre — Empowering Every Learner</p>
+            <p style="color: #aaa; font-size: 12px; margin: 0;">TestLard — Empowering Every Learner</p>
           </div>
         </div>
       `,
@@ -632,7 +632,7 @@ export const sendEventStartEmail = async ({ email, name, eventName, eventType, s
       to: email,
       category: "event_notifications",
       slug: `${eventType}_start`,
-      from: `"Iscorre Events" <${process.env.SMTP_NOREPLY_EMAIL || process.env.SMTP_EMAIL}>`,
+      from: `"TestLard Events" <${process.env.SMTP_NOREPLY_EMAIL || process.env.SMTP_EMAIL}>`,
       variables: {
         name: name || "Student",
         eventName: eventName || eventLabel,
@@ -666,7 +666,7 @@ export const sendEventStartEmail = async ({ email, name, eventName, eventType, s
             <p style="color: #888; font-size: 13px; margin-top: 24px;">Open the app now to enter the exam window.</p>
           </div>
           <div style="background: #f5f5f5; padding: 16px 24px; text-align: center;">
-            <p style="color: #aaa; font-size: 12px; margin: 0;">Iscorre — Empowering Every Learner</p>
+            <p style="color: #aaa; font-size: 12px; margin: 0;">TestLard — Empowering Every Learner</p>
           </div>
         </div>
       `,
@@ -698,7 +698,7 @@ export const sendEventResultEmail = async ({ email, name, eventName, eventType, 
       to: email,
       category: "event_notifications",
       slug: `${eventType}_result_declared`,
-      from: `"Iscorre Events" <${process.env.SMTP_NOREPLY_EMAIL || process.env.SMTP_EMAIL}>`,
+      from: `"TestLard Events" <${process.env.SMTP_NOREPLY_EMAIL || process.env.SMTP_EMAIL}>`,
       variables: {
         name: name || "Student",
         eventName: eventName || eventLabel,
@@ -744,7 +744,7 @@ export const sendEventResultEmail = async ({ email, name, eventName, eventType, 
             <p style="color: #888; font-size: 13px; margin-top: 24px;">Open the app or visit our website to check your results now.</p>
           </div>
           <div style="background: #f5f5f5; padding: 16px 24px; text-align: center;">
-            <p style="color: #aaa; font-size: 12px; margin: 0;">Iscorre — Empowering Every Learner</p>
+            <p style="color: #aaa; font-size: 12px; margin: 0;">TestLard — Empowering Every Learner</p>
           </div>
         </div>
       `,
@@ -778,7 +778,7 @@ export const sendEventUpdateEmail = async ({ email, name, eventName, eventType, 
       to: email,
       category: "event_notifications",
       slug: `${eventType}_update`,
-      from: `"Iscorre Events" <${process.env.SMTP_NOREPLY_EMAIL || process.env.SMTP_EMAIL}>`,
+      from: `"TestLard Events" <${process.env.SMTP_NOREPLY_EMAIL || process.env.SMTP_EMAIL}>`,
       variables: {
         name: name || "Student",
         eventName: eventName || eventLabel,
@@ -803,7 +803,7 @@ export const sendEventUpdateEmail = async ({ email, name, eventName, eventType, 
             <p style="color: #888; font-size: 13px; margin-top: 24px;">Thank you for participating!</p>
           </div>
           <div style="background: #f5f5f5; padding: 16px 24px; text-align: center;">
-            <p style="color: #aaa; font-size: 12px; margin: 0;">Iscorre — Empowering Every Learner</p>
+            <p style="color: #aaa; font-size: 12px; margin: 0;">TestLard — Empowering Every Learner</p>
           </div>
         </div>
       `,

@@ -4,9 +4,6 @@ import { createRazorpayOrder } from "../utils/razorpayUtils.js";
 import razorpayOrderIntentRepository from "../repository/razorpayOrderIntent.repository.js";
 import { verifyPaymentSignature } from "../utils/razorpayUtils.js";
 
-
-const TEMP_STUDENT_DEFAULT_MONETARY_BALANCE = 2000;
-
 /**
  * Get or create wallet for a user
  */
@@ -17,8 +14,7 @@ export const getOrCreateWallet = async (userId, userType = "User") => {
     wallet = await walletRepository.createWallet({
       user: userId,
       userType,
-      monetaryBalance:
-        userType === "User" ? TEMP_STUDENT_DEFAULT_MONETARY_BALANCE : 0,
+      monetaryBalance: 0,
       rewardPoints: 0,
     });
   }

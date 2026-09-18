@@ -44,6 +44,9 @@ import {
   login,
   logout,
   getProfile,
+  requestForgotPasswordOTP,
+  verifyForgotPasswordOTP,
+  resetPassword,
 } from "../controllers/studentAuth.controller.js";
 import {
   createTicket,
@@ -66,7 +69,9 @@ router.post("/signup", uploadImage.single("profileImage"), signup);
 router.post("/login", login);
 router.post("/logout", verifyJWT, logout);
 router.get("/profile", verifyJWT, getProfile);
-
+router.post("/forgot-password/request", requestForgotPasswordOTP);
+router.post("/forgot-password/verify", verifyForgotPasswordOTP);
+router.post("/forgot-password/reset", resetPassword);
 router.post("/contact-us", contactUs);
 router.get("/success-stories", getAllStoriesAdmin);
 router.get("/press-announcements", getAllPressAnnouncementsAdmin);

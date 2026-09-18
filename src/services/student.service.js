@@ -276,7 +276,7 @@ export const getReferralInfo = async (studentId) => {
   const totalReferrals = Array.isArray(student.referralHistory)
     ? student.referralHistory.length
     : 0;
-  const shareLink = `Join me on iscorre! Use my referral code ${student.referralCode || ''} and start learning.\n\nReferral code: ${student.referralCode || ''}`;
+  const shareLink = `Join me on TestLadr! Use my referral code ${student.referralCode || ''} and start learning.\n\nReferral code: ${student.referralCode || ''}`;
 
   return {
     referralCode: student.referralCode || null,
