@@ -12,10 +12,11 @@ import categoryPurchaseRepository from "../repository/categoryPurchase.repositor
 import liveCompetitionRepository from "../repository/liveCompetition.repository.js";
 import { getCategoryRevenueSourceType, logTransaction, resolveTestSourceType } from "./adminRevenue.service.js";
 import QuestionBank from "../models/QuestionBank.js";
+import AiQuestionBank from "../models/AiQuestionBank.js";
 
 /**
  * Resolves the effective categoryId for a test,
- * falling back to the questionBank's first category when test.categoryId is null.
+ * falling back to the questionBank / aiQuestionBank first category when test.categoryId is null.
  */
 const resolveTestCategoryId = async (test) => {
   if (test.categoryId) return test.categoryId;
@@ -25,6 +26,11 @@ const resolveTestCategoryId = async (test) => {
     const qbId = test.questionBank._id || test.questionBank;
     const qb = await QuestionBank.findById(qbId).select("categories").lean();
     if (qb?.categories?.length > 0) return qb.categories[0];
+  }
+  if (test.aiQuestionBank) {
+    const aiId = test.aiQuestionBank._id || test.aiQuestionBank;
+    const ai = await AiQuestionBank.findById(aiId).select("categories").lean();
+    if (ai?.categories?.length > 0) return ai.categories[0];
   }
   return null;
 };

@@ -1,0 +1,65 @@
+{
+  "exam_context": "CLAT 2026 (UG) — Common Law Admission Test for admission to the 5-year integrated law programmes at 24 National Law Universities and several other participating institutions in India.",
+  "data_provenance": "Estimated from the Consortium of NLUs' official CLAT 2026 exam pattern/syllabus notification (consortiumofnlus.ac.in) as reported by multiple 2025-2026 coaching/exam-tracker sources (PhysicsWallah, Careers360, CollegeDekho, CollegeDunia, CLATapult, iQuanta), cross-checked Sep 2026. The per-section question COUNT is officially declared as a range (not a fixed number) and can vary within that band from year to year; treat the exact figures used here as the commonly-cited midpoint estimates for planning, not a guarantee of any single year's exact composition.",
+  "sections": {
+    "ENG": {
+      "section_name": "English Language",
+      "num_questions_range": "22-26",
+      "weightage_pct_approx": 20
+    },
+    "CA": {
+      "section_name": "Current Affairs including General Knowledge",
+      "num_questions_range": "28-32",
+      "weightage_pct_approx": 25
+    },
+    "LEGAL": {
+      "section_name": "Legal Reasoning",
+      "num_questions_range": "28-32",
+      "weightage_pct_approx": 25
+    },
+    "LOGIC": {
+      "section_name": "Logical Reasoning",
+      "num_questions_range": "22-26",
+      "weightage_pct_approx": 20
+    },
+    "QUANT": {
+      "section_name": "Quantitative Techniques",
+      "num_questions_range": "10-14",
+      "weightage_pct_approx": 10
+    }
+  },
+  "marking_scheme": {
+    "source_note": "Confirmed via multiple Sep 2026 sources describing the CLAT 2025/2026 marking pattern; unchanged since the 2024 format revision to 120 questions.",
+    "correct_answer": "+1 mark",
+    "incorrect_answer": "-0.25 mark (negative marking)",
+    "unattempted": "0 marks",
+    "total_questions": 120,
+    "total_marks": 120,
+    "sectional_cutoffs": "None — CLAT does not impose sectional cut-offs; only the aggregate total score determines rank and seat allotment.",
+    "question_types_used": "Single-correct MCQ only, exclusively passage- or caselet-based across all five sections. No numerical-value, multiple-correct, or match-type questions."
+  },
+  "exam_logistics": {
+    "exam_mode": "Offline, pen-and-paper (OMR-based)",
+    "total_duration_minutes": 120,
+    "sectional_timing": "None — candidates can allocate time across sections as they choose within the overall 120 minutes",
+    "primary_language": "English (may also be offered in select vernacular languages depending on the year's notification)",
+    "application_fee_approx": {
+      "general_obc": "INR 4,000",
+      "reserved_categories": "INR 3,500"
+    }
+  },
+  "historical_format_note": {
+    "pre_2020": "200 questions; Legal Aptitude section tested direct legal-principle knowledge; GK section tested static factual recall without passage dependency.",
+    "2020_revamp": "Question count reduced to 150; every section became passage-based; Legal Aptitude renamed Legal Reasoning; philosophy shifted from knowledge-testing to aptitude/comprehension-testing.",
+    "2024_onward_current": "Question count further reduced to 120 (from 150); this is the format still in effect for CLAT 2026."
+  },
+  "indicative_cutoff_context": {
+    "note": "Rough, non-official score bands commonly cited by coaching trackers for reference only — actual cutoffs vary every year by category, university and reserved-seat quota.",
+    "top_nlus_nlsiu_nalsar": "100+ marks",
+    "other_top_nlus": "90+ marks",
+    "mid_tier_nlus_e_g_nluj_nlukolkata_nlubhopal": "roughly 94-98 marks",
+    "ews_category": "roughly 85-95+ marks",
+    "obc_category": "roughly 80-90+ marks",
+    "sc_st_category": "roughly 75-85 marks"
+  }
+}

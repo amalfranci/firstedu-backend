@@ -37,13 +37,23 @@ export const createTest = async (data, adminId, file) => {
   }
 
   let imageUrl = null;
-  if (file) {
-    imageUrl = await uploadImageToCloudinary(
-      file.buffer,
-      file.originalname,
-      TESTS_IMAGE_FOLDER,
-      file.mimetype
-    );
+  if (file?.buffer?.length) {
+    try {
+      imageUrl = await uploadImageToCloudinary(
+        file.buffer,
+        file.originalname,
+        TESTS_IMAGE_FOLDER,
+        file.mimetype
+      );
+    } catch (err) {
+      const msg = err?.message || String(err);
+      throw new ApiError(
+        502,
+        msg.includes("Access Key") || msg.includes("InvalidAccessKeyId")
+          ? "Image upload failed: AWS S3 credentials are invalid. Create without an image, or update AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY in .env."
+          : `Image upload failed: ${msg}`
+      );
+    }
   }
 
   const test = await testRepository.createTest({

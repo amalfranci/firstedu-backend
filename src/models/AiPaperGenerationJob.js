@@ -15,10 +15,18 @@ const tokenCallSchema = new mongoose.Schema(
 
 const schema = new mongoose.Schema(
   {
+    /** Same as jobId (apt-…); exposed to clients as generationId. */
     jobId: { type: String, required: true, unique: true, index: true },
+    generationId: { type: String, index: true },
+    userId: { type: mongoose.Schema.Types.ObjectId, ref: "User", default: null },
+    exam: { type: String, default: "" },
+    subject: { type: String, default: "" },
+    totalQuestions: { type: Number, default: 0 },
+    completedQuestions: { type: Number, default: 0 },
+    failedQuestions: { type: Number, default: 0 },
     status: {
       type: String,
-      enum: ["pending", "running", "completed", "failed"],
+      enum: ["pending", "queued", "running", "completed", "failed"],
       default: "pending",
       index: true,
     },
@@ -37,9 +45,12 @@ const schema = new mongoose.Schema(
     tokenUsage: { type: mongoose.Schema.Types.Mixed, default: {} },
     tokenCalls: { type: [tokenCallSchema], default: [] },
     failures: { type: [mongoose.Schema.Types.Mixed], default: [] },
+    completedAt: { type: Date, default: null },
   },
   { timestamps: true, collection: "ai_paper_generation_jobs" }
 );
+
+schema.index({ generationId: 1, userId: 1 });
 
 export default mongoose.models.AiPaperGenerationJob ||
   mongoose.model("AiPaperGenerationJob", schema);

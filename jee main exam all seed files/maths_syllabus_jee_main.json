@@ -1,0 +1,169 @@
+{
+  "subject": "Mathematics",
+  "exam": "JEE Main 2026",
+  "source_note": "Compiled from the NTA JEE Main 2026 Information Bulletin / official syllabus as reported by multiple 2025-2026 coaching/exam-tracker sources (careers360), cross-checked Sep 2026. The 2024-25 rationalisation dropped Mathematical Induction and Mathematical Reasoning as standalone units entirely, and trimmed portions of several remaining units (see syllabus_change_note fields). Always verify against the current-year NTA information bulletin (jeemain.nta.nic.in) before finalising a question bank, since NTA can revise the syllabus PDF between sessions.",
+  "exam_pattern_note": "JEE Main Paper 1 Mathematics: 25 questions total (Section A: 20 single-correct MCQs, Section B: 5 numerical-value questions, all 25 compulsory since the 2025 pattern change removed the earlier 'attempt any 5 of 10' choice in Section B). No multiple-correct or matrix-match question types appear in JEE Main (those are JEE-Advanced-only formats).",
+  "topics": [
+    {
+      "topic_id": "X01",
+      "chapter": "Sets, Relations and Functions",
+      "class_level": "11",
+      "subtopics": [
+        "Sets and their representation; union, intersection, complement and their algebraic properties; power set",
+        "Relations: types of relations, equivalence relations",
+        "Functions: one-one, into and onto functions, composition of functions"
+      ]
+    },
+    {
+      "topic_id": "X02",
+      "chapter": "Complex Numbers and Quadratic Equations",
+      "class_level": "11",
+      "subtopics": [
+        "Complex numbers as ordered pairs of reals, a+ib form, Argand diagram",
+        "Algebra of complex numbers, modulus and argument (amplitude)",
+        "Quadratic equations in real and complex number systems and their solutions",
+        "Relation between roots and coefficients, nature of roots, formation of quadratic equations with given roots"
+      ],
+      "syllabus_change_note": "2025 rationalisation dropped the standalone 'triangle inequality' and 'square root of a complex number' as separately examinable sub-items."
+    },
+    {
+      "topic_id": "X03",
+      "chapter": "Matrices and Determinants",
+      "class_level": "12",
+      "subtopics": [
+        "Matrices, algebra of matrices, types of matrices",
+        "Determinants of matrices of order two and three, evaluation of determinants, area of a triangle using determinants",
+        "Adjoint and inverse of a square matrix using determinants",
+        "Test of consistency and solution of simultaneous linear equations in two or three variables using determinants and matrices"
+      ],
+      "syllabus_change_note": "2025 rationalisation dropped 'elementary transformations' and a standalone 'properties of determinants' derivation-heavy sub-item as separately examinable."
+    },
+    {
+      "topic_id": "X04",
+      "chapter": "Permutations and Combinations",
+      "class_level": "11",
+      "subtopics": [
+        "Fundamental principle of counting",
+        "Permutation as an arrangement and combination as selection",
+        "Meaning of P(n,r) and C(n,r), simple applications"
+      ]
+    },
+    {
+      "topic_id": "X05",
+      "chapter": "Binomial Theorem and its Simple Applications",
+      "class_level": "11",
+      "subtopics": [
+        "Binomial theorem for a positive integral index",
+        "General term and middle term"
+      ],
+      "syllabus_change_note": "2025 rationalisation dropped 'properties of binomial coefficients' as a separately examinable derivation-heavy sub-item."
+    },
+    {
+      "topic_id": "X06",
+      "chapter": "Sequence and Series",
+      "class_level": "11",
+      "subtopics": [
+        "Arithmetic and geometric progressions",
+        "Insertion of arithmetic and geometric means between two given numbers",
+        "Relation between A.M. and G.M."
+      ],
+      "syllabus_change_note": "2025 rationalisation dropped 'sum up to n terms of special series (Σn, Σn², Σn³)' and 'arithmetico-geometric progression' as separately examinable sub-items."
+    },
+    {
+      "topic_id": "X07",
+      "chapter": "Limit, Continuity and Differentiability",
+      "class_level": "12",
+      "subtopics": [
+        "Real-valued functions, algebra of functions; polynomial, rational, trigonometric, logarithmic and exponential functions; inverse functions; graphs of simple functions",
+        "Limits, continuity and differentiability",
+        "Differentiation of sum, difference, product and quotient of two functions",
+        "Differentiation of trigonometric, inverse trigonometric, logarithmic, exponential, composite and implicit functions; derivatives up to order two",
+        "Applications of derivatives: rate of change of quantities, monotonic increasing/decreasing functions, maxima and minima of functions of one variable, tangents and normals"
+      ],
+      "syllabus_change_note": "2025 rationalisation dropped 'Rolle's and Lagrange's Mean Value Theorems' as a separately examinable sub-item."
+    },
+    {
+      "topic_id": "X08",
+      "chapter": "Integral Calculus",
+      "class_level": "12",
+      "subtopics": [
+        "Integral as an anti-derivative",
+        "Fundamental integrals involving algebraic, trigonometric, exponential and logarithmic functions",
+        "Integration by substitution, by parts, and by partial fractions; integration using trigonometric identities",
+        "Fundamental Theorem of Calculus, properties of definite integrals, evaluation of definite integrals",
+        "Determining areas of regions bounded by simple curves in standard form"
+      ],
+      "syllabus_change_note": "2025 rationalisation dropped 'integral as a limit of a sum' as a separately examinable sub-item."
+    },
+    {
+      "topic_id": "X09",
+      "chapter": "Differential Equations",
+      "class_level": "12",
+      "subtopics": [
+        "Ordinary differential equations, their order and degree",
+        "Formation of differential equations",
+        "Solution of differential equations by the method of separation of variables",
+        "Solution of homogeneous and linear differential equations"
+      ]
+    },
+    {
+      "topic_id": "X10",
+      "chapter": "Co-ordinate Geometry",
+      "class_level": "11",
+      "subtopics": [
+        "Cartesian system of rectangular coordinates in a plane, distance formula, section formula, locus and its equation",
+        "Slope of a line, parallel and perpendicular lines, intercepts of a line on the coordinate axes",
+        "Straight lines: various forms of equations, intersection of lines, angle between two lines, conditions for concurrence of three lines, distance of a point from a line",
+        "Equations of internal/external bisectors of angles between two lines; coordinates of centroid, orthocentre and circumcentre of a triangle",
+        "Circles and conic sections: standard and general form of the equation of a circle, radius and centre, equation of a circle given diameter endpoints, points of intersection of a line and circle, equation of the tangent",
+        "Sections of cones; equations of parabola, ellipse and hyperbola in standard forms"
+      ],
+      "syllabus_change_note": "2025 rationalisation dropped 'translation of axes', 'equation of family of lines through the intersection of two lines', and 'condition for y=mx+c to be a tangent to a circle and point(s) of tangency' as separately examinable sub-items."
+    },
+    {
+      "topic_id": "X11",
+      "chapter": "Three Dimensional Geometry",
+      "class_level": "12",
+      "subtopics": [
+        "Coordinates of a point in space, distance between two points, section formula",
+        "Direction ratios and direction cosines, angle between two intersecting lines",
+        "Skew lines: the shortest distance between them and its equation"
+      ],
+      "syllabus_change_note": "2025 rationalisation dropped 'equations of a line and a plane in different forms, intersection of a line and a plane, and coplanar lines' as separately examinable sub-items — this is the most heavily trimmed unit in the 2025-26 syllabus."
+    },
+    {
+      "topic_id": "X12",
+      "chapter": "Vector Algebra",
+      "class_level": "12",
+      "subtopics": [
+        "Vectors and scalars, addition of vectors",
+        "Components of a vector in two-dimensional and three-dimensional space",
+        "Scalar and vector products of two vectors"
+      ],
+      "syllabus_change_note": "2025 rationalisation dropped 'scalar and vector triple product' as a separately examinable sub-item."
+    },
+    {
+      "topic_id": "X13",
+      "chapter": "Statistics and Probability",
+      "class_level": "11-12",
+      "subtopics": [
+        "Measures of dispersion: mean, median, mode of grouped and ungrouped data",
+        "Calculation of standard deviation, variance and mean deviation for grouped and ungrouped data",
+        "Probability of an event, addition and multiplication theorems of probability, Baye's theorem",
+        "Probability distribution of a random variate"
+      ],
+      "syllabus_change_note": "2025 rationalisation dropped 'Bernoulli trials and binomial distribution' as a separately examinable sub-item."
+    },
+    {
+      "topic_id": "X14",
+      "chapter": "Trigonometry",
+      "class_level": "11",
+      "subtopics": [
+        "Trigonometrical identities and equations",
+        "Trigonometrical functions",
+        "Inverse trigonometrical functions and their properties"
+      ],
+      "syllabus_change_note": "2025 rationalisation dropped 'heights and distances' as a separately examinable sub-item."
+    }
+  ]
+}

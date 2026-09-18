@@ -142,6 +142,7 @@ const sectionSchema = Joi.object({
 
 const createAiQuestionBankWithQuestions = Joi.object({
   name: Joi.string().required().trim(),
+  generationId: Joi.string().trim().optional(),
   categories: Joi.array().items(Joi.string()).min(1).required(),
   overallDifficulty: Joi.string()
     .valid("easy", "medium", "hard")

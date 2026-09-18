@@ -1,0 +1,267 @@
+{
+  "subject": "Chemistry",
+  "exam": "JEE Main 2026",
+  "source_note": "Compiled from the NTA JEE Main 2026 Information Bulletin / official syllabus as reported by multiple 2025-2026 coaching/exam-tracker sources (careers360, shiksha, giraffe-learning), cross-checked Sep 2026. Several chapters were removed in the 2024-25 rationalisation (Surface Chemistry, States of Matter, s-Block Elements, Hydrogen, Environmental Chemistry, Polymers, Chemistry in Everyday Life, General Principles of Isolation of Metals). Always verify against the current-year NTA information bulletin (jeemain.nta.nic.in) before finalising a question bank, since NTA can revise the syllabus PDF between sessions.",
+  "exam_pattern_note": "JEE Main Paper 1 Chemistry: 25 questions total (Section A: 20 single-correct MCQs, Section B: 5 numerical-value questions, all 25 compulsory since the 2025 pattern change removed the earlier 'attempt any 5 of 10' choice in Section B). No multiple-correct or matrix-match question types appear in JEE Main (those are JEE-Advanced-only formats).",
+  "topics": [
+    {
+      "topic_id": "C01",
+      "chapter": "Some Basic Concepts in Chemistry",
+      "class_level": "11",
+      "section": "Physical Chemistry",
+      "subtopics": [
+        "Matter and its nature, Dalton's atomic theory; atom, molecule, element, compound",
+        "Laws of chemical combination",
+        "Atomic and molecular masses, mole concept, molar mass, percentage composition",
+        "Empirical and molecular formulae",
+        "Chemical equations and stoichiometry"
+      ],
+      "syllabus_change_note": "2025 rationalisation dropped 'physical quantities and their measurement in Chemistry, precision and accuracy, significant figures, SI units, dimensional analysis' as a separately examinable line item from this unit."
+    },
+    {
+      "topic_id": "C02",
+      "chapter": "Atomic Structure",
+      "class_level": "11",
+      "section": "Physical Chemistry",
+      "subtopics": [
+        "Electromagnetic radiation, photoelectric effect, hydrogen spectrum",
+        "Bohr model of the hydrogen atom: postulates, energy/radii derivations, limitations",
+        "Dual nature of matter, de Broglie relation, Heisenberg uncertainty principle",
+        "Quantum mechanical model of the atom, atomic orbitals, Ψ and Ψ² for 1s/2s",
+        "Quantum numbers, shapes of s/p/d orbitals, electron spin",
+        "Aufbau principle, Pauli exclusion principle, Hund's rule, electronic configuration and extra stability of half-filled/filled orbitals"
+      ]
+    },
+    {
+      "topic_id": "C03",
+      "chapter": "Chemical Bonding and Molecular Structure",
+      "class_level": "11",
+      "section": "Physical Chemistry",
+      "subtopics": [
+        "Kossel-Lewis approach, ionic and covalent bonds",
+        "Ionic bonding: formation, factors, lattice enthalpy",
+        "Covalent bonding: electronegativity, Fajan's rule, dipole moment, VSEPR theory and molecular shapes",
+        "Valence bond theory, hybridisation (s, p, d), resonance",
+        "Molecular orbital theory: LCAO, bonding/antibonding MOs, sigma/pi bonds, bond order, bond length, bond energy",
+        "Metallic bonding, hydrogen bonding and applications"
+      ]
+    },
+    {
+      "topic_id": "C04",
+      "chapter": "Chemical Thermodynamics",
+      "class_level": "11",
+      "section": "Physical Chemistry",
+      "subtopics": [
+        "System/surroundings, extensive/intensive properties, state functions, entropy, types of processes",
+        "First law: work, heat, internal energy, enthalpy, heat capacity, Hess's law",
+        "Enthalpies of bond dissociation, combustion, formation, atomisation, sublimation, phase transition, hydration, ionisation, solution",
+        "Second law: spontaneity, ΔS(universe) and ΔG(system) as criteria for spontaneity",
+        "ΔG° and equilibrium constant"
+      ],
+      "syllabus_change_note": "2025 rationalisation trimmed a standalone Carnot-engine-style efficiency treatment; the ΔG-spontaneity and Hess's-law content remain fully examinable."
+    },
+    {
+      "topic_id": "C05",
+      "chapter": "Solutions",
+      "class_level": "12",
+      "section": "Physical Chemistry",
+      "subtopics": [
+        "Concentration expressions: molality, molarity, mole fraction, percentage",
+        "Vapour pressure of solutions, Raoult's law, ideal and non-ideal solutions",
+        "Colligative properties: relative lowering of vapour pressure, depression of freezing point, elevation of boiling point, osmotic pressure",
+        "Determination of molecular mass using colligative properties, abnormal molar mass, van't Hoff factor"
+      ]
+    },
+    {
+      "topic_id": "C06",
+      "chapter": "Equilibrium",
+      "class_level": "11",
+      "section": "Physical Chemistry",
+      "subtopics": [
+        "Concept of dynamic equilibrium",
+        "Physical equilibria: solid-liquid, liquid-gas, gas-gas, solid-gas, Henry's law",
+        "Ionic equilibrium: weak/strong electrolytes, Arrhenius/Bronsted-Lowry/Lewis acid-base concepts",
+        "Acid-base equilibria including multistage ionisation, ionisation constants, ionisation of water, pH scale",
+        "Common ion effect, salt hydrolysis and pH, solubility product, buffer solutions"
+      ]
+    },
+    {
+      "topic_id": "C07",
+      "chapter": "Redox Reactions and Electrochemistry",
+      "class_level": "11-12",
+      "section": "Physical Chemistry",
+      "subtopics": [
+        "Oxidation and reduction: electronic concept, oxidation number, balancing redox reactions",
+        "Electrolytic and metallic conduction, molar conductivity and variation with concentration, Kohlrausch's law",
+        "Electrolytic and Galvanic cells, electrode potential, standard electrode potential",
+        "EMF of a Galvanic cell, Nernst equation, relation between cell potential and Gibbs energy change",
+        "Dry cell, lead accumulator, fuel cells"
+      ]
+    },
+    {
+      "topic_id": "C08",
+      "chapter": "Chemical Kinetics",
+      "class_level": "12",
+      "section": "Physical Chemistry",
+      "subtopics": [
+        "Rate of a reaction, factors affecting rate: concentration, temperature, pressure, catalyst",
+        "Elementary/complex reactions, order and molecularity",
+        "Rate law, rate constant and units",
+        "Differential and integral forms of zero- and first-order reactions, half-lives",
+        "Effect of temperature: Arrhenius theory, activation energy",
+        "Collision theory of bimolecular gaseous reactions (no derivation)"
+      ]
+    },
+    {
+      "topic_id": "C09",
+      "chapter": "Classification of Elements and Periodicity in Properties",
+      "class_level": "11",
+      "section": "Inorganic Chemistry",
+      "subtopics": [
+        "Modern periodic law, present form of the periodic table",
+        "s, p, d, f block elements",
+        "Periodic trends: atomic/ionic radii, ionisation enthalpy, electron gain enthalpy, valence, oxidation states, chemical reactivity"
+      ]
+    },
+    {
+      "topic_id": "C10",
+      "chapter": "p-Block Elements",
+      "class_level": "11-12",
+      "section": "Inorganic Chemistry",
+      "subtopics": [
+        "Group 13-18 general trends: electronic configuration, physical/chemical property trends, anomalous first-element behaviour",
+        "Group 13: boron, aluminium, borax, boric acid, diborane, BF3, AlCl3, alums",
+        "Group 14: catenation, allotropes/oxides of carbon, silicates, zeolites, silicones",
+        "Group 15: nitrogen, phosphorus, ammonia, nitric acid, phosphine, phosphorus halides, oxides/oxoacids of N and P",
+        "Group 16: ozone, sulphur allotropes, sulphuric acid, oxoacids of sulphur",
+        "Group 17: hydrochloric acid, acidic strength of hydrogen halides, interhalogens, oxides/oxoacids of halogens",
+        "Group 18: noble gases, fluorides and oxides of xenon"
+      ]
+    },
+    {
+      "topic_id": "C11",
+      "chapter": "d- and f-Block Elements",
+      "class_level": "12",
+      "section": "Inorganic Chemistry",
+      "subtopics": [
+        "Transition elements: general introduction, electronic configuration, occurrence, characteristics",
+        "Trends in first-row transition elements: physical properties, ionisation enthalpy, oxidation states, atomic radii, colour, catalytic behaviour, magnetic properties, complex formation, interstitial compounds, alloys",
+        "Preparation, properties, uses of K2Cr2O7 and KMnO4",
+        "Lanthanoids: electronic configuration, oxidation states, lanthanoid contraction",
+        "Actinoids: electronic configuration and oxidation states"
+      ]
+    },
+    {
+      "topic_id": "C12",
+      "chapter": "Co-ordination Compounds",
+      "class_level": "12",
+      "section": "Inorganic Chemistry",
+      "subtopics": [
+        "Werner's theory, ligands, coordination number, denticity, chelation",
+        "IUPAC nomenclature of mononuclear coordination compounds, isomerism",
+        "Bonding: valence bond approach, basic ideas of crystal field theory, colour and magnetic properties",
+        "Importance of coordination compounds in qualitative analysis, metal extraction, biological systems"
+      ]
+    },
+    {
+      "topic_id": "C13",
+      "chapter": "Purification and Characterisation of Organic Compounds",
+      "class_level": "11",
+      "section": "Organic Chemistry",
+      "subtopics": [
+        "Purification: crystallisation, sublimation, distillation, differential extraction, chromatography",
+        "Qualitative analysis: detection of nitrogen, sulphur, phosphorus, halogens",
+        "Quantitative analysis (basic principles): estimation of C, H, N, halogens, sulphur, phosphorus",
+        "Calculation of empirical and molecular formulae"
+      ]
+    },
+    {
+      "topic_id": "C14",
+      "chapter": "Some Basic Principles of Organic Chemistry",
+      "class_level": "11",
+      "section": "Organic Chemistry",
+      "subtopics": [
+        "Tetravalency of carbon, hybridisation, classification by functional groups, homologous series",
+        "Isomerism: structural and stereoisomerism, IUPAC nomenclature",
+        "Covalent bond fission: homolytic/heterolytic, free radicals, carbocations, carbanions, stability",
+        "Electrophiles and nucleophiles",
+        "Electronic displacement: inductive effect, electromeric effect, resonance, hyperconjugation",
+        "Common reaction types: substitution, addition, elimination, rearrangement"
+      ]
+    },
+    {
+      "topic_id": "C15",
+      "chapter": "Hydrocarbons",
+      "class_level": "11",
+      "section": "Organic Chemistry",
+      "subtopics": [
+        "Classification, isomerism, IUPAC nomenclature, general preparation/properties/reactions",
+        "Alkanes: conformations (Sawhorse, Newman for ethane), mechanism of halogenation",
+        "Alkenes: geometrical isomerism, electrophilic addition mechanism, Markovnikov/peroxide effect, ozonolysis, polymerisation",
+        "Alkynes: acidic character, addition reactions, polymerisation",
+        "Aromatic hydrocarbons: benzene structure and aromaticity, electrophilic substitution mechanism, halogenation, nitration, Friedel-Crafts alkylation/acylation, directive influence of substituents"
+      ]
+    },
+    {
+      "topic_id": "C16",
+      "chapter": "Organic Compounds Containing Halogens",
+      "class_level": "12",
+      "section": "Organic Chemistry",
+      "subtopics": [
+        "General methods of preparation, properties, reactions",
+        "Nature of the C-X bond, mechanisms of substitution reactions",
+        "Uses and environmental effects of chloroform, iodoform, freons, DDT"
+      ]
+    },
+    {
+      "topic_id": "C17",
+      "chapter": "Organic Compounds Containing Oxygen",
+      "class_level": "12",
+      "section": "Organic Chemistry",
+      "subtopics": [
+        "Alcohols: identification of 1°/2°/3° alcohols, mechanism of dehydration",
+        "Phenols: acidic nature, electrophilic substitution, halogenation, nitration, sulphonation, Reimer-Tiemann reaction",
+        "Ethers: structure",
+        "Aldehydes and ketones: nucleophilic addition, Grignard reagent, oxidation, reduction (Wolff-Kishner, Clemmensen), acidity of α-hydrogen, aldol condensation, Cannizzaro reaction, haloform reaction, distinguishing tests",
+        "Carboxylic acids: acidic strength and factors affecting it"
+      ]
+    },
+    {
+      "topic_id": "C18",
+      "chapter": "Organic Compounds Containing Nitrogen",
+      "class_level": "12",
+      "section": "Organic Chemistry",
+      "subtopics": [
+        "General methods of preparation, properties, reactions, uses",
+        "Amines: nomenclature, classification, structure, basic character, identification of 1°/2°/3° amines",
+        "Diazonium salts: importance in synthetic organic chemistry"
+      ]
+    },
+    {
+      "topic_id": "C19",
+      "chapter": "Biomolecules",
+      "class_level": "12",
+      "section": "Organic Chemistry",
+      "subtopics": [
+        "General introduction and importance of biomolecules",
+        "Carbohydrates: aldoses/ketoses, monosaccharides (glucose, fructose), constituent monosaccharides of sucrose/lactose/maltose",
+        "Proteins: α-amino acids, peptide bond, polypeptides, primary/secondary/tertiary/quaternary structure (qualitative), denaturation, enzymes",
+        "Vitamins: classification and functions",
+        "Nucleic acids: chemical constitution of DNA and RNA, biological functions"
+      ]
+    },
+    {
+      "topic_id": "C20",
+      "chapter": "Principles Related to Practical Chemistry",
+      "class_level": "11-12 (practical)",
+      "section": "Organic Chemistry",
+      "subtopics": [
+        "Detection of extra elements (N, S, halogens) and functional groups (hydroxyl, carbonyl, carboxyl, amino) in organic compounds",
+        "Chemistry of preparation: Mohr's salt, potash alum (inorganic); acetanilide, p-nitroacetanilide, aniline yellow, iodoform (organic)",
+        "Titrimetric exercises: acid-base with indicators, oxalic acid vs KMnO4, Mohr's salt vs KMnO4",
+        "Qualitative salt analysis: cations (Pb2+, Cu2+, Al3+, Fe3+, Zn2+, Ni2+, Ca2+, Ba2+, Mg2+, NH4+), anions (CO3^2-, S^2-, SO4^2-, NO3-, NO2-, Cl-, Br-, I-); insoluble salts excluded",
+        "Chemical principles of experiments: enthalpy of solution of CuSO4, enthalpy of neutralisation, preparation of lyophilic/lyophobic sols, kinetics of iodide-hydrogen peroxide reaction"
+      ]
+    }
+  ]
+}

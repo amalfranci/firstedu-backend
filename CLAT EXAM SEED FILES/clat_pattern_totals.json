@@ -1,0 +1,110 @@
+{
+  "exam": "CLAT UG",
+  "year": 2026,
+  "cycle": "CLAT UG 2026",
+  "data_provenance": "Consortium of NLUs CLAT UG pattern (2024 onward): 120 single-correct MCQs / 120 minutes / +1 −0.25. Section counts are official ranges; midpoints used for bank planning — English 24, Current Affairs 30, Legal Reasoning 30, Logical Reasoning 24, Quantitative Techniques 12. Confirm against consortiumofnlus.ac.in before production use.",
+  "important_caveat": "Per-section question counts are ranges (not fixed). Seeded midpoints are planning targets for a full 120Q paper.",
+  "exam_day": {
+    "mandatory_both_papers": false,
+    "note": "Single offline OMR paper. No sectional time limits — candidate allocates 120 minutes across five sections."
+  },
+  "subjects": [
+    "English",
+    "Current Affairs",
+    "Legal Reasoning",
+    "Logical Reasoning",
+    "Quantitative Techniques"
+  ],
+  "bank_subjects": [
+    "English",
+    "Current Affairs",
+    "Legal Reasoning",
+    "Logical Reasoning",
+    "Quantitative Techniques"
+  ],
+  "structure_per_subject_per_paper": {
+    "Paper_1": {
+      "paper_number": 1,
+      "label": "CLAT UG Paper",
+      "session": "varies",
+      "start_time": "",
+      "end_time": "",
+      "duration_minutes": 120,
+      "total_marks": 120,
+      "questions_per_subject": 24,
+      "total_questions": 120,
+      "overall_difficulty": "Moderate overall; Legal Reasoning and Quantitative Techniques skew harder",
+      "section_1_single_correct": {
+        "questions": 120,
+        "options": 4,
+        "type": "single",
+        "note": "CLAT UG is single-correct MCQ only (passage/caselet-based). Per-section midpoints in all_subjects_table."
+      },
+      "section_2_multi_correct": { "questions": 0, "options": 4, "type": "multi" },
+      "section_3_numerical": { "questions": 0, "options": 0, "type": "integer" },
+      "section_4_match_list": { "questions": 0, "options": 4, "type": "match" },
+      "section_5_paragraph": { "questions": 0, "options": 4, "type": "paragraph" },
+      "formats": ["Single Correct MCQ (passage / caselet based)"],
+      "marking": {
+        "mcq": "+1 / -0.25 / 0",
+        "note": "No sectional cut-offs; aggregate score only."
+      }
+    }
+  },
+  "all_subjects_table": {
+    "English": {
+      "questions": 24,
+      "marks": 24,
+      "duration_minutes": null,
+      "section_id": "ENG",
+      "label": "English Language",
+      "range": "22-26"
+    },
+    "Current Affairs": {
+      "questions": 30,
+      "marks": 30,
+      "duration_minutes": null,
+      "section_id": "CA",
+      "label": "Current Affairs including General Knowledge",
+      "range": "28-32"
+    },
+    "Legal Reasoning": {
+      "questions": 30,
+      "marks": 30,
+      "duration_minutes": null,
+      "section_id": "LEGAL",
+      "label": "Legal Reasoning",
+      "range": "28-32"
+    },
+    "Logical Reasoning": {
+      "questions": 24,
+      "marks": 24,
+      "duration_minutes": null,
+      "section_id": "LOGIC",
+      "label": "Logical Reasoning",
+      "range": "22-26"
+    },
+    "Quantitative Techniques": {
+      "questions": 12,
+      "marks": 12,
+      "duration_minutes": null,
+      "section_id": "QUANT",
+      "label": "Quantitative Techniques",
+      "range": "10-14"
+    }
+  },
+  "grand_total_across_subjects": {
+    "paper1": 120,
+    "marks_paper1": 120,
+    "duration_minutes": 120,
+    "sections": 5
+  },
+  "option_count_rule": {
+    "single": 4,
+    "multi": 0,
+    "integer": 0,
+    "match": 0,
+    "paragraph": 0
+  },
+  "question_types_note": "CLAT UG uses only single-correct MCQ attached to passages/caselets. No multi-correct, numerical entry, or match-list."
+}

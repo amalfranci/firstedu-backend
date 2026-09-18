@@ -23,7 +23,7 @@
       "priority": "medium",
       "cluster": "mechanics",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "P03": {
       "weight": 0.8,
@@ -72,7 +72,7 @@
       "priority": "medium",
       "cluster": "waves",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "P10": {
       "weight": 0.78,
@@ -93,21 +93,21 @@
       "priority": "high",
       "cluster": "electro",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "P13": {
       "weight": 0.82,
       "priority": "high",
       "cluster": "electro",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "P14": {
       "weight": 0.8,
       "priority": "high",
       "cluster": "electro",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "P15": {
       "weight": 0.83,
@@ -128,14 +128,14 @@
       "priority": "high",
       "cluster": "optics",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "P18": {
       "weight": 0.55,
       "priority": "medium",
       "cluster": "optics",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "P19": {
       "weight": 0.8,
@@ -170,14 +170,14 @@
       "priority": "medium",
       "cluster": "algebra",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "M05": {
       "weight": 0.82,
       "priority": "high",
       "cluster": "algebra",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "M06": {
       "weight": 0.5,
@@ -212,14 +212,14 @@
       "priority": "medium",
       "cluster": "trig",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "M11": {
       "weight": 0.5,
       "priority": "medium",
       "cluster": "trig",
       "hardSlotCount": 3,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "M12": {
       "weight": 0.5,
@@ -240,14 +240,14 @@
       "priority": "high",
       "cluster": "geometry",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "M15": {
       "weight": 0.55,
       "priority": "medium",
       "cluster": "calculus",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "M16": {
       "weight": 0.84,
@@ -268,14 +268,14 @@
       "priority": "high",
       "cluster": "calculus",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "M19": {
       "weight": 0.82,
       "priority": "high",
       "cluster": "geometry",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "C01": {
       "weight": 0.28,
@@ -303,14 +303,14 @@
       "priority": "high",
       "cluster": "physical",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "C05": {
       "weight": 0.86,
       "priority": "high",
       "cluster": "physical",
       "hardSlotCount": 6,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "C06": {
       "weight": 0.88,
@@ -324,14 +324,14 @@
       "priority": "high",
       "cluster": "physical",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "C08": {
       "weight": 0.8,
       "priority": "high",
       "cluster": "physical",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "C09": {
       "weight": 0.32,
@@ -380,14 +380,14 @@
       "priority": "high",
       "cluster": "inorganic",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "C16": {
       "weight": 0.76,
       "priority": "high",
       "cluster": "inorganic",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "C17": {
       "weight": 0.3,
@@ -422,7 +422,7 @@
       "priority": "high",
       "cluster": "organic",
       "hardSlotCount": 6,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "C22": {
       "weight": 0.42,
@@ -478,21 +478,21 @@
       "priority": "high",
       "cluster": "organic",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "C30": {
       "weight": 0.76,
       "priority": "high",
       "cluster": "organic",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "C31": {
       "weight": 0.72,
       "priority": "high",
       "cluster": "organic",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "C32": {
       "weight": 0.42,
@@ -528,6 +528,15 @@
       "cluster": "organic",
       "hardSlotCount": 3,
       "lastUsedPaper": null
+    },
+    "Q01": {
+      "lastUsedPaper": 1
+    },
+    "Q02": {
+      "lastUsedPaper": 1
+    },
+    "Q03": {
+      "lastUsedPaper": 1
     }
   }
 }

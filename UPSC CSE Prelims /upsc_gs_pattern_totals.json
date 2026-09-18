@@ -1,0 +1,123 @@
+{
+  "exam": "UPSC CSE Prelims",
+  "year": 2026,
+  "cycle": "UPSC CSE Prelims 2026 GS Paper I",
+  "data_provenance": "UPSC CSE Prelims GS Paper I official pattern: 100 Q / 200 marks / 2 hours; +2 / −⅔ (0.66). Per-area question counts are planning estimates from multi-year PYQ trends (not official UPSC section quotas — GS Paper I has no fixed sectional cut-offs). CSAT (Paper II) is qualifying-only and out of scope for this bank.",
+  "important_caveat": "Paper I (GS) is merit-deciding for Prelims. Paper II (CSAT) is qualifying (33%) and excluded from this MCQ bank. Area counts in all_subjects_table are planning weights for the paper wizard, not mandated sectional sizes.",
+  "exam_day": {
+    "mandatory_both_papers": false,
+    "note": "GS Paper I (2h) morning; CSAT Paper II (2h) afternoon — CSAT out of scope here."
+  },
+  "subjects": [
+    "History",
+    "Polity",
+    "Geography",
+    "Economy",
+    "Environment",
+    "Science",
+    "Current Affairs"
+  ],
+  "bank_subjects": [
+    "History",
+    "Polity",
+    "Geography",
+    "Economy",
+    "Environment",
+    "Science",
+    "Current Affairs"
+  ],
+  "structure_per_subject_per_paper": {
+    "Paper_1": {
+      "paper_number": 1,
+      "label": "UPSC CSE Prelims GS Paper I",
+      "session": "morning",
+      "start_time": "",
+      "end_time": "",
+      "duration_minutes": 120,
+      "total_marks": 200,
+      "questions_per_subject": 14,
+      "total_questions": 100,
+      "overall_difficulty": "Statement-heavy GS; mix of recall and analytical elimination",
+      "section_1_single_correct": {
+        "questions": 100,
+        "options": 4,
+        "type": "single",
+        "note": "UPSC Prelims GS Paper I is 4-option single-correct MCQ only (includes statement-based, match, assertion-reason formats presented as MCQ)."
+      },
+      "section_2_multi_correct": { "questions": 0, "options": 4, "type": "multi" },
+      "section_3_numerical": { "questions": 0, "options": 0, "type": "integer" },
+      "section_4_match_list": { "questions": 0, "options": 4, "type": "match" },
+      "section_5_paragraph": { "questions": 0, "options": 4, "type": "paragraph" },
+      "formats": ["Single Correct MCQ (4 options)"],
+      "marking": {
+        "mcq": "+2 / -0.66 / 0",
+        "note": "Negative marking is one-third of the marks assigned to the question (⅔ mark)."
+      }
+    }
+  },
+  "all_subjects_table": {
+    "History": {
+      "questions": 15,
+      "marks": 30,
+      "duration_minutes": null,
+      "section_id": "HIST",
+      "label": "History (incl. Art & Culture)"
+    },
+    "Polity": {
+      "questions": 16,
+      "marks": 32,
+      "duration_minutes": null,
+      "section_id": "POL",
+      "label": "Indian Polity & Governance"
+    },
+    "Geography": {
+      "questions": 12,
+      "marks": 24,
+      "duration_minutes": null,
+      "section_id": "GEO",
+      "label": "Geography"
+    },
+    "Economy": {
+      "questions": 14,
+      "marks": 28,
+      "duration_minutes": null,
+      "section_id": "ECO",
+      "label": "Indian Economy"
+    },
+    "Environment": {
+      "questions": 14,
+      "marks": 28,
+      "duration_minutes": null,
+      "section_id": "ENV",
+      "label": "Environment & Ecology"
+    },
+    "Science": {
+      "questions": 12,
+      "marks": 24,
+      "duration_minutes": null,
+      "section_id": "SCI",
+      "label": "Science & Technology"
+    },
+    "Current Affairs": {
+      "questions": 17,
+      "marks": 34,
+      "duration_minutes": null,
+      "section_id": "CA",
+      "label": "Current Affairs"
+    }
+  },
+  "grand_total_across_subjects": {
+    "paper1": 100,
+    "marks_paper1": 200,
+    "duration_minutes": 120,
+    "sections": 7
+  },
+  "option_count_rule": {
+    "single": 4,
+    "multi": 0,
+    "integer": 0,
+    "match": 0,
+    "paragraph": 0
+  },
+  "question_types_note": "UPSC CSE Prelims GS Paper I uses only 4-option single-correct MCQ. Statement-based, match-the-following, and assertion-reason appear as MCQ stems, not separate machine-scored types."
+}

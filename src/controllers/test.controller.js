@@ -10,6 +10,17 @@ export const createTest = asyncHandler(async (req, res) => {
   const { error, value } = testValidator.createTest.validate(req.body);
 
   if (error) {
+    const bodyKeys = Object.keys(req.body || {});
+    const hasManual = Boolean(req.body?.questionBank);
+    const hasAi = Boolean(req.body?.aiQuestionBank);
+    console.error('[createTest] validation failed', {
+      bodyKeys,
+      hasManual,
+      hasAi,
+      questionBank: req.body?.questionBank || null,
+      aiQuestionBank: req.body?.aiQuestionBank || null,
+      messages: error.details.map((x) => x.message),
+    });
     throw new ApiError(
       400,
       'Validation Error',

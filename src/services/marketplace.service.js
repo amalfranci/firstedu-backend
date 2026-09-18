@@ -26,22 +26,27 @@ import FreeMaterial from "../models/FreeMaterial.js";
 import Certificate from "../models/Certificate.js";
 import { logTransaction, resolveTestSourceType } from "./adminRevenue.service.js";
 import QuestionBank from "../models/QuestionBank.js";
+import AiQuestionBank from "../models/AiQuestionBank.js";
 
 /**
  * Resolves the effective categoryId for a test.
  * - Prefers test.categoryId (explicitly assigned on the test)
- * - Falls back to the first category on the test's QuestionBank (set via Test Builder)
+ * - Falls back to the first category on the test's QuestionBank or AiQuestionBank
  * - Also checks test.schoolCategory / test.skillCategory for legacy tests
  */
 const resolveTestCategoryId = async (test) => {
   if (test.categoryId) return test.categoryId;
   if (test.schoolCategory) return test.schoolCategory;
   if (test.skillCategory) return test.skillCategory;
-  // Fallback: fetch questionBank categories
   if (test.questionBank) {
     const qbId = test.questionBank._id || test.questionBank;
     const qb = await QuestionBank.findById(qbId).select("categories").lean();
     if (qb?.categories?.length > 0) return qb.categories[0];
+  }
+  if (test.aiQuestionBank) {
+    const aiId = test.aiQuestionBank._id || test.aiQuestionBank;
+    const ai = await AiQuestionBank.findById(aiId).select("categories").lean();
+    if (ai?.categories?.length > 0) return ai.categories[0];
   }
   return null;
 };
@@ -1211,6 +1216,11 @@ export const getTests = async (options = {}) => {
     if (!catId && testObj.questionBank?.categories?.length > 0) {
       catId = testObj.questionBank.categories[0]._id || testObj.questionBank.categories[0];
     }
+    if (!catId && testObj.aiQuestionBank?.categories?.length > 0) {
+      catId =
+        testObj.aiQuestionBank.categories[0]._id ||
+        testObj.aiQuestionBank.categories[0];
+    }
     if (catId) {
       testObj.categoryPath = getPath(catId);
     }
@@ -1437,6 +1447,11 @@ export const getTestById = async (testId) => {
   let catId = testData.categoryId;
   if (!catId && testData.questionBank?.categories?.length > 0) {
     catId = testData.questionBank.categories[0]._id || testData.questionBank.categories[0];
+  }
+  if (!catId && testData.aiQuestionBank?.categories?.length > 0) {
+    catId =
+      testData.aiQuestionBank.categories[0]._id ||
+      testData.aiQuestionBank.categories[0];
   }
   if (catId) {
     testData.categoryPath = getPath(catId);
@@ -1910,7 +1925,10 @@ export const getExamHall = async (studentId, page = 1, limit = 20, type = "all",
       const base = { _id: p._id, purchaseDate: p.purchaseDate, purchasePrice: p.purchasePrice };
       if (p.test) {
         const testObj = p.test?.toObject ? p.test.toObject() : { ...p.test };
-        const catId = testObj.questionBank?.categories?.[0];
+        const catId =
+          testObj.questionBank?.categories?.[0] ||
+          testObj.aiQuestionBank?.categories?.[0] ||
+          testObj.categoryId;
         const categoryPath = getPath(catId) || "";
         const appFor = testObj.applicableFor || "Test";
         const itemType = getFrontendItemType({ ...testObj, applicableFor: appFor });
@@ -1931,7 +1949,10 @@ export const getExamHall = async (studentId, page = 1, limit = 20, type = "all",
       }
       const bundleTests = (p.testBundle?.tests || []).map((t) => {
         const testObj = t?.toObject ? t.toObject() : { ...t };
-        const catId = testObj.questionBank?.categories?.[0];
+        const catId =
+          testObj.questionBank?.categories?.[0] ||
+          testObj.aiQuestionBank?.categories?.[0] ||
+          testObj.categoryId;
         const categoryPath = getPath(catId) || "";
         const appFor = testObj.applicableFor || "Test";
         const itemType = getFrontendItemType({ ...testObj, applicableFor: appFor });
@@ -2119,15 +2140,35 @@ export const getExamHall = async (studentId, page = 1, limit = 20, type = "all",
       });
     };
 
-    if (item.type === "test" && item.test) return checkCategories(item.test?.questionBank?.categories);
+    if (item.type === "test" && item.test) {
+      return (
+        checkCategories(item.test?.questionBank?.categories) ||
+        checkCategories(item.test?.aiQuestionBank?.categories) ||
+        (item.test?.categoryId &&
+          descendantCategoryIds.includes(String(item.test.categoryId)))
+      );
+    }
     if (item.type === "testBundle" && item.testBundle?.tests) {
-      return item.testBundle.tests.some((t) => checkCategories(t?.questionBank?.categories));
+      return item.testBundle.tests.some(
+        (t) =>
+          checkCategories(t?.questionBank?.categories) ||
+          checkCategories(t?.aiQuestionBank?.categories) ||
+          (t?.categoryId &&
+            descendantCategoryIds.includes(String(t.categoryId)))
+      );
     }
     if (item.type === "tournament" && item.stages) {
-      return item.stages.some((s) => checkCategories(s.test?.questionBank?.categories));
+      return item.stages.some(
+        (s) =>
+          checkCategories(s.test?.questionBank?.categories) ||
+          checkCategories(s.test?.aiQuestionBank?.categories)
+      );
     }
     if (item.type === "olympiad" && item.test) {
-      return checkCategories(item.test?.questionBank?.categories);
+      return (
+        checkCategories(item.test?.questionBank?.categories) ||
+        checkCategories(item.test?.aiQuestionBank?.categories)
+      );
     }
     return false;
   };

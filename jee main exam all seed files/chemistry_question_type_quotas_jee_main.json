@@ -1,0 +1,209 @@
+{
+  "subject": "Chemistry",
+  "exam": "JEE Main 2026",
+  "purpose": "Per-topic target quotas for building a question BANK/dataset, not a simulation of a single session's paper. Multiply/scale as needed. Mirrors the structure of the Physics quotas file for the same exam so the two banks can be planned/compared side by side.",
+  "question_type_note": "JEE Main Paper 1 uses only two question formats per subject: single-correct MCQ (Section A, 20 questions/session) and numerical-value (Section B, 5 questions/session, all compulsory). There is no multiple-correct or matrix-match format in JEE Main — those exist only in JEE Advanced, so this file has no 'multi' or 'match' quota buckets.",
+  "difficulty_note": "Unlike an Advanced-style quotas file, JEE Main quotas include an 'easy' tier. JEE Main is a speed/accuracy exam built heavily on direct, single-concept, formula/fact-application questions (especially in Inorganic Chemistry), and a realistic bank must include a large share of these rather than skipping to medium/hard.",
+  "topics": {
+    "C01": {
+      "chapter": "Some Basic Concepts in Chemistry",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": { "easy": 4, "medium": 4, "hard": 2, "total": 10 },
+        "numerical": { "easy": 2, "medium": 4, "hard": 2, "total": 8 }
+      },
+      "topic_total_quota": 18
+    },
+    "C02": {
+      "chapter": "Atomic Structure",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": { "easy": 6, "medium": 6, "hard": 4, "total": 16 },
+        "numerical": { "easy": 4, "medium": 6, "hard": 4, "total": 14 }
+      },
+      "topic_total_quota": 30
+    },
+    "C03": {
+      "chapter": "Chemical Bonding and Molecular Structure",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": { "easy": 4, "medium": 4, "hard": 2, "total": 10 },
+        "numerical": { "easy": 2, "medium": 4, "hard": 2, "total": 8 }
+      },
+      "topic_total_quota": 18
+    },
+    "C04": {
+      "chapter": "Chemical Thermodynamics",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": { "easy": 4, "medium": 4, "hard": 2, "total": 10 },
+        "numerical": { "easy": 2, "medium": 4, "hard": 2, "total": 8 }
+      },
+      "topic_total_quota": 18
+    },
+    "C05": {
+      "chapter": "Solutions",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": { "easy": 4, "medium": 4, "hard": 2, "total": 10 },
+        "numerical": { "easy": 2, "medium": 4, "hard": 2, "total": 8 }
+      },
+      "topic_total_quota": 18
+    },
+    "C06": {
+      "chapter": "Equilibrium",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": { "easy": 6, "medium": 6, "hard": 4, "total": 16 },
+        "numerical": { "easy": 4, "medium": 6, "hard": 4, "total": 14 }
+      },
+      "topic_total_quota": 30
+    },
+    "C07": {
+      "chapter": "Redox Reactions and Electrochemistry",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": { "easy": 6, "medium": 6, "hard": 4, "total": 16 },
+        "numerical": { "easy": 4, "medium": 6, "hard": 4, "total": 14 }
+      },
+      "topic_total_quota": 30
+    },
+    "C08": {
+      "chapter": "Chemical Kinetics",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": { "easy": 6, "medium": 6, "hard": 4, "total": 16 },
+        "numerical": { "easy": 4, "medium": 6, "hard": 4, "total": 14 }
+      },
+      "topic_total_quota": 30
+    },
+    "C09": {
+      "chapter": "Classification of Elements and Periodicity in Properties",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": { "easy": 4, "medium": 4, "hard": 2, "total": 10 },
+        "numerical": { "easy": 2, "medium": 4, "hard": 2, "total": 8 }
+      },
+      "topic_total_quota": 18
+    },
+    "C10": {
+      "chapter": "p-Block Elements",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": { "easy": 4, "medium": 4, "hard": 2, "total": 10 },
+        "numerical": { "easy": 2, "medium": 4, "hard": 2, "total": 8 }
+      },
+      "topic_total_quota": 18
+    },
+    "C11": {
+      "chapter": "d- and f-Block Elements",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": { "easy": 4, "medium": 4, "hard": 2, "total": 10 },
+        "numerical": { "easy": 2, "medium": 4, "hard": 2, "total": 8 }
+      },
+      "topic_total_quota": 18
+    },
+    "C12": {
+      "chapter": "Co-ordination Compounds",
+      "relevance_tier": "very_high",
+      "quota_weight": 4,
+      "question_types": {
+        "mcq_single": { "easy": 8, "medium": 8, "hard": 6, "total": 22 },
+        "numerical": { "easy": 5, "medium": 8, "hard": 5, "total": 18 }
+      },
+      "topic_total_quota": 40
+    },
+    "C13": {
+      "chapter": "Purification and Characterisation of Organic Compounds",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": { "easy": 4, "medium": 4, "hard": 2, "total": 10 },
+        "numerical": { "easy": 2, "medium": 4, "hard": 2, "total": 8 }
+      },
+      "topic_total_quota": 18
+    },
+    "C14": {
+      "chapter": "Some Basic Principles of Organic Chemistry",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": { "easy": 6, "medium": 6, "hard": 4, "total": 16 },
+        "numerical": { "easy": 4, "medium": 6, "hard": 4, "total": 14 }
+      },
+      "topic_total_quota": 30
+    },
+    "C15": {
+      "chapter": "Hydrocarbons",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": { "easy": 6, "medium": 6, "hard": 4, "total": 16 },
+        "numerical": { "easy": 4, "medium": 6, "hard": 4, "total": 14 }
+      },
+      "topic_total_quota": 30
+    },
+    "C16": {
+      "chapter": "Organic Compounds Containing Halogens",
+      "relevance_tier": "low",
+      "quota_weight": 1,
+      "question_types": {
+        "mcq_single": { "easy": 2, "medium": 2, "hard": 1, "total": 5 },
+        "numerical": { "easy": 1, "medium": 2, "hard": 1, "total": 4 }
+      },
+      "topic_total_quota": 9
+    },
+    "C17": {
+      "chapter": "Organic Compounds Containing Oxygen",
+      "relevance_tier": "very_high",
+      "quota_weight": 4,
+      "question_types": {
+        "mcq_single": { "easy": 8, "medium": 8, "hard": 6, "total": 22 },
+        "numerical": { "easy": 5, "medium": 8, "hard": 5, "total": 18 }
+      },
+      "topic_total_quota": 40
+    },
+    "C18": {
+      "chapter": "Organic Compounds Containing Nitrogen",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": { "easy": 6, "medium": 6, "hard": 4, "total": 16 },
+        "numerical": { "easy": 4, "medium": 6, "hard": 4, "total": 14 }
+      },
+      "topic_total_quota": 30
+    },
+    "C19": {
+      "chapter": "Biomolecules",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": { "easy": 4, "medium": 4, "hard": 2, "total": 10 },
+        "numerical": { "easy": 2, "medium": 4, "hard": 2, "total": 8 }
+      },
+      "topic_total_quota": 18
+    },
+    "C20": {
+      "chapter": "Principles Related to Practical Chemistry",
+      "relevance_tier": "low",
+      "quota_weight": 1,
+      "question_types": {
+        "mcq_single": { "easy": 2, "medium": 2, "hard": 1, "total": 5 },
+        "numerical": { "easy": 1, "medium": 2, "hard": 1, "total": 4 }
+      },
+      "topic_total_quota": 9
+    }
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "exam": "CLAT 2026 (UG)",
+  "source_note": "Compiled from the Consortium of National Law Universities' official UG syllabus page (consortiumofnlus.ac.in) as reported by multiple 2025-2026 coaching/exam-tracker sources (PhysicsWallah, Careers360, iQuanta, CollegeDekho, CLATapult), cross-checked Sep 2026. CLAT moved to an all-passage-based format from 2020 onward and further trimmed question count to 120 from CLAT 2024 onward (down from 150, and 200 pre-2020) — there are no standalone factual-recall questions left in any section except the data given inside Quantitative Techniques caselets. Always verify against the current-year Consortium notification before finalising a question bank, since the exact section-wise question range can shift slightly year to year within the declared bands.",
+  "exam_pattern_note": "CLAT UG 2026: 120 single-correct MCQs, 120 minutes, offline pen-and-paper mode, no sectional time limits. Every section except part of Quantitative Techniques is passage-based (English ~450-500 word passages; Current Affairs/GK passages; Legal Reasoning fact-pattern + legal-principle passages; Logical Reasoning ~450-word argumentative passages). There is no separate essay, interview, or numerical-value component.",
+  "sections": [
+    {
+      "section_id": "ENG",
+      "section_name": "English Language",
+      "num_questions_range": "22-26",
+      "weightage_pct_approx": 20,
+      "question_format": "Reading-comprehension passages (450-500 words) with attached MCQs, plus standalone vocabulary/grammar-in-context items drawn from within or alongside a passage.",
+      "topics": [
+        {
+          "topic_id": "ENG01",
+          "topic": "Reading Comprehension",
+          "subtopics": [
+            "Main idea / primary purpose of the passage",
+            "Inference and conclusion-drawing",
+            "Vocabulary in context (contextual meaning of words/phrases used in the passage)",
+            "Summary and paraphrasing",
+            "Author's tone, viewpoint and argument structure"
+          ]
+        },
+        {
+          "topic_id": "ENG02",
+          "topic": "Vocabulary",
+          "subtopics": [
+            "Synonyms and antonyms (in context)",
+            "Idioms and phrases",
+            "Contextual word usage"
+          ]
+        },
+        {
+          "topic_id": "ENG03",
+          "topic": "Grammar and Sentence Structure",
+          "subtopics": [
+            "Sentence completion and correction",
+            "Tenses",
+            "Active and passive voice",
+            "Narration (direct/indirect speech)",
+            "Common grammatical error spotting within a passage-linked context"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "CA",
+      "section_name": "Current Affairs including General Knowledge",
+      "num_questions_range": "28-32",
+      "weightage_pct_approx": 25,
+      "question_format": "Short passages/excerpts (often drawn from news reports, journalistic writing, or non-fiction) on current or recent events, followed by MCQs testing comprehension plus factual/background knowledge needed to fully understand the passage.",
+      "topics": [
+        {
+          "topic_id": "CA01",
+          "topic": "Contemporary Events (National and International)",
+          "subtopics": [
+            "Recent national and international news of significance",
+            "Government schemes, policies and economic developments",
+            "International relations, treaties and organisations"
+          ]
+        },
+        {
+          "topic_id": "CA02",
+          "topic": "Arts, Culture and Society",
+          "subtopics": [
+            "Arts and culture",
+            "Sports",
+            "Notable/celebrated personalities and achievements",
+            "Awards and honours"
+          ]
+        },
+        {
+          "topic_id": "CA03",
+          "topic": "Historical Events of Current Relevance",
+          "subtopics": [
+            "Historical events referenced in a contemporary context",
+            "Polity and constitutional developments in the news"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "LEGAL",
+      "section_name": "Legal Reasoning",
+      "num_questions_range": "28-32",
+      "weightage_pct_approx": 25,
+      "question_format": "4-6 passages presenting a legal principle/rule (real or hypothetical) plus a fact situation; candidates apply the stated principle to the facts. No prior legal knowledge is formally assumed, but familiarity with core legal doctrines materially helps.",
+      "topics": [
+        {
+          "topic_id": "LEGAL01",
+          "topic": "Constitutional Law",
+          "subtopics": [
+            "Basic structure and organs of the Constitution",
+            "Fundamental Rights",
+            "Directive Principles of State Policy",
+            "Emergency provisions",
+            "Constitutional doctrines"
+          ]
+        },
+        {
+          "topic_id": "LEGAL02",
+          "topic": "Law of Contracts",
+          "subtopics": [
+            "Offer and acceptance, consideration, capacity to contract",
+            "Types of contracts",
+            "Breach of contract and remedies"
+          ]
+        },
+        {
+          "topic_id": "LEGAL03",
+          "topic": "Law of Torts",
+          "subtopics": [
+            "Negligence and vicarious liability",
+            "Defamation",
+            "Nuisance and trespass"
+          ]
+        },
+        {
+          "topic_id": "LEGAL04",
+          "topic": "Family Law",
+          "subtopics": [
+            "Marriage law",
+            "Divorce law",
+            "Inheritance and succession law",
+            "Adoption law",
+            "Maintenance law"
+          ]
+        },
+        {
+          "topic_id": "LEGAL05",
+          "topic": "Other Applied Law Areas",
+          "subtopics": [
+            "Intellectual property rights",
+            "Arbitration",
+            "Data protection laws",
+            "Current legal developments and legal current affairs"
+          ]
+        },
+        {
+          "topic_id": "LEGAL06",
+          "topic": "International Law",
+          "subtopics": [
+            "Recognition of states",
+            "Refugee law",
+            "Monism and dualism",
+            "International treaties"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "LOGIC",
+      "section_name": "Logical Reasoning",
+      "num_questions_range": "22-26",
+      "weightage_pct_approx": 20,
+      "question_format": "Short argumentative passages of about 450 words, each followed by one or more MCQs. No standalone puzzle, syllogism or blood-relation questions since the 2020 all-passage-based revamp; everything is argument-analysis based.",
+      "topics": [
+        {
+          "topic_id": "LOGIC01",
+          "topic": "Argument Identification and Analysis",
+          "subtopics": [
+            "Recognising an argument, its premises and conclusion",
+            "Identifying the structure of reasoning in a passage"
+          ]
+        },
+        {
+          "topic_id": "LOGIC02",
+          "topic": "Critical Reasoning",
+          "subtopics": [
+            "Strengthen / weaken the argument based on altered premises or facts",
+            "Assumption identification",
+            "Cause and effect",
+            "Flaw in reasoning"
+          ]
+        },
+        {
+          "topic_id": "LOGIC03",
+          "topic": "Inference and Application",
+          "subtopics": [
+            "Inferring what follows from the passage",
+            "Applying inferences to new/hypothetical situations",
+            "Drawing relationships and analogies",
+            "Identifying contradictions and equivalence",
+            "Assessing the overall effectiveness of an argument"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "QUANT",
+      "section_name": "Quantitative Techniques",
+      "num_questions_range": "10-14",
+      "weightage_pct_approx": 10,
+      "question_format": "Short sets of facts/propositions, graphs, or other textual/pictorial representations of numerical data ('caselets'), each followed by a series of MCQs. Mathematical content is capped at roughly Class 10 level.",
+      "topics": [
+        {
+          "topic_id": "QUANT01",
+          "topic": "Basic Arithmetic",
+          "subtopics": [
+            "Percentage, ratio and proportion",
+            "Average",
+            "Profit, loss and discount",
+            "Simple and compound interest",
+            "Time, speed and distance",
+            "Time and work",
+            "Basic mensuration"
+          ]
+        },
+        {
+          "topic_id": "QUANT02",
+          "topic": "Data Interpretation Caselets",
+          "subtopics": [
+            "Reading and deriving information from tables, bar/line/pie charts",
+            "Reading pictorial or diagrammatic representations of data",
+            "Applying arithmetic operations to the derived data to answer a linked series of questions"
+          ]
+        }
+      ]
+    }
+  ]
+}

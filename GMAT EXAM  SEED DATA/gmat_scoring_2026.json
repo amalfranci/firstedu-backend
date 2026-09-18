@@ -1,0 +1,68 @@
+{
+  "exam_context": "GMAT Focus Edition 2026 — the only GMAT format accepted by business schools worldwide as of 2026; the legacy GMAT (with AWA, Integrated Reasoning and Sentence Correction) is fully discontinued.",
+  "data_provenance": "Estimated from GMAC's published exam structure plus prep-provider PYQ/frequency trackers (CrackVerbal, e-GMAT, Target Test Prep, TestNinjas, Yocket) aggregated through 2025-2026; last grounded Sep 2026. Sub-topic frequency percentages are prep-industry estimates, NOT official GMAC-published weightages — GMAC does not publish an official per-topic weightage table. Treat these as directional planning figures, not guarantees of any single adaptive delivery.",
+  "sections": {
+    "Q": {
+      "section_name": "Quantitative Reasoning",
+      "num_questions": 21,
+      "duration_minutes": 45,
+      "section_score_range": "60-90 (1-point increments)",
+      "topic_distribution_pct_estimate": {
+        "note": "Approximate share of Quant content by topic area, synthesised from multiple 2025-2026 prep-tracker sources.",
+        "Linear_and_Quadratic_Equations": "~29%",
+        "Number_Properties_and_Theory": "~28%",
+        "Statistics": "~12%",
+        "Inequalities": "~8%",
+        "Ratios_Percent_Interest": "~6%",
+        "Probability_and_PnC": "~5%",
+        "Set_Theory": "~5%",
+        "Other_arithmetic_algebra_mix": "remainder"
+      },
+      "notes": "Over half the section concentrates in just two areas (Linear & Quadratic Equations, Number Properties), making them the highest-leverage prep areas."
+    },
+    "V": {
+      "section_name": "Verbal Reasoning",
+      "num_questions": 23,
+      "duration_minutes": 45,
+      "section_score_range": "60-90 (1-point increments)",
+      "question_type_split_estimate": {
+        "note": "Approximate split of the 23 questions between the two Verbal question types; exact live-exam split varies by adaptive draw.",
+        "Reading_Comprehension": "~50-55%",
+        "Critical_Reasoning": "~45-50%"
+      }
+    },
+    "DI": {
+      "section_name": "Data Insights",
+      "num_questions": 20,
+      "duration_minutes": 45,
+      "section_score_range": "60-90 (1-point increments)",
+      "component_weightage_pct_estimate": {
+        "note": "Approximate share of the 20-question Data Insights section by question type, synthesised from multiple 2025-2026 prep-tracker sources. Ranges are wide because DI question-type mix varies more than Quant/Verbal by adaptive draw.",
+        "Data_Sufficiency": "20-40%",
+        "Graphics_Interpretation": "20-30%",
+        "Table_Analysis": "10-20%",
+        "Two_Part_Analysis": "10-20%",
+        "Multi_Source_Reasoning": "10-20%"
+      },
+      "notes": "Data Sufficiency is the migrated-in former Quant topic and is consistently reported as the single most frequent DI question type."
+    }
+  },
+  "marking_scheme": {
+    "source_note": "Confirmed via multiple 2025-2026 sources describing the live GMAT Focus Edition delivery engine.",
+    "format": "GMAT Focus Edition is a section-level computer-adaptive test (not a fixed-form exam with a published per-question penalty). There is NO explicit 'negative marking' value like JEE's -1 per wrong answer.",
+    "how_scoring_actually_works": "Each of the 3 sections is scored 60-90 in 1-point increments based on an adaptive item-response-theory algorithm that weighs both correctness and the difficulty of the questions answered — answering harder questions correctly raises the score ceiling, and answering incorrectly (especially early, and especially by leaving many questions unanswered) can meaningfully lower it. Within a section, candidates get one review screen at the end letting them change up to 3 answers.",
+    "unanswered_penalty_note": "Leaving questions unanswered at the end of a section carries a disproportionately large scoring penalty under the adaptive algorithm — worse than guessing. This is the practical equivalent of a 'negative marking' warning for question-bank / mock-test tooling that wants to simulate exam pressure, even though GMAC does not describe it as a per-question negative mark.",
+    "total_score_range": "205-805, composite of the three equally-weighted section scores (Quant + Verbal + Data Insights)",
+    "section_weighting": "All three sections (Quant, Verbal, Data Insights) contribute equally to the Total Score",
+    "question_types_used": "Single-correct 5-option MCQ (Quant Problem Solving; Verbal Reading Comprehension and Critical Reasoning; DI Data Sufficiency), plus DI's four other interactive formats (Table Analysis true/false grid, Graphics Interpretation dropdown, Two-Part Analysis linked answers, Multi-Source Reasoning tabbed MCQ/true-false)."
+  },
+  "exam_logistics": {
+    "total_questions": 64,
+    "total_testing_time": "2 hours 15 minutes, plus one optional 10-minute break (placeable between any two sections)",
+    "section_order_choice": "Candidates choose their own section order from 6 possible sequences at the start of the exam",
+    "fees_approx": {
+      "test_center": "$275 (~INR 22,800)",
+      "online": "$300 (~INR 24,800)"
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "subject": "Chemistry",
+  "exam_context": "JEE Main 2026 (Paper 1, B.E./B.Tech) — Chemistry section only, 25 questions/100 marks",
+  "data_provenance": "Estimated from PYQ-trend analysis and chapter-wise-weightage trackers aggregated across the 2025 and 2026 (Jan + Apr) sessions (not official NTA data), primarily cross-referenced against careers360's published weightage table (2027-cycle edition, using 2026-session data); last grounded Sep 2026. Individual-session weightage varies shift to shift; treat these as multi-session averages for question-bank planning, not a guarantee of any single paper's composition.",
+  "topics": {
+    "C01": {
+      "chapter": "Some Basic Concepts in Chemistry",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": { "easy": 50, "medium": 35, "hard": 15 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Mole-concept and stoichiometry numericals are a reliable, direct-formula scoring source; ~4.8% weightage per careers360's chapter-wise tracker."
+    },
+    "C02": {
+      "chapter": "Atomic Structure",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": { "easy": 35, "medium": 40, "hard": 25 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Bohr-model energy/radii numericals and quantum-number-based questions recur every session; ~5.5% weightage."
+    },
+    "C03": {
+      "chapter": "Chemical Bonding and Molecular Structure",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": { "easy": 40, "medium": 38, "hard": 22 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "VSEPR shape/hybridisation and MO bond-order questions are the dominant archetypes; ~5.1% weightage."
+    },
+    "C04": {
+      "chapter": "Chemical Thermodynamics",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": { "easy": 40, "medium": 38, "hard": 22 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Hess's-law and enthalpy-of-reaction numericals dominate; ~5.1% weightage."
+    },
+    "C05": {
+      "chapter": "Solutions",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": { "easy": 40, "medium": 38, "hard": 22 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Colligative-property numericals (freezing-point depression, van't Hoff factor) are the standard archetype; ~5.1% weightage."
+    },
+    "C06": {
+      "chapter": "Equilibrium",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": { "easy": 35, "medium": 40, "hard": 25 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "pH, buffer and solubility-product numericals recur heavily; ~5.5% weightage, consistently a top-priority chapter."
+    },
+    "C07": {
+      "chapter": "Redox Reactions and Electrochemistry",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": { "easy": 35, "medium": 40, "hard": 25 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Nernst-equation and conductivity numericals are a recurring high-weightage archetype; ~5.7% weightage."
+    },
+    "C08": {
+      "chapter": "Chemical Kinetics",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": { "easy": 35, "medium": 40, "hard": 25 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "First-order rate-constant/half-life numericals dominate; ~5.5% weightage."
+    },
+    "C09": {
+      "chapter": "Classification of Elements and Periodicity in Properties",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": { "easy": 50, "medium": 35, "hard": 15 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Mostly direct trend-recall (ionisation enthalpy, atomic radius ordering); ~4.0% weightage."
+    },
+    "C10": {
+      "chapter": "p-Block Elements",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": { "easy": 40, "medium": 38, "hard": 22 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Fact-and-exception-heavy unit (anomalous first-element behaviour, oxoacid structures); ~3.8% weightage but broad content coverage."
+    },
+    "C11": {
+      "chapter": "d- and f-Block Elements",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": { "easy": 45, "medium": 35, "hard": 20 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "KMnO4/K2Cr2O7 reaction-based and magnetic-moment questions recur; ~4.6% weightage."
+    },
+    "C12": {
+      "chapter": "Co-ordination Compounds",
+      "jee_main_freq_band": "very high",
+      "avg_q_per_session_jee_main": "2",
+      "difficulty_split": { "easy": 30, "medium": 42, "hard": 28 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "The single highest-weightage inorganic unit at ~8.4% per careers360's tracker; IUPAC nomenclature, isomerism, CFT/magnetic-property questions recur every session."
+    },
+    "C13": {
+      "chapter": "Purification and Characterisation of Organic Compounds",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": { "easy": 55, "medium": 32, "hard": 13 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Direct technique-identification questions (chromatography, Lassaigne's test); ~4.0% weightage."
+    },
+    "C14": {
+      "chapter": "Some Basic Principles of Organic Chemistry",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": { "easy": 35, "medium": 40, "hard": 25 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Foundational unit tested via carbocation-stability and inductive/resonance-effect ranking questions; ~5.5% weightage."
+    },
+    "C15": {
+      "chapter": "Hydrocarbons",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": { "easy": 35, "medium": 40, "hard": 25 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Electrophilic-addition and Friedel-Crafts mechanism questions dominate; ~6.3% weightage."
+    },
+    "C16": {
+      "chapter": "Organic Compounds Containing Halogens",
+      "jee_main_freq_band": "low",
+      "avg_q_per_session_jee_main": "0-1",
+      "difficulty_split": { "easy": 55, "medium": 32, "hard": 13 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Lowest-weightage organic unit at ~1.9%; usually a single direct SN1/SN2-mechanism or uses-based question."
+    },
+    "C17": {
+      "chapter": "Organic Compounds Containing Oxygen",
+      "jee_main_freq_band": "very high",
+      "avg_q_per_session_jee_main": "2",
+      "difficulty_split": { "easy": 30, "medium": 42, "hard": 28 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "The single highest-weightage organic unit at ~7.6%; aldehyde/ketone named-reaction questions (aldol, Cannizzaro, HVZ) are a dominant archetype."
+    },
+    "C18": {
+      "chapter": "Organic Compounds Containing Nitrogen",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": { "easy": 40, "medium": 38, "hard": 22 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Amine basicity-ordering and diazonium-salt reaction questions recur; ~5.7% weightage."
+    },
+    "C19": {
+      "chapter": "Biomolecules",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": { "easy": 55, "medium": 32, "hard": 13 },
+      "also_in_jee_advanced_syllabus": false,
+      "notes": "Mostly qualitative recall (protein structure levels, DNA/RNA base composition); ~4.6% weightage. Not tested in JEE Advanced."
+    },
+    "C20": {
+      "chapter": "Principles Related to Practical Chemistry",
+      "jee_main_freq_band": "low",
+      "avg_q_per_session_jee_main": "0-1",
+      "difficulty_split": { "easy": 55, "medium": 32, "hard": 13 },
+      "also_in_jee_advanced_syllabus": false,
+      "notes": "Lowest-weightage chapter at ~1.5%; direct recall of qualitative-salt-analysis reagents/observations. Not a separate JEE Advanced unit."
+    }
+  },
+  "broad_category_weightage_pct": {
+    "note": "Coarser cross-check figures, approximate % share of the 25-question Chemistry section, synthesised from the careers360 chapter-wise weightage table (2027-cycle publication, reflecting 2026-session data) and other 2025-2026 PYQ trend sources. Rounds do not sum to exactly 100% due to rounding and inconsistent chapter-boundary reporting across sources.",
+    "Physical_Chemistry (C01-C08)": "42-45%",
+    "Inorganic_Chemistry (C09-C12)": "20-22%",
+    "Organic_Chemistry (C13-C20)": "33-36%"
+  },
+  "marking_scheme": {
+    "source_note": "Confirmed via multiple Sep 2026 sources reporting on the actual Jan 2026 and Apr 2026 JEE Main sessions.",
+    "section_a_mcq": "20 single-correct MCQs per subject; +4 for a correct answer, -1 for an incorrect answer, 0 if unattempted.",
+    "section_b_numerical": "5 numerical-value questions per subject, all compulsory (the earlier 'attempt any 5 of 10' choice was removed starting with the 2025 pattern); +4 for a correct answer, -1 for an incorrect answer, 0 if unattempted. This differs from pre-2025 sessions, when numerical questions carried no negative marking.",
+    "total_marks_chemistry": 100,
+    "total_marks_paper": 300,
+    "question_types_used": "Single-correct MCQ and numerical-value only. JEE Main does NOT use multiple-correct MCQs or matrix-match questions — those formats are exclusive to JEE Advanced."
+  }
+}

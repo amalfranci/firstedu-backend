@@ -1,0 +1,48 @@
+{
+  "subject": "Verbal Ability and Reading Comprehension (VARC)",
+  "exam_context": "CAT 2026 - VARC section only, 24 questions / 72 marks / 40 minutes",
+  "data_provenance": "Estimated from slot-wise PYQ analyses of CAT 2021-2025 aggregated by multiple coaching trackers, not an official IIM-published weightage document; last grounded Sep 2026. Composition shifts slightly year to year (e.g. CAT 2024 added a 4th RC passage vs. earlier years' 3), so treat as a multi-year average for question-bank planning.",
+  "topics": {
+    "V01": {
+      "area": "Reading Comprehension (RC)",
+      "cat_freq_band": "very high",
+      "avg_q_per_slot": "16 (4 passages x 4 questions)",
+      "approx_weightage_pct": "66-67",
+      "difficulty_split": { "easy": 25, "medium": 45, "hard": 30 },
+      "notes": "Argumentative and analytical passages dominate over narrative/descriptive ones; inference and 'except' questions are the hardest, direct-detail questions the easiest."
+    },
+    "V02": {
+      "area": "Para Jumbles",
+      "cat_freq_band": "high",
+      "avg_q_per_slot": "3",
+      "approx_weightage_pct": "12-13",
+      "difficulty_split": { "easy": 25, "medium": 45, "hard": 30 },
+      "notes": "TITA format in most recent slots removes the guessing safety net of options, raising effective difficulty."
+    },
+    "V03": {
+      "area": "Para Summary",
+      "cat_freq_band": "high",
+      "avg_q_per_slot": "3",
+      "approx_weightage_pct": "12-13",
+      "difficulty_split": { "easy": 30, "medium": 45, "hard": 25 },
+      "notes": "Generally considered one of the more scorable VA sub-types when the main idea is grasped correctly."
+    },
+    "V04": {
+      "area": "Odd Sentence Out / Para Completion / Para Insertion",
+      "cat_freq_band": "medium",
+      "avg_q_per_slot": "2",
+      "approx_weightage_pct": "8-10",
+      "difficulty_split": { "easy": 20, "medium": 45, "hard": 35 },
+      "notes": "Odd-one-out is consistently flagged by trackers as the toughest VA sub-type."
+    }
+  },
+  "marking_scheme": {
+    "source_note": "Confirmed via multiple Sep 2026 sources reporting on the CAT 2025 (30 Nov 2025) session, consistent with the CAT 2024 pattern.",
+    "mcq": "+3 for a correct answer, -1 for an incorrect answer, 0 if unattempted.",
+    "tita": "+3 for a correct answer, 0 for an incorrect answer (no negative marking), 0 if unattempted.",
+    "total_marks_varc": 72,
+    "total_marks_paper": 204,
+    "section_time_limit_minutes": 40,
+    "question_types_used": "Single-correct MCQ and TITA (type-in-the-answer). No multiple-correct or matrix-match formats."
+  }
+}

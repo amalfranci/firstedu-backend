@@ -18,6 +18,42 @@ describe("ExamSyllabusPack scoring mappers", () => {
     expect(mapped.notes).toContain("matrix");
   });
 
+  it("maps JEE Main very-high freq band to high relevance", () => {
+    const mapped = mapScoringEntry({
+      jee_main_freq_band: "very high",
+      avg_q_per_session_jee_main: "2-3",
+    });
+    expect(mapped.relevance).toBe("high");
+    expect(mapped.freqBand).toBe("very high");
+    expect(mapped.avgQPerSession).toBe("2-3");
+  });
+
+  it("maps NEET freq bands including medium-high and low-medium", () => {
+    const highish = mapScoringEntry({
+      neet_freq_band: "very high",
+      avg_q_per_session_neet: "3-4",
+    });
+    expect(highish.relevance).toBe("high");
+    expect(highish.freqBand).toBe("very high");
+    expect(highish.avgQPerSession).toBe("3-4");
+
+    const midHigh = mapScoringEntry({ neet_freq_band: "medium-high" });
+    expect(midHigh.relevance).toBe("medium");
+
+    const lowMed = mapScoringEntry({ neet_freq_band: "low-medium" });
+    expect(lowMed.relevance).toBe("low");
+  });
+
+  it("maps CAT freq band and avg_q_per_slot", () => {
+    const mapped = mapScoringEntry({
+      cat_freq_band: "very high",
+      avg_q_per_slot: "8-10",
+    });
+    expect(mapped.relevance).toBe("high");
+    expect(mapped.freqBand).toBe("very high");
+    expect(mapped.avgQPerSession).toBe("8-10");
+  });
+
   it("maps pack topic into generation scoring shape", () => {
     const shaped = mapPackTopicToGenerationShape({
       topicId: "M02",

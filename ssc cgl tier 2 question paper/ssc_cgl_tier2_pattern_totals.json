@@ -1,0 +1,105 @@
+{
+  "exam": "SSC CGL Tier 2",
+  "year": 2026,
+  "cycle": "SSC CGL Tier 2 2026 Paper I",
+  "data_provenance": "SSC CGL Tier 2 Paper I pattern as reported by PhysicsWallah/Adda247/CareerPower (Sep 2026): 150 Q / 450 marks / 135 minutes Session 1 — Mathematical Abilities 30, Reasoning 30, English 45, GA 25, Computer Knowledge 20; +3/−1. DEST Session 2 is qualifying only. Confirm against ssc.gov.in before production use.",
+  "important_caveat": "Paper I is merit-deciding. Computer Knowledge has its own qualifying cut-off. DEST (Session 2) is out of scope for this MCQ bank. Paper II (Statistics) and Paper III (Finance) are post-specific and out of scope.",
+  "exam_day": {
+    "mandatory_both_papers": false,
+    "note": "Paper I Session 1 CBT (2h15m) across five graded modules; Session 2 DEST 15 min (qualifying only)."
+  },
+  "subjects": [
+    "Mathematical Abilities",
+    "Reasoning",
+    "English Language",
+    "General Awareness",
+    "Computer Knowledge"
+  ],
+  "bank_subjects": [
+    "Mathematical Abilities",
+    "Reasoning",
+    "English Language",
+    "General Awareness",
+    "Computer Knowledge"
+  ],
+  "structure_per_subject_per_paper": {
+    "Paper_1": {
+      "paper_number": 1,
+      "label": "SSC CGL Tier 2 Paper I",
+      "session": "varies",
+      "start_time": "",
+      "end_time": "",
+      "duration_minutes": 135,
+      "total_marks": 450,
+      "questions_per_subject": 30,
+      "total_questions": 150,
+      "overall_difficulty": "Harder than Tier 1; Maths and multi-condition Reasoning skew hardest",
+      "section_1_single_correct": {
+        "questions": 150,
+        "options": 5,
+        "type": "single",
+        "note": "SSC CGL Tier 2 Paper I is 5-option single-correct MCQ only. Per-section sizes in all_subjects_table."
+      },
+      "section_2_multi_correct": { "questions": 0, "options": 4, "type": "multi" },
+      "section_3_numerical": { "questions": 0, "options": 0, "type": "integer" },
+      "section_4_match_list": { "questions": 0, "options": 4, "type": "match" },
+      "section_5_paragraph": { "questions": 0, "options": 4, "type": "paragraph" },
+      "formats": ["Single Correct MCQ (5 options)"],
+      "marking": {
+        "mcq": "+3 / -1 / 0",
+        "note": "Computer Knowledge also has a separate qualifying cut-off. DEST is qualifying only and not part of 450 marks."
+      }
+    }
+  },
+  "all_subjects_table": {
+    "Mathematical Abilities": {
+      "questions": 30,
+      "marks": 90,
+      "duration_minutes": 30,
+      "section_id": "MATH",
+      "label": "Mathematical Abilities"
+    },
+    "Reasoning": {
+      "questions": 30,
+      "marks": 90,
+      "duration_minutes": 30,
+      "section_id": "REASON",
+      "label": "Reasoning and General Intelligence"
+    },
+    "English Language": {
+      "questions": 45,
+      "marks": 135,
+      "duration_minutes": 40,
+      "section_id": "ENG",
+      "label": "English Language and Comprehension"
+    },
+    "General Awareness": {
+      "questions": 25,
+      "marks": 75,
+      "duration_minutes": 20,
+      "section_id": "GA",
+      "label": "General Awareness"
+    },
+    "Computer Knowledge": {
+      "questions": 20,
+      "marks": 60,
+      "duration_minutes": 15,
+      "section_id": "COMP",
+      "label": "Computer Knowledge"
+    }
+  },
+  "grand_total_across_subjects": {
+    "paper1": 150,
+    "marks_paper1": 450,
+    "duration_minutes": 135,
+    "sections": 5
+  },
+  "option_count_rule": {
+    "single": 5,
+    "multi": 0,
+    "integer": 0,
+    "match": 0,
+    "paragraph": 0
+  },
+  "question_types_note": "SSC CGL Tier 2 Paper I uses only 5-option single-correct MCQ. DEST typing test is excluded from this bank."
+}

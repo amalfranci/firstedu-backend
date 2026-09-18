@@ -10,8 +10,13 @@ import { getHardMandateFloors } from "./hardQuestionMandate.service.js";
 
 export const EXAM_PROFILE_LABELS = {
     cat: "CAT (Common Admission Test)",
+    gmat: "GMAT Focus Edition",
     clat: "CLAT UG (Common Law Admission Test)",
-    upsc: "UPSC Civil Services Prelims",
+    ibps: "IBPS PO Prelims",
+    banking: "IBPS PO Prelims",
+    ssc_cgl_tier1: "SSC CGL Tier 1",
+    ssc_cgl_tier2: "SSC CGL Tier 2",
+    upsc: "UPSC CSE Prelims",
     jee_main: "JEE Main",
     jee_advanced: "JEE Advanced",
     neet: "NEET UG",

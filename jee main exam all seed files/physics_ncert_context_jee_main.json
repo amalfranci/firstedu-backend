@@ -1,0 +1,603 @@
+{
+  "subject": "Physics",
+  "exam": "JEE Main 2026",
+  "schema_note": "Keyed by topic_id (matches physics_syllabus_jee_main.json). Same field set as the JEE Advanced NCERT-context file, with 'hard_archetypes' recalibrated to JEE-Main-level difficulty (single/dual-concept, not the multi-topic fusion typical of Advanced) and 'banned_easy_templates' generally left as a note that direct-substitution questions are wanted, not excluded, since that is the opposite convention from the Advanced file.",
+  "topics": {
+    "M01": {
+      "chapter": "Physics and Measurement",
+      "concepts": [
+        "Propagation of error in a derived quantity",
+        "Significant figures and rounding"
+      ],
+      "formulas": [
+        "Δz/z = Δx/x + Δy/y for z = xy or x/y",
+        "Δz = |∂z/∂x|Δx + |∂z/∂y|Δy (general case)"
+      ],
+      "methods": [
+        "Identify whether the target quantity is a product/quotient (add % errors) or a sum/difference (add absolute errors) before combining"
+      ],
+      "traps": [
+        "Adding absolute errors for a product/quotient relation instead of percentage errors"
+      ],
+      "hard_archetypes": [
+        "Two- or three-quantity error propagation through a power-law formula (e.g. finding max % error in g = 4π²L/T²)"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Statistical/regression treatment of data; least-squares fitting"
+      ]
+    },
+    "M02": {
+      "chapter": "Kinematics",
+      "concepts": [
+        "Equations of motion under constant acceleration",
+        "Projectile range/height/time of flight",
+        "Relative velocity vector addition"
+      ],
+      "formulas": [
+        "v = u + at; s = ut + ½at²; v² = u² + 2as",
+        "Range R = u²sin2θ/g",
+        "Max height H = u²sin²θ/2g"
+      ],
+      "methods": [
+        "Resolve projectile motion into independent horizontal and vertical components before combining"
+      ],
+      "traps": [
+        "Confusing average speed with the magnitude of average velocity",
+        "Sign errors when taking 'up' as positive vs 'down' as positive"
+      ],
+      "hard_archetypes": [
+        "River-boat/rain-man relative-velocity problems requiring a vector diagram",
+        "Projectile launched from a height, asked for range on a lower/inclined surface"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Projectile motion in polar or non-Cartesian coordinates as a formal topic"
+      ]
+    },
+    "M03": {
+      "chapter": "Laws of Motion",
+      "concepts": [
+        "Free-body diagrams",
+        "Static vs kinetic friction transition",
+        "Connected-block constraint relations"
+      ],
+      "formulas": [
+        "f_max(static) = μs·N",
+        "f(kinetic) = μk·N",
+        "For banking: tanθ = v²/rg (frictionless case)"
+      ],
+      "methods": [
+        "Draw a free-body diagram for each block separately before writing Newton's-second-law equations",
+        "Check whether the applied force exceeds limiting static friction before assuming motion occurs"
+      ],
+      "traps": [
+        "Assuming friction is always at its maximum (kinetic) value without checking whether slipping actually occurs"
+      ],
+      "hard_archetypes": [
+        "Two-block system connected over a pulley with friction on an incline",
+        "A block on a wedge that itself is free to slide on a frictionless floor"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Pseudo-force analysis in a formally non-inertial, non-uniformly accelerating frame beyond a simple lift/wedge scenario"
+      ]
+    },
+    "M04": {
+      "chapter": "Work, Energy and Power",
+      "concepts": [
+        "Work-energy theorem",
+        "Elastic vs inelastic collisions",
+        "Coefficient of restitution"
+      ],
+      "formulas": [
+        "W = ∫F·dx",
+        "e = (v2'-v1')/(v1-v2)",
+        "Elastic 1D collision: v1' = ((m1-m2)v1 + 2m2v2)/(m1+m2)"
+      ],
+      "methods": [
+        "Use the work-energy theorem directly instead of full kinematics when the force varies with position"
+      ],
+      "traps": [
+        "Applying the 1D elastic-collision formula directly to a 2D oblique collision",
+        "Assuming kinetic energy is conserved in an inelastic collision (only momentum is)"
+      ],
+      "hard_archetypes": [
+        "A block sliding down a track of varying height/friction, found using energy conservation plus a collision at the bottom",
+        "Oblique 2D collision requiring component-wise momentum conservation"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Relativistic energy-momentum relations"
+      ]
+    },
+    "M05": {
+      "chapter": "Rotational Motion",
+      "concepts": [
+        "Rolling without slipping (v = ωR)",
+        "Parallel/perpendicular axis theorems",
+        "Conservation of angular momentum"
+      ],
+      "formulas": [
+        "L = Iω; τ = Iα",
+        "KE(rolling) = ½mv² + ½Iω²",
+        "a = g sinθ / (1 + I/mR²) for rolling down an incline"
+      ],
+      "methods": [
+        "Apply angular momentum conservation about a fixed axis whenever the net external torque about that axis is zero"
+      ],
+      "traps": [
+        "Using τ = Iα about a non-fixed axis without justification",
+        "Forgetting that static (not kinetic) friction usually provides the torque for rolling without slipping"
+      ],
+      "hard_archetypes": [
+        "A ring/disc/sphere released on a rough incline, asked for the condition for pure rolling",
+        "Angular momentum conservation when a person on a rotating disc pulls their arms in"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Gyroscopic precession"
+      ]
+    },
+    "M06": {
+      "chapter": "Gravitation",
+      "concepts": [
+        "Orbital and escape velocity",
+        "Gravitational potential energy sign convention",
+        "Kepler's third law"
+      ],
+      "formulas": [
+        "v_orbit = √(GM/r)",
+        "v_escape = √(2GM/R)",
+        "U = -GMm/r",
+        "T² ∝ r³"
+      ],
+      "methods": [
+        "Use energy conservation (KE + PE) for problems that move a mass between two radii rather than force equations alone"
+      ],
+      "traps": [
+        "Forgetting gravitational PE is negative (taken as zero at infinity)",
+        "Confusing orbital velocity with escape velocity by a factor of √2"
+      ],
+      "hard_archetypes": [
+        "Finding the extra velocity needed to escape from a circular orbit",
+        "Energy required to move a satellite from one orbital radius to another"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Gravitational field of a non-uniform or partially removed mass distribution (this stays in JEE Advanced territory)"
+      ]
+    },
+    "M07": {
+      "chapter": "Properties of Solids and Liquids",
+      "concepts": [
+        "Excess pressure across a curved surface",
+        "Terminal velocity via Stokes' law",
+        "Equation of continuity and Bernoulli's theorem"
+      ],
+      "formulas": [
+        "Excess pressure in a drop: 2T/r; in a bubble: 4T/r",
+        "Terminal velocity v_t = 2r²(ρ-σ)g / 9η",
+        "Bernoulli: P + ½ρv² + ρgh = const"
+      ],
+      "methods": [
+        "Apply the equation of continuity (A1v1 = A2v2) before applying Bernoulli's theorem in a flow problem"
+      ],
+      "traps": [
+        "Forgetting buoyant-force correction (ρ-σ) when applying Stokes' law",
+        "Mixing up the factor of 2 vs 4 between a liquid drop and a soap bubble"
+      ],
+      "hard_archetypes": [
+        "Efflux speed from a hole in a tank combined with range/time-of-flight of the emerging jet",
+        "A sphere falling through a viscous fluid, asked to find terminal velocity or time to reach it"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Reynolds number and turbulence criteria (removed from the 2025-26 syllabus)"
+      ]
+    },
+    "M08": {
+      "chapter": "Thermodynamics",
+      "concepts": [
+        "First law of thermodynamics",
+        "Isothermal vs adiabatic processes",
+        "Cv, Cp and the relation Cp - Cv = R"
+      ],
+      "formulas": [
+        "ΔQ = ΔU + ΔW",
+        "Isothermal work: W = nRT ln(Vf/Vi)",
+        "Adiabatic: PV^γ = const"
+      ],
+      "methods": [
+        "Identify the process type (isothermal/adiabatic/isochoric/isobaric) first — it fixes which work-done formula applies"
+      ],
+      "traps": [
+        "Using the isothermal work formula for an adiabatic process or vice versa",
+        "Sign errors on ΔQ, ΔW convention (work done BY the gas vs ON the gas)"
+      ],
+      "hard_archetypes": [
+        "A cyclic process on a P-V diagram, asked for net work done or efficiency of the cycle",
+        "Mixed isothermal + adiabatic multi-step process, asked for final state variables"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Carnot-engine efficiency derivation as a standalone examinable item (removed from the 2025-26 syllabus, though the underlying second-law idea can still appear qualitatively)"
+      ]
+    },
+    "M09": {
+      "chapter": "Kinetic Theory of Gases",
+      "concepts": [
+        "Kinetic interpretation of pressure and temperature",
+        "Degrees of freedom and equipartition of energy",
+        "rms, average and most probable speed"
+      ],
+      "formulas": [
+        "PV = nRT",
+        "v_rms = √(3RT/M)",
+        "Internal energy of an ideal gas: U = (f/2)nRT"
+      ],
+      "methods": [
+        "Identify the gas's degrees of freedom (monatomic f=3, diatomic f=5) before computing Cv, Cp or internal energy"
+      ],
+      "traps": [
+        "Using f=3 for a diatomic gas (forgetting rotational degrees of freedom)",
+        "Confusing v_rms, v_avg and v_mp (they differ by known numeric factors, not equal)"
+      ],
+      "hard_archetypes": [
+        "Mixture of two different gases in a container, asked for the common rms speed or pressure",
+        "A gas undergoing a process where degrees-of-freedom-based Cv must be combined with the first law"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Maxwell-Boltzmann speed-distribution derivation (only qualitative shape is expected)"
+      ]
+    },
+    "M10": {
+      "chapter": "Oscillations and Waves",
+      "concepts": [
+        "SHM equation and energy",
+        "Superposition producing standing waves",
+        "Beats from two close frequencies"
+      ],
+      "formulas": [
+        "x = A sin(ωt+φ); a = -ω²x",
+        "T = 2π√(m/k) (spring), T = 2π√(L/g) (pendulum)",
+        "Beat frequency = |f1 - f2|"
+      ],
+      "methods": [
+        "Identify the restoring-force law (F ∝ -x) to confirm SHM before applying the standard SHM formulas"
+      ],
+      "traps": [
+        "Confusing angular frequency ω with ordinary frequency f (factor of 2π)",
+        "Sign errors when writing displacement vs acceleration phase relationship"
+      ],
+      "hard_archetypes": [
+        "Combining two SHMs of the same frequency along the same line, asked for resultant amplitude/phase",
+        "Vibrating air-column problem (open/closed pipe) combined with a beats calculation"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Forced/damped oscillations and mechanical resonance as a formal derivation; Doppler effect in sound (both removed from the 2025-26 syllabus)"
+      ]
+    },
+    "M11": {
+      "chapter": "Electrostatics",
+      "concepts": [
+        "Gauss's law for symmetric charge distributions",
+        "Electric dipole in a uniform field",
+        "Capacitors in series/parallel, energy stored"
+      ],
+      "formulas": [
+        "E = kq/r² (point charge)",
+        "Torque on dipole τ = pE sinθ",
+        "C = ε0A/d (parallel plate); U = ½CV²"
+      ],
+      "methods": [
+        "Choose a Gaussian surface that matches the symmetry of the charge distribution before applying Gauss's law"
+      ],
+      "traps": [
+        "Sign errors in potential when charges of both signs are present",
+        "Forgetting that inserting a dielectric increases capacitance but a battery being connected/disconnected changes what stays constant (Q or V)"
+      ],
+      "hard_archetypes": [
+        "A parallel-plate capacitor with a dielectric slab partially inserted, asked for the resulting capacitance",
+        "Network of capacitors in a bridge-like arrangement, asked for equivalent capacitance or charge distribution"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Van de Graaff generator design details; energy density derivation beyond the standard formula"
+      ]
+    },
+    "M12": {
+      "chapter": "Current Electricity",
+      "concepts": [
+        "Kirchhoff's current and voltage laws",
+        "Wheatstone bridge balance condition",
+        "Potentiometer principle"
+      ],
+      "formulas": [
+        "V = IR",
+        "Wheatstone bridge balance: P/Q = R/S",
+        "Potentiometer: emf ratio = length ratio (balance points)"
+      ],
+      "methods": [
+        "Assign loop currents and apply KVL/KCL systematically for multi-loop circuits rather than guessing current directions"
+      ],
+      "traps": [
+        "Sign errors when traversing a loop against the assumed current direction",
+        "Mixing up internal resistance's effect on terminal voltage during charging vs discharging"
+      ],
+      "hard_archetypes": [
+        "Multi-loop resistor network requiring simultaneous KVL/KCL equations",
+        "Meter-bridge or potentiometer problem combined with an unknown internal resistance or end-correction"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Non-linear circuit elements beyond a simple diode; AC circuit analysis (that belongs to M14)"
+      ]
+    },
+    "M13": {
+      "chapter": "Magnetic Effects of Current and Magnetism",
+      "concepts": [
+        "Biot-Savart law superposition",
+        "Force on a charge/current in a magnetic field",
+        "Moving-coil galvanometer conversion"
+      ],
+      "formulas": [
+        "B(straight wire) = μ0I/2πd",
+        "B(circular coil centre) = μ0I/2R",
+        "r (circular motion in B) = mv/qB"
+      ],
+      "methods": [
+        "Superpose the fields of multiple current segments using Biot-Savart before combining magnitudes/directions with the right-hand rule"
+      ],
+      "traps": [
+        "Sign/direction errors from the right-hand rule in cross products",
+        "Forgetting the velocity component parallel to B is unaffected by the magnetic force"
+      ],
+      "hard_archetypes": [
+        "Magnetic field at a point due to a combination of straight-wire segments and an arc",
+        "Converting a galvanometer to a given-range ammeter or voltmeter, finding the shunt/series resistance"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Helical/cycloidal motion in combined non-uniform E and B fields (JEE-Advanced-level fusion)"
+      ]
+    },
+    "M14": {
+      "chapter": "Electromagnetic Induction and Alternating Currents",
+      "concepts": [
+        "Motional EMF",
+        "Series LCR resonance and phasors",
+        "Transformer turns ratio"
+      ],
+      "formulas": [
+        "EMF = -dΦ/dt; motional EMF = BLv",
+        "Resonance: ω0 = 1/√(LC)",
+        "Impedance Z = √(R²+(XL-XC)²)"
+      ],
+      "methods": [
+        "Use Lenz's law direction reasoning before computing the magnitude of an induced EMF"
+      ],
+      "traps": [
+        "Sign errors in Lenz's law direction (the induced effect opposes the change in flux, not the field itself)",
+        "Confusing peak and rms values when computing AC power"
+      ],
+      "hard_archetypes": [
+        "A rod sliding on rails in a magnetic field with a resistor/capacitor in the circuit, finding induced current as a function of time",
+        "Series LCR circuit problem requiring both the resonance condition and the power factor"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Three-phase AC systems; detailed transformer loss analysis"
+      ]
+    },
+    "M15": {
+      "chapter": "Electromagnetic Waves",
+      "concepts": [
+        "Mutual perpendicularity of E, B and propagation direction",
+        "EM spectrum band identification"
+      ],
+      "formulas": [
+        "c = 1/√(μ0ε0)",
+        "E0/B0 = c",
+        "Intensity I = ½ε0cE0²"
+      ],
+      "methods": [
+        "Cross-reference a given frequency/wavelength with the standard EM-spectrum band ranges for identification questions"
+      ],
+      "traps": [
+        "Confusing which of E0 or B0 is numerically larger in SI units",
+        "Mixing up the frequency ranges of adjacent EM-spectrum bands"
+      ],
+      "hard_archetypes": [
+        "Given an expression for E(x,t) or B(x,t), deduce the other field and the direction of propagation"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Maxwell's equations in full differential form; radiation-pressure numericals combined with intensity (Advanced-level fusion)"
+      ]
+    },
+    "M16": {
+      "chapter": "Optics",
+      "concepts": [
+        "Mirror/lens sign convention",
+        "Lens-maker's formula and combinations",
+        "YDSE fringe width; single-slit diffraction minima"
+      ],
+      "formulas": [
+        "1/v - 1/u = 1/f",
+        "Lens maker's: 1/f = (n-1)(1/R1 - 1/R2)",
+        "Fringe width β = λD/d",
+        "Single-slit minima: a sinθ = nλ",
+        "Malus's law: I = I0 cos²θ"
+      ],
+      "methods": [
+        "Treat each optical element sequentially in a multi-element system: the image of one becomes the object for the next",
+        "Keep the sign convention consistent across the whole problem, especially with virtual images"
+      ],
+      "traps": [
+        "Sign-convention slips between mirror and lens formulas",
+        "Using double-slit interference formulas for a single-slit diffraction question or vice versa"
+      ],
+      "hard_archetypes": [
+        "A two-lens (or lens+mirror) combination requiring sequential image tracing",
+        "YDSE with a thin dielectric slab inserted in one slit, asked for the resulting fringe shift"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Diffraction-grating resolving-power formalism; chromatic/spherical aberration beyond a qualitative mention"
+      ]
+    },
+    "M17": {
+      "chapter": "Dual Nature of Matter and Radiation",
+      "concepts": [
+        "Einstein's photoelectric equation",
+        "Stopping potential vs frequency graph",
+        "de Broglie wavelength"
+      ],
+      "formulas": [
+        "KE_max = hf - φ",
+        "eV0 = hf - φ",
+        "λ = h/p = h/√(2mKE)"
+      ],
+      "methods": [
+        "Use the stopping-potential vs frequency graph (slope = h/e, intercept related to φ) to extract work function or threshold frequency"
+      ],
+      "traps": [
+        "Forgetting the work function φ differs by material",
+        "Mixing up photon energy (hf) with the electron's kinetic energy after emission"
+      ],
+      "hard_archetypes": [
+        "Given stopping potentials at two different frequencies, find Planck's constant and the work function simultaneously",
+        "Photoelectric effect combined with de Broglie wavelength of the emitted electron"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Compton effect derivation in full detail"
+      ]
+    },
+    "M18": {
+      "chapter": "Atoms and Nuclei",
+      "concepts": [
+        "Bohr model energy levels and transitions",
+        "Radioactive decay law",
+        "Binding energy per nucleon trend"
+      ],
+      "formulas": [
+        "E_n = -13.6Z²/n² eV",
+        "N = N0 e^{-λt}; activity A = λN",
+        "Half-life T_(1/2) = ln2/λ"
+      ],
+      "methods": [
+        "Use an energy-level diagram to identify which transition matches a given photon energy or wavelength"
+      ],
+      "traps": [
+        "Confusing half-life with mean life (factor of ln2)",
+        "Forgetting mass number/atomic number bookkeeping in alpha/beta decay"
+      ],
+      "hard_archetypes": [
+        "Given the activity of a sample at two different times, find the decay constant and initial number of atoms",
+        "A hydrogen-like ion (Z>1) transition problem requiring the Z² scaling of Bohr energy levels"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Sequential parent-daughter-granddaughter decay chains with simultaneous differential equations (this stays Advanced-level)"
+      ]
+    },
+    "M19": {
+      "chapter": "Electronic Devices",
+      "concepts": [
+        "p-n junction I-V characteristics",
+        "Diode as a half/full-wave rectifier",
+        "Logic gate truth tables"
+      ],
+      "formulas": [
+        "Diode equation qualitatively: forward bias -> low resistance, reverse bias -> high resistance (up to breakdown)",
+        "NAND = NOT(AND); NOR = NOT(OR)"
+      ],
+      "methods": [
+        "Read the I-V characteristic graph directly to classify forward/reverse bias and identify breakdown (Zener) region"
+      ],
+      "traps": [
+        "Mixing up which diode terminal is forward-biased in a given circuit diagram",
+        "Confusing the truth tables of NAND and NOR, or of OR and NOR"
+      ],
+      "hard_archetypes": [
+        "A circuit combining a Zener diode as a voltage regulator, asked for load/series-resistor current",
+        "A combinational logic circuit (2-3 gates) requiring the final truth table or Boolean output"
+      ],
+      "banned_easy_templates": [
+        "None by difficulty. Unlike JEE Advanced, JEE Main deliberately tests many direct, single-formula substitution questions — do not exclude these from a JEE Main bank."
+      ],
+      "out_of_scope": [
+        "Transistor amplifier/oscillator circuit analysis (removed from the 2025-26 syllabus); integrated-circuit design"
+      ]
+    },
+    "M20": {
+      "chapter": "Experimental Skills",
+      "concepts": [
+        "Least count and reading a vernier/screw-gauge scale",
+        "Reading standard experiment graphs (u-v, I-V, resonance)",
+        "Identifying an experimental setup from a diagram"
+      ],
+      "formulas": [
+        "Least count (vernier) = 1 main-scale division − 1 vernier-scale division",
+        "Least count (screw gauge) = pitch / number of circular-scale divisions"
+      ],
+      "methods": [
+        "Match the described apparatus/graph shape to the specific NCERT experiment it belongs to before answering"
+      ],
+      "traps": [
+        "Ignoring zero error when reading a vernier caliper or screw gauge",
+        "Confusing which quantity is plotted on which axis for a given experiment's standard graph"
+      ],
+      "hard_archetypes": [
+        "Given a set of raw vernier/screw-gauge readings including zero error, compute the corrected measurement",
+        "Identify a device (diode/Zener/LED) purely from its I-V characteristic curve shape"
+      ],
+      "banned_easy_templates": [
+        "A direct 'name this apparatus' recall question with no reading/calculation is acceptable and common for this unit — do not exclude it (unlike other JEE Main units, pure recall is a legitimate archetype here)."
+      ],
+      "out_of_scope": [
+        "Any experiment not among the 18 standard NCERT-listed experiments for this unit"
+      ]
+    }
+  }
+}

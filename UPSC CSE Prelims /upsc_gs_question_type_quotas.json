@@ -1,0 +1,969 @@
+{
+  "subject": "General Studies (Paper I)",
+  "exam": "UPSC CSE Prelims 2027",
+  "purpose": "Per-topic target quotas for building a question BANK/dataset, not a simulation of a single year's paper. Multiply/scale as needed.",
+  "difficulty_note": "Unlike JEE Advanced, UPSC Prelims regularly tests straightforward recall, so 'easy' quotas are retained alongside medium/hard.",
+  "question_type_note": "UPSC has no numeric/integer-answer type; 'statement_based' covers 2-statement and 3+-statement 'how many are correct' formats; 'match_the_following' covers List-I/List-II pairing; 'assertion_reason' is a lower-frequency but recurring UPSC format.",
+  "topics": {
+    "U01": {
+      "category": "History",
+      "advanced_relevance": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "direct_factual": {
+          "easy": 4,
+          "medium": 3,
+          "hard": 2,
+          "total": 9
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 2,
+          "total": 4
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        }
+      },
+      "topic_total_quota": 15
+    },
+    "U02": {
+      "category": "History",
+      "advanced_relevance": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "direct_factual": {
+          "easy": 4,
+          "medium": 3,
+          "hard": 2,
+          "total": 9
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 2,
+          "total": 4
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        }
+      },
+      "topic_total_quota": 15
+    },
+    "U03": {
+      "category": "History",
+      "advanced_relevance": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "direct_factual": {
+          "easy": 5,
+          "medium": 4,
+          "hard": 3,
+          "total": 12
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 3,
+          "hard": 3,
+          "total": 6
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 1,
+          "total": 3
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 1,
+          "total": 2
+        }
+      },
+      "topic_total_quota": 23
+    },
+    "U04": {
+      "category": "History",
+      "advanced_relevance": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "direct_factual": {
+          "easy": 4,
+          "medium": 3,
+          "hard": 2,
+          "total": 9
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 2,
+          "total": 4
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        }
+      },
+      "topic_total_quota": 15
+    },
+    "U05": {
+      "category": "History",
+      "advanced_relevance": "low",
+      "quota_weight": 1,
+      "question_types": {
+        "direct_factual": {
+          "easy": 3,
+          "medium": 2,
+          "hard": 1,
+          "total": 6
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 1,
+          "total": 2
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 0,
+          "hard": 0,
+          "total": 0
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 0,
+          "hard": 0,
+          "total": 0
+        }
+      },
+      "topic_total_quota": 8
+    },
+    "U06": {
+      "category": "History",
+      "advanced_relevance": "low",
+      "quota_weight": 1,
+      "question_types": {
+        "direct_factual": {
+          "easy": 3,
+          "medium": 2,
+          "hard": 1,
+          "total": 6
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 1,
+          "total": 2
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 0,
+          "hard": 0,
+          "total": 0
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 0,
+          "hard": 0,
+          "total": 0
+        }
+      },
+      "topic_total_quota": 8
+    },
+    "U07": {
+      "category": "Polity",
+      "advanced_relevance": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "direct_factual": {
+          "easy": 5,
+          "medium": 4,
+          "hard": 3,
+          "total": 12
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 3,
+          "hard": 3,
+          "total": 6
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 1,
+          "total": 3
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 1,
+          "total": 2
+        }
+      },
+      "topic_total_quota": 23
+    },
+    "U08": {
+      "category": "Polity",
+      "advanced_relevance": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "direct_factual": {
+          "easy": 5,
+          "medium": 4,
+          "hard": 3,
+          "total": 12
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 3,
+          "hard": 3,
+          "total": 6
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 1,
+          "total": 3
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 1,
+          "total": 2
+        }
+      },
+      "topic_total_quota": 23
+    },
+    "U09": {
+      "category": "Polity",
+      "advanced_relevance": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "direct_factual": {
+          "easy": 5,
+          "medium": 4,
+          "hard": 3,
+          "total": 12
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 3,
+          "hard": 3,
+          "total": 6
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 1,
+          "total": 3
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 1,
+          "total": 2
+        }
+      },
+      "topic_total_quota": 23
+    },
+    "U10": {
+      "category": "Polity",
+      "advanced_relevance": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "direct_factual": {
+          "easy": 4,
+          "medium": 3,
+          "hard": 2,
+          "total": 9
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 2,
+          "total": 4
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        }
+      },
+      "topic_total_quota": 15
+    },
+    "U11": {
+      "category": "Polity",
+      "advanced_relevance": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "direct_factual": {
+          "easy": 5,
+          "medium": 4,
+          "hard": 3,
+          "total": 12
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 3,
+          "hard": 3,
+          "total": 6
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 1,
+          "total": 3
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 1,
+          "total": 2
+        }
+      },
+      "topic_total_quota": 23
+    },
+    "U12": {
+      "category": "Geography",
+      "advanced_relevance": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "direct_factual": {
+          "easy": 4,
+          "medium": 3,
+          "hard": 2,
+          "total": 9
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 2,
+          "total": 4
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        }
+      },
+      "topic_total_quota": 15
+    },
+    "U13": {
+      "category": "Geography",
+      "advanced_relevance": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "direct_factual": {
+          "easy": 5,
+          "medium": 4,
+          "hard": 3,
+          "total": 12
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 3,
+          "hard": 3,
+          "total": 6
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 1,
+          "total": 3
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 1,
+          "total": 2
+        }
+      },
+      "topic_total_quota": 23
+    },
+    "U14": {
+      "category": "Geography",
+      "advanced_relevance": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "direct_factual": {
+          "easy": 4,
+          "medium": 3,
+          "hard": 2,
+          "total": 9
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 2,
+          "total": 4
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        }
+      },
+      "topic_total_quota": 15
+    },
+    "U15": {
+      "category": "Geography",
+      "advanced_relevance": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "direct_factual": {
+          "easy": 4,
+          "medium": 3,
+          "hard": 2,
+          "total": 9
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 2,
+          "total": 4
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        }
+      },
+      "topic_total_quota": 15
+    },
+    "U16": {
+      "category": "Geography",
+      "advanced_relevance": "low",
+      "quota_weight": 1,
+      "question_types": {
+        "direct_factual": {
+          "easy": 3,
+          "medium": 2,
+          "hard": 1,
+          "total": 6
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 1,
+          "total": 2
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 0,
+          "hard": 0,
+          "total": 0
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 0,
+          "hard": 0,
+          "total": 0
+        }
+      },
+      "topic_total_quota": 8
+    },
+    "U17": {
+      "category": "Economy",
+      "advanced_relevance": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "direct_factual": {
+          "easy": 5,
+          "medium": 4,
+          "hard": 3,
+          "total": 12
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 3,
+          "hard": 3,
+          "total": 6
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 1,
+          "total": 3
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 1,
+          "total": 2
+        }
+      },
+      "topic_total_quota": 23
+    },
+    "U18": {
+      "category": "Economy",
+      "advanced_relevance": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "direct_factual": {
+          "easy": 5,
+          "medium": 4,
+          "hard": 3,
+          "total": 12
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 3,
+          "hard": 3,
+          "total": 6
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 1,
+          "total": 3
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 1,
+          "total": 2
+        }
+      },
+      "topic_total_quota": 23
+    },
+    "U19": {
+      "category": "Economy",
+      "advanced_relevance": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "direct_factual": {
+          "easy": 4,
+          "medium": 3,
+          "hard": 2,
+          "total": 9
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 2,
+          "total": 4
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        }
+      },
+      "topic_total_quota": 15
+    },
+    "U20": {
+      "category": "Economy",
+      "advanced_relevance": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "direct_factual": {
+          "easy": 5,
+          "medium": 4,
+          "hard": 3,
+          "total": 12
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 3,
+          "hard": 3,
+          "total": 6
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 1,
+          "total": 3
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 1,
+          "total": 2
+        }
+      },
+      "topic_total_quota": 23
+    },
+    "U21": {
+      "category": "Environment",
+      "advanced_relevance": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "direct_factual": {
+          "easy": 5,
+          "medium": 4,
+          "hard": 3,
+          "total": 12
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 3,
+          "hard": 3,
+          "total": 6
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 1,
+          "total": 3
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 1,
+          "total": 2
+        }
+      },
+      "topic_total_quota": 23
+    },
+    "U22": {
+      "category": "Environment",
+      "advanced_relevance": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "direct_factual": {
+          "easy": 5,
+          "medium": 4,
+          "hard": 3,
+          "total": 12
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 3,
+          "hard": 3,
+          "total": 6
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 1,
+          "total": 3
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 1,
+          "total": 2
+        }
+      },
+      "topic_total_quota": 23
+    },
+    "U23": {
+      "category": "Environment",
+      "advanced_relevance": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "direct_factual": {
+          "easy": 4,
+          "medium": 3,
+          "hard": 2,
+          "total": 9
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 2,
+          "total": 4
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        }
+      },
+      "topic_total_quota": 15
+    },
+    "U24": {
+      "category": "Science",
+      "advanced_relevance": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "direct_factual": {
+          "easy": 4,
+          "medium": 3,
+          "hard": 2,
+          "total": 9
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 2,
+          "total": 4
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        }
+      },
+      "topic_total_quota": 15
+    },
+    "U25": {
+      "category": "Science",
+      "advanced_relevance": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "direct_factual": {
+          "easy": 4,
+          "medium": 3,
+          "hard": 2,
+          "total": 9
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 2,
+          "total": 4
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        }
+      },
+      "topic_total_quota": 15
+    },
+    "U26": {
+      "category": "Science",
+      "advanced_relevance": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "direct_factual": {
+          "easy": 5,
+          "medium": 4,
+          "hard": 3,
+          "total": 12
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 3,
+          "hard": 3,
+          "total": 6
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 1,
+          "total": 3
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 1,
+          "total": 2
+        }
+      },
+      "topic_total_quota": 23
+    },
+    "U27": {
+      "category": "Science",
+      "advanced_relevance": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "direct_factual": {
+          "easy": 5,
+          "medium": 4,
+          "hard": 3,
+          "total": 12
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 3,
+          "hard": 3,
+          "total": 6
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 1,
+          "total": 3
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 1,
+          "total": 2
+        }
+      },
+      "topic_total_quota": 23
+    },
+    "U28": {
+      "category": "Current Affairs",
+      "advanced_relevance": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "direct_factual": {
+          "easy": 5,
+          "medium": 4,
+          "hard": 3,
+          "total": 12
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 3,
+          "hard": 3,
+          "total": 6
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 1,
+          "total": 3
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 1,
+          "total": 2
+        }
+      },
+      "topic_total_quota": 23
+    },
+    "U29": {
+      "category": "Current Affairs",
+      "advanced_relevance": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "direct_factual": {
+          "easy": 5,
+          "medium": 4,
+          "hard": 3,
+          "total": 12
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 3,
+          "hard": 3,
+          "total": 6
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 1,
+          "total": 3
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 1,
+          "total": 2
+        }
+      },
+      "topic_total_quota": 23
+    },
+    "U30": {
+      "category": "Current Affairs",
+      "advanced_relevance": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "direct_factual": {
+          "easy": 4,
+          "medium": 3,
+          "hard": 2,
+          "total": 9
+        },
+        "statement_based": {
+          "easy": 0,
+          "medium": 2,
+          "hard": 2,
+          "total": 4
+        },
+        "match_the_following": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        },
+        "assertion_reason": {
+          "easy": 0,
+          "medium": 1,
+          "hard": 0,
+          "total": 1
+        }
+      },
+      "topic_total_quota": 15
+    }
+  }
+}

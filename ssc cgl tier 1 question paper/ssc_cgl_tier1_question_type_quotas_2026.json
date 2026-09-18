@@ -1,0 +1,70 @@
+{
+  "exam": "SSC CGL Tier 1 2026",
+  "purpose": "Per-topic target quotas for building a question BANK/dataset, not a simulation of a single year's paper. Multiply/scale as needed. Mirrors the structure of the JEE Main / GMAT / CLAT / IBPS PO quotas files so banks across exams can be planned/compared side by side.",
+  "question_type_note": "SSC CGL Tier 1 uses only ONE question format across all four sections: 5-option single-correct MCQ. Every item is standalone (no multi-question passages except within English Comprehension's short Reading Comprehension sub-topic and the DI sub-topic in Quant); there is no numerical-value entry and no multiple-correct format.",
+  "difficulty_note": "SSC does not publish official difficulty tags. Coaching-tracker consensus places non-verbal reasoning, geometry/trigonometry-heavy Quant items, and multi-step commercial-arithmetic items as the harder end, while Analogy/Classification/Series in Reasoning and static-fact General Awareness items skew easier. Tiers below (easy/medium/hard) are seeding targets, not official classifications.",
+  "sections": {
+    "GIR": {
+      "section_name": "General Intelligence and Reasoning",
+      "num_questions_live_exam": 25,
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "topics": {
+        "GIR01": { "topic": "Analogy and Classification", "question_types": { "mcq_standalone": { "easy": 2, "medium": 2, "hard": 1, "total": 5 } }, "topic_total_quota": 5 },
+        "GIR02": { "topic": "Series", "question_types": { "mcq_standalone": { "easy": 2, "medium": 2, "hard": 1, "total": 5 } }, "topic_total_quota": 5 },
+        "GIR03": { "topic": "Coding-Decoding and Operations", "question_types": { "mcq_standalone": { "easy": 1, "medium": 2, "hard": 1, "total": 4 } }, "topic_total_quota": 4 },
+        "GIR04": { "topic": "Logical/Statement-Based Reasoning", "question_types": { "mcq_standalone": { "easy": 1, "medium": 2, "hard": 1, "total": 4 } }, "topic_total_quota": 4 },
+        "GIR05": { "topic": "Relationship and Arithmetical Reasoning", "question_types": { "mcq_standalone": { "easy": 1, "medium": 1, "hard": 1, "total": 3 } }, "topic_total_quota": 3 },
+        "GIR06": { "topic": "Spatial and Non-Verbal Reasoning", "question_types": { "mcq_standalone": { "easy": 0, "medium": 2, "hard": 1, "total": 3 } }, "topic_total_quota": 3, "notes": "Non-verbal/spatial items are reported as one of the harder sub-areas in this section." },
+        "GIR07": { "topic": "Other Intelligence Skills", "question_types": { "mcq_standalone": { "easy": 1, "medium": 0, "hard": 0, "total": 1 } }, "topic_total_quota": 1 }
+      },
+      "section_total_quota": 25
+    },
+    "GA": {
+      "section_name": "General Awareness",
+      "num_questions_live_exam": 25,
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "topics": {
+        "GA01": { "topic": "History and Culture", "question_types": { "mcq_standalone": { "easy": 2, "medium": 2, "hard": 1, "total": 5 } }, "topic_total_quota": 5 },
+        "GA02": { "topic": "Geography", "question_types": { "mcq_standalone": { "easy": 2, "medium": 1, "hard": 0, "total": 3 } }, "topic_total_quota": 3 },
+        "GA03": { "topic": "Polity and Economy", "question_types": { "mcq_standalone": { "easy": 2, "medium": 2, "hard": 1, "total": 5 } }, "topic_total_quota": 5 },
+        "GA04": { "topic": "Science and Technology", "question_types": { "mcq_standalone": { "easy": 2, "medium": 2, "hard": 1, "total": 5 } }, "topic_total_quota": 5 },
+        "GA05": { "topic": "Current Affairs and Static GK", "question_types": { "mcq_standalone": { "easy": 3, "medium": 3, "hard": 1, "total": 7 } }, "topic_total_quota": 7, "notes": "Reported as consistently the single largest sub-area within General Awareness across recent cycles." }
+      },
+      "section_total_quota": 25
+    },
+    "QA": {
+      "section_name": "Quantitative Aptitude",
+      "num_questions_live_exam": 25,
+      "relevance_tier": "very_high",
+      "quota_weight": 4,
+      "topics": {
+        "QA01": { "topic": "Number Systems and Basic Arithmetic", "question_types": { "mcq_standalone": { "easy": 2, "medium": 2, "hard": 0, "total": 4 } }, "topic_total_quota": 4 },
+        "QA02": { "topic": "Commercial Arithmetic", "question_types": { "mcq_standalone": { "easy": 1, "medium": 2, "hard": 1, "total": 4 } }, "topic_total_quota": 4 },
+        "QA03": { "topic": "Time, Speed, Distance and Work", "question_types": { "mcq_standalone": { "easy": 1, "medium": 1, "hard": 1, "total": 3 } }, "topic_total_quota": 3 },
+        "QA04": { "topic": "Basic Algebra", "question_types": { "mcq_standalone": { "easy": 1, "medium": 1, "hard": 0, "total": 2 } }, "topic_total_quota": 2 },
+        "QA05": { "topic": "Geometry", "question_types": { "mcq_standalone": { "easy": 1, "medium": 2, "hard": 1, "total": 4 } }, "topic_total_quota": 4 },
+        "QA06": { "topic": "Mensuration", "question_types": { "mcq_standalone": { "easy": 1, "medium": 1, "hard": 1, "total": 3 } }, "topic_total_quota": 3 },
+        "QA07": { "topic": "Trigonometry", "question_types": { "mcq_standalone": { "easy": 0, "medium": 2, "hard": 1, "total": 3 } }, "topic_total_quota": 3 },
+        "QA08": { "topic": "Data Interpretation", "question_types": { "mcq_caselet_based": { "easy": 1, "medium": 1, "hard": 0, "total": 2 } }, "topic_total_quota": 2 }
+      },
+      "section_total_quota": 25
+    },
+    "ENG": {
+      "section_name": "English Comprehension",
+      "num_questions_live_exam": 25,
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "topics": {
+        "ENG01": { "topic": "Reading Comprehension", "question_types": { "mcq_passage_based": { "easy": 2, "medium": 3, "hard": 1, "total": 6 } }, "topic_total_quota": 6 },
+        "ENG02": { "topic": "Vocabulary", "question_types": { "mcq_standalone": { "easy": 2, "medium": 2, "hard": 1, "total": 5 } }, "topic_total_quota": 5 },
+        "ENG03": { "topic": "Grammar", "question_types": { "mcq_standalone": { "easy": 2, "medium": 3, "hard": 1, "total": 6 } }, "topic_total_quota": 6 },
+        "ENG04": { "topic": "Cloze Test", "question_types": { "mcq_passage_based": { "easy": 1, "medium": 2, "hard": 1, "total": 4 } }, "topic_total_quota": 4 },
+        "ENG05": { "topic": "Sentence-Level Skills", "question_types": { "mcq_standalone": { "easy": 1, "medium": 2, "hard": 1, "total": 4 } }, "topic_total_quota": 4 }
+      },
+      "section_total_quota": 25
+    }
+  },
+  "bank_total_quota_at_this_scale": 100
+}

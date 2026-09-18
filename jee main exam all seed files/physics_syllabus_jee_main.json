@@ -1,0 +1,264 @@
+{
+  "subject": "Physics",
+  "exam": "JEE Main 2026",
+  "source_note": "Compiled from the NTA JEE Main 2026 Information Bulletin / official syllabus (Section A: Units 1-19 theory, Section B: Unit 20 Experimental Skills) as reported by multiple 2025-2026 coaching/exam-tracker sources, cross-checked Sep 2026. Communication Systems was removed from the syllabus in the 2024-25 rationalisation and no longer appears as a unit. Always verify against the current-year NTA information bulletin (jeemain.nta.nic.in) before finalising a question bank, since NTA can revise the syllabus PDF between sessions.",
+  "exam_pattern_note": "JEE Main Paper 1 Physics: 25 questions total (Section A: 20 single-correct MCQs, Section B: 5 numerical-value questions, all 25 compulsory since the 2025 pattern change removed the earlier 'attempt any 5 of 10' choice in Section B). No multiple-correct or matrix-match question types appear in JEE Main (those are JEE-Advanced-only formats).",
+  "topics": [
+    {
+      "topic_id": "M01",
+      "chapter": "Physics and Measurement",
+      "class_level": "11",
+      "subtopics": [
+        "SI units, fundamental and derived units, dimensional formulae",
+        "Dimensional analysis and its applications (checking equations, deriving relations)",
+        "Errors in measurement: absolute, relative, percentage error; error propagation in sums, differences, products, quotients",
+        "Significant figures and rounding rules"
+      ],
+      "syllabus_change_note": "2025 rationalisation dropped 'physics, technology and society' and a standalone line on accuracy/precision of instruments as separately examinable; core dimensional-analysis and error-propagation content is unchanged."
+    },
+    {
+      "topic_id": "M02",
+      "chapter": "Kinematics",
+      "class_level": "11",
+      "subtopics": [
+        "Motion in a straight line: position-time and velocity-time graphs",
+        "Motion in a plane, projectile motion",
+        "Uniform circular motion",
+        "Relative velocity in one and two dimensions"
+      ]
+    },
+    {
+      "topic_id": "M03",
+      "chapter": "Laws of Motion",
+      "class_level": "11",
+      "subtopics": [
+        "Newton's three laws of motion and their applications",
+        "Law of conservation of linear momentum and its applications",
+        "Equilibrium of concurrent forces",
+        "Static and kinetic friction, laws of friction, rolling friction (qualitative)",
+        "Dynamics of uniform circular motion: centripetal force, banking of roads"
+      ]
+    },
+    {
+      "topic_id": "M04",
+      "chapter": "Work, Energy and Power",
+      "class_level": "11",
+      "subtopics": [
+        "Work done by a constant and a variable force",
+        "Work-energy theorem, kinetic and potential energy",
+        "Conservative forces, conservation of mechanical energy",
+        "Elastic and inelastic collisions in one and two dimensions",
+        "Power, definitions and units"
+      ]
+    },
+    {
+      "topic_id": "M05",
+      "chapter": "Rotational Motion",
+      "class_level": "11",
+      "subtopics": [
+        "Centre of mass of a system of particles, motion of the centre of mass",
+        "Moment of inertia, radius of gyration",
+        "Parallel and perpendicular axes theorems (for simple, symmetric bodies only)",
+        "Moment of inertia of a uniform ring, disc, thin rod, sphere and cylinder (standard results)",
+        "Angular momentum, torque, conservation of angular momentum",
+        "Equilibrium of rigid bodies, rolling motion"
+      ]
+    },
+    {
+      "topic_id": "M06",
+      "chapter": "Gravitation",
+      "class_level": "11",
+      "subtopics": [
+        "Universal law of gravitation",
+        "Acceleration due to gravity and its variation with altitude and depth",
+        "Kepler's laws of planetary motion",
+        "Gravitational potential energy, gravitational potential, escape velocity",
+        "Orbital velocity of a satellite"
+      ],
+      "syllabus_change_note": "2025 rationalisation dropped the standalone 'geostationary satellites' bullet; general orbital-velocity and satellite-motion content remains examinable."
+    },
+    {
+      "topic_id": "M07",
+      "chapter": "Properties of Solids and Liquids",
+      "class_level": "11",
+      "subtopics": [
+        "Elastic behaviour of materials, stress-strain relationship, Hooke's law",
+        "Young's modulus, bulk modulus, modulus of rigidity",
+        "Pressure in a fluid, Pascal's law, buoyancy",
+        "Surface energy and surface tension, angle of contact, drops, bubbles, capillary rise",
+        "Viscosity, Stokes' law, terminal velocity",
+        "Streamline flow, equation of continuity, Bernoulli's theorem and its applications"
+      ],
+      "syllabus_change_note": "2025 rationalisation dropped 'Reynolds number' and 'Newton's law of cooling' from this unit as separately examinable line items."
+    },
+    {
+      "topic_id": "M08",
+      "chapter": "Thermodynamics",
+      "class_level": "11",
+      "subtopics": [
+        "Thermal equilibrium and the zeroth law of thermodynamics",
+        "Heat, work and internal energy, first law of thermodynamics",
+        "Specific heat capacity, Cv and Cp for an ideal gas",
+        "Isothermal and adiabatic processes",
+        "Second law of thermodynamics, reversible and irreversible processes"
+      ],
+      "syllabus_change_note": "2025 rationalisation dropped 'Carnot engine and its efficiency' as a directly examinable derivation-heavy sub-item; the qualitative second-law content remains."
+    },
+    {
+      "topic_id": "M09",
+      "chapter": "Kinetic Theory of Gases",
+      "class_level": "11",
+      "subtopics": [
+        "Equation of state of a perfect gas, work done in compressing a gas",
+        "Kinetic theory assumptions, concept of pressure",
+        "Kinetic interpretation of temperature, rms speed of gas molecules",
+        "Degrees of freedom, law of equipartition of energy, applications to specific heats",
+        "Mean free path, Avogadro's number"
+      ]
+    },
+    {
+      "topic_id": "M10",
+      "chapter": "Oscillations and Waves",
+      "class_level": "11",
+      "subtopics": [
+        "Periodic motion, simple harmonic motion (SHM) and its equation",
+        "Simple pendulum, spring-mass system, energy in SHM",
+        "Wave motion: longitudinal and transverse waves, speed of a travelling wave",
+        "Superposition of waves, progressive and standing waves",
+        "Vibration of strings and air columns, resonance tube, beats"
+      ],
+      "syllabus_change_note": "2025 rationalisation dropped standalone treatment of forced/damped oscillations, mechanical resonance as a separate derivation, and the Doppler effect in sound; basic SHM, standing waves and beats remain."
+    },
+    {
+      "topic_id": "M11",
+      "chapter": "Electrostatics",
+      "class_level": "12",
+      "subtopics": [
+        "Coulomb's law, electric field, field lines, electric dipole and dipole field",
+        "Torque on a dipole in a uniform electric field",
+        "Electric flux, Gauss's law and its applications (infinite line/sheet, spherical shell)",
+        "Electric potential, potential due to a point charge and a dipole, equipotential surfaces",
+        "Capacitance, parallel-plate capacitor with and without a dielectric",
+        "Capacitors in series and parallel, energy stored in a capacitor"
+      ]
+    },
+    {
+      "topic_id": "M12",
+      "chapter": "Current Electricity",
+      "class_level": "12",
+      "subtopics": [
+        "Electric current, drift velocity, Ohm's law",
+        "Resistance, resistivity and their temperature dependence",
+        "Series and parallel combinations of resistors and of cells",
+        "Kirchhoff's laws and simple applications (Wheatstone bridge, meter bridge)",
+        "Potentiometer: principle and applications",
+        "Heating effects of current, electrical power"
+      ]
+    },
+    {
+      "topic_id": "M13",
+      "chapter": "Magnetic Effects of Current and Magnetism",
+      "class_level": "12",
+      "subtopics": [
+        "Biot-Savart law and Ampere's law, applications to a straight wire, loop and solenoid",
+        "Force on a moving charge and on a current-carrying conductor in a magnetic field",
+        "Torque on a current loop, moving coil galvanometer and its conversion to an ammeter/voltmeter",
+        "Magnetic dipole moment of a current loop",
+        "Bar magnet as an equivalent solenoid, qualitative magnetic properties of materials"
+      ]
+    },
+    {
+      "topic_id": "M14",
+      "chapter": "Electromagnetic Induction and Alternating Currents",
+      "class_level": "12",
+      "subtopics": [
+        "Faraday's laws of electromagnetic induction, Lenz's law",
+        "Self-inductance and mutual inductance",
+        "Alternating currents, peak and rms values",
+        "AC circuit with a series LCR combination, resonance, power factor",
+        "AC generator and transformer (principle and working)"
+      ]
+    },
+    {
+      "topic_id": "M15",
+      "chapter": "Electromagnetic Waves",
+      "class_level": "12",
+      "subtopics": [
+        "Displacement current (qualitative)",
+        "Electromagnetic waves and their characteristics (qualitative), transverse nature",
+        "Electromagnetic spectrum and typical uses of its bands (radio to gamma rays)"
+      ]
+    },
+    {
+      "topic_id": "M16",
+      "chapter": "Optics",
+      "class_level": "12",
+      "subtopics": [
+        "Reflection and refraction at plane and spherical surfaces, mirror and lens formulae, total internal reflection",
+        "Thin lens formula, lens maker's formula, power of a lens, combination of thin lenses",
+        "Refraction through a prism, dispersion",
+        "Optical instruments: simple/compound microscope, telescope (magnifying power)",
+        "Wave nature of light, Huygens' principle",
+        "Young's double-slit interference, single-slit diffraction",
+        "Polarisation: plane polarised light, Brewster's law, Polaroids"
+      ],
+      "syllabus_change_note": "JEE Main keeps Ray Optics and Wave Optics as one combined unit, unlike the split used in some other exams."
+    },
+    {
+      "topic_id": "M17",
+      "chapter": "Dual Nature of Matter and Radiation",
+      "class_level": "12",
+      "subtopics": [
+        "Photoelectric effect, Einstein's photoelectric equation",
+        "Particle nature of light: the photon",
+        "Matter waves, de Broglie relation"
+      ]
+    },
+    {
+      "topic_id": "M18",
+      "chapter": "Atoms and Nuclei",
+      "class_level": "12",
+      "subtopics": [
+        "Alpha-particle scattering, Rutherford's model, Bohr model of the atom, energy levels and the hydrogen spectrum",
+        "Composition and size of the nucleus, mass-energy relation, mass defect",
+        "Binding energy per nucleon and its variation with mass number",
+        "Radioactivity: alpha, beta and gamma decay",
+        "Nuclear fission and fusion"
+      ],
+      "syllabus_change_note": "2025 rationalisation trimmed the explicit alpha/beta/gamma decay-equation derivations; qualitative radioactivity and the decay-law numerical remain examinable."
+    },
+    {
+      "topic_id": "M19",
+      "chapter": "Electronic Devices",
+      "class_level": "12",
+      "subtopics": [
+        "Semiconductors, energy bands in solids (qualitative: conductors, insulators, semiconductors)",
+        "p-n junction diode, I-V characteristics in forward and reverse bias",
+        "Diode as a rectifier",
+        "LED, photodiode, solar cell, and Zener diode as a voltage regulator",
+        "Logic gates (OR, AND, NOT, NAND, NOR) and their truth tables"
+      ],
+      "syllabus_change_note": "Not part of the JEE Advanced syllabus at all — this is a JEE-Main-only unit. 2025 rationalisation dropped transistor amplifier/oscillator circuit analysis, keeping only qualitative diode/logic-gate behaviour."
+    },
+    {
+      "topic_id": "M20",
+      "chapter": "Experimental Skills",
+      "class_level": "11-12 (practical)",
+      "subtopics": [
+        "Vernier callipers and screw gauge: least count, use in measuring length/diameter",
+        "Determination of g using a simple pendulum",
+        "Young's modulus by Searle's method",
+        "Surface tension by capillary rise method",
+        "Coefficient of viscosity by measuring terminal velocity of a sphere",
+        "Specific heat of a solid/liquid by the method of mixtures",
+        "Speed of sound in air using a resonance column",
+        "Verification of Ohm's law using a voltmeter and ammeter",
+        "Resistance and resistivity using a metre bridge / post office box",
+        "Focal length of a concave mirror and a convex lens using the u-v method",
+        "Characteristic curves of a p-n junction diode and of a Zener diode",
+        "Using a multimeter to measure resistance, voltage, current and to check the continuity/polarity of a diode"
+      ],
+      "syllabus_change_note": "This is a dedicated 20th syllabus unit in JEE Main (Section B of the syllabus, distinct from Section B of the exam paper which is the numerical-value question block). JEE Advanced folds most of the same experiments into its 'Units, Dimensions, Errors and Experimental Physics' topic rather than listing them as a separate unit."
+    }
+  ]
+}

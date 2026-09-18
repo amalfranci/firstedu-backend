@@ -1,0 +1,26 @@
+{
+  "subject": "Botany",
+  "exam": "NEET UG 2026",
+  "source_note": "Compiled from the NTA/NMC NEET UG 2026 Biology syllabus (officially released 8 Jan 2026, largely unchanged from 2025 with only minor NCERT-aligned sub-topic deletions) as reported by multiple 2025-2026 coaching/exam-tracker sources, cross-checked Sep 2026. NEET's Biology syllabus is not split into separate 'Botany' and 'Zoology' papers by NTA - both are drawn from one 90-question Biology section - but question banks and most coaching trackers conventionally split the 10 official Biology units into a Botany half and a Zoology half, which this file follows (mirrors neet_syllabus_zoology.json). Genetics/Evolution units are split across the two files by convention; verify against the official NTA/NMC syllabus PDF for the exact unit list before finalising a bank.",
+  "exam_pattern_note": "NEET UG Biology: 100 questions printed (Section A: 70 single-correct MCQs compulsory, Section B: 30 single-correct MCQs, attempt any 20 - best 20 scored), split evenly in most banks into 45 Botany-origin and 45 Zoology-origin questions of the 90 scored. Single-correct MCQ format only.",
+  "topics": [
+    { "topic_id": "B01", "chapter": "Diversity in the Living World", "class_level": "11",
+      "subtopics": ["What is living? Biodiversity, need for classification, three domains of life", "Five-kingdom classification, salient features of each kingdom", "Systematics and binomial nomenclature basics", "Salient features and classification of Plantae: Algae, Bryophyta, Pteridophyta, Gymnosperms, Angiosperms"] },
+    { "topic_id": "B02", "chapter": "Structural Organisation in Plants", "class_level": "11",
+      "subtopics": ["Morphology of flowering plants: root, stem, leaf, inflorescence, flower, fruit, seed", "Description of a typical leguminous seed and a monocot/dicot family (descriptive botany)", "Anatomy: tissues and tissue systems of dicots and monocots", "Secondary growth (qualitative)"] },
+    { "topic_id": "B03", "chapter": "Cell Structure and Function", "class_level": "11",
+      "subtopics": ["Cell theory, prokaryotic and eukaryotic cell structure", "Cell wall, cell membrane, cell organelles and their functions", "Biomolecules: carbohydrates, proteins, lipids, nucleic acids (structure and function)", "Cell cycle and cell division: mitosis and meiosis"] },
+    { "topic_id": "B04", "chapter": "Plant Physiology", "class_level": "11",
+      "subtopics": ["Transport in plants: diffusion, osmosis, plant-water relations, long-distance transport", "Mineral nutrition: essential minerals, deficiency symptoms, nitrogen metabolism (basic)", "Photosynthesis: light and dark reactions, C3/C4 pathways, factors affecting rate", "Respiration in plants: glycolysis, Krebs cycle, electron transport, fermentation", "Plant growth and development: growth regulators (auxin, gibberellin, cytokinin, ethylene, ABA)"] },
+    { "topic_id": "B05", "chapter": "Sexual Reproduction in Flowering Plants", "class_level": "12",
+      "subtopics": ["Flower structure, development of male and female gametophytes", "Pollination: types, agencies, outbreeding devices", "Double fertilisation, post-fertilisation events, seed and fruit development", "Apomixis and polyembryony (brief)"] },
+    { "topic_id": "B06", "chapter": "Molecular Basis of Inheritance", "class_level": "12",
+      "subtopics": ["DNA structure and packaging, DNA replication", "Central dogma, transcription, genetic code, translation", "Gene regulation: the lac operon", "Human genome project and DNA fingerprinting (basic concepts)"] },
+    { "topic_id": "B07", "chapter": "Microbes in Human Welfare", "class_level": "12",
+      "subtopics": ["Microbes in household products and industrial production", "Microbes in sewage treatment and biogas production", "Microbes as biocontrol agents and biofertilisers"] },
+    { "topic_id": "B08", "chapter": "Biotechnology: Principles, Processes and Applications", "class_level": "12",
+      "subtopics": ["Principles of genetic engineering: restriction enzymes, cloning vectors, competent host", "Tools and processes: PCR, gel electrophoresis, downstream processing", "Applications in agriculture (Bt crops), medicine (insulin, gene therapy) and transgenic organisms", "Biosafety issues, biopiracy and patents (basic awareness)"] },
+    { "topic_id": "B09", "chapter": "Ecology (Plant/Ecosystem-oriented units)", "class_level": "12",
+      "subtopics": ["Organisms and populations: population interactions, population growth, attributes", "Ecosystem: structure, function, energy flow, ecological pyramids, nutrient cycling", "Biodiversity and conservation: patterns, loss, conservation strategies", "Environmental issues (qualitative, trimmed in 2024-25 rationalisation)"] }
+  ]
+}

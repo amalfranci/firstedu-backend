@@ -1,0 +1,28 @@
+{
+  "subject": "Verbal Ability and Reading Comprehension (VARC)",
+  "exam": "CAT 2026",
+  "purpose": "Per-topic target quotas for building a question BANK/dataset, not a simulation of a single session's paper. Multiply/scale as needed. Mirrors the structure used for the NEET/JEE quota files so banks can be planned/compared side by side.",
+  "question_type_note": "CAT VARC mixes single-correct MCQ (typically 4-5 options) and TITA (type-in-the-answer, no options). RC is almost entirely MCQ; Verbal Ability sub-types (para jumbles, para summary, odd sentence out, para completion/insertion) are a mix of both formats and vary by year - a bank should stock both formats for each VA topic.",
+  "difficulty_note": "CAT has no 'easy' tier in the JEE-Main sense - even 'easy' CAT questions require careful reading under time pressure. Difficulty here reflects relative ease within the CAT distribution, skewed toward medium/hard versus a school-level exam.",
+  "topics": {
+    "V01": { "area": "Reading Comprehension (RC)", "relevance_tier": "very_high", "quota_weight": 5,
+      "question_types": {
+        "mcq_single": { "easy": 8, "medium": 14, "hard": 10, "total": 32 }
+      }, "topic_total_quota": 32 },
+    "V02": { "area": "Para Jumbles", "relevance_tier": "high", "quota_weight": 3,
+      "question_types": {
+        "tita": { "easy": 3, "medium": 5, "hard": 4, "total": 12 },
+        "mcq_single": { "easy": 1, "medium": 2, "hard": 1, "total": 4 }
+      }, "topic_total_quota": 16 },
+    "V03": { "area": "Para Summary", "relevance_tier": "high", "quota_weight": 3,
+      "question_types": {
+        "mcq_single": { "easy": 4, "medium": 6, "hard": 3, "total": 13 },
+        "tita": { "easy": 1, "medium": 2, "hard": 1, "total": 4 }
+      }, "topic_total_quota": 17 },
+    "V04": { "area": "Odd Sentence Out / Para Completion / Para Insertion", "relevance_tier": "medium", "quota_weight": 2,
+      "question_types": {
+        "mcq_single": { "easy": 2, "medium": 4, "hard": 3, "total": 9 },
+        "tita": { "easy": 1, "medium": 2, "hard": 2, "total": 5 }
+      }, "topic_total_quota": 14 }
+  }
+}

@@ -17,6 +17,24 @@ const normalizeSubject = (value = "") => {
   if (/^math/i.test(key)) return "Mathematics";
   if (/^phys/i.test(key)) return "Physics";
   if (/^chem/i.test(key)) return "Chemistry";
+  if (/^bot/i.test(key)) return "Botany";
+  if (/^zoo/i.test(key)) return "Zoology";
+  if (/^bio/i.test(key)) return "Biology";
+  if (/^varc$/i.test(key) || /verbal ability.*reading comprehension/i.test(key))
+    return "VARC";
+  if (
+    /^dilr$/i.test(key) ||
+    /data interpretation and logical reasoning/i.test(key)
+  ) {
+    return "DILR";
+  }
+  if (
+    /^qa$/i.test(key) ||
+    /^quantitative ability$/i.test(key) ||
+    /^quantitative aptitude\s*\(\s*qa\s*\)$/i.test(key)
+  ) {
+    return "QA";
+  }
   return key;
 };
 
@@ -31,7 +49,11 @@ export const mapPackTopicToGenerationShape = (topic = {}) => {
         advanced_relevance: relevance,
         relevance,
         jee_main_freq_band: topic.scoring.freqBand || null,
+        neet_freq_band: topic.scoring.freqBand || null,
+        cat_freq_band: topic.scoring.freqBand || null,
         avg_q_per_session_jee_main: topic.scoring.avgQPerSession || null,
+        avg_q_per_session_neet: topic.scoring.avgQPerSession || null,
+        avg_q_per_slot: topic.scoring.avgQPerSession || null,
         difficulty_split: topic.scoring.difficultySplit
           ? {
               easy: topic.scoring.difficultySplit.easy,
@@ -68,9 +90,25 @@ export const findExamSyllabusPack = async ({
   const subj = normalizeSubject(subject);
   if (!exam || !subj) return null;
 
+  const aliases = [subj];
+  if (subj === "QA") {
+    aliases.push(
+      "Qa",
+      "Quantitative Ability",
+      "Quantitative Aptitude (QA)",
+      "Quantitative Aptitude"
+    );
+  }
+  if (subj === "VARC") {
+    aliases.push("Varc", "Verbal Ability and Reading Comprehension");
+  }
+  if (subj === "DILR") {
+    aliases.push("Dilr", "Data Interpretation and Logical Reasoning");
+  }
+
   const query = {
     examType: exam,
-    subject: subj,
+    subject: { $in: [...new Set(aliases)] },
     year: Number(year) || 2026,
     isActive: true,
   };
@@ -78,11 +116,13 @@ export const findExamSyllabusPack = async ({
     query.paper = String(paper).trim();
   }
 
-  let doc = await ExamSyllabusPack.findOne(query).lean();
+  let doc = await ExamSyllabusPack.findOne(query)
+    .sort({ topicCount: -1, updatedAt: -1 })
+    .lean();
   if (!doc && query.paper != null) {
     const { paper: _p, ...withoutPaper } = query;
     doc = await ExamSyllabusPack.findOne(withoutPaper)
-      .sort({ updatedAt: -1 })
+      .sort({ topicCount: -1, updatedAt: -1 })
       .lean();
   }
   return doc;

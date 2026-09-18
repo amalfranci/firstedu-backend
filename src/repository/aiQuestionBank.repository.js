@@ -90,6 +90,14 @@ const findDuplicateName = async (name, createdBy, excludeId = null) => {
   return AiQuestionBank.findOne(query).select("_id name").lean();
 };
 
+const findByGenerationId = async (generationId) => {
+  const id = String(generationId || "").trim();
+  if (!id) return null;
+  return AiQuestionBank.findOne({ generationId: id })
+    .select("_id name generationId")
+    .lean();
+};
+
 const create = async (data, session = null) => {
   try {
     const docs = await AiQuestionBank.create([data], session ? { session } : undefined);
@@ -259,4 +267,5 @@ export default {
   deleteQuestionsByBankId,
   getBanksStatsBatch,
   findDuplicateName,
+  findByGenerationId,
 };

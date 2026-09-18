@@ -1,0 +1,180 @@
+{
+  "subject": "Physics",
+  "exam_context": "NEET UG 2026 - Physics section only, 50 questions printed (35 compulsory + 15 choice-of-10) / 45 scored questions / 180 marks",
+  "data_provenance": "Estimated from PYQ-trend analysis and chapter-wise-weightage trackers aggregated across 2025 and 2026 NEET sessions (including the 21 June 2026 Re-NEET UG), not official NTA data; last grounded Sep 2026. Individual-session weightage varies, treat as multi-session averages for question-bank planning, not a guarantee of any single paper's composition.",
+  "topics": {
+    "P01": {
+      "chapter": "Physical World and Measurement",
+      "neet_freq_band": "low",
+      "avg_q_per_session_neet": "1",
+      "approx_weightage_pct": "2",
+      "difficulty_split": { "easy": 55, "medium": 35, "hard": 10 },
+      "notes": "Short, direct recall/formula unit; rarely more than 1 question."
+    },
+    "P02": {
+      "chapter": "Kinematics",
+      "neet_freq_band": "high",
+      "avg_q_per_session_neet": "2-3",
+      "approx_weightage_pct": "6",
+      "difficulty_split": { "easy": 45, "medium": 38, "hard": 17 },
+      "notes": "One of the top-ranked Class 11 chapters by trend trackers; projectile-motion and relative-velocity numericals recur."
+    },
+    "P03": {
+      "chapter": "Laws of Motion",
+      "neet_freq_band": "high",
+      "avg_q_per_session_neet": "2",
+      "approx_weightage_pct": "7 (combined with Work, Energy, Power and Rotational Motion in some trackers)",
+      "difficulty_split": { "easy": 40, "medium": 38, "hard": 22 },
+      "notes": "Friction and circular-motion (banking of roads) problems are a recurring archetype."
+    },
+    "P04": {
+      "chapter": "Work, Energy and Power",
+      "neet_freq_band": "medium-high",
+      "avg_q_per_session_neet": "1-2",
+      "approx_weightage_pct": "3-4",
+      "difficulty_split": { "easy": 45, "medium": 38, "hard": 17 },
+      "notes": "Collision numericals are a recurring, formula-driven favourite."
+    },
+    "P05": {
+      "chapter": "Motion of System of Particles and Rigid Body",
+      "neet_freq_band": "medium",
+      "avg_q_per_session_neet": "1-2",
+      "approx_weightage_pct": "3-4",
+      "difficulty_split": { "easy": 40, "medium": 40, "hard": 20 },
+      "notes": "Grouped with Mechanics as a high-weightage bloc; moment-of-inertia numericals recur."
+    },
+    "P06": {
+      "chapter": "Gravitation",
+      "neet_freq_band": "low-medium",
+      "avg_q_per_session_neet": "1",
+      "approx_weightage_pct": "2-3",
+      "difficulty_split": { "easy": 50, "medium": 35, "hard": 15 },
+      "notes": "Escape velocity / orbital velocity numericals are the most common archetype."
+    },
+    "P07": {
+      "chapter": "Properties of Bulk Matter",
+      "neet_freq_band": "medium",
+      "avg_q_per_session_neet": "2",
+      "approx_weightage_pct": "4",
+      "difficulty_split": { "easy": 48, "medium": 37, "hard": 15 },
+      "notes": "Broad unit spanning elasticity, fluids and thermal properties; usually 1 question each from 2-3 sub-areas."
+    },
+    "P08": {
+      "chapter": "Thermodynamics",
+      "neet_freq_band": "medium",
+      "avg_q_per_session_neet": "1-2",
+      "approx_weightage_pct": "3-4",
+      "difficulty_split": { "easy": 48, "medium": 37, "hard": 15 },
+      "notes": "First-law and isothermal/adiabatic-process numericals dominate."
+    },
+    "P09": {
+      "chapter": "Behaviour of Perfect Gas and Kinetic Theory",
+      "neet_freq_band": "low-medium",
+      "avg_q_per_session_neet": "1",
+      "approx_weightage_pct": "2",
+      "difficulty_split": { "easy": 50, "medium": 35, "hard": 15 },
+      "notes": "rms-speed / degrees-of-freedom numericals, often conceptually paired with Thermodynamics."
+    },
+    "P10": {
+      "chapter": "Oscillations and Waves",
+      "neet_freq_band": "medium",
+      "avg_q_per_session_neet": "2",
+      "approx_weightage_pct": "3-4",
+      "difficulty_split": { "easy": 45, "medium": 38, "hard": 17 },
+      "notes": "SHM energy/time-period numericals and standing-wave/beats questions recur."
+    },
+    "P11": {
+      "chapter": "Electrostatics",
+      "neet_freq_band": "high",
+      "avg_q_per_session_neet": "2",
+      "approx_weightage_pct": "4-5",
+      "difficulty_split": { "easy": 40, "medium": 40, "hard": 20 },
+      "notes": "Gauss's-law applications and capacitor-combination numericals recur."
+    },
+    "P12": {
+      "chapter": "Current Electricity",
+      "neet_freq_band": "very high",
+      "avg_q_per_session_neet": "3",
+      "approx_weightage_pct": "6",
+      "difficulty_split": { "easy": 38, "medium": 40, "hard": 22 },
+      "notes": "Consistently a top-ranked Physics chapter; Wheatstone-bridge, meter-bridge and Kirchhoff's-law numericals recur."
+    },
+    "P13": {
+      "chapter": "Magnetic Effects of Current and Magnetism",
+      "neet_freq_band": "high",
+      "avg_q_per_session_neet": "2",
+      "approx_weightage_pct": "4",
+      "difficulty_split": { "easy": 42, "medium": 38, "hard": 20 },
+      "notes": "Biot-Savart/Ampere's-law numericals and moving-coil-galvanometer conversions recur often."
+    },
+    "P14": {
+      "chapter": "Electromagnetic Induction and Alternating Currents",
+      "neet_freq_band": "medium-high",
+      "avg_q_per_session_neet": "1-2",
+      "approx_weightage_pct": "3-4",
+      "difficulty_split": { "easy": 42, "medium": 38, "hard": 20 },
+      "notes": "EMI and LCR-resonance numericals are a recurring archetype."
+    },
+    "P15": {
+      "chapter": "Electromagnetic Waves",
+      "neet_freq_band": "low",
+      "avg_q_per_session_neet": "1",
+      "approx_weightage_pct": "1-2",
+      "difficulty_split": { "easy": 65, "medium": 27, "hard": 8 },
+      "notes": "Mostly conceptual recall (spectrum identification, E/B/c relations); rarely more than one question."
+    },
+    "P16": {
+      "chapter": "Optics",
+      "neet_freq_band": "very high",
+      "avg_q_per_session_neet": "3-4",
+      "approx_weightage_pct": "7-9",
+      "difficulty_split": { "easy": 40, "medium": 40, "hard": 20 },
+      "notes": "Combines Ray and Wave Optics; among the highest-weightage Physics chapters, flagged across multiple 2026 trackers."
+    },
+    "P17": {
+      "chapter": "Dual Nature of Matter and Radiation",
+      "neet_freq_band": "medium-high",
+      "avg_q_per_session_neet": "1-2",
+      "approx_weightage_pct": "3",
+      "difficulty_split": { "easy": 42, "medium": 38, "hard": 20 },
+      "notes": "Photoelectric-effect stopping-potential numericals are the dominant archetype."
+    },
+    "P18": {
+      "chapter": "Atoms and Nuclei",
+      "neet_freq_band": "medium-high",
+      "avg_q_per_session_neet": "1-2",
+      "approx_weightage_pct": "3-4",
+      "difficulty_split": { "easy": 42, "medium": 38, "hard": 20 },
+      "notes": "Bohr-model transitions and radioactive-decay numericals recur."
+    },
+    "P19": {
+      "chapter": "Electronic Devices",
+      "neet_freq_band": "high",
+      "avg_q_per_session_neet": "2",
+      "approx_weightage_pct": "4-6",
+      "difficulty_split": { "easy": 45, "medium": 38, "hard": 17 },
+      "notes": "Diode I-V characteristics and logic-gate truth tables are direct, NCERT-diagram-based questions with a rising-weightage trend."
+    }
+  },
+  "broad_category_weightage_pct": {
+    "note": "Coarser cross-check figures, approximate % share of the 45-question scored Physics section, synthesised from multiple 2025-2026 PYQ trend sources. Rounds do not sum exactly to 100% because some marginal units are reported inconsistently across trackers.",
+    "Mechanics (P02-P06)": "22-26%",
+    "Properties_of_Matter_and_Thermal (P07-P09)": "9-11%",
+    "Oscillations_and_Waves (P10)": "3-4%",
+    "Electrodynamics (P11-P14)": "18-20%",
+    "Electromagnetic_Waves (P15)": "1-2%",
+    "Optics (P16)": "7-9%",
+    "Modern_Physics (P17-P18)": "6-7%",
+    "Electronic_Devices (P19)": "4-6%",
+    "Class_11_vs_Class_12_split": "approx. 43-46% Class 11, 54-57% Class 12 across most trackers"
+  },
+  "marking_scheme": {
+    "source_note": "Confirmed via multiple Sep 2026 sources reporting on the 2026 and Re-NEET UG 2026 (21 June 2026) sessions.",
+    "section_a": "35 single-correct MCQs, all compulsory; +4 for a correct answer, -1 for an incorrect answer, 0 if unattempted.",
+    "section_b": "15 single-correct MCQs, attempt any 10 (if more than 10 are attempted, only the first 10 attempted, per answer sheet order, are evaluated in the official pattern used since 2021); +4 correct, -1 incorrect, 0 unattempted.",
+    "questions_printed_vs_scored": "50 printed, 45 scored per subject.",
+    "total_marks_physics": 180,
+    "total_marks_paper": 720,
+    "question_types_used": "Single-correct MCQ only. NEET does NOT use numerical-value, multiple-correct, or matrix-match formats — those are JEE-exclusive."
+  }
+}

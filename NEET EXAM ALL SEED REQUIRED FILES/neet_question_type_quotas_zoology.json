@@ -1,0 +1,22 @@
+{
+  "subject": "Zoology",
+  "exam": "NEET UG 2026",
+  "purpose": "Per-topic target quotas for building a question BANK/dataset, not a simulation of a single session's paper. Multiply/scale as needed.",
+  "question_type_note": "NEET uses only single-correct MCQ across both sections; no numerical-value, multiple-correct, or matrix-match formats. Biology (Botany+Zoology) is almost entirely conceptual/recall/diagram-based rather than numerical, with the exception of Mendelian-genetics cross/ratio logic questions.",
+  "difficulty_note": "Human Physiology and Animal Kingdom chapters lean 'easy'-to-'medium' NCERT recall; Genetics (Z09) and Neural Control (Z07) carry more 'hard' logic/multi-step questions.",
+  "topics": {
+    "Z01": { "chapter": "Animal Kingdom", "relevance_tier": "very_high", "quota_weight": 4, "question_types": { "mcq_single": { "easy": 9, "medium": 7, "hard": 3, "total": 19 } }, "topic_total_quota": 19 },
+    "Z02": { "chapter": "Structural Organisation in Animals", "relevance_tier": "medium", "quota_weight": 2, "question_types": { "mcq_single": { "easy": 6, "medium": 3, "hard": 1, "total": 10 } }, "topic_total_quota": 10 },
+    "Z03": { "chapter": "Breathing and Exchange of Gases", "relevance_tier": "medium", "quota_weight": 2, "question_types": { "mcq_single": { "easy": 6, "medium": 4, "hard": 2, "total": 12 } }, "topic_total_quota": 12 },
+    "Z04": { "chapter": "Body Fluids and Circulation", "relevance_tier": "medium_high", "quota_weight": 3, "question_types": { "mcq_single": { "easy": 6, "medium": 5, "hard": 2, "total": 13 } }, "topic_total_quota": 13 },
+    "Z05": { "chapter": "Excretory Products and their Elimination", "relevance_tier": "medium", "quota_weight": 2, "question_types": { "mcq_single": { "easy": 6, "medium": 4, "hard": 2, "total": 12 } }, "topic_total_quota": 12 },
+    "Z06": { "chapter": "Locomotion and Movement", "relevance_tier": "medium", "quota_weight": 2, "question_types": { "mcq_single": { "easy": 6, "medium": 3, "hard": 1, "total": 10 } }, "topic_total_quota": 10 },
+    "Z07": { "chapter": "Neural Control and Coordination", "relevance_tier": "medium_high", "quota_weight": 3, "question_types": { "mcq_single": { "easy": 6, "medium": 5, "hard": 2, "total": 13 } }, "topic_total_quota": 13 },
+    "Z08": { "chapter": "Chemical Coordination and Integration", "relevance_tier": "medium", "quota_weight": 2, "question_types": { "mcq_single": { "easy": 6, "medium": 3, "hard": 1, "total": 10 } }, "topic_total_quota": 10 },
+    "Z09": { "chapter": "Principles of Inheritance and Variation", "relevance_tier": "very_high", "quota_weight": 4, "question_types": { "mcq_single": { "easy": 6, "medium": 7, "hard": 4, "total": 17 } }, "topic_total_quota": 17 },
+    "Z10": { "chapter": "Evolution", "relevance_tier": "medium", "quota_weight": 2, "question_types": { "mcq_single": { "easy": 7, "medium": 4, "hard": 1, "total": 12 } }, "topic_total_quota": 12 },
+    "Z11": { "chapter": "Human Reproduction", "relevance_tier": "high", "quota_weight": 3, "question_types": { "mcq_single": { "easy": 6, "medium": 5, "hard": 2, "total": 13 } }, "topic_total_quota": 13 },
+    "Z12": { "chapter": "Reproductive Health", "relevance_tier": "medium", "quota_weight": 2, "question_types": { "mcq_single": { "easy": 7, "medium": 3, "hard": 1, "total": 11 } }, "topic_total_quota": 11 },
+    "Z13": { "chapter": "Human Health and Disease", "relevance_tier": "high", "quota_weight": 3, "question_types": { "mcq_single": { "easy": 7, "medium": 5, "hard": 2, "total": 14 } }, "topic_total_quota": 14 }
+  }
+}

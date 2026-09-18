@@ -1,0 +1,136 @@
+{
+  "subject": "Mathematics",
+  "exam_context": "JEE Main 2026 (Paper 1, B.E./B.Tech) — Mathematics section only, 25 questions/100 marks",
+  "data_provenance": "Estimated from PYQ-trend analysis and chapter-wise-weightage/marks trackers aggregated across the 2025 and 2026 (Jan + Apr) sessions (not official NTA data), cross-referenced against multiple careers360 community weightage tables and marks breakdowns; last grounded Sep 2026. Some careers360 marks tables report Limit/Continuity/Differentiability, Integral Calculus and Differential Equations as a combined 'differential and integral calculus' figure — this file disaggregates that estimate across X07/X08/X09 using proportions seen in other trackers. Individual-session weightage varies shift to shift; treat these as multi-session averages for question-bank planning, not a guarantee of any single paper's composition.",
+  "topics": {
+    "X01": {
+      "chapter": "Sets, Relations and Functions",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": { "easy": 50, "medium": 35, "hard": 15 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Foundational unit, often fused into a function/relation classification question; ~4-5% weightage."
+    },
+    "X02": {
+      "chapter": "Complex Numbers and Quadratic Equations",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": { "easy": 40, "medium": 38, "hard": 22 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Nature-of-roots and modulus/argument numericals are the dominant archetype; ~8-10% weightage combining both halves of this unit."
+    },
+    "X03": {
+      "chapter": "Matrices and Determinants",
+      "jee_main_freq_band": "very high",
+      "avg_q_per_session_jee_main": "2",
+      "difficulty_split": { "easy": 30, "medium": 42, "hard": 28 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "One of the highest-weightage Maths chapters at ~13-14% per multiple trackers; adjoint/inverse and consistency-of-equations numericals recur every session."
+    },
+    "X04": {
+      "chapter": "Permutations and Combinations",
+      "jee_main_freq_band": "low",
+      "avg_q_per_session_jee_main": "0-1",
+      "difficulty_split": { "easy": 40, "medium": 38, "hard": 22 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Lower-weightage standalone unit (~3%) but frequently fused into Probability or Binomial Theorem questions."
+    },
+    "X05": {
+      "chapter": "Binomial Theorem and its Simple Applications",
+      "jee_main_freq_band": "low",
+      "avg_q_per_session_jee_main": "0-1",
+      "difficulty_split": { "easy": 45, "medium": 38, "hard": 17 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Low standalone weightage (~3%); general-term and middle-term numericals are the standard archetype."
+    },
+    "X06": {
+      "chapter": "Sequence and Series",
+      "jee_main_freq_band": "low",
+      "avg_q_per_session_jee_main": "0-1",
+      "difficulty_split": { "easy": 45, "medium": 38, "hard": 17 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Low standalone weightage (~3%) after the 2025 removal of special-series-sum content; AP/GM-mean numericals dominate."
+    },
+    "X07": {
+      "chapter": "Limit, Continuity and Differentiability",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": { "easy": 35, "medium": 40, "hard": 25 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Maxima/minima and tangent-normal application questions recur heavily; ~11-12% weightage."
+    },
+    "X08": {
+      "chapter": "Integral Calculus",
+      "jee_main_freq_band": "very high",
+      "avg_q_per_session_jee_main": "2",
+      "difficulty_split": { "easy": 30, "medium": 42, "hard": 28 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "The single highest-weightage Maths chapter at ~13-14%; definite-integral evaluation and area-under-curve numericals dominate."
+    },
+    "X09": {
+      "chapter": "Differential Equations",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": { "easy": 40, "medium": 38, "hard": 22 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Separation-of-variables and linear first-order DE numericals are the standard archetype; ~5-6% weightage."
+    },
+    "X10": {
+      "chapter": "Co-ordinate Geometry",
+      "jee_main_freq_band": "very high",
+      "avg_q_per_session_jee_main": "2-3",
+      "difficulty_split": { "easy": 30, "medium": 42, "hard": 28 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Consistently the single highest-weightage Maths unit across trackers at ~18%; straight-line, circle and conic-section (parabola/ellipse/hyperbola) numericals dominate."
+    },
+    "X11": {
+      "chapter": "Three Dimensional Geometry",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": { "easy": 45, "medium": 38, "hard": 17 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Reduced scope after the 2025 rationalisation removed line-plane intersection content; direction-cosines and shortest-distance-between-skew-lines numericals remain the standard archetype. Often reported jointly with X12 as 'Vector & 3D' (~11% combined)."
+    },
+    "X12": {
+      "chapter": "Vector Algebra",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": { "easy": 45, "medium": 38, "hard": 17 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Scalar/vector product numericals are the standard archetype. Often reported jointly with X11 as 'Vector & 3D' (~11% combined)."
+    },
+    "X13": {
+      "chapter": "Statistics and Probability",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": { "easy": 35, "medium": 40, "hard": 25 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Conditional-probability (Baye's theorem) and standard-deviation-of-grouped-data numericals dominate; ~7-9% weightage."
+    },
+    "X14": {
+      "chapter": "Trigonometry",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": { "easy": 40, "medium": 38, "hard": 22 },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Trigonometric-equation-solving and inverse-trig-function-property questions dominate after the 2025 removal of heights-and-distances; ~10% weightage."
+    }
+  },
+  "broad_category_weightage_pct": {
+    "note": "Coarser cross-check figures, approximate % share of the 25-question Maths section, synthesised from multiple 2025-2026 PYQ trend/marks sources. Rounds do not sum to exactly 100% because chapter-boundary reporting (e.g. whether Vector and 3D Geometry are combined) is inconsistent across sources.",
+    "Algebra (X01-X06)": "22-26%",
+    "Calculus (X07-X09)": "28-32%",
+    "Coordinate_Geometry (X10)": "16-18%",
+    "Vectors_and_3D (X11-X12)": "9-11%",
+    "Statistics_and_Probability (X13)": "7-9%",
+    "Trigonometry (X14)": "8-10%"
+  },
+  "marking_scheme": {
+    "source_note": "Confirmed via multiple Sep 2026 sources reporting on the actual Jan 2026 and Apr 2026 JEE Main sessions.",
+    "section_a_mcq": "20 single-correct MCQs per subject; +4 for a correct answer, -1 for an incorrect answer, 0 if unattempted.",
+    "section_b_numerical": "5 numerical-value questions per subject, all compulsory (the earlier 'attempt any 5 of 10' choice was removed starting with the 2025 pattern); +4 for a correct answer, -1 for an incorrect answer, 0 if unattempted. This differs from pre-2025 sessions, when numerical questions carried no negative marking.",
+    "total_marks_maths": 100,
+    "total_marks_paper": 300,
+    "question_types_used": "Single-correct MCQ and numerical-value only. JEE Main does NOT use multiple-correct MCQs or matrix-match questions — those formats are exclusive to JEE Advanced."
+  }
+}

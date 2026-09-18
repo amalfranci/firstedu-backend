@@ -1,0 +1,89 @@
+{
+  "exam": "SSC CGL Tier 2 2026, Paper I",
+  "purpose": "Per-topic target quotas for building a question BANK/dataset, not a simulation of a single year's paper. Multiply/scale as needed. Mirrors the structure of the Tier 1 / JEE Main / GMAT / CLAT / IBPS PO quotas files so banks across exams can be planned/compared side by side.",
+  "question_type_note": "SSC CGL Tier 2 Paper I uses only ONE question format across all five subject areas: 5-option single-correct MCQ. Reading Comprehension (English) and DI (Mathematical Abilities) sub-topics are delivered as multi-question sets from a shared passage/data-set; every individual item is still standalone single-correct MCQ. There is no numerical-value entry and no multiple-correct format. The qualifying-only Data Entry Speed Test is excluded from this quota file entirely, since it is not a text-question format.",
+  "difficulty_note": "SSC does not publish official difficulty tags. Coaching-tracker consensus places Tier 2 Mathematical Abilities and multi-condition Reasoning puzzles as harder than their Tier 1 counterparts (higher marks-per-question reflects this), while Computer Knowledge and static-fact General Awareness items skew easier. Tiers below (easy/medium/hard) are seeding targets, not official classifications.",
+  "sections": {
+    "MATH": {
+      "section_name": "Mathematical Abilities",
+      "num_questions_live_exam": 30,
+      "marks_per_question": 3,
+      "relevance_tier": "very_high",
+      "quota_weight": 4,
+      "topics": {
+        "MATH01": { "topic": "Number Systems and Basic Arithmetic", "question_types": { "mcq_standalone": { "easy": 1, "medium": 1, "hard": 0, "total": 2 } }, "topic_total_quota": 2 },
+        "MATH02": { "topic": "Commercial Arithmetic", "question_types": { "mcq_standalone": { "easy": 1, "medium": 2, "hard": 1, "total": 4 } }, "topic_total_quota": 4 },
+        "MATH03": { "topic": "Time, Speed, Distance and Work", "question_types": { "mcq_standalone": { "easy": 1, "medium": 1, "hard": 1, "total": 3 } }, "topic_total_quota": 3 },
+        "MATH04": { "topic": "Algebra", "question_types": { "mcq_standalone": { "easy": 1, "medium": 2, "hard": 1, "total": 4 } }, "topic_total_quota": 4 },
+        "MATH05": { "topic": "Geometry", "question_types": { "mcq_standalone": { "easy": 1, "medium": 2, "hard": 1, "total": 4 } }, "topic_total_quota": 4 },
+        "MATH06": { "topic": "Mensuration", "question_types": { "mcq_standalone": { "easy": 1, "medium": 2, "hard": 1, "total": 4 } }, "topic_total_quota": 4 },
+        "MATH07": { "topic": "Trigonometry", "question_types": { "mcq_standalone": { "easy": 1, "medium": 1, "hard": 1, "total": 3 } }, "topic_total_quota": 3 },
+        "MATH08": { "topic": "Statistics and Probability", "question_types": { "mcq_standalone": { "easy": 0, "medium": 1, "hard": 0, "total": 1 } }, "topic_total_quota": 1 },
+        "MATH09": { "topic": "Data Interpretation", "question_types": { "mcq_caselet_based": { "easy": 1, "medium": 1, "hard": 1, "total": 3 } }, "topic_total_quota": 3 }
+      },
+      "section_total_quota": 30
+    },
+    "REASON": {
+      "section_name": "Reasoning and General Intelligence",
+      "num_questions_live_exam": 30,
+      "marks_per_question": 3,
+      "relevance_tier": "very_high",
+      "quota_weight": 4,
+      "topics": {
+        "REASON01": { "topic": "Analogy, Classification and Series", "question_types": { "mcq_standalone": { "easy": 2, "medium": 3, "hard": 1, "total": 6 } }, "topic_total_quota": 6 },
+        "REASON02": { "topic": "Coding-Decoding and Relationship Concepts", "question_types": { "mcq_standalone": { "easy": 2, "medium": 2, "hard": 1, "total": 5 } }, "topic_total_quota": 5 },
+        "REASON03": { "topic": "Statement-Based and Logical Reasoning", "question_types": { "mcq_standalone": { "easy": 1, "medium": 3, "hard": 1, "total": 5 } }, "topic_total_quota": 5 },
+        "REASON04": { "topic": "Puzzles and Non-Verbal Reasoning", "question_types": { "mcq_set_based": { "easy": 1, "medium": 4, "hard": 3, "total": 8 } }, "topic_total_quota": 8, "notes": "Highest-weightage, most time-costly sub-area in this section." },
+        "REASON05": { "topic": "Critical Thinking and Emotional Intelligence", "question_types": { "mcq_standalone": { "easy": 2, "medium": 3, "hard": 1, "total": 6 } }, "topic_total_quota": 6 }
+      },
+      "section_total_quota": 30
+    },
+    "ENG": {
+      "section_name": "English Language and Comprehension",
+      "num_questions_live_exam": 45,
+      "marks_per_question": 3,
+      "relevance_tier": "very_high",
+      "quota_weight": 4,
+      "topics": {
+        "ENG01": { "topic": "Reading Comprehension", "question_types": { "mcq_passage_based": { "easy": 3, "medium": 6, "hard": 3, "total": 12 } }, "topic_total_quota": 12, "notes": "Largest single sub-area; delivered as multiple passages with linked question sets." },
+        "ENG02": { "topic": "Grammar", "question_types": { "mcq_standalone": { "easy": 2, "medium": 4, "hard": 2, "total": 8 } }, "topic_total_quota": 8 },
+        "ENG03": { "topic": "Sentence and Paragraph Rearrangement", "question_types": { "mcq_standalone": { "easy": 1, "medium": 3, "hard": 1, "total": 5 } }, "topic_total_quota": 5 },
+        "ENG04": { "topic": "Cloze Test", "question_types": { "mcq_passage_based": { "easy": 2, "medium": 3, "hard": 1, "total": 6 } }, "topic_total_quota": 6 },
+        "ENG05": { "topic": "Vocabulary", "question_types": { "mcq_standalone": { "easy": 3, "medium": 3, "hard": 1, "total": 7 } }, "topic_total_quota": 7 },
+        "ENG06": { "topic": "Fillers and Sentence Improvement", "question_types": { "mcq_standalone": { "easy": 2, "medium": 4, "hard": 1, "total": 7 } }, "topic_total_quota": 7 }
+      },
+      "section_total_quota": 45
+    },
+    "GA": {
+      "section_name": "General Awareness",
+      "num_questions_live_exam": 25,
+      "marks_per_question": 3,
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "topics": {
+        "GA01": { "topic": "History and Culture", "question_types": { "mcq_standalone": { "easy": 2, "medium": 2, "hard": 1, "total": 5 } }, "topic_total_quota": 5 },
+        "GA02": { "topic": "Geography", "question_types": { "mcq_standalone": { "easy": 2, "medium": 1, "hard": 0, "total": 3 } }, "topic_total_quota": 3 },
+        "GA03": { "topic": "Polity and Economy", "question_types": { "mcq_standalone": { "easy": 2, "medium": 2, "hard": 1, "total": 5 } }, "topic_total_quota": 5 },
+        "GA04": { "topic": "Science and Technology", "question_types": { "mcq_standalone": { "easy": 2, "medium": 2, "hard": 1, "total": 5 } }, "topic_total_quota": 5 },
+        "GA05": { "topic": "Current Affairs and Static GK", "question_types": { "mcq_standalone": { "easy": 3, "medium": 3, "hard": 1, "total": 7 } }, "topic_total_quota": 7 }
+      },
+      "section_total_quota": 25
+    },
+    "COMP": {
+      "section_name": "Computer Knowledge",
+      "num_questions_live_exam": 20,
+      "marks_per_question": 3,
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "topics": {
+        "COMP01": { "topic": "Computer Basics and Architecture", "question_types": { "mcq_standalone": { "easy": 3, "medium": 2, "hard": 0, "total": 5 } }, "topic_total_quota": 5 },
+        "COMP02": { "topic": "Software and Operating Systems", "question_types": { "mcq_standalone": { "easy": 2, "medium": 3, "hard": 0, "total": 5 } }, "topic_total_quota": 5 },
+        "COMP03": { "topic": "Internet, Networking and Email", "question_types": { "mcq_standalone": { "easy": 2, "medium": 2, "hard": 1, "total": 5 } }, "topic_total_quota": 5 },
+        "COMP04": { "topic": "Computer Security and Abbreviations", "question_types": { "mcq_standalone": { "easy": 2, "medium": 2, "hard": 1, "total": 5 } }, "topic_total_quota": 5 }
+      },
+      "section_total_quota": 20,
+      "notes": "This section carries its own qualifying cut-off in the live exam; a seeding bank should still cover its full difficulty range even though it is comparatively low-stakes score-wise."
+    }
+  },
+  "bank_total_quota_at_this_scale": 150
+}

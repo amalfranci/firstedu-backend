@@ -1,0 +1,149 @@
+{
+  "subject": "Mathematics",
+  "exam": "JEE Main 2026",
+  "purpose": "Per-topic target quotas for building a question BANK/dataset, not a simulation of a single session's paper. Multiply/scale as needed. Mirrors the structure of the Physics quotas file for the same exam so the two banks can be planned/compared side by side.",
+  "question_type_note": "JEE Main Paper 1 uses only two question formats per subject: single-correct MCQ (Section A, 20 questions/session) and numerical-value (Section B, 5 questions/session, all compulsory). There is no multiple-correct or matrix-match format in JEE Main — those exist only in JEE Advanced, so this file has no 'multi' or 'match' quota buckets.",
+  "difficulty_note": "Unlike an Advanced-style quotas file, JEE Main quotas include an 'easy' tier. JEE Main Maths is a speed/accuracy exam built heavily on direct, single-formula-application questions (Algebra units especially), and a realistic bank must include a large share of these rather than skipping to medium/hard.",
+  "topics": {
+    "X01": {
+      "chapter": "Sets, Relations and Functions",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": { "easy": 4, "medium": 4, "hard": 2, "total": 10 },
+        "numerical": { "easy": 2, "medium": 4, "hard": 2, "total": 8 }
+      },
+      "topic_total_quota": 18
+    },
+    "X02": {
+      "chapter": "Complex Numbers and Quadratic Equations",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": { "easy": 6, "medium": 6, "hard": 4, "total": 16 },
+        "numerical": { "easy": 4, "medium": 6, "hard": 4, "total": 14 }
+      },
+      "topic_total_quota": 30
+    },
+    "X03": {
+      "chapter": "Matrices and Determinants",
+      "relevance_tier": "very_high",
+      "quota_weight": 4,
+      "question_types": {
+        "mcq_single": { "easy": 8, "medium": 8, "hard": 6, "total": 22 },
+        "numerical": { "easy": 5, "medium": 8, "hard": 5, "total": 18 }
+      },
+      "topic_total_quota": 40
+    },
+    "X04": {
+      "chapter": "Permutations and Combinations",
+      "relevance_tier": "low",
+      "quota_weight": 1,
+      "question_types": {
+        "mcq_single": { "easy": 2, "medium": 2, "hard": 1, "total": 5 },
+        "numerical": { "easy": 1, "medium": 2, "hard": 1, "total": 4 }
+      },
+      "topic_total_quota": 9
+    },
+    "X05": {
+      "chapter": "Binomial Theorem and its Simple Applications",
+      "relevance_tier": "low",
+      "quota_weight": 1,
+      "question_types": {
+        "mcq_single": { "easy": 2, "medium": 2, "hard": 1, "total": 5 },
+        "numerical": { "easy": 1, "medium": 2, "hard": 1, "total": 4 }
+      },
+      "topic_total_quota": 9
+    },
+    "X06": {
+      "chapter": "Sequence and Series",
+      "relevance_tier": "low",
+      "quota_weight": 1,
+      "question_types": {
+        "mcq_single": { "easy": 2, "medium": 2, "hard": 1, "total": 5 },
+        "numerical": { "easy": 1, "medium": 2, "hard": 1, "total": 4 }
+      },
+      "topic_total_quota": 9
+    },
+    "X07": {
+      "chapter": "Limit, Continuity and Differentiability",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": { "easy": 6, "medium": 6, "hard": 4, "total": 16 },
+        "numerical": { "easy": 4, "medium": 6, "hard": 4, "total": 14 }
+      },
+      "topic_total_quota": 30
+    },
+    "X08": {
+      "chapter": "Integral Calculus",
+      "relevance_tier": "very_high",
+      "quota_weight": 4,
+      "question_types": {
+        "mcq_single": { "easy": 8, "medium": 8, "hard": 6, "total": 22 },
+        "numerical": { "easy": 5, "medium": 8, "hard": 5, "total": 18 }
+      },
+      "topic_total_quota": 40
+    },
+    "X09": {
+      "chapter": "Differential Equations",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": { "easy": 4, "medium": 4, "hard": 2, "total": 10 },
+        "numerical": { "easy": 2, "medium": 4, "hard": 2, "total": 8 }
+      },
+      "topic_total_quota": 18
+    },
+    "X10": {
+      "chapter": "Co-ordinate Geometry",
+      "relevance_tier": "very_high",
+      "quota_weight": 4,
+      "question_types": {
+        "mcq_single": { "easy": 8, "medium": 8, "hard": 6, "total": 22 },
+        "numerical": { "easy": 5, "medium": 8, "hard": 5, "total": 18 }
+      },
+      "topic_total_quota": 40
+    },
+    "X11": {
+      "chapter": "Three Dimensional Geometry",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": { "easy": 4, "medium": 4, "hard": 2, "total": 10 },
+        "numerical": { "easy": 2, "medium": 4, "hard": 2, "total": 8 }
+      },
+      "topic_total_quota": 18
+    },
+    "X12": {
+      "chapter": "Vector Algebra",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": { "easy": 4, "medium": 4, "hard": 2, "total": 10 },
+        "numerical": { "easy": 2, "medium": 4, "hard": 2, "total": 8 }
+      },
+      "topic_total_quota": 18
+    },
+    "X13": {
+      "chapter": "Statistics and Probability",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": { "easy": 6, "medium": 6, "hard": 4, "total": 16 },
+        "numerical": { "easy": 4, "medium": 6, "hard": 4, "total": 14 }
+      },
+      "topic_total_quota": 30
+    },
+    "X14": {
+      "chapter": "Trigonometry",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": { "easy": 6, "medium": 6, "hard": 4, "total": 16 },
+        "numerical": { "easy": 4, "medium": 6, "hard": 4, "total": 14 }
+      },
+      "topic_total_quota": 30
+    }
+  }
+}

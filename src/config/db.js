@@ -73,20 +73,120 @@ const connectDB = async () => {
     } else {
       console.log(`ℹ️ JEE syllabus already seeded (${existingSyllabus}). Skipping.`);
     }
-    const existingSyllabusPacks = await ExamSyllabusPack.countDocuments();
-    if (existingSyllabusPacks === 0) {
+    const existingAdvancedPacks = await ExamSyllabusPack.countDocuments({
+      examType: "jee_advanced",
+    });
+    const existingMainPacks = await ExamSyllabusPack.countDocuments({
+      examType: "jee_main",
+    });
+    const existingNeetPacks = await ExamSyllabusPack.countDocuments({
+      examType: "neet",
+    });
+    const existingCatPacks = await ExamSyllabusPack.countDocuments({
+      examType: "cat",
+    });
+    const existingCatQaPacks = await ExamSyllabusPack.countDocuments({
+      examType: "cat",
+      subject: { $in: ["QA", "Qa", "Quantitative Aptitude (QA)", "Quantitative Aptitude"] },
+      topicCount: { $gt: 0 },
+    });
+    const existingCatVarcPacks = await ExamSyllabusPack.countDocuments({
+      examType: "cat",
+      subject: { $in: ["VARC", "Varc"] },
+      topicCount: { $gt: 0 },
+    });
+    const existingCatDilrPacks = await ExamSyllabusPack.countDocuments({
+      examType: "cat",
+      subject: { $in: ["DILR", "Dilr"] },
+      topicCount: { $gt: 0 },
+    });
+    const existingGmatPacks = await ExamSyllabusPack.countDocuments({
+      examType: "gmat",
+    });
+    const existingClatPacks = await ExamSyllabusPack.countDocuments({
+      examType: "clat",
+    });
+    const existingIbpsPacks = await ExamSyllabusPack.countDocuments({
+      examType: "ibps",
+    });
+    const existingSscT1Packs = await ExamSyllabusPack.countDocuments({
+      examType: "ssc_cgl_tier1",
+    });
+    const existingSscT2Packs = await ExamSyllabusPack.countDocuments({
+      examType: "ssc_cgl_tier2",
+    });
+    const existingUpscPacks = await ExamSyllabusPack.countDocuments({
+      examType: "upsc",
+    });
+    const catIncomplete =
+      existingCatQaPacks === 0 ||
+      existingCatVarcPacks === 0 ||
+      existingCatDilrPacks === 0;
+    if (
+      existingAdvancedPacks === 0 ||
+      existingMainPacks === 0 ||
+      existingNeetPacks === 0 ||
+      existingCatPacks === 0 ||
+      catIncomplete ||
+      existingGmatPacks === 0 ||
+      existingClatPacks === 0 ||
+      existingIbpsPacks === 0 ||
+      existingSscT1Packs === 0 ||
+      existingSscT2Packs === 0 ||
+      existingUpscPacks === 0
+    ) {
       await seedExamSyllabusPack();
     } else {
       console.log(
-        `ℹ️ Exam syllabus packs already seeded (${existingSyllabusPacks}). Skipping.`
+        `ℹ️ Exam syllabus packs already seeded (advanced=${existingAdvancedPacks}, main=${existingMainPacks}, neet=${existingNeetPacks}, cat=${existingCatPacks}, gmat=${existingGmatPacks}, clat=${existingClatPacks}, ibps=${existingIbpsPacks}, ssc_cgl_tier1=${existingSscT1Packs}, ssc_cgl_tier2=${existingSscT2Packs}, upsc=${existingUpscPacks}). Skipping.`
       );
     }
-    const existingPaperPatterns = await ExamPaperPattern.countDocuments();
-    if (existingPaperPatterns === 0) {
+    const existingAdvancedPatterns = await ExamPaperPattern.countDocuments({
+      examType: "jee_advanced",
+    });
+    const existingMainPatterns = await ExamPaperPattern.countDocuments({
+      examType: "jee_main",
+    });
+    const existingNeetPatterns = await ExamPaperPattern.countDocuments({
+      examType: "neet",
+    });
+    const existingCatPatterns = await ExamPaperPattern.countDocuments({
+      examType: "cat",
+    });
+    const existingGmatPatterns = await ExamPaperPattern.countDocuments({
+      examType: "gmat",
+    });
+    const existingClatPatterns = await ExamPaperPattern.countDocuments({
+      examType: "clat",
+    });
+    const existingIbpsPatterns = await ExamPaperPattern.countDocuments({
+      examType: "ibps",
+    });
+    const existingSscT1Patterns = await ExamPaperPattern.countDocuments({
+      examType: "ssc_cgl_tier1",
+    });
+    const existingSscT2Patterns = await ExamPaperPattern.countDocuments({
+      examType: "ssc_cgl_tier2",
+    });
+    const existingUpscPatterns = await ExamPaperPattern.countDocuments({
+      examType: "upsc",
+    });
+    if (
+      existingAdvancedPatterns === 0 ||
+      existingMainPatterns === 0 ||
+      existingNeetPatterns === 0 ||
+      existingCatPatterns === 0 ||
+      existingGmatPatterns === 0 ||
+      existingClatPatterns === 0 ||
+      existingIbpsPatterns === 0 ||
+      existingSscT1Patterns === 0 ||
+      existingSscT2Patterns === 0 ||
+      existingUpscPatterns === 0
+    ) {
       await seedExamPaperPattern();
     } else {
       console.log(
-        `ℹ️ Exam paper patterns already seeded (${existingPaperPatterns}). Skipping.`
+        `ℹ️ Exam paper patterns already seeded (advanced=${existingAdvancedPatterns}, main=${existingMainPatterns}, neet=${existingNeetPatterns}, cat=${existingCatPatterns}, gmat=${existingGmatPatterns}, clat=${existingClatPatterns}, ibps=${existingIbpsPatterns}, ssc_cgl_tier1=${existingSscT1Patterns}, ssc_cgl_tier2=${existingSscT2Patterns}, upsc=${existingUpscPatterns}). Skipping.`
       );
     }
     const existingAdvanced = await JeeAdvancedCompetitivePaper.countDocuments();

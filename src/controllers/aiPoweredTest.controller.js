@@ -10,7 +10,17 @@ import {
   startAdvancedPaperJob,
   resumeAdvancedPaperJob,
 } from "../services/aiPoweredTestPipeline.service.js";
-import { getGenerationJob } from "../services/questionBankGenerationJobStore.js";
+import {
+  getGenerationJob,
+  createGenerationJob,
+  updateGenerationJob,
+} from "../services/questionBankGenerationJobStore.js";
+import {
+  loadPersistedJob,
+  loadGeneratedPaperDraft,
+  loadPersistedQuestions,
+} from "../services/paperJobArtifact.service.js";
+import { pickAuthoritativePaperQuestions } from "../utils/paperQuestionDedupe.js";
 
 /**
  * GET /admin/ai-powered-test/exam-blueprint
@@ -84,9 +94,114 @@ export const expandExamQuestions = asyncHandler(async (req, res) => {
     .json(ApiResponse.success({ questions: expanded }, "Explanation expand complete"));
 });
 
+const progressFromJob = (job = {}) => {
+  const totalQuestions = Math.max(
+    0,
+    Number(job.totalQuestions) ||
+      Number(job.counts?.expected) ||
+      Number(job.config?.totalQuestions) ||
+      0
+  );
+  const completedQuestions = Math.max(
+    0,
+    Number(job.completedQuestions) ||
+      Number(job.counts?.total) ||
+      (Array.isArray(job.questions) ? job.questions.length : 0)
+  );
+  const failedQuestions = Math.max(
+    0,
+    Number(job.failedQuestions) ||
+      (Array.isArray(job.failures) ? job.failures.length : 0)
+  );
+  return { totalQuestions, completedQuestions, failedQuestions };
+};
+
+/**
+ * Resolve paper job across API memory, shared disk, and Mongo (worker mode).
+ */
+const resolvePaperJob = async (generationId) => {
+  const id = String(generationId || "").trim();
+  if (!id) return null;
+
+  let job = getGenerationJob(id);
+  const draft = loadGeneratedPaperDraft(id);
+  const draftQuestions =
+    Array.isArray(draft?.questions) && draft.questions.length
+      ? draft.questions
+      : [];
+  const persisted = await loadPersistedJob(id);
+
+  if (!job) {
+    if (!persisted) return null;
+    job = createGenerationJob(id, {
+      ...persisted,
+      generationId: persisted.generationId || id,
+      questions: [],
+      config: persisted.config || {},
+    });
+  }
+
+  if (persisted) {
+    job = {
+      ...job,
+      status: persisted.status || job.status,
+      phase: persisted.phase || job.phase,
+      message: persisted.message || job.message,
+      error: persisted.error || job.error,
+      counts: persisted.counts || job.counts,
+      totalQuestions: persisted.totalQuestions ?? job.totalQuestions,
+      completedQuestions:
+        persisted.completedQuestions ?? job.completedQuestions,
+      failedQuestions: persisted.failedQuestions ?? job.failedQuestions,
+      resumable: persisted.resumable ?? job.resumable,
+      config: persisted.config || job.config,
+      plan: persisted.plan || job.plan,
+      generationId: persisted.generationId || job.generationId || id,
+    };
+  }
+
+  // Never prefer a longer temporary draft over the authoritative job list
+  const questions = pickAuthoritativePaperQuestions({
+    jobQuestions: job.questions || [],
+    draftQuestions,
+    draftStatus: draft?.status,
+    jobStatus: job.status,
+  });
+
+  if (
+    questions.length !== (job.questions || []).length ||
+    questions !== job.questions
+  ) {
+    job =
+      updateGenerationJob(id, {
+        questions,
+        counts: {
+          ...(job.counts || {}),
+          total: questions.length,
+        },
+        completedQuestions: questions.length,
+      }) || { ...job, questions };
+  }
+
+  const progress = progressFromJob({
+    ...job,
+    questions,
+    completedQuestions: questions.length,
+    counts: { ...(job.counts || {}), total: questions.length },
+  });
+  return {
+    ...job,
+    ...progress,
+    questions,
+    completedQuestions: questions.length,
+    generationId: job.generationId || job.jobId || id,
+    jobId: job.jobId || id,
+  };
+};
+
 /**
  * POST /admin/ai-powered-test/questions
- * Start full pipeline job: plan → generate → Luna verify → expand.
+ * Start full pipeline job — returns immediately with generationId (worker runs pipeline).
  */
 export const startExamQuestionJob = asyncHandler(async (req, res) => {
   const config = { ...(req.body?.config || req.body || {}) };
@@ -119,7 +234,6 @@ export const startExamQuestionJob = asyncHandler(async (req, res) => {
     );
   }
   if (typeSum === 0) {
-    // Fallback: all singles when only total provided
     typeCounts.single = total;
   }
   const subjectCounts = config.subjectCounts || {};
@@ -134,22 +248,33 @@ export const startExamQuestionJob = asyncHandler(async (req, res) => {
     );
   }
 
+  const createdBy = req.user?._id || req.user?.id || null;
   const job = startAdvancedPaperJob({
     ...config,
     totalQuestions: total,
     typeCounts,
+    createdBy,
   });
+  const generationId = job.generationId || job.jobId;
+  const status =
+    String(job.status || "").toLowerCase() === "running"
+      ? "running"
+      : "queued";
+
   return res.status(202).json(
     ApiResponse.success(
       {
-        jobId: job.jobId,
-        status: job.status,
-        phase: job.phase,
-        message: job.message,
+        generationId,
+        jobId: generationId,
+        status,
+        phase: job.phase || "queued",
+        message: job.message || "Queued",
         totalQuestions: total,
+        completedQuestions: 0,
+        failedQuestions: 0,
         typeCounts,
       },
-      "Generation job started"
+      "Generation job queued"
     )
   );
 });
@@ -158,9 +283,49 @@ export const startExamQuestionJob = asyncHandler(async (req, res) => {
  * GET /admin/ai-powered-test/questions/jobs/:jobId
  */
 export const getExamQuestionJob = asyncHandler(async (req, res) => {
-  const job = getGenerationJob(req.params.jobId);
+  const job = await resolvePaperJob(req.params.jobId);
   if (!job) throw new ApiError(404, "Generation job not found");
   return res.status(200).json(ApiResponse.success(job, "Generation job fetched"));
+});
+
+/**
+ * GET /admin/ai-powered-test/questions/:generationId/status
+ * Compact progress for polling / reconnect.
+ */
+export const getExamQuestionJobStatus = asyncHandler(async (req, res) => {
+  const job = await resolvePaperJob(req.params.generationId);
+  if (!job) throw new ApiError(404, "Generation job not found");
+  const progress = progressFromJob(job);
+  const statusRaw = String(job.status || "queued").toLowerCase();
+  const status =
+    statusRaw === "pending" || statusRaw === "queued"
+      ? "queued"
+      : statusRaw === "running"
+        ? "generating"
+        : statusRaw;
+
+  // Optional question rows for debugging; keep payload light by default
+  let questionRows = null;
+  if (String(req.query.includeQuestions || "") === "1") {
+    questionRows = await loadPersistedQuestions(job.jobId || job.generationId);
+  }
+
+  return res.status(200).json(
+    ApiResponse.success(
+      {
+        generationId: job.generationId || job.jobId,
+        status,
+        phase: job.phase || null,
+        message: job.message || "",
+        ...progress,
+        counts: job.counts || {},
+        resumable: Boolean(job.resumable),
+        error: job.error || "",
+        ...(questionRows ? { questions: questionRows } : {}),
+      },
+      "Generation status fetched"
+    )
+  );
 });
 
 /**
@@ -168,20 +333,25 @@ export const getExamQuestionJob = asyncHandler(async (req, res) => {
  * Continue a failed/interrupted job from locked questions (does not regenerate them).
  */
 export const resumeExamQuestionJob = asyncHandler(async (req, res) => {
-  const job = resumeAdvancedPaperJob(req.params.jobId);
+  const existing = await resolvePaperJob(req.params.jobId);
+  if (!existing) throw new ApiError(404, "Generation job not found");
+  const job = resumeAdvancedPaperJob(existing.jobId || req.params.jobId);
+  const progress = progressFromJob(job);
+  const generationId = job.generationId || job.jobId;
   return res.status(202).json(
     ApiResponse.success(
       {
-        jobId: job.jobId,
+        generationId,
+        jobId: generationId,
         status: job.status,
         phase: job.phase,
         message: job.message,
         counts: job.counts,
         resumable: job.resumable,
         tokenUsage: job.tokenUsage,
+        ...progress,
       },
       "Generation job resumed"
     )
   );
 });
-

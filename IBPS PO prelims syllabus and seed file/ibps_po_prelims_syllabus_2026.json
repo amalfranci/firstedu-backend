@@ -1,0 +1,165 @@
+{
+  "exam": "IBPS PO Prelims 2026 (CRP PO/MT-XVI)",
+  "source_note": "Compiled from IBPS's CRP PO/MT notification pattern as reported by multiple 2025-2026 coaching/exam-tracker sources (Oliveboard, Adda247, PracticeMock, Testbook, BankBazaar, Edutap, Sreedhar's CCE), cross-checked Sep 2026. The classic Prelims split used here (English 30 / Quant 35 / Reasoning 35 = 100) is the pattern most consistently corroborated across sources and is what your reference screenshot uses. A smaller number of Sep 2026 trackers (Adda247, Mahendra's) report a 'revised' CRP PO/MT-XVI split with Reasoning raised to 40 marks and Quant lowered to 30 — this is NOT yet confirmed across the majority of sources and may be conflating Prelims with the confirmed Mains-side revisions (Mains objective questions increased from 145 to 170). Verify against the official IBPS CRP PO/MT-XVI notification (ibps.in) before finalising a bank on either split.",
+  "exam_pattern_note": "IBPS PO Prelims 2026: 100 objective MCQs, 100 marks, 60 minutes total, computer-based (online). Strict INDEPENDENT sectional timing of 20 minutes per section — candidates cannot move between sections or carry over unused time from one section to another. Prelims is purely qualifying: the score itself does not count toward final merit, but candidates must clear both the overall and sectional cut-offs to advance to Mains.",
+  "sections": [
+    {
+      "section_id": "ENG",
+      "section_name": "English Language",
+      "num_questions": 30,
+      "max_marks": 30,
+      "sectional_time_minutes": 20,
+      "question_format": "5-option single-correct MCQ, largely passage/paragraph based (Reading Comprehension, Cloze Test, Para Jumbles) plus standalone grammar/vocabulary items.",
+      "topics": [
+        {
+          "topic_id": "ENG01",
+          "topic": "Reading Comprehension",
+          "subtopics": [
+            "Passage-based main idea, inference and vocabulary-in-context questions",
+            "Business, economy, and general-interest passages"
+          ]
+        },
+        {
+          "topic_id": "ENG02",
+          "topic": "Cloze Test",
+          "subtopics": ["Single passage with multiple blanks, one best-fit word/phrase per blank from options"]
+        },
+        {
+          "topic_id": "ENG03",
+          "topic": "Para Jumbles",
+          "subtopics": ["Rearranging jumbled sentences into a coherent paragraph"]
+        },
+        {
+          "topic_id": "ENG04",
+          "topic": "Error Detection / Error Spotting",
+          "subtopics": ["Identifying the grammatically incorrect part of a sentence"]
+        },
+        {
+          "topic_id": "ENG05",
+          "topic": "Fill in the Blanks / Word Usage",
+          "subtopics": ["Single/double blank sentence completion", "Word swap", "Contextual word usage"]
+        },
+        {
+          "topic_id": "ENG06",
+          "topic": "Paragraph Completion / Sentence Improvement",
+          "subtopics": ["Choosing the sentence that best completes or improves a given paragraph"]
+        },
+        {
+          "topic_id": "ENG07",
+          "topic": "Vocabulary",
+          "subtopics": ["One-word substitution", "Synonyms/antonyms in context", "Miscellaneous vocabulary-based items"]
+        }
+      ]
+    },
+    {
+      "section_id": "QUANT",
+      "section_name": "Quantitative Aptitude",
+      "num_questions": 35,
+      "max_marks": 35,
+      "sectional_time_minutes": 20,
+      "question_format": "5-option single-correct MCQ; a portion of the section is Data Interpretation caselets carrying multiple linked questions per set.",
+      "topics": [
+        {
+          "topic_id": "QUANT01",
+          "topic": "Simplification and Approximation",
+          "subtopics": ["BODMAS-based simplification", "Squares/cubes and roots", "Fractions and basic percentage approximation"]
+        },
+        {
+          "topic_id": "QUANT02",
+          "topic": "Number Series",
+          "subtopics": ["Missing-number series", "Wrong-number-in-series identification"]
+        },
+        {
+          "topic_id": "QUANT03",
+          "topic": "Quadratic Equations",
+          "subtopics": ["Comparing the roots of two quadratic equations"]
+        },
+        {
+          "topic_id": "QUANT04",
+          "topic": "Data Interpretation",
+          "subtopics": ["Table DI", "Bar graph DI", "Line graph DI", "Pie chart DI", "Caselet DI"]
+        },
+        {
+          "topic_id": "QUANT05",
+          "topic": "Arithmetic",
+          "subtopics": [
+            "Ratio and proportion, percentage",
+            "Average",
+            "Profit, loss and discount",
+            "Simple interest, compound interest, and surds & indices",
+            "Mixtures and allegations",
+            "Time, speed and distance",
+            "Time and work, pipes and cisterns",
+            "Mensuration (cylinder, cone, sphere)",
+            "Number system"
+          ]
+        },
+        {
+          "topic_id": "QUANT06",
+          "topic": "Modern Math / Miscellaneous",
+          "subtopics": ["Sequence and series", "Permutation, combination and probability", "Data sufficiency"]
+        }
+      ]
+    },
+    {
+      "section_id": "REASON",
+      "section_name": "Reasoning Ability",
+      "num_questions": 35,
+      "max_marks": 35,
+      "sectional_time_minutes": 20,
+      "question_format": "5-option single-correct MCQ; puzzles and seating arrangement sets typically carry multiple linked questions per set and are the highest-weightage, most time-costly sub-area.",
+      "topics": [
+        {
+          "topic_id": "REASON01",
+          "topic": "Puzzles",
+          "subtopics": ["Floor-based puzzles", "Box-based puzzles", "Day/month/year-based puzzles", "Variable/comparison puzzles"]
+        },
+        {
+          "topic_id": "REASON02",
+          "topic": "Seating Arrangement",
+          "subtopics": ["Circular seating (inside/outside facing)", "Linear seating (single/double row)", "Square/rectangular seating"]
+        },
+        {
+          "topic_id": "REASON03",
+          "topic": "Syllogism",
+          "subtopics": ["Direct syllogism", "Coded syllogism"]
+        },
+        {
+          "topic_id": "REASON04",
+          "topic": "Inequality",
+          "subtopics": ["Direct inequality", "Coded inequality"]
+        },
+        {
+          "topic_id": "REASON05",
+          "topic": "Coding-Decoding",
+          "subtopics": ["Old-pattern letter/number coding", "New-pattern logic-based coding"]
+        },
+        {
+          "topic_id": "REASON06",
+          "topic": "Blood Relation",
+          "subtopics": ["Family-tree logic and relationship-chain questions"]
+        },
+        {
+          "topic_id": "REASON07",
+          "topic": "Direction Sense",
+          "subtopics": ["Movement and orientation-based distance/direction problems"]
+        },
+        {
+          "topic_id": "REASON08",
+          "topic": "Order and Ranking",
+          "subtopics": ["Position/rank-based comparison problems"]
+        },
+        {
+          "topic_id": "REASON09",
+          "topic": "Alphanumeric Series",
+          "subtopics": ["Letter-number-symbol pattern series and extraction questions"]
+        },
+        {
+          "topic_id": "REASON10",
+          "topic": "Miscellaneous",
+          "subtopics": ["Data sufficiency", "Input-output (simplified prelims-level variants)"]
+        }
+      ]
+    }
+  ]
+}

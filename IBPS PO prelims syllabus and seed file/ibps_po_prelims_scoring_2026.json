@@ -1,0 +1,54 @@
+{
+  "exam_context": "IBPS PO Prelims 2026 (CRP PO/MT-XVI) — first stage of the three-stage selection process (Prelims, Mains, Interview) for Probationary Officer/Management Trainee posts at participating public-sector banks in India.",
+  "data_provenance": "Estimated from IBPS's CRP PO/MT notification pattern as reported by multiple 2025-2026 coaching/exam-tracker sources (Oliveboard, Adda247, PracticeMock, Testbook, BankBazaar, Sreedhar's CCE), cross-checked Sep 2026. The section-wise marks split used here (English 30 / Quant 35 / Reasoning 35) is the classic, most consistently corroborated pattern and matches your reference bank. A minority of Sep 2026 sources report a 'revised' CRP PO/MT-XVI split (Reasoning 40 / Quant 30, English unchanged at 30) — flagged here as unconfirmed; verify against the official notification at ibps.in before relying on either split for a live cycle.",
+  "sections": {
+    "ENG": {
+      "section_name": "English Language",
+      "num_questions": 30,
+      "max_marks": 30,
+      "sectional_time_minutes": 20
+    },
+    "QUANT": {
+      "section_name": "Quantitative Aptitude",
+      "num_questions": 35,
+      "max_marks": 35,
+      "sectional_time_minutes": 20
+    },
+    "REASON": {
+      "section_name": "Reasoning Ability",
+      "num_questions": 35,
+      "max_marks": 35,
+      "sectional_time_minutes": 20
+    }
+  },
+  "marking_scheme": {
+    "source_note": "Confirmed via multiple Sep 2026 sources describing the IBPS PO Prelims marking pattern; unchanged across recent CRP PO/MT cycles.",
+    "correct_answer": "+1 mark",
+    "incorrect_answer": "-0.25 mark (negative marking)",
+    "unattempted": "0 marks",
+    "total_questions": 100,
+    "total_marks": 100,
+    "qualifying_nature": "Prelims marks do NOT count toward final merit/selection. Prelims is purely a qualifying round — candidates must clear both the sectional and the overall cut-off to be shortlisted for Mains; final ranking is based on Mains + Interview scores only.",
+    "sectional_cutoffs": "Yes — candidates must clear the minimum qualifying marks in EACH of the three sections (English, Quant, Reasoning) individually, in addition to the overall cut-off.",
+    "question_types_used": "Single-correct 5-option MCQ only. No numerical-value, multiple-correct, or descriptive questions in Prelims (a Descriptive Test exists only at the Mains stage)."
+  },
+  "exam_logistics": {
+    "exam_mode": "Online, computer-based test (CBT)",
+    "total_duration_minutes": 60,
+    "sectional_timing": "Strict independent sectional timing — 20 minutes per section, no switching between sections and no carrying over unused time from one section to another",
+    "medium_of_exam": "English and Hindi (except the English Language section itself, which is tested only in English)",
+    "selection_stages": ["Preliminary Examination (100 marks, qualifying only)", "Main Examination (225 marks: objective + descriptive)", "Personality Test / Interview (100 marks)"],
+    "final_merit_weighting_note": "Final selection merit is based on normalized Mains score plus Interview score; Prelims performance itself is not carried forward into the merit calculation."
+  },
+  "downstream_stage_context": {
+    "note": "Included for reference only — these stages are NOT part of the Prelims exam being seeded here.",
+    "mains_exam": {
+      "total_objective_questions": 170,
+      "sections": ["Reasoning & Computer Aptitude", "Data Analysis & Interpretation", "General/Economy/Banking Awareness", "English Language"],
+      "descriptive_test": "Essay and Letter/Comprehension Writing",
+      "total_marks": 225,
+      "total_duration": "3 hours 30 minutes (approx.)"
+    },
+    "interview_marks": 100
+  }
+}

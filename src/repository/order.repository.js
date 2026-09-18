@@ -96,16 +96,22 @@ const findTestPurchasesForExamHall = async (studentId) => {
     return await TestPurchase.find({ student: studentId, paymentStatus: "completed" })
       .populate({
         path: "test",
-        select: "title description durationMinutes questionBank price",
-        populate: { path: "questionBank", select: "categories" },
+        select: "title description durationMinutes questionBank aiQuestionBank price applicableFor",
+        populate: [
+          { path: "questionBank", select: "name categories" },
+          { path: "aiQuestionBank", select: "name categories questionCount" },
+        ],
       })
       .populate({
         path: "testBundle",
         select: "name description price tests",
         populate: {
           path: "tests",
-          select: "title description durationMinutes questionBank",
-          populate: { path: "questionBank", select: "categories" },
+          select: "title description durationMinutes questionBank aiQuestionBank applicableFor",
+          populate: [
+            { path: "questionBank", select: "name categories" },
+            { path: "aiQuestionBank", select: "name categories questionCount" },
+          ],
         },
       })
       .populate("schoolCategory", "name description")

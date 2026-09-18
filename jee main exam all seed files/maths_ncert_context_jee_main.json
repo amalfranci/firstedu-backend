@@ -1,0 +1,147 @@
+{
+  "subject": "Mathematics",
+  "exam": "JEE Main 2026",
+  "schema_note": "Keyed by topic_id (matches maths_syllabus_jee_main.json). Same field set as the Physics NCERT-context file, with 'hard_archetypes' recalibrated to JEE-Main-level difficulty (single/dual-concept, not the multi-topic fusion typical of Advanced) and 'banned_easy_templates' generally left as a note that direct-substitution/direct-formula questions are wanted, not excluded, since that is the opposite convention from an Advanced-style file.",
+  "topics": {
+    "X01": {
+      "chapter": "Sets, Relations and Functions",
+      "concepts": ["Equivalence relations", "One-one/onto function classification", "Composition of functions"],
+      "formulas": ["n(A∪B) = n(A) + n(B) - n(A∩B)", "Number of subsets of a set with n elements = 2^n", "(fog)(x) = f(g(x))"],
+      "methods": ["Check reflexivity, symmetry and transitivity in that order when verifying whether a relation is an equivalence relation"],
+      "traps": ["Confusing 'into' with 'onto' functions", "Forgetting to check the domain restriction when composing two functions"],
+      "hard_archetypes": ["Given a relation defined by a condition, determine the equivalence classes it partitions the set into", "Composite-function domain/range problems involving piecewise or inverse-trig functions"],
+      "banned_easy_templates": ["None by difficulty. A direct set-operation or function-classification question is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Mathematical induction/reasoning-based proofs of set identities (removed as standalone units in the 2025 rationalisation)"]
+    },
+    "X02": {
+      "chapter": "Complex Numbers and Quadratic Equations",
+      "concepts": ["Modulus and argument of a complex number", "Nature of roots via the discriminant", "Relation between roots and coefficients"],
+      "formulas": ["|z| = √(a²+b²), arg(z) = tan⁻¹(b/a)", "For ax²+bx+c=0: sum of roots = -b/a, product = c/a", "Discriminant D = b²-4ac"],
+      "methods": ["Convert a complex number to polar form (r, θ) before raising it to a power or taking roots (De Moivre-style reasoning)"],
+      "traps": ["Choosing the wrong quadrant for the argument when a and b have mixed signs", "Forgetting that complex roots of a real-coefficient quadratic always occur in conjugate pairs"],
+      "hard_archetypes": ["Given a condition on the roots (e.g. equal in magnitude but opposite sign), form the resulting relation among coefficients", "Locus problems in the Argand plane involving |z - z1| = k type conditions"],
+      "banned_easy_templates": ["None by difficulty. A direct modulus/argument calculation or roots-from-coefficients question is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Formal triangle-inequality proofs and complex-number square-root extraction techniques (removed from this unit in the 2025 rationalisation)"]
+    },
+    "X03": {
+      "chapter": "Matrices and Determinants",
+      "concepts": ["Evaluating determinants of order 2 and 3", "Inverse of a matrix via adjoint", "Consistency of a system of linear equations"],
+      "formulas": ["A⁻¹ = adj(A)/|A|", "For a 3-variable system: unique solution if |A|≠0; check Δ, Δ1, Δ2, Δ3 for consistency when |A|=0", "Area of triangle using determinant of vertex coordinates"],
+      "methods": ["Compute |A| first — if non-zero, the system has a unique solution and A⁻¹ exists; only check the Δx/Δy/Δz sub-determinants when |A|=0"],
+      "traps": ["Sign errors while expanding a 3×3 determinant by cofactors", "Assuming a system with |A|=0 has no solution without checking whether it has infinitely many"],
+      "hard_archetypes": ["Given a matrix equation with an unknown parameter, find the value(s) for which the system is consistent/inconsistent", "Matrix-power or matrix-satisfies-its-own-characteristic-equation (Cayley-Hamilton-style) problems"],
+      "banned_easy_templates": ["None by difficulty. A direct determinant-evaluation or matrix-inverse computation is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Elementary row/column transformation-based matrix reduction and formal properties-of-determinants proofs (removed from this unit in the 2025 rationalisation)"]
+    },
+    "X04": {
+      "chapter": "Permutations and Combinations",
+      "concepts": ["Fundamental principle of counting", "Circular permutations", "Combinations with restrictions"],
+      "formulas": ["P(n,r) = n!/(n-r)!", "C(n,r) = n!/(r!(n-r)!)", "Circular permutations of n objects = (n-1)!"],
+      "methods": ["Decide whether order matters (permutation) or not (combination) before selecting the formula"],
+      "traps": ["Double-counting arrangements when identical objects are present without dividing by the repeated-item factorial", "Forgetting to subtract restricted cases (e.g. 'two people must not sit together')"],
+      "hard_archetypes": ["Counting problems combining multiple constraints (e.g. distinct groups, some people always/never together)", "Combination problems involving distribution of distinct/identical objects into groups"],
+      "banned_easy_templates": ["None by difficulty. A direct P(n,r) or C(n,r) substitution question is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Advanced generating-function-based counting techniques"]
+    },
+    "X05": {
+      "chapter": "Binomial Theorem and its Simple Applications",
+      "concepts": ["General term of a binomial expansion", "Middle term identification", "Term independent of x"],
+      "formulas": ["General term T(r+1) = C(n,r)·a^(n-r)·b^r", "For even n, middle term is T((n/2)+1); for odd n, two middle terms exist"],
+      "methods": ["Set the exponent of the variable in the general term equal to zero to find the term independent of x"],
+      "traps": ["Off-by-one indexing error when identifying T(r+1) vs T(r)", "Forgetting there are two middle terms when n is odd"],
+      "hard_archetypes": ["Finding a specific coefficient or ratio of coefficients across two different binomial expansions", "Problems requiring the greatest term/greatest coefficient in an expansion"],
+      "banned_easy_templates": ["None by difficulty. A direct general-term or middle-term calculation is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Formal proofs of binomial-coefficient identities (removed from this unit in the 2025 rationalisation)"]
+    },
+    "X06": {
+      "chapter": "Sequence and Series",
+      "concepts": ["nth term and sum of an AP/GP", "Arithmetic mean and geometric mean insertion", "Relation between AM and GM"],
+      "formulas": ["AP: a_n = a + (n-1)d, S_n = n/2[2a+(n-1)d]", "GP: a_n = ar^(n-1), S_n = a(r^n-1)/(r-1)", "AM ≥ GM for positive real numbers"],
+      "methods": ["Identify whether the sequence has a constant difference (AP) or constant ratio (GP) before choosing the nth-term formula"],
+      "traps": ["Using the AP sum formula on a GP or vice versa", "Sign errors when the common ratio of a GP is negative or a fraction"],
+      "hard_archetypes": ["Problems requiring the sum of a series that is neither pure AP nor pure GP but a combination (AP times GP terms)", "AM-GM inequality-based optimisation problems"],
+      "banned_easy_templates": ["None by difficulty. A direct nth-term or sum-of-n-terms calculation is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Sums of special series (Σn², Σn³) and arithmetico-geometric progressions (removed from this unit in the 2025 rationalisation)"]
+    },
+    "X07": {
+      "chapter": "Limit, Continuity and Differentiability",
+      "concepts": ["Evaluating limits (standard forms, L'Hopital-style indeterminate forms via algebraic manipulation)", "Continuity and differentiability at a point", "Maxima/minima and tangent-normal applications"],
+      "formulas": ["d/dx(x^n) = nx^(n-1)", "First-derivative test / second-derivative test for local maxima/minima", "Equation of tangent: y - y1 = f'(x1)(x - x1)"],
+      "methods": ["Check continuity at a point before checking differentiability there, since differentiability implies continuity but not vice versa"],
+      "traps": ["Applying standard limit formulas without first confirming the indeterminate form (0/0 or ∞/∞)", "Confusing critical points (f'(x)=0) with points of inflection"],
+      "hard_archetypes": ["Piecewise-function continuity/differentiability problems requiring matching left-hand and right-hand derivatives at the junction point", "Optimisation (maxima/minima) word problems requiring setting up the function before differentiating"],
+      "banned_easy_templates": ["None by difficulty. A direct standard-limit evaluation or basic differentiation question is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Formal statement and application of Rolle's/Lagrange's Mean Value Theorems (removed from this unit in the 2025 rationalisation)"]
+    },
+    "X08": {
+      "chapter": "Integral Calculus",
+      "concepts": ["Standard integration techniques (substitution, by parts, partial fractions)", "Definite integral properties", "Area under a curve"],
+      "formulas": ["∫x^n dx = x^(n+1)/(n+1) + C", "∫f(x)dx by parts = uv - ∫v du", "∫(a to b) f(x)dx = ∫(a to b) f(a+b-x)dx (definite-integral property)"],
+      "methods": ["Check for a definite-integral symmetry property (e.g. f(a+b-x)=f(x)) before attempting direct integration, since it often simplifies the problem substantially"],
+      "traps": ["Forgetting the constant of integration in indefinite integrals", "Sign errors when the region for area calculation dips below the x-axis"],
+      "hard_archetypes": ["Definite integrals requiring a clever substitution or property-based simplification rather than direct evaluation", "Area-between-two-curves problems requiring correct identification of intersection points and integration limits"],
+      "banned_easy_templates": ["None by difficulty. A direct standard-integral evaluation is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Integral as the limit of a Riemann sum (removed from this unit in the 2025 rationalisation)"]
+    },
+    "X09": {
+      "chapter": "Differential Equations",
+      "concepts": ["Order and degree of a differential equation", "Separation of variables", "Linear first-order differential equations and integrating factor"],
+      "formulas": ["Linear DE: dy/dx + Py = Q, integrating factor IF = e^(∫P dx), solution: y·IF = ∫Q·IF dx + C"],
+      "methods": ["Rearrange the equation into the standard linear form (dy/dx + Py = Q) before identifying P and Q and computing the integrating factor"],
+      "traps": ["Misidentifying the order/degree when the equation contains a radical or fractional power of a derivative", "Forgetting the integrating factor when the DE is linear but not directly separable"],
+      "hard_archetypes": ["Homogeneous differential equations requiring the substitution y=vx before separating variables", "Word problems (growth/decay, mixing problems) requiring formulation of the DE from a physical description before solving"],
+      "banned_easy_templates": ["None by difficulty. A direct separation-of-variables solve is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Second-order and higher differential equations"]
+    },
+    "X10": {
+      "chapter": "Co-ordinate Geometry",
+      "concepts": ["Straight-line forms and angle between two lines", "Circle equation and tangent conditions", "Standard forms of parabola, ellipse and hyperbola"],
+      "formulas": ["Distance of point from line: |ax1+by1+c|/√(a²+b²)", "Circle: x²+y²+2gx+2fy+c=0, centre (-g,-f), radius √(g²+f²-c)", "Parabola y²=4ax; Ellipse x²/a²+y²/b²=1; Hyperbola x²/a²-y²/b²=1"],
+      "methods": ["Convert the given circle/conic equation to standard form by completing the square before reading off centre, radius, or other standard parameters"],
+      "traps": ["Sign errors when converting the general circle equation to centre-radius form", "Confusing the major/minor axis orientation of an ellipse (a>b vs b>a)"],
+      "hard_archetypes": ["Locus problems combining circle/conic definitions with a moving-point condition", "Common-tangent or family-of-circles problems requiring simultaneous conic-equation manipulation"],
+      "banned_easy_templates": ["None by difficulty. A direct line-equation or circle-parameter identification question is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Axis translation/rotation techniques and the y=mx+c tangency-condition derivation (removed from this unit in the 2025 rationalisation)"]
+    },
+    "X11": {
+      "chapter": "Three Dimensional Geometry",
+      "concepts": ["Direction cosines and direction ratios", "Angle between two lines in space", "Shortest distance between skew lines"],
+      "formulas": ["l²+m²+n² = 1 (direction cosines)", "cos θ = (a1a2+b1b2+c1c2)/(√(a1²+b1²+c1²)·√(a2²+b2²+c2²))", "Shortest distance between skew lines via the vector triple-product formula"],
+      "methods": ["Normalise direction ratios into direction cosines before applying the angle-between-lines formula, to avoid magnitude-related errors"],
+      "traps": ["Confusing direction ratios (unnormalised) with direction cosines (normalised) in formulas that require one specifically", "Sign ambiguity when computing the angle between two lines (always take the acute angle)"],
+      "hard_archetypes": ["Given two skew lines in symmetric form, compute the shortest distance between them", "Problems requiring the equation of a line through a point with given direction ratios combined with an angle condition"],
+      "banned_easy_templates": ["None by difficulty. A direct direction-cosines or distance-between-two-points-in-space question is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Equations of a plane, intersection of a line and a plane, and coplanarity of lines (removed from this unit in the 2025 rationalisation)"]
+    },
+    "X12": {
+      "chapter": "Vector Algebra",
+      "concepts": ["Vector addition and scalar multiplication", "Dot product and its applications (angle, projection)", "Cross product and its applications (area, perpendicularity)"],
+      "formulas": ["a·b = |a||b|cos θ", "a×b = |a||b|sin θ · n̂", "Area of a triangle with two given sides as vectors = (1/2)|a×b|"],
+      "methods": ["Express all given points as position vectors from a common origin before computing a vector between two points as (position vector of head) - (position vector of tail)"],
+      "traps": ["Confusing dot product (scalar result) with cross product (vector result) when the problem asks for area vs angle", "Sign/direction errors in the cross product due to non-commutativity (a×b = -b×a)"],
+      "hard_archetypes": ["Problems combining collinearity/coplanarity conditions with vector algebra (e.g. show three points are collinear using vectors)", "Projection and component-of-a-vector-along-another-vector problems in a geometric context"],
+      "banned_easy_templates": ["None by difficulty. A direct dot-product or cross-product computation is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Scalar and vector triple product (removed from this unit in the 2025 rationalisation)"]
+    },
+    "X13": {
+      "chapter": "Statistics and Probability",
+      "concepts": ["Mean/median/mode of grouped data", "Standard deviation and variance", "Conditional probability and Baye's theorem"],
+      "formulas": ["Variance σ² = Σf(x-x̄)²/Σf", "P(A|B) = P(A∩B)/P(B)", "Baye's theorem: P(Ai|B) = P(B|Ai)P(Ai) / ΣP(B|Aj)P(Aj)"],
+      "methods": ["Construct a frequency-times-deviation table systematically before computing mean/variance for grouped data, to avoid arithmetic slips"],
+      "traps": ["Using the population-variance formula for grouped data without the correct frequency weighting", "Misapplying Baye's theorem by using P(B|A) where P(A|B) is required, or vice versa"],
+      "hard_archetypes": ["Multi-stage conditional-probability problems (e.g. drawing without replacement across multiple stages)", "Problems requiring construction and use of a full probability distribution table (mean and variance of a random variable)"],
+      "banned_easy_templates": ["None by difficulty. A direct mean/median/mode-from-a-table or basic-probability question is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Bernoulli trials and binomial distribution (removed from this unit in the 2025 rationalisation)"]
+    },
+    "X14": {
+      "chapter": "Trigonometry",
+      "concepts": ["Solving trigonometric equations", "Trigonometric identities (sum-to-product, product-to-sum)", "Properties of inverse trigonometric functions"],
+      "formulas": ["sin(A±B) = sinA cosB ± cosA sinB", "General solution of sinθ=sinα: θ = nπ+(-1)^n α", "sin⁻¹x + cos⁻¹x = π/2"],
+      "methods": ["Reduce a trigonometric equation to a single trigonometric function of a single angle before applying the general-solution formula"],
+      "traps": ["Forgetting the general solution's full family (adding 2nπ or nπ as appropriate) instead of giving only the principal value", "Applying inverse-trig-function identities outside their valid domain/range"],
+      "hard_archetypes": ["Trigonometric equations requiring a substitution (e.g. t=tan(θ/2)) to reduce to a polynomial equation", "Problems requiring simplification of a sum/difference of inverse trigonometric functions to a single value"],
+      "banned_easy_templates": ["None by difficulty. A direct identity-application or principal-value question is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Heights and distances applications (removed from this unit in the 2025 rationalisation)"]
+    }
+  }
+}

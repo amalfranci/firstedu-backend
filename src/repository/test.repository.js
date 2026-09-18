@@ -2,6 +2,7 @@ import Test from "../models/Test.js";
 import TestBundle from "../models/TestBundle.js";
 import Question from "../models/Question.js";
 import QuestionBank from "../models/QuestionBank.js";
+import AiQuestionBank from "../models/AiQuestionBank.js";
 import { ApiError } from "../utils/ApiError.js";
 import categoryRepository from "./category.repository.js";
 import CourseTestLink from "../models/CourseTestLink.js";
@@ -25,7 +26,7 @@ const populateQuestionBankWithCategories = (query) => {
     })
     .populate({
       path: "aiQuestionBank",
-      select: "name categories overallDifficulty aiProvider",
+      select: "name categories overallDifficulty aiProvider questionCount useSectionWise sections",
       populate: { path: "categories", select: "name _id" },
     });
 };
@@ -64,14 +65,20 @@ const findAllTests = async (filter = {}, options = {}) => {
 
     if (category) {
       const descendantIds = await categoryRepository.findDescendantIds(category);
-      const bankIds = await QuestionBank.find({ categories: { $in: descendantIds } }).distinct("_id");
-      
+      const bankIds = await QuestionBank.find({
+        categories: { $in: descendantIds },
+      }).distinct("_id");
+      const aiBankIds = await AiQuestionBank.find({
+        categories: { $in: descendantIds },
+      }).distinct("_id");
+
       query.$and = query.$and || [];
       query.$and.push({
         $or: [
           { questionBank: { $in: bankIds } },
-          { categoryId: { $in: descendantIds } }
-        ]
+          { aiQuestionBank: { $in: aiBankIds } },
+          { categoryId: { $in: descendantIds } },
+        ],
       });
     }
 

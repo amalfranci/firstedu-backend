@@ -1,0 +1,79 @@
+{
+  "exam": "IBPS PO Prelims",
+  "year": 2026,
+  "cycle": "IBPS PO Prelims 2026 (CRP PO/MT-XVI)",
+  "data_provenance": "IBPS CRP PO/MT Prelims classic split corroborated across Oliveboard/Testbook/PracticeMock (Sep 2026): English 30 / Quantitative Aptitude 35 / Reasoning Ability 35 = 100Q / 100 marks / 60 minutes (20 min per section). Confirm against ibps.in CRP PO/MT-XVI notification before production use.",
+  "important_caveat": "A minority of trackers report Reasoning 40 / Quant 30 for CRP PO/MT-XVI Prelims; this seed uses the classic 30/35/35 split. Prelims is qualifying only (does not count toward final merit).",
+  "exam_day": {
+    "mandatory_both_papers": false,
+    "note": "Single CBT. Strict independent sectional timing — 20 minutes per section; no switching or carrying unused time."
+  },
+  "subjects": ["English", "Quantitative Aptitude", "Reasoning Ability"],
+  "bank_subjects": ["English", "Quantitative Aptitude", "Reasoning Ability"],
+  "structure_per_subject_per_paper": {
+    "Paper_1": {
+      "paper_number": 1,
+      "label": "IBPS PO Prelims",
+      "session": "varies",
+      "start_time": "",
+      "end_time": "",
+      "duration_minutes": 60,
+      "total_marks": 100,
+      "questions_per_subject": 33,
+      "total_questions": 100,
+      "overall_difficulty": "Moderate; DI and Puzzles/Seating skew harder and more time-costly",
+      "section_1_single_correct": {
+        "questions": 100,
+        "options": 5,
+        "type": "single",
+        "note": "IBPS PO Prelims is 5-option single-correct MCQ only. Per-section sizes in all_subjects_table: English 30 / Quant 35 / Reasoning 35."
+      },
+      "section_2_multi_correct": { "questions": 0, "options": 4, "type": "multi" },
+      "section_3_numerical": { "questions": 0, "options": 0, "type": "integer" },
+      "section_4_match_list": { "questions": 0, "options": 4, "type": "match" },
+      "section_5_paragraph": { "questions": 0, "options": 4, "type": "paragraph" },
+      "formats": ["Single Correct MCQ (5 options)"],
+      "marking": {
+        "mcq": "+1 / -0.25 / 0",
+        "note": "Sectional + overall cut-offs apply. Prelims score does not count toward final merit."
+      }
+    }
+  },
+  "all_subjects_table": {
+    "English": {
+      "questions": 30,
+      "marks": 30,
+      "duration_minutes": 20,
+      "section_id": "ENG",
+      "label": "English Language"
+    },
+    "Quantitative Aptitude": {
+      "questions": 35,
+      "marks": 35,
+      "duration_minutes": 20,
+      "section_id": "QUANT",
+      "label": "Quantitative Aptitude"
+    },
+    "Reasoning Ability": {
+      "questions": 35,
+      "marks": 35,
+      "duration_minutes": 20,
+      "section_id": "REASON",
+      "label": "Reasoning Ability"
+    }
+  },
+  "grand_total_across_subjects": {
+    "paper1": 100,
+    "marks_paper1": 100,
+    "duration_minutes": 60,
+    "sections": 3
+  },
+  "option_count_rule": {
+    "single": 5,
+    "multi": 0,
+    "integer": 0,
+    "match": 0,
+    "paragraph": 0
+  },
+  "question_types_note": "IBPS PO Prelims uses only 5-option single-correct MCQ. DI and puzzle sets are linked singles, not multi-correct or numerical entry."
+}

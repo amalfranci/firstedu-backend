@@ -1,0 +1,43 @@
+{
+  "subject": "Chemistry",
+  "exam_context": "NEET UG 2026 - Chemistry section only, 50 questions printed (35 compulsory + 15 choice-of-10) / 45 scored questions / 180 marks",
+  "data_provenance": "Estimated from PYQ-trend analysis and chapter-wise-weightage trackers aggregated across 2025 and 2026 NEET sessions (including the 21 June 2026 Re-NEET UG), not official NTA data; last grounded Sep 2026. Treat as multi-session averages, not a guarantee of any single paper's composition.",
+  "topics": {
+    "C01": { "chapter": "Some Basic Concepts of Chemistry", "neet_freq_band": "medium", "avg_q_per_session_neet": "1-2", "approx_weightage_pct": "3", "difficulty_split": {"easy":50,"medium":35,"hard":15}, "notes": "Stoichiometry/mole-concept numericals are a recurring easy-to-medium scorer." },
+    "C02": { "chapter": "Structure of Atom", "neet_freq_band": "medium", "avg_q_per_session_neet": "1", "approx_weightage_pct": "2-3", "difficulty_split": {"easy":50,"medium":35,"hard":15}, "notes": "Quantum numbers and electronic configuration are direct NCERT-line questions." },
+    "C03": { "chapter": "Classification of Elements and Periodicity in Properties", "neet_freq_band": "medium", "avg_q_per_session_neet": "1", "approx_weightage_pct": "2-3", "difficulty_split": {"easy":55,"medium":32,"hard":13}, "notes": "Periodic-trend comparisons are a recurring direct-recall archetype." },
+    "C04": { "chapter": "Chemical Bonding and Molecular Structure", "neet_freq_band": "very high", "avg_q_per_session_neet": "2-3", "approx_weightage_pct": "6-7", "difficulty_split": {"easy":40,"medium":40,"hard":20}, "notes": "Repeatedly flagged as one of the single highest-weightage Chemistry chapters; hybridisation and shape questions recur every session." },
+    "C05": { "chapter": "Chemical Thermodynamics", "neet_freq_band": "medium-high", "avg_q_per_session_neet": "1-2", "approx_weightage_pct": "4-5", "difficulty_split": {"easy":42,"medium":40,"hard":18}, "notes": "Hess's-law and enthalpy numericals are the dominant archetype." },
+    "C06": { "chapter": "Equilibrium", "neet_freq_band": "high", "avg_q_per_session_neet": "2", "approx_weightage_pct": "5-6", "difficulty_split": {"easy":40,"medium":40,"hard":20}, "notes": "pH, buffer and Ksp numericals are a consistently high-weightage archetype." },
+    "C07": { "chapter": "Redox Reactions", "neet_freq_band": "low-medium", "avg_q_per_session_neet": "1", "approx_weightage_pct": "2", "difficulty_split": {"easy":55,"medium":32,"hard":13}, "notes": "Balancing and oxidation-number identification questions." },
+    "C08": { "chapter": "Organic Chemistry - Some Basic Principles and Techniques", "neet_freq_band": "medium-high", "avg_q_per_session_neet": "1-2", "approx_weightage_pct": "4", "difficulty_split": {"easy":42,"medium":40,"hard":18}, "notes": "IUPAC nomenclature and inductive/resonance-effect questions recur; foundational for all later organic chapters." },
+    "C09": { "chapter": "Hydrocarbons", "neet_freq_band": "medium-high", "avg_q_per_session_neet": "1-2", "approx_weightage_pct": "4-5", "difficulty_split": {"easy":42,"medium":40,"hard":18}, "notes": "Reaction-mechanism and preparation questions; recurs across sessions." },
+    "C10": { "chapter": "Solid State", "neet_freq_band": "low", "avg_q_per_session_neet": "0-1", "approx_weightage_pct": "1-2", "difficulty_split": {"easy":55,"medium":33,"hard":12}, "notes": "Packing-efficiency and unit-cell numericals; usually 0-1 question." },
+    "C11": { "chapter": "Solutions", "neet_freq_band": "medium", "avg_q_per_session_neet": "1-2", "approx_weightage_pct": "3-4", "difficulty_split": {"easy":42,"medium":40,"hard":18}, "notes": "Colligative-property numericals recur." },
+    "C12": { "chapter": "Electrochemistry", "neet_freq_band": "medium-high", "avg_q_per_session_neet": "1-2", "approx_weightage_pct": "4-5", "difficulty_split": {"easy":40,"medium":40,"hard":20}, "notes": "Nernst-equation and conductance numericals are a recurring archetype." },
+    "C13": { "chapter": "Chemical Kinetics", "neet_freq_band": "medium", "avg_q_per_session_neet": "1", "approx_weightage_pct": "3", "difficulty_split": {"easy":42,"medium":40,"hard":18}, "notes": "Rate-law and half-life numericals recur." },
+    "C14": { "chapter": "p-Block Elements (Class 12)", "neet_freq_band": "high", "avg_q_per_session_neet": "2", "approx_weightage_pct": "5-6", "difficulty_split": {"easy":50,"medium":35,"hard":15}, "notes": "Direct NCERT-fact questions on properties/compounds; consistently flagged as high-weightage." },
+    "C15": { "chapter": "d and f Block Elements", "neet_freq_band": "high", "avg_q_per_session_neet": "1-2", "approx_weightage_pct": "4-5", "difficulty_split": {"easy":48,"medium":35,"hard":17}, "notes": "Oxidation-state and colour-of-ions questions are direct NCERT recall." },
+    "C16": { "chapter": "Coordination Compounds", "neet_freq_band": "very high", "avg_q_per_session_neet": "2", "approx_weightage_pct": "5-6", "difficulty_split": {"easy":42,"medium":40,"hard":18}, "notes": "Repeatedly flagged as a top-weightage chapter; nomenclature and isomerism questions recur." },
+    "C17": { "chapter": "Haloalkanes and Haloarenes", "neet_freq_band": "medium", "avg_q_per_session_neet": "1", "approx_weightage_pct": "3", "difficulty_split": {"easy":42,"medium":40,"hard":18}, "notes": "SN1/SN2 mechanism-based questions recur." },
+    "C18": { "chapter": "Alcohols, Phenols and Ethers", "neet_freq_band": "medium", "avg_q_per_session_neet": "1", "approx_weightage_pct": "3", "difficulty_split": {"easy":45,"medium":38,"hard":17}, "notes": "Preparation/property comparison questions recur." },
+    "C19": { "chapter": "Aldehydes, Ketones and Carboxylic Acids", "neet_freq_band": "very high", "avg_q_per_session_neet": "2", "approx_weightage_pct": "6-7", "difficulty_split": {"easy":42,"medium":40,"hard":18}, "notes": "Consistently the single highest-weightage organic chapter across trackers." },
+    "C20": { "chapter": "Amines", "neet_freq_band": "medium", "avg_q_per_session_neet": "1", "approx_weightage_pct": "3", "difficulty_split": {"easy":45,"medium":38,"hard":17}, "notes": "Basicity comparison and diazonium-salt questions recur." },
+    "C21": { "chapter": "Biomolecules", "neet_freq_band": "medium", "avg_q_per_session_neet": "1-2", "approx_weightage_pct": "3-4", "difficulty_split": {"easy":52,"medium":35,"hard":13}, "notes": "Direct NCERT-fact recall on carbohydrates/proteins/enzymes; a reliable easy-marks chapter." }
+  },
+  "broad_category_weightage_pct": {
+    "note": "Coarser cross-check figures, approximate % share of the 45-question scored Chemistry section, synthesised from multiple 2025-2026 PYQ trend sources.",
+    "Physical_Chemistry (C01,C02,C04,C05,C06,C07,C10,C11,C12,C13)": "32-36%",
+    "Inorganic_Chemistry (C03,C14,C15,C16)": "28-30%",
+    "Organic_Chemistry (C08,C09,C17,C18,C19,C20,C21)": "34-36%"
+  },
+  "marking_scheme": {
+    "source_note": "Confirmed via multiple Sep 2026 sources reporting on the 2026 and Re-NEET UG 2026 (21 June 2026) sessions.",
+    "section_a": "35 single-correct MCQs, all compulsory; +4 correct, -1 incorrect, 0 unattempted.",
+    "section_b": "15 single-correct MCQs, attempt any 10; +4 correct, -1 incorrect, 0 unattempted.",
+    "questions_printed_vs_scored": "50 printed, 45 scored per subject.",
+    "total_marks_chemistry": 180,
+    "total_marks_paper": 720,
+    "question_types_used": "Single-correct MCQ only."
+  }
+}

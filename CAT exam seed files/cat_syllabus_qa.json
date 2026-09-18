@@ -1,0 +1,55 @@
+{
+  "subject": "Quantitative Aptitude (QA)",
+  "exam": "CAT 2026 (Common Admission Test, MBA)",
+  "source_note": "Compiled from CAT 2025 (conducted 30 Nov 2025 by IIM Kozhikode) slot-wise analyses and multi-year (2021-2025) coaching-tracker PYQ weightage data, cross-checked Sep 2026. CAT has no officially published syllabus document; topic lists here reflect NCERT Class 9-10-level mathematics as consistently tested across recent years' papers. Always cross-check against the current-year CAT official notification/mock test.",
+  "exam_pattern_note": "CAT QA: 22 questions, 40-minute fixed time limit, no sectional choice. No sub-sections within QA (unlike DILR's set structure). Typically 14-17 MCQs and 5-8 TITA questions per slot.",
+  "topics": [
+    {
+      "topic_id": "Q01",
+      "chapter": "Arithmetic",
+      "subtopics": [
+        "Percentages", "Profit, Loss and Discount", "Simple and Compound Interest",
+        "Ratio, Proportion and Variation", "Averages", "Mixtures and Alligations",
+        "Time, Speed and Distance (including races, trains, boats/streams)", "Time and Work (including pipes and cisterns)"
+      ],
+      "note": "Consistently the single largest QA topic group across 2021-2025 (~40-42% of the section)."
+    },
+    {
+      "topic_id": "Q02",
+      "chapter": "Algebra",
+      "subtopics": [
+        "Linear equations and simultaneous equations", "Quadratic equations and polynomials",
+        "Inequalities and modulus", "Logarithms, surds and indices",
+        "Functions and graphs", "Sequences, series and progressions (AP, GP, HP)"
+      ],
+      "note": "Second-largest topic group (~30-32% across 2021-2025); functions/graphs and progressions are the sub-topics most likely to be perceived as 'hard'."
+    },
+    {
+      "topic_id": "Q03",
+      "chapter": "Geometry and Mensuration",
+      "subtopics": [
+        "Lines, angles and triangles (including similarity/congruence)", "Circles and their properties",
+        "Polygons and quadrilaterals", "Mensuration: area and volume of 2D/3D figures",
+        "Coordinate geometry (basic)"
+      ],
+      "note": "~14-18% of the section across 2021-2025; steady but consistently smaller than Arithmetic/Algebra."
+    },
+    {
+      "topic_id": "Q04",
+      "chapter": "Number System",
+      "subtopics": [
+        "Divisibility rules and factors", "LCM and HCF", "Remainder theorem",
+        "Base systems, digit-based problems", "Factorials and trailing zeroes"
+      ],
+      "note": "~9-10% of the section; fewer questions but each often conceptually dense."
+    },
+    {
+      "topic_id": "Q05",
+      "chapter": "Modern Mathematics",
+      "subtopics": [
+        "Permutations and Combinations", "Probability", "Set Theory and Venn Diagrams"
+      ],
+      "note": "Smallest QA topic group (~2-9%, varies notably year to year); low volume but often high scoring-efficiency per question for well-prepared candidates."
+    }
+  ]
+}

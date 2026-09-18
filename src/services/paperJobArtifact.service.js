@@ -12,6 +12,7 @@ import { join } from "path";
 import { AsyncLocalStorage } from "node:async_hooks";
 import AiPaperGenerationJob from "../models/AiPaperGenerationJob.js";
 import AiPaperGenerationQuestion from "../models/AiPaperGenerationQuestion.js";
+import { dedupePaperQuestionsByStem } from "../utils/paperQuestionDedupe.js";
 
 const ROOT = join(process.cwd(), "temp", "paper-jobs");
 const questionCtx = new AsyncLocalStorage();
@@ -251,13 +252,18 @@ export const saveQuestionSnapshot = (jobId, item = {}) => {
 export const saveGeneratedPaperDraft = (jobId, questions = [], extra = {}) => {
   if (!jobId) return;
   bindPaperJob(jobId);
+  const unique = dedupePaperQuestionsByStem(questions || []);
   writeJson(join(jobDir(jobId), "generated-paper.json"), {
     ts: new Date().toISOString(),
     jobId,
     status: extra.status || "temporary",
-    count: Array.isArray(questions) ? questions.length : 0,
-    questions: questions || [],
+    count: unique.length,
+    questions: unique,
     ...extra,
+    counts: {
+      ...(extra.counts || {}),
+      total: unique.length,
+    },
   });
 };
 
@@ -265,15 +271,40 @@ export const persistJobRecord = async (jobId, patch = {}) => {
   if (!jobId) return;
   try {
     const tokens = readTokenSummary(jobId);
+    const status = patch.status != null ? String(patch.status) : undefined;
+    const completedAt =
+      status === "completed" || status === "failed"
+        ? patch.completedAt || new Date()
+        : patch.completedAt;
+    const counts = patch.counts || {};
+    const totalQuestions =
+      patch.totalQuestions ??
+      counts.expected ??
+      patch.config?.totalQuestions;
+    const completedQuestions =
+      patch.completedQuestions ?? counts.total;
+    const failedQuestions =
+      patch.failedQuestions ??
+      (Array.isArray(patch.failures) ? patch.failures.length : undefined);
+
     await AiPaperGenerationJob.findOneAndUpdate(
       { jobId },
       {
         $set: {
           jobId,
+          generationId: patch.generationId || jobId,
           logDir: jobDir(jobId),
           tokenUsage: tokens.byModel,
           tokenCalls: (tokens.calls || []).slice(-80),
           ...patch,
+          ...(totalQuestions != null ? { totalQuestions: Number(totalQuestions) || 0 } : {}),
+          ...(completedQuestions != null
+            ? { completedQuestions: Number(completedQuestions) || 0 }
+            : {}),
+          ...(failedQuestions != null
+            ? { failedQuestions: Number(failedQuestions) || 0 }
+            : {}),
+          ...(completedAt != null ? { completedAt } : {}),
         },
       },
       { upsert: true, new: true }
@@ -287,18 +318,22 @@ export const persistQuestionRecord = async (jobId, item = {}) => {
   if (!jobId || item.seq == null) return;
   const tokens = summarizeCalls(item.tokenCalls || []);
   const locked = item.locked || item.raw || null;
+  const stage = item.stage || "queued";
   try {
     await AiPaperGenerationQuestion.findOneAndUpdate(
       { jobId, seq: item.seq },
       {
         $set: {
           jobId,
+          generationId: item.generationId || jobId,
           seq: item.seq,
+          sequence: item.seq,
           subject: item.subject || "",
           topicId: item.topicId || "",
           chapter: item.chapter || "",
           questionType: item.type || item.questionType || "single",
-          stage: item.stage || "queued",
+          stage,
+          status: stage,
           attempt: Number(item.attempt) || 1,
           answerKey: item.answerKey ?? item.locked?.correctAnswer ?? null,
           conceptSlot: item.conceptSlot || item.raw?._conceptSlot || "",
@@ -307,6 +342,8 @@ export const persistQuestionRecord = async (jobId, item = {}) => {
           questionText: String(
             locked?.questionText || item.raw?.questionText || ""
           ),
+          questionData: locked || item.raw || null,
+          verificationData: item.o3 || item.luna || item.verificationData || null,
           raw: item.raw || null,
           locked: item.locked || null,
           tokenCalls: item.tokenCalls || [],
@@ -320,9 +357,35 @@ export const persistQuestionRecord = async (jobId, item = {}) => {
   }
 };
 
+export const loadPersistedJob = async (jobId) => {
+  if (!jobId) return null;
+  try {
+    return await AiPaperGenerationJob.findOne({
+      $or: [{ jobId }, { generationId: jobId }],
+    }).lean();
+  } catch {
+    return null;
+  }
+};
+
+export const loadGeneratedPaperDraft = (jobId) => {
+  if (!jobId) return null;
+  try {
+    const filePath = join(jobDir(jobId), "generated-paper.json");
+    if (!existsSync(filePath)) return null;
+    return JSON.parse(readFileSync(filePath, "utf8"));
+  } catch {
+    return null;
+  }
+};
+
 export const loadPersistedQuestions = async (jobId) => {
   try {
-    return await AiPaperGenerationQuestion.find({ jobId }).sort({ seq: 1 }).lean();
+    return await AiPaperGenerationQuestion.find({
+      $or: [{ jobId }, { generationId: jobId }],
+    })
+      .sort({ seq: 1 })
+      .lean();
   } catch {
     return [];
   }

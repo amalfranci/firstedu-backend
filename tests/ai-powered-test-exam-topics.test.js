@@ -11,13 +11,31 @@ describe("ai-powered-test exam topics helpers", () => {
     expect(normalizeExamType("JEE Main")).toBe("jee_main");
     expect(normalizeExamType("jee-advanced")).toBe("jee_advanced");
     expect(normalizeExamType("NEET UG")).toBe("neet");
+    expect(normalizeExamType("GMAT Focus")).toBe("gmat");
+    expect(normalizeExamType("CLAT UG")).toBe("clat");
+    expect(normalizeExamType("IBPS PO Prelims")).toBe("ibps");
+    expect(normalizeExamType("SSC CGL Tier 1")).toBe("ssc_cgl_tier1");
+    expect(normalizeExamType("SSC CGL Tier 2")).toBe("ssc_cgl_tier2");
+    expect(normalizeExamType("UPSC CSE Prelims")).toBe("upsc");
     expect(normalizeExamType("")).toBe(null);
   });
 
   it("canonicalizes subject aliases", () => {
     expect(canonicalizeSubject("maths")).toBe("Mathematics");
     expect(canonicalizeSubject("PHYSICS")).toBe("Physics");
+    expect(canonicalizeSubject("qa")).toBe("QA");
+    expect(canonicalizeSubject("VARC")).toBe("VARC");
+    expect(canonicalizeSubject("CAT")).toBe(null);
     expect(canonicalizeSubject("")).toBe(null);
+  });
+
+  it("treats exam-as-subject as no subject filter for CAT", () => {
+    const inferred = inferExamAndSubject({
+      examType: "cat",
+      subject: "CAT",
+    });
+    expect(inferred.examType).toBe("cat");
+    expect(inferred.subject).toBe(null);
   });
 
   it("infers JEE Main Physics from a category path", () => {

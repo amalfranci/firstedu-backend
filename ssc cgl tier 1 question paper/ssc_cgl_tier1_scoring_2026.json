@@ -1,0 +1,41 @@
+{
+  "exam_context": "SSC CGL Tier 1 2026 — first stage of the two-tier selection process (Tier 1, Tier 2) for Combined Graduate Level Group B and C posts in various Indian central government ministries/departments.",
+  "data_provenance": "Estimated from SSC's official CGL exam pattern/notification as reported by multiple 2025-2026 coaching/exam-tracker sources (PhysicsWallah, Careers360, Adda247, CareerPower, Testbook, LearnTheta), cross-checked Sep 2026. The sectional-timing detail (15 minutes/section from 2026) is reported by some but not all trackers as of this check — flagged below as a recent, not-yet-universally-confirmed procedural change.",
+  "sections": {
+    "GIR": { "section_name": "General Intelligence and Reasoning", "num_questions": 25, "max_marks": 50, "sectional_time_minutes_2026_reported": 15 },
+    "GA": { "section_name": "General Awareness", "num_questions": 25, "max_marks": 50, "sectional_time_minutes_2026_reported": 15 },
+    "QA": { "section_name": "Quantitative Aptitude", "num_questions": 25, "max_marks": 50, "sectional_time_minutes_2026_reported": 15 },
+    "ENG": { "section_name": "English Comprehension", "num_questions": 25, "max_marks": 50, "sectional_time_minutes_2026_reported": 15 }
+  },
+  "marking_scheme": {
+    "source_note": "Confirmed via multiple Sep 2026 sources describing the SSC CGL Tier 1 marking pattern; unchanged across recent cycles.",
+    "correct_answer": "+2 marks (each of the 25 questions per section is worth 2 marks, for 50 marks/section)",
+    "incorrect_answer": "-0.50 mark (negative marking)",
+    "unattempted": "0 marks",
+    "total_questions": 100,
+    "total_marks": 200,
+    "qualifying_nature": "Tier 1 marks do NOT count toward the final merit list. Tier 1 is purely a qualifying/screening round — candidates must clear the Tier 1 cut-off to be shortlisted for Tier 2, where final ranking is decided.",
+    "normalization_note": "When Tier 1 is conducted across multiple shifts/days, scores are normalized across shifts to account for difficulty variation before cut-offs are applied.",
+    "sectional_cutoffs": "No official sectional cut-offs in Tier 1 — only an overall cut-off (category-wise) applies.",
+    "question_types_used": "Single-correct 5-option MCQ only. No descriptive, numerical-value, or multiple-correct questions in Tier 1."
+  },
+  "exam_logistics": {
+    "exam_mode": "Online, computer-based test (CBT)",
+    "total_duration_minutes": 60,
+    "extended_duration_pwd": "80 minutes for candidates with benchmark disabilities (scribe-eligible categories), per standard SSC accommodation policy",
+    "sectional_timing_2026_note": "Multiple 2026 trackers report SSC has introduced independent 15-minute sectional timing (section auto-closes when its time elapses) as a change from the earlier free-movement 60-minute format. Confirm against the live-cycle official notification, as this is a recent and not universally corroborated change.",
+    "medium_of_exam": "English and Hindi, except the English Comprehension section, which is tested only in English",
+    "selection_stages": ["Tier 1 (100 marks, qualifying only)", "Tier 2 Paper I (compulsory, all posts)", "Tier 2 Paper II (Statistics — JSO/Statistical Investigator Grade-II posts only)", "Tier 2 Paper III (General Studies Finance & Economics — AAO posts only)", "Document Verification"],
+    "final_merit_weighting_note": "Final selection merit is based on Tier 2 performance (and Tier 2's Computer Proficiency/DEST qualifying components where applicable); Tier 1 performance itself is not carried forward into the merit calculation."
+  },
+  "downstream_stage_context": {
+    "note": "Included for reference only — these stages are NOT part of the Tier 1 exam being seeded here.",
+    "tier2_paper1": {
+      "sections": ["Mathematical Abilities (30 Qs / 90 marks)", "Reasoning & General Intelligence (30 Qs / 90 marks)", "English Language & Comprehension (45 Qs / 135 marks)", "General Awareness (25 Qs / 75 marks)", "Computer Proficiency (20 Qs / 60 marks)"],
+      "total_questions": 150,
+      "total_marks": 450
+    },
+    "tier2_paper2_statistics": { "applicable_to": "JSO / Statistical Investigator Grade-II posts only", "total_questions": 100, "total_marks": 200 },
+    "dest": "Data Entry Speed Test — qualifying typing-speed test, no negative marking"
+  }
+}

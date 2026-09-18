@@ -4,6 +4,12 @@ import path from "path";
 const JOB_TTL_MS = Number(
     process.env.AI_QB_GENERATION_JOB_TTL_MS || 30 * 60 * 1000
 );
+/** Paper jobs (apt-*) can run for hours — never prune while active under 6h default. */
+const PAPER_JOB_TTL_MS = Number(
+    process.env.PAPER_JOB_TTL_MS ||
+        process.env.AI_QB_GENERATION_JOB_TTL_MS ||
+        6 * 60 * 60 * 1000
+);
 const JOB_KEEP_DONE_MS = Number(
     process.env.AI_QB_GENERATION_JOB_KEEP_MS || 7 * 24 * 60 * 60 * 1000
 );
@@ -69,7 +75,11 @@ const jobAgeMs = (job) => Date.now() - (job.updatedAt || job.createdAt || 0);
 
 const shouldPruneJob = (job) => {
     if (!job) return false;
-    if (isActiveStatus(job.status)) return jobAgeMs(job) > JOB_TTL_MS;
+    const isPaper =
+        String(job.pipeline || "") === "jee_advanced_luna_verify" ||
+        String(job.jobId || "").startsWith("apt-");
+    const activeTtl = isPaper ? PAPER_JOB_TTL_MS : JOB_TTL_MS;
+    if (isActiveStatus(job.status)) return jobAgeMs(job) > activeTtl;
     return jobAgeMs(job) > JOB_KEEP_DONE_MS;
 };
 
@@ -116,9 +126,37 @@ export const createGenerationJob = (jobId, payload = {}) => {
 export const updateGenerationJob = (jobId, patch = {}) => {
     const existing = jobs.get(jobId) || readJobFromDisk(jobId);
     if (!existing) return null;
+    let nextPatch = patch;
+    if (Array.isArray(patch.questions) && patch.questions.length) {
+        const seen = new Set();
+        const unique = [];
+        for (const q of patch.questions) {
+            if (!q) continue;
+            const key = String(q.questionText || q.text || q.title || "")
+                .replace(/\s+/g, " ")
+                .trim()
+                .toLowerCase()
+                .slice(0, 280);
+            if (key && seen.has(key)) continue;
+            if (key) seen.add(key);
+            unique.push(q);
+        }
+        if (unique.length !== patch.questions.length) {
+            nextPatch = {
+                ...patch,
+                questions: unique,
+                completedQuestions: unique.length,
+                counts: {
+                    ...(existing.counts || {}),
+                    ...(patch.counts || {}),
+                    total: unique.length,
+                },
+            };
+        }
+    }
     const updated = {
         ...existing,
-        ...patch,
+        ...nextPatch,
         jobId,
         updatedAt: Date.now(),
     };
@@ -127,16 +165,26 @@ export const updateGenerationJob = (jobId, patch = {}) => {
     return updated;
 };
 
-export const getGenerationJob = (jobId) => {
+export const getGenerationJob = (jobId, { refresh = false } = {}) => {
     pruneExpiredJobs();
-    const cached = jobs.get(jobId);
-    if (cached) return cached;
+    if (!refresh) {
+        const cached = jobs.get(jobId);
+        if (cached) {
+            // Paper jobs are updated by a separate worker process — always prefer disk.
+            const isPaper =
+                String(cached.pipeline || "") === "jee_advanced_luna_verify" ||
+                String(jobId || "").startsWith("apt-");
+            if (!isPaper) return cached;
+        } else {
+            // fall through to disk
+        }
+    }
     const fromDisk = readJobFromDisk(jobId);
     if (fromDisk) {
         jobs.set(jobId, fromDisk);
         return fromDisk;
     }
-    return null;
+    return jobs.get(jobId) || null;
 };
 
 /**

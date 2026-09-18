@@ -1,0 +1,65 @@
+{
+  "exam": "NEET UG",
+  "year": 2026,
+  "cycle": "NEET UG 2026",
+  "data_provenance": "NTA/NMC NEET UG pattern as used in 2025–2026 sessions: Physics 50 printed (35 Section A compulsory + 15 Section B attempt-any-10), Chemistry same 50/45 scored, Biology 100 printed (70 + 30 attempt-any-20) → 90 scored. All single-correct MCQs (+4/−1). Confirm against current NTA information bulletin before production use.",
+  "important_caveat": "NTA can revise section counts or the Section B choice rule. Prefer seeded ExamPaperPattern documents when present; this file is the seed source for 2026.",
+  "exam_day": {
+    "mandatory_both_papers": false,
+    "note": "NEET UG is a single computer-based paper (Physics + Chemistry + Biology). Botany/Zoology are coaching/bank splits of the one Biology section, not separate NTA papers."
+  },
+  "subjects": ["Physics", "Chemistry", "Biology"],
+  "bank_subjects": ["Physics", "Chemistry", "Botany", "Zoology"],
+  "structure_per_subject_per_paper": {
+    "Paper_1": {
+      "paper_number": 1,
+      "label": "NEET UG Paper",
+      "session": "varies",
+      "start_time": "",
+      "end_time": "",
+      "duration_minutes": 200,
+      "total_marks": 720,
+      "questions_per_subject": 45,
+      "total_questions": 200,
+      "total_questions_scored": 180,
+      "overall_difficulty": "NCERT-line recall/application (easy–medium dominant vs JEE)",
+      "section_1_single_correct": {
+        "questions": 45,
+        "options": 4,
+        "type": "single",
+        "note": "Per Physics/Chemistry scored count (35 Section A + best 10 of 15 Section B). Biology scored = 90."
+      },
+      "section_2_multi_correct": { "questions": 0, "options": 4, "type": "multi" },
+      "section_3_numerical": { "questions": 0, "options": 0, "type": "integer" },
+      "section_4_match_list": { "questions": 0, "options": 4, "type": "match" },
+      "section_5_paragraph": { "questions": 0, "options": 4, "type": "paragraph" },
+      "formats": ["Single Correct MCQ"],
+      "marking": {
+        "mcq_single": "+4 / -1 / 0",
+        "section_b_note": "Physics/Chemistry: attempt any 10 of 15; Biology: attempt any 20 of 30. Best attempted count toward score."
+      }
+    }
+  },
+  "all_subjects_table": {
+    "Physics": { "printed": 50, "section_a": 35, "section_b": 15, "scored": 45, "marks": 180 },
+    "Chemistry": { "printed": 50, "section_a": 35, "section_b": 15, "scored": 45, "marks": 180 },
+    "Biology": { "printed": 100, "section_a": 70, "section_b": 30, "scored": 90, "marks": 360 },
+    "Botany": { "scored_convention": 45, "note": "Bank split of Biology; not a separate NTA section" },
+    "Zoology": { "scored_convention": 45, "note": "Bank split of Biology; not a separate NTA section" }
+  },
+  "grand_total_across_subjects": {
+    "paper1_printed": 200,
+    "paper1_scored": 180,
+    "marks_paper1": 720,
+    "physics_chemistry_scored_each": 45,
+    "biology_scored": 90
+  },
+  "option_count_rule": {
+    "single": 4,
+    "multi": 0,
+    "integer": 0,
+    "match": 0,
+    "paragraph": 0
+  },
+  "question_types_note": "NEET uses only single-correct MCQs. No numerical-value (JEE Main), multi-correct, or matrix-match (JEE Advanced)."
+}

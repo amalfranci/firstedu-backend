@@ -9,6 +9,7 @@ import {
     buildLogTimestampPrefix,
     topicSlug,
 } from '../utils/aiApiCallLogger.js';
+import { dedupePaperQuestionsByStem } from '../utils/paperQuestionDedupe.js';
 
 const LOG_ROOT = path.join(process.cwd(), 'temp', 'confirmed-questions');
 
@@ -186,7 +187,9 @@ export const logConfirmedQuestionsToFile = async ({
     sectionIndex = null,
     questions = [],
 }) => {
-    const list = Array.isArray(questions) ? questions.filter(Boolean) : [];
+    const list = dedupePaperQuestionsByStem(
+        Array.isArray(questions) ? questions.filter(Boolean) : []
+    );
     if (!String(topic || '').trim()) {
         throw new Error('Topic is required to log confirmed questions');
     }

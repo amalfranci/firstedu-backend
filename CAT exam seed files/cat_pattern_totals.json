@@ -1,0 +1,81 @@
+{
+  "exam": "CAT",
+  "year": 2026,
+  "cycle": "CAT 2026",
+  "data_provenance": "IIM CAT pattern as used in 2024–2025 sessions (CAT 2025 conducted 30 Nov 2025 by IIM Kozhikode): 3 fixed sections × 40 minutes (non-transferable), VARC 24 + DILR 22 + QA 22 = 68 questions. MCQ +3/−1; TITA +3/0. Confirm against current-year CAT notification/mock before production use.",
+  "important_caveat": "IIMs can rebalance section counts or MCQ/TITA mix without a formal syllabus PDF. Prefer seeded ExamPaperPattern documents when present; this file is the seed source for 2026.",
+  "exam_day": {
+    "mandatory_both_papers": false,
+    "note": "CAT is a single computer-based test with three timed sections. Slot-wise papers differ; pattern totals are stable."
+  },
+  "subjects": ["VARC", "DILR", "QA"],
+  "bank_subjects": ["VARC", "DILR", "QA"],
+  "structure_per_subject_per_paper": {
+    "Paper_1": {
+      "paper_number": 1,
+      "label": "CAT Slot Paper",
+      "session": "slot-varies",
+      "start_time": "",
+      "end_time": "",
+      "duration_minutes": 120,
+      "total_marks": 204,
+      "questions_per_subject": 22,
+      "total_questions": 68,
+      "overall_difficulty": "Adaptive-feel difficulty; DILR and Algebra often make-or-break",
+      "section_1_single_correct": {
+        "questions": 16,
+        "options": 4,
+        "type": "single",
+        "note": "Typical MCQ share per ~22-question section (VARC leans more MCQ; QA/DILR mix MCQ+TITA)."
+      },
+      "section_2_multi_correct": { "questions": 0, "options": 4, "type": "multi" },
+      "section_3_numerical": {
+        "questions": 6,
+        "options": 0,
+        "type": "integer",
+        "note": "TITA (type-in-the-answer); no negative marking."
+      },
+      "section_4_match_list": { "questions": 0, "options": 4, "type": "match" },
+      "section_5_paragraph": { "questions": 0, "options": 4, "type": "paragraph" },
+      "formats": ["Single Correct MCQ", "TITA"],
+      "marking": {
+        "mcq": "+3 / -1 / 0",
+        "tita": "+3 / 0 / 0 (no negative marking)"
+      }
+    }
+  },
+  "all_subjects_table": {
+    "VARC": {
+      "questions": 24,
+      "marks": 72,
+      "duration_minutes": 40,
+      "typical_mix": "RC ~16 MCQ + VA ~8 (MCQ/TITA mix)"
+    },
+    "DILR": {
+      "questions": 22,
+      "marks": 66,
+      "duration_minutes": 40,
+      "typical_mix": "4 sets × ~5–6 questions (MCQ + TITA)"
+    },
+    "QA": {
+      "questions": 22,
+      "marks": 66,
+      "duration_minutes": 40,
+      "typical_mix": "~14–17 MCQ + ~5–8 TITA"
+    }
+  },
+  "grand_total_across_subjects": {
+    "paper1": 68,
+    "marks_paper1": 204,
+    "duration_minutes": 120,
+    "sections": 3
+  },
+  "option_count_rule": {
+    "single": 4,
+    "multi": 0,
+    "integer": 0,
+    "match": 0,
+    "paragraph": 0
+  },
+  "question_types_note": "CAT uses single-correct MCQ and TITA only. No multi-correct or matrix-match."
+}

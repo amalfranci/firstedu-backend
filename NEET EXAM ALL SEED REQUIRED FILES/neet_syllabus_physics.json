@@ -1,0 +1,239 @@
+{
+  "subject": "Physics",
+  "exam": "NEET UG 2026",
+  "source_note": "Compiled from the NTA/NMC NEET UG 2026 syllabus (officially released 8 Jan 2026, largely a continuation of the 2023-24 NCERT-rationalised syllabus) as reported by multiple 2025-2026 coaching/exam-tracker sources, cross-checked Sep 2026. NEET Physics has no separate 'Experimental Skills' unit the way JEE Main does; practicals/experiments are examined inside their parent theory units instead. Always verify against the current-year official NTA/NMC syllabus PDF (neet.nta.nic.in / nmc.org.in) before finalising a question bank, since sub-topic deletions are revised between sessions.",
+  "exam_pattern_note": "NEET UG Physics: 50 questions printed (Section A: 35 single-correct MCQs, all compulsory; Section B: 15 single-correct MCQs, attempt any 10 - the best 10 attempted are scored). Only single-correct MCQ format is used; NEET has no numerical-value question type (unlike JEE Main Section B) and no multiple-correct or matrix-match formats.",
+  "topics": [
+    {
+      "topic_id": "P01",
+      "chapter": "Physical World and Measurement",
+      "class_level": "11",
+      "subtopics": [
+        "Units for measurement, SI units, fundamental and derived units",
+        "Dimensional formulae and dimensional analysis",
+        "Errors in measurement: absolute, relative, percentage error",
+        "Significant figures"
+      ],
+      "syllabus_change_note": "2024-25 rationalisation dropped 'Physics, technology and society' and detailed instrument-accuracy/precision content as separately examinable."
+    },
+    {
+      "topic_id": "P02",
+      "chapter": "Kinematics",
+      "class_level": "11",
+      "subtopics": [
+        "Motion in a straight line: position-time and velocity-time graphs, uniform and non-uniform acceleration",
+        "Scalars and vectors, vector addition and resolution",
+        "Motion in a plane, projectile motion",
+        "Uniform circular motion"
+      ]
+    },
+    {
+      "topic_id": "P03",
+      "chapter": "Laws of Motion",
+      "class_level": "11",
+      "subtopics": [
+        "Newton's three laws of motion and applications",
+        "Conservation of linear momentum and its applications",
+        "Equilibrium of concurrent forces",
+        "Static and kinetic friction, laws of friction",
+        "Dynamics of uniform circular motion: centripetal force, banking of roads"
+      ],
+      "syllabus_change_note": "Rolling friction dropped as a separately examinable sub-topic in the NCERT-rationalised NEET syllabus."
+    },
+    {
+      "topic_id": "P04",
+      "chapter": "Work, Energy and Power",
+      "class_level": "11",
+      "subtopics": [
+        "Work done by a constant and a variable force, work-energy theorem",
+        "Kinetic and potential energy, conservation of mechanical energy",
+        "Elastic and inelastic collisions in one and two dimensions",
+        "Power"
+      ]
+    },
+    {
+      "topic_id": "P05",
+      "chapter": "Motion of System of Particles and Rigid Body",
+      "class_level": "11",
+      "subtopics": [
+        "Centre of mass of a two-particle system and of a rigid body",
+        "Moment of inertia, radius of gyration",
+        "Moment of inertia of simple bodies (ring, disc, rod, sphere, cylinder)",
+        "Torque, angular momentum and its conservation",
+        "Equilibrium of rigid bodies, rolling motion"
+      ]
+    },
+    {
+      "topic_id": "P06",
+      "chapter": "Gravitation",
+      "class_level": "11",
+      "subtopics": [
+        "Universal law of gravitation",
+        "Acceleration due to gravity and its variation with altitude and depth",
+        "Kepler's laws of planetary motion",
+        "Gravitational potential energy and gravitational potential, escape velocity",
+        "Orbital velocity of a satellite"
+      ]
+    },
+    {
+      "topic_id": "P07",
+      "chapter": "Properties of Bulk Matter",
+      "class_level": "11",
+      "subtopics": [
+        "Elastic behaviour, stress-strain relationship, Hooke's law, Young's modulus, bulk modulus, modulus of rigidity",
+        "Pressure in a fluid, Pascal's law, buoyancy",
+        "Surface tension, surface energy, angle of contact, capillary rise",
+        "Viscosity, Stokes' law, terminal velocity, streamline flow, Bernoulli's theorem",
+        "Heat, temperature, thermal expansion, specific heat capacity, calorimetry, change of state, heat transfer (conduction, convection, radiation)"
+      ],
+      "syllabus_change_note": "Poisson's ratio and Reynolds number dropped as separately examinable items in the rationalised syllabus."
+    },
+    {
+      "topic_id": "P08",
+      "chapter": "Thermodynamics",
+      "class_level": "11",
+      "subtopics": [
+        "Thermal equilibrium, zeroth law of thermodynamics",
+        "Heat, work, internal energy, first law of thermodynamics",
+        "Isothermal and adiabatic processes",
+        "Second law of thermodynamics, reversible and irreversible processes",
+        "Heat engines and refrigerators (qualitative)"
+      ],
+      "syllabus_change_note": "Detailed Carnot-cycle efficiency derivation trimmed to qualitative treatment in the rationalised syllabus."
+    },
+    {
+      "topic_id": "P09",
+      "chapter": "Behaviour of Perfect Gas and Kinetic Theory",
+      "class_level": "11",
+      "subtopics": [
+        "Equation of state of a perfect gas, work done in compressing a gas",
+        "Kinetic theory assumptions, concept of pressure",
+        "Kinetic interpretation of temperature, rms speed",
+        "Degrees of freedom, law of equipartition of energy, specific heats of gases",
+        "Mean free path, Avogadro's number"
+      ]
+    },
+    {
+      "topic_id": "P10",
+      "chapter": "Oscillations and Waves",
+      "class_level": "11",
+      "subtopics": [
+        "Periodic motion, simple harmonic motion (SHM) and its equation",
+        "Simple pendulum, spring-mass system, energy in SHM",
+        "Wave motion: longitudinal and transverse, speed of a travelling wave",
+        "Superposition of waves, standing waves in strings and organ pipes",
+        "Beats"
+      ],
+      "syllabus_change_note": "Doppler effect in sound and forced/damped-oscillation derivations dropped as separately examinable items in the NEET rationalised syllabus."
+    },
+    {
+      "topic_id": "P11",
+      "chapter": "Electrostatics",
+      "class_level": "12",
+      "subtopics": [
+        "Coulomb's law, electric field, field lines, electric dipole and dipole field",
+        "Torque on a dipole in a uniform electric field",
+        "Electric flux, Gauss's law and applications (line charge, sheet, spherical shell)",
+        "Electric potential, potential due to a point charge and a dipole, equipotential surfaces",
+        "Capacitance, parallel-plate capacitor with dielectric, capacitors in series/parallel, energy stored"
+      ],
+      "syllabus_change_note": "Van de Graaff generator dropped as a separately examinable sub-topic."
+    },
+    {
+      "topic_id": "P12",
+      "chapter": "Current Electricity",
+      "class_level": "12",
+      "subtopics": [
+        "Electric current, drift velocity, Ohm's law",
+        "Resistance, resistivity, temperature dependence",
+        "Series and parallel combinations of resistors and cells",
+        "Kirchhoff's laws, Wheatstone bridge, metre bridge",
+        "Potentiometer (basic principle and simple applications only)"
+      ],
+      "syllabus_change_note": "Detailed potentiometer-comparison-of-emfs derivations trimmed; qualitative principle and simple application remain examinable."
+    },
+    {
+      "topic_id": "P13",
+      "chapter": "Magnetic Effects of Current and Magnetism",
+      "class_level": "12",
+      "subtopics": [
+        "Biot-Savart law and Ampere's law, applications to straight wire, loop and solenoid",
+        "Force on a moving charge and on a current-carrying conductor in a magnetic field",
+        "Torque on a current loop, moving-coil galvanometer and conversion to ammeter/voltmeter",
+        "Bar magnet as an equivalent solenoid, basic magnetic properties of materials"
+      ],
+      "syllabus_change_note": "Cyclotron and Oersted's experiment dropped as separately examinable items."
+    },
+    {
+      "topic_id": "P14",
+      "chapter": "Electromagnetic Induction and Alternating Currents",
+      "class_level": "12",
+      "subtopics": [
+        "Faraday's laws of electromagnetic induction, Lenz's law",
+        "Self-inductance and mutual inductance",
+        "Alternating currents, peak and rms values",
+        "AC circuit with series LCR combination, resonance, power factor",
+        "AC generator and transformer"
+      ]
+    },
+    {
+      "topic_id": "P15",
+      "chapter": "Electromagnetic Waves",
+      "class_level": "12",
+      "subtopics": [
+        "Displacement current (qualitative)",
+        "Electromagnetic waves and their characteristics, transverse nature",
+        "Electromagnetic spectrum and typical uses of its bands"
+      ]
+    },
+    {
+      "topic_id": "P16",
+      "chapter": "Optics",
+      "class_level": "12",
+      "subtopics": [
+        "Reflection and refraction at plane and spherical surfaces, mirror and lens formulae, total internal reflection",
+        "Thin lens formula, lens maker's formula, power of a lens, combination of lenses",
+        "Refraction through a prism, dispersion",
+        "Wave nature of light, Huygens' principle",
+        "Young's double-slit interference, single-slit diffraction",
+        "Polarisation, Brewster's law, Polaroids"
+      ],
+      "syllabus_change_note": "Detailed optical-instrument (microscope/telescope) magnifying-power derivations reduced/dropped as separately examinable line items."
+    },
+    {
+      "topic_id": "P17",
+      "chapter": "Dual Nature of Matter and Radiation",
+      "class_level": "12",
+      "subtopics": [
+        "Photoelectric effect, Einstein's photoelectric equation",
+        "Particle nature of light: the photon",
+        "Matter waves, de Broglie relation"
+      ]
+    },
+    {
+      "topic_id": "P18",
+      "chapter": "Atoms and Nuclei",
+      "class_level": "12",
+      "subtopics": [
+        "Alpha-particle scattering, Rutherford's model, Bohr model, energy levels, hydrogen spectrum",
+        "Composition and size of the nucleus, mass-energy relation, mass defect",
+        "Binding energy per nucleon and its variation with mass number",
+        "Radioactivity: alpha, beta, gamma decay",
+        "Nuclear fission and fusion"
+      ]
+    },
+    {
+      "topic_id": "P19",
+      "chapter": "Electronic Devices",
+      "class_level": "12",
+      "subtopics": [
+        "Energy bands in solids (qualitative): conductors, insulators, semiconductors",
+        "p-n junction diode, I-V characteristics in forward and reverse bias",
+        "Diode as a rectifier",
+        "LED, photodiode, solar cell, Zener diode as a voltage regulator",
+        "Logic gates (OR, AND, NOT, NAND, NOR) and truth tables"
+      ],
+      "syllabus_change_note": "Transistor amplifier/oscillator circuit analysis dropped; qualitative diode and logic-gate behaviour remains examinable."
+    }
+  ]
+}

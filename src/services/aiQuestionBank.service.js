@@ -1,9 +1,11 @@
 import mongoose from "mongoose";
+import { randomUUID } from "crypto";
 import { ApiError } from "../utils/ApiError.js";
 import AiQuestion from "../models/AiQuestion.js";
 import aiQuestionBankRepository from "../repository/aiQuestionBank.repository.js";
 import categoryRepository from "../repository/category.repository.js";
 import { assertAiBankNotInUse } from "../utils/aiBankUsageGuard.js";
+import { dedupePaperQuestionsByStem } from "../utils/paperQuestionDedupe.js";
 import { logConfirmedQuestionsToFile } from "./confirmedQuestionsLogger.service.js";
 
 const getSectionIndexByCount = (sectionConfigs = [], questionIndex = 0) => {
@@ -186,18 +188,27 @@ export const createAiQuestionBankWithQuestions = async (data, createdBy) => {
   const bankName = String(data.name || "").trim();
   if (!bankName) throw new ApiError(400, "Bank name is required");
 
-  const duplicate = await aiQuestionBankRepository.findDuplicateName(
-    bankName,
-    createdBy
-  );
-  if (duplicate) {
+  // Each save is a new generation — never block on exam/subject display name reuse.
+  const generationId = String(data.generationId || randomUUID()).trim();
+  if (!generationId) throw new ApiError(400, "generationId is required");
+
+  const existingGen =
+    await aiQuestionBankRepository.findByGenerationId(generationId);
+  if (existingGen) {
     throw new ApiError(
       400,
-      `An AI question bank named "${duplicate.name}" already exists`
+      `A generation with id "${generationId}" already exists`
     );
   }
 
-  const questionsInput = data.questions || [];
+  const questionsInput = dedupePaperQuestionsByStem(data.questions || []);
+  if (questionsInput.length < (data.questions || []).length) {
+    console.warn(
+      `[ai-question-bank] dropped ${
+        (data.questions || []).length - questionsInput.length
+      } duplicate stem(s) before save`
+    );
+  }
   const overallDifficulty = data.overallDifficulty || "medium";
   const useSectionWise = data.useSectionWise ?? false;
   const sections = useSectionWise ? data.sections || [] : [];
@@ -219,10 +230,11 @@ export const createAiQuestionBankWithQuestions = async (data, createdBy) => {
       (sum, s) => sum + Number(s.count || 0),
       0
     );
-    if (questionsInput.length !== expectedCount) {
+    // After dedupe, allow fewer than section sum (empty seats were duplicates)
+    if (questionsInput.length > expectedCount) {
       throw new ApiError(
         400,
-        `Number of questions (${questionsInput.length}) must match total count (${expectedCount})`
+        `Number of questions (${questionsInput.length}) exceeds total count (${expectedCount})`
       );
     }
   }
@@ -236,6 +248,7 @@ export const createAiQuestionBankWithQuestions = async (data, createdBy) => {
     const bank = await aiQuestionBankRepository.create(
       {
         name: bankName,
+        generationId,
         categories: categoryIds,
         overallDifficulty,
         useSectionWise,

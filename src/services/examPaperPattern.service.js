@@ -83,6 +83,19 @@ export const toPaperTypeCounts = (docOrBlock = null, { scale = 1 } = {}) => {
 export const summarizeExamPapers = (papers = []) => {
   if (!papers.length) return null;
   const first = papers[0];
+  const quick = first.quickComparison || null;
+  const subjectCounts = {};
+  if (quick && typeof quick === "object") {
+    for (const [key, val] of Object.entries(quick)) {
+      if (!val || typeof val !== "object") continue;
+      const q =
+        Number(val.questions) ||
+        Number(val.scored) ||
+        Number(val.scored_convention) ||
+        0;
+      if (q > 0) subjectCounts[key] = q;
+    }
+  }
   return {
     examType: first.examType,
     examLabel: first.examLabel,
@@ -91,6 +104,7 @@ export const summarizeExamPapers = (papers = []) => {
     examDateLabel: first.examDateLabel,
     mandatoryBothPapers: Boolean(first.mandatoryBothPapers),
     subjects: first.subjects || [],
+    subjectCounts,
     papers: papers.map((p) => ({
       paperNumber: p.paperNumber,
       paperKey: p.paperKey,
@@ -107,6 +121,6 @@ export const summarizeExamPapers = (papers = []) => {
       typeCounts: p.typeCounts || toPaperTypeCounts(p),
       sections: p.sections || [],
     })),
-    quickComparison: first.quickComparison || null,
+    quickComparison: quick,
   };
 };

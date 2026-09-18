@@ -1,0 +1,409 @@
+{
+  "subject": "Physics",
+  "exam": "JEE Main 2026",
+  "purpose": "Per-topic target quotas for building a question BANK/dataset, not a simulation of a single session's paper. Multiply/scale as needed. Mirrors the structure of the JEE Advanced quotas file for the same subject so the two banks can be planned/compared side by side.",
+  "question_type_note": "JEE Main Paper 1 uses only two question formats per subject: single-correct MCQ (Section A, 20 questions/session) and numerical-value (Section B, 5 questions/session, all compulsory). There is no multiple-correct or matrix-match format in JEE Main — those exist only in JEE Advanced, so this file has no 'multi' or 'match' quota buckets.",
+  "difficulty_note": "Unlike the Advanced quotas file, JEE Main quotas include an 'easy' tier. JEE Main is a speed/accuracy exam built heavily on direct, single-concept, formula-application questions, and a realistic bank must include a large share of these rather than skipping to medium/hard.",
+  "topics": {
+    "M01": {
+      "chapter": "Physics and Measurement",
+      "relevance_tier": "low",
+      "quota_weight": 1,
+      "question_types": {
+        "mcq_single": {
+          "easy": 2,
+          "medium": 2,
+          "hard": 1,
+          "total": 5
+        },
+        "numerical": {
+          "easy": 1,
+          "medium": 2,
+          "hard": 1,
+          "total": 4
+        }
+      },
+      "topic_total_quota": 9
+    },
+    "M02": {
+      "chapter": "Kinematics",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": {
+          "easy": 4,
+          "medium": 4,
+          "hard": 2,
+          "total": 10
+        },
+        "numerical": {
+          "easy": 2,
+          "medium": 4,
+          "hard": 2,
+          "total": 8
+        }
+      },
+      "topic_total_quota": 18
+    },
+    "M03": {
+      "chapter": "Laws of Motion",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": {
+          "easy": 6,
+          "medium": 6,
+          "hard": 4,
+          "total": 16
+        },
+        "numerical": {
+          "easy": 4,
+          "medium": 6,
+          "hard": 4,
+          "total": 14
+        }
+      },
+      "topic_total_quota": 30
+    },
+    "M04": {
+      "chapter": "Work, Energy and Power",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": {
+          "easy": 4,
+          "medium": 4,
+          "hard": 2,
+          "total": 10
+        },
+        "numerical": {
+          "easy": 2,
+          "medium": 4,
+          "hard": 2,
+          "total": 8
+        }
+      },
+      "topic_total_quota": 18
+    },
+    "M05": {
+      "chapter": "Rotational Motion",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": {
+          "easy": 6,
+          "medium": 6,
+          "hard": 4,
+          "total": 16
+        },
+        "numerical": {
+          "easy": 4,
+          "medium": 6,
+          "hard": 4,
+          "total": 14
+        }
+      },
+      "topic_total_quota": 30
+    },
+    "M06": {
+      "chapter": "Gravitation",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": {
+          "easy": 4,
+          "medium": 4,
+          "hard": 2,
+          "total": 10
+        },
+        "numerical": {
+          "easy": 2,
+          "medium": 4,
+          "hard": 2,
+          "total": 8
+        }
+      },
+      "topic_total_quota": 18
+    },
+    "M07": {
+      "chapter": "Properties of Solids and Liquids",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": {
+          "easy": 4,
+          "medium": 4,
+          "hard": 2,
+          "total": 10
+        },
+        "numerical": {
+          "easy": 2,
+          "medium": 4,
+          "hard": 2,
+          "total": 8
+        }
+      },
+      "topic_total_quota": 18
+    },
+    "M08": {
+      "chapter": "Thermodynamics",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": {
+          "easy": 6,
+          "medium": 6,
+          "hard": 4,
+          "total": 16
+        },
+        "numerical": {
+          "easy": 4,
+          "medium": 6,
+          "hard": 4,
+          "total": 14
+        }
+      },
+      "topic_total_quota": 30
+    },
+    "M09": {
+      "chapter": "Kinetic Theory of Gases",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": {
+          "easy": 4,
+          "medium": 4,
+          "hard": 2,
+          "total": 10
+        },
+        "numerical": {
+          "easy": 2,
+          "medium": 4,
+          "hard": 2,
+          "total": 8
+        }
+      },
+      "topic_total_quota": 18
+    },
+    "M10": {
+      "chapter": "Oscillations and Waves",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": {
+          "easy": 4,
+          "medium": 4,
+          "hard": 2,
+          "total": 10
+        },
+        "numerical": {
+          "easy": 2,
+          "medium": 4,
+          "hard": 2,
+          "total": 8
+        }
+      },
+      "topic_total_quota": 18
+    },
+    "M11": {
+      "chapter": "Electrostatics",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": {
+          "easy": 6,
+          "medium": 6,
+          "hard": 4,
+          "total": 16
+        },
+        "numerical": {
+          "easy": 4,
+          "medium": 6,
+          "hard": 4,
+          "total": 14
+        }
+      },
+      "topic_total_quota": 30
+    },
+    "M12": {
+      "chapter": "Current Electricity",
+      "relevance_tier": "very_high",
+      "quota_weight": 4,
+      "question_types": {
+        "mcq_single": {
+          "easy": 8,
+          "medium": 8,
+          "hard": 6,
+          "total": 22
+        },
+        "numerical": {
+          "easy": 5,
+          "medium": 8,
+          "hard": 5,
+          "total": 18
+        }
+      },
+      "topic_total_quota": 40
+    },
+    "M13": {
+      "chapter": "Magnetic Effects of Current and Magnetism",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": {
+          "easy": 6,
+          "medium": 6,
+          "hard": 4,
+          "total": 16
+        },
+        "numerical": {
+          "easy": 4,
+          "medium": 6,
+          "hard": 4,
+          "total": 14
+        }
+      },
+      "topic_total_quota": 30
+    },
+    "M14": {
+      "chapter": "Electromagnetic Induction and Alternating Currents",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": {
+          "easy": 6,
+          "medium": 6,
+          "hard": 4,
+          "total": 16
+        },
+        "numerical": {
+          "easy": 4,
+          "medium": 6,
+          "hard": 4,
+          "total": 14
+        }
+      },
+      "topic_total_quota": 30
+    },
+    "M15": {
+      "chapter": "Electromagnetic Waves",
+      "relevance_tier": "low",
+      "quota_weight": 1,
+      "question_types": {
+        "mcq_single": {
+          "easy": 2,
+          "medium": 2,
+          "hard": 1,
+          "total": 5
+        },
+        "numerical": {
+          "easy": 1,
+          "medium": 2,
+          "hard": 1,
+          "total": 4
+        }
+      },
+      "topic_total_quota": 9
+    },
+    "M16": {
+      "chapter": "Optics",
+      "relevance_tier": "very_high",
+      "quota_weight": 4,
+      "question_types": {
+        "mcq_single": {
+          "easy": 8,
+          "medium": 8,
+          "hard": 6,
+          "total": 22
+        },
+        "numerical": {
+          "easy": 5,
+          "medium": 8,
+          "hard": 5,
+          "total": 18
+        }
+      },
+      "topic_total_quota": 40
+    },
+    "M17": {
+      "chapter": "Dual Nature of Matter and Radiation",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": {
+          "easy": 6,
+          "medium": 6,
+          "hard": 4,
+          "total": 16
+        },
+        "numerical": {
+          "easy": 4,
+          "medium": 6,
+          "hard": 4,
+          "total": 14
+        }
+      },
+      "topic_total_quota": 30
+    },
+    "M18": {
+      "chapter": "Atoms and Nuclei",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": {
+          "easy": 6,
+          "medium": 6,
+          "hard": 4,
+          "total": 16
+        },
+        "numerical": {
+          "easy": 4,
+          "medium": 6,
+          "hard": 4,
+          "total": 14
+        }
+      },
+      "topic_total_quota": 30
+    },
+    "M19": {
+      "chapter": "Electronic Devices",
+      "relevance_tier": "high",
+      "quota_weight": 3,
+      "question_types": {
+        "mcq_single": {
+          "easy": 6,
+          "medium": 6,
+          "hard": 4,
+          "total": 16
+        },
+        "numerical": {
+          "easy": 4,
+          "medium": 6,
+          "hard": 4,
+          "total": 14
+        }
+      },
+      "topic_total_quota": 30
+    },
+    "M20": {
+      "chapter": "Experimental Skills",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "question_types": {
+        "mcq_single": {
+          "easy": 4,
+          "medium": 4,
+          "hard": 2,
+          "total": 10
+        },
+        "numerical": {
+          "easy": 2,
+          "medium": 4,
+          "hard": 2,
+          "total": 8
+        }
+      },
+      "topic_total_quota": 18
+    }
+  }
+}

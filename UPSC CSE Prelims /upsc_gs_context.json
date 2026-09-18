@@ -1,0 +1,799 @@
+{
+  "subject": "General Studies (Paper I)",
+  "exam": "UPSC CSE Prelims 2027",
+  "schema_note": "Keyed by topic_id (matches upsc_gs_syllabus.json). Adapted from a formula-based schema to a fact/trap-based one suited to GS content.",
+  "topics": {
+    "U01": {
+      "concepts": [
+        "Indus Valley urban planning and trade",
+        "Vedic social/political structures",
+        "Mauryan administration and Ashokan Dhamma",
+        "Gupta-age scientific and cultural achievements"
+      ],
+      "key_facts": [
+        "Great Bath and granaries at Mohenjo-daro",
+        "Rigveda is the oldest Vedic text",
+        "Ashoka's edicts and their locations/scripts",
+        "Nalanda and Gupta-era mathematics/astronomy"
+      ],
+      "common_confusions": [
+        "Mixing up Harappan sites with distinctive features (dockyard at Lothal vs granary at Harappa)",
+        "Confusing Buddhist councils' locations and outcomes",
+        "Mixing up Ashokan edict numbers with content"
+      ],
+      "hard_archetypes": [
+        "Statement-based questions combining archaeological findings with textual sources",
+        "Matching dynasties to administrative innovations",
+        "Questions linking ancient trade routes to specific artifacts"
+      ],
+      "banned_easy_templates": [
+        "Plain 'who founded X dynasty' with no cross-linkage"
+      ],
+      "out_of_scope": [
+        "Niche epigraphical details beyond standard reference sources"
+      ]
+    },
+    "U02": {
+      "concepts": [
+        "Iqta and Mansabdari systems",
+        "Bhakti-Sufi syncretism",
+        "Maratha Ashtapradhan council"
+      ],
+      "key_facts": [
+        "Alauddin Khilji's market reforms",
+        "Akbar's Din-i-Ilahi and Mansabdari system",
+        "Shivaji's revenue and naval administration"
+      ],
+      "common_confusions": [
+        "Confusing Sultanate dynasties' chronology and founders",
+        "Mixing up Bhakti saints with regions/philosophies",
+        "Confusing Zabt/Dahsala (Mughal) with Sultanate revenue systems"
+      ],
+      "hard_archetypes": [
+        "Statement-based comparison of administration across Sultanate and Mughal periods",
+        "Monument-to-ruler-to-style matching",
+        "Questions on lesser-known regional kingdoms"
+      ],
+      "banned_easy_templates": [
+        "Direct 'who built X monument' with no additional layer"
+      ],
+      "out_of_scope": [
+        "Detailed numismatic classification"
+      ]
+    },
+    "U03": {
+      "concepts": [
+        "Phases of the national movement",
+        "Constitutional reforms (1909/1919/1935 Acts)",
+        "Revolutionary and INA activities"
+      ],
+      "key_facts": [
+        "Formation of INC (1885)",
+        "Gandhi's major movements and withdrawal reasons",
+        "Cabinet Mission Plan and Mountbatten Plan"
+      ],
+      "common_confusions": [
+        "Confusing sequence/dates of movements",
+        "Mixing up personalities with organizations/newspapers",
+        "Confusing provisions of successive Government of India Acts"
+      ],
+      "hard_archetypes": [
+        "Statement-based cause/consequence questions",
+        "Chronological ordering across events",
+        "Personality-to-lesser-known-contribution linkage"
+      ],
+      "banned_easy_templates": [
+        "Plain 'in which year did X happen' with no cause/effect link"
+      ],
+      "out_of_scope": [
+        "Purely local/regional movement details"
+      ]
+    },
+    "U04": {
+      "concepts": [
+        "Temple architecture styles (Nagara/Dravida/Vesara)",
+        "Classical dance/music gharanas",
+        "Miniature painting schools"
+      ],
+      "key_facts": [
+        "Distinguishing features of temple styles by region",
+        "UNESCO World Heritage Sites (cultural & natural)",
+        "GI tags for handicrafts/agri-products"
+      ],
+      "common_confusions": [
+        "Mixing up architectural features across regions",
+        "Confusing dance forms with originating states",
+        "Mixing up GI-tagged product states"
+      ],
+      "hard_archetypes": [
+        "Statement-based matching of art form to region/period",
+        "Recently added UNESCO sites or GI tags (current affairs overlap)"
+      ],
+      "banned_easy_templates": [
+        "Plain 'name the classical dance of state X'"
+      ],
+      "out_of_scope": [
+        "Highly technical art-historical terminology"
+      ]
+    },
+    "U05": {
+      "concepts": [
+        "Integration of princely states",
+        "Five-Year Plans' objectives",
+        "Non-Aligned Movement principles"
+      ],
+      "key_facts": [
+        "Sardar Patel's role in integration",
+        "States Reorganisation Act, 1956",
+        "Key outcomes of major Five-Year Plans"
+      ],
+      "common_confusions": [
+        "Confusing Plan focus areas across decades",
+        "Mixing up years/outcomes of India-Pakistan/China conflicts"
+      ],
+      "hard_archetypes": [
+        "Statement-based plan-wise policy shift questions",
+        "Foreign policy event-to-year linkage"
+      ],
+      "banned_easy_templates": [
+        "Direct 'first Five-Year Plan focused on X' recall only"
+      ],
+      "out_of_scope": [
+        "Granular plan-document statistics"
+      ]
+    },
+    "U06": {
+      "concepts": [
+        "Causes/consequences of World Wars",
+        "Cold War alignments",
+        "Decolonization waves"
+      ],
+      "key_facts": [
+        "Treaty of Versailles outcomes",
+        "UN formation and key organs",
+        "Major Cold War flashpoints"
+      ],
+      "common_confusions": [
+        "Confusing causes of WWI vs WWII",
+        "Mixing up decolonization timelines across continents"
+      ],
+      "hard_archetypes": [
+        "Statement-based linking of historical events to present institutions",
+        "Comparative revolution/ideology questions"
+      ],
+      "banned_easy_templates": [
+        "Plain 'when did WWII end' with no context"
+      ],
+      "out_of_scope": [
+        "Detailed military campaign specifics"
+      ]
+    },
+    "U07": {
+      "concepts": [
+        "Sources of the Constitution",
+        "Basic structure doctrine",
+        "Schedules and their contents"
+      ],
+      "key_facts": [
+        "Constituent Assembly composition/key committees",
+        "12 Schedules and their coverage",
+        "Major amendments (42nd, 44th, 73rd, 74th, 101st)"
+      ],
+      "common_confusions": [
+        "Confusing which Schedule covers which subject",
+        "Mixing up borrowed features by source country",
+        "Confusing amendment vs basic-structure limits"
+      ],
+      "hard_archetypes": [
+        "Statement-based Schedule/amendment specifics",
+        "Constituent Assembly personality-to-committee linkage"
+      ],
+      "banned_easy_templates": [
+        "Plain 'India borrowed X from Y country' with no nuance"
+      ],
+      "out_of_scope": [
+        "Verbatim article-text memorization"
+      ]
+    },
+    "U08": {
+      "concepts": [
+        "Justiciability of FR vs non-justiciability of DPSP",
+        "Reasonable restrictions on rights",
+        "Fundamental Duties list"
+      ],
+      "key_facts": [
+        "Article-wise rights (14-32)",
+        "DPSP categories (Gandhian/Socialist/Liberal)",
+        "Landmark cases: Kesavananda Bharati, Maneka Gandhi, Golaknath"
+      ],
+      "common_confusions": [
+        "Confusing rights for citizens-only vs all persons",
+        "Mixing up specific Articles with specific rights",
+        "Confusing DPSP vs FR articles"
+      ],
+      "hard_archetypes": [
+        "Statement-based exceptions/restrictions questions",
+        "Judgment-to-principle linkage"
+      ],
+      "banned_easy_templates": [
+        "Direct 'Article X deals with Y' one-liner recall"
+      ],
+      "out_of_scope": [
+        "Full case citations/bench compositions"
+      ]
+    },
+    "U09": {
+      "concepts": [
+        "Legislative procedure for ordinary/money/financial bills",
+        "Presidential powers (ordinance, veto types)",
+        "No-confidence motion procedure"
+      ],
+      "key_facts": [
+        "Money Bill vs Financial Bill distinction",
+        "Joint sitting provisions (Article 108)",
+        "Parliamentary committee types"
+      ],
+      "common_confusions": [
+        "Confusing Rajya Sabha's limited Money Bill role",
+        "Mixing up veto types (absolute/suspensive/pocket)",
+        "Confusing Estimates vs Public Accounts Committee"
+      ],
+      "hard_archetypes": [
+        "Statement-based legislative procedure sequencing",
+        "Overlapping-power distinction questions"
+      ],
+      "banned_easy_templates": [
+        "Plain 'who is the current X' factual recall alone"
+      ],
+      "out_of_scope": [
+        "Detailed procedural rules of business"
+      ]
+    },
+    "U10": {
+      "concepts": [
+        "Union/State/Concurrent list relations",
+        "73rd/74th Amendment structures",
+        "Special status provisions"
+      ],
+      "key_facts": [
+        "Three-tier Panchayati Raj structure",
+        "Article 370 background and 2019 changes",
+        "Finance Commission's Centre-State transfer role"
+      ],
+      "common_confusions": [
+        "Confusing subject-list classification",
+        "Mixing up 73rd (Panchayats) vs 74th (Municipalities) provisions"
+      ],
+      "hard_archetypes": [
+        "Statement-based List classification questions",
+        "Gram Sabha/DPC functioning questions"
+      ],
+      "banned_easy_templates": [
+        "Plain 'Panchayati Raj introduced in which year' recall only"
+      ],
+      "out_of_scope": [
+        "State-specific PR Act variations"
+      ]
+    },
+    "U11": {
+      "concepts": [
+        "Judicial review and PIL mechanism",
+        "Collegium appointment process",
+        "Roles of constitutional/statutory bodies"
+      ],
+      "key_facts": [
+        "Composition/functions of ECI, CAG, UPSC",
+        "NHRC vs Lokpal jurisdiction differences",
+        "Emergency provisions (Art 352/356/360)"
+      ],
+      "common_confusions": [
+        "Confusing constitutional vs statutory vs quasi-judicial bodies",
+        "Mixing up grounds/effects of the three Emergency types"
+      ],
+      "hard_archetypes": [
+        "Statement-based body-classification questions",
+        "Emergency-specific power/limitation questions"
+      ],
+      "banned_easy_templates": [
+        "Direct 'who appoints X' one-liner recall"
+      ],
+      "out_of_scope": [
+        "Full tribunal list and bench structures"
+      ]
+    },
+    "U12": {
+      "concepts": [
+        "Plate tectonics and landform formation",
+        "Monsoon mechanism and jet streams",
+        "Ocean currents and climatic effects"
+      ],
+      "key_facts": [
+        "Plate boundary types and resulting landforms",
+        "El Nino/La Nina effects on monsoon",
+        "Major warm/cold ocean currents"
+      ],
+      "common_confusions": [
+        "Confusing convergent vs divergent boundary landforms",
+        "Mixing up El Nino (warming) vs La Nina (cooling)"
+      ],
+      "hard_archetypes": [
+        "Statement-based process-to-consequence linkage",
+        "Oceanography combined with disaster current affairs"
+      ],
+      "banned_easy_templates": [
+        "Plain 'define plate tectonics'"
+      ],
+      "out_of_scope": [
+        "Advanced geophysical modelling"
+      ]
+    },
+    "U13": {
+      "concepts": [
+        "Himalayan vs Peninsular river characteristics",
+        "Agro-climatic zone classification",
+        "Soil-vegetation correlation"
+      ],
+      "key_facts": [
+        "Perennial (snow-fed) vs seasonal (rain-fed) rivers",
+        "Major soil types and suited crops",
+        "Western vs Eastern Ghats rainfall patterns"
+      ],
+      "common_confusions": [
+        "Confusing river origin/tributary details across similarly named rivers",
+        "Mixing up soil-type distribution across states"
+      ],
+      "hard_archetypes": [
+        "Statement-based river-tributary-state linkage",
+        "Map-based ID combined with a physical characteristic"
+      ],
+      "banned_easy_templates": [
+        "Plain 'Ganga originates from X'"
+      ],
+      "out_of_scope": [
+        "Extremely minor tributary-level hydrology"
+      ]
+    },
+    "U14": {
+      "concepts": [
+        "Continental physical features and biomes",
+        "Koppen climate classification basics",
+        "Geopolitical chokepoints"
+      ],
+      "key_facts": [
+        "Major deserts, mountain ranges, and river systems by continent",
+        "Straits/canals of global trade significance",
+        "Population distribution patterns"
+      ],
+      "common_confusions": [
+        "Mixing up which strait/canal connects which water bodies",
+        "Confusing similarly named physical features across continents"
+      ],
+      "hard_archetypes": [
+        "Statement-based chokepoint-to-trade-route significance",
+        "Current-affairs-linked geopolitical geography (conflict zones, resource disputes)"
+      ],
+      "banned_easy_templates": [
+        "Plain 'which is the longest river in the world' isolated fact"
+      ],
+      "out_of_scope": [
+        "Country-by-country exhaustive physical geography"
+      ]
+    },
+    "U15": {
+      "concepts": [
+        "Mineral/energy resource distribution",
+        "Cropping patterns and irrigation",
+        "Industrial location factors"
+      ],
+      "key_facts": [
+        "Major mineral belts of India",
+        "Major crop belts and irrigation-dependent regions",
+        "Key industrial regions and their locational logic"
+      ],
+      "common_confusions": [
+        "Confusing mineral distribution across similar-sounding states",
+        "Mixing up crop-specific requirements (kharif vs rabi)"
+      ],
+      "hard_archetypes": [
+        "Statement-based resource-to-region-to-industry linkage",
+        "Questions combining agriculture policy with geography"
+      ],
+      "banned_easy_templates": [
+        "Plain 'which state produces most X' isolated fact"
+      ],
+      "out_of_scope": [
+        "Exhaustive district-level production statistics"
+      ]
+    },
+    "U16": {
+      "concepts": [
+        "Location-based identification of features in the news",
+        "Disaster-prone zone mapping",
+        "GIS/remote sensing applications"
+      ],
+      "key_facts": [
+        "Seismic zones of India (Zone II-V)",
+        "Flood/drought-prone river basins",
+        "Applications of GIS in governance"
+      ],
+      "common_confusions": [
+        "Confusing seismic zone numbering with risk level direction",
+        "Mixing up similarly located places in current affairs"
+      ],
+      "hard_archetypes": [
+        "Map/current-affairs fusion questions (a place in the news + its physical geography)",
+        "Statement-based disaster-vulnerability questions"
+      ],
+      "banned_easy_templates": [
+        "Plain 'locate X on a map' with no additional fact layer"
+      ],
+      "out_of_scope": [
+        "Technical GIS software operation details"
+      ]
+    },
+    "U17": {
+      "concepts": [
+        "National income aggregates (GDP/GNP/NNP)",
+        "Inflation measurement and control",
+        "Business cycle phases"
+      ],
+      "key_facts": [
+        "Difference between nominal and real GDP",
+        "CPI vs WPI composition",
+        "Types of unemployment (structural, frictional, disguised)"
+      ],
+      "common_confusions": [
+        "Confusing GDP vs GNP vs NNP definitions",
+        "Mixing up CPI base year/basket with WPI's"
+      ],
+      "hard_archetypes": [
+        "Statement-based conceptual distinction questions",
+        "Questions linking a current inflation/growth data point to underlying concept"
+      ],
+      "banned_easy_templates": [
+        "Plain 'define GDP' definitional recall"
+      ],
+      "out_of_scope": [
+        "Advanced econometric derivation of indices"
+      ]
+    },
+    "U18": {
+      "concepts": [
+        "RBI's monetary policy tools",
+        "Banking structure and NPA resolution",
+        "Capital market regulation"
+      ],
+      "key_facts": [
+        "Repo/reverse repo/CRR/SLR functions",
+        "Insolvency and Bankruptcy Code basics",
+        "SEBI's role vis-a-vis stock exchanges"
+      ],
+      "common_confusions": [
+        "Confusing repo rate direction with inflation control logic",
+        "Mixing up CRR (cash with RBI) vs SLR (liquid assets held by bank)"
+      ],
+      "hard_archetypes": [
+        "Statement-based monetary tool effect questions",
+        "Current-affairs-linked banking reform questions"
+      ],
+      "banned_easy_templates": [
+        "Plain 'what is repo rate' definitional recall"
+      ],
+      "out_of_scope": [
+        "Detailed bank balance-sheet accounting"
+      ]
+    },
+    "U19": {
+      "concepts": [
+        "Union Budget structure",
+        "Fiscal deficit vs revenue deficit",
+        "GST structure and taxation"
+      ],
+      "key_facts": [
+        "FRBM Act targets",
+        "GST Council composition and tax slabs",
+        "Types of budget receipts/expenditure (capital vs revenue)"
+      ],
+      "common_confusions": [
+        "Confusing fiscal deficit with revenue/primary deficit",
+        "Mixing up direct vs indirect tax examples"
+      ],
+      "hard_archetypes": [
+        "Statement-based budget-classification questions",
+        "Current Union Budget provisions combined with fiscal concepts"
+      ],
+      "banned_easy_templates": [
+        "Plain 'define fiscal deficit' definitional recall"
+      ],
+      "out_of_scope": [
+        "Line-by-line budget document memorization"
+      ]
+    },
+    "U20": {
+      "concepts": [
+        "Poverty/inequality measurement",
+        "Employment guarantee schemes",
+        "Industrial and SDG policy"
+      ],
+      "key_facts": [
+        "MGNREGA key provisions",
+        "MSP mechanism and PDS structure",
+        "India's ranking in major global development indices"
+      ],
+      "common_confusions": [
+        "Confusing poverty line methodologies (Tendulkar/Rangarajan committees)",
+        "Mixing up different welfare schemes' target groups"
+      ],
+      "hard_archetypes": [
+        "Statement-based scheme-eligibility/provision questions",
+        "Index-ranking current affairs combined with underlying methodology"
+      ],
+      "banned_easy_templates": [
+        "Plain 'MGNREGA guarantees how many days of work' isolated fact"
+      ],
+      "out_of_scope": [
+        "State-specific scheme implementation minutiae"
+      ]
+    },
+    "U21": {
+      "concepts": [
+        "Ecosystem structure and trophic levels",
+        "Biodiversity hotspot criteria",
+        "Protected area categories"
+      ],
+      "key_facts": [
+        "India's biodiversity hotspots (Western Ghats, Himalaya, etc.)",
+        "Difference between National Park, WLS, and Biosphere Reserve",
+        "Flagship conservation projects (Tiger, Elephant, Snow Leopard)"
+      ],
+      "common_confusions": [
+        "Confusing IUCN Red List categories",
+        "Mixing up which protected area category permits human activity"
+      ],
+      "hard_archetypes": [
+        "Statement-based species-to-habitat-to-protection-status linkage",
+        "Current affairs on a specific species/reserve combined with ecological concept"
+      ],
+      "banned_easy_templates": [
+        "Plain 'name the national animal' isolated fact"
+      ],
+      "out_of_scope": [
+        "Detailed taxonomic classification beyond general awareness"
+      ]
+    },
+    "U22": {
+      "concepts": [
+        "Greenhouse effect mechanism",
+        "International climate frameworks (UNFCCC/Kyoto/Paris)",
+        "India's climate commitments"
+      ],
+      "key_facts": [
+        "Difference between UNFCCC, Kyoto Protocol, and Paris Agreement obligations",
+        "India's NDC targets and net-zero pledge",
+        "Major greenhouse gases and their sources"
+      ],
+      "common_confusions": [
+        "Confusing binding (Kyoto) vs voluntary (Paris) commitment structures",
+        "Mixing up COP summit years/outcomes"
+      ],
+      "hard_archetypes": [
+        "Statement-based treaty-comparison questions",
+        "Latest COP outcome combined with India's stated position"
+      ],
+      "banned_easy_templates": [
+        "Plain 'what does UNFCCC stand for' isolated fact"
+      ],
+      "out_of_scope": [
+        "Detailed carbon-accounting methodology"
+      ]
+    },
+    "U23": {
+      "concepts": [
+        "Pollution sources and measurement indices",
+        "Waste management rules",
+        "Environmental clearance process"
+      ],
+      "key_facts": [
+        "AQI categories and pollutant thresholds",
+        "Key provisions of e-waste/plastic waste rules",
+        "Namami Gange and Swachh Bharat mission components"
+      ],
+      "common_confusions": [
+        "Confusing AQI category thresholds",
+        "Mixing up which pollutant is primarily responsible for a given environmental issue"
+      ],
+      "hard_archetypes": [
+        "Statement-based rule-provision questions",
+        "Current mission progress data combined with underlying policy"
+      ],
+      "banned_easy_templates": [
+        "Plain 'what causes air pollution' generic recall"
+      ],
+      "out_of_scope": [
+        "Technical effluent-treatment engineering details"
+      ]
+    },
+    "U24": {
+      "concepts": [
+        "Applied physics/chemistry relevant to news",
+        "Nanotechnology and material science basics",
+        "Nuclear technology applications"
+      ],
+      "key_facts": [
+        "Difference between nuclear fission and fusion reactors",
+        "Common polymers and their applications",
+        "Basic properties exploited in nanotech applications"
+      ],
+      "common_confusions": [
+        "Confusing fission vs fusion energy release mechanisms",
+        "Mixing up types of fertilizers and their chemical basis"
+      ],
+      "hard_archetypes": [
+        "Statement-based science-in-news questions requiring conceptual linkage",
+        "Questions combining a recent tech development with its underlying scientific principle"
+      ],
+      "banned_easy_templates": [
+        "Plain 'what is the SI unit of X' isolated fact"
+      ],
+      "out_of_scope": [
+        "Graduate-level physics/chemistry derivations"
+      ]
+    },
+    "U25": {
+      "concepts": [
+        "Human physiology basics relevant to health news",
+        "Disease classification and vaccine mechanisms",
+        "Biotechnology applications"
+      ],
+      "key_facts": [
+        "Communicable vs non-communicable disease examples",
+        "Vaccine types (live-attenuated, mRNA, subunit)",
+        "GM crop approval process in India"
+      ],
+      "common_confusions": [
+        "Confusing disease transmission mechanisms (vector-borne vs airborne vs waterborne)",
+        "Mixing up vaccine platform technologies"
+      ],
+      "hard_archetypes": [
+        "Statement-based disease/vaccine-mechanism questions",
+        "Current health scheme combined with underlying biological concept"
+      ],
+      "banned_easy_templates": [
+        "Plain 'name a communicable disease' generic recall"
+      ],
+      "out_of_scope": [
+        "Detailed clinical/medical diagnostic procedures"
+      ]
+    },
+    "U26": {
+      "concepts": [
+        "ISRO mission objectives and orbits",
+        "Missile classification (range/guidance)",
+        "Defence indigenization policy"
+      ],
+      "key_facts": [
+        "Key ISRO missions and their milestones (Chandrayaan-3, Gaganyaan, Aditya-L1)",
+        "Missile range categories (SRBM/MRBM/ICBM)",
+        "IN-SPACe's role in private space sector"
+      ],
+      "common_confusions": [
+        "Confusing mission objectives across similarly named missions",
+        "Mixing up missile range classifications"
+      ],
+      "hard_archetypes": [
+        "Statement-based mission-milestone questions",
+        "Current defence/space development combined with underlying technology concept"
+      ],
+      "banned_easy_templates": [
+        "Plain 'who launched X mission' isolated fact"
+      ],
+      "out_of_scope": [
+        "Detailed orbital mechanics calculations"
+      ]
+    },
+    "U27": {
+      "concepts": [
+        "AI/ML policy and applications",
+        "Cybersecurity and data protection frameworks",
+        "Semiconductor and quantum computing basics"
+      ],
+      "key_facts": [
+        "Digital Personal Data Protection Act key provisions",
+        "India's semiconductor mission objectives",
+        "Basic distinction between classical and quantum computing"
+      ],
+      "common_confusions": [
+        "Confusing AI-related policy bodies and their mandates",
+        "Mixing up data protection regime provisions across countries"
+      ],
+      "hard_archetypes": [
+        "Statement-based emerging-tech policy questions",
+        "Current tech regulation news combined with underlying technical concept"
+      ],
+      "banned_easy_templates": [
+        "Plain 'what is AI' generic definitional recall"
+      ],
+      "out_of_scope": [
+        "Deep technical ML/quantum algorithm details"
+      ]
+    },
+    "U28": {
+      "concepts": [
+        "Recent government scheme objectives",
+        "Key annual reports (Economic Survey, NITI Aayog indices)",
+        "Constitutional/statutory appointments"
+      ],
+      "key_facts": [
+        "Latest flagship scheme launches and target beneficiaries",
+        "Key findings of the latest Economic Survey",
+        "Recent appointments to top constitutional posts"
+      ],
+      "common_confusions": [
+        "Confusing similarly-named schemes across ministries",
+        "Mixing up which report/index is released by which body"
+      ],
+      "hard_archetypes": [
+        "Statement-based scheme-provision questions",
+        "Questions linking a report's finding to a policy implication"
+      ],
+      "banned_easy_templates": [
+        "Plain 'who is the current X officeholder' isolated fact"
+      ],
+      "out_of_scope": [
+        "Extremely localized/state-level scheme details unless nationally significant"
+      ]
+    },
+    "U29": {
+      "concepts": [
+        "India's key multilateral engagements (QUAD, SCO, G20, BRICS)",
+        "Global development indices",
+        "Major international summits/treaties"
+      ],
+      "key_facts": [
+        "Membership and objectives of key groupings",
+        "India's ranking trend in HDI/GHI/other indices",
+        "Key outcomes of recent international summits"
+      ],
+      "common_confusions": [
+        "Confusing membership lists across similar groupings",
+        "Mixing up which index is published by which organization"
+      ],
+      "hard_archetypes": [
+        "Statement-based grouping-membership/objective questions",
+        "Current summit outcome combined with India's stated position"
+      ],
+      "banned_easy_templates": [
+        "Plain 'what does QUAD stand for' isolated fact"
+      ],
+      "out_of_scope": [
+        "Exhaustive diplomatic history beyond current relevance"
+      ]
+    },
+    "U30": {
+      "concepts": [
+        "Recent awards and honours",
+        "Sporting event outcomes of national significance",
+        "Notable books/authors/obituaries in the news"
+      ],
+      "key_facts": [
+        "Major national and international awards given in the current year",
+        "Key outcomes of recently concluded major sporting events",
+        "Notable recent publications and their authors"
+      ],
+      "common_confusions": [
+        "Confusing award categories or recipient fields",
+        "Mixing up event years/host countries"
+      ],
+      "hard_archetypes": [
+        "Statement-based questions cross-linking an award/event to a related fact",
+        "Questions combining a person's achievement with their broader field of work"
+      ],
+      "banned_easy_templates": [
+        "Plain 'who won X award' isolated fact with no cross-linkage"
+      ],
+      "out_of_scope": [
+        "Entertainment/celebrity trivia with no exam relevance"
+      ]
+    }
+  }
+}

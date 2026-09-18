@@ -1,0 +1,75 @@
+{
+  "exam": "GMAT Focus Edition",
+  "year": 2026,
+  "cycle": "GMAT Focus Edition 2026",
+  "data_provenance": "GMAC GMAT Focus Edition structure (live since Feb 2024): 3 equally-weighted section-adaptive sections — Quantitative Reasoning 21Q/45m, Verbal Reasoning 23Q/45m, Data Insights 20Q/45m. Total 64 questions / 2h15m. Confirm against mba.com before production use.",
+  "important_caveat": "GMAT Focus is section-adaptive (difficulty chosen live). Seeded pattern totals describe section size and bank planning, not a fixed-form paper mix.",
+  "exam_day": {
+    "mandatory_both_papers": false,
+    "note": "Single computer-adaptive test. Candidate chooses section order (6 possible sequences). Optional 10-min break between sections."
+  },
+  "subjects": ["Quant", "Verbal", "Data Insights"],
+  "bank_subjects": ["Quant", "Verbal", "Data Insights"],
+  "structure_per_subject_per_paper": {
+    "Paper_1": {
+      "paper_number": 1,
+      "label": "GMAT Focus Edition",
+      "session": "varies",
+      "start_time": "",
+      "end_time": "",
+      "duration_minutes": 135,
+      "total_marks": 805,
+      "questions_per_subject": 21,
+      "total_questions": 64,
+      "overall_difficulty": "Section-adaptive; bank items should span low–high",
+      "section_1_single_correct": {
+        "questions": 64,
+        "options": 5,
+        "type": "single",
+        "note": "Full Focus paper is 5-option single-correct style (Quant/Verbal) plus DI interactive formats treated as scored singles for bank planning. Per-section sizes in all_subjects_table: Quant 21 / Verbal 23 / DI 20."
+      },
+      "section_2_multi_correct": { "questions": 0, "options": 4, "type": "multi" },
+      "section_3_numerical": { "questions": 0, "options": 0, "type": "integer" },
+      "section_4_match_list": { "questions": 0, "options": 4, "type": "match" },
+      "section_5_paragraph": { "questions": 0, "options": 4, "type": "paragraph" },
+      "formats": ["Single Correct MCQ (5 options)", "Data Insights interactive formats"],
+      "marking": {
+        "note": "No JEE-style −1 per wrong. Adaptive IRT scoring 60–90 per section; Total 205–805. Unanswered end-of-section items are heavily penalized."
+      }
+    }
+  },
+  "all_subjects_table": {
+    "Quant": {
+      "questions": 21,
+      "duration_minutes": 45,
+      "section_id": "Q",
+      "label": "Quantitative Reasoning"
+    },
+    "Verbal": {
+      "questions": 23,
+      "duration_minutes": 45,
+      "section_id": "V",
+      "label": "Verbal Reasoning"
+    },
+    "Data Insights": {
+      "questions": 20,
+      "duration_minutes": 45,
+      "section_id": "DI",
+      "label": "Data Insights"
+    }
+  },
+  "grand_total_across_subjects": {
+    "paper1": 64,
+    "duration_minutes": 135,
+    "total_score_range": "205-805",
+    "sections": 3
+  },
+  "option_count_rule": {
+    "single": 5,
+    "multi": 0,
+    "integer": 0,
+    "match": 0,
+    "paragraph": 0
+  },
+  "question_types_note": "GMAT Focus uses 5-option single-correct MCQ in Quant/Verbal. Data Insights adds Table Analysis, Graphics Interpretation, Two-Part Analysis, Multi-Source Reasoning, and Data Sufficiency. No JEE-style numerical entry."
+}

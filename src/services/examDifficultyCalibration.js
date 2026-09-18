@@ -34,6 +34,9 @@ export const detectExamProfile = ({
 } = {}) => {
     const haystack = `${bankName} ${topic} ${subject} ${classLevel} ${sectionName} ${(categoryPaths || []).join(" ")}`.toLowerCase();
 
+    if (/\bgmat\b|graduate management admission|gmat\s*focus/i.test(haystack)) {
+        return "gmat";
+    }
     if (/\bcat\b|common admission test|\biim\b|\bmba\s*entrance\b/i.test(haystack)) {
         return "cat";
     }
@@ -48,11 +51,25 @@ export const detectExamProfile = ({
         return "upsc";
     }
     if (
+        /\bssc\s*cgl\s*tier\s*2\b|\bcgl\s*tier\s*2\b|\bcgl\s*tier\s*ii\b|\bssc\s*cgl\s*t2\b/i.test(
+            haystack
+        )
+    ) {
+        return "ssc_cgl_tier2";
+    }
+    if (
+        /\bssc\s*cgl\b|\bcgl\s*tier\s*[i1]\b|\bssc\s*combined\s*graduate/i.test(
+            haystack
+        )
+    ) {
+        return "ssc_cgl_tier1";
+    }
+    if (
         /\bibps\b|\bsbi\b|\brbi\b|\bbank(?:ing)?\s*(?:po|clerk|exam|so)\b|\brrb\b|\bnabard\b|\bbank\s*probationary\b/i.test(
             haystack
         )
     ) {
-        return "banking";
+        return "ibps";
     }
     if (
         /\bjee\s*advanc(?:e|ed)?\b|\bjee\s*adv\b|iit\s*-?\s*jee\s*advanc(?:e|ed)?\b/i.test(

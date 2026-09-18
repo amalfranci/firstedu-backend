@@ -1,0 +1,92 @@
+{
+  "exam": "CLAT 2026 (UG)",
+  "purpose": "Per-section/topic target quotas for building a question BANK/dataset, not a simulation of a single year's paper. Multiply/scale as needed. Mirrors the structure of the JEE Main / GMAT quotas files so banks across exams can be planned/compared side by side.",
+  "question_type_note": "CLAT UG uses only ONE question format across all five sections: single-correct MCQ attached to a passage/caselet (English, Current Affairs, Legal Reasoning and Logical Reasoning are 100% passage-based; Quantitative Techniques is caselet/data-set based). There is no numerical-value entry, no multiple-correct MCQ, and no standalone fact-recall question anywhere in the current (CLAT 2024 onward) pattern.",
+  "difficulty_note": "The Consortium does not publish official difficulty tags. Coaching-tracker consensus places CLAT's overall difficulty as moderate, with Legal Reasoning and Quantitative Techniques containing the largest share of harder, multi-step items, and English/Current Affairs skewing easier when the underlying passage is accessible. Tiers below (easy/medium/hard) are seeding targets, not official classifications.",
+  "sections": {
+    "ENG": {
+      "section_name": "English Language",
+      "num_questions_range_live_exam": "22-26",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "weightage_pct_approx": 20,
+      "question_types": {
+        "mcq_passage_based": {
+          "easy": 8,
+          "medium": 10,
+          "hard": 6,
+          "total": 24
+        }
+      },
+      "topic_total_quota": 24
+    },
+    "CA": {
+      "section_name": "Current Affairs including General Knowledge",
+      "num_questions_range_live_exam": "28-32",
+      "relevance_tier": "very_high",
+      "quota_weight": 3,
+      "weightage_pct_approx": 25,
+      "question_types": {
+        "mcq_passage_based": {
+          "easy": 12,
+          "medium": 12,
+          "hard": 6,
+          "total": 30
+        }
+      },
+      "topic_total_quota": 30,
+      "notes": "Highest-weightage section along with Legal Reasoning; content decays fast (news-cycle dependent), so a bank needs frequent refresh to stay current for any given test cycle."
+    },
+    "LEGAL": {
+      "section_name": "Legal Reasoning",
+      "num_questions_range_live_exam": "28-32",
+      "relevance_tier": "very_high",
+      "quota_weight": 3,
+      "weightage_pct_approx": 25,
+      "question_types": {
+        "mcq_passage_based": {
+          "easy": 8,
+          "medium": 14,
+          "hard": 8,
+          "total": 30
+        }
+      },
+      "topic_total_quota": 30,
+      "notes": "Reported by trackers as containing a larger share of harder, multi-step application items than the other passage-based sections."
+    },
+    "LOGIC": {
+      "section_name": "Logical Reasoning",
+      "num_questions_range_live_exam": "22-26",
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "weightage_pct_approx": 20,
+      "question_types": {
+        "mcq_passage_based": {
+          "easy": 8,
+          "medium": 10,
+          "hard": 6,
+          "total": 24
+        }
+      },
+      "topic_total_quota": 24
+    },
+    "QUANT": {
+      "section_name": "Quantitative Techniques",
+      "num_questions_range_live_exam": "10-14",
+      "relevance_tier": "low",
+      "quota_weight": 1,
+      "weightage_pct_approx": 10,
+      "question_types": {
+        "mcq_caselet_based": {
+          "easy": 4,
+          "medium": 5,
+          "hard": 3,
+          "total": 12
+        }
+      },
+      "topic_total_quota": 12,
+      "notes": "Smallest section by question count, but consistently flagged as disproportionately time-costly relative to its weight because every item requires reading a data caselet first."
+    }
+  },
+  "bank_total_quota_at_this_scale": 120
+}

@@ -1,0 +1,49 @@
+{
+  "subject": "Data Interpretation and Logical Reasoning (DILR)",
+  "exam_context": "CAT 2026 - DILR section only, 22 questions / 66 marks / 40 minutes",
+  "data_provenance": "Estimated from slot-wise PYQ analyses of CAT 2021-2025 aggregated by multiple coaching trackers, not an official IIM-published weightage document; last grounded Sep 2026. Set-type mix (DI-heavy vs LR-heavy vs blended) varies noticeably slot to slot within the same year, more so than in VARC or QA, so treat as a directional multi-year average only.",
+  "topics": {
+    "D01": {
+      "area": "Data Interpretation - Tables, Bar/Line Graphs, Pie Charts",
+      "cat_freq_band": "high",
+      "avg_q_per_slot": "5-9 (roughly 1-2 of the 4 sets)",
+      "approx_weightage_pct": "18-20",
+      "difficulty_split": { "easy": 15, "medium": 45, "hard": 40 },
+      "notes": "CAT 2024 trend data flagged Line & Bar Graphs at ~18% of DILR sets; pure-DI sets have declined somewhat relative to blended DI-LR caselets in recent slots."
+    },
+    "D02": {
+      "area": "Arrangements and Puzzles",
+      "cat_freq_band": "very high",
+      "avg_q_per_slot": "8-10",
+      "approx_weightage_pct": "35-45",
+      "difficulty_split": { "easy": 10, "medium": 40, "hard": 50 },
+      "notes": "Consistently the largest and most time-consuming DILR category; multi-constraint puzzles are the section's classic 'make-or-break' sets."
+    },
+    "D03": {
+      "area": "Games and Tournaments",
+      "cat_freq_band": "high",
+      "avg_q_per_slot": "4-6",
+      "approx_weightage_pct": "18-23",
+      "difficulty_split": { "easy": 15, "medium": 40, "hard": 45 },
+      "notes": "CAT 2024/2025 trend data flagged Games & Tournaments as one of the highest-weightage single set-types, a shift from more DI-heavy papers pre-2022."
+    },
+    "D04": {
+      "area": "Reasoning-based Sets - Venn Diagrams, Binary/Selection Logic, Networks",
+      "cat_freq_band": "medium",
+      "avg_q_per_slot": "4-5",
+      "approx_weightage_pct": "18",
+      "difficulty_split": { "easy": 15, "medium": 45, "hard": 40 },
+      "notes": "Venn-diagram-based sets recur most reliably within this bucket; pure binary-logic sets appear less often than arrangement/tournament sets."
+    }
+  },
+  "marking_scheme": {
+    "source_note": "Confirmed via multiple Sep 2026 sources reporting on the CAT 2025 (30 Nov 2025) session, consistent with the CAT 2024 pattern.",
+    "mcq": "+3 for a correct answer, -1 for an incorrect answer, 0 if unattempted.",
+    "tita": "+3 for a correct answer, 0 for an incorrect answer (no negative marking), 0 if unattempted.",
+    "mcq_tita_split_typical": "Approximately 12-14 MCQs and 8-10 TITA questions per slot, varying by set composition.",
+    "total_marks_dilr": 66,
+    "total_marks_paper": 204,
+    "section_time_limit_minutes": 40,
+    "question_types_used": "Single-correct MCQ and TITA (type-in-the-answer). No multiple-correct or matrix-match formats."
+  }
+}

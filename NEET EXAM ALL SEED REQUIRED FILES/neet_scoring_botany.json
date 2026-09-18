@@ -1,0 +1,35 @@
+{
+  "subject": "Botany",
+  "exam_context": "NEET UG 2026 - Botany half of the Biology section, conventionally 45 scored questions / 180 marks (Biology overall: 90 scored questions / 360 marks, split evenly between Botany and Zoology by most coaching trackers)",
+  "data_provenance": "Estimated from PYQ-trend analysis and chapter-wise-weightage trackers aggregated across 2025 and 2026 NEET sessions (including the 21 June 2026 Re-NEET UG), not official NTA data; last grounded Sep 2026. NTA does not publish a separate Botany/Zoology split, so figures here reflect the conventional coaching-tracker split and multi-session averages, not a guarantee of any single paper's composition.",
+  "topics": {
+    "B01": { "chapter": "Diversity in the Living World", "neet_freq_band": "medium", "avg_q_per_session_neet": "3-4", "approx_weightage_pct": "8-9", "difficulty_split": {"easy":55,"medium":35,"hard":10}, "notes": "Direct NCERT-line classification and terminology questions; a reliable easy-marks area, especially Plant Kingdom." },
+    "B02": { "chapter": "Structural Organisation in Plants", "neet_freq_band": "medium", "avg_q_per_session_neet": "2-3", "approx_weightage_pct": "5-6", "difficulty_split": {"easy":50,"medium":37,"hard":13}, "notes": "Morphology/anatomy diagram-and-terminology questions recur; a scoring but detail-heavy area." },
+    "B03": { "chapter": "Cell Structure and Function", "neet_freq_band": "high", "avg_q_per_session_neet": "3-4", "approx_weightage_pct": "8-9", "difficulty_split": {"easy":48,"medium":37,"hard":15}, "notes": "Cell organelle function and mitosis/meiosis stage-identification questions are a consistently high-weightage archetype." },
+    "B04": { "chapter": "Plant Physiology", "neet_freq_band": "high", "avg_q_per_session_neet": "3-4", "approx_weightage_pct": "8-10", "difficulty_split": {"easy":45,"medium":38,"hard":17}, "notes": "Photosynthesis and respiration pathway/enzyme questions recur across sessions; a broad, high-yield unit." },
+    "B05": { "chapter": "Sexual Reproduction in Flowering Plants", "neet_freq_band": "medium-high", "avg_q_per_session_neet": "2-3", "approx_weightage_pct": "6-7", "difficulty_split": {"easy":48,"medium":37,"hard":15}, "notes": "Pollination and post-fertilisation development questions recur." },
+    "B06": { "chapter": "Molecular Basis of Inheritance", "neet_freq_band": "very high", "avg_q_per_session_neet": "3-4", "approx_weightage_pct": "10-12", "difficulty_split": {"easy":40,"medium":40,"hard":20}, "notes": "Repeatedly flagged by trackers as the single highest-weightage Biology chapter (~12-14% in some analyses); replication/transcription/translation and lac-operon questions dominate." },
+    "B07": { "chapter": "Microbes in Human Welfare", "neet_freq_band": "medium", "avg_q_per_session_neet": "1-2", "approx_weightage_pct": "4", "difficulty_split": {"easy":55,"medium":35,"hard":10}, "notes": "Direct NCERT-fact recall on applications of microbes; a reliable easy-marks chapter." },
+    "B08": { "chapter": "Biotechnology: Principles, Processes and Applications", "neet_freq_band": "very high", "avg_q_per_session_neet": "3-4", "approx_weightage_pct": "9-11", "difficulty_split": {"easy":42,"medium":40,"hard":18}, "notes": "Consistently flagged as a top-3 Biology chapter; restriction-enzyme/PCR/Bt-crop questions recur every session." },
+    "B09": { "chapter": "Ecology (Plant/Ecosystem-oriented units)", "neet_freq_band": "medium-high", "avg_q_per_session_neet": "3", "approx_weightage_pct": "7-8", "difficulty_split": {"easy":50,"medium":36,"hard":14}, "notes": "Ecological-pyramid, population-interaction and conservation-terminology questions recur; a broad, generally easy-to-medium unit." }
+  },
+  "broad_category_weightage_pct": {
+    "note": "Coarser cross-check figures, approximate % share of the 45-question scored Botany half, synthesised from multiple 2025-2026 PYQ trend sources. Rounds do not sum exactly to 100%.",
+    "Diversity_and_Morphology (B01-B02)": "13-15%",
+    "Cell_Biology_and_Physiology (B03-B04)": "16-19%",
+    "Reproduction (B05)": "6-7%",
+    "Genetics_and_Molecular_Biology (B06)": "10-12%",
+    "Biology_and_Human_Welfare_Biotech (B07-B08)": "13-15%",
+    "Ecology (B09)": "7-8%"
+  },
+  "marking_scheme": {
+    "source_note": "Confirmed via multiple Sep 2026 sources reporting on the 2026 and Re-NEET UG 2026 (21 June 2026) sessions.",
+    "section_a_share": "Biology Section A has 70 single-correct MCQs, all compulsory (conventionally ~35 Botany-origin); +4 correct, -1 incorrect, 0 unattempted.",
+    "section_b_share": "Biology Section B has 30 single-correct MCQs, attempt any 20, best 20 scored (conventionally ~15 Botany-origin); +4 correct, -1 incorrect, 0 unattempted.",
+    "questions_printed_vs_scored_biology_total": "100 printed, 90 scored across Botany+Zoology combined.",
+    "total_marks_botany_conventional": 180,
+    "total_marks_biology": 360,
+    "total_marks_paper": 720,
+    "question_types_used": "Single-correct MCQ only."
+  }
+}

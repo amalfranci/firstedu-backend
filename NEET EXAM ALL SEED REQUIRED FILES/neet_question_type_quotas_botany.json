@@ -1,0 +1,18 @@
+{
+  "subject": "Botany",
+  "exam": "NEET UG 2026",
+  "purpose": "Per-topic target quotas for building a question BANK/dataset, not a simulation of a single session's paper. Multiply/scale as needed.",
+  "question_type_note": "NEET uses only single-correct MCQ across both sections; no numerical-value, multiple-correct, or matrix-match formats. Biology (Botany+Zoology) is almost entirely conceptual/recall/diagram-based rather than numerical.",
+  "difficulty_note": "Botany leans heavily 'easy'-to-'medium' since ~90% of NEET Biology questions are direct or lightly-reworded NCERT lines; 'hard' quota is reserved for assertion-reason, exception-based, and multi-concept-linking questions.",
+  "topics": {
+    "B01": { "chapter": "Diversity in the Living World", "relevance_tier": "medium", "quota_weight": 3, "question_types": { "mcq_single": { "easy": 8, "medium": 5, "hard": 2, "total": 15 } }, "topic_total_quota": 15 },
+    "B02": { "chapter": "Structural Organisation in Plants", "relevance_tier": "medium", "quota_weight": 2, "question_types": { "mcq_single": { "easy": 6, "medium": 4, "hard": 1, "total": 11 } }, "topic_total_quota": 11 },
+    "B03": { "chapter": "Cell Structure and Function", "relevance_tier": "high", "quota_weight": 3, "question_types": { "mcq_single": { "easy": 7, "medium": 6, "hard": 2, "total": 15 } }, "topic_total_quota": 15 },
+    "B04": { "chapter": "Plant Physiology", "relevance_tier": "high", "quota_weight": 4, "question_types": { "mcq_single": { "easy": 8, "medium": 7, "hard": 3, "total": 18 } }, "topic_total_quota": 18 },
+    "B05": { "chapter": "Sexual Reproduction in Flowering Plants", "relevance_tier": "medium_high", "quota_weight": 3, "question_types": { "mcq_single": { "easy": 7, "medium": 5, "hard": 2, "total": 14 } }, "topic_total_quota": 14 },
+    "B06": { "chapter": "Molecular Basis of Inheritance", "relevance_tier": "very_high", "quota_weight": 4, "question_types": { "mcq_single": { "easy": 7, "medium": 7, "hard": 4, "total": 18 } }, "topic_total_quota": 18 },
+    "B07": { "chapter": "Microbes in Human Welfare", "relevance_tier": "medium", "quota_weight": 2, "question_types": { "mcq_single": { "easy": 6, "medium": 3, "hard": 1, "total": 10 } }, "topic_total_quota": 10 },
+    "B08": { "chapter": "Biotechnology: Principles, Processes and Applications", "relevance_tier": "very_high", "quota_weight": 4, "question_types": { "mcq_single": { "easy": 7, "medium": 7, "hard": 3, "total": 17 } }, "topic_total_quota": 17 },
+    "B09": { "chapter": "Ecology (Plant/Ecosystem-oriented units)", "relevance_tier": "medium_high", "quota_weight": 3, "question_types": { "mcq_single": { "easy": 8, "medium": 5, "hard": 2, "total": 15 } }, "topic_total_quota": 15 }
+  }
+}

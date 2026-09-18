@@ -1,0 +1,347 @@
+{
+  "subject": "General Studies (Paper I)",
+  "exam": "UPSC Civil Services Preliminary Examination 2027",
+  "source_note": "Compiled from the standard UPSC CSE Prelims GS Paper I syllabus structure; static portions are stable year-to-year, Current Affairs topics are illustrative categories refreshed annually.",
+  "topics": [
+    {
+      "topic_id": "U01",
+      "category": "History",
+      "chapter": "Ancient India",
+      "subtopics": [
+        "Prehistoric cultures, Indus Valley Civilization (town planning, economy, decline theories)",
+        "Vedic Age (Early & Later Vedic society, polity, religion)",
+        "Rise of Jainism and Buddhism, Mahajanapadas",
+        "Mauryan Empire (Ashoka's edicts, administration)",
+        "Post-Mauryan period, Gupta Age (golden age, science & literature)",
+        "South Indian kingdoms (Sangam age, Cholas, Pallavas)"
+      ]
+    },
+    {
+      "topic_id": "U02",
+      "category": "History",
+      "chapter": "Medieval India",
+      "subtopics": [
+        "Delhi Sultanate (dynasties, administration, land revenue)",
+        "Vijayanagara and Bahmani kingdoms",
+        "Mughal Empire (administration, Mansabdari, Din-i-Ilahi)",
+        "Bhakti and Sufi movements",
+        "Maratha polity and Shivaji's administration",
+        "Regional kingdoms and decline of Mughal authority"
+      ]
+    },
+    {
+      "topic_id": "U03",
+      "category": "History",
+      "chapter": "Modern India & Freedom Struggle",
+      "subtopics": [
+        "Advent of Europeans, British conquest of India",
+        "Revolt of 1857 (causes, spread, consequences)",
+        "Socio-religious reform movements (Brahmo Samaj, Arya Samaj, Aligarh Movement)",
+        "Indian National Congress: Moderate, Extremist, Gandhian phases",
+        "Non-Cooperation, Civil Disobedience, Quit India Movement",
+        "Revolutionary movements, INA and Subhas Chandra Bose",
+        "Partition and Independence (1947)"
+      ]
+    },
+    {
+      "topic_id": "U04",
+      "category": "History",
+      "chapter": "Art and Culture",
+      "subtopics": [
+        "Indian architecture (rock-cut, temple styles: Nagara, Dravida, Vesara)",
+        "Sculpture and painting traditions (Ajanta, Mughal, Company school)",
+        "Classical and folk dance/music forms",
+        "Religious philosophy and literature (Vedas, Upanishads, Puranas)",
+        "UNESCO World Heritage Sites in India",
+        "Festivals, fairs, and GI-tagged cultural products"
+      ]
+    },
+    {
+      "topic_id": "U05",
+      "category": "History",
+      "chapter": "Post-Independence Consolidation",
+      "subtopics": [
+        "Integration of princely states, reorganization of states (1956)",
+        "Constituent Assembly and constitution-making",
+        "Land reforms, Green Revolution and Five-Year Plans",
+        "Foreign policy: Non-Alignment, wars with Pakistan/China",
+        "Major political and economic milestones (1950s-1990s)"
+      ]
+    },
+    {
+      "topic_id": "U06",
+      "category": "History",
+      "chapter": "World History (UPSC-relevant)",
+      "subtopics": [
+        "Industrial Revolution and its global impact",
+        "American and French Revolutions",
+        "World Wars I & II and their aftermath",
+        "Decolonization and the Cold War",
+        "Formation of UN and major international institutions"
+      ]
+    },
+    {
+      "topic_id": "U07",
+      "category": "Polity",
+      "chapter": "Constitutional Framework",
+      "subtopics": [
+        "Historical underpinnings (Government of India Acts, 1935 Act)",
+        "Making of the Constitution, salient features",
+        "Preamble, Union and its Territory, Citizenship",
+        "Schedules and important Constitutional Amendments"
+      ]
+    },
+    {
+      "topic_id": "U08",
+      "category": "Polity",
+      "chapter": "Rights, Duties and DPSP",
+      "subtopics": [
+        "Fundamental Rights (Articles 12-35), exceptions and limitations",
+        "Directive Principles of State Policy",
+        "Fundamental Duties",
+        "Landmark judgments (Kesavananda Bharati, Maneka Gandhi, basic structure)"
+      ]
+    },
+    {
+      "topic_id": "U09",
+      "category": "Polity",
+      "chapter": "Union Executive and Legislature",
+      "subtopics": [
+        "President, Vice-President, Prime Minister and Council of Ministers",
+        "Parliament: Lok Sabha, Rajya Sabha, legislative procedure, budget process",
+        "Parliamentary committees and privileges",
+        "Ordinance-making power, money bills vs financial bills"
+      ]
+    },
+    {
+      "topic_id": "U10",
+      "category": "Polity",
+      "chapter": "State Government & Local Bodies",
+      "subtopics": [
+        "Governor, State Council of Ministers, State Legislature",
+        "Centre-State relations (legislative, administrative, financial)",
+        "73rd and 74th Constitutional Amendments (Panchayati Raj, Municipalities)",
+        "Special provisions for states (Articles 370, 371 series)"
+      ]
+    },
+    {
+      "topic_id": "U11",
+      "category": "Polity",
+      "chapter": "Judiciary & Constitutional Bodies",
+      "subtopics": [
+        "Supreme Court and High Courts: jurisdiction, appointment, judicial review",
+        "Constitutional bodies (Election Commission, CAG, UPSC, Finance Commission)",
+        "Statutory and quasi-judicial bodies (NHRC, CVC, Lokpal/Lokayukta)",
+        "Emergency provisions (National, State, Financial)"
+      ]
+    },
+    {
+      "topic_id": "U12",
+      "category": "Geography",
+      "chapter": "Physical Geography",
+      "subtopics": [
+        "Geomorphology: rock cycle, landforms, plate tectonics, earthquakes/volcanoes",
+        "Climatology: atmospheric circulation, monsoons, cyclones, jet streams",
+        "Oceanography: ocean currents, tides, salinity variation",
+        "Biogeography basics: soils, natural vegetation"
+      ]
+    },
+    {
+      "topic_id": "U13",
+      "category": "Geography",
+      "chapter": "Indian Geography",
+      "subtopics": [
+        "Physiographic divisions of India (Himalayas, plains, plateau, coasts, islands)",
+        "River systems (Himalayan and Peninsular) and drainage patterns",
+        "Indian climate, monsoon mechanism, agro-climatic zones",
+        "Soil types and natural vegetation/forests of India"
+      ]
+    },
+    {
+      "topic_id": "U14",
+      "category": "Geography",
+      "chapter": "World Geography",
+      "subtopics": [
+        "Major physical features and biomes of continents",
+        "World climate types (Koppen classification, basic)",
+        "Important straits, canals, and geopolitical chokepoints",
+        "Global population distribution and migration patterns"
+      ]
+    },
+    {
+      "topic_id": "U15",
+      "category": "Geography",
+      "chapter": "Economic & Resource Geography",
+      "subtopics": [
+        "Distribution of minerals and energy resources (India & world)",
+        "Agriculture: cropping patterns, irrigation, major crop belts",
+        "Industry location factors and industrial regions of India",
+        "Transport networks (rail, road, waterways, ports)"
+      ]
+    },
+    {
+      "topic_id": "U16",
+      "category": "Geography",
+      "chapter": "Map-based & Applied Geography",
+      "subtopics": [
+        "Location-based identification (rivers, mountains, cities, protected areas in news)",
+        "Disaster geography (flood/drought-prone regions, seismic zones of India)",
+        "Geospatial technology basics (GIS, remote sensing applications)"
+      ]
+    },
+    {
+      "topic_id": "U17",
+      "category": "Economy",
+      "chapter": "Basic Concepts & National Income",
+      "subtopics": [
+        "GDP, GNP, NNP, per-capita income, methods of national income calculation",
+        "Inflation: types, measurement (CPI, WPI), causes and control",
+        "Business cycles, unemployment types",
+        "Sectors of economy: primary, secondary, tertiary"
+      ]
+    },
+    {
+      "topic_id": "U18",
+      "category": "Economy",
+      "chapter": "Money, Banking & Financial Markets",
+      "subtopics": [
+        "RBI functions, monetary policy tools (repo, CRR, SLR)",
+        "Banking structure, NPAs, financial inclusion (PMJDY, etc.)",
+        "Capital markets: SEBI, stock exchanges, mutual funds, bonds",
+        "Payment systems (UPI, digital currency/CBDC basics)"
+      ]
+    },
+    {
+      "topic_id": "U19",
+      "category": "Economy",
+      "chapter": "Fiscal Policy & Government Finance",
+      "subtopics": [
+        "Union Budget process, types of expenditure/receipts",
+        "Fiscal deficit, revenue deficit, FRBM Act",
+        "Taxation: direct/indirect taxes, GST structure",
+        "Public debt and finance commission recommendations"
+      ]
+    },
+    {
+      "topic_id": "U20",
+      "category": "Economy",
+      "chapter": "Development, Poverty & Schemes",
+      "subtopics": [
+        "Poverty and inequality measurement, employment schemes (MGNREGA)",
+        "Agricultural economy: MSP, PDS, food security",
+        "Industrial policy, Make in India, PLI schemes",
+        "Sustainable development goals and India's ranking indices"
+      ]
+    },
+    {
+      "topic_id": "U21",
+      "category": "Environment",
+      "chapter": "Ecology & Biodiversity",
+      "subtopics": [
+        "Ecosystem structure and function, food chains/webs",
+        "Biodiversity hotspots, endemic and endangered species of India",
+        "Protected area network: National Parks, Wildlife Sanctuaries, Biosphere Reserves",
+        "Wildlife conservation acts and species protection schemes (Project Tiger, Project Elephant)"
+      ]
+    },
+    {
+      "topic_id": "U22",
+      "category": "Environment",
+      "chapter": "Climate Change & International Frameworks",
+      "subtopics": [
+        "Greenhouse effect, global warming, IPCC reports",
+        "UNFCCC, Kyoto Protocol, Paris Agreement, COP summits",
+        "India's climate commitments (NDCs, Panchamrit targets)",
+        "Renewable energy policy and carbon market mechanisms"
+      ]
+    },
+    {
+      "topic_id": "U23",
+      "category": "Environment",
+      "chapter": "Pollution & Conservation Efforts",
+      "subtopics": [
+        "Air, water, and soil pollution: sources, indices (AQI)",
+        "Waste management (e-waste, plastic waste, solid waste rules)",
+        "Environmental impact assessment and clearance process",
+        "Government missions (Namami Gange, Swachh Bharat, National Clean Air Programme)"
+      ]
+    },
+    {
+      "topic_id": "U24",
+      "category": "Science",
+      "chapter": "Physics & Chemistry (Applied/General)",
+      "subtopics": [
+        "Everyday physics phenomena relevant to current affairs (nuclear tech, lasers)",
+        "Chemistry in news: fertilizers, polymers, nanotechnology basics",
+        "Units, measurement systems in applied science contexts",
+        "Material science and its applications"
+      ]
+    },
+    {
+      "topic_id": "U25",
+      "category": "Science",
+      "chapter": "Biology, Health & Diseases",
+      "subtopics": [
+        "Human physiology basics relevant to health news",
+        "Communicable and non-communicable diseases, vaccines",
+        "Genetics and biotechnology applications (GM crops, gene editing)",
+        "Nutrition, public health programmes and schemes"
+      ]
+    },
+    {
+      "topic_id": "U26",
+      "category": "Science",
+      "chapter": "Space Technology & Defence",
+      "subtopics": [
+        "ISRO missions (Chandrayaan, Gaganyaan, Aditya-L1, satellite launches)",
+        "Missile systems and defence indigenization (DRDO)",
+        "Space policy, private sector participation (IN-SPACe)",
+        "International space cooperation and treaties"
+      ]
+    },
+    {
+      "topic_id": "U27",
+      "category": "Science",
+      "chapter": "Emerging Technology",
+      "subtopics": [
+        "Artificial Intelligence, machine learning applications and policy",
+        "Cybersecurity, data protection frameworks",
+        "Biotechnology and emerging pharma technologies",
+        "Semiconductors, quantum computing basics in news"
+      ]
+    },
+    {
+      "topic_id": "U28",
+      "category": "Current Affairs",
+      "chapter": "National Affairs & Governance",
+      "subtopics": [
+        "Government schemes and policy launches (latest year)",
+        "Reports and indices released by Indian bodies (Economic Survey, NITI Aayog)",
+        "Appointments to constitutional/statutory posts",
+        "Major government committees and their recommendations"
+      ]
+    },
+    {
+      "topic_id": "U29",
+      "category": "Current Affairs",
+      "chapter": "International Relations & Affairs",
+      "subtopics": [
+        "India's bilateral and multilateral engagements (QUAD, SCO, G20, BRICS)",
+        "Global reports and indices (Human Development Index, Global Hunger Index)",
+        "International summits, treaties and agreements in the news",
+        "Geopolitical developments and conflicts of relevance"
+      ]
+    },
+    {
+      "topic_id": "U30",
+      "category": "Current Affairs",
+      "chapter": "Miscellaneous Current Affairs",
+      "subtopics": [
+        "Awards, honours and recognitions",
+        "Sports events and achievements",
+        "Books, authors and obituaries in the news",
+        "Places, monuments, and organizations in the news"
+      ]
+    }
+  ]
+}

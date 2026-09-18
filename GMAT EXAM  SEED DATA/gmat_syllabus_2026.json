@@ -1,0 +1,141 @@
+{
+  "exam": "GMAT Focus Edition 2026",
+  "source_note": "Compiled from GMAC's official GMAT Focus Edition exam structure as reported by multiple 2025-2026 coaching/exam-tracker sources (IMS, Career Launcher, Yocket, CrackVerbal, TestNinjas, Manhattan Review), cross-checked Sep 2026. The GMAT Focus Edition (launched Feb 2024) fully replaced the legacy GMAT; the old format with Analytical Writing Assessment (AWA), Integrated Reasoning (IR), Sentence Correction and Geometry is discontinued and no longer accepted by any business school. Always verify against the current mba.com GMAT Focus Edition page before finalising a question bank, since GMAC can revise section timing/weighting between testing cycles.",
+  "exam_pattern_note": "GMAT Focus Edition: 64 questions total across 3 equally-weighted, section-adaptive sections — Quantitative Reasoning (21 Qs / 45 min), Verbal Reasoning (23 Qs / 45 min), Data Insights (20 Qs / 45 min). Total testing time 2h15m plus one optional 10-min break. Unlike JEE, there are no fixed 'easy/medium/hard' question slots visible to the candidate — difficulty is chosen adaptively by the scoring algorithm question-by-question within each section based on prior responses.",
+  "sections": [
+    {
+      "section_id": "Q",
+      "section_name": "Quantitative Reasoning",
+      "num_questions": 21,
+      "duration_minutes": 45,
+      "calculator_allowed": false,
+      "question_format": "Problem Solving only (5-option single-correct MCQ). Data Sufficiency, formerly part of Quant, has moved entirely to Data Insights. Geometry has been removed from the syllabus entirely.",
+      "topics": [
+        {
+          "topic_id": "Q01",
+          "topic": "Arithmetic",
+          "subtopics": [
+            "Number properties: integers, factors, multiples, divisibility, remainders",
+            "Fractions, decimals, percentages",
+            "Ratio and proportion",
+            "Averages (arithmetic mean), descriptive statistics (median, mode, range, standard deviation - conceptual)",
+            "Set theory (union/intersection, overlapping sets)",
+            "Probability, basic permutation and combination",
+            "Mixtures and allegations",
+            "Speed-time-distance, pipes/cisterns and work-time problems",
+            "Simple and compound interest, profit and loss"
+          ],
+          "syllabus_change_note": "Data Sufficiency questions built on arithmetic content are no longer scored under Quant; they now appear only in the Data Insights section."
+        },
+        {
+          "topic_id": "Q02",
+          "topic": "Algebra",
+          "subtopics": [
+            "Linear equations and systems of linear equations",
+            "Quadratic equations",
+            "Inequalities",
+            "Functions and graphing",
+            "Exponents and roots",
+            "Algebraic expressions and equations",
+            "Sequences and series",
+            "Permutation and combination (algebraic word-problem framing)"
+          ],
+          "syllabus_change_note": "No calculus or trigonometry; content is capped at roughly a high-school level."
+        }
+      ],
+      "removed_topics": ["Geometry (lines, angles, triangles, circles, coordinate geometry)", "Data Sufficiency (moved to Data Insights)"]
+    },
+    {
+      "section_id": "V",
+      "section_name": "Verbal Reasoning",
+      "num_questions": 23,
+      "duration_minutes": 45,
+      "calculator_allowed": false,
+      "question_format": "5-option single-correct MCQ only. Sentence Correction has been permanently removed.",
+      "topics": [
+        {
+          "topic_id": "V01",
+          "topic": "Reading Comprehension",
+          "subtopics": [
+            "Main idea and primary purpose",
+            "Supporting details and specific fact retrieval",
+            "Passage structure and organization",
+            "Inference and implied meaning",
+            "Author's tone, attitude and style",
+            "Passages drawn from business, social science, natural science and humanities topics"
+          ]
+        },
+        {
+          "topic_id": "V02",
+          "topic": "Critical Reasoning",
+          "subtopics": [
+            "Identifying assumptions",
+            "Strengthen / weaken the argument",
+            "Draw an inference / conclusion",
+            "Evaluate the argument",
+            "Identify the flaw in reasoning",
+            "Boldface / argument-construction (identifying role of statements)",
+            "Complete the argument / fill in the blank reasoning"
+          ]
+        }
+      ],
+      "removed_topics": ["Sentence Correction"]
+    },
+    {
+      "section_id": "DI",
+      "section_name": "Data Insights",
+      "num_questions": 20,
+      "duration_minutes": 45,
+      "calculator_allowed": true,
+      "question_format": "Mixed formats: 5-option MCQ (Data Sufficiency), true/false statement grids (Table Analysis), dropdown sentence completion (Graphics Interpretation), linked two-part MCQ (Two-Part Analysis), and MCQ/true-false across multiple source tabs (Multi-Source Reasoning). This section replaced the legacy Integrated Reasoning section and absorbed Data Sufficiency out of the old Quant section.",
+      "topics": [
+        {
+          "topic_id": "DI01",
+          "topic": "Data Sufficiency",
+          "subtopics": [
+            "Determine whether Statement 1 alone is sufficient",
+            "Determine whether Statement 2 alone is sufficient",
+            "Determine whether both statements together are sufficient",
+            "Standard 5-choice DS answer grid (A-E)",
+            "Content drawn from the same arithmetic/algebra pool as Quant, but reasoning-only (no need to solve for a final value)"
+          ]
+        },
+        {
+          "topic_id": "DI02",
+          "topic": "Table Analysis",
+          "subtopics": [
+            "Sortable data tables with multiple columns",
+            "True/False or Yes/No judgement on statements about the table",
+            "Filtering and sorting to extract relevant rows"
+          ]
+        },
+        {
+          "topic_id": "DI03",
+          "topic": "Graphics Interpretation",
+          "subtopics": [
+            "Column charts, line graphs, scatterplots, Venn diagrams, bubble charts",
+            "Fill-in-the-blank sentence completion via dropdown menus based on the graphic",
+            "Trend reading and value estimation from visuals"
+          ]
+        },
+        {
+          "topic_id": "DI04",
+          "topic": "Two-Part Analysis",
+          "subtopics": [
+            "Two linked/interdependent sub-questions answered from one shared answer table",
+            "Can combine quantitative and verbal/logical reasoning in the same prompt"
+          ]
+        },
+        {
+          "topic_id": "DI05",
+          "topic": "Multi-Source Reasoning",
+          "subtopics": [
+            "Information spread across 2-3 tabbed sources (text, table, chart)",
+            "Synthesizing/cross-referencing data across tabs",
+            "Mix of standard MCQ and true/false-grid response formats"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "subject": "Chemistry",
+  "exam": "JEE Main 2026",
+  "schema_note": "Keyed by topic_id (matches chemistry_syllabus_jee_main.json). Same field set as the Physics NCERT-context file: 'hard_archetypes' calibrated to JEE-Main-level difficulty (single/dual-concept, not the multi-topic fusion typical of Advanced) and 'banned_easy_templates' generally left as a note that direct-substitution/direct-recall questions are wanted, not excluded, since that is the opposite convention from an Advanced-style file. Inorganic and practical-chemistry units lean heavily on direct NCERT-fact recall, which is a legitimate, common JEE Main archetype.",
+  "topics": {
+    "C01": {
+      "chapter": "Some Basic Concepts in Chemistry",
+      "concepts": ["Mole concept and molar mass", "Limiting reagent", "Empirical vs molecular formula"],
+      "formulas": ["Moles = mass/molar mass", "% composition = (mass of element/molar mass of compound) × 100", "Molecular formula = n × empirical formula, n = molecular mass/empirical formula mass"],
+      "methods": ["Identify the limiting reagent by comparing mole ratios to the balanced equation before computing product yield"],
+      "traps": ["Using the given reagent's mass directly without checking which reactant is limiting", "Confusing empirical formula mass with molecular mass"],
+      "hard_archetypes": ["Multi-step stoichiometry problems combining limiting reagent with percentage yield", "Back-calculating molecular formula from combustion-analysis data"],
+      "banned_easy_templates": ["None by difficulty. Direct mole-to-mass or mass-to-mole conversion questions are a legitimate, common JEE Main archetype — do not exclude these from a JEE Main bank."],
+      "out_of_scope": ["Formal treatment of significant figures/error propagation as a Chemistry-unit topic (this content was dropped from this unit in the 2025 rationalisation)"]
+    },
+    "C02": {
+      "chapter": "Atomic Structure",
+      "concepts": ["Bohr model energy levels", "Quantum numbers and orbital shapes", "Aufbau/Hund's rule electronic configuration"],
+      "formulas": ["E_n = -13.6Z²/n² eV", "λ = h/mv (de Broglie)", "Δx·Δp ≥ h/4π (Heisenberg)"],
+      "methods": ["Use the n=1 to n=2 (or similar) energy-level jump to compute the wavelength/frequency of emitted/absorbed radiation"],
+      "traps": ["Forgetting the Z² scaling for hydrogen-like ions with Z>1", "Assigning electron configurations without applying the extra stability of half-filled/fully-filled subshells (e.g. Cr, Cu)"],
+      "hard_archetypes": ["Given two spectral lines' wavelengths, identify the transition and the element/ion", "Anomalous electronic configuration questions for d-block exceptions (Cr, Cu, Mo)"],
+      "banned_easy_templates": ["None by difficulty. Direct quantum-number or orbital-shape identification questions are a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Full derivation of the Schrödinger wave equation"]
+    },
+    "C03": {
+      "chapter": "Chemical Bonding and Molecular Structure",
+      "concepts": ["VSEPR geometry prediction", "Hybridisation assignment", "MO bond order calculation"],
+      "formulas": ["Bond order = (Nb - Na)/2", "Hybridisation from steric number = (bond pairs + lone pairs)"],
+      "methods": ["Count the steric number around the central atom first, then assign hybridisation and predict geometry from VSEPR"],
+      "traps": ["Ignoring lone pairs when predicting molecular shape (e.g. confusing electron-pair geometry with molecular geometry)", "Miscounting bonding vs antibonding electrons in MO diagrams for O2/N2-type molecules"],
+      "hard_archetypes": ["Predicting the magnetic behaviour (paramagnetic/diamagnetic) of a diatomic species from its MO configuration", "Ranking bond angles across a series of related molecules using VSEPR"],
+      "banned_easy_templates": ["None by difficulty. A direct 'identify the hybridisation/shape of X' question is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Group theory / symmetry-based treatment of molecular orbitals"]
+    },
+    "C04": {
+      "chapter": "Chemical Thermodynamics",
+      "concepts": ["Hess's law", "First law of thermodynamics", "Spontaneity via ΔG"],
+      "formulas": ["ΔU = q + w", "ΔH = ΔU + Δn_g·RT", "ΔG = ΔH - TΔS", "ΔG° = -RT ln K"],
+      "methods": ["Construct a Hess's-law thermochemical cycle to find an unknown enthalpy from given reaction enthalpies"],
+      "traps": ["Sign errors in work done (w = -PΔV convention) for expansion vs compression", "Forgetting to convert ΔH to ΔU (or vice versa) using Δn_g·RT for gas-phase reactions"],
+      "hard_archetypes": ["Given several combustion/formation enthalpies, calculate the enthalpy of a target reaction via Hess's law", "Determining spontaneity direction as a function of temperature using ΔH and ΔS signs"],
+      "banned_easy_templates": ["None by difficulty. Direct Hess's-law addition/subtraction questions are a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Full Carnot-cycle efficiency derivation (removed from this unit in the 2025 rationalisation)"]
+    },
+    "C05": {
+      "chapter": "Solutions",
+      "concepts": ["Colligative properties", "Raoult's law for ideal/non-ideal solutions", "van't Hoff factor for electrolytes"],
+      "formulas": ["ΔTf = i·Kf·m", "ΔTb = i·Kb·m", "π = iCRT", "P = P°_A·x_A + P°_B·x_B (Raoult's law)"],
+      "methods": ["Determine the van't Hoff factor from the degree of dissociation/association before applying a colligative-property formula"],
+      "traps": ["Forgetting the van't Hoff factor i for ionic/associating solutes", "Confusing molality (per kg solvent) with molarity (per litre solution) in colligative-property formulas"],
+      "hard_archetypes": ["Given the observed and theoretical colligative-property values, back-calculate the degree of association/dissociation", "Mixing two solutes to find the combined effect on freezing-point depression"],
+      "banned_easy_templates": ["None by difficulty. A direct single-formula colligative-property substitution is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Detailed vapour-pressure-composition curve derivations for strongly non-ideal systems beyond qualitative deviation"]
+    },
+    "C06": {
+      "chapter": "Equilibrium",
+      "concepts": ["Ionic equilibrium and pH calculation", "Common ion effect", "Buffer solutions and Henderson-Hasselbalch"],
+      "formulas": ["pH = -log[H+]", "Ka·Kb = Kw", "pH = pKa + log([salt]/[acid]) (Henderson-Hasselbalch)", "Ksp for a sparingly soluble salt"],
+      "methods": ["Use the ICE-table approach for weak-acid/weak-base ionisation before computing equilibrium concentrations"],
+      "traps": ["Neglecting the common-ion effect when a salt of the weak acid is already present", "Confusing Ksp with solubility (s) — forgetting the stoichiometric exponents when relating them"],
+      "hard_archetypes": ["Buffer-capacity/pH-after-addition-of-strong-acid-or-base problems", "Simultaneous solubility-equilibrium problems with a common ion from two different salts"],
+      "banned_easy_templates": ["None by difficulty. A direct pH-of-a-weak-acid-solution question is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Activity-coefficient-based (non-ideal) equilibrium treatments"]
+    },
+    "C07": {
+      "chapter": "Redox Reactions and Electrochemistry",
+      "concepts": ["Nernst equation", "Standard electrode potential and cell EMF", "Kohlrausch's law for molar conductivity"],
+      "formulas": ["E_cell = E°_cell - (RT/nF) ln Q", "ΔG° = -nFE°_cell", "Λ°_m = λ°_+ + λ°_- (Kohlrausch's law)"],
+      "methods": ["Identify the cathode (reduction, higher E°) and anode (oxidation, lower E°) before writing the cell reaction and applying the Nernst equation"],
+      "traps": ["Sign errors from swapping cathode and anode in the cell-potential formula", "Forgetting to balance electrons before combining two half-reactions"],
+      "hard_archetypes": ["Given concentration-dependent EMF data, determine an unknown concentration via the Nernst equation", "Relating equilibrium constant, ΔG° and E°_cell in a single multi-formula problem"],
+      "banned_easy_templates": ["None by difficulty. A direct standard-EMF calculation from given electrode potentials is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Detailed industrial electrolysis cell-design specifics beyond qualitative dry-cell/lead-accumulator/fuel-cell working"]
+    },
+    "C08": {
+      "chapter": "Chemical Kinetics",
+      "concepts": ["Rate law and order of reaction", "Integrated first-order rate equation", "Arrhenius equation"],
+      "formulas": ["Rate = k[A]^m[B]^n", "k = (2.303/t) log([A]0/[A]t) (first order)", "t1/2 = 0.693/k (first order)", "k = Ae^(-Ea/RT)"],
+      "methods": ["Determine reaction order experimentally from a table of concentration-vs-rate data before writing the rate law"],
+      "traps": ["Confusing order of reaction (empirical) with molecularity (theoretical, for elementary steps only)", "Using the zero-order half-life formula for a first-order reaction or vice versa"],
+      "hard_archetypes": ["Given rate data at two temperatures, calculate activation energy using the Arrhenius equation in logarithmic form", "Determining the order of a reaction from a graphical (log-log) plot of rate vs concentration"],
+      "banned_easy_templates": ["None by difficulty. A direct first-order half-life or rate-constant-from-concentration-data question is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Detailed collision-theory steric-factor derivations"]
+    },
+    "C09": {
+      "chapter": "Classification of Elements and Periodicity in Properties",
+      "concepts": ["Periodic trends in atomic/ionic radius, ionisation enthalpy, electronegativity", "Anomalous periodic-trend exceptions"],
+      "formulas": ["No standard numerical formulas — trend-based, qualitative unit"],
+      "methods": ["Cross-reference the element's block (s/p/d/f) and period position before predicting a periodic-trend-based property"],
+      "traps": ["Applying the general 'ionisation enthalpy increases across a period' rule without accounting for known exceptions (e.g. Be>B, N>O)", "Confusing electron gain enthalpy sign conventions"],
+      "hard_archetypes": ["Ranking 4-5 elements/ions by ionic radius across both a period and a group simultaneously (isoelectronic species)", "Identifying and explaining a specific periodic-trend anomaly"],
+      "banned_easy_templates": ["A direct 'which of these has the highest/lowest [property]' recall question is a legitimate, common JEE Main archetype — do not exclude it."],
+      "out_of_scope": ["Detailed history of periodic-table development (Mendeleev vs modern law) beyond a passing statement"]
+    },
+    "C10": {
+      "chapter": "p-Block Elements",
+      "concepts": ["Anomalous behaviour of the first element in each p-block group", "Structures of oxoacids and interhalogens", "Preparation and properties of key p-block compounds (borax, diborane, ammonia, sulphuric acid)"],
+      "formulas": ["No standard numerical formulas — descriptive/structural unit"],
+      "methods": ["Match the given reaction/compound to its specific group-wise NCERT description before answering a properties-based question"],
+      "traps": ["Confusing the acidic strength order of oxoacids of a given halogen/element", "Mixing up structures of similarly-named oxoacids or interhalogen compounds"],
+      "hard_archetypes": ["Multi-step conversion/preparation sequence questions for a p-block compound (e.g. borax to boric acid to B2O3)", "Structure-based questions requiring identification of hybridisation in an interhalogen or xenon compound"],
+      "banned_easy_templates": ["A direct 'name/identify this compound's use or preparation method' recall question is a legitimate, common JEE Main archetype — do not exclude it."],
+      "out_of_scope": ["Detailed industrial-scale manufacturing process parameters beyond the standard NCERT description"]
+    },
+    "C11": {
+      "chapter": "d- and f-Block Elements",
+      "concepts": ["Variable oxidation states of transition metals", "Colour and magnetic properties from unpaired d-electrons", "Lanthanoid contraction"],
+      "formulas": ["Magnetic moment μ = √(n(n+2)) BM, where n = number of unpaired electrons"],
+      "methods": ["Determine the electronic configuration of the relevant ion first, then count unpaired electrons before computing magnetic moment or predicting colour"],
+      "traps": ["Forgetting that transition-metal ions (not neutral atoms) determine magnetic/colour properties in compounds", "Confusing lanthanoid contraction's effect on the near-identical radii of 4d/5d elements of the same group"],
+      "hard_archetypes": ["Given a set of transition-metal ions, rank them by magnetic moment or explain colour differences via d-d transitions", "KMnO4/K2Cr2O7 balanced-equation and oxidation-state-change questions in redox titrations"],
+      "banned_easy_templates": ["A direct 'what is the oxidation state of X in this compound' recall question is a legitimate, common JEE Main archetype — do not exclude it."],
+      "out_of_scope": ["Detailed crystal-field splitting energy (Δo/Δt) numerical calculations (this stays largely in C12's qualitative CFT scope)"]
+    },
+    "C12": {
+      "chapter": "Co-ordination Compounds",
+      "concepts": ["IUPAC nomenclature of coordination compounds", "Types of isomerism (ionisation, linkage, geometrical, optical)", "Crystal field theory: high-spin vs low-spin, colour"],
+      "formulas": ["Coordination number and oxidation-state-from-charge-balance calculation", "CFSE (qualitative ranking, not full numerical treatment)"],
+      "methods": ["Work out the oxidation state of the central metal from the overall charge and known ligand charges before naming the compound"],
+      "traps": ["Confusing denticity of a ligand (e.g. treating EDTA as monodentate)", "Missing geometrical (cis-trans) or optical isomerism possibilities in octahedral/square-planar complexes"],
+      "hard_archetypes": ["Given a complex's formula, determine all possible isomers (geometrical + optical) and their count", "Predict whether a complex is high-spin or low-spin and paramagnetic/diamagnetic using CFT"],
+      "banned_easy_templates": ["None by difficulty. A direct IUPAC-naming or coordination-number-identification question is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Full ligand field theory / molecular orbital treatment of coordination compounds beyond basic CFT"]
+    },
+    "C13": {
+      "chapter": "Purification and Characterisation of Organic Compounds",
+      "concepts": ["Purification techniques and their selection criteria", "Detection of N/S/halogens via Lassaigne's test", "Empirical formula from quantitative elemental analysis"],
+      "formulas": ["% of element = (mass of element/mass of compound) × 100, from combustion/Carius/Kjeldahl data"],
+      "methods": ["Match the compound's physical properties (volatility, thermal stability, mixture composition) to the appropriate purification technique before answering"],
+      "traps": ["Confusing sublimation-suitable compounds with those needing distillation", "Misreading Lassaigne's test colour results (Prussian blue for N, violet for S, etc.)"],
+      "hard_archetypes": ["Given elemental percentage composition and molecular mass, derive the molecular formula", "Multi-technique separation-sequence questions for a mixture of compounds with different properties"],
+      "banned_easy_templates": ["A direct 'which technique purifies this compound' or 'what does this test detect' recall question is a legitimate, common JEE Main archetype — do not exclude it."],
+      "out_of_scope": ["Detailed instrumental spectroscopic characterisation methods (IR/NMR/mass spectrometry are not part of this unit)"]
+    },
+    "C14": {
+      "chapter": "Some Basic Principles of Organic Chemistry",
+      "concepts": ["Carbocation/carbanion/free-radical stability ranking", "Inductive, electromeric, resonance and hyperconjugation effects", "Structural and stereoisomerism identification"],
+      "formulas": ["No standard numerical formulas — conceptual/structural unit"],
+      "methods": ["Identify all electron-donating/withdrawing groups attached to the reactive centre before ranking stability or acidity/basicity"],
+      "traps": ["Confusing inductive effect (through sigma bonds) with resonance/electromeric effect (through pi systems)", "Ranking carbocation stability without accounting for hyperconjugation from adjacent C-H bonds"],
+      "hard_archetypes": ["Rank a series of 4-5 similar carbocations/carbanions/radicals by stability using combined inductive + resonance + hyperconjugation reasoning", "Identify all types of isomerism possible for a given moderately complex structure"],
+      "banned_easy_templates": ["None by difficulty. A direct 'is this effect inductive or resonance' or basic nomenclature question is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Advanced pericyclic-reaction electron-pushing mechanisms (outside NCERT scope)"]
+    },
+    "C15": {
+      "chapter": "Hydrocarbons",
+      "concepts": ["Markovnikov's rule and peroxide (anti-Markovnikov) effect", "Electrophilic aromatic substitution mechanism", "Directive influence of substituents on benzene"],
+      "formulas": ["No standard numerical formulas — mechanism/reaction-based unit"],
+      "methods": ["Classify the substituent already on benzene as ortho/para-directing (activating) or meta-directing (deactivating) before predicting the product of a new substitution"],
+      "traps": ["Applying Markovnikov's rule when peroxide is present (should use anti-Markovnikov/Kharasch addition instead)", "Misidentifying a substituent's directing effect (e.g. halogens are deactivating yet ortho/para-directing)"],
+      "hard_archetypes": ["Multi-step synthesis sequences from an alkane/alkene to a specific substituted arene, tracking each reagent's regiochemical effect", "Ozonolysis-product-identification questions requiring reverse-engineering the parent alkene/alkyne structure"],
+      "banned_easy_templates": ["None by difficulty. A direct 'identify the major product of this addition/substitution' question is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Detailed pericyclic/photochemical hydrocarbon reactions beyond NCERT scope"]
+    },
+    "C16": {
+      "chapter": "Organic Compounds Containing Halogens",
+      "concepts": ["SN1 vs SN2 mechanism selection", "Nature of the C-X bond and reactivity trend", "Environmental/toxicological uses of specific haloalkanes"],
+      "formulas": ["No standard numerical formulas — mechanism/fact-based unit"],
+      "methods": ["Assess the substrate's carbon type (1°/2°/3°) and the nucleophile/solvent conditions before predicting SN1 vs SN2 pathway"],
+      "traps": ["Assuming all nucleophilic substitutions on haloalkanes proceed by the same mechanism regardless of substrate/solvent", "Confusing reactivity order of C-X bonds (C-F strongest/least reactive to C-I weakest/most reactive)"],
+      "hard_archetypes": ["Given a specific substrate and nucleophile/solvent combination, predict whether SN1 or SN2 dominates and the stereochemical outcome (inversion vs racemisation)"],
+      "banned_easy_templates": ["A direct 'which compound is used as X (e.g. DDT as a pesticide)' recall question is a legitimate, common JEE Main archetype — do not exclude it."],
+      "out_of_scope": ["Grignard-reagent organometallic chemistry in depth (touched on lightly under C17 instead)"]
+    },
+    "C17": {
+      "chapter": "Organic Compounds Containing Oxygen",
+      "concepts": ["Nucleophilic addition to carbonyl compounds", "Named reactions: aldol condensation, Cannizzaro, haloform, Reimer-Tiemann", "Relative acidity of carboxylic acids vs phenols vs alcohols"],
+      "formulas": ["No standard numerical formulas — mechanism/reaction-based unit"],
+      "methods": ["Check for the presence of α-hydrogens first — their presence/absence determines whether aldol condensation or Cannizzaro reaction is possible"],
+      "traps": ["Attempting Cannizzaro reaction on an aldehyde that has α-hydrogens (it requires no α-hydrogen)", "Ranking acidity of substituted phenols/carboxylic acids without correctly weighing electron-withdrawing vs donating substituent effects"],
+      "hard_archetypes": ["Multi-reagent synthesis sequence questions converting an alcohol to a specific carboxylic acid derivative via 3-4 steps", "Distinguishing-test questions (iodoform, Tollens', Fehling's) requiring identification of which compounds give a positive result"],
+      "banned_easy_templates": ["None by difficulty. A direct 'name the product of this named reaction' question is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Detailed asymmetric-synthesis/chiral-catalysis extensions of these reactions"]
+    },
+    "C18": {
+      "chapter": "Organic Compounds Containing Nitrogen",
+      "concepts": ["Basicity ordering of amines", "Diazonium salt formation and synthetic utility", "Distinguishing 1°/2°/3° amines"],
+      "formulas": ["No standard numerical formulas — mechanism/reaction-based unit"],
+      "methods": ["Weigh both the inductive (electron-donating alkyl groups) and steric/solvation effects together when ranking amine basicity in aqueous solution, rather than using alkyl-group count alone"],
+      "traps": ["Ranking amine basicity purely by alkyl-substitution count without accounting for steric hindrance and solvation in water", "Confusing the conditions/temperature required for diazonium salt stability (must be below 5°C)"],
+      "hard_archetypes": ["Given a set of substituted anilines/amines, rank them by basicity accounting for both electronic and steric effects", "Multi-step synthesis using a diazonium-salt intermediate (Sandmeyer, Gattermann reactions) to reach a target aromatic product"],
+      "banned_easy_templates": ["None by difficulty. A direct 1°/2°/3°-amine identification or basic-nomenclature question is a legitimate, common JEE Main archetype."],
+      "out_of_scope": ["Detailed diazo-coupling dye-chemistry beyond the basic synthetic-utility mention"]
+    },
+    "C19": {
+      "chapter": "Biomolecules",
+      "concepts": ["Classification of carbohydrates (aldoses/ketoses, mono/oligosaccharides)", "Protein structure levels (primary to quaternary)", "DNA vs RNA composition and base-pairing"],
+      "formulas": ["No standard numerical formulas — descriptive/qualitative unit"],
+      "methods": ["Match the described molecule's functional groups/linkages (glycosidic, peptide, phosphodiester) to the correct biomolecule class before answering"],
+      "traps": ["Confusing the four structural levels of proteins (e.g. attributing quaternary-structure features to tertiary structure)", "Mixing up the nitrogenous bases/sugar unique to DNA (thymine, deoxyribose) vs RNA (uracil, ribose)"],
+      "hard_archetypes": ["Given a description of a protein's denaturation conditions, identify which structural level is disrupted", "Distinguish reducing vs non-reducing sugars from their glycosidic-linkage description (e.g. sucrose vs maltose)"],
+      "banned_easy_templates": ["A direct 'which vitamin deficiency causes X' or 'is this sugar reducing/non-reducing' recall question is a legitimate, common JEE Main archetype — do not exclude it."],
+      "out_of_scope": ["Detailed enzyme-kinetics (Michaelis-Menten) treatment"]
+    },
+    "C20": {
+      "chapter": "Principles Related to Practical Chemistry",
+      "concepts": ["Qualitative salt analysis: cation/anion confirmatory tests", "Volumetric titration principles and indicator choice", "Preparation of specific inorganic/organic compounds listed in NCERT practicals"],
+      "formulas": ["N1V1 = N2V2 (titration equivalence, where applicable)"],
+      "methods": ["Match the described precipitate colour/gas evolved/flame-test result to the specific cation or anion from the standard NCERT qualitative-analysis scheme"],
+      "traps": ["Confusing similarly-coloured precipitates from different cations (e.g. white precipitates of several salts)", "Picking the wrong indicator for a given acid-base titration type (strong-strong vs weak-strong)"],
+      "hard_archetypes": ["Given a sequence of observations from an unknown-salt analysis, identify the cation and anion present", "Multi-step preparation-procedure questions requiring the correct order of reagents for one of the listed NCERT preparations"],
+      "banned_easy_templates": ["A direct 'name this test's positive-result observation' recall question is acceptable and common for this unit — do not exclude it (unlike other JEE Main units, pure recall is a legitimate archetype here)."],
+      "out_of_scope": ["Any salt or preparation not among the specific NCERT-listed cations/anions/compounds for this unit; insoluble salts are explicitly excluded"]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "exam_context": "SSC CGL Tier 2 2026, Paper I — the MERIT-DECIDING stage of the two-tier selection process for Combined Graduate Level Group B and C posts. Unlike Tier 1, Paper I marks are carried forward into the final selection score.",
+  "data_provenance": "Estimated from SSC's official CGL Tier 2 exam pattern/notification as reported by multiple 2025-2026 coaching/exam-tracker sources (PhysicsWallah, Adda247, CareerPower, ExamSuchana, Prepgrind, Prepp), cross-checked Sep 2026. Some trackers report Paper III (General Studies: Finance & Economics, for AAO/Assistant Accounts Officer posts) has been dropped from the 2026 cycle while others still list it as active for that post category — flagged as unconfirmed; verify against ssc.gov.in.",
+  "sections": {
+    "MATH": { "section_name": "Mathematical Abilities", "num_questions": 30, "max_marks": 90, "marks_per_question": 3 },
+    "REASON": { "section_name": "Reasoning and General Intelligence", "num_questions": 30, "max_marks": 90, "marks_per_question": 3 },
+    "ENG": { "section_name": "English Language and Comprehension", "num_questions": 45, "max_marks": 135, "marks_per_question": 3 },
+    "GA": { "section_name": "General Awareness", "num_questions": 25, "max_marks": 75, "marks_per_question": 3 },
+    "COMP": { "section_name": "Computer Knowledge", "num_questions": 20, "max_marks": 60, "marks_per_question": 3 }
+  },
+  "marking_scheme": {
+    "source_note": "Confirmed via multiple Sep 2026 sources describing the SSC CGL Tier 2 Paper I marking pattern for the 2026 cycle.",
+    "correct_answer": "+3 marks per question (uniform across Mathematical Abilities, Reasoning & General Intelligence, English Language & Comprehension, General Awareness, and Computer Knowledge)",
+    "incorrect_answer": "-1 mark (negative marking) — a heavier penalty than Tier 1's -0.5, reflecting Tier 2's merit-deciding status",
+    "unattempted": "0 marks",
+    "total_questions": 150,
+    "total_marks": 450,
+    "merit_deciding_nature": "Paper I marks ARE counted in the final merit list (unlike Tier 1, which is only qualifying). Final post allocation depends primarily on Tier 2 Paper I performance.",
+    "computer_knowledge_cutoff_note": "Computer Knowledge carries its own separate qualifying cut-off in addition to contributing marks to the total. Failing this module's cut-off can disqualify the entire Paper I attempt regardless of the overall score.",
+    "dest_note": "The Data Entry Speed Test (Session 2) is qualifying only — no marks, no negative marking, not part of the 450-mark total.",
+    "question_types_used": "Single-correct 5-option MCQ only across all five graded sections. No descriptive, numerical-value, or multiple-correct questions in Paper I."
+  },
+  "exam_logistics": {
+    "exam_mode": "Online, computer-based test (CBT)",
+    "session_structure": {
+      "session_1": {
+        "total_duration_minutes": 135,
+        "note": "2 hours 15 minutes combining Sections I, II and III.",
+        "section_I": { "content": "Mathematical Abilities (30Q) + Reasoning and General Intelligence (30Q)", "duration_minutes": 60 },
+        "section_II": { "content": "English Language & Comprehension (45Q) + General Awareness (25Q)", "duration_minutes": 60 },
+        "section_III": { "content": "Computer Knowledge (20Q)", "duration_minutes": 15 }
+      },
+      "session_2": {
+        "total_duration_minutes": 15,
+        "content": "Data Entry Speed Test (DEST) — 2000 key depressions, qualifying only"
+      }
+    },
+    "sectional_timing_caveat": "Trackers disagree on whether Sections I and II are single 60-minute blocks (as described here) or further split into per-subject sub-timers (e.g. 30 min Maths + 30 min Reasoning within Section I). Verify the live interface behaviour against the admit card/official mock test rather than a single source.",
+    "extended_duration_pwd": "Extended time typically granted for candidates with benchmark disabilities, per standard SSC accommodation policy",
+    "medium_of_exam": "English and Hindi, except the English Language & Comprehension section, which is English-only",
+    "who_takes_this_paper": "Paper I is compulsory for every SSC CGL post. Paper II (Statistics) is additionally required only for Junior Statistical Officer / Statistical Investigator Grade-II posts and is out of scope for this file."
+  },
+  "downstream_stage_context": {
+    "note": "Included for reference only — these are NOT part of Paper I being seeded here.",
+    "tier2_paper2_statistics": { "applicable_to": "JSO / Statistical Investigator Grade-II posts only", "total_questions": 100, "total_marks": 200, "duration": "2 hours", "correct_answer": "+2 marks", "incorrect_answer": "-0.50 mark" },
+    "tier2_paper3_finance_economics": { "applicable_to": "Assistant Audit Officer / Assistant Accounts Officer posts only (status for 2026 cycle unconfirmed — see data_provenance)", "total_questions": 100, "total_marks": 200, "duration": "2 hours" },
+    "document_verification": "Final stage after Tier 2 results, before post allocation"
+  }
+}

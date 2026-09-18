@@ -1,0 +1,52 @@
+{
+  "subject": "Data Interpretation and Logical Reasoning (DILR)",
+  "exam": "CAT 2026 (Common Admission Test, MBA)",
+  "source_note": "Compiled from CAT 2025 (conducted 30 Nov 2025 by IIM Kozhikode) slot-wise analyses and multi-year coaching-tracker trend data, cross-checked Sep 2026. CAT has no officially published syllabus document; topic lists here are reverse-engineered from repeated set-types across recent years' papers. Since roughly 2021, DILR is presented as caselets/sets (not separate DI and LR question blocks) - each set bundles a data scenario with ~4-6 questions, mixing MCQ and TITA within the same set. Always cross-check against the current-year CAT official notification/mock test.",
+  "exam_pattern_note": "CAT DILR: 22 questions, 40-minute fixed time limit, no sectional choice. Typically presented as 4 sets of ~5-6 questions each. Each set is usually either data-interpretation-flavoured (tables, bar/line graphs, pie charts) or logical-reasoning-flavoured (arrangements, puzzles, games & tournaments, Venn diagrams, binary/selection logic), though recent years increasingly blend both within a single set.",
+  "topics": [
+    {
+      "topic_id": "D01",
+      "area": "Data Interpretation - Tables, Bar/Line Graphs, Pie Charts",
+      "subtopics": [
+        "Multi-table data sets requiring cross-referencing of 2-3 tables",
+        "Bar graph and line graph sets (trend/comparison questions)",
+        "Pie chart sets, often combined with a table",
+        "Data sufficiency-style DI questions (missing-data caselets)"
+      ],
+      "question_format": "Mix of MCQ and TITA within each set"
+    },
+    {
+      "topic_id": "D02",
+      "area": "Arrangements and Puzzles",
+      "subtopics": [
+        "Linear and circular seating arrangements",
+        "Scheduling and sequencing puzzles",
+        "Distribution-based puzzles (people/items across groups, categories)",
+        "Conditional logic puzzles with multiple constraints"
+      ],
+      "question_format": "Mix of MCQ and TITA within each set"
+    },
+    {
+      "topic_id": "D03",
+      "area": "Games and Tournaments",
+      "subtopics": [
+        "Knockout and round-robin tournament structures",
+        "Points-table and ranking-based reasoning",
+        "Sports-scenario caselets requiring rule-based deduction"
+      ],
+      "question_format": "Mix of MCQ and TITA within each set",
+      "note": "A recurring high-weightage set-type in recent CAT slots (2023-2025)."
+    },
+    {
+      "topic_id": "D04",
+      "area": "Reasoning-based Sets - Venn Diagrams, Binary/Selection Logic, Networks",
+      "subtopics": [
+        "Venn diagram / set-theory-based caselets",
+        "Binary logic and truth-teller/liar puzzles",
+        "Selection and committee-formation logic with constraints",
+        "Network/route/graph-based reasoning caselets"
+      ],
+      "question_format": "Mix of MCQ and TITA within each set"
+    }
+  ]
+}

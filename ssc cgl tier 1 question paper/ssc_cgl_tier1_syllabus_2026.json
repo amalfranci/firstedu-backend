@@ -1,0 +1,100 @@
+{
+  "exam": "SSC CGL Tier 1 2026 (Staff Selection Commission — Combined Graduate Level)",
+  "source_note": "Compiled from the SSC's official CGL Tier 1 syllabus/notification as reported by multiple 2025-2026 coaching/exam-tracker sources (PhysicsWallah, Careers360, Adda247, CareerPower, Testbook, LearnTheta, Sreedhar's CCE, Mahendra's), cross-checked Sep 2026. Always verify against the current-year notification at ssc.gov.in before finalising a question bank, since SSC has been known to add procedural changes (e.g. sectional timing) between cycles.",
+  "exam_pattern_note": "SSC CGL Tier 1 2026: 100 objective MCQs, 200 marks (2 marks per correct question), 60 minutes total, computer-based online test (CBT). Four equally-sized sections of 25 questions / 50 marks each: General Intelligence & Reasoning, General Awareness, Quantitative Aptitude, English Comprehension. From the 2026 cycle, multiple trackers report SSC has introduced SECTIONAL TIMING — 15 minutes per section, with the section auto-closing when its time is up (previously Tier 1 had only an overall 60-minute limit with free movement between sections). Verify this procedural change against the official notification, as not every source has caught up to it yet. Tier 1 is purely qualifying — its marks are NOT added to the final merit list, but candidates must clear the Tier 1 cut-off to sit for Tier 2. Questions are set in both English and Hindi, except the English Comprehension section, which is English-only.",
+  "sections": [
+    {
+      "section_id": "GIR",
+      "section_name": "General Intelligence and Reasoning",
+      "num_questions": 25,
+      "max_marks": 50,
+      "sectional_time_minutes_2026": 15,
+      "question_format": "5-option single-correct MCQ, verbal and non-verbal reasoning.",
+      "topics": [
+        {
+          "topic_id": "GIR01",
+          "topic": "Analogy and Classification",
+          "subtopics": ["Semantic analogy/classification", "Symbolic/Number analogy/classification", "Figural analogy/classification", "Verbal and non-verbal analogies", "Similarities and differences"]
+        },
+        {
+          "topic_id": "GIR02",
+          "topic": "Series",
+          "subtopics": ["Semantic series", "Number series (arithmetic number series)", "Figural series", "Non-verbal series"]
+        },
+        {
+          "topic_id": "GIR03",
+          "topic": "Coding-Decoding and Operations",
+          "subtopics": ["Coding and decoding", "Numerical operations", "Symbolic operations", "Word building"]
+        },
+        {
+          "topic_id": "GIR04",
+          "topic": "Logical/Statement-Based Reasoning",
+          "subtopics": ["Statement-conclusion", "Syllogistic reasoning", "Drawing inferences", "Critical thinking", "Decision making, judgment", "Problem-solving analysis"]
+        },
+        {
+          "topic_id": "GIR05",
+          "topic": "Relationship and Arithmetical Reasoning",
+          "subtopics": ["Relationship concepts (blood relations)", "Arithmetical reasoning", "Direction and distance", "Indexing, address matching, date & city matching"]
+        },
+        {
+          "topic_id": "GIR06",
+          "topic": "Spatial and Non-Verbal Reasoning",
+          "subtopics": ["Space visualisation, spatial orientation", "Pattern folding & unfolding (paper folding)", "Embedded figures", "Mirror image", "Venn diagrams"]
+        },
+        {
+          "topic_id": "GIR07",
+          "topic": "Other Intelligence Skills",
+          "subtopics": ["Visual memory", "Discrimination and observation", "Trends", "Critical thinking, emotional intelligence, social intelligence"]
+        }
+      ]
+    },
+    {
+      "section_id": "GA",
+      "section_name": "General Awareness",
+      "num_questions": 25,
+      "max_marks": 50,
+      "sectional_time_minutes_2026": 15,
+      "question_format": "5-option single-correct MCQ, standalone fact-based items (static GK plus current affairs).",
+      "topics": [
+        { "topic_id": "GA01", "topic": "History and Culture", "subtopics": ["Indian history", "Art and culture"] },
+        { "topic_id": "GA02", "topic": "Geography", "subtopics": ["Indian and world geography", "Interaction between people and the environment"] },
+        { "topic_id": "GA03", "topic": "Polity and Economy", "subtopics": ["Indian polity and governance", "Economic and social development"] },
+        { "topic_id": "GA04", "topic": "Science and Technology", "subtopics": ["General science (Physics, Chemistry, Biology)", "Science and technology developments"] },
+        { "topic_id": "GA05", "topic": "Current Affairs and Static GK", "subtopics": ["National and international current events (typically last 6-12 months)", "Awards, books and authors, sports, notable personalities"] }
+      ]
+    },
+    {
+      "section_id": "QA",
+      "section_name": "Quantitative Aptitude",
+      "num_questions": 25,
+      "max_marks": 50,
+      "sectional_time_minutes_2026": 15,
+      "question_format": "5-option single-correct MCQ. Not an arithmetic-only section — geometry, mensuration and trigonometry make up a substantial share alongside arithmetic and basic algebra.",
+      "topics": [
+        { "topic_id": "QA01", "topic": "Number Systems and Basic Arithmetic", "subtopics": ["Whole numbers, decimals, fractions and relationships between numbers", "Percentage", "Ratio and proportion", "Square roots", "Averages"] },
+        { "topic_id": "QA02", "topic": "Commercial Arithmetic", "subtopics": ["Simple interest and compound interest", "Profit, loss and discount", "Partnership business", "Mixture and alligation"] },
+        { "topic_id": "QA03", "topic": "Time, Speed, Distance and Work", "subtopics": ["Time, speed and distance", "Time and work"] },
+        { "topic_id": "QA04", "topic": "Basic Algebra", "subtopics": ["Basic algebraic identities and expressions", "Graphs of linear equations"] },
+        { "topic_id": "QA05", "topic": "Geometry", "subtopics": ["Circles", "Triangles and congruence", "Quadrilaterals", "Regular polygons"] },
+        { "topic_id": "QA06", "topic": "Mensuration", "subtopics": ["Right prism", "Right circular cone", "Right circular cylinder", "Sphere and hemisphere", "Rectangular parallelepiped"] },
+        { "topic_id": "QA07", "topic": "Trigonometry", "subtopics": ["Trigonometric ratios", "Degree and radian measures", "Standard identities", "Complementary angles", "Heights and distances"] },
+        { "topic_id": "QA08", "topic": "Data Interpretation", "subtopics": ["Frequency polygon", "Bar graph", "Pie chart"] }
+      ]
+    },
+    {
+      "section_id": "ENG",
+      "section_name": "English Comprehension",
+      "num_questions": 25,
+      "max_marks": 50,
+      "sectional_time_minutes_2026": 15,
+      "question_format": "5-option single-correct MCQ. Officially described in the syllabus only as 'basic comprehension, etc.'; the topic breakdown below reflects the standard set of item types consistently reported in actual Tier 1 papers by coaching trackers.",
+      "topics": [
+        { "topic_id": "ENG01", "topic": "Reading Comprehension", "subtopics": ["Short passage-based comprehension questions"] },
+        { "topic_id": "ENG02", "topic": "Vocabulary", "subtopics": ["Synonyms and antonyms", "One-word substitution", "Idioms and phrases"] },
+        { "topic_id": "ENG03", "topic": "Grammar", "subtopics": ["Error spotting / sentence correction", "Active and passive voice", "Direct and indirect speech"] },
+        { "topic_id": "ENG04", "topic": "Cloze Test", "subtopics": ["Single passage with multiple blanks, best-fit word per blank"] },
+        { "topic_id": "ENG05", "topic": "Sentence-Level Skills", "subtopics": ["Sentence improvement", "Fill in the blanks", "Spelling/word usage"] }
+      ]
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 /**
  * JEE Advanced paper-generation pipeline used by /admin/ai-powered-test/*.
  *
- * Stages (per question):
- *   queued → generating → generated → validating → verified → expanding → expanded
- *   (drops / failures → dropped | failed)
+ * Minimal parallel flow:
+ *   plan → Gemini generate (parallel) → free schema check
+ *        → o3 solve + verify answer + verifiedSolution (parallel)
+ *        → READY (no Gemini expand, no Luna paper audit)
  *
- * Job execution:
- *   API enqueues (pending) → paper-job-worker claims → generate → Luna → expand
- *   Set PAPER_JOB_RUNNER=inline to keep the old in-process setImmediate path.
+ * PAPER_JOB_RUNNER=worker (default) enqueues for scripts/paper-job-worker.mjs.
+ * PAPER_JOB_RUNNER=inline keeps work in the API process for local UI testing.
  */
 
 import { inspect } from "util";
@@ -18,6 +18,7 @@ import { GoogleGenAI } from "@google/genai";
 import { randomUUID } from "crypto";
 import { ApiError } from "../utils/ApiError.js";
 import { safeJsonParse } from "../utils/aiJsonRepair.js";
+import { dedupePaperQuestionsByStem } from "../utils/paperQuestionDedupe.js";
 import { callOpenAIReasoningJson } from "./openaiReasoningChat.service.js";
 import { resolveGeminiTextModelForTier } from "./geminiTextModels.js";
 import {
@@ -58,6 +59,7 @@ import {
   saveGeneratedPaperDraft,
   summarizeCalls,
 } from "./paperJobArtifact.service.js";
+import { runParallelPaperPipeline } from "./paperParallelOrchestrator.service.js";
 
 const PIPELINE_DIR = dirname(fileURLToPath(import.meta.url));
 
@@ -1133,13 +1135,16 @@ const generateBatch = async ({
 ${typeLine}
 Exactly 4 options unless integer. Use each assigned chapter exactly. Valid LaTeX/JSON. No explanations or solveSteps.
 ${matchLockBlock}
-**JEE ADVANCED HARDNESS LOCK**
-- High-difficulty JEE Advanced only; never routine JEE Main drills.
-- Require a non-obvious first step or insight.
-- Prefer fusion of 2 major techniques; maximum 3 (no mega-stacks).
-- difficultySelfScore target 78–88; never below 70.
-- Avoid unnecessary calculation length.
-- Do not rely on obscure/unlisted concepts; respect out-of-scope.
+**JEE ADVANCED HARDNESS LOCK (strict — Paper-1/2 hard seat)**
+- Target: real IIT Advanced hard, NOT JEE Main / board / routine drill.
+- difficultySelfScore target **78–88**; never below **75**. If you cannot reach 75, still invent a harder stem — do not emit a soft item.
+- Require a **non-obvious first move** (substitution trick, hidden invariant, coupled constraint, or non-standard case split). Pure plug-in formulas = FAIL.
+- Prefer **fusion of 2 major techniques**; optionally a third tight link. Never 4+ independent mini-problems glued together.
+- For **multiple-correct**: do NOT mark all of A–D correct unless each option needs a genuinely different argument; prefer 2–3 correct with attractive wrong options.
+- For **match**: List-I items must share one conceptual spine (same family of ideas). Ban four copy-paste distance/count tasks that only change numbers.
+- For **integer**: answer should need a multi-step derivation (not a one-line count).
+- Avoid: identical-bag / simple partition drills, standard orthonormal-vector coplanarity-only items, textbook “tangent intercept → DE” templates without a twist, four parallel plane-distance clones, “number of solutions in [0,2π]” alone as the whole ask.
+- Stretch hardness by **idea**, not by denser LaTeX or longer arithmetic.
 - Stay inside the assigned chapter. If a conceptSlot is provided in TOPIC CONTEXT, use it; otherwise choose ONE Preferred hard concept slot and set conceptSlot to a short slug of that choice.
 - Respect all banned templates.
 - Questions must be independently solvable and verifiable.
@@ -1398,7 +1403,7 @@ const explanationLooksComplete = (q) => {
   return hasInsight && (hasDerivation || hasSteps) && notPlaceholder;
 };
 
-const SCORE_FLOOR = Number(process.env.JEE_ADV_SCORE_FLOOR || 70);
+const SCORE_FLOOR = Number(process.env.JEE_ADV_SCORE_FLOOR || 75);
 
 const passesHardnessScore = (q) => {
   const score = Number(q?.difficultySelfScore ?? q?._generatorDifficultySelfScore);
@@ -1418,7 +1423,7 @@ const isVerifyTimeoutError = (err) =>
   /timeout|ECONNABORTED|ETIMEDOUT/i.test(String(err?.message || err || ""));
 
 const getVerifyTimeoutRetries = () =>
-  Math.max(0, Math.min(3, Number(process.env.JEE_ADV_VERIFY_TIMEOUT_RETRIES || 0)));
+  Math.max(0, Math.min(3, Number(process.env.JEE_ADV_VERIFY_TIMEOUT_RETRIES ?? 2)));
 
 const truthyGate = (v, { defaultIfMissing = false } = {}) => {
   if (v === true) return true;
@@ -1786,10 +1791,11 @@ const toUiQuestion = (q, config = {}) => {
 
 const usableQuestion = (item) =>
   item?.locked &&
-  (item.stage === "locked" ||
-    item.stage === "verified" ||
+  item.locked._productionReady === true &&
+  (item.stage === "ready_to_confirm" ||
     item.stage === "expanded" ||
-    item.stage === "ready_to_confirm");
+    item.stage === "verified" ||
+    item.stage === "locked");
 
 const itemType = (item) =>
   String(item?.type || item?.locked?._advancedType || item?.raw?._advancedType || "single");
@@ -1824,7 +1830,7 @@ const checkpointItem = async (item) => {
 };
 
 const failItem = async (item, reason, detail = null) => {
-  item.stage = /drop|disagree|luna_fail|key_mismatch|ambiguous|low_confidence|missing_proposed|luna_verify|chapter_mismatch|concept_mismatch|difficulty_mismatch|format_invalid|math_incorrect/i.test(
+  item.stage = /drop|disagree|luna|o3_|key_mismatch|ambiguous|code_validation|duplicate|generate_empty|missing|uncertain|math_incorrect|explanation_/i.test(
     String(reason || "")
   )
     ? "dropped"
@@ -2154,6 +2160,7 @@ export const runAdvancedPaperPipeline = async (
     subjects: plan.subjects,
     allocation: plan.allocatedTopics,
     resume: Boolean(reusePlan),
+    mode: "parallel_gemini_o3_solution",
   });
   if (!reusePlan) {
     const usedTopics = Object.values(plan.slots || {})
@@ -2168,119 +2175,30 @@ export const runAdvancedPaperPipeline = async (
       : `Phase 1 — slot plan (${expectedTotal} Q)`,
     plan,
   });
-  const exclude = [];
-  const byType = {};
-  const allItems = [...(resumeJob?.items || [])];
-  const allFailures = [...(resumeJob?.failures || [])];
-  let seq = allItems.reduce((m, it) => Math.max(m, Number(it.seq) || 0), 0) + 1;
-  const types = ["single", "multiple", "integer", "match"];
-  for (const type of types) {
-    const need = plan.typeCounts[type] || 0;
-    if (!need) {
-      byType[type] = [];
-      continue;
-    }
-    const resumeItems = (resumeJob?.items || []).filter(
-      (it) => itemType(it) === type
-    );
-    const filled = await fillType({
-      type,
-      need,
-      slots: plan.slots[type],
-      unusedSlots: plan.unusedSlots?.[type] || [],
-      exclude,
-      onProgress: (evt) => {
-        const snapshot = types.flatMap((t) => byType[t] || []);
-        const extra = evt.questions
-          ? []
-          : [];
-        onProgress?.({
-          ...evt,
-          questions: [
-            ...snapshot.map((q) => toUiQuestion(q, config)),
-            ...((evt.questions || extra).filter(Boolean)),
-          ].filter(
-            (q, i, arr) =>
-              arr.findIndex((x) => x.questionText === q.questionText) === i
-          ),
-          counts: {
-            single: (byType.single || []).length,
-            multiple: (byType.multiple || []).length,
-            integer: (byType.integer || []).length,
-            match: (byType.match || []).length,
-            total:
-              snapshot.length +
-              (evt.questions?.length || 0),
-            expected: expectedTotal,
-          },
-        });
-      },
-      resumeItems,
-      seqStart: seq,
-      config,
-    });
-    byType[type] = filled.kept;
-    seq = filled.seq;
-    for (const it of filled.items) {
-      const idx = allItems.findIndex((x) => x.seq === it.seq);
-      if (idx >= 0) allItems[idx] = it;
-      else allItems.push(it);
-    }
-    allFailures.push(...filled.failures);
-    const snapshot = types.flatMap((t) => byType[t] || []);
-    onProgress?.({
-      phase: "fill",
-      message: `${type} locked ${byType[type].length}/${need} (paper ${snapshot.length}/${expectedTotal})`,
-      questions: snapshot.map((q) => toUiQuestion(q, config)),
-      items: allItems,
-      failures: allFailures,
-      counts: {
-        single: (byType.single || []).length,
-        multiple: (byType.multiple || []).length,
-        integer: (byType.integer || []).length,
-        match: (byType.match || []).length,
-        total: snapshot.length,
-        expected: expectedTotal,
-      },
-    });
-  }
 
-  let questions = types.flatMap((t) => byType[t]);
-  if (questions.length > expectedTotal) {
-    questions = questions.slice(0, expectedTotal);
-  }
-  const stillNeedExpand = questions.filter(
-    (q) => !q._explanationExpanded && !explanationLooksComplete(q)
-  );
-  if (stillNeedExpand.length) {
-    onProgress?.({
-      phase: "expand",
-      message: `Phase 4 — expand remaining ×${stillNeedExpand.length}/${questions.length}`,
-    });
-    const expandedMap = new Map();
-    for (const q of stillNeedExpand) {
-      const out = await expandExplanation(q);
-      expandedMap.set(q, out);
-    }
-    questions = questions.map((q) => expandedMap.get(q) || q);
-  }
-  return {
+  return runParallelPaperPipeline({
     plan,
-    questions: questions.map((q) => toUiQuestion(q, config)),
-    raw: questions,
-    items: allItems,
-    failures: allFailures,
-    tokenUsage: readTokenSummary(currentJobId)?.byModel || {},
-    counts: {
-      single: (byType.single || []).length,
-      multiple: (byType.multiple || []).length,
-      integer: (byType.integer || []).length,
-      match: (byType.match || []).length,
-      total: questions.length,
-      expected: expectedTotal,
+    config,
+    onProgress,
+    resumeItems: resumeJob?.items || [],
+    deps: {
+      generateBatch,
+      expandExplanation,
+      explanationLooksComplete,
+      toUiQuestion,
+      checkpointItem,
+      failItem,
+      normalizeSubject,
+      pipelineLog,
+      recordUsage: recordModelUsage,
+      jobId: currentJobId,
+      runQuestionContext,
+      stampTrust,
+      readTokenSummary,
     },
-  };
+  });
 };
+
 
 const runningJobs = new Set();
 
@@ -2307,29 +2225,49 @@ const applyJobProgress = (jobId, evt) => {
       : undefined,
   });
   const patch = { phase: evt.phase, message: evt.message };
+  if (evt.subPhase) patch.subPhase = evt.subPhase;
   if (evt.plan) patch.plan = evt.plan;
-  if (evt.questions) patch.questions = evt.questions;
-  if (evt.counts) patch.counts = evt.counts;
+  if (evt.questions) {
+    const deduped = dedupePaperQuestionsByStem(evt.questions);
+    patch.questions = deduped;
+    if (evt.counts) {
+      patch.counts = { ...evt.counts, total: deduped.length };
+    } else {
+      patch.counts = { total: deduped.length };
+    }
+    patch.completedQuestions = deduped.length;
+  } else if (evt.counts) {
+    patch.counts = evt.counts;
+  }
   if (evt.items) patch.items = evt.items;
   if (evt.failures) patch.failures = evt.failures;
+  if (evt.counts?.expected != null) patch.totalQuestions = evt.counts.expected;
+  if (Array.isArray(evt.failures)) patch.failedQuestions = evt.failures.length;
   patch.tokenUsage = readTokenSummary(jobId)?.byModel || {};
   patch.logDir = `temp/paper-jobs/${jobId}`;
   updateGenerationJob(jobId, patch);
-  if (evt.questions) {
-    saveGeneratedPaperDraft(jobId, evt.questions, {
+  if (patch.questions) {
+    saveGeneratedPaperDraft(jobId, patch.questions, {
       status: "temporary",
       phase: evt.phase,
       message: evt.message,
-      counts: evt.counts || {},
+      counts: patch.counts || {},
     });
   }
   persistJobRecord(jobId, {
     status: "running",
     phase: evt.phase,
     message: evt.message,
-    counts: evt.counts || {},
+    generationId: jobId,
+    counts: patch.counts || evt.counts || {},
     failures: evt.failures || [],
     plan: evt.plan,
+    totalQuestions:
+      evt.counts?.expected ??
+      getGenerationJob(jobId)?.totalQuestions ??
+      getGenerationJob(jobId)?.config?.totalQuestions,
+    completedQuestions: patch.completedQuestions ?? evt.counts?.total,
+    failedQuestions: Array.isArray(evt.failures) ? evt.failures.length : undefined,
   }).catch(() => {});
 };
 
@@ -2356,33 +2294,60 @@ const runJobLoop = async (jobId, config, { resume = false } = {}) => {
     });
     const tokens = readTokenSummary(jobId);
     pipelineLog("JOB_DONE", { counts: result.counts, tokens: tokens.byModel });
+    const questions = dedupePaperQuestionsByStem(result.questions || []);
+    const counts = {
+      ...(result.counts || {}),
+      total: questions.length,
+    };
+    const terminalStatus =
+      result.completionStatus === "partially_completed"
+        ? "partially_completed"
+        : result.completionStatus === "failed"
+          ? "failed"
+          : "completed";
+    const doneMessage =
+      terminalStatus === "completed"
+        ? `Done — ${counts.total}/${counts.expected || counts.total} o3-verified`
+        : terminalStatus === "partially_completed"
+          ? `Partial — ${counts.total}/${counts.expected || "?"} o3-verified`
+          : `Failed — ${counts.total || 0} locked`;
     updateGenerationJob(jobId, {
-      status: "completed",
+      status: terminalStatus,
       phase: "done",
-      message: `Done — ${result.counts.total} locked questions`,
-      questions: result.questions,
-      counts: result.counts,
+      message: doneMessage,
+      questions,
+      counts,
       plan: result.plan,
       items: result.items,
       failures: result.failures,
       tokenUsage: tokens.byModel,
       logDir: `temp/paper-jobs/${jobId}`,
-      resumable: false,
+      resumable: terminalStatus !== "completed",
+      completedQuestions: counts.total,
+      failedQuestions: Array.isArray(result.failures) ? result.failures.length : 0,
+      totalQuestions: counts.expected,
+      completionStatus: result.completionStatus || terminalStatus,
     });
     await persistJobRecord(jobId, {
-      status: "completed",
+      status: terminalStatus === "partially_completed" ? "completed" : terminalStatus,
       phase: "done",
-      message: `Done — ${result.counts.total} locked questions`,
-      counts: result.counts,
+      message: doneMessage,
+      generationId: jobId,
+      counts,
       failures: result.failures || [],
       plan: result.plan,
-      resumable: false,
+      resumable: terminalStatus !== "completed",
+      completedQuestions: counts.total,
+      failedQuestions: Array.isArray(result.failures) ? result.failures.length : 0,
+      totalQuestions: counts.expected,
+      completedAt: new Date(),
     });
-    saveGeneratedPaperDraft(jobId, result.questions, {
-      status: "ready_to_confirm",
+    saveGeneratedPaperDraft(jobId, questions, {
+      status:
+        terminalStatus === "completed" ? "ready_to_confirm" : terminalStatus,
       phase: "done",
-      message: `Done — ${result.counts.total} locked questions`,
-      counts: result.counts,
+      message: doneMessage,
+      counts,
     });
   } catch (err) {
     const errorDetail = serializeError(err);
@@ -2427,11 +2392,13 @@ const runJobLoop = async (jobId, config, { resume = false } = {}) => {
 
 export const startAdvancedPaperJob = (config = {}) => {
   const jobId = `apt-${randomUUID()}`;
+  const totalQuestions = Math.max(0, Number(config.totalQuestions) || 0);
   currentJobId = jobId;
   lastCallContext = null;
   bindPaperJob(jobId);
   pipelineLog("JOB_START", {
     jobId,
+    generationId: jobId,
     runner: PAPER_JOB_RUNNER,
     config,
     env: {
@@ -2458,19 +2425,30 @@ export const startAdvancedPaperJob = (config = {}) => {
       phase: "queued",
       pipeline: "jee_advanced_luna_verify",
       runner: "inline",
+      generationId: jobId,
       config,
       questions: [],
       items: [],
       failures: [],
+      totalQuestions,
+      completedQuestions: 0,
+      failedQuestions: 0,
       logDir: `temp/paper-jobs/${jobId}`,
-      message: "Queued JEE Advanced generate → Luna verify → expand (inline)",
+      message: "Queued JEE Advanced generate → o3 verify+solution (inline)",
     });
     persistJobRecord(jobId, {
       status: "running",
       phase: "queued",
-      message: "Queued JEE Advanced generate → Luna verify → expand (inline)",
+      message: "Queued JEE Advanced generate → o3 verify+solution (inline)",
+      generationId: jobId,
       config,
       runner: "inline",
+      totalQuestions,
+      completedQuestions: 0,
+      failedQuestions: 0,
+      exam: config.examLabel || config.examType || "",
+      subject: config.subject || "",
+      userId: config.createdBy || null,
     }).catch(() => {});
     setImmediate(() => {
       runJobLoop(jobId, config, { resume: false }).catch((err) => {
@@ -2478,7 +2456,12 @@ export const startAdvancedPaperJob = (config = {}) => {
       });
     });
   } else {
-    enqueuePaperJob(jobId, config);
+    enqueuePaperJob(jobId, config, {
+      generationId: jobId,
+      totalQuestions,
+      exam: config.examLabel || config.examType || "",
+      subject: config.subject || "",
+    });
   }
   return getGenerationJob(jobId);
 };

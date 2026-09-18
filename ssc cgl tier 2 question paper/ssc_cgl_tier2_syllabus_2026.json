@@ -1,0 +1,89 @@
+{
+  "exam": "SSC CGL Tier 2 2026, Paper I (Staff Selection Commission — Combined Graduate Level)",
+  "source_note": "Compiled from the SSC's official CGL Tier 2 exam pattern/notification as reported by multiple 2025-2026 coaching/exam-tracker sources (PhysicsWallah, Adda247, CareerPower, ExamSuchana, Prepgrind, Prepp), cross-checked Sep 2026. Tier 2 2026 dropped the earlier Paper III (General Studies: Finance & Economics for AAO posts) per some trackers while others still list it as post-specific — treat Paper III's status as unconfirmed for the live cycle and verify against ssc.gov.in. This file covers Paper I only (compulsory for every post); Paper II (Statistics, for JSO/Statistical Investigator Grade-II posts) is a separate, post-specific paper and is out of scope here.",
+  "exam_pattern_note": "SSC CGL Tier 2 Paper I 2026: 150 objective MCQs, 450 marks, computer-based online test, split across 5 sections mapped to 3 graded 'Sections' (I, II, III) plus a qualifying Data Entry Speed Test in a separate Session 2. Section I = Mathematical Abilities (30Q) + Reasoning & General Intelligence (30Q); Section II = English Language & Comprehension (45Q) + General Awareness (25Q); Section III = Computer Knowledge (20Q, qualifying-cutoff module — failing its cutoff can disqualify the whole paper regardless of other scores). Session 1 (Sections I-III) runs 2 hours 15 minutes total; Session 2 is the 15-minute Data Entry Speed Test (DEST, 2000 key depressions), itself qualifying only, with no negative marking. Tier 2 Paper I is the MERIT-DECIDING stage — unlike Tier 1, these marks are carried forward into final selection. Reported subject-wise sub-timers within Sections I/II vary across trackers (some describe a single 60-minute block per Section, others describe additional per-subject sub-timers inside that block); verify the live-cycle interface behaviour against the admit card/mock test rather than relying on any single tracker.",
+  "sections": [
+    {
+      "section_id": "MATH",
+      "section_name": "Mathematical Abilities",
+      "num_questions": 30,
+      "max_marks": 90,
+      "question_format": "5-option single-correct MCQ; higher marks-per-question and generally higher difficulty than the equivalent Tier 1 Quantitative Aptitude topics.",
+      "topics": [
+        { "topic_id": "MATH01", "topic": "Number Systems and Basic Arithmetic", "subtopics": ["Whole numbers, decimals, fractions", "Percentage, ratio & proportion, averages", "Square roots"] },
+        { "topic_id": "MATH02", "topic": "Commercial Arithmetic", "subtopics": ["Simple and compound interest", "Profit, loss and discount", "Partnership, mixture and alligation"] },
+        { "topic_id": "MATH03", "topic": "Time, Speed, Distance and Work", "subtopics": ["Time, speed and distance", "Time and work"] },
+        { "topic_id": "MATH04", "topic": "Algebra", "subtopics": ["Basic algebraic identities and expressions", "Linear and quadratic equations", "Graphs of linear equations"] },
+        { "topic_id": "MATH05", "topic": "Geometry", "subtopics": ["Circles", "Triangles and congruence", "Quadrilaterals", "Regular polygons"] },
+        { "topic_id": "MATH06", "topic": "Mensuration", "subtopics": ["Right prism, right circular cone and cylinder", "Sphere and hemisphere", "Rectangular parallelepiped"] },
+        { "topic_id": "MATH07", "topic": "Trigonometry", "subtopics": ["Trigonometric ratios and standard identities", "Degree and radian measures", "Complementary angles, heights and distances"] },
+        { "topic_id": "MATH08", "topic": "Statistics and Probability", "subtopics": ["Mean, median, mode, standard deviation", "Basic probability problems"] },
+        { "topic_id": "MATH09", "topic": "Data Interpretation", "subtopics": ["Table, bar, line and pie-chart DI", "Frequency polygon"] }
+      ]
+    },
+    {
+      "section_id": "REASON",
+      "section_name": "Reasoning and General Intelligence",
+      "num_questions": 30,
+      "max_marks": 90,
+      "question_format": "5-option single-correct MCQ; carries the same core topic set as Tier 1 General Intelligence & Reasoning, with a heavier share of multi-step puzzles and critical/emotional-intelligence items.",
+      "topics": [
+        { "topic_id": "REASON01", "topic": "Analogy, Classification and Series", "subtopics": ["Semantic/symbolic/number/figural analogy and classification", "Semantic, number and figural series"] },
+        { "topic_id": "REASON02", "topic": "Coding-Decoding and Relationship Concepts", "subtopics": ["Coding and decoding", "Blood relations", "Direction and distance"] },
+        { "topic_id": "REASON03", "topic": "Statement-Based and Logical Reasoning", "subtopics": ["Syllogistic reasoning", "Statement-conclusion", "Drawing inferences and evaluating arguments"] },
+        { "topic_id": "REASON04", "topic": "Puzzles and Non-Verbal Reasoning", "subtopics": ["Complex/multi-condition puzzles", "Space visualisation, paper folding, embedded figures, mirror image"] },
+        { "topic_id": "REASON05", "topic": "Critical Thinking and Emotional Intelligence", "subtopics": ["Critical thinking (argument evaluation)", "Emotional intelligence, social intelligence, situational decision-making"] }
+      ]
+    },
+    {
+      "section_id": "ENG",
+      "section_name": "English Language and Comprehension",
+      "num_questions": 45,
+      "max_marks": 135,
+      "question_format": "5-option single-correct MCQ; largest single section by question count, with a heavier and more advanced comprehension/grammar load than Tier 1 English Comprehension.",
+      "topics": [
+        { "topic_id": "ENG01", "topic": "Reading Comprehension", "subtopics": ["Multiple longer passages with linked question sets"] },
+        { "topic_id": "ENG02", "topic": "Grammar", "subtopics": ["Active and passive voice", "Direct and indirect speech (narration)", "Error spotting / sentence correction"] },
+        { "topic_id": "ENG03", "topic": "Sentence and Paragraph Rearrangement", "subtopics": ["Para jumbles", "Shuffling of sentence parts"] },
+        { "topic_id": "ENG04", "topic": "Cloze Test", "subtopics": ["Single passage with multiple blanks, best-fit word per blank"] },
+        { "topic_id": "ENG05", "topic": "Vocabulary", "subtopics": ["Synonyms and antonyms", "One-word substitution", "Idioms and phrases"] },
+        { "topic_id": "ENG06", "topic": "Fillers and Sentence Improvement", "subtopics": ["Fill in the blanks", "Sentence improvement"] }
+      ]
+    },
+    {
+      "section_id": "GA",
+      "section_name": "General Awareness",
+      "num_questions": 25,
+      "max_marks": 75,
+      "question_format": "5-option single-correct MCQ; same broad topic set as Tier 1 General Awareness, with a continued heavy weight on current affairs.",
+      "topics": [
+        { "topic_id": "GA01", "topic": "History and Culture", "subtopics": ["Indian history", "Art and culture"] },
+        { "topic_id": "GA02", "topic": "Geography", "subtopics": ["Indian and world geography"] },
+        { "topic_id": "GA03", "topic": "Polity and Economy", "subtopics": ["Indian polity and governance", "Economic and social development"] },
+        { "topic_id": "GA04", "topic": "Science and Technology", "subtopics": ["General science (Physics, Chemistry, Biology)", "Science and technology developments"] },
+        { "topic_id": "GA05", "topic": "Current Affairs and Static GK", "subtopics": ["National and international current events (typically last 6-12 months)", "Awards, books and authors, sports, notable personalities"] }
+      ]
+    },
+    {
+      "section_id": "COMP",
+      "section_name": "Computer Knowledge",
+      "num_questions": 20,
+      "max_marks": 60,
+      "question_format": "5-option single-correct MCQ. This module carries its OWN qualifying cut-off — failing it can disqualify the entire paper even with a strong score elsewhere.",
+      "topics": [
+        { "topic_id": "COMP01", "topic": "Computer Basics and Architecture", "subtopics": ["Computer generations and history", "Hardware, input/output devices, memory types"] },
+        { "topic_id": "COMP02", "topic": "Software and Operating Systems", "subtopics": ["MS Office (Word, Excel, PowerPoint)", "Operating system basics", "Keyboard shortcuts"] },
+        { "topic_id": "COMP03", "topic": "Internet, Networking and Email", "subtopics": ["Internet basics and browsers", "Networking fundamentals", "Email usage and etiquette"] },
+        { "topic_id": "COMP04", "topic": "Computer Security and Abbreviations", "subtopics": ["Viruses, malware and basic security concepts", "Common computer/IT abbreviations", "Number systems and computer codes"] }
+      ]
+    }
+  ],
+  "qualifying_only_component": {
+    "component_id": "DEST",
+    "component_name": "Data Entry Speed Test",
+    "session": "Session 2",
+    "duration_minutes": 15,
+    "requirement": "2000 key depressions in 15 minutes (typing-speed based)",
+    "scoring": "Qualifying only — no marks awarded, no negative marking. Out of scope for a text-question bank."
+  }
+}

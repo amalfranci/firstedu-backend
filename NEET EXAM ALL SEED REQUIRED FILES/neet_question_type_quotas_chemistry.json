@@ -1,0 +1,30 @@
+{
+  "subject": "Chemistry",
+  "exam": "NEET UG 2026",
+  "purpose": "Per-topic target quotas for building a question BANK/dataset, not a simulation of a single session's paper. Multiply/scale as needed.",
+  "question_type_note": "NEET uses only single-correct MCQ across both sections; no numerical-value, multiple-correct, or matrix-match formats.",
+  "difficulty_note": "Inorganic and Biomolecules chapters lean 'easy' (direct NCERT-line recall); Physical Chemistry and Organic mechanism chapters carry more 'medium'/'hard' numerical and mechanism-based questions.",
+  "topics": {
+    "C01": { "chapter": "Some Basic Concepts of Chemistry", "relevance_tier": "medium", "quota_weight": 2, "question_types": { "mcq_single": { "easy": 5, "medium": 4, "hard": 2, "total": 11 } }, "topic_total_quota": 11 },
+    "C02": { "chapter": "Structure of Atom", "relevance_tier": "medium", "quota_weight": 2, "question_types": { "mcq_single": { "easy": 5, "medium": 3, "hard": 1, "total": 9 } }, "topic_total_quota": 9 },
+    "C03": { "chapter": "Classification of Elements and Periodicity in Properties", "relevance_tier": "medium", "quota_weight": 2, "question_types": { "mcq_single": { "easy": 5, "medium": 3, "hard": 1, "total": 9 } }, "topic_total_quota": 9 },
+    "C04": { "chapter": "Chemical Bonding and Molecular Structure", "relevance_tier": "very_high", "quota_weight": 4, "question_types": { "mcq_single": { "easy": 7, "medium": 7, "hard": 4, "total": 18 } }, "topic_total_quota": 18 },
+    "C05": { "chapter": "Chemical Thermodynamics", "relevance_tier": "high", "quota_weight": 3, "question_types": { "mcq_single": { "easy": 6, "medium": 6, "hard": 3, "total": 15 } }, "topic_total_quota": 15 },
+    "C06": { "chapter": "Equilibrium", "relevance_tier": "high", "quota_weight": 3, "question_types": { "mcq_single": { "easy": 6, "medium": 6, "hard": 3, "total": 15 } }, "topic_total_quota": 15 },
+    "C07": { "chapter": "Redox Reactions", "relevance_tier": "low_medium", "quota_weight": 1, "question_types": { "mcq_single": { "easy": 4, "medium": 2, "hard": 1, "total": 7 } }, "topic_total_quota": 7 },
+    "C08": { "chapter": "Organic Chemistry - Some Basic Principles and Techniques", "relevance_tier": "high", "quota_weight": 3, "question_types": { "mcq_single": { "easy": 6, "medium": 6, "hard": 3, "total": 15 } }, "topic_total_quota": 15 },
+    "C09": { "chapter": "Hydrocarbons", "relevance_tier": "high", "quota_weight": 3, "question_types": { "mcq_single": { "easy": 6, "medium": 6, "hard": 3, "total": 15 } }, "topic_total_quota": 15 },
+    "C10": { "chapter": "Solid State", "relevance_tier": "low", "quota_weight": 1, "question_types": { "mcq_single": { "easy": 4, "medium": 2, "hard": 1, "total": 7 } }, "topic_total_quota": 7 },
+    "C11": { "chapter": "Solutions", "relevance_tier": "medium", "quota_weight": 2, "question_types": { "mcq_single": { "easy": 5, "medium": 4, "hard": 2, "total": 11 } }, "topic_total_quota": 11 },
+    "C12": { "chapter": "Electrochemistry", "relevance_tier": "high", "quota_weight": 3, "question_types": { "mcq_single": { "easy": 6, "medium": 6, "hard": 3, "total": 15 } }, "topic_total_quota": 15 },
+    "C13": { "chapter": "Chemical Kinetics", "relevance_tier": "medium", "quota_weight": 2, "question_types": { "mcq_single": { "easy": 5, "medium": 4, "hard": 2, "total": 11 } }, "topic_total_quota": 11 },
+    "C14": { "chapter": "p-Block Elements (Class 12)", "relevance_tier": "high", "quota_weight": 3, "question_types": { "mcq_single": { "easy": 7, "medium": 5, "hard": 2, "total": 14 } }, "topic_total_quota": 14 },
+    "C15": { "chapter": "d and f Block Elements", "relevance_tier": "high", "quota_weight": 3, "question_types": { "mcq_single": { "easy": 6, "medium": 5, "hard": 2, "total": 13 } }, "topic_total_quota": 13 },
+    "C16": { "chapter": "Coordination Compounds", "relevance_tier": "very_high", "quota_weight": 4, "question_types": { "mcq_single": { "easy": 7, "medium": 7, "hard": 4, "total": 18 } }, "topic_total_quota": 18 },
+    "C17": { "chapter": "Haloalkanes and Haloarenes", "relevance_tier": "medium", "quota_weight": 2, "question_types": { "mcq_single": { "easy": 5, "medium": 4, "hard": 2, "total": 11 } }, "topic_total_quota": 11 },
+    "C18": { "chapter": "Alcohols, Phenols and Ethers", "relevance_tier": "medium", "quota_weight": 2, "question_types": { "mcq_single": { "easy": 5, "medium": 4, "hard": 2, "total": 11 } }, "topic_total_quota": 11 },
+    "C19": { "chapter": "Aldehydes, Ketones and Carboxylic Acids", "relevance_tier": "very_high", "quota_weight": 4, "question_types": { "mcq_single": { "easy": 7, "medium": 7, "hard": 4, "total": 18 } }, "topic_total_quota": 18 },
+    "C20": { "chapter": "Amines", "relevance_tier": "medium", "quota_weight": 2, "question_types": { "mcq_single": { "easy": 5, "medium": 4, "hard": 2, "total": 11 } }, "topic_total_quota": 11 },
+    "C21": { "chapter": "Biomolecules", "relevance_tier": "medium", "quota_weight": 2, "question_types": { "mcq_single": { "easy": 6, "medium": 4, "hard": 1, "total": 11 } }, "topic_total_quota": 11 }
+  }
+}

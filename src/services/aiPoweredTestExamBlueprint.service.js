@@ -140,6 +140,18 @@ const mainQuestionTypes = () => [
   },
 ];
 
+/** NEET: single-correct only; Physics/Chemistry scored 45, Biology bank halves 45. */
+const neetQuestionTypes = (perSubject = 45) => [
+  {
+    id: "single",
+    label: "Single correct",
+    group: "standalone",
+    paperCount: perSubject,
+    defaultCount: 0,
+    enabled: true,
+  },
+];
+
 const normalizeKey = (value) =>
   String(value || "")
     .toLowerCase()
@@ -158,26 +170,29 @@ const packBySubject = (subject) => {
 };
 
 const enrichTopicsWithPack = async (topics = [], subject = "", examType = "") => {
-  // Prefer Mongo ExamSyllabusPack (syllabus + scoring) when seeded.
+  // Prefer Mongo ExamSyllabusPack (syllabus + scoring) for any seeded exam.
   let pack = [];
-  if (examType === "jee_advanced" || !examType) {
+  if (examType) {
     try {
       pack = await getExamSyllabusPackTopics({
-        examType: examType || "jee_advanced",
+        examType,
         subject,
       });
     } catch {
       pack = [];
     }
   }
-  if (!pack.length) {
+  if (!pack.length && (examType === "jee_advanced" || !examType)) {
     pack = packBySubject(subject);
   }
   if (!pack.length) {
+    // Topics already carry relevance when loaded from ExamSyllabusPack.
     return topics.map((topic) => ({
       ...topic,
-      relevance: null,
-      highLock: false,
+      relevance: topic.relevance || null,
+      highLock:
+        topic.highLock === true ||
+        String(topic.relevance || "").toLowerCase() === "high",
     }));
   }
 
@@ -193,6 +208,7 @@ const enrichTopicsWithPack = async (topics = [], subject = "", examType = "") =>
         hit?.relevance ||
           hit?.scoring?.advanced_relevance ||
           hit?.scoring?.relevance ||
+          topic.relevance ||
           ""
       )
         .trim()
@@ -227,6 +243,86 @@ const buildDifficulty = (examType) => {
       label: "Hard (JEE Main exam-native)",
       skeletonMin: 80,
       lastAttemptFloor: 72,
+    };
+  }
+  if (examType === "neet") {
+    return {
+      default: "medium",
+      examNative: true,
+      options: ["medium", "hard"],
+      label: "Medium–Hard (NEET exam-native)",
+      skeletonMin: 70,
+      lastAttemptFloor: 65,
+    };
+  }
+  if (examType === "cat") {
+    return {
+      default: "hard",
+      examNative: true,
+      options: ["medium", "hard"],
+      label: "Hard (CAT exam-native)",
+      skeletonMin: 75,
+      lastAttemptFloor: 68,
+    };
+  }
+  if (examType === "gmat") {
+    return {
+      default: "hard",
+      examNative: true,
+      options: ["medium", "hard"],
+      label: "Hard (GMAT Focus exam-native)",
+      skeletonMin: 75,
+      lastAttemptFloor: 68,
+    };
+  }
+  if (examType === "clat") {
+    return {
+      default: "medium",
+      examNative: true,
+      options: ["medium", "hard"],
+      label: "Medium–Hard (CLAT UG exam-native)",
+      skeletonMin: 70,
+      lastAttemptFloor: 65,
+    };
+  }
+  if (examType === "ibps") {
+    return {
+      default: "medium",
+      examNative: true,
+      options: ["medium", "hard"],
+      label: "Medium–Hard (IBPS PO Prelims exam-native)",
+      skeletonMin: 70,
+      lastAttemptFloor: 65,
+    };
+  }
+  if (examType === "ssc_cgl_tier1") {
+    return {
+      default: "medium",
+      examNative: true,
+      options: ["medium", "hard"],
+      label: "Medium–Hard (SSC CGL Tier 1 exam-native)",
+      skeletonMin: 70,
+      lastAttemptFloor: 65,
+    };
+  }
+  if (examType === "ssc_cgl_tier2") {
+    return {
+      default: "hard",
+      examNative: true,
+      options: ["medium", "hard"],
+      label: "Hard (SSC CGL Tier 2 exam-native)",
+      skeletonMin: 75,
+      lastAttemptFloor: 68,
+    };
+  }
+  if (examType === "upsc") {
+    return {
+      default: "medium",
+      examNative: true,
+      options: ["easy", "medium", "hard"],
+      label: "Medium (UPSC CSE Prelims exam-native)",
+      skeletonMin: 70,
+      lastAttemptFloor: 65,
     };
   }
   return {
@@ -269,6 +365,308 @@ const buildTypePlan = (examType, { paperNumber = 1 } = {}) => {
         match: 0,
         paragraph: 0,
         total: 25,
+      },
+      defaultMix: {
+        single: 0,
+        multiple: 0,
+        integer: 0,
+        match: 0,
+        paragraph: 0,
+        trueFalse: 0,
+        passageCount: 0,
+      },
+      hidePassages: true,
+      hideTrueFalse: true,
+    };
+  }
+  if (examType === "neet") {
+    return {
+      questionTypes: neetQuestionTypes(45),
+      paperPattern: {
+        paper: 1,
+        single: 45,
+        integer: 0,
+        multiple: 0,
+        match: 0,
+        paragraph: 0,
+        total: 45,
+        paperTotalPrinted: 200,
+        paperTotalQuestions: 180,
+        paperTotalScored: 180,
+        paperTotalMarks: 720,
+      },
+      defaultMix: {
+        single: 0,
+        multiple: 0,
+        integer: 0,
+        match: 0,
+        paragraph: 0,
+        trueFalse: 0,
+        passageCount: 0,
+      },
+      hidePassages: true,
+      hideTrueFalse: true,
+    };
+  }
+  if (examType === "cat") {
+    return {
+      questionTypes: [
+        {
+          id: "single",
+          label: "Single correct MCQ",
+          group: "standalone",
+          paperCount: 16,
+          defaultCount: 0,
+          enabled: true,
+        },
+        {
+          id: "integer",
+          label: "TITA",
+          group: "standalone",
+          paperCount: 6,
+          defaultCount: 0,
+          enabled: true,
+        },
+      ],
+      paperPattern: {
+        paper: 1,
+        single: 16,
+        integer: 6,
+        multiple: 0,
+        match: 0,
+        paragraph: 0,
+        total: 22,
+        paperTotalQuestions: 68,
+        paperTotalMarks: 204,
+        sectionDurationMinutes: 40,
+      },
+      defaultMix: {
+        single: 0,
+        multiple: 0,
+        integer: 0,
+        match: 0,
+        paragraph: 0,
+        trueFalse: 0,
+        passageCount: 0,
+      },
+      hidePassages: true,
+      hideTrueFalse: true,
+    };
+  }
+  if (examType === "gmat") {
+    return {
+      questionTypes: [
+        {
+          id: "single",
+          label: "Single correct MCQ (5 options) / DI formats",
+          group: "standalone",
+          paperCount: 64,
+          defaultCount: 0,
+          enabled: true,
+        },
+      ],
+      paperPattern: {
+        paper: 1,
+        single: 64,
+        integer: 0,
+        multiple: 0,
+        match: 0,
+        paragraph: 0,
+        total: 64,
+        paperTotalQuestions: 64,
+        paperTotalScored: 64,
+        paperTotalMarks: 805,
+        sectionDurationMinutes: 45,
+      },
+      defaultMix: {
+        single: 0,
+        multiple: 0,
+        integer: 0,
+        match: 0,
+        paragraph: 0,
+        trueFalse: 0,
+        passageCount: 0,
+      },
+      hidePassages: true,
+      hideTrueFalse: true,
+    };
+  }
+  if (examType === "clat") {
+    return {
+      questionTypes: [
+        {
+          id: "single",
+          label: "Single correct MCQ (passage / caselet)",
+          group: "standalone",
+          paperCount: 120,
+          defaultCount: 0,
+          enabled: true,
+        },
+      ],
+      paperPattern: {
+        paper: 1,
+        single: 120,
+        integer: 0,
+        multiple: 0,
+        match: 0,
+        paragraph: 0,
+        total: 120,
+        paperTotalQuestions: 120,
+        paperTotalScored: 120,
+        paperTotalMarks: 120,
+        sectionDurationMinutes: null,
+      },
+      defaultMix: {
+        single: 0,
+        multiple: 0,
+        integer: 0,
+        match: 0,
+        paragraph: 0,
+        trueFalse: 0,
+        passageCount: 0,
+      },
+      hidePassages: true,
+      hideTrueFalse: true,
+    };
+  }
+  if (examType === "ibps") {
+    return {
+      questionTypes: [
+        {
+          id: "single",
+          label: "Single correct MCQ (5 options)",
+          group: "standalone",
+          paperCount: 100,
+          defaultCount: 0,
+          enabled: true,
+        },
+      ],
+      paperPattern: {
+        paper: 1,
+        single: 100,
+        integer: 0,
+        multiple: 0,
+        match: 0,
+        paragraph: 0,
+        total: 100,
+        paperTotalQuestions: 100,
+        paperTotalScored: 100,
+        paperTotalMarks: 100,
+        sectionDurationMinutes: 20,
+      },
+      defaultMix: {
+        single: 0,
+        multiple: 0,
+        integer: 0,
+        match: 0,
+        paragraph: 0,
+        trueFalse: 0,
+        passageCount: 0,
+      },
+      hidePassages: true,
+      hideTrueFalse: true,
+    };
+  }
+  if (examType === "ssc_cgl_tier1") {
+    return {
+      questionTypes: [
+        {
+          id: "single",
+          label: "Single correct MCQ (5 options)",
+          group: "standalone",
+          paperCount: 100,
+          defaultCount: 0,
+          enabled: true,
+        },
+      ],
+      paperPattern: {
+        paper: 1,
+        single: 100,
+        integer: 0,
+        multiple: 0,
+        match: 0,
+        paragraph: 0,
+        total: 100,
+        paperTotalQuestions: 100,
+        paperTotalScored: 100,
+        paperTotalMarks: 200,
+        sectionDurationMinutes: 15,
+      },
+      defaultMix: {
+        single: 0,
+        multiple: 0,
+        integer: 0,
+        match: 0,
+        paragraph: 0,
+        trueFalse: 0,
+        passageCount: 0,
+      },
+      hidePassages: true,
+      hideTrueFalse: true,
+    };
+  }
+  if (examType === "ssc_cgl_tier2") {
+    return {
+      questionTypes: [
+        {
+          id: "single",
+          label: "Single correct MCQ (5 options)",
+          group: "standalone",
+          paperCount: 150,
+          defaultCount: 0,
+          enabled: true,
+        },
+      ],
+      paperPattern: {
+        paper: 1,
+        single: 150,
+        integer: 0,
+        multiple: 0,
+        match: 0,
+        paragraph: 0,
+        total: 150,
+        paperTotalQuestions: 150,
+        paperTotalScored: 150,
+        paperTotalMarks: 450,
+        sectionDurationMinutes: null,
+      },
+      defaultMix: {
+        single: 0,
+        multiple: 0,
+        integer: 0,
+        match: 0,
+        paragraph: 0,
+        trueFalse: 0,
+        passageCount: 0,
+      },
+      hidePassages: true,
+      hideTrueFalse: true,
+    };
+  }
+  if (examType === "upsc") {
+    return {
+      questionTypes: [
+        {
+          id: "single",
+          label: "Single correct MCQ (4 options)",
+          group: "standalone",
+          paperCount: 100,
+          defaultCount: 0,
+          enabled: true,
+        },
+      ],
+      paperPattern: {
+        paper: 1,
+        single: 100,
+        integer: 0,
+        multiple: 0,
+        match: 0,
+        paragraph: 0,
+        total: 100,
+        paperTotalQuestions: 100,
+        paperTotalScored: 100,
+        paperTotalMarks: 200,
+        sectionDurationMinutes: null,
       },
       defaultMix: {
         single: 0,
@@ -328,6 +726,7 @@ const buildAdvancedPapersPayload = async (year = 2026) => {
     examDateLabel: "17 May 2026",
     mandatoryBothPapers: true,
     subjects: ["Physics", "Chemistry", "Mathematics"],
+    subjectCounts: {},
     papers: [
       {
         paperNumber: 1,
@@ -384,6 +783,33 @@ const buildAdvancedPapersPayload = async (year = 2026) => {
     ],
     quickComparison: null,
   };
+};
+
+const buildSeededPapersPayload = async (examType, year = 2026) => {
+  if (!examType) return null;
+  if (examType === "jee_advanced") {
+    return buildAdvancedPapersPayload(year);
+  }
+  try {
+    const seeded = await listExamPaperPatterns({ examType, year });
+    if (seeded.length) return summarizeExamPapers(seeded);
+  } catch {
+    /* ignore */
+  }
+  return null;
+};
+
+const subjectCountsFromPapers = (examPapers, subjects = []) => {
+  const fromPapers = examPapers?.subjectCounts || {};
+  if (Object.keys(fromPapers).length) {
+    const out = {};
+    for (const s of subjects) {
+      if (fromPapers[s] != null) out[s] = Number(fromPapers[s]) || 0;
+    }
+    if (Object.keys(out).length) return out;
+    return { ...fromPapers };
+  }
+  return {};
 };
 
 const positive = (value) => Math.max(0, Number(value) || 0);
@@ -459,10 +885,49 @@ export const getAiPoweredTestExamBlueprint = async (query = {}) => {
     .filter((t) => t.highLock && t.topicId)
     .map((t) => t.topicId);
 
-  const examPapers =
-    examType === "jee_advanced"
-      ? await buildAdvancedPapersPayload(topicsPayload.year || 2026)
-      : null;
+  const examPapers = await buildSeededPapersPayload(
+    examType,
+    topicsPayload.year || 2026
+  );
+
+  const wizardSubjects = [
+    ...new Set(
+      (
+        subjects.map((s) => s.subject).filter(Boolean).length
+          ? subjects.map((s) => s.subject)
+          : examPapers?.subjects || []
+      ).filter(Boolean)
+    ),
+  ];
+
+  const subjectCounts = subjectCountsFromPapers(examPapers, wizardSubjects);
+  // Prefer scored total when section counts sum (NEET printed 200 / scored 180).
+  const scoredFromSections = Object.values(subjectCounts).reduce(
+    (sum, n) => sum + (Number(n) || 0),
+    0
+  );
+  const paperPattern = {
+    ...(typePlan.paperPattern || {}),
+    ...(Object.keys(subjectCounts).length ? { subjectCounts } : {}),
+    paperTotalQuestions:
+      scoredFromSections ||
+      typePlan.paperPattern?.paperTotalScored ||
+      typePlan.paperPattern?.paperTotalQuestions ||
+      examPapers?.papers?.[0]?.totalQuestions ||
+      null,
+    paperTotalPrinted:
+      typePlan.paperPattern?.paperTotalPrinted ||
+      examPapers?.papers?.[0]?.totalQuestions ||
+      null,
+    paperTotalScored:
+      scoredFromSections ||
+      typePlan.paperPattern?.paperTotalScored ||
+      null,
+    paperTotalMarks:
+      typePlan.paperPattern?.paperTotalMarks ||
+      examPapers?.papers?.[0]?.totalMarks ||
+      null,
+  };
 
   return {
     examType,
@@ -474,8 +939,10 @@ export const getAiPoweredTestExamBlueprint = async (query = {}) => {
     hasSeededTopics: topics.length > 0,
     difficulty,
     questionTypes: typePlan.questionTypes,
-    paperPattern: typePlan.paperPattern,
+    paperPattern,
     examPapers,
+    subjectCounts,
+    wizardSubjects,
     defaultMix: typePlan.defaultMix,
     hidePassages: typePlan.hidePassages,
     hideTrueFalse: typePlan.hideTrueFalse,

@@ -28,6 +28,14 @@ const aiQuestionBankSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
+    /** Opaque id for this generation run — allows many banks for the same exam/subject. */
+    generationId: {
+      type: String,
+      trim: true,
+      unique: true,
+      sparse: true,
+      index: true,
+    },
     categories: [
       {
         type: mongoose.Schema.Types.ObjectId,

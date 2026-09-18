@@ -1,0 +1,158 @@
+{
+  "exam": "GMAT Focus Edition 2026",
+  "purpose": "Per-topic target quotas for building a question BANK/dataset, not a simulation of a single adaptive session. Multiply/scale as needed. Mirrors the structure of the JEE Main quotas file so banks across exams can be planned/compared side by side.",
+  "question_type_note": "GMAT Focus Edition uses 5-option single-correct MCQ ('Problem Solving') in Quant, 5-option single-correct MCQ in Verbal (Reading Comprehension and Critical Reasoning), and five distinct interactive formats in Data Insights (Data Sufficiency MCQ, Table Analysis true/false grid, Graphics Interpretation dropdown-completion, Two-Part Analysis linked-answer table, Multi-Source Reasoning tabbed MCQ/true-false). There is no numerical-value entry format like JEE's Section B anywhere on the GMAT.",
+  "difficulty_note": "GMAT does not expose fixed easy/medium/hard question slots to candidates — the live exam is section-adaptive and picks difficulty question-by-question based on the test-taker's running performance. For question-bank seeding purposes this file still tags each item with a target difficulty band (low/medium/high), matching how prep providers and the adaptive engine's internal item-difficulty parameters are commonly described, so that a bank can supply items across the full difficulty range the algorithm might draw from.",
+  "sections": {
+    "Q": {
+      "section_name": "Quantitative Reasoning",
+      "topics": {
+        "Q01": {
+          "topic": "Arithmetic",
+          "relevance_tier": "very_high",
+          "quota_weight": 4,
+          "question_types": {
+            "problem_solving": {
+              "low": 10,
+              "medium": 14,
+              "high": 8,
+              "total": 32
+            }
+          },
+          "topic_total_quota": 32,
+          "notes": "Number Properties and Ratios/Percent/Interest are consistently among the most frequently tested arithmetic areas."
+        },
+        "Q02": {
+          "topic": "Algebra",
+          "relevance_tier": "very_high",
+          "quota_weight": 4,
+          "question_types": {
+            "problem_solving": {
+              "low": 10,
+              "medium": 14,
+              "high": 8,
+              "total": 32
+            }
+          },
+          "topic_total_quota": 32,
+          "notes": "Linear & Quadratic Equations is reported as the single largest Quant sub-area by several trackers (~29% of the section)."
+        }
+      }
+    },
+    "V": {
+      "section_name": "Verbal Reasoning",
+      "topics": {
+        "V01": {
+          "topic": "Reading Comprehension",
+          "relevance_tier": "high",
+          "quota_weight": 3,
+          "question_types": {
+            "reading_comprehension": {
+              "low": 8,
+              "medium": 10,
+              "high": 6,
+              "total": 24
+            }
+          },
+          "topic_total_quota": 24,
+          "notes": "Passages typically 200-350 words; 3-4 questions per passage in real exam delivery, but for bank-seeding purposes items are pooled by skill rather than by passage."
+        },
+        "V02": {
+          "topic": "Critical Reasoning",
+          "relevance_tier": "high",
+          "quota_weight": 3,
+          "question_types": {
+            "critical_reasoning": {
+              "low": 8,
+              "medium": 10,
+              "high": 6,
+              "total": 24
+            }
+          },
+          "topic_total_quota": 24,
+          "notes": "Assumption, strengthen/weaken and inference sub-types are the most heavily recurring archetypes."
+        }
+      }
+    },
+    "DI": {
+      "section_name": "Data Insights",
+      "topics": {
+        "DI01": {
+          "topic": "Data Sufficiency",
+          "relevance_tier": "very_high",
+          "quota_weight": 4,
+          "question_types": {
+            "data_sufficiency": {
+              "low": 8,
+              "medium": 10,
+              "high": 6,
+              "total": 24
+            }
+          },
+          "topic_total_quota": 24,
+          "notes": "Most frequent single DI question type; estimates across sources range 20-40% of the section (roughly 6-8 of the 20 live questions)."
+        },
+        "DI02": {
+          "topic": "Table Analysis",
+          "relevance_tier": "medium",
+          "quota_weight": 2,
+          "question_types": {
+            "table_analysis": {
+              "low": 4,
+              "medium": 5,
+              "high": 3,
+              "total": 12
+            }
+          },
+          "topic_total_quota": 12,
+          "notes": "Reported at roughly 10-20% of the section (~3-4 of 20 live questions)."
+        },
+        "DI03": {
+          "topic": "Graphics Interpretation",
+          "relevance_tier": "high",
+          "quota_weight": 3,
+          "question_types": {
+            "graphics_interpretation": {
+              "low": 6,
+              "medium": 8,
+              "high": 4,
+              "total": 18
+            }
+          },
+          "topic_total_quota": 18,
+          "notes": "Reported at roughly 20-30% of the section (~4-5 of 20 live questions), the second-most frequent DI type after Data Sufficiency."
+        },
+        "DI04": {
+          "topic": "Two-Part Analysis",
+          "relevance_tier": "medium",
+          "quota_weight": 2,
+          "question_types": {
+            "two_part_analysis": {
+              "low": 4,
+              "medium": 5,
+              "high": 3,
+              "total": 12
+            }
+          },
+          "topic_total_quota": 12,
+          "notes": "Reported at roughly 10-20% of the section (~2-3 of 20 live questions)."
+        },
+        "DI05": {
+          "topic": "Multi-Source Reasoning",
+          "relevance_tier": "medium",
+          "quota_weight": 2,
+          "question_types": {
+            "multi_source_reasoning": {
+              "low": 4,
+              "medium": 5,
+              "high": 3,
+              "total": 12
+            }
+          },
+          "topic_total_quota": 12,
+          "notes": "Reported at roughly 10-20% of the section (~2-3 of 20 live questions); each MSR prompt commonly yields 2-3 linked questions in the live exam, pooled here as individual bank items."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "exam": "JEE Main",
+  "year": 2026,
+  "cycle": "JEE Main 2026",
+  "data_provenance": "NTA JEE Main Paper 1 (B.E./B.Tech) pattern as used in 2025–2026 sessions: 3 subjects × 25 questions, Section A 20 single-correct MCQs + Section B 5 numerical (all compulsory). Confirm against current NTA information bulletin before production use.",
+  "important_caveat": "NTA can revise section counts or marking. Prefer seeded ExamPaperPattern documents when present; this file is the seed source for 2026 Paper 1.",
+  "exam_day": {
+    "mandatory_both_papers": false,
+    "note": "JEE Main Paper 1 is a single computer-based paper (Physics + Chemistry + Mathematics). Paper 2A/2B (Architecture/Planning) are separate and not seeded here."
+  },
+  "subjects": ["Physics", "Chemistry", "Mathematics"],
+  "structure_per_subject_per_paper": {
+    "Paper_1": {
+      "paper_number": 1,
+      "label": "Paper 1 (B.E./B.Tech)",
+      "session": "varies",
+      "start_time": "",
+      "end_time": "",
+      "duration_minutes": 180,
+      "total_marks": 300,
+      "questions_per_subject": 25,
+      "total_questions": 75,
+      "overall_difficulty": "Speed + accuracy (easy–medium dominant vs Advanced)",
+      "section_1_single_correct": { "questions": 20, "options": 4, "type": "single" },
+      "section_2_multi_correct": { "questions": 0, "options": 4, "type": "multi" },
+      "section_3_numerical": { "questions": 5, "options": 0, "type": "integer" },
+      "section_4_match_list": { "questions": 0, "options": 4, "type": "match" },
+      "section_5_paragraph": { "questions": 0, "options": 4, "type": "paragraph" },
+      "formats": ["Single Correct MCQ", "Numerical Value"],
+      "marking": {
+        "section_a_mcq": "+4 / -1 / 0",
+        "section_b_numerical": "+4 / -1 / 0 (all 5 compulsory since 2025)"
+      }
+    }
+  },
+  "grand_total_across_subjects": {
+    "paper1": 75,
+    "marks_paper1": 300,
+    "per_subject_questions": 25,
+    "per_subject_marks": 100
+  },
+  "option_count_rule": {
+    "single": 4,
+    "multi": 0,
+    "integer": 0,
+    "match": 0,
+    "paragraph": 0
+  },
+  "question_types_note": "JEE Main Paper 1 does NOT use multiple-correct or matrix-match; those are JEE Advanced-only."
+}

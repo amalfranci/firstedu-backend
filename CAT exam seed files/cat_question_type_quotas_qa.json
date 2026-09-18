@@ -1,0 +1,34 @@
+{
+  "subject": "Quantitative Aptitude (QA)",
+  "exam": "CAT 2026",
+  "purpose": "Per-topic target quotas for building a question BANK/dataset, not a simulation of a single session's paper. Multiply/scale as needed. Mirrors the structure used for the NEET/JEE quota files so banks can be planned/compared side by side.",
+  "question_type_note": "CAT QA mixes single-correct MCQ (typically 4 options, occasionally 5) and TITA (type-in-the-answer, no options and no negative marking). Roughly 65-75% of QA questions are MCQ and 25-35% are TITA, with TITA distributed across all topics rather than concentrated in any one.",
+  "difficulty_note": "Even 'easy' CAT QA questions assume full command of NCERT Class 9-10 fundamentals; difficulty here reflects relative time-pressure difficulty within the CAT distribution, not absolute conceptual difficulty.",
+  "topics": {
+    "Q01": { "chapter": "Arithmetic", "relevance_tier": "very_high", "quota_weight": 5,
+      "question_types": {
+        "mcq_single": { "easy": 8, "medium": 12, "hard": 6, "total": 26 },
+        "tita": { "easy": 3, "medium": 5, "hard": 3, "total": 11 }
+      }, "topic_total_quota": 37 },
+    "Q02": { "chapter": "Algebra", "relevance_tier": "very_high", "quota_weight": 4,
+      "question_types": {
+        "mcq_single": { "easy": 4, "medium": 10, "hard": 8, "total": 22 },
+        "tita": { "easy": 2, "medium": 5, "hard": 4, "total": 11 }
+      }, "topic_total_quota": 33 },
+    "Q03": { "chapter": "Geometry and Mensuration", "relevance_tier": "high", "quota_weight": 3,
+      "question_types": {
+        "mcq_single": { "easy": 3, "medium": 6, "hard": 5, "total": 14 },
+        "tita": { "easy": 1, "medium": 3, "hard": 2, "total": 6 }
+      }, "topic_total_quota": 20 },
+    "Q04": { "chapter": "Number System", "relevance_tier": "medium", "quota_weight": 2,
+      "question_types": {
+        "mcq_single": { "easy": 3, "medium": 4, "hard": 3, "total": 10 },
+        "tita": { "easy": 1, "medium": 2, "hard": 2, "total": 5 }
+      }, "topic_total_quota": 15 },
+    "Q05": { "chapter": "Modern Mathematics", "relevance_tier": "low_medium", "quota_weight": 1,
+      "question_types": {
+        "mcq_single": { "easy": 2, "medium": 3, "hard": 2, "total": 7 },
+        "tita": { "easy": 1, "medium": 1, "hard": 1, "total": 3 }
+      }, "topic_total_quota": 10 }
+  }
+}

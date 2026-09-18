@@ -1,0 +1,267 @@
+{
+  "subject": "Physics",
+  "exam_context": "JEE Main 2026 (Paper 1, B.E./B.Tech) — Physics section only, 25 questions/100 marks",
+  "data_provenance": "Estimated from PYQ-trend analysis and chapter-wise-weightage trackers aggregated across the 2025 and 2026 (Jan + Apr) sessions (not official NTA data); last grounded Sep 2026. Individual-session weightage varies shift to shift; treat these as multi-session averages for question-bank planning, not a guarantee of any single paper's composition.",
+  "topics": {
+    "M01": {
+      "chapter": "Physics and Measurement",
+      "jee_main_freq_band": "low",
+      "avg_q_per_session_jee_main": "0-1",
+      "difficulty_split": {
+        "easy": 60,
+        "medium": 30,
+        "hard": 10
+      },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Short, scoring unit when it appears; rarely more than 1 question per session."
+    },
+    "M02": {
+      "chapter": "Kinematics",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": {
+        "easy": 45,
+        "medium": 38,
+        "hard": 17
+      },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Often fused with Laws of Motion in a single question; foundational rather than a big standalone scorer."
+    },
+    "M03": {
+      "chapter": "Laws of Motion",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 35,
+        "medium": 40,
+        "hard": 25
+      },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Friction and constraint-based problems recur across sessions."
+    },
+    "M04": {
+      "chapter": "Work, Energy and Power",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": {
+        "easy": 45,
+        "medium": 38,
+        "hard": 17
+      },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Collision numericals are a recurring, formula-driven favourite."
+    },
+    "M05": {
+      "chapter": "Rotational Motion",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 35,
+        "medium": 40,
+        "hard": 25
+      },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "One of the highest-weightage Mechanics chapters; rolling/moment-of-inertia numericals recur every session."
+    },
+    "M06": {
+      "chapter": "Gravitation",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": {
+        "easy": 45,
+        "medium": 38,
+        "hard": 17
+      },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Escape velocity and orbital energy numericals are the most common archetype."
+    },
+    "M07": {
+      "chapter": "Properties of Solids and Liquids",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": {
+        "easy": 45,
+        "medium": 38,
+        "hard": 17
+      },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Fluid mechanics (Bernoulli, viscosity, surface tension) supplies most of this unit's questions."
+    },
+    "M08": {
+      "chapter": "Thermodynamics",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 35,
+        "medium": 40,
+        "hard": 25
+      },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Consistently flagged as a top-priority chapter across trackers; first-law and specific-heat numericals dominate."
+    },
+    "M09": {
+      "chapter": "Kinetic Theory of Gases",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": {
+        "easy": 45,
+        "medium": 38,
+        "hard": 17
+      },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Usually tested via rms-speed / degrees-of-freedom numericals, often paired conceptually with Thermodynamics."
+    },
+    "M10": {
+      "chapter": "Oscillations and Waves",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": {
+        "easy": 45,
+        "medium": 38,
+        "hard": 17
+      },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "A broad, combined unit (SHM + wave motion + sound); questions are usually single-concept given the removal of damped/forced-oscillation and Doppler sub-topics."
+    },
+    "M11": {
+      "chapter": "Electrostatics",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "2",
+      "difficulty_split": {
+        "easy": 35,
+        "medium": 40,
+        "hard": 25
+      },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Combines electrostatics and capacitance in one unit for JEE Main; consistently a top-3 weighted Physics unit."
+    },
+    "M12": {
+      "chapter": "Current Electricity",
+      "jee_main_freq_band": "very high",
+      "avg_q_per_session_jee_main": "2-3",
+      "difficulty_split": {
+        "easy": 32,
+        "medium": 40,
+        "hard": 28
+      },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Repeatedly the single highest-weightage Physics chapter in session-wise trackers (Wheatstone bridge, potentiometer, Kirchhoff's-law numericals)."
+    },
+    "M13": {
+      "chapter": "Magnetic Effects of Current and Magnetism",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 35,
+        "medium": 40,
+        "hard": 25
+      },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Biot-Savart/Ampere's-law numericals and moving-coil-galvanometer conversions recur often."
+    },
+    "M14": {
+      "chapter": "Electromagnetic Induction and Alternating Currents",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 35,
+        "medium": 40,
+        "hard": 25
+      },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "LCR resonance and EMI numericals are a recurring high-weightage archetype."
+    },
+    "M15": {
+      "chapter": "Electromagnetic Waves",
+      "jee_main_freq_band": "low",
+      "avg_q_per_session_jee_main": "0-1",
+      "difficulty_split": {
+        "easy": 60,
+        "medium": 30,
+        "hard": 10
+      },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Mostly conceptual/recall (spectrum identification, E/B/c relations); rarely more than one question."
+    },
+    "M16": {
+      "chapter": "Optics",
+      "jee_main_freq_band": "very high",
+      "avg_q_per_session_jee_main": "2-3",
+      "difficulty_split": {
+        "easy": 32,
+        "medium": 40,
+        "hard": 28
+      },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Combines Ray Optics and Wave Optics in one unit for JEE Main; flagged as a top chapter across multiple 2026 trackers."
+    },
+    "M17": {
+      "chapter": "Dual Nature of Matter and Radiation",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": {
+        "easy": 35,
+        "medium": 40,
+        "hard": 25
+      },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Photoelectric-effect stopping-potential numericals are the dominant archetype."
+    },
+    "M18": {
+      "chapter": "Atoms and Nuclei",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 35,
+        "medium": 40,
+        "hard": 25
+      },
+      "also_in_jee_advanced_syllabus": true,
+      "notes": "Bohr-model transitions and radioactive-decay numericals recur; together with M17 this makes 'Modern Physics' one of the highest-weightage groupings."
+    },
+    "M19": {
+      "chapter": "Electronic Devices",
+      "jee_main_freq_band": "high",
+      "avg_q_per_session_jee_main": "1",
+      "difficulty_split": {
+        "easy": 35,
+        "medium": 40,
+        "hard": 25
+      },
+      "also_in_jee_advanced_syllabus": false,
+      "notes": "Not tested in JEE Advanced at all. Diode I-V characteristics and logic-gate truth tables are direct, NCERT-diagram-based questions with a rising weightage trend in recent sessions."
+    },
+    "M20": {
+      "chapter": "Experimental Skills",
+      "jee_main_freq_band": "medium",
+      "avg_q_per_session_jee_main": "1-2",
+      "difficulty_split": {
+        "easy": 45,
+        "medium": 38,
+        "hard": 17
+      },
+      "also_in_jee_advanced_syllabus": false,
+      "notes": "A dedicated syllabus unit unique to JEE Main (JEE Advanced tests experiments as part of its Units/Errors topic instead, not as a separate weighted unit). Several trackers describe this as a highly predictable, pattern-based source of easy marks."
+    }
+  },
+  "broad_category_weightage_pct": {
+    "note": "Coarser cross-check figures, approximate % share of the 25-question Physics section, synthesised from multiple 2025-2026 PYQ trend sources. Rounds do not sum to exactly 100% because a few marginal units (EM Waves, Experimental Skills overlap) are reported inconsistently across sources.",
+    "Mechanics (M02-M07)": "28-32%",
+    "Thermal Physics (M08-M09)": "8-10%",
+    "Oscillations_and_Waves (M10)": "3-5%",
+    "Electrodynamics (M11-M14)": "26-30%",
+    "Electromagnetic_Waves (M15)": "2-3%",
+    "Optics (M16)": "9-11%",
+    "Modern_Physics (M17-M18)": "12-15%",
+    "Electronic_Devices (M19)": "4-5%",
+    "Experimental_Skills (M20)": "5-8% (one source claims as high as 20%; treated here with caution as an outlier estimate)"
+  },
+  "marking_scheme": {
+    "source_note": "Confirmed via multiple Sep 2026 sources reporting on the actual Jan 2026 and Apr 2026 JEE Main sessions.",
+    "section_a_mcq": "20 single-correct MCQs per subject; +4 for a correct answer, -1 for an incorrect answer, 0 if unattempted.",
+    "section_b_numerical": "5 numerical-value questions per subject, all compulsory (the earlier 'attempt any 5 of 10' choice was removed starting with the 2025 pattern); +4 for a correct answer, -1 for an incorrect answer, 0 if unattempted. This differs from pre-2025 sessions, when numerical questions carried no negative marking.",
+    "total_marks_physics": 100,
+    "total_marks_paper": 300,
+    "question_types_used": "Single-correct MCQ and numerical-value only. JEE Main does NOT use multiple-correct MCQs or matrix-match questions — those formats are exclusive to JEE Advanced."
+  }
+}

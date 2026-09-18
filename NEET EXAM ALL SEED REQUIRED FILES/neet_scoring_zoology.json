@@ -1,0 +1,37 @@
+{
+  "subject": "Zoology",
+  "exam_context": "NEET UG 2026 - Zoology half of the Biology section, conventionally 45 scored questions / 180 marks (Biology overall: 90 scored questions / 360 marks, split evenly between Botany and Zoology by most coaching trackers)",
+  "data_provenance": "Estimated from PYQ-trend analysis and chapter-wise-weightage trackers aggregated across 2025 and 2026 NEET sessions (including the 21 June 2026 Re-NEET UG), not official NTA data; last grounded Sep 2026. NTA does not publish a separate Botany/Zoology split, so figures here reflect the conventional coaching-tracker split and multi-session averages, not a guarantee of any single paper's composition.",
+  "topics": {
+    "Z01": { "chapter": "Animal Kingdom", "neet_freq_band": "very high", "avg_q_per_session_neet": "5-6", "approx_weightage_pct": "12-13", "difficulty_split": {"easy":50,"medium":37,"hard":13}, "notes": "Repeatedly flagged as the single highest- or second-highest-weightage Biology chapter; phylum-feature and classification-exception questions dominate." },
+    "Z02": { "chapter": "Structural Organisation in Animals", "neet_freq_band": "medium", "avg_q_per_session_neet": "1-2", "approx_weightage_pct": "3-4", "difficulty_split": {"easy":52,"medium":35,"hard":13}, "notes": "Cockroach anatomy and tissue-type identification questions recur." },
+    "Z03": { "chapter": "Breathing and Exchange of Gases", "neet_freq_band": "medium", "avg_q_per_session_neet": "2", "approx_weightage_pct": "4-5", "difficulty_split": {"easy":48,"medium":38,"hard":14}, "notes": "Mechanism-of-breathing and gas-transport questions recur; grouped with Human Physiology as a high-yield bloc." },
+    "Z04": { "chapter": "Body Fluids and Circulation", "neet_freq_band": "medium-high", "avg_q_per_session_neet": "2-3", "approx_weightage_pct": "5-6", "difficulty_split": {"easy":45,"medium":38,"hard":17}, "notes": "Cardiac-cycle and blood-composition questions are a recurring high-yield archetype." },
+    "Z05": { "chapter": "Excretory Products and their Elimination", "neet_freq_band": "medium", "avg_q_per_session_neet": "2", "approx_weightage_pct": "4-5", "difficulty_split": {"easy":48,"medium":38,"hard":14}, "notes": "Nephron-structure and urine-formation questions recur." },
+    "Z06": { "chapter": "Locomotion and Movement", "neet_freq_band": "medium", "avg_q_per_session_neet": "1-2", "approx_weightage_pct": "3-4", "difficulty_split": {"easy":52,"medium":35,"hard":13}, "notes": "Muscle-contraction-mechanism and skeletal-system questions recur." },
+    "Z07": { "chapter": "Neural Control and Coordination", "neet_freq_band": "medium-high", "avg_q_per_session_neet": "2-3", "approx_weightage_pct": "5-6", "difficulty_split": {"easy":45,"medium":38,"hard":17}, "notes": "Nerve-impulse and brain-structure questions are a consistently recurring archetype." },
+    "Z08": { "chapter": "Chemical Coordination and Integration", "neet_freq_band": "medium", "avg_q_per_session_neet": "1-2", "approx_weightage_pct": "3-4", "difficulty_split": {"easy":52,"medium":35,"hard":13}, "notes": "Endocrine-gland/hormone-function matching questions recur; a reliable easy-marks chapter." },
+    "Z09": { "chapter": "Principles of Inheritance and Variation", "neet_freq_band": "very high", "avg_q_per_session_neet": "3-4", "approx_weightage_pct": "9-10", "difficulty_split": {"easy":38,"medium":40,"hard":22}, "notes": "Mendelian-cross and pedigree-analysis numericals/logic questions are a consistently top-tier archetype; genetic-disorder identification recurs." },
+    "Z10": { "chapter": "Evolution", "neet_freq_band": "medium", "avg_q_per_session_neet": "2", "approx_weightage_pct": "4-5", "difficulty_split": {"easy":52,"medium":35,"hard":13}, "notes": "Direct NCERT-fact recall on evidences and mechanisms of evolution; a reliable easy-marks chapter." },
+    "Z11": { "chapter": "Human Reproduction", "neet_freq_band": "high", "avg_q_per_session_neet": "3", "approx_weightage_pct": "6-7", "difficulty_split": {"easy":45,"medium":38,"hard":17}, "notes": "Gametogenesis and menstrual-cycle questions recur; consistently a high-weightage chapter." },
+    "Z12": { "chapter": "Reproductive Health", "neet_freq_band": "medium", "avg_q_per_session_neet": "1-2", "approx_weightage_pct": "3-4", "difficulty_split": {"easy":55,"medium":33,"hard":12}, "notes": "Direct NCERT-fact recall on contraception/ART methods; a reliable easy-marks chapter." },
+    "Z13": { "chapter": "Human Health and Disease", "neet_freq_band": "high", "avg_q_per_session_neet": "2-3", "approx_weightage_pct": "5-6", "difficulty_split": {"easy":50,"medium":36,"hard":14}, "notes": "Pathogen-disease matching and immunity-type questions are a consistently recurring, generally easy-to-medium archetype." }
+  },
+  "broad_category_weightage_pct": {
+    "note": "Coarser cross-check figures, approximate % share of the 45-question scored Zoology half, synthesised from multiple 2025-2026 PYQ trend sources. Rounds do not sum exactly to 100%.",
+    "Animal_Diversity_and_Structural_Organisation (Z01-Z02)": "15-17%",
+    "Human_Physiology (Z03-Z08)": "24-28%",
+    "Genetics_and_Evolution (Z09-Z10)": "13-15%",
+    "Human_Reproduction_and_Health (Z11-Z13)": "14-17%"
+  },
+  "marking_scheme": {
+    "source_note": "Confirmed via multiple Sep 2026 sources reporting on the 2026 and Re-NEET UG 2026 (21 June 2026) sessions.",
+    "section_a_share": "Biology Section A has 70 single-correct MCQs, all compulsory (conventionally ~35 Zoology-origin); +4 correct, -1 incorrect, 0 unattempted.",
+    "section_b_share": "Biology Section B has 30 single-correct MCQs, attempt any 20, best 20 scored (conventionally ~15 Zoology-origin); +4 correct, -1 incorrect, 0 unattempted.",
+    "questions_printed_vs_scored_biology_total": "100 printed, 90 scored across Botany+Zoology combined.",
+    "total_marks_zoology_conventional": 180,
+    "total_marks_biology": 360,
+    "total_marks_paper": 720,
+    "question_types_used": "Single-correct MCQ only."
+  }
+}

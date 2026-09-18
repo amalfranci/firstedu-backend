@@ -1,0 +1,29 @@
+{
+  "subject": "Data Interpretation and Logical Reasoning (DILR)",
+  "exam": "CAT 2026",
+  "purpose": "Per-topic target quotas for building a question BANK/dataset, not a simulation of a single session's paper. Multiply/scale as needed. Because DILR questions come bundled in sets (not standalone), quotas here are per-question targets intended to be assembled into sets of 4-6 sharing one caselet, not generated as isolated questions.",
+  "question_type_note": "CAT DILR mixes single-correct MCQ and TITA within the same set; roughly 55-65% MCQ / 35-45% TITA overall. There is no separate 'easy tier' the way school exams have one - DILR difficulty is driven mainly by the caselet's constraint complexity rather than by any single question in isolation.",
+  "difficulty_note": "Puzzles/Arrangements and Games & Tournaments skew hardest since they depend on fully cracking a multi-constraint caselet before any question in the set can be answered confidently.",
+  "topics": {
+    "D01": { "area": "Data Interpretation - Tables, Bar/Line Graphs, Pie Charts", "relevance_tier": "high", "quota_weight": 3,
+      "question_types": {
+        "mcq_single": { "easy": 3, "medium": 8, "hard": 6, "total": 17 },
+        "tita": { "easy": 1, "medium": 4, "hard": 3, "total": 8 }
+      }, "topic_total_quota": 25 },
+    "D02": { "area": "Arrangements and Puzzles", "relevance_tier": "very_high", "quota_weight": 5,
+      "question_types": {
+        "mcq_single": { "easy": 2, "medium": 12, "hard": 14, "total": 28 },
+        "tita": { "easy": 1, "medium": 8, "hard": 9, "total": 18 }
+      }, "topic_total_quota": 46 },
+    "D03": { "area": "Games and Tournaments", "relevance_tier": "high", "quota_weight": 4,
+      "question_types": {
+        "mcq_single": { "easy": 2, "medium": 8, "hard": 8, "total": 18 },
+        "tita": { "easy": 1, "medium": 5, "hard": 6, "total": 12 }
+      }, "topic_total_quota": 30 },
+    "D04": { "area": "Reasoning-based Sets - Venn Diagrams, Binary/Selection Logic, Networks", "relevance_tier": "medium", "quota_weight": 3,
+      "question_types": {
+        "mcq_single": { "easy": 3, "medium": 7, "hard": 6, "total": 16 },
+        "tita": { "easy": 1, "medium": 4, "hard": 4, "total": 9 }
+      }, "topic_total_quota": 25 }
+  }
+}

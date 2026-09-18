@@ -1,0 +1,377 @@
+{
+  "subject": "General Studies (Paper I)",
+  "exam_context": "UPSC CSE Prelims (used to steer topic and difficulty-weighted question bank planning)",
+  "data_provenance": "Estimated from multi-year PYQ-trend analysis across UPSC Prelims GS papers (not official UPSC data); last grounded to publicly available trend commentary through 2026",
+  "topics": {
+    "U01": {
+      "category": "History",
+      "prelims_freq_band": "high",
+      "avg_q_per_paper": "2-3",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 45,
+        "hard": 25
+      },
+      "advanced_relevance": "medium",
+      "notes": "Ancient India consistently yields 2-3 Prelims questions yearly, often via a statement-based archaeological/textual question."
+    },
+    "U02": {
+      "category": "History",
+      "prelims_freq_band": "medium-high",
+      "avg_q_per_paper": "1-2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 45,
+        "hard": 25
+      },
+      "advanced_relevance": "medium",
+      "notes": "Medieval India questions increasingly combine administration with art/architecture."
+    },
+    "U03": {
+      "category": "History",
+      "prelims_freq_band": "very high",
+      "avg_q_per_paper": "3-4",
+      "difficulty_split": {
+        "easy": 20,
+        "medium": 45,
+        "hard": 35
+      },
+      "advanced_relevance": "high",
+      "notes": "Freedom struggle is a perennial high-weightage area, especially around movement sequencing."
+    },
+    "U04": {
+      "category": "History",
+      "prelims_freq_band": "high",
+      "avg_q_per_paper": "2-3",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 45,
+        "hard": 30
+      },
+      "advanced_relevance": "medium",
+      "notes": "Art & Culture overlaps heavily with current affairs (UNESCO/GI tag additions)."
+    },
+    "U05": {
+      "category": "History",
+      "prelims_freq_band": "medium",
+      "avg_q_per_paper": "1",
+      "difficulty_split": {
+        "easy": 35,
+        "medium": 45,
+        "hard": 20
+      },
+      "advanced_relevance": "low",
+      "notes": "Post-Independence consolidation is tested more lightly than pre-1947 history."
+    },
+    "U06": {
+      "category": "History",
+      "prelims_freq_band": "low-medium",
+      "avg_q_per_paper": "0-1",
+      "difficulty_split": {
+        "easy": 40,
+        "medium": 40,
+        "hard": 20
+      },
+      "advanced_relevance": "low",
+      "notes": "World History appears occasionally, often via a current-affairs anniversary trigger."
+    },
+    "U07": {
+      "category": "Polity",
+      "prelims_freq_band": "very high",
+      "avg_q_per_paper": "3-4",
+      "difficulty_split": {
+        "easy": 20,
+        "medium": 45,
+        "hard": 35
+      },
+      "advanced_relevance": "high",
+      "notes": "Constitutional framework and Schedules are among the most tested Polity sub-areas."
+    },
+    "U08": {
+      "category": "Polity",
+      "prelims_freq_band": "very high",
+      "avg_q_per_paper": "3-4",
+      "difficulty_split": {
+        "easy": 20,
+        "medium": 45,
+        "hard": 35
+      },
+      "advanced_relevance": "high",
+      "notes": "Rights/DPSP questions frequently hinge on landmark judgment nuance."
+    },
+    "U09": {
+      "category": "Polity",
+      "prelims_freq_band": "high",
+      "avg_q_per_paper": "2-3",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 45,
+        "hard": 30
+      },
+      "advanced_relevance": "high",
+      "notes": "Union Executive/Legislature procedure questions are a recurring statement-based staple."
+    },
+    "U10": {
+      "category": "Polity",
+      "prelims_freq_band": "medium-high",
+      "avg_q_per_paper": "2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 45,
+        "hard": 25
+      },
+      "advanced_relevance": "medium",
+      "notes": "Panchayati Raj and Centre-State relations are moderately frequent."
+    },
+    "U11": {
+      "category": "Polity",
+      "prelims_freq_band": "high",
+      "avg_q_per_paper": "2-3",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 45,
+        "hard": 30
+      },
+      "advanced_relevance": "high",
+      "notes": "Constitutional/statutory body distinction questions are a classic UPSC trap area."
+    },
+    "U12": {
+      "category": "Geography",
+      "prelims_freq_band": "medium-high",
+      "avg_q_per_paper": "2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 40,
+        "hard": 30
+      },
+      "advanced_relevance": "medium",
+      "notes": "Physical geography underpins many current-affairs-linked disaster/climate questions."
+    },
+    "U13": {
+      "category": "Geography",
+      "prelims_freq_band": "high",
+      "avg_q_per_paper": "2-3",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 40,
+        "hard": 30
+      },
+      "advanced_relevance": "high",
+      "notes": "Indian rivers/physiography remain a core, high-frequency sub-area."
+    },
+    "U14": {
+      "category": "Geography",
+      "prelims_freq_band": "medium",
+      "avg_q_per_paper": "1-2",
+      "difficulty_split": {
+        "easy": 35,
+        "medium": 40,
+        "hard": 25
+      },
+      "advanced_relevance": "medium",
+      "notes": "World geography is tested mainly through geopolitical current-affairs linkage."
+    },
+    "U15": {
+      "category": "Geography",
+      "prelims_freq_band": "medium-high",
+      "avg_q_per_paper": "2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 40,
+        "hard": 30
+      },
+      "advanced_relevance": "medium",
+      "notes": "Economic geography (minerals, crops) is a steady, moderately-weighted area."
+    },
+    "U16": {
+      "category": "Geography",
+      "prelims_freq_band": "medium",
+      "avg_q_per_paper": "1-2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 45,
+        "hard": 25
+      },
+      "advanced_relevance": "low",
+      "notes": "Map-based/location questions are common but usually low-to-medium difficulty."
+    },
+    "U17": {
+      "category": "Economy",
+      "prelims_freq_band": "high",
+      "avg_q_per_paper": "2-3",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 45,
+        "hard": 30
+      },
+      "advanced_relevance": "high",
+      "notes": "Basic economic concepts underpin many current-affairs-linked economy questions."
+    },
+    "U18": {
+      "category": "Economy",
+      "prelims_freq_band": "high",
+      "avg_q_per_paper": "2-3",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 45,
+        "hard": 30
+      },
+      "advanced_relevance": "high",
+      "notes": "Banking/monetary policy questions frequently track RBI's latest policy actions."
+    },
+    "U19": {
+      "category": "Economy",
+      "prelims_freq_band": "medium-high",
+      "avg_q_per_paper": "2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 40,
+        "hard": 30
+      },
+      "advanced_relevance": "medium",
+      "notes": "Budget/fiscal questions spike in the exam cycle following the Union Budget."
+    },
+    "U20": {
+      "category": "Economy",
+      "prelims_freq_band": "very high",
+      "avg_q_per_paper": "3-4",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 45,
+        "hard": 30
+      },
+      "advanced_relevance": "high",
+      "notes": "Government schemes are one of the highest-yield current-affairs-adjacent areas."
+    },
+    "U21": {
+      "category": "Environment",
+      "prelims_freq_band": "very high",
+      "avg_q_per_paper": "3-4",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 45,
+        "hard": 30
+      },
+      "advanced_relevance": "high",
+      "notes": "Species/protected-area questions are a perennial Environment staple."
+    },
+    "U22": {
+      "category": "Environment",
+      "prelims_freq_band": "high",
+      "avg_q_per_paper": "2-3",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 45,
+        "hard": 30
+      },
+      "advanced_relevance": "high",
+      "notes": "Climate frameworks spike around COP summit season."
+    },
+    "U23": {
+      "category": "Environment",
+      "prelims_freq_band": "medium-high",
+      "avg_q_per_paper": "2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 40,
+        "hard": 30
+      },
+      "advanced_relevance": "medium",
+      "notes": "Pollution/waste rules track recent regulatory notifications."
+    },
+    "U24": {
+      "category": "Science",
+      "prelims_freq_band": "medium",
+      "avg_q_per_paper": "1-2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 40,
+        "hard": 30
+      },
+      "advanced_relevance": "medium",
+      "notes": "Applied physics/chemistry questions are usually current-affairs-triggered (a tech in the news)."
+    },
+    "U25": {
+      "category": "Science",
+      "prelims_freq_band": "medium-high",
+      "avg_q_per_paper": "2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 40,
+        "hard": 30
+      },
+      "advanced_relevance": "medium",
+      "notes": "Health/disease questions often follow public-health current events."
+    },
+    "U26": {
+      "category": "Science",
+      "prelims_freq_band": "high",
+      "avg_q_per_paper": "2-3",
+      "difficulty_split": {
+        "easy": 25,
+        "medium": 40,
+        "hard": 35
+      },
+      "advanced_relevance": "high",
+      "notes": "ISRO/defence questions spike sharply after a major mission or launch."
+    },
+    "U27": {
+      "category": "Science",
+      "prelims_freq_band": "high",
+      "avg_q_per_paper": "2",
+      "difficulty_split": {
+        "easy": 30,
+        "medium": 40,
+        "hard": 30
+      },
+      "advanced_relevance": "high",
+      "notes": "Emerging tech (AI/data protection) is a growing weightage area given recent legislation."
+    },
+    "U28": {
+      "category": "Current Affairs",
+      "prelims_freq_band": "very high",
+      "avg_q_per_paper": "3-5",
+      "difficulty_split": {
+        "easy": 20,
+        "medium": 45,
+        "hard": 35
+      },
+      "advanced_relevance": "high",
+      "notes": "National schemes/reports are consistently among the highest-yield current-affairs sub-areas."
+    },
+    "U29": {
+      "category": "Current Affairs",
+      "prelims_freq_band": "very high",
+      "avg_q_per_paper": "3-4",
+      "difficulty_split": {
+        "easy": 20,
+        "medium": 45,
+        "hard": 35
+      },
+      "advanced_relevance": "high",
+      "notes": "International relations questions track major summits and India's stated positions."
+    },
+    "U30": {
+      "category": "Current Affairs",
+      "prelims_freq_band": "medium-high",
+      "avg_q_per_paper": "2",
+      "difficulty_split": {
+        "easy": 35,
+        "medium": 40,
+        "hard": 25
+      },
+      "advanced_relevance": "medium",
+      "notes": "Miscellaneous current affairs (awards/sports/books) rounds out the CA section."
+    }
+  },
+  "broad_category_weightage_pct": {
+    "note": "Coarser cross-check figures from PYQ trend sources, approximate % share of the 100-question GS Paper I",
+    "History_and_Culture": "13-16%",
+    "Polity_and_Governance": "14-16%",
+    "Geography": "13-15%",
+    "Economy_and_Social_Development": "13-15%",
+    "Environment_and_Ecology": "13-15%",
+    "Science_and_Technology": "9-11%",
+    "Current_Affairs": "17-19%"
+  }
+}

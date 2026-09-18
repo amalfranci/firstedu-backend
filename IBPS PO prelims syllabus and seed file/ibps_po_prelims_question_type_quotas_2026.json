@@ -1,0 +1,59 @@
+{
+  "exam": "IBPS PO Prelims 2026 (CRP PO/MT-XVI)",
+  "purpose": "Per-topic target quotas for building a question BANK/dataset, not a simulation of a single year's paper. Multiply/scale as needed. Mirrors the structure of the JEE Main / GMAT / CLAT quotas files so banks across exams can be planned/compared side by side.",
+  "question_type_note": "IBPS PO Prelims uses only ONE question format across all three sections: 5-option single-correct MCQ. Puzzle/seating-arrangement sets in Reasoning and DI caselets in Quant each yield multiple linked questions from one shared prompt, but every individual item is still standalone single-correct MCQ. There is no numerical-value entry, no multiple-correct MCQ, and no passage format outside Reading Comprehension/Cloze/Para-Jumbles in English.",
+  "difficulty_note": "IBPS does not publish official difficulty tags. Coaching-tracker consensus over recent cycles places Puzzles/Seating Arrangement and DI caselets as the hardest, most time-costly sub-areas, while Simplification, Number Series and basic vocabulary items skew easier and are commonly called 'score boosters'. Tiers below (easy/medium/hard) are seeding targets, not official classifications.",
+  "sections": {
+    "ENG": {
+      "section_name": "English Language",
+      "num_questions_live_exam": 30,
+      "relevance_tier": "medium",
+      "quota_weight": 2,
+      "topics": {
+        "ENG01": { "topic": "Reading Comprehension", "question_types": { "mcq_passage_based": { "easy": 2, "medium": 4, "hard": 2, "total": 8 } }, "topic_total_quota": 8 },
+        "ENG02": { "topic": "Cloze Test", "question_types": { "mcq_passage_based": { "easy": 2, "medium": 2, "hard": 1, "total": 5 } }, "topic_total_quota": 5 },
+        "ENG03": { "topic": "Para Jumbles", "question_types": { "mcq_standalone": { "easy": 1, "medium": 2, "hard": 1, "total": 4 } }, "topic_total_quota": 4 },
+        "ENG04": { "topic": "Error Detection / Error Spotting", "question_types": { "mcq_standalone": { "easy": 1, "medium": 2, "hard": 1, "total": 4 } }, "topic_total_quota": 4 },
+        "ENG05": { "topic": "Fill in the Blanks / Word Usage", "question_types": { "mcq_standalone": { "easy": 1, "medium": 2, "hard": 1, "total": 4 } }, "topic_total_quota": 4 },
+        "ENG06": { "topic": "Paragraph Completion / Sentence Improvement", "question_types": { "mcq_standalone": { "easy": 1, "medium": 1, "hard": 1, "total": 3 } }, "topic_total_quota": 3 },
+        "ENG07": { "topic": "Vocabulary", "question_types": { "mcq_standalone": { "easy": 1, "medium": 1, "hard": 0, "total": 2 } }, "topic_total_quota": 2 }
+      },
+      "section_total_quota": 30
+    },
+    "QUANT": {
+      "section_name": "Quantitative Aptitude",
+      "num_questions_live_exam": 35,
+      "relevance_tier": "very_high",
+      "quota_weight": 4,
+      "topics": {
+        "QUANT01": { "topic": "Simplification and Approximation", "question_types": { "mcq_standalone": { "easy": 3, "medium": 2, "hard": 0, "total": 5 } }, "topic_total_quota": 5 },
+        "QUANT02": { "topic": "Number Series", "question_types": { "mcq_standalone": { "easy": 2, "medium": 2, "hard": 1, "total": 5 } }, "topic_total_quota": 5 },
+        "QUANT03": { "topic": "Quadratic Equations", "question_types": { "mcq_standalone": { "easy": 2, "medium": 1, "hard": 0, "total": 3 } }, "topic_total_quota": 3 },
+        "QUANT04": { "topic": "Data Interpretation", "question_types": { "mcq_caselet_based": { "easy": 3, "medium": 6, "hard": 3, "total": 12 } }, "topic_total_quota": 12, "notes": "Highest-weightage single sub-area; typically delivered as 2-3 DI sets of ~5 linked questions each." },
+        "QUANT05": { "topic": "Arithmetic", "question_types": { "mcq_standalone": { "easy": 3, "medium": 4, "hard": 1, "total": 8 } }, "topic_total_quota": 8 },
+        "QUANT06": { "topic": "Modern Math / Miscellaneous", "question_types": { "mcq_standalone": { "easy": 1, "medium": 1, "hard": 0, "total": 2 } }, "topic_total_quota": 2 }
+      },
+      "section_total_quota": 35
+    },
+    "REASON": {
+      "section_name": "Reasoning Ability",
+      "num_questions_live_exam": 35,
+      "relevance_tier": "very_high",
+      "quota_weight": 4,
+      "topics": {
+        "REASON01": { "topic": "Puzzles", "question_types": { "mcq_set_based": { "easy": 2, "medium": 6, "hard": 4, "total": 12 } }, "topic_total_quota": 12, "notes": "Highest-weightage single sub-area along with Seating Arrangement; typically delivered as 2-3 sets of ~5 linked questions each." },
+        "REASON02": { "topic": "Seating Arrangement", "question_types": { "mcq_set_based": { "easy": 1, "medium": 4, "hard": 3, "total": 8 } }, "topic_total_quota": 8 },
+        "REASON03": { "topic": "Syllogism", "question_types": { "mcq_standalone": { "easy": 2, "medium": 2, "hard": 1, "total": 5 } }, "topic_total_quota": 5 },
+        "REASON04": { "topic": "Inequality", "question_types": { "mcq_standalone": { "easy": 1, "medium": 1, "hard": 1, "total": 3 } }, "topic_total_quota": 3 },
+        "REASON05": { "topic": "Coding-Decoding", "question_types": { "mcq_standalone": { "easy": 1, "medium": 1, "hard": 0, "total": 2 } }, "topic_total_quota": 2 },
+        "REASON06": { "topic": "Blood Relation", "question_types": { "mcq_standalone": { "easy": 1, "medium": 1, "hard": 0, "total": 2 } }, "topic_total_quota": 2 },
+        "REASON07": { "topic": "Direction Sense", "question_types": { "mcq_standalone": { "easy": 1, "medium": 0, "hard": 0, "total": 1 } }, "topic_total_quota": 1 },
+        "REASON08": { "topic": "Order and Ranking", "question_types": { "mcq_standalone": { "easy": 1, "medium": 0, "hard": 0, "total": 1 } }, "topic_total_quota": 1 },
+        "REASON09": { "topic": "Alphanumeric Series", "question_types": { "mcq_standalone": { "easy": 0, "medium": 1, "hard": 0, "total": 1 } }, "topic_total_quota": 1 },
+        "REASON10": { "topic": "Miscellaneous", "question_types": { "mcq_standalone": { "easy": 0, "medium": 0, "hard": 0, "total": 0 } }, "topic_total_quota": 0 }
+      },
+      "section_total_quota": 35
+    }
+  },
+  "bank_total_quota_at_this_scale": 100
+}

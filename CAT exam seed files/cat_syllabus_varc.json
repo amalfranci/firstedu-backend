@@ -1,0 +1,50 @@
+{
+  "subject": "Verbal Ability and Reading Comprehension (VARC)",
+  "exam": "CAT 2026 (Common Admission Test, MBA)",
+  "source_note": "Compiled from CAT 2025 (conducted 30 Nov 2025 by IIM Kozhikode) slot-wise analyses and multi-year coaching-tracker trend data, cross-checked Sep 2026. CAT has no officially published 'syllabus document' the way NEET/JEE do - IIM releases only a broad exam pattern notification - so topic lists here are reverse-engineered from repeated question-type patterns across the last several years' papers. Always cross-check against the current-year CAT official notification/mock test for the exact question mix, since IIMs occasionally rebalance the RC:VA ratio or question count without prior notice.",
+  "exam_pattern_note": "CAT VARC: 24 questions, 40-minute fixed time limit (non-transferable from/to other sections), no sectional choice. Roughly 4 RC passages of ~4-5 questions each (~16 questions) plus ~8 Verbal Ability questions. Most RC questions are single-correct MCQ (4-5 options); Verbal Ability questions (para jumbles, para summary, odd sentence out, para completion) are a mix of TITA (type-in-the-answer, no options given) and MCQ, varying by slot/year.",
+  "topics": [
+    {
+      "topic_id": "V01",
+      "area": "Reading Comprehension (RC)",
+      "subtopics": [
+        "Long-passage RC (~500-700 words) on argumentative/analytical themes (economics, philosophy, science, sociology, history)",
+        "Inference-based questions",
+        "Author's tone, purpose and central-idea questions",
+        "Vocabulary-in-context and word-usage questions embedded in passages",
+        "Detail/fact-based and 'except' (negative) questions"
+      ],
+      "question_format": "Single-correct MCQ (predominantly)",
+      "note": "Typically 4 passages x 4 questions = 16 questions; by far the largest chunk of VARC."
+    },
+    {
+      "topic_id": "V02",
+      "area": "Para Jumbles",
+      "subtopics": [
+        "Re-ordering 4-5 jumbled sentences into a coherent paragraph"
+      ],
+      "question_format": "TITA (type the correct sequence) in most recent years",
+      "note": "~3 questions typically."
+    },
+    {
+      "topic_id": "V03",
+      "area": "Para Summary",
+      "subtopics": [
+        "Selecting/typing the option that best captures a paragraph's central idea"
+      ],
+      "question_format": "Mix of MCQ and TITA across recent years",
+      "note": "~3 questions typically."
+    },
+    {
+      "topic_id": "V04",
+      "area": "Odd Sentence Out / Para Completion / Para Insertion",
+      "subtopics": [
+        "Odd sentence out: identifying the sentence that disrupts a paragraph's logical flow",
+        "Para completion: selecting/typing the sentence that best completes a paragraph",
+        "Para insertion: identifying where a given sentence best fits within a paragraph"
+      ],
+      "question_format": "Mix of MCQ and TITA; exact sub-type mix varies by year",
+      "note": "~2-4 questions typically; one or two of these sub-types appear per year, not all three together."
+    }
+  ]
+}
