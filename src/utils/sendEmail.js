@@ -507,6 +507,7 @@ export const sendTicketReceivedEmail = async (email, name, ticketNumber, subject
       to: email,
       category: "support_ticket",
       slug: "ticket_received",
+      from: `"TestLadr Support" <${process.env.SMTP_SUPPORT_EMAIL || "support@testladr.com"}>`,
       variables: {
         name: name || "Student",
         ticketNumber: ticketNumber || "—",
@@ -529,6 +530,7 @@ export const sendTicketReplyEmail = async (email, name, ticketNumber, message) =
       to: email,
       category: "support_ticket",
       slug: "ticket_reply",
+      from: `"TestLadr Support" <${process.env.SMTP_SUPPORT_EMAIL || "support@testladr.com"}>`,
       variables: {
         name: name || "Student",
         ticketNumber: ticketNumber || "—",
