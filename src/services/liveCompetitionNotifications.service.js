@@ -296,7 +296,7 @@ const sendRound1QualifiedEmail = async ({
           <p style="color:#888;font-size:13px;margin-top:24px;">Best of luck! 🌟</p>
         </div>
         <div style="background:#f5f5f5;padding:16px 24px;text-align:center;">
-          <p style="color:#aaa;font-size:12px;margin:0;">TestLard — Empowering Every Learner</p>
+          <p style="color:#aaa;font-size:12px;margin:0;">TestLadr — Empowering Every Learner</p>
         </div>
       </div>
     `,
@@ -339,7 +339,7 @@ const sendRound1NotQualifiedEmail = async ({ student, event }) => {
           <p style="color:#888;font-size:13px;margin-top:24px;">Open the app to view the full leaderboard.</p>
         </div>
         <div style="background:#f5f5f5;padding:16px 24px;text-align:center;">
-          <p style="color:#aaa;font-size:12px;margin:0;">TestLard — Empowering Every Learner</p>
+          <p style="color:#aaa;font-size:12px;margin:0;">TestLadr — Empowering Every Learner</p>
         </div>
       </div>
     `,
@@ -394,7 +394,7 @@ const sendRound2ResultEmail = async ({ student, event, rank, isWinner }) => {
           <p style="color:#888;font-size:13px;margin-top:24px;">Open the app to view the complete results and leaderboard.</p>
         </div>
         <div style="background:#f5f5f5;padding:16px 24px;text-align:center;">
-          <p style="color:#aaa;font-size:12px;margin:0;">TestLard — Empowering Every Learner</p>
+          <p style="color:#aaa;font-size:12px;margin:0;">TestLadr — Empowering Every Learner</p>
         </div>
       </div>
     `,
