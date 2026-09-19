@@ -107,6 +107,53 @@ const pruneExpiredJobs = () => {
     }
 };
 
+const isTerminalJobStatus = (status) => {
+    const s = String(status || "").toLowerCase();
+    return (
+        s === "completed" ||
+        s === "partially_completed" ||
+        s === "failed" ||
+        s === "cancelled"
+    );
+};
+
+const isActiveJobStatus = (status) => {
+    const s = String(status || "").toLowerCase();
+    return (
+        s === "pending" ||
+        s === "queued" ||
+        s === "running" ||
+        s === "resume" ||
+        s === "generating"
+    );
+};
+
+const isPaperJobId = (jobId, job = null) =>
+    String(job?.pipeline || "") === "jee_advanced_luna_verify" ||
+    String(jobId || "").startsWith("apt-");
+
+/**
+ * Prefer the freshest shared-disk copy for paper jobs (API + worker are
+ * separate processes with separate memory Maps).
+ */
+const resolveExistingJob = (jobId) => {
+    const mem = jobs.get(jobId) || null;
+    const disk = readJobFromDisk(jobId);
+    if (!disk) return mem;
+    if (!mem) return disk;
+    if (!isPaperJobId(jobId, mem) && !isPaperJobId(jobId, disk)) {
+        return mem;
+    }
+    const memTs = Number(mem.updatedAt || mem.createdAt || 0);
+    const diskTs = Number(disk.updatedAt || disk.createdAt || 0);
+    // Disk wins when newer, or when memory would downgrade a finished job.
+    if (diskTs >= memTs) return disk;
+    if (isTerminalJobStatus(disk.status) && isActiveJobStatus(mem.status)) {
+        return disk;
+    }
+    return mem;
+};
+
 export const createGenerationJob = (jobId, payload = {}) => {
     pruneExpiredJobs();
     const now = Date.now();
@@ -124,9 +171,30 @@ export const createGenerationJob = (jobId, payload = {}) => {
 };
 
 export const updateGenerationJob = (jobId, patch = {}) => {
-    const existing = jobs.get(jobId) || readJobFromDisk(jobId);
+    const existing = resolveExistingJob(jobId);
     if (!existing) return null;
-    let nextPatch = patch;
+    let nextPatch = { ...patch };
+    // Never let a stale API poll overwrite worker terminal status with "running".
+    if (
+        isTerminalJobStatus(existing.status) &&
+        isActiveJobStatus(nextPatch.status)
+    ) {
+        const { status: _s, phase: _p, message: _m, ...rest } = nextPatch;
+        nextPatch = rest;
+    }
+    if (
+        isTerminalJobStatus(existing.status) &&
+        nextPatch.status == null &&
+        isPaperJobId(jobId, existing)
+    ) {
+        // Progress-only patches from the API must keep completion markers.
+        nextPatch = {
+            ...nextPatch,
+            status: existing.status,
+            phase: existing.phase || nextPatch.phase,
+            message: existing.message || nextPatch.message,
+        };
+    }
     if (Array.isArray(patch.questions) && patch.questions.length) {
         const seen = new Set();
         const unique = [];
@@ -143,12 +211,12 @@ export const updateGenerationJob = (jobId, patch = {}) => {
         }
         if (unique.length !== patch.questions.length) {
             nextPatch = {
-                ...patch,
+                ...nextPatch,
                 questions: unique,
                 completedQuestions: unique.length,
                 counts: {
                     ...(existing.counts || {}),
-                    ...(patch.counts || {}),
+                    ...(nextPatch.counts || {}),
                     total: unique.length,
                 },
             };

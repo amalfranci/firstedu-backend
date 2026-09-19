@@ -3,6 +3,7 @@ import questionBankRepository from "../repository/questionBank.repository.js";
 import questionRepository from "../repository/question.repository.js";
 import categoryRepository from "../repository/category.repository.js";
 import { assertBankNotInUse } from "../utils/bankUsageGuard.js";
+import { normalizeCategoryIds } from "../utils/normalizeCategoryIds.js";
 
 
 const validateQuestionOptions = (questionType, options) => {
@@ -185,7 +186,7 @@ const appendTotalTime = (bank) => {
 };
 
 export const createQuestionBank = async (data, createdBy) => {
-  const categoryIds = data.categories || [];
+  const categoryIds = normalizeCategoryIds(data.categories || []);
   for (const catId of categoryIds) {
     const cat = await categoryRepository.findById(catId);
     if (!cat) throw new ApiError(404, `Category not found: ${catId}`);
@@ -206,7 +207,7 @@ export const createQuestionBank = async (data, createdBy) => {
 };
 
 export const createQuestionBankWithQuestions = async (data, createdBy) => {
-  const categoryIds = data.categories || [];
+  const categoryIds = normalizeCategoryIds(data.categories || []);
   for (const catId of categoryIds) {
     const cat = await categoryRepository.findById(catId);
     if (!cat) throw new ApiError(404, `Category not found: ${catId}`);
@@ -433,6 +434,7 @@ export const updateQuestionBank = async (id, updateData) => {
   await assertBankNotInUse(id, "edit");
 
   if (updateData.categories && updateData.categories.length > 0) {
+    updateData.categories = normalizeCategoryIds(updateData.categories);
     for (const catId of updateData.categories) {
       const cat = await categoryRepository.findById(catId);
       if (!cat) throw new ApiError(404, `Category not found: ${catId}`);

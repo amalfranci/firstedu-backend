@@ -1,5 +1,7 @@
 /**
- * JEE Advanced paper-generation pipeline used by /admin/ai-powered-test/*.
+ * Exam-aware paper-generation pipeline used by /admin/ai-powered-test/*.
+ * Exam name in writer/solver prompts comes from the user's selected
+ * examType / examLabel (see paperExamIdentity.service.js) — not hardcoded.
  *
  * Minimal parallel flow:
  *   plan → Gemini generate (parallel) → free schema check
@@ -60,6 +62,12 @@ import {
   summarizeCalls,
 } from "./paperJobArtifact.service.js";
 import { runParallelPaperPipeline } from "./paperParallelOrchestrator.service.js";
+import {
+  resolvePaperExam,
+  buildWriterHardnessLock,
+  paperScoreFloor,
+  paperDefaultQuestionKind,
+} from "./paperExamIdentity.service.js";
 
 const PIPELINE_DIR = dirname(fileURLToPath(import.meta.url));
 
@@ -577,24 +585,51 @@ const cardBullets = (arr = [], n = 4, width = 80) =>
     .map((x) => `- ${clip(x, width)}`)
     .filter((x) => x.length > 3);
 
+/** Fallback only — prefer paperScoreFloor(examType) per job. */
+const SCORE_FLOOR = Number(
+  process.env.JEE_ADV_SCORE_FLOOR ||
+    process.env.PAPER_SCORE_FLOOR ||
+    75
+);
+
+/** @deprecated use resolvePaperExam — kept as alias for local call sites */
+const paperExamIdentity = resolvePaperExam;
+
 /** One compact card per assigned slot. Do not also dump full NCERT essays. */
-const buildWriterTopicCards = (slots = [], count, type = "single") => {
+const buildWriterTopicCards = (
+  slots = [],
+  count,
+  type = "single",
+  examLabel = "Exam",
+  examType = ""
+) => {
   const batch = (slots || []).slice(0, count);
+  const examTypeNorm = String(examType || "").toLowerCase();
+  const isAdvancedExam = examTypeNorm === "jee_advanced";
+  // Advanced NCERT archetype banks bias writers toward multi-concept fusion.
+  // Only inject those for JEE Advanced; all other exams stay single-skill / exam-faithful.
+  const skipAdvArchetypes = !isAdvancedExam;
   if (!batch.length) {
-    return "Generate distinct hard Advanced items from the assigned topics.";
+    return skipAdvArchetypes
+      ? `Generate distinct hard ${examLabel || "exam"} (exam-faithful) items from the assigned topics.`
+      : "Generate distinct hard exam items from the assigned topics.";
   }
   return batch
     .map((s) => {
-      const ncert = s.ncert || lookupNcert(s.subject, s.topicId) || {};
+      const ncert = skipAdvArchetypes
+        ? {}
+        : s.ncert || lookupNcert(s.subject, s.topicId) || {};
       const allowed = cardBullets(
         ncert.concepts?.length ? ncert.concepts : s.allowed || [],
         4,
         80
       );
       const preferred = cardBullets(
-        ncert.hard_archetypes?.length
-          ? ncert.hard_archetypes
-          : s.hardArchetypes || [],
+        skipAdvArchetypes
+          ? s.hardArchetypes || []
+          : ncert.hard_archetypes?.length
+            ? ncert.hard_archetypes
+            : s.hardArchetypes || [],
         6,
         90
       );
@@ -610,10 +645,10 @@ const buildWriterTopicCards = (slots = [], count, type = "single") => {
         String(s.conceptSlot || s.hardArchetype || "").trim() || null;
       const lines = [
         `${s.topicId || "?"} ${s.chapter || s.topicId || "topic"}`,
-        `question_type=${type} · difficulty=${s.difficulty || "hard"} · chapter_lock=${s.chapter_lock !== false} · concept_lock=${Boolean(s.concept_lock || lockedConcept)}`,
+        `question_type=${type} · difficulty=${s.difficulty || "hard"} · exam=${examLabel} · chapter_lock=${s.chapter_lock !== false} · concept_lock=${Boolean(s.concept_lock || lockedConcept)}`,
         lockedConcept
           ? `Assigned chapter + concept (backend lock). Primary concept family: ${lockedConcept}. Stay inside this chapter.`
-          : `Assigned chapter (backend). Choose exactly ONE Preferred hard concept slot. Set conceptSlot to a short slug of that choice.`,
+          : `Assigned chapter (backend). Choose exactly ONE Preferred concept slot. Set conceptSlot to a short slug of that choice.`,
       ];
       if (type === "match") {
         lines.push(
@@ -625,22 +660,30 @@ const buildWriterTopicCards = (slots = [], count, type = "single") => {
         );
       } else if (type === "multiple") {
         lines.push(
-          `MULTI-CORRECT: prefer concepts with several independent true/false conditions.`
+          skipAdvArchetypes
+            ? `MULTI-CORRECT: keep options within one chapter idea; avoid Advanced-style independent mini-problems.`
+            : `MULTI-CORRECT: prefer concepts with several independent true/false conditions.`
         );
       } else if (type === "integer") {
         lines.push(
-          `INTEGER: prefer computational / non-routine numeric results (unique integer).`
+          skipAdvArchetypes
+            ? `INTEGER: short exam-faithful numeric derivation (unique integer), not a long Advanced chain.`
+            : `INTEGER: prefer computational / non-routine numeric results (unique integer).`
         );
       } else {
         lines.push(
-          `SINGLE: prefer concepts suitable for a non-obvious multi-step derivation.`
+          skipAdvArchetypes
+            ? `SINGLE: one primary concept + short calculation (2–4 steps). No Advanced multi-topic fusion.`
+            : `SINGLE: prefer concepts suitable for a non-obvious multi-step derivation.`
         );
       }
       if (allowed.length) lines.push(`Allowed:\n${allowed.join("\n")}`);
       if (preferred.length) lines.push(`Preferred:\n${preferred.join("\n")}`);
       else {
         lines.push(
-          `Preferred: pick one high-difficulty JEE Advanced concept from this chapter.`
+          skipAdvArchetypes
+            ? `Preferred: pick ONE high-weight ${examLabel} concept from this chapter/topic (single-skill, not Advanced fusion).`
+            : `Preferred: pick one high-difficulty ${examLabel} concept from this chapter.`
         );
       }
       if (banned.length) lines.push(`Banned:\n${banned.join("\n")}`);
@@ -1070,7 +1113,7 @@ export const planPipelineSlots = (config = {}) => {
   const unusedFrom = () => leftoverPool;
 
   return {
-    examType: config.examType || "jee_advanced",
+    examType: config.examType || "competitive",
     paper,
     subjects,
     totalQuestions,
@@ -1096,28 +1139,51 @@ const generateBatch = async ({
   slots,
   subject,
   excludeTexts = [],
+  examType,
+  examLabel,
 }) => {
   if (count <= 0) return [];
   const batchSlots = (slots || []).slice(0, count);
   const subj = normalizeSubject(subject || batchSlots[0]?.subject);
-  const topicCards = buildWriterTopicCards(batchSlots, count, type);
+  const exam = paperExamIdentity({ examType, examLabel });
+  const scoreFloor = paperScoreFloor(exam.examType);
+  const questionKind = paperDefaultQuestionKind(exam.examType);
+  const topicCards = buildWriterTopicCards(
+    batchSlots,
+    count,
+    type,
+    exam.examLabel,
+    exam.examType
+  );
   const label = writerLabel(subj);
+  const hardWord =
+    exam.examType === "jee_advanced"
+      ? "HARD"
+      : exam.examType === "jee_main" || exam.examType === "neet"
+        ? "HARD (exam-faithful, single-concept)"
+        : "HARD (exam-faithful)";
   const typeLine =
     type === "multiple"
-      ? `Generate exactly ${count} HARD MULTI-CORRECT MCQs. One or more of A–D may be correct.`
+      ? `Generate exactly ${count} ${hardWord} MULTI-CORRECT MCQs. One or more of A–D may be correct.`
       : type === "integer"
-        ? `Generate exactly ${count} HARD INTEGER / NUMERICAL questions. Answer is an integer. NO options.`
+        ? `Generate exactly ${count} ${hardWord} INTEGER / NUMERICAL questions. Answer is an integer. NO options.`
         : type === "match"
-          ? `Generate exactly ${count} HARD MATCH THE FOLLOWING questions with exactly 4 List-I items, all chapter-locked.`
-          : `Generate exactly ${count} HARD SINGLE-CORRECT MCQs. Exactly one of A–D is correct.`;
+          ? `Generate exactly ${count} ${hardWord} MATCH THE FOLLOWING questions with exactly 4 List-I items, all chapter-locked.`
+          : `Generate exactly ${count} ${hardWord} SINGLE-CORRECT MCQs. Exactly one of A–D is correct.`;
+  const exampleScore =
+    exam.examType === "jee_advanced"
+      ? 85
+      : exam.examType === "jee_main" || exam.examType === "neet"
+        ? 76
+        : 78;
   const schema =
     type === "multiple"
-      ? `{"questions":[{"questionType":"multiple","conceptSlot":"string","chapter":"string","questionText":"string","options":["A","B","C","D"],"correctLetters":["A","C"],"insightOneLiner":"string","difficultySelfScore":85}]}`
+      ? `{"questions":[{"questionType":"multiple","conceptSlot":"string","chapter":"string","questionText":"string","options":["A","B","C","D"],"correctLetters":["A","C"],"insightOneLiner":"string","difficultySelfScore":${exampleScore}}]}`
       : type === "integer"
-        ? `{"questions":[{"questionType":"integer","conceptSlot":"string","chapter":"string","questionText":"string","finalAnswer":42,"answerDisplay":"42","insightOneLiner":"string","difficultySelfScore":85}]}`
+        ? `{"questions":[{"questionType":"integer","conceptSlot":"string","chapter":"string","questionText":"string","finalAnswer":42,"answerDisplay":"42","insightOneLiner":"string","difficultySelfScore":${exampleScore}}]}`
         : type === "match"
-          ? `{"questions":[{"questionType":"match","conceptSlot":"string","chapter":"string","questionText":"string","listI":["...","...","...","..."],"listII":["...","...","...","..."],"options":["1-P, 2-Q, 3-R, 4-S","1-Q, 2-P, 3-S, 4-R","1-P, 2-R, 3-Q, 4-S","1-S, 2-Q, 3-P, 4-R"],"correctAnswer":"A","insightOneLiner":"string","difficultySelfScore":85,"listIChapterIds":["same","same","same","same"]}]}`
-          : `{"questions":[{"questionType":"single","conceptSlot":"string","chapter":"string","questionText":"string","options":["A","B","C","D"],"correctLetters":["A"],"insightOneLiner":"string","difficultySelfScore":85}]}`;
+          ? `{"questions":[{"questionType":"match","conceptSlot":"string","chapter":"string","questionText":"string","listI":["...","...","...","..."],"listII":["...","...","...","..."],"options":["1-P, 2-Q, 3-R, 4-S","1-Q, 2-P, 3-S, 4-R","1-P, 2-R, 3-Q, 4-S","1-S, 2-Q, 3-P, 4-R"],"correctAnswer":"A","insightOneLiner":"string","difficultySelfScore":${exampleScore},"listIChapterIds":["same","same","same","same"]}]}`
+          : `{"questions":[{"questionType":"single","conceptSlot":"string","chapter":"string","questionText":"string","options":["A","B","C","D"],"correctLetters":["A"],"insightOneLiner":"string","difficultySelfScore":${exampleScore}}]}`;
 
   const matchLockBlock =
     type === "match"
@@ -1131,26 +1197,13 @@ const generateBatch = async ({
 `
       : "";
 
-  const prompt = `You are a senior JEE Advanced ${label} question setter.
+  const hardnessLock = buildWriterHardnessLock(exam.examType, exam.examLabel);
+
+  const prompt = `You are a senior ${exam.examLabel} ${label} question setter.
 ${typeLine}
 Exactly 4 options unless integer. Use each assigned chapter exactly. Valid LaTeX/JSON. No explanations or solveSteps.
 ${matchLockBlock}
-**JEE ADVANCED HARDNESS LOCK (strict — Paper-1/2 hard seat)**
-- Target: real IIT Advanced hard, NOT JEE Main / board / routine drill.
-- difficultySelfScore target **78–88**; never below **75**. If you cannot reach 75, still invent a harder stem — do not emit a soft item.
-- Require a **non-obvious first move** (substitution trick, hidden invariant, coupled constraint, or non-standard case split). Pure plug-in formulas = FAIL.
-- Prefer **fusion of 2 major techniques**; optionally a third tight link. Never 4+ independent mini-problems glued together.
-- For **multiple-correct**: do NOT mark all of A–D correct unless each option needs a genuinely different argument; prefer 2–3 correct with attractive wrong options.
-- For **match**: List-I items must share one conceptual spine (same family of ideas). Ban four copy-paste distance/count tasks that only change numbers.
-- For **integer**: answer should need a multi-step derivation (not a one-line count).
-- Avoid: identical-bag / simple partition drills, standard orthonormal-vector coplanarity-only items, textbook “tangent intercept → DE” templates without a twist, four parallel plane-distance clones, “number of solutions in [0,2π]” alone as the whole ask.
-- Stretch hardness by **idea**, not by denser LaTeX or longer arithmetic.
-- Stay inside the assigned chapter. If a conceptSlot is provided in TOPIC CONTEXT, use it; otherwise choose ONE Preferred hard concept slot and set conceptSlot to a short slug of that choice.
-- Respect all banned templates.
-- Questions must be independently solvable and verifiable.
-- Avoid near-duplicate structure across questions.
-- Do not artificially increase difficulty through ambiguity.
-- Inside JSON strings use \\\\frac{a}{b}; prefer $...$; no real newlines.
+${hardnessLock}
 
 TOPIC CONTEXT
 
@@ -1165,6 +1218,8 @@ ${schema}`;
     type,
     count,
     subject: subj,
+    examType: exam.examType,
+    examLabel: exam.examLabel,
     promptChars: prompt.length,
     topicIds: topicIdsFromSlots(batchSlots),
     slots: batchSlots.map((s) => ({
@@ -1179,12 +1234,13 @@ ${schema}`;
   const mapped = listFromGemini(parsed)
     .filter((q) => q?.questionText)
     .filter((q) => {
-      const ok = passesHardnessScore(q);
+      const ok = passesHardnessScore(q, scoreFloor);
       if (!ok) {
         pipelineLog("HARDNESS_DROP", {
           type,
+          examType: exam.examType,
           score: Number(q.difficultySelfScore),
-          floor: SCORE_FLOOR,
+          floor: scoreFloor,
           preview: String(q.questionText || "").slice(0, 120),
         });
       }
@@ -1211,6 +1267,8 @@ ${schema}`;
         _assignedDifficulty: slot.difficulty || "hard",
         _chapterLock: slot.chapter_lock !== false,
         _conceptLock: Boolean(slot.concept_lock || lockedSlot),
+        _examType: exam.examType,
+        _examLabel: exam.examLabel,
       };
       if (type === "integer") {
         return sanitizeQuestion({
@@ -1223,7 +1281,7 @@ ${schema}`;
           ...slotMeta,
           _advancedType: "integer",
           difficultyTier: "hard",
-          _questionKind: "multi_concept",
+          _questionKind: questionKind,
           _generatorDifficultySelfScore: Number(q.difficultySelfScore) || null,
         });
       }
@@ -1242,7 +1300,7 @@ ${schema}`;
           ...slotMeta,
           _advancedType: "match",
           difficultyTier: "hard",
-          _questionKind: "multi_concept",
+          _questionKind: questionKind,
           _generatorDifficultySelfScore: Number(q.difficultySelfScore) || null,
         });
       }
@@ -1262,7 +1320,7 @@ ${schema}`;
         ...slotMeta,
         _advancedType: type === "multiple" ? "multiple" : "single",
         difficultyTier: "hard",
-        _questionKind: "multi_concept",
+        _questionKind: questionKind,
         _generatorDifficultySelfScore: Number(q.difficultySelfScore) || null,
       });
     });
@@ -1319,7 +1377,9 @@ const keysMatch = (type, derived, proposed) => {
   return String(derived) === String(proposed);
 };
 
-const buildLunaVerifyPrompt = (q, type, opts, proposed) => {
+const buildLunaVerifyPrompt = (q, type, opts, proposed, exam = {}) => {
+  const examLabel = exam.examLabel || "Exam";
+  const examType = exam.examType || "competitive";
   const typeLabel =
     type === "multiple"
       ? "MULTI-CORRECT MCQ (one or more options may be correct)"
@@ -1348,7 +1408,16 @@ const buildLunaVerifyPrompt = (q, type, opts, proposed) => {
     .filter(Boolean)
     .join("\n");
 
-  return `You are a JEE Advanced verification examiner. Use deep independent reasoning.
+  const difficultyGate =
+    examType === "jee_advanced"
+      ? `difficulty_match: truly hard ${examLabel} (IIT selection depth — multi-step / non-routine).`
+      : examType === "jee_main"
+        ? `difficulty_match: truly hard ${examLabel} shift-paper (not board drill; not Advanced-depth fusion).`
+        : examType === "neet"
+          ? `difficulty_match: truly hard ${examLabel} (NCERT-depth application; not IIT fusion).`
+          : `difficulty_match: truly hard ${examLabel} (exam-faithful; not routine drill; not JEE Advanced fusion).`;
+
+  return `You are a ${examLabel} verification examiner. Use deep independent reasoning.
 Do NOT judge by "looks correct". PASS only if ALL gates below are true.
 
 Assigned chapter: ${q._chapter || q.chapter || "(unknown)"}
@@ -1366,7 +1435,7 @@ Follow these steps IN ORDER:
 7. Syllabus / paper-quality gates (REQUIRED):
    - chapter_match: primary content belongs to the assigned chapter (for MATCH: ≥3 of 4 List-I items must be that chapter; no List-I item may have another chapter as primary).
    - concept_match: content tests the assigned concept family (for MATCH: ≥3 of 4 List-I items).
-   - difficulty_match: truly hard JEE Advanced (not routine Main drill).
+   - ${difficultyGate}
    - format_valid: stem/options/lists structurally valid for the item type.
 8. Only now compare your derived answer with the PROPOSED KEY.
 9. Return PASS only if mathematical_correct AND proposed_key_match AND chapter_match AND concept_match AND difficulty_match AND format_valid AND not ambiguous.
@@ -1403,12 +1472,10 @@ const explanationLooksComplete = (q) => {
   return hasInsight && (hasDerivation || hasSteps) && notPlaceholder;
 };
 
-const SCORE_FLOOR = Number(process.env.JEE_ADV_SCORE_FLOOR || 75);
-
-const passesHardnessScore = (q) => {
+const passesHardnessScore = (q, floor = SCORE_FLOOR) => {
   const score = Number(q?.difficultySelfScore ?? q?._generatorDifficultySelfScore);
   if (!Number.isFinite(score)) return true; // allow missing score; writers usually send it
-  return score >= SCORE_FLOOR;
+  return score >= floor;
 };
 
 let lastDualDrop = null;
@@ -1457,7 +1524,16 @@ const dualLockQuestion = async (q) => {
     return null;
   }
 
-  const verifyPrompt = buildLunaVerifyPrompt(q, type, opts, proposed);
+  const verifyPrompt = buildLunaVerifyPrompt(
+    q,
+    type,
+    opts,
+    proposed,
+    paperExamIdentity({
+      examType: q._examType,
+      examLabel: q._examLabel,
+    })
+  );
   // Same-request retries are opt-in; default 0 — prefer seat replacement on timeout.
   const maxAttempts = 1 + getVerifyTimeoutRetries();
   let parsed;
@@ -1654,7 +1730,7 @@ const expandExplanation = async (q) => {
           ? `INTEGER: insight, setup, compressed algebra. Last line: FINAL_ANSWER: ${lockedKey}`
           : `Insight first. End with locked key ${lockedKey}.`;
 
-  const prompt = `You are writing an official-style JEE Advanced solution (IIT coaching quality).
+  const prompt = `You are writing an official-style ${q._examLabel || "exam"} solution (coaching quality).
 The answer key is ALREADY LOCKED — NEVER change the final answer.
 If a derivation would imply a different key, rewrite so it supports the locked key. Do not output a different answer.
 LOCKED KEY: ${lockedKey}
@@ -1707,6 +1783,8 @@ export const generatePipelineQuestions = (body = {}) =>
     slots: body.slots || [],
     subject: body.subject,
     excludeTexts: body.excludeQuestionTexts || body.excludeTexts || [],
+    examType: body.examType,
+    examLabel: body.examLabel,
   });
 
 export const dualLockPipelineQuestions = async (questions = []) => {
@@ -1756,6 +1834,12 @@ const toUiQuestion = (q, config = {}) => {
       : prefixed.length
         ? prefixed
         : plain;
+  const exam = resolvePaperExam({
+    examType: q._examType || config.examType,
+    examLabel: q._examLabel || config.examLabel,
+  });
+  const questionKind =
+    q._questionKind || paperDefaultQuestionKind(exam.examType);
   return {
     questionType: uiType,
     text: q.questionText,
@@ -1784,8 +1868,10 @@ const toUiQuestion = (q, config = {}) => {
     _insight: q._insight,
     listI: q.listI,
     listII: q.listII,
-    difficultyTier: "hard",
-    _questionKind: "multi_concept",
+    difficultyTier: q.difficultyTier || "hard",
+    _questionKind: questionKind,
+    _examType: exam.examType,
+    _examLabel: exam.examLabel,
   };
 };
 
@@ -1889,7 +1975,15 @@ const lockAndExpandItem = async (item) => {
   return item;
 };
 
-const processOneSlot = async ({ type, slot, exclude, seq, attempt = 1 }) => {
+const processOneSlot = async ({
+  type,
+  slot,
+  exclude,
+  seq,
+  attempt = 1,
+  examType,
+  examLabel,
+}) => {
   const subject = normalizeSubject(slot.subject);
   const item = {
     seq,
@@ -1921,8 +2015,14 @@ const processOneSlot = async ({ type, slot, exclude, seq, attempt = 1 }) => {
         slots: [slot],
         subject,
         excludeTexts: exclude,
+        examType,
+        examLabel,
       });
       generated = part[0] || null;
+      if (generated) {
+        generated._examType = examType;
+        generated._examLabel = examLabel;
+      }
     } catch (err) {
       return failItem(item, "generate_error", err?.message || String(err));
     }
@@ -2103,6 +2203,8 @@ const fillType = async ({
               exclude,
               seq: wave[0].seqNum,
               attempt: wave[0].attemptIndex,
+              examType: config.examType,
+              examLabel: config.examLabel,
             }),
           ]
         : await Promise.all(
@@ -2113,6 +2215,8 @@ const fillType = async ({
                 exclude: [...exclude],
                 seq: w.seqNum,
                 attempt: w.attemptIndex,
+                examType: config.examType,
+                examLabel: config.examLabel,
               })
             )
           );
@@ -2434,12 +2538,12 @@ export const startAdvancedPaperJob = (config = {}) => {
       completedQuestions: 0,
       failedQuestions: 0,
       logDir: `temp/paper-jobs/${jobId}`,
-      message: "Queued JEE Advanced generate → o3 verify+solution (inline)",
+      message: `Queued ${config.examLabel || config.examType || "exam"} generate → o3 verify+solution (inline)`,
     });
     persistJobRecord(jobId, {
       status: "running",
       phase: "queued",
-      message: "Queued JEE Advanced generate → o3 verify+solution (inline)",
+      message: `Queued ${config.examLabel || config.examType || "exam"} generate → o3 verify+solution (inline)`,
       generationId: jobId,
       config,
       runner: "inline",

@@ -161,7 +161,31 @@ export const callOpenAIReasoningJson = async ({
             );
             const text = extractOpenAIChatText(response);
             if (!text) {
-                throw new ApiError(500, "OpenAI returned empty response");
+                const choice = response?.data?.choices?.[0] || {};
+                const finish = String(choice.finish_reason || "");
+                const usage = extractOpenAIChatUsage(response);
+                // o-series often spends the whole max_completion_tokens budget on
+                // reasoning and returns empty content (finish_reason=length).
+                const detail = [
+                    finish ? `finish_reason=${finish}` : null,
+                    usage.reasoningTokens
+                        ? `reasoningTokens=${usage.reasoningTokens}`
+                        : null,
+                    usage.completionTokens
+                        ? `completionTokens=${usage.completionTokens}`
+                        : null,
+                    body.max_completion_tokens
+                        ? `max_completion_tokens=${body.max_completion_tokens}`
+                        : null,
+                ]
+                    .filter(Boolean)
+                    .join(", ");
+                throw new ApiError(
+                    500,
+                    detail
+                        ? `OpenAI returned empty response (${detail})`
+                        : "OpenAI returned empty response"
+                );
             }
             if (candidate !== primary) {
                 pipelineTrace("OPENAI_SOLVER_MODEL_FALLBACK", {

@@ -7,6 +7,7 @@ import categoryRepository from "../repository/category.repository.js";
 import { assertAiBankNotInUse } from "../utils/aiBankUsageGuard.js";
 import { dedupePaperQuestionsByStem } from "../utils/paperQuestionDedupe.js";
 import { logConfirmedQuestionsToFile } from "./confirmedQuestionsLogger.service.js";
+import { normalizeCategoryIds } from "../utils/normalizeCategoryIds.js";
 
 const getSectionIndexByCount = (sectionConfigs = [], questionIndex = 0) => {
   let cursor = 0;
@@ -179,7 +180,10 @@ const logSavedBankQuestions = async ({
 };
 
 export const createAiQuestionBankWithQuestions = async (data, createdBy) => {
-  const categoryIds = data.categories || [];
+  const categoryIds = normalizeCategoryIds(data.categories || []);
+  if (!categoryIds.length && (data.categories || []).length) {
+    throw new ApiError(400, "Invalid category selection");
+  }
   for (const catId of categoryIds) {
     const cat = await categoryRepository.findById(catId);
     if (!cat) throw new ApiError(404, `Category not found: ${catId}`);

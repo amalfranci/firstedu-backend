@@ -17,6 +17,7 @@
 import { callOpenAIReasoningJson } from "./openaiReasoningChat.service.js";
 import { isDuplicateStem } from "./paperCodeValidation.service.js";
 import { dedupePaperQuestionsByStem } from "../utils/paperQuestionDedupe.js";
+import { resolvePaperExam } from "./paperExamIdentity.service.js";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -122,22 +123,62 @@ const withInfraRetries = async (fn, { label, pipelineLog, maxAttempts } = {}) =>
 
 const parseJsonLoose = (raw) => {
   if (raw && typeof raw === "object") return raw;
-  const text = String(raw || "").trim();
+  let text = String(raw || "")
+    .trim()
+    .replace(/^```(?:json)?\s*/i, "")
+    .replace(/\s*```$/i, "");
   if (!text) return null;
-  try {
-    return JSON.parse(text);
-  } catch {
-    const start = text.indexOf("{");
-    const end = text.lastIndexOf("}");
-    if (start >= 0 && end > start) {
-      try {
-        return JSON.parse(text.slice(start, end + 1));
-      } catch {
-        return null;
-      }
+
+  const tryParse = (value) => {
+    try {
+      return JSON.parse(value);
+    } catch {
+      return null;
     }
-    return null;
+  };
+
+  let parsed = tryParse(text);
+  if (parsed) return parsed;
+
+  const start = text.indexOf("{");
+  const end = text.lastIndexOf("}");
+  if (start >= 0 && end > start) {
+    const sliced = text.slice(start, end + 1);
+    parsed = tryParse(sliced);
+    if (parsed) return parsed;
+    // Common o3 failure: invalid single backslashes inside LaTeX in verifiedSolution.
+    parsed = tryParse(sliced.replace(/\\(?!["\\/bfnrtu])/g, "\\\\"));
+    if (parsed) return parsed;
   }
+
+  // Last resort: pull the fields we actually need even if the full blob is truncated.
+  const pick = (key) => {
+    const m = text.match(
+      new RegExp(
+        `"${key}"\\s*:\\s*("(?:\\\\.|[^"\\\\])*"|true|false|null|-?\\d+(?:\\.\\d+)?)`,
+        "i"
+      )
+    );
+    if (!m) return undefined;
+    try {
+      return JSON.parse(m[1]);
+    } catch {
+      return String(m[1] || "")
+        .replace(/^"|"$/g, "")
+        .replace(/\\n/g, "\n");
+    }
+  };
+  const independentAnswer = pick("independentAnswer");
+  if (independentAnswer == null || independentAnswer === "") return null;
+  return {
+    independentAnswer,
+    answerMatches: pick("answerMatches"),
+    calculationCorrect: pick("calculationCorrect"),
+    questionValid: pick("questionValid") ?? true,
+    confidence: pick("confidence") || "medium",
+    verifiedSolution: pick("verifiedSolution") || "",
+    issues: ["partial_o3_json_recovered"],
+  };
 };
 
 const proposedKeyOf = (q, type) => {
@@ -301,7 +342,7 @@ const callOpenAiJson = async ({
   }
 };
 
-const buildO3SolvePrompt = (q, type) => {
+const buildO3SolvePrompt = (q, type, examHint = {}) => {
   const proposed = proposedKeyOf(q, type);
   const opts = (q.options || []).map(
     (o, i) =>
@@ -320,11 +361,18 @@ const buildO3SolvePrompt = (q, type) => {
     .filter(Boolean)
     .join("\n");
 
-  return `You are an independent JEE Advanced solver (o3).
+  const exam = resolvePaperExam({
+    examType: q._examType || examHint?.examType,
+    examLabel: q._examLabel || examHint?.examLabel,
+  });
+  const examLabel = exam.examLabel;
+
+  return `You are an independent ${examLabel} solver (o3).
 Solve from first principles. Do NOT trust the proposed answer.
 You MUST return a complete verified derivation in verifiedSolution.
 
 Type: ${type}
+Exam: ${examLabel}
 Chapter: ${q._chapter || q.chapter || ""}
 STEM:
 ${q.questionText}
@@ -363,7 +411,7 @@ export const o3VerifyCompact = async (q, type, ctx) => {
           effort: getSolverEffort(),
           timeoutMs: getSolverTimeoutMs(),
           maxTokens: getSolverMaxTokens(),
-          prompt: buildO3SolvePrompt(q, type),
+          prompt: buildO3SolvePrompt(q, type, ctx),
           developerHint:
             "Return ONLY JSON. Independently solve. verifiedSolution is mandatory and must derive independentAnswer.",
           pipelineLog: ctx.pipelineLog,
@@ -634,7 +682,13 @@ export const runParallelPaperPipeline = async ({
     stampTrust,
   } = deps;
 
-  const ctx = { pipelineLog, recordUsage, jobId };
+  const ctx = {
+    pipelineLog,
+    recordUsage,
+    jobId,
+    examType: config?.examType,
+    examLabel: config?.examLabel,
+  };
   const expectedTotal =
     plan.totalQuestions ||
     Object.values(plan.typeCounts || {}).reduce(
@@ -722,8 +776,15 @@ export const runParallelPaperPipeline = async ({
               slots: [seat.slot],
               subject: item.subject,
               excludeTexts,
+              examType: config?.examType,
+              examLabel: config?.examLabel,
             });
-            return part[0] || null;
+            const q = part[0] || null;
+            if (q) {
+              q._examType = config?.examType;
+              q._examLabel = config?.examLabel;
+            }
+            return q;
           },
           { label: `gemini_generate_seq_${seqNum}`, pipelineLog }
         );

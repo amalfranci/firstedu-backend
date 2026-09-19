@@ -226,7 +226,7 @@
       "priority": "medium",
       "cluster": "trig",
       "hardSlotCount": 3,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "M13": {
       "weight": 0.85,
@@ -296,7 +296,7 @@
       "priority": "medium",
       "cluster": "physical",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "C04": {
       "weight": 0.84,
@@ -345,7 +345,7 @@
       "priority": "medium",
       "cluster": "physical",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "C11": {
       "weight": 0.28,
@@ -415,7 +415,7 @@
       "priority": "medium",
       "cluster": "inorganic",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "C21": {
       "weight": 0.88,
@@ -536,6 +536,51 @@
       "lastUsedPaper": 1
     },
     "Q03": {
+      "lastUsedPaper": 1
+    },
+    "X01": {
+      "lastUsedPaper": 1
+    },
+    "X02": {
+      "lastUsedPaper": 1
+    },
+    "X03": {
+      "lastUsedPaper": 1
+    },
+    "X04": {
+      "lastUsedPaper": 1
+    },
+    "X05": {
+      "lastUsedPaper": 1
+    },
+    "X06": {
+      "lastUsedPaper": 1
+    },
+    "X07": {
+      "lastUsedPaper": 1
+    },
+    "X08": {
+      "lastUsedPaper": 1
+    },
+    "X09": {
+      "lastUsedPaper": 1
+    },
+    "X10": {
+      "lastUsedPaper": 1
+    },
+    "X11": {
+      "lastUsedPaper": 1
+    },
+    "M20": {
+      "lastUsedPaper": 1
+    },
+    "X12": {
+      "lastUsedPaper": 1
+    },
+    "X13": {
+      "lastUsedPaper": 1
+    },
+    "X14": {
       "lastUsedPaper": 1
     }
   }
