@@ -42,15 +42,28 @@ jobs:
 
             echo "${{ secrets.ENV_FILE }}" > .env
 
+            # Paper jobs write under temp/; keep dirs so worker can claim/persist.
+            mkdir -p temp/paper-jobs temp/generation-jobs temp/confirmed-questions
+
             npm install
 
+            # API process (enqueues paper jobs when PAPER_JOB_RUNNER=worker)
             if pm2 describe backend > /dev/null; then
-              pm2 restart backend
+              pm2 restart backend --update-env
             else
               pm2 start src/server.js --name backend
             fi
 
+            # Dedicated paper worker — required when PAPER_JOB_RUNNER=worker
+            # (API alone will leave jobs stuck in pending forever).
+            if pm2 describe paper-worker > /dev/null; then
+              pm2 restart paper-worker --update-env
+            else
+              pm2 start scripts/paper-job-worker.mjs --name paper-worker
+            fi
+
             pm2 save
+            pm2 status
 
             sudo systemctl restart nginx
 
