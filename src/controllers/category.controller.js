@@ -187,7 +187,12 @@ export const resolveCategoryPathForStudent = asyncHandler(async (req, res) => {
     }, "Root level fetched"));
   }
 
-  const slugs = path.split('/').filter(Boolean);
+  let cleanPath = String(path || "");
+  try {
+    cleanPath = decodeURIComponent(cleanPath);
+  } catch (_) {}
+  cleanPath = cleanPath.replace(/%2f/gi, "/");
+  const slugs = cleanPath.split("/").filter(Boolean);
   let currentLayer = root ? root.children : [];
   let currentNode = null;
   const breadcrumb = [];
