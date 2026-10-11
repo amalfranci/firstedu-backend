@@ -157,12 +157,21 @@ export const resolveCategoryPathForStudent = asyncHandler(async (req, res) => {
   const tree = await categoryService.getCategoriesForStudent({ rootType, format: "tree" });
   const root = tree[0];
 
+  // Helper to ensure draft subcategories are omitted for students
+  const isPublicCategory = (node) => {
+    if (!node) return false;
+    const s = String(node.status || "").trim().toLowerCase();
+    if (s === "draft" || s === "private") return false;
+    return true;
+  };
+
   if (!path) {
-    // If no path, return root level children
-    const immediateChildren = root && root.children ? root.children.map(c => {
+    // If no path, return root level public children
+    const rawChildren = (root && root.children ? root.children : []).filter(isPublicCategory);
+    const immediateChildren = rawChildren.map(c => {
       const obj = c.toObject ? c.toObject() : { ...c };
-      const childNodes = obj.children || [];
-      const isSecondSubcategory = childNodes.length > 0 && childNodes.every(child => !child.children || child.children.length === 0);
+      const childNodes = (obj.children || []).filter(isPublicCategory);
+      const isSecondSubcategory = childNodes.length > 0 && childNodes.every(child => !child.children || (child.children || []).filter(isPublicCategory).length === 0);
 
       const { children, ...rest } = obj;
       rest.childCount = childNodes.length;
@@ -170,7 +179,7 @@ export const resolveCategoryPathForStudent = asyncHandler(async (req, res) => {
       rest.isSecondSubcategory = isSecondSubcategory;
       rest.slug = normalizeCategorySlug(rest.name);
       return stripDeprecatedFields(rest);
-    }) : [];
+    });
 
     const studentId = req.user?._id;
     let enrichedChildren = immediateChildren;
@@ -193,7 +202,7 @@ export const resolveCategoryPathForStudent = asyncHandler(async (req, res) => {
   } catch (_) {}
   cleanPath = cleanPath.replace(/%2f/gi, "/");
   const slugs = cleanPath.split("/").filter(Boolean);
-  let currentLayer = root ? root.children : [];
+  let currentLayer = root ? (root.children || []).filter(isPublicCategory) : [];
   let currentNode = null;
   const breadcrumb = [];
 
@@ -202,7 +211,7 @@ export const resolveCategoryPathForStudent = asyncHandler(async (req, res) => {
     const rawLowerSlug = slug.toLowerCase().trim();
 
     const found = currentLayer.find((n) => {
-      if (!n) return false;
+      if (!n || !isPublicCategory(n)) return false;
       const nId = n._id ? n._id.toString() : "";
       if (nId && (nId === slug || nId === rawLowerSlug)) return true;
 
@@ -221,7 +230,7 @@ export const resolveCategoryPathForStudent = asyncHandler(async (req, res) => {
     }
 
     currentNode = found;
-    currentLayer = found.children || [];
+    currentLayer = (found.children || []).filter(isPublicCategory);
     const canonicalSlug = normalizeCategorySlug(found.name) || slug;
     breadcrumb.push({ _id: found._id, name: found.name, slug: canonicalSlug });
   }
@@ -229,8 +238,8 @@ export const resolveCategoryPathForStudent = asyncHandler(async (req, res) => {
   // Optimize payload: Strip deep children off to ensure network responsiveness
   const immediateChildren = currentLayer.map(child => {
     const obj = child.toObject ? child.toObject() : { ...child };
-    const childNodes = obj.children || [];
-    const isSecondSubcategory = childNodes.length > 0 && childNodes.every(c => !c.children || c.children.length === 0);
+    const childNodes = (obj.children || []).filter(isPublicCategory);
+    const isSecondSubcategory = childNodes.length > 0 && childNodes.every(c => !c.children || (c.children || []).filter(isPublicCategory).length === 0);
 
     const { children, ...rest } = obj; // rip out nested children safely
     rest.childCount = childNodes.length;
@@ -244,10 +253,13 @@ export const resolveCategoryPathForStudent = asyncHandler(async (req, res) => {
   let enrichedChildren = immediateChildren;
   let enrichedNode = currentNode ? currentNode.toObject ? currentNode.toObject() : { ...currentNode } : null;
 
+  if (enrichedNode && !isPublicCategory(enrichedNode)) {
+    return res.status(404).json(ApiResponse.error({}, "Path not found"));
+  }
+
   if (studentId) {
     // Bulk: 2 fixed DB queries instead of N×5
     enrichedChildren = await resolveBulkAccessStatus(studentId, immediateChildren, tree);
-
 
     if (enrichedNode) {
       const status = await resolveAccessStatus(studentId, enrichedNode._id);
