@@ -195,12 +195,11 @@ const connectDB = async () => {
     } else {
       console.log(`ℹ️ JEE Advanced papers already seeded (${existingAdvanced}). Skipping.`);
     }
-    const existingNeet = await NeetCompetitivePaper.countDocuments();
-    if (existingNeet === 0) {
-      await seedNeetCompetitivePapers({ replace: true });
-    } else {
-      console.log(`ℹ️ NEET papers already seeded (${existingNeet}). Skipping.`);
-    }
+    // NEET competitive papers auto-seeding disabled (removed per user request)
+    // const existingNeet = await NeetCompetitivePaper.countDocuments();
+    // if (existingNeet === 0) {
+    //   await seedNeetCompetitivePapers({ replace: true });
+    // }
     const existingClat = await ClatCompetitivePaper.countDocuments();
     if (existingClat === 0) {
       await seedClatCompetitivePapers({ replace: true });

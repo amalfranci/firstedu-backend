@@ -672,7 +672,9 @@ export const getCategoriesForStudent = async (options = {}) => {
         } else if (node.discountedPrice !== null && node.discountedPrice !== undefined) {
           // Admin set a specific node-level discount. It overrides global offer completely.
           node.originalPrice = basePrice;
-          node.effectivePrice = node.discountedPrice;
+          const dp = Math.round(Number(node.discountedPrice) || 0);
+          node.discountedPrice = dp;
+          node.effectivePrice = dp;
         } else if (activeOffer) {
           let discountAmount = 0;
           if (activeOffer.discountType === "percentage") {
@@ -682,9 +684,9 @@ export const getCategoriesForStudent = async (options = {}) => {
           }
           const discountedPrice = Math.max(0, basePrice - discountAmount);
           node.originalPrice = basePrice;
-          node.discountedPrice = discountedPrice;
-          node.effectivePrice = discountedPrice;
-          node.discountAmount = discountAmount;
+          node.discountedPrice = Math.round(discountedPrice);
+          node.effectivePrice = Math.round(discountedPrice);
+          node.discountAmount = Math.round(discountAmount);
           node.appliedOffer = {
             _id: activeOffer._id,
             offerName: activeOffer.offerName,
@@ -786,7 +788,14 @@ export const updateCategoryPricing = async (id, updateData) => {
   const existing = await categoryRepository.findById(id);
   if (!existing) throw new ApiError(404, "Category not found");
   // Permitting editing of price, offer, coupon even when purchased
-  return await categoryRepository.updateById(id, updateData);
+  const payload = { ...updateData };
+  if (payload.price !== undefined && payload.price !== null) {
+    payload.price = Math.round(Number(payload.price) || 0);
+  }
+  if (payload.discountedPrice !== undefined && payload.discountedPrice !== null) {
+    payload.discountedPrice = Math.round(Number(payload.discountedPrice) || 0);
+  }
+  return await categoryRepository.updateById(id, payload);
 };
 
 export const getNodeWithEffectivePrice = async (id) => {
@@ -802,7 +811,7 @@ export const getNodeWithEffectivePrice = async (id) => {
 
   if (obj.discountedPrice !== null && obj.discountedPrice !== undefined) {
     // Admin set a specific node-level discount. It overrides global offer completely.
-    obj.effectivePrice = obj.discountedPrice;
+    obj.effectivePrice = Math.round(Number(obj.discountedPrice) || 0);
     return obj;
   }
 

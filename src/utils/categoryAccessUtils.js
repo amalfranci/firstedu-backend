@@ -72,14 +72,14 @@ const getEffectivePrice = async (category) => {
     } else {
       discountAmount = Math.min(activeOffer.discountValue, basePrice);
     }
-    return Math.max(0, basePrice - discountAmount);
+    return Math.round(Math.max(0, basePrice - discountAmount));
   }
 
   // Fallback to static discount or base price
   if (category.discountedPrice !== null && category.discountedPrice !== undefined) {
-    return category.discountedPrice;
+    return Math.round(category.discountedPrice);
   }
-  return basePrice;
+  return Math.round(basePrice);
 };
 
 // ─── Core Export ─────────────────────────────────────────────────────────────
@@ -154,15 +154,15 @@ export const resolveAccessStatus = async (studentId, categoryId) => {
   const viewedCategory = catIdStr === purchasedCategoryId
     ? purchasedCategory
     : await Category.findById(categoryId).lean();
-  const currentPrice = await getEffectivePrice(viewedCategory ?? purchasedCategory);
+  const currentPrice = Math.round(await getEffectivePrice(viewedCategory ?? purchasedCategory));
 
-  const paidSoFar = purchase.purchasePrice || 0;
+  const paidSoFar = Math.round(purchase.purchasePrice || 0);
 
   // ── 4. Determine price diff ───────────────────────────────────────────────
   // If diff <= 0 (price unchanged or admin actually lowered it) → free upgrade.
   // If diff > 0 → student owes the difference to unlock NEW content.
   const priceDiff = currentPrice - paidSoFar;
-  const upgradeCost = Math.max(0, priceDiff); // never negative
+  const upgradeCost = Math.round(Math.max(0, priceDiff)); // never negative
 
   // ── 5. Find newly added descendant categories ─────────────────────────────
   // All current descendants
@@ -329,11 +329,11 @@ export const resolveBulkAccessStatus = async (studentId, nodes, tree) => {
       // ── Price comparison against the VIEWED node's own price ───────────────
       // node IS the viewed child (class1, bio etc.) — effectivePrice already enriched
       // by getCategoriesForStudent enrichNode(), no extra DB call needed.
-      const currentPrice = node.effectivePrice ?? node.price ?? 0;
+      const currentPrice = Math.round(node.effectivePrice ?? node.price ?? 0);
 
-      const paidSoFar = purchase.purchasePrice || 0;
+      const paidSoFar = Math.round(purchase.purchasePrice || 0);
       const priceDiff = currentPrice - paidSoFar;
-      const upgradeCost = Math.max(0, priceDiff);
+      const upgradeCost = Math.round(Math.max(0, priceDiff));
 
       // ── Descendant IDs: from in-memory tree (no recursive DB calls) ─────────
       const nodeInTree = findNodeInTree(catIdStr, tree);
