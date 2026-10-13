@@ -88,7 +88,7 @@ export const initiatePurchase = async (categoryId, studentId, paymentMethod, opt
       const discountAmount = resolvedOffer.discountType === "percentage" 
         ? (price * resolvedOffer.discountValue) / 100 
         : Math.min(resolvedOffer.discountValue, price);
-      amountToCharge = Math.max(0, price - discountAmount);
+      amountToCharge = Math.round(Math.max(0, price - discountAmount));
       appliedOffer = {
         _id: resolvedOffer._id,
         offerName: resolvedOffer.offerName,
@@ -104,7 +104,7 @@ export const initiatePurchase = async (categoryId, studentId, paymentMethod, opt
   // Apply Coupon (if not blocked)
   if (couponCode && String(couponCode).trim() && category.couponPolicy !== "none") {
     const result = await couponService.validateCoupon(couponCode.trim(), amountToCharge, moduleName, categoryId);
-    amountToCharge = Math.max(0, amountToCharge - result.discount);
+    amountToCharge = Math.round(Math.max(0, amountToCharge - result.discount));
     appliedCoupon = { _id: result.coupon._id, code: result.coupon.code, discountType: result.coupon.discountType, discountValue: result.coupon.discountValue };
     couponId = result.coupon._id;
   }
@@ -200,8 +200,8 @@ export const initiatePurchase = async (categoryId, studentId, paymentMethod, opt
       title: category.name,
       appliedOffer,
       appliedCoupon,
-      originalPrice: price,
-      discountedPrice: amountToCharge,
+      originalPrice: Math.round(price),
+      discountedPrice: Math.round(amountToCharge),
     };
   }
 

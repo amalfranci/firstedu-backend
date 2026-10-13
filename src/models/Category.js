@@ -34,10 +34,15 @@ const categorySchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
-    rootType: {
+      rootType: {
       type: String,
       enum: ["Competitive", "School", "Skill Development", "Olympiads", "Gamification", "custom"],
       default: "custom",
+    },
+    status: {
+      type: String,
+      enum: ["Draft", "Public"],
+      default: "Draft",
     },
   },
   {

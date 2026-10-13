@@ -153,8 +153,8 @@ export const resolveCategoryPathForStudent = asyncHandler(async (req, res) => {
     throw new ApiError(400, "rootType is required for path resolution");
   }
 
-  // Get full tree from pricing-enriched service
-  const tree = await categoryService.getCategoriesForStudent({ rootType, format: "tree" });
+  // Get full tree from pricing-enriched service (pruned for student path resolution)
+  const tree = await categoryService.getCategoriesForStudent({ rootType, format: "tree", prune: true });
   const root = tree[0];
 
   // Helper to ensure draft subcategories are omitted for students
@@ -365,7 +365,7 @@ export const getCategoryDetailForStudent = asyncHandler(async (req, res) => {
       "Skill Development": "Skill Development",
     };
     const applicableOn = PILLAR_MAP[result.rootType];
-    const basePrice = Number(result.price) || 0;
+    const basePrice = Math.round(Number(result.price) || 0);
 
     if (applicableOn) {
       let activeOffer = null;
@@ -385,7 +385,9 @@ export const getCategoryDetailForStudent = asyncHandler(async (req, res) => {
       } else if (result.discountedPrice !== null && result.discountedPrice !== undefined) {
         // Admin set a specific node-level discount. It overrides global offer completely.
         result.originalPrice = basePrice;
-        result.effectivePrice = result.discountedPrice;
+        const dp = Math.round(Number(result.discountedPrice) || 0);
+        result.discountedPrice = dp;
+        result.effectivePrice = dp;
       } else if (activeOffer) {
         let discountAmount = 0;
         if (activeOffer.discountType === "percentage") {
@@ -395,9 +397,9 @@ export const getCategoryDetailForStudent = asyncHandler(async (req, res) => {
         }
         const discountedPrice = Math.max(0, basePrice - discountAmount);
         result.originalPrice = basePrice;
-        result.discountedPrice = discountedPrice;
-        result.effectivePrice = discountedPrice;
-        result.discountAmount = discountAmount;
+        result.discountedPrice = Math.round(discountedPrice);
+        result.effectivePrice = Math.round(discountedPrice);
+        result.discountAmount = Math.round(discountAmount);
         result.appliedOffer = {
           _id: activeOffer._id,
           offerName: activeOffer.offerName,

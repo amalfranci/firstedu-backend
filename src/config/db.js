@@ -61,12 +61,11 @@ const connectDB = async () => {
 
     // ✅ Run seeding after connection
     await seedAdmin();
-    const existingJeeMainPapers = await JeeMainCompetitivePaper.countDocuments();
-    if (existingJeeMainPapers === 0) {
-      await seedJeeMainCompetitivePapers({ replace: true });
-    } else {
-      console.log(`ℹ️ JEE Main papers already seeded (${existingJeeMainPapers}). Skipping.`);
-    }
+    // JEE Main competitive papers auto-seeding disabled (removed per user request)
+    // const existingJeeMainPapers = await JeeMainCompetitivePaper.countDocuments();
+    // if (existingJeeMainPapers === 0) {
+    //   await seedJeeMainCompetitivePapers({ replace: true });
+    // }
     const existingSyllabus = await JeeExamSyllabus.countDocuments();
     if (existingSyllabus === 0) {
       await seedJeeExamSyllabus();
@@ -189,47 +188,31 @@ const connectDB = async () => {
         `ℹ️ Exam paper patterns already seeded (advanced=${existingAdvancedPatterns}, main=${existingMainPatterns}, neet=${existingNeetPatterns}, cat=${existingCatPatterns}, gmat=${existingGmatPatterns}, clat=${existingClatPatterns}, ibps=${existingIbpsPatterns}, ssc_cgl_tier1=${existingSscT1Patterns}, ssc_cgl_tier2=${existingSscT2Patterns}, upsc=${existingUpscPatterns}). Skipping.`
       );
     }
-    const existingAdvanced = await JeeAdvancedCompetitivePaper.countDocuments();
-    if (existingAdvanced === 0) {
-      await seedJeeAdvancedCompetitivePapers({ replace: true });
-    } else {
-      console.log(`ℹ️ JEE Advanced papers already seeded (${existingAdvanced}). Skipping.`);
-    }
+    // JEE Advanced competitive papers auto-seeding disabled (removed per user request)
+    // const existingAdvanced = await JeeAdvancedCompetitivePaper.countDocuments();
+    // if (existingAdvanced === 0) {
+    //   await seedJeeAdvancedCompetitivePapers({ replace: true });
+    // }
     // NEET competitive papers auto-seeding disabled (removed per user request)
     // const existingNeet = await NeetCompetitivePaper.countDocuments();
     // if (existingNeet === 0) {
     //   await seedNeetCompetitivePapers({ replace: true });
     // }
-    const existingClat = await ClatCompetitivePaper.countDocuments();
-    if (existingClat === 0) {
-      await seedClatCompetitivePapers({ replace: true });
-    } else {
-      console.log(`ℹ️ CLAT papers already seeded (${existingClat}). Skipping.`);
-    }
-    const existingIbps = await IbpsCompetitivePaper.countDocuments();
-    if (existingIbps === 0) {
-      await seedIbpsCompetitivePapers({ replace: true });
-    } else {
-      console.log(`ℹ️ IBPS papers already seeded (${existingIbps}). Skipping.`);
-    }
-    const existingGmat = await GmatCompetitivePaper.countDocuments();
-    if (existingGmat === 0) {
-      await seedGmatCompetitivePapers({ replace: true });
-    } else {
-      console.log(`ℹ️ GMAT papers already seeded (${existingGmat}). Skipping.`);
-    }
-    const existingSscT1 = await SscCglTier1CompetitivePaper.countDocuments();
-    if (existingSscT1 === 0) await seedSscCglTier1CompetitivePapers({ replace: true });
-    else console.log(`ℹ️ SSC CGL Tier 1 papers already seeded (${existingSscT1}). Skipping.`);
-    const existingSscT2 = await SscCglTier2CompetitivePaper.countDocuments();
-    if (existingSscT2 === 0) await seedSscCglTier2CompetitivePapers({ replace: true });
-    else console.log(`ℹ️ SSC CGL Tier 2 papers already seeded (${existingSscT2}). Skipping.`);
-    const existingUpsc = await UpscCompetitivePaper.countDocuments();
-    if (existingUpsc === 0) await seedUpscCompetitivePapers({ replace: true });
-    else console.log(`ℹ️ UPSC papers already seeded (${existingUpsc}). Skipping.`);
-    const existingCat = await CatCompetitivePaper.countDocuments();
-    if (existingCat === 0) await seedCatCompetitivePapers({ replace: true });
-    else console.log(`ℹ️ CAT papers already seeded (${existingCat}). Skipping.`);
+    // Auto-seeding of competitive papers disabled (removed per user request)
+    // const existingClat = await ClatCompetitivePaper.countDocuments();
+    // if (existingClat === 0) await seedClatCompetitivePapers({ replace: true });
+    // const existingIbps = await IbpsCompetitivePaper.countDocuments();
+    // if (existingIbps === 0) await seedIbpsCompetitivePapers({ replace: true });
+    // const existingGmat = await GmatCompetitivePaper.countDocuments();
+    // if (existingGmat === 0) await seedGmatCompetitivePapers({ replace: true });
+    // const existingSscT1 = await SscCglTier1CompetitivePaper.countDocuments();
+    // if (existingSscT1 === 0) await seedSscCglTier1CompetitivePapers({ replace: true });
+    // const existingSscT2 = await SscCglTier2CompetitivePaper.countDocuments();
+    // if (existingSscT2 === 0) await seedSscCglTier2CompetitivePapers({ replace: true });
+    // const existingUpsc = await UpscCompetitivePaper.countDocuments();
+    // if (existingUpsc === 0) await seedUpscCompetitivePapers({ replace: true });
+    // const existingCat = await CatCompetitivePaper.countDocuments();
+    // if (existingCat === 0) await seedCatCompetitivePapers({ replace: true });
     const existingDeskUsers = await ExamDeskUser.countDocuments();
     if (existingDeskUsers === 0) {
       await seedExamDeskUsers({ replace: true });

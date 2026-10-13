@@ -19,7 +19,7 @@ const findById = async (id, populate = true) => {
   try {
     let q = Category.findById(id);
     if (populate) {
-      q = q.populate("parent", "name order");
+      q = q.populate("parent", "name order status isPredefined");
     }
     return await q;
   } catch (error) {

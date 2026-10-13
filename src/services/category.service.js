@@ -23,12 +23,13 @@ const createChildrenRecursive = async (children, parentId, createdBy, rootType, 
   let order = orderStart;
   for (const child of children) {
     const { name, children: nestedChildren } = child;
+    const defaultStatus = rootType === "Olympiads" ? "Public" : "Draft";
     const payload = {
       name,
       parent: parentId,
       order: order++,
       createdBy,
-      status: child.status || "Draft",
+      status: child.status || defaultStatus,
     };
     if (rootType && rootType !== "custom") {
       payload.rootType = rootType;
@@ -116,13 +117,14 @@ export const createCategory = async (data, createdBy) => {
     resolvedRootType = parentNode.rootType;
   }
 
+  const defaultStatus = resolvedRootType === "Olympiads" ? "Public" : "Draft";
   const payload = {
     name: data.name,
     parent: data.parent || null,
     order: data.order ?? 0,
     createdBy,
     rootType: resolvedRootType,
-    status: data.status || "Draft",
+    status: data.status || defaultStatus,
     ...(data.isPredefined !== undefined && { isPredefined: data.isPredefined }),
   };
 
@@ -166,6 +168,105 @@ export const getCategories = async (options = {}) => {
   options.sortBy = options.sortBy || "createdAt";
   options.sortOrder = options.sortOrder || "asc";
   return await categoryRepository.findAll({}, options);
+};
+
+export const getCategoryIdsWithTests = async () => {
+  const allBankIds = await QuestionBank.find({}).select('categories _id');
+  const allTestBanks = await Test.find({}).select('questionBank categoryId').lean();
+  const bankIdsWithTests = new Set(allTestBanks.map(t => t.questionBank?.toString()).filter(Boolean));
+
+  const categoryIdsWithTests = new Set();
+  allBankIds.forEach(qb => {
+    if (bankIdsWithTests.has(qb._id.toString())) {
+      (qb.categories || []).forEach(cid => categoryIdsWithTests.add(cid.toString()));
+    }
+  });
+  allTestBanks.forEach(test => {
+    if (test.categoryId) {
+      categoryIdsWithTests.add(test.categoryId.toString());
+    }
+  });
+  return categoryIdsWithTests;
+};
+
+export const syncUpperCategoryStatuses = async (tree, categoryIdsWithTests) => {
+  for (const pillarRoot of tree) {
+    if (!pillarRoot.children?.length) continue;
+    const rootType = pillarRoot.rootType;
+
+    for (const level1 of pillarRoot.children) {
+      if (level1.isPredefined) continue;
+
+      const children = level1.children || [];
+      let isLevel1Active = false;
+
+      if (['School', 'Competitive', 'Olympiads'].includes(rootType)) {
+        // Level 1: Folder (Engineering, Class 10)
+        // Level 2: Exam / Main (JEE Mains, Class 10 Board)
+        // Level 3: Subject Leaf (Chemistry, Physics)
+        for (const exam of children) {
+          const examStatus = String(exam.status || '').toLowerCase();
+          if (examStatus === 'public') {
+            const subjects = exam.children || [];
+            if (subjects.length > 0) {
+              const hasActiveSubject = subjects.some(sub =>
+                String(sub.status || '').toLowerCase() === 'public' &&
+                (categoryIdsWithTests.has(sub._id?.toString?.() || String(sub._id)) || sub.hasTests || sub.hasSeededSubjectPapers)
+              );
+              if (hasActiveSubject) {
+                isLevel1Active = true;
+                break;
+              }
+            } else {
+              if (categoryIdsWithTests.has(exam._id?.toString?.() || String(exam._id)) || exam.hasTests || exam.hasSeededPapers) {
+                isLevel1Active = true;
+                break;
+              }
+            }
+          }
+        }
+      } else {
+        // Skill Development / Other
+        // Level 1: Speed Tests (no edit button)
+        // Level 2: Mathematics (no edit button)
+        // Level 3: Addition, Subtraction (leaves with edit button)
+        for (const child of children) {
+          const isChildLeaf = !child.children || child.children.length === 0;
+          if (isChildLeaf) {
+            const childStatus = String(child.status || '').toLowerCase();
+            if (childStatus === 'public') {
+              if (categoryIdsWithTests.has(child._id?.toString?.() || String(child._id)) || child.hasTests) {
+                isLevel1Active = true;
+              }
+            }
+          } else {
+            // Level 2 has children (e.g. Mathematics -> Addition, Subtraction)
+            // Level 2 in Skill Development has NO edit button, so its status is determined by whether any child leaf is Public with tests!
+            const hasActiveDescendant = (child.children || []).some(leaf =>
+              String(leaf.status || '').toLowerCase() === 'public' &&
+              (categoryIdsWithTests.has(leaf._id?.toString?.() || String(leaf._id)) || leaf.hasTests)
+            );
+
+            const desiredChildStatus = hasActiveDescendant ? 'Public' : 'Draft';
+            if (child.status !== desiredChildStatus) {
+              child.status = desiredChildStatus;
+              await Category.findByIdAndUpdate(child._id, { status: desiredChildStatus });
+            }
+
+            if (hasActiveDescendant) {
+              isLevel1Active = true;
+            }
+          }
+        }
+      }
+
+      const desiredStatus = isLevel1Active ? 'Public' : 'Draft';
+      if (level1.status !== desiredStatus) {
+        level1.status = desiredStatus;
+        await Category.findByIdAndUpdate(level1._id, { status: desiredStatus });
+      }
+    }
+  }
 };
 
 export const getCategoryTree = async (filter = {}) => {
@@ -244,37 +345,15 @@ export const getCategoryTree = async (filter = {}) => {
     }
   }
 
+  // Ensure any Olympiad category/subcategory is always marked Public (since pricing/details editing is disabled for Olympiads)
+  await Category.updateMany(
+    { rootType: "Olympiads", status: { $ne: "Public" } },
+    { $set: { status: "Public" } }
+  );
+
   const fullTree = await categoryRepository.findTree({});
 
-  // Attach hasTests boolean to nodes
-  const allBankIds = await QuestionBank.find({}).select('categories _id');
-  const allTestBanks = await Test.find({}).select('questionBank categoryId').lean();
-  const bankIdsWithTests = new Set(allTestBanks.map(t => t.questionBank?.toString()));
-
-  const categoryIdsWithTests = new Set();
-
-  allBankIds.forEach(qb => {
-    if (bankIdsWithTests.has(qb._id.toString())) {
-      qb.categories.forEach(cid => categoryIdsWithTests.add(cid.toString()));
-    }
-  });
-
-  // Also include direct links where Test natively defines categoryId
-  allTestBanks.forEach(test => {
-    if (test.categoryId) {
-      categoryIdsWithTests.add(test.categoryId.toString());
-    }
-  });
-
-  const attachHasTests = (nodes) => {
-    nodes.forEach(node => {
-      node.hasTests = categoryIdsWithTests.has(node._id.toString());
-      if (node.children?.length) {
-        attachHasTests(node.children);
-      }
-    });
-  };
-  attachHasTests(fullTree);
+  const categoryIdsWithTests = await getCategoryIdsWithTests();
 
   // Competitive: also flag exam nodes that have seeded *CompetitivePaper docs
   // so the pillar taxonomy can hide empty exams / subject leaves without papers.
@@ -293,6 +372,28 @@ export const getCategoryTree = async (filter = {}) => {
       err?.message || err
     );
   }
+
+  const attachHasTests = (nodes) => {
+    nodes.forEach(node => {
+      const isLeaf = !node.children || node.children.length === 0;
+      if (node.children?.length) {
+        attachHasTests(node.children);
+      }
+      if (isLeaf) {
+        node.hasTests = categoryIdsWithTests.has(node._id.toString()) ||
+          Boolean(node.hasSeededSubjectPapers);
+      } else {
+        node.hasTests = categoryIdsWithTests.has(node._id.toString()) ||
+          Boolean(node.hasSeededPapers) ||
+          node.children.some(c => c.hasTests);
+      }
+    });
+  };
+  attachHasTests(fullTree);
+
+  // Automatically determine and sync status for Level 1 folder categories (e.g. Engineering)
+  // that do not have their own edit button.
+  await syncUpperCategoryStatuses(fullTree, categoryIdsWithTests);
 
   if (filter && filter.rootType) {
     const requestedRoot = fullTree.find(n => n.rootType === filter.rootType);
@@ -326,9 +427,43 @@ export const getCategoryById = async (id) => {
     ? childMeta.map((c) => c.name)
     : [];
 
+  const categoryIdsWithTests = await getCategoryIdsWithTests();
+  const directHasTests = categoryIdsWithTests.has(id.toString());
+
+  if (isLeaf) {
+    obj.hasTests = directHasTests;
+  } else {
+    const childDocs = await Category.find({ parent: id }).select('_id status').lean();
+    const publicChildrenWithTests = childDocs.filter(c =>
+      String(c.status || '').toLowerCase() === 'public' &&
+      categoryIdsWithTests.has(c._id.toString())
+    );
+    obj.publicChildrenCount = publicChildrenWithTests.length;
+    obj.hasTests = publicChildrenWithTests.length > 0 || directHasTests;
+  }
+
   obj.isLeaf = isLeaf;
   obj.isSecondSubcategory = isSecondSubcategory;
   obj.linkedSubcategories = linkedSubcategories;
+
+  // ── Enrich: Parent Category Status for Publish Permission check in UI ────────
+  const parentNode = obj.parent
+    ? (typeof obj.parent === 'object' && obj.parent.name
+      ? obj.parent
+      : await Category.findById(obj.parent).select("name status isPredefined").lean())
+    : null;
+  obj.parentCategory = parentNode
+    ? {
+      _id: parentNode._id?.toString?.() || parentNode._id,
+      name: parentNode.name,
+      status: parentNode.status,
+      isPredefined: parentNode.isPredefined,
+    }
+    : null;
+  obj.isParentDraft =
+    parentNode &&
+    !parentNode.isPredefined &&
+    String(parentNode.status || '').toLowerCase() === 'draft';
 
   // ── Enrich: Global pillar-level offer (for Mode A display in UI) ────────────────
   const PILLAR_TO_APPLICABLE_ON = {
@@ -600,18 +735,75 @@ const filterTreeByConnected = (nodes, allowedIds) => {
 };
 
 /**
+ * Prune tree for student UI:
+ * - Omit any node with status "Draft" or "Private"
+ * - Omit any leaf node that has 0 tests associated with it (e.g. Mathematics)
+ * - Omit any parent node that has 0 valid child branches (e.g. Engineering or JEE Mains if no tests under them)
+ */
+export const pruneTreeForStudent = (nodes, categoryIdsWithTests) => {
+  if (!Array.isArray(nodes)) return [];
+  const result = [];
+
+  for (const rawNode of nodes) {
+    const node = rawNode.toObject ? rawNode.toObject() : { ...rawNode };
+    const status = String(node.status || '').trim().toLowerCase();
+
+    // 1. If this node itself is Draft (and not predefined root) -> exclude
+    if (!node.isPredefined && (status === 'draft' || status === 'private')) {
+      continue;
+    }
+
+    // 2. Recursively prune children first (bottom-up)
+    const prunedChildren = (node.children && node.children.length > 0)
+      ? pruneTreeForStudent(node.children, categoryIdsWithTests)
+      : [];
+
+    const isLeaf = !node.children || node.children.length === 0;
+
+    if (isLeaf) {
+      // Leaf node: MUST have tests associated with it!
+      const hasTests = categoryIdsWithTests.has(node._id?.toString?.() || String(node._id)) ||
+        Boolean(node.hasTests) ||
+        Boolean(node.hasSeededSubjectPapers);
+
+      if (!hasTests) {
+        continue; // 0 tests -> pruned! (e.g. Mathematics)
+      }
+      result.push({ ...node, children: [] });
+    } else {
+      // Parent node: MUST have at least 1 valid pruned child!
+      // (Unless it's the top-level predefined root, e.g. Competitive pillar root)
+      if (prunedChildren.length === 0 && !node.isPredefined) {
+        continue; // No valid children -> pruned! (e.g. Engineering or JEE Mains)
+      }
+      result.push({ ...node, children: prunedChildren });
+    }
+  }
+
+  return result;
+};
+
+/**
  * Student-facing: Get all categories (tree) with optional filter by question bank / test / test bundle.
  * linkedTo: "questionBank" | "test" | "testBundle" | "both" | omit = show all
  * - test: only categories used by published tests
  * - testBundle: only categories used by tests that are in an active test bundle
  * - both: union of test + testBundle
  * format: "tree" | "flat"
+ * prune: only true for resolveCategoryPathForStudent (hierarchical path resolution)
  */
 export const getCategoriesForStudent = async (options = {}) => {
-  const { linkedTo, format = "tree", rootType, studentId, isCertification } = options;
+  const { linkedTo, format = "tree", rootType, studentId, isCertification, prune = false } = options;
 
   const filter = rootType ? { rootType } : {};
   let tree = await categoryRepository.findTree(filter);
+
+  // Bottom-up pruning: filter out Draft nodes, 0-test leaves, and empty parent paths
+  // ONLY applied when prune === true (e.g. for resolveCategoryPathForStudent)
+  if (prune) {
+    const categoryIdsWithTests = await getCategoryIdsWithTests();
+    tree = pruneTreeForStudent(tree, categoryIdsWithTests);
+  }
 
   if (linkedTo) {
     const connectedIds = await getConnectedCategoryIds(linkedTo, studentId, isCertification);
@@ -657,7 +849,7 @@ export const getCategoriesForStudent = async (options = {}) => {
     const enrichNode = (node) => {
       if (node.price != null) {
         const basePrice = Number(node.price) || 0;
-        
+
         let activeOffer = null;
         if (node.offerPolicy !== "none") {
           activeOffer = (node.offerOverrideId && overrideMap[node.offerOverrideId.toString()])
@@ -784,6 +976,142 @@ export const updateCategory = async (id, updateData) => {
   return updated;
 };
 
+/**
+ * Automatically syncs the status of ancestor categories up the chain
+ * when a category's status is updated (Draft or Public).
+ *
+ * Rules:
+ * 1. Skill Development:
+ *    - Level 2 (Mathematics) and Level 1 (Speed Tests) have NO edit button.
+ *    - Auto-promotes to 'Public' when any child leaf has tests and is Public.
+ *    - Auto-demotes to 'Draft' ONLY IF ALL sibling leaves are Draft or have 0 tests.
+ * 2. School, Competitive, Olympiads:
+ *    - Level 2 (Class 1, JEE Mains) HAS ITS OWN EDIT BUTTON and pricing.
+ *    - MUST NOT be auto-promoted to 'Public' when a child leaf is published!
+ *      Admin must manually publish Level 2.
+ *    - Auto-demotes to 'Draft' if parent was 'Public' and now has 0 active public subjects with tests.
+ * 3. Level 1 Folders (CBSE, Engineering, Speed Tests):
+ *    - Have no edit button in any pillar.
+ *    - School/Competitive: active ONLY IF at least one Level 2 child is BOTH manually Public AND has active subjects with tests.
+ *    - Skill Development: active if any Level 2 child is Public with tests.
+ */
+export const syncAncestorsStatusOnUpdate = async (nodeId) => {
+  const node = await Category.findById(nodeId).select('_id parent rootType status').lean();
+  if (!node || !node.parent) return;
+
+  const categoryIdsWithTests = await getCategoryIdsWithTests();
+  let currentParentId = node.parent;
+
+  while (currentParentId) {
+    const parent = await Category.findById(currentParentId).select('_id parent rootType status isPredefined').lean();
+    if (!parent || parent.isPredefined) break;
+
+    // Check grandParent to determine if `parent` is Level 1 folder or Level 2 intermediate node
+    const grandParent = parent.parent
+      ? await Category.findById(parent.parent).select('_id isPredefined').lean()
+      : null;
+    const isLevel1 = !grandParent || Boolean(grandParent.isPredefined);
+
+    // Fetch all immediate children of this parent
+    const children = await Category.find({ parent: parent._id }).select('_id status').lean();
+
+    if (isLevel1) {
+      // ── Level 1 Folder (CBSE, Engineering, Speed Tests) ──────────────────────
+      // Level 1 NEVER has an edit button in any pillar. Its status is auto-derived.
+      let isLevel1Active = false;
+
+      if (['School', 'Competitive', 'Olympiads'].includes(parent.rootType)) {
+        // Active ONLY IF at least one Level 2 child is BOTH manually Public AND has active public subjects with tests
+        for (const child of children) {
+          const childStatus = String(child.status || '').toLowerCase();
+          if (childStatus === 'public') {
+            const grandChildren = await Category.find({ parent: child._id }).select('_id status').lean();
+            if (grandChildren.length > 0) {
+              const hasActiveSubject = grandChildren.some(gc =>
+                String(gc.status || '').toLowerCase() === 'public' &&
+                categoryIdsWithTests.has(gc._id.toString())
+              );
+              if (hasActiveSubject) {
+                isLevel1Active = true;
+                break;
+              }
+            } else {
+              // Direct leaf test under exam
+              if (categoryIdsWithTests.has(child._id.toString())) {
+                isLevel1Active = true;
+                break;
+              }
+            }
+          }
+        }
+      } else {
+        // Skill Development / Other
+        // Active if any child (or descendant leaf) is Public with tests
+        for (const child of children) {
+          const childStatus = String(child.status || '').toLowerCase();
+          const grandChildren = await Category.find({ parent: child._id }).select('_id status').lean();
+          if (grandChildren.length === 0) {
+            if (childStatus === 'public' && categoryIdsWithTests.has(child._id.toString())) {
+              isLevel1Active = true;
+              break;
+            }
+          } else {
+            const hasActiveDescendant = grandChildren.some(gc =>
+              String(gc.status || '').toLowerCase() === 'public' &&
+              categoryIdsWithTests.has(gc._id.toString())
+            );
+            if (hasActiveDescendant) {
+              isLevel1Active = true;
+              break;
+            }
+          }
+        }
+      }
+
+      const desiredStatus = isLevel1Active ? 'Public' : 'Draft';
+      if (parent.status !== desiredStatus) {
+        parent.status = desiredStatus;
+        await Category.findByIdAndUpdate(parent._id, { status: desiredStatus });
+      }
+    } else {
+      // ── Level 2 Node (Class 1, JEE Mains, Mathematics) ──────────────────────
+      // Check if any child leaf has tests and is Public
+      let hasActiveChildLeaf = false;
+      for (const child of children) {
+        const childStatus = String(child.status || '').toLowerCase();
+        if (childStatus === 'public' && categoryIdsWithTests.has(child._id.toString())) {
+          hasActiveChildLeaf = true;
+          break;
+        }
+      }
+
+      if (parent.rootType === 'Skill Development') {
+        // In Skill Development, Level 2 (Mathematics) has NO edit button.
+        // It strictly auto-syncs with its leaves!
+        const desiredStatus = hasActiveChildLeaf ? 'Public' : 'Draft';
+        if (parent.status !== desiredStatus) {
+          parent.status = desiredStatus;
+          await Category.findByIdAndUpdate(parent._id, { status: desiredStatus });
+        }
+      } else {
+        // In School, Competitive, Olympiads:
+        // Level 2 (Class 1, JEE Mains) HAS ITS OWN EDIT BUTTON!
+        // Admin must manually publish Level 2.
+        // Rule: NEVER auto-promote from 'Draft' to 'Public'!
+        // Downside Draft Rule: If parent was 'Public' but now has 0 active children with tests,
+        // it auto-demotes to 'Draft'.
+        if (parent.status === 'Public' && !hasActiveChildLeaf) {
+          parent.status = 'Draft';
+          await Category.findByIdAndUpdate(parent._id, { status: 'Draft' });
+        }
+        // If parent is 'Draft', it REMAINS 'Draft' (do NOT auto-promote to 'Public'!)
+      }
+    }
+
+    currentParentId = parent.parent;
+  }
+};
+
 export const updateCategoryPricing = async (id, updateData) => {
   const existing = await categoryRepository.findById(id);
   if (!existing) throw new ApiError(404, "Category not found");
@@ -795,7 +1123,44 @@ export const updateCategoryPricing = async (id, updateData) => {
   if (payload.discountedPrice !== undefined && payload.discountedPrice !== null) {
     payload.discountedPrice = Math.round(Number(payload.discountedPrice) || 0);
   }
-  return await categoryRepository.updateById(id, payload);
+
+  // ── Validation when publishing ──────────────────────────────────────────────
+  if (payload.status === "Public") {
+    const categoryIdsWithTests = await getCategoryIdsWithTests();
+    const children = await Category.find({ parent: id }).select('_id status').lean();
+    const isLeaf = children.length === 0;
+
+    if (isLeaf) {
+      const hasTests = categoryIdsWithTests.has(id.toString());
+      if (!hasTests) {
+        throw new ApiError(
+          400,
+          `Cannot publish "${existing.name}" because no tests or papers are associated with it. Please add at least 1 test before publishing.`
+        );
+      }
+    } else {
+      // Exam / class node (e.g. JEE Mains): must have at least 1 child subject that is Public with tests
+      const hasPublicChildWithTests = children.some(c =>
+        String(c.status || '').toLowerCase() === 'public' &&
+        categoryIdsWithTests.has(c._id.toString())
+      );
+      if (!hasPublicChildWithTests) {
+        throw new ApiError(
+          400,
+          `Cannot publish "${existing.name}" because none of its child subcategories are published with tests. Please publish at least one child subject first.`
+        );
+      }
+    }
+  }
+
+  const updated = await categoryRepository.updateById(id, payload);
+
+  // Status cascade / auto-decision logic
+  if (payload.status) {
+    await syncAncestorsStatusOnUpdate(id);
+  }
+
+  return updated;
 };
 
 export const getNodeWithEffectivePrice = async (id) => {
@@ -864,6 +1229,10 @@ export default {
   getCategoryById,
   getChildren,
   getCategoriesForStudent,
+  getCategoryIdsWithTests,
+  pruneTreeForStudent,
+  syncUpperCategoryStatuses,
+  syncAncestorsStatusOnUpdate,
   updateCategory,
   updateCategoryPricing,
   getNodeWithEffectivePrice,
