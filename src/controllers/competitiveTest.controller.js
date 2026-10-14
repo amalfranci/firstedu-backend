@@ -20,7 +20,7 @@ export const getCompetitiveTests = asyncHandler(async (req, res) => {
     categoryId,
     page,
     limit,
-    includeSeededPapers: true,
+    includeSeededPapers: false,
     overview: overview === "true" || overview === "1",
   });
   return res.status(200).json(ApiResponse.success(result.tests, "Competitive tests fetched successfully", result.pagination));
