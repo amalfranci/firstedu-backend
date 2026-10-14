@@ -432,6 +432,12 @@ export const getCategoryById = async (id) => {
 
   if (isLeaf) {
     obj.hasTests = directHasTests;
+    // Auto-demote to Draft if a leaf has 0 tests but is currently Public in the database
+    if (!directHasTests && String(obj.status || '').toLowerCase() === 'public') {
+      obj.status = 'Draft';
+      await Category.findByIdAndUpdate(id, { status: 'Draft' });
+      await syncAncestorsStatusOnUpdate(id);
+    }
   } else {
     const childDocs = await Category.find({ parent: id }).select('_id status').lean();
     const publicChildrenWithTests = childDocs.filter(c =>
@@ -1222,6 +1228,52 @@ export const deleteCategory = async (id, cascade = true) => {
   return await categoryRepository.deleteById(id);
 };
 
+/**
+ * Automatically demotes a subcategory to 'Draft' when its last test is deleted.
+ * Also cascades status check up to ancestors via syncAncestorsStatusOnUpdate.
+ */
+export const syncCategoryAfterTestDeleted = async (doc) => {
+  if (!doc) return;
+  try {
+    const targetCategoryIds = new Set();
+    if (doc.categoryId) {
+      targetCategoryIds.add(doc.categoryId.toString());
+    }
+    if (doc.questionBank) {
+      const qb = await QuestionBank.findById(doc.questionBank).select('categories').lean();
+      if (qb?.categories?.length) {
+        qb.categories.forEach(cid => targetCategoryIds.add(cid.toString()));
+      }
+    }
+
+    if (targetCategoryIds.size === 0) return;
+
+    for (const cid of targetCategoryIds) {
+      const hasDirectTest = await Test.exists({ categoryId: cid });
+      let hasBankTest = false;
+      if (!hasDirectTest) {
+        const banksWithCategory = await QuestionBank.find({ categories: cid }).select('_id').lean();
+        if (banksWithCategory.length > 0) {
+          const bankIds = banksWithCategory.map(b => b._id);
+          hasBankTest = await Test.exists({ questionBank: { $in: bankIds } });
+        }
+      }
+
+      const hasRemainingTests = Boolean(hasDirectTest || hasBankTest);
+
+      if (!hasRemainingTests) {
+        const cat = await Category.findById(cid).select('_id status').lean();
+        if (cat && String(cat.status || '').toLowerCase() === 'public') {
+          await Category.findByIdAndUpdate(cid, { status: 'Draft' });
+        }
+        await syncAncestorsStatusOnUpdate(cid);
+      }
+    }
+  } catch (err) {
+    console.error('syncCategoryAfterTestDeleted error:', err);
+  }
+};
+
 export default {
   createCategory,
   getCategories,
@@ -1233,6 +1285,7 @@ export default {
   pruneTreeForStudent,
   syncUpperCategoryStatuses,
   syncAncestorsStatusOnUpdate,
+  syncCategoryAfterTestDeleted,
   updateCategory,
   updateCategoryPricing,
   getNodeWithEffectivePrice,

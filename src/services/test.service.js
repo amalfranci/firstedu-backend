@@ -4,6 +4,7 @@ import questionBankRepository from "../repository/questionBank.repository.js";
 import aiQuestionBankRepository from "../repository/aiQuestionBank.repository.js";
 import orderRepository from "../repository/order.repository.js";
 import TestPurchase from "../models/TestPurchase.js";
+import ExamSession from "../models/ExamSession.js";
 import {
   uploadImageToCloudinary,
   deleteFileFromCloudinary,
@@ -148,13 +149,26 @@ export const getTestById = async (id) => {
   }
   await enrichTestsWithBankStats(test);
 
-  // Attach isPurchased so the frontend can lock core fields
-  const purchase = await TestPurchase.exists({
-    test: test._id,
-    paymentStatus: "completed",
-  });
-  test.isPurchased = !!purchase;
-  if (test._doc) test._doc.isPurchased = !!purchase;
+  // Attach isPurchased and hasAttempts so the frontend can handle locking appropriately
+  const [purchase, session] = await Promise.all([
+    TestPurchase.exists({
+      test: test._id,
+      paymentStatus: "completed",
+    }),
+    ExamSession.exists({
+      test: test._id,
+    }),
+  ]);
+
+  const isPurchased = !!purchase;
+  const hasAttempts = !!session;
+
+  test.isPurchased = isPurchased;
+  test.hasAttempts = hasAttempts;
+  if (test._doc) {
+    test._doc.isPurchased = isPurchased;
+    test._doc.hasAttempts = hasAttempts;
+  }
 
   return test;
 };
@@ -167,27 +181,21 @@ export const updateTest = async (id, data, file) => {
   const existing = await testRepository.findTestById(id);
   if (!existing) throw new ApiError(404, "Test not found");
 
-  // Check if this test has been purchased by any student
-  const isPurchased = !!(await TestPurchase.exists({
+  // Check if any student has attempted this test
+  const hasAttempts = !!(await ExamSession.exists({
     test: id,
-    paymentStatus: "completed",
   }));
 
-  // Block changing questionBank or durationMinutes if test is purchased
-  if (isPurchased) {
+  // Block changing durationMinutes only if one or more students have already attempted this test
+  if (hasAttempts) {
     if (
-      (Object.prototype.hasOwnProperty.call(data, "questionBank") &&
-        String(data.questionBank) !==
-          String(existing.questionBank?._id ?? existing.questionBank)) ||
-      (Object.prototype.hasOwnProperty.call(data, "aiQuestionBank") &&
-        String(data.aiQuestionBank) !==
-          String(existing.aiQuestionBank?._id ?? existing.aiQuestionBank))
+      Object.prototype.hasOwnProperty.call(data, "durationMinutes") &&
+      Number(data.durationMinutes) !== Number(existing.durationMinutes)
     ) {
-      throw new ApiError(400, "Cannot change Question Bank: this test has already been purchased by a student.");
-    }
-    if (Object.prototype.hasOwnProperty.call(data, "durationMinutes") &&
-      Number(data.durationMinutes) !== Number(existing.durationMinutes)) {
-      throw new ApiError(400, "Cannot change Duration: this test has already been purchased by a student.");
+      throw new ApiError(
+        400,
+        "Cannot change Duration: one or more students have already attempted this test."
+      );
     }
   }
 

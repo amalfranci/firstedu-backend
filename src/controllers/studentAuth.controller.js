@@ -146,21 +146,24 @@ export const login = asyncHandler(async (req, res) => {
     );
   }
 
+  const fcmTokenValue = (fcmToken && fcmToken.trim()) ? fcmToken.trim() : null;
+
   if (alreadyLoggedInElsewhere && forceLogin && existingSession.fcmToken) {
-    try {
-      await sendDataOnlyToDevice(existingSession.fcmToken, {
-        type: "FORCE_LOGOUT",
-        reason: "logged_in_elsewhere",
-      });
-    } catch (err) {
-      console.error("FCM force-logout notification failed:", err);
+    if (!fcmTokenValue || existingSession.fcmToken !== fcmTokenValue) {
+      try {
+        await sendDataOnlyToDevice(existingSession.fcmToken, {
+          type: "FORCE_LOGOUT",
+          reason: "logged_in_elsewhere",
+        });
+      } catch (err) {
+        console.error("FCM force-logout notification failed in login:", err);
+      }
     }
   }
 
   await studentSessionRepository.deleteByStudentId(student._id);
 
   const userAgent = req.get("user-agent") || null;
-  const fcmTokenValue = (fcmToken && fcmToken.trim()) ? fcmToken.trim() : null;
 
   const session = await studentSessionRepository.create({
     student: student._id,
@@ -272,11 +275,25 @@ export const verifyLoginOtp = asyncHandler(async (req, res) => {
     throw new ApiError(403, "You are banned by the admin");
   }
 
-  // 4. Session management (same as regular login)
-  await studentSessionRepository.deleteByStudentId(student._id);
-
+  // 4. Session management (same as regular login - notify previous device to force logout)
+  const existingSession = await studentSessionRepository.findByStudentId(student._id);
   const userAgent = req.get("user-agent") || null;
   const fcmTokenValue = (fcmToken && fcmToken.trim()) ? fcmToken.trim() : null;
+
+  if (existingSession && existingSession.fcmToken) {
+    if (!fcmTokenValue || existingSession.fcmToken !== fcmTokenValue) {
+      try {
+        await sendDataOnlyToDevice(existingSession.fcmToken, {
+          type: "FORCE_LOGOUT",
+          reason: "logged_in_elsewhere",
+        });
+      } catch (err) {
+        console.error("FCM force-logout notification failed in verifyLoginOtp:", err);
+      }
+    }
+  }
+
+  await studentSessionRepository.deleteByStudentId(student._id);
 
   const session = await studentSessionRepository.create({
     student: student._id,

@@ -133,4 +133,14 @@ testSchema.pre("validate", function validateBankLink(next) {
   next();
 });
 
+testSchema.post("findOneAndDelete", async function (doc) {
+  if (!doc) return;
+  try {
+    const { syncCategoryAfterTestDeleted } = await import("../services/category.service.js");
+    await syncCategoryAfterTestDeleted(doc);
+  } catch (err) {
+    console.error("Test post findOneAndDelete category sync error:", err);
+  }
+});
+
 export default mongoose.models.Test || mongoose.model("Test", testSchema);
