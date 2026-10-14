@@ -304,33 +304,9 @@ export const seedJeeMainCompetitivePapers = async ({ replace = true } = {}) => {
       await JeeMainCompetitiveQuestion.insertMany(questionDocs);
     }
 
-    const test = await Test.findOneAndUpdate(
-      { jeeMainPaper: paper._id },
-      {
-        $set: {
-          title: spec.title,
-          description: `${spec.title} fetched from the JEE Main competitive question table.`,
-          jeeMainPaper: paper._id,
-          questionBank: null,
-          aiQuestionBank: null,
-          paperSource: "jee_main_db",
-          categoryId: jeeMain._id,
-          applicableFor: "Competitive",
-          durationMinutes: 180,
-          price: 0,
-          isPublished: true,
-          createdBy: admin._id,
-          passingPercentage: 0,
-          rewardPoints: 0,
-        },
-      },
-      { upsert: true, new: true, setDefaultsOnInsert: true, runValidators: true }
-    );
-
     results.push({
       paperKey: spec.paperKey,
       paperId: paper._id,
-      testId: test._id,
       questions: questionDocs.length,
     });
     console.log(

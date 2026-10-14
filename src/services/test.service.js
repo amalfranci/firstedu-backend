@@ -14,7 +14,6 @@ import {
   sendTestEditNotification,
 } from "./notification.service.js";
 import { ensureUniqueTestTitle } from "../utils/testValidationUtils.js";
-import { alignCompetitiveTestCategory } from "./competitiveTest.service.js";
 
 const TESTS_IMAGE_FOLDER = "tests";
 
@@ -37,8 +36,6 @@ export const createTest = async (data, adminId, file) => {
   } else {
     throw new ApiError(400, "Test must link a question bank");
   }
-
-  await alignCompetitiveTestCategory(data);
 
   let imageUrl = null;
   if (file?.buffer?.length) {
@@ -230,27 +227,6 @@ export const updateTest = async (id, data, file) => {
     const bank = await aiQuestionBankRepository.findById(data.aiQuestionBank);
     if (!bank) throw new ApiError(404, "AI question bank not found");
     data.questionBank = null;
-  }
-
-  const alignInput = {
-    categoryId: data.categoryId || existing.categoryId,
-    questionBank:
-      data.questionBank ||
-      (!data.aiQuestionBank
-        ? existing.questionBank?._id || existing.questionBank
-        : undefined),
-    aiQuestionBank:
-      data.aiQuestionBank ||
-      (!data.questionBank
-        ? existing.aiQuestionBank?._id || existing.aiQuestionBank
-        : undefined),
-  };
-  if (
-    existing.applicableFor === "Competitive" ||
-    data.applicableFor === "Competitive"
-  ) {
-    await alignCompetitiveTestCategory(alignInput);
-    if (alignInput.categoryId) data.categoryId = alignInput.categoryId;
   }
 
   if (file) {
