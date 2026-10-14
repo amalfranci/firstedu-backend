@@ -1,6 +1,7 @@
 import { Router } from "express";
 
 import { verifyJWT } from "../middleware/auth.middleware.js";
+import { verifyAdminRbac } from "../middleware/adminRbac.middleware.js";
 import { attachAiPoweredTestExamContext } from "../middleware/aiPoweredTestExamContext.middleware.js";
 import { listAiPoweredTestExamTopics } from "../controllers/aiPoweredTestExamTopics.controller.js";
 import { getAiPoweredTestExamBlueprintController } from "../controllers/aiPoweredTestExamBlueprint.controller.js";
@@ -46,6 +47,7 @@ import { asyncHandler } from "../utils/asyncHandler.js";
 const router = Router();
 
 router.use(verifyJWT);
+router.use(verifyAdminRbac);
 
 router.get("/exam-topics", listAiPoweredTestExamTopics);
 router.get("/exam-blueprint", getAiPoweredTestExamBlueprintController);

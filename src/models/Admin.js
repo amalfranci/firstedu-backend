@@ -6,7 +6,16 @@ const adminSchema = new mongoose.Schema({
   name: { type: String, required: true, trim: true },
   email: { type: String, required: true, unique: true, lowercase: true, trim: true },
   password: { type: String, required: true },
-  userType: { type: String, required: true, },
+  userType: { type: String, required: true, default: 'Admin' },
+  role: {
+    type: String,
+    enum: ['superadmin', 'admin', 'subadmin'],
+    default: 'admin',
+  },
+  allowedModules: {
+    type: [String],
+    default: ['*'],
+  },
   passwordResetOTP: { type: String, default: null },
   passwordResetOTPExpires: { type: Date, default: null },
   refreshToken: { type: String, default: null },
@@ -34,7 +43,12 @@ adminSchema.methods.comparePassword = async function (password) {
 // ✅ Method to generate Access Token
 adminSchema.methods.generateAccessToken = function () {
   return jwt.sign(
-    { _id: this._id, userType: this.userType },
+    {
+      _id: this._id,
+      userType: this.userType,
+      role: this.role || 'admin',
+      allowedModules: this.allowedModules || ['*'],
+    },
     process.env.ACCESS_TOKEN_SECRET,
     { expiresIn: '2d' }
   );
@@ -43,7 +57,13 @@ adminSchema.methods.generateAccessToken = function () {
 // ✅ Method to generate Refresh Token
 adminSchema.methods.generateRefreshToken = function () {
   return jwt.sign(
-    { _id: this._id, email: this.email, userType: this.userType },
+    {
+      _id: this._id,
+      email: this.email,
+      userType: this.userType,
+      role: this.role || 'admin',
+      allowedModules: this.allowedModules || ['*'],
+    },
     process.env.REFRESH_TOKEN_SECRET,
     { expiresIn: '7d' }
   );

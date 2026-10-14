@@ -48,7 +48,8 @@ export const adminLogin = asyncHandler(async (req, res) => {
     email: admin.email,
     phone: admin.phone,
     userType: admin.userType,
-    allowedModules: admin.allowedModules, 
+    role: admin.role || 'admin',
+    allowedModules: admin.allowedModules && admin.allowedModules.length > 0 ? admin.allowedModules : ['*'], 
     createdAt: admin.createdAt,
   };
 
@@ -235,6 +236,8 @@ export const getAdminProfile = asyncHandler(async (req, res) => {
     name: admin.name,
     email: admin.email,
     userType: admin.userType,
+    role: admin.role || 'admin',
+    allowedModules: admin.allowedModules && admin.allowedModules.length > 0 ? admin.allowedModules : ['*'],
     createdAt: admin.createdAt,
   };
 

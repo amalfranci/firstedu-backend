@@ -321,6 +321,7 @@ import {
 } from "../controllers/qna.controller.js";
 import { verifyJWT } from "../middleware/auth.middleware.js";
 import { verifyAdmin } from "../middleware/admin.middleware.js";
+import { verifyAdminRbac } from "../middleware/adminRbac.middleware.js";
 import {
   getAdminStudentsWithChatLogs,
   getAdminTeachersWithChatLogs,
@@ -401,17 +402,25 @@ import {
 
 const router = Router();
 
-// Admin Authentication Routes
+// Public Admin Authentication Routes (no JWT required)
 router.post("/login", adminLogin);
-router.post("/logout", verifyJWT, adminLogout);
-router.get("/profile", verifyJWT, getAdminProfile);
-router.get("/dashboard", verifyJWT, getDashboardData);
-router.get("/revenue-history", verifyJWT, getRevenueHistory);
-router.get("/revenue-transactions", verifyJWT, getRevenueTransactions);
 router.post("/forgot-password/request", requestForgotPasswordOTP);
 router.post("/forgot-password/verify", verifyForgotPasswordOTP);
 router.post("/forgot-password/reset", resetPassword);
-router.put("/change-password", verifyJWT, changePassword);
+
+// Apply verifyJWT & verifyAdminRbac to all protected admin routes
+router.use(verifyJWT);
+router.use(verifyAdminRbac);
+
+// Admin Account Routes
+router.post("/logout", adminLogout);
+router.get("/profile", getAdminProfile);
+router.put("/change-password", changePassword);
+
+// Admin Analytics & Dashboard
+router.get("/dashboard", getDashboardData);
+router.get("/revenue-history", getRevenueHistory);
+router.get("/revenue-transactions", getRevenueTransactions);
 
 // Categories (hierarchical, unlimited nesting: School -> Classes -> Class 1 -> Subjects -> Math -> Geometry)
 router.post("/categories", verifyJWT, createTaxonomyCategory);

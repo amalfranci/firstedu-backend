@@ -7,6 +7,10 @@ import Teacher from "../models/Teacher.js";
 import studentSessionRepository from "../repository/studentSession.repository.js";
 
 export const verifyJWT = asyncHandler(async (req, _, next) => {
+  if (req.user) {
+    return next();
+  }
+
   const token =
     req.cookies?.accessToken ||
     req.header("Authorization")?.replace("Bearer ", "");
