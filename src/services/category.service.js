@@ -101,12 +101,15 @@ export const createCategory = async (data, createdBy) => {
     parentNode = await categoryRepository.findById(data.parent);
     if (!parentNode) throw new ApiError(404, "Parent category not found");
 
-    if (["School", "Competitive", "Skill Development"].includes(parentNode.rootType)) {
-      const qBanks = await QuestionBank.find({ categories: parentNode._id }).select('_id');
-      if (qBanks.length > 0) {
-        const tests = await Test.exists({ questionBank: { $in: qBanks.map(qb => qb._id) } });
-        if (tests) {
-          throw new ApiError(400, "Cannot add subcategories to a node that already contains tests.");
+    if (["School", "Skill Development"].includes(parentNode.rootType)) {
+      const alreadyHasChildren = await Category.exists({ parent: parentNode._id, isActive: true });
+      if (!alreadyHasChildren) {
+        const qBanks = await QuestionBank.find({ categories: parentNode._id }).select('_id');
+        if (qBanks.length > 0) {
+          const tests = await Test.exists({ questionBank: { $in: qBanks.map(qb => qb._id) } });
+          if (tests) {
+            throw new ApiError(400, "Cannot add subcategories to a leaf node that already contains tests.");
+          }
         }
       }
     }
@@ -362,10 +365,6 @@ export const getCategoryTree = async (filter = {}) => {
       "./seededCompetitivePapers.service.js"
     );
     await annotateTreeWithSeededPapers(fullTree);
-    const { annotateCompetitiveSubjectTests } = await import(
-      "./competitiveTest.service.js"
-    );
-    await annotateCompetitiveSubjectTests(fullTree);
   } catch (err) {
     console.warn(
       "getCategoryTree: seeded-paper annotate skipped:",
@@ -380,11 +379,9 @@ export const getCategoryTree = async (filter = {}) => {
         attachHasTests(node.children);
       }
       if (isLeaf) {
-        node.hasTests = categoryIdsWithTests.has(node._id.toString()) ||
-          Boolean(node.hasSeededSubjectPapers);
+        node.hasTests = categoryIdsWithTests.has(node._id.toString());
       } else {
         node.hasTests = categoryIdsWithTests.has(node._id.toString()) ||
-          Boolean(node.hasSeededPapers) ||
           node.children.some(c => c.hasTests);
       }
     });
