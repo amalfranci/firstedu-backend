@@ -151,19 +151,15 @@ export const login = asyncHandler(async (req, res) => {
   const fcmTokenValue = (rawFcmToken && rawFcmToken.trim()) ? rawFcmToken.trim() : null;
 
   if (alreadyLoggedInElsewhere && forceLogin && existingSession.fcmToken) {
-    if (!fcmTokenValue || existingSession.fcmToken !== fcmTokenValue) {
-      try {
-        console.log(`📢 [ForceLogout] Dispatching FORCE_LOGOUT to previous device token: ${existingSession.fcmToken.slice(0, 15)}...`);
-        const res = await sendDataOnlyToDevice(existingSession.fcmToken, {
-          type: "FORCE_LOGOUT",
-          reason: "logged_in_elsewhere",
-        });
-        console.log(`✅ [ForceLogout] Push sent successfully:`, res);
-      } catch (err) {
-        console.error("❌ [ForceLogout] Push notification failed in login:", err);
-      }
-    } else {
-      console.log(`ℹ️ [ForceLogout] Skipped push: incoming token matches previous session token`);
+    try {
+      console.log(`📢 [ForceLogout] Dispatching FORCE_LOGOUT to previous session token: ${existingSession.fcmToken.slice(0, 15)}...`);
+      const res = await sendDataOnlyToDevice(existingSession.fcmToken, {
+        type: "FORCE_LOGOUT",
+        reason: "logged_in_elsewhere",
+      });
+      console.log(`✅ [ForceLogout] Push sent successfully:`, res);
+    } catch (err) {
+      console.error("❌ [ForceLogout] Push notification failed in login:", err);
     }
   }
 
@@ -289,19 +285,15 @@ export const verifyLoginOtp = asyncHandler(async (req, res) => {
   const fcmTokenValue = (rawFcmToken && rawFcmToken.trim()) ? rawFcmToken.trim() : null;
 
   if (existingSession && existingSession.fcmToken) {
-    if (!fcmTokenValue || existingSession.fcmToken !== fcmTokenValue) {
-      try {
-        console.log(`📢 [ForceLogout:OTP] Dispatching FORCE_LOGOUT to previous device token: ${existingSession.fcmToken.slice(0, 15)}...`);
-        const res = await sendDataOnlyToDevice(existingSession.fcmToken, {
-          type: "FORCE_LOGOUT",
-          reason: "logged_in_elsewhere",
-        });
-        console.log(`✅ [ForceLogout:OTP] Push sent successfully:`, res);
-      } catch (err) {
-        console.error("❌ [ForceLogout:OTP] Push notification failed in verifyLoginOtp:", err);
-      }
-    } else {
-      console.log(`ℹ️ [ForceLogout:OTP] Skipped push: incoming token matches previous session token`);
+    try {
+      console.log(`📢 [ForceLogout:OTP] Dispatching FORCE_LOGOUT to previous device token: ${existingSession.fcmToken.slice(0, 15)}...`);
+      const res = await sendDataOnlyToDevice(existingSession.fcmToken, {
+        type: "FORCE_LOGOUT",
+        reason: "logged_in_elsewhere",
+      });
+      console.log(`✅ [ForceLogout:OTP] Push sent successfully:`, res);
+    } catch (err) {
+      console.error("❌ [ForceLogout:OTP] Push notification failed in verifyLoginOtp:", err);
     }
   }
 

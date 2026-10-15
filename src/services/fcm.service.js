@@ -125,28 +125,17 @@ export const sendDataOnlyToDevice = async (fcmToken, data = {}) => {
   );
   const message = {
     token: fcmToken,
-    notification: {
-      title: "Session Expired",
-      body: "You have been logged out because your account was logged in on another device.",
-    },
     data: stringData,
     webpush: {
       headers: {
         Urgency: "high",
       },
     },
-    android: {
-      priority: "high",
-      notification: {
-        sound: "default",
-        channelId: "default",
-      },
-    },
+    android: { priority: "high" },
     apns: {
       payload: {
         aps: {
           contentAvailable: true,
-          sound: "default",
         },
       },
       headers: { "apns-priority": "10" },
