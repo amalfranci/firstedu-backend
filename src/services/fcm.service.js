@@ -126,10 +126,17 @@ export const sendDataOnlyToDevice = async (fcmToken, data = {}) => {
   const message = {
     token: fcmToken,
     data: stringData,
+    webpush: {
+      headers: {
+        Urgency: "high",
+      },
+    },
     android: { priority: "high" },
     apns: {
       payload: {
-        aps: { contentAvailable: true },
+        aps: {
+          contentAvailable: true,
+        },
       },
       headers: { "apns-priority": "10" },
     },

@@ -15,8 +15,10 @@ const studentLogin = Joi.object({
   email: Joi.string().email().required(),
   password: Joi.string().required(),
   fcmToken: Joi.string().trim().allow("").optional(),
+  fcm_token: Joi.string().trim().allow("").optional(),
   forceLogin: Joi.boolean().optional(),
   deviceId: Joi.string().trim().allow("").optional(),
+  device_id: Joi.string().trim().allow("").optional(),
 });
 
 // For Phone OTP Login - Send
@@ -29,7 +31,9 @@ const verifyLoginOtp = Joi.object({
   phone: Joi.string().required(),
   otp: Joi.string().required(),
   fcmToken: Joi.string().trim().allow("").optional(),
+  fcm_token: Joi.string().trim().allow("").optional(),
   deviceId: Joi.string().trim().allow("").optional(),
+  device_id: Joi.string().trim().allow("").optional(),
 });
 
 const requestPasswordChange = Joi.object({}); // no body needed
