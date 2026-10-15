@@ -204,11 +204,14 @@ const hasChildren = async (id) => {
   return count > 0;
 };
 
-const findDescendantIds = async (id) => {
-  const ids = [id.toString()];
+const findDescendantIds = async (id, visited = new Set()) => {
+  const idStr = id.toString();
+  if (visited.has(idStr)) return [];
+  visited.add(idStr);
+  const ids = [idStr];
   const children = await Category.find({ parent: id }).select("_id").lean();
   for (const child of children) {
-    const childIds = await findDescendantIds(child._id);
+    const childIds = await findDescendantIds(child._id, visited);
     ids.push(...childIds);
   }
   return ids;

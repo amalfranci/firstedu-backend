@@ -323,7 +323,7 @@ export const createQuestionBankWithQuestions = asyncHandler(async (req, res) => 
 });
 
 export const getQuestionBanks = asyncHandler(async (req, res) => {
-  const { page, limit, search, category, sortBy, sortOrder } = req.query;
+  const { page, limit = 50, search, category, sortBy, sortOrder } = req.query;
   const result = await questionBankService.getQuestionBanks({
     page,
     limit,
@@ -332,13 +332,13 @@ export const getQuestionBanks = asyncHandler(async (req, res) => {
     sortBy,
     sortOrder,
   });
-  return res.status(200).json(
-    ApiResponse.success(
-      result.items,
-      "Question banks fetched successfully",
-      result.pagination
-    )
+  const responseData = ApiResponse.success(
+    result.items,
+    "Question banks fetched successfully",
+    result.pagination
   );
+  responseData.pagination = result.pagination;
+  return res.status(200).json(responseData);
 });
 
 export const getQuestionBankById = asyncHandler(async (req, res) => {
