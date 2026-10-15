@@ -164,8 +164,9 @@ export const sendDataOnlyToDevice = async (fcmToken, data = {}) => {
  * @returns {Promise<object>} - FCM batch response
  */
 export const sendNotificationToMultipleDevices = async (fcmTokens, title, body, data = {}) => {
-  if (!firebaseAdmin) {
-    throw new Error("Firebase Admin SDK not initialized");
+  const fbAdmin = getFirebaseAdmin();
+  if (!fbAdmin || fbAdmin.apps.length === 0) {
+    throw new Error("Firebase Admin SDK not initialized. Please verify FIREBASE_SERVICE_ACCOUNT_BASE64 in .env");
   }
 
   if (!fcmTokens || fcmTokens.length === 0) {
@@ -214,7 +215,7 @@ export const sendNotificationToMultipleDevices = async (fcmTokens, title, body, 
   };
 
   try {
-    const response = await firebaseAdmin.messaging().sendEachForMulticast(message);
+    const response = await fbAdmin.messaging().sendEachForMulticast(message);
     console.log(`✅ Successfully sent ${response.successCount} notifications`);
     console.log(`❌ Failed to send ${response.failureCount} notifications`);
     
