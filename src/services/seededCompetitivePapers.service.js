@@ -25,6 +25,8 @@ import UpscCompetitivePaper, {
   UpscCompetitiveQuestion,
 } from "../models/UpscCompetitivePaper.js";
 
+const isMockCategory = (name) => /mock/i.test(String(name || ""));
+
 const EXAM_REGISTRY = [
   {
     examKey: "jee_main",
@@ -32,7 +34,8 @@ const EXAM_REGISTRY = [
     Paper: JeeMainCompetitivePaper,
     Question: JeeMainCompetitiveQuestion,
     subjects: ["Mathematics", "Physics", "Chemistry"],
-    match: (name) => /^jee\s*mains?$/i.test(String(name || "").trim()),
+    match: (name) =>
+      !isMockCategory(name) && /^jee\s*mains?$/i.test(String(name || "").trim()),
   },
   {
     examKey: "jee_advanced",
@@ -42,6 +45,7 @@ const EXAM_REGISTRY = [
     subjects: ["Mathematics", "Physics", "Chemistry"],
     match: (name) => {
       const n = String(name || "").trim();
+      if (isMockCategory(n)) return false;
       if (/^jee\s*advanc(?:e|ed)\s*[12]$/i.test(n)) return false;
       return /jee\s*advanc(?:e|ed)/i.test(n);
     },
@@ -54,6 +58,7 @@ const EXAM_REGISTRY = [
     subjects: ["Physics", "Chemistry", "Botany", "Zoology"],
     match: (name) => {
       const n = String(name || "").trim();
+      if (isMockCategory(n)) return false;
       return /\bneet\b/i.test(n) && !/\bpg\b/i.test(n);
     },
   },
@@ -71,6 +76,7 @@ const EXAM_REGISTRY = [
     ],
     match: (name) => {
       const n = String(name || "").trim();
+      if (isMockCategory(n)) return false;
       if (/^clat[\s_-]*20\d{2}$/i.test(n)) return false;
       return /\bclat\b/i.test(n);
     },
@@ -81,7 +87,11 @@ const EXAM_REGISTRY = [
     Paper: IbpsCompetitivePaper,
     Question: IbpsCompetitiveQuestion,
     subjects: ["English", "Quantitative Aptitude", "Reasoning Ability"],
-    match: (name) => /ibps(\s*po)?(\s*prelims)?/i.test(String(name || "")),
+    match: (name) => {
+      const n = String(name || "").trim();
+      if (isMockCategory(n)) return false;
+      return /ibps(\s*po)?(\s*prelims)?/i.test(n);
+    },
   },
   {
     examKey: "gmat",
@@ -89,7 +99,11 @@ const EXAM_REGISTRY = [
     Paper: GmatCompetitivePaper,
     Question: GmatCompetitiveQuestion,
     subjects: ["Quant", "Verbal", "Data Insights"],
-    match: (name) => /\bgmat\b/i.test(String(name || "")),
+    match: (name) => {
+      const n = String(name || "").trim();
+      if (isMockCategory(n)) return false;
+      return /\bgmat\b/i.test(n);
+    },
   },
   {
     examKey: "cat",
@@ -101,9 +115,13 @@ const EXAM_REGISTRY = [
       "Data Interpretation and Logical Reasoning",
       "Quantitative Ability",
     ],
-    match: (name) =>
-      /^cat$/i.test(String(name || "").trim()) ||
-      /\bcommon\s+admission\s+test\b/i.test(String(name || "")),
+    match: (name) => {
+      const n = String(name || "").trim();
+      if (isMockCategory(n)) return false;
+      return (
+        /^cat$/i.test(n) || /\bcommon\s+admission\s+test\b/i.test(n)
+      );
+    },
   },
   {
     examKey: "ssc_cgl_tier2",
@@ -117,10 +135,11 @@ const EXAM_REGISTRY = [
       "General Awareness",
       "Computer Knowledge",
     ],
-    match: (name) =>
-      /ssc\s*cgl.*tier\s*(2|ii)\b|\bcgl\s*tier\s*(2|ii)\b/i.test(
-        String(name || "")
-      ),
+    match: (name) => {
+      const n = String(name || "").trim();
+      if (isMockCategory(n)) return false;
+      return /ssc\s*cgl.*tier\s*(2|ii)\b|\bcgl\s*tier\s*(2|ii)\b/i.test(n);
+    },
   },
   {
     examKey: "ssc_cgl_tier1",
@@ -133,9 +152,14 @@ const EXAM_REGISTRY = [
       "Quantitative Aptitude",
       "English Comprehension",
     ],
-    match: (name) =>
-      /ssc\s*cgl\b|\bcgl\s*tier\s*[i1]\b/i.test(String(name || "")) &&
-      !/tier\s*(2|ii)\b/i.test(String(name || "")),
+    match: (name) => {
+      const n = String(name || "").trim();
+      if (isMockCategory(n)) return false;
+      return (
+        /ssc\s*cgl\b|\bcgl\s*tier\s*[i1]\b/i.test(n) &&
+        !/tier\s*(2|ii)\b/i.test(n)
+      );
+    },
   },
   {
     examKey: "upsc",
@@ -151,16 +175,16 @@ const EXAM_REGISTRY = [
       "Science",
       "Current Affairs",
     ],
-    match: (name) => /\bupsc\b/i.test(String(name || "")),
+    match: (name) => {
+      const n = String(name || "").trim();
+      if (isMockCategory(n)) return false;
+      return /\bupsc\b/i.test(n);
+    },
   },
 ];
 
-/** Used by seed-competitive-exam-subjects.mjs */
-export const COMPETITIVE_EXAM_SUBJECT_SEED = EXAM_REGISTRY.map((e) => ({
-  examKey: e.examKey,
-  subjects: e.subjects,
-  match: e.match,
-}));
+/** Used by seed-competitive-exam-subjects.mjs — PAUSED: no exam subjects auto-seeded */
+export const COMPETITIVE_EXAM_SUBJECT_SEED = [];
 
 /** Normalize subject labels so Maths ≡ Mathematics, etc. */
 export const normalizeSubjectKey = (label = "") => {

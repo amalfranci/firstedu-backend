@@ -56,6 +56,13 @@ const ensureChild = async ({ parent, name, order, createdBy }) => {
 const EXAM_SUBJECT_PLAN = COMPETITIVE_EXAM_SUBJECT_SEED;
 
 const run = async () => {
+  // PAUSED: Auto-creation of child subcategories for all competitive exams
+  // (JEE, NEET, CLAT, GMAT, CAT, IBPS, UPSC, SSC, etc.) is disabled.
+  console.log(
+    "ℹ️ seed-competitive-exam-subjects is PAUSED. Auto-creation of exam child subcategories is disabled for all exams."
+  );
+  process.exit(0);
+
   await connectDB();
 
   const competitive = await Category.findOne({
