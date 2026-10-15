@@ -1,4 +1,4 @@
-import { admin as firebaseAdmin } from "../config/firebase.js";
+import { admin as firebaseAdmin, getFirebaseAdmin } from "../config/firebase.js";
 
 const DEFAULT_WEB_PUSH_LINK = "https://admin.testladr.com/student/notifications";
 const DEFAULT_WEB_PUSH_ICON = "https://admin.testladr.com/vite.svg";
@@ -47,8 +47,9 @@ const buildWebPushConfig = (title, body, data = {}) => {
  * @returns {Promise<object>} - FCM response
  */
 export const sendNotificationToDevice = async (fcmToken, title, body, data = {}) => {
-  if (!firebaseAdmin) {
-    throw new Error("Firebase Admin SDK not initialized");
+  const fbAdmin = getFirebaseAdmin();
+  if (!fbAdmin || fbAdmin.apps.length === 0) {
+    throw new Error("Firebase Admin SDK not initialized. Please verify FIREBASE_SERVICE_ACCOUNT_BASE64 in .env");
   }
 
   if (!fcmToken) {
@@ -114,8 +115,9 @@ export const sendNotificationToDevice = async (fcmToken, title, body, data = {})
  * @returns {Promise<object>} - FCM response
  */
 export const sendDataOnlyToDevice = async (fcmToken, data = {}) => {
-  if (!firebaseAdmin) {
-    throw new Error("Firebase Admin SDK not initialized");
+  const fbAdmin = getFirebaseAdmin();
+  if (!fbAdmin || fbAdmin.apps.length === 0) {
+    throw new Error("Firebase Admin SDK not initialized. Please verify FIREBASE_SERVICE_ACCOUNT_BASE64 in .env");
   }
   if (!fcmToken) {
     throw new Error("FCM token is required");
