@@ -113,7 +113,9 @@ export const login = asyncHandler(async (req, res) => {
     throw new ApiError(400, "Validation Error", error.details.map(x => x.message));
   }
 
-  const { email, password, fcmToken, forceLogin, deviceId } = value;
+  const { email, password, forceLogin } = value;
+  const rawFcmToken = value.fcmToken || value.fcm_token;
+  const rawDeviceId = value.deviceId || value.device_id;
 
   const student = await studentRepository.findOne({ email }, true);
 
@@ -146,7 +148,7 @@ export const login = asyncHandler(async (req, res) => {
     );
   }
 
-  const fcmTokenValue = (fcmToken && fcmToken.trim()) ? fcmToken.trim() : null;
+  const fcmTokenValue = (rawFcmToken && rawFcmToken.trim()) ? rawFcmToken.trim() : null;
 
   if (alreadyLoggedInElsewhere && forceLogin && existingSession.fcmToken) {
     if (!fcmTokenValue || existingSession.fcmToken !== fcmTokenValue) {
@@ -169,7 +171,7 @@ export const login = asyncHandler(async (req, res) => {
     student: student._id,
     refreshToken: student.generateRefreshToken(),
     fcmToken: fcmTokenValue,
-    deviceId: (deviceId && deviceId.trim()) ? deviceId.trim() : null,
+    deviceId: (rawDeviceId && rawDeviceId.trim()) ? rawDeviceId.trim() : null,
     userAgent,
   });
 
@@ -254,7 +256,9 @@ export const verifyLoginOtp = asyncHandler(async (req, res) => {
     throw new ApiError(400, "Validation Error", error.details.map(x => x.message));
   }
 
-  const { phone, otp, fcmToken, deviceId } = value;
+  const { phone, otp } = value;
+  const rawFcmToken = value.fcmToken || value.fcm_token;
+  const rawDeviceId = value.deviceId || value.device_id;
 
   // 1. Verify the OTP in the separate Otp schema
   const otpRecord = await Otp.findOne({ phone, otp });
@@ -278,7 +282,7 @@ export const verifyLoginOtp = asyncHandler(async (req, res) => {
   // 4. Session management (same as regular login - notify previous device to force logout)
   const existingSession = await studentSessionRepository.findByStudentId(student._id);
   const userAgent = req.get("user-agent") || null;
-  const fcmTokenValue = (fcmToken && fcmToken.trim()) ? fcmToken.trim() : null;
+  const fcmTokenValue = (rawFcmToken && rawFcmToken.trim()) ? rawFcmToken.trim() : null;
 
   if (existingSession && existingSession.fcmToken) {
     if (!fcmTokenValue || existingSession.fcmToken !== fcmTokenValue) {
@@ -299,7 +303,7 @@ export const verifyLoginOtp = asyncHandler(async (req, res) => {
     student: student._id,
     refreshToken: student.generateRefreshToken(),
     fcmToken: fcmTokenValue,
-    deviceId: (deviceId && deviceId.trim()) ? deviceId.trim() : null,
+    deviceId: (rawDeviceId && rawDeviceId.trim()) ? rawDeviceId.trim() : null,
     userAgent,
   });
 
