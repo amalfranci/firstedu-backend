@@ -1,6 +1,8 @@
 import QuestionBank from "../models/QuestionBank.js";
 import Question from "../models/Question.js";
 import Test from "../models/Test.js";
+import Category from "../models/Category.js";
+import categoryRepository from "./category.repository.js";
 import mongoose from "mongoose";
 import { ApiError } from "../utils/ApiError.js";
 
@@ -87,7 +89,7 @@ const findAll = async (filter = {}, options = {}) => {
   try {
     const {
       page = 1,
-      limit = 20,
+      limit = 50,
       sortBy = "createdAt",
       sortOrder = "desc",
       search,
@@ -95,13 +97,74 @@ const findAll = async (filter = {}, options = {}) => {
     } = options;
 
     const query = { ...filter };
-    if (category) query.categories = category;
+
+    if (category && category !== "All" && category !== "all") {
+      const rawCategories = (Array.isArray(category) ? category : [category])
+        .flatMap((c) => (typeof c === "string" ? c.split(",") : [c]))
+        .map((c) => (typeof c === "string" ? c.trim() : c))
+        .filter((c) => c && c !== "All" && c !== "all");
+
+      if (rawCategories.length > 0) {
+        const allIds = new Set();
+        for (const catItem of rawCategories) {
+          const isOid = mongoose.Types.ObjectId.isValid(catItem);
+          let matchedSeedIds = [];
+
+          if (isOid) {
+            matchedSeedIds.push(catItem.toString());
+          }
+
+          // In case catItem is a rootType name (e.g. 'Competitive', 'School') or category name
+          const namedCats = await Category.find({
+            $or: [
+              ...(isOid ? [{ _id: catItem }] : []),
+              { rootType: catItem },
+              { name: catItem },
+            ],
+          })
+            .select("_id")
+            .lean();
+
+          if (namedCats && namedCats.length > 0) {
+            namedCats.forEach((c) => matchedSeedIds.push(c._id.toString()));
+          }
+
+          if (matchedSeedIds.length === 0 && isOid) {
+            matchedSeedIds.push(catItem.toString());
+          }
+
+          matchedSeedIds = Array.from(new Set(matchedSeedIds));
+
+          // Expand each seed ID to all its descendants
+          for (const seedId of matchedSeedIds) {
+            try {
+              const descendants = await categoryRepository.findDescendantIds(seedId);
+              descendants.forEach((d) => allIds.add(d.toString()));
+            } catch (err) {
+              allIds.add(seedId);
+            }
+          }
+        }
+
+        if (allIds.size > 0) {
+          const objectIds = Array.from(allIds).map((id) =>
+            mongoose.Types.ObjectId.isValid(id)
+              ? new mongoose.Types.ObjectId(id)
+              : id
+          );
+          query.categories = { $in: objectIds };
+        } else {
+          query.categories = category;
+        }
+      }
+    }
+
     if (search) {
       query.name = { $regex: search, $options: "i" };
     }
 
-    const pageNum = parseInt(page);
-    const limitNum = parseInt(limit) || 20;
+    const pageNum = parseInt(page, 10) || 1;
+    const limitNum = parseInt(limit, 10) || 50;
     const skip = (pageNum - 1) * limitNum;
     const sort = { [sortBy]: sortOrder === "desc" ? -1 : 1 };
 
