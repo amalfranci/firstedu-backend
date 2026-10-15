@@ -91,7 +91,7 @@ export const sendNotificationToDevice = async (fcmToken, title, body, data = {})
   };
 
   try {
-    const response = await firebaseAdmin.messaging().send(message);
+    const response = await fbAdmin.messaging().send(message);
     console.log("✅ Successfully sent FCM notification:", response);
     return { success: true, messageId: response };
   } catch (error) {
@@ -144,7 +144,7 @@ export const sendDataOnlyToDevice = async (fcmToken, data = {}) => {
     },
   };
   try {
-    const response = await firebaseAdmin.messaging().send(message);
+    const response = await fbAdmin.messaging().send(message);
     return { success: true, messageId: response };
   } catch (error) {
     if (error.code === "messaging/invalid-registration-token" ||
