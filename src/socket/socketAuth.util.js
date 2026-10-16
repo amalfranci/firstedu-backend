@@ -13,7 +13,9 @@ export const normalizeSocketAuthToken = (raw) => {
  */
 export async function authenticateTeacherConnectSocket(token) {
   try {
-    const decoded = jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
+    const cleanToken = normalizeSocketAuthToken(token);
+    if (!cleanToken) return null;
+    const decoded = jwt.verify(cleanToken, process.env.ACCESS_TOKEN_SECRET);
     if (decoded.userType === "teacher") {
       const teacher = await Teacher.findById(decoded._id).select("_id name email status");
       if (!teacher || teacher.status !== "approved") return null;
@@ -30,7 +32,7 @@ export async function authenticateTeacherConnectSocket(token) {
 
     if (decoded.sessionId) {
       const session = await studentSessionRepository.findById(decoded.sessionId);
-      if (!session || session.student.toString() !== user._id.toString()) return null;
+      if (session && session.student.toString() !== user._id.toString()) return null;
     }
 
     return {

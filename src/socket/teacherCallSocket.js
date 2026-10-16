@@ -113,9 +113,15 @@ export const setupTeacherCallSocket = (io) => {
   const ns = io.of("/teacher-call");
 
   ns.use(async (socket, next) => {
-    const token = normalizeSocketAuthToken(
-      socket.handshake.auth?.token || socket.handshake.headers?.authorization || ""
-    );
+    const rawToken =
+      socket.handshake.auth?.token ||
+      socket.handshake.auth?.accessToken ||
+      socket.handshake.auth?.Authorization ||
+      socket.handshake.headers?.authorization ||
+      socket.handshake.headers?.token ||
+      socket.handshake.query?.token ||
+      "";
+    const token = normalizeSocketAuthToken(rawToken);
     if (!token) return next(new Error("Authentication error: No token provided"));
 
     const user = await authenticateTeacherConnectSocket(token);

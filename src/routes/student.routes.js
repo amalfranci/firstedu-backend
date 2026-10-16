@@ -15,6 +15,7 @@ import {
   deleteAccount,
   sendLoginOtp,
   verifyLoginOtp,
+  refreshAccessToken,
 } from "../controllers/studentAuth.controller.js";
 import {
   getCourses,
@@ -255,6 +256,7 @@ router.post("/signup", uploadImage.single("profileImage"), signup);
 router.post("/login", login);
 router.post("/send-otp", sendLoginOtp);
 router.post("/verify-otp", verifyLoginOtp);
+router.post("/refresh-token", refreshAccessToken);
 
 // Contact Us (no JWT)
 router.post("/contact-us", contactUs);

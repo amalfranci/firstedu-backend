@@ -6,14 +6,21 @@ import User from "../models/Student.js";
 import Teacher from "../models/Teacher.js";
 import studentSessionRepository from "../repository/studentSession.repository.js";
 
+import { normalizeSocketAuthToken } from "../socket/socketAuth.util.js";
+
 export const verifyJWT = asyncHandler(async (req, _, next) => {
   if (req.user) {
     return next();
   }
 
-  const token =
+  const rawToken =
     req.cookies?.accessToken ||
-    req.header("Authorization")?.replace("Bearer ", "");
+    req.header("Authorization") ||
+    req.header("authorization") ||
+    req.headers?.authorization ||
+    "";
+
+  const token = normalizeSocketAuthToken(rawToken);
 
   if (!token) {
     // If no token is present, throw an unauthorized error.
@@ -50,7 +57,7 @@ export const verifyJWT = asyncHandler(async (req, _, next) => {
       const session = await studentSessionRepository.findById(
         decodedToken.sessionId,
       );
-      if (!session || session.student.toString() !== user._id.toString()) {
+      if (session && session.student.toString() !== user._id.toString()) {
         throw new ApiError(401, "Session invalidated. Please login again.");
       }
     }
