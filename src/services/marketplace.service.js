@@ -710,7 +710,7 @@ export const getMyCourses = async (studentId, page = 1, limit = 10, options = {}
  * Get paginated free materials (integrated into my-courses flow).
  */
 export const getPaginatedFreeMaterials = async (page = 1, limit = 10, options = {}) => {
-  const { categoryId, subCategoryId, search, contentType } = options;
+  const { categoryId, subCategoryId, search, contentType, pillarName } = options;
   const pageNum = parseInt(page);
   const limitNum = parseInt(limit);
   const skip = (pageNum - 1) * limitNum;
@@ -718,7 +718,23 @@ export const getPaginatedFreeMaterials = async (page = 1, limit = 10, options = 
   const query = {};
   if (categoryId && categoryId !== 'null' && categoryId !== 'undefined') {
     query.category = categoryId;
+  } else if (pillarName && !['all', 'null', 'undefined', ''].includes(String(pillarName).trim().toLowerCase())) {
+    const VALID_ROOT_TYPES = ['School', 'Competitive', 'Olympiads', 'Skill Development'];
+    const normalizedName = VALID_ROOT_TYPES.find(
+      (rt) => rt.toLowerCase() === String(pillarName).trim().toLowerCase()
+    );
+    if (normalizedName) {
+      const pillar = await Category.findOne({
+        rootType: normalizedName,
+        parent: null,
+        isActive: true,
+      }).select('_id').lean();
+      if (pillar) {
+        query.category = pillar._id;
+      }
+    }
   }
+
   if (subCategoryId && subCategoryId !== 'null' && subCategoryId !== 'undefined') {
     const subCatIds = subCategoryId.split(',').map(id => id.trim()).filter(Boolean);
     if (subCatIds.length > 1) {
@@ -733,8 +749,8 @@ export const getPaginatedFreeMaterials = async (page = 1, limit = 10, options = 
   }
 
   if (search && search.trim()) {
-    const regex = { $regex: search, $options: "i" };
-    query.title = regex;
+    const regex = { $regex: search.trim(), $options: "i" };
+    query.$or = [{ title: regex }, { fileUrl: regex }];
   }
 
   const materials = await FreeMaterial.find(query)

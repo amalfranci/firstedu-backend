@@ -145,15 +145,24 @@ export const getMyCourses = asyncHandler(async (req, res) => {
   } = req.query;
 
   // ── Branch 1: Fetch subcategories for a given pillar (lazy-load tab list) ──
-  // Triggered ONLY when: isFreeMaterial=true AND fetchSubcategories=true
-  // No effect on any other existing call to this endpoint.
-  if (isFreeMaterial === 'true' && fetchSubcategories === 'true') {
+  // Triggered ONLY when:
+  // 1. isFreeMaterial=true AND fetchSubcategories=true
+  // 2. A specific pillarName is provided (NOT 'all', NOT null/undefined/empty)
+  // 3. subCategoryId is NOT provided (if subCategoryId is present, user wants materials)
+  const isPillarSubcategoriesRequest =
+    isFreeMaterial === 'true' &&
+    fetchSubcategories === 'true' &&
+    pillarName &&
+    !['all', 'null', 'undefined', ''].includes(String(pillarName).trim().toLowerCase()) &&
+    !subCategoryId;
+
+  if (isPillarSubcategoriesRequest) {
     const subcategories = await getSubcategoriesByPillarName(pillarName);
     return res.status(200).json(ApiResponse.success(subcategories, "Subcategories fetched successfully"));
   }
 
   // ── Branch 2: Fetch paginated free materials ──
-  // Triggered ONLY when: isFreeMaterial=true (and fetchSubcategories is NOT true)
+  // Triggered when: isFreeMaterial=true (handles Web "All", Mobile "All" where fetchSubcategories=true, and filtered materials)
   if (isFreeMaterial === 'true') {
     const { purchases, pagination } = await getPaginatedFreeMaterials(
       page,
@@ -161,6 +170,7 @@ export const getMyCourses = asyncHandler(async (req, res) => {
       {
         categoryId,
         subCategoryId,
+        pillarName,
         search,
         contentType,
       }
@@ -203,7 +213,13 @@ export const getFreeMaterialsLandingPage = asyncHandler(async (req, res) => {
   } = req.query;
 
   // Branch 1: Fetch subcategories for a given pillar
-  if (fetchSubcategories === 'true') {
+  const isPillarSubcategoriesRequest =
+    fetchSubcategories === 'true' &&
+    pillarName &&
+    !['all', 'null', 'undefined', ''].includes(String(pillarName).trim().toLowerCase()) &&
+    !subCategoryId;
+
+  if (isPillarSubcategoriesRequest) {
     const subcategories = await getSubcategoriesByPillarName(pillarName);
     return res.status(200).json(ApiResponse.success(subcategories, "Subcategories fetched successfully"));
   }
@@ -215,6 +231,7 @@ export const getFreeMaterialsLandingPage = asyncHandler(async (req, res) => {
     {
       categoryId,
       subCategoryId,
+      pillarName,
       search,
       contentType,
     }
