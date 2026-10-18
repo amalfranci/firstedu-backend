@@ -44,7 +44,7 @@ studentSchema.methods.generateAccessToken = function (sessionId = null) {
   return jwt.sign(
     payload,
     process.env.ACCESS_TOKEN_SECRET,
-    { expiresIn: "2d" }
+    { expiresIn: process.env.ACCESS_TOKEN_EXPIRY || "30d" }
   );
 };
 

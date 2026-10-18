@@ -10,6 +10,8 @@ import studentSessionRepository from "../repository/studentSession.repository.js
 import userValidator from "../validation/student.validator.js";
 import studentService from "../services/student.service.js";
 import { sendDataOnlyToDevice } from "../services/fcm.service.js";
+import jwt from "jsonwebtoken";
+import { normalizeSocketAuthToken } from "../socket/socketAuth.util.js";
 import Otp from "../models/Otp.js";
 
 
@@ -700,5 +702,76 @@ export const deleteAccount = asyncHandler(async (req, res) => {
     .clearCookie("refreshToken", options)
     .json(ApiResponse.success(result, "Account deleted permanently"));
 });
+
+// Refresh Access Token for Student (Mobile & Web)
+export const refreshAccessToken = asyncHandler(async (req, res) => {
+  const rawToken =
+    req.cookies?.refreshToken ||
+    req.body?.refreshToken ||
+    req.header("Authorization") ||
+    req.header("authorization") ||
+    "";
+  const incomingRefreshToken = normalizeSocketAuthToken(rawToken);
+
+  if (!incomingRefreshToken) {
+    throw new ApiError(401, "Refresh token is required");
+  }
+
+  let decoded;
+  try {
+    decoded = jwt.verify(
+      incomingRefreshToken,
+      process.env.REFRESH_TOKEN_SECRET
+    );
+  } catch (err) {
+    throw new ApiError(401, "Refresh token expired or invalid. Please login again.");
+  }
+
+  const student = await studentRepository.findById(decoded._id);
+  if (!student || student.status === "banned") {
+    throw new ApiError(401, "Invalid refresh token or student banned");
+  }
+
+  const session = await studentSessionRepository.findByRefreshToken(
+    incomingRefreshToken
+  );
+
+  const sessionId = session ? session._id : decoded.sessionId;
+  const newAccessToken = student.generateAccessToken(sessionId);
+  const newRefreshToken = student.generateRefreshToken(sessionId);
+
+  if (session) {
+    await studentSessionRepository.updateRefreshToken(session._id, newRefreshToken);
+  }
+
+  const isProduction = process.env.NODE_ENV === "production";
+  const accessTokenOptions = {
+    httpOnly: true,
+    secure: isProduction,
+    sameSite: isProduction ? "None" : "Lax",
+    maxAge: 30 * 24 * 60 * 60 * 1000,
+  };
+  const refreshTokenOptions = {
+    httpOnly: true,
+    secure: isProduction,
+    sameSite: isProduction ? "None" : "Lax",
+    maxAge: 60 * 24 * 60 * 60 * 1000,
+  };
+
+  return res
+    .status(200)
+    .cookie("accessToken", newAccessToken, accessTokenOptions)
+    .cookie("refreshToken", newRefreshToken, refreshTokenOptions)
+    .json(
+      ApiResponse.success(
+        {
+          accessToken: newAccessToken,
+          refreshToken: newRefreshToken,
+        },
+        "Access token refreshed successfully"
+      )
+    );
+});
+
 
 

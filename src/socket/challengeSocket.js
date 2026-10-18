@@ -14,10 +14,10 @@ const authenticateSocket = async (token) => {
     const user = await User.findById(decoded?._id).select("_id name email status");
     if (!user || user.status === "banned") return null;
 
-    // Keep socket auth consistent with REST auth (single-device session for students).
+    // Keep socket auth consistent with REST auth.
     if (decoded.sessionId) {
       const session = await studentSessionRepository.findById(decoded.sessionId);
-      if (!session || session.student.toString() !== user._id.toString()) return null;
+      if (session && session.student.toString() !== user._id.toString()) return null;
     }
 
     return {
