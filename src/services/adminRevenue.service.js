@@ -402,7 +402,8 @@ export const logTransaction = async ({
   subCategoryId,
   subCategoryName,
   paymentId,
-  paymentStatus = "completed"
+  paymentStatus = "completed",
+  purchasedAt,
 }) => {
   try {
     if (!studentId || !sourceType || !itemId || !itemName) {
@@ -426,8 +427,25 @@ export const logTransaction = async ({
       finalSubCatName = subCategoryName || resolved.subCategoryName;
     }
 
-    if (paymentId && paymentId !== "unknown") {
+    // Deduplication check:
+    // If paymentId is a unique gateway reference (e.g. Razorpay "pay_..."), check by paymentId.
+    // If paymentId is generic ("wallet", "free", "unknown"), check by { student: studentId, itemId, sourceType }
+    // to prevent duplicate logs if the purchase handler is called multiple times.
+    const isGenericPaymentId =
+      !paymentId ||
+      ["unknown", "wallet", "free"].includes(String(paymentId).toLowerCase().trim());
+
+    if (!isGenericPaymentId) {
       const existingTx = await RevenueTransaction.findOne({ paymentId });
+      if (existingTx) {
+        return existingTx;
+      }
+    } else if (studentId && itemId && sourceType) {
+      const existingTx = await RevenueTransaction.findOne({
+        student: studentId,
+        itemId,
+        sourceType,
+      });
       if (existingTx) {
         return existingTx;
       }
@@ -444,7 +462,7 @@ export const logTransaction = async ({
       subCategoryName: finalSubCatName || "-",
       paymentId: paymentId || "unknown",
       paymentStatus,
-      purchasedAt: new Date()
+      purchasedAt: purchasedAt || new Date()
     });
 
     return transaction;

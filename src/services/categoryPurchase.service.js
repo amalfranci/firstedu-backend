@@ -134,6 +134,7 @@ export const initiatePurchase = async (categoryId, studentId, paymentMethod, opt
       itemName: category.name,
       categoryId: category._id,
       paymentId: "free",
+      purchasedAt: purchase.createdAt,
     });
     await awardPointsForUnlockedItems(studentId, category._id, unlockedIds);
     
@@ -166,6 +167,7 @@ export const initiatePurchase = async (categoryId, studentId, paymentMethod, opt
       itemName: category.name,
       categoryId: category._id,
       paymentId: "wallet",
+      purchasedAt: purchase.createdAt,
     });
     await awardPointsForUnlockedItems(studentId, category._id, unlockedIds);
     

@@ -436,7 +436,8 @@ export const initiateCoursePayment = async (courseId, studentId, paymentMethod, 
       itemId: courseId,
       itemName: course.title || "Course",
       categoryId: course.categoryIds && course.categoryIds[0] ? course.categoryIds[0] : null,
-      paymentId: "free"
+      paymentId: "free",
+      purchasedAt: purchase.purchaseDate || purchase.createdAt,
     });
     try {
       await pointsService.awardCoursePurchasePoints(studentId, courseId, course.title || "Course");
@@ -473,7 +474,8 @@ export const initiateCoursePayment = async (courseId, studentId, paymentMethod, 
       itemId: courseId,
       itemName: course.title || "Course",
       categoryId: course.categoryIds && course.categoryIds[0] ? course.categoryIds[0] : null,
-      paymentId: "wallet"
+      paymentId: "wallet",
+      purchasedAt: purchase.purchaseDate || purchase.createdAt,
     });
     if (couponId) {
       await couponService.incrementCouponUsedCount(couponId);
@@ -1340,7 +1342,8 @@ export const initiateTestPayment = async (testId, studentId, paymentMethod, opti
       itemId: testId,
       itemName: test.title || "Test",
       categoryId: freeCategoryId,
-      paymentId: "free"
+      paymentId: "free",
+      purchasedAt: purchase.purchaseDate || purchase.createdAt,
     });
     return { purchase, completed: true };
   }
@@ -1372,7 +1375,8 @@ export const initiateTestPayment = async (testId, studentId, paymentMethod, opti
       itemId: testId,
       itemName: test.title || "Test",
       categoryId: walletCategoryId,
-      paymentId: "wallet"
+      paymentId: "wallet",
+      purchasedAt: purchase.purchaseDate || purchase.createdAt,
     });
     return { purchase, completed: true };
   }
@@ -1658,7 +1662,8 @@ export const initiateTestBundlePayment = async (bundleId, studentId, paymentMeth
       itemId: bundleId,
       itemName: bundle.name || "Test Bundle",
       categoryId: null,
-      paymentId: "free"
+      paymentId: "free",
+      purchasedAt: purchase.purchaseDate || purchase.createdAt,
     });
 
     (async () => {
@@ -1695,7 +1700,8 @@ export const initiateTestBundlePayment = async (bundleId, studentId, paymentMeth
       itemId: bundleId,
       itemName: bundle.name || "Test Bundle",
       categoryId: null,
-      paymentId: "wallet"
+      paymentId: "wallet",
+      purchasedAt: purchase.purchaseDate || purchase.createdAt,
     });
 
     (async () => {
