@@ -271,6 +271,15 @@ const updateAnalytics = async (questionId, analyticsData) => {
   }
 };
 
+const updateDifficultyByIds = async (ids, difficulty) => {
+  try {
+    if (!Array.isArray(ids) || ids.length === 0) return;
+    return await Question.updateMany({ _id: { $in: ids } }, { $set: { difficulty } });
+  } catch (error) {
+    throw new ApiError(500, "Failed to update questions difficulty", error.message);
+  }
+};
+
 export default {
   create,
   findById,
@@ -282,5 +291,6 @@ export default {
   removeChildQuestion,
   getAnalytics,
   updateAnalytics,
+  updateDifficultyByIds,
 };
 

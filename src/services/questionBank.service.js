@@ -297,6 +297,10 @@ export const createQuestionBankWithQuestions = async (data, createdBy) => {
       sectionIndexByQuestionMode !== undefined
         ? sectionIndexByQuestionMode
         : sectionIndexByDifficulty;
+    const assignedDifficulty =
+      useSectionWise && sections.length
+        ? difficulty
+        : (q.difficulty || difficulty || overallDifficulty);
     const questionData = {
       questionText: q.questionText,
       questionType: q.questionType || "single",
@@ -304,7 +308,7 @@ export const createQuestionBankWithQuestions = async (data, createdBy) => {
       correctAnswer: q.correctAnswer,
       explanation: q.explanation,
       topic: q.topic,
-      difficulty,
+      difficulty: assignedDifficulty,
       marks: q.marks ?? 1,
       negativeMarks: q.negativeMarks ?? 0,
       tags: q.tags,
@@ -467,7 +471,34 @@ export const updateQuestionBank = async (id, updateData) => {
     }
   }
 
-  return await questionBankRepository.updateById(id, updateData);
+  const updated = await questionBankRepository.updateById(id, updateData);
+
+  // Synchronize difficulty to questions if section difficulties or overall difficulty were updated
+  if (Array.isArray(updateData.sections)) {
+    for (let index = 0; index < updateData.sections.length; index++) {
+      const newDiff = updateData.sections[index]?.difficulty;
+      const oldDiff = existing.sections?.[index]?.difficulty;
+      if (newDiff && newDiff !== oldDiff) {
+        await questionBankRepository.updateQuestionsDifficultyBySection(
+          id,
+          index,
+          existing.sections?.[index]?.questions,
+          newDiff
+        );
+      }
+    }
+  } else if (
+    updateData.overallDifficulty &&
+    updateData.overallDifficulty !== existing.overallDifficulty &&
+    !existing.useSectionWiseDifficulty
+  ) {
+    await questionBankRepository.updateAllQuestionsDifficulty(
+      id,
+      updateData.overallDifficulty
+    );
+  }
+
+  return updated;
 };
 
 export const toggleSectionWiseQuestions = async (id, useSectionWiseQuestions) => {

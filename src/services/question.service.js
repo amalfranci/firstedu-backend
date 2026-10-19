@@ -365,6 +365,20 @@ export const updateQuestion = async (id, updateData) => {
       );
 
       if (
+        partialParentUpdate.difficulty &&
+        Array.isArray(existingQuestion.childQuestions) &&
+        existingQuestion.childQuestions.length > 0
+      ) {
+        const childIds = existingQuestion.childQuestions.map(
+          (child) => child?._id?.toString?.() || child?.toString?.()
+        );
+        await questionRepository.updateDifficultyByIds(
+          childIds,
+          partialParentUpdate.difficulty
+        );
+      }
+
+      if (
         Object.prototype.hasOwnProperty.call(updateData, "marks") ||
         Object.prototype.hasOwnProperty.call(updateData, "negativeMarks")
       ) {

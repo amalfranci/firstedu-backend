@@ -267,6 +267,58 @@ const deleteQuestionsByBankId = async (bankId) => {
   }
 };
 
+const updateQuestionsDifficultyBySection = async (
+  bankId,
+  sectionIndex,
+  questionIds,
+  difficulty
+) => {
+  try {
+    const conditions = [{ questionBank: bankId, sectionIndex }];
+    if (Array.isArray(questionIds) && questionIds.length > 0) {
+      conditions.push({ _id: { $in: questionIds } });
+    }
+
+    const parents = await Question.find(
+      { $or: conditions, isParent: true },
+      { _id: 1, childQuestions: 1 }
+    ).lean();
+
+    const childIds = [];
+    parents.forEach((p) => {
+      if (Array.isArray(p.childQuestions)) {
+        p.childQuestions.forEach((cid) => {
+          if (cid) childIds.push(cid);
+        });
+      }
+    });
+
+    const updateConditions = [...conditions];
+    if (childIds.length > 0) {
+      updateConditions.push({ _id: { $in: childIds } });
+      updateConditions.push({ parentQuestionId: { $in: parents.map((p) => p._id) } });
+    }
+
+    return await Question.updateMany(
+      { $or: updateConditions },
+      { $set: { difficulty } }
+    );
+  } catch (error) {
+    throw new ApiError(500, "Failed to update questions difficulty", error.message);
+  }
+};
+
+const updateAllQuestionsDifficulty = async (bankId, difficulty) => {
+  try {
+    return await Question.updateMany(
+      { questionBank: bankId },
+      { $set: { difficulty } }
+    );
+  } catch (error) {
+    throw new ApiError(500, "Failed to update questions difficulty", error.message);
+  }
+};
+
 export default {
   create,
   findById,
@@ -277,4 +329,6 @@ export default {
   countQuestionsByBankId,
   deleteQuestionsByBankId,
   getBanksStatsBatch,
+  updateQuestionsDifficultyBySection,
+  updateAllQuestionsDifficulty,
 };
