@@ -850,6 +850,154 @@ export const rateTeacher = async (teacherId, studentId, rating) => {
   return { averageRating, ratingCount };
 };
 
+/**
+ * Get active/ongoing or pending session for a teacher (used to restore UI state on refresh)
+ */
+export const getTeacherActiveSession = async (teacherId) => {
+  // 1. Check active/accepted call session
+  const activeCall = await teacherSessionRepository.findTeacherActiveCallSession(teacherId);
+  if (activeCall) {
+    return {
+      type: "call",
+      state: activeCall.status, // "accepted" or "ongoing"
+      session: activeCall,
+      student: activeCall.student,
+    };
+  }
+
+  // 2. Check active ongoing chat session
+  const activeChat = await teacherSessionRepository.findTeacherActiveChatSession(teacherId);
+  if (activeChat) {
+    const { messages } = await teacherChatMessageRepository.findBySession(activeChat._id, {
+      limit: 100,
+      sortOrder: "asc",
+    });
+    return {
+      type: "chat",
+      state: "active",
+      session: activeChat,
+      student: activeChat.student,
+      messages: messages || [],
+    };
+  }
+
+  // 3. Check pending call request
+  const pendingCall = await teacherSessionRepository.findTeacherPendingCallSession(teacherId);
+  if (pendingCall) {
+    const elapsedMs = Date.now() - new Date(pendingCall.createdAt).getTime();
+    if (elapsedMs > 45_000 + 15_000) {
+      await teacherSessionRepository.updateById(pendingCall._id, {
+        status: "cancelled",
+        sessionEndReason: "teacher_no_response_timeout",
+        callEndTime: new Date(),
+      });
+    } else {
+      return {
+        type: "call",
+        state: "pending",
+        session: pendingCall,
+        student: pendingCall.student,
+      };
+    }
+  }
+
+  // 4. Check pending chat request
+  const pendingChat = await teacherSessionRepository.findTeacherPendingChatSession(teacherId);
+  if (pendingChat) {
+    const elapsedMs = Date.now() - new Date(pendingChat.createdAt).getTime();
+    if (elapsedMs > 45_000 + 15_000) {
+      await teacherSessionRepository.updateById(pendingChat._id, {
+        status: "cancelled",
+        sessionEndReason: "teacher_no_response_timeout",
+        callEndTime: new Date(),
+      });
+    } else {
+      return {
+        type: "chat",
+        state: "pending",
+        session: pendingChat,
+        student: pendingChat.student,
+      };
+    }
+  }
+
+  return null;
+};
+
+/**
+ * Get active/ongoing or pending session for a student (used to restore UI state on refresh)
+ */
+export const getStudentActiveSession = async (studentId) => {
+  // 1. Check active/accepted call session
+  const activeCall = await teacherSessionRepository.findStudentOngoingCallSession(studentId);
+  if (activeCall) {
+    return {
+      type: "call",
+      state: activeCall.status, // "accepted" or "ongoing"
+      session: activeCall,
+      teacher: activeCall.teacher,
+    };
+  }
+
+  // 2. Check active ongoing chat session
+  const activeChat = await teacherSessionRepository.findStudentOngoingChatSession(studentId);
+  if (activeChat) {
+    const { messages } = await teacherChatMessageRepository.findBySession(activeChat._id, {
+      limit: 100,
+      sortOrder: "asc",
+    });
+    return {
+      type: "chat",
+      state: "active",
+      session: activeChat,
+      teacher: activeChat.teacher,
+      messages: messages || [],
+    };
+  }
+
+  // 3. Check pending call request
+  const pendingCall = await teacherSessionRepository.findStudentPendingCallSession(studentId);
+  if (pendingCall) {
+    const elapsedMs = Date.now() - new Date(pendingCall.createdAt).getTime();
+    if (elapsedMs > 45_000 + 15_000) {
+      await teacherSessionRepository.updateById(pendingCall._id, {
+        status: "cancelled",
+        sessionEndReason: "teacher_no_response_timeout",
+        callEndTime: new Date(),
+      });
+    } else {
+      return {
+        type: "call",
+        state: "pending",
+        session: pendingCall,
+        teacher: pendingCall.teacher,
+      };
+    }
+  }
+
+  // 4. Check pending chat request
+  const pendingChat = await teacherSessionRepository.findStudentPendingChatSession(studentId);
+  if (pendingChat) {
+    const elapsedMs = Date.now() - new Date(pendingChat.createdAt).getTime();
+    if (elapsedMs > 45_000 + 15_000) {
+      await teacherSessionRepository.updateById(pendingChat._id, {
+        status: "cancelled",
+        sessionEndReason: "teacher_no_response_timeout",
+        callEndTime: new Date(),
+      });
+    } else {
+      return {
+        type: "chat",
+        state: "pending",
+        session: pendingChat,
+        teacher: pendingChat.teacher,
+      };
+    }
+  }
+
+  return null;
+};
+
 export default {
   getAvailableTeachers,
   getTeacherById,
@@ -877,5 +1025,7 @@ export default {
   getTeacherEarnings,
   getTeacherDashboard,
   rateTeacher,
+  getTeacherActiveSession,
+  getStudentActiveSession,
 };
 

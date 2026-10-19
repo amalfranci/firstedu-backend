@@ -295,7 +295,10 @@ const findTeacherActiveChatSession = async (teacherId) => {
       teacher: teacherId,
       sessionKind: "chat",
       status: "ongoing",
-    });
+    })
+      .sort({ createdAt: -1 })
+      .populate("student", "name email phone classOrGrade profileImage")
+      .populate("teacher", "name email skills perMinuteRate platformFeePercent profileImage");
   } catch (error) {
     throw new ApiError(500, "Failed to fetch teacher chat session", error.message);
   }
@@ -307,7 +310,9 @@ const findStudentOngoingChatSession = async (studentId) => {
       student: studentId,
       sessionKind: "chat",
       status: "ongoing",
-    });
+    })
+      .sort({ createdAt: -1 })
+      .populate("teacher", "name email skills perMinuteRate platformFeePercent profileImage");
   } catch (error) {
     throw new ApiError(500, "Failed to fetch student chat session", error.message);
   }
@@ -320,9 +325,25 @@ const findPendingChatBetween = async (studentId, teacherId) => {
       teacher: teacherId,
       sessionKind: "chat",
       status: "pending",
-    });
+    })
+      .sort({ createdAt: -1 })
+      .populate("student", "name email phone classOrGrade profileImage");
   } catch (error) {
     throw new ApiError(500, "Failed to fetch pending chat", error.message);
+  }
+};
+
+const findTeacherPendingChatSession = async (teacherId) => {
+  try {
+    return await TeacherSession.findOne({
+      teacher: teacherId,
+      sessionKind: "chat",
+      status: "pending",
+    })
+      .sort({ createdAt: -1 })
+      .populate("student", "name email phone classOrGrade profileImage");
+  } catch (error) {
+    throw new ApiError(500, "Failed to fetch teacher pending chat session", error.message);
   }
 };
 
@@ -333,20 +354,39 @@ const findPendingCallBetween = async (studentId, teacherId) => {
       teacher: teacherId,
       sessionKind: "call",
       status: "pending",
-    });
+    })
+      .sort({ createdAt: -1 })
+      .populate("student", "name email phone classOrGrade profileImage");
   } catch (error) {
     throw new ApiError(500, "Failed to fetch pending call", error.message);
   }
 };
 
-/** Ongoing Agora/voice call (not chat). */
+const findTeacherPendingCallSession = async (teacherId) => {
+  try {
+    return await TeacherSession.findOne({
+      teacher: teacherId,
+      sessionKind: "call",
+      status: "pending",
+    })
+      .sort({ createdAt: -1 })
+      .populate("student", "name email phone classOrGrade profileImage");
+  } catch (error) {
+    throw new ApiError(500, "Failed to fetch teacher pending call session", error.message);
+  }
+};
+
+/** Ongoing Agora/voice call (not chat). Supports both accepted and ongoing. */
 const findTeacherActiveCallSession = async (teacherId) => {
   try {
     return await TeacherSession.findOne({
       teacher: teacherId,
       sessionKind: "call",
-      status: "ongoing",
-    });
+      status: { $in: ["accepted", "ongoing"] },
+    })
+      .sort({ createdAt: -1 })
+      .populate("student", "name email phone classOrGrade profileImage")
+      .populate("teacher", "name email skills perMinuteRate platformFeePercent profileImage");
   } catch (error) {
     throw new ApiError(500, "Failed to fetch teacher call session", error.message);
   }
@@ -357,10 +397,40 @@ const findStudentOngoingCallSession = async (studentId) => {
     return await TeacherSession.findOne({
       student: studentId,
       sessionKind: "call",
-      status: "ongoing",
-    });
+      status: { $in: ["accepted", "ongoing"] },
+    })
+      .sort({ createdAt: -1 })
+      .populate("teacher", "name email skills perMinuteRate platformFeePercent profileImage");
   } catch (error) {
     throw new ApiError(500, "Failed to fetch student call session", error.message);
+  }
+};
+
+const findStudentPendingCallSession = async (studentId) => {
+  try {
+    return await TeacherSession.findOne({
+      student: studentId,
+      sessionKind: "call",
+      status: "pending",
+    })
+      .sort({ createdAt: -1 })
+      .populate("teacher", "name email skills perMinuteRate platformFeePercent profileImage");
+  } catch (error) {
+    throw new ApiError(500, "Failed to fetch student pending call session", error.message);
+  }
+};
+
+const findStudentPendingChatSession = async (studentId) => {
+  try {
+    return await TeacherSession.findOne({
+      student: studentId,
+      sessionKind: "chat",
+      status: "pending",
+    })
+      .sort({ createdAt: -1 })
+      .populate("teacher", "name email skills perMinuteRate platformFeePercent profileImage");
+  } catch (error) {
+    throw new ApiError(500, "Failed to fetch student pending chat session", error.message);
   }
 };
 
@@ -1060,6 +1130,10 @@ export default {
   findStudentOngoingChatSession,
   findPendingChatBetween,
   findPendingCallBetween,
+  findTeacherPendingCallSession,
+  findTeacherPendingChatSession,
+  findStudentPendingCallSession,
+  findStudentPendingChatSession,
   findTeacherActiveCallSession,
   findStudentOngoingCallSession,
   calculateTeacherEarnings,
