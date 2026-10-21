@@ -1,10 +1,12 @@
 import Joi from "joi";
 
 const optionSchema = Joi.object({
+  _id: Joi.string().optional().allow(null, ""),
+  id: Joi.string().optional().allow(null, ""),
   text: Joi.string().allow(null, "").optional(),
   imageUrl: Joi.string().trim().uri().allow(null, "").optional(),
   isCorrect: Joi.boolean().default(false),
-}).custom((value, helpers) => {
+}).unknown(true).custom((value, helpers) => {
   const hasText = value.text && value.text.trim().length > 0;
   const hasImage = value.imageUrl && value.imageUrl.length > 0;
 
@@ -18,6 +20,8 @@ const optionSchema = Joi.object({
 });
 
 const connectedSubQuestionSchema = Joi.object({
+  _id: Joi.string().optional().allow(null, ""),
+  id: Joi.string().optional().allow(null, ""),
   questionText: Joi.string().required().trim(),
   questionType: Joi.string().valid("single", "multiple", "true_false").required(),
   options: Joi.when("questionType", {
@@ -38,7 +42,7 @@ const connectedSubQuestionSchema = Joi.object({
   marks: Joi.number().min(0).optional(),
   negativeMarks: Joi.number().min(0).optional(),
   imageUrl: Joi.array().items(Joi.string().trim().uri().allow(null, "")).optional(),
-});
+}).unknown(true);
 
 const createQuestion = Joi.object({
   questionText: Joi.string().when("questionType", {
@@ -136,6 +140,8 @@ const createQuestion = Joi.object({
 });
 
 const updateQuestion = Joi.object({
+  _id: Joi.string().optional().allow(null, ""),
+  id: Joi.string().optional().allow(null, ""),
   questionText: Joi.string().trim().optional(),
   questionType: Joi.string()
     .valid("single", "multiple", "true_false", "connected", "integer")
@@ -163,7 +169,7 @@ const updateQuestion = Joi.object({
   subQuestions: Joi.array().items(connectedSubQuestionSchema).optional(),
   connectedQuestions: Joi.array().items(connectedSubQuestionSchema).optional(),
   isActive: Joi.boolean().optional(),
-});
+}).unknown(true);
 
 const addChildQuestion = Joi.object({
   childQuestionId: Joi.string().required(),
@@ -182,4 +188,3 @@ export default {
   addChildQuestion,
   calculateAnalytics,
 };
-

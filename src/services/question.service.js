@@ -290,7 +290,9 @@ export const getQuestionById = async (id) => {
     const children = childIds.length
       ? await questionRepository.findByIds(childIds)
       : [];
-    return formatConnectedQuestionForEdit(question, children);
+    const childrenMap = new Map(children.map((c) => [c._id?.toString?.() || String(c._id), c]));
+    const orderedChildren = childIds.map((cid) => childrenMap.get(cid)).filter(Boolean);
+    return formatConnectedQuestionForEdit(question, orderedChildren);
   }
 
   return question;
@@ -437,12 +439,15 @@ export const updateQuestion = async (id, updateData) => {
     const existingChildIds = (existingQuestion.childQuestions || []).map((child) =>
       child?._id?.toString?.() || child?.toString?.()
     );
-    await Promise.all(existingChildIds.map((childId) => questionRepository.deleteById(childId)));
-
+    const existingChildIdSet = new Set(existingChildIds);
+    const incomingChildIds = new Set();
     const newChildIds = [];
+
     for (const sub of subs) {
       const { marks, negativeMarks } = normalizeSubQuestionScoring(sub);
-      const child = await questionRepository.create({
+      const subIdStr = sub._id ? String(sub._id) : (sub.id ? String(sub.id) : null);
+
+      const subData = {
         questionText: sub.questionText,
         questionType: sub.questionType,
         options: sub.options,
@@ -455,13 +460,65 @@ export const updateQuestion = async (id, updateData) => {
         negativeMarks,
         tags: parentUpdate.tags,
         imageUrl: sub.imageUrl || null,
-        questionBank: existingQuestion.questionBank?._id || existingQuestion.questionBank,
-        sectionIndex: existingQuestion.sectionIndex,
-        orderInBank: existingQuestion.orderInBank,
-        createdBy: existingQuestion.createdBy?._id || existingQuestion.createdBy,
-        parentQuestionId: existingQuestion._id,
-      });
-      newChildIds.push(child._id);
+      };
+
+      if (subIdStr && existingChildIdSet.has(subIdStr)) {
+        // Edit existing sub-question in place (preserves original _id without deletion)
+        await questionRepository.updateById(subIdStr, subData);
+        newChildIds.push(subIdStr);
+        incomingChildIds.add(subIdStr);
+      } else {
+        // Create only new sub-questions
+        const child = await questionRepository.create({
+          ...subData,
+          questionBank: existingQuestion.questionBank?._id || existingQuestion.questionBank,
+          sectionIndex: existingQuestion.sectionIndex,
+          orderInBank: existingQuestion.orderInBank,
+          createdBy: existingQuestion.createdBy?._id || existingQuestion.createdBy,
+          parentQuestionId: existingQuestion._id,
+        });
+        const createdIdStr = child?._id?.toString?.() || String(child._id);
+        newChildIds.push(createdIdStr);
+        incomingChildIds.add(createdIdStr);
+      }
+    }
+
+    // Only delete child questions that the admin explicitly removed
+    const removedChildIds = existingChildIds.filter((cid) => !incomingChildIds.has(cid));
+    if (removedChildIds.length > 0) {
+      await Promise.all(removedChildIds.map((childId) => questionRepository.deleteById(childId)));
+    }
+
+    // Keep section-wise bank question list in sync if questions were added/removed
+    if (
+      existingQuestion.questionBank &&
+      (removedChildIds.length > 0 || newChildIds.some((nid) => !existingChildIdSet.has(nid)))
+    ) {
+      const bankId = existingQuestion.questionBank?._id || existingQuestion.questionBank;
+      const bank = await questionBankRepository.findById(bankId, false);
+      if (
+        bank?.useSectionWiseQuestions &&
+        typeof existingQuestion.sectionIndex === 'number' &&
+        bank.sections?.[existingQuestion.sectionIndex]
+      ) {
+        const sIndex = existingQuestion.sectionIndex;
+        const currentSecQuestions = (bank.sections[sIndex].questions || []).map((q) =>
+          q?._id?.toString?.() || q?.toString?.()
+        );
+        const filteredSecQuestions = currentSecQuestions.filter(
+          (qid) => !removedChildIds.includes(qid)
+        );
+        for (const nid of newChildIds) {
+          if (!filteredSecQuestions.includes(nid) && !existingChildIdSet.has(nid)) {
+            filteredSecQuestions.push(nid);
+          }
+        }
+        const sections = bank.sections.map((sec, idx) => ({
+          ...sec,
+          questions: idx === sIndex ? filteredSecQuestions : sec.questions,
+        }));
+        await questionBankRepository.updateById(bank._id, { sections });
+      }
     }
 
     const updatedParent = await questionRepository.updateById(id, {
@@ -478,7 +535,9 @@ export const updateQuestion = async (id, updateData) => {
     const children = newChildIds.length
       ? await questionRepository.findByIds(newChildIds)
       : [];
-    return formatConnectedQuestionForEdit(updatedParent, children);
+    const childrenMap = new Map(children.map((c) => [c._id?.toString?.() || String(c._id), c]));
+    const orderedChildren = newChildIds.map((cid) => childrenMap.get(cid)).filter(Boolean);
+    return formatConnectedQuestionForEdit(updatedParent, orderedChildren);
   }
 
   const updatedQuestion = await questionRepository.updateById(id, updateData);
