@@ -293,6 +293,15 @@ export const rateTeacher = asyncHandler(async (req, res) => {
     .json(ApiResponse.success(result, "Rating submitted successfully"));
 });
 
+/**
+ * GET /user/teacher-sessions/active-session
+ * Fetch active/pending call or chat session for the logged in student (for page refresh restoration)
+ */
+export const getStudentActiveSession = asyncHandler(async (req, res) => {
+  const data = await teacherConnectService.getStudentActiveSession(req.user._id);
+  return res.status(200).json(ApiResponse.success(data, "Student active session fetched successfully"));
+});
+
 export default {
   getAvailableTeachers,
   getTeacherById,
@@ -306,5 +315,6 @@ export default {
   getChatSessionMessages,
   checkWalletBalance,
   rateTeacher,
+  getStudentActiveSession,
 };
 

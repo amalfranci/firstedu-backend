@@ -175,30 +175,29 @@ export const setupTeacherCallSocket = (io) => {
 
     const restoreCallState = async () => {
       if (user.role === "student") {
-        const pending = await teacherSessionRepository.findOne({
-          student: userId,
-          sessionKind: "call",
-          status: "pending",
-        });
+        const pending = await teacherSessionRepository.findStudentPendingCallSession(userId);
         if (pending) {
           const sid = pending._id.toString();
           socket.data.pendingCallSessionId = sid;
           clearCallDisconnectCleanup("pending", userId, sid);
-          socket.emit("pending_call_restored", { sessionId: sid, session: pending });
+          socket.emit("pending_call_restored", {
+            sessionId: sid,
+            session: pending,
+            teacher: pending.teacher,
+          });
         }
       }
 
       if (user.role === "teacher") {
-        const pending = await teacherSessionRepository.findOne({
-          teacher: userId,
-          sessionKind: "call",
-          status: "pending",
-        });
+        const pending = await teacherSessionRepository.findTeacherPendingCallSession(userId);
         if (pending) {
-          socket.emit("incoming_call_request", {
-            session: pending,
-            student: pending.student,
-          });
+          const elapsedMs = Date.now() - new Date(pending.createdAt).getTime();
+          if (elapsedMs <= CALL_REQUEST_AUTO_CANCEL_MS + 15_000) {
+            socket.emit("incoming_call_request", {
+              session: pending,
+              student: pending.student,
+            });
+          }
         }
       }
 
@@ -214,11 +213,19 @@ export const setupTeacherCallSocket = (io) => {
       socket.data.callSessionId = sid;
       clearCallDisconnectCleanup("active", userId, sid);
       markCallParticipantJoined(sid, user.role);
-      socket.emit("joined_call_session", { sessionId: sid, session: ongoing, restored: true });
+      socket.emit("joined_call_session", {
+        sessionId: sid,
+        session: ongoing,
+        student: ongoing.student,
+        teacher: ongoing.teacher,
+        restored: true,
+      });
       if (ongoing.status === "ongoing" && ongoing.callStartTime) {
         const mediaPayload = {
           sessionId: sid,
           session: ongoing,
+          student: ongoing.student,
+          teacher: ongoing.teacher,
           timestamp: ongoing.callStartTime,
         };
         socket.emit("call_media_started", mediaPayload);

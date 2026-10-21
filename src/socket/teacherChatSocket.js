@@ -245,30 +245,29 @@ export const setupTeacherChatSocket = (io) => {
 
     const restoreChatState = async () => {
       if (user.role === "student") {
-        const pending = await teacherSessionRepository.findOne({
-          student: userId,
-          sessionKind: "chat",
-          status: "pending",
-        });
+        const pending = await teacherSessionRepository.findStudentPendingChatSession(userId);
         if (pending) {
           const sid = pending._id.toString();
           socket.data.pendingChatSessionId = sid;
           clearChatDisconnectCleanup("pending", userId, sid);
-          socket.emit("pending_chat_restored", { sessionId: sid, session: pending });
+          socket.emit("pending_chat_restored", {
+            sessionId: sid,
+            session: pending,
+            teacher: pending.teacher,
+          });
         }
       }
 
       if (user.role === "teacher") {
-        const pending = await teacherSessionRepository.findOne({
-          teacher: userId,
-          sessionKind: "chat",
-          status: "pending",
-        });
+        const pending = await teacherSessionRepository.findTeacherPendingChatSession(userId);
         if (pending) {
-          socket.emit("incoming_chat_request", {
-            session: pending,
-            student: pending.student,
-          });
+          const elapsedMs = Date.now() - new Date(pending.createdAt).getTime();
+          if (elapsedMs <= CHAT_REQUEST_AUTO_CANCEL_MS + 15_000) {
+            socket.emit("incoming_chat_request", {
+              session: pending,
+              student: pending.student,
+            });
+          }
         }
       }
 
@@ -284,7 +283,18 @@ export const setupTeacherChatSocket = (io) => {
       socket.data.chatSessionId = sid;
       clearChatDisconnectCleanup("active", userId, sid);
       markChatParticipantJoined(sid, user.role);
-      socket.emit("joined_chat_session", { sessionId: sid, session: ongoing, restored: true });
+      const { messages } = await teacherChatMessageRepository.findBySession(sid, {
+        limit: 100,
+        sortOrder: "asc",
+      });
+      socket.emit("joined_chat_session", {
+        sessionId: sid,
+        session: ongoing,
+        student: ongoing.student,
+        teacher: ongoing.teacher,
+        messages: messages || [],
+        restored: true,
+      });
       startChatBilling(ns, ongoing._id);
     };
 

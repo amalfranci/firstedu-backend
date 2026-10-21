@@ -127,6 +127,7 @@ import {
   getChatSessionMessages,
   checkWalletBalance,
   rateTeacher,
+  getStudentActiveSession,
 } from "../controllers/studentTeacherConnect.controller.js";
 import { postStudentAgoraRtcToken } from "../controllers/agoraRtc.controller.js";
 import {
@@ -565,6 +566,7 @@ router.post("/teachers/:teacherId/rate", verifyJWT, rateTeacher);
 router.get("/teachers/:teacherId/check-balance", verifyJWT, checkWalletBalance);
 
 // Teacher sessions (history) + Agora token after call_accepted on /teacher-call socket
+router.get("/teacher-sessions/active-session", verifyJWT, getStudentActiveSession);
 router.get("/teacher-sessions", verifyJWT, getCallHistory);
 router.get("/teacher-sessions/recordings", verifyJWT, getCallRecordings);
 router.get("/teacher-sessions/call-reports", verifyJWT, getCallReportConversations);

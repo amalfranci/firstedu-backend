@@ -203,6 +203,15 @@ export const getDashboard = asyncHandler(async (req, res) => {
   return res.status(200).json(ApiResponse.success(data, "Dashboard fetched successfully"));
 });
 
+/**
+ * GET /teacher/active-session
+ * Fetch active/pending call or chat session for the logged in teacher (for page refresh restoration)
+ */
+export const getActiveSession = asyncHandler(async (req, res) => {
+  const data = await teacherConnectService.getTeacherActiveSession(req.user._id);
+  return res.status(200).json(ApiResponse.success(data, "Teacher active session fetched successfully"));
+});
+
 export default {
   getProfile,
   updateProfile,
@@ -212,5 +221,6 @@ export default {
   deleteTeacherSession,
   getEarnings,
   getDashboard,
+  getActiveSession,
 };
 
