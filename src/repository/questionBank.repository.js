@@ -17,7 +17,7 @@ const getBanksStatsBatch = async (bankIds) => {
       typeof id === "string" ? new mongoose.Types.ObjectId(id) : id
     );
     const results = await Question.aggregate([
-      { $match: { questionBank: { $in: objectIds } } },
+      { $match: { questionBank: { $in: objectIds }, isParent: { $ne: true } } },
       {
         $group: {
           _id: "$questionBank",
@@ -252,7 +252,7 @@ const getQuestionsByBankId = async (bankId, options = {}) => {
 
 const countQuestionsByBankId = async (bankId) => {
   try {
-    return await Question.countDocuments({ questionBank: bankId });
+    return await Question.countDocuments({ questionBank: bankId, isParent: { $ne: true } });
   } catch (error) {
     throw new ApiError(500, "Failed to count questions", error.message);
   }

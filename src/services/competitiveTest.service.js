@@ -21,13 +21,13 @@ async function attachQuestionCounts(tests = []) {
   const [manual, ai] = await Promise.all([
     manualIds.length
       ? Question.aggregate([
-          { $match: { questionBank: { $in: manualIds } } },
+          { $match: { questionBank: { $in: manualIds }, isParent: { $ne: true } } },
           { $group: { _id: "$questionBank", total: { $sum: 1 } } },
         ])
       : [],
     aiIds.length
       ? AiQuestion.aggregate([
-          { $match: { aiQuestionBank: { $in: aiIds } } },
+          { $match: { aiQuestionBank: { $in: aiIds }, isParent: { $ne: true } } },
           { $group: { _id: "$aiQuestionBank", total: { $sum: 1 } } },
         ])
       : [],
