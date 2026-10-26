@@ -122,7 +122,19 @@ const formatQuestionBlock = (q, label) => {
         return lines.join('\n');
     }
 
+    // Always print a Passage block when present — including single/multiple
+    // VA items that carry an embedded source separately from the stem.
+    const passage = String(q?.passage || q?.passageText || q?.paragraph || '').trim();
     const stem = stemOf(q);
+    if (passage) {
+        const stemHasPassage =
+            stem &&
+            passage.length >= 80 &&
+            stem.includes(passage.slice(0, Math.min(80, passage.length)));
+        if (!stemHasPassage) {
+            lines.push('Passage:', passage, '');
+        }
+    }
     if (stem) lines.push(stem, '');
 
     const opts = optionsOf(q);

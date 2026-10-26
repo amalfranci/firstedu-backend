@@ -94,22 +94,6 @@ const advancedQuestionTypes = (paperCounts, defaultMix = ADVANCED_QUALITY_MIX) =
       enabled: (paperCounts.multi || 0) > 0,
     },
     {
-      id: "integer",
-      label: "Numerical / integer",
-      group: "standalone",
-      paperCount: paperCounts.integer,
-      defaultCount: defaultMix.integer,
-      enabled: (paperCounts.integer || 0) > 0,
-    },
-    {
-      id: "match",
-      label: "Match list",
-      group: "standalone",
-      paperCount: paperCounts.match || 0,
-      defaultCount: defaultMix.match || 0,
-      enabled: (paperCounts.match || 0) > 0,
-    },
-    {
       id: "paragraph",
       label: "Comprehension / paragraph",
       group: "passage",
@@ -118,7 +102,8 @@ const advancedQuestionTypes = (paperCounts, defaultMix = ADVANCED_QUALITY_MIX) =
       enabled: (paperCounts.paragraph || 0) > 0,
     },
   ];
-  return types.filter((t) => t.enabled || t.id === "single" || t.id === "multiple" || t.id === "integer");
+  // Numerical/TITA + Match List removed from AI Powered Test for all exams.
+  return types.filter((t) => t.enabled || t.id === "single" || t.id === "multiple");
 };
 
 const mainQuestionTypes = () => [
@@ -131,8 +116,8 @@ const mainQuestionTypes = () => [
     enabled: true,
   },
   {
-    id: "integer",
-    label: "Numerical / integer",
+    id: "multiple",
+    label: "Multi correct",
     group: "standalone",
     paperCount: 5,
     defaultCount: 0,

@@ -30,7 +30,10 @@ import {
   clearProviderFatalAbort,
   getProviderFatalAbort,
 } from "../utils/aiProviderErrors.js";
-import { alignExplanationToMarkedAnswer } from "../utils/explanationAnswerAlign.js";
+import {
+  alignExplanationToMarkedAnswer,
+  sanitizeExplanationText,
+} from "../utils/explanationAnswerAlign.js";
 import { safeJsonParse } from "../utils/aiJsonRepair.js";
 import { dedupePaperQuestionsByStem } from "../utils/paperQuestionDedupe.js";
 import { callOpenAIReasoningJson } from "./openaiReasoningChat.service.js";
@@ -84,6 +87,7 @@ import {
 import { buildCatVarcAuthoringBlock } from "./examPromptContext.service.js";
 import {
   buildCompetitiveQualityLock,
+  buildQuestionStructureLock,
   isVerbalQualitativeSubject,
   looksLikeMisplacedNumericalStem,
   looksLikeNumericalVarcStem,
@@ -1171,41 +1175,43 @@ const sanitizeQuestion = (q) => ({
 
 export const planPipelineSlots = (config = {}) => {
   const subjects = (config.subjects || ["Mathematics"]).map(normalizeSubject);
+  // All exams: only Single Correct + Multiple Correct.
+  // Legacy integer/match counts fold into single.
+  const legacyExtra =
+    Math.max(0, Number(config.typeCounts?.integer) || 0) +
+    Math.max(0, Number(config.typeCounts?.match) || 0);
   let typeCounts = {
-    single: Math.max(0, Number(config.typeCounts?.single) || 0),
+    single:
+      Math.max(0, Number(config.typeCounts?.single) || 0) + legacyExtra,
     multiple: Math.max(
       0,
       Number(config.typeCounts?.multiple ?? config.typeCounts?.multi) || 0
     ),
-    integer: Math.max(0, Number(config.typeCounts?.integer) || 0),
-    match: Math.max(0, Number(config.typeCounts?.match) || 0),
   };
-  let typeSum =
-    typeCounts.single +
-    typeCounts.multiple +
-    typeCounts.integer +
-    typeCounts.match;
+  let typeSum = typeCounts.single + typeCounts.multiple;
   const requestedTotal = Math.max(0, Number(config.totalQuestions) || 0);
-  // Keep generate / Luna verify / expand on one agreed count.
+  // Keep generate / verify on one agreed count.
   if (requestedTotal > 0 && typeSum !== requestedTotal) {
     if (typeSum <= 0) {
-      typeCounts = { single: requestedTotal, multiple: 0, integer: 0, match: 0 };
+      typeCounts = { single: requestedTotal, multiple: 0 };
       typeSum = requestedTotal;
     } else {
-      // Scale type mix to requested total (preserve proportions).
       const scale = requestedTotal / typeSum;
       let single = Math.max(0, Math.round(typeCounts.single * scale));
-      let multiple = Math.max(0, Math.round(typeCounts.multiple * scale));
-      let integer = Math.max(0, Math.round(typeCounts.integer * scale));
-      let match = Math.max(
+      let multiple = Math.max(
         0,
-        requestedTotal - single - multiple - integer
+        requestedTotal - single
       );
-      if (match < 0) {
-        integer = Math.max(0, integer + match);
-        match = 0;
+      // Prefer preserving multiple share when rounding drifts.
+      const targetMulti = Math.max(
+        0,
+        Math.round(typeCounts.multiple * scale)
+      );
+      if (targetMulti !== multiple && targetMulti <= requestedTotal) {
+        multiple = targetMulti;
+        single = requestedTotal - multiple;
       }
-      let sum = single + multiple + integer + match;
+      let sum = single + multiple;
       while (sum < requestedTotal) {
         single += 1;
         sum += 1;
@@ -1214,7 +1220,7 @@ export const planPipelineSlots = (config = {}) => {
         single -= 1;
         sum -= 1;
       }
-      typeCounts = { single, multiple, integer, match };
+      typeCounts = { single, multiple };
       typeSum = requestedTotal;
     }
   }
@@ -1355,7 +1361,7 @@ export const planPipelineSlots = (config = {}) => {
     return chosen[index % chosen.length];
   };
 
-  const typeOrder = ["single", "multiple", "integer", "match"];
+  const typeOrder = ["single", "multiple"];
   const typeQueue = [];
   for (const type of typeOrder) {
     for (let i = 0; i < (typeCounts[type] || 0); i += 1) typeQueue.push(type);
@@ -1380,14 +1386,12 @@ export const planPipelineSlots = (config = {}) => {
     seats.push({ subject: s, index: seats.length });
   }
 
-  const slots = { single: [], multiple: [], integer: [], match: [] };
+  const slots = { single: [], multiple: [] };
   const usedTopicKeys = new Set();
   const scoreTopicForType = (topic, type) => {
     const archetypes = topic?.hardArchetypes || topic?.ncert?.hard_archetypes || [];
     const n = archetypes.length;
-    if (type === "match") return n * 3 + (n >= 3 ? 10 : 0);
     if (type === "multiple") return n * 2 + 2;
-    if (type === "integer") return 5 + Math.min(n, 3);
     return 4 + Math.min(n, 4);
   };
   const conceptRotationByTopic = new Map();
@@ -1402,13 +1406,6 @@ export const planPipelineSlots = (config = {}) => {
     const usedCount = conceptRotationByTopic.get(key) || 0;
     conceptRotationByTopic.set(key, usedCount + 1);
 
-    // For match prefer longer multi-subproblem families.
-    if (type === "match") {
-      const ranked = [...archetypes].sort(
-        (a, b) => String(b).length - String(a).length
-      );
-      return String(ranked[usedCount % ranked.length] || "").trim();
-    }
     // Rotate through distinct concepts/subtopics so multiple seats in the same chapter do NOT get the exact same archetype
     return String(archetypes[usedCount % archetypes.length] || "").trim();
   };
@@ -1458,15 +1455,12 @@ export const planPipelineSlots = (config = {}) => {
       hardArchetype: preferred || topic.hardArchetype || "",
       chapter_lock: true,
       concept_lock: Boolean(preferred),
-      list1_count: type === "match" ? 4 : undefined,
     });
   });
 
   const resolvedTypeCounts = {
     single: slots.single.length,
     multiple: slots.multiple.length,
-    integer: slots.integer.length,
-    match: slots.match.length,
   };
 
   const leftoverPool = subjects.flatMap((s) => leftovers[s] || []);
@@ -1477,6 +1471,23 @@ export const planPipelineSlots = (config = {}) => {
     paper,
     subjects,
     totalQuestions,
+    questionStructure: config.questionStructure || "both",
+    passageCount: Math.max(0, Number(config.passageCount) || 0),
+    questionsPerPassage: Math.max(0, Number(config.questionsPerPassage) || 0),
+    passageBasedQuestions: Math.max(
+      0,
+      Number(config.passageBasedQuestions) ||
+        (Number(config.passageCount) || 0) *
+          (Number(config.questionsPerPassage) || 0)
+    ),
+    standaloneQuestions: Math.max(
+      0,
+      Number(config.standaloneQuestions) ||
+        totalQuestions -
+          (Number(config.passageBasedQuestions) ||
+            (Number(config.passageCount) || 0) *
+              (Number(config.questionsPerPassage) || 0))
+    ),
     typeCounts: resolvedTypeCounts,
     subjectCounts,
     topicPool,
@@ -1487,8 +1498,6 @@ export const planPipelineSlots = (config = {}) => {
     unusedSlots: {
       single: unusedFrom(),
       multiple: unusedFrom(),
-      integer: unusedFrom(),
-      match: unusedFrom(),
     },
   };
 };
@@ -1501,6 +1510,16 @@ const generateBatch = async ({
   excludeTexts = [],
   examType,
   examLabel,
+  questionStructure = "both",
+  passageCount = 0,
+  questionsPerPassage = 0,
+  passageBasedQuestions = 0,
+  standaloneQuestions = 0,
+  /** "standalone" | "passage_followup" | "" — seat role inside mixed papers */
+  seatMode = "",
+  /** When regenerating a linked RC sub-question, reuse this exact passage. */
+  lockedPassage = "",
+  connectedGroup = "",
 }) => {
   if (count <= 0) return [];
   const batchSlots = (slots || []).slice(0, count);
@@ -1508,10 +1527,11 @@ const generateBatch = async ({
   const exam = paperExamIdentity({ examType, examLabel });
   const scoreFloor = paperScoreFloor(exam.examType);
   const questionKind = paperDefaultQuestionKind(exam.examType);
+  const safeType = type === "multiple" ? "multiple" : "single";
   const topicCards = buildWriterTopicCards(
     batchSlots,
     count,
-    type,
+    safeType,
     exam.examLabel,
     exam.examType
   );
@@ -1523,13 +1543,9 @@ const generateBatch = async ({
         ? "HARD (exam-faithful, single-concept)"
         : "HARD (exam-faithful)";
   const typeLine =
-    type === "multiple"
-      ? `Generate exactly ${count} ${hardWord} MULTI-CORRECT MCQs. One or more of A–D may be correct.`
-      : type === "integer"
-        ? `Generate exactly ${count} ${hardWord} INTEGER / NUMERICAL questions. Answer is an integer. NO options.`
-        : type === "match"
-          ? `Generate exactly ${count} ${hardWord} MATCH THE FOLLOWING questions with exactly 4 List-I items, all chapter-locked.`
-          : `Generate exactly ${count} ${hardWord} SINGLE-CORRECT MCQs. Exactly one of A–D is correct. Place the correct option randomly among A–D (do NOT always put the correct answer in A).`;
+    safeType === "multiple"
+      ? `Generate exactly ${count} ${hardWord} MULTI-CORRECT MCQs. At least two of A–D are correct.`
+      : `Generate exactly ${count} ${hardWord} SINGLE-CORRECT MCQs. Exactly one of A–D is correct. Place the correct option randomly among A–D (do NOT always put the correct answer in A).`;
   const exampleScore =
     exam.examType === "jee_advanced"
       ? 85
@@ -1538,52 +1554,70 @@ const generateBatch = async ({
         : 78;
   const exampleLetter = ["A", "B", "C", "D"][Math.floor(Math.random() * 4)];
   const schema =
-    type === "multiple"
+    safeType === "multiple"
       ? `{"questions":[{"questionType":"multiple","conceptSlot":"string","chapter":"string","questionText":"string","options":["A","B","C","D"],"correctLetters":["A","C"],"insightOneLiner":"string","difficultySelfScore":${exampleScore}}]}`
-      : type === "integer"
-        ? `{"questions":[{"questionType":"integer","conceptSlot":"string","chapter":"string","questionText":"string","finalAnswer":42,"answerDisplay":"42","insightOneLiner":"string","difficultySelfScore":${exampleScore}}]}`
-        : type === "match"
-          ? `{"questions":[{"questionType":"match","conceptSlot":"string","chapter":"string","questionText":"string","listI":["...","...","...","..."],"listII":["...","...","...","..."],"options":["1-P, 2-Q, 3-R, 4-S","1-Q, 2-P, 3-S, 4-R","1-P, 2-R, 3-Q, 4-S","1-S, 2-Q, 3-P, 4-R"],"correctAnswer":"${exampleLetter}","insightOneLiner":"string","difficultySelfScore":${exampleScore},"listIChapterIds":["same","same","same","same"]}]}`
-          : `{"questions":[{"questionType":"single","conceptSlot":"string","chapter":"string","questionText":"string","options":["optA","optB","optC","optD"],"correctLetters":["${exampleLetter}"],"insightOneLiner":"string","difficultySelfScore":${exampleScore}}]}`;
-
-  const matchLockBlock =
-    type === "match"
-      ? `
-**MATCH CHAPTER/CONCEPT LOCK (mandatory)**
-- chapter_lock=true, concept_lock=true, list1_count=4.
-- Every List-I item MUST have the assigned chapter as its primary concept.
-- At least 3 of 4 List-I items must directly test the assigned concept family.
-- Do NOT drift into unrelated chapters (e.g. Conic Sections inside Applications of Derivatives).
-- If you cannot build 4 chapter-faithful List-I items, still stay inside the chapter — never borrow another chapter's core idea.
-`
-      : "";
+      : `{"questions":[{"questionType":"single","conceptSlot":"string","chapter":"string","questionText":"string","options":["optA","optB","optC","optD"],"correctLetters":["${exampleLetter}"],"insightOneLiner":"string","difficultySelfScore":${exampleScore}}]}`;
 
   const hardnessLock = buildWriterHardnessLock(exam.examType, exam.examLabel);
   const subjectNorm = normalizeSubject(subj);
   const isCatVarc =
     exam.examType === "cat" && subjectNorm === "VARC";
-  const catVarcBlock = isCatVarc
-    ? buildCatVarcAuthoringBlock({
-        passageCount: 0,
-        singleCount: count,
-        passageSingleCount: 4,
-      })
-    : "";
+  const effectivePassages = Math.max(0, Number(passageCount) || 0);
+  const effectivePerPassage = Math.max(0, Number(questionsPerPassage) || 0);
+  const mode = String(seatMode || "").toLowerCase();
+  const sharedPassage = String(lockedPassage || "").trim();
+  // Mixed papers: standalone seats must NOT invent a new RC each time.
+  const effectiveStructure =
+    mode === "standalone"
+      ? "standalone"
+      : mode === "passage_followup"
+        ? "passage"
+        : questionStructure;
+  const catVarcBlock =
+    isCatVarc && mode !== "standalone" && mode !== "passage_followup"
+      ? buildCatVarcAuthoringBlock({
+          passageCount: effectivePassages,
+          singleCount: count,
+          passageSingleCount: effectivePerPassage || 4,
+        })
+      : "";
   // Applies to ALL competitive exams in AI Powered Test (verbal + MCQ completeness).
   const competitiveQualityLock = buildCompetitiveQualityLock({
     examType: exam.examType,
     examLabel: exam.examLabel,
     subject: subjectNorm,
-    type,
+    type: safeType,
   });
+  const structureLock = buildQuestionStructureLock(effectiveStructure, {
+    passageCount: effectivePassages,
+    questionsPerPassage: effectivePerPassage,
+    passageBasedQuestions,
+    standaloneQuestions,
+  });
+  const passageFollowupLock = sharedPassage
+    ? `
+**LOCKED SHARED PASSAGE (Connected Group ${connectedGroup || "P"}):**
+You MUST write the sub-question against THIS passage only. Do NOT invent a new passage.
+Do NOT paste the passage into questionText — questionText is the sub-question stem only.
+
+PASSAGE:
+${sharedPassage}
+`
+    : mode === "standalone"
+      ? `
+**STANDALONE LOCK:** Write an independent stem. Do NOT invent a Reading Comprehension passage or "Read the passage…" lead-in.
+`
+      : "";
 
   const prompt = `You are a senior ${exam.examLabel} ${label} question setter.
 ${typeLine}
-Exactly 4 options unless integer (5 when the exam format requires it). Use each assigned chapter exactly. Valid LaTeX/JSON. No explanations or solveSteps.
-${matchLockBlock}
+Exactly 4 options for every MCQ. Use each assigned chapter exactly. Valid LaTeX/JSON. No explanations or solveSteps.
+Never generate Numerical/TITA or Match List items — only Single Correct or Multiple Correct.
 ${hardnessLock}
 ${catVarcBlock}
 ${competitiveQualityLock}
+${structureLock}
+${passageFollowupLock}
 
 TOPIC CONTEXT
 
@@ -1702,6 +1736,13 @@ ${schema}`;
         difficultyTier: "hard",
         _questionKind: questionKind,
         _generatorDifficultySelfScore: Number(q.difficultySelfScore) || null,
+        ...(sharedPassage
+          ? {
+              passage: sharedPassage,
+              passageText: sharedPassage,
+              _connectedGroup: connectedGroup || "P",
+            }
+          : {}),
       });
     })
     .filter((q) => {
@@ -1732,6 +1773,173 @@ ${schema}`;
       }
       return true;
     });
+  return mapped;
+};
+
+/**
+ * One Excel-style Connected Group: one shared passage + N linked MCQs.
+ * questionText must be the sub-question only (passage stored separately).
+ */
+const generatePassagePack = async ({
+  count,
+  slots,
+  questionTypes = [],
+  subject,
+  excludeTexts = [],
+  examType,
+  examLabel,
+  packId = "P1",
+}) => {
+  const n = Math.max(0, Number(count) || 0);
+  if (n <= 0) return [];
+  const batchSlots = (slots || []).slice(0, n);
+  while (batchSlots.length < n) {
+    batchSlots.push(batchSlots[batchSlots.length - 1] || {});
+  }
+  const types = Array.from({ length: n }, (_, i) =>
+    questionTypes[i] === "multiple" ? "multiple" : "single"
+  );
+  const subj = normalizeSubject(subject || batchSlots[0]?.subject);
+  const exam = paperExamIdentity({ examType, examLabel });
+  const scoreFloor = paperScoreFloor(exam.examType);
+  const questionKind = paperDefaultQuestionKind(exam.examType);
+  const topicCards = buildWriterTopicCards(
+    batchSlots,
+    n,
+    types.includes("multiple") ? "multiple" : "single",
+    exam.examLabel,
+    exam.examType
+  );
+  const label = writerLabel(subj);
+  const subjectNorm = normalizeSubject(subj);
+  const hardnessLock = buildWriterHardnessLock(exam.examType, exam.examLabel);
+  const competitiveQualityLock = buildCompetitiveQualityLock({
+    examType: exam.examType,
+    examLabel: exam.examLabel,
+    subject: subjectNorm,
+    type: types[0] || "single",
+  });
+  const typePlan = types
+    .map((t, i) => `  ${i + 1}. questionType "${t}"`)
+    .join("\n");
+  const schema = `{"passage":"shared reading passage 450-750 words","connectedGroup":"${packId}","questions":[{"questionType":"single|multiple","conceptSlot":"string","chapter":"string","questionText":"sub-question stem only — do NOT repeat the passage","options":["A","B","C","D"],"correctLetters":["A"],"insightOneLiner":"string","difficultySelfScore":78}]}`;
+
+  const prompt = `You are a senior ${exam.examLabel} ${label} question setter.
+Generate ONE Connected Group (like Excel import: Connected Group = ${packId}).
+
+HARD RULES (Excel Connected Group parity):
+1. Write exactly ONE shared reading passage in "passage".
+2. Write exactly ${n} linked questions in "questions" — ALL based on that SAME passage.
+3. questionText is the sub-question ONLY. Never paste or restate the full passage inside questionText.
+4. Exactly 4 options per question. Never Numerical/TITA or Match List.
+5. Per-question types (mandatory):
+${typePlan}
+6. connectedGroup must be "${packId}".
+${hardnessLock}
+${competitiveQualityLock}
+
+TOPIC CONTEXT
+${topicCards}
+
+${excludeBlock(excludeTexts)}
+
+Return ONLY JSON:
+${schema}`;
+
+  pipelineLog("GENERATE_PASSAGE_PACK", {
+    packId,
+    count: n,
+    subject: subj,
+    examType: exam.examType,
+    types,
+    topicIds: topicIdsFromSlots(batchSlots),
+  });
+
+  const parsed = await callGeminiJson(prompt, { kind: "generate" });
+  const root = parsed && typeof parsed === "object" ? parsed : {};
+  const passage = String(root.passage || root.paragraph || "").trim();
+  const list = Array.isArray(root.questions)
+    ? root.questions
+    : listFromGemini(parsed);
+  if (!passage || passage.length < 180) {
+    pipelineLog("PASSAGE_PACK_DROP", {
+      packId,
+      reason: "missing_or_short_passage",
+      passageChars: passage.length,
+    });
+    return [];
+  }
+
+  const mapped = [];
+  for (let i = 0; i < n; i++) {
+    const q = list[i];
+    if (!q?.questionText) continue;
+    if (!passesHardnessScore(q, scoreFloor)) continue;
+    const wantType = types[i] || "single";
+    const slot = batchSlots[i] || batchSlots[0] || {};
+    const insight = String(q.insightOneLiner || "").trim();
+    const placeholder = insight || String(q.explanation || "").trim();
+    const rawSlot = String(q.conceptSlot || "").trim();
+    const lockedSlot = String(slot.conceptSlot || slot.hardArchetype || "").trim();
+    const chosenSlot = slugSlot(
+      slot.topicId,
+      lockedSlot || rawSlot || (slot.hardArchetypes || [])[0] || slot.chapter,
+      i
+    );
+    const letters = normalizeMultiLetters(
+      q.correctLetters || q.correct_letters || q.correctAnswer
+    );
+    const indices = lettersToCorrectIndices(letters);
+    const stem = String(q.questionText || "")
+      .replace(/^Passage\s*:\s*[\s\S]*?(?=(?:Which|According|Based|Select|Identify|Choose|What|Why|How)\b)/i, "")
+      .trim();
+    const item = sanitizeQuestion({
+      questionType: wantType,
+      questionText: stem || q.questionText,
+      options: q.options || [],
+      correctIndices: indices,
+      correctIndex: indices[0] ?? 0,
+      correctAnswer: letters || "",
+      explanation: placeholder,
+      passage,
+      passageText: passage,
+      _connectedGroup: packId,
+      _passagePackIndex: i,
+      _conceptSlot: chosenSlot,
+      _chapter: slot.chapter || q.chapter || "",
+      _topicId: slot.topicId || "",
+      _subject: slot.subject || subj,
+      _hardArchetype: lockedSlot || chosenSlot || slot.hardArchetype || "",
+      _insight: insight,
+      _assignedDifficulty: slot.difficulty || "hard",
+      _chapterLock: slot.chapter_lock !== false,
+      _conceptLock: Boolean(slot.concept_lock || lockedSlot),
+      _examType: exam.examType,
+      _examLabel: exam.examLabel,
+      _advancedType: wantType,
+      difficultyTier: "hard",
+      _questionKind: questionKind,
+      _generatorDifficultySelfScore: Number(q.difficultySelfScore) || null,
+    });
+    if (!item) continue;
+    if (
+      isVerbalQualitativeSubject(subjectNorm) &&
+      looksLikeMisplacedNumericalStem(item.questionText)
+    ) {
+      continue;
+    }
+    if (!mcqOptionsAreComplete(item.options, exam.examType)) continue;
+    mapped.push(item);
+  }
+
+  if (mapped.length < n) {
+    pipelineLog("PASSAGE_PACK_PARTIAL", {
+      packId,
+      want: n,
+      got: mapped.length,
+      passageChars: passage.length,
+    });
+  }
   return mapped;
 };
 
@@ -2203,6 +2411,14 @@ export const generatePipelineQuestions = (body = {}) =>
     excludeTexts: body.excludeQuestionTexts || body.excludeTexts || [],
     examType: body.examType,
     examLabel: body.examLabel,
+    questionStructure: body.questionStructure || body.config?.questionStructure || "both",
+    passageCount: body.passageCount ?? body.config?.passageCount ?? 0,
+    questionsPerPassage:
+      body.questionsPerPassage ?? body.config?.questionsPerPassage ?? 0,
+    passageBasedQuestions:
+      body.passageBasedQuestions ?? body.config?.passageBasedQuestions ?? 0,
+    standaloneQuestions:
+      body.standaloneQuestions ?? body.config?.standaloneQuestions ?? 0,
   });
 
 export const dualLockPipelineQuestions = async (questions = []) => {
@@ -2245,30 +2461,8 @@ const optionPlainText = (o) => {
   return text;
 };
 
-/** Repair common Gemini/o3 LaTeX corruptions before UI/bank save. */
-export const sanitizeExplanationLatex = (raw) => {
-  let text = String(raw || "");
-  if (!text) return text;
-  text = text
-    .replace(/<[^>]+>/g, " ")
-    .replace(/Long\)arrow/gi, "\\rightarrow")
-    .replace(/\)arrow/gi, "\\rightarrow")
-    .replace(/\bLongrightarrow\b/g, "\\longrightarrow")
-    .replace(/\bdll\b/g, "")
-    .replace(/\bdfrac\b/g, "\\dfrac")
-    .replace(/\bfrac\b(?![a-zA-Z])/g, "\\frac")
-    // Fix glued "Option Bnalysis" / "Option Ay option" from broken \\textbf{B}
-    .replace(/\bOption\s*([A-D])([a-z])/g, "Option $1. $2")
-    .replace(/\btextbf\b/g, "\\textbf")
-    .replace(/(?<![\\])<=(?=[\s$\d])/g, "\\le ")
-    .replace(/(?<![\\])>=(?=[\s$\d])/g, "\\ge ")
-    .replace(/\[dfrac\{([^}\]]+)\](\d+)\}/gi, "\\dfrac{$1}{$2}")
-    .replace(/\[frac\{([^}\]]+)\](\d+)\}/gi, "\\frac{$1}{$2}")
-    // Do NOT rewrite prose option markers (a)/(b) into mathrm — that breaks VARC.
-    .replace(/\s+/g, " ")
-    .trim();
-  return text;
-};
+/** Repair common Gemini/o3 LaTeX / prose corruptions before UI/bank save. */
+export const sanitizeExplanationLatex = (raw) => sanitizeExplanationText(raw);
 
 const toUiQuestion = (q, config = {}) => {
   const type = q._advancedType || q.questionType;
@@ -2299,6 +2493,7 @@ const toUiQuestion = (q, config = {}) => {
   const questionKind =
     q._questionKind || paperDefaultQuestionKind(exam.examType);
   const stem = sanitizeExplanationLatex(q.questionText);
+  const passage = String(q.passage || q.passageText || q.paragraph || "").trim();
   return {
     questionType: uiType,
     text: stem,
@@ -2320,6 +2515,10 @@ const toUiQuestion = (q, config = {}) => {
     topic: q._chapter || q.chapter || q.topic || "",
     chapter: q._chapter || q.chapter || "",
     topicId: q._topicId || q.topicId || "",
+    passage,
+    passageText: passage,
+    _connectedGroup: q._connectedGroup || null,
+    _passagePackIndex: q._passagePackIndex ?? null,
     _conceptSlot: q._conceptSlot,
     _chapter: q._chapter,
     _topicId: q._topicId,
@@ -2330,6 +2529,10 @@ const toUiQuestion = (q, config = {}) => {
     _trustGrade: q._trustGrade,
     _productionReady: q._productionReady,
     _needsReview: q._needsReview,
+    _qualityGateIssues: q._qualityGateIssues || null,
+    _qualityGateOk: q._qualityGateOk ?? null,
+    _qualityGateNeedsReview: q._qualityGateNeedsReview ?? null,
+    _optionShuffleSkipped: q._optionShuffleSkipped || null,
     _doubleSolverAgree: q._doubleSolverAgree,
     _explanationExpanded: q._explanationExpanded,
     _insight: q._insight,
@@ -2511,6 +2714,7 @@ const processOneSlot = async ({
         excludeTexts: exclude,
         examType,
         examLabel,
+        questionStructure: "both",
       });
       generated = part[0] || null;
       if (generated) {
@@ -2797,6 +3001,7 @@ export const runAdvancedPaperPipeline = async (
     resumeItems: resumeJob?.items || [],
     deps: {
       generateBatch,
+      generatePassagePack,
       expandExplanation,
       explanationLooksComplete,
       toUiQuestion,

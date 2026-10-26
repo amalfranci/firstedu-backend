@@ -288,7 +288,14 @@ export const createAiQuestionBankWithQuestions = async (data, createdBy) => {
         })),
         aiProvider: data.aiProvider || "gemini",
         generationTopic: data.generationTopic || null,
-        questionCount: questionsInput.length,
+        // Answerable MCQs: connected children count individually (not the parent row).
+        questionCount: questionsInput.reduce((n, q) => {
+          if (String(q?.questionType || "").toLowerCase() === "connected") {
+            const subs = q.subQuestions || q.connectedQuestions || [];
+            return n + (Array.isArray(subs) ? subs.length : 0);
+          }
+          return n + 1;
+        }, 0),
         createdBy,
       },
       session
@@ -389,6 +396,11 @@ export const createAiQuestionBankWithQuestions = async (data, createdBy) => {
         continue;
       }
 
+      const flatPassage =
+        (q.passage && String(q.passage).trim()) ||
+        (q.passageText && String(q.passageText).trim()) ||
+        (q.paragraph && String(q.paragraph).trim()) ||
+        "";
       const [doc] = await AiQuestion.create(
         [
           {
@@ -401,6 +413,9 @@ export const createAiQuestionBankWithQuestions = async (data, createdBy) => {
             marks: q.marks ?? 1,
             negativeMarks: questionNegativeMarks,
             imageUrl: q.imageUrl || null,
+            // Keep singleton VA source text when FE sends passage separately
+            // (all exams — prevents orphan "the author/passage" stems).
+            ...(flatPassage ? { passage: flatPassage } : {}),
           },
         ],
         { session }

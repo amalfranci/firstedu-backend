@@ -77,51 +77,31 @@ export const looksLikeMisplacedNumericalStem = (stem = "") => {
 /** @deprecated alias — keep older import sites working */
 export const looksLikeNumericalVarcStem = looksLikeMisplacedNumericalStem;
 
-export const examAllowsMultiple = (examType = "") => {
-  const t = String(examType || "").toLowerCase();
-  return t === "jee_advanced";
-};
+/** Multiple Correct is allowed for all AI Powered Test exams when selected. */
+export const examAllowsMultiple = (_examType = "") => true;
 
-export const examAllowsMatch = (examType = "") => {
-  const t = String(examType || "").toLowerCase();
-  return t === "jee_advanced";
-};
+/** Match List removed platform-wide. */
+export const examAllowsMatch = (_examType = "") => false;
 
-export const examAllowsInteger = (examType = "", subject = "") => {
-  const t = String(examType || "").toLowerCase();
-  const subj = String(subject || "").trim();
-
-  // Verbal/reading comprehension never receives integer/TITA in any exam
-  if (isVerbalQualitativeSubject(subj)) return false;
-
-  if (t === "jee_advanced" || t === "jee_main") return true;
-
-  if (t === "cat") {
-    const key = subj.toUpperCase();
-    if (key === "QA") return true;
-    if (key === "DILR" || key === "VARC") return false;
-    return isQuantOrDiSubject(subj);
-  }
-
-  // NEET, CLAT, GMAT, IBPS, SSC CGL Tier 1/2, UPSC do NOT have integer questions!
-  return false;
-};
+/** Numerical / TITA removed platform-wide. */
+export const examAllowsInteger = (_examType = "", _subject = "") => false;
 
 /**
- * Never put integer/TITA on verbal sections or exams that do not support it.
- * Strictly enforce exam-appropriate question types:
- * - JEE Advanced: single, multiple, integer, match
- * - JEE Main: single, integer
- * - CAT: QA allows single & integer; VARC and DILR allow ONLY single
- * - NEET, CLAT, GMAT, IBPS, SSC CGL, UPSC: strictly ONLY single
+ * Seat type policy for AI Powered Test (all exams):
+ * - Only `single` and `multiple`
+ * - `integer` / `match` / unknown → remapped to `single`
  */
 export const resolveCompetitiveSeatType = ({
   examType = "",
   subject = "",
   fallbackType = "single",
 } = {}) => {
+  void examType;
+  void subject;
   const rawType = String(fallbackType || "single").toLowerCase();
-  return rawType || "single";
+  if (rawType === "multiple" || rawType === "multi") return "multiple";
+  // integer, match, connected leftovers, etc. → single MCQ
+  return "single";
 };
 
 export const countNonEmptyOptions = (options = []) =>
@@ -153,20 +133,68 @@ export const buildCompetitiveQualityLock = ({
 - Keep LaTeX only inside \`$...$\` when math is required; never for ordinary English sentences.
 `);
 
-  if (verbal && type !== "integer") {
+  if (verbal) {
     parts.push(`
 **VERBAL / READING SECTION LOCK (${subject || "Verbal"}):**
 - Output ONLY qualitative language / comprehension / reasoning-from-text items.
 - NEVER output numerical calculation / DI / QA / scoring stems (tax bills, carbon offsets, PHM points, fee discounts, weighted indexes, "compute the value").
-- No TITA / integer answers in this section.
+- No TITA / integer / Match List items — only Single or Multiple Correct MCQs.
 `);
   }
 
-  if (type !== "integer") {
-    parts.push(`
-**OPTION LOCK:** Every MCQ must ship with a full option set. Never return a stem with empty or missing options.
+  parts.push(`
+**OPTION LOCK:** Every MCQ must ship with a full option set (at least 4 options). Never return a stem with empty or missing options.
+- Single Correct: exactly one correct option.
+- Multiple Correct: at least two correct options.
+- Never generate Numerical/TITA or Match List questions.
 `);
-  }
 
   return parts.join("\n");
+};
+
+/**
+ * Extra writer guidance from wizard questionStructure.
+ * Passages are NOT counted as questions — only linked items are.
+ */
+export const buildQuestionStructureLock = (
+  questionStructure = "both",
+  {
+    passageCount = 0,
+    questionsPerPassage = 0,
+    passageBasedQuestions = 0,
+    standaloneQuestions = 0,
+  } = {}
+) => {
+  const s = String(questionStructure || "both").toLowerCase();
+  const passages = Math.max(0, Number(passageCount) || 0);
+  const per = Math.max(0, Number(questionsPerPassage) || 0);
+  const passageQs =
+    Math.max(0, Number(passageBasedQuestions) || 0) || passages * per;
+  const standaloneQs = Math.max(0, Number(standaloneQuestions) || 0);
+
+  if (s === "passage") {
+    return `
+**QUESTION STRUCTURE LOCK — PASSAGE-BASED:**
+- Plan: **${passages} passage(s)** × **${per} linked question(s)** each (= ${passageQs} questions).
+- Prefer Reading Comprehension / shared-passage style items.
+- One passage may support multiple linked questions; do not count the passage itself as a question.
+- CRITICAL: Each passage set must reuse ONE shared passage across its ${per} questions (Excel Connected Group). Never one orphan passage per MCQ.
+- Do not invent Numerical/TITA or Match List formats.
+`;
+  }
+  if (s === "standalone") {
+    return `
+**QUESTION STRUCTURE LOCK — STANDALONE:**
+- Write independent stems (no shared RC passage required).
+- Do not invent Numerical/TITA or Match List formats.
+`;
+  }
+  return `
+**QUESTION STRUCTURE LOCK — MIXED:**
+- Passage pack: **${passages} passage(s)** × **${per}** linked Qs (= ${passageQs} passage-based questions).
+- Standalone questions: **${standaloneQs}**.
+- Passages are not questions; only the linked items count toward the paper total.
+- CRITICAL: Never invent one unique RC passage per question. Linked questions must share the SAME passage (Excel Connected Group style).
+- Do not invent Numerical/TITA or Match List formats.
+`;
 };

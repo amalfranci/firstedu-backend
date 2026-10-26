@@ -1043,35 +1043,35 @@
       "priority": "high",
       "cluster": "verbal",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CV02": {
       "weight": 0.86,
       "priority": "high",
       "cluster": "verbal",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CV03": {
       "weight": 0.52,
       "priority": "medium",
       "cluster": "verbal",
       "hardSlotCount": 3,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CV04": {
       "weight": 0.52,
       "priority": "medium",
       "cluster": "verbal",
       "hardSlotCount": 3,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CV05": {
       "weight": 0.3,
       "priority": "low",
       "cluster": "verbal",
       "hardSlotCount": 2,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CD01": {
       "weight": 0.78,

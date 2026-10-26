@@ -207,20 +207,20 @@ const resolvePaperJob = async (generationId) => {
  */
 export const startExamQuestionJob = asyncHandler(async (req, res) => {
   const config = { ...(req.body?.config || req.body || {}) };
+  // Platform policy: Numerical/TITA + Match List removed for all exams.
+  // Fold any legacy integer/match counts into single so old clients still work.
+  const legacyExtra =
+    Math.max(0, Number(config.typeCounts?.integer) || 0) +
+    Math.max(0, Number(config.typeCounts?.match) || 0);
   const typeCounts = {
-    single: Math.max(0, Number(config.typeCounts?.single) || 0),
+    single:
+      Math.max(0, Number(config.typeCounts?.single) || 0) + legacyExtra,
     multiple: Math.max(
       0,
       Number(config.typeCounts?.multiple ?? config.typeCounts?.multi) || 0
     ),
-    integer: Math.max(0, Number(config.typeCounts?.integer) || 0),
-    match: Math.max(0, Number(config.typeCounts?.match) || 0),
   };
-  const typeSum =
-    typeCounts.single +
-    typeCounts.multiple +
-    typeCounts.integer +
-    typeCounts.match;
+  const typeSum = typeCounts.single + typeCounts.multiple;
   let total = Math.max(0, Number(config.totalQuestions) || 0);
   if (total < 1 && typeSum > 0) total = typeSum;
   if (total < 1) {
@@ -238,6 +238,48 @@ export const startExamQuestionJob = asyncHandler(async (req, res) => {
   if (typeSum === 0) {
     typeCounts.single = total;
   }
+  const structureRaw = String(config.questionStructure || "both")
+    .trim()
+    .toLowerCase();
+  const questionStructure = ["passage", "standalone", "both"].includes(
+    structureRaw
+  )
+    ? structureRaw
+    : "both";
+  config.questionStructure = questionStructure;
+  const wantsPassages =
+    questionStructure === "passage" || questionStructure === "both";
+  const passageCount = wantsPassages
+    ? Math.max(0, Number(config.passageCount) || 0)
+    : 0;
+  const questionsPerPassage = wantsPassages
+    ? Math.max(0, Number(config.questionsPerPassage) || 0)
+    : 0;
+  const passageBasedQuestions = passageCount * questionsPerPassage;
+  if (wantsPassages) {
+    if (passageCount < 1 || questionsPerPassage < 1) {
+      throw new ApiError(
+        400,
+        "passageCount and questionsPerPassage must be at least 1 for passage-based papers"
+      );
+    }
+    if (passageBasedQuestions > total) {
+      throw new ApiError(
+        400,
+        `Passage-based questions (${passageBasedQuestions}) cannot exceed totalQuestions (${total})`
+      );
+    }
+    if (questionStructure === "passage" && passageBasedQuestions !== total) {
+      throw new ApiError(
+        400,
+        `Passage-only mode requires passages × questionsPerPassage === totalQuestions (${total})`
+      );
+    }
+  }
+  config.passageCount = passageCount;
+  config.questionsPerPassage = questionsPerPassage;
+  config.passageBasedQuestions = passageBasedQuestions;
+  config.standaloneQuestions = Math.max(0, total - passageBasedQuestions);
   const subjectCounts = config.subjectCounts || {};
   const subjectSum = Object.values(subjectCounts).reduce(
     (s, n) => s + Math.max(0, Number(n) || 0),
@@ -255,6 +297,11 @@ export const startExamQuestionJob = asyncHandler(async (req, res) => {
     ...config,
     totalQuestions: total,
     typeCounts,
+    questionStructure,
+    passageCount,
+    questionsPerPassage,
+    passageBasedQuestions,
+    standaloneQuestions: config.standaloneQuestions,
     createdBy,
   });
   const generationId = job.generationId || job.jobId;

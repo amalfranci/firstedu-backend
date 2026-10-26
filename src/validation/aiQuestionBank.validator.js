@@ -6,6 +6,15 @@ const optionSchema = Joi.object({
 });
 
 const connectedSubQuestionSchema = Joi.object({
+  // FE may send client temp ids; ignore unknowns / allow optional persistence ids.
+  id: Joi.alternatives()
+    .try(Joi.string().trim(), Joi.object())
+    .optional()
+    .allow(null, ""),
+  _id: Joi.alternatives()
+    .try(Joi.string().trim(), Joi.object())
+    .optional()
+    .allow(null, ""),
   questionText: Joi.string().required().trim(),
   questionType: Joi.string()
     .valid("single", "multiple", "true_false")
@@ -30,7 +39,14 @@ const connectedSubQuestionSchema = Joi.object({
   explanation: Joi.string().trim().required(),
   marks: Joi.number().min(0).optional(),
   negativeMarks: Joi.number().min(0).optional(),
-});
+  difficulty: Joi.string()
+    .valid("easy", "medium", "hard", "Easy", "Medium", "Hard")
+    .optional(),
+  imageUrl: Joi.alternatives()
+    .try(Joi.string().trim(), Joi.array().items(Joi.string().trim()))
+    .optional()
+    .allow(null, ""),
+}).unknown(true);
 
 const aiQuestionItemSchema = Joi.object({
   questionText: Joi.string().when("questionType", {
@@ -104,6 +120,7 @@ const aiQuestionItemSchema = Joi.object({
   sectionIndex: Joi.number().integer().min(0).optional().allow(null),
   imageUrl: Joi.string().trim().optional().allow("", null),
   passage: Joi.string().trim().optional().allow("", null),
+  passageText: Joi.string().trim().optional().allow("", null),
   subQuestions: Joi.array().items(connectedSubQuestionSchema).optional(),
   connectedQuestions: Joi.array().items(connectedSubQuestionSchema).optional(),
 }).unknown(true).custom((value, helpers) => {

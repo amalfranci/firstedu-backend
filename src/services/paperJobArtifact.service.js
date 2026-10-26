@@ -2,6 +2,10 @@
  * Per-paper-job artifacts:
  *   temp/paper-jobs/{jobId}/pipeline.jsonl   — every event
  *   temp/paper-jobs/{jobId}/questions/*.json — stage snapshots
+ *   temp/paper-jobs/{jobId}/stage-logs/      — 3 cumulative stage files
+ *     01-after-gemini.json
+ *     02-after-o3.json
+ *     03-after-luna.json
  *   temp/paper-jobs/{jobId}/tokens.json      — running token totals
  *   temp/paper-jobs/{jobId}/generated-paper.json — rolling Q+A+explanation draft
  *   MongoDB ai_paper_generation_jobs / ai_paper_generation_questions
@@ -19,6 +23,23 @@ const questionCtx = new AsyncLocalStorage();
 
 const jobDir = (jobId) => join(ROOT, safeId(jobId));
 const questionsDir = (jobId) => join(jobDir(jobId), "questions");
+const stageLogsDir = (jobId) => join(jobDir(jobId), "stage-logs");
+
+/** Fixed stage log files (one folder, three files). */
+export const STAGE_LOG_FILES = {
+  after_gemini: {
+    file: "01-after-gemini.json",
+    label: "1. After Gemini creation",
+  },
+  after_o3: {
+    file: "02-after-o3.json",
+    label: "2. After o3 verification",
+  },
+  after_luna: {
+    file: "03-after-luna.json",
+    label: "3. After Luna final touch-up",
+  },
+};
 
 const safeId = (id) =>
   String(id || "unknown")
@@ -163,11 +184,118 @@ export const extractOpenAIUsage = (response, { model, kind } = {}) => {
   };
 };
 
+const emptyStageLog = (jobId, stageKey) => {
+  const meta = STAGE_LOG_FILES[stageKey] || {
+    file: `${stageKey}.json`,
+    label: stageKey,
+  };
+  return {
+    stage: stageKey,
+    label: meta.label,
+    jobId,
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+    count: 0,
+    questions: [],
+  };
+};
+
+const ensureStageLogFiles = (jobId) => {
+  const dir = stageLogsDir(jobId);
+  ensureDir(dir);
+  for (const [stageKey, meta] of Object.entries(STAGE_LOG_FILES)) {
+    const filePath = join(dir, meta.file);
+    if (!existsSync(filePath)) {
+      writeJson(filePath, emptyStageLog(jobId, stageKey));
+    }
+  }
+  return dir;
+};
+
+const readStageLog = (jobId, stageKey) => {
+  const meta = STAGE_LOG_FILES[stageKey];
+  if (!meta) return emptyStageLog(jobId, stageKey);
+  const filePath = join(stageLogsDir(jobId), meta.file);
+  try {
+    if (!existsSync(filePath)) return emptyStageLog(jobId, stageKey);
+    const parsed = JSON.parse(readFileSync(filePath, "utf8"));
+    if (!parsed || typeof parsed !== "object") {
+      return emptyStageLog(jobId, stageKey);
+    }
+    if (!Array.isArray(parsed.questions)) parsed.questions = [];
+    return parsed;
+  } catch {
+    return emptyStageLog(jobId, stageKey);
+  }
+};
+
+const compactStageQuestion = (item = {}, stageKey = "") => {
+  const q = item.locked || item.raw || {};
+  return sanitizeForLog({
+    seq: item.seq,
+    stage: stageKey || item.stage || "",
+    subject: item.subject || q._subject || q.subject || "",
+    topicId: item.topicId || q._topicId || "",
+    chapter: item.chapter || q._chapter || q.chapter || "",
+    questionType: item.type || q._advancedType || q.questionType || "single",
+    questionText: String(q.questionText || q.text || "").slice(0, 4000),
+    passage: String(q.passage || q.passageText || "").slice(0, 6000),
+    _connectedGroup: q._connectedGroup || null,
+    options: (q.options || []).map((o) =>
+      typeof o === "string" ? o : o?.text || ""
+    ),
+    correctAnswer: q.correctAnswer ?? item.answerKey ?? null,
+    explanation: String(q.explanation || "").slice(0, 8000),
+    _explanationSource: q._explanationSource || null,
+    _explanationPolished: q._explanationPolished ?? null,
+    _qualityGateIssues: q._qualityGateIssues || null,
+    _qualityGateOk: q._qualityGateOk ?? null,
+    _qualityGateOptionOrder: q._qualityGateOptionOrder || null,
+    attempt: Number(item.attempt) || 1,
+    o3: item.o3
+      ? {
+          independentAnswer: item.o3.independentAnswer,
+          answerMatches: item.o3.answerMatches,
+          confidence: item.o3.confidence,
+        }
+      : null,
+  });
+};
+
+/**
+ * Upsert one question into a stage log file (by seq).
+ * stageKey: after_gemini | after_o3 | after_luna
+ */
+export const appendStageQuestionLog = (jobId, stageKey, item = {}) => {
+  if (!jobId || item?.seq == null) return null;
+  if (!STAGE_LOG_FILES[stageKey]) return null;
+  bindPaperJob(jobId);
+  ensureStageLogFiles(jobId);
+  const meta = STAGE_LOG_FILES[stageKey];
+  const filePath = join(stageLogsDir(jobId), meta.file);
+  const state = readStageLog(jobId, stageKey);
+  const entry = compactStageQuestion(item, stageKey);
+  const idx = state.questions.findIndex(
+    (q) => Number(q?.seq) === Number(entry.seq)
+  );
+  if (idx >= 0) state.questions[idx] = entry;
+  else state.questions.push(entry);
+  state.questions.sort((a, b) => Number(a.seq) - Number(b.seq));
+  state.count = state.questions.length;
+  state.updatedAt = new Date().toISOString();
+  state.label = meta.label;
+  state.stage = stageKey;
+  state.jobId = jobId;
+  writeJson(filePath, state);
+  return filePath;
+};
+
 export const bindPaperJob = (jobId) => {
   if (!jobId) return null;
   const dir = jobDir(jobId);
   ensureDir(dir);
   ensureDir(questionsDir(jobId));
+  ensureStageLogFiles(jobId);
   return dir;
 };
 
