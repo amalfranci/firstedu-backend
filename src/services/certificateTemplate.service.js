@@ -31,6 +31,7 @@ export const uploadCertificateTemplate = async (pdfBuffer, originalName, textLay
   } else {
     // Update layout of existing active template
     existingTemplate.textLayout = textLayout || {};
+    existingTemplate.markModified("textLayout");
     await existingTemplate.save();
     return existingTemplate;
   }
