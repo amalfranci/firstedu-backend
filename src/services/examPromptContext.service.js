@@ -171,8 +171,17 @@ Real CAT VARC is dominated by **four types only**. Your batch must use these —
 - Vocabulary / synonym-antonym / word-meaning MCQs
 - "Identify the logical flaw" / critical-reasoning definition drills without a passage
 - Underline-the-error, parts of speech, Wren & Martin style items
+- **ANY numerical / calculation / DI / QA-style item** — no tax bills, carbon offsets, platform health points, percentages, weighted scores, fee discounts, or "compute the value of X" stems. Those belong in DILR or QA, never VARC.
+- TITA / integer answers in VARC
+- HTML tags in stems or options (\`<b>\`, \`<br>\`, etc.) — plain text + LaTeX \`$...$\` only
 
-**Mix guidance:** ~60–70% RC (passages) + ~30–40% VA singles (parajumbles, odd sentence, para summary) for a full section; match the requested counts.`;
+**OUTPUT QUALITY (mandatory):**
+- Exactly **4** distinct non-empty options A–D for every MCQ / sub-question
+- Correct option letter must match the explanation closing line
+- No glued labels like "Option Bnalysis" or "(B) (B) text" — write clean prose
+- RC must be **multi-question per passage** (typically 4 sub-Qs), never one orphan MCQ pretending to be a full RC set when the plan asks for passages
+
+**Mix guidance:** ~60–70% RC (passages × 4 sub-Qs) + ~30–40% VA singles (parajumbles, odd sentence, para summary) for a full section; match the requested counts.`;
 };
 
 export const buildCatSectionAuthoringBlock = ({

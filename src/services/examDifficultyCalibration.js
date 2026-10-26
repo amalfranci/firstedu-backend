@@ -312,11 +312,13 @@ ${tierBlock(difficulty, {
 
 const CAT_VARC_CALIBRATION = ({ difficulty }) => `
 **DIFFICULTY CALIBRATION — CAT VARC (NOT GMAT / school English):**
-- **Reading Comprehension:** 450–750 words; inference, tone, author's view — not literal recall or grammar.
+- **Reading Comprehension:** 450–750 words with **~4 sub-questions per passage** (connected); inference, tone, author's view — not literal recall or grammar.
 - **Para Jumbles:** logical sequencing of 4–5 sentences; CAT speed.
 - **Odd Sentence Out:** coherence judgment across five sentences.
 - **Para Summary:** central idea vs detail trap.
 - **Forbidden:** grammar correction, vocabulary, sentence improvement, critical-reasoning definition drills without passages.
+- **Also forbidden:** any numerical / calculation / DI / QA-style stems (tax, carbon offsets, PHM scores, bill amounts). VARC is qualitative only.
+- Every MCQ/sub-Q must have exactly **4 non-empty options**. No HTML in stems.
 
 **Tier "${normalizeDifficulty(difficulty)}":**
 ${tierBlock(difficulty, {

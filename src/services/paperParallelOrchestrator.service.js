@@ -328,8 +328,9 @@ const keysMatch = (type, a, b) => {
 /**
  * Free local schema check — NOT a model stage.
  * Only blocks outputs o3 cannot usefully solve (missing stem / broken shape).
+ * MCQs: require ≥4 non-empty options (all competitive exams).
  */
-export const schemaOkForO3 = (q, typeHint = null) => {
+export const schemaOkForO3 = (q, typeHint = null, _examType = "") => {
   const issues = [];
   if (!q || typeof q !== "object") {
     return { ok: false, issues: ["not_an_object"] };
@@ -354,8 +355,11 @@ export const schemaOkForO3 = (q, typeHint = null) => {
     }
     if (!proposedKeyOf(q, "match")) issues.push("match_missing_proposed_key");
   } else if (type === "single" || type === "multiple") {
-    const opts = Array.isArray(q.options) ? q.options : [];
-    if (opts.length < 2) issues.push("options_incomplete");
+    const opts = (Array.isArray(q.options) ? q.options : [])
+      .map((o) => String(typeof o === "string" ? o : o?.text || "").trim())
+      .filter(Boolean);
+    // Never ship empty/partial MCQs — ≥4 options for every competitive exam.
+    if (opts.length < 4) issues.push(`options_incomplete:${opts.length}`);
     if (!proposedKeyOf(q, type)) issues.push("missing_proposed_key");
   }
   return { ok: issues.length === 0, issues };
@@ -1118,12 +1122,21 @@ export const runParallelPaperPipeline = async ({
     checkpointItem,
     failItem,
     normalizeSubject,
+    looksLikeMisplacedNumericalStem,
+    looksLikeNumericalVarcStem, // legacy alias
+    isVerbalQualitativeSubject = () => false,
     pipelineLog,
     recordUsage,
     jobId,
     runQuestionContext,
     stampTrust,
   } = deps;
+  const isMisplacedNumerical =
+    typeof looksLikeMisplacedNumericalStem === "function"
+      ? looksLikeMisplacedNumericalStem
+      : typeof looksLikeNumericalVarcStem === "function"
+        ? looksLikeNumericalVarcStem
+        : () => false;
 
   const ctx = {
     pipelineLog,
@@ -1347,6 +1360,20 @@ export const runParallelPaperPipeline = async ({
       await checkpointItem(item);
 
       // Free schema check only (not a model / hard QC stage)
+      const subjectForGate = String(
+        item.subject || seat.slot?.subject || generated._subject || ""
+      ).trim();
+      // All competitive exams: verbal/English/RC sections must stay qualitative.
+      if (
+        isVerbalQualitativeSubject(subjectForGate) &&
+        isMisplacedNumerical(generated.questionText)
+      ) {
+        return failItem(
+          item,
+          "verbal_numerical",
+          "numerical/DI/QA-style stem not allowed in verbal/reading sections"
+        );
+      }
       if (isDuplicateStem(generated.questionText, excludeTexts)) {
         return failItem(item, "duplicate_stem", "near-duplicate stem");
       }
@@ -1363,7 +1390,11 @@ export const runParallelPaperPipeline = async ({
           "near-duplicate of an already locked question — regenerating"
         );
       }
-      const schema = schemaOkForO3(generated, seat.type);
+      const schema = schemaOkForO3(
+        generated,
+        seat.type,
+        config?.examType || generated._examType
+      );
       if (!schema.ok) {
         return failItem(item, "schema_invalid", schema.issues);
       }

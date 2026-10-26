@@ -81,6 +81,17 @@ import {
   paperScoreFloor,
   paperDefaultQuestionKind,
 } from "./paperExamIdentity.service.js";
+import { buildCatVarcAuthoringBlock } from "./examPromptContext.service.js";
+import {
+  buildCompetitiveQualityLock,
+  isVerbalQualitativeSubject,
+  looksLikeMisplacedNumericalStem,
+  looksLikeNumericalVarcStem,
+  mcqOptionsAreComplete,
+  resolveCompetitiveSeatType,
+} from "./paperCompetitiveQuality.service.js";
+
+export { looksLikeNumericalVarcStem, looksLikeMisplacedNumericalStem };
 
 const PIPELINE_DIR = dirname(fileURLToPath(import.meta.url));
 
@@ -1141,13 +1152,21 @@ const listFromGemini = (parsed) => {
   return [];
 };
 
+const stripHtmlLite = (s = "") =>
+  String(s || "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
 const sanitizeQuestion = (q) => ({
   ...q,
-  questionText: String(q.questionText || "").trim(),
+  questionText: stripHtmlLite(q.questionText),
   options: Array.isArray(q.options)
-    ? q.options.map((o) => (typeof o === "string" ? o : o?.text || String(o || "")))
+    ? q.options.map((o) =>
+        stripHtmlLite(typeof o === "string" ? o : o?.text || String(o || ""))
+      )
     : [],
-  explanation: String(q.explanation || "").trim(),
+  explanation: stripHtmlLite(q.explanation),
 });
 
 export const planPipelineSlots = (config = {}) => {
@@ -1420,8 +1439,14 @@ export const planPipelineSlots = (config = {}) => {
     return best;
   };
 
+  const examTypeNorm = String(config.examType || "").toLowerCase();
+
   seats.forEach((seat, i) => {
-    const type = typeQueue[i] || "single";
+    const type = resolveCompetitiveSeatType({
+      examType: examTypeNorm,
+      subject: seat.subject,
+      fallbackType: typeQueue[i] || "single",
+    });
     const topic = takeBestTopic(seat.subject, type, seat.index);
     const preferred = pickPreferredConcept(topic, type);
     slots[type].push({
@@ -1437,6 +1462,13 @@ export const planPipelineSlots = (config = {}) => {
     });
   });
 
+  const resolvedTypeCounts = {
+    single: slots.single.length,
+    multiple: slots.multiple.length,
+    integer: slots.integer.length,
+    match: slots.match.length,
+  };
+
   const leftoverPool = subjects.flatMap((s) => leftovers[s] || []);
   const unusedFrom = () => leftoverPool;
 
@@ -1445,7 +1477,7 @@ export const planPipelineSlots = (config = {}) => {
     paper,
     subjects,
     totalQuestions,
-    typeCounts,
+    typeCounts: resolvedTypeCounts,
     subjectCounts,
     topicPool,
     allocatedTopics: Object.fromEntries(
@@ -1527,12 +1559,31 @@ const generateBatch = async ({
       : "";
 
   const hardnessLock = buildWriterHardnessLock(exam.examType, exam.examLabel);
+  const subjectNorm = normalizeSubject(subj);
+  const isCatVarc =
+    exam.examType === "cat" && subjectNorm === "VARC";
+  const catVarcBlock = isCatVarc
+    ? buildCatVarcAuthoringBlock({
+        passageCount: 0,
+        singleCount: count,
+        passageSingleCount: 4,
+      })
+    : "";
+  // Applies to ALL competitive exams in AI Powered Test (verbal + MCQ completeness).
+  const competitiveQualityLock = buildCompetitiveQualityLock({
+    examType: exam.examType,
+    examLabel: exam.examLabel,
+    subject: subjectNorm,
+    type,
+  });
 
   const prompt = `You are a senior ${exam.examLabel} ${label} question setter.
 ${typeLine}
-Exactly 4 options unless integer. Use each assigned chapter exactly. Valid LaTeX/JSON. No explanations or solveSteps.
+Exactly 4 options unless integer (5 when the exam format requires it). Use each assigned chapter exactly. Valid LaTeX/JSON. No explanations or solveSteps.
 ${matchLockBlock}
 ${hardnessLock}
+${catVarcBlock}
+${competitiveQualityLock}
 
 TOPIC CONTEXT
 
@@ -1652,6 +1703,34 @@ ${schema}`;
         _questionKind: questionKind,
         _generatorDifficultySelfScore: Number(q.difficultySelfScore) || null,
       });
+    })
+    .filter((q) => {
+      if (!q) return false;
+      // Verbal sections across ALL competitive exams — never ship calc/DI stems.
+      if (
+        isVerbalQualitativeSubject(subjectNorm) &&
+        looksLikeMisplacedNumericalStem(q.questionText)
+      ) {
+        pipelineLog("VERBAL_NUMERICAL_DROP", {
+          examType: exam.examType,
+          subject: subjectNorm,
+          preview: String(q.questionText || "").slice(0, 160),
+        });
+        return false;
+      }
+      const qType = String(q._advancedType || q.questionType || "").toLowerCase();
+      if (qType === "single" || qType === "multiple") {
+        if (!mcqOptionsAreComplete(q.options, exam.examType)) {
+          pipelineLog("OPTIONS_DROP", {
+            examType: exam.examType,
+            type: qType,
+            optionCount: (q.options || []).length,
+            preview: String(q.questionText || "").slice(0, 120),
+          });
+          return false;
+        }
+      }
+      return true;
     });
   return mapped;
 };
@@ -2154,8 +2233,16 @@ export const expandPipelineQuestions = async (questions = []) => {
 };
 
 const optionPlainText = (o) => {
-  const text = typeof o === "string" ? o : o?.text || String(o || "");
-  return text.replace(/^[A-D][).:\s]+/, "").trim();
+  let text = typeof o === "string" ? o : o?.text || String(o || "");
+  // Strip HTML the model sometimes embeds in verbal stems/options.
+  text = text.replace(/<[^>]+>/g, " ");
+  // Strip leading labels: A)  A.  (A)  (A).  Option A:
+  text = text
+    .replace(/^\s*(?:option\s*)?[A-D][).:\s]+/i, "")
+    .replace(/^\s*\(\s*[A-D]\s*\)[).:\s]*/i, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  return text;
 };
 
 /** Repair common Gemini/o3 LaTeX corruptions before UI/bank save. */
@@ -2163,22 +2250,23 @@ export const sanitizeExplanationLatex = (raw) => {
   let text = String(raw || "");
   if (!text) return text;
   text = text
+    .replace(/<[^>]+>/g, " ")
     .replace(/Long\)arrow/gi, "\\rightarrow")
     .replace(/\)arrow/gi, "\\rightarrow")
     .replace(/\bLongrightarrow\b/g, "\\longrightarrow")
     .replace(/\bdll\b/g, "")
     .replace(/\bdfrac\b/g, "\\dfrac")
     .replace(/\bfrac\b(?![a-zA-Z])/g, "\\frac")
+    // Fix glued "Option Bnalysis" / "Option Ay option" from broken \\textbf{B}
+    .replace(/\bOption\s*([A-D])([a-z])/g, "Option $1. $2")
     .replace(/\btextbf\b/g, "\\textbf")
     .replace(/(?<![\\])<=(?=[\s$\d])/g, "\\le ")
     .replace(/(?<![\\])>=(?=[\s$\d])/g, "\\ge ")
     .replace(/\[dfrac\{([^}\]]+)\](\d+)\}/gi, "\\dfrac{$1}{$2}")
     .replace(/\[frac\{([^}\]]+)\](\d+)\}/gi, "\\frac{$1}{$2}")
-    .replace(/\(\s*i\s*\)/gi, "\\mathrm{i}")
-    .replace(/\(\s*a\s*\)/gi, "\\mathrm{a}")
-    .replace(/\(\s*w\s*\)/gi, "\\omega")
-    .replace(/\(\s*r\s*\)/gi, "\\mathrm{r}")
-    .replace(/\(\s*m\s*\)/gi, "\\mathrm{m}");
+    // Do NOT rewrite prose option markers (a)/(b) into mathrm — that breaks VARC.
+    .replace(/\s+/g, " ")
+    .trim();
   return text;
 };
 
@@ -2190,10 +2278,17 @@ const toUiQuestion = (q, config = {}) => {
   const indices = Array.isArray(q.correctIndices)
     ? q.correctIndices
     : lettersToCorrectIndices(q.correctAnswer);
-  const uiType = type === "multiple" ? "multiple" : "single";
+  const uiType =
+    type === "integer"
+      ? "integer"
+      : type === "multiple"
+        ? "multiple"
+        : type === "match"
+          ? "match"
+          : "single";
   const optionList =
     type === "integer"
-      ? [String(q.correctAnswer ?? "")]
+      ? []
       : prefixed.length
         ? prefixed
         : plain;
@@ -2203,10 +2298,11 @@ const toUiQuestion = (q, config = {}) => {
   });
   const questionKind =
     q._questionKind || paperDefaultQuestionKind(exam.examType);
+  const stem = sanitizeExplanationLatex(q.questionText);
   return {
     questionType: uiType,
-    text: q.questionText,
-    questionText: q.questionText,
+    text: stem,
+    questionText: stem,
     options: optionList,
     correctAnswer: q.correctAnswer,
     correctIndex: q.correctIndex ?? indices[0] ?? 0,
@@ -2246,13 +2342,40 @@ const toUiQuestion = (q, config = {}) => {
   };
 };
 
-const usableQuestion = (item) =>
-  item?.locked &&
-  item.locked._productionReady === true &&
-  (item.stage === "ready_to_confirm" ||
-    item.stage === "expanded" ||
-    item.stage === "verified" ||
-    item.stage === "locked");
+const usableQuestion = (item) => {
+  if (
+    !(
+      item?.locked &&
+      item.locked._productionReady === true &&
+      (item.stage === "ready_to_confirm" ||
+        item.stage === "expanded" ||
+        item.stage === "verified" ||
+        item.stage === "locked")
+    )
+  ) {
+    return false;
+  }
+  const type = String(
+    item.type || item.locked._advancedType || item.locked.questionType || "single"
+  ).toLowerCase();
+  if (type === "single" || type === "multiple") {
+    if (
+      !mcqOptionsAreComplete(
+        item.locked.options,
+        item.locked._examType || item._examType
+      )
+    ) {
+      return false;
+    }
+  }
+  if (
+    isVerbalQualitativeSubject(item.subject || item.locked._subject) &&
+    looksLikeMisplacedNumericalStem(item.locked.questionText)
+  ) {
+    return false;
+  }
+  return true;
+};
 
 const itemType = (item) =>
   String(item?.type || item?.locked?._advancedType || item?.raw?._advancedType || "single");
@@ -2680,6 +2803,8 @@ export const runAdvancedPaperPipeline = async (
       checkpointItem,
       failItem,
       normalizeSubject,
+      looksLikeMisplacedNumericalStem,
+      isVerbalQualitativeSubject,
       pipelineLog,
       recordUsage: recordModelUsage,
       jobId: currentJobId,
