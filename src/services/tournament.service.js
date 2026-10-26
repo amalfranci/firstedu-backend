@@ -499,12 +499,13 @@ export const createTournament = async (data, adminId, file) => {
 };
 
 /** Valid status values for server-side filtering (student list / events). */
-const VALID_STATUSES = ["close", "open", "upcoming", "live", "completed"];
+const VALID_STATUSES = ["close", "closed", "open", "upcoming", "live", "completed"];
 
 const buildStatusQuery = (status) => {
   const now = new Date();
   switch (status) {
     case "close":
+    case "closed":
       return {
         registrationEndTime: { $lt: now },
         $expr: { $gt: [{ $min: "$stages.startTime" }, now] },
@@ -548,8 +549,9 @@ export const getTournaments = async (options = {}) => {
   if (isPublished !== undefined) {
     query.isPublished = isPublished === "true" || isPublished === true;
   }
-  const normalizedStatus =
+  const rawStatus =
     typeof status === "string" ? status.trim().toLowerCase() : null;
+  const normalizedStatus = rawStatus === "closed" ? "close" : rawStatus;
   if (normalizedStatus && VALID_STATUSES.includes(normalizedStatus)) {
     const statusQuery = buildStatusQuery(normalizedStatus);
     if (statusQuery) Object.assign(query, statusQuery);

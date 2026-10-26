@@ -85,12 +85,13 @@ export const createWorkshop = async (data, adminId, file) => {
 };
 
 /** Valid status values for server-side filtering. */
-const VALID_STATUSES = ["close", "open", "upcoming", "live", "completed"];
+const VALID_STATUSES = ["close", "closed", "open", "upcoming", "live", "completed"];
 
 const buildStatusQuery = (status) => {
   const now = new Date();
   switch (status) {
     case "close":
+    case "closed":
       return {
         registrationStartTime: { $gt: now },
         startTime: { $gt: now },
@@ -146,8 +147,9 @@ export const getWorkshops = async (options = {}) => {
   if (teacherId) {
     query.teacher = teacherId;
   }
-  const normalizedStatus =
+  const rawStatus =
     typeof status === "string" ? status.trim().toLowerCase() : null;
+  const normalizedStatus = rawStatus === "closed" ? "close" : rawStatus;
   if (normalizedStatus && VALID_STATUSES.includes(normalizedStatus)) {
     const statusQuery = buildStatusQuery(normalizedStatus);
     if (statusQuery) Object.assign(query, statusQuery);
