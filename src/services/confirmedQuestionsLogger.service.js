@@ -10,6 +10,10 @@ import {
     topicSlug,
 } from '../utils/aiApiCallLogger.js';
 import { dedupePaperQuestionsByStem } from '../utils/paperQuestionDedupe.js';
+import {
+    finalizeExplanationForPublish,
+    autoFixOptionArticles,
+} from '../utils/explanationAnswerAlign.js';
 
 const LOG_ROOT = path.join(process.cwd(), 'temp', 'confirmed-questions');
 
@@ -189,19 +193,97 @@ const resolveFileName = ({ topic, sectionName, sectionIndex, date = new Date() }
     return `${prefix}-${topicPart}-${sectionPart}.txt`;
 };
 
+const normalizeConfirmedItem = (item = {}) => {
+    const rawOpts = optionsOf(item);
+    const fixedOpts = autoFixOptionArticles(rawOpts);
+    const correct = formatCorrectAnswer(item);
+    const finalized = finalizeExplanationForPublish({
+        explanation: item?.explanation,
+        correctAnswer: correct,
+    });
+    const rawSubs = Array.isArray(item?.subQuestions)
+        ? item.subQuestions
+        : Array.isArray(item?.connectedQuestions)
+            ? item.connectedQuestions
+            : null;
+    const subs = rawSubs ? rawSubs.map(normalizeConfirmedItem) : undefined;
+
+    return {
+        ...item,
+        options: fixedOpts,
+        correctAnswer: correct,
+        explanation: finalized.explanation,
+        ...(subs ? { subQuestions: subs } : {}),
+    };
+};
+
+/**
+ * When a job config or paper has multiple subjects (e.g. ['Mathematics', 'Chemistry']),
+ * ensure the topic string and resulting slug include all subjects instead of truncating.
+ */
+export const resolveMultiSubjectTopic = (topic, subjects = [], list = []) => {
+    let resolved = String(topic || '').trim();
+    const collected = [];
+    const addSubj = (s) => {
+        const val = String(s || '').trim();
+        if (val && !collected.some(c => c.toLowerCase() === val.toLowerCase())) {
+            collected.push(val);
+        }
+    };
+    (Array.isArray(subjects) ? subjects : []).forEach(addSubj);
+    (Array.isArray(list) ? list : []).forEach(q => {
+        if (q?.subject) addSubj(q.subject);
+        if (Array.isArray(q?.subQuestions)) {
+            q.subQuestions.forEach(sq => {
+                if (sq?.subject) addSubj(sq.subject);
+            });
+        }
+    });
+
+    if (collected.length <= 1) {
+        return resolved || collected[0] || 'topic';
+    }
+
+    const missing = collected.filter(
+        s => !new RegExp(`\\b${s.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')}\\b`, 'i').test(resolved)
+    );
+
+    if (!resolved) {
+        return collected.join(', ');
+    }
+
+    if (missing.length > 0) {
+        const parts = resolved.split(/\s*›\s*/);
+        const lastPart = parts[parts.length - 1]?.trim();
+        const matched = collected.find(
+            s => s.toLowerCase() === lastPart?.toLowerCase()
+        );
+        if (matched) {
+            parts[parts.length - 1] = collected.join(', ');
+            resolved = parts.join(' › ');
+        } else {
+            resolved = `${resolved} › ${collected.join(', ')}`;
+        }
+    }
+
+    return resolved;
+};
+
 /**
  * @returns {{ filePath: string, questionCount: number, appended: boolean }}
  */
 export const logConfirmedQuestionsToFile = async ({
     topic,
+    subjects = [],
     bankName = '',
     sectionName = '',
     sectionIndex = null,
     questions = [],
 }) => {
-    const list = dedupePaperQuestionsByStem(
+    const rawList = dedupePaperQuestionsByStem(
         Array.isArray(questions) ? questions.filter(Boolean) : []
     );
+    const list = rawList.map(normalizeConfirmedItem);
     if (!String(topic || '').trim()) {
         throw new Error('Topic is required to log confirmed questions');
     }
@@ -209,11 +291,19 @@ export const logConfirmedQuestionsToFile = async ({
         throw new Error('At least one question is required');
     }
 
+    const resolvedTopic = resolveMultiSubjectTopic(topic, subjects, list);
+    let resolvedBankName = bankName;
+    if (resolvedBankName && resolvedTopic !== topic) {
+        const [bName, bSuffix] = resolvedBankName.split(/\s*·\s*/);
+        const updatedBase = resolveMultiSubjectTopic(bName, subjects, list);
+        resolvedBankName = bSuffix ? `${updatedBase} · ${bSuffix}` : updatedBase;
+    }
+
     const now = new Date();
     const dir = ensureLogDir(now);
     let duplicateIndex = 0;
     let fileName = resolveFileName({
-        topic,
+        topic: resolvedTopic,
         sectionName,
         sectionIndex,
         date: now,
@@ -225,7 +315,7 @@ export const logConfirmedQuestionsToFile = async ({
             await fs.promises.access(filePath);
             duplicateIndex += 1;
             fileName = resolveFileName({
-                topic,
+                topic: resolvedTopic,
                 sectionName,
                 sectionIndex,
                 date: now,
@@ -238,7 +328,7 @@ export const logConfirmedQuestionsToFile = async ({
 
     const body = [
         buildFileHeader({
-            topic,
+            topic: resolvedTopic,
             sectionName,
             sectionIndex,
         }),
@@ -261,8 +351,8 @@ export const logConfirmedQuestionsToFile = async ({
     // Mirror to .json format in the same directory
     const jsonFilePath = filePath.replace(/\.txt$/, '.json');
     const jsonPayload = {
-        topic,
-        bankName,
+        topic: resolvedTopic,
+        bankName: resolvedBankName || bankName,
         sectionName: sectionName || null,
         sectionIndex: sectionIndex ?? null,
         timestamp: now.toISOString(),
@@ -270,6 +360,22 @@ export const logConfirmedQuestionsToFile = async ({
         questions: list.map((q, i) => {
             const opts = optionsOf(q);
             const correct = formatCorrectAnswer(q);
+            const subs = Array.isArray(q?.subQuestions)
+                ? q.subQuestions.map((sub, sIdx) => {
+                    const subOpts = optionsOf(sub);
+                    return {
+                        ...sub,
+                        questionNumber: `${i + 1}.${sIdx + 1}`,
+                        questionType: sub?.questionType || 'single',
+                        options: subOpts.map((opt, optIdx) => ({
+                            key: letterFromIndex(optIdx),
+                            text: optionTextOf(opt),
+                        })),
+                        correctAnswer: formatCorrectAnswer(sub),
+                        explanation: String(sub?.explanation || '').trim(),
+                    };
+                })
+                : undefined;
             return {
                 questionNumber: i + 1,
                 questionType: q?.questionType || 'single',
@@ -285,7 +391,7 @@ export const logConfirmedQuestionsToFile = async ({
                 })),
                 correctAnswer: correct,
                 explanation: String(q?.explanation || '').trim(),
-                ...(Array.isArray(q?.subQuestions) ? { subQuestions: q.subQuestions } : {}),
+                ...(subs ? { subQuestions: subs } : {}),
             };
         }),
     };

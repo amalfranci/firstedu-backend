@@ -575,6 +575,7 @@ const confirmedQuestionItemSchema = Joi.object({
 
 export const logConfirmedQuestionsSchema = Joi.object({
     topic: Joi.string().required().trim().min(2).max(500),
+    subjects: Joi.array().items(Joi.string().trim()).optional(),
     bankName: Joi.string().trim().max(300).optional().allow(''),
     sectionName: Joi.string().trim().max(200).optional().allow(''),
     sectionIndex: Joi.number().integer().min(0).max(50).optional().allow(null),

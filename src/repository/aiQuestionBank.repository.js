@@ -236,7 +236,7 @@ const getQuestionsByBankId = async (bankId, options = {}) => {
         .populate("createdBy", "name email")
         .populate(
           "childQuestions",
-          "questionText questionType options correctAnswer explanation marks negativeMarks imageUrl"
+          "questionText questionType options correctAnswer explanation marks negativeMarks imageUrl subject topic sectionIndex"
         );
     }
     return await query.lean();

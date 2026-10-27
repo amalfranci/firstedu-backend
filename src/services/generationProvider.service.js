@@ -213,7 +213,7 @@ export const resolveVerificationStageModel = (stage = "solver") => {
                     ""
             ).trim() ||
             String(process.env.OPENAI_SOLVER_MODEL || "").trim() ||
-            "o4-mini"
+            "o3-mini"
         );
     }
     if (stage === "difficulty_judge") {
@@ -278,9 +278,8 @@ export const resolveSolverFallbackChain = (primaryModel = "o3") => {
         .map((s) => s.trim())
         .filter(Boolean);
     const defaults = [
-        String(process.env.OPENAI_SOLVER_FALLBACK_MODEL || "o4-mini").trim(),
+        String(process.env.OPENAI_SOLVER_FALLBACK_MODEL || "o3-mini").trim(),
         "o3-mini",
-        "o4-mini",
     ].filter(Boolean);
     const allowGpt4o =
         process.env.AI_QB_SOLVER_ALLOW_GPT4O_FALLBACK === "1" ||

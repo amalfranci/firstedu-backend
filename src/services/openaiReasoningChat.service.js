@@ -133,9 +133,12 @@ export const callOpenAIReasoningJson = async ({
     maxCompletionTokens,
     developerHint,
 }) => {
-    if (!apiKey) {
+    const key = apiKey || process.env.OPENAI_API_KEY;
+    if (!key) {
         throw new ApiError(500, "OpenAI API key is not configured (OPENAI_API_KEY)");
     }
+    const retryFn = typeof callWithRetries === "function" ? callWithRetries : async (fn) => fn();
+    const toErrFn = typeof toError === "function" ? toError : (e) => e;
     const effort = String(reasoningEffort || "medium").toLowerCase();
     const primary = String(model || "gpt-5.6-luna").trim();
     const tryModels =
@@ -156,8 +159,8 @@ export const callOpenAIReasoningJson = async ({
                 maxCompletionTokens,
                 developerHint,
             });
-            const response = await callWithRetries(() =>
-                postChat(apiKey, body, timeout)
+            const response = await retryFn(() =>
+                postChat(key, body, timeout)
             );
             const text = extractOpenAIChatText(response);
             if (!text) {
@@ -269,7 +272,7 @@ export const callOpenAIReasoningJson = async ({
                     msg
                 );
             if (!retryable || candidate === tryModels[tryModels.length - 1]) {
-                throw toError(lastError || error);
+                throw toErrFn(lastError || error);
             }
             pipelineTrace("OPENAI_SOLVER_MODEL_RETRY", {
                 from: candidate,
@@ -278,7 +281,7 @@ export const callOpenAIReasoningJson = async ({
             });
         }
     }
-    throw toError(lastError);
+    throw toErrFn(lastError);
 };
 
 export const callOpenAIReasoningText = async ({
@@ -291,9 +294,12 @@ export const callOpenAIReasoningText = async ({
     toError,
     timeoutMs,
 }) => {
-    if (!apiKey) {
+    const key = apiKey || process.env.OPENAI_API_KEY;
+    if (!key) {
         throw new ApiError(500, "OpenAI API key is not configured (OPENAI_API_KEY)");
     }
+    const retryFn = typeof callWithRetries === "function" ? callWithRetries : async (fn) => fn();
+    const toErrFn = typeof toError === "function" ? toError : (e) => e;
     const timeout = timeoutMs || getOpenAISolverTimeoutMs();
     const body = buildOpenAIChatBody({
         model,
@@ -303,8 +309,8 @@ export const callOpenAIReasoningText = async ({
         jsonMode: false,
     });
     try {
-        const response = await callWithRetries(() =>
-            postChat(apiKey, body, timeout)
+        const response = await retryFn(() =>
+            postChat(key, body, timeout)
         );
         const text = extractOpenAIChatText(response);
         if (!text) {
@@ -312,6 +318,6 @@ export const callOpenAIReasoningText = async ({
         }
         return text;
     } catch (error) {
-        throw toError(error);
+        throw toErrFn(error);
     }
 };

@@ -1,8 +1,10 @@
 import mongoose from "mongoose";
 
 const optionSchema = new mongoose.Schema({
-  text: { type: String, required: true },
+  text: { type: String, default: "" },
   isCorrect: { type: Boolean, default: false },
+  // Only store when present — avoid imageUrl: null noise on every text option.
+  imageUrl: { type: String, trim: true },
 });
 
 const connectedSubQuestionSchema = new mongoose.Schema(

@@ -771,18 +771,17 @@ export const buildJeeMainAuthenticityGenerationBlock = ({
 
     return `
 **JEE MAIN AUTHENTICITY — NTA shift-paper style (NOT Advanced, NOT coaching worksheet):**
-Real JEE Main tests **breadth + speed** with mixed difficulty — Section A single-correct, Section B numerical (simulated below without integer type).
+Real JEE Main tests **breadth + speed** with mixed difficulty — Section A single-correct, Section B numerical value.
 
-**Question types available (backend):** \`single\`, \`multiple\` (multi-correct), \`connected\` (passage + sub-questions). **No integer-type field** — simulate Section B numerics as **single** MCQs whose four options are **four distinct numeric values** (with units).
-
-**Pattern mix for this batch (${n} items):**
+**Strict Pattern Rules for JEE Main:**
+- **NO passages / connected sets allowed** (passages only belong to JEE Advanced, CAT, and CLAT; JEE Main questions are strictly standalone).
+- **NO multiple-correct allowed** (JEE Main only allows Single Choice and Integer/Numerical Value).
+- **Question types available for JEE Main:** \`single\` (Single Choice MCQ) and \`integer\` (Numerical Value).
 ${isSectionB
-    ? `- **Section B style (numerical-as-MCQ):** Every item is \`single\` with 4 numeric options; stems need 2–4 min calculation; no trivial plug-in.`
-    : `- **~65–75%** \`single\` — standard single-correct MCQs (+4/−1 marking tone).
-- **~10–15%** \`multiple\` — multi-correct where appropriate (partial marking tone in explanation).
-- **~10–20%** \`connected\` — 1–2 reading/passage sets with 2–3 sub-questions (paragraph/comprehension or data-based linked set).
-- **~25–35% of singles** must be **numerical-as-MCQ** (four numeric options) — simulates Section B without integer type.
-- Include **match-the-column style** as \`single\`: stem "Match List I with List II", options are four complete matching pairs.`}
+    ? `- **Section B style (numerical value):** Numerical/integer calculation items; stems need 2–4 min calculation; no trivial plug-in.`
+    : `- **Single Choice MCQs:** Standard single-correct items (+4/−1 marking tone).
+- **Numerical Value items:** Distinct numerical/integer answers.
+- Include **match-the-column style** as \`single\` where needed: stem "Match List I with List II", options are four complete matching pairs.`}
 
 **BANNED templates:** SHM bare ω=√(k/m), fringe without position math, half-life plug-in only, bare Class 11 area integral, indistinguishable "butene" options.
 
@@ -896,13 +895,13 @@ export const buildExamCountStyleHint = ({
         if (examProfile === "jee_advanced") {
             return `${examLabel} full paper: PCM mix + **pattern variety** (single + multi-correct + connected passages) — Advanced depth, not Main formula drills. ${scope}`;
         }
-        return `${examLabel} full paper: PCM mix + singles (incl. numerical-as-MCQ) + some multi-correct + optional passages — Main shift-paper breadth. ${scope}`;
+        return `${examLabel} full paper: PCM mix + Single Choice MCQs and Numerical Value items — strictly standalone questions (NO passages, NO multiple-correct; passages only belong to JEE Advanced, CAT, and CLAT). Main shift-paper breadth. ${scope}`;
     }
     if (examProfile === "jee_advanced") {
         return `${examLabel}: multi-correct + match-column singles + connected sets — Advanced insight/depth, NOT Main speed. Topic: "${scope}".`;
     }
     if (examProfile === "jee_main") {
-        return `${examLabel}: singles (incl. numerical-as-four-options for Section B style) + optional multi-correct + passages — Main shift breadth. Topic: "${scope}".`;
+        return `${examLabel}: Single Choice (MCQ) and Numerical/Integer Value only — strictly standalone problems (NO passages, NO multiple-correct; passages only belong to JEE Advanced, CAT, and CLAT). Main shift breadth. Topic: "${scope}".`;
     }
     if (catSection === "cat_varc") {
         return `${examLabel}: RC passages (connected) + VA singles (para jumbles, odd sentence out, para summary) — NOT grammar/vocab/GMAT drills. Topic: "${scope}".`;

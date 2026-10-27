@@ -1,9 +1,16 @@
 import Joi from "joi";
 
 const optionSchema = Joi.object({
-  text: Joi.string().required(),
+  // Allow empty text when the option is image-only.
+  text: Joi.string().allow("").optional(),
   isCorrect: Joi.boolean().default(false),
-});
+  // FE edit form often sends imageUrl: null on text options — allow & ignore.
+  imageUrl: Joi.string().trim().optional().allow("", null),
+  _id: Joi.alternatives()
+    .try(Joi.string().trim(), Joi.object())
+    .optional()
+    .allow(null, ""),
+}).or("text", "imageUrl");
 
 const connectedSubQuestionSchema = Joi.object({
   // FE may send client temp ids; ignore unknowns / allow optional persistence ids.
@@ -182,28 +189,55 @@ const createAiQuestionBankWithQuestions = Joi.object({
   expectedTotal: Joi.number().min(1).optional(),
 }).unknown(true);
 
-const updateAiQuestion = aiQuestionItemSchema
-  .fork(
-    [
-      "questionText",
-      "questionType",
-      "paragraph",
-      "title",
-      "options",
-      "correctAnswer",
-      "explanation",
-      "subject",
-      "topic",
-      "difficulty",
-      "marks",
-      "negativeMarks",
-      "tags",
-      "passage",
-      "subQuestions",
-      "connectedQuestions",
-    ],
-    (schema) => schema.optional()
-  )
+const updateAiQuestion = Joi.object({
+  _id: Joi.alternatives()
+    .try(Joi.string().trim(), Joi.object())
+    .optional()
+    .allow(null, ""),
+  id: Joi.alternatives()
+    .try(Joi.string().trim(), Joi.object())
+    .optional()
+    .allow(null, ""),
+  questionText: Joi.string().trim().optional().allow(""),
+  questionType: Joi.string()
+    .valid("single", "multiple", "true_false", "connected", "integer")
+    .optional(),
+  paragraph: Joi.string().trim().allow("").optional(),
+  title: Joi.string().trim().allow("").optional(),
+  options: Joi.array().items(optionSchema).optional(),
+  correctAnswer: Joi.alternatives()
+    .try(
+      Joi.string(),
+      Joi.number(),
+      Joi.boolean(),
+      Joi.array().items(Joi.alternatives().try(Joi.string(), Joi.number()))
+    )
+    .optional()
+    .allow(null),
+  explanation: Joi.string().trim().allow("").optional(),
+  subject: Joi.string().trim().optional(),
+  topic: Joi.string().trim().optional(),
+  topicId: Joi.string().trim().optional().allow("", null),
+  chapter: Joi.string().trim().optional().allow("", null),
+  difficulty: Joi.string()
+    .valid("easy", "medium", "hard", "Easy", "Medium", "Hard")
+    .optional()
+    .lowercase(),
+  marks: Joi.number().min(0).optional(),
+  negativeMarks: Joi.number().min(0).optional(),
+  tags: Joi.array().items(Joi.string().trim()).optional(),
+  aiBatchNumber: Joi.number().integer().min(1).optional().allow(null),
+  sectionIndex: Joi.number().integer().min(0).optional().allow(null),
+  imageUrl: Joi.alternatives()
+    .try(Joi.string().trim(), Joi.array().items(Joi.string().trim()))
+    .optional()
+    .allow("", null),
+  passage: Joi.string().trim().optional().allow("", null),
+  passageText: Joi.string().trim().optional().allow("", null),
+  subQuestions: Joi.array().items(connectedSubQuestionSchema).optional(),
+  connectedQuestions: Joi.array().items(connectedSubQuestionSchema).optional(),
+})
+  .unknown(true)
   .min(1);
 
 export default {

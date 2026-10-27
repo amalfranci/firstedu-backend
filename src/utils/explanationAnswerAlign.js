@@ -149,12 +149,39 @@ export const stripCorruptedOptionFragments = (text = "") => {
 };
 
 /**
+ * Normalize over-escaped backslashes and repair regex artifacts:
+ * 1. Repair broken \ eq / \eq artifacts to \neq (e.g., "21\ eq25" -> "21 \neq 25", "k(k\ eq 0)" -> "k(k\neq 0)")
+ * 2. Collapse runs of escaped backslashes before LaTeX commands (e.g. \\\\\\\\\\\\\\\\\\\\\frac -> \frac)
+ * 3. Collapse excessive standalone backslash runs (e.g. \\\\\\\\ -> \\)
+ */
+export const normalizeBackslashEscapes = (raw) => {
+  if (!raw) return raw;
+  let text = String(raw);
+
+  // 1. Repair broken \ eq / \eq artifacts to \neq
+  // Matches \ eq, \eq, \\ eq, \\eq (not followed by letters, so \eqref, \equiv are safe)
+  text = text.replace(/\\+\s*eq(?![a-zA-Z])(\s*)/g, (_full, sp) => {
+    return sp ? `\\neq${sp}` : `\\neq `;
+  });
+
+  // 2. Collapse runs of escaped backslashes before LaTeX commands:
+  // e.g., \\\\\\\\\\\\\\\\\\\\\frac -> \frac, \\\\\\\\\dfrac -> \dfrac, \\\\\\\\\text -> \text
+  text = text.replace(/\\{2,}([a-zA-Z]+)/g, (_full, cmd) => `\\${cmd}`);
+
+  // 3. Collapse excessive standalone backslash runs (e.g. \\\\\\\\ -> \\ for line break)
+  text = text.replace(/\\{4,}/g, "\\\\");
+
+  return text;
+};
+
+/**
  * Repair prose / LaTeX corruptions without destroying words like "Analysis".
  */
 export const sanitizeExplanationText = (raw) => {
   let text = String(raw || "");
   if (!text) return text;
 
+  text = normalizeBackslashEscapes(text);
   text = text.replace(/<[^>]+>/g, " ");
 
   // Real glued labels only: Option Bnalysis → Option B. Analysis
@@ -204,6 +231,7 @@ export const sanitizeExplanationText = (raw) => {
     .replace(/\[frac\{([^}\]]+)\](\d+)\}/gi, "\\frac{$1}{$2}");
 
   text = stripCorruptedOptionFragments(text);
+  text = normalizeBackslashEscapes(text);
 
   return text
     .replace(/[ \t]+\n/g, "\n")
@@ -523,7 +551,7 @@ export const extractOptionAnalysisBlocks = (text = "") => {
 export const explanationRemapMismatch = (explanation = "", options = []) => {
   const plain = (options || []).map((o) =>
     String(typeof o === "string" ? o : o?.text || "")
-      .replace(/^[A-D][).:\s]+/i, "")
+      .replace(/^[([]?[A-D][).:\-\]]\s*/i, "")
       .trim()
   );
   if (plain.length < 2) return { mismatch: false, reason: null };
@@ -569,20 +597,134 @@ export const explanationRemapMismatch = (explanation = "", options = []) => {
 };
 
 /**
- * Single publish contract: sanitize → strip tails → align → normalize headers.
+ * Safely strip option label prefixes (e.g. "A)", "Option A:", "(A)") without
+ * stripping the English indefinite article "A " (e.g. "A healthcare system...").
+ */
+export const stripOptionLabelPrefix = (text = "") => {
+  return String(text || "")
+    .replace(/^\s*option\s+[A-D](?:[).:\-]|\s+)\s*/i, "")
+    .replace(/^\s*[([]\s*[A-D]\s*[)\]][).:\-]?\s*/i, "")
+    .replace(/^\s*[A-D][).:\-]\s*/i, "")
+    .replace(/^\s*[B-D]\s+/i, "")
+    .trim();
+};
+
+/**
+ * Ensure option evaluation paragraphs follow strict A -> B -> C -> D sequence.
+ */
+export const sortExplanationOptionAnalysis = (text = "") => {
+  let out = String(text || "");
+  if (!out) return out;
+
+  // Extract conclusion line if present
+  let conclusion = "";
+  const conclusionMatch = out.match(
+    /\n*(Therefore,\s+(?:the\s+)?correct\s+options?\s+(?:is|are)\s+[A-D,\sand]+\.?\s*)$/i
+  );
+  if (conclusionMatch) {
+    conclusion = conclusionMatch[1].trim();
+    out = out.slice(0, conclusionMatch.index).trim();
+  }
+
+  // Pre-normalize Option Analysis header
+  out = out.replace(/\b(Option\s+Analysis)[:.]?\s*/gi, "$1:\n\n");
+
+  // Separate inline Option A/B/C/D that follow sentence end (.!?)
+  out = out.replace(
+    /(?<=[.!?])\s+(?:•\s*)?Option\s+([A-D])\b(?!\s*nalysis)/gi,
+    "\n\nOption $1"
+  );
+
+  const itemRe = /(?:^|\n)\s*(?:•\s*)?Option\s+([A-D])\b(?!\s*nalysis)[:.\-\s]*/gi;
+  const matches = [];
+  const seenLetters = new Set();
+  let m;
+  while ((m = itemRe.exec(out)) !== null) {
+    const letter = m[1].toUpperCase();
+    if (!seenLetters.has(letter)) {
+      seenLetters.add(letter);
+      matches.push({
+        letter,
+        start: m.index,
+        headerLen: m[0].length,
+      });
+    }
+  }
+
+  if (matches.length < 2) return text;
+
+  const prefix = out.slice(0, matches[0].start).trim();
+  const blocks = [];
+  for (let i = 0; i < matches.length; i += 1) {
+    const cur = matches[i];
+    const next = matches[i + 1];
+    const blockEnd = next ? next.start : out.length;
+    let body = out.slice(cur.start + cur.headerLen, blockEnd).trim();
+    body = body.replace(/^[:.\-]\s*/, "");
+    blocks.push({
+      letter: cur.letter,
+      body,
+    });
+  }
+
+  blocks.sort((a, b) => a.letter.localeCompare(b.letter));
+  const sortedBody = blocks
+    .map((b) => `Option ${b.letter}: ${b.body}`)
+    .join("\n\n");
+
+  let result = prefix ? `${prefix}\n\n${sortedBody}` : sortedBody;
+  if (conclusion) result += `\n\n${conclusion}`;
+  return result;
+};
+
+/**
+ * Auto-restore English indefinite article (A/An) and ensure proper capitalization.
+ */
+export const autoFixOptionArticles = (options = []) => {
+  return (options || []).map((o) => {
+    const isObj = typeof o === "object" && o !== null;
+    let text = isObj ? o.text || "" : String(o || "");
+    text = stripOptionLabelPrefix(text);
+
+    if (/^[a-z]/.test(text)) {
+      if (
+        /^(?:online|independent|open|automated|adaptive|efficient|authoritative|encyclopedic|on-demand|e-commerce|enterprise|agricultural|environmental|animation)\b/i.test(
+          text
+        )
+      ) {
+        text = "An " + text;
+      } else if (
+        /^(?:healthcare|fashion|municipal|corporate|social|researcher|commercial|software|dark-store|hospital|logistics|university|digital|cash-flush|painter|novelist|mobile|rideshare|cloud|public|coalition|pharmaceutical|manufacturing|ride-hailing|retail|global|technology|financial|tech|biotech|marketing|smart|decentralized|venture|traditional|film|fitness|firm|dominant|sovereign|robust)\b/i.test(
+          text
+        )
+      ) {
+        text = "A " + text;
+      } else {
+        text = text.charAt(0).toUpperCase() + text.slice(1);
+      }
+    }
+    return isObj ? { ...o, text } : text;
+  });
+};
+
+/**
+ * Single publish contract: sanitize → strip tails → align → normalize headers → sort A-B-C-D.
  */
 export const finalizeExplanationForPublish = (locked = {}) => {
   const marked = locked.correctAnswer ?? locked.answerKey;
   let explanation = String(locked.explanation || locked._verifiedSolution || "");
   if (!explanation) return { ...locked, explanation: "" };
 
+  explanation = normalizeBackslashEscapes(explanation);
   explanation = sanitizeExplanationText(explanation);
   explanation = stripCorruptedOptionFragments(explanation);
   explanation = alignExplanationToMarkedAnswer(explanation, marked);
   explanation = normalizeOptionAnalysisHeaders(explanation);
+  explanation = sortExplanationOptionAnalysis(explanation);
   explanation = stripCorruptedOptionFragments(explanation);
   explanation = alignExplanationToMarkedAnswer(explanation, marked);
   explanation = stripCorruptedOptionFragments(explanation);
+  explanation = normalizeBackslashEscapes(explanation);
 
   return {
     ...locked,
@@ -600,6 +742,7 @@ export default {
   alignExplanationToMarkedAnswer,
   sanitizeExplanationText,
   sanitizeExplanationLatex,
+  normalizeBackslashEscapes,
   remapExplanationOptionLetters,
   stripClosingVerdicts,
   stripCorruptedOptionFragments,
@@ -611,4 +754,7 @@ export default {
   extractOptionAnalysisBlocks,
   tokenizeForOverlap,
   jaccardOverlap,
+  sortExplanationOptionAnalysis,
+  autoFixOptionArticles,
+  stripOptionLabelPrefix,
 };

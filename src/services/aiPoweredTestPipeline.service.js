@@ -33,6 +33,9 @@ import {
 import {
   alignExplanationToMarkedAnswer,
   sanitizeExplanationText,
+  finalizeExplanationForPublish,
+  autoFixOptionArticles,
+  stripOptionLabelPrefix,
 } from "../utils/explanationAnswerAlign.js";
 import { safeJsonParse } from "../utils/aiJsonRepair.js";
 import { dedupePaperQuestionsByStem } from "../utils/paperQuestionDedupe.js";
@@ -612,7 +615,11 @@ const callVerifyJson = async (prompt) => {
 };
 
 const normalizeSubject = (raw) => {
-  const key = String(raw || "").toLowerCase();
+  const str =
+    typeof raw === "object" && raw !== null
+      ? raw.subject || raw.name || raw.label || raw.title || ""
+      : String(raw || "");
+  const key = str.toLowerCase().trim();
   if (key.startsWith("math")) return "Mathematics";
   if (key.startsWith("phys")) return "Physics";
   if (key.startsWith("chem")) return "Chemistry";
@@ -625,7 +632,7 @@ const normalizeSubject = (raw) => {
     return "DILR";
   if (key === "qa" || key === "quantitative ability" || key === "quantitative aptitude")
     return "QA";
-  return String(raw || "").trim() || "General";
+  return str.trim() || "General";
 };
 
 const writerLabel = (subject) => {
@@ -1174,6 +1181,16 @@ const sanitizeQuestion = (q) => ({
 });
 
 export const planPipelineSlots = (config = {}) => {
+  const examType = String(config.examType || "").toLowerCase();
+  const isJeeMain = examType === "jee_main" || /jee\s*main/i.test(examType);
+
+  if (isJeeMain) {
+    config.questionStructure = "standalone";
+    config.passageCount = 0;
+    config.questionsPerPassage = 0;
+    config.subjectStructures = null;
+  }
+
   const subjects = (config.subjects || ["Mathematics"]).map(normalizeSubject);
   // All exams: only Single Correct + Multiple Correct.
   // Legacy integer/match counts fold into single.
@@ -1183,11 +1200,22 @@ export const planPipelineSlots = (config = {}) => {
   let typeCounts = {
     single:
       Math.max(0, Number(config.typeCounts?.single) || 0) + legacyExtra,
-    multiple: Math.max(
+    multiple: isJeeMain
+      ? 0
+      : Math.max(
+          0,
+          Number(config.typeCounts?.multiple ?? config.typeCounts?.multi) || 0
+        ),
+  };
+  if (isJeeMain) {
+    const rawMulti = Math.max(
       0,
       Number(config.typeCounts?.multiple ?? config.typeCounts?.multi) || 0
-    ),
-  };
+    );
+    if (rawMulti > 0) {
+      typeCounts.single += rawMulti;
+    }
+  }
   let typeSum = typeCounts.single + typeCounts.multiple;
   const requestedTotal = Math.max(0, Number(config.totalQuestions) || 0);
   // Keep generate / verify on one agreed count.
@@ -1472,6 +1500,8 @@ export const planPipelineSlots = (config = {}) => {
     subjects,
     totalQuestions,
     questionStructure: config.questionStructure || "both",
+    subjectStructureMode: config.subjectStructureMode || "unified",
+    subjectStructures: config.subjectStructures || null,
     passageCount: Math.max(0, Number(config.passageCount) || 0),
     questionsPerPassage: Math.max(0, Number(config.questionsPerPassage) || 0),
     passageBasedQuestions: Math.max(
@@ -2452,13 +2482,9 @@ const optionPlainText = (o) => {
   let text = typeof o === "string" ? o : o?.text || String(o || "");
   // Strip HTML the model sometimes embeds in verbal stems/options.
   text = text.replace(/<[^>]+>/g, " ");
-  // Strip leading labels: A)  A.  (A)  (A).  Option A:
-  text = text
-    .replace(/^\s*(?:option\s*)?[A-D][).:\s]+/i, "")
-    .replace(/^\s*\(\s*[A-D]\s*\)[).:\s]*/i, "")
-    .replace(/\s+/g, " ")
-    .trim();
-  return text;
+  // Strip leading labels: Option A: / A) / A. / (A) / [A] -- NEVER strip the English article "A "
+  text = stripOptionLabelPrefix(text);
+  return text.replace(/\s+/g, " ").trim();
 };
 
 /** Repair common Gemini/o3 LaTeX / prose corruptions before UI/bank save. */
@@ -2467,7 +2493,8 @@ export const sanitizeExplanationLatex = (raw) => sanitizeExplanationText(raw);
 const toUiQuestion = (q, config = {}) => {
   const type = q._advancedType || q.questionType;
   const letters = "ABCD".split("");
-  const plain = (q.options || []).map(optionPlainText);
+  const rawPlain = (q.options || []).map(optionPlainText);
+  const plain = autoFixOptionArticles(rawPlain);
   const prefixed = plain.map((text, i) => `${letters[i]}) ${text}`);
   const indices = Array.isArray(q.correctIndices)
     ? q.correctIndices
@@ -2494,6 +2521,10 @@ const toUiQuestion = (q, config = {}) => {
     q._questionKind || paperDefaultQuestionKind(exam.examType);
   const stem = sanitizeExplanationLatex(q.questionText);
   const passage = String(q.passage || q.passageText || q.paragraph || "").trim();
+  const finalized = finalizeExplanationForPublish({
+    explanation: sanitizeExplanationLatex(q.explanation),
+    correctAnswer: q.correctAnswer,
+  });
   return {
     questionType: uiType,
     text: stem,
@@ -2503,10 +2534,7 @@ const toUiQuestion = (q, config = {}) => {
     correctIndex: q.correctIndex ?? indices[0] ?? 0,
     correctIndices: indices,
     multipleCorrectIndexes: type === "multiple" ? indices : [],
-    explanation: alignExplanationToMarkedAnswer(
-      sanitizeExplanationLatex(q.explanation),
-      q.correctAnswer
-    ),
+    explanation: finalized.explanation || "",
     marks: config.marksByType?.[type] ?? 4,
     negativeMarks: config.negativeMarks ?? 1,
     difficulty: "Hard",

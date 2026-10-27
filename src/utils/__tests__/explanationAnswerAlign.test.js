@@ -2,9 +2,13 @@ import {
   alignExplanationToMarkedAnswer,
   explanationRemapMismatch,
   finalizeExplanationForPublish,
+  normalizeBackslashEscapes,
   remapExplanationOptionLetters,
   sanitizeExplanationText,
   stripCorruptedOptionFragments,
+  sortExplanationOptionAnalysis,
+  stripOptionLabelPrefix,
+  autoFixOptionArticles,
 } from "../explanationAnswerAlign.js";
 import {
   applyExplanationQualityGate,
@@ -274,5 +278,71 @@ describe("explanationAnswerAlign", () => {
         explanation: "The author wants human audits.",
       })
     ).toBe(false);
+  });
+
+  test("stripOptionLabelPrefix preserves English indefinite article 'A '", () => {
+    expect(stripOptionLabelPrefix("A healthcare system that deploys AI")).toBe(
+      "A healthcare system that deploys AI"
+    );
+    expect(stripOptionLabelPrefix("A) A healthcare system that deploys AI")).toBe(
+      "A healthcare system that deploys AI"
+    );
+    expect(stripOptionLabelPrefix("Option A: A municipal transit authority")).toBe(
+      "A municipal transit authority"
+    );
+    expect(stripOptionLabelPrefix("(A) A fashion designer")).toBe(
+      "A fashion designer"
+    );
+    expect(stripOptionLabelPrefix("B) An automated pricing engine")).toBe(
+      "An automated pricing engine"
+    );
+  });
+
+  test("autoFixOptionArticles restores missing English articles and capitalizes", () => {
+    const raw = [
+      "healthcare system that deploys specialized equipment",
+      "fashion designer who uses AI to generate patterns",
+      "municipal transit authority that uses sensors",
+      "An e-commerce platform that inflates prices",
+    ];
+    const fixed = autoFixOptionArticles(raw);
+    expect(fixed[0]).toBe("A healthcare system that deploys specialized equipment");
+    expect(fixed[1]).toBe("A fashion designer who uses AI to generate patterns");
+    expect(fixed[2]).toBe("A municipal transit authority that uses sensors");
+    expect(fixed[3]).toBe("An e-commerce platform that inflates prices");
+  });
+
+  test("sortExplanationOptionAnalysis sequences paragraphs strictly A -> B -> C -> D", () => {
+    const text =
+      "Option Analysis: Option C is historical bias. Option D is a precise parallel. Option A describes a one-time policy. Option B involves surge pricing. Therefore, the correct option is D.";
+    const sorted = sortExplanationOptionAnalysis(text);
+    const order = [...sorted.matchAll(/Option\s+([A-D]):/g)].map((m) => m[1]);
+    expect(order).toEqual(["A", "B", "C", "D"]);
+    expect(sorted).toMatch(/Therefore, the correct option is D\.$/);
+  });
+
+  test("normalizeBackslashEscapes collapses runs of escaped backslashes and repairs \\ eq artifacts", () => {
+    const raw =
+      "Given \\\\\\\\\\\\\\\\\\\\\\frac{a}{b} and \\\\\\\\\\\\\\\\\\\\\\dfrac{c}{d} where 21\\ eq25 and k(k\\ eq 0) while \\\\\\\\ line break.";
+    const fixed = normalizeBackslashEscapes(raw);
+    expect(fixed).toContain("\\frac{a}{b}");
+    expect(fixed).toContain("\\dfrac{c}{d}");
+    expect(fixed).toContain("21\\neq 25");
+    expect(fixed).toContain("k(k\\neq 0)");
+    expect(fixed).toContain("\\\\ line break");
+    expect(fixed).not.toContain("\\\\\\\\\\\\\\\\\\\\\\frac");
+  });
+
+  test("finalizeExplanationForPublish collapses escaped backslashes and normalizes \\ eq to \\neq", () => {
+    const locked = finalizeExplanationForPublish({
+      explanation:
+        "Step 1: Compute \\\\\\\\\\\\\\\\\\\\\\frac{2.303 RT}{F} = 0.06. Here Q = \\\\\\\\\\\\\\\\\\\\\\dfrac{[Zn^{2+}]}{[Cu^{2+}]} = 10. Also note 18\\cdot\\frac76=21\\ eq25. Option Analysis: Option A: The standard cell potential is +1.10 V. Option B: Cell potential is 1.07 V.",
+      correctAnswer: "A, B",
+    });
+    expect(locked.explanation).toContain("\\frac{2.303 RT}{F}");
+    expect(locked.explanation).toContain("\\dfrac{[Zn^{2+}]}{[Cu^{2+}]}");
+    expect(locked.explanation).toContain("21\\neq 25");
+    expect(locked.explanation).not.toContain("\\\\\\\\\\\\\\\\\\\\\\frac");
+    expect(locked.explanation).not.toContain("\\ eq");
   });
 });

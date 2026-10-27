@@ -36,6 +36,8 @@ import {
   explanationRemapMismatch,
   finalizeExplanationForPublish,
   remapExplanationOptionLetters,
+  stripOptionLabelPrefix,
+  autoFixOptionArticles,
 } from "../utils/explanationAnswerAlign.js";
 import { polishExplanationProse } from "./paperExplanationProsePolish.service.js";
 import { applyExplanationQualityGate } from "./paperExplanationQualityGate.service.js";
@@ -352,6 +354,18 @@ export const schemaOkForO3 = (q, typeHint = null, _examType = "") => {
   }
   const stem = String(q.questionText || q.text || "").trim();
   if (!stem || stem.length < 12) issues.push("missing_or_short_stem");
+
+  const exam = String(_examType || q._examType || "").toLowerCase();
+  const isJeeMain = exam === "jee_main" || /jee\s*main/i.test(exam);
+  if (isJeeMain) {
+    if (type === "multiple") {
+      issues.push("multiple_correct_disallowed_for_jee_main");
+    }
+    const passage = String(q.passage || q.passageText || q.paragraph || "").trim();
+    if (passage && passage.length > 40) {
+      issues.push("passage_disallowed_for_jee_main");
+    }
+  }
 
   if (type === "integer") {
     const n = Number(q.correctAnswer ?? q.finalAnswer ?? q.answerDisplay);
@@ -952,11 +966,10 @@ const shuffleSingleCorrectOptions = (locked = {}) => {
   const opts = Array.isArray(locked.options) ? locked.options : [];
   if (opts.length < 2) return locked;
 
-  const plain = opts.map((o) =>
-    String(typeof o === "string" ? o : o?.text || "")
-      .replace(/^[A-D][).:\s]+/i, "")
-      .trim()
+  const rawPlain = opts.map((o) =>
+    stripOptionLabelPrefix(typeof o === "string" ? o : o?.text || "")
   );
+  const plain = autoFixOptionArticles(rawPlain);
   let correctIdx = Number.isInteger(locked.correctIndex) ? locked.correctIndex : -1;
   if (correctIdx < 0 || correctIdx >= plain.length) {
     const letter = String(locked.correctAnswer || "").toUpperCase().slice(0, 1);
@@ -1290,22 +1303,51 @@ export const runParallelPaperPipeline = async ({
     attempt,
   });
 
-  const passageCountCfg = Math.max(
-    0,
-    Number(config?.passageCount ?? plan?.passageCount) || 0
-  );
-  const perPassageCfg = Math.max(
-    0,
-    Number(config?.questionsPerPassage ?? plan?.questionsPerPassage) || 0
-  );
-  const structureCfg = String(
-    config?.questionStructure || plan?.questionStructure || "both"
-  ).toLowerCase();
+  const examType = String(config?.examType || plan?.examType || "").toLowerCase();
+  const isJeeMain = examType === "jee_main" || /jee\s*main/i.test(examType);
+
+  const passageCountCfg = isJeeMain
+    ? 0
+    : Math.max(
+        0,
+        Number(config?.passageCount ?? plan?.passageCount) || 0
+      );
+  const perPassageCfg = isJeeMain
+    ? 0
+    : Math.max(
+        0,
+        Number(config?.questionsPerPassage ?? plan?.questionsPerPassage) || 0
+      );
+  const structureCfg = isJeeMain
+    ? "standalone"
+    : String(
+        config?.questionStructure || plan?.questionStructure || "both"
+      ).toLowerCase();
+  const subjectStructuresCfg = isJeeMain
+    ? null
+    : config?.subjectStructures || plan?.subjectStructures || null;
+  const isSubjectWise =
+    !isJeeMain &&
+    subjectStructuresCfg &&
+    typeof subjectStructuresCfg === "object" &&
+    Object.keys(subjectStructuresCfg).length > 0;
   const wantsPassagePacks =
+    !isJeeMain &&
     typeof generatePassagePack === "function" &&
     (structureCfg === "passage" || structureCfg === "both") &&
-    passageCountCfg > 0 &&
-    perPassageCfg > 0;
+    (passageCountCfg > 0 || isSubjectWise);
+
+  if (isJeeMain) {
+    seatQueue.forEach((s) => {
+      s.seatMode = "standalone";
+      s.lockedPassage = null;
+      s.connectedGroup = null;
+      if (s.slot?.type === "multiple" || s.type === "multiple") {
+        if (s.slot) s.slot.type = "single";
+        s.type = "single";
+      }
+    });
+  }
 
   const isRcishSeat = (seat) => {
     const hay = `${seat?.slot?.chapter || ""} ${seat?.slot?.topicId || ""} ${seat?.slot?.subject || ""} ${seat?.slot?.conceptSlot || ""}`.toLowerCase();
@@ -1317,37 +1359,108 @@ export const runParallelPaperPipeline = async ({
   // Excel Connected Group packs: N seats share one passage (P1, P2, …).
   const workUnits = [];
   if (wantsPassagePacks) {
-    const rcIdx = [];
-    const otherIdx = [];
-    seatQueue.forEach((s, i) => {
-      if (isRcishSeat(s)) rcIdx.push(i);
-      else otherIdx.push(i);
-    });
-    const packOrder = [...rcIdx, ...otherIdx];
-    const needPackSeats = passageCountCfg * perPassageCfg;
-    const packIndices = packOrder.slice(0, needPackSeats);
-    const packSet = new Set(packIndices);
-    for (let p = 0; p < passageCountCfg; p += 1) {
-      const chunk = packIndices.slice(p * perPassageCfg, (p + 1) * perPassageCfg);
-      if (chunk.length < perPassageCfg) break;
-      workUnits.push({
-        kind: "pack",
-        packId: `P${p + 1}`,
-        seats: chunk.map((i) => seatQueue[i]),
-        seatIndexes: chunk,
+    if (isSubjectWise) {
+      const packSet = new Set();
+      let globalPackIdx = 1;
+
+      // Group seat indices by normalized subject
+      const indicesBySubject = new Map();
+      seatQueue.forEach((s, i) => {
+        const subjNorm = normalizeSubject(s.slot?.subject) || "default";
+        if (!indicesBySubject.has(subjNorm)) indicesBySubject.set(subjNorm, []);
+        indicesBySubject.get(subjNorm).push(i);
+      });
+
+      // For each subject with a configured structure:
+      for (const [subjKey, indices] of indicesBySubject.entries()) {
+        const cfg =
+          Object.entries(subjectStructuresCfg).find(
+            ([k]) => normalizeSubject(k) === subjKey || k === subjKey
+          )?.[1] || null;
+
+        const subStruct = String(
+          cfg?.questionStructure || "standalone"
+        ).toLowerCase();
+        const subPassages = Math.max(0, Number(cfg?.passageCount) || 0);
+        const subPer = Math.max(0, Number(cfg?.questionsPerPassage) || 0);
+
+        if (
+          (subStruct === "passage" || subStruct === "both") &&
+          subPassages > 0 &&
+          subPer > 0
+        ) {
+          for (let p = 0; p < subPassages; p += 1) {
+            const chunk = indices.slice(p * subPer, (p + 1) * subPer);
+            if (chunk.length < subPer) break;
+            chunk.forEach((idx) => packSet.add(idx));
+            workUnits.push({
+              kind: "pack",
+              packId: `P${globalPackIdx}`,
+              seats: chunk.map((i) => seatQueue[i]),
+              seatIndexes: chunk,
+            });
+            globalPackIdx += 1;
+          }
+        }
+      }
+
+      // Any unpacked seat becomes single (standalone)
+      seatQueue.forEach((seat, i) => {
+        if (packSet.has(i)) return;
+        workUnits.push({ kind: "single", seat, seatIndex: i });
+      });
+
+      pipelineLog?.("PASSAGE_PACK_PLAN", {
+        mode: "subject_wise",
+        packs: workUnits.filter((u) => u.kind === "pack").length,
+        standalones: workUnits.filter((u) => u.kind === "single").length,
+        packIds: workUnits
+          .filter((u) => u.kind === "pack")
+          .map((u) => u.packId),
+      });
+    } else {
+      const rcIdx = [];
+      const otherIdx = [];
+      seatQueue.forEach((s, i) => {
+        if (isRcishSeat(s)) rcIdx.push(i);
+        else otherIdx.push(i);
+      });
+      // Prefer RC seats for passages; never spill into other non-RC seats if RC seats exist
+      const packOrder = rcIdx.length > 0 ? rcIdx : otherIdx;
+      const needPackSeats = Math.min(
+        passageCountCfg * perPassageCfg,
+        packOrder.length
+      );
+      const packIndices = packOrder.slice(0, needPackSeats);
+      const packSet = new Set(packIndices);
+      for (let p = 0; p < passageCountCfg; p += 1) {
+        const chunk = packIndices.slice(
+          p * perPassageCfg,
+          (p + 1) * perPassageCfg
+        );
+        if (chunk.length < perPassageCfg) break;
+        workUnits.push({
+          kind: "pack",
+          packId: `P${p + 1}`,
+          seats: chunk.map((i) => seatQueue[i]),
+          seatIndexes: chunk,
+        });
+      }
+      seatQueue.forEach((seat, i) => {
+        if (packSet.has(i)) return;
+        workUnits.push({ kind: "single", seat, seatIndex: i });
+      });
+      pipelineLog?.("PASSAGE_PACK_PLAN", {
+        mode: "unified",
+        passageCount: passageCountCfg,
+        questionsPerPassage: perPassageCfg,
+        packs: workUnits.filter((u) => u.kind === "pack").length,
+        standalones: workUnits.filter((u) => u.kind === "single").length,
+        packIds: workUnits
+          .filter((u) => u.kind === "pack")
+          .map((u) => u.packId),
       });
     }
-    seatQueue.forEach((seat, i) => {
-      if (packSet.has(i)) return;
-      workUnits.push({ kind: "single", seat, seatIndex: i });
-    });
-    pipelineLog?.("PASSAGE_PACK_PLAN", {
-      passageCount: passageCountCfg,
-      questionsPerPassage: perPassageCfg,
-      packs: workUnits.filter((u) => u.kind === "pack").length,
-      standalones: workUnits.filter((u) => u.kind === "single").length,
-      packIds: workUnits.filter((u) => u.kind === "pack").map((u) => u.packId),
-    });
   } else {
     seatQueue.forEach((seat, i) => {
       workUnits.push({ kind: "single", seat, seatIndex: i });
@@ -1433,7 +1546,13 @@ export const runParallelPaperPipeline = async ({
               q._topicId = q._topicId || seat.slot?.topicId || item.topicId;
               q.topicId = q.topicId || seat.slot?.topicId || item.topicId;
               q.subject = q.subject || item.subject || seat.slot?.subject;
-              if (seat.lockedPassage && !q.passage) {
+              if (isJeeMain) {
+                if (q.questionType === "multiple") q.questionType = "single";
+                delete q.passage;
+                delete q.passageText;
+                delete q.paragraph;
+                delete q._connectedGroup;
+              } else if (seat.lockedPassage && !q.passage) {
                 q.passage = seat.lockedPassage;
                 q.passageText = seat.lockedPassage;
                 q._connectedGroup = seat.connectedGroup || q._connectedGroup;

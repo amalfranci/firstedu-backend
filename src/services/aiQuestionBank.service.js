@@ -6,7 +6,10 @@ import aiQuestionBankRepository from "../repository/aiQuestionBank.repository.js
 import categoryRepository from "../repository/category.repository.js";
 import { assertAiBankNotInUse } from "../utils/aiBankUsageGuard.js";
 import { dedupePaperQuestionsByStem } from "../utils/paperQuestionDedupe.js";
-import { logConfirmedQuestionsToFile } from "./confirmedQuestionsLogger.service.js";
+import {
+  logConfirmedQuestionsToFile,
+  resolveMultiSubjectTopic,
+} from "./confirmedQuestionsLogger.service.js";
 import { normalizeCategoryIds } from "../utils/normalizeCategoryIds.js";
 
 const getSectionIndexByCount = (sectionConfigs = [], questionIndex = 0) => {
@@ -146,6 +149,7 @@ const logSavedBankQuestions = async ({
   useSectionWise,
   sections,
   questions,
+  subjects = [],
 }) => {
   if (!topic || !Array.isArray(questions) || !questions.length) return;
   // Connected questions carry the passage under `paragraph`; the logger reads `passage`.
@@ -164,6 +168,7 @@ const logSavedBankQuestions = async ({
     for (const [idx, qs] of bySection) {
       await logConfirmedQuestionsToFile({
         topic,
+        subjects,
         bankName,
         sectionName: idx != null ? sections[idx]?.name || "" : "",
         sectionIndex: idx,
@@ -173,6 +178,7 @@ const logSavedBankQuestions = async ({
   } else {
     await logConfirmedQuestionsToFile({
       topic,
+      subjects,
       bankName,
       questions: questions.map(normalize),
     });
@@ -189,9 +195,6 @@ export const createAiQuestionBankWithQuestions = async (data, createdBy) => {
     if (!cat) throw new ApiError(404, `Category not found: ${catId}`);
   }
 
-  const bankName = String(data.name || "").trim();
-  if (!bankName) throw new ApiError(400, "Bank name is required");
-
   const rawQuestions = Array.isArray(data.questions) ? data.questions : [];
   const questionsInput = dedupePaperQuestionsByStem(rawQuestions);
   const droppedDupes = rawQuestions.length - questionsInput.length;
@@ -200,6 +203,24 @@ export const createAiQuestionBankWithQuestions = async (data, createdBy) => {
       `[ai-question-bank] dropped ${droppedDupes} duplicate stem(s) before save`
     );
   }
+
+  const distinctSubjects = [...new Set([
+    ...(Array.isArray(data.subjects) ? data.subjects : []),
+    ...questionsInput.map(q => q?.subject).filter(Boolean)
+  ])];
+  let bankName = String(data.name || "").trim();
+  let generationTopic = data.generationTopic ? String(data.generationTopic).trim() : null;
+  if (distinctSubjects.length > 1) {
+    if (generationTopic) {
+      generationTopic = resolveMultiSubjectTopic(generationTopic, distinctSubjects, questionsInput);
+    }
+    if (bankName) {
+      const [base, suffix] = bankName.split(/\s*·\s*/);
+      const updatedBase = resolveMultiSubjectTopic(base, distinctSubjects, questionsInput);
+      bankName = suffix ? `${updatedBase} · ${suffix}` : updatedBase;
+    }
+  }
+  if (!bankName) throw new ApiError(400, "Bank name is required");
 
   const expectedTotal = Number(data.expectedTotal) || 0;
   // Never hard-block confirm on count shortfall. Generation may stop early
@@ -287,7 +308,7 @@ export const createAiQuestionBankWithQuestions = async (data, createdBy) => {
           contentType: s.contentType === "image" ? "image" : "text",
         })),
         aiProvider: data.aiProvider || "gemini",
-        generationTopic: data.generationTopic || null,
+        generationTopic: generationTopic || data.generationTopic || null,
         // Answerable MCQs: connected children count individually (not the parent row).
         questionCount: questionsInput.reduce((n, q) => {
           if (String(q?.questionType || "").toLowerCase() === "connected") {
@@ -318,9 +339,22 @@ export const createAiQuestionBankWithQuestions = async (data, createdBy) => {
         sections,
         bankNegativeMarks,
       });
+      const rawSubs = q.subQuestions ?? q.connectedQuestions ?? [];
+      const firstSub = Array.isArray(rawSubs) && rawSubs[0] ? rawSubs[0] : null;
       const baseFields = {
-        subject: q.subject || undefined,
-        topic: q.topic || q.chapter || q.topicId || undefined,
+        subject:
+          q.subject ||
+          firstSub?.subject ||
+          (useSectionWise && sectionIndex !== null
+            ? sections[sectionIndex]?.name
+            : undefined),
+        topic:
+          q.topic ||
+          q.chapter ||
+          q.topicId ||
+          firstSub?.topic ||
+          firstSub?.chapter ||
+          undefined,
         difficulty,
         tags: q.tags,
         aiBatchNumber: q.aiBatchNumber ?? null,
@@ -331,7 +365,6 @@ export const createAiQuestionBankWithQuestions = async (data, createdBy) => {
       };
 
       if (q.questionType === "connected") {
-        const rawSubs = q.subQuestions ?? q.connectedQuestions ?? [];
         const subs = applyNegativeMarksToConnectedSubs(
           rawSubs,
           questionNegativeMarks
@@ -373,6 +406,9 @@ export const createAiQuestionBankWithQuestions = async (data, createdBy) => {
             [
               {
                 ...baseFields,
+                subject: sub.subject || baseFields.subject,
+                topic: sub.topic || sub.chapter || baseFields.topic,
+                sectionIndex: sub.sectionIndex ?? baseFields.sectionIndex,
                 questionText: sub.questionText,
                 questionType: sub.questionType,
                 options: sub.options,
@@ -428,11 +464,12 @@ export const createAiQuestionBankWithQuestions = async (data, createdBy) => {
     // Best-effort confirmed-questions .txt log — never blocks/reverts the save.
     try {
       await logSavedBankQuestions({
-        topic: String(data.generationTopic || bankName || "").trim(),
+        topic: String(generationTopic || data.generationTopic || bankName || "").trim(),
         bankName,
         useSectionWise,
         sections,
         questions: questionsInput,
+        subjects: distinctSubjects,
       });
     } catch (logErr) {
       console.error(
@@ -508,12 +545,6 @@ export const updateAiQuestion = async (id, updateData) => {
   if (!existingQuestion) {
     throw new ApiError(404, "AI question not found");
   }
-  if (existingQuestion.parentQuestionId && !existingQuestion.isParent) {
-    throw new ApiError(
-      400,
-      "Edit connected sub-questions via the parent passage question"
-    );
-  }
 
   await assertAiBankNotInUse(existingQuestion.aiQuestionBank, "edit");
 
@@ -576,6 +607,27 @@ export const updateAiQuestion = async (id, updateData) => {
         { new: true }
       ).populate("childQuestions");
 
+      if (
+        partialParentUpdate.difficulty &&
+        Array.isArray(existingQuestion.childQuestions) &&
+        existingQuestion.childQuestions.length > 0
+      ) {
+        const childIds = existingQuestion.childQuestions.map(
+          (child) => child?._id?.toString?.() || child?.toString?.()
+        );
+        await AiQuestion.updateMany(
+          { _id: { $in: childIds } },
+          { difficulty: partialParentUpdate.difficulty }
+        );
+      }
+
+      if (partialParentUpdate.passage) {
+        await AiQuestion.updateMany(
+          { parentQuestionId: id },
+          { passage: partialParentUpdate.passage }
+        );
+      }
+
       return updatedParent;
     }
 
@@ -616,14 +668,14 @@ export const updateAiQuestion = async (id, updateData) => {
     const existingChildIds = (existingQuestion.childQuestions || []).map(
       (child) => child?._id?.toString?.() || child?.toString?.()
     );
-    if (existingChildIds.length) {
-      await AiQuestion.deleteMany({ _id: { $in: existingChildIds } });
-    }
-
+    const existingChildIdSet = new Set(existingChildIds);
+    const incomingChildIds = new Set();
     const newChildIds = [];
+
     for (const sub of subs) {
       const { marks, negativeMarks } = normalizeSubQuestionScoring(sub);
-      const child = await AiQuestion.create({
+      const subIdStr = sub._id ? String(sub._id) : sub.id ? String(sub.id) : null;
+      const subData = {
         questionText: sub.questionText,
         questionType: sub.questionType,
         options: sub.options,
@@ -632,13 +684,33 @@ export const updateAiQuestion = async (id, updateData) => {
         difficulty: parentUpdate.difficulty,
         marks,
         negativeMarks,
-        aiQuestionBank: existingQuestion.aiQuestionBank,
-        sectionIndex: existingQuestion.sectionIndex,
-        orderInBank: existingQuestion.orderInBank,
-        createdBy: existingQuestion.createdBy,
-        parentQuestionId: existingQuestion._id,
-      });
-      newChildIds.push(child._id);
+        imageUrl: sub.imageUrl || null,
+      };
+
+      if (subIdStr && existingChildIdSet.has(subIdStr)) {
+        await AiQuestion.findByIdAndUpdate(subIdStr, subData);
+        newChildIds.push(subIdStr);
+        incomingChildIds.add(subIdStr);
+      } else {
+        const child = await AiQuestion.create({
+          ...subData,
+          aiQuestionBank: existingQuestion.aiQuestionBank,
+          sectionIndex: existingQuestion.sectionIndex,
+          orderInBank: existingQuestion.orderInBank,
+          createdBy: existingQuestion.createdBy,
+          parentQuestionId: existingQuestion._id,
+        });
+        const createdIdStr = child?._id?.toString?.() || String(child._id);
+        newChildIds.push(createdIdStr);
+        incomingChildIds.add(createdIdStr);
+      }
+    }
+
+    const removedChildIds = existingChildIds.filter(
+      (cid) => !incomingChildIds.has(cid)
+    );
+    if (removedChildIds.length > 0) {
+      await AiQuestion.deleteMany({ _id: { $in: removedChildIds } });
     }
 
     const updatedParent = await AiQuestion.findByIdAndUpdate(
@@ -662,9 +734,84 @@ export const updateAiQuestion = async (id, updateData) => {
     return updatedParent;
   }
 
-  const updatedQuestion = await AiQuestion.findByIdAndUpdate(id, updateData, {
-    new: true,
-  });
+  const questionUpdatePayload = { ...updateData };
+  if (existingQuestion.parentQuestionId && !existingQuestion.isParent) {
+    delete questionUpdatePayload.paragraph;
+  }
+  // FE may send imageUrl: null on text options / question — normalize before save.
+  if (Object.prototype.hasOwnProperty.call(questionUpdatePayload, "imageUrl")) {
+    const img = questionUpdatePayload.imageUrl;
+    questionUpdatePayload.imageUrl = img && String(img).trim() ? img : null;
+  }
+  if (Array.isArray(questionUpdatePayload.options)) {
+    questionUpdatePayload.options = questionUpdatePayload.options.map((opt) => {
+      if (!opt || typeof opt !== "object") return opt;
+      const next = {
+        text: opt.text != null ? String(opt.text) : "",
+        isCorrect: Boolean(opt.isCorrect),
+      };
+      const optImg = opt.imageUrl && String(opt.imageUrl).trim();
+      if (optImg) next.imageUrl = optImg;
+      return next;
+    });
+    // Keep correctAnswer in sync with isCorrect flags (edit form can drift).
+    const qType =
+      questionUpdatePayload.questionType || existingQuestion.questionType;
+    const correctOpts = questionUpdatePayload.options.filter((o) => o.isCorrect);
+    if (qType === "multiple") {
+      questionUpdatePayload.correctAnswer = correctOpts.map(
+        (o) => o.text || o.imageUrl || ""
+      );
+    } else if (qType === "single" || qType === "integer") {
+      const one = correctOpts[0];
+      if (one) {
+        questionUpdatePayload.correctAnswer =
+          one.text || one.imageUrl || questionUpdatePayload.correctAnswer;
+      }
+    } else if (qType === "true_false") {
+      const idx = questionUpdatePayload.options.findIndex((o) => o.isCorrect);
+      if (idx === 0) questionUpdatePayload.correctAnswer = true;
+      if (idx === 1) questionUpdatePayload.correctAnswer = false;
+    }
+  }
+
+  const updatedQuestion = await AiQuestion.findByIdAndUpdate(
+    id,
+    questionUpdatePayload,
+    { new: true }
+  );
+
+  if (existingQuestion.parentQuestionId) {
+    const passageText =
+      (updateData.paragraph && String(updateData.paragraph).trim()) ||
+      (updateData.passage && String(updateData.passage).trim());
+    if (passageText) {
+      await AiQuestion.findByIdAndUpdate(existingQuestion.parentQuestionId, {
+        passage: passageText,
+      });
+      await AiQuestion.updateMany(
+        { parentQuestionId: existingQuestion.parentQuestionId },
+        { passage: passageText }
+      );
+    }
+
+    const siblings = await AiQuestion.find({
+      parentQuestionId: existingQuestion.parentQuestionId,
+    }).select("marks negativeMarks");
+    const parentMarks = siblings.reduce(
+      (sum, s) => sum + (Number(s.marks) || 0),
+      0
+    );
+    const parentNegMarks = siblings.reduce(
+      (sum, s) => sum + (Number(s.negativeMarks) || 0),
+      0
+    );
+    await AiQuestion.findByIdAndUpdate(existingQuestion.parentQuestionId, {
+      marks: parentMarks,
+      negativeMarks: parentNegMarks,
+    });
+  }
+
   return updatedQuestion;
 };
 

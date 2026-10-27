@@ -30,8 +30,8 @@ const getPolishTimeoutMs = () =>
   Math.max(
     15_000,
     Math.min(
-      90_000,
-      Number(process.env.PAPER_EXPLANATION_POLISH_TIMEOUT_MS || 45_000)
+      120_000,
+      Number(process.env.PAPER_EXPLANATION_POLISH_TIMEOUT_MS || 75_000)
     )
   );
 
@@ -103,11 +103,15 @@ ${raw}`;
 
   try {
     const packed = await callOpenAIReasoningJson({
+      apiKey: process.env.OPENAI_API_KEY,
+      callWithRetries: async (fn) => fn(),
+      toError: (e) => e,
       kind: "explanation_polish",
       model,
-      effort: getPolishEffort(),
+      reasoningEffort: getPolishEffort(),
       timeoutMs: getPolishTimeoutMs(),
       maxTokens: getPolishMaxTokens(),
+      disableFallback: true,
       prompt,
       developerHint:
         "Return ONLY valid JSON with key explanation. Copy-edit only; do not change the answer key.",

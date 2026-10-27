@@ -10,6 +10,7 @@ import {
   finalizeExplanationForPublish,
   normalizeMarkedLetters,
   stripCorruptedOptionFragments,
+  stripOptionLabelPrefix,
 } from "../utils/explanationAnswerAlign.js";
 
 const hasCorruptedTail = (text = "") =>
@@ -123,9 +124,7 @@ export const isOrphanAuthorOrPassageStem = (q = {}) => {
 
 const optionMissingArticle = (opts = []) => {
   const plain = (opts || []).map((o) =>
-    String(typeof o === "string" ? o : o?.text || "")
-      .replace(/^[A-D][).:\s]+/i, "")
-      .trim()
+    stripOptionLabelPrefix(typeof o === "string" ? o : o?.text || "")
   );
   const re =
     /^(financial|corporate|tech|manufacturing|municipal|national|logistics|biotech|marketing|digital|smart|decentralized|venture|traditional|film|robust|fitness|software|social|firm)\b/i;
@@ -147,6 +146,11 @@ export const validateExplanationQuality = (q = {}) => {
   }
   if (hasWrongOptionVerdict(raw, marked)) {
     issues.push("explanation_wrong_option_verdict");
+  }
+  if (hasOutOfOrderOptions(raw)) {
+    issues.push(
+      `explanation_option_order:${optionMentionOrder(raw).join("")}`
+    );
   }
 
   const finalized = finalizeExplanationForPublish(q);
@@ -176,9 +180,7 @@ export const validateExplanationQuality = (q = {}) => {
   if (walkthroughIssue) issues.push(walkthroughIssue);
 
   if (hasOutOfOrderOptions(explanation)) {
-    issues.push(
-      `explanation_option_order:${optionMentionOrder(explanation).join("")}`
-    );
+    issues.push("explanation_option_order_unresolved");
   }
   if (
     /\b(?:Locked answer|FINAL_ANSWER|independentAnswer)\b/i.test(explanation)
