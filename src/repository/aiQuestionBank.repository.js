@@ -1,6 +1,7 @@
 import AiQuestionBank from "../models/AiQuestionBank.js";
 import AiQuestion from "../models/AiQuestion.js";
 import Test from "../models/Test.js";
+import Category from "../models/Category.js";
 import mongoose from "mongoose";
 import { ApiError } from "../utils/ApiError.js";
 import categoryRepository from "./category.repository.js";
@@ -144,7 +145,14 @@ const findAll = async (filter = {}, options = {}) => {
     const query = { ...filter };
     if (category) {
       const descendantIds = await categoryRepository.findDescendantIds(category);
-      query.categories = { $in: descendantIds };
+      const matchCategoryIds = [...descendantIds];
+      if (mongoose.Types.ObjectId.isValid(category)) {
+        const catDoc = await Category.findById(category).select("parent name").lean();
+        if (catDoc?.parent) {
+          matchCategoryIds.push(catDoc.parent.toString());
+        }
+      }
+      query.categories = { $in: matchCategoryIds };
     }
     if (search) {
       query.name = { $regex: search, $options: "i" };

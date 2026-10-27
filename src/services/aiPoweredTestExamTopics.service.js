@@ -204,11 +204,25 @@ export const asQueryList = (value) => {
     .filter(Boolean);
 };
 
+export const isFullPaperOrMockLabel = (value = "") => {
+  const raw = String(value || "").trim().toLowerCase();
+  if (!raw) return false;
+  return (
+    /^all\s*subjects$/i.test(raw) ||
+    /^full\s*paper$/i.test(raw) ||
+    /\bfull\s*mock\b/i.test(raw) ||
+    /\bfull\s*mock\s*papers?\b/i.test(raw) ||
+    /\bmock\s*papers?\b/i.test(raw) ||
+    /\bmock\s*practice\b/i.test(raw) ||
+    /\bmodel\s*paper\b/i.test(raw)
+  );
+};
+
 export const canonicalizeSubject = (value) => {
   const raw = String(value || "").trim();
   if (!raw) return null;
   // "All subjects" / full-paper leaves are not a subject filter.
-  if (/^all\s*subjects$/i.test(raw) || /^full\s*paper$/i.test(raw)) return null;
+  if (isFullPaperOrMockLabel(raw)) return null;
   const compact = raw.toLowerCase().replace(/[\s-]+/g, "");
   const spaced = raw.toLowerCase();
   if (SUBJECT_CANONICAL[compact]) return SUBJECT_CANONICAL[compact];
@@ -375,12 +389,22 @@ export const inferExamAndSubject = ({
     finalSubject = null;
     finalSubjects = uniqueSubjects;
   } else {
-    // No subjects from paths/query, fallback to single resolved subject if any
-    const inferredSubject =
-      canonicalizeSubject(resolvedSubject?.label) ||
-      canonicalizeSubject(resolvedSubject?.id);
-    finalSubject = explicitSubject || inferredSubject || null;
-    finalSubjects = finalSubject ? [finalSubject] : [];
+    // If the path was explicitly a full-mock / all-subjects leaf, do not infer a single subject
+    const isMockPath = paths.some(p => {
+      const parts = String(p || "").split(/[>›/|]/).map(s => s.trim()).filter(Boolean);
+      return parts.length && isFullPaperOrMockLabel(parts[parts.length - 1]);
+    });
+    if (isMockPath) {
+      finalSubject = null;
+      finalSubjects = [];
+    } else {
+      // No subjects from paths/query, fallback to single resolved subject if any
+      const inferredSubject =
+        canonicalizeSubject(resolvedSubject?.label) ||
+        canonicalizeSubject(resolvedSubject?.id);
+      finalSubject = explicitSubject || inferredSubject || null;
+      finalSubjects = finalSubject ? [finalSubject] : [];
+    }
   }
 
   return {
