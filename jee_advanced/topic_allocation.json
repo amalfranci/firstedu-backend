@@ -65,7 +65,7 @@
       "priority": "medium",
       "cluster": "fluids",
       "hardSlotCount": 3,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "P09": {
       "weight": 0.5,
@@ -1043,84 +1043,84 @@
       "priority": "high",
       "cluster": "verbal",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CV02": {
       "weight": 0.86,
       "priority": "high",
       "cluster": "verbal",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CV03": {
       "weight": 0.52,
       "priority": "medium",
       "cluster": "verbal",
       "hardSlotCount": 3,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CV04": {
       "weight": 0.52,
       "priority": "medium",
       "cluster": "verbal",
       "hardSlotCount": 3,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CV05": {
       "weight": 0.3,
       "priority": "low",
       "cluster": "verbal",
       "hardSlotCount": 2,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CD01": {
       "weight": 0.78,
       "priority": "high",
       "cluster": "dilr",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CD02": {
       "weight": 0.86,
       "priority": "high",
       "cluster": "dilr",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CD03": {
       "weight": 0.78,
       "priority": "high",
       "cluster": "dilr",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CD04": {
       "weight": 0.78,
       "priority": "high",
       "cluster": "dilr",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CD05": {
       "weight": 0.52,
       "priority": "medium",
       "cluster": "dilr",
       "hardSlotCount": 3,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CD06": {
       "weight": 0.3,
       "priority": "low",
       "cluster": "dilr",
       "hardSlotCount": 2,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CQ01": {
       "weight": 0.52,
       "priority": "medium",
       "cluster": "cat-quant",
       "hardSlotCount": 3,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CQ02": {
       "weight": 0.78,
@@ -1148,42 +1148,42 @@
       "priority": "medium",
       "cluster": "cat-quant",
       "hardSlotCount": 3,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CQ06": {
       "weight": 0.52,
       "priority": "medium",
       "cluster": "cat-quant",
       "hardSlotCount": 3,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CQ07": {
       "weight": 0.3,
       "priority": "low",
       "cluster": "cat-quant",
       "hardSlotCount": 2,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CQ08": {
       "weight": 0.78,
       "priority": "high",
       "cluster": "cat-quant",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CQ09": {
       "weight": 0.52,
       "priority": "medium",
       "cluster": "cat-quant",
       "hardSlotCount": 3,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "CQ10": {
       "weight": 0.3,
       "priority": "low",
       "cluster": "cat-quant",
       "hardSlotCount": 2,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "ENG06": {
       "lastUsedPaper": 1

@@ -43,7 +43,7 @@ export const topicSlug = (topic) => {
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
-  return (s || 'unknown').slice(0, 80);
+  return (s || 'unknown').slice(0, 140);
 };
 
 /** Timestamp prefix: HH-mm-dd-MM-yy (24h hour, minute, day, month, 2-digit year) */

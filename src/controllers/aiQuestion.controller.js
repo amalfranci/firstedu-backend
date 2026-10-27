@@ -818,6 +818,7 @@ export const logConfirmedQuestions = asyncHandler(async (req, res) => {
 
     const result = await logConfirmedQuestionsToFile({
         topic: value.topic,
+        subjects: value.subjects || [],
         bankName: value.bankName || '',
         sectionName: value.sectionName || '',
         sectionIndex: value.sectionIndex ?? null,

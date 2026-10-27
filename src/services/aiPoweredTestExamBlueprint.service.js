@@ -94,22 +94,6 @@ const advancedQuestionTypes = (paperCounts, defaultMix = ADVANCED_QUALITY_MIX) =
       enabled: (paperCounts.multi || 0) > 0,
     },
     {
-      id: "integer",
-      label: "Numerical / integer",
-      group: "standalone",
-      paperCount: paperCounts.integer,
-      defaultCount: defaultMix.integer,
-      enabled: (paperCounts.integer || 0) > 0,
-    },
-    {
-      id: "match",
-      label: "Match list",
-      group: "standalone",
-      paperCount: paperCounts.match || 0,
-      defaultCount: defaultMix.match || 0,
-      enabled: (paperCounts.match || 0) > 0,
-    },
-    {
       id: "paragraph",
       label: "Comprehension / paragraph",
       group: "passage",
@@ -118,7 +102,8 @@ const advancedQuestionTypes = (paperCounts, defaultMix = ADVANCED_QUALITY_MIX) =
       enabled: (paperCounts.paragraph || 0) > 0,
     },
   ];
-  return types.filter((t) => t.enabled || t.id === "single" || t.id === "multiple" || t.id === "integer");
+  // Numerical/TITA + Match List removed from AI Powered Test for all exams.
+  return types.filter((t) => t.enabled || t.id === "single" || t.id === "multiple");
 };
 
 const mainQuestionTypes = () => [
@@ -131,8 +116,8 @@ const mainQuestionTypes = () => [
     enabled: true,
   },
   {
-    id: "integer",
-    label: "Numerical / integer",
+    id: "multiple",
+    label: "Multi correct",
     group: "standalone",
     paperCount: 5,
     defaultCount: 0,
@@ -332,11 +317,13 @@ const buildTypePlan = (examType, { paperNumber = 1 } = {}) => {
     };
   }
   if (examType === "cat") {
+    // Real CAT: VARC ~16 RC (4 passages × 4) + VA singles; DILR set-based;
+    // QA MCQ + TITA. Passages/connected must stay enabled for VARC/DILR.
     return {
       questionTypes: [
         {
           id: "single",
-          label: "Single correct MCQ",
+          label: "Single correct MCQ / VA",
           group: "standalone",
           paperCount: 16,
           defaultCount: 0,
@@ -344,9 +331,17 @@ const buildTypePlan = (examType, { paperNumber = 1 } = {}) => {
         },
         {
           id: "integer",
-          label: "TITA",
+          label: "TITA (QA only)",
           group: "standalone",
           paperCount: 6,
+          defaultCount: 0,
+          enabled: true,
+        },
+        {
+          id: "connected",
+          label: "Passage / set (RC · DILR)",
+          group: "passage",
+          paperCount: 4,
           defaultCount: 0,
           enabled: true,
         },
@@ -357,7 +352,7 @@ const buildTypePlan = (examType, { paperNumber = 1 } = {}) => {
         integer: 6,
         multiple: 0,
         match: 0,
-        paragraph: 0,
+        paragraph: 4,
         total: 22,
         paperTotalQuestions: 68,
         paperTotalMarks: 204,
@@ -371,9 +366,11 @@ const buildTypePlan = (examType, { paperNumber = 1 } = {}) => {
         match: 0,
         paragraph: 0,
         trueFalse: 0,
-        passageCount: 0,
+        // Prefer CAT-native RC/DILR sets when the planner requests them.
+        passageCount: 4,
+        passageSingleCount: 4,
       },
-      hidePassages: true,
+      hidePassages: false,
       hideTrueFalse: true,
     };
   }

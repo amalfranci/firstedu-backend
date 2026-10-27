@@ -210,36 +210,47 @@ const getPaperTypeCounts = ({ examType, subject, paper }) => {
   return { ...JEE_MAIN_PER_SUBJECT };
 };
 
-const buildQuestionTypes = (counts = {}) => [
-  {
-    id: "single",
-    label: "Single correct",
-    group: "standalone",
-    enabled: true,
-    paperCount: counts.single ?? 0,
-  },
-  {
-    id: "multiple",
-    label: "Multiple correct",
-    group: "standalone",
-    enabled: true,
-    paperCount: counts.multi ?? 0,
-  },
-  {
-    id: "integer",
-    label: "Numerical / Integer",
-    group: "standalone",
-    enabled: true,
-    paperCount: counts.integer ?? 0,
-  },
-  {
-    id: "match",
-    label: "Match list",
-    group: "standalone",
-    enabled: true,
-    paperCount: counts.match ?? 0,
-  },
-];
+const buildQuestionTypes = (counts = {}, examType = "") => {
+  const isJeeMain = examType === "jee_main" || /jee\s*main/i.test(examType || "");
+  return [
+    {
+      id: "single",
+      label: "Single correct",
+      group: "standalone",
+      enabled: true,
+      paperCount: counts.single ?? (isJeeMain ? 20 : 0),
+    },
+    ...(!isJeeMain
+      ? [
+          {
+            id: "multiple",
+            label: "Multiple correct",
+            group: "standalone",
+            enabled: (counts.multi ?? 0) > 0,
+            paperCount: counts.multi ?? 0,
+          },
+        ]
+      : []),
+    {
+      id: "integer",
+      label: "Numerical / Integer",
+      group: "standalone",
+      enabled: true,
+      paperCount: counts.integer ?? (isJeeMain ? 5 : 0),
+    },
+    ...(!isJeeMain
+      ? [
+          {
+            id: "match",
+            label: "Match list",
+            group: "standalone",
+            enabled: (counts.match ?? 0) > 0,
+            paperCount: counts.match ?? 0,
+          },
+        ]
+      : []),
+  ];
+};
 
 const buildExamPapers = (examType, questionsPerSubject) => {
   if (examType === "jee_advanced") {
@@ -326,7 +337,7 @@ export const getExamBlueprint = async (query = {}) => {
       selectedPaper: scope.selectedPaper,
       hasSeededTopics: false,
       hideTrueFalse: true,
-      hidePassages: scope.examType === "jee_advanced",
+      hidePassages: scope.examType === "jee_main",
       difficulty: {
         examNative: false,
         default: "medium",
@@ -375,7 +386,7 @@ export const getExamBlueprint = async (query = {}) => {
     year: docs[0]?.year || null,
     hasSeededTopics: topics.length > 0,
     hideTrueFalse: true,
-    hidePassages: scope.examType === "jee_advanced",
+    hidePassages: scope.examType === "jee_main",
     difficulty: {
       examNative: true,
       default: scope.examType === "jee_advanced" ? "hard" : "medium",
@@ -392,7 +403,7 @@ export const getExamBlueprint = async (query = {}) => {
       match: counts.match,
       total: counts.total,
     },
-    questionTypes: buildQuestionTypes(counts),
+    questionTypes: buildQuestionTypes(counts, scope.examType),
     examPapers: buildExamPapers(scope.examType, counts.total),
     subjects,
     topics,

@@ -66,7 +66,8 @@ const DEFAULT_COMPOSITION = {
 };
 
 const CAT_SECTION_COMPOSITION = {
-    cat_varc: { theory: 0.8, direct: 0.1, multi_concept: 0.1 },
+    // VARC is qualitative only — never "direct" numerical MCQs.
+    cat_varc: { theory: 1.0, direct: 0, multi_concept: 0 },
     cat_qa: { theory: 0.05, direct: 0.45, multi_concept: 0.5 },
     cat_dilr: { theory: 0.1, direct: 0.25, multi_concept: 0.65 },
 };
@@ -85,8 +86,13 @@ const SUBJECT_COMPOSITION_RULES = [
         comp: { theory: 0.8, direct: 0.12, multi_concept: 0.08 },
     },
     {
-        // Humanities / GK / verbal / law — theory-dominant.
-        re: /\b(history|polit(?:y|ical)|civics|geograph|econom|general\s*(?:knowledge|studies|awareness)|gk|current\s*affairs|law|legal|english|verbal|comprehension|literatur|environment)\b/i,
+        // Verbal / RC / VARC / English — qualitative only (never numeric "direct").
+        re: /\b(varc|verbal|english(?:\s+language|\s+comprehension)?|reading\s+comprehension|\brc\b|language\s+comprehension|comprehension|literatur)\b/i,
+        comp: { theory: 1.0, direct: 0, multi_concept: 0 },
+    },
+    {
+        // Humanities / GK / law — theory-dominant.
+        re: /\b(history|polit(?:y|ical)|civics|geograph|econom|general\s*(?:knowledge|studies|awareness)|gk|current\s*affairs|law|legal|environment)\b/i,
         comp: { theory: 0.78, direct: 0.12, multi_concept: 0.1 },
     },
     {

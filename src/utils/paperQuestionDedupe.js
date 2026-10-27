@@ -190,10 +190,18 @@ export const dedupePaperQuestionsByStem = (questions = []) => {
     }
   }
   // Second pass: drop near-duplicates (same topic + high token overlap).
+  // Never near-dupe Connected Groups — each pack (P1/P2/…) must survive save.
   const kept = [];
   for (const q of byStem.values()) {
+    if (String(q?.questionType || "").toLowerCase() === "connected") {
+      kept.push(q);
+      continue;
+    }
     let replaced = false;
     for (let i = 0; i < kept.length; i += 1) {
+      if (String(kept[i]?.questionType || "").toLowerCase() === "connected") {
+        continue;
+      }
       if (!isNearDuplicate(kept[i], q)) continue;
       if (trustScore(q) > trustScore(kept[i])) kept[i] = q;
       replaced = true;

@@ -9,9 +9,11 @@
  *        · empty / infra / uncertain → same-seat o3 retry (NO Gemini)
  *        · clear QUALITY fail → Gemini replace ≤ JEE_ADV_QUALITY_REPLACE_MAX
  *        ↓
- *   READY (Gemini stem + o3 answer + o3 verifiedSolution)
+ *   Prose polish (gpt-5.6-luna, spelling/grammar only — answer locked)
+ *        ↓
+ *   READY (Gemini stem + o3 answer + polished explanation)
  *
- * Removed from this path: hard Code QC stage, Gemini Expand, Luna paper audit.
+ * Removed from this path: hard Code QC stage, Gemini Expand, full Luna paper audit.
  */
 
 import { randomUUID } from "crypto";
@@ -30,7 +32,16 @@ import {
   markProviderFatalAbort,
 } from "../utils/aiProviderErrors.js";
 import { resolvePaperExam } from "./paperExamIdentity.service.js";
-import { alignExplanationToMarkedAnswer } from "../utils/explanationAnswerAlign.js";
+import {
+  explanationRemapMismatch,
+  finalizeExplanationForPublish,
+  remapExplanationOptionLetters,
+  stripOptionLabelPrefix,
+  autoFixOptionArticles,
+} from "../utils/explanationAnswerAlign.js";
+import { polishExplanationProse } from "./paperExplanationProsePolish.service.js";
+import { applyExplanationQualityGate } from "./paperExplanationQualityGate.service.js";
+import { appendStageQuestionLog } from "./paperJobArtifact.service.js";
 import { getGenerationJob } from "./questionBankGenerationJobStore.js";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -328,8 +339,9 @@ const keysMatch = (type, a, b) => {
 /**
  * Free local schema check — NOT a model stage.
  * Only blocks outputs o3 cannot usefully solve (missing stem / broken shape).
+ * MCQs: require ≥4 non-empty options (all competitive exams).
  */
-export const schemaOkForO3 = (q, typeHint = null) => {
+export const schemaOkForO3 = (q, typeHint = null, _examType = "") => {
   const issues = [];
   if (!q || typeof q !== "object") {
     return { ok: false, issues: ["not_an_object"] };
@@ -343,6 +355,18 @@ export const schemaOkForO3 = (q, typeHint = null) => {
   const stem = String(q.questionText || q.text || "").trim();
   if (!stem || stem.length < 12) issues.push("missing_or_short_stem");
 
+  const exam = String(_examType || q._examType || "").toLowerCase();
+  const isJeeMain = exam === "jee_main" || /jee\s*main/i.test(exam);
+  if (isJeeMain) {
+    if (type === "multiple") {
+      issues.push("multiple_correct_disallowed_for_jee_main");
+    }
+    const passage = String(q.passage || q.passageText || q.paragraph || "").trim();
+    if (passage && passage.length > 40) {
+      issues.push("passage_disallowed_for_jee_main");
+    }
+  }
+
   if (type === "integer") {
     const n = Number(q.correctAnswer ?? q.finalAnswer ?? q.answerDisplay);
     if (!Number.isFinite(n)) issues.push("integer_answer_not_numeric");
@@ -354,8 +378,11 @@ export const schemaOkForO3 = (q, typeHint = null) => {
     }
     if (!proposedKeyOf(q, "match")) issues.push("match_missing_proposed_key");
   } else if (type === "single" || type === "multiple") {
-    const opts = Array.isArray(q.options) ? q.options : [];
-    if (opts.length < 2) issues.push("options_incomplete");
+    const opts = (Array.isArray(q.options) ? q.options : [])
+      .map((o) => String(typeof o === "string" ? o : o?.text || "").trim())
+      .filter(Boolean);
+    // Never ship empty/partial MCQs — ≥4 options for every competitive exam.
+    if (opts.length < 4) issues.push(`options_incomplete:${opts.length}`);
     if (!proposedKeyOf(q, type)) issues.push("missing_proposed_key");
   }
   return { ok: issues.length === 0, issues };
@@ -535,6 +562,11 @@ const buildO3SolvePrompt = (q, type, examHint = {}) => {
   });
   const examLabel = exam.examLabel;
 
+  const passage = String(q.passage || q.passageText || q.paragraph || "").trim();
+  const stemBody = passage
+    ? `PASSAGE:\n${passage}\n\nQUESTION:\n${q.questionText}`
+    : String(q.questionText || "");
+
   return `You are an independent ${examLabel} solver (o3).
 Solve from first principles. Do NOT trust the proposed answer.
 You MUST return a complete verified derivation in verifiedSolution.
@@ -543,7 +575,7 @@ Type: ${type}
 Exam: ${examLabel}
 Chapter: ${q._chapter || q.chapter || ""}
 STEM:
-${q.questionText}
+${stemBody}
 ${lists}
 ${opts.length ? `OPTIONS:\n${opts.join("\n")}` : ""}
 
@@ -564,7 +596,12 @@ Rules:
 - independentAnswer: letter A-D, letters CSV for multiple, or number for integer
 - verifiedSolution: complete student-facing explanation (this becomes the final explanation)
 - If proposed answer is wrong, set answerMatches false and still give the correct independentAnswer + verifiedSolution for the CORRECT answer
-- Do not rewrite the stem; do not invent options`;
+- Do not rewrite the stem; do not invent options
+- verifiedSolution prose rules (mandatory):
+  - Write "Option Analysis" / "Option B is …" with a real space — never glue letters into words (never "Option Bnalysis" / "Option A. nalysis")
+  - Do NOT include meta tags: "Locked answer", "FINAL_ANSWER", "Answer: A", bare "[C]", or solver notes
+  - End with exactly one closer: "Therefore, the correct option is X." matching independentAnswer
+  - Mid-text critiques may name wrong options; the final closer must match independentAnswer only`;
 };
 
 export const o3VerifyCompact = async (q, type, ctx) => {
@@ -839,83 +876,87 @@ const applyO3Lock = (item, out, stampTrust, { rekeyed = false } = {}) => {
   // Remap explanation option-letters to the post-shuffle positions (otherwise
   // "Hence option B" stays while the key moves to C/D).
   item.locked = stampTrust(shuffleSingleCorrectOptions(locked));
-  if (item.locked.explanation) {
-    item.locked.explanation = sanitizeExplanationText(item.locked.explanation);
-    item.locked.explanation = alignExplanationToMarkedAnswer(
-      item.locked.explanation,
-      item.locked.correctAnswer
-    );
-  }
+  item.locked = finalizeExplanationForPublish(item.locked);
   item.answerKey =
     item.locked.correctAnswer ?? item.locked.answerDisplay ?? key ?? null;
   item.o3 = out.result;
   return item;
 };
 
-/**
- * After option shuffle, remap A–D references in the explanation so they still
- * point at the same option *text*. Uses placeholders to avoid A→C, C→B collisions.
- * letterMap: { A: "C", B: "A", ... } (old → new). Missing/identity keys skipped.
- */
-const remapExplanationOptionLetters = (text, letterMap) => {
-  if (!text || !letterMap || typeof letterMap !== "object") return text;
-  const entries = Object.entries(letterMap).filter(
-    ([from, to]) =>
-      /^[A-D]$/.test(from) && /^[A-D]$/.test(to) && from !== to
-  );
-  if (!entries.length) return text;
+/** Infer VARC metadata for RC items wrongly labelled General. */
+const repairRcMetadata = (locked, item) => {
+  const exam = String(
+    locked?._examType || locked?._examLabel || item?.subject || ""
+  ).toLowerCase();
+  const passage = String(locked?.passage || locked?.passageText || "").trim();
+  const stem = String(locked?.questionText || locked?.text || "");
+  const looksRc =
+    passage.length >= 120 ||
+    /read the (following )?(passage|excerpt)|according to the passage/i.test(
+      stem
+    );
+  if (!looksRc) return locked;
+  const subject = String(locked?.subject || locked?._subject || "").trim();
+  const topic = String(
+    locked?.topic || locked?.chapter || locked?._chapter || ""
+  ).trim();
+  const next = { ...locked };
+  if (!subject || /^general$/i.test(subject)) {
+    if (/cat|varc|mba/i.test(exam) || /varc/i.test(String(item?.subject || ""))) {
+      next.subject = "VARC";
+      next._subject = "VARC";
+    }
+  }
+  if (!topic) {
+    next.topic =
+      locked?._chapter ||
+      item?.chapter ||
+      "Reading Comprehension";
+    next.chapter = next.topic;
+    next._chapter = next.topic;
+  }
+  return next;
+};
 
-  const token = (L) => `\uE000${L}\uE001`;
-  const subst = (L) => {
-    const up = String(L || "").toUpperCase();
-    return letterMap[up] && letterMap[up] !== up ? token(letterMap[up]) : L;
+/** Copy-edit o3 verifiedSolution for spelling/grammar without changing the key. */
+const polishLockedExplanation = async (item, ctx) => {
+  if (!item?.locked?.explanation) return item;
+  item.locked = repairRcMetadata(item.locked, item);
+  const polishCtx = {
+    pipelineLog: ctx?.pipelineLog,
+    recordUsage: ctx?.recordUsage,
+    jobId: ctx?.jobId,
+    seq: item.seq,
+    topicId: item.topicId,
+    subject: item.subject,
+    chapter: item.chapter,
   };
-
-  let out = String(text);
-
-  // Explicit option / statement / choice references
-  out = out.replace(
-    /\b(options?|statements?|choices?)\s*[\-\s]*\(?([A-D])\)?/gi,
-    (full, word, L) => `${word} ${subst(L)}`
-  );
-
-  // "correct answer is B", "right option is B", "Hence option B is correct"
-  out = out.replace(
-    /\b((?:hence|therefore|thus|so),?\s+)?(?:this\s+corresponds\s+to\s+)?(?:the\s+)?(?:right\s+)?(?:correct\s+)?(?:option|answer)\s+(?:is\s+)?\(?([A-D])\)?/gi,
-    (full, _lead, L) => full.replace(/\(?[A-D]\)?/i, () => subst(L))
-  );
-
-  // "corresponds to option B" / "corresponding to choice C"
-  out = out.replace(
-    /\bcorrespond(?:s|ing)\s+to\s+(?:option|choice)\s*\(?([A-D])\)?/gi,
-    (full, L) => full.replace(/\(?[A-D]\)?/i, () => subst(L))
-  );
-
-  // Line-start option enumeration: "A." / "B)" / "C:"
-  out = out.replace(
-    /(^|\n)([ \t]*)([A-D])([).:]\s+)/gm,
-    (_full, br, sp, L, punct) => `${br}${sp}${subst(L)}${punct}`
-  );
-
-  // FINAL_ANSWER: X / Locked answer: X
-  out = out.replace(
-    /\b(FINAL_ANSWER|Locked answer):\s*([A-D])\b/gi,
-    (_full, label, L) => `${label}: ${subst(L)}`
-  );
-
-  // LaTeX bold option: \mathbf{B}
-  out = out.replace(
-    /\\mathbf\{([A-D])\}/g,
-    (_full, L) => `\\mathbf{${subst(L)}}`
-  );
-
-  // Bracketed verdicts: [B] / (C)
-  out = out.replace(
-    /([\[\(/])([A-D])([\]\)])/gi,
-    (_full, open, L, close) => `${open}${subst(L)}${close}`
-  );
-
-  return out.replace(/\uE000([A-D])\uE001/g, "$1");
+  const result = await polishExplanationProse({
+    explanation: item.locked.explanation,
+    markedAnswer: item.locked.correctAnswer,
+    ctx: polishCtx,
+  });
+  if (result?.explanation) {
+    item.locked.explanation = result.explanation;
+    item.locked._explanationSource = result.polished
+      ? "o3_verifiedSolution+prose_polish"
+      : item.locked._explanationSource || "o3_verifiedSolution";
+    item.locked._explanationPolished = Boolean(result.polished);
+    if (result.model) item.locked._explanationPolishModel = result.model;
+  }
+  // Deterministic finalize after Luna (multi-safe align, strip tails, headers).
+  item.locked = finalizeExplanationForPublish(item.locked);
+  const gated = applyExplanationQualityGate(item.locked);
+  item.locked = gated.locked;
+  if (gated.issues?.length) {
+    ctx?.pipelineLog?.("EXPLANATION_QUALITY_GATE", {
+      seq: item.seq,
+      ok: gated.ok,
+      issues: gated.issues,
+      needsReview: Boolean(item.locked._needsReview),
+    });
+  }
+  return item;
 };
 
 /** Fisher–Yates shuffle of MCQ options; updates correctIndex / letter + explanation. */
@@ -925,11 +966,10 @@ const shuffleSingleCorrectOptions = (locked = {}) => {
   const opts = Array.isArray(locked.options) ? locked.options : [];
   if (opts.length < 2) return locked;
 
-  const plain = opts.map((o) =>
-    String(typeof o === "string" ? o : o?.text || "")
-      .replace(/^[A-D][).:\s]+/i, "")
-      .trim()
+  const rawPlain = opts.map((o) =>
+    stripOptionLabelPrefix(typeof o === "string" ? o : o?.text || "")
   );
+  const plain = autoFixOptionArticles(rawPlain);
   let correctIdx = Number.isInteger(locked.correctIndex) ? locked.correctIndex : -1;
   if (correctIdx < 0 || correctIdx >= plain.length) {
     const letter = String(locked.correctAnswer || "").toUpperCase().slice(0, 1);
@@ -958,10 +998,17 @@ const shuffleSingleCorrectOptions = (locked = {}) => {
     letterMap[String.fromCharCode(65 + oldI)] = String.fromCharCode(65 + newI);
   });
 
-  const explanation = remapExplanationOptionLetters(
-    locked.explanation || locked._verifiedSolution || "",
-    letterMap
-  );
+  const rawExpl = locked.explanation || locked._verifiedSolution || "";
+  const explanation = remapExplanationOptionLetters(rawExpl, letterMap);
+
+  // If remapped labels disagree with option texts (Q8/Q10), keep pre-shuffle.
+  const check = explanationRemapMismatch(explanation, shuffled);
+  if (check.mismatch) {
+    return {
+      ...locked,
+      _optionShuffleSkipped: check.reason || "explanation_remap_mismatch",
+    };
+  }
 
   return {
     ...locked,
@@ -975,24 +1022,6 @@ const shuffleSingleCorrectOptions = (locked = {}) => {
       : {}),
     _optionShuffleMap: letterMap,
   };
-};
-
-const sanitizeExplanationText = (raw) => {
-  let text = String(raw || "");
-  if (!text) return text;
-  return text
-    .replace(/Long\)arrow/gi, "\\rightarrow")
-    .replace(/\)arrow/gi, "\\rightarrow")
-    .replace(/\bLongrightarrow\b/g, "\\longrightarrow")
-    .replace(/\bdll\b/g, "")
-    .replace(/\bdfrac\b/g, "\\dfrac")
-    .replace(/\bfrac\b(?![a-zA-Z])/g, "\\frac")
-    .replace(/\btextbf\b/g, "\\textbf")
-    // Only bare comparison ops (skip already-escaped \\le / \\ge).
-    .replace(/(?<![\\])<=(?=[\s$\d])/g, "\\le ")
-    .replace(/(?<![\\])>=(?=[\s$\d])/g, "\\ge ")
-    .replace(/\[dfrac\{([^}\]]+)\](\d+)\}/gi, "\\dfrac{$1}{$2}")
-    .replace(/\[frac\{([^}\]]+)\](\d+)\}/gi, "\\frac{$1}{$2}");
 };
 
 const verifySeatWithO3Budget = async (item, ctx, stampTrust) => {
@@ -1018,6 +1047,9 @@ const verifySeatWithO3Budget = async (item, ctx, stampTrust) => {
 
     if (out.pass) {
       applyO3Lock(item, out, stampTrust, { rekeyed: false });
+      appendStageQuestionLog(ctx?.jobId, "after_o3", item);
+      await polishLockedExplanation(item, ctx);
+      appendStageQuestionLog(ctx?.jobId, "after_luna", item);
       await ctx.checkpointItem?.(item);
       return { ok: true, item, kind: "pass" };
     }
@@ -1045,6 +1077,9 @@ const verifySeatWithO3Budget = async (item, ctx, stampTrust) => {
         reason: "o3_high_confidence_rekey",
       });
       applyO3Lock(item, out, stampTrust, { rekeyed: true });
+      appendStageQuestionLog(ctx?.jobId, "after_o3", item);
+      await polishLockedExplanation(item, ctx);
+      appendStageQuestionLog(ctx?.jobId, "after_luna", item);
       await ctx.checkpointItem?.(item);
       return { ok: true, item, kind: "rekeyed" };
     }
@@ -1114,16 +1149,26 @@ export const runParallelPaperPipeline = async ({
 }) => {
   const {
     generateBatch,
+    generatePassagePack,
     toUiQuestion,
     checkpointItem,
     failItem,
     normalizeSubject,
+    looksLikeMisplacedNumericalStem,
+    looksLikeNumericalVarcStem, // legacy alias
+    isVerbalQualitativeSubject = () => false,
     pipelineLog,
     recordUsage,
     jobId,
     runQuestionContext,
     stampTrust,
   } = deps;
+  const isMisplacedNumerical =
+    typeof looksLikeMisplacedNumericalStem === "function"
+      ? looksLikeMisplacedNumericalStem
+      : typeof looksLikeNumericalVarcStem === "function"
+        ? looksLikeNumericalVarcStem
+        : () => false;
 
   const ctx = {
     pipelineLog,
@@ -1139,7 +1184,8 @@ export const runParallelPaperPipeline = async ({
       0
     );
 
-  const types = ["single", "multiple", "integer", "match"];
+  // AI Powered Test: only Single Correct + Multiple Correct seats.
+  const types = ["single", "multiple"];
   const seats = [];
   for (const t of types) {
     for (const slot of plan.slots?.[t] || []) {
@@ -1257,9 +1303,175 @@ export const runParallelPaperPipeline = async ({
     attempt,
   });
 
+  const examType = String(config?.examType || plan?.examType || "").toLowerCase();
+  const isJeeMain = examType === "jee_main" || /jee\s*main/i.test(examType);
+
+  const passageCountCfg = isJeeMain
+    ? 0
+    : Math.max(
+        0,
+        Number(config?.passageCount ?? plan?.passageCount) || 0
+      );
+  const perPassageCfg = isJeeMain
+    ? 0
+    : Math.max(
+        0,
+        Number(config?.questionsPerPassage ?? plan?.questionsPerPassage) || 0
+      );
+  const structureCfg = isJeeMain
+    ? "standalone"
+    : String(
+        config?.questionStructure || plan?.questionStructure || "both"
+      ).toLowerCase();
+  const subjectStructuresCfg = isJeeMain
+    ? null
+    : config?.subjectStructures || plan?.subjectStructures || null;
+  const isSubjectWise =
+    !isJeeMain &&
+    subjectStructuresCfg &&
+    typeof subjectStructuresCfg === "object" &&
+    Object.keys(subjectStructuresCfg).length > 0;
+  const wantsPassagePacks =
+    !isJeeMain &&
+    typeof generatePassagePack === "function" &&
+    (structureCfg === "passage" || structureCfg === "both") &&
+    (passageCountCfg > 0 || isSubjectWise);
+
+  if (isJeeMain) {
+    seatQueue.forEach((s) => {
+      s.seatMode = "standalone";
+      s.lockedPassage = null;
+      s.connectedGroup = null;
+      if (s.slot?.type === "multiple" || s.type === "multiple") {
+        if (s.slot) s.slot.type = "single";
+        s.type = "single";
+      }
+    });
+  }
+
+  const isRcishSeat = (seat) => {
+    const hay = `${seat?.slot?.chapter || ""} ${seat?.slot?.topicId || ""} ${seat?.slot?.subject || ""} ${seat?.slot?.conceptSlot || ""}`.toLowerCase();
+    return /reading|comprehension|\brc\b|passage|varc|verbal|english|clat|legal|critical reasoning|inference/.test(
+      hay
+    );
+  };
+
+  // Excel Connected Group packs: N seats share one passage (P1, P2, …).
+  const workUnits = [];
+  if (wantsPassagePacks) {
+    if (isSubjectWise) {
+      const packSet = new Set();
+      let globalPackIdx = 1;
+
+      // Group seat indices by normalized subject
+      const indicesBySubject = new Map();
+      seatQueue.forEach((s, i) => {
+        const subjNorm = normalizeSubject(s.slot?.subject) || "default";
+        if (!indicesBySubject.has(subjNorm)) indicesBySubject.set(subjNorm, []);
+        indicesBySubject.get(subjNorm).push(i);
+      });
+
+      // For each subject with a configured structure:
+      for (const [subjKey, indices] of indicesBySubject.entries()) {
+        const cfg =
+          Object.entries(subjectStructuresCfg).find(
+            ([k]) => normalizeSubject(k) === subjKey || k === subjKey
+          )?.[1] || null;
+
+        const subStruct = String(
+          cfg?.questionStructure || "standalone"
+        ).toLowerCase();
+        const subPassages = Math.max(0, Number(cfg?.passageCount) || 0);
+        const subPer = Math.max(0, Number(cfg?.questionsPerPassage) || 0);
+
+        if (
+          (subStruct === "passage" || subStruct === "both") &&
+          subPassages > 0 &&
+          subPer > 0
+        ) {
+          for (let p = 0; p < subPassages; p += 1) {
+            const chunk = indices.slice(p * subPer, (p + 1) * subPer);
+            if (chunk.length < subPer) break;
+            chunk.forEach((idx) => packSet.add(idx));
+            workUnits.push({
+              kind: "pack",
+              packId: `P${globalPackIdx}`,
+              seats: chunk.map((i) => seatQueue[i]),
+              seatIndexes: chunk,
+            });
+            globalPackIdx += 1;
+          }
+        }
+      }
+
+      // Any unpacked seat becomes single (standalone)
+      seatQueue.forEach((seat, i) => {
+        if (packSet.has(i)) return;
+        workUnits.push({ kind: "single", seat, seatIndex: i });
+      });
+
+      pipelineLog?.("PASSAGE_PACK_PLAN", {
+        mode: "subject_wise",
+        packs: workUnits.filter((u) => u.kind === "pack").length,
+        standalones: workUnits.filter((u) => u.kind === "single").length,
+        packIds: workUnits
+          .filter((u) => u.kind === "pack")
+          .map((u) => u.packId),
+      });
+    } else {
+      const rcIdx = [];
+      const otherIdx = [];
+      seatQueue.forEach((s, i) => {
+        if (isRcishSeat(s)) rcIdx.push(i);
+        else otherIdx.push(i);
+      });
+      // Prefer RC seats for passages; never spill into other non-RC seats if RC seats exist
+      const packOrder = rcIdx.length > 0 ? rcIdx : otherIdx;
+      const needPackSeats = Math.min(
+        passageCountCfg * perPassageCfg,
+        packOrder.length
+      );
+      const packIndices = packOrder.slice(0, needPackSeats);
+      const packSet = new Set(packIndices);
+      for (let p = 0; p < passageCountCfg; p += 1) {
+        const chunk = packIndices.slice(
+          p * perPassageCfg,
+          (p + 1) * perPassageCfg
+        );
+        if (chunk.length < perPassageCfg) break;
+        workUnits.push({
+          kind: "pack",
+          packId: `P${p + 1}`,
+          seats: chunk.map((i) => seatQueue[i]),
+          seatIndexes: chunk,
+        });
+      }
+      seatQueue.forEach((seat, i) => {
+        if (packSet.has(i)) return;
+        workUnits.push({ kind: "single", seat, seatIndex: i });
+      });
+      pipelineLog?.("PASSAGE_PACK_PLAN", {
+        mode: "unified",
+        passageCount: passageCountCfg,
+        questionsPerPassage: perPassageCfg,
+        packs: workUnits.filter((u) => u.kind === "pack").length,
+        standalones: workUnits.filter((u) => u.kind === "single").length,
+        packIds: workUnits
+          .filter((u) => u.kind === "pack")
+          .map((u) => u.packId),
+      });
+    }
+  } else {
+    seatQueue.forEach((seat, i) => {
+      workUnits.push({ kind: "single", seat, seatIndex: i });
+    });
+  }
+
   onProgress?.({
     phase: "generate",
-    message: `Parallel Gemini generate ×${seatQueue.length} (then o3 solve+solution)`,
+    message: wantsPassagePacks
+      ? `Gemini generate · ${passageCountCfg} passage pack(s)×${perPassageCfg} + standalones (then o3)`
+      : `Parallel Gemini generate ×${seatQueue.length} (then o3 solve+solution)`,
     plan,
   });
 
@@ -1296,6 +1508,8 @@ export const runParallelPaperPipeline = async ({
         attempt,
         phase: "gemini_then_o3",
         jobId,
+        seatMode: seat.seatMode || (seat.lockedPassage ? "passage_followup" : "standalone"),
+        connectedGroup: seat.connectedGroup || null,
       });
       item.stage = "generating";
       await checkpointItem(item);
@@ -1314,6 +1528,16 @@ export const runParallelPaperPipeline = async ({
               excludeTexts,
               examType: config?.examType,
               examLabel: config?.examLabel,
+              questionStructure: config?.questionStructure || "both",
+              passageCount: config?.passageCount || 0,
+              questionsPerPassage: config?.questionsPerPassage || 0,
+              passageBasedQuestions: config?.passageBasedQuestions || 0,
+              standaloneQuestions: config?.standaloneQuestions || 0,
+              seatMode:
+                seat.seatMode ||
+                (seat.lockedPassage ? "passage_followup" : "standalone"),
+              lockedPassage: seat.lockedPassage || "",
+              connectedGroup: seat.connectedGroup || "",
             });
             const q = part[0] || null;
             if (q) {
@@ -1322,6 +1546,17 @@ export const runParallelPaperPipeline = async ({
               q._topicId = q._topicId || seat.slot?.topicId || item.topicId;
               q.topicId = q.topicId || seat.slot?.topicId || item.topicId;
               q.subject = q.subject || item.subject || seat.slot?.subject;
+              if (isJeeMain) {
+                if (q.questionType === "multiple") q.questionType = "single";
+                delete q.passage;
+                delete q.passageText;
+                delete q.paragraph;
+                delete q._connectedGroup;
+              } else if (seat.lockedPassage && !q.passage) {
+                q.passage = seat.lockedPassage;
+                q.passageText = seat.lockedPassage;
+                q._connectedGroup = seat.connectedGroup || q._connectedGroup;
+              }
             }
             return q;
           },
@@ -1347,6 +1582,20 @@ export const runParallelPaperPipeline = async ({
       await checkpointItem(item);
 
       // Free schema check only (not a model / hard QC stage)
+      const subjectForGate = String(
+        item.subject || seat.slot?.subject || generated._subject || ""
+      ).trim();
+      // All competitive exams: verbal/English/RC sections must stay qualitative.
+      if (
+        isVerbalQualitativeSubject(subjectForGate) &&
+        isMisplacedNumerical(generated.questionText)
+      ) {
+        return failItem(
+          item,
+          "verbal_numerical",
+          "numerical/DI/QA-style stem not allowed in verbal/reading sections"
+        );
+      }
       if (isDuplicateStem(generated.questionText, excludeTexts)) {
         return failItem(item, "duplicate_stem", "near-duplicate stem");
       }
@@ -1363,72 +1612,245 @@ export const runParallelPaperPipeline = async ({
           "near-duplicate of an already locked question — regenerating"
         );
       }
-      const schema = schemaOkForO3(generated, seat.type);
+      const schema = schemaOkForO3(
+        generated,
+        seat.type,
+        config?.examType || generated._examType
+      );
       if (!schema.ok) {
         return failItem(item, "schema_invalid", schema.issues);
       }
       item.stage = "generated_ok";
       item.locked = generated;
+      appendStageQuestionLog(jobId, "after_gemini", item);
       await checkpointItem(item);
       return item;
     });
   };
 
-  const initial = await mapPool(seatQueue, genConcurrency(), async (seat, i) => {
-    const seqNum = Number(seat?.retryItem?.seq) || seq + i;
+  const finalizeGeneratedItem = async (seat, seqNum, attempt, generated, excludeTexts) => {
+    const item = makeItem(seat.type, seat.slot, seqNum, attempt);
+    item.stage = "generated";
+    item.raw = generated;
+    await checkpointItem(item);
+    const subjectForGate = String(
+      item.subject || seat.slot?.subject || generated._subject || ""
+    ).trim();
+    if (
+      isVerbalQualitativeSubject(subjectForGate) &&
+      isMisplacedNumerical(generated.questionText)
+    ) {
+      return failItem(
+        item,
+        "verbal_numerical",
+        "numerical/DI/QA-style stem not allowed in verbal/reading sections"
+      );
+    }
+    if (isDuplicateStem(generated.questionText, excludeTexts)) {
+      return failItem(item, "duplicate_stem", "near-duplicate stem");
+    }
+    const lockedPeers = [
+      ...[...keptBySeq.values()].map((it) => it.locked),
+      ...working.map((it) => it.locked),
+      ...preVerified.map((it) => it.locked),
+    ].filter(Boolean);
+    if (isNearDuplicateOfAny(generated, lockedPeers)) {
+      return failItem(
+        item,
+        "duplicate_stem",
+        "near-duplicate of an already locked question — regenerating"
+      );
+    }
+    const schema = schemaOkForO3(
+      generated,
+      seat.type,
+      config?.examType || generated._examType
+    );
+    if (!schema.ok) {
+      return failItem(item, "schema_invalid", schema.issues);
+    }
+    item.stage = "generated_ok";
+    item.locked = generated;
+    appendStageQuestionLog(jobId, "after_gemini", item);
+    await checkpointItem(item);
+    return item;
+  };
 
-    // Resume path: re-verify a previously failed stem once before generating a replacement.
-    const retry = seat?.retryItem;
-    if (retry && (retry.locked || retry.raw)) {
-      const retryItem = {
-        ...retry,
-        seq: seqNum,
-        type: seat.type,
-        subject: normalizeSubject(seat.slot?.subject || retry.subject),
-        topicId: seat.slot?.topicId || retry.topicId || "",
-        chapter: seat.slot?.chapter || retry.chapter || "",
-        conceptSlot:
-          seat.slot?.conceptSlot ||
-          retry.conceptSlot ||
-          retry.hardArchetype ||
-          "",
-        stage: "generated_ok",
-        locked: retry.locked || retry.raw,
-        attempt: (Number(retry.attempt) || 1) + 1,
-        failureReason: undefined,
-        failureDetail: undefined,
-      };
-      pipelineLog?.("QUESTION_RESUME_REVERIFY", {
-        seq: seqNum,
-        topicId: retryItem.topicId,
-        subject: retryItem.subject,
-        priorFailure: retry.failureReason || null,
-      });
-      try {
-        const res = await verifySeatWithO3Budget(
-          retryItem,
-          o3CtxEarly,
-          stampTrust
-        );
-        if (res?.ok && res.item?.locked) {
-          return { __preVerified: true, item: res.item };
-        }
-      } catch (err) {
-        if (isOpenAiAuthError(err) || isProviderCreditsExhausted(err) || err?.fatal) {
-          throw err;
-        }
-        pipelineLog?.("QUESTION_RESUME_REVERIFY_FAIL", {
-          seq: seqNum,
-          error: err?.message || String(err),
-        });
+  const generatePackUnit = async (unit, seqBase, attempt, excludeTexts) => {
+    pipelineLog?.("QUESTION_START", {
+      seq: seqBase,
+      type: "passage_pack",
+      packId: unit.packId,
+      count: unit.seats.length,
+      attempt,
+      phase: "gemini_passage_pack",
+      jobId,
+    });
+    let generatedList = [];
+    try {
+      generatedList = await withInfraRetries(
+        async () => {
+          if (getProviderFatalAbort(jobId)?.error) {
+            throw getProviderFatalAbort(jobId).error;
+          }
+          return generatePassagePack({
+            count: unit.seats.length,
+            slots: unit.seats.map((s) => s.slot),
+            questionTypes: unit.seats.map((s) => s.type),
+            subject: unit.seats[0]?.slot?.subject,
+            excludeTexts,
+            examType: config?.examType,
+            examLabel: config?.examLabel,
+            packId: unit.packId,
+          });
+        },
+        { label: `gemini_passage_pack_${unit.packId}`, pipelineLog }
+      );
+    } catch (err) {
+      if (isProviderCreditsExhausted(err)) {
+        throw providerCreditsError(err, "gemini");
       }
-      // Re-verify failed → generate a NEW unique stem for the same subject/topic.
-      exclude.push(stemSnippet(retry.locked || retry.raw));
+      pipelineLog?.("PASSAGE_PACK_FALLBACK", {
+        packId: unit.packId,
+        error: err?.message || String(err),
+      });
+      generatedList = [];
     }
 
-    return generateOne(seat, seqNum, (Number(retry?.attempt) || 0) + 1, exclude);
-  });
-  seq += seatQueue.length;
+    const sharedPassage = String(generatedList?.[0]?.passage || "").trim();
+    const out = [];
+    for (let j = 0; j < unit.seats.length; j += 1) {
+      const seat = unit.seats[j];
+      const seqNum = seqBase + j;
+      const generated = generatedList?.[j];
+      if (generated?.questionText) {
+        if (sharedPassage && !generated.passage) {
+          generated.passage = sharedPassage;
+          generated.passageText = sharedPassage;
+          generated._connectedGroup = unit.packId;
+        }
+        generated._examType = config?.examType;
+        generated._examLabel = config?.examLabel;
+        out.push(
+          await finalizeGeneratedItem(
+            seat,
+            seqNum,
+            attempt,
+            generated,
+            excludeTexts
+          )
+        );
+        continue;
+      }
+      // Missing member: regenerate against the shared passage when available.
+      out.push(
+        await generateOne(
+          {
+            ...seat,
+            seatMode: sharedPassage ? "passage_followup" : "standalone",
+            lockedPassage: sharedPassage,
+            connectedGroup: unit.packId,
+          },
+          seqNum,
+          attempt,
+          excludeTexts
+        )
+      );
+    }
+    return out;
+  };
+
+  let seqCursor = seq;
+  for (const unit of workUnits) {
+    if (unit.kind === "pack") {
+      unit.seqBase = seqCursor;
+      seqCursor += unit.seats.length;
+    } else {
+      unit.seqBase =
+        Number(unit.seat?.retryItem?.seq) || seqCursor;
+      seqCursor = Math.max(seqCursor, unit.seqBase + 1);
+    }
+  }
+
+  const nestedInitial = await mapPool(
+    workUnits,
+    genConcurrency(),
+    async (unit) => {
+      if (unit.kind === "pack") {
+        return generatePackUnit(unit, unit.seqBase, 1, exclude);
+      }
+
+      const seat = {
+        ...unit.seat,
+        seatMode: unit.seat?.seatMode || "standalone",
+      };
+      const seqNum = unit.seqBase;
+
+      // Resume path: re-verify a previously failed stem once before generating a replacement.
+      const retry = seat?.retryItem;
+      if (retry && (retry.locked || retry.raw)) {
+        const retryItem = {
+          ...retry,
+          seq: seqNum,
+          type: seat.type,
+          subject: normalizeSubject(seat.slot?.subject || retry.subject),
+          topicId: seat.slot?.topicId || retry.topicId || "",
+          chapter: seat.slot?.chapter || retry.chapter || "",
+          conceptSlot:
+            seat.slot?.conceptSlot ||
+            retry.conceptSlot ||
+            retry.hardArchetype ||
+            "",
+          stage: "generated_ok",
+          locked: retry.locked || retry.raw,
+          attempt: (Number(retry.attempt) || 1) + 1,
+          failureReason: undefined,
+          failureDetail: undefined,
+        };
+        pipelineLog?.("QUESTION_RESUME_REVERIFY", {
+          seq: seqNum,
+          topicId: retryItem.topicId,
+          subject: retryItem.subject,
+          priorFailure: retry.failureReason || null,
+        });
+        try {
+          const res = await verifySeatWithO3Budget(
+            retryItem,
+            o3CtxEarly,
+            stampTrust
+          );
+          if (res?.ok && res.item?.locked) {
+            return [{ __preVerified: true, item: res.item }];
+          }
+        } catch (err) {
+          if (
+            isOpenAiAuthError(err) ||
+            isProviderCreditsExhausted(err) ||
+            err?.fatal
+          ) {
+            throw err;
+          }
+          pipelineLog?.("QUESTION_RESUME_REVERIFY_FAIL", {
+            seq: seqNum,
+            error: err?.message || String(err),
+          });
+        }
+        // Re-verify failed → generate a NEW unique stem for the same subject/topic.
+        exclude.push(stemSnippet(retry.locked || retry.raw));
+      }
+
+      return [
+        await generateOne(
+          seat,
+          seqNum,
+          (Number(retry?.attempt) || 0) + 1,
+          exclude
+        ),
+      ];
+    }
+  );
+  const initial = nestedInitial.flat();
+  seq = seqCursor;
 
   for (const item of initial) {
     if (item?.__preVerified && item.item?.locked) {
@@ -1464,11 +1886,17 @@ export const runParallelPaperPipeline = async ({
     schemaFills += 1;
     let seat;
     if (unusedPool.length > 0 && unusedCursor < unusedPool.length) {
-      seat = unusedPool[unusedCursor++];
+      seat = { ...unusedPool[unusedCursor++], seatMode: "standalone" };
     } else if (unusedPool.length > 0) {
-      seat = unusedPool[(unusedCursor++) % unusedPool.length];
+      seat = {
+        ...unusedPool[(unusedCursor++) % unusedPool.length],
+        seatMode: "standalone",
+      };
     } else if (seats.length > 0) {
-      seat = seats[schemaFills % seats.length];
+      seat = {
+        ...seats[schemaFills % seats.length],
+        seatMode: "standalone",
+      };
     } else {
       break;
     }
@@ -1525,6 +1953,9 @@ export const runParallelPaperPipeline = async ({
           : "o3_fail";
     failures.push(await failItem(res.item, reason, res.detail || res.item?.o3));
     if (res?.item) {
+      const failedPassage = String(
+        res.item.locked?.passage || res.item.raw?.passage || ""
+      ).trim();
       pendingSeats.push({
         type: res.item.type,
         slot: {
@@ -1533,6 +1964,10 @@ export const runParallelPaperPipeline = async ({
           chapter: res.item.chapter,
           conceptSlot: res.item.conceptSlot,
         },
+        lockedPassage: failedPassage,
+        connectedGroup:
+          res.item.locked?._connectedGroup || res.item.raw?._connectedGroup || "",
+        seatMode: failedPassage ? "passage_followup" : "standalone",
         failedCount: 1,
       });
     }
@@ -1558,6 +1993,9 @@ export const runParallelPaperPipeline = async ({
           "near-duplicate collapsed after verify — regenerating unique replacement"
         )
       );
+      const failedPassage = String(
+        it.locked?.passage || it.raw?.passage || ""
+      ).trim();
       pendingSeats.push({
         type: it.type,
         slot: {
@@ -1566,6 +2004,10 @@ export const runParallelPaperPipeline = async ({
           chapter: it.chapter,
           conceptSlot: it.conceptSlot,
         },
+        lockedPassage: failedPassage,
+        connectedGroup:
+          it.locked?._connectedGroup || it.raw?._connectedGroup || "",
+        seatMode: failedPassage ? "passage_followup" : "standalone",
         failedCount: 1,
       });
       exclude.push(stemSnippet(it.locked || it.raw));
@@ -1616,7 +2058,12 @@ export const runParallelPaperPipeline = async ({
         );
         if (altIndex >= 0) {
           const [alt] = unusedPool.splice(altIndex, 1);
-          seat = alt;
+          seat = {
+            ...alt,
+            lockedPassage: seatEntry.lockedPassage || "",
+            connectedGroup: seatEntry.connectedGroup || "",
+            seatMode: seatEntry.seatMode || "standalone",
+          };
           pipelineLog?.("TOPIC_FALLBACK_SWAP", {
             seq,
             fromTopic: seatEntry.slot.topicId,
@@ -1624,17 +2071,35 @@ export const runParallelPaperPipeline = async ({
             failedCount: seatEntry.failedCount,
           });
         } else {
-          seat = { type: seatEntry.type, slot: seatEntry.slot };
+          seat = {
+            type: seatEntry.type,
+            slot: seatEntry.slot,
+            lockedPassage: seatEntry.lockedPassage || "",
+            connectedGroup: seatEntry.connectedGroup || "",
+            seatMode: seatEntry.seatMode || "standalone",
+          };
         }
       } else {
-        seat = { type: seatEntry.type, slot: seatEntry.slot };
+        seat = {
+          type: seatEntry.type,
+          slot: seatEntry.slot,
+          lockedPassage: seatEntry.lockedPassage || "",
+          connectedGroup: seatEntry.connectedGroup || "",
+          seatMode: seatEntry.seatMode || "standalone",
+        };
       }
     } else if (unusedPool.length > 0 && unusedCursor < unusedPool.length) {
-      seat = unusedPool[unusedCursor++];
+      seat = { ...unusedPool[unusedCursor++], seatMode: "standalone" };
     } else if (unusedPool.length > 0) {
-      seat = unusedPool[(unusedCursor++) % unusedPool.length];
+      seat = {
+        ...unusedPool[(unusedCursor++) % unusedPool.length],
+        seatMode: "standalone",
+      };
     } else if (seats.length > 0) {
-      seat = seats[replaceAttempts % seats.length];
+      seat = {
+        ...seats[replaceAttempts % seats.length],
+        seatMode: "standalone",
+      };
     } else {
       break;
     }
@@ -1664,6 +2129,9 @@ export const runParallelPaperPipeline = async ({
       pendingSeats.push({
         type: seat.type,
         slot: seat.slot,
+        lockedPassage: seat.lockedPassage || "",
+        connectedGroup: seat.connectedGroup || "",
+        seatMode: seat.seatMode || "standalone",
         failedCount: (seatEntry?.failedCount || 0) + 1,
       });
       continue;
@@ -1689,10 +2157,23 @@ export const runParallelPaperPipeline = async ({
       );
       // Never regenerate the same failed stem on the next replace attempt.
       exclude.push(stemSnippet(res.item?.locked || res.item?.raw || item.locked));
+      const keepPassage = String(
+        seat.lockedPassage ||
+          res.item?.locked?.passage ||
+          res.item?.raw?.passage ||
+          ""
+      ).trim();
       // Requeue slot back into pendingSeats so it will be retried with a NEW stem
       pendingSeats.push({
         type: seat.type,
         slot: seat.slot,
+        lockedPassage: keepPassage,
+        connectedGroup:
+          seat.connectedGroup ||
+          res.item?.locked?._connectedGroup ||
+          res.item?.raw?._connectedGroup ||
+          "",
+        seatMode: keepPassage ? "passage_followup" : "standalone",
         failedCount: (seatEntry?.failedCount || 0) + 1,
       });
       if (kind !== "infra") {

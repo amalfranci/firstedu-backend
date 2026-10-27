@@ -107,3 +107,44 @@ describe("paper save soft-gate policy", () => {
     expect(shouldHardBlockSave(25, 25)).toBe(false);
   });
 });
+
+describe("aiQuestionBank validator (updateAiQuestion)", () => {
+  const { updateAiQuestion } = validator;
+
+  it("validates direct update of a connected sub-question", () => {
+    const payload = {
+      questionText:
+        "What is the ratio of the number of Standard packages processed at Hub Alpha to the number of Express packages processed at Hub Gamma?",
+      options: [
+        { text: "4 : 5", isCorrect: false },
+        { text: "10 : 9", isCorrect: false },
+        { text: "5 : 4", isCorrect: false },
+        { text: "11 : 9", isCorrect: true },
+      ],
+      correctAnswer: "11 : 9",
+      difficulty: "hard",
+      questionType: "single",
+      marks: 3,
+      negativeMarks: 1,
+      explanation: "Step 1: ...",
+    };
+    const { error, value } = updateAiQuestion.validate(payload);
+    expect(error).toBeUndefined();
+    expect(value.marks).toBe(3);
+    expect(value.difficulty).toBe("hard");
+  });
+
+  it("validates partial field updates", () => {
+    const { error: err1 } = updateAiQuestion.validate({ marks: 4 });
+    expect(err1).toBeUndefined();
+
+    const { error: err2 } = updateAiQuestion.validate({ difficulty: "hard" });
+    expect(err2).toBeUndefined();
+
+    const { error: err3 } = updateAiQuestion.validate({
+      explanation: "Updated explanation text",
+    });
+    expect(err3).toBeUndefined();
+  });
+});
+
