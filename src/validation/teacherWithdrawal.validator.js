@@ -6,7 +6,7 @@ const bankDetails = Joi.object({
   accountHolderName: Joi.string().trim().min(2).max(120).required(),
   accountNumber: Joi.string()
     .trim()
-    .pattern(/^[0-9]{9,18}$/)
+    .pattern(/^([0-9]{9,18}|\*{4}[0-9]{4}|\*+)$/)
     .required()
     .messages({
       "string.pattern.base": "Account number must be 9–18 digits",

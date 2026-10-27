@@ -43,6 +43,7 @@ function maskBankDetailsForTeacher(bankDetails) {
   return {
     accountHolderName: bankDetails.accountHolderName || null,
     bankName: bankDetails.bankName || null,
+    accountNumber: bankDetails.accountNumber || null,
     accountNumberMasked: maskAccountNumber(bankDetails.accountNumber),
     ifscCode: bankDetails.ifscCode || null,
   };
@@ -67,7 +68,11 @@ export async function updateTeacherBankDetails(teacherId, payload) {
   }
   const bankDetails = {
     accountHolderName: payload.accountHolderName.trim(),
-    accountNumber: String(payload.accountNumber).trim(),
+    accountNumber:
+      String(payload.accountNumber || '').includes('*') &&
+      teacher.bankDetails?.accountNumber
+        ? teacher.bankDetails.accountNumber
+        : String(payload.accountNumber || '').trim(),
     bankName: payload.bankName.trim(),
     ifscCode: String(payload.ifscCode).trim().toUpperCase(),
   };
