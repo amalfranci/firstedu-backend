@@ -110,11 +110,24 @@ const escapeRegex = (value) =>
   String(value || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 export const normalizeExamType = (value) => {
-  const raw = String(value || "")
-    .trim()
-    .toLowerCase()
-    .replace(/[\s-]+/g, "_");
-  if (!raw) return null;
+  const clean = String(value || "")
+    .replace(/[^\w\s-]/g, " ")
+    .trim();
+  if (!clean) return null;
+  const raw = clean.toLowerCase().replace(/[\s-]+/g, "_");
+
+  // Regex matching to handle full category names and decorated titles from DB/UI
+  if (/jee\s*adv/i.test(clean)) return "jee_advanced";
+  if (/jee\s*mains?\b/i.test(clean)) return "jee_main";
+  if (/\bneet\b/i.test(clean) && !/\bpg\b/i.test(clean)) return "neet";
+  if (/\bcat\b/i.test(clean) || /\bcommon\s+admission\s+test\b/i.test(clean)) return "cat";
+  if (/\bgmat\b/i.test(clean)) return "gmat";
+  if (/\bclat\b/i.test(clean) || /\bcommon\s+law\s+admission\s+test\b/i.test(clean)) return "clat";
+  if (/ibps/i.test(clean) || /\bbank/i.test(clean)) return "ibps";
+  if (/ssc\s*cgl\s*tier\s*2\b|\bcgl\s*tier\s*(2|ii)\b/i.test(clean)) return "ssc_cgl_tier2";
+  if (/ssc\s*cgl\b|\bcgl\s*tier\s*[i1]\b/i.test(clean)) return "ssc_cgl_tier1";
+  if (/\bupsc\b/i.test(clean)) return "upsc";
+
   if (
     raw === "jee_main" ||
     raw === "jeemain" ||
@@ -247,7 +260,11 @@ export const subjectLookupAliases = (subject, examType = null) => {
   const aliases = new Set([canonical, String(subject || "").trim()]);
   const exam = normalizeExamType(examType);
 
-  if (/reasoning/i.test(canonical) || /logical/i.test(canonical)) {
+  if (/legal\s*reasoning/i.test(canonical)) {
+    aliases.add("Legal Reasoning");
+  } else if (/logical\s*reasoning/i.test(canonical)) {
+    aliases.add("Logical Reasoning");
+  } else if (/reasoning/i.test(canonical) || /logical/i.test(canonical)) {
     aliases.add("Reasoning");
     aliases.add("Reasoning Ability");
     aliases.add("Logical Reasoning");
@@ -255,6 +272,7 @@ export const subjectLookupAliases = (subject, examType = null) => {
     aliases.add("General Intelligence & Reasoning");
     aliases.add("DILR");
   }
+
   if (/quant/i.test(canonical) || /math/i.test(canonical) || canonical === "QA") {
     aliases.add("QA");
     aliases.add("Qa");
@@ -264,6 +282,7 @@ export const subjectLookupAliases = (subject, examType = null) => {
     aliases.add("Mathematical Abilities");
     aliases.add("Mathematics");
     aliases.add("Quant");
+    aliases.add("Quantitative Techniques");
   }
   if (/english/i.test(canonical) || /verbal/i.test(canonical) || canonical === "VARC") {
     aliases.add("VARC");
@@ -273,12 +292,22 @@ export const subjectLookupAliases = (subject, examType = null) => {
     aliases.add("English");
     aliases.add("Verbal Ability and Reading Comprehension");
   }
-  if (/awareness|knowledge|gk|ga/i.test(canonical)) {
+  if (/computer/i.test(canonical)) {
+    aliases.add("Computer Knowledge");
+  } else if (/awareness|general\s+knowledge|\bgk\b|\bga\b/i.test(canonical)) {
     aliases.add("General Awareness");
     aliases.add("General Knowledge");
     aliases.add("GA");
     aliases.add("Current Affairs");
-    aliases.add("Computer Knowledge");
+  }
+  if (/current\s*affairs/i.test(canonical)) {
+    aliases.add("Current Affairs");
+    aliases.add("General Awareness");
+  }
+  if (/biology/i.test(canonical)) {
+    aliases.add("Biology");
+    aliases.add("Botany");
+    aliases.add("Zoology");
   }
 
   return [...aliases].filter(Boolean);
@@ -303,8 +332,8 @@ export const inferPaperNumber = ({
   }
   const paths = [...asQueryList(categoryPath), ...asQueryList(categoryPaths)];
   const hay = `${paths.join(" ")} ${bankName || ""} ${topic || ""}`.toLowerCase();
-  if (/paper\s*[_\s-]*2\b|paper_2|\bp2\b/.test(hay)) return 2;
-  if (/paper\s*[_\s-]*1\b|paper_1|\bp1\b/.test(hay)) return 1;
+  if (/paper\s*[_\s-]*2\b|paper_2|\bp2\b|advance\s*2\b/.test(hay)) return 2;
+  if (/paper\s*[_\s-]*1\b|paper_1|\bp1\b|advance\s*1\b/.test(hay)) return 1;
   return null;
 };
 
