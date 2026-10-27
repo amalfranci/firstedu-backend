@@ -12,7 +12,7 @@ import { attachOfferToList, attachOfferToItem, getAmountToCharge } from "../util
 import examSessionRepository from "../repository/examSession.repository.js";
 import { logTransaction } from "./adminRevenue.service.js";
 
-const VALID_STATUSES = ["upcoming", "open", "live", "completed", "past", "close"];
+const VALID_STATUSES = ["upcoming", "open", "live", "completed", "past", "close", "closed"];
 
 const buildStatusQuery = (status) => {
   const now = new Date();
@@ -25,6 +25,7 @@ const buildStatusQuery = (status) => {
         registrationEndTime: { $gte: now },
       };
     case "close":
+    case "closed":
       return {
         registrationEndTime: { $lt: now },
         startTime: { $gt: now },
@@ -62,7 +63,8 @@ export const getOlympiads = async (options = {}) => {
     ];
   }
 
-  const normalizedStatus = typeof status === "string" ? status.trim().toLowerCase() : null;
+  const rawStatus = typeof status === "string" ? status.trim().toLowerCase() : null;
+  const normalizedStatus = rawStatus === "closed" ? "close" : rawStatus;
   if (normalizedStatus && VALID_STATUSES.includes(normalizedStatus)) {
     const statusQuery = buildStatusQuery(normalizedStatus);
     if (statusQuery) Object.assign(query, statusQuery);

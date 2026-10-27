@@ -201,13 +201,37 @@ export const issueCourseCompletionCertificate = async (studentId, testId) => {
     const { width, height } = page.getSize();
 
     const layout = template.textLayout || {};
-    const resolveTextColor = (colorName, fallbackColor) => {
+    const resolveTextColor = (colorVal, fallbackColor) => {
       const map = {
         white: rgb(1, 1, 1),
         darkBlue: rgb(0.09, 0.18, 0.52),
         darkYellow: rgb(1, 0.66, 0),
+        black: rgb(0, 0, 0),
+        gold: rgb(0.83, 0.68, 0.21),
+        navy: rgb(0, 0.12, 0.38),
+        crimson: rgb(0.86, 0.08, 0.24),
+        emerald: rgb(0.06, 0.46, 0.43),
       };
-      return map[colorName] || fallbackColor;
+
+      if (colorVal && map[colorVal]) return map[colorVal];
+
+      // Support 3-digit and 6-digit hex color strings (e.g. #FFFFFF, #172554, #EAB308, #000)
+      if (typeof colorVal === "string") {
+        const hex = colorVal.trim().replace(/^#/, "");
+        if (hex.length === 6 && /^[0-9A-Fa-f]{6}$/.test(hex)) {
+          const r = parseInt(hex.slice(0, 2), 16) / 255;
+          const g = parseInt(hex.slice(2, 4), 16) / 255;
+          const b = parseInt(hex.slice(4, 6), 16) / 255;
+          return rgb(r, g, b);
+        } else if (hex.length === 3 && /^[0-9A-Fa-f]{3}$/.test(hex)) {
+          const r = parseInt(hex[0] + hex[0], 16) / 255;
+          const g = parseInt(hex[1] + hex[1], 16) / 255;
+          const b = parseInt(hex[2] + hex[2], 16) / 255;
+          return rgb(r, g, b);
+        }
+      }
+
+      return fallbackColor;
     };
     // The frontend coordinates assume a standard A4 Landscape (842 x 595 pt).
     // The actual uploaded template may be a completely different resolution or aspect ratio.
