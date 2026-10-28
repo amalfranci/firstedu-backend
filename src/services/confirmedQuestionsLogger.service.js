@@ -13,6 +13,7 @@ import { dedupePaperQuestionsByStem } from '../utils/paperQuestionDedupe.js';
 import {
     finalizeExplanationForPublish,
     autoFixOptionArticles,
+    formatStatementBasedQuestion,
 } from '../utils/explanationAnswerAlign.js';
 
 const LOG_ROOT = path.join(process.cwd(), 'temp', 'confirmed-questions');
@@ -129,7 +130,7 @@ const formatQuestionBlock = (q, label) => {
     // Always print a Passage block when present — including single/multiple
     // VA items that carry an embedded source separately from the stem.
     const passage = String(q?.passage || q?.passageText || q?.paragraph || '').trim();
-    const stem = stemOf(q);
+    const stem = formatStatementBasedQuestion(stemOf(q));
     if (passage) {
         const stemHasPassage =
             stem &&

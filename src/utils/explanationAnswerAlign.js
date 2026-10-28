@@ -708,7 +708,183 @@ export const autoFixOptionArticles = (options = []) => {
 };
 
 /**
- * Single publish contract: sanitize → strip tails → align → normalize headers → sort A-B-C-D.
+ * Format statement-based questions so that:
+ * 1. Intro and statements are on separate lines.
+ * 2. Statements are properly formatted as a numbered list.
+ * 3. Final question is displayed on a separate line after the statements.
+ */
+export const formatStatementBasedQuestion = (text) => {
+  if (!text || typeof text !== "string") return text;
+  let s = text.trim();
+  if (!s) return "";
+
+  const closingQuestionPatterns = [
+    /(?:Which(?:\s+of)?(?:\s+the)?(?:\s+above|\s+following)?\s+statements?\b[^\n?]*\?)/i,
+    /(?:How\s+many\s+of\s+the\s+(?:statements|pairs|options)\b[^\n?]*\?)/i,
+    /(?:Which\s+one\s+of\s+the\s+following\b[^\n?]*\?)/i,
+    /(?:Which\s+of\s+the\s+following\b[^\n?]*\?)/i,
+    /(?:Which\s+of\s+the\s+above\b[^\n?]*\?)/i,
+    /(?:Which\s+mode\s+of\s+inheritance\b[^\n?]*\?)/i,
+    /(?:Select\s+(?:the\s+)?(?:correct|appropriate|incorrect|increasing|decreasing)\b[^\n.:]*[.:?])/i,
+    /(?:Choose\s+the\s+correct\s+answer\b[^\n.:]*[.:?])/i,
+  ];
+
+  let closingBlock = "";
+  for (const pattern of closingQuestionPatterns) {
+    const match = s.match(pattern);
+    if (match && match.index != null) {
+      const afterMatch = s.slice(match.index + match[0].length).trim();
+      if (afterMatch.length <= 25) {
+        closingBlock = s.slice(match.index).trim();
+        s = s.slice(0, match.index).trim();
+        break;
+      }
+    }
+  }
+
+  let firstMarkerMatch = null;
+  let statementType = null;
+
+  const numberedMatch = s.match(/(?:[:.]\s*|\n\s*|^)(1\.|1\))\s+/);
+  const romanMatch = s.match(
+    /(?:[:.]\s*|\n\s*|^)(\([IVXLCDM]+\)|[IVXLCDM]+\.)\s+/i
+  );
+  const parenMatch = s.match(/(?:[:.]\s*|\n\s*|^)(\(1\))\s+/);
+  const dashedMatch = s.match(/(?:[:.]\s*|\n\s*|^)(-\s+[A-Za-z0-9])/);
+  const namedMatch = s.match(/(?:[:.]\s*|\n\s*|^)(Statement\s+(?:1|I)[:.]\s+)/i);
+
+  if (numberedMatch && /(?:[\s\n])(2\.|2\))\s+/.test(s)) {
+    firstMarkerMatch = numberedMatch;
+    statementType = "numbered";
+  } else if (
+    romanMatch &&
+    /(?:[\s\n])(\([IVXLCDM]+\)|[IVXLCDM]+\.)\s+/i.test(s)
+  ) {
+    firstMarkerMatch = romanMatch;
+    statementType = "roman";
+  } else if (parenMatch && /(?:[\s\n])\(2\)\s+/.test(s)) {
+    firstMarkerMatch = parenMatch;
+    statementType = "paren";
+  } else if (dashedMatch && /(?:[\s\n])-\s+[A-Za-z0-9]/.test(s)) {
+    firstMarkerMatch = dashedMatch;
+    statementType = "dashed";
+  } else if (namedMatch && /(?:[\s\n])Statement\s+(?:2|II)[:.]\s+/i.test(s)) {
+    firstMarkerMatch = namedMatch;
+    statementType = "named";
+  }
+
+  if (statementType && firstMarkerMatch && firstMarkerMatch.index != null) {
+    const marker = firstMarkerMatch[1] || firstMarkerMatch[0].trim();
+    const markerIndex = s.indexOf(marker, firstMarkerMatch.index);
+    const intro = markerIndex > 0 ? s.slice(0, markerIndex).trim() : "";
+    let body = s.slice(markerIndex).trim();
+
+    if (statementType === "numbered") {
+      body = body.replace(/([.!?;]|\))\s+(?=\b([2-9]|\d{2})\.\s+)/g, "$1\n");
+    } else if (statementType === "roman") {
+      let idx = 1;
+      body = body.replace(
+        /(?:^|\n|\s*)(?:\(([IVXLCDM]+)\)|([IVXLCDM]+)\.)\s+/gi,
+        () => {
+          const num = idx++;
+          return num === 1 ? "1. " : `\n${num}. `;
+        }
+      );
+      body = body.replace(/,\s*\n/g, ".\n");
+      body = body.replace(/,\s*and\s*\n/gi, ".\n");
+      body = body.replace(/\band\s*\n/gi, "\n");
+    } else if (statementType === "paren") {
+      let idx = 1;
+      body = body.replace(/(?:^|\n|\s*)\((\d+)\)\s+/g, () => {
+        const num = idx++;
+        return num === 1 ? "1. " : `\n${num}. `;
+      });
+    } else if (statementType === "dashed") {
+      let idx = 1;
+      body = body.replace(/(?:^|\n|\s*)-\s+/g, () => {
+        const num = idx++;
+        return num === 1 ? "1. " : `\n${num}. `;
+      });
+    } else if (statementType === "named") {
+      let idx = 1;
+      body = body.replace(
+        /(?:^|\n|\s*)Statement\s+(?:[1-9]|I|II|III|IV|V)[:.]\s+/gi,
+        () => {
+          const num = idx++;
+          return num === 1 ? "1. " : `\n${num}. `;
+        }
+      );
+    }
+
+    s = intro ? `${intro}\n\n${body.trim()}` : body.trim();
+  }
+
+  s = s.replace(/\n{3,}/g, "\n\n").trim();
+  if (closingBlock) {
+    s = `${s.trim()}\n\n${closingBlock.trim()}`;
+  }
+  return s;
+};
+
+/**
+ * Format explanation to separate statement analysis, numbered points, and conclusion on separate lines.
+ */
+export const formatStructuredExplanation = (text) => {
+  if (!text || typeof text !== "string") return text;
+  let s = text.trim();
+  if (!s) return "";
+
+  const conclusionRe =
+    /(?<=[.!?])\s+(?=(?:Therefore|Hence|Thus|Consequently|In conclusion)\b[^\n]*)/i;
+  let conclusion = "";
+  const cMatch = s.match(conclusionRe);
+  if (cMatch && cMatch.index != null) {
+    conclusion = s.slice(cMatch.index).trim();
+    s = s.slice(0, cMatch.index).trim();
+  }
+
+  const hasStatementBreakdown =
+    /(?:^|[\s\n])(?:Statement\s+1|1\.\s+Statement\s+1)\b.+?(?:[\s\n])(?:Statement\s+2|2\.\s+Statement\s+2)\b/is.test(
+      s
+    );
+  const hasNumberedList = /(?:^|[\s\n])1\.\s+.+?(?:[\s\n])2\.\s+/s.test(s);
+  const hasStepList = /(?:^|[\s\n])Step\s+1[:.]\s+.+?(?:[\s\n])Step\s+2[:.]\s+/is.test(
+    s
+  );
+  const hasOptionList = /(?:^|[\s\n])Option\s+[A-D][:.]\s+.+?(?:[\s\n])Option\s+[A-D][:.]\s+/is.test(
+    s
+  );
+
+  if (hasStatementBreakdown) {
+    let idx = 1;
+    s = s
+      .replace(
+        /(^|[.!?]\s+)(?:(\d+)\.\s*)?Statement\s+(\d+|I|II|III|IV)\b/gi,
+        (_match, prefix) => {
+          const punct = prefix.trim();
+          const num = idx++;
+          const p = punct ? `${punct}\n` : "";
+          return `${p}${num}. Statement ${num}`;
+        }
+      )
+      .trim();
+  } else if (hasNumberedList) {
+    s = s.replace(/([.!?])\s+(?=\b([2-9]|\d{2})\.\s+)/g, "$1\n");
+  } else if (hasStepList) {
+    s = s.replace(/([.!?])\s+(?=Step\s+\d+[:.]\s+)/gi, "$1\n\n");
+  } else if (hasOptionList) {
+    s = s.replace(/([.!?])\s+(?=Option\s+[A-D][:.]\s+)/gi, "$1\n");
+  }
+
+  s = s.replace(/\n{3,}/g, "\n\n").trim();
+  if (conclusion) {
+    s = `${s.trim()}\n\n${conclusion.trim()}`;
+  }
+  return s;
+};
+
+/**
+ * Single publish contract: sanitize → strip tails → align → normalize headers → sort A-B-C-D → format structure.
  */
 export const finalizeExplanationForPublish = (locked = {}) => {
   const marked = locked.correctAnswer ?? locked.answerKey;
@@ -725,6 +901,7 @@ export const finalizeExplanationForPublish = (locked = {}) => {
   explanation = alignExplanationToMarkedAnswer(explanation, marked);
   explanation = stripCorruptedOptionFragments(explanation);
   explanation = normalizeBackslashEscapes(explanation);
+  explanation = formatStructuredExplanation(explanation);
 
   return {
     ...locked,
@@ -757,4 +934,6 @@ export default {
   sortExplanationOptionAnalysis,
   autoFixOptionArticles,
   stripOptionLabelPrefix,
+  formatStatementBasedQuestion,
+  formatStructuredExplanation,
 };

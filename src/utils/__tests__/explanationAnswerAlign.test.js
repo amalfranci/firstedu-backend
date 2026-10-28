@@ -9,6 +9,8 @@ import {
   sortExplanationOptionAnalysis,
   stripOptionLabelPrefix,
   autoFixOptionArticles,
+  formatStatementBasedQuestion,
+  formatStructuredExplanation,
 } from "../explanationAnswerAlign.js";
 import {
   applyExplanationQualityGate,
@@ -344,5 +346,38 @@ describe("explanationAnswerAlign", () => {
     expect(locked.explanation).toContain("21\\neq 25");
     expect(locked.explanation).not.toContain("\\\\\\\\\\\\\\\\\\\\\\frac");
     expect(locked.explanation).not.toContain("\\ eq");
+  });
+
+  test("formatStatementBasedQuestion formats question intro, numbered statements, and final question on separate lines", () => {
+    const raw =
+      "Consider the following statements regarding ancient Indian philosophical schools: 1. The Sautrantika and Sammitiya were prominent sects of Jainism that debated the nature of the soul. 2. The Lokayata school explicitly rejected the existence of an afterlife, karma, and the authority of the Vedas. Which of the statements given above is/are correct?";
+    const formatted = formatStatementBasedQuestion(raw);
+    const lines = formatted.split("\n").filter((l) => l.trim().length > 0);
+    expect(lines[0]).toBe(
+      "Consider the following statements regarding ancient Indian philosophical schools:"
+    );
+    expect(lines[1]).toMatch(
+      /^1\. The Sautrantika and Sammitiya were prominent sects of Jainism/
+    );
+    expect(lines[2]).toMatch(
+      /^2\. The Lokayata school explicitly rejected the existence of an afterlife/
+    );
+    expect(lines[3]).toBe(
+      "Which of the statements given above is/are correct?"
+    );
+  });
+
+  test("formatStructuredExplanation formats statement breakdowns and separates conclusion", () => {
+    const raw =
+      "Statement 1 is correct as Ramanujacharya propounded Visishtadvaita Vedanta. Statement 2 is incorrect because Visishtadvaita asserts that souls and the physical universe form an inseparable part of the supreme reality (Brahman), rather than being completely independent or devoid of connection. Therefore, the correct option is A.";
+    const formatted = formatStructuredExplanation(raw);
+    const lines = formatted.split("\n").filter((l) => l.trim().length > 0);
+    expect(lines[0]).toMatch(
+      /^1\. Statement 1 is correct as Ramanujacharya propounded Visishtadvaita/
+    );
+    expect(lines[1]).toMatch(
+      /^2\. Statement 2 is incorrect because Visishtadvaita asserts that souls/
+    );
+    expect(lines[2]).toBe("Therefore, the correct option is A.");
   });
 });
