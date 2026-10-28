@@ -5,6 +5,7 @@ import aiQuestionBankRepository from "../repository/aiQuestionBank.repository.js
 import orderRepository from "../repository/order.repository.js";
 import TestPurchase from "../models/TestPurchase.js";
 import ExamSession from "../models/ExamSession.js";
+import Category from "../models/Category.js";
 import {
   uploadImageToCloudinary,
   deleteFileFromCloudinary,
@@ -30,6 +31,37 @@ export const createTest = async (data, adminId, file) => {
   if (data.aiQuestionBank) {
     const bank = await aiQuestionBankRepository.findById(data.aiQuestionBank);
     if (!bank) throw new ApiError(404, "AI question bank not found");
+
+    // Strictly for AI-powered paper flow: ensure the test is associated with the final taxonomy leaf node
+    const targetCatId =
+      data.categoryId ||
+      (Array.isArray(bank.categories) && bank.categories[0]?._id
+        ? bank.categories[0]._id
+        : bank.categories?.[0]);
+    if (targetCatId) {
+      const children = await Category.find({ parent: targetCatId })
+        .select("_id name")
+        .lean();
+      if (children.length > 0) {
+        const mockLeaf = children.find((c) => {
+          const n = String(c.name || "").trim().toLowerCase();
+          return (
+            /\bfull\s*mock\b/i.test(n) ||
+            /\bfull\s*paper\b/i.test(n) ||
+            /\bmock\s*practice\b/i.test(n) ||
+            /\bmodel\s*paper\b/i.test(n)
+          );
+        });
+        if (mockLeaf) {
+          data.categoryId = mockLeaf._id;
+        }
+      } else {
+        data.categoryId = targetCatId;
+      }
+    }
+    if (!data.applicableFor || data.applicableFor === "test") {
+      data.applicableFor = "Competitive";
+    }
   } else if (data.questionBank) {
     const bank = await questionBankRepository.findById(data.questionBank);
     if (!bank) throw new ApiError(404, "Question bank not found");
@@ -227,6 +259,30 @@ export const updateTest = async (id, data, file) => {
     const bank = await aiQuestionBankRepository.findById(data.aiQuestionBank);
     if (!bank) throw new ApiError(404, "AI question bank not found");
     data.questionBank = null;
+  }
+  const effectiveAiBank =
+    data.aiQuestionBank || (!data.questionBank ? existing.aiQuestionBank : null);
+  if (effectiveAiBank) {
+    const targetCatId = data.categoryId || existing.categoryId;
+    if (targetCatId) {
+      const children = await Category.find({ parent: targetCatId })
+        .select("_id name")
+        .lean();
+      if (children.length > 0) {
+        const mockLeaf = children.find((c) => {
+          const n = String(c.name || "").trim().toLowerCase();
+          return (
+            /\bfull\s*mock\b/i.test(n) ||
+            /\bfull\s*paper\b/i.test(n) ||
+            /\bmock\s*practice\b/i.test(n) ||
+            /\bmodel\s*paper\b/i.test(n)
+          );
+        });
+        if (mockLeaf) {
+          data.categoryId = mockLeaf._id;
+        }
+      }
+    }
   }
 
   if (file) {

@@ -4,6 +4,7 @@ import { ApiError } from "../utils/ApiError.js";
 import AiQuestion from "../models/AiQuestion.js";
 import aiQuestionBankRepository from "../repository/aiQuestionBank.repository.js";
 import categoryRepository from "../repository/category.repository.js";
+import Category from "../models/Category.js";
 import { assertAiBankNotInUse } from "../utils/aiBankUsageGuard.js";
 import { dedupePaperQuestionsByStem } from "../utils/paperQuestionDedupe.js";
 import {
@@ -186,13 +187,9 @@ const logSavedBankQuestions = async ({
 };
 
 export const createAiQuestionBankWithQuestions = async (data, createdBy) => {
-  const categoryIds = normalizeCategoryIds(data.categories || []);
+  let categoryIds = normalizeCategoryIds(data.categories || []);
   if (!categoryIds.length && (data.categories || []).length) {
     throw new ApiError(400, "Invalid category selection");
-  }
-  for (const catId of categoryIds) {
-    const cat = await categoryRepository.findById(catId);
-    if (!cat) throw new ApiError(404, `Category not found: ${catId}`);
   }
 
   const rawQuestions = Array.isArray(data.questions) ? data.questions : [];
@@ -221,6 +218,55 @@ export const createAiQuestionBankWithQuestions = async (data, createdBy) => {
     }
   }
   if (!bankName) throw new ApiError(400, "Bank name is required");
+
+  // Strictly for AI-powered paper creation: resolve exam folder categories to the final leaf taxonomy node
+  if (categoryIds.length > 0) {
+    const isMulti =
+      distinctSubjects.length > 1 ||
+      /\ball\s+subjects\b/i.test(`${bankName} ${generationTopic}`);
+    const resolvedIds = [];
+    for (const catId of categoryIds) {
+      const children = await Category.find({ parent: catId })
+        .select("_id name")
+        .lean();
+      if (children.length > 0) {
+        if (isMulti) {
+          const mockLeaf = children.find((c) => {
+            const n = String(c.name || "").trim().toLowerCase();
+            return (
+              /\bfull\s*mock\b/i.test(n) ||
+              /\bfull\s*paper\b/i.test(n) ||
+              /\bmock\s*practice\b/i.test(n) ||
+              /\bmodel\s*paper\b/i.test(n)
+            );
+          });
+          if (mockLeaf) {
+            resolvedIds.push(mockLeaf._id);
+            continue;
+          }
+        } else if (distinctSubjects.length === 1) {
+          const subName = distinctSubjects[0].trim().toLowerCase();
+          const subjectLeaf = children.find((c) => {
+            const n = String(c.name || "").trim().toLowerCase();
+            return n === subName || n.includes(subName) || subName.includes(n);
+          });
+          if (subjectLeaf) {
+            resolvedIds.push(subjectLeaf._id);
+            continue;
+          }
+        }
+      }
+      resolvedIds.push(catId);
+    }
+    if (resolvedIds.length > 0) {
+      categoryIds = resolvedIds;
+    }
+  }
+
+  for (const catId of categoryIds) {
+    const cat = await categoryRepository.findById(catId);
+    if (!cat) throw new ApiError(404, `Category not found: ${catId}`);
+  }
 
   const expectedTotal = Number(data.expectedTotal) || 0;
   // Never hard-block confirm on count shortfall. Generation may stop early
