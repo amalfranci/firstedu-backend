@@ -358,9 +358,6 @@ export const schemaOkForO3 = (q, typeHint = null, _examType = "") => {
   const exam = String(_examType || q._examType || "").toLowerCase();
   const isJeeMain = exam === "jee_main" || /jee\s*main/i.test(exam);
   if (isJeeMain) {
-    if (type === "multiple") {
-      issues.push("multiple_correct_disallowed_for_jee_main");
-    }
     const passage = String(q.passage || q.passageText || q.paragraph || "").trim();
     if (passage && passage.length > 40) {
       issues.push("passage_disallowed_for_jee_main");
@@ -1342,10 +1339,6 @@ export const runParallelPaperPipeline = async ({
       s.seatMode = "standalone";
       s.lockedPassage = null;
       s.connectedGroup = null;
-      if (s.slot?.type === "multiple" || s.type === "multiple") {
-        if (s.slot) s.slot.type = "single";
-        s.type = "single";
-      }
     });
   }
 
@@ -1547,7 +1540,6 @@ export const runParallelPaperPipeline = async ({
               q.topicId = q.topicId || seat.slot?.topicId || item.topicId;
               q.subject = q.subject || item.subject || seat.slot?.subject;
               if (isJeeMain) {
-                if (q.questionType === "multiple") q.questionType = "single";
                 delete q.passage;
                 delete q.passageText;
                 delete q.paragraph;

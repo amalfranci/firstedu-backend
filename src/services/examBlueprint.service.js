@@ -220,35 +220,13 @@ const buildQuestionTypes = (counts = {}, examType = "") => {
       enabled: true,
       paperCount: counts.single ?? (isJeeMain ? 20 : 0),
     },
-    ...(!isJeeMain
-      ? [
-          {
-            id: "multiple",
-            label: "Multiple correct",
-            group: "standalone",
-            enabled: (counts.multi ?? 0) > 0,
-            paperCount: counts.multi ?? 0,
-          },
-        ]
-      : []),
     {
-      id: "integer",
-      label: "Numerical / Integer",
+      id: "multiple",
+      label: "Multiple correct",
       group: "standalone",
       enabled: true,
-      paperCount: counts.integer ?? (isJeeMain ? 5 : 0),
+      paperCount: counts.multi ?? counts.multiple ?? (isJeeMain ? 5 : 0),
     },
-    ...(!isJeeMain
-      ? [
-          {
-            id: "match",
-            label: "Match list",
-            group: "standalone",
-            enabled: (counts.match ?? 0) > 0,
-            paperCount: counts.match ?? 0,
-          },
-        ]
-      : []),
   ];
 };
 

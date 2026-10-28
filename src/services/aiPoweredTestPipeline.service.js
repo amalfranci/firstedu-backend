@@ -1200,22 +1200,11 @@ export const planPipelineSlots = (config = {}) => {
   let typeCounts = {
     single:
       Math.max(0, Number(config.typeCounts?.single) || 0) + legacyExtra,
-    multiple: isJeeMain
-      ? 0
-      : Math.max(
-          0,
-          Number(config.typeCounts?.multiple ?? config.typeCounts?.multi) || 0
-        ),
-  };
-  if (isJeeMain) {
-    const rawMulti = Math.max(
+    multiple: Math.max(
       0,
       Number(config.typeCounts?.multiple ?? config.typeCounts?.multi) || 0
-    );
-    if (rawMulti > 0) {
-      typeCounts.single += rawMulti;
-    }
-  }
+    ),
+  };
   let typeSum = typeCounts.single + typeCounts.multiple;
   const requestedTotal = Math.max(0, Number(config.totalQuestions) || 0);
   // Keep generate / verify on one agreed count.
