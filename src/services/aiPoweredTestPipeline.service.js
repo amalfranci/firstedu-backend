@@ -3367,7 +3367,8 @@ const runJobLoop = async (jobId, config, { resume = false } = {}) => {
       completionStatus: result.completionStatus || terminalStatus,
     });
     await persistJobRecord(jobId, {
-      status: terminalStatus === "partially_completed" ? "completed" : terminalStatus,
+      status: terminalStatus,
+      completionStatus: result.completionStatus || terminalStatus,
       phase: "done",
       message: doneMessage,
       generationId: jobId,
@@ -3542,7 +3543,20 @@ export const resumeAdvancedPaperJob = (jobId) => {
     throw new ApiError(404, "Generation job not found");
   }
   const status = String(job.status || "").toLowerCase();
-  if (status === "completed") return job;
+  const completedCount =
+    Number(job.completedQuestions) ||
+    Number(job.counts?.total) ||
+    (Array.isArray(job.questions) ? job.questions.length : 0);
+  const expectedCount =
+    Number(job.totalQuestions) ||
+    Number(job.counts?.expected) ||
+    0;
+  const isFullyComplete =
+    status === "completed" &&
+    expectedCount > 0 &&
+    completedCount >= expectedCount;
+
+  if (isFullyComplete) return job;
   if (status === "running" && runningJobs.has(jobId)) return job;
 
   pipelineLog("JOB_RESUME", {

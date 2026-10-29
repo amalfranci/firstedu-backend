@@ -74,7 +74,7 @@ export const requeuePaperJob = (jobId, patch = {}) => {
       status: "pending",
       phase: "queued",
       message: job.message,
-      resumable: false,
+      resumable: Boolean(job.resumable ?? patch.resumable ?? false),
       runner: PAPER_JOB_RUNNER,
     }).catch(() => {});
   }

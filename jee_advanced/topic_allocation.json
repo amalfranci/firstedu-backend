@@ -770,7 +770,7 @@
       "priority": "high",
       "cluster": "physics",
       "hardSlotCount": 6,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "NP13": {
       "weight": 0.83,
@@ -798,7 +798,7 @@
       "priority": "high",
       "cluster": "physics",
       "hardSlotCount": 6,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "NP17": {
       "weight": 0.52,
@@ -847,7 +847,7 @@
       "priority": "high",
       "cluster": "chemistry",
       "hardSlotCount": 5,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "NC04": {
       "weight": 0.3,
@@ -945,7 +945,7 @@
       "priority": "high",
       "cluster": "chemistry",
       "hardSlotCount": 6,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "NC18": {
       "weight": 0.52,
@@ -973,7 +973,7 @@
       "priority": "medium",
       "cluster": "biology",
       "hardSlotCount": 4,
-      "lastUsedPaper": null
+      "lastUsedPaper": 1
     },
     "NB02": {
       "weight": 0.52,
