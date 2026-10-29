@@ -736,13 +736,15 @@ export const refreshAccessToken = asyncHandler(async (req, res) => {
     incomingRefreshToken
   );
 
-  const sessionId = session ? session._id : decoded.sessionId;
+  if (!session) {
+    throw new ApiError(401, "Session invalidated. Please login again.");
+  }
+
+  const sessionId = session._id;
   const newAccessToken = student.generateAccessToken(sessionId);
   const newRefreshToken = student.generateRefreshToken(sessionId);
 
-  if (session) {
-    await studentSessionRepository.updateRefreshToken(session._id, newRefreshToken);
-  }
+  await studentSessionRepository.updateRefreshToken(session._id, newRefreshToken);
 
   const isProduction = process.env.NODE_ENV === "production";
   const accessTokenOptions = {

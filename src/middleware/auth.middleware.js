@@ -57,7 +57,7 @@ export const verifyJWT = asyncHandler(async (req, _, next) => {
       const session = await studentSessionRepository.findById(
         decodedToken.sessionId,
       );
-      if (session && session.student.toString() !== user._id.toString()) {
+      if (!session || session.student.toString() !== user._id.toString()) {
         throw new ApiError(401, "Session invalidated. Please login again.");
       }
     }
