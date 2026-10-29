@@ -30,6 +30,7 @@ import challengeYourselfService from "./challengeYourself.service.js";
 import tournamentService from "./tournament.service.js";
 import { issueCourseCompletionCertificate } from "./certificate.service.js";
 import courseTestLinkRepository from "../repository/courseTestLink.repository.js";
+import { formatReadableQuestionText } from "../utils/formatReadableQuestionText.js";
 
 const hasCompletedRegistrationForLinkedEventTest = async (testId, studentId) => {
   const linkedTournaments = await tournamentRepository.find(
@@ -372,21 +373,49 @@ const resolveContainerStatusFromChildren = (children = []) => {
   return statuses[0] || "not_visited";
 };
 
-const sanitizeOptionsForExamResponse = (options = []) =>
+const sanitizeOptionsForExamResponse = (options = [], sourceType = "ai") =>
   Array.isArray(options)
     ? options.map((option) => {
-      if (!option || typeof option !== "object") return option;
+      if (!option || typeof option !== "object") {
+        return typeof option === "string"
+          ? formatReadableQuestionText(option, { sourceType })
+          : option;
+      }
       const plainOption = option.toObject ? option.toObject() : { ...option };
       delete plainOption.isCorrect;
+      if (typeof plainOption.text === "string") {
+        plainOption.text = formatReadableQuestionText(plainOption.text, { sourceType });
+      }
       return plainOption;
     })
     : [];
 
-const sanitizeConnectedQuestionForResponse = (questionObj = {}, subQuestions = []) => ({
+const formatOptionsForResults = (options = [], sourceType = "ai") =>
+  Array.isArray(options)
+    ? options.map((option) => {
+      if (!option || typeof option !== "object") {
+        return typeof option === "string"
+          ? formatReadableQuestionText(option, { sourceType })
+          : option;
+      }
+      const plainOption = option.toObject ? option.toObject() : { ...option };
+      if (typeof plainOption.text === "string") {
+        plainOption.text = formatReadableQuestionText(plainOption.text, { sourceType });
+      }
+      return plainOption;
+    })
+    : [];
+
+const sanitizeConnectedQuestionForResponse = (questionObj = {}, subQuestions = [], sourceType = "ai") => ({
   id: questionObj._id,
   questionType: "connected",
-  title: questionObj.questionText || "",
-  paragraph: questionObj.passage || "",
+  title: formatReadableQuestionText(questionObj.questionText || "", {
+    sourceType,
+    isQuestion: true,
+  }),
+  paragraph: formatReadableQuestionText(questionObj.passage || "", {
+    sourceType,
+  }),
   imageUrl: questionObj.imageUrl || null,
   marks: questionObj.marks ?? 0,
   negativeMarks: questionObj.negativeMarks ?? 0,
@@ -1196,14 +1225,37 @@ export const getExamSession = async (sessionId, studentId) => {
       question.childQuestions = question.childQuestions.map((child) => {
         const childObj = child.toJSON ? child.toJSON() : child.toObject ? child.toObject({ virtuals: true }) : child;
         delete childObj.correctAnswer;
-        childObj.options = sanitizeOptionsForExamResponse(childObj.options);
+        childObj.options = sanitizeOptionsForExamResponse(childObj.options, questionSourceType);
+        if (childObj.questionText) {
+          childObj.questionText = formatReadableQuestionText(childObj.questionText, {
+            sourceType: questionSourceType,
+            isQuestion: true,
+          });
+        }
         return childObj;
       });
     }
 
     let questionObj = question.toJSON ? question.toJSON() : question.toObject ? question.toObject({ virtuals: true }) : question;
     delete questionObj.correctAnswer;
-    questionObj.options = sanitizeOptionsForExamResponse(questionObj.options);
+    questionObj.options = sanitizeOptionsForExamResponse(questionObj.options, questionSourceType);
+    if (questionObj.questionText) {
+      questionObj.questionText = formatReadableQuestionText(questionObj.questionText, {
+        sourceType: questionSourceType,
+        isQuestion: true,
+      });
+    }
+    if (questionObj.passage) {
+      questionObj.passage = formatReadableQuestionText(questionObj.passage, {
+        sourceType: questionSourceType,
+      });
+    }
+    if (questionObj.explanation) {
+      questionObj.explanation = formatReadableQuestionText(questionObj.explanation, {
+        sourceType: questionSourceType,
+        isExplanation: true,
+      });
+    }
     if (questionObj.isParent && questionObj.questionType === "connected") {
       const subQuestions = Array.isArray(questionObj.childQuestions)
         ? questionObj.childQuestions
@@ -1216,7 +1268,7 @@ export const getExamSession = async (sessionId, studentId) => {
                 : null;
             const childObj = populatedChild || answerQuestionById.get(childId) || { _id: childId };
             delete childObj.correctAnswer;
-            childObj.options = sanitizeOptionsForExamResponse(childObj.options);
+            childObj.options = sanitizeOptionsForExamResponse(childObj.options, questionSourceType);
             const childAnswer = answerMetaByQuestionId.get(childId);
             const childRemainingTimeMs = childAnswer
               ? getAnswerRemainingTimeMs(childAnswer, now)
@@ -1226,10 +1278,18 @@ export const getExamSession = async (sessionId, studentId) => {
               _id: childObj._id,
               questionId: childObj._id,
               sourceType: questionSourceType,
-              questionText: childObj.questionText || "",
+              questionText: formatReadableQuestionText(childObj.questionText || "", {
+                sourceType: questionSourceType,
+                isQuestion: true,
+              }),
               questionType: childObj.questionType || "single",
-              options: sanitizeOptionsForExamResponse(childObj.options),
-              explanation: childObj.explanation,
+              options: sanitizeOptionsForExamResponse(childObj.options, questionSourceType),
+              explanation: childObj.explanation
+                ? formatReadableQuestionText(childObj.explanation, {
+                    sourceType: questionSourceType,
+                    isExplanation: true,
+                  })
+                : childObj.explanation,
               marks: childObj.marks ?? 1,
               negativeMarks: childObj.negativeMarks ?? 0,
               imageUrl: childObj.imageUrl || null,
@@ -1249,7 +1309,7 @@ export const getExamSession = async (sessionId, studentId) => {
           })
           .filter(Boolean)
         : [];
-      questionObj = sanitizeConnectedQuestionForResponse(questionObj, subQuestions);
+      questionObj = sanitizeConnectedQuestionForResponse(questionObj, subQuestions, questionSourceType);
     }
 
     const remainingQuestionTimeMs = getAnswerRemainingTimeMs(answer, now);
@@ -2247,11 +2307,19 @@ export const getExamResults = async (sessionId, studentId) => {
           return {
             _id: childObj._id,
             sourceType: questionSourceType,
-            questionText: childObj.questionText || "",
+            questionText: formatReadableQuestionText(childObj.questionText || "", {
+              sourceType: questionSourceType,
+              isQuestion: true,
+            }),
             questionType: childObj.questionType || "single",
-            options: childObj.options || [],
+            options: formatOptionsForResults(childObj.options, questionSourceType),
             correctAnswer: childObj.correctAnswer,
-            explanation: childObj.explanation,
+            explanation: childObj.explanation
+              ? formatReadableQuestionText(childObj.explanation, {
+                  sourceType: questionSourceType,
+                  isExplanation: true,
+                })
+              : childObj.explanation,
             marks: childObj.marks,
             negativeMarks: childObj.negativeMarks,
             imageUrl: childObj.imageUrl || null,
@@ -2263,18 +2331,39 @@ export const getExamResults = async (sessionId, studentId) => {
     const questionObj = question.toObject ? question.toObject() : question;
     const isCorrect = checkAnswerCorrectness(question, answer.answer);
 
+    const formattedStandaloneOptions = formatOptionsForResults(questionObj.options, questionSourceType);
+    const formattedQuestionText = formatReadableQuestionText(questionObj.questionText || "", {
+      sourceType: questionSourceType,
+      isQuestion: true,
+    });
+    const formattedExplanation = questionObj.explanation
+      ? formatReadableQuestionText(questionObj.explanation, {
+          sourceType: questionSourceType,
+          isExplanation: true,
+        })
+      : questionObj.explanation;
+    const formattedPassage = questionObj.passage
+      ? formatReadableQuestionText(questionObj.passage, {
+          sourceType: questionSourceType,
+        })
+      : questionObj.passage;
+
     return {
       questionId: questionObj._id,
       sourceType: questionSourceType,
       question: {
         ...questionObj,
+        questionText: formattedQuestionText,
+        options: formattedStandaloneOptions,
+        explanation: formattedExplanation,
+        passage: formattedPassage,
         sourceType: questionSourceType,
         childQuestions,
       },
       studentAnswer: answer.answer,
       correctAnswer: questionObj.correctAnswer,
       isCorrect,
-      explanation: questionObj.explanation,
+      explanation: formattedExplanation,
       marks: questionObj.marks || 0,
       negativeMarks: questionObj.negativeMarks || 0,
       status: answer.status,
@@ -2303,7 +2392,7 @@ export const getExamResults = async (sessionId, studentId) => {
         return {
           ...q,
           question: {
-            ...sanitizeConnectedQuestionForResponse(q.question, enrichedSubQuestions),
+            ...sanitizeConnectedQuestionForResponse(q.question, enrichedSubQuestions, q.sourceType),
           },
         };
       }
