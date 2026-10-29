@@ -42,7 +42,7 @@ const getBanksStatsBatch = async (bankIds) => {
       {
         $match: {
           aiQuestionBank: { $in: objectIds },
-          parentQuestionId: null,
+          isParent: { $ne: true },
         },
       },
       {

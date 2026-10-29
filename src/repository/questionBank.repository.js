@@ -20,10 +20,7 @@ const getBanksStatsBatch = async (bankIds) => {
       {
         $match: {
           questionBank: { $in: objectIds },
-          $or: [
-            { parentQuestionId: null },
-            { parentQuestionId: { $exists: false } },
-          ],
+          isParent: { $ne: true },
         },
       },
       {
@@ -262,10 +259,7 @@ const countQuestionsByBankId = async (bankId) => {
   try {
     return await Question.countDocuments({
       questionBank: bankId,
-      $or: [
-        { parentQuestionId: null },
-        { parentQuestionId: { $exists: false } },
-      ],
+      isParent: { $ne: true },
     });
   } catch (error) {
     throw new ApiError(500, "Failed to count questions", error.message);

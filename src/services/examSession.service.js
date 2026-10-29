@@ -760,7 +760,23 @@ export const getExamInstructions = async (testId, studentId, options = {}) => {
     throw new ApiError(400, "Question bank has no questions");
   }
 
-  const totalQuestions = questions.filter((q) => !getNormalizedId(q?.parentQuestionId)).length;
+  const hasChildDocuments = (parentId) =>
+    parentId && questions.some((q) => getNormalizedId(q?.parentQuestionId) === parentId);
+
+  const totalQuestions = questions.reduce((count, q) => {
+    if (q?.isParent) {
+      const pId = getNormalizedId(q?._id);
+      if (pId && !hasChildDocuments(pId)) {
+        const embeddedCount =
+          (Array.isArray(q.childQuestions) && q.childQuestions.length) ||
+          (Array.isArray(q.connectedQuestions) && q.connectedQuestions.length) ||
+          0;
+        return count + embeddedCount;
+      }
+      return count;
+    }
+    return count + 1;
+  }, 0);
   const nonParentQuestions = questions.filter((q) => !q.isParent);
   const totalMarks = nonParentQuestions.reduce((sum, q) => sum + (q.marks || 0), 0);
   const totalNegativeMarks = nonParentQuestions.reduce((sum, q) => sum + (q.negativeMarks || 0), 0);

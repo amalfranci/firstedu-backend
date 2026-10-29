@@ -18,23 +18,20 @@ async function attachQuestionCounts(tests = []) {
   }
   if (!manualIds.length && !aiIds.length) return tests;
 
-  const parentOnlyFilter = {
-    $or: [
-      { parentQuestionId: null },
-      { parentQuestionId: { $exists: false } },
-    ],
+  const nonParentFilter = {
+    isParent: { $ne: true },
   };
 
   const [manual, ai] = await Promise.all([
     manualIds.length
       ? Question.aggregate([
-          { $match: { questionBank: { $in: manualIds }, ...parentOnlyFilter } },
+          { $match: { questionBank: { $in: manualIds }, ...nonParentFilter } },
           { $group: { _id: "$questionBank", total: { $sum: 1 } } },
         ])
       : [],
     aiIds.length
       ? AiQuestion.aggregate([
-          { $match: { aiQuestionBank: { $in: aiIds }, ...parentOnlyFilter } },
+          { $match: { aiQuestionBank: { $in: aiIds }, ...nonParentFilter } },
           { $group: { _id: "$aiQuestionBank", total: { $sum: 1 } } },
         ])
       : [],
