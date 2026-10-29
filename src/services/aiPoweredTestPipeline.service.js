@@ -1268,6 +1268,19 @@ export const planPipelineSlots = (config = {}) => {
 
   const packFor = (subject) => {
     const s = normalizeSubject(subject);
+    const bySub =
+      config.topicsBySubject?.[subject] ||
+      config.topicsBySubject?.[s] ||
+      config.topicsBySubject?.[subject.toLowerCase()];
+    if (Array.isArray(bySub) && bySub.length > 0) {
+      return bySub.map((t) => ({
+        topicId: t.topicId || t.unit || t.id,
+        chapter: t.title || t.label || t.chapter || t.topicId,
+        content: t.content || "",
+        hardArchetypes: t.subtopics || [],
+        ...t,
+      }));
+    }
     const examTypeNorm = String(config.examType || "").toLowerCase();
     if (examTypeNorm === "neet") {
       const neetList = getNeetSyllabusTopics(s);
@@ -1347,11 +1360,124 @@ export const planPipelineSlots = (config = {}) => {
   const allocated = {};
   const leftovers = {};
   const topicPool = [];
+
+  const passageCountCfg = isJeeMain ? 0 : Math.max(0, Number(config.passageCount) || 0);
+  const perPassageCfg = isJeeMain ? 0 : Math.max(0, Number(config.questionsPerPassage) || 0);
+  const structureCfg = isJeeMain ? "standalone" : String(config.questionStructure || "both").toLowerCase();
+  const subjectStructuresCfg = isJeeMain ? null : config.subjectStructures || null;
+
+  const isExplicitStandaloneTopic = (t) => {
+    const id = String(t?.topicId || "").toUpperCase();
+    const ch = String(t?.chapter || "").toLowerCase();
+    if (id === "CV03" || id === "CV04" || id === "CV05") return true;
+    if (
+      /para\s*jumble|\bpj\b|para\s*summary|odd\s*sentence|para\s*completion|sentence\s*completion|error\s*spotting|fill\s*in\s*the\s*blank/i.test(
+        ch
+      )
+    ) {
+      return true;
+    }
+    return false;
+  };
+
+  const isExplicitPassageTopic = (t) => {
+    const id = String(t?.topicId || "").toUpperCase();
+    const ch = String(t?.chapter || "").toLowerCase();
+    if (id === "CV01" || id === "CV02") return true;
+    if (
+      /reading\s*comprehension|passage\s*based|caselet|\brc\b/i.test(ch) &&
+      !isExplicitStandaloneTopic(t)
+    ) {
+      return true;
+    }
+    return false;
+  };
+
+  const getSubjectPassageSpec = (s) => {
+    if (isJeeMain || structureCfg === "standalone") {
+      return { passageCount: 0, questionsPerPassage: 0, passageQuestions: 0 };
+    }
+    const sNorm = normalizeSubject(s);
+    const subCfg =
+      subjectStructuresCfg?.[s] ||
+      subjectStructuresCfg?.[sNorm] ||
+      null;
+    if (subCfg && typeof subCfg === "object") {
+      const qStruct = String(subCfg.questionStructure || "both").toLowerCase();
+      if (qStruct === "standalone") {
+        return { passageCount: 0, questionsPerPassage: 0, passageQuestions: 0 };
+      }
+      const pCount = Math.max(0, Number(subCfg.passageCount) || 0);
+      const perP = Math.max(0, Number(subCfg.questionsPerPassage) || 0);
+      return { passageCount: pCount, questionsPerPassage: perP, passageQuestions: pCount * perP };
+    }
+    if (passageCountCfg > 0 && perPassageCfg > 0) {
+      const isVerbalOrSole =
+        subjects.length === 1 ||
+        /varc|verbal|reading|comprehension|english|legal/i.test(sNorm);
+      if (isVerbalOrSole) {
+        return {
+          passageCount: passageCountCfg,
+          questionsPerPassage: perPassageCfg,
+          passageQuestions: passageCountCfg * perPassageCfg,
+        };
+      }
+    }
+    return { passageCount: 0, questionsPerPassage: 0, passageQuestions: 0 };
+  };
+
   for (const subject of subjects) {
     const pool = buildSubjectPool(subject);
     pools[subject] = pool;
     const need = subjectCounts[subject] || 0;
-    const picked = allocateTopicsFromPool(pool, need, { paper });
+    const passSpec = getSubjectPassageSpec(subject);
+    const needPassageQ = Math.min(passSpec.passageQuestions, need);
+    const needStandaloneQ = Math.max(0, need - needPassageQ);
+
+    const passagePool = pool.filter(isExplicitPassageTopic);
+    const standalonePool = pool.filter(isExplicitStandaloneTopic);
+
+    let picked = [];
+    if (needPassageQ > 0 && passagePool.length > 0 && standalonePool.length > 0) {
+      // Structure-aware allocation for subjects with explicit passage vs standalone topics (e.g. CAT VARC)
+      const passageTopics = [];
+      const numP = passSpec.passageCount || Math.ceil(needPassageQ / Math.max(1, passSpec.questionsPerPassage || 4));
+      for (let p = 0; p < numP; p++) {
+        passageTopics.push(passagePool[p % passagePool.length]);
+      }
+      for (let p = 0; p < numP; p++) {
+        const top = passageTopics[p];
+        const perP = passSpec.questionsPerPassage || 4;
+        for (let q = 0; q < perP && picked.length < needPassageQ; q++) {
+          picked.push({
+            ...top,
+            isPassageSlot: true,
+            packId: `P${p + 1}`,
+          });
+        }
+      }
+      // Allocate standalone seats evenly across all standalone topics
+      for (let st = 0; st < needStandaloneQ; st++) {
+        const top = standalonePool[st % standalonePool.length];
+        picked.push({
+          ...top,
+          isPassageSlot: false,
+          packId: null,
+        });
+      }
+    } else {
+      // Standard topic allocation for subjects without explicit topic segregation
+      const rawPicked = allocateTopicsFromPool(pool, need, { paper });
+      picked = rawPicked.map((top, idx) => ({
+        ...top,
+        isPassageSlot: idx < needPassageQ,
+        packId:
+          idx < needPassageQ
+            ? `P${Math.floor(idx / Math.max(1, passSpec.questionsPerPassage || 4)) + 1}`
+            : null,
+      }));
+    }
+
     allocated[subject] = picked;
     const pickedIds = new Set(picked.map((t) => t.topicId));
     leftovers[subject] = pool.filter((t) => !pickedIds.has(t.topicId));
@@ -1461,7 +1587,8 @@ export const planPipelineSlots = (config = {}) => {
       subject: seat.subject,
       fallbackType: typeQueue[i] || "single",
     });
-    const topic = takeBestTopic(seat.subject, type, seat.index);
+    // Prefer planned seat topic to keep passage and standalone allocations intact
+    const topic = allocated[seat.subject]?.[seat.index] || takeBestTopic(seat.subject, type, seat.index);
     const preferred = pickPreferredConcept(topic, type);
     slots[type].push({
       ...topic,
@@ -1472,6 +1599,8 @@ export const planPipelineSlots = (config = {}) => {
       hardArchetype: preferred || topic.hardArchetype || "",
       chapter_lock: true,
       concept_lock: Boolean(preferred),
+      isPassageSlot: Boolean(topic.isPassageSlot),
+      packId: topic.packId || null,
     });
   });
 
@@ -1563,7 +1692,7 @@ const generateBatch = async ({
         : "HARD (exam-faithful)";
   const typeLine =
     safeType === "multiple"
-      ? `Generate exactly ${count} ${hardWord} MULTI-CORRECT MCQs. At least two of A–D are correct.`
+      ? `Generate exactly ${count} ${hardWord} MULTI-CORRECT MCQs. At least two of A–D are correct. Every question stem MUST explicitly include "(Select ALL that apply)".`
       : `Generate exactly ${count} ${hardWord} SINGLE-CORRECT MCQs. Exactly one of A–D is correct. Place the correct option randomly among A–D (do NOT always put the correct answer in A).`;
   const exampleScore =
     exam.examType === "jee_advanced"
@@ -1592,14 +1721,52 @@ const generateBatch = async ({
       : mode === "passage_followup"
         ? "passage"
         : questionStructure;
-  const catVarcBlock =
-    isCatVarc && mode !== "standalone" && mode !== "passage_followup"
-      ? buildCatVarcAuthoringBlock({
-          passageCount: effectivePassages,
-          singleCount: count,
-          passageSingleCount: effectivePerPassage || 4,
-        })
-      : "";
+  let catVarcBlock = "";
+  if (isCatVarc) {
+    if (mode === "standalone") {
+      const chapter = String(batchSlots[0]?.chapter || "").toLowerCase();
+      const topicId = String(batchSlots[0]?.topicId || "").toUpperCase();
+
+      if (topicId === "CV03" || /para\s*jumble|\bpj\b/i.test(chapter)) {
+        catVarcBlock = `
+**CAT VARC PARA JUMBLES AUTHORING (mandatory):**
+1. Write an authentic CAT Para Jumbles MCQ.
+2. In questionText, present exactly 4 or 5 shuffled sentences labeled 1, 2, 3, 4 (or A, B, C, D).
+3. The prompt must ask: "Which of the following represents the correct logical sequence of the sentences to form a coherent paragraph?"
+4. Options A, B, C, D must be 4 distinct sequence permutations (e.g. "A) 2-4-1-3", "B) 3-1-4-2", "C) 1-3-2-4", "D) 4-2-1-3").
+5. Do NOT write a reading comprehension passage or vocabulary/grammar questions.
+`;
+      } else if (topicId === "CV04" || /para\s*summary/i.test(chapter)) {
+        catVarcBlock = `
+**CAT VARC PARA SUMMARY AUTHORING (mandatory):**
+1. Write an authentic CAT Paragraph Summary MCQ.
+2. In questionText, present a concise, sophisticated editorial paragraph of 80–140 words, followed by: "Which of the following best captures the essence / central thesis of the paragraph?"
+3. Options A, B, C, D must be 4 distinct candidate summaries — one accurate synthesis and three subtle distractor traps (too narrow, too broad, or distorted).
+4. Do NOT write grammar drills or vocabulary questions.
+`;
+      } else if (topicId === "CV05" || /odd\s*sentence|para\s*completion/i.test(chapter)) {
+        catVarcBlock = `
+**CAT VARC ODD SENTENCE OUT / PARA COMPLETION AUTHORING (mandatory):**
+1. Either:
+   a) Odd Sentence Out: Present 5 numbered sentences (1, 2, 3, 4, 5) where 4 sentences logically form a coherent paragraph and 1 sentence is the odd one out. Ask which sentence does not fit. Options A–D specify the odd sentence number (e.g. "A) 2", "B) 3", "C) 4", "D) 5").
+   b) Para Completion: Present a paragraph ending in a blank "[...]" and ask which option most logically completes the paragraph. Options A–D provide the concluding sentences.
+2. Do NOT write grammar drills or vocabulary questions.
+`;
+      } else {
+        catVarcBlock = `
+**CAT VARC VERBAL ABILITY AUTHORING (mandatory):**
+Write authentic CAT Verbal Ability items (Para Jumbles, Para Summary, or Para Completion).
+Four distinct options A–D. Never grammar correction or vocabulary drills.
+`;
+      }
+    } else if (mode !== "passage_followup") {
+      catVarcBlock = buildCatVarcAuthoringBlock({
+        passageCount: effectivePassages,
+        singleCount: count,
+        passageSingleCount: effectivePerPassage || 4,
+      });
+    }
+  }
   // Applies to ALL competitive exams in AI Powered Test (verbal + MCQ completeness).
   const competitiveQualityLock = buildCompetitiveQualityLock({
     examType: exam.examType,
@@ -2508,8 +2675,20 @@ const toUiQuestion = (q, config = {}) => {
   });
   const questionKind =
     q._questionKind || paperDefaultQuestionKind(exam.examType);
-  const stem = sanitizeExplanationLatex(q.questionText);
-  const passage = String(q.passage || q.passageText || q.paragraph || "").trim();
+  let stem = sanitizeExplanationLatex(q.questionText || "");
+  if (
+    uiType === "multiple" &&
+    !/\b(select\s+all|choose\s+all|more\s+than\s+one|one\s+or\s+more)\b/i.test(stem)
+  ) {
+    stem = `${stem.trim()} (Select ALL that apply)`;
+  }
+  let passage = String(q.passage || q.passageText || q.paragraph || "").trim();
+  passage = passage
+    .replace(
+      /^(Read the passage and answer[^\n]*\n+)+Read the passage below[^\n]*\n*/gi,
+      "Read the passage below:\n\n"
+    )
+    .trim();
   const finalized = finalizeExplanationForPublish({
     explanation: sanitizeExplanationLatex(q.explanation),
     correctAnswer: q.correctAnswer,

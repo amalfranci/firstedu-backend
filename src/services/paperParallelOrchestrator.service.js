@@ -1268,22 +1268,28 @@ export const runParallelPaperPipeline = async ({
     `${s.type}|${normalizeSubject(s.slot?.subject)}|${s.slot?.topicId || ""}`;
 
   let seatQueue = [];
-  for (const pref of preferredFromFailures) {
-    seatQueue.push(pref);
-    usedPreferredKeys.add(seatKey(pref));
+  if (preferredFromFailures.length > 0) {
+    for (const pref of preferredFromFailures) {
+      seatQueue.push(pref);
+      usedPreferredKeys.add(seatKey(pref));
+    }
+    // Fill remaining need from the original plan seats
+    for (const s of seats) {
+      if (seatQueue.length >= needSeats) break;
+      const k = seatKey(s);
+      if (usedPreferredKeys.has(k)) {
+        usedPreferredKeys.delete(k);
+        continue;
+      }
+      seatQueue.push(s);
+    }
+    while (seatQueue.length < needSeats && seats.length > 0) {
+      seatQueue.push(seats[seatQueue.length % seats.length]);
+    }
+    seatQueue = seatQueue.slice(0, needSeats);
+  } else {
+    seatQueue = seats.slice(0, needSeats);
   }
-  // Fill remaining need from the original plan seats (skip already-covered subjects/topics when possible)
-  for (const s of seats) {
-    if (seatQueue.length >= needSeats) break;
-    const k = seatKey(s);
-    if (usedPreferredKeys.has(k)) continue;
-    seatQueue.push(s);
-    usedPreferredKeys.add(k);
-  }
-  while (seatQueue.length < needSeats && seats.length > 0) {
-    seatQueue.push(seats[seatQueue.length % seats.length]);
-  }
-  seatQueue = seatQueue.slice(0, needSeats);
 
   const unusedPool = types.flatMap((t) =>
     (plan.unusedSlots?.[t] || []).map((slot) => ({ type: t, slot }))
@@ -1343,10 +1349,34 @@ export const runParallelPaperPipeline = async ({
   }
 
   const isRcishSeat = (seat) => {
-    const hay = `${seat?.slot?.chapter || ""} ${seat?.slot?.topicId || ""} ${seat?.slot?.subject || ""} ${seat?.slot?.conceptSlot || ""}`.toLowerCase();
-    return /reading|comprehension|\brc\b|passage|varc|verbal|english|clat|legal|critical reasoning|inference/.test(
-      hay
-    );
+    if (seat?.slot?.isPassageSlot === true || seat?.seatMode === "passage") return true;
+    if (seat?.slot?.isPassageSlot === false || seat?.seatMode === "standalone") return false;
+
+    const topicId = String(seat?.slot?.topicId || "").toUpperCase();
+    const ch = String(seat?.slot?.chapter || "").toLowerCase();
+
+    // Explicit standalone verbal ability topics (never RC passages)
+    if (
+      topicId === "CV03" ||
+      topicId === "CV04" ||
+      topicId === "CV05" ||
+      /para\s*jumble|\bpj\b|para\s*summary|odd\s*sentence|para\s*completion|sentence\s*completion|error\s*spotting|fill\s*in/i.test(
+        ch
+      )
+    ) {
+      return false;
+    }
+
+    // Explicit passage / comprehension topics
+    if (
+      topicId === "CV01" ||
+      topicId === "CV02" ||
+      /reading\s*comprehension|passage|caselet/i.test(ch)
+    ) {
+      return true;
+    }
+
+    return /reading|comprehension|\brc\b|passage|caselet/.test(`${ch} ${topicId}`);
   };
 
   // Excel Connected Group packs: N seats share one passage (P1, P2, …).
@@ -1382,8 +1412,13 @@ export const runParallelPaperPipeline = async ({
           subPassages > 0 &&
           subPer > 0
         ) {
+          const rcIndices = indices.filter((idx) => isRcishSeat(seatQueue[idx]));
+          const otherIndices = indices.filter((idx) => !isRcishSeat(seatQueue[idx]));
+          const orderedIndices =
+            rcIndices.length > 0 ? [...rcIndices, ...otherIndices] : indices;
+
           for (let p = 0; p < subPassages; p += 1) {
-            const chunk = indices.slice(p * subPer, (p + 1) * subPer);
+            const chunk = orderedIndices.slice(p * subPer, (p + 1) * subPer);
             if (chunk.length < subPer) break;
             chunk.forEach((idx) => packSet.add(idx));
             workUnits.push({
@@ -1418,13 +1453,14 @@ export const runParallelPaperPipeline = async ({
         if (isRcishSeat(s)) rcIdx.push(i);
         else otherIdx.push(i);
       });
-      // Prefer RC seats for passages; never spill into other non-RC seats if RC seats exist
-      const packOrder = rcIdx.length > 0 ? rcIdx : otherIdx;
+      // Order passage-eligible (RC) seats first, followed by standalone seats
+      const orderedIndices =
+        rcIdx.length > 0 ? [...rcIdx, ...otherIdx] : seatQueue.map((_, i) => i);
       const needPackSeats = Math.min(
         passageCountCfg * perPassageCfg,
-        packOrder.length
+        orderedIndices.length
       );
-      const packIndices = packOrder.slice(0, needPackSeats);
+      const packIndices = orderedIndices.slice(0, needPackSeats);
       const packSet = new Set(packIndices);
       for (let p = 0; p < passageCountCfg; p += 1) {
         const chunk = packIndices.slice(
