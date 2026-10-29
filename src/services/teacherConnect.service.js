@@ -329,10 +329,14 @@ export const endCall = async (sessionId, durationMinutes, recordingUrl = null, a
   const teacherAmount = roundMoney(billableMinutes * teacherRate);
   const platformFeeAmount = roundMoney(billableMinutes * platformFeeRate);
 
+  let actualDeductAmount = totalAmount;
   if (!session.amountDeducted) {
-    const wallet = await walletService.getWalletBalance(session.student._id, "User");
-    if (wallet.monetaryBalance < totalAmount) {
-      throw new ApiError(400, "Insufficient balance");
+    try {
+      const wallet = await walletService.getOrCreateWallet(session.student._id, "User");
+      const currentBalance = Number(wallet?.monetaryBalance || 0);
+      actualDeductAmount = Math.max(0, Math.min(currentBalance, totalAmount));
+    } catch {
+      actualDeductAmount = 0;
     }
   }
 
@@ -358,12 +362,12 @@ export const endCall = async (sessionId, durationMinutes, recordingUrl = null, a
     return await teacherSessionRepository.findById(sessionId);
   }
 
-  if (!session.amountDeducted) {
-    await walletService.deductMonetaryBalance(
-      session.student._id,
-      totalAmount,
-      "User"
-    );
+  if (!session.amountDeducted && actualDeductAmount > 0) {
+    await walletService
+      .deductMonetaryBalance(session.student._id, actualDeductAmount, "User")
+      .catch((err) => {
+        console.warn("Wallet deduction warning during endCall:", err?.message);
+      });
   }
 
   const teacherId = session.teacher._id || session.teacher;

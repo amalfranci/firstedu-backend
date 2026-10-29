@@ -634,6 +634,19 @@ export const setupTeacherCallSocket = (io) => {
           respond({ ok: true, session: updated });
           return;
         }
+        if (session.status === "completed" || session.status === "cancelled") {
+          const endedPayload = {
+            sessionId: session._id.toString(),
+            reason: session.sessionEndReason || "already_ended",
+            message: "Call has already ended.",
+            session,
+            timestamp: new Date(),
+          };
+          socket.emit("call_session_ended", endedPayload);
+          socket.emit("call_ended_ack", { session });
+          respond({ ok: true, session });
+          return;
+        }
         if (session.status !== "ongoing") {
           socket.emit("call_error", { message: "Call is not active" });
           respond({ ok: false, message: "Call is not active" });
