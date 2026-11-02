@@ -610,17 +610,23 @@ export const updateAiQuestion = async (id, updateData) => {
     effectiveType === "connected" || hasSubQuestionsUpdate;
 
   if (isConnectedEdit) {
-    if (
-      existingQuestion.questionType !== "connected" ||
-      !existingQuestion.isParent
-    ) {
+    if (existingQuestion.parentQuestionId && !existingQuestion.isParent) {
       throw new ApiError(
         400,
-        "Connected question editing is only supported for connected parent questions"
+        "Sub-questions cannot be converted into connected parent questions"
       );
     }
 
     if (!hasSubQuestionsUpdate) {
+      if (
+        existingQuestion.questionType !== "connected" ||
+        !existingQuestion.isParent
+      ) {
+        throw new ApiError(
+          400,
+          "Connected questions must include at least one sub-question"
+        );
+      }
       const partialParentUpdate = {};
       if (
         Object.prototype.hasOwnProperty.call(updateData, "title") ||
@@ -763,6 +769,7 @@ export const updateAiQuestion = async (id, updateData) => {
       id,
       {
         ...parentUpdate,
+        questionType: "connected",
         marks: connectedTotals.marks,
         negativeMarks: connectedTotals.negativeMarks,
         childQuestions: newChildIds,
@@ -778,6 +785,19 @@ export const updateAiQuestion = async (id, updateData) => {
     );
 
     return updatedParent;
+  }
+
+  // If a connected parent question is being converted back into a standalone question
+  if (existingQuestion.isParent && existingQuestion.questionType === "connected") {
+    const existingChildIds = (existingQuestion.childQuestions || []).map(
+      (child) => child?._id?.toString?.() || child?.toString?.()
+    );
+    if (existingChildIds.length > 0) {
+      await AiQuestion.deleteMany({ _id: { $in: existingChildIds } });
+    }
+    updateData.isParent = false;
+    updateData.childQuestions = [];
+    updateData.passage = "";
   }
 
   const questionUpdatePayload = { ...updateData };

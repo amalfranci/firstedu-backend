@@ -328,14 +328,20 @@ export const updateQuestion = async (id, updateData) => {
     hasSubQuestionsUpdate;
 
   if (isConnectedEdit) {
-    if (existingQuestion.questionType !== "connected" || !existingQuestion.isParent) {
+    if (existingQuestion.parentQuestionId && !existingQuestion.isParent) {
       throw new ApiError(
         400,
-        "Connected question editing is only supported for connected parent questions"
+        "Sub-questions cannot be converted into connected parent questions"
       );
     }
 
     if (!hasSubQuestionsUpdate) {
+      if (existingQuestion.questionType !== "connected" || !existingQuestion.isParent) {
+        throw new ApiError(
+          400,
+          "Connected questions must include at least one sub-question"
+        );
+      }
       const partialParentUpdate = {};
       if (
         Object.prototype.hasOwnProperty.call(updateData, "title") ||
@@ -523,6 +529,7 @@ export const updateQuestion = async (id, updateData) => {
 
     const updatedParent = await questionRepository.updateById(id, {
       ...parentUpdate,
+      questionType: "connected",
       marks: connectedTotals.marks,
       negativeMarks: connectedTotals.negativeMarks,
       childQuestions: newChildIds,
@@ -538,6 +545,41 @@ export const updateQuestion = async (id, updateData) => {
     const childrenMap = new Map(children.map((c) => [c._id?.toString?.() || String(c._id), c]));
     const orderedChildren = newChildIds.map((cid) => childrenMap.get(cid)).filter(Boolean);
     return formatConnectedQuestionForEdit(updatedParent, orderedChildren);
+  }
+
+  // If a connected parent question is being converted back into a standalone question
+  if (existingQuestion.isParent && existingQuestion.questionType === "connected") {
+    const existingChildIds = (existingQuestion.childQuestions || []).map((child) =>
+      child?._id?.toString?.() || child?.toString?.()
+    );
+    if (existingChildIds.length > 0) {
+      await Promise.all(existingChildIds.map((childId) => questionRepository.deleteById(childId)));
+    }
+    if (existingQuestion.questionBank && existingChildIds.length > 0) {
+      const bankId = existingQuestion.questionBank?._id || existingQuestion.questionBank;
+      const bank = await questionBankRepository.findById(bankId, false);
+      if (
+        bank?.useSectionWiseQuestions &&
+        typeof existingQuestion.sectionIndex === 'number' &&
+        bank.sections?.[existingQuestion.sectionIndex]
+      ) {
+        const sIndex = existingQuestion.sectionIndex;
+        const currentSecQuestions = (bank.sections[sIndex].questions || []).map((q) =>
+          q?._id?.toString?.() || q?.toString?.()
+        );
+        const filteredSecQuestions = currentSecQuestions.filter(
+          (qid) => !existingChildIds.includes(qid)
+        );
+        const sections = bank.sections.map((sec, idx) => ({
+          ...sec,
+          questions: idx === sIndex ? filteredSecQuestions : sec.questions,
+        }));
+        await questionBankRepository.updateById(bank._id, { sections });
+      }
+    }
+    updateData.isParent = false;
+    updateData.childQuestions = [];
+    updateData.passage = "";
   }
 
   const updatedQuestion = await questionRepository.updateById(id, updateData);
